@@ -37,6 +37,27 @@
 
 ---
 
+### B23 — e2e test T6 regex false positive Video V1-V6 vs Video_intro V7-V9 overlap
+- **Ngày catch:** 2026-06-26 (round 14 F3.1 ship)
+- **Phát hiện qua:** `C:/tmp/e2e_pipeline_test.py` T6 FAIL "overlap {'6', '1'}"
+- **Triệu chứng:** Audit báo Video V1 + V6 trong cả video.md + video_intro.md (overlap)
+- **Root cause:** Regex `r'V(\d+)'` match cả module headers (V1 SCENE GRAPH) lẫn text refs ("parent: video.md V1-V6"). False positive.
+- **Fix:** `tools/e2e_pipeline_test.py` T6 — regex `r'(?:^|\n|═\s+)V(\d+)\s+[A-Z]'` chỉ match module headers (V<n> + space + uppercase title)
+- **Regression test:** T6 PASS sau fix — video={'1'..'6'}, intro={'7','8','9'}, disjoint
+- **Cross-ref:** General lesson: regex parse markdown phải distinguish heading vs text ref. Apply cho audit scripts tương lai.
+
+### B2-DETAIL — Bible consumer mapping audit results (15 mismatch + 6 missing header + 1 unused)
+- **Ngày catch:** 2026-06-26 (round 14 F3.2 ship)
+- **Phát hiện qua:** `tools/bible_consumer_audit.py` first run
+- **Triệu chứng:** 15 bible declared consumer X nhưng X.md không reference; 6 bible thiếu "# Loaded by:" header; 1 bible (17_sfx_acquisition_pipeline) không prompt nào reference
+- **Status:** TENTATIVE — parser em chưa smart split "TTS Director M8" → "tts" có thể false positive. Need Mr.Long review từng case
+- **Root cause candidates:**
+  1. Bible declares consumer nhưng consumer load INLINE (không qua explicit `bible/NN_*.yaml` ref) — false positive script
+  2. Bible declaration sai (typo "Generator" thực ra không load)
+  3. Bible orphan (17_sfx_acquisition_pipeline) — verify intentional hay defunct
+- **Fix:** Audit script ship + Mr.Long review từng mismatch. Mỗi mismatch confirmed bug → fix bible header hoặc add ref to prompt.
+- **Regression test:** `python tools/bible_consumer_audit.py` re-run sau fix → expect 0 mismatch
+
 ### B7 — YAML parse fail bible/20 line 240 inline array với trailing text
 - **Ngày catch:** 2026-06-26
 - **Phát hiện qua:** Audit script `C:\tmp\svhmp_arc_audit.py` R01 sau ship Pattern 5
@@ -70,10 +91,19 @@ Re-run command: `python C:/tmp/svhmp_arc_audit.py` — must PASS 10/10.
 
 ## Stats
 
-- Total bugs caught: 4 (B1-B3 seed + B7 caught during Pattern 5 ship 26/6)
-- Total regression tests: 12 (Pattern 5: 10 rounds + Pattern 7: 10 rounds, B1+B7 covered)
-- Last audit run: 2026-06-26
+- Total bugs caught: 6 (B1-B3 seed + B7 + B23 + B2-DETAIL during 7-gap ship round 14)
+- Total regression tests: 22 (Pattern 5: 10r + Pattern 7: 10r + e2e_pipeline: 10r — B1 + B7 + B23 covered)
+- Last audit run: 2026-06-26 round 14
   - `C:\tmp\svhmp_arc_audit.py` Pattern 5: 10/10 PASS
   - `C:\tmp\svhmp_related_eps_audit.py` Pattern 7: 10/10 PASS
-- Phase D2 Pattern 7 shipped clean (0 bug caught during dev — quality good)
-- TODO: Audit script `C:\tmp\svhmp_bugs_regression.py` cover B2 + B3 (bible consumer mapping + path canon check)
+  - `tools/e2e_pipeline_test.py` e2e: 9/10 PASS, 1 WARN (T5 tts.md optional ref), 0 FAIL
+  - `tools/bible_consumer_audit.py` consumer mapping: 15 mismatch (TENTATIVE — Mr.Long review)
+- Round 14 NEW tools ship:
+  - `tools/analytics_populate.py` (F2 telemetry)
+  - `tools/bible_consumer_audit.py` (F3.2 B2 fix)
+  - `tools/e2e_pipeline_test.py` (F3.1)
+  - `tools/llm_router.py` (F4.1 skeleton)
+  - `tools/cost_tracker.py` (F4.2)
+- Phase D2 Pattern 7 shipped clean (0 bug caught)
+- 7-gap round 14 ship: 2 bugs caught (B23 e2e regex + B2-DETAIL data)
+- Git init round 14 + tagged round_13_initial baseline
