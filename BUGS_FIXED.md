@@ -37,6 +37,15 @@
 
 ---
 
+### B26 — Pattern 5 arc_audit regression khi qa.md bump v1.2→v1.3
+- **Ngày catch:** 2026-06-26 (round 14 F1+F2 ship)
+- **Phát hiện qua:** F1+F2 audit R15 regression test (must 10/10 Pattern 5)
+- **Triệu chứng:** Pattern 5 arc_audit fail 9/10 sau khi bump qa.md v1.2→v1.3. R05 check "v1.2 in qa.md" hardcoded — không match khi version bumped.
+- **Root cause:** `has_v12_id = "SVHMP_CMD_QA_MASTER_LOCK_v1.2" in qa` hardcoded version string. Khi version bump → string không match → FAIL false positive.
+- **Fix:** `C:\tmp\svhmp_arc_audit.py` R05 — dùng regex parse version + check monotonic ≥v1.2 thay vì exact match
+- **Regression test:** R15 trong F1+F2 audit auto-trigger arc_audit cross-verify
+- **Cross-ref:** General lesson — audit scripts cần monotonic version check, KHÔNG hardcode (similar pattern với B23 e2e regex). Apply cho mọi audit script tương lai.
+
 ### B25 — Pipeline svhmp_v13_render.py IndentationError sau add try/except wrapper
 - **Ngày catch:** 2026-06-26 (round 14 hook insertion)
 - **Phát hiện qua:** `python -c "ast.parse(...)"` IndentationError line 150

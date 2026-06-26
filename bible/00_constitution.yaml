@@ -216,6 +216,15 @@ cross_bible_refs:
       Rolling season expansion: full S1 (ep 1-30) / skeleton S2 (ep 31-60) / skeleton minimal S3 (ep 61-90).
     enforced_by: QA Lock PHASE 12.14 (NEW round 12) + Director.step_1 arc carry forward
 
+  anti_slop_vietnamese:                  # round 14 add 2026-06-26 (F1 adapt autonovel)
+    file: bible/22_anti_slop_vi.yaml
+    summary: |
+      Word-level + structural AI-tell detection adapt từ NousResearch/autonovel ANTI-SLOP.md + ANTI-PATTERNS.md.
+      10 tier-1 banned Vietnamese words (đột nhiên/như thể/không thể nào quên/...) + 10 tier-2 cluster
+      + 9 tier-3 filler + 8 structural patterns AP1-AP8 (over-explain/triadic/negative-assertion/simile-crutch/...).
+      Complementary với 32 hiến pháp R1-R32 (structural) — KHÔNG overlap.
+    enforced_by: QA Lock PHASE 12.15 (NEW round 14) + Generator pre-write hint
+
 # ============================================================
 # NORTH STAR QA QUESTION (round 3 add)
 # ============================================================

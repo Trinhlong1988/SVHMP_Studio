@@ -1,0 +1,215 @@
+# SVHMP — 22 ANTI-SLOP VIETNAMESE (word-level AI-tell detection)
+# Lock date: 2026-06-26 (F1 round 14 — Mr.Long approve PDF research adoption)
+# Status: PRODUCTION CANDIDATE v1.0 — adapt từ NousResearch/autonovel ANTI-SLOP.md + ANTI-PATTERNS.md
+# Loaded by: QA Lock PHASE 12.15 (NEW round 14) / Generator pre-write hint
+# Mục tiêu: Bắt "giọng AI" word-level + structural patterns. Bổ sung 32 hiến pháp R1-R32 (cấu trúc).
+#
+# Pattern source: github.com/NousResearch/autonovel — ANTI-SLOP.md (344 lines) + ANTI-PATTERNS.md (184 lines)
+# Vietnamese adapt: lấy precedent SVHMP bug catched memory (v24 disaster + v13 lessons + 32 hiến pháp).
+
+version: 1.0
+lock_date: 2026-06-26
+authority: Mr.Long approve PDF adoption
+parent: bible/00_constitution.yaml
+related:
+  - feedback_svhmp_script_8_hard_rules.md (32 rules R1-R32 cấu trúc — complementary)
+  - feedback_svhmp_v24_silenceremove_disaster.md (7 bug pattern Mr.Long catched)
+  - feedback_svhmp_v13_session_lessons.md
+  - prompts/qa.md PHASE 12.15 (load file này)
+
+purpose: |
+  32 hiến pháp R1-R32 cover CẤU TRÚC (chunk length, câu cụt, lặp từ, scene transition).
+  File này cover WORD-LEVEL AI-tell + structural narrative pattern (over-explain, triadic listing, etc.).
+  KHÔNG overlap. Bổ sung lẫn nhau.
+
+# ============================================================
+# TIER 1 — Vietnamese AI-tell words (lạm dụng = flag rewrite)
+# ============================================================
+# Single-word check. Frequency > threshold trong 1 ep = flag.
+
+tier_1_banned_words_vietnamese:
+  description: "Từ AI Vietnamese hay lạm dụng. Vẫn dùng được nhưng cluster = AI-tell rõ."
+  threshold_max_per_ep: 3   # vượt 3 lần / ep = WARN
+
+  words:
+    - word: "đột nhiên"
+      reason: "AI hay dùng làm transition mặc định. Real Vietnamese narrative dùng đa dạng: bỗng, chợt, vụt, thoáng, lúc đó."
+      alternatives: [bỗng, chợt, vụt nhiên, thoáng cái, lúc đó]
+      precedent: "32 hiến pháp R4 mispronounce trigger (Bất chợt → Bỗng nhiên)"
+
+    - word: "bỗng nhiên"
+      reason: "Tương tự đột nhiên. Lạm dụng = rhythm flat."
+      alternatives: [bỗng, chợt, lúc đó, vụt]
+
+    - word: "trong khoảnh khắc đó"
+      reason: "Cliché AI horror Vietnamese. Real narrative ít dùng phrase này."
+      alternatives: [lúc ấy, khi đó, giây phút ấy, ngay khi]
+
+    - word: "không thể nào quên"
+      reason: "Phrase AI Vietnamese horror lạm dụng. Telling instead of showing."
+      alternatives: ["còn nhớ rõ", "in sâu trong trí", "vẫn nhớ từng chi tiết"]
+      cross_ref: "32 hiến pháp R5 ENDING_PHRASES — 'không thể nào quên' đã trong R5 list. Sync."
+
+    - word: "như thể"
+      reason: "Simile crutch (autonovel #5). AI dùng 'như thể' thay vì describe direct."
+      alternatives: [như, tưởng chừng, cứ như, có vẻ]
+
+    - word: "có lẽ"
+      reason: "Hedge AI. Overuse = unconfident narrator. Horror cần narrator confident."
+      alternatives: [có thể, hình như, biết đâu]
+
+    - word: "dường như"
+      reason: "Hedge AI same với 'có lẽ'. Lạm dụng = vô hồn."
+      alternatives: [hình như, có vẻ, tưởng chừng]
+
+    - word: "vô cùng"
+      reason: "Adverb generic AI. Real narrative dùng cụ thể (rất, quá, lắm, đến mức)."
+      alternatives: [rất, quá, lắm, kinh khủng, đến mức]
+
+    - word: "thầm lặng"
+      reason: "Adjective AI horror cliché. Dùng quá nhiều = flat."
+      alternatives: [im lìm, lặng lẽ, không tiếng động]
+
+    - word: "rùng mình"
+      reason: "Cliché reaction AI horror. Show body specific: tóc gáy dựng, cổ lạnh buốt, tim đập."
+      alternatives: ["tóc gáy dựng đứng", "cổ lạnh ngắt", "tim hụt 1 nhịp"]
+
+# ============================================================
+# TIER 2 — Suspicious in clusters (3+ trong 1 đoạn = flag)
+# ============================================================
+
+tier_2_cluster_suspicious:
+  threshold_cluster_per_paragraph: 3
+
+  words:
+    - "thoáng": "Generic transition AI hay dùng"
+    - "khẽ": "Adverb filler"
+    - "se sẽ": "Filler"
+    - "lặng lẽ": "Adjective generic AI"
+    - "dần dần": "Telling instead of showing pace"
+    - "nhẹ nhàng": "Generic adverb"
+    - "chậm rãi": "Pace filler, lạm dụng = drag"
+    - "vô hình": "Cliché horror"
+    - "ánh mắt": "Body part filler (autonovel similar pattern)"
+    - "khuôn mặt": "Body part filler"
+
+# ============================================================
+# TIER 3 — Filler phrases (zero information, just delete)
+# ============================================================
+
+tier_3_filler_phrases:
+  always_delete:
+    - "Trong khi đó,"      # transition AI filler
+    - "Mặt khác,"          # academic AI tone không hợp horror narrative
+    - "Đáng chú ý,"
+    - "Đáng kể,"
+    - "Cần lưu ý rằng"
+    - "Có một điều đặc biệt là"
+    - "Thực ra,"          # hedge filler
+    - "Nói chung,"        # academic
+    - "Một cách nào đó,"  # hedge
+
+# ============================================================
+# STRUCTURAL ANTI-PATTERNS (autonovel ANTI-PATTERNS.md adapt)
+# ============================================================
+
+structural_patterns:
+
+  AP1_over_explain:
+    description: "AI giải thích metaphor/symbol mới vừa dùng. Real writer trust reader."
+    example_bad: |
+      "Đồng hồ kim dừng 7:10. Đó là giờ Hà mất. Kim không động nữa vì Hà đã không còn. Đồng hồ
+      như đang nhớ về Hà. Quang nhìn đồng hồ, anh hiểu ý nghĩa của giờ 7:10."
+    example_good: |
+      "Đồng hồ kim dừng 7:10. Quang nhắm mắt."
+    flag_pattern: "Câu sau giải thích câu trước bằng phrase 'nghĩa là', 'tức là', 'vì', 'do đó'"
+    cross_ref: "32 hiến pháp R8 câu flat → tò mò"
+
+  AP2_triadic_listing:
+    description: "AI lạm dụng list 3-item: 'A, B, và C' / 'không A, không B, không C'"
+    example_bad: |
+      "Anh thấy cô gái áo gió xanh, mái tóc dài, ánh mắt buồn."
+    example_good: |
+      "Anh thấy cô gái áo gió xanh."
+    flag_pattern: "Câu chứa 2 dấu phẩy ngăn cách 3 noun phrase + 'và'/'cùng'"
+    threshold_max_per_ep: 3
+
+  AP3_negative_assertion_repetition:
+    description: "AI hay 'không A, không B, không C'. 1 negation OK, 3+ = pattern."
+    example_bad: |
+      "Anh không nói. Anh không nhìn. Anh không động đậy."
+    example_good: |
+      "Anh đứng yên."
+    cross_ref: "32 hiến pháp R1 updated pattern 'X không Y, X chỉ Z' lặp"
+
+  AP4_simile_crutch:
+    description: "Lạm dụng 'như' / 'như thể' / 'tựa như'. 3+ similes / scene = AI."
+    threshold_max_per_scene: 3
+    cross_ref: "tier_1 'như thể'"
+
+  AP5_dialogue_as_prose:
+    description: "Nhân vật nói như viết văn. Real dialogue có ngắt câu, từ thừa ('à', 'thì', 'mà')."
+    example_bad: |
+      "Cô gái nói: 'Tôi vẫn nhớ rõ ngày hôm đó, khi cha tôi rời nhà ra đi mà không một lời từ biệt.'"
+    example_good: |
+      "Cô gái khẽ: 'Cha đi... không nói gì hết.'"
+    cross_ref: "32 hiến pháp R19 dialog character ≠ narrator"
+
+  AP6_predictable_emotional_arc:
+    description: "AI mặc định arc 'shocked → understand → accept'. Real horror linger ở unresolved."
+    cross_ref: "bible/00 ENDING_RULES.unresolved_memory mandatory"
+
+  AP7_section_break_rhythm_crutch:
+    description: "AI dùng '---' / 'section break' thay vì smooth transition. SVHMP TTS narrate không có visual break → cần verbal transition."
+
+  AP8_paragraph_uniformity:
+    description: "Paragraph dài đều nhau = AI rhythm. Real prose vary length (1 câu emphasis, 5-7 câu develop)."
+
+# ============================================================
+# QA INTEGRATION (qa.md PHASE 12.15)
+# ============================================================
+
+qa_integration:
+  phase_id: 12.15
+  phase_title: "Anti-Slop Vietnamese Word + Structural Check"
+  load_from:
+    - bible/22_anti_slop_vi.yaml (this file)
+    - bible/00_constitution.yaml (cross-ref ALWAYS/NEVER)
+    - feedback_svhmp_script_8_hard_rules.md (32 rule cross-ref)
+
+  check_order:
+    1: tier_1_banned (per-word threshold check)
+    2: tier_2_cluster (paragraph density)
+    3: tier_3_filler (always delete)
+    4: AP1-AP8 structural patterns
+  output_format:
+    - flagged_words: [{word, count, locations}]
+    - flagged_patterns: [{pattern_id, instances, suggestion}]
+    - severity: ok | warning | critical_error
+    - regen_scope_suggestion: ["story_only", "language_only"]
+
+# ============================================================
+# REVISION POLICY
+# ============================================================
+
+revision_policy:
+  status: PRODUCTION_v1
+  amendable_fields:
+    - tier_1_banned_words_vietnamese.threshold_max_per_ep (tune sau test EP02-05)
+    - tier_2_cluster_suspicious.threshold_cluster_per_paragraph
+    - structural_patterns.AP*.threshold_max_per_*
+  who_can_amend: Mr.Long ONLY
+  source: |
+    English ANTI-SLOP từ NousResearch/autonovel (MIT license).
+    Vietnamese adaptation Claude session 26/6 dựa precedent SVHMP bug memory + general AI-tell observation.
+    Mr.Long verify trên EP01 + 5 ep first → tune threshold thực tế.
+
+changelog:
+  - version: 1.0
+    date: 2026-06-26
+    author: Claude (Mr.Long approve F1 round 14)
+    note: |
+      Initial adaptation autonovel ANTI-SLOP.md + ANTI-PATTERNS.md cho Vietnamese SVHMP horror.
+      10 tier-1 word + 10 tier-2 cluster + 9 tier-3 filler + 8 structural patterns AP1-AP8.
+      Cross-ref 32 hiến pháp existing (complementary, không overlap).
+      Integration qa.md PHASE 12.15 (NEW round 14).
