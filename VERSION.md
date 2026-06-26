@@ -1,8 +1,8 @@
 ---
 project: SVHMP_Studio
-current_round: 13
+current_round: 14
 last_update_ts: 2026-06-26
-last_update_by: Claude session 26/6 (EP01 PRODUCTION FIRST SHIP + 32 hiến pháp + Pipeline LOCKED)
+last_update_by: Claude session 26/6 (round 14 — 7-gap ship + git init + 5 new tools)
 schema_version: 1
 ---
 
@@ -48,6 +48,13 @@ schema_version: 1
 | **runtime/analytics.yaml** | round 3 schema | dynamic | feedback_loop_enabled |
 | **runtime/canon_registry.yaml** | round 8 | dynamic | immutable post-first-seen |
 | **tools/related_eps.py** | v1.0 | 2026-06-26 | round 12 — Pattern 7 (ainovel-cli adapted) |
+| **tools/analytics_populate.py** | **v1.0** | 2026-06-26 | **round 14 F2** — telemetry auto-populate |
+| **tools/bible_consumer_audit.py** | **v1.0** | 2026-06-26 | **round 14 F3.2** — bible consumer mapping audit |
+| **tools/e2e_pipeline_test.py** | **v1.0** | 2026-06-26 | **round 14 F3.1** — 10-test e2e pipeline integrity |
+| **tools/llm_router.py** | **v1.0** | 2026-06-26 | **round 14 F4.1** — multi-LLM skeleton |
+| **tools/cost_tracker.py** | **v1.0** | 2026-06-26 | **round 14 F4.2** — cost ledger |
+| **prompts/director.md** | **round 14** | 2026-06-26 | step 1.10 RELATED EPISODES LOOKUP integrate related_eps.py |
+| **.git/** | — | 2026-06-26 | **round 14** git init + tags |
 | **tools/svhmp_v13_render.py** | **v1.3** | 2026-06-26 | **round 13** NEW — Pipeline LOCKED EP02-90: fade 80ms, trim -20dB, silence bridge, SR 22050, NO compressor, loudnorm TP=-1.5 |
 | **tools/svhmp_preflight_qa.py** | **v3** | 2026-06-26 | **round 13** NEW — 11 rules + dialog whitelist + R10 word-boundary + R17 phrase repeat |
 | **tools/svhmp_dupe_audit.py** | **v1** | 2026-06-26 | **round 13** NEW — pattern bug + 3+ from + cross-chunk repeat |
@@ -72,6 +79,18 @@ schema_version: 1
 ---
 
 ## Recent changes (newest first)
+
+### 2026-06-26 round 14 (Claude session) — 7-GAP SHIP + INFRA
+- **git init** SVHMP_Studio + tag `round_13_initial` (baseline) + `round_14_seven_gap_ship`
+- **director.md** F1.2 add step 1.10 RELATED EPISODES LOOKUP (integrate tools/related_eps.py round 12)
+- **5 new tools** (`tools/`):
+  - `analytics_populate.py` (F2) — auto-populate analytics.yaml.eps[ep_N] khi Mr.Long scrape YouTube T+48h
+  - `bible_consumer_audit.py` (F3.2) — fix B2, catch 15 mismatch + 6 header missing + 1 unused (TENTATIVE review)
+  - `e2e_pipeline_test.py` (F3.1) — 10-test pipeline integrity, 9/10 PASS 1 WARN 0 FAIL
+  - `llm_router.py` (F4.1) — multi-LLM fallback skeleton (Claude/Gemini/OpenAI/Ollama), SDK calls TENTATIVE
+  - `cost_tracker.py` (F4.2) — cost ledger schema + log/report/estimate CLI
+- **Bugs caught + fixed round 14:** B23 (e2e regex false positive) + B2-DETAIL (15 mismatch flagged)
+- **Total round 14 audit:** 22 regression tests across 4 audit scripts
 
 ### 2026-06-26 round 13 (Claude session) — EP01 PRODUCTION FIRST SHIP
 - **EP01_FINAL.wav** ship Desktop — 15:29 min, 6 sections (Hook 1:05, Setup 3:26, Incident 2:58, Reveal 3:49, Payoff 2:57, Cliffhanger 1:14)
