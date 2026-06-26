@@ -253,6 +253,32 @@ decision:
   if max_sim < 0.60: PROCEED
 ```
 
+### 1.10 RELATED EPISODES LOOKUP (NEW round 14 — Pattern 7 ainovel-cli adapted)
+```yaml
+# Optional context aid — load related eps cho coherence cross-ep
+# Source: tools/related_eps.py (Pattern 7 round 12 ship)
+# Algorithm: 4-dim (foreshadow / character / state / relationship), max 5 results, recent_window=3
+
+invoke:
+  command: |
+    echo '{"pillar": "{chosen_pillar}", "regret_id": "{chosen_regret_id}",
+           "related_passengers": {passengers_list}, "related_objects": {objects_list}}' \
+      | python tools/related_eps.py
+
+  output_schema:
+    related_eps: list[{ep: int, dimension: str, reason: str, relevance_score: int}]
+
+action:
+  - if related_eps non-empty: inject vào generator context "episodic_memory.related_eps"
+  - Writer reference khi viết ep_N (KHÔNG bắt buộc, chỉ aid coherence)
+  - skip nếu current_ep <= 1 (no prior eps)
+
+policy:
+  - NOT authority — Director vẫn tự quyết metadata theo step 1.1-1.9
+  - related_eps chỉ for context, không override Director decision
+  - Bug fix B?: nếu related_eps return ep đã CLOSED, Generator phải reference careful
+```
+
 ---
 
 ## <step_2_apply_overrides>
