@@ -37,6 +37,16 @@
 
 ---
 
+### B30 — VNQA pipeline.py SVHMP path resolve thiếu 1 `.parent` → lexicon + resources không load
+- **Ngày catch:** 2026-06-26 Phase H2 wire verify (Mr.Long bắt verify "không suy luận")
+- **Phát hiện qua:** Test `_LEXICON.keys()` returns `[]` dù file exists (17454 bytes) + JSON parse OK manual
+- **Triệu chứng:** `tools/vnqa/pipeline.py:46` `SVHMP = Path(__file__).parent.parent` resolve về `tools/` thay vì `SVHMP_Studio/`. Mọi load `SVHMP/'data'/'vnsl_lexicon.json'` fail silent (return `{}`).
+- **Root cause:** Pipeline.py nằm sâu 3 level (`tools/vnqa/pipeline.py`), chỉ `.parent.parent` = `tools/`. Cần `.parent.parent.parent` = SVHMP_Studio.
+- **Fix:** `tools/vnqa/pipeline.py:46` thêm 1 `.parent` → `Path(__file__).parent.parent.parent`. Verify: 8 top keys + 9 voice_speech entries load OK.
+- **Regression test:** TBD — add `vnqa_path_resolve_test.py` assert `_LEXICON` non-empty + `_RES_AI` non-empty.
+- **Cross-ref:** Verify log `_LEXICON keys: ['_meta', '_verb_usage_guide', '_forbidden_patterns', 'sensory', 'body_gesture', 'voice_speech', 'emotion', 'temporal']`
+- **Meta-lesson:** Em ship `_load_lexicon()` với try/except silent return `{}` — che bug. Future: log warning khi load fail thay silent.
+
 ### B29 — VNQA H1 token_repeat over-flags proper nouns + central objects (false positive)
 - **Ngày catch:** 2026-06-26 Phase H wire Step 1 (first real EP01 test)
 - **Phát hiện qua:** `tools/vnqa/pipeline.py --episode output/ep_01/episode.md` returned 10 WARN, 4 are "anh"/"đồng hồ"/"ghế"/"tay" repeat 30-72x

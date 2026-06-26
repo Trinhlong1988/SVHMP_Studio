@@ -43,7 +43,7 @@ from typing import List, Dict
 
 sys.stdout.reconfigure(encoding='utf-8') if hasattr(sys.stdout, 'reconfigure') else None
 
-SVHMP = Path(__file__).parent.parent
+SVHMP = Path(__file__).parent.parent.parent  # tools/vnqa/pipeline.py → SVHMP_Studio (B30 fix Phase H2)
 
 # Lazy import — heavy libraries
 _underthesea = None
@@ -55,10 +55,57 @@ def _get_underthesea():
     return _underthesea
 
 
-# Vietnamese AI-tell seed (mirror bible/22 + augment Underthesea POS)
-TIER_1_AI_WORDS = {
-    'đột nhiên', 'bỗng nhiên', 'trong khoảnh khắc đó', 'không thể nào quên',
-    'như thể', 'có lẽ', 'dường như', 'vô cùng', 'thầm lặng', 'rùng mình',
+# ─── PHASE H2 WIRE: load resources yaml + vnsl_lexicon (round 14 Phase H2) ───
+import yaml as _yaml
+
+_RESOURCES_DIR = Path(__file__).parent / 'resources'
+_DATA_DIR = SVHMP / 'data'
+
+def _load_yaml(name):
+    p = _RESOURCES_DIR / name
+    if p.exists():
+        try:
+            return _yaml.safe_load(p.read_text(encoding='utf-8')) or {}
+        except Exception:
+            return {}
+    return {}
+
+def _load_lexicon():
+    p = _DATA_DIR / 'vnsl_lexicon.json'
+    if p.exists():
+        try:
+            import json as _j
+            return _j.loads(p.read_text(encoding='utf-8'))
+        except Exception:
+            return {}
+    return {}
+
+_RES_AI = _load_yaml('ai_tell_words.yaml')
+_RES_IDIOM = _load_yaml('idioms_seed.yaml')
+_RES_FORMAL = _load_yaml('formality_markers.yaml')
+_LEXICON = _load_lexicon()
+
+# Tier 1 AI words from yaml (fallback hardcode if yaml empty)
+TIER_1_AI_WORDS = set()
+for entry in (_RES_AI.get('tier_1_kill_on_sight', {}) or {}).get('words', []) or []:
+    if isinstance(entry, dict) and 'word' in entry:
+        TIER_1_AI_WORDS.add(entry['word'])
+if not TIER_1_AI_WORDS:
+    TIER_1_AI_WORDS = {
+        'đột nhiên', 'bỗng nhiên', 'trong khoảnh khắc đó', 'không thể nào quên',
+        'như thể', 'có lẽ', 'dường như', 'vô cùng', 'thầm lặng', 'rùng mình',
+    }
+
+# H1 token_repeat WHITELIST — proper noun + central object SVHMP horror
+# Mr.Long 26/6 B29: "anh"/"đồng hồ"/"ghế"/"tay" repeat 30-72x = expected, KHÔNG flag
+TOKEN_REPEAT_WHITELIST = {
+    # Vietnamese pronouns (always high freq in narrative)
+    'anh', 'chị', 'em', 'cô', 'chú', 'bác', 'ông', 'bà', 'cháu', 'mình', 'tôi', 'nó', 'họ',
+    # Character names (SVHMP recurring — auto-extend qua canon_registry future)
+    'quang', 'nam', 'hà', 'khánh', 'tài',
+    # Central objects + body parts (high freq expected horror narrative)
+    'đồng', 'hồ', 'đồng hồ', 'ghế', 'tay', 'mắt', 'đầu', 'cổ', 'chân', 'mặt',
+    'xe', 'kim', 'cửa', 'kính', 'đường', 'đèn',
 }
 TIER_2_CLUSTER = {
     'thoáng', 'khẽ', 'se sẽ', 'lặng lẽ', 'dần dần',
@@ -131,6 +178,8 @@ class VietnameseQAChecker:
         token_freq = Counter(token_lower)
         for word, count in token_freq.most_common(10):
             if count >= 3 and len(word) > 2:
+                if word in TOKEN_REPEAT_WHITELIST:
+                    continue  # B29 fix: proper noun + central object expected high freq
                 self._flag('H1_token_repeat', 'warning',
                            f'"{word}" lặp {count}x trong ep',
                            'Đa dạng từ vựng, dùng synonym')
