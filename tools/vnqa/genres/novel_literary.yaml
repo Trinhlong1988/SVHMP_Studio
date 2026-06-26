@@ -10,7 +10,7 @@ project_examples: ["audiobook văn học VN", "đọc truyện đêm khuya"]
 thresholds:
   adverb_ratio_max: 0.18        # văn học natural adverb cao
   idiom_max_per_ep: 5           # văn học dùng idiom tự nhiên
-  sentence_len_max_words: 60    # long literary sentence OK
+  sentence_len_max_words: 200   # long literary sentence OK (≥ horror 150 — R074 invariant)
   token_repeat_min: 4
   paragraph_uniformity_stddev_min_pct: 50  # văn học rất varied paragraph
 
