@@ -1,0 +1,203 @@
+# RUNTIME/LIFECYCLE — episode lifecycle state machine
+# Lock date: 2026-06-23 (Mr.Long round 3 docx 16:05 — missing item 1)
+# Status: IMMUTABLE schema, dynamic per_ep_status
+# Loaded by: CMD0 Director (gate transitions) / QA Lock (state validate) / Publisher (analytics gate)
+# Mục tiêu: 1 ep có TRẠNG THÁI RÕ RÀNG xuyên pipeline. Tránh ship/publish ep chưa pass QA.
+
+meta:
+  schema_version: 1
+  last_updated_ep: 1
+  total_eps_tracked: 1
+
+# ============================================================
+# STATE MACHINE — 6 trạng thái cứng
+# ============================================================
+
+lifecycle_states:
+  GENERATED:
+    order: 1
+    description: "Generator RC3.4 đã sinh episode.md. Chưa qua QA."
+    entry_condition: "generator dispatch complete + ep_metadata + story_text + self_check + state_update có"
+    next_allowed: [QA_PASS, QA_REGEN, QA_REVIEW_REQUIRED, ROLLED_BACK]
+    artifacts_required: ["output/ep_N/episode.md"]
+    rollback_to: null
+
+  QA_PASS:
+    order: 2
+    description: "QA Lock v1.1 đã chấm PASS — overall_score ≥ 85 + content_score ≥ 85 + constitution_compliance PASS + driver_reveal_budget OK + north_star PASS."
+    entry_condition: "qa_decision = PASS + critical_errors empty + review_required false"
+    next_allowed: [TTS_DONE, ROLLED_BACK]
+    artifacts_required: ["output/ep_N/qa_result.yaml"]
+    rollback_to: GENERATED
+
+  QA_REGEN:                              # transient — không phải terminal
+    order: 2.5
+    description: "QA reject với regen_scope cụ thể. Generator regen sub-section. KHÔNG transition tiếp cho đến khi regen → re-QA → PASS."
+    entry_condition: "qa_decision = REGEN + regen_scope nonempty"
+    next_allowed: [GENERATED]            # quay lại generated (sau regen)
+    max_attempts_per_ep: 3
+    if_exceeded: "transition to QA_REVIEW_REQUIRED + human gate"
+
+  QA_REVIEW_REQUIRED:                    # gate to human
+    order: 2.7
+    description: "QA confidence < 0.70 hoặc QA_REGEN exceed 3 attempts. Cần human review."
+    entry_condition: "qa_decision = REVIEW_REQUIRED OR regen_attempts > 3"
+    next_allowed: [GENERATED, ROLLED_BACK, QA_PASS_HUMAN_OVERRIDE]
+    requires_human_signoff: true
+
+  TTS_DONE:
+    order: 3
+    description: "TTS Director M1-M8 render xong narration.wav. Audio QA passed."
+    entry_condition: "narration.wav exists + audio_qa_score >= 85 + loudness ≤ -16 LUFS + duration trong range estimated ± 10%"
+    next_allowed: [VIDEO_DONE, TTS_REGEN, ROLLED_BACK]
+    artifacts_required: ["output/ep_N/narration.wav", "output/ep_N/audio_qa.yaml"]
+    rollback_to: QA_PASS
+
+  TTS_REGEN:                             # transient
+    order: 3.5
+    description: "Audio QA reject — pacing/loudness/pronunciation drift. TTS re-render section."
+    next_allowed: [TTS_DONE]
+    max_attempts_per_ep: 2
+
+  VIDEO_DONE:
+    order: 4
+    description: "Video Director V1-V6 render xong final.mp4 + thumbnail.jpg. Asset registry checksums match."
+    entry_condition: "final.mp4 exists + thumbnail.jpg exists + asset_registry_sha256 verified + duration_match narration"
+    next_allowed: [PUBLISHED, VIDEO_REGEN, ROLLED_BACK]
+    artifacts_required: ["output/ep_N/final.mp4", "output/ep_N/thumbnail.jpg", "output/ep_N/asset_registry.yaml"]
+    rollback_to: TTS_DONE
+
+  VIDEO_REGEN:                           # transient
+    order: 4.5
+    description: "Video reject — color/audio sync/thumbnail issue."
+    next_allowed: [VIDEO_DONE]
+    max_attempts_per_ep: 2
+
+  PUBLISHED:
+    order: 5
+    description: "Publisher P1-P7 đã upload YouTube + metadata + description. SEO + title_AB locked."
+    entry_condition: "youtube_video_id present + upload_timestamp + thumbnail_ab assigned"
+    next_allowed: [ANALYTICS_LOCKED, ROLLED_BACK]
+    artifacts_required: ["output/ep_N/publish_log.yaml"]
+    rollback_to: VIDEO_DONE
+    note: "Rollback ở stage này = unpublish YouTube. Cẩn trọng."
+
+  ANALYTICS_LOCKED:
+    order: 6
+    description: "T+48h analytics scraped + comment classification done + drift_alerts evaluated + tuning_log updated. ep frozen permanent."
+    entry_condition: "analytics.eps[ep_N] có data + last_scrape >= upload_timestamp + 48h"
+    next_allowed: []                     # terminal
+    artifacts_required: ["analytics.yaml updated with ep_N entry"]
+    is_terminal: true
+
+  ROLLED_BACK:
+    order: -1
+    description: "Ep bị rollback vì lý do bất kỳ. Cần regen từ GENERATED."
+    next_allowed: [GENERATED]
+    rollback_reason_required: true
+
+# ============================================================
+# TRANSITION RULES
+# ============================================================
+
+transitions:
+  # who can trigger which transition
+  Director:
+    - GENERATED → QA_REGEN
+    - QA_REGEN → GENERATED (after generator regen)
+    - QA_REVIEW_REQUIRED → ROLLED_BACK
+    - QA_REVIEW_REQUIRED → GENERATED (after human approve regen)
+    - any → ROLLED_BACK (emergency)
+
+  QA_Lock:
+    - GENERATED → QA_PASS
+    - GENERATED → QA_REGEN
+    - GENERATED → QA_REVIEW_REQUIRED
+
+  TTS_Engine:
+    - QA_PASS → TTS_DONE
+    - QA_PASS → TTS_REGEN
+    - TTS_REGEN → TTS_DONE (after audio re-render)
+
+  Video_Builder:
+    - TTS_DONE → VIDEO_DONE
+    - TTS_DONE → VIDEO_REGEN
+    - VIDEO_REGEN → VIDEO_DONE
+
+  Publisher:
+    - VIDEO_DONE → PUBLISHED
+
+  Analytics_Scraper:
+    - PUBLISHED → ANALYTICS_LOCKED
+
+  Human:
+    - QA_REVIEW_REQUIRED → QA_PASS_HUMAN_OVERRIDE
+    - PUBLISHED → ROLLED_BACK (unpublish)
+
+# ============================================================
+# PER-EP STATUS — dynamic, update sau mỗi transition
+# ============================================================
+
+per_ep_status:
+  ep_1:
+    current_state: QA_PASS                     # EP01 v7_final_round3_lock đã PASS QA tentative
+    state_history:
+      - {state: GENERATED, ts: "2026-06-23T13:00:00Z", actor: Generator_RC3.4}
+      - {state: QA_PASS, ts: "2026-06-23T15:00:00Z", actor: QA_Lock_v1.1, note: "tentative — chờ chạy QA thật với bible round 3"}
+    regen_attempts: 0
+    artifacts:
+      episode_md: "output/ep_01/episode.md (sha a4ab65b92893d51a)"
+      qa_result: pending
+      narration_wav: "output/ep_01/narration.wav (46.9 MB, v3 per-section emo render)"
+      audio_qa: pending
+      final_mp4: pending
+      thumbnail: pending
+      publish_log: pending
+    next_planned_state: TTS_DONE                # đã có narration.wav nhưng chưa audio_qa formal
+
+  ep_2:
+    current_state: not_yet_generated
+    note: "ready for Director dispatch sau khi bible round 3 lock"
+
+# ============================================================
+# GATES — Director enforce
+# ============================================================
+
+gates:
+  generator_dispatch:
+    requires: "ep_input.yaml present + bible loaded + state.yaml current"
+    blocks_if: "ep_N current_state in [GENERATED, QA_PASS, TTS_DONE, VIDEO_DONE, PUBLISHED, ANALYTICS_LOCKED] (already moved past)"
+
+  tts_dispatch:
+    requires: "ep_N current_state == QA_PASS"
+
+  video_dispatch:
+    requires: "ep_N current_state == TTS_DONE"
+
+  publish_dispatch:
+    requires: "ep_N current_state == VIDEO_DONE + human_signoff if pivot ep (73, 90)"
+
+  analytics_scrape:
+    requires: "ep_N current_state == PUBLISHED + upload_ts + 48h"
+
+# ============================================================
+# VALIDATION RULES
+# ============================================================
+
+validation:
+  no_skip_states: true                   # cấm transition skip state
+  rollback_only_to_immediate_prior: false # rollback có thể về GENERATED (multi-step)
+  parallel_ep_processing: true           # ep N+1 có thể GENERATED khi ep N ở TTS_DONE
+  max_concurrent_eps_in_pipeline: 5
+
+# ============================================================
+# CHANGELOG
+# ============================================================
+
+changelog:
+  - version: 1.0
+    date: 2026-06-23
+    author: Mr.Long (round 3 docx 16:05)
+    note: |
+      Initial lock — 6-state lifecycle + transient regen states.
+      EP01 marked QA_PASS tentative pending real QA run với bible round 3.

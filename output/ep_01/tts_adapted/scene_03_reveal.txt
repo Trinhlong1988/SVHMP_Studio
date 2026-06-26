@@ -1,0 +1,79 @@
+[emph:punch] Quang nhắm mắt. [pause:1200ms]
+[emph:flashback] Trong đầu anh, Hà đang đứng ở cổng Bê. [pause:1400ms]
+Hà mặc áo gió xanh nhạt. [pause:1400ms]
+Tóc Hà cột cao. [pause:1400ms]
+
+[emph:flashback] Hà cười. [pause:800ms]
+Hà vẫy tay. [pause:800ms]
+
+[emph:flashback] Hà mất hút sau cánh cửa kính. [pause:300ms]
+Bảy giờ mười tối. [pause:1200ms]
+
+[emph:flashback] Quang nhìn đồng hồ tay — Kim chỉ bảy giờ mười. [pause:800ms]
+
+[emph:flashback] Anh ngồi ở quán cà phê sân bay đến mười giờ — Anh nghĩ: chắc Hà đang ngồi máy bay. [pause:800ms]
+
+[emph:flashback] Anh nhắn Hà: "Sang đó nhớ ăn cơm — Đừng quên uống nước." [pause:800ms]
+
+[emph:flashback] Hà không trả lời — Anh tự nhủ: Hà đang bay. [pause:300ms]
+Mười giờ tối thứ Sáu — Sáng thứ Bảy không có tin. [pause:800ms]
+
+[emph:flashback] Trưa thứ Bảy không có tin — Chiều thứ Bảy mẹ Hà gọi anh. [pause:300ms]
+Tiếng mẹ Hà khàn. [pause:1200ms]
+
+— Quang ơi… [pause:800ms]
+
+[emph:melancholy] Quang biết. [pause:800ms]
+Quang chưa nghe hết câu, Quang đã biết. [pause:300ms]
+[emph:punch] Mẹ Hà nói: [pause:1200ms]
+
+— Máy bay tới nơi an toàn. [pause:300ms]
+Hà xuống sân bay J F K — Bắt taxi về nhà người dì. [pause:800ms]
+
+— Taxi gặp xe tải. [pause:300ms]
+[emph:punch] Trên đường cao tốc. [pause:1200ms]
+
+— Hà mất tại chỗ. [pause:800ms]
+
+Quang ngừng nói — Cô gái ghế tám đặt tay lên đùi. [pause:300ms]
+Cô không hỏi gì — Cô chỉ đợi. [pause:800ms]
+
+[emph:punch] Quang thở ra. [pause:1500ms]
+
+[emph:regret_climax] — Tôi nhớ ra rồi. [pause:2000ms]
+
+[emph:whisper] Tiếng anh khẽ — Như sợ Hà đang ngủ ở phòng bên. [pause:800ms]
+
+— Bảy giờ mười. [pause:1500ms]
+
+[emph:regret_climax] — Là lúc Hà mất. [pause:2000ms]
+
+— Tôi giữ đồng hồ này. [pause:1500ms]
+
+[emph:regret_climax] — Kim dừng đúng giờ Hà mất. [pause:2000ms]
+
+Cô gái ghế tám cụp mắt — Bác tài nhìn gương chiếu hậu. [pause:1500ms]
+[emph:regret_climax] Bác không nói. [pause:2000ms]
+Quang nhìn xuống chiếc đồng hồ. [pause:1500ms]
+
+[emph:regret_climax] — Tôi không nói được câu đó với Hà. [pause:1500ms]
+
+[emph:regret_climax] — Tám năm tôi không mở ngăn bàn. [pause:1500ms]
+
+[emph:regret_climax] — Tôi sợ. [pause:1500ms]
+
+[emph:regret_climax] — Tôi sợ mở ngăn ra, kim đồng hồ vẫn dừng bảy giờ mười. [pause:1500ms]
+
+[emph:regret_climax] — Tôi sợ nhận ra Hà thật sự không quay lại. [pause:2000ms]
+
+Anh siết tay lại quanh chiếc đồng hồ. [pause:1500ms]
+
+[emph:regret_climax] — Trớ trêu thay. [pause:2000ms]
+Tôi mua đồng hồ để Hà nhớ giờ về. [pause:1500ms]
+
+[emph:regret_climax] — Cuối cùng đồng hồ chỉ nhớ giờ Hà đi. [pause:1500ms]
+
+[emph:regret_climax] Thì ra trong ngăn bàn đáy đó, chỉ còn lại tiếng tích tắc của một câu chưa kịp nói. [pause:2000ms]
+
+Cô gái ghế tám đưa tay che miệng — Bác tài chậm rãi nhìn gương chiếu hậu một lần nữa. [pause:300ms]
+Sương ngoài cửa kính tách ra — Một ngọn đèn vàng hiện lên ở cuối con dốc. [pause:3000ms]

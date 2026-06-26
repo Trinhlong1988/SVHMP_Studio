@@ -1,0 +1,48 @@
+# SVHMP_Studio .gitignore (round 14 — F1.1 git init 2026-06-26)
+
+# Large binary audio (track separately via Git LFS if needed)
+output/**/*.wav
+output/**/*.mp3
+output/**/*.flac
+output/**/*.ogg
+output/**/*.mp4
+
+# Backup files (numbered backups, .bak variants)
+*.bak
+*.bak_*
+output/**/*.bak*
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Local credentials (KHÔNG commit secrets)
+.env
+.env.local
+*.key
+*.pem
+credentials.json
+secrets.yaml
+
+# Temporary
+*.tmp
+*.log
+*.pid
+
+# Render output temp (large generated files)
+*.wav.tmp
+*.mp4.tmp
+
+# But DO commit small reference audio (brand SFX, sample voices)
+!assets/sfx/brand/*.wav
+!GIỌNG\ ĐỌC\ \ ANH\ KHÁNH.wav

@@ -1,0 +1,261 @@
+# 05_AUDIO_BIBLE — SFX library + music beds + TTS masters.
+# Extract từ SVHMP-RC3.2 audio_bible + audio_director + tts_asset_bible.
+# Render time (TTS engine) load file này.
+
+# ============================================================
+# AUDIO SFX LIBRARY
+# ============================================================
+
+version: 1.0
+lock_date: 2026-06-19
+
+ambience_loops:                    # CHẠY SUỐT TẬP
+  rain_light:
+    file: sfx/ambience/rain_v02_loop.wav
+    checksum: sha256:PLACEHOLDER
+    duration_ms: 30000
+    volume: 20
+    loop: true
+    fade_in_ms: 1500
+    fade_out_ms: 1500
+    immutable: true
+  bus_engine:
+    file: sfx/ambience/bus_engine_v01_loop.wav
+    checksum: sha256:PLACEHOLDER
+    duration_ms: 60000
+    volume: 15
+    loop: true
+    fade_in_ms: 1500
+    immutable: true
+  wet_road:
+    file: sfx/ambience/wet_road_v01_loop.wav
+    checksum: sha256:PLACEHOLDER
+    duration_ms: 45000
+    volume: 10
+    loop: true
+    immutable: true
+
+discrete_signature:                # SFX dấu ấn series
+  bell_resonance:
+    file: sfx/discrete/bell_v01.wav
+    checksum: sha256:PLACEHOLDER
+    duration_ms: 1500
+    volume: 80                     # ÂM LƯỢNG TO NHẤT TẬP
+    fade_in_ms: 200
+    fade_out_ms: 800
+    peak_db: -3
+    immutable: true
+  yellow_lamp_hum:
+    file: sfx/discrete/lamp_v01_hum.wav
+    checksum: sha256:PLACEHOLDER
+    duration_ms: 3000
+    volume: 35
+    fade_in_ms: 500
+    fade_out_ms: 1000
+    peak_db: -12
+    immutable: true
+  fog_split:
+    file: sfx/discrete/fog_v01_whoosh.wav
+    checksum: sha256:PLACEHOLDER
+    duration_ms: 800
+    volume: 30
+    peak_db: -10
+    immutable: true
+
+passenger_exit:                    # combo SFX khi 1 người rời
+  seat_creak:    {file: sfx/exit/seat_creak_1000ms.wav, duration_ms: 1000, volume: 40}
+  door_open:     {file: sfx/exit/bus_door_open_1000ms.wav, duration_ms: 1000, volume: 50}
+  footsteps_fading: {file: sfx/exit/footsteps_fading_4000ms.wav, duration_ms: 4000, volume: 30, pan: stereo_fade_out}
+  door_close:    {file: sfx/exit/bus_door_close_1000ms.wav, duration_ms: 1000, volume: 45}
+
+distant:
+  dog_bark:      {file: sfx/distant/dog_bark_distant_800ms.wav, volume: 20}
+  train_horn:    {file: sfx/distant/train_horn_distant_2500ms.wav, volume: 18}
+  car_horn:      {file: sfx/distant/car_horn_distant_600ms.wav, volume: 18}
+  night_wind:    {file: sfx/distant/night_wind_loop.wav, volume: 12, loop: true}
+
+# ============================================================
+# MUSIC BEDS (theo emotion_curve_ngocngan)
+# ============================================================
+
+music_beds:
+  ambient_light: {file: music/ambient_light_loop.wav, volume: 18, loop: true}
+  low_drone:     {file: music/low_drone_loop.wav, volume: 22, loop: true}
+  piano_sparse:  {file: music/piano_sparse_loop.wav, volume: 25, loop: true}
+  strings_soft:  {file: music/strings_soft_loop.wav, volume: 22, loop: true}
+  piano_reverb:  {file: music/piano_reverb_loop.wav, volume: 25, loop: true}
+
+# ============================================================
+# AUDIO DIRECTOR — MOOD → MUSIC mapping
+# ============================================================
+
+mood_to_music:
+  tò_mò:     ambient_light          # 0–10%
+  bất_an:    low_drone              # 10–25%
+  đồng_cảm:  piano_sparse           # 25–45%
+  nghẹn:     strings_soft           # 45–70% beat_4 peak
+  dư_âm:     piano_reverb           # 70–100% kéo dài đến hết
+
+event_to_sfx:
+  bell:
+    sequence: [bell_resonance]
+    music_dim: {target_volume: 7, duration_ms: 2000}
+  yellow_lamp_appears:
+    sequence: [fog_split, yellow_lamp_hum]
+    timing: "fog_split → 200ms pause → yellow_lamp_hum"
+  passenger_exit:
+    sequence: [seat_creak, door_open, footsteps_fading, door_close]
+    spacing_ms: 500
+  passenger_enter:
+    sequence: [seat_creak]
+    note: "không có door (xuất hiện trong xe)"
+  driver_speaks:
+    sequence: []
+    note: "không SFX — chỉ giọng + ambience"
+
+audio_rules:
+  forbidden:
+    - tiếng hét bất ngờ
+    - jump scare
+    - spike >20dB trong <500ms
+    - whisper-stinger
+    - drone-spike
+  always:
+    - rain_light + bus_engine loop SUỐT TẬP
+    - wet_road loop khi xe đang chạy
+    - music_bed theo mood, KHÔNG tắt giữa tập
+  limits:
+    max_discrete_cue_per_ep: 15      # tập 12-14 phút
+    max_bell_per_ep: 3
+    max_distant_per_ep: 2
+
+# ============================================================
+# TTS MASTERS — voice ID lock, brand identity kênh
+# ============================================================
+
+tts_masters:
+  # === ROUND 15 UPDATE 19/6: Mr.Long confirm RVC NNG là giọng chuẩn ship ===
+
+  narrator_voice_primary_v01:
+    type: tts_voice
+    voice_id: "INDEXTTS2_NNG_ZEROSHOT_v01_20260619"
+    engine: indextts2 (zero-shot voice clone với prompt_audio)
+    model_dir: "C:\\Users\\Administrator\\index-tts\\checkpoints-vi"
+    model_card: "dinhthuan/index-tts-2-vietnamese MOS 4.3"
+    port: 7861
+    prompt_audio: "C:\\Users\\Administrator\\Desktop\\NNG_narration_sample_19062026.wav"
+    emo_audio_prompt: same as prompt_audio
+    use_emo_text: false
+    fp16: true
+    language: vi
+    gender: male
+    age_range: "50-55"
+    timbre: warm_dark
+    accent: neutral_northern (NNG homage)
+    voice_signature_checksum: sha256:PLACEHOLDER_COMPUTE_AFTER_FIRST_RENDER
+    voice_clone_source: "Mr.Long ship sample 19/6 14:09 — NNG_narration_sample_19062026.wav 13.52s"
+    cost_per_ep: $0 (local GPU RTX 5060 Ti 16GB)
+    latency_per_ep_estimate: 1-2 min (single-stage zero-shot)
+    immutable: true
+    notes: "Pipeline 1-stage: IndexTTS2 + prompt_audio → narration_raw → ffmpeg upsample 48k/24bit + loudnorm M5"
+
+  narrator_voice_fallback_1_v01:
+    type: tts_voice
+    voice_id: "INDEXTTS2_VN_RAW_NO_PROMPT"
+    engine: indextts2
+    model_dir: "C:\\Users\\Administrator\\index-tts\\checkpoints-vi"
+    language: vi
+    gender: male
+    voice_signature_checksum: sha256:PLACEHOLDER
+    notes: "Fallback khi prompt_audio corrupt. IndexTTS2 raw VN voice. MOS gap ~0.4 vs primary (mất NNG signature)."
+
+  narrator_voice_fallback_2_v01:
+    type: tts_voice
+    voice_id: "RVC_NNG_2STAGE_EMERGENCY"
+    engine: rvc + indextts2_base (2-stage convert)
+    base_tts_engine: indextts2 (raw)
+    voice_convert_engine: rvc-vn
+    voice_convert_model: "D:\\rvc-vn\\assets\\weights\\NNG.pth"
+    voice_convert_index: "D:\\rvc-vn\\logs\\NNG\\"
+    f0_method: rmvpe
+    ui_port: 57903 (nng_ui.py)
+    voice_signature_checksum: sha256:PLACEHOLDER
+    notes: "Emergency fallback khi IndexTTS2 zero-shot drift > 8% vs sample. Latency +30s/ep do extra RVC convert."
+
+  narrator_voice_fallback_3_v01:
+    type: tts_voice
+    voice_id: "ELEVENLABS_LAST_RESORT"
+    engine: elevenlabs
+    model: eleven_multilingual_v2
+    cost_per_1k_chars: 0.30 USD
+    notes: "Last resort khi cả IndexTTS2 (primary + fallback_1) + RVC NNG đều fail. Brand drift cảnh báo."
+
+# ============================================================
+# TTS RUNTIME CONFIG
+# ============================================================
+
+tts_runtime:
+  primary_voice: narrator_voice_primary_v01
+  fallback_voice: narrator_voice_backup_v01
+  speech_rate: 0.88
+  pitch_semitones: -1
+  emphasis: low
+
+  pause_model_ms:
+    short_pause_ellipsis: 400          # "..."
+    long_pause_blank_line: 1200
+    sentence_end: 600
+    paragraph: 1500
+    beat_transition: 2000              # beat_4 → beat_5
+
+  breathing_model:
+    enable_natural_breath: true
+    breath_intensity: low
+    breath_per_minute: [12, 16]
+    breath_before_beat_4: true
+    breath_before_beat_5: true
+
+# ============================================================
+# TTS EMOTION PRESETS (RC3.2 R9)
+# ============================================================
+
+tts_emotion_presets:
+  # ========== ROUND 8 BASELINE (7 preset) ==========
+  curious:        {stability: 0.70, similarity_boost: 0.85, style: 0.30, intensity: 0.40, note: "HOOK TÒ MÒ"}
+  uneasy:         {stability: 0.60, similarity_boost: 0.85, style: 0.40, intensity: 0.50, note: "SETUP/INCIDENT BẤT AN"}
+  empathy:        {stability: 0.65, similarity_boost: 0.85, style: 0.45, intensity: 0.55, note: "REVEAL ĐỒNG CẢM"}
+  regret:         {stability: 0.50, similarity_boost: 0.85, style: 0.60, intensity: 0.70, note: "REVEAL→PAYOFF NGHẸN beat_4 peak"}
+  regret_fading:  {stability: 0.65, similarity_boost: 0.85, style: 0.55, intensity: 0.55, note: "PAYOFF transition"}
+  lingering:      {stability: 0.75, similarity_boost: 0.85, style: 0.50, intensity: 0.45, note: "CLIFFHANGER DƯ ÂM"}
+  bac_tai_speech: {stability: 0.85, similarity_boost: 0.90, style: 0.20, intensity: 0.35, note: "2 câu bác tài — flat tuyệt đối"}
+
+  # ========== ROUND 12 BACKPORT (B20.1 fix) — 4 preset từ tts.md M2 + voice_direction ==========
+  regret_climax:  {stability: 0.40, similarity_boost: 0.85, style: 0.75, intensity: 0.80, note: "beat_4 đỉnh — dùng cho 3-5 dòng REGRET LINE PHẦN 3 'Tôi không/Tôi đã không...'. Chậm hơn regret + vibrato cực nhẹ + ngắt câu giữa cố ý"}
+  lingering_extended: {stability: 0.80, similarity_boost: 0.85, style: 0.45, intensity: 0.40, note: "câu cuối cliffhanger — kéo dài âm cuối 1.5x. Đặc biệt chậm. Chỉ áp 1 câu cuối/ep"}
+  passenger_regret: {stability: 0.55, similarity_boost: 0.85, style: 0.65, intensity: 0.75, speech_rate: 0.82, note: "passenger nói REGRET — 'quiet sob held back', KHÔNG vỡ òa. Trầm 1 semitone vs baseline"}
+  child_voiceover_flashback: {stability: 0.70, similarity_boost: 0.85, style: 0.35, intensity: 0.50, speech_rate: 0.95, note: "CHỈ trong flashback có voice trẻ con (ARCH có trẻ — vd memorial). KHÔNG dùng cho passenger sống/chết hiện tại"}
+
+render_preset_map:                 # auto-detect per section
+  HOOK:        curious
+  SETUP:       uneasy
+  INCIDENT:    empathy
+  REVEAL:      regret
+  PAYOFF:      regret_fading
+  CLIFFHANGER: lingering
+
+# OVERRIDE per-line: `[preset:bac_tai_speech]` inline trong script.txt
+
+tts_output_spec:
+  format: wav
+  sample_rate_hz: 48000
+  bit_depth: 24
+  channels: mono
+  loudness_target_lufs: -16
+  peak_db: -3
+
+tts_drift_policy:
+  - voice_id thay đổi giữa series → HARD-FAIL (brand identity)
+  - voice_signature_checksum mismatch >5% → reject, regen với primary
+  - speech_rate drift >0.02 → reject
+  - pause_model parameter thay đổi giữa ep → reject
+  - preset table immutable per series

@@ -1,0 +1,196 @@
+# State diff sau Ep 01 ship (round 12 fix B17.1)
+# Apply vào runtime/state.yaml để chuẩn bị input cho Ep 02
+# Extract từ Desktop\ep_01_sample.md STATE UPDATE section
+
+ep_number_completed: 1
+generated_by: SVHMP-10.0-RC3.2  # historical — sample generated trước round 9 refactor
+audited_by: SVHMP_CMD_QA_MASTER_LOCK_v1.1 (round 9)
+ship_timestamp: "2026-06-19T00:35:00+07:00"
+qa_decision: PASS (score 91)
+
+# ============================================================
+# RUNTIME UPDATES
+# ============================================================
+
+current_ep_pointer:
+  before: 1
+  after: 2
+
+passenger_state:
+  seat_1: {name: "Ông cụ radio", joined_ep: 1, pending_regret: AUTO}
+  seat_2: {name: "Chị Loan trung niên", joined_ep: 1, pending_regret: AUTO}
+  seat_3: {name: "Ông cụ radio - revealed", joined_ep: 1, note: "đã mention HOOK"}
+  seat_4: {name: "Người đàn ông áo nâu", joined_ep: 1, pending_regret: AUTO}
+  seat_5: {name: "Cô giáo trẻ", joined_ep: 1, pending_regret: AUTO}
+  seat_6: {name: "Bác trai trầm", joined_ep: 1, pending_regret: AUTO}
+  seat_7:
+    leaving_ep_1: "Quang"            # passenger rời
+    new_ep_1: "Cô gái áo gió xanh nhạt"  # passenger lên ngay
+    arc_note: "Hà callback hint — KHÔNG reveal sớm"
+  seat_8: {name: "Cô gái tóc cột thấp ghế 8", joined_ep: 1, pending_regret: AUTO}
+  seat_9: {name: "Cô y tá đồng phục cũ", joined_ep: 1, pending_regret: AUTO}
+  seat_10: {name: "Anh xe ôm trẻ", joined_ep: 1, pending_regret: AUTO}
+  seat_11: {name: "Cô bé sinh viên", joined_ep: 1, pending_regret: AUTO}
+  seat_12: {name: "Anh trung niên cầm giấy gấp tư", joined_ep: 1, pending_regret: AUTO}
+
+seat_13_occupant: null
+bell_total_series: 2                 # round 12 fix B6.1 — text có 2 bell instances
+                                     # (1 ở REVEAL line 359, 1 ở CLIFFHANGER line 517)
+                                     # CORRECTION từ sample metadata bell_count: 1
+
+last_dna_variant: "A"
+last_emotion_flipped: false
+last_dominant_emotion: "longing"
+last_aftertaste: "ám ảnh nhẹ"
+season_current: 1
+
+# ============================================================
+# ARC TRACKING (B2.1 fix — backfill full schema)
+# ============================================================
+
+open_arcs:
+  - tag: ARC_0001                   # standardized ID format (was "ARC-ep1")
+    title: "Đồng hồ xà cừ chuyển sang cô gái áo gió xanh (Hà callback)"
+    status: OPEN
+    importance: HIGH
+    plant_ep: 1
+    expected_payoff_ep: 7
+    payoff_owner: PAS_0007_NEW       # standardized PAS ID format
+    payoff_kind: RECOGNITION         # cô gái áo xanh nhận ra
+    related_objects: [OBJ_DONG_HO_XA_CU]
+    related_locations: [LOC_CAU_LONG_BIEN]
+    last_referenced_ep: 1
+    plant_signals_remaining:
+      - "Cô gái mang chiếc đồng hồ qua 6 ep"
+      - "Ai đó nhắc tên Hà bóng gió ep 4 hoặc 5"
+      - "Bác tài liếc gương ở dòng có đồng hồ"
+
+# ============================================================
+# EMOTION HISTORY (cumulative)
+# ============================================================
+
+emotion_history:
+  total_eps: 1
+  emotion_count:
+    sadness: 1
+    regret: 1
+    nostalgia: 0
+    loneliness: 1
+    melancholy: 1
+    longing: 1
+  aftertaste_count:
+    "buồn": 0
+    "nghẹn": 0
+    "ám ảnh nhẹ": 1
+
+# ============================================================
+# CONTENT LAYER HISTORY (round 9 — bible/08 novelty constraints)
+# ============================================================
+
+pillar_history:                      # last 10 ep
+  - {ep: 1, pillar: love_regret}
+
+regret_archetype_history:            # last 30 ep — for same_regret distance 15
+  - {ep: 1, archetype: unspoken_love}
+
+relationship_history:                # last 15 ep — for same_relationship distance 8
+  - {ep: 1, relationship: lover}
+
+passenger_archetype_history:         # last 15 ep — for same_passenger_archetype distance 8
+  - {ep: 1, archetype: ARCH_TINH_DAU_CHUA_NOI}  # tự gen, không trong 12 ARCH_01-12 cố định
+
+object_history:                      # last 15 ep — for same_object distance 10
+  - {ep: 1, object: "chiếc đồng hồ nữ vỏ xà cừ"}
+
+twist_pattern_history:               # last 25 ep — for same_twist distance 20
+  - {ep: 1, twist: TP2_object_recognition}  # nhận ra qua vật
+
+cliffhanger_pattern_history:         # last 10 ep — for same_cliffhanger distance 4
+  - {ep: 1, pattern: A}  # action + vật + treo lửng
+
+title_keywords_history:              # last 10 ep — for same_title_keyword distance 6
+  - {ep: 1, keywords: ["đồng hồ", "xà cừ"]}
+
+regret_line_phrase_history:          # last 35 ep — for substring distance 30
+  - {ep: 1, phrase: "Tôi không nói được câu đó với Hà"}
+
+emotion_history_rotation:            # last 12 ep — for same_emotion distance 2
+  - {ep: 1, emotion: nostalgia}      # mapped từ ám_ảnh_nhẹ + longing dominant
+
+dna_variant_history:                 # last 6 ep — for same_dna_variant distance 2
+  - {ep: 1, variant: A}
+
+# ============================================================
+# LEDGER ENTRY (per-ep detail for batch reporting)
+# ============================================================
+
+ledger_entry:
+  ep_1:
+    dna_variant: A
+    pillar: love_regret
+    relationship: lover
+    archetype_used: ARCH_TINH_DAU_CHUA_NOI  # tự gen
+    regret_archetype: unspoken_love
+    object_central: "chiếc đồng hồ nữ vỏ xà cừ"
+    setting: "Hà Nội đêm tháng tư, Cầu Long Biên"
+    impossible_event: "đồng hồ giữ 8 năm trong ngăn kéo đáy, hôm nay tự nhiên mang theo"
+    clue_planted: "kim dừng 7:10 = giờ Hà mất ở JFK timezone"
+    reveal_summary: "Quang thương Hà từ lớp 11, mua đồng hồ ở sân bay, Hà mất ngày bay sang Mỹ"
+    passenger_leave: {seat: 7, name: "Quang"}
+    passenger_join: {seat: 7, name: "Cô gái áo gió xanh", object: "đồng hồ xà cừ kim 7:10"}
+    cliffhanger_pattern: A
+    cliffhanger_summary: "cô gái áp đồng hồ vào ngực, áo gió xanh giống Hà"
+    arcs_opened: [ARC_0001]
+    arcs_closed: []
+    dominant_emotion: longing
+    aftertaste: "ám ảnh nhẹ"
+    beat_4_dialog: "Tôi nhớ ra rồi… Bảy giờ mười. Là lúc Hà mất. Tôi giữ đồng hồ này. Kim dừng đúng giờ Hà mất."
+    title: "ĐỒNG HỒ NỮ MÀU XÀ CỪ"
+    word_count: 1812
+    bell_count: 2                    # round 12 fix B6.1 — corrected from 1
+    section_breakdown:
+      HOOK: 120
+      SETUP: 360
+      INCIDENT: 400
+      REVEAL: 480
+      PAYOFF: 310
+      CLIFFHANGER: 180  # ~total 1850 vs actual 1812 (close)
+    estimated_duration_minutes: 12.9
+    assets_used:
+      - {name: bus_v01, checksum_match: PENDING_ACTUAL_RENDER}
+      - {name: bell_v01, checksum_match: PENDING}
+      - {name: lamp_v01, checksum_match: PENDING}
+      - {name: rain_v02, checksum_match: PENDING}
+      - {name: char_bac_tai_v01, checksum_match: PENDING}
+    qa_score:
+      overall: 91
+      breakdown: {story: 92, continuity: 88, metrics: 92, tts: 90, content: 90}
+      decision: PASS
+      hard_fails: []
+      minor_errors: 6
+
+# ============================================================
+# DIRECTOR UPDATES
+# ============================================================
+
+director_update:
+  current_phase: establish
+  next_phase_at_ep: 11 (mystery)
+  mythology_progress_pct: 0
+  emotion_budget_running: {melancholy: 60, mystery: 25, warmth: 15}
+  tension_curve_current: 20
+
+# ============================================================
+# RECOMMENDATIONS NEXT EP (from QA Lock v1.1 audit)
+# ============================================================
+
+next_ep_constraints:
+  forced_pillar: family_regret      # cân bằng S1 target family 45%
+  forced_relationship: ["mother", "father"]  # pick 1
+  forced_emotion_aftertaste: "nghẹn"  # per bible/06 rotation ep 2 default
+  forced_archetype_avoid: [unspoken_love]
+  forced_relationship_avoid: [lover]
+  forced_object_avoid: ["chiếc đồng hồ"]
+  exclude_passenger_seat_leaving: 7   # giữ cô gái áo xanh ARC_0001
+  exclude_stop_location: "Cầu Long Biên"
+  exclude_title_keywords: ["đồng hồ", "xà cừ"]

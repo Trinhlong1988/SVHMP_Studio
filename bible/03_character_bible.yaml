@@ -1,0 +1,101 @@
+# 03_CHARACTER_BIBLE — recurring characters bậc series.
+# CẤM tạo recurring mới ngoài bác tài + Nam.
+
+version: 1.0
+lock_date: 2026-06-19
+
+characters:
+
+  CHAR_DRIVER:
+    id: CHAR_DRIVER
+    role: BAC_TAI
+    display_name: "Bác tài"
+    appears_in_eps: "1-90 (toàn series)"
+    visual:
+      age_appearance: "55-60"
+      build: "gầy, lưng hơi còng"
+      clothing: "sơ mi xám cũ, quần tây đen"
+      hands: "găng tay trắng (không tháo trừ ep 59-60)"
+      face: "khắc khổ, mắt sâu"
+      voice: "trầm, chậm, KHÔNG khàn"
+    behavior:
+      always:
+        - "nhìn gương chiếu hậu trước khi nói"
+        - "hai tay vô-lăng"
+        - "nhịp ngón trỏ trái 3 cái khi suy nghĩ"
+      never:
+        - cười
+        - quát
+        - giải thích lore
+        - tháo găng tay (trừ ep 59-60)
+        - rời ghế lái khi có khách
+        - nói câu thứ 3 ngoài 2 câu chuẩn
+      speech_lines:
+        - "Con đã nhớ ra chưa?"
+        - "Chưa tới lúc."
+      max_dialog_per_ep: 3   # round 12 fix B10.1 clarify: đây là max LẦN XUẤT HIỆN của lời thoại bác tài/ep.
+                            # Nội dung CHỈ 2 câu unique (từ speech_lines list trên) — KHÔNG sáng tạo câu thứ 3.
+                            # Ví dụ ep_01: "Con đã nhớ ra chưa?" ×2 + "Chưa tới lúc." ×1 = 3 dialog instances OK.
+                            # Khớp với bible/02 fact_011 "Bác tài CHỈ 2 câu chuẩn" (2 = số câu UNIQUE).
+                            # Exception duy nhất: ep 73 (1 câu thứ 3 "Tới rồi đấy, Nam.") + ep 90 (1 câu "Đến lúc tôi cũng nhớ ra rồi.")
+    internal:
+      state_default: "kiên nhẫn vô tận, mệt mỏi che giấu"
+      secret: "cựu hành khách — không kịp ở bên cha lúc cha mất → trở thành tài xế"
+      why_white_gloves: "tay có vết bỏng từ đêm cha mất"
+      knows:
+        - "luật chuyến xe"
+        - "hành khách giữ gì"
+        - "khi nào họ sẽ nhớ"
+        - "chính mình rồi cũng rời"
+      does_not_know:
+        - "điểm cuối là gì"
+        - "hành khách 73 là ai (đến khi gặp)"
+        - "sau khi rời đi đâu"
+    relationship_to_73:
+      - "cựu hành khách → tài xế"
+      - "chuyến 73 = chuyến đầu bác tài lái"
+      - "hành khách 73 = người thay bác tài"
+
+  CHAR_NAM:
+    id: CHAR_NAM
+    role: POV_PROTAGONIST
+    display_name: "Nam"
+    appears_in_eps: "21-90 (rải rác qua ký ức người khác → boarding ep 30 → pivot ep 73 → finale ep 90)"
+    visual:
+      age: "28-32"
+      build: "trung bình, hơi gầy"
+      clothing: "áo sơ mi xanh đậm cũ, quần jean tối"
+      recurring_object: "cặp da nâu cũ của ông nội"
+    personality:
+      surface: "trầm tính, hay quan sát, ít nói"
+      underneath: "tự dằn vặt, chu toàn quá mức"
+      trigger_anger: "ai đó coi nhẹ lời hứa"
+      trigger_softness: "thấy người già tay run"
+    speech_pattern:
+      - "câu ngắn, hay bỏ lửng (…)"
+      - "hỏi nhiều hơn khẳng định"
+      - "hiếm xưng 'tôi' — thường dùng 'mình'"
+      - "không bao giờ chửi thề"
+    fear:
+      primary: "nhớ ra mình đã quên một lời hứa quan trọng"
+      secondary: "bị bỏ lại sau khi người thân rời đi"
+    core_wound: |
+      Bà nội mất khi Nam đi công tác. Nam hứa Tết về thăm bà, nhưng kẹt việc.
+      Bà đợi đến giao thừa, gọi Nam lần cuối — Nam không bắt máy.
+      Bà mất rạng sáng mùng 1. Nam không kịp nói "con xin lỗi".
+    relationship_map:
+      - "bà nội (mất): wound chính"
+      - "mẹ Nam: còn sống, ở quê — Nam tránh gọi vì sợ giống cảnh với bà"
+      - "người yêu cũ: chia tay vì Nam 'không có mặt khi cần'"
+      - "bác tài: dần nhận bác tài giống ông nội"
+    arc_position:
+      ep_21_29: "xuất hiện rải rác qua ký ức người khác (chưa lộ là POV)"
+      ep_30: "lên xe lần đầu, ngồi ghế 7"
+      ep_31_60: "thân với 1-2 hành khách, nhận bác tài quen"
+      ep_61_72: "nghi mình liên quan chuyến 73"
+      ep_73: "ngồi ghế 13 → reveal chính là hành khách 73"
+      ep_74_90: "chấp nhận, học lái"
+    secret_for_audience: "chính Nam = hành khách 73 (reveal ep 73)"
+
+no_other_recurring_characters: true
+note: "Ngoài bác tài + Nam, mọi hành khách khác one-shot — KHÔNG tạo recurring mới."

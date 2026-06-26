@@ -1,0 +1,296 @@
+# SVHMP — 18 DRIVER REVEAL BUDGET
+# Lock date: 2026-06-23 (Mr.Long round 3 docx 15:49 — sau review bible 9.7/10 với 3 missing items)
+# Status: IMMUTABLE per series
+# Loaded by: Generator (clue rate ceiling) / QA Lock (PHASE 12.0.X HARD-FAIL budget vượt) / Publisher (description không spoil)
+# Mục tiêu: ngăn AI vô tình spoil twist driver/73 trước source_ep. Budget % cứng theo phase.
+
+version: 1.0
+lock_date: 2026-06-23 15:50
+purpose: |
+  Series 50-100 ep dễ spoiler accumulation. Mỗi tập 1 manh mối nhỏ → tổng 50 tập = lộ hết.
+  File này set BUDGET TỐI ĐA % "driver mystery exposed" theo phase.
+  Generator tính cumulative_reveal_score (0-100) — vượt budget = HARD-FAIL.
+  Cross-ref: bible/02_lore_db.fact_073_X (source_ep mapping) + 03_character_bible.CHAR_DRIVER.
+
+# ============================================================
+# BUDGET PER PHASE (cumulative cap)
+# ============================================================
+# Cumulative_reveal_score = max % driver mystery exposed tới ep N.
+# Mỗi clue được assign reveal_weight (1-30 pts). Budget = trần cộng dồn.
+
+budget_curve:
+
+  ep_1_to_20:
+    phase: ESTABLISH (rule discovery)
+    cumulative_cap: 5      # %
+    description: |
+      Khán giả mới — chỉ biết "có chuyến xe đêm + có bác tài". KHÔNG biết bác tài là gì.
+      Chỉ allow: găng tay trắng + 2 câu chuẩn + nhìn gương + nhịp ngón.
+      EP01 v7_final_round3_lock ở ngưỡng này (~3% — bác tài chỉ làm việc của tài xế).
+    allowed_clues_max_weight: 1
+    forbidden_clues:
+      - bác tài có quá khứ riêng
+      - lý do găng tay
+      - bác tài từng là hành khách
+      - chuyến 73 là gì
+      - điểm cuối là gì
+
+  ep_18:
+    special_anchor: true
+    fact_unlocked: fact_073_A  # "Tấm thẻ 'CHUYẾN THỨ 73' tồn tại"
+    incremental_weight: 3
+    cumulative_after: 8       # % (5 + 3)
+    description: "Tease 'tấm thẻ 73' tồn tại — KHÔNG giải thích."
+
+  ep_21_to_40:
+    phase: MYSTERY (driver có dấu hiệu khác)
+    cumulative_cap: 10        # %
+    description: |
+      Bắt đầu bác tài hơi khác. Allow: 1 cái nhìn dài hơn / 1 lần dừng tay / 1 lần lưỡng lự.
+      KHÔNG flashback bác tài. KHÔNG lộ lý do găng tay.
+    allowed_clues_max_weight: 2
+    allowed_clue_types:
+      - bác tài quan sát hành khách rất kỹ (insight)
+      - bác tài biết tên hành khách trước khi hỏi (1 lần / 20 ep)
+      - bác tài nhịp ngón mạnh hơn khi 1 chủ đề cụ thể
+    forbidden_clues:
+      - bác tài tự nói về quá khứ
+      - tháo găng tay
+      - flashback bác tài
+      - giải thích chuyến 73
+
+  ep_41_to_60:
+    phase: ESCALATION (driver có quá khứ)
+    cumulative_cap: 25        # %
+    description: |
+      Bác tài rõ ràng có 1 câu chuyện. Allow: hành khách khác đoán / hint qua hành động.
+      KHÔNG full backstory. KHÔNG tháo găng. Reveal qua góc third-person.
+    allowed_clues_max_weight: 5
+    allowed_clue_types:
+      - hành khách khác nhận xét "bác tài quen quen"
+      - 1 vật ở ghế lái (radio cũ, ảnh nhỏ) — KHÔNG zoom in
+      - 1 cảnh bác tài lưỡng lự ở 1 stop (= điểm bác tài từng xuống)
+      - đề cập "chuyến 73" qua hành khách khác
+    forbidden_clues:
+      - lý do bác tài lái xe này
+      - tháo găng tay
+      - flashback bác tài cha mất
+      - "hành khách 73 là ai"
+
+  ep_51:
+    special_anchor: true
+    fact_unlocked: fact_073_B  # "Bác tài là cựu hành khách (đã rời xe đêm cha mất)"
+    incremental_weight: 12
+    cumulative_after: 37      # % (25 + 12, vượt cap 25 → ngoại lệ theo source_ep)
+    description: |
+      Reveal MAJOR — qua hành khách khác hoặc tấm thẻ tìm thấy.
+      KHÔNG narrator-explain. KHÔNG bác tài tự nói.
+    note: "Vượt cap 25% là intentional — fact_073_B là pivot reveal mid-series."
+
+  ep_61_to_72:
+    phase: REVELATION (driver gần lộ)
+    cumulative_cap: 60        # %
+    description: |
+      Series đến cao trào. Allow: bác tài lưỡng lự rõ / 1 cảnh tháo găng (ép 59-60 only) / hint mạnh chuyến 73.
+    allowed_clues_max_weight: 10
+    allowed_clue_types:
+      - bác tài tháo găng tay 1 lần ≤30s (chỉ ep 59-60 per 02_lore_db)
+      - hành khách 13 (Nam) cảm nhận quen
+      - 1 dòng "tôi cũng đã từng..." từ bác tài (cấm nói tiếp)
+      - tấm thẻ 73 được xác nhận
+    forbidden_clues:
+      - "Nam = hành khách 73"
+      - bác tài tự chấp nhận rời ghế
+      - điểm cuối là gì
+
+  ep_73:
+    phase: PIVOT
+    fact_unlocked:
+      - fact_073_C  # "Chuyến 73 = chuyến đầu bác tài lái + chuyến bác tài rời"
+      - fact_073_D  # "Hành khách 73 = người thay bác tài"
+      - fact_073_E  # "Nam = hành khách 73"
+    cumulative_cap: 95        # %
+    incremental_weight: 35
+    cumulative_after: 95
+    description: |
+      ALL MAJOR REVEALS. Bác tài nói câu thứ 3 ngoại lệ ("Tới rồi đấy, Nam.").
+      Nam ngồi ghế 13 → reveal là hành khách 73.
+    special_rules:
+      - driver speech exception: ngoại lệ duy nhất câu 3
+      - bell có thể double (per 09_emotion_intensity ep_61_to_90)
+
+  ep_74_to_89:
+    phase: AFTERMATH (Nam học lái)
+    cumulative_cap: 98        # %
+    description: |
+      Nam thay bác tài tập sự. Hành khách mới (90 fact_F chưa lộ).
+      Allow expose mọi fact_073_A..E. KHÔNG lộ fact_073_F.
+
+  ep_90:
+    phase: FINALE
+    fact_unlocked: fact_073_F  # "Điểm cuối = khoảnh khắc người sống nhớ ra họ"
+    cumulative_cap: 100       # %
+    description: |
+      Final reveal. Bác tài "Đến lúc tôi cũng nhớ ra rồi." → rời xe.
+      Nam chính thức làm tài xế. Series soft-loop.
+
+# ============================================================
+# CLUE WEIGHT TAXONOMY
+# ============================================================
+# Mỗi clue Generator generate được gán weight. QA verify cumulative <= budget cap.
+
+clue_weight_taxonomy:
+
+  weight_1_micro:
+    description: "Trivia chuẩn bác tài (không thông tin mới)"
+    examples:
+      - "Bác tài nhìn gương chiếu hậu trước khi nói."
+      - "Bác tài hai tay vô-lăng."
+      - "Găng tay trắng."
+    allowed_phase: ALL
+    max_per_ep: unlimited
+
+  weight_2_minor:
+    description: "Sắc thái nhỏ (lưỡng lự / im lặng dài)"
+    examples:
+      - "Bác tài liếc gương lâu hơn bình thường."
+      - "Bác tài nhịp ngón trỏ trái 5 cái thay vì 3."
+    allowed_phase: ep_21+
+    max_per_ep: 2
+
+  weight_5_moderate:
+    description: "Hành động hint quá khứ (qua góc khác)"
+    examples:
+      - "Hành khách khác: 'Bác tài quen quen.'"
+      - "Bác tài có vẻ biết stop này trước khi xe tới."
+      - "Radio cũ ở ghế lái (không zoom)."
+    allowed_phase: ep_41+
+    max_per_ep: 1
+
+  weight_10_major:
+    description: "Cảnh hint backstory (1 lần / season)"
+    examples:
+      - "Bác tài tháo găng tay 1 lần (ep 59-60 only)."
+      - "Bác tài: 'Tôi cũng đã từng...' (cấm nói tiếp)."
+    allowed_phase: ep_51+ (with anchor exception)
+    max_per_ep: 1
+
+  weight_30_revelation:
+    description: "Reveal cấp fact_073_X — ONLY ở source_ep"
+    examples:
+      - fact_073_A (ep 18)
+      - fact_073_B (ep 51)
+      - fact_073_C/D/E (ep 73)
+      - fact_073_F (ep 90)
+    allowed_phase: source_ep ONLY
+    max_per_ep: 1
+
+# ============================================================
+# CUMULATIVE TRACKING
+# ============================================================
+
+state_tracking:
+  field: state.driver_reveal_cumulative
+  schema:
+    ep_N:
+      incremental: int     # clue weight added in this ep
+      cumulative: int      # sum from ep 1 to N
+      facts_unlocked: [fact_073_X]
+      max_clue_weight_in_ep: int
+  update_after_each_ep: append
+
+ep_input_required_field:
+  field: ep_input.planned_driver_clues
+  type: list
+  example: [{type: weight_5_moderate, content: "Hành khách 'Bác tài quen quen'"}]
+
+# ============================================================
+# QA INTEGRATION
+# ============================================================
+
+qa_lock_integration:
+  new_phase: 12.0_constitution.driver_reveal_budget   # sub-check trong PHASE 12.0
+  check_at: after constitution ALWAYS_5 / NEVER_7 / GHOST_RULES_3 / ENDING_RULES
+
+  checks:
+    check_1_cumulative_cap:
+      rule: cumulative_after_ep <= budget_curve[ep_range].cumulative_cap
+      if_violation:
+        severity: critical_error
+        type: driver_reveal_budget_exceeded
+        message: "cumulative {value}% > cap {cap}% at ep {N}"
+        regen_scope: [driver_clue_reduction]
+
+    check_2_clue_weight_per_phase:
+      rule: max(ep.clue_weights) <= budget_curve[ep_range].allowed_clues_max_weight
+      if_violation:
+        severity: critical_error
+        type: driver_clue_too_heavy_for_phase
+        regen_scope: [driver_clue_downgrade]
+
+    check_3_fact_unlock_at_source_ep:
+      rule: fact_073_X only revealed at source_ep
+      if_violation: "critical_error: fact_073_spoiler_before_source"
+
+    check_4_forbidden_clues:
+      rule: clue type NOT in budget_curve[ep_range].forbidden_clues
+      if_violation: "critical_error: driver_forbidden_clue_for_phase"
+
+# ============================================================
+# GENERATOR INTEGRATION
+# ============================================================
+
+generator_integration:
+  pre_write:
+    - load state.driver_reveal_cumulative + budget_curve[current_ep_range]
+    - select planned_driver_clues from allowed_clue_types of current phase
+    - simulate cumulative_after = cumulative_current + sum(planned_clues_weights)
+    - if simulate > cap: BLOCK + alert "driver budget exceeded — reduce clues"
+
+  during_write:
+    - count actual driver clues by weight in draft
+    - if exceeds budget_curve max_clue_weight: WARNING
+
+  post_write:
+    - report incremental_clue_weight + cumulative_after to ep_metadata
+    - feed to QA Lock check_1/2/3/4
+
+# ============================================================
+# NORTH STAR QA QUESTION (Mr.Long docx 15:49)
+# ============================================================
+# Sau mỗi ep, ngoài budget check, QA hỏi:
+# "Nếu bỏ tên series + bỏ identity bác tài, người nghe còn cảm nhận được core_promise không?"
+# Nếu KHÔNG → tập SAI core_promise (vi phạm ALWAYS.unresolved_goodbye).
+# Nếu CÓ nhưng lộ quá nhiều driver/73 → vi phạm budget này.
+
+north_star_question:
+  text: "Nếu bỏ tên series đi, người nghe còn cảm nhận được 'một chuyến xe đêm dành cho những người còn một điều chưa kịp nói' không?"
+  apply: QA PHASE 12.0 (constitution check)
+  if_no: "critical_error: north_star_violation"
+
+# ============================================================
+# EP01 v7_final_round3_lock — REFERENCE
+# ============================================================
+
+ep_01_reference:
+  cumulative_after_ep01: 3       # %
+  driver_clues_in_ep01:
+    - {weight: 1, content: "găng tay trắng"}
+    - {weight: 1, content: "hai tay vô-lăng"}
+    - {weight: 1, content: "nhìn gương trước khi nói"}
+    - {weight: 1, content: "2 câu chuẩn: 'Con đã nhớ ra chưa?' / 'Chưa tới lúc.'"}
+  facts_unlocked_in_ep01: []     # KHÔNG fact_073_X lộ (đúng vì source_ep_A = 18)
+  compliance: PASS (budget 3% < cap 5%)
+
+# ============================================================
+# CHANGELOG
+# ============================================================
+
+changelog:
+  - version: 1.0
+    date: 2026-06-23
+    author: Mr.Long (round 3 docx 15:49)
+    note: |
+      Initial lock sau review bible 9.7/10. Mr.Long flag missing driver_reveal_budget.
+      Cross-ref bible/02 fact_073_A..F + 03 CHAR_DRIVER + 09 emotion_intensity.
+      North star question added cho QA PHASE 12.0.

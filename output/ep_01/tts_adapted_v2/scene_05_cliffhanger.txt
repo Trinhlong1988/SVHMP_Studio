@@ -1,0 +1,27 @@
+Ghế số bảy trống được hai giây — Rồi có một cô gái trẻ ngồi vào. [pause:300ms]
+Cô tóc xõa — Áo gió xanh nhạt. [pause:1000ms]
+
+Cô không nhớ mình lên xe lúc nào — Cô nhìn xuống. [pause:300ms]
+Chiếc đồng hồ đang nằm trên ghế cạnh cô. [pause:1000ms]
+
+Vỏ xà cừ — Kim chỉ bảy giờ mười. [pause:1000ms]
+
+Cô nhặt lên — Cô nhíu mắt nhìn. [pause:1000ms]
+
+[emph:question] — Của tôi à? [pause:1000ms]
+
+[emph:whisper] Cô nhỏ nhẹ. [pause:1200ms]
+
+— Tôi không nhớ… [pause:1000ms]
+
+[emph:whisper] Cô đưa đồng hồ lên trước mặt — [pause:500ms] Chiếc đồng hồ rung khẽ một lần trong tay cô, Cô khẽ rùng mình. [pause:300ms]
+Như nhớ ra điều gì rất xa. [pause:1000ms]
+
+Cô áp đồng hồ vào ngực — Ngoài cửa kính, sương lại khép lại. [pause:300ms]
+Đèn vàng tắt. [pause:1200ms]
+
+Còn lại tiếng mưa. [pause:1500ms]
+Và một câu chưa kịp nói, dừng lại ở bảy giờ mười. [pause:2000ms]
+Bác tài liếc gương. [pause:1200ms]
+
+— Chưa tới lúc. [pause:3000ms]

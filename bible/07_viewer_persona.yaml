@@ -1,0 +1,121 @@
+# SVHMP — 07 VIEWER PERSONA BIBLE
+# Lock date: 2026-06-19 (round 11 — Mr.Long docx 13:33)
+# Status: IMMUTABLE per series — KHÔNG sửa mid-production
+# Loaded by: Generator (writing tone) / TTS Director (preset bias) / Video Director (thumbnail/text)
+#            Publisher (SEO + title + description + comment classifier)
+
+version: 1.0
+lock_date: 2026-06-19
+purpose: |
+  Mô tả rõ người nghe target. Mọi quyết định Generator/QA/TTS/Video/Publisher đều
+  phải pass câu hỏi "viewer trong persona này có nhận / cảm được điều này không?"
+
+viewer_persona:
+  core:
+    age_range: "28-55"
+    gender: mixed (slight female-skew ~55%, female dễ relate family_regret)
+    geo_primary: Việt Nam (Hà Nội, TP HCM, miền Trung, miền Tây — đa vùng)
+    geo_secondary: Việt kiều (Mỹ, Úc, Đức, Nhật, Hàn) ~15% audience
+    income_segment: trung lưu trở xuống (relatability cao với labor/parent regret)
+    education: tốt nghiệp THPT trở lên
+    family_status: phần lớn đã làm cha/mẹ HOẶC còn cha/mẹ ở quê
+
+  listening_time:
+    primary_slots:
+      - "trước khi ngủ (22:00-00:30)"      # 45% audience
+      - "lái xe đêm / chạy xe ôm khuya"    # 25% audience
+      - "làm việc khuya một mình"          # 20% audience
+    secondary_slots:
+      - "sáng sớm pha cà phê (5:30-6:30)"  # 5%
+      - "ngồi xe khách / tàu đường dài"    # 5%
+    duration_per_session: "1-3 tập (13-39 phút)"
+    device_split:
+      - smartphone earphone: 60%
+      - smartphone loudspeaker thấp: 25%
+      - máy tính / loa: 15%
+
+  psychological_needs:
+    - được đồng cảm (validation cho regret bản thân)
+    - nhớ người thân (mẹ/cha/con/người yêu cũ)
+    - suy ngẫm cuộc sống (existential pause)
+    - tìm sự chữa lành (catharsis qua nghẹn → release)
+    - cảm giác có người hiểu mình lúc khuya
+    - học cách buông bỏ (season 3)
+
+  emotional_starting_state:
+    - mệt sau ngày làm
+    - hơi cô đơn (chia tay/xa nhà/single/mất người thân gần đây)
+    - tâm trạng trầm sẵn (chủ động chọn truyện ma melancholy)
+    - KHÔNG đang tìm "thrill" / kích thích
+    - KHÔNG đang tìm twist plot phức tạp
+
+  avoidance (anti-need — viewer ACTIVELY tránh):
+    - máu me chi tiết
+    - hù dọa (jump scare, mặt người ngoái)
+    - la hét cao trào
+    - rape / abuse / torture
+    - gore / autopsy / body horror
+    - tôn giáo cụ thể (sợ offend belief riêng)
+    - chính trị / thời sự
+    - twist "tất cả là giấc mơ" (cảm thấy bị lừa)
+    - kết "đón xem tập sau" kiểu drama
+    - quảng cáo dày trong nội dung
+
+  preferred_payoff:
+    - cảm giác "à đúng rồi, tôi cũng vậy"
+    - 1 dòng REGRET LINE đáng nhớ để screenshot
+    - ending để nằm im 3-5 phút sau khi nghe
+    - 1 lý do để gọi điện cho mẹ/bố sáng hôm sau
+
+  trigger_to_share_comment (theo thứ tự khả năng):
+    1. nhận ra "câu chuyện này giống mình quá"
+    2. khóc nhẹ ở beat_4
+    3. nhớ 1 người cụ thể trong gia đình
+    4. muốn để lại lời nhắn (gọi mẹ / xin lỗi / hứa)
+    5. recommend cho bạn cùng cảnh
+
+  trigger_to_unsubscribe:
+    - 3 ep liền trùng motif (chán)
+    - 1 ep máu me hoặc jump scare (vi phạm avoidance)
+    - 1 ep quảng cáo dày
+    - 1 ep title clickbait drift soul
+    - kênh giảm chất lượng audio mix (LUFS drift / SFX harsh)
+
+usage_per_cmd:
+  # NOTE round 12 fix B5.1: Generator (RC3.4) + QA Lock (v1.1) currently FROZEN — KHÔNG explicit load file này
+  # qua INPUT block. Họ đã có content_layer inline (round 9). Khi unfreeze + có v10.1-FINAL,
+  # nên migrate content_layer inline sang load bible/07-10 để dễ tune.
+  # Hiện chỉ TTS + Video + Publisher load trực tiếp.
+
+  generator:
+    status: "FROZEN — content_layer inline trong generator.md round 9 đã chứa viewer guidance"
+    inline_rules:
+      - 'mỗi tập tự hỏi "viewer 28-55 nghe lúc 23h có cảm được dòng này không?"'
+      - "tránh từ ngữ trẻ vị thành niên / slang gen-Z"
+      - "tránh ám chỉ chính trị tôn giáo"
+      - "ưu tiên relatable archetype (mẹ ở quê, cha lao động, vợ trẻ, con xa nhà)"
+    intend_migrate_to_load_file: true   # v10.1-FINAL
+
+  qa_lock:
+    status: "FROZEN — PHASE 12.1 content_philosophy + 12.8 rubric reflect viewer principles"
+    inline_rules:
+      - "PHASE 12.8 content_score.relatability inherits viewer_persona match"
+      - "flag minor_error nếu archetype quá xa lifestyle viewer (vd quý tộc thế kỷ 18)"
+    intend_migrate_to_load_file: true   # v10.1-FINAL
+
+  tts_director:
+    - voice preset bias warmth thấp (viewer mệt — không cần cao trào)
+    - SFX volume floor để earphone không chói
+    - cadence chậm cuối tập (viewer đang chuẩn bị ngủ)
+
+  video_director:
+    - thumbnail dark theme (xem khuya, không chói màn)
+    - text overlay ≤5 từ (đọc lướt khi quẹt YouTube)
+    - không animation thumbnail (giảm hứng click khuya)
+
+  publisher:
+    - 'title format: "Người [ai] và [vật/sự]" thay vì "10 chuyện ma có thật"'
+    - "description: 2-3 dòng đầu phải có 1 dòng quote REGRET LINE (hook viewer mỏi)"
+    - "hashtag bias: #truyenmangoctngan #buontiec #nhomethuong (NOT #ghoststory #horror2026)"
+    - "upload time slot: 21:00-22:00 ICT (trước primary listening 22:00-00:30)"
+    - "thumbnail A/B test: 2 variant cùng style, KHÔNG sốc-vs-melancholy"

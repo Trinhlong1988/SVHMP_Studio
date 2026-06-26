@@ -1,0 +1,285 @@
+# SVHMP — 00 CONSTITUTION (HIẾN PHÁP)
+# Lock date: 2026-06-23 (Mr.Long round 3 chốt sau EP01 v7_final_round3_lock)
+# Status: IMMUTABLE — KHÔNG sửa sau khi lock
+# Priority: LOAD FIRST trước mọi bible khác. Mọi file 01-17 phải tuân hiến pháp này.
+# Loaded by: Generator (writing constraints) / QA Lock (HARD-FAIL audit) / TTS Director (no SFX violation) / Video Director (no visual violation)
+# Mục tiêu: 1 file duy nhất chứa identity + bất biến của series. Tránh AI trôi DNA sau 50-100 ep.
+
+version: 1.0
+lock_date: 2026-06-23 15:15
+lock_trigger: "EP01 v7_final_round3_lock = golden reference"
+authority: Mr.Long
+supersedes: none
+
+# ============================================================
+# IDENTITY — bất biến series-wide
+# ============================================================
+
+identity:
+  series_id: SVHMP
+  genre: regret_supernatural
+  soul: unresolved_goodbye
+  format: episodic_radio_horror
+  status: LOCKED
+  production_status: READY_FOR_SERIES
+  golden_reference: ep_01_v7_final_round3_lock
+  scalability: "50-100 episodes"
+  risk_of_dna_drift: LOW (when constitution enforced)
+
+core_promise: |
+  Một chuyến xe đêm dành cho những người còn một điều chưa kịp nói.
+  Từ ep01 trở đi, KHÔNG còn là "làm truyện ma đáng sợ hơn" — mà là giữ tuyệt đối cảm giác trên.
+
+# ============================================================
+# ALWAYS — 5 nguyên tắc PHẢI có mỗi tập
+# ============================================================
+
+ALWAYS:
+  melancholy:
+    description: "Mạch cảm xúc chủ đạo là buồn man mác, không phải sợ hãi."
+    enforcement: QA HARD-FAIL nếu aftertaste KHÔNG nằm trong [buồn, nghẹn, ám ảnh nhẹ]
+    cross_ref: [01_series_bible.soul_dna, 09_emotion_intensity]
+
+  unresolved_goodbye:
+    description: "Tập phải xoay quanh 1 lời tạm biệt chưa kịp nói / lời hứa chưa kịp giữ."
+    enforcement: QA HARD-FAIL nếu hành khách KHÔNG có 1 regret cụ thể từ regret_catalog
+    cross_ref: [11_regret_catalog, 03_character_bible]
+
+  object_symbolism:
+    description: "Mỗi hành khách MANG 1 vật từ object_library. Vật = vehicle of regret."
+    enforcement: QA HARD-FAIL nếu hành khách main_pov không có object từ 12_object_library
+    cross_ref: [12_object_library]
+    rule: "fact_014 — Mỗi hành khách mang 1 điều chưa kịp làm (vật hóa)"
+
+  subtle_supernatural:
+    description: "Yếu tố siêu nhiên có nhưng KHỎE, KHÔNG show-off. Chuông / kim đồng hồ / ghế trống / kính phản chiếu."
+    enforcement: QA HARD-FAIL nếu siêu nhiên explicit (ma hiện nguyên hình + nói chuyện trực tiếp)
+    rule: "ghost_visual.max_manifestation = 1 / ep"
+
+  emotional_aftertaste:
+    description: "Tập KẾT phải để lại dư âm — viewer suy nghĩ tiếp sau khi tắt."
+    enforcement: QA HARD-FAIL nếu beat_5 (DƯ ÂM) thiếu / aftertaste resolved hoàn toàn
+    rule: "ending phải unresolved_memory (mandatory)"
+
+# ============================================================
+# NEVER — 7 cấm tuyệt đối (vi phạm = HARD-FAIL)
+# ============================================================
+
+NEVER:
+  gore:
+    description: "KHÔNG mô tả máu chi tiết, nội tạng, vết thương open. Tinh tế kiểu 'ngực áo sẫm hơn' OK."
+    examples_forbidden:
+      - "máu chảy ròng ròng"
+      - "vết thương há miệng"
+      - "xác phân hủy"
+    cross_ref: [01_series_bible.fear_source_forbidden]
+
+  jump_scare_spam:
+    description: "KHÔNG dùng âm thanh đột ngột để hù. Nếu có scare CHỈ 1 lần/ep + có justification cảm xúc."
+    examples_forbidden:
+      - "BÙM! tiếng đập cửa đột ngột"
+      - "tiếng hét chói tai bất thình lình"
+    note: "Scare khác sự ám ảnh. Series này bán ám ảnh, không bán giật mình."
+
+  exorcism:
+    description: "KHÔNG có thầy cúng / pháp sư / lễ trừ tà / bài kinh xua đuổi."
+    rationale: "Bác tài KHÔNG phải Diêm Vương / thần linh / ma (02_lore_db.permanent_locks.driver_nature). Không có thực thể để trừ."
+
+  monster_hunting:
+    description: "KHÔNG có thợ săn ma / điều tra siêu nhiên / 'team' đi diệt."
+    rationale: "Series là regret_supernatural, không phải action-horror."
+
+  combat_with_ghost:
+    description: "KHÔNG đánh nhau với ma. Không vũ khí chống lại siêu nhiên."
+    rationale: "Hành khách không kháng cự được — họ chỉ nhớ ra và rời xe."
+
+  villain_ghost:
+    description: "KHÔNG có ma 'ác' / motive trả thù / linh hồn báo oán."
+    rationale: "Soul = unresolved_goodbye, không phải vengeance. Ma trong SVHMP là hành khách chính họ, không phải kẻ thù."
+
+  explanation_dump:
+    description: "KHÔNG có đoạn giải thích lore dài. Bác tài KHÔNG bao giờ giải thích."
+    enforcement: |
+      - Bác tài chỉ 2 câu chuẩn (03_character_bible.CHAR_DRIVER.speech_lines).
+      - Lore reveal CHỈ qua experience của hành khách (cô y tá lắc đầu / kính phản chiếu / chuông ngân).
+      - Cấm narrator-voiceover giải thích "vì sao chuyến xe tồn tại".
+
+# ============================================================
+# GHOST_RULES — 3 quy tắc siêu nhiên cứng
+# ============================================================
+
+GHOST_RULES:
+  never_attack:
+    value: true
+    description: "Yếu tố siêu nhiên KHÔNG tấn công ai. Không vật lý. Không tâm linh aggressive."
+
+  never_chase:
+    value: true
+    description: "KHÔNG đuổi theo. Không chase scene. Hành khách rời xe trong yên tĩnh."
+
+  never_speak_directly:
+    value: true
+    description: "Ma KHÔNG nói chuyện trực tiếp với người sống. Chỉ qua: kính phản chiếu, kim đồng hồ nhích, bóng sát vai, chuông ngân."
+    exception: "Hành khách trên xe nói chuyện với nhau — họ đều là 'hành khách', không ai là 'ma' để hù người sống."
+
+# ============================================================
+# ENDING_RULES — 2 quy tắc kết thúc
+# ============================================================
+
+ENDING_RULES:
+  unresolved_memory:
+    value: mandatory
+    description: "Mỗi tập PHẢI kết bằng 1 ký ức chưa được nói rõ / 1 câu chưa kịp nói. KHÔNG resolve hoàn toàn."
+    enforcement: QA HARD-FAIL nếu beat_5 close hoàn toàn (kiểu "và họ sống hạnh phúc")
+
+  lingering_question:
+    value: preferred
+    description: "Khuyến khích để lại 1 câu hỏi mở trong đầu viewer ('cô gái mới là ai?', 'còn ai trên xe?')."
+    note: "Không bắt buộc nhưng tăng retention + setup cho ep sau."
+
+# ============================================================
+# SERIES_RULES — 8 quy tắc DNA từ round 3
+# ============================================================
+
+SERIES_RULES:
+  bus:
+    one_bus_only: true
+    description: "1 chuyến xe đêm duy nhất xuyên 50-100 ep."
+
+  driver:
+    speaks_only:
+      - "Con đã nhớ ra chưa?"
+      - "Chưa tới lúc."
+    exception_eps: [73, 90]   # 03_character_bible.CHAR_DRIVER ghi rõ
+    description: "Tài xế CHỈ 2 câu này. KHÔNG sáng tạo câu thứ 3 (trừ ep 73 + ep 90)."
+
+  bell:
+    max_per_episode: 1
+    description: "Chuông càng hiếm càng linh. KHÔNG thêm chuông phụ."
+
+  ghost_visual:
+    max_manifestation: 1
+    description: "Tối đa 1 lần hiện hình mỗi tập (gương / bóng / kim nhích...)."
+
+  horror_type:
+    value: regret_supernatural
+    description: "KHÔNG action / KHÔNG slasher / KHÔNG creepypasta."
+
+  passengers:
+    each_carries_object: true
+    description: "Mỗi hành khách 1 vật ký ức từ 12_object_library."
+    cross_ref: [02_lore_db.fact_014]
+
+  ending:
+    unresolved_memory: mandatory
+    description: "Trùng với ENDING_RULES.unresolved_memory."
+
+  aftertaste:
+    value: subtle_haunting
+    description: "Dư vị mơ hồ. KHÔNG chốt rõ. KHÔNG resolve."
+    cross_ref: [01_series_bible.aftertaste_enum]
+
+# ============================================================
+# CROSS-BIBLE REFERENCE (round 3 add — 2026-06-23 15:50)
+# ============================================================
+# Constitution KHÔNG duplicate — chỉ point đến file cụ thể.
+# Cross-file enforce required tránh DNA drift sau 50-100 ep.
+
+cross_bible_refs:
+  novelty_guard:
+    file: bible/08_novelty_constraints.yaml
+    summary: |
+      11-axis distance + novelty_hash 7-dim (threshold 0.40/0.50/0.70/0.90).
+      Numbers stricter than Mr.Long round-3-docx-15:49 suggestion (kept 08 since lock 2026-06-19).
+    enforced_by: Generator pre-write + QA PHASE 12.13
+
+  emotion_intensity:
+    file: bible/09_emotion_intensity.yaml
+    summary: |
+      1D level scalar 0.45→0.95 (legacy) + 2D axis_breakdown {sorrow, mystery} per phase (round 3 add).
+      Sorrow peaks per ep beat_4. Mystery peaks series ep 73.
+    enforced_by: Generator depth + TTS multiplier + Video saturation + QA PHASE 12.8
+
+  driver_reveal_budget:
+    file: bible/18_driver_reveal_budget.yaml
+    summary: |
+      Cumulative cap % theo phase (5/10/25/60/95/98/100). Clue weight taxonomy.
+      Fact_073_X reveal ONLY ở source_ep. North star QA question added.
+    enforced_by: Generator pre-write budget check + QA PHASE 12.0 driver_reveal_budget sub-check
+
+  arc_rolling_expansion:                 # round 12 add 2026-06-26 (Phase D1 Pattern 5)
+    file: bible/20_arc_rolling_expansion.yaml
+    summary: |
+      Codify state.arcs[] schema implicit pattern (round 8 B5 fix).
+      6 consistency rules AC1-AC6: payoff_owner_presence, payoff_ep_timing, canon_lock_immutable,
+      status_monotonic, payoff_duration_cap, high_importance_series_invariants.
+      Rolling season expansion: full S1 (ep 1-30) / skeleton S2 (ep 31-60) / skeleton minimal S3 (ep 61-90).
+    enforced_by: QA Lock PHASE 12.14 (NEW round 12) + Director.step_1 arc carry forward
+
+# ============================================================
+# NORTH STAR QA QUESTION (round 3 add)
+# ============================================================
+# Áp dụng sau khi check ALWAYS_5 / NEVER_7 / GHOST_RULES_3 / ENDING_RULES.
+
+north_star:
+  question: "Nếu bỏ tên series đi, người nghe còn cảm nhận được 'một chuyến xe đêm dành cho những người còn một điều chưa kịp nói' không?"
+  apply_at: QA PHASE 12.0 sau constitution check
+  if_no: "critical_error: north_star_violation"
+  rationale: |
+    Tập có thể PASS hết rule kỹ thuật nhưng vẫn KHÔNG đúng core_promise.
+    North star là kiểm tra cuối — series identity còn nhận ra không.
+
+# ============================================================
+# ENFORCEMENT — cách Constitution áp vào pipeline
+# ============================================================
+
+enforcement:
+  generator:
+    pre_write:
+      - load 00_constitution + 01_series_bible + 11_regret_catalog
+      - reject prompt vi phạm NEVER / GHOST_RULES
+    during_write:
+      - sentence-level diction check (06_lexical_style)
+      - object pick từ 12_object_library
+    post_write:
+      - self-check ALWAYS 5 mục present
+
+  qa_lock:
+    HARD_FAIL_triggers:
+      - any NEVER violation
+      - any GHOST_RULES violation
+      - missing ALWAYS principle
+      - aftertaste resolved (vi phạm ENDING_RULES.unresolved_memory)
+      - bell > 1
+      - ghost_visual > 1
+      - driver speak câu thứ 3 (trừ ep 73/90)
+
+  tts_director:
+    - không render SFX gore / jump_scare_spam
+    - bell SFX max 1 instance / ep
+
+  video_director:
+    - không render visual gore / monster / combat scene
+    - ghost manifestation visual max 1 / ep
+
+# ============================================================
+# REVISION POLICY
+# ============================================================
+
+revision_policy:
+  immutable_fields:
+    - identity.*
+    - ALWAYS.*
+    - NEVER.*
+    - GHOST_RULES.*
+  amendable_fields:
+    - ENDING_RULES.lingering_question.value (preferred → mandatory possible)
+    - SERIES_RULES.bell.max_per_episode (nếu Mr.Long quyết bỏ chuông hẳn)
+  who_can_amend: Mr.Long ONLY
+  process: "Edit 00_constitution.yaml + bump version + add changelog entry"
+
+changelog:
+  - version: 1.0
+    date: 2026-06-23
+    author: Mr.Long
+    note: "Initial lock sau EP01 v7_final_round3_lock golden reference."

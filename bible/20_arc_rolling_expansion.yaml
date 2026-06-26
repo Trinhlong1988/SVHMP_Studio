@@ -1,0 +1,265 @@
+# SVHMP — 20 ARC ROLLING EXPANSION (codify existing state.arcs pattern)
+# Lock date: 2026-06-26 (Mr.Long approve Phase D1 Pattern 5 — ainovel-cli inspired)
+# Status: PRODUCTION CANDIDATE v1.0 — documentation of existing pattern, zero behavior change
+# Loaded by: QA Lock PHASE 12.14 (arc consistency check) / Director.step_1 (arc rolling decisions)
+# Mục tiêu: Codify pattern SVHMP đã làm IMPLICITLY trong state.yaml:arcs[] → file rule rõ ràng cho mọi agent + human reviewer.
+#
+# Pattern source: ainovel-cli (voocel/ainovel-cli Pattern 5 Rolling Arc Expansion).
+# Adapt for SVHMP: SVHMP đã có pattern này IMPLICIT trong state.yaml:128-141 (schema round 8 — B5 fix).
+# File này CHỈ CODIFY documentation, KHÔNG add new behavior. Behavior already in state.arcs schema.
+
+version: 1.0
+lock_date: 2026-06-26
+authority: Mr.Long
+supersedes: none (NEW bible — codify existing implicit pattern)
+parent_constitution: bible/00_constitution.yaml
+related:
+  - runtime/state.yaml (arcs[ARC_XXXX] schema 11 fields — single source of truth)
+  - bible/11_regret_catalog.yaml (regret pillars + archetypes — feed payoff_owner.pending_regret)
+  - bible/18_driver_reveal_budget.yaml (driver arcs cross-ref source_ep mapping)
+  - prompts/director.md (step_1 PILLAR pick + arc carry forward logic)
+  - prompts/qa.md PHASE 12.14 (arc consistency enforcement)
+
+purpose: |
+  Codify pattern Rolling Arc Expansion SVHMP đã có implicit:
+  - Arc planted at ep N (planted_ep field)
+  - Arc payoff expected at ep N+K (expected_payoff_ep field)
+  - Arc payoff_owner = passenger PAS_XXXX (B5 fix round 8)
+  - Arc status lifecycle: OPEN → PAYOFF → CLOSED
+  - Multiple arcs concurrent, no upfront full-season detail planning
+  Rule này GIÚP:
+  1. AI agents tự kiểm consistency (payoff_owner còn trên xe tại expected_payoff_ep?)
+  2. Human reviewer hiểu rõ schema không phải đọc state.yaml comments
+  3. QA HARD-FAIL arc broken (passenger rời xe trước payoff)
+
+# ============================================================
+# ARC LIFECYCLE
+# ============================================================
+
+arc_lifecycle:
+  states:
+    OPEN:
+      meaning: "Arc planted, chưa pay-off. Passenger payoff_owner còn trên xe."
+      transition_to: PAYOFF (khi current_ep >= expected_payoff_ep) OR CLOSED (khi arc cancelled)
+    PAYOFF:
+      meaning: "Arc đang pay-off trong ep hiện tại. Một số manh mối lộ ra cho audience."
+      transition_to: CLOSED (sau ep payoff hoàn tất) OR OPEN (nếu split multi-ep payoff)
+      max_duration_eps: 3   # arc payoff không kéo quá 3 ep liên tiếp
+    CLOSED:
+      meaning: "Arc đã pay-off xong, payoff_owner có thể rời xe hoặc carry over"
+      transition_to: terminal (không reopen)
+
+  invariants:
+    - status_monotonic: OPEN → PAYOFF → CLOSED (không reverse)
+    - canon_lock_immutable: nếu canon_lock=true, KHÔNG được đổi planted_ep/expected_payoff_ep/payoff_owner/importance
+    - payoff_owner_presence: nếu status=OPEN hoặc PAYOFF, payoff_owner phải còn trên xe (active passenger)
+
+# ============================================================
+# ARC SCHEMA — single source of truth state.yaml:arcs[ARC_XXXX]
+# ============================================================
+# Schema này MIRROR state.yaml:128-141 (round 8 B5 fix).
+# KHÔNG tự thêm field — sửa state.yaml schema trước, sau đó update file này.
+
+arc_schema:
+  id:
+    type: string
+    pattern: "ARC_\\d{4}"
+    example: ARC_0001
+    immutable: true
+    description: "Unique identifier, monotonic, không reset"
+  title:
+    type: string
+    max_length: 80
+    example: "Đồng hồ xà cừ kim 7:10 — Hà callback"
+  desc:
+    type: string
+    max_length: 500
+    description: "Plot summary 1-2 câu — context cho AI/human reviewer"
+  status:
+    type: enum
+    values: [OPEN, PAYOFF, CLOSED]
+    default: OPEN
+  importance:
+    type: enum
+    values: [HIGH, MED, LOW]
+    description: |
+      HIGH = main arc series-spanning (vd ARC_0001 callback Hà, ARC driver mystery, ARC nam ep 73)
+      MED = secondary arc 5-15 ep span
+      LOW = single-ep beat arc (rarely tracked here, usually inline)
+  payoff_owner:
+    type: string
+    pattern: "PAS_\\d{4}"
+    description: "Passenger ID chịu trách nhiệm pay-off arc. B5 round 8 fix."
+    constraint: "MUST exist in state.passengers[]. MUST be active (trên xe) tại expected_payoff_ep."
+  planted_ep:
+    type: integer
+    range: [1, 90]
+    immutable: true
+    description: "Ep number arc xuất hiện lần đầu (manh mối đầu tiên)"
+  expected_payoff_ep:
+    type: integer
+    range: [1, 90]
+    constraint: "expected_payoff_ep >= planted_ep"
+    description: "Ep number dự kiến pay-off. Có thể adjust (KHÔNG immutable) nhưng cần document changelog."
+    drift_max_eps: 3  # adjust max ±3 ep, vượt = require Mr.Long approval
+  related_passengers:
+    type: array[string]
+    pattern: "PAS_\\d{4}"
+    description: "Passengers liên quan arc (bao gồm payoff_owner)"
+  related_objects:
+    type: array[string]
+    pattern: "OBJ_\\d{4} | CANON_OBJ_\\d{4}"
+    description: "Objects từ bible/12_object_library + canon_registry"
+  canon_lock:
+    type: boolean
+    default: false
+    description: "Nếu true, mọi field MUTABLE đều bị frozen. Vi phạm = HARD-FAIL QA."
+
+# ============================================================
+# ROLLING EXPANSION POLICY
+# ============================================================
+
+rolling_policy:
+  # Vì sao rolling? Series 90 ep không thể plan detail full 90 ep upfront — audience reception ep 1-10 inform season 2 direction.
+  # Nhưng MUST plan skeleton + key checkpoints upfront tránh drift identity.
+
+  upfront_required_arcs:
+    - main_driver_mystery_arc: planted_ep=1, expected_payoff_ep=90 (finale), importance=HIGH
+    - chuyen_73_card_arc: planted_ep=18, expected_payoff_ep varies, importance=HIGH (per bible/18 budget)
+    - nam_seat_13_arc: planted_ep=73, expected_payoff_ep=90, importance=HIGH (per state.seat_13_occupant)
+
+  per_season_skeleton:
+    season_1_ep_1_to_30:
+      detail_level: FULL_DETAIL
+      pre_planned_arcs: ALL (state.arcs[] đầy đủ trước ep 1)
+    season_2_ep_31_to_60:
+      detail_level: SKELETON
+      pre_planned_arcs: only HIGH importance (main mystery beats)
+      expand_at: ep 28 (Director.step_1 expand season_2 detail dựa trên season_1 analytics)
+    season_3_ep_61_to_90:
+      detail_level: SKELETON_MINIMAL
+      pre_planned_arcs: only finale beats (ep 73 PIVOT + ep 90 FINALE)
+      expand_at: ep 58 (after season_2 analytics)
+
+  expansion_triggers:
+    season_2_expand:
+      condition: current_ep == 28 AND state.season_1_analytics.aftertaste_avg >= 8.0
+      action: Director runs season_2_arc_planning subagent
+      output: state.arcs[] additions for ep 31-60
+    season_3_expand:
+      condition: current_ep == 58 AND state.season_2_analytics.retention_avg >= 60%
+      action: Director runs season_3_arc_planning subagent
+      output: state.arcs[] additions for ep 61-90
+    emergency_replan:
+      condition: 3 consecutive ep aftertaste < 7.0 OR retention drop > 15%
+      action: Mr.Long alert + pause production for human review
+
+# ============================================================
+# CONSISTENCY RULES (QA enforce — PHASE 12.14)
+# ============================================================
+
+consistency_rules:
+  - rule_id: AC1
+    name: payoff_owner_presence
+    check: |
+      For each arc WHERE status IN [OPEN, PAYOFF]:
+        ASSERT payoff_owner IN state.passengers[].id
+        ASSERT state.passengers[payoff_owner].active == true (chưa rời xe)
+    severity: critical_error
+    failure_action: HARD_FAIL_QA + REGEN
+
+  - rule_id: AC2
+    name: payoff_ep_timing
+    check: |
+      For each arc:
+        IF status == OPEN AND current_ep > expected_payoff_ep:
+          severity = warning  # stale arc, cần advance hoặc explicit close
+        IF status == OPEN AND current_ep > expected_payoff_ep + drift_max_eps (3):
+          severity = critical_error  # arc drift too far
+    severity: warning OR critical_error
+    failure_action: WARN (drift ≤3) | REGEN (drift >3)
+
+  - rule_id: AC3
+    name: canon_lock_immutable
+    check: |
+      For each arc WHERE canon_lock == true:
+        ASSERT planted_ep, expected_payoff_ep, payoff_owner UNCHANGED since first lock
+    severity: critical_error
+    failure_action: HARD_FAIL_QA + REGEN
+
+  - rule_id: AC4
+    name: status_monotonic
+    check: |
+      For each arc:
+        ASSERT no transition CLOSED → OPEN (reverse forbidden)
+        ASSERT no transition PAYOFF → OPEN (unless explicit multi-ep payoff documented)
+    severity: critical_error
+    failure_action: HARD_FAIL_QA
+
+  - rule_id: AC5
+    name: payoff_duration_cap
+    check: |
+      For each arc WHERE status == PAYOFF:
+        ASSERT current_ep - arc.payoff_start_ep <= 3 (max 3 consecutive eps in PAYOFF state)
+    severity: warning
+    failure_action: WARN (force CLOSE next ep)
+
+  - rule_id: AC6
+    name: high_importance_planted_required
+    check: |
+      Series invariants:
+        ASSERT exists arc WHERE importance == HIGH AND id matches "main driver mystery"
+        ASSERT exists arc WHERE importance == HIGH AND planted_ep == 18 (chuyen_73)
+        ASSERT exists arc WHERE importance == HIGH AND planted_ep == 73 (nam seat 13)
+    severity: critical_error
+    failure_action: HARD_FAIL series-level (not just ep-level)
+
+# ============================================================
+# QA INTEGRATION (qa.md PHASE 12.14)
+# ============================================================
+
+qa_integration:
+  phase_id: 12.14
+  phase_title: "Arc Consistency Check"
+  load_from:
+    - bible/20_arc_rolling_expansion.yaml (this file)
+    - runtime/state.yaml (arcs + passengers active state)
+    - runtime/lifecycle.yaml (current_ep, season_current)
+  check_order:
+    1: AC1 payoff_owner_presence
+    2: AC2 payoff_ep_timing
+    3: AC3 canon_lock_immutable
+    4: AC4 status_monotonic
+    5: AC5 payoff_duration_cap
+    6: AC6 high_importance_planted_required (series-level, run mỗi ep)
+  output_format:
+    - rule_id
+    - "status: PASS | WARN | FAIL"
+    - "violations: []"
+    - "severity: ok | warning | critical_error"
+    - "regen_scope_suggestion: [story_only, continuity_only] (per existing allowed_regen_scope)"
+
+# ============================================================
+# REVISION POLICY
+# ============================================================
+
+revision_policy:
+  status: PRODUCTION_v1_DOCUMENTATION_ONLY
+  schema_changes: |
+    Bất kỳ thay đổi arc_schema PHẢI:
+    1. Update state.yaml schema TRƯỚC (single source of truth)
+    2. Update bible/20 này SAU (mirror change)
+    3. Bump version + changelog entry
+  who_can_amend: Mr.Long ONLY
+  audit_required: yes (run svhmp_arc_audit.py sau mỗi amendment)
+
+changelog:
+  - version: 1.0
+    date: 2026-06-26
+    author: Claude (Mr.Long approve Phase D1)
+    note: |
+      Initial codification of existing implicit pattern in state.yaml:arcs[].
+      Source: state.yaml round 8 B5 fix schema + ainovel-cli Pattern 5 inspiration.
+      Zero behavior change — documentation + QA enforcement only.
+      QA PHASE 12.14 added qa.md v1.2.
+      Cross-ref bible/00 cross_bible_refs section updated.
