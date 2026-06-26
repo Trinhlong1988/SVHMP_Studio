@@ -239,6 +239,25 @@ class DashHandler(SimpleHTTPRequestHandler):
                 self.send_error(500, str(e))
             return
 
+        if route == '/api/vnqa':
+            # VNQA library report (latest ep)
+            try:
+                vnqa_dir = SVHMP / 'runtime'
+                vnqa_files = sorted(vnqa_dir.glob('vnqa_ep_*.json'),
+                                    key=lambda p: p.stat().st_mtime, reverse=True)
+                if not vnqa_files:
+                    self._send_json(200, {'available': False, 'message': 'No VNQA reports yet'})
+                    return
+                latest = vnqa_files[0]
+                with open(latest, encoding='utf-8') as f:
+                    data = yaml.safe_load(f) if False else __import__('json').load(f)
+                data['_report_file'] = latest.name
+                data['_available'] = True
+                self._send_json(200, data)
+            except Exception as e:
+                self._send_json(500, {'error': str(e), 'available': False})
+            return
+
         if route == '/api/render':
             # MULTI-CMD: list all active + recently completed CMDs
             try:

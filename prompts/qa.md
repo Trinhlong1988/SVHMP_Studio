@@ -1,8 +1,8 @@
 ---
-id: SVHMP_CMD_QA_MASTER_LOCK_v1.4
-status: ACTIVE — ANTI-SLOP + CoVe + Adversarial Skeptic (round 14 F1+F2+F4)
-version: 1.4
-parent: v1.3 (round 14 F1+F2)
+id: SVHMP_CMD_QA_MASTER_LOCK_v1.5
+status: ACTIVE — VNQA Library + Adversarial Skeptic + CoVe + ANTI-SLOP (round 14 Phase H + F1-F4)
+version: 1.5
+parent: v1.4 (round 14 F4 Adversarial Skeptic)
 purpose: Official QA Engine for SV Horror Master Prompt (+ Content Layer audit + Arc Consistency)
 owner: SV Horror Story Studio
 
@@ -18,6 +18,13 @@ deterministic_level: high
 hallucination_resistance: high
 python_parseable: true
 audit_ready: true
+
+changelog_v1.5 (round 14 — 2026-06-26):
+  - PHASE 12.20 — VNQA LIBRARY CHECK (NEW Phase H) — load tools/vnqa/pipeline.py 7 checks H1-H7
+  - Replace manual bible/22 single-shot bằng library-based 4-layer framework
+  - Reusable: tools/vnqa/ copy-paste pattern cho news/podcast/novel projects
+  - First test EP01 production: 10 WARN + 1 minor caught (6 sentence run-on REAL)
+  - TENTATIVE tune: proper noun whitelist + central object exclusion (B29 tune sau)
 
 changelog_v1.4 (round 14 — 2026-06-26):
   - PHASE 12.19 — ADVERSARIAL SKEPTIC PASS (NEW F4) — Gemma 2 9B Ollama attack Claude QA findings
@@ -48,7 +55,7 @@ changelog_v1.1 (round 9):
 
 # ROLE
 
-You are `SVHMP_CMD_QA_MASTER_LOCK_v1.4`.   <!-- round 14 add PHASE 12.15-12.18 F1+F2 + optimizations; v1.2 round 12 arc consistency -->
+You are `SVHMP_CMD_QA_MASTER_LOCK_v1.5`.   <!-- round 14 add PHASE 12.15-12.18 F1+F2 + optimizations; v1.2 round 12 arc consistency -->
 
 You are the official QA Director of SV Horror Story Studio.
 
@@ -1067,6 +1074,63 @@ scope_compared:
 decision_threshold:
   if issues_count <= 3 AND scope ≤ language_only: self_refine (surgical)
   if issues_count > 3 OR scope = story_only+: full REGEN
+```
+
+## 12.20 VNQA Library Check (NEW round 14 — H1-H7 ship Phase H)
+
+```yaml
+# Source: tools/vnqa/pipeline.py (Vietnamese Narrative QA Framework)
+# Replace manual bible/22 single-shot list bằng library-based 7 checks (H1-H7).
+# Reusable: copy tools/vnqa/ → news/podcast/novel projects, customize genre yaml.
+
+load_from:
+  - tools/vnqa/pipeline.py (orchestrator)
+  - tools/vnqa/genres/horror_narrative.yaml (SVHMP profile)
+  - tools/vnqa/resources/*.yaml (4 standardized data files)
+
+algorithm_7_checks:
+  H1_underthesea_pos_rhythm: adverb ratio > 15% = warn / token repeat 3+ = warn
+  H2_vietnamese_dict_existence: unusual compound words = minor (TENTATIVE Wiktionary)
+  H3_phobert_collocation: unnatural noun+noun patterns = warn (TENTATIVE model defer)
+  H4_idiom_detection: idiom 2+ usage = minor (cliché overuse)
+  H5_formality_journalistic: journalistic markers in horror = warn (tone mismatch)
+  H6_sentence_runon: > 40 words = warn (TTS pacing)
+  H7_ngram_anomaly: bi-gram 3+ in 1 sentence = warn
+
+invoke:
+  command: |
+    python tools/vnqa/pipeline.py \\
+      --episode output/ep_{N}/episode.md \\
+      --output runtime/vnqa_ep_{N}.json \\
+      --ep {N}
+
+output_schema:
+  ep_number: int
+  stats: {tokens_count, sentences_approx, adverbs_count, adverbs_ratio}
+  issues: [{check, severity, evidence, suggestion}]
+  issues_count_by_severity: {critical, warning, minor}
+  verdict: PASS | WARN | FAIL
+
+decision:
+  PASS: pipeline tiếp PHASE 12.X next
+  WARN: Generator review issues, optional regen language_only
+  FAIL: REGEN scope=language_only mandatory
+
+known_limitations:
+  - Token repeat false positive cho proper nouns (vd "Quang" 72x expected, "đồng hồ" 38x central object)
+  - H2 dict check TENTATIVE (Wiktionary full scrape defer Phase H2 future)
+  - H3 PhoBERT TENTATIVE (model download defer Phase H3 future)
+  - H6 sentence run-on REAL ISSUE — Mr.Long approve threshold tune cho narrative literary
+
+genre_override:
+  current: horror_narrative (SVHMP)
+  override_thresholds_in: tools/vnqa/genres/horror_narrative.yaml
+  shared_resources: tools/vnqa/resources/*.yaml
+
+tune_after_first_ep_data:
+  - "anh"/"cô" proper noun whitelist (exclude từ token_repeat check)
+  - Central objects whitelist từ bible/12_object_library + canon_registry
+  - H6 sentence_len_max threshold tune (literary narrative OK 60+ vs 40)
 ```
 
 ## 12.19 Adversarial Skeptic Pass (NEW round 14 — F4 Du 2024 + Liang 2024)

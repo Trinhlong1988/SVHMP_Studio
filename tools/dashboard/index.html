@@ -421,6 +421,18 @@
 
     <div id="render-cmds" style="grid-column: 1 / -1;"></div>
 
+    <!-- VNQA Library report panel -->
+    <div class="panel" id="vnqa-panel" style="grid-column: 1 / -1; display:none; border-color: var(--teal);">
+      <div class="rl-head">
+        <div class="rl-title" style="background: linear-gradient(135deg, var(--teal), var(--blue)); -webkit-background-clip:text; background-clip:text; color:transparent;">
+          📚 VNQA LIBRARY · EP<span id="vnqa-ep">?</span>
+        </div>
+        <div class="rl-stage-badge" id="vnqa-verdict-badge">—</div>
+      </div>
+      <div class="rl-msg" id="vnqa-stats">—</div>
+      <div class="rl-meta" id="vnqa-issues">—</div>
+    </div>
+
     <div class="footer">
       <span><span class="live-dot"></span>updated <span id="updated">syncing...</span></span>
       <a href="/player">🎵 Open Audio Player →</a>
@@ -529,10 +541,37 @@ async function refreshRender() {
   } catch (e) {}
 }
 
+async function refreshVNQA() {
+  try {
+    const r = await fetch('/api/vnqa');
+    const d = await r.json();
+    const panel = document.getElementById('vnqa-panel');
+    if (!d._available) { panel.style.display = 'none'; return; }
+    panel.style.display = 'block';
+    document.getElementById('vnqa-ep').textContent = d.ep_number || '?';
+    const verdict = d.verdict || '—';
+    const badge = document.getElementById('vnqa-verdict-badge');
+    badge.textContent = verdict;
+    const color = verdict === 'PASS' ? 'var(--green)' : (verdict === 'WARN' ? 'var(--yellow)' : 'var(--red)');
+    badge.style.background = color;
+    panel.style.borderColor = color;
+    const stats = d.stats || {};
+    document.getElementById('vnqa-stats').textContent =
+      `tokens=${stats.tokens_count} adv_ratio=${(stats.adverbs_ratio*100).toFixed(1)}% sentences=${stats.sentences_approx}`;
+    const counts = d.issues_count_by_severity || {};
+    document.getElementById('vnqa-issues').innerHTML =
+      `<span>critical: <strong>${counts.critical||0}</strong></span>` +
+      `<span>warning: <strong>${counts.warning||0}</strong></span>` +
+      `<span>minor: <strong>${counts.minor||0}</strong></span>`;
+  } catch (e) {}
+}
+
 refresh();
 refreshRender();
+refreshVNQA();
 setInterval(refresh, 3000);
 setInterval(refreshRender, 1000);   // poll faster — 1s when rendering
+setInterval(refreshVNQA, 5000);     // VNQA static — poll 5s
 </script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 project: SVHMP_Studio
 current_round: 14
 last_update_ts: 2026-06-26
-last_update_by: Claude session 26/6 (round 14 FINAL — git+dashboard+pipeline_hook+F1-F4 ALL ship)
+last_update_by: Claude session 26/6 (round 14 FINAL — Phase H VNQA wire production + F1-F4 ALL ship)
 schema_version: 1
 ---
 
@@ -62,7 +62,12 @@ schema_version: 1
 | **tools/svhmp_*.py (6 pipeline)** | **hooked** | 2026-06-26 | preflight/final_verify/audit_chi_tiet/dupe_audit/100check all hooked |
 | **tools/llm_router.py** | **v1.0 wired** | 2026-06-26 | **round 14 F3** Ollama actual SDK (was skeleton) |
 | **tools/adversarial_skeptic.py** | **v1.0** | 2026-06-26 | **round 14 F4** invoke Gemma 2 9B attack Claude QA |
-| **.git/** | — | 2026-06-26 | **round 14** git init + 7 tags |
+| **tools/vnqa/** | **v1.0 WIRED** | 2026-06-26 | **round 14 Phase H** — VNQA 4-layer framework (pipeline + 4 resources yaml + 5 genre profiles) reusable cho news/podcast/novel |
+| **tools/qa_skeptic_orchestrator.py** | **v1.1** | 2026-06-26 | **round 14 Phase H wire** — chain QA → VNQA → Skeptic (subprocess vnqa/pipeline.py) |
+| **tools/dashboard/** | **v3.1** | 2026-06-26 | **round 14 Phase H** — /api/vnqa route + VNQA panel verdict + issues count |
+| **prompts/qa.md** | **v1.5** | 2026-06-26 | **round 14 Phase H** — PHASE 12.20 VNQA Library Check (H1-H7) |
+| **runtime/vnqa_ep_1.json** | — | 2026-06-26 | **first VNQA production report** EP01 WARN: 0 critical / 10 warning / 1 minor |
+| **.git/** | — | 2026-06-26 | **round 14** git init + 8 tags (round_14_vnqa_wired) |
 | **tools/svhmp_v13_render.py** | **v1.3** | 2026-06-26 | **round 13** NEW — Pipeline LOCKED EP02-90: fade 80ms, trim -20dB, silence bridge, SR 22050, NO compressor, loudnorm TP=-1.5 |
 | **tools/svhmp_preflight_qa.py** | **v3** | 2026-06-26 | **round 13** NEW — 11 rules + dialog whitelist + R10 word-boundary + R17 phrase repeat |
 | **tools/svhmp_dupe_audit.py** | **v1** | 2026-06-26 | **round 13** NEW — pattern bug + 3+ from + cross-chunk repeat |

@@ -1,0 +1,85 @@
+{
+  "ep_number": 1,
+  "phase_h_version": "H1-H7 v1.0",
+  "stats": {
+    "tokens_count": 3735,
+    "sentences_approx": 443,
+    "adverbs_count": 176,
+    "adverbs_ratio": 0.047
+  },
+  "issues": [
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"anh\" lặp 72x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"đồng hồ\" lặp 38x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"ghế\" lặp 30x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"tay\" lặp 28x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H2_dict_unusual_compound",
+      "severity": "minor",
+      "evidence": "Cụm từ dài bất thường: ['` prompt_version', '] stop_location', 'Cầu Long Biên']",
+      "suggestion": "TENTATIVE — Mr.Long verify trong từ điển VN"
+    },
+    {
+      "check": "H6_sentence_runon",
+      "severity": "warning",
+      "evidence": "Câu 65 từ (max 40)",
+      "suggestion": "Cắt thành 2-3 câu ngắn để rhythm narrative"
+    },
+    {
+      "check": "H6_sentence_runon",
+      "severity": "warning",
+      "evidence": "Câu 145 từ (max 40)",
+      "suggestion": "Cắt thành 2-3 câu ngắn để rhythm narrative"
+    },
+    {
+      "check": "H6_sentence_runon",
+      "severity": "warning",
+      "evidence": "Câu 108 từ (max 40)",
+      "suggestion": "Cắt thành 2-3 câu ngắn để rhythm narrative"
+    },
+    {
+      "check": "H6_sentence_runon",
+      "severity": "warning",
+      "evidence": "Câu 82 từ (max 40)",
+      "suggestion": "Cắt thành 2-3 câu ngắn để rhythm narrative"
+    },
+    {
+      "check": "H6_sentence_runon",
+      "severity": "warning",
+      "evidence": "Câu 89 từ (max 40)",
+      "suggestion": "Cắt thành 2-3 câu ngắn để rhythm narrative"
+    },
+    {
+      "check": "H6_sentence_runon",
+      "severity": "warning",
+      "evidence": "Câu 59 từ (max 40)",
+      "suggestion": "Cắt thành 2-3 câu ngắn để rhythm narrative"
+    }
+  ],
+  "issues_count_by_severity": {
+    "critical": 0,
+    "warning": 10,
+    "minor": 1
+  },
+  "verdict": "WARN",
+  "next_action": "Generator review issues, optional regen"
+}

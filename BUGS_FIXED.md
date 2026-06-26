@@ -37,6 +37,16 @@
 
 ---
 
+### B29 — VNQA H1 token_repeat over-flags proper nouns + central objects (false positive)
+- **Ngày catch:** 2026-06-26 Phase H wire Step 1 (first real EP01 test)
+- **Phát hiện qua:** `tools/vnqa/pipeline.py --episode output/ep_01/episode.md` returned 10 WARN, 4 are "anh"/"đồng hồ"/"ghế"/"tay" repeat 30-72x
+- **Triệu chứng:** Token repeat check flags character names + central narrative objects as suspicious repetition. False positive for narrative content (Quang appears 72x = normal; đồng hồ xà cừ kim 7:10 ARC_0001 central prop appears 38x = expected).
+- **Root cause:** H1 underthesea POS check không có whitelist cho proper nouns (NNP tag) hoặc canon objects từ `bible/12_object_library` + `runtime/canon_registry.yaml`.
+- **Fix:** PHASE H2 tune planned — load proper noun whitelist + central object whitelist từ canon_registry, skip token_repeat check cho whitelisted terms. Mr.Long approve "ship + tune sau" pattern (memory `feedback_validated_params_no_drift.md`).
+- **Workaround current:** Verdict WARN cho phép pipeline tiếp (chỉ FAIL escalate REGEN). Mr.Long manual review flag false positive.
+- **Regression test:** TBD — add `svhmp_vnqa_tune_check.py` sau khi tune (Phase H2).
+- **Cross-ref:** `prompts/qa.md` PHASE 12.20 known_limitations + `runtime/vnqa_ep_1.json` evidence
+
 ### B28 — F1+F2 audit R06 hardcoded v1.3 (same pattern B26)
 - **Ngày catch:** 2026-06-26 (round 14 F3+F4 ship — F1+F2 regression test)
 - **Phát hiện qua:** F3+F4 audit R11 cross-trigger F1+F2 → FAIL 14/15
