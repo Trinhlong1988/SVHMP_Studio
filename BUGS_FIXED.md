@@ -37,6 +37,19 @@
 
 ---
 
+### B33 — Windows schtask + Vietnamese path = corrupt + fail (3 attempts)
+- **Ngày catch:** 2026-06-26 Phase H5 ship install
+- **Phát hiện qua:** `schtasks /Run /TN SVHMP_AutoWatch` Last Result: -2147024629 (0x8007010B ERROR_DIRECTORY) hoặc 2 (FILE_NOT_FOUND)
+- **Triệu chứng:** Schtask `Start In` field + cmd.exe parser không decode UTF-8 Vietnamese chars trong `D:\DỰ ÁN AI\...`. Manual invoke OK nhưng qua schtask fail.
+- **Root cause:** Windows scheduled task store + invoke với OEM codepage default (cp437/cp1252) — Vietnamese UTF-8 bytes mis-interpret.
+- **3 attempts failed:**
+  - V1: wscript + .vbs → wscript COM Run() Vietnamese path corrupt
+  - V2: pythonw direct + WorkingDirectory Vietnamese → Start In field corrupt → rc=-2147024629
+  - V3: .bat at ASCII path → cmd.exe parser breaks Vietnamese chars trong CD command line → bị cắt thành multiple invalid commands
+- **Final fix:** ASCII-only Python starter `C:\Users\Administrator\svhmp_auto_watch_starter.py` (Python handle UTF-8 path natively). Schtask Execute=pythonw.exe + Argument=starter.py (cả 2 ASCII path).
+- **Live verified:** Daemon PID 39488 alive, spawn EP02 fake → 10s catch + autofix CLEAR.
+- **Meta-lesson:** Windows + Vietnamese path + (schtask | cmd | wscript) = LUÔN dùng ASCII proxy. Áp global cho mọi Windows automation task tương lai.
+
 ### B32 — orchestrator subprocess UnicodeDecodeError cp1252 Vietnamese characters
 - **Ngày catch:** 2026-06-26 Phase H4 wire verify
 - **Phát hiện qua:** Test `python tools/qa_skeptic_orchestrator.py --ep 2 ...` → `UnicodeDecodeError: 'charmap' codec can't decode byte 0x8d` trong subprocess._readerthread

@@ -59,6 +59,16 @@ python tools/qa_skeptic_orchestrator.py --ep 2 --episode output/ep_02/episode.md
 
 ## Cross-ref
 
-- `BUGS_FIXED.md` B32 (encoding fix orchestrator subprocess)
-- `VERSION.md` round 14 Phase H4 entry
-- `MEMORY.md` → `project_svhmp_vnqa_autofix.md`
+- `BUGS_FIXED.md` B32 (encoding fix orchestrator subprocess), B33 (schtask Vietnamese path)
+- `VERSION.md` round 14 Phase H4 + H5 entry
+- `MEMORY.md` → `project_svhmp_vnqa_autofix.md`, `project_svhmp_auto_watch.md`
+
+## Phase H5 UPDATE — DAEMON LIVE
+
+Daemon auto_watch chạy background (scheduled task `SVHMP_AutoWatch` AtLogOn).
+Generator sinh `output/ep_N/episode.md` → trong 5-10s pipeline tự chạy hết.
+ZERO thao tác Mr.Long.
+
+Test daemon: `Get-Process pythonw`
+Stop daemon: `Stop-Process -Id (Get-Content runtime\auto_watch.pid)`
+Start lại: `schtasks /Run /TN SVHMP_AutoWatch`
