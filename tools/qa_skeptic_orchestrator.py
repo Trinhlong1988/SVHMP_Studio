@@ -52,20 +52,50 @@ def atomic_write_json(path: Path, data: dict):
 
 
 def orchestrate(ep_number: int, episode_path: str, skeptic_provider: str = 'ollama_local',
-                run_vnqa: bool = True) -> dict:
-    """Run full chain: QA → VNQA library check → skeptic → final verdict.
+                run_vnqa: bool = True, run_autofix: bool = True,
+                autofix_mode: str = 'apply') -> dict:
+    """Run full chain: AUTO_FIX → VNQA → QA → Skeptic → final verdict.
 
-    Round 14 Phase H wire: VNQA library check added (H1-H7).
+    Round 14 Phase H4 wire: auto_fix BEFORE VNQA (registry literal map apply).
+    autofix_mode: 'apply' = atomic ghi + backup | 'propose' = chỉ tạo .proposed_fix file.
     """
     qa_output_path = RUNTIME_DIR / f'qa_output_ep_{ep_number}.json'
     final_verdict_path = RUNTIME_DIR / f'final_verdict_ep_{ep_number}.json'
     skeptic_path = RUNTIME_DIR / f'adversarial_skeptic_ep_{ep_number}.json'
     vnqa_path = RUNTIME_DIR / f'vnqa_ep_{ep_number}.json'
+    autofix_log_path = RUNTIME_DIR / f'autofix_ep_{ep_number}.json'
+
+    # Phase H4 wire: AUTO_FIX BEFORE VNQA (registry literal map Mr.Long approved)
+    autofix_result = None
+    if run_autofix:
+        try:
+            autofix_cmd = [
+                'python', str(SVHMP / 'tools' / 'vnqa' / 'auto_fix.py'),
+                '--episode', episode_path,
+                '--ep', str(ep_number),
+            ]
+            if autofix_mode == 'apply':
+                autofix_cmd.append('--apply')
+            print(f"[orchestrator] Running auto_fix ({autofix_mode} mode)...")
+            af_run = subprocess.run(autofix_cmd, capture_output=True, text=True,
+                                    encoding='utf-8', errors='replace', timeout=60)
+            autofix_result = {
+                'mode': autofix_mode,
+                'returncode': af_run.returncode,
+                'stdout_tail': (af_run.stdout or '')[-500:],
+                'success': af_run.returncode == 0,
+            }
+            atomic_write_json(autofix_log_path, autofix_result)
+            print(f"[orchestrator] auto_fix done: rc={af_run.returncode}")
+        except Exception as e:
+            print(f"[orchestrator] auto_fix error: {e}")
+            autofix_result = {'error': str(e), 'success': False}
 
     if not qa_output_path.exists():
         return {
             'error': f'QA output missing: {qa_output_path}',
             'recommendation': 'Run Claude QA first + write JSON via tools/qa_output_writer.py',
+            'autofix_result': autofix_result,
             'success': False,
         }
 
@@ -80,7 +110,8 @@ def orchestrate(ep_number: int, episode_path: str, skeptic_provider: str = 'olla
                 '--ep', str(ep_number),
             ]
             print(f"[orchestrator] Running VNQA library check (H1-H7)...")
-            vnqa_run = subprocess.run(vnqa_cmd, capture_output=True, text=True, timeout=120)
+            vnqa_run = subprocess.run(vnqa_cmd, capture_output=True, text=True,
+                                      encoding='utf-8', errors='replace', timeout=120)
             if vnqa_run.returncode == 0 and vnqa_path.exists():
                 with open(vnqa_path, encoding='utf-8') as f:
                     vnqa_result = json.load(f)
@@ -116,7 +147,8 @@ def orchestrate(ep_number: int, episode_path: str, skeptic_provider: str = 'olla
         '--output', str(skeptic_path),
         '--provider', skeptic_provider,
     ]
-    skeptic_run = subprocess.run(skeptic_cmd, capture_output=True, text=True, timeout=300)
+    skeptic_run = subprocess.run(skeptic_cmd, capture_output=True, text=True,
+                                  encoding='utf-8', errors='replace', timeout=300)
     if skeptic_run.returncode != 0:
         result = {
             'ep_number': ep_number,
@@ -168,6 +200,9 @@ def orchestrate(ep_number: int, episode_path: str, skeptic_provider: str = 'olla
 
     result = {
         'ep_number': ep_number,
+        'autofix_invoked': run_autofix and autofix_result is not None,
+        'autofix_mode': autofix_mode if run_autofix else None,
+        'autofix_success': (autofix_result or {}).get('success', False),
         'qa_verdict': qa_verdict,
         'qa_findings_count': len(qa_output.get('findings', [])),
         'vnqa_invoked': run_vnqa and vnqa_result is not None,
@@ -194,14 +229,21 @@ def orchestrate(ep_number: int, episode_path: str, skeptic_provider: str = 'olla
 
 
 def cli():
-    parser = argparse.ArgumentParser(description='SVHMP QA → Skeptic Orchestrator (G2 round 14)')
+    parser = argparse.ArgumentParser(description='SVHMP QA → Skeptic Orchestrator (G2 round 14 + Phase H4 autofix)')
     parser.add_argument('--ep', type=int, required=True)
     parser.add_argument('--episode', type=str, required=True)
     parser.add_argument('--provider', type=str, default='ollama_local',
                         help='Skeptic provider (ollama_local=gemma2:9b | ollama_qwen=qwen2.5:14b)')
+    parser.add_argument('--no-autofix', action='store_true', help='Skip Phase H4 auto_fix step')
+    parser.add_argument('--no-vnqa', action='store_true', help='Skip Phase H VNQA library check')
+    parser.add_argument('--autofix-mode', type=str, default='apply', choices=['apply', 'propose'],
+                        help='apply = atomic ghi + backup | propose = chỉ tạo .proposed_fix file')
     args = parser.parse_args()
 
-    result = orchestrate(args.ep, args.episode, args.provider)
+    result = orchestrate(args.ep, args.episode, args.provider,
+                         run_vnqa=not args.no_vnqa,
+                         run_autofix=not args.no_autofix,
+                         autofix_mode=args.autofix_mode)
     print()
     print(json.dumps(result, ensure_ascii=False, indent=2))
     if not result.get('success', True) and 'error' in result:

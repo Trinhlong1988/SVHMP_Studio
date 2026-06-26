@@ -37,6 +37,15 @@
 
 ---
 
+### B32 — orchestrator subprocess UnicodeDecodeError cp1252 Vietnamese characters
+- **Ngày catch:** 2026-06-26 Phase H4 wire verify
+- **Phát hiện qua:** Test `python tools/qa_skeptic_orchestrator.py --ep 2 ...` → `UnicodeDecodeError: 'charmap' codec can't decode byte 0x8d` trong subprocess._readerthread
+- **Triệu chứng:** Subprocess stdout có Vietnamese characters (→, ✓, "bùn cầu") → Windows cp1252 default codec không decode được → `af_run.stdout = None` → orchestrator log không write đầy đủ. NHƯNG auto_fix.py vẫn chạy success (write file IO trước stdout decode).
+- **Root cause:** `subprocess.run(text=True)` không specify encoding → fallback Windows cp1252 → crash với UTF-8 output Vietnamese.
+- **Fix:** Add `encoding='utf-8', errors='replace'` vào 3 `subprocess.run` calls (autofix, vnqa, skeptic) trong `tools/qa_skeptic_orchestrator.py`.
+- **Regression test:** TBD — add e2e test `orchestrator_subprocess_encoding.py` invoke với fake EP có Vietnamese characters, assert stdout_tail không empty.
+- **Meta-lesson:** Windows + Python subprocess + Vietnamese = LUÔN cần `encoding='utf-8'` explicit. Áp dụng global cho mọi project SVHMP_Studio/HDK/tro-ly future.
+
 ### B31 — EP01 "bùn cầu" 2x mispronounce thành "bồn cầu" (toilet) — VNQA H8 catch [RESOLVED]
 - **Ngày catch:** 2026-06-26 Phase H3 ship verify (VNQA H8 collocation lexicon wire 1st run)
 - **Phát hiện qua:** `tools/vnqa/pipeline.py` H8 check `_forbidden_patterns.phonetic_risk` match pattern `"bùn cầu"` 2x trong `output/ep_01/episode.md` (line 532 + 675)

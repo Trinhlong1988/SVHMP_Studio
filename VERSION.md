@@ -63,7 +63,9 @@ schema_version: 1
 | **tools/llm_router.py** | **v1.0 wired** | 2026-06-26 | **round 14 F3** Ollama actual SDK (was skeleton) |
 | **tools/adversarial_skeptic.py** | **v1.0** | 2026-06-26 | **round 14 F4** invoke Gemma 2 9B attack Claude QA |
 | **tools/vnqa/** | **v1.0 WIRED** | 2026-06-26 | **round 14 Phase H** — VNQA 4-layer framework (pipeline + 4 resources yaml + 5 genre profiles) reusable cho news/podcast/novel |
-| **tools/qa_skeptic_orchestrator.py** | **v1.1** | 2026-06-26 | **round 14 Phase H wire** — chain QA → VNQA → Skeptic (subprocess vnqa/pipeline.py) |
+| **tools/qa_skeptic_orchestrator.py** | **v1.2** | 2026-06-26 | **round 14 Phase H4 wire** — chain AUTO_FIX → VNQA → QA → Skeptic. `--no-autofix` skip. encoding=utf-8 subprocess (fix cp1252 Unicode crash). |
+| **tools/vnqa/auto_fix.py** | **v1.0** | 2026-06-26 | **round 14 Phase H4** — semi-auto literal map từ registry (propose default, --apply atomic+backup) |
+| **data/vnqa_approved_replacements.yaml** | **v1.0** | 2026-06-26 | **round 14 Phase H4** — registry R001 bùn cầu, R002 Bất chợt |
 | **tools/dashboard/** | **v3.1** | 2026-06-26 | **round 14 Phase H** — /api/vnqa route + VNQA panel verdict + issues count |
 | **prompts/qa.md** | **v1.5** | 2026-06-26 | **round 14 Phase H** — PHASE 12.20 VNQA Library Check (H1-H7) |
 | **runtime/vnqa_ep_1.json** | — | 2026-06-26 | **first VNQA production report** EP01 WARN: 0 critical / 10 warning / 1 minor |
