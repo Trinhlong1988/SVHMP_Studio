@@ -125,6 +125,7 @@ def call_provider(provider_id: str, prompt: str, system: Optional[str] = None, *
                     'temperature': kwargs.get('temperature', 0.7),
                     'num_predict': kwargs.get('max_tokens', 2048),
                 },
+                keep_alive=0,  # B34 fix: unload model after invoke → free VRAM cho TTS/SDXL
             )
             return response['message']['content']
         except Exception as e:
