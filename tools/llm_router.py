@@ -53,11 +53,21 @@ MODEL_REGISTRY = {
     },
     'ollama_local': {
         'provider': 'ollama',
-        'model_name': 'llama3.3:70b',     # local offline fallback
+        'model_name': 'gemma2:9b',        # F3 round 14: best Vietnamese ≤14B per PDF research (VMLU 59.04)
         'cost_per_1m_input_usd': 0.0,
         'cost_per_1m_output_usd': 0.0,
-        'context_window': 128_000,
+        'context_window': 8_192,           # Gemma 2 native 8K (some quants extend)
         'env_key': None,  # local, no API key
+        'install_cmd': 'ollama pull gemma2:9b',  # ~5.5GB download
+    },
+    'ollama_qwen': {
+        'provider': 'ollama',
+        'model_name': 'qwen2.5:14b',      # F3 round 14: strongest Apache-2.0 ≤14B (PDF research)
+        'cost_per_1m_input_usd': 0.0,
+        'cost_per_1m_output_usd': 0.0,
+        'context_window': 32_768,
+        'env_key': None,
+        'install_cmd': 'ollama pull qwen2.5:14b',  # ~8.7GB download
     },
 }
 
@@ -85,8 +95,12 @@ def check_provider_available(provider_id: str) -> bool:
     return bool(os.environ.get(env_key))
 
 
-def call_provider(provider_id: str, prompt: str, **kwargs) -> Optional[str]:
-    """Call specific provider. Returns None if call fails (caller handles fallback)."""
+def call_provider(provider_id: str, prompt: str, system: Optional[str] = None, **kwargs) -> Optional[str]:
+    """Call specific provider. Returns None if call fails (caller handles fallback).
+
+    Round 14 F3: Ollama provider wired actual (gemma2:9b/qwen2.5:14b/etc).
+    Other providers (Claude/Gemini/OpenAI): still skeleton — Mr.Long approve install SDK + API key.
+    """
     config = MODEL_REGISTRY.get(provider_id)
     if not config:
         return None
@@ -95,14 +109,31 @@ def call_provider(provider_id: str, prompt: str, **kwargs) -> Optional[str]:
         print(f"  ⚠ {provider_id}: API key not set ({config.get('env_key')})", file=sys.stderr)
         return None
 
-    # TENTATIVE_SUY_LUẬN: actual SDK calls not implemented — placeholder for Mr.Long approve adopt
-    # When adopting:
-    #   - anthropic: from anthropic import Anthropic
-    #   - google: from google import genai
-    #   - openai: from openai import OpenAI
-    #   - ollama: requests.post("http://localhost:11434/api/generate", ...)
-    print(f"  ! {provider_id}: SDK integration TENTATIVE — Mr.Long approve trước khi implement actual call", file=sys.stderr)
-    return None  # Skeleton — actual API call deferred
+    # F3 Round 14: Ollama actual wired (local, no API key needed). Handles all Ollama-backed providers.
+    if config.get('provider') == 'ollama':
+        try:
+            import ollama
+            client = ollama.Client()
+            messages = []
+            if system:
+                messages.append({'role': 'system', 'content': system})
+            messages.append({'role': 'user', 'content': prompt})
+            response = client.chat(
+                model=config['model_name'],
+                messages=messages,
+                options={
+                    'temperature': kwargs.get('temperature', 0.7),
+                    'num_predict': kwargs.get('max_tokens', 2048),
+                },
+            )
+            return response['message']['content']
+        except Exception as e:
+            print(f"  ⚠ ollama_local fail: {e}", file=sys.stderr)
+            return None
+
+    # Other providers: skeleton (TENTATIVE — Mr.Long approve install SDK)
+    print(f"  ! {provider_id}: SDK integration TENTATIVE — Mr.Long approve actual SDK install", file=sys.stderr)
+    return None
 
 
 def call_llm(

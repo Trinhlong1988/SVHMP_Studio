@@ -37,6 +37,25 @@
 
 ---
 
+### B28 — F1+F2 audit R06 hardcoded v1.3 (same pattern B26)
+- **Ngày catch:** 2026-06-26 (round 14 F3+F4 ship — F1+F2 regression test)
+- **Phát hiện qua:** F3+F4 audit R11 cross-trigger F1+F2 → FAIL 14/15
+- **Triệu chứng:** Bump qa.md v1.3→v1.4 → F1+F2 audit R06 fail (hardcoded "v1.3")
+- **Root cause:** SAME pattern B26 — em quên apply monotonic check khi tạo F1+F2 audit. "Fix trước quên sau" precedent rule failed mặc dù em đã có rule cứng — lesson: cần audit cross-script linting nếu có hardcoded version
+- **Fix:** F1+F2 audit R06 dùng regex parse + check ≥v1.3 monotonic
+- **Regression test:** F3+F4 R11 auto-trigger F1+F2 cross-verify
+- **Cross-ref:** B26 same pattern, B23 same lesson (regex monotonic, NOT hardcoded string)
+- **Meta-lesson:** Em ship 3 audit scripts (HDK, arc, F1F2), 2/3 đầu vi phạm cùng pattern. Cần checklist "monotonic version" pre-commit cho mọi audit script tương lai.
+
+### B27 — F3+F4 audit script self syntax error (quote escape)
+- **Ngày catch:** 2026-06-26 (round 14 F3+F4 ship)
+- **Phát hiện qua:** Run audit immediately fail SyntaxError line 57
+- **Triệu chứng:** `has_ollama_branch = "..." in src or 'provider'] == "ollama"' in src` — unmatched `]`
+- **Root cause:** Em viết double-condition với mixed quote escape sai
+- **Fix:** Bỏ second condition, dùng single string check
+- **Regression test:** F3+F4 audit run exit 0
+- **Cross-ref:** Lesson Python script self-audit — `python -c "import ast; ast.parse(open(...).read())"` trước run
+
 ### B26 — Pattern 5 arc_audit regression khi qa.md bump v1.2→v1.3
 - **Ngày catch:** 2026-06-26 (round 14 F1+F2 ship)
 - **Phát hiện qua:** F1+F2 audit R15 regression test (must 10/10 Pattern 5)

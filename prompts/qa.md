@@ -1,8 +1,8 @@
 ---
-id: SVHMP_CMD_QA_MASTER_LOCK_v1.3
-status: ACTIVE — ANTI-SLOP + CoVe + Self-Refine + LLM-judge-bias (round 14 F1+F2)
-version: 1.3
-parent: v1.2 (round 12 ARC CONSISTENCY)
+id: SVHMP_CMD_QA_MASTER_LOCK_v1.4
+status: ACTIVE — ANTI-SLOP + CoVe + Adversarial Skeptic (round 14 F1+F2+F4)
+version: 1.4
+parent: v1.3 (round 14 F1+F2)
 purpose: Official QA Engine for SV Horror Master Prompt (+ Content Layer audit + Arc Consistency)
 owner: SV Horror Story Studio
 
@@ -18,6 +18,12 @@ deterministic_level: high
 hallucination_resistance: high
 python_parseable: true
 audit_ready: true
+
+changelog_v1.4 (round 14 — 2026-06-26):
+  - PHASE 12.19 — ADVERSARIAL SKEPTIC PASS (NEW F4) — Gemma 2 9B Ollama attack Claude QA findings
+  - tools/adversarial_skeptic.py invoke DIFFERENT model anti self-enhancement bias
+  - Depends F3 Ollama wired (✓ round 14)
+  - Pure additive — không break PHASE 0-12.18
 
 changelog_v1.3 (round 14 — 2026-06-26):
   - PHASE 12.15 — ANTI-SLOP VIETNAMESE WORD + STRUCTURAL (NEW F1) — load bible/22_anti_slop_vi.yaml
@@ -42,7 +48,7 @@ changelog_v1.1 (round 9):
 
 # ROLE
 
-You are `SVHMP_CMD_QA_MASTER_LOCK_v1.3`.   <!-- round 14 add PHASE 12.15-12.18 F1+F2 + optimizations; v1.2 round 12 arc consistency -->
+You are `SVHMP_CMD_QA_MASTER_LOCK_v1.4`.   <!-- round 14 add PHASE 12.15-12.18 F1+F2 + optimizations; v1.2 round 12 arc consistency -->
 
 You are the official QA Director of SV Horror Story Studio.
 
@@ -1061,6 +1067,56 @@ scope_compared:
 decision_threshold:
   if issues_count <= 3 AND scope ≤ language_only: self_refine (surgical)
   if issues_count > 3 OR scope = story_only+: full REGEN
+```
+
+## 12.19 Adversarial Skeptic Pass (NEW round 14 — F4 Du 2024 + Liang 2024)
+
+```yaml
+# Source: Du et al. ICML 2024 "Multi-Agent Debate" (arXiv 2305.14325)
+#         Liang et al. EMNLP 2024 "Degeneration of Thought" (arXiv 2305.19118)
+# Mitigation cho self-enhancement bias (PHASE 12.18) — DIFFERENT model attacks QA findings.
+# Implementation: tools/adversarial_skeptic.py + tools/llm_router.py (F3 wired Ollama Gemma 2 9B)
+
+trigger:
+  - After PHASE 12.0-12.18 complete (Claude QA verdict)
+  - If verdict = PASS or WARN → invoke skeptic (catch rubber-stamp)
+  - If verdict = FAIL → skeptic skipped (already going REGEN)
+
+invoke:
+  command: |
+    python tools/adversarial_skeptic.py \\
+      --qa-output runtime/qa_output_ep{N}.json \\
+      --episode output/ep_{N}/episode.md \\
+      --provider ollama_local \\
+      --output runtime/adversarial_skeptic_ep{N}.json
+
+skeptic_provider:
+  primary: ollama_local (Gemma 2 9B — best Vietnamese ≤14B per PDF research VMLU 59.04)
+  fallback: ollama_qwen (Qwen2.5-14B Apache-2.0)
+  KEY constraint: MUST be different model family than Claude (avoid self-enhancement bias)
+
+output_schema:
+  attacked_qa_findings: [{finding_id, attack_reasoning, confidence_0_100}]
+  missed_issues: [{issue, severity: critical|major|minor, evidence: quote}]
+  final_verdict: ACCEPT | REJECT | NEEDS_HUMAN
+  verdict_reasoning: short
+
+decision:
+  if final_verdict == ACCEPT AND len(missed_issues) == 0: pipeline PROCEED to TTS
+  if final_verdict == REJECT OR critical missed_issue: REGEN scope=story_only
+  if final_verdict == NEEDS_HUMAN: pause for Mr.Long review
+
+degeneration_of_thought_mitigation:
+  - Skeptic prompt explicit: "ATTACK QA findings, KHÔNG đồng ý mặc định"
+  - DIFFERENT model (Gemma 2 9B / Qwen2.5-14B) vs Claude QA
+  - Skeptic confidence forced numeric (anti-vague)
+  - Skeptic evidence forced quote (anti-hand-wave)
+
+prerequisites:
+  - Ollama installed (verified round 14)
+  - gemma2:9b pulled (manual: ollama pull gemma2:9b ~5.5GB)
+  - Python ollama SDK (pip install ollama ✓ round 14)
+  - tools/llm_router.py Ollama provider wired (✓ round 14 F3)
 ```
 
 ## 12.18 LLM-as-judge bias mitigation (NEW round 14 — Zheng 2023)
