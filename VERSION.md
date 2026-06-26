@@ -66,6 +66,9 @@ schema_version: 1
 | **tools/qa_skeptic_orchestrator.py** | **v1.2** | 2026-06-26 | **round 14 Phase H4 wire** — chain AUTO_FIX → VNQA → QA → Skeptic. `--no-autofix` skip. encoding=utf-8 subprocess (fix cp1252 Unicode crash). |
 | **tools/vnqa/auto_fix.py** | **v1.0** | 2026-06-26 | **round 14 Phase H4** — semi-auto literal map từ registry (propose default, --apply atomic+backup) |
 | **data/vnqa_approved_replacements.yaml** | **v1.0** | 2026-06-26 | **round 14 Phase H4** — registry R001 bùn cầu, R002 Bất chợt |
+| **tools/auto_watch.py** | **v1.0** | 2026-06-26 | **round 14 Phase H5** — daemon poll output/ep_*/ → tự trigger orchestrator. Live test 8s catch + fix. |
+| **tools/auto_watch.vbs** | **v1.0** | 2026-06-26 | wscript silent launcher (memory pattern) |
+| **tools/auto_watch_install.ps1** | **v1.0** | 2026-06-26 | Windows scheduled task installer at logon |
 | **tools/dashboard/** | **v3.1** | 2026-06-26 | **round 14 Phase H** — /api/vnqa route + VNQA panel verdict + issues count |
 | **prompts/qa.md** | **v1.5** | 2026-06-26 | **round 14 Phase H** — PHASE 12.20 VNQA Library Check (H1-H7) |
 | **runtime/vnqa_ep_1.json** | — | 2026-06-26 | **first VNQA production report** EP01 WARN: 0 critical / 10 warning / 1 minor |
