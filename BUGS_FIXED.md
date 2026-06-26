@@ -37,6 +37,15 @@
 
 ---
 
+### B34 — Ollama keep_alive=0 chỉ unload model LOGICALLY, CUDA context vẫn giữ ~5-7GB VRAM
+- **Ngày catch:** 2026-06-26 Phase H series ollama check (Mr.Long bắt verify)
+- **Phát hiện qua:** Sau invoke Gemma 2 9B với `keep_alive=0`, wait 60s+ → `/api/ps` returns `models loaded: []` BUT `nvidia-smi` shows VRAM 14.8GB still used. `llama-server.exe` worker process PID alive với 7.9 MB RSS NHƯNG giữ CUDA context.
+- **Triệu chứng:** TTS IndexTTS2 cần 15GB VRAM peak → conflict với Gemma 7GB persistent → OOM khi orchestrator chain qua TTS render.
+- **Root cause:** Ollama API `keep_alive=0` chỉ unload model weights khỏi worker memory, nhưng worker process (`llama-server.exe`) vẫn alive giữ CUDA initialization context. CUDA không reclaim VRAM cho tới khi process exit.
+- **Fix:** `tools/llm_router.py` + `free_ollama_vram()` helper subprocess `taskkill /F /IM llama-server.exe` sau ollama invoke. Ollama daemon (ollama.exe) tự respawn worker khi có request mới (~20s reload tax, chấp nhận vì Skeptic invoke hiếm 1x/EP).
+- **Verified:** VRAM 14.8GB → 10.3GB sau invoke + auto-kill (4.5GB CUDA freed). Helper standalone: 15.7GB → 10.5GB (5.2GB).
+- **Meta-lesson:** Ollama API documentation không nói rõ "unload" chỉ logical-level. Production cần kill worker process để guarantee VRAM free. Áp dụng cho mọi local LLM Ollama-based future.
+
 ### B33 — Windows schtask + Vietnamese path = corrupt + fail (3 attempts)
 - **Ngày catch:** 2026-06-26 Phase H5 ship install
 - **Phát hiện qua:** `schtasks /Run /TN SVHMP_AutoWatch` Last Result: -2147024629 (0x8007010B ERROR_DIRECTORY) hoặc 2 (FILE_NOT_FOUND)
