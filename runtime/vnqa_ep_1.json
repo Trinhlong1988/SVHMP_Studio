@@ -2,7 +2,7 @@
   "ep_number": 1,
   "phase_h_version": "H1-H7 v1.0",
   "stats": {
-    "tokens_count": 3735,
+    "tokens_count": 3737,
     "sentences_approx": 443,
     "adverbs_count": 176,
     "adverbs_ratio": 0.047
@@ -13,12 +13,6 @@
       "severity": "minor",
       "evidence": "Cụm từ dài bất thường: ['` prompt_version', '] stop_location', 'Cầu Long Biên']",
       "suggestion": "TENTATIVE — Mr.Long verify trong từ điển VN"
-    },
-    {
-      "check": "H8_collocation_phonetic_risk",
-      "severity": "minor",
-      "evidence": "Pattern \"bùn cầu\" match 2x — perceived as bồn cầu (toilet)",
-      "suggestion": "bùn lầy dưới chân cầu"
     },
     {
       "check": "H8_collocation_phonetic_risk",
@@ -36,7 +30,7 @@
   "issues_count_by_severity": {
     "critical": 0,
     "warning": 0,
-    "minor": 4
+    "minor": 3
   },
   "verdict": "WARN",
   "next_action": "Generator review issues, optional regen"
