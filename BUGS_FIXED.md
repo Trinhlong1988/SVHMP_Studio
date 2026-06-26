@@ -37,6 +37,16 @@
 
 ---
 
+### B31 — EP01 "bùn cầu" 2x mispronounce thành "bồn cầu" (toilet) — VNQA H8 catch
+- **Ngày catch:** 2026-06-26 Phase H3 ship verify (VNQA H8 collocation lexicon wire 1st run)
+- **Phát hiện qua:** `tools/vnqa/pipeline.py` H8 check `_forbidden_patterns.phonetic_risk` match pattern `"bùn cầu"` 2x trong `output/ep_01/episode.md` (line 532 + 675)
+- **Triệu chứng:** TTS BigVGAN render đọc "bùn cầu" → phát âm gần như "bồn cầu" (toilet). Người nghe sẽ hiểu "mùi sông Hồng. mùi bồn cầu" = mùi toilet trên xe → break atmosphere horror nghiêm trọng.
+- **Root cause:** Generator EP01 viết "bùn cầu" (bùn dưới chân cầu Long Biên) — văn viết OK nhưng văn nói/TTS không OK do phonetic ambiguity.
+- **Fix:** Chờ Mr.Long approve replacement word (option 1: "bùn dưới chân cầu" | option 2: "bùn ven sông" | option 3: "phù sa sông Hồng").
+- **Catch lý do:** 25+ vòng QA trước miss vì check thủ công không cover phonetic ambiguity. VNQA H8 `_LEXICON._forbidden_patterns.phonetic_risk` có sẵn pattern này từ trước, chỉ chưa wire vào pipeline.
+- **Regression test:** Tự nhiên có — `data/vnsl_lexicon.json` `_forbidden_patterns.phonetic_risk` chứa pattern.
+- **Meta-lesson:** Có data tốt nhưng chưa wire = vô dụng. Phase H1 ship `data/vnsl_lexicon.json` đầu session nhưng pipeline chỉ wire ở Phase H3 → miss 25 vòng QA. Future: wire DATA ngay khi ship, không defer "Phase X sau".
+
 ### B30 — VNQA pipeline.py SVHMP path resolve thiếu 1 `.parent` → lexicon + resources không load
 - **Ngày catch:** 2026-06-26 Phase H2 wire verify (Mr.Long bắt verify "không suy luận")
 - **Phát hiện qua:** Test `_LEXICON.keys()` returns `[]` dù file exists (17454 bytes) + JSON parse OK manual

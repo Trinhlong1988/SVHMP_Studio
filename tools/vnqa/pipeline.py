@@ -275,8 +275,62 @@ class VietnameseQAChecker:
                                f'Bi-gram "{bg}" lặp {count}x trong 1 câu',
                                'Reword câu để tránh repetition')
 
+    def h8_collocation_lexicon(self):
+        """Phase H3 round 14 — wire data/vnsl_lexicon.json _forbidden_patterns.
+
+        Scan 4 categories: verb_misuse / phonetic_risk / logic_violations / temporal_overload.
+        Each pattern là regex literal (vd 'khẽ thốt' | 'X mất.*X gọi').
+        """
+        if not _LEXICON:
+            return  # B30 path fix safety — không noise nếu lexicon empty
+        fb = _LEXICON.get('_forbidden_patterns', {}) or {}
+        text_lower = self.text.lower()
+        severity_map = {
+            'verb_misuse': 'warning',          # R73 mâu thuẫn động từ — sửa
+            'logic_violations': 'critical',     # chết rồi sao gọi — must fix
+            'temporal_overload': 'warning',     # 3x đêm chunk
+            'phonetic_risk': 'minor',           # /aːj/ BigVGAN — preference
+        }
+        for cat, items in fb.items():
+            if cat == 'stop_consonant_tail':
+                continue  # H9 handle riêng
+            if not isinstance(items, list):
+                continue
+            for item in items:
+                if not isinstance(item, dict) or 'pattern' not in item:
+                    continue
+                pat = item['pattern']
+                try:
+                    matches = re.findall(pat, text_lower, flags=re.IGNORECASE)
+                except re.error:
+                    continue
+                if matches:
+                    self._flag(f'H8_collocation_{cat}',
+                               severity_map.get(cat, 'warning'),
+                               f'Pattern "{pat}" match {len(matches)}x — {item.get("reason", "")}',
+                               item.get('fix', ''))
+
+    def h9_stop_consonant_tail(self):
+        """Phase H3 round 14 — BigVGAN tail consonant risk word check."""
+        if not _LEXICON:
+            return
+        fb = _LEXICON.get('_forbidden_patterns', {}) or {}
+        items = fb.get('stop_consonant_tail', []) or []
+        text_lower = self.text.lower()
+        for item in items:
+            if not isinstance(item, dict) or 'word' not in item:
+                continue
+            word = item['word']
+            # Word boundary để tránh false positive (vd "suốt" trong "tuốt")
+            count = len(re.findall(rf'\b{re.escape(word)}\b', text_lower))
+            if count > 0:
+                fix_ex = item.get('fix_examples', [])
+                self._flag('H9_stop_consonant_tail', 'minor',
+                           f'Word "{word}" xuất hiện {count}x (BigVGAN tail risk)',
+                           '; '.join(fix_ex[:2]) if fix_ex else '')
+
     def run_all(self) -> dict:
-        """Run all H1-H7 checks. Return structured report."""
+        """Run all H1-H9 checks. Return structured report."""
         try:
             self.h1_underthesea_pos_rhythm()
             self.h2_vietnamese_dict_existence()
@@ -285,6 +339,8 @@ class VietnameseQAChecker:
             self.h5_formality_journalistic()
             self.h6_phonlp_dependency_skeleton()
             self.h7_ngram_anomaly()
+            self.h8_collocation_lexicon()         # Phase H3 wire
+            self.h9_stop_consonant_tail()          # Phase H3 wire
         except Exception as e:
             self._flag('PIPELINE_ERROR', 'critical', str(e),
                        'Phase H pipeline fail — check log')
