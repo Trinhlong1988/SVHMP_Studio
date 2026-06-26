@@ -2,7 +2,7 @@
 project: SVHMP_Studio
 current_round: 14
 last_update_ts: 2026-06-26
-last_update_by: Claude session 26/6 (round 14 — 7-gap ship + git init + 5 new tools)
+last_update_by: Claude session 26/6 (round 14 FINAL — git+dashboard+pipeline_hook+F1-F4 ALL ship)
 schema_version: 1
 ---
 
@@ -54,7 +54,15 @@ schema_version: 1
 | **tools/llm_router.py** | **v1.0** | 2026-06-26 | **round 14 F4.1** — multi-LLM skeleton |
 | **tools/cost_tracker.py** | **v1.0** | 2026-06-26 | **round 14 F4.2** — cost ledger |
 | **prompts/director.md** | **round 14** | 2026-06-26 | step 1.10 RELATED EPISODES LOOKUP integrate related_eps.py |
-| **.git/** | — | 2026-06-26 | **round 14** git init + tags |
+| **prompts/qa.md** | **v1.4** | 2026-06-26 | **round 14 F1+F2+F4** — PHASE 12.15-12.19 anti-slop+CoVe+self-refine+bias+adversarial |
+| **bible/22_anti_slop_vi.yaml** | **v1.0** | 2026-06-26 | **round 14 F1** — Vietnamese AI-tell word + structural (autonovel adapt) |
+| **tools/dashboard/** | **v3** | 2026-06-26 | **round 14** glassmorphism full viewport + multi-CMD render panels |
+| **tools/render_progress_hook.py** | **v2** | 2026-06-26 | **round 14** multi-CMD per-file + dashboard live |
+| **tools/svhmp_v13_render.py** | **v1.3 hooked** | 2026-06-26 | **round 14** HOOK WIRED atexit safe |
+| **tools/svhmp_*.py (6 pipeline)** | **hooked** | 2026-06-26 | preflight/final_verify/audit_chi_tiet/dupe_audit/100check all hooked |
+| **tools/llm_router.py** | **v1.0 wired** | 2026-06-26 | **round 14 F3** Ollama actual SDK (was skeleton) |
+| **tools/adversarial_skeptic.py** | **v1.0** | 2026-06-26 | **round 14 F4** invoke Gemma 2 9B attack Claude QA |
+| **.git/** | — | 2026-06-26 | **round 14** git init + 7 tags |
 | **tools/svhmp_v13_render.py** | **v1.3** | 2026-06-26 | **round 13** NEW — Pipeline LOCKED EP02-90: fade 80ms, trim -20dB, silence bridge, SR 22050, NO compressor, loudnorm TP=-1.5 |
 | **tools/svhmp_preflight_qa.py** | **v3** | 2026-06-26 | **round 13** NEW — 11 rules + dialog whitelist + R10 word-boundary + R17 phrase repeat |
 | **tools/svhmp_dupe_audit.py** | **v1** | 2026-06-26 | **round 13** NEW — pattern bug + 3+ from + cross-chunk repeat |
@@ -79,6 +87,63 @@ schema_version: 1
 ---
 
 ## Recent changes (newest first)
+
+### 2026-06-26 round 14 FINAL (Claude session) — TỔNG kết
+**Total round 14 ship 1 session:** git init + dashboard 300×300+player + multi-CMD hook 6 scripts + F1-F4 adversarial pipeline
+
+**Phase F4 (Adversarial Skeptic + Ollama wired):**
+- `tools/llm_router.py` Ollama provider actual SDK (was skeleton) — wired gemma2:9b + qwen2.5:14b
+- `tools/adversarial_skeptic.py` NEW — invoke DIFFERENT model attack Claude QA findings
+- `prompts/qa.md` v1.3 → **v1.4** + PHASE 12.19 Adversarial Skeptic Pass
+- Anti "Degeneration of Thought" (Liang 2024) via different-model family
+- Ollama daemon v0.30.7 + Python SDK 0.6.2 ✓
+- Model `gemma2:9b` pulling background (~5.5GB)
+
+**Phase F1+F2 (ANTI-SLOP + CoVe):**
+- `bible/22_anti_slop_vi.yaml` NEW v1.0 — 10 tier-1 + 10 tier-2 + 9 tier-3 + 8 AP structural
+- `prompts/qa.md` v1.2 → v1.3 → v1.4 (additive PHASE 12.15-12.19)
+- PHASE 12.15 ANTI-SLOP word + structural
+- PHASE 12.16 Chain-of-Verification (CoVe Dhuliawala 2023)
+- PHASE 12.17 Self-Refine surgical edit (Madaan 2023)
+- PHASE 12.18 LLM-as-judge bias mitigation (Zheng 2023)
+- PHASE 12.19 Adversarial Skeptic (Du+Liang 2024)
+
+**Dashboard 300×300 → 400×500 → full viewport v3 glassmorphism:**
+- `tools/dashboard/index.html` UI v3 (full viewport + glass blur + depth shadows)
+- `tools/dashboard/player.html` (file list + audio player + delete safe + regen-stage)
+- `tools/dashboard/server.py` HTTP 57910 + 6 API endpoints
+- `tools/dashboard/launch.vbs` silent launcher
+
+**Multi-CMD render progress hook 6 scripts:**
+- `tools/render_progress_hook.py` v2 multi-CMD
+- `tools/svhmp_v13_render.py` HOOK WIRED (atexit safe — B25 fix)
+- `tools/svhmp_preflight_qa.py` HOOK
+- `tools/svhmp_final_verify.py` HOOK
+- `tools/svhmp_audit_chi_tiet.py` HOOK
+- `tools/svhmp_dupe_audit.py` HOOK
+- `tools/svhmp_100check_master.py` HOOK
+- Dashboard `/api/render` list multi-CMD parallel real-time
+
+**Bugs caught + fixed round 14: B23-B28 (6 bugs)**
+- B23 e2e regex false positive (Video V1-V6 text ref)
+- B24 audio list miss .wav.bak_* suffix
+- B25 svhmp_v13_render IndentationError sau try/except wrap
+- B26 arc_audit hardcoded v1.2 (monotonic version lesson)
+- B27 F3+F4 audit syntax error (quote escape)
+- B28 F1+F2 audit hardcoded v1.3 (same B26 pattern — meta-lesson)
+
+**Audit 6 scripts ALL PASS:**
+- HDK 22r / Pattern 5 arc 10r / related_eps 10r / e2e 10r / F1+F2 15r / F3+F4 12r
+- TOTAL: **78/79 PASS, 1 WARN, 0 FAIL**
+
+**Git tags round 14:**
+- round_13_initial (baseline)
+- round_14_seven_gap_ship
+- round_14_dashboard
+- round_14_multicmd_hook
+- round_14_all_hooks_wired
+- round_14_f1_f2_antislop_cove
+- round_14_f3_f4_ollama_adversarial
 
 ### 2026-06-26 round 14 (Claude session) — 7-GAP SHIP + INFRA
 - **git init** SVHMP_Studio + tag `round_13_initial` (baseline) + `round_14_seven_gap_ship`
