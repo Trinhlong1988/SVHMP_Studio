@@ -239,6 +239,23 @@ class DashHandler(SimpleHTTPRequestHandler):
                 self.send_error(500, str(e))
             return
 
+        if route == '/api/render':
+            # MULTI-CMD: list all active + recently completed CMDs
+            try:
+                # Import hook helper
+                sys.path.insert(0, str(SVHMP / 'tools'))
+                from render_progress_hook import list_active_cmds
+                cmds = list_active_cmds()
+                any_active = any(c.get('active') for c in cmds)
+                self._send_json(200, {
+                    'cmds': cmds,
+                    'count': len(cmds),
+                    'any_active': any_active,
+                })
+            except Exception as e:
+                self._send_json(500, {'error': str(e), 'cmds': []})
+            return
+
         if route == '/api/files':
             try:
                 files = list_audio_files()

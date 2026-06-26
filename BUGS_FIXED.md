@@ -37,6 +37,15 @@
 
 ---
 
+### B25 — Pipeline svhmp_v13_render.py IndentationError sau add try/except wrapper
+- **Ngày catch:** 2026-06-26 (round 14 hook insertion)
+- **Phát hiện qua:** `python -c "ast.parse(...)"` IndentationError line 150
+- **Triệu chứng:** Em wrap toàn pipeline trong `try:` block + add hook calls, nhưng for-loop body (line 150-209) không re-indent +4 spaces → Python parse fail
+- **Root cause:** Edit add `try:` ở level main(), expect body code indent +4 spaces. Em chỉ edit cụ thể vài line, KHÔNG indent recursive toàn for-body.
+- **Fix:** Rewrite svhmp_v13_render.py — BỎ try/except wrapper, dùng `atexit.register` cho cleanup case crash. Hook calls minimal insertion KHÔNG nest level mới.
+- **Regression test:** `python -c "ast.parse(open(svhmp_v13_render.py).read())"` exit 0 OK
+- **Cross-ref:** Lesson chung: thêm wrapper try/except cần re-indent toàn body. Prefer atexit/decorator pattern để minimal change.
+
 ### B23 — e2e test T6 regex false positive Video V1-V6 vs Video_intro V7-V9 overlap
 - **Ngày catch:** 2026-06-26 (round 14 F3.1 ship)
 - **Phát hiện qua:** `C:/tmp/e2e_pipeline_test.py` T6 FAIL "overlap {'6', '1'}"
