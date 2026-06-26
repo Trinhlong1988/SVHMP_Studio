@@ -2,11 +2,30 @@
 import json
 import os
 import re
+import sys
+import atexit
 import subprocess
 from collections import Counter
 
+# Round 14 dashboard live hook
+_TOOLS = os.path.dirname(os.path.abspath(__file__))
+if _TOOLS not in sys.path: sys.path.insert(0, _TOOLS)
+try:
+    from render_progress_hook import RenderProgress
+except ImportError:
+    class RenderProgress:
+        def __init__(self, **kw): self.current_step = 0; self.total_steps = 1
+        def start(self, *a, **k): pass
+        def tick(self, *a, **k): pass
+        def done(self, *a, **k): pass
+        def fail(self, *a, **k): pass
+
 WD = r'C:\Users\Administrator\Desktop\SVHMP_v10_workdir'
 SPECS_NAMES = ['1_hook', '2_setup', '3_incident', '4_reveal', '5_payoff', '6_cliffhanger']
+
+_prog = RenderProgress(cmd='final_verify', ep=1, total_steps=len(SPECS_NAMES) + 1)
+atexit.register(lambda: _prog.fail('exit without done') if _prog.current_step < _prog.total_steps else None)
+_prog.start('scanning_specs')
 
 # Tất cả pattern bug Mr.Long đã catch
 BUG_PATTERNS = {
@@ -61,10 +80,14 @@ print()
 print(f'TOTAL remaining: {total_remaining}/26 bug pattern × 6 specs')
 print()
 
+_prog.tick(len(SPECS_NAMES), f'Bug pattern scan done — {total_remaining} remaining')
+
 # Preflight all
+_prog.start('preflight_each_section')
 print('=== PREFLIGHT 11 rules ===')
 for fn in SPECS_NAMES:
     p = os.path.join(WD, f'spec_ep01_section_{fn}.json')
     r = subprocess.run(['python', r'C:\tmp\svhmp_preflight_qa.py', p],
                        capture_output=True, text=True, encoding='utf-8')
     print(f'  s{fn[0]}: {r.stdout.splitlines()[0]}')
+_prog.done(success=(total_remaining == 0), final_path=f'final_verify_ep01 — {total_remaining} bug remaining')

@@ -1,15 +1,35 @@
 """Audit chi tiết TỪNG CÂU ý lặp cross-section + intra-section."""
 import json
 import os
+import sys
 import re
+import atexit
 from collections import Counter, defaultdict
+
+# Round 14 dashboard live hook
+_TOOLS = os.path.dirname(os.path.abspath(__file__))
+if _TOOLS not in sys.path: sys.path.insert(0, _TOOLS)
+try:
+    from render_progress_hook import RenderProgress
+except ImportError:
+    class RenderProgress:
+        def __init__(self, **kw): self.current_step = 0; self.total_steps = 1
+        def start(self, *a, **k): pass
+        def tick(self, *a, **k): pass
+        def done(self, *a, **k): pass
+        def fail(self, *a, **k): pass
 
 WD = r'C:\Users\Administrator\Desktop\SVHMP_v10_workdir'
 SPECS = ['1_hook', '2_setup', '3_incident', '4_reveal', '5_payoff', '6_cliffhanger']
 
+_prog = RenderProgress(cmd='audit_chi_tiet', ep=1, total_steps=len(SPECS) + 1)
+atexit.register(lambda: _prog.fail('exit without done') if _prog.current_step < _prog.total_steps else None)
+_prog.start('loading_specs')
+
 # Load all specs
 all_specs = {}
-for fn in SPECS:
+for _i, fn in enumerate(SPECS):
+    _prog.tick(_i + 1, f'Load section {fn}')
     p = os.path.join(WD, f'spec_ep01_section_{fn}.json')
     all_specs[fn] = json.load(open(p, encoding='utf-8'))
 
@@ -45,6 +65,9 @@ for phrase, locs in phrase_idx.items():
 
 dupes.sort(key=lambda x: (-len(x[1]), -len(x[0])))
 
+_prog.start('reporting')
+_prog.tick(len(SPECS) + 1, f'Found {len(dupes)} repeat phrases')
+
 print(f'=== REPEAT PHRASES cross-section ({len(dupes)} found) ===')
 for phrase, locs in dupes[:30]:
     sections = set(l[0] for l in locs)
@@ -53,3 +76,5 @@ for phrase, locs in dupes[:30]:
         for s, ch in locs:
             text = all_specs[s]['sentences'][ch-1]['text']
             print(f'     s{s[0]} ch{ch}: ...{text[max(0,text.lower().find(phrase)-15):text.lower().find(phrase)+len(phrase)+25]}...')
+
+_prog.done(success=(len(dupes) == 0), final_path=f'{len(dupes)} cross-section repeats found')

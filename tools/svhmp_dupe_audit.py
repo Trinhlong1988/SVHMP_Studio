@@ -5,8 +5,27 @@
 """
 import json
 import os
+import sys
 import re
+import atexit
 from collections import Counter
+
+# Round 14 dashboard live hook
+_TOOLS = os.path.dirname(os.path.abspath(__file__))
+if _TOOLS not in sys.path: sys.path.insert(0, _TOOLS)
+try:
+    from render_progress_hook import RenderProgress
+except ImportError:
+    class RenderProgress:
+        def __init__(self, **kw): self.current_step = 0; self.total_steps = 1
+        def start(self, *a, **k): pass
+        def tick(self, *a, **k): pass
+        def done(self, *a, **k): pass
+        def fail(self, *a, **k): pass
+
+_prog = RenderProgress(cmd='dupe_audit', ep=1, total_steps=3)
+atexit.register(lambda: _prog.fail('exit without done') if _prog.current_step < _prog.total_steps else None)
+_prog.start('main')
 
 WD = r'C:\Users\Administrator\Desktop\SVHMP_v10_workdir'
 
@@ -85,3 +104,5 @@ for fn in sorted(['1_hook', '2_setup', '3_incident', '4_reveal', '5_payoff', '6_
             issues += 1
 
     print(f'  → {issues} duplicate issues')
+
+_prog.done(success=True, final_path='dupe_audit complete')

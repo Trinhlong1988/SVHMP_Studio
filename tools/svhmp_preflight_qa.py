@@ -5,10 +5,31 @@ Exit 0 = PASS, exit 1 = FAIL (block render).
 import sys
 import json
 import re
+import os
+import atexit
+
+# Round 14 dashboard live render hook
+_TOOLS = os.path.dirname(os.path.abspath(__file__))
+if _TOOLS not in sys.path: sys.path.insert(0, _TOOLS)
+try:
+    from render_progress_hook import RenderProgress
+except ImportError:
+    class RenderProgress:
+        def __init__(self, **kw): self.current_step = 0; self.total_steps = 1
+        def start(self, *a, **k): pass
+        def tick(self, *a, **k): pass
+        def done(self, *a, **k): pass
+        def fail(self, *a, **k): pass
 
 if len(sys.argv) < 2:
     print('Usage: svhmp_preflight_qa.py <spec.json>')
     sys.exit(2)
+
+_ep_match = re.search(r'ep_?(\d+)', sys.argv[1])
+_ep = int(_ep_match.group(1)) if _ep_match else 0
+_prog = RenderProgress(cmd='preflight_qa', ep=_ep, total_steps=10)
+atexit.register(lambda: _prog.fail('exit without done') if _prog.current_step < _prog.total_steps else None)
+_prog.start('checking_rules')
 
 spec = json.load(open(sys.argv[1], encoding='utf-8'))
 sents = spec['sentences']
@@ -125,11 +146,15 @@ for i in range(len(sents) - 1):
             issues.append(f'R10 ch{i+1}→ch{i+2}: SCENE SWITCH {cur_chars}→{nxt_chars} no transition')
 
 
+_prog.tick(10, f'Preflight {"FAIL" if issues else "PASS"} — {len(issues)} issues / {len(sents)} chunks')
+
 if issues:
     print(f'PREFLIGHT FAIL — {len(issues)} issues')
     for iss in issues:
         print(f'  {iss}')
+    _prog.done(success=False)
     sys.exit(1)
 else:
     print(f'PREFLIGHT PASS — {len(sents)} chunks OK')
+    _prog.done(success=True)
     sys.exit(0)

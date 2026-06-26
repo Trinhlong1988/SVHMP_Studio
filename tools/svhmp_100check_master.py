@@ -3,9 +3,24 @@
 """
 import json
 import os
+import sys
 import re
+import atexit
 import subprocess
 from collections import Counter, defaultdict
+
+# Round 14 dashboard live hook
+_TOOLS = os.path.dirname(os.path.abspath(__file__))
+if _TOOLS not in sys.path: sys.path.insert(0, _TOOLS)
+try:
+    from render_progress_hook import RenderProgress
+except ImportError:
+    class RenderProgress:
+        def __init__(self, **kw): self.current_step = 0; self.total_steps = 1
+        def start(self, *a, **k): pass
+        def tick(self, *a, **k): pass
+        def done(self, *a, **k): pass
+        def fail(self, *a, **k): pass
 
 WD = r'C:\Users\Administrator\Desktop\SVHMP_v10_workdir'
 MEM = r'C:\Users\Administrator\.claude\projects\C--Users-Administrator\memory'
@@ -15,6 +30,12 @@ PREFLIGHT = r'C:\tmp\svhmp_preflight_qa.py'
 SPECS = [f'spec_ep01_section_{n}.json' for n in
          ['1_hook', '2_setup', '3_incident', '4_reveal', '5_payoff', '6_cliffhanger']]
 SPECS_DATA = {fn: json.load(open(os.path.join(WD, fn), encoding='utf-8')) for fn in SPECS}
+
+# Total: ~10 categories of checks. Em conservative estimate 12 stages (cat1-10 + load + report)
+_prog = RenderProgress(cmd='100check_master', ep=1, total_steps=12)
+atexit.register(lambda: _prog.fail('exit without done') if _prog.current_step < _prog.total_steps else None)
+_prog.start('cat1_hien_phap')
+_prog.tick(1, 'CATEGORY 1: HIẾN PHÁP 21 RULES')
 
 results = {'PASS': 0, 'WARN': 0, 'FAIL': 0}
 checks_log = []
@@ -281,8 +302,14 @@ for cat, counts in by_cat.items():
     p = counts['PASS']
     print(f'  {cat:20s}: {p}/{total} PASS ({counts["WARN"]} WARN, {counts["FAIL"]} FAIL)')
 
+_prog.start('reporting')
+_prog.tick(12, f'Report: {results["PASS"]} PASS / {results["WARN"]} WARN / {results["FAIL"]} FAIL')
+
 # Show FAIL
 print(f'\n=== FAILS ===')
 for cat, n, name, status, detail in checks_log:
     if status == 'FAIL':
         print(f'  ✗ [{cat}#{n}] {name}: {detail}')
+
+_prog.done(success=(results['FAIL'] == 0),
+           final_path=f'{results["PASS"]} PASS / {results["WARN"]} WARN / {results["FAIL"]} FAIL')
