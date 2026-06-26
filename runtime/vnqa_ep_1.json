@@ -37,47 +37,11 @@
       "severity": "minor",
       "evidence": "Cụm từ dài bất thường: ['` prompt_version', '] stop_location', 'Cầu Long Biên']",
       "suggestion": "TENTATIVE — Mr.Long verify trong từ điển VN"
-    },
-    {
-      "check": "H6_sentence_runon",
-      "severity": "warning",
-      "evidence": "Câu 65 từ (max 40)",
-      "suggestion": "Cắt thành 2-3 câu ngắn để rhythm narrative"
-    },
-    {
-      "check": "H6_sentence_runon",
-      "severity": "warning",
-      "evidence": "Câu 145 từ (max 40)",
-      "suggestion": "Cắt thành 2-3 câu ngắn để rhythm narrative"
-    },
-    {
-      "check": "H6_sentence_runon",
-      "severity": "warning",
-      "evidence": "Câu 108 từ (max 40)",
-      "suggestion": "Cắt thành 2-3 câu ngắn để rhythm narrative"
-    },
-    {
-      "check": "H6_sentence_runon",
-      "severity": "warning",
-      "evidence": "Câu 82 từ (max 40)",
-      "suggestion": "Cắt thành 2-3 câu ngắn để rhythm narrative"
-    },
-    {
-      "check": "H6_sentence_runon",
-      "severity": "warning",
-      "evidence": "Câu 89 từ (max 40)",
-      "suggestion": "Cắt thành 2-3 câu ngắn để rhythm narrative"
-    },
-    {
-      "check": "H6_sentence_runon",
-      "severity": "warning",
-      "evidence": "Câu 59 từ (max 40)",
-      "suggestion": "Cắt thành 2-3 câu ngắn để rhythm narrative"
     }
   ],
   "issues_count_by_severity": {
     "critical": 0,
-    "warning": 10,
+    "warning": 4,
     "minor": 1
   },
   "verdict": "WARN",

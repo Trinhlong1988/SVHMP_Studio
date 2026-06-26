@@ -10,7 +10,7 @@ project_examples: [SVHMP, "future ghost story channels"]
 thresholds:
   adverb_ratio_max: 0.15       # horror cần mood adverb (lặng lẽ, khẽ, từ từ)
   idiom_max_per_ep: 2           # idiom 1x OK, 2+ = cliché overuse
-  sentence_len_max_words: 40    # mix short tense + long flow OK
+  sentence_len_max_words: 150   # Mr.Long 26/6: câu dài SVHMP là chủ ý văn học, KHÔNG flag run-on. 145 max EP01 accepted.
   token_repeat_min: 3
   bigram_repeat_per_sentence: 2
 

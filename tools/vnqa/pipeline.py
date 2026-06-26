@@ -86,7 +86,7 @@ JOURNALISTIC_MARKERS = {
 
 # H7 N-gram anomaly threshold (sensible defaults — Mr.Long tune sau)
 NGRAM_REPETITION_MAX_PER_SENTENCE = 2  # cùng bi-gram >2x trong 1 câu = AI
-SENTENCE_LEN_MAX_WORDS = 40             # câu > 40 từ = potentially run-on
+SENTENCE_LEN_MAX_WORDS = 150            # Mr.Long 26/6: SVHMP literary intent, max 145 từ accepted. (TENTATIVE: Phase H2 wire genre yaml load)
 
 
 class VietnameseQAChecker:
