@@ -1,0 +1,64 @@
+# VNQA — Vietnamese formality + register markers
+# Lock date: 2026-06-26
+
+schema_version: 1
+description: Markers indicating formal/journalistic vs informal/narrative register.
+
+formal_journalistic_markers:
+  - "theo nguồn tin"
+  - "theo báo cáo"
+  - "được biết"
+  - "theo đó"
+  - "đại diện"
+  - "phát biểu"
+  - "tuyên bố"
+  - "thông báo"
+  - "báo cáo cho biết"
+  - "nguồn tin cho hay"
+  - "sự việc"
+  - "sự kiện này"
+  - "theo thống kê"
+  - "theo khảo sát"
+  - "kết quả cho thấy"
+  - "đáng chú ý"
+  - "đáng kể là"
+
+formal_academic_markers:
+  - "có thể thấy rằng"
+  - "không thể phủ nhận"
+  - "rõ ràng là"
+  - "điều này cho thấy"
+  - "từ đó suy ra"
+  - "có cơ sở để khẳng định"
+
+informal_conversational_markers:
+  - "kiểu như"
+  - "ý là"
+  - "thật ra"
+  - "thực tế thì"
+  - "nói thật"
+  - "thú thật"
+  - "đại loại"
+
+narrative_horror_preferred:
+  - "đêm đó"
+  - "rồi"
+  - "anh nghe"
+  - "cô nghe"
+  - "trong gương"
+  - "phía sau"
+
+genre_thresholds:
+  horror_narrative:
+    formal_journalistic_max: 0     # ABSOLUTELY NO
+    formal_academic_max: 1
+    informal_conversational_max: 2 # dialogue OK casual
+  news_broadcast:
+    formal_journalistic_min: 3     # required
+    informal_conversational_max: 0
+  podcast_casual:
+    informal_conversational_min: 3
+    formal_journalistic_max: 2
+  novel_literary:
+    formal_academic_max: 3
+    narrative_horror_preferred_max: 0

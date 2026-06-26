@@ -1,0 +1,62 @@
+# VNQA — Vietnamese idiom seed list (thành ngữ)
+# Source: Vietnamese common proverb + idiom database
+# Lock date: 2026-06-26
+# Apply: detect idiom usage trong text + flag overuse (>2x/ep = cliché)
+
+schema_version: 1
+description: Vietnamese idioms (thành ngữ) baseline cho cliché detection.
+
+idioms:
+  family:
+    - "công cha như núi Thái Sơn"
+    - "nghĩa mẹ như nước trong nguồn chảy ra"
+    - "tre già măng mọc"
+    - "máu mủ ruột rà"
+    - "anh em như thể tay chân"
+
+  perseverance:
+    - "có công mài sắt có ngày nên kim"
+    - "lửa thử vàng gian nan thử sức"
+    - "gừng càng già càng cay"
+    - "đầu xuôi đuôi lọt"
+    - "thắng không kiêu bại không nản"
+
+  appearance_vs_reality:
+    - "xanh vỏ đỏ lòng"
+    - "tốt gỗ hơn tốt nước sơn"
+    - "thấy người ta ăn khoai cũng vác mai đi đào"
+    - "đứng núi này trông núi nọ"
+
+  cause_effect:
+    - "gieo gió gặt bão"
+    - "một con sâu làm rầu nồi canh"
+    - "ăn quả nhớ kẻ trồng cây"
+    - "uống nước nhớ nguồn"
+
+  fate_death:
+    - "gần đất xa trời"
+    - "sống chết có số"
+    - "trời kêu ai nấy dạ"
+    - "nhân nào quả nấy"
+
+  emotion_loss:
+    - "đau như cắt"
+    - "đau như xé ruột"
+    - "lòng đau như cắt"
+    - "ruột thắt gan bào"
+
+detection_rules:
+  natural_usage: 1 idiom_per_ep   # 1x OK
+  cliche_warning: 2               # 2x = warning
+  cliche_fail: 3                  # 3x+ = REGEN scope=language_only
+
+genre_overrides:
+  horror_narrative:
+    cliche_warning: 2
+    preferred_categories: [emotion_loss, fate_death]
+  news_broadcast:
+    cliche_warning: 0   # news KHÔNG dùng idiom
+  podcast_casual:
+    cliche_warning: 5   # casual nói nhiều idiom OK
+  novel_literary:
+    cliche_warning: 5   # văn học rich idiom OK

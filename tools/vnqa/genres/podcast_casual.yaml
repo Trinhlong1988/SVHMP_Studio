@@ -1,0 +1,40 @@
+# VNQA — Podcast casual genre (conversational)
+# Lock date: 2026-06-26 (template — chưa có project user)
+
+inherits: _base
+schema_version: 1
+genre_id: podcast_casual
+purpose: "Vietnamese casual podcast (chat-style narration, host monologue)"
+project_examples: ["self-help podcast", "story-telling personal", "interview-style"]
+
+thresholds:
+  adverb_ratio_max: 0.20        # casual lỏng — natural adverb OK
+  filler_max_per_ep: 15         # "ờm", "ý là", "thì", "kiểu" tự nhiên trong speech
+  formality_min_score: 0.2      # informal OK
+  sentence_len_max_words: 50    # long conversational sentence OK
+  idiom_max_per_ep: 5           # idiom natural in speech
+
+required_tone:
+  - conversational
+  - approachable
+  - relatable
+
+forbidden_tone:
+  - academic_dense
+  - corporate_jargon
+  - bureaucratic
+
+word_density_overrides:
+  filler_allowed:
+    - "ờm"
+    - "ý là"
+    - "kiểu"
+    - "thì"
+    - "à"
+    - "nhỉ"
+    - "đó"
+  contractions_allowed: true    # "ko" thay "không" OK
+  question_tags_allowed: true   # "phải không?", "đúng không?" OK
+
+cross_ref:
+  - Spotify Vietnamese podcast style observation
