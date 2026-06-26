@@ -115,7 +115,7 @@ Có lẽ pin hết.
 
 Có lẽ vì cái khác.
 
-[pause:300ms] Bất chợt, chiếc đồng hồ rung khẽ một lần.
+[pause:300ms] Bỗng nhiên, chiếc đồng hồ rung khẽ một lần.
 
 Một cái rung nhỏ. Như tim đập một nhịp.
 

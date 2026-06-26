@@ -15,12 +15,6 @@
       "suggestion": "TENTATIVE — Mr.Long verify trong từ điển VN"
     },
     {
-      "check": "H8_collocation_phonetic_risk",
-      "severity": "minor",
-      "evidence": "Pattern \"Bất chợt\" match 1x — mispronounce trigger",
-      "suggestion": "Bỗng nhiên"
-    },
-    {
       "check": "H9_stop_consonant_tail",
       "severity": "minor",
       "evidence": "Word \"biết\" xuất hiện 5x (BigVGAN tail risk)",
@@ -30,8 +24,8 @@
   "issues_count_by_severity": {
     "critical": 0,
     "warning": 0,
-    "minor": 3
+    "minor": 2
   },
-  "verdict": "WARN",
-  "next_action": "Generator review issues, optional regen"
+  "verdict": "PASS",
+  "next_action": "Pipeline proceed to TTS"
 }
