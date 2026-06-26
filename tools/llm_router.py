@@ -113,6 +113,7 @@ def call_provider(provider_id: str, prompt: str, system: Optional[str] = None, *
     if config.get('provider') == 'ollama':
         try:
             import ollama
+            import subprocess
             client = ollama.Client()
             messages = []
             if system:
@@ -127,10 +128,31 @@ def call_provider(provider_id: str, prompt: str, system: Optional[str] = None, *
                 },
                 keep_alive=0,  # B34 fix: unload model after invoke → free VRAM cho TTS/SDXL
             )
-            return response['message']['content']
+            result = response['message']['content']
+            # B34 fix Phase 2: kill llama-server.exe sau invoke để free CUDA VRAM
+            # (Ollama keep_alive=0 chỉ unload model logically, CUDA context vẫn giữ ~7GB)
+            try:
+                subprocess.run(['taskkill', '/F', '/IM', 'llama-server.exe'],
+                              capture_output=True, timeout=5)
+            except Exception:
+                pass  # best-effort, không break flow
+            return result
         except Exception as e:
             print(f"  ⚠ ollama_local fail: {e}", file=sys.stderr)
             return None
+
+
+def free_ollama_vram():
+    """Force free VRAM bằng cách kill llama-server.exe (Ollama worker process).
+    Ollama daemon tự respawn khi có request mới (~20s reload tax).
+    Dùng sau Skeptic invoke + trước TTS render để tránh OOM."""
+    try:
+        import subprocess
+        subprocess.run(['taskkill', '/F', '/IM', 'llama-server.exe'],
+                       capture_output=True, timeout=5)
+        return True
+    except Exception:
+        return False
 
     # Other providers: skeleton (TENTATIVE — Mr.Long approve install SDK)
     print(f"  ! {provider_id}: SDK integration TENTATIVE — Mr.Long approve actual SDK install", file=sys.stderr)
