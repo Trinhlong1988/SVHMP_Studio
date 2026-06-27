@@ -1,18 +1,23 @@
-# TẬP 17 — CUỐN SỔ GHI CHÉP, CON KHÔNG HIỂU CHA
+# TẬP 17 — LỜI HỨA VỚI BẠN THÂN GIÚP KHI CẦN — TÔI ĐÃ BẬN
 
 ```
-prompt_version: SVHMP-10.0-RC3.4
+prompt_version: SVHMP-10.0-RC3.5
 ep_number: 17
-phase: mid (17/90)
-passenger_main: PAS_0028 (Phú Quý, nam 51-65)
-regret_pillar: family_regret
-regret_sub: REG_FAM_003
-signature_object: OBJ_SO_GHI_CHEP
-signature_setting: setting_TBD
-stop_location: ngã ba Bắc Ninh
+phase: warming (S1)
+pillar: promise
+intensity_level: 0.55
+quang_memory_fragment: M4 (Quang ngẫm Hà tai nạn — đêm mưa — con đường)
+object_sub_arc: USB (ngoài cluster cúc — diversify)
+callback_target: none
+passenger_main: nam 42 Hữu Tài Sóc Sơn (bạn thân nhờ vay tiền chữa ung thư — không kịp về)
+signature_object: OBJ_USB (USB chứa thư bạn gửi — Tài không kịp đọc)
+signature_setting: setting_dem_thang_tu_HN
+stop_location: ngã ba Sóc Sơn
 bell_count: 1
 ghost_manifest: 1
-auto_gen: tools/auto_gen_ep_v3.py v3.1 — pattern A (Linear flashback) (template + QA loop)
+word_count: ~2000
+hand_crafted: true
+arc_design_compliant: bible/21 R33-R38
 ```
 
 ---
@@ -21,19 +26,17 @@ auto_gen: tools/auto_gen_ep_v3.py v3.1 — pattern A (Linear flashback) (templat
 
 [pause:800ms]
 
-Đêm hai tám tháng Chạp. Mưa phùn lất phất. Chuyến xe đêm chạy qua một đoạn đường vắng ven Ninh. Bụi mía sương mờ ven đường vắng. Đèn pha quét nhẹ lên hai bên đường tối.
+Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven đồi Sóc Sơn. Đèn pha quét lên rừng thông non — cành thông đẫm sương đêm.
 
-Quang ngồi ghế thứ ba. Đêm thứ 17 Quang đếm. Trong túi áo Quang đã có 15 vật — các vật rời rạc từ những đêm trước. Sợi len. Sợi lạt. Phong bao trống. Sợi chỉ trắng. Viên pin cassette. Mỗi vật một câu chuyện. Quang chưa hiểu vì sao mình giữ.
+Quang ngồi ghế thứ ba. Đêm thứ mười bảy. Trong túi áo gió Quang — mười sáu vật. Đêm qua thêm cánh cúc tươi vàng nhạt.
 
-Trên ghế lái, bác tài lái như mọi khi. Hai bàn tay đeo găng trắng đặt trên vô-lăng. Ánh mắt liếc gương chiếu hậu một thoáng, dừng trên Quang lâu hơn một nhịp, rồi mới chuyển sang đoạn đường tối phía trước.
+Bác tài lái.
 
-Xe chậm lại trước một quán đã đóng cửa từ chiều. Quán nhỏ, mái ngói rêu phong, biển hiệu chữ phai. Đèn vàng yếu trên cột điện hắt xuống một bóng người đứng đợi dưới mái hiên.
+Xe chậm lại trước một bệnh viện huyện cũ — biển "Bệnh viện đa khoa Sóc Sơn" — cổng vẫn mở — đèn vàng hắt ra. Một người đàn ông đứng đợi. Khoảng bốn mươi hai tuổi. Áo gió xám — quần tây đen. Tay phải cầm hộp giấy nhỏ — bên trong có gì cứng.
 
-Chú trung niên. Khoảng 51-65 tuổi. Mặc áo đơn giản, tay xách một túi vải nhỏ. Bên trong túi có cuốn sổ ghi chép — bìa nâu, giấy ngả vàng. Chú đứng yên dưới mái hiên, hơi thở chậm trong sương lạnh.
+Anh bước lên xe. Đi qua hàng ghế đầu — ngồi xuống ghế thứ tư. Mở hộp. Lấy ra một chiếc USB — vỏ kim loại đen — cũ — đã trầy.
 
-Chú bước lên xe nhẹ. Đi nhẹ xuống lối giữa. Ngồi vào ghế thứ 10. Đặt cuốn sổ ghi chép lên đùi. Tay trái vẫn cầm vé xe đã nhàu.
-
-Xe lăn bánh trở lại. Đèn pha trở lại cắt qua sương.
+Xe lăn bánh.
 
 ---
 
@@ -41,21 +44,17 @@ Xe lăn bánh trở lại. Đèn pha trở lại cắt qua sương.
 
 [pause:600ms]
 
-Quang nhìn chú qua khe ghế. Chú khoảng 51-65 tuổi. Mặt có nét mệt — như đã không ngủ nhiều đêm. Mí dưới hơi sưng. Tóc cột thấp hoặc rối nhẹ. Cảm giác như vừa đi đường dài.
+Anh ngồi yên. Vuốt USB. Đầu ngón tay anh cử động chậm — như đang cảm USB lần đầu.
 
-Chú lật trang sổ. Một động tác chậm rãi, đầu các ngón tay đi qua mặt chép như thể đang lần theo từng nếp. Chữ viết tay người già, một số dòng nhoè mực.
+Quang quan sát. Anh trạc tuổi bốn hai — tóc đã có sợi bạc — mắt sâu — vẻ người bận rộn.
 
-Một ông cụ ngồi ghế đầu vặn nhẹ núm radio cũ. Tiếng radio rè rè vang lên — một câu hát nào đó cũ lắm, nghe không rõ lời. Có chữ "...quê nhà..." rồi tiếng tan ra trong gió đêm.
-
-Bên ngoài cửa kính, gió thổi nhẹ vào mặt kính. Có vài hạt mưa phùn đọng thành mảng mờ rồi tan.
+Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng. Tắt.
 
 [pause:500ms]
 
-Chú không nhìn ai. Chú nhìn xuống cuốn sổ ghi chép trên đùi. Như đang chờ gì đó. Hoặc đang nhớ gì đó.
+Bác tài liếc gương. Không nói.
 
-Quang đoán chú khoảng 51 tới 65 tuổi. Mắt to. Có vết hơi đỏ ở mí mắt — như khóc đã tạnh nhưng chưa kịp xẹp.
-
-Bác tài liếc gương chiếu hậu một thoáng. Nhịp ngón trỏ trái ba cái lên vô-lăng. Rồi yên. Bóng bác trong gương vẫn bình tĩnh — như mọi đêm Quang đã thấy.
+Anh đặt USB lên đùi. Hai tay anh đỡ — như đỡ vật quý.
 
 ---
 
@@ -63,87 +62,101 @@ Bác tài liếc gương chiếu hậu một thoáng. Nhịp ngón trỏ trái b
 
 [pause:500ms]
 
-Xe đi qua một khúc cua. Phía bên kia ruộng, hoặc phía dưới triền dốc, có một ngôi nhà nhỏ. Đèn dầu hắt qua cửa sổ — ánh vàng yếu trong sương. Trước hiên nhà, có một cái ghế gỗ cũ. Trên ghế, có một vật giống vật chú đang giữ — đặt nguyên, chưa ai chạm vào.
+Xe đi qua xóm cũ. Phía bên trái — căn nhà tập thể — đèn phòng tầng hai còn sáng. Cửa sổ phòng — bóng người đàn ông trung niên ngồi trước bàn — tay cầm bút — viết. Không quay đầu.
 
-Chú ghế ngồi đột nhiên nhìn về phía đó. Cổ họng nuốt một cái nhẹ.
+Anh ghế tư nhìn về phía đó.
 
-"Vẫn ở đó..." chú nói khẽ. Không nói với ai. Không nhìn ai.
+"Toàn..."
 
-Phía xa, qua ô cửa sổ căn nhà, có một bóng người ngồi yên — lưng hơi còng, tay đặt lên thứ gì đó trên đùi. Bóng không nhìn về phía xe. Chỉ ngồi yên.
+Anh nói nhỏ.
 
-Đồng hồ trên xe — chiếc đồng hồ nhỏ gắn cạnh ghế lái — kim phút nhích. Tách. Tách. Tách. Tách. Tách. Tách. Tách. Tách. Tách. 9 lần liền. Quang đếm. Đêm thứ 17, 9 lần.
-
-Bác tài không quay đầu. Tay vẫn đặt vô-lăng. Nhưng ánh mắt liếc gương chiếu hậu kéo dài hơn nữa.
-
-Chú không nghe tiếng đồng hồ. Đang nhìn theo ngôi nhà phía xa. Mắt chú mở to.
+Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
 [pause:1000ms]
 
-Xe đi qua. Ngôi nhà mất sau hàng cây. Còn lại bóng tối và tiếng gió.
+Xe đi qua. Nhà tập thể khuất.
 
-Chú quay đầu. Áp cuốn sổ ghi chép vào lòng. Mắt nhắm nhẹ.
+Anh quay đầu. Đặt tay lên USB. Nín thở vài giây.
 
 ---
 
-# REVEAL [section 4 — Pattern A: Linear flashback]
-
-[pause:800ms]
-
-Chú lật trang sổ một lần nữa. Chữ viết tay người già, một số dòng nhoè mực.
-
-"Chú tên Phú Quý. Năm nay 51-65 tuổi."
-
-Giọng chú nhỏ. Khô. Như đọc cho chính cuốn sổ ghi chép nghe.
-
-"Cha cả đời không nói. Con tưởng cha lạnh lùng. Cha mất, con đọc nhật ký cha — mỗi trang đều viết về con."
-
-[pause:600ms]
-
-"Nhiều năm qua, chú mang theo cuốn sổ ghi chép này. Trong túi xách. Trong cặp. Trong ba lô đi công tác. Mỗi đêm trước khi ngủ, chú lấy ra. Đặt cạnh đầu giường. Để cảm thấy hơi của người ấy chưa hoàn toàn tan."
-
-"Vợ/chồng/con chú có lúc hỏi: 'Sao cứ giữ vật cũ này?' Chú không trả lời được. Vì nếu kể, người ấy sẽ thành câu chuyện. Chú không muốn người ấy thành câu chuyện. Người ấy là của riêng chú thôi."
-
-[pause:800ms]
-
-"Hôm người ấy đi, chú không có mặt. Chú ở xa. Đường tắc. Xe muộn. Đến nơi thì đã muộn — chỉ muộn hai giờ, hoặc nửa ngày, hoặc một ngày. Nhưng vẫn muộn."
-
-"Người ấy nằm đó. Tay đặt trên ngực. Mặt bình thản. Không có gì đáng sợ. Chỉ là không còn thở."
-
-"Chú ngồi cạnh. Cầm tay người ấy. Bàn tay đã lạnh. Da đã trắng. Chú muốn nói: 'Con xin lỗi. Con về muộn.' Nhưng người ấy không nghe. Chú chỉ ngồi đó. Không khóc. Không nói. Đến lúc ai đó dìu chú đứng dậy."
-
-[pause:1500ms]
-
-Bác tài nhìn gương chiếu hậu một thoáng. Im lặng. Không nói câu nào.
-
-Trong gương chiếu hậu phía sau ghế lái, Quang thấy hai cái bóng. Một là chú. Một là một bóng người lớn tuổi hơn, ngồi sát ngay sau chú. Bóng người ấy đang đặt tay lên vật giống vật chú đang giữ. Mắt nhìn xuống. Không nhìn ai. Không nói.
-
-Quang chớp mắt. Trong gương vẫn chỉ có chú và một bóng mờ.
-
-Bác tài cất lời. Câu hỏi cũ.
-
-"Con đã nhớ ra chưa?"
-
-Chú không quay đầu. Khẽ gật. Một cái gật rất nhỏ.
-
-"Chú nhớ, bác."
+# REVEAL [section 4]
 
 [pause:1000ms]
 
-"Chú nhớ từ lâu lắm. Nhưng nhớ không có nghĩa là nói được. Chú chỉ nhớ trong lòng. Mỗi đêm trước khi ngủ. Mỗi sáng khi mở mắt. Mỗi lần đi qua một quán cũ. Mỗi lần nghe một bài hát cũ. Người ấy luôn ở đó — nhưng không nói được."
+"Tôi là Hữu Tài. Bốn mươi hai tuổi. Tôi ở Sóc Sơn — quê. Tôi làm giám đốc nhỏ — công ty xuất nhập khẩu Hà Nội."
+
+Giọng anh trầm.
+
+"Bạn thân nhất của tôi — Toàn — mất ba năm trước. Bốn mươi tuổi. Ung thư gan giai đoạn cuối — phát hiện muộn — sống thêm tám tháng."
+
+"Tôi và Toàn quen từ tiểu học. Cùng làng. Cùng lớp cấp một. Cùng lớp cấp hai. Cấp ba tách trường — vẫn ở chung phòng học thêm. Đại học tách Hà Nội — Toàn bách khoa — tôi kinh tế. Tốt nghiệp — vẫn gặp nhau mỗi tuần."
 
 [pause:800ms]
 
-"Đêm nay chú đem cuốn sổ ghi chép về quê. Đặt lên ban thờ. Thắp nhang. Nói: 'Con nhớ rồi. Con xin lỗi.' Có thể người ấy nghe. Có thể không. Nhưng chú cần nói."
+"Toàn cưới sớm — hai mươi sáu — vợ là bạn cùng lớp đại học. Sinh hai con. Sống Hà Đông — căn hộ chung cư nhỏ."
 
-[pause:600ms]
+"Tôi cưới muộn — ba mươi mốt — sinh một con. Sống Đống Đa."
 
-Có một đêm chú nằm cạnh giường người ấy lúc người ấy đã yếu. Người ấy không nói nhiều — chỉ nắm tay chú. Hai bàn tay đan. Lâu. Không ai nói gì. Chú nhớ — đó là lần đầu tiên chú và người ấy nắm tay yên lặng như thế.
+"Hai vợ chồng vẫn ăn cơm với nhau cuối tuần. Bạn từ tiểu học — không thay đổi."
 
-Cả đời người ấy chăm sóc chú. Một đêm cuối, lần đầu chú chăm người ấy. Một đêm. Sáng sau người ấy đi.
+[pause:1200ms]
 
-Chú hối hận vì đã không nắm tay người ấy nhiều lần hơn từ trước đó. Hai bàn tay chỉ chạm thẳng nhau trong đêm cuối — chứ không qua nhiều năm.
+"Bốn năm trước — Toàn đau bụng nhiều tháng. Đi khám — viêm gan. Điều trị. Sáu tháng sau — phát hiện ung thư. Giai đoạn cuối — đã di căn."
 
+"Bác sĩ bảo: 'Cần thuốc nhập ngoại — hai trăm triệu một liệu trình — bảo hiểm không chi trả.'"
 
+"Toàn không có hai trăm triệu. Lương kỹ sư Toàn nuôi gia đình — tiết kiệm được bốn năm chục triệu. Vợ Toàn nghỉ làm chăm con nhỏ."
+
+"Toàn gọi tôi. Một tối — bảy giờ — tháng năm. Tôi đang họp công ty. Tôi không nghe. Cuộc gọi nhỡ."
+
+[pause:1500ms]
+
+"Tám giờ Toàn gọi lại. Tôi vẫn đang họp — quan trọng — đối tác Nhật. Tôi không bắt."
+
+"Mười giờ tôi xong họp. Tôi gọi lại Toàn. Toàn không bắt. Tôi nghĩ: 'Toàn đang ngủ — sáng mai gọi.'"
+
+"Sáng hôm sau — sáu giờ — Toàn nhắn tin: 'Tài ơi tôi xin mượn anh hai trăm triệu chữa ung thư. Tôi sẽ trả dần năm năm. Cảm ơn anh trước.'"
+
+"Tôi đọc tin. Tôi sốc — tôi không biết Toàn đến giai đoạn nặng. Tôi không gọi lại ngay — tôi đến công ty — họp tiếp — đối tác Nhật chưa xong việc hôm qua."
+
+"Trưa tôi gọi Toàn. Toàn bắt. Giọng yếu. 'Tài ơi cảm ơn anh đọc tin. Anh quyết được không?'"
+
+"Tôi nói: 'Toàn ơi anh đợi tôi vài hôm — tôi đang khó — công ty tôi đang khủng hoảng dòng tiền — tôi sẽ xoay — đầu tuần sau anh nhé.'"
+
+[pause:1500ms]
+
+"Toàn im một lúc. Rồi nói: 'OK Tài. Cảm ơn anh.'"
+
+"Tôi tắt máy. Tôi tiếp tục họp. Tuần đó tôi xoay tiền — nhưng tôi chỉ xoay được một trăm triệu — không phải hai trăm. Tôi định: 'Một trăm trước — tuần sau xoay thêm.'"
+
+"Thứ năm tuần đó — vợ Toàn nhắn tin: 'Anh Tài ơi anh Toàn đã đi. Tối qua. Đột ngột nặng hơn — không kịp.'"
+
+"Tôi sốc. Tôi không khóc. Tôi ngồi văn phòng — nhìn ngoài cửa sổ. Tôi đã định mai gửi một trăm triệu cho Toàn. Tôi không kịp."
+
+[pause:1500ms]
+
+"Sau tang Toàn — vợ Toàn đưa tôi USB này. Bảo: 'Anh Toàn viết thư cho anh tuần trước — bảo em đưa anh nếu anh ấy đi. Thư trong USB.'"
+
+"Tôi cầm USB. Về nhà. Mở. Đọc thư."
+
+"Toàn viết: 'Tài thân — nếu anh đọc thư này — tức là tôi đã đi. Tôi không trách anh không xoay kịp tiền. Tôi biết anh bận. Tôi biết anh thương tôi. Tôi xin anh một điều — chăm con tôi thay tôi — hai đứa nhỏ — chúng coi anh như chú ruột. Anh là người tôi tin nhất sau vợ tôi. Cảm ơn anh đã làm bạn tôi ba mươi năm. Toàn.'"
+
+"Tôi đọc xong — khóc. Lần đầu khóc sau ba mươi năm — không khóc từ lúc bố tôi mất."
+
+"Ba năm tôi giữ USB. Mỗi đêm tôi mở — đọc thư Toàn — một lần. Như cách Toàn còn nói với tôi."
+
+Bác tài cất lời.
+
+"Con đã nhớ ra chưa?"
+
+Tài gật. Mắt đỏ.
+
+"Tôi nhớ. Tôi không kịp xoay tiền — không kịp gọi lại — không kịp cứu. Toàn không trách tôi — Toàn dặn tôi chăm con Toàn. Tôi đã chăm — ba năm — đem hai cháu đi học — đem đi chơi cuối tuần — như cha. Nhưng USB này — tôi không buông được."
+
+[pause:1200ms]
+
+"Đêm nay — tôi đem USB về Sóc Sơn — về bệnh viện nơi Toàn nằm tháng cuối — em chôn USB trong vườn cây sau bệnh viện. Toàn không cần USB — Toàn đã đi — nhưng tôi cần buông. Tôi đã thuộc thư Toàn — không cần USB nữa."
 
 ---
 
@@ -151,55 +164,31 @@ Chú hối hận vì đã không nắm tay người ấy nhiều lần hơn từ
 
 [pause:800ms]
 
-Xe chậm lại. Phía trước có một ngã ba. Đèn đường vàng yếu hắt xuống mặt đất ẩm. Có vài hạt mưa phùn đọng trên kính cửa.
+Xe chậm lại. Ngã ba Sóc Sơn — cây thông lớn — bến không tên. Chuông xe ngân. Một tiếng. Tan.
 
-Bên kia ngã ba, có tiếng chuông. Tiếng chuông cận Tết. Một ngôi chùa nhỏ ở xa. Ngân lên một hồi. Một hồi thôi. Rồi tan vào đêm.
-
-Chú cầm cuốn sổ ghi chép. Đặt vào túi vải. Đóng nắp. Đứng dậy chậm rãi.
-
-Khi đi qua chỗ Quang ngồi, chú khẽ nói:
+Tài cất USB vào hộp giấy. Đứng dậy.
 
 "Chào anh."
 
-Quang gật đầu. Chú đi tiếp về phía cửa xe.
+Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển.
 
-Trước khi xuống, chú quay đầu nhìn bác tài. Lâu. Một thoáng dài hơn các hành khách khác. Rồi nhìn lên đồng hồ trên xe.
+Bác tài: "Chưa tới lúc."
 
-Đồng hồ chỉ bảy giờ mười phút.
-
-Chú khẽ nhíu mày. Như nhớ ra điều gì.
-
-"Bác tài lái xe này nhiều năm rồi nhỉ?"
-
-Bác tài nhìn gương chiếu hậu. Khẽ nói câu thứ hai:
-
-"Chưa tới lúc."
-
-Chú không hiểu câu đó. Chú gật đầu nhẹ — như đã quen với câu trả lời không trả lời. Rồi bước xuống. Tay xách túi vải. Tay khác kéo nhẹ áo cho thẳng.
-
-Cửa xe khép lại. Xe lăn bánh trở lại trong đêm.
-
-[pause:1000ms]
-
-Bên ngoài cửa kính, Quang thấy chú đi vào con đường đất nhỏ ven ngã ba. Túi vải xách bên hông. Bóng chú dần lùi xa trong sương.
-
-Phía cuối đường, có ngôi nhà nhỏ với cửa sổ sáng đèn dầu. Trên hiên nhà, có một bóng người ngồi yên — lưng còng, tay đặt một vật giống vật chú đang cầm. Như đang đợi.
-
-Chú đến trước hiên. Đứng yên một lúc. Rồi ngồi xuống bên cạnh bóng người kia.
-
-Quang chớp mắt. Bóng người ấy không còn. Chỉ còn chú ngồi một mình trên hiên. Tay đặt cuốn sổ ghi chép lên chỗ trống bên cạnh — chỗ vừa mới có bóng người.
-
-Chỉ có ngọn đèn dầu nhấp nháy trong sương. Và tiếng gió đêm khẽ thổi qua mái nhà.
+Tài bước xuống.
 
 [pause:1200ms]
 
-Chú ngồi đó rất lâu. Không khóc. Không nói. Chỉ đặt một bàn tay lên cuốn sổ ghi chép. Bàn tay kia đặt lên chỗ trống — chỗ vừa mới có người ngồi.
+Bên ngoài — Tài đi vào sân sau bệnh viện. Vườn cây thông nhỏ — đất mềm vì mưa.
 
-Hai bàn tay. Hai vật. Một đêm. Một lời chưa nói thành tiếng — nhưng đã thành.
+Anh quỳ. Đào hố nhỏ bằng tay. Đặt USB vào. Lấp đất lên.
 
-Trong sương, có một câu hát rất khẽ vọng tới. Không phải từ radio xe. Từ đâu đó xa hơn. Có thể là chính chú đang thì thầm. Có thể là tiếng nhớ — đang vang lại từ một đêm rất xa.
+Cúi đầu.
 
-Đèn dầu trên hiên cháy đều. Sương vẫn dày. Đêm vẫn dài.
+Quang chớp mắt — nhìn qua cửa sổ. Bên hố — Toàn xuất hiện — mặc áo sơ mi xanh — vuốt vai Tài một lần. Cười nhẹ.
+
+Quang chớp lần nữa. Toàn tan.
+
+Tài ngẩng đầu. Lau khóe mắt. Đứng dậy. Vỗ tay phủi đất.
 
 [pause:1500ms]
 
@@ -207,62 +196,30 @@ Trong sương, có một câu hát rất khẽ vọng tới. Không phải từ 
 
 # CLIFFHANGER [section 6]
 
-Xe tiếp tục lăn bánh qua ngã ba. Phía trước, đêm vẫn dài.
+Xe lăn bánh — rời ngã ba Sóc Sơn.
 
-Trên ghế thứ 10 giờ đã trống. Đệm ghế còn lõm xuống một chút — như vừa có ai ngồi rất nhẹ. Trên sàn xe, có một mảnh vật nhỏ rơi xuống. Quang nhặt lên. Mảnh nhỏ của cuốn sổ ghi chép — chú vô tình đánh rơi khi đứng dậy.
+Ghế tư trống. Trên sàn — một mẩu nhãn nhỏ rơi (nhãn dán trên USB bong khi anh cầm). Quang nhặt. Nhãn — màu trắng — có chữ mờ.
 
-Quang cất vào túi áo. Vật thứ 16.
+Bỏ vào túi. Vật thứ mười bảy.
 
-Bác tài lái như mọi khi. Hai tay vô-lăng. Găng trắng. Nhịp ngón trỏ ba cái.
-
-Đồng hồ trên xe kim phút lại nhích. Tách. Tách. Tách. Tách. Tách. Tách. Tách. Tách. Tách. 9 lần liền.
+Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Quang lấy 16 vật trong túi ra. Đặt cạnh nhau trên đùi. Một bộ sưu tập rời rạc — của những người đã chưa kịp nói câu cuối với người họ thương.
+Quang ngồi. USB không cùng cụm cúc. Diversify cụm tiếp.
 
-Quang nhớ — đêm thứ 17 Quang đã ngồi ghế thứ ba. Mỗi đêm một câu chuyện. Mỗi đêm Quang ngồi yên — chưa kể câu chuyện nào của mình.
+Quang ngẫm — Hà có ai từng nhờ Quang giúp không? Quang có lỡ không giúp ai như Tài lỡ không cứu Toàn không?
 
-Vì sao Quang chưa kể? Có phải Quang không có câu chuyện nào? Hay là Quang đã quên?
+Hình ảnh mờ — một tin nhắn — một cuộc gọi nhỡ — một tiếng chuông điện thoại Quang không bắt.
 
-Trên ghế lái, bác tài liếc gương chiếu hậu. Ánh mắt dừng trên Quang. Lâu. Rất lâu. Rồi bác khẽ nói — câu ngoài hai câu chuẩn:
+Quang nhói. Có. Quang đã nhỡ một cuộc gọi nào đó — Quang cảm thấy.
 
-"Đến lượt con sắp tới rồi."
+Cuộc gọi của Hà?
 
-Quang giật mình. Bác đã nói. Không nhầm. Câu đó không có trong những câu chuẩn của bác.
+Quang không nhớ rõ. Cảm giác — không phải đêm Hà tai nạn — cuộc gọi khác — trước đêm tai nạn.
 
-Quang muốn hỏi. Nhưng môi Quang không động. Tay Quang khẽ run.
+Bác tài liếc gương. "Đêm mười bảy. Con bắt đầu cảm thấy lỡ một cuộc gọi. Đêm sau sẽ rõ hơn về cuộc gọi đó. Đừng vội."
 
-Quang nhìn ra cửa kính. Đêm vẫn dài. Còn nhiều ngã ba phía trước. Còn nhiều người đang đợi ai đó về.
+Quang gật. Không hỏi.
 
-Có ai đó sẽ lên xe ở trạm tiếp theo. Quang chưa biết là ai. Nhưng Quang biết — sẽ có một vật nữa rơi xuống sàn. Quang sẽ nhặt. Quang sẽ cất.
-
-Đến khi nào những vật ấy đầy túi áo? Đến khi nào Quang sẽ tự kể câu chuyện của mình?
-
-[pause:1500ms]
-
-Quang nhìn xuống bộ vật trong lòng. Sợi len. Sợi lạt. Phong bao trống. Sợi chỉ trắng. Viên pin. Mảnh nhỏ vừa nhặt. Mỗi vật mang theo một người. Mỗi người mang theo một câu chưa nói.
-
-Quang nhớ — câu hát ông cụ ghế đầu vẫn mở mỗi đêm: "...quê nhà...". Quang chưa hiểu câu hát đó. Nhưng đêm thứ 17 rồi, Quang vẫn nghe được.
-
-Có lẽ "quê nhà" không chỉ là chỗ Quang sinh ra. Có lẽ "quê nhà" là chỗ Quang có người để về. Quang đang còn ai để về? Quang không nhớ rõ.
-
-[pause:1500ms]
-
-Trên ghế lái, bác tài liếc gương chiếu hậu lần nữa. Ánh mắt dừng trên Quang. Bình tĩnh. Không thương xót. Không khẩn cấp. Chỉ chờ.
-
-Quang nhắm mắt. Hơi thở chậm xuống một nhịp. Đêm vẫn lăn bánh.
-
----
-
-# CONSTITUTION CHECK
-
-- ALWAYS_5: melancholy / unresolved_goodbye / object_symbolism (OBJ_SO_GHI_CHEP) / subtle_supernatural (1 ghost manifest) / emotional_aftertaste
-- NEVER_7: KHÔNG gore / jump_scare / exorcism / monster / combat / villain / explanation
-- GHOST_RULES_3: never_attack / never_chase / never_speak_directly
-- SERIES_RULES_8: bus 1 / driver 2 câu + foreshadow / bell 1 / ghost 1 / object / unresolved / subtle / regret_supernatural
-- bible/23: char_name "Phú Quý" 2 âm tiết, không forbidden
-- bible/12: signature_object OBJ_SO_GHI_CHEP trong library
-- bible/13: signature_setting setting_TBD trong library
-- bible/18: EP17 ≠ EP73/EP90 reserved
-- Cross-ep continuity: Quang nhặt 15 vật + clock 7:10 + driver gradient
+Đêm thứ mười bảy. Xe đi tiếp. Phía sau — Sóc Sơn khuất. Tài ở lại đứng — nhìn hố đất đã lấp — USB Toàn đã chôn.
