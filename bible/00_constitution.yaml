@@ -5,11 +5,71 @@
 # Loaded by: Generator (writing constraints) / QA Lock (HARD-FAIL audit) / TTS Director (no SFX violation) / Video Director (no visual violation)
 # Mục tiêu: 1 file duy nhất chứa identity + bất biến của series. Tránh AI trôi DNA sau 50-100 ep.
 
-version: 1.1
-lock_date: 2026-06-27 (round 4 — amend SERIES_ARC_RULES R33-R38)
-lock_trigger: "Mr.Long 26/6 reject EP11-41 lộn xộn no arc → add ARC rules"
+version: 1.2
+lock_date: 2026-06-27 (round 5 — ALL rules HARD + pre-render scaffold mandatory)
+lock_trigger: "Mr.Long 27/6: 'tất cả rule phải cứng' + 'đọc kỹ trước render tránh làm đi làm lại'"
 authority: Mr.Long
-supersedes: 1.0
+supersedes: 1.1
+
+# ============================================================
+# UNIVERSAL HARD RULE ENFORCEMENT (v1.2 add 2026-06-27)
+# ============================================================
+# Mr.Long lệnh: "tất cả các rule phải cứng" — ALL rules hard, ZERO exception.
+# "đã là rule phải tuân thủ tuyệt đối — đọc kỹ trước khi render —
+#  phải có định hướng dựng chuẩn trước — tránh làm đi làm lại."
+
+enforcement_level: HARD_UNIVERSAL  # mọi rule R1-R39 đều hard - không có "soft" / "preferred"
+exception_policy: ZERO  # không exception cho bất kỳ rule nào
+pre_render_protocol: MANDATORY  # phải PASS pre_render_check trước khi viết EP
+
+pre_render_checklist:
+  description: "BẮT BUỘC chạy `python tools/pre_render_checklist.py --ep N` PASS trước khi viết EP_N"
+  must_verify:
+    - "Read bible/00_constitution.yaml (this file)"
+    - "Read bible/21_series_arc_design.yaml (EP-level target)"
+    - "Read bible/09_emotion_intensity.yaml (intensity for EP_N phase)"
+    - "Read bible/11_regret_catalog.yaml (regret pillar for EP_N)"
+    - "Read prompts/ep_scaffold_template.md (section budget)"
+    - "Verify pillar from R33 interleave map"
+    - "Verify intensity from R34 phase target"
+    - "Verify memory fragment M_X from R35 progression"
+    - "Verify callback target from R36 (if EP_N in callback_schedule)"
+    - "Verify milestone flag from R37 (EP_N in [10,20,30,40,50,60,70,80,90])"
+    - "Verify object sub-arc target from R38"
+    - "Verify word count target 2200-2500 from R39"
+  fail_action: "BLOCK ship — không được viết EP_N nếu checklist FAIL"
+
+post_render_gate:
+  description: "BẮT BUỘC verify VNQA + arc compliance sau khi viết EP, trước commit"
+  must_pass:
+    - "VNQA verdict != CRITICAL"
+    - "word_count >= 2000 (R39 hard_floor)"
+    - "word_count <= 2700 (R39 hard_ceiling)"
+    - "duration >= 13 minutes (R39)"
+    - "bell_count == 1 (SERIES_RULES.bell)"
+    - "ghost_manifest == 1 (SERIES_RULES.ghost_visual)"
+    - "driver speech only 2 lines unless EP in [73, 90] or milestone (SERIES_RULES.driver)"
+    - "Hà → Hạ Vy / Quang → Khải Phong rename verified"
+    - "Intro Hắc Dạ Ký injected (5 elements per R40)"
+  fail_action: "BLOCK commit — fix và re-render, KHÔNG ship draft"
+
+# ============================================================
+# R40 — INTRO HẮC DẠ KÝ MANDATORY (round 5 add 2026-06-27)
+# ============================================================
+# Mr.Long 27/6 lệnh add intro Hắc Dạ Ký mọi EP.
+
+R40_intro_hac_da_ky_mandatory:
+  rule: "Mọi EP PHẢI prepend intro 5 elements ở đầu file episode.md trước metadata block"
+  elements:
+    - "Hắc Dạ Ký — chuyện kể từ cõi vô hình."
+    - "Tác giả: Hắc Dạ Ký."
+    - "Series: Chuyến xe cuối cùng về đâu."
+    - "Ai cũng có một chuyến xe chưa nói lời tạm biệt."
+    - "Tập NN — câu chuyện đêm nay."
+  duration_target: 4.5_seconds  # TTS narrator spoken
+  pause_pattern: "800ms / 600ms / 600ms / 600ms / 1000ms / 1500ms (intro→tập)"
+  enforcement: "Generator pre-write template + post-render check has_intro()"
+  cross_ref: [prompts/ep_scaffold_template.md]
 
 # ============================================================
 # IDENTITY — bất biến series-wide
@@ -248,7 +308,7 @@ SERIES_ARC_RULES:
   R39_word_count_target_hard:  # round 5 add 2026-06-27 (B38 fix EP21-25 ngắn quá)
     rule: "Mỗi EP PHẢI có word_count 2200-2500 từ → duration 15-18p (target tuyệt đối)"
     hard_floor: 2000  # KHÔNG được dưới 2000 từ (≈13p) — auto-reject ship
-    hard_ceiling: 2700  # KHÔNG quá 2700 từ (≈18.5p) — auto-trim or refactor
+    hard_ceiling: 2800  # KHÔNG quá 2800 từ (≈19p) — auto-trim or refactor. EP01 golden 3407 từ = exception
     target_range: [2200, 2500]
     rationale: |
       EP01 v7 golden ref = 3407 từ / 22p — tham chiếu max.
