@@ -2,12 +2,12 @@
   "ep_number": 31,
   "phase_h_version": "H1-H7 v1.0",
   "stats": {
-    "tokens_count": 2667,
-    "sentences_approx": 322,
-    "adverbs_count": 154,
+    "tokens_count": 2770,
+    "sentences_approx": 329,
+    "adverbs_count": 161,
     "adverbs_ratio": 0.058,
-    "word_count": 2304,
-    "estimated_minutes": 14.9
+    "word_count": 2403,
+    "estimated_minutes": 15.5
   },
   "issues": [
     {
@@ -39,17 +39,11 @@
       "severity": "minor",
       "evidence": "Word \"biết\" xuất hiện 3x (BigVGAN tail risk)",
       "suggestion": "chưa biết → vẫn chưa hay / vẫn chưa rõ"
-    },
-    {
-      "check": "H10_duration_too_short",
-      "severity": "warning",
-      "evidence": "14.9 phút (target 15-18p, max 20p)",
-      "suggestion": "Expand thêm 20 từ để đạt 15p"
     }
   ],
   "issues_count_by_severity": {
     "critical": 0,
-    "warning": 4,
+    "warning": 3,
     "minor": 2
   },
   "verdict": "WARN",
