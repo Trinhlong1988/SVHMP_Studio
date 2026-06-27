@@ -5,11 +5,11 @@
 # Loaded by: Generator (writing constraints) / QA Lock (HARD-FAIL audit) / TTS Director (no SFX violation) / Video Director (no visual violation)
 # Mục tiêu: 1 file duy nhất chứa identity + bất biến của series. Tránh AI trôi DNA sau 50-100 ep.
 
-version: 1.0
-lock_date: 2026-06-23 15:15
-lock_trigger: "EP01 v7_final_round3_lock = golden reference"
+version: 1.1
+lock_date: 2026-06-27 (round 4 — amend SERIES_ARC_RULES R33-R38)
+lock_trigger: "Mr.Long 26/6 reject EP11-41 lộn xộn no arc → add ARC rules"
 authority: Mr.Long
-supersedes: none
+supersedes: 1.0
 
 # ============================================================
 # IDENTITY — bất biến series-wide
@@ -180,6 +180,72 @@ SERIES_RULES:
     cross_ref: [01_series_bible.aftertaste_enum]
 
 # ============================================================
+# SERIES_ARC_RULES — 6 quy tắc ARC tổng (round 4 add 2026-06-27)
+# ============================================================
+# Mục tiêu: chống "lộn xộn không thành bản nhạc" — series 90 EPs phải có flow tổng.
+# Trigger: Mr.Long 26/6 reject EP11-41 — viết linear theo pillar / không cao trào / no cross-EP arc.
+# Apply: GENERATOR pre-write + QA Lock PHASE 12.16-12.18 + Director arc orchestration.
+
+SERIES_ARC_RULES:
+  R33_pillar_interleave:
+    rule: "KHÔNG dồn >2 EPs cùng pillar liên tiếp"
+    rationale: "6 EPs family liên tiếp = 6 nốt cùng tone = block flat"
+    enforcement: |
+      Generator pre-write check: nếu EP_n-1 + EP_n-2 cùng pillar → reject pillar EP_n.
+      QA PHASE 12.16: scan window 5 EPs trailing, fail nếu >2 same pillar consecutive.
+    cross_ref: [bible/11_regret_catalog, bible/21_series_arc_design]
+
+  R34_escalation_curve_enforcement:
+    rule: "Intensity per-EP tuân bible/09 emotion_intensity per-phase"
+    rationale: "Flat intensity = no crescendo. Phase 11-30 phải warming 0.55 ≠ phase 31-60 heightening 0.70"
+    enforcement: |
+      Generator load bible/09 phase_target → set intensity multiplier.
+      QA PHASE 12.8 already check intensity. Round 4 add: cross-EP delta check.
+    cross_ref: [bible/09_emotion_intensity]
+
+  R35_quang_memory_unlock_progressive:
+    rule: "Mỗi 5 EPs Quang unlock 1 memory fragment (M1-M18 cho 90 EPs)"
+    rationale: "Random reveal = no momentum. Progressive unlock = khán giả track Quang đi đâu về đâu"
+    progression_table: bible/21_series_arc_design.yaml#quang_memory_arc
+    enforcement: |
+      Generator load fragment_M_for_EP → must mention in CLIFFHANGER section.
+      QA PHASE 12.17 verify fragment matches expected.
+    cross_ref: [bible/21_series_arc_design]
+
+  R36_cross_ep_callback_required:
+    rule: "Mỗi 10 EPs PHẢI có ≥1 callback đến passenger/object/setting của EP trước"
+    rationale: "Cross-EP echo = khán giả nhớ EP cũ + tăng retention. Mỗi EP đứng riêng = forgettable"
+    callback_types: [passenger_name_mention, object_echo, setting_revisit, driver_extra_line]
+    enforcement: |
+      Generator load callback_target từ bible/21. QA PHASE 12.17 verify callback present.
+      Allowed callback density: 1 per 10 EPs MIN, max 2 per EP.
+    cross_ref: [bible/21_series_arc_design]
+
+  R37_milestone_ep_rule:
+    list: [10, 20, 30, 40, 50, 60, 70, 80, 90]
+    rule: "Milestone EPs phải KHÁC EP thường — escalation peak + reveal moment"
+    distinctness_criteria:
+      - intensity_level >= phase_peak (+0.05 vs adjacent EPs)
+      - reveal_moment present (Quang memory crisis / driver extra line / cross-EP echo cluster)
+      - emotional_aftertaste deeper (3 dòng dư âm thay vì 1)
+    enforcement: |
+      Generator load milestone_profile cho EP_n in [10,20,30,40,50,60,70,80,90].
+      QA PHASE 12.18 verify milestone has reveal + intensity peak.
+    cross_ref: [bible/21_series_arc_design, bible/09_emotion_intensity]
+
+  R38_object_collection_arc:
+    rule: "Item collection drives arc — mỗi 10 EPs phải có sub-arc objects"
+    sub_arc_types:
+      - symbol_clustering: "3+ vật cùng symbol (hoa cúc khô / đồng hồ kim 7:10 / etc)"
+      - geographic_arc: "vật arrange theo bản đồ địa lý stops"
+      - temporal_arc: "vật arrange theo năm — Quang nhận time pattern"
+    rationale: "38 vật rời rạc = 38 fragments. Vật có sub-arc = mosaic story"
+    enforcement: |
+      Generator load sub_arc_target cho EP_n.
+      QA PHASE 12.18 verify object echoes EP trước (cùng symbol hoặc cluster).
+    cross_ref: [bible/12_object_library, bible/21_series_arc_design]
+
+# ============================================================
 # CROSS-BIBLE REFERENCE (round 3 add — 2026-06-23 15:50)
 # ============================================================
 # Constitution KHÔNG duplicate — chỉ point đến file cụ thể.
@@ -292,3 +358,13 @@ changelog:
     date: 2026-06-23
     author: Mr.Long
     note: "Initial lock sau EP01 v7_final_round3_lock golden reference."
+  - version: 1.1
+    date: 2026-06-27
+    author: Mr.Long (em codify lesson learned)
+    note: |
+      Round 4 amend — add SERIES_ARC_RULES R33-R38 chống "lộn xộn không thành bản nhạc".
+      Trigger: Mr.Long 26/6 reject EP11-41 — viết linear theo pillar / flat intensity / no cross-EP arc.
+      Lesson: Per-EP constitution PASS không đảm bảo series-level "bản nhạc".
+      Fix: Add 6 series-wide ARC rules (interleave / escalation / memory progressive / callback / milestone / object sub-arc).
+      Cross-ref bible/21_series_arc_design.yaml mới (EP-level arc map).
+      QA Lock thêm PHASE 12.16-12.18 enforce R33-R38.

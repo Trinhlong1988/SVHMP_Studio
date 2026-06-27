@@ -37,6 +37,32 @@
 
 ---
 
+### B37 — EP11-41 LỘN XỘN NO ARC TỔNG ("không thành bản nhạc") [RESOLVED hiến pháp v1.1]
+- **Ngày catch:** 2026-06-27 (Mr.Long 26/6 reject sau ship EP36-41)
+- **Phát hiện qua:** Mr.Long judgement nghe 31 EPs hand-craft EP11-41 — "rất lộn xộn không thành bản nhạc"
+- **Triệu chứng:** 
+  - L1: Linear pillar distribution — 6 EPs FAM_005 liên tiếp / 4 EPs LOV_001 liên tiếp → block flat
+  - L2: Mỗi EP đứng riêng — không cross-EP arc → khán giả không có "case theo dõi"
+  - L3: Intensity flat 0.55 từ EP11→EP41 → không cao trào tăng dần
+  - L4: Quang memory unlock random + đơn lẻ → không thấy Quang đi đâu về đâu
+  - L5: Item collection chỉ counter — 38 items thành 38 mảnh rời rạc
+  - L6: Milestone EP10/20/30/40 không khác EP thường — không "ô nhịp"
+- **Root cause:** Per-EP constitution PASS không đảm bảo series-level "bản nhạc". Hiến pháp v1.0 chỉ có per-EP rules (ALWAYS_5, NEVER_7, GHOST_RULES_3, SERIES_RULES_8) — THIẾU series-wide ARC rules.
+- **Fix shipped 27/6 (hiến pháp v1.1):**
+  - Add `bible/00 SERIES_ARC_RULES` 6 rules R33-R38:
+    - R33: pillar_interleave (max 2 consecutive same pillar)
+    - R34: escalation_curve_enforcement (per-phase intensity)
+    - R35: quang_memory_unlock_progressive (M1-M18, 5 EPs/fragment)
+    - R36: cross_ep_callback_required (≥1 callback per 10 EPs)
+    - R37: milestone_ep_rule (EP10/20/30/40/50/60/70/80/90 turn points)
+    - R38: object_collection_arc (sub-arc symbol/temporal/geographic)
+  - Tạo `bible/21_series_arc_design.yaml` — EP-level arc map 90 EPs (M1-M18 memory progression + pillar interleave map + intensity per-EP + callback schedule + object sub-arc)
+  - Doc proposal: `docs/svhmp_arc_50ep_design.md`
+- **Regression test:** QA Lock add PHASE 12.16-12.18 check R33-R38 per-EP + cross-EP arc
+- **Action pending:** Rework EP11-41 theo arc map mới (Option C user choose 27/6) — pending approve 5 câu hỏi trong design doc
+- **Cross-ref:** memory `feedback_svhmp_arc_lesson.md` (new) — codify lesson learned
+- **Meta-lesson:** Mỗi tập có thể PASS riêng nhưng series 90 EPs phải có flow. Per-EP rules ≠ series-wide rules. Tránh "fix bug riêng quên forest tổng".
+
 ### B36 — Pool naming NU 48 < 50 needed → 2 wrap → 4 word dup + 98/100 unique [RESOLVED]
 - **Ngày catch:** 2026-06-27 audit 50 vòng constitution (Mr.Long lệnh)
 - **Phát hiện qua:** R24, R25, R27 trong `C:/tmp/svhmp_constitution_50round_audit.py`

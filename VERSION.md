@@ -1,8 +1,8 @@
 ---
 project: SVHMP_Studio
-current_round: 14
-last_update_ts: 2026-06-26
-last_update_by: Claude session 26/6 (round 14 FINAL — Phase H VNQA wire production + F1-F4 ALL ship)
+current_round: 15
+last_update_ts: 2026-06-27
+last_update_by: Claude session 27/6 (round 15 — B37 EP11-41 lộn xộn no arc + hiến pháp v1.1 R33-R38 + bible/21 arc design)
 schema_version: 1
 ---
 
