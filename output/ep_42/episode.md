@@ -148,7 +148,7 @@ Giọng anh trầm.
 
 "Năm vừa rồi — tôi quyết. Tôi sẽ đem nhẫn về quán cà phê Bến Tre — chính quán em và em hẹn hò trước cưới — chính quán em vừa bước lên xe."
 
-"Em sẽ đặt nhẫn vào hộp 'lost items' của quán cà phê — như cách trả lại nhẫn cho chỗ chứng kiến em yêu em mười hai năm trước cưới."
+"Em sẽ đặt nhẫn vào hộp 'lost items' của quán cà phê — như cách trả lại nhẫn cho chỗ chứng kiến em yêu bạn mười hai năm trước cưới."
 
 "Em sẽ giữ ảnh em đeo nhẫn — chính ảnh em chụp ngày cưới. Ý nghĩa trong ảnh — vật chứng ngoài đời."
 
@@ -164,7 +164,7 @@ Hoàng Nam gật. Mắt đỏ.
 
 [pause:1200ms]
 
-"Đêm nay — em đem nhẫn về Bến Tre — về quán cà phê. Đặt nhẫn vào hộp lost items — gửi nhẫn cho chỗ em yêu em — không giữ riêng nữa."
+"Đêm nay — em đem nhẫn về Bến Tre — về quán cà phê. Đặt nhẫn vào hộp lost items — gửi nhẫn cho chỗ em yêu bạn — không giữ riêng nữa."
 
 ---
 

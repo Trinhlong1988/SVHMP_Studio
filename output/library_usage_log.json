@@ -1,0 +1,5492 @@
+{
+  "piano": {
+    "pxb_485929": [
+      [
+        1,
+        "HOOK"
+      ],
+      [
+        14,
+        "HOOK"
+      ],
+      [
+        55,
+        "HOOK"
+      ]
+    ],
+    "pxb_230860": [
+      [
+        1,
+        "SETUP"
+      ],
+      [
+        21,
+        "SETUP"
+      ],
+      [
+        37,
+        "SETUP"
+      ],
+      [
+        69,
+        "SETUP"
+      ]
+    ],
+    "pxb_258439": [
+      [
+        1,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_397954": [
+      [
+        1,
+        "REVEAL"
+      ]
+    ],
+    "pxb_490162": [
+      [
+        1,
+        "PAYOFF"
+      ],
+      [
+        10,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_504955": [
+      [
+        1,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_262611": [
+      [
+        2,
+        "HOOK"
+      ],
+      [
+        44,
+        "HOOK"
+      ],
+      [
+        60,
+        "HOOK"
+      ],
+      [
+        77,
+        "HOOK"
+      ],
+      [
+        88,
+        "HOOK"
+      ]
+    ],
+    "pxb_355859": [
+      [
+        2,
+        "SETUP"
+      ],
+      [
+        10,
+        "SETUP"
+      ],
+      [
+        20,
+        "SETUP"
+      ],
+      [
+        65,
+        "SETUP"
+      ]
+    ],
+    "pxb_161862": [
+      [
+        2,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_551985": [
+      [
+        2,
+        "REVEAL"
+      ],
+      [
+        21,
+        "REVEAL"
+      ],
+      [
+        45,
+        "REVEAL"
+      ],
+      [
+        72,
+        "REVEAL"
+      ]
+    ],
+    "pxb_519833": [
+      [
+        2,
+        "PAYOFF"
+      ],
+      [
+        30,
+        "PAYOFF"
+      ],
+      [
+        69,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_144358": [
+      [
+        2,
+        "CLIFFHANGER"
+      ],
+      [
+        22,
+        "CLIFFHANGER"
+      ],
+      [
+        64,
+        "CLIFFHANGER"
+      ],
+      [
+        76,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_156471": [
+      [
+        3,
+        "HOOK"
+      ]
+    ],
+    "pxb_314452": [
+      [
+        3,
+        "SETUP"
+      ],
+      [
+        33,
+        "SETUP"
+      ],
+      [
+        40,
+        "SETUP"
+      ],
+      [
+        46,
+        "SETUP"
+      ],
+      [
+        59,
+        "SETUP"
+      ],
+      [
+        88,
+        "SETUP"
+      ]
+    ],
+    "pxb_336737": [
+      [
+        3,
+        "INCIDENT"
+      ],
+      [
+        24,
+        "INCIDENT"
+      ],
+      [
+        41,
+        "INCIDENT"
+      ],
+      [
+        51,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_531187": [
+      [
+        3,
+        "REVEAL"
+      ],
+      [
+        39,
+        "REVEAL"
+      ]
+    ],
+    "pxb_520545": [
+      [
+        3,
+        "PAYOFF"
+      ],
+      [
+        15,
+        "PAYOFF"
+      ],
+      [
+        25,
+        "PAYOFF"
+      ],
+      [
+        36,
+        "PAYOFF"
+      ],
+      [
+        47,
+        "PAYOFF"
+      ],
+      [
+        54,
+        "PAYOFF"
+      ],
+      [
+        81,
+        "PAYOFF"
+      ],
+      [
+        88,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_195693": [
+      [
+        3,
+        "CLIFFHANGER"
+      ],
+      [
+        18,
+        "CLIFFHANGER"
+      ],
+      [
+        45,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_111679": [
+      [
+        4,
+        "HOOK"
+      ]
+    ],
+    "pxb_348968": [
+      [
+        4,
+        "SETUP"
+      ],
+      [
+        11,
+        "SETUP"
+      ],
+      [
+        30,
+        "SETUP"
+      ],
+      [
+        51,
+        "SETUP"
+      ]
+    ],
+    "pxb_533049": [
+      [
+        4,
+        "INCIDENT"
+      ],
+      [
+        17,
+        "INCIDENT"
+      ],
+      [
+        40,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_150383": [
+      [
+        4,
+        "REVEAL"
+      ],
+      [
+        22,
+        "REVEAL"
+      ]
+    ],
+    "pxb_547924": [
+      [
+        4,
+        "PAYOFF"
+      ],
+      [
+        19,
+        "PAYOFF"
+      ],
+      [
+        26,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_399920": [
+      [
+        4,
+        "CLIFFHANGER"
+      ],
+      [
+        35,
+        "CLIFFHANGER"
+      ],
+      [
+        52,
+        "CLIFFHANGER"
+      ],
+      [
+        88,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_248021": [
+      [
+        5,
+        "HOOK"
+      ],
+      [
+        30,
+        "HOOK"
+      ],
+      [
+        45,
+        "HOOK"
+      ]
+    ],
+    "pxb_262413": [
+      [
+        5,
+        "SETUP"
+      ],
+      [
+        19,
+        "SETUP"
+      ],
+      [
+        27,
+        "SETUP"
+      ],
+      [
+        34,
+        "SETUP"
+      ],
+      [
+        43,
+        "SETUP"
+      ],
+      [
+        50,
+        "SETUP"
+      ],
+      [
+        64,
+        "SETUP"
+      ],
+      [
+        77,
+        "SETUP"
+      ]
+    ],
+    "pxb_96280": [
+      [
+        5,
+        "INCIDENT"
+      ],
+      [
+        18,
+        "INCIDENT"
+      ],
+      [
+        27,
+        "INCIDENT"
+      ],
+      [
+        37,
+        "INCIDENT"
+      ],
+      [
+        61,
+        "INCIDENT"
+      ],
+      [
+        67,
+        "INCIDENT"
+      ],
+      [
+        85,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_399795": [
+      [
+        5,
+        "REVEAL"
+      ]
+    ],
+    "pxb_189988": [
+      [
+        5,
+        "PAYOFF"
+      ],
+      [
+        39,
+        "PAYOFF"
+      ],
+      [
+        85,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_127988": [
+      [
+        5,
+        "CLIFFHANGER"
+      ],
+      [
+        57,
+        "CLIFFHANGER"
+      ],
+      [
+        75,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_384734": [
+      [
+        6,
+        "HOOK"
+      ],
+      [
+        40,
+        "HOOK"
+      ],
+      [
+        67,
+        "HOOK"
+      ],
+      [
+        80,
+        "HOOK"
+      ]
+    ],
+    "pxb_241540": [
+      [
+        6,
+        "SETUP"
+      ]
+    ],
+    "pxb_515856": [
+      [
+        6,
+        "INCIDENT"
+      ],
+      [
+        53,
+        "INCIDENT"
+      ],
+      [
+        89,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_397974": [
+      [
+        6,
+        "REVEAL"
+      ],
+      [
+        28,
+        "REVEAL"
+      ],
+      [
+        46,
+        "REVEAL"
+      ],
+      [
+        80,
+        "REVEAL"
+      ]
+    ],
+    "pxb_483770": [
+      [
+        6,
+        "PAYOFF"
+      ],
+      [
+        18,
+        "PAYOFF"
+      ],
+      [
+        24,
+        "PAYOFF"
+      ],
+      [
+        46,
+        "PAYOFF"
+      ],
+      [
+        61,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_349310": [
+      [
+        6,
+        "CLIFFHANGER"
+      ],
+      [
+        20,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_487020": [
+      [
+        7,
+        "HOOK"
+      ],
+      [
+        21,
+        "HOOK"
+      ],
+      [
+        78,
+        "HOOK"
+      ]
+    ],
+    "pxb_241539": [
+      [
+        7,
+        "SETUP"
+      ]
+    ],
+    "pxb_531687": [
+      [
+        7,
+        "INCIDENT"
+      ],
+      [
+        30,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_531311": [
+      [
+        7,
+        "REVEAL"
+      ],
+      [
+        44,
+        "REVEAL"
+      ],
+      [
+        64,
+        "REVEAL"
+      ],
+      [
+        81,
+        "REVEAL"
+      ]
+    ],
+    "pxb_529575": [
+      [
+        7,
+        "PAYOFF"
+      ],
+      [
+        16,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_500775": [
+      [
+        7,
+        "CLIFFHANGER"
+      ],
+      [
+        40,
+        "CLIFFHANGER"
+      ],
+      [
+        59,
+        "CLIFFHANGER"
+      ],
+      [
+        77,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_509732": [
+      [
+        8,
+        "HOOK"
+      ]
+    ],
+    "pxb_551603": [
+      [
+        8,
+        "SETUP"
+      ],
+      [
+        23,
+        "SETUP"
+      ],
+      [
+        58,
+        "SETUP"
+      ],
+      [
+        86,
+        "SETUP"
+      ]
+    ],
+    "pxb_519335": [
+      [
+        8,
+        "INCIDENT"
+      ],
+      [
+        50,
+        "INCIDENT"
+      ],
+      [
+        56,
+        "INCIDENT"
+      ],
+      [
+        62,
+        "INCIDENT"
+      ],
+      [
+        72,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_114676": [
+      [
+        8,
+        "REVEAL"
+      ]
+    ],
+    "pxb_542569": [
+      [
+        8,
+        "PAYOFF"
+      ],
+      [
+        23,
+        "PAYOFF"
+      ],
+      [
+        45,
+        "PAYOFF"
+      ],
+      [
+        68,
+        "PAYOFF"
+      ],
+      [
+        80,
+        "PAYOFF"
+      ],
+      [
+        86,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_294626": [
+      [
+        8,
+        "CLIFFHANGER"
+      ],
+      [
+        21,
+        "CLIFFHANGER"
+      ],
+      [
+        73,
+        "CLIFFHANGER"
+      ],
+      [
+        86,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_335499": [
+      [
+        9,
+        "HOOK"
+      ],
+      [
+        33,
+        "HOOK"
+      ],
+      [
+        65,
+        "HOOK"
+      ]
+    ],
+    "pxb_532028": [
+      [
+        9,
+        "SETUP"
+      ],
+      [
+        54,
+        "SETUP"
+      ],
+      [
+        62,
+        "SETUP"
+      ],
+      [
+        90,
+        "SETUP"
+      ]
+    ],
+    "pxb_465801": [
+      [
+        9,
+        "INCIDENT"
+      ],
+      [
+        15,
+        "INCIDENT"
+      ],
+      [
+        33,
+        "INCIDENT"
+      ],
+      [
+        71,
+        "INCIDENT"
+      ],
+      [
+        86,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_164588": [
+      [
+        9,
+        "REVEAL"
+      ]
+    ],
+    "pxb_483769": [
+      [
+        9,
+        "PAYOFF"
+      ],
+      [
+        17,
+        "PAYOFF"
+      ],
+      [
+        34,
+        "PAYOFF"
+      ],
+      [
+        64,
+        "PAYOFF"
+      ],
+      [
+        76,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_334678": [
+      [
+        9,
+        "CLIFFHANGER"
+      ],
+      [
+        23,
+        "CLIFFHANGER"
+      ],
+      [
+        41,
+        "CLIFFHANGER"
+      ],
+      [
+        62,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_349862": [
+      [
+        10,
+        "HOOK"
+      ],
+      [
+        32,
+        "HOOK"
+      ],
+      [
+        76,
+        "HOOK"
+      ],
+      [
+        90,
+        "HOOK"
+      ]
+    ],
+    "pxb_509762": [
+      [
+        10,
+        "INCIDENT"
+      ],
+      [
+        16,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_251262": [
+      [
+        10,
+        "REVEAL"
+      ],
+      [
+        26,
+        "REVEAL"
+      ],
+      [
+        48,
+        "REVEAL"
+      ],
+      [
+        58,
+        "REVEAL"
+      ]
+    ],
+    "pxb_144366": [
+      [
+        10,
+        "CLIFFHANGER"
+      ],
+      [
+        29,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_365075": [
+      [
+        11,
+        "HOOK"
+      ],
+      [
+        25,
+        "HOOK"
+      ],
+      [
+        37,
+        "HOOK"
+      ],
+      [
+        50,
+        "HOOK"
+      ],
+      [
+        63,
+        "HOOK"
+      ],
+      [
+        79,
+        "HOOK"
+      ]
+    ],
+    "pxb_533068": [
+      [
+        11,
+        "INCIDENT"
+      ],
+      [
+        23,
+        "INCIDENT"
+      ],
+      [
+        29,
+        "INCIDENT"
+      ],
+      [
+        36,
+        "INCIDENT"
+      ],
+      [
+        42,
+        "INCIDENT"
+      ],
+      [
+        60,
+        "INCIDENT"
+      ],
+      [
+        69,
+        "INCIDENT"
+      ],
+      [
+        82,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_186327": [
+      [
+        11,
+        "REVEAL"
+      ],
+      [
+        27,
+        "REVEAL"
+      ],
+      [
+        38,
+        "REVEAL"
+      ],
+      [
+        50,
+        "REVEAL"
+      ],
+      [
+        66,
+        "REVEAL"
+      ],
+      [
+        77,
+        "REVEAL"
+      ],
+      [
+        83,
+        "REVEAL"
+      ]
+    ],
+    "pxb_216330": [
+      [
+        11,
+        "PAYOFF"
+      ],
+      [
+        32,
+        "PAYOFF"
+      ],
+      [
+        57,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_412723": [
+      [
+        11,
+        "CLIFFHANGER"
+      ],
+      [
+        38,
+        "CLIFFHANGER"
+      ],
+      [
+        51,
+        "CLIFFHANGER"
+      ],
+      [
+        67,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_376385": [
+      [
+        12,
+        "HOOK"
+      ],
+      [
+        64,
+        "HOOK"
+      ]
+    ],
+    "pxb_347950": [
+      [
+        12,
+        "SETUP"
+      ],
+      [
+        24,
+        "SETUP"
+      ]
+    ],
+    "pxb_510787": [
+      [
+        12,
+        "INCIDENT"
+      ],
+      [
+        26,
+        "INCIDENT"
+      ],
+      [
+        80,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_547410": [
+      [
+        12,
+        "REVEAL"
+      ],
+      [
+        29,
+        "REVEAL"
+      ]
+    ],
+    "pxb_485935": [
+      [
+        12,
+        "PAYOFF"
+      ],
+      [
+        48,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_145206": [
+      [
+        12,
+        "CLIFFHANGER"
+      ],
+      [
+        31,
+        "CLIFFHANGER"
+      ],
+      [
+        49,
+        "CLIFFHANGER"
+      ],
+      [
+        74,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_375978": [
+      [
+        13,
+        "HOOK"
+      ],
+      [
+        26,
+        "HOOK"
+      ],
+      [
+        51,
+        "HOOK"
+      ]
+    ],
+    "pxb_355282": [
+      [
+        13,
+        "SETUP"
+      ],
+      [
+        56,
+        "SETUP"
+      ],
+      [
+        67,
+        "SETUP"
+      ]
+    ],
+    "pxb_540572": [
+      [
+        13,
+        "INCIDENT"
+      ],
+      [
+        49,
+        "INCIDENT"
+      ],
+      [
+        66,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_369116": [
+      [
+        13,
+        "REVEAL"
+      ],
+      [
+        20,
+        "REVEAL"
+      ],
+      [
+        54,
+        "REVEAL"
+      ],
+      [
+        84,
+        "REVEAL"
+      ]
+    ],
+    "pxb_411227": [
+      [
+        13,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_140461": [
+      [
+        13,
+        "CLIFFHANGER"
+      ],
+      [
+        47,
+        "CLIFFHANGER"
+      ],
+      [
+        63,
+        "CLIFFHANGER"
+      ],
+      [
+        87,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_218347": [
+      [
+        14,
+        "SETUP"
+      ],
+      [
+        45,
+        "SETUP"
+      ],
+      [
+        55,
+        "SETUP"
+      ],
+      [
+        80,
+        "SETUP"
+      ]
+    ],
+    "pxb_528964": [
+      [
+        14,
+        "INCIDENT"
+      ],
+      [
+        20,
+        "INCIDENT"
+      ],
+      [
+        46,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_260281": [
+      [
+        14,
+        "REVEAL"
+      ]
+    ],
+    "pxb_233869": [
+      [
+        14,
+        "PAYOFF"
+      ],
+      [
+        35,
+        "PAYOFF"
+      ],
+      [
+        59,
+        "PAYOFF"
+      ],
+      [
+        79,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_183335": [
+      [
+        14,
+        "CLIFFHANGER"
+      ],
+      [
+        53,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_254402": [
+      [
+        15,
+        "HOOK"
+      ],
+      [
+        27,
+        "HOOK"
+      ],
+      [
+        53,
+        "HOOK"
+      ],
+      [
+        71,
+        "HOOK"
+      ]
+    ],
+    "pxb_348915": [
+      [
+        15,
+        "SETUP"
+      ],
+      [
+        47,
+        "SETUP"
+      ]
+    ],
+    "pxb_304046": [
+      [
+        15,
+        "REVEAL"
+      ],
+      [
+        35,
+        "REVEAL"
+      ],
+      [
+        41,
+        "REVEAL"
+      ],
+      [
+        76,
+        "REVEAL"
+      ]
+    ],
+    "pxb_509444": [
+      [
+        15,
+        "CLIFFHANGER"
+      ],
+      [
+        30,
+        "CLIFFHANGER"
+      ],
+      [
+        50,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_375194": [
+      [
+        16,
+        "HOOK"
+      ],
+      [
+        36,
+        "HOOK"
+      ],
+      [
+        58,
+        "HOOK"
+      ],
+      [
+        75,
+        "HOOK"
+      ]
+    ],
+    "pxb_272718": [
+      [
+        16,
+        "SETUP"
+      ],
+      [
+        53,
+        "SETUP"
+      ],
+      [
+        76,
+        "SETUP"
+      ],
+      [
+        85,
+        "SETUP"
+      ]
+    ],
+    "pxb_313882": [
+      [
+        16,
+        "REVEAL"
+      ],
+      [
+        52,
+        "REVEAL"
+      ],
+      [
+        60,
+        "REVEAL"
+      ]
+    ],
+    "pxb_414175": [
+      [
+        16,
+        "CLIFFHANGER"
+      ],
+      [
+        34,
+        "CLIFFHANGER"
+      ],
+      [
+        66,
+        "CLIFFHANGER"
+      ],
+      [
+        83,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_442092": [
+      [
+        17,
+        "HOOK"
+      ]
+    ],
+    "pxb_549447": [
+      [
+        17,
+        "SETUP"
+      ],
+      [
+        26,
+        "SETUP"
+      ],
+      [
+        73,
+        "SETUP"
+      ]
+    ],
+    "pxb_348341": [
+      [
+        17,
+        "REVEAL"
+      ]
+    ],
+    "pxb_318638": [
+      [
+        17,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_381891": [
+      [
+        18,
+        "HOOK"
+      ],
+      [
+        48,
+        "HOOK"
+      ]
+    ],
+    "pxb_556239": [
+      [
+        18,
+        "SETUP"
+      ],
+      [
+        38,
+        "SETUP"
+      ],
+      [
+        57,
+        "SETUP"
+      ],
+      [
+        89,
+        "SETUP"
+      ]
+    ],
+    "pxb_235726": [
+      [
+        18,
+        "REVEAL"
+      ],
+      [
+        30,
+        "REVEAL"
+      ],
+      [
+        71,
+        "REVEAL"
+      ]
+    ],
+    "pxb_529577": [
+      [
+        19,
+        "HOOK"
+      ]
+    ],
+    "pxb_510765": [
+      [
+        19,
+        "INCIDENT"
+      ],
+      [
+        25,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_519894": [
+      [
+        19,
+        "REVEAL"
+      ],
+      [
+        34,
+        "REVEAL"
+      ],
+      [
+        69,
+        "REVEAL"
+      ]
+    ],
+    "pxb_494123": [
+      [
+        19,
+        "CLIFFHANGER"
+      ],
+      [
+        36,
+        "CLIFFHANGER"
+      ],
+      [
+        65,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_161660": [
+      [
+        20,
+        "HOOK"
+      ],
+      [
+        39,
+        "HOOK"
+      ]
+    ],
+    "pxb_376015": [
+      [
+        20,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_147342": [
+      [
+        21,
+        "INCIDENT"
+      ],
+      [
+        31,
+        "INCIDENT"
+      ],
+      [
+        45,
+        "INCIDENT"
+      ],
+      [
+        55,
+        "INCIDENT"
+      ],
+      [
+        65,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_549619": [
+      [
+        21,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_493137": [
+      [
+        22,
+        "HOOK"
+      ]
+    ],
+    "pxb_261834": [
+      [
+        22,
+        "SETUP"
+      ],
+      [
+        63,
+        "SETUP"
+      ],
+      [
+        81,
+        "SETUP"
+      ]
+    ],
+    "pxb_510768": [
+      [
+        22,
+        "INCIDENT"
+      ],
+      [
+        47,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_303708": [
+      [
+        22,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_347619": [
+      [
+        23,
+        "HOOK"
+      ],
+      [
+        61,
+        "HOOK"
+      ],
+      [
+        74,
+        "HOOK"
+      ]
+    ],
+    "pxb_143426": [
+      [
+        23,
+        "REVEAL"
+      ],
+      [
+        47,
+        "REVEAL"
+      ],
+      [
+        56,
+        "REVEAL"
+      ],
+      [
+        67,
+        "REVEAL"
+      ],
+      [
+        82,
+        "REVEAL"
+      ],
+      [
+        88,
+        "REVEAL"
+      ]
+    ],
+    "pxb_515472": [
+      [
+        24,
+        "HOOK"
+      ]
+    ],
+    "pxb_148280": [
+      [
+        24,
+        "REVEAL"
+      ],
+      [
+        37,
+        "REVEAL"
+      ],
+      [
+        85,
+        "REVEAL"
+      ]
+    ],
+    "pxb_136953": [
+      [
+        24,
+        "CLIFFHANGER"
+      ],
+      [
+        55,
+        "CLIFFHANGER"
+      ],
+      [
+        80,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_250841": [
+      [
+        25,
+        "SETUP"
+      ]
+    ],
+    "pxb_150934": [
+      [
+        25,
+        "REVEAL"
+      ]
+    ],
+    "pxb_173554": [
+      [
+        25,
+        "CLIFFHANGER"
+      ],
+      [
+        58,
+        "CLIFFHANGER"
+      ],
+      [
+        71,
+        "CLIFFHANGER"
+      ],
+      [
+        84,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_513870": [
+      [
+        26,
+        "CLIFFHANGER"
+      ],
+      [
+        46,
+        "CLIFFHANGER"
+      ],
+      [
+        68,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_329666": [
+      [
+        27,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_188867": [
+      [
+        27,
+        "CLIFFHANGER"
+      ],
+      [
+        39,
+        "CLIFFHANGER"
+      ],
+      [
+        82,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_175502": [
+      [
+        28,
+        "HOOK"
+      ]
+    ],
+    "pxb_552299": [
+      [
+        28,
+        "SETUP"
+      ],
+      [
+        35,
+        "SETUP"
+      ],
+      [
+        60,
+        "SETUP"
+      ],
+      [
+        79,
+        "SETUP"
+      ]
+    ],
+    "pxb_528967": [
+      [
+        28,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_491491": [
+      [
+        28,
+        "PAYOFF"
+      ],
+      [
+        41,
+        "PAYOFF"
+      ],
+      [
+        56,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_512251": [
+      [
+        28,
+        "CLIFFHANGER"
+      ],
+      [
+        44,
+        "CLIFFHANGER"
+      ],
+      [
+        56,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_251474": [
+      [
+        29,
+        "HOOK"
+      ]
+    ],
+    "pxb_212488": [
+      [
+        29,
+        "SETUP"
+      ],
+      [
+        52,
+        "SETUP"
+      ],
+      [
+        70,
+        "SETUP"
+      ],
+      [
+        84,
+        "SETUP"
+      ]
+    ],
+    "pxb_490012": [
+      [
+        29,
+        "PAYOFF"
+      ],
+      [
+        44,
+        "PAYOFF"
+      ],
+      [
+        60,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_313611": [
+      [
+        31,
+        "HOOK"
+      ],
+      [
+        81,
+        "HOOK"
+      ]
+    ],
+    "pxb_522474": [
+      [
+        31,
+        "SETUP"
+      ],
+      [
+        41,
+        "SETUP"
+      ],
+      [
+        48,
+        "SETUP"
+      ]
+    ],
+    "pxb_363000": [
+      [
+        31,
+        "REVEAL"
+      ]
+    ],
+    "pxb_205576": [
+      [
+        31,
+        "PAYOFF"
+      ],
+      [
+        37,
+        "PAYOFF"
+      ],
+      [
+        65,
+        "PAYOFF"
+      ],
+      [
+        75,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_532029": [
+      [
+        32,
+        "SETUP"
+      ],
+      [
+        49,
+        "SETUP"
+      ],
+      [
+        66,
+        "SETUP"
+      ]
+    ],
+    "pxb_528948": [
+      [
+        32,
+        "INCIDENT"
+      ],
+      [
+        54,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_262444": [
+      [
+        32,
+        "REVEAL"
+      ],
+      [
+        43,
+        "REVEAL"
+      ],
+      [
+        49,
+        "REVEAL"
+      ],
+      [
+        63,
+        "REVEAL"
+      ],
+      [
+        90,
+        "REVEAL"
+      ]
+    ],
+    "pxb_131185": [
+      [
+        32,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_281733": [
+      [
+        33,
+        "REVEAL"
+      ],
+      [
+        57,
+        "REVEAL"
+      ]
+    ],
+    "pxb_252953": [
+      [
+        33,
+        "PAYOFF"
+      ],
+      [
+        73,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_519513": [
+      [
+        33,
+        "CLIFFHANGER"
+      ],
+      [
+        48,
+        "CLIFFHANGER"
+      ],
+      [
+        81,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_257663": [
+      [
+        34,
+        "HOOK"
+      ],
+      [
+        83,
+        "HOOK"
+      ]
+    ],
+    "pxb_413495": [
+      [
+        34,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_153649": [
+      [
+        35,
+        "HOOK"
+      ],
+      [
+        70,
+        "HOOK"
+      ]
+    ],
+    "pxb_539552": [
+      [
+        35,
+        "INCIDENT"
+      ],
+      [
+        58,
+        "INCIDENT"
+      ],
+      [
+        87,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_463244": [
+      [
+        36,
+        "SETUP"
+      ],
+      [
+        68,
+        "SETUP"
+      ],
+      [
+        75,
+        "SETUP"
+      ]
+    ],
+    "pxb_322008": [
+      [
+        36,
+        "REVEAL"
+      ],
+      [
+        55,
+        "REVEAL"
+      ]
+    ],
+    "pxb_509806": [
+      [
+        37,
+        "CLIFFHANGER"
+      ],
+      [
+        61,
+        "CLIFFHANGER"
+      ],
+      [
+        85,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_292625": [
+      [
+        38,
+        "HOOK"
+      ],
+      [
+        84,
+        "HOOK"
+      ]
+    ],
+    "pxb_535025": [
+      [
+        38,
+        "INCIDENT"
+      ],
+      [
+        52,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_527472": [
+      [
+        38,
+        "PAYOFF"
+      ],
+      [
+        55,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_310090": [
+      [
+        39,
+        "SETUP"
+      ]
+    ],
+    "pxb_515839": [
+      [
+        39,
+        "INCIDENT"
+      ],
+      [
+        48,
+        "INCIDENT"
+      ],
+      [
+        76,
+        "INCIDENT"
+      ],
+      [
+        83,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_516088": [
+      [
+        40,
+        "REVEAL"
+      ],
+      [
+        53,
+        "REVEAL"
+      ],
+      [
+        78,
+        "REVEAL"
+      ],
+      [
+        87,
+        "REVEAL"
+      ]
+    ],
+    "pxb_273839": [
+      [
+        40,
+        "PAYOFF"
+      ],
+      [
+        51,
+        "PAYOFF"
+      ],
+      [
+        58,
+        "PAYOFF"
+      ],
+      [
+        83,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_488123": [
+      [
+        41,
+        "HOOK"
+      ],
+      [
+        62,
+        "HOOK"
+      ],
+      [
+        87,
+        "HOOK"
+      ]
+    ],
+    "pxb_252647": [
+      [
+        42,
+        "HOOK"
+      ],
+      [
+        59,
+        "HOOK"
+      ]
+    ],
+    "pxb_490009": [
+      [
+        42,
+        "SETUP"
+      ]
+    ],
+    "pxb_143076": [
+      [
+        42,
+        "REVEAL"
+      ],
+      [
+        59,
+        "REVEAL"
+      ]
+    ],
+    "pxb_445494": [
+      [
+        42,
+        "PAYOFF"
+      ],
+      [
+        82,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_305672": [
+      [
+        42,
+        "CLIFFHANGER"
+      ],
+      [
+        54,
+        "CLIFFHANGER"
+      ],
+      [
+        72,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_375570": [
+      [
+        43,
+        "HOOK"
+      ],
+      [
+        56,
+        "HOOK"
+      ]
+    ],
+    "pxb_423741": [
+      [
+        43,
+        "INCIDENT"
+      ],
+      [
+        57,
+        "INCIDENT"
+      ],
+      [
+        73,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_497356": [
+      [
+        43,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_535034": [
+      [
+        43,
+        "CLIFFHANGER"
+      ],
+      [
+        70,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_303988": [
+      [
+        44,
+        "SETUP"
+      ]
+    ],
+    "pxb_514614": [
+      [
+        44,
+        "INCIDENT"
+      ],
+      [
+        81,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_146536": [
+      [
+        46,
+        "HOOK"
+      ]
+    ],
+    "pxb_517820": [
+      [
+        47,
+        "HOOK"
+      ],
+      [
+        66,
+        "HOOK"
+      ],
+      [
+        85,
+        "HOOK"
+      ]
+    ],
+    "pxb_364864": [
+      [
+        49,
+        "HOOK"
+      ]
+    ],
+    "pxb_483771": [
+      [
+        49,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_487334": [
+      [
+        50,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_148246": [
+      [
+        51,
+        "REVEAL"
+      ],
+      [
+        79,
+        "REVEAL"
+      ]
+    ],
+    "pxb_8697": [
+      [
+        52,
+        "HOOK"
+      ]
+    ],
+    "pxb_519649": [
+      [
+        52,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_502650": [
+      [
+        53,
+        "PAYOFF"
+      ],
+      [
+        70,
+        "PAYOFF"
+      ],
+      [
+        77,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_320439": [
+      [
+        54,
+        "HOOK"
+      ]
+    ],
+    "pxb_333955": [
+      [
+        57,
+        "HOOK"
+      ],
+      [
+        68,
+        "HOOK"
+      ],
+      [
+        86,
+        "HOOK"
+      ]
+    ],
+    "pxb_528954": [
+      [
+        59,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_437414": [
+      [
+        60,
+        "CLIFFHANGER"
+      ],
+      [
+        79,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_510286": [
+      [
+        61,
+        "SETUP"
+      ],
+      [
+        71,
+        "SETUP"
+      ],
+      [
+        78,
+        "SETUP"
+      ],
+      [
+        87,
+        "SETUP"
+      ]
+    ],
+    "pxb_231511": [
+      [
+        61,
+        "REVEAL"
+      ],
+      [
+        89,
+        "REVEAL"
+      ]
+    ],
+    "pxb_252409": [
+      [
+        62,
+        "REVEAL"
+      ]
+    ],
+    "pxb_264657": [
+      [
+        62,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_152569": [
+      [
+        63,
+        "INCIDENT"
+      ],
+      [
+        84,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_215974": [
+      [
+        63,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_542941": [
+      [
+        64,
+        "INCIDENT"
+      ],
+      [
+        88,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_313157": [
+      [
+        65,
+        "REVEAL"
+      ],
+      [
+        73,
+        "REVEAL"
+      ]
+    ],
+    "pxb_233751": [
+      [
+        66,
+        "PAYOFF"
+      ],
+      [
+        72,
+        "PAYOFF"
+      ],
+      [
+        90,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_501447": [
+      [
+        67,
+        "PAYOFF"
+      ],
+      [
+        87,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_474172": [
+      [
+        68,
+        "INCIDENT"
+      ],
+      [
+        77,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_110327": [
+      [
+        68,
+        "REVEAL"
+      ]
+    ],
+    "pxb_539081": [
+      [
+        69,
+        "HOOK"
+      ],
+      [
+        82,
+        "HOOK"
+      ]
+    ],
+    "pxb_349852": [
+      [
+        69,
+        "CLIFFHANGER"
+      ],
+      [
+        89,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_532082": [
+      [
+        70,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_483190": [
+      [
+        70,
+        "REVEAL"
+      ],
+      [
+        86,
+        "REVEAL"
+      ]
+    ],
+    "pxb_268536": [
+      [
+        71,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_529854": [
+      [
+        72,
+        "HOOK"
+      ]
+    ],
+    "pxb_540618": [
+      [
+        72,
+        "SETUP"
+      ],
+      [
+        83,
+        "SETUP"
+      ]
+    ],
+    "pxb_373164": [
+      [
+        73,
+        "HOOK"
+      ],
+      [
+        89,
+        "HOOK"
+      ]
+    ],
+    "pxb_11014": [
+      [
+        74,
+        "SETUP"
+      ]
+    ],
+    "pxb_474165": [
+      [
+        74,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_482297": [
+      [
+        74,
+        "REVEAL"
+      ]
+    ],
+    "pxb_232341": [
+      [
+        74,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_460378": [
+      [
+        75,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_112785": [
+      [
+        75,
+        "REVEAL"
+      ]
+    ],
+    "pxb_460375": [
+      [
+        78,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_508961": [
+      [
+        78,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_312045": [
+      [
+        78,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_510791": [
+      [
+        79,
+        "INCIDENT"
+      ],
+      [
+        90,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_365479": [
+      [
+        82,
+        "SETUP"
+      ]
+    ],
+    "pxb_259949": [
+      [
+        84,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_496878": [
+      [
+        89,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_174707": [
+      [
+        90,
+        "CLIFFHANGER"
+      ]
+    ]
+  },
+  "sfx": {
+    "pxb_sfx_499644": [
+      [
+        1,
+        "HOOK"
+      ],
+      [
+        10,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_7096": [
+      [
+        1,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_38391": [
+      [
+        1,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_7542": [
+      [
+        1,
+        "REVEAL"
+      ],
+      [
+        62,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_294195": [
+      [
+        1,
+        "PAYOFF"
+      ],
+      [
+        15,
+        "PAYOFF"
+      ],
+      [
+        25,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_350398": [
+      [
+        1,
+        "CLIFFHANGER"
+      ],
+      [
+        23,
+        "CLIFFHANGER"
+      ],
+      [
+        71,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_8186": [
+      [
+        2,
+        "HOOK"
+      ],
+      [
+        60,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_515253": [
+      [
+        2,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_192119": [
+      [
+        2,
+        "INCIDENT"
+      ],
+      [
+        51,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_487898": [
+      [
+        2,
+        "REVEAL"
+      ],
+      [
+        7,
+        "CLIFFHANGER"
+      ],
+      [
+        63,
+        "REVEAL"
+      ],
+      [
+        90,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_463217": [
+      [
+        2,
+        "PAYOFF"
+      ],
+      [
+        7,
+        "HOOK"
+      ],
+      [
+        40,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_293317": [
+      [
+        2,
+        "CLIFFHANGER"
+      ],
+      [
+        69,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_487667": [
+      [
+        3,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_234019": [
+      [
+        3,
+        "SETUP"
+      ],
+      [
+        56,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_511316": [
+      [
+        3,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_74903": [
+      [
+        3,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_72277": [
+      [
+        3,
+        "PAYOFF"
+      ],
+      [
+        85,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_351092": [
+      [
+        3,
+        "CLIFFHANGER"
+      ],
+      [
+        21,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_525011": [
+      [
+        4,
+        "HOOK"
+      ],
+      [
+        40,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_394355": [
+      [
+        4,
+        "SETUP"
+      ],
+      [
+        54,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_71699": [
+      [
+        4,
+        "INCIDENT"
+      ],
+      [
+        50,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_7133": [
+      [
+        4,
+        "REVEAL"
+      ],
+      [
+        22,
+        "REVEAL"
+      ],
+      [
+        27,
+        "REVEAL"
+      ],
+      [
+        38,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_222359": [
+      [
+        4,
+        "PAYOFF"
+      ],
+      [
+        31,
+        "PAYOFF"
+      ],
+      [
+        53,
+        "SETUP"
+      ],
+      [
+        70,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_472364": [
+      [
+        4,
+        "CLIFFHANGER"
+      ],
+      [
+        19,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_499661": [
+      [
+        5,
+        "HOOK"
+      ],
+      [
+        78,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_32948": [
+      [
+        5,
+        "SETUP"
+      ],
+      [
+        76,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_47595": [
+      [
+        5,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_80299": [
+      [
+        5,
+        "REVEAL"
+      ],
+      [
+        41,
+        "REVEAL"
+      ],
+      [
+        63,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_401018": [
+      [
+        5,
+        "PAYOFF"
+      ],
+      [
+        11,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_72946": [
+      [
+        5,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_114710": [
+      [
+        6,
+        "HOOK"
+      ],
+      [
+        39,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_522599": [
+      [
+        6,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_225103": [
+      [
+        6,
+        "INCIDENT"
+      ],
+      [
+        61,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_6299": [
+      [
+        6,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_54919": [
+      [
+        6,
+        "PAYOFF"
+      ],
+      [
+        50,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_359873": [
+      [
+        6,
+        "CLIFFHANGER"
+      ],
+      [
+        49,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_309633": [
+      [
+        7,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_103817": [
+      [
+        7,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_410565": [
+      [
+        7,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_6811": [
+      [
+        7,
+        "PAYOFF"
+      ],
+      [
+        12,
+        "INCIDENT"
+      ],
+      [
+        33,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_386134": [
+      [
+        8,
+        "HOOK"
+      ],
+      [
+        66,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_297502": [
+      [
+        8,
+        "SETUP"
+      ],
+      [
+        59,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_26822": [
+      [
+        8,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_33931": [
+      [
+        8,
+        "REVEAL"
+      ],
+      [
+        59,
+        "REVEAL"
+      ],
+      [
+        75,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_67325": [
+      [
+        8,
+        "PAYOFF"
+      ],
+      [
+        49,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_543183": [
+      [
+        8,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_384631": [
+      [
+        9,
+        "HOOK"
+      ],
+      [
+        72,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_356124": [
+      [
+        9,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_401711": [
+      [
+        9,
+        "INCIDENT"
+      ],
+      [
+        64,
+        "REVEAL"
+      ],
+      [
+        72,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_14632": [
+      [
+        9,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_268525": [
+      [
+        9,
+        "PAYOFF"
+      ],
+      [
+        66,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_25194": [
+      [
+        9,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_32231": [
+      [
+        10,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_6091": [
+      [
+        10,
+        "INCIDENT"
+      ],
+      [
+        48,
+        "INCIDENT"
+      ],
+      [
+        77,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_99333": [
+      [
+        10,
+        "REVEAL"
+      ],
+      [
+        57,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_238557": [
+      [
+        10,
+        "PAYOFF"
+      ],
+      [
+        26,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_88027": [
+      [
+        10,
+        "CLIFFHANGER"
+      ],
+      [
+        84,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_376875": [
+      [
+        11,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_356121": [
+      [
+        11,
+        "SETUP"
+      ],
+      [
+        67,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_26118": [
+      [
+        11,
+        "REVEAL"
+      ],
+      [
+        79,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_70540": [
+      [
+        11,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_515269": [
+      [
+        11,
+        "CLIFFHANGER"
+      ],
+      [
+        36,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_437312": [
+      [
+        12,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_145472": [
+      [
+        12,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_6169": [
+      [
+        12,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_350418": [
+      [
+        12,
+        "PAYOFF"
+      ],
+      [
+        38,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_359871": [
+      [
+        12,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_252628": [
+      [
+        13,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_310284": [
+      [
+        13,
+        "SETUP"
+      ],
+      [
+        78,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_533017": [
+      [
+        13,
+        "INCIDENT"
+      ],
+      [
+        37,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_190275": [
+      [
+        13,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_427409": [
+      [
+        13,
+        "PAYOFF"
+      ],
+      [
+        82,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_6777": [
+      [
+        13,
+        "CLIFFHANGER"
+      ],
+      [
+        19,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_73797": [
+      [
+        14,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_365610": [
+      [
+        14,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_410564": [
+      [
+        14,
+        "INCIDENT"
+      ],
+      [
+        65,
+        "REVEAL"
+      ],
+      [
+        85,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_74125": [
+      [
+        14,
+        "REVEAL"
+      ],
+      [
+        43,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_109591": [
+      [
+        14,
+        "PAYOFF"
+      ],
+      [
+        37,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_27873": [
+      [
+        14,
+        "CLIFFHANGER"
+      ],
+      [
+        31,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_376889": [
+      [
+        15,
+        "HOOK"
+      ],
+      [
+        35,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_49208": [
+      [
+        15,
+        "SETUP"
+      ],
+      [
+        55,
+        "PAYOFF"
+      ],
+      [
+        84,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_263962": [
+      [
+        15,
+        "INCIDENT"
+      ],
+      [
+        67,
+        "INCIDENT"
+      ],
+      [
+        78,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_35582": [
+      [
+        15,
+        "REVEAL"
+      ],
+      [
+        39,
+        "REVEAL"
+      ],
+      [
+        77,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_105368": [
+      [
+        15,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_94368": [
+      [
+        16,
+        "HOOK"
+      ],
+      [
+        43,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_467488": [
+      [
+        16,
+        "SETUP"
+      ],
+      [
+        35,
+        "PAYOFF"
+      ],
+      [
+        45,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_212192": [
+      [
+        16,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_241047": [
+      [
+        16,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_522913": [
+      [
+        16,
+        "PAYOFF"
+      ],
+      [
+        64,
+        "PAYOFF"
+      ],
+      [
+        89,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_256873": [
+      [
+        16,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_515272": [
+      [
+        17,
+        "HOOK"
+      ],
+      [
+        30,
+        "CLIFFHANGER"
+      ],
+      [
+        69,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_62956": [
+      [
+        17,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_408652": [
+      [
+        17,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_32843": [
+      [
+        17,
+        "REVEAL"
+      ],
+      [
+        52,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_233883": [
+      [
+        17,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_59446": [
+      [
+        17,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_383019": [
+      [
+        18,
+        "HOOK"
+      ],
+      [
+        86,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_493266": [
+      [
+        18,
+        "SETUP"
+      ],
+      [
+        85,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_54250": [
+      [
+        18,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_24401": [
+      [
+        18,
+        "REVEAL"
+      ],
+      [
+        68,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_23982": [
+      [
+        18,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_77929": [
+      [
+        18,
+        "CLIFFHANGER"
+      ],
+      [
+        78,
+        "CLIFFHANGER"
+      ],
+      [
+        84,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_376880": [
+      [
+        19,
+        "HOOK"
+      ],
+      [
+        31,
+        "HOOK"
+      ],
+      [
+        46,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_522908": [
+      [
+        19,
+        "SETUP"
+      ],
+      [
+        37,
+        "SETUP"
+      ],
+      [
+        45,
+        "CLIFFHANGER"
+      ],
+      [
+        87,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_60909": [
+      [
+        19,
+        "INCIDENT"
+      ],
+      [
+        34,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_515270": [
+      [
+        19,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_389752": [
+      [
+        20,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_515266": [
+      [
+        20,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_454842": [
+      [
+        20,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_79313": [
+      [
+        20,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_20437": [
+      [
+        20,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_6310": [
+      [
+        20,
+        "CLIFFHANGER"
+      ],
+      [
+        41,
+        "CLIFFHANGER"
+      ],
+      [
+        83,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_124463": [
+      [
+        21,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_73449": [
+      [
+        21,
+        "SETUP"
+      ],
+      [
+        38,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_100833": [
+      [
+        21,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_7806": [
+      [
+        21,
+        "PAYOFF"
+      ],
+      [
+        52,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_96624": [
+      [
+        21,
+        "CLIFFHANGER"
+      ],
+      [
+        55,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_548067": [
+      [
+        22,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_33177": [
+      [
+        22,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_46837": [
+      [
+        22,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_522910": [
+      [
+        22,
+        "PAYOFF"
+      ],
+      [
+        58,
+        "SETUP"
+      ],
+      [
+        67,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_318131": [
+      [
+        22,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_379215": [
+      [
+        23,
+        "HOOK"
+      ],
+      [
+        58,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_131023": [
+      [
+        23,
+        "SETUP"
+      ],
+      [
+        88,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_337172": [
+      [
+        23,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_14138": [
+      [
+        23,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_257596": [
+      [
+        23,
+        "PAYOFF"
+      ],
+      [
+        90,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_67521": [
+      [
+        24,
+        "HOOK"
+      ],
+      [
+        35,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_28287": [
+      [
+        24,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_530189": [
+      [
+        24,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_472369": [
+      [
+        24,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_445023": [
+      [
+        24,
+        "PAYOFF"
+      ],
+      [
+        74,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_61168": [
+      [
+        24,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_382717": [
+      [
+        25,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_253101": [
+      [
+        25,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_160119": [
+      [
+        25,
+        "REVEAL"
+      ],
+      [
+        44,
+        "REVEAL"
+      ],
+      [
+        71,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_149496": [
+      [
+        25,
+        "PAYOFF"
+      ],
+      [
+        44,
+        "PAYOFF"
+      ],
+      [
+        63,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_237603": [
+      [
+        25,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_16705": [
+      [
+        26,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_35722": [
+      [
+        26,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_351569": [
+      [
+        26,
+        "REVEAL"
+      ],
+      [
+        55,
+        "REVEAL"
+      ],
+      [
+        87,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_522611": [
+      [
+        26,
+        "PAYOFF"
+      ],
+      [
+        43,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_444193": [
+      [
+        26,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_522603": [
+      [
+        27,
+        "HOOK"
+      ],
+      [
+        66,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_114709": [
+      [
+        27,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_160445": [
+      [
+        27,
+        "INCIDENT"
+      ],
+      [
+        52,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_499636": [
+      [
+        27,
+        "PAYOFF"
+      ],
+      [
+        61,
+        "SETUP"
+      ],
+      [
+        81,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_336784": [
+      [
+        27,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_121673": [
+      [
+        28,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_257180": [
+      [
+        28,
+        "SETUP"
+      ],
+      [
+        56,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_99382": [
+      [
+        28,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_17443": [
+      [
+        28,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_135533": [
+      [
+        28,
+        "PAYOFF"
+      ],
+      [
+        89,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_6834": [
+      [
+        28,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_537875": [
+      [
+        29,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_65970": [
+      [
+        29,
+        "SETUP"
+      ],
+      [
+        80,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_452856": [
+      [
+        29,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_533246": [
+      [
+        29,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_62329": [
+      [
+        29,
+        "PAYOFF"
+      ],
+      [
+        79,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_359870": [
+      [
+        29,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_515984": [
+      [
+        30,
+        "HOOK"
+      ],
+      [
+        36,
+        "HOOK"
+      ],
+      [
+        51,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_113213": [
+      [
+        30,
+        "SETUP"
+      ],
+      [
+        61,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_505140": [
+      [
+        30,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_427401": [
+      [
+        30,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_437321": [
+      [
+        30,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_87977": [
+      [
+        31,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_401712": [
+      [
+        31,
+        "INCIDENT"
+      ],
+      [
+        76,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_255173": [
+      [
+        31,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_515985": [
+      [
+        32,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_457954": [
+      [
+        32,
+        "SETUP"
+      ],
+      [
+        68,
+        "CLIFFHANGER"
+      ],
+      [
+        88,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_377310": [
+      [
+        32,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_63925": [
+      [
+        32,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_240503": [
+      [
+        32,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_94164": [
+      [
+        32,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_321628": [
+      [
+        33,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_120455": [
+      [
+        33,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_14794": [
+      [
+        33,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_86744": [
+      [
+        33,
+        "REVEAL"
+      ],
+      [
+        49,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_84495": [
+      [
+        33,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_511325": [
+      [
+        34,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_406639": [
+      [
+        34,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_541949": [
+      [
+        34,
+        "REVEAL"
+      ],
+      [
+        81,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_318856": [
+      [
+        34,
+        "PAYOFF"
+      ],
+      [
+        57,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_515982": [
+      [
+        34,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_287352": [
+      [
+        35,
+        "INCIDENT"
+      ],
+      [
+        72,
+        "INCIDENT"
+      ],
+      [
+        86,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_192080": [
+      [
+        35,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_248534": [
+      [
+        35,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_6354": [
+      [
+        36,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_21878": [
+      [
+        36,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_352062": [
+      [
+        36,
+        "REVEAL"
+      ],
+      [
+        44,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_437313": [
+      [
+        36,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_5993": [
+      [
+        37,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_202980": [
+      [
+        37,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_101191": [
+      [
+        37,
+        "CLIFFHANGER"
+      ],
+      [
+        67,
+        "CLIFFHANGER"
+      ],
+      [
+        90,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_397989": [
+      [
+        38,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_398653": [
+      [
+        38,
+        "PAYOFF"
+      ],
+      [
+        68,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_436096": [
+      [
+        38,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_543069": [
+      [
+        39,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_461637": [
+      [
+        39,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_84775": [
+      [
+        39,
+        "PAYOFF"
+      ],
+      [
+        46,
+        "PAYOFF"
+      ],
+      [
+        89,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_85723": [
+      [
+        39,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_60601": [
+      [
+        40,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_449840": [
+      [
+        40,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_423673": [
+      [
+        40,
+        "PAYOFF"
+      ],
+      [
+        68,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_305449": [
+      [
+        40,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_384632": [
+      [
+        41,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_97973": [
+      [
+        41,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_504035": [
+      [
+        41,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_331497": [
+      [
+        41,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_433005": [
+      [
+        42,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_6160": [
+      [
+        42,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_535011": [
+      [
+        42,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_33242": [
+      [
+        42,
+        "REVEAL"
+      ],
+      [
+        81,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_264451": [
+      [
+        42,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_58909": [
+      [
+        42,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_6030": [
+      [
+        43,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_196083": [
+      [
+        43,
+        "PAYOFF"
+      ],
+      [
+        51,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_499654": [
+      [
+        43,
+        "CLIFFHANGER"
+      ],
+      [
+        68,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_384629": [
+      [
+        44,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_402331": [
+      [
+        44,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_499338": [
+      [
+        44,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_368766": [
+      [
+        45,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_228107": [
+      [
+        45,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_362053": [
+      [
+        45,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_80298": [
+      [
+        45,
+        "REVEAL"
+      ],
+      [
+        51,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_7020": [
+      [
+        46,
+        "SETUP"
+      ],
+      [
+        65,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_410556": [
+      [
+        46,
+        "INCIDENT"
+      ],
+      [
+        80,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_66071": [
+      [
+        46,
+        "REVEAL"
+      ],
+      [
+        61,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_270057": [
+      [
+        46,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_521194": [
+      [
+        47,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_404150": [
+      [
+        47,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_80964": [
+      [
+        47,
+        "INCIDENT"
+      ],
+      [
+        74,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_94457": [
+      [
+        47,
+        "REVEAL"
+      ],
+      [
+        73,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_357979": [
+      [
+        47,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_73085": [
+      [
+        47,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_161021": [
+      [
+        48,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_308746": [
+      [
+        48,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_407826": [
+      [
+        48,
+        "REVEAL"
+      ],
+      [
+        88,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_482876": [
+      [
+        48,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_306031": [
+      [
+        48,
+        "CLIFFHANGER"
+      ],
+      [
+        54,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_337279": [
+      [
+        49,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_467486": [
+      [
+        49,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_242421": [
+      [
+        49,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_318047": [
+      [
+        50,
+        "HOOK"
+      ],
+      [
+        67,
+        "HOOK"
+      ],
+      [
+        73,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_467271": [
+      [
+        50,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_528620": [
+      [
+        50,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_64607": [
+      [
+        50,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_307026": [
+      [
+        51,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_274373": [
+      [
+        51,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_18750": [
+      [
+        52,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_61766": [
+      [
+        52,
+        "REVEAL"
+      ],
+      [
+        86,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_310285": [
+      [
+        52,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_132614": [
+      [
+        53,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_32956": [
+      [
+        53,
+        "INCIDENT"
+      ],
+      [
+        71,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_418603": [
+      [
+        53,
+        "REVEAL"
+      ],
+      [
+        59,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_423993": [
+      [
+        53,
+        "PAYOFF"
+      ],
+      [
+        59,
+        "SETUP"
+      ],
+      [
+        74,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_542636": [
+      [
+        53,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_338980": [
+      [
+        54,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_294201": [
+      [
+        54,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_343686": [
+      [
+        54,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_110508": [
+      [
+        54,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_192165": [
+      [
+        55,
+        "HOOK"
+      ],
+      [
+        75,
+        "HOOK"
+      ],
+      [
+        81,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_530199": [
+      [
+        55,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_277573": [
+      [
+        55,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_535012": [
+      [
+        56,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_336285": [
+      [
+        56,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_309634": [
+      [
+        56,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_19792": [
+      [
+        56,
+        "CLIFFHANGER"
+      ],
+      [
+        82,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_257182": [
+      [
+        57,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_305771": [
+      [
+        57,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_100425": [
+      [
+        57,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_14356": [
+      [
+        57,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_191992": [
+      [
+        58,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_96879": [
+      [
+        58,
+        "INCIDENT"
+      ],
+      [
+        63,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_7543": [
+      [
+        58,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_515977": [
+      [
+        58,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_512544": [
+      [
+        59,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_256872": [
+      [
+        59,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_537876": [
+      [
+        60,
+        "SETUP"
+      ],
+      [
+        75,
+        "SETUP"
+      ],
+      [
+        84,
+        "HOOK"
+      ],
+      [
+        90,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_62038": [
+      [
+        60,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_71700": [
+      [
+        60,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_272604": [
+      [
+        60,
+        "PAYOFF"
+      ],
+      [
+        82,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_127359": [
+      [
+        60,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_433006": [
+      [
+        61,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_487677": [
+      [
+        61,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_152641": [
+      [
+        62,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_528619": [
+      [
+        62,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_32140": [
+      [
+        62,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_323077": [
+      [
+        62,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_99265": [
+      [
+        62,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_516370": [
+      [
+        63,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_550289": [
+      [
+        63,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_405447": [
+      [
+        64,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_14759": [
+      [
+        64,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_14431": [
+      [
+        64,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_14664": [
+      [
+        64,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_8050": [
+      [
+        65,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_86963": [
+      [
+        65,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_402289": [
+      [
+        65,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_50499": [
+      [
+        65,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_137135": [
+      [
+        66,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_436097": [
+      [
+        66,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_350417": [
+      [
+        66,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_543177": [
+      [
+        67,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_530786": [
+      [
+        68,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_110211": [
+      [
+        69,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_47114": [
+      [
+        69,
+        "INCIDENT"
+      ],
+      [
+        83,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_181289": [
+      [
+        69,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_178209": [
+      [
+        69,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_145345": [
+      [
+        70,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_109590": [
+      [
+        70,
+        "SETUP"
+      ],
+      [
+        75,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_6823": [
+      [
+        70,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_147341": [
+      [
+        70,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_410547": [
+      [
+        70,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_285209": [
+      [
+        71,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_14968": [
+      [
+        71,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_339502": [
+      [
+        71,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_24652": [
+      [
+        72,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_75635": [
+      [
+        72,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_99267": [
+      [
+        72,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_12809": [
+      [
+        73,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_533016": [
+      [
+        73,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_522602": [
+      [
+        73,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_376511": [
+      [
+        73,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_475229": [
+      [
+        74,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_478386": [
+      [
+        74,
+        "PAYOFF"
+      ],
+      [
+        82,
+        "SETUP"
+      ],
+      [
+        87,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_17869": [
+      [
+        74,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_377311": [
+      [
+        75,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_49474": [
+      [
+        75,
+        "CLIFFHANGER"
+      ],
+      [
+        89,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_136832": [
+      [
+        76,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_456388": [
+      [
+        76,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_528618": [
+      [
+        76,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_66350": [
+      [
+        76,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_45461": [
+      [
+        77,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_390300": [
+      [
+        77,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_323078": [
+      [
+        77,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_541948": [
+      [
+        77,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_403177": [
+      [
+        78,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_410608": [
+      [
+        78,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_444805": [
+      [
+        79,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_114694": [
+      [
+        79,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_253100": [
+      [
+        79,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_543202": [
+      [
+        79,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_474057": [
+      [
+        80,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_13847": [
+      [
+        80,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_323079": [
+      [
+        80,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_274372": [
+      [
+        80,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_382709": [
+      [
+        81,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_150861": [
+      [
+        81,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_247449": [
+      [
+        82,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_335492": [
+      [
+        82,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_522912": [
+      [
+        83,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_422409": [
+      [
+        83,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_52908": [
+      [
+        83,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_47678": [
+      [
+        83,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_333590": [
+      [
+        84,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_25941": [
+      [
+        84,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_405445": [
+      [
+        85,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_69399": [
+      [
+        85,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_384968": [
+      [
+        85,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_46804": [
+      [
+        86,
+        "SETUP"
+      ]
+    ],
+    "pxb_sfx_79107": [
+      [
+        86,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_390294": [
+      [
+        86,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_437305": [
+      [
+        87,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_193087": [
+      [
+        87,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_273945": [
+      [
+        87,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_316720": [
+      [
+        88,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_14834": [
+      [
+        88,
+        "PAYOFF"
+      ]
+    ],
+    "pxb_sfx_222490": [
+      [
+        88,
+        "CLIFFHANGER"
+      ]
+    ],
+    "pxb_sfx_102380": [
+      [
+        89,
+        "HOOK"
+      ]
+    ],
+    "pxb_sfx_543174": [
+      [
+        89,
+        "REVEAL"
+      ]
+    ],
+    "pxb_sfx_493999": [
+      [
+        90,
+        "INCIDENT"
+      ]
+    ],
+    "pxb_sfx_17909": [
+      [
+        90,
+        "PAYOFF"
+      ]
+    ]
+  }
+}

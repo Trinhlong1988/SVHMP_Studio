@@ -152,7 +152,7 @@ Giọng cô đều — đã quen kể.
 
 "Anh đi. Em ngồi quán cà phê hai giờ — không đọc thư — chỉ giữ phong bì."
 
-"Em về nhà. Mẹ ôm em — biết em đã chia tay. Mẹ không nói gì."
+"Em về nhà. Mẹ ôm em — biết bạn đã chia tay. Mẹ không nói gì."
 
 "Em không đọc thư anh trong một tháng. Em sợ — không biết anh viết gì. Em sợ thư có lời trách em."
 
@@ -184,7 +184,7 @@ Linh Trang gật. Lệ rơi xuống thư lần nữa.
 
 [pause:1200ms]
 
-"Đêm nay — em đem thư về phố Hàng Bài — đến quán cà phê Lâm — chính quán em ngồi đêm chia tay. Em sẽ đốt thư trên bàn quán — như tro tiễn anh. Em đã đủ bảy năm — em không cần thư nữa. Anh ở đâu đó — biết em đã thôi cầm thư."
+"Đêm nay — em đem thư về phố Hàng Bài — đến quán cà phê Lâm — chính quán em ngồi đêm chia tay. Em sẽ đốt thư trên bàn quán — như tro tiễn anh. Em đã đủ bảy năm — em không cần thư nữa. Anh ở đâu đó — biết bạn đã thôi cầm thư."
 
 ---
 

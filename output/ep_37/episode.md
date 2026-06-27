@@ -138,7 +138,7 @@ Giọng cô đều — chậm.
 
 "Em quỳ bên giường em trong phòng tang. Em không khóc — em sốc — em không thể tin chỉ vài giờ trước em còn ăn cơm chung em ở phòng trọ."
 
-"Tang em — gia đình em — mẹ em từ Bình Định ra Hà Nội — bố em đã mất sớm. Mẹ em ôm em — khóc — bảo: 'Con ơi mẹ biết em là con trai mẹ — em đã chọn em — bây giờ em đi — em sống tiếp.'"
+"Tang em — gia đình em — mẹ em từ Bình Định ra Hà Nội — bố em đã mất sớm. Mẹ em ôm bạn — khóc — bảo: 'Con ơi mẹ biết em là con trai mẹ — em đã chọn em — bây giờ em đi — em sống tiếp.'"
 
 [pause:1500ms]
 

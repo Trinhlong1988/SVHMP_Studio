@@ -138,7 +138,7 @@ Giọng cô đều — chậm.
 
 [pause:1200ms]
 
-"Em gọi Quỳnh: 'Quỳnh ơi tàu điện mở rồi — em ra Hà Nội đi tàu thử nhé! Em đặt vé khứ hồi đợi em — em chỉ cần lên Hà Nội — em đem em đi.'"
+"Em gọi Quỳnh: 'Quỳnh ơi tàu điện mở rồi — em ra Hà Nội đi tàu thử nhé! Em đặt vé khứ hồi đợi em — em chỉ cần lên Hà Nội — em đem bạn đi.'"
 
 "Quỳnh đáp: 'Hoài An ơi em hứa đi. Sang năm khi em rảnh em sẽ ra. Em đang dạy năm cuối lớp mười hai — bận ôn thi đại học cho em — em không nghỉ được.'"
 
@@ -150,7 +150,7 @@ Giọng cô đều — chậm.
 
 "Năm hai nghìn không trăm hai mươi ba — em nhắn em: 'Hoài An ơi em được chẩn đoán ung thư cổ tử cung. Giai đoạn ba. Bác sĩ Thái Bình chuyển em lên Bệnh viện K Hà Nội điều trị.'"
 
-"Em sốc. Em đáp ngay: 'Quỳnh ơi em đến Hà Nội — em đến đón em ở ga. Em ở nhà em — em chăm em điều trị.'"
+"Em sốc. Em đáp ngay: 'Quỳnh ơi em đến Hà Nội — em đến đón em ở ga. Em ở nhà em — em chăm bạn điều trị.'"
 
 "Quỳnh đến Hà Nội tuần sau. Em đón em ở ga. Em ở nhà em — em đi Bệnh viện K mỗi tuần hóa trị."
 
@@ -160,7 +160,7 @@ Giọng cô đều — chậm.
 
 "Đêm trước hôm em quay về Thái Bình — em nói với em: 'Hoài An ơi em muốn đi tàu điện trên cao trước em về quê. Em sống Hà Nội tám tháng — chưa đi thử. Em mơ đi từ ngày tàu mở.'"
 
-"Em đáp: 'Quỳnh ơi chiều mai em đi — em đem em đi. Em đã đặt vé sẵn ba năm — chờ em.'"
+"Em đáp: 'Quỳnh ơi chiều mai em đi — em đem bạn đi. Em đã đặt vé sẵn ba năm — chờ em.'"
 
 "Sáng hôm sau — em quá yếu — em không dậy. Em đưa em vào Bệnh viện K cấp cứu. Em mất chiều hôm đó — chính chiều em định đem em đi tàu điện."
 
@@ -168,7 +168,7 @@ Giọng cô đều — chậm.
 
 [pause:1500ms]
 
-"Em đem vé về Thái Bình — em đến tang em. Em định đặt vé vào quan tài em. Em không đặt — em ngại — em không biết em có muốn vé này không."
+"Em đem vé về Thái Bình — em đến tang em. Em định đặt vé vào quan tài em. Em không đặt — em ngại — em không biết bạn có muốn vé này không."
 
 "Em mang vé về Hà Nội. Ba năm em giữ vé trong ngăn kéo bàn. Em đi tàu điện một mình mỗi cuối tuần — không dùng vé Quỳnh — em không thể dùng vé em không nên dùng."
 

@@ -128,7 +128,7 @@ Giọng anh trầm — chậm — giọng người sống biển.
 
 [pause:800ms]
 
-"Cưới được ba năm — em sinh con đầu — bé gái — em đặt tên Hoa. Hoa khỏe — bụ bẫm — em thương em."
+"Cưới được ba năm — em sinh con đầu — bé gái — em đặt tên Hoa. Hoa khỏe — bụ bẫm — em thương mẹ."
 
 "Em đi biển. Mỗi chuyến đi ba đến năm ngày. Em về — Hồng đón em ở bến — bế Hoa — cười. Cuộc sống bình thường."
 
@@ -152,7 +152,7 @@ Giọng anh trầm — chậm — giọng người sống biển.
 
 "Hoa ba tuổi — không hiểu — chỉ khóc đòi mẹ. Em chăm Hoa một mình. Em đi biển — em gửi Hoa nhà mẹ em — mẹ em chăm cháu."
 
-"Em không tái hôn. Em sống với Hoa ba mươi năm. Hoa lớn — em nuôi em ăn học — em tốt nghiệp đại học — em lấy chồng — em sinh con — bây giờ em ba mươi ba — em sống Sài Gòn với chồng con."
+"Em không tái hôn. Em sống với Hoa ba mươi năm. Hoa lớn — em nuôi mẹ ăn học — em tốt nghiệp đại học — em lấy chồng — em sinh con — bây giờ em ba mươi ba — em sống Sài Gòn với chồng con."
 
 "Hồng không gặp Hoa nữa. Em đi khỏi làng sau ly hôn — em sang xã bên ở — em lấy chồng khác — anh Tâm — chính anh tôi bắt gặp. Họ cưới một năm sau ly hôn em. Họ sinh hai con khác."
 

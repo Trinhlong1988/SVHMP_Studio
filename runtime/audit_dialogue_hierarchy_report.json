@@ -1,77 +1,654 @@
 {
   "summary": {
-    "high": 4,
-    "medium": 3
+    "high": 152,
+    "medium": 130
   },
   "per_ep_severity": {
+    "2": {
+      "MEDIUM": 1,
+      "HIGH": 0
+    },
+    "7": {
+      "MEDIUM": 1,
+      "HIGH": 0
+    },
+    "8": {
+      "MEDIUM": 9,
+      "HIGH": 0
+    },
+    "9": {
+      "MEDIUM": 5,
+      "HIGH": 2
+    },
+    "11": {
+      "HIGH": 4,
+      "MEDIUM": 0
+    },
+    "12": {
+      "MEDIUM": 3,
+      "HIGH": 1
+    },
+    "14": {
+      "MEDIUM": 3,
+      "HIGH": 0
+    },
+    "15": {
+      "HIGH": 3,
+      "MEDIUM": 0
+    },
+    "16": {
+      "MEDIUM": 3,
+      "HIGH": 0
+    },
+    "18": {
+      "MEDIUM": 5,
+      "HIGH": 1
+    },
+    "19": {
+      "MEDIUM": 3,
+      "HIGH": 0
+    },
+    "20": {
+      "HIGH": 3,
+      "MEDIUM": 1
+    },
+    "22": {
+      "HIGH": 6,
+      "MEDIUM": 6
+    },
+    "23": {
+      "HIGH": 6,
+      "MEDIUM": 1
+    },
+    "24": {
+      "MEDIUM": 5,
+      "HIGH": 5
+    },
+    "26": {
+      "HIGH": 2,
+      "MEDIUM": 1
+    },
+    "27": {
+      "MEDIUM": 7,
+      "HIGH": 5
+    },
+    "28": {
+      "HIGH": 6,
+      "MEDIUM": 5
+    },
+    "29": {
+      "MEDIUM": 4,
+      "HIGH": 7
+    },
+    "30": {
+      "HIGH": 8,
+      "MEDIUM": 3
+    },
+    "31": {
+      "HIGH": 2,
+      "MEDIUM": 2
+    },
+    "32": {
+      "HIGH": 7,
+      "MEDIUM": 2
+    },
+    "33": {
+      "MEDIUM": 10,
+      "HIGH": 7
+    },
+    "36": {
+      "HIGH": 13,
+      "MEDIUM": 3
+    },
+    "37": {
+      "MEDIUM": 7,
+      "HIGH": 1
+    },
+    "38": {
+      "HIGH": 10,
+      "MEDIUM": 3
+    },
+    "39": {
+      "MEDIUM": 3,
+      "HIGH": 3
+    },
     "40": {
       "HIGH": 4,
       "MEDIUM": 3
+    },
+    "41": {
+      "HIGH": 7,
+      "MEDIUM": 2
+    },
+    "42": {
+      "HIGH": 6,
+      "MEDIUM": 0
+    },
+    "43": {
+      "MEDIUM": 4,
+      "HIGH": 5
+    },
+    "44": {
+      "MEDIUM": 5,
+      "HIGH": 1
+    },
+    "45": {
+      "MEDIUM": 3,
+      "HIGH": 4
+    },
+    "46": {
+      "MEDIUM": 6,
+      "HIGH": 6
+    },
+    "47": {
+      "MEDIUM": 1,
+      "HIGH": 2
+    },
+    "48": {
+      "HIGH": 8,
+      "MEDIUM": 2
+    },
+    "49": {
+      "HIGH": 5,
+      "MEDIUM": 4
+    },
+    "50": {
+      "HIGH": 2,
+      "MEDIUM": 4
+    },
+    "1": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "3": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "4": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "5": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "6": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "10": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "13": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "17": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "21": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "25": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "34": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "35": {
+      "HIGH": 0,
+      "MEDIUM": 0
     }
   },
   "sample_issues": [
     {
       "type": "em_overload_multiple_referents",
-      "detail": "7 em + named: {'Vy'} — likely ambiguous",
-      "severity": "HIGH",
-      "sample": "Hạ Vy là người dạy em viết bản vẽ kỹ thuật khi em mới vào. Em hai mốt — Hạ Vy hai bảy — em hơn em sáu tuổi — em là chị e",
-      "ep": 40,
-      "passenger": "Trung Hậu Hải",
+      "detail": "5 em + named: {'Con', 'Sao', 'Hai', 'Cây', 'Khóc'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Hai chín tối, em gái gọi. Em không nói gì. Em chỉ khóc. Khóc trong điện thoại. Khóc rất khẽ, sợ mẹ nghe thấy. Con hỏi: '",
+      "ep": 2,
+      "passenger": null,
+      "quote_idx": 5
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "5 em + named: {'Con', 'Máy'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Con kể về em gái — em đã thi đỗ học sinh giỏi tỉnh. Em vẫn vui. Em chưa hiểu chuyện gì sắp xảy ra. Con nói: 'Mẹ ơi, em v",
+      "ep": 7,
+      "passenger": null,
+      "quote_idx": 16
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "6 em + named: {'Mang', 'Dương', 'Bình', 'Khăn', 'Mỗi'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Bà nội nuôi em từ bé. Bố mẹ em đi làm ăn ở Bình Dương, em ở với bà ở quê. Bà thương em nhất nhà. Mỗi lần em về nghỉ hè, ",
+      "ep": 8,
+      "passenger": "Kiệt",
+      "quote_idx": 4
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "5 em + named: {'Lát', 'Tết', 'Đêm'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Đêm ba mươi Tết năm ngoái, bà gọi cho em lúc tám giờ tối. Em đang đi nhậu với bạn lớp. Em không bắt. Em nghĩ: 'Lát nữa v",
+      "ep": 8,
+      "passenger": "Kiệt",
       "quote_idx": 7
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "5 em + named: {'Cô', 'Đám'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Em về quê sáng mùng một. Cô em đứng cổng đón. Đám tang bà đông lắm. Em không đứng vững. Cô em phải dìu em vào.",
+      "ep": 8,
+      "passenger": "Kiệt",
+      "quote_idx": 13
     },
     {
       "type": "em_overload_multiple_referents",
       "detail": "5 em + named: {'Sau'} — likely ambiguous",
       "severity": "MEDIUM",
-      "sample": "Sau tang chị — em không liên lạc anh. Em không có số điện thoại anh — em không tìm anh. Em sợ làm anh khó — em chỉ là đồ",
-      "ep": 40,
-      "passenger": "Trung Hậu Hải",
-      "quote_idx": 20
+      "sample": "Ông nội em mất khi bố em mới năm tuổi. Bà nuôi bố em một mình. Sau đó bố em lớn lên, đi làm ăn xa, gửi em về cho bà nuôi",
+      "ep": 8,
+      "passenger": "Kiệt",
+      "quote_idx": 17
     },
     {
       "type": "em_overload_multiple_referents",
-      "detail": "5 em + named: {'Hà', 'Vy', 'Mộc'} — likely ambiguous",
+      "detail": "5 em + named: {'Tự', 'Mỗi', 'Tay'} — likely ambiguous",
       "severity": "MEDIUM",
-      "sample": "Em làm tiếp Mộc Hà sáu năm sau. Em lên kiến trúc sư chính. Em cưới vợ năm vừa rồi — không phải chị Hạ Vy — em đã yêu một",
-      "ep": 40,
-      "passenger": "Trung Hậu Hải",
+      "sample": "Mỗi mùa hè em về, bà luôn nấu món em thích — bún cá rô đồng. Bà bắt cá ở ruộng sau nhà. Tự kho. Tự nấu nước dùng. Em ngồ",
+      "ep": 8,
+      "passenger": "Kiệt",
+      "quote_idx": 18
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "5 em + named: {'Không', 'Là', 'Mà'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Em biết — khi bà đi, một cái gì đó của em cũng đi theo. Không phải bà thôi. Mà là tuổi thơ em. Là cách em hiểu thế giới.",
+      "ep": 8,
+      "passenger": "Kiệt",
       "quote_idx": 21
     },
     {
       "type": "em_overload_multiple_referents",
-      "detail": "7 em + named: {'Dương', 'Khâm', 'Thiên', 'Năm', 'Phong', 'Vy'} — likely ambiguous",
-      "severity": "HIGH",
-      "sample": "Năm vừa rồi — em ba mươi tuổi — em quyết — em sẽ đi tìm anh. Em biết tên anh — Khải Phong — em nghe chị nhắc thường ở vă",
-      "ep": 40,
-      "passenger": "Trung Hậu Hải",
+      "detail": "5 em + named: {'Năm', 'Một', 'Cháu'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Năm nay em về quê đúng đêm ba mươi. Một mình. Em sẽ ngồi cạnh ban thờ bà. Em sẽ gọi điện cho bà — gọi vào sim bà vẫn còn",
+      "ep": 8,
+      "passenger": "Kiệt",
+      "quote_idx": 22
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "6 em + named: {'Dương', 'Bình', 'Họ', 'Con'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Em không kể chuyện này với bố mẹ em. Bố mẹ em ở Bình Dương — không về kịp đám tang bà năm ngoái. Họ nghĩ em đã ổn. Em kh",
+      "ep": 8,
+      "passenger": "Kiệt",
       "quote_idx": 23
     },
     {
       "type": "em_overload_multiple_referents",
-      "detail": "5 em + named: {'Hà', 'Mộc'} — likely ambiguous",
+      "detail": "6 em + named: {'Nhưng', 'Để', 'Khóc'} — likely ambiguous",
       "severity": "MEDIUM",
-      "sample": "Em không tìm được anh. Em quyết — em sẽ đem cuộn giấy can — đặt trước cửa văn phòng Mộc Hà cũ — chính văn phòng em và em",
-      "ep": 40,
-      "passenger": "Trung Hậu Hải",
+      "sample": "Bạn em ở trường không ai biết chuyện. Em đi học bình thường. Em đi làm thêm. Em ăn cơm sinh viên. Em nói chuyện cười đùa",
+      "ep": 8,
+      "passenger": "Kiệt",
       "quote_idx": 25
     },
     {
       "type": "em_overload_multiple_referents",
-      "detail": "7 em + named: {'Mai'} — likely ambiguous",
+      "detail": "5 em + named: {'Mỗi', 'Vì'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Em quên rồi. Em chỉ nhớ vài câu chào. Mỗi lần em nghe đoạn đó, em xấu hổ. Vì em đã quên tiếng bà.",
+      "ep": 9,
+      "passenger": null,
+      "quote_idx": 19
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "6 em + named: {'Lúc', 'Cười', 'Nhưng'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Em đã quên câu đó suốt mười năm. Lúc em sinh con đầu lòng — em đau đẻ — em tự nhiên nhớ câu bà. Em cố cười. Cười không r",
+      "ep": 9,
+      "passenger": null,
+      "quote_idx": 22
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "7 em + named: {'Chồng'} — likely ambiguous",
       "severity": "HIGH",
-      "sample": "Em nhớ. Em đã gặp anh đêm Bạch Mai. Em là người gọi cấp cứu cho chị. Em đã yêu thầm chị ba tháng — nhưng em chỉ coi chị ",
-      "ep": 40,
-      "passenger": "Trung Hậu Hải",
+      "sample": "Chồng em không hiểu vì sao em đi một mình. Em không kể đủ. Em chỉ bảo: 'Em về quê thắp hương bà. Em đi hai ngày.' Chồng ",
+      "ep": 9,
+      "passenger": null,
+      "quote_idx": 26
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "5 em + named: {'Khi', 'Nhưng', 'Con'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Con em năm tuổi đã hỏi: 'Mẹ ơi bà cố ở đâu?' Em chỉ vào ngực mình. Con em không hiểu. Em bảo: 'Bà ở trong lòng mẹ. Khi c",
+      "ep": 9,
+      "passenger": null,
+      "quote_idx": 27
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "5 em + named: {'Rồi', 'Bắc', 'Khi', 'Đến', 'Giang', 'Khóc'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Mẹ em — con gái duy nhất của bà — sống ở Bắc Giang. Bà với mẹ em không hợp tính. Mẹ em đi sớm khỏi nhà từ hồi mười tám. ",
+      "ep": 9,
+      "passenger": null,
       "quote_idx": 28
     },
     {
       "type": "em_overload_multiple_referents",
-      "detail": "8 em + named: {'Hà', 'Đêm', 'Mộc'} — likely ambiguous",
+      "detail": "7 em + named: {'Nhưng'} — likely ambiguous",
       "severity": "HIGH",
-      "sample": "Đêm nay — em đem cuộn giấy can về Mộc Hà — đặt trước cửa văn phòng — như cách trả cuộn cho nơi sinh ra. Em đã hồi phục —",
-      "ep": 40,
-      "passenger": "Trung Hậu Hải",
+      "sample": "Em hiểu — mẹ em có những vết thương với bà. Em không trách mẹ. Mẹ cũng có lý do của mẹ. Nhưng bà — bà chỉ có mình em. Em",
+      "ep": 9,
+      "passenger": null,
       "quote_idx": 29
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "5 em + named: {'Bây', 'Pò', 'Tày', 'Nhưng', 'Người'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Bà thường nói tiếng Tày một câu cuối ngày: 'Pò en chi pài.' Em nhớ câu đó. Nhưng em không biết nghĩa. Em chưa bao giờ hỏ",
+      "ep": 9,
+      "passenger": null,
+      "quote_idx": 30
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "8 em + named: {'Mọi'} — likely ambiguous",
+      "severity": "HIGH",
+      "sample": "Chị tắm cho em lúc em mới sinh. Chị đút em ăn lúc em hai tuổi. Chị đưa em đi học mẫu giáo. Chị dạy em viết chữ. Mọi thứ ",
+      "ep": 11,
+      "passenger": "Đức",
+      "quote_idx": 7
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "10 em + named: {'Năm', 'Vợ'} — likely ambiguous",
+      "severity": "HIGH",
+      "sample": "Năm vừa rồi em cưới vợ. Vợ em hỏi vòng cổ ngay đêm cưới. Em kể. Vợ em im một lúc. Em sợ — em nói: 'Anh sẽ tháo nếu em kh",
+      "ep": 11,
+      "passenger": "Đức",
+      "quote_idx": 18
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "9 em + named: {'Bây', 'Vòng', 'Tám'} — likely ambiguous",
+      "severity": "HIGH",
+      "sample": "Tám năm em mang vòng — như mang chị đi cùng em mỗi ngày. Bây giờ — em sắp có con — em không muốn vòng chị tặng riêng em ",
+      "ep": 11,
+      "passenger": "Đức",
+      "quote_idx": 23
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "8 em + named: {'Đông', 'Đêm', 'Con', 'Đặt', 'Nói', 'Quỳ', 'Hà'} — likely ambiguous",
+      "severity": "HIGH",
+      "sample": "Đêm nay — đúng kỉ niệm năm thứ năm chị đi — em đem vòng về nghĩa trang Hà Đông. Đặt vòng giữa mộ chị. Quỳ. Nói: 'Chị ơi ",
+      "ep": 11,
+      "passenger": "Đức",
+      "quote_idx": 24
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "6 em + named: {'Lần'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Em đến văn phòng anh ba lần. Lần thứ nhất — anh trả lời câu hỏi luận văn của em — chuyên môn. Lần thứ hai — em hỏi thêm ",
+      "ep": 12,
+      "passenger": "Vy An",
+      "quote_idx": 8
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "5 em + named: {'Đưa'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Anh đứng dậy — đi ra xe — mở cốp — lấy hộp giấy bọc gấm đỏ. Đưa em. 'Anh mua đồng hồ này tuần trước — định tặng em ngày ",
+      "ep": 12,
+      "passenger": "Vy An",
+      "quote_idx": 18
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "9 em + named: {'Lỗi', 'Khôi', 'Tuấn'} — likely ambiguous",
+      "severity": "HIGH",
+      "sample": "Em cảm thấy lỗi — không phải vì em đã rời anh — em đã yêu Tuấn thật — không giả. Lỗi em là — em không bao giờ nói cảm ơn",
+      "ep": 12,
+      "passenger": "Vy An",
+      "quote_idx": 25
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "5 em + named: {'Hai', 'Khôi', 'Tuấn'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Em nhớ. Em không yêu Tuấn nhiều hơn anh Khôi — em chỉ trẻ. Hai mươi mốt tuổi không biết phân biệt yêu trẻ và yêu trưởng ",
+      "ep": 12,
+      "passenger": "Vy An",
+      "quote_idx": 27
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "5 em + named: {'Hôm'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Em không cho. Em vội — đi làm — ca tám giờ — em đi từ chợ tới văn phòng mất bốn mươi phút. Em nghĩ trong đầu: 'Hôm khác.",
+      "ep": 14,
+      "passenger": "Tâm Đan",
+      "quote_idx": 10
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "5 em + named: {'Mai', 'Chiều', 'Tối'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Chiều em về — không qua chợ — em mệt — em về thẳng phòng trọ. Tối em nhớ — bảo bụng: 'Mai. Mai chắc chắn em cho.'",
+      "ep": 14,
+      "passenger": "Tâm Đan",
+      "quote_idx": 12
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "5 em + named: {'Mai'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Em nhớ. Em không tử tế một lần — bà cụ Mai mất. Em không thể chuộc lại bà cụ — em chỉ có thể nhớ — sống cẩn thận hơn ba ",
+      "ep": 14,
+      "passenger": "Tâm Đan",
+      "quote_idx": 25
+    },
+    {
+      "type": "pronoun_shift_self",
+      "detail": "tôi=2 + em=3 mixed self-ref",
+      "severity": "HIGH",
+      "ep": 15,
+      "passenger": "Phong",
+      "quote_idx": 10
+    },
+    {
+      "type": "pronoun_shift_self",
+      "detail": "tôi=2 + em=3 mixed self-ref",
+      "severity": "HIGH",
+      "ep": 15,
+      "passenger": "Phong",
+      "quote_idx": 26
+    },
+    {
+      "type": "pronoun_shift_self",
+      "detail": "tôi=2 + em=2 mixed self-ref",
+      "severity": "HIGH",
+      "ep": 15,
+      "passenger": "Phong",
+      "quote_idx": 29
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "5 em + named: {'Sau', 'Hùng'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Sau tang mẹ — em không cưới anh Hùng. Em chia tay anh hai tháng sau. Em không vì giận anh — em vì giận mình. Em không th",
+      "ep": 16,
+      "passenger": "Hoàng Yến",
+      "quote_idx": 16
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "5 em + named: {'Đông', 'Yến', 'Năm', 'Hà'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Bố em vẫn ở nhà cũ Hà Đông — trồng cúc tiếp — hai mươi chậu của mẹ — bố giữ. Năm vừa rồi bố yếu — bố không tưới đủ — mườ",
+      "ep": 16,
+      "passenger": "Hoàng Yến",
+      "quote_idx": 20
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "5 em + named: {'Nội', 'Chậu', 'Hà'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Em về. Em chọn một chậu — chậu cúc kim ngân — chậu mẹ thích nhất. Chậu này — mẹ trồng năm em hai mươi tuổi — chính năm e",
+      "ep": 16,
+      "passenger": "Hoàng Yến",
+      "quote_idx": 21
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "5 em + named: {'Nhưng'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Mẹ không nói tiếp. Mẹ đứng dậy: 'Em cưới em chịu. Nhưng nếu em cưới em này — em không phải con mẹ nữa.'",
+      "ep": 18,
+      "passenger": "Linh Trang",
+      "quote_idx": 12
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "5 em + named: {'Trước'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Em không nói lại. Em im. Anh đứng dậy — đi ra cửa. Trước khi đi — anh quay lại — đặt phong bì lên bàn. 'Anh viết thư cho",
+      "ep": 18,
+      "passenger": "Linh Trang",
+      "quote_idx": 17
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "5 em + named: {'Khang', 'Một', 'Nội', 'Trang', 'Phòng', 'Hà'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Một tháng sau — em đọc. Anh không trách. Anh chỉ viết: 'Trang ơi cảm ơn em đã yêu anh hai năm. Anh không trách em chọn m",
+      "ep": 18,
+      "passenger": "Linh Trang",
+      "quote_idx": 21
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "5 em + named: {'Khang', 'Phòng'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Em sốc. Em không tin. Em đi Hải Phòng — đến nhà tang. Bố mẹ Khang nhìn em — biết em là người yêu — không trách — chỉ buồ",
+      "ep": 18,
+      "passenger": "Linh Trang",
+      "quote_idx": 24
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "9 em + named: {'Khang'} — likely ambiguous",
+      "severity": "HIGH",
+      "sample": "Em nhớ. Em chia tay anh Khang vì mẹ — em chọn mẹ — em không cứu được anh khi anh tự tử. Em giữ thư bảy năm — vì thư là c",
+      "ep": 18,
+      "passenger": "Linh Trang",
+      "quote_idx": 29
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "5 em + named: {'Bài', 'Hàng', 'Đêm', 'Lâm'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Đêm nay — em đem thư về phố Hàng Bài — đến quán cà phê Lâm — chính quán em ngồi đêm chia tay. Em sẽ đốt thư trên bàn quá",
+      "ep": 18,
+      "passenger": "Linh Trang",
+      "quote_idx": 30
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "5 em + named: {'Mai', 'Hai', 'Tết', 'Mỗi'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Hai mươi năm em xa quê — em ít gặp Mai. Mỗi Tết em về — gặp Mai ở chợ — vài lời chào. Mai không trách em xa lạ — Mai vẫn",
+      "ep": 19,
+      "passenger": "Bích Hoa",
+      "quote_idx": 6
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "5 em + named: {'Mai', 'Đêm'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Đêm tang Mai — em không đến đúng giờ. Em ngại. Em ngại nhìn Mai trong quan tài — em sợ cảm giác lỗi sẽ nặng hơn. Em đến ",
+      "ep": 19,
+      "passenger": "Bích Hoa",
+      "quote_idx": 18
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "5 em + named: {'Mai'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Em nhớ. Em không đến với Mai tuần cuối — Mai đi một mình. Em đến tang muộn — Mai cô đơn trong tang. Em không sửa được — ",
+      "ep": 19,
+      "passenger": "Bích Hoa",
+      "quote_idx": 25
+    },
+    {
+      "type": "pronoun_shift_self",
+      "detail": "tôi=3 + em=4 mixed self-ref",
+      "severity": "HIGH",
+      "ep": 20,
+      "passenger": "Nhật Minh",
+      "quote_idx": 12
+    },
+    {
+      "type": "pronoun_shift_self",
+      "detail": "tôi=4 + em=3 mixed self-ref",
+      "severity": "HIGH",
+      "ep": 20,
+      "passenger": "Nhật Minh",
+      "quote_idx": 16
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "5 em + named: {'Yêu', 'Minh', 'Hoài'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Em viết trong sổ một trang. Em viết: 'Minh ơi — em tặng anh sổ này — anh viết ý tưởng marketing — anh nhớ — em đọc cho a",
+      "ep": 20,
+      "passenger": "Nhật Minh",
+      "quote_idx": 21
+    },
+    {
+      "type": "pronoun_shift_self",
+      "detail": "tôi=8 + em=2 mixed self-ref",
+      "severity": "HIGH",
+      "ep": 20,
+      "passenger": "Nhật Minh",
+      "quote_idx": 26
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "9 em + named: {'Thầy', 'Hồng', 'Bốn', 'Lý'} — likely ambiguous",
+      "severity": "HIGH",
+      "sample": "Thầy Hồng là người em quý nhất trong đời. Bốn năm đại học — thầy dạy em môn Lý luận văn học — môn khó nhất khoa. Em vào ",
+      "ep": 22,
+      "passenger": "Quỳnh Mai",
+      "quote_idx": 9
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "6 em + named: {'Năm', 'Nguyễn', 'Huy', 'Thiệp', 'Cấu'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Em nghe. Em không bỏ. Năm hai — em vẫn không hiểu nhiều. Năm ba — em bắt đầu hiểu. Năm bốn — em viết luận văn về 'Cấu tr",
+      "ep": 22,
+      "passenger": "Quỳnh Mai",
+      "quote_idx": 10
     }
   ]
 }

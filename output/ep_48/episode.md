@@ -146,7 +146,7 @@ Giọng anh trầm.
 
 [pause:1500ms]
 
-"Năm em ba mươi sáu — em phát hiện ung thư xương. Em điều trị Sài Gòn. Em đến thăm em một lần — em tặng em hộp trái cây — em không tặng đàn — em sợ em không kịp chơi nhiều."
+"Năm em ba mươi sáu — em phát hiện ung thư xương. Em điều trị Sài Gòn. Em đến thăm em một lần — em tặng mẹ hộp trái cây — em không tặng đàn — em sợ em không kịp chơi nhiều."
 
 "Em không nhắc lời hứa đàn. Em không hỏi. Em chỉ hỏi sức khỏe."
 
@@ -156,7 +156,7 @@ Giọng anh trầm.
 
 "Sau tang em — em quay về Cần Thơ. Em đi tiệm đàn Sông Hậu — chính tiệm em vừa bước lên xe. Em mua một cây đàn guitar gỗ — đàn em đã định mua tặng em mười lăm năm trước."
 
-"Em đem đàn về nhà — em chơi vài lần — em không thể giữ lâu. Em quyết — em sẽ đem đàn về quê em — Vĩnh Long — tặng bố mẹ em — để bố mẹ em đặt trên bàn thờ em — coi như em tặng em qua bố mẹ."
+"Em đem đàn về nhà — em chơi vài lần — em không thể giữ lâu. Em quyết — em sẽ đem đàn về quê em — Vĩnh Long — tặng bố mẹ em — để bố mẹ em đặt trên bàn thờ em — coi như em tặng mẹ qua bố mẹ."
 
 "Năm vừa rồi — em đem đàn về Vĩnh Long. Em đặt đàn trên bàn thờ em. Bố mẹ em ôm đàn — khóc. Em xin lỗi mười lăm năm. Bố em bảo: 'Phong đợi mày đàn — em không trách mày — em chỉ chờ.'"
 

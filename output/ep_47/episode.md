@@ -146,7 +146,7 @@ Giọng cô đều — chậm.
 
 "Em không bay Hàn Quốc. Em hủy chuyến. Vietjet không hoàn tiền vì đặt vé giảm giá không hoàn."
 
-"Em giữ hai vé giấy — không xé. Em treo trên tủ lạnh bốn năm — em nhìn mỗi sáng — em nhớ em."
+"Em giữ hai vé giấy — không xé. Em treo trên tủ lạnh bốn năm — em nhìn mỗi sáng — em nhớ bạn."
 
 [pause:1500ms]
 

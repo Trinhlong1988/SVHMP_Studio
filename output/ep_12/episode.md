@@ -184,7 +184,7 @@ Cô gật.
 
 [pause:1200ms]
 
-"Đêm nay — em về Long Biên — em đến giữa cầu Long Biên — nơi anh từng làm dự án — em ném đồng hồ này xuống sông Hồng. Em không giữ nữa. Trả lại sông — anh ở đâu đó — biết em đã nói cảm ơn — qua cách trả vật."
+"Đêm nay — em về Long Biên — em đến giữa cầu Long Biên — nơi anh từng làm dự án — em ném đồng hồ này xuống sông Hồng. Em không giữ nữa. Trả lại sông — anh ở đâu đó — biết bạn đã nói cảm ơn — qua cách trả vật."
 
 ---
 

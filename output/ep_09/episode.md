@@ -154,7 +154,7 @@ Cô gật. Mắt cô khẽ ngấn nước.
 
 [pause:800ms]
 
-"Đám tang xong, mẹ em đưa em băng cassette này. Mẹ bảo: 'Bà tự thu trước khi đi. Bà bảo: nếu chắt không kịp gặp bà, thì cho chắt nghe giọng bà.'"
+"Đám tang xong, mẹ em đưa bạn băng cassette này. Mẹ bảo: 'Bà tự thu trước khi đi. Bà bảo: nếu chắt không kịp gặp bà, thì cho chắt nghe giọng bà.'"
 
 "Em về Hà Nội. Mua máy cassette cũ. Phát băng. Giọng bà cất lên — bà hát ru bài bà vẫn hát em hồi nhỏ. 'Cò bay lả lả bay la...' Bà hát chậm. Hát run. Có tiếng bà ho ở giữa."
 

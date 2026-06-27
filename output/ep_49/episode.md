@@ -128,9 +128,9 @@ Giọng cô đều — chậm.
 
 "Em dừng xe. Em hỏi: 'Em ơi em có sao không? Em cần giúp không?' Em đáp: 'Cô ơi em không nhà — em chạy khỏi nhà — em không có chỗ trú.'"
 
-"Em đem em về phòng trọ em ở Sóc Trăng. Em pha nước nóng — em nấu cơm — em cho em ăn. Em kể em chuyện em. Em mười tám tuổi — em bỏ học cấp ba — em chạy khỏi gia đình vì bố em đánh đập."
+"Em đem em về phòng trọ em ở Sóc Trăng. Em pha nước nóng — em nấu cơm — em cho bạn ăn. Em kể em chuyện em. Em mười tám tuổi — em bỏ học cấp ba — em chạy khỏi gia đình vì bố em đánh đập."
 
-"Em ngủ trên ghế phòng em — em ngủ giường em. Sáng em đưa em đến trung tâm bảo trợ xã hội Sóc Trăng — em đưa em đăng ký — em cho em tiền tiêu — em hẹn em mỗi tuần em qua thăm."
+"Em ngủ trên ghế phòng em — em ngủ giường em. Sáng em đưa bạn đến trung tâm bảo trợ xã hội Sóc Trăng — em đưa bạn đăng ký — em cho bạn tiền tiêu — em hẹn em mỗi tuần em qua thăm."
 
 [pause:1200ms]
 

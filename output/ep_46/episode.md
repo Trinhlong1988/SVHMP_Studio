@@ -128,7 +128,7 @@ Giọng bà trầm — chậm.
 
 [pause:800ms]
 
-"Em chăm Bin từ em sơ sinh đến em tám tuổi. Bin gọi em là 'mẹ Hảo' — không phải 'bà Hảo' — vì em coi em là mẹ. Mẹ ruột em — em chỉ gặp em mỗi Tết về quê."
+"Em chăm Bin từ em sơ sinh đến em tám tuổi. Bin gọi em là 'mẹ Hảo' — không phải 'bà Hảo' — vì em coi bạn là mẹ. Mẹ ruột em — em chỉ gặp em mỗi Tết về quê."
 
 "Bin học lớp ba ở trường tiểu học xã. Em đưa em đi học mỗi sáng — em đón em chiều. Em nấu cơm cho em ăn — em ngủ cùng giường em."
 
@@ -138,7 +138,7 @@ Giọng bà trầm — chậm.
 
 [pause:1200ms]
 
-"Em không biết em đã hứa lần cuối với em sống. Tuần sau hứa — em đi bộ về từ trường với hai bạn cùng lớp — em rẽ ra biển chơi — không nói em — không nói bố mẹ ai."
+"Em không biết bạn đã hứa lần cuối với em sống. Tuần sau hứa — em đi bộ về từ trường với hai bạn cùng lớp — em rẽ ra biển chơi — không nói em — không nói bố mẹ ai."
 
 "Ba đứa em chơi ven bãi. Bin chưa bao giờ ra biển — em không biết bơi. Em ra xa sóng — sóng cuốn em. Bạn em chạy gọi người lớn — không kịp."
 
@@ -160,7 +160,7 @@ Giọng bà trầm — chậm.
 
 "Năm vừa rồi — em sắp bảy mươi — em quyết. Em sẽ đem một túi cát biển Diêm Điền về nhà thờ — em theo đạo Công giáo — chính nhà thờ em vừa bước lên xe."
 
-"Em sẽ đặt túi cát trong nhà thờ — em sẽ xin Chúa cho em — em đem em ra biển qua nhà thờ — qua Chúa — không thể đem em thật."
+"Em sẽ đặt túi cát trong nhà thờ — em sẽ xin Chúa cho em — em đem bạn ra biển qua nhà thờ — qua Chúa — không thể đem em thật."
 
 Bác tài cất lời.
 

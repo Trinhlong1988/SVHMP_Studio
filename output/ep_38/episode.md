@@ -132,7 +132,7 @@ Giọng anh trầm — chậm.
 
 "Tôi quý Lan — không yêu — chỉ quý. Hai đứa thân — đi học cùng — về cùng — cuối tuần đi cà phê vỉa hè cùng. Cả lớp gọi hai đứa em 'cặp bạn thân nhất.'"
 
-"Cuối năm lớp mười — Lan ốm. Bố mẹ em đưa em đi khám — phát hiện bạch cầu lympho cấp tính giai đoạn ba. Bác sĩ bảo: 'Cô sống thêm sáu tháng đến hai năm — chữa tốt sống được lâu hơn.'"
+"Cuối năm lớp mười — Lan ốm. Bố mẹ em đưa mẹ đi khám — phát hiện bạch cầu lympho cấp tính giai đoạn ba. Bác sĩ bảo: 'Cô sống thêm sáu tháng đến hai năm — chữa tốt sống được lâu hơn.'"
 
 "Lan nghỉ học một học kỳ — vào Bệnh viện Huyết học Hà Nội điều trị. Em điều trị tám tháng — về quê Hạ Long — đỡ một phần — em quay lại học lớp mười một."
 

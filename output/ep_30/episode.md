@@ -193,7 +193,7 @@ Anh tiếp:
 
 [pause:1500ms]
 
-"Sau tang thầy — tôi về nhà thầy lần nữa — gặp vợ thầy. Tôi tặng vợ thầy hai mươi triệu — vợ thầy không nhận. 'Anh Hùng không nhận tiền em — em đỡ em khác như anh Hùng đỡ em.'"
+"Sau tang thầy — tôi về nhà thầy lần nữa — gặp vợ thầy. Tôi tặng vợ thầy hai mươi triệu — vợ thầy không nhận. 'Anh Hùng không nhận tiền em — em đỡ bạn khác như anh Hùng đỡ em.'"
 
 "Vợ thầy đưa tôi một chiếc bằng cũ — bằng tốt nghiệp THPT — chính bằng tôi tốt nghiệp năm 2017. Bằng này tôi đã đưa thầy năm 2017 — thầy xin tôi để treo phòng giáo viên — thầy nói 'em là học sinh đầu tôi đỡ qua cấp ba — bằng của em là tấm bằng thầy quý.' Thầy treo phòng giáo viên bảy năm."
 

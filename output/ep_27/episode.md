@@ -188,7 +188,7 @@ Giọng cô có nét Việt kiều — nhẹ — đôi khi chèn cách phát âm
 
 "Hai năm em sống với cảm giác lỗi. Em hứa Hằng giúp khi cần — em không giúp — em không về thử khám hiến thận — em không gọi điện. Em là người Hằng tin — em làm Hằng chờ — Hằng đi."
 
-"Em không biết em có hợp hiến thận không. Có thể không. Nhưng em không thử. Em chưa thử."
+"Em không biết anh có hợp hiến thận không. Có thể không. Nhưng em không thử. Em chưa thử."
 
 "Năm vừa rồi — em quyết về Việt Nam dài hạn — sáu tháng. Em đem khung ảnh — chính khung Hằng tặng em hai mươi bốn năm trước. Khung em đem sang Mỹ — đặt bàn làm việc — em nhìn mỗi ngày — em không nhớ Hằng đủ."
 

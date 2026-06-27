@@ -124,7 +124,7 @@ Giọng cô đều — chậm.
 
 "Con gái em — Linh — mất tám tháng trước. Mười tám tuổi. Bệnh tim bẩm sinh phát hiện muộn — phải phẫu thuật cấp cứu — biến chứng — không qua."
 
-"Linh là con duy nhất em. Em sinh em năm em mười tám tuổi — em là mẹ trẻ. Em chia tay bố em khi em hai tuổi — em nuôi em một mình. Em sống với em mười tám năm."
+"Linh là con duy nhất em. Em sinh em năm em mười tám tuổi — em là mẹ trẻ. Em chia tay bố em khi em hai tuổi — em nuôi bạn một mình. Em sống với em mười tám năm."
 
 [pause:800ms]
 
@@ -154,7 +154,7 @@ Giọng cô đều — chậm.
 
 "Em ngồi đọc tin nhắn dở. Em khóc — lần đầu khóc sau tang em — em khóc cả đêm đó."
 
-"Mười tám năm em nuôi em — em không bao giờ nói thẳng em yêu em. Em chỉ chăm em — em không nói. Em chỉ học giỏi — em không nói nữa. Mẹ con không thường xuyên nói lời 'em yêu' với nhau — chỉ qua hành động — qua bữa cơm — qua áo ấm em mua cho em."
+"Mười tám năm em nuôi bạn — em không bao giờ nói thẳng em yêu bạn. Em chỉ chăm em — em không nói. Em chỉ học giỏi — em không nói nữa. Mẹ con không thường xuyên nói lời 'em yêu' với nhau — chỉ qua hành động — qua bữa cơm — qua áo ấm em mua cho em."
 
 "Em chưa kịp gửi tin nhắn. Em chưa kịp nói 'em yêu mẹ' bằng lời rõ. Em đi với tin nhắn chưa gửi trong điện thoại."
 
