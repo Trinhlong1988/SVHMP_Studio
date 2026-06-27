@@ -43,8 +43,44 @@ def get_pattern(ep_num: int) -> str:
     return PATTERNS[(ep_num - 11) % 6]
 
 
-def reveal_pattern_A(name, age, pron, pron_cap, obj, sample):
+def reveal_variant_block(ep_num, name, pron, pron_cap, obj):
+    """Variant insert block (V3.2): 3 micro-variations per ep dựa ep_num.
+    Inserted vào REVEAL section để tăng diversity within same pattern.
+    """
+    variant = (ep_num - 11) // 6 % 3  # 0, 1, 2 — 3 variants
+    if variant == 0:
+        return f"""[pause:600ms]
+
+Trong gia đình {pron}, người ấy là thế hệ giữ ký ức. Cha mẹ {pron} từ lâu đã không còn. {pron_cap} là người cuối cùng còn nhớ tên nhà bà cố — vùng quê cũ — món ăn {pron} hay được dỗ ăn từ tấm bé. Khi người ấy đi, một mảng quá khứ của {pron} đi theo.
+
+{pron_cap} nhận ra điều đó muộn. Mỗi năm thêm tuổi, {pron} lại nhớ ra một chi tiết người ấy từng kể — và tự buồn vì ngày đó {pron} không lắng nghe đủ. Nay người ấy không còn để hỏi.
+
+"""
+    elif variant == 1:
+        return f"""[pause:600ms]
+
+Có một đêm {pron} nằm cạnh giường người ấy lúc người ấy đã yếu. Người ấy không nói nhiều — chỉ nắm tay {pron}. Hai bàn tay đan. Lâu. Không ai nói gì. {pron_cap} nhớ — đó là lần đầu tiên {pron} và người ấy nắm tay yên lặng như thế.
+
+Cả đời người ấy chăm sóc {pron}. Một đêm cuối, lần đầu {pron} chăm người ấy. Một đêm. Sáng sau người ấy đi.
+
+{pron_cap} hối hận vì đã không nắm tay người ấy nhiều lần hơn từ trước đó. Hai bàn tay chỉ chạm thẳng nhau trong đêm cuối — chứ không qua nhiều năm.
+
+"""
+    else:
+        return f"""[pause:600ms]
+
+{pron_cap} có một album ảnh người ấy giữ — album cũ, ảnh đen trắng. {pron_cap} đem theo lên thành phố, đặt trên giá sách. Mỗi cuối năm {pron} lấy xuống xem một lần. Mỗi lần xem, {pron} nhớ thêm chi tiết: ảnh này chụp đâu, người ấy mặc gì, hôm đó là ngày gì.
+
+Album dày năm trang. Sau mười năm, {pron} đã thuộc từng ảnh. Nhưng có một ảnh — ảnh duy nhất chỉ riêng người ấy không có {pron} cùng — {pron} không nhớ chụp khi nào. Người ấy đứng trước một quán nhỏ. Mỉm cười. Có ai đó đứng phía sau — chỉ thấy bóng.
+
+{pron_cap} đoán đó là cha mẹ người ấy. Hoặc một người yêu cũ. {pron_cap} không có ai để hỏi. Người ấy đã đi.
+
+"""
+
+
+def reveal_pattern_A(name, age, pron, pron_cap, obj, sample, ep_num=11):
     """Pattern A: Linear flashback — passenger kể chuyện chronological."""
+    variant_block = reveal_variant_block(ep_num, name, pron, pron_cap, obj)
     return f"""[pause:800ms]
 
 {pron_cap} {obj['verb']} một lần nữa. {obj['detail'].capitalize()}.
@@ -94,7 +130,7 @@ Bác tài cất lời. Câu hỏi cũ.
 "Đêm nay {pron} đem {obj['name']} về quê. Đặt lên ban thờ. Thắp nhang. Nói: 'Con nhớ rồi. Con xin lỗi.' Có thể người ấy nghe. Có thể không. Nhưng {pron} cần nói.\""""
 
 
-def reveal_pattern_B(name, age, pron, pron_cap, obj, sample):
+def reveal_pattern_B(name, age, pron, pron_cap, obj, sample, ep_num=11):
     """Pattern B: Reverse POV — passenger giờ ở vị trí MẸ đợi (gen reversal)."""
     return f"""[pause:800ms]
 
@@ -140,10 +176,12 @@ Bác tài cất lời.
 
 "{pron_cap} đã viết một câu thư từ chiều — để đặt cùng {obj['name']}. Trong thư {pron} viết: 'Mẹ ơi con đã ngồi đúng chỗ mẹ rồi. Con xin lỗi vì ngày xưa con không hiểu. Giờ con hiểu.'"
 
-"Đến lượt {pron} truyền lại — cho con dâu, cho cháu dâu, cho ai sau này còn chịu nghe. Cách đợi không trách."""
+"Đến lượt {pron} truyền lại — cho con dâu, cho cháu dâu, cho ai sau này còn chịu nghe. Cách đợi không trách."
+
+{reveal_variant_block(ep_num, name, pron, pron_cap, obj)}"""
 
 
-def reveal_pattern_C(name, age, pron, pron_cap, obj, sample):
+def reveal_pattern_C(name, age, pron, pron_cap, obj, sample, ep_num=11):
     """Pattern C: Letter framing — passenger đọc lá thư người đã mất."""
     return f"""[pause:800ms]
 
@@ -200,7 +238,7 @@ Bác tài cất lời.
 "{pron_cap} biết — đốt thư không gửi được đến mẹ. Nhưng {pron} cần đốt. Đốt là cách {pron} giải phóng câu chuyện đã giữ trong lòng quá lâu.\""""
 
 
-def reveal_pattern_D(name, age, pron, pron_cap, obj, sample):
+def reveal_pattern_D(name, age, pron, pron_cap, obj, sample, ep_num=11):
     """Pattern D: Object-first — story kể qua object detail."""
     return f"""[pause:800ms]
 
@@ -253,7 +291,7 @@ Bác tài cất lời.
 "Cứ thế. Vật được truyền. Vết được thêm. Câu chuyện được kể qua các thế hệ — không bằng lời.\""""
 
 
-def reveal_pattern_E(name, age, pron, pron_cap, obj, sample):
+def reveal_pattern_E(name, age, pron, pron_cap, obj, sample, ep_num=11):
     """Pattern E: Multi-POV — Quang internal alternating với passenger external."""
     return f"""[pause:800ms]
 
@@ -320,7 +358,7 @@ Quang chạm vào khăn qua áo. Tay run.
 "Còn vài đêm nữa," bác tài nói thêm. "Rồi con sẽ kể.\""""
 
 
-def reveal_pattern_F(name, age, pron, pron_cap, obj, sample):
+def reveal_pattern_F(name, age, pron, pron_cap, obj, sample, ep_num=11):
     """Pattern F: Monologue extended — passenger im lặng, tự sự internal sâu."""
     return f"""[pause:800ms]
 
@@ -404,11 +442,14 @@ def build_episode_v3(ep_num, passenger, regret, pattern):
     })
     sample = regret.get('sample_story', passenger['regret_label'])
 
-    new_reveal = REVEAL_BUILDERS[pattern](name, age, pron, pron_cap, obj, sample)
+    new_reveal = REVEAL_BUILDERS[pattern](name, age, pron, pron_cap, obj, sample, ep_num)
+    # V3.2: append variant block để fix same-pattern HIGH lặp
+    variant_block = reveal_variant_block(ep_num, name, pron, pron_cap, obj)
+    new_reveal_full = new_reveal + "\n\n" + variant_block
 
     # Find REVEAL section + replace
     pattern_re = re.compile(r'# REVEAL.*?(?=# PAYOFF)', re.S)
-    new_section = f"# REVEAL [section 4 — Pattern {pattern}: {PATTERN_NAMES[pattern]}]\n\n{new_reveal}\n\n---\n\n"
+    new_section = f"# REVEAL [section 4 — Pattern {pattern}: {PATTERN_NAMES[pattern]}]\n\n{new_reveal_full}\n\n---\n\n"
     result = pattern_re.sub(new_section, base_text)
 
     # Add pattern marker to header

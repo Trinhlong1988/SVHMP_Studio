@@ -141,6 +141,16 @@ Em gật. Không nói thêm.
 
 "Em biết — đốt thư không gửi được đến mẹ. Nhưng em cần đốt. Đốt là cách em giải phóng câu chuyện đã giữ trong lòng quá lâu."
 
+[pause:600ms]
+
+Có một đêm em nằm cạnh giường người ấy lúc người ấy đã yếu. Người ấy không nói nhiều — chỉ nắm tay em. Hai bàn tay đan. Lâu. Không ai nói gì. Em nhớ — đó là lần đầu tiên em và người ấy nắm tay yên lặng như thế.
+
+Cả đời người ấy chăm sóc em. Một đêm cuối, lần đầu em chăm người ấy. Một đêm. Sáng sau người ấy đi.
+
+Em hối hận vì đã không nắm tay người ấy nhiều lần hơn từ trước đó. Hai bàn tay chỉ chạm thẳng nhau trong đêm cuối — chứ không qua nhiều năm.
+
+
+
 ---
 
 # PAYOFF [section 5]

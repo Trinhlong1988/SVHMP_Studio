@@ -135,6 +135,14 @@ Cụ không quay đầu. Khẽ gật. Một cái gật rất nhỏ.
 
 "Đêm nay cụ đem băng cassette cũ về quê. Đặt lên ban thờ. Thắp nhang. Nói: 'Con nhớ rồi. Con xin lỗi.' Có thể người ấy nghe. Có thể không. Nhưng cụ cần nói."
 
+[pause:600ms]
+
+Trong gia đình cụ, người ấy là thế hệ giữ ký ức. Cha mẹ cụ từ lâu đã không còn. Cụ là người cuối cùng còn nhớ tên nhà bà cố — vùng quê cũ — món ăn cụ hay được dỗ ăn từ tấm bé. Khi người ấy đi, một mảng quá khứ của cụ đi theo.
+
+Cụ nhận ra điều đó muộn. Mỗi năm thêm tuổi, cụ lại nhớ ra một chi tiết người ấy từng kể — và tự buồn vì ngày đó cụ không lắng nghe đủ. Nay người ấy không còn để hỏi.
+
+
+
 ---
 
 # PAYOFF [section 5]

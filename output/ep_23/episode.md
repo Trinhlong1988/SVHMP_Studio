@@ -135,6 +135,16 @@ Chú không quay đầu. Khẽ gật. Một cái gật rất nhỏ.
 
 "Đêm nay chú đem áo dài trắng về quê. Đặt lên ban thờ. Thắp nhang. Nói: 'Con nhớ rồi. Con xin lỗi.' Có thể người ấy nghe. Có thể không. Nhưng chú cần nói."
 
+[pause:600ms]
+
+Chú có một album ảnh người ấy giữ — album cũ, ảnh đen trắng. Chú đem theo lên thành phố, đặt trên giá sách. Mỗi cuối năm chú lấy xuống xem một lần. Mỗi lần xem, chú nhớ thêm chi tiết: ảnh này chụp đâu, người ấy mặc gì, hôm đó là ngày gì.
+
+Album dày năm trang. Sau mười năm, chú đã thuộc từng ảnh. Nhưng có một ảnh — ảnh duy nhất chỉ riêng người ấy không có chú cùng — chú không nhớ chụp khi nào. Người ấy đứng trước một quán nhỏ. Mỉm cười. Có ai đó đứng phía sau — chỉ thấy bóng.
+
+Chú đoán đó là cha mẹ người ấy. Hoặc một người yêu cũ. Chú không có ai để hỏi. Người ấy đã đi.
+
+
+
 ---
 
 # PAYOFF [section 5]

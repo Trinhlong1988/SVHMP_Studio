@@ -131,7 +131,23 @@ Cô gật.
 
 "Cô đã viết một câu thư từ chiều — để đặt cùng con dao nhà bếp. Trong thư cô viết: 'Mẹ ơi con đã ngồi đúng chỗ mẹ rồi. Con xin lỗi vì ngày xưa con không hiểu. Giờ con hiểu.'"
 
-"Đến lượt cô truyền lại — cho con dâu, cho cháu dâu, cho ai sau này còn chịu nghe. Cách đợi không trách.
+"Đến lượt cô truyền lại — cho con dâu, cho cháu dâu, cho ai sau này còn chịu nghe. Cách đợi không trách."
+
+[pause:600ms]
+
+Trong gia đình cô, người ấy là thế hệ giữ ký ức. Cha mẹ cô từ lâu đã không còn. Cô là người cuối cùng còn nhớ tên nhà bà cố — vùng quê cũ — món ăn cô hay được dỗ ăn từ tấm bé. Khi người ấy đi, một mảng quá khứ của cô đi theo.
+
+Cô nhận ra điều đó muộn. Mỗi năm thêm tuổi, cô lại nhớ ra một chi tiết người ấy từng kể — và tự buồn vì ngày đó cô không lắng nghe đủ. Nay người ấy không còn để hỏi.
+
+
+
+[pause:600ms]
+
+Trong gia đình cô, người ấy là thế hệ giữ ký ức. Cha mẹ cô từ lâu đã không còn. Cô là người cuối cùng còn nhớ tên nhà bà cố — vùng quê cũ — món ăn cô hay được dỗ ăn từ tấm bé. Khi người ấy đi, một mảng quá khứ của cô đi theo.
+
+Cô nhận ra điều đó muộn. Mỗi năm thêm tuổi, cô lại nhớ ra một chi tiết người ấy từng kể — và tự buồn vì ngày đó cô không lắng nghe đủ. Nay người ấy không còn để hỏi.
+
+
 
 ---
 

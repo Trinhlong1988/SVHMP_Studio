@@ -135,6 +135,14 @@ Em không quay đầu. Khẽ gật. Một cái gật rất nhỏ.
 
 "Đêm nay em đem cái nồi đất nhỏ về quê. Đặt lên ban thờ. Thắp nhang. Nói: 'Con nhớ rồi. Con xin lỗi.' Có thể người ấy nghe. Có thể không. Nhưng em cần nói."
 
+[pause:600ms]
+
+Trong gia đình em, người ấy là thế hệ giữ ký ức. Cha mẹ em từ lâu đã không còn. Em là người cuối cùng còn nhớ tên nhà bà cố — vùng quê cũ — món ăn em hay được dỗ ăn từ tấm bé. Khi người ấy đi, một mảng quá khứ của em đi theo.
+
+Em nhận ra điều đó muộn. Mỗi năm thêm tuổi, em lại nhớ ra một chi tiết người ấy từng kể — và tự buồn vì ngày đó em không lắng nghe đủ. Nay người ấy không còn để hỏi.
+
+
+
 ---
 
 # PAYOFF [section 5]

@@ -141,6 +141,14 @@ Cô gật. Không nói thêm.
 
 "Cô biết — đốt thư không gửi được đến mẹ. Nhưng cô cần đốt. Đốt là cách cô giải phóng câu chuyện đã giữ trong lòng quá lâu."
 
+[pause:600ms]
+
+Trong gia đình cô, người ấy là thế hệ giữ ký ức. Cha mẹ cô từ lâu đã không còn. Cô là người cuối cùng còn nhớ tên nhà bà cố — vùng quê cũ — món ăn cô hay được dỗ ăn từ tấm bé. Khi người ấy đi, một mảng quá khứ của cô đi theo.
+
+Cô nhận ra điều đó muộn. Mỗi năm thêm tuổi, cô lại nhớ ra một chi tiết người ấy từng kể — và tự buồn vì ngày đó cô không lắng nghe đủ. Nay người ấy không còn để hỏi.
+
+
+
 ---
 
 # PAYOFF [section 5]

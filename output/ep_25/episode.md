@@ -141,6 +141,16 @@ Em gật. Không nói thêm.
 
 "Em biết — đốt thư không gửi được đến mẹ. Nhưng em cần đốt. Đốt là cách em giải phóng câu chuyện đã giữ trong lòng quá lâu."
 
+[pause:600ms]
+
+Em có một album ảnh người ấy giữ — album cũ, ảnh đen trắng. Em đem theo lên thành phố, đặt trên giá sách. Mỗi cuối năm em lấy xuống xem một lần. Mỗi lần xem, em nhớ thêm chi tiết: ảnh này chụp đâu, người ấy mặc gì, hôm đó là ngày gì.
+
+Album dày năm trang. Sau mười năm, em đã thuộc từng ảnh. Nhưng có một ảnh — ảnh duy nhất chỉ riêng người ấy không có em cùng — em không nhớ chụp khi nào. Người ấy đứng trước một quán nhỏ. Mỉm cười. Có ai đó đứng phía sau — chỉ thấy bóng.
+
+Em đoán đó là cha mẹ người ấy. Hoặc một người yêu cũ. Em không có ai để hỏi. Người ấy đã đi.
+
+
+
 ---
 
 # PAYOFF [section 5]

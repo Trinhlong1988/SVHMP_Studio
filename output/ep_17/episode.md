@@ -135,6 +135,16 @@ Chú không quay đầu. Khẽ gật. Một cái gật rất nhỏ.
 
 "Đêm nay chú đem cuốn sổ ghi chép về quê. Đặt lên ban thờ. Thắp nhang. Nói: 'Con nhớ rồi. Con xin lỗi.' Có thể người ấy nghe. Có thể không. Nhưng chú cần nói."
 
+[pause:600ms]
+
+Có một đêm chú nằm cạnh giường người ấy lúc người ấy đã yếu. Người ấy không nói nhiều — chỉ nắm tay chú. Hai bàn tay đan. Lâu. Không ai nói gì. Chú nhớ — đó là lần đầu tiên chú và người ấy nắm tay yên lặng như thế.
+
+Cả đời người ấy chăm sóc chú. Một đêm cuối, lần đầu chú chăm người ấy. Một đêm. Sáng sau người ấy đi.
+
+Chú hối hận vì đã không nắm tay người ấy nhiều lần hơn từ trước đó. Hai bàn tay chỉ chạm thẳng nhau trong đêm cuối — chứ không qua nhiều năm.
+
+
+
 ---
 
 # PAYOFF [section 5]

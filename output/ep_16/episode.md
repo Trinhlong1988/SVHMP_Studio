@@ -143,6 +143,14 @@ Nhưng Quang biết — câu trả lời là "Có". Là "Có từ lâu. Chỉ ch
 
 "Cách thương yêu cuối cùng là im lặng. Im lặng cùng người mình thương. Im lặng cho người mình thương ngủ yên."
 
+[pause:600ms]
+
+Trong gia đình cô, người ấy là thế hệ giữ ký ức. Cha mẹ cô từ lâu đã không còn. Cô là người cuối cùng còn nhớ tên nhà bà cố — vùng quê cũ — món ăn cô hay được dỗ ăn từ tấm bé. Khi người ấy đi, một mảng quá khứ của cô đi theo.
+
+Cô nhận ra điều đó muộn. Mỗi năm thêm tuổi, cô lại nhớ ra một chi tiết người ấy từng kể — và tự buồn vì ngày đó cô không lắng nghe đủ. Nay người ấy không còn để hỏi.
+
+
+
 ---
 
 # PAYOFF [section 5]

@@ -131,7 +131,27 @@ Cô gật.
 
 "Cô đã viết một câu thư từ chiều — để đặt cùng vật. Trong thư cô viết: 'Mẹ ơi con đã ngồi đúng chỗ mẹ rồi. Con xin lỗi vì ngày xưa con không hiểu. Giờ con hiểu.'"
 
-"Đến lượt cô truyền lại — cho con dâu, cho cháu dâu, cho ai sau này còn chịu nghe. Cách đợi không trách.
+"Đến lượt cô truyền lại — cho con dâu, cho cháu dâu, cho ai sau này còn chịu nghe. Cách đợi không trách."
+
+[pause:600ms]
+
+Cô có một album ảnh người ấy giữ — album cũ, ảnh đen trắng. Cô đem theo lên thành phố, đặt trên giá sách. Mỗi cuối năm cô lấy xuống xem một lần. Mỗi lần xem, cô nhớ thêm chi tiết: ảnh này chụp đâu, người ấy mặc gì, hôm đó là ngày gì.
+
+Album dày năm trang. Sau mười năm, cô đã thuộc từng ảnh. Nhưng có một ảnh — ảnh duy nhất chỉ riêng người ấy không có cô cùng — cô không nhớ chụp khi nào. Người ấy đứng trước một quán nhỏ. Mỉm cười. Có ai đó đứng phía sau — chỉ thấy bóng.
+
+Cô đoán đó là cha mẹ người ấy. Hoặc một người yêu cũ. Cô không có ai để hỏi. Người ấy đã đi.
+
+
+
+[pause:600ms]
+
+Cô có một album ảnh người ấy giữ — album cũ, ảnh đen trắng. Cô đem theo lên thành phố, đặt trên giá sách. Mỗi cuối năm cô lấy xuống xem một lần. Mỗi lần xem, cô nhớ thêm chi tiết: ảnh này chụp đâu, người ấy mặc gì, hôm đó là ngày gì.
+
+Album dày năm trang. Sau mười năm, cô đã thuộc từng ảnh. Nhưng có một ảnh — ảnh duy nhất chỉ riêng người ấy không có cô cùng — cô không nhớ chụp khi nào. Người ấy đứng trước một quán nhỏ. Mỉm cười. Có ai đó đứng phía sau — chỉ thấy bóng.
+
+Cô đoán đó là cha mẹ người ấy. Hoặc một người yêu cũ. Cô không có ai để hỏi. Người ấy đã đi.
+
+
 
 ---
 

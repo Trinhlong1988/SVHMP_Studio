@@ -137,6 +137,16 @@ Cô gật. "Cô nhớ. Mẹ nói chuyện qua vật. Không cần lời."
 
 "Cứ thế. Vật được truyền. Vết được thêm. Câu chuyện được kể qua các thế hệ — không bằng lời."
 
+[pause:600ms]
+
+Cô có một album ảnh người ấy giữ — album cũ, ảnh đen trắng. Cô đem theo lên thành phố, đặt trên giá sách. Mỗi cuối năm cô lấy xuống xem một lần. Mỗi lần xem, cô nhớ thêm chi tiết: ảnh này chụp đâu, người ấy mặc gì, hôm đó là ngày gì.
+
+Album dày năm trang. Sau mười năm, cô đã thuộc từng ảnh. Nhưng có một ảnh — ảnh duy nhất chỉ riêng người ấy không có cô cùng — cô không nhớ chụp khi nào. Người ấy đứng trước một quán nhỏ. Mỉm cười. Có ai đó đứng phía sau — chỉ thấy bóng.
+
+Cô đoán đó là cha mẹ người ấy. Hoặc một người yêu cũ. Cô không có ai để hỏi. Người ấy đã đi.
+
+
+
 ---
 
 # PAYOFF [section 5]

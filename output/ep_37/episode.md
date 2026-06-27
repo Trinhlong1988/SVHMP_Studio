@@ -141,6 +141,16 @@ Chú gật. Không nói thêm.
 
 "Chú biết — đốt thư không gửi được đến mẹ. Nhưng chú cần đốt. Đốt là cách chú giải phóng câu chuyện đã giữ trong lòng quá lâu."
 
+[pause:600ms]
+
+Có một đêm chú nằm cạnh giường người ấy lúc người ấy đã yếu. Người ấy không nói nhiều — chỉ nắm tay chú. Hai bàn tay đan. Lâu. Không ai nói gì. Chú nhớ — đó là lần đầu tiên chú và người ấy nắm tay yên lặng như thế.
+
+Cả đời người ấy chăm sóc chú. Một đêm cuối, lần đầu chú chăm người ấy. Một đêm. Sáng sau người ấy đi.
+
+Chú hối hận vì đã không nắm tay người ấy nhiều lần hơn từ trước đó. Hai bàn tay chỉ chạm thẳng nhau trong đêm cuối — chứ không qua nhiều năm.
+
+
+
 ---
 
 # PAYOFF [section 5]

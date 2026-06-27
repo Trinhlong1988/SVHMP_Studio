@@ -143,6 +143,16 @@ Nhưng Quang biết — câu trả lời là "Có". Là "Có từ lâu. Chỉ ch
 
 "Cách thương yêu cuối cùng là im lặng. Im lặng cùng người mình thương. Im lặng cho người mình thương ngủ yên."
 
+[pause:600ms]
+
+Cụ có một album ảnh người ấy giữ — album cũ, ảnh đen trắng. Cụ đem theo lên thành phố, đặt trên giá sách. Mỗi cuối năm cụ lấy xuống xem một lần. Mỗi lần xem, cụ nhớ thêm chi tiết: ảnh này chụp đâu, người ấy mặc gì, hôm đó là ngày gì.
+
+Album dày năm trang. Sau mười năm, cụ đã thuộc từng ảnh. Nhưng có một ảnh — ảnh duy nhất chỉ riêng người ấy không có cụ cùng — cụ không nhớ chụp khi nào. Người ấy đứng trước một quán nhỏ. Mỉm cười. Có ai đó đứng phía sau — chỉ thấy bóng.
+
+Cụ đoán đó là cha mẹ người ấy. Hoặc một người yêu cũ. Cụ không có ai để hỏi. Người ấy đã đi.
+
+
+
 ---
 
 # PAYOFF [section 5]

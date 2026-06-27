@@ -143,6 +143,16 @@ Nhưng Quang biết — câu trả lời là "Có". Là "Có từ lâu. Chỉ ch
 
 "Cách thương yêu cuối cùng là im lặng. Im lặng cùng người mình thương. Im lặng cho người mình thương ngủ yên."
 
+[pause:600ms]
+
+Có một đêm anh nằm cạnh giường người ấy lúc người ấy đã yếu. Người ấy không nói nhiều — chỉ nắm tay anh. Hai bàn tay đan. Lâu. Không ai nói gì. Anh nhớ — đó là lần đầu tiên anh và người ấy nắm tay yên lặng như thế.
+
+Cả đời người ấy chăm sóc anh. Một đêm cuối, lần đầu anh chăm người ấy. Một đêm. Sáng sau người ấy đi.
+
+Anh hối hận vì đã không nắm tay người ấy nhiều lần hơn từ trước đó. Hai bàn tay chỉ chạm thẳng nhau trong đêm cuối — chứ không qua nhiều năm.
+
+
+
 ---
 
 # PAYOFF [section 5]

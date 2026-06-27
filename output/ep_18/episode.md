@@ -131,7 +131,27 @@ Cụ gật.
 
 "Cụ đã viết một câu thư từ chiều — để đặt cùng cây bút máy. Trong thư cụ viết: 'Mẹ ơi con đã ngồi đúng chỗ mẹ rồi. Con xin lỗi vì ngày xưa con không hiểu. Giờ con hiểu.'"
 
-"Đến lượt cụ truyền lại — cho con dâu, cho cháu dâu, cho ai sau này còn chịu nghe. Cách đợi không trách.
+"Đến lượt cụ truyền lại — cho con dâu, cho cháu dâu, cho ai sau này còn chịu nghe. Cách đợi không trách."
+
+[pause:600ms]
+
+Có một đêm cụ nằm cạnh giường người ấy lúc người ấy đã yếu. Người ấy không nói nhiều — chỉ nắm tay cụ. Hai bàn tay đan. Lâu. Không ai nói gì. Cụ nhớ — đó là lần đầu tiên cụ và người ấy nắm tay yên lặng như thế.
+
+Cả đời người ấy chăm sóc cụ. Một đêm cuối, lần đầu cụ chăm người ấy. Một đêm. Sáng sau người ấy đi.
+
+Cụ hối hận vì đã không nắm tay người ấy nhiều lần hơn từ trước đó. Hai bàn tay chỉ chạm thẳng nhau trong đêm cuối — chứ không qua nhiều năm.
+
+
+
+[pause:600ms]
+
+Có một đêm cụ nằm cạnh giường người ấy lúc người ấy đã yếu. Người ấy không nói nhiều — chỉ nắm tay cụ. Hai bàn tay đan. Lâu. Không ai nói gì. Cụ nhớ — đó là lần đầu tiên cụ và người ấy nắm tay yên lặng như thế.
+
+Cả đời người ấy chăm sóc cụ. Một đêm cuối, lần đầu cụ chăm người ấy. Một đêm. Sáng sau người ấy đi.
+
+Cụ hối hận vì đã không nắm tay người ấy nhiều lần hơn từ trước đó. Hai bàn tay chỉ chạm thẳng nhau trong đêm cuối — chứ không qua nhiều năm.
+
+
 
 ---
 
