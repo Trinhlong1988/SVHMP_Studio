@@ -2,14 +2,20 @@
   "ep_number": 28,
   "phase_h_version": "H1-H7 v1.0",
   "stats": {
-    "tokens_count": 2560,
-    "sentences_approx": 326,
-    "adverbs_count": 160,
+    "tokens_count": 2707,
+    "sentences_approx": 340,
+    "adverbs_count": 169,
     "adverbs_ratio": 0.062,
-    "word_count": 2198,
-    "estimated_minutes": 14.2
+    "word_count": 2330,
+    "estimated_minutes": 15.0
   },
   "issues": [
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"trên\" lặp 25x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
     {
       "check": "H1_token_repeat",
       "severity": "warning",
@@ -19,19 +25,7 @@
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"trên\" lặp 24x trong ep",
-      "suggestion": "Đa dạng từ vựng, dùng synonym"
-    },
-    {
-      "check": "H1_token_repeat",
-      "severity": "warning",
       "evidence": "\"câu\" lặp 21x trong ep",
-      "suggestion": "Đa dạng từ vựng, dùng synonym"
-    },
-    {
-      "check": "H1_token_repeat",
-      "severity": "warning",
-      "evidence": "\"trong\" lặp 20x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
@@ -45,17 +39,11 @@
       "severity": "minor",
       "evidence": "Word \"biết\" xuất hiện 4x (BigVGAN tail risk)",
       "suggestion": "chưa biết → vẫn chưa hay / vẫn chưa rõ"
-    },
-    {
-      "check": "H10_duration_too_short",
-      "severity": "warning",
-      "evidence": "14.2 phút (target 15-18p, max 20p)",
-      "suggestion": "Expand thêm 127 từ để đạt 15p"
     }
   ],
   "issues_count_by_severity": {
     "critical": 0,
-    "warning": 5,
+    "warning": 3,
     "minor": 2
   },
   "verdict": "WARN",
