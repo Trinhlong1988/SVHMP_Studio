@@ -93,29 +93,28 @@ def main():
     else:
         print(f"  ✓ OK")
 
-    # 3. Bác tài 3rd line outside milestone
-    print("\n[3] Bác tài câu thứ 3 ngoài milestone EP:")
+    # 3. Bác tài quotes — STRICT pattern (chỉ match khi bác tài là speaker)
+    print("\n[3] Bác tài quote ngoài 2 standard (strict regex):")
     milestones = {1, 10, 20, 30, 40, 50, 60, 70, 73, 80, 90}
     non_ms_extra = []
+    # Strict: Bác tài + (cất lời|nói|đáp|bảo|hỏi|tiếp) + quote (loose newlines allowed)
+    strict_pattern = re.compile(r'Bác tài[^\n.]*?(?:cất lời|nói|đáp|bảo|hỏi|tiếp|liếc gương)[^"]*?"([^"]+)"')
     for n, t in eps.items():
         if n in milestones: continue
         body = strip_meta(t)
-        # Detect "Bác tài liếc gương. \"Đêm thứ N. ...\""
-        # This is R42 foreshadow allowed in CLIFFHANGER
-        # Count beyond standard 2 lines
-        driver_quotes = re.findall(r'Bác tài[^"]+"([^"]+)"', body)
+        driver_quotes = strict_pattern.findall(body)
         standard = {'Con đã nhớ ra chưa?', 'Chưa tới lúc.'}
         extras = [q for q in driver_quotes if q.strip() not in standard]
-        # R42 allows foreshadow in CLIFFHANGER
-        if len(extras) > 1:  # > 1 extra beyond R42 = bug
-            non_ms_extra.append((n, len(extras)))
+        # R42 allows 1 foreshadow per CLIFFHANGER + 2 standard = 3 total max non-MS
+        if len(extras) > 1:  # > 1 extra = real bug
+            non_ms_extra.append((n, len(extras), extras[:2]))
     if non_ms_extra:
-        print(f"  🟡 {len(non_ms_extra)} EPs có >1 extra driver line ngoài R42 foreshadow")
-        for n, c in non_ms_extra[:5]:
-            print(f"    EP{n:02d}: {c} extras")
-        findings.append(('driver_extra_overuse', non_ms_extra))
+        print(f"  🟡 {len(non_ms_extra)} EPs có >1 extra driver quote (R55)")
+        for n, c, samples in non_ms_extra[:5]:
+            print(f"    EP{n:02d}: {c} extras → '{samples[0][:60]}'")
+        findings.append(('driver_extra_overuse', [(n, c) for n, c, _ in non_ms_extra]))
     else:
-        print(f"  ✓ OK")
+        print(f"  ✓ OK (strict regex)")
 
     # 4. Ghost manifest > 1 per EP
     print("\n[4] Ghost manifest 'xuất hiện' > 1 / EP:")

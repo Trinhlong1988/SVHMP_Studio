@@ -671,7 +671,7 @@
       },
       {
         "check": "5.9 Vietnamese pronoun balance",
-        "value": "{'em': 73, 'anh': 2, 'chị': 0, 'bác': 11}",
+        "value": "{'em': 72, 'anh': 2, 'chị': 0, 'bác': 11}",
         "sev": "LOW"
       },
       {
@@ -1380,7 +1380,7 @@
       },
       {
         "check": "5.9 Vietnamese pronoun balance",
-        "value": "{'em': 119, 'anh': 7, 'chị': 14, 'bác': 1}",
+        "value": "{'em': 118, 'anh': 8, 'chị': 14, 'bác': 1}",
         "sev": "LOW"
       },
       {
@@ -1418,7 +1418,7 @@
       },
       {
         "check": "5.9 Vietnamese pronoun balance",
-        "value": "{'em': 89, 'anh': 19, 'chị': 0, 'bác': 0}",
+        "value": "{'em': 88, 'anh': 19, 'chị': 0, 'bác': 0}",
         "sev": "LOW"
       },
       {
@@ -1613,7 +1613,7 @@
       },
       {
         "check": "5.9 Vietnamese pronoun balance",
-        "value": "{'em': 125, 'anh': 12, 'chị': 0, 'bác': 2}",
+        "value": "{'em': 121, 'anh': 12, 'chị': 0, 'bác': 2}",
         "sev": "LOW"
       },
       {
@@ -1849,7 +1849,7 @@
       },
       {
         "check": "1.2 word frequency > 20 (non-name)",
-        "value": "6",
+        "value": "7",
         "sev": "MEDIUM"
       },
       {
@@ -1907,7 +1907,7 @@
       },
       {
         "check": "5.9 Vietnamese pronoun balance",
-        "value": "{'em': 108, 'anh': 22, 'chị': 0, 'bác': 2}",
+        "value": "{'em': 106, 'anh': 22, 'chị': 0, 'bác': 2}",
         "sev": "LOW"
       },
       {

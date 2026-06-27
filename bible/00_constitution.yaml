@@ -73,6 +73,56 @@ R44_dictionary_block:
     Vi phạm = R41 HARDLOCK block commit.
   no_inference: "KHÔNG suy luận đúng/sai. Chỉ check theo rule cứng."
 
+R56_story_mode_hoi_tuong_am_anh:
+  # round 14 add 2026-06-28 (Mr.Long CORE FEEDBACK)
+  rule: "REVEAL phải là HỒI TƯỞNG ÁM ẢNH TÂM LINH — CẤM kể lể chronological year-by-year"
+  is_truyen_mode:
+    must_be:
+      - "Hồi tưởng" — fragments ký ức không tuyến tính
+      - "Ám ảnh tâm linh" — chi tiết quay trở (vật/âm/mùi/ánh)
+      - "Dư âm" — kết để mở, viewer suy nghĩ tiếp
+      - "Sensory anchor" — mỗi memory có 1 vật/âm/mùi cụ thể neo lại
+    must_NOT_be:
+      - Kể lể tuyến tính: "Năm tôi X — Năm tôi Y — Năm tôi Z..."
+      - Liệt kê đời: học cấp 1, cấp 2, đại học, đi làm, cưới...
+      - Recap biography từ A→Z
+      - Show resume (lương, vị trí công ty)
+  example_correct: |
+    "Tay bà run. Lạnh.
+     Em nhớ tay bà ấm. Hồi mười tuổi. Bà chải tóc em.
+     Bây giờ tay bà — lạnh — em không chải lại được.
+     Khăn tay trong túi áo bà. Em mở. Hai đầu thêu hoa cúc.
+     Cùng cúc bà cài tóc — hồi đám tang ông."
+  example_wrong: |
+    "Em là Bích Trâm. 32 tuổi. Em làm giáo viên.
+     Năm em 18 tuổi sinh Linh. Em chia tay bố Linh khi em 2 tuổi.
+     Em nuôi Linh một mình 18 năm. Em đi dạy ở trường X..."
+  detection_patterns:
+    - "Năm tôi/em [age] tuổi" lặp 5+ lần consecutive = chronological recap
+    - "Em làm [job]" intro full resume = biography mode
+    - Year-by-year breakdown > 60% REVEAL = miên man
+  enforcement: tools/audit_story_mode.py + manual editorial
+  cross_ref: [bible/01 series_bible.soul_dna, bible/06 lexical_style]
+
+R57_reveal_vignette_structure:
+  # round 14 add 2026-06-28
+  rule: "REVEAL = 3-5 vignettes hồi tưởng (KHÔNG chronological recap)"
+  ideal_structure:
+    vignette_1: "Memory peak — moment thật đắt (bà run tay / mẹ chia bún chả / vợ đan chăn)"
+    vignette_2: "Sensory return — vật/âm/mùi gợi memory lại"
+    vignette_3: "Death moment — không kể chi tiết, chỉ một mệnh đề"
+    vignette_4: "Regret crystallize — câu cuối hối tiếc"
+    vignette_5: "Tonight purpose — vì sao đêm nay đem vật về"
+  forbidden:
+    - "Câu mở rộng resume: tốt nghiệp đại học X, làm công ty Y, lương Z..."
+    - "Năm-tuổi breakdown linear"
+    - "Mở rộng quá 2 thế hệ family tree (bố mẹ ông bà cô chú anh chị em)"
+  hard_limit:
+    max_chronological_year_mentions: 3  # > 3 "năm X tuổi" = miên man
+    max_resume_facts: 2  # > 2 facts về lương/vị trí/công ty = show resume
+  enforcement: audit_story_mode.py + R41 hook integration
+  cross_ref: [R39 word count, R54 REVEAL min 600]
+
 R53_template_pattern_variety_hardlock:
   # round 13 add 2026-06-28 (Mr.Long lệnh nghiêm túc khai thác)
   rule: "Atmospheric template phrases CẤM lặp > 30 EPs với pattern identical"
