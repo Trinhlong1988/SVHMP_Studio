@@ -2,49 +2,61 @@
   "ep_number": 23,
   "phase_h_version": "H1-H7 v1.0",
   "stats": {
-    "tokens_count": 2719,
-    "sentences_approx": 356,
-    "adverbs_count": 167,
-    "adverbs_ratio": 0.061,
-    "word_count": 2351,
-    "estimated_minutes": 15.2
+    "tokens_count": 1640,
+    "sentences_approx": 190,
+    "adverbs_count": 65,
+    "adverbs_ratio": 0.04,
+    "word_count": 1497,
+    "estimated_minutes": 9.7
   },
   "issues": [
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"đêm\" lặp 24x trong ep",
+      "evidence": "\"yến\" lặp 20x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"trên\" lặp 23x trong ep",
-      "suggestion": "Đa dạng từ vựng, dùng synonym"
-    },
-    {
-      "check": "H1_token_repeat",
-      "severity": "warning",
-      "evidence": "\"trong\" lặp 21x trong ep",
+      "evidence": "\"khải phong\" lặp 17x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
       "check": "H2_dict_unusual_compound",
       "severity": "minor",
-      "evidence": "Cụm từ dài bất thường: ['` prompt_version', 'REG_FAM_004 signature_object', 'OBJ_AO_DAI_TRANG signature_setting']",
+      "evidence": "Cụm từ dài bất thường: ['` prompt_version', '0.55 quang_memory_fragment', 'cluster temporal']",
       "suggestion": "TENTATIVE — Mr.Long verify trong từ điển VN"
+    },
+    {
+      "check": "H7_ngram_repetition",
+      "severity": "warning",
+      "evidence": "Bi-gram \"khải phong\" lặp 3x trong 1 câu",
+      "suggestion": "Reword câu để tránh repetition"
     },
     {
       "check": "H9_stop_consonant_tail",
       "severity": "minor",
-      "evidence": "Word \"biết\" xuất hiện 2x (BigVGAN tail risk)",
+      "evidence": "Word \"khuất\" xuất hiện 2x (BigVGAN tail risk)",
+      "suggestion": "khuất bóng → khuất dần / mờ xa"
+    },
+    {
+      "check": "H9_stop_consonant_tail",
+      "severity": "minor",
+      "evidence": "Word \"biết\" xuất hiện 1x (BigVGAN tail risk)",
       "suggestion": "chưa biết → vẫn chưa hay / vẫn chưa rõ"
+    },
+    {
+      "check": "H10_duration_too_short",
+      "severity": "warning",
+      "evidence": "9.7 phút (target 15-18p, max 20p)",
+      "suggestion": "Expand thêm 828 từ để đạt 15p"
     }
   ],
   "issues_count_by_severity": {
     "critical": 0,
-    "warning": 3,
-    "minor": 2
+    "warning": 4,
+    "minor": 3
   },
   "verdict": "WARN",
   "next_action": "Generator review issues, optional regen"
