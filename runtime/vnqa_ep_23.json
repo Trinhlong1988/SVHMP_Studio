@@ -2,12 +2,12 @@
   "ep_number": 23,
   "phase_h_version": "H1-H7 v1.0",
   "stats": {
-    "tokens_count": 2572,
-    "sentences_approx": 342,
-    "adverbs_count": 158,
+    "tokens_count": 2719,
+    "sentences_approx": 356,
+    "adverbs_count": 167,
     "adverbs_ratio": 0.061,
-    "word_count": 2219,
-    "estimated_minutes": 14.3
+    "word_count": 2351,
+    "estimated_minutes": 15.2
   },
   "issues": [
     {
@@ -19,19 +19,13 @@
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"trên\" lặp 22x trong ep",
+      "evidence": "\"trên\" lặp 23x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
       "check": "H1_token_repeat",
       "severity": "warning",
       "evidence": "\"trong\" lặp 21x trong ep",
-      "suggestion": "Đa dạng từ vựng, dùng synonym"
-    },
-    {
-      "check": "H1_token_repeat",
-      "severity": "warning",
-      "evidence": "\"trắng\" lặp 18x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
@@ -45,17 +39,11 @@
       "severity": "minor",
       "evidence": "Word \"biết\" xuất hiện 2x (BigVGAN tail risk)",
       "suggestion": "chưa biết → vẫn chưa hay / vẫn chưa rõ"
-    },
-    {
-      "check": "H10_duration_too_short",
-      "severity": "warning",
-      "evidence": "14.3 phút (target 15-18p, max 20p)",
-      "suggestion": "Expand thêm 105 từ để đạt 15p"
     }
   ],
   "issues_count_by_severity": {
     "critical": 0,
-    "warning": 5,
+    "warning": 3,
     "minor": 2
   },
   "verdict": "WARN",
