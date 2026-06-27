@@ -52,7 +52,7 @@ passengers:
   novelty_hash: 5c28374fe4b2
   status: framework_lock
 - id: PAS_0014
-  char_name: Hoàng Long
+  char_name: Hoàng Lâm
   pillar: family_regret
   regret_sub_archetype: REG_FAM_001
   regret_label: Mẹ đợi con về Tết — con không về kịp
@@ -60,7 +60,7 @@ passengers:
   signature_setting: setting_dem_giao_thua
   age_range: 26-35
   gender: nam
-  display_name: Hoàng Long (26-35)
+  display_name: Hoàng Lâm (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: 3
   novelty_hash: f898f501381f
@@ -80,7 +80,7 @@ passengers:
   novelty_hash: 95ed6392b05c
   status: framework_lock
 - id: PAS_0016
-  char_name: Lâm Tuấn
+  char_name: Tuấn Quốc
   pillar: family_regret
   regret_sub_archetype: REG_FAM_001
   regret_label: Mẹ đợi con về Tết — con không về kịp
@@ -88,7 +88,7 @@ passengers:
   signature_setting: setting_dem_giao_thua
   age_range: 51-65
   gender: nam
-  display_name: Lâm Tuấn (51-65)
+  display_name: Tuấn Quốc (51-65)
   narrative_hook: TBD by Generator
   assigned_ep: 5
   novelty_hash: 96a4a3fd8bf5
@@ -108,7 +108,7 @@ passengers:
   novelty_hash: d999a0d4d114
   status: framework_lock
 - id: PAS_0018
-  char_name: Quốc Bảo
+  char_name: Bảo Minh
   pillar: family_regret
   regret_sub_archetype: REG_FAM_001
   regret_label: Mẹ đợi con về Tết — con không về kịp
@@ -116,13 +116,13 @@ passengers:
   signature_setting: setting_dem_giao_thua
   age_range: 18-25
   gender: nam
-  display_name: Quốc Bảo (18-25)
+  display_name: Bảo Minh (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 7
   novelty_hash: fe0105b57de3
   status: framework_lock
 - id: PAS_0019
-  char_name: Minh Hùng
+  char_name: Hùng Kiệt
   pillar: family_regret
   regret_sub_archetype: REG_FAM_002
   regret_label: Bà nội mất giao thừa — cháu không bắt máy
@@ -130,13 +130,13 @@ passengers:
   signature_setting: setting_dem_giao_thua
   age_range: 18-25
   gender: nam
-  display_name: Minh Hùng (18-25)
+  display_name: Hùng Kiệt (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 8
   novelty_hash: 3545b0e213d8
   status: framework_lock
 - id: PAS_0020
-  char_name: Phượng Trang
+  char_name: Phượng Ngọc
   pillar: family_regret
   regret_sub_archetype: REG_FAM_002
   regret_label: Bà nội mất giao thừa — cháu không bắt máy
@@ -144,55 +144,55 @@ passengers:
   signature_setting: setting_dong_lanh
   age_range: 26-35
   gender: nu
-  display_name: Phượng Trang (26-35)
+  display_name: Phượng Ngọc (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: 9
   novelty_hash: '574579121825'
   status: framework_lock
 - id: PAS_0021
-  char_name: Kiệt Khánh
-  pillar: family_regret
-  regret_sub_archetype: REG_FAM_002
-  regret_label: Bà nội mất giao thừa — cháu không bắt máy
-  signature_object: OBJ_KHAN_TAY_CU
-  signature_setting: setting_dem_giao_thua
-  age_range: 36-50
-  gender: nam
-  display_name: Kiệt Khánh (36-50)
-  narrative_hook: TBD by Generator
-  assigned_ep: 10
-  novelty_hash: c31aed3cce6f
-  status: framework_lock
-- id: PAS_0022
-  char_name: Ngọc Châu
-  pillar: family_regret
-  regret_sub_archetype: REG_FAM_002
-  regret_label: Bà nội mất giao thừa — cháu không bắt máy
-  signature_object: OBJ_BANG_CASSETTE
-  signature_setting: setting_dong_lanh
-  age_range: 51-65
-  gender: nu
-  display_name: Ngọc Châu (51-65)
-  narrative_hook: TBD by Generator
-  assigned_ep: 11
-  novelty_hash: b510c7b800fd
-  status: framework_lock
-- id: PAS_0023
   char_name: Nguyên Việt
   pillar: family_regret
   regret_sub_archetype: REG_FAM_002
   regret_label: Bà nội mất giao thừa — cháu không bắt máy
   signature_object: OBJ_KHAN_TAY_CU
   signature_setting: setting_dem_giao_thua
+  age_range: 36-50
+  gender: nam
+  display_name: Nguyên Việt (36-50)
+  narrative_hook: TBD by Generator
+  assigned_ep: 10
+  novelty_hash: c31aed3cce6f
+  status: framework_lock
+- id: PAS_0022
+  char_name: Châu Quỳnh
+  pillar: family_regret
+  regret_sub_archetype: REG_FAM_002
+  regret_label: Bà nội mất giao thừa — cháu không bắt máy
+  signature_object: OBJ_BANG_CASSETTE
+  signature_setting: setting_dong_lanh
+  age_range: 51-65
+  gender: nu
+  display_name: Châu Quỳnh (51-65)
+  narrative_hook: TBD by Generator
+  assigned_ep: 11
+  novelty_hash: b510c7b800fd
+  status: framework_lock
+- id: PAS_0023
+  char_name: Hữu Trí
+  pillar: family_regret
+  regret_sub_archetype: REG_FAM_002
+  regret_label: Bà nội mất giao thừa — cháu không bắt máy
+  signature_object: OBJ_KHAN_TAY_CU
+  signature_setting: setting_dem_giao_thua
   age_range: 66+
   gender: nam
-  display_name: Nguyên Việt (66+)
+  display_name: Hữu Trí (66+)
   narrative_hook: TBD by Generator
   assigned_ep: 12
   novelty_hash: 0393d337bbcb
   status: framework_lock
 - id: PAS_0024
-  char_name: Quỳnh Tuyết
+  char_name: Tuyết Lan
   pillar: family_regret
   regret_sub_archetype: REG_FAM_002
   regret_label: Bà nội mất giao thừa — cháu không bắt máy
@@ -200,55 +200,55 @@ passengers:
   signature_setting: setting_dong_lanh
   age_range: 18-25
   gender: nu
-  display_name: Quỳnh Tuyết (18-25)
+  display_name: Tuyết Lan (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 13
   novelty_hash: 76b8bf4d729e
   status: framework_lock
 - id: PAS_0025
-  char_name: Mai Lan
-  pillar: family_regret
-  regret_sub_archetype: REG_FAM_003
-  regret_label: Cha câm lặng — con không hiểu cha
-  signature_object: OBJ_BUT_MAY_CHA
-  signature_setting: setting_TBD
-  age_range: 18-25
-  gender: nu
-  display_name: Mai Lan (18-25)
-  narrative_hook: TBD by Generator
-  assigned_ep: 14
-  novelty_hash: 0ececd71cfec
-  status: framework_lock
-- id: PAS_0026
-  char_name: Hữu Trí
-  pillar: family_regret
-  regret_sub_archetype: REG_FAM_003
-  regret_label: Cha câm lặng — con không hiểu cha
-  signature_object: OBJ_SO_GHI_CHEP
-  signature_setting: setting_TBD
-  age_range: 26-35
-  gender: nam
-  display_name: Hữu Trí (26-35)
-  narrative_hook: TBD by Generator
-  assigned_ep: 15
-  novelty_hash: 887e916bb036
-  status: framework_lock
-- id: PAS_0027
   char_name: Cúc Trúc
   pillar: family_regret
   regret_sub_archetype: REG_FAM_003
   regret_label: Cha câm lặng — con không hiểu cha
   signature_object: OBJ_BUT_MAY_CHA
   signature_setting: setting_TBD
+  age_range: 18-25
+  gender: nu
+  display_name: Cúc Trúc (18-25)
+  narrative_hook: TBD by Generator
+  assigned_ep: 14
+  novelty_hash: 0ececd71cfec
+  status: framework_lock
+- id: PAS_0026
+  char_name: Triết Vinh
+  pillar: family_regret
+  regret_sub_archetype: REG_FAM_003
+  regret_label: Cha câm lặng — con không hiểu cha
+  signature_object: OBJ_SO_GHI_CHEP
+  signature_setting: setting_TBD
+  age_range: 26-35
+  gender: nam
+  display_name: Triết Vinh (26-35)
+  narrative_hook: TBD by Generator
+  assigned_ep: 15
+  novelty_hash: 887e916bb036
+  status: framework_lock
+- id: PAS_0027
+  char_name: Liễu Đào
+  pillar: family_regret
+  regret_sub_archetype: REG_FAM_003
+  regret_label: Cha câm lặng — con không hiểu cha
+  signature_object: OBJ_BUT_MAY_CHA
+  signature_setting: setting_TBD
   age_range: 36-50
   gender: nu
-  display_name: Cúc Trúc (36-50)
+  display_name: Liễu Đào (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 16
   novelty_hash: 73ef6b46c529
   status: framework_lock
 - id: PAS_0028
-  char_name: Triết Vinh
+  char_name: Phú Quý
   pillar: family_regret
   regret_sub_archetype: REG_FAM_003
   regret_label: Cha câm lặng — con không hiểu cha
@@ -256,13 +256,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 51-65
   gender: nam
-  display_name: Triết Vinh (51-65)
+  display_name: Phú Quý (51-65)
   narrative_hook: TBD by Generator
   assigned_ep: 17
   novelty_hash: 23251ff55cf6
   status: framework_lock
 - id: PAS_0029
-  char_name: Liễu Đào
+  char_name: Hồng Hạnh
   pillar: family_regret
   regret_sub_archetype: REG_FAM_003
   regret_label: Cha câm lặng — con không hiểu cha
@@ -270,55 +270,55 @@ passengers:
   signature_setting: setting_TBD
   age_range: 66+
   gender: nu
-  display_name: Liễu Đào (66+)
+  display_name: Hồng Hạnh (66+)
   narrative_hook: TBD by Generator
   assigned_ep: 18
   novelty_hash: b2c5e839a989
   status: framework_lock
 - id: PAS_0030
-  char_name: Phú Quý
-  pillar: family_regret
-  regret_sub_archetype: REG_FAM_004
-  regret_label: Em mất khi anh đi xa — anh không kịp về
-  signature_object: OBJ_AO_DAI_TRANG
-  signature_setting: setting_TBD
-  age_range: 18-25
-  gender: nam
-  display_name: Phú Quý (18-25)
-  narrative_hook: TBD by Generator
-  assigned_ep: 19
-  novelty_hash: d455fcee3119
-  status: framework_lock
-- id: PAS_0031
-  char_name: Hồng An
-  pillar: family_regret
-  regret_sub_archetype: REG_FAM_004
-  regret_label: Em mất khi anh đi xa — anh không kịp về
-  signature_object: OBJ_THU_TAY
-  signature_setting: setting_TBD
-  age_range: 26-35
-  gender: nu
-  display_name: Hồng An (26-35)
-  narrative_hook: TBD by Generator
-  assigned_ep: 20
-  novelty_hash: 740021249ca3
-  status: framework_lock
-- id: PAS_0032
   char_name: Đức Phúc
   pillar: family_regret
   regret_sub_archetype: REG_FAM_004
   regret_label: Em mất khi anh đi xa — anh không kịp về
   signature_object: OBJ_AO_DAI_TRANG
   signature_setting: setting_TBD
+  age_range: 18-25
+  gender: nam
+  display_name: Đức Phúc (18-25)
+  narrative_hook: TBD by Generator
+  assigned_ep: 19
+  novelty_hash: d455fcee3119
+  status: framework_lock
+- id: PAS_0031
+  char_name: Hiền Thuỳ
+  pillar: family_regret
+  regret_sub_archetype: REG_FAM_004
+  regret_label: Em mất khi anh đi xa — anh không kịp về
+  signature_object: OBJ_THU_TAY
+  signature_setting: setting_TBD
+  age_range: 26-35
+  gender: nu
+  display_name: Hiền Thuỳ (26-35)
+  narrative_hook: TBD by Generator
+  assigned_ep: 20
+  novelty_hash: 740021249ca3
+  status: framework_lock
+- id: PAS_0032
+  char_name: Khang Huy
+  pillar: family_regret
+  regret_sub_archetype: REG_FAM_004
+  regret_label: Em mất khi anh đi xa — anh không kịp về
+  signature_object: OBJ_AO_DAI_TRANG
+  signature_setting: setting_TBD
   age_range: 36-50
   gender: nam
-  display_name: Đức Phúc (36-50)
+  display_name: Khang Huy (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 21
   novelty_hash: 9f14ef68de79
   status: framework_lock
 - id: PAS_0033
-  char_name: Hạnh Hiền
+  char_name: Mỹ Nhi
   pillar: family_regret
   regret_sub_archetype: REG_FAM_004
   regret_label: Em mất khi anh đi xa — anh không kịp về
@@ -326,13 +326,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 51-65
   gender: nu
-  display_name: Hạnh Hiền (51-65)
+  display_name: Mỹ Nhi (51-65)
   narrative_hook: TBD by Generator
   assigned_ep: 22
   novelty_hash: 4e7bd605cbec
   status: framework_lock
 - id: PAS_0034
-  char_name: Khang Huy
+  char_name: Hải Nhật
   pillar: family_regret
   regret_sub_archetype: REG_FAM_004
   regret_label: Em mất khi anh đi xa — anh không kịp về
@@ -340,13 +340,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 66+
   gender: nam
-  display_name: Khang Huy (66+)
+  display_name: Hải Nhật (66+)
   narrative_hook: TBD by Generator
   assigned_ep: 23
   novelty_hash: e81a844d14aa
   status: framework_lock
 - id: PAS_0035
-  char_name: Thuỳ Mỹ
+  char_name: Vy Vi
   pillar: family_regret
   regret_sub_archetype: REG_FAM_005
   regret_label: Ông mất — cháu chưa kịp xin lỗi vì cãi ông
@@ -354,55 +354,55 @@ passengers:
   signature_setting: setting_TBD
   age_range: 18-25
   gender: nu
-  display_name: Thuỳ Mỹ (18-25)
+  display_name: Vy Vi (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 24
   novelty_hash: 9c4ea9212a91
   status: framework_lock
 - id: PAS_0036
-  char_name: Hải Nhật
-  pillar: family_regret
-  regret_sub_archetype: REG_FAM_005
-  regret_label: Ông mất — cháu chưa kịp xin lỗi vì cãi ông
-  signature_object: OBJ_KINH_CU
-  signature_setting: setting_TBD
-  age_range: 26-35
-  gender: nam
-  display_name: Hải Nhật (26-35)
-  narrative_hook: TBD by Generator
-  assigned_ep: 25
-  novelty_hash: 6ec16e926cc4
-  status: framework_lock
-- id: PAS_0037
-  char_name: Nhi Vy
-  pillar: family_regret
-  regret_sub_archetype: REG_FAM_005
-  regret_label: Ông mất — cháu chưa kịp xin lỗi vì cãi ông
-  signature_object: OBJ_GAY_TRUC
-  signature_setting: setting_TBD
-  age_range: 36-50
-  gender: nu
-  display_name: Nhi Vy (36-50)
-  narrative_hook: TBD by Generator
-  assigned_ep: 26
-  novelty_hash: 3c442c862448
-  status: framework_lock
-- id: PAS_0038
   char_name: Thành Đạt
   pillar: family_regret
   regret_sub_archetype: REG_FAM_005
   regret_label: Ông mất — cháu chưa kịp xin lỗi vì cãi ông
   signature_object: OBJ_KINH_CU
   signature_setting: setting_TBD
+  age_range: 26-35
+  gender: nam
+  display_name: Thành Đạt (26-35)
+  narrative_hook: TBD by Generator
+  assigned_ep: 25
+  novelty_hash: 6ec16e926cc4
+  status: framework_lock
+- id: PAS_0037
+  char_name: Hà Như
+  pillar: family_regret
+  regret_sub_archetype: REG_FAM_005
+  regret_label: Ông mất — cháu chưa kịp xin lỗi vì cãi ông
+  signature_object: OBJ_GAY_TRUC
+  signature_setting: setting_TBD
+  age_range: 36-50
+  gender: nu
+  display_name: Hà Như (36-50)
+  narrative_hook: TBD by Generator
+  assigned_ep: 26
+  novelty_hash: 3c442c862448
+  status: framework_lock
+- id: PAS_0038
+  char_name: Trung Hiếu
+  pillar: family_regret
+  regret_sub_archetype: REG_FAM_005
+  regret_label: Ông mất — cháu chưa kịp xin lỗi vì cãi ông
+  signature_object: OBJ_KINH_CU
+  signature_setting: setting_TBD
   age_range: 51-65
   gender: nam
-  display_name: Thành Đạt (51-65)
+  display_name: Trung Hiếu (51-65)
   narrative_hook: TBD by Generator
   assigned_ep: 27
   novelty_hash: af2ee3d3b634
   status: framework_lock
 - id: PAS_0039
-  char_name: Vi Hà
+  char_name: Yến Hương
   pillar: family_regret
   regret_sub_archetype: REG_FAM_005
   regret_label: Ông mất — cháu chưa kịp xin lỗi vì cãi ông
@@ -410,13 +410,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 66+
   gender: nu
-  display_name: Vi Hà (66+)
+  display_name: Yến Hương (66+)
   narrative_hook: TBD by Generator
   assigned_ep: 28
   novelty_hash: 93952eb9718a
   status: framework_lock
 - id: PAS_0040
-  char_name: Trung Hiếu
+  char_name: Khoa Đăng
   pillar: family_regret
   regret_sub_archetype: REG_FAM_006
   regret_label: Mẹ chăm con suốt đời — con quên hỏi mẹ thích gì
@@ -424,13 +424,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 18-25
   gender: nam
-  display_name: Trung Hiếu (18-25)
+  display_name: Khoa Đăng (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 29
   novelty_hash: 7f38efc12d86
   status: framework_lock
 - id: PAS_0041
-  char_name: Như Yến
+  char_name: Thảo Sương
   pillar: family_regret
   regret_sub_archetype: REG_FAM_006
   regret_label: Mẹ chăm con suốt đời — con quên hỏi mẹ thích gì
@@ -438,13 +438,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 26-35
   gender: nu
-  display_name: Như Yến (26-35)
+  display_name: Thảo Sương (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: 30
   novelty_hash: 94f926d38473
   status: framework_lock
 - id: PAS_0042
-  char_name: Khoa Đăng
+  char_name: Trường Thiên
   pillar: family_regret
   regret_sub_archetype: REG_FAM_006
   regret_label: Mẹ chăm con suốt đời — con quên hỏi mẹ thích gì
@@ -452,13 +452,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 36-50
   gender: nam
-  display_name: Khoa Đăng (36-50)
+  display_name: Trường Thiên (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 31
   novelty_hash: 98ff26dbffbc
   status: framework_lock
 - id: PAS_0043
-  char_name: Hương Thảo
+  char_name: Tiên Nga
   pillar: family_regret
   regret_sub_archetype: REG_FAM_006
   regret_label: Mẹ chăm con suốt đời — con quên hỏi mẹ thích gì
@@ -466,13 +466,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 51-65
   gender: nu
-  display_name: Hương Thảo (51-65)
+  display_name: Tiên Nga (51-65)
   narrative_hook: TBD by Generator
   assigned_ep: 32
   novelty_hash: 64c5915af8d5
   status: framework_lock
 - id: PAS_0044
-  char_name: Trường Thiên
+  char_name: Cường Sơn
   pillar: family_regret
   regret_sub_archetype: REG_FAM_006
   regret_label: Mẹ chăm con suốt đời — con quên hỏi mẹ thích gì
@@ -480,13 +480,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 66+
   gender: nam
-  display_name: Trường Thiên (66+)
+  display_name: Cường Sơn (66+)
   narrative_hook: TBD by Generator
   assigned_ep: 33
   novelty_hash: 85ec9fdad580
   status: framework_lock
 - id: PAS_0045
-  char_name: Sương Tiên
+  char_name: Hoa Trinh
   pillar: love_regret
   regret_sub_archetype: REG_LOV_001
   regret_label: Yêu thầm tới lúc người ấy mất — chưa kịp tỏ tình
@@ -494,97 +494,97 @@ passengers:
   signature_setting: setting_dem_thang_tu_HN
   age_range: 18-25
   gender: nu
-  display_name: Sương Tiên (18-25)
+  display_name: Hoa Trinh (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 34
   novelty_hash: 7d928019ed36
   status: framework_lock
 - id: PAS_0046
-  char_name: Cường Sơn
-  pillar: love_regret
-  regret_sub_archetype: REG_LOV_001
-  regret_label: Yêu thầm tới lúc người ấy mất — chưa kịp tỏ tình
-  signature_object: OBJ_AO_GIO_XANH
-  signature_setting: setting_san_bay_dem
-  age_range: 26-35
-  gender: nam
-  display_name: Cường Sơn (26-35)
-  narrative_hook: TBD by Generator
-  assigned_ep: 35
-  novelty_hash: 9229e3d33a41
-  status: framework_lock
-- id: PAS_0047
-  char_name: Nga Linh
-  pillar: love_regret
-  regret_sub_archetype: REG_LOV_001
-  regret_label: Yêu thầm tới lúc người ấy mất — chưa kịp tỏ tình
-  signature_object: OBJ_DONG_HO_XA_CU
-  signature_setting: setting_dem_thang_tu_HN
-  age_range: 36-50
-  gender: nu
-  display_name: Nga Linh (36-50)
-  narrative_hook: TBD by Generator
-  assigned_ep: 36
-  novelty_hash: 4a1d90270cd4
-  status: framework_lock
-- id: PAS_0048
   char_name: Hào Hoài
   pillar: love_regret
   regret_sub_archetype: REG_LOV_001
   regret_label: Yêu thầm tới lúc người ấy mất — chưa kịp tỏ tình
   signature_object: OBJ_AO_GIO_XANH
   signature_setting: setting_san_bay_dem
+  age_range: 26-35
+  gender: nam
+  display_name: Hào Hoài (26-35)
+  narrative_hook: TBD by Generator
+  assigned_ep: 35
+  novelty_hash: 9229e3d33a41
+  status: framework_lock
+- id: PAS_0047
+  char_name: Hân Hậu
+  pillar: love_regret
+  regret_sub_archetype: REG_LOV_001
+  regret_label: Yêu thầm tới lúc người ấy mất — chưa kịp tỏ tình
+  signature_object: OBJ_DONG_HO_XA_CU
+  signature_setting: setting_dem_thang_tu_HN
+  age_range: 36-50
+  gender: nu
+  display_name: Hân Hậu (36-50)
+  narrative_hook: TBD by Generator
+  assigned_ep: 36
+  novelty_hash: 4a1d90270cd4
+  status: framework_lock
+- id: PAS_0048
+  char_name: Tấn Phát
+  pillar: love_regret
+  regret_sub_archetype: REG_LOV_001
+  regret_label: Yêu thầm tới lúc người ấy mất — chưa kịp tỏ tình
+  signature_object: OBJ_AO_GIO_XANH
+  signature_setting: setting_san_bay_dem
   age_range: 51-65
   gender: nam
-  display_name: Hào Hoài (51-65)
+  display_name: Tấn Phát (51-65)
   narrative_hook: TBD by Generator
   assigned_ep: 37
   novelty_hash: e2069268baa1
   status: framework_lock
 - id: PAS_0049
-  char_name: Tấn Phát
-  pillar: love_regret
-  regret_sub_archetype: REG_LOV_002
-  regret_label: Vợ trẻ mất khi sinh — chồng vắng vì công tác
-  signature_object: OBJ_VONG_TAY
-  signature_setting: setting_TBD
-  age_range: 18-25
-  gender: nam
-  display_name: Tấn Phát (18-25)
-  narrative_hook: TBD by Generator
-  assigned_ep: 38
-  novelty_hash: 96e7ee75d547
-  status: framework_lock
-- id: PAS_0050
-  char_name: Hoa Trinh
-  pillar: love_regret
-  regret_sub_archetype: REG_LOV_002
-  regret_label: Vợ trẻ mất khi sinh — chồng vắng vì công tác
-  signature_object: OBJ_QUAN_AO_TRE_SO_SINH
-  signature_setting: setting_TBD
-  age_range: 26-35
-  gender: nu
-  display_name: Hoa Trinh (26-35)
-  narrative_hook: TBD by Generator
-  assigned_ep: 39
-  novelty_hash: 7577d63d53da
-  status: framework_lock
-- id: PAS_0051
   char_name: Gia Khôi
   pillar: love_regret
   regret_sub_archetype: REG_LOV_002
   regret_label: Vợ trẻ mất khi sinh — chồng vắng vì công tác
   signature_object: OBJ_VONG_TAY
   signature_setting: setting_TBD
+  age_range: 18-25
+  gender: nam
+  display_name: Gia Khôi (18-25)
+  narrative_hook: TBD by Generator
+  assigned_ep: 38
+  novelty_hash: 96e7ee75d547
+  status: framework_lock
+- id: PAS_0050
+  char_name: Khanh Trân
+  pillar: love_regret
+  regret_sub_archetype: REG_LOV_002
+  regret_label: Vợ trẻ mất khi sinh — chồng vắng vì công tác
+  signature_object: OBJ_QUAN_AO_TRE_SO_SINH
+  signature_setting: setting_TBD
+  age_range: 26-35
+  gender: nu
+  display_name: Khanh Trân (26-35)
+  narrative_hook: TBD by Generator
+  assigned_ep: 39
+  novelty_hash: 7577d63d53da
+  status: framework_lock
+- id: PAS_0051
+  char_name: Dũng Anh
+  pillar: love_regret
+  regret_sub_archetype: REG_LOV_002
+  regret_label: Vợ trẻ mất khi sinh — chồng vắng vì công tác
+  signature_object: OBJ_VONG_TAY
+  signature_setting: setting_TBD
   age_range: 36-50
   gender: nam
-  display_name: Gia Khôi (36-50)
+  display_name: Dũng Anh (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 40
   novelty_hash: 8103cafd4633
   status: framework_lock
 - id: PAS_0052
-  char_name: Hân Hậu
+  char_name: Quyên My
   pillar: love_regret
   regret_sub_archetype: REG_LOV_002
   regret_label: Vợ trẻ mất khi sinh — chồng vắng vì công tác
@@ -592,13 +592,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 51-65
   gender: nu
-  display_name: Hân Hậu (51-65)
+  display_name: Quyên My (51-65)
   narrative_hook: TBD by Generator
   assigned_ep: 41
   novelty_hash: 00f0e02db479
   status: framework_lock
 - id: PAS_0053
-  char_name: Khanh Nhung
+  char_name: Hợp Ái
   pillar: love_regret
   regret_sub_archetype: REG_LOV_003
   regret_label: Chia tay vì hiểu lầm — chưa kịp xin lỗi
@@ -606,13 +606,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 18-25
   gender: nu
-  display_name: Khanh Nhung (18-25)
+  display_name: Hợp Ái (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 42
   novelty_hash: 559e7e7bc0ab
   status: framework_lock
 - id: PAS_0054
-  char_name: Dũng Quang
+  char_name: Vũ Thái
   pillar: love_regret
   regret_sub_archetype: REG_LOV_003
   regret_label: Chia tay vì hiểu lầm — chưa kịp xin lỗi
@@ -620,13 +620,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 26-35
   gender: nam
-  display_name: Dũng Quang (26-35)
+  display_name: Vũ Thái (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: 43
   novelty_hash: 22822a038c31
   status: framework_lock
 - id: PAS_0055
-  char_name: Trân Quyên
+  char_name: Ân Ly
   pillar: love_regret
   regret_sub_archetype: REG_LOV_003
   regret_label: Chia tay vì hiểu lầm — chưa kịp xin lỗi
@@ -634,13 +634,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 36-50
   gender: nu
-  display_name: Trân Quyên (36-50)
+  display_name: Ân Ly (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 44
   novelty_hash: 00dad6b4db17
   status: framework_lock
 - id: PAS_0056
-  char_name: Anh Vũ
+  char_name: Hoà Sĩ
   pillar: love_regret
   regret_sub_archetype: REG_LOV_003
   regret_label: Chia tay vì hiểu lầm — chưa kịp xin lỗi
@@ -648,13 +648,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 51-65
   gender: nam
-  display_name: Anh Vũ (51-65)
+  display_name: Hoà Sĩ (51-65)
   narrative_hook: TBD by Generator
   assigned_ep: 45
   novelty_hash: e874e000a972
   status: framework_lock
 - id: PAS_0057
-  char_name: Thái Hoà
+  char_name: Lộc Phong
   pillar: love_regret
   regret_sub_archetype: REG_LOV_004
   regret_label: Yêu xa 10 năm — gặp lại thì người ấy đã có gia đình
@@ -662,13 +662,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 18-25
   gender: nam
-  display_name: Thái Hoà (18-25)
+  display_name: Lộc Phong (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 46
   novelty_hash: 14fd39ac39c0
   status: framework_lock
 - id: PAS_0058
-  char_name: My Hợp
+  char_name: Liên Thư
   pillar: love_regret
   regret_sub_archetype: REG_LOV_004
   regret_label: Yêu xa 10 năm — gặp lại thì người ấy đã có gia đình
@@ -676,13 +676,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 26-35
   gender: nu
-  display_name: My Hợp (26-35)
+  display_name: Liên Thư (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: 47
   novelty_hash: af86de31191f
   status: framework_lock
 - id: PAS_0059
-  char_name: Sĩ Lộc
+  char_name: Bá Nhân
   pillar: love_regret
   regret_sub_archetype: REG_LOV_004
   regret_label: Yêu xa 10 năm — gặp lại thì người ấy đã có gia đình
@@ -690,13 +690,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 36-50
   gender: nam
-  display_name: Sĩ Lộc (36-50)
+  display_name: Bá Nhân (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 48
   novelty_hash: 8c7754f2997b
   status: framework_lock
 - id: PAS_0060
-  char_name: Ái Ân
+  char_name: Yên Thy
   pillar: love_regret
   regret_sub_archetype: REG_LOV_004
   regret_label: Yêu xa 10 năm — gặp lại thì người ấy đã có gia đình
@@ -704,13 +704,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 51-65
   gender: nu
-  display_name: Ái Ân (51-65)
+  display_name: Yên Thy (51-65)
   narrative_hook: TBD by Generator
   assigned_ep: 49
   novelty_hash: 4f6725a6f287
   status: framework_lock
 - id: PAS_0061
-  char_name: Ly Liên
+  char_name: Khả Thanh
   pillar: love_regret
   regret_sub_archetype: REG_LOV_005
   regret_label: Chồng già mất — vợ tiếc chưa nói 'cảm ơn'
@@ -718,13 +718,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 18-25
   gender: nu
-  display_name: Ly Liên (18-25)
+  display_name: Khả Thanh (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 50
   novelty_hash: 2d54f548fdee
   status: framework_lock
 - id: PAS_0062
-  char_name: Phong Tùng
+  char_name: Khải Toàn
   pillar: love_regret
   regret_sub_archetype: REG_LOV_005
   regret_label: Chồng già mất — vợ tiếc chưa nói 'cảm ơn'
@@ -732,13 +732,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 26-35
   gender: nam
-  display_name: Phong Tùng (26-35)
+  display_name: Khải Toàn (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: 51
   novelty_hash: 591489bf23b0
   status: framework_lock
 - id: PAS_0063
-  char_name: Thư Yên
+  char_name: Cẩm Bích
   pillar: love_regret
   regret_sub_archetype: REG_LOV_005
   regret_label: Chồng già mất — vợ tiếc chưa nói 'cảm ơn'
@@ -746,13 +746,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 36-50
   gender: nu
-  display_name: Thư Yên (36-50)
+  display_name: Cẩm Bích (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 52
   novelty_hash: b2b63991abef
   status: framework_lock
 - id: PAS_0064
-  char_name: Bá Nhân
+  char_name: Định Sang
   pillar: love_regret
   regret_sub_archetype: REG_LOV_005
   regret_label: Chồng già mất — vợ tiếc chưa nói 'cảm ơn'
@@ -760,13 +760,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 51-65
   gender: nam
-  display_name: Bá Nhân (51-65)
+  display_name: Định Sang (51-65)
   narrative_hook: TBD by Generator
   assigned_ep: 53
   novelty_hash: 35e538144215
   status: framework_lock
 - id: PAS_0065
-  char_name: Khải Toàn
+  char_name: Tín Đông
   pillar: love_regret
   regret_sub_archetype: REG_LOV_006
   regret_label: Yêu xa thư tay — cô gái mất trước khi anh đọc thư cuối
@@ -774,13 +774,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 18-25
   gender: nam
-  display_name: Khải Toàn (18-25)
+  display_name: Tín Đông (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 54
   novelty_hash: 6c2e29c5d83f
   status: framework_lock
 - id: PAS_0066
-  char_name: Thy Khả
+  char_name: Kim Ngân
   pillar: love_regret
   regret_sub_archetype: REG_LOV_006
   regret_label: Yêu xa thư tay — cô gái mất trước khi anh đọc thư cuối
@@ -788,13 +788,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 26-35
   gender: nu
-  display_name: Thy Khả (26-35)
+  display_name: Kim Ngân (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: 55
   novelty_hash: 6c23c7144818
   status: framework_lock
 - id: PAS_0067
-  char_name: Định Sang
+  char_name: Văn Triệu
   pillar: love_regret
   regret_sub_archetype: REG_LOV_006
   regret_label: Yêu xa thư tay — cô gái mất trước khi anh đọc thư cuối
@@ -802,13 +802,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 36-50
   gender: nam
-  display_name: Định Sang (36-50)
+  display_name: Văn Triệu (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 56
   novelty_hash: c83ac021228f
   status: framework_lock
 - id: PAS_0068
-  char_name: Thanh Cẩm
+  char_name: Quân Tịnh
   pillar: love_regret
   regret_sub_archetype: REG_LOV_006
   regret_label: Yêu xa thư tay — cô gái mất trước khi anh đọc thư cuối
@@ -816,13 +816,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 51-65
   gender: nu
-  display_name: Thanh Cẩm (51-65)
+  display_name: Quân Tịnh (51-65)
   narrative_hook: TBD by Generator
   assigned_ep: 57
   novelty_hash: e2a3bcb2d2f9
   status: framework_lock
 - id: PAS_0069
-  char_name: Bích Tú
+  char_name: Quế Vân
   pillar: promise_regret
   regret_sub_archetype: REG_PRO_001
   regret_label: Hứa đưa con đi công viên — không kịp
@@ -830,13 +830,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 18-25
   gender: nu
-  display_name: Bích Tú (18-25)
+  display_name: Quế Vân (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 58
   novelty_hash: dcf663388041
   status: framework_lock
 - id: PAS_0070
-  char_name: Tín Đông
+  char_name: Thắng Mẫn
   pillar: promise_regret
   regret_sub_archetype: REG_PRO_001
   regret_label: Hứa đưa con đi công viên — không kịp
@@ -844,13 +844,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 26-35
   gender: nam
-  display_name: Tín Đông (26-35)
+  display_name: Thắng Mẫn (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: 59
   novelty_hash: 6514aa17a1bd
   status: framework_lock
 - id: PAS_0071
-  char_name: Kim Ngân
+  char_name: Đan Phụng
   pillar: promise_regret
   regret_sub_archetype: REG_PRO_001
   regret_label: Hứa đưa con đi công viên — không kịp
@@ -858,13 +858,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 36-50
   gender: nu
-  display_name: Kim Ngân (36-50)
+  display_name: Đan Phụng (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 60
   novelty_hash: b09e715968e9
   status: framework_lock
 - id: PAS_0072
-  char_name: Văn Triệu
+  char_name: Cảnh Bình
   pillar: promise_regret
   regret_sub_archetype: REG_PRO_001
   regret_label: Hứa đưa con đi công viên — không kịp
@@ -872,13 +872,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 51-65
   gender: nam
-  display_name: Văn Triệu (51-65)
+  display_name: Cảnh Bình (51-65)
   narrative_hook: TBD by Generator
   assigned_ep: 61
   novelty_hash: 236165d43607
   status: framework_lock
 - id: PAS_0073
-  char_name: Thắng Mẫn
+  char_name: Tâm Bằng
   pillar: promise_regret
   regret_sub_archetype: REG_PRO_002
   regret_label: Hứa về ăn Tết với mẹ — không về
@@ -886,13 +886,13 @@ passengers:
   signature_setting: setting_can_tet
   age_range: 18-25
   gender: nam
-  display_name: Thắng Mẫn (18-25)
+  display_name: Tâm Bằng (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 62
   novelty_hash: 0c7e6aa18e3c
   status: framework_lock
 - id: PAS_0074
-  char_name: Phương Quân
+  char_name: Ánh Thuý
   pillar: promise_regret
   regret_sub_archetype: REG_PRO_002
   regret_label: Hứa về ăn Tết với mẹ — không về
@@ -900,13 +900,13 @@ passengers:
   signature_setting: setting_can_tet
   age_range: 26-35
   gender: nu
-  display_name: Phương Quân (26-35)
+  display_name: Ánh Thuý (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: 63
   novelty_hash: 659a0ba6e054
   status: framework_lock
 - id: PAS_0075
-  char_name: Cảnh Bình
+  char_name: Hoàn Liêm
   pillar: promise_regret
   regret_sub_archetype: REG_PRO_002
   regret_label: Hứa về ăn Tết với mẹ — không về
@@ -914,13 +914,13 @@ passengers:
   signature_setting: setting_can_tet
   age_range: 36-50
   gender: nam
-  display_name: Cảnh Bình (36-50)
+  display_name: Hoàn Liêm (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 64
   novelty_hash: d1612da1322f
   status: framework_lock
 - id: PAS_0076
-  char_name: Tịnh Quế
+  char_name: Trà Thu
   pillar: promise_regret
   regret_sub_archetype: REG_PRO_002
   regret_label: Hứa về ăn Tết với mẹ — không về
@@ -928,13 +928,13 @@ passengers:
   signature_setting: setting_can_tet
   age_range: 51-65
   gender: nu
-  display_name: Tịnh Quế (51-65)
+  display_name: Trà Thu (51-65)
   narrative_hook: TBD by Generator
   assigned_ep: 65
   novelty_hash: b17a80456587
   status: framework_lock
 - id: PAS_0077
-  char_name: Vân Đan
+  char_name: Loan Giang
   pillar: promise_regret
   regret_sub_archetype: REG_PRO_003
   regret_label: Hứa cưới — đến ngày không tới được
@@ -942,13 +942,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 18-25
   gender: nu
-  display_name: Vân Đan (18-25)
+  display_name: Loan Giang (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 66
   novelty_hash: 144172cc5a4f
   status: framework_lock
 - id: PAS_0078
-  char_name: Tâm Tiến
+  char_name: Đỉnh Pháp
   pillar: promise_regret
   regret_sub_archetype: REG_PRO_003
   regret_label: Hứa cưới — đến ngày không tới được
@@ -956,13 +956,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 26-35
   gender: nam
-  display_name: Tâm Tiến (26-35)
+  display_name: Đỉnh Pháp (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: 67
   novelty_hash: 8ccf6d090597
   status: framework_lock
 - id: PAS_0079
-  char_name: Phụng Ánh
+  char_name: Lam Mộc
   pillar: promise_regret
   regret_sub_archetype: REG_PRO_003
   regret_label: Hứa cưới — đến ngày không tới được
@@ -970,13 +970,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 36-50
   gender: nu
-  display_name: Phụng Ánh (36-50)
+  display_name: Lam Mộc (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 68
   novelty_hash: c41c5196b4fc
   status: framework_lock
 - id: PAS_0080
-  char_name: Bằng Hoàn
+  char_name: Tỉnh Đoàn
   pillar: promise_regret
   regret_sub_archetype: REG_PRO_004
   regret_label: Hứa thăm ông bà cuối tuần — quên
@@ -984,13 +984,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 18-25
   gender: nam
-  display_name: Bằng Hoàn (18-25)
+  display_name: Tỉnh Đoàn (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 69
   novelty_hash: 2cc252084b35
   status: framework_lock
 - id: PAS_0081
-  char_name: Thuý Trà
+  char_name: Băng Chi
   pillar: promise_regret
   regret_sub_archetype: REG_PRO_004
   regret_label: Hứa thăm ông bà cuối tuần — quên
@@ -998,13 +998,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 26-35
   gender: nu
-  display_name: Thuý Trà (26-35)
+  display_name: Băng Chi (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: 70
   novelty_hash: 7bc0842288a7
   status: framework_lock
 - id: PAS_0082
-  char_name: Liêm Đỉnh
+  char_name: Cát Bính
   pillar: promise_regret
   regret_sub_archetype: REG_PRO_004
   regret_label: Hứa thăm ông bà cuối tuần — quên
@@ -1012,13 +1012,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 36-50
   gender: nam
-  display_name: Liêm Đỉnh (36-50)
+  display_name: Cát Bính (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 71
   novelty_hash: 2583128df1a4
   status: framework_lock
 - id: PAS_0083
-  char_name: Thu Loan
+  char_name: Khiết Dung
   pillar: promise_regret
   regret_sub_archetype: REG_PRO_005
   regret_label: Hứa đưa mẹ đi khám sức khỏe — quên 6 tháng
@@ -1026,13 +1026,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 18-25
   gender: nu
-  display_name: Thu Loan (18-25)
+  display_name: Khiết Dung (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 72
   novelty_hash: 9b8a62a84d3f
   status: framework_lock
 - id: PAS_0084
-  char_name: Pháp Tỉnh
+  char_name: Mạnh Đạo
   pillar: promise_regret
   regret_sub_archetype: REG_PRO_005
   regret_label: Hứa đưa mẹ đi khám sức khỏe — quên 6 tháng
@@ -1040,13 +1040,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 26-35
   gender: nam
-  display_name: Pháp Tỉnh (26-35)
+  display_name: Mạnh Đạo (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: 74
   novelty_hash: cef240a29b0b
   status: framework_lock
 - id: PAS_0085
-  char_name: Giang Lam
+  char_name: Hiên Thiền
   pillar: promise_regret
   regret_sub_archetype: REG_PRO_005
   regret_label: Hứa đưa mẹ đi khám sức khỏe — quên 6 tháng
@@ -1054,13 +1054,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 36-50
   gender: nu
-  display_name: Giang Lam (36-50)
+  display_name: Hiên Thiền (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 75
   novelty_hash: 67a9fcdfbbfe
   status: framework_lock
 - id: PAS_0086
-  char_name: Đoàn Cát
+  char_name: Sinh Tự
   pillar: promise_regret
   regret_sub_archetype: REG_PRO_006
   regret_label: Hứa giữ liên lạc — 5 năm không gọi 1 lần
@@ -1068,13 +1068,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 18-25
   gender: nam
-  display_name: Đoàn Cát (18-25)
+  display_name: Sinh Tự (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 76
   novelty_hash: 9ef92914eb02
   status: framework_lock
 - id: PAS_0087
-  char_name: Mộc Băng
+  char_name: Tuệ Lệ
   pillar: promise_regret
   regret_sub_archetype: REG_PRO_006
   regret_label: Hứa giữ liên lạc — 5 năm không gọi 1 lần
@@ -1082,13 +1082,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 26-35
   gender: nu
-  display_name: Mộc Băng (26-35)
+  display_name: Tuệ Lệ (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: 77
   novelty_hash: 3a7ace1f9ef1
   status: framework_lock
 - id: PAS_0088
-  char_name: Bính Mạnh
+  char_name: Quan Phục
   pillar: promise_regret
   regret_sub_archetype: REG_PRO_006
   regret_label: Hứa giữ liên lạc — 5 năm không gọi 1 lần
@@ -1096,13 +1096,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 36-50
   gender: nam
-  display_name: Bính Mạnh (36-50)
+  display_name: Quan Phục (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 78
   novelty_hash: 5678bb6e971d
   status: framework_lock
 - id: PAS_0089
-  char_name: Chi Khiết
+  char_name: Nương Sa
   pillar: kindness_regret
   regret_sub_archetype: REG_KIN_001
   regret_label: Cô giáo cũ mất — chưa kịp đến thăm
@@ -1110,13 +1110,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 18-25
   gender: nu
-  display_name: Chi Khiết (18-25)
+  display_name: Nương Sa (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 79
   novelty_hash: ba899ce79927
   status: framework_lock
 - id: PAS_0090
-  char_name: Đạo Sinh
+  char_name: Vĩnh Thịnh
   pillar: kindness_regret
   regret_sub_archetype: REG_KIN_001
   regret_label: Cô giáo cũ mất — chưa kịp đến thăm
@@ -1124,13 +1124,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 26-35
   gender: nam
-  display_name: Đạo Sinh (26-35)
+  display_name: Vĩnh Thịnh (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: 80
   novelty_hash: 6f1b3d9f0154
   status: framework_lock
 - id: PAS_0091
-  char_name: Dung Hiên
+  char_name: Vịnh Sao
   pillar: kindness_regret
   regret_sub_archetype: REG_KIN_001
   regret_label: Cô giáo cũ mất — chưa kịp đến thăm
@@ -1138,13 +1138,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 36-50
   gender: nu
-  display_name: Dung Hiên (36-50)
+  display_name: Vịnh Sao (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 81
   novelty_hash: 3049b1029c5c
   status: framework_lock
 - id: PAS_0092
-  char_name: Lương Tự
+  char_name: Đại Nghĩa
   pillar: kindness_regret
   regret_sub_archetype: REG_KIN_002
   regret_label: Bà bán nước cho mình ngồi nhờ đêm mưa — không kịp cảm ơn
@@ -1152,13 +1152,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 18-25
   gender: nam
-  display_name: Lương Tự (18-25)
+  display_name: Đại Nghĩa (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 82
   novelty_hash: a46a071905f2
   status: framework_lock
 - id: PAS_0093
-  char_name: Thiền Tuệ
+  char_name: Hỷ Nhuệ
   pillar: kindness_regret
   regret_sub_archetype: REG_KIN_002
   regret_label: Bà bán nước cho mình ngồi nhờ đêm mưa — không kịp cảm ơn
@@ -1166,13 +1166,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 26-35
   gender: nu
-  display_name: Thiền Tuệ (26-35)
+  display_name: Hỷ Nhuệ (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: 83
   novelty_hash: 5e587a6bd40a
   status: framework_lock
 - id: PAS_0094
-  char_name: Quan Phục
+  char_name: Lực Thiết
   pillar: kindness_regret
   regret_sub_archetype: REG_KIN_002
   regret_label: Bà bán nước cho mình ngồi nhờ đêm mưa — không kịp cảm ơn
@@ -1180,13 +1180,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 36-50
   gender: nam
-  display_name: Quan Phục (36-50)
+  display_name: Lực Thiết (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 84
   novelty_hash: e962f4d0dc6b
   status: framework_lock
 - id: PAS_0095
-  char_name: Lệ Nương
+  char_name: Thoa Lý
   pillar: kindness_regret
   regret_sub_archetype: REG_KIN_003
   regret_label: Đồng nghiệp giúp mình lúc khó — chưa kịp trả ơn thì họ chuyển
@@ -1194,13 +1194,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 18-25
   gender: nu
-  display_name: Lệ Nương (18-25)
+  display_name: Thoa Lý (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 85
   novelty_hash: de74c95c9f9d
   status: framework_lock
 - id: PAS_0096
-  char_name: Vĩnh Thịnh
+  char_name: Tây Kha
   pillar: kindness_regret
   regret_sub_archetype: REG_KIN_003
   regret_label: Đồng nghiệp giúp mình lúc khó — chưa kịp trả ơn thì họ chuyển
@@ -1208,13 +1208,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 26-35
   gender: nam
-  display_name: Vĩnh Thịnh (26-35)
+  display_name: Tây Kha (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: 86
   novelty_hash: a430df5527e7
   status: framework_lock
 - id: PAS_0097
-  char_name: Sa Vịnh
+  char_name: Mây Nắng
   pillar: kindness_regret
   regret_sub_archetype: REG_KIN_003
   regret_label: Đồng nghiệp giúp mình lúc khó — chưa kịp trả ơn thì họ chuyển
@@ -1222,13 +1222,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 36-50
   gender: nu
-  display_name: Sa Vịnh (36-50)
+  display_name: Mây Nắng (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 87
   novelty_hash: 55ef9bca4487
   status: framework_lock
 - id: PAS_0098
-  char_name: Đại Nghĩa
+  char_name: Huỳnh Cao
   pillar: kindness_regret
   regret_sub_archetype: REG_KIN_004
   regret_label: Bác xe ôm 10 năm chở đi học — chưa lần cảm ơn
@@ -1236,13 +1236,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 18-25
   gender: nam
-  display_name: Đại Nghĩa (18-25)
+  display_name: Huỳnh Cao (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 88
   novelty_hash: 4e1ba9ce692e
   status: framework_lock
 - id: PAS_0099
-  char_name: Sao Hỷ
+  char_name: Thi Ninh
   pillar: kindness_regret
   regret_sub_archetype: REG_KIN_004
   regret_label: Bác xe ôm 10 năm chở đi học — chưa lần cảm ơn
@@ -1250,13 +1250,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 26-35
   gender: nu
-  display_name: Sao Hỷ (26-35)
+  display_name: Thi Ninh (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: 89
   novelty_hash: 0e875bebf8cd
   status: framework_lock
 - id: PAS_0100
-  char_name: Lực Thiết
+  char_name: Trọng Lễ
   pillar: kindness_regret
   regret_sub_archetype: REG_KIN_004
   regret_label: Bác xe ôm 10 năm chở đi học — chưa lần cảm ơn
@@ -1264,13 +1264,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 36-50
   gender: nam
-  display_name: Lực Thiết (36-50)
+  display_name: Trọng Lễ (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: null
   novelty_hash: b7670a3840b1
   status: framework_lock
 - id: PAS_0101
-  char_name: Nhuệ Thoa
+  char_name: Phi Tô
   pillar: kindness_regret
   regret_sub_archetype: REG_KIN_005
   regret_label: Người lạ giúp lúc lạc đường — chưa kịp hỏi tên
@@ -1278,13 +1278,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 18-25
   gender: nu
-  display_name: Nhuệ Thoa (18-25)
+  display_name: Phi Tô (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: null
   novelty_hash: 60abbe943ff0
   status: framework_lock
 - id: PAS_0102
-  char_name: Tây Kha
+  char_name: Thoại Đỗ
   pillar: kindness_regret
   regret_sub_archetype: REG_KIN_005
   regret_label: Người lạ giúp lúc lạc đường — chưa kịp hỏi tên
@@ -1292,13 +1292,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 26-35
   gender: nam
-  display_name: Tây Kha (26-35)
+  display_name: Thoại Đỗ (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: null
   novelty_hash: ef7d1ed5a82e
   status: framework_lock
 - id: PAS_0103
-  char_name: Lý Mây
+  char_name: Mỵ Bạch
   pillar: self_regret
   regret_sub_archetype: REG_SELF_001
   regret_label: Bỏ giấc mơ vẽ — theo nghề an toàn
@@ -1306,13 +1306,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 18-25
   gender: nu
-  display_name: Lý Mây (18-25)
+  display_name: Mỵ Bạch (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: null
   novelty_hash: 80522406f69c
   status: framework_lock
 - id: PAS_0104
-  char_name: Huỳnh Cao
+  char_name: Chí Thiện
   pillar: self_regret
   regret_sub_archetype: REG_SELF_001
   regret_label: Bỏ giấc mơ vẽ — theo nghề an toàn
@@ -1320,13 +1320,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 26-35
   gender: nam
-  display_name: Huỳnh Cao (26-35)
+  display_name: Chí Thiện (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: null
   novelty_hash: cc35563d699e
   status: framework_lock
 - id: PAS_0105
-  char_name: Nắng Thi
+  char_name: Khuyên Hảo
   pillar: self_regret
   regret_sub_archetype: REG_SELF_001
   regret_label: Bỏ giấc mơ vẽ — theo nghề an toàn
@@ -1334,13 +1334,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 36-50
   gender: nu
-  display_name: Nắng Thi (36-50)
+  display_name: Khuyên Hảo (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: null
   novelty_hash: dbd62e47e547
   status: framework_lock
 - id: PAS_0106
-  char_name: Trọng Lễ
+  char_name: Nhiên Dụng
   pillar: self_regret
   regret_sub_archetype: REG_SELF_002
   regret_label: Không dám tỏ tình — cả đời độc thân
@@ -1348,13 +1348,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 18-25
   gender: nam
-  display_name: Trọng Lễ (18-25)
+  display_name: Nhiên Dụng (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: null
   novelty_hash: f60bb8195827
   status: framework_lock
 - id: PAS_0107
-  char_name: Ninh Phi
+  char_name: Trầm Mộng
   pillar: self_regret
   regret_sub_archetype: REG_SELF_002
   regret_label: Không dám tỏ tình — cả đời độc thân
@@ -1362,13 +1362,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 26-35
   gender: nu
-  display_name: Ninh Phi (26-35)
+  display_name: Trầm Mộng (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: null
   novelty_hash: f0f1a06848bd
   status: framework_lock
 - id: PAS_0108
-  char_name: Thoại Đỗ
+  char_name: Diễn Thuận
   pillar: self_regret
   regret_sub_archetype: REG_SELF_002
   regret_label: Không dám tỏ tình — cả đời độc thân
@@ -1376,13 +1376,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 36-50
   gender: nam
-  display_name: Thoại Đỗ (36-50)
+  display_name: Diễn Thuận (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: null
   novelty_hash: 8ae3d0436d8a
   status: framework_lock
 - id: PAS_0109
-  char_name: Hiệp Tô
+  char_name: Tuyên Phấn
   pillar: self_regret
   regret_sub_archetype: REG_SELF_003
   regret_label: Bỏ con vì sự nghiệp — cuối đời không có ai
@@ -1390,13 +1390,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 18-25
   gender: nu
-  display_name: Hiệp Tô (18-25)
+  display_name: Tuyên Phấn (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: null
   novelty_hash: 4541b98a9498
   status: framework_lock
 - id: PAS_0110
-  char_name: Chí Thiện
+  char_name: Hiệp Phương
   pillar: self_regret
   regret_sub_archetype: REG_SELF_003
   regret_label: Bỏ con vì sự nghiệp — cuối đời không có ai
@@ -1404,13 +1404,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 26-35
   gender: nam
-  display_name: Chí Thiện (26-35)
+  display_name: Hiệp Phương (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: null
   novelty_hash: 75b7716dd9d2
   status: framework_lock
 - id: PAS_0111
-  char_name: Nhiên Dụng
+  char_name: Thuấn Bạt
   pillar: self_regret
   regret_sub_archetype: REG_SELF_004
   regret_label: Sợ bệnh viện — bỏ qua dấu hiệu cảnh báo 2 năm
@@ -1418,13 +1418,13 @@ passengers:
   signature_setting: setting_TBD
   age_range: 18-25
   gender: nam
-  display_name: Nhiên Dụng (18-25)
+  display_name: Thuấn Bạt (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: null
   novelty_hash: 60c24106a7ac
   status: framework_lock
 - id: PAS_0112
-  char_name: Mỵ Bạch
+  char_name: Trầu Quách
   pillar: self_regret
   regret_sub_archetype: REG_SELF_004
   regret_label: Sợ bệnh viện — bỏ qua dấu hiệu cảnh báo 2 năm
@@ -1432,7 +1432,7 @@ passengers:
   signature_setting: setting_TBD
   age_range: 26-35
   gender: nu
-  display_name: Mỵ Bạch (26-35)
+  display_name: Trầu Quách (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: null
   novelty_hash: 5ff914577385

@@ -301,14 +301,52 @@ masculine_syllables:
     - {syl: "Hiệp",   meaning: "hiệp nghĩa",               ngu_hanh: "Thủy", position: "any"}
     - {syl: "Phương", meaning: "phương hướng",             ngu_hanh: "Thủy", position: "first"}
 
+  # ─── B36-extended fix 27/6: 8 new masculine syllables ───
+  ext_2026_mas2:
+    - {syl: "Hữu",    meaning: "hữu phúc",                  ngu_hanh: "Thổ", position: "any"}
+    - {syl: "Thuấn",  meaning: "ánh chớp",                  ngu_hanh: "Hỏa", position: "second"}
+    - {syl: "Bạt",    meaning: "vượt trội",                 ngu_hanh: "Mộc", position: "first"}
+    - {syl: "Chấn",   meaning: "chấn động",                 ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Tịch",   meaning: "tịch dương",                ngu_hanh: "Kim", position: "first"}
+    - {syl: "Lữ",     meaning: "lữ hành",                   ngu_hanh: "Hỏa", position: "first"}
+    - {syl: "Phán",   meaning: "phán xét",                  ngu_hanh: "Thủy", position: "second"}
+    - {syl: "Trầm",   meaning: "trầm tĩnh",                 ngu_hanh: "Thủy", position: "first"}
+
 # ============================================================
 # FORBIDDEN — KHÔNG dùng cho passenger naming
 # ============================================================
 forbidden_words:
   - syl: "Nam"
     reason: "CHAR_NAM recurring SVHMP — collision risk (bible/03)"
-  - syl: "Tài"   # ambigous — dùng cho 'Bác tài' driver title
-    reason: "Recurring CHAR_DRIVER title — avoid confusion"
+  - syl: "Tài"
+    reason: "Recurring CHAR_DRIVER title 'Bác tài' — avoid confusion"
+  # Mr.Long block list 27/6 (tên hoặc syllable đã reserve / quen / cụ thể)
+  - syl: "Quang"
+    reason: "Mr.Long 27/6 block — đã dùng EP01 PAS context"
+  - syl: "Hưng"
+    reason: "Mr.Long 27/6 block"
+  - syl: "Long"
+    reason: "Mr.Long 27/6 block — quen thuộc"
+  - syl: "Trang"
+    reason: "Mr.Long 27/6 block"
+  - syl: "Linh"
+    reason: "Mr.Long 27/6 block — quá phổ biến"
+  - syl: "Nhung"
+    reason: "Mr.Long 27/6 block"
+  - syl: "Lương"
+    reason: "Mr.Long 27/6 block"
+  - syl: "Khánh"
+    reason: "Mr.Long 27/6 block"
+  - syl: "An"
+    reason: "Mr.Long 27/6 block — đã dùng 'Khánh An'"
+  - syl: "Tùng"
+    reason: "Mr.Long 27/6 block"
+  - syl: "Tiến"
+    reason: "Mr.Long 27/6 block"
+  - syl: "Tú"
+    reason: "Mr.Long 27/6 block"
+  - syl: "Mai"
+    reason: "Mr.Long 27/6 block — quá phổ biến"
 
 # ============================================================
 # UNISEX SYLLABLES — vừa dùng nam vừa nữ
