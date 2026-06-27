@@ -58,6 +58,44 @@ post_render_gate:
 # ============================================================
 # Mr.Long 27/6 lệnh add intro Hắc Dạ Ký mọi EP.
 
+R44_dictionary_block:
+  # round 8 add 2026-06-28 (Mr.Long lệnh "verify từ điển, không suy luận, block chặt chẽ")
+  rule: "CẤM TUYỆT ĐỐI typo phổ biến tiếng Việt + diacritics sai + place lowercase"
+  banned_typos:
+    - chánh → chính
+    - sét → xét (trừ "sét đánh")
+    - dùm → giùm
+    - sẳn → sẵn
+    - chử → chữ
+  diacritics_strict: "Hà Nội / Hải Phòng / Sài Gòn / Hà Đông / Bạch Mai PHẢI hoa đầu"
+  enforcement: |
+    audit_60_dimensions Layer 7.1-7.6 check pre-commit.
+    Vi phạm = R41 HARDLOCK block commit.
+  no_inference: "KHÔNG suy luận đúng/sai. Chỉ check theo rule cứng."
+
+R46_passenger_first_person_anaphora_accept:
+  # round 8 add 2026-06-28 (audit 1.1 phát hiện passenger tự kể "Em..." dài)
+  rule: "Anaphora 'Em' / 'Tôi' trong passenger first-person monologue CHẤP NHẬN ≤ 14 consecutive"
+  rationale: |
+    Tiếng Việt first-person narrative: passenger tự kể chuyện về mình mặc định
+    bắt đầu mỗi câu bằng "Em..." / "Tôi..." Ngọc Ngạn style.
+    EP29 Linh Đan 8 / EP40 Hải 13 / EP48 Hữu Duy 11 / EP49 Phương Linh 11 = intentional.
+  threshold:
+    OK: max_run <= 7
+    MEDIUM: 8 <= max_run <= 14 (accept for passenger monologue)
+    HIGH: max_run >= 15 (excessive even for monologue)
+  no_inference: "Đếm rule-based theo max consecutive same start word"
+  enforcement: audit_60_dimensions check 1.1
+
+R45_context_block:
+  # round 8 add 2026-06-28
+  rule: "CẤM verb misuse + age sanity 10-100 + foreign word leak narrative"
+  age_sanity: "Tuổi nhân vật trong [10, 100]"
+  verb_collocation: "Verb + object kết hợp đúng tiếng Việt"
+  foreign_words_max: 5  # per EP — accept brand names + acronyms whitelist
+  enforcement: audit_60_dimensions Layer 7.4-7.9 check pre-commit
+  no_inference: "KHÔNG suy luận. Strict rule check."
+
 R42_driver_foreshadow_line_allowed_cliffhanger:
   # round 7 add 2026-06-27 (Mr.Long audit 100-check phát hiện 35 EPs có driver line 3 — refine SERIES_RULES.driver)
   rule: "Driver CHO PHÉP nói câu thứ 3 trong CLIFFHANGER nếu là 'foreshadow memory progression' (R35)"

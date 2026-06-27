@@ -256,7 +256,7 @@ Hơi nước cứ bốc lên. Lâu lắm. Không tan.
 
 Bên trong nhà, có tiếng ai đó khẽ gọi một cái tên. Không nghe rõ.
 
-Có lẽ là tên anh ta. Có lẽ là tên ai khác. Đêm ba mươi tháng Chạp, ai cũng có một cái tên đang được mẹ gọi từ ngoài bếp.
+Có thể là tên anh ta. Hay tên ai khác. Đêm ba mươi tháng Chạp, ai cũng có một cái tên đang được mẹ gọi từ ngoài bếp.
 
 ---
 
