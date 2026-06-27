@@ -2,54 +2,54 @@
   "ep_number": 26,
   "phase_h_version": "H1-H7 v1.0",
   "stats": {
-    "tokens_count": 2765,
-    "sentences_approx": 349,
-    "adverbs_count": 164,
-    "adverbs_ratio": 0.059,
-    "word_count": 2408,
-    "estimated_minutes": 15.5
+    "tokens_count": 2448,
+    "sentences_approx": 228,
+    "adverbs_count": 124,
+    "adverbs_ratio": 0.051,
+    "word_count": 2441,
+    "estimated_minutes": 15.7
   },
   "issues": [
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"tiếng\" lặp 38x trong ep",
+      "evidence": "\"văn phòng\" lặp 26x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"đêm\" lặp 28x trong ep",
+      "evidence": "\"khải phong\" lặp 22x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"trên\" lặp 25x trong ep",
-      "suggestion": "Đa dạng từ vựng, dùng synonym"
-    },
-    {
-      "check": "H1_token_repeat",
-      "severity": "warning",
-      "evidence": "\"vật\" lặp 22x trong ep",
+      "evidence": "\"kiến trúc\" lặp 21x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
       "check": "H2_dict_unusual_compound",
       "severity": "minor",
-      "evidence": "Cụm từ dài bất thường: ['` prompt_version', 'REG_FAM_005 signature_object', 'OBJ_GAY_TRUC signature_setting']",
+      "evidence": "Cụm từ dài bất thường: ['` prompt_version', '0.55 quang_memory_fragment', 'đường vành đai']",
       "suggestion": "TENTATIVE — Mr.Long verify trong từ điển VN"
     },
     {
-      "check": "H9_stop_consonant_tail",
-      "severity": "minor",
-      "evidence": "Word \"suốt\" xuất hiện 1x (BigVGAN tail risk)",
-      "suggestion": "trong suốt → lặng lẽ / mờ đục"
+      "check": "H7_ngram_repetition",
+      "severity": "warning",
+      "evidence": "Bi-gram \"văn phòng\" lặp 3x trong 1 câu",
+      "suggestion": "Reword câu để tránh repetition"
     },
     {
       "check": "H9_stop_consonant_tail",
       "severity": "minor",
-      "evidence": "Word \"biết\" xuất hiện 5x (BigVGAN tail risk)",
+      "evidence": "Word \"khuất\" xuất hiện 3x (BigVGAN tail risk)",
+      "suggestion": "khuất bóng → khuất dần / mờ xa"
+    },
+    {
+      "check": "H9_stop_consonant_tail",
+      "severity": "minor",
+      "evidence": "Word \"biết\" xuất hiện 4x (BigVGAN tail risk)",
       "suggestion": "chưa biết → vẫn chưa hay / vẫn chưa rõ"
     }
   ],

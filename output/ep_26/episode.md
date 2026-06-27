@@ -1,0 +1,265 @@
+# TẬP 26 — BỘ THƯỚC T BỐ TÔI ĐỂ LẠI — TÔI KHÔNG DÁM DÙNG
+
+[INTRO 4.5s — HẮC DẠ KÝ master]
+
+[pause:800ms]
+
+Hắc Dạ Ký — chuyện kể từ cõi vô hình.
+
+[pause:600ms]
+
+Tác giả: Hắc Dạ Ký.
+
+[pause:600ms]
+
+Series: Chuyến xe cuối cùng về đâu.
+
+[pause:600ms]
+
+Ai cũng có một chuyến xe chưa nói lời tạm biệt.
+
+[pause:1000ms]
+
+Tập 26 — câu chuyện đêm nay.
+
+[pause:1500ms]
+
+---
+
+```
+prompt_version: SVHMP-10.0-RC3.6
+ep_number: 26
+phase: warming (S1)
+pillar: family
+intensity_level: 0.55
+quang_memory_fragment: M6 (Khải Phong nhớ bố cũng KTS — cầm thước T)
+object_sub_arc: TEMPORAL year 2017 vật 2 (thước T bố mua 2017)
+callback_target: none
+passenger_main: nam 38 Đức Hùng Hà Nội (bố KTS mất — con ngại học theo)
+signature_object: OBJ_THUOC_T (bộ thước T bố mua 2017 — bố mất sau)
+signature_setting: setting_dem_thang_tu_HN
+stop_location: ngã ba Hoài Đức
+bell_count: 1
+ghost_manifest: 1
+word_count: ~2400
+hand_crafted: true
+arc_design_compliant: bible/21 R33-R40
+```
+
+---
+
+# HOOK [section 1]
+
+[pause:800ms]
+
+Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường vành đai phía tây Hà Nội, ven cánh đồng An Khánh. Đèn pha quét lên hàng phượng vĩ — phượng đã ra hoa đỏ đầu mùa — đèn pha chiếu lên cành làm hoa đỏ sáng vài giây.
+
+Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi sáu. Trong túi áo gió Khải Phong — hai mươi lăm vật. Đêm qua thêm mảnh vải bông cuốn mép kính của Văn Quân.
+
+Bác tài lái. Bàn tay già — chậm — đều. Khải Phong đã quen pattern bác tài — không đổi nhịp.
+
+Mặt đường ướt sau mưa. Hai bên đường — cánh đồng — đèn vài nhà nông xa — chưa ngủ.
+
+Xe chậm lại trước một tòa văn phòng cũ hai tầng — biển gỗ "Văn phòng kiến trúc Hoài An" — cửa kính đã đóng — đèn trong phòng tầng một còn sáng. Bảng hiệu đã mòn — chữ vàng nhạt đi.
+
+Một người đàn ông đứng đợi bên cửa. Khoảng ba mươi tám tuổi. Áo sơ mi trắng — quần tây xám — đeo kính cận vành đen. Tay phải cầm hộp gỗ dài — hộp dài chừng nửa mét — hộp đựng dụng cụ kiến trúc.
+
+Anh bước lên xe. Đi qua hàng ghế đầu — chân chậm. Ngồi xuống ghế thứ năm.
+
+Đặt hộp gỗ lên đùi — hộp dài — phải đặt nghiêng. Mở. Bên trong — bộ thước T kiến trúc — thước T inox bóng — cán gỗ — đã hơi mòn — chứng tỏ đã dùng nhiều.
+
+Xe lăn bánh.
+
+---
+
+# SETUP [section 2]
+
+[pause:600ms]
+
+Anh ngồi yên. Vuốt cán gỗ thước T — đầu ngón tay quen — bàn tay người làm kiến trúc — mảnh — móng tay sạch.
+
+Khải Phong quan sát từ ghế ba. Anh ba lăm tám — kính cận dày — mắt mệt — vẻ người đã ngồi bàn vẽ nhiều năm.
+
+Thước T trong hộp — Khải Phong nhìn ra — bộ thước T chuyên nghiệp — không phải thước học sinh — thước kiến trúc sư dùng vẽ chi tiết kỹ thuật.
+
+Khải Phong cũng từng có thước T như vậy — hồi sinh viên kiến trúc — phòng trọ Khâm Thiên — đêm vẽ bài đồ án.
+
+Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng — tắt.
+
+[pause:500ms]
+
+Bác tài liếc gương. Không nói. Quay lại.
+
+Anh vuốt thước T — không soi mặt — không nhìn vào inox bóng — chỉ vuốt cán.
+
+---
+
+# INCIDENT [section 3]
+
+[pause:500ms]
+
+Xe đi qua xóm cũ. Phía bên phải — căn nhà gạch hai tầng — cửa khép — đèn tầng một còn sáng yếu.
+
+Cạnh cửa — bóng người đàn ông trung niên đứng — chừng sáu mươi tuổi — áo blouse xanh nhạt — tay cầm bút vẽ — đứng nghiêng — như đang vẽ đồ án trên bàn vẽ kê dưới đèn. Không quay đầu.
+
+Anh ghế năm nhìn về phía đó. Hơi thở chậm.
+
+"Bố..."
+
+Anh nói nhỏ — một từ — đầy tiếng thở dài.
+
+Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
+
+[pause:1000ms]
+
+Xe đi qua. Nhà gạch hai tầng khuất. Bóng ông cụ kiến trúc sư khuất.
+
+Anh quay đầu lại. Vuốt cán thước T.
+
+---
+
+# REVEAL [section 4]
+
+[pause:1000ms]
+
+"Tôi là Đức Hùng. Ba mươi tám tuổi. Tôi ở Hoài Đức — quê. Tôi làm kế toán — văn phòng nhỏ phố Cầu Giấy Hà Nội."
+
+Giọng anh đều — chậm — không vội.
+
+"Bố tôi mất bảy năm trước. Sáu mươi mốt tuổi. Tai biến mạch máu não — đột tử buổi sáng đang ngồi bàn vẽ — đang vẽ đồ án nhà phố cho khách hàng cuối."
+
+"Bố tôi là kiến trúc sư. Tốt nghiệp Đại học Kiến trúc Hà Nội năm bảy chín — đời đầu mở cửa. Bố làm cho viện thiết kế nhà nước — sau ra mở văn phòng kiến trúc riêng — văn phòng Hoài An — chính văn phòng tôi vừa bước lên xe đêm nay."
+
+[pause:800ms]
+
+"Bố mở văn phòng năm tôi mười tuổi. Văn phòng nhỏ — bố và hai bạn kiến trúc sư trẻ. Bố đặt tên Hoài An — vì quê bố ở Hoài Đức — và bố muốn mỗi nhà bố thiết kế đem lại sự bình an cho gia chủ."
+
+"Tôi ở văn phòng bố thường — sau giờ học cấp hai — tôi đến văn phòng — ngồi xem bố vẽ. Bố ngồi bàn vẽ lớn — bàn nghiêng — thước T treo bên — bố vẽ chì trước — sau lên mực đen."
+
+"Bố dạy tôi vẽ. Năm tôi mười hai — bố mua tôi bộ thước T nhỏ — thước T học sinh — cán nhựa. Bố ngồi cạnh — chỉ tôi vẽ mặt cắt nhà đơn giản — vẽ chính diện — vẽ mặt bằng."
+
+"Bố bảo: 'Hùng ơi sau này con học kiến trúc — bố muốn con tiếp nối văn phòng Hoài An — bố và con cùng làm.'"
+
+[pause:1200ms]
+
+"Tôi gật. Lúc đó tôi mười hai — tôi gật vì bố bảo. Tôi không biết tôi có thích kiến trúc hay không. Tôi chỉ thích ngồi cạnh bố — xem bố vẽ — không phải mong tự mình vẽ."
+
+"Cấp ba tôi học khá toán lý — bố vui — bảo: 'Con đủ điểm thi vào Đại học Kiến trúc — bố tin con.'"
+
+"Năm tôi mười tám — thi đại học. Tôi không thi Kiến trúc. Tôi thi Kế toán Học viện Tài chính. Tôi giấu bố — nộp hồ sơ — đến lúc trúng tuyển — bố mới biết."
+
+"Bố sốc. Bố không nói gì hai tuần. Bố ăn cơm cùng — không nhìn tôi. Mẹ tôi đứng giữa — khuyên bố — khuyên tôi."
+
+"Tôi xin lỗi bố. Tôi nói thật: 'Bố ơi con không thích vẽ — con thích con số — con thích tính toán — con xin lỗi con không tiếp nối văn phòng được.'"
+
+[pause:1500ms]
+
+"Bố im. Rồi bố bảo: 'Con chọn nghề con thích — bố không ép. Bố chỉ tiếc — văn phòng Hoài An — bố hai mươi năm xây — sẽ tan khi bố không còn.'"
+
+"Tôi học kế toán. Ra trường năm hai bốn — vào văn phòng kế toán nhỏ — lương thường — không cao. Tôi không liên quan kiến trúc nữa."
+
+"Bố tiếp tục văn phòng Hoài An. Hai bạn kiến trúc sư cùng bố — một bạn nghỉ năm bố sáu mươi — về quê. Một bạn vẫn còn — anh Lâm — thân thiết bố."
+
+"Năm bố sáu mươi tuổi — bố mua bộ thước T mới — bộ chuyên nghiệp — thước T inox cán gỗ — bố mua ở cửa hàng dụng cụ kiến trúc phố Tràng Tiền. Bố mua tháng sáu năm hai nghìn không trăm mười bảy — bố ghi ngày mua vào sổ tay."
+
+[pause:1500ms]
+
+"Bố dùng thước T mới một năm. Năm sau — sáu mươi mốt — bố tai biến. Đột tử bàn vẽ — sáng — đang vẽ dở đồ án."
+
+"Tôi đến văn phòng. Bố nằm bên bàn vẽ — thước T inox còn trên bàn — bản vẽ dở dang — chì còn cầm trong tay."
+
+"Sau tang bố — anh Lâm hỏi tôi: 'Hùng ơi anh nhận tiếp văn phòng Hoài An — em không phản đối à? Anh nuôi sống văn phòng — giữ tên Hoài An.' Tôi đồng ý. 'Anh giữ tên giúp bố em — em cảm ơn.'"
+
+"Anh Lâm đưa tôi bộ thước T inox của bố — bộ bố mua năm hai nghìn không trăm mười bảy. 'Hùng ơi đây là vật quý nhất bố em — anh không thể giữ — em là con — em giữ.'"
+
+"Tôi cầm. Đem về nhà. Không dùng. Không vẽ. Tôi không biết vẽ kiến trúc — tôi không có khả năng. Tôi cất hộp thước T trong tủ — bảy năm — không mở."
+
+[pause:1500ms]
+
+"Năm vừa rồi — anh Lâm gọi tôi. 'Hùng ơi anh sắp nghỉ hưu — anh đóng cửa văn phòng Hoài An tháng sau. Em có muốn giữ tên không? Anh truyền em.' Tôi đáp: 'Anh ơi em không làm kiến trúc — em không giữ được tên. Anh đóng cửa — em chấp nhận.'"
+
+"Văn phòng Hoài An đóng cửa tháng trước. Anh Lâm về quê. Tên bố — tan."
+
+"Tôi áy náy. Tôi không phải lý do tan — anh Lâm nghỉ tự nhiên — nhưng tôi là nguyên nhân không có người tiếp nối khi bố mất bảy năm trước. Nếu tôi học kiến trúc — anh Lâm có thể giữ thêm — chờ tôi đủ kinh nghiệm — truyền tôi. Tôi không học — không có lựa chọn."
+
+Bác tài cất lời.
+
+"Con đã nhớ ra chưa?"
+
+Đức Hùng gật. Mắt đỏ — không khóc.
+
+"Tôi nhớ. Tôi không học kiến trúc theo bố — bố không trách lúc sống. Văn phòng Hoài An tan vì tôi không tiếp nối. Bộ thước T inox bố mua năm hai nghìn không trăm mười bảy — bố dùng một năm — chưa hết khả năng — đã tan cùng bố."
+
+[pause:1200ms]
+
+"Đêm nay — tôi đem bộ thước T về Hoài Đức — về văn phòng Hoài An đã đóng cửa — chính tòa nhà tôi vừa bước lên xe. Tôi sẽ đặt hộp thước T trước cửa văn phòng — như cách trả lại bộ thước T cho chính nơi nó từng được dùng. Để ai đến mua tòa nhà sau — thấy hộp — biết đây từng là văn phòng kiến trúc — tên Hoài An — bố tôi đã có hai mươi năm ở đây."
+
+---
+
+# PAYOFF [section 5]
+
+[pause:800ms]
+
+Xe chậm lại. Ngã ba Hoài Đức — cây gạo cổ — bến không tên — đèn vàng trên cây gạo. Chuông xe ngân. Một tiếng. Tan.
+
+Đức Hùng đóng hộp gỗ. Đứng dậy chậm.
+
+"Chào anh."
+
+Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển.
+
+Bác tài: "Chưa tới lúc."
+
+Anh bước xuống.
+
+[pause:1200ms]
+
+Bên ngoài — Đức Hùng đi vào sân trước tòa văn phòng Hoài An. Cửa kính đã đóng — không ai trong. Anh đặt hộp thước T trước cửa kính — đặt chính giữa — biển hiệu Hoài An vẫn còn trên cửa — chưa tháo.
+
+Cúi đầu trước cửa. Một lúc.
+
+Khải Phong chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên cửa kính — bố Đức Hùng xuất hiện — ông sáu mươi tuổi — áo blouse xanh — tay cầm bút vẽ — vuốt vai con trai. Mỉm cười.
+
+Khải Phong chớp lần nữa. Bố tan.
+
+Đức Hùng ngẩng đầu. Đi ra khỏi sân — không nhìn lại.
+
+[pause:1500ms]
+
+---
+
+# CLIFFHANGER [section 6]
+
+Xe lăn bánh — rời ngã ba Hoài Đức.
+
+Ghế năm trống. Trên sàn — một mẩu nhãn giấy nhỏ rơi — nhãn dán góc hộp thước T — ghi ngày mua "06/2017". Khải Phong nhặt. Nhãn — màu trắng — chữ in đen — số "2017" rõ.
+
+Bỏ vào túi áo gió. Vật thứ hai mươi sáu — vật thứ hai mang dấu năm 2017 (sau mẩu giấy bản EP22).
+
+Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
+
+[pause:1500ms]
+
+Khải Phong ngồi yên. Mở túi — đếm — hai mươi sáu vật. Hai vật mang dấu năm 2017: mẩu giấy bản từ sách thầy Quỳnh Mai (đêm 22) — nhãn hộp thước T bố Đức Hùng (đêm này).
+
+Trùng hợp? Hay sub-arc?
+
+Khải Phong ngẫm. Năm 2017 — Khải Phong nhớ — chính năm Khải Phong tốt nghiệp Đại học Kiến trúc. Năm tốt nghiệp.
+
+Khải Phong cũng từng có bộ thước T — hồi sinh viên — bộ học sinh — cán nhựa. Sau tốt nghiệp — Khải Phong làm việc cho công ty Việt Trường — giám sát công trình — không vẽ kiến trúc nữa. Bộ thước T cũ — Khải Phong cất trong tủ phòng trọ — sau Hạ Vy mất — Khải Phong dọn phòng — không nhớ vứt đi đâu.
+
+[pause:1500ms]
+
+Bố Khải Phong — Khải Phong cố nhớ. Bố Khải Phong làm gì?
+
+Hình ảnh — căn nhà nhỏ quê — bố Khải Phong ngồi bàn — đeo kính — đọc báo. Bố là cán bộ xã — làm thủ tục giấy tờ cho nông dân. Không phải kiến trúc sư. Mẹ Khải Phong dạy cấp một làng. Hai bố mẹ đều làm hành chính.
+
+Khải Phong là người đầu tiên trong gia đình học kiến trúc. Khải Phong chọn vì thích vẽ — hồi cấp ba — không phải vì bố hướng.
+
+Sau Hạ Vy mất 2018 — Khải Phong có còn liên lạc bố mẹ không? Khải Phong cố nhớ. Cảm giác — có. Khải Phong vẫn về quê dịp Tết. Bố mẹ vẫn còn sống. Khải Phong là con trai duy nhất.
+
+Bác tài liếc gương. "Đêm hai mươi sáu. Vật thứ hai mang dấu năm 2017. Đêm hai mươi chín sẽ có vật thứ ba. Đến đêm ba mươi — milestone — con sẽ ngẫm rõ vì sao ba vật rời rạc cùng có năm 2017. Đừng vội."
+
+Khải Phong gật. Không hỏi.
+
+Đêm thứ hai mươi sáu. Xe đi tiếp về phía đường vành đai. Phía sau — Hoài Đức khuất. Đức Hùng ở lại sân văn phòng Hoài An — đứng nhìn hộp thước T trước cửa kính.
