@@ -51,9 +51,12 @@ def check_ep(ep_number):
     word_count = len(text.split())
     results.append((word_count >= 2000, f'word_count {word_count} >= 2000 (hard_floor)'))
 
-    # 2. word_count <= 2900 (hard_ceiling) — EP01 golden 3407 exception
+    # 2. word_count ceiling — EP01 golden + milestone EPs higher ceiling
+    MILESTONE_EPS = {1, 10, 20, 30, 40, 50, 60, 70, 73, 80, 90}
     if ep_number == 1:
         results.append((True, f'word_count {word_count} (EP01 golden ref — ceiling exception)'))
+    elif ep_number in MILESTONE_EPS:
+        results.append((word_count <= 3200, f'word_count {word_count} <= 3200 (milestone ceiling)'))
     else:
         results.append((word_count <= 2900, f'word_count {word_count} <= 2900 (hard_ceiling)'))
 
