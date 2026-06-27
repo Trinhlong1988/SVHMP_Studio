@@ -1,4 +1,4 @@
-# TẬP 14 — KHĂN QUÀNG THÊU CÚC TỪ CHỐI GIÚP MẸ XIN ĂN
+# TẬP 14 — KHĂN QUÀNG THÊU CÚC NĂM TÔI TỪ CHỐI CHO BÁT PHỞ
 
 ```
 prompt_version: SVHMP-10.0-RC3.5
@@ -6,15 +6,16 @@ ep_number: 14
 phase: warming (S1)
 pillar: kindness
 intensity_level: 0.55
-quang_memory_fragment: M3 (Quang ngẫm tên Hà)
-object_sub_arc: hoa cúc khô CLUSTER 2 (khăn thêu cúc — echo EP13)
+quang_memory_fragment: M3 (Quang ngẫm tên Hà + cúc tai)
+object_sub_arc: HOA_CUC cluster vật 2 (khăn thêu cúc — echo EP13)
 callback_target: ep_13 (object_echo HOA_CUC symbol)
-passenger_main: nu 55, đã từ chối giúp mẹ xin ăn 30 năm trước
-signature_object: OBJ_KHAN_QUANG (khăn quàng thêu hoa cúc — kỉ niệm bà mẹ ngày đó)
+passenger_main: nu 56 Tâm Đan Chương Mỹ (từ chối cụ Mai bát phở 30 năm trước)
+signature_object: OBJ_KHAN_QUANG_THEU_CUC (khăn thêu cúc kỉ niệm bà cụ Mai)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Chương Mỹ
 bell_count: 1
 ghost_manifest: 1
+word_count: ~2050
 hand_crafted: true
 arc_design_compliant: bible/21 R33-R38
 ```
@@ -25,15 +26,17 @@ arc_design_compliant: bible/21 R33-R38
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven sông Đáy, Chương Mỹ. Đèn pha quét lên hàng tre già.
+Đêm tháng tư. Mưa nhẹ trở lại. Chuyến xe đêm chạy qua đoạn đường ven sông Đáy, Chương Mỹ. Đèn pha quét lên hàng tre già — gốc tre dày như cột.
 
-Quang ngồi ghế thứ ba. Đêm thứ mười bốn. Mười ba vật.
+Quang ngồi ghế thứ ba. Đêm thứ mười bốn. Trong túi áo gió Quang — mười ba vật. Đêm qua thêm cánh cúc khô vàng — từ vườn bố anh Bình.
 
-Bác tài lái.
+Bác tài lái. Đoạn đường này Quang đã đi qua một lần — đêm thứ chín — Quang nhớ có cô bé học sinh xuống xe ở Chương Mỹ.
 
-Xe chậm lại trước một chùa cổ — cổng đã đóng. Một bà trung niên đứng đợi. Khoảng năm lăm tuổi. Áo bà ba xám. Tay phải cầm khăn quàng cũ — gấp gọn.
+Xe chậm lại trước một chùa cổ ven sông — cổng tam quan đã đóng — đèn dầu treo cột tre còn sáng. Bảng chùa "Chùa Hương Đáy" gỗ cũ đã mòn.
 
-Bà bước lên xe. Ngồi ghế thứ tám. Mở khăn — khăn nâu đậm — thêu hoa cúc vàng ở góc.
+Một bà trung niên đứng đợi bên cổng. Khoảng năm mươi sáu tuổi. Áo bà ba xám đậm — vạt áo dài quá đầu gối. Tóc búi gọn sau ót. Tay phải cầm khăn quàng cũ — gấp gọn — to bằng cuốn vở.
+
+Bà bước lên xe. Đi qua hàng ghế đầu — ngồi xuống ghế thứ tám. Mở khăn. Khăn nâu đậm — vải len mỏng — góc khăn thêu một bông hoa cúc vàng — chỉ vàng đã hơi phai theo năm tháng.
 
 Quang ghế ba nhìn — hoa cúc thêu khăn — giống cánh cúc khô Quang nhặt đêm qua.
 
@@ -45,15 +48,17 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Bà khoảng năm sáu. Tóc bạc.
+Bà ngồi yên. Vuốt khăn. Bàn tay bà thô — bàn tay đã làm việc nhiều năm. Móng tay cắt ngắn — sạch.
 
-Bà vuốt khăn. Hoa cúc thêu chỉ vàng — đã hơi phai.
+Quang quan sát từ ghế ba. Bà này — không phải đi viếng — không cầm hộp — chỉ cầm khăn cũ. Khăn của ai? Khăn cho ai?
 
-Ông cụ ghế đầu vặn radio. "...quê nhà..." vọng.
+Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng. Tắt.
 
 [pause:500ms]
 
-Bác tài liếc gương.
+Bác tài liếc gương. Không nói.
+
+Bà vuốt bông cúc thêu — đầu ngón tay quen — biết chỗ.
 
 ---
 
@@ -61,17 +66,21 @@ Bác tài liếc gương.
 
 [pause:500ms]
 
-Xe đi qua xóm cũ. Trước một quán phở vỉa hè — đã đóng. Cạnh quán — bóng bà cụ ngồi co — tay run cầm bát mẻ. Không quay đầu.
+Xe đi qua xóm cũ. Phía bên trái — một quán phở vỉa hè cũ — đã đóng — biển hiệu "Phở Bà Tư" đã tróc sơn. Cạnh quán — góc vỉa hè — bóng bà cụ ngồi co — áo rách — tay run cầm bát mẻ. Không quay đầu.
 
-Bà ghế tám nhìn về phía đó.
+Bà ghế tám nhìn về phía đó. Hơi thở bà chậm lại.
 
 "Bác..."
 
-Đồng hồ trên xe nhích mười lần.
+Bà nói nhỏ.
+
+Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
 [pause:1000ms]
 
-Xe đi qua.
+Xe đi qua. Quán phở khuất. Bóng bà cụ khuất.
+
+Bà ghế tám quay đầu. Đặt khăn lên đùi. Vuốt bông cúc thêu một lần nữa.
 
 ---
 
@@ -79,37 +88,55 @@ Xe đi qua.
 
 [pause:1000ms]
 
-"Em là Tâm Đan. Năm lăm. Em ở Chương Mỹ."
+"Em là Tâm Đan. Năm mươi sáu tuổi. Em ở Chương Mỹ — quê. Em làm kế toán Hà Nội — sắp về hưu."
 
-Giọng bà trầm.
+Giọng bà trầm — chậm — đều.
 
-"Ba mươi năm trước — em hai lăm tuổi — đi làm tại Hà Nội. Mỗi sáng đi chợ Long Biên mua đồ ăn."
-
-"Một sáng em gặp bà cụ — khoảng bảy mươi tuổi — ngồi co bên góc chợ — bát mẻ trên tay. Tay bà run. Bà nhìn em — không nói."
+"Ba mươi năm trước — em hai mươi sáu tuổi — vừa ra trường — đi làm tại Hà Nội. Phòng trọ nhỏ ở phố Khâm Thiên. Mỗi sáng em đi chợ Long Biên mua đồ ăn về nấu trưa — em sống một mình — chưa lập gia đình."
 
 [pause:800ms]
 
-"Em đi qua. Em có tiền — ba bốn nghìn — đủ cho bà bát phở. Em không cho. Em vội — đi làm. Em nghĩ: 'Hôm khác.'"
+"Một sáng — tháng mười — em đi chợ. Trời lạnh sớm. Em mặc áo len — khăn quàng cổ."
 
-"Em đi làm. Trưa em nhớ bà cụ. Em định chiều về cho. Chiều em quên. Tối em nhớ — bảo bụng mai cho."
+"Em gặp bà cụ — khoảng bảy mươi tuổi — ngồi co bên góc chợ — chỗ bán cá khô. Bát mẻ trên tay — bát không có gì. Tay bà run — không phải vì lạnh — vì đói."
 
-"Sáng hôm sau — em đi chợ — không thấy bà cụ. Em hỏi cô bán rau gần đó: 'Bà cụ hôm qua đâu rồi?' Cô bán rau: 'Bà ấy chết sáng nay. Người ta tìm thấy bà chết trong góc — đói lả. Cảnh sát đến chiều.'"
+"Bà nhìn em — không nói — chỉ nhìn. Mắt bà mờ — già — nhưng còn tỉnh."
 
 [pause:1200ms]
 
-"Em sốc. Em không đi làm hôm đó. Em về phòng trọ — khóc."
+"Em đi qua. Em có tiền — bốn nghìn đồng trong ví — đủ cho bà một bát phở — phở thời đó hai nghìn rưỡi một bát."
 
-"Em đi chợ tìm hiểu. Bà cụ tên Mai — bảy tám tuổi — không nhà — chồng mất — con đi xa không về."
+"Em không cho. Em vội — đi làm — ca tám giờ — em đi từ chợ tới văn phòng mất bốn mươi phút. Em nghĩ trong đầu: 'Hôm khác. Em sẽ cho hôm khác.'"
 
-"Em đến nhà tang. Em mua một khăn quàng — đặt thợ thêu hoa cúc vào góc — cúc là hoa em thấy bà cụ cài lên tóc trong di ảnh. Em đắp khăn lên quan tài bà cụ."
+"Em đi làm cả buổi sáng — quên bà cụ. Trưa — em ngồi ăn cơm văn phòng — tự nhiên nhớ bà cụ. Em nghĩ: 'Chiều về em ghé chợ — cho bà.'"
+
+"Chiều em về — không qua chợ — em mệt — em về thẳng phòng trọ. Tối em nhớ — bảo bụng: 'Mai. Mai chắc chắn em cho.'"
 
 [pause:1500ms]
 
-"Ba mươi năm em giữ ý nghĩa — em phải sống tử tế hơn — vì một lần không tử tế đã mất một người."
+"Sáng hôm sau — em đi chợ. Em mang sẵn năm nghìn — đủ một bát phở và một bánh mì kẹp. Em đến góc chợ — chỗ bà cụ ngồi hôm qua. Trống. Không có bà."
 
-"Em cưới — sinh con — em chăm con tử tế. Em làm từ thiện. Em mỗi cuối tháng đem cơm cho cụ già khu vực gần nhà em."
+"Em hỏi cô bán rau gần đó: 'Cô ơi bà cụ hôm qua ngồi đây đâu rồi?' Cô bán rau nhìn em — im một lúc — rồi đáp: 'Bà ấy chết sáng nay rồi cô. Người ta tìm thấy bà chết trong góc — đói lả — không ai biết bà từ đâu — cảnh sát đến chiều hôm qua đem đi.'"
 
-"Khăn quàng này — tôi giữ ba mươi năm — chính khăn em đã đặt thợ thêu cho bà cụ Mai. Em không đắp lên quan tài bà cụ — vì người nhà đến nhận đêm trước. Em giữ khăn — như nhắc nhở em."
+[pause:1500ms]
+
+"Em sốc. Em không đi làm hôm đó — gọi điện báo bệnh. Em về phòng trọ — khóc cả ngày."
+
+"Em đi chợ tìm hiểu thêm. Bà cụ tên Mai — bảy mươi tám tuổi — không nhà — chồng mất từ năm bà sáu mươi — con đi xa không về — bà sống lang thang ba năm — ngủ chợ — xin cơm."
+
+"Em đến nhà tang — nhà tang xã hội của quận — nơi cảnh sát đưa bà về. Em xin được nhìn bà lần cuối. Bà nằm — gầy — mặt yên."
+
+"Em mua một khăn quàng cổ ở chợ — đặt thợ thêu hoa cúc vào góc — cúc là hoa em thấy bà cụ cài lên tóc trong di ảnh xã hội đặt bên bà — bà cụ thích cúc."
+
+"Em đến đắp khăn lên quan tài bà. Nhưng đến muộn — người nhà bà cụ đến nhận đêm trước — quan tài đã đem đi — chôn ở nghĩa trang xã Vĩnh Phúc — quê bà cụ."
+
+[pause:1500ms]
+
+"Em giữ khăn — ba mươi năm. Không bao giờ tặng ai. Không dùng. Chỉ giữ trong tủ — gấp gọn — mỗi rằm tháng giêng em lấy ra — phơi nắng — gấp lại."
+
+"Ba mươi năm em sống tử tế hơn — vì một lần không tử tế đã mất một người. Em làm từ thiện. Em mỗi cuối tháng đem cơm cho cụ già khu vực gần nhà em — cụ nghèo neo đơn."
+
+"Em cưới — sinh hai con — chăm con tử tế. Em dạy con: 'Khi thấy người cần — đừng nói "hôm khác". Hôm khác có thể không có.'"
 
 Bác tài cất lời.
 
@@ -117,11 +144,13 @@ Bác tài cất lời.
 
 Bà gật.
 
-"Em nhớ. Em không tử tế một lần — bà cụ Mai mất. Em không thể chuộc lại — em chỉ có thể nhớ — sống cẩn thận hơn."
+"Em nhớ. Em không tử tế một lần — bà cụ Mai mất. Em không thể chuộc lại bà cụ — em chỉ có thể nhớ — sống cẩn thận hơn ba mươi năm — và truyền cho hai con em."
 
 [pause:1200ms]
 
-"Đêm nay em sáu mươi tuổi — em sắp về hưu — em đem khăn này về Chương Mỹ — đặt giữa nghĩa trang xã — không phải mộ ai cụ thể — để khăn này nằm cùng ai đó — ai cũng cần."
+"Đêm nay — em sắp về hưu — em đem khăn này về Chương Mỹ — đặt giữa nghĩa trang xã Hương Đáy — không phải mộ ai cụ thể — để khăn này nằm cùng ai đó — ai cũng có thể cần — như bà cụ Mai đã cần một bát phở em không cho."
+
+"Em không thể đến mộ bà cụ Mai ở Vĩnh Phúc — quá xa — em yếu rồi. Khăn này đặt ở nghĩa trang Chương Mỹ — em gửi tâm nguyện qua đất — đất sẽ chuyển đến bà cụ."
 
 ---
 
@@ -129,13 +158,13 @@ Bà gật.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba. Chuông. Tan.
+Xe chậm lại. Ngã ba Chương Mỹ — cây gạo già — bến không tên. Chuông xe ngân. Một tiếng. Tan.
 
-Bà gấp khăn. Đứng dậy.
+Bà gấp khăn lại. Đứng dậy.
 
 "Chào con."
 
-Trước khi xuống — đồng hồ bảy giờ mười phút.
+Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển.
 
 Bác tài: "Chưa tới lúc."
 
@@ -143,11 +172,15 @@ Bà bước xuống.
 
 [pause:1200ms]
 
-Bên ngoài — bà đi vào nghĩa trang xã. Phía cuối — một mộ vô danh. Bà đặt khăn lên mộ. Quỳ. Cúi đầu.
+Bên ngoài — bà đi vào nghĩa trang xã Hương Đáy — cổng gỗ đã mở. Đèn nến cháy bên trong. Phía cuối — một mộ vô danh — bia gỗ đơn — chỉ ghi "Vô danh — 1995" — chôn cùng năm bà cụ Mai mất.
 
-Bên mộ — bóng bà cụ Mai xuất hiện — cười nhẹ. Cầm khăn lên. Đắp lên vai.
+Bà đến. Quỳ. Đặt khăn lên mộ — phủ kín bia. Cúi đầu.
 
-Quang chớp mắt. Bà cụ tan.
+Quang chớp mắt — nhìn qua cửa sổ. Bên mộ — bà cụ Mai xuất hiện — mặc áo bà ba xanh cũ — tóc cài bông cúc vàng. Cười nhẹ. Cúi xuống — vuốt khăn — quấn lên cổ mình.
+
+Quang chớp lần nữa. Bà cụ tan.
+
+Bà Tâm Đan ngẩng đầu. Lau khóe mắt. Quỳ thêm một lúc. Rồi đứng dậy.
 
 [pause:1500ms]
 
@@ -155,18 +188,28 @@ Quang chớp mắt. Bà cụ tan.
 
 # CLIFFHANGER [section 6]
 
-Xe lăn bánh.
+Xe lăn bánh — rời ngã ba Chương Mỹ.
 
-Ghế tám trống. Trên sàn — một sợi chỉ vàng nhỏ rơi (chỉ thêu cúc). Quang nhặt. Vật thứ mười bốn.
+Ghế tám trống. Trên sàn — một sợi chỉ vàng nhỏ rơi — sợi chỉ thêu bông cúc bong ra khi bà gấp khăn. Quang nhặt. Sợi chỉ — mảnh — mềm — màu vàng nhạt giống cánh cúc khô đêm trước.
 
-Quang nhìn. Hoa cúc khô đêm qua — hoa cúc thêu khăn đêm này — hai vật cùng symbol.
+Bỏ vào túi. Vật thứ mười bốn.
 
-Quang ngẫm — Hà — cô có thích cúc không?
+Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Quang không nhớ. Cảm giác — có. Cảm giác — Hà cài cúc lên tóc một lần.
+Quang ngồi. Mở túi áo gió — đếm. Mười bốn vật. Trong đó — hai vật cùng symbol hoa cúc: cánh cúc khô vàng (đêm mười ba) — sợi chỉ thêu cúc vàng (đêm này).
 
-Bác tài liếc gương. "Hoa cúc — sẽ trở lại lần nữa, con à."
+Hai vật rời rạc — hai chủ — không quen nhau — không cùng tuổi — không cùng phố. Nhưng cùng cúc.
 
-Quang gật. Đêm thứ mười bốn.
+Quang ngẫm. Trùng hợp?
+
+Hình ảnh Hà — mái tóc dài — bông cúc cài tai — lại hiện. Lần này rõ hơn đêm qua. Quang thấy được vai cô — áo trắng — vai gầy. Mặt còn mờ.
+
+Hà cài cúc lên tai. Quang biết — không phải đoán — biết.
+
+Bác tài liếc gương. "Đêm mười bốn. Hai vật cùng symbol — bắt đầu thành cụm. Cụm sẽ lớn — đến đêm hai mươi con sẽ có bốn vật cùng cúc. Đêm hai mươi — con sẽ ngẫm vì sao."
+
+Quang gật.
+
+Đêm thứ mười bốn. Xe đi tiếp về phía đường vành đai. Phía sau — Chương Mỹ khuất. Bà Tâm Đan ở lại bên mộ vô danh — quỳ — gửi khăn — gửi ba mươi năm hối tiếc qua đất.
