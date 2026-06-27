@@ -73,6 +73,29 @@ R44_dictionary_block:
     Vi phạm = R41 HARDLOCK block commit.
   no_inference: "KHÔNG suy luận đúng/sai. Chỉ check theo rule cứng."
 
+R50_audit_toolkit_mandatory_pre_commit:
+  # round 11 add 2026-06-28 (Mr.Long lệnh "cam kết các tool luôn chạy và kiểm thử")
+  rule: "Pre-commit hook BẮT BUỘC chạy 7 audit tools — block nếu BẤT KỲ HIGH issue"
+  mandatory_tools:
+    - tools/post_render_gate.py        # 11 hard constraints / EP
+    - tools/audit_pronoun_pov.py        # R47 POV violations
+    - tools/audit_60_dimensions.py     # 70 dimensions cross-EP
+    - tools/audit_dialogue_hierarchy.py # R48 dialogue R rối
+    - tools/audit_deep_qa.py           # 100 deep QA dimensions
+    - tools/detect_template_repetition.py # R49 formulaic check
+    - tools/audit_100_check.py         # legacy 100-check (kept)
+  enforcement: |
+    .githooks/pre-commit chạy 7 tools tuần tự.
+    Tool nào trả exit code != 0 → BLOCK commit + log details.
+    KHÔNG bypass --no-verify trừ Mr.Long explicit.
+  rationale: |
+    Round 18-24 đã add 5 audit tools mới — nếu chỉ chạy post_render_gate (legacy)
+    sẽ bỏ sót POV violations, dialogue R48, template formulaic, deep QA.
+    Phải chạy TẤT CẢ để đảm bảo no regression.
+  no_inference: "Tool block based on exit code rule — không suy luận"
+  violation_action: "LOG B47 + counter rule_break_count++"
+  cross_ref: [.githooks/pre-commit, R41 HARDLOCK]
+
 R49_template_variation_hardlock:
   # round 10 add 2026-06-28 (Mr.Long reader judgement phát hiện 40/50 EPs same opener)
   rule: "HOOK opener + atmospheric description phải VARIED across EPs. Cấm dùng cùng template > 5 EPs liên tiếp."

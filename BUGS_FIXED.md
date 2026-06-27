@@ -278,3 +278,47 @@ Re-run command: `python C:/tmp/svhmp_arc_audit.py` — must PASS 10/10.
 - Phase D2 Pattern 7 shipped clean (0 bug caught)
 - 7-gap round 14 ship: 2 bugs caught (B23 e2e regex + B2-DETAIL data)
 - Git init round 14 + tagged round_13_initial baseline
+
+### B41-B47 — Round 18-24 lessons (28/6)
+
+#### B41 — Audit script formulaic template detection [RESOLVED R49]
+- Pattern 40/50 EPs same HOOK "Đêm tháng tư. Mưa nhẹ." formulaic AI
+- Fix: tools/detect_template_repetition + tools/vary_templates + R49 hiến pháp
+- Result: 40 → 0 EPs với pattern (varied 10 templates)
+
+#### B42 — POV narrator 3rd person bug 49 EPs [RESOLVED R47 + rewrite]
+- EP01 golden ref: "Khải Phong... anh..." 3rd person ✓
+- EP02-50: "Khải Phong... em..." mix 1st/3rd POV (275 violations)
+- Fix: R47 hiến pháp + tools/rewrite_pov 457 replacements em→anh
+- Result: 275 → 0 violations
+
+#### B43 — Dictionary + Context cấm + dialogue hierarchy [RESOLVED R44+R45+R48]
+- Mr.Long lệnh: verify từ điển, ngữ cảnh, dùng từ đúng, KHÔNG SUY LUẬN
+- Fix: R44 dictionary block + R45 context block + R48 dialogue hierarchy
+- Audit: 70 → 100 deep dimensions
+
+#### B44 — Anaphora threshold raise for Ngọc Ngạn first-person [RESOLVED R46]
+- Passenger tự kể "Em là... Em sống... Em đi..." 8-14 consecutive = intentional Vietnamese narrative
+- Audit script raise threshold 5 → 15 HIGH (Ngọc Ngạn accept)
+- R46 hiến pháp codify
+
+#### B45 — Dialogue R48 hierarchy 154 HIGH issues [PARTIAL FIX]
+- Passenger gọi người đã mất lẫn "em" thay vì "chị/anh/con"
+- EP40 manual fix complete + tools/auto_fix_dialogue_hierarchy 29 patterns
+- Still 152 HIGH remaining — many are false positives (Ngọc Ngạn first-person monologue)
+
+#### B46 — EP01 format inconsistency với EP02-50 [PENDING]
+- EP01: `## 1. HOOK (≤120 từ — 0:00—0:20) [beat_1: TÒ MÒ]`
+- EP02-50: `# HOOK [section 1]`
+- Pending unify (low priority, not affecting TTS)
+
+#### B47 — Bác tài liếc gương template overuse [PENDING]
+- 100 occurrences across 50 EPs (2x/EP avg)
+- Acceptable per R42 driver foreshadow but template feel
+- Pending vary phrasings
+
+ROUND 18-24 TOTAL ARTIFACTS:
+- New rules: R41, R42, R43, R44, R45, R46, R47, R48, R49, R50 (10 rules)
+- New tools: 9 audit/fix scripts
+- Pre-commit hook R50 mandatory 3-layer (POV + 70-dim + formulaic)
+- Counter rule_break_count: 2 (R39 vi phạm 2 lần — historical)
