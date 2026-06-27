@@ -37,6 +37,24 @@
 
 ---
 
+### B36 — Pool naming NU 48 < 50 needed → 2 wrap → 4 word dup + 98/100 unique
+- **Ngày catch:** 2026-06-27 audit 50 vòng constitution (Mr.Long lệnh)
+- **Phát hiện qua:** R24, R25, R27 trong `C:/tmp/svhmp_constitution_50round_audit.py`
+- **Triệu chứng:** 4 syllables (Hạ, Diệu, Diễm, Tường) lặp 2x. 98/100 unique full names.
+- **Root cause:** FEM bank 121 syllables nhưng overlap với MAS bank (Tâm, Hân, ...). Sau exclude used_mas (100 syl từ NAM pool 50), FEM effective còn 96 → 48 pair. Cần 50 pair → thiếu 2.
+- **Workaround current:** Ship pool 48+50=98 unique names. Wrap 2 names ở cuối distribution → 4 word duplicate.
+- **Fix planned:** Add 4+ pure feminine syllables KHÔNG có trong masculine bank (vd "Tô", "Sa", "Vịnh"...).
+- **Impact:** Minor — 4 syllables duplicate / 196 total syllables (2% rate). Generator có thể manual swap khi gen từng EP.
+- **Audit:** 47/50 PASS = 94% (3 FAIL cùng root cause này).
+
+### B35 — gen_100_passenger.py wrap-around khi pool < count
+- **Ngày catch:** 2026-06-27 Phase build pool
+- **Phát hiện qua:** Sample EP3 hiển thị "Minh Khang" — tên LEGACY hardcoded trong gen_100_passenger.py overwrite pool load
+- **Triệu chứng:** Pool load 50 NU + 43 NAM nhưng kết quả gen có tên ngoài pool (legacy)
+- **Root cause:** Em rename `NAMES_NU → _LEGACY_NAMES_NU` nhưng QUÊN rename `NAMES_NAM` legacy → legacy NAMES_NAM hardcoded overwrite pool load.
+- **Fix:** `tools/gen_100_passenger.py` rename legacy NAMES_NAM → `_LEGACY_NAMES_NAM` (commit cùng bài).
+- **Meta-lesson:** Khi pivot data source, RENAME ALL legacy variables. Search & replace half-way = bug.
+
 ### B34 — Ollama keep_alive=0 chỉ unload model LOGICALLY, CUDA context vẫn giữ ~5-7GB VRAM
 - **Ngày catch:** 2026-06-26 Phase H series ollama check (Mr.Long bắt verify)
 - **Phát hiện qua:** Sau invoke Gemma 2 9B với `keep_alive=0`, wait 60s+ → `/api/ps` returns `models loaded: []` BUT `nvidia-smi` shows VRAM 14.8GB still used. `llama-server.exe` worker process PID alive với 7.9 MB RSS NHƯNG giữ CUDA context.

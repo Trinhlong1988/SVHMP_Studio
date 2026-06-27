@@ -1,0 +1,334 @@
+---
+schema_version: 1
+title: "Vietnamese Names Extended Database — đẹp, phong thuỷ, văn học"
+description: |
+  Reusable database tên Việt đẹp cho mọi dự án narrative VN tương lai (SVHMP, HDK, novel, podcast, game).
+  Source: Tổng hợp tên Việt phổ biến + Hán Việt cổ điển + phong thuỷ Ngũ Hành + ý nghĩa.
+  Cấu trúc per syllable: ý nghĩa, gender preference, formality level, ngũ hành.
+lock_date: 2026-06-27
+authority: Mr.Long
+source_categories:
+  - han_viet_classical    # Văn học cổ điển, formal, Truyện Kiều, Hán Việt
+  - modern_2000s           # Tên thế hệ 2000-2025, hiện đại
+  - phong_thuy_ngu_hanh    # Theo bộ Tứ Trụ + Ngũ Hành (Kim/Mộc/Thuỷ/Hoả/Thổ)
+  - meaning_based          # Theo ý nghĩa (đức/tài/phúc/lộc/thọ/khang...)
+
+# ============================================================
+# FEMININE SYLLABLES — phong thủy + ý nghĩa
+# ============================================================
+# Tổng ~200 syllables phổ biến cho tên nữ Việt
+
+feminine_syllables:
+
+  # ─── HÁN VIỆT CỔ ĐIỂN (formal, văn học) ─────────────
+  han_viet_classical:
+    - {syl: "Hạ",     meaning: "mùa hạ, ấm áp",           ngu_hanh: "Hỏa", position: "any"}
+    - {syl: "Diệu",   meaning: "kỳ diệu, sáng",            ngu_hanh: "Hỏa", position: "any"}
+    - {syl: "Khánh",  meaning: "vui mừng, chúc phúc",      ngu_hanh: "Kim", position: "any"}
+    - {syl: "Diễm",   meaning: "đẹp lộng lẫy",             ngu_hanh: "Hỏa", position: "any"}
+    - {syl: "Tường",  meaning: "lành, tốt đẹp",            ngu_hanh: "Thổ", position: "any"}
+    - {syl: "Nguyệt", meaning: "mặt trăng",                ngu_hanh: "Thủy", position: "any"}
+    - {syl: "Hằng",   meaning: "vĩnh hằng",                ngu_hanh: "Thủy", position: "any"}
+    - {syl: "Phượng", meaning: "chim phượng hoàng",        ngu_hanh: "Hỏa", position: "any"}
+    - {syl: "Trang",  meaning: "trang nhã",                ngu_hanh: "Thổ", position: "second"}
+    - {syl: "Ngọc",   meaning: "ngọc quý",                 ngu_hanh: "Kim", position: "any"}
+    - {syl: "Châu",   meaning: "viên ngọc trai",           ngu_hanh: "Thủy", position: "any"}
+    - {syl: "Quỳnh",  meaning: "hoa quỳnh quý",            ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Tuyết",  meaning: "tuyết trắng",              ngu_hanh: "Thủy", position: "any"}
+    - {syl: "Mai",    meaning: "hoa mai",                  ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Lan",    meaning: "hoa lan",                  ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Cúc",    meaning: "hoa cúc",                  ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Trúc",   meaning: "cây trúc",                 ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Liễu",   meaning: "cây liễu",                 ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Đào",    meaning: "hoa đào, cây đào",         ngu_hanh: "Mộc", position: "second"}
+    - {syl: "Hồng",   meaning: "hồng (màu/hoa)",           ngu_hanh: "Hỏa", position: "any"}
+
+  # ─── ÝÝ NGHĨA TỐT ĐẸP (đức, tài, hạnh) ──────────────
+  meaning_based:
+    - {syl: "An",     meaning: "bình an",                  ngu_hanh: "Thổ", position: "any"}
+    - {syl: "Bình",   meaning: "bình yên",                 ngu_hanh: "Thủy", position: "any"}
+    - {syl: "Nhân",   meaning: "nhân hậu",                 ngu_hanh: "Kim", position: "any"}
+    - {syl: "Hạnh",   meaning: "hạnh phúc, đức hạnh",      ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Phúc",   meaning: "phúc lành",                ngu_hanh: "Thủy", position: "any"}
+    - {syl: "Đức",    meaning: "đức tốt",                  ngu_hanh: "Hỏa", position: "second"}
+    - {syl: "Tâm",    meaning: "tâm hồn",                  ngu_hanh: "Kim", position: "any"}
+    - {syl: "Hiền",   meaning: "hiền dịu",                 ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Thuỳ",   meaning: "dịu dàng",                 ngu_hanh: "Thủy", position: "any"}
+    - {syl: "Diệu",   meaning: "kỳ diệu",                  ngu_hanh: "Hỏa", position: "first"}
+    - {syl: "Mỹ",     meaning: "đẹp",                      ngu_hanh: "Kim", position: "any"}
+    - {syl: "Nhi",    meaning: "trẻ thơ, con",             ngu_hanh: "Hỏa", position: "second"}
+    - {syl: "Vy",     meaning: "vi mô, tinh tế",           ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Vi",     meaning: "tinh vi, mềm mại",         ngu_hanh: "Mộc", position: "second"}
+    - {syl: "Hà",     meaning: "sông, sông nước",          ngu_hanh: "Thủy", position: "any"}
+    - {syl: "Như",    meaning: "như, giống",               ngu_hanh: "Kim", position: "any"}
+
+  # ─── HOA & THIÊN NHIÊN ───────────────────────────
+  flora_nature:
+    - {syl: "Yến",    meaning: "chim yến",                 ngu_hanh: "Hỏa", position: "any"}
+    - {syl: "Hương",  meaning: "hương thơm",               ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Thảo",   meaning: "cỏ, cây cỏ",               ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Sương",  meaning: "sương mai",                ngu_hanh: "Thủy", position: "any"}
+    - {syl: "Tiên",   meaning: "tiên nữ",                  ngu_hanh: "Thổ", position: "second"}
+    - {syl: "Nga",    meaning: "Hằng Nga",                 ngu_hanh: "Mộc", position: "second"}
+    - {syl: "Anh",    meaning: "hoa anh, tinh anh",        ngu_hanh: "Mộc", position: "second"}
+    - {syl: "Linh",   meaning: "linh thiêng",              ngu_hanh: "Hỏa", position: "any"}
+    - {syl: "Hoa",    meaning: "hoa",                      ngu_hanh: "Mộc", position: "second"}
+    - {syl: "Trinh",  meaning: "trinh nguyên",             ngu_hanh: "Kim", position: "any"}
+    - {syl: "Hân",    meaning: "vui mừng",                 ngu_hanh: "Kim", position: "any"}
+    - {syl: "Hậu",    meaning: "hậu sinh, nhân hậu",       ngu_hanh: "Thổ", position: "second"}
+    - {syl: "Khanh",  meaning: "quý phái",                 ngu_hanh: "Kim", position: "second"}
+    - {syl: "Nhiên",  meaning: "tự nhiên, an nhiên",       ngu_hanh: "Hỏa", position: "second"}
+    - {syl: "Nhung",  meaning: "vải nhung",                ngu_hanh: "Mộc", position: "second"}
+    - {syl: "Trân",   meaning: "trân quý",                 ngu_hanh: "Kim", position: "second"}
+    - {syl: "Quyên",  meaning: "đẹp, hoa quỳnh",           ngu_hanh: "Mộc", position: "any"}
+    - {syl: "My",     meaning: "đẹp, mỹ miều",             ngu_hanh: "Thủy", position: "second"}
+    - {syl: "Hợp",    meaning: "hợp ý",                    ngu_hanh: "Thủy", position: "second"}
+    - {syl: "Ái",     meaning: "yêu thương",               ngu_hanh: "Thổ", position: "second"}
+    - {syl: "Ân",     meaning: "ơn nghĩa",                 ngu_hanh: "Thổ", position: "second"}
+    - {syl: "Ly",     meaning: "trong sáng",               ngu_hanh: "Hỏa", position: "second"}
+    - {syl: "Liên",   meaning: "hoa sen",                  ngu_hanh: "Mộc", position: "second"}
+
+  # ─── HIỆN ĐẠI (2000-2025) ─────────────────────────
+  modern_2000s:
+    - {syl: "Thư",    meaning: "thư thái",                 ngu_hanh: "Hỏa", position: "second"}
+    - {syl: "Yên",    meaning: "yên bình",                 ngu_hanh: "Thổ", position: "second"}
+    - {syl: "Thy",    meaning: "thi ca",                   ngu_hanh: "Kim", position: "second"}
+    - {syl: "Khả",    meaning: "khả ái",                   ngu_hanh: "Mộc", position: "first"}
+    - {syl: "Khôi",   meaning: "khôi nguyên",              ngu_hanh: "Hỏa", position: "any"}
+    - {syl: "Bảo",    meaning: "bảo vật",                  ngu_hanh: "Thổ", position: "any"}
+    - {syl: "Thanh",  meaning: "trong sáng, thanh tao",    ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Cẩm",    meaning: "gấm vóc",                  ngu_hanh: "Kim", position: "any"}
+    - {syl: "Bích",   meaning: "ngọc bích",                ngu_hanh: "Kim", position: "any"}
+    - {syl: "Tú",     meaning: "tú lệ",                    ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Kim",    meaning: "vàng",                     ngu_hanh: "Kim", position: "any"}
+    - {syl: "Ngân",   meaning: "bạc",                      ngu_hanh: "Kim", position: "any"}
+    - {syl: "Phương", meaning: "phương hướng, hương thơm", ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Quân",   meaning: "quân chủ",                 ngu_hanh: "Mộc", position: "second"}
+    - {syl: "Tịnh",   meaning: "tĩnh lặng",                ngu_hanh: "Kim", position: "any"}
+    - {syl: "Quế",    meaning: "cây quế",                  ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Vân",    meaning: "mây",                      ngu_hanh: "Thủy", position: "any"}
+    - {syl: "Đan",    meaning: "đỏ, son đỏ",               ngu_hanh: "Hỏa", position: "any"}
+    - {syl: "Thiên", meaning: "trời",                      ngu_hanh: "Kim", position: "first"}
+    - {syl: "Phụng", meaning: "phụng dưỡng",               ngu_hanh: "Kim", position: "first"}
+    - {syl: "Ánh",   meaning: "ánh sáng",                  ngu_hanh: "Hỏa", position: "first"}
+    - {syl: "Hải",   meaning: "biển",                      ngu_hanh: "Thủy", position: "first"}
+    - {syl: "Nhật",  meaning: "mặt trời, ngày",            ngu_hanh: "Hỏa", position: "first"}
+    - {syl: "Thuý",  meaning: "thúy ngọc xanh",            ngu_hanh: "Mộc", position: "first"}
+    - {syl: "Trà",   meaning: "trà",                       ngu_hanh: "Mộc", position: "first"}
+    - {syl: "Thu",   meaning: "mùa thu",                   ngu_hanh: "Kim", position: "first"}
+    - {syl: "Hoàng", meaning: "vàng (hoàng kim)",          ngu_hanh: "Thổ", position: "first"}
+    - {syl: "Loan",  meaning: "hoa lan/chim loan",         ngu_hanh: "Hỏa", position: "second"}
+    - {syl: "Giang", meaning: "sông lớn",                  ngu_hanh: "Thủy", position: "second"}
+    - {syl: "Lam",   meaning: "lam ngọc",                  ngu_hanh: "Mộc", position: "second"}
+    - {syl: "Mộc",   meaning: "gỗ, mộc mạc",               ngu_hanh: "Mộc", position: "first"}
+    - {syl: "Băng",  meaning: "băng tuyết",                ngu_hanh: "Thủy", position: "first"}
+    - {syl: "Chi",   meaning: "chi nhánh, cành",           ngu_hanh: "Mộc", position: "second"}
+    - {syl: "Hằng",  meaning: "vĩnh hằng",                 ngu_hanh: "Thủy", position: "any"}
+    - {syl: "Khiết", meaning: "trong sạch",                ngu_hanh: "Kim", position: "second"}
+    - {syl: "Dung",  meaning: "dung mạo đẹp",              ngu_hanh: "Mộc", position: "second"}
+    - {syl: "Hiên",  meaning: "hiên ngang",                ngu_hanh: "Hỏa", position: "second"}
+    - {syl: "Hoài",  meaning: "hoài niệm",                 ngu_hanh: "Thổ", position: "any"}
+    - {syl: "Hoà",   meaning: "hoà nhã",                   ngu_hanh: "Thủy", position: "any"}
+    - {syl: "Thiền", meaning: "tĩnh tâm",                  ngu_hanh: "Mộc", position: "second"}
+    - {syl: "Tuệ",   meaning: "trí tuệ",                   ngu_hanh: "Hỏa", position: "any"}
+    - {syl: "Lệ",    meaning: "lệ đẹp",                    ngu_hanh: "Hỏa", position: "first"}
+    - {syl: "Nương", meaning: "nương tử",                  ngu_hanh: "Thổ", position: "second"}
+
+  # ─── EXTENSION 2026-06-27: 20 syllables hoàn toàn nữ ────
+  extension_2026:
+    - {syl: "Sa",     meaning: "sa hoa",                    ngu_hanh: "Thủy", position: "second"}
+    - {syl: "Vịnh",   meaning: "vịnh thơ",                  ngu_hanh: "Thủy", position: "second"}
+    - {syl: "Linh",   meaning: "linh thiêng",               ngu_hanh: "Hỏa", position: "any"}
+    - {syl: "Sao",    meaning: "ngôi sao",                  ngu_hanh: "Hỏa", position: "second"}
+    - {syl: "Phụng",  meaning: "chim phụng",                ngu_hanh: "Kim", position: "any"}
+    - {syl: "Hỷ",     meaning: "hỷ lạc",                    ngu_hanh: "Thủy", position: "second"}
+    - {syl: "Nhuệ",   meaning: "tinh nhuệ",                 ngu_hanh: "Hỏa", position: "second"}
+    - {syl: "Quyên",  meaning: "đỗ quyên",                  ngu_hanh: "Mộc", position: "second"}
+    - {syl: "Cát",    meaning: "cát tường",                 ngu_hanh: "Mộc", position: "first"}
+    - {syl: "Dung",   meaning: "dung mạo",                  ngu_hanh: "Mộc", position: "second"}
+    - {syl: "Tuấn",   meaning: "tuấn tú",                   ngu_hanh: "Hỏa", position: "second"}
+    - {syl: "Quỳnh",  meaning: "ngọc quỳnh",                ngu_hanh: "Mộc", position: "second"}
+    - {syl: "Thoa",   meaning: "thoa kim",                  ngu_hanh: "Kim", position: "second"}
+    - {syl: "Lý",     meaning: "lý tưởng",                  ngu_hanh: "Hỏa", position: "second"}
+    - {syl: "Lệ",     meaning: "diễm lệ",                   ngu_hanh: "Hỏa", position: "any"}
+    - {syl: "Mây",    meaning: "mây trời",                  ngu_hanh: "Thủy", position: "second"}
+    - {syl: "Nắng",   meaning: "nắng vàng",                 ngu_hanh: "Hỏa", position: "second"}
+    - {syl: "Nhiên",  meaning: "tự nhiên",                  ngu_hanh: "Hỏa", position: "second"}
+    - {syl: "Mộc",    meaning: "mộc mạc",                   ngu_hanh: "Mộc", position: "first"}
+    - {syl: "Thi",    meaning: "thơ ca",                    ngu_hanh: "Kim", position: "second"}
+    - {syl: "Hà",     meaning: "sông",                      ngu_hanh: "Thủy", position: "any"}
+    - {syl: "Ninh",   meaning: "yên ninh",                  ngu_hanh: "Thủy", position: "second"}
+    - {syl: "Phượng", meaning: "chim phượng",               ngu_hanh: "Hỏa", position: "any"}
+    - {syl: "Hiên",   meaning: "hiên ngang",                ngu_hanh: "Hỏa", position: "second"}
+    - {syl: "Hoa",    meaning: "hoa",                       ngu_hanh: "Mộc", position: "second"}
+    - {syl: "Phi",    meaning: "phi tần",                   ngu_hanh: "Thủy", position: "any"}
+    - {syl: "Tuệ",    meaning: "trí tuệ",                   ngu_hanh: "Hỏa", position: "any"}
+    - {syl: "Hiệp",   meaning: "hiệp nghĩa",                ngu_hanh: "Thủy", position: "second"}
+
+# ============================================================
+# MASCULINE SYLLABLES — phong thủy + ý nghĩa
+# ============================================================
+
+masculine_syllables:
+
+  # ─── HÁN VIỆT CỔ ĐIỂN ─────────────────────────────
+  han_viet_classical:
+    - {syl: "Hoàng",  meaning: "hoàng kim, vua",           ngu_hanh: "Thổ", position: "any"}
+    - {syl: "Long",   meaning: "rồng",                     ngu_hanh: "Thổ", position: "any"}
+    - {syl: "Lâm",    meaning: "rừng",                     ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Tuấn",   meaning: "tuấn tú",                  ngu_hanh: "Hỏa", position: "any"}
+    - {syl: "Quốc",   meaning: "quốc gia",                 ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Bảo",    meaning: "bảo vệ, bảo vật",          ngu_hanh: "Thổ", position: "any"}
+    - {syl: "Minh",   meaning: "sáng",                     ngu_hanh: "Hỏa", position: "any"}
+    - {syl: "Hùng",   meaning: "hùng dũng",                ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Kiệt",   meaning: "kiệt xuất",                ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Khánh",  meaning: "chúc phúc",                ngu_hanh: "Kim", position: "any"}
+    - {syl: "Nguyên", meaning: "nguyên thuỷ",              ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Việt",   meaning: "Việt Nam",                 ngu_hanh: "Kim", position: "any"}
+    - {syl: "Hữu",    meaning: "có, hữu phúc",             ngu_hanh: "Thổ", position: "first"}
+    - {syl: "Trí",    meaning: "trí tuệ",                  ngu_hanh: "Hỏa", position: "any"}
+    - {syl: "Triết",  meaning: "triết lý",                 ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Vinh",   meaning: "vinh quang",               ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Phú",    meaning: "phú quý",                  ngu_hanh: "Thủy", position: "any"}
+    - {syl: "Quý",    meaning: "quý phái",                 ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Đức",    meaning: "đức tốt",                  ngu_hanh: "Hỏa", position: "any"}
+    - {syl: "Phúc",   meaning: "phúc lành",                ngu_hanh: "Thủy", position: "any"}
+
+  # ─── HIỆN ĐẠI ────────────────────────────────────
+  modern_2000s:
+    - {syl: "Khang",  meaning: "an khang",                 ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Huy",    meaning: "huy hoàng",                ngu_hanh: "Hỏa", position: "any"}
+    - {syl: "Hải",    meaning: "biển",                     ngu_hanh: "Thủy", position: "any"}
+    - {syl: "Nhật",   meaning: "ngày, mặt trời",           ngu_hanh: "Hỏa", position: "any"}
+    - {syl: "Thành",  meaning: "thành công, thành thật",   ngu_hanh: "Kim", position: "any"}
+    - {syl: "Đạt",    meaning: "đạt được",                 ngu_hanh: "Hỏa", position: "any"}
+    - {syl: "Trung",  meaning: "trung thành",              ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Hiếu",   meaning: "hiếu thảo",                ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Khoa",   meaning: "khoa học",                 ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Đăng",   meaning: "đăng quang",               ngu_hanh: "Hỏa", position: "any"}
+    - {syl: "Trường", meaning: "trường tồn",               ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Thiên",  meaning: "trời",                     ngu_hanh: "Kim", position: "any"}
+    - {syl: "Cường",  meaning: "cường tráng",              ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Sơn",    meaning: "núi",                      ngu_hanh: "Thổ", position: "any"}
+    - {syl: "Hào",    meaning: "hào hùng",                 ngu_hanh: "Thủy", position: "second"}
+    - {syl: "Hoài",   meaning: "hoài niệm",                ngu_hanh: "Thổ", position: "first"}
+    - {syl: "Tấn",    meaning: "tấn tới",                  ngu_hanh: "Kim", position: "first"}
+    - {syl: "Phát",   meaning: "phát triển",               ngu_hanh: "Mộc", position: "second"}
+    - {syl: "Gia",    meaning: "gia đình",                 ngu_hanh: "Mộc", position: "first"}
+    - {syl: "Khôi",   meaning: "khôi nguyên",              ngu_hanh: "Hỏa", position: "any"}
+    - {syl: "Dũng",   meaning: "dũng cảm",                 ngu_hanh: "Thổ", position: "any"}
+    - {syl: "Quang",  meaning: "quang minh",               ngu_hanh: "Hỏa", position: "any"}
+    - {syl: "Anh",    meaning: "tinh anh",                 ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Vũ",     meaning: "vũ trụ, mưa",              ngu_hanh: "Thủy", position: "any"}
+    - {syl: "Thái",   meaning: "thái dương",               ngu_hanh: "Hỏa", position: "any"}
+    - {syl: "Hoà",    meaning: "hoà bình",                 ngu_hanh: "Thủy", position: "any"}
+    - {syl: "Sĩ",     meaning: "sĩ phu",                   ngu_hanh: "Kim", position: "first"}
+    - {syl: "Lộc",    meaning: "lộc tài",                  ngu_hanh: "Mộc", position: "second"}
+    - {syl: "Phong",  meaning: "phong cách",               ngu_hanh: "Thủy", position: "any"}
+    - {syl: "Tùng",   meaning: "cây tùng",                 ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Bá",     meaning: "bá tước",                  ngu_hanh: "Thủy", position: "first"}
+    - {syl: "Nhân",   meaning: "nhân hậu",                 ngu_hanh: "Kim", position: "any"}
+    - {syl: "Khải",   meaning: "khải hoàn",                ngu_hanh: "Hỏa", position: "first"}
+    - {syl: "Toàn",   meaning: "toàn vẹn",                 ngu_hanh: "Kim", position: "any"}
+    - {syl: "Định",   meaning: "định đoạt",                ngu_hanh: "Hỏa", position: "any"}
+    - {syl: "Sang",   meaning: "sang trọng",               ngu_hanh: "Kim", position: "second"}
+    - {syl: "Tín",    meaning: "tín nghĩa",                ngu_hanh: "Kim", position: "any"}
+    - {syl: "Đông",   meaning: "phương đông",              ngu_hanh: "Mộc", position: "first"}
+    - {syl: "Văn",    meaning: "văn chương",               ngu_hanh: "Hỏa", position: "first"}
+    - {syl: "Triệu",  meaning: "triệu phú",                ngu_hanh: "Mộc", position: "first"}
+    - {syl: "Thắng",  meaning: "chiến thắng",              ngu_hanh: "Kim", position: "second"}
+    - {syl: "Mẫn",    meaning: "mẫn cán",                  ngu_hanh: "Thủy", position: "second"}
+    - {syl: "Cảnh",   meaning: "cảnh sắc",                 ngu_hanh: "Mộc", position: "first"}
+    - {syl: "Bình",   meaning: "bình yên",                 ngu_hanh: "Thủy", position: "second"}
+    - {syl: "Tâm",    meaning: "tâm hồn",                  ngu_hanh: "Kim", position: "any"}
+    - {syl: "Tiến",   meaning: "tiến bộ",                  ngu_hanh: "Kim", position: "first"}
+
+  # ─── EXTENSION 2026-06-27: bổ sung 40 syllables nam ────
+  extension_2026:
+    - {syl: "Bằng",   meaning: "bằng hữu, bằng phẳng",     ngu_hanh: "Thủy", position: "any"}
+    - {syl: "Hoàn",   meaning: "hoàn mỹ",                  ngu_hanh: "Thổ", position: "any"}
+    - {syl: "Liêm",   meaning: "liêm khiết",               ngu_hanh: "Hỏa", position: "any"}
+    - {syl: "Đỉnh",   meaning: "đỉnh cao",                 ngu_hanh: "Hỏa", position: "first"}
+    - {syl: "Pháp",   meaning: "pháp lý",                  ngu_hanh: "Thủy", position: "second"}
+    - {syl: "Tỉnh",   meaning: "tỉnh táo",                 ngu_hanh: "Hỏa", position: "any"}
+    - {syl: "Đoàn",   meaning: "đoàn kết",                 ngu_hanh: "Mộc", position: "first"}
+    - {syl: "Cát",    meaning: "cát tường",                ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Bính",   meaning: "rực rỡ",                   ngu_hanh: "Hỏa", position: "first"}
+    - {syl: "Mạnh",   meaning: "mạnh mẽ",                  ngu_hanh: "Thủy", position: "first"}
+    - {syl: "Đạo",    meaning: "đạo đức",                  ngu_hanh: "Mộc", position: "first"}
+    - {syl: "Sinh",   meaning: "sinh sống",                ngu_hanh: "Kim", position: "any"}
+    - {syl: "Lương",  meaning: "lương thiện",              ngu_hanh: "Mộc", position: "first"}
+    - {syl: "Tự",     meaning: "tự lực",                   ngu_hanh: "Thủy", position: "first"}
+    - {syl: "Quan",   meaning: "quan trọng",               ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Phục",   meaning: "phục vụ",                  ngu_hanh: "Thủy", position: "any"}
+    - {syl: "Vĩnh",   meaning: "vĩnh viễn",                ngu_hanh: "Thủy", position: "first"}
+    - {syl: "Thịnh",  meaning: "thịnh vượng",              ngu_hanh: "Kim", position: "second"}
+    - {syl: "Đại",    meaning: "đại nhân",                 ngu_hanh: "Hỏa", position: "first"}
+    - {syl: "Nghĩa",  meaning: "nghĩa khí",                ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Lực",    meaning: "sức mạnh",                 ngu_hanh: "Kim", position: "second"}
+    - {syl: "Mẫn",    meaning: "mẫn cán",                  ngu_hanh: "Thủy", position: "any"}
+    - {syl: "Thiết",  meaning: "thiết tha",                ngu_hanh: "Kim", position: "first"}
+    - {syl: "Tây",    meaning: "phương tây",               ngu_hanh: "Kim", position: "first"}
+    - {syl: "Kha",    meaning: "ngọc kha",                 ngu_hanh: "Mộc", position: "second"}
+    - {syl: "Huỳnh",  meaning: "huỳnh quang",              ngu_hanh: "Hỏa", position: "first"}
+    - {syl: "Cao",    meaning: "cao quý",                  ngu_hanh: "Mộc", position: "first"}
+    - {syl: "Trọng",  meaning: "trọng nghĩa",              ngu_hanh: "Mộc", position: "first"}
+    - {syl: "Lễ",     meaning: "lễ nghi",                  ngu_hanh: "Hỏa", position: "second"}
+    - {syl: "Thoại",  meaning: "thoại tâm",                ngu_hanh: "Kim", position: "second"}
+    - {syl: "Đỗ",     meaning: "đỗ đạt",                   ngu_hanh: "Hỏa", position: "first"}
+    - {syl: "Chí",    meaning: "ý chí",                    ngu_hanh: "Hỏa", position: "first"}
+    - {syl: "Thiện",  meaning: "thiện lương",              ngu_hanh: "Kim", position: "any"}
+    - {syl: "Tâm",    meaning: "tâm hồn",                  ngu_hanh: "Kim", position: "any"}
+    - {syl: "Nhiên",  meaning: "tự nhiên",                 ngu_hanh: "Hỏa", position: "second"}
+    - {syl: "Dụng",   meaning: "dụng tâm",                 ngu_hanh: "Hỏa", position: "second"}
+    - {syl: "Diễn",   meaning: "diễn xướng",               ngu_hanh: "Hỏa", position: "first"}
+    - {syl: "Thuận",  meaning: "thuận hoà",                ngu_hanh: "Kim", position: "any"}
+    - {syl: "Hiệp",   meaning: "hiệp nghĩa",               ngu_hanh: "Thủy", position: "any"}
+    - {syl: "Phương", meaning: "phương hướng",             ngu_hanh: "Thủy", position: "first"}
+
+# ============================================================
+# FORBIDDEN — KHÔNG dùng cho passenger naming
+# ============================================================
+forbidden_words:
+  - syl: "Nam"
+    reason: "CHAR_NAM recurring SVHMP — collision risk (bible/03)"
+  - syl: "Tài"   # ambigous — dùng cho 'Bác tài' driver title
+    reason: "Recurring CHAR_DRIVER title — avoid confusion"
+
+# ============================================================
+# UNISEX SYLLABLES — vừa dùng nam vừa nữ
+# ============================================================
+# Note: filter cẩn thận khi gen — không cho cross-collision
+
+unisex:
+  - {syl: "An",     bias: "neutral"}
+  - {syl: "Anh",    bias: "neutral"}
+  - {syl: "Bảo",    bias: "neutral"}
+  - {syl: "Hà",     bias: "feminine"}
+  - {syl: "Tâm",    bias: "neutral"}
+  - {syl: "Khánh",  bias: "neutral"}
+  - {syl: "Minh",   bias: "neutral"}
+  - {syl: "Quân",   bias: "masculine"}
+
+# ============================================================
+# CROSS-REF
+# ============================================================
+cross_ref:
+  bible_23: passenger_naming_constitution
+  consumer:
+    - tools/gen_100_passenger.py
+    - tools/build_name_pool.py
+  reuse_projects:
+    - SVHMP_Studio (current)
+    - HDK Hac Da Ky (future series 2 channel)
+    - future novel/podcast projects
+
+# ============================================================
+# STATS
+# ============================================================
+stats:
+  feminine_syllable_count: ~140
+  masculine_syllable_count: ~70
+  total_distinct: ~200
+  feminine_name_combinations_safe: 50+
+  masculine_name_combinations_safe: 35+

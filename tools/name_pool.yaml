@@ -1,0 +1,109 @@
+schema_version: 2
+rule_source: bible/23_passenger_naming.yaml
+database_source: data/vietnamese_names_extended.yaml
+lock_date: '2026-06-27'
+count_nu: 48
+count_nam: 50
+total_unique_names: 98
+global_word_uniqueness_verified: true
+forbidden_collision_verified: true
+NAMES_NU:
+- Hạ Diệu
+- Diễm Tường
+- Nguyệt Hằng
+- Phượng Trang
+- Ngọc Châu
+- Quỳnh Tuyết
+- Mai Lan
+- Cúc Trúc
+- Liễu Đào
+- Hồng An
+- Hạnh Hiền
+- Thuỳ Mỹ
+- Nhi Vy
+- Vi Hà
+- Như Yến
+- Hương Thảo
+- Sương Tiên
+- Nga Linh
+- Hoa Trinh
+- Hân Hậu
+- Khanh Nhung
+- Trân Quyên
+- My Hợp
+- Ái Ân
+- Ly Liên
+- Thư Yên
+- Thy Khả
+- Thanh Cẩm
+- Bích Tú
+- Kim Ngân
+- Phương Quân
+- Tịnh Quế
+- Vân Đan
+- Phụng Ánh
+- Thuý Trà
+- Thu Loan
+- Giang Lam
+- Mộc Băng
+- Chi Khiết
+- Dung Hiên
+- Thiền Tuệ
+- Lệ Nương
+- Sa Vịnh
+- Sao Hỷ
+- Nhuệ Thoa
+- Lý Mây
+- Nắng Thi
+- Ninh Phi
+NAMES_NAM:
+- Hoàng Long
+- Lâm Tuấn
+- Quốc Bảo
+- Minh Hùng
+- Kiệt Khánh
+- Nguyên Việt
+- Hữu Trí
+- Triết Vinh
+- Phú Quý
+- Đức Phúc
+- Khang Huy
+- Hải Nhật
+- Thành Đạt
+- Trung Hiếu
+- Khoa Đăng
+- Trường Thiên
+- Cường Sơn
+- Hào Hoài
+- Tấn Phát
+- Gia Khôi
+- Dũng Quang
+- Anh Vũ
+- Thái Hoà
+- Sĩ Lộc
+- Phong Tùng
+- Bá Nhân
+- Khải Toàn
+- Định Sang
+- Tín Đông
+- Văn Triệu
+- Thắng Mẫn
+- Cảnh Bình
+- Tâm Tiến
+- Bằng Hoàn
+- Liêm Đỉnh
+- Pháp Tỉnh
+- Đoàn Cát
+- Bính Mạnh
+- Đạo Sinh
+- Lương Tự
+- Quan Phục
+- Vĩnh Thịnh
+- Đại Nghĩa
+- Lực Thiết
+- Tây Kha
+- Huỳnh Cao
+- Trọng Lễ
+- Thoại Đỗ
+- Chí Thiện
+- Nhiên Dụng
