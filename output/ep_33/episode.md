@@ -184,6 +184,12 @@ Hoài An gật. Lệ rơi xuống vé.
 
 "Đêm nay — em đem vé về ga Cát Linh — chính ga em vừa bước lên xe. Em sẽ đặt vé vào hộp 'lost items' của ga — như cách trả vé cho người mất — em không phải người em. Em đi tàu một mình từ nay — không cần vé hai chiều."
 
+"Em đi tàu một mình mỗi cuối tuần — em ngồi ghế bên cửa sổ — nhìn ra Hà Nội từ trên cao. Em nghĩ về em — em sống Hà Nội tám tháng cuối đời — em chưa kịp thấy thành phố từ trên cao một lần."
+
+"Em đem theo vé Quỳnh ba năm trong ví — em không bao giờ dùng — em không thể dùng vé không nên dùng. Bây giờ em trả vé về ga — em đi tàu một mình thực sự — không mang theo Quỳnh trên đường."
+
+"Em định — sang năm em sẽ đem một bạn khác đi tàu điện. Em quen một cô bạn mới ở văn phòng — cô ấy chưa đi tàu Cát Linh. Em sẽ rủ cô — em đặt vé hai chiều mới — em dùng. Như cách em làm tiếp điều em hứa Quỳnh — nhưng với người sống — không phải người đã đi."
+
 ---
 
 # PAYOFF [section 5]

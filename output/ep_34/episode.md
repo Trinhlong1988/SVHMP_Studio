@@ -164,6 +164,12 @@ Giọng anh trầm — chậm.
 
 "Tôi cũng đem cuốn sổ nhỏ — tôi viết lại tên bác — ngày bác mất — vài dòng kỉ niệm bác kể tôi thuở nhỏ. Tôi để cuốn sổ trên mộ bác — để bác biết tôi không quên cả đời — chỉ quên mười năm — bây giờ tôi nhớ lại."
 
+"Cuốn sổ tôi viết ba đêm trước khi đem ra mộ. Tôi viết về bác Bính dạy tôi đọc thơ — tôi viết về bác cho tôi mượn sách tủ — tôi viết về buổi tối bác kể chuyện ngày xưa khi tôi mười tuổi vừa mất bố. Mỗi đoạn viết — tôi nhớ chi tiết — không tưởng tượng — tôi thực sự nhớ bác cả đời — chỉ quên đi thắp hương."
+
+"Vợ tôi đọc cuốn sổ — bảo: 'Anh viết hay — bác Bính chắc đọc được — chữ anh nghiêm túc.' Tôi cười nhẹ — bảo: 'Anh viết cho bác — không cho ai khác đọc.'"
+
+"Tôi không nói với vợ tôi về việc tôi quên thắp hương mười năm. Tôi xấu hổ — tôi sợ vợ trách. Vợ tôi tốt — không trách — nhưng tôi xấu hổ với chính tôi — không phải với vợ."
+
 Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"

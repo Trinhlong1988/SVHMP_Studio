@@ -2,36 +2,36 @@
   "ep_number": 31,
   "phase_h_version": "H1-H7 v1.0",
   "stats": {
-    "tokens_count": 1892,
-    "sentences_approx": 190,
-    "adverbs_count": 84,
-    "adverbs_ratio": 0.044,
-    "word_count": 1753,
-    "estimated_minutes": 11.3
+    "tokens_count": 2236,
+    "sentences_approx": 219,
+    "adverbs_count": 104,
+    "adverbs_ratio": 0.047,
+    "word_count": 2094,
+    "estimated_minutes": 13.5
   },
   "issues": [
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"cúc\" lặp 31x trong ep",
+      "evidence": "\"tháng\" lặp 38x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"tháng\" lặp 27x trong ep",
+      "evidence": "\"cúc\" lặp 34x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"đêm\" lặp 22x trong ep",
+      "evidence": "\"đêm\" lặp 31x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"chậu\" lặp 19x trong ep",
+      "evidence": "\"chậu\" lặp 21x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
@@ -53,16 +53,22 @@
       "suggestion": "khuất bóng → khuất dần / mờ xa"
     },
     {
+      "check": "H9_stop_consonant_tail",
+      "severity": "minor",
+      "evidence": "Word \"biết\" xuất hiện 1x (BigVGAN tail risk)",
+      "suggestion": "chưa biết → vẫn chưa hay / vẫn chưa rõ"
+    },
+    {
       "check": "H10_duration_too_short",
       "severity": "warning",
-      "evidence": "11.3 phút (target 15-18p, max 20p)",
-      "suggestion": "Expand thêm 571 từ để đạt 15p"
+      "evidence": "13.5 phút (target 15-18p, max 20p)",
+      "suggestion": "Expand thêm 231 từ để đạt 15p"
     }
   ],
   "issues_count_by_severity": {
     "critical": 0,
     "warning": 6,
-    "minor": 2
+    "minor": 3
   },
   "verdict": "WARN",
   "next_action": "Generator review issues, optional regen"

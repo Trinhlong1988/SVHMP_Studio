@@ -168,6 +168,12 @@ Giọng anh trầm — chậm.
 
 "Tôi sẽ đặt chăn lên mộ em — gấp gọn — kim đan còn cắm — như chứng tích em đan đến phút cuối. Em không kịp xong chăn cho tôi — tôi không kịp đắp chăn em. Hai phía đều dở — phù hợp."
 
+"Tôi cũng không tổ chức kỷ niệm cưới mười năm. Em đi trước đúng kỷ niệm tròn — em mất ngày mười tháng tư — cưới em mười bốn tháng tư. Bốn ngày khoảng cách. Em đi trước kỷ niệm — không kịp tổ chức."
+
+"Bảy năm — mỗi tháng tư — tôi không tổ chức gì. Tôi chỉ đến mộ em — đặt cúc — ngồi yên. Tôi không mời gia đình — không mời bạn — chỉ một mình."
+
+"Năm nay — tròn bảy năm em đi và mười bảy năm cưới. Tôi quyết — chăn này phải về với em. Tôi không thể giữ tiếp — chăn này là của em — chưa được tặng — phải về với em."
+
 Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
