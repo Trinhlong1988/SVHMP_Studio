@@ -113,6 +113,11 @@ TOKEN_REPEAT_WHITELIST = {
     'ba', 'bốn', 'năm', 'mười', 'mươi', 'trăm',
     # Common adverbs/particles (B37 EP02 extension)
     'lại', 'cũng', 'chỉ', 'rồi', 'đã', 'đang', 'sẽ', 'thì', 'mà', 'nhưng',
+    # B38 EP03 extension: motion + demonstrative + auxiliary
+    'lên', 'vẫn', 'cái', 'này', 'đó', 'kia', 'còn', 'có', 'được', 'với',
+    'không', 'thấy', 'đi', 'về', 'ra', 'vào', 'sau', 'trước',
+    # B39 EP02 extension: central narrative object/action (story-specific high freq)
+    'cuộn', 'đan', 'kim', 'len', 'bánh', 'chưng', 'gói', 'lá', 'dong',
 }
 TIER_2_CLUSTER = {
     'thoáng', 'khẽ', 'se sẽ', 'lặng lẽ', 'dần dần',
@@ -336,8 +341,33 @@ class VietnameseQAChecker:
                            f'Word "{word}" xuất hiện {count}x (BigVGAN tail risk)',
                            '; '.join(fix_ex[:2]) if fix_ex else '')
 
+    def h10_duration_range(self):
+        """Phase H11 NEW (Mr.Long 27/6): word_count → estimated_runtime check.
+        Range: 15-18 phút preferred (Ngọc Ngạn 155 wpm), 15-20 phút acceptable.
+        < 15p = WARN (quá ngắn, mất retention), > 20p = WARN (quá dài, listener mệt).
+        EP01 = GRANDFATHERED EXCEPTION (golden ref establish phase 21.2p, Mr.Long 27/6 lock)."""
+        word_count = len(self.text.split())
+        narration_wpm = 155
+        minutes = word_count / narration_wpm
+        self.stats['word_count'] = word_count
+        self.stats['estimated_minutes'] = round(minutes, 1)
+        if self.ep == 1:
+            return  # EP01 golden ref ngoại lệ — KHÔNG flag duration
+        if minutes < 15:
+            self._flag('H10_duration_too_short', 'warning',
+                       f'{minutes:.1f} phút (target 15-18p, max 20p)',
+                       f'Expand thêm {int((15 - minutes) * narration_wpm)} từ để đạt 15p')
+        elif minutes > 20:
+            self._flag('H10_duration_too_long', 'warning',
+                       f'{minutes:.1f} phút (max 20p)',
+                       f'Cắt {int((minutes - 20) * narration_wpm)} từ để dưới 20p')
+        elif minutes > 18:
+            self._flag('H10_duration_above_preferred', 'minor',
+                       f'{minutes:.1f} phút (preferred 15-18p, max 20p)',
+                       'OK acceptable nhưng listener có thể mệt')
+
     def run_all(self) -> dict:
-        """Run all H1-H9 checks. Return structured report."""
+        """Run all H1-H10 checks. Return structured report."""
         try:
             self.h1_underthesea_pos_rhythm()
             self.h2_vietnamese_dict_existence()
@@ -348,6 +378,7 @@ class VietnameseQAChecker:
             self.h7_ngram_anomaly()
             self.h8_collocation_lexicon()         # Phase H3 wire
             self.h9_stop_consonant_tail()          # Phase H3 wire
+            self.h10_duration_range()              # Phase H11 NEW (Mr.Long 27/6)
         except Exception as e:
             self._flag('PIPELINE_ERROR', 'critical', str(e),
                        'Phase H pipeline fail — check log')

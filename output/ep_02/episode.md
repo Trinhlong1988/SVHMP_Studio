@@ -117,11 +117,27 @@ Bên ngoài cửa kính, gió thổi nhẹ. Lá mía xào xạc.
 
 Cô khẽ kể, vẫn rất nhỏ. Như đang kể cho chính cuộn áo nghe:
 
-"Mẹ bắt đầu đan từ rằm tháng Một. Con đang ở Hà Nội. Mẹ gọi điện, bảo: 'Con về sớm. Mẹ đan dở cái áo, con thử cho mẹ đo lại vai.' Con bảo: 'Hai tám con về. Mẹ đợi con.'"
+"Mẹ bắt đầu đan từ rằm tháng Một. Con đang ở Hà Nội. Mẹ gọi điện, bảo: 'Con về sớm. Mẹ đan dở cái áo, con thử cho mẹ đo lại vai. Năm nay mẹ đan màu nâu, con thích nâu mà.' Con bảo: 'Hai tám con về. Mẹ đợi con.'"
 
-Cô ngừng. Tay vuốt lại sợi len thừa ở cổ áo.
+Cô ngừng. Tay vuốt lại sợi len thừa ở cổ áo. Sợi len mịn, mềm. Mẹ đan từng mũi rất chặt.
 
-"Hai tám con không về được. Khách hàng deadline gấp. Con nhắn: 'Mẹ ơi ba mươi con về.' Mẹ trả lời: 'Mẹ đợi.'"
+"Hai tám con không về được. Khách hàng deadline gấp. Trưởng phòng giữ con lại làm dự án cuối năm. Con nhắn: 'Mẹ ơi ba mươi con về.' Mẹ trả lời rất nhanh: 'Mẹ đợi.' Chỉ hai chữ đó."
+
+[pause:600ms]
+
+"Hai chín tối, em gái gọi. Em không nói gì. Em chỉ khóc. Khóc trong điện thoại. Khóc rất khẽ, sợ mẹ nghe thấy. Con hỏi: 'Sao thế em?' Em mới nói được: 'Anh ơi, mẹ ngất ngoài hiên. Mẹ đang đan áo thì ngất. Cây kim còn cắm vào tay mẹ.'"
+
+Cô đưa hai bàn tay lên. Nhìn vào lòng bàn tay mình. Như nhìn vào hai bàn tay khác.
+
+"Con bảo em: 'Đưa mẹ vào trong, đắp chăn. Anh đi xe đêm về.' Em hỏi: 'Anh có kịp không?' Con không trả lời. Con đặt máy. Con chạy ra bến xe Mỹ Đình."
+
+[pause:800ms]
+
+"Xe đêm chuyến cuối đã đi. Con đứng bến xe khóc một lúc. Rồi con quyết định đi xe ôm. Ba trăm cây số. Ba bác xe ôm. Mỗi bác chạy một đoạn. Đêm ba mươi. Mưa phùn."
+
+"Đến nhà lúc bốn giờ sáng mùng một. Cổng mở. Trong nhà có người đứng đợi. Em gái mặc áo trắng. Em không khóc nữa."
+
+[pause:1500ms]
 
 Bác tài nhìn gương chiếu hậu một thoáng. Im lặng. Không nói câu nào.
 
@@ -143,15 +159,41 @@ Hai bàn tay cô dừng lại trên mặt áo.
 
 # PAYOFF [section 5 — Kết quả]
 
-"Ba mươi con cũng không về."
+"Em dẫn con vào nhà. Quan tài mẹ đặt giữa nhà. Mẹ mặc áo dài màu nâu — cái áo mẹ vẫn mặc dịp lễ Tết. Tay mẹ đặt trên ngực. Các ngón hơi co lại. Như còn đang cầm cây kim."
 
-Cô nói. Giọng vẫn nhẹ. Không khóc.
+Cô gái dừng. Hơi thở chậm xuống.
 
-"Mùng một sáng sớm, em gái gọi. Mẹ đi từ đêm trước. Áo len chưa đan xong. Mẹ để lại cuộn len trên ghế gỗ ngoài hiên, kim còn cắm trong đó."
+"Con quỳ xuống. Con nhìn tay mẹ. Đầu một ngón tay vẫn còn vết kim đâm — một chấm đỏ nhỏ. Chưa kịp lau."
+
+[pause:1200ms]
+
+"Em gái dìu con ra hiên. Cái ghế gỗ vẫn còn đặt ngoài hiên. Trên ghế, cuộn áo len nâu vẫn nằm đó. Cây kim đan cắm dở giữa hai vai áo. Có vài sợi len thừa rơi xuống sàn gạch. Em bảo: 'Mẹ đan từ chiều. Mẹ bảo cố đan xong trước ba mươi, để con về mặc luôn. Một lúc lại tháo ra đan lại, sợ không vừa vai con.'"
+
+"Em ngồi xuống bên cuộn áo. Con cũng ngồi xuống. Em đưa cuộn áo cho con. Áo còn ấm. Em bảo: 'Mẹ vừa mới buông tay ra thôi.'"
+
+[pause:1500ms]
+
+"Con cầm cuộn áo. Con không khóc được. Con cũng không biết phải nói gì với mẹ. Con chỉ ngồi đó, ôm cuộn áo. Đến sáng. Đến lúc người trong làng sang viếng. Đến lúc em gái phải dìu con đứng dậy. Con vẫn ôm cuộn áo. Em phải khẽ bóc ra khỏi tay con."
+
+"Lúc đám tang xong, con xin cuộn áo. Em đưa con. Em bảo: 'Anh giữ. Mẹ đan cho anh.'"
+
+[pause:800ms]
+
+"Con mang cuộn áo về Hà Nội. Định bụng tự đan tiếp. Nhưng con chưa biết đan. Mẹ chưa kịp dạy. Cây kim vẫn còn cắm ở hai vai áo, đúng chỗ mẹ cắm trước khi buông tay."
+
+"Con cứ giữ cuộn áo. Mỗi đêm trước khi ngủ, con đặt cuộn áo lên gối bên cạnh. Để cảm thấy mẹ còn đan ở đâu đó. Để cảm thấy mẹ chưa thực sự đi."
+
+[pause:1000ms]
+
+"Mùng một Tết năm sau, em gái gọi: 'Anh có về không?' Con bảo: 'Anh có việc.' Em không nói gì thêm. Em đặt máy."
+
+"Con đi xe đêm về. Vẫn chuyến xe này. Bác tài này. Con không biết mình đang đi đâu. Chỉ biết phải đi. Cuộn áo vẫn ôm trong lòng."
+
+Cô gái dừng. Hai tay siết chặt cuộn áo nâu. Mắt vẫn không khóc.
+
+[pause:1200ms]
 
 Xe chậm lại. Phía trước có một ngã ba. Đèn đường vàng yếu hắt xuống mặt đất ẩm.
-
-Cô gái cầm cuộn áo lên, ôm vào lòng. Hai tay siết lại. Như sợ buông tay ra, thứ trong lòng mình sẽ biến mất.
 
 "Mẹ đan dở. Con cũng đan dở. Con chưa kịp về."
 
@@ -196,6 +238,20 @@ Trên ghế thứ bảy giờ đã trống. Nhưng phần đệm ghế còn lõm
 Quang nhìn ra cửa kính. Bên ngoài, đêm hai tám tháng Chạp vẫn dài. Còn nhiều ngã ba phía trước. Còn nhiều người đang đợi ai đó về.
 
 Có ai đó. Còn ngồi sau lưng Quang. Quang chưa quay đầu.
+
+[pause:1200ms]
+
+Quang đặt tay lên đùi. Hai bàn tay Quang trống. Không có cuộn áo. Không có vật gì.
+
+Nhưng đêm nay, Quang thấy nhớ mẹ Quang. Mẹ Quang đã đi từ rất lâu. Bao nhiêu năm rồi Quang không tính. Mỗi đêm mưa phùn về quê, Quang lại nhớ mùi áo len mẹ đan, mùi tay mẹ áp lên trán Quang lúc Quang bé.
+
+Mẹ Quang chưa kịp đan xong cái áo nào cho Quang. Mẹ đi vào một đêm mùa đông. Quang không có mặt. Quang ở Sài Gòn. Quang về trễ ba ngày.
+
+Tay Quang khẽ run.
+
+Trên ghế lái, bác tài liếc gương chiếu hậu một thoáng. Ánh mắt bác dừng lại trên Quang. Lâu hơn một nhịp.
+
+Rồi bác nhìn lại con đường phía trước. Hai bàn tay găng trắng đặt yên trên vô-lăng. Không nói gì.
 
 [pause:1500ms]
 

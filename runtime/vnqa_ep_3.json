@@ -1,13 +1,13 @@
 {
-  "ep_number": 2,
+  "ep_number": 3,
   "phase_h_version": "H1-H7 v1.0",
   "stats": {
-    "tokens_count": 2741,
-    "sentences_approx": 300,
-    "adverbs_count": 157,
+    "tokens_count": 3001,
+    "sentences_approx": 319,
+    "adverbs_count": 171,
     "adverbs_ratio": 0.057,
-    "word_count": 2356,
-    "estimated_minutes": 15.2
+    "word_count": 2601,
+    "estimated_minutes": 16.8
   },
   "issues": [
     {
@@ -19,7 +19,7 @@
     {
       "check": "H9_stop_consonant_tail",
       "severity": "minor",
-      "evidence": "Word \"biết\" xuất hiện 5x (BigVGAN tail risk)",
+      "evidence": "Word \"biết\" xuất hiện 1x (BigVGAN tail risk)",
       "suggestion": "chưa biết → vẫn chưa hay / vẫn chưa rõ"
     }
   ],

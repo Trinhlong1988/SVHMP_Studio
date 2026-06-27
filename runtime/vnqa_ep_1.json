@@ -5,7 +5,9 @@
     "tokens_count": 3737,
     "sentences_approx": 443,
     "adverbs_count": 176,
-    "adverbs_ratio": 0.047
+    "adverbs_ratio": 0.047,
+    "word_count": 3285,
+    "estimated_minutes": 21.2
   },
   "issues": [
     {

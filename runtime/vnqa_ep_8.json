@@ -1,0 +1,63 @@
+{
+  "ep_number": 8,
+  "phase_h_version": "H1-H7 v1.0",
+  "stats": {
+    "tokens_count": 1805,
+    "sentences_approx": 237,
+    "adverbs_count": 80,
+    "adverbs_ratio": 0.044,
+    "word_count": 1516,
+    "estimated_minutes": 9.8
+  },
+  "issues": [
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"đêm\" lặp 17x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"khăn\" lặp 16x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"ngồi\" lặp 12x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H2_dict_unusual_compound",
+      "severity": "minor",
+      "evidence": "Cụm từ dài bất thường: ['` prompt_version', 'OBJ_KHAN_TAY_CU signature_setting', 'trống Quang nhặt']",
+      "suggestion": "TENTATIVE — Mr.Long verify trong từ điển VN"
+    },
+    {
+      "check": "H7_ngram_repetition",
+      "severity": "warning",
+      "evidence": "Bi-gram \"tách, tách,\" lặp 3x trong 1 câu",
+      "suggestion": "Reword câu để tránh repetition"
+    },
+    {
+      "check": "H9_stop_consonant_tail",
+      "severity": "minor",
+      "evidence": "Word \"biết\" xuất hiện 1x (BigVGAN tail risk)",
+      "suggestion": "chưa biết → vẫn chưa hay / vẫn chưa rõ"
+    },
+    {
+      "check": "H10_duration_too_short",
+      "severity": "warning",
+      "evidence": "9.8 phút (target 15-18p, max 20p)",
+      "suggestion": "Expand thêm 808 từ để đạt 15p"
+    }
+  ],
+  "issues_count_by_severity": {
+    "critical": 0,
+    "warning": 5,
+    "minor": 2
+  },
+  "verdict": "WARN",
+  "next_action": "Generator review issues, optional regen"
+}

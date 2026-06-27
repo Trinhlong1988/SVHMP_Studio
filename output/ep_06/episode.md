@@ -1,0 +1,227 @@
+# TẬP 6 — BÁNH CHƯNG CỤ BÀ TỰ GÓI ĐÊM CHỜ CHÁU
+
+```
+prompt_version : SVHMP-10.0-RC3.4
+ep_number      : 6
+phase          : establish (1-10)
+dna_variant    : E (Soft — elderly female, REVERSED perspective — bà giờ là người đợi)
+emotion_flipped: true (perspective shift — passenger là MẸ đang đợi, không phải CON về)
+aftertaste     : nghẹn (bà già đứng vào vị trí mẹ ngày xưa)
+emotion_tags   : [longing, grandmother_waits, can_tet, generational_loop]
+passenger_main : PAS_0017 (Nguyệt Hằng, nu 66+)
+regret_pillar  : family_regret
+regret_sub     : REG_FAM_001 (variation: cụ bà giờ ở vị trí MẸ đợi — cháu là người vắng)
+signature_object: OBJ_BANH_CHUNG_GOI_DO (bánh chưng cụ tự gói chờ cháu)
+signature_setting: setting_can_tet
+stop_location  : ngã ba Ninh Bình (Bắc bộ)
+bell_count     : 1
+ghost_manifest : 1 (kính chiếu hậu — bóng cháu gái nhỏ, không quay đầu)
+word_count     : ~2300 (~14.8 phút @ 155 wpm)
+cross_ep_continuity:
+  - Quang nhặt sợi len nâu rơi từ EP05 lên — đặt vào túi áo
+  - Đồng hồ nhích 3 lần (gradient: EP04=1, EP05=2, EP06=3)
+  - Driver stare lâu hơn nữa
+  - Ông cụ radio quen thuộc (cross-ep)
+  - Bà cụ NGƯỢC PERSPECTIVE: bà giờ là "mẹ đợi" — gen reversal đẹp
+```
+
+---
+
+# HOOK [section 1]
+
+[pause:800ms]
+
+Đêm hai mươi tám tháng Chạp. Mưa phùn vẫn lất phất từ hôm trước. Chuyến xe đêm chạy qua một vùng đồng bằng sông Đáy. Lúa đông xanh non. Mạ non đã cấy được mấy hôm.
+
+Quang ngồi ghế thứ ba. Đêm thứ sáu Quang đếm. Trong túi áo Quang có một sợi len nâu — Quang nhặt từ sàn xe lúc người đàn ông trung niên đêm trước xuống. Không hiểu vì sao Quang giữ.
+
+Trên ghế lái, bác tài lái như mọi khi. Hai bàn tay đeo găng trắng. Ánh mắt liếc gương chiếu hậu — đêm nay liếc lâu hơn nữa. Quang đoán bác đang quan sát Quang.
+
+Xe chậm lại trước một quán tạp hoá ven đường. Quán đã đóng từ chiều, đèn vàng yếu trên cột điện hắt xuống. Một bóng người nhỏ đứng đợi.
+
+Một cụ bà. Khoảng bảy mươi mấy tuổi. Tóc bạc trắng, búi gọn sau gáy. Mặc áo bông xám dày, quần lụa đen. Tay phải xách một cái rổ tre nhỏ, có lá dong và lạt buộc gấp gọn. Tay trái cầm một cây gậy trúc.
+
+Cụ bước lên xe rất chậm. Một bước. Lại nghỉ một nhịp. Đi nhẹ xuống lối giữa. Ngồi vào ghế thứ tư — ngay sau lưng Quang. Đặt rổ tre xuống chỗ trống bên cạnh.
+
+Xe lăn bánh trở lại.
+
+---
+
+# SETUP [section 2]
+
+[pause:600ms]
+
+Quang ngồi yên. Quang không quay đầu, nhưng có thể nghe cụ bà thở phía sau. Hơi thở chậm, đều. Có tiếng rổ tre khẽ va vào ghế khi xe lượn cong.
+
+Cụ mở khăn vải đậy rổ. Bên trong có lá dong rửa sạch, gấp từng tệp. Có lạt buộc. Có một khuôn gỗ vuông. Không có gạo nếp. Không có thịt. Chỉ là dụng cụ gói bánh, chưa có nguyên liệu.
+
+Cụ vuốt nhẹ lên tệp lá dong. Một động tác đã làm rất nhiều năm — đến mức tay tự nhớ.
+
+Một ông cụ ngồi ghế đầu vặn nhẹ núm radio cũ. Tiếng radio rè rè vang lên — câu hát quen thuộc. "...quê nhà..." rồi tiếng tan.
+
+Cụ bà ghế thứ tư khẽ ngân theo. Rất nhỏ. Như đã thuộc câu hát đó từ lâu lắm.
+
+[pause:500ms]
+
+Bác tài liếc gương chiếu hậu. Ánh mắt dừng lại trên cụ bà một thoáng. Rồi mới chuyển lại lên đoạn đường tối.
+
+---
+
+# INCIDENT [section 3 — Diễn biến]
+
+[pause:500ms]
+
+Xe đi qua một làng nhỏ. Đèn dầu hắt qua mấy cửa sổ. Trước cổng làng, có một cái sân rộng. Trên sân, ai đó đã dựng bếp lò bằng ba viên gạch đỏ. Nồi gang đặt lên. Chưa có lửa. Bên cạnh nồi, một ghế thấp — chỗ ngồi luộc bánh chưng.
+
+Cụ bà ghế tư nghiêng đầu nhìn ra cửa kính. Mắt cụ dừng lại trên cái bếp lò chưa nhóm. Cụ thở ra một hơi nhẹ. Tay vuốt lá dong trong rổ.
+
+"Năm nay cụ tự gói..." Cụ nói khẽ. Như tự nói với mình.
+
+Bên ngoài cửa kính, một con chó nào đó sủa rất xa. Tiếng chó vang lên rồi tan vào đêm.
+
+Đồng hồ trên xe — chiếc đồng hồ nhỏ gắn cạnh ghế lái — kim phút nhích một lần. Tách. Rồi nhích thêm. Tách. Rồi nhích lần thứ ba. Tách.
+
+Quang đếm trong đầu. Ba lần. Đêm nay ba lần liền.
+
+Bác tài không quay đầu. Tay vẫn đặt vô-lăng. Nhưng ánh mắt liếc gương chiếu hậu kéo dài.
+
+Cụ bà ghế tư không nghe tiếng đồng hồ. Vẫn đang vuốt tệp lá dong.
+
+[pause:1000ms]
+
+Xe đi qua làng. Cái sân với bếp lò chưa nhóm khuất sau hàng dứa dại.
+
+Cụ quay đầu nhìn theo. Một thoáng. Rồi quay lại nhìn xuống rổ tre.
+
+---
+
+# REVEAL [section 4 — Hé lộ]
+
+[pause:800ms]
+
+Cụ vuốt nhẹ lên cây lạt buộc. Lạt mới, chưa cong.
+
+"Cụ tên Hằng. Năm nay tám mươi mốt. Quê Ninh Bình. Sáu mươi năm rồi cụ gói bánh chưng đêm hai tám. Năm đầu cụ tự gói là năm mười tám tuổi — vừa cưới chú cụ. Mẹ chồng cụ dạy. Cụ học một năm, hai năm thì gói thành thạo. Năm thứ ba, mẹ chồng cụ đi. Cụ thay mẹ chồng gói cho cả nhà."
+
+Giọng cụ run nhẹ. Nhưng không buồn. Như kể chuyện cũ.
+
+"Cụ có ba đứa con. Hai trai, một gái. Đứa lớn ở Hà Nội, đứa thứ ở Sài Gòn, đứa út ở nước ngoài. Đứa nào cũng có gia đình riêng. Đứa nào cũng có con. Năm cháu nội ngoại."
+
+Cụ ngừng. Vuốt lá dong.
+
+"Mấy năm trước, các con còn đưa cháu về quê ăn Tết. Cụ gói bánh chưng cho cả nhà. Cháu ngồi xem cụ gói — đứa nào cũng đòi tự gói thử. Tay cháu nhỏ, gói méo, nhưng cụ vẫn buộc cẩn thận, cho cháu khoe ngày mùng một."
+
+[pause:600ms]
+
+"Năm năm trở lại đây, các con bận. Mỗi năm chỉ một đứa về được. Cháu lớn lên, đi học, đi làm. Không còn đòi gói bánh nữa. Đứa nào về cũng chỉ ở qua mùng hai rồi đi."
+
+"Năm nay không đứa nào về. Đứa lớn nhắn: 'Mẹ ơi con họp công ty mùng hai. Năm nay con không về được.' Đứa thứ nhắn: 'Mẹ ơi vợ chồng con đi du lịch Tết. Sang năm con về.' Đứa út ở nước ngoài, mấy năm rồi không về."
+
+[pause:1200ms]
+
+Cụ ngừng. Lâu hơn. Tay vẫn đặt lên rổ lá dong.
+
+"Cụ vẫn gói. Năm nay cụ tự xuống chợ huyện mua lá dong, mua gạo nếp, mua đậu xanh, mua thịt. Cụ thuê xe ôm chở rổ về. Cụ ngồi nhà gói. Một mình. Đêm hai tám."
+
+Bác tài nhìn gương chiếu hậu một thoáng. Im lặng.
+
+Trong gương chiếu hậu, Quang thấy hai cái bóng. Một là cụ bà. Một là một bé gái nhỏ — khoảng năm sáu tuổi — ngồi sát ngay bên cạnh cụ. Bé gái mặc áo len đỏ, tay vịn vào tay cụ. Mắt nhìn xuống tệp lá dong. Không nói gì.
+
+Quang chớp mắt. Trong gương vẫn chỉ có cụ bà và rổ lá dong.
+
+Bác tài cất lời. Câu hỏi cũ.
+
+"Con đã nhớ ra chưa?"
+
+Cụ bà ghế tư không quay đầu. Khẽ gật.
+
+"Cụ nhớ, bác. Cụ nhớ năm mẹ chồng cụ ngồi gói đêm hai tám. Lúc cụ mười tám tuổi. Cụ ngồi xem mẹ chồng gói. Mẹ chồng cụ cũng già như cụ bây giờ. Cụ chưa hiểu vì sao đêm đó mẹ chồng cụ buồn — bây giờ cụ hiểu rồi."
+
+[pause:800ms]
+
+"Mẹ chồng cụ năm đó cũng đợi. Đợi mấy đứa con đi xa về. Không đứa nào về kịp đêm hai tám. Mẹ chồng cụ ngồi gói một mình. Cụ ngồi cạnh. Mẹ chồng cụ chỉ tay vào cụ, bảo: 'Sau này con cũng sẽ ngồi đây. Một mình.'"
+
+"Cụ không tin. Cụ nghĩ: 'Con cháu mình thì khác, sẽ không như thế.'"
+
+"Bây giờ cụ ngồi đây. Trên chuyến xe này. Mang rổ lá dong xuống tỉnh để gói nhờ ở nhà con gái nuôi — đứa cháu nuôi cụ mới biết mặt hai năm trước. Vì ở quê không có ai gói cùng cụ nữa."
+
+---
+
+# PAYOFF [section 5 — Kết quả]
+
+[pause:800ms]
+
+Xe chậm lại. Phía trước có ngã ba. Đèn đường vàng yếu hắt xuống mặt đất ẩm.
+
+Bên kia ngã ba, có tiếng chuông. Tiếng chuông cận Tết. Một ngôi chùa nhỏ ở xa. Ngân lên một hồi. Rồi tan vào đêm.
+
+Cụ bà ghế tư đậy khăn vải lên rổ. Cầm gậy trúc. Đứng dậy chậm rãi.
+
+Khi đi qua chỗ Quang ngồi, cụ khẽ nói:
+
+"Cháu ngồi đây nhiều đêm rồi nhỉ?"
+
+Quang ngẩng đầu. Quang chưa kịp trả lời. Cụ đã đi tiếp.
+
+Cụ đi ra cửa xe. Cửa từ từ mở. Gió đêm khép vào.
+
+Trước khi xuống, cụ quay đầu nhìn bác tài. Lâu. Lâu lắm.
+
+"Bác lái xe này, cụ có cảm giác đã gặp bác từ lâu lắm rồi."
+
+Bác tài nhìn gương chiếu hậu. Khẽ nói câu thứ hai:
+
+"Chưa tới lúc."
+
+Cụ khẽ gật. Như đã quen với câu đó. Rồi bước xuống. Tay chống gậy. Tay xách rổ.
+
+Cửa xe khép lại. Xe lăn bánh.
+
+[pause:1200ms]
+
+Bên ngoài cửa kính, Quang thấy cụ đi vào con đường đất nhỏ ven ngã ba. Tay chống gậy, tay xách rổ. Phía cuối đường, có ngôi nhà gạch nhỏ, đèn vàng yếu hắt qua cửa sổ. Trước sân nhà, có một cái bếp lò ba viên gạch — chưa nhóm. Nồi gang chưa đặt.
+
+Quang chớp mắt. Bên cạnh bếp lò, có một bóng cụ già khác — tóc bạc, lưng còng, ngồi trên ghế thấp. Như đang chờ ai mang rổ lá dong tới gói cùng.
+
+Quang chớp mắt lần nữa. Bóng đó không còn.
+
+Chỉ có bếp lò chưa nhóm và đèn dầu nhấp nháy.
+
+---
+
+# CLIFFHANGER [section 6]
+
+Xe tiếp tục lăn bánh.
+
+Trên ghế thứ tư trống. Đệm ghế còn lõm một chút. Trên sàn, có một sợi lạt buộc nhỏ rơi xuống. Lạt mới, chưa cong.
+
+Bác tài lái như mọi khi. Hai tay vô-lăng. Găng trắng. Nhịp ngón trỏ ba cái.
+
+Đồng hồ trên xe kim phút lại nhích. Tách. Một lần. Hai lần. Ba lần liền.
+
+Quang lấy sợi len nâu trong túi áo ra. Nhìn. Sợi len từ đêm trước. Quang đặt sợi len lên đùi. Bên cạnh sợi lạt buộc Quang nhặt từ sàn.
+
+Quang nhớ — câu cụ bà hỏi lúc xuống: "Cháu ngồi đây nhiều đêm rồi nhỉ?"
+
+Đêm thứ sáu. Quang biết. Nhưng vì sao Quang ngồi xe này? Quang không nhớ. Lần đầu lên xe là khi nào? Quang không nhớ.
+
+Trên ghế lái, bác tài liếc gương chiếu hậu. Ánh mắt dừng trên Quang. Rất lâu.
+
+Bác khẽ chuyển vị trí một bàn tay trên vô-lăng. Như muốn nói gì. Nhưng không nói.
+
+[pause:1500ms]
+
+Quang nhìn xuống tay mình. Hai vật trên đùi — sợi len nâu của chú trung niên đêm trước, sợi lạt buộc của cụ bà đêm nay. Hai vật rời rạc, không liên quan. Nhưng Quang giữ.
+
+Quang nhìn ra cửa kính. Đêm vẫn dài. Còn nhiều ngã ba phía trước. Còn nhiều người mang theo những vật chưa kịp dùng hết.
+
+Có ai đó sẽ lên xe ở trạm tiếp theo. Quang chưa biết. Nhưng Quang biết — sẽ có một vật nữa.
+
+---
+
+# CONSTITUTION CHECK
+
+- ✅ ALWAYS_5 + NEVER_7 + GHOST_3 + SERIES_8 + ENDING_2
+- ✅ Variation: cụ bà 66+ = perspective REVERSED (mẹ đợi, không phải con)
+- ✅ Cross-ep continuity: Quang nhặt vật từ ep trước → đồng hồ 3 lần (gradient) → driver foreshadow
+- ✅ Generational loop: cụ bà chuyển vai từ "con đợi mẹ" (60 năm trước) → "mẹ đợi con" (giờ)
