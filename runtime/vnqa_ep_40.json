@@ -2,61 +2,79 @@
   "ep_number": 40,
   "phase_h_version": "H1-H7 v1.0",
   "stats": {
-    "tokens_count": 2549,
-    "sentences_approx": 326,
-    "adverbs_count": 161,
-    "adverbs_ratio": 0.063,
-    "word_count": 2183,
-    "estimated_minutes": 14.1
+    "tokens_count": 2977,
+    "sentences_approx": 261,
+    "adverbs_count": 125,
+    "adverbs_ratio": 0.042,
+    "word_count": 2976,
+    "estimated_minutes": 19.2
   },
   "issues": [
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"đêm\" lặp 24x trong ep",
+      "evidence": "\"khải phong\" lặp 46x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"trên\" lặp 24x trong ep",
+      "evidence": "\"đêm\" lặp 40x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"vật\" lặp 22x trong ep",
-      "suggestion": "Đa dạng từ vựng, dùng synonym"
-    },
-    {
-      "check": "H1_token_repeat",
-      "severity": "warning",
-      "evidence": "\"câu\" lặp 21x trong ep",
+      "evidence": "\"hạ vy\" lặp 22x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
       "check": "H2_dict_unusual_compound",
       "severity": "minor",
-      "evidence": "Cụm từ dài bất thường: ['` prompt_version', 'REG_LOV_002 signature_object', 'OBJ_VONG_TAY signature_setting']",
+      "evidence": "Cụm từ dài bất thường: ['` prompt_version', 'MILESTONE pillar', 'GEOGRAPHIC HN']",
       "suggestion": "TENTATIVE — Mr.Long verify trong từ điển VN"
+    },
+    {
+      "check": "H6_sentence_runon",
+      "severity": "warning",
+      "evidence": "Câu 181 từ (max 150)",
+      "suggestion": "Cắt thành 2-3 câu ngắn để rhythm narrative"
+    },
+    {
+      "check": "H7_ngram_repetition",
+      "severity": "warning",
+      "evidence": "Bi-gram \"anh hải\" lặp 3x trong 1 câu",
+      "suggestion": "Reword câu để tránh repetition"
+    },
+    {
+      "check": "H7_ngram_repetition",
+      "severity": "warning",
+      "evidence": "Bi-gram \"hai trưng\" lặp 3x trong 1 câu",
+      "suggestion": "Reword câu để tránh repetition"
     },
     {
       "check": "H9_stop_consonant_tail",
       "severity": "minor",
-      "evidence": "Word \"biết\" xuất hiện 4x (BigVGAN tail risk)",
+      "evidence": "Word \"khuất\" xuất hiện 3x (BigVGAN tail risk)",
+      "suggestion": "khuất bóng → khuất dần / mờ xa"
+    },
+    {
+      "check": "H9_stop_consonant_tail",
+      "severity": "minor",
+      "evidence": "Word \"biết\" xuất hiện 5x (BigVGAN tail risk)",
       "suggestion": "chưa biết → vẫn chưa hay / vẫn chưa rõ"
     },
     {
-      "check": "H10_duration_too_short",
-      "severity": "warning",
-      "evidence": "14.1 phút (target 15-18p, max 20p)",
-      "suggestion": "Expand thêm 141 từ để đạt 15p"
+      "check": "H10_duration_above_preferred",
+      "severity": "minor",
+      "evidence": "19.2 phút (preferred 15-18p, max 20p)",
+      "suggestion": "OK acceptable nhưng listener có thể mệt"
     }
   ],
   "issues_count_by_severity": {
     "critical": 0,
-    "warning": 5,
-    "minor": 2
+    "warning": 6,
+    "minor": 4
   },
   "verdict": "WARN",
   "next_action": "Generator review issues, optional regen"
