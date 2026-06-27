@@ -27,12 +27,12 @@ Tập 22 — câu chuyện đêm nay.
 ---
 
 ```
-prompt_version: SVHMP-10.0-RC3.5
+prompt_version: SVHMP-10.0-RC3.6
 ep_number: 22
 phase: warming (S1)
 pillar: promise
 intensity_level: 0.55
-quang_memory_fragment: M5 (Khải Phong nhớ phố Khâm Thiên — phòng trọ ghép)
+quang_memory_fragment: M5 (Khải Phong nhớ phòng trọ + bạn nữ phòng đối diện)
 object_sub_arc: TEMPORAL year 2017 vật 1 (sách bìa ghi 2017 — sub-arc start)
 callback_target: none
 passenger_main: nu 35 Quỳnh Mai Bắc Ninh (hứa với thầy đại học sẽ về thăm — 10 năm)
@@ -41,9 +41,9 @@ signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Bắc Ninh
 bell_count: 1
 ghost_manifest: 1
-word_count: ~2050
+word_count: ~2300
 hand_crafted: true
-arc_design_compliant: bible/21 R33-R38
+arc_design_compliant: bible/21 R33-R38 + R39 word count
 ```
 
 ---
@@ -52,17 +52,23 @@ arc_design_compliant: bible/21 R33-R38
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven sông Đuống, Bắc Ninh. Đèn pha quét lên hàng dâu cũ.
+Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven sông Đuống, Bắc Ninh. Đèn pha quét lên hàng dâu cũ — gốc dâu dày — đã trồng lâu năm — lá xanh đậm sau mưa.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi hai. Trong túi áo gió Khải Phong — hai mươi mốt vật.
+Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi hai. Trong túi áo gió Khải Phong — hai mươi mốt vật. Đêm qua thêm sợi chỉ vàng từ vải bọc khung ảnh anh Trọng Nhân.
 
-Bác tài lái.
+Bác tài lái. Bàn tay già — chậm — đều — không đổi từ đêm đầu.
 
-Xe chậm lại trước một trường cấp hai cũ — biển "Trường THCS Mai Trung" — cổng sắt đã đóng — đèn vàng treo còn sáng. Một phụ nữ đứng đợi. Khoảng ba mươi lăm tuổi. Áo dạ xám — quần tây đen. Tay phải cầm cuốn sách bọc giấy bản — đã ố vàng.
+Mưa rơi xuống đường — đường đã ướt. Mặt sông Đuống bên phải đường — phẳng — đèn cầu xa bên kia bờ chiếu xuống nước — vàng nhạt.
 
-Cô bước lên xe. Đi qua hàng ghế đầu — ngồi xuống ghế thứ sáu. Đặt sách lên đùi. Mở giấy bản — cuốn sách bìa cứng nâu — chữ vàng — gáy ghi "2017".
+Xe chậm lại trước một trường cấp hai cũ — biển gỗ "Trường THCS Mai Trung" — cổng sắt cũ đã đóng — đèn vàng treo cột cổng còn sáng. Tường rào trường có rêu xanh ở chân — trường đã có từ lâu.
 
-Khải Phong ghế ba nhìn — sách bìa ghi 2017 — năm cô tốt nghiệp.
+Một phụ nữ đứng đợi bên cổng. Khoảng ba mươi lăm tuổi. Áo dạ xám — vạt áo dài quá hông. Quần tây đen. Mang giày da thấp. Tay phải cầm cuốn sách bọc giấy bản đã ố vàng — bọc cẩn thận — không bị nhăn.
+
+Cô bước lên xe. Đi qua hàng ghế đầu — chân bước nhẹ — ngồi xuống ghế thứ sáu. Đặt sách lên đùi.
+
+Mở giấy bản — chậm — như mở vật quý. Bên trong — cuốn sách bìa cứng nâu — chữ vàng — gáy sách ghi rõ "2017" — năm xuất bản.
+
+Khải Phong ghế ba nhìn — sách bìa ghi 2017 — năm cô tốt nghiệp đại học — cô vừa kể lúc lên xe.
 
 Xe lăn bánh.
 
@@ -72,17 +78,19 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Cô ngồi yên. Vuốt bìa sách. Đầu ngón tay cô mảnh — bàn tay người làm bàn giấy.
+Cô ngồi yên. Vuốt bìa sách — phía gáy — chỗ chữ vàng "2017" — như vuốt năm tháng. Đầu ngón tay cô mảnh — bàn tay người làm bàn giấy — không có nét chai.
 
-Khải Phong quan sát từ ghế ba. Cô ba lăm — mặt sáng — tóc cột thấp. Sách trên đùi — bìa nâu — gáy vàng — chữ "2017" rõ.
+Khải Phong quan sát từ ghế ba. Cô ba lăm — mặt sáng — tóc cột thấp gọn sau ót — không tô son — quê mùa nhẹ. Mắt cô có nét buồn — không khóc — buồn lâu ngày.
 
-Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng. Tắt.
+Sách trên đùi cô — bìa nâu — chữ vàng đã hơi mờ — gáy ghi "2017" rõ. Bìa sách dày — sách quan trọng — không phải sách thường.
+
+Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng — giọng nữ — đệm sáo. Tắt. Ông cụ xoay tần khác — không bắt được — tắt hẳn.
 
 [pause:500ms]
 
-Bác tài liếc gương. Không nói.
+Bác tài liếc gương. Không nói. Quay lại.
 
-Cô lật sách — trang đầu — có chữ viết tay — em chưa rõ.
+Cô lật sách — chậm — trang đầu — có chữ viết tay — Khải Phong chưa rõ nội dung — chỉ thấy nét chữ nghiêng — mực đen — viết bằng bút máy thời cũ.
 
 ---
 
@@ -90,21 +98,23 @@ Cô lật sách — trang đầu — có chữ viết tay — em chưa rõ.
 
 [pause:500ms]
 
-Xe đi qua xóm cũ. Phía bên trái — căn nhà gạch — cửa khép. Cạnh cửa — bóng ông cụ đứng — tay cầm cuốn sách — đọc dưới đèn dầu. Không quay đầu.
+Xe đi qua xóm cũ. Phía bên trái — căn nhà gạch đỏ — mái ngói cũ — cửa khép. Đèn dầu trong nhà còn sáng yếu — hắt qua khe cửa.
 
-Cô ghế sáu nhìn về phía đó.
+Cạnh cửa — bóng ông cụ đứng — chừng sáu mươi tuổi — áo sơ mi xanh đậm — tay cầm cuốn sách — đọc dưới đèn dầu — không quay đầu. Lưng ông cụ hơi còng — đứng bên cửa — đọc — như đang đợi ai.
+
+Cô ghế sáu nhìn về phía đó. Hơi thở cô chậm lại. Lệ chưa rơi — nhưng đã đứng ở khóe mắt.
 
 "Thầy..."
 
-Cô nói nhỏ.
+Cô nói nhỏ — một từ — đầy tiếng thở.
 
-Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
+Đồng hồ trên xe — kim phút nhích một lần — hai — đến mười. Đếm cùng cô.
 
 [pause:1000ms]
 
-Xe đi qua. Nhà gạch khuất.
+Xe đi qua. Nhà gạch khuất. Bóng ông cụ đứng đọc sách khuất.
 
-Cô quay đầu. Vuốt sách.
+Cô quay đầu lại. Lau khóe mắt bằng ngón tay — chưa khóc — chỉ lau. Vuốt sách trên đùi.
 
 ---
 
@@ -112,65 +122,75 @@ Cô quay đầu. Vuốt sách.
 
 [pause:1000ms]
 
-"Em là Quỳnh Mai. Ba mươi lăm tuổi. Em ở Mai Trung — Bắc Ninh. Em làm giáo viên cấp ba — Hà Nội."
+"Em là Quỳnh Mai. Ba mươi lăm tuổi. Em ở Mai Trung — Bắc Ninh — quê. Em làm giáo viên cấp ba — trường Trần Phú Hà Nội. Em dạy môn Văn."
 
-Giọng cô đều — chậm.
+Giọng cô đều — chậm — chữ Văn cô nói rõ — như tự hào nhưng kèm buồn.
 
-"Năm em hai mươi lăm — em tốt nghiệp Đại học Sư phạm — chính năm hai nghìn không trăm mười bảy. Em là sinh viên giỏi nhất khóa — em được giải thưởng tốt nghiệp."
+"Năm em hai mươi lăm — em tốt nghiệp Đại học Sư phạm Hà Nội. Chính năm hai nghìn không trăm mười bảy. Em là sinh viên giỏi nhất khóa — em được giải thưởng tốt nghiệp xuất sắc nhất khoa Văn."
 
 "Thầy giáo chủ nhiệm em — thầy Hồng — tặng em cuốn sách này ngày em ra trường. Thầy bốn mươi tám tuổi lúc đó."
 
 [pause:800ms]
 
-"Thầy Hồng là người em quý nhất. Bốn năm đại học — thầy dạy em — chấm bài em — viết khuyên cho em. Em viết luận văn — thầy đọc ba lần — góp ý chi tiết."
+"Thầy Hồng là người em quý nhất trong đời. Bốn năm đại học — thầy dạy em môn Lý luận văn học — môn khó nhất khoa. Em vào năm nhất — không hiểu lý luận — em bỏ giữa kỳ. Thầy gọi em vào văn phòng. Thầy bảo: 'Em không bỏ. Em hiểu sau hai năm — Lý luận như học bơi — không hiểu ngay được. Em ngồi nghe — đọc — viết — hai năm sau em hiểu.'"
 
-"Ngày tốt nghiệp — thầy tặng em sách. Trang đầu thầy viết: 'Mai ơi — em là học trò giỏi nhất của thầy. Em ra trường — đi xa — đừng quên quê. Mỗi năm em về thăm trường một lần — thầy đợi em ở văn phòng. Hồng.'"
+"Em nghe. Em không bỏ. Năm hai — em vẫn không hiểu nhiều. Năm ba — em bắt đầu hiểu. Năm bốn — em viết luận văn về 'Cấu trúc tự sự trong tiểu thuyết Nguyễn Huy Thiệp' — em đạt điểm cao nhất."
+
+"Thầy đọc luận văn em ba lần. Mỗi lần thầy ghi chú vào lề bằng bút đỏ — chữ thầy nghiêng — chi tiết. Thầy bắt em viết lại chương ba — em viết lại — thầy đọc tiếp — thầy bắt em viết lại lần nữa."
 
 [pause:1200ms]
 
-"Em hứa thầy: 'Vâng thầy — em sẽ về mỗi năm. Em nhớ ơn thầy.'"
+"Ngày tốt nghiệp — em đến văn phòng thầy chào trước khi nhận bằng. Thầy đứng dậy — đưa em cuốn sách này. Cuốn 'Lý luận văn học cổ điển Việt Nam' — bản in 2017 — sách quý — thầy tự đặt mua."
 
-"Em đi Hà Nội — vào trường cấp ba dạy. Năm đầu — em bận làm quen — em không về thăm thầy."
+"Thầy mở trang đầu — đã viết sẵn bằng bút máy: 'Mai ơi — em là học trò giỏi nhất của thầy trong hai mươi năm dạy của thầy. Em ra trường — đi xa — đừng quên quê. Mỗi năm em về thăm trường một lần — thầy đợi em ở văn phòng. Hồng. Ngày em tốt nghiệp — 15 tháng 6 năm 2017.'"
 
-"Năm thứ hai — em vào yêu — em lấy chồng — em sinh con. Em bận. Em không về thăm thầy."
-
-"Năm thứ ba — con em một tuổi — em đi dạy — em bận chấm bài. Em không về."
+"Em đọc — em khóc trước thầy. Thầy vuốt vai em. Thầy nói: 'Em đừng khóc. Đời học trò ngắn — đời thầy trò dài. Em ra trường — vẫn là học trò của thầy. Em về thăm thầy.'"
 
 [pause:1500ms]
 
-"Mười năm — em chỉ về quê hai lần — đám cưới em chị họ và đám tang ông ngoại. Mỗi lần — em không tới trường thăm thầy. Em ngại — em không giữ lời hứa — em sợ thầy thất vọng."
+"Em hứa thầy: 'Vâng thầy — em sẽ về mỗi năm — không quên — em nhớ ơn thầy.'"
 
-"Năm vừa rồi — em ba mươi tư — em nhận tin thầy Hồng mất. Đột tử — tim — sáu mươi tuổi."
+"Em ra trường. Em đi Hà Nội — vào trường Trần Phú cấp ba — dạy môn Văn — lớp mười. Năm đầu em hai sáu — em bận làm quen — bận chấm bài lớp đầu — bận đi đám cưới bạn cùng khóa. Em không về thăm thầy."
 
-"Em sốc. Em xin nghỉ — về Bắc Ninh đám tang. Em đến nhà thầy — vợ thầy đón em. Vợ thầy bảo: 'Mai ơi anh Hồng hay nhắc em. Anh ấy đợi em mười năm — chưa thấy em về. Anh ấy giữ một ghế trong văn phòng anh ấy — ghế chờ em — đến chết.'"
+"Em tự bảo: 'Năm sau em về. Năm sau em có kinh nghiệm — em không bận như năm đầu.'"
 
-[pause:1500ms]
+"Năm thứ hai — em hai bảy — em yêu — em lấy chồng — em sinh con đầu lòng. Em bận. Em không về."
 
-"Em sốc. Em không khóc trước vợ thầy. Em về nhà mẹ em — khóc đêm đó."
-
-"Em đi đám tang thầy. Em đứng bên quan tài. Em không xin lỗi được — thầy đã không nghe."
-
-"Sau tang — em đến trường THCS Mai Trung — chính trường này — em xin vào văn phòng thầy. Văn phòng đã được dọn — chỉ còn bàn ghế cũ. Em ngồi vào ghế đối diện bàn thầy — ghế thầy giữ cho em."
-
-"Em ngồi một giờ. Khóc."
+"Năm thứ ba — con em một tuổi — em đi dạy — em bận chấm bài — bận chuẩn bị giáo án mới. Em không về."
 
 [pause:1500ms]
 
-"Cuốn sách này — em giữ từ ngày tốt nghiệp. Mười năm em không đọc lại — em quên. Sau tang thầy — em mở ra. Trang đầu có chữ thầy. Em đọc lại."
+"Mười năm — em chỉ về quê hai lần. Đám cưới chị họ em — em đến nhà chị — không qua trường. Đám tang ông ngoại — em về một ngày — không qua trường. Mỗi lần — em không tới trường thăm thầy. Em ngại — em không giữ lời hứa — em sợ thầy thất vọng nhìn em mặt em."
 
-"Em quyết — em sẽ đem cuốn sách về trường — đặt trong văn phòng thầy — như cách trả lại lời hứa. Em không thể về thăm thầy sống — em có thể về thăm văn phòng thầy."
+"Em định mỗi năm sẽ về — mỗi năm trôi qua — em không về. Mỗi tháng em nhớ thầy — em định gọi điện hỏi thăm — em không gọi. Em sợ giọng thầy buồn vì em không về."
+
+"Năm vừa rồi — em ba mươi tư tuổi — em nhận tin thầy Hồng mất. Đột tử — nhồi máu cơ tim — sáu mươi tuổi. Mất sáng sớm — đang đọc sách trong văn phòng — bảo vệ phát hiện."
+
+"Em sốc. Em xin nghỉ — về Bắc Ninh đám tang. Em đến nhà thầy. Vợ thầy đón em ở cửa — vợ thầy biết em là Quỳnh Mai — vợ thầy đã nghe thầy kể về em — đều đặn — mười năm."
+
+"Vợ thầy bảo: 'Mai ơi anh Hồng hay nhắc em. Mỗi tháng anh ấy nói: "Quỳnh Mai chắc bận lắm." Anh ấy đợi em mười năm — chưa thấy em về. Anh ấy giữ một ghế trong văn phòng anh ấy — ghế chờ em — anh ấy không cho ai ngồi vào ghế đó — đến chết.'"
+
+[pause:1500ms]
+
+"Em sốc. Em không khóc trước vợ thầy. Em chỉ gật. Em về nhà mẹ em — đêm đó khóc."
+
+"Em đi đám tang thầy hôm sau. Em đứng bên quan tài. Em quỳ. Em không xin lỗi được — thầy đã không nghe."
+
+"Sau tang — em đến trường THCS Mai Trung — chính trường thầy dạy — em xin vào văn phòng thầy. Văn phòng đã được dọn — chỉ còn bàn ghế cũ. Có một ghế đối diện bàn thầy — ghế gỗ cũ — không ai ngồi — đúng như vợ thầy nói. Em ngồi vào ghế đó. Em ngồi một giờ. Khóc cả giờ."
+
+"Cuốn sách này — em giữ từ ngày tốt nghiệp tám năm — không đọc lại. Em sợ đọc — sợ thấy chữ thầy viết — sợ nhớ ơn không giữ được. Sau tang thầy — em mở ra. Trang đầu vẫn còn chữ thầy. Em đọc lại — em đọc cả bốn trăm trang sách trong một tháng. Em hiểu — bây giờ — sau tám năm — em mới đủ hiểu sách thầy tặng."
 
 Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Quỳnh Mai gật. Mắt đỏ.
+Quỳnh Mai gật. Lệ rơi xuống bìa sách — một giọt — cô lau bằng ngón tay.
 
 "Em nhớ. Em hứa thầy về thăm mỗi năm — em không giữ mười năm. Thầy đợi em — đến chết. Em không thể chuộc — em chỉ có thể đem sách trả về — đặt trên ghế thầy giữ cho em."
 
 [pause:1200ms]
 
-"Đêm nay — em đem sách về Bắc Ninh — về trường THCS Mai Trung — em sẽ vào văn phòng thầy — đặt sách trên ghế chờ em. Quỳ trước bàn thầy. Nói: 'Thầy ơi em xin lỗi mười năm. Em mang sách thầy tặng — đặt trên ghế thầy giữ. Em không bao giờ giữ được lời hứa — em xin lỗi.'"
+"Đêm nay — em đem sách về Bắc Ninh — về trường THCS Mai Trung — em sẽ vào văn phòng thầy — đặt sách trên ghế chờ em. Quỳ trước bàn thầy. Nói: 'Thầy ơi em xin lỗi mười năm. Em mang sách thầy tặng — đặt trên ghế thầy giữ. Em không bao giờ giữ được lời hứa — em xin lỗi. Em sẽ về mỗi năm — đặt sách lại đúng vị trí — như em đã có mặt — dù thầy không còn ngồi đối diện.'"
 
 ---
 
@@ -178,7 +198,7 @@ Quỳnh Mai gật. Mắt đỏ.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Bắc Ninh — cây dâu cổ — bến không tên. Chuông xe ngân. Một tiếng. Tan.
+Xe chậm lại. Ngã ba Bắc Ninh — cây dâu cổ — bến không tên — đèn vàng trên cây dâu. Chuông xe ngân. Một tiếng. Tan.
 
 Quỳnh Mai gói sách vào giấy bản. Đứng dậy.
 
@@ -192,15 +212,17 @@ Cô bước xuống.
 
 [pause:1200ms]
 
-Bên ngoài — Quỳnh Mai đi vào sân trường THCS Mai Trung — bảo vệ đã mở cổng. Đèn hành lang còn sáng. Văn phòng thầy Hồng — phòng tầng một — cửa đã được mở để cô vào.
+Bên ngoài — Quỳnh Mai đi vào sân trường THCS Mai Trung — bảo vệ đã mở cổng — đèn hành lang còn sáng. Trường đêm — vắng. Văn phòng thầy Hồng — phòng tầng một — cuối hành lang. Cửa đã mở — như đợi cô.
 
-Cô đến. Đặt sách lên ghế đối diện bàn thầy — ghế thầy giữ cho cô. Quỳ trước bàn. Cúi đầu.
+Cô bước vào văn phòng. Bàn thầy còn đó — không ai dùng — bụi đã phủ nhẹ. Đối diện bàn — ghế gỗ cũ — ghế thầy giữ cho cô — vẫn không ai ngồi.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ. Bên bàn thầy Hồng — thầy xuất hiện — mặc áo sơ mi xanh — vuốt tóc Quỳnh Mai. Cười nhẹ.
+Cô đến. Đặt sách lên ghế đối diện bàn thầy — chính giữa ghế. Quỳ trước bàn. Cúi đầu.
+
+Khải Phong chớp mắt — nhìn qua cửa sổ xe đang chậm rời ngã ba. Bên bàn thầy Hồng — thầy xuất hiện — mặc áo sơ mi xanh — tay cầm bút đỏ — như đang chấm bài. Thầy ngẩng đầu — nhìn Quỳnh Mai quỳ — vuốt tóc cô qua khoảng cách. Mỉm cười.
 
 Khải Phong chớp lần nữa. Thầy tan.
 
-Quỳnh Mai ngẩng đầu. Lau khóe mắt. Đứng dậy. Đi ra cửa văn phòng.
+Quỳnh Mai ngẩng đầu. Lau khóe mắt. Đứng dậy. Đi ra cửa văn phòng — quay lại nhìn ghế cô vừa đặt sách — sách còn đó.
 
 [pause:1500ms]
 
@@ -210,30 +232,36 @@ Quỳnh Mai ngẩng đầu. Lau khóe mắt. Đứng dậy. Đi ra cửa văn ph
 
 Xe lăn bánh — rời ngã ba Bắc Ninh.
 
-Ghế sáu trống. Trên sàn — một mẩu giấy bản nhỏ rơi (từ giấy bọc sách). Khải Phong nhặt. Giấy — ố vàng — có chữ năm "2017" mờ.
+Ghế sáu trống. Trên sàn — một mẩu giấy bản nhỏ rơi — bong từ giấy bọc sách. Khải Phong nhặt. Giấy — ố vàng — có chữ năm "2017" mờ — chữ thầy viết bằng bút máy.
 
-Bỏ vào túi. Vật thứ hai mươi hai. Vật mang dấu năm 2017.
+Bỏ vào túi áo gió. Vật thứ hai mươi hai. Vật đầu tiên mang dấu năm — sub-arc temporal bắt đầu.
 
 Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Khải Phong ngồi. Năm 2017 — Khải Phong nhớ. Năm 2017 — Khải Phong tốt nghiệp đại học kiến trúc? Hay đang sinh viên?
+Khải Phong ngồi. Năm 2017 — Khải Phong nhớ. Khải Phong cũng tốt nghiệp đại học năm 2017 — như Quỳnh Mai — nhưng khác trường — không sư phạm — kiến trúc.
 
-Cố nhớ. Hình ảnh — phố Khâm Thiên — phòng trọ — bàn vẽ — Khải Phong vẽ bài tập kiến trúc. Năm cuối — 2017. Khải Phong tốt nghiệp năm 2017.
+Đại học Kiến trúc Hà Nội. Khải Phong nhớ rõ — sân trường có cây phượng to — mỗi mùa hè ra hoa đỏ — sinh viên ngồi học bài dưới gốc phượng.
 
 [pause:1500ms]
 
-Hạ Vy — cùng năm? Hạ Vy cũng sinh viên kiến trúc — cùng khóa Khải Phong? Hay khác trường?
+Hạ Vy — cùng trường kiến trúc? Hay khác trường?
 
-Hình ảnh — sân trường đại học kiến trúc — cây phượng — Hạ Vy ngồi cạnh Khải Phong trên ghế đá — cùng nghe bài "Áo lụa Hà Đông."
+Khải Phong cố nhớ. Hình ảnh — sân trường kiến trúc — cây phượng — Hạ Vy ngồi cạnh Khải Phong trên ghế đá. Hai đứa cùng học cuối năm — chuẩn bị bảo vệ đồ án tốt nghiệp.
 
-Khải Phong nhớ. Hạ Vy sinh viên kiến trúc — cùng trường Khải Phong — cùng khóa — tốt nghiệp 2017.
+Khải Phong nhớ. Hạ Vy cùng trường — Đại học Kiến trúc — cùng khoa — cùng khóa — cùng năm tốt nghiệp 2017.
 
-Năm sau — 2018 — Khải Phong nhớ là năm Hạ Vy tai nạn? Khải Phong cố nhớ tháng — tháng tư — đêm mưa.
+Hai đứa chung lớp đồ án. Hai đứa làm đồ án về cùng đề tài — "Bảo tồn kiến trúc phố cổ Hà Nội" — Hạ Vy phụ trách phần khảo sát hiện trạng — Khải Phong phụ trách phần thiết kế can thiệp. Hai phần ghép thành một đồ án nhóm hai người.
 
-Bác tài liếc gương. "Đêm hai mươi hai. Con bắt đầu nhớ năm tốt nghiệp. Năm sau con sẽ nhớ năm Hạ Vy đi — gần hơn. Đừng vội."
+Khải Phong nhớ rõ. Đêm trước hôm bảo vệ — Khải Phong và Hạ Vy ngồi cùng phòng trọ Khâm Thiên — làm slide đến bốn giờ sáng. Sáng dậy đi bảo vệ — đạt điểm tối đa.
 
-Khải Phong gật.
+Sau tốt nghiệp — Khải Phong và Hạ Vy ở chung phòng trọ Khâm Thiên — cùng tìm việc.
 
-Đêm thứ hai mươi hai. Xe đi tiếp. Phía sau — Bắc Ninh khuất. Quỳnh Mai ở lại trường — đứng ngoài cửa văn phòng — nhìn sách trên ghế.
+Khải Phong nhớ năm sau — 2018 — Khải Phong nhớ là năm Hạ Vy tai nạn. Tháng tư. Đêm mưa.
+
+Bác tài liếc gương. "Đêm hai mươi hai. Con bắt đầu nhớ năm tốt nghiệp 2017 — cùng đồ án Hạ Vy. Đêm sau con sẽ nhớ năm Hạ Vy đi — gần hơn. Đừng vội. Cứ giữ vật con nhặt mỗi đêm."
+
+Khải Phong gật. Không hỏi.
+
+Đêm thứ hai mươi hai. Xe đi tiếp về phía đường vành đai. Phía sau — Bắc Ninh khuất. Quỳnh Mai ở lại trường — đứng ngoài cửa văn phòng — nhìn sách trên ghế.

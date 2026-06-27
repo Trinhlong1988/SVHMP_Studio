@@ -245,6 +245,22 @@ SERIES_ARC_RULES:
       QA PHASE 12.18 verify object echoes EP trước (cùng symbol hoặc cluster).
     cross_ref: [bible/12_object_library, bible/21_series_arc_design]
 
+  R39_word_count_target_hard:  # round 5 add 2026-06-27 (B38 fix EP21-25 ngắn quá)
+    rule: "Mỗi EP PHẢI có word_count 2200-2500 từ → duration 15-18p (target tuyệt đối)"
+    hard_floor: 2000  # KHÔNG được dưới 2000 từ (≈13p) — auto-reject ship
+    hard_ceiling: 2700  # KHÔNG quá 2700 từ (≈18.5p) — auto-trim or refactor
+    target_range: [2200, 2500]
+    rationale: |
+      EP01 v7 golden ref = 3407 từ / 22p — tham chiếu max.
+      Khán giả YouTube horror 22:00-00:30 expect 15-18p / EP (bible/07 viewer_persona).
+      EP ngắn dưới 13p → cảm giác thiếu — không build mood — không retention.
+      Vụ B38 EP21-25 9.5-11.3p → khán giả phàn nàn.
+    enforcement: |
+      Generator pre-write target 2300 words per EP.
+      Section budget: HOOK 280 / SETUP 240 / INCIDENT 240 / REVEAL 1050 / PAYOFF 270 / CLIFFHANGER 320.
+      QA PHASE 12.19 (new): block ship nếu word_count < 2000 hoặc duration < 13p.
+    cross_ref: [bible/07_viewer_persona, bible/16_series_kpi]
+
 # ============================================================
 # CROSS-BIBLE REFERENCE (round 3 add — 2026-06-23 15:50)
 # ============================================================

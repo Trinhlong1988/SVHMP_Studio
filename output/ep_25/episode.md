@@ -27,23 +27,23 @@ Tập 25 — câu chuyện đêm nay.
 ---
 
 ```
-prompt_version: SVHMP-10.0-RC3.5
+prompt_version: SVHMP-10.0-RC3.6
 ep_number: 25
 phase: warming (S1)
 pillar: self
 intensity_level: 0.55
-quang_memory_fragment: M5 (Khải Phong nhớ hai đứa ở chung phòng Khâm Thiên + nhận việc)
+quang_memory_fragment: M5 PEAK (Khải Phong nhớ ba cuộc gọi đêm Hạ Vy không bắt + bệnh viện gọi sáng)
 object_sub_arc: gương phản chiếu (echo EP15 OBJ_GUONG)
-callback_target: ep_15 (object_echo gương — bác tài mention "đêm 15 cũng có cậu trai gương vỡ")
-passenger_main: nam 38 Văn Quân Thái Nguyên (bỏ bê sức khỏe — ung thư phổi 36 tuổi — phẫu thuật cắt phổi)
-signature_object: OBJ_KINH_NHO (kính nhỏ phản chiếu mặt hồi khỏe — anh giữ làm chứng tích)
+callback_target: ep_15 (object_echo + bác tài extra line)
+passenger_main: nam 38 Văn Quân Thái Nguyên (ung thư phổi 36 tuổi — phẫu thuật cắt phổi)
+signature_object: OBJ_KINH_NHO (kính nhỏ phản chiếu mặt hồi khỏe)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Thái Nguyên
 bell_count: 1
 ghost_manifest: 1
-word_count: ~2000
+word_count: ~2400
 hand_crafted: true
-arc_design_compliant: bible/21 R33-R38 + R36 callback EP15
+arc_design_compliant: bible/21 R33-R38 + R39 word count + R36 callback EP15
 ```
 
 ---
@@ -52,27 +52,31 @@ arc_design_compliant: bible/21 R33-R38 + R36 callback EP15
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven đồi chè Thái Nguyên. Đèn pha quét lên hàng chè non.
+Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven đồi chè Thái Nguyên. Đèn pha quét lên hàng chè non — chè ba lá — đã được hái lứa đầu — gốc còn xanh.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi lăm. Trong túi áo gió Khải Phong — hai mươi bốn vật.
+Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi lăm. Trong túi áo gió Khải Phong — hai mươi tư vật. Đêm qua thêm mẩu giấy vở học sinh với chữ "Cô giáo em..."
 
-Bác tài lái. Liếc gương — dừng trên Khải Phong lâu. Cất lời.
+Bác tài lái. Liếc gương — dừng trên Khải Phong lâu hơn thường. Cất lời.
 
 "Đêm mười lăm — con đã thấy cậu trai đem mảnh gương vỡ ném hồ Đồng Mô — con nhớ không?"
 
-Khải Phong gật. Khải Phong nhớ Phong — đập gương đêm hai mốt — sống mười năm.
+Khải Phong gật. Khải Phong nhớ Phong — đập gương đêm anh hai mốt — sống mười năm — bây giờ ba mươi mốt — ném gương xuống hồ Đồng Mô như kết thúc thời nhớ.
 
 Bác tài tiếp:
 
-"Đêm nay sẽ có cậu trai khác — cũng đem một mảnh kính — nhưng không phải mảnh đập vỡ — là kính phản chiếu chính anh ấy hồi khỏe. Cứ giữ vật con nhặt."
+"Đêm nay sẽ có cậu trai khác — cũng đem một mảnh kính — nhưng không phải mảnh đập vỡ — là kính phản chiếu chính anh ấy hồi khỏe. Hai mảnh kính — hai câu chuyện khác — cùng cụm vật. Cứ giữ vật con nhặt mỗi đêm."
 
-Khải Phong gật.
+Khải Phong gật. Câu thứ ba bác tài — không thường — chỉ ở đêm có callback.
 
-Xe chậm lại trước một bệnh viện chuyên khoa lao — biển "Bệnh viện Phổi Thái Nguyên" — cổng đã đóng — đèn vàng. Một người đàn ông đứng đợi. Khoảng ba mươi tám tuổi. Áo gió đen — mặt gầy — tay phải cầm hộp giấy nhỏ.
+Xe chậm lại trước một bệnh viện chuyên khoa lao — biển "Bệnh viện Phổi Thái Nguyên" — cổng đã đóng — đèn vàng treo cột cổng còn sáng yếu. Tường bệnh viện có dấu rêu xanh ở chân — bệnh viện cũ — đã có lâu năm.
 
-Anh bước lên xe. Đi qua hàng ghế đầu — ngồi xuống ghế thứ chín. Mở hộp. Lấy ra một mảnh kính nhỏ — cỡ bằng hai ngón tay — cuốn vải mép.
+Một người đàn ông đứng đợi bên cổng. Khoảng ba mươi tám tuổi. Áo gió đen — quần kaki nâu. Mặt gầy — quá gầy cho ba lăm tuổi — môi tím nhạt. Tay phải cầm hộp giấy nhỏ.
 
-Khải Phong ghế ba nhìn — vật thứ hai vật kính trên xe này. Sau EP15 — đêm mười lăm — Phong đập gương.
+Anh bước lên xe. Đi qua hàng ghế đầu — chân chậm — thi thoảng đứng lại để thở. Ngồi xuống ghế thứ chín.
+
+Mở hộp giấy. Lấy ra một mảnh kính nhỏ — cỡ bằng hai ngón tay — đã cuốn vải bông quanh mép — vải trắng đã ngả vàng.
+
+Khải Phong ghế ba nhìn — vật thứ hai vật kính trên xe này. Sau EP15 — đêm mười lăm — Phong đập gương. Đêm này — vật kính khác — không đập — kính phản chiếu.
 
 Xe lăn bánh.
 
@@ -82,17 +86,19 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Anh ngồi yên. Hơi thở anh chậm — không đều — hơi khò. Tay trái anh cầm khăn — thi thoảng đưa lên miệng — ho nhẹ.
+Anh ngồi yên. Hơi thở anh chậm — không đều — hơi khò — đứt quãng. Tay trái anh cầm khăn vải — thi thoảng đưa lên miệng — ho nhẹ — không to — như đã quen kìm tiếng ho.
 
-Khải Phong quan sát. Anh gầy — quá gầy cho ba lăm tuổi — mặt sạm — môi tím. Bệnh phổi nặng — Khải Phong đoán.
+Khải Phong quan sát từ ghế ba. Anh gầy — má hóp — môi tím nhạt — mắt sâu. Bệnh phổi nặng — Khải Phong đoán — có lẽ đã phẫu thuật cắt một phần phổi.
+
+Cổ áo gió anh — Khải Phong thấy được — có dấu sẹo dài chạy từ vai xuống ngực — sẹo phẫu thuật đã liền — nhưng còn rõ.
 
 Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng. Tắt.
 
 [pause:500ms]
 
-Bác tài liếc gương. Không nói.
+Bác tài liếc gương. Không nói nữa — câu thứ ba đã nói trước khi đón hành khách.
 
-Anh đặt mảnh kính lên đùi. Nhìn vào — thấy mặt mình trong kính — anh hơi nhăn — không thích nhìn.
+Anh đặt mảnh kính lên đùi. Nhìn vào kính — thấy mặt mình trong kính — anh hơi nhăn — không thích nhìn. Anh quay mảnh kính úp — không soi nữa.
 
 ---
 
@@ -100,21 +106,23 @@ Anh đặt mảnh kính lên đùi. Nhìn vào — thấy mặt mình trong kín
 
 [pause:500ms]
 
-Xe đi qua xóm cũ. Phía bên phải — căn nhà gạch — sân nhỏ. Cạnh sân — bóng thanh niên ba lăm khỏe mạnh — không gầy — đứng. Tay cầm điếu thuốc. Không quay đầu.
+Xe đi qua xóm cũ. Phía bên phải — căn nhà gạch đỏ — sân nhỏ — cửa khép. Đèn dầu trong nhà còn sáng yếu.
 
-Anh ghế chín nhìn về phía đó.
+Cạnh sân — bóng thanh niên chừng ba mươi tuổi — không gầy — khỏe mạnh — má hồng — môi đỏ — đứng trên sân — tay cầm điếu thuốc lá — hút. Tay kia cầm ly bia. Không quay đầu — chỉ đứng — hút thuốc — uống bia.
+
+Anh ghế chín nhìn về phía đó. Mắt anh trống vài giây.
 
 "Tôi..."
 
-Anh nói nhỏ — ho nhẹ giữa từ.
+Anh nói nhỏ — một từ — kèm tiếng ho nhẹ giữa.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
 [pause:1000ms]
 
-Xe đi qua. Nhà gạch khuất. Bóng thanh niên khuất — chính là anh ba lăm tuổi hai năm trước.
+Xe đi qua. Nhà gạch khuất. Bóng thanh niên ba mươi tuổi khỏe khuất — chính là anh hai năm trước — chưa biết phổi đang phát khối u.
 
-Anh quay đầu. Vuốt mảnh kính.
+Anh quay đầu lại. Vuốt mảnh kính qua vải bông.
 
 ---
 
@@ -122,59 +130,79 @@ Anh quay đầu. Vuốt mảnh kính.
 
 [pause:1000ms]
 
-"Tôi là Văn Quân. Ba mươi tám tuổi. Tôi ở Thái Nguyên. Tôi từng làm kỹ sư xây dựng — bây giờ nghỉ hai năm — phổi yếu."
+"Tôi là Văn Quân. Ba mươi tám tuổi. Tôi ở Thái Nguyên — quê. Tôi từng làm kỹ sư xây dựng cho công ty cầu đường tỉnh — bây giờ nghỉ hai năm — phổi yếu — không làm việc nặng được."
 
-Giọng anh khàn — ngắt quãng.
+Giọng anh khàn — ngắt quãng giữa câu để thở — không cố nói nhanh.
 
-"Hai năm trước — tôi ba sáu — tôi phát hiện ung thư phổi giai đoạn ba. Hút thuốc hai mươi năm — uống rượu — bỏ bê — không khám sức khỏe."
+"Hai năm trước — tôi ba sáu tuổi — tôi phát hiện ung thư phổi giai đoạn ba. Hút thuốc hai mươi năm — uống rượu mỗi cuối tuần — bỏ bê — không khám sức khỏe định kỳ."
 
-"Phẫu thuật cắt nửa phổi trái. Hóa trị tám tháng. Sống. Nhưng không trở lại như trước."
+"Phẫu thuật cắt nửa phổi trái — tháng ba năm hai nghìn không trăm hai mươi tư. Hóa trị tám tháng sau phẫu thuật. Sống. Nhưng không trở lại như trước."
 
 [pause:800ms]
 
-"Tôi không lập gia đình. Sống một mình ở Thái Nguyên — căn nhà cấp bốn nhỏ bố mẹ để lại. Bố mẹ tôi mất sớm — tôi không có anh chị."
+"Tôi không lập gia đình. Sống một mình ở Thái Nguyên — căn nhà cấp bốn nhỏ bố mẹ để lại — gần chân đồi chè Phú Lương. Bố mẹ tôi mất sớm — bố sáu mươi mất vì ung thư phổi — mẹ năm mươi tám mất vì tai biến. Tôi không có anh chị — tôi con một."
 
-"Hai mươi năm trước — tôi mười tám — tôi vào đại học xây dựng. Thông minh — học giỏi — tốt nghiệp xuất sắc. Đi làm — lương cao — leo nhanh."
+"Hai mươi năm trước — tôi mười tám — tôi đỗ Đại học Xây dựng Hà Nội. Thông minh — học giỏi — tốt nghiệp xuất sắc năm tôi hai hai. Về Thái Nguyên đi làm — vào công ty cầu đường tỉnh — lương khởi điểm tám triệu — sau lên hai mươi triệu trong năm năm."
 
-"Tôi tự hào. Tôi nghĩ tôi khỏe — tôi không bệnh. Tôi hút thuốc một bao một ngày — uống rượu cuối tuần — đi karaoke đêm — ngủ ít — ăn ngoài."
+"Tôi tự hào. Tôi nghĩ tôi khỏe — tôi không bệnh — tôi trẻ. Tôi hút thuốc một bao một ngày — bắt đầu hồi đại học — bạn bè hút theo nhau. Uống rượu cuối tuần — đi karaoke với đồng nghiệp đêm — ngủ ít — ăn ngoài cơm bụi."
 
 [pause:1200ms]
 
-"Bạn tôi cảnh báo — bố tôi mất sớm vì phổi — tôi nên khám. Tôi cười: 'Bố tôi tuổi cao — tôi khác.' Tôi không khám."
+"Bạn tôi cảnh báo nhiều lần — bố tôi mất sớm vì phổi — tôi nên đi khám định kỳ. Tôi cười với bạn: 'Bố tôi tuổi cao mới phát hiện — tôi khác — tôi mới ba mươi — tôi không có triệu chứng gì.'"
 
-"Mười năm — tôi không khám phổi một lần."
+"Tôi không khám phổi một lần — suốt từ hai mươi tuổi đến ba lăm tuổi. Mười lăm năm."
 
-"Năm tôi ba lăm — bắt đầu ho khan. Tôi nghĩ cảm lạnh — uống thuốc — không khỏi. Sáu tháng ho. Đến bệnh viện. Chụp X-quang. Phát hiện khối u to."
+"Năm tôi ba lăm — bắt đầu ho khan — không có đờm — chỉ ho. Tôi nghĩ cảm lạnh — mua thuốc cảm hiệu thuốc gần nhà — uống một tuần — không khỏi. Hai tuần — không khỏi. Một tháng — vẫn ho."
 
-[pause:1500ms]
+"Tôi đi khám hiệu thuốc lớn — bác sĩ kê thuốc kháng sinh — uống một tuần — đỡ một chút — nhưng vẫn ho khan."
 
-"Bác sĩ bảo: 'Anh đã ung thư phổi — giai đoạn ba. Nếu đến sớm sáu tháng — giai đoạn một — chữa tốt. Bây giờ — phải phẫu thuật cắt — hóa trị — cơ hội sống năm năm khoảng năm mươi phần trăm.'"
-
-"Tôi sốc. Tôi không khóc. Tôi quyết phẫu thuật. Cắt nửa phổi trái. Tỉnh dậy — ngực đau — không thở sâu được nữa."
-
-"Hóa trị — tóc rụng — nôn — gầy mười kí trong ba tháng. Sống."
-
-"Hai năm nay — tôi sống — nhưng không sống như xưa. Tôi không leo cầu thang được — tôi không chạy được — tôi không cười to được — vì cười là ho."
+"Sáu tháng ho khan — tôi quyết đến bệnh viện Phổi tỉnh — bệnh viện này — chính bệnh viện tôi vừa bước lên xe đêm nay. Chụp X-quang ngực. Bác sĩ nhìn phim — im một lúc dài — gọi bác sĩ trưởng khoa vào."
 
 [pause:1500ms]
 
-"Sau phẫu thuật — tôi đem một mảnh kính nhỏ về nhà — kính tôi mua ở Hà Nội năm tôi ba mươi — kính tôi treo trên xe máy. Kính đã rơi — vỡ — tôi giữ một mảnh — gói trong vải."
+"Bác sĩ trưởng khoa nhìn phim — chỉ vào chỗ có bóng mờ ở thùy trên phổi trái. 'Anh có khối u — kích thước bốn xăng-ti-mét — cần sinh thiết xác định tế bào ung thư.'"
 
-"Mảnh kính này — phản chiếu mặt tôi hồi tôi ba mươi — khỏe — má hồng — môi đỏ. Bây giờ tôi nhìn kính — không thấy mặt tôi hôm nay — chỉ thấy mặt tôi hồi ba mươi — phản chiếu trong óc — qua kính cũ."
+"Tôi không hiểu. Tôi mới ba lăm. Bác sĩ giải thích nhẹ — tôi vẫn không tin."
 
-"Mỗi sáng tôi vuốt kính — nhớ mình hồi khỏe — nhớ mình tự tay phá sức khỏe."
+"Sinh thiết. Kết quả sau hai tuần. Tế bào ung thư. Giai đoạn ba — đã di căn hạch."
+
+"Bác sĩ bảo: 'Anh đã ung thư phổi — giai đoạn ba. Nếu đến sớm sáu tháng — giai đoạn một — chữa tốt — cắt cục u nhỏ — không cần hóa trị nhiều. Bây giờ — phải phẫu thuật cắt nửa phổi — hóa trị dài — cơ hội sống năm năm khoảng năm mươi phần trăm.'"
+
+"Tôi sốc. Tôi không khóc trong phòng bác sĩ. Tôi về nhà cấp bốn — đêm đó ngồi sân — uống nước trà — nhìn lên trời. Tôi nghĩ về bố mẹ tôi. Bố tôi mất vì phổi — tôi không tin bệnh di truyền — bây giờ tôi mắc cùng bệnh — chỉ trẻ hơn bố hai mươi năm."
+
+[pause:1500ms]
+
+"Tôi quyết phẫu thuật. Cắt nửa phổi trái — bốn tiếng dưới dao mổ. Tỉnh dậy — ngực đau như có vật nặng đè — không thở sâu được nữa — chỉ thở ngắn."
+
+"Hóa trị tám tháng. Tóc rụng — mặt vàng — nôn liên tục ba tháng đầu — gầy mười kí trong ba tháng. Bạn bè đến thăm — không nhận ra tôi — mặt tôi như người khác."
+
+"Sống. Hai năm nay tôi sống — nhưng không sống như xưa. Tôi không leo cầu thang được — leo ba tầng phải nghỉ giữa. Tôi không chạy được — đi nhanh là khò. Tôi không cười to được — vì cười là ho."
+
+"Tôi bỏ thuốc lá hoàn toàn — bỏ rượu — ăn uống điều độ — đi bộ nhẹ mỗi sáng. Bác sĩ bảo: 'Anh sống thêm năm năm nữa — nếu không tái phát.'"
+
+[pause:1500ms]
+
+"Sau phẫu thuật — tôi tìm lại mảnh kính cũ. Kính nhỏ tôi mua ở chợ Đồng Xuân Hà Nội năm tôi ba mươi — kính tôi treo trên gương xe máy — kính phản chiếu mặt tôi mỗi sáng đi làm."
+
+"Kính đã rơi vỡ một lần — tôi giữ một mảnh nhỏ — gói trong vải bông trắng — bỏ trong ngăn kéo bàn — quên năm năm."
+
+"Sau khi tôi gầy — tôi tìm lại mảnh kính. Tôi soi. Thấy mặt tôi trong mảnh kính — vẫn là mặt tôi hồi ba mươi — má hồng — môi đỏ. Mảnh kính phản chiếu ánh sáng cũ — phản chiếu tôi hồi khỏe."
+
+"Tôi vuốt kính — nhớ mình hồi khỏe — nhớ mình tự tay phá sức khỏe bằng thuốc lá và rượu. Mảnh kính là chứng tích tôi đã sống không cẩn thận."
 
 Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Văn Quân gật. Mắt đỏ.
+Văn Quân gật. Mắt đỏ — không khóc — đỏ vì đã giữ lâu.
 
-"Tôi nhớ. Tôi đã không khám — đã không bỏ thuốc — đã không nghe bạn. Tôi bây giờ — sống — nhưng nửa phổi. Mảnh kính là chứng tích tôi hồi khỏe — tôi không muốn quên — không muốn lặp."
+"Tôi nhớ. Tôi đã không khám định kỳ — đã không bỏ thuốc — đã không nghe bạn. Tôi bây giờ — sống — nhưng nửa phổi. Mảnh kính là chứng tích tôi hồi khỏe — tôi không muốn quên — không muốn ai lặp lại như tôi."
 
 [pause:1200ms]
 
-"Đêm nay — tôi đem mảnh kính về Thái Nguyên — về bệnh viện Phổi nơi tôi điều trị — em sẽ tặng kính cho một bệnh nhân trẻ — vừa phát hiện sớm — chữa được — để cậu ta soi mảnh kính — nhớ giữ sức khỏe — không như em."
+"Đêm nay — tôi đem mảnh kính về Thái Nguyên — về bệnh viện Phổi nơi tôi điều trị — tôi sẽ tặng kính cho một bệnh nhân trẻ tôi gặp tuần trước — cậu hai mươi tuổi — phát hiện sớm ung thư phổi giai đoạn một — chữa được — bác sĩ cho về nhà điều trị. Cậu hỏi tôi nhiều — tôi kể tôi. Cậu sốc."
+
+"Tôi sẽ tặng cậu mảnh kính — bảo cậu soi mỗi sáng — nhớ giữ sức khỏe — không như tôi. Cậu còn trẻ — cậu chữa kịp — cậu có thể sống bốn mươi năm nữa — nếu cậu bỏ thuốc."
 
 ---
 
@@ -182,9 +210,9 @@ Văn Quân gật. Mắt đỏ.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Thái Nguyên — cây trẩu cổ — bến không tên. Chuông xe ngân. Một tiếng. Tan.
+Xe chậm lại. Ngã ba Thái Nguyên — cây trẩu cổ — bến không tên — đèn vàng trên cây trẩu. Chuông xe ngân. Một tiếng. Tan.
 
-Văn Quân cất kính vào hộp. Đứng dậy.
+Văn Quân cất mảnh kính vào hộp giấy. Đứng dậy chậm — thở hai lần.
 
 "Chào anh."
 
@@ -192,19 +220,19 @@ Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim
 
 Bác tài: "Chưa tới lúc."
 
-Anh bước xuống.
+Anh bước xuống — chân chậm — thở.
 
 [pause:1200ms]
 
-Bên ngoài — Văn Quân đi vào bệnh viện Phổi Thái Nguyên — phòng tiếp tân còn sáng. Bệnh nhân trẻ — khoảng hai mươi — đang chờ kết quả ngoài hành lang.
+Bên ngoài — Văn Quân đi vào bệnh viện Phổi Thái Nguyên — phòng tiếp tân còn sáng. Bệnh nhân trẻ — chừng hai mươi — đang chờ kết quả khám đêm ngoài hành lang — mặt vẫn tươi — chưa biết kết quả tốt hay xấu.
 
-Anh đến. Đưa hộp kính. Bệnh nhân trẻ ngạc nhiên — cầm — mở — thấy mảnh kính. Văn Quân nói nhỏ. Bệnh nhân trẻ gật.
+Văn Quân đến cậu trai. Đưa hộp giấy. Cậu trai ngạc nhiên — cầm — mở — thấy mảnh kính nhỏ. Văn Quân nói nhỏ với cậu trai — giải thích — Khải Phong không nghe được nội dung — chỉ thấy cậu trai gật chậm — nhận mảnh kính — cất vào ba lô.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ. Bên Văn Quân — Văn Quân ba mươi tuổi khỏe mạnh xuất hiện — vuốt vai Văn Quân ba lăm tuổi gầy. Mỉm cười.
+Khải Phong chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên Văn Quân — Văn Quân ba mươi tuổi khỏe mạnh xuất hiện — má hồng — môi đỏ — vuốt vai Văn Quân ba lăm tuổi gầy. Mỉm cười — không nói.
 
-Khải Phong chớp lần nữa. Văn Quân ba mươi tan.
+Khải Phong chớp lần nữa. Văn Quân ba mươi tan vào đèn hành lang.
 
-Văn Quân ba lăm ngẩng đầu. Không khóc.
+Văn Quân ba lăm ngẩng đầu. Không khóc. Đi ra cửa bệnh viện.
 
 [pause:1500ms]
 
@@ -214,34 +242,46 @@ Văn Quân ba lăm ngẩng đầu. Không khóc.
 
 Xe lăn bánh — rời ngã ba Thái Nguyên.
 
-Ghế chín trống. Trên sàn — một mảnh vải nhỏ rơi (vải cuốn mép kính). Khải Phong nhặt. Vải — mềm — màu trắng đã ngả vàng.
+Ghế chín trống. Trên sàn — một mảnh vải bông nhỏ rơi — bong từ vải cuốn mép kính khi anh cầm. Khải Phong nhặt. Vải — mềm — màu trắng đã ngả vàng.
 
-Bỏ vào túi. Vật thứ hai mươi lăm.
+Bỏ vào túi áo gió. Vật thứ hai mươi lăm.
 
 Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Khải Phong ngồi. Hai vật kính trong túi — sợi vải bông gương vỡ EP15 — và sợi vải kính cũ EP25. Hai cậu trai — đêm mười lăm và đêm hai mươi lăm — cách mười đêm — đều đem một mảnh kính.
+Khải Phong ngồi. Hai vật vải bông trong túi — vải bông cuốn gương vỡ EP15 — và vải bông cuốn mảnh kính EP25. Hai cậu trai — đêm mười lăm và đêm hai mươi lăm — cách mười đêm — đều đem một mảnh kính. Khác câu chuyện — cùng cụm vật.
 
-Cụm vật mới — gương / kính. Diversify cùng cụm cúc trước.
+Cụm mới — gương / kính — diversify cùng cụm cúc đêm 13-19.
 
-Khải Phong ngẫm — Khải Phong có gương kỉ niệm không? Không nhớ. Phòng trọ Khâm Thiên — có gương trên cửa tủ — em soi gương cùng Hạ Vy mỗi sáng — Hạ Vy chải tóc — Khải Phong đeo cà vạt đi làm.
+Khải Phong ngẫm — Khải Phong có gương kỉ niệm không? Hình ảnh — phòng trọ Khâm Thiên — có gương trên cửa tủ — sáng nào hai đứa cũng soi gương — Hạ Vy chải tóc — Khải Phong đeo cà vạt đi làm. Gương bình thường — không đập — không kỉ niệm đặc biệt.
 
 [pause:1500ms]
 
-Hai đứa làm việc. Hạ Vy ở văn phòng kiến trúc nhỏ. Khải Phong ở văn phòng xây dựng. Lương đủ — hai đứa tiết kiệm — tính cưới sau hai năm làm.
+Hai đứa làm việc sau tốt nghiệp 2017. Hạ Vy ở văn phòng kiến trúc Mộc Hà phố Hai Bà Trưng. Khải Phong ở công ty xây dựng Việt Trường phố Đại Cồ Việt. Hai phố cách nhau ngắn — chỉ mười lăm phút xe máy.
 
-Năm 2018 — Khải Phong nhớ là tháng tư. Đêm mưa.
+Tháng tư 2018. Đêm mưa. Hạ Vy nhắn tin tám giờ tối — "Anh ơi em sắp về — chờ em — em ăn cơm nhà."
 
-Hạ Vy nhắn Khải Phong — đêm đó. Hạ Vy ở văn phòng — về muộn — xe máy. Mưa. Vành đai 3? Hay khác?
+Khải Phong đáp — "OK em — anh nấu xong rồi — anh chờ em — đi cẩn thận — mưa to."
 
-Khải Phong cố nhớ. Cảm giác — Khải Phong đợi Hạ Vy ở phòng trọ. Hạ Vy nhắn: "Anh ơi em sắp về — chờ em." Khải Phong đáp: "OK em đi cẩn thận."
+Khải Phong đợi đến chín giờ. Không thấy Hạ Vy về.
 
-Sau đó — Hạ Vy không về.
+Khải Phong gọi điện Hạ Vy. Chuông kêu năm hồi — không bắt. Cuộc gọi đầu.
 
-Bác tài liếc gương. "Đêm hai mươi lăm. Con bắt đầu nhớ tin nhắn cuối Hạ Vy. Đêm sau con sẽ nhớ rõ hơn — về việc làm — ngành kiến trúc — ngày tốt nghiệp. Đừng vội."
+Khải Phong đợi mười phút. Gọi lại. Chuông kêu năm hồi — không bắt. Cuộc gọi thứ hai.
 
-Khải Phong gật.
+Khải Phong đợi thêm năm phút. Gọi lần thứ ba. Chuông kêu — không bắt. Cuộc gọi thứ ba.
 
-Đêm thứ hai mươi lăm. Xe đi tiếp. Phía sau — Thái Nguyên khuất. Văn Quân ở lại bệnh viện — trao mảnh kính cho cậu hai mươi tuổi.
+Khải Phong bắt đầu lo. Khải Phong định mặc áo mưa đi tìm Hạ Vy trên đường về. Trước khi đi — điện thoại Khải Phong rung. Số lạ. Khải Phong bắt.
+
+"Anh là Khải Phong à? Em ở bệnh viện Bạch Mai. Vợ anh — chị Hạ Vy — vừa được đưa vào cấp cứu — tai nạn xe máy — đoạn ngã tư Hai Bà Trưng — Trần Hưng Đạo. Anh đến gấp."
+
+Khải Phong rời máy — chạy xuống cầu thang — quên áo mưa — chạy ra đường — bắt taxi — đến bệnh viện. Tới nơi — Hạ Vy đang trong phòng mổ — máu mất nhiều — chấn thương sọ.
+
+Hạ Vy mất ba tiếng sau khi vào phòng mổ — bốn giờ sáng — tháng tư đêm mưa.
+
+Bác tài liếc gương. "Đêm hai mươi lăm. Con đã nhớ rõ ba cuộc gọi và đêm Bạch Mai. Đêm sau con sẽ nhớ — Hạ Vy có nhắn tin gì cuối — trước khi không bắt máy con. Đừng vội."
+
+Khải Phong gật. Không hỏi.
+
+Đêm thứ hai mươi lăm. Xe đi tiếp về phía đường vành đai. Mưa đã hết. Phía sau — Thái Nguyên khuất — Văn Quân ở lại bệnh viện — đã trao mảnh kính cho cậu hai mươi tuổi.

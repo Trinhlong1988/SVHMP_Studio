@@ -27,7 +27,7 @@ Tập 21 — câu chuyện đêm nay.
 ---
 
 ```
-prompt_version: SVHMP-10.0-RC3.5
+prompt_version: SVHMP-10.0-RC3.6
 ep_number: 21
 phase: warming (S1)
 pillar: family
@@ -41,9 +41,9 @@ signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Nam Định
 bell_count: 1
 ghost_manifest: 1
-word_count: ~2050
+word_count: ~2300
 hand_crafted: true
-arc_design_compliant: bible/21 R33-R38
+arc_design_compliant: bible/21 R33-R38 + R39 word count target
 ```
 
 ---
@@ -52,17 +52,21 @@ arc_design_compliant: bible/21 R33-R38
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven sông Đáy, Nam Định. Đèn pha quét lên hàng cau dọc đường.
+Đêm tháng tư. Mưa nhẹ rơi xuống mái xe — không thành tiếng — chỉ là âm thầm trên kính. Chuyến xe đêm chạy qua đoạn đường ven sông Đáy, Nam Định. Đèn pha xe quét lên hàng cau dọc đường — cau cao quá đầu — tán cau in bóng trên kính chắn gió.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi mốt. Trong túi áo gió Khải Phong — hai mươi vật. Đêm qua thêm mảnh giấy chữ tròn "Yêu anh. Hoài."
+Khải Phong ngồi ghế thứ ba — chỗ ngồi đã không đổi từ đêm đầu. Đêm thứ hai mươi mốt. Trong túi áo gió Khải Phong — hai mươi vật. Đêm qua thêm mảnh giấy chữ tròn "Yêu anh. Hoài." — chữ tay phụ nữ — nét chữ nhỏ tròn quen.
 
-Bác tài lái. Đoạn đường này lạ — chuyến xe chưa đi qua Nam Định trước đó.
+Bác tài lái. Bàn tay già nắm vô lăng — chậm — đều. Đoạn đường này lạ với chuyến xe — Khải Phong nhớ rõ — hai mươi đêm trước chưa đi qua Nam Định.
 
-Xe chậm lại trước một nghĩa trang xã — cổng gỗ đã đóng — đèn dầu treo cột tre còn sáng. Bảng "Nghĩa trang Mỹ Thuận" gỗ cũ.
+Mưa ngớt. Mặt sông Đáy phẳng — không gió. Bên kia bờ — vài ngọn đèn xa — nhà ai đó còn thức.
 
-Một người đàn ông đứng đợi bên cổng. Khoảng năm mươi tuổi. Áo sơ mi trắng cũ — quần kaki nâu — đi giày sandal. Tay phải cầm khung ảnh nhỏ — gói trong vải vàng.
+Xe chậm lại trước một nghĩa trang xã nhỏ — cổng gỗ đã đóng — đèn dầu treo cột tre còn sáng yếu. Bảng "Nghĩa trang Mỹ Thuận" gỗ cũ — đã mòn chữ — nhưng còn đọc được.
 
-Anh bước lên xe. Đi qua hàng ghế đầu — ngồi xuống ghế thứ năm. Mở vải vàng. Lấy ra khung ảnh — bên trong là tấm ảnh đen trắng — chụp một mộ đá xám — không có ảnh người.
+Một người đàn ông đứng đợi bên cổng. Khoảng năm mươi tuổi. Áo sơ mi trắng cũ — vạt áo có vết ố vàng nhẹ. Quần kaki nâu — đi giày sandal đã mòn đế. Tay phải cầm khung ảnh nhỏ — gói trong vải vàng nâu đậm — vải có vẻ là vải nhà tự may.
+
+Anh bước lên xe. Đi qua hàng ghế đầu — chân bước chậm — không vội — như đã quen đi đêm. Ngồi xuống ghế thứ năm.
+
+Đặt khung ảnh lên đùi. Mở vải vàng nhẹ. Lấy khung ảnh ra. Bên trong khung — tấm ảnh đen trắng — chụp một mộ đá xám — không có ảnh người trên bia.
 
 Xe lăn bánh.
 
@@ -72,19 +76,21 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Anh ngồi yên. Vuốt khung ảnh. Đầu ngón tay anh thô — bàn tay làm nông cả đời.
+Anh ngồi yên. Vuốt khung ảnh. Đầu ngón tay anh thô — bàn tay làm nông cả đời. Móng tay cắt ngắn — có đất.
 
-Khải Phong quan sát từ ghế ba. Anh năm mươi — tóc bạc nửa — mặt rám nắng.
+Khải Phong quan sát từ ghế ba. Anh năm mươi — tóc bạc nửa đầu — mặt rám nắng. Mắt anh có hai nét nhăn ở khóe — nét người hay nhìn xa.
 
-Ảnh anh đang vuốt — không có người — chỉ có bia mộ. Lạ.
+Ảnh trong khung anh đang vuốt — không có người — chỉ có bia mộ. Bia đá xám — chữ khắc mờ — Khải Phong không đọc được từ ghế ba — chỉ thấy hình dạng bia.
 
-Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng. Tắt.
+Lạ. Hai mươi đêm trên chuyến xe — Khải Phong chưa thấy ai đem ảnh mộ. Ai cũng đem ảnh người — di ảnh.
+
+Ông cụ ghế đầu vặn radio. Máy radio lạo xạo — bắt sóng yếu. "...quê nhà..." vọng — một giọng nữ — đệm đàn dây — rồi tắt. Ông cụ xoay tần khác — không bắt được — tắt hẳn.
 
 [pause:500ms]
 
-Bác tài liếc gương. Không nói.
+Bác tài liếc gương. Không nói. Quay lại nhìn đường.
 
-Anh đặt khung ảnh lên đùi. Cúi đầu một lúc.
+Anh ghế năm đặt khung ảnh lên đùi. Cúi đầu — nhìn ảnh — một lúc lâu. Như cố tìm gì trong tấm ảnh chỉ có bia.
 
 ---
 
@@ -92,21 +98,23 @@ Anh đặt khung ảnh lên đùi. Cúi đầu một lúc.
 
 [pause:500ms]
 
-Xe đi qua xóm cũ. Phía bên trái — căn nhà tre cũ — sân không có ai. Cạnh sân — bóng phụ nữ trung niên đứng — bụng to — sắp sinh. Không quay đầu.
+Xe đi qua xóm cũ. Phía bên trái — căn nhà tre cũ — mái lá đã sụt một mép. Sân nhà không có ai. Đèn dầu trong nhà còn sáng yếu — hắt ra hiên.
 
-Anh ghế năm nhìn về phía đó. Mắt anh trống.
+Cạnh sân — một bóng phụ nữ trung niên đứng. Áo bà ba nâu cũ. Bụng to — sắp sinh. Tay đỡ bụng. Không quay đầu — chỉ đứng — nhìn xuống đất.
+
+Anh ghế năm nhìn về phía đó. Mắt anh trống — không phản ứng vài giây.
 
 "Mẹ..."
 
-Anh nói nhỏ.
+Anh nói nhỏ — không to. Chỉ một từ — như tiếng thở ra. Tiếng anh khàn — anh đã giữ trong cổ lâu.
 
-Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
+Đồng hồ trên xe — đồng hồ kim treo bên cabin tài xế — kim phút nhích một lần. Nhích thêm — hai — ba — đến mười. Mười lần trong khoảnh khắc xe đi qua sân nhà tre.
 
 [pause:1000ms]
 
-Xe đi qua. Nhà tre khuất.
+Xe đi qua. Nhà tre khuất — đèn dầu khuất — bóng phụ nữ bụng to khuất.
 
-Anh quay đầu. Vuốt khung ảnh.
+Anh quay đầu lại. Đặt tay lên khung ảnh. Vuốt bia đá trong ảnh — như vuốt mặt người. Hơi thở anh đều — không gấp.
 
 ---
 
@@ -114,59 +122,69 @@ Anh quay đầu. Vuốt khung ảnh.
 
 [pause:1000ms]
 
-"Tôi là Trọng Nhân. Năm mươi tuổi. Tôi ở Mỹ Thuận — Nam Định. Tôi làm nông — ba mẫu lúa."
+"Tôi là Trọng Nhân. Năm mươi tuổi. Tôi ở Mỹ Thuận — Nam Định. Tôi làm nông — ba mẫu lúa hai vụ — đủ ăn — không dư nhiều."
 
-Giọng anh trầm — chậm — không vội.
+Giọng anh trầm — chậm — không vội. Giọng người đã quen kể chuyện này cho bản thân — không lần đầu.
 
-"Mẹ tôi mất năm mươi mốt năm trước. Đêm tôi sinh ra. Mẹ mất khi đẻ — biến chứng băng huyết — bệnh viện huyện không kịp."
+"Mẹ tôi mất năm mươi mốt năm trước. Đêm tôi sinh ra. Mẹ mất khi đẻ — biến chứng băng huyết — bệnh viện huyện thời đó không kịp cấp cứu — không đủ máu truyền."
 
-"Tôi sinh ra — không bao giờ nhìn thấy mặt mẹ. Mẹ mất ngay sau khi tôi cất tiếng khóc đầu — bà đỡ kể vậy."
+"Tôi sinh ra — không bao giờ nhìn thấy mặt mẹ. Mẹ mất ngay sau khi tôi cất tiếng khóc đầu — bà đỡ kể vậy. Bà bảo: 'Mẹ con nắm tay con một lần — rồi tay rũ. Mẹ con nhìn con — không nói được — chỉ nhìn — rồi đi.'"
 
 [pause:800ms]
 
-"Bố tôi ở vậy nuôi tôi. Không tái hôn. Năm tôi sinh — bố hai lăm — bố sống một mình với tôi đến năm bố sáu chín — đột tử."
+"Bố tôi ở vậy nuôi tôi. Không tái hôn. Cả làng đều giục bố tái hôn — bố hai lăm tuổi lúc mẹ mất — bố còn trẻ — có thể có gia đình mới. Bố lắc đầu mọi lần. Bố chỉ nói: 'Tôi đã có vợ. Vợ tôi đi rồi — tôi không có ai khác.'"
 
-"Bố không bao giờ nói nhiều về mẹ. Mỗi rằm tháng tám — bố đem tôi ra mộ mẹ — bố thắp hương — không nói. Tôi quỳ bên bố."
+"Bố sống một mình với tôi đến năm bố sáu mươi chín — đột tử — nhồi máu cơ tim — sáng sớm đang nhổ cỏ vườn."
 
-"Năm tôi mười tuổi — tôi hỏi bố: 'Bố ơi mẹ trông ra sao?' Bố im một lúc. Rồi bố bảo: 'Mẹ con không có ảnh. Hồi đó nghèo — không chụp ảnh. Mẹ con đẹp — bố nhớ — nhưng bố không tả được.'"
+"Bố không bao giờ nói nhiều về mẹ. Mỗi rằm tháng tám — bố đem tôi ra mộ mẹ — bố thắp hương — không nói. Tôi quỳ bên bố. Hai bố con quỳ — không nói gì — gió thổi qua bia — qua hàng cau bên mộ."
+
+"Năm tôi mười tuổi — tôi hỏi bố lần đầu: 'Bố ơi mẹ trông ra sao?' Bố im một lúc dài — lâu — tôi nghĩ bố sẽ không trả lời. Rồi bố bảo: 'Mẹ con không có ảnh. Hồi đó nghèo — không chụp ảnh chân dung — chụp ảnh tốn tiền lắm. Mẹ con đẹp — bố nhớ — nhưng bố không tả được. Mặt mẹ — bố thấy trong đầu — nhưng không vẽ ra giấy được.'"
 
 [pause:1200ms]
 
-"Tôi sống năm mươi năm — không bao giờ thấy mặt mẹ. Mỗi đêm trước khi ngủ — tôi cố tưởng tượng — mẹ trông sao. Tôi tưởng tượng theo bố — theo tôi soi gương — mẹ chắc có nét tôi."
+"Tôi không hỏi nữa. Tôi sống năm mươi năm — không bao giờ thấy mặt mẹ. Mỗi đêm trước khi ngủ — tôi cố tưởng tượng — mẹ trông sao. Tôi tưởng tượng theo bố — theo tôi soi gương — mẹ chắc có nét tôi. Mũi mẹ chắc thẳng như mũi tôi. Mắt mẹ chắc đen như mắt tôi. Tóc mẹ chắc đen dài — vì phụ nữ thời đó hay để tóc dài."
 
-"Tôi cưới năm hai bảy. Vợ tôi hiền. Sinh hai con — trai và gái — đều khỏe."
+"Nhưng tôi không biết. Tất cả chỉ là tưởng tượng."
 
-"Năm vợ tôi sinh con đầu — bệnh viện huyện đỡ đẻ — không biến chứng — vợ và con đều an toàn. Tôi quỳ bên giường vợ — khóc — vì sợ điều mẹ tôi gặp."
+"Tôi cưới năm hai bảy. Vợ tôi tên Hiền — cùng làng — hiền như tên. Sinh hai con — một trai một gái — đều khỏe."
+
+"Năm vợ tôi sinh con đầu — bệnh viện huyện đỡ đẻ — không biến chứng — vợ và con đều an toàn. Khi vợ ra phòng đẻ — tôi đứng ngoài — tay run. Tôi sợ điều mẹ tôi gặp năm mươi mốt năm trước sẽ lặp lại."
+
+"Bác sĩ ra báo: 'Anh ơi vợ anh khỏe — con trai — ba kí — khỏe.' Tôi quỳ xuống sàn bệnh viện. Khóc. Lần đầu khóc sau hai mươi năm — không khóc từ hồi tôi mười tuổi nghe bố nói mẹ không có ảnh."
 
 [pause:1500ms]
 
-"Bố tôi mất năm tôi bốn mươi tư. Bố nằm trong quan tài — bố cũng không có ảnh — bố không thích chụp."
+"Bố tôi mất năm tôi bốn mươi tư. Bố nằm trong quan tài — bố cũng không có ảnh — bố không thích chụp — như mẹ. Hai vợ chồng đều không có ảnh chân dung."
 
-"Sau tang bố — tôi đi tìm ảnh bố. Tôi tìm khắp nhà — không có. Bố sống bảy mươi tuổi — chưa bao giờ chụp ảnh chân dung."
+"Sau tang bố — tôi đi tìm ảnh bố. Tôi tìm khắp nhà — lục tủ — lục ngăn kéo — không có. Bố sống bảy mươi tuổi — chưa bao giờ chụp ảnh chân dung."
 
-"Tôi đi hỏi hàng xóm — ai có ảnh bố không? Một bác cùng làng — bác tám mươi — đưa tôi một ảnh đen trắng — chụp năm bố ba mươi — đứng cạnh tôi ba tháng tuổi — ảnh nhòe — chỉ thấy bóng."
+"Tôi đi hỏi hàng xóm — ai có ảnh bố không? Một bác cùng làng — bác tám mươi — đưa tôi một ảnh đen trắng — chụp năm bố ba mươi — đứng cạnh tôi ba tháng tuổi — ảnh nhòe — chỉ thấy bóng người đàn ông cao gầy bế đứa bé nhỏ."
 
-"Tôi giữ ảnh đó. Tôi nhìn — không rõ mặt bố — nhưng có bóng."
+"Tôi cầm ảnh. Nhìn. Không rõ mặt bố — chỉ có bóng — nhưng tôi biết bóng đó là bố. Tôi để ảnh trong khung — đặt lên bàn thờ bố."
 
 [pause:1500ms]
 
 "Tôi không có ảnh mẹ. Suốt đời tôi không có một ảnh nào của mẹ. Mộ mẹ có bia đá — chỉ ghi tên 'Phạm Thị Liễu — 1948-1975' — không có ảnh trên bia."
 
-"Năm vừa rồi — tôi năm chục — tôi quyết. Tôi đem máy ảnh ra mộ mẹ — chụp một ảnh mộ — gọi là 'ảnh mẹ' của tôi. Ảnh chỉ có bia đá — không có người."
+"Năm vừa rồi — tôi năm chục tuổi — tôi quyết. Tôi đem máy ảnh ra mộ mẹ — chụp một ảnh mộ — gọi là 'ảnh mẹ' của tôi. Ảnh chỉ có bia đá — không có người."
 
-"Tôi đem ảnh về — đóng khung — đặt trên bàn thờ. Cạnh bài vị mẹ. Đó là ảnh duy nhất tôi có về mẹ — ảnh mộ — không phải mẹ."
+"Vợ tôi hỏi: 'Sao anh chụp mộ? Khó nhìn lắm.' Tôi đáp: 'Anh không có ảnh mẹ. Mộ là gần nhất anh có. Anh sẽ đặt ảnh mộ trên bàn thờ — bên cạnh bài vị mẹ.'"
+
+"Vợ tôi im. Hiểu. Không nói gì."
+
+"Tôi đem ảnh về — đóng khung — đặt trên bàn thờ. Cạnh bài vị mẹ. Đó là ảnh duy nhất tôi có về mẹ — ảnh mộ — không phải mẹ. Nhưng có còn hơn không."
 
 Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Trọng Nhân gật. Mắt đỏ.
+Trọng Nhân gật. Mắt đỏ — không khóc — mắt đỏ vì đã giữ lâu.
 
-"Tôi nhớ. Tôi không bao giờ nhìn thấy mặt mẹ — năm mươi năm. Tôi không thể đem mẹ sống lại để chụp. Ảnh mộ là gần nhất tôi có. Tôi chấp nhận — mẹ không có hình dạng cụ thể trong đầu tôi — chỉ có một cảm giác."
+"Tôi nhớ. Tôi không bao giờ nhìn thấy mặt mẹ — năm mươi năm. Tôi không thể đem mẹ sống lại để chụp ảnh. Ảnh mộ là gần nhất tôi có. Tôi chấp nhận — mẹ không có hình dạng cụ thể trong đầu tôi — chỉ có một cảm giác. Cảm giác đó đủ cho năm mươi năm — sẽ đủ cho mấy chục năm sau."
 
 [pause:1200ms]
 
-"Đêm nay — tôi đem khung ảnh này ra mộ mẹ — đặt cạnh bia — để ảnh nằm với chính mộ — gửi ảnh về với mẹ. Tôi đã đủ năm mươi — tôi đã sống một đời không cần thấy mẹ — bây giờ tôi gửi ảnh trở lại — như cách nói với mẹ tôi đã chấp nhận không thấy."
+"Đêm nay — tôi đem khung ảnh này ra mộ mẹ — đặt cạnh bia — để ảnh nằm với chính mộ — gửi ảnh về với mẹ. Như cách tôi nói với mẹ: 'Mẹ ơi con đã đủ năm mươi — con không cần ảnh mẹ nữa — con đem ảnh trả về với mộ mẹ — để ảnh hợp nhất với mẹ — không tách rời.'"
 
 ---
 
@@ -174,29 +192,29 @@ Trọng Nhân gật. Mắt đỏ.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Nam Định — cây bồ đề già — bến không tên. Chuông xe ngân. Một tiếng. Tan.
+Xe chậm lại. Ngã ba Nam Định — cây bồ đề già — bến không tên — đèn vàng trên cây bồ đề chiếu xuống. Chuông xe ngân. Một tiếng. Tan trong không khí ướt sau mưa.
 
-Trọng Nhân ôm khung ảnh. Đứng dậy.
+Trọng Nhân ôm khung ảnh. Đứng dậy chậm — không vội.
 
 "Chào anh."
 
-Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển.
+Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển — đứng yên như thường lệ.
 
 Bác tài: "Chưa tới lúc."
 
-Anh bước xuống.
+Trọng Nhân bước xuống — chân chạm bậc xe — chạm đất.
 
 [pause:1200ms]
 
-Bên ngoài — Trọng Nhân đi vào nghĩa trang Mỹ Thuận — cổng đã mở. Đèn nến cháy bên trong. Phía cuối — mộ mẹ — bia đá xám — chỉ ghi tên.
+Bên ngoài — Trọng Nhân đi vào nghĩa trang Mỹ Thuận — cổng đã mở. Đèn nến cháy bên trong — không rõ ai thắp — như đã đợi anh. Phía cuối nghĩa trang — mộ mẹ — bia đá xám — chỉ ghi tên — không có ảnh.
 
-Anh đến. Quỳ. Đặt khung ảnh cạnh bia — sát chân bia. Cúi đầu.
+Anh đến mộ. Quỳ xuống đất ướt. Đặt khung ảnh cạnh bia — sát chân bia — ảnh hướng về bia — như ảnh nhìn vào mộ. Cúi đầu thấp.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ. Bên mộ — mẹ Trọng Nhân xuất hiện — phụ nữ trẻ — bụng to — sắp sinh — vuốt tóc Trọng Nhân năm mươi tuổi. Mỉm cười.
+Khải Phong chớp mắt — nhìn qua cửa sổ xe đang chậm chậm rời ngã ba. Bên mộ — mẹ Trọng Nhân xuất hiện — phụ nữ trẻ — chừng hai mươi bảy tuổi — áo bà ba nâu — bụng to — sắp sinh — vuốt tóc Trọng Nhân năm mươi tuổi đang quỳ. Bà mỉm cười — không nói.
 
-Khải Phong chớp lần nữa. Mẹ tan.
+Khải Phong chớp lần nữa. Mẹ tan vào ánh đèn nến.
 
-Trọng Nhân ngẩng đầu. Không khóc. Cúi đầu thêm.
+Trọng Nhân ngẩng đầu. Không khóc. Cúi đầu thêm một lúc. Rồi đứng dậy — chậm — phủi đầu gối khỏi đất ướt.
 
 [pause:1500ms]
 
@@ -204,30 +222,40 @@ Trọng Nhân ngẩng đầu. Không khóc. Cúi đầu thêm.
 
 # CLIFFHANGER [section 6]
 
-Xe lăn bánh — rời ngã ba Nam Định.
+Xe lăn bánh — rời ngã ba Nam Định. Đèn pha quét lên đường đêm — sông Đáy phía sau khuất dần.
 
-Ghế năm trống. Trên sàn — một sợi chỉ vàng nhỏ rơi (từ vải vàng bọc khung ảnh). Khải Phong nhặt. Sợi chỉ — mảnh — màu vàng đậm.
+Ghế năm trống. Trên sàn — một sợi chỉ vàng nhỏ rơi — bong từ vải vàng bọc khung ảnh khi anh mở. Khải Phong nhặt. Sợi chỉ — mảnh — màu vàng đậm.
 
-Bỏ vào túi. Vật thứ hai mươi mốt.
+Bỏ vào túi áo gió. Vật thứ hai mươi mốt.
 
-Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
+Bác tài lái. Kim phút cabin nhích — một — hai — đến mười. Lại mười lần.
 
 [pause:1500ms]
 
-Khải Phong ngồi. Mẹ Trọng Nhân chết khi sinh — như vợ ai đó EPs trước. Khải Phong nhớ. Đêm ba mươi bảy — bốn mươi — Khôi và Vy.
+Khải Phong ngồi yên. Mẹ Trọng Nhân chết khi sinh — như vợ ai đó EPs trước. Khải Phong nhớ. Đêm ba mươi bảy — bốn mươi — Khôi và Vy. Khôi mua đồng hồ định tặng vợ — vợ chết khi sinh. Đêm này — Trọng Nhân không có ảnh mẹ — mẹ chết khi sinh anh.
 
 Khải Phong ngẫm — mình có mẹ không? Có. Cảm giác — có. Nhưng mẹ ở đâu? Mẹ còn sống? Hay đã đi như Hạ Vy?
 
+Khải Phong cố nhớ. Hình ảnh mờ — nhưng có hình ảnh. Một căn nhà nhỏ — quê — một bà mẹ đứng ngoài hiên — vẫy tay khi Khải Phong đi học xa.
+
+Khải Phong nhớ. Mẹ Khải Phong còn sống. Khải Phong còn mẹ.
+
+Khải Phong cố nhớ thêm. Quê Khải Phong ở đâu? Hình ảnh — đường làng — ruộng lúa — cây đa cổ ở đầu làng. Khải Phong đi học xa — Hà Nội — mỗi năm về quê vài lần.
+
+Phố Khâm Thiên. Phòng trọ Hà Nội. Sinh viên kiến trúc. Khải Phong nhớ rõ — đêm nay rõ hơn đêm trước.
+
 [pause:1500ms]
 
-Khải Phong cố nhớ. Hình ảnh mờ — một phố cũ — đường tàu hỏa cũ — phố Khâm Thiên. Phòng trọ nhỏ — tầng hai — bốn người ở ghép — sinh viên kiến trúc.
+Hạ Vy có ở phố Khâm Thiên không? Cùng phố? Cùng phòng trọ?
 
-Khải Phong sống phố Khâm Thiên — sinh viên. Khải Phong nhớ rõ — đêm nay rõ hơn đêm trước.
+Khải Phong cố nhớ. Hình ảnh — phòng trọ tầng hai — bốn người ở ghép — tất cả sinh viên kiến trúc. Hai phòng — một phòng nam — một phòng nữ. Phòng nam Khải Phong ở với một bạn nam — tên gì đó — Hùng? Hoặc Hải? Khải Phong không rõ. Phòng nữ — hai bạn nữ ở ghép — một trong hai là Hạ Vy.
 
-Hạ Vy có ở phố Khâm Thiên không? Có lẽ cùng phố. Có lẽ phòng trọ gần.
+Khải Phong và Hạ Vy quen từ giảng đường. Sau quen — Khải Phong giới thiệu Hạ Vy với bạn nữ Khải Phong biết — bạn đang tìm bạn ghép phòng. Hai cô gái ghép phòng — phòng đối diện phòng Khải Phong. Đối diện hành lang.
 
-Bác tài liếc gương. "Đêm hai mươi mốt. Con bắt đầu nhớ phố Khâm Thiên. Đêm sau con sẽ nhớ phòng trọ — ai ở cùng — ai sống bên cạnh. Đừng vội."
+Khải Phong nhớ — Hạ Vy ở phòng đối diện. Hai phòng cách hành lang ba bước chân. Mỗi sáng — hai cô gái mở cửa — Khải Phong cũng mở cửa — chào nhau qua hành lang.
 
-Khải Phong gật.
+Bác tài liếc gương — lần này dừng trên Khải Phong lâu. "Đêm hai mươi mốt. Con bắt đầu nhớ phố Khâm Thiên — phòng trọ. Đêm sau con sẽ nhớ ai ở phòng đối diện — ai ngày nào bước qua hành lang ba bước chân. Đừng vội. Cứ giữ vật con nhặt."
 
-Đêm thứ hai mươi mốt. Xe đi tiếp. Phía sau — Nam Định khuất. Trọng Nhân ở lại quỳ — bên mộ mẹ — đem ảnh mộ về với chính mộ.
+Khải Phong gật. Không hỏi.
+
+Đêm thứ hai mươi mốt. Xe đi tiếp về phía đường vành đai. Mưa đã hết — chỉ còn không khí ướt. Phía sau — Nam Định khuất — Trọng Nhân ở lại quỳ — bên mộ mẹ — đem ảnh mộ về với chính mộ.
