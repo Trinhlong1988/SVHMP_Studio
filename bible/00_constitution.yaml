@@ -73,6 +73,41 @@ R44_dictionary_block:
     Vi phạm = R41 HARDLOCK block commit.
   no_inference: "KHÔNG suy luận đúng/sai. Chỉ check theo rule cứng."
 
+R51_dialogue_audit_smart_v2:
+  # round 12 add 2026-06-28 (Mr.Long lệnh refine bot báo thông minh)
+  rule: "Audit dialogue chỉ flag TRUE ambiguity, accept Ngọc Ngạn first-person monologue"
+  acceptable_patterns:
+    - First-person passenger monologue: "Em là X. Em sống. Em đi. Em hứa" — natural Vietnamese
+    - Self-action verbs sau 'em': cố/sẽ/đã/không/chỉ/cũng/vẫn/đang/là/có
+    - Quoted direct speech với context rõ về subject
+  flag_patterns:
+    HIGH: "'em [non-self-verb] em' trong cùng 1 sentence (2 referents)"
+    MEDIUM: "3+ em sau named person trong cùng sentence"
+  excluded_false_positives:
+    - "Em cố nhớ" / "Em sẽ làm" / "Em đã đi" → self-ref OK
+    - "Em là Bích Trâm" intro → OK
+    - "Chị tắm cho em lúc em mới sinh" → 'em' both refer speaker (self) → OK
+  enforcement: tools/audit_dialogue_hierarchy.py v2 smart
+  no_inference: "Pattern strict — chỉ flag 'em [object_verb] em' + multi-named context"
+  cross_ref: [R46 anaphora accept, R48 hierarchy]
+
+R52_acceptable_ngoc_ngan_first_person:
+  # round 12 add — codify literary convention
+  rule: "First-person passenger monologue 'Em [verb] / Em [adj]' chains CHẤP NHẬN không giới hạn nếu speaker nói về chính mình"
+  rationale: |
+    Vietnamese narrative tradition (Nguyễn Ngọc Ngạn, Hồ Biểu Chánh):
+    Passenger kể chuyện về bản thân thường bắt đầu mỗi câu với 'Em/Tôi'.
+    Đây KHÔNG phải anaphora bug — đây là Vietnamese literary signature.
+  example_accept: |
+    "Em là Bích Trâm. Em ba mươi hai tuổi. Em làm giáo viên.
+     Em sống Hà Nội. Em có một con gái — Linh."
+    → 5 câu start "Em" về SPEAKER → ACCEPT
+  example_flag: |
+    "Em đem em về phòng trọ em ở Sóc Trăng."
+    → 3 em refer 2 different people (speaker + Vân) → FLAG R48 HIGH
+  enforcement: audit_dialogue_hierarchy v2 + manual editorial review
+  cross_ref: [R46 anaphora]
+
 R50_audit_toolkit_mandatory_pre_commit:
   # round 11 add 2026-06-28 (Mr.Long lệnh "cam kết các tool luôn chạy và kiểm thử")
   rule: "Pre-commit hook BẮT BUỘC chạy 7 audit tools — block nếu BẤT KỲ HIGH issue"

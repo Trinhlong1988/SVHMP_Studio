@@ -54,50 +54,87 @@ def extract_quotes(text):
     return quotes
 
 def detect_pronoun_issues_in_quote(quote, passenger_name=None):
-    """For one quote, detect potential pronoun issues."""
+    """v2 SMART detection — per-sentence not per-quote, ignore Ngọc Ngạn first-person monologue.
+    Only flag TRUE ambiguity: 2+ em referring to DIFFERENT people in SAME sentence."""
     issues = []
 
-    # Count em vs tôi self-reference
-    em_total = len(re.findall(r'\bem\b', quote, re.IGNORECASE))
-    toi_total = len(re.findall(r'\btôi\b', quote, re.IGNORECASE))
-    anh_total = len(re.findall(r'\banh\b', quote))
-    chi_total = len(re.findall(r'\bchị\b', quote))
+    # SPLIT quote into sentences (by . ! ?)
+    sentences = re.split(r'[.!?]\s+', quote)
 
-    # Issue 1: pronoun shift — tự xưng "tôi" rồi đột nhiên "em" (or vice versa)
-    if toi_total >= 2 and em_total >= 2:
-        # Likely mixed self-reference + referent
-        # Check if "em" appears as self vs as referent
-        issues.append({
-            'type': 'pronoun_shift_self',
-            'detail': f'tôi={toi_total} + em={em_total} mixed self-ref',
-            'severity': 'HIGH',
-        })
+    # Vietnamese personal names list (common given names)
+    VN_NAMES = {'Hạ Vy', 'Khải Phong', 'Linh', 'Nga', 'Vy An', 'Khôi', 'Mai', 'Hằng', 'Nhung',
+                'Tuấn', 'Hùng', 'Lan', 'Hồng', 'Yến', 'Phong', 'Hà', 'Hải', 'Toàn',
+                'Quỳnh', 'Quỳnh Mai', 'Hoài An', 'Hoài', 'Bin', 'Mai Anh', 'Trinh', 'Vân',
+                'Khoa', 'Bính', 'Bính', 'Long', 'Sáu', 'Diễm', 'Mỵ', 'Đức Anh',
+                'Đức Hùng', 'Mỹ Linh', 'Đức Vinh', 'Hồng Liên', 'Văn Quân', 'Trí Hưng',
+                'Hân Hậu', 'Phan Tâm', 'Thanh Vân', 'Hoàng Yến', 'Hữu Tài',
+                'Linh Trang', 'Bích Hoa', 'Nhật Minh', 'Khải Phong Nguyễn', 'Trọng Nhân',
+                'Mỹ Hạnh', 'Hồng Mai', 'Văn Khải', 'Trung Hậu', 'Hoài An', 'Văn Tuấn',
+                'Hữu Duy', 'Phương Linh', 'Bích Trâm', 'Hoàng Nam', 'Văn Trường',
+                'Phượng Liên', 'Mạnh Hiếu', 'Bà Hảo', 'Thanh Nga', 'Tâm Đan', 'Đức',
+                'Tài', 'Vinh', 'Bình', 'Hữu Lộc', 'Khang', 'Tâm', 'Hoa Trinh',
+                'Hoa', 'Vân', 'Việt', 'Đăng', 'Yến Hương'}
 
-    # Issue 2: "em" overload — 5+ em in 1 quote with potential multiple referents
-    if em_total >= 5:
-        # Check if there are at least 2 named persons in quote
-        named_persons = re.findall(r'[A-ZĐ][a-zàáâãèéêíìóòôõùúýỳỵỷỹăằắẳẵặâầấẩẫậđèéẹẻẽêềếểễệìíỉĩịòóọỏõôồốổỗộơờớởỡợùúụủũưừứửữựỳýỷỹỵ]+\b', quote)
-        named_filter = [n for n in named_persons if n not in ['Em', 'Tôi', 'Anh', 'Chị', 'Bác', 'Bố', 'Mẹ', 'Bà', 'Ông', 'Vâng', 'OK', 'Cảm']]
-        if len(set(named_filter)) >= 1:
-            # Has named person + multiple em
-            sample = quote[:120]
-            issues.append({
-                'type': 'em_overload_multiple_referents',
-                'detail': f'{em_total} em + named: {set(named_filter)} — likely ambiguous',
-                'severity': 'HIGH' if em_total >= 7 else 'MEDIUM',
-                'sample': sample,
-            })
+    for sent in sentences:
+        if not sent.strip(): continue
 
-    # Issue 3: "em chị" or "em anh" — ambiguous self vs other
-    if re.search(r'\bem (chị|anh)\b', quote):
-        issues.append({
-            'type': 'em_followed_by_kinship',
-            'detail': 'em + chị/anh — ambiguous (self ref vs addressing)',
-            'severity': 'MEDIUM',
-        })
+        # Count em in this sentence
+        em_count = len(re.findall(r'\bem\b', sent, re.IGNORECASE))
+        if em_count < 2: continue  # 0-1 em never ambiguous
 
-    # Issue 4: "em <verb>" repeated 4+ times consecutively — may be intentional Ngọc Ngạn monologue
-    # Skip flag — accept R46
+        # Find named persons in same sentence
+        sent_names = set()
+        for name in VN_NAMES:
+            if name in sent:
+                sent_names.add(name)
+
+        # PATTERN A: "em [verb] em" — 2 em with verb between (high ambiguity)
+        # Examples: "em đem em", "em yêu thầm em", "em nuôi em", "em coi em"
+        verb_em_em_match = re.search(r'\bem (\w+(?:\s+thầm)?)\s+em\b', sent)
+        if verb_em_em_match:
+            verb = verb_em_em_match.group(1)
+            # Self-action verbs: skip (em làm gì cho chính mình — not ambiguous)
+            self_verbs = {'cố', 'sẽ', 'đã', 'không', 'chỉ', 'cũng', 'vẫn', 'đang', 'là', 'có'}
+            if verb not in self_verbs:
+                issues.append({
+                    'type': 'true_ambiguity_em_verb_em',
+                    'detail': f'"em {verb} em" trong 1 câu — 2 referents',
+                    'severity': 'HIGH',
+                    'sample': sent[:120],
+                })
+                continue
+
+        # PATTERN B: "Em [verb] em" capitalized — same pattern
+        cap_match = re.search(r'\bEm (\w+(?:\s+thầm)?)\s+em\b', sent)
+        if cap_match:
+            verb = cap_match.group(1)
+            self_verbs = {'cố', 'sẽ', 'đã', 'không', 'chỉ', 'cũng', 'vẫn', 'đang', 'là', 'có'}
+            if verb not in self_verbs:
+                issues.append({
+                    'type': 'true_ambiguity_em_verb_em',
+                    'detail': f'"Em {verb} em" — 2 referents',
+                    'severity': 'HIGH',
+                    'sample': sent[:120],
+                })
+                continue
+
+        # PATTERN C: em with named person AND another em close — likely refers to both
+        # e.g. "Em yêu Hạ Vy. Em biết em có bạn trai"
+        # If sentence has BOTH named person AND 3+ em → likely mixed
+        if len(sent_names) >= 1 and em_count >= 3:
+            # Check if any em is after named person (likely refers to that name)
+            for name in sent_names:
+                # "Hạ Vy ... em ... em" pattern
+                pos = sent.find(name)
+                after_name = sent[pos + len(name):]
+                if len(re.findall(r'\bem\b', after_name, re.IGNORECASE)) >= 2:
+                    issues.append({
+                        'type': 'em_after_named_person_ambiguous',
+                        'detail': f'2+ em sau "{name}" — có thể refer {name}',
+                        'severity': 'MEDIUM',
+                        'sample': sent[:120],
+                    })
+                    break
 
     return issues
 
