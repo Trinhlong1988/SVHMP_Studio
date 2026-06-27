@@ -2,30 +2,36 @@
   "ep_number": 50,
   "phase_h_version": "H1-H7 v1.0",
   "stats": {
-    "tokens_count": 2817,
-    "sentences_approx": 370,
-    "adverbs_count": 178,
-    "adverbs_ratio": 0.063,
-    "word_count": 2443,
-    "estimated_minutes": 15.8
+    "tokens_count": 2585,
+    "sentences_approx": 334,
+    "adverbs_count": 153,
+    "adverbs_ratio": 0.059,
+    "word_count": 2259,
+    "estimated_minutes": 14.6
   },
   "issues": [
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"đêm\" lặp 26x trong ep",
-      "suggestion": "Đa dạng từ vựng, dùng synonym"
-    },
-    {
-      "check": "H1_token_repeat",
-      "severity": "warning",
-      "evidence": "\"trong\" lặp 23x trong ep",
+      "evidence": "\"đêm\" lặp 24x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
       "check": "H1_token_repeat",
       "severity": "warning",
       "evidence": "\"trên\" lặp 23x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"tách\" lặp 18x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"vật\" lặp 17x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
@@ -37,20 +43,20 @@
     {
       "check": "H9_stop_consonant_tail",
       "severity": "minor",
-      "evidence": "Word \"suốt\" xuất hiện 1x (BigVGAN tail risk)",
-      "suggestion": "trong suốt → lặng lẽ / mờ đục"
+      "evidence": "Word \"biết\" xuất hiện 4x (BigVGAN tail risk)",
+      "suggestion": "chưa biết → vẫn chưa hay / vẫn chưa rõ"
     },
     {
-      "check": "H9_stop_consonant_tail",
-      "severity": "minor",
-      "evidence": "Word \"biết\" xuất hiện 3x (BigVGAN tail risk)",
-      "suggestion": "chưa biết → vẫn chưa hay / vẫn chưa rõ"
+      "check": "H10_duration_too_short",
+      "severity": "warning",
+      "evidence": "14.6 phút (target 15-18p, max 20p)",
+      "suggestion": "Expand thêm 66 từ để đạt 15p"
     }
   ],
   "issues_count_by_severity": {
     "critical": 0,
-    "warning": 3,
-    "minor": 3
+    "warning": 5,
+    "minor": 2
   },
   "verdict": "WARN",
   "next_action": "Generator review issues, optional regen"
