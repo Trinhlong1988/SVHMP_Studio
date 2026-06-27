@@ -12,7 +12,7 @@ signature_setting: setting_TBD
 stop_location: ngã ba Bắc Giang
 bell_count: 1
 ghost_manifest: 1
-auto_gen: tools/auto_gen_ep.py v2.0 (template + QA loop)
+auto_gen: tools/auto_gen_ep_v3.py v3.1 — pattern A (Linear flashback) (template + QA loop)
 ```
 
 ---
@@ -85,11 +85,11 @@ Em quay đầu. Áp cái nồi đất nhỏ vào lòng. Mắt nhắm nhẹ.
 
 ---
 
-# REVEAL [section 4]
+# REVEAL [section 4 — Pattern A: Linear flashback]
 
 [pause:800ms]
 
-Em vuốt nhẹ lên cái nồi đất nhỏ một lần nữa. Mép nồi sứt một góc, dấu tay dầu trên thành.
+Em đặt nồi xuống đùi một lần nữa. Mép nồi sứt một góc, dấu tay dầu trên thành.
 
 "Em tên Khoa Đăng. Năm nay 18-25 tuổi."
 
@@ -133,21 +133,7 @@ Em không quay đầu. Khẽ gật. Một cái gật rất nhỏ.
 
 [pause:800ms]
 
-"Nhiều năm sau, em mới hiểu — câu chưa nói đó là gì. Lúc đầu em tưởng chỉ cần một câu 'con xin lỗi'. Sau nhiều năm, em hiểu — câu thực sự cần nói không phải xin lỗi. Mà là cảm ơn. Cảm ơn người ấy đã đợi. Cảm ơn người ấy đã không bỏ em lại. Cảm ơn người ấy đã ngồi yên đến phút cuối."
-
-"Em đã chuẩn bị câu đó suốt nhiều năm. Tập đi tập lại trong đầu. Nhưng mỗi lần đến trước ban thờ người ấy, câu nói lại nghẹn ở cổ. Em chỉ thắp được nhang. Đứng yên. Cúi đầu. Rồi đi ra."
-
-[pause:600ms]
-
-"Có những đêm em không ngủ được. Em ngồi trên giường. Cầm cái nồi đất nhỏ. Tự thì thầm với người ấy. Nói chuyện hôm nay em làm gì. Nói chuyện công việc. Nói chuyện con cái. Nói cả những chuyện vụn vặt — như ngày xưa hai người vẫn nói với nhau."
-
-"Có khi em cảm thấy người ấy đang ở đó nghe. Có khi không. Nhưng em cứ nói. Vì em biết — nếu em dừng nói, người ấy sẽ tan đi thực sự."
-
-[pause:1000ms]
-
-"Đêm nay em đem cái nồi đất nhỏ về quê. Đặt lên ban thờ. Thắp nhang. Nói: 'Con nhớ rồi. Con cảm ơn.' Có thể người ấy nghe. Có thể không. Nhưng em cần nói."
-
-"Em đã chờ đêm này lâu lắm. Năm nay em sẽ về."
+"Đêm nay em đem cái nồi đất nhỏ về quê. Đặt lên ban thờ. Thắp nhang. Nói: 'Con nhớ rồi. Con xin lỗi.' Có thể người ấy nghe. Có thể không. Nhưng em cần nói."
 
 ---
 

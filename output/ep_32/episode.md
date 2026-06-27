@@ -12,7 +12,7 @@ signature_setting: setting_TBD
 stop_location: ngã ba Quảng Trị
 bell_count: 1
 ghost_manifest: 1
-auto_gen: tools/auto_gen_ep.py v2.0 (template + QA loop)
+auto_gen: tools/auto_gen_ep_v3.py v3.1 — pattern D (Object-first) (template + QA loop)
 ```
 
 ---
@@ -85,69 +85,57 @@ Cụ quay đầu. Áp con dao nhà bếp vào lòng. Mắt nhắm nhẹ.
 
 ---
 
-# REVEAL [section 4]
+# REVEAL [section 4 — Pattern D: Object-first]
 
 [pause:800ms]
 
-Cụ vuốt nhẹ lên con dao nhà bếp một lần nữa. Cán dao gỗ mòn, có vết tay nhẵn.
+Cụ đặt con dao nhà bếp lên đùi. Tay đi qua từng chi tiết.
 
-"Cụ tên Tiên Nga. Năm nay 51-65 tuổi."
+"Cụ tên Tiên Nga. 51-65. Nhưng đêm nay cụ không kể chuyện cụ. Cụ kể chuyện vật này."
 
-Giọng cụ nhỏ. Khô. Như đọc cho chính con dao nhà bếp nghe.
-
-"Mẹ nấu cơm 60 năm. Con chưa bao giờ hỏi mẹ thích ăn gì. Mẹ mất — con tìm trong sổ tay mẹ: 'mẹ thích cá kho'."
+"Con dao nhà bếp này là của mẹ. Mẹ mua/đan/giữ không biết bao nhiêu năm rồi. Chỉ biết mẹ luôn dùng. Mỗi ngày. Mỗi tuần. Mỗi mùa Tết. Con dao nhà bếp đã thấy nhiều thứ."
 
 [pause:600ms]
 
-"Nhiều năm qua, cụ mang theo con dao nhà bếp này. Trong túi xách. Trong cặp. Trong ba lô đi công tác. Mỗi đêm trước khi ngủ, cụ lấy ra. Đặt cạnh đầu giường. Để cảm thấy hơi của người ấy chưa hoàn toàn tan."
+"Vết xước này ở góc — là năm mẹ bốn mươi tuổi. Mẹ vô tình làm. Mẹ cười. Bảo: 'Vết xước cũng đẹp.' Sau đó mỗi lần mẹ dùng, mẹ đều chạm vào vết xước — như chạm vào kỷ niệm."
 
-"Vợ/chồng/con cụ có lúc hỏi: 'Sao cứ giữ vật cũ này?' Cụ không trả lời được. Vì nếu kể, người ấy sẽ thành câu chuyện. Cụ không muốn người ấy thành câu chuyện. Người ấy là của riêng cụ thôi."
+"Vết nhỏ hơn — là năm cụ mười lăm tuổi. Cụ vô tình làm khi giúp mẹ. Mẹ giật mình. Nhưng không la cụ. Mẹ chỉ bảo: 'Bây giờ vật này có hai vết xước. Hai mẹ con đều có dấu trên đó.'"
 
 [pause:800ms]
 
-"Hôm người ấy đi, cụ không có mặt. Cụ ở xa. Đường tắc. Xe muộn. Đến nơi thì đã muộn — chỉ muộn hai giờ, hoặc nửa ngày, hoặc một ngày. Nhưng vẫn muộn."
+"Mảng sờn ở mép — là chỗ mẹ vẫn cầm. Bàn tay mẹ qua nhiều năm đã làm mòn chỗ đó. Cứ chạm vào mảng sờn, cụ cảm thấy hơi tay mẹ — dù mẹ không còn."
 
-"Người ấy nằm đó. Tay đặt trên ngực. Mặt bình thản. Không có gì đáng sợ. Chỉ là không còn thở."
+"Vết ố nhỏ ở giữa — là ngày sinh nhật bốn mươi của cụ. Mẹ làm vô tình. Cũng cười. Bảo: 'Mỗi vết là một câu chuyện.'"
 
-"Cụ ngồi cạnh. Cầm tay người ấy. Bàn tay đã lạnh. Da đã trắng. Cụ muốn nói: 'Con xin lỗi. Con về muộn.' Nhưng người ấy không nghe. Cụ chỉ ngồi đó. Không khóc. Không nói. Đến lúc ai đó dìu cụ đứng dậy."
+[pause:1000ms]
+
+"Vết dài này — là vết nứt mới. Là năm mẹ đi. Mẹ ngã. Vật rơi. Nứt thêm. Khi cụ thu xếp đồ mẹ, cụ cầm lên — thấy vết nứt mới. Cụ hiểu — mẹ vừa đi."
+
+"Tay cụ run khi cầm lên. Nhưng cụ không khóc được. Chỉ đặt vật vào ngực. Nghe nhịp tim mình qua vật."
 
 [pause:1500ms]
 
-Bác tài nhìn gương chiếu hậu một thoáng. Im lặng. Không nói câu nào.
+"Đêm nay cụ đem vật này theo. Mỗi vết trên đó là một câu chuyện của mẹ và cụ. Cụ không cần kể nhiều bằng lời. Vật kể giúp cụ."
 
-Trong gương chiếu hậu phía sau ghế lái, Quang thấy hai cái bóng. Một là cụ. Một là một bóng người lớn tuổi hơn, ngồi sát ngay sau cụ. Bóng người ấy đang đặt tay lên vật giống vật cụ đang giữ. Mắt nhìn xuống. Không nhìn ai. Không nói.
+Bác tài nhìn gương chiếu hậu. Im lặng.
 
-Quang chớp mắt. Trong gương vẫn chỉ có cụ và một bóng mờ.
+Trong gương, Quang thấy hai cái bóng. Cụ và một bóng phụ nữ trung niên — đang đặt tay lên vật cùng cụ. Hai bàn tay chồng lên nhau. Hai mẹ con cùng cầm.
 
-Bác tài cất lời. Câu hỏi cũ.
+Quang chớp mắt. Bóng tan.
+
+Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Cụ không quay đầu. Khẽ gật. Một cái gật rất nhỏ.
-
-"Cụ nhớ, bác."
+Cụ gật. "Cụ nhớ. Mẹ nói chuyện qua vật. Không cần lời."
 
 [pause:1000ms]
 
-"Cụ nhớ từ lâu lắm. Nhưng nhớ không có nghĩa là nói được. Cụ chỉ nhớ trong lòng. Mỗi đêm trước khi ngủ. Mỗi sáng khi mở mắt. Mỗi lần đi qua một quán cũ. Mỗi lần nghe một bài hát cũ. Người ấy luôn ở đó — nhưng không nói được."
+"Đêm nay cụ đem vật này về quê. Đặt lên ban thờ mẹ. Để tay mẹ cuối cùng cũng cầm vật một lần nữa."
 
-[pause:800ms]
+"Sau này khi cụ đi, cụ sẽ truyền vật này cho con. Con cụ không hiểu hết các vết. Nhưng con sẽ giữ. Đến lượt con vô tình làm thêm một vết. Vết của thế hệ con."
 
-"Nhiều năm sau, cụ mới hiểu — câu chưa nói đó là gì. Lúc đầu cụ tưởng chỉ cần một câu 'con xin lỗi'. Sau nhiều năm, cụ hiểu — câu thực sự cần nói không phải xin lỗi. Mà là cảm ơn. Cảm ơn người ấy đã đợi. Cảm ơn người ấy đã không bỏ cụ lại. Cảm ơn người ấy đã ngồi yên đến phút cuối."
-
-"Cụ đã chuẩn bị câu đó suốt nhiều năm. Tập đi tập lại trong đầu. Nhưng mỗi lần đến trước ban thờ người ấy, câu nói lại nghẹn ở cổ. Cụ chỉ thắp được nhang. Đứng yên. Cúi đầu. Rồi đi ra."
-
-[pause:600ms]
-
-"Có những đêm cụ không ngủ được. Cụ ngồi trên giường. Cầm con dao nhà bếp. Tự thì thầm với người ấy. Nói chuyện hôm nay cụ làm gì. Nói chuyện công việc. Nói chuyện con cái. Nói cả những chuyện vụn vặt — như ngày xưa hai người vẫn nói với nhau."
-
-"Có khi cụ cảm thấy người ấy đang ở đó nghe. Có khi không. Nhưng cụ cứ nói. Vì cụ biết — nếu cụ dừng nói, người ấy sẽ tan đi thực sự."
-
-[pause:1000ms]
-
-"Đêm nay cụ đem con dao nhà bếp về quê. Đặt lên ban thờ. Thắp nhang. Nói: 'Con nhớ rồi. Con cảm ơn.' Có thể người ấy nghe. Có thể không. Nhưng cụ cần nói."
-
-"Cụ đã chờ đêm này lâu lắm. Năm nay cụ sẽ về."
+"Cứ thế. Vật được truyền. Vết được thêm. Câu chuyện được kể qua các thế hệ — không bằng lời."
 
 ---
 

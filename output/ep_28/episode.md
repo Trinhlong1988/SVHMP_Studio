@@ -12,7 +12,7 @@ signature_setting: setting_TBD
 stop_location: ngã ba Yên Bái
 bell_count: 1
 ghost_manifest: 1
-auto_gen: tools/auto_gen_ep.py v2.0 (template + QA loop)
+auto_gen: tools/auto_gen_ep_v3.py v3.1 — pattern F (Monologue im lặng) (template + QA loop)
 ```
 
 ---
@@ -85,69 +85,63 @@ Cụ quay đầu. Áp cây gậy trúc vào lòng. Mắt nhắm nhẹ.
 
 ---
 
-# REVEAL [section 4]
+# REVEAL [section 4 — Pattern F: Monologue im lặng]
 
 [pause:800ms]
 
-Cụ vuốt nhẹ lên cây gậy trúc một lần nữa. Tay cầm có vết tay nhẵn, lâu năm.
+"Cụ tên Yến Hương. 66+."
 
-"Cụ tên Yến Hương. Năm nay 66+ tuổi."
+Giọng cụ đều, gần như thì thầm.
 
-Giọng cụ nhỏ. Khô. Như đọc cho chính cây gậy trúc nghe.
+"Đêm nay cụ không kể nhiều. Câu chuyện cụ ngắn lắm. Một câu thôi."
 
-"Cháu cãi ông vụ thi đại học. Bỏ về nhà mình. Ông mất 1 tuần sau. Câu cuối ông nói là 'ông không giận con'."
+[pause:1000ms]
 
-[pause:600ms]
-
-"Nhiều năm qua, cụ mang theo cây gậy trúc này. Trong túi xách. Trong cặp. Trong ba lô đi công tác. Mỗi đêm trước khi ngủ, cụ lấy ra. Đặt cạnh đầu giường. Để cảm thấy hơi của người ấy chưa hoàn toàn tan."
-
-"Vợ/chồng/con cụ có lúc hỏi: 'Sao cứ giữ vật cũ này?' Cụ không trả lời được. Vì nếu kể, người ấy sẽ thành câu chuyện. Cụ không muốn người ấy thành câu chuyện. Người ấy là của riêng cụ thôi."
-
-[pause:800ms]
-
-"Hôm người ấy đi, cụ không có mặt. Cụ ở xa. Đường tắc. Xe muộn. Đến nơi thì đã muộn — chỉ muộn hai giờ, hoặc nửa ngày, hoặc một ngày. Nhưng vẫn muộn."
-
-"Người ấy nằm đó. Tay đặt trên ngực. Mặt bình thản. Không có gì đáng sợ. Chỉ là không còn thở."
-
-"Cụ ngồi cạnh. Cầm tay người ấy. Bàn tay đã lạnh. Da đã trắng. Cụ muốn nói: 'Con xin lỗi. Con về muộn.' Nhưng người ấy không nghe. Cụ chỉ ngồi đó. Không khóc. Không nói. Đến lúc ai đó dìu cụ đứng dậy."
+"Mẹ/bà/cha cụ đợi cụ. Cụ không về kịp."
 
 [pause:1500ms]
 
-Bác tài nhìn gương chiếu hậu một thoáng. Im lặng. Không nói câu nào.
+"Cụ đã có hai/ba mươi năm để nói câu xin lỗi. Hai/ba mươi năm đó cụ không nói được. Vì nói với ai? Mẹ/bà/cha đã đi."
 
-Trong gương chiếu hậu phía sau ghế lái, Quang thấy hai cái bóng. Một là cụ. Một là một bóng người lớn tuổi hơn, ngồi sát ngay sau cụ. Bóng người ấy đang đặt tay lên vật giống vật cụ đang giữ. Mắt nhìn xuống. Không nhìn ai. Không nói.
-
-Quang chớp mắt. Trong gương vẫn chỉ có cụ và một bóng mờ.
-
-Bác tài cất lời. Câu hỏi cũ.
-
-"Con đã nhớ ra chưa?"
-
-Cụ không quay đầu. Khẽ gật. Một cái gật rất nhỏ.
-
-"Cụ nhớ, bác."
-
-[pause:1000ms]
-
-"Cụ nhớ từ lâu lắm. Nhưng nhớ không có nghĩa là nói được. Cụ chỉ nhớ trong lòng. Mỗi đêm trước khi ngủ. Mỗi sáng khi mở mắt. Mỗi lần đi qua một quán cũ. Mỗi lần nghe một bài hát cũ. Người ấy luôn ở đó — nhưng không nói được."
+"Cụ thử nói với chính mình. Trong gương. Trong đêm khuya. Trong những lúc ngồi trên ghế gỗ ngoài hiên — chỗ mẹ/bà/cha ngày xưa ngồi."
 
 [pause:800ms]
 
-"Nhiều năm sau, cụ mới hiểu — câu chưa nói đó là gì. Lúc đầu cụ tưởng chỉ cần một câu 'con xin lỗi'. Sau nhiều năm, cụ hiểu — câu thực sự cần nói không phải xin lỗi. Mà là cảm ơn. Cảm ơn người ấy đã đợi. Cảm ơn người ấy đã không bỏ cụ lại. Cảm ơn người ấy đã ngồi yên đến phút cuối."
+"Câu 'Con xin lỗi mẹ/bà/cha' — cụ đã nói nghìn lần. Mỗi lần một chút thấm. Nhưng vẫn chưa đủ. Vì có một sự khác biệt — nói với người đã đi không giống nói với người còn sống."
 
-"Cụ đã chuẩn bị câu đó suốt nhiều năm. Tập đi tập lại trong đầu. Nhưng mỗi lần đến trước ban thờ người ấy, câu nói lại nghẹn ở cổ. Cụ chỉ thắp được nhang. Đứng yên. Cúi đầu. Rồi đi ra."
+"Với người sống, câu xin lỗi là yêu cầu được tha thứ. Với người đi, câu xin lỗi chỉ là tự an ủi. Hai câu giống nhau nhưng không giống nhau."
 
-[pause:600ms]
+[pause:1200ms]
 
-"Có những đêm cụ không ngủ được. Cụ ngồi trên giường. Cầm cây gậy trúc. Tự thì thầm với người ấy. Nói chuyện hôm nay cụ làm gì. Nói chuyện công việc. Nói chuyện con cái. Nói cả những chuyện vụn vặt — như ngày xưa hai người vẫn nói với nhau."
+(Trong đầu cụ, có một dòng chữ thầm — Quang đoán được qua nét mặt.)
 
-"Có khi cụ cảm thấy người ấy đang ở đó nghe. Có khi không. Nhưng cụ cứ nói. Vì cụ biết — nếu cụ dừng nói, người ấy sẽ tan đi thực sự."
+Cụ đang nói câu thứ nghìn mốt. Lần này không phải "Con xin lỗi". Mà là: "Mẹ/bà/cha ơi, con không xin lỗi nữa. Con cảm ơn. Cảm ơn đã đợi con tới phút cuối. Cảm ơn đã không bỏ con dù con bỏ mẹ/bà/cha."
 
-[pause:1000ms]
+[pause:1500ms]
 
-"Đêm nay cụ đem cây gậy trúc về quê. Đặt lên ban thờ. Thắp nhang. Nói: 'Con nhớ rồi. Con cảm ơn.' Có thể người ấy nghe. Có thể không. Nhưng cụ cần nói."
+Bên ngoài, gió thổi. Mưa phùn vẫn lất phất. Quang nhìn cụ qua khe ghế. Cụ không động đậy. Chỉ ngồi với cây gậy trúc trên đùi.
 
-"Cụ đã chờ đêm này lâu lắm. Năm nay cụ sẽ về."
+Trên áo cụ có một mảng ẩm — không phải mưa. Là nước mắt cụ đã rơi từ lúc nào không biết. Cụ không lau. Để mặc.
+
+[pause:1500ms]
+
+Bác tài cất lời.
+
+"Con đã nhớ ra chưa?"
+
+Cụ ngẩng đầu. Một thoáng. Rồi gật rất nhẹ.
+
+Không nói lại. Vẫn im lặng.
+
+Nhưng Quang biết — câu trả lời là "Có". Là "Có từ lâu. Chỉ chưa nói được với ai. Vì không cần nói."
+
+[pause:1200ms]
+
+(Trong đầu cụ có một câu cuối Quang đoán được:)
+
+"Đêm nay cụ đem cây gậy trúc về quê. Đặt lên ban thờ. Không thắp nhang. Không nói gì. Chỉ ngồi. Đợi. Đợi đến sáng. Như mẹ/bà/cha ngày xưa đợi cụ. Đến sáng, cụ sẽ về Hà Nội. Tiếp tục sống. Mang theo cây gậy trúc đến lượt cụ đi."
+
+"Cách thương yêu cuối cùng là im lặng. Im lặng cùng người mình thương. Im lặng cho người mình thương ngủ yên."
 
 ---
 

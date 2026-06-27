@@ -12,7 +12,7 @@ signature_setting: setting_TBD
 stop_location: ngã ba Lâm Đồng
 bell_count: 1
 ghost_manifest: 1
-auto_gen: tools/auto_gen_ep.py v2.0 (template + QA loop)
+auto_gen: tools/auto_gen_ep_v3.py v3.1 — pattern F (Monologue im lặng) (template + QA loop)
 ```
 
 ---
@@ -85,69 +85,63 @@ Anh quay đầu. Áp một vật cũ vào lòng. Mắt nhắm nhẹ.
 
 ---
 
-# REVEAL [section 4]
+# REVEAL [section 4 — Pattern F: Monologue im lặng]
 
 [pause:800ms]
 
-Anh vuốt nhẹ lên một vật cũ một lần nữa. Có mùi cũ.
+"Anh tên Dũng Anh. 36-50."
 
-"Anh tên Dũng Anh. Năm nay 36-50 tuổi."
+Giọng anh đều, gần như thì thầm.
 
-Giọng anh nhỏ. Khô. Như đọc cho chính một vật cũ nghe.
+"Đêm nay anh không kể nhiều. Câu chuyện anh ngắn lắm. Một câu thôi."
 
-"Vợ trở dạ sớm. Chồng đi công tác xa. Mẹ vợ điện báo — chồng về kịp lúc vợ đã đi."
+[pause:1000ms]
 
-[pause:600ms]
-
-"Nhiều năm qua, anh mang theo một vật cũ này. Trong túi xách. Trong cặp. Trong ba lô đi công tác. Mỗi đêm trước khi ngủ, anh lấy ra. Đặt cạnh đầu giường. Để cảm thấy hơi của người ấy chưa hoàn toàn tan."
-
-"Vợ/chồng/con anh có lúc hỏi: 'Sao cứ giữ vật cũ này?' Anh không trả lời được. Vì nếu kể, người ấy sẽ thành câu chuyện. Anh không muốn người ấy thành câu chuyện. Người ấy là của riêng anh thôi."
-
-[pause:800ms]
-
-"Hôm người ấy đi, anh không có mặt. Anh ở xa. Đường tắc. Xe muộn. Đến nơi thì đã muộn — chỉ muộn hai giờ, hoặc nửa ngày, hoặc một ngày. Nhưng vẫn muộn."
-
-"Người ấy nằm đó. Tay đặt trên ngực. Mặt bình thản. Không có gì đáng sợ. Chỉ là không còn thở."
-
-"Anh ngồi cạnh. Cầm tay người ấy. Bàn tay đã lạnh. Da đã trắng. Anh muốn nói: 'Con xin lỗi. Con về muộn.' Nhưng người ấy không nghe. Anh chỉ ngồi đó. Không khóc. Không nói. Đến lúc ai đó dìu anh đứng dậy."
+"Mẹ/bà/cha anh đợi anh. Anh không về kịp."
 
 [pause:1500ms]
 
-Bác tài nhìn gương chiếu hậu một thoáng. Im lặng. Không nói câu nào.
+"Anh đã có hai/ba mươi năm để nói câu xin lỗi. Hai/ba mươi năm đó anh không nói được. Vì nói với ai? Mẹ/bà/cha đã đi."
 
-Trong gương chiếu hậu phía sau ghế lái, Quang thấy hai cái bóng. Một là anh. Một là một bóng người lớn tuổi hơn, ngồi sát ngay sau anh. Bóng người ấy đang đặt tay lên vật giống vật anh đang giữ. Mắt nhìn xuống. Không nhìn ai. Không nói.
-
-Quang chớp mắt. Trong gương vẫn chỉ có anh và một bóng mờ.
-
-Bác tài cất lời. Câu hỏi cũ.
-
-"Con đã nhớ ra chưa?"
-
-Anh không quay đầu. Khẽ gật. Một cái gật rất nhỏ.
-
-"Anh nhớ, bác."
-
-[pause:1000ms]
-
-"Anh nhớ từ lâu lắm. Nhưng nhớ không có nghĩa là nói được. Anh chỉ nhớ trong lòng. Mỗi đêm trước khi ngủ. Mỗi sáng khi mở mắt. Mỗi lần đi qua một quán cũ. Mỗi lần nghe một bài hát cũ. Người ấy luôn ở đó — nhưng không nói được."
+"Anh thử nói với chính mình. Trong gương. Trong đêm khuya. Trong những lúc ngồi trên ghế gỗ ngoài hiên — chỗ mẹ/bà/cha ngày xưa ngồi."
 
 [pause:800ms]
 
-"Nhiều năm sau, anh mới hiểu — câu chưa nói đó là gì. Lúc đầu anh tưởng chỉ cần một câu 'con xin lỗi'. Sau nhiều năm, anh hiểu — câu thực sự cần nói không phải xin lỗi. Mà là cảm ơn. Cảm ơn người ấy đã đợi. Cảm ơn người ấy đã không bỏ anh lại. Cảm ơn người ấy đã ngồi yên đến phút cuối."
+"Câu 'Con xin lỗi mẹ/bà/cha' — anh đã nói nghìn lần. Mỗi lần một chút thấm. Nhưng vẫn chưa đủ. Vì có một sự khác biệt — nói với người đã đi không giống nói với người còn sống."
 
-"Anh đã chuẩn bị câu đó suốt nhiều năm. Tập đi tập lại trong đầu. Nhưng mỗi lần đến trước ban thờ người ấy, câu nói lại nghẹn ở cổ. Anh chỉ thắp được nhang. Đứng yên. Cúi đầu. Rồi đi ra."
+"Với người sống, câu xin lỗi là yêu cầu được tha thứ. Với người đi, câu xin lỗi chỉ là tự an ủi. Hai câu giống nhau nhưng không giống nhau."
 
-[pause:600ms]
+[pause:1200ms]
 
-"Có những đêm anh không ngủ được. Anh ngồi trên giường. Cầm một vật cũ. Tự thì thầm với người ấy. Nói chuyện hôm nay anh làm gì. Nói chuyện công việc. Nói chuyện con cái. Nói cả những chuyện vụn vặt — như ngày xưa hai người vẫn nói với nhau."
+(Trong đầu anh, có một dòng chữ thầm — Quang đoán được qua nét mặt.)
 
-"Có khi anh cảm thấy người ấy đang ở đó nghe. Có khi không. Nhưng anh cứ nói. Vì anh biết — nếu anh dừng nói, người ấy sẽ tan đi thực sự."
+Anh đang nói câu thứ nghìn mốt. Lần này không phải "Con xin lỗi". Mà là: "Mẹ/bà/cha ơi, con không xin lỗi nữa. Con cảm ơn. Cảm ơn đã đợi con tới phút cuối. Cảm ơn đã không bỏ con dù con bỏ mẹ/bà/cha."
 
-[pause:1000ms]
+[pause:1500ms]
 
-"Đêm nay anh đem một vật cũ về quê. Đặt lên ban thờ. Thắp nhang. Nói: 'Con nhớ rồi. Con cảm ơn.' Có thể người ấy nghe. Có thể không. Nhưng anh cần nói."
+Bên ngoài, gió thổi. Mưa phùn vẫn lất phất. Quang nhìn anh qua khe ghế. Anh không động đậy. Chỉ ngồi với vật trên đùi.
 
-"Anh đã chờ đêm này lâu lắm. Năm nay anh sẽ về."
+Trên áo anh có một mảng ẩm — không phải mưa. Là nước mắt anh đã rơi từ lúc nào không biết. Anh không lau. Để mặc.
+
+[pause:1500ms]
+
+Bác tài cất lời.
+
+"Con đã nhớ ra chưa?"
+
+Anh ngẩng đầu. Một thoáng. Rồi gật rất nhẹ.
+
+Không nói lại. Vẫn im lặng.
+
+Nhưng Quang biết — câu trả lời là "Có". Là "Có từ lâu. Chỉ chưa nói được với ai. Vì không cần nói."
+
+[pause:1200ms]
+
+(Trong đầu anh có một câu cuối Quang đoán được:)
+
+"Đêm nay anh đem vật về quê. Đặt lên ban thờ. Không thắp nhang. Không nói gì. Chỉ ngồi. Đợi. Đợi đến sáng. Như mẹ/bà/cha ngày xưa đợi anh. Đến sáng, anh sẽ về Hà Nội. Tiếp tục sống. Mang theo vật đến lượt anh đi."
+
+"Cách thương yêu cuối cùng là im lặng. Im lặng cùng người mình thương. Im lặng cho người mình thương ngủ yên."
 
 ---
 

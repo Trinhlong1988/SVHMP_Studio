@@ -12,7 +12,7 @@ signature_setting: setting_TBD
 stop_location: ngã ba Vĩnh Long
 bell_count: 1
 ghost_manifest: 1
-auto_gen: tools/auto_gen_ep.py v2.0 (template + QA loop)
+auto_gen: tools/auto_gen_ep_v3.py v3.1 — pattern B (Reverse POV) (template + QA loop)
 ```
 
 ---
@@ -85,69 +85,53 @@ Anh quay đầu. Áp một vật cũ vào lòng. Mắt nhắm nhẹ.
 
 ---
 
-# REVEAL [section 4]
+# REVEAL [section 4 — Pattern B: Reverse POV]
 
 [pause:800ms]
 
-Anh vuốt nhẹ lên một vật cũ một lần nữa. Có mùi cũ.
+"Anh tên Bá Nhân. 36-50. Năm nay anh ngồi đây — chỗ mẹ chồng anh ngày xưa ngồi."
 
-"Anh tên Bá Nhân. Năm nay 36-50 tuổi."
+Giọng anh chậm, không buồn.
 
-Giọng anh nhỏ. Khô. Như đọc cho chính một vật cũ nghe.
+"Mẹ chồng anh ngày anh mười tám tuổi đã dạy anh cách giữ vật này. Mẹ chồng bảo: 'Sau này con sẽ đợi. Hôm nay con học cách đợi.' Anh không tin."
 
-"10 năm đợi. Về quê — cô đã lấy chồng. Anh không trách. Chỉ tiếc đã không nói sớm."
+"Anh nghĩ — đời mình sẽ khác. Mình sẽ không phải đợi. Con cháu sẽ về."
 
 [pause:600ms]
 
-"Nhiều năm qua, anh mang theo một vật cũ này. Trong túi xách. Trong cặp. Trong ba lô đi công tác. Mỗi đêm trước khi ngủ, anh lấy ra. Đặt cạnh đầu giường. Để cảm thấy hơi của người ấy chưa hoàn toàn tan."
+"Năm nào anh cũng gọi điện cho con cả. Con cả: 'Mẹ ơi năm nay con bận công ty.' Con thứ: 'Mẹ ơi vợ con đi du lịch.' Con út: chưa từng về từ Mỹ. Cháu lớn ở Singapore. Cháu thứ ở Sài Gòn. Cháu út chưa biết đi."
 
-"Vợ/chồng/con anh có lúc hỏi: 'Sao cứ giữ vật cũ này?' Anh không trả lời được. Vì nếu kể, người ấy sẽ thành câu chuyện. Anh không muốn người ấy thành câu chuyện. Người ấy là của riêng anh thôi."
+"Mỗi câu trả lời, anh đều bình thản. Không trách. Vì anh cũng đã từng làm vậy. Năm anh ba mươi tuổi, con nhỏ, công việc bận. Anh cũng nhắn mẹ chồng: 'Mẹ ơi năm nay con không về kịp.'"
 
-[pause:800ms]
+[pause:1000ms]
 
-"Hôm người ấy đi, anh không có mặt. Anh ở xa. Đường tắc. Xe muộn. Đến nơi thì đã muộn — chỉ muộn hai giờ, hoặc nửa ngày, hoặc một ngày. Nhưng vẫn muộn."
+"Anh đã ở vị trí cả hai. Ngày xưa người không về. Bây giờ người đợi. Có cảm giác hai vị trí đều cô đơn — nhưng cô đơn theo cách khác."
 
-"Người ấy nằm đó. Tay đặt trên ngực. Mặt bình thản. Không có gì đáng sợ. Chỉ là không còn thở."
-
-"Anh ngồi cạnh. Cầm tay người ấy. Bàn tay đã lạnh. Da đã trắng. Anh muốn nói: 'Con xin lỗi. Con về muộn.' Nhưng người ấy không nghe. Anh chỉ ngồi đó. Không khóc. Không nói. Đến lúc ai đó dìu anh đứng dậy."
+"Khi mình là người đi xa, cô đơn là không có mẹ. Khi mình là người đợi, cô đơn là không có con. Cuối cùng cả hai đều cô đơn — vì ở trên đời này, ai cũng đến lượt phải đợi một ai đó không về."
 
 [pause:1500ms]
 
-Bác tài nhìn gương chiếu hậu một thoáng. Im lặng. Không nói câu nào.
+Bác tài nhìn gương chiếu hậu. Im lặng.
 
-Trong gương chiếu hậu phía sau ghế lái, Quang thấy hai cái bóng. Một là anh. Một là một bóng người lớn tuổi hơn, ngồi sát ngay sau anh. Bóng người ấy đang đặt tay lên vật giống vật anh đang giữ. Mắt nhìn xuống. Không nhìn ai. Không nói.
+Trong gương, Quang thấy hai cái bóng. Anh và một bóng phụ nữ rất già — tóc bạc gần hết, ngồi cạnh anh. Bóng phụ nữ ấy đang đặt tay lên vai anh. Một cái chạm nhẹ. Như khen ngợi.
 
-Quang chớp mắt. Trong gương vẫn chỉ có anh và một bóng mờ.
+Quang chớp mắt. Bóng phụ nữ tan.
 
-Bác tài cất lời. Câu hỏi cũ.
+Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Anh không quay đầu. Khẽ gật. Một cái gật rất nhỏ.
+Anh gật.
 
-"Anh nhớ, bác."
+"Anh nhớ, bác. Anh đã hiểu — mẹ chồng anh ngày xưa không trách anh không về. Mẹ chồng chỉ đợi. Lúc đó anh không hiểu. Giờ anh hiểu."
 
-[pause:1000ms]
+[pause:1200ms]
 
-"Anh nhớ từ lâu lắm. Nhưng nhớ không có nghĩa là nói được. Anh chỉ nhớ trong lòng. Mỗi đêm trước khi ngủ. Mỗi sáng khi mở mắt. Mỗi lần đi qua một quán cũ. Mỗi lần nghe một bài hát cũ. Người ấy luôn ở đó — nhưng không nói được."
+"Đêm nay anh đem vật về đặt lên ban thờ mẹ chồng. Cảm ơn mẹ chồng đã dạy anh cách đợi không trách. Cảm ơn mẹ chồng đã không bỏ anh lại lúc anh bỏ mẹ chồng lại."
 
-[pause:800ms]
+"Anh đã viết một câu thư từ chiều — để đặt cùng vật. Trong thư anh viết: 'Mẹ ơi con đã ngồi đúng chỗ mẹ rồi. Con xin lỗi vì ngày xưa con không hiểu. Giờ con hiểu.'"
 
-"Nhiều năm sau, anh mới hiểu — câu chưa nói đó là gì. Lúc đầu anh tưởng chỉ cần một câu 'con xin lỗi'. Sau nhiều năm, anh hiểu — câu thực sự cần nói không phải xin lỗi. Mà là cảm ơn. Cảm ơn người ấy đã đợi. Cảm ơn người ấy đã không bỏ anh lại. Cảm ơn người ấy đã ngồi yên đến phút cuối."
-
-"Anh đã chuẩn bị câu đó suốt nhiều năm. Tập đi tập lại trong đầu. Nhưng mỗi lần đến trước ban thờ người ấy, câu nói lại nghẹn ở cổ. Anh chỉ thắp được nhang. Đứng yên. Cúi đầu. Rồi đi ra."
-
-[pause:600ms]
-
-"Có những đêm anh không ngủ được. Anh ngồi trên giường. Cầm một vật cũ. Tự thì thầm với người ấy. Nói chuyện hôm nay anh làm gì. Nói chuyện công việc. Nói chuyện con cái. Nói cả những chuyện vụn vặt — như ngày xưa hai người vẫn nói với nhau."
-
-"Có khi anh cảm thấy người ấy đang ở đó nghe. Có khi không. Nhưng anh cứ nói. Vì anh biết — nếu anh dừng nói, người ấy sẽ tan đi thực sự."
-
-[pause:1000ms]
-
-"Đêm nay anh đem một vật cũ về quê. Đặt lên ban thờ. Thắp nhang. Nói: 'Con nhớ rồi. Con cảm ơn.' Có thể người ấy nghe. Có thể không. Nhưng anh cần nói."
-
-"Anh đã chờ đêm này lâu lắm. Năm nay anh sẽ về."
+"Đến lượt anh truyền lại — cho con dâu, cho cháu dâu, cho ai sau này còn chịu nghe. Cách đợi không trách.
 
 ---
 

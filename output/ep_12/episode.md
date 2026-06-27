@@ -12,7 +12,7 @@ signature_setting: setting_dem_giao_thua
 stop_location: ngã ba Phú Yên
 bell_count: 1
 ghost_manifest: 1
-auto_gen: tools/auto_gen_ep.py v2.0 (template + QA loop)
+auto_gen: tools/auto_gen_ep_v3.py v3.1 — pattern B (Reverse POV) (template + QA loop)
 ```
 
 ---
@@ -85,69 +85,53 @@ Chú quay đầu. Áp khăn tay cũ vào lòng. Mắt nhắm nhẹ.
 
 ---
 
-# REVEAL [section 4]
+# REVEAL [section 4 — Pattern B: Reverse POV]
 
 [pause:800ms]
 
-Chú vuốt nhẹ lên khăn tay cũ một lần nữa. Mùi long não, đã bạc qua nhiều năm.
+"Chú tên Hữu Trí. 66+. Năm nay chú ngồi đây — chỗ mẹ chồng chú ngày xưa ngồi."
 
-"Chú tên Hữu Trí. Năm nay 66+ tuổi."
+Giọng chú chậm, không buồn.
 
-Giọng chú nhỏ. Khô. Như đọc cho chính khăn tay cũ nghe.
+"Mẹ chồng chú ngày chú mười tám tuổi đã dạy chú cách giữ khăn tay cũ này. Mẹ chồng bảo: 'Sau này con sẽ đợi. Hôm nay con học cách đợi.' Chú không tin."
 
-"Bà gọi cháu đêm giao thừa. Cháu đang nhậu, không bắt. Rạng sáng mùng 1 bà mất. Cuộc gọi nhỡ đó là cuối cùng."
+"Chú nghĩ — đời mình sẽ khác. Mình sẽ không phải đợi. Con cháu sẽ về."
 
 [pause:600ms]
 
-"Nhiều năm qua, chú mang theo khăn tay cũ này. Trong túi xách. Trong cặp. Trong ba lô đi công tác. Mỗi đêm trước khi ngủ, chú lấy ra. Đặt cạnh đầu giường. Để cảm thấy hơi của người ấy chưa hoàn toàn tan."
+"Năm nào chú cũng gọi điện cho con cả. Con cả: 'Mẹ ơi năm nay con bận công ty.' Con thứ: 'Mẹ ơi vợ con đi du lịch.' Con út: chưa từng về từ Mỹ. Cháu lớn ở Singapore. Cháu thứ ở Sài Gòn. Cháu út chưa biết đi."
 
-"Vợ/chồng/con chú có lúc hỏi: 'Sao cứ giữ vật cũ này?' Chú không trả lời được. Vì nếu kể, người ấy sẽ thành câu chuyện. Chú không muốn người ấy thành câu chuyện. Người ấy là của riêng chú thôi."
+"Mỗi câu trả lời, chú đều bình thản. Không trách. Vì chú cũng đã từng làm vậy. Năm chú ba mươi tuổi, con nhỏ, công việc bận. Chú cũng nhắn mẹ chồng: 'Mẹ ơi năm nay con không về kịp.'"
 
-[pause:800ms]
+[pause:1000ms]
 
-"Hôm người ấy đi, chú không có mặt. Chú ở xa. Đường tắc. Xe muộn. Đến nơi thì đã muộn — chỉ muộn hai giờ, hoặc nửa ngày, hoặc một ngày. Nhưng vẫn muộn."
+"Chú đã ở vị trí cả hai. Ngày xưa người không về. Bây giờ người đợi. Có cảm giác hai vị trí đều cô đơn — nhưng cô đơn theo cách khác."
 
-"Người ấy nằm đó. Tay đặt trên ngực. Mặt bình thản. Không có gì đáng sợ. Chỉ là không còn thở."
-
-"Chú ngồi cạnh. Cầm tay người ấy. Bàn tay đã lạnh. Da đã trắng. Chú muốn nói: 'Con xin lỗi. Con về muộn.' Nhưng người ấy không nghe. Chú chỉ ngồi đó. Không khóc. Không nói. Đến lúc ai đó dìu chú đứng dậy."
+"Khi mình là người đi xa, cô đơn là không có mẹ. Khi mình là người đợi, cô đơn là không có con. Cuối cùng cả hai đều cô đơn — vì ở trên đời này, ai cũng đến lượt phải đợi một ai đó không về."
 
 [pause:1500ms]
 
-Bác tài nhìn gương chiếu hậu một thoáng. Im lặng. Không nói câu nào.
+Bác tài nhìn gương chiếu hậu. Im lặng.
 
-Trong gương chiếu hậu phía sau ghế lái, Quang thấy hai cái bóng. Một là chú. Một là một bóng người lớn tuổi hơn, ngồi sát ngay sau chú. Bóng người ấy đang đặt tay lên vật giống vật chú đang giữ. Mắt nhìn xuống. Không nhìn ai. Không nói.
+Trong gương, Quang thấy hai cái bóng. Chú và một bóng phụ nữ rất già — tóc bạc gần hết, ngồi cạnh chú. Bóng phụ nữ ấy đang đặt tay lên vai chú. Một cái chạm nhẹ. Như khen ngợi.
 
-Quang chớp mắt. Trong gương vẫn chỉ có chú và một bóng mờ.
+Quang chớp mắt. Bóng phụ nữ tan.
 
-Bác tài cất lời. Câu hỏi cũ.
+Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Chú không quay đầu. Khẽ gật. Một cái gật rất nhỏ.
+Chú gật.
 
-"Chú nhớ, bác."
+"Chú nhớ, bác. Chú đã hiểu — mẹ chồng chú ngày xưa không trách chú không về. Mẹ chồng chỉ đợi. Lúc đó chú không hiểu. Giờ chú hiểu."
 
-[pause:1000ms]
+[pause:1200ms]
 
-"Chú nhớ từ lâu lắm. Nhưng nhớ không có nghĩa là nói được. Chú chỉ nhớ trong lòng. Mỗi đêm trước khi ngủ. Mỗi sáng khi mở mắt. Mỗi lần đi qua một quán cũ. Mỗi lần nghe một bài hát cũ. Người ấy luôn ở đó — nhưng không nói được."
+"Đêm nay chú đem khăn tay cũ về đặt lên ban thờ mẹ chồng. Cảm ơn mẹ chồng đã dạy chú cách đợi không trách. Cảm ơn mẹ chồng đã không bỏ chú lại lúc chú bỏ mẹ chồng lại."
 
-[pause:800ms]
+"Chú đã viết một câu thư từ chiều — để đặt cùng khăn tay cũ. Trong thư chú viết: 'Mẹ ơi con đã ngồi đúng chỗ mẹ rồi. Con xin lỗi vì ngày xưa con không hiểu. Giờ con hiểu.'"
 
-"Nhiều năm sau, chú mới hiểu — câu chưa nói đó là gì. Lúc đầu chú tưởng chỉ cần một câu 'con xin lỗi'. Sau nhiều năm, chú hiểu — câu thực sự cần nói không phải xin lỗi. Mà là cảm ơn. Cảm ơn người ấy đã đợi. Cảm ơn người ấy đã không bỏ chú lại. Cảm ơn người ấy đã ngồi yên đến phút cuối."
-
-"Chú đã chuẩn bị câu đó suốt nhiều năm. Tập đi tập lại trong đầu. Nhưng mỗi lần đến trước ban thờ người ấy, câu nói lại nghẹn ở cổ. Chú chỉ thắp được nhang. Đứng yên. Cúi đầu. Rồi đi ra."
-
-[pause:600ms]
-
-"Có những đêm chú không ngủ được. Chú ngồi trên giường. Cầm khăn tay cũ. Tự thì thầm với người ấy. Nói chuyện hôm nay chú làm gì. Nói chuyện công việc. Nói chuyện con cái. Nói cả những chuyện vụn vặt — như ngày xưa hai người vẫn nói với nhau."
-
-"Có khi chú cảm thấy người ấy đang ở đó nghe. Có khi không. Nhưng chú cứ nói. Vì chú biết — nếu chú dừng nói, người ấy sẽ tan đi thực sự."
-
-[pause:1000ms]
-
-"Đêm nay chú đem khăn tay cũ về quê. Đặt lên ban thờ. Thắp nhang. Nói: 'Con nhớ rồi. Con cảm ơn.' Có thể người ấy nghe. Có thể không. Nhưng chú cần nói."
-
-"Chú đã chờ đêm này lâu lắm. Năm nay chú sẽ về."
+"Đến lượt chú truyền lại — cho con dâu, cho cháu dâu, cho ai sau này còn chịu nghe. Cách đợi không trách.
 
 ---
 

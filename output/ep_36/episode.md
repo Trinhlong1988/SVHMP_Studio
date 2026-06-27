@@ -12,7 +12,7 @@ signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Khánh Hoà
 bell_count: 1
 ghost_manifest: 1
-auto_gen: tools/auto_gen_ep.py v2.0 (template + QA loop)
+auto_gen: tools/auto_gen_ep_v3.py v3.1 — pattern B (Reverse POV) (template + QA loop)
 ```
 
 ---
@@ -85,69 +85,53 @@ Cô quay đầu. Áp đồng hồ xà cừ vào lòng. Mắt nhắm nhẹ.
 
 ---
 
-# REVEAL [section 4]
+# REVEAL [section 4 — Pattern B: Reverse POV]
 
 [pause:800ms]
 
-Cô vuốt nhẹ lên đồng hồ xà cừ một lần nữa. Mặt đồng hồ phẳng, có vết xước nhỏ.
+"Cô tên Hân Hậu. 36-50. Năm nay cô ngồi đây — chỗ mẹ chồng cô ngày xưa ngồi."
 
-"Cô tên Hân Hậu. Năm nay 36-50 tuổi."
+Giọng cô chậm, không buồn.
 
-Giọng cô nhỏ. Khô. Như đọc cho chính đồng hồ xà cừ nghe.
+"Mẹ chồng cô ngày cô mười tám tuổi đã dạy cô cách giữ đồng hồ xà cừ này. Mẹ chồng bảo: 'Sau này con sẽ đợi. Hôm nay con học cách đợi.' Cô không tin."
 
-"Anh thương cô từ cấp 3. 8 năm im lặng. Cô đi học bổng nước ngoài — mất trên đường về nhà người dì."
+"Cô nghĩ — đời mình sẽ khác. Mình sẽ không phải đợi. Con cháu sẽ về."
 
 [pause:600ms]
 
-"Nhiều năm qua, cô mang theo đồng hồ xà cừ này. Trong túi xách. Trong cặp. Trong ba lô đi công tác. Mỗi đêm trước khi ngủ, cô lấy ra. Đặt cạnh đầu giường. Để cảm thấy hơi của người ấy chưa hoàn toàn tan."
+"Năm nào cô cũng gọi điện cho con cả. Con cả: 'Mẹ ơi năm nay con bận công ty.' Con thứ: 'Mẹ ơi vợ con đi du lịch.' Con út: chưa từng về từ Mỹ. Cháu lớn ở Singapore. Cháu thứ ở Sài Gòn. Cháu út chưa biết đi."
 
-"Vợ/chồng/con cô có lúc hỏi: 'Sao cứ giữ vật cũ này?' Cô không trả lời được. Vì nếu kể, người ấy sẽ thành câu chuyện. Cô không muốn người ấy thành câu chuyện. Người ấy là của riêng cô thôi."
+"Mỗi câu trả lời, cô đều bình thản. Không trách. Vì cô cũng đã từng làm vậy. Năm cô ba mươi tuổi, con nhỏ, công việc bận. Cô cũng nhắn mẹ chồng: 'Mẹ ơi năm nay con không về kịp.'"
 
-[pause:800ms]
+[pause:1000ms]
 
-"Hôm người ấy đi, cô không có mặt. Cô ở xa. Đường tắc. Xe muộn. Đến nơi thì đã muộn — chỉ muộn hai giờ, hoặc nửa ngày, hoặc một ngày. Nhưng vẫn muộn."
+"Cô đã ở vị trí cả hai. Ngày xưa người không về. Bây giờ người đợi. Có cảm giác hai vị trí đều cô đơn — nhưng cô đơn theo cách khác."
 
-"Người ấy nằm đó. Tay đặt trên ngực. Mặt bình thản. Không có gì đáng sợ. Chỉ là không còn thở."
-
-"Cô ngồi cạnh. Cầm tay người ấy. Bàn tay đã lạnh. Da đã trắng. Cô muốn nói: 'Con xin lỗi. Con về muộn.' Nhưng người ấy không nghe. Cô chỉ ngồi đó. Không khóc. Không nói. Đến lúc ai đó dìu cô đứng dậy."
+"Khi mình là người đi xa, cô đơn là không có mẹ. Khi mình là người đợi, cô đơn là không có con. Cuối cùng cả hai đều cô đơn — vì ở trên đời này, ai cũng đến lượt phải đợi một ai đó không về."
 
 [pause:1500ms]
 
-Bác tài nhìn gương chiếu hậu một thoáng. Im lặng. Không nói câu nào.
+Bác tài nhìn gương chiếu hậu. Im lặng.
 
-Trong gương chiếu hậu phía sau ghế lái, Quang thấy hai cái bóng. Một là cô. Một là một bóng người lớn tuổi hơn, ngồi sát ngay sau cô. Bóng người ấy đang đặt tay lên vật giống vật cô đang giữ. Mắt nhìn xuống. Không nhìn ai. Không nói.
+Trong gương, Quang thấy hai cái bóng. Cô và một bóng phụ nữ rất già — tóc bạc gần hết, ngồi cạnh cô. Bóng phụ nữ ấy đang đặt tay lên vai cô. Một cái chạm nhẹ. Như khen ngợi.
 
-Quang chớp mắt. Trong gương vẫn chỉ có cô và một bóng mờ.
+Quang chớp mắt. Bóng phụ nữ tan.
 
-Bác tài cất lời. Câu hỏi cũ.
+Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Cô không quay đầu. Khẽ gật. Một cái gật rất nhỏ.
+Cô gật.
 
-"Cô nhớ, bác."
+"Cô nhớ, bác. Cô đã hiểu — mẹ chồng cô ngày xưa không trách cô không về. Mẹ chồng chỉ đợi. Lúc đó cô không hiểu. Giờ cô hiểu."
 
-[pause:1000ms]
+[pause:1200ms]
 
-"Cô nhớ từ lâu lắm. Nhưng nhớ không có nghĩa là nói được. Cô chỉ nhớ trong lòng. Mỗi đêm trước khi ngủ. Mỗi sáng khi mở mắt. Mỗi lần đi qua một quán cũ. Mỗi lần nghe một bài hát cũ. Người ấy luôn ở đó — nhưng không nói được."
+"Đêm nay cô đem đồng hồ xà cừ về đặt lên ban thờ mẹ chồng. Cảm ơn mẹ chồng đã dạy cô cách đợi không trách. Cảm ơn mẹ chồng đã không bỏ cô lại lúc cô bỏ mẹ chồng lại."
 
-[pause:800ms]
+"Cô đã viết một câu thư từ chiều — để đặt cùng đồng hồ xà cừ. Trong thư cô viết: 'Mẹ ơi con đã ngồi đúng chỗ mẹ rồi. Con xin lỗi vì ngày xưa con không hiểu. Giờ con hiểu.'"
 
-"Nhiều năm sau, cô mới hiểu — câu chưa nói đó là gì. Lúc đầu cô tưởng chỉ cần một câu 'con xin lỗi'. Sau nhiều năm, cô hiểu — câu thực sự cần nói không phải xin lỗi. Mà là cảm ơn. Cảm ơn người ấy đã đợi. Cảm ơn người ấy đã không bỏ cô lại. Cảm ơn người ấy đã ngồi yên đến phút cuối."
-
-"Cô đã chuẩn bị câu đó suốt nhiều năm. Tập đi tập lại trong đầu. Nhưng mỗi lần đến trước ban thờ người ấy, câu nói lại nghẹn ở cổ. Cô chỉ thắp được nhang. Đứng yên. Cúi đầu. Rồi đi ra."
-
-[pause:600ms]
-
-"Có những đêm cô không ngủ được. Cô ngồi trên giường. Cầm đồng hồ xà cừ. Tự thì thầm với người ấy. Nói chuyện hôm nay cô làm gì. Nói chuyện công việc. Nói chuyện con cái. Nói cả những chuyện vụn vặt — như ngày xưa hai người vẫn nói với nhau."
-
-"Có khi cô cảm thấy người ấy đang ở đó nghe. Có khi không. Nhưng cô cứ nói. Vì cô biết — nếu cô dừng nói, người ấy sẽ tan đi thực sự."
-
-[pause:1000ms]
-
-"Đêm nay cô đem đồng hồ xà cừ về quê. Đặt lên ban thờ. Thắp nhang. Nói: 'Con nhớ rồi. Con cảm ơn.' Có thể người ấy nghe. Có thể không. Nhưng cô cần nói."
-
-"Cô đã chờ đêm này lâu lắm. Năm nay cô sẽ về."
+"Đến lượt cô truyền lại — cho con dâu, cho cháu dâu, cho ai sau này còn chịu nghe. Cách đợi không trách.
 
 ---
 

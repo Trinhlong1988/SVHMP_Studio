@@ -12,7 +12,7 @@ signature_setting: setting_TBD
 stop_location: ngã ba Nam Định
 bell_count: 1
 ghost_manifest: 1
-auto_gen: tools/auto_gen_ep.py v2.0 (template + QA loop)
+auto_gen: tools/auto_gen_ep_v3.py v3.1 — pattern A (Linear flashback) (template + QA loop)
 ```
 
 ---
@@ -85,11 +85,11 @@ Chú quay đầu. Áp áo dài trắng vào lòng. Mắt nhắm nhẹ.
 
 ---
 
-# REVEAL [section 4]
+# REVEAL [section 4 — Pattern A: Linear flashback]
 
 [pause:800ms]
 
-Chú vuốt nhẹ lên áo dài trắng một lần nữa. Tà áo còn nguyên nếp cũ.
+Chú vuốt nhẹ nếp áo một lần nữa. Tà áo còn nguyên nếp cũ.
 
 "Chú tên Hải Nhật. Năm nay 66+ tuổi."
 
@@ -133,21 +133,7 @@ Chú không quay đầu. Khẽ gật. Một cái gật rất nhỏ.
 
 [pause:800ms]
 
-"Nhiều năm sau, chú mới hiểu — câu chưa nói đó là gì. Lúc đầu chú tưởng chỉ cần một câu 'con xin lỗi'. Sau nhiều năm, chú hiểu — câu thực sự cần nói không phải xin lỗi. Mà là cảm ơn. Cảm ơn người ấy đã đợi. Cảm ơn người ấy đã không bỏ chú lại. Cảm ơn người ấy đã ngồi yên đến phút cuối."
-
-"Chú đã chuẩn bị câu đó suốt nhiều năm. Tập đi tập lại trong đầu. Nhưng mỗi lần đến trước ban thờ người ấy, câu nói lại nghẹn ở cổ. Chú chỉ thắp được nhang. Đứng yên. Cúi đầu. Rồi đi ra."
-
-[pause:600ms]
-
-"Có những đêm chú không ngủ được. Chú ngồi trên giường. Cầm áo dài trắng. Tự thì thầm với người ấy. Nói chuyện hôm nay chú làm gì. Nói chuyện công việc. Nói chuyện con cái. Nói cả những chuyện vụn vặt — như ngày xưa hai người vẫn nói với nhau."
-
-"Có khi chú cảm thấy người ấy đang ở đó nghe. Có khi không. Nhưng chú cứ nói. Vì chú biết — nếu chú dừng nói, người ấy sẽ tan đi thực sự."
-
-[pause:1000ms]
-
-"Đêm nay chú đem áo dài trắng về quê. Đặt lên ban thờ. Thắp nhang. Nói: 'Con nhớ rồi. Con cảm ơn.' Có thể người ấy nghe. Có thể không. Nhưng chú cần nói."
-
-"Chú đã chờ đêm này lâu lắm. Năm nay chú sẽ về."
+"Đêm nay chú đem áo dài trắng về quê. Đặt lên ban thờ. Thắp nhang. Nói: 'Con nhớ rồi. Con xin lỗi.' Có thể người ấy nghe. Có thể không. Nhưng chú cần nói."
 
 ---
 

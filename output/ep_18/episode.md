@@ -12,7 +12,7 @@ signature_setting: setting_TBD
 stop_location: ngã ba Lạng Sơn
 bell_count: 1
 ghost_manifest: 1
-auto_gen: tools/auto_gen_ep.py v2.0 (template + QA loop)
+auto_gen: tools/auto_gen_ep_v3.py v3.1 — pattern B (Reverse POV) (template + QA loop)
 ```
 
 ---
@@ -85,69 +85,53 @@ Cụ quay đầu. Áp cây bút máy vào lòng. Mắt nhắm nhẹ.
 
 ---
 
-# REVEAL [section 4]
+# REVEAL [section 4 — Pattern B: Reverse POV]
 
 [pause:800ms]
 
-Cụ vuốt nhẹ lên cây bút máy một lần nữa. Thân bút trơn, có dấu tay người dùng nhiều.
+"Cụ tên Hồng Hạnh. 66+. Năm nay cụ ngồi đây — chỗ mẹ chồng cụ ngày xưa ngồi."
 
-"Cụ tên Hồng Hạnh. Năm nay 66+ tuổi."
+Giọng cụ chậm, không buồn.
 
-Giọng cụ nhỏ. Khô. Như đọc cho chính cây bút máy nghe.
+"Mẹ chồng cụ ngày cụ mười tám tuổi đã dạy cụ cách giữ cây bút máy này. Mẹ chồng bảo: 'Sau này con sẽ đợi. Hôm nay con học cách đợi.' Cụ không tin."
 
-"Cha cả đời không nói. Con tưởng cha lạnh lùng. Cha mất, con đọc nhật ký cha — mỗi trang đều viết về con."
+"Cụ nghĩ — đời mình sẽ khác. Mình sẽ không phải đợi. Con cháu sẽ về."
 
 [pause:600ms]
 
-"Nhiều năm qua, cụ mang theo cây bút máy này. Trong túi xách. Trong cặp. Trong ba lô đi công tác. Mỗi đêm trước khi ngủ, cụ lấy ra. Đặt cạnh đầu giường. Để cảm thấy hơi của người ấy chưa hoàn toàn tan."
+"Năm nào cụ cũng gọi điện cho con cả. Con cả: 'Mẹ ơi năm nay con bận công ty.' Con thứ: 'Mẹ ơi vợ con đi du lịch.' Con út: chưa từng về từ Mỹ. Cháu lớn ở Singapore. Cháu thứ ở Sài Gòn. Cháu út chưa biết đi."
 
-"Vợ/chồng/con cụ có lúc hỏi: 'Sao cứ giữ vật cũ này?' Cụ không trả lời được. Vì nếu kể, người ấy sẽ thành câu chuyện. Cụ không muốn người ấy thành câu chuyện. Người ấy là của riêng cụ thôi."
+"Mỗi câu trả lời, cụ đều bình thản. Không trách. Vì cụ cũng đã từng làm vậy. Năm cụ ba mươi tuổi, con nhỏ, công việc bận. Cụ cũng nhắn mẹ chồng: 'Mẹ ơi năm nay con không về kịp.'"
 
-[pause:800ms]
+[pause:1000ms]
 
-"Hôm người ấy đi, cụ không có mặt. Cụ ở xa. Đường tắc. Xe muộn. Đến nơi thì đã muộn — chỉ muộn hai giờ, hoặc nửa ngày, hoặc một ngày. Nhưng vẫn muộn."
+"Cụ đã ở vị trí cả hai. Ngày xưa người không về. Bây giờ người đợi. Có cảm giác hai vị trí đều cô đơn — nhưng cô đơn theo cách khác."
 
-"Người ấy nằm đó. Tay đặt trên ngực. Mặt bình thản. Không có gì đáng sợ. Chỉ là không còn thở."
-
-"Cụ ngồi cạnh. Cầm tay người ấy. Bàn tay đã lạnh. Da đã trắng. Cụ muốn nói: 'Con xin lỗi. Con về muộn.' Nhưng người ấy không nghe. Cụ chỉ ngồi đó. Không khóc. Không nói. Đến lúc ai đó dìu cụ đứng dậy."
+"Khi mình là người đi xa, cô đơn là không có mẹ. Khi mình là người đợi, cô đơn là không có con. Cuối cùng cả hai đều cô đơn — vì ở trên đời này, ai cũng đến lượt phải đợi một ai đó không về."
 
 [pause:1500ms]
 
-Bác tài nhìn gương chiếu hậu một thoáng. Im lặng. Không nói câu nào.
+Bác tài nhìn gương chiếu hậu. Im lặng.
 
-Trong gương chiếu hậu phía sau ghế lái, Quang thấy hai cái bóng. Một là cụ. Một là một bóng người lớn tuổi hơn, ngồi sát ngay sau cụ. Bóng người ấy đang đặt tay lên vật giống vật cụ đang giữ. Mắt nhìn xuống. Không nhìn ai. Không nói.
+Trong gương, Quang thấy hai cái bóng. Cụ và một bóng phụ nữ rất già — tóc bạc gần hết, ngồi cạnh cụ. Bóng phụ nữ ấy đang đặt tay lên vai cụ. Một cái chạm nhẹ. Như khen ngợi.
 
-Quang chớp mắt. Trong gương vẫn chỉ có cụ và một bóng mờ.
+Quang chớp mắt. Bóng phụ nữ tan.
 
-Bác tài cất lời. Câu hỏi cũ.
+Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Cụ không quay đầu. Khẽ gật. Một cái gật rất nhỏ.
+Cụ gật.
 
-"Cụ nhớ, bác."
+"Cụ nhớ, bác. Cụ đã hiểu — mẹ chồng cụ ngày xưa không trách cụ không về. Mẹ chồng chỉ đợi. Lúc đó cụ không hiểu. Giờ cụ hiểu."
 
-[pause:1000ms]
+[pause:1200ms]
 
-"Cụ nhớ từ lâu lắm. Nhưng nhớ không có nghĩa là nói được. Cụ chỉ nhớ trong lòng. Mỗi đêm trước khi ngủ. Mỗi sáng khi mở mắt. Mỗi lần đi qua một quán cũ. Mỗi lần nghe một bài hát cũ. Người ấy luôn ở đó — nhưng không nói được."
+"Đêm nay cụ đem cây bút máy về đặt lên ban thờ mẹ chồng. Cảm ơn mẹ chồng đã dạy cụ cách đợi không trách. Cảm ơn mẹ chồng đã không bỏ cụ lại lúc cụ bỏ mẹ chồng lại."
 
-[pause:800ms]
+"Cụ đã viết một câu thư từ chiều — để đặt cùng cây bút máy. Trong thư cụ viết: 'Mẹ ơi con đã ngồi đúng chỗ mẹ rồi. Con xin lỗi vì ngày xưa con không hiểu. Giờ con hiểu.'"
 
-"Nhiều năm sau, cụ mới hiểu — câu chưa nói đó là gì. Lúc đầu cụ tưởng chỉ cần một câu 'con xin lỗi'. Sau nhiều năm, cụ hiểu — câu thực sự cần nói không phải xin lỗi. Mà là cảm ơn. Cảm ơn người ấy đã đợi. Cảm ơn người ấy đã không bỏ cụ lại. Cảm ơn người ấy đã ngồi yên đến phút cuối."
-
-"Cụ đã chuẩn bị câu đó suốt nhiều năm. Tập đi tập lại trong đầu. Nhưng mỗi lần đến trước ban thờ người ấy, câu nói lại nghẹn ở cổ. Cụ chỉ thắp được nhang. Đứng yên. Cúi đầu. Rồi đi ra."
-
-[pause:600ms]
-
-"Có những đêm cụ không ngủ được. Cụ ngồi trên giường. Cầm cây bút máy. Tự thì thầm với người ấy. Nói chuyện hôm nay cụ làm gì. Nói chuyện công việc. Nói chuyện con cái. Nói cả những chuyện vụn vặt — như ngày xưa hai người vẫn nói với nhau."
-
-"Có khi cụ cảm thấy người ấy đang ở đó nghe. Có khi không. Nhưng cụ cứ nói. Vì cụ biết — nếu cụ dừng nói, người ấy sẽ tan đi thực sự."
-
-[pause:1000ms]
-
-"Đêm nay cụ đem cây bút máy về quê. Đặt lên ban thờ. Thắp nhang. Nói: 'Con nhớ rồi. Con cảm ơn.' Có thể người ấy nghe. Có thể không. Nhưng cụ cần nói."
-
-"Cụ đã chờ đêm này lâu lắm. Năm nay cụ sẽ về."
+"Đến lượt cụ truyền lại — cho con dâu, cho cháu dâu, cho ai sau này còn chịu nghe. Cách đợi không trách.
 
 ---
 

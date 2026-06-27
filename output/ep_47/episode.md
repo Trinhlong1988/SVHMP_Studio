@@ -12,7 +12,7 @@ signature_setting: setting_TBD
 stop_location: ngã ba Bến Tre
 bell_count: 1
 ghost_manifest: 1
-auto_gen: tools/auto_gen_ep.py v2.0 (template + QA loop)
+auto_gen: tools/auto_gen_ep_v3.py v3.1 — pattern A (Linear flashback) (template + QA loop)
 ```
 
 ---
@@ -85,21 +85,21 @@ Cô quay đầu. Áp một vật cũ vào lòng. Mắt nhắm nhẹ.
 
 ---
 
-# REVEAL [section 4]
+# REVEAL [section 4 — Pattern A: Linear flashback]
 
 [pause:800ms]
 
-Cô vuốt nhẹ lên một vật cũ một lần nữa. Có mùi cũ.
+Cô vuốt nhẹ một lần nữa. Cũ.
 
 "Cô tên Liên Thư. Năm nay 26-35 tuổi."
 
-Giọng cô nhỏ. Khô. Như đọc cho chính một vật cũ nghe.
+Giọng cô nhỏ. Khô. Như đọc cho chính vật nghe.
 
 "10 năm đợi. Về quê — cô đã lấy chồng. Anh không trách. Chỉ tiếc đã không nói sớm."
 
 [pause:600ms]
 
-"Nhiều năm qua, cô mang theo một vật cũ này. Trong túi xách. Trong cặp. Trong ba lô đi công tác. Mỗi đêm trước khi ngủ, cô lấy ra. Đặt cạnh đầu giường. Để cảm thấy hơi của người ấy chưa hoàn toàn tan."
+"Nhiều năm qua, cô mang theo vật này. Trong túi xách. Trong cặp. Trong ba lô đi công tác. Mỗi đêm trước khi ngủ, cô lấy ra. Đặt cạnh đầu giường. Để cảm thấy hơi của người ấy chưa hoàn toàn tan."
 
 "Vợ/chồng/con cô có lúc hỏi: 'Sao cứ giữ vật cũ này?' Cô không trả lời được. Vì nếu kể, người ấy sẽ thành câu chuyện. Cô không muốn người ấy thành câu chuyện. Người ấy là của riêng cô thôi."
 
@@ -133,21 +133,7 @@ Cô không quay đầu. Khẽ gật. Một cái gật rất nhỏ.
 
 [pause:800ms]
 
-"Nhiều năm sau, cô mới hiểu — câu chưa nói đó là gì. Lúc đầu cô tưởng chỉ cần một câu 'con xin lỗi'. Sau nhiều năm, cô hiểu — câu thực sự cần nói không phải xin lỗi. Mà là cảm ơn. Cảm ơn người ấy đã đợi. Cảm ơn người ấy đã không bỏ cô lại. Cảm ơn người ấy đã ngồi yên đến phút cuối."
-
-"Cô đã chuẩn bị câu đó suốt nhiều năm. Tập đi tập lại trong đầu. Nhưng mỗi lần đến trước ban thờ người ấy, câu nói lại nghẹn ở cổ. Cô chỉ thắp được nhang. Đứng yên. Cúi đầu. Rồi đi ra."
-
-[pause:600ms]
-
-"Có những đêm cô không ngủ được. Cô ngồi trên giường. Cầm một vật cũ. Tự thì thầm với người ấy. Nói chuyện hôm nay cô làm gì. Nói chuyện công việc. Nói chuyện con cái. Nói cả những chuyện vụn vặt — như ngày xưa hai người vẫn nói với nhau."
-
-"Có khi cô cảm thấy người ấy đang ở đó nghe. Có khi không. Nhưng cô cứ nói. Vì cô biết — nếu cô dừng nói, người ấy sẽ tan đi thực sự."
-
-[pause:1000ms]
-
-"Đêm nay cô đem một vật cũ về quê. Đặt lên ban thờ. Thắp nhang. Nói: 'Con nhớ rồi. Con cảm ơn.' Có thể người ấy nghe. Có thể không. Nhưng cô cần nói."
-
-"Cô đã chờ đêm này lâu lắm. Năm nay cô sẽ về."
+"Đêm nay cô đem vật về quê. Đặt lên ban thờ. Thắp nhang. Nói: 'Con nhớ rồi. Con xin lỗi.' Có thể người ấy nghe. Có thể không. Nhưng cô cần nói."
 
 ---
 

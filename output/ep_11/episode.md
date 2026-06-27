@@ -12,7 +12,7 @@ signature_setting: setting_dong_lanh
 stop_location: ngã ba Hà Tĩnh
 bell_count: 1
 ghost_manifest: 1
-auto_gen: tools/auto_gen_ep.py v2.0 (template + QA loop)
+auto_gen: tools/auto_gen_ep_v3.py v3.1 — pattern A (Linear flashback) (template + QA loop)
 ```
 
 ---
@@ -85,11 +85,11 @@ Cụ quay đầu. Áp băng cassette cũ vào lòng. Mắt nhắm nhẹ.
 
 ---
 
-# REVEAL [section 4]
+# REVEAL [section 4 — Pattern A: Linear flashback]
 
 [pause:800ms]
 
-Cụ vuốt nhẹ lên băng cassette cũ một lần nữa. Mặt vỏ có chữ viết tay người già.
+Cụ vuốt nhẹ vỏ băng một lần nữa. Mặt vỏ có chữ viết tay người già.
 
 "Cụ tên Châu Quỳnh. Năm nay 51-65 tuổi."
 
@@ -133,21 +133,7 @@ Cụ không quay đầu. Khẽ gật. Một cái gật rất nhỏ.
 
 [pause:800ms]
 
-"Nhiều năm sau, cụ mới hiểu — câu chưa nói đó là gì. Lúc đầu cụ tưởng chỉ cần một câu 'con xin lỗi'. Sau nhiều năm, cụ hiểu — câu thực sự cần nói không phải xin lỗi. Mà là cảm ơn. Cảm ơn người ấy đã đợi. Cảm ơn người ấy đã không bỏ cụ lại. Cảm ơn người ấy đã ngồi yên đến phút cuối."
-
-"Cụ đã chuẩn bị câu đó suốt nhiều năm. Tập đi tập lại trong đầu. Nhưng mỗi lần đến trước ban thờ người ấy, câu nói lại nghẹn ở cổ. Cụ chỉ thắp được nhang. Đứng yên. Cúi đầu. Rồi đi ra."
-
-[pause:600ms]
-
-"Có những đêm cụ không ngủ được. Cụ ngồi trên giường. Cầm băng cassette cũ. Tự thì thầm với người ấy. Nói chuyện hôm nay cụ làm gì. Nói chuyện công việc. Nói chuyện con cái. Nói cả những chuyện vụn vặt — như ngày xưa hai người vẫn nói với nhau."
-
-"Có khi cụ cảm thấy người ấy đang ở đó nghe. Có khi không. Nhưng cụ cứ nói. Vì cụ biết — nếu cụ dừng nói, người ấy sẽ tan đi thực sự."
-
-[pause:1000ms]
-
-"Đêm nay cụ đem băng cassette cũ về quê. Đặt lên ban thờ. Thắp nhang. Nói: 'Con nhớ rồi. Con cảm ơn.' Có thể người ấy nghe. Có thể không. Nhưng cụ cần nói."
-
-"Cụ đã chờ đêm này lâu lắm. Năm nay cụ sẽ về."
+"Đêm nay cụ đem băng cassette cũ về quê. Đặt lên ban thờ. Thắp nhang. Nói: 'Con nhớ rồi. Con xin lỗi.' Có thể người ấy nghe. Có thể không. Nhưng cụ cần nói."
 
 ---
 

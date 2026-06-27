@@ -12,7 +12,7 @@ signature_setting: setting_TBD
 stop_location: ngã ba Ninh Thuận
 bell_count: 1
 ghost_manifest: 1
-auto_gen: tools/auto_gen_ep.py v2.0 (template + QA loop)
+auto_gen: tools/auto_gen_ep_v3.py v3.1 — pattern D (Object-first) (template + QA loop)
 ```
 
 ---
@@ -85,69 +85,57 @@ Em quay đầu. Áp một vật cũ vào lòng. Mắt nhắm nhẹ.
 
 ---
 
-# REVEAL [section 4]
+# REVEAL [section 4 — Pattern D: Object-first]
 
 [pause:800ms]
 
-Em vuốt nhẹ lên một vật cũ một lần nữa. Có mùi cũ.
+Em đặt vật lên đùi. Tay đi qua từng chi tiết.
 
-"Em tên Gia Khôi. Năm nay 18-25 tuổi."
+"Em tên Gia Khôi. 18-25. Nhưng đêm nay em không kể chuyện em. Em kể chuyện vật này."
 
-Giọng em nhỏ. Khô. Như đọc cho chính một vật cũ nghe.
-
-"Vợ trở dạ sớm. Chồng đi công tác xa. Mẹ vợ điện báo — chồng về kịp lúc vợ đã đi."
+"Vật này là của mẹ. Mẹ mua/đan/giữ không biết bao nhiêu năm rồi. Chỉ biết mẹ luôn dùng. Mỗi ngày. Mỗi tuần. Mỗi mùa Tết. Vật đã thấy nhiều thứ."
 
 [pause:600ms]
 
-"Nhiều năm qua, em mang theo một vật cũ này. Trong túi xách. Trong cặp. Trong ba lô đi công tác. Mỗi đêm trước khi ngủ, em lấy ra. Đặt cạnh đầu giường. Để cảm thấy hơi của người ấy chưa hoàn toàn tan."
+"Vết xước này ở góc — là năm mẹ bốn mươi tuổi. Mẹ vô tình làm. Mẹ cười. Bảo: 'Vết xước cũng đẹp.' Sau đó mỗi lần mẹ dùng, mẹ đều chạm vào vết xước — như chạm vào kỷ niệm."
 
-"Vợ/chồng/con em có lúc hỏi: 'Sao cứ giữ vật cũ này?' Em không trả lời được. Vì nếu kể, người ấy sẽ thành câu chuyện. Em không muốn người ấy thành câu chuyện. Người ấy là của riêng em thôi."
+"Vết nhỏ hơn — là năm em mười lăm tuổi. Em vô tình làm khi giúp mẹ. Mẹ giật mình. Nhưng không la em. Mẹ chỉ bảo: 'Bây giờ vật này có hai vết xước. Hai mẹ con đều có dấu trên đó.'"
 
 [pause:800ms]
 
-"Hôm người ấy đi, em không có mặt. Em ở xa. Đường tắc. Xe muộn. Đến nơi thì đã muộn — chỉ muộn hai giờ, hoặc nửa ngày, hoặc một ngày. Nhưng vẫn muộn."
+"Mảng sờn ở mép — là chỗ mẹ vẫn cầm. Bàn tay mẹ qua nhiều năm đã làm mòn chỗ đó. Cứ chạm vào mảng sờn, em cảm thấy hơi tay mẹ — dù mẹ không còn."
 
-"Người ấy nằm đó. Tay đặt trên ngực. Mặt bình thản. Không có gì đáng sợ. Chỉ là không còn thở."
+"Vết ố nhỏ ở giữa — là ngày sinh nhật bốn mươi của em. Mẹ làm vô tình. Cũng cười. Bảo: 'Mỗi vết là một câu chuyện.'"
 
-"Em ngồi cạnh. Cầm tay người ấy. Bàn tay đã lạnh. Da đã trắng. Em muốn nói: 'Con xin lỗi. Con về muộn.' Nhưng người ấy không nghe. Em chỉ ngồi đó. Không khóc. Không nói. Đến lúc ai đó dìu em đứng dậy."
+[pause:1000ms]
+
+"Vết dài này — là vết nứt mới. Là năm mẹ đi. Mẹ ngã. Vật rơi. Nứt thêm. Khi em thu xếp đồ mẹ, em cầm lên — thấy vết nứt mới. Em hiểu — mẹ vừa đi."
+
+"Tay em run khi cầm lên. Nhưng em không khóc được. Chỉ đặt vật vào ngực. Nghe nhịp tim mình qua vật."
 
 [pause:1500ms]
 
-Bác tài nhìn gương chiếu hậu một thoáng. Im lặng. Không nói câu nào.
+"Đêm nay em đem vật này theo. Mỗi vết trên đó là một câu chuyện của mẹ và em. Em không cần kể nhiều bằng lời. Vật kể giúp em."
 
-Trong gương chiếu hậu phía sau ghế lái, Quang thấy hai cái bóng. Một là em. Một là một bóng người lớn tuổi hơn, ngồi sát ngay sau em. Bóng người ấy đang đặt tay lên vật giống vật em đang giữ. Mắt nhìn xuống. Không nhìn ai. Không nói.
+Bác tài nhìn gương chiếu hậu. Im lặng.
 
-Quang chớp mắt. Trong gương vẫn chỉ có em và một bóng mờ.
+Trong gương, Quang thấy hai cái bóng. Em và một bóng phụ nữ trung niên — đang đặt tay lên vật cùng em. Hai bàn tay chồng lên nhau. Hai mẹ con cùng cầm.
 
-Bác tài cất lời. Câu hỏi cũ.
+Quang chớp mắt. Bóng tan.
+
+Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Em không quay đầu. Khẽ gật. Một cái gật rất nhỏ.
-
-"Em nhớ, bác."
+Em gật. "Em nhớ. Mẹ nói chuyện qua vật. Không cần lời."
 
 [pause:1000ms]
 
-"Em nhớ từ lâu lắm. Nhưng nhớ không có nghĩa là nói được. Em chỉ nhớ trong lòng. Mỗi đêm trước khi ngủ. Mỗi sáng khi mở mắt. Mỗi lần đi qua một quán cũ. Mỗi lần nghe một bài hát cũ. Người ấy luôn ở đó — nhưng không nói được."
+"Đêm nay em đem vật này về quê. Đặt lên ban thờ mẹ. Để tay mẹ cuối cùng cũng cầm vật một lần nữa."
 
-[pause:800ms]
+"Sau này khi em đi, em sẽ truyền vật này cho con. Con em không hiểu hết các vết. Nhưng con sẽ giữ. Đến lượt con vô tình làm thêm một vết. Vết của thế hệ con."
 
-"Nhiều năm sau, em mới hiểu — câu chưa nói đó là gì. Lúc đầu em tưởng chỉ cần một câu 'con xin lỗi'. Sau nhiều năm, em hiểu — câu thực sự cần nói không phải xin lỗi. Mà là cảm ơn. Cảm ơn người ấy đã đợi. Cảm ơn người ấy đã không bỏ em lại. Cảm ơn người ấy đã ngồi yên đến phút cuối."
-
-"Em đã chuẩn bị câu đó suốt nhiều năm. Tập đi tập lại trong đầu. Nhưng mỗi lần đến trước ban thờ người ấy, câu nói lại nghẹn ở cổ. Em chỉ thắp được nhang. Đứng yên. Cúi đầu. Rồi đi ra."
-
-[pause:600ms]
-
-"Có những đêm em không ngủ được. Em ngồi trên giường. Cầm một vật cũ. Tự thì thầm với người ấy. Nói chuyện hôm nay em làm gì. Nói chuyện công việc. Nói chuyện con cái. Nói cả những chuyện vụn vặt — như ngày xưa hai người vẫn nói với nhau."
-
-"Có khi em cảm thấy người ấy đang ở đó nghe. Có khi không. Nhưng em cứ nói. Vì em biết — nếu em dừng nói, người ấy sẽ tan đi thực sự."
-
-[pause:1000ms]
-
-"Đêm nay em đem một vật cũ về quê. Đặt lên ban thờ. Thắp nhang. Nói: 'Con nhớ rồi. Con cảm ơn.' Có thể người ấy nghe. Có thể không. Nhưng em cần nói."
-
-"Em đã chờ đêm này lâu lắm. Năm nay em sẽ về."
+"Cứ thế. Vật được truyền. Vết được thêm. Câu chuyện được kể qua các thế hệ — không bằng lời."
 
 ---
 

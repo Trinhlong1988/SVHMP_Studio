@@ -12,7 +12,7 @@ signature_setting: setting_san_bay_dem
 stop_location: ngã ba Phú Yên Tuy
 bell_count: 1
 ghost_manifest: 1
-auto_gen: tools/auto_gen_ep.py v2.0 (template + QA loop)
+auto_gen: tools/auto_gen_ep_v3.py v3.1 — pattern C (Letter framing) (template + QA loop)
 ```
 
 ---
@@ -85,69 +85,61 @@ Chú quay đầu. Áp áo gió xanh vào lòng. Mắt nhắm nhẹ.
 
 ---
 
-# REVEAL [section 4]
+# REVEAL [section 4 — Pattern C: Letter framing]
 
 [pause:800ms]
 
-Chú vuốt nhẹ lên áo gió xanh một lần nữa. Mặt vải mỏng, ấm vừa đủ.
+Chú mở một xấp giấy nhỏ — buộc bằng dải băng đỏ — lấy ra từ áo gió xanh. Giấy đã ố vàng. Chữ viết tay người già, nét run.
 
-"Chú tên Tấn Phát. Năm nay 51-65 tuổi."
-
-Giọng chú nhỏ. Khô. Như đọc cho chính áo gió xanh nghe.
-
-"Anh thương cô từ cấp 3. 8 năm im lặng. Cô đi học bổng nước ngoài — mất trên đường về nhà người dì."
+"Chú tên Tấn Phát. 51-65. Chú đem theo xấp thư của mẹ/bà/cha chú. Mẹ/bà/cha viết cho chú qua nhiều năm — nhưng nhiều thư chú chưa kịp đọc khi còn sống."
 
 [pause:600ms]
 
-"Nhiều năm qua, chú mang theo áo gió xanh này. Trong túi xách. Trong cặp. Trong ba lô đi công tác. Mỗi đêm trước khi ngủ, chú lấy ra. Đặt cạnh đầu giường. Để cảm thấy hơi của người ấy chưa hoàn toàn tan."
+Chú đọc lá thư đầu tiên — giọng nhỏ, đủ Quang nghe được.
 
-"Vợ/chồng/con chú có lúc hỏi: 'Sao cứ giữ vật cũ này?' Chú không trả lời được. Vì nếu kể, người ấy sẽ thành câu chuyện. Chú không muốn người ấy thành câu chuyện. Người ấy là của riêng chú thôi."
+"'Tấn Phát ơi, hôm nay là sinh nhật mười tám tuổi của con. Mẹ không gửi tiền được — tháng này mẹ đang khám bệnh. Mẹ xin lỗi.'"
+
+"'Mẹ chỉ có lá thư này. Mẹ muốn nói với con vài điều — phòng khi mẹ không còn cơ hội.'"
+
+"'Mẹ tự hào về con. Con đã đi xa, học hành tốt. Mẹ vui. Nhưng mẹ cũng nhớ con lắm.'"
 
 [pause:800ms]
 
-"Hôm người ấy đi, chú không có mặt. Chú ở xa. Đường tắc. Xe muộn. Đến nơi thì đã muộn — chỉ muộn hai giờ, hoặc nửa ngày, hoặc một ngày. Nhưng vẫn muộn."
+"'Mẹ muốn nói với con: dù sau này mẹ không còn, con đừng buồn nhiều. Mẹ luôn ở bên con. Trong mỗi bữa cơm con ăn. Trong mỗi đêm con ngủ. Mẹ ở đó.'"
 
-"Người ấy nằm đó. Tay đặt trên ngực. Mặt bình thản. Không có gì đáng sợ. Chỉ là không còn thở."
+"'Nếu có một ngày con quên mẹ — mẹ không trách. Đời con dài, con phải sống tiếp. Nhưng nếu có lúc nào đó con nhớ — mẹ cũng đang nhớ con.'"
 
-"Chú ngồi cạnh. Cầm tay người ấy. Bàn tay đã lạnh. Da đã trắng. Chú muốn nói: 'Con xin lỗi. Con về muộn.' Nhưng người ấy không nghe. Chú chỉ ngồi đó. Không khóc. Không nói. Đến lúc ai đó dìu chú đứng dậy."
+"'Mẹ ký: Mẹ của con.'"
 
 [pause:1500ms]
 
-Bác tài nhìn gương chiếu hậu một thoáng. Im lặng. Không nói câu nào.
+Chú gấp thư. Áp lên ngực. Nhắm mắt.
 
-Trong gương chiếu hậu phía sau ghế lái, Quang thấy hai cái bóng. Một là chú. Một là một bóng người lớn tuổi hơn, ngồi sát ngay sau chú. Bóng người ấy đang đặt tay lên vật giống vật chú đang giữ. Mắt nhìn xuống. Không nhìn ai. Không nói.
+"Lá thư này đến tay chú sau khi mẹ đi rồi một tuần. Bưu điện chậm. Hoặc chú chậm về."
 
-Quang chớp mắt. Trong gương vẫn chỉ có chú và một bóng mờ.
+"Chú đã đọc lá thư này nhiều lần qua các năm. Mỗi năm đọc lại, hiểu thêm một chút. Năm đầu — chú khóc nhiều. Năm hai ba — chú im. Năm năm — chú cảm ơn. Năm mười — chú hiểu mẹ đã chuẩn bị câu này lâu lắm trước khi viết."
 
-Bác tài cất lời. Câu hỏi cũ.
+[pause:1000ms]
+
+"Trong xấp này còn nhiều thư nữa — thư mẹ viết qua các năm. Có thư mẹ viết vào ngày chú thi đại học. Thư mẹ viết ngày chú đi làm xa. Thư mẹ viết ngày chú cưới. Mỗi thư là một câu mẹ chưa kịp nói trực tiếp."
+
+"Năm nay chú đem cả xấp về quê đặt lên mộ mẹ. Trả lời từng thư bằng cách đặt thư bên cạnh mẹ. Là cách chú nói: 'Con đã đọc rồi mẹ. Con cảm ơn.'"
+
+[pause:1500ms]
+
+Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Chú không quay đầu. Khẽ gật. Một cái gật rất nhỏ.
-
-"Chú nhớ, bác."
-
-[pause:1000ms]
-
-"Chú nhớ từ lâu lắm. Nhưng nhớ không có nghĩa là nói được. Chú chỉ nhớ trong lòng. Mỗi đêm trước khi ngủ. Mỗi sáng khi mở mắt. Mỗi lần đi qua một quán cũ. Mỗi lần nghe một bài hát cũ. Người ấy luôn ở đó — nhưng không nói được."
+Chú gật. Không nói thêm.
 
 [pause:800ms]
 
-"Nhiều năm sau, chú mới hiểu — câu chưa nói đó là gì. Lúc đầu chú tưởng chỉ cần một câu 'con xin lỗi'. Sau nhiều năm, chú hiểu — câu thực sự cần nói không phải xin lỗi. Mà là cảm ơn. Cảm ơn người ấy đã đợi. Cảm ơn người ấy đã không bỏ chú lại. Cảm ơn người ấy đã ngồi yên đến phút cuối."
+"Chú cũng đã viết một lá thư hồi đáp mẹ — viết tay, dài năm trang. Chú viết đêm qua, ngủ chỉ ba tiếng. Trong thư chú kể hết: kể về cuộc đời chú sau khi mẹ đi. Kể về vợ/chồng chú, về con chú, về việc chú làm. Kể cả những điều chú chưa bao giờ kể với ai."
 
-"Chú đã chuẩn bị câu đó suốt nhiều năm. Tập đi tập lại trong đầu. Nhưng mỗi lần đến trước ban thờ người ấy, câu nói lại nghẹn ở cổ. Chú chỉ thắp được nhang. Đứng yên. Cúi đầu. Rồi đi ra."
+"Lá thư này chú sẽ đốt trên mộ mẹ — để mẹ đọc."
 
-[pause:600ms]
-
-"Có những đêm chú không ngủ được. Chú ngồi trên giường. Cầm áo gió xanh. Tự thì thầm với người ấy. Nói chuyện hôm nay chú làm gì. Nói chuyện công việc. Nói chuyện con cái. Nói cả những chuyện vụn vặt — như ngày xưa hai người vẫn nói với nhau."
-
-"Có khi chú cảm thấy người ấy đang ở đó nghe. Có khi không. Nhưng chú cứ nói. Vì chú biết — nếu chú dừng nói, người ấy sẽ tan đi thực sự."
-
-[pause:1000ms]
-
-"Đêm nay chú đem áo gió xanh về quê. Đặt lên ban thờ. Thắp nhang. Nói: 'Con nhớ rồi. Con cảm ơn.' Có thể người ấy nghe. Có thể không. Nhưng chú cần nói."
-
-"Chú đã chờ đêm này lâu lắm. Năm nay chú sẽ về."
+"Chú biết — đốt thư không gửi được đến mẹ. Nhưng chú cần đốt. Đốt là cách chú giải phóng câu chuyện đã giữ trong lòng quá lâu."
 
 ---
 

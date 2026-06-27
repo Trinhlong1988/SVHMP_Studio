@@ -12,7 +12,7 @@ signature_setting: setting_TBD
 stop_location: ngã ba Ninh Bình
 bell_count: 1
 ghost_manifest: 1
-auto_gen: tools/auto_gen_ep.py v2.0 (template + QA loop)
+auto_gen: tools/auto_gen_ep_v3.py v3.1 — pattern E (Multi-POV) (template + QA loop)
 ```
 
 ---
@@ -85,69 +85,71 @@ Em quay đầu. Áp cuốn sổ ghi chép vào lòng. Mắt nhắm nhẹ.
 
 ---
 
-# REVEAL [section 4]
+# REVEAL [section 4 — Pattern E: Multi-POV]
 
 [pause:800ms]
 
-Em vuốt nhẹ lên cuốn sổ ghi chép một lần nữa. Chữ viết tay người già, một số dòng nhoè mực.
+[POV Em, ngoài]: Em lật trang sổ. "Em tên Triết Vinh. 26-35."
 
-"Em tên Triết Vinh. Năm nay 26-35 tuổi."
+[POV Quang, trong]: Quang nhìn em qua khe ghế. Quang nhận ra mặt em có nét quen. Như đã từng thấy ở đâu đó.
 
-Giọng em nhỏ. Khô. Như đọc cho chính cuốn sổ ghi chép nghe.
+[POV Em]: "Cha cả đời không nói. Con tưởng cha lạnh lùng. Cha mất, con đọc nhật ký cha — mỗi trang đều viết về con."
 
-"Cha cả đời không nói. Con tưởng cha lạnh lùng. Cha mất, con đọc nhật ký cha — mỗi trang đều viết về con."
+[POV Quang]: Quang nghe câu chuyện. Quang cảm thấy ngực mình hơi đau — như đó cũng là câu chuyện Quang. Hoặc gần giống.
 
-[pause:600ms]
+Quang nhớ — đêm nào đó rất xa, Quang cũng có một cuộc điện thoại nhỡ. Một người thân ốm. Quang ở xa. Quang không về kịp.
 
-"Nhiều năm qua, em mang theo cuốn sổ ghi chép này. Trong túi xách. Trong cặp. Trong ba lô đi công tác. Mỗi đêm trước khi ngủ, em lấy ra. Đặt cạnh đầu giường. Để cảm thấy hơi của người ấy chưa hoàn toàn tan."
+Quang quên tên người ấy.
 
-"Vợ/chồng/con em có lúc hỏi: 'Sao cứ giữ vật cũ này?' Em không trả lời được. Vì nếu kể, người ấy sẽ thành câu chuyện. Em không muốn người ấy thành câu chuyện. Người ấy là của riêng em thôi."
+[pause:1000ms]
 
-[pause:800ms]
+[POV Em]: "Em mang theo cuốn sổ ghi chép này nhiều năm. Mỗi đêm đặt cạnh đầu giường. Để không cô đơn."
 
-"Hôm người ấy đi, em không có mặt. Em ở xa. Đường tắc. Xe muộn. Đến nơi thì đã muộn — chỉ muộn hai giờ, hoặc nửa ngày, hoặc một ngày. Nhưng vẫn muộn."
+[POV Quang internal]: Quang lục lọi trí nhớ. Có một thứ Quang vẫn cầm theo. Trong túi áo trong. Một chiếc khăn tay xanh nhạt, hoa thêu trắng. Khăn mùi long não cũ.
 
-"Người ấy nằm đó. Tay đặt trên ngực. Mặt bình thản. Không có gì đáng sợ. Chỉ là không còn thở."
+Khăn của ai? Quang không nhớ. Nhưng khăn luôn ở đó.
 
-"Em ngồi cạnh. Cầm tay người ấy. Bàn tay đã lạnh. Da đã trắng. Em muốn nói: 'Con xin lỗi. Con về muộn.' Nhưng người ấy không nghe. Em chỉ ngồi đó. Không khóc. Không nói. Đến lúc ai đó dìu em đứng dậy."
+[POV Em]: "Vợ/chồng em có lúc hỏi: 'Sao giữ vật cũ này?' Em không trả lời được. Vì nếu kể, người ấy thành câu chuyện. Em không muốn người ấy thành câu chuyện."
+
+[POV Quang]: Quang cũng vậy. Quang không kể với ai về khăn tay trong túi. Không vợ/chồng. Không bạn. Vì khăn không phải câu chuyện.
 
 [pause:1500ms]
 
-Bác tài nhìn gương chiếu hậu một thoáng. Im lặng. Không nói câu nào.
+[POV Em]: "Hôm người ấy đi, em không có mặt. Đường tắc. Xe muộn. Đến nơi thì đã muộn."
 
-Trong gương chiếu hậu phía sau ghế lái, Quang thấy hai cái bóng. Một là em. Một là một bóng người lớn tuổi hơn, ngồi sát ngay sau em. Bóng người ấy đang đặt tay lên vật giống vật em đang giữ. Mắt nhìn xuống. Không nhìn ai. Không nói.
+[POV Quang]: Quang nhớ — đêm đó Quang cũng đang ngồi trên một chuyến xe nào đó. Xe khách đêm. Đường tắc. Quang chạy bộ phần cuối — mưa phùn. Đến nhà sáng sớm. Cổng mở. Người trong xóm đông.
 
-Quang chớp mắt. Trong gương vẫn chỉ có em và một bóng mờ.
+Quang không nhớ ai trong quan tài. Quang nhớ chỉ một câu — em gái/em trai/cô em Quang nói: "Anh về rồi."
 
-Bác tài cất lời. Câu hỏi cũ.
+[POV Em]: "Em ngồi cạnh người ấy. Cầm tay. Tay đã lạnh. Em không khóc. Chỉ ngồi."
+
+[POV Quang]: Quang cũng ngồi. Quang nhớ. Nhưng Quang không nhớ ai. Tay ai. Mặt ai.
+
+Có một mảng đen trong trí nhớ Quang. Đêm đó.
+
+[pause:1500ms]
+
+Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Em không quay đầu. Khẽ gật. Một cái gật rất nhỏ.
+[POV Em]: gật.
 
-"Em nhớ, bác."
+[POV Quang]: cũng định gật. Nhưng môi Quang không động. Vì Quang chưa nhớ ra.
 
-[pause:1000ms]
+Bác tài liếc gương. Ánh mắt dừng trên Quang. Lâu.
 
-"Em nhớ từ lâu lắm. Nhưng nhớ không có nghĩa là nói được. Em chỉ nhớ trong lòng. Mỗi đêm trước khi ngủ. Mỗi sáng khi mở mắt. Mỗi lần đi qua một quán cũ. Mỗi lần nghe một bài hát cũ. Người ấy luôn ở đó — nhưng không nói được."
+"Sắp nhớ ra rồi," bác khẽ. Không nhìn em. Nhìn Quang.
 
-[pause:800ms]
+[pause:1200ms]
 
-"Nhiều năm sau, em mới hiểu — câu chưa nói đó là gì. Lúc đầu em tưởng chỉ cần một câu 'con xin lỗi'. Sau nhiều năm, em hiểu — câu thực sự cần nói không phải xin lỗi. Mà là cảm ơn. Cảm ơn người ấy đã đợi. Cảm ơn người ấy đã không bỏ em lại. Cảm ơn người ấy đã ngồi yên đến phút cuối."
+[POV Em]: "Đêm nay em đem cuốn sổ ghi chép về quê. Đặt lên ban thờ."
 
-"Em đã chuẩn bị câu đó suốt nhiều năm. Tập đi tập lại trong đầu. Nhưng mỗi lần đến trước ban thờ người ấy, câu nói lại nghẹn ở cổ. Em chỉ thắp được nhang. Đứng yên. Cúi đầu. Rồi đi ra."
+[POV Quang]: Quang nhìn xuống tay mình. Tay trống. Nhưng trong túi áo trong — khăn tay vẫn ở đó. Mùi long não. Như mẹ/bà.
 
-[pause:600ms]
+Quang chạm vào khăn qua áo. Tay run.
 
-"Có những đêm em không ngủ được. Em ngồi trên giường. Cầm cuốn sổ ghi chép. Tự thì thầm với người ấy. Nói chuyện hôm nay em làm gì. Nói chuyện công việc. Nói chuyện con cái. Nói cả những chuyện vụn vặt — như ngày xưa hai người vẫn nói với nhau."
-
-"Có khi em cảm thấy người ấy đang ở đó nghe. Có khi không. Nhưng em cứ nói. Vì em biết — nếu em dừng nói, người ấy sẽ tan đi thực sự."
-
-[pause:1000ms]
-
-"Đêm nay em đem cuốn sổ ghi chép về quê. Đặt lên ban thờ. Thắp nhang. Nói: 'Con nhớ rồi. Con cảm ơn.' Có thể người ấy nghe. Có thể không. Nhưng em cần nói."
-
-"Em đã chờ đêm này lâu lắm. Năm nay em sẽ về."
+"Còn vài đêm nữa," bác tài nói thêm. "Rồi con sẽ kể."
 
 ---
 
