@@ -89,53 +89,53 @@ Cô quay đầu. Áp cây gậy trúc vào lòng. Mắt nhắm nhẹ.
 
 [pause:800ms]
 
-Cô đặt cây gậy trúc lên đùi. Tay đi qua từng chi tiết.
+Cô cầm cây gậy trúc. Chạm tay nhẹ vào. Lắc khẽ. Có một âm thanh rất nhỏ phát ra — như tiếng khẽ của vải/gỗ/giấy cũ.
 
-"Cô tên Hà Như. 36-50. Nhưng đêm nay cô không kể chuyện cô. Cô kể chuyện vật này."
-
-"Cây gậy trúc này là của mẹ. Mẹ mua/đan/giữ không biết bao nhiêu năm rồi. Chỉ biết mẹ luôn dùng. Mỗi ngày. Mỗi tuần. Mỗi mùa Tết. Cây gậy trúc đã thấy nhiều thứ."
+"Cô tên Hà Như. 36-50. Đêm nay cô kể chuyện qua âm thanh vật này."
 
 [pause:600ms]
 
-"Vết xước này ở góc — là năm mẹ bốn mươi tuổi. Mẹ vô tình làm. Mẹ cười. Bảo: 'Vết xước cũng đẹp.' Sau đó mỗi lần mẹ dùng, mẹ đều chạm vào vết xước — như chạm vào kỷ niệm."
+"Âm thanh đầu tiên cô nhớ về vật — là tiếng mẹ cầm. Mẹ đi qua phòng, tay cầm vật, làm phát ra tiếng nhỏ. Nhịp đều. Mỗi nhịp tay mẹ đi. Cô hồi nhỏ nằm trên giường, nghe tiếng đó từ phòng bên — biết mẹ đang làm việc trong bếp."
 
-"Vết nhỏ hơn — là năm cô mười lăm tuổi. Cô vô tình làm khi giúp mẹ. Mẹ giật mình. Nhưng không la cô. Mẹ chỉ bảo: 'Bây giờ vật này có hai vết xước. Hai mẹ con đều có dấu trên đó.'"
+"Tiếng đó đối với cô là tiếng yên tâm. Mẹ còn ở đây. Mẹ đang làm việc. Mẹ chưa ngủ. Cô ngủ ngon vì có tiếng đó."
 
 [pause:800ms]
 
-"Mảng sờn ở mép — là chỗ mẹ vẫn cầm. Bàn tay mẹ qua nhiều năm đã làm mòn chỗ đó. Cứ chạm vào mảng sờn, cô cảm thấy hơi tay mẹ — dù mẹ không còn."
+"Âm thanh thứ hai — là tiếng vật rơi. Năm cô mười tám tuổi, đêm cuối trước khi đi học xa. Cô đứng dậy giúp mẹ. Tay vô tình va vào. Vật rơi xuống sàn — phát ra một tiếng 'cộc' khô. Không vỡ. Nhưng tiếng đó cô nhớ — vì lúc rơi, mẹ chỉ nhìn vật. Không la. Mẹ cúi xuống nhặt. Đặt lại chỗ cũ."
 
-"Vết ố nhỏ ở giữa — là ngày sinh nhật bốn mươi của cô. Mẹ làm vô tình. Cũng cười. Bảo: 'Mỗi vết là một câu chuyện.'"
+"Mẹ không trách. Mẹ chỉ nói: 'Mai con đi.' Tiếng mẹ nói câu đó cũng gần như tiếng vật rơi — khô, ngắn, không lời."
 
 [pause:1000ms]
 
-"Vết dài này — là vết nứt mới. Là năm mẹ đi. Mẹ ngã. Vật rơi. Nứt thêm. Khi cô thu xếp đồ mẹ, cô cầm lên — thấy vết nứt mới. Cô hiểu — mẹ vừa đi."
+"Âm thanh thứ ba — là tiếng im. Đêm mẹ đi. Cả nhà yên tĩnh đến mức cô nghe được tiếng đồng hồ treo tường. Vật ở trên bàn — không phát ra tiếng nào. Mẹ không còn cầm. Vật im."
 
-"Tay cô run khi cầm lên. Nhưng cô không khóc được. Chỉ đặt vật vào ngực. Nghe nhịp tim mình qua vật."
+"Đó là lần đầu cô nghe vật im như thế. Suốt tuổi thơ cô, vật luôn có tiếng — vì mẹ luôn cầm. Đêm mẹ đi, vật im. Mới biết tiếng vật không phải từ vật — mà từ tay mẹ."
+
+[pause:1200ms]
+
+"Sau đó cô thử cầm vật cho ra tiếng. Lắc. Đi qua phòng. Nhưng tiếng cô cầm không giống tiếng mẹ. Nhịp khác. Mạnh khác. Vật phát ra tiếng — nhưng không phải tiếng yên tâm. Mà là tiếng nhớ."
 
 [pause:1500ms]
 
-"Đêm nay cô đem vật này theo. Mỗi vết trên đó là một câu chuyện của mẹ và cô. Cô không cần kể nhiều bằng lời. Vật kể giúp cô."
+Bác tài liếc gương. Trong gương, có hai bóng. Cô và mẹ — mẹ đang cầm vật, đi qua phòng. Tiếng nhịp đều vọng lại từ gương — chỉ Quang nghe được.
 
-Bác tài nhìn gương chiếu hậu. Im lặng.
-
-Trong gương, Quang thấy hai cái bóng. Cô và một bóng phụ nữ trung niên — đang đặt tay lên vật cùng cô. Hai bàn tay chồng lên nhau. Hai mẹ con cùng cầm.
-
-Quang chớp mắt. Bóng tan.
+Quang chớp mắt. Bóng tan. Tiếng tan.
 
 Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Cô gật. "Cô nhớ. Mẹ nói chuyện qua vật. Không cần lời."
+Cô gật.
 
-[pause:1000ms]
+"Cô nhớ. Tiếng mẹ vẫn còn trong vật. Chỉ chờ đúng tay cầm lại."
 
-"Đêm nay cô đem vật này về quê. Đặt lên ban thờ mẹ. Để tay mẹ cuối cùng cũng cầm vật một lần nữa."
+[pause:1200ms]
 
-"Sau này khi cô đi, cô sẽ truyền vật này cho con. Con cô không hiểu hết các vết. Nhưng con sẽ giữ. Đến lượt con vô tình làm thêm một vết. Vết của thế hệ con."
+"Đêm nay cô đem vật về quê. Đặt trên bàn cũ chỗ mẹ vẫn để. Đêm nay cô sẽ thử cầm vật theo nhịp mẹ — nhịp cô nhớ từ hồi bé. Nếu cầm đúng, có thể tiếng sẽ về."
 
-"Cứ thế. Vật được truyền. Vết được thêm. Câu chuyện được kể qua các thế hệ — không bằng lời."
+"Có thể không. Nhưng cô thử."
+
+"Đêm nay cô cũng dạy con cô cách cầm vật. Cho con biết — tiếng vật không phải từ vật. Từ tay. Truyền qua các thế hệ. Mỗi tay một tiếng. Nhưng tất cả đều là tiếng nhớ." 
 
 [pause:600ms]
 

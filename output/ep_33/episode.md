@@ -151,6 +151,14 @@ Quang chạm vào khăn qua áo. Tay run.
 
 "Còn vài đêm nữa," bác tài nói thêm. "Rồi con sẽ kể."
 
+[pause:600ms]
+
+Trong gia đình chú, người ấy là thế hệ giữ ký ức. Cha mẹ chú từ lâu đã không còn. Chú là người cuối cùng còn nhớ tên nhà bà cố — vùng quê cũ — món ăn chú hay được dỗ ăn từ tấm bé. Khi người ấy đi, một mảng quá khứ của chú đi theo.
+
+Chú nhận ra điều đó muộn. Mỗi năm thêm tuổi, chú lại nhớ ra một chi tiết người ấy từng kể — và tự buồn vì ngày đó chú không lắng nghe đủ. Nay người ấy không còn để hỏi.
+
+
+
 ---
 
 # PAYOFF [section 5]

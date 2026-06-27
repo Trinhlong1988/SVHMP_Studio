@@ -151,16 +151,6 @@ Quang chạm vào khăn qua áo. Tay run.
 
 "Còn vài đêm nữa," bác tài nói thêm. "Rồi con sẽ kể."
 
-[pause:600ms]
-
-Có một đêm cô nằm cạnh giường người ấy lúc người ấy đã yếu. Người ấy không nói nhiều — chỉ nắm tay cô. Hai bàn tay đan. Lâu. Không ai nói gì. Cô nhớ — đó là lần đầu tiên cô và người ấy nắm tay yên lặng như thế.
-
-Cả đời người ấy chăm sóc cô. Một đêm cuối, lần đầu cô chăm người ấy. Một đêm. Sáng sau người ấy đi.
-
-Cô hối hận vì đã không nắm tay người ấy nhiều lần hơn từ trước đó. Hai bàn tay chỉ chạm thẳng nhau trong đêm cuối — chứ không qua nhiều năm.
-
-
-
 ---
 
 # PAYOFF [section 5]

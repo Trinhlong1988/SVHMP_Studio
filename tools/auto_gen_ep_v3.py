@@ -239,7 +239,13 @@ Bác tài cất lời.
 
 
 def reveal_pattern_D(name, age, pron, pron_cap, obj, sample, ep_num=11):
-    """Pattern D: Object-first — story kể qua object detail."""
+    """Pattern D: Object-first — 3 variants D_v1 vết / D_v2 mùi / D_v3 âm thanh."""
+    variant = (ep_num - 11) // 6 % 3
+    if variant == 1:
+        return _reveal_D_v2_smell(name, age, pron, pron_cap, obj)
+    if variant == 2:
+        return _reveal_D_v3_sound(name, age, pron, pron_cap, obj)
+    # Default variant 0 = D_v1 (vết theo thời gian)
     return f"""[pause:800ms]
 
 {pron_cap} đặt {obj['name']} lên đùi. Tay đi qua từng chi tiết.
@@ -289,6 +295,106 @@ Bác tài cất lời.
 "Sau này khi {pron} đi, {pron} sẽ truyền vật này cho con. Con {pron} không hiểu hết các vết. Nhưng con sẽ giữ. Đến lượt con vô tình làm thêm một vết. Vết của thế hệ con."
 
 "Cứ thế. Vật được truyền. Vết được thêm. Câu chuyện được kể qua các thế hệ — không bằng lời.\""""
+
+
+def _reveal_D_v2_smell(name, age, pron, pron_cap, obj):
+    """D variant 2: kể qua MÙI vật theo thời gian."""
+    return f"""[pause:800ms]
+
+{pron_cap} đưa {obj['name']} lên gần mũi. Hít một hơi nhẹ. Nhắm mắt.
+
+"{pron_cap} tên {name}. {age}. Đêm nay {pron} kể chuyện qua mùi vật này."
+
+[pause:600ms]
+
+"Mùi đầu tiên — là mùi mẹ. Mẹ {pron} cầm vật này nhiều năm. Hơi tay mẹ thấm vào. Đó là một mùi {pron} không tả được. Pha giữa nước hoa nhài cũ mẹ vẫn xịt mỗi cuối tuần. Pha giữa mùi cơm rang chiều. Pha giữa mùi nắng phơi áo."
+
+"Mùi này {pron} chỉ ngửi được khi ép sát vào mũi. Nhưng mùi đậm hơn — đậm như cả tuổi thơ {pron} nằm chung trong vật này."
+
+[pause:800ms]
+
+"Mùi thứ hai — là mùi nhà cũ ở quê. Vật này từng đặt trên bàn gỗ phòng khách quê. Phòng khách mở cửa sổ ra vườn. Hoa cau buổi sáng. Trầu già. Lá khô mùa thu. Tất cả đã thấm vào sợi vải/giấy/gỗ của vật. Khi {pron} đưa vật lên mũi, {pron} ngửi được cả căn nhà — dù căn nhà đã đổ năm năm trước."
+
+"Mỗi năm mùi này nhạt đi một chút. {pron_cap} sợ — một ngày nào đó vật chỉ còn mùi của thành phố nơi {pron} sống bây giờ. Không còn mùi nhà cũ. Nên {pron} cất vật trong hộp kín. Chỉ mở ra mỗi đêm trước khi ngủ — ngửi một hơi. Đóng lại."
+
+[pause:1000ms]
+
+"Mùi thứ ba — là mùi {pron}. Bàn tay {pron} qua năm tháng đã làm thêm một lớp mùi mới — mỗi lần {pron} cầm. Ba mươi/bốn mươi/năm mươi năm vật ở trong tay {pron}. Mùi {pron} bây giờ là mùi chủ đạo. Nhưng dưới đó vẫn còn mùi mẹ và mùi nhà cũ — như tầng đá nền."
+
+"Có lúc {pron} tự hỏi: khi {pron} mất, ai sẽ ngửi vật này? Con {pron} sẽ ngửi. Sẽ chỉ ngửi được mùi {pron} mới. Mùi mẹ và mùi nhà cũ — sẽ tan."
+
+[pause:1500ms]
+
+Bác tài liếc gương. Trong gương, Quang thấy hai bóng — {pron} và một phụ nữ ngồi sau. Phụ nữ ấy đang đặt mặt vào áo {pron} — như ngửi.
+
+Quang chớp mắt. Bóng tan.
+
+Bác tài cất lời.
+
+"Con đã nhớ ra chưa?"
+
+{pron_cap} gật. "{pron_cap} nhớ. Mùi mẹ vẫn còn — chỉ cần ngửi sát."
+
+[pause:1200ms]
+
+"Đêm nay {pron} đem vật về quê. Mở hộp ra ngay trên ban thờ. Để mẹ ngửi lại mùi nhà cũ — mùi đã tan với {pron} nhưng còn lại trong vật."
+
+"{pron_cap} tin — mùi có thể truyền hai chiều. Mẹ ngửi được mùi {pron} bây giờ. {pron_cap} ngửi được mùi mẹ ngày xưa. Cả hai gặp nhau trong vật."
+
+"Sau khi {pron} đi, con {pron} mở hộp — sẽ ngửi được mùi {pron} và mẹ và bà cố. Ba thế hệ trong một mùi. Đó là cách gia đình không tan dù người đi."""
+
+
+def _reveal_D_v3_sound(name, age, pron, pron_cap, obj):
+    """D variant 3: kể qua ÂM THANH vật phát ra theo thời gian."""
+    return f"""[pause:800ms]
+
+{pron_cap} cầm {obj['name']}. Chạm tay nhẹ vào. Lắc khẽ. Có một âm thanh rất nhỏ phát ra — như tiếng khẽ của vải/gỗ/giấy cũ.
+
+"{pron_cap} tên {name}. {age}. Đêm nay {pron} kể chuyện qua âm thanh vật này."
+
+[pause:600ms]
+
+"Âm thanh đầu tiên {pron} nhớ về vật — là tiếng mẹ cầm. Mẹ đi qua phòng, tay cầm vật, làm phát ra tiếng nhỏ. Nhịp đều. Mỗi nhịp tay mẹ đi. {pron_cap} hồi nhỏ nằm trên giường, nghe tiếng đó từ phòng bên — biết mẹ đang làm việc trong bếp."
+
+"Tiếng đó đối với {pron} là tiếng yên tâm. Mẹ còn ở đây. Mẹ đang làm việc. Mẹ chưa ngủ. {pron_cap} ngủ ngon vì có tiếng đó."
+
+[pause:800ms]
+
+"Âm thanh thứ hai — là tiếng vật rơi. Năm {pron} mười tám tuổi, đêm cuối trước khi đi học xa. {pron_cap} đứng dậy giúp mẹ. Tay vô tình va vào. Vật rơi xuống sàn — phát ra một tiếng 'cộc' khô. Không vỡ. Nhưng tiếng đó {pron} nhớ — vì lúc rơi, mẹ chỉ nhìn vật. Không la. Mẹ cúi xuống nhặt. Đặt lại chỗ cũ."
+
+"Mẹ không trách. Mẹ chỉ nói: 'Mai con đi.' Tiếng mẹ nói câu đó cũng gần như tiếng vật rơi — khô, ngắn, không lời."
+
+[pause:1000ms]
+
+"Âm thanh thứ ba — là tiếng im. Đêm mẹ đi. Cả nhà yên tĩnh đến mức {pron} nghe được tiếng đồng hồ treo tường. Vật ở trên bàn — không phát ra tiếng nào. Mẹ không còn cầm. Vật im."
+
+"Đó là lần đầu {pron} nghe vật im như thế. Suốt tuổi thơ {pron}, vật luôn có tiếng — vì mẹ luôn cầm. Đêm mẹ đi, vật im. Mới biết tiếng vật không phải từ vật — mà từ tay mẹ."
+
+[pause:1200ms]
+
+"Sau đó {pron} thử cầm vật cho ra tiếng. Lắc. Đi qua phòng. Nhưng tiếng {pron} cầm không giống tiếng mẹ. Nhịp khác. Mạnh khác. Vật phát ra tiếng — nhưng không phải tiếng yên tâm. Mà là tiếng nhớ."
+
+[pause:1500ms]
+
+Bác tài liếc gương. Trong gương, có hai bóng. {pron_cap} và mẹ — mẹ đang cầm vật, đi qua phòng. Tiếng nhịp đều vọng lại từ gương — chỉ Quang nghe được.
+
+Quang chớp mắt. Bóng tan. Tiếng tan.
+
+Bác tài cất lời.
+
+"Con đã nhớ ra chưa?"
+
+{pron_cap} gật.
+
+"{pron_cap} nhớ. Tiếng mẹ vẫn còn trong vật. Chỉ chờ đúng tay cầm lại."
+
+[pause:1200ms]
+
+"Đêm nay {pron} đem vật về quê. Đặt trên bàn cũ chỗ mẹ vẫn để. Đêm nay {pron} sẽ thử cầm vật theo nhịp mẹ — nhịp {pron} nhớ từ hồi bé. Nếu cầm đúng, có thể tiếng sẽ về."
+
+"Có thể không. Nhưng {pron} thử."
+
+"Đêm nay {pron} cũng dạy con {pron} cách cầm vật. Cho con biết — tiếng vật không phải từ vật. Từ tay. Truyền qua các thế hệ. Mỗi tay một tiếng. Nhưng tất cả đều là tiếng nhớ." """
 
 
 def reveal_pattern_E(name, age, pron, pron_cap, obj, sample, ep_num=11):

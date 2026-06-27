@@ -89,37 +89,31 @@ Cô quay đầu. Áp cuộn thư tay vào lòng. Mắt nhắm nhẹ.
 
 [pause:800ms]
 
-Cô đặt cuộn thư tay lên đùi. Tay đi qua từng chi tiết.
+Cô đưa cuộn thư tay lên gần mũi. Hít một hơi nhẹ. Nhắm mắt.
 
-"Cô tên Hiền Thuỳ. 26-35. Nhưng đêm nay cô không kể chuyện cô. Cô kể chuyện vật này."
-
-"Cuộn thư tay này là của mẹ. Mẹ mua/đan/giữ không biết bao nhiêu năm rồi. Chỉ biết mẹ luôn dùng. Mỗi ngày. Mỗi tuần. Mỗi mùa Tết. Cuộn thư tay đã thấy nhiều thứ."
+"Cô tên Hiền Thuỳ. 26-35. Đêm nay cô kể chuyện qua mùi vật này."
 
 [pause:600ms]
 
-"Vết xước này ở góc — là năm mẹ bốn mươi tuổi. Mẹ vô tình làm. Mẹ cười. Bảo: 'Vết xước cũng đẹp.' Sau đó mỗi lần mẹ dùng, mẹ đều chạm vào vết xước — như chạm vào kỷ niệm."
+"Mùi đầu tiên — là mùi mẹ. Mẹ cô cầm vật này nhiều năm. Hơi tay mẹ thấm vào. Đó là một mùi cô không tả được. Pha giữa nước hoa nhài cũ mẹ vẫn xịt mỗi cuối tuần. Pha giữa mùi cơm rang chiều. Pha giữa mùi nắng phơi áo."
 
-"Vết nhỏ hơn — là năm cô mười lăm tuổi. Cô vô tình làm khi giúp mẹ. Mẹ giật mình. Nhưng không la cô. Mẹ chỉ bảo: 'Bây giờ vật này có hai vết xước. Hai mẹ con đều có dấu trên đó.'"
+"Mùi này cô chỉ ngửi được khi ép sát vào mũi. Nhưng mùi đậm hơn — đậm như cả tuổi thơ cô nằm chung trong vật này."
 
 [pause:800ms]
 
-"Mảng sờn ở mép — là chỗ mẹ vẫn cầm. Bàn tay mẹ qua nhiều năm đã làm mòn chỗ đó. Cứ chạm vào mảng sờn, cô cảm thấy hơi tay mẹ — dù mẹ không còn."
+"Mùi thứ hai — là mùi nhà cũ ở quê. Vật này từng đặt trên bàn gỗ phòng khách quê. Phòng khách mở cửa sổ ra vườn. Hoa cau buổi sáng. Trầu già. Lá khô mùa thu. Tất cả đã thấm vào sợi vải/giấy/gỗ của vật. Khi cô đưa vật lên mũi, cô ngửi được cả căn nhà — dù căn nhà đã đổ năm năm trước."
 
-"Vết ố nhỏ ở giữa — là ngày sinh nhật bốn mươi của cô. Mẹ làm vô tình. Cũng cười. Bảo: 'Mỗi vết là một câu chuyện.'"
+"Mỗi năm mùi này nhạt đi một chút. Cô sợ — một ngày nào đó vật chỉ còn mùi của thành phố nơi cô sống bây giờ. Không còn mùi nhà cũ. Nên cô cất vật trong hộp kín. Chỉ mở ra mỗi đêm trước khi ngủ — ngửi một hơi. Đóng lại."
 
 [pause:1000ms]
 
-"Vết dài này — là vết nứt mới. Là năm mẹ đi. Mẹ ngã. Vật rơi. Nứt thêm. Khi cô thu xếp đồ mẹ, cô cầm lên — thấy vết nứt mới. Cô hiểu — mẹ vừa đi."
+"Mùi thứ ba — là mùi cô. Bàn tay cô qua năm tháng đã làm thêm một lớp mùi mới — mỗi lần cô cầm. Ba mươi/bốn mươi/năm mươi năm vật ở trong tay cô. Mùi cô bây giờ là mùi chủ đạo. Nhưng dưới đó vẫn còn mùi mẹ và mùi nhà cũ — như tầng đá nền."
 
-"Tay cô run khi cầm lên. Nhưng cô không khóc được. Chỉ đặt vật vào ngực. Nghe nhịp tim mình qua vật."
+"Có lúc cô tự hỏi: khi cô mất, ai sẽ ngửi vật này? Con cô sẽ ngửi. Sẽ chỉ ngửi được mùi cô mới. Mùi mẹ và mùi nhà cũ — sẽ tan."
 
 [pause:1500ms]
 
-"Đêm nay cô đem vật này theo. Mỗi vết trên đó là một câu chuyện của mẹ và cô. Cô không cần kể nhiều bằng lời. Vật kể giúp cô."
-
-Bác tài nhìn gương chiếu hậu. Im lặng.
-
-Trong gương, Quang thấy hai cái bóng. Cô và một bóng phụ nữ trung niên — đang đặt tay lên vật cùng cô. Hai bàn tay chồng lên nhau. Hai mẹ con cùng cầm.
+Bác tài liếc gương. Trong gương, Quang thấy hai bóng — cô và một phụ nữ ngồi sau. Phụ nữ ấy đang đặt mặt vào áo cô — như ngửi.
 
 Quang chớp mắt. Bóng tan.
 
@@ -127,15 +121,15 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Cô gật. "Cô nhớ. Mẹ nói chuyện qua vật. Không cần lời."
+Cô gật. "Cô nhớ. Mùi mẹ vẫn còn — chỉ cần ngửi sát."
 
-[pause:1000ms]
+[pause:1200ms]
 
-"Đêm nay cô đem vật này về quê. Đặt lên ban thờ mẹ. Để tay mẹ cuối cùng cũng cầm vật một lần nữa."
+"Đêm nay cô đem vật về quê. Mở hộp ra ngay trên ban thờ. Để mẹ ngửi lại mùi nhà cũ — mùi đã tan với cô nhưng còn lại trong vật."
 
-"Sau này khi cô đi, cô sẽ truyền vật này cho con. Con cô không hiểu hết các vết. Nhưng con sẽ giữ. Đến lượt con vô tình làm thêm một vết. Vết của thế hệ con."
+"Cô tin — mùi có thể truyền hai chiều. Mẹ ngửi được mùi cô bây giờ. Cô ngửi được mùi mẹ ngày xưa. Cả hai gặp nhau trong vật."
 
-"Cứ thế. Vật được truyền. Vết được thêm. Câu chuyện được kể qua các thế hệ — không bằng lời."
+"Sau khi cô đi, con cô mở hộp — sẽ ngửi được mùi cô và mẹ và bà cố. Ba thế hệ trong một mùi. Đó là cách gia đình không tan dù người đi.
 
 [pause:600ms]
 

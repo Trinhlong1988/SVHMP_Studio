@@ -89,37 +89,31 @@ Em quay đầu. Áp một vật cũ vào lòng. Mắt nhắm nhẹ.
 
 [pause:800ms]
 
-Em đặt vật lên đùi. Tay đi qua từng chi tiết.
+Em đưa vật lên gần mũi. Hít một hơi nhẹ. Nhắm mắt.
 
-"Em tên Gia Khôi. 18-25. Nhưng đêm nay em không kể chuyện em. Em kể chuyện vật này."
-
-"Vật này là của mẹ. Mẹ mua/đan/giữ không biết bao nhiêu năm rồi. Chỉ biết mẹ luôn dùng. Mỗi ngày. Mỗi tuần. Mỗi mùa Tết. Vật đã thấy nhiều thứ."
+"Em tên Gia Khôi. 18-25. Đêm nay em kể chuyện qua mùi vật này."
 
 [pause:600ms]
 
-"Vết xước này ở góc — là năm mẹ bốn mươi tuổi. Mẹ vô tình làm. Mẹ cười. Bảo: 'Vết xước cũng đẹp.' Sau đó mỗi lần mẹ dùng, mẹ đều chạm vào vết xước — như chạm vào kỷ niệm."
+"Mùi đầu tiên — là mùi mẹ. Mẹ em cầm vật này nhiều năm. Hơi tay mẹ thấm vào. Đó là một mùi em không tả được. Pha giữa nước hoa nhài cũ mẹ vẫn xịt mỗi cuối tuần. Pha giữa mùi cơm rang chiều. Pha giữa mùi nắng phơi áo."
 
-"Vết nhỏ hơn — là năm em mười lăm tuổi. Em vô tình làm khi giúp mẹ. Mẹ giật mình. Nhưng không la em. Mẹ chỉ bảo: 'Bây giờ vật này có hai vết xước. Hai mẹ con đều có dấu trên đó.'"
+"Mùi này em chỉ ngửi được khi ép sát vào mũi. Nhưng mùi đậm hơn — đậm như cả tuổi thơ em nằm chung trong vật này."
 
 [pause:800ms]
 
-"Mảng sờn ở mép — là chỗ mẹ vẫn cầm. Bàn tay mẹ qua nhiều năm đã làm mòn chỗ đó. Cứ chạm vào mảng sờn, em cảm thấy hơi tay mẹ — dù mẹ không còn."
+"Mùi thứ hai — là mùi nhà cũ ở quê. Vật này từng đặt trên bàn gỗ phòng khách quê. Phòng khách mở cửa sổ ra vườn. Hoa cau buổi sáng. Trầu già. Lá khô mùa thu. Tất cả đã thấm vào sợi vải/giấy/gỗ của vật. Khi em đưa vật lên mũi, em ngửi được cả căn nhà — dù căn nhà đã đổ năm năm trước."
 
-"Vết ố nhỏ ở giữa — là ngày sinh nhật bốn mươi của em. Mẹ làm vô tình. Cũng cười. Bảo: 'Mỗi vết là một câu chuyện.'"
+"Mỗi năm mùi này nhạt đi một chút. Em sợ — một ngày nào đó vật chỉ còn mùi của thành phố nơi em sống bây giờ. Không còn mùi nhà cũ. Nên em cất vật trong hộp kín. Chỉ mở ra mỗi đêm trước khi ngủ — ngửi một hơi. Đóng lại."
 
 [pause:1000ms]
 
-"Vết dài này — là vết nứt mới. Là năm mẹ đi. Mẹ ngã. Vật rơi. Nứt thêm. Khi em thu xếp đồ mẹ, em cầm lên — thấy vết nứt mới. Em hiểu — mẹ vừa đi."
+"Mùi thứ ba — là mùi em. Bàn tay em qua năm tháng đã làm thêm một lớp mùi mới — mỗi lần em cầm. Ba mươi/bốn mươi/năm mươi năm vật ở trong tay em. Mùi em bây giờ là mùi chủ đạo. Nhưng dưới đó vẫn còn mùi mẹ và mùi nhà cũ — như tầng đá nền."
 
-"Tay em run khi cầm lên. Nhưng em không khóc được. Chỉ đặt vật vào ngực. Nghe nhịp tim mình qua vật."
+"Có lúc em tự hỏi: khi em mất, ai sẽ ngửi vật này? Con em sẽ ngửi. Sẽ chỉ ngửi được mùi em mới. Mùi mẹ và mùi nhà cũ — sẽ tan."
 
 [pause:1500ms]
 
-"Đêm nay em đem vật này theo. Mỗi vết trên đó là một câu chuyện của mẹ và em. Em không cần kể nhiều bằng lời. Vật kể giúp em."
-
-Bác tài nhìn gương chiếu hậu. Im lặng.
-
-Trong gương, Quang thấy hai cái bóng. Em và một bóng phụ nữ trung niên — đang đặt tay lên vật cùng em. Hai bàn tay chồng lên nhau. Hai mẹ con cùng cầm.
+Bác tài liếc gương. Trong gương, Quang thấy hai bóng — em và một phụ nữ ngồi sau. Phụ nữ ấy đang đặt mặt vào áo em — như ngửi.
 
 Quang chớp mắt. Bóng tan.
 
@@ -127,15 +121,15 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Em gật. "Em nhớ. Mẹ nói chuyện qua vật. Không cần lời."
+Em gật. "Em nhớ. Mùi mẹ vẫn còn — chỉ cần ngửi sát."
 
-[pause:1000ms]
+[pause:1200ms]
 
-"Đêm nay em đem vật này về quê. Đặt lên ban thờ mẹ. Để tay mẹ cuối cùng cũng cầm vật một lần nữa."
+"Đêm nay em đem vật về quê. Mở hộp ra ngay trên ban thờ. Để mẹ ngửi lại mùi nhà cũ — mùi đã tan với em nhưng còn lại trong vật."
 
-"Sau này khi em đi, em sẽ truyền vật này cho con. Con em không hiểu hết các vết. Nhưng con sẽ giữ. Đến lượt con vô tình làm thêm một vết. Vết của thế hệ con."
+"Em tin — mùi có thể truyền hai chiều. Mẹ ngửi được mùi em bây giờ. Em ngửi được mùi mẹ ngày xưa. Cả hai gặp nhau trong vật."
 
-"Cứ thế. Vật được truyền. Vết được thêm. Câu chuyện được kể qua các thế hệ — không bằng lời."
+"Sau khi em đi, con em mở hộp — sẽ ngửi được mùi em và mẹ và bà cố. Ba thế hệ trong một mùi. Đó là cách gia đình không tan dù người đi.
 
 [pause:600ms]
 
