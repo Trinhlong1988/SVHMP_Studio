@@ -1382,7 +1382,7 @@ passengers:
   novelty_hash: 8ae3d0436d8a
   status: framework_lock
 - id: PAS_0109
-  char_name: Hạ Diệu
+  char_name: Hiệp Tô
   pillar: self_regret
   regret_sub_archetype: REG_SELF_003
   regret_label: Bỏ con vì sự nghiệp — cuối đời không có ai
@@ -1390,7 +1390,7 @@ passengers:
   signature_setting: setting_TBD
   age_range: 18-25
   gender: nu
-  display_name: Hạ Diệu (18-25)
+  display_name: Hiệp Tô (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: null
   novelty_hash: 4541b98a9498
@@ -1424,7 +1424,7 @@ passengers:
   novelty_hash: 60c24106a7ac
   status: framework_lock
 - id: PAS_0112
-  char_name: Diễm Tường
+  char_name: Mỵ Bạch
   pillar: self_regret
   regret_sub_archetype: REG_SELF_004
   regret_label: Sợ bệnh viện — bỏ qua dấu hiệu cảnh báo 2 năm
@@ -1432,7 +1432,7 @@ passengers:
   signature_setting: setting_TBD
   age_range: 26-35
   gender: nu
-  display_name: Diễm Tường (26-35)
+  display_name: Mỵ Bạch (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: null
   novelty_hash: 5ff914577385

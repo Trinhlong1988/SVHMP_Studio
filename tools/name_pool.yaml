@@ -2,9 +2,9 @@ schema_version: 2
 rule_source: bible/23_passenger_naming.yaml
 database_source: data/vietnamese_names_extended.yaml
 lock_date: '2026-06-27'
-count_nu: 48
+count_nu: 50
 count_nam: 50
-total_unique_names: 98
+total_unique_names: 100
 global_word_uniqueness_verified: true
 forbidden_collision_verified: true
 NAMES_NU:
@@ -56,6 +56,8 @@ NAMES_NU:
 - Lý Mây
 - Nắng Thi
 - Ninh Phi
+- Hiệp Tô
+- Mỵ Bạch
 NAMES_NAM:
 - Hoàng Long
 - Lâm Tuấn

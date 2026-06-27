@@ -37,15 +37,14 @@
 
 ---
 
-### B36 — Pool naming NU 48 < 50 needed → 2 wrap → 4 word dup + 98/100 unique
+### B36 — Pool naming NU 48 < 50 needed → 2 wrap → 4 word dup + 98/100 unique [RESOLVED]
 - **Ngày catch:** 2026-06-27 audit 50 vòng constitution (Mr.Long lệnh)
 - **Phát hiện qua:** R24, R25, R27 trong `C:/tmp/svhmp_constitution_50round_audit.py`
 - **Triệu chứng:** 4 syllables (Hạ, Diệu, Diễm, Tường) lặp 2x. 98/100 unique full names.
 - **Root cause:** FEM bank 121 syllables nhưng overlap với MAS bank (Tâm, Hân, ...). Sau exclude used_mas (100 syl từ NAM pool 50), FEM effective còn 96 → 48 pair. Cần 50 pair → thiếu 2.
-- **Workaround current:** Ship pool 48+50=98 unique names. Wrap 2 names ở cuối distribution → 4 word duplicate.
-- **Fix planned:** Add 4+ pure feminine syllables KHÔNG có trong masculine bank (vd "Tô", "Sa", "Vịnh"...).
-- **Impact:** Minor — 4 syllables duplicate / 196 total syllables (2% rate). Generator có thể manual swap khi gen từng EP.
-- **Audit:** 47/50 PASS = 94% (3 FAIL cùng root cause này).
+- **Fix shipped 27/6:** Add 12 pure feminine syllables NEW vào `data/vietnamese_names_extended.yaml` feminine.b36_fix_2026 (Tô / Mỵ / Bạch / Khuyên / Hảo / Trầm / Mộng / Tuyên / Phấn / Vịnh / Trầu / Quách). Verified KHÔNG overlap với MAS bank.
+- **Verify:** Pool NU 50 + NAM 50 = 100 names, 100/100 unique, 0 word duplicate. **50/50 audit PASS** (100%).
+- **Meta-lesson:** Khi 2 bank cần distinct uniqueness cross-bank, add syl mới phải verify không overlap qua check `not in mas_syls`. Em đã thử lazy thêm syl trùng → fail.
 
 ### B35 — gen_100_passenger.py wrap-around khi pool < count
 - **Ngày catch:** 2026-06-27 Phase build pool

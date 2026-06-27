@@ -165,6 +165,21 @@ feminine_syllables:
     - {syl: "Tuệ",    meaning: "trí tuệ",                   ngu_hanh: "Hỏa", position: "any"}
     - {syl: "Hiệp",   meaning: "hiệp nghĩa",                ngu_hanh: "Thủy", position: "second"}
 
+  # ─── B36 fix 27/6: 12 pure feminine syllables (chưa overlap MAS) ───
+  b36_fix_2026:
+    - {syl: "Tô",     meaning: "tô son, tô điểm",          ngu_hanh: "Thổ", position: "second"}
+    - {syl: "Mỵ",     meaning: "Mỵ Nương cổ điển",         ngu_hanh: "Thủy", position: "second"}
+    - {syl: "Bạch",   meaning: "trắng tinh khôi",          ngu_hanh: "Kim", position: "first"}
+    - {syl: "Khuyên", meaning: "khuyên nhủ, hoa khuyên",   ngu_hanh: "Hỏa", position: "second"}
+    - {syl: "Hảo",    meaning: "hảo tâm",                  ngu_hanh: "Thủy", position: "second"}
+    - {syl: "Trầm",   meaning: "trầm hương",               ngu_hanh: "Thổ", position: "first"}
+    - {syl: "Mộng",   meaning: "mộng mơ",                  ngu_hanh: "Mộc", position: "any"}
+    - {syl: "Tuyên",  meaning: "tuyên ngôn",               ngu_hanh: "Hỏa", position: "second"}
+    - {syl: "Phấn",   meaning: "phấn son",                 ngu_hanh: "Thủy", position: "second"}
+    - {syl: "Vịnh",   meaning: "vịnh biển",                ngu_hanh: "Thủy", position: "any"}
+    - {syl: "Trầu",   meaning: "lá trầu",                  ngu_hanh: "Mộc", position: "second"}
+    - {syl: "Quách",  meaning: "tướng Quách",              ngu_hanh: "Mộc", position: "first"}
+
 # ============================================================
 # MASCULINE SYLLABLES — phong thủy + ý nghĩa
 # ============================================================
