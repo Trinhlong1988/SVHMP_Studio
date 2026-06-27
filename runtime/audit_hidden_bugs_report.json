@@ -1,0 +1,38 @@
+{
+  "findings": [
+    {
+      "type": "driver_extra_overuse",
+      "data": "([(2, 4), (3, 3), (4, 4), (5, 4), (6, 3), (7, 5), (8, 4), (9, 3), (11, 4), (12, 4), (13, 3), (14, 4), (15, 4), (16, 5), (17, 4), (18, 4), (19, 3), (21, 3), (22, 4), (23, 4), (24, 4), (25, 5), (26, 3), (27, 4), (28, 4), (29, 3), (31, 4), (32, 4), (33, 3), (34, 3), (35, 5), (36, 4), (37, 3), (38, 4), "
+    },
+    {
+      "type": "occupation_overrep",
+      "data": "(('nông', 4),)"
+    },
+    {
+      "type": "bell_template_overuse",
+      "data": "(32,)"
+    },
+    {
+      "type": "entry_pattern_overuse",
+      "data": "(39,)"
+    },
+    {
+      "type": "reveal_too_short",
+      "data": "([(2, 503), (3, 580), (4, 553), (42, 494), (44, 581), (47, 537), (50, 566)],)"
+    }
+  ],
+  "top_occupations": {
+    "nông": 4,
+    "cán bộ xã": 3,
+    "giáo viên cấp hai": 3,
+    "kế toán Hà Nội": 2,
+    "kiến trúc": 1
+  },
+  "top_objects": {
+    "AO_LEN_NAU": 2,
+    "BANH_CHUNG_GOI_": 2,
+    "LI_XI_DO": 2,
+    "KHAN_TAY_CU": 2,
+    "NHAN_CUOI": 2
+  }
+}

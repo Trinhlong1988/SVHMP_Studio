@@ -73,6 +73,45 @@ R44_dictionary_block:
     Vi phạm = R41 HARDLOCK block commit.
   no_inference: "KHÔNG suy luận đúng/sai. Chỉ check theo rule cứng."
 
+R53_template_pattern_variety_hardlock:
+  # round 13 add 2026-06-28 (Mr.Long lệnh nghiêm túc khai thác)
+  rule: "Atmospheric template phrases CẤM lặp > 30 EPs với pattern identical"
+  banned_overuse:
+    - "Chuông xe ngân. Một tiếng. Tan." identical 32/50 → cần varied 4-5 forms
+    - "bước lên xe. Đi qua hàng ghế đầu" 39/50 → cần varied entry
+    - "Khải Phong quan sát từ ghế ba" 40/50 → cần varied observation phrases
+    - "vuốt vai + Mỉm cười" ghost manifest 25/50 → vary ghost desc
+  approved_bell_variants:
+    - "Chuông xe ngân. Một tiếng. Tan."          # max 15/50
+    - "Tiếng chuông ngân nhẹ. Một hồi. Lặng."
+    - "Chuông xe rung khẽ. Vang một nhịp."
+    - "Một tiếng chuông. Ngắn. Tan trong sương."
+    - "Chuông xe vọng. Nhịp đơn. Im."
+  approved_entry_variants:
+    - "bước lên xe. Đi qua hàng ghế đầu"    # max 15
+    - "lên xe. Đi xuống lối giữa"
+    - "lên bậc xe. Đi đến hàng ghế giữa"
+    - "vào xe. Đi qua mấy hàng ghế trước"
+  enforcement: audit_hidden_bugs.py + R41 hook check
+  cross_ref: [R49 template variation]
+
+R54_reveal_word_count_min:
+  rule: "REVEAL section MIN 600 words (target 800-1050) để depth backstory passenger"
+  hard_floor: 600
+  target_range: [800, 1050]
+  rationale: |
+    REVEAL là core emotional payload. < 600 words = backstory shallow.
+    EP02-04 + EP42, EP44 vi phạm — cần expand backstory.
+  enforcement: audit_hidden_bugs.py check + R41 hook
+  cross_ref: [R39 word count]
+
+R55_driver_R42_strict_enforce:
+  rule: "Bác tài quote ngoài 2-line standard CHỈ allowed trong CLIFFHANGER foreshadow (R42). Detect >1 extra ngoài CLIFFHANGER = HIGH"
+  detection: |
+    EP có >1 'Bác tài[...]"..."' quote ngoài CLIFFHANGER section + ngoài 2 standard lines = vi phạm
+  enforcement: audit_hidden_bugs.py + new check in audit_60_dimensions
+  cross_ref: [R42 driver foreshadow]
+
 R51_dialogue_audit_smart_v2:
   # round 12 add 2026-06-28 (Mr.Long lệnh refine bot báo thông minh)
   rule: "Audit dialogue chỉ flag TRUE ambiguity, accept Ngọc Ngạn first-person monologue"
