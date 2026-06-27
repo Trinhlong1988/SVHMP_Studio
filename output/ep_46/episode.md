@@ -224,7 +224,7 @@ Khải Phong nhói. Khải Phong đã hứa với Hạ Vy điều gì chưa kị
 
 Hình ảnh — đêm tháng tư 2018 — chiều — Hạ Vy nhắn: "Anh ơi tối nay anh có rảnh không? Em muốn bàn chuyện cưới." Khải Phong đáp: "Vâng em — anh rảnh tối — về sớm — anh nấu cơm — bàn cùng em."
 
-Khải Phong đã hứa nấu cơm. Em đã nấu cá kho tộ. Em đã hứa bàn chuyện cưới — không kịp bàn.
+Khải Phong đã hứa nấu cơm. Anh đã nấu cá kho tộ. Anh đã hứa bàn chuyện cưới — không kịp bàn.
 
 Sâu hơn — Khải Phong cố nhớ — em có hứa Hạ Vy điều khác lớn hơn không?
 
@@ -246,14 +246,14 @@ Khải Phong gật. Lệ rơi.
 
 Đêm thứ bốn mươi sáu. Xe đi tiếp. Phía sau — Diêm Điền khuất. Bà Hảo ở lại nhà thờ — quỳ trước Chúa.
 
-Khải Phong cố nhớ thêm về lời hứa Hàn Quốc. Em hứa vào đêm cuối năm 2017 — sau khi hai đứa tốt nghiệp Đại học Kiến trúc cùng nhau. Em bảo: "Hứa thật nhé." Hạ Vy gật. Em đặt vé Hàn Quốc bao giờ? Em không kịp đặt — em hứa miệng — chưa mua. Chỉ tháng tư 2018 — em đi sớm. Lời hứa miệng — không thực hiện được — không có vé. Khải Phong chỉ có trí nhớ về lời hứa — không có vật chứng. Đêm thứ bốn mươi sáu kết thúc — Khải Phong nhói về lời hứa miệng.
+Khải Phong cố nhớ thêm về lời hứa Hàn Quốc. Em hứa vào đêm cuối năm 2017 — sau khi hai đứa tốt nghiệp Đại học Kiến trúc cùng nhau. Em bảo: "Hứa thật nhé." Hạ Vy gật. Em đặt vé Hàn Quốc bao giờ? Anh không kịp đặt — em hứa miệng — chưa mua. Chỉ tháng tư 2018 — em đi sớm. Lời hứa miệng — không thực hiện được — không có vé. Khải Phong chỉ có trí nhớ về lời hứa — không có vật chứng. Đêm thứ bốn mươi sáu kết thúc — Khải Phong nhói về lời hứa miệng.
 
-Khải Phong ngồi yên. Em nhớ rõ Hạ Vy cười khi em hứa Hàn Quốc — em không ngờ em không bao giờ dùng được. Em phải tìm cách giữ lời hứa muộn — như Hữu Duy sẽ làm đêm sau. Đêm bốn mươi sáu kết thúc — Khải Phong chuẩn bị cho đêm M10 tiếp theo. Em đã hiểu sự muộn không phải kết thúc — muộn vẫn có thể giữ qua cách khác.
+Khải Phong ngồi yên. Anh nhớ rõ Hạ Vy cười khi em hứa Hàn Quốc — em không ngờ anh không bao giờ dùng được. Anh phải tìm cách giữ lời hứa muộn — như Hữu Duy sẽ làm đêm sau. Đêm bốn mươi sáu kết thúc — Khải Phong chuẩn bị cho đêm M10 tiếp theo. Anh đã hiểu sự muộn không phải kết thúc — muộn vẫn có thể giữ qua cách khác.
 
 Khải Phong vuốt cánh cát biển trong túi áo gió — vật thứ bốn mươi sáu — em sẽ giữ cùng nhẫn bạc. Cụm vật tổng — em đang xếp dần thành bản đồ. Bốn mươi sáu vật — bốn mươi sáu đêm — bốn mươi sáu câu chuyện song song với Khải Phong.
 
 Khải Phong vuốt áo gió — túi đầy bốn mươi sáu vật. Mưa biển miền Bắc đã hết. Trời chưa sáng. Đêm tháng tư vẫn dài. Khải Phong đợi đêm mai — passenger nào — câu chuyện nào — sẽ đến.
 
-Khải Phong nhói nhẹ. Em hứa Hạ Vy đêm 2017 — em hứa thật. Em sẽ giữ thật — không phải qua chuyến em — qua cách em có thể bây giờ. Hữu Duy đêm mai sẽ chứng minh.
+Khải Phong nhói nhẹ. Em hứa Hạ Vy đêm 2017 — em hứa thật. Anh sẽ giữ thật — không phải qua chuyến em — qua cách anh có thể bây giờ. Hữu Duy đêm mai sẽ chứng minh.
 
-Khải Phong nhói thêm — em đã sai khi không tự đặt vé Hàn Quốc trong tám năm. Em chỉ ngại. Em sẽ đặt vé sang năm.
+Khải Phong nhói thêm — em đã sai khi không tự đặt vé Hàn Quốc trong tám năm. Anh chỉ ngại. Anh sẽ đặt vé sang năm.

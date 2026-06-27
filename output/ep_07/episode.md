@@ -193,7 +193,7 @@ Khi đi qua chỗ Khải Phong, em khẽ nói:
 
 "Chào anh. Chúc anh năm mới."
 
-Khải Phong gật đầu. Em đi tiếp.
+Khải Phong gật đầu. Anh đi tiếp.
 
 Trước khi xuống, em quay đầu nhìn bác tài. Rồi nhìn lên đồng hồ.
 
@@ -209,7 +209,7 @@ Cửa xe khép lại. Xe lăn bánh.
 
 [pause:1000ms]
 
-Bên ngoài, Khải Phong thấy em đi vào con đường đất nhỏ. Phía cuối đường, có ngôi nhà nhỏ, đèn dầu hắt qua cửa sổ. Trên hiên nhà, có bóng một phụ nữ trung niên ngồi đợi — tay cầm chén bún, hơi bốc lên. Bên cạnh có ghế trống.
+Bên ngoài, Khải Phong thấy anh đi vào con đường đất nhỏ. Phía cuối đường, có ngôi nhà nhỏ, đèn dầu hắt qua cửa sổ. Trên hiên nhà, có bóng một phụ nữ trung niên ngồi đợi — tay cầm chén bún, hơi bốc lên. Bên cạnh có ghế trống.
 
 Khải Phong chớp mắt. Bóng người không còn. Chỉ có đèn dầu nhấp nháy.
 

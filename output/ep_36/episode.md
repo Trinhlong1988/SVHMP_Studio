@@ -234,7 +234,7 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 Khải Phong ngồi yên một lúc lâu. Diễm có người yêu hai năm — anh Khải không biết. Em chọn giấu gia đình — em có lý do riêng.
 
-Khải Phong nhói. Hạ Vy có ai bên em đêm em đi? Khải Phong cố nhớ.
+Khải Phong nhói. Hạ Vy có ai bên em đêm anh đi? Khải Phong cố nhớ.
 
 Hình ảnh — bệnh viện Bạch Mai — phòng cấp cứu — Khải Phong đứng ngoài cửa kính. Trong phòng — Hạ Vy nằm cáng — bác sĩ vây quanh.
 
@@ -244,7 +244,7 @@ Khải Phong cố nhớ — ai đưa Hạ Vy vào bệnh viện? Ai gọi cấp 
 
 Đêm Hạ Vy mất — em đi xe máy một mình từ văn phòng Mộc Hà phố Hai Bà Trưng về phố Khâm Thiên. Em đi một mình — không phải sau xe ai.
 
-Nhưng — Khải Phong cố nhớ — bệnh viện gọi Khải Phong lúc khoảng mười giờ tối. Tai nạn xảy ra lúc nào? Khoảng chín giờ. Em đã ở bệnh viện ít nhất một giờ trước khi Khải Phong nhận điện thoại.
+Nhưng — Khải Phong cố nhớ — bệnh viện gọi Khải Phong lúc khoảng mười giờ tối. Tai nạn xảy ra lúc nào? Khoảng chín giờ. Anh đã ở bệnh viện ít nhất một giờ trước khi Khải Phong nhận điện thoại.
 
 Trong một giờ đó — ai đưa em vào? Người đi đường? Cảnh sát? Hay ai đó cụ thể?
 

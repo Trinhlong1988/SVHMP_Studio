@@ -65,9 +65,9 @@ Bác tài lái. Liếc gương — dừng trên Khải Phong rất lâu. Cất l
 
 Khải Phong gật. Tim đập nhanh.
 
-Xe chậm lại trước căn nhà mái ngói nhỏ ven sông — đèn vàng trong nhà còn sáng. Khải Phong nhận ra — nhà bố mẹ Hạ Vy — căn nhà em đã đến hai lần khi Hạ Vy sống.
+Xe chậm lại trước căn nhà mái ngói nhỏ ven sông — đèn vàng trong nhà còn sáng. Khải Phong nhận ra — nhà bố mẹ Hạ Vy — căn nhà anh đã đến hai lần khi Hạ Vy sống.
 
-Khải Phong nhói. Bác tài đem em về chính nhà Hạ Vy.
+Khải Phong nhói. Bác tài đem anh về chính nhà Hạ Vy.
 
 Bên cổng nhà — một phụ nữ trẻ đứng đợi. Khoảng hai mươi bốn tuổi. Áo dài hồng — phong cách áo dài cô dâu. Tóc cột thấp. Tay phải cầm thiệp cưới giấy — phong bì đỏ.
 
@@ -83,7 +83,7 @@ Em mỉm cười. Bảo:
 
 "Anh Khải Phong. Em đã tìm anh tám năm. Đêm nay em gặp được anh."
 
-Khải Phong sốc. Em không phải passenger thường — em là người đời thực — em gái Hạ Vy.
+Khải Phong sốc. Anh không phải passenger thường — em là người đời thực — em gái Hạ Vy.
 
 Xe lăn bánh.
 
@@ -119,7 +119,7 @@ Xe đi qua xóm. Phía bên trái — căn nhà mái ngói cũ — sân có hai 
 
 Hai chị em — Hạ Vy ngoài cửa sổ — Hạ Nhi trên xe — cùng nhìn nhau.
 
-Khải Phong sốc. Lần đầu trong năm mươi đêm — em nhìn rõ mặt Hạ Vy. Mặt em không mờ nữa.
+Khải Phong sốc. Lần đầu trong năm mươi đêm — em nhìn rõ mặt Hạ Vy. Mặt anh không mờ nữa.
 
 "Chị..."
 
@@ -173,7 +173,7 @@ Khải Phong gật. "Anh sẽ đi. Anh sẽ ngồi cùng bàn bố em. Anh sẽ 
 
 Hạ Nhi cười. "Bố em không cần xin lỗi. Bố em chỉ cần thấy anh. Anh đến — đủ."
 
-Em vuốt phong bì thiệp cưới. Đưa Khải Phong.
+Anh vuốt phong bì thiệp cưới. Đưa Khải Phong.
 
 "Anh cầm. Đây là thiệp gốc — em đã in thật — không phải PDF. Em định em sẽ gửi anh sáng mai qua bưu điện. Em đem theo lên xe — em gửi anh trực tiếp."
 
@@ -209,11 +209,11 @@ Hạ Nhi gật. "Em sẽ nhắn bố em sáng mai. Em sẽ nói anh sẽ đến.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Vĩnh Bảo — cây phượng vĩ cổ — bến nhà bố mẹ Hạ Vy. Khải Phong nhận ra rõ — căn nhà em đã đến hai lần.
+Xe chậm lại. Ngã ba Vĩnh Bảo — cây phượng vĩ cổ — bến nhà bố mẹ Hạ Vy. Khải Phong nhận ra rõ — căn nhà anh đã đến hai lần.
 
 Chuông xe ngân. Một tiếng. Tan trong gió biển Hải Phòng.
 
-Hạ Nhi ôm thiệp em đã đưa Khải Phong — em không lấy lại — em để Khải Phong giữ. Đứng dậy.
+Hạ Nhi ôm thiệp anh đã đưa Khải Phong — em không lấy lại — em để Khải Phong giữ. Đứng dậy.
 
 "Chào anh. Sáng mai em sẽ gọi điện bố em. Bố em sẽ đợi anh."
 
@@ -227,11 +227,11 @@ Hạ Nhi bước xuống.
 
 Bên ngoài — Hạ Nhi đi vào sân nhà bố mẹ. Cửa nhà còn sáng — bố mẹ chưa ngủ (trong giấc mơ em). Em mở cổng — đi vào.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ. Hạ Vy xuất hiện trên hiên nhà — đứng đợi em em. Hạ Vy ôm em em một lúc. Hai chị em đứng trên hiên — Hạ Vy vuốt tóc Hạ Nhi.
+Khải Phong chớp mắt — nhìn qua cửa sổ. Hạ Vy xuất hiện trên hiên nhà — đứng đợi em em. Hạ Vy ôm em em một lúc. Hai chị anh đứng trên hiên — Hạ Vy vuốt tóc Hạ Nhi.
 
 Khải Phong nhìn rõ mặt Hạ Vy — em đẹp như trong ký ức — không mờ.
 
-Hạ Vy quay sang xe. Em nhìn Khải Phong qua cửa sổ. Em mỉm cười. Em vẫy tay một lần.
+Hạ Vy quay sang xe. Anh nhìn Khải Phong qua cửa sổ. Em mỉm cười. Em vẫy tay một lần.
 
 Khải Phong vẫy tay lại. Lệ rơi.
 

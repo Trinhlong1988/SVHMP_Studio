@@ -220,7 +220,7 @@ Khi đi qua chỗ Khải Phong, em khẽ nói:
 
 "Chào anh."
 
-Khải Phong gật đầu. Em đi tiếp.
+Khải Phong gật đầu. Anh đi tiếp.
 
 Trước khi xuống, em quay đầu nhìn bác tài. Rồi nhìn lên đồng hồ trên xe.
 
@@ -242,7 +242,7 @@ Cửa xe khép lại. Xe lăn bánh.
 
 Bên ngoài, em đi vào con đường đất nhỏ. Phía cuối đường, ngôi nhà gạch ngói. Trước hiên, cụ bà vẫn ngồi ghế mây, tay vuốt khăn tay khác. Em ngừng ở giữa đường. Cụ bà ngẩng đầu. Hai cái bóng nhìn nhau qua sương.
 
-Khải Phong chớp mắt. Cụ bà không còn. Em đi tiếp.
+Khải Phong chớp mắt. Cụ bà không còn. Anh đi tiếp.
 
 [pause:1000ms]
 

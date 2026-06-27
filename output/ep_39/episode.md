@@ -246,4 +246,4 @@ Khải Phong gật. Lệ rơi nhẹ.
 
 Khải Phong vuốt hạt cơm khô trong tay — hạt cơm bà Hồng Mai đem cho bà Trinh sau tám năm. Lời hứa muộn — vẫn được gửi qua đất.
 
-Khải Phong cố nhớ thêm về anh Hải — đêm Bạch Mai — anh Hải chỉ nói "Em là Hải — em chứng kiến tai nạn." Anh không nói chi tiết em đi đâu — vì sao đi cùng đường — quen Hạ Vy như thế nào. Khải Phong đã sốc — không hỏi sâu. Đêm sau — milestone EP40 — Khải Phong cảm thấy sẽ là đêm khác — bác tài đã ám chỉ.
+Khải Phong cố nhớ thêm về anh Hải — đêm Bạch Mai — anh Hải chỉ nói "Em là Hải — em chứng kiến tai nạn." Anh không nói chi tiết anh đi đâu — vì sao đi cùng đường — quen Hạ Vy như thế nào. Khải Phong đã sốc — không hỏi sâu. Đêm sau — milestone EP40 — Khải Phong cảm thấy sẽ là đêm khác — bác tài đã ám chỉ.

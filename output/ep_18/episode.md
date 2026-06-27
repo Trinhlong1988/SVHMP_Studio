@@ -265,9 +265,9 @@ Khải Phong cố nhớ — em có đọc sổ Hạ Vy không. Cảm giác — k
 
 Sau Hạ Vy mất — sổ ở đâu? Khải Phong cố nhớ. Cảm giác — em cất trong ngăn kéo bàn vẽ. Khải Phong dọn phòng — em đem ngăn kéo bàn vẽ về quê Hải Phòng cùng quần áo em — gửi bố mẹ Hạ Vy.
 
-Bố mẹ Hạ Vy có sổ. Khải Phong không có. Khải Phong không biết Hạ Vy viết gì những đêm cuối — không biết em có viết về chuyện cưới không.
+Bố mẹ Hạ Vy có sổ. Khải Phong không có. Khải Phong không biết Hạ Vy viết gì những đêm cuối — không biết anh có viết về chuyện cưới không.
 
-Khải Phong nhói. Đáng lẽ Khải Phong nên đọc sổ Hạ Vy — em đã mất — em không phiền. Khải Phong tôn trọng quá — đã làm Khải Phong mất một mảnh ký ức em không thể bù.
+Khải Phong nhói. Đáng lẽ Khải Phong nên đọc sổ Hạ Vy — em đã mất — em không phiền. Khải Phong tôn trọng quá — đã làm Khải Phong mất một mảnh ký ức anh không thể bù.
 
 Bác tài liếc gương. "Đêm sau con sẽ ngẫm tiếp về sổ tay Hạ Vy. Đừng vội."
 

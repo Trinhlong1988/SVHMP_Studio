@@ -234,7 +234,7 @@ Hình ảnh — Hạ Nhi — em mười sáu lúc Hạ Vy mất — bây giờ h
 
 [pause:1500ms]
 
-Khải Phong cố nhớ — em có nhắn Khải Phong qua Facebook không? Cảm giác — có. Vài năm gần đây em có nhắn Khải Phong qua Messenger.
+Khải Phong cố nhớ — em có nhắn Khải Phong qua Facebook không? Cảm giác — có. Vài năm gần đây anh có nhắn Khải Phong qua Messenger.
 
 Tin nhắn cuối — Khải Phong cố nhớ. Em nhắn năm vừa rồi — sinh nhật Khải Phong: "Anh ơi sinh nhật anh vui — em chúc anh sức khỏe."
 
@@ -246,11 +246,11 @@ Khải Phong đáp: "OK em chúc mừng em."
 
 Em nhắn: "Anh ơi — em mời anh dự cưới em — em định cưới tháng năm sang năm — em muốn anh có mặt. Anh là người em quý — anh từng yêu chị em."
 
-Khải Phong không trả lời. Em không từ chối — em không đáp.
+Khải Phong không trả lời. Anh không từ chối — em không đáp.
 
 Em mới nhắn lại tuần trước: "Anh ơi sắp cưới rồi — anh đến nhé."
 
-Khải Phong vẫn không trả lời. Em không có lý do — em chỉ ngại.
+Khải Phong vẫn không trả lời. Anh không có lý do — em chỉ ngại.
 
 [pause:1500ms]
 
@@ -262,12 +262,12 @@ Khải Phong gật. Lệ rơi.
 
 Khải Phong cố nhớ chi tiết tin nhắn Hạ Nhi tuần trước. Em nhắn: "Anh ơi sắp cưới rồi — anh đến nhé. Em đã đặt vé máy bay anh từ Hà Nội vào Sài Gòn — em gửi anh qua email. Anh chỉ cần check-in. Em đợi anh."
 
-Em đặt vé cho Khải Phong. Em không hỏi — em không chờ em đồng ý — em đã đặt sẵn.
+Em đặt vé cho Khải Phong. Anh không hỏi — em không chờ em đồng ý — em đã đặt sẵn.
 
-Khải Phong mở email — em check. Có vé. Chuyến Vietnam Airlines tháng năm — đúng ngày cưới em. Em đã trả tiền vé.
+Khải Phong mở email — em check. Có vé. Chuyến Vietnam Airlines tháng năm — đúng ngày cưới em. Anh đã trả tiền vé.
 
-Em — em gái Hạ Vy — em vẫn coi Khải Phong như anh rể. Em không từ bỏ liên lạc — em cố giữ. Khải Phong là người đã từ bỏ — không phải em.
+Em — em gái Hạ Vy — em vẫn coi Khải Phong như anh rể. Anh không từ bỏ liên lạc — em cố giữ. Khải Phong là người đã từ bỏ — không phải em.
 
-Khải Phong nhói. Em đã sai. Em cần đáp em — em cần đi dự cưới em.
+Khải Phong nhói. Anh đã sai. Em cần đáp em — em cần đi dự cưới em.
 
 Đêm bốn mươi lăm — Khải Phong quyết.

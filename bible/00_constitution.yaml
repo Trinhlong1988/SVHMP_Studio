@@ -73,6 +73,32 @@ R44_dictionary_block:
     Vi phạm = R41 HARDLOCK block commit.
   no_inference: "KHÔNG suy luận đúng/sai. Chỉ check theo rule cứng."
 
+R47_narrator_3rd_person_pov_hardlock:
+  # round 9 add 2026-06-28 (CRITICAL BUG phát hiện đọc sample 5 EPs)
+  rule: "Narrator 3rd person — Khải Phong refer = 'anh' / 'Khải Phong' / 'mình' (NEVER 'em' ngoài quoted dialogue)"
+  rationale: |
+    EP01 golden ref (Mr.Long approve): narrative dùng 'Khải Phong... anh...' = 3rd person consistent.
+    EP02-50 em ship sai: 'Khải Phong cố nhớ. Em không nhớ rõ...' = mix 1st/3rd POV.
+    Nghe TTS sẽ confused 'em' nào — Khải Phong hay passenger.
+    Vi phạm narrative POV consistency 49 EPs.
+  enforcement:
+    in_quotes: "Dialogue passenger tự xưng 'em' / 'tôi' OK — accept (R46)"
+    out_of_quotes: "Narrator nói về Khải Phong DÙNG 'anh' hoặc 'Khải Phong' — CẤM 'em'"
+    check_script: tools/audit_pronoun_pov.py
+  no_inference: "Rule rõ — không guess. Trong quotes accept, ngoài quotes Khải Phong = anh."
+  cross_ref: [output/ep_01/episode.md golden ref, BUGS_FIXED B42]
+
+R48_passenger_dialogue_hierarchy_pronoun:
+  # round 9 add 2026-06-28 (EP40 Hải gọi Hạ Vy là 'em' sai)
+  rule: "Passenger dialogue đại từ tuân hierarchy thật: gọi người lớn tuổi hơn = 'anh/chị', người nhỏ tuổi = 'em', cùng tuổi = 'cậu/tớ/bạn'"
+  example_correct: |
+    Hải (22) nói về Hạ Vy (27): 'Em yêu thầm CHỊ Hạ Vy' (chị vì Hạ Vy hơn 5 tuổi)
+    Hải nói về Khải Phong (anh hơn): 'Em đến — ANH cảm ơn em'
+  example_wrong: |
+    Hải nói 'Em yêu thầm Hạ Vy. Em biết EM có bạn trai' (lẫn em — không hiểu em nào)
+  enforcement: Manual review + audit script flag context phụ thuộc age
+  no_inference: "Pre-write check passenger age vs target_person_age"
+
 R46_passenger_first_person_anaphora_accept:
   # round 8 add 2026-06-28 (audit 1.1 phát hiện passenger tự kể "Em..." dài)
   rule: "Anaphora 'Em' / 'Tôi' trong passenger first-person monologue CHẤP NHẬN ≤ 14 consecutive"

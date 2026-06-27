@@ -244,7 +244,7 @@ Khải Phong ở lại Hà Nội. Hai ngày sau tang — Khải Phong về Hà N
 
 [pause:1500ms]
 
-Bố mẹ Hạ Vy ở Hải Phòng — em là con đầu — em còn em gái nhỏ. Sau tang — bố mẹ em không ghé Hà Nội — bố mẹ buồn ở quê. Khải Phong gọi điện hỏi thăm vài lần — sau đó liên lạc thưa.
+Bố mẹ Hạ Vy ở Hải Phòng — em là con đầu — em còn em gái nhỏ. Sau tang — bố mẹ anh không ghé Hà Nội — bố mẹ buồn ở quê. Khải Phong gọi điện hỏi thăm vài lần — sau đó liên lạc thưa.
 
 Em gái Hạ Vy — tên Hạ Nhi — lúc đó học cấp ba — em mười sáu tuổi. Em quý Khải Phong — coi anh rể.
 

@@ -230,11 +230,11 @@ Khải Phong đem điện thoại về quê Hải Phòng cùng quần áo em —
 
 [pause:1500ms]
 
-Bố mẹ Hạ Vy có thấy tin nhắn dở không? Khải Phong cố nhớ. Có thể có. Bố mẹ em có thể đọc tin "Anh ơi em yêu" — em hiểu em đang nhắn cho Khải Phong.
+Bố mẹ Hạ Vy có thấy tin nhắn dở không? Khải Phong cố nhớ. Có thể có. Bố mẹ anh có thể đọc tin "Anh ơi em yêu" — em hiểu em đang nhắn cho Khải Phong.
 
-Bố mẹ em không liên lạc Khải Phong về tin nhắn. Bố mẹ em chỉ giữ điện thoại em — không nói gì.
+Bố mẹ anh không liên lạc Khải Phong về tin nhắn. Bố mẹ anh chỉ giữ điện thoại em — không nói gì.
 
-Khải Phong nhói — Khải Phong đã không giữ điện thoại em. Tin nhắn cuối em — em không có. Em chỉ có ký ức về tin — không có vật chứng.
+Khải Phong nhói — Khải Phong đã không giữ điện thoại em. Tin nhắn cuối em — em không có. Anh chỉ có ký ức về tin — không có vật chứng.
 
 Bác tài liếc gương. "Đêm bốn mươi ba. Con đã nhớ điện thoại Hạ Vy ở bố mẹ em. Đêm sau con sẽ nhớ — bố mẹ em còn liên lạc con không. Đừng vội."
 
@@ -244,9 +244,9 @@ Khải Phong gật. Lệ rơi.
 
 Khải Phong cố nhớ lần cuối em gặp bố mẹ Hạ Vy. Năm thứ hai sau Hạ Vy mất — em về Hải Phòng tang lần một — em ăn cơm chung với bố mẹ em.
 
-Bố mẹ em hiền. Bố em không trách Khải Phong. Mẹ em nắm tay Khải Phong — bảo: "Phong ơi cháu sống tiếp đi — Hạ Vy không trách cháu."
+Bố mẹ em hiền. Bố anh không trách Khải Phong. Mẹ em nắm tay Khải Phong — bảo: "Phong ơi cháu sống tiếp đi — Hạ Vy không trách cháu."
 
-Khải Phong gật. Không nói. Em ăn cơm — quá ngọt — em không hợp khẩu vị Hải Phòng. Em ngồi một giờ — em xin về Hà Nội — em nói có việc gấp.
+Khải Phong gật. Không nói. Em ăn cơm — quá ngọt — em không hợp khẩu vị Hải Phòng. Anh ngồi một giờ — em xin về Hà Nội — em nói có việc gấp.
 
 Sau lần đó — em không về. Em không gọi. Em ngại.
 
@@ -254,14 +254,14 @@ Bố mẹ em chắc đã già — em chưa hỏi thăm sức khỏe. Em sai. Em 
 
 Đêm bốn mươi ba.
 
-Khải Phong định — sáng — em sẽ gọi điện bố mẹ Hạ Vy. Em sẽ hỏi thăm — em sẽ xin lỗi không liên lạc lâu. Em không biết em có gọi được không — em đã đổi điện thoại ba lần — em không lưu số. Em sẽ tìm qua bạn chung — qua Facebook. Đêm thứ bốn mươi ba kết thúc.
+Khải Phong định — sáng — em sẽ gọi điện bố mẹ Hạ Vy. Anh sẽ hỏi thăm — em sẽ xin lỗi không liên lạc lâu. Anh không biết anh có gọi được không — em đã đổi điện thoại ba lần — em không lưu số. Anh sẽ tìm qua bạn chung — qua Facebook. Đêm thứ bốn mươi ba kết thúc.
 
 Khải Phong cố nhớ tên bố mẹ Hạ Vy. Bố em — chú Phạm Văn Hà — sáu lăm tuổi bây giờ. Mẹ em — cô Trần Thị Lan — sáu ba tuổi. Khải Phong đã gặp hai bác nhiều lần khi Hạ Vy còn sống.
 
 Hai bác hiền. Sau Hạ Vy mất — hai bác giữ chuyện Khải Phong là người yêu Hạ Vy — không quên. Hai bác chấp nhận Khải Phong sẽ sống tiếp — không trách.
 
-Khải Phong đã sai khi không liên lạc bốn năm gần. Em không có lý do — chỉ ngại — sợ gặp hai bác sẽ nhớ Hạ Vy nhiều hơn.
+Khải Phong đã sai khi không liên lạc bốn năm gần. Anh không có lý do — chỉ ngại — sợ gặp hai bác sẽ nhớ Hạ Vy nhiều hơn.
 
-Đêm thứ bốn mươi ba — Khải Phong quyết. Em sẽ tìm số bố mẹ Hạ Vy qua Hạ Nhi — em gái Hạ Vy còn liên lạc Khải Phong. Hạ Nhi sẽ cho em số bố mẹ. Em sẽ gọi điện chú Hà — em sẽ xin lỗi.
+Đêm thứ bốn mươi ba — Khải Phong quyết. Anh sẽ tìm số bố mẹ Hạ Vy qua Hạ Nhi — em gái Hạ Vy còn liên lạc Khải Phong. Hạ Nhi sẽ cho em số bố mẹ. Anh sẽ gọi điện chú Hà — em sẽ xin lỗi.
 
 Đêm chưa sáng. Khải Phong còn thời gian suy nghĩ trên xe.

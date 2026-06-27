@@ -242,7 +242,7 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Khải Phong ngồi yên. Hữu Lộc và Hồng ly hôn ba mươi năm — em đi mà em không kịp tha trực tiếp. Em chỉ tha qua Chúa.
+Khải Phong ngồi yên. Hữu Lộc và Hồng ly hôn ba mươi năm — em đi mà anh không kịp tha trực tiếp. Anh chỉ tha qua Chúa.
 
 Khải Phong nhói. Khải Phong và Hạ Vy có chuyện cưới chưa? Đêm cuối Hạ Vy nhắn buổi chiều: "Anh ơi tối nay anh có rảnh không? Em muốn bàn chuyện cưới."
 

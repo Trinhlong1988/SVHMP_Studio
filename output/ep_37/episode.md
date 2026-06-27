@@ -230,7 +230,7 @@ Khải Phong cố nhớ thêm. Đêm Hạ Vy mất — em đi từ văn phòng M
 
 Tại ngã tư đó — Hạ Vy va xe tải. Xe tải lớn — chở vật liệu xây dựng — tài xế vào ngã tư không đúng đèn.
 
-Khải Phong nhớ rõ ngã tư. Khải Phong đã đi qua ngã tư đó hàng trăm lần khi em còn ở phố Khâm Thiên.
+Khải Phong nhớ rõ ngã tư. Khải Phong đã đi qua ngã tư đó hàng trăm lần khi anh còn ở phố Khâm Thiên.
 
 Khải Phong cố nhớ — anh thanh niên gọi cấp cứu cho Hạ Vy là ai? Bệnh viện nói anh đó đứng cùng đường — anh chứng kiến tai nạn — anh gọi xe cấp cứu — anh đưa Hạ Vy vào bệnh viện.
 
