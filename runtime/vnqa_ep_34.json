@@ -2,55 +2,55 @@
   "ep_number": 34,
   "phase_h_version": "H1-H7 v1.0",
   "stats": {
-    "tokens_count": 2656,
-    "sentences_approx": 333,
-    "adverbs_count": 168,
-    "adverbs_ratio": 0.063,
-    "word_count": 2309,
-    "estimated_minutes": 14.9
+    "tokens_count": 2054,
+    "sentences_approx": 204,
+    "adverbs_count": 104,
+    "adverbs_ratio": 0.051,
+    "word_count": 1934,
+    "estimated_minutes": 12.5
   },
   "issues": [
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"đêm\" lặp 24x trong ep",
+      "evidence": "\"khải phong\" lặp 28x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"trên\" lặp 24x trong ep",
-      "suggestion": "Đa dạng từ vựng, dùng synonym"
-    },
-    {
-      "check": "H1_token_repeat",
-      "severity": "warning",
-      "evidence": "\"câu\" lặp 21x trong ep",
+      "evidence": "\"thắp\" lặp 21x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
       "check": "H2_dict_unusual_compound",
       "severity": "minor",
-      "evidence": "Cụm từ dài bất thường: ['` prompt_version', 'REG_LOV_001 signature_object', 'OBJ_DONG_HO_XA_CU signature_setting']",
+      "evidence": "Cụm từ dài bất thường: ['` prompt_version', '0.70 quang_memory_fragment', 'Vĩnh Phúc bell_count']",
       "suggestion": "TENTATIVE — Mr.Long verify trong từ điển VN"
     },
     {
       "check": "H9_stop_consonant_tail",
       "severity": "minor",
-      "evidence": "Word \"biết\" xuất hiện 4x (BigVGAN tail risk)",
+      "evidence": "Word \"khuất\" xuất hiện 2x (BigVGAN tail risk)",
+      "suggestion": "khuất bóng → khuất dần / mờ xa"
+    },
+    {
+      "check": "H9_stop_consonant_tail",
+      "severity": "minor",
+      "evidence": "Word \"biết\" xuất hiện 2x (BigVGAN tail risk)",
       "suggestion": "chưa biết → vẫn chưa hay / vẫn chưa rõ"
     },
     {
       "check": "H10_duration_too_short",
       "severity": "warning",
-      "evidence": "14.9 phút (target 15-18p, max 20p)",
-      "suggestion": "Expand thêm 16 từ để đạt 15p"
+      "evidence": "12.5 phút (target 15-18p, max 20p)",
+      "suggestion": "Expand thêm 391 từ để đạt 15p"
     }
   ],
   "issues_count_by_severity": {
     "critical": 0,
-    "warning": 4,
-    "minor": 2
+    "warning": 3,
+    "minor": 3
   },
   "verdict": "WARN",
   "next_action": "Generator review issues, optional regen"
