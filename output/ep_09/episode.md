@@ -200,7 +200,11 @@ Khi đi qua Quang, cô khẽ nói:
 
 Quang gật đầu.
 
-Trước khi xuống, cô quay đầu nhìn bác tài. Hỏi:
+Trước khi xuống, cô quay đầu nhìn bác tài. Rồi nhìn lên đồng hồ trên xe.
+
+Đồng hồ chỉ bảy giờ mười phút.
+
+Cô hỏi:
 
 "Bác có còn ai để gọi không?"
 

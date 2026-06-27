@@ -187,7 +187,9 @@ Quang ngẩng đầu. Quang chưa kịp trả lời. Cụ đã đi tiếp.
 
 Cụ đi ra cửa xe. Cửa từ từ mở. Gió đêm khép vào.
 
-Trước khi xuống, cụ quay đầu nhìn bác tài. Lâu. Lâu lắm.
+Trước khi xuống, cụ quay đầu nhìn bác tài. Lâu. Lâu lắm. Rồi nhìn lên đồng hồ trên xe.
+
+Đồng hồ chỉ bảy giờ mười phút.
 
 "Bác lái xe này, cụ có cảm giác đã gặp bác từ lâu lắm rồi."
 

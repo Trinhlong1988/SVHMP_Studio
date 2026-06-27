@@ -194,7 +194,11 @@ Khi đi qua Quang, chú khẽ nói:
 
 Quang gật đầu. Chú đi tiếp.
 
-Trước khi xuống, chú quay đầu nhìn bác tài. Hỏi câu ai cũng hỏi:
+Trước khi xuống, chú quay đầu nhìn bác tài. Rồi nhìn lên đồng hồ trên xe.
+
+Đồng hồ chỉ bảy giờ mười phút.
+
+Chú hỏi câu ai cũng hỏi:
 
 "Bác lái xe này bao nhiêu năm rồi?"
 

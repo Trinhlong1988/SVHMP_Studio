@@ -196,7 +196,11 @@ Khi đi qua chỗ Quang, em khẽ nói:
 
 Quang gật đầu. Em đi tiếp.
 
-Trước khi xuống, em quay đầu nhìn bác tài. Em hỏi:
+Trước khi xuống, em quay đầu nhìn bác tài. Rồi nhìn lên đồng hồ trên xe.
+
+Đồng hồ chỉ bảy giờ mười phút.
+
+Em hỏi:
 
 "Bác có còn nhớ bà bác không?"
 
