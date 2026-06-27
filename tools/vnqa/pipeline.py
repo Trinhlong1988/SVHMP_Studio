@@ -101,11 +101,18 @@ if not TIER_1_AI_WORDS:
 TOKEN_REPEAT_WHITELIST = {
     # Vietnamese pronouns (always high freq in narrative)
     'anh', 'chị', 'em', 'cô', 'chú', 'bác', 'ông', 'bà', 'cháu', 'mình', 'tôi', 'nó', 'họ',
+    'con', 'mẹ', 'cha', 'bố', 'cậu', 'mợ', 'dì', 'thầy',  # B37 EP02 fix: family pronoun common
     # Character names (SVHMP recurring — auto-extend qua canon_registry future)
     'quang', 'nam', 'hà', 'khánh', 'tài',
     # Central objects + body parts (high freq expected horror narrative)
     'đồng', 'hồ', 'đồng hồ', 'ghế', 'tay', 'mắt', 'đầu', 'cổ', 'chân', 'mặt',
     'xe', 'kim', 'cửa', 'kính', 'đường', 'đèn',
+    # B37 EP02 fix: passenger generic noun + common narrative verb
+    'gái', 'trai', 'người', 'nhìn', 'biết', 'nói', 'hai', 'một', 'bóng',
+    # Vietnamese numerals (high freq in narrative time/count)
+    'ba', 'bốn', 'năm', 'mười', 'mươi', 'trăm',
+    # Common adverbs/particles (B37 EP02 extension)
+    'lại', 'cũng', 'chỉ', 'rồi', 'đã', 'đang', 'sẽ', 'thì', 'mà', 'nhưng',
 }
 TIER_2_CLUSTER = {
     'thoáng', 'khẽ', 'se sẽ', 'lặng lẽ', 'dần dần',
