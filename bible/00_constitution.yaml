@@ -58,6 +58,26 @@ post_render_gate:
 # ============================================================
 # Mr.Long 27/6 lệnh add intro Hắc Dạ Ký mọi EP.
 
+R41_no_commit_if_gate_fail_HARDLOCK:
+  # round 6 add 2026-06-27 (Mr.Long lệnh "xử lý nghiêm hiến pháp cấm tái diễn")
+  rule: "CẤM TUYỆT ĐỐI commit EP nào nếu post_render_gate FAIL bất kỳ check nào"
+  enforcement: |
+    Auto-block via git pre-commit hook (.githooks/pre-commit):
+    - Hook scan staged EP files (output/ep_*/episode.md)
+    - Run post_render_gate.py cho mỗi EP staged
+    - Nếu BẤT KỲ EP nào FAIL → BLOCK commit + print FAIL details
+    - Em/AI KHÔNG được bypass hook (--no-verify CẤM trừ khi Mr.Long explicit)
+  rationale: |
+    Em đã vi phạm R39 hard_floor 2 lần (EP21-25 + EP31-34) DÙ đã có rule cứng.
+    Cause: không tự verify trước commit — chạy gate sau commit phát hiện muộn.
+    Fix: gate phải BLOCK ở pre-commit — physically không commit được.
+  violation_action: |
+    Vi phạm R41 = LOG B40 BUGS_FIXED + memory feedback nghiêm trọng.
+    Mỗi vi phạm = +1 vào counter "rule_break_count" trong VERSION.md.
+    Counter >= 3 → escalate Mr.Long review workflow.
+  no_exception: true
+  cross_ref: [.githooks/pre-commit, BUGS_FIXED.md B40]
+
 R40_intro_hac_da_ky_mandatory:
   rule: "Mọi EP PHẢI prepend intro 5 elements ở đầu file episode.md trước metadata block"
   elements:

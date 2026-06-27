@@ -1,8 +1,9 @@
 ---
 project: SVHMP_Studio
-current_round: 15
+current_round: 16
 last_update_ts: 2026-06-27
-last_update_by: Claude session 27/6 (round 15 — B37 EP11-41 lộn xộn no arc + hiến pháp v1.1 R33-R38 + bible/21 arc design)
+last_update_by: Claude session 27/6 (round 16 — B40 fix toàn bộ EP01-35 + R41 HARDLOCK + pre-commit hook auto-block + counter rule_break)
+rule_break_count: 2  # R39 vi phạm 2 lần (EP21-25 + EP12-19/EP31-34) — counter R41
 schema_version: 1
 ---
 

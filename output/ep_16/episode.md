@@ -243,3 +243,20 @@ Bác tài liếc gương. "Đêm mười sáu. Con bắt đầu nhớ cách Hạ
 Khải Phong gật. Không hỏi.
 
 Đêm thứ mười sáu. Xe đi tiếp về phía đường vành đai. Phía sau — Phú Xuyên khuất. Cô Hoàng Yến ở lại chùa — quỳ — tụng — gửi chậu cúc mẹ cho chùa.
+
+
+[pause:800ms]
+
+Khải Phong ngồi yên một lúc lâu sau khi cô Hoàng Yến xuống xe. Ba vật cúc trong túi giờ — cánh cúc khô đêm mười ba + sợi chỉ thêu cúc đêm mười bốn + cánh cúc tươi vàng nhạt đêm này. Cụm cúc đã có ba — bác tài đã hứa đến đêm mười chín sẽ có vật thứ tư hoàn thành cluster.
+
+Khải Phong cố nhớ — bà ngoại Hạ Vy — Khải Phong nhớ tên gì không? Cảm giác — Khải Phong đã gặp bà một lần. Hạ Vy đem Khải Phong về quê Hải Phòng năm hai đại học — Khải Phong gặp bà ngoại — bà tám mươi tuổi lúc đó — bà rất hiền.
+
+Bà ngoại tên Liên. Bà ngoại Liên — Khải Phong nhớ rõ tên. Bà ngoại Liên trồng cúc trong vườn sau nhà — vườn nhỏ chừng sáu mét vuông — đầy cúc vàng nhạt mỗi mùa thu.
+
+Khải Phong nhớ — Hạ Vy đem Khải Phong vào vườn cúc bà — Hạ Vy cài một bông cúc lên tai Khải Phong — Khải Phong xấu hổ — cười. Bà ngoại Liên thấy — bảo: "Hai đứa con đẹp lắm — bà chụp ảnh."
+
+Bà chụp ảnh hai đứa — Khải Phong và Hạ Vy đứng giữa vườn cúc — cài cúc lên tai. Ảnh ấy — Khải Phong cố nhớ — Hạ Vy đem về Hà Nội — đặt trên bàn vẽ phòng trọ Khâm Thiên — đến đêm Hạ Vy mất ảnh vẫn còn.
+
+Bác tài liếc gương. "Đêm sau con sẽ nhớ — ảnh ấy bây giờ ở đâu — con đem theo khi chuyển phòng trọ không. Đừng vội."
+
+Khải Phong gật.

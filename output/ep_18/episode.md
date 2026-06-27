@@ -251,3 +251,26 @@ Bác tài liếc gương. "Đêm mười tám. Con bắt đầu cảm thấy có
 Khải Phong gật. Không hỏi.
 
 Đêm thứ mười tám. Xe đi tiếp. Phía sau — Hoàn Kiếm khuất. Linh Trang ở lại quán — đứng ngoài cửa — nhìn vào bàn còn tro.
+
+
+[pause:800ms]
+
+Khải Phong ngồi yên một lúc lâu. Một quyển sổ tay — chữ tay nhỏ tròn — Khải Phong cảm thấy quen. Hạ Vy có viết sổ tay không?
+
+Hình ảnh — phòng trọ Khâm Thiên — Hạ Vy ngồi bàn vẽ — không phải đang vẽ — đang viết sổ. Hạ Vy có một quyển sổ tay nhỏ — bìa cứng xanh đậm — em viết mỗi tối trước khi ngủ.
+
+Khải Phong nhớ. Hạ Vy viết nhật ký. Em viết về ngày em vẽ bài gì — em uống cà phê với ai — em nghĩ gì.
+
+Khải Phong cố nhớ — em có đọc sổ Hạ Vy không. Cảm giác — không. Khải Phong tôn trọng — em không bao giờ mở sổ em viết. Sổ Hạ Vy là riêng em.
+
+Sau Hạ Vy mất — sổ ở đâu? Khải Phong cố nhớ. Cảm giác — em cất trong ngăn kéo bàn vẽ. Khải Phong dọn phòng — em đem ngăn kéo bàn vẽ về quê Hải Phòng cùng quần áo em — gửi bố mẹ Hạ Vy.
+
+Bố mẹ Hạ Vy có sổ. Khải Phong không có. Khải Phong không biết Hạ Vy viết gì những đêm cuối — không biết em có viết về chuyện cưới không.
+
+Khải Phong nhói. Đáng lẽ Khải Phong nên đọc sổ Hạ Vy — em đã mất — em không phiền. Khải Phong tôn trọng quá — đã làm Khải Phong mất một mảnh ký ức em không thể bù.
+
+Bác tài liếc gương. "Đêm sau con sẽ ngẫm tiếp về sổ tay Hạ Vy. Đừng vội."
+
+Khải Phong gật.
+
+Đêm thứ mười tám kết thúc. Khải Phong cảm thấy mỗi đêm nhớ thêm một điều — nhưng cũng phát hiện một điều mình đã không làm. Hai mặt: nhớ + hối tiếc — đi song song. Đêm sau sẽ có thêm passenger — Khải Phong sẽ nhớ thêm — và hối tiếc thêm. Cứ vậy đến đêm chín mươi.

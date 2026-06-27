@@ -2,14 +2,20 @@
   "ep_number": 17,
   "phase_h_version": "H1-H7 v1.0",
   "stats": {
-    "tokens_count": 1797,
-    "sentences_approx": 218,
-    "adverbs_count": 88,
-    "adverbs_ratio": 0.049,
-    "word_count": 1606,
-    "estimated_minutes": 10.4
+    "tokens_count": 2224,
+    "sentences_approx": 257,
+    "adverbs_count": 118,
+    "adverbs_ratio": 0.053,
+    "word_count": 2070,
+    "estimated_minutes": 13.4
   },
   "issues": [
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"khải phong\" lặp 29x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
     {
       "check": "H1_token_repeat",
       "severity": "warning",
@@ -19,13 +25,7 @@
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"usb\" lặp 13x trong ep",
-      "suggestion": "Đa dạng từ vựng, dùng synonym"
-    },
-    {
-      "check": "H1_token_repeat",
-      "severity": "warning",
-      "evidence": "\"đêm\" lặp 12x trong ep",
+      "evidence": "\"đêm\" lặp 20x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
@@ -55,8 +55,8 @@
     {
       "check": "H10_duration_too_short",
       "severity": "warning",
-      "evidence": "10.4 phút (target 15-18p, max 20p)",
-      "suggestion": "Expand thêm 719 từ để đạt 15p"
+      "evidence": "13.4 phút (target 15-18p, max 20p)",
+      "suggestion": "Expand thêm 254 từ để đạt 15p"
     }
   ],
   "issues_count_by_severity": {

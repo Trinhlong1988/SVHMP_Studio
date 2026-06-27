@@ -243,3 +243,14 @@ Bác tài liếc gương. "Đêm mười ba. Cúc khô sẽ trở lại đêm ma
 Khải Phong gật.
 
 Đêm thứ mười ba. Xe đi tiếp về phía đường vành đai. Phía sau — Mỹ Đức khuất. Anh Bình ở lại bên mộ bố — quỳ — không vội đứng.
+
+
+[pause:800ms]
+
+Khải Phong nhìn ra cửa sổ — đường vẫn vắng. Mưa đã ngớt — chỉ còn không khí ẩm. Khải Phong cảm thấy đêm nay khác — đêm trước Khải Phong chỉ ngẫm về Hạ Vy mơ hồ. Đêm này — cụ thể hơn — mảnh cánh cúc khô từ vườn bố anh Bình kết nối với hình ảnh Hạ Vy cài cúc lên tai dưới gốc cây phượng sân trường kiến trúc.
+
+Bác tài liếc gương — không thêm lời. Chỉ chậm nhịp ngón trỏ trên vô-lăng ba cái — như đồng cảm.
+
+Khải Phong cất cánh cúc vào túi áo gió cẩn thận — không để bị nát giữa các vật khác. Khải Phong biết — cánh cúc này sẽ là một trong nhiều cánh cúc Khải Phong nhặt — sẽ thành cụm vật quan trọng — bác tài đã hứa.
+
+Đêm thứ mười ba — Khải Phong đã đếm — đêm thứ mười ba trên chuyến xe này. Mỗi đêm Khải Phong nhớ thêm một mảnh ký ức nhỏ. Ký ức về Hạ Vy đang trở lại — từng chút — từng cánh cúc — từng vật.

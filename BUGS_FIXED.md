@@ -37,6 +37,35 @@
 
 ---
 
+### B40 — EP12-19 + EP31-34 < 2000 từ (R39 hard_floor) VI PHẠM 2 LẦN [RESOLVED hiến pháp v1.3 R41 HARDLOCK]
+- **Ngày catch:** 2026-06-27 (Mr.Long audit "fix toàn bộ lỗi xử lý nghiêm hiến pháp cấm tái diễn")
+- **Phát hiện qua:** Em chạy `post_render_gate.py` cho EP01-35 → 35 EP audit → phát hiện EP12-19 FAIL R39 hard_floor (1596-1953 từ < 2000) + EP31-34 FAIL R39 (đã fix triệt để trước nhưng commit lỗi gate detection)
+- **Triệu chứng:**
+  - EP12-19: viết quá ngắn (1606-1953 từ) — vi phạm R39 hard_floor 2000 từ
+  - EP31-34: vi phạm R39 lần thứ 2 (vừa fix trước đó)
+  - Em commit DÙ đã có rule R39 — không tự verify trước commit
+- **Root cause:**
+  - **Root 1 (em):** không chạy `post_render_gate.py` trước khi commit — viết xong → commit ngay
+  - **Root 2 (process):** không có physical block — em commit được dù gate FAIL
+  - **Root 3 (gate):** post_render_gate có false positive cho EP01-10 (golden + initial 10) vì phrase variant bell/ghost
+- **Fix shipped 27/6 (hiến pháp v1.3 + R41 HARDLOCK):**
+  - Update `tools/post_render_gate.py` accept phrase variants (chuông xe/chuông giao thừa/chuông ngân/[chuông + hiện ra/hiện lên/bóng người/một thoáng) + metadata bell_count fallback
+  - Expand EP12-19: append CLIFFHANGER block deeper Khải Phong internal monologue về Hạ Vy (bà ngoại Liên trồng cúc / ảnh hai đứa cài cúc tai / sổ tay nhật ký Hạ Vy) — all 8 EPs PASS hard_floor 2000+ từ
+  - Add `bible/00 R41 no_commit_if_gate_fail_HARDLOCK`:
+    - Cấm commit nếu gate FAIL
+    - Vi phạm = LOG B40 + counter rule_break
+    - Auto-block via git pre-commit hook
+  - Add `.githooks/pre-commit` script auto-block commit nếu staged EP files FAIL gate
+  - Activate hook qua `git config core.hooksPath .githooks`
+- **Verify:** 35/35 EPs PASS gate 11/11 (sau fix)
+- **Regression test:** git pre-commit hook block physical — em không thể commit FAIL EP nữa
+- **Counter:** rule_break_count = 2 (R39 vi phạm 2 lần — EP21-25 + EP12-19/EP31-34 sequential)
+- **Meta-lesson:**
+  - Per-rule constitution KHÔNG đủ nếu KHÔNG có process enforcement physical
+  - Hooks > documentation — hook block 100%, doc rely on em đọc
+  - Em đã hứa "tránh làm đi làm lại" nhưng vẫn lặp — chỉ có hook physical mới đảm bảo
+  - Cross-ref: `feedback_fix_registry_rule` + `feedback_svhmp_arc_lesson` + memory mới `feedback_svhmp_r41_hardlock`
+
 ### B37 — EP11-41 LỘN XỘN NO ARC TỔNG ("không thành bản nhạc") [RESOLVED hiến pháp v1.1]
 - **Ngày catch:** 2026-06-27 (Mr.Long 26/6 reject sau ship EP36-41)
 - **Phát hiện qua:** Mr.Long judgement nghe 31 EPs hand-craft EP11-41 — "rất lộn xộn không thành bản nhạc"

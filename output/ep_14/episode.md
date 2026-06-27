@@ -239,3 +239,20 @@ Bác tài liếc gương. "Đêm mười bốn. Hai vật cùng symbol — bắt
 Khải Phong gật.
 
 Đêm thứ mười bốn. Xe đi tiếp về phía đường vành đai. Phía sau — Chương Mỹ khuất. Bà Tâm Đan ở lại bên mộ vô danh — quỳ — gửi khăn — gửi ba mươi năm hối tiếc qua đất.
+
+
+[pause:800ms]
+
+Khải Phong ngồi yên một lúc lâu. Hai vật cúc trong túi — cánh cúc khô đêm mười ba + sợi chỉ thêu cúc đêm mười bốn. Hai vật rời rạc — hai chủ — không quen nhau. Nhưng cùng symbol.
+
+Khải Phong cố nhớ — Hạ Vy thực sự thích cúc không? Hay chỉ một lần Hạ Vy cài cúc lên tai?
+
+Hình ảnh — sân trường kiến trúc — Hạ Vy ngồi gốc cây phượng — cài một bông cúc vàng vào tai trái — cười nhẹ. Khải Phong nhớ rõ. Đêm đó — buổi cuối tuần — Khải Phong và Hạ Vy ngồi đọc bài kiểm tra với nhau.
+
+Hạ Vy cài bông cúc — Khải Phong hỏi: "Em hái ở đâu?" Hạ Vy đáp: "Em hái ở vườn cô em ngoại — bà thích cúc — bà trồng cúc cả vườn — em đem theo một bông."
+
+Khải Phong nhớ. Hạ Vy có một bà ngoại trồng cúc. Quê bà ngoại Hạ Vy — Khải Phong không nhớ chính xác — có thể Hải Phòng — cùng quê Hạ Vy. Hoặc nơi khác.
+
+Bác tài liếc gương. "Đêm sau con sẽ nhớ — quê bà ngoại Hạ Vy ở đâu — Hạ Vy có hay đem cúc từ vườn bà không. Đừng vội."
+
+Khải Phong gật.

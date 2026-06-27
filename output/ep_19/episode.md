@@ -245,3 +245,26 @@ Bác tài liếc gương. "Đêm mười chín. Cụm cúc đủ bốn. Đêm ma
 Khải Phong gật. Không hỏi.
 
 Đêm thứ mười chín. Xe đi tiếp. Phía sau — Đông Anh khuất. Bích Hoa ở lại bên mộ — quỳ — không vội đi.
+
+
+[pause:800ms]
+
+Khải Phong ngồi yên. Bốn vật cúc đã đủ. Bác tài hứa từ đêm mười ba — bốn vật cúc thành cluster. Đêm này hoàn thành.
+
+Khải Phong cố nhớ thêm. Hạ Vy cài cúc tai — Hạ Vy thích cúc — Hạ Vy có sổ tay viết nhật ký. Mỗi đêm Khải Phong nhớ thêm một chi tiết.
+
+Đêm sau — đêm milestone EP20 — Khải Phong cảm thấy sẽ là đêm quan trọng. Bác tài đã ám chỉ — đến đêm hai mươi Khải Phong sẽ ngẫm cụm cúc rõ hơn — sẽ hiểu vì sao bốn vật rời rạc cùng có cúc.
+
+Khải Phong cảm thấy — bác tài đang dẫn Khải Phong từng bước. Mỗi đêm một mảnh. Không vội. Không ép. Bác tài để Khải Phong tự nhớ — không kể trực tiếp.
+
+Đêm thứ mười chín. Còn bảy mươi mốt đêm nữa — nếu chuyến xe có chín mươi đêm như bác tài ám chỉ. Khải Phong không biết mục đích cuối — chỉ biết mỗi đêm Khải Phong đang gần hơn với Hạ Vy — không phải vật lý — là ký ức.
+
+Bác tài liếc gương — không nói. Chỉ chậm nhịp ngón trỏ ba cái — như đồng cảm.
+
+Khải Phong gật. Đêm thứ mười chín kết thúc.
+
+Đêm thứ mười chín kết thúc. Phía sau xe — Đông Anh khuất hoàn toàn. Khải Phong ngồi ghế thứ ba — tay đỡ túi áo gió đầy mười chín vật — bốn vật cúc xếp riêng — không trộn. Cụm cúc đã đủ. Đêm sau là milestone — đêm hai mươi — đêm Khải Phong sẽ xếp các vật ra sàn xe — đếm — nhìn — ngẫm. Bác tài đã hứa đêm hai mươi sẽ là đêm Khải Phong khóc lần đầu. Khải Phong chưa biết vì sao — Khải Phong chỉ đợi.
+
+Khải Phong vuốt cánh cúc cuối cùng — cánh cúc vàng đậm từ vòng hoa Bích Hoa. Cánh cuối hoàn thành cluster cúc bốn vật.
+
+Bác tài cười nhẹ — Khải Phong thấy qua gương — bác tài hiếm khi cười — đêm này có cười. Như đồng tình — Khải Phong đã đến đêm quan trọng. Đêm sau — milestone — sẽ là đêm khác.

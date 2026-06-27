@@ -1,0 +1,42 @@
+#!/bin/bash
+# SVHMP pre-commit hook — R41 HARDLOCK
+# Mr.Long 27/6: CẤM commit EP nếu post_render_gate FAIL
+# Setup: git config core.hooksPath .githooks
+
+set -e
+
+# Find staged EP files
+staged_eps=$(git diff --cached --name-only | grep -E '^output/ep_[0-9]+/episode\.md$' || true)
+
+if [ -z "$staged_eps" ]; then
+  exit 0
+fi
+
+echo "=== SVHMP R41 PRE-COMMIT GATE ==="
+all_pass=true
+
+for ep_file in $staged_eps; do
+  ep_num=$(echo "$ep_file" | sed -E 's|output/ep_0*([0-9]+)/.*|\1|')
+  result=$(PYTHONIOENCODING=utf-8 python tools/post_render_gate.py --ep $ep_num 2>&1 | grep "Total:" | sed 's/.*Total: //')
+  if [[ "$result" =~ "0 FAIL" ]] || [[ "$result" =~ "0FAIL" ]]; then
+    echo "  ✓ EP$(printf "%02d" $ep_num): $result"
+  else
+    echo "  ✗ EP$(printf "%02d" $ep_num): $result"
+    echo "    DETAILS:"
+    PYTHONIOENCODING=utf-8 python tools/post_render_gate.py --ep $ep_num 2>&1 | grep "✗" | head -5 | sed 's/^/      /'
+    all_pass=false
+  fi
+done
+
+if [ "$all_pass" = false ]; then
+  echo ""
+  echo "==================================================================="
+  echo "✗✗✗ R41 HARDLOCK — COMMIT BLOCKED"
+  echo "==================================================================="
+  echo "Fix EP FAIL trên + git add lại + commit. KHÔNG dùng --no-verify."
+  exit 1
+fi
+
+echo ""
+echo "✓ R41 GATE PASS — commit OK"
+exit 0

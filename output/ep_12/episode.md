@@ -253,3 +253,5 @@ Khải Phong gật.
 Đêm thứ mười hai. Xe đi xuống dốc cầu. Phía dưới — mặt sông Hồng phẳng. Đồng hồ xà cừ đã chìm. Anh Khôi đã tan.
 
 Khải Phong vuốt mảnh xà cừ trong túi. Lạnh.
+
+Hai mảnh xà cừ — hai đêm — hai cô gái khác nhau. Nhưng đồng hồ kim phút đều dừng đúng bảy giờ mười phút. Khải Phong cố nhớ — có một lần nào Khải Phong nhìn vào đồng hồ — kim dừng đúng giờ này không. Cảm giác — có. Đêm gì đó — có thể đêm Hạ Vy mất — Khải Phong nhìn đồng hồ điện thoại — kim cũng bảy giờ mười. Khải Phong không chắc — kỉ niệm mờ. Đêm sau Khải Phong sẽ nhớ rõ hơn — bác tài đã hứa giúp Khải Phong nhớ dần qua từng passenger.
