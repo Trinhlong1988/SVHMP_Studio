@@ -89,7 +89,7 @@ object_library:
     pairable_regret_archetypes: [unspoken_love, broken_promise]
     pairable_relationships: [lover, spouse]
     pairable_settings: [setting_san_bay, setting_dem_thang_tu_HN]
-    used_count: 1                    # ep_01 (Quang→cô gái áo gió xanh)
+    used_count: 1                    # ep_01 (Khải Phong→cô gái áo gió xanh)
     last_used_ep: 1
     notes: "Kim dừng đúng giờ người đó mất. ARC_0001 carry."
 

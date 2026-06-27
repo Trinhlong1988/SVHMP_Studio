@@ -25,19 +25,19 @@ qa_result:
       beat_1_curiosity: FOUND       # "đồng hồ kim dừng" + "không hiểu sao mang theo"
       beat_2_unease: FOUND          # biển báo "Cầu Long Biên — 2 km" + "Hay là có?"
       beat_3_empathy: FOUND         # cô gái ghế 8 ngồi đợi, không hỏi
-      beat_4_choking_emotion: FOUND # "Tôi nhớ ra rồi… Bảy giờ mười. Là lúc Hà mất."
+      beat_4_choking_emotion: FOUND # "Tôi nhớ ra rồi… Bảy giờ mười. Là lúc Hạ Vy mất."
       beat_5_lingering_aftertaste: FOUND # cô gái áo gió xanh ngồi ghế 7 + "Chưa tới lúc."
     reveal_quality: STRONG
     aftertaste: light_haunting   # "ám ảnh nhẹ" enum valid
     evidence:
-      - quote: "Tôi nhớ ra rồi… Bảy giờ mười. Là lúc Hà mất. Tôi giữ đồng hồ này. Kim dừng đúng giờ Hà mất."
+      - quote: "Tôi nhớ ra rồi… Bảy giờ mười. Là lúc Hạ Vy mất. Tôi giữ đồng hồ này. Kim dừng đúng giờ Hạ Vy mất."
         reason: "beat_4 REGRET LINE 3 phần đầy đủ (nhớ + việc + irreversible)"
       - quote: "Còn lại tiếng mưa. Và một câu chưa kịp nói, dừng lại ở bảy giờ mười."
         reason: "beat_5 lingering — soul aftertaste 'câu chưa kịp nói' = fear_source = unsaid_words"
       - quote: "Tôi thương Hà từ năm lớp mười một. Không nói."
         reason: "unspoken_love archetype (regret_library_v2) — match longing core_feeling"
       - quote: "Tôi sợ mở ngăn ra, kim đồng hồ vẫn dừng bảy giờ mười. Tôi sợ nhận ra Hà thật sự không quay lại."
-        reason: "emotional_core_line: việc đã có cơ hội (mở ngăn) + lý do nhỏ (sợ) + hậu quả irreversible (Hà không quay lại)"
+        reason: "emotional_core_line: việc đã có cơ hội (mở ngăn) + lý do nhỏ (sợ) + hậu quả irreversible (Hạ Vy không quay lại)"
     issues:
       - id: minor_001
         severity: minor
@@ -51,7 +51,7 @@ qa_result:
       - quote: '"Con đã nhớ ra chưa?" (×2) + "Chưa tới lúc." (×1)'
         reason: "Bác tài 2 câu chuẩn — đúng schema bible/03_character_bible (KHÔNG câu thứ 3)"
       - quote: "Cô tóc xõa. Áo gió xanh nhạt. Cô không nhớ mình lên xe lúc nào."
-        reason: "Passenger replacement rule — Quang rời ghế 7 → cô gái mới lên ghế 7 ngay 2 giây sau"
+        reason: "Passenger replacement rule — Khải Phong rời ghế 7 → cô gái mới lên ghế 7 ngay 2 giây sau"
     lore_errors: []
     state_errors:
       - id: state_001
@@ -94,9 +94,9 @@ qa_result:
   tts:
     score: 90
     evidence:
-      - quote: "Đêm đó mưa từ bảy giờ. Quang ngồi ghế số bảy."
+      - quote: "Đêm đó mưa từ bảy giờ. Khải Phong ngồi ghế số bảy."
         reason: "HOOK pause pattern clear — 2 câu ngắn 5/4 từ, breath natural"
-      - quote: '"Bảy giờ mười." (pause) "Là lúc Hà mất."'
+      - quote: '"Bảy giờ mười." (pause) "Là lúc Hạ Vy mất."'
         reason: "beat_4 REGRET LINE TTS cadence chuẩn — 3 từ + breath + 4 từ"
     problem_lines: []
     robotic_sections: []

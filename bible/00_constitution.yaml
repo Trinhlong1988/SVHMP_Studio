@@ -204,8 +204,8 @@ SERIES_ARC_RULES:
     cross_ref: [bible/09_emotion_intensity]
 
   R35_quang_memory_unlock_progressive:
-    rule: "Mỗi 5 EPs Quang unlock 1 memory fragment (M1-M18 cho 90 EPs)"
-    rationale: "Random reveal = no momentum. Progressive unlock = khán giả track Quang đi đâu về đâu"
+    rule: "Mỗi 5 EPs Khải Phong unlock 1 memory fragment (M1-M18 cho 90 EPs)"
+    rationale: "Random reveal = no momentum. Progressive unlock = khán giả track Khải Phong đi đâu về đâu"
     progression_table: bible/21_series_arc_design.yaml#quang_memory_arc
     enforcement: |
       Generator load fragment_M_for_EP → must mention in CLIFFHANGER section.
@@ -226,7 +226,7 @@ SERIES_ARC_RULES:
     rule: "Milestone EPs phải KHÁC EP thường — escalation peak + reveal moment"
     distinctness_criteria:
       - intensity_level >= phase_peak (+0.05 vs adjacent EPs)
-      - reveal_moment present (Quang memory crisis / driver extra line / cross-EP echo cluster)
+      - reveal_moment present (Khải Phong memory crisis / driver extra line / cross-EP echo cluster)
       - emotional_aftertaste deeper (3 dòng dư âm thay vì 1)
     enforcement: |
       Generator load milestone_profile cho EP_n in [10,20,30,40,50,60,70,80,90].
@@ -238,7 +238,7 @@ SERIES_ARC_RULES:
     sub_arc_types:
       - symbol_clustering: "3+ vật cùng symbol (hoa cúc khô / đồng hồ kim 7:10 / etc)"
       - geographic_arc: "vật arrange theo bản đồ địa lý stops"
-      - temporal_arc: "vật arrange theo năm — Quang nhận time pattern"
+      - temporal_arc: "vật arrange theo năm — Khải Phong nhận time pattern"
     rationale: "38 vật rời rạc = 38 fragments. Vật có sub-arc = mosaic story"
     enforcement: |
       Generator load sub_arc_target cho EP_n.

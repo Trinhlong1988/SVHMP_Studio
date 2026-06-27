@@ -53,7 +53,8 @@ def validate_chunk(sec, idx, text, prev_text='', next_text=''):
                         f'reword 1 of the 2 to non-{base} synonym'))
                     break
 
-    # R67 — STOP-CONSONANT TAIL
+    # R67 — STOP-CONSONANT TAIL + R76 OPEN-VOWEL TAIL
+    OPEN_VOWEL_TAIL = {'nữa','mãi','ngày','tay','dài','ai','mai','đời','ơi','trời','vời','khơi','đâu','sau','lâu','đau','xa','ra','qua','thưa','mưa','vừa','rồi','chơi','trôi','tựa','lúa','đầy'}
     sents = [s.strip() for s in re.split(r'[.!?…]', text) if s.strip()]
     if sents:
         last_sent = sents[-1].strip().strip('"').strip("'").strip(',').strip()
@@ -65,6 +66,10 @@ def validate_chunk(sec, idx, text, prev_text='', next_text=''):
                     issues.append(Issue('R67', 'HIGH', sec, idx,
                         f'tail stop-consonant "{last_word}"',
                         entry['fix_examples'][0] if entry['fix_examples'] else 'reword tail to open-vowel or soft consonant'))
+            if last_word in OPEN_VOWEL_TAIL:
+                issues.append(Issue('R76', 'HIGH', sec, idx,
+                    f'tail open-vowel "{last_word}" (BigVGAN phù risk)',
+                    'reword to closed nasal /n/m/ng/ — vd "lặng im", "im lìm", "vắng tanh", "khôn cùng"'))
 
     # R73 — VERB MISUSE (thốt + others)
     for verb, guide in VERB_GUIDE.items():
@@ -75,6 +80,31 @@ def validate_chunk(sec, idx, text, prev_text='', next_text=''):
                 issues.append(Issue('R73', 'HIGH', sec, idx,
                     f'verb misuse "{pat}" ({verb})',
                     f'use {list(guide.get("alternative_when_wrong", {}).values())[0] if guide.get("alternative_when_wrong") else "valid_collocation"}'))
+
+    # R74 — anaphora repeat (cross-chunk phrase opener)
+    if prev_text:
+        opener_cur = ' '.join(text.strip().split()[:2]).lower().strip('".,!?…')
+        opener_prev = ' '.join(prev_text.strip().split()[:2]).lower().strip('".,!?…')
+        if opener_cur and opener_cur == opener_prev and len(opener_cur) >= 4:
+            issues.append(Issue('R74', 'HIGH', sec, idx,
+                f'anaphora "{opener_cur}" repeated from prev chunk',
+                'escalate emotion synonym (entry→middle→peak)'))
+
+    # R74.2 — phrase ≥3w lặp cross-chunk anywhere (not just opener)
+    if prev_text:
+        def grams(s, n=3):
+            ws = re.findall(r'\w+', s.lower())
+            return [' '.join(ws[i:i+n]) for i in range(len(ws)-n+1)]
+        cur_grams = set(grams(text, 3))
+        prev_grams = set(grams(prev_text, 3))
+        common = cur_grams & prev_grams
+        # exclude common stopword grams
+        STOP_GRAMS = {'của hôm ấy','trong lòng anh','trong tay anh','ở phía sau','một chiếc đồng','chiếc đồng hồ','bảy giờ mười','ghế số bảy','cổng b sân','b sân bay','cô gái ghế','quang nhìn xuống','quang quay lại','quang thở ra','một hơi dài','như có ai','bên cạnh anh','phía trước anh','bác tài liếc','liếc gương chiếu','gương chiếu hậu','ở ghế số','ghế số chín','ghế số mười','ghế số tám','ghế số hai'}
+        flagged = [g for g in common if g not in STOP_GRAMS and len(g) >= 8]
+        for g in flagged:
+            issues.append(Issue('R74.2', 'HIGH', sec, idx,
+                f'phrase "{g}" repeated in prev chunk',
+                'reword cur chunk - vary expression'))
 
     # R3 — repetition ≥3 same content word in 1 chunk
     words = re.findall(r'\b\w{4,}\b', tl)

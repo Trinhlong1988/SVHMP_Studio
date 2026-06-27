@@ -130,7 +130,7 @@ arcs:
   ARC_0001:
     id: ARC_0001
     title: "Đồng hồ xà cừ kim 7:10 — Hà callback"
-    desc: "Quang giữ đồng hồ tặng Hà 8 năm. Hà mất taxi tai nạn JFK lúc 7:10. Cô gái áo gió xanh ngồi vào ghế 7 nhặt đồng hồ, áp vào ngực như nhớ ra điều gì xa."
+    desc: "Khải Phong giữ đồng hồ tặng Hà 8 năm. Hạ Vy mất taxi tai nạn JFK lúc 7:10. Cô gái áo gió xanh ngồi vào ghế 7 nhặt đồng hồ, áp vào ngực như nhớ ra điều gì xa."
     status: OPEN                # OPEN | PAYOFF | CLOSED
     importance: MED             # HIGH | MED | LOW
     payoff_owner: PAS_0007      # B5 — passenger chịu trách nhiệm payoff

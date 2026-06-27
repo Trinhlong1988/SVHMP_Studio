@@ -30,7 +30,7 @@ _prog.start('scanning_specs')
 # Tất cả pattern bug Mr.Long đã catch
 BUG_PATTERNS = {
     'Bất chợt': 'mispronounce → Bỗng nhiên/Đột nhiên',
-    'Quang nhớ rồi': 'mispronounce → Anh nhớ rồi',
+    'Khải Phong nhớ rồi': 'mispronounce → Anh nhớ rồi',
     'không tưởng': 'idiom sai → không nghĩ đến',
     'tay sạch': 'detail rời nghĩa',
     'định nói câu tôi đã định nói': 'lặp pattern',
@@ -44,11 +44,11 @@ BUG_PATTERNS = {
     'Sáng ngày thứ Bảy không có tin': 'lặp pattern',
     'Bác tài liếc gương chiếu hậu, bác không nói': 'lặp vô hồn',
     'Tiếng anh khẽ': 'mơ hồ → Anh nói rất khẽ',
-    'Quang không biết là mưa hay là gì khác': 'vô hồn',
-    'Quang cứng người': 'cứng → uyển chuyển',
+    'Khải Phong không biết là mưa hay là gì khác': 'vô hồn',
+    'Khải Phong cứng người': 'cứng → uyển chuyển',
     'Cô tóc cột thấp': 'khó nghe',
     'Cô ấy đi rồi.': 'khô → "Cô ấy... đi xa rồi"',
-    'Mẹ Hà nói, máy bay tới nơi an toàn': 'khô không cảm xúc',
+    'Mẹ Hạ Vy nói, máy bay tới nơi an toàn': 'khô không cảm xúc',
     'Cô tóc xõa,': 's6 ch2 cụt mirror Hà',
     'kim chỉ bảy giờ mười.': 's6 ch5 cụt',
     'Anh đi ngang ghế ba.': 'lặp pattern 3 chunks',

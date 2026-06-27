@@ -23,95 +23,95 @@ purpose: |
 quang_memory_arc:
   M1:
     eps: [1, 2, 3, 4, 5]
-    fragment: "Quang biết mình ngồi xe — không biết tại sao"
-    cliffhanger_hint: "Mỗi đêm Quang đếm — không nhớ đêm đầu"
+    fragment: "Khải Phong biết mình ngồi xe — không biết tại sao"
+    cliffhanger_hint: "Mỗi đêm Khải Phong đếm — không nhớ đêm đầu"
   M2:
     eps: [6, 7, 8, 9, 10]
-    fragment: "Quang nhớ năm sinh (1996)"
-    cliffhanger_hint: "Một mảnh ký ức nhỏ — Quang sinh 1996"
+    fragment: "Khải Phong nhớ năm sinh (1996)"
+    cliffhanger_hint: "Một mảnh ký ức nhỏ — Khải Phong sinh 1996"
     milestone_ep: 10
-    milestone_special: "EP10 = Quang lần đầu khóc trên xe — first emotional crisis"
+    milestone_special: "EP10 = Khải Phong lần đầu khóc trên xe — first emotional crisis"
   M3:
     eps: [11, 12, 13, 14, 15]
-    fragment: "Quang nhớ có yêu một người tên Hà"
-    cliffhanger_hint: "Tên Hà vọng lên trong đầu Quang"
+    fragment: "Khải Phong nhớ có yêu một người tên Hạ Vy"
+    cliffhanger_hint: "Tên Hà vọng lên trong đầu Khải Phong"
   M4:
     eps: [16, 17, 18, 19, 20]
-    fragment: "Quang nhớ Hà mất"
-    cliffhanger_hint: "Hà — đã đi"
+    fragment: "Khải Phong nhớ Hạ Vy mất"
+    cliffhanger_hint: "Hạ Vy — đã đi"
     milestone_ep: 20
     milestone_special: "EP20 = bác tài nói câu phụ 'Đêm hai mươi — con đã đi nửa đoạn đầu rồi'"
   M5:
     eps: [21, 22, 23, 24, 25]
-    fragment: "Quang nhớ mình từng học Hà Nội"
-    cliffhanger_hint: "Quang nhớ phòng trọ phố Khâm Thiên"
+    fragment: "Khải Phong nhớ mình từng học Hà Nội"
+    cliffhanger_hint: "Khải Phong nhớ phòng trọ phố Khâm Thiên"
   M6:
     eps: [26, 27, 28, 29, 30]
-    fragment: "Quang nhớ tên ngành học (kiến trúc)"
-    cliffhanger_hint: "Quang nhớ cầm thước T"
+    fragment: "Khải Phong nhớ tên ngành học (kiến trúc)"
+    cliffhanger_hint: "Khải Phong nhớ cầm thước T"
     milestone_ep: 30
-    milestone_special: "EP30 = passenger vô tình gọi đúng tên 'Quang' — anchor lần đầu"
+    milestone_special: "EP30 = passenger vô tình gọi đúng tên 'Khải Phong' — anchor lần đầu"
   M7:
     eps: [31, 32, 33, 34, 35]
-    fragment: "Quang nhớ ngày Hà mất (12 tháng 4)"
-    cliffhanger_hint: "Đêm thứ N — Quang nhớ tháng tư"
+    fragment: "Khải Phong nhớ ngày Hạ Vy mất (12 tháng 4)"
+    cliffhanger_hint: "Đêm thứ N — Khải Phong nhớ tháng tư"
   M8:
     eps: [36, 37, 38, 39, 40]
-    fragment: "Quang nhớ có ai bên Hà lúc Hà chết"
-    cliffhanger_hint: "Có một người bên Hà — không phải Quang"
+    fragment: "Khải Phong nhớ có ai bên Hạ Vy lúc Hạ Vy chết"
+    cliffhanger_hint: "Có một người bên Hạ Vy — không phải Khải Phong"
     milestone_ep: 40
-    milestone_special: "EP40 = half-series mark — Quang đếm 40 items / 40 đêm — dawn chưa tới"
+    milestone_special: "EP40 = half-series mark — Khải Phong đếm 40 items / 40 đêm — dawn chưa tới"
   M9:
     eps: [41, 42, 43, 44, 45]
-    fragment: "Quang nhớ Hà nhắn gì cho Quang đêm cuối"
-    cliffhanger_hint: "Tin nhắn cuối Hà — 3 từ"
+    fragment: "Khải Phong nhớ Hạ Vy nhắn gì cho Khải Phong đêm cuối"
+    cliffhanger_hint: "Tin nhắn cuối Hạ Vy — 3 từ"
   M10:
     eps: [46, 47, 48, 49, 50]
-    fragment: "Quang nhớ mình hứa với Hà điều gì"
-    cliffhanger_hint: "Quang đã hứa — sẽ đón Hà"
+    fragment: "Khải Phong nhớ mình hứa với Hạ Vy điều gì"
+    cliffhanger_hint: "Khải Phong đã hứa — sẽ đón Hà"
     milestone_ep: 50
-    milestone_special: "EP50 SEASON 1 FINALE = Quang nhận 50 đêm không sáng + xếp 50 items thành bản đồ"
+    milestone_special: "EP50 SEASON 1 FINALE = Khải Phong nhận 50 đêm không sáng + xếp 50 items thành bản đồ"
   M11:
     eps: [51, 52, 53, 54, 55]
-    fragment: "Quang nhớ mình đã không giữ lời"
-    cliffhanger_hint: "Quang đã không đón Hà đêm đó"
+    fragment: "Khải Phong nhớ mình đã không giữ lời"
+    cliffhanger_hint: "Khải Phong đã không đón Hà đêm đó"
   M12:
     eps: [56, 57, 58, 59, 60]
-    fragment: "Quang nhớ Hà đợi Quang ở đâu"
-    cliffhanger_hint: "Hà đợi Quang ở cầu Long Biên — Quang không tới"
+    fragment: "Khải Phong nhớ Hạ Vy đợi Khải Phong ở đâu"
+    cliffhanger_hint: "Hạ Vy đợi Khải Phong ở cầu Long Biên — Khải Phong không tới"
     milestone_ep: 60
-    milestone_special: "EP60 SEASON 2 FINALE = Quang nhìn thấy bóng mình gương — không phải mình mặc gì hôm nay"
+    milestone_special: "EP60 SEASON 2 FINALE = Khải Phong nhìn thấy bóng mình gương — không phải mình mặc gì hôm nay"
   M13:
     eps: [61, 62, 63, 64, 65]
-    fragment: "Quang nhớ chính Quang chở Hà ngày Hà mất"
-    cliffhanger_hint: "Hà ngồi sau Quang — xe máy Quang"
+    fragment: "Khải Phong nhớ chính Khải Phong chở Hà ngày Hạ Vy mất"
+    cliffhanger_hint: "Hạ Vy ngồi sau Khải Phong — xe máy Khải Phong"
   M14:
     eps: [66, 67, 68, 69, 70]
-    fragment: "Quang nhớ tai nạn xe đêm đó"
+    fragment: "Khải Phong nhớ tai nạn xe đêm đó"
     cliffhanger_hint: "Va chạm — Hà rơi xuống"
     milestone_ep: 70
-    milestone_special: "EP70 = bác tài hé lộ 'Con tên Quang' (lần đầu xác nhận tên)"
+    milestone_special: "EP70 = bác tài hé lộ 'Con tên Khải Phong' (lần đầu xác nhận tên)"
   M15:
     eps: [71, 72, 73, 74, 75]
-    fragment: "Quang nhớ Quang chết theo Hà"
-    cliffhanger_hint: "Quang cũng đã đi đêm đó"
+    fragment: "Khải Phong nhớ Khải Phong chết theo Hà"
+    cliffhanger_hint: "Khải Phong cũng đã đi đêm đó"
     note: "EP73 = driver reveal budget peak — driver có thể nói câu thứ 3 (bible/18)"
   M16:
     eps: [76, 77, 78, 79, 80]
-    fragment: "Quang nhận ra mình là hành khách — không phải nhân chứng"
-    cliffhanger_hint: "Quang nhìn lại ghế thứ ba — chỗ ngồi đã không thay đổi từ đầu"
+    fragment: "Khải Phong nhận ra mình là hành khách — không phải nhân chứng"
+    cliffhanger_hint: "Khải Phong nhìn lại ghế thứ ba — chỗ ngồi đã không thay đổi từ đầu"
     milestone_ep: 80
-    milestone_special: "EP80 = Quang nhìn thấy Hà trên xe — passenger ghế ba (Quang ngồi ghế 3 từ đầu)"
+    milestone_special: "EP80 = Khải Phong nhìn thấy Hà trên xe — passenger ghế ba (Khải Phong ngồi ghế 3 từ đầu)"
   M17:
     eps: [81, 82, 83, 84, 85]
-    fragment: "Quang nhận ra bác tài là ai (deferred per bible/18)"
-    cliffhanger_hint: "Bác tài quay lại — Quang nhìn rõ mặt lần đầu"
+    fragment: "Khải Phong nhận ra bác tài là ai (deferred per bible/18)"
+    cliffhanger_hint: "Bác tài quay lại — Khải Phong nhìn rõ mặt lần đầu"
   M18:
     eps: [86, 87, 88, 89, 90]
-    fragment: "Quang nhớ ra 'Chưa tới lúc' nghĩa là gì"
-    cliffhanger_hint: "Quang đã đợi — Hà đang chờ"
+    fragment: "Khải Phong nhớ ra 'Chưa tới lúc' nghĩa là gì"
+    cliffhanger_hint: "Khải Phong đã đợi — Hà đang chờ"
     milestone_ep: 90
-    milestone_special: "EP90 SERIES FINALE = Quang xuống xe — Hà đứng đợi ở stop"
+    milestone_special: "EP90 SERIES FINALE = Khải Phong xuống xe — Hạ Vy đứng đợi ở stop"
 
 # ============================================================
 # PILLAR INTERLEAVE MAP (EP1-50 — phase S1)
@@ -205,10 +205,10 @@ callback_schedule_s1:
   ep_20: {type: setting_revisit, callback_to: ep_08, detail: "radio cũ phát bài cô y tá EP08 từng nghe"}
   ep_25: {type: object_echo, callback_to: ep_15, detail: "passenger ghế chín nhận ra ngồi đúng ghế ai"}
   ep_30: {type: setting_revisit, callback_to: ep_07, detail: "xe đi qua bến cô EP07 đã xuống"}
-  ep_35: {type: object_echo, callback_to: ep_25, detail: "Quang nhặt vật giống vật EP25 echo"}
+  ep_35: {type: object_echo, callback_to: ep_25, detail: "Khải Phong nhặt vật giống vật EP25 echo"}
   ep_40: {type: passenger_recognition, callback_to: ep_30, detail: "passenger nói 'tôi biết anh — anh đêm 30 từng nhìn tôi'"}
   ep_45: {type: setting_revisit, callback_to: ep_20, detail: "xe dừng ở 2 stop đã dừng trước"}
-  ep_50: {type: meta_callback, callback_to: all_s1, detail: "Quang nhìn xuyên 50 ghế trống thấy 50 vật mình đã nhặt"}
+  ep_50: {type: meta_callback, callback_to: all_s1, detail: "Khải Phong nhìn xuyên 50 ghế trống thấy 50 vật mình đã nhặt"}
 
 # ============================================================
 # OBJECT SUB-ARC (R38)
@@ -223,24 +223,24 @@ object_sub_arc_s1:
     eps_with_symbol: [11, 14, 17, 20]
     cluster_count: 4
     reveal_ep: 20
-    reveal_moment: "Quang xếp 4 vật cùng symbol → ngẫm 'tại sao 4 vật rời rạc cùng có hoa cúc?'"
+    reveal_moment: "Khải Phong xếp 4 vật cùng symbol → ngẫm 'tại sao 4 vật rời rạc cùng có hoa cúc?'"
   ep_21_to_30:
     sub_arc_type: temporal_arc
     target_pattern: "vật mang dấu năm 2017"
     eps_with_year: [22, 26, 29]
     reveal_ep: 30
-    reveal_moment: "Quang nhận 3 vật cùng năm 2017 — năm Quang chưa rõ"
+    reveal_moment: "Khải Phong nhận 3 vật cùng năm 2017 — năm Khải Phong chưa rõ"
   ep_31_to_40:
     sub_arc_type: geographic_arc
     target_route: "vật mang dấu Hà Nội nội thành"
     eps_with_marker: [33, 37, 40]
     reveal_ep: 40
-    reveal_moment: "Quang xếp 40 items theo bản đồ → thấy bắt đầu khu Long Biên"
+    reveal_moment: "Khải Phong xếp 40 items theo bản đồ → thấy bắt đầu khu Long Biên"
   ep_41_to_50:
     sub_arc_type: meta_pattern
     target_pattern: "50 stops xếp thành bản đồ — chính bản đồ Hà Nội + suburb"
     reveal_ep: 50
-    reveal_moment: "EP50 S1 finale — Quang nhận ra bản đồ chính route từ nhà Quang đến nhà Hà"
+    reveal_moment: "EP50 S1 finale — Khải Phong nhận ra bản đồ chính route từ nhà Khải Phong đến nhà Hà"
 
 # ============================================================
 # REWORK SCOPE EP11-41 (current draft v1)

@@ -37,7 +37,7 @@
     {
       "check": "H2_dict_unusual_compound",
       "severity": "minor",
-      "evidence": "Cụm từ dài bất thường: ['` prompt_version', 'OBJ_KHAN_TAY_CU signature_setting', 'trống Quang nhặt']",
+      "evidence": "Cụm từ dài bất thường: ['` prompt_version', 'OBJ_KHAN_TAY_CU signature_setting', 'trống Khải Phong nhặt']",
       "suggestion": "TENTATIVE — Mr.Long verify trong từ điển VN"
     },
     {

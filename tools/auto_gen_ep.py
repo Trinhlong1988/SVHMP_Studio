@@ -50,7 +50,7 @@ OBJECT_DESCRIPTORS = {
 STOP_LOCATIONS = [
     'ngã ba Hà Tĩnh', 'ngã ba Phú Yên', 'ngã ba Thái Bình', 'ngã ba Phú Thọ',
     'ngã ba Ninh Bình', 'ngã ba Hải Dương', 'ngã ba Bắc Ninh', 'ngã ba Lạng Sơn',
-    'ngã ba Nghệ An', 'ngã ba Quảng Bình', 'ngã ba Hà Giang', 'ngã ba Tuyên Quang',
+    'ngã ba Nghệ An', 'ngã ba Quảng Bình', 'ngã ba Hà Giang', 'ngã ba Tuyên Khải Phong',
     'ngã ba Nam Định', 'ngã ba Hưng Yên', 'ngã ba Vĩnh Phúc', 'ngã ba Hoà Bình',
     'ngã ba Sơn La', 'ngã ba Yên Bái', 'ngã ba Bắc Giang', 'ngã ba Bắc Kạn',
     'ngã ba Cao Bằng', 'ngã ba Quảng Trị', 'ngã ba Thừa Thiên', 'ngã ba Quảng Nam',
@@ -144,9 +144,9 @@ auto_gen: tools/auto_gen_ep.py v2.0 (template + QA loop)
 
 {setting['time']}. {setting['weather']}. Chuyến xe đêm chạy qua một đoạn đường vắng ven {stop.split()[-1]}. {setting['ambient']}. Đèn pha quét nhẹ lên hai bên đường tối.
 
-Quang ngồi ghế thứ ba. Đêm thứ {ep_num} Quang đếm. Trong túi áo Quang đã có {cont['artifacts']} vật — các vật rời rạc từ những đêm trước. Sợi len. Sợi lạt. Phong bao trống. Sợi chỉ trắng. Viên pin cassette. Mỗi vật một câu chuyện. Quang chưa hiểu vì sao mình giữ.
+Khải Phong ngồi ghế thứ ba. Đêm thứ {ep_num} Khải Phong đếm. Trong túi áo Khải Phong đã có {cont['artifacts']} vật — các vật rời rạc từ những đêm trước. Sợi len. Sợi lạt. Phong bao trống. Sợi chỉ trắng. Viên pin cassette. Mỗi vật một câu chuyện. Khải Phong chưa hiểu vì sao mình giữ.
 
-Trên ghế lái, bác tài lái như mọi khi. Hai bàn tay đeo găng trắng đặt trên vô-lăng. Ánh mắt liếc gương chiếu hậu một thoáng, dừng trên Quang lâu hơn một nhịp, rồi mới chuyển sang đoạn đường tối phía trước.
+Trên ghế lái, bác tài lái như mọi khi. Hai bàn tay đeo găng trắng đặt trên vô-lăng. Ánh mắt liếc gương chiếu hậu một thoáng, dừng trên Khải Phong lâu hơn một nhịp, rồi mới chuyển sang đoạn đường tối phía trước.
 
 Xe chậm lại trước một quán đã đóng cửa từ chiều. Quán nhỏ, mái ngói rêu phong, biển hiệu chữ phai. Đèn vàng yếu trên cột điện hắt xuống một bóng người đứng đợi dưới mái hiên.
 
@@ -162,7 +162,7 @@ Xe lăn bánh trở lại. Đèn pha trở lại cắt qua sương.
 
 [pause:600ms]
 
-Quang nhìn {pron} qua khe ghế. {pron_cap} khoảng {age} tuổi. Mặt có nét mệt — như đã không ngủ nhiều đêm. Mí dưới hơi sưng. Tóc cột thấp hoặc rối nhẹ. Cảm giác như vừa đi đường dài.
+Khải Phong nhìn {pron} qua khe ghế. {pron_cap} khoảng {age} tuổi. Mặt có nét mệt — như đã không ngủ nhiều đêm. Mí dưới hơi sưng. Tóc cột thấp hoặc rối nhẹ. Cảm giác như vừa đi đường dài.
 
 {pron_cap} {obj['verb']}. Một động tác chậm rãi, đầu các ngón tay đi qua mặt {obj['name'].split()[-1]} như thể đang lần theo từng nếp. {obj['detail'].capitalize()}.
 
@@ -174,9 +174,9 @@ Bên ngoài cửa kính, gió thổi nhẹ vào mặt kính. Có vài hạt mưa
 
 {pron_cap} không nhìn ai. {pron_cap} nhìn xuống {obj['name']} trên đùi. Như đang chờ gì đó. Hoặc đang nhớ gì đó.
 
-Quang đoán {pron} khoảng {age.split('-')[0]} tới {age.split('-')[1] if '-' in age else age} tuổi. Mắt to. Có vết hơi đỏ ở mí mắt — như khóc đã tạnh nhưng chưa kịp xẹp.
+Khải Phong đoán {pron} khoảng {age.split('-')[0]} tới {age.split('-')[1] if '-' in age else age} tuổi. Mắt to. Có vết hơi đỏ ở mí mắt — như khóc đã tạnh nhưng chưa kịp xẹp.
 
-Bác tài liếc gương chiếu hậu một thoáng. Nhịp ngón trỏ trái ba cái lên vô-lăng. Rồi yên. Bóng bác trong gương vẫn bình tĩnh — như mọi đêm Quang đã thấy.
+Bác tài liếc gương chiếu hậu một thoáng. Nhịp ngón trỏ trái ba cái lên vô-lăng. Rồi yên. Bóng bác trong gương vẫn bình tĩnh — như mọi đêm Khải Phong đã thấy.
 
 ---
 
@@ -192,7 +192,7 @@ Xe đi qua một khúc cua. Phía bên kia ruộng, hoặc phía dưới triền
 
 Phía xa, qua ô cửa sổ căn nhà, có một bóng người ngồi yên — lưng hơi còng, tay đặt lên thứ gì đó trên đùi. Bóng không nhìn về phía xe. Chỉ ngồi yên.
 
-Đồng hồ trên xe — chiếc đồng hồ nhỏ gắn cạnh ghế lái — kim phút nhích. {' '.join(['Tách.'] * cont['clock_ticks'])} {cont['clock_ticks']} lần liền. Quang đếm. Đêm thứ {ep_num}, {cont['clock_ticks']} lần.
+Đồng hồ trên xe — chiếc đồng hồ nhỏ gắn cạnh ghế lái — kim phút nhích. {' '.join(['Tách.'] * cont['clock_ticks'])} {cont['clock_ticks']} lần liền. Khải Phong đếm. Đêm thứ {ep_num}, {cont['clock_ticks']} lần.
 
 Bác tài không quay đầu. Tay vẫn đặt vô-lăng. Nhưng ánh mắt liếc gương chiếu hậu kéo dài hơn nữa.
 
@@ -236,9 +236,9 @@ Giọng {pron} nhỏ. Khô. Như đọc cho chính {obj['name']} nghe.
 
 Bác tài nhìn gương chiếu hậu một thoáng. Im lặng. Không nói câu nào.
 
-Trong gương chiếu hậu phía sau ghế lái, Quang thấy hai cái bóng. Một là {pron}. Một là một bóng người lớn tuổi hơn, ngồi sát ngay sau {pron}. Bóng người ấy đang đặt tay lên vật giống vật {pron} đang giữ. Mắt nhìn xuống. Không nhìn ai. Không nói.
+Trong gương chiếu hậu phía sau ghế lái, Khải Phong thấy hai cái bóng. Một là {pron}. Một là một bóng người lớn tuổi hơn, ngồi sát ngay sau {pron}. Bóng người ấy đang đặt tay lên vật giống vật {pron} đang giữ. Mắt nhìn xuống. Không nhìn ai. Không nói.
 
-Quang chớp mắt. Trong gương vẫn chỉ có {pron} và một bóng mờ.
+Khải Phong chớp mắt. Trong gương vẫn chỉ có {pron} và một bóng mờ.
 
 Bác tài cất lời. Câu hỏi cũ.
 
@@ -282,11 +282,11 @@ Bên kia ngã ba, có tiếng chuông. Tiếng chuông {setting['name']}. Một 
 
 {pron_cap} cầm {obj['name']}. Đặt vào túi vải. Đóng nắp. Đứng dậy chậm rãi.
 
-Khi đi qua chỗ Quang ngồi, {pron} khẽ nói:
+Khi đi qua chỗ Khải Phong ngồi, {pron} khẽ nói:
 
 "Chào anh."
 
-Quang gật đầu. {pron_cap} đi tiếp về phía cửa xe.
+Khải Phong gật đầu. {pron_cap} đi tiếp về phía cửa xe.
 
 Trước khi xuống, {pron} quay đầu nhìn bác tài. Lâu. Một thoáng dài hơn các hành khách khác. Rồi nhìn lên đồng hồ trên xe.
 
@@ -306,13 +306,13 @@ Cửa xe khép lại. Xe lăn bánh trở lại trong đêm.
 
 [pause:1000ms]
 
-Bên ngoài cửa kính, Quang thấy {pron} đi vào con đường đất nhỏ ven ngã ba. Túi vải xách bên hông. Bóng {pron} dần lùi xa trong sương.
+Bên ngoài cửa kính, Khải Phong thấy {pron} đi vào con đường đất nhỏ ven ngã ba. Túi vải xách bên hông. Bóng {pron} dần lùi xa trong sương.
 
 Phía cuối đường, có ngôi nhà nhỏ với cửa sổ sáng đèn dầu. Trên hiên nhà, có một bóng người ngồi yên — lưng còng, tay đặt một vật giống vật {pron} đang cầm. Như đang đợi.
 
 {pron_cap} đến trước hiên. Đứng yên một lúc. Rồi ngồi xuống bên cạnh bóng người kia.
 
-Quang chớp mắt. Bóng người ấy không còn. Chỉ còn {pron} ngồi một mình trên hiên. Tay đặt {obj['name']} lên chỗ trống bên cạnh — chỗ vừa mới có bóng người.
+Khải Phong chớp mắt. Bóng người ấy không còn. Chỉ còn {pron} ngồi một mình trên hiên. Tay đặt {obj['name']} lên chỗ trống bên cạnh — chỗ vừa mới có bóng người.
 
 Chỉ có ngọn đèn dầu nhấp nháy trong sương. Và tiếng gió đêm khẽ thổi qua mái nhà.
 
@@ -334,9 +334,9 @@ Trong sương, có một câu hát rất khẽ vọng tới. Không phải từ 
 
 Xe tiếp tục lăn bánh qua ngã ba. Phía trước, đêm vẫn dài.
 
-Trên ghế thứ {seat} giờ đã trống. Đệm ghế còn lõm xuống một chút — như vừa có ai ngồi rất nhẹ. Trên sàn xe, có một mảnh vật nhỏ rơi xuống. Quang nhặt lên. Mảnh nhỏ của {obj['name']} — {pron} vô tình đánh rơi khi đứng dậy.
+Trên ghế thứ {seat} giờ đã trống. Đệm ghế còn lõm xuống một chút — như vừa có ai ngồi rất nhẹ. Trên sàn xe, có một mảnh vật nhỏ rơi xuống. Khải Phong nhặt lên. Mảnh nhỏ của {obj['name']} — {pron} vô tình đánh rơi khi đứng dậy.
 
-Quang cất vào túi áo. Vật thứ {cont['artifacts'] + 1}.
+Khải Phong cất vào túi áo. Vật thứ {cont['artifacts'] + 1}.
 
 Bác tài lái như mọi khi. Hai tay vô-lăng. Găng trắng. Nhịp ngón trỏ ba cái.
 
@@ -344,41 +344,41 @@ Bác tài lái như mọi khi. Hai tay vô-lăng. Găng trắng. Nhịp ngón tr
 
 [pause:1500ms]
 
-Quang lấy {cont['artifacts'] + 1} vật trong túi ra. Đặt cạnh nhau trên đùi. Một bộ sưu tập rời rạc — của những người đã chưa kịp nói câu cuối với người họ thương.
+Khải Phong lấy {cont['artifacts'] + 1} vật trong túi ra. Đặt cạnh nhau trên đùi. Một bộ sưu tập rời rạc — của những người đã chưa kịp nói câu cuối với người họ thương.
 
-Quang nhớ — đêm thứ {ep_num} Quang đã ngồi ghế thứ ba. Mỗi đêm một câu chuyện. Mỗi đêm Quang ngồi yên — chưa kể câu chuyện nào của mình.
+Khải Phong nhớ — đêm thứ {ep_num} Khải Phong đã ngồi ghế thứ ba. Mỗi đêm một câu chuyện. Mỗi đêm Khải Phong ngồi yên — chưa kể câu chuyện nào của mình.
 
-Vì sao Quang chưa kể? Có phải Quang không có câu chuyện nào? Hay là Quang đã quên?
+Vì sao Khải Phong chưa kể? Có phải Khải Phong không có câu chuyện nào? Hay là Khải Phong đã quên?
 
-{('''Trên ghế lái, bác tài liếc gương chiếu hậu. Ánh mắt dừng trên Quang. Lâu. Rất lâu. Rồi bác khẽ nói — câu ngoài hai câu chuẩn:
+{('''Trên ghế lái, bác tài liếc gương chiếu hậu. Ánh mắt dừng trên Khải Phong. Lâu. Rất lâu. Rồi bác khẽ nói — câu ngoài hai câu chuẩn:
 
 "Đến lượt con sắp tới rồi."
 
-Quang giật mình. Bác đã nói. Không nhầm. Câu đó không có trong những câu chuẩn của bác.
+Khải Phong giật mình. Bác đã nói. Không nhầm. Câu đó không có trong những câu chuẩn của bác.
 
-Quang muốn hỏi. Nhưng môi Quang không động. Tay Quang khẽ run.''' if cont['extra_dialogue'] else '''Trên ghế lái, bác tài liếc gương chiếu hậu. Một thoáng. Rồi nhìn lại con đường tối phía trước. Hai bàn tay găng trắng yên trên vô-lăng.
+Khải Phong muốn hỏi. Nhưng môi Khải Phong không động. Tay Khải Phong khẽ run.''' if cont['extra_dialogue'] else '''Trên ghế lái, bác tài liếc gương chiếu hậu. Một thoáng. Rồi nhìn lại con đường tối phía trước. Hai bàn tay găng trắng yên trên vô-lăng.
 
 Không nói gì.''')}
 
-Quang nhìn ra cửa kính. Đêm vẫn dài. Còn nhiều ngã ba phía trước. Còn nhiều người đang đợi ai đó về.
+Khải Phong nhìn ra cửa kính. Đêm vẫn dài. Còn nhiều ngã ba phía trước. Còn nhiều người đang đợi ai đó về.
 
-Có ai đó sẽ lên xe ở trạm tiếp theo. Quang chưa biết là ai. Nhưng Quang biết — sẽ có một vật nữa rơi xuống sàn. Quang sẽ nhặt. Quang sẽ cất.
+Có ai đó sẽ lên xe ở trạm tiếp theo. Khải Phong chưa biết là ai. Nhưng Khải Phong biết — sẽ có một vật nữa rơi xuống sàn. Khải Phong sẽ nhặt. Khải Phong sẽ cất.
 
-Đến khi nào những vật ấy đầy túi áo? Đến khi nào Quang sẽ tự kể câu chuyện của mình?
-
-[pause:1500ms]
-
-Quang nhìn xuống bộ vật trong lòng. Sợi len. Sợi lạt. Phong bao trống. Sợi chỉ trắng. Viên pin. Mảnh nhỏ vừa nhặt. Mỗi vật mang theo một người. Mỗi người mang theo một câu chưa nói.
-
-Quang nhớ — câu hát ông cụ ghế đầu vẫn mở mỗi đêm: "...quê nhà...". Quang chưa hiểu câu hát đó. Nhưng đêm thứ {ep_num} rồi, Quang vẫn nghe được.
-
-Có lẽ "quê nhà" không chỉ là chỗ Quang sinh ra. Có lẽ "quê nhà" là chỗ Quang có người để về. Quang đang còn ai để về? Quang không nhớ rõ.
+Đến khi nào những vật ấy đầy túi áo? Đến khi nào Khải Phong sẽ tự kể câu chuyện của mình?
 
 [pause:1500ms]
 
-Trên ghế lái, bác tài liếc gương chiếu hậu lần nữa. Ánh mắt dừng trên Quang. Bình tĩnh. Không thương xót. Không khẩn cấp. Chỉ chờ.
+Khải Phong nhìn xuống bộ vật trong lòng. Sợi len. Sợi lạt. Phong bao trống. Sợi chỉ trắng. Viên pin. Mảnh nhỏ vừa nhặt. Mỗi vật mang theo một người. Mỗi người mang theo một câu chưa nói.
 
-Quang nhắm mắt. Hơi thở chậm xuống một nhịp. Đêm vẫn lăn bánh.
+Khải Phong nhớ — câu hát ông cụ ghế đầu vẫn mở mỗi đêm: "...quê nhà...". Khải Phong chưa hiểu câu hát đó. Nhưng đêm thứ {ep_num} rồi, Khải Phong vẫn nghe được.
+
+Có lẽ "quê nhà" không chỉ là chỗ Khải Phong sinh ra. Có lẽ "quê nhà" là chỗ Khải Phong có người để về. Khải Phong đang còn ai để về? Khải Phong không nhớ rõ.
+
+[pause:1500ms]
+
+Trên ghế lái, bác tài liếc gương chiếu hậu lần nữa. Ánh mắt dừng trên Khải Phong. Bình tĩnh. Không thương xót. Không khẩn cấp. Chỉ chờ.
+
+Khải Phong nhắm mắt. Hơi thở chậm xuống một nhịp. Đêm vẫn lăn bánh.
 
 ---
 
@@ -392,7 +392,7 @@ Quang nhắm mắt. Hơi thở chậm xuống một nhịp. Đêm vẫn lăn bá
 - bible/12: signature_object {passenger['signature_object']} trong library
 - bible/13: signature_setting {passenger['signature_setting']} trong library
 - bible/18: EP{ep_num} ≠ EP73/EP90 reserved
-- Cross-ep continuity: Quang nhặt {cont['artifacts']} vật + clock 7:10 + driver gradient
+- Cross-ep continuity: Khải Phong nhặt {cont['artifacts']} vật + clock 7:10 + driver gradient
 """
 
 

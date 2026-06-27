@@ -31,7 +31,7 @@
     {
       "check": "H2_dict_unusual_compound",
       "severity": "minor",
-      "evidence": "Cụm từ dài bất thường: ['CASSETTE GIỌNG', '` prompt_version', 'Quang cảm thấy']",
+      "evidence": "Cụm từ dài bất thường: ['CASSETTE GIỌNG', '` prompt_version', 'Khải Phong cảm thấy']",
       "suggestion": "TENTATIVE — Mr.Long verify trong từ điển VN"
     },
     {

@@ -109,9 +109,9 @@ Giọng {pron} nhỏ. Khô. Như đọc cho chính {obj['name']} nghe.
 
 Bác tài nhìn gương chiếu hậu một thoáng. Im lặng. Không nói câu nào.
 
-Trong gương chiếu hậu phía sau ghế lái, Quang thấy hai cái bóng. Một là {pron}. Một là một bóng người lớn tuổi hơn, ngồi sát ngay sau {pron}. Bóng người ấy đang đặt tay lên vật giống vật {pron} đang giữ. Mắt nhìn xuống. Không nhìn ai. Không nói.
+Trong gương chiếu hậu phía sau ghế lái, Khải Phong thấy hai cái bóng. Một là {pron}. Một là một bóng người lớn tuổi hơn, ngồi sát ngay sau {pron}. Bóng người ấy đang đặt tay lên vật giống vật {pron} đang giữ. Mắt nhìn xuống. Không nhìn ai. Không nói.
 
-Quang chớp mắt. Trong gương vẫn chỉ có {pron} và một bóng mờ.
+Khải Phong chớp mắt. Trong gương vẫn chỉ có {pron} và một bóng mờ.
 
 Bác tài cất lời. Câu hỏi cũ.
 
@@ -158,9 +158,9 @@ Giọng {pron} chậm, không buồn.
 
 Bác tài nhìn gương chiếu hậu. Im lặng.
 
-Trong gương, Quang thấy hai cái bóng. {pron_cap} và một bóng phụ nữ rất già — tóc bạc gần hết, ngồi cạnh {pron}. Bóng phụ nữ ấy đang đặt tay lên vai {pron}. Một cái chạm nhẹ. Như khen ngợi.
+Trong gương, Khải Phong thấy hai cái bóng. {pron_cap} và một bóng phụ nữ rất già — tóc bạc gần hết, ngồi cạnh {pron}. Bóng phụ nữ ấy đang đặt tay lên vai {pron}. Một cái chạm nhẹ. Như khen ngợi.
 
-Quang chớp mắt. Bóng phụ nữ tan.
+Khải Phong chớp mắt. Bóng phụ nữ tan.
 
 Bác tài cất lời.
 
@@ -191,7 +191,7 @@ def reveal_pattern_C(name, age, pron, pron_cap, obj, sample, ep_num=11):
 
 [pause:600ms]
 
-{pron_cap} đọc lá thư đầu tiên — giọng nhỏ, đủ Quang nghe được.
+{pron_cap} đọc lá thư đầu tiên — giọng nhỏ, đủ Khải Phong nghe được.
 
 "'{name} ơi, hôm nay là sinh nhật mười tám tuổi của con. Mẹ không gửi tiền được — tháng này mẹ đang khám bệnh. Mẹ xin lỗi.'"
 
@@ -278,9 +278,9 @@ def reveal_pattern_D(name, age, pron, pron_cap, obj, sample, ep_num=11):
 
 Bác tài nhìn gương chiếu hậu. Im lặng.
 
-Trong gương, Quang thấy hai cái bóng. {pron_cap} và một bóng phụ nữ trung niên — đang đặt tay lên vật cùng {pron}. Hai bàn tay chồng lên nhau. Hai mẹ con cùng cầm.
+Trong gương, Khải Phong thấy hai cái bóng. {pron_cap} và một bóng phụ nữ trung niên — đang đặt tay lên vật cùng {pron}. Hai bàn tay chồng lên nhau. Hai mẹ con cùng cầm.
 
-Quang chớp mắt. Bóng tan.
+Khải Phong chớp mắt. Bóng tan.
 
 Bác tài cất lời.
 
@@ -325,9 +325,9 @@ def _reveal_D_v2_smell(name, age, pron, pron_cap, obj):
 
 [pause:1500ms]
 
-Bác tài liếc gương. Trong gương, Quang thấy hai bóng — {pron} và một phụ nữ ngồi sau. Phụ nữ ấy đang đặt mặt vào áo {pron} — như ngửi.
+Bác tài liếc gương. Trong gương, Khải Phong thấy hai bóng — {pron} và một phụ nữ ngồi sau. Phụ nữ ấy đang đặt mặt vào áo {pron} — như ngửi.
 
-Quang chớp mắt. Bóng tan.
+Khải Phong chớp mắt. Bóng tan.
 
 Bác tài cất lời.
 
@@ -376,9 +376,9 @@ def _reveal_D_v3_sound(name, age, pron, pron_cap, obj):
 
 [pause:1500ms]
 
-Bác tài liếc gương. Trong gương, có hai bóng. {pron_cap} và mẹ — mẹ đang cầm vật, đi qua phòng. Tiếng nhịp đều vọng lại từ gương — chỉ Quang nghe được.
+Bác tài liếc gương. Trong gương, có hai bóng. {pron_cap} và mẹ — mẹ đang cầm vật, đi qua phòng. Tiếng nhịp đều vọng lại từ gương — chỉ Khải Phong nghe được.
 
-Quang chớp mắt. Bóng tan. Tiếng tan.
+Khải Phong chớp mắt. Bóng tan. Tiếng tan.
 
 Bác tài cất lời.
 
@@ -398,46 +398,46 @@ Bác tài cất lời.
 
 
 def reveal_pattern_E(name, age, pron, pron_cap, obj, sample, ep_num=11):
-    """Pattern E: Multi-POV — Quang internal alternating với passenger external."""
+    """Pattern E: Multi-POV — Khải Phong internal alternating với passenger external."""
     return f"""[pause:800ms]
 
 [POV {pron_cap}, ngoài]: {pron_cap} {obj['verb']}. "{pron_cap} tên {name}. {age}."
 
-[POV Quang, trong]: Quang nhìn {pron} qua khe ghế. Quang nhận ra mặt {pron} có nét quen. Như đã từng thấy ở đâu đó.
+[POV Khải Phong, trong]: Khải Phong nhìn {pron} qua khe ghế. Khải Phong nhận ra mặt {pron} có nét quen. Như đã từng thấy ở đâu đó.
 
 [POV {pron_cap}]: "{sample}"
 
-[POV Quang]: Quang nghe câu chuyện. Quang cảm thấy ngực mình hơi đau — như đó cũng là câu chuyện Quang. Hoặc gần giống.
+[POV Khải Phong]: Khải Phong nghe câu chuyện. Khải Phong cảm thấy ngực mình hơi đau — như đó cũng là câu chuyện Khải Phong. Hoặc gần giống.
 
-Quang nhớ — đêm nào đó rất xa, Quang cũng có một cuộc điện thoại nhỡ. Một người thân ốm. Quang ở xa. Quang không về kịp.
+Khải Phong nhớ — đêm nào đó rất xa, Khải Phong cũng có một cuộc điện thoại nhỡ. Một người thân ốm. Khải Phong ở xa. Khải Phong không về kịp.
 
-Quang quên tên người ấy.
+Khải Phong quên tên người ấy.
 
 [pause:1000ms]
 
 [POV {pron_cap}]: "{pron_cap} mang theo {obj['name']} này nhiều năm. Mỗi đêm đặt cạnh đầu giường. Để không cô đơn."
 
-[POV Quang internal]: Quang lục lọi trí nhớ. Có một thứ Quang vẫn cầm theo. Trong túi áo trong. Một chiếc khăn tay xanh nhạt, hoa thêu trắng. Khăn mùi long não cũ.
+[POV Khải Phong internal]: Khải Phong lục lọi trí nhớ. Có một thứ Khải Phong vẫn cầm theo. Trong túi áo trong. Một chiếc khăn tay xanh nhạt, hoa thêu trắng. Khăn mùi long não cũ.
 
-Khăn của ai? Quang không nhớ. Nhưng khăn luôn ở đó.
+Khăn của ai? Khải Phong không nhớ. Nhưng khăn luôn ở đó.
 
 [POV {pron_cap}]: "Vợ/chồng {pron} có lúc hỏi: 'Sao giữ vật cũ này?' {pron_cap} không trả lời được. Vì nếu kể, người ấy thành câu chuyện. {pron_cap} không muốn người ấy thành câu chuyện."
 
-[POV Quang]: Quang cũng vậy. Quang không kể với ai về khăn tay trong túi. Không vợ/chồng. Không bạn. Vì khăn không phải câu chuyện.
+[POV Khải Phong]: Khải Phong cũng vậy. Khải Phong không kể với ai về khăn tay trong túi. Không vợ/chồng. Không bạn. Vì khăn không phải câu chuyện.
 
 [pause:1500ms]
 
 [POV {pron_cap}]: "Hôm người ấy đi, {pron} không có mặt. Đường tắc. Xe muộn. Đến nơi thì đã muộn."
 
-[POV Quang]: Quang nhớ — đêm đó Quang cũng đang ngồi trên một chuyến xe nào đó. Xe khách đêm. Đường tắc. Quang chạy bộ phần cuối — mưa phùn. Đến nhà sáng sớm. Cổng mở. Người trong xóm đông.
+[POV Khải Phong]: Khải Phong nhớ — đêm đó Khải Phong cũng đang ngồi trên một chuyến xe nào đó. Xe khách đêm. Đường tắc. Khải Phong chạy bộ phần cuối — mưa phùn. Đến nhà sáng sớm. Cổng mở. Người trong xóm đông.
 
-Quang không nhớ ai trong quan tài. Quang nhớ chỉ một câu — em gái/em trai/cô em Quang nói: "Anh về rồi."
+Khải Phong không nhớ ai trong quan tài. Khải Phong nhớ chỉ một câu — em gái/em trai/cô em Khải Phong nói: "Anh về rồi."
 
 [POV {pron_cap}]: "{pron_cap} ngồi cạnh người ấy. Cầm tay. Tay đã lạnh. {pron_cap} không khóc. Chỉ ngồi."
 
-[POV Quang]: Quang cũng ngồi. Quang nhớ. Nhưng Quang không nhớ ai. Tay ai. Mặt ai.
+[POV Khải Phong]: Khải Phong cũng ngồi. Khải Phong nhớ. Nhưng Khải Phong không nhớ ai. Tay ai. Mặt ai.
 
-Có một mảng đen trong trí nhớ Quang. Đêm đó.
+Có một mảng đen trong trí nhớ Khải Phong. Đêm đó.
 
 [pause:1500ms]
 
@@ -447,19 +447,19 @@ Bác tài cất lời.
 
 [POV {pron_cap}]: gật.
 
-[POV Quang]: cũng định gật. Nhưng môi Quang không động. Vì Quang chưa nhớ ra.
+[POV Khải Phong]: cũng định gật. Nhưng môi Khải Phong không động. Vì Khải Phong chưa nhớ ra.
 
-Bác tài liếc gương. Ánh mắt dừng trên Quang. Lâu.
+Bác tài liếc gương. Ánh mắt dừng trên Khải Phong. Lâu.
 
-"Sắp nhớ ra rồi," bác khẽ. Không nhìn {pron}. Nhìn Quang.
+"Sắp nhớ ra rồi," bác khẽ. Không nhìn {pron}. Nhìn Khải Phong.
 
 [pause:1200ms]
 
 [POV {pron_cap}]: "Đêm nay {pron} đem {obj['name']} về quê. Đặt lên ban thờ."
 
-[POV Quang]: Quang nhìn xuống tay mình. Tay trống. Nhưng trong túi áo trong — khăn tay vẫn ở đó. Mùi long não. Như mẹ/bà.
+[POV Khải Phong]: Khải Phong nhìn xuống tay mình. Tay trống. Nhưng trong túi áo trong — khăn tay vẫn ở đó. Mùi long não. Như mẹ/bà.
 
-Quang chạm vào khăn qua áo. Tay run.
+Khải Phong chạm vào khăn qua áo. Tay run.
 
 "Còn vài đêm nữa," bác tài nói thêm. "Rồi con sẽ kể.\""""
 
@@ -492,13 +492,13 @@ Giọng {pron} đều, gần như thì thầm.
 
 [pause:1200ms]
 
-(Trong đầu {pron}, có một dòng chữ thầm — Quang đoán được qua nét mặt.)
+(Trong đầu {pron}, có một dòng chữ thầm — Khải Phong đoán được qua nét mặt.)
 
 {pron_cap} đang nói câu thứ nghìn mốt. Lần này không phải "Con xin lỗi". Mà là: "Mẹ/bà/cha ơi, con không xin lỗi nữa. Con cảm ơn. Cảm ơn đã đợi con tới phút cuối. Cảm ơn đã không bỏ con dù con bỏ mẹ/bà/cha."
 
 [pause:1500ms]
 
-Bên ngoài, gió thổi. Mưa phùn vẫn lất phất. Quang nhìn {pron} qua khe ghế. {pron_cap} không động đậy. Chỉ ngồi với {obj['name']} trên đùi.
+Bên ngoài, gió thổi. Mưa phùn vẫn lất phất. Khải Phong nhìn {pron} qua khe ghế. {pron_cap} không động đậy. Chỉ ngồi với {obj['name']} trên đùi.
 
 Trên áo {pron} có một mảng ẩm — không phải mưa. Là nước mắt {pron} đã rơi từ lúc nào không biết. {pron_cap} không lau. Để mặc.
 
@@ -512,11 +512,11 @@ Bác tài cất lời.
 
 Không nói lại. Vẫn im lặng.
 
-Nhưng Quang biết — câu trả lời là "Có". Là "Có từ lâu. Chỉ chưa nói được với ai. Vì không cần nói."
+Nhưng Khải Phong biết — câu trả lời là "Có". Là "Có từ lâu. Chỉ chưa nói được với ai. Vì không cần nói."
 
 [pause:1200ms]
 
-(Trong đầu {pron} có một câu cuối Quang đoán được:)
+(Trong đầu {pron} có một câu cuối Khải Phong đoán được:)
 
 "Đêm nay {pron} đem {obj['name']} về quê. Đặt lên ban thờ. Không thắp nhang. Không nói gì. Chỉ ngồi. Đợi. Đợi đến sáng. Như mẹ/bà/cha ngày xưa đợi {pron}. Đến sáng, {pron} sẽ về Hà Nội. Tiếp tục sống. Mang theo {obj['name']} đến lượt {pron} đi."
 

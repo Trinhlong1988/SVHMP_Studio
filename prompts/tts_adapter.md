@@ -178,7 +178,7 @@ Ep_02+ skip intro, vào thẳng HOOK.
 ### M-1 Sentence consolidation
 - Scan paragraph → tìm 2-3 câu ngắn cùng subject hoặc cùng theme miêu tả
 - Gộp bằng từ nối (`, rồi`, `, và`, `, kèm theo`, `cũng`, `cùng`)
-- Bù preposition / trạng từ nếu cần (`Quang ngẩng lên` → `Quang khẽ ngẩng lên`)
+- Bù preposition / trạng từ nếu cần (`Khải Phong ngẩng lên` → `Khải Phong khẽ ngẩng lên`)
 
 ### M-2 Pause insertion
 - Apply rule R-5 6 mức pause
@@ -259,11 +259,11 @@ qa:
 ### Ví dụ 1 — Sentence consolidation
 ```
 GỐC:
-Mưa rơi đều. Tiếng máy xe đều. Có ai đó ho khẽ ở phía sau. Quang không quay.
+Mưa rơi đều. Tiếng máy xe đều. Có ai đó ho khẽ ở phía sau. Khải Phong không quay.
 
 TTS:
 Mưa rơi đều, tiếng máy xe cũng đều đều. [pause:300ms]
-Phía sau, có ai đó ho khẽ, nhưng Quang không quay đầu lại. [pause:1000ms]
+Phía sau, có ai đó ho khẽ, nhưng Khải Phong không quay đầu lại. [pause:1000ms]
 ```
 - Vi phạm: 4 câu liên tiếp <6 từ (R-3)
 - Áp dụng: M-1 gộp 2+2 thành 2 câu / M-2 pause
@@ -271,7 +271,7 @@ Phía sau, có ai đó ho khẽ, nhưng Quang không quay đầu lại. [pause:1
 ### Ví dụ 2 — Anti-repetition (R-4 cấu trúc giống)
 ```
 GỐC:
-Hà cười. Hà vẫy tay. Hà mất hút sau cánh cửa kính.
+Hà cười. Hà vẫy tay. Hạ Vy mất hút sau cánh cửa kính.
 
 TTS:
 Hà cười, rồi khẽ vẫy tay, trước khi mất hút sau cánh cửa kính. [pause:1500ms]
@@ -288,7 +288,7 @@ Tiếng anh khẽ. Như sợ Hà đang ngủ ở phòng bên.
 
 — Bảy giờ mười.
 
-— Là lúc Hà mất.
+— Là lúc Hạ Vy mất.
 
 TTS:
 [emph:reveal] — Tôi nhớ ra rồi. [pause:1500ms]
@@ -297,7 +297,7 @@ TTS:
 
 [emph:punch] — Bảy giờ mười. [pause:1200ms]
 
-[emph:regret_climax] — Là lúc Hà mất. [pause:2500ms]
+[emph:regret_climax] — Là lúc Hạ Vy mất. [pause:2500ms]
 ```
 - Giữ punch line ngắn (R-1 exception)
 - M-2 pause markup explicit
@@ -318,13 +318,13 @@ Hà xuống sân bay J F K. Tôi đứng cổng Bê. [pause:600ms]
 ### Ví dụ 5 — Scene transition đầu/cuối
 ```
 SCENE 03 cuối (REVEAL ending):
-... [emph:regret_climax] — Là lúc Hà mất. [pause:2500ms]
+... [emph:regret_climax] — Là lúc Hạ Vy mất. [pause:2500ms]
 
 [emph:whisper] Sương ngoài cửa kính tách ra.
 Một ngọn đèn vàng hiện lên ở cuối con dốc. [pause:3000ms]
 
 SCENE 04 đầu (PAYOFF):
-Quang đứng dậy, chậm rãi, như có ai đỡ vai anh từ phía sau. [pause:600ms]
+Khải Phong đứng dậy, chậm rãi, như có ai đỡ vai anh từ phía sau. [pause:600ms]
 ```
 
 ---
@@ -348,12 +348,12 @@ Dialog ngắn KHÔNG count R-3, nhưng pause sau cần explicit.
 ### EC-2: Câu mở đầu paragraph là punch
 ```
 GỐC paragraph:
-Quang cứng người.
+Khải Phong cứng người.
 
 Anh không trả lời ngay. Anh nhìn chiếc đồng hồ trong tay.
 
 TTS:
-[emph:punch] Quang cứng người. [pause:1200ms]
+[emph:punch] Khải Phong cứng người. [pause:1200ms]
 
 Anh không trả lời ngay, chỉ nhìn xuống chiếc đồng hồ trong tay. [pause:1000ms]
 ```
@@ -362,9 +362,9 @@ Anh không trả lời ngay, chỉ nhìn xuống chiếc đồng hồ trong tay.
 ```
 GỐC:
 Trong đầu anh, Hà đang đứng ở cổng B.
-Hà mặc áo gió xanh nhạt.
+Hạ Vy mặc áo gió xanh nhạt.
 Tóc Hà cột cao.
-Hà cười. Hà vẫy tay. Hà mất hút sau cánh cửa kính.
+Hà cười. Hà vẫy tay. Hạ Vy mất hút sau cánh cửa kính.
 
 TTS:
 [emph:flashback]
@@ -453,12 +453,12 @@ violations:
     location: scene_01_xe_dem.txt:line_42
     detail: "4 câu liên tiếp <6 từ"
     action: auto_rewrite
-    before: "Mưa rơi đều. Tiếng máy xe đều. Có ai đó ho khẽ ở phía sau. Quang không quay."
-    after: "Mưa rơi đều, tiếng máy xe cũng đều đều. Phía sau, có ai đó ho khẽ, nhưng Quang không quay đầu lại."
+    before: "Mưa rơi đều. Tiếng máy xe đều. Có ai đó ho khẽ ở phía sau. Khải Phong không quay."
+    after: "Mưa rơi đều, tiếng máy xe cũng đều đều. Phía sau, có ai đó ho khẽ, nhưng Khải Phong không quay đầu lại."
 rewrites:
   - rule: R-4
     location: scene_03_tai_nan.txt:line_5
-    before: "Hà cười. Hà vẫy tay. Hà mất hút."
+    before: "Hà cười. Hà vẫy tay. Hạ Vy mất hút."
     after: "Hà cười, rồi khẽ vẫy tay, trước khi mất hút."
 normalize_subs:
   - { from: "2 km", to: "hai ki-lô-mét", count: 1 }

@@ -107,7 +107,7 @@ setting_library:
     pairable_pillars: [kindness_regret, family_regret]
     pairable_archetypes: ALL
     pairable_objects: [OBJ_AO_LEN_NAU, OBJ_KHAN_TAY_CU, OBJ_BANH_CHUNG_GOI_DO]
-    used_count: 1                    # ep_01 (cuối tập Quang đi về phía đèn vàng)
+    used_count: 1                    # ep_01 (cuối tập Khải Phong đi về phía đèn vàng)
     last_used_ep: 1
     notes: "Bell rule: đèn vàng xuất hiện khi chuông ngân (bible/02 fact_007)"
 

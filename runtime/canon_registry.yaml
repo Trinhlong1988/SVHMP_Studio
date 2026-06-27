@@ -183,8 +183,8 @@ CANON_OBJ_0001:
   first_seen_ep: 1
   description: "Mặt số La Mã, kim dừng 7:10, mạ vàng đã xước"
   belongs_to_history:
-    - {ep: 1, owner: "Quang (ep_1 protagonist) - rời ep 1"}
-    - {ep: 1, owner: PAS_0007, transition: "Quang rời → cô gái áo gió xanh nhặt"}
+    - {ep: 1, owner: "Khải Phong (ep_1 protagonist) - rời ep 1"}
+    - {ep: 1, owner: PAS_0007, transition: "Khải Phong rời → cô gái áo gió xanh nhặt"}
   arc_link: ARC_0001
   immutable_fields: [id, display_name, description]
 
@@ -197,5 +197,5 @@ CANON_LOC_0001:
   display_name: "Cầu Long Biên"
   first_seen_ep: 1
   type: stop_location
-  used_for_passenger_id: "Quang (ep_1 protagonist)"
+  used_for_passenger_id: "Khải Phong (ep_1 protagonist)"
   reuse_policy: "KHÔNG dùng lại cho ep khác trong 30 ep gần nhất"

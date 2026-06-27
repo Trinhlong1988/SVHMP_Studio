@@ -24,7 +24,7 @@ passenger_state:
   seat_5: {name: "Cô giáo trẻ", joined_ep: 1, pending_regret: AUTO}
   seat_6: {name: "Bác trai trầm", joined_ep: 1, pending_regret: AUTO}
   seat_7:
-    leaving_ep_1: "Quang"            # passenger rời
+    leaving_ep_1: "Khải Phong"            # passenger rời
     new_ep_1: "Cô gái áo gió xanh nhạt"  # passenger lên ngay
     arc_note: "Hà callback hint — KHÔNG reveal sớm"
   seat_8: {name: "Cô gái tóc cột thấp ghế 8", joined_ep: 1, pending_regret: AUTO}
@@ -62,7 +62,7 @@ open_arcs:
     last_referenced_ep: 1
     plant_signals_remaining:
       - "Cô gái mang chiếc đồng hồ qua 6 ep"
-      - "Ai đó nhắc tên Hà bóng gió ep 4 hoặc 5"
+      - "Ai đó nhắc tên Hạ Vy bóng gió ep 4 hoặc 5"
       - "Bác tài liếc gương ở dòng có đồng hồ"
 
 # ============================================================
@@ -112,7 +112,7 @@ title_keywords_history:              # last 10 ep — for same_title_keyword dis
   - {ep: 1, keywords: ["đồng hồ", "xà cừ"]}
 
 regret_line_phrase_history:          # last 35 ep — for substring distance 30
-  - {ep: 1, phrase: "Tôi không nói được câu đó với Hà"}
+  - {ep: 1, phrase: "Tôi không nói được câu đó với Hạ Vy"}
 
 emotion_history_rotation:            # last 12 ep — for same_emotion distance 2
   - {ep: 1, emotion: nostalgia}      # mapped từ ám_ảnh_nhẹ + longing dominant
@@ -134,9 +134,9 @@ ledger_entry:
     object_central: "chiếc đồng hồ nữ vỏ xà cừ"
     setting: "Hà Nội đêm tháng tư, Cầu Long Biên"
     impossible_event: "đồng hồ giữ 8 năm trong ngăn kéo đáy, hôm nay tự nhiên mang theo"
-    clue_planted: "kim dừng 7:10 = giờ Hà mất ở JFK timezone"
-    reveal_summary: "Quang thương Hà từ lớp 11, mua đồng hồ ở sân bay, Hà mất ngày bay sang Mỹ"
-    passenger_leave: {seat: 7, name: "Quang"}
+    clue_planted: "kim dừng 7:10 = giờ Hạ Vy mất ở JFK timezone"
+    reveal_summary: "Khải Phong thương Hà từ lớp 11, mua đồng hồ ở sân bay, Hạ Vy mất ngày bay sang Mỹ"
+    passenger_leave: {seat: 7, name: "Khải Phong"}
     passenger_join: {seat: 7, name: "Cô gái áo gió xanh", object: "đồng hồ xà cừ kim 7:10"}
     cliffhanger_pattern: A
     cliffhanger_summary: "cô gái áp đồng hồ vào ngực, áo gió xanh giống Hà"
@@ -144,7 +144,7 @@ ledger_entry:
     arcs_closed: []
     dominant_emotion: longing
     aftertaste: "ám ảnh nhẹ"
-    beat_4_dialog: "Tôi nhớ ra rồi… Bảy giờ mười. Là lúc Hà mất. Tôi giữ đồng hồ này. Kim dừng đúng giờ Hà mất."
+    beat_4_dialog: "Tôi nhớ ra rồi… Bảy giờ mười. Là lúc Hạ Vy mất. Tôi giữ đồng hồ này. Kim dừng đúng giờ Hạ Vy mất."
     title: "ĐỒNG HỒ NỮ MÀU XÀ CỪ"
     word_count: 1812
     bell_count: 2                    # round 12 fix B6.1 — corrected from 1

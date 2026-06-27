@@ -118,10 +118,10 @@ structural_patterns:
   AP1_over_explain:
     description: "AI giải thích metaphor/symbol mới vừa dùng. Real writer trust reader."
     example_bad: |
-      "Đồng hồ kim dừng 7:10. Đó là giờ Hà mất. Kim không động nữa vì Hà đã không còn. Đồng hồ
-      như đang nhớ về Hà. Quang nhìn đồng hồ, anh hiểu ý nghĩa của giờ 7:10."
+      "Đồng hồ kim dừng 7:10. Đó là giờ Hạ Vy mất. Kim không động nữa vì Hạ Vy đã không còn. Đồng hồ
+      như đang nhớ về Hạ Vy. Khải Phong nhìn đồng hồ, anh hiểu ý nghĩa của giờ 7:10."
     example_good: |
-      "Đồng hồ kim dừng 7:10. Quang nhắm mắt."
+      "Đồng hồ kim dừng 7:10. Khải Phong nhắm mắt."
     flag_pattern: "Câu sau giải thích câu trước bằng phrase 'nghĩa là', 'tức là', 'vì', 'do đó'"
     cross_ref: "32 hiến pháp R8 câu flat → tò mò"
 

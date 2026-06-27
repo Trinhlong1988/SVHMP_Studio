@@ -17,9 +17,9 @@ tier_1:
   ep_1:
     dna_variant: A
     impossible_event: "đồng hồ giữ 8 năm trong ngăn kéo đáy, hôm nay tự nhiên mang theo"
-    clue: "kim dừng 7:10 = giờ Hà mất ở JFK timezone"
-    reveal: "Quang thương Hà từ lớp 11, mua đồng hồ ở sân bay, Hà mất ngày bay sang Mỹ"
-    passenger_leave: {seat: 7, name: "Quang"}
+    clue: "kim dừng 7:10 = giờ Hạ Vy mất ở JFK timezone"
+    reveal: "Khải Phong thương Hà từ lớp 11, mua đồng hồ ở sân bay, Hạ Vy mất ngày bay sang Mỹ"
+    passenger_leave: {seat: 7, name: "Khải Phong"}
     passenger_join: {seat: 7, canon_id: PAS_0007, name: "Cô gái áo gió xanh nhạt", object: "đồng hồ xà cừ kim 7:10"}
     cliffhanger_pattern: A
     cliffhanger_beat: "cô gái áp đồng hồ vào ngực, áo gió xanh giống Hà"
@@ -27,7 +27,7 @@ tier_1:
     arcs_closed: []
     dominant_emotion: longing
     aftertaste: "ám ảnh nhẹ"
-    beat_4_dialog: "Tôi nhớ ra rồi… Bảy giờ mười. Là lúc Hà mất. Tôi giữ đồng hồ này. Kim dừng đúng giờ Hà mất."
+    beat_4_dialog: "Tôi nhớ ra rồi… Bảy giờ mười. Là lúc Hạ Vy mất. Tôi giữ đồng hồ này. Kim dừng đúng giờ Hạ Vy mất."
     beat_5_pattern: A
     predicted_top_comments:
       - "Có người tôi từng thương mà không kịp nói."

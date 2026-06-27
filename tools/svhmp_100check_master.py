@@ -79,7 +79,7 @@ for i, (name, pat) in enumerate(PIPE_CHECKS, 1):
 
 # ===== CATEGORY 3: 26 BUG PATTERN Mr.Long đã catch =====
 BUG_PATTERNS = [
-    'Bất chợt', 'Quang nhớ rồi', 'không tưởng', 'tay sạch',
+    'Bất chợt', 'Khải Phong nhớ rồi', 'không tưởng', 'tay sạch',
     'định nói câu tôi đã định nói', 'Anh không định kể, nhưng anh kể',
     'Đồng hồ này tám năm', 'như vô tình, như không vô tình',
     'một cái lắc rất chậm', 'cô không nói gì,',
@@ -154,7 +154,7 @@ for i, p in enumerate(CRITICAL_PHRASES, 7):
 # ===== CATEGORY 6: VOICE-CHARACTER POV =====
 # Convert dialog character khác → narration (Rule 19)
 DIALOG_CHECK = [
-    ('"Quang ơi"', 'mẹ Hà gọi narration'),
+    ('"Khải Phong ơi"', 'mẹ Hà gọi narration'),
     ('"Của tôi à"', 'cô gái mới dialog'),
     ('"Chưa tới lúc"', 'bác tài signature'),
     ('"Con đã nhớ ra chưa"', 'bác tài signature'),
@@ -181,36 +181,36 @@ check('VOICE POV', 8, 'cô gái ghế tám → mostly dialog (POV match)',
       'PASS', 'narrative around')
 check('VOICE POV', 9, 'bác tài signature direct',
       'PASS', 'Con đã nhớ ra chưa / Chưa tới lúc')
-check('VOICE POV', 10, 'Quang POV main narrator',
+check('VOICE POV', 10, 'Khải Phong POV main narrator',
       'PASS', 'tôi/anh xuyên suốt')
 
 
 # ===== CATEGORY 7: PLOT LOGIC (Rule 21 cross-section) =====
-# S5 ending KHÔNG "Anh" reference (Quang đã xuống xe)
+# S5 ending KHÔNG "Anh" reference (Khải Phong đã xuống xe)
 s5_last = SPECS_DATA['spec_ep01_section_5_payoff.json']['sentences'][-1]['text']
-check('PLOT LOGIC', 1, 's5 ending KHÔNG có "Anh nhớ" reference Quang',
+check('PLOT LOGIC', 1, 's5 ending KHÔNG có "Anh nhớ" reference Khải Phong',
       'PASS' if 'Anh nhớ' not in s5_last else 'FAIL', s5_last[-80:])
 # S6 cô gái mới = Hà reincarnate marker
 s6_ch2 = SPECS_DATA['spec_ep01_section_6_cliffhanger.json']['sentences'][1]['text']
-ha_mirror = any(m in s6_ch2 for m in ['y như đêm Hà', 'y như cái đêm Hà', 'như đêm Hà', 'cổng sân bay'])
+ha_mirror = any(m in s6_ch2 for m in ['y như đêm Hạ Vy', 'y như cái đêm Hạ Vy', 'như đêm Hạ Vy', 'cổng sân bay'])
 check('PLOT LOGIC', 2, 's6 cô gái mới có Hà mirror marker',
       'PASS' if ha_mirror else 'FAIL')
 # Bác tài "Con đã nhớ ra chưa?" 2x (s3 + s5)
 ct_count = sum(text.count('con đã nhớ ra chưa') for text in all_specs_text.values())
 check('PLOT LOGIC', 3, 'Bác tài "Con đã nhớ ra chưa?" 2x intentional',
       'PASS' if ct_count == 2 else 'WARN', f'{ct_count}x')
-# 12 hành khách + Quang
+# 12 hành khách + Khải Phong
 ghế_check = ['ghế ba', 'ghế chín', 'ghế mười hai', 'ghế tám', 'ghế số bảy']
 for i, g in enumerate(ghế_check, 4):
     found = any(g in text for text in all_specs_text.values())
     check('PLOT LOGIC', i, f'{g} present', 'PASS' if found else 'FAIL')
-# 7:10 đồng hồ giờ Hà mất
+# 7:10 đồng hồ giờ Hạ Vy mất
 seven_ten = sum(text.count('bảy giờ mười') for text in all_specs_text.values())
 check('PLOT LOGIC', 9, '7:10 đồng hồ motif',
       'PASS' if seven_ten >= 5 else 'WARN', f'{seven_ten}x')
-# Hà ra đi vĩnh viễn / không "Hà mất"
-ha_mat = any('Hà mất' in s['text'] for spec in SPECS_DATA.values() for s in spec['sentences'])
-check('PLOT LOGIC', 10, 'Bỏ "Hà mất" cụt → "Hà ra đi"',
+# Hà ra đi vĩnh viễn / không "Hạ Vy mất"
+ha_mat = any('Hạ Vy mất' in s['text'] for spec in SPECS_DATA.values() for s in spec['sentences'])
+check('PLOT LOGIC', 10, 'Bỏ "Hạ Vy mất" cụt → "Hà ra đi"',
       'PASS' if not ha_mat else 'WARN')
 
 

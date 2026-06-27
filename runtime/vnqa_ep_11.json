@@ -2,18 +2,24 @@
   "ep_number": 11,
   "phase_h_version": "H1-H7 v1.0",
   "stats": {
-    "tokens_count": 2299,
-    "sentences_approx": 258,
-    "adverbs_count": 105,
-    "adverbs_ratio": 0.046,
-    "word_count": 2085,
-    "estimated_minutes": 13.5
+    "tokens_count": 2396,
+    "sentences_approx": 264,
+    "adverbs_count": 108,
+    "adverbs_ratio": 0.045,
+    "word_count": 2177,
+    "estimated_minutes": 14.0
   },
   "issues": [
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"đêm\" lặp 28x trong ep",
+      "evidence": "\"đêm\" lặp 29x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"khải phong\" lặp 26x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
@@ -49,13 +55,13 @@
     {
       "check": "H10_duration_too_short",
       "severity": "warning",
-      "evidence": "13.5 phút (target 15-18p, max 20p)",
-      "suggestion": "Expand thêm 240 từ để đạt 15p"
+      "evidence": "14.0 phút (target 15-18p, max 20p)",
+      "suggestion": "Expand thêm 148 từ để đạt 15p"
     }
   ],
   "issues_count_by_severity": {
     "critical": 0,
-    "warning": 4,
+    "warning": 5,
     "minor": 3
   },
   "verdict": "WARN",

@@ -83,7 +83,7 @@ arc_schema:
     type: enum
     values: [HIGH, MED, LOW]
     description: |
-      HIGH = main arc series-spanning (vd ARC_0001 callback Hà, ARC driver mystery, ARC nam ep 73)
+      HIGH = main arc series-spanning (vd ARC_0001 callback Hạ Vy, ARC driver mystery, ARC nam ep 73)
       MED = secondary arc 5-15 ep span
       LOW = single-ep beat arc (rarely tracked here, usually inline)
   payoff_owner:

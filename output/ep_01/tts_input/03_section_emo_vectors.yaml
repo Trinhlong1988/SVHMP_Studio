@@ -53,10 +53,10 @@ bell_sfx:
 
 pause_inserts:
   - section: reveal
-    after: 'Quang biết.'
+    after: 'Khải Phong biết.'
     duration_ms: 1200
   - section: reveal
-    after: 'Hà mất tại chỗ.'
+    after: 'Hạ Vy mất tại chỗ.'
     duration_ms: 1200
   - section: incident
     after: 'Anh không định kể.'

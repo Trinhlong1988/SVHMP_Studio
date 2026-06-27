@@ -163,7 +163,7 @@ trigger_lines:
     weight: 0.80
     pairable_archetypes: [ARCH_12_yeu_xa]
     pairable_regret: [unspoken_love]
-    used_count: 1             # ep_01 Quang-Hà (unspoken_love)
+    used_count: 1             # ep_01 Khải Phong-Hà (unspoken_love)
     last_used_ep: 1
 
   T_OM_NGUOI_YEU:

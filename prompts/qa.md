@@ -657,7 +657,7 @@ check_2: archetype_id KHÔNG trùng 6 ep liền (round 3 spec: archetype_distanc
 check_3: pillar KHÔNG trùng 3 ep liền (round 3 spec: pillar_distance ≥3)
 check_4: signature_objects của REG_xxx khớp object trong ep (cross-check bible/12)
 check_5: ep_pillar weight align target (family 0.32 / love 0.24 / promise 0.20 / kindness 0.14 / self 0.10)
-check_6: EP01 reserved = REG_LOV_001 (Quang↔Hà). Nam wound = REG_FAM_002.
+check_6: EP01 reserved = REG_LOV_001 (Khải Phong↔Hà). Nam wound = REG_FAM_002.
 
 if check_1 fail: major_error: regret_archetype_invalid (off-catalog REG_xxx)
 if check_2 fail: major_error: regret_archetype_repeat_streak (round 3: ≥6 ep distance)
@@ -1011,7 +1011,7 @@ algorithm:
       - Object continuity (object_held tracking)
     example_questions:
       - "Tại ep này, PAS_0007 còn trên xe không?"
-      - "Quang đã biết về Hà chưa? Source: ep nào reveal?"
+      - "Khải Phong đã biết về Hạ Vy chưa? Source: ep nào reveal?"
       - "Đồng hồ xà cừ xuất hiện lần đầu ep nào?"
       - "Driver đã nói bao nhiêu câu trong ep này? Câu nào?"
       - "Chuông ring mấy lần? Tại beat nào?"
@@ -1033,8 +1033,8 @@ algorithm:
       Compare draft claims vs independent answers.
       Mismatch = plot hole / continuity violation.
     example_mismatch:
-      draft_claim: "Quang nhớ ra hôm Hà từ biệt"
-      cove_answer: "Hà mất tai nạn JFK lúc 7:10, KHÔNG có scene từ biệt (per state.passengers + arcs ARC_0001)"
+      draft_claim: "Khải Phong nhớ ra hôm Hà từ biệt"
+      cove_answer: "Hạ Vy mất tai nạn JFK lúc 7:10, KHÔNG có scene từ biệt (per state.passengers + arcs ARC_0001)"
       flag: critical_error_plot_hole: hà_farewell_scene_invented
 
 decision:
@@ -1117,7 +1117,7 @@ decision:
   FAIL: REGEN scope=language_only mandatory
 
 known_limitations:
-  - Token repeat false positive cho proper nouns (vd "Quang" 72x expected, "đồng hồ" 38x central object)
+  - Token repeat false positive cho proper nouns (vd "Khải Phong" 72x expected, "đồng hồ" 38x central object)
   - H2 dict check TENTATIVE (Wiktionary full scrape defer Phase H2 future)
   - H3 PhoBERT TENTATIVE (model download defer Phase H3 future)
   - H6 sentence run-on REAL ISSUE — Mr.Long approve threshold tune cho narrative literary

@@ -1,4 +1,53 @@
-# Generator VNSL Addon v1.0
+# Generator VNSL Addon v1.2 LOCKED (R66-R85)
+
+**Status:** ❄️ FROZEN 2026-06-27 round 18. EP02-EP90 generate spec PHẢI tuân thủ.
+
+## R81-R85 thêm round 18 (session 26-27/6 rút kinh nghiệm)
+
+- **R81** SINGLE-CHUNK render lẻ tạo lạc giọng → ưu tiên full section render
+- **R82** EMO_VECTOR consistency guard (deviation ≤0.15/axis trong consecutive chunks)
+- **R83** PHÙ-CUT mandatory tail residue cuts post-render
+- **R84** VERIFY pre-render mandatory (đọc hiến pháp + audit spec trước launch)
+- **R85** RENDER WORKFLOW LOCKED — 10 steps strict, KHÔNG skip
+
+## RENDER WORKFLOW LOCKED
+
+```
+1. Read CLAUDE.md + VERSION.md + BUGS_FIXED.md + memory feedback_svhmp_* (R1-R85)
+2. Read full spec section trước fix
+3. Pre-render audit → PASS 0 HIGH issue (text validator + ngram + open-vowel + em-dash + pause + emo)
+4. Launch render (full section preferred)
+5. Wait completion
+6. Apply chunk-level STF + phù_cut (R83)
+7. Audio QA strict (R80.1-20) → PASS HIGH=0
+8. Splice / replace section
+9. Reconcat full EP01 với LOCKED boundary (R66 1600-1900ms adaptive)
+10. Ship + QA listener verdict
+```
+
+KHÔNG SKIP. KHÔNG SUY LUẬN. KHÔNG SHIP partial.
+
+---
+
+# Generator VNSL Addon v1.1 LOCKED (R66-R80)
+
+**Status:** ❄️ FROZEN 2026-06-26 round 17. EP02-EP90 generate spec PHẢI tuân thủ.
+
+## Rules enforce: R66 R67 R72 R73 R74 R75 R76 R77 R78 R79 R80
+
+(R74-R80 thêm round 17 — xem chi tiết memory `feedback_svhmp_script_8_hard_rules.md` + `feedback_svhmp_audit_lessons_20260626.md`)
+
+- **R74** anaphora cross-chunk guard (Tôi sợ x3, Anh không x2)
+- **R75** em-dash `—` không pause TTS (continuation marker)
+- **R76** open-vowel tail BigVGAN phù (`nữa/mãi/qua/rồi/lâu/đâu/sau...`)
+- **R77** short-fragment chain dính (`Vỏ xà cừ, mặt số La Mã. Kim đồng hồ...`)
+- **R78** voice carryover cross-chunk (the thé `/vowel/+/stop/`)
+- **R79** post-audit mandatory (vnsl_validator PASS 0)
+- **R80** transient peak tail guard (BigVGAN "bụp" near clipping)
+
+**ANTI-PATTERN:** câu dài >20 từ có ≥3 comma split mid-clause → IndexTTS2 + BigVGAN insert internal silence + stop-consonant resume = **"BỤP" transient**. Fix: split thành 2-3 câu rời `.`.
+
+
 
 **Embed vào SVHMP Generator template phần OUTPUT_SPEC_TXT cho EP02-EP90.**
 
@@ -32,7 +81,7 @@ Trong 1 chunk HOẶC 2 chunks liền nhau:
 - Map phân biệt:
   - PRESENT → `đêm nay / tối nay / lúc này / bây giờ`
   - PAST_VAGUE → `một quãng xa xôi / thuở ấy / khi xưa / có một dạo / một lần nào đó`
-  - PAST_FLASHBACK_MARKER → `Trong ký ức,` / `Hồi đó,` / `Lúc ấy,` / `Quang nhớ lại,`
+  - PAST_FLASHBACK_MARKER → `Trong ký ức,` / `Hồi đó,` / `Lúc ấy,` / `Khải Phong nhớ lại,`
   - RECURRING → `mỗi đêm / mỗi khuya / đêm đêm / hằng đêm` (rotate, không lặp 1 form 2+ lần)
 
 ## 4. STOP-CONSONANT TAIL GUARD (R67 hardlock)

@@ -18,7 +18,7 @@ RULES:
   rule_01_two_syllable_min:
     description: "Tên hành khách PHẢI 2 âm tiết (đẹp, có nét văn học). KHÔNG 1 âm tiết (thô, cộc lốc)."
     examples_valid: ["Hạ Vi", "Tường Vi", "Diệu Nhi", "Minh Khang", "Hoàng Long"]
-    examples_invalid: ["Loan", "Quang", "Nam", "Hà", "Tâm"]
+    examples_invalid: ["Loan", "Khải Phong", "Nam", "Hạ Vy", "Tâm"]
     enforcement: QA HARD-FAIL nếu char_name có 1 word duy nhất
     note: "Exception: CHAR_DRIVER='Bác tài' (recurring, KHÔNG là passenger). CHAR_NAM='Nam' (recurring, MIỄN TRỪ)."
 

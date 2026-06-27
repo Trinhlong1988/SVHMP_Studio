@@ -105,7 +105,7 @@ for i, s in enumerate(sents, 1):
                 break
 
     # Rule 4: Trigger mispronounce
-    for trig in ['Bất chợt', 'Quang nhớ rồi', 'Quang là']:
+    for trig in ['Bất chợt', 'Khải Phong nhớ rồi', 'Khải Phong là']:
         if trig in text:
             issues.append(f'R4 ch{i}: TRIGGER "{trig}"')
 

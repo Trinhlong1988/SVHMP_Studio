@@ -78,7 +78,7 @@ pillars:
         signature_objects: [OBJ_DONG_HO_XA_CU, OBJ_AO_GIO_XANH]
         pairable_archetypes: [ARCH_12_yeu_xa]
         pairable_settings: [setting_dem_thang_tu_HN, setting_san_bay_dem]
-        note: "Đây là core của EP01 Quang ↔ Hà — golden reference."
+        note: "Đây là core của EP01 Khải Phong ↔ Hạ Vy — golden reference."
 
       - id: REG_LOV_002
         label: "Vợ trẻ mất khi sinh — chồng vắng vì công tác"
@@ -271,5 +271,5 @@ changelog:
     author: Mr.Long (round 3)
     note: |
       Initial lock. 5 pillars × 5-6 sub-archetypes = 27 regret cores.
-      EP01 (Quang ↔ Hà) = REG_LOV_001.
+      EP01 (Khải Phong ↔ Hà) = REG_LOV_001.
       Nam core_wound = REG_FAM_002.

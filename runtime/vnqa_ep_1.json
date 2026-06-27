@@ -2,14 +2,20 @@
   "ep_number": 1,
   "phase_h_version": "H1-H7 v1.0",
   "stats": {
-    "tokens_count": 3737,
-    "sentences_approx": 443,
-    "adverbs_count": 176,
-    "adverbs_ratio": 0.047,
-    "word_count": 3285,
-    "estimated_minutes": 21.2
+    "tokens_count": 3850,
+    "sentences_approx": 449,
+    "adverbs_count": 178,
+    "adverbs_ratio": 0.046,
+    "word_count": 3407,
+    "estimated_minutes": 22.0
   },
   "issues": [
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"khải phong\" lặp 51x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
     {
       "check": "H2_dict_unusual_compound",
       "severity": "minor",
@@ -25,9 +31,9 @@
   ],
   "issues_count_by_severity": {
     "critical": 0,
-    "warning": 0,
+    "warning": 1,
     "minor": 2
   },
-  "verdict": "PASS",
-  "next_action": "Pipeline proceed to TTS"
+  "verdict": "WARN",
+  "next_action": "Generator review issues, optional regen"
 }

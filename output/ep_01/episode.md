@@ -697,7 +697,7 @@ Bác tài liếc gương.
 - avg_sentence_words: ~7.5 (target 7-9) ✓
 - punch_ratio: ~12% ✓
 - regret_lines: 6+ giữ
-- horror_lines: 3 mới — (a) đồng hồ rung, (b) kính xe phản chiếu Hà, (c) kim nhích "Tách"
+- horror_lines: 3 mới — (a) đồng hồ rung, (b) kính xe phản chiếu Hạ Vy, (c) kim nhích "Tách"
 - sensory_lines: 8+ — vỏ xà cừ lạnh, mùi sông Hồng, mùi phù sa sông Hồng, đèn pha quét, sương đặc, ngực trái áo y tá sẫm hơn, mép giấy sờn, núm radio tiếng rè
 
 ## EMOTION CURVE v7 (per-section emo_vector giữ nguyên script render)
