@@ -145,6 +145,28 @@ Cụ bà ghế tư không quay đầu. Khẽ gật.
 
 "Bây giờ cụ ngồi đây. Trên chuyến xe này. Mang rổ lá dong xuống tỉnh để gói nhờ ở nhà con gái nuôi — đứa cháu nuôi cụ mới biết mặt hai năm trước. Vì ở quê không có ai gói cùng cụ nữa."
 
+[pause:800ms]
+
+"Con gái nuôi của cụ là cháu họ xa — bố mẹ nó mất trong tai nạn giao thông năm nó lên năm. Cụ nhận nuôi. Cháu giờ đã ba mươi sáu, lấy chồng ở thị xã. Có hai con. Cháu là đứa duy nhất trong họ còn về quê thăm cụ mỗi tháng."
+
+"Hai năm trước cháu sinh đứa thứ hai — em bé Nhi. Cụ về thăm. Cụ ôm em Nhi lần đầu. Cụ khóc. Cháu hỏi: 'Bà sao khóc?' Cụ bảo: 'Bà nhớ ngày mẹ con sinh con trong hoàn cảnh đó. Mẹ con đã không sống đủ để ôm con như thế này.'"
+
+"Cháu lặng. Cháu không trả lời. Cụ biết — cháu chưa bao giờ hỏi mẹ ruột. Cụ cũng không nhắc nữa. Cụ chỉ ôm em Nhi lâu hơn. Để em Nhi cũng có hơi của cụ — của bà cố."
+
+[pause:600ms]
+
+"Năm nay cháu nhắn: 'Bà ơi Tết về nhà con nhé. Con lo bà ở quê một mình.' Cụ định không đi — quen ở quê rồi. Nhưng cụ nghĩ — có lẽ đây là Tết cuối cụ có thể đi xa. Cụ đã tám mốt. Hai chân yếu. Hai tay run."
+
+"Cụ gọi cho con trai cả: 'Mẹ xuống Hải Phòng nhà em Lan ăn Tết.' Con trai cả mừng: 'Vâng mẹ. Tết con bận họp công ty.' Cụ gọi cho con thứ: 'Mẹ xuống nhà Lan.' Con thứ: 'Vâng mẹ. Vợ chồng con đi du lịch Đà Lạt.' Cụ gọi cho con út ở Mỹ — không nghe."
+
+"Cụ xếp rổ lá dong. Xuống xe khách huyện. Bắt chuyến này."
+
+[pause:600ms]
+
+"Trong rổ này còn một cuốn sổ tay cũ — sổ mẹ chồng cụ để lại. Mẹ chồng cụ ghi công thức gói bánh chưng — đậu xanh ngâm bao giờ, gạo nếp vo mấy nước, thịt ướp gì. Cụ giữ sáu mươi năm. Sổ đã vàng. Chữ mờ. Cụ nhớ thuộc lòng rồi, nhưng vẫn cầm theo. Sổ là cái duy nhất của mẹ chồng còn lại."
+
+"Cụ sẽ đưa sổ này cho em Lan — con gái nuôi. Để Lan tiếp tục gói. Để khi Lan già, Lan đưa con Lan. Cứ thế truyền."
+
 ---
 
 # PAYOFF [section 5 — Kết quả]

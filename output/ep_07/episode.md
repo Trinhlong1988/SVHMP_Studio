@@ -259,4 +259,24 @@ Quang lắc đầu. Không thể. Đó chỉ là tiếng rè của radio cũ. Kh
 
 Bên ngoài cửa kính, có một biển tên đường thoáng qua đèn pha xe. Quang nhìn — biển ghi "Đường Mẹ Suốt — 2km". Tên đường lạ. Quang chưa nghe bao giờ.
 
+[pause:1000ms]
+
+Quang nhớ — có một người đàn bà tên Mẹ Suốt thời chiến chèo đò chở bộ đội qua sông. Bị bom. Mẹ vẫn chèo. Đến khi không còn ai chèo. Quang đọc truyện về Mẹ Suốt hồi cấp một. Hồi đó Quang đã viết một bài văn — bài đầu tiên Quang khóc khi viết.
+
+Mẹ con cũng có tên giống mẹ Quang? Quang không nhớ tên mẹ. Quang chỉ nhớ mặt mẹ — một thoáng. Mẹ ngồi cạnh bếp lò, áo nâu, tay đỡ thau gạo. Mẹ cười nhẹ. Không nói.
+
+[pause:800ms]
+
+Quang ngẩng đầu. Trong gương chiếu hậu, ngoài bác tài, có một bóng người ngồi trên ghế sau Quang — phụ nữ, áo nâu, tay đỡ một cái gì đó. Bóng mờ. Quang không nhìn rõ.
+
+Quang quay đầu. Sau Quang là ghế trống. Không ai.
+
+Quang nhìn lại gương. Bóng đó vẫn còn. Người phụ nữ áo nâu. Ngồi yên. Không nhìn Quang.
+
+[pause:1500ms]
+
 Xe lăn bánh tiếp. Đêm vẫn lăn bánh.
+
+Trên ghế lái, bác tài liếc gương. Bác đã thấy bóng kia. Bác không phản ứng. Như đã quen.
+
+Quang nhắm mắt. Hơi thở chậm xuống một nhịp.
