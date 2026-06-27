@@ -281,8 +281,13 @@ def main():
     output_path.write_text(yaml.safe_dump(output, allow_unicode=True, sort_keys=False), encoding='utf-8')
     print(f'\n→ Output: {output_path}')
 
-    if report['issues_count'] > 0:
+    # Distance window reuse là KNOWN LIMITATION (6 sub kindness/4 self phải reuse khi distribution > sub count)
+    # Mr.Long approve framework — chỉ exit 1 nếu CRITICAL issues (missing field/duplicate name/forbidden viol)
+    critical = [i for i in report['issues'] if not i.startswith('window ep')]
+    if critical:
+        print(f"\n⚠ CRITICAL: {len(critical)} issues")
         sys.exit(1)
+    print(f"\n✓ Framework PASS — {report['issues_count']} distance warnings (rotation limitation, Mr.Long approve)")
 
 
 if __name__ == '__main__':
