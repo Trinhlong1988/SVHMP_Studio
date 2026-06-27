@@ -150,6 +150,32 @@ Người đàn ông ghế tám không quay đầu. Một thoáng. Rồi gật.
 
 "Năm nào chú cũng về quê đêm ba mươi. Mặc áo. Ngồi trên ghế mây ngoài hiên — chính cái ghế mẹ đã ngồi đan dở. Cuộn len còn lại trên ghế, chú không dám chạm. Chỉ ngồi cạnh. Đến mùng một."
 
+[pause:800ms]
+
+"Em gái chú giờ đã lập gia đình ở Vinh — gần ngoại. Mỗi năm em chỉ về quê được mùng hai. Em chưa bao giờ thấy chú mặc áo len mẹ đan vào đêm ba mươi. Em không biết. Chú giữ riêng cho mình."
+
+"Vợ chú từng hỏi: 'Áo cũ thế anh không thay sao?' Chú bảo: 'Áo mẹ đan, anh giữ.' Vợ chú không hỏi nữa. Sau này vợ chú mất sớm — chú góa ba năm rồi. Một mình. Hai con trai chú đã trưởng thành, ở Hà Nội."
+
+[pause:600ms]
+
+"Mỗi năm chú về quê, hàng xóm sang chơi. Họ hỏi: 'Chú vẫn mặc áo len cũ thế nhỉ?' Chú gật. Họ không hỏi nữa. Họ biết — cái áo này không thay được."
+
+"Chú nghĩ — nếu một ngày chú không còn nữa, áo sẽ thế nào? Vợ con chú có biết câu chuyện áo này không? Chú chưa kể với ai. Chú chỉ giữ trong lòng. Mẹ đan áo này cho chú — chỉ mẹ và chú biết. Đến khi chú đi, không còn ai biết nữa."
+
+[pause:1200ms]
+
+"Đêm nay chú đem áo về Hà Tĩnh. Để mặc lên giường mẹ — giường mẹ vẫn ở chỗ cũ. Chú sẽ nằm trên giường đó. Mặc áo. Một đêm. Đến mùng một về Hà Nội."
+
+[pause:600ms]
+
+"Năm sau chú sẽ về một mình nữa. Năm sau nữa cũng vậy. Đến khi chú không còn về được — vì già, vì yếu, vì đi rồi — áo này sẽ ở đâu, chú không biết. Vợ chú đã mất. Hai con trai chú ở Hà Nội, chưa từng mặc áo này. Có lẽ áo sẽ vào chiếc tủ cũ ở quê. Nằm im. Đến khi căn nhà cũng đổ."
+
+[pause:800ms]
+
+"Chú đã suy nghĩ: nên đốt áo cùng chú khi chú đi. Để mẹ với chú cùng có hơi áo. Nhưng chú lại nghĩ — có khi nào con trai chú một ngày trẻ tuổi nó cần một cái áo của bà nội? Có khi nào nó muốn biết bà nó đã đan dở cái áo này cho ai? Chú không dám quyết. Chú để áo trong tủ. Tự tủ sẽ quyết."
+
+"Đêm nay chú về để chia tay áo. Có thể là lần cuối chú mặc đêm ba mươi. Có thể không. Chú đã sáu mươi mấy tuổi. Mỗi năm chú về quê, chú lại đếm — còn bao nhiêu lần ba mươi nữa? Mười? Năm? Hai? Không ai biết."
+
 ---
 
 # PAYOFF [section 5 — Kết quả]

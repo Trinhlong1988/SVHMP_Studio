@@ -148,6 +148,26 @@ Chú Việt khẽ gật.
 
 "Năm nay anh quyết định về quê đêm ba mươi. Anh sẽ thắp hương cho bà. Cho cô. Cho cả những người đã đi mà còn ai nhớ — và những người đã đi mà không ai nhớ nữa."
 
+[pause:1000ms]
+
+"Vợ anh ở Hà Nội, một người Hà Nội. Vợ chưa bao giờ gặp bà — bà mất trước khi anh lập gia đình mười lăm năm. Vợ chỉ thấy ảnh bà trên ban thờ ở nhà anh. Anh chưa kể với vợ chuyện đêm bà mất — chuyện anh chạy bộ hai mươi cây số dưới mưa. Chuyện bà thì thầm 'Khăn tay... trong túi áo bà...'."
+
+"Anh muốn kể. Nhiều lần. Nhưng mỗi lần định kể, anh lại dừng. Vì câu chuyện là của riêng anh và bà. Vợ anh có thể hiểu — nhưng vợ sẽ không thấm như anh. Câu chuyện sẽ thành ký ức của hai người — và bà sẽ ít riêng hơn."
+
+[pause:800ms]
+
+"Con trai anh giờ đã hai mươi tuổi — học đại học, ở phòng trọ riêng. Con anh chưa từng gặp cụ — bà nội của bố. Anh có lần kể sơ về cụ với con: 'Cụ tên Vân. Cụ là giáo viên cấp một về hưu. Cụ nuôi bố từ ba tuổi.'"
+
+"Con anh nghe. Gật đầu. Không hỏi thêm. Anh không biết con có thật sự quan tâm hay chỉ lịch sự. Có lẽ con nghĩ: 'Cụ là người xa lạ — của thế hệ trước.' Con không biết — cụ là người yêu thương bố con nó nhất trên đời này."
+
+[pause:1000ms]
+
+"Có một ngày anh sẽ đi. Khi anh đi, không còn ai biết cụ. Vợ anh sẽ kể với con anh — nhưng chỉ là kể lại lời anh kể. Câu chuyện sẽ phai đi qua hai thế hệ — đến khi không còn ai nhớ cụ là ai, đã có cuộc đời như thế nào."
+
+"Anh sợ điều đó. Anh sợ ngày bà thực sự mất — không phải lúc bà tắt thở, mà là lúc không còn ai trên đời nhớ bà."
+
+"Đêm nay anh về quê. Để gặp bà một lần nữa. Để nói: 'Bà ơi, cháu vẫn nhớ bà. Khi nào cháu đi, sẽ có ai khác biết bà không? Cháu không chắc. Nhưng cháu vẫn nhớ.'"
+
 ---
 
 # PAYOFF [section 5]

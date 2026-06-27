@@ -2,30 +2,36 @@
   "ep_number": 8,
   "phase_h_version": "H1-H7 v1.0",
   "stats": {
-    "tokens_count": 1805,
-    "sentences_approx": 237,
-    "adverbs_count": 80,
-    "adverbs_ratio": 0.044,
-    "word_count": 1516,
-    "estimated_minutes": 9.8
+    "tokens_count": 2796,
+    "sentences_approx": 356,
+    "adverbs_count": 147,
+    "adverbs_ratio": 0.053,
+    "word_count": 2362,
+    "estimated_minutes": 15.2
   },
   "issues": [
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"đêm\" lặp 17x trong ep",
+      "evidence": "\"đêm\" lặp 25x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"khăn\" lặp 16x trong ep",
+      "evidence": "\"khăn\" lặp 25x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"ngồi\" lặp 12x trong ep",
+      "evidence": "\"[ pause\" lặp 17x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"ngồi\" lặp 16x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
@@ -43,14 +49,8 @@
     {
       "check": "H9_stop_consonant_tail",
       "severity": "minor",
-      "evidence": "Word \"biết\" xuất hiện 1x (BigVGAN tail risk)",
+      "evidence": "Word \"biết\" xuất hiện 6x (BigVGAN tail risk)",
       "suggestion": "chưa biết → vẫn chưa hay / vẫn chưa rõ"
-    },
-    {
-      "check": "H10_duration_too_short",
-      "severity": "warning",
-      "evidence": "9.8 phút (target 15-18p, max 20p)",
-      "suggestion": "Expand thêm 808 từ để đạt 15p"
     }
   ],
   "issues_count_by_severity": {

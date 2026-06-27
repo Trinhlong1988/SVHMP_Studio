@@ -156,6 +156,18 @@ Người phụ nữ ghế chín không quay đầu. Nhưng môi cô khẽ độn
 
 [pause:800ms]
 
+"Mẹ con là người Nghệ An, lấy chồng về Phú Thọ năm hai mươi tuổi. Bố con mất sớm — khi mẹ ba mươi sáu, con mới mười tuổi, em trai mới năm tuổi. Mẹ ở vậy nuôi hai chị em. Mẹ làm giáo viên cấp một — lương ít, cuối tháng nào cũng tính từng đồng."
+
+"Tới khi con vào Hà Nội học đại học, mẹ vẫn ở quê. Em trai con cũng đi học xa, rồi lập gia đình ở Hà Nội. Mẹ ở một mình mười lăm năm. Mỗi cuối tuần con gọi điện. Mẹ luôn nói: 'Mẹ ổn, con đừng lo. Mẹ có hàng xóm tốt.'"
+
+"Mỗi Tết về quê, con thấy nhà mẹ rộng hơn — vì mẹ một mình. Mẹ giữ thói quen gói bánh chưng — mỗi năm năm cặp, chia cho hàng xóm. Mẹ giữ thói quen tự viết phong bao lì xì cho các cháu — dù mắt đã mờ."
+
+[pause:800ms]
+
+"Có một lần con bảo mẹ: 'Mẹ về Hà Nội ở với con. Một mình mẹ vất vả.' Mẹ cười: 'Mẹ ở đây bao nhiêu năm rồi. Bố con cũng nằm ở đây. Mẹ đi sao được.' Con không nói thêm. Mẹ ở quê tới ngày đi."
+
+[pause:1000ms]
+
 "Năm nay con về Phú Thọ ăn Tết với gia đình. Em trai con và vợ con anh ấy ở quê. Bé Diệu ngoài Sài Gòn, mẹ bé nhắn: 'Năm sau bé biết đi, em đưa về cho bà nội thắp hương.'"
 
 "Con mang theo xấp phong bao. Định ngày mùng một, con phát cho các cháu. Tất cả đều có chữ bà. Riêng phong bao cho bé Diệu — con sẽ đặt lên ban thờ mẹ. Để mẹ tự gọi tên cháu vào nhà mới."

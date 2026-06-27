@@ -138,6 +138,28 @@ Cô gật. Mắt cô khẽ ngấn nước.
 
 "Em mang băng theo. Mỗi tháng em lại bật một lần. Để con em nhớ giọng bà cố. Để em nhớ giọng bà ngoại."
 
+[pause:1000ms]
+
+"Bà ngoại em là người Tày. Bà nói tiếng Tày với em từ bé. Em hiểu nhưng không nói được nữa — lâu rồi không tập. Trên băng cassette, có một đoạn bà nói tiếng Tày — bà bảo: 'Cháu nhớ tiếng quê mình. Đừng quên.'"
+
+"Em quên rồi. Em chỉ nhớ vài câu chào. Mỗi lần em nghe đoạn đó, em xấu hổ. Vì em đã quên tiếng bà."
+
+[pause:600ms]
+
+"Bà kể em nghe nhiều chuyện trước khi em đi học đại học. Chuyện hồi bà còn trẻ — chiến tranh, đói kém. Bà phải đi cõng gạo qua núi cho bộ đội. Chân trần. Tay đặt lên đá lạnh. Bà có một vết sẹo dài ở bắp chân — em vẫn nhớ vết sẹo đó. Sẹo mà bà cười khi kể."
+
+"Bà bảo: 'Người mình lúc khó nhất, vẫn phải cười. Vì khóc thì ai cũng khóc — nhưng cười khi khó, mới có ngày qua.'"
+
+[pause:800ms]
+
+"Em đã quên câu đó suốt mười năm. Lúc em sinh con đầu lòng — em đau đẻ — em tự nhiên nhớ câu bà. Em cố cười. Cười không ra. Nhưng cố. Em sinh con xong, cô bác sĩ bảo: 'Mẹ này lạ — cười suốt lúc đau.'"
+
+"Em không kể chuyện bà cho ai. Em chỉ giữ trong lòng. Bà ngoại — chỉ riêng em hiểu bà."
+
+"Khi em đi, không còn ai biết câu bà đã nói với em. Không còn ai biết bà có vết sẹo ở bắp chân. Không còn ai biết bà nói tiếng Tày."
+
+[pause:1500ms]
+
 ---
 
 # PAYOFF [section 5]
@@ -145,6 +167,24 @@ Cô gật. Mắt cô khẽ ngấn nước.
 [pause:800ms]
 
 "Năm nay em về quê đúng tháng Một âm. Một mình. Em sẽ đem băng đến nhà sàn cũ của bà. Em sẽ ngồi trên hiên nhà — chỗ bà vẫn ngồi võng — bật băng cho bà nghe lại. Em sẽ nói: 'Bà ơi cháu về rồi. Chắt của bà đã năm tuổi. Cháu sẽ về thường xuyên hơn.'"
+
+[pause:800ms]
+
+"Chồng em không hiểu vì sao em đi một mình. Em không kể đủ. Em chỉ bảo: 'Em về quê thắp hương bà. Em đi hai ngày.' Chồng em gật. Anh ấy là người thành phố — không có quê nội ngoại ở vùng núi. Anh ấy không hiểu việc đi xa thắp hương."
+
+"Con em năm tuổi đã hỏi: 'Mẹ ơi bà cố ở đâu?' Em chỉ vào ngực mình. Con em không hiểu. Em bảo: 'Bà ở trong lòng mẹ. Khi con lớn, mẹ kể cho con nghe.' Con em không hỏi nữa. Nhưng con thường hát theo băng cassette — bài cò bay. Con không thuộc lời. Nhưng con cố hát."
+
+[pause:600ms]
+
+"Mẹ em — con gái duy nhất của bà — sống ở Bắc Giang. Bà với mẹ em không hợp tính. Mẹ em đi sớm khỏi nhà từ hồi mười tám. Em là cháu duy nhất bà chăm. Khi bà mất, mẹ em chỉ về một ngày. Đến đám tang. Khóc một lúc. Rồi đi."
+
+"Em hiểu — mẹ em có những vết thương với bà. Em không trách mẹ. Mẹ cũng có lý do của mẹ. Nhưng bà — bà chỉ có mình em. Em là chắt thứ ba bà gặp trong đời — sau bố em, mẹ em."
+
+[pause:1000ms]
+
+"Bà thường nói tiếng Tày một câu cuối ngày: 'Pò en chi pài.' Em nhớ câu đó. Nhưng em không biết nghĩa. Em chưa bao giờ hỏi. Bây giờ em không hỏi được ai. Người duy nhất biết tiếng Tày trong họ em — là bà."
+
+"Em đem băng cassette về quê. Định sẽ tìm cụ già nào trong xóm còn biết tiếng Tày. Xin dịch câu đó. Để em biết bà nói gì với em mỗi tối."
 
 [pause:1500ms]
 
@@ -175,6 +215,20 @@ Cô gật. Bước xuống. Cửa xe khép lại. Xe lăn bánh.
 Bên ngoài, cô đi vào con đường đất ven núi. Túi vải xách bên hông. Phía xa, nhà sàn đèn dầu. Trên hiên, cụ bà vẫn ngồi võng, tay đặt máy cassette. Cô lên đến hiên. Cụ bà ngẩng đầu. Hai cái bóng nhìn nhau qua sương.
 
 Quang chớp mắt. Cụ bà không còn. Cô đặt băng lên máy.
+
+[pause:1000ms]
+
+Cô bấm nút Play. Lâu. Băng quay rè rè.
+
+Không có tiếng. Băng có lẽ đã hỏng. Hoặc pin đã hết.
+
+Cô vẫn ngồi đó. Tay đặt lên máy. Mắt nhìn xuống. Như chờ tiếng nào đó cất lên.
+
+Quang nghe — qua sương, qua tiếng gió núi — có một giọng phụ nữ rất khẽ. Tiếng Tày. Mấy câu. Không rõ.
+
+Rồi tiếng tan vào sương.
+
+Cô ngẩng đầu. Mỉm cười. Lần đầu tiên đêm nay.
 
 [pause:1200ms]
 
@@ -213,3 +267,19 @@ Quang nhìn ra cửa kính. Đêm vẫn dài. Sương núi vẫn dày.
 Trên ghế lái, bác tài liếc gương lần nữa. Ánh mắt không buồn. Không vui. Chỉ là nhìn.
 
 Như nhìn một người sắp nhớ ra điều gì đó rất quan trọng.
+
+[pause:1200ms]
+
+Quang lấy viên pin cassette đặt trong tay. Pin đã rỉ một góc. Trên vỏ pin có khắc nhãn cũ — chữ Nhật, hoặc chữ gì đó Quang không đọc được.
+
+Quang lật pin. Mặt sau có một dấu in nhỏ — bóng mờ, không rõ. Như dấu vân tay ai đó đã ấn lên rất lâu.
+
+Quang đưa pin lên gần ngọn đèn nhỏ trong xe. Cố nhìn dấu vân tay.
+
+Đó là dấu vân tay phụ nữ — nhỏ, mảnh. Có một vết sẹo nhỏ ở đầu ngón cái — vết hình lưỡi liềm. Quang nhớ — bà ngoại Quang. Bà có vết sẹo đó. Bà bị bỏng dầu khi nấu cơm hồi trẻ.
+
+Bao giờ bà ngoại Quang đã chạm vào viên pin này? Quang không nhớ. Quang chưa từng có máy cassette. Hay đã có? Quang không chắc.
+
+[pause:1500ms]
+
+Trên ghế lái, bác tài liếc gương. Lần này bác mỉm cười — một cái cười rất nhẹ. Như nhìn một người sắp về tới đích.

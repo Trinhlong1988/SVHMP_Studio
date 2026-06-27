@@ -2,18 +2,18 @@
   "ep_number": 7,
   "phase_h_version": "H1-H7 v1.0",
   "stats": {
-    "tokens_count": 1727,
-    "sentences_approx": 225,
-    "adverbs_count": 77,
-    "adverbs_ratio": 0.045,
-    "word_count": 1533,
-    "estimated_minutes": 9.9
+    "tokens_count": 2367,
+    "sentences_approx": 320,
+    "adverbs_count": 128,
+    "adverbs_ratio": 0.054,
+    "word_count": 2090,
+    "estimated_minutes": 13.5
   },
   "issues": [
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"phong bao\" lặp 20x trong ep",
+      "evidence": "\"phong bao\" lặp 26x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
@@ -21,6 +21,12 @@
       "severity": "minor",
       "evidence": "Cụm từ dài bất thường: ['` prompt_version', 'OBJ_LI_XI_DO signature_setting', 'Hải Dương bell_count']",
       "suggestion": "TENTATIVE — Mr.Long verify trong từ điển VN"
+    },
+    {
+      "check": "H9_stop_consonant_tail",
+      "severity": "minor",
+      "evidence": "Word \"suốt\" xuất hiện 1x (BigVGAN tail risk)",
+      "suggestion": "trong suốt → lặng lẽ / mờ đục"
     },
     {
       "check": "H9_stop_consonant_tail",
@@ -37,14 +43,14 @@
     {
       "check": "H10_duration_too_short",
       "severity": "warning",
-      "evidence": "9.9 phút (target 15-18p, max 20p)",
-      "suggestion": "Expand thêm 792 từ để đạt 15p"
+      "evidence": "13.5 phút (target 15-18p, max 20p)",
+      "suggestion": "Expand thêm 234 từ để đạt 15p"
     }
   ],
   "issues_count_by_severity": {
     "critical": 0,
     "warning": 2,
-    "minor": 3
+    "minor": 4
   },
   "verdict": "WARN",
   "next_action": "Generator review issues, optional regen"
