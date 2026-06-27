@@ -1,0 +1,57 @@
+{
+  "ep_number": 17,
+  "phase_h_version": "H1-H7 v1.0",
+  "stats": {
+    "tokens_count": 2815,
+    "sentences_approx": 369,
+    "adverbs_count": 181,
+    "adverbs_ratio": 0.064,
+    "word_count": 2446,
+    "estimated_minutes": 15.8
+  },
+  "issues": [
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"đêm\" lặp 26x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"trên\" lặp 23x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"trong\" lặp 22x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H2_dict_unusual_compound",
+      "severity": "minor",
+      "evidence": "Cụm từ dài bất thường: ['` prompt_version', 'REG_FAM_003 signature_object', 'OBJ_SO_GHI_CHEP signature_setting']",
+      "suggestion": "TENTATIVE — Mr.Long verify trong từ điển VN"
+    },
+    {
+      "check": "H9_stop_consonant_tail",
+      "severity": "minor",
+      "evidence": "Word \"suốt\" xuất hiện 1x (BigVGAN tail risk)",
+      "suggestion": "trong suốt → lặng lẽ / mờ đục"
+    },
+    {
+      "check": "H9_stop_consonant_tail",
+      "severity": "minor",
+      "evidence": "Word \"biết\" xuất hiện 3x (BigVGAN tail risk)",
+      "suggestion": "chưa biết → vẫn chưa hay / vẫn chưa rõ"
+    }
+  ],
+  "issues_count_by_severity": {
+    "critical": 0,
+    "warning": 3,
+    "minor": 3
+  },
+  "verdict": "WARN",
+  "next_action": "Generator review issues, optional regen"
+}
