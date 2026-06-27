@@ -2,42 +2,54 @@
   "ep_number": 12,
   "phase_h_version": "H1-H7 v1.0",
   "stats": {
-    "tokens_count": 2768,
-    "sentences_approx": 332,
-    "adverbs_count": 177,
-    "adverbs_ratio": 0.064,
-    "word_count": 2431,
-    "estimated_minutes": 15.7
+    "tokens_count": 1046,
+    "sentences_approx": 128,
+    "adverbs_count": 36,
+    "adverbs_ratio": 0.034,
+    "word_count": 918,
+    "estimated_minutes": 5.9
   },
   "issues": [
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"đêm\" lặp 22x trong ep",
+      "evidence": "\"đêm\" lặp 12x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"trên\" lặp 22x trong ep",
+      "evidence": "\"[ pause\" lặp 9x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"xà cừ\" lặp 8x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
       "check": "H2_dict_unusual_compound",
       "severity": "minor",
-      "evidence": "Cụm từ dài bất thường: ['` prompt_version', 'REG_FAM_002 signature_object', 'OBJ_KHAN_TAY_CU signature_setting']",
+      "evidence": "Cụm từ dài bất thường: ['` prompt_version', '0.55 quang_memory_fragment', 'OBJ_DONG_HO_XA_CU signature_setting']",
       "suggestion": "TENTATIVE — Mr.Long verify trong từ điển VN"
     },
     {
       "check": "H9_stop_consonant_tail",
       "severity": "minor",
-      "evidence": "Word \"biết\" xuất hiện 3x (BigVGAN tail risk)",
+      "evidence": "Word \"biết\" xuất hiện 2x (BigVGAN tail risk)",
       "suggestion": "chưa biết → vẫn chưa hay / vẫn chưa rõ"
+    },
+    {
+      "check": "H10_duration_too_short",
+      "severity": "warning",
+      "evidence": "5.9 phút (target 15-18p, max 20p)",
+      "suggestion": "Expand thêm 1407 từ để đạt 15p"
     }
   ],
   "issues_count_by_severity": {
     "critical": 0,
-    "warning": 2,
+    "warning": 4,
     "minor": 2
   },
   "verdict": "WARN",

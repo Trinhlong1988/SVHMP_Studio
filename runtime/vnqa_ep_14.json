@@ -2,43 +2,55 @@
   "ep_number": 14,
   "phase_h_version": "H1-H7 v1.0",
   "stats": {
-    "tokens_count": 2679,
-    "sentences_approx": 341,
-    "adverbs_count": 162,
-    "adverbs_ratio": 0.06,
-    "word_count": 2345,
-    "estimated_minutes": 15.1
+    "tokens_count": 1072,
+    "sentences_approx": 125,
+    "adverbs_count": 36,
+    "adverbs_ratio": 0.034,
+    "word_count": 931,
+    "estimated_minutes": 6.0
   },
   "issues": [
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"đêm\" lặp 24x trong ep",
+      "evidence": "\"bà cụ\" lặp 13x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"trên\" lặp 24x trong ep",
+      "evidence": "\"khăn\" lặp 10x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"[ pause\" lặp 10x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"hoa cúc\" lặp 9x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
       "check": "H2_dict_unusual_compound",
       "severity": "minor",
-      "evidence": "Cụm từ dài bất thường: ['` prompt_version', 'REG_FAM_003 signature_object', 'OBJ_BUT_MAY_CHA signature_setting']",
+      "evidence": "Cụm từ dài bất thường: ['` prompt_version', '0.55 quang_memory_fragment', 'HOA_CUC symbol']",
       "suggestion": "TENTATIVE — Mr.Long verify trong từ điển VN"
     },
     {
-      "check": "H9_stop_consonant_tail",
-      "severity": "minor",
-      "evidence": "Word \"biết\" xuất hiện 4x (BigVGAN tail risk)",
-      "suggestion": "chưa biết → vẫn chưa hay / vẫn chưa rõ"
+      "check": "H10_duration_too_short",
+      "severity": "warning",
+      "evidence": "6.0 phút (target 15-18p, max 20p)",
+      "suggestion": "Expand thêm 1393 từ để đạt 15p"
     }
   ],
   "issues_count_by_severity": {
     "critical": 0,
-    "warning": 2,
-    "minor": 2
+    "warning": 5,
+    "minor": 1
   },
   "verdict": "WARN",
   "next_action": "Generator review issues, optional regen"

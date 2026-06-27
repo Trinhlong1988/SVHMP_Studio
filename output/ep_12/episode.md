@@ -1,18 +1,22 @@
-# TẬP 12 — KHĂN TAY CŨ, CHÁU KHÔNG BẮT MÁY
+# TẬP 12 — ĐỒNG HỒ XÀ CỪ NGƯỜI YÊU CŨ TẶNG TRƯỚC CHIA TAY
 
 ```
-prompt_version: SVHMP-10.0-RC3.4
+prompt_version: SVHMP-10.0-RC3.5
 ep_number: 12
-phase: mid (12/90)
-passenger_main: PAS_0023 (Hữu Trí, nam 66+)
-regret_pillar: family_regret
-regret_sub: REG_FAM_002
-signature_object: OBJ_KHAN_TAY_CU
-signature_setting: setting_dem_giao_thua
-stop_location: ngã ba Phú Yên
+phase: warming (S1)
+pillar: love
+intensity_level: 0.55
+quang_memory_fragment: M3 (deepens — Quang ngẫm tên Hà sâu hơn)
+object_sub_arc: callback symbol (đồng hồ xà cừ 7:10 echo EP01)
+callback_target: ep_01 (object_echo OBJ_DONG_HO_XA_CU)
+passenger_main: nu 35, đem đồng hồ xà cừ người yêu cũ tặng
+signature_object: OBJ_DONG_HO_XA_CU
+signature_setting: setting_dem_thang_tu_HN
+stop_location: ngã ba Cầu Long Biên
 bell_count: 1
 ghost_manifest: 1
-auto_gen: tools/auto_gen_ep_v3.py v3.1 — pattern B (Reverse POV) (template + QA loop)
+hand_crafted: true
+arc_design_compliant: bible/21 R33-R38
 ```
 
 ---
@@ -21,19 +25,19 @@ auto_gen: tools/auto_gen_ep_v3.py v3.1 — pattern B (Reverse POV) (template + Q
 
 [pause:800ms]
 
-Đêm ba mươi tháng Chạp. Sương dày. Chuyến xe đêm chạy qua một đoạn đường vắng ven Yên. Pháo hoa từ xa nổ rất nhẹ. Đèn pha quét nhẹ lên hai bên đường tối.
+Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven sông Hồng. Đèn pha quét lên cầu Long Biên.
 
-Quang ngồi ghế thứ ba. Đêm thứ 12 Quang đếm. Trong túi áo Quang đã có 10 vật — các vật rời rạc từ những đêm trước. Sợi len. Sợi lạt. Phong bao trống. Sợi chỉ trắng. Viên pin cassette. Mỗi vật một câu chuyện. Quang chưa hiểu vì sao mình giữ.
+Quang ngồi ghế thứ ba. Đêm thứ mười hai. Mười một vật trong túi.
 
-Trên ghế lái, bác tài lái như mọi khi. Hai bàn tay đeo găng trắng đặt trên vô-lăng. Ánh mắt liếc gương chiếu hậu một thoáng, dừng trên Quang lâu hơn một nhịp, rồi mới chuyển sang đoạn đường tối phía trước.
+Bác tài lái.
 
-Xe chậm lại trước một quán đã đóng cửa từ chiều. Quán nhỏ, mái ngói rêu phong, biển hiệu chữ phai. Đèn vàng yếu trên cột điện hắt xuống một bóng người đứng đợi dưới mái hiên.
+Xe chậm lại trước một quán cà phê cũ — đèn vàng còn sáng. Một phụ nữ đứng đợi. Khoảng ba lăm tuổi. Áo dài xanh. Tay phải cầm hộp nhỏ.
 
-Chú trung niên. Khoảng 66+ tuổi. Mặc áo đơn giản, tay xách một túi vải nhỏ. Bên trong túi có khăn tay cũ — xanh nhạt, thêu hoa trắng. Chú đứng yên dưới mái hiên, hơi thở chậm trong sương lạnh.
+Cô bước lên xe. Ngồi ghế thứ chín. Mở hộp. Lấy đồng hồ xà cừ trắng — kim đã dừng ở 7:10.
 
-Chú bước lên xe nhẹ. Đi nhẹ xuống lối giữa. Ngồi vào ghế thứ 5. Đặt khăn tay cũ lên đùi. Tay trái vẫn cầm vé xe đã nhàu.
+Quang ghế ba — nhìn đồng hồ — tự nhiên giật mình. Đồng hồ này — giống đêm số một có cô gái mang.
 
-Xe lăn bánh trở lại. Đèn pha trở lại cắt qua sương.
+Xe lăn bánh.
 
 ---
 
@@ -41,21 +45,21 @@ Xe lăn bánh trở lại. Đèn pha trở lại cắt qua sương.
 
 [pause:600ms]
 
-Quang nhìn chú qua khe ghế. Chú khoảng 66+ tuổi. Mặt có nét mệt — như đã không ngủ nhiều đêm. Mí dưới hơi sưng. Tóc cột thấp hoặc rối nhẹ. Cảm giác như vừa đi đường dài.
+Cô khoảng ba sáu. Mắt buồn.
 
-Chú áp khăn lên trán. Một động tác chậm rãi, đầu các ngón tay đi qua mặt cũ như thể đang lần theo từng nếp. Mùi long não, đã bạc qua nhiều năm.
+Cô vuốt mặt đồng hồ. Đeo lên cổ tay. Kim không di chuyển.
 
-Một ông cụ ngồi ghế đầu vặn nhẹ núm radio cũ. Tiếng radio rè rè vang lên — một câu hát nào đó cũ lắm, nghe không rõ lời. Có chữ "...quê nhà..." rồi tiếng tan ra trong gió đêm.
-
-Bên ngoài cửa kính, gió thổi nhẹ vào mặt kính. Có vài hạt mưa phùn đọng thành mảng mờ rồi tan.
+Ông cụ ghế đầu vặn radio. "...quê nhà..." vọng.
 
 [pause:500ms]
 
-Chú không nhìn ai. Chú nhìn xuống khăn tay cũ trên đùi. Như đang chờ gì đó. Hoặc đang nhớ gì đó.
+Bác tài liếc gương. Nhìn Quang — lâu.
 
-Quang đoán chú khoảng 66+ tới 66+ tuổi. Mắt to. Có vết hơi đỏ ở mí mắt — như khóc đã tạnh nhưng chưa kịp xẹp.
+"Đêm số một con đã thấy đồng hồ này rồi đúng không, con."
 
-Bác tài liếc gương chiếu hậu một thoáng. Nhịp ngón trỏ trái ba cái lên vô-lăng. Rồi yên. Bóng bác trong gương vẫn bình tĩnh — như mọi đêm Quang đã thấy.
+Bác tài nói. Không hỏi — khẳng định.
+
+Quang gật chậm. Quang nhớ — đêm số một — cô gái chết tại chỗ qua cầu Long Biên — cũng đồng hồ giống.
 
 ---
 
@@ -63,91 +67,63 @@ Bác tài liếc gương chiếu hậu một thoáng. Nhịp ngón trỏ trái b
 
 [pause:500ms]
 
-Xe đi qua một khúc cua. Phía bên kia ruộng, hoặc phía dưới triền dốc, có một ngôi nhà nhỏ. Đèn dầu hắt qua cửa sổ — ánh vàng yếu trong sương. Trước hiên nhà, có một cái ghế gỗ cũ. Trên ghế, có một vật giống vật chú đang giữ — đặt nguyên, chưa ai chạm vào.
+Xe đi qua phố. Trước một tiệm vàng cũ — đèn neon còn sáng. Cạnh tiệm — bóng người đàn ông trung niên đứng — tay đeo đồng hồ. Không quay đầu.
 
-Chú ghế ngồi đột nhiên nhìn về phía đó. Cổ họng nuốt một cái nhẹ.
+Cô ghế chín nhìn về phía đó.
 
-"Vẫn ở đó..." chú nói khẽ. Không nói với ai. Không nhìn ai.
+"Anh..."
 
-Phía xa, qua ô cửa sổ căn nhà, có một bóng người ngồi yên — lưng hơi còng, tay đặt lên thứ gì đó trên đùi. Bóng không nhìn về phía xe. Chỉ ngồi yên.
-
-Đồng hồ trên xe — chiếc đồng hồ nhỏ gắn cạnh ghế lái — kim phút nhích. Tách. Tách. Tách. Tách. Tách. Tách. Tách. Tách. Tách. 9 lần liền. Quang đếm. Đêm thứ 12, 9 lần.
-
-Bác tài không quay đầu. Tay vẫn đặt vô-lăng. Nhưng ánh mắt liếc gương chiếu hậu kéo dài hơn nữa.
-
-Chú không nghe tiếng đồng hồ. Đang nhìn theo ngôi nhà phía xa. Mắt chú mở to.
+Đồng hồ trên xe nhích mười lần.
 
 [pause:1000ms]
 
-Xe đi qua. Ngôi nhà mất sau hàng cây. Còn lại bóng tối và tiếng gió.
-
-Chú quay đầu. Áp khăn tay cũ vào lòng. Mắt nhắm nhẹ.
+Xe đi qua.
 
 ---
 
-# REVEAL [section 4 — Pattern B: Reverse POV]
-
-[pause:800ms]
-
-"Chú tên Hữu Trí. 66+. Năm nay chú ngồi đây — chỗ mẹ chồng chú ngày xưa ngồi."
-
-Giọng chú chậm, không buồn.
-
-"Mẹ chồng chú ngày chú mười tám tuổi đã dạy chú cách giữ khăn tay cũ này. Mẹ chồng bảo: 'Sau này con sẽ đợi. Hôm nay con học cách đợi.' Chú không tin."
-
-"Chú nghĩ — đời mình sẽ khác. Mình sẽ không phải đợi. Con cháu sẽ về."
-
-[pause:600ms]
-
-"Năm nào chú cũng gọi điện cho con cả. Con cả: 'Mẹ ơi năm nay con bận công ty.' Con thứ: 'Mẹ ơi vợ con đi du lịch.' Con út: chưa từng về từ Mỹ. Cháu lớn ở Singapore. Cháu thứ ở Sài Gòn. Cháu út chưa biết đi."
-
-"Mỗi câu trả lời, chú đều bình thản. Không trách. Vì chú cũng đã từng làm vậy. Năm chú ba mươi tuổi, con nhỏ, công việc bận. Chú cũng nhắn mẹ chồng: 'Mẹ ơi năm nay con không về kịp.'"
+# REVEAL [section 4]
 
 [pause:1000ms]
 
-"Chú đã ở vị trí cả hai. Ngày xưa người không về. Bây giờ người đợi. Có cảm giác hai vị trí đều cô đơn — nhưng cô đơn theo cách khác."
+"Em là Vy An. Ba sáu. Em ở Long Biên."
 
-"Khi mình là người đi xa, cô đơn là không có mẹ. Khi mình là người đợi, cô đơn là không có con. Cuối cùng cả hai đều cô đơn — vì ở trên đời này, ai cũng đến lượt phải đợi một ai đó không về."
+Giọng cô đều.
+
+"Năm em hai mốt — em yêu một anh tên Khôi. Anh hơn em năm tuổi. Anh là kỹ sư xây cầu — làm dự án cầu Long Biên tu sửa lúc đó."
+
+"Em sinh viên kiến trúc — em phỏng vấn anh cho luận văn. Em yêu anh sau buổi phỏng vấn thứ ba."
+
+[pause:800ms]
+
+"Hai đứa em yêu nhau một năm. Anh mua nhà — tính cưới. Em đồng ý."
+
+"Một tháng trước cưới — em phát hiện em không yêu anh đủ. Em yêu một bạn cùng lớp — kiến trúc — tên Tuấn. Em xấu hổ — em chia tay anh."
+
+"Anh không khóc. Anh bình tĩnh. Bảo: 'Em chọn người em yêu hơn — anh không trách.' Anh tặng em đồng hồ xà cừ này. 'Em đeo — nhớ anh là người yêu em không trách em.'"
+
+[pause:1200ms]
+
+"Em đeo. Em cưới Tuấn. Sống Sài Gòn. Sinh con. Cuộc sống bình thường."
+
+"Năm vừa rồi — em về Hà Nội tang đám lễ bố em. Em gặp lại bạn anh Khôi — Khôi đã mất bốn năm — đột tử trong một chuyến công tác xa."
+
+"Em không khóc trước bạn anh. Em về Sài Gòn — khóc đêm đó. Em cảm thấy lỗi — vì em đã rời anh không thực sự yêu Tuấn nhiều hơn — chỉ vì lúc đó hai mốt tuổi em không hiểu rõ."
 
 [pause:1500ms]
 
-Bác tài nhìn gương chiếu hậu. Im lặng.
-
-Trong gương, Quang thấy hai cái bóng. Chú và một bóng phụ nữ rất già — tóc bạc gần hết, ngồi cạnh chú. Bóng phụ nữ ấy đang đặt tay lên vai chú. Một cái chạm nhẹ. Như khen ngợi.
-
-Quang chớp mắt. Bóng phụ nữ tan.
+"Đêm nay — em về Long Biên — về cầu Long Biên — nơi anh từng làm dự án — em mang đồng hồ này. Em sẽ ném xuống sông Hồng. Để đồng hồ về sông — anh ở đâu đó — biết em đã trả lại."
 
 Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Chú gật.
+Cô gật.
 
-"Chú nhớ, bác. Chú đã hiểu — mẹ chồng chú ngày xưa không trách chú không về. Mẹ chồng chỉ đợi. Lúc đó chú không hiểu. Giờ chú hiểu."
+"Em nhớ. Em không yêu Tuấn nhiều hơn anh Khôi — em chỉ trẻ. Anh tặng đồng hồ — như cách nói anh không trách em — em đeo mười lăm năm — như mang ơn anh."
 
 [pause:1200ms]
 
-"Đêm nay chú đem khăn tay cũ về đặt lên ban thờ mẹ chồng. Cảm ơn mẹ chồng đã dạy chú cách đợi không trách. Cảm ơn mẹ chồng đã không bỏ chú lại lúc chú bỏ mẹ chồng lại."
-
-"Chú đã viết một câu thư từ chiều — để đặt cùng khăn tay cũ. Trong thư chú viết: 'Mẹ ơi con đã ngồi đúng chỗ mẹ rồi. Con xin lỗi vì ngày xưa con không hiểu. Giờ con hiểu.'"
-
-"Đến lượt chú truyền lại — cho con dâu, cho cháu dâu, cho ai sau này còn chịu nghe. Cách đợi không trách."
-
-[pause:600ms]
-
-Trong gia đình chú, người ấy là thế hệ giữ ký ức. Cha mẹ chú từ lâu đã không còn. Chú là người cuối cùng còn nhớ tên nhà bà cố — vùng quê cũ — món ăn chú hay được dỗ ăn từ tấm bé. Khi người ấy đi, một mảng quá khứ của chú đi theo.
-
-Chú nhận ra điều đó muộn. Mỗi năm thêm tuổi, chú lại nhớ ra một chi tiết người ấy từng kể — và tự buồn vì ngày đó chú không lắng nghe đủ. Nay người ấy không còn để hỏi.
-
-
-
-[pause:600ms]
-
-Trong gia đình chú, người ấy là thế hệ giữ ký ức. Cha mẹ chú từ lâu đã không còn. Chú là người cuối cùng còn nhớ tên nhà bà cố — vùng quê cũ — món ăn chú hay được dỗ ăn từ tấm bé. Khi người ấy đi, một mảng quá khứ của chú đi theo.
-
-Chú nhận ra điều đó muộn. Mỗi năm thêm tuổi, chú lại nhớ ra một chi tiết người ấy từng kể — và tự buồn vì ngày đó chú không lắng nghe đủ. Nay người ấy không còn để hỏi.
-
-
+"Đêm nay em trả về sông Hồng. Cầu Long Biên là kỉ niệm cuối anh làm. Em ném đồng hồ xuống — kết thúc nợ ơn."
 
 ---
 
@@ -155,55 +131,23 @@ Chú nhận ra điều đó muộn. Mỗi năm thêm tuổi, chú lại nhớ ra
 
 [pause:800ms]
 
-Xe chậm lại. Phía trước có một ngã ba. Đèn đường vàng yếu hắt xuống mặt đất ẩm. Có vài hạt mưa phùn đọng trên kính cửa.
+Xe chậm lại. Ngã ba. Chuông. Tan.
 
-Bên kia ngã ba, có tiếng chuông. Tiếng chuông đêm giao thừa. Một ngôi chùa nhỏ ở xa. Ngân lên một hồi. Một hồi thôi. Rồi tan vào đêm.
-
-Chú cầm khăn tay cũ. Đặt vào túi vải. Đóng nắp. Đứng dậy chậm rãi.
-
-Khi đi qua chỗ Quang ngồi, chú khẽ nói:
+Cô cất đồng hồ. Đứng dậy.
 
 "Chào anh."
 
-Quang gật đầu. Chú đi tiếp về phía cửa xe.
+Trước khi xuống — đồng hồ trên xe bảy giờ mười phút.
 
-Trước khi xuống, chú quay đầu nhìn bác tài. Lâu. Một thoáng dài hơn các hành khách khác. Rồi nhìn lên đồng hồ trên xe.
+Bác tài: "Chưa tới lúc."
 
-Đồng hồ chỉ bảy giờ mười phút.
-
-Chú khẽ nhíu mày. Như nhớ ra điều gì.
-
-"Bác tài lái xe này nhiều năm rồi nhỉ?"
-
-Bác tài nhìn gương chiếu hậu. Khẽ nói câu thứ hai:
-
-"Chưa tới lúc."
-
-Chú không hiểu câu đó. Chú gật đầu nhẹ — như đã quen với câu trả lời không trả lời. Rồi bước xuống. Tay xách túi vải. Tay khác kéo nhẹ áo cho thẳng.
-
-Cửa xe khép lại. Xe lăn bánh trở lại trong đêm.
-
-[pause:1000ms]
-
-Bên ngoài cửa kính, Quang thấy chú đi vào con đường đất nhỏ ven ngã ba. Túi vải xách bên hông. Bóng chú dần lùi xa trong sương.
-
-Phía cuối đường, có ngôi nhà nhỏ với cửa sổ sáng đèn dầu. Trên hiên nhà, có một bóng người ngồi yên — lưng còng, tay đặt một vật giống vật chú đang cầm. Như đang đợi.
-
-Chú đến trước hiên. Đứng yên một lúc. Rồi ngồi xuống bên cạnh bóng người kia.
-
-Quang chớp mắt. Bóng người ấy không còn. Chỉ còn chú ngồi một mình trên hiên. Tay đặt khăn tay cũ lên chỗ trống bên cạnh — chỗ vừa mới có bóng người.
-
-Chỉ có ngọn đèn dầu nhấp nháy trong sương. Và tiếng gió đêm khẽ thổi qua mái nhà.
+Cô bước xuống.
 
 [pause:1200ms]
 
-Chú ngồi đó rất lâu. Không khóc. Không nói. Chỉ đặt một bàn tay lên khăn tay cũ. Bàn tay kia đặt lên chỗ trống — chỗ vừa mới có người ngồi.
+Bên ngoài — cô đi lên cầu Long Biên. Phía giữa cầu — cô ném đồng hồ xuống.
 
-Hai bàn tay. Hai vật. Một đêm. Một lời chưa nói thành tiếng — nhưng đã thành.
-
-Trong sương, có một câu hát rất khẽ vọng tới. Không phải từ radio xe. Từ đâu đó xa hơn. Có thể là chính chú đang thì thầm. Có thể là tiếng nhớ — đang vang lại từ một đêm rất xa.
-
-Đèn dầu trên hiên cháy đều. Sương vẫn dày. Đêm vẫn dài.
+Quang chớp mắt. Bên cô — anh Khôi xuất hiện — đứng cạnh — không nói. Mỉm cười rồi tan.
 
 [pause:1500ms]
 
@@ -211,62 +155,20 @@ Trong sương, có một câu hát rất khẽ vọng tới. Không phải từ 
 
 # CLIFFHANGER [section 6]
 
-Xe tiếp tục lăn bánh qua ngã ba. Phía trước, đêm vẫn dài.
+Xe lăn bánh.
 
-Trên ghế thứ 5 giờ đã trống. Đệm ghế còn lõm xuống một chút — như vừa có ai ngồi rất nhẹ. Trên sàn xe, có một mảnh vật nhỏ rơi xuống. Quang nhặt lên. Mảnh nhỏ của khăn tay cũ — chú vô tình đánh rơi khi đứng dậy.
+Ghế chín trống. Trên sàn — một mảnh xà cừ nhỏ rơi. Quang nhặt. Vật thứ mười hai.
 
-Quang cất vào túi áo. Vật thứ 11.
+Quang ngồi. Hai vật xà cừ — đêm số một và đêm này. Hai cô gái — không liên quan.
 
-Bác tài lái như mọi khi. Hai tay vô-lăng. Găng trắng. Nhịp ngón trỏ ba cái.
-
-Đồng hồ trên xe kim phút lại nhích. Tách. Tách. Tách. Tách. Tách. Tách. Tách. Tách. Tách. 9 lần liền.
+Nhưng đồng hồ — đều dừng 7:10.
 
 [pause:1500ms]
 
-Quang lấy 11 vật trong túi ra. Đặt cạnh nhau trên đùi. Một bộ sưu tập rời rạc — của những người đã chưa kịp nói câu cuối với người họ thương.
+Quang ngẫm. Quang nhớ — có một đêm Quang biết — đêm đó dừng đúng 7:10. Đêm đó có ai?
 
-Quang nhớ — đêm thứ 12 Quang đã ngồi ghế thứ ba. Mỗi đêm một câu chuyện. Mỗi đêm Quang ngồi yên — chưa kể câu chuyện nào của mình.
+Tên "Hà" lại vọng trong đầu Quang.
 
-Vì sao Quang chưa kể? Có phải Quang không có câu chuyện nào? Hay là Quang đã quên?
+Bác tài liếc gương. "Đồng hồ xà cừ dừng cùng giờ — không tình cờ, con à. Con sẽ hiểu sau."
 
-Trên ghế lái, bác tài liếc gương chiếu hậu. Ánh mắt dừng trên Quang. Lâu. Rất lâu. Rồi bác khẽ nói — câu ngoài hai câu chuẩn:
-
-"Đến lượt con sắp tới rồi."
-
-Quang giật mình. Bác đã nói. Không nhầm. Câu đó không có trong những câu chuẩn của bác.
-
-Quang muốn hỏi. Nhưng môi Quang không động. Tay Quang khẽ run.
-
-Quang nhìn ra cửa kính. Đêm vẫn dài. Còn nhiều ngã ba phía trước. Còn nhiều người đang đợi ai đó về.
-
-Có ai đó sẽ lên xe ở trạm tiếp theo. Quang chưa biết là ai. Nhưng Quang biết — sẽ có một vật nữa rơi xuống sàn. Quang sẽ nhặt. Quang sẽ cất.
-
-Đến khi nào những vật ấy đầy túi áo? Đến khi nào Quang sẽ tự kể câu chuyện của mình?
-
-[pause:1500ms]
-
-Quang nhìn xuống bộ vật trong lòng. Sợi len. Sợi lạt. Phong bao trống. Sợi chỉ trắng. Viên pin. Mảnh nhỏ vừa nhặt. Mỗi vật mang theo một người. Mỗi người mang theo một câu chưa nói.
-
-Quang nhớ — câu hát ông cụ ghế đầu vẫn mở mỗi đêm: "...quê nhà...". Quang chưa hiểu câu hát đó. Nhưng đêm thứ 12 rồi, Quang vẫn nghe được.
-
-Có lẽ "quê nhà" không chỉ là chỗ Quang sinh ra. Có lẽ "quê nhà" là chỗ Quang có người để về. Quang đang còn ai để về? Quang không nhớ rõ.
-
-[pause:1500ms]
-
-Trên ghế lái, bác tài liếc gương chiếu hậu lần nữa. Ánh mắt dừng trên Quang. Bình tĩnh. Không thương xót. Không khẩn cấp. Chỉ chờ.
-
-Quang nhắm mắt. Hơi thở chậm xuống một nhịp. Đêm vẫn lăn bánh.
-
----
-
-# CONSTITUTION CHECK
-
-- ALWAYS_5: melancholy / unresolved_goodbye / object_symbolism (OBJ_KHAN_TAY_CU) / subtle_supernatural (1 ghost manifest) / emotional_aftertaste
-- NEVER_7: KHÔNG gore / jump_scare / exorcism / monster / combat / villain / explanation
-- GHOST_RULES_3: never_attack / never_chase / never_speak_directly
-- SERIES_RULES_8: bus 1 / driver 2 câu + foreshadow / bell 1 / ghost 1 / object / unresolved / subtle / regret_supernatural
-- bible/23: char_name "Hữu Trí" 2 âm tiết, không forbidden
-- bible/12: signature_object OBJ_KHAN_TAY_CU trong library
-- bible/13: signature_setting setting_dem_giao_thua trong library
-- bible/18: EP12 ≠ EP73/EP90 reserved
-- Cross-ep continuity: Quang nhặt 10 vật + clock 7:10 + driver gradient
+Quang gật. Đêm thứ mười hai.

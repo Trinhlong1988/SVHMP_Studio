@@ -1,18 +1,22 @@
-# TẬP 13 — BĂNG CASSETTE CŨ, CHÁU KHÔNG BẮT MÁY
+# TẬP 13 — LỜI HỨA VỚI BỐ CHIA SẺ HOA CÚC TRỒNG VƯỜN
 
 ```
-prompt_version: SVHMP-10.0-RC3.4
+prompt_version: SVHMP-10.0-RC3.5
 ep_number: 13
-phase: mid (13/90)
-passenger_main: PAS_0024 (Tuyết Lan, nu 18-25)
-regret_pillar: family_regret
-regret_sub: REG_FAM_002
-signature_object: OBJ_BANG_CASSETTE
-signature_setting: setting_dong_lanh
-stop_location: ngã ba Thái Bình
+phase: warming (S1)
+pillar: promise
+intensity_level: 0.55
+quang_memory_fragment: M3 (Quang nghe tên Hà — chưa rõ)
+object_sub_arc: hoa cúc khô START (symbol cluster bắt đầu EP13)
+callback_target: none (EP13 setup sub-arc)
+passenger_main: nam 45, không giữ lời hứa giúp bố trồng cúc
+signature_object: OBJ_HOA_CUC_KHO (vòng hoa cúc khô — bố thích cúc)
+signature_setting: setting_dem_thang_tu_HN
+stop_location: ngã ba Mỹ Đức
 bell_count: 1
 ghost_manifest: 1
-auto_gen: tools/auto_gen_ep_v3.py v3.1 — pattern C (Letter framing) (template + QA loop)
+hand_crafted: true
+arc_design_compliant: bible/21 R33-R38
 ```
 
 ---
@@ -21,19 +25,17 @@ auto_gen: tools/auto_gen_ep_v3.py v3.1 — pattern C (Letter framing) (template 
 
 [pause:800ms]
 
-Đêm tháng Một âm. Rét đậm, sương mù dày. Chuyến xe đêm chạy qua một đoạn đường vắng ven Bình. Đèo núi vắng, gió luồn qua. Đèn pha quét nhẹ lên hai bên đường tối.
+Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven cánh đồng lúa Mỹ Đức. Đèn pha quét lên rừng cúc dại bên đường.
 
-Quang ngồi ghế thứ ba. Đêm thứ 13 Quang đếm. Trong túi áo Quang đã có 11 vật — các vật rời rạc từ những đêm trước. Sợi len. Sợi lạt. Phong bao trống. Sợi chỉ trắng. Viên pin cassette. Mỗi vật một câu chuyện. Quang chưa hiểu vì sao mình giữ.
+Quang ngồi ghế thứ ba. Đêm thứ mười ba. Mười hai vật.
 
-Trên ghế lái, bác tài lái như mọi khi. Hai bàn tay đeo găng trắng đặt trên vô-lăng. Ánh mắt liếc gương chiếu hậu một thoáng, dừng trên Quang lâu hơn một nhịp, rồi mới chuyển sang đoạn đường tối phía trước.
+Bác tài lái.
 
-Xe chậm lại trước một quán đã đóng cửa từ chiều. Quán nhỏ, mái ngói rêu phong, biển hiệu chữ phai. Đèn vàng yếu trên cột điện hắt xuống một bóng người đứng đợi dưới mái hiên.
+Xe chậm lại trước một vườn cúc nhỏ ven đường — chủ vườn đã đóng cổng. Một người đàn ông trung niên đứng đợi. Khoảng bốn lăm tuổi. Áo sơ mi xám. Tay phải cầm bó hoa cúc khô.
 
-Cô gái trẻ. Khoảng 18-25 tuổi. Mặc áo đơn giản, tay xách một túi vải nhỏ. Bên trong túi có băng cassette cũ — vỏ nhựa hơi vỡ. Cô đứng yên dưới mái hiên, hơi thở chậm trong sương lạnh.
+Anh bước lên xe. Ngồi ghế thứ năm. Đặt bó hoa cúc lên đùi. Cánh hoa khô đã giòn — màu vàng nhạt.
 
-Cô bước lên xe nhẹ. Đi nhẹ xuống lối giữa. Ngồi vào ghế thứ 6. Đặt băng cassette cũ lên đùi. Tay trái vẫn cầm vé xe đã nhàu.
-
-Xe lăn bánh trở lại. Đèn pha trở lại cắt qua sương.
+Xe lăn bánh.
 
 ---
 
@@ -41,21 +43,15 @@ Xe lăn bánh trở lại. Đèn pha trở lại cắt qua sương.
 
 [pause:600ms]
 
-Quang nhìn cô qua khe ghế. Cô khoảng 18-25 tuổi. Mặt có nét mệt — như đã không ngủ nhiều đêm. Mí dưới hơi sưng. Tóc cột thấp hoặc rối nhẹ. Cảm giác như vừa đi đường dài.
+Anh khoảng bốn sáu. Tóc bạc nhiều. Mắt sâu.
 
-Cô vuốt nhẹ vỏ băng. Một động tác chậm rãi, đầu các ngón tay đi qua mặt cũ như thể đang lần theo từng nếp. Mặt vỏ có chữ viết tay người già.
+Anh vuốt cánh hoa cúc khô. Cánh rụng nhẹ — rơi xuống đùi.
 
-Một ông cụ ngồi ghế đầu vặn nhẹ núm radio cũ. Tiếng radio rè rè vang lên — một câu hát nào đó cũ lắm, nghe không rõ lời. Có chữ "...quê nhà..." rồi tiếng tan ra trong gió đêm.
-
-Bên ngoài cửa kính, gió thổi nhẹ vào mặt kính. Có vài hạt mưa phùn đọng thành mảng mờ rồi tan.
+Ông cụ ghế đầu vặn radio. "...quê nhà..." vọng.
 
 [pause:500ms]
 
-Cô không nhìn ai. Cô nhìn xuống băng cassette cũ trên đùi. Như đang chờ gì đó. Hoặc đang nhớ gì đó.
-
-Quang đoán cô khoảng 18 tới 25 tuổi. Mắt to. Có vết hơi đỏ ở mí mắt — như khóc đã tạnh nhưng chưa kịp xẹp.
-
-Bác tài liếc gương chiếu hậu một thoáng. Nhịp ngón trỏ trái ba cái lên vô-lăng. Rồi yên. Bóng bác trong gương vẫn bình tĩnh — như mọi đêm Quang đã thấy.
+Bác tài liếc gương.
 
 ---
 
@@ -63,91 +59,71 @@ Bác tài liếc gương chiếu hậu một thoáng. Nhịp ngón trỏ trái b
 
 [pause:500ms]
 
-Xe đi qua một khúc cua. Phía bên kia ruộng, hoặc phía dưới triền dốc, có một ngôi nhà nhỏ. Đèn dầu hắt qua cửa sổ — ánh vàng yếu trong sương. Trước hiên nhà, có một cái ghế gỗ cũ. Trên ghế, có một vật giống vật cô đang giữ — đặt nguyên, chưa ai chạm vào.
+Xe đi qua xóm. Trước căn nhà mái ngói cũ — sân có vườn nhỏ — đầy cúc vàng. Cạnh vườn — ông cụ cầm cuốc đứng — cúi xuống chăm. Không quay đầu.
 
-Cô ghế ngồi đột nhiên nhìn về phía đó. Cổ họng nuốt một cái nhẹ.
+Anh ghế năm nhìn về phía đó.
 
-"Vẫn ở đó..." cô nói khẽ. Không nói với ai. Không nhìn ai.
+"Bố..."
 
-Phía xa, qua ô cửa sổ căn nhà, có một bóng người ngồi yên — lưng hơi còng, tay đặt lên thứ gì đó trên đùi. Bóng không nhìn về phía xe. Chỉ ngồi yên.
-
-Đồng hồ trên xe — chiếc đồng hồ nhỏ gắn cạnh ghế lái — kim phút nhích. Tách. Tách. Tách. Tách. Tách. Tách. Tách. Tách. Tách. 9 lần liền. Quang đếm. Đêm thứ 13, 9 lần.
-
-Bác tài không quay đầu. Tay vẫn đặt vô-lăng. Nhưng ánh mắt liếc gương chiếu hậu kéo dài hơn nữa.
-
-Cô không nghe tiếng đồng hồ. Đang nhìn theo ngôi nhà phía xa. Mắt cô mở to.
+Đồng hồ trên xe nhích mười lần.
 
 [pause:1000ms]
 
-Xe đi qua. Ngôi nhà mất sau hàng cây. Còn lại bóng tối và tiếng gió.
-
-Cô quay đầu. Áp băng cassette cũ vào lòng. Mắt nhắm nhẹ.
+Xe đi qua.
 
 ---
 
-# REVEAL [section 4 — Pattern C: Letter framing]
-
-[pause:800ms]
-
-Cô mở một xấp giấy nhỏ — buộc bằng dải băng đỏ — lấy ra từ băng cassette cũ. Giấy đã ố vàng. Chữ viết tay người già, nét run.
-
-"Cô tên Tuyết Lan. 18-25. Cô đem theo xấp thư của mẹ/bà/cha cô. Mẹ/bà/cha viết cho cô qua nhiều năm — nhưng nhiều thư cô chưa kịp đọc khi còn sống."
-
-[pause:600ms]
-
-Cô đọc lá thư đầu tiên — giọng nhỏ, đủ Quang nghe được.
-
-"'Tuyết Lan ơi, hôm nay là sinh nhật mười tám tuổi của con. Mẹ không gửi tiền được — tháng này mẹ đang khám bệnh. Mẹ xin lỗi.'"
-
-"'Mẹ chỉ có lá thư này. Mẹ muốn nói với con vài điều — phòng khi mẹ không còn cơ hội.'"
-
-"'Mẹ tự hào về con. Con đã đi xa, học hành tốt. Mẹ vui. Nhưng mẹ cũng nhớ con lắm.'"
-
-[pause:800ms]
-
-"'Mẹ muốn nói với con: dù sau này mẹ không còn, con đừng buồn nhiều. Mẹ luôn ở bên con. Trong mỗi bữa cơm con ăn. Trong mỗi đêm con ngủ. Mẹ ở đó.'"
-
-"'Nếu có một ngày con quên mẹ — mẹ không trách. Đời con dài, con phải sống tiếp. Nhưng nếu có lúc nào đó con nhớ — mẹ cũng đang nhớ con.'"
-
-"'Mẹ ký: Mẹ của con.'"
-
-[pause:1500ms]
-
-Cô gấp thư. Áp lên ngực. Nhắm mắt.
-
-"Lá thư này đến tay cô sau khi mẹ đi rồi một tuần. Bưu điện chậm. Hoặc cô chậm về."
-
-"Cô đã đọc lá thư này nhiều lần qua các năm. Mỗi năm đọc lại, hiểu thêm một chút. Năm đầu — cô khóc nhiều. Năm hai ba — cô im. Năm năm — cô cảm ơn. Năm mười — cô hiểu mẹ đã chuẩn bị câu này lâu lắm trước khi viết."
+# REVEAL [section 4]
 
 [pause:1000ms]
 
-"Trong xấp này còn nhiều thư nữa — thư mẹ viết qua các năm. Có thư mẹ viết vào ngày cô thi đại học. Thư mẹ viết ngày cô đi làm xa. Thư mẹ viết ngày cô cưới. Mỗi thư là một câu mẹ chưa kịp nói trực tiếp."
+"Tôi là Bình. Bốn lăm. Tôi ở Mỹ Đức."
 
-"Năm nay cô đem cả xấp về quê đặt lên mộ mẹ. Trả lời từng thư bằng cách đặt thư bên cạnh mẹ. Là cách cô nói: 'Con đã đọc rồi mẹ. Con cảm ơn.'"
+Giọng anh trầm.
+
+"Bố tôi mất hai năm trước. Bảy mươi sáu tuổi. Ung thư phổi giai đoạn cuối — phát hiện muộn — sống thêm sáu tháng."
+
+"Bố tôi là nông dân. Trồng lúa cả đời. Sau khi nghỉ làm — bố mê trồng cúc. Vườn cúc bố trồng — bốn năm — đầy hoa vàng mỗi mùa thu."
+
+[pause:800ms]
+
+"Khi bố biết ung thư — bố gọi tôi về quê. Tôi ở Hà Nội — kế toán — bận. Bố bảo: 'Con ơi bố muốn nhờ con — sau khi bố đi — con chăm vườn cúc. Cúc bố trồng bằng tay — cứ chăm thì hoa nở mỗi mùa.'"
+
+"Tôi hứa: 'Vâng bố — con sẽ chăm vườn cúc bố.' Bố mỉm cười."
+
+[pause:1200ms]
+
+"Sáu tháng sau bố đi. Tôi về quê — tang lễ. Sau tang — tôi về Hà Nội. Tôi nói với vợ: 'Bố muốn tôi chăm vườn cúc. Mình về quê cuối tuần.'"
+
+"Vợ tôi đồng ý. Tháng đầu — em về cùng tôi mỗi cuối tuần. Tháng thứ hai — em bận con — em ở Hà Nội. Tôi về một mình."
+
+"Tháng thứ ba — tôi cũng bận công ty — đi không đều. Tháng thứ tư — cúc khô — tôi không tưới đủ."
 
 [pause:1500ms]
+
+"Sáu tháng sau bố đi — vườn cúc của bố — đã chết. Tôi đến — thấy cúc khô — không thể cứu được nữa. Tôi quỳ giữa vườn. Khóc."
+
+"Tôi nhớ lời hứa bố. Tôi không giữ. Vườn cúc bốn năm bố nuôi — chết trong sáu tháng tôi bỏ."
+
+"Tôi cố trồng lại — mùa thu năm sau — nhưng cúc không nở đẹp như bố trồng. Đất khô. Em phải trồng lại cả gốc rễ."
+
+[pause:1500ms]
+
+"Hai năm nay — tôi cố. Vườn cúc trồng lại — chỉ ra vài cụm. Không đầy như xưa."
+
+"Tôi hái những hoa cúc khô còn lại từ vườn cũ — chính cúc bố trồng tay bố — chưa kịp tưới — đã khô. Tôi giữ trong tủ."
 
 Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Cô gật. Không nói thêm.
+Anh gật.
 
-[pause:800ms]
+"Tôi nhớ. Tôi hứa bố giữ vườn — tôi không giữ được. Cúc khô — là lời hứa khô của tôi."
 
-"Cô cũng đã viết một lá thư hồi đáp mẹ — viết tay, dài năm trang. Cô viết đêm qua, ngủ chỉ ba tiếng. Trong thư cô kể hết: kể về cuộc đời cô sau khi mẹ đi. Kể về vợ/chồng cô, về con cô, về việc cô làm. Kể cả những điều cô chưa bao giờ kể với ai."
+[pause:1200ms]
 
-"Lá thư này cô sẽ đốt trên mộ mẹ — để mẹ đọc."
-
-"Cô biết — đốt thư không gửi được đến mẹ. Nhưng cô cần đốt. Đốt là cách cô giải phóng câu chuyện đã giữ trong lòng quá lâu."
-
-[pause:600ms]
-
-Trong gia đình cô, người ấy là thế hệ giữ ký ức. Cha mẹ cô từ lâu đã không còn. Cô là người cuối cùng còn nhớ tên nhà bà cố — vùng quê cũ — món ăn cô hay được dỗ ăn từ tấm bé. Khi người ấy đi, một mảng quá khứ của cô đi theo.
-
-Cô nhận ra điều đó muộn. Mỗi năm thêm tuổi, cô lại nhớ ra một chi tiết người ấy từng kể — và tự buồn vì ngày đó cô không lắng nghe đủ. Nay người ấy không còn để hỏi.
-
-
+"Đêm nay tôi đem cúc khô về Mỹ Đức — về mộ bố — đặt lên. Nói: 'Bố ơi con xin lỗi. Vườn cúc bố trồng đã chết vì con. Cúc này con đem trả lại bố — không phải cúc tươi — là cúc khô từ chính bố trồng — con giữ làm kỷ niệm.'"
 
 ---
 
@@ -155,55 +131,27 @@ Cô nhận ra điều đó muộn. Mỗi năm thêm tuổi, cô lại nhớ ra m
 
 [pause:800ms]
 
-Xe chậm lại. Phía trước có một ngã ba. Đèn đường vàng yếu hắt xuống mặt đất ẩm. Có vài hạt mưa phùn đọng trên kính cửa.
+Xe chậm lại. Ngã ba. Chuông. Tan.
 
-Bên kia ngã ba, có tiếng chuông. Tiếng chuông đông lạnh. Một ngôi chùa nhỏ ở xa. Ngân lên một hồi. Một hồi thôi. Rồi tan vào đêm.
-
-Cô cầm băng cassette cũ. Đặt vào túi vải. Đóng nắp. Đứng dậy chậm rãi.
-
-Khi đi qua chỗ Quang ngồi, cô khẽ nói:
+Anh ôm bó cúc khô. Đứng dậy.
 
 "Chào anh."
 
-Quang gật đầu. Cô đi tiếp về phía cửa xe.
+Trước khi xuống — đồng hồ bảy giờ mười phút.
 
-Trước khi xuống, cô quay đầu nhìn bác tài. Lâu. Một thoáng dài hơn các hành khách khác. Rồi nhìn lên đồng hồ trên xe.
+Bác tài: "Chưa tới lúc."
 
-Đồng hồ chỉ bảy giờ mười phút.
-
-Cô khẽ nhíu mày. Như nhớ ra điều gì.
-
-"Bác tài lái xe này nhiều năm rồi nhỉ?"
-
-Bác tài nhìn gương chiếu hậu. Khẽ nói câu thứ hai:
-
-"Chưa tới lúc."
-
-Cô không hiểu câu đó. Cô gật đầu nhẹ — như đã quen với câu trả lời không trả lời. Rồi bước xuống. Tay xách túi vải. Tay khác kéo nhẹ áo cho thẳng.
-
-Cửa xe khép lại. Xe lăn bánh trở lại trong đêm.
-
-[pause:1000ms]
-
-Bên ngoài cửa kính, Quang thấy cô đi vào con đường đất nhỏ ven ngã ba. Túi vải xách bên hông. Bóng cô dần lùi xa trong sương.
-
-Phía cuối đường, có ngôi nhà nhỏ với cửa sổ sáng đèn dầu. Trên hiên nhà, có một bóng người ngồi yên — lưng còng, tay đặt một vật giống vật cô đang cầm. Như đang đợi.
-
-Cô đến trước hiên. Đứng yên một lúc. Rồi ngồi xuống bên cạnh bóng người kia.
-
-Quang chớp mắt. Bóng người ấy không còn. Chỉ còn cô ngồi một mình trên hiên. Tay đặt băng cassette cũ lên chỗ trống bên cạnh — chỗ vừa mới có bóng người.
-
-Chỉ có ngọn đèn dầu nhấp nháy trong sương. Và tiếng gió đêm khẽ thổi qua mái nhà.
+Anh bước xuống.
 
 [pause:1200ms]
 
-Cô ngồi đó rất lâu. Không khóc. Không nói. Chỉ đặt một bàn tay lên băng cassette cũ. Bàn tay kia đặt lên chỗ trống — chỗ vừa mới có người ngồi.
+Bên ngoài — anh đi vào đường đất ven cánh đồng. Phía cuối — mộ bố. Đèn nến.
 
-Hai bàn tay. Hai vật. Một đêm. Một lời chưa nói thành tiếng — nhưng đã thành.
+Anh đến. Đặt cúc khô lên mộ. Quỳ. Cúi đầu.
 
-Trong sương, có một câu hát rất khẽ vọng tới. Không phải từ radio xe. Từ đâu đó xa hơn. Có thể là chính cô đang thì thầm. Có thể là tiếng nhớ — đang vang lại từ một đêm rất xa.
+Bên mộ — bố xuất hiện — vuốt lưng anh Bình. Nhẹ.
 
-Đèn dầu trên hiên cháy đều. Sương vẫn dày. Đêm vẫn dài.
+Quang chớp mắt. Bố tan.
 
 [pause:1500ms]
 
@@ -211,62 +159,18 @@ Trong sương, có một câu hát rất khẽ vọng tới. Không phải từ 
 
 # CLIFFHANGER [section 6]
 
-Xe tiếp tục lăn bánh qua ngã ba. Phía trước, đêm vẫn dài.
+Xe lăn bánh.
 
-Trên ghế thứ 6 giờ đã trống. Đệm ghế còn lõm xuống một chút — như vừa có ai ngồi rất nhẹ. Trên sàn xe, có một mảnh vật nhỏ rơi xuống. Quang nhặt lên. Mảnh nhỏ của băng cassette cũ — cô vô tình đánh rơi khi đứng dậy.
+Ghế năm trống. Trên sàn — một cánh cúc khô vàng rơi. Quang nhặt. Vật thứ mười ba.
 
-Quang cất vào túi áo. Vật thứ 12.
-
-Bác tài lái như mọi khi. Hai tay vô-lăng. Găng trắng. Nhịp ngón trỏ ba cái.
-
-Đồng hồ trên xe kim phút lại nhích. Tách. Tách. Tách. Tách. Tách. Tách. Tách. Tách. Tách. 9 lần liền.
+Bác tài lái. Đồng hồ kim phút mười lần.
 
 [pause:1500ms]
 
-Quang lấy 12 vật trong túi ra. Đặt cạnh nhau trên đùi. Một bộ sưu tập rời rạc — của những người đã chưa kịp nói câu cuối với người họ thương.
+Quang ngồi. Cánh cúc khô — màu vàng nhạt. Quang đặt vào túi cùng mười hai vật khác.
 
-Quang nhớ — đêm thứ 13 Quang đã ngồi ghế thứ ba. Mỗi đêm một câu chuyện. Mỗi đêm Quang ngồi yên — chưa kể câu chuyện nào của mình.
+Quang ngẫm — Hà — tên cô — có bao giờ thích cúc không? Quang không nhớ.
 
-Vì sao Quang chưa kể? Có phải Quang không có câu chuyện nào? Hay là Quang đã quên?
+Bác tài liếc gương. "Đêm mười ba. Cúc khô — sẽ trở lại đêm sau, con à. Để ý xem."
 
-Trên ghế lái, bác tài liếc gương chiếu hậu. Ánh mắt dừng trên Quang. Lâu. Rất lâu. Rồi bác khẽ nói — câu ngoài hai câu chuẩn:
-
-"Đến lượt con sắp tới rồi."
-
-Quang giật mình. Bác đã nói. Không nhầm. Câu đó không có trong những câu chuẩn của bác.
-
-Quang muốn hỏi. Nhưng môi Quang không động. Tay Quang khẽ run.
-
-Quang nhìn ra cửa kính. Đêm vẫn dài. Còn nhiều ngã ba phía trước. Còn nhiều người đang đợi ai đó về.
-
-Có ai đó sẽ lên xe ở trạm tiếp theo. Quang chưa biết là ai. Nhưng Quang biết — sẽ có một vật nữa rơi xuống sàn. Quang sẽ nhặt. Quang sẽ cất.
-
-Đến khi nào những vật ấy đầy túi áo? Đến khi nào Quang sẽ tự kể câu chuyện của mình?
-
-[pause:1500ms]
-
-Quang nhìn xuống bộ vật trong lòng. Sợi len. Sợi lạt. Phong bao trống. Sợi chỉ trắng. Viên pin. Mảnh nhỏ vừa nhặt. Mỗi vật mang theo một người. Mỗi người mang theo một câu chưa nói.
-
-Quang nhớ — câu hát ông cụ ghế đầu vẫn mở mỗi đêm: "...quê nhà...". Quang chưa hiểu câu hát đó. Nhưng đêm thứ 13 rồi, Quang vẫn nghe được.
-
-Có lẽ "quê nhà" không chỉ là chỗ Quang sinh ra. Có lẽ "quê nhà" là chỗ Quang có người để về. Quang đang còn ai để về? Quang không nhớ rõ.
-
-[pause:1500ms]
-
-Trên ghế lái, bác tài liếc gương chiếu hậu lần nữa. Ánh mắt dừng trên Quang. Bình tĩnh. Không thương xót. Không khẩn cấp. Chỉ chờ.
-
-Quang nhắm mắt. Hơi thở chậm xuống một nhịp. Đêm vẫn lăn bánh.
-
----
-
-# CONSTITUTION CHECK
-
-- ALWAYS_5: melancholy / unresolved_goodbye / object_symbolism (OBJ_BANG_CASSETTE) / subtle_supernatural (1 ghost manifest) / emotional_aftertaste
-- NEVER_7: KHÔNG gore / jump_scare / exorcism / monster / combat / villain / explanation
-- GHOST_RULES_3: never_attack / never_chase / never_speak_directly
-- SERIES_RULES_8: bus 1 / driver 2 câu + foreshadow / bell 1 / ghost 1 / object / unresolved / subtle / regret_supernatural
-- bible/23: char_name "Tuyết Lan" 2 âm tiết, không forbidden
-- bible/12: signature_object OBJ_BANG_CASSETTE trong library
-- bible/13: signature_setting setting_dong_lanh trong library
-- bible/18: EP13 ≠ EP73/EP90 reserved
-- Cross-ep continuity: Quang nhặt 11 vật + clock 7:10 + driver gradient
+Quang gật. Đêm thứ mười ba.
