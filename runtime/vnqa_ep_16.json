@@ -2,12 +2,12 @@
   "ep_number": 16,
   "phase_h_version": "H1-H7 v1.0",
   "stats": {
-    "tokens_count": 2554,
-    "sentences_approx": 326,
-    "adverbs_count": 162,
-    "adverbs_ratio": 0.063,
-    "word_count": 2196,
-    "estimated_minutes": 14.2
+    "tokens_count": 2657,
+    "sentences_approx": 333,
+    "adverbs_count": 169,
+    "adverbs_ratio": 0.064,
+    "word_count": 2295,
+    "estimated_minutes": 14.8
   },
   "issues": [
     {
@@ -29,12 +29,6 @@
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
-      "check": "H1_token_repeat",
-      "severity": "warning",
-      "evidence": "\"trong\" lặp 20x trong ep",
-      "suggestion": "Đa dạng từ vựng, dùng synonym"
-    },
-    {
       "check": "H2_dict_unusual_compound",
       "severity": "minor",
       "evidence": "Cụm từ dài bất thường: ['` prompt_version', 'REG_FAM_003 signature_object', 'OBJ_BUT_MAY_CHA signature_setting']",
@@ -49,13 +43,13 @@
     {
       "check": "H10_duration_too_short",
       "severity": "warning",
-      "evidence": "14.2 phút (target 15-18p, max 20p)",
-      "suggestion": "Expand thêm 128 từ để đạt 15p"
+      "evidence": "14.8 phút (target 15-18p, max 20p)",
+      "suggestion": "Expand thêm 29 từ để đạt 15p"
     }
   ],
   "issues_count_by_severity": {
     "critical": 0,
-    "warning": 5,
+    "warning": 4,
     "minor": 2
   },
   "verdict": "WARN",
