@@ -67,7 +67,7 @@ Xe lăn bánh trở lại.
 
 [pause:600ms]
 
-Khải Phong nhìn chàng trai qua khe ghế. Em khoảng hai mốt, hai hai tuổi. Mặt non. Mắt đỏ — như mới khóc, hoặc đang cố nín.
+Khải Phong nhìn chàng trai qua khe ghế. Anh khoảng hai mốt, hai hai tuổi. Mặt non. Mắt đỏ — như mới khóc, hoặc đang cố nín.
 
 Em đặt phong bao lì xì lên đùi. Tay vuốt nhẹ lên mặt phong bao. Trên phong bao có viết hai chữ "Tặng mẹ" — chữ viết tay vội, hơi nguệch ngoạc. Bên trong phong bao có gì đó nhỏ, gấp gọn — tiền lương lần đầu của em.
 
@@ -137,9 +137,9 @@ Em ngừng. Vuốt phong bao.
 
 Bác tài nhìn gương chiếu hậu. Im lặng.
 
-Trong gương chiếu hậu, Khải Phong thấy hai cái bóng. Một là em. Một là một người phụ nữ trung niên — khoảng năm mươi tuổi, tóc cột thấp, mặc áo bông xám — ngồi sát ngay sau em. Người phụ nữ ấy nhìn xuống tay mình. Tay cầm chén bún, hơi bốc lên.
+Trong gương chiếu hậu, Khải Phong thấy hai cái bóng. Một là anh. Một là một người phụ nữ trung niên — khoảng năm mươi tuổi, tóc cột thấp, mặc áo bông xám — ngồi sát ngay sau anh. Người phụ nữ ấy nhìn xuống tay mình. Tay cầm chén bún, hơi bốc lên.
 
-Khải Phong chớp mắt. Trong gương vẫn chỉ có em và một bóng mờ.
+Khải Phong chớp mắt. Trong gương vẫn chỉ có anh và một bóng mờ.
 
 Bác tài cất lời.
 
@@ -189,7 +189,7 @@ Tiếng chuông giao thừa ngân từ ngôi chùa nhỏ xa. Một hồi. Rồi 
 
 Em ghế sáu đặt phong bao vào túi ba lô. Đứng dậy.
 
-Khi đi qua chỗ Khải Phong, em khẽ nói:
+Khi đi qua chỗ Khải Phong, anh khẽ nói:
 
 "Chào anh. Chúc anh năm mới."
 

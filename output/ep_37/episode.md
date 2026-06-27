@@ -220,13 +220,13 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 Khải Phong ngồi yên. Hai vật trong cụm sub-arc geographic Hà Nội nội thành: vé tàu Cát Linh EP33 + sợi chỉ vải đen mảnh biển số phố Huế EP37.
 
-Khải Phong ngẫm. Mỹ Hạnh kể em em va chạm xe tải đoạn ngã tư phố Huế — Hai Bà Trưng. Đúng đoạn Khải Phong nhớ.
+Khải Phong ngẫm. Mỹ Hạnh kể anh anh va chạm xe tải đoạn ngã tư phố Huế — Hai Bà Trưng. Đúng đoạn Khải Phong nhớ.
 
 Khải Phong tim đập nhanh — đoạn này — chính đoạn Hạ Vy va chạm tám năm trước. Ngã tư phố Huế — Hai Bà Trưng — Trần Hưng Đạo. Cùng ngã tư.
 
 [pause:1500ms]
 
-Khải Phong cố nhớ thêm. Đêm Hạ Vy mất — em đi từ văn phòng Mộc Hà phố Hai Bà Trưng về phố Khâm Thiên. Đoạn ngắn — qua ngã tư Hai Bà Trưng — Trần Hưng Đạo — sau đó rẽ phải xuống phố Huế — sau đó rẽ trái sang phố Bà Triệu — sau đó đến Khâm Thiên.
+Khải Phong cố nhớ thêm. Đêm Hạ Vy mất — anh đi từ văn phòng Mộc Hà phố Hai Bà Trưng về phố Khâm Thiên. Đoạn ngắn — qua ngã tư Hai Bà Trưng — Trần Hưng Đạo — sau đó rẽ phải xuống phố Huế — sau đó rẽ trái sang phố Bà Triệu — sau đó đến Khâm Thiên.
 
 Tại ngã tư đó — Hạ Vy va xe tải. Xe tải lớn — chở vật liệu xây dựng — tài xế vào ngã tư không đúng đèn.
 

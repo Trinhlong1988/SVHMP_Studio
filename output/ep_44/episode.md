@@ -218,7 +218,7 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Khải Phong ngồi. Phượng Liên không đem chè cho bà Sáu một tối — bà mất sáng. Sau đó năm năm không liên lạc — em giữ khúc.
+Khải Phong ngồi. Phượng Liên không đem chè cho bà Sáu một tối — bà mất sáng. Sau đó năm năm không liên lạc — anh giữ khúc.
 
 Khải Phong nhói. Bố mẹ Hạ Vy không liên lạc Khải Phong tám năm. Anh không hỏi thăm. Anh không gửi ảnh — không gửi thư.
 
@@ -226,9 +226,9 @@ Khải Phong nhói. Bố mẹ Hạ Vy không liên lạc Khải Phong tám năm.
 
 Khải Phong cố nhớ — Khải Phong có liên lạc bố mẹ Hạ Vy không? Cảm giác — có vài lần đầu sau tang. Sau đó thưa hơn. Năm thứ hai — Khải Phong về tang Hạ Vy lần một. Năm thứ ba — không về. Năm thứ tư — không về.
 
-Khải Phong không gọi điện thoại bố mẹ Hạ Vy năm năm gần đây. Anh đã sai. Anh đã không giữ liên lạc với gia đình em vợ tương lai — dù anh không cưới em.
+Khải Phong không gọi điện thoại bố mẹ Hạ Vy năm năm gần đây. Anh đã sai. Anh đã không giữ liên lạc với gia đình anh vợ tương lai — dù anh không cưới anh.
 
-Em em — Hạ Nhi — em gái Hạ Vy — em hai bốn tuổi bây giờ. Anh sống Sài Gòn. Khải Phong không có số em.
+Anh anh — Hạ Nhi — anh gái Hạ Vy — anh hai bốn tuổi bây giờ. Anh sống Sài Gòn. Khải Phong không có số anh.
 
 Bác tài liếc gương. "Đêm bốn mươi tư. Con đã nhớ con không liên lạc gia đình Hạ Vy nhiều năm. Đêm sau con sẽ nhớ — Hạ Nhi em gái Hạ Vy giờ thế nào — em có nhắn con không. Đừng vội."
 
@@ -236,26 +236,26 @@ Khải Phong gật. Lệ rơi.
 
 Đêm thứ bốn mươi tư. Xe đi tiếp. Phía sau — Đắk Lắk khuất. Phượng Liên ở lại bên cửa — khúc chè trên thềm.
 
-Khải Phong cố nhớ tin nhắn Hạ Nhi gần đây. Em nhắn lần cuối — sinh nhật Khải Phong — tháng giêng năm nay. Em chúc — em xin chỗ cưới em — em đính kèm thiệp cưới scan PDF.
+Khải Phong cố nhớ tin nhắn Hạ Nhi gần đây. Anh nhắn lần cuối — sinh nhật Khải Phong — tháng giêng năm nay. Anh chúc — anh xin chỗ cưới anh — anh đính kèm thiệp cưới scan PDF.
 
 Khải Phong đọc thiệp — cưới tháng năm sang năm — Sài Gòn — chú rể Trần Hoàng Long — nghề kiến trúc sư.
 
-Trần Hoàng Long. Tên quen — không phải Khải Phong biết — chỉ tên thông dụng. Anh là kiến trúc sư — có thể em quen Hạ Vy qua nghề trước đây.
+Trần Hoàng Long. Tên quen — không phải Khải Phong biết — chỉ tên thông dụng. Anh là kiến trúc sư — có thể anh quen Hạ Vy qua nghề trước đây.
 
-Khải Phong không đáp em — em không từ chối — em chỉ im. Anh không có lý do — chỉ ngại đi dự cưới em gái Hạ Vy — em sẽ phải gặp bố mẹ Hạ Vy lại — em đã không liên lạc tám năm gần.
+Khải Phong không đáp anh — anh không từ chối — anh chỉ im. Anh không có lý do — chỉ ngại đi dự cưới anh gái Hạ Vy — anh sẽ phải gặp bố mẹ Hạ Vy lại — anh đã không liên lạc tám năm gần.
 
 Đêm bốn mươi tư — Khải Phong vẫn không quyết. Đêm sau — có thể anh sẽ quyết.
 
-Khải Phong cố nhớ tin nhắn Hạ Nhi gần đây. Anh mới nhắn tuần trước — Khải Phong chưa đáp. Em định đáp sáng mai — em quên. Khi em quay về đời thực — em sẽ nhắn Hạ Nhi đầu tiên — em sẽ đáp lời mời cưới em. Đêm thứ bốn mươi bốn kết thúc — đêm chưa sáng.
+Khải Phong cố nhớ tin nhắn Hạ Nhi gần đây. Anh mới nhắn tuần trước — Khải Phong chưa đáp. Anh định đáp sáng mai — anh quên. Khi anh quay về đời thực — anh sẽ nhắn Hạ Nhi đầu tiên — anh sẽ đáp lời mời cưới anh. Đêm thứ bốn mươi bốn kết thúc — đêm chưa sáng.
 
-Khải Phong cố nhớ Hạ Nhi tuổi nào. Em mười sáu khi Hạ Vy mất — bây giờ em hai mươi tư. Em vào đại học năm em mười tám — em tốt nghiệp năm em hai hai — em làm thiết kế hai năm — sắp cưới năm em hai sáu.
+Khải Phong cố nhớ Hạ Nhi tuổi nào. Anh mười sáu khi Hạ Vy mất — bây giờ anh hai mươi tư. Anh vào đại học năm anh mười tám — anh tốt nghiệp năm anh hai hai — anh làm thiết kế hai năm — sắp cưới năm anh hai sáu.
 
-Hạ Nhi giống chị em chỗ nét mặt — không phải y hệt — có nét chung. Khải Phong nhớ em từng đến phòng trọ Khâm Thiên chơi với Hạ Vy hồi em mười bốn — em ngồi học bài bên bàn vẽ — Hạ Vy chỉ anh làm toán. Khải Phong nấu cơm — ba người ăn chung.
+Hạ Nhi giống chị anh chỗ nét mặt — không phải y hệt — có nét chung. Khải Phong nhớ anh từng đến phòng trọ Khâm Thiên chơi với Hạ Vy hồi anh mười bốn — anh ngồi học bài bên bàn vẽ — Hạ Vy chỉ anh làm toán. Khải Phong nấu cơm — ba người ăn chung.
 
-Sau Hạ Vy mất — em chỉ gặp Hạ Nhi tang đám. Em nhỏ — em khóc. Anh không nói được câu nào với Khải Phong. Anh chỉ ôm Khải Phong một lúc — sau em theo bố mẹ về quê.
+Sau Hạ Vy mất — anh chỉ gặp Hạ Nhi tang đám. Anh nhỏ — anh khóc. Anh không nói được câu nào với Khải Phong. Anh chỉ ôm Khải Phong một lúc — sau anh theo bố mẹ về quê.
 
-Em lớn — em vẫn nhớ Khải Phong. Anh gửi thiệp cưới — em mua vé máy bay cho em.
+Anh lớn — anh vẫn nhớ Khải Phong. Anh gửi thiệp cưới — anh mua vé máy bay cho anh.
 
-Đêm thứ bốn mươi bốn — Khải Phong quyết anh sẽ đi dự cưới Hạ Nhi. Anh sẽ gặp bố mẹ Hạ Vy ở tiệc cưới — em sẽ ngồi cùng bàn.
+Đêm thứ bốn mươi bốn — Khải Phong quyết anh sẽ đi dự cưới Hạ Nhi. Anh sẽ gặp bố mẹ Hạ Vy ở tiệc cưới — anh sẽ ngồi cùng bàn.
 
-Khải Phong cố nhớ thêm — Hạ Nhi gửi thiệp mời cưới — Khải Phong đã in thiệp đặt trên bàn — em quên cất. Thiệp vẫn ở bàn làm việc văn phòng kiến trúc cũ — em không đem theo khi nghỉ việc. Anh không biết thiệp giờ ở đâu — có thể bảo vệ văn phòng dọn vứt. Anh sẽ nhắn Hạ Nhi xin thiệp khác — nếu em quay về đời thực.
+Khải Phong cố nhớ thêm — Hạ Nhi gửi thiệp mời cưới — Khải Phong đã in thiệp đặt trên bàn — anh quên cất. Thiệp vẫn ở bàn làm việc văn phòng kiến trúc cũ — anh không đem theo khi nghỉ việc. Anh không biết thiệp giờ ở đâu — có thể bảo vệ văn phòng dọn vứt. Anh sẽ nhắn Hạ Nhi xin thiệp khác — nếu anh quay về đời thực.

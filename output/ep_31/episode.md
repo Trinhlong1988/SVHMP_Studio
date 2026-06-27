@@ -252,7 +252,7 @@ Khải Phong nhìn ra cửa sổ. Bên ngoài — trời chưa sáng. Sao tháng
 
 [pause:1000ms]
 
-Khải Phong nhớ — Thanh Vân nói ngày mười hai tháng tư mẹ em mất. Có thể đêm nay — đêm thứ ba mươi mốt — chính ngày mười hai. Hoặc gần.
+Khải Phong nhớ — Thanh Vân nói ngày mười hai tháng tư mẹ anh mất. Có thể đêm nay — đêm thứ ba mươi mốt — chính ngày mười hai. Hoặc gần.
 
 Khải Phong tim đập nhanh. Hạ Vy mất ngày mười hai tháng tư 2018. Đêm hôm nay có thể là kỉ niệm tám năm.
 

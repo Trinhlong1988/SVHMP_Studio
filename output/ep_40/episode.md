@@ -293,7 +293,7 @@ Khải Phong cất bốn mươi vật vào túi — cẩn thận. Cluster cúc x
 
 Đêm thứ bốn mươi. Khải Phong nhìn ra cửa sổ — bên ngoài — trời vẫn chưa sáng. Đêm tháng tư — đêm dài.
 
-Khải Phong cố nhớ — đêm Hạ Vy mất — Khải Phong đã ở bệnh viện đến bốn giờ sáng. Khi bác sĩ báo Hạ Vy đi — Khải Phong ngồi ngoài phòng cấp cứu. Bố mẹ Hạ Vy đến. Em gái Hạ Nhi đến. Khải Phong quỳ — không khóc — không nói.
+Khải Phong cố nhớ — đêm Hạ Vy mất — Khải Phong đã ở bệnh viện đến bốn giờ sáng. Khi bác sĩ báo Hạ Vy đi — Khải Phong ngồi ngoài phòng cấp cứu. Bố mẹ Hạ Vy đến. Anh gái Hạ Nhi đến. Khải Phong quỳ — không khóc — không nói.
 
 Trời sáng — sáu giờ — Khải Phong ra khỏi bệnh viện. Mặt trời lên. Hà Nội bắt đầu ngày mới — nhưng Khải Phong không cảm được sáng — đêm đó kéo dài trong đầu Khải Phong.
 

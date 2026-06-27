@@ -238,17 +238,17 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 Khải Phong ngồi. Vé tàu Cát Linh — Hà Nội nội thành — vật đầu tiên trong cụm geographic.
 
-Khải Phong ngẫm — sau Hạ Vy mất — Khải Phong đem Hạ Vy về Hải Phòng — quê em — tang ở quê. Em chôn ở nghĩa trang xã Vĩnh Bảo.
+Khải Phong ngẫm — sau Hạ Vy mất — Khải Phong đem Hạ Vy về Hải Phòng — quê anh — tang ở quê. Anh chôn ở nghĩa trang xã Vĩnh Bảo.
 
 Khải Phong ở lại Hà Nội. Hai ngày sau tang — Khải Phong về Hà Nội — căn phòng trọ Khâm Thiên — một mình.
 
 [pause:1500ms]
 
-Bố mẹ Hạ Vy ở Hải Phòng — em là con đầu — em còn em gái nhỏ. Sau tang — bố mẹ anh không ghé Hà Nội — bố mẹ buồn ở quê. Khải Phong gọi điện hỏi thăm vài lần — sau đó liên lạc thưa.
+Bố mẹ Hạ Vy ở Hải Phòng — anh là con đầu — anh còn anh gái nhỏ. Sau tang — bố mẹ anh không ghé Hà Nội — bố mẹ buồn ở quê. Khải Phong gọi điện hỏi thăm vài lần — sau đó liên lạc thưa.
 
-Em gái Hạ Vy — tên Hạ Nhi — lúc đó học cấp ba — em mười sáu tuổi. Em quý Khải Phong — coi anh rể.
+Anh gái Hạ Vy — tên Hạ Nhi — lúc đó học cấp ba — anh mười sáu tuổi. Anh quý Khải Phong — coi anh rể.
 
-Khải Phong cố nhớ — sau Hạ Vy mất Khải Phong có liên lạc Hạ Nhi không? Cảm giác — có. Khải Phong nhắn em vài lần — hỏi học bài. Sau em vào đại học — em đi Sài Gòn — liên lạc thưa hơn.
+Khải Phong cố nhớ — sau Hạ Vy mất Khải Phong có liên lạc Hạ Nhi không? Cảm giác — có. Khải Phong nhắn anh vài lần — hỏi học bài. Sau anh vào đại học — anh đi Sài Gòn — liên lạc thưa hơn.
 
 Bác tài liếc gương. "Đêm ba mươi ba. Con đã nhớ Hạ Vy về quê tang — bố mẹ em ở quê. Đêm sau con sẽ nhớ — quê Hạ Vy thế nào — em đã sống ở đâu — bố mẹ em làm gì. Đừng vội."
 

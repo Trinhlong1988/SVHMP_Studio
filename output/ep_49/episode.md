@@ -220,13 +220,13 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 Khải Phong ngồi. Phương Linh đỡ ba cô gái khác sau mất Vân. Lời hứa muộn — giữ qua người khác.
 
-Khải Phong nhói — em đã hứa Hạ Vy không bao giờ em yêu ai khác. Hứa thề ngầm. Sau Hạ Vy mất — em sống một mình tám năm — không yêu ai. Anh đã giữ lời hứa.
+Khải Phong nhói — anh đã hứa Hạ Vy không bao giờ anh yêu ai khác. Hứa thề ngầm. Sau Hạ Vy mất — anh sống một mình tám năm — không yêu ai. Anh đã giữ lời hứa.
 
 [pause:1500ms]
 
 Nhưng — em có thực sự giữ vì hứa hay vì em không thể yêu ai khác?
 
-Khải Phong cố nhớ. Tám năm — đồng nghiệp văn phòng kiến trúc giới thiệu cô bạn — em từ chối. Bạn cùng quê giới thiệu em — em không gặp.
+Khải Phong cố nhớ. Tám năm — đồng nghiệp văn phòng kiến trúc giới thiệu cô bạn — anh từ chối. Bạn cùng quê giới thiệu anh — anh không gặp.
 
 Em không yêu ai mới. Lý do — em không quên Hạ Vy. Hoặc — em sợ yêu lại — sợ mất lần nữa. Hoặc — em hứa Hạ Vy.
 
@@ -238,20 +238,20 @@ Khải Phong gật. Lệ rơi nhẹ.
 
 Đêm thứ bốn mươi chín. Xe đi tiếp. Phía sau — Sóc Trăng khuất. Phương Linh ở lại quán — khăn trong hộp lost items.
 
-Khải Phong còn một đêm nữa — đêm thứ năm mươi — S1 finale. Anh sẽ xếp năm mươi vật theo bản đồ — em sẽ ngẫm 50 đêm anh đã đi qua.
+Khải Phong còn một đêm nữa — đêm thứ năm mươi — S1 finale. Anh sẽ xếp năm mươi vật theo bản đồ — anh sẽ ngẫm 50 đêm anh đã đi qua.
 
-Khải Phong cố ngẫm — em có giữ lời hứa không yêu ai sau Hạ Vy không? Cả ba lý do — không quên Hạ Vy + sợ mất lần nữa + hứa Hạ Vy — em không biết chiếm bao nhiêu phần. Có thể đêm sau anh sẽ phân biệt được. Hoặc không. Anh có quyền yêu lại — Hạ Vy không thể giữ em mãi đêm tháng tư 2018. Anh sẽ ngẫm sau dự cưới Hạ Nhi. Bốn mươi đêm còn lại — em có thời gian ngẫm. Đêm thứ bốn mươi chín kết thúc — chuẩn bị cho milestone S1 finale.
+Khải Phong cố ngẫm — anh có giữ lời hứa không yêu ai sau Hạ Vy không? Cả ba lý do — không quên Hạ Vy + sợ mất lần nữa + hứa Hạ Vy — anh không biết chiếm bao nhiêu phần. Có thể đêm sau anh sẽ phân biệt được. Hoặc không. Anh có quyền yêu lại — Hạ Vy không thể giữ anh mãi đêm tháng tư 2018. Anh sẽ ngẫm sau dự cưới Hạ Nhi. Bốn mươi đêm còn lại — anh có thời gian ngẫm. Đêm thứ bốn mươi chín kết thúc — chuẩn bị cho milestone S1 finale.
 
-Khải Phong ngồi đêm chuẩn bị cho milestone S1 finale ngày mai. Anh đã đi qua bốn mươi chín đêm — em đã nhặt bốn mươi chín vật — em đã nhớ Hạ Vy từng mảnh. Đêm mai — milestone EP50 — em sẽ xếp năm mươi vật theo bản đồ — em sẽ thấy gì. Anh đợi — Khải Phong không vội. Đêm bốn mươi chín kết thúc trong tiếng gió biển miền Tây.
+Khải Phong ngồi đêm chuẩn bị cho milestone S1 finale ngày mai. Anh đã đi qua bốn mươi chín đêm — anh đã nhặt bốn mươi chín vật — anh đã nhớ Hạ Vy từng mảnh. Đêm mai — milestone EP50 — anh sẽ xếp năm mươi vật theo bản đồ — anh sẽ thấy gì. Anh đợi — Khải Phong không vội. Đêm bốn mươi chín kết thúc trong tiếng gió biển miền Tây.
 
-Khải Phong nhìn sợi chỉ vải hoa nhỏ trong tay — vật thứ bốn mươi chín. Khải Phong cất vào túi. Bốn mươi chín vật — đêm mai năm mươi vật — em sẽ xếp bản đồ — em sẽ thấy điều em chưa từng thấy trong bốn mươi chín đêm trước.
+Khải Phong nhìn sợi chỉ vải hoa nhỏ trong tay — vật thứ bốn mươi chín. Khải Phong cất vào túi. Bốn mươi chín vật — đêm mai năm mươi vật — anh sẽ xếp bản đồ — anh sẽ thấy điều anh chưa từng thấy trong bốn mươi chín đêm trước.
 
-Khải Phong vuốt sợi chỉ mảnh trong tay. Đêm bốn mươi chín kết thúc trong gió biển Sóc Trăng. Còn một đêm nữa — milestone — em sẽ rõ hơn.
+Khải Phong vuốt sợi chỉ mảnh trong tay. Đêm bốn mươi chín kết thúc trong gió biển Sóc Trăng. Còn một đêm nữa — milestone — anh sẽ rõ hơn.
 
-Khải Phong vuốt áo gió bốn mươi chín vật. Em chuẩn bị cho năm mươi. Đêm milestone S1 finale sắp đến — em cảm thấy không khí xe đang dày lên.
+Khải Phong vuốt áo gió bốn mươi chín vật. Anh chuẩn bị cho năm mươi. Đêm milestone S1 finale sắp đến — anh cảm thấy không khí xe đang dày lên.
 
-Khải Phong vuốt sợi chỉ vải hoa — sợi mảnh. Em đặt vào túi cùng bốn mươi tám vật khác. Năm mươi vật đêm mai — em chuẩn bị tinh thần.
+Khải Phong vuốt sợi chỉ vải hoa — sợi mảnh. Anh đặt vào túi cùng bốn mươi tám vật khác. Năm mươi vật đêm mai — anh chuẩn bị tinh thần.
 
-Khải Phong nhìn ra biển miền Tây tối. Em hồi tưởng — em đã đỡ ai trong tám năm sau Hạ Vy không? Cảm giác — không. Anh chỉ đi làm — về phòng — ngủ. Anh không đỡ ai — em không bỏ ai — em không yêu ai mới. Anh sống lặng. Anh sẽ phải sống khác sau milestone EP50.
+Khải Phong nhìn ra biển miền Tây tối. Anh hồi tưởng — anh đã đỡ ai trong tám năm sau Hạ Vy không? Cảm giác — không. Anh chỉ đi làm — về phòng — ngủ. Anh không đỡ ai — anh không bỏ ai — anh không yêu ai mới. Anh sống lặng. Anh sẽ phải sống khác sau milestone EP50.
 
-Khải Phong vuốt sợi chỉ vải hoa thêm lần nữa. Vật bốn mươi chín — vật cuối trước milestone. Anh cất cẩn thận. Mỗi vật là một câu chuyện. Bốn mươi chín câu chuyện — em đã nghe đủ cho phase heightening. Đêm thứ bốn mươi chín kết thúc — đêm tháng tư tiếp tục — chưa sáng.
+Khải Phong vuốt sợi chỉ vải hoa thêm lần nữa. Vật bốn mươi chín — vật cuối trước milestone. Anh cất cẩn thận. Mỗi vật là một câu chuyện. Bốn mươi chín câu chuyện — anh đã nghe đủ cho phase heightening. Đêm thứ bốn mươi chín kết thúc — đêm tháng tư tiếp tục — chưa sáng.

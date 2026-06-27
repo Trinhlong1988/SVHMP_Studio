@@ -242,7 +242,7 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Khải Phong ngồi yên. Hữu Lộc và Hồng ly hôn ba mươi năm — em đi mà anh không kịp tha trực tiếp. Anh chỉ tha qua Chúa.
+Khải Phong ngồi yên. Hữu Lộc và Hồng ly hôn ba mươi năm — anh đi mà anh không kịp tha trực tiếp. Anh chỉ tha qua Chúa.
 
 Khải Phong nhói. Khải Phong và Hạ Vy có chuyện cưới chưa? Đêm cuối Hạ Vy nhắn buổi chiều: "Anh ơi tối nay anh có rảnh không? Em muốn bàn chuyện cưới."
 
@@ -260,7 +260,7 @@ Chín giờ Hạ Vy không về. Khải Phong gọi ba lần không bắt. Bện
 
 Hạ Vy đi — chuyện cưới không bàn.
 
-Khải Phong nhớ cụ thể: Hạ Vy muốn bàn cưới đêm đó vì em vừa nhận lương tháng đầu lương ổn định — em tính tiết kiệm sáu tháng đủ tiền cưới đơn giản — sau cưới đem ba mẹ Khải Phong và ba mẹ Hạ Vy lên ăn cơm chung.
+Khải Phong nhớ cụ thể: Hạ Vy muốn bàn cưới đêm đó vì anh vừa nhận lương tháng đầu lương ổn định — anh tính tiết kiệm sáu tháng đủ tiền cưới đơn giản — sau cưới đem ba mẹ Khải Phong và ba mẹ Hạ Vy lên ăn cơm chung.
 
 Hạ Vy không kịp bàn. Cưới không kịp tổ chức. Không bao giờ.
 

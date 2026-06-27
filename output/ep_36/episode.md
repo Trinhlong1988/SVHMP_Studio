@@ -232,13 +232,13 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Khải Phong ngồi yên một lúc lâu. Diễm có người yêu hai năm — anh Khải không biết. Em chọn giấu gia đình — em có lý do riêng.
+Khải Phong ngồi yên một lúc lâu. Diễm có người yêu hai năm — anh Khải không biết. Anh chọn giấu gia đình — anh có lý do riêng.
 
-Khải Phong nhói. Hạ Vy có ai bên em đêm anh đi? Khải Phong cố nhớ.
+Khải Phong nhói. Hạ Vy có ai bên anh đêm anh đi? Khải Phong cố nhớ.
 
 Hình ảnh — bệnh viện Bạch Mai — phòng cấp cứu — Khải Phong đứng ngoài cửa kính. Trong phòng — Hạ Vy nằm cáng — bác sĩ vây quanh.
 
-Khải Phong cố nhớ — ai đưa Hạ Vy vào bệnh viện? Ai gọi cấp cứu? Có ai bên em lúc tai nạn?
+Khải Phong cố nhớ — ai đưa Hạ Vy vào bệnh viện? Ai gọi cấp cứu? Có ai bên anh lúc tai nạn?
 
 [pause:1500ms]
 

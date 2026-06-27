@@ -230,7 +230,7 @@ Em có thể đi Hàn Quốc một mình — đem ảnh — chụp ảnh — đe
 
 Hoặc em có thể đem nhẫn bạc Hạ Vy sang Hàn Quốc — đeo trên ngón út — đi qua đường có lá đỏ — chụp ảnh nhẫn dưới lá đỏ — đem ảnh về đặt bàn thờ Hạ Vy ở quê em.
 
-Khải Phong quyết — em sẽ đi Hàn Quốc một mình mùa thu năm sau — sau khi em dự cưới Hạ Nhi. Anh sẽ giữ lời hứa muộn qua cách anh có thể.
+Khải Phong quyết — anh sẽ đi Hàn Quốc một mình mùa thu năm sau — sau khi anh dự cưới Hạ Nhi. Anh sẽ giữ lời hứa muộn qua cách anh có thể.
 
 Em không phải Hữu Duy — em không có tiệm sinh ra lời hứa. Em có nhẫn — em có ngày — em sẽ tự tạo nghi lễ.
 
@@ -240,9 +240,9 @@ Khải Phong gật. Lệ rơi nhẹ.
 
 Đêm thứ bốn mươi tám. Xe đi tiếp. Phía sau — Cần Thơ khuất. Hữu Duy ở lại tiệm — đàn trước cửa.
 
-Khải Phong ngẫm thêm — em sẽ chuẩn bị đi Hàn Quốc trước cưới Hạ Nhi. Anh sẽ đặt vé bay sau dự cưới em xong — em sẽ bay từ Sài Gòn về Hà Nội — sau đó từ Hà Nội bay Hàn Quốc mùa thu. Anh sẽ đem theo nhẫn bạc Hạ Vy — đeo ngón út — chụp ảnh dưới lá đỏ. Anh sẽ đem ảnh về quê em ở Vĩnh Phúc — đặt trên bàn thờ anh không có (em chưa lập bàn thờ Hạ Vy ở quê em — em chỉ có bàn thờ em ở quê Hạ Vy). Anh sẽ lập bàn thờ Hạ Vy ở quê em — em sẽ đặt ảnh Hàn Quốc lên đó. Đêm thứ bốn mươi tám kết thúc — quyết tâm rõ hơn.
+Khải Phong ngẫm thêm — anh sẽ chuẩn bị đi Hàn Quốc trước cưới Hạ Nhi. Anh sẽ đặt vé bay sau dự cưới anh xong — anh sẽ bay từ Sài Gòn về Hà Nội — sau đó từ Hà Nội bay Hàn Quốc mùa thu. Anh sẽ đem theo nhẫn bạc Hạ Vy — đeo ngón út — chụp ảnh dưới lá đỏ. Anh sẽ đem ảnh về quê anh ở Vĩnh Phúc — đặt trên bàn thờ anh không có (anh chưa lập bàn thờ Hạ Vy ở quê anh — anh chỉ có bàn thờ anh ở quê Hạ Vy). Anh sẽ lập bàn thờ Hạ Vy ở quê anh — anh sẽ đặt ảnh Hàn Quốc lên đó. Đêm thứ bốn mươi tám kết thúc — quyết tâm rõ hơn.
 
-Khải Phong ngồi đêm tháng tư. Anh đã quyết — em sẽ đi Hàn Quốc một mình sau dự cưới Hạ Nhi. Anh sẽ đặt vé sang năm — em sẽ chuẩn bị nhẫn em — em sẽ chuẩn bị máy ảnh. Anh sẽ làm như Hữu Duy đêm này — giữ lời hứa muộn qua cách anh có. Anh không phải Khải Phong yêu ai mới — em là Khải Phong giữ lời hứa Hạ Vy qua cách khác. Đêm bốn mươi tám kết thúc — Khải Phong quyết tâm chuẩn bị.
+Khải Phong ngồi đêm tháng tư. Anh đã quyết — anh sẽ đi Hàn Quốc một mình sau dự cưới Hạ Nhi. Anh sẽ đặt vé sang năm — anh sẽ chuẩn bị nhẫn anh — anh sẽ chuẩn bị máy ảnh. Anh sẽ làm như Hữu Duy đêm này — giữ lời hứa muộn qua cách anh có. Anh không phải Khải Phong yêu ai mới — anh là Khải Phong giữ lời hứa Hạ Vy qua cách khác. Đêm bốn mươi tám kết thúc — Khải Phong quyết tâm chuẩn bị.
 
 Khải Phong nhìn dây đàn nhỏ trong túi — vật thứ bốn mươi tám. Anh sẽ cất riêng — cùng nhẫn — cùng thiệp cưới Hạ Nhi sẽ đến đêm mai. Bốn mươi tám vật — đêm sau là bốn mươi chín — đêm sau nữa là milestone năm mươi.
 

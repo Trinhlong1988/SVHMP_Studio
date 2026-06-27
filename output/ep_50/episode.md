@@ -71,19 +71,19 @@ Khải Phong nhói. Bác tài đem anh về chính nhà Hạ Vy.
 
 Bên cổng nhà — một phụ nữ trẻ đứng đợi. Khoảng hai mươi bốn tuổi. Áo dài hồng — phong cách áo dài cô dâu. Tóc cột thấp. Tay phải cầm thiệp cưới giấy — phong bì đỏ.
 
-Khải Phong nhìn — cô gái này — Khải Phong biết — Hạ Nhi. Em gái Hạ Vy.
+Khải Phong nhìn — cô gái này — Khải Phong biết — Hạ Nhi. Anh gái Hạ Vy.
 
 Hạ Nhi bước lên xe. Đi qua hàng ghế đầu — không nhìn ai — như quen đường. Ngồi xuống ghế thứ ba — bên cạnh Khải Phong.
 
 Lần thứ tư trong năm mươi đêm có người ngồi cùng ghế ba với Khải Phong. Sau Nhật Minh EP20, Khải Phong Nguyễn EP30, Hải EP40 — đêm này — Hạ Nhi.
 
-Hạ Nhi quay sang Khải Phong. Mắt em chạm em — không sốc — như đã đợi em.
+Hạ Nhi quay sang Khải Phong. Mắt anh chạm anh — không sốc — như đã đợi anh.
 
 Em mỉm cười. Bảo:
 
 "Anh Khải Phong. Em đã tìm anh tám năm. Đêm nay em gặp được anh."
 
-Khải Phong sốc. Anh không phải passenger thường — em là người đời thực — em gái Hạ Vy.
+Khải Phong sốc. Anh không phải passenger thường — anh là người đời thực — anh gái Hạ Vy.
 
 Xe lăn bánh.
 
@@ -93,9 +93,9 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Hạ Nhi ngồi bên Khải Phong. Vuốt phong bì đỏ. Đầu ngón tay em mảnh — bàn tay cô gái trẻ.
+Hạ Nhi ngồi bên Khải Phong. Vuốt phong bì đỏ. Đầu ngón tay anh mảnh — bàn tay cô gái trẻ.
 
-Khải Phong quan sát từ gần — em ba hai bốn — mặt trẻ — vẻ em gái — có nét chị Hạ Vy.
+Khải Phong quan sát từ gần — anh ba hai bốn — mặt trẻ — vẻ anh gái — có nét chị Hạ Vy.
 
 Phong bì em giữ — thiệp cưới Hạ Nhi — mời tháng năm sang năm — Sài Gòn — chú rể Trần Hoàng Long.
 
@@ -105,7 +105,7 @@ Phong bì em giữ — thiệp cưới Hạ Nhi — mời tháng năm sang năm 
 
 Bác tài liếc gương. Không nói nữa.
 
-Hạ Nhi quay sang Khải Phong. Em nói tiếp:
+Hạ Nhi quay sang Khải Phong. Anh nói tiếp:
 
 "Anh biết em không lên xe đêm thường. Em ở Sài Gòn — em đang ngủ trong giường em. Đêm nay em mơ — em mơ thấy chuyến xe của chị Hạ Vy — em được phép lên xe gặp anh."
 
@@ -119,7 +119,7 @@ Xe đi qua xóm. Phía bên trái — căn nhà mái ngói cũ — sân có hai 
 
 Hai chị em — Hạ Vy ngoài cửa sổ — Hạ Nhi trên xe — cùng nhìn nhau.
 
-Khải Phong sốc. Lần đầu trong năm mươi đêm — em nhìn rõ mặt Hạ Vy. Mặt anh không mờ nữa.
+Khải Phong sốc. Lần đầu trong năm mươi đêm — anh nhìn rõ mặt Hạ Vy. Mặt anh không mờ nữa.
 
 "Chị..."
 
@@ -151,7 +151,7 @@ Hạ Nhi nói tiếp — giọng đều — chậm.
 
 "Em đến đêm nay — em đến để xin anh quyết định. Anh có đi dự cưới em không?"
 
-Khải Phong nhói. Em nói chậm — giọng em khàn vì lệ.
+Khải Phong nhói. Anh nói chậm — giọng anh khàn vì lệ.
 
 "Anh sẽ đi. Anh xin lỗi em không trả lời. Anh sẽ đi dự cưới em."
 
@@ -195,7 +195,7 @@ Hạ Nhi gật bác tài. "Cảm ơn bác."
 
 [pause:1500ms]
 
-Khải Phong nhói. Hạ Nhi không phải passenger — em là người đời thực được phép lên xe đêm qua giấc mơ. Bác tài cho em lên.
+Khải Phong nhói. Hạ Nhi không phải passenger — anh là người đời thực được phép lên xe đêm qua giấc mơ. Bác tài cho anh lên.
 
 Khải Phong hỏi nhỏ:
 
@@ -213,7 +213,7 @@ Xe chậm lại. Ngã ba Vĩnh Bảo — cây phượng vĩ cổ — bến nhà 
 
 Chuông xe ngân. Một tiếng. Tan trong gió biển Hải Phòng.
 
-Hạ Nhi ôm thiệp anh đã đưa Khải Phong — em không lấy lại — em để Khải Phong giữ. Đứng dậy.
+Hạ Nhi ôm thiệp anh đã đưa Khải Phong — anh không lấy lại — anh để Khải Phong giữ. Đứng dậy.
 
 "Chào anh. Sáng mai em sẽ gọi điện bố em. Bố em sẽ đợi anh."
 
@@ -227,15 +227,15 @@ Hạ Nhi bước xuống.
 
 Bên ngoài — Hạ Nhi đi vào sân nhà bố mẹ. Cửa nhà còn sáng — bố mẹ chưa ngủ (trong giấc mơ em). Em mở cổng — đi vào.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ. Hạ Vy xuất hiện trên hiên nhà — đứng đợi em em. Hạ Vy ôm em em một lúc. Hai chị anh đứng trên hiên — Hạ Vy vuốt tóc Hạ Nhi.
+Khải Phong chớp mắt — nhìn qua cửa sổ. Hạ Vy xuất hiện trên hiên nhà — đứng đợi anh anh. Hạ Vy ôm anh anh một lúc. Hai chị anh đứng trên hiên — Hạ Vy vuốt tóc Hạ Nhi.
 
-Khải Phong nhìn rõ mặt Hạ Vy — em đẹp như trong ký ức — không mờ.
+Khải Phong nhìn rõ mặt Hạ Vy — anh đẹp như trong ký ức — không mờ.
 
-Hạ Vy quay sang xe. Anh nhìn Khải Phong qua cửa sổ. Em mỉm cười. Em vẫy tay một lần.
+Hạ Vy quay sang xe. Anh nhìn Khải Phong qua cửa sổ. Anh mỉm cười. Anh vẫy tay một lần.
 
 Khải Phong vẫy tay lại. Lệ rơi.
 
-Khải Phong chớp lần nữa. Hai chị em tan vào ánh đèn nhà.
+Khải Phong chớp lần nữa. Hai chị anh tan vào ánh đèn nhà.
 
 [pause:1500ms]
 
@@ -245,7 +245,7 @@ Khải Phong chớp lần nữa. Hai chị em tan vào ánh đèn nhà.
 
 Xe lăn bánh — rời ngã ba Vĩnh Bảo.
 
-Ghế ba bên Khải Phong trống. Trên sàn — không có vật rơi. Hạ Nhi không để lại vật — em đem thiệp cưới đưa Khải Phong — Khải Phong giữ trong tay.
+Ghế ba bên Khải Phong trống. Trên sàn — không có vật rơi. Hạ Nhi không để lại vật — anh đem thiệp cưới đưa Khải Phong — Khải Phong giữ trong tay.
 
 Khải Phong cất thiệp vào túi áo gió. Vật thứ năm mươi.
 
@@ -283,7 +283,7 @@ Bản đồ năm mươi vật — kết thúc tại nhà bố mẹ Hạ Vy ở V
 
 Khải Phong nhói. Bản đồ năm mươi vật là route Khải Phong đến nhà Hạ Vy. Từ Hà Nội — qua đường vành đai — qua Hải Phòng — đến Vĩnh Bảo.
 
-Route — Khải Phong sẽ đi tháng sau khi em thăm bố mẹ Hạ Vy. Route — Khải Phong sẽ đi tháng năm sang năm khi em dự cưới Hạ Nhi.
+Route — Khải Phong sẽ đi tháng sau khi anh thăm bố mẹ Hạ Vy. Route — Khải Phong sẽ đi tháng năm sang năm khi anh dự cưới Hạ Nhi.
 
 Bác tài liếc gương. "Đêm năm mươi — Season 1 finale. Con đã xếp năm mươi items theo bản đồ. Bản đồ kết thúc tại nhà Hạ Vy. Còn bốn mươi đêm nữa — bản đồ sẽ rõ hơn — sẽ đến quá nhà Hạ Vy."
 
@@ -298,7 +298,7 @@ Khải Phong cất năm mươi vật vào túi. Thiệp cưới Hạ Nhi đặt 
 Khải Phong đã đi qua một nửa chuyến xe. Còn bốn mươi đêm nữa.
 
 Đêm năm mươi đặc biệt:
-- Khải Phong gặp Hạ Nhi qua giấc mơ em
+- Khải Phong gặp Hạ Nhi qua giấc mơ anh
 - Khải Phong nhìn rõ mặt Hạ Vy lần đầu
 - Khải Phong quyết đi dự cưới Hạ Nhi
 - Khải Phong quyết về thăm bố mẹ Hạ Vy

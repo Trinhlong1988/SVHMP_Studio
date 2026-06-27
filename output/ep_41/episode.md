@@ -250,19 +250,19 @@ Khải Phong gật. Lệ rơi.
 
 Đêm thứ bốn mươi mốt. Xe đi tiếp. Phía sau — Bình Định khuất. Bích Trâm ở lại khoa nhi — điện thoại trên bàn.
 
-Khải Phong nhìn ra cửa sổ — đường khuya vắng. Hạ Vy chỉ kịp gõ ba từ trên xe máy giữa mưa. Em va chạm giữa từ thứ ba và từ thứ tư. Tin nhắn dừng ở "Anh ơi em yêu" — em không kịp viết "anh" cuối.
+Khải Phong nhìn ra cửa sổ — đường khuya vắng. Hạ Vy chỉ kịp gõ ba từ trên xe máy giữa mưa. Anh va chạm giữa từ thứ ba và từ thứ tư. Tin nhắn dừng ở "Anh ơi em yêu" — em không kịp viết "anh" cuối.
 
-Khải Phong cố nhớ — em đọc tin dở đêm Bạch Mai. Anh đứng ngoài phòng cấp cứu — em mở điện thoại Hạ Vy — em thấy tin. Anh không khóc lúc đọc — em sốc — em chỉ nhìn ba từ — không phản ứng.
+Khải Phong cố nhớ — anh đọc tin dở đêm Bạch Mai. Anh đứng ngoài phòng cấp cứu — anh mở điện thoại Hạ Vy — anh thấy tin. Anh không khóc lúc đọc — anh sốc — anh chỉ nhìn ba từ — không phản ứng.
 
-Sau tang em — em trả điện thoại bố mẹ em — em đem cùng quần áo em. Khải Phong không chụp ảnh tin — em không nghĩ đến. Anh đã có ký ức — em không cần ảnh.
+Sau tang anh — anh trả điện thoại bố mẹ anh — anh đem cùng quần áo anh. Khải Phong không chụp ảnh tin — anh không nghĩ đến. Anh đã có ký ức — anh không cần ảnh.
 
 Tám năm — Khải Phong nhớ ba từ. Không cần ảnh. Ký ức đủ.
 
 Khải Phong cố giữ ba từ trong đầu. Đêm thứ bốn mươi mốt. Còn bốn mươi chín đêm nữa. Bốn mươi chín đêm để Khải Phong nhớ thêm điều gì.
 
-Khải Phong nhìn ra cửa sổ — Bình Định khuất. Bích Trâm có con gái không kịp gửi tin. Khải Phong có Hạ Vy không kịp gửi tin. Hai câu chuyện song song — hai mất mát qua tin nhắn ba từ. Một mẹ-con — một anh-em. Mất khác nhau — nhưng cùng cảm giác chưa kịp.
+Khải Phong nhìn ra cửa sổ — Bình Định khuất. Bích Trâm có con gái không kịp gửi tin. Khải Phong có Hạ Vy không kịp gửi tin. Hai câu chuyện song song — hai mất mát qua tin nhắn ba từ. Một mẹ-con — một anh-anh. Mất khác nhau — nhưng cùng cảm giác chưa kịp.
 
-Khải Phong cố nhớ — sau Hạ Vy mất anh có viết tin nào không kịp gửi cho anh không. Cảm giác — có. Anh có một tin dở trong điện thoại anh năm thứ ba sau Hạ Vy đi — em viết: "Anh ơi anh nhớ em." Em viết — không có ai để gửi. Em xóa.
+Khải Phong cố nhớ — sau Hạ Vy mất anh có viết tin nào không kịp gửi cho anh không. Cảm giác — có. Anh có một tin dở trong điện thoại anh năm thứ ba sau Hạ Vy đi — anh viết: "Anh ơi anh nhớ em." Em viết — không có ai để gửi. Em xóa.
 
 Em đã mất Hạ Vy. Bích Trâm mất Linh. Hai người trên xe đêm nay — chia sẻ cảm giác qua hai câu chuyện riêng.
 

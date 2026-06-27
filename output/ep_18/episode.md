@@ -259,15 +259,15 @@ Khải Phong ngồi yên một lúc lâu. Một quyển sổ tay — chữ tay n
 
 Hình ảnh — phòng trọ Khâm Thiên — Hạ Vy ngồi bàn vẽ — không phải đang vẽ — đang viết sổ. Hạ Vy có một quyển sổ tay nhỏ — bìa cứng xanh đậm — em viết mỗi tối trước khi ngủ.
 
-Khải Phong nhớ. Hạ Vy viết nhật ký. Em viết về ngày em vẽ bài gì — em uống cà phê với ai — em nghĩ gì.
+Khải Phong nhớ. Hạ Vy viết nhật ký. Anh viết về ngày anh vẽ bài gì — anh uống cà phê với ai — anh nghĩ gì.
 
-Khải Phong cố nhớ — em có đọc sổ Hạ Vy không. Cảm giác — không. Khải Phong tôn trọng — em không bao giờ mở sổ em viết. Sổ Hạ Vy là riêng em.
+Khải Phong cố nhớ — anh có đọc sổ Hạ Vy không. Cảm giác — không. Khải Phong tôn trọng — anh không bao giờ mở sổ anh viết. Sổ Hạ Vy là riêng anh.
 
-Sau Hạ Vy mất — sổ ở đâu? Khải Phong cố nhớ. Cảm giác — em cất trong ngăn kéo bàn vẽ. Khải Phong dọn phòng — em đem ngăn kéo bàn vẽ về quê Hải Phòng cùng quần áo em — gửi bố mẹ Hạ Vy.
+Sau Hạ Vy mất — sổ ở đâu? Khải Phong cố nhớ. Cảm giác — anh cất trong ngăn kéo bàn vẽ. Khải Phong dọn phòng — anh đem ngăn kéo bàn vẽ về quê Hải Phòng cùng quần áo anh — gửi bố mẹ Hạ Vy.
 
 Bố mẹ Hạ Vy có sổ. Khải Phong không có. Khải Phong không biết Hạ Vy viết gì những đêm cuối — không biết anh có viết về chuyện cưới không.
 
-Khải Phong nhói. Đáng lẽ Khải Phong nên đọc sổ Hạ Vy — em đã mất — em không phiền. Khải Phong tôn trọng quá — đã làm Khải Phong mất một mảnh ký ức anh không thể bù.
+Khải Phong nhói. Đáng lẽ Khải Phong nên đọc sổ Hạ Vy — anh đã mất — anh không phiền. Khải Phong tôn trọng quá — đã làm Khải Phong mất một mảnh ký ức anh không thể bù.
 
 Bác tài liếc gương. "Đêm sau con sẽ ngẫm tiếp về sổ tay Hạ Vy. Đừng vội."
 

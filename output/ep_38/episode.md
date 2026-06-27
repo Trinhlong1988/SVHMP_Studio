@@ -230,7 +230,7 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Khải Phong ngồi. Đức Anh hứa tặng Lan hộp quà sinh nhật mười tám — em không kịp — em gửi mười bảy năm sau qua bưu điện. Lời hứa muộn — nhưng vẫn được gửi.
+Khải Phong ngồi. Đức Anh hứa tặng Lan hộp quà sinh nhật mười tám — anh không kịp — anh gửi mười bảy năm sau qua bưu điện. Lời hứa muộn — nhưng vẫn được gửi.
 
 Khải Phong nhói. Khải Phong có hứa gì với Hạ Vy mà chưa kịp giữ?
 

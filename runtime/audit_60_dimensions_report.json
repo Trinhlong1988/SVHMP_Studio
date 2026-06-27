@@ -72,7 +72,7 @@
       },
       {
         "check": "5.9 Vietnamese pronoun balance",
-        "value": "{'em': 3, 'anh': 30, 'chị': 0, 'bác': 2}",
+        "value": "{'em': 2, 'anh': 31, 'chị': 0, 'bác': 2}",
         "sev": "LOW"
       },
       {
@@ -573,8 +573,8 @@
   "8": {
     "high": 0,
     "medium": 6,
-    "low": 5,
-    "ok": 59,
+    "low": 4,
+    "ok": 60,
     "details": [
       {
         "check": "1.2 word frequency > 20 (non-name)",
@@ -610,11 +610,6 @@
         "check": "5.5 internal monologue depth",
         "value": "0",
         "sev": "MEDIUM"
-      },
-      {
-        "check": "5.9 Vietnamese pronoun balance",
-        "value": "{'em': 98, 'anh': 4, 'chị': 0, 'bác': 10}",
-        "sev": "LOW"
       },
       {
         "check": "6.2 ghost interaction warmth",
@@ -734,7 +729,7 @@
       },
       {
         "check": "5.9 Vietnamese pronoun balance",
-        "value": "{'em': 3, 'anh': 58, 'chị': 0, 'bác': 7}",
+        "value": "{'em': 2, 'anh': 59, 'chị': 0, 'bác': 7}",
         "sev": "LOW"
       },
       {
@@ -1418,7 +1413,7 @@
       },
       {
         "check": "5.9 Vietnamese pronoun balance",
-        "value": "{'em': 94, 'anh': 14, 'chị': 0, 'bác': 0}",
+        "value": "{'em': 89, 'anh': 19, 'chị': 0, 'bác': 0}",
         "sev": "LOW"
       },
       {
@@ -1461,7 +1456,7 @@
       },
       {
         "check": "5.9 Vietnamese pronoun balance",
-        "value": "{'em': 100, 'anh': 1, 'chị': 3, 'bác': 2}",
+        "value": "{'em': 99, 'anh': 2, 'chị': 3, 'bác': 2}",
         "sev": "LOW"
       },
       {
@@ -1547,7 +1542,7 @@
       },
       {
         "check": "5.9 Vietnamese pronoun balance",
-        "value": "{'em': 77, 'anh': 0, 'chị': 0, 'bác': 2}",
+        "value": "{'em': 76, 'anh': 1, 'chị': 0, 'bác': 2}",
         "sev": "LOW"
       },
       {
@@ -1603,7 +1598,7 @@
       },
       {
         "check": "1.4 4-gram self-repeat > 2",
-        "value": "7",
+        "value": "6",
         "sev": "MEDIUM"
       },
       {
@@ -1618,7 +1613,7 @@
       },
       {
         "check": "5.9 Vietnamese pronoun balance",
-        "value": "{'em': 136, 'anh': 1, 'chị': 0, 'bác': 2}",
+        "value": "{'em': 125, 'anh': 12, 'chị': 0, 'bác': 2}",
         "sev": "LOW"
       },
       {
@@ -1707,8 +1702,8 @@
   "36": {
     "high": 0,
     "medium": 1,
-    "low": 5,
-    "ok": 64,
+    "low": 4,
+    "ok": 65,
     "details": [
       {
         "check": "1.2 word frequency > 20 (non-name)",
@@ -1728,11 +1723,6 @@
       {
         "check": "5.7 object symbolism density",
         "value": "3",
-        "sev": "LOW"
-      },
-      {
-        "check": "5.9 Vietnamese pronoun balance",
-        "value": "{'em': 86, 'anh': 15, 'chị': 0, 'bác': 4}",
         "sev": "LOW"
       },
       {
@@ -1777,9 +1767,9 @@
   },
   "38": {
     "high": 0,
-    "medium": 3,
+    "medium": 2,
     "low": 4,
-    "ok": 63,
+    "ok": 64,
     "details": [
       {
         "check": "1.2 word frequency > 20 (non-name)",
@@ -1790,11 +1780,6 @@
         "check": "1.3 common sentence openers > 8",
         "value": "1",
         "sev": "LOW"
-      },
-      {
-        "check": "1.4 4-gram self-repeat > 2",
-        "value": "6",
-        "sev": "MEDIUM"
       },
       {
         "check": "3.10 driver unauthorized speech (post-R42)",
@@ -1912,7 +1897,7 @@
       },
       {
         "check": "1.4 4-gram self-repeat > 2",
-        "value": "8",
+        "value": "7",
         "sev": "MEDIUM"
       },
       {
@@ -1927,7 +1912,7 @@
       },
       {
         "check": "5.9 Vietnamese pronoun balance",
-        "value": "{'em': 129, 'anh': 1, 'chị': 0, 'bác': 2}",
+        "value": "{'em': 108, 'anh': 22, 'chị': 0, 'bác': 2}",
         "sev": "LOW"
       },
       {
@@ -1940,8 +1925,8 @@
   "42": {
     "high": 0,
     "medium": 3,
-    "low": 5,
-    "ok": 62,
+    "low": 4,
+    "ok": 63,
     "details": [
       {
         "check": "1.2 word frequency > 20 (non-name)",
@@ -1969,11 +1954,6 @@
         "sev": "LOW"
       },
       {
-        "check": "5.9 Vietnamese pronoun balance",
-        "value": "{'em': 92, 'anh': 6, 'chị': 0, 'bác': 1}",
-        "sev": "LOW"
-      },
-      {
         "check": "6.9 aftertaste lingering",
         "value": "0",
         "sev": "LOW"
@@ -1988,8 +1968,8 @@
   "43": {
     "high": 0,
     "medium": 2,
-    "low": 3,
-    "ok": 65,
+    "low": 2,
+    "ok": 66,
     "details": [
       {
         "check": "1.2 word frequency > 20 (non-name)",
@@ -2007,11 +1987,6 @@
         "sev": "LOW"
       },
       {
-        "check": "5.9 Vietnamese pronoun balance",
-        "value": "{'em': 131, 'anh': 5, 'chị': 0, 'bác': 5}",
-        "sev": "LOW"
-      },
-      {
         "check": "7.3 foreign words leak",
         "value": "58",
         "sev": "LOW"
@@ -2021,8 +1996,8 @@
   "44": {
     "high": 0,
     "medium": 3,
-    "low": 5,
-    "ok": 62,
+    "low": 4,
+    "ok": 63,
     "details": [
       {
         "check": "1.2 word frequency > 20 (non-name)",
@@ -2036,7 +2011,7 @@
       },
       {
         "check": "1.4 4-gram self-repeat > 2",
-        "value": "7",
+        "value": "6",
         "sev": "MEDIUM"
       },
       {
@@ -2052,11 +2027,6 @@
       {
         "check": "5.7 object symbolism density",
         "value": "3",
-        "sev": "LOW"
-      },
-      {
-        "check": "5.9 Vietnamese pronoun balance",
-        "value": "{'em': 116, 'anh': 0, 'chị': 1, 'bác': 2}",
         "sev": "LOW"
       },
       {
@@ -2093,8 +2063,8 @@
         "sev": "LOW"
       },
       {
-        "check": "5.9 Vietnamese pronoun balance",
-        "value": "{'em': 112, 'anh': 15, 'chị': 1, 'bác': 2}",
+        "check": "6.8 moral self-judgment",
+        "value": "0",
         "sev": "LOW"
       },
       {
@@ -2107,8 +2077,8 @@
   "46": {
     "high": 0,
     "medium": 1,
-    "low": 5,
-    "ok": 64,
+    "low": 4,
+    "ok": 65,
     "details": [
       {
         "check": "1.2 word frequency > 20 (non-name)",
@@ -2126,11 +2096,6 @@
         "sev": "LOW"
       },
       {
-        "check": "5.9 Vietnamese pronoun balance",
-        "value": "{'em': 128, 'anh': 4, 'chị': 0, 'bác': 0}",
-        "sev": "LOW"
-      },
-      {
         "check": "6.9 aftertaste lingering",
         "value": "0",
         "sev": "LOW"
@@ -2145,8 +2110,8 @@
   "47": {
     "high": 0,
     "medium": 3,
-    "low": 6,
-    "ok": 61,
+    "low": 5,
+    "ok": 62,
     "details": [
       {
         "check": "1.2 word frequency > 20 (non-name)",
@@ -2179,11 +2144,6 @@
         "sev": "LOW"
       },
       {
-        "check": "5.9 Vietnamese pronoun balance",
-        "value": "{'em': 125, 'anh': 0, 'chị': 0, 'bác': 0}",
-        "sev": "LOW"
-      },
-      {
         "check": "6.9 aftertaste lingering",
         "value": "0",
         "sev": "LOW"
@@ -2198,8 +2158,8 @@
   "48": {
     "high": 0,
     "medium": 5,
-    "low": 5,
-    "ok": 60,
+    "low": 4,
+    "ok": 61,
     "details": [
       {
         "check": "1.1 internal anaphora consecutive",
@@ -2232,11 +2192,6 @@
         "sev": "LOW"
       },
       {
-        "check": "5.9 Vietnamese pronoun balance",
-        "value": "{'em': 144, 'anh': 5, 'chị': 0, 'bác': 0}",
-        "sev": "LOW"
-      },
-      {
         "check": "6.3 unresolved memory present",
         "value": "0",
         "sev": "MEDIUM"
@@ -2256,8 +2211,8 @@
   "49": {
     "high": 0,
     "medium": 3,
-    "low": 5,
-    "ok": 62,
+    "low": 4,
+    "ok": 63,
     "details": [
       {
         "check": "1.1 internal anaphora consecutive",
@@ -2276,17 +2231,12 @@
       },
       {
         "check": "1.4 4-gram self-repeat > 2",
-        "value": "10",
+        "value": "9",
         "sev": "MEDIUM"
       },
       {
         "check": "3.10 driver unauthorized speech (post-R42)",
         "value": "2",
-        "sev": "LOW"
-      },
-      {
-        "check": "5.9 Vietnamese pronoun balance",
-        "value": "{'em': 153, 'anh': 1, 'chị': 0, 'bác': 0}",
         "sev": "LOW"
       },
       {

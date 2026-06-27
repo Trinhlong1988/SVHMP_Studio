@@ -64,7 +64,7 @@ Xe chậm lại trước một quán cà phê đêm ven đường vào thành ph
 
 Một chú trung niên. Khoảng bốn mươi mấy tuổi. Mặc áo khoác da đen, tóc bạc một vài sợi ở thái dương. Mặt khắc khổ. Tay phải xách cặp da. Tay trái cầm một chiếc khăn tay cũ — màu xanh nhạt, hai đầu thêu hoa nhỏ.
 
-Khải Phong nhìn cái khăn. Có cảm giác đã thấy từ trước — EP08, em sinh viên đêm Bắc Ninh.
+Khải Phong nhìn cái khăn. Có cảm giác đã thấy từ trước — EP08, anh sinh viên đêm Bắc Ninh.
 
 Chú bước lên xe. Đi xuống lối giữa. Ngồi vào ghế thứ ba — cùng ghế Khải Phong.
 

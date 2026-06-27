@@ -718,7 +718,7 @@ Bác tài liếc gương.
 1. **Câu hát ông cụ "Người ơi người ở đừng về"** — em chọn câu quan họ phổ thông cho tiễn biệt. Mr.Long có thể đổi sang câu Hà thường hát (nếu memory bible có).
 2. **Cô y tá "đồng phục y tá cũ, ngực trái sẫm hơn một chút"** — round 2 chốt: bỏ "vệt máu khô" (quá horror image), giữ tinh tế. Vẫn ngầm gợi cô từng trực ca tai nạn (gắn lore Hạ Vy mất) qua cử chỉ hai ngón thái dương + lắc đầu chậm.
 3. **Kim nhích "Tách"** — em đặt ngay sau câu "Tôi nhớ ra rồi" thay vì sau dialog "Bảy giờ mười là lúc Hạ Vy mất" — để tiếng "Tách" trở thành CHUÔNG báo memory thật sự về.
-4. **Kính xe phản chiếu Hà** — em đặt SAU dialog reveal, không đặt trước. Vì nếu trước → spoil. Sau → confirm cho người nghe rằng Hà thực sự đến đón Khải Phong.
+4. **Kính xe phản chiếu Hà** — anh đặt SAU dialog reveal, không đặt trước. Vì nếu trước → spoil. Sau → confirm cho người nghe rằng Hà thực sự đến đón Khải Phong.
 5. **Bác tài 2 câu** — giữ y nguyên ("Con đã nhớ ra chưa?" ×2 + "Chưa tới lúc." ×1) như v6.
 6. **bell_count = 1** giữ nguyên (chuông cuối CLIFFHANGER). KHÔNG thêm chuông phụ vì sẽ break ARC plant rule.
 
