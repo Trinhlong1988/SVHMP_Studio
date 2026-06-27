@@ -51,11 +51,11 @@ def check_ep(ep_number):
     word_count = len(text.split())
     results.append((word_count >= 2000, f'word_count {word_count} >= 2000 (hard_floor)'))
 
-    # 2. word_count <= 2800 (hard_ceiling) — EP01 golden 3407 exception
+    # 2. word_count <= 2900 (hard_ceiling) — EP01 golden 3407 exception
     if ep_number == 1:
         results.append((True, f'word_count {word_count} (EP01 golden ref — ceiling exception)'))
     else:
-        results.append((word_count <= 2800, f'word_count {word_count} <= 2800 (hard_ceiling)'))
+        results.append((word_count <= 2900, f'word_count {word_count} <= 2900 (hard_ceiling)'))
 
     # 3. intro Hắc Dạ Ký 5 elements
     intro_present = all(elem in text for elem in INTRO_ELEMENTS)

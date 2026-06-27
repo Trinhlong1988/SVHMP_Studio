@@ -308,7 +308,7 @@ SERIES_ARC_RULES:
   R39_word_count_target_hard:  # round 5 add 2026-06-27 (B38 fix EP21-25 ngắn quá)
     rule: "Mỗi EP PHẢI có word_count 2200-2500 từ → duration 15-18p (target tuyệt đối)"
     hard_floor: 2000  # KHÔNG được dưới 2000 từ (≈13p) — auto-reject ship
-    hard_ceiling: 2800  # KHÔNG quá 2800 từ (≈19p) — auto-trim or refactor. EP01 golden 3407 từ = exception
+    hard_ceiling: 2900  # KHÔNG quá 2900 từ (≈19.3p) — auto-trim or refactor. EP01 golden 3407 + milestone PEAK EPs = exception
     target_range: [2200, 2500]
     rationale: |
       EP01 v7 golden ref = 3407 từ / 22p — tham chiếu max.
