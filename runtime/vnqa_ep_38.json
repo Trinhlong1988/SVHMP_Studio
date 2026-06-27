@@ -2,14 +2,20 @@
   "ep_number": 38,
   "phase_h_version": "H1-H7 v1.0",
   "stats": {
-    "tokens_count": 2563,
-    "sentences_approx": 334,
-    "adverbs_count": 154,
-    "adverbs_ratio": 0.06,
-    "word_count": 2231,
-    "estimated_minutes": 14.4
+    "tokens_count": 2684,
+    "sentences_approx": 332,
+    "adverbs_count": 155,
+    "adverbs_ratio": 0.058,
+    "word_count": 2361,
+    "estimated_minutes": 15.2
   },
   "issues": [
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"mùi\" lặp 32x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
     {
       "check": "H1_token_repeat",
       "severity": "warning",
@@ -19,19 +25,19 @@
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"đêm\" lặp 24x trong ep",
+      "evidence": "\"đêm\" lặp 28x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"trong\" lặp 23x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
       "check": "H1_token_repeat",
       "severity": "warning",
       "evidence": "\"trên\" lặp 23x trong ep",
-      "suggestion": "Đa dạng từ vựng, dùng synonym"
-    },
-    {
-      "check": "H1_token_repeat",
-      "severity": "warning",
-      "evidence": "\"tách\" lặp 18x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
@@ -43,14 +49,8 @@
     {
       "check": "H9_stop_consonant_tail",
       "severity": "minor",
-      "evidence": "Word \"biết\" xuất hiện 4x (BigVGAN tail risk)",
+      "evidence": "Word \"biết\" xuất hiện 2x (BigVGAN tail risk)",
       "suggestion": "chưa biết → vẫn chưa hay / vẫn chưa rõ"
-    },
-    {
-      "check": "H10_duration_too_short",
-      "severity": "warning",
-      "evidence": "14.4 phút (target 15-18p, max 20p)",
-      "suggestion": "Expand thêm 94 từ để đạt 15p"
     }
   ],
   "issues_count_by_severity": {
