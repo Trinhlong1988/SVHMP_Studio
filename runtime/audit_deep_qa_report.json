@@ -1,0 +1,118 @@
+{
+  "summary": {
+    "dialogue_em_overload": 273,
+    "kp_age_inconsistency": false,
+    "format_inconsistent": true,
+    "ghế_7_legacy_only_ep01": 9,
+    "consecutive_short_excess": 1,
+    "invalid_ages": 0,
+    "exclaim_total": 2
+  },
+  "dialogue_em_overload": [
+    [
+      2,
+      5,
+      "Hai chín tối, em gái gọi. Em không nói gì. Em chỉ khóc. Khóc trong điện thoại. Khóc rất khẽ, sợ mẹ n"
+    ],
+    [
+      7,
+      5,
+      "Con kể về em gái — em đã thi đỗ học sinh giỏi tỉnh. Em vẫn vui. Em chưa hiểu chuyện gì sắp xảy ra. C"
+    ],
+    [
+      8,
+      6,
+      "Bà nội nuôi em từ bé. Bố mẹ em đi làm ăn ở Bình Dương, em ở với bà ở quê. Bà thương em nhất nhà. Mỗi"
+    ],
+    [
+      8,
+      5,
+      "Đêm ba mươi Tết năm ngoái, bà gọi cho em lúc tám giờ tối. Em đang đi nhậu với bạn lớp. Em không bắt."
+    ],
+    [
+      8,
+      5,
+      "Em về quê sáng mùng một. Cô em đứng cổng đón. Đám tang bà đông lắm. Em không đứng vững. Cô em phải d"
+    ],
+    [
+      8,
+      5,
+      "Ông nội em mất khi bố em mới năm tuổi. Bà nuôi bố em một mình. Sau đó bố em lớn lên, đi làm ăn xa, g"
+    ],
+    [
+      8,
+      5,
+      "Mỗi mùa hè em về, bà luôn nấu món em thích — bún cá rô đồng. Bà bắt cá ở ruộng sau nhà. Tự kho. Tự n"
+    ],
+    [
+      8,
+      5,
+      "Em biết — khi bà đi, một cái gì đó của em cũng đi theo. Không phải bà thôi. Mà là tuổi thơ em. Là cá"
+    ],
+    [
+      8,
+      5,
+      "Năm nay em về quê đúng đêm ba mươi. Một mình. Em sẽ ngồi cạnh ban thờ bà. Em sẽ gọi điện cho bà — gọ"
+    ],
+    [
+      8,
+      6,
+      "Em không kể chuyện này với bố mẹ em. Bố mẹ em ở Bình Dương — không về kịp đám tang bà năm ngoái. Họ "
+    ],
+    [
+      8,
+      6,
+      "Bạn em ở trường không ai biết chuyện. Em đi học bình thường. Em đi làm thêm. Em ăn cơm sinh viên. Em"
+    ],
+    [
+      9,
+      5,
+      "Em quên rồi. Em chỉ nhớ vài câu chào. Mỗi lần em nghe đoạn đó, em xấu hổ. Vì em đã quên tiếng bà."
+    ],
+    [
+      9,
+      6,
+      "Em đã quên câu đó suốt mười năm. Lúc em sinh con đầu lòng — em đau đẻ — em tự nhiên nhớ câu bà. Em c"
+    ],
+    [
+      9,
+      7,
+      "Chồng em không hiểu vì sao em đi một mình. Em không kể đủ. Em chỉ bảo: 'Em về quê thắp hương bà. Em "
+    ],
+    [
+      9,
+      5,
+      "Con em năm tuổi đã hỏi: 'Mẹ ơi bà cố ở đâu?' Em chỉ vào ngực mình. Con em không hiểu. Em bảo: 'Bà ở "
+    ],
+    [
+      9,
+      5,
+      "Mẹ em — con gái duy nhất của bà — sống ở Bắc Giang. Bà với mẹ em không hợp tính. Mẹ em đi sớm khỏi n"
+    ],
+    [
+      9,
+      7,
+      "Em hiểu — mẹ em có những vết thương với bà. Em không trách mẹ. Mẹ cũng có lý do của mẹ. Nhưng bà — b"
+    ],
+    [
+      9,
+      5,
+      "Bà thường nói tiếng Tày một câu cuối ngày: 'Pò en chi pài.' Em nhớ câu đó. Nhưng em không biết nghĩa"
+    ],
+    [
+      11,
+      7,
+      "Chị hơn em mười tuổi. Em sinh sau chị mười năm — em là con út — lập gia đình muộn của mẹ em. Chị nuô"
+    ],
+    [
+      11,
+      8,
+      "Chị tắm cho em lúc em mới sinh. Chị đút em ăn lúc em hai tuổi. Chị đưa em đi học mẫu giáo. Chị dạy e"
+    ]
+  ],
+  "kp_ages": {},
+  "section_formats": {
+    "old_format_EP01": 1,
+    "new_format": 49
+  }
+}

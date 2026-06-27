@@ -145,47 +145,47 @@ Hải cất lời tiếp — giọng đều — chuẩn bị từ trước.
 
 [pause:800ms]
 
-"Em yêu thầm Hạ Vy ba tháng đầu em vào văn phòng. Em không nói — em biết em có bạn trai — anh — anh Khải Phong — em hay nhắc tên anh trong văn phòng."
+"Em yêu thầm chị Hạ Vy ba tháng đầu em vào văn phòng. Em không nói — em biết chị có bạn trai — anh Khải Phong — chị hay nhắc tên anh trong văn phòng."
 
-"Em quý em — không yêu. Em coi em chị em — không hơn. Em chia sẻ về kỹ thuật — em chỉ em vẽ — em đi ăn trưa cùng cả văn phòng."
+"Em quý chị — không yêu. Em coi chị là chị lớn — không hơn. Chị chia sẻ về kỹ thuật — chị chỉ em vẽ — chị đi ăn trưa cùng cả văn phòng."
 
 [pause:1200ms]
 
-"Đêm tháng tư đó — em ở văn phòng đến muộn — em đang ôn lại đồ án em vừa giao khách hàng. Em cũng ở văn phòng đến muộn — em gặp khách hàng đến trễ — em phải ở lại trình bày bản vẽ."
+"Đêm tháng tư đó — chị ở văn phòng đến muộn — chị đang ôn lại đồ án chị vừa giao khách hàng. Em cũng ở văn phòng đến muộn — em gặp khách hàng đến trễ — em phải ở lại trình bày bản vẽ."
 
-"Tám giờ tối — em ra về trước em — em đi xe máy — phố Hai Bà Trưng về phòng trọ em ở Bạch Mai."
+"Tám giờ tối — chị ra về trước em — chị đi xe máy — phố Hai Bà Trưng về phòng trọ chị ở Khâm Thiên. Em về phòng trọ em ở Bạch Mai cùng hướng."
 
-"Em ra văn phòng sau em mười lăm phút — em đi xe máy cùng đường — em định theo em qua ngã tư Hai Bà Trưng — Trần Hưng Đạo — sau đó tách hướng phòng em."
+"Em ra văn phòng sau chị mười lăm phút — em đi xe máy cùng đường — em định theo chị qua ngã tư Hai Bà Trưng — Trần Hưng Đạo — sau đó tách hướng phòng em."
 
-"Em không có ý theo em đặc biệt — em chỉ về cùng đường — em định nếu em gặp em ở ngã tư — em chào em — đi tiếp."
-
-[pause:1500ms]
-
-"Em đi sau em chừng năm trăm mét. Em không đuổi kịp — em đi chậm vì mưa."
-
-"Đến ngã tư Hai Bà Trưng — Trần Hưng Đạo — em thấy. Xe tải lớn vào ngã tư không đúng đèn. Em thấy em ở phía bên kia ngã tư — em vào ngã tư đúng đèn xanh. Xe tải tông em ngang."
-
-"Em hét — em không kịp can. Em chạy xe máy đến — em là người đầu tiên đến chỗ. Em gọi cấp cứu ngay — em dìu em xuống đường — em đợi xe cứu."
+"Em không có ý theo chị đặc biệt — em chỉ về cùng đường — em định nếu em gặp chị ở ngã tư — em chào chị — đi tiếp."
 
 [pause:1500ms]
 
-"Em đưa em vào bệnh viện Bạch Mai. Em đi cùng xe cấp cứu — em không bỏ em một mình. Em ngồi ngoài phòng cấp cứu cho đến khi anh đến — khoảng một giờ sau."
+"Em đi sau chị chừng năm trăm mét. Em không đuổi kịp — em đi chậm vì mưa."
 
-"Anh đến — em nhìn anh — anh sốc. Em chào anh — em tự giới thiệu — em nói em là người gọi cấp cứu. Anh cảm ơn em. Anh không hỏi tên em. Anh chỉ vào phòng cấp cứu chờ tin em."
+"Đến ngã tư Hai Bà Trưng — Trần Hưng Đạo — em thấy. Xe tải lớn vào ngã tư không đúng đèn. Em thấy chị ở phía bên kia ngã tư — chị vào ngã tư đúng đèn xanh. Xe tải tông chị ngang."
 
-"Em ngồi ngoài cùng anh — em không nói gì. Em không có quyền — em là đồng nghiệp em — không phải người thân. Em đợi đến khi bác sĩ ra báo em đã đi. Em quỳ một lát ngoài phòng. Em đi về."
-
-[pause:1500ms]
-
-"Sau tang em — em không liên lạc anh. Em không có số điện thoại anh — em không tìm anh. Em sợ làm anh khó — em chỉ là đồng nghiệp em."
-
-"Em làm tiếp Mộc Hà sáu năm sau. Em lên kiến trúc sư chính. Em cưới vợ năm vừa rồi — không phải Hạ Vy — em đã yêu một cô khác sau khi em đi — em đã hồi phục."
-
-"Em giữ một cuộn giấy can — chính đồ án cuối em em làm với em — em và em hợp tác đồ án nhà phố hai tầng — em ký tên cùng em ở góc dưới. Em giữ cuộn — bảy năm — không vứt."
+"Em hét — em không kịp can. Em chạy xe máy đến — em là người đầu tiên đến chỗ. Em gọi cấp cứu ngay — em dìu chị xuống đường — em đợi xe cứu."
 
 [pause:1500ms]
 
-"Năm vừa rồi — em ba mươi tuổi — em quyết — em sẽ đi tìm anh. Em biết tên anh — Khải Phong — em nghe em nhắc thường ở văn phòng — em quê Hải Dương — em kiến trúc sư. Em hỏi quanh — em biết anh chuyển sang văn phòng nhỏ phố Khâm Thiên sau Hạ Vy mất."
+"Em đưa chị vào bệnh viện Bạch Mai. Em đi cùng xe cấp cứu — em không bỏ chị một mình. Em ngồi ngoài phòng cấp cứu cho đến khi anh đến — khoảng một giờ sau."
+
+"Anh đến — em nhìn anh — anh sốc. Em chào anh — em tự giới thiệu — em nói em là người gọi cấp cứu. Anh cảm ơn em. Anh không hỏi tên em. Anh chỉ vào phòng cấp cứu chờ tin chị."
+
+"Em ngồi ngoài cùng anh — em không nói gì. Em không có quyền — em là đồng nghiệp chị — không phải người thân. Em đợi đến khi bác sĩ ra báo chị đã đi. Em quỳ một lát ngoài phòng. Em đi về."
+
+[pause:1500ms]
+
+"Sau tang chị — em không liên lạc anh. Em không có số điện thoại anh — em không tìm anh. Em sợ làm anh khó — em chỉ là đồng nghiệp chị."
+
+"Em làm tiếp Mộc Hà sáu năm sau. Em lên kiến trúc sư chính. Em cưới vợ năm vừa rồi — không phải chị Hạ Vy — em đã yêu một cô khác sau khi chị đi — em đã hồi phục."
+
+"Em giữ một cuộn giấy can — chính đồ án cuối em làm với chị — chị và em hợp tác đồ án nhà phố hai tầng — chị ký tên cùng em ở góc dưới. Em giữ cuộn — bảy năm — không vứt."
+
+[pause:1500ms]
+
+"Năm vừa rồi — em ba mươi tuổi — em quyết — em sẽ đi tìm anh. Em biết tên anh — Khải Phong — em nghe chị nhắc thường ở văn phòng — anh quê Hải Dương — anh kiến trúc sư. Em hỏi quanh — em biết anh chuyển sang văn phòng nhỏ phố Khâm Thiên sau chị Hạ Vy mất."
 
 "Em tìm văn phòng anh. Em đến — không gặp anh hôm đầu. Em quay lại lần thứ hai — vẫn không gặp. Lần thứ ba — em nghe bác bảo vệ nói: 'Anh Khải Phong nghỉ việc cách đây vài tháng — anh không đến văn phòng nữa — chúng tôi không biết anh đi đâu.'"
 
@@ -199,7 +199,7 @@ Bác tài cất lời.
 
 Hải gật. Lệ rơi xuống cuộn giấy.
 
-"Em nhớ. Em đã gặp anh đêm Bạch Mai. Em là người gọi cấp cứu cho em. Em đã yêu thầm em ba tháng — nhưng em chỉ coi em chị — không bao giờ nói em. Em không phải lý do em đi — em chỉ là người chứng kiến."
+"Em nhớ. Em đã gặp anh đêm Bạch Mai. Em là người gọi cấp cứu cho chị. Em đã yêu thầm chị ba tháng — nhưng em chỉ coi chị là chị lớn — không bao giờ nói với chị. Em không phải lý do chị đi — em chỉ là người chứng kiến."
 
 [pause:1200ms]
 

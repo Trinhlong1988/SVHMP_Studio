@@ -1,0 +1,77 @@
+{
+  "summary": {
+    "high": 4,
+    "medium": 3
+  },
+  "per_ep_severity": {
+    "40": {
+      "HIGH": 4,
+      "MEDIUM": 3
+    }
+  },
+  "sample_issues": [
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "7 em + named: {'Vy'} — likely ambiguous",
+      "severity": "HIGH",
+      "sample": "Hạ Vy là người dạy em viết bản vẽ kỹ thuật khi em mới vào. Em hai mốt — Hạ Vy hai bảy — em hơn em sáu tuổi — em là chị e",
+      "ep": 40,
+      "passenger": "Trung Hậu Hải",
+      "quote_idx": 7
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "5 em + named: {'Sau'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Sau tang chị — em không liên lạc anh. Em không có số điện thoại anh — em không tìm anh. Em sợ làm anh khó — em chỉ là đồ",
+      "ep": 40,
+      "passenger": "Trung Hậu Hải",
+      "quote_idx": 20
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "5 em + named: {'Hà', 'Vy', 'Mộc'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Em làm tiếp Mộc Hà sáu năm sau. Em lên kiến trúc sư chính. Em cưới vợ năm vừa rồi — không phải chị Hạ Vy — em đã yêu một",
+      "ep": 40,
+      "passenger": "Trung Hậu Hải",
+      "quote_idx": 21
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "7 em + named: {'Dương', 'Khâm', 'Thiên', 'Năm', 'Phong', 'Vy'} — likely ambiguous",
+      "severity": "HIGH",
+      "sample": "Năm vừa rồi — em ba mươi tuổi — em quyết — em sẽ đi tìm anh. Em biết tên anh — Khải Phong — em nghe chị nhắc thường ở vă",
+      "ep": 40,
+      "passenger": "Trung Hậu Hải",
+      "quote_idx": 23
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "5 em + named: {'Hà', 'Mộc'} — likely ambiguous",
+      "severity": "MEDIUM",
+      "sample": "Em không tìm được anh. Em quyết — em sẽ đem cuộn giấy can — đặt trước cửa văn phòng Mộc Hà cũ — chính văn phòng em và em",
+      "ep": 40,
+      "passenger": "Trung Hậu Hải",
+      "quote_idx": 25
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "7 em + named: {'Mai'} — likely ambiguous",
+      "severity": "HIGH",
+      "sample": "Em nhớ. Em đã gặp anh đêm Bạch Mai. Em là người gọi cấp cứu cho chị. Em đã yêu thầm chị ba tháng — nhưng em chỉ coi chị ",
+      "ep": 40,
+      "passenger": "Trung Hậu Hải",
+      "quote_idx": 28
+    },
+    {
+      "type": "em_overload_multiple_referents",
+      "detail": "8 em + named: {'Hà', 'Đêm', 'Mộc'} — likely ambiguous",
+      "severity": "HIGH",
+      "sample": "Đêm nay — em đem cuộn giấy can về Mộc Hà — đặt trước cửa văn phòng — như cách trả cuộn cho nơi sinh ra. Em đã hồi phục —",
+      "ep": 40,
+      "passenger": "Trung Hậu Hải",
+      "quote_idx": 29
+    }
+  ]
+}
