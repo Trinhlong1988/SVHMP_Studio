@@ -64,7 +64,7 @@ Xe chậm lại trước một trường tiểu học cũ — biển "Trường 
 
 Một bà đứng đợi bên cổng. Khoảng sáu mươi tuổi. Áo bà ba nâu — vạt áo dài quá đầu gối. Tóc búi gọn sau ót — tóc bạc nửa. Tay phải ôm cuốn vở học sinh — bìa đã ố vàng — vở mỏng.
 
-Bà bước lên xe. Đi qua hàng ghế đầu — chân chậm — bà già — đi từng bước. Ngồi xuống ghế thứ bảy.
+Bà lên xe. Đi xuống lối giữa — chân chậm — bà già — đi từng bước. Ngồi xuống ghế thứ bảy.
 
 Đặt vở lên đùi. Mở. Trong vở — chữ tay học sinh — nét chữ to vụng — bìa vở có dán nhãn cũ — viết bằng bút bi xanh: "Mai Anh — Lớp 4A — 2010."
 
@@ -202,7 +202,7 @@ Hồng Liên gật. Mắt đỏ — không khóc — đỏ lâu ngày.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Hà Nam — cây gạo già — bến không tên — đèn vàng trên cây gạo. Chuông xe ngân. Một tiếng. Tan.
+Xe chậm lại. Ngã ba Hà Nam — cây gạo già — bến không tên — đèn vàng trên cây gạo. Một tiếng chuông. Ngắn. Tan trong sương.
 
 Hồng Liên ôm vở. Đứng dậy chậm.
 

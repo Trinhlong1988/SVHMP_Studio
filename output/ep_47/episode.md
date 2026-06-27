@@ -172,7 +172,7 @@ Thanh Nga gật. Lệ rơi xuống vé.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba sân bay Nội Bài — cây bàng cổ — bến gần ga T1. Chuông xe ngân. Một tiếng. Tan.
+Xe chậm lại. Ngã ba sân bay Nội Bài — cây bàng cổ — bến gần ga T1. Tiếng chuông ngân nhẹ. Một hồi. Lặng.
 
 Thanh Nga gói vé vào phong bì. Đứng dậy.
 

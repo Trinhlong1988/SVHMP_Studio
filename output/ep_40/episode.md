@@ -77,7 +77,7 @@ Khải Phong nhói. Văn phòng Mộc Hà — chính nơi Hạ Vy làm — chín
 
 Một người đàn ông đứng đợi bên cửa kính. Khoảng hai mươi tám tuổi. Áo sơ mi xanh đậm — cà vạt đen — vest gấp tay. Tay phải cầm cuộn giấy can lớn — giấy thiết kế đồ án.
 
-Anh bước lên xe. Đi qua hàng ghế đầu — chân chậm. Ngồi xuống ghế thứ ba — bên cạnh Khải Phong.
+Anh lên xe. Đi xuống lối giữa — chân chậm. Ngồi xuống ghế thứ ba — bên cạnh Khải Phong.
 
 Lần thứ ba trong bốn mươi đêm — có người ngồi cùng ghế ba với Khải Phong. Lần đầu Nhật Minh EP20 milestone. Lần hai Khải Phong Nguyễn EP30 milestone. Lần ba — đêm milestone EP40.
 

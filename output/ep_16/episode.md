@@ -62,7 +62,7 @@ Xe chậm lại trước một sân chùa nhỏ — cổng tam quan đã đóng 
 
 Một phụ nữ đứng đợi bên cổng. Khoảng ba mươi tám tuổi. Áo dài nâu — vạt áo dài quá đầu gối. Tay phải ôm chậu cúc nhỏ — đường kính bàn tay — chậu sứ trắng — cúc đã ra hoa vàng nhạt.
 
-Cô bước lên xe. Đi qua hàng ghế đầu — ngồi xuống ghế thứ mười. Đặt chậu cúc lên đùi. Hai bàn tay đỡ chậu — không buông.
+Cô lên xe. Đi xuống lối giữa — ngồi xuống ghế thứ mười. Đặt chậu cúc lên đùi. Hai bàn tay đỡ chậu — không buông.
 
 Xe lăn bánh.
 

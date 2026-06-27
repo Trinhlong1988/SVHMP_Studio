@@ -62,7 +62,7 @@ Mưa rải nhẹ. Mặt biển phía bên phải đường tối — gió biển
 
 Xe chậm lại trước một nhà thờ nhỏ ven biển — biển "Nhà thờ Diêm Điền" — cổng đã đóng — đèn vàng treo cột tre. Một bà đứng đợi bên cổng. Khoảng sáu mươi tám tuổi. Áo bà ba xám — vạt áo dài. Tay phải cầm túi vải nâu nhỏ — bên trong vật mềm như cát.
 
-Bà bước lên xe. Đi qua hàng ghế đầu — chân chậm. Ngồi xuống ghế thứ bốn.
+Bà vào xe. Đi qua mấy hàng ghế trước — chân chậm. Ngồi xuống ghế thứ bốn.
 
 Đặt túi vải lên đùi. Mở. Bên trong — cát biển trắng — nắm chừng bàn tay.
 

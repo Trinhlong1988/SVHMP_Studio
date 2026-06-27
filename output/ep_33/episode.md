@@ -64,7 +64,7 @@ Xe chậm lại trước ga tàu điện Cát Linh — cổng ga đã đóng —
 
 Một phụ nữ đứng đợi bên cổng ga. Khoảng ba mươi tám tuổi. Áo dạ xám — quần tây đen. Tay phải cầm phong bì kraft nhỏ — bên trong vật mỏng.
 
-Cô bước lên xe. Đi qua hàng ghế đầu — chân chậm. Ngồi xuống ghế thứ chín.
+Cô lên bậc xe. Đi đến hàng ghế giữa — chân chậm. Ngồi xuống ghế thứ chín.
 
 Mở phong bì. Lấy ra một tấm vé tàu điện — vé giấy in — ghi rõ ngày "11/2021" — tuyến Cát Linh-Hà Đông — vé hai chiều.
 
@@ -196,7 +196,7 @@ Hoài An gật. Lệ rơi xuống vé.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Cát Linh — cây phượng vĩ — bến gần ga. Chuông xe ngân. Một tiếng. Tan.
+Xe chậm lại. Ngã ba Cát Linh — cây phượng vĩ — bến gần ga. Chuông xe rung khẽ. Vang một nhịp. Tan.
 
 Hoài An gói vé vào phong bì. Đứng dậy.
 

@@ -64,7 +64,7 @@ Xe chậm lại trước một bưu điện cũ — biển gỗ "Bưu điện hu
 
 Một người đàn ông đứng đợi bên cổng. Khoảng ba mươi lăm tuổi. Áo sơ mi trắng — quần tây xanh đậm — tay phải cầm hộp quà nhỏ — gói trong giấy quà màu xanh nhạt — buộc nơ đỏ.
 
-Anh bước lên xe. Đi qua hàng ghế đầu — chân chậm. Ngồi xuống ghế thứ chín.
+Anh vào xe. Đi qua mấy hàng ghế trước — chân chậm. Ngồi xuống ghế thứ chín.
 
 Đặt hộp quà lên đùi. Nhìn xuống hộp — không mở.
 

@@ -62,7 +62,7 @@ Mưa rơi nhẹ. Không khí miền Tây ẩm.
 
 Xe chậm lại trước một quán cà phê cũ — biển "Cà phê Sông Hậu" — cửa đã đóng — đèn vàng trong quán còn sáng yếu. Một phụ nữ đứng đợi bên cửa. Khoảng bốn mươi hai tuổi. Áo dạ xám — tay phải cầm khăn tay vải hoa nhỏ — đã ố vàng.
 
-Cô bước lên xe. Đi qua hàng ghế đầu — chân chậm. Ngồi xuống ghế thứ bảy.
+Cô lên bậc xe. Đi đến hàng ghế giữa — chân chậm. Ngồi xuống ghế thứ bảy.
 
 Mở khăn tay — gấp tư — bên trong còn vết son lipstick mờ.
 
@@ -180,7 +180,7 @@ Phương Linh gật.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Sóc Trăng — cây dừa cổ — bến không tên. Chuông xe ngân. Một tiếng. Tan.
+Xe chậm lại. Ngã ba Sóc Trăng — cây dừa cổ — bến không tên. Một tiếng chuông. Ngắn. Tan trong sương.
 
 Phương Linh gấp khăn. Đứng dậy.
 

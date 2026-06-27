@@ -71,7 +71,7 @@ Khải Phong gật. Không hỏi.
 
 Xe chậm lại trước một quán trà chanh ven hồ — đèn vàng còn sáng — biển "Trà chanh Hồ Tây" gỗ cũ. Một thanh niên đứng đợi. Khoảng hai mươi bảy tuổi. Áo sơ mi xanh — cà vạt đã nới. Tay phải cầm sổ tay nhỏ — bìa cứng xanh đậm.
 
-Anh bước lên xe. Đi qua hàng ghế đầu — ngồi xuống ghế thứ ba — bên cạnh Khải Phong.
+Anh lên xe. Đi xuống lối giữa — ngồi xuống ghế thứ ba — bên cạnh Khải Phong.
 
 Lần đầu trong hai mươi đêm — có người ngồi cùng ghế ba với Khải Phong.
 
@@ -203,7 +203,7 @@ Nhật Minh gật.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Cầu Giấy — cây phượng già — bến không tên. Chuông xe ngân. Một tiếng. Tan.
+Xe chậm lại. Ngã ba Cầu Giấy — cây phượng già — bến không tên. Chuông xe vọng. Nhịp đơn. Im.
 
 Nhật Minh đứng dậy.
 

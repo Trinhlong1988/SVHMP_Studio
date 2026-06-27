@@ -64,7 +64,7 @@ Xe chậm lại trước một tiệm sửa xe máy cũ — biển gỗ "Sửa x
 
 Một phụ nữ trẻ đứng đợi bên cửa tiệm. Khoảng ba mươi hai tuổi. Áo dạ đen — quần tây đen — phong cách đi tang. Tay phải cầm gói vải đen nhỏ — bên trong vật cứng kim loại.
 
-Cô bước lên xe. Đi qua hàng ghế đầu — chân chậm. Ngồi xuống ghế thứ bảy.
+Cô lên bậc xe. Đi đến hàng ghế giữa — chân chậm. Ngồi xuống ghế thứ bảy.
 
 Mở gói vải. Lấy ra một mảnh biển số xe máy — biển nhôm — số "29-B1 12345" — vỡ một góc.
 

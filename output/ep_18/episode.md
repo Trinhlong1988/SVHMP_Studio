@@ -60,7 +60,7 @@ Bác tài lái.
 
 Xe chậm lại trước một quán cà phê cũ phố Hàng Bài — đèn vàng còn sáng — biển "Cà phê Lâm" đã mòn chữ. Một phụ nữ trẻ đứng đợi. Khoảng hai mươi tám tuổi. Áo dạ xám — váy đen ngắn. Tay phải cầm phong bì kraft cũ.
 
-Cô bước lên xe. Đi qua hàng ghế đầu — ngồi xuống ghế thứ mười một. Đặt phong bì lên đùi. Mở. Lấy ra một bức thư tay — giấy đã ố vàng — gấp tư.
+Cô vào xe. Đi qua mấy hàng ghế trước — ngồi xuống ghế thứ mười một. Đặt phong bì lên đùi. Mở. Lấy ra một bức thư tay — giấy đã ố vàng — gấp tư.
 
 Xe lăn bánh.
 
@@ -192,7 +192,7 @@ Linh Trang gật. Lệ rơi xuống thư lần nữa.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Hoàn Kiếm — cây phượng già — bến không tên. Chuông xe ngân. Một tiếng. Tan.
+Xe chậm lại. Ngã ba Hoàn Kiếm — cây phượng già — bến không tên. Chuông xe rung khẽ. Vang một nhịp. Tan.
 
 Cô gấp thư. Đặt vào phong bì. Đứng dậy.
 

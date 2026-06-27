@@ -64,7 +64,7 @@ Xe chậm lại trước một khu chung cư cũ — ba tầng — biển "Khu t
 
 Một người đàn ông đứng đợi bên chân cầu thang. Khoảng bốn mươi tuổi. Áo gió xanh đậm — quần kaki nâu — tay phải cầm túi vải lớn — bên trong vật mềm.
 
-Anh bước lên xe. Đi qua hàng ghế đầu — chân chậm. Ngồi xuống ghế thứ sáu.
+Anh lên xe. Đi xuống lối giữa — chân chậm. Ngồi xuống ghế thứ sáu.
 
 Mở túi vải. Lấy ra một chiếc chăn đan tay — chăn len màu xanh nhạt — đan dở — còn kim đan cắm ở mép.
 
@@ -192,7 +192,7 @@ Phan Tâm gật.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Bắc Giang — cây vải cổ — bến không tên. Chuông xe ngân. Một tiếng. Tan.
+Xe chậm lại. Ngã ba Bắc Giang — cây vải cổ — bến không tên. Tiếng chuông ngân nhẹ. Một hồi. Lặng.
 
 Phan Tâm gấp chăn vào túi vải. Đứng dậy.
 

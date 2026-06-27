@@ -182,7 +182,7 @@ Văn Trường gật.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Bình Phước — cây cao su lớn — bến gần đài. Chuông xe ngân. Một tiếng. Tan.
+Xe chậm lại. Ngã ba Bình Phước — cây cao su lớn — bến gần đài. Chuông xe rung khẽ. Vang một nhịp. Tan.
 
 Văn Trường gấp giấy. Đứng dậy.
 

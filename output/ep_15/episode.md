@@ -196,7 +196,7 @@ Phong gật.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Hoài Đức — cây nhãn cổ — bến không tên. Chuông xe ngân. Một tiếng. Tan.
+Xe chậm lại. Ngã ba Hoài Đức — cây nhãn cổ — bến không tên. Chuông xe vọng. Nhịp đơn. Im.
 
 Anh cất mảnh gương vào túi vải. Đứng dậy.
 

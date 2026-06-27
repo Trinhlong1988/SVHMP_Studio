@@ -64,7 +64,7 @@ Xe chậm lại trước một nghĩa trang xã nhỏ — cổng gỗ đã đón
 
 Một người đàn ông đứng đợi bên cổng. Khoảng năm mươi tuổi. Áo sơ mi trắng cũ — vạt áo có vết ố vàng nhẹ. Quần kaki nâu — đi giày sandal đã mòn đế. Tay phải cầm khung ảnh nhỏ — gói trong vải vàng nâu đậm — vải có vẻ là vải nhà tự may.
 
-Anh bước lên xe. Đi qua hàng ghế đầu — chân bước chậm — không vội — như đã quen đi đêm. Ngồi xuống ghế thứ năm.
+Anh lên bậc xe. Đi đến hàng ghế giữa — chân bước chậm — không vội — như đã quen đi đêm. Ngồi xuống ghế thứ năm.
 
 Đặt khung ảnh lên đùi. Mở vải vàng nhẹ. Lấy khung ảnh ra. Bên trong khung — tấm ảnh đen trắng — chụp một mộ đá xám — không có ảnh người trên bia.
 

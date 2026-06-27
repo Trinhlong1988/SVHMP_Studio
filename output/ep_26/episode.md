@@ -64,7 +64,7 @@ Xe chậm lại trước một tòa văn phòng cũ hai tầng — biển gỗ "
 
 Một người đàn ông đứng đợi bên cửa. Khoảng ba mươi tám tuổi. Áo sơ mi trắng — quần tây xám — đeo kính cận vành đen. Tay phải cầm hộp gỗ dài — hộp dài chừng nửa mét — hộp đựng dụng cụ kiến trúc.
 
-Anh bước lên xe. Đi qua hàng ghế đầu — chân chậm. Ngồi xuống ghế thứ năm.
+Anh vào xe. Đi qua mấy hàng ghế trước — chân chậm. Ngồi xuống ghế thứ năm.
 
 Đặt hộp gỗ lên đùi — hộp dài — phải đặt nghiêng. Mở. Bên trong — bộ thước T kiến trúc — thước T inox bóng — cán gỗ — đã hơi mòn — chứng tỏ đã dùng nhiều.
 

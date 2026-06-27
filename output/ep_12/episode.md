@@ -60,7 +60,7 @@ Bác tài lái. Hôm nay xe đi gần cầu Long Biên — Khải Phong nhận r
 
 Xe chậm lại trước một quán cà phê cũ ven đê — đèn vàng còn sáng. Một phụ nữ đứng đợi. Khoảng ba mươi sáu tuổi. Áo dài xanh — vạt áo dài hơi ướt nước mưa. Tay phải cầm hộp nhỏ — hộp giấy bọc gấm đỏ.
 
-Cô bước lên xe. Đi qua hàng ghế đầu — ngồi xuống ghế thứ chín. Đặt hộp lên đùi. Mở. Lấy đồng hồ ra — mặt xà cừ trắng — viền bạc — kim đã dừng ở bảy giờ mười phút.
+Cô lên xe. Đi xuống lối giữa — ngồi xuống ghế thứ chín. Đặt hộp lên đùi. Mở. Lấy đồng hồ ra — mặt xà cừ trắng — viền bạc — kim đã dừng ở bảy giờ mười phút.
 
 Khải Phong ghế ba — nhìn đồng hồ — giật mình. Đồng hồ này — giống y hệt đồng hồ đêm số một.
 
@@ -192,7 +192,7 @@ Cô gật.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba dốc cầu Long Biên — bến không tên. Chuông xe ngân. Một tiếng. Tan.
+Xe chậm lại. Ngã ba dốc cầu Long Biên — bến không tên. Tiếng chuông ngân nhẹ. Một hồi. Lặng.
 
 Cô cất đồng hồ vào hộp gấm đỏ. Đóng nắp. Đứng dậy.
 

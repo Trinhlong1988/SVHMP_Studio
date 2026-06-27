@@ -60,7 +60,7 @@ Bác tài lái.
 
 Xe chậm lại trước một bệnh viện huyện cũ — biển "Bệnh viện đa khoa Sóc Sơn" — cổng vẫn mở — đèn vàng hắt ra. Một người đàn ông đứng đợi. Khoảng bốn mươi hai tuổi. Áo gió xám — quần tây đen. Tay phải cầm hộp giấy nhỏ — bên trong có gì cứng.
 
-Anh bước lên xe. Đi qua hàng ghế đầu — ngồi xuống ghế thứ tư. Mở hộp. Lấy ra một chiếc USB — vỏ kim loại đen — cũ — đã trầy.
+Anh lên bậc xe. Đi đến hàng ghế giữa — ngồi xuống ghế thứ tư. Mở hộp. Lấy ra một chiếc USB — vỏ kim loại đen — cũ — đã trầy.
 
 Xe lăn bánh.
 
@@ -190,7 +190,7 @@ Tài gật. Mắt đỏ.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Sóc Sơn — cây thông lớn — bến không tên. Chuông xe ngân. Một tiếng. Tan.
+Xe chậm lại. Ngã ba Sóc Sơn — cây thông lớn — bến không tên. Tiếng chuông ngân nhẹ. Một hồi. Lặng.
 
 Tài cất USB vào hộp giấy. Đứng dậy.
 

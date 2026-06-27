@@ -62,7 +62,7 @@ Mặt sông Côn phía bên phải — phẳng — đèn xa thưa.
 
 Xe chậm lại trước một bệnh viện huyện cũ — biển "Bệnh viện đa khoa An Nhơn" — cổng đã đóng — đèn vàng treo cột tre. Một phụ nữ đứng đợi bên cổng. Khoảng ba mươi hai tuổi. Áo dạ xám — quần tây đen. Tay phải cầm điện thoại Iphone cũ — màn hình tối.
 
-Cô bước lên xe. Đi qua hàng ghế đầu — chân chậm. Ngồi xuống ghế thứ sáu.
+Cô lên bậc xe. Đi đến hàng ghế giữa — chân chậm. Ngồi xuống ghế thứ sáu.
 
 Mở điện thoại. Bật nguồn. Màn hình sáng — hiển thị app tin nhắn — một tin nhắn dở chưa gửi.
 

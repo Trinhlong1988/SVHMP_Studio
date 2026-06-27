@@ -62,7 +62,7 @@ Sông Hậu phía bên phải — mặt nước rộng — đèn xa từ chợ n
 
 Xe chậm lại trước một tiệm âm nhạc cũ — biển "Tiệm đàn Sông Hậu" — cửa đã đóng — đèn vàng treo cột còn sáng yếu. Một người đàn ông đứng đợi bên cửa. Khoảng ba mươi tám tuổi. Áo sơ mi xanh — quần tây đen. Tay phải đeo dây vai cây đàn guitar gỗ — đàn nhỏ — đã có vết mòn.
 
-Anh bước lên xe. Đi qua hàng ghế đầu — chân chậm — vai đeo đàn. Ngồi xuống ghế thứ chín.
+Anh lên xe. Đi xuống lối giữa — chân chậm — vai đeo đàn. Ngồi xuống ghế thứ chín.
 
 Đặt đàn lên đùi. Vuốt thân đàn.
 
@@ -182,7 +182,7 @@ Hữu Duy gật.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Cần Thơ — cây dừa nước — bến không tên. Chuông xe ngân. Một tiếng. Tan.
+Xe chậm lại. Ngã ba Cần Thơ — cây dừa nước — bến không tên. Chuông xe rung khẽ. Vang một nhịp. Tan.
 
 Hữu Duy đeo đàn lên vai. Đứng dậy.
 

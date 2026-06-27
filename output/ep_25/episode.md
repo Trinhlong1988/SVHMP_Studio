@@ -72,7 +72,7 @@ Xe chậm lại trước một bệnh viện chuyên khoa lao — biển "Bệnh
 
 Một người đàn ông đứng đợi bên cổng. Khoảng ba mươi tám tuổi. Áo gió đen — quần kaki nâu. Mặt gầy — quá gầy cho ba lăm tuổi — môi tím nhạt. Tay phải cầm hộp giấy nhỏ.
 
-Anh bước lên xe. Đi qua hàng ghế đầu — chân chậm — thi thoảng đứng lại để thở. Ngồi xuống ghế thứ chín.
+Anh lên bậc xe. Đi đến hàng ghế giữa — chân chậm — thi thoảng đứng lại để thở. Ngồi xuống ghế thứ chín.
 
 Mở hộp giấy. Lấy ra một mảnh kính nhỏ — cỡ bằng hai ngón tay — đã cuốn vải bông quanh mép — vải trắng đã ngả vàng.
 
@@ -210,7 +210,7 @@ Văn Quân gật. Mắt đỏ — không khóc — đỏ vì đã giữ lâu.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Thái Nguyên — cây trẩu cổ — bến không tên — đèn vàng trên cây trẩu. Chuông xe ngân. Một tiếng. Tan.
+Xe chậm lại. Ngã ba Thái Nguyên — cây trẩu cổ — bến không tên — đèn vàng trên cây trẩu. Chuông xe vọng. Nhịp đơn. Im.
 
 Văn Quân cất mảnh kính vào hộp giấy. Đứng dậy chậm — thở hai lần.
 

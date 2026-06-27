@@ -62,7 +62,7 @@ Xe chậm lại trước một vườn cúc nhỏ ven đường — chủ vườ
 
 Một người đàn ông trung niên đứng đợi bên cổng. Khoảng bốn mươi sáu tuổi. Áo sơ mi xám — tay áo cuộn — quần kaki nâu. Tay phải cầm bó hoa cúc khô — gói trong giấy bản.
 
-Anh bước lên xe. Đi qua hàng ghế đầu — ngồi xuống ghế thứ năm. Đặt bó cúc khô lên đùi. Mở giấy. Cánh cúc đã giòn — màu vàng nhạt như nắng cuối thu — một số cánh đã rụng vào giấy.
+Anh lên bậc xe. Đi đến hàng ghế giữa — ngồi xuống ghế thứ năm. Đặt bó cúc khô lên đùi. Mở giấy. Cánh cúc đã giòn — màu vàng nhạt như nắng cuối thu — một số cánh đã rụng vào giấy.
 
 Xe lăn bánh.
 
@@ -184,7 +184,7 @@ Anh gật. Mắt đỏ — không khóc.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Mỹ Đức — cây đa cổ — bến không tên. Chuông xe ngân. Một tiếng. Tan.
+Xe chậm lại. Ngã ba Mỹ Đức — cây đa cổ — bến không tên. Chuông xe rung khẽ. Vang một nhịp. Tan.
 
 Anh ôm bó cúc khô. Đứng dậy.
 

@@ -73,7 +73,7 @@ Bên cổng nhà — một phụ nữ trẻ đứng đợi. Khoảng hai mươi 
 
 Khải Phong nhìn — cô gái này — Khải Phong biết — Hạ Nhi. Anh gái Hạ Vy.
 
-Hạ Nhi bước lên xe. Đi qua hàng ghế đầu — không nhìn ai — như quen đường. Ngồi xuống ghế thứ ba — bên cạnh Khải Phong.
+Hạ Nhi vào xe. Đi qua mấy hàng ghế trước — không nhìn ai — như quen đường. Ngồi xuống ghế thứ ba — bên cạnh Khải Phong.
 
 Lần thứ tư trong năm mươi đêm có người ngồi cùng ghế ba với Khải Phong. Sau Nhật Minh EP20, Khải Phong Nguyễn EP30, Hải EP40 — đêm này — Hạ Nhi.
 

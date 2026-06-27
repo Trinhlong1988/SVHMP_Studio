@@ -194,7 +194,7 @@ Trí Hưng gật.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Nghệ An — cây sến cổ — bến không tên. Chuông xe ngân. Một tiếng. Tan.
+Xe chậm lại. Ngã ba Nghệ An — cây sến cổ — bến không tên. Chuông xe vọng. Nhịp đơn. Im.
 
 Trí Hưng cất mảnh gương vào hộp. Đứng dậy.
 

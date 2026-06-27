@@ -64,7 +64,7 @@ Bác tài lái.
 
 Xe chậm lại trước một xóm cũ — bảng "Xóm Đại Phú — xã Ea Hu" — đường đất đỏ vào xóm. Một bà đứng đợi bên cột điện. Khoảng năm mươi hai tuổi. Áo bà ba xám — tay phải bê khúc chè nhỏ — gói trong giấy bản nâu.
 
-Bà bước lên xe. Đi qua hàng ghế đầu — chân chậm. Ngồi xuống ghế thứ bảy.
+Bà lên xe. Đi xuống lối giữa — chân chậm. Ngồi xuống ghế thứ bảy.
 
 Đặt khúc chè lên đùi. Khúc chè đã khô — gói giấy đã ố.
 
@@ -178,7 +178,7 @@ Phượng Liên gật.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Đắk Lắk — cây cà phê cổ — bến không tên. Chuông xe ngân. Một tiếng. Tan.
+Xe chậm lại. Ngã ba Đắk Lắk — cây cà phê cổ — bến không tên. Một tiếng chuông. Ngắn. Tan trong sương.
 
 Phượng Liên ôm khúc chè. Đứng dậy.
 

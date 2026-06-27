@@ -184,7 +184,7 @@ Cô gật. Mắt đỏ.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Đông Anh — cây nhãn lớn — bến không tên. Chuông xe ngân. Một tiếng. Tan.
+Xe chậm lại. Ngã ba Đông Anh — cây nhãn lớn — bến không tên. Một tiếng chuông. Ngắn. Tan trong sương.
 
 Cô đỡ vòng cúc. Đứng dậy.
 

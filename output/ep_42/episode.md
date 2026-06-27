@@ -62,7 +62,7 @@ Mưa rải nhẹ — không khí ẩm nóng miền Tây. Mặt sông Tiền tĩn
 
 Xe chậm lại trước một quán cà phê ven sông — biển "Cà phê Bến Tre" — cửa kính đã đóng — đèn vàng trong quán còn sáng yếu. Một người đàn ông đứng đợi bên cửa. Khoảng bốn mươi hai tuổi. Áo sơ mi trắng — quần tây đen. Tay phải cầm hộp nhung đỏ nhỏ.
 
-Anh bước lên xe. Đi qua hàng ghế đầu — chân chậm. Ngồi xuống ghế thứ tám.
+Anh vào xe. Đi qua mấy hàng ghế trước — chân chậm. Ngồi xuống ghế thứ tám.
 
 Mở hộp nhung. Lấy ra một chiếc nhẫn vàng nhỏ — nhẫn cưới phụ nữ — có khắc tên "H" bên trong.
 
@@ -172,7 +172,7 @@ Hoàng Nam gật. Mắt đỏ.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Bến Tre — cây dừa nước — bến không tên. Chuông xe ngân. Một tiếng. Tan.
+Xe chậm lại. Ngã ba Bến Tre — cây dừa nước — bến không tên. Tiếng chuông ngân nhẹ. Một hồi. Lặng.
 
 Hoàng Nam đóng hộp nhung. Đứng dậy.
 

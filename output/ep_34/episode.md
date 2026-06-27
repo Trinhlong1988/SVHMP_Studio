@@ -62,7 +62,7 @@ Xe chậm lại trước một xóm cũ — bảng "Xóm Đông Văn — xã Tam
 
 Một người đàn ông đứng đợi bên cột điện. Khoảng năm mươi tuổi. Áo sơ mi đen — quần tây xám. Tay phải cầm bó hương trầm — bó dài chừng nửa mét — gói trong giấy bản nâu.
 
-Anh bước lên xe. Đi qua hàng ghế đầu — chân chậm. Ngồi xuống ghế thứ bảy.
+Anh vào xe. Đi qua mấy hàng ghế trước — chân chậm. Ngồi xuống ghế thứ bảy.
 
 Đặt bó hương lên đùi. Mở giấy bản. Hương trầm — sắc đỏ đậm — mùi gỗ trầm thơm nhẹ — đã tỏa ngay trong xe.
 
@@ -188,7 +188,7 @@ Văn Tuấn gật.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Vĩnh Phúc — cây gạo cổ — bến không tên. Chuông xe ngân. Một tiếng. Tan.
+Xe chậm lại. Ngã ba Vĩnh Phúc — cây gạo cổ — bến không tên. Một tiếng chuông. Ngắn. Tan trong sương.
 
 Văn Tuấn gói bó hương vào giấy bản. Đứng dậy.
 

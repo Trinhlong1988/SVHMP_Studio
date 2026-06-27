@@ -210,7 +210,7 @@ Mỹ Linh gật. Lệ rơi xuống khung.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Phú Thọ — cây gạo cổ — bến không tên. Chuông xe ngân. Một tiếng. Tan.
+Xe chậm lại. Ngã ba Phú Thọ — cây gạo cổ — bến không tên. Tiếng chuông ngân nhẹ. Một hồi. Lặng.
 
 Mỹ Linh gói khung vào vải lụa. Đứng dậy.
 
