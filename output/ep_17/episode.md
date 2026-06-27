@@ -1,12 +1,38 @@
 # TẬP 17 — LỜI HỨA VỚI BẠN THÂN GIÚP KHI CẦN — TÔI ĐÃ BẬN
 
+[INTRO 4.5s — HẮC DẠ KÝ master]
+
+[pause:800ms]
+
+Hắc Dạ Ký — chuyện kể từ cõi vô hình.
+
+[pause:600ms]
+
+Tác giả: Hắc Dạ Ký.
+
+[pause:600ms]
+
+Series: Chuyến xe cuối cùng về đâu.
+
+[pause:600ms]
+
+Ai cũng có một chuyến xe chưa nói lời tạm biệt.
+
+[pause:1000ms]
+
+Tập 17 — câu chuyện đêm nay.
+
+[pause:1500ms]
+
+---
+
 ```
 prompt_version: SVHMP-10.0-RC3.5
 ep_number: 17
 phase: warming (S1)
 pillar: promise
 intensity_level: 0.55
-quang_memory_fragment: M4 (Quang ngẫm Hà tai nạn — đêm mưa — con đường)
+quang_memory_fragment: M4 (Khải Phong ngẫm Hạ Vy tai nạn — đêm mưa — con đường)
 object_sub_arc: USB (ngoài cluster cúc — diversify)
 callback_target: none
 passenger_main: nam 42 Hữu Tài Sóc Sơn (bạn thân nhờ vay tiền chữa ung thư — không kịp về)
@@ -28,7 +54,7 @@ arc_design_compliant: bible/21 R33-R38
 
 Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven đồi Sóc Sơn. Đèn pha quét lên rừng thông non — cành thông đẫm sương đêm.
 
-Quang ngồi ghế thứ ba. Đêm thứ mười bảy. Trong túi áo gió Quang — mười sáu vật. Đêm qua thêm cánh cúc tươi vàng nhạt.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười bảy. Trong túi áo gió Khải Phong — mười sáu vật. Đêm qua thêm cánh cúc tươi vàng nhạt.
 
 Bác tài lái.
 
@@ -46,7 +72,7 @@ Xe lăn bánh.
 
 Anh ngồi yên. Vuốt USB. Đầu ngón tay anh cử động chậm — như đang cảm USB lần đầu.
 
-Quang quan sát. Anh trạc tuổi bốn hai — tóc đã có sợi bạc — mắt sâu — vẻ người bận rộn.
+Khải Phong quan sát. Anh trạc tuổi bốn hai — tóc đã có sợi bạc — mắt sâu — vẻ người bận rộn.
 
 Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng. Tắt.
 
@@ -184,9 +210,9 @@ Anh quỳ. Đào hố nhỏ bằng tay. Đặt USB vào. Lấp đất lên.
 
 Cúi đầu.
 
-Quang chớp mắt — nhìn qua cửa sổ. Bên hố — Toàn xuất hiện — mặc áo sơ mi xanh — vuốt vai Tài một lần. Cười nhẹ.
+Khải Phong chớp mắt — nhìn qua cửa sổ. Bên hố — Toàn xuất hiện — mặc áo sơ mi xanh — vuốt vai Tài một lần. Cười nhẹ.
 
-Quang chớp lần nữa. Toàn tan.
+Khải Phong chớp lần nữa. Toàn tan.
 
 Tài ngẩng đầu. Lau khóe mắt. Đứng dậy. Vỗ tay phủi đất.
 
@@ -198,7 +224,7 @@ Tài ngẩng đầu. Lau khóe mắt. Đứng dậy. Vỗ tay phủi đất.
 
 Xe lăn bánh — rời ngã ba Sóc Sơn.
 
-Ghế tư trống. Trên sàn — một mẩu nhãn nhỏ rơi (nhãn dán trên USB bong khi anh cầm). Quang nhặt. Nhãn — màu trắng — có chữ mờ.
+Ghế tư trống. Trên sàn — một mẩu nhãn nhỏ rơi (nhãn dán trên USB bong khi anh cầm). Khải Phong nhặt. Nhãn — màu trắng — có chữ mờ.
 
 Bỏ vào túi. Vật thứ mười bảy.
 
@@ -206,20 +232,20 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Quang ngồi. USB không cùng cụm cúc. Diversify cụm tiếp.
+Khải Phong ngồi. USB không cùng cụm cúc. Diversify cụm tiếp.
 
-Quang ngẫm — Hà có ai từng nhờ Quang giúp không? Quang có lỡ không giúp ai như Tài lỡ không cứu Toàn không?
+Khải Phong ngẫm — Hạ Vy có ai từng nhờ Khải Phong giúp không? Khải Phong có lỡ không giúp ai như Tài lỡ không cứu Toàn không?
 
-Hình ảnh mờ — một tin nhắn — một cuộc gọi nhỡ — một tiếng chuông điện thoại Quang không bắt.
+Hình ảnh mờ — một tin nhắn — một cuộc gọi nhỡ — một tiếng chuông điện thoại Khải Phong không bắt.
 
-Quang nhói. Có. Quang đã nhỡ một cuộc gọi nào đó — Quang cảm thấy.
+Khải Phong nhói. Có. Khải Phong đã nhỡ một cuộc gọi nào đó — Khải Phong cảm thấy.
 
-Cuộc gọi của Hà?
+Cuộc gọi của Hạ Vy?
 
-Quang không nhớ rõ. Cảm giác — không phải đêm Hà tai nạn — cuộc gọi khác — trước đêm tai nạn.
+Khải Phong không nhớ rõ. Cảm giác — không phải đêm Hạ Vy tai nạn — cuộc gọi khác — trước đêm tai nạn.
 
 Bác tài liếc gương. "Đêm mười bảy. Con bắt đầu cảm thấy lỡ một cuộc gọi. Đêm sau sẽ rõ hơn về cuộc gọi đó. Đừng vội."
 
-Quang gật. Không hỏi.
+Khải Phong gật. Không hỏi.
 
 Đêm thứ mười bảy. Xe đi tiếp. Phía sau — Sóc Sơn khuất. Tài ở lại đứng — nhìn hố đất đã lấp — USB Toàn đã chôn.

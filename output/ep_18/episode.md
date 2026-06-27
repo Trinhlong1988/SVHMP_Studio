@@ -1,12 +1,38 @@
 # TẬP 18 — THƯ TAY ANH GỬI TÔI ĐÊM CHÚNG TÔI CHIA TAY
 
+[INTRO 4.5s — HẮC DẠ KÝ master]
+
+[pause:800ms]
+
+Hắc Dạ Ký — chuyện kể từ cõi vô hình.
+
+[pause:600ms]
+
+Tác giả: Hắc Dạ Ký.
+
+[pause:600ms]
+
+Series: Chuyến xe cuối cùng về đâu.
+
+[pause:600ms]
+
+Ai cũng có một chuyến xe chưa nói lời tạm biệt.
+
+[pause:1000ms]
+
+Tập 18 — câu chuyện đêm nay.
+
+[pause:1500ms]
+
+---
+
 ```
 prompt_version: SVHMP-10.0-RC3.5
 ep_number: 18
 phase: warming (S1)
 pillar: love
 intensity_level: 0.55
-quang_memory_fragment: M4 (Quang ngẫm cuộc gọi Hà — trước đêm tai nạn)
+quang_memory_fragment: M4 (Khải Phong ngẫm cuộc gọi Hạ Vy — trước đêm tai nạn)
 object_sub_arc: thư tay (ngoài cluster cúc)
 callback_target: none
 passenger_main: nu 28 Linh Trang Hà Nội (chia tay anh Khang vì mẹ ép — anh tự tử sau)
@@ -28,7 +54,7 @@ arc_design_compliant: bible/21 R33-R38
 
 Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven hồ Gươm. Đèn pha quét lên mặt hồ — đèn vàng từ Tháp Rùa hắt xuống.
 
-Quang ngồi ghế thứ ba. Đêm thứ mười tám. Trong túi áo gió Quang — mười bảy vật. Đêm qua thêm mẩu nhãn USB.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười tám. Trong túi áo gió Khải Phong — mười bảy vật. Đêm qua thêm mẩu nhãn USB.
 
 Bác tài lái.
 
@@ -46,7 +72,7 @@ Xe lăn bánh.
 
 Cô ngồi yên. Mở thư — không đọc — chỉ nhìn nét chữ. Nét bút bi xanh — đậm — chữ nghiêng.
 
-Quang quan sát. Cô trẻ — chừng hai mươi tám — mặt mộc — đôi mắt sưng nhẹ — đã khóc trước khi lên xe.
+Khải Phong quan sát. Cô trẻ — chừng hai mươi tám — mặt mộc — đôi mắt sưng nhẹ — đã khóc trước khi lên xe.
 
 Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng. Tắt.
 
@@ -188,9 +214,9 @@ Thư cháy hết. Tro rơi xuống bàn.
 
 Cô đứng dậy.
 
-Quang chớp mắt — nhìn qua cửa sổ. Bên bàn cà phê — anh Khang xuất hiện — ngồi đối diện ghế cô vừa đứng dậy — vuốt tro thư. Mỉm cười.
+Khải Phong chớp mắt — nhìn qua cửa sổ. Bên bàn cà phê — anh Khang xuất hiện — ngồi đối diện ghế cô vừa đứng dậy — vuốt tro thư. Mỉm cười.
 
-Quang chớp lần nữa. Khang tan.
+Khải Phong chớp lần nữa. Khang tan.
 
 Linh Trang ra cửa quán. Không khóc.
 
@@ -202,7 +228,7 @@ Linh Trang ra cửa quán. Không khóc.
 
 Xe lăn bánh — rời ngã ba Hoàn Kiếm.
 
-Ghế mười một trống. Trên sàn — một mảnh tro nhỏ rơi (mảnh thư cháy còn dính phong bì khi cô đứng dậy). Quang nhặt. Tro — đã nguội — mỏng.
+Ghế mười một trống. Trên sàn — một mảnh tro nhỏ rơi (mảnh thư cháy còn dính phong bì khi cô đứng dậy). Khải Phong nhặt. Tro — đã nguội — mỏng.
 
 Bỏ vào túi. Vật thứ mười tám.
 
@@ -210,18 +236,18 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Quang ngồi. Tro thư trong túi — bên cạnh mười bảy vật.
+Khải Phong ngồi. Tro thư trong túi — bên cạnh mười bảy vật.
 
-Quang ngẫm — Hà có viết thư cho Quang không?
+Khải Phong ngẫm — Hạ Vy có viết thư cho Khải Phong không?
 
 Hình ảnh mờ — một quyển sổ tay nhỏ — màu xanh — chữ tay phụ nữ — nét chữ nhỏ tròn.
 
-Quang cảm thấy — có. Có một quyển sổ tay — chữ Hà — Quang đã đọc — Quang không nhớ Hà viết gì.
+Khải Phong cảm thấy — có. Có một quyển sổ tay — chữ Hạ Vy — Khải Phong đã đọc — Khải Phong không nhớ Hà viết gì.
 
 [pause:1500ms]
 
 Bác tài liếc gương. "Đêm mười tám. Con bắt đầu cảm thấy có một quyển sổ tay. Đêm sau con sẽ nhớ chữ trong sổ. Đừng vội."
 
-Quang gật. Không hỏi.
+Khải Phong gật. Không hỏi.
 
 Đêm thứ mười tám. Xe đi tiếp. Phía sau — Hoàn Kiếm khuất. Linh Trang ở lại quán — đứng ngoài cửa — nhìn vào bàn còn tro.

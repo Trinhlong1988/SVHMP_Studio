@@ -1,12 +1,38 @@
 # TẬP 15 — GƯƠNG VỠ ĐÊM TÔI ĐỊNH KHÔNG SỐNG MƯỜI NĂM TRƯỚC
 
+[INTRO 4.5s — HẮC DẠ KÝ master]
+
+[pause:800ms]
+
+Hắc Dạ Ký — chuyện kể từ cõi vô hình.
+
+[pause:600ms]
+
+Tác giả: Hắc Dạ Ký.
+
+[pause:600ms]
+
+Series: Chuyến xe cuối cùng về đâu.
+
+[pause:600ms]
+
+Ai cũng có một chuyến xe chưa nói lời tạm biệt.
+
+[pause:1000ms]
+
+Tập 15 — câu chuyện đêm nay.
+
+[pause:1500ms]
+
+---
+
 ```
 prompt_version: SVHMP-10.0-RC3.5
 ep_number: 15
 phase: warming (S1)
 pillar: self
 intensity_level: 0.55
-quang_memory_fragment: M3 (Quang ngẫm Hà có tự ý không — kết luận không)
+quang_memory_fragment: M3 (Khải Phong ngẫm Hạ Vy có tự ý không — kết luận không)
 object_sub_arc: gương vỡ (vật ngoài cluster cúc — diversify symbol)
 callback_target: ep_11 (driver mention "đêm mười một con đã thấy cậu trai đem vòng cổ chị")
 passenger_main: nam 31 Phong Hoài Đức (định tự tử 10 năm trước — gương vỡ cứu)
@@ -28,19 +54,19 @@ arc_design_compliant: bible/21 R33-R38 + R36 callback EP11
 
 Đêm tháng tư. Mưa đã hết. Mặt đường khô. Chuyến xe đêm chạy qua đoạn đường ven hồ Đồng Mô, Hoài Đức. Đèn pha quét lên mặt hồ phẳng — không gió.
 
-Quang ngồi ghế thứ ba. Đêm thứ mười lăm. Trong túi áo gió Quang — mười bốn vật. Đêm qua thêm sợi chỉ vàng thêu cúc từ khăn bà Tâm Đan.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười lăm. Trong túi áo gió Khải Phong — mười bốn vật. Đêm qua thêm sợi chỉ vàng thêu cúc từ khăn bà Tâm Đan.
 
-Bác tài lái. Hôm nay bác tài liếc gương — dừng trên Quang lâu hơn thường. Trước khi xe dừng đón hành khách — bác tài cất lời. Một câu — câu thứ ba không nằm trong hai câu chuẩn.
+Bác tài lái. Hôm nay bác tài liếc gương — dừng trên Khải Phong lâu hơn thường. Trước khi xe dừng đón hành khách — bác tài cất lời. Một câu — câu thứ ba không nằm trong hai câu chuẩn.
 
-"Đêm mười một — con đã thấy cậu trai đem vòng cổ chị Hà — con nhớ không?"
+"Đêm mười một — con đã thấy cậu trai đem vòng cổ chị Hạ Vy — con nhớ không?"
 
-Quang gật. Quang nhớ Đức — chị bác sĩ tên Hà — tai nạn vành đai 3.
+Khải Phong gật. Khải Phong nhớ Đức — chị bác sĩ tên Hạ Vy — tai nạn vành đai 3.
 
 Bác tài tiếp:
 
 "Đêm nay sẽ có cậu trai khác — không phải đem cho chị — đem cho chính mình. Cụm vật của con — sẽ thêm một vật khác cúc. Cứ giữ."
 
-Quang gật. Không hỏi thêm.
+Khải Phong gật. Không hỏi thêm.
 
 Xe chậm lại trước một bệnh viện tâm thần ngoại ô — biển "Bệnh viện Tâm thần Hoài Đức" — cổng còn mở — đèn vàng hắt ra. Một thanh niên đứng đợi bên cổng. Khoảng ba mươi mốt tuổi. Áo gió đen — quần jeans cũ — túi vải nhỏ trên vai phải.
 
@@ -56,9 +82,9 @@ Xe lăn bánh.
 
 Anh ngồi yên. Vuốt mặt gương — phía không sắc. Mảnh gương — phản chiếu trần xe loáng nhẹ — phản chiếu mặt anh — anh không nhìn vào mặt mình trong gương.
 
-Quang quan sát từ ghế ba. Mặt anh gầy. Hai mắt thâm — nhưng không buồn — bình tĩnh — như người đã quen sống với điều khó.
+Khải Phong quan sát từ ghế ba. Mặt anh gầy. Hai mắt thâm — nhưng không buồn — bình tĩnh — như người đã quen sống với điều khó.
 
-Cánh tay trái anh — phần cổ tay — Quang thấy được vết sẹo dài — mờ — nhưng còn rõ.
+Cánh tay trái anh — phần cổ tay — Khải Phong thấy được vết sẹo dài — mờ — nhưng còn rõ.
 
 Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng. Tắt.
 
@@ -190,9 +216,9 @@ Anh đứng. Lấy mảnh gương ra khỏi túi. Cầm trong lòng bàn tay. Vu
 
 Ném gương xuống hồ. Mảnh gương rơi — chạm mặt nước — chìm.
 
-Quang chớp mắt — nhìn qua cửa sổ. Bên Phong — bóng Phong hai mốt tuổi xuất hiện — gầy — mặt buồn — đứng cạnh Phong ba mốt. Phong ba mốt vuốt vai Phong hai mốt một lần. Cười nhẹ.
+Khải Phong chớp mắt — nhìn qua cửa sổ. Bên Phong — bóng Phong hai mốt tuổi xuất hiện — gầy — mặt buồn — đứng cạnh Phong ba mốt. Phong ba mốt vuốt vai Phong hai mốt một lần. Cười nhẹ.
 
-Quang chớp lần nữa. Phong hai mốt tan.
+Khải Phong chớp lần nữa. Phong hai mốt tan.
 
 Phong ba mốt đứng. Nhìn hồ. Không khóc.
 
@@ -204,7 +230,7 @@ Phong ba mốt đứng. Nhìn hồ. Không khóc.
 
 Xe lăn bánh — rời ngã ba Hoài Đức.
 
-Ghế sáu trống. Trên sàn — một mảnh vải bông cuốn nhỏ rơi — vải bọc mép gương bong ra khi Phong cầm. Quang nhặt. Vải bông — mềm — màu trắng đã ngả vàng.
+Ghế sáu trống. Trên sàn — một mảnh vải bông cuốn nhỏ rơi — vải bọc mép gương bong ra khi Phong cầm. Khải Phong nhặt. Vải bông — mềm — màu trắng đã ngả vàng.
 
 Bỏ vào túi. Vật thứ mười lăm.
 
@@ -212,20 +238,20 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Quang ngồi. Mở túi — đếm — mười lăm vật. Hai vật cúc — và một vải bông gương vỡ. Vải bông không cùng cụm cúc. Diversify.
+Khải Phong ngồi. Mở túi — đếm — mười lăm vật. Hai vật cúc — và một vải bông gương vỡ. Vải bông không cùng cụm cúc. Diversify.
 
-Quang ngẫm — Hà — cô có bao giờ định không sống không?
+Khải Phong ngẫm — Hạ Vy — cô có bao giờ định không sống không?
 
-Quang cố nhớ. Hình ảnh Hà — vai gầy — áo trắng — bông cúc cài tai. Mặt vẫn mờ. Nhưng cảm giác — Hà không tự ý. Hà không định không sống. Hà — bị tai nạn? Hay khác?
+Khải Phong cố nhớ. Hình ảnh Hạ Vy — vai gầy — áo trắng — bông cúc cài tai. Mặt vẫn mờ. Nhưng cảm giác — Hạ Vy không tự ý. Hạ Vy không định không sống. Hạ Vy — bị tai nạn? Hay khác?
 
-Quang nhói. Có một va đập — một âm thanh thật to — một mặt đường đêm — mưa.
+Khải Phong nhói. Có một va đập — một âm thanh thật to — một mặt đường đêm — mưa.
 
-Quang không thấy rõ. Chỉ cảm giác.
+Khải Phong không thấy rõ. Chỉ cảm giác.
 
-Hà đi đột ngột — không tự ý.
+Hạ Vy đi đột ngột — không tự ý.
 
 Bác tài liếc gương. "Đêm mười lăm. Một phần ba phase warming đã qua. Đêm mười sáu sẽ có hành khách family thứ ba — không phải mẹ — không phải bố — là khác. Cứ giữ vật. Cụm sẽ rõ dần."
 
-Quang gật.
+Khải Phong gật.
 
 Đêm thứ mười lăm. Xe đi tiếp về phía đường vành đai. Phía sau — Hoài Đức khuất. Phong ở lại bên hồ — đứng — không vội đi — đợi mặt nước phẳng lại sau gợn sóng từ mảnh gương chìm.

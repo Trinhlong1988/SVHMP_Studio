@@ -1,5 +1,31 @@
 # TẬP 6 — BÁNH CHƯNG CỤ BÀ TỰ GÓI ĐÊM CHỜ CHÁU
 
+[INTRO 4.5s — HẮC DẠ KÝ master]
+
+[pause:800ms]
+
+Hắc Dạ Ký — chuyện kể từ cõi vô hình.
+
+[pause:600ms]
+
+Tác giả: Hắc Dạ Ký.
+
+[pause:600ms]
+
+Series: Chuyến xe cuối cùng về đâu.
+
+[pause:600ms]
+
+Ai cũng có một chuyến xe chưa nói lời tạm biệt.
+
+[pause:1000ms]
+
+Tập 6 — câu chuyện đêm nay.
+
+[pause:1500ms]
+
+---
+
 ```
 prompt_version : SVHMP-10.0-RC3.4
 ep_number      : 6
@@ -18,7 +44,7 @@ bell_count     : 1
 ghost_manifest : 1 (kính chiếu hậu — bóng cháu gái nhỏ, không quay đầu)
 word_count     : ~2300 (~14.8 phút @ 155 wpm)
 cross_ep_continuity:
-  - Quang nhặt sợi len nâu rơi từ EP05 lên — đặt vào túi áo
+  - Khải Phong nhặt sợi len nâu rơi từ EP05 lên — đặt vào túi áo
   - Đồng hồ nhích 3 lần (gradient: EP04=1, EP05=2, EP06=3)
   - Driver stare lâu hơn nữa
   - Ông cụ radio quen thuộc (cross-ep)
@@ -33,15 +59,15 @@ cross_ep_continuity:
 
 Đêm hai mươi tám tháng Chạp. Mưa phùn vẫn lất phất từ hôm trước. Chuyến xe đêm chạy qua một vùng đồng bằng sông Đáy. Lúa đông xanh non. Mạ non đã cấy được mấy hôm.
 
-Quang ngồi ghế thứ ba. Đêm thứ sáu Quang đếm. Trong túi áo Quang có một sợi len nâu — Quang nhặt từ sàn xe lúc người đàn ông trung niên đêm trước xuống. Không hiểu vì sao Quang giữ.
+Khải Phong ngồi ghế thứ ba. Đêm thứ sáu Khải Phong đếm. Trong túi áo Khải Phong có một sợi len nâu — Khải Phong nhặt từ sàn xe lúc người đàn ông trung niên đêm trước xuống. Không hiểu vì sao Khải Phong giữ.
 
-Trên ghế lái, bác tài lái như mọi khi. Hai bàn tay đeo găng trắng. Ánh mắt liếc gương chiếu hậu — đêm nay liếc lâu hơn nữa. Quang đoán bác đang quan sát Quang.
+Trên ghế lái, bác tài lái như mọi khi. Hai bàn tay đeo găng trắng. Ánh mắt liếc gương chiếu hậu — đêm nay liếc lâu hơn nữa. Khải Phong đoán bác đang quan sát Khải Phong.
 
 Xe chậm lại trước một quán tạp hoá ven đường. Quán đã đóng từ chiều, đèn vàng yếu trên cột điện hắt xuống. Một bóng người nhỏ đứng đợi.
 
 Một cụ bà. Khoảng bảy mươi mấy tuổi. Tóc bạc trắng, búi gọn sau gáy. Mặc áo bông xám dày, quần lụa đen. Tay phải xách một cái rổ tre nhỏ, có lá dong và lạt buộc gấp gọn. Tay trái cầm một cây gậy trúc.
 
-Cụ bước lên xe rất chậm. Một bước. Lại nghỉ một nhịp. Đi nhẹ xuống lối giữa. Ngồi vào ghế thứ tư — ngay sau lưng Quang. Đặt rổ tre xuống chỗ trống bên cạnh.
+Cụ bước lên xe rất chậm. Một bước. Lại nghỉ một nhịp. Đi nhẹ xuống lối giữa. Ngồi vào ghế thứ tư — ngay sau lưng Khải Phong. Đặt rổ tre xuống chỗ trống bên cạnh.
 
 Xe lăn bánh trở lại.
 
@@ -51,7 +77,7 @@ Xe lăn bánh trở lại.
 
 [pause:600ms]
 
-Quang ngồi yên. Quang không quay đầu, nhưng có thể nghe cụ bà thở phía sau. Hơi thở chậm, đều. Có tiếng rổ tre khẽ va vào ghế khi xe lượn cong.
+Khải Phong ngồi yên. Khải Phong không quay đầu, nhưng có thể nghe cụ bà thở phía sau. Hơi thở chậm, đều. Có tiếng rổ tre khẽ va vào ghế khi xe lượn cong.
 
 Cụ mở khăn vải đậy rổ. Bên trong có lá dong rửa sạch, gấp từng tệp. Có lạt buộc. Có một khuôn gỗ vuông. Không có gạo nếp. Không có thịt. Chỉ là dụng cụ gói bánh, chưa có nguyên liệu.
 
@@ -81,7 +107,7 @@ Bên ngoài cửa kính, một con chó nào đó sủa rất xa. Tiếng chó v
 
 Đồng hồ trên xe — chiếc đồng hồ nhỏ gắn cạnh ghế lái — kim phút nhích một lần. Tách. Rồi nhích thêm. Tách. Rồi nhích lần thứ ba. Tách.
 
-Quang đếm trong đầu. Ba lần. Đêm nay ba lần liền.
+Khải Phong đếm trong đầu. Ba lần. Đêm nay ba lần liền.
 
 Bác tài không quay đầu. Tay vẫn đặt vô-lăng. Nhưng ánh mắt liếc gương chiếu hậu kéo dài.
 
@@ -125,9 +151,9 @@ Cụ ngừng. Lâu hơn. Tay vẫn đặt lên rổ lá dong.
 
 Bác tài nhìn gương chiếu hậu một thoáng. Im lặng.
 
-Trong gương chiếu hậu, Quang thấy hai cái bóng. Một là cụ bà. Một là một bé gái nhỏ — khoảng năm sáu tuổi — ngồi sát ngay bên cạnh cụ. Bé gái mặc áo len đỏ, tay vịn vào tay cụ. Mắt nhìn xuống tệp lá dong. Không nói gì.
+Trong gương chiếu hậu, Khải Phong thấy hai cái bóng. Một là cụ bà. Một là một bé gái nhỏ — khoảng năm sáu tuổi — ngồi sát ngay bên cạnh cụ. Bé gái mặc áo len đỏ, tay vịn vào tay cụ. Mắt nhìn xuống tệp lá dong. Không nói gì.
 
-Quang chớp mắt. Trong gương vẫn chỉ có cụ bà và rổ lá dong.
+Khải Phong chớp mắt. Trong gương vẫn chỉ có cụ bà và rổ lá dong.
 
 Bác tài cất lời. Câu hỏi cũ.
 
@@ -179,11 +205,11 @@ Bên kia ngã ba, có tiếng chuông. Tiếng chuông cận Tết. Một ngôi 
 
 Cụ bà ghế tư đậy khăn vải lên rổ. Cầm gậy trúc. Đứng dậy chậm rãi.
 
-Khi đi qua chỗ Quang ngồi, cụ khẽ nói:
+Khi đi qua chỗ Khải Phong ngồi, cụ khẽ nói:
 
 "Cháu ngồi đây nhiều đêm rồi nhỉ?"
 
-Quang ngẩng đầu. Quang chưa kịp trả lời. Cụ đã đi tiếp.
+Khải Phong ngẩng đầu. Khải Phong chưa kịp trả lời. Cụ đã đi tiếp.
 
 Cụ đi ra cửa xe. Cửa từ từ mở. Gió đêm khép vào.
 
@@ -203,11 +229,11 @@ Cửa xe khép lại. Xe lăn bánh.
 
 [pause:1200ms]
 
-Bên ngoài cửa kính, Quang thấy cụ đi vào con đường đất nhỏ ven ngã ba. Tay chống gậy, tay xách rổ. Phía cuối đường, có ngôi nhà gạch nhỏ, đèn vàng yếu hắt qua cửa sổ. Trước sân nhà, có một cái bếp lò ba viên gạch — chưa nhóm. Nồi gang chưa đặt.
+Bên ngoài cửa kính, Khải Phong thấy cụ đi vào con đường đất nhỏ ven ngã ba. Tay chống gậy, tay xách rổ. Phía cuối đường, có ngôi nhà gạch nhỏ, đèn vàng yếu hắt qua cửa sổ. Trước sân nhà, có một cái bếp lò ba viên gạch — chưa nhóm. Nồi gang chưa đặt.
 
-Quang chớp mắt. Bên cạnh bếp lò, có một bóng cụ già khác — tóc bạc, lưng còng, ngồi trên ghế thấp. Như đang chờ ai mang rổ lá dong tới gói cùng.
+Khải Phong chớp mắt. Bên cạnh bếp lò, có một bóng cụ già khác — tóc bạc, lưng còng, ngồi trên ghế thấp. Như đang chờ ai mang rổ lá dong tới gói cùng.
 
-Quang chớp mắt lần nữa. Bóng đó không còn.
+Khải Phong chớp mắt lần nữa. Bóng đó không còn.
 
 Chỉ có bếp lò chưa nhóm và đèn dầu nhấp nháy.
 
@@ -223,23 +249,23 @@ Bác tài lái như mọi khi. Hai tay vô-lăng. Găng trắng. Nhịp ngón tr
 
 Đồng hồ trên xe kim phút lại nhích. Tách. Một lần. Hai lần. Ba lần liền.
 
-Quang lấy sợi len nâu trong túi áo ra. Nhìn. Sợi len từ đêm trước. Quang đặt sợi len lên đùi. Bên cạnh sợi lạt buộc Quang nhặt từ sàn.
+Khải Phong lấy sợi len nâu trong túi áo ra. Nhìn. Sợi len từ đêm trước. Khải Phong đặt sợi len lên đùi. Bên cạnh sợi lạt buộc Khải Phong nhặt từ sàn.
 
-Quang nhớ — câu cụ bà hỏi lúc xuống: "Cháu ngồi đây nhiều đêm rồi nhỉ?"
+Khải Phong nhớ — câu cụ bà hỏi lúc xuống: "Cháu ngồi đây nhiều đêm rồi nhỉ?"
 
-Đêm thứ sáu. Quang biết. Nhưng vì sao Quang ngồi xe này? Quang không nhớ. Lần đầu lên xe là khi nào? Quang không nhớ.
+Đêm thứ sáu. Khải Phong biết. Nhưng vì sao Khải Phong ngồi xe này? Khải Phong không nhớ. Lần đầu lên xe là khi nào? Khải Phong không nhớ.
 
-Trên ghế lái, bác tài liếc gương chiếu hậu. Ánh mắt dừng trên Quang. Rất lâu.
+Trên ghế lái, bác tài liếc gương chiếu hậu. Ánh mắt dừng trên Khải Phong. Rất lâu.
 
 Bác khẽ chuyển vị trí một bàn tay trên vô-lăng. Như muốn nói gì. Nhưng không nói.
 
 [pause:1500ms]
 
-Quang nhìn xuống tay mình. Hai vật trên đùi — sợi len nâu của chú trung niên đêm trước, sợi lạt buộc của cụ bà đêm nay. Hai vật rời rạc, không liên quan. Nhưng Quang giữ.
+Khải Phong nhìn xuống tay mình. Hai vật trên đùi — sợi len nâu của chú trung niên đêm trước, sợi lạt buộc của cụ bà đêm nay. Hai vật rời rạc, không liên quan. Nhưng Khải Phong giữ.
 
-Quang nhìn ra cửa kính. Đêm vẫn dài. Còn nhiều ngã ba phía trước. Còn nhiều người mang theo những vật chưa kịp dùng hết.
+Khải Phong nhìn ra cửa kính. Đêm vẫn dài. Còn nhiều ngã ba phía trước. Còn nhiều người mang theo những vật chưa kịp dùng hết.
 
-Có ai đó sẽ lên xe ở trạm tiếp theo. Quang chưa biết. Nhưng Quang biết — sẽ có một vật nữa.
+Có ai đó sẽ lên xe ở trạm tiếp theo. Khải Phong chưa biết. Nhưng Khải Phong biết — sẽ có một vật nữa.
 
 ---
 
@@ -247,5 +273,5 @@ Có ai đó sẽ lên xe ở trạm tiếp theo. Quang chưa biết. Nhưng Quan
 
 - ✅ ALWAYS_5 + NEVER_7 + GHOST_3 + SERIES_8 + ENDING_2
 - ✅ Variation: cụ bà 66+ = perspective REVERSED (mẹ đợi, không phải con)
-- ✅ Cross-ep continuity: Quang nhặt vật từ ep trước → đồng hồ 3 lần (gradient) → driver foreshadow
+- ✅ Cross-ep continuity: Khải Phong nhặt vật từ ep trước → đồng hồ 3 lần (gradient) → driver foreshadow
 - ✅ Generational loop: cụ bà chuyển vai từ "con đợi mẹ" (60 năm trước) → "mẹ đợi con" (giờ)

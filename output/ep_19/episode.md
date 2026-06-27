@@ -1,12 +1,38 @@
 # TẬP 19 — VÒNG HOA CÚC CHO ĐÁM TANG TÔI ĐÃ NGẠI ĐI
 
+[INTRO 4.5s — HẮC DẠ KÝ master]
+
+[pause:800ms]
+
+Hắc Dạ Ký — chuyện kể từ cõi vô hình.
+
+[pause:600ms]
+
+Tác giả: Hắc Dạ Ký.
+
+[pause:600ms]
+
+Series: Chuyến xe cuối cùng về đâu.
+
+[pause:600ms]
+
+Ai cũng có một chuyến xe chưa nói lời tạm biệt.
+
+[pause:1000ms]
+
+Tập 19 — câu chuyện đêm nay.
+
+[pause:1500ms]
+
+---
+
 ```
 prompt_version: SVHMP-10.0-RC3.5
 ep_number: 19
 phase: warming (S1)
 pillar: kindness
 intensity_level: 0.55
-quang_memory_fragment: M4 (Quang ngẫm sổ tay Hà — chữ tròn nhỏ)
+quang_memory_fragment: M4 (Khải Phong ngẫm sổ tay Hạ Vy — chữ tròn nhỏ)
 object_sub_arc: HOA_CUC cluster vật 4 (vòng hoa cúc — HOÀN THÀNH cluster 4 vật)
 callback_target: ep_14 (object_echo HOA_CUC + Tam Dan khan theu cuc)
 passenger_main: nu 50 Bích Hoa Đông Anh (ngại đi tang bạn — bạn chết cô đơn)
@@ -28,7 +54,7 @@ arc_design_compliant: bible/21 R33-R38 + R36 callback EP14
 
 Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven sông Đuống, Đông Anh. Đèn pha quét lên bãi mía dài bên đường.
 
-Quang ngồi ghế thứ ba. Đêm thứ mười chín. Trong túi áo gió Quang — mười tám vật. Đêm qua thêm mảnh tro thư.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười chín. Trong túi áo gió Khải Phong — mười tám vật. Đêm qua thêm mảnh tro thư.
 
 Bác tài lái.
 
@@ -36,7 +62,7 @@ Xe chậm lại trước một nghĩa trang xã — cổng gạch cũ đã đón
 
 Cô bước lên xe. Đi qua hàng ghế đầu — ngồi xuống ghế thứ chín. Đặt vòng hoa lên đùi. Hai tay đỡ — vòng quá lớn không đặt được hoàn toàn.
 
-Quang ghế ba nhìn — vòng hoa cúc vàng tươi — vật thứ tư trong cụm cúc.
+Khải Phong ghế ba nhìn — vòng hoa cúc vàng tươi — vật thứ tư trong cụm cúc.
 
 Xe lăn bánh.
 
@@ -48,7 +74,7 @@ Xe lăn bánh.
 
 Cô ngồi yên. Đỡ vòng hoa. Hoa cúc tươi — vài cánh đã rụng xuống đùi.
 
-Quang quan sát. Cô năm mươi — tóc bạc một số sợi — mặt mệt — vẻ người đã đi xa đêm nay.
+Khải Phong quan sát. Cô năm mươi — tóc bạc một số sợi — mặt mệt — vẻ người đã đi xa đêm nay.
 
 Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng. Tắt.
 
@@ -176,9 +202,9 @@ Bên ngoài — Bích Hoa đi vào nghĩa trang xã — đã mở cổng. Đèn 
 
 Cô đến. Quỳ. Đặt vòng cúc trên mộ. Cánh cúc vàng phủ kín bia. Cúi đầu.
 
-Quang chớp mắt — nhìn qua cửa sổ. Bên mộ — Mai xuất hiện — mặc áo bà ba xanh — tóc cài bông cúc vàng — vuốt tay Hoa. Mỉm cười.
+Khải Phong chớp mắt — nhìn qua cửa sổ. Bên mộ — Mai xuất hiện — mặc áo bà ba xanh — tóc cài bông cúc vàng — vuốt tay Hoa. Mỉm cười.
 
-Quang chớp lần nữa. Mai tan.
+Khải Phong chớp lần nữa. Mai tan.
 
 Bích Hoa ngẩng đầu. Khóc nhẹ. Quỳ thêm.
 
@@ -190,7 +216,7 @@ Bích Hoa ngẩng đầu. Khóc nhẹ. Quỳ thêm.
 
 Xe lăn bánh — rời ngã ba Đông Anh.
 
-Ghế chín trống. Trên sàn — một cánh cúc tươi vàng rơi (từ vòng cúc khi cô đứng dậy). Quang nhặt. Cánh cúc — tươi — đậm vàng hơn cánh đêm mười sáu.
+Ghế chín trống. Trên sàn — một cánh cúc tươi vàng rơi (từ vòng cúc khi cô đứng dậy). Khải Phong nhặt. Cánh cúc — tươi — đậm vàng hơn cánh đêm mười sáu.
 
 Bỏ vào túi. Vật thứ mười chín.
 
@@ -198,7 +224,7 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Quang ngồi. Mở túi — đếm — mười chín vật. Trong đó — bốn vật cúc:
+Khải Phong ngồi. Mở túi — đếm — mười chín vật. Trong đó — bốn vật cúc:
 - Cánh cúc khô vàng (đêm 13)
 - Sợi chỉ thêu cúc (đêm 14)
 - Cánh cúc tươi vàng nhạt (đêm 16)
@@ -206,16 +232,16 @@ Quang ngồi. Mở túi — đếm — mười chín vật. Trong đó — bốn
 
 Cluster cúc đã đủ bốn vật — đúng dự báo bác tài đêm mười ba.
 
-Quang ngẫm. Bốn người — bốn chủ vật — không quen nhau — không cùng tỉnh. Nhưng cùng cúc. Trùng hợp?
+Khải Phong ngẫm. Bốn người — bốn chủ vật — không quen nhau — không cùng tỉnh. Nhưng cùng cúc. Trùng hợp?
 
-Hình ảnh Hà — vai gầy — áo trắng — bông cúc cài tai — lại hiện. Lần này — Quang thấy được khóe miệng Hà cười nhẹ. Mặt vẫn mờ.
+Hình ảnh Hạ Vy — vai gầy — áo trắng — bông cúc cài tai — lại hiện. Lần này — Khải Phong thấy được khóe miệng Hà cười nhẹ. Mặt vẫn mờ.
 
-Hà cài cúc lên tai. Quang biết — chắc chắn. Hồi Hà còn sống — Hà thích cài cúc tóc. Cụm vật cúc đêm nay — như đang gợi Quang nhớ Hà.
+Hạ Vy cài cúc lên tai. Khải Phong biết — chắc chắn. Hồi Hà còn sống — Hạ Vy thích cài cúc tóc. Cụm vật cúc đêm nay — như đang gợi Khải Phong nhớ Hà.
 
 [pause:1500ms]
 
 Bác tài liếc gương. "Đêm mười chín. Cụm cúc đủ bốn. Đêm mai — đêm hai mươi — con sẽ ngẫm rõ vì sao bốn vật rời rạc cùng có cúc. Cứ giữ."
 
-Quang gật. Không hỏi.
+Khải Phong gật. Không hỏi.
 
 Đêm thứ mười chín. Xe đi tiếp. Phía sau — Đông Anh khuất. Bích Hoa ở lại bên mộ — quỳ — không vội đi.

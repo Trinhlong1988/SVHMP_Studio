@@ -1,5 +1,31 @@
 # TẬP 4 — PHONG BAO LÌ XÌ MẸ GIÀ VIẾT DỞ
 
+[INTRO 4.5s — HẮC DẠ KÝ master]
+
+[pause:800ms]
+
+Hắc Dạ Ký — chuyện kể từ cõi vô hình.
+
+[pause:600ms]
+
+Tác giả: Hắc Dạ Ký.
+
+[pause:600ms]
+
+Series: Chuyến xe cuối cùng về đâu.
+
+[pause:600ms]
+
+Ai cũng có một chuyến xe chưa nói lời tạm biệt.
+
+[pause:1000ms]
+
+Tập 4 — câu chuyện đêm nay.
+
+[pause:1500ms]
+
+---
+
 ```
 prompt_version : SVHMP-10.0-RC3.4
 ep_number      : 4
@@ -28,7 +54,7 @@ arc_open_new   : ARC-ep4 (phong bao lì xì → ai sẽ nhận?)
 
 Đêm hai chín tháng Chạp. Mưa phùn lất phất. Chuyến xe đêm chạy qua một đoạn đường ven sông. Phía bên kia sông là vạt rừng cọ. Lá cọ ướt sương, đu đưa.
 
-Quang ngồi ghế thứ ba. Năm nay năm thứ mấy Quang ngồi ghế này? Quang không nhớ. Chỉ biết đêm cận Tết nào cũng vậy.
+Khải Phong ngồi ghế thứ ba. Năm nay năm thứ mấy Khải Phong ngồi ghế này? Khải Phong không nhớ. Chỉ biết đêm cận Tết nào cũng vậy.
 
 Bác tài lái như mọi khi. Hai bàn tay đeo găng trắng đặt trên vô-lăng. Ánh mắt liếc gương chiếu hậu một thoáng, rồi lại tập trung vào đoạn đường tối phía trước.
 
@@ -48,7 +74,7 @@ Xe lăn bánh trở lại.
 
 [pause:600ms]
 
-Quang nhìn người phụ nữ qua khe ghế. Cô khoảng cuối ba mươi, đầu bốn mươi. Mặt thanh tú nhưng có nét mệt. Mắt sưng nhẹ. Bàn tay đặt trên cặp da run hơi nhẹ.
+Khải Phong nhìn người phụ nữ qua khe ghế. Cô khoảng cuối ba mươi, đầu bốn mươi. Mặt thanh tú nhưng có nét mệt. Mắt sưng nhẹ. Bàn tay đặt trên cặp da run hơi nhẹ.
 
 Cô mở khoá cặp da. Bên trong có một xấp phong bao lì xì màu đỏ — gói gọn bằng dây chun. Có một cây bút bi cũ. Có một cái sổ tay nhỏ bìa nâu, giấy đã ngả vàng.
 
@@ -126,9 +152,9 @@ Cô ngừng. Tay vuốt nhẹ chữ "Cháu Diệu" trên phong bao.
 
 Bác tài nhìn gương chiếu hậu một thoáng. Im lặng. Không nói câu nào.
 
-Trong gương chiếu hậu, Quang thấy hai cái bóng. Một là cô. Một là một người phụ nữ rất già, tóc bạc gần hết, ngồi sát ngay sau cô. Người phụ nữ ấy đang cầm bút, tay run run viết một cái tên. Mắt nhíu lại như đang cố nhìn cho rõ.
+Trong gương chiếu hậu, Khải Phong thấy hai cái bóng. Một là cô. Một là một người phụ nữ rất già, tóc bạc gần hết, ngồi sát ngay sau cô. Người phụ nữ ấy đang cầm bút, tay run run viết một cái tên. Mắt nhíu lại như đang cố nhìn cho rõ.
 
-Quang chớp mắt. Trong gương vẫn chỉ có cô và một mảng trống.
+Khải Phong chớp mắt. Trong gương vẫn chỉ có cô và một mảng trống.
 
 Bác tài cất lời. Một câu duy nhất. Câu hỏi cũ.
 
@@ -182,7 +208,7 @@ Bên kia ngã ba, có tiếng chuông. Tiếng chuông cận Tết. Một ngôi 
 
 Người phụ nữ ghế chín đặt phong bao lại vào cặp da. Đóng nắp. Đứng dậy.
 
-Khi đi qua chỗ Quang ngồi, cô khẽ nói:
+Khi đi qua chỗ Khải Phong ngồi, cô khẽ nói:
 
 "Chào anh."
 
@@ -204,9 +230,9 @@ Cửa xe khép lại. Xe lăn bánh.
 
 [pause:1000ms]
 
-Bên ngoài cửa kính, Quang thấy cô đi vào con đường đất nhỏ ven ngã ba. Cặp da cầm bên hông. Phía cuối đường, có ngôi nhà gạch cũ với cửa sổ sáng đèn dầu. Trên bàn gỗ trước hiên, vẫn có một bóng người ngồi viết. Lưng còng. Tay run run đưa bút.
+Bên ngoài cửa kính, Khải Phong thấy cô đi vào con đường đất nhỏ ven ngã ba. Cặp da cầm bên hông. Phía cuối đường, có ngôi nhà gạch cũ với cửa sổ sáng đèn dầu. Trên bàn gỗ trước hiên, vẫn có một bóng người ngồi viết. Lưng còng. Tay run run đưa bút.
 
-Quang chớp mắt. Bóng người ấy không còn.
+Khải Phong chớp mắt. Bóng người ấy không còn.
 
 Chỉ có ngọn đèn dầu nhấp nháy trong sương.
 
@@ -224,19 +250,19 @@ Bác tài lái như mọi khi. Hai tay vô-lăng. Găng trắng. Nhịp ngón tr
 
 Đồng hồ trên xe kim phút lại nhích. Tách. Một lần.
 
-Quang nhìn ra cửa kính. Bên ngoài, đêm hai chín tháng Chạp vẫn dài. Mưa phùn lất phất.
+Khải Phong nhìn ra cửa kính. Bên ngoài, đêm hai chín tháng Chạp vẫn dài. Mưa phùn lất phất.
 
-Quang nhớ — mẹ Quang ngày xưa cũng tự viết phong bao lì xì cho các cháu. Chữ mẹ tròn, mềm. Mẹ viết rất chậm — vì mẹ muốn mỗi nét chữ đều cẩn thận.
+Khải Phong nhớ — mẹ Khải Phong ngày xưa cũng tự viết phong bao lì xì cho các cháu. Chữ mẹ tròn, mềm. Mẹ viết rất chậm — vì mẹ muốn mỗi nét chữ đều cẩn thận.
 
-Đã bao nhiêu năm rồi Quang không nhận phong bao lì xì có chữ mẹ?
+Đã bao nhiêu năm rồi Khải Phong không nhận phong bao lì xì có chữ mẹ?
 
-Quang không nhớ. Quang ngồi yên.
+Khải Phong không nhớ. Khải Phong ngồi yên.
 
-Có ai đó. Còn ngồi sau lưng Quang. Quang chưa quay đầu.
+Có ai đó. Còn ngồi sau lưng Khải Phong. Khải Phong chưa quay đầu.
 
 [pause:1500ms]
 
-Trên ghế lái, bác tài liếc gương chiếu hậu một thoáng. Ánh mắt bác dừng lại trên Quang. Lâu hơn một nhịp.
+Trên ghế lái, bác tài liếc gương chiếu hậu một thoáng. Ánh mắt bác dừng lại trên Khải Phong. Lâu hơn một nhịp.
 
 Rồi bác nhìn lại con đường tối phía trước. Hai bàn tay găng trắng đặt yên trên vô-lăng.
 

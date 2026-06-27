@@ -1,12 +1,38 @@
 # TẬP 12 — ĐỒNG HỒ XÀ CỪ NGƯỜI YÊU CŨ TẶNG TRƯỚC CHIA TAY
 
+[INTRO 4.5s — HẮC DẠ KÝ master]
+
+[pause:800ms]
+
+Hắc Dạ Ký — chuyện kể từ cõi vô hình.
+
+[pause:600ms]
+
+Tác giả: Hắc Dạ Ký.
+
+[pause:600ms]
+
+Series: Chuyến xe cuối cùng về đâu.
+
+[pause:600ms]
+
+Ai cũng có một chuyến xe chưa nói lời tạm biệt.
+
+[pause:1000ms]
+
+Tập 12 — câu chuyện đêm nay.
+
+[pause:1500ms]
+
+---
+
 ```
 prompt_version: SVHMP-10.0-RC3.5
 ep_number: 12
 phase: warming (S1)
 pillar: love
 intensity_level: 0.55
-quang_memory_fragment: M3 (deepens — Quang ngẫm tên Hà sâu hơn qua callback EP01)
+quang_memory_fragment: M3 (deepens — Khải Phong ngẫm tên Hạ Vy sâu hơn qua callback EP01)
 object_sub_arc: callback symbol (đồng hồ xà cừ 7:10 echo EP01)
 callback_target: ep_01 (object_echo OBJ_DONG_HO_XA_CU + driver extra line)
 passenger_main: nu 36 Vy An Long Biên (chia tay anh Khôi cầu Long Biên)
@@ -28,15 +54,15 @@ arc_design_compliant: bible/21 R33-R38 + R36 callback EP01
 
 Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven sông Hồng. Đèn pha quét lên cầu Long Biên — cây cầu sắt thế kỷ — đèn vàng chiếu xuống nhịp cong cũ.
 
-Quang ngồi ghế thứ ba. Đêm thứ mười hai. Trong túi áo gió Quang — mười một vật. Đêm qua thêm mảnh vỏ bạc nhỏ — từ vòng cổ ngôi sao của chị Đức.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười hai. Trong túi áo gió Khải Phong — mười một vật. Đêm qua thêm mảnh vỏ bạc nhỏ — từ vòng cổ ngôi sao của chị Đức.
 
-Bác tài lái. Hôm nay xe đi gần cầu Long Biên — Quang nhận ra ngay đoạn đường này. Đêm số một — cũng đoạn đường này. Đêm số một có cô gái mặc áo trắng — cũng cầm đồng hồ xà cừ.
+Bác tài lái. Hôm nay xe đi gần cầu Long Biên — Khải Phong nhận ra ngay đoạn đường này. Đêm số một — cũng đoạn đường này. Đêm số một có cô gái mặc áo trắng — cũng cầm đồng hồ xà cừ.
 
 Xe chậm lại trước một quán cà phê cũ ven đê — đèn vàng còn sáng. Một phụ nữ đứng đợi. Khoảng ba mươi sáu tuổi. Áo dài xanh — vạt áo dài hơi ướt nước mưa. Tay phải cầm hộp nhỏ — hộp giấy bọc gấm đỏ.
 
 Cô bước lên xe. Đi qua hàng ghế đầu — ngồi xuống ghế thứ chín. Đặt hộp lên đùi. Mở. Lấy đồng hồ ra — mặt xà cừ trắng — viền bạc — kim đã dừng ở bảy giờ mười phút.
 
-Quang ghế ba — nhìn đồng hồ — giật mình. Đồng hồ này — giống y hệt đồng hồ đêm số một.
+Khải Phong ghế ba — nhìn đồng hồ — giật mình. Đồng hồ này — giống y hệt đồng hồ đêm số một.
 
 Xe lăn bánh.
 
@@ -48,25 +74,25 @@ Xe lăn bánh.
 
 Cô ngồi yên. Đeo đồng hồ lên cổ tay trái. Kim không di chuyển — đứng yên ở bảy giờ mười phút.
 
-Quang quan sát từ ghế ba. Tay cô cô không nhẫn cưới — chỉ có đồng hồ này. Khuôn mặt cô — chừng ba mươi sáu — đã có một nếp ở khóe mắt — nếp người hay nghĩ.
+Khải Phong quan sát từ ghế ba. Tay cô cô không nhẫn cưới — chỉ có đồng hồ này. Khuôn mặt cô — chừng ba mươi sáu — đã có một nếp ở khóe mắt — nếp người hay nghĩ.
 
 Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng. Tắt.
 
 [pause:500ms]
 
-Bác tài liếc gương. Lần này dừng trên Quang — lâu hơn thường. Quang đợi. Bác tài cất lời — một câu — câu thứ ba không nằm trong hai câu chuẩn.
+Bác tài liếc gương. Lần này dừng trên Khải Phong — lâu hơn thường. Khải Phong đợi. Bác tài cất lời — một câu — câu thứ ba không nằm trong hai câu chuẩn.
 
 "Đêm số một con đã thấy đồng hồ này rồi đúng không, con."
 
 Bác tài nói. Không hỏi — khẳng định.
 
-Quang gật chậm. Quang nhớ — đêm số một — cô gái mặc áo trắng — qua cầu Long Biên — đồng hồ kim dừng đúng bảy giờ mười phút. Cô gái đó xuống xe — không trở lại.
+Khải Phong gật chậm. Khải Phong nhớ — đêm số một — cô gái mặc áo trắng — qua cầu Long Biên — đồng hồ kim dừng đúng bảy giờ mười phút. Cô gái đó xuống xe — không trở lại.
 
 Bác tài tiếp:
 
 "Đêm nay là cô thứ hai. Sẽ có nhiều cô nữa — đồng hồ xà cừ dừng cùng giờ — không tình cờ, con à. Con cứ đếm. Đến đêm năm mươi — con sẽ hiểu."
 
-Quang gật. Không hỏi thêm.
+Khải Phong gật. Không hỏi thêm.
 
 ---
 
@@ -188,9 +214,9 @@ Ném xuống sông Hồng.
 
 Đồng hồ rơi — chạm mặt nước — chìm.
 
-Quang chớp mắt — nhìn qua cửa sổ. Bên cô — anh Khôi xuất hiện — mặc áo công trường vàng — đứng cạnh. Không nói. Vuốt vai cô một lần. Mỉm cười.
+Khải Phong chớp mắt — nhìn qua cửa sổ. Bên cô — anh Khôi xuất hiện — mặc áo công trường vàng — đứng cạnh. Không nói. Vuốt vai cô một lần. Mỉm cười.
 
-Quang chớp lần nữa. Anh Khôi tan vào sương đêm trên cầu.
+Khải Phong chớp lần nữa. Anh Khôi tan vào sương đêm trên cầu.
 
 Cô đứng. Nhìn xuống sông. Không khóc.
 
@@ -202,28 +228,28 @@ Cô đứng. Nhìn xuống sông. Không khóc.
 
 Xe lăn bánh — xuống dốc cầu Long Biên.
 
-Ghế chín trống. Trên sàn — một mảnh xà cừ nhỏ rơi — bong từ mép vòng đồng hồ khi cô vuốt. Quang nhặt. Bỏ vào túi.
+Ghế chín trống. Trên sàn — một mảnh xà cừ nhỏ rơi — bong từ mép vòng đồng hồ khi cô vuốt. Khải Phong nhặt. Bỏ vào túi.
 
 Vật thứ mười hai.
 
-Quang ngồi. Trong túi Quang giờ — đã có hai vật xà cừ. Mảnh xà cừ đêm số một (cô gái áo trắng) — và mảnh xà cừ đêm này. Hai cô gái — không liên quan — không cùng tuổi — không cùng phố.
+Khải Phong ngồi. Trong túi Khải Phong giờ — đã có hai vật xà cừ. Mảnh xà cừ đêm số một (cô gái áo trắng) — và mảnh xà cừ đêm này. Hai cô gái — không liên quan — không cùng tuổi — không cùng phố.
 
 Nhưng đồng hồ — đều dừng đúng bảy giờ mười phút.
 
 [pause:1500ms]
 
-Quang ngẫm. Có một đêm — Quang biết — chính đêm Quang ngồi xe lần đầu — kim đồng hồ trên xe cũng đứng đúng bảy giờ mười. Đêm đó có ai? Quang không nhớ.
+Khải Phong ngẫm. Có một đêm — Khải Phong biết — chính đêm Khải Phong ngồi xe lần đầu — kim đồng hồ trên xe cũng đứng đúng bảy giờ mười. Đêm đó có ai? Khải Phong không nhớ.
 
-Tên "Hà" lại vọng trong đầu Quang — sau hai đêm liên tục.
+Tên "Hạ Vy" lại vọng trong đầu Khải Phong — sau hai đêm liên tục.
 
-Hà — có liên quan đồng hồ xà cừ này không? Có. Có một cảm giác — Hà đã có một đồng hồ giống. Hoặc — Hà đã muốn có một đồng hồ giống. Hoặc — đêm Hà đi — kim đồng hồ Hà cũng đứng bảy giờ mười.
+Hạ Vy — có liên quan đồng hồ xà cừ này không? Có. Có một cảm giác — Hạ Vy đã có một đồng hồ giống. Hoặc — Hạ Vy đã muốn có một đồng hồ giống. Hoặc — đêm Hạ Vy đi — kim đồng hồ Hạ Vy cũng đứng bảy giờ mười.
 
-Quang không biết cái nào.
+Khải Phong không biết cái nào.
 
 Bác tài liếc gương. "Đêm mười hai. Đồng hồ xà cừ dừng cùng giờ — không tình cờ, con à. Cứ giữ. Con sẽ hiểu sau."
 
-Quang gật.
+Khải Phong gật.
 
 Đêm thứ mười hai. Xe đi xuống dốc cầu. Phía dưới — mặt sông Hồng phẳng. Đồng hồ xà cừ đã chìm. Anh Khôi đã tan.
 
-Quang vuốt mảnh xà cừ trong túi. Lạnh.
+Khải Phong vuốt mảnh xà cừ trong túi. Lạnh.

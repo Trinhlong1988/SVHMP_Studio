@@ -1,5 +1,31 @@
 # TẬP 9 — BĂNG CASSETTE GIỌNG BÀ NGOẠI HÁT RU
 
+[INTRO 4.5s — HẮC DẠ KÝ master]
+
+[pause:800ms]
+
+Hắc Dạ Ký — chuyện kể từ cõi vô hình.
+
+[pause:600ms]
+
+Tác giả: Hắc Dạ Ký.
+
+[pause:600ms]
+
+Series: Chuyến xe cuối cùng về đâu.
+
+[pause:600ms]
+
+Ai cũng có một chuyến xe chưa nói lời tạm biệt.
+
+[pause:1000ms]
+
+Tập 9 — câu chuyện đêm nay.
+
+[pause:1500ms]
+
+---
+
 ```
 prompt_version: SVHMP-10.0-RC3.4
 ep_number: 9
@@ -13,7 +39,7 @@ stop_location: ngã ba Lạng Sơn (miền núi phía Bắc)
 bell_count: 1
 ghost_manifest: 1
 word_count: ~2350
-cross_ep_continuity: Quang có 4 vật + bác tài đã nói câu thứ 3 "Hôm nào con sẽ tự ngồi vào ghế thứ chín". Đồng hồ nhích 6 lần.
+cross_ep_continuity: Khải Phong có 4 vật + bác tài đã nói câu thứ 3 "Hôm nào con sẽ tự ngồi vào ghế thứ chín". Đồng hồ nhích 6 lần.
 ```
 
 ---
@@ -24,11 +50,11 @@ cross_ep_continuity: Quang có 4 vật + bác tài đã nói câu thứ 3 "Hôm 
 
 Đêm tháng Một âm lịch. Đông lạnh dày. Chuyến xe đêm chạy qua một đoạn đường ven núi. Hai bên đèo, sương trắng đặc, hắt qua đèn pha xe thành những vệt sáng cong.
 
-Quang ngồi ghế thứ ba. Đêm thứ chín. Trong túi áo có bốn vật — sợi len, sợi lạt, phong bao trống, sợi chỉ trắng.
+Khải Phong ngồi ghế thứ ba. Đêm thứ chín. Trong túi áo có bốn vật — sợi len, sợi lạt, phong bao trống, sợi chỉ trắng.
 
-Bác tài lái như mọi khi. Hai bàn tay đeo găng trắng. Ánh mắt liếc gương — đêm nay dừng trên Quang lâu hơn cả đêm trước. Quang cảm thấy.
+Bác tài lái như mọi khi. Hai bàn tay đeo găng trắng. Ánh mắt liếc gương — đêm nay dừng trên Khải Phong lâu hơn cả đêm trước. Khải Phong cảm thấy.
 
-Câu bác nói đêm trước — "Hôm nào con sẽ tự ngồi vào ghế thứ chín" — Quang chưa hỏi. Không dám hỏi.
+Câu bác nói đêm trước — "Hôm nào con sẽ tự ngồi vào ghế thứ chín" — Khải Phong chưa hỏi. Không dám hỏi.
 
 Xe chậm lại trước một quán bún chả đóng cửa. Ánh đèn vàng yếu trên cột. Một bóng người đứng đợi, cầm dù che mưa.
 
@@ -44,7 +70,7 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Quang nhìn cô qua khe ghế. Cô khoảng ba mươi mấy. Mặt thanh tú. Mắt to, mí dưới hơi quầng — thiếu ngủ.
+Khải Phong nhìn cô qua khe ghế. Cô khoảng ba mươi mấy. Mặt thanh tú. Mắt to, mí dưới hơi quầng — thiếu ngủ.
 
 Cô đặt băng cassette lên đùi. Tay vuốt nhẹ vỏ. Trên mặt vỏ băng có viết tay bằng bút bi: "Bà ngoại hát ru cho cháu Ngọc". Chữ viết tay người già — chậm, run.
 
@@ -68,9 +94,9 @@ Cô ghế năm nhìn về phía đó. Mắt cô mở to.
 
 "Máy của bà..." Cô lẩm bẩm.
 
-Đồng hồ trên xe nhích — tách, tách, tách, tách, tách, tách. Sáu lần liền. Quang đếm. Đêm thứ chín, sáu lần.
+Đồng hồ trên xe nhích — tách, tách, tách, tách, tách, tách. Sáu lần liền. Khải Phong đếm. Đêm thứ chín, sáu lần.
 
-Bác tài không quay đầu. Ánh mắt liếc gương dừng trên Quang. Rất lâu.
+Bác tài không quay đầu. Ánh mắt liếc gương dừng trên Khải Phong. Rất lâu.
 
 Cô ghế năm không nghe tiếng đồng hồ. Vẫn nhìn ngôi nhà sàn.
 
@@ -90,7 +116,7 @@ Cô quay đầu. Cầm băng cassette. Áp lên má.
 
 Giọng cô nhỏ. Khô.
 
-"Bà ngoại nuôi em từ ba tuổi. Bố mẹ em đi xuất khẩu lao động bên Hàn Quốc — gửi tiền về cho bà nuôi em. Em ở với bà tới hết cấp ba. Sau đi học đại học ở Hà Nội. Đi làm. Lấy chồng. Có con."
+"Bà ngoại nuôi em từ ba tuổi. Bố mẹ em đi xuất khẩu lao động bên Hạ Vyn Quốc — gửi tiền về cho bà nuôi em. Em ở với bà tới hết cấp ba. Sau đi học đại học ở Hà Nội. Đi làm. Lấy chồng. Có con."
 
 Cô ngừng. Vuốt vỏ băng.
 
@@ -114,9 +140,9 @@ Cô ngừng. Vuốt vỏ băng.
 
 Bác tài nhìn gương chiếu hậu. Im lặng.
 
-Trong gương chiếu hậu, Quang thấy hai cái bóng. Một là cô. Một là cụ bà — tóc bạc, áo bông xám — ngồi sát ngay sau cô. Cụ bà cầm chiếc máy cassette trên đùi. Tay run run ấn nút Play. Không có tiếng.
+Trong gương chiếu hậu, Khải Phong thấy hai cái bóng. Một là cô. Một là cụ bà — tóc bạc, áo bông xám — ngồi sát ngay sau cô. Cụ bà cầm chiếc máy cassette trên đùi. Tay run run ấn nút Play. Không có tiếng.
 
-Quang chớp mắt. Trong gương vẫn chỉ có cô và một bóng mờ.
+Khải Phong chớp mắt. Trong gương vẫn chỉ có cô và một bóng mờ.
 
 Bác tài cất lời.
 
@@ -194,11 +220,11 @@ Tiếng chuông từ một ngôi chùa nhỏ trên núi. Ngân một hồi. Tan.
 
 Cô gấp băng cassette vào túi vải. Đứng dậy.
 
-Khi đi qua Quang, cô khẽ nói:
+Khi đi qua Khải Phong, cô khẽ nói:
 
 "Chào anh."
 
-Quang gật đầu.
+Khải Phong gật đầu.
 
 Trước khi xuống, cô quay đầu nhìn bác tài. Rồi nhìn lên đồng hồ trên xe.
 
@@ -218,7 +244,7 @@ Cô gật. Bước xuống. Cửa xe khép lại. Xe lăn bánh.
 
 Bên ngoài, cô đi vào con đường đất ven núi. Túi vải xách bên hông. Phía xa, nhà sàn đèn dầu. Trên hiên, cụ bà vẫn ngồi võng, tay đặt máy cassette. Cô lên đến hiên. Cụ bà ngẩng đầu. Hai cái bóng nhìn nhau qua sương.
 
-Quang chớp mắt. Cụ bà không còn. Cô đặt băng lên máy.
+Khải Phong chớp mắt. Cụ bà không còn. Cô đặt băng lên máy.
 
 [pause:1000ms]
 
@@ -228,7 +254,7 @@ Không có tiếng. Băng có lẽ đã hỏng. Hoặc pin đã hết.
 
 Cô vẫn ngồi đó. Tay đặt lên máy. Mắt nhìn xuống. Như chờ tiếng nào đó cất lên.
 
-Quang nghe — qua sương, qua tiếng gió núi — có một giọng phụ nữ rất khẽ. Tiếng Tày. Mấy câu. Không rõ.
+Khải Phong nghe — qua sương, qua tiếng gió núi — có một giọng phụ nữ rất khẽ. Tiếng Tày. Mấy câu. Không rõ.
 
 Rồi tiếng tan vào sương.
 
@@ -244,7 +270,7 @@ Xe lăn bánh tiếp.
 
 Ghế năm trống. Trên sàn, một viên pin cassette cũ rơi — vỏ pin đã rỉ một góc.
 
-Quang nhặt viên pin. Cất vào túi áo. Vật thứ năm.
+Khải Phong nhặt viên pin. Cất vào túi áo. Vật thứ năm.
 
 Đồng hồ kim phút nhích sáu lần liền.
 
@@ -252,21 +278,21 @@ Trên ghế lái, bác tài liếc gương. Lâu. Bác khẽ nói:
 
 "Con cũng có một cái gì đó chưa kịp nói. Con biết đấy."
 
-Quang giật mình. Câu thứ tư bác nói. Câu ngoài hai câu chuẩn.
+Khải Phong giật mình. Câu thứ tư bác nói. Câu ngoài hai câu chuẩn.
 
-Quang lấy năm vật ra. Đặt trên đùi. Sợi len. Sợi lạt. Phong bao trống. Sợi chỉ trắng. Viên pin cassette.
+Khải Phong lấy năm vật ra. Đặt trên đùi. Sợi len. Sợi lạt. Phong bao trống. Sợi chỉ trắng. Viên pin cassette.
 
-Quang nhớ — câu hát ông cụ ghế đầu mở mỗi đêm: "...quê nhà..."
+Khải Phong nhớ — câu hát ông cụ ghế đầu mở mỗi đêm: "...quê nhà..."
 
-Quang nhớ — quê Quang ở đâu? Quang không nhớ rõ.
+Khải Phong nhớ — quê Khải Phong ở đâu? Khải Phong không nhớ rõ.
 
-Quang nhớ — mẹ Quang. Mẹ Quang tên gì? Quang không nhớ.
+Khải Phong nhớ — mẹ Khải Phong. Mẹ Khải Phong tên gì? Khải Phong không nhớ.
 
 Có gì đó đang lùi xa.
 
 [pause:1500ms]
 
-Quang nhìn ra cửa kính. Đêm vẫn dài. Sương núi vẫn dày.
+Khải Phong nhìn ra cửa kính. Đêm vẫn dài. Sương núi vẫn dày.
 
 Trên ghế lái, bác tài liếc gương lần nữa. Ánh mắt không buồn. Không vui. Chỉ là nhìn.
 
@@ -274,15 +300,15 @@ Như nhìn một người sắp nhớ ra điều gì đó rất quan trọng.
 
 [pause:1200ms]
 
-Quang lấy viên pin cassette đặt trong tay. Pin đã rỉ một góc. Trên vỏ pin có khắc nhãn cũ — chữ Nhật, hoặc chữ gì đó Quang không đọc được.
+Khải Phong lấy viên pin cassette đặt trong tay. Pin đã rỉ một góc. Trên vỏ pin có khắc nhãn cũ — chữ Nhật, hoặc chữ gì đó Khải Phong không đọc được.
 
-Quang lật pin. Mặt sau có một dấu in nhỏ — bóng mờ, không rõ. Như dấu vân tay ai đó đã ấn lên rất lâu.
+Khải Phong lật pin. Mặt sau có một dấu in nhỏ — bóng mờ, không rõ. Như dấu vân tay ai đó đã ấn lên rất lâu.
 
-Quang đưa pin lên gần ngọn đèn nhỏ trong xe. Cố nhìn dấu vân tay.
+Khải Phong đưa pin lên gần ngọn đèn nhỏ trong xe. Cố nhìn dấu vân tay.
 
-Đó là dấu vân tay phụ nữ — nhỏ, mảnh. Có một vết sẹo nhỏ ở đầu ngón cái — vết hình lưỡi liềm. Quang nhớ — bà ngoại Quang. Bà có vết sẹo đó. Bà bị bỏng dầu khi nấu cơm hồi trẻ.
+Đó là dấu vân tay phụ nữ — nhỏ, mảnh. Có một vết sẹo nhỏ ở đầu ngón cái — vết hình lưỡi liềm. Khải Phong nhớ — bà ngoại Khải Phong. Bà có vết sẹo đó. Bà bị bỏng dầu khi nấu cơm hồi trẻ.
 
-Bao giờ bà ngoại Quang đã chạm vào viên pin này? Quang không nhớ. Quang chưa từng có máy cassette. Hay đã có? Quang không chắc.
+Bao giờ bà ngoại Khải Phong đã chạm vào viên pin này? Khải Phong không nhớ. Khải Phong chưa từng có máy cassette. Hay đã có? Khải Phong không chắc.
 
 [pause:1500ms]
 

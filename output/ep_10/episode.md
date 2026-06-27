@@ -1,5 +1,31 @@
 # TẬP 10 — KHĂN TAY CŨ BA MƯƠI NĂM SAU ĐÁM MA BÀ NỘI
 
+[INTRO 4.5s — HẮC DẠ KÝ master]
+
+[pause:800ms]
+
+Hắc Dạ Ký — chuyện kể từ cõi vô hình.
+
+[pause:600ms]
+
+Tác giả: Hắc Dạ Ký.
+
+[pause:600ms]
+
+Series: Chuyến xe cuối cùng về đâu.
+
+[pause:600ms]
+
+Ai cũng có một chuyến xe chưa nói lời tạm biệt.
+
+[pause:1000ms]
+
+Tập 10 — câu chuyện đêm nay.
+
+[pause:1500ms]
+
+---
+
 ```
 prompt_version: SVHMP-10.0-RC3.4
 ep_number: 10
@@ -14,7 +40,7 @@ bell_count: 1
 ghost_manifest: 1
 word_count: ~2400
 cross_ep_continuity: 
-  - Quang đã có 5 vật. Phase này Quang ngồi đối diện chính mình — chú trung niên 36-50 có thể là PHIÊN BẢN LỚN của Quang
+  - Khải Phong đã có 5 vật. Phase này Khải Phong ngồi đối diện chính mình — chú trung niên 36-50 có thể là PHIÊN BẢN LỚN của Khải Phong
   - Đồng hồ nhích 7 lần (peak gradient establish phase)
   - Driver câu thứ 5: "Con sắp ngồi cùng họ rồi"
   - Cliffhanger MEGA: cây cầu Long Biên — EP01 stop_location. Có Hà chăng?
@@ -28,21 +54,21 @@ cross_ep_continuity:
 
 Đêm ba mươi tháng Chạp. Sương đặc. Chuyến xe đêm chạy về phía Hà Nội. Đèn pha quét lên bụi dứa dại ven đường. Phía xa, ánh đèn thành phố loé sáng qua sương.
 
-Quang ngồi ghế thứ ba. Đêm thứ mười. Trong túi áo, năm vật: sợi len nâu, sợi lạt buộc, phong bao lì xì trống, sợi chỉ trắng, viên pin cassette rỉ.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười. Trong túi áo, năm vật: sợi len nâu, sợi lạt buộc, phong bao lì xì trống, sợi chỉ trắng, viên pin cassette rỉ.
 
-Bác tài lái như mọi khi. Hai bàn tay đeo găng trắng. Ánh mắt liếc gương chiếu hậu — đêm nay không liếc. Bác nhìn Quang trực tiếp qua gương, lâu hơn cả đêm trước.
+Bác tài lái như mọi khi. Hai bàn tay đeo găng trắng. Ánh mắt liếc gương chiếu hậu — đêm nay không liếc. Bác nhìn Khải Phong trực tiếp qua gương, lâu hơn cả đêm trước.
 
-Quang nhớ câu bác nói đêm trước — "Con cũng có một cái gì đó chưa kịp nói. Con biết đấy." — câu đó Quang vẫn chưa hỏi. Vẫn không dám.
+Khải Phong nhớ câu bác nói đêm trước — "Con cũng có một cái gì đó chưa kịp nói. Con biết đấy." — câu đó Khải Phong vẫn chưa hỏi. Vẫn không dám.
 
 Xe chậm lại trước một quán cà phê đêm ven đường vào thành phố. Đèn vàng yếu hắt xuống. Một người đàn ông đứng đợi.
 
 Một chú trung niên. Khoảng bốn mươi mấy tuổi. Mặc áo khoác da đen, tóc bạc một vài sợi ở thái dương. Mặt khắc khổ. Tay phải xách cặp da. Tay trái cầm một chiếc khăn tay cũ — màu xanh nhạt, hai đầu thêu hoa nhỏ.
 
-Quang nhìn cái khăn. Có cảm giác đã thấy từ trước — EP08, em sinh viên đêm Bắc Ninh.
+Khải Phong nhìn cái khăn. Có cảm giác đã thấy từ trước — EP08, em sinh viên đêm Bắc Ninh.
 
-Chú bước lên xe. Đi xuống lối giữa. Ngồi vào ghế thứ ba — cùng ghế Quang.
+Chú bước lên xe. Đi xuống lối giữa. Ngồi vào ghế thứ ba — cùng ghế Khải Phong.
 
-Không. Ngồi vào ghế thứ ba KHÁC. Ghế bên cạnh Quang. Cách Quang một ghế.
+Không. Ngồi vào ghế thứ ba KHÁC. Ghế bên cạnh Khải Phong. Cách Khải Phong một ghế.
 
 Xe lăn bánh trở lại.
 
@@ -54,17 +80,17 @@ Xe lăn bánh trở lại.
 
 Chú đặt cặp da xuống chỗ trống bên cạnh. Khăn tay vẫn cầm trên đùi.
 
-Quang quay đầu nhẹ. Nhìn chú. Lần đầu trong mười đêm Quang quay nhìn passenger.
+Khải Phong quay đầu nhẹ. Nhìn chú. Lần đầu trong mười đêm Khải Phong quay nhìn passenger.
 
 Chú đang vuốt khăn tay. Cùng cái khăn EP08 — xanh nhạt, thêu hoa trắng. Nhưng khăn này đã bạc hơn nhiều, sờn mép. Như đã giữ ba mươi năm.
 
-Chú nhìn lên. Bắt gặp ánh mắt Quang.
+Chú nhìn lên. Bắt gặp ánh mắt Khải Phong.
 
 Chú khẽ mỉm cười. Một cái cười rất nhẹ. Không quen, không lạ.
 
 "Anh cũng về Hà Nội đêm ba mươi à?"
 
-Quang gật đầu. Quang không biết vì sao mình ngồi xe này. Vì sao về Hà Nội. Nhưng Quang gật.
+Khải Phong gật đầu. Khải Phong không biết vì sao mình ngồi xe này. Vì sao về Hà Nội. Nhưng Khải Phong gật.
 
 Ông cụ ghế đầu vặn radio. Tiếng "...quê nhà..." quen thuộc.
 
@@ -78,11 +104,11 @@ Bác tài liếc gương. Lâu.
 
 Xe đi qua một đoạn đường có bệnh viện huyện cũ. Tường vàng sờn. Cổng vào có một cây bồ đề già. Dưới gốc cây, có ai đó ngồi — bóng người mặc áo bông xám, tóc bạc, lưng còng.
 
-Chú ngồi cạnh Quang nhìn về phía đó. Cổ họng nuốt một cái nhẹ.
+Chú ngồi cạnh Khải Phong nhìn về phía đó. Cổ họng nuốt một cái nhẹ.
 
 "Bệnh viện này..." Chú nói khẽ.
 
-Đồng hồ trên xe kim phút nhích — tách, tách, tách, tách, tách, tách, tách. Bảy lần liền. Quang đếm. Đêm thứ mười, bảy lần.
+Đồng hồ trên xe kim phút nhích — tách, tách, tách, tách, tách, tách, tách. Bảy lần liền. Khải Phong đếm. Đêm thứ mười, bảy lần.
 
 Chú không nghe tiếng đồng hồ. Đang nhìn bóng người dưới gốc bồ đề.
 
@@ -128,9 +154,9 @@ Chú ngừng. Vuốt khăn.
 
 Bác tài nhìn gương chiếu hậu. Im lặng.
 
-Trong gương chiếu hậu, Quang thấy ba cái bóng. Một là chú Việt. Một là bà nội cụ — tóc bạc, áo bông xám — ngồi sau chú. Một bóng khác — mờ hơn — ngồi sau Quang. Bóng đó Quang không nhìn rõ. Có thể là phụ nữ. Có thể là tự Quang.
+Trong gương chiếu hậu, Khải Phong thấy ba cái bóng. Một là chú Việt. Một là bà nội cụ — tóc bạc, áo bông xám — ngồi sau chú. Một bóng khác — mờ hơn — ngồi sau Khải Phong. Bóng đó Khải Phong không nhìn rõ. Có thể là phụ nữ. Có thể là tự Khải Phong.
 
-Quang chớp mắt. Trong gương chỉ còn chú Việt và một bóng mờ.
+Khải Phong chớp mắt. Trong gương chỉ còn chú Việt và một bóng mờ.
 
 Bác tài cất lời.
 
@@ -176,9 +202,9 @@ Chú Việt khẽ gật.
 
 Xe chậm lại. Phía trước có một cây cầu. Đèn vàng yếu chiếu lên thành cầu sắt. Cầu Long Biên.
 
-Quang nhìn ra cửa kính. Cảm giác đã từng đến đây. Đã từng dừng ở chỗ này. Đã từng có ai đó xuống xe ở đây.
+Khải Phong nhìn ra cửa kính. Cảm giác đã từng đến đây. Đã từng dừng ở chỗ này. Đã từng có ai đó xuống xe ở đây.
 
-Chú Việt nhìn theo Quang. Khẽ nói:
+Chú Việt nhìn theo Khải Phong. Khẽ nói:
 
 "Cầu Long Biên à? Đây là chỗ anh xuống. Em vợ anh đang ngồi nhà ở Phố Cổ chờ anh."
 
@@ -188,11 +214,11 @@ Tiếng chuông giao thừa ngân từ một ngôi chùa nhỏ ven sông Hồng.
 
 Chú đứng dậy. Cầm cặp. Khăn tay vẫn cầm tay.
 
-Khi đi qua Quang, chú khẽ nói:
+Khi đi qua Khải Phong, chú khẽ nói:
 
 "Chào anh. Năm mới đến rồi."
 
-Quang gật đầu. Chú đi tiếp.
+Khải Phong gật đầu. Chú đi tiếp.
 
 Trước khi xuống, chú quay đầu nhìn bác tài. Rồi nhìn lên đồng hồ trên xe.
 
@@ -212,11 +238,11 @@ Cửa xe khép lại. Xe lăn bánh.
 
 [pause:1200ms]
 
-Bên ngoài, Quang thấy chú Việt đứng giữa cầu Long Biên. Khăn tay cầm trên tay. Chú quay đầu nhìn về phía sông Hồng. Sông tối. Sương dày.
+Bên ngoài, Khải Phong thấy chú Việt đứng giữa cầu Long Biên. Khăn tay cầm trên tay. Chú quay đầu nhìn về phía sông Hồng. Sông tối. Sương dày.
 
 Có một bóng người khác — phụ nữ, tóc cột thấp — đang đi trên cầu, hướng về phía chú. Người ấy mặc áo dài nâu. Trong tay cầm một cuộn áo len nâu — chưa đan xong.
 
-Quang chớp mắt. Người ấy không còn.
+Khải Phong chớp mắt. Người ấy không còn.
 
 Chỉ có chú Việt đứng giữa cầu. Một mình.
 
@@ -228,35 +254,35 @@ Chỉ có chú Việt đứng giữa cầu. Một mình.
 
 Xe tiếp tục lăn bánh qua cầu Long Biên.
 
-Ghế thứ ba cạnh Quang trống. Trên đệm ghế, có một chiếc khăn tay xanh nhạt thêu hoa trắng — chú Việt để lại. Có chữ viết tay nguệch ngoạc trên khăn — chữ vừa được viết bằng bút bi vài giây trước. Một dòng:
+Ghế thứ ba cạnh Khải Phong trống. Trên đệm ghế, có một chiếc khăn tay xanh nhạt thêu hoa trắng — chú Việt để lại. Có chữ viết tay nguệch ngoạc trên khăn — chữ vừa được viết bằng bút bi vài giây trước. Một dòng:
 
-"Cháu Quang — bà nhớ cháu."
+"Cháu Khải Phong — bà nhớ cháu."
 
-Quang cầm khăn. Tay run. Quang ngẩng đầu nhìn bác tài qua gương chiếu hậu.
+Khải Phong cầm khăn. Tay run. Khải Phong ngẩng đầu nhìn bác tài qua gương chiếu hậu.
 
-Bác tài đang nhìn Quang. Lần đầu trong mười đêm, bác nhìn thẳng — không qua gương. Bác đã quay đầu nhẹ về phía Quang.
+Bác tài đang nhìn Khải Phong. Lần đầu trong mười đêm, bác nhìn thẳng — không qua gương. Bác đã quay đầu nhẹ về phía Khải Phong.
 
 Bác khẽ nói câu thứ năm:
 
 "Con sắp ngồi cùng họ rồi."
 
-Quang lùi lại trên ghế. Tay vẫn cầm khăn.
+Khải Phong lùi lại trên ghế. Tay vẫn cầm khăn.
 
 Khăn ấm. Mùi long não cũ.
 
-Quang nhớ — bà nội Quang. Bà nội Quang đã mất từ lâu lắm. Trước cả khi Quang sinh ra hay sau? Quang không nhớ.
+Khải Phong nhớ — bà nội Khải Phong. Bà nội Khải Phong đã mất từ lâu lắm. Trước cả khi Khải Phong sinh ra hay sau? Khải Phong không nhớ.
 
-Quang nhớ — bà nội Quang vẫn ngồi đợi ở quê Hà Nội cũ. Bà có cái khăn tay xanh nhạt thêu hoa. Bà bảo: "Cháu đi đâu cũng mang theo. Mùi nhà mình."
+Khải Phong nhớ — bà nội Khải Phong vẫn ngồi đợi ở quê Hà Nội cũ. Bà có cái khăn tay xanh nhạt thêu hoa. Bà bảo: "Cháu đi đâu cũng mang theo. Mùi nhà mình."
 
-Quang không nhớ bao nhiêu năm rồi mình chưa về.
+Khải Phong không nhớ bao nhiêu năm rồi mình chưa về.
 
 [pause:2000ms]
 
-Quang lấy năm vật trong túi ra. Đặt cạnh chiếc khăn tay vừa nhận. Sáu vật. Mười đêm. Mười người đã xuống — chín hành khách và Quang chính mình ngày mai.
+Khải Phong lấy năm vật trong túi ra. Đặt cạnh chiếc khăn tay vừa nhận. Sáu vật. Mười đêm. Mười người đã xuống — chín hành khách và Khải Phong chính mình ngày mai.
 
-Quang nhìn ra cửa kính. Cầu Long Biên dưới chân xe. Sông Hồng dưới cầu. Đêm vẫn dài.
+Khải Phong nhìn ra cửa kính. Cầu Long Biên dưới chân xe. Sông Hồng dưới cầu. Đêm vẫn dài.
 
-Quang khẽ nhắm mắt. Hơi thở chậm xuống một nhịp.
+Khải Phong khẽ nhắm mắt. Hơi thở chậm xuống một nhịp.
 
 Đồng hồ trên xe kim phút nhích — tách, tách, tách, tách, tách, tách, tách, tách. Tám lần liền.
 
@@ -264,7 +290,7 @@ Tới rồi đấy. Có một câu hát từ ông cụ radio ghế đầu vọng
 
 "...bà ơi cháu về..."
 
-Quang mở mắt. Ánh mắt bác tài qua gương dừng trên Quang — bình tĩnh, lặng. Không thương xót. Không khẩn cấp.
+Khải Phong mở mắt. Ánh mắt bác tài qua gương dừng trên Khải Phong — bình tĩnh, lặng. Không thương xót. Không khẩn cấp.
 
 Chỉ chờ.
 
@@ -274,7 +300,7 @@ Chỉ chờ.
 
 - ✅ ALWAYS_5 + NEVER_7 + GHOST_3 + SERIES_8
 - ✅ Driver câu chuẩn (Con đã nhớ ra chưa? + Chưa tới lúc) + câu thứ 5 ngoại lệ (foreshadow build-up qua 10 ep)
-- ✅ Cross-ep arc payoff: Cầu Long Biên (EP01 stop) quay lại, bóng Hà thoáng qua, Quang nhận khăn tay mang chữ tên mình
-- ✅ Foreshadow EP11+: Quang nhận ra mình cũng là hành khách
+- ✅ Cross-ep arc payoff: Cầu Long Biên (EP01 stop) quay lại, bóng Hà thoáng qua, Khải Phong nhận khăn tay mang chữ tên mình
+- ✅ Foreshadow EP11+: Khải Phong nhận ra mình cũng là hành khách
 - ✅ Variation EP08 (cùng obj KHAN_TAY_CU + REG_FAM_002): EP08 cháu trẻ raw / EP10 chú trung niên 30 năm sau, thấm
 ```

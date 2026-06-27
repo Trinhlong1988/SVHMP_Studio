@@ -1,12 +1,38 @@
 # TẬP 16 — CHẬU CÚC MẸ TRỒNG TÔI ĐÃ CÃI MẸ NĂM TÔI HAI MƯƠI
 
+[INTRO 4.5s — HẮC DẠ KÝ master]
+
+[pause:800ms]
+
+Hắc Dạ Ký — chuyện kể từ cõi vô hình.
+
+[pause:600ms]
+
+Tác giả: Hắc Dạ Ký.
+
+[pause:600ms]
+
+Series: Chuyến xe cuối cùng về đâu.
+
+[pause:600ms]
+
+Ai cũng có một chuyến xe chưa nói lời tạm biệt.
+
+[pause:1000ms]
+
+Tập 16 — câu chuyện đêm nay.
+
+[pause:1500ms]
+
+---
+
 ```
 prompt_version: SVHMP-10.0-RC3.5
 ep_number: 16
 phase: warming (S1)
 pillar: family
 intensity_level: 0.55
-quang_memory_fragment: M4 (Quang nhớ Hà mất — cảm giác mất rõ hơn)
+quang_memory_fragment: M4 (Khải Phong nhớ Hạ Vy mất — cảm giác mất rõ hơn)
 object_sub_arc: HOA_CUC cluster vật 3 (chậu cúc mẹ trồng — echo EP13/14)
 callback_target: none (cluster build continue)
 passenger_main: nu 38 Hoàng Yến Hà Đông (cãi mẹ chuyện chồng — mẹ mất sau 1 tháng)
@@ -28,9 +54,9 @@ arc_design_compliant: bible/21 R33-R38
 
 Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven cánh đồng lúa Phú Xuyên. Đèn pha quét lên ruộng lúa mới cấy — nước in trời mây.
 
-Quang ngồi ghế thứ ba. Đêm thứ mười sáu. Trong túi áo gió Quang — mười lăm vật. Đêm qua thêm vải bông cuốn gương vỡ.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười sáu. Trong túi áo gió Khải Phong — mười lăm vật. Đêm qua thêm vải bông cuốn gương vỡ.
 
-Bác tài lái. Đoạn đường này Quang chưa đi — Phú Xuyên ngoại thành phía Nam Hà Nội.
+Bác tài lái. Đoạn đường này Khải Phong chưa đi — Phú Xuyên ngoại thành phía Nam Hà Nội.
 
 Xe chậm lại trước một sân chùa nhỏ — cổng tam quan đã đóng — đèn dầu treo cột tre còn sáng yếu. Bảng "Chùa Phú Đường" gỗ cũ.
 
@@ -48,7 +74,7 @@ Xe lăn bánh.
 
 Cô ngồi yên. Đỡ chậu cúc. Cánh hoa vàng nhạt — không phải cúc khô — cúc tươi mới hái.
 
-Quang quan sát từ ghế ba. Cúc trong chậu cô đỡ — màu vàng nhạt — giống cánh cúc khô đêm thứ mười ba — giống chỉ thêu đêm thứ mười bốn. Cùng cúc — vật thứ ba trong cụm.
+Khải Phong quan sát từ ghế ba. Cúc trong chậu cô đỡ — màu vàng nhạt — giống cánh cúc khô đêm thứ mười ba — giống chỉ thêu đêm thứ mười bốn. Cùng cúc — vật thứ ba trong cụm.
 
 Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng. Tắt.
 
@@ -174,9 +200,9 @@ Bên ngoài — cô đi vào chùa Phú Đường — cổng tam quan đã mở.
 
 Cô đến. Đặt chậu cúc trước bệ. Quỳ. Cúi đầu. Tay chắp.
 
-Quang chớp mắt — nhìn qua cửa sổ. Bên chậu cúc — bà mẹ xuất hiện — mặc áo bà ba xám — tay cầm bình nước — vuốt tóc cô Hoàng Yến một lần. Mỉm cười.
+Khải Phong chớp mắt — nhìn qua cửa sổ. Bên chậu cúc — bà mẹ xuất hiện — mặc áo bà ba xám — tay cầm bình nước — vuốt tóc cô Hoàng Yến một lần. Mỉm cười.
 
-Quang chớp lần nữa. Mẹ tan.
+Khải Phong chớp lần nữa. Mẹ tan.
 
 Hoàng Yến ngẩng đầu. Lau khóe mắt bằng tay áo dài. Quỳ thêm. Tụng nhỏ.
 
@@ -188,7 +214,7 @@ Hoàng Yến ngẩng đầu. Lau khóe mắt bằng tay áo dài. Quỳ thêm. T
 
 Xe lăn bánh — rời ngã ba Phú Xuyên.
 
-Ghế mười trống. Trên sàn — một cánh cúc tươi vàng nhạt rơi — bong từ chậu khi cô đứng dậy. Quang nhặt. Cánh cúc — mềm — không khô — màu nắng cuối thu.
+Ghế mười trống. Trên sàn — một cánh cúc tươi vàng nhạt rơi — bong từ chậu khi cô đứng dậy. Khải Phong nhặt. Cánh cúc — mềm — không khô — màu nắng cuối thu.
 
 Bỏ vào túi. Vật thứ mười sáu.
 
@@ -196,24 +222,24 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Quang ngồi. Mở túi — đếm — mười sáu vật. Ba vật cúc: cánh cúc khô vàng (đêm mười ba) — chỉ thêu cúc (đêm mười bốn) — cánh cúc tươi (đêm này).
+Khải Phong ngồi. Mở túi — đếm — mười sáu vật. Ba vật cúc: cánh cúc khô vàng (đêm mười ba) — chỉ thêu cúc (đêm mười bốn) — cánh cúc tươi (đêm này).
 
 Ba cụm. Cụm cúc đã thành — chưa kết thúc.
 
-Quang ngẫm. Hà — cô cài cúc lên tai — Quang đã thấy hình ảnh đó. Đêm nay — Quang cảm thấy thêm — Hà mất đột ngột — không tự ý — không bệnh dài — đột tử như mẹ cô Hoàng Yến.
+Khải Phong ngẫm. Hạ Vy — cô cài cúc lên tai — Khải Phong đã thấy hình ảnh đó. Đêm nay — Khải Phong cảm thấy thêm — Hạ Vy mất đột ngột — không tự ý — không bệnh dài — đột tử như mẹ cô Hoàng Yến.
 
-Hà tai nạn? Hay nhồi máu? Hay khác?
+Hạ Vy tai nạn? Hay nhồi máu? Hay khác?
 
-Quang cố nhớ. Hình ảnh mờ — một con đường — mưa — một cú va chạm — một âm thanh thật to.
+Khải Phong cố nhớ. Hình ảnh mờ — một con đường — mưa — một cú va chạm — một âm thanh thật to.
 
-Hà — tai nạn.
+Hạ Vy — tai nạn.
 
 [pause:1500ms]
 
-Quang nhói. Đêm nay Quang đã chuyển từ "Hà mất" mơ hồ sang "Hà tai nạn" — cụ thể hơn — đau hơn.
+Khải Phong nhói. Đêm nay Khải Phong đã chuyển từ "Hạ Vy mất" mơ hồ sang "Hạ Vy tai nạn" — cụ thể hơn — đau hơn.
 
-Bác tài liếc gương. "Đêm mười sáu. Con bắt đầu nhớ cách Hà đi. Đêm sau con sẽ nhớ rõ hơn — về một đêm mưa — một con đường. Đừng vội."
+Bác tài liếc gương. "Đêm mười sáu. Con bắt đầu nhớ cách Hạ Vy đi. Đêm sau con sẽ nhớ rõ hơn — về một đêm mưa — một con đường. Đừng vội."
 
-Quang gật. Không hỏi.
+Khải Phong gật. Không hỏi.
 
 Đêm thứ mười sáu. Xe đi tiếp về phía đường vành đai. Phía sau — Phú Xuyên khuất. Cô Hoàng Yến ở lại chùa — quỳ — tụng — gửi chậu cúc mẹ cho chùa.

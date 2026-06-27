@@ -1,5 +1,31 @@
 # TẬP 2 — ÁO LEN NÂU CHƯA KỊP ĐAN HẾT
 
+[INTRO 4.5s — HẮC DẠ KÝ master]
+
+[pause:800ms]
+
+Hắc Dạ Ký — chuyện kể từ cõi vô hình.
+
+[pause:600ms]
+
+Tác giả: Hắc Dạ Ký.
+
+[pause:600ms]
+
+Series: Chuyến xe cuối cùng về đâu.
+
+[pause:600ms]
+
+Ai cũng có một chuyến xe chưa nói lời tạm biệt.
+
+[pause:1000ms]
+
+Tập 2 — câu chuyện đêm nay.
+
+[pause:1500ms]
+
+---
+
 ```
 prompt_version : SVHMP-10.0-RC3.4
 ep_number      : 2
@@ -43,7 +69,7 @@ constitution_compliance:
 
 Chuyến xe đêm rẽ qua một con đường vắng. Đèn pha quét nhẹ lên bụi mía sương mờ. Phía bên kia đường là một bãi đất trống, không nhà. Chỉ có gió và tiếng mía cọ vào nhau khe khẽ.
 
-Quang ngồi ghế thứ ba, tay khoanh trước ngực, nhìn ra cửa kính. Đêm hai tám tháng Chạp. Người trên xe ít hơn mọi khi.
+Khải Phong ngồi ghế thứ ba, tay khoanh trước ngực, nhìn ra cửa kính. Đêm hai tám tháng Chạp. Người trên xe ít hơn mọi khi.
 
 Phía trước ghế lái, bác tài vẫn ngồi yên như mọi lần. Hai bàn tay đeo găng trắng đặt lên vô-lăng. Bác nhìn gương chiếu hậu một thoáng, rồi lại tập trung vào đoạn đường tối phía trước.
 
@@ -61,7 +87,7 @@ Xe lăn bánh trở lại.
 
 # SETUP [section 2 — Giới thiệu hành khách]
 
-Quang nhìn cô gái qua khe lưng ghế. Cô đặt cuộn vải nâu lên đùi. Bàn tay vuốt nhẹ lên mặt áo. Có chỗ đường len chưa khâu hết — kim còn cắm lại, sợi len thừa khoảng nửa gang tay.
+Khải Phong nhìn cô gái qua khe lưng ghế. Cô đặt cuộn vải nâu lên đùi. Bàn tay vuốt nhẹ lên mặt áo. Có chỗ đường len chưa khâu hết — kim còn cắm lại, sợi len thừa khoảng nửa gang tay.
 
 Cô không nhìn ai. Cô nhìn ra cửa kính.
 
@@ -77,7 +103,7 @@ Một ông cụ ngồi ghế thứ nhất bật chiếc radio cũ. Tiếng radio
 
 Cô gái ghế bảy quay đầu, nhìn ông cụ một thoáng. Rồi quay lại cửa sổ.
 
-Quang đoán cô khoảng hai mươi hai, hai ba tuổi. Mắt to. Mí dưới hơi sưng — như khóc lâu, đã tạnh nhưng vết chưa kịp xẹp.
+Khải Phong đoán cô khoảng hai mươi hai, hai ba tuổi. Mắt to. Mí dưới hơi sưng — như khóc lâu, đã tạnh nhưng vết chưa kịp xẹp.
 
 ---
 
@@ -93,7 +119,7 @@ Cô nâng cuộn áo lên, đưa lên ngang ngực. Như đang ướm thử. Hai
 
 "Mẹ bảo con mặc áo này về Tết..." Cô nói, rất khẽ. Không nói với ai. Không nhìn ai.
 
-Quang nghe thấy. Quang biết câu đó không dành cho mình.
+Khải Phong nghe thấy. Khải Phong biết câu đó không dành cho mình.
 
 [pause:1000ms]
 
@@ -107,7 +133,7 @@ Cô gái ghế bảy không nghe tiếng đồng hồ. Cô đang vuốt lại đ
 
 # REVEAL [section 4 — Hé lộ]
 
-Quang quan sát. Quang nhận ra một điều.
+Khải Phong quan sát. Khải Phong nhận ra một điều.
 
 Cô gái đang đan tiếp. Không có kim trong tay. Không có cuộn len. Chỉ có hai bàn tay cô đi qua mặt áo, lần theo từng đường khâu, như thể đang nối tiếp một việc bỏ dở từ rất lâu.
 
@@ -141,9 +167,9 @@ Cô đưa hai bàn tay lên. Nhìn vào lòng bàn tay mình. Như nhìn vào ha
 
 Bác tài nhìn gương chiếu hậu một thoáng. Im lặng. Không nói câu nào.
 
-Trong gương chiếu hậu phía sau ghế lái — chỗ phản chiếu chỗ cô gái ngồi — Quang thấy hai cái bóng. Một là cô. Một là một người phụ nữ lớn tuổi hơn, tóc búi gọn, ngồi sát ngay phía sau cô. Người phụ nữ ấy đang cầm hai cây kim đan, tay vẫn đan, mắt nhìn cô gái phía trước.
+Trong gương chiếu hậu phía sau ghế lái — chỗ phản chiếu chỗ cô gái ngồi — Khải Phong thấy hai cái bóng. Một là cô. Một là một người phụ nữ lớn tuổi hơn, tóc búi gọn, ngồi sát ngay phía sau cô. Người phụ nữ ấy đang cầm hai cây kim đan, tay vẫn đan, mắt nhìn cô gái phía trước.
 
-Quang chớp mắt. Trong gương vẫn chỉ có cô gái và cái bóng đã đan dở.
+Khải Phong chớp mắt. Trong gương vẫn chỉ có cô gái và cái bóng đã đan dở.
 
 [pause:1200ms]
 
@@ -217,9 +243,9 @@ Cửa xe khép lại. Xe lăn bánh.
 
 [pause:1000ms]
 
-Bên ngoài cửa kính, Quang thấy cô gái đi vào con đường đất. Hai tay vẫn ôm cuộn áo. Phía cuối đường, mái nhà tranh có một bóng người ngồi ở hiên — ngồi rất yên, tay cầm hai cây kim đan.
+Bên ngoài cửa kính, Khải Phong thấy cô gái đi vào con đường đất. Hai tay vẫn ôm cuộn áo. Phía cuối đường, mái nhà tranh có một bóng người ngồi ở hiên — ngồi rất yên, tay cầm hai cây kim đan.
 
-Quang chớp mắt. Bóng người ấy không còn.
+Khải Phong chớp mắt. Bóng người ấy không còn.
 
 Chỉ có ngọn đèn dầu nhấp nháy trong sương.
 
@@ -227,7 +253,7 @@ Chỉ có ngọn đèn dầu nhấp nháy trong sương.
 
 # CLIFFHANGER [section 6 — Dư âm]
 
-Xe tiếp tục lăn bánh. Quang ngồi yên. Mảng kính cửa sổ vẫn còn vết hơi thở của cô gái ghế bảy, chưa kịp tan.
+Xe tiếp tục lăn bánh. Khải Phong ngồi yên. Mảng kính cửa sổ vẫn còn vết hơi thở của cô gái ghế bảy, chưa kịp tan.
 
 Bác tài lái như mọi khi. Hai tay vô-lăng. Găng trắng. Nhịp ngón trỏ ba cái.
 
@@ -235,21 +261,21 @@ Trên ghế thứ bảy giờ đã trống. Nhưng phần đệm ghế còn lõm
 
 Đồng hồ trên xe kim phút lại nhích. Tách. Một lần.
 
-Quang nhìn ra cửa kính. Bên ngoài, đêm hai tám tháng Chạp vẫn dài. Còn nhiều ngã ba phía trước. Còn nhiều người đang đợi ai đó về.
+Khải Phong nhìn ra cửa kính. Bên ngoài, đêm hai tám tháng Chạp vẫn dài. Còn nhiều ngã ba phía trước. Còn nhiều người đang đợi ai đó về.
 
-Có ai đó. Còn ngồi sau lưng Quang. Quang chưa quay đầu.
+Có ai đó. Còn ngồi sau lưng Khải Phong. Khải Phong chưa quay đầu.
 
 [pause:1200ms]
 
-Quang đặt tay lên đùi. Hai bàn tay Quang trống. Không có cuộn áo. Không có vật gì.
+Khải Phong đặt tay lên đùi. Hai bàn tay Khải Phong trống. Không có cuộn áo. Không có vật gì.
 
-Nhưng đêm nay, Quang thấy nhớ mẹ Quang. Mẹ Quang đã đi từ rất lâu. Bao nhiêu năm rồi Quang không tính. Mỗi đêm mưa phùn về quê, Quang lại nhớ mùi áo len mẹ đan, mùi tay mẹ áp lên trán Quang lúc Quang bé.
+Nhưng đêm nay, Khải Phong thấy nhớ mẹ Khải Phong. Mẹ Khải Phong đã đi từ rất lâu. Bao nhiêu năm rồi Khải Phong không tính. Mỗi đêm mưa phùn về quê, Khải Phong lại nhớ mùi áo len mẹ đan, mùi tay mẹ áp lên trán Khải Phong lúc Khải Phong bé.
 
-Mẹ Quang chưa kịp đan xong cái áo nào cho Quang. Mẹ đi vào một đêm mùa đông. Quang không có mặt. Quang ở Sài Gòn. Quang về trễ ba ngày.
+Mẹ Khải Phong chưa kịp đan xong cái áo nào cho Khải Phong. Mẹ đi vào một đêm mùa đông. Khải Phong không có mặt. Khải Phong ở Sài Gòn. Khải Phong về trễ ba ngày.
 
-Tay Quang khẽ run.
+Tay Khải Phong khẽ run.
 
-Trên ghế lái, bác tài liếc gương chiếu hậu một thoáng. Ánh mắt bác dừng lại trên Quang. Lâu hơn một nhịp.
+Trên ghế lái, bác tài liếc gương chiếu hậu một thoáng. Ánh mắt bác dừng lại trên Khải Phong. Lâu hơn một nhịp.
 
 Rồi bác nhìn lại con đường phía trước. Hai bàn tay găng trắng đặt yên trên vô-lăng. Không nói gì.
 
@@ -277,7 +303,7 @@ SVHMP_EP02:
 - ✅ ALWAYS.unresolved_goodbye: mẹ không kịp nói gì + áo đan dở
 - ✅ ALWAYS.object_symbolism: OBJ_AO_LEN_NAU = vehicle of regret
 - ✅ ALWAYS.subtle_supernatural: 1 manifestation (gương chiếu hậu, không nói)
-- ✅ ALWAYS.emotional_aftertaste: cliffhanger có người ngồi sau lưng Quang
+- ✅ ALWAYS.emotional_aftertaste: cliffhanger có người ngồi sau lưng Khải Phong
 - ✅ NEVER.gore / jump_scare / exorcism / monster / combat / villain / explanation — KHÔNG có
 - ✅ GHOST.never_attack / never_chase / never_speak_directly — mẹ ngồi yên, không nói, không đuổi
 - ✅ SERIES.bus 1 / driver 2 câu / bell ≤1 / ghost ≤1 / object yes / unresolved / subtle haunting / regret_supernatural

@@ -1,5 +1,31 @@
 # TẬP 7 — PHONG BAO LÌ XÌ ĐẦU TIÊN CON MUA CHO MẸ
 
+[INTRO 4.5s — HẮC DẠ KÝ master]
+
+[pause:800ms]
+
+Hắc Dạ Ký — chuyện kể từ cõi vô hình.
+
+[pause:600ms]
+
+Tác giả: Hắc Dạ Ký.
+
+[pause:600ms]
+
+Series: Chuyến xe cuối cùng về đâu.
+
+[pause:600ms]
+
+Ai cũng có một chuyến xe chưa nói lời tạm biệt.
+
+[pause:1000ms]
+
+Tập 7 — câu chuyện đêm nay.
+
+[pause:1500ms]
+
+---
+
 ```
 prompt_version: SVHMP-10.0-RC3.4
 ep_number: 7
@@ -12,7 +38,7 @@ stop_location: ngã ba Hải Dương
 bell_count: 1
 ghost_manifest: 1
 word_count: ~2350
-cross_ep_continuity: Quang giữ sợi len + sợi lạt + chuẩn bị nhận vật thứ ba. Đồng hồ nhích 4 lần (gradient).
+cross_ep_continuity: Khải Phong giữ sợi len + sợi lạt + chuẩn bị nhận vật thứ ba. Đồng hồ nhích 4 lần (gradient).
 ```
 
 ---
@@ -23,9 +49,9 @@ cross_ep_continuity: Quang giữ sợi len + sợi lạt + chuẩn bị nhận v
 
 Đêm ba mươi tháng Chạp. Mưa phùn lất phất từ chiều. Chuyến xe đêm chạy qua một thị trấn nhỏ. Đèn vàng yếu hắt qua mấy quán cà phê đóng cửa.
 
-Quang ngồi ghế thứ ba. Đêm thứ bảy Quang đếm. Trong túi áo Quang đã có một sợi len nâu và một sợi lạt buộc. Hai vật rời rạc. Quang vẫn giữ.
+Khải Phong ngồi ghế thứ ba. Đêm thứ bảy Khải Phong đếm. Trong túi áo Khải Phong đã có một sợi len nâu và một sợi lạt buộc. Hai vật rời rạc. Khải Phong vẫn giữ.
 
-Bác tài lái như mọi khi. Hai bàn tay đeo găng trắng. Ánh mắt liếc gương chiếu hậu — đêm nay dừng trên Quang lâu hơn cả đêm trước. Quang cảm thấy ánh mắt ấy.
+Bác tài lái như mọi khi. Hai bàn tay đeo găng trắng. Ánh mắt liếc gương chiếu hậu — đêm nay dừng trên Khải Phong lâu hơn cả đêm trước. Khải Phong cảm thấy ánh mắt ấy.
 
 Xe chậm lại trước một quán phở đóng cửa. Đèn vàng yếu trên cột điện hắt xuống. Một bóng người trẻ đứng đợi.
 
@@ -41,7 +67,7 @@ Xe lăn bánh trở lại.
 
 [pause:600ms]
 
-Quang nhìn chàng trai qua khe ghế. Em khoảng hai mốt, hai hai tuổi. Mặt non. Mắt đỏ — như mới khóc, hoặc đang cố nín.
+Khải Phong nhìn chàng trai qua khe ghế. Em khoảng hai mốt, hai hai tuổi. Mặt non. Mắt đỏ — như mới khóc, hoặc đang cố nín.
 
 Em đặt phong bao lì xì lên đùi. Tay vuốt nhẹ lên mặt phong bao. Trên phong bao có viết hai chữ "Tặng mẹ" — chữ viết tay vội, hơi nguệch ngoạc. Bên trong phong bao có gì đó nhỏ, gấp gọn — tiền lương lần đầu của em.
 
@@ -67,7 +93,7 @@ Em ghế sáu đột ngột nhìn về phía bến xe. Cổ họng nuốt một 
 
 Đồng hồ trên xe — chiếc đồng hồ nhỏ — kim phút nhích một lần. Tách. Hai lần. Tách. Ba lần. Tách. Bốn lần liền.
 
-Quang đếm. Đêm thứ bảy. Bốn lần nhích.
+Khải Phong đếm. Đêm thứ bảy. Bốn lần nhích.
 
 Bác tài không quay đầu. Tay vẫn đặt vô-lăng. Nhưng ánh mắt liếc gương chiếu hậu kéo dài.
 
@@ -111,9 +137,9 @@ Em ngừng. Vuốt phong bao.
 
 Bác tài nhìn gương chiếu hậu. Im lặng.
 
-Trong gương chiếu hậu, Quang thấy hai cái bóng. Một là em. Một là một người phụ nữ trung niên — khoảng năm mươi tuổi, tóc cột thấp, mặc áo bông xám — ngồi sát ngay sau em. Người phụ nữ ấy nhìn xuống tay mình. Tay cầm chén bún, hơi bốc lên.
+Trong gương chiếu hậu, Khải Phong thấy hai cái bóng. Một là em. Một là một người phụ nữ trung niên — khoảng năm mươi tuổi, tóc cột thấp, mặc áo bông xám — ngồi sát ngay sau em. Người phụ nữ ấy nhìn xuống tay mình. Tay cầm chén bún, hơi bốc lên.
 
-Quang chớp mắt. Trong gương vẫn chỉ có em và một bóng mờ.
+Khải Phong chớp mắt. Trong gương vẫn chỉ có em và một bóng mờ.
 
 Bác tài cất lời.
 
@@ -163,11 +189,11 @@ Tiếng chuông giao thừa ngân từ ngôi chùa nhỏ xa. Một hồi. Rồi 
 
 Em ghế sáu đặt phong bao vào túi ba lô. Đứng dậy.
 
-Khi đi qua chỗ Quang, em khẽ nói:
+Khi đi qua chỗ Khải Phong, em khẽ nói:
 
 "Chào anh. Chúc anh năm mới."
 
-Quang gật đầu. Em đi tiếp.
+Khải Phong gật đầu. Em đi tiếp.
 
 Trước khi xuống, em quay đầu nhìn bác tài. Rồi nhìn lên đồng hồ.
 
@@ -183,9 +209,9 @@ Cửa xe khép lại. Xe lăn bánh.
 
 [pause:1000ms]
 
-Bên ngoài, Quang thấy em đi vào con đường đất nhỏ. Phía cuối đường, có ngôi nhà nhỏ, đèn dầu hắt qua cửa sổ. Trên hiên nhà, có bóng một phụ nữ trung niên ngồi đợi — tay cầm chén bún, hơi bốc lên. Bên cạnh có ghế trống.
+Bên ngoài, Khải Phong thấy em đi vào con đường đất nhỏ. Phía cuối đường, có ngôi nhà nhỏ, đèn dầu hắt qua cửa sổ. Trên hiên nhà, có bóng một phụ nữ trung niên ngồi đợi — tay cầm chén bún, hơi bốc lên. Bên cạnh có ghế trống.
 
-Quang chớp mắt. Bóng người không còn. Chỉ có đèn dầu nhấp nháy.
+Khải Phong chớp mắt. Bóng người không còn. Chỉ có đèn dầu nhấp nháy.
 
 [pause:1000ms]
 
@@ -195,7 +221,7 @@ Có vẻ em đang chờ ai đó mở cửa từ bên trong. Nhưng bên trong kh
 
 Em đứng đó. Lâu. Đến khi sương khép vào lưng em một mảng mờ. Rồi em mới đẩy cửa nhẹ. Bước vào. Cửa khép lại sau lưng.
 
-Quang nhìn theo. Quang cảm thấy ngực mình hơi đau. Nhưng không khóc.
+Khải Phong nhìn theo. Khải Phong cảm thấy ngực mình hơi đau. Nhưng không khóc.
 
 [pause:1200ms]
 
@@ -211,67 +237,67 @@ Bác tài lái như mọi khi.
 
 Đồng hồ kim phút nhích bốn lần liền. Tách. Tách. Tách. Tách.
 
-Quang lấy hai vật trên đùi — sợi len, sợi lạt — đặt cạnh phong bao trống. Ba vật. Ba đêm. Ba người đã xuống.
+Khải Phong lấy hai vật trên đùi — sợi len, sợi lạt — đặt cạnh phong bao trống. Ba vật. Ba đêm. Ba người đã xuống.
 
-Quang nhìn xuống ba vật. Tay khẽ run.
+Khải Phong nhìn xuống ba vật. Tay khẽ run.
 
 Trên ghế lái, bác tài liếc gương. Lâu hơn. Bác khẽ nói — lần đầu tiên một câu không phải hai câu chuẩn:
 
 "Con cũng sẽ nhớ ra thôi."
 
-Quang giật mình ngẩng đầu. Bác tài đã quay nhìn lại đoạn đường.
+Khải Phong giật mình ngẩng đầu. Bác tài đã quay nhìn lại đoạn đường.
 
-Quang không chắc bác có nói câu đó hay không. Hay đó là tiếng radio của ông cụ ghế đầu — đang phát một câu hát rất cũ.
-
-[pause:1500ms]
-
-Quang nhìn ra cửa kính. Đêm vẫn dài. Mưa phùn vẫn lất phất.
-
-Có ai đó sẽ lên ở trạm tiếp. Có vật thứ tư. Quang chưa biết.
-
-Nhưng Quang biết — mình đã ngồi xe này bao lâu. Mình đang đi đâu. Vì sao mình không nhớ.
+Khải Phong không chắc bác có nói câu đó hay không. Hay đó là tiếng radio của ông cụ ghế đầu — đang phát một câu hát rất cũ.
 
 [pause:1500ms]
 
-Quang cầm phong bao lì xì đỏ — phong bao trống Quang vừa nhặt từ sàn. Phong bao mới. Chưa có tên. Quang xoay phong bao trên tay. Mặt sau có một dòng chữ rất mờ — như viết bằng bút bi đã hết mực, không nhìn rõ.
+Khải Phong nhìn ra cửa kính. Đêm vẫn dài. Mưa phùn vẫn lất phất.
 
-Quang đưa phong bao lại gần đèn nhỏ trên thành xe. Cố nhìn.
+Có ai đó sẽ lên ở trạm tiếp. Có vật thứ tư. Khải Phong chưa biết.
+
+Nhưng Khải Phong biết — mình đã ngồi xe này bao lâu. Mình đang đi đâu. Vì sao mình không nhớ.
+
+[pause:1500ms]
+
+Khải Phong cầm phong bao lì xì đỏ — phong bao trống Khải Phong vừa nhặt từ sàn. Phong bao mới. Chưa có tên. Khải Phong xoay phong bao trên tay. Mặt sau có một dòng chữ rất mờ — như viết bằng bút bi đã hết mực, không nhìn rõ.
+
+Khải Phong đưa phong bao lại gần đèn nhỏ trên thành xe. Cố nhìn.
 
 Có hai chữ. Hai chữ rất nhỏ. "Tặng mẹ".
 
-Quang giật mình. Quang xem lại phong bao. Mặt trước in chữ vàng "An Khang Thịnh Vượng". Mặt sau — hai chữ "Tặng mẹ" viết tay. Chữ Quang đã từng viết. Quang nhận ra nét bút mình.
+Khải Phong giật mình. Khải Phong xem lại phong bao. Mặt trước in chữ vàng "An Khang Thịnh Vượng". Mặt sau — hai chữ "Tặng mẹ" viết tay. Chữ Khải Phong đã từng viết. Khải Phong nhận ra nét bút mình.
 
-Quang bao giờ đã viết hai chữ này? Quang không nhớ.
+Khải Phong bao giờ đã viết hai chữ này? Khải Phong không nhớ.
 
 [pause:1200ms]
 
-Trên ghế lái, bác tài liếc gương chiếu hậu. Ánh mắt dừng trên Quang. Lâu. Bác không nói. Chỉ nhìn.
+Trên ghế lái, bác tài liếc gương chiếu hậu. Ánh mắt dừng trên Khải Phong. Lâu. Bác không nói. Chỉ nhìn.
 
-Quang đặt phong bao xuống đùi. Bên cạnh ba vật khác. Tay run. Quang không hiểu vì sao tay mình run. Quang chỉ đang ngồi trên một chuyến xe đêm. Quang đang về Hà Nội. Có vẻ thế. Hay không?
+Khải Phong đặt phong bao xuống đùi. Bên cạnh ba vật khác. Tay run. Khải Phong không hiểu vì sao tay mình run. Khải Phong chỉ đang ngồi trên một chuyến xe đêm. Khải Phong đang về Hà Nội. Có vẻ thế. Hay không?
 
-Quang nhìn ra cửa kính. Đêm vẫn dài. Mưa phùn vẫn lất phất.
+Khải Phong nhìn ra cửa kính. Đêm vẫn dài. Mưa phùn vẫn lất phất.
 
 Có một câu hát rất khẽ vọng từ ông cụ ghế đầu — radio vẫn rè rè. Lần này không phải "quê nhà". Lần này nghe như: "...mẹ ơi con xin lỗi..."
 
-Quang lắc đầu. Không thể. Đó chỉ là tiếng rè của radio cũ. Không phải lời.
+Khải Phong lắc đầu. Không thể. Đó chỉ là tiếng rè của radio cũ. Không phải lời.
 
 [pause:800ms]
 
-Bên ngoài cửa kính, có một biển tên đường thoáng qua đèn pha xe. Quang nhìn — biển ghi "Đường Mẹ Suốt — 2km". Tên đường lạ. Quang chưa nghe bao giờ.
+Bên ngoài cửa kính, có một biển tên đường thoáng qua đèn pha xe. Khải Phong nhìn — biển ghi "Đường Mẹ Suốt — 2km". Tên đường lạ. Khải Phong chưa nghe bao giờ.
 
 [pause:1000ms]
 
-Quang nhớ — có một người đàn bà tên Mẹ Suốt thời chiến chèo đò chở bộ đội qua sông. Bị bom. Mẹ vẫn chèo. Đến khi không còn ai chèo. Quang đọc truyện về Mẹ Suốt hồi cấp một. Hồi đó Quang đã viết một bài văn — bài đầu tiên Quang khóc khi viết.
+Khải Phong nhớ — có một người đàn bà tên Mẹ Suốt thời chiến chèo đò chở bộ đội qua sông. Bị bom. Mẹ vẫn chèo. Đến khi không còn ai chèo. Khải Phong đọc truyện về Mẹ Suốt hồi cấp một. Hồi đó Khải Phong đã viết một bài văn — bài đầu tiên Khải Phong khóc khi viết.
 
-Mẹ con cũng có tên giống mẹ Quang? Quang không nhớ tên mẹ. Quang chỉ nhớ mặt mẹ — một thoáng. Mẹ ngồi cạnh bếp lò, áo nâu, tay đỡ thau gạo. Mẹ cười nhẹ. Không nói.
+Mẹ con cũng có tên giống mẹ Khải Phong? Khải Phong không nhớ tên mẹ. Khải Phong chỉ nhớ mặt mẹ — một thoáng. Mẹ ngồi cạnh bếp lò, áo nâu, tay đỡ thau gạo. Mẹ cười nhẹ. Không nói.
 
 [pause:800ms]
 
-Quang ngẩng đầu. Trong gương chiếu hậu, ngoài bác tài, có một bóng người ngồi trên ghế sau Quang — phụ nữ, áo nâu, tay đỡ một cái gì đó. Bóng mờ. Quang không nhìn rõ.
+Khải Phong ngẩng đầu. Trong gương chiếu hậu, ngoài bác tài, có một bóng người ngồi trên ghế sau Khải Phong — phụ nữ, áo nâu, tay đỡ một cái gì đó. Bóng mờ. Khải Phong không nhìn rõ.
 
-Quang quay đầu. Sau Quang là ghế trống. Không ai.
+Khải Phong quay đầu. Sau Khải Phong là ghế trống. Không ai.
 
-Quang nhìn lại gương. Bóng đó vẫn còn. Người phụ nữ áo nâu. Ngồi yên. Không nhìn Quang.
+Khải Phong nhìn lại gương. Bóng đó vẫn còn. Người phụ nữ áo nâu. Ngồi yên. Không nhìn Khải Phong.
 
 [pause:1500ms]
 
@@ -279,4 +305,4 @@ Xe lăn bánh tiếp. Đêm vẫn lăn bánh.
 
 Trên ghế lái, bác tài liếc gương. Bác đã thấy bóng kia. Bác không phản ứng. Như đã quen.
 
-Quang nhắm mắt. Hơi thở chậm xuống một nhịp.
+Khải Phong nhắm mắt. Hơi thở chậm xuống một nhịp.

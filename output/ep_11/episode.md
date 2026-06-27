@@ -1,12 +1,38 @@
 # TẬP 11 — VÒNG CỔ CHỊ TẶNG EM ĐÊM CUỐI TRƯỚC KHI CHỊ ĐI
 
+[INTRO 4.5s — HẮC DẠ KÝ master]
+
+[pause:800ms]
+
+Hắc Dạ Ký — chuyện kể từ cõi vô hình.
+
+[pause:600ms]
+
+Tác giả: Hắc Dạ Ký.
+
+[pause:600ms]
+
+Series: Chuyến xe cuối cùng về đâu.
+
+[pause:600ms]
+
+Ai cũng có một chuyến xe chưa nói lời tạm biệt.
+
+[pause:1000ms]
+
+Tập 11 — câu chuyện đêm nay.
+
+[pause:1500ms]
+
+---
+
 ```
 prompt_version: SVHMP-10.0-RC3.5
 ep_number: 11
 phase: warming (S1)
 pillar: family
 intensity_level: 0.55
-quang_memory_fragment: M3 (đầu — Quang nghe tên Hà vọng lần đầu)
+quang_memory_fragment: M3 (đầu — Khải Phong nghe tên Hạ Vy vọng lần đầu)
 object_sub_arc: setup (vòng cổ ngôi sao bạc)
 callback_target: none (EP đầu arc M3)
 passenger_main: nu_45 → nam 26 Đức Hà Đông (em chị mất 5 năm)
@@ -28,9 +54,9 @@ arc_design_compliant: bible/21 R33-R38
 
 Đêm tháng tư. Mưa nhẹ rải xuống mái xe — không thành tiếng. Chuyến xe đêm chạy qua đoạn đường ven sông Nhuệ, Hà Đông. Đèn pha quét lên hàng nhãn cũ — tán lá đã rậm sau mùa xuân.
 
-Quang ngồi ghế thứ ba — chỗ cũ — chỗ Quang đã ngồi mười đêm trước. Đêm thứ mười một.
+Khải Phong ngồi ghế thứ ba — chỗ cũ — chỗ Khải Phong đã ngồi mười đêm trước. Đêm thứ mười một.
 
-Trong túi áo gió Quang — mười vật. Mỗi vật một đêm. Mỗi vật một chuyện. Quang đã đếm chiều nay — trước khi xe khởi hành — mười cái cho thấy mười đêm Quang đã sống cùng chuyến xe này. Quang vẫn không nhớ vì sao Quang ngồi đây.
+Trong túi áo gió Khải Phong — mười vật. Mỗi vật một đêm. Mỗi vật một chuyện. Khải Phong đã đếm chiều nay — trước khi xe khởi hành — mười cái cho thấy mười đêm Khải Phong đã sống cùng chuyến xe này. Khải Phong vẫn không nhớ vì sao Khải Phong ngồi đây.
 
 Bác tài lái. Bàn tay già nắm vô lăng — chậm — đều. Ánh mắt liếc gương — bình thường — không dừng lâu trên ai.
 
@@ -52,7 +78,7 @@ Xe lăn bánh.
 
 Anh ngồi yên. Mắt nhìn xuống vòng cổ. Mặt buồn nhưng bình tĩnh — như đã sống với nỗi buồn đó nhiều năm.
 
-Quang quay nhẹ — quan sát từ ghế ba. Cách áo sơ mi anh là ủi — không nhăn. Đôi giày là đôi đi tang — đế còn dính một ít đất vườn. Anh có lẽ vừa ra khỏi nhà — đi thẳng đến đây.
+Khải Phong quay nhẹ — quan sát từ ghế ba. Cách áo sơ mi anh là ủi — không nhăn. Đôi giày là đôi đi tang — đế còn dính một ít đất vườn. Anh có lẽ vừa ra khỏi nhà — đi thẳng đến đây.
 
 Anh vuốt ngôi sao bạc trên ngực. Một vài lần. Đầu ngón tay quen — không cần nhìn — biết chỗ.
 
@@ -62,9 +88,9 @@ Anh vuốt ngôi sao bạc trên ngực. Một vài lần. Đầu ngón tay quen
 
 Bác tài liếc gương. Không nói. Quay lại.
 
-Quang cảm thấy — đêm nay khác đêm hôm qua. Đêm hôm qua là một bà cụ đem khăn về quê — chuyện về cháu chắt. Đêm nay — cậu trai trẻ — đi viếng. Mỗi đêm khác — nhưng mỗi đêm cùng một điều — ai cũng đem một vật về.
+Khải Phong cảm thấy — đêm nay khác đêm hôm qua. Đêm hôm qua là một bà cụ đem khăn về quê — chuyện về cháu chắt. Đêm nay — cậu trai trẻ — đi viếng. Mỗi đêm khác — nhưng mỗi đêm cùng một điều — ai cũng đem một vật về.
 
-Quang nhìn ra cửa sổ. Mưa đã ngớt. Mặt sông Nhuệ phẳng — phản chiếu đèn đường vàng nhẹ.
+Khải Phong nhìn ra cửa sổ. Mưa đã ngớt. Mặt sông Nhuệ phẳng — phản chiếu đèn đường vàng nhẹ.
 
 ---
 
@@ -90,7 +116,7 @@ Xe đi qua. Căn nhà khuất. Cây cau khuất. Bóng cô gái khuất.
 
 Anh ghế bảy quay đầu lại. Đặt tay lên ngôi sao bạc trên ngực. Vuốt nhẹ.
 
-Quang nhìn — không nói gì. Quang biết — đêm nào trên chuyến xe này — kim phút cũng nhích mười lần khi có điều gì đó xảy ra. Quang đã đếm. Mỗi đêm đều mười.
+Khải Phong nhìn — không nói gì. Khải Phong biết — đêm nào trên chuyến xe này — kim phút cũng nhích mười lần khi có điều gì đó xảy ra. Khải Phong đã đếm. Mỗi đêm đều mười.
 
 ---
 
@@ -102,11 +128,11 @@ Quang nhìn — không nói gì. Quang biết — đêm nào trên chuyến xe n
 
 Anh nói — không quay sang ai cụ thể — như nói với cả xe.
 
-"Chị em — chị Hà — mất năm năm trước. Hai mươi tám tuổi. Tai nạn xe — chị đi xe máy về nhà sau ca trực bệnh viện đêm. Đoạn đường vành đai 3 — xe tải lớn va ngang. Chị mất tại chỗ. Không kịp đến bệnh viện cấp cứu."
+"Chị em — chị Hạ Vy — mất năm năm trước. Hai mươi tám tuổi. Tai nạn xe — chị đi xe máy về nhà sau ca trực bệnh viện đêm. Đoạn đường vành đai 3 — xe tải lớn va ngang. Chị mất tại chỗ. Không kịp đến bệnh viện cấp cứu."
 
-Quang ghế ba — nghe tên Hà — tự nhiên nhói trong ngực. Một nhói nhỏ — như có ai gọi tên mình.
+Khải Phong ghế ba — nghe tên Hạ Vy — tự nhiên nhói trong ngực. Một nhói nhỏ — như có ai gọi tên mình.
 
-Quang không hiểu vì sao tên Hà lại gây cảm giác đó. Quang lặng — lắng nghe Đức tiếp.
+Khải Phong không hiểu vì sao tên Hạ Vy lại gây cảm giác đó. Khải Phong lặng — lắng nghe Đức tiếp.
 
 [pause:800ms]
 
@@ -186,13 +212,13 @@ Bác tài: "Chưa tới lúc."
 
 [pause:1200ms]
 
-Bên ngoài — Đức đi vào cổng nghĩa trang đã mở. Đèn nến cháy bên trong — không rõ ai thắp. Phía cuối — mộ chị Hà — bia đá xám — ảnh chị mặc áo blu trắng. Trên bia khắc tên: "Phạm Thị Thu Hà — 1990-2018."
+Bên ngoài — Đức đi vào cổng nghĩa trang đã mở. Đèn nến cháy bên trong — không rõ ai thắp. Phía cuối — mộ chị Hạ Vy — bia đá xám — ảnh chị mặc áo blu trắng. Trên bia khắc tên: "Phạm Thị Thu Hà — 1990-2018."
 
 Đức đến. Quỳ. Đặt vòng cổ giữa mộ — đúng giữa bia và đèn nến. Cúi đầu.
 
-Quang chớp mắt — nhìn qua cửa sổ. Bên cạnh mộ — chị Hà xuất hiện — mặc áo blu trắng — như trong ảnh bia. Chị cúi xuống — vuốt tóc Đức một lần. Mỉm cười.
+Khải Phong chớp mắt — nhìn qua cửa sổ. Bên cạnh mộ — chị Hà xuất hiện — mặc áo blu trắng — như trong ảnh bia. Chị cúi xuống — vuốt tóc Đức một lần. Mỉm cười.
 
-Quang chớp lần nữa. Chị Hà tan.
+Khải Phong chớp lần nữa. Chị Hà tan.
 
 Đức ngẩng đầu. Nhìn lên trời. Hai mắt sáng dưới đèn nến. Anh không khóc — anh cười nhẹ.
 
@@ -204,7 +230,7 @@ Quang chớp lần nữa. Chị Hà tan.
 
 Xe lăn bánh — rời ngã ba Hà Đông.
 
-Ghế bảy trống. Trên sàn — một mảnh vỏ bạc nhỏ rơi — bong ra từ mép vòng cổ khi Đức đeo lên. Quang nhặt. Bỏ vào túi áo gió cùng mười vật trước.
+Ghế bảy trống. Trên sàn — một mảnh vỏ bạc nhỏ rơi — bong ra từ mép vòng cổ khi Đức đeo lên. Khải Phong nhặt. Bỏ vào túi áo gió cùng mười vật trước.
 
 Vật thứ mười một.
 
@@ -212,20 +238,20 @@ Bác tài lái. Kim phút bên cabin nhích — một — hai — đến mười
 
 [pause:1500ms]
 
-Quang ngồi yên. Tên "Hà" vẫn vọng trong đầu Quang. Tên này — quen — không phải quen từ chị của Đức.
+Khải Phong ngồi yên. Tên "Hạ Vy" vẫn vọng trong đầu Khải Phong. Tên này — quen — không phải quen từ chị của Đức.
 
-Có một cô tên Hà nào đó — Quang đã yêu? Đã quen? Đã hứa với? Đã mất?
+Có một cô tên Hạ Vy nào đó — Khải Phong đã yêu? Đã quen? Đã hứa với? Đã mất?
 
-Quang cố nhớ. Hình ảnh mờ — không rõ ràng. Cảm giác — một sân trường đại học — một mái tóc dài — một tiếng cười. Cảm giác — đã có. Nhưng Quang không thấy được mặt cô.
+Khải Phong cố nhớ. Hình ảnh mờ — không rõ ràng. Cảm giác — một sân trường đại học — một mái tóc dài — một tiếng cười. Cảm giác — đã có. Nhưng Khải Phong không thấy được mặt cô.
 
-Quang vuốt mảnh vỏ bạc trong túi. Lạnh.
+Khải Phong vuốt mảnh vỏ bạc trong túi. Lạnh.
 
-Bác tài liếc gương — lần này dừng trên Quang lâu hơn thường lệ.
+Bác tài liếc gương — lần này dừng trên Khải Phong lâu hơn thường lệ.
 
 "Đêm mười một. Con bắt đầu nhớ một tên, con à. Một tên — sẽ trở lại nhiều đêm sau. Cứ giữ lấy. Đừng vội."
 
-Quang gật.
+Khải Phong gật.
 
 Đêm thứ mười một. Xe lăn bánh tiếp về phía đường vành đai. Đèn pha quét lên hàng cây — mưa đã hết — chỉ còn đêm.
 
-Quang không hỏi bác tài thêm. Quang biết — đêm nào hỏi bác tài cũng chỉ hai câu trả lời. Quang chờ đêm mười hai.
+Khải Phong không hỏi bác tài thêm. Khải Phong biết — đêm nào hỏi bác tài cũng chỉ hai câu trả lời. Khải Phong chờ đêm mười hai.
