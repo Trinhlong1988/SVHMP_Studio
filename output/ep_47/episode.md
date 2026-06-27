@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R42
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường vành đai sân bay Nội Bài. Đèn pha quét lên hàng đèn cao tốc.
+Sau cơn mưa chiều. Đêm xuống nhanh. Xe đêm rẽ vào đoạn đường vành đai, sân bay Nội Bài. Hàng hàng đèn cao tốc ven đường còn đẫm — đèn pha quét lên thân cây ướt.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi bảy. Trong túi áo gió Khải Phong — bốn mươi sáu vật.
 

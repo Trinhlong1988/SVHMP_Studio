@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R38 + R39 word count
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven sông Đuống, Bắc Ninh. Đèn pha quét lên hàng dâu cũ — gốc dâu dày — đã trồng lâu năm — lá xanh đậm sau mưa.
+Tháng tư. Đêm vừa khuya. Xe đêm rẽ vào đoạn ven sông sông Đuống, Bắc Ninh. Đèn pha cắt qua màn sương — chiếu lên hàng dâu cũ — gốc dâu dày — đã trồng lâu năm — lá xanh đậm sau mưa bên đường.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi hai. Trong túi áo gió Khải Phong — hai mươi mốt vật. Đêm qua thêm sợi chỉ vàng từ vải bọc khung ảnh anh Trọng Nhân.
 

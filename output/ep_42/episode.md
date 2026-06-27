@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R42 + R41
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven sông Tiền, Bến Tre. Đèn pha quét lên hàng dừa nước.
+Tháng tư. Đêm vừa khuya. Xe đêm rẽ vào đoạn ven sông sông Tiền, Bến Tre. Đèn pha cắt qua màn sương — chiếu lên hàng dừa nước bên đường.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi hai. Trong túi áo gió Khải Phong — bốn mươi mốt vật.
 

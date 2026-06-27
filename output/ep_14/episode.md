@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R38
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ trở lại. Chuyến xe đêm chạy qua đoạn đường ven sông Đáy, Chương Mỹ. Đèn pha quét lên hàng tre già — gốc tre dày như cột.
+Cuối tháng tư. Trời ẩm. Xe đêm chạy chậm qua đường ven sông Đáy, Chương Mỹ. Hàng tre già — gốc tre dày như cột ven đường — lá còn rơi vài giọt mưa cuối ngày.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ mười bốn. Trong túi áo gió Khải Phong — mười ba vật. Đêm qua thêm cánh cúc khô vàng — từ vườn bố anh Bình.
 

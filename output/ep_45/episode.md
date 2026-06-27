@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R42 + R36 callback ep_35
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven sông Đuống, Bắc Ninh. Đèn pha quét lên hàng dâu cổ — quen Khải Phong — đêm hai mươi hai đã đi.
+Đêm. Đường vắng. Xe đêm trôi qua đoạn sông Đuống, Bắc Ninh. Đèn pha quét đi quét lại trên hàng dâu cổ — quen Khải Phong — đêm hai mươi hai đã đi — không có ai khác trên đường.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi lăm. Trong túi áo gió Khải Phong — bốn mươi tư vật.
 

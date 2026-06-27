@@ -73,6 +73,33 @@ R44_dictionary_block:
     Vi phạm = R41 HARDLOCK block commit.
   no_inference: "KHÔNG suy luận đúng/sai. Chỉ check theo rule cứng."
 
+R49_template_variation_hardlock:
+  # round 10 add 2026-06-28 (Mr.Long reader judgement phát hiện 40/50 EPs same opener)
+  rule: "HOOK opener + atmospheric description phải VARIED across EPs. Cấm dùng cùng template > 5 EPs liên tiếp."
+  rationale: |
+    Audit phát hiện 40/50 EPs HOOK start với 'Đêm tháng tư' — formulaic AI.
+    36/50 dùng 'Đêm tháng tư. Mưa nhẹ.'
+    38/50 dùng 'Chuyến xe đêm chạy qua đoạn đường'
+    Khán giả nghe 5 EPs liên tục sẽ phát ngán template.
+  required_variation:
+    hook_opener_templates_min: 10
+    atmospheric_descriptions_min: 8
+    repetition_max_consecutive: 5  # max 5 EPs có thể dùng same template
+  approved_opener_variants:
+    - "Đêm tháng tư. Mưa nhẹ."          # current default — limit ≤30%
+    - "Tháng tư. Đêm vừa khuya."
+    - "Mưa đã rơi từ chiều."
+    - "Cuối tháng tư. Trời ẩm."
+    - "Đêm. Đường vắng."
+    - "Hà Nội cuối tháng tư."
+    - "Sau cơn mưa chiều. Đêm xuống nhanh."
+    - "Đêm thứ X — Khải Phong ngồi ghế thứ ba."
+    - "Đèn xe rọi vào sương."
+    - "Phố vắng. Đêm thưa."
+  enforcement: tools/detect_template_repetition.py + R41 hook (formulaic_score > 60% = warning)
+  no_inference: "Strict template variation rule — pick from approved list"
+  cross_ref: [bible/01_series_bible, EP01 golden ref]
+
 R47_narrator_3rd_person_pov_hardlock:
   # round 9 add 2026-06-28 (CRITICAL BUG phát hiện đọc sample 5 EPs)
   rule: "Narrator 3rd person — Khải Phong refer = 'anh' / 'Khải Phong' / 'mình' (NEVER 'em' ngoài quoted dialogue)"

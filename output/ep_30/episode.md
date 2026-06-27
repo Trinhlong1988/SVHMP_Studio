@@ -53,7 +53,7 @@ milestone_special: passenger cùng tên "Khải Phong" — anchor lần đầu +
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven sông Thái Bình, Hải Dương. Đèn pha quét lên hàng vải lồng — vải đã ra trái non — chùm trái xanh nhỏ bên đường.
+Phố vắng. Đêm thưa. Xe đêm đi qua đoạn sông Thái Bình, Hải Dương — đèn pha hắt lên hàng vải lồng — vải đã ra trái non — chùm trái xanh nhỏ bên đường cao quá đầu — bóng đổ dài trên mặt đường ướt.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi.
 

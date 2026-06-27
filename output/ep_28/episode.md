@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R40
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven sông La, Hà Tĩnh. Đèn pha quét lên hàng cau ven đường — cau cao — tán xanh đậm sau mưa.
+Đêm thứ 28 trên chuyến xe — Khải Phong ngồi ghế thứ ba. Mưa tháng tư rỉ rả ngoài kính xe. Xe đi qua đoạn sông La, Hà Tĩnh — hàng cau ven đường — cau cao — tán xanh đậm sau mưa im bóng.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi tám. Trong túi áo gió Khải Phong — hai mươi bảy vật. Đêm qua thêm sợi chỉ lụa hồng từ vải bọc khung ảnh Mỹ Linh.
 

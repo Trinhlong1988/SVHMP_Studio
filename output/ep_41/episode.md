@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R42 + R41 hook
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven sông Côn, Bình Định. Đèn pha quét lên hàng dừa miền Trung.
+Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven sông sông Côn, Bình Định. Đèn pha quét lên hàng dừa miền Trung.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi mốt. Trong túi áo gió Khải Phong — bốn mươi vật. Đêm qua thêm mảnh giấy can chữ ký Hạ Vy và Hải năm 2018.
 

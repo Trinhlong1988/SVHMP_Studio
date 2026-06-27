@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R40 + R36 callback EP25
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven sông Lam, Nghệ An. Đèn pha quét lên hàng dừa miền Trung — dừa cao — gốc dày.
+Đêm. Đường vắng. Xe đêm trôi qua đoạn sông Lam, Nghệ An. Đèn pha quét đi quét lại trên hàng dừa miền Trung — dừa cao — gốc dày — không có ai khác trên đường.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi lăm. Trong túi áo gió Khải Phong — ba mươi tư vật.
 

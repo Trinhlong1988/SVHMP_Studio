@@ -1,0 +1,31 @@
+{
+  "hook_openers_top5": [
+    [
+      "Đêm tháng tư",
+      31
+    ],
+    [
+      "Đêm ba mươi tháng Chạp",
+      5
+    ],
+    [
+      "Tháng tư",
+      2
+    ],
+    [
+      "Đêm",
+      2
+    ],
+    [
+      "Chuyến xe đêm rẽ qua một con đường vắng",
+      1
+    ]
+  ],
+  "template_dem_mua": 27,
+  "template_xe_chay": 29,
+  "template_den_pha": 18,
+  "cookie_cutter_intros": 0,
+  "cookie_cutter_eps": [],
+  "cliffhanger_template": 36,
+  "formulaic_score": 0.37
+}

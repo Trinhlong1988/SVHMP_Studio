@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R38 + R39 word count
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven sông Cấm, Hải Phòng. Đèn pha quét lên hàng me cổ ven đường — me già — gốc dày — tán cao.
+Mưa đã rơi từ chiều. Đêm tháng tư — không tan hết. Chuyến xe đêm đi qua đoạn sông Cấm, Hải Phòng — đèn pha hắt lên hàng me cổ ven đường — me già — gốc dày — tán cao ướt sương.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi ba. Trong túi áo gió Khải Phong — hai mươi hai vật. Đêm qua thêm mẩu giấy bản mang chữ năm "2017".
 
