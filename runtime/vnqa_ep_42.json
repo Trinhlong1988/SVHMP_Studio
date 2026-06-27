@@ -2,14 +2,32 @@
   "ep_number": 42,
   "phase_h_version": "H1-H7 v1.0",
   "stats": {
-    "tokens_count": 2540,
-    "sentences_approx": 318,
-    "adverbs_count": 163,
-    "adverbs_ratio": 0.064,
-    "word_count": 2218,
-    "estimated_minutes": 14.3
+    "tokens_count": 2153,
+    "sentences_approx": 229,
+    "adverbs_count": 100,
+    "adverbs_ratio": 0.046,
+    "word_count": 2045,
+    "estimated_minutes": 13.2
   },
   "issues": [
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"nhẫn\" lặp 51x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"đeo\" lặp 30x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"khải phong\" lặp 28x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
     {
       "check": "H1_token_repeat",
       "severity": "warning",
@@ -19,50 +37,44 @@
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"trên\" lặp 22x trong ep",
-      "suggestion": "Đa dạng từ vựng, dùng synonym"
-    },
-    {
-      "check": "H1_token_repeat",
-      "severity": "warning",
-      "evidence": "\"vật\" lặp 20x trong ep",
-      "suggestion": "Đa dạng từ vựng, dùng synonym"
-    },
-    {
-      "check": "H1_token_repeat",
-      "severity": "warning",
-      "evidence": "\"tách\" lặp 18x trong ep",
-      "suggestion": "Đa dạng từ vựng, dùng synonym"
-    },
-    {
-      "check": "H1_token_repeat",
-      "severity": "warning",
-      "evidence": "\"ngồi\" lặp 17x trong ep",
+      "evidence": "\"cưới\" lặp 20x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
       "check": "H2_dict_unusual_compound",
       "severity": "minor",
-      "evidence": "Cụm từ dài bất thường: ['` prompt_version', 'REG_LOV_003 signature_object', 'OBJ_NHAN_CUOI signature_setting']",
+      "evidence": "Cụm từ dài bất thường: ['` prompt_version', '0.70 quang_memory_fragment', 'Hoàng Nam gật']",
       "suggestion": "TENTATIVE — Mr.Long verify trong từ điển VN"
+    },
+    {
+      "check": "H7_ngram_repetition",
+      "severity": "warning",
+      "evidence": "Bi-gram \"năm hai\" lặp 3x trong 1 câu",
+      "suggestion": "Reword câu để tránh repetition"
     },
     {
       "check": "H9_stop_consonant_tail",
       "severity": "minor",
-      "evidence": "Word \"biết\" xuất hiện 3x (BigVGAN tail risk)",
+      "evidence": "Word \"khuất\" xuất hiện 2x (BigVGAN tail risk)",
+      "suggestion": "khuất bóng → khuất dần / mờ xa"
+    },
+    {
+      "check": "H9_stop_consonant_tail",
+      "severity": "minor",
+      "evidence": "Word \"biết\" xuất hiện 2x (BigVGAN tail risk)",
       "suggestion": "chưa biết → vẫn chưa hay / vẫn chưa rõ"
     },
     {
       "check": "H10_duration_too_short",
       "severity": "warning",
-      "evidence": "14.3 phút (target 15-18p, max 20p)",
-      "suggestion": "Expand thêm 106 từ để đạt 15p"
+      "evidence": "13.2 phút (target 15-18p, max 20p)",
+      "suggestion": "Expand thêm 280 từ để đạt 15p"
     }
   ],
   "issues_count_by_severity": {
     "critical": 0,
-    "warning": 6,
-    "minor": 2
+    "warning": 7,
+    "minor": 3
   },
   "verdict": "WARN",
   "next_action": "Generator review issues, optional regen"

@@ -58,6 +58,33 @@ post_render_gate:
 # ============================================================
 # Mr.Long 27/6 lệnh add intro Hắc Dạ Ký mọi EP.
 
+R42_driver_foreshadow_line_allowed_cliffhanger:
+  # round 7 add 2026-06-27 (Mr.Long audit 100-check phát hiện 35 EPs có driver line 3 — refine SERIES_RULES.driver)
+  rule: "Driver CHO PHÉP nói câu thứ 3 trong CLIFFHANGER nếu là 'foreshadow memory progression' (R35)"
+  rationale: |
+    SERIES_RULES.driver gốc cấm câu thứ 3 trừ EP73 + EP90.
+    NHƯNG R35 (Khải Phong memory M1-M18) cần bác tài foreshadow đêm sau Khải Phong sẽ nhớ gì.
+    Foreshadow line trong CLIFFHANGER là design intent — KHÔNG phải vi phạm.
+    Format chuẩn: "Bác tài liếc gương. 'Đêm N. Con đã nhớ X. Đêm sau con sẽ nhớ Y. Đừng vội.'"
+  allowed_format:
+    - "Bác tài liếc gương. \"Đêm thứ N. ...Đừng vội.\""
+    - "Bác tài cất lời. \"...\""  # within REVEAL section (passenger trigger)
+  not_allowed:
+    - Random extra chat từ bác tài không liên quan memory/foreshadow
+    - Explanation dump lore từ bác tài (NEVER_7 explanation_dump giữ nguyên)
+  enforcement: Generator pre-write check format + QA accept foreshadow context
+  cross_ref: [bible/21_series_arc_design R35, bible/00 SERIES_RULES.driver]
+
+R43_tier2_filler_cap_per_ep:
+  # round 7 add 2026-06-27 (audit phát hiện filler tier 2 tổng 179 / 40 EPs)
+  rule: "Tier 2 filler (khẽ/vô hình/thoáng/ánh mắt/lặng lẽ) cap MAX 3 instances/EP cho mỗi từ"
+  rationale: |
+    Audit 27/6 thấy khẽ 77 / vô hình 40 / thoáng 34 / ánh mắt 28 tổng 40 EPs.
+    Trung bình khẽ 1.9/EP — acceptable.
+    Cap 3/EP/word đảm bảo không lạm dụng trong 1 EP cụ thể.
+  enforcement: Generator pre-write count check + QA flag if any word > 3 in one EP
+  cross_ref: [bible/22_anti_slop_vi.yaml tier_2_filler]
+
 R41_no_commit_if_gate_fail_HARDLOCK:
   # round 6 add 2026-06-27 (Mr.Long lệnh "xử lý nghiêm hiến pháp cấm tái diễn")
   rule: "CẤM TUYỆT ĐỐI commit EP nào nếu post_render_gate FAIL bất kỳ check nào"

@@ -2,55 +2,55 @@
   "ep_number": 47,
   "phase_h_version": "H1-H7 v1.0",
   "stats": {
-    "tokens_count": 2560,
-    "sentences_approx": 342,
-    "adverbs_count": 163,
-    "adverbs_ratio": 0.064,
-    "word_count": 2203,
-    "estimated_minutes": 14.2
+    "tokens_count": 2086,
+    "sentences_approx": 211,
+    "adverbs_count": 129,
+    "adverbs_ratio": 0.062,
+    "word_count": 2032,
+    "estimated_minutes": 13.1
   },
   "issues": [
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"đêm\" lặp 24x trong ep",
+      "evidence": "\"đêm\" lặp 22x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"vật\" lặp 22x trong ep",
+      "evidence": "\"khải phong\" lặp 19x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"trên\" lặp 22x trong ep",
-      "suggestion": "Đa dạng từ vựng, dùng synonym"
-    },
-    {
-      "check": "H1_token_repeat",
-      "severity": "warning",
-      "evidence": "\"trong\" lặp 21x trong ep",
+      "evidence": "\"hàn quốc\" lặp 18x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
       "check": "H2_dict_unusual_compound",
       "severity": "minor",
-      "evidence": "Cụm từ dài bất thường: ['` prompt_version', 'REG_LOV_004 signature_object', 'OBJ_VE_TAU_KHU_HOI signature_setting']",
+      "evidence": "Cụm từ dài bất thường: ['` prompt_version', '0.70 quang_memory_fragment', 'đường vành đai']",
       "suggestion": "TENTATIVE — Mr.Long verify trong từ điển VN"
+    },
+    {
+      "check": "H7_ngram_repetition",
+      "severity": "warning",
+      "evidence": "Bi-gram \"máy bay\" lặp 3x trong 1 câu",
+      "suggestion": "Reword câu để tránh repetition"
     },
     {
       "check": "H9_stop_consonant_tail",
       "severity": "minor",
-      "evidence": "Word \"biết\" xuất hiện 2x (BigVGAN tail risk)",
-      "suggestion": "chưa biết → vẫn chưa hay / vẫn chưa rõ"
+      "evidence": "Word \"khuất\" xuất hiện 1x (BigVGAN tail risk)",
+      "suggestion": "khuất bóng → khuất dần / mờ xa"
     },
     {
       "check": "H10_duration_too_short",
       "severity": "warning",
-      "evidence": "14.2 phút (target 15-18p, max 20p)",
-      "suggestion": "Expand thêm 122 từ để đạt 15p"
+      "evidence": "13.1 phút (target 15-18p, max 20p)",
+      "suggestion": "Expand thêm 293 từ để đạt 15p"
     }
   ],
   "issues_count_by_severity": {

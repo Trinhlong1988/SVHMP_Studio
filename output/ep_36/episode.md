@@ -168,7 +168,7 @@ Giọng anh trầm — chậm.
 
 [pause:1500ms]
 
-"Tuấn — sau tang em — em không liên lạc nhà tôi tiếp. Em tốt nghiệp đi làm — đi nước ngoài năm năm. Năm vừa rồi tôi nghe em đã cưới một cô khác ở Mỹ — sinh con — sống hạnh phúc."
+"Tuấn — sau tang em — em không liên lạc nhà tôi tiếp. Em tốt nghiệp đi làm — đi nước ngoài năm năm. Năm vừa rồi tôi nghe em đã cưới một cô khác ở Mỹ — sinh con — sống ổn."
 
 "Tôi mừng cho em. Em đã sống tiếp. Em không bị Diễm kéo lui."
 
