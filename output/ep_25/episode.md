@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R38 + R39 word count + R36 callback EP15
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven đồi chè Thái Nguyên. Đèn pha quét lên hàng chè non — chè ba lá — đã được hái lứa đầu — gốc còn xanh.
+Đêm. Đường vắng. Xe đêm trôi qua đoạn đường ven đồi chè Thái Nguyên, Hà Nội. Đèn pha quét đi quét lại trên hàng cây — không có ai khác trên đường.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi lăm. Trong túi áo gió Khải Phong — hai mươi tư vật. Đêm qua thêm mẩu giấy vở học sinh với chữ "Cô giáo em..."
 

@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R40 + R41
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn phố Huế — Hà Nội nội thành. Đèn pha quét lên hàng me cổ ven phố — me già — tán cao — đèn neon đường tô lên lá.
+Sau cơn mưa chiều. Đêm xuống nhanh. Xe đêm rẽ vào đoạn phố Huế — Hà Nội nội thành, Hà Nội. Hàng cây ven đường còn đẫm — đèn pha quét lên thân cây ướt. Đèn pha quét lên hàng me cổ ven phố — me già — tán cao — đèn neon đường tô lên lá.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi bảy. Trong túi áo gió Khải Phong — ba mươi sáu vật. Đêm qua thêm sợi chỉ lụa trắng từ khăn bọc ảnh anh Khải.
 

@@ -713,9 +713,9 @@ Bác tài liếc gương.
 
 ---
 
-# NOTES cho Mr.Long tinh chỉnh
+# NOTES cho Mr. Long tinh chỉnh
 
-1. **Câu hát ông cụ "Người ơi người ở đừng về"** — em chọn câu quan họ phổ thông cho tiễn biệt. Mr.Long có thể đổi sang câu Hà thường hát (nếu memory bible có).
+1. **Câu hát ông cụ "Người ơi người ở đừng về"** — em chọn câu quan họ phổ thông cho tiễn biệt. Mr. Long có thể đổi sang câu Hà thường hát (nếu memory bible có).
 2. **Cô y tá "đồng phục y tá cũ, ngực trái sẫm hơn một chút"** — round 2 chốt: bỏ "vệt máu khô" (quá horror image), giữ tinh tế. Vẫn ngầm gợi cô từng trực ca tai nạn (gắn lore Hạ Vy mất) qua cử chỉ hai ngón thái dương + lắc đầu chậm.
 3. **Kim nhích "Tách"** — em đặt ngay sau câu "Tôi nhớ ra rồi" thay vì sau dialog "Bảy giờ mười là lúc Hạ Vy mất" — để tiếng "Tách" trở thành CHUÔNG báo memory thật sự về.
 4. **Kính xe phản chiếu Hà** — anh đặt SAU dialog reveal, không đặt trước. Vì nếu trước → spoil. Sau → confirm cho người nghe rằng Hà thực sự đến đón Khải Phong.
@@ -724,7 +724,7 @@ Bác tài liếc gương.
 
 ---
 
-# SERIES_RULES — DNA LOCK (round 3 Mr.Long chốt)
+# SERIES_RULES — DNA LOCK (round 3 Mr. Long chốt)
 
 ```yaml
 SERIES_RULES:
@@ -763,7 +763,7 @@ SVHMP_EP01:
 
 ---
 
-# SVHMP SERIES IDENTITY — LOCKED (Mr.Long chốt round 3)
+# SVHMP SERIES IDENTITY — LOCKED (Mr. Long chốt round 3)
 
 ```yaml
 SVHMP:

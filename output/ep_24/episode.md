@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R38 + R39 word count
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven cánh đồng Hà Nam. Đèn pha quét lên ruộng lúa mới cấy — nước trong ruộng in sao đêm — mây đã tan sau mưa.
+Cuối tháng tư. Trời ẩm. Xe đêm chạy chậm qua đường ven cánh đồng Hà Nam, Hà Nội. Hàng cây ven đường — lá còn rơi vài giọt mưa cuối ngày. Đèn pha quét lên ruộng lúa mới cấy — nước trong ruộng in sao đêm — mây đã tan sau mưa.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi tư. Trong túi áo gió Khải Phong — hai mươi ba vật. Đêm qua thêm mẩu phong bì kraft của Đức Vinh.
 

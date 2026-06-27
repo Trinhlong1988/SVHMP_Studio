@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R40 + R41 HARDLOCK
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường đèo từ Yên Bái lên Lào Cai. Đèn pha quét lên hàng thông Tây Bắc — thông cao — gốc dày — đèn vàng chỉ với tới nửa thân thông.
+Hà Nội cuối tháng tư. Đêm. Chuyến xe đi qua đoạn ven đường đèo từ Yên Bái lên Lào C, Hà Nội. Đèn pha rọi lên hàng cây — ánh đèn vàng cô đơn.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi sáu. Trong túi áo gió Khải Phong — ba mươi lăm vật. Đêm qua thêm vải bông cuốn mảnh gương Trí Hưng — vật thứ ba trong cụm gương/kính.
 

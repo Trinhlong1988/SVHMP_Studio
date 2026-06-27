@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R40 + R41
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven vịnh Hạ Long. Đèn pha quét lên hàng dừa biển — gốc cong vì gió biển.
+Đêm thứ 38 trên chuyến xe — Khải Phong ngồi ghế thứ ba. Mưa tháng tư rỉ rả ngoài kính xe. Xe đi qua đoạn đường ven vịnh Hạ Long, Hà Nội — hàng cây im bóng. Đèn pha quét lên hàng dừa biển — gốc cong vì gió biển.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi tám. Trong túi áo gió Khải Phong — ba mươi bảy vật. Đêm qua thêm sợi chỉ vải đen từ vải bọc mảnh biển số xe Mỹ Hạnh.
 

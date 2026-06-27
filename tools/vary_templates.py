@@ -42,18 +42,37 @@ def get_template_idx(ep_num):
     return (ep_num - 11) % len(OPENERS)
 
 def find_opener_pattern(text):
-    """Find the formulaic opener block in HOOK section."""
-    # Match patterns like "Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven sông X, Y. Đèn pha quét lên hàng Z."
-    patterns = [
-        r'Đêm tháng tư\. Mưa nhẹ\. Chuyến xe đêm chạy qua đoạn đường ven ([\w\s]+?), ([\w\s]+?)\. Đèn pha quét lên hàng ([^.]+)\.',
-        r'Đêm tháng tư\. Mưa nhẹ trở lại\. Chuyến xe đêm chạy qua đoạn đường ven ([\w\s]+?), ([\w\s]+?)\. Đèn pha quét lên hàng ([^.]+)\.',
-        r'Đêm tháng tư\. Mưa nhẹ\. Chuyến xe đêm chạy qua đoạn đường vành đai ([\w\s]+?)\. Đèn pha quét lên ([^.]+)\.',
-    ]
-    for p in patterns:
-        m = re.search(p, text)
-        if m:
-            return m
+    """Find the formulaic opener block in HOOK section.
+    Flexible regex: Đêm tháng tư + [Mưa variants] + Chuyến xe đêm + ven [place] + Đèn pha."""
+    # Master flexible pattern — catch most variants
+    # Đêm tháng tư. [Mưa anything.] [Optional Mặt đường anything.] Chuyến xe đêm (chạy|đi|rẽ) [anything] (?:ven |nội thành |vành đai |về |từ |qua )[anything until period]. [Đèn pha anything.]
+    flex = re.compile(
+        r'Đêm tháng tư\. '
+        r'(?:[A-ZĐ][^.]*\. ){0,3}'  # 0-3 lead sentences (Mưa.../Mặt đường...)
+        r'Chuyến xe đêm (?:chạy|đi|rẽ|trôi)[^.]*\. '
+        r'(?:[A-ZĐ][^.]*\. ){0,2}',  # 0-2 follow sentences (Đèn pha.../sensory)
+        re.DOTALL
+    )
+    m = flex.search(text)
+    if m:
+        return m
     return None
+
+def extract_place_from_match(matched_text):
+    """Extract location info from matched opener for template fill."""
+    # Try to find "ven [place]" or "qua đoạn [place]" or just any city name
+    m = re.search(r'(?:ven|qua đoạn|qua|đến|về)\s+([^,.\n]{3,40})(?:,|\.)\s*([^.\n]{3,30})?', matched_text)
+    river = "sông"
+    city = "Hà Nội"
+    if m:
+        if m.group(1):
+            river = m.group(1).strip()[:30]
+        if m.group(2):
+            city = m.group(2).strip()[:30]
+    # tree from "Đèn pha quét lên hàng X" if present
+    tree_m = re.search(r'Đèn pha[^.]*?(?:lên|trên)\s+(?:hàng |rừng |bụi )?([^,.\n—]{3,30})', matched_text)
+    tree = tree_m.group(1).strip()[:25] if tree_m else "cây"
+    return river, city, tree
 
 def rewrite_ep(ep_num, dry_run=False):
     p = SVHMP / 'output' / f'ep_{ep_num:02d}' / 'episode.md'
@@ -67,16 +86,9 @@ def rewrite_ep(ep_num, dry_run=False):
             print(f"  EP{ep_num:02d}: no formulaic opener found")
         return 0
 
-    # Extract slot values
-    groups = m.groups()
-    if len(groups) == 3:
-        river, city, tree = groups
-    elif len(groups) == 2:
-        # Pattern 3 — vành đai
-        city, tree = groups
-        river = "đường vành đai"
-    else:
-        river, city, tree = "sông", "Hà Nội", "cây"
+    # Extract from flexible match
+    matched = m.group()
+    river, city, tree = extract_place_from_match(matched)
 
     # Get template
     tpl_idx = get_template_idx(ep_num)

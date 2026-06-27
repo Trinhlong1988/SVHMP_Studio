@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R38
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven đồi Sóc Sơn. Đèn pha quét lên rừng thông non — cành thông đẫm sương đêm.
+Sau cơn mưa chiều. Đêm xuống nhanh. Xe đêm rẽ vào đoạn đường ven đồi Sóc Sơn, Hà Nội. Hàng cây ven đường còn đẫm — đèn pha quét lên thân cây ướt. Đèn pha quét lên rừng thông non — cành thông đẫm sương đêm.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ mười bảy. Trong túi áo gió Khải Phong — mười sáu vật. Đêm qua thêm cánh cúc tươi vàng nhạt.
 

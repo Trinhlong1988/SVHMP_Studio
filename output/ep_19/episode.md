@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R38 + R36 callback EP14
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven sông Đuống, Đông Anh. Đèn pha quét lên bãi mía dài bên đường.
+Đèn xe rọi vào sương. Đêm tháng tư miền Bắc. Chuyến xe đi qua đoạn đường ven sông Đuống, Đông Anh — hàng cây ven đường thấp thoáng trong sương. Đèn pha quét lên bãi mía dài bên đường.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ mười chín. Trong túi áo gió Khải Phong — mười tám vật. Đêm qua thêm mảnh tro thư.
 

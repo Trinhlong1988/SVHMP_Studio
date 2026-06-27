@@ -1,31 +1,31 @@
 {
   "hook_openers_top5": [
     [
-      "Đêm tháng tư",
-      31
-    ],
-    [
       "Đêm ba mươi tháng Chạp",
       5
     ],
     [
-      "Tháng tư",
-      2
-    ],
-    [
       "Đêm",
-      2
+      5
     ],
     [
-      "Chuyến xe đêm rẽ qua một con đường vắng",
-      1
+      "Tháng tư",
+      4
+    ],
+    [
+      "Mưa đã rơi từ chiều",
+      4
+    ],
+    [
+      "Cuối tháng tư",
+      4
     ]
   ],
-  "template_dem_mua": 27,
-  "template_xe_chay": 29,
-  "template_den_pha": 18,
+  "template_dem_mua": 0,
+  "template_xe_chay": 2,
+  "template_den_pha": 13,
   "cookie_cutter_intros": 0,
   "cookie_cutter_eps": [],
   "cliffhanger_template": 36,
-  "formulaic_score": 0.37
+  "formulaic_score": 0.075
 }

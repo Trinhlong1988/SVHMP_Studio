@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R42
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven đồi cà phê Đắk Lắk. Đèn pha quét lên hàng cà phê — cà phê đã ra hoa trắng.
+Cuối tháng tư. Trời ẩm. Xe đêm chạy chậm qua đường ven đồi cà phê Đắk Lắk, Hà Nội. Hàng cây ven đường — lá còn rơi vài giọt mưa cuối ngày. Đèn pha quét lên hàng cà phê — cà phê đã ra hoa trắng.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi tư. Trong túi áo gió Khải Phong — bốn mươi ba vật.
 

@@ -53,7 +53,7 @@ milestone_special: S1 FINALE - 50 vật xếp thành bản đồ - kết thúc t
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven biển Hải Phòng — đường về Vĩnh Bảo — quê Hạ Vy. Đèn pha quét lên hàng phi lao biển.
+Phố vắng. Đêm thưa. Xe đêm đi qua đoạn Vĩnh Bảo — quê Hạ Vy, Hà Nội — đèn pha hắt lên hàng cây cao quá đầu — bóng đổ dài trên mặt đường ướt. Đèn pha quét lên hàng phi lao biển.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ năm mươi. Milestone — S1 FINALE.
 

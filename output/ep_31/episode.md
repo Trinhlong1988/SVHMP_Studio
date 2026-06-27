@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R40
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ hơn — chỉ còn sương lất phất. Chuyến xe đêm chạy qua đoạn đường ven sông Luộc, Hưng Yên. Đèn pha quét lên hàng nhãn cổ — nhãn đã ra trái non — chùm trái xanh bên đường.
+Sương lất phất. Tháng tư đã cuối. Xe đêm chạy chậm qua đoạn ven sông Luộc, Hưng Yên — hàng nhãn cổ ven đường im bóng.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi mốt. Trong túi áo gió Khải Phong — ba mươi vật.
 

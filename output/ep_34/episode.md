@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R40
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven cánh đồng Vĩnh Phúc. Đèn pha quét lên ruộng lúa mới cấy.
+Cuối tháng tư. Trời ẩm. Xe đêm chạy chậm qua đường ven cánh đồng Vĩnh Phúc, Hà Nội. Hàng cây ven đường — lá còn rơi vài giọt mưa cuối ngày. Đèn pha quét lên ruộng lúa mới cấy.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi tư. Trong túi áo gió Khải Phong — ba mươi ba vật.
 

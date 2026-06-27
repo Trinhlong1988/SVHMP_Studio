@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R38
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ rải xuống mái xe — không thành tiếng. Chuyến xe đêm chạy qua đoạn đường ven sông Nhuệ, Hà Đông. Đèn pha quét lên hàng nhãn cũ — tán lá đã rậm sau mùa xuân.
+Sương dày. Đêm tháng tư miền Bắc. Xe đêm trôi chậm qua đoạn ven sông Nhuệ, Hà Đông. Đèn pha rọi lên hàng nhãn cũ — tán lá đã rậm sau mùa xuân.
 
 Khải Phong ngồi ghế thứ ba — chỗ cũ — chỗ Khải Phong đã ngồi mười đêm trước. Đêm thứ mười một.
 

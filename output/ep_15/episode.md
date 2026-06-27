@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R38 + R36 callback EP11
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa đã hết. Mặt đường khô. Chuyến xe đêm chạy qua đoạn đường ven hồ Đồng Mô, Hoài Đức. Đèn pha quét lên mặt hồ phẳng — không gió.
+Đêm. Đường vắng. Xe đêm trôi qua đoạn đường ven hồ Đồng Mô, Hoài Đức. Đèn pha quét đi quét lại trên hàng cây — không có ai khác trên đường.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ mười lăm. Trong túi áo gió Khải Phong — mười bốn vật. Đêm qua thêm sợi chỉ vàng thêu cúc từ khăn bà Tâm Đan.
 

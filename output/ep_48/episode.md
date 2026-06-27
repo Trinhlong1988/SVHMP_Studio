@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R42
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ miền Tây. Chuyến xe đêm chạy qua đoạn đường ven sông Hậu, Cần Thơ. Đèn pha quét lên hàng dừa nước.
+Đêm thứ 48 trên chuyến xe — Khải Phong ngồi ghế thứ ba. Mưa tháng tư rỉ rả ngoài kính xe. Xe đi qua đoạn đường ven sông Hậu, Cần Thơ — hàng cây im bóng. Đèn pha quét lên hàng dừa nước.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi tám. Trong túi áo gió Khải Phong — bốn mươi bảy vật.
 

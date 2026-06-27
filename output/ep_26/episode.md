@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R40
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường vành đai phía tây Hà Nội, ven cánh đồng An Khánh. Đèn pha quét lên hàng phượng vĩ — phượng đã ra hoa đỏ đầu mùa — đèn pha chiếu lên cành làm hoa đỏ sáng vài giây.
+Hà Nội cuối tháng tư. Đêm. Chuyến xe đi qua đoạn ven đường vành đai phía tây Hà Nội, ven cánh đồng An Khánh. Đèn pha rọi lên hàng cây — ánh đèn vàng cô đơn.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi sáu. Trong túi áo gió Khải Phong — hai mươi lăm vật. Đêm qua thêm mảnh vải bông cuốn mép kính của Văn Quân.
 

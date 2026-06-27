@@ -2,12 +2,12 @@
   "ep_number": 25,
   "phase_h_version": "H1-H7 v1.0",
   "stats": {
-    "tokens_count": 2914,
+    "tokens_count": 2908,
     "sentences_approx": 259,
-    "adverbs_count": 151,
+    "adverbs_count": 150,
     "adverbs_ratio": 0.052,
-    "word_count": 2894,
-    "estimated_minutes": 18.7
+    "word_count": 2888,
+    "estimated_minutes": 18.6
   },
   "issues": [
     {
@@ -20,6 +20,12 @@
       "check": "H1_token_repeat",
       "severity": "warning",
       "evidence": "\"mảnh\" lặp 24x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"phổi\" lặp 22x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
@@ -67,13 +73,13 @@
     {
       "check": "H10_duration_above_preferred",
       "severity": "minor",
-      "evidence": "18.7 phút (preferred 15-18p, max 20p)",
+      "evidence": "18.6 phút (preferred 15-18p, max 20p)",
       "suggestion": "OK acceptable nhưng listener có thể mệt"
     }
   ],
   "issues_count_by_severity": {
     "critical": 0,
-    "warning": 5,
+    "warning": 6,
     "minor": 5
   },
   "verdict": "WARN",

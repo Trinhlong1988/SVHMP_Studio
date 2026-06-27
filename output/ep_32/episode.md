@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R40
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa lất phất. Chuyến xe đêm chạy qua đoạn đường ven sông Thương, Bắc Giang. Đèn pha quét lên hàng vải lồng — vải đã ra trái non — chùm xanh.
+Tháng tư. Đêm vừa khuya. Xe đêm rẽ vào đoạn ven sông Thương, Bắc Giang. Đèn pha cắt qua màn sương — chiếu lên hàng cây bên đường.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi hai. Trong túi áo gió Khải Phong — ba mươi mốt vật. Đêm qua thêm cánh cúc tươi vàng nhạt thứ năm.
 

@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R42
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven biển Thái Bình. Đèn pha quét lên hàng phi lao biển.
+Hà Nội cuối tháng tư. Đêm. Chuyến xe đi qua đoạn ven đường ven biển Thái Bình, Hà Nội. Đèn pha rọi lên hàng cây — ánh đèn vàng cô đơn.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi sáu. Trong túi áo gió Khải Phong — bốn mươi lăm vật. Đêm qua thêm vải bông cuốn mép mảnh gương Mạnh Hiếu.
 

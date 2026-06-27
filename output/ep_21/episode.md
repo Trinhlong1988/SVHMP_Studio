@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R38 + R39 word count target
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ rơi xuống mái xe — không thành tiếng — chỉ là âm thầm trên kính. Chuyến xe đêm chạy qua đoạn đường ven sông Đáy, Nam Định. Đèn pha xe quét lên hàng cau dọc đường — cau cao quá đầu — tán cau in bóng trên kính chắn gió.
+Đêm vắng. Cuối tháng tư miền Bắc. Mặt sông Đáy phẳng — gió ngừng. Chuyến xe đêm chạy qua đoạn đường ven sông Đáy, Nam Định. Đèn pha quét lên hàng cây.
 
 Khải Phong ngồi ghế thứ ba — chỗ ngồi đã không đổi từ đêm đầu. Đêm thứ hai mươi mốt. Trong túi áo gió Khải Phong — hai mươi vật. Đêm qua thêm mảnh giấy chữ tròn "Yêu anh. Hoài." — chữ tay phụ nữ — nét chữ nhỏ tròn quen.
 

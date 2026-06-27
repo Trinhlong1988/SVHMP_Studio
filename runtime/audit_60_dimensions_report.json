@@ -780,13 +780,18 @@
   "12": {
     "high": 0,
     "medium": 4,
-    "low": 2,
-    "ok": 64,
+    "low": 3,
+    "ok": 63,
     "details": [
       {
         "check": "1.2 word frequency > 20 (non-name)",
         "value": "3",
         "sev": "MEDIUM"
+      },
+      {
+        "check": "1.3 common sentence openers > 8",
+        "value": "1",
+        "sev": "LOW"
       },
       {
         "check": "1.4 4-gram self-repeat > 2",
@@ -861,7 +866,7 @@
     "details": [
       {
         "check": "1.2 word frequency > 20 (non-name)",
-        "value": "4",
+        "value": "3",
         "sev": "MEDIUM"
       },
       {
@@ -985,7 +990,7 @@
       },
       {
         "check": "1.3 common sentence openers > 8",
-        "value": "1",
+        "value": "2",
         "sev": "LOW"
       },
       {
@@ -1005,7 +1010,7 @@
       },
       {
         "check": "7.3 foreign words leak",
-        "value": "79",
+        "value": "80",
         "sev": "LOW"
       }
     ]
@@ -1091,7 +1096,7 @@
       },
       {
         "check": "7.3 foreign words leak",
-        "value": "69",
+        "value": "70",
         "sev": "LOW"
       }
     ]
@@ -1109,7 +1114,7 @@
       },
       {
         "check": "1.3 common sentence openers > 8",
-        "value": "1",
+        "value": "2",
         "sev": "LOW"
       },
       {
@@ -1195,7 +1200,7 @@
       },
       {
         "check": "7.3 foreign words leak",
-        "value": "86",
+        "value": "87",
         "sev": "LOW"
       }
     ]
@@ -1309,7 +1314,7 @@
       },
       {
         "check": "7.3 foreign words leak",
-        "value": "99",
+        "value": "98",
         "sev": "LOW"
       }
     ]
@@ -1380,7 +1385,7 @@
       },
       {
         "check": "7.3 foreign words leak",
-        "value": "92",
+        "value": "93",
         "sev": "LOW"
       }
     ]
@@ -1461,7 +1466,7 @@
       },
       {
         "check": "7.3 foreign words leak",
-        "value": "77",
+        "value": "78",
         "sev": "LOW"
       }
     ]
@@ -1512,8 +1517,8 @@
   "31": {
     "high": 0,
     "medium": 2,
-    "low": 5,
-    "ok": 63,
+    "low": 4,
+    "ok": 64,
     "details": [
       {
         "check": "1.2 word frequency > 20 (non-name)",
@@ -1531,11 +1536,6 @@
         "sev": "MEDIUM"
       },
       {
-        "check": "1.8 Đêm tháng tư opener count",
-        "value": "3",
-        "sev": "LOW"
-      },
-      {
         "check": "3.10 driver unauthorized speech (post-R42)",
         "value": "3",
         "sev": "LOW"
@@ -1547,7 +1547,7 @@
       },
       {
         "check": "7.3 foreign words leak",
-        "value": "70",
+        "value": "69",
         "sev": "LOW"
       }
     ]
@@ -1760,7 +1760,7 @@
       },
       {
         "check": "7.3 foreign words leak",
-        "value": "79",
+        "value": "80",
         "sev": "LOW"
       }
     ]
@@ -1831,7 +1831,7 @@
       },
       {
         "check": "7.3 foreign words leak",
-        "value": "65",
+        "value": "66",
         "sev": "LOW"
       }
     ]
@@ -1839,8 +1839,8 @@
   "40": {
     "high": 0,
     "medium": 4,
-    "low": 4,
-    "ok": 62,
+    "low": 3,
+    "ok": 63,
     "details": [
       {
         "check": "1.1 internal anaphora consecutive",
@@ -1856,11 +1856,6 @@
         "check": "1.4 4-gram self-repeat > 2",
         "value": "10",
         "sev": "MEDIUM"
-      },
-      {
-        "check": "1.8 Đêm tháng tư opener count",
-        "value": "3",
-        "sev": "LOW"
       },
       {
         "check": "2.6 driver foreshadow in CLIFF (R42)",
@@ -1879,7 +1874,7 @@
       },
       {
         "check": "7.3 foreign words leak",
-        "value": "115",
+        "value": "114",
         "sev": "LOW"
       }
     ]
@@ -1960,7 +1955,7 @@
       },
       {
         "check": "7.3 foreign words leak",
-        "value": "64",
+        "value": "65",
         "sev": "LOW"
       }
     ]
@@ -2082,7 +2077,7 @@
     "details": [
       {
         "check": "1.2 word frequency > 20 (non-name)",
-        "value": "4",
+        "value": "3",
         "sev": "MEDIUM"
       },
       {
@@ -2110,13 +2105,18 @@
   "47": {
     "high": 0,
     "medium": 3,
-    "low": 5,
-    "ok": 62,
+    "low": 6,
+    "ok": 61,
     "details": [
       {
         "check": "1.2 word frequency > 20 (non-name)",
         "value": "3",
         "sev": "MEDIUM"
+      },
+      {
+        "check": "1.3 common sentence openers > 8",
+        "value": "1",
+        "sev": "LOW"
       },
       {
         "check": "1.4 4-gram self-repeat > 2",
@@ -2150,7 +2150,7 @@
       },
       {
         "check": "7.3 foreign words leak",
-        "value": "72",
+        "value": "73",
         "sev": "LOW"
       }
     ]
@@ -2246,7 +2246,7 @@
       },
       {
         "check": "7.3 foreign words leak",
-        "value": "82",
+        "value": "83",
         "sev": "LOW"
       }
     ]
@@ -2264,7 +2264,7 @@
       },
       {
         "check": "1.3 common sentence openers > 8",
-        "value": "1",
+        "value": "2",
         "sev": "LOW"
       },
       {

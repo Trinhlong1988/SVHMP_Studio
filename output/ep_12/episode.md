@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R38 + R36 callback EP01
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven sông Hồng. Đèn pha quét lên cầu Long Biên — cây cầu sắt thế kỷ — đèn vàng chiếu xuống nhịp cong cũ.
+Tháng tư. Đêm vừa khuya. Xe đêm rẽ vào đoạn ven sông Hồng, Hà Nội. Đèn pha cắt qua màn sương — chiếu lên hàng cây bên đường.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ mười hai. Trong túi áo gió Khải Phong — mười một vật. Đêm qua thêm mảnh vỏ bạc nhỏ — từ vòng cổ ngôi sao của chị Đức.
 

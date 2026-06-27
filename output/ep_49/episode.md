@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R42
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa lất phất. Chuyến xe đêm chạy qua đoạn đường ven sông Hậu, Sóc Trăng. Đèn pha quét lên hàng dừa nước.
+Đèn xe rọi vào sương. Đêm tháng tư miền Trung-Nam. Chuyến xe đi qua đoạn đường ven sông Hậu, Sóc Trăng — hàng cây ven đường thấp thoáng trong sương. Đèn pha quét lên hàng dừa nước.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi chín. Trong túi áo gió Khải Phong — bốn mươi tám vật.
 

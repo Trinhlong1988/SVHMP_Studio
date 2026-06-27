@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R40 + R41
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven biển Quảng Bình. Đèn pha quét lên hàng phi lao biển — gốc nghiêng vì gió.
+Đèn xe rọi vào sương. Đêm tháng tư miền Bắc. Chuyến xe đi qua đoạn đường ven biển Quảng Bình, Hà Nội — hàng cây ven đường thấp thoáng trong sương. Đèn pha quét lên hàng phi lao biển — gốc nghiêng vì gió.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi chín. Trong túi áo gió Khải Phong — ba mươi tám vật. Đêm qua thêm mẩu giấy quà xanh từ hộp quà Đức Anh tặng Lan.
 

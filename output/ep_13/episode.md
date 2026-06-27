@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R38
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa đã ngớt — mặt đường còn ướt. Chuyến xe đêm chạy qua đoạn đường ven cánh đồng lúa Mỹ Đức. Đèn pha quét lên rừng cúc dại bên đường — cúc đã ra hoa sớm năm nay — vàng nhạt giữa cỏ.
+Mưa đã rơi từ chiều. Đêm tháng tư — không tan hết. Chuyến xe đêm đi qua đoạn đường ven cánh đồng lúa Mỹ Đức, Hà Nội — đèn pha hắt lên hàng cây ướt sương. Đèn pha quét lên rừng cúc dại bên đường — cúc đã ra hoa sớm năm nay — vàng nhạt giữa cỏ.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ mười ba. Trong túi áo gió Khải Phong — mười hai vật. Đêm qua thêm mảnh xà cừ thứ hai.
 

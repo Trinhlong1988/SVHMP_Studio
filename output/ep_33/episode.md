@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R40
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường nội thành Hà Nội — phố Cát Linh. Đèn pha quét lên hàng cột tàu điện trên cao — Cát Linh-Hà Đông tuyến đầu.
+Mưa đã rơi từ chiều. Đêm tháng tư — không tan hết. Chuyến xe đêm đi qua đoạn đường nội thành Hà Nội — phố C, Hà Nội — đèn pha hắt lên hàng cây ướt sương. Đèn pha quét lên hàng cột tàu điện trên cao — Cát Linh-Hà Đông tuyến đầu.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi ba. Trong túi áo gió Khải Phong — ba mươi hai vật.
 

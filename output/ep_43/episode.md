@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R42
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven rừng cao su Bình Phước. Đèn pha quét lên thân cao su trắng.
+Mưa đã rơi từ chiều. Đêm tháng tư — không tan hết. Chuyến xe đêm đi qua đoạn đường ven rừng cao su Bình Phư, Hà Nội — đèn pha hắt lên hàng cây ướt sương. Đèn pha quét lên thân cao su trắng.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi ba. Trong túi áo gió Khải Phong — bốn mươi hai vật.
 

@@ -2,12 +2,12 @@
   "ep_number": 50,
   "phase_h_version": "H1-H7 v1.0",
   "stats": {
-    "tokens_count": 2527,
+    "tokens_count": 2542,
     "sentences_approx": 249,
-    "adverbs_count": 112,
+    "adverbs_count": 113,
     "adverbs_ratio": 0.044,
-    "word_count": 2450,
-    "estimated_minutes": 15.8
+    "word_count": 2460,
+    "estimated_minutes": 15.9
   },
   "issues": [
     {
@@ -19,7 +19,7 @@
     {
       "check": "H1_token_repeat",
       "severity": "warning",
-      "evidence": "\"đêm\" lặp 30x trong ep",
+      "evidence": "\"đêm\" lặp 31x trong ep",
       "suggestion": "Đa dạng từ vựng, dùng synonym"
     },
     {
@@ -43,7 +43,7 @@
     {
       "check": "H6_sentence_runon",
       "severity": "warning",
-      "evidence": "Câu 192 từ (max 150)",
+      "evidence": "Câu 191 từ (max 150)",
       "suggestion": "Cắt thành 2-3 câu ngắn để rhythm narrative"
     },
     {

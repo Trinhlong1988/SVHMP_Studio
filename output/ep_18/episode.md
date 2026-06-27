@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R38
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven hồ Gươm. Đèn pha quét lên mặt hồ — đèn vàng từ Tháp Rùa hắt xuống.
+Đêm thứ 18 trên chuyến xe — Khải Phong ngồi ghế thứ ba. Mưa tháng tư rỉ rả ngoài kính xe. Xe đi qua đoạn đường ven hồ Gươm, Hà Nội — hàng cây im bóng. Đèn pha quét lên mặt hồ — đèn vàng từ Tháp Rùa hắt xuống.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ mười tám. Trong túi áo gió Khải Phong — mười bảy vật. Đêm qua thêm mẩu nhãn USB.
 

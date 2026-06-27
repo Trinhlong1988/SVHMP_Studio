@@ -53,7 +53,7 @@ constitution_compliance:
     NEVER_7_check: [no_gore, no_jump_scare, no_exorcism, no_monster_hunt, no_combat, no_villain_ghost, no_explanation_dump]
     GHOST_RULES_3: [never_attack, never_chase, never_speak_directly]
   bible_03: driver chỉ 2 câu speech_lines
-  bible_11: regret từ REG_FAM_001 (Mr.Long catalog locked)
+  bible_11: regret từ REG_FAM_001 (Mr. Long catalog locked)
   bible_12: OBJ_AO_LEN_NAU mỗi passenger 1 vật
   bible_13: setting_can_tet (đêm 28 Tết âm)
   bible_18: EP02 ≠ EP73/EP90 reserved

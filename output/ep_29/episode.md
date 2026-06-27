@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R40
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven biển Đà Nẵng — qua đèo Hải Vân. Đèn pha quét lên hàng dừa nước ven đường biển — sóng vọng từ phía dưới đèo.
+Đèn xe rọi vào sương. Đêm tháng tư miền Bắc. Chuyến xe đi qua đoạn đường ven biển Đà Nẵng — qua đ, Hà Nội — hàng cây ven đường thấp thoáng trong sương. Đèn pha quét lên hàng dừa nước ven đường biển — sóng vọng từ phía dưới đèo.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi chín. Trong túi áo gió Khải Phong — hai mươi tám vật. Đêm qua thêm mảnh nhung đen từ hộp nhẫn Hữu Lộc.
 

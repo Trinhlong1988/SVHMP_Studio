@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R40
 
 [pause:800ms]
 
-Đêm tháng tư. Mưa nhẹ. Chuyến xe đêm chạy qua đoạn đường ven sông Hồng đoạn Phú Thọ. Đèn pha quét lên cánh đồng ngô xanh — ngô đã cao nửa người — gió thổi nghiêng ngọn.
+Sau cơn mưa chiều. Đêm xuống nhanh. Xe đêm rẽ vào đoạn đường ven sông Hồng đoạn Phú T, Hà Nội. Hàng cây ven đường còn đẫm — đèn pha quét lên thân cây ướt. Đèn pha quét lên cánh đồng ngô xanh — ngô đã cao nửa người — gió thổi nghiêng ngọn.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi bảy. Trong túi áo gió Khải Phong — hai mươi sáu vật. Đêm qua thêm nhãn ngày mua hộp thước T "06/2017".
 
