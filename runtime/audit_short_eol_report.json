@@ -1,51 +1,5 @@
 {
-  "total": 5,
-  "eps": [
-    [
-      1,
-      5
-    ]
-  ],
-  "violations": [
-    {
-      "line": 117,
-      "word": "rồi",
-      "context": "Khải-Phong nhớ rồi. Anh",
-      "sentence_words": 3,
-      "severity": "HIGH",
-      "ep": 1
-    },
-    {
-      "line": 189,
-      "word": "lên",
-      "context": "Khải-Phong ngẩng lên.",
-      "sentence_words": 3,
-      "severity": "HIGH",
-      "ep": 1
-    },
-    {
-      "line": 201,
-      "word": "lặng",
-      "context": "Khải-Phong im lặng. Rất",
-      "sentence_words": 3,
-      "severity": "HIGH",
-      "ep": 1
-    },
-    {
-      "line": 361,
-      "word": "ra",
-      "context": "Khải-Phong thở ra.",
-      "sentence_words": 3,
-      "severity": "HIGH",
-      "ep": 1
-    },
-    {
-      "line": 411,
-      "word": "lên",
-      "context": "Khải-Phong ngẩng lên.",
-      "sentence_words": 3,
-      "severity": "HIGH",
-      "ep": 1
-    }
-  ]
+  "total": 0,
+  "eps": [],
+  "violations": []
 }

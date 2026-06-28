@@ -586,7 +586,7 @@
     },
     {
       "type": "em_after_named_person_ambiguous",
-      "detail": "2+ em sau \"Bình\" — có thể refer Bình",
+      "detail": "2+ em sau \"Hà\" — có thể refer Hà",
       "severity": "MEDIUM",
       "sample": "Em ở Hà Nội — Quỳnh quê Thái Bình — em ở ký túc xá — em đến ở chơi nhà em mỗi cuối tuần.",
       "ep": 33,
@@ -604,7 +604,7 @@
     },
     {
       "type": "em_after_named_person_ambiguous",
-      "detail": "2+ em sau \"Hoài\" — có thể refer Hoài",
+      "detail": "2+ em sau \"Hoài An\" — có thể refer Hoài An",
       "severity": "MEDIUM",
       "sample": "Đêm trước hôm em quay về Thái Bình — em nói với em: 'Hoài An ơi em muốn đi tàu điện trên cao trước em về quê",
       "ep": 33,

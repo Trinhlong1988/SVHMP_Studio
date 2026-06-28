@@ -1,25 +1,5 @@
 {
-  "total_violations": 2,
-  "eps_with_issues": [
-    [
-      1,
-      2
-    ]
-  ],
-  "violations": [
-    {
-      "line": 41,
-      "word": "Mã",
-      "context": "Vỏ xà cừ. Mặt số La Mã.",
-      "severity": "HIGH",
-      "ep": 1
-    },
-    {
-      "line": 99,
-      "word": "Mã",
-      "context": "Vỏ xà cừ lạnh. Mặt số La Mã. Kim dừng bảy giờ m",
-      "severity": "HIGH",
-      "ep": 1
-    }
-  ]
+  "total_violations": 0,
+  "eps_with_issues": [],
+  "violations": []
 }

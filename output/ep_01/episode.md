@@ -73,7 +73,7 @@ Khải-Phong ngồi ghế số bảy.
 
 Trong tay anh, một chiếc đồng hồ cô gái.
 
-Vỏ xà cừ. Mặt số La Mã.
+Vỏ xà cừ. Mặt số La Mã đen.
 
 Kim đồng hồ dừng lúc bảy giờ mười.
 
@@ -131,7 +131,7 @@ Bác không nói.
 
 Khải-Phong xoay chiếc đồng hồ trong lòng bàn tay.
 
-Vỏ xà cừ lạnh. Mặt số La Mã. Kim dừng bảy giờ mười.
+Vỏ xà cừ lạnh. Mặt số La Mã đen. Kim dừng bảy giờ mười.
 
 Có lẽ pin hết.
 
@@ -149,7 +149,7 @@ Khải-Phong cúi xuống nhìn. Kim vẫn dừng bảy giờ mười.
 
 Không nhúc nhích.
 
-Khải-Phong nhớ rồi. Anh đã giữ chiếc đồng hồ này tám năm.
+Khải-Phong nhớ ra rồi đó. Anh đã giữ chiếc đồng hồ này tám năm.
 
 Tám năm cất trong ngăn kéo đáy.
 
@@ -221,7 +221,7 @@ Cô không hỏi thêm câu nào.
 
 Cô chỉ lặng nhìn chiếc đồng hồ.
 
-Khải-Phong ngẩng lên.
+Khải-Phong ngẩng đầu lên cao.
 
 — Này cô, cô nhìn gì vậy?
 
@@ -233,7 +233,7 @@ Cô gái mỉm cười nhẹ nhàng.
 
 — Của ai vậy chú?
 
-Khải-Phong im lặng. Rất lâu. Lâu lắm.
+Khải-Phong im lặng một hồi lâu. Rất lâu. Lâu lắm.
 
 — Của một người bạn.
 
@@ -393,7 +393,7 @@ Khải-Phong ngừng nói.
 
 Cô gái ghế tám đặt tay lên đùi. Cô không hỏi gì. Chỉ ngồi đợi anh nói tiếp.
 
-Khải-Phong thở ra.
+Khải-Phong thở ra một hơi dài.
 
 — Tôi nhớ ra rồi.
 
@@ -443,7 +443,7 @@ Thì ra trong ngăn kéo đáy đó, chỉ còn lại tiếng tích tắc của 
 
 Cô gái ghế tám đưa tay che miệng.
 
-Khải-Phong ngẩng lên.
+Khải-Phong ngẩng đầu lên cao.
 
 Mắt anh chạm vào cửa kính phía bác tài.
 

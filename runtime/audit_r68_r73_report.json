@@ -43,7 +43,7 @@
         },
         {
           "word": "Khải",
-          "context": "giờ mười.\n\nKhông nhúc nhích.\n\nKhải-Phong nhớ rồi. Anh"
+          "context": "giờ mười.\n\nKhông nhúc nhích.\n\nKhải-Phong nhớ ra rồi đó"
         },
         {
           "word": "Khải",
@@ -75,11 +75,11 @@
         },
         {
           "word": "Khải",
-          "context": "chỉ lặng nhìn chiếc đồng hồ.\n\nKhải-Phong ngẩng lên.\n\n—"
+          "context": "chỉ lặng nhìn chiếc đồng hồ.\n\nKhải-Phong ngẩng đầu lên"
         },
         {
           "word": "Khải",
-          "context": "ạ?\n\n— Dạ.\n\n— Của ai vậy chú?\n\nKhải-Phong im lặng. Rất"
+          "context": "ạ?\n\n— Dạ.\n\n— Của ai vậy chú?\n\nKhải-Phong im lặng một h"
         },
         {
           "word": "Khải",
@@ -155,7 +155,7 @@
         },
         {
           "word": "Khải",
-          "context": ". Chỉ ngồi đợi anh nói tiếp.\n\nKhải-Phong thở ra.\n\n— Tô"
+          "context": ". Chỉ ngồi đợi anh nói tiếp.\n\nKhải-Phong thở ra một hơ"
         },
         {
           "word": "Khải",
@@ -171,7 +171,7 @@
         },
         {
           "word": "Khải",
-          "context": "i ghế tám đưa tay che miệng.\n\nKhải-Phong ngẩng lên.\n\nM"
+          "context": "i ghế tám đưa tay che miệng.\n\nKhải-Phong ngẩng đầu lên"
         },
         {
           "word": "Khải",
@@ -648,8 +648,8 @@
     "4": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "Một người phụ nữ trung niên. Khoảng bốn mươi mấy tuổi."
+          "word": "Khang",
+          "context": "gấp. Mặt trước in nét bút \"An Khang Thịnh Vượng\" màu và"
         },
         {
           "word": "Khải",
@@ -724,8 +724,8 @@
           "context": "ng. Ánh mắt bác dừng lại trên Khải Phong. Lâu hơn một"
         },
         {
-          "word": "Khang",
-          "context": "gấp. Mặt trước in nét bút \"An Khang Thịnh Vượng\" màu và"
+          "word": "Khoảng",
+          "context": "Một người phụ nữ trung niên. Khoảng bốn mươi mấy tuổi."
         }
       ],
       "R69": [],
@@ -816,10 +816,6 @@
     "5": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "Một người đàn ông trung niên. Khoảng năm mươi mấy tuổi."
-        },
-        {
           "word": "Khải",
           "context": "nh cửa thành những giọt nhỏ.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -830,6 +826,10 @@
         {
           "word": "Khải",
           "context": "hêm. Tách. Hai lần liền sau.\n\nKhải Phong ấy đếm. Đêm t"
+        },
+        {
+          "word": "Khoảng",
+          "context": "Một người đàn ông trung niên. Khoảng năm mươi mấy tuổi."
         }
       ],
       "R69": [
@@ -947,10 +947,6 @@
     "6": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "ười nhỏ đứng đợi.\n\nMột cụ bà. Khoảng bảy mươi mấy tuổi."
-        },
-        {
           "word": "Khải",
           "context": "Mạ non đã cấy được mấy hôm.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -965,6 +961,10 @@
         {
           "word": "Khải",
           "context": "ang rổ lá dong tới gói cùng.\n\nKhải Phong chớp mắt lần"
+        },
+        {
+          "word": "Khoảng",
+          "context": "ười nhỏ đứng đợi.\n\nMột cụ bà. Khoảng bảy mươi mấy tuổi."
         }
       ],
       "R69": [
@@ -1085,8 +1085,8 @@
     "7": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "rẻ đứng đợi.\n\nMột chàng trai. Khoảng hai mươi mấy tuổi."
+          "word": "Khang",
+          "context": "ao. Mặt trước in chữ vàng \"An Khang Thịnh Vượng\". Mặt s"
         },
         {
           "word": "Khải",
@@ -1113,8 +1113,8 @@
           "context": "không phản ứng. Như đã quen.\n\nKhải Phong ấy nhắm mắt."
         },
         {
-          "word": "Khang",
-          "context": "ao. Mặt trước in chữ vàng \"An Khang Thịnh Vượng\". Mặt s"
+          "word": "Khoảng",
+          "context": "rẻ đứng đợi.\n\nMột chàng trai. Khoảng hai mươi mấy tuổi."
         }
       ],
       "R69": [],
@@ -1233,10 +1233,6 @@
     "8": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "ứng đợi.\n\nMột chàng trai trẻ. Khoảng hai mươi mấy tuổi."
-        },
-        {
           "word": "Khải",
           "context": "Đèn dầu hắt qua mấy cửa sổ.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -1247,6 +1243,10 @@
         {
           "word": "Khải",
           "context": "ỉ thêu hoa — rơi xuống dưới.\n\nKhải Phong nhặt sợi chỉ."
+        },
+        {
+          "word": "Khoảng",
+          "context": "ứng đợi.\n\nMột chàng trai trẻ. Khoảng hai mươi mấy tuổi."
         }
       ],
       "R69": [],
@@ -1386,10 +1386,6 @@
     "9": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "dù che mưa.\n\nMột phụ cô gái. Khoảng ba mươi mấy tuổi. M"
-        },
-        {
           "word": "Khải",
           "context": "e thành những vệt sáng cong.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -1404,6 +1400,10 @@
         {
           "word": "Khải",
           "context": "rơi — vỏ pin đã rỉ một góc.\n\nKhải Phong nhặt viên pin"
+        },
+        {
+          "word": "Khoảng",
+          "context": "dù che mưa.\n\nMột phụ cô gái. Khoảng ba mươi mấy tuổi. M"
         }
       ],
       "R69": [],
@@ -1543,16 +1543,16 @@
     "10": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "ứng đợi.\n\nMột chú trung niên. Khoảng bốn mươi mấy tuổi."
-        },
-        {
           "word": "Khải",
           "context": "hành phố loé sáng qua sương.\n\nKhải Phong ngồi ghế thứ"
         },
         {
           "word": "Khải",
           "context": "khác:\n\n\"...bà ơi cháu về...\"\n\nKhải Phong ấy mở mắt. Án"
+        },
+        {
+          "word": "Khoảng",
+          "context": "ứng đợi.\n\nMột chú trung niên. Khoảng bốn mươi mấy tuổi."
         }
       ],
       "R69": [
@@ -1688,10 +1688,6 @@
     "11": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "thanh niên đứng đợi bên cổng. Khoảng hai mươi sáu tuổi."
-        },
-        {
           "word": "Khải",
           "context": "tán lá đã rậm sau mùa xuân.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -1706,6 +1702,10 @@
         {
           "word": "Khải",
           "context": "Đã quen? Đã hứa với? Đã mất?\n\nKhải Phong ấy cố nhớ. Hì"
+        },
+        {
+          "word": "Khoảng",
+          "context": "thanh niên đứng đợi bên cổng. Khoảng hai mươi sáu tuổi."
         }
       ],
       "R69": [],
@@ -1905,10 +1905,6 @@
     "12": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "òn sáng. Một phụ nữ đứng đợi. Khoảng ba mươi sáu tuổi. Á"
-        },
-        {
           "word": "Khải",
           "context": "hiếu lên hàng cây bên đường.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -1959,6 +1955,10 @@
         {
           "word": "Tuấn",
           "context": "t cái.\n\n\"Em nhớ. Em không yêu Tuấn nhiều hơn anh Khôi"
+        },
+        {
+          "word": "Khoảng",
+          "context": "òn sáng. Một phụ nữ đứng đợi. Khoảng ba mươi sáu tuổi. Á"
         }
       ],
       "R69": [],
@@ -2143,10 +2143,6 @@
     "13": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "trung niên đứng đợi bên cổng. Khoảng bốn mươi sáu tuổi."
-        },
-        {
           "word": "Khải",
           "context": "năm nay — vàng nhạt giữa cỏ.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -2157,6 +2153,10 @@
         {
           "word": "Khải",
           "context": "lời.\n\n\"Con đã nhớ ra chưa?\"\n\nKhải Phong khẽ gật đầu."
+        },
+        {
+          "word": "Khoảng",
+          "context": "trung niên đứng đợi bên cổng. Khoảng bốn mươi sáu tuổi."
         }
       ],
       "R69": [],
@@ -2353,10 +2353,6 @@
     "14": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "trung niên đứng đợi bên cổng. Khoảng năm mươi sáu tuổi."
-        },
-        {
           "word": "Khải",
           "context": "rơi vài giọt mưa cuối ngày.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -2455,6 +2451,10 @@
         {
           "word": "Khải",
           "context": "từ vườn bà không. Đừng vội.\"\n\nKhải Phong gật."
+        },
+        {
+          "word": "Khoảng",
+          "context": "trung niên đứng đợi bên cổng. Khoảng năm mươi sáu tuổi."
         }
       ],
       "R69": [],
@@ -2648,10 +2648,6 @@
     "15": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "thanh niên đứng đợi bên cổng. Khoảng ba mươi mốt tuổi. Á"
-        },
-        {
           "word": "Khải",
           "context": "không có ai khác trên đường.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -2734,6 +2730,10 @@
         {
           "word": "Khải",
           "context": "g cụm cúc. Diversify cụm vật. Khải Phong cảm thấy — tú"
+        },
+        {
+          "word": "Khoảng",
+          "context": "thanh niên đứng đợi bên cổng. Khoảng ba mươi mốt tuổi. Á"
         }
       ],
       "R69": [],
@@ -2936,10 +2936,6 @@
     "16": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "Một phụ nữ đứng đợi bên cổng. Khoảng ba mươi tám tuổi. Á"
-        },
-        {
           "word": "Khải",
           "context": "g cây — ánh đèn vàng cô đơn.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -2954,6 +2950,10 @@
         {
           "word": "Khải",
           "context": "phòng trọ không. Đừng vội.\"\n\nKhải Phong gật."
+        },
+        {
+          "word": "Khoảng",
+          "context": "Một phụ nữ đứng đợi bên cổng. Khoảng ba mươi tám tuổi. Á"
         }
       ],
       "R69": [],
@@ -3147,10 +3147,6 @@
     "17": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": ". Một người đàn ông đứng đợi. Khoảng bốn mươi hai tuổi."
-        },
-        {
           "word": "Khải",
           "context": "— cành thông đẫm sương đêm.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -3165,6 +3161,10 @@
         {
           "word": "Khải",
           "context": "n về cuộc gọi đó. Đừng vội.\"\n\nKhải Phong ấy gật. Không"
+        },
+        {
+          "word": "Khoảng",
+          "context": ". Một người đàn ông đứng đợi. Khoảng bốn mươi hai tuổi."
         }
       ],
       "R69": [],
@@ -3358,26 +3358,6 @@
     "18": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "bút. Một phụ nữ trẻ đứng đợi. Khoảng hai mươi tám tuổi."
-        },
-        {
-          "word": "Khải",
-          "context": "Đêm thứ 18 trên chuyến xe — Khải Phong ngồi ghế thứ"
-        },
-        {
-          "word": "Khải",
-          "context": "vàng từ Tháp Rùa hắt xuống.\n\nKhải Phong ngồi ghế thứ"
-        },
-        {
-          "word": "Khải",
-          "context": "— đến mười.\n\n[pause:1500ms]\n\nKhải Phong ấy ngồi. Tro"
-        },
-        {
-          "word": "Khải",
-          "context": "về sổ tay Hạ Vy. Đừng vội.\"\n\nKhải Phong gật.\n\nĐêm thứ"
-        },
-        {
           "word": "Khang",
           "context": "phía đó. Lệ rơi xuống thư.\n\n\"Khang...\"\n\nCô gái nói rất"
         },
@@ -3432,6 +3412,26 @@
         {
           "word": "Khang",
           "context": "khách chớp lần nữa. Người tên Khang tan ra.\n\nLinh Trang"
+        },
+        {
+          "word": "Khải",
+          "context": "Đêm thứ 18 trên chuyến xe — Khải Phong ngồi ghế thứ"
+        },
+        {
+          "word": "Khải",
+          "context": "vàng từ Tháp Rùa hắt xuống.\n\nKhải Phong ngồi ghế thứ"
+        },
+        {
+          "word": "Khải",
+          "context": "— đến mười.\n\n[pause:1500ms]\n\nKhải Phong ấy ngồi. Tro"
+        },
+        {
+          "word": "Khải",
+          "context": "về sổ tay Hạ Vy. Đừng vội.\"\n\nKhải Phong gật.\n\nĐêm thứ"
+        },
+        {
+          "word": "Khoảng",
+          "context": "bút. Một phụ nữ trẻ đứng đợi. Khoảng hai mươi tám tuổi."
         }
       ],
       "R69": [],
@@ -3631,10 +3631,6 @@
     "19": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "Một phụ nữ đứng đợi bên cổng. Khoảng năm mươi tuổi. Áo b"
-        },
-        {
           "word": "Khải",
           "context": "t lên bãi mía dài bên đường.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -3649,6 +3645,10 @@
         {
           "word": "Khải",
           "context": "n trỏ ba cái — như đồng cảm.\n\nKhải Phong gật. Đêm thứ"
+        },
+        {
+          "word": "Khoảng",
+          "context": "Một phụ nữ đứng đợi bên cổng. Khoảng năm mươi tuổi. Áo b"
         }
       ],
       "R69": [],
@@ -3838,10 +3838,6 @@
     },
     "20": {
       "R68": [
-        {
-          "word": "Khoảng",
-          "context": "xưa. Một thanh niên đứng đợi. Khoảng hai mươi bảy tuổi."
-        },
         {
           "word": "Khải",
           "context": "n pha quét lên hàng liễu rủ.\n\nKhải Phong ngồi ghế thứ"
@@ -4045,6 +4041,10 @@
         {
           "word": "Khải",
           "context": "chưa nhớ.\n\nĐêm thứ hai mươi — Khải Phong đếm thêm. Xe"
+        },
+        {
+          "word": "Khoảng",
+          "context": "xưa. Một thanh niên đứng đợi. Khoảng hai mươi bảy tuổi."
         }
       ],
       "R69": [],
@@ -4280,10 +4280,6 @@
     "21": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "ời đàn ông đứng đợi bên cổng. Khoảng năm mươi tuổi. Áo s"
-        },
-        {
           "word": "Khải",
           "context": ". Đèn pha quét lên hàng cây.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -4310,6 +4306,10 @@
         {
           "word": "Thuận",
           "context": "ng Nhân đi vào nghĩa trang Mỹ Thuận — cổng đã mở. Đèn n"
+        },
+        {
+          "word": "Khoảng",
+          "context": "ời đàn ông đứng đợi bên cổng. Khoảng năm mươi tuổi. Áo s"
         }
       ],
       "R69": [],
@@ -4533,10 +4533,6 @@
     "22": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "Một phụ nữ đứng đợi bên cổng. Khoảng ba mươi lăm tuổi. Á"
-        },
-        {
           "word": "Khải",
           "context": "xanh đậm sau mưa bên đường.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -4631,6 +4627,10 @@
         {
           "word": "Khải",
           "context": "hỏi.\n\nĐêm thứ hai mươi hai — Khải Phong đếm thêm. Xe"
+        },
+        {
+          "word": "Khoảng",
+          "context": "Một phụ nữ đứng đợi bên cổng. Khoảng ba mươi lăm tuổi. Á"
         },
         {
           "word": "Quỳnh",
@@ -4906,10 +4906,6 @@
     "23": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "i đàn ông đứng đợi trước cửa. Khoảng bốn mươi lăm tuổi."
-        },
-        {
           "word": "Khải",
           "context": "gốc dày — tán cao ướt sương.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -4924,6 +4920,10 @@
         {
           "word": "Khải",
           "context": "ô ấy. người yêu cũ không về.\n\nKhải Phong nhói thêm. Đê"
+        },
+        {
+          "word": "Khoảng",
+          "context": "i đàn ông đứng đợi trước cửa. Khoảng bốn mươi lăm tuổi."
         },
         {
           "word": "Quỳnh",
@@ -5129,10 +5129,6 @@
     "24": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "ộ.\n\nMột bà đứng đợi bên cổng. Khoảng sáu mươi tuổi. Áo b"
-        },
-        {
           "word": "Khải",
           "context": "ao đêm — mây đã tan sau mưa.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -5147,6 +5143,10 @@
         {
           "word": "Khải",
           "context": "Hạ Vy không bắt. Đừng vội.\"\n\nKhải Phong gật.\n\nĐêm thứ"
+        },
+        {
+          "word": "Khoảng",
+          "context": "ộ.\n\nMột bà đứng đợi bên cổng. Khoảng sáu mươi tuổi. Áo b"
         }
       ],
       "R69": [],
@@ -5373,10 +5373,6 @@
     "25": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "ời đàn ông đứng đợi bên cổng. Khoảng ba mươi tám tuổi. Á"
-        },
-        {
           "word": "Khải",
           "context": "không có ai khác trên đường.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -5415,6 +5411,10 @@
         {
           "word": "Quân",
           "context": "sau — Thái Nguyên khuất — Văn Quân ở lại bệnh viện — đ"
+        },
+        {
+          "word": "Khoảng",
+          "context": "ời đàn ông đứng đợi bên cổng. Khoảng ba mươi tám tuổi. Á"
         }
       ],
       "R69": [],
@@ -5665,10 +5665,6 @@
     "26": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "ười đàn ông đứng đợi bên cửa. Khoảng ba mươi tám tuổi. Á"
-        },
-        {
           "word": "Khải",
           "context": "g cây — ánh đèn vàng cô đơn.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -5681,12 +5677,16 @@
           "context": "— đến mười.\n\n[pause:1500ms]\n\nKhải Phong ngồi yên. Mở"
         },
         {
-          "word": "Quỳnh",
-          "context": "17: mẩu giấy bản từ sách thầy Quỳnh Mai (đêm 22) — nhãn"
-        },
-        {
           "word": "Quân",
           "context": "ải bông cuốn mép kính của Văn Quân.\n\nBác tài lái. Bàn"
+        },
+        {
+          "word": "Khoảng",
+          "context": "ười đàn ông đứng đợi bên cửa. Khoảng ba mươi tám tuổi. Á"
+        },
+        {
+          "word": "Quỳnh",
+          "context": "17: mẩu giấy bản từ sách thầy Quỳnh Mai (đêm 22) — nhãn"
         }
       ],
       "R69": [],
@@ -5907,10 +5907,6 @@
     "27": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "Một phụ nữ đứng đợi bên cổng. Khoảng bốn mươi lăm tuổi."
-        },
-        {
           "word": "Khải",
           "context": "ười — gió thổi nghiêng ngọn.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -5925,6 +5921,10 @@
         {
           "word": "Khải",
           "context": "bàn cưới đêm đó. Đừng vội.\"\n\nKhải Phong gật. Lệ rơi x"
+        },
+        {
+          "word": "Khoảng",
+          "context": "Một phụ nữ đứng đợi bên cổng. Khoảng bốn mươi lăm tuổi."
         }
       ],
       "R69": [],
@@ -6139,11 +6139,11 @@
       ],
       "R71": [
         {
-          "place": "Phú Thọ",
+          "place": "Vĩnh Lộc",
           "count": 6
         },
         {
-          "place": "Vĩnh Lộc",
+          "place": "Phú Thọ",
           "count": 6
         }
       ],
@@ -6157,10 +6157,6 @@
     "28": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "àn ông đứng đợi bên cổng nhà. Khoảng năm mươi lăm tuổi."
-        },
-        {
           "word": "Khải",
           "context": "Đêm thứ 28 trên chuyến xe — Khải Phong ngồi ghế thứ"
         },
@@ -6171,6 +6167,10 @@
         {
           "word": "Khải",
           "context": "— đến mười.\n\n[pause:1500ms]\n\nKhải Phong ấy ngồi yên."
+        },
+        {
+          "word": "Khoảng",
+          "context": "àn ông đứng đợi bên cổng nhà. Khoảng năm mươi lăm tuổi."
         }
       ],
       "R69": [],
@@ -6373,10 +6373,6 @@
     "29": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "phụ nữ trẻ đứng đợi bên cổng. Khoảng hai mươi tám tuổi."
-        },
-        {
           "word": "Khải",
           "context": "sóng vọng từ phía dưới đèo.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -6391,6 +6387,10 @@
         {
           "word": "Khải",
           "context": "thể giữ phòng giá hai người.\n\nKhải Phong dọn. Bóng ngư"
+        },
+        {
+          "word": "Khoảng",
+          "context": "phụ nữ trẻ đứng đợi bên cổng. Khoảng hai mươi tám tuổi."
         },
         {
           "word": "Quỳnh",
@@ -6609,16 +6609,16 @@
     "30": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "thanh niên đứng đợi bên cổng. Khoảng ba mươi tuổi. Áo sơ"
-        },
-        {
           "word": "Khải",
           "context": "gần giống — trùng tuyệt đối.\n\nKhải Phong tim đập nhanh"
         },
         {
           "word": "Khải",
           "context": "ng quen nhau. Cùng năm 2017.\n\nKhải Phong ngẫm. Trùng h"
+        },
+        {
+          "word": "Khoảng",
+          "context": "thanh niên đứng đợi bên cổng. Khoảng ba mươi tuổi. Áo sơ"
         },
         {
           "word": "Quỳnh",
@@ -6897,10 +6897,6 @@
     "31": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "Một phụ nữ đứng đợi bên cổng. Khoảng năm mươi lăm tuổi."
-        },
-        {
           "word": "Khải",
           "context": "g nhãn cổ ven đường im bóng.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -6915,6 +6911,10 @@
         {
           "word": "Khải",
           "context": "Cùng ngày với mẹ Thanh Vân.\n\nKhải Phong nhói. Bác tài"
+        },
+        {
+          "word": "Khoảng",
+          "context": "Một phụ nữ đứng đợi bên cổng. Khoảng năm mươi lăm tuổi."
         }
       ],
       "R69": [],
@@ -7114,10 +7114,6 @@
     "32": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "đứng đợi bên chân cầu thang. Khoảng bốn mươi tuổi. Áo g"
-        },
-        {
           "word": "Khải",
           "context": "hiếu lên hàng cây bên đường.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -7204,6 +7200,10 @@
         {
           "word": "Khải",
           "context": "nhàng.\n\nĐêm thứ ba mươi hai — Khải Phong đếm thêm. Xe"
+        },
+        {
+          "word": "Khoảng",
+          "context": "đứng đợi bên chân cầu thang. Khoảng bốn mươi tuổi. Áo g"
         }
       ],
       "R69": [],
@@ -7406,10 +7406,6 @@
     "33": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "phụ nữ đứng đợi bên cổng ga. Khoảng ba mươi tám tuổi. Á"
-        },
-        {
           "word": "Khải",
           "context": "Cát Linh-Hà Đông tuyến đầu.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -7492,6 +7488,10 @@
         {
           "word": "Khải",
           "context": "ng gật.\n\nĐêm thứ ba mươi ba — Khải Phong đếm thêm. Xe"
+        },
+        {
+          "word": "Khoảng",
+          "context": "phụ nữ đứng đợi bên cổng ga. Khoảng ba mươi tám tuổi. Á"
         },
         {
           "word": "Quỳnh",
@@ -7761,10 +7761,6 @@
     "34": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "àn ông đứng đợi bên cột điện. Khoảng năm mươi tuổi. Áo s"
-        },
-        {
           "word": "Khải",
           "context": "quét lên ruộng lúa mới cấy.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -7923,6 +7919,10 @@
         {
           "word": "Tuấn",
           "context": "ía sau — Vĩnh Phúc khuất. Văn Tuấn ở lại quỳ — bó hươn"
+        },
+        {
+          "word": "Khoảng",
+          "context": "àn ông đứng đợi bên cột điện. Khoảng năm mươi tuổi. Áo s"
         }
       ],
       "R69": [],
@@ -8131,10 +8131,6 @@
     "35": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "thanh niên đứng đợi bên cổng. Khoảng hai mươi tám tuổi."
-        },
-        {
           "word": "Khải",
           "context": "không có ai khác trên đường.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -8285,6 +8281,10 @@
         {
           "word": "Quân",
           "context": "ì không nhận ra mặt mình. Văn Quân EP25 ung thư phổi —"
+        },
+        {
+          "word": "Khoảng",
+          "context": "thanh niên đứng đợi bên cổng. Khoảng hai mươi tám tuổi."
         }
       ],
       "R69": [],
@@ -8490,14 +8490,6 @@
     "36": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "ời đàn ông đứng đợi bên cổng. Khoảng bốn mươi tám tuổi."
-        },
-        {
-          "word": "Khoảng",
-          "context": "tối. Tai nạn xảy ra lúc nào? Khoảng chín giờ. Anh đã ở"
-        },
-        {
           "word": "Khải",
           "context": "g cây — ánh đèn vàng cô đơn.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -8668,6 +8660,14 @@
         {
           "word": "Tuấn",
           "context": "ật. Mắt đỏ.\n\n\"Tôi nhớ. Em yêu Tuấn hai năm — tôi không"
+        },
+        {
+          "word": "Khoảng",
+          "context": "ời đàn ông đứng đợi bên cổng. Khoảng bốn mươi tám tuổi."
+        },
+        {
+          "word": "Khoảng",
+          "context": "tối. Tai nạn xảy ra lúc nào? Khoảng chín giờ. Anh đã ở"
         }
       ],
       "R69": [],
@@ -8858,12 +8858,12 @@
       ],
       "R71": [
         {
-          "place": "Lào Cai",
-          "count": 3
-        },
-        {
           "place": "Sa Pa",
           "count": 11
+        },
+        {
+          "place": "Lào Cai",
+          "count": 3
         }
       ],
       "R72": [
@@ -8876,8 +8876,60 @@
     "37": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "nữ trẻ đứng đợi bên cửa tiệm. Khoảng ba mươi hai tuổi. Á"
+          "word": "Huế",
+          "context": "nhanh. Xe đêm rẽ vào đoạn phố Huế — Hà Nội nội thành,"
+        },
+        {
+          "word": "Huế",
+          "context": "Khải.\n\nBác tài lái. Đoạn phố Huế — Khải Phong nhận r"
+        },
+        {
+          "word": "Huế",
+          "context": "[pause:500ms]\n\nXe đi qua phố Huế. Phía bên phải — mộ"
+        },
+        {
+          "word": "Huế",
+          "context": "Tai nạn xe máy — đoạn ngã phố Huế — Hai Bà Trưng — ch"
+        },
+        {
+          "word": "Huế",
+          "context": "e máy về phòng trọ — đoạn phố Huế — em va chạm.\"\n\n[pa"
+        },
+        {
+          "word": "Huế",
+          "context": "\"Em nhớ. Cô gái đi xe máy phố Huế một mình tối thứ ba"
+        },
+        {
+          "word": "Huế",
+          "context": "0ms]\n\nXe chậm lại. Ngã ba phố Huế — cây me cổ — bến g"
+        },
+        {
+          "word": "Huế",
+          "context": "Xe lăn bánh — rời ngã ba phố Huế.\n\nGhế bảy trống. Tr"
+        },
+        {
+          "word": "Huế",
+          "context": "chỉ vải đen mảnh biển số phố Huế EP37.\n\nKhải Phong n"
+        },
+        {
+          "word": "Huế",
+          "context": "a chạm xe tải đoạn ngã tư phố Huế — Hai Bà Trưng. Đún"
+        },
+        {
+          "word": "Huế",
+          "context": "hạm tám năm trước. Ngã tư phố Huế — Hai Bà Trưng — Tr"
+        },
+        {
+          "word": "Huế",
+          "context": "ạo — sau đó rẽ phải xuống phố Huế — sau đó rẽ trái sa"
+        },
+        {
+          "word": "Huế",
+          "context": "thêm. Xe đi tiếp ra khỏi phố Huế. Phía sau — tiệm Sử"
+        },
+        {
+          "word": "Huế",
+          "context": "ải Phong nhìn ra cửa sổ — phố Huế phía sau. Mưa đã hế"
         },
         {
           "word": "Khải",
@@ -9004,60 +9056,8 @@
           "context": "m gì — vì sao đi cùng đường — Khải Phong cần thêm một"
         },
         {
-          "word": "Huế",
-          "context": "nhanh. Xe đêm rẽ vào đoạn phố Huế — Hà Nội nội thành,"
-        },
-        {
-          "word": "Huế",
-          "context": "Khải.\n\nBác tài lái. Đoạn phố Huế — Khải Phong nhận r"
-        },
-        {
-          "word": "Huế",
-          "context": "[pause:500ms]\n\nXe đi qua phố Huế. Phía bên phải — mộ"
-        },
-        {
-          "word": "Huế",
-          "context": "Tai nạn xe máy — đoạn ngã phố Huế — Hai Bà Trưng — ch"
-        },
-        {
-          "word": "Huế",
-          "context": "e máy về phòng trọ — đoạn phố Huế — em va chạm.\"\n\n[pa"
-        },
-        {
-          "word": "Huế",
-          "context": "\"Em nhớ. Cô gái đi xe máy phố Huế một mình tối thứ ba"
-        },
-        {
-          "word": "Huế",
-          "context": "0ms]\n\nXe chậm lại. Ngã ba phố Huế — cây me cổ — bến g"
-        },
-        {
-          "word": "Huế",
-          "context": "Xe lăn bánh — rời ngã ba phố Huế.\n\nGhế bảy trống. Tr"
-        },
-        {
-          "word": "Huế",
-          "context": "chỉ vải đen mảnh biển số phố Huế EP37.\n\nKhải Phong n"
-        },
-        {
-          "word": "Huế",
-          "context": "a chạm xe tải đoạn ngã tư phố Huế — Hai Bà Trưng. Đún"
-        },
-        {
-          "word": "Huế",
-          "context": "hạm tám năm trước. Ngã tư phố Huế — Hai Bà Trưng — Tr"
-        },
-        {
-          "word": "Huế",
-          "context": "ạo — sau đó rẽ phải xuống phố Huế — sau đó rẽ trái sa"
-        },
-        {
-          "word": "Huế",
-          "context": "thêm. Xe đi tiếp ra khỏi phố Huế. Phía sau — tiệm Sử"
-        },
-        {
-          "word": "Huế",
-          "context": "ải Phong nhìn ra cửa sổ — phố Huế phía sau. Mưa đã hế"
+          "word": "Khoảng",
+          "context": "nữ trẻ đứng đợi bên cửa tiệm. Khoảng ba mươi hai tuổi. Á"
         }
       ],
       "R69": [],
@@ -9253,10 +9253,6 @@
     "38": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "ời đàn ông đứng đợi bên cổng. Khoảng ba mươi lăm tuổi. Á"
-        },
-        {
           "word": "Khải",
           "context": "Đêm thứ 38 trên chuyến xe — Khải Phong ngồi ghế thứ"
         },
@@ -9347,6 +9343,10 @@
         {
           "word": "Khải",
           "context": "nhàng.\n\nĐêm thứ ba mươi tám — Khải Phong đếm thêm. Xe"
+        },
+        {
+          "word": "Khoảng",
+          "context": "ời đàn ông đứng đợi bên cổng. Khoảng ba mươi lăm tuổi. Á"
         }
       ],
       "R69": [],
@@ -9546,10 +9546,6 @@
     "39": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "Một bà đứng đợi bên cột điện. Khoảng năm mươi lăm tuổi."
-        },
-        {
           "word": "Khải",
           "context": "o biển — gốc nghiêng vì gió.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -9632,6 +9628,10 @@
         {
           "word": "Khải",
           "context": "u. Đêm sau — milestone EP40 — Khải Phong cảm thấy sẽ l"
+        },
+        {
+          "word": "Khoảng",
+          "context": "Một bà đứng đợi bên cột điện. Khoảng năm mươi lăm tuổi."
         }
       ],
       "R69": [],
@@ -9822,18 +9822,6 @@
     "40": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "àn ông đứng đợi bên cửa kính. Khoảng hai mươi tám tuổi."
-        },
-        {
-          "word": "Khải",
-          "context": "y. Đừng giật mình. Cứ nghe.\"\n\nKhải Phong gật. Không hỏ"
-        },
-        {
-          "word": "Khải",
-          "context": "bốn mươi vật xếp thành hàng.\n\nKhải Phong phân loại. Bố"
-        },
-        {
           "word": "Huế",
           "context": "sợi vải đen mảnh biển số phố Huế + mảnh giấy can chữ"
         },
@@ -9856,6 +9844,18 @@
         {
           "word": "Huế",
           "context": "iên — Cát Linh — Mộc Hà — phố Huế — Khâm Thiên. Trung"
+        },
+        {
+          "word": "Khải",
+          "context": "y. Đừng giật mình. Cứ nghe.\"\n\nKhải Phong gật. Không hỏ"
+        },
+        {
+          "word": "Khải",
+          "context": "bốn mươi vật xếp thành hàng.\n\nKhải Phong phân loại. Bố"
+        },
+        {
+          "word": "Khoảng",
+          "context": "àn ông đứng đợi bên cửa kính. Khoảng hai mươi tám tuổi."
         }
       ],
       "R69": [],
@@ -10123,10 +10123,6 @@
     "41": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "Một phụ nữ đứng đợi bên cổng. Khoảng ba mươi hai tuổi. Á"
-        },
-        {
           "word": "Khải",
           "context": ". Đèn pha quét lên hàng cây.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -10257,6 +10253,10 @@
         {
           "word": "Khải",
           "context": "m thứ bốn mươi mốt kết thúc — Khải Phong nhói thêm. Ti"
+        },
+        {
+          "word": "Khoảng",
+          "context": "Một phụ nữ đứng đợi bên cổng. Khoảng ba mươi hai tuổi. Á"
         }
       ],
       "R69": [],
@@ -10462,10 +10462,6 @@
     "42": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "ười đàn ông đứng đợi bên cửa. Khoảng bốn mươi hai tuổi."
-        },
-        {
           "word": "Khải",
           "context": "lên hàng dừa nước bên đường.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -10480,6 +10476,10 @@
         {
           "word": "Khải",
           "context": "i. Còn bốn mươi tám đêm nữa.\n\nKhải Phong ấy nhói. Đứa"
+        },
+        {
+          "word": "Khoảng",
+          "context": "ười đàn ông đứng đợi bên cửa. Khoảng bốn mươi hai tuổi."
         }
       ],
       "R69": [],
@@ -10682,10 +10682,6 @@
     "43": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "ười đàn ông đứng đợi bên đài. Khoảng năm mươi tuổi. Áo s"
-        },
-        {
           "word": "Khải",
           "context": "quét lên thân cao su trắng.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -10820,6 +10816,10 @@
         {
           "word": "Khải",
           "context": "lỗi.\n\nTrời đêm chưa sáng lên. Khải Phong còn thời gian"
+        },
+        {
+          "word": "Khoảng",
+          "context": "ười đàn ông đứng đợi bên đài. Khoảng năm mươi tuổi. Áo s"
         }
       ],
       "R69": [],
@@ -11022,10 +11022,6 @@
     "44": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "Một bà đứng đợi bên cột điện. Khoảng năm mươi hai tuổi."
-        },
-        {
           "word": "Khải",
           "context": "cà phê — cà đã ra hoa trắng.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -11160,6 +11156,10 @@
         {
           "word": "Khải",
           "context": "— Hạ Nhi gửi thiệp mời cưới — Khải Phong đã in thiệp đ"
+        },
+        {
+          "word": "Khoảng",
+          "context": "Một bà đứng đợi bên cột điện. Khoảng năm mươi hai tuổi."
         }
       ],
       "R69": [],
@@ -11361,10 +11361,6 @@
     "45": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "thanh niên đứng đợi bên cổng. Khoảng ba mươi tuổi. Áo gi"
-        },
-        {
           "word": "Khải",
           "context": "t lại trên hàng dâu cổ — quen Khải Phong — đêm hai mươ"
         },
@@ -11501,6 +11497,22 @@
           "context": "cưới anh.\n\nĐêm bốn mươi lăm — Khải Phong quyết."
         },
         {
+          "word": "Quân",
+          "context": "ai mươi lăm — con đã thấy Văn Quân đem mảnh kính tặng"
+        },
+        {
+          "word": "Quân",
+          "context": "ơng/kính. Sau Phong EP15, Văn Quân EP25, Trí Hưng EP35"
+        },
+        {
+          "word": "Quân",
+          "context": "P15 Phong gương vỡ + EP25 Văn Quân kính + EP35 Trí Hưn"
+        },
+        {
+          "word": "Khoảng",
+          "context": "thanh niên đứng đợi bên cổng. Khoảng ba mươi tuổi. Áo gi"
+        },
+        {
           "word": "Quỳnh",
           "context": "g cùng bến đêm hai mươi hai — Quỳnh Mai. Bến xưa — call"
         },
@@ -11519,18 +11531,6 @@
         {
           "word": "Quỳnh",
           "context": "ng THCS Mai Trung — cùng cổng Quỳnh Mai đêm 22. Đèn hàn"
-        },
-        {
-          "word": "Quân",
-          "context": "ai mươi lăm — con đã thấy Văn Quân đem mảnh kính tặng"
-        },
-        {
-          "word": "Quân",
-          "context": "ơng/kính. Sau Phong EP15, Văn Quân EP25, Trí Hưng EP35"
-        },
-        {
-          "word": "Quân",
-          "context": "P15 Phong gương vỡ + EP25 Văn Quân kính + EP35 Trí Hưn"
         }
       ],
       "R69": [],
@@ -11739,10 +11739,6 @@
     "46": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "re. Một bà đứng đợi bên cổng. Khoảng sáu mươi tám tuổi."
-        },
-        {
           "word": "Khải",
           "context": "g cây — ánh đèn vàng cô đơn.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -11869,6 +11865,10 @@
         {
           "word": "Tuấn",
           "context": "ội duy nhất em. Con trai em — Tuấn — lấy vợ năm em hai"
+        },
+        {
+          "word": "Khoảng",
+          "context": "re. Một bà đứng đợi bên cổng. Khoảng sáu mươi tám tuổi."
         }
       ],
       "R69": [],
@@ -12065,10 +12065,6 @@
     "47": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "phụ nữ trẻ đứng đợi bên cửa. Khoảng ba mươi tuổi. Áo dạ"
-        },
-        {
           "word": "Khải",
           "context": "n pha quét lên thân cây ướt.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -12171,6 +12167,10 @@
         {
           "word": "Khải",
           "context": "gày bình thường trong tám năm Khải Phong sau Hạ Vy mất"
+        },
+        {
+          "word": "Khoảng",
+          "context": "phụ nữ trẻ đứng đợi bên cửa. Khoảng ba mươi tuổi. Áo dạ"
         }
       ],
       "R69": [
@@ -12366,10 +12366,6 @@
     "48": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "ười đàn ông đứng đợi bên cửa. Khoảng ba mươi tám tuổi. Á"
-        },
-        {
           "word": "Khải",
           "context": "Đêm thứ 48 trên chuyến xe — Khải Phong ngồi ghế thứ"
         },
@@ -12380,6 +12376,10 @@
         {
           "word": "Khải",
           "context": "không cần đúng cách ban đầu.\n\nKhải Phong nhói. Anh khô"
+        },
+        {
+          "word": "Khoảng",
+          "context": "ười đàn ông đứng đợi bên cửa. Khoảng ba mươi tám tuổi. Á"
         }
       ],
       "R69": [],
@@ -12560,10 +12560,6 @@
     "49": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "Một phụ nữ đứng đợi bên cửa. Khoảng bốn hai tuổi. Áo dạ"
-        },
-        {
           "word": "Khải",
           "context": "pha quét lên hàng dừa nước.\n\nKhải Phong ngồi ghế thứ"
         },
@@ -12658,6 +12654,10 @@
         {
           "word": "Khải",
           "context": "ống khác sau milestone EP50.\n\nKhải Phong vuốt sợi chỉ"
+        },
+        {
+          "word": "Khoảng",
+          "context": "Một phụ nữ đứng đợi bên cửa. Khoảng bốn hai tuổi. Áo dạ"
         }
       ],
       "R69": [
@@ -12861,8 +12861,12 @@
     "50": {
       "R68": [
         {
-          "word": "Khoảng",
-          "context": "hà — một phụ nữ trẻ đứng đợi. Khoảng hai mươi bốn tuổi."
+          "word": "Huế",
+          "context": "ưng (EP37 + EP40 Mộc Hà), phố Huế (EP37), Khâm Thiên"
+        },
+        {
+          "word": "Huế",
+          "context": "— văn phòng Hạ Vy. Ngã tư phố Huế-Trần Hưng Đạo — chỗ"
         },
         {
           "word": "Khải",
@@ -12897,12 +12901,8 @@
           "context": "đã tan trên hiên nhà bố mẹ.\n\nKhải Phong còn một mình"
         },
         {
-          "word": "Huế",
-          "context": "ưng (EP37 + EP40 Mộc Hà), phố Huế (EP37), Khâm Thiên"
-        },
-        {
-          "word": "Huế",
-          "context": "— văn phòng Hạ Vy. Ngã tư phố Huế-Trần Hưng Đạo — chỗ"
+          "word": "Khoảng",
+          "context": "hà — một phụ nữ trẻ đứng đợi. Khoảng hai mươi bốn tuổi."
         }
       ],
       "R69": [],
@@ -13111,11 +13111,11 @@
       ],
       "R71": [
         {
-          "place": "Lào Cai",
+          "place": "Đắk Lắk",
           "count": 1
         },
         {
-          "place": "Đắk Lắk",
+          "place": "Lào Cai",
           "count": 1
         },
         {
