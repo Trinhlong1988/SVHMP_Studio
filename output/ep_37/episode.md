@@ -196,7 +196,7 @@ Bên ngoài — Mỹ Hạnh đi vào tiệm Sửa xe Toàn — bảo vệ tiệm
 
 Cô gái đã đến nơi đó. Đưa gói vải đen. Anh Toàn nhận — mở — thấy mảnh biển. Cô gái ấy nói nhỏ — giải thích. Hình bóng đàn ông Toàn gật — cảm động — đặt mảnh vào hộp gỗ riêng — không trộn với phụ tùng khác.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ. Bên tiệm — Hùng xuất hiện — thanh niên ba mươi áo gió đen — vuốt vai Mỹ Hạnh. Mỉm cười nhẹ nhàng.
+Khải Phong chớp mắt — nhìn qua cửa sổ. Bên tiệm — Hùng xuất hiện — thanh niên ba mươi áo gió đen — vỗ vai Mỹ Hạnh. Gật đầu nhẹ nhẹ nhàng.
 
 Khải Phong chớp lần nữa. Hùng tan vào đèn tiệm.
 

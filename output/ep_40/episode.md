@@ -233,7 +233,7 @@ Hải bước xuống dưới.
 
 Bên ngoài — Hải đi lên dốc cầu Long Biên — đi đến giữa nhịp cong cao — chỗ Vy An EP12 ném đồng hồ xà cừ. Anh đặt cuộn giấy can trên thanh sắt cầu — gác cẩn thận.
 
-Người khách chớp mắt — nhìn qua cửa sổ. Bên cuộn giấy — Hạ Vy xuất hiện — cô gái hai bảy áo sơ mi xanh nhạt — vuốt vai Hải. Mỉm cười — như nói cảm ơn.
+Người khách chớp mắt — nhìn qua cửa sổ. Bên cuộn giấy — Hạ Vy xuất hiện — cô gái hai bảy áo sơ mi xanh nhạt — chạm vào vai Hải. Khẽ cười — như nói cảm ơn.
 
 Người đàn ông chớp lần nữa. Hạ Vy tan vào sương đêm trên cầu.
 

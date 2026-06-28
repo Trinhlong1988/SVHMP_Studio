@@ -210,7 +210,7 @@ Người đàn ông đến nơi đó. Mở ngăn kéo trái bàn Yến. Đặt p
 
 Quỳ một lúc trước bàn. Cúi đầu.
 
-Người đàn ông chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên bàn Yến — Yến xuất hiện — phụ nữ chừng bốn mươi tuổi — áo dạ trắng — tóc cột thấp — như đêm cô viết thư — đứng cạnh bàn — vuốt vai Đức Vinh đang quỳ. Mỉm cười.
+Người đàn ông chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên bàn Yến — Yến xuất hiện — phụ nữ chừng bốn mươi tuổi — áo dạ trắng — tóc cột thấp — như đêm cô viết thư — đứng cạnh bàn — vỗ vai Đức Vinh đang quỳ. Gật đầu nhẹ.
 
 Khải Phong ấy chớp lần nữa. Yến tan vào ánh đèn hành lang.
 

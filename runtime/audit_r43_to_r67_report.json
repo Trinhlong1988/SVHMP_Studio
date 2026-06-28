@@ -1,0 +1,905 @@
+{
+  "rule_totals": {
+    "R43_filler": 0,
+    "R45_context": 0,
+    "R49_template": 0,
+    "R57_vignette": 49,
+    "R63_timeline": 0,
+    "R64_culture": 0,
+    "R65_invention": 0,
+    "R66_short_chain": 193,
+    "R67_verb_semantic": 0
+  },
+  "eps_with_issues": {
+    "1": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Mười một vị khách khác....",
+        "short chain ≥3: ...Hà Nội đêm tháng tư....",
+        "short chain ≥3: ...Kim dừng bảy giờ mười....",
+        "short chain ≥3: ...Mỗi tối anh về....",
+        "short chain ≥3: ...Xà cừ phải không ạ?...",
+        "short chain ≥3: ...[pause:500ms] Nhưng anh kể....",
+        "short chain ≥3: ...Bác tài liếc gương chiếu hậu....",
+        "short chain ≥3: ...Kim chỉ bảy giờ mười....",
+        "short chain ≥3: ...— Taxi gặp xe tải....",
+        "short chain ≥3: ...Khải-Phong thở ra một hơi dài....",
+        "short chain ≥3: ...Khải-Phong quay phắt lại....",
+        "short chain ≥3: ...— Cảm ơn cô....",
+        "short chain ≥3: ...Bác tài liếc gương....",
+        "short chain ≥3: ...Cửa xe đóng lại...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "2": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 6 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Như nhận ra điều gì....",
+        "short chain ≥3: ...Cô gái vẫn đang đan tiếp....",
+        "short chain ≥3: ...\"Hai tám con không về được....",
+        "short chain ≥3: ...Khóc trong điện thoại....",
+        "short chain ≥3: ...Mỗi bác chạy một đoạn....",
+        "short chain ≥3: ...Em không đan được....",
+        "short chain ≥3: ...Con nhìn tay mẹ....",
+        "short chain ≥3: ...Mẹ chưa kịp dạy....",
+        "short chain ≥3: ...Phía trước có một ngã ba....",
+        "short chain ≥3: ...Cô gái từ từ đứng dậy....",
+        "short chain ≥3: ...Cửa xe khép lại....",
+        "short chain ≥3: ...Khải Phong chưa quay đầu....",
+        "short chain ≥3: ...Không có vật gì...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "3": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 7 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Ngồi vào ghế thứ năm....",
+        "short chain ≥3: ...Tài xế xe đường dài....",
+        "short chain ≥3: ...Con không thể dừng lại....",
+        "short chain ≥3: ...Con chỉ nhìn tay mẹ....",
+        "short chain ≥3: ...Ngân lên một hồi....",
+        "short chain ≥3: ...Cửa xe khép lại....",
+        "short chain ≥3: ...Hay tên ai khác....",
+        "short chain ≥3: ...Bên ngoài, đêm vẫn dài...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "4": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 7 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Ngồi vào ghế thứ chín....",
+        "short chain ≥3: ...Bác tài không quay đầu....",
+        "short chain ≥3: ...Mắt mẹ mờ nhiều....",
+        "short chain ≥3: ...Chữ con khác chữ mẹ....",
+        "short chain ≥3: ...Ngân lên một hồi....",
+        "short chain ≥3: ...Cửa từ từ mở....",
+        "short chain ≥3: ...Cửa xe khép lại....",
+        "short chain ≥3: ...Bóng người ấy không còn....",
+        "short chain ≥3: ...Có ai ở đó...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "5": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 10 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Khoảng năm mươi mấy tuổi....",
+        "short chain ≥3: ...Ngồi vào ghế thứ tám....",
+        "short chain ≥3: ...Cùng câu hát không rõ lời....",
+        "short chain ≥3: ...Không nói với ai....",
+        "short chain ≥3: ...Đêm trước chỉ một lần....",
+        "short chain ≥3: ...Chú thử lên — vừa vặn....",
+        "short chain ≥3: ...Lớp sương biển khép vào lạnh....",
+        "short chain ≥3: ...Cửa xe khép lại....",
+        "short chain ≥3: ...Đệm ghế còn lõm một chút....",
+        "short chain ≥3: ...Đêm trước nữa một lần....",
+        "short chain ≥3: ...Người khách khẽ rùng mình....",
+        "short chain ≥3: ...Chuyến xe đêm vẫn lăn bánh...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "6": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 7 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Hai trai, một gái....",
+        "short chain ≥3: ...Ngân lên một hồi....",
+        "short chain ≥3: ...Cụ đi ra cửa xe....",
+        "short chain ≥3: ...Đệm ghế còn lõm một chút...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "7": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 7 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Bác tài lái như mọi khi....",
+        "short chain ≥3: ...Đặt ba lô xuống chỗ trống....",
+        "short chain ≥3: ...Cô gái ấy ấy quay đầu....",
+        "short chain ≥3: ...Bàn tay mẹ lạnh....",
+        "short chain ≥3: ...Cô gái ấy gái không mở....",
+        "short chain ≥3: ...Ba lô đeo vai....",
+        "short chain ≥3: ...Bóng người không còn....",
+        "short chain ≥3: ...Hình bóng phụ nữ áo nâu....",
+        "short chain ≥3: ...Chuyến xe đêm vẫn lăn bánh...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "8": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 9 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Khoảng hai mươi mấy tuổi....",
+        "short chain ≥3: ...Ngồi vào ghế thứ chín....",
+        "short chain ≥3: ...[pause:1000ms]\n\nXe đi qua đó....",
+        "short chain ≥3: ...Em không đứng vững....",
+        "short chain ≥3: ...Cô gái gái ấp lên mặt....",
+        "short chain ≥3: ...Là cách em hiểu thế giới....",
+        "short chain ≥3: ...Em ấy ăn cơm sinh viên....",
+        "short chain ≥3: ...người đàn ông bước đi tiếp....",
+        "short chain ≥3: ...Em ấy ấy rút điện thoại...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "9": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 10 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Đặt túi vải lên đùi....",
+        "short chain ≥3: ...Ngôi nhà sàn mất sau núi....",
+        "short chain ≥3: ...Quê em Lạng Sơn....",
+        "short chain ≥3: ...Cô gái đặt băng lên máy....",
+        "short chain ≥3: ...Cô gái vẫn ngồi yên đó....",
+        "short chain ≥3: ...người đàn ông không nhớ...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "10": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 8 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Một chú trung niên....",
+        "short chain ≥3: ...Cách anh một ghế....",
+        "short chain ≥3: ...Bắt gặp ánh mắt anh ấy....",
+        "short chain ≥3: ...Ông cụ ghế đầu vặn radio....",
+        "short chain ≥3: ...Bốn mươi sáu tuổi....",
+        "short chain ≥3: ...Vào đêm ba mươi tháng Chạp....",
+        "short chain ≥3: ...Người khách chớp mắt....",
+        "short chain ≥3: ...Đây là chỗ anh xuống....",
+        "short chain ≥3: ...Sông Hồng dưới cầu...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "11": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 6 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Hai mươi sáu tuổi...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "12": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 6 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Ba mươi sáu tuổi...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "13": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 7 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Người đàn ông quay đầu lại....",
+        "short chain ≥3: ...Tôi ở Mỹ Đức — quê....",
+        "short chain ≥3: ...Người tên Bình ngẩng đầu...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "14": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 7 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Đặt khăn lên đùi....",
+        "short chain ≥3: ...Người tên Tâm Đan ngẩng đầu...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "15": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 7 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Tôi ở Hoài Đức — quê....",
+        "short chain ≥3: ...Cầm trong lòng bàn tay....",
+        "short chain ≥3: ...Phong ba mốt đứng...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "16": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 7 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Bóng bà cụ khuất....",
+        "short chain ≥3: ...Hoàng Yến ngẩng đầu...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "17": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 7 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Người đàn ông quay đầu lại....",
+        "short chain ≥3: ...Tôi tiếp tục họp....",
+        "short chain ≥3: ...Đặt USB vào trong....",
+        "short chain ≥3: ...Đêm thứ mười bảy kết thúc...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "18": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 8 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Hai mươi tám tuổi....",
+        "short chain ≥3: ...Cô gái từ từ đứng dậy....",
+        "short chain ≥3: ...Linh Trang ra cửa quán...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "19": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 7 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Cô gái khẽ quay đầu lại....",
+        "short chain ≥3: ...Bích Hoa ngẩng đầu....",
+        "short chain ≥3: ...Cụm cúc đủ bốn...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "20": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 7 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Hai mươi bảy tuổi....",
+        "short chain ≥3: ...Người tên Hoài tan ra...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "21": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 6 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Mở vải vàng nhẹ....",
+        "short chain ≥3: ...Mẹ tan vào ánh đèn nến....",
+        "short chain ≥3: ...Người đàn ông cố nhớ thêm...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "22": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 7 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Ba mươi lăm tuổi....",
+        "short chain ≥3: ...Quỳnh Mai ngẩng đầu...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "23": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 7 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Tôi ở Hải Phòng — quê....",
+        "short chain ≥3: ...Đặt phong bì kraft vào...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "24": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 8 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Vuốt vở trên đùi....",
+        "short chain ≥3: ...Mai Anh tan ra....",
+        "short chain ≥3: ...Bác tài liếc gương...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "25": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 7 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...---\n\n\n[pause:1000ms]\n\n\"Tôi là Văn Quân....",
+        "short chain ≥3: ...Gọi lần thứ ba...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "26": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 7 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Tôi ở Hoài Đức — quê....",
+        "short chain ≥3: ...Đức Hùng ngẩng đầu...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "27": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 8 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Mỹ Linh ngẩng đầu...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "28": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 7 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [],
+      "R67_verb_semantic": []
+    },
+    "29": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 7 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Cô gái khẽ quay đầu lại....",
+        "short chain ≥3: ...Hai mươi tám tuổi....",
+        "short chain ≥3: ...Người tên Nga tan ra...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "30": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 8 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Người đàn ông đến nơi....",
+        "short chain ≥3: ...Người đàn ông Nguyễn ngẩng đầu...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "31": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 7 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Bà cụ khẽ quay đầu lại....",
+        "short chain ≥3: ...Thanh Vân ngẩng đầu....",
+        "short chain ≥3: ...Trời đã về đêm....",
+        "short chain ≥3: ...Con đã nhớ ngày cụ thể...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "32": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 7 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Người đàn ông quay đầu lại....",
+        "short chain ≥3: ...Người tên Nhung tan ra...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "33": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 7 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Người tên Quỳnh tan ra...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "34": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 7 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Người đàn ông quay đầu lại....",
+        "short chain ≥3: ...Văn Tuấn ngẩng đầu....",
+        "short chain ≥3: ...Con đã đếm tám năm...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "35": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 7 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Trí Hưng hai tám ngẩng đầu....",
+        "short chain ≥3: ...Cụm vật gương đủ ba....",
+        "short chain ≥3: ...Tay run nhẹ nhàng...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "36": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 7 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Văn Khải ngẩng đầu....",
+        "short chain ≥3: ...Hay ai đó Hạ Vy quen?..."
+      ],
+      "R67_verb_semantic": []
+    },
+    "37": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 6 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Vuốt mảnh biển số....",
+        "short chain ≥3: ...Hùng tan vào đèn tiệm...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "38": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 7 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Nhìn xuống hộp — không mở....",
+        "short chain ≥3: ...Người đàn ông quay đầu lại....",
+        "short chain ≥3: ...Lan tan vào đèn quầy....",
+        "short chain ≥3: ...Con nhớ tên anh Hải...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "39": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 6 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Bà cụ khẽ quay đầu lại....",
+        "short chain ≥3: ...Bà Trinh tan vào đêm...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "40": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 8 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Lần ba — đêm milestone EP40....",
+        "short chain ≥3: ...Ba vật gương/kính (cluster gương EP15+EP25+EP35)....",
+        "short chain ≥3: ...Phong EP15 — Hoài Đức....",
+        "short chain ≥3: ...Bác tài liếc gương....",
+        "short chain ≥3: ...Cluster năm 2017 riêng...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "41": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 7 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Bích Trâm ngẩng đầu....",
+        "short chain ≥3: ...Bích Trâm mất Linh...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "42": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 8 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Tôi ở Bến Tre — quê....",
+        "short chain ≥3: ...Người tên Hằng tan đi....",
+        "short chain ≥3: ...Khải Phong ấy nhói...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "43": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 6 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Văn Trường ngẩng đầu...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "44": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 6 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Phượng Liên ngẩng đầu...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "45": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 6 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Tay phải cầm hộp giấy nhỏ....",
+        "short chain ≥3: ...Không nói nữa thôi....",
+        "short chain ≥3: ...Mạnh Hiếu ngẩng đầu...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "46": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 6 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Bà cụ khẽ quay đầu lại....",
+        "short chain ≥3: ...Bà cụ Hảo ngẩng đầu lên....",
+        "short chain ≥3: ...Đêm tháng tư vẫn dài...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "47": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 8 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Cô gái khẽ quay đầu lại....",
+        "short chain ≥3: ...Thanh Nga ngẩng đầu...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "48": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 6 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Tôi ở Cần Thơ — quê....",
+        "short chain ≥3: ...Hữu Duy ngẩng đầu...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "49": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 7 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Em ở Sóc Trăng — quê....",
+        "short chain ≥3: ...Cô gái đã đến nơi đó....",
+        "short chain ≥3: ...Người tên Vân tan đi....",
+        "short chain ≥3: ...Em không phân biệt....",
+        "short chain ≥3: ...Lệ rơi nhẹ nhàng...."
+      ],
+      "R67_verb_semantic": []
+    },
+    "50": {
+      "R43_filler": [],
+      "R45_context": [],
+      "R49_template": [],
+      "R57_vignette": [
+        "R57: REVEAL has 7 pause blocks (target 3-5)"
+      ],
+      "R63_timeline": [],
+      "R64_culture": [],
+      "R65_invention": [],
+      "R66_short_chain": [
+        "short chain ≥3: ...Em đã tìm anh tám năm....",
+        "short chain ≥3: ...Hạ Nhi quay sang anh ấy....",
+        "short chain ≥3: ...Bóng Hạ Vy khuất....",
+        "short chain ≥3: ...Đứa em mỉm cười nhẹ....",
+        "short chain ≥3: ...Người đàn ông chớp lần nữa....",
+        "short chain ≥3: ...Có mươi câu chuyện...."
+      ],
+      "R67_verb_semantic": []
+    }
+  }
+}

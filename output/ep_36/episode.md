@@ -210,7 +210,7 @@ Bên ngoài — Văn Khải đi vào sân nhà thờ Sa Pa Cô — cổng đã m
 
 Người đàn ông đến nơi đó. Đặt ảnh giữa bục — chính giữa. Quỳ. Cúi đầu.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ. Bên bục — Diễm xuất hiện — cô gái hai mươi áo dạ nâu — vuốt vai anh Khải. Mỉm cười — như nói cảm ơn.
+Khải Phong chớp mắt — nhìn qua cửa sổ. Bên bục — Diễm xuất hiện — cô gái hai mươi áo dạ nâu — ôm vai anh Khải. Cười dịu một lần — như nói cảm ơn.
 
 Khải Phong chớp lần nữa. Diễm tan vào đèn nến.
 

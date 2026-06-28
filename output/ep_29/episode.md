@@ -214,7 +214,7 @@ Bên ngoài — Linh Đan đi vào sân bệnh viện đa khoa Liên Chiểu —
 
 Cô gái đến bên quầy ấy. Lấy thẻ ra ngoài. Đặt thẻ lên quầy tiếp tân — cùng với một ghi chú nhỏ cô vừa viết tay: "Thẻ tôi đăng ký năm 2017 — không sử dụng. Tôi xin lỗi. Bây giờ tôi đã hiến tủy — không kịp cho bạn cùng phòng. Linh Đan." Cúi đầu trước quầy.
 
-Anh chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên quầy — Nga xuất hiện — cô gái hai mươi mốt — áo trắng — má hồng (không xanh xao như trong INCIDENT) — vuốt vai Linh Đan. Mỉm cười nhẹ nhàng.
+Anh chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên quầy — Nga xuất hiện — cô gái hai mươi mốt — áo trắng — má hồng (không xanh xao như trong INCIDENT) — vỗ vai Linh Đan. Gật đầu nhẹ nhẹ nhàng.
 
 Người khách chớp lần nữa. Người tên Nga tan ra.
 

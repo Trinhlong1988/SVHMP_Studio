@@ -220,7 +220,7 @@ Bên ngoài — Hữu Lộc đi vào sân giáo xứ Vĩnh Hòa — cổng đã 
 
 Người đàn ông đến nơi đó. Mở hộp. Đặt nhẫn vàng nhỏ giữa bục — chính giữa. Quỳ. Cúi đầu.
 
-Anh chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên bục — Hồng xuất hiện — phụ nữ chừng năm mươi — áo dài đen — tay chắp trước ngực — vuốt vai Hữu Lộc đang quỳ. Mỉm cười — như nói cảm ơn.
+Anh chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên bục — Hồng xuất hiện — phụ nữ chừng năm mươi — áo dài đen — tay chắp trước ngực — ôm vai Hữu Lộc đang quỳ. Cười dịu một lần — như nói cảm ơn.
 
 Người khách chớp lần nữa. Hồng tan vào ánh đèn bục thờ.
 

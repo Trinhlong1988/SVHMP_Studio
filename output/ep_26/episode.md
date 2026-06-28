@@ -218,7 +218,7 @@ Bên ngoài — Đức Hùng đi vào sân trước tòa văn phòng Hoài An. C
 
 Cúi đầu trước cửa. Một lúc.
 
-Người khách chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên cửa kính — bố Đức Hùng xuất hiện — ông sáu mươi tuổi — áo blouse xanh — tay cầm bút vẽ ra — vuốt vai con trai. Mỉm cười.
+Người khách chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên cửa kính — bố Đức Hùng xuất hiện — ông sáu mươi tuổi — áo blouse xanh — tay cầm bút vẽ ra — chạm vào vai con trai. Khẽ cười.
 
 Người đàn ông chớp lần nữa. Người bố tan ra.
 

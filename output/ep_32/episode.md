@@ -212,7 +212,7 @@ Người đàn ông đến mộ Nhung. Quỳ. Mở túi. Lấy chăn — gấp g
 
 Cúi đầu.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ. Bên mộ — Nhung xuất hiện — phụ nữ trẻ ba mươi ba — tay cầm kim đan — vuốt vai Phan Tâm. Mỉm cười.
+Khải Phong chớp mắt — nhìn qua cửa sổ. Bên mộ — Nhung xuất hiện — phụ nữ trẻ ba mươi ba — tay cầm kim đan — đặt tay lên vai Phan Tâm. Im lặng một thoáng.
 
 Khải Phong chớp lần nữa. Người tên Nhung tan ra.
 
