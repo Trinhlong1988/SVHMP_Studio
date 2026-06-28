@@ -286,13 +286,13 @@ Năm 2017 — người khách tốt Đại học Kiến trúc. Bốn vật như 
 
 Anh ấy nhặt mẩu bằng tốt đêm này — đọc lại. "anh — học sinh quý của tôi — 2017." Chữ thầy Hùng viết tay phía sau bằng.
 
-Người khách — tên trên bằng. người đàn ông — tên trên ghế ba xe đêm. Hai anh ấy — không phải một người — nhưng cùng tên — cùng năm 2017 — cùng tốt nghiệp.
+Người khách — tên trên bằng. người đàn ông — tên trên ghế ba xe đêm. Hai anh ấy — không phải một người — nhưng cùng tên — cùng năm 2017 — cùng tốt.
 
-Anh Nguyễn — passenger đêm này — quê Hải Dương — tốt nghiệp THPT Nguyễn Trãi năm 2017. Sau đó vào Đại học Kinh tế Hà Nội — khoa kế toán.
+Anh Nguyễn — passenger đêm này — quê Hải Dương — tốt THPT Nguyễn Trãi năm 2017. Sau đó vào Đại học Kinh tế Hà Nội — khoa kế toán.
 
 Người khách — chính người đàn ông — quê đâu? anh ấy cố nhớ. Hình ảnh — căn nhà nhỏ ở quê — bố mẹ làm hành chính. Quê anh ở đâu? người khách cảm thấy — quê người đàn ông cũng ở Hải Dương. Cùng tỉnh với anh ấy Nguyễn.
 
-Anh tốt nghiệp THPT năm 2013 — bốn năm trước người khách Nguyễn. người đàn ông vào Đại học Kiến trúc 2013 — tốt nghiệp 2017 — cùng năm anh ấy Nguyễn tốt nghiệp THPT.
+Anh tốt THPT năm 2013 — bốn năm trước người khách Nguyễn. người đàn ông vào Đại học Kiến trúc 2013 — tốt nghiệp 2017 — cùng năm anh ấy Nguyễn tốt nghiệp THPT.
 
 Hai anh — quê cùng tỉnh Hải Dương — cùng tốt nghiệp 2017 — khác cấp — khác ngành. Không phải một người. Nhưng đêm nay — bác tài cố ý đem người khách Nguyễn lên xe — để người đàn ông nghe tên mình lần đầu từ bên ngoài.
 

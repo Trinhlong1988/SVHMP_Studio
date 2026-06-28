@@ -1,5 +1,5 @@
 {
-  "total": 92,
+  "total": 93,
   "eps": [
     [
       2,
@@ -103,7 +103,7 @@
     ],
     [
       31,
-      3
+      4
     ],
     [
       35,
@@ -789,6 +789,15 @@
       "next_word": "ngẫm",
       "context": "Anh ngẫm — tháng.",
       "word_count": 4,
+      "severity": "HIGH",
+      "ep": 31
+    },
+    {
+      "line": 231,
+      "word": "Hôm",
+      "next_word": "nay",
+      "context": "Hôm nay đêm tháng 2025.",
+      "word_count": 5,
       "severity": "HIGH",
       "ep": 31
     },

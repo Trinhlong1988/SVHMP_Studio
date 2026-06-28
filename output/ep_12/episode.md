@@ -242,7 +242,7 @@ Người khách ngẫm. Có một đêm — người đàn ông biết — chín
 
 Tên "Hạ Vy" lại vọng trong đầu người khách — sau hai đêm liên tục.
 
-Hạ Vy — có liên quan đồng xà cừ này không? Có. Có một cảm giác — cô ấy đã có một đồng giống. Hoặc — người yêu cũ đã muốn có một đồng giống. Hoặc — đêm cô gái ấy đi — kim đồng hồ cô ấy cũng đứng bảy giờ mười.
+Hạ Vy — có liên quan đồng xà cừ này không? Có. Có một cảm giác — cô ấy đã có một đồng giống. Hoặc — người yêu cũ đã muốn có một đồng giống. Hoặc — đêm cô gái ấy đi — kim đồng cô ấy cũng đứng bảy giờ mười.
 
 Người đàn ông không biết cái nào.
 
@@ -254,4 +254,4 @@ Anh ấy gật.
 
 Người khách vuốt mảnh xà cừ trong túi. Lạnh.
 
-Hai mảnh xà cừ — hai đêm — hai cô gái khác nhau. Nhưng đồng hồ kim phút đều dừng đúng bảy giờ mười phút. người đàn ông cố nhớ — có một lần nào anh ấy nhìn vào đồng hồ — kim dừng đúng giờ này không. Cảm giác — có. Đêm gì đó — có thể đêm người yêu cũ mất — anh nhìn đồng hồ điện thoại — kim cũng bảy giờ mười. người khách không chắc — kỉ niệm mờ. Đêm sau người đàn ông sẽ nhớ rõ hơn — bác tài đã hứa giúp anh ấy nhớ dần qua từng passenger. 
+Hai mảnh xà cừ — hai đêm — hai cô gái khác nhau. Nhưng đồng kim phút đều dừng đúng bảy giờ mười phút. người đàn ông cố nhớ — có một lần nào anh ấy nhìn vào đồng hồ — kim dừng đúng giờ này không. Cảm giác — có. Đêm gì đó — có thể đêm người yêu cũ mất — anh nhìn đồng hồ điện thoại — kim cũng bảy giờ mười. người khách không chắc — kỉ niệm mờ. Đêm sau người đàn ông sẽ nhớ rõ hơn — bác tài đã hứa giúp anh ấy nhớ dần qua từng passenger. 

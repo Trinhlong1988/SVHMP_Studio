@@ -268,9 +268,9 @@ Anh đợi mười phút. Gọi lại. Chuông kêu năm hồi — không bắt.
 
 Người khách đợi thêm năm phút. Gọi lần thứ ba. Chuông kêu — không bắt. Cuộc gọi thứ ba.
 
-Người đàn ông bắt đầu lo. anh ấy định mặc áo mưa đi tìm Hạ Vy trên đường về. Trước khi đi — điện thoại anh rung. Số lạ. người khách bắt.
+Người đàn bắt đầu lo. anh ấy định mặc áo mưa đi tìm Hạ Vy trên đường về. Trước khi đi — điện thoại anh rung. Số lạ. người khách bắt.
 
-"Người đàn ông là người đàn ông à? Em ở bệnh viện Bạch Mai. Vợ anh — chị Hạ Vy — vừa được đưa vào cấp cứu — tai nạn xe máy — đoạn ngã tư Hai Bà Trưng — Trần Hưng Đạo. Người đàn ông đến gấp."
+"Người đàn là người đàn ông à? Em ở bệnh viện Bạch Mai. Vợ anh — chị Hạ Vy — vừa được đưa vào cấp cứu — tai nạn xe máy — đoạn ngã tư Hai Bà Trưng — Trần Hưng Đạo. Người đàn ông đến gấp."
 
 Anh ấy rời máy — chạy xuống cầu thang — quên áo mưa — chạy ra đường — bắt taxi — đến bệnh viện. Tới nơi — Hạ Vy đang trong phòng mổ — máu mất nhiều — chấn thương sọ.
 

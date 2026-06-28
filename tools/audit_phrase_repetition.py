@@ -35,6 +35,20 @@ EXPECTED_NAMES = {
     'Long Biên', 'Khâm Thiên', 'Cầu Long Biên',
 }
 
+# Whitelist intentional repetitions (onomatopoeia, family, common phrases)
+ONOMATOPOEIA_WHITELIST = {
+    'tách', 'tách tách', 'tách tách tách', 'Tách', 'Tách Tách', 'Tách Tách Tách',
+    'lách cách', 'lộc cộc', 'vù vù', 'ầm ầm', 'rì rì', 'thì thầm',
+    'lập cập', 'lập lờ', 'lơ lửng', 'thấp thoáng',
+    'cụ cụ', 'cụ ơi',
+}
+
+PROPER_NOUN_PHRASES = {
+    'viết Cháu', 'Cháu Diệu', 'Cháu Linh',  # dialogue tag children name
+    'mẹ em', 'mẹ con', 'bà cháu',  # family relation
+    'riêng Cluster',  # metadata leftover (separate cleanup)
+}
+
 # Max allowed character name occurrences per paragraph
 MAX_NAME_PER_PARA = 3
 
@@ -86,6 +100,11 @@ def audit_episode(text, ep_num):
                 if count >= 3:
                     # Skip if phrase contains expected name
                     if any(name in phrase for name in EXPECTED_NAMES):
+                        continue
+                    # Skip onomatopoeia + proper nouns
+                    if phrase in ONOMATOPOEIA_WHITELIST or phrase.lower() in {w.lower() for w in ONOMATOPOEIA_WHITELIST}:
+                        continue
+                    if phrase in PROPER_NOUN_PHRASES:
                         continue
                     issues.append({
                         'type': f'phrase_{n}gram_repeat',

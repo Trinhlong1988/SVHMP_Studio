@@ -238,7 +238,7 @@ Mười hai tháng. Hôm nay ngày mười hai tháng. Cùng ngày với mẹ Th
 
 Anh nhói. Bác tài cố ý đem Thanh Vân lên xe đêm nay — để người khách nhớ ngày cụ thể.
 
-Hạ Vy mất ngày mười hai tháng năm 2018. Tám năm trước hôm nay. Đêm tháng tư mưa to — bệnh viện Bạch Mai.
+Hạ Vy mất ngày mười hai tháng năm 2018. Tám năm trước hôm nay. Đêm tháng mưa to — bệnh viện Bạch Mai.
 
 Bác tài liếc gương. "Vào đêm ba mươi mốt. Con đã nhớ ngày cụ thể. Đêm sau con sẽ nhớ — bệnh viện Bạch Mai đêm đó — phòng cấp cứu — ai đứng cùng con. Đừng vội."
 
@@ -246,7 +246,7 @@ Người đàn ông gật. Lệ rơi nhẹ — không rất rất to.
 
 Anh ấy lấy mảnh bằng tốt nghiệp anh Nguyễn ra — đọc lại chữ thầy Hùng: "người khách — học sinh quý của tôi — 2017." người đàn ông cố nhớ — chính anh ấy tốt nghiệp Đại học Kiến trúc 2017 — sau đó năm 2018 Hạ Vy mất.
 
-Tám năm. Hôm nay đêm tháng tư 2025. Mười hai tháng tư — gần đúng ngày. anh cố tính — đêm hôm nay là đêm mấy tháng tư.
+Tám năm. Hôm nay đêm tháng 2025. Mười hai tháng tư — gần đúng ngày. anh cố tính — đêm hôm nay là đêm mấy tháng tư.
 
 Người khách nhìn ra cửa sổ. Bên ngoài — trời chưa sáng lên. Sao tháng tư còn sáng — chưa lệch sang tháng năm. Đêm tháng tư — chưa biết chính xác ngày nào.
 

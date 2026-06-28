@@ -164,15 +164,15 @@ Giọng anh đều — chậm — không vội.
 
 [pause:1500ms]
 
-"Bố dùng thước T mới một năm. Năm sau — sáu mươi mốt — bố tai biến. Đột tử bàn vẽ ra — sáng — đang vẽ dở đồ án."
+"Bố dùng thước mới một năm. Năm sau — sáu mươi mốt — bố tai biến. Đột tử bàn vẽ ra — sáng — đang vẽ dở đồ án."
 
-"Tôi đến văn. Bố nằm bên bàn vẽ ra — thước T inox còn trên bàn — bản vẽ dở dang — chì còn cầm trong tay."
+"Tôi đến văn. Bố nằm bên bàn vẽ ra — thước inox còn trên bàn — bản vẽ dở dang — chì còn cầm trong tay."
 
 "Sau tang bố — anh Lâm hỏi tôi: 'Hùng ơi anh nhận tiếp văn Hoài An — em không phản đối à? Anh nuôi sống văn — giữ tên Hoài An.' Tôi đồng ý. 'Anh giữ tên giúp bố em — em cảm ơn.'"
 
-"Anh Lâm đưa tôi bộ thước T inox của bố — bộ bố mua năm hai nghìn không trăm mười bảy. 'Hùng ơi đây là vật quý nhất bố em — anh không thể giữ lại — em là con — em giữ lại.'"
+"Anh Lâm đưa tôi bộ thước inox của bố — bộ bố mua năm hai nghìn không trăm mười bảy. 'Hùng ơi đây là vật quý nhất bố em — anh không thể giữ lại — em là con — em giữ lại.'"
 
-"Tôi cầm. Đem về nhà. Không dùng. Không vẽ ra ngoài. Tôi không biết vẽ kiến trúc — tôi không có khả năng. Tôi cất hộp thước T trong tủ — bảy năm — không mở."
+"Tôi cầm. Đem về nhà. Không dùng. Không vẽ ra ngoài. Tôi không biết vẽ kiến trúc — tôi không có khả năng. Tôi cất hộp thước trong tủ — bảy năm — không mở."
 
 [pause:1500ms]
 
@@ -188,11 +188,11 @@ Bác tài cất lời.
 
 Đức Hùng gật. Mắt đỏ — không khóc.
 
-"Tôi nhớ. Tôi không học kiến trúc theo bố — bố không trách lúc sống. Văn phòng Hoài An tan vì tôi không tiếp nối. Bộ thước T inox bố mua năm hai nghìn không trăm mười bảy — bố dùng một năm — chưa hết khả năng — đã tan cùng bố."
+"Tôi nhớ. Tôi không học kiến trúc theo bố — bố không trách lúc sống. Văn phòng Hoài An tan vì tôi không tiếp nối. Bộ thước inox bố mua năm hai nghìn không trăm mười bảy — bố dùng một năm — chưa hết khả năng — đã tan cùng bố."
 
 [pause:1200ms]
 
-"Đêm nay — tôi đem bộ thước T về Hoài Đức — về văn phòng Hoài An đã đóng cửa — chính tòa nhà tôi vừa bước lên xe. Tôi sẽ đặt hộp thước T trước cửa văn phòng — như cách trả lại bộ thước T cho chính nơi nó từng được dùng. Để ai đến mua tòa nhà sau — thấy hộp — biết đây từng là văn phòng kiến trúc — tên Hoài An — bố tôi đã có hai mươi năm ở đây."
+"Đêm nay — tôi đem bộ thước về Hoài Đức — về văn Hoài An đã đóng cửa — chính tòa nhà tôi vừa bước lên xe. Tôi sẽ đặt hộp thước T trước cửa văn phòng — như cách trả lại bộ thước T cho chính nơi nó từng được dùng. Để ai đến mua tòa nhà sau — thấy hộp — biết đây từng là văn phòng kiến trúc — tên Hoài An — bố tôi đã có hai mươi năm ở đây."
 
 ---
 
