@@ -60,13 +60,13 @@ Bác tài lái.
 
 Không khí biển mặn. Mặt biển phía bên phải đường — tối — vài ánh đèn tàu xa.
 
-Xe chậm lại trước một xóm cũ — bảng "Xóm Đại Hải — xã Quảng Phú" — đường vào xóm là đường đất ven biển. Đèn vàng cột điện đầu xóm.
+Xe chậm lại trước một xóm xưa — bảng "Xóm Đại Hải — xã Quảng Phú" — đường vào xóm là đường đất ven biển. Đèn vàng cột điện đầu xóm.
 
 Một bà đứng đợi bên cột điện. Khoảng năm mươi lăm tuổi. Áo bà ba xám — tay phải bê tô cơm nhỏ — tô sứ trắng — bên trong cơm đã nguội — có vẻ chuẩn bị từ tối.
 
-Bà bước lên xe. Đi qua hàng ghế đầu — chân chậm. Ngồi xuống ghế thứ sáu.
+Bà bước lên xe. Đi qua hàng ghế đầu — chân chậm lại. Ngồi xuống ghế thứ sáu.
 
-Đặt tô cơm lên đùi cẩn thận — không để rơi. Hai tay đỡ tô.
+Đặt tô cơm lên đùi cẩn thận — không để rơi xuống. Hai tay đỡ tô.
 
 Xe lăn bánh.
 
@@ -80,7 +80,7 @@ Bà ngồi yên. Đỡ tô cơm. Cơm trong tô đã nguội — có vẻ ăn đ
 
 Khải Phong quan sát từ ghế ba. Bà năm lăm — tóc bạc nửa — mặt rám nắng — vẻ người sống biển.
 
-Tô cơm bà đỡ — Khải Phong cảm giác — chưa được đem đến chủ. Bà mang đi đêm — không phải buổi ăn — bà đem cho ai đó.
+Tô cơm bà đỡ lấy — Khải Phong cảm giác — chưa được đem đến chủ. Bà mang đi đêm — không phải buổi ăn — bà đem cho ai đó.
 
 Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng — tắt.
 
@@ -96,21 +96,21 @@ Bà vuốt mép tô — như cảm độ nóng cơm — cơm đã nguội — kh
 
 [pause:500ms]
 
-Xe đi qua xóm cũ. Phía bên phải — căn nhà cấp bốn nhỏ — sân trước có gốc dừa — cửa đóng — không có ai.
+Xe đi qua xóm xưa. Phía bên phải — căn nhà cấp bốn nhỏ — sân trước có gốc dừa — cửa đóng — không có ai.
 
-Cạnh cửa — bóng bà cụ ngồi trên thềm gạch — chừng bảy mươi tuổi — áo bà ba nâu cũ — tay run cầm bát mẻ — bát không có gì. Không quay đầu — chỉ ngồi — như đang đợi cơm.
+Cạnh cửa — bóng bà cụ ngồi trên thềm gạch — chừng bảy mươi tuổi — áo bà ba nâu xưa — tay run cầm bát mẻ — bát không có gì. Không quay đầu — chỉ ngồi — như đang đợi cơm.
 
-Bà ghế sáu nhìn về phía đó. Hơi thở chậm.
+Bà ghế sáu nhìn về phía đó. Hơi thở chậm lại.
 
 "Bác..."
 
-Bà nói nhỏ.
+Bà nói rất nhỏ.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
 [pause:1000ms]
 
-Xe đi qua. Nhà cấp bốn khuất.
+Xe đi qua đó. Nhà cấp bốn khuất.
 
 Bà quay đầu lại. Vuốt mép tô cơm.
 
@@ -146,7 +146,7 @@ Giọng bà trầm — chậm.
 
 [pause:1500ms]
 
-"Em đến đám tang. Em quỳ bên quan tài bà. Em xin lỗi — qua thân xác đã đi. Em hứa em đem cơm — em không giữ — bà đói trước cửa nhà em không cách."
+"Em đến đám tang. Em quỳ bên quan tài bà. Em xin lỗi — qua thân xác đã đi. Em hứa em đem cơm — em không giữ lại — bà đói trước cửa nhà em không cách."
 
 "Sau tang bà — em quyết. Em đem cơm cho ba cụ già khác trong xóm — em không bỏ tuần nào — em không bận đến mức không kịp nấu một tô cơm."
 
@@ -156,9 +156,9 @@ Giọng bà trầm — chậm.
 
 "Năm vừa rồi — em năm tư — em sắp về hưu — em đem một tô cơm cuối — tô cơm em định đem cho bà Trinh ba tuần em không đem. Em nấu lại — cơm trắng + cá kho + canh chua — cùng menu xưa em đem bà."
 
-"Em quyết — em đem tô về Đại Hải — chính cửa nhà bà Trinh — chính chỗ bà mất tám năm trước. Nhà bà đã được người khác mua — xây lại cấp bốn mới — không giống nhà bà. Nhưng chỗ — cùng chỗ."
+"Em quyết — em đem tô về Đại Hải — chính cửa nhà bà Trinh — chính chỗ bà mất tám năm trước. Nhà bà đã được người khác mua — xây lại cấp bốn mới — không giống nhà bà. Nhưng nơi — cùng nơi."
 
-"Em sẽ đặt tô cơm trước cửa nhà cũ — chỗ bà chết. Quỳ. Nói: 'Bà ơi tám năm em mới đem được tô cơm — em xin lỗi ba tuần em không đem. Em đem trễ — em mong bà ở đâu đó — nhận được tô.'"
+"Em sẽ đặt tô cơm trước cửa nhà xưa — chỗ bà chết. Quỳ. Nói: 'Bà ơi tám năm em mới đem được tô cơm — em xin lỗi ba tuần em không đem. Em đem muộn — em mong bà ở đâu đó — nhận được tô.'"
 
 Bác tài cất lời.
 
@@ -188,19 +188,19 @@ Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim
 
 Bác tài: "Chưa tới lúc."
 
-Bà bước xuống.
+Bà bước xuống dưới.
 
 [pause:1200ms]
 
-Bên ngoài — Hồng Mai đi vào xóm cũ — đường đất tối — đèn cột điện thưa. Nhà bà Trinh cũ — đã xây lại — chủ mới ngủ — cửa đóng.
+Bên ngoài — Hồng Mai đi vào xóm xưa — đường đất tối — đèn cột điện thưa. Nhà bà Trinh xưa — đã xây lại — chủ mới ngủ — cửa đóng.
 
 Bà đến. Đặt tô cơm trước cửa — chính chỗ bà Trinh chết tám năm trước. Quỳ. Cúi đầu.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ. Bên cửa — bà Trinh xuất hiện — bà cụ bảy mươi sáu áo bà ba nâu — cúi xuống nhặt tô cơm — vuốt vai Hồng Mai. Mỉm cười nhẹ.
+Khải Phong chớp mắt — nhìn qua cửa sổ. Bên cửa — bà Trinh xuất hiện — bà cụ bảy mươi sáu áo bà ba nâu — cúi xuống nhặt tô cơm — vuốt vai Hồng Mai. Mỉm cười nhẹ nhàng.
 
 Khải Phong chớp lần nữa. Bà Trinh tan vào đêm.
 
-Hồng Mai ngẩng đầu. Không khóc. Đứng dậy chậm.
+Hồng Mai ngẩng đầu. Không khóc. Đứng dậy chậm lại.
 
 [pause:1500ms]
 
@@ -240,7 +240,7 @@ Anh Hải là đồng nghiệp Hạ Vy. Anh quen Hạ Vy qua công việc. Anh k
 
 Bác tài liếc gương. "Đêm ba mươi chín. Con nhớ anh Hải đồng nghiệp Hạ Vy. Đêm sau — milestone EP40 — con sẽ ngẫm rõ hơn vì sao anh Hải đi cùng đường Hạ Vy đêm đó — có phải anh tình cờ hay có hẹn. Đừng vội."
 
-Khải Phong gật. Lệ rơi nhẹ.
+Khải Phong gật. Lệ rơi nhẹ nhàng.
 
 Đêm thứ ba mươi chín. Xe đi tiếp ra khỏi Quảng Bình. Phía sau — xóm Đại Hải khuất. Hồng Mai ở lại đứng trước cửa nhà cũ bà Trinh — tô cơm trên thềm.
 

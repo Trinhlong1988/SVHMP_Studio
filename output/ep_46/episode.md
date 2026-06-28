@@ -58,11 +58,11 @@ Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi sáu. Trong túi á
 
 Bác tài lái.
 
-Mưa rải nhẹ. Mặt biển phía bên phải đường tối — gió biển thổi lên kính xe.
+Mưa rải nhẹ nhàng. Mặt biển phía bên phải đường tối — gió biển thổi lên kính xe.
 
 Xe chậm lại trước một nhà thờ nhỏ ven biển — biển "Nhà thờ Diêm Điền" — cổng đã đóng — đèn vàng treo cột tre. Một bà đứng đợi bên cổng. Khoảng sáu mươi tám tuổi. Áo bà ba xám — vạt áo dài. Tay phải cầm túi vải nâu nhỏ — bên trong vật mềm như cát.
 
-Bà vào xe. Đi qua mấy hàng ghế trước — chân chậm. Ngồi xuống ghế thứ bốn.
+Bà vào xe. Đi qua mấy hàng ghế trước — chân chậm lại. Ngồi xuống ghế thứ bốn.
 
 Đặt túi vải lên đùi. Mở. Bên trong — cát biển trắng — nắm chừng bàn tay.
 
@@ -102,13 +102,13 @@ Bà ghế bốn nhìn về phía đó. Mắt đỏ.
 
 "Bin..."
 
-Bà nói nhỏ.
+Bà nói rất nhỏ.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
 [pause:1000ms]
 
-Xe đi qua. Nhà cấp bốn khuất.
+Xe đi qua đó. Nhà cấp bốn khuất.
 
 Bà quay đầu lại. Vuốt túi cát.
 
@@ -130,7 +130,7 @@ Giọng bà trầm — chậm.
 
 "Em chăm Bin từ em sơ sinh đến em tám tuổi. Bin gọi em là 'mẹ Hảo' — không phải 'bà Hảo' — vì em coi bạn là mẹ. Mẹ ruột em — em chỉ gặp em mỗi Tết về quê."
 
-"Bin học lớp ba ở trường tiểu học xã. Em đưa em đi học mỗi sáng — em đón em chiều. Em nấu cơm cho em ăn — em ngủ cùng giường em."
+"Bin học lớp ba ở trường tiểu học xã đó. Em đưa em đi học mỗi sáng — em đón em chiều. Em nấu cơm cho em ăn — em ngủ cùng giường em."
 
 "Bốn năm trước — tháng năm — em hứa Bin: 'Mẹ Hảo ơi tháng sau hè — bà Hảo đem em ra biển Diêm Điền chơi nhé! Em chưa bao giờ ra biển — em chỉ thấy biển từ xa qua cửa sổ trường.'"
 
@@ -142,7 +142,7 @@ Giọng bà trầm — chậm.
 
 "Ba đứa em chơi ven bãi. Bin chưa bao giờ ra biển — em không biết bơi. Em ra xa sóng — sóng cuốn em. Bạn em chạy gọi người lớn — không kịp."
 
-"Em đến bãi biển. Em đã được kéo lên — đã đi. Em chỉ tám tuổi."
+"Em đến bãi biển. Em đã được kéo lên — đã đi rất xa. Em chỉ tám tuổi."
 
 [pause:1500ms]
 
@@ -190,7 +190,7 @@ Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim
 
 Bác tài: "Chưa tới lúc."
 
-Bà bước xuống.
+Bà bước xuống dưới.
 
 [pause:1200ms]
 
@@ -198,9 +198,9 @@ Bên ngoài — bà Hảo đi vào nhà thờ Diêm Điền. Chánh điện — 
 
 Khải Phong chớp mắt — nhìn qua cửa sổ. Bên bục — Bin xuất hiện — bé trai tám tuổi áo trắng — vuốt vai bà Hảo. Mỉm cười.
 
-Khải Phong chớp lần nữa. Bin tan.
+Khải Phong chớp lần nữa. Bin tan ra.
 
-Bà Hảo ngẩng đầu. Đi ra.
+Bà Hảo ngẩng đầu. Đi ra ngoài.
 
 [pause:1500ms]
 
@@ -220,7 +220,7 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 Khải Phong ngồi. Bà Hảo hứa Bin đem ra biển — không kịp.
 
-Khải Phong nhói. Khải Phong đã hứa với Hạ Vy điều gì chưa kịp giữ?
+Khải Phong nhói. Khải Phong đã hứa với Hạ Vy điều gì chưa kịp giữ lại?
 
 Hình ảnh — đêm tháng tư 2018 — chiều — Hạ Vy nhắn: "Anh ơi tối nay anh có rảnh không? Em muốn bàn chuyện cưới." Khải Phong đáp: "Vâng em — anh rảnh tối — về sớm — anh nấu cơm — bàn cùng em."
 
@@ -238,11 +238,11 @@ Em cười: "Hứa thật nhé."
 
 Khải Phong gật: "Hứa thật."
 
-Hạ Vy không bao giờ đi Hàn Quốc. Cưới không kịp tổ chức. Trăng mật không kịp đi. Khải Phong hứa — không kịp giữ.
+Hạ Vy không bao giờ đi Hàn Quốc. Cưới không kịp tổ chức. Trăng mật không kịp đi. Khải Phong hứa — không kịp giữ lại.
 
 Bác tài liếc gương. "Đêm bốn mươi sáu. Con đã nhớ lời hứa Hàn Quốc. Đêm sau con sẽ nhớ — con có thể giữ lời hứa muộn không. Đừng vội."
 
-Khải Phong gật. Lệ rơi.
+Khải Phong gật. Lệ rơi xuống dưới.
 
 Đêm thứ bốn mươi sáu. Xe đi tiếp. Phía sau — Diêm Điền khuất. Bà Hảo ở lại nhà thờ — quỳ trước Chúa.
 
@@ -252,7 +252,7 @@ Khải Phong ngồi yên. Anh nhớ rõ Hạ Vy cười khi anh hứa Hàn Quố
 
 Khải Phong vuốt cánh cát biển trong túi áo gió — vật thứ bốn mươi sáu — anh sẽ giữ cùng nhẫn bạc. Cụm vật tổng — anh đang xếp dần thành bản đồ. Bốn mươi sáu vật — bốn mươi sáu đêm — bốn mươi sáu câu chuyện song song với Khải Phong.
 
-Khải Phong vuốt áo gió — túi đầy bốn mươi sáu vật. Mưa biển miền Bắc đã hết. Trời chưa sáng. Đêm tháng tư vẫn dài. Khải Phong đợi đêm mai — passenger nào — câu chuyện nào — sẽ đến.
+Khải Phong vuốt áo gió — túi đầy bốn mươi sáu vật. Mưa biển miền Bắc đã hết. Trời chưa sáng lên. Đêm tháng tư vẫn dài. Khải Phong đợi đêm mai — passenger nào — câu chuyện nào — sẽ đến.
 
 Khải Phong nhói nhẹ. Anh hứa Hạ Vy đêm 2017 — anh hứa thật. Anh sẽ giữ thật — không phải qua chuyến anh — qua cách anh có thể bây giờ. Hữu Duy đêm mai sẽ chứng minh.
 

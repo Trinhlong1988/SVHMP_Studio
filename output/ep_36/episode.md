@@ -60,13 +60,13 @@ Bác tài lái. Đường đèo quanh co — bác tài lái chậm hơn thườn
 
 Không khí núi lạnh. Mặt đường khô — mưa chỉ rải nhẹ. Hai bên đường — vách đá — vài đèn xa nơi xóm dân tộc.
 
-Xe chậm lại trước một nhà thờ làng nhỏ — biển gỗ "Nhà thờ Sa Pa Cô" — cổng đã đóng — đèn vàng treo cột tre còn sáng. Tường nhà thờ xám rêu — đã có từ lâu.
+Xe chậm lại trước một nhà thờ làng nhỏ — biển gỗ mun "Nhà thờ Sa Pa Cô" — cổng đã đóng — đèn vàng treo cột tre còn sáng. Tường nhà thờ xám rêu — đã có từ lâu.
 
 Một người đàn ông đứng đợi bên cổng. Khoảng bốn mươi tám tuổi. Áo dạ đen — vest đen — phong cách đi tang. Tay phải cầm khung ảnh nhỏ — gói trong khăn lụa trắng.
 
 Anh lên xe. Đi xuống lối giữa — chân chậm — vai gầy. Ngồi xuống ghế thứ tám.
 
-Mở khăn lụa. Lấy khung ảnh ra — khung gỗ nhỏ — bên trong tấm ảnh đen trắng cũ — chụp một cô gái trẻ đứng cạnh một thanh niên — hai người cười.
+Mở khăn lụa. Lấy khung ảnh ra — khung gỗ nhỏ — bên trong tấm ảnh đen trắng xưa — chụp một cô gái trẻ đứng cạnh một thanh niên — hai người cười.
 
 Xe lăn bánh.
 
@@ -96,21 +96,21 @@ Anh nhìn lâu vào tấm ảnh — như cố ghi nhớ từng chi tiết — ho
 
 [pause:500ms]
 
-Xe đi qua xóm dân tộc cũ. Phía bên phải — căn nhà gỗ sàn — đèn dầu trong nhà còn sáng yếu.
+Xe đi qua xóm dân tộc xưa. Phía bên phải — căn nhà gỗ sàn — đèn dầu trong nhà còn sáng yếu.
 
 Cạnh cửa — bóng cô gái trẻ đứng — chừng hai mươi tuổi — áo dạ nâu — tay không cầm gì. Không quay đầu — chỉ đứng — như đang đợi ai.
 
-Anh ghế tám nhìn về phía đó. Hơi thở chậm.
+Anh ghế tám nhìn về phía đó. Hơi thở chậm lại.
 
 "Diễm..."
 
-Anh nói nhỏ.
+Anh nói rất nhỏ.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
 [pause:1000ms]
 
-Xe đi qua. Nhà sàn khuất.
+Xe đi qua đó. Nhà sàn khuất.
 
 Anh quay đầu lại. Vuốt khung ảnh.
 
@@ -124,7 +124,7 @@ Anh quay đầu lại. Vuốt khung ảnh.
 
 Giọng anh trầm — chậm.
 
-"Em gái tôi — Diễm — mất hai mươi năm trước. Hai mươi tuổi. Tai nạn xe máy — xe tải tông trên đèo Ô Quy Hồ — em mất tại chỗ."
+"Em gái tôi — Diễm — mất hai mươi năm trước. Hai mươi tuổi. Tai nạn xe máy — xe tải tông trên đèo Ô Quy Hồ — em mất tại nơi."
 
 "Diễm là em gái út tôi — kém tôi tám tuổi. Bố mẹ tôi sinh em muộn — bố tôi đã năm mươi khi em sinh ra. Em là con cưng — cả nhà chiều em."
 
@@ -140,7 +140,7 @@ Giọng anh trầm — chậm.
 
 "Năm em hai mươi — em ra Hà Nội kỳ ba. Tôi không gặp em từ Tết. Bố mẹ tôi cũng không gặp — chỉ gọi điện thoại."
 
-"Tháng tư năm hai nghìn không trăm linh năm — tôi nhận điện thoại bệnh viện Sa Pa. Bác sĩ báo: 'Em Diễm — em trai anh — bị tai nạn xe máy trên đèo Ô Quy Hồ. Em mất tại chỗ. Người đi cùng em — một thanh niên — bị thương nhẹ — đang điều trị tại bệnh viện chúng tôi.'"
+"Tháng tư năm hai nghìn không trăm linh năm — tôi nhận điện thoại bệnh viện Sa Pa. Bác sĩ báo: 'Em Diễm — em trai anh — bị tai nạn xe máy trên đèo Ô Quy Hồ. Em mất tại nơi. Người đi cùng em — một thanh niên — bị thương nhẹ — đang điều trị tại bệnh viện chúng tôi.'"
 
 "Tôi sốc. Tôi không biết em về Sa Pa. Em về quê mà không báo gia đình. Em đi cùng một thanh niên trên xe máy."
 
@@ -154,7 +154,7 @@ Giọng anh trầm — chậm.
 
 "Tôi sốc lần thứ hai. Em yêu một người hai năm — tôi không biết. Bố mẹ tôi không biết. Em giấu cả gia đình — không phải vì sợ — vì em muốn em ổn định kinh tế trước khi báo."
 
-"Tang em — Tuấn đến — quỳ bên quan tài em. Khóc to. Bố mẹ tôi đón Tuấn như con — vì em đã chọn Tuấn — không trách."
+"Tang em — Tuấn đến — quỳ bên quan tài em. Khóc rất to. Bố mẹ tôi đón Tuấn như con — vì em đã chọn Tuấn — không trách."
 
 [pause:1500ms]
 
@@ -168,7 +168,7 @@ Giọng anh trầm — chậm.
 
 [pause:1500ms]
 
-"Tuấn — sau tang em — em không liên lạc nhà tôi tiếp. Em tốt nghiệp đi làm — đi nước ngoài năm năm. Năm vừa rồi tôi nghe em đã cưới một cô khác ở Mỹ — sinh con — sống ổn."
+"Tuấn — sau tang em — em không liên lạc nhà tôi tiếp. Em tốt nghiệp đi làm — đi nước ngoài năm năm. Năm vừa rồi tôi nghe em đã cưới một cô khác ở Hoa Kỳ — sinh con — sống ổn."
 
 "Tôi mừng cho em. Em đã sống tiếp. Em không bị Diễm kéo lui."
 
@@ -184,7 +184,7 @@ Văn Khải gật. Mắt đỏ.
 
 [pause:1200ms]
 
-"Đêm nay — tôi đem ảnh về Sa Pa — về nhà thờ Sa Pa Cô — chính nhà thờ tôi vừa bước lên xe. Em theo đạo Công giáo — em chôn theo nghi lễ. Tôi sẽ đặt ảnh trên bục thờ — gửi ảnh cho Chúa thay vì giữ riêng. Em sẽ ở chỗ ảnh — gần em — không xa em."
+"Đêm nay — tôi đem ảnh về Sa Pa — về nhà thờ Sa Pa Cô — chính nhà thờ tôi vừa bước lên xe. Em theo đạo Công giáo — em chôn theo nghi lễ hội. Tôi sẽ đặt ảnh trên bục thờ — gửi ảnh cho Chúa thay vì giữ riêng. Em sẽ ở chỗ ảnh — gần em — không xa em."
 
 ---
 
@@ -206,7 +206,7 @@ Anh bước xuống — chân chạm đường đèo ướt.
 
 [pause:1200ms]
 
-Bên ngoài — Văn Khải đi vào sân nhà thờ Sa Pa Cô — cổng đã mở. Chánh điện — tượng Chúa — bục gỗ.
+Bên ngoài — Văn Khải đi vào sân nhà thờ Sa Pa Cô — cổng đã mở. Chánh điện — tượng Chúa — bục gỗ mun.
 
 Anh đến. Đặt ảnh giữa bục — chính giữa. Quỳ. Cúi đầu.
 
@@ -256,6 +256,6 @@ Anh thanh niên đó — ai? Người dưng đi đường? Hay ai đó Hạ Vy q
 
 Bác tài liếc gương. "Đêm ba mươi sáu. Con bắt đầu nhớ có một anh thanh niên đưa Hạ Vy vào bệnh viện. Đêm sau con sẽ nhớ — anh đó là ai — Hạ Vy có quen anh không. Đừng vội."
 
-Khải Phong gật. Lệ rơi nhẹ — không to.
+Khải Phong gật. Lệ rơi nhẹ — không rất to.
 
 Đêm thứ ba mươi sáu. Xe đi tiếp xuống đèo. Phía sau — Sa Pa khuất trong sương núi. Văn Khải ở lại nhà thờ — quỳ trước bục — ảnh em gái cạnh tượng Chúa.

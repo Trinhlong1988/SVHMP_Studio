@@ -1,8 +1,8 @@
 ---
 project: SVHMP_Studio
-current_round: 16
-last_update_ts: 2026-06-27
-last_update_by: Claude session 27/6 (round 16 — B40 fix toàn bộ EP01-35 + R41 HARDLOCK + pre-commit hook auto-block + counter rule_break)
+current_round: 18
+last_update_ts: 2026-06-28
+last_update_by: Claude session 28/6 (round 18 — TTS+LOGIC RULES R58-R65 hardlock + 6 audit/fix scripts + EP01 golden ref ZERO violations + EP02-50 partial fix + generator.md PHASE 12.99 enforce)
 rule_break_count: 2  # R39 vi phạm 2 lần (EP21-25 + EP12-19/EP31-34) — counter R41
 schema_version: 1
 ---
@@ -98,6 +98,52 @@ schema_version: 1
 ---
 
 ## Recent changes (newest first)
+
+### 2026-06-28 round 17 (Claude session) — AUDIO_MIX_RULES codify + 15-check audit
+
+**Trigger:** R42 PRO MIX reject Mr.Long 28/6 — "nhạc không phù hợp, không phân tích, lồng hiệu ứng sai (lò sưởi/đèn chùm/sa mạc trên xe buýt). Em phải đặt cảm xúc vào người nghe + nghe cả nhạc + đưa vào hiến pháp + QA + mix hiệu ứng nền + cấm tạp âm + không suy luận".
+
+**Artifacts shipped (6):**
+- `bible/05_audio_bible.yaml` v1.0 → **v1.1** — add `audio_mix_rules` section (10 rules R_AUDIO_01-10)
+  - R_AUDIO_01 viewer_empathy_test
+  - R_AUDIO_02 moment_level_music_selection
+  - R_AUDIO_03 ambient_bed_constant_layer (rain+bus_engine+wet_road loop)
+  - R_AUDIO_04 setting_sfx_validation (forbid fire/chandelier/desert/etc)
+  - R_AUDIO_05 death_memory_haunting_music_protocol (HDK_SAD/REVEAL/MYSTERY mapping)
+  - R_AUDIO_06 music_section_personality (6 section dB curve spec)
+  - R_AUDIO_07 impact_moment_music_mute (5 câu nặng Hạ Vy mất)
+  - R_AUDIO_08 hook_opening_swell_sync_first_word (12s + vowel center align)
+  - R_AUDIO_09 no_audio_artifacts_hardlock (click/pop/DC/aliasing zero tol)
+  - R_AUDIO_10 empirical_verification_required (no inference)
+- `bible/00_constitution.yaml` — add **R59 audio_mix_qa_mandatory_pre_publish** (hardlock gate)
+  - Fix 5 pre-existing YAML parse bugs (B51-B55: R56/R58 tilde/R53/R51 quoted scalar trailing text)
+- `tools/audit_audio_mix_qa.py` NEW — **15 checks** C1-C15 load bible/05 + bible/00 R59
+  - Empirical verify trên R42 PRO MIX: FAIL 7 HIGH (catch 4 SFX phi lý + LUFS off + **1300 click/pop B50**)
+- `tools/assignment_planner.py` v1.0 → **v2.0** — refactor
+  - Layer 1 HDK specialized priority (HDK_MYSTERY/SAD/REVEAL/TENSION/ENDING)
+  - Layer 2 pixabay fallback
+  - Filter FORBIDDEN_SFX_KEYWORDS pre-pick (R_AUDIO_04)
+  - Emit moment_map_template.yaml per EP (R_AUDIO_02)
+  - Ambient bed schedule (R_AUDIO_03)
+- `VERSION.md` — round 17 entry
+- `BUGS_FIXED.md` — B49 (assignment_planner v1 setting gap) + B50 (R42 1300 click/pop) + B51-B55 (YAML)
+
+**Bugs caught + fixed round 17:**
+- **B49** assignment_planner v1.0 SFX_BY_SECTION có 'fire'/'glass'/'wind' → pick "Fire in fireplace"/"Shattering Chandelier"/"Desert wind" trên xe buýt Hà Nội mưa nhẹ
+- **B50** R42 PRO MIX có 1300 sample-level click/pop từ 18.85s — vi phạm R_AUDIO_09 zero tolerance
+- **B51-B55** 5 pre-existing YAML parse bugs trong bible/00 (R56/R58 tilde/R53/R51 quoted scalar với trailing text)
+
+**Empirical verify R42 PRO MIX (proves audit tool work):**
+- 8/15 PASS, 7 HIGH FAIL, 4 MEDIUM
+- Verdict JSON: `output/ep_01/audio_mix_qa_verdict.json`
+- R42 PRO MIX BLOCKED ship (vi phạm R59)
+
+**Pending (next session):**
+- Mr.Long approve plan re-pick music EP01 dùng HDK specialized
+- Em ship `tools/hook_swell_aligner.py` (forced-align Whisper word_timestamps + crescendo curve gen)
+- Em mix R43 với fixes
+- Re-run audit_audio_mix_qa.py → must PASS 15/15
+- Mr.Long listen + approve → ship EP01_FINAL_v2
 
 ### 2026-06-26 round 14 FINAL (Claude session) — TỔNG kết
 **Total round 14 ship 1 session:** git init + dashboard 300×300+player + multi-CMD hook 6 scripts + F1-F4 adversarial pipeline
@@ -257,3 +303,56 @@ Round 12 audits still valid:
 - `python C:\tmp\hdk_audit_20rounds.py` → 22/22 PASS
 
 Total: 143/153 PASS at last verify (2026-06-26 round 13).
+
+---
+
+## ROUND 18 — TTS+LOGIC RULES R58-R65 (2026-06-28)
+
+### Rules new added
+- **R58** no_tilde_ending_sentence_hardlock — CẤM dấu ngã cuối câu (Mỹ→Mỵ / cũ→cụ)
+- **R59** concat_short_syllable_cụt_hardlock — chuỗi 3+ từ ngắn cuối câu
+- **R60** short_syllable_eol_hardlock — câu ≤3 từ ending mono-syllable
+- **R61** short_syllable_start_sentence_hardlock — mở đầu "Đêm/Hôm" cụt hụt hơi
+- **R62** anaphora_word_liên_tiếp_hardlock — người/cô lặp >2 câu liền
+- **R63/R64** folded into R65 (logic toán/lý/hóa/sinh + đạo đức VN)
+- **R65** total_consistency_no_invention_hardlock — 8 dimensions toàn diện
+- `bible/22 grammar_note` — "chợt/bỗng nhiên" CẤM dùng cho câu hỏi
+
+### New scripts (6 tools)
+- `tools/audit_tilde_eol.py` — R58 detection
+- `tools/auto_fix_tilde_eol.py` — R58 auto-fix
+- `tools/audit_short_eol.py` — R60 detection
+- `tools/auto_fix_short_eol.py` — R60 auto-fix pad
+- `tools/audit_short_start.py` — R61 detection
+- `tools/auto_fix_short_start.py` — R61 auto-fix prefix
+- `tools/audit_anaphora_consecutive.py` — R62 detection
+- `tools/auto_fix_anaphora.py` — R62 auto-fix vary
+- `tools/rewrite_ep01_r61.py` + `rewrite_ep01_final.py` — EP01 manual rewrite
+- `tools/rewrite_batch_r61.py` — EP02-50 generic pattern map
+
+### Audit status (50 EPs after auto-fix)
+| Rule | Before | After | %reduce |
+|------|--------|-------|---------|
+| R58 tilde EOL | 495 | 43 | 91% |
+| R60 short EOL | 1259 | 50 | 96% |
+| R61 short START | 1776 | 605 | 66% |
+| R62 anaphora | 189 | 189 | 0% (need manual) |
+
+### EP01 = GOLDEN REFERENCE 🏆
+- **ZERO violations** on all 4 rules R58/R60/R61/R62
+- Process: 42+13+5 manual rewrites (sentence pad + subject expansion)
+- Plot hole fix: Khải Phong "ôm đồng hồ" xuống xe → đồng hồ trượt rơi tự nhiên (trance state) → ghế bảy còn đồng hồ → cô gái nhặt (cycle horror)
+- Logic: "đi Mỹ" → "đi du học Hoa Kỳ" (TTS clear)
+- "Đêm đó mưa từ bảy giờ" → "Hôm đó, từ bảy giờ tối, mưa đã rơi không ngớt"
+
+### Generator prompt updated
+`prompts/generator.md` PHASE 12.99 + 95 lines:
+- R58-R65 pre-write enforcer mandatory
+- 7-point checklist trước finalize sentence
+- 4 audit commands post-write verify
+
+### Pending
+- 49 EPs còn nhiều R61/R62 violations (cần per-EP manual rewrite — pattern-specific)
+- 43 R58 còn (words không có safe synonym: chữ/gỗ/vẽ — need manual)
+- EP23 + EP30 R56 hồi tưởng rewrite
+- 16 EPs còn naked "Hà" (per-context rename)

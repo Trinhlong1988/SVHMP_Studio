@@ -1,0 +1,5254 @@
+{
+  "total": 563,
+  "eps": [
+    [
+      6,
+      9
+    ],
+    [
+      7,
+      10
+    ],
+    [
+      8,
+      18
+    ],
+    [
+      9,
+      20
+    ],
+    [
+      10,
+      25
+    ],
+    [
+      11,
+      17
+    ],
+    [
+      12,
+      17
+    ],
+    [
+      13,
+      13
+    ],
+    [
+      14,
+      14
+    ],
+    [
+      15,
+      9
+    ],
+    [
+      16,
+      15
+    ],
+    [
+      17,
+      9
+    ],
+    [
+      18,
+      12
+    ],
+    [
+      19,
+      15
+    ],
+    [
+      20,
+      9
+    ],
+    [
+      21,
+      10
+    ],
+    [
+      22,
+      11
+    ],
+    [
+      23,
+      9
+    ],
+    [
+      24,
+      11
+    ],
+    [
+      25,
+      11
+    ],
+    [
+      26,
+      10
+    ],
+    [
+      27,
+      12
+    ],
+    [
+      28,
+      12
+    ],
+    [
+      29,
+      11
+    ],
+    [
+      30,
+      11
+    ],
+    [
+      31,
+      16
+    ],
+    [
+      32,
+      10
+    ],
+    [
+      33,
+      11
+    ],
+    [
+      34,
+      11
+    ],
+    [
+      35,
+      10
+    ],
+    [
+      36,
+      9
+    ],
+    [
+      37,
+      10
+    ],
+    [
+      38,
+      11
+    ],
+    [
+      39,
+      11
+    ],
+    [
+      40,
+      10
+    ],
+    [
+      41,
+      11
+    ],
+    [
+      42,
+      12
+    ],
+    [
+      43,
+      13
+    ],
+    [
+      44,
+      15
+    ],
+    [
+      45,
+      14
+    ],
+    [
+      46,
+      15
+    ],
+    [
+      47,
+      14
+    ],
+    [
+      48,
+      8
+    ],
+    [
+      49,
+      13
+    ],
+    [
+      50,
+      19
+    ]
+  ],
+  "violations": [
+    {
+      "line": 87,
+      "word": "Đêm",
+      "next_word": "nay",
+      "context": "Đêm nay ba lần liền.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 6
+    },
+    {
+      "line": 107,
+      "word": "Năm",
+      "next_word": "nay",
+      "context": "Năm nay tám mươi mốt.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 6
+    },
+    {
+      "line": 111,
+      "word": "Năm",
+      "next_word": "cháu",
+      "context": "Năm cháu nội ngoại.\"",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 6
+    },
+    {
+      "line": 127,
+      "word": "Đêm",
+      "next_word": "hai",
+      "context": "Đêm hai tám.\"",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 6
+    },
+    {
+      "line": 141,
+      "word": "Lúc",
+      "next_word": "cụ",
+      "context": "Lúc cụ mười tám tuổi.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 6
+    },
+    {
+      "line": 191,
+      "word": "Gió",
+      "next_word": "đêm",
+      "context": "Gió đêm khép vào.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 6
+    },
+    {
+      "line": 223,
+      "word": "Trên",
+      "next_word": "ghế",
+      "context": "Trên ghế thứ tư trống.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 6
+    },
+    {
+      "line": 233,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ sáu.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 6
+    },
+    {
+      "line": 243,
+      "word": "Đêm",
+      "next_word": "vẫn",
+      "context": "Đêm vẫn dài.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 6
+    },
+    {
+      "line": 37,
+      "word": "Đêm",
+      "next_word": "ba",
+      "context": "Đêm ba mươi tháng Chạp.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 7
+    },
+    {
+      "line": 83,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ bảy.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 7
+    },
+    {
+      "line": 103,
+      "word": "Năm",
+      "next_word": "nay",
+      "context": "Năm nay hai mốt.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 7
+    },
+    {
+      "line": 167,
+      "word": "Anh",
+      "next_word": "đem",
+      "context": "Anh đem theo.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 7
+    },
+    {
+      "line": 183,
+      "word": "Anh",
+      "next_word": "đi",
+      "context": "Anh đi tiếp.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 7
+    },
+    {
+      "line": 241,
+      "word": "Đêm",
+      "next_word": "vẫn",
+      "context": "Đêm vẫn dài.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 7
+    },
+    {
+      "line": 241,
+      "word": "Mưa",
+      "next_word": "phùn",
+      "context": "Mưa phùn vẫn lất phất.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 7
+    },
+    {
+      "line": 265,
+      "word": "Đêm",
+      "next_word": "vẫn",
+      "context": "Đêm vẫn dài.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 7
+    },
+    {
+      "line": 265,
+      "word": "Mưa",
+      "next_word": "phùn",
+      "context": "Mưa phùn vẫn lất phất.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 7
+    },
+    {
+      "line": 291,
+      "word": "Đêm",
+      "next_word": "vẫn",
+      "context": "Đêm vẫn lăn bánh.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 7
+    },
+    {
+      "line": 37,
+      "word": "Đêm",
+      "next_word": "ba",
+      "context": "Đêm ba mươi tháng Chạp.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 8
+    },
+    {
+      "line": 37,
+      "word": "Mưa",
+      "next_word": "lất",
+      "context": "Mưa lất phất.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 8
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ tám.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 8
+    },
+    {
+      "line": 85,
+      "word": "Năm",
+      "next_word": "lần",
+      "context": "Năm lần liền sau.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 8
+    },
+    {
+      "line": 85,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ tám, năm lần.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 8
+    },
+    {
+      "line": 143,
+      "word": "Cô",
+      "next_word": "em",
+      "context": "Cô em đứng cổng đón.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 8
+    },
+    {
+      "line": 145,
+      "word": "Bà",
+      "next_word": "nằm",
+      "context": "\"Bà nằm trong quan tài.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 8
+    },
+    {
+      "line": 151,
+      "word": "Bà",
+      "next_word": "chọn",
+      "context": "Bà chọn ông.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 8
+    },
+    {
+      "line": 151,
+      "word": "Bà",
+      "next_word": "bỏ",
+      "context": "Bà bỏ nhà, theo ông.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 8
+    },
+    {
+      "line": 155,
+      "word": "Bà",
+      "next_word": "nuôi",
+      "context": "Bà nuôi hai thế hệ.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 8
+    },
+    {
+      "line": 161,
+      "word": "Cô",
+      "next_word": "em",
+      "context": "Cô em nấu hộ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 8
+    },
+    {
+      "line": 161,
+      "word": "Bà",
+      "next_word": "ngồi",
+      "context": "Bà ngồi cạnh nhìn.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 8
+    },
+    {
+      "line": 193,
+      "word": "Anh",
+      "next_word": "sẽ",
+      "context": "Anh sẽ không nhớ bà.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 8
+    },
+    {
+      "line": 193,
+      "word": "Bà",
+      "next_word": "vẫn",
+      "context": "Bà vẫn riêng của em.\"",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 8
+    },
+    {
+      "line": 209,
+      "word": "Anh",
+      "next_word": "đi",
+      "context": "Anh đi tiếp.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 8
+    },
+    {
+      "line": 231,
+      "word": "Anh",
+      "next_word": "đi",
+      "context": "Anh đi tiếp.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 8
+    },
+    {
+      "line": 277,
+      "word": "Đêm",
+      "next_word": "vẫn",
+      "context": "Đêm vẫn dài.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 8
+    },
+    {
+      "line": 281,
+      "word": "Bà",
+      "next_word": "giữ",
+      "context": "Bà giữ trong túi áo.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 8
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ chín.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 9
+    },
+    {
+      "line": 49,
+      "word": "Cô",
+      "next_word": "bước",
+      "context": "Cô bước lên xe.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 9
+    },
+    {
+      "line": 63,
+      "word": "Cô",
+      "next_word": "áp",
+      "context": "Cô áp băng lên ngực.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 9
+    },
+    {
+      "line": 83,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ chín, sáu lần.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 9
+    },
+    {
+      "line": 93,
+      "word": "Cô",
+      "next_word": "gái",
+      "context": "Cô gái quay đầu lại.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 9
+    },
+    {
+      "line": 101,
+      "word": "Năm",
+      "next_word": "nay",
+      "context": "Năm nay ba mốt.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 9
+    },
+    {
+      "line": 113,
+      "word": "Bà",
+      "next_word": "chưa",
+      "context": "Bà chưa gặp chắt.'\"",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 9
+    },
+    {
+      "line": 115,
+      "word": "Bà",
+      "next_word": "bảo:",
+      "context": "\"Bà bảo: 'Bà chờ cháu.'\"",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 9
+    },
+    {
+      "line": 119,
+      "word": "Bà",
+      "next_word": "còn",
+      "context": "Bà còn khoẻ, không sao.'\"",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 9
+    },
+    {
+      "line": 121,
+      "word": "Bà",
+      "next_word": "đã",
+      "context": "Bà đã đi đêm trước.\"",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 9
+    },
+    {
+      "line": 137,
+      "word": "Cô",
+      "next_word": "gái",
+      "context": "Cô gái khẽ gật đầu.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 9
+    },
+    {
+      "line": 219,
+      "word": "Cô",
+      "next_word": "hỏi:",
+      "context": "Cô hỏi:",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 9
+    },
+    {
+      "line": 227,
+      "word": "Cô",
+      "next_word": "gái",
+      "context": "Cô gái khẽ gật đầu.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 9
+    },
+    {
+      "line": 231,
+      "word": "Cô",
+      "next_word": "lên",
+      "context": "Cô lên đến hiên.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 9
+    },
+    {
+      "line": 233,
+      "word": "Cô",
+      "next_word": "đặt",
+      "context": "Cô đặt băng lên máy.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 9
+    },
+    {
+      "line": 237,
+      "word": "Cô",
+      "next_word": "bấm",
+      "context": "Cô bấm nút Play.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 9
+    },
+    {
+      "line": 241,
+      "word": "Cô",
+      "next_word": "vẫn",
+      "context": "Cô vẫn ngồi đó.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 9
+    },
+    {
+      "line": 281,
+      "word": "Đêm",
+      "next_word": "vẫn",
+      "context": "Đêm vẫn dài.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 9
+    },
+    {
+      "line": 281,
+      "word": "Sương",
+      "next_word": "núi",
+      "context": "Sương núi vẫn dày.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 9
+    },
+    {
+      "line": 295,
+      "word": "Bà",
+      "next_word": "có",
+      "context": "Bà có vết sẹo đó.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 9
+    },
+    {
+      "line": 37,
+      "word": "Đêm",
+      "next_word": "ba",
+      "context": "Đêm ba mươi tháng Chạp.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 37,
+      "word": "Sương",
+      "next_word": "đặc.",
+      "context": "Sương đặc.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ mười.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 93,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ mười, bảy lần.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 109,
+      "word": "Anh",
+      "next_word": "tên",
+      "context": "\"Anh tên Việt.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 109,
+      "word": "Lúc",
+      "next_word": "anh",
+      "context": "Lúc anh mười sáu tuổi.\"",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 113,
+      "word": "Anh",
+      "next_word": "ở",
+      "context": "Anh ở với bà.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 121,
+      "word": "Bà",
+      "next_word": "nằm",
+      "context": "Bà nằm phòng cấp cứu.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 121,
+      "word": "Cô",
+      "next_word": "anh",
+      "context": "Cô anh đang ngồi ngoài.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 123,
+      "word": "Anh",
+      "next_word": "vào",
+      "context": "\"Anh vào phòng.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 123,
+      "word": "Bà",
+      "next_word": "nằm",
+      "context": "Bà nằm trên giường.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 123,
+      "word": "Anh",
+      "next_word": "ngồi",
+      "context": "Anh ngồi xuống ghế.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 127,
+      "word": "Bà",
+      "next_word": "nhìn",
+      "context": "Bà nhìn anh.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 127,
+      "word": "Anh",
+      "next_word": "ghé",
+      "context": "Anh ghé tai sát.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 127,
+      "word": "Bà",
+      "next_word": "thì",
+      "context": "Bà thì thầm: 'Khăn tay...",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 129,
+      "word": "Đêm",
+      "next_word": "ba",
+      "context": "Đêm ba mươi tháng Chạp.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 133,
+      "word": "Cô",
+      "next_word": "anh",
+      "context": "\"Cô anh dìu anh ra.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 149,
+      "word": "Anh",
+      "next_word": "nhớ,",
+      "context": "\"Anh nhớ, bác.\"",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 155,
+      "word": "Anh",
+      "next_word": "đứng",
+      "context": "Anh đứng đám tang cô.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 163,
+      "word": "Anh",
+      "next_word": "muốn",
+      "context": "\"Anh muốn kể.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 175,
+      "word": "Anh",
+      "next_word": "sợ",
+      "context": "\"Anh sợ điều đó.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 177,
+      "word": "Đêm",
+      "next_word": "nay",
+      "context": "\"Đêm nay anh về quê.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 201,
+      "word": "Năm",
+      "next_word": "mới",
+      "context": "Năm mới đến rồi.\"",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 223,
+      "word": "Sương",
+      "next_word": "dày",
+      "context": "Sương dày đặc.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 265,
+      "word": "Đêm",
+      "next_word": "vẫn",
+      "context": "Đêm vẫn dài.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 37,
+      "word": "Sương",
+      "next_word": "dày",
+      "context": "Sương dày đặc.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 11
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ mười một.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 11
+    },
+    {
+      "line": 49,
+      "word": "Anh",
+      "next_word": "bước",
+      "context": "Anh bước lên xe.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 11
+    },
+    {
+      "line": 61,
+      "word": "Anh",
+      "next_word": "ngồi",
+      "context": "Anh ngồi yên.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 11
+    },
+    {
+      "line": 75,
+      "word": "Mưa",
+      "next_word": "đã",
+      "context": "Mưa đã ngớt.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 11
+    },
+    {
+      "line": 89,
+      "word": "Chị",
+      "next_word": "...\"",
+      "context": "\"Chị...\"",
+      "word_count": 1,
+      "severity": "HIGH",
+      "ep": 11
+    },
+    {
+      "line": 91,
+      "word": "Anh",
+      "next_word": "nói",
+      "context": "Anh nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 11
+    },
+    {
+      "line": 113,
+      "word": "Chị",
+      "next_word": "mất",
+      "context": "Chị mất tại nơi.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 11
+    },
+    {
+      "line": 123,
+      "word": "Chị",
+      "next_word": "hơn",
+      "context": "\"Chị hơn em mười tuổi.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 11
+    },
+    {
+      "line": 139,
+      "word": "Chị",
+      "next_word": "vuốt",
+      "context": "Chị vuốt đầu em.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 11
+    },
+    {
+      "line": 141,
+      "word": "Chị",
+      "next_word": "ra",
+      "context": "Chị ra phòng.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 11
+    },
+    {
+      "line": 147,
+      "word": "Chị",
+      "next_word": "đi",
+      "context": "Chị đi xe máy về.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 11
+    },
+    {
+      "line": 169,
+      "word": "Chị",
+      "next_word": "có",
+      "context": "Chị có linh tính.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 11
+    },
+    {
+      "line": 189,
+      "word": "Anh",
+      "next_word": "nói",
+      "context": "Anh nói với bác tài.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 11
+    },
+    {
+      "line": 203,
+      "word": "Chị",
+      "next_word": "Hà",
+      "context": "Chị Hà tan ra.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 11
+    },
+    {
+      "line": 233,
+      "word": "Đêm",
+      "next_word": "mười",
+      "context": "\"Đêm mười một.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 11
+    },
+    {
+      "line": 237,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ mười một.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 11
+    },
+    {
+      "line": 37,
+      "word": "Đêm",
+      "next_word": "vừa",
+      "context": "Đêm vừa khuya.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 12
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ mười hai.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 12
+    },
+    {
+      "line": 45,
+      "word": "Cô",
+      "next_word": "lên",
+      "context": "Cô lên xe.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 12
+    },
+    {
+      "line": 57,
+      "word": "Cô",
+      "next_word": "gái",
+      "context": "Cô gái ngồi yên lặng.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 12
+    },
+    {
+      "line": 89,
+      "word": "Anh",
+      "next_word": "...\"",
+      "context": "\"Anh...\"",
+      "word_count": 1,
+      "severity": "HIGH",
+      "ep": 12
+    },
+    {
+      "line": 91,
+      "word": "Cô",
+      "next_word": "nói",
+      "context": "Cô nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 12
+    },
+    {
+      "line": 99,
+      "word": "Cô",
+      "next_word": "quay",
+      "context": "Cô quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 12
+    },
+    {
+      "line": 113,
+      "word": "Anh",
+      "next_word": "hơn",
+      "context": "\"Anh hơn em năm tuổi.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 12
+    },
+    {
+      "line": 119,
+      "word": "Anh",
+      "next_word": "cũng",
+      "context": "Anh cũng không nói.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 12
+    },
+    {
+      "line": 137,
+      "word": "Anh",
+      "next_word": "Khôi",
+      "context": "\"Anh Khôi không khóc.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 12
+    },
+    {
+      "line": 163,
+      "word": "Cô",
+      "next_word": "gái",
+      "context": "Cô gái khẽ gật đầu.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 12
+    },
+    {
+      "line": 187,
+      "word": "Cô",
+      "next_word": "bước",
+      "context": "Cô bước xuống dưới.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 12
+    },
+    {
+      "line": 193,
+      "word": "Cô",
+      "next_word": "mở",
+      "context": "Cô mở hộp.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 12
+    },
+    {
+      "line": 223,
+      "word": "Đêm",
+      "next_word": "đó",
+      "context": "Đêm đó có ai?",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 12
+    },
+    {
+      "line": 231,
+      "word": "Đêm",
+      "next_word": "mười",
+      "context": "\"Đêm mười hai.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 12
+    },
+    {
+      "line": 235,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ mười hai.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 12
+    },
+    {
+      "line": 235,
+      "word": "Anh",
+      "next_word": "Khôi",
+      "context": "Anh Khôi đã tan.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 12
+    },
+    {
+      "line": 37,
+      "word": "Mưa",
+      "next_word": "đã",
+      "context": "Mưa đã rơi từ chiều.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 13
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ mười ba.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 13
+    },
+    {
+      "line": 47,
+      "word": "Anh",
+      "next_word": "lên",
+      "context": "Anh lên bậc xe.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 13
+    },
+    {
+      "line": 57,
+      "word": "Anh",
+      "next_word": "ngồi",
+      "context": "Anh ngồi yên.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 13
+    },
+    {
+      "line": 83,
+      "word": "Anh",
+      "next_word": "nói",
+      "context": "Anh nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 13
+    },
+    {
+      "line": 89,
+      "word": "Ông",
+      "next_word": "cụ",
+      "context": "Ông cụ khuất.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 13
+    },
+    {
+      "line": 91,
+      "word": "Anh",
+      "next_word": "quay",
+      "context": "Anh quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 13
+    },
+    {
+      "line": 171,
+      "word": "Anh",
+      "next_word": "ôm",
+      "context": "Anh ôm bó cúc khô.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 13
+    },
+    {
+      "line": 179,
+      "word": "Anh",
+      "next_word": "bước",
+      "context": "Anh bước xuống dưới.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 13
+    },
+    {
+      "line": 185,
+      "word": "Anh",
+      "next_word": "đến.",
+      "context": "Anh đến.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 13
+    },
+    {
+      "line": 193,
+      "word": "Anh",
+      "next_word": "Bình",
+      "context": "Anh Bình ngẩng đầu.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 13
+    },
+    {
+      "line": 223,
+      "word": "Đêm",
+      "next_word": "mười",
+      "context": "\"Đêm mười ba.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 13
+    },
+    {
+      "line": 227,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ mười ba.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 13
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ mười bốn.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 14
+    },
+    {
+      "line": 47,
+      "word": "Bà",
+      "next_word": "vào",
+      "context": "Bà vào xe.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 14
+    },
+    {
+      "line": 59,
+      "word": "Bà",
+      "next_word": "ngồi",
+      "context": "Bà ngồi yên.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 14
+    },
+    {
+      "line": 83,
+      "word": "Bà",
+      "next_word": "nói",
+      "context": "Bà nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 14
+    },
+    {
+      "line": 91,
+      "word": "Bà",
+      "next_word": "ghế",
+      "context": "Bà ghế tám quay đầu.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 14
+    },
+    {
+      "line": 99,
+      "word": "Năm",
+      "next_word": "mươi",
+      "context": "Năm mươi sáu tuổi.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 14
+    },
+    {
+      "line": 153,
+      "word": "Bà",
+      "next_word": "gật.",
+      "context": "Bà gật.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 14
+    },
+    {
+      "line": 171,
+      "word": "Bà",
+      "next_word": "gấp",
+      "context": "Bà gấp khăn lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 14
+    },
+    {
+      "line": 179,
+      "word": "Bà",
+      "next_word": "bước",
+      "context": "Bà bước xuống dưới.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 14
+    },
+    {
+      "line": 185,
+      "word": "Bà",
+      "next_word": "đến.",
+      "context": "Bà đến.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 14
+    },
+    {
+      "line": 189,
+      "word": "Bà",
+      "next_word": "cụ",
+      "context": "Bà cụ tan ra.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 14
+    },
+    {
+      "line": 191,
+      "word": "Bà",
+      "next_word": "Tâm",
+      "context": "Bà Tâm Đan ngẩng đầu.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 14
+    },
+    {
+      "line": 219,
+      "word": "Đêm",
+      "next_word": "mười",
+      "context": "\"Đêm mười bốn.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 14
+    },
+    {
+      "line": 223,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ mười bốn.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 14
+    },
+    {
+      "line": 37,
+      "word": "Đêm",
+      "next_word": ".",
+      "context": "Đêm.",
+      "word_count": 1,
+      "severity": "HIGH",
+      "ep": 15
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ mười lăm.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 15
+    },
+    {
+      "line": 55,
+      "word": "Anh",
+      "next_word": "bước",
+      "context": "Anh bước lên xe.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 15
+    },
+    {
+      "line": 65,
+      "word": "Anh",
+      "next_word": "ngồi",
+      "context": "Anh ngồi yên.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 15
+    },
+    {
+      "line": 91,
+      "word": "Anh",
+      "next_word": "nói",
+      "context": "Anh nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 15
+    },
+    {
+      "line": 99,
+      "word": "Anh",
+      "next_word": "quay",
+      "context": "Anh quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 15
+    },
+    {
+      "line": 191,
+      "word": "Anh",
+      "next_word": "bước",
+      "context": "Anh bước xuống dưới.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 15
+    },
+    {
+      "line": 235,
+      "word": "Đêm",
+      "next_word": "mười",
+      "context": "\"Đêm mười lăm.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 15
+    },
+    {
+      "line": 239,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ mười lăm.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 15
+    },
+    {
+      "line": 37,
+      "word": "Đêm",
+      "next_word": ".",
+      "context": "Đêm.",
+      "word_count": 1,
+      "severity": "HIGH",
+      "ep": 16
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ mười sáu.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 16
+    },
+    {
+      "line": 47,
+      "word": "Cô",
+      "next_word": "lên",
+      "context": "Cô lên xe.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 16
+    },
+    {
+      "line": 57,
+      "word": "Cô",
+      "next_word": "gái",
+      "context": "Cô gái ngồi yên lặng.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 16
+    },
+    {
+      "line": 81,
+      "word": "Cô",
+      "next_word": "nói",
+      "context": "Cô nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 16
+    },
+    {
+      "line": 87,
+      "word": "Bà",
+      "next_word": "cụ",
+      "context": "Bà cụ khuất.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 16
+    },
+    {
+      "line": 89,
+      "word": "Cô",
+      "next_word": "gái",
+      "context": "Cô gái quay đầu lại.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 16
+    },
+    {
+      "line": 123,
+      "word": "Năm",
+      "next_word": "giờ",
+      "context": "Năm giờ sáng lên.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 16
+    },
+    {
+      "line": 135,
+      "word": "Anh",
+      "next_word": "Hùng",
+      "context": "\"Anh Hùng hiểu.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 16
+    },
+    {
+      "line": 153,
+      "word": "Cô",
+      "next_word": "gái",
+      "context": "Cô gái khẽ gật đầu.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 16
+    },
+    {
+      "line": 169,
+      "word": "Cô",
+      "next_word": "ôm",
+      "context": "Cô ôm chậu cúc.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 16
+    },
+    {
+      "line": 177,
+      "word": "Cô",
+      "next_word": "bước",
+      "context": "Cô bước xuống dưới.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 16
+    },
+    {
+      "line": 183,
+      "word": "Cô",
+      "next_word": "đến.",
+      "context": "Cô đến.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 16
+    },
+    {
+      "line": 223,
+      "word": "Đêm",
+      "next_word": "mười",
+      "context": "\"Đêm mười sáu.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 16
+    },
+    {
+      "line": 227,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ mười sáu.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 16
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ mười bảy.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 17
+    },
+    {
+      "line": 45,
+      "word": "Anh",
+      "next_word": "lên",
+      "context": "Anh lên bậc xe.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 17
+    },
+    {
+      "line": 55,
+      "word": "Anh",
+      "next_word": "ngồi",
+      "context": "Anh ngồi yên.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 17
+    },
+    {
+      "line": 65,
+      "word": "Anh",
+      "next_word": "đặt",
+      "context": "Anh đặt USB lên đùi.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 17
+    },
+    {
+      "line": 79,
+      "word": "Anh",
+      "next_word": "nói",
+      "context": "Anh nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 17
+    },
+    {
+      "line": 141,
+      "word": "Tối",
+      "next_word": "qua",
+      "context": "Tối qua ở đó.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 17
+    },
+    {
+      "line": 191,
+      "word": "Anh",
+      "next_word": "quỳ.",
+      "context": "Anh quỳ.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 17
+    },
+    {
+      "line": 229,
+      "word": "Đêm",
+      "next_word": "mười",
+      "context": "\"Đêm mười bảy.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 17
+    },
+    {
+      "line": 233,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ mười bảy.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 17
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ mười tám.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 18
+    },
+    {
+      "line": 45,
+      "word": "Cô",
+      "next_word": "vào",
+      "context": "Cô vào xe.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 18
+    },
+    {
+      "line": 55,
+      "word": "Cô",
+      "next_word": "gái",
+      "context": "Cô gái ngồi yên lặng.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 18
+    },
+    {
+      "line": 79,
+      "word": "Cô",
+      "next_word": "nói",
+      "context": "Cô nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 18
+    },
+    {
+      "line": 87,
+      "word": "Cô",
+      "next_word": "gái",
+      "context": "Cô gái quay đầu lại.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 18
+    },
+    {
+      "line": 101,
+      "word": "Anh",
+      "next_word": "chơi",
+      "context": "Anh chơi ghi-ta tốt.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 18
+    },
+    {
+      "line": 129,
+      "word": "Anh",
+      "next_word": "sẽ",
+      "context": "Anh sẽ chia tay em.'\"",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 18
+    },
+    {
+      "line": 179,
+      "word": "Cô",
+      "next_word": "gấp",
+      "context": "Cô gấp thư.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 18
+    },
+    {
+      "line": 187,
+      "word": "Cô",
+      "next_word": "bước",
+      "context": "Cô bước xuống dưới.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 18
+    },
+    {
+      "line": 193,
+      "word": "Cô",
+      "next_word": "lấy",
+      "context": "Cô lấy thư ra.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 18
+    },
+    {
+      "line": 231,
+      "word": "Đêm",
+      "next_word": "mười",
+      "context": "\"Đêm mười tám.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 18
+    },
+    {
+      "line": 235,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ mười tám.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 18
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ mười chín.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 19
+    },
+    {
+      "line": 45,
+      "word": "Cô",
+      "next_word": "bước",
+      "context": "Cô bước lên xe.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 19
+    },
+    {
+      "line": 57,
+      "word": "Cô",
+      "next_word": "gái",
+      "context": "Cô gái ngồi yên lặng.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 19
+    },
+    {
+      "line": 67,
+      "word": "Cô",
+      "next_word": "vuốt",
+      "context": "Cô vuốt một cánh cúc.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 19
+    },
+    {
+      "line": 81,
+      "word": "Cô",
+      "next_word": "nói",
+      "context": "Cô nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 19
+    },
+    {
+      "line": 89,
+      "word": "Cô",
+      "next_word": "gái",
+      "context": "Cô gái quay đầu lại.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 19
+    },
+    {
+      "line": 97,
+      "word": "Năm",
+      "next_word": "mươi",
+      "context": "Năm mươi tuổi.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 19
+    },
+    {
+      "line": 155,
+      "word": "Cô",
+      "next_word": "gái",
+      "context": "Cô gái khẽ gật đầu.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 19
+    },
+    {
+      "line": 171,
+      "word": "Cô",
+      "next_word": "đỡ",
+      "context": "Cô đỡ vòng cúc.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 19
+    },
+    {
+      "line": 179,
+      "word": "Cô",
+      "next_word": "bước",
+      "context": "Cô bước xuống dưới.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 19
+    },
+    {
+      "line": 185,
+      "word": "Cô",
+      "next_word": "đến.",
+      "context": "Cô đến.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 19
+    },
+    {
+      "line": 225,
+      "word": "Đêm",
+      "next_word": "mười",
+      "context": "\"Đêm mười chín.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 19
+    },
+    {
+      "line": 229,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ mười chín.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 19
+    },
+    {
+      "line": 234,
+      "word": "Đêm",
+      "next_word": "này",
+      "context": "Đêm này hoàn thành.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 19
+    },
+    {
+      "line": 242,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ mười chín.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 19
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ hai mươi.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 20
+    },
+    {
+      "line": 55,
+      "word": "Anh",
+      "next_word": "lên",
+      "context": "Anh lên xe.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 20
+    },
+    {
+      "line": 71,
+      "word": "Anh",
+      "next_word": "ngồi",
+      "context": "Anh ngồi bên Khải Phong.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 20
+    },
+    {
+      "line": 99,
+      "word": "Anh",
+      "next_word": "nói",
+      "context": "Anh nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 20
+    },
+    {
+      "line": 147,
+      "word": "Anh",
+      "next_word": "chúc",
+      "context": "Anh chúc em sống vui.'\"",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 20
+    },
+    {
+      "line": 272,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ hai mươi.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 20
+    },
+    {
+      "line": 274,
+      "word": "Đêm",
+      "next_word": "sau",
+      "context": "Đêm sau — chưa biết.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 20
+    },
+    {
+      "line": 278,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ hai mươi.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 20
+    },
+    {
+      "line": 278,
+      "word": "Mưa",
+      "next_word": "đã",
+      "context": "Mưa đã ngớt.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 20
+    },
+    {
+      "line": 37,
+      "word": "Đêm",
+      "next_word": "vắng",
+      "context": "Đêm vắng tanh.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 21
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ hai mươi mốt.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 21
+    },
+    {
+      "line": 49,
+      "word": "Anh",
+      "next_word": "lên",
+      "context": "Anh lên bậc xe.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 21
+    },
+    {
+      "line": 61,
+      "word": "Anh",
+      "next_word": "ngồi",
+      "context": "Anh ngồi yên.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 21
+    },
+    {
+      "line": 99,
+      "word": "Anh",
+      "next_word": "quay",
+      "context": "Anh quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 21
+    },
+    {
+      "line": 107,
+      "word": "Năm",
+      "next_word": "mươi",
+      "context": "Năm mươi tuổi.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 21
+    },
+    {
+      "line": 111,
+      "word": "Đêm",
+      "next_word": "tôi",
+      "context": "Đêm tôi sinh ra.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 21
+    },
+    {
+      "line": 193,
+      "word": "Anh",
+      "next_word": "đến",
+      "context": "Anh đến mộ.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 21
+    },
+    {
+      "line": 239,
+      "word": "Đêm",
+      "next_word": "hai",
+      "context": "\"Đêm hai mươi mốt.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 21
+    },
+    {
+      "line": 243,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ hai mươi mốt.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 21
+    },
+    {
+      "line": 37,
+      "word": "Đêm",
+      "next_word": "vừa",
+      "context": "Đêm vừa khuya.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 22
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ hai mươi hai.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 22
+    },
+    {
+      "line": 49,
+      "word": "Cô",
+      "next_word": "vào",
+      "context": "Cô vào xe.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 22
+    },
+    {
+      "line": 63,
+      "word": "Cô",
+      "next_word": "gái",
+      "context": "Cô gái ngồi yên lặng.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 22
+    },
+    {
+      "line": 99,
+      "word": "Cô",
+      "next_word": "quay",
+      "context": "Cô quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 22
+    },
+    {
+      "line": 193,
+      "word": "Cô",
+      "next_word": "bước",
+      "context": "Cô bước xuống dưới.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 22
+    },
+    {
+      "line": 199,
+      "word": "Cô",
+      "next_word": "bước",
+      "context": "Cô bước vào văn phòng.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 22
+    },
+    {
+      "line": 201,
+      "word": "Cô",
+      "next_word": "đến.",
+      "context": "Cô đến.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 22
+    },
+    {
+      "line": 243,
+      "word": "Đêm",
+      "next_word": "mưa.",
+      "context": "Đêm mưa.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 22
+    },
+    {
+      "line": 245,
+      "word": "Đêm",
+      "next_word": "hai",
+      "context": "\"Đêm hai mươi hai.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 22
+    },
+    {
+      "line": 249,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ hai mươi hai.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 22
+    },
+    {
+      "line": 37,
+      "word": "Mưa",
+      "next_word": "đã",
+      "context": "Mưa đã rơi từ chiều.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 23
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ hai mươi ba.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 23
+    },
+    {
+      "line": 49,
+      "word": "Anh",
+      "next_word": "bước",
+      "context": "Anh bước lên xe.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 23
+    },
+    {
+      "line": 61,
+      "word": "Anh",
+      "next_word": "ngồi",
+      "context": "Anh ngồi yên.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 23
+    },
+    {
+      "line": 71,
+      "word": "Anh",
+      "next_word": "đặt",
+      "context": "Anh đặt thư lên đùi.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 23
+    },
+    {
+      "line": 93,
+      "word": "Anh",
+      "next_word": "quay",
+      "context": "Anh quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 23
+    },
+    {
+      "line": 191,
+      "word": "Anh",
+      "next_word": "đến.",
+      "context": "Anh đến.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 23
+    },
+    {
+      "line": 241,
+      "word": "Đêm",
+      "next_word": "hai",
+      "context": "\"Đêm hai mươi ba.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 23
+    },
+    {
+      "line": 245,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ hai mươi ba.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 23
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ hai mươi tư.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 24
+    },
+    {
+      "line": 49,
+      "word": "Bà",
+      "next_word": "lên",
+      "context": "Bà lên xe.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 24
+    },
+    {
+      "line": 61,
+      "word": "Bà",
+      "next_word": "ngồi",
+      "context": "Bà ngồi yên.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 24
+    },
+    {
+      "line": 73,
+      "word": "Bà",
+      "next_word": "lật",
+      "context": "Bà lật vở.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 24
+    },
+    {
+      "line": 97,
+      "word": "Bà",
+      "next_word": "quay",
+      "context": "Bà quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 24
+    },
+    {
+      "line": 135,
+      "word": "Chị",
+      "next_word": "Lan",
+      "context": "\"Chị Lan không nói gì.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 24
+    },
+    {
+      "line": 151,
+      "word": "Chị",
+      "next_word": "Lan",
+      "context": "Chị Lan không nhìn em.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 24
+    },
+    {
+      "line": 203,
+      "word": "Bà",
+      "next_word": "đến.",
+      "context": "Bà đến.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 24
+    },
+    {
+      "line": 243,
+      "word": "Đêm",
+      "next_word": "mưa.",
+      "context": "Đêm mưa.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 24
+    },
+    {
+      "line": 253,
+      "word": "Đêm",
+      "next_word": "hai",
+      "context": "\"Đêm hai mươi tư.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 24
+    },
+    {
+      "line": 257,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ hai mươi tư.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 24
+    },
+    {
+      "line": 37,
+      "word": "Đêm",
+      "next_word": ".",
+      "context": "Đêm.",
+      "word_count": 1,
+      "severity": "HIGH",
+      "ep": 25
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ hai mươi lăm.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 25
+    },
+    {
+      "line": 57,
+      "word": "Anh",
+      "next_word": "lên",
+      "context": "Anh lên bậc xe.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 25
+    },
+    {
+      "line": 71,
+      "word": "Anh",
+      "next_word": "ngồi",
+      "context": "Anh ngồi yên.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 25
+    },
+    {
+      "line": 107,
+      "word": "Anh",
+      "next_word": "quay",
+      "context": "Anh quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 25
+    },
+    {
+      "line": 245,
+      "word": "Đêm",
+      "next_word": "mưa.",
+      "context": "Đêm mưa.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 25
+    },
+    {
+      "line": 259,
+      "word": "Anh",
+      "next_word": "là",
+      "context": "\"Anh là Khải Phong à?",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 25
+    },
+    {
+      "line": 259,
+      "word": "Anh",
+      "next_word": "đến",
+      "context": "Anh đến gấp.\"",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 25
+    },
+    {
+      "line": 265,
+      "word": "Đêm",
+      "next_word": "hai",
+      "context": "\"Đêm hai mươi lăm.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 25
+    },
+    {
+      "line": 269,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ hai mươi lăm.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 25
+    },
+    {
+      "line": 269,
+      "word": "Mưa",
+      "next_word": "đã",
+      "context": "Mưa đã hết rồi.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 25
+    },
+    {
+      "line": 37,
+      "word": "Đêm",
+      "next_word": ".",
+      "context": "Đêm.",
+      "word_count": 1,
+      "severity": "HIGH",
+      "ep": 26
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ hai mươi sáu.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 26
+    },
+    {
+      "line": 49,
+      "word": "Anh",
+      "next_word": "vào",
+      "context": "Anh vào xe.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 26
+    },
+    {
+      "line": 61,
+      "word": "Anh",
+      "next_word": "ngồi",
+      "context": "Anh ngồi yên.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 26
+    },
+    {
+      "line": 99,
+      "word": "Anh",
+      "next_word": "quay",
+      "context": "Anh quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 26
+    },
+    {
+      "line": 163,
+      "word": "Anh",
+      "next_word": "Lâm",
+      "context": "Anh Lâm về quê.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 26
+    },
+    {
+      "line": 195,
+      "word": "Anh",
+      "next_word": "bước",
+      "context": "Anh bước xuống dưới.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 26
+    },
+    {
+      "line": 229,
+      "word": "Năm",
+      "next_word": "tốt",
+      "context": "Năm tốt nghiệp.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 26
+    },
+    {
+      "line": 243,
+      "word": "Đêm",
+      "next_word": "hai",
+      "context": "\"Đêm hai mươi sáu.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 26
+    },
+    {
+      "line": 247,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ hai mươi sáu.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 26
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ hai mươi bảy.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 27
+    },
+    {
+      "line": 43,
+      "word": "Mưa",
+      "next_word": "rơi",
+      "context": "Mưa rơi nhẹ nhàng.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 27
+    },
+    {
+      "line": 49,
+      "word": "Cô",
+      "next_word": "bước",
+      "context": "Cô bước lên xe.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 27
+    },
+    {
+      "line": 61,
+      "word": "Cô",
+      "next_word": "gái",
+      "context": "Cô gái ngồi yên lặng.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 27
+    },
+    {
+      "line": 89,
+      "word": "Cô",
+      "next_word": "nói",
+      "context": "Cô nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 27
+    },
+    {
+      "line": 97,
+      "word": "Cô",
+      "next_word": "quay",
+      "context": "Cô quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 27
+    },
+    {
+      "line": 161,
+      "word": "Tối",
+      "next_word": "em",
+      "context": "\"Tối em quên gọi.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 27
+    },
+    {
+      "line": 163,
+      "word": "Anh",
+      "next_word": "xin",
+      "context": "Anh xin báo em.'\"",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 27
+    },
+    {
+      "line": 205,
+      "word": "Cô",
+      "next_word": "bước",
+      "context": "Cô bước xuống dưới.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 27
+    },
+    {
+      "line": 211,
+      "word": "Cô",
+      "next_word": "đến.",
+      "context": "Cô đến.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 27
+    },
+    {
+      "line": 255,
+      "word": "Đêm",
+      "next_word": "hai",
+      "context": "\"Đêm hai mươi bảy.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 27
+    },
+    {
+      "line": 259,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ hai mươi bảy.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 27
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ hai mươi tám.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 28
+    },
+    {
+      "line": 49,
+      "word": "Anh",
+      "next_word": "lên",
+      "context": "Anh lên xe.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 28
+    },
+    {
+      "line": 61,
+      "word": "Anh",
+      "next_word": "ngồi",
+      "context": "Anh ngồi yên.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 28
+    },
+    {
+      "line": 87,
+      "word": "Anh",
+      "next_word": "nói",
+      "context": "Anh nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 28
+    },
+    {
+      "line": 95,
+      "word": "Anh",
+      "next_word": "quay",
+      "context": "Anh quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 28
+    },
+    {
+      "line": 103,
+      "word": "Năm",
+      "next_word": "mươi",
+      "context": "Năm mươi lăm tuổi.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 28
+    },
+    {
+      "line": 107,
+      "word": "Năm",
+      "next_word": "mươi",
+      "context": "Năm mươi ba tuổi.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 28
+    },
+    {
+      "line": 197,
+      "word": "Anh",
+      "next_word": "bước",
+      "context": "Anh bước xuống dưới.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 28
+    },
+    {
+      "line": 203,
+      "word": "Anh",
+      "next_word": "đến.",
+      "context": "Anh đến.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 28
+    },
+    {
+      "line": 227,
+      "word": "Anh",
+      "next_word": "chỉ",
+      "context": "Anh chỉ tha qua Chúa.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 28
+    },
+    {
+      "line": 249,
+      "word": "Đêm",
+      "next_word": "hai",
+      "context": "\"Đêm hai mươi tám.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 28
+    },
+    {
+      "line": 253,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ hai mươi tám.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 28
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ hai mươi chín.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 29
+    },
+    {
+      "line": 43,
+      "word": "Gió",
+      "next_word": "biển",
+      "context": "Gió biển mặn.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 29
+    },
+    {
+      "line": 49,
+      "word": "Cô",
+      "next_word": "lên",
+      "context": "Cô lên bậc xe.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 29
+    },
+    {
+      "line": 63,
+      "word": "Cô",
+      "next_word": "gái",
+      "context": "Cô gái ngồi yên lặng.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 29
+    },
+    {
+      "line": 91,
+      "word": "Cô",
+      "next_word": "nói",
+      "context": "Cô nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 29
+    },
+    {
+      "line": 99,
+      "word": "Cô",
+      "next_word": "quay",
+      "context": "Cô quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 29
+    },
+    {
+      "line": 191,
+      "word": "Cô",
+      "next_word": "bước",
+      "context": "Cô bước xuống dưới.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 29
+    },
+    {
+      "line": 197,
+      "word": "Cô",
+      "next_word": "đến",
+      "context": "Cô đến quầy.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 29
+    },
+    {
+      "line": 228,
+      "word": "Năm",
+      "next_word": "tốt",
+      "context": "Năm tốt nghiệp.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 29
+    },
+    {
+      "line": 244,
+      "word": "Đêm",
+      "next_word": "hai",
+      "context": "\"Đêm hai mươi chín.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 29
+    },
+    {
+      "line": 248,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ hai mươi chín.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 29
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ ba mươi.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 30
+    },
+    {
+      "line": 65,
+      "word": "Anh",
+      "next_word": "vào",
+      "context": "Anh vào xe.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 30
+    },
+    {
+      "line": 81,
+      "word": "Anh",
+      "next_word": "ngồi",
+      "context": "Anh ngồi bên Khải Phong.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 30
+    },
+    {
+      "line": 113,
+      "word": "Anh",
+      "next_word": "nói",
+      "context": "Anh nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 30
+    },
+    {
+      "line": 121,
+      "word": "Anh",
+      "next_word": "quay",
+      "context": "Anh quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 30
+    },
+    {
+      "line": 135,
+      "word": "Năm",
+      "next_word": "mươi",
+      "context": "Năm mươi tám tuổi.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 30
+    },
+    {
+      "line": 211,
+      "word": "Anh",
+      "next_word": "mỉm",
+      "context": "Anh mỉm cười nhẹ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 30
+    },
+    {
+      "line": 227,
+      "word": "Anh",
+      "next_word": "đến.",
+      "context": "Anh đến.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 30
+    },
+    {
+      "line": 288,
+      "word": "Đêm",
+      "next_word": "ba",
+      "context": "\"Đêm ba mươi — milestone.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 30
+    },
+    {
+      "line": 296,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ ba mươi.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 30
+    },
+    {
+      "line": 296,
+      "word": "Mưa",
+      "next_word": "đã",
+      "context": "Mưa đã hết rồi.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 30
+    },
+    {
+      "line": 37,
+      "word": "Sương",
+      "next_word": "lất",
+      "context": "Sương lất phất.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 31
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ ba mươi mốt.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 31
+    },
+    {
+      "line": 49,
+      "word": "Bà",
+      "next_word": "bước",
+      "context": "Bà bước lên xe.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 31
+    },
+    {
+      "line": 61,
+      "word": "Bà",
+      "next_word": "ngồi",
+      "context": "Bà ngồi yên.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 31
+    },
+    {
+      "line": 87,
+      "word": "Bà",
+      "next_word": "nói",
+      "context": "Bà nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 31
+    },
+    {
+      "line": 95,
+      "word": "Bà",
+      "next_word": "quay",
+      "context": "Bà quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 31
+    },
+    {
+      "line": 103,
+      "word": "Năm",
+      "next_word": "mươi",
+      "context": "Năm mươi lăm tuổi.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 31
+    },
+    {
+      "line": 179,
+      "word": "Bà",
+      "next_word": "bước",
+      "context": "Bà bước xuống dưới.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 31
+    },
+    {
+      "line": 185,
+      "word": "Bà",
+      "next_word": "đến.",
+      "context": "Bà đến.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 31
+    },
+    {
+      "line": 209,
+      "word": "Năm",
+      "next_word": "vật",
+      "context": "Năm vật cúc trong túi.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 31
+    },
+    {
+      "line": 213,
+      "word": "Mưa",
+      "next_word": "rất",
+      "context": "Mưa rất to.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 31
+    },
+    {
+      "line": 213,
+      "word": "Đêm",
+      "next_word": ".",
+      "context": "Đêm.",
+      "word_count": 1,
+      "severity": "HIGH",
+      "ep": 31
+    },
+    {
+      "line": 215,
+      "word": "Ngày",
+      "next_word": "bao",
+      "context": "Ngày bao nhiêu?",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 31
+    },
+    {
+      "line": 219,
+      "word": "Ngày",
+      "next_word": "mười",
+      "context": "Ngày mười hai.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 31
+    },
+    {
+      "line": 225,
+      "word": "Đêm",
+      "next_word": "ba",
+      "context": "\"Đêm ba mươi mốt.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 31
+    },
+    {
+      "line": 241,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ ba mươi mốt.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 31
+    },
+    {
+      "line": 37,
+      "word": "Đêm",
+      "next_word": "vừa",
+      "context": "Đêm vừa khuya.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 32
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ ba mươi hai.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 32
+    },
+    {
+      "line": 49,
+      "word": "Anh",
+      "next_word": "lên",
+      "context": "Anh lên xe.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 32
+    },
+    {
+      "line": 61,
+      "word": "Anh",
+      "next_word": "ngồi",
+      "context": "Anh ngồi yên.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 32
+    },
+    {
+      "line": 89,
+      "word": "Anh",
+      "next_word": "nói",
+      "context": "Anh nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 32
+    },
+    {
+      "line": 97,
+      "word": "Anh",
+      "next_word": "quay",
+      "context": "Anh quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 32
+    },
+    {
+      "line": 187,
+      "word": "Anh",
+      "next_word": "bước",
+      "context": "Anh bước xuống dưới.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 32
+    },
+    {
+      "line": 193,
+      "word": "Anh",
+      "next_word": "đến",
+      "context": "Anh đến mộ Nhung.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 32
+    },
+    {
+      "line": 239,
+      "word": "Đêm",
+      "next_word": "ba",
+      "context": "\"Đêm ba mươi hai.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 32
+    },
+    {
+      "line": 243,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ ba mươi hai.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 32
+    },
+    {
+      "line": 37,
+      "word": "Mưa",
+      "next_word": "đã",
+      "context": "Mưa đã rơi từ chiều.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 33
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ ba mươi ba.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 33
+    },
+    {
+      "line": 49,
+      "word": "Cô",
+      "next_word": "lên",
+      "context": "Cô lên bậc xe.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 33
+    },
+    {
+      "line": 61,
+      "word": "Cô",
+      "next_word": "gái",
+      "context": "Cô gái ngồi yên lặng.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 33
+    },
+    {
+      "line": 73,
+      "word": "Cô",
+      "next_word": "đặt",
+      "context": "Cô đặt vé lên đùi.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 33
+    },
+    {
+      "line": 89,
+      "word": "Cô",
+      "next_word": "nói",
+      "context": "Cô nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 33
+    },
+    {
+      "line": 97,
+      "word": "Cô",
+      "next_word": "ghế",
+      "context": "Cô ghế chín quay đầu.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 33
+    },
+    {
+      "line": 191,
+      "word": "Cô",
+      "next_word": "bước",
+      "context": "Cô bước xuống dưới.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 33
+    },
+    {
+      "line": 197,
+      "word": "Cô",
+      "next_word": "đến.",
+      "context": "Cô đến.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 33
+    },
+    {
+      "line": 235,
+      "word": "Đêm",
+      "next_word": "ba",
+      "context": "\"Đêm ba mươi ba.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 33
+    },
+    {
+      "line": 239,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ ba mươi ba.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 33
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ ba mươi tư.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 34
+    },
+    {
+      "line": 47,
+      "word": "Anh",
+      "next_word": "vào",
+      "context": "Anh vào xe.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 34
+    },
+    {
+      "line": 59,
+      "word": "Anh",
+      "next_word": "ngồi",
+      "context": "Anh ngồi yên.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 34
+    },
+    {
+      "line": 87,
+      "word": "Anh",
+      "next_word": "nói",
+      "context": "Anh nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 34
+    },
+    {
+      "line": 95,
+      "word": "Anh",
+      "next_word": "quay",
+      "context": "Anh quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 34
+    },
+    {
+      "line": 103,
+      "word": "Năm",
+      "next_word": "mươi",
+      "context": "Năm mươi tuổi.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 34
+    },
+    {
+      "line": 183,
+      "word": "Anh",
+      "next_word": "bước",
+      "context": "Anh bước xuống dưới.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 34
+    },
+    {
+      "line": 189,
+      "word": "Anh",
+      "next_word": "đến.",
+      "context": "Anh đến.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 34
+    },
+    {
+      "line": 239,
+      "word": "Ngày",
+      "next_word": "đầu",
+      "context": "Ngày đầu tiên.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 34
+    },
+    {
+      "line": 243,
+      "word": "Đêm",
+      "next_word": "ba",
+      "context": "\"Đêm ba mươi tư.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 34
+    },
+    {
+      "line": 247,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ ba mươi tư.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 34
+    },
+    {
+      "line": 37,
+      "word": "Đêm",
+      "next_word": ".",
+      "context": "Đêm.",
+      "word_count": 1,
+      "severity": "HIGH",
+      "ep": 35
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ ba mươi lăm.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 35
+    },
+    {
+      "line": 57,
+      "word": "Anh",
+      "next_word": "bước",
+      "context": "Anh bước lên xe.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 35
+    },
+    {
+      "line": 73,
+      "word": "Anh",
+      "next_word": "ngồi",
+      "context": "Anh ngồi yên.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 35
+    },
+    {
+      "line": 99,
+      "word": "Anh",
+      "next_word": "nói",
+      "context": "Anh nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 35
+    },
+    {
+      "line": 107,
+      "word": "Anh",
+      "next_word": "quay",
+      "context": "Anh quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 35
+    },
+    {
+      "line": 189,
+      "word": "Anh",
+      "next_word": "bước",
+      "context": "Anh bước xuống dưới.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 35
+    },
+    {
+      "line": 195,
+      "word": "Anh",
+      "next_word": "đến.",
+      "context": "Anh đến.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 35
+    },
+    {
+      "line": 245,
+      "word": "Đêm",
+      "next_word": "ba",
+      "context": "\"Đêm ba mươi lăm.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 35
+    },
+    {
+      "line": 249,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ ba mươi lăm.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 35
+    },
+    {
+      "line": 37,
+      "word": "Đêm",
+      "next_word": ".",
+      "context": "Đêm.",
+      "word_count": 1,
+      "severity": "HIGH",
+      "ep": 36
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ ba mươi sáu.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 36
+    },
+    {
+      "line": 49,
+      "word": "Anh",
+      "next_word": "lên",
+      "context": "Anh lên xe.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 36
+    },
+    {
+      "line": 61,
+      "word": "Anh",
+      "next_word": "ngồi",
+      "context": "Anh ngồi yên.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 36
+    },
+    {
+      "line": 89,
+      "word": "Anh",
+      "next_word": "nói",
+      "context": "Anh nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 36
+    },
+    {
+      "line": 97,
+      "word": "Anh",
+      "next_word": "quay",
+      "context": "Anh quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 36
+    },
+    {
+      "line": 193,
+      "word": "Anh",
+      "next_word": "đến.",
+      "context": "Anh đến.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 36
+    },
+    {
+      "line": 239,
+      "word": "Đêm",
+      "next_word": "ba",
+      "context": "\"Đêm ba mươi sáu.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 36
+    },
+    {
+      "line": 243,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ ba mươi sáu.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 36
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ ba mươi bảy.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 37
+    },
+    {
+      "line": 43,
+      "word": "Mưa",
+      "next_word": "đã",
+      "context": "Mưa đã ngớt.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 37
+    },
+    {
+      "line": 49,
+      "word": "Cô",
+      "next_word": "lên",
+      "context": "Cô lên bậc xe.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 37
+    },
+    {
+      "line": 61,
+      "word": "Cô",
+      "next_word": "gái",
+      "context": "Cô gái ngồi yên lặng.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 37
+    },
+    {
+      "line": 87,
+      "word": "Cô",
+      "next_word": "nói",
+      "context": "Cô nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 37
+    },
+    {
+      "line": 95,
+      "word": "Cô",
+      "next_word": "quay",
+      "context": "Cô quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 37
+    },
+    {
+      "line": 173,
+      "word": "Cô",
+      "next_word": "bước",
+      "context": "Cô bước xuống dưới.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 37
+    },
+    {
+      "line": 179,
+      "word": "Cô",
+      "next_word": "đến.",
+      "context": "Cô đến.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 37
+    },
+    {
+      "line": 225,
+      "word": "Đêm",
+      "next_word": "ba",
+      "context": "\"Đêm ba mươi bảy.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 37
+    },
+    {
+      "line": 229,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ ba mươi bảy.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 37
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ ba mươi tám.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 38
+    },
+    {
+      "line": 43,
+      "word": "Mưa",
+      "next_word": "rải",
+      "context": "Mưa rải nhẹ nhàng.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 38
+    },
+    {
+      "line": 49,
+      "word": "Anh",
+      "next_word": "vào",
+      "context": "Anh vào xe.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 38
+    },
+    {
+      "line": 61,
+      "word": "Anh",
+      "next_word": "ngồi",
+      "context": "Anh ngồi yên.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 38
+    },
+    {
+      "line": 89,
+      "word": "Anh",
+      "next_word": "nói",
+      "context": "Anh nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 38
+    },
+    {
+      "line": 97,
+      "word": "Anh",
+      "next_word": "quay",
+      "context": "Anh quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 38
+    },
+    {
+      "line": 185,
+      "word": "Anh",
+      "next_word": "bước",
+      "context": "Anh bước xuống dưới.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 38
+    },
+    {
+      "line": 191,
+      "word": "Anh",
+      "next_word": "đến.",
+      "context": "Anh đến.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 38
+    },
+    {
+      "line": 191,
+      "word": "Anh",
+      "next_word": "đặt",
+      "context": "Anh đặt tiền cước.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 38
+    },
+    {
+      "line": 237,
+      "word": "Đêm",
+      "next_word": "ba",
+      "context": "\"Đêm ba mươi tám.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 38
+    },
+    {
+      "line": 241,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ ba mươi tám.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 38
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ ba mươi chín.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 39
+    },
+    {
+      "line": 49,
+      "word": "Bà",
+      "next_word": "bước",
+      "context": "Bà bước lên xe.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 39
+    },
+    {
+      "line": 61,
+      "word": "Bà",
+      "next_word": "ngồi",
+      "context": "Bà ngồi yên.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 39
+    },
+    {
+      "line": 89,
+      "word": "Bà",
+      "next_word": "nói",
+      "context": "Bà nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 39
+    },
+    {
+      "line": 97,
+      "word": "Bà",
+      "next_word": "quay",
+      "context": "Bà quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 39
+    },
+    {
+      "line": 105,
+      "word": "Năm",
+      "next_word": "mươi",
+      "context": "Năm mươi lăm tuổi.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 39
+    },
+    {
+      "line": 119,
+      "word": "Năm",
+      "next_word": "tám",
+      "context": "\"Năm tám — em bận.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 39
+    },
+    {
+      "line": 173,
+      "word": "Bà",
+      "next_word": "bước",
+      "context": "Bà bước xuống dưới.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 39
+    },
+    {
+      "line": 179,
+      "word": "Bà",
+      "next_word": "đến.",
+      "context": "Bà đến.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 39
+    },
+    {
+      "line": 223,
+      "word": "Đêm",
+      "next_word": "ba",
+      "context": "\"Đêm ba mươi chín.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 39
+    },
+    {
+      "line": 227,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ ba mươi chín.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 39
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ bốn mươi.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 40
+    },
+    {
+      "line": 61,
+      "word": "Anh",
+      "next_word": "lên",
+      "context": "Anh lên xe.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 40
+    },
+    {
+      "line": 75,
+      "word": "Anh",
+      "next_word": "ngồi",
+      "context": "Anh ngồi bên Khải Phong.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 40
+    },
+    {
+      "line": 85,
+      "word": "Anh",
+      "next_word": "quay",
+      "context": "Anh quay sang Khải Phong.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 40
+    },
+    {
+      "line": 89,
+      "word": "Anh",
+      "next_word": "có",
+      "context": "Anh có nhớ em không?\"",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 40
+    },
+    {
+      "line": 155,
+      "word": "Anh",
+      "next_word": "cảm",
+      "context": "Anh cảm ơn em.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 40
+    },
+    {
+      "line": 267,
+      "word": "Đêm",
+      "next_word": "bốn",
+      "context": "\"Đêm bốn mươi — milestone.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 40
+    },
+    {
+      "line": 275,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ bốn mươi.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 40
+    },
+    {
+      "line": 277,
+      "word": "Anh",
+      "next_word": "gái",
+      "context": "Anh gái Hạ Nhi đến.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 40
+    },
+    {
+      "line": 285,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ bốn mươi.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 40
+    },
+    {
+      "line": 37,
+      "word": "Đêm",
+      "next_word": ".",
+      "context": "Đêm.",
+      "word_count": 1,
+      "severity": "HIGH",
+      "ep": 41
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ bốn mươi mốt.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 41
+    },
+    {
+      "line": 47,
+      "word": "Cô",
+      "next_word": "lên",
+      "context": "Cô lên bậc xe.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 41
+    },
+    {
+      "line": 59,
+      "word": "Cô",
+      "next_word": "gái",
+      "context": "Cô gái ngồi yên lặng.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 41
+    },
+    {
+      "line": 87,
+      "word": "Cô",
+      "next_word": "nói",
+      "context": "Cô nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 41
+    },
+    {
+      "line": 95,
+      "word": "Cô",
+      "next_word": "quay",
+      "context": "Cô quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 41
+    },
+    {
+      "line": 181,
+      "word": "Cô",
+      "next_word": "bước",
+      "context": "Cô bước xuống dưới.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 41
+    },
+    {
+      "line": 187,
+      "word": "Cô",
+      "next_word": "đến.",
+      "context": "Cô đến.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 41
+    },
+    {
+      "line": 229,
+      "word": "Đêm",
+      "next_word": "bốn",
+      "context": "\"Đêm bốn mươi mốt.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 41
+    },
+    {
+      "line": 233,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ bốn mươi mốt.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 41
+    },
+    {
+      "line": 243,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ bốn mươi mốt.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 41
+    },
+    {
+      "line": 37,
+      "word": "Đêm",
+      "next_word": "vừa",
+      "context": "Đêm vừa khuya.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 42
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ bốn mươi hai.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 42
+    },
+    {
+      "line": 47,
+      "word": "Anh",
+      "next_word": "vào",
+      "context": "Anh vào xe.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 42
+    },
+    {
+      "line": 59,
+      "word": "Anh",
+      "next_word": "ngồi",
+      "context": "Anh ngồi yên.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 42
+    },
+    {
+      "line": 87,
+      "word": "Anh",
+      "next_word": "nói",
+      "context": "Anh nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 42
+    },
+    {
+      "line": 95,
+      "word": "Anh",
+      "next_word": "quay",
+      "context": "Anh quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 42
+    },
+    {
+      "line": 179,
+      "word": "Anh",
+      "next_word": "bước",
+      "context": "Anh bước xuống dưới.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 42
+    },
+    {
+      "line": 185,
+      "word": "Anh",
+      "next_word": "đến.",
+      "context": "Anh đến.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 42
+    },
+    {
+      "line": 227,
+      "word": "Đêm",
+      "next_word": "bốn",
+      "context": "\"Đêm bốn mươi hai.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 42
+    },
+    {
+      "line": 231,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ bốn mươi hai.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 42
+    },
+    {
+      "line": 241,
+      "word": "Đêm",
+      "next_word": "bốn",
+      "context": "Đêm bốn mươi hai.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 42
+    },
+    {
+      "line": 249,
+      "word": "Đêm",
+      "next_word": "này",
+      "context": "Đêm này dài.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 42
+    },
+    {
+      "line": 37,
+      "word": "Mưa",
+      "next_word": "đã",
+      "context": "Mưa đã rơi từ chiều.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 43
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ bốn mươi ba.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 43
+    },
+    {
+      "line": 47,
+      "word": "Anh",
+      "next_word": "bước",
+      "context": "Anh bước lên xe.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 43
+    },
+    {
+      "line": 59,
+      "word": "Anh",
+      "next_word": "ngồi",
+      "context": "Anh ngồi yên.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 43
+    },
+    {
+      "line": 87,
+      "word": "Anh",
+      "next_word": "nói",
+      "context": "Anh nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 43
+    },
+    {
+      "line": 95,
+      "word": "Anh",
+      "next_word": "quay",
+      "context": "Anh quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 43
+    },
+    {
+      "line": 103,
+      "word": "Năm",
+      "next_word": "mươi",
+      "context": "Năm mươi tuổi.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 43
+    },
+    {
+      "line": 139,
+      "word": "Anh",
+      "next_word": "ở",
+      "context": "Anh ở xã bên.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 43
+    },
+    {
+      "line": 177,
+      "word": "Anh",
+      "next_word": "bước",
+      "context": "Anh bước xuống dưới.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 43
+    },
+    {
+      "line": 221,
+      "word": "Đêm",
+      "next_word": "bốn",
+      "context": "\"Đêm bốn mươi ba.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 43
+    },
+    {
+      "line": 225,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ bốn mươi ba.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 43
+    },
+    {
+      "line": 237,
+      "word": "Đêm",
+      "next_word": "bốn",
+      "context": "Đêm bốn mươi ba.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 43
+    },
+    {
+      "line": 249,
+      "word": "Đêm",
+      "next_word": "chưa",
+      "context": "Đêm chưa sáng lên.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 43
+    },
+    {
+      "line": 41,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ bốn mươi tư.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 44
+    },
+    {
+      "line": 49,
+      "word": "Bà",
+      "next_word": "lên",
+      "context": "Bà lên xe.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 44
+    },
+    {
+      "line": 61,
+      "word": "Bà",
+      "next_word": "ngồi",
+      "context": "Bà ngồi yên.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 44
+    },
+    {
+      "line": 89,
+      "word": "Bà",
+      "next_word": "nói",
+      "context": "Bà nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 44
+    },
+    {
+      "line": 97,
+      "word": "Bà",
+      "next_word": "quay",
+      "context": "Bà quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 44
+    },
+    {
+      "line": 105,
+      "word": "Năm",
+      "next_word": "mươi",
+      "context": "Năm mươi hai tuổi.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 44
+    },
+    {
+      "line": 151,
+      "word": "Bà",
+      "next_word": "mất",
+      "context": "Bà mất sáng hôm sau.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 44
+    },
+    {
+      "line": 173,
+      "word": "Bà",
+      "next_word": "bước",
+      "context": "Bà bước xuống dưới.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 44
+    },
+    {
+      "line": 179,
+      "word": "Bà",
+      "next_word": "đến.",
+      "context": "Bà đến.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 44
+    },
+    {
+      "line": 183,
+      "word": "Bà",
+      "next_word": "Sáu",
+      "context": "Bà Sáu tan ra.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 44
+    },
+    {
+      "line": 211,
+      "word": "Anh",
+      "next_word": "đã",
+      "context": "Anh đã sai.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 44
+    },
+    {
+      "line": 213,
+      "word": "Anh",
+      "next_word": "sống",
+      "context": "Anh sống Sài Gòn.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 44
+    },
+    {
+      "line": 215,
+      "word": "Đêm",
+      "next_word": "bốn",
+      "context": "\"Đêm bốn mươi tư.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 44
+    },
+    {
+      "line": 219,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ bốn mươi tư.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 44
+    },
+    {
+      "line": 237,
+      "word": "Anh",
+      "next_word": "nhỏ",
+      "context": "Anh nhỏ — anh khóc.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 44
+    },
+    {
+      "line": 37,
+      "word": "Đêm",
+      "next_word": ".",
+      "context": "Đêm.",
+      "word_count": 1,
+      "severity": "HIGH",
+      "ep": 45
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ bốn mươi lăm.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 45
+    },
+    {
+      "line": 53,
+      "word": "Anh",
+      "next_word": "lên",
+      "context": "Anh lên bậc xe.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 45
+    },
+    {
+      "line": 65,
+      "word": "Anh",
+      "next_word": "ngồi",
+      "context": "Anh ngồi yên.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 45
+    },
+    {
+      "line": 93,
+      "word": "Anh",
+      "next_word": "nói",
+      "context": "Anh nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 45
+    },
+    {
+      "line": 101,
+      "word": "Anh",
+      "next_word": "quay",
+      "context": "Anh quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 45
+    },
+    {
+      "line": 147,
+      "word": "Đêm",
+      "next_word": "nay",
+      "context": "\"Đêm nay — em quyết.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 45
+    },
+    {
+      "line": 179,
+      "word": "Anh",
+      "next_word": "bước",
+      "context": "Anh bước xuống dưới.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 45
+    },
+    {
+      "line": 185,
+      "word": "Anh",
+      "next_word": "đến.",
+      "context": "Anh đến.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 45
+    },
+    {
+      "line": 239,
+      "word": "Đêm",
+      "next_word": "bốn",
+      "context": "\"Đêm bốn mươi lăm.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 45
+    },
+    {
+      "line": 243,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ bốn mươi lăm.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 45
+    },
+    {
+      "line": 245,
+      "word": "Anh",
+      "next_word": "chỉ",
+      "context": "Anh chỉ cần check-in.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 45
+    },
+    {
+      "line": 249,
+      "word": "Anh",
+      "next_word": "đã",
+      "context": "Anh đã trả tiền vé.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 45
+    },
+    {
+      "line": 253,
+      "word": "Anh",
+      "next_word": "đã",
+      "context": "Anh đã sai.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 45
+    },
+    {
+      "line": 37,
+      "word": "Đêm",
+      "next_word": ".",
+      "context": "Đêm.",
+      "word_count": 1,
+      "severity": "HIGH",
+      "ep": 46
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ bốn mươi sáu.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 46
+    },
+    {
+      "line": 43,
+      "word": "Mưa",
+      "next_word": "rải",
+      "context": "Mưa rải nhẹ nhàng.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 46
+    },
+    {
+      "line": 47,
+      "word": "Bà",
+      "next_word": "vào",
+      "context": "Bà vào xe.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 46
+    },
+    {
+      "line": 59,
+      "word": "Bà",
+      "next_word": "ngồi",
+      "context": "Bà ngồi yên.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 46
+    },
+    {
+      "line": 87,
+      "word": "Bà",
+      "next_word": "nói",
+      "context": "Bà nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 46
+    },
+    {
+      "line": 95,
+      "word": "Bà",
+      "next_word": "quay",
+      "context": "Bà quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 46
+    },
+    {
+      "line": 151,
+      "word": "Bà",
+      "next_word": "Hảo",
+      "context": "Bà Hảo gật.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 46
+    },
+    {
+      "line": 167,
+      "word": "Bà",
+      "next_word": "Hảo",
+      "context": "Bà Hảo ôm túi cát.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 46
+    },
+    {
+      "line": 175,
+      "word": "Bà",
+      "next_word": "bước",
+      "context": "Bà bước xuống dưới.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 46
+    },
+    {
+      "line": 179,
+      "word": "Bà",
+      "next_word": "đến",
+      "context": "Bà đến bục thờ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 46
+    },
+    {
+      "line": 185,
+      "word": "Bà",
+      "next_word": "Hảo",
+      "context": "Bà Hảo ngẩng đầu.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 46
+    },
+    {
+      "line": 225,
+      "word": "Đêm",
+      "next_word": "bốn",
+      "context": "\"Đêm bốn mươi sáu.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 46
+    },
+    {
+      "line": 229,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ bốn mươi sáu.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 46
+    },
+    {
+      "line": 241,
+      "word": "Anh",
+      "next_word": "chỉ",
+      "context": "Anh chỉ ngại.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 46
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ bốn mươi bảy.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 47
+    },
+    {
+      "line": 47,
+      "word": "Cô",
+      "next_word": "bước",
+      "context": "Cô bước lên xe.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 47
+    },
+    {
+      "line": 59,
+      "word": "Cô",
+      "next_word": "gái",
+      "context": "Cô gái ngồi yên lặng.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 47
+    },
+    {
+      "line": 85,
+      "word": "Cô",
+      "next_word": "nói",
+      "context": "Cô nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 47
+    },
+    {
+      "line": 93,
+      "word": "Cô",
+      "next_word": "quay",
+      "context": "Cô quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 47
+    },
+    {
+      "line": 121,
+      "word": "Đêm",
+      "next_word": "em",
+      "context": "\"Đêm em đi ngủ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 47
+    },
+    {
+      "line": 167,
+      "word": "Cô",
+      "next_word": "bước",
+      "context": "Cô bước xuống dưới.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 47
+    },
+    {
+      "line": 171,
+      "word": "Cô",
+      "next_word": "đến.",
+      "context": "Cô đến.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 47
+    },
+    {
+      "line": 211,
+      "word": "Đêm",
+      "next_word": "bốn",
+      "context": "\"Đêm bốn mươi bảy.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 47
+    },
+    {
+      "line": 215,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ bốn mươi bảy.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 47
+    },
+    {
+      "line": 223,
+      "word": "Anh",
+      "next_word": "ăn",
+      "context": "Anh ăn xong.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 47
+    },
+    {
+      "line": 227,
+      "word": "Anh",
+      "next_word": "đem",
+      "context": "Anh đem nhẫn Hạ Vy.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 47
+    },
+    {
+      "line": 227,
+      "word": "Anh",
+      "next_word": "chụp",
+      "context": "Anh chụp ảnh.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 47
+    },
+    {
+      "line": 227,
+      "word": "Anh",
+      "next_word": "đem",
+      "context": "Anh đem về Việt Nam.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 47
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ bốn mươi tám.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 48
+    },
+    {
+      "line": 47,
+      "word": "Anh",
+      "next_word": "lên",
+      "context": "Anh lên xe.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 48
+    },
+    {
+      "line": 59,
+      "word": "Anh",
+      "next_word": "ngồi",
+      "context": "Anh ngồi yên.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 48
+    },
+    {
+      "line": 87,
+      "word": "Anh",
+      "next_word": "nói",
+      "context": "Anh nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 48
+    },
+    {
+      "line": 95,
+      "word": "Anh",
+      "next_word": "quay",
+      "context": "Anh quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 48
+    },
+    {
+      "line": 177,
+      "word": "Anh",
+      "next_word": "bước",
+      "context": "Anh bước xuống dưới.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 48
+    },
+    {
+      "line": 219,
+      "word": "Đêm",
+      "next_word": "bốn",
+      "context": "\"Đêm bốn mươi tám.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 48
+    },
+    {
+      "line": 223,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ bốn mươi tám.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 48
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ bốn mươi chín.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 49
+    },
+    {
+      "line": 43,
+      "word": "Mưa",
+      "next_word": "rơi",
+      "context": "Mưa rơi nhẹ nhàng.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 49
+    },
+    {
+      "line": 47,
+      "word": "Cô",
+      "next_word": "lên",
+      "context": "Cô lên bậc xe.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 49
+    },
+    {
+      "line": 59,
+      "word": "Cô",
+      "next_word": "gái",
+      "context": "Cô gái ngồi yên lặng.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 49
+    },
+    {
+      "line": 85,
+      "word": "Cô",
+      "next_word": "nói",
+      "context": "Cô nói rất nhỏ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 49
+    },
+    {
+      "line": 93,
+      "word": "Cô",
+      "next_word": "quay",
+      "context": "Cô quay đầu lại.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 49
+    },
+    {
+      "line": 175,
+      "word": "Cô",
+      "next_word": "bước",
+      "context": "Cô bước xuống dưới.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 49
+    },
+    {
+      "line": 179,
+      "word": "Cô",
+      "next_word": "đến.",
+      "context": "Cô đến.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 49
+    },
+    {
+      "line": 205,
+      "word": "Anh",
+      "next_word": "đã",
+      "context": "Anh đã giữ lời hứa.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 49
+    },
+    {
+      "line": 217,
+      "word": "Đêm",
+      "next_word": "bốn",
+      "context": "\"Đêm bốn mươi chín.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 49
+    },
+    {
+      "line": 221,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ bốn mươi chín.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 49
+    },
+    {
+      "line": 237,
+      "word": "Anh",
+      "next_word": "sống",
+      "context": "Anh sống lặng yên.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 49
+    },
+    {
+      "line": 239,
+      "word": "Anh",
+      "next_word": "cất",
+      "context": "Anh cất cẩn thận.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 49
+    },
+    {
+      "line": 39,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ năm mươi.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 50
+    },
+    {
+      "line": 55,
+      "word": "Anh",
+      "next_word": "gái",
+      "context": "Anh gái Hạ Vy.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 50
+    },
+    {
+      "line": 65,
+      "word": "Anh",
+      "next_word": "Khải",
+      "context": "\"Anh Khải Phong.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 50
+    },
+    {
+      "line": 89,
+      "word": "Anh",
+      "next_word": "nói",
+      "context": "Anh nói tiếp:",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 50
+    },
+    {
+      "line": 105,
+      "word": "Chị",
+      "next_word": "...\"",
+      "context": "\"Chị...\"",
+      "word_count": 1,
+      "severity": "HIGH",
+      "ep": 50
+    },
+    {
+      "line": 127,
+      "word": "Anh",
+      "next_word": "Khải",
+      "context": "\"Anh Khải Phong.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 50
+    },
+    {
+      "line": 137,
+      "word": "Anh",
+      "next_word": "sẽ",
+      "context": "\"Anh sẽ đi.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 50
+    },
+    {
+      "line": 153,
+      "word": "Anh",
+      "next_word": "sẽ",
+      "context": "\"Anh sẽ đi.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 50
+    },
+    {
+      "line": 155,
+      "word": "Anh",
+      "next_word": "đến",
+      "context": "Anh đến — đủ.\"",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 50
+    },
+    {
+      "line": 159,
+      "word": "Anh",
+      "next_word": "cầm.",
+      "context": "\"Anh cầm.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 50
+    },
+    {
+      "line": 167,
+      "word": "Chị",
+      "next_word": "em",
+      "context": "Chị em đẹp.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 50
+    },
+    {
+      "line": 215,
+      "word": "Anh",
+      "next_word": "mỉm",
+      "context": "Anh mỉm cười.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 50
+    },
+    {
+      "line": 215,
+      "word": "Anh",
+      "next_word": "vẫy",
+      "context": "Anh vẫy tay một lần.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 50
+    },
+    {
+      "line": 239,
+      "word": "Năm",
+      "next_word": "mươi",
+      "context": "Năm mươi vật.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 50
+    },
+    {
+      "line": 239,
+      "word": "Năm",
+      "next_word": "mươi",
+      "context": "Năm mươi đêm.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 50
+    },
+    {
+      "line": 239,
+      "word": "Năm",
+      "next_word": "mươi",
+      "context": "Năm mươi câu chuyện.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 50
+    },
+    {
+      "line": 277,
+      "word": "Đêm",
+      "next_word": "thứ",
+      "context": "Đêm thứ năm mươi.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 50
+    },
+    {
+      "line": 281,
+      "word": "Đêm",
+      "next_word": "năm",
+      "context": "Đêm năm mươi đặc biệt:",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 50
+    },
+    {
+      "line": 292,
+      "word": "Mưa",
+      "next_word": "đã",
+      "context": "Mưa đã hết rồi.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 50
+    }
+  ]
+}

@@ -53,7 +53,7 @@ milestone_special: S1 FINALE - 50 vật xếp thành bản đồ - kết thúc t
 
 [pause:800ms]
 
-Phố vắng. Đêm thưa. Xe đêm đi qua đoạn Vĩnh Bảo — quê Hạ Vy, Hà Nội — đèn pha hắt lên hàng cây cao quá đầu — bóng đổ dài trên mặt đường ướt. Đèn pha quét lên hàng phi lao biển.
+Phố vắng tanh. Đêm thưa. Xe đêm đi qua đoạn Vĩnh Bảo — quê Hạ Vy, Hà Nội — đèn pha hắt lên hàng cây cao quá đầu — bóng đổ dài trên mặt đường ướt. Đèn pha quét lên hàng phi lao biển.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ năm mươi. Milestone — S1 FINALE.
 
@@ -69,7 +69,7 @@ Xe chậm lại trước căn nhà mái ngói nhỏ ven sông — đèn vàng tr
 
 Khải Phong nhói. Bác tài đem anh về chính nhà Hạ Vy.
 
-Bên cổng nhà — một phụ nữ trẻ đứng đợi. Khoảng hai mươi bốn tuổi. Áo dài hồng — phong cách áo dài cô dâu. Tóc cột thấp. Tay phải cầm thiệp cưới giấy — phong bì đỏ.
+Bên cổng nhà — một phụ nữ trẻ đứng đợi. Khoảng hai mươi bốn tuổi. Áo dài hồng — phong cách áo dài cô dâu. Tóc cột thấp xuống. Tay phải cầm thiệp cưới giấy — phong bì đỏ.
 
 Khải Phong nhìn — cô gái này — Khải Phong biết — Hạ Nhi. Anh gái Hạ Vy.
 
@@ -97,13 +97,13 @@ Hạ Nhi ngồi bên Khải Phong. Vuốt phong bì đỏ. Đầu ngón tay anh 
 
 Khải Phong quan sát từ gần — anh ba hai bốn — mặt trẻ — vẻ anh gái — có nét chị Hạ Vy.
 
-Phong bì em giữ — thiệp cưới Hạ Nhi — mời tháng năm sang năm — Sài Gòn — chú rể Trần Hoàng Long.
+Phong bì em giữ lại — thiệp cưới Hạ Nhi — mời tháng năm sang năm — Sài Gòn — chú rể Trần Hoàng Long.
 
 Ông cụ ghế đầu vặn radio. Lần này — bài "Áo lụa Hà Đông" lại vọng — như mọi milestone (EP08, EP20, EP30, EP40).
 
 [pause:500ms]
 
-Bác tài liếc gương. Không nói nữa.
+Bác tài liếc gương. Không nói nữa thôi.
 
 Hạ Nhi quay sang Khải Phong. Anh nói tiếp:
 
@@ -115,7 +115,7 @@ Hạ Nhi quay sang Khải Phong. Anh nói tiếp:
 
 [pause:500ms]
 
-Xe đi qua xóm. Phía bên trái — căn nhà mái ngói cũ — sân có hai cây cau. Cạnh sân — bóng Hạ Vy xuất hiện — cô gái hai bảy áo lụa Hà Đông trắng — bông cúc vàng cài tai — đứng — nhìn lên xe.
+Xe đi qua xóm. Phía bên trái — căn nhà mái ngói xưa — sân có hai cây cau. Cạnh sân — bóng Hạ Vy xuất hiện — cô gái hai bảy áo lụa Hà Đông trắng — bông cúc vàng cài tai — đứng — nhìn lên xe.
 
 Hai chị em — Hạ Vy ngoài cửa sổ — Hạ Nhi trên xe — cùng nhìn nhau.
 
@@ -129,7 +129,7 @@ Hạ Nhi nói nhỏ. Lệ rơi nhanh.
 
 [pause:1000ms]
 
-Xe đi qua. Nhà mái ngói khuất. Bóng Hạ Vy khuất.
+Xe đi qua đó. Nhà mái ngói khuất. Bóng Hạ Vy khuất.
 
 Hạ Nhi quay sang Khải Phong. Lệ trên má.
 
@@ -155,7 +155,7 @@ Khải Phong nhói. Anh nói chậm — giọng anh khàn vì lệ.
 
 "Anh sẽ đi. Anh xin lỗi em không trả lời. Anh sẽ đi dự cưới em."
 
-Hạ Nhi gật. Cười nhẹ.
+Hạ Nhi gật. Cười nhẹ nhàng.
 
 "Cảm ơn anh. Bố mẹ em sẽ vui. Bố mẹ em hay nhắc anh — hai năm gần đây — em ăn cơm Tết với bố mẹ em — em hỏi bố em: 'Bố có nhớ anh Khải Phong không?' Bố đáp: 'Bố nhớ. Phong là người Hạ Vy yêu — bố không quên.'"
 
@@ -209,11 +209,11 @@ Hạ Nhi gật. "Em sẽ nhắn bố em sáng mai. Em sẽ nói anh sẽ đến.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Vĩnh Bảo — cây phượng vĩ cổ — bến nhà bố mẹ Hạ Vy. Khải Phong nhận ra rõ — căn nhà anh đã đến hai lần.
+Xe chậm lại. Ngã ba Vĩnh Bảo — cây phượng vĩ cổ — bến nhà bố mẹ Hạ Vy. Khải Phong nhận ra rõ ràng — căn nhà anh đã đến hai lần.
 
 Chuông xe ngân. Một tiếng. Tan trong gió biển Hải Phòng.
 
-Hạ Nhi ôm thiệp anh đã đưa Khải Phong — anh không lấy lại — anh để Khải Phong giữ. Đứng dậy.
+Hạ Nhi ôm thiệp anh đã đưa Khải Phong — anh không lấy lại — anh để Khải Phong giữ lại. Đứng dậy.
 
 "Chào anh. Sáng mai em sẽ gọi điện bố em. Bố em sẽ đợi anh."
 
@@ -225,7 +225,7 @@ Hạ Nhi bước xuống.
 
 [pause:1200ms]
 
-Bên ngoài — Hạ Nhi đi vào sân nhà bố mẹ. Cửa nhà còn sáng — bố mẹ chưa ngủ (trong giấc mơ em). Em mở cổng — đi vào.
+Bên ngoài — Hạ Nhi đi vào sân nhà bố mẹ. Cửa nhà còn sáng — bố mẹ chưa ngủ (trong giấc mơ em). Em mở cổng — đi vào trong.
 
 Khải Phong chớp mắt — nhìn qua cửa sổ. Hạ Vy xuất hiện trên hiên nhà — đứng đợi anh anh. Hạ Vy ôm anh anh một lúc. Hai chị anh đứng trên hiên — Hạ Vy vuốt tóc Hạ Nhi.
 
@@ -233,7 +233,7 @@ Khải Phong nhìn rõ mặt Hạ Vy — anh đẹp như trong ký ức — khô
 
 Hạ Vy quay sang xe. Anh nhìn Khải Phong qua cửa sổ. Anh mỉm cười. Anh vẫy tay một lần.
 
-Khải Phong vẫy tay lại. Lệ rơi.
+Khải Phong vẫy tay lại. Lệ rơi xuống dưới.
 
 Khải Phong chớp lần nữa. Hai chị anh tan vào ánh đèn nhà.
 
@@ -277,7 +277,7 @@ Ngoại tỉnh: Hải Dương (EP30), Hải Phòng (EP23, EP50), Nam Định (EP
 
 Khải Phong nhìn bản đồ. Trung tâm Hà Nội — các vật xếp thành cụm dày. Khâm Thiên — phòng trọ Khải Phong và Hạ Vy. Mộc Hà — văn phòng Hạ Vy. Ngã tư phố Huế-Trần Hưng Đạo — chỗ Hạ Vy va.
 
-Cụm trung tâm — nối ra Hải Phòng — quê Hạ Vy. Vĩnh Bảo — bến em xuống.
+Cụm trung tâm — nối ra Hải Phòng — quê Hạ Vy. Vĩnh Bảo — bến em xuống dưới.
 
 Bản đồ năm mươi vật — kết thúc tại nhà bố mẹ Hạ Vy ở Vĩnh Bảo. Không phải Cầu Long Biên (EP01). Không phải Khâm Thiên. Cuối cùng — Hạ Vy về nhà bố mẹ — quê.
 
@@ -293,7 +293,7 @@ Khải Phong gật. Lệ rơi không kìm.
 
 Khải Phong cất năm mươi vật vào túi. Thiệp cưới Hạ Nhi đặt riêng trong túi trong cùng — vật quan trọng.
 
-Đêm thứ năm mươi. Khải Phong nhìn ra cửa sổ — bên ngoài — vẫn chưa sáng. Đêm tháng tư.
+Đêm thứ năm mươi. Khải Phong nhìn ra cửa sổ — bên ngoài — vẫn chưa sáng lên. Đêm tháng tư.
 
 Khải Phong đã đi qua một nửa chuyến xe. Còn bốn mươi đêm nữa.
 
@@ -308,6 +308,6 @@ Khải Phong đã đi qua một nửa chuyến xe. Còn bốn mươi đêm nữa
 
 Bác tài liếc gương lần nữa — không nói thêm. Bác chỉ nhịp ngón trỏ trên vô-lăng ba cái — đồng cảm.
 
-Xe đi tiếp về phía đường vành đai. Mưa đã hết. Trời chưa sáng. Phía sau — Vĩnh Bảo khuất — Hạ Nhi đã về Sài Gòn qua giấc mơ — Hạ Vy đã tan trên hiên nhà bố mẹ em.
+Xe đi tiếp về phía đường vành đai. Mưa đã hết rồi. Trời chưa sáng lên. Phía sau — Vĩnh Bảo khuất — Hạ Nhi đã về Sài Gòn qua giấc mơ — Hạ Vy đã tan trên hiên nhà bố mẹ em.
 
 Khải Phong còn một mình — ghế thứ ba — chuyến xe đêm — Season 2 sẽ bắt đầu đêm năm mươi mốt.

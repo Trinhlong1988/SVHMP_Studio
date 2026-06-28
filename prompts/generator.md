@@ -1704,6 +1704,82 @@ Section ratio (auto): HOOK 7% / SETUP 19% / INCIDENT 22% / REVEAL 26% / PAYOFF 1
 
 ---
 
+## PHASE 12.99 — PRE-WRITE TTS+LOGIC ENFORCER (R58-R65 HARDLOCK) ⚠️
+
+**Round 15 add 2026-06-28 (Mr.Long lệnh tuyệt đối tuân thủ)**
+
+Trước khi viết EP_N, AI Generator PHẢI verify mọi sentence tuân:
+
+### R58 — CẤM TILDE-VOWEL Ở CUỐI CÂU (HARDLOCK)
+- **Banned EOL chars**: ã ẵ ẫ ẽ ễ ĩ õ ỗ ỡ ũ ữ ỹ
+- Examples wrong: "đi Mỹ." / "khung cũ." / "chỗ vắng." → TTS đọc thành "đi Mỵ." / "khung cụ."
+- Fix: "đi Hoa Kỳ." / "khung xưa." / "nơi vắng vẻ."
+- **NEVER end sentence with**: Mỹ / cũ / rõ / giữ / chữ / gỗ / xã / vẽ / khẽ / vỡ / nữ / chỗ / đỡ / sĩ / nghĩ / lễ / nhỡ / trễ / đã / ngã
+
+### R59 — CẤM CHUỖI 3+ TỪ NGẮN CUỐI CÂU
+- Pattern: "ướt một góc nhỏ." / "đi qua làng đó." → TTS cụt + mix glitch
+- Fix: Pad bằng từ 2-syl ở giữa hoặc cuối: "ướt một góc nhỏ trên bàn."
+
+### R60 — CẤM CÂU ≤3 TỪ KẾT THÚC BẰNG TỪ 1 ÂM TIẾT
+- Pattern: "Anh đứng im." / "Cô gật." / "Bác đi." → TTS cụt âm
+- **Banned EOL words**: im / lặng / rơi / đi / ra / qua / lui / tan / nhỏ / to / lên / xuống / vào / đó / đây / khẽ / nhẹ / rồi / thôi
+- Fix: Pad — "Anh đứng im lặng một hồi lâu." / "Cô khẽ gật đầu."
+
+### R61 — CẤM MỞ ĐẦU CÂU NGẮN BẰNG TỪ 1 ÂM TIẾT
+- Pattern: "Đêm đó mưa." / "Hôm nay nắng." / "Năm ấy lạnh." → TTS hụt hơi / cụt
+- **Banned starts (khi câu ≤5 từ)**: Đêm / Hôm / Ngày / Năm / Sáng / Chiều / Tối / Mưa / Gió / Sương / Lúc / Khi
+- Fix: Prefix — "Vào đêm đó, mưa rơi từ bảy giờ tối." / "Hôm nay trời nắng to."
+
+### R62 — CẤM ANAPHORA "NGƯỜI/CÔ/ANH" LIÊN TIẾP >2 CÂU
+- Pattern: "Một người gia. Người y tá. Người đàn ông trung niên." → TTS đọc list nhàm chán
+- Fix: Vary — "Một cụ già. Cô y tá đứng cạnh. Bên kia, người đàn ông trung niên."
+- Max consecutive: 2 sentences cùng trigger word
+
+### R63 — LOGIC TOÁN/LÝ/HÓA/SINH CONSISTENCY (HARDLOCK)
+- Tuổi + năm sinh: X tuổi năm 2026 = sinh 2026-X
+- Khoảng cách + thời gian: HN→Sapa 300km = 5-6h xe đêm
+- Đếm vật: Khải Phong cầm N vật → cuối EP N hoặc N+1 (không tự nhiên N rồi vẫn N)
+- Vật lý: trọng lực rơi xuống, ánh sáng đúng nguồn, âm thanh có khoảng cách
+- Sinh học: thi thể 24h cứng, 48h chuyển màu
+
+### R64 — ĐẠO ĐỨC + VĂN HÓA VIỆT NAM (HARDLOCK)
+- Xưng hô đúng vai vế (bác/chú/cô/dì/anh/chị/em)
+- Tang chế: áo trắng Bắc / khăn đen-vàng Nam — không lẫn
+- Lễ nghi: 49 ngày / 100 ngày / 3 năm sau mất
+- Phật (chùa/sư/A Di Đà) ≠ Công giáo (nhà thờ/cha/Chúa)
+- Kiêng kỵ: tang trong 1 năm không cưới
+
+### R65 — TỔNG THỂ CONSISTENCY KHÔNG BỊA (HARDLOCK)
+- CẤM bịa địa danh không tồn tại (Phú Thọ có xã Vĩnh Lộc OK, không bịa "xã Tiên Thanh" nếu không có)
+- CẤM bịa số liệu phi thực tế (lương cô giáo tiểu học Phú Thọ 50 triệu)
+- CẤM bịa nghi thức tâm linh sai văn hóa
+- CẤM bịa phản ứng vật lý/hóa học (sắt cháy thành khói xanh)
+
+### GRAMMAR NOTES (bible/22 round 15)
+- "chợt" / "bỗng nhiên" CHỈ dùng cho **statement past tense** ("Anh chợt nhớ")
+- KHÔNG dùng cho câu hỏi: SAI "Anh chợt hiểu chưa?" → ĐÚNG "Anh đã hiểu chưa?"
+
+### PRE-WRITE CHECKLIST (BẮT BUỘC)
+Trước khi finalize 1 sentence, AI verify:
+1. ☐ Cuối câu có dấu ngã không? → nếu có, reword
+2. ☐ Câu ≤3 từ ending mono-syllable? → pad bằng adverb/object
+3. ☐ Câu ≤5 từ mở đầu "Đêm/Hôm/Năm..."? → prefix "Vào "
+4. ☐ 3 câu liền trước có cùng first-word? → vary anaphora
+5. ☐ Logic toán/lý/hóa/sinh consistent với prior EPs?
+6. ☐ Đạo đức + văn hóa VN check (xưng hô + tang + lễ + tôn giáo)?
+7. ☐ Có bịa địa danh / số liệu / nghi thức không có thật?
+
+### POST-WRITE VERIFY (chạy sau khi viết, trước commit)
+```bash
+python tools/audit_tilde_eol.py --ep N      # R58 = 0
+python tools/audit_short_eol.py --ep N       # R60 ≤ 5
+python tools/audit_short_start.py --ep N     # R61 ≤ 5
+python tools/audit_anaphora_consecutive.py --ep N  # R62 ≤ 2
+```
+Vi phạm ANY rule → BLOCK ship, fix và re-verify.
+
+---
+
 ## <retention_rules>
 
 ```

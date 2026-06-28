@@ -58,11 +58,11 @@ Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi tư. Trong túi áo gi
 
 Bác tài lái.
 
-Xe chậm lại trước một xóm cũ — bảng "Xóm Đông Văn — xã Tam Đảo" — đường vào xóm là đường đất. Đèn vàng cột điện đầu xóm.
+Xe chậm lại trước một xóm xưa — bảng "Xóm Đông Văn — xã Tam Đảo" — đường vào xóm là đường đất. Đèn vàng cột điện đầu xóm.
 
 Một người đàn ông đứng đợi bên cột điện. Khoảng năm mươi tuổi. Áo sơ mi đen — quần tây xám. Tay phải cầm bó hương trầm — bó dài chừng nửa mét — gói trong giấy bản nâu.
 
-Anh vào xe. Đi qua mấy hàng ghế trước — chân chậm. Ngồi xuống ghế thứ bảy.
+Anh vào xe. Đi qua mấy hàng ghế trước — chân chậm lại. Ngồi xuống ghế thứ bảy.
 
 Đặt bó hương lên đùi. Mở giấy bản. Hương trầm — sắc đỏ đậm — mùi gỗ trầm thơm nhẹ — đã tỏa ngay trong xe.
 
@@ -86,7 +86,7 @@ Mùi trầm tỏa trong xe — không to — không che lấp — chỉ thoảng
 
 Bác tài liếc gương. Không nói.
 
-Anh đặt bó hương lên đùi nguyên — không lấy ra đốt — chỉ giữ.
+Anh đặt bó hương lên đùi nguyên — không lấy ra đốt — chỉ giữ lại.
 
 ---
 
@@ -94,21 +94,21 @@ Anh đặt bó hương lên đùi nguyên — không lấy ra đốt — chỉ g
 
 [pause:500ms]
 
-Xe đi qua xóm cũ. Phía bên trái — căn nhà mái ngói — cửa khép. Đèn nến trong nhà còn cháy.
+Xe đi qua xóm xưa. Phía bên trái — căn nhà mái ngói — cửa khép. Đèn nến trong nhà còn cháy.
 
-Cạnh cửa — bóng ông cụ chừng bảy mươi tuổi — áo sơ mi nâu cũ — đứng trên thềm — không quay đầu. Tay ông cầm cuốn sổ — như đang viết sổ ghi nhật ký.
+Cạnh cửa — bóng ông cụ chừng bảy mươi tuổi — áo sơ mi nâu xưa — đứng trên thềm — không quay đầu. Tay ông cầm cuốn sổ — như đang viết sổ ghi nhật ký.
 
 Anh ghế bảy nhìn về phía đó.
 
 "Bác Bính..."
 
-Anh nói nhỏ.
+Anh nói rất nhỏ.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
 [pause:1000ms]
 
-Xe đi qua. Nhà mái ngói khuất.
+Xe đi qua đó. Nhà mái ngói khuất.
 
 Anh quay đầu lại. Vuốt bó hương.
 
@@ -118,7 +118,7 @@ Anh quay đầu lại. Vuốt bó hương.
 
 [pause:1000ms]
 
-"Tôi là Văn Tuấn. Năm mươi tuổi. Tôi ở Đông Văn — Vĩnh Phúc — quê. Tôi làm cán bộ xã."
+"Tôi là Văn Tuấn. Năm mươi tuổi. Tôi ở Đông Văn — Vĩnh Phúc — quê. Tôi làm cán bộ xã đó."
 
 Giọng anh trầm — chậm.
 
@@ -136,19 +136,19 @@ Giọng anh trầm — chậm.
 
 [pause:1200ms]
 
-"Bác về hưu — già nhanh. Năm tôi ba bảy — bác sáu mươi tám — bác yếu — đi lại chậm. Tôi về quê — tôi sang chơi — bác ngồi ghế gỗ — kể chuyện thường — không phàn nàn."
+"Bác về hưu — già nhanh. Năm tôi ba bảy — bác sáu mươi tám — bác yếu — đi lại chậm lại. Tôi về quê — tôi sang chơi — bác ngồi ghế gỗ mun — kể chuyện thường — không phàn nàn."
 
-"Năm tôi bốn mươi — bác bảy mốt — bác mất. Đêm — bác đi ngủ — sáng hàng xóm khác sang tìm bác — không thấy bác dậy. Cửa nhà khép — không khóa. Hàng xóm vào — thấy bác nằm trên giường — đã đi."
+"Năm tôi bốn mươi — bác bảy mốt — bác mất. Đêm — bác đi ngủ — sáng hàng xóm khác sang tìm bác — không thấy bác dậy. Cửa nhà khép — không khóa. Hàng xóm vào — thấy bác nằm trên giường — đã đi rất xa."
 
-"Tôi đang ở Hà Nội — bận họp xã — không về kịp tang bác. Đám tang xã làng tổ chức — vài người hàng xóm — không gia đình."
+"Tôi đang ở Hà Nội — bận họp xã đó — không về kịp tang bác. Đám tang xã làng tổ chức — vài người hàng xóm — không gia đình."
 
 [pause:1500ms]
 
-"Tôi về quê hai ngày sau tang. Bác đã chôn ở nghĩa trang xã. Tôi đến mộ — quỳ — thắp hương — xin lỗi không về kịp."
+"Tôi về quê hai ngày sau tang. Bác đã chôn ở nghĩa trang xã đó. Tôi đến mộ — quỳ — thắp hương — xin lỗi không về kịp."
 
 "Tôi định: mỗi rằm tháng bảy — tôi sẽ thắp hương cho bác. Tôi không có gia đình bác — tôi là người duy nhất còn nhớ bác — tôi thay con cháu thắp hương."
 
-"Năm đầu — tôi thắp hương rằm tháng bảy — đem hoa cúc — thắp nến. Năm thứ hai — tôi cũng thắp. Năm thứ ba — tôi bận họp xã — quên — đến cuối tháng tám tôi nhớ — tôi không đi vì đã muộn — tôi định năm sau bù."
+"Năm đầu — tôi thắp hương rằm tháng bảy — đem hoa cúc — thắp nến. Năm thứ hai — tôi cũng thắp. Năm thứ ba — tôi bận họp xã đó — quên — đến cuối tháng tám tôi nhớ — tôi không đi vì đã muộn — tôi định năm sau bù."
 
 [pause:1500ms]
 
@@ -180,7 +180,7 @@ Văn Tuấn gật.
 
 [pause:1200ms]
 
-"Đêm nay — tôi đem bó hương về Đông Văn — về nghĩa trang xã — về mộ bác. Đốt cả bó. Quỳ. Nói: 'Bác Bính ơi cháu xin lỗi mười năm. Cháu quên thắp hương — không phải cháu không thương — cháu chỉ quên. Bây giờ cháu thắp một lần — đốt cả bó — đủ mười năm. Cháu sẽ không quên nữa.'"
+"Đêm nay — tôi đem bó hương về Đông Văn — về nghĩa trang xã đó — về mộ bác. Đốt cả bó. Quỳ. Nói: 'Bác Bính ơi cháu xin lỗi mười năm. Cháu quên thắp hương — không phải cháu không thương — cháu chỉ quên. Bây giờ cháu thắp một lần — đốt cả bó — đủ mười năm. Cháu sẽ không quên nữa.'"
 
 ---
 
@@ -198,17 +198,17 @@ Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim
 
 Bác tài: "Chưa tới lúc."
 
-Anh bước xuống.
+Anh bước xuống dưới.
 
 [pause:1200ms]
 
-Bên ngoài — Văn Tuấn đi vào nghĩa trang xã Đông Văn. Cổng đã mở. Mộ bác Bính — bia gỗ — đã có dấu cũ.
+Bên ngoài — Văn Tuấn đi vào nghĩa trang xã Đông Văn. Cổng đã mở. Mộ bác Bính — bia gỗ mun — đã có dấu xưa.
 
 Anh đến. Quỳ. Đốt bó hương — cháy đậm — mùi trầm tỏa khắp nghĩa trang. Cắm vào bia. Cúi đầu.
 
 Khải Phong chớp mắt — nhìn qua cửa sổ. Bên mộ — bác Bính xuất hiện — ông cụ bảy mươi áo sơ mi nâu — vuốt vai Văn Tuấn. Mỉm cười.
 
-Khải Phong chớp lần nữa. Bác tan.
+Khải Phong chớp lần nữa. Bác tan ra.
 
 Văn Tuấn ngẩng đầu. Không khóc.
 
@@ -260,6 +260,6 @@ Khải Phong cảm giác — Khải Phong tỉnh dậy không phải từ giấc
 
 Bác tài liếc gương. "Đêm ba mươi tư. Con đã đếm tám năm. Đêm sau con sẽ nhớ — vì sao đêm con tỉnh dậy không phải giấc ngủ thường — vì sao con ngồi ghế thứ ba mà không nhớ. Đừng vội."
 
-Khải Phong gật. Lệ rơi nhẹ.
+Khải Phong gật. Lệ rơi nhẹ nhàng.
 
 Đêm thứ ba mươi tư. Xe đi tiếp. Phía sau — Vĩnh Phúc khuất. Văn Tuấn ở lại quỳ — bó hương cháy bên mộ.

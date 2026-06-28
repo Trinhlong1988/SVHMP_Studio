@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R40 + R36 callback EP25
 
 [pause:800ms]
 
-Đêm. Đường vắng. Xe đêm trôi qua đoạn sông Lam, Nghệ An. Đèn pha quét đi quét lại trên hàng dừa miền Trung — dừa cao — gốc dày — không có ai khác trên đường.
+Đêm. Đường vắng tanh. Xe đêm trôi qua đoạn sông Lam, Nghệ An. Đèn pha quét đi quét lại trên hàng dừa miền Trung — dừa cao — gốc dày — không có ai khác trên đường.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi lăm. Trong túi áo gió Khải Phong — ba mươi tư vật.
 
@@ -64,21 +64,21 @@ Khải Phong gật. Khải Phong nhớ Văn Quân — kính phản chiếu mặt
 
 Bác tài tiếp:
 
-"Đêm nay sẽ có cậu trai khác — cũng đem mảnh gương — không phải kính — gương vỡ — gương cứu anh ấy. Vật echo. Cứ giữ."
+"Đêm nay sẽ có cậu trai khác — cũng đem mảnh gương — không phải kính — gương tan — gương cứu anh ấy. Vật echo. Cứ giữ lại."
 
 Khải Phong gật. Không hỏi.
 
-Xe chậm lại trước một bệnh viện đa khoa cũ — biển "Bệnh viện đa khoa Vinh" — cổng đã đóng — đèn vàng treo cột. Tường bệnh viện có dấu sơn cũ.
+Xe chậm lại trước một bệnh viện đa khoa xưa — biển "Bệnh viện đa khoa Vinh" — cổng đã đóng — đèn vàng treo cột. Tường bệnh viện có dấu sơn xưa.
 
 Một thanh niên đứng đợi bên cổng. Khoảng hai mươi tám tuổi. Áo gió đen — quần jeans — đeo ba lô vai. Tay phải cầm hộp giấy nhỏ — bên trong vật cứng.
 
-Anh bước lên xe. Đi qua hàng ghế đầu — chân chậm. Ngồi xuống ghế thứ tám.
+Anh bước lên xe. Đi qua hàng ghế đầu — chân chậm lại. Ngồi xuống ghế thứ tám.
 
-Mở hộp giấy. Lấy ra một mảnh gương vỡ — cỡ bàn tay — đã cuốn vải mép — vải trắng đã ngả vàng.
+Mở hộp giấy. Lấy ra một mảnh gương tan — cỡ bàn tay — đã cuốn vải mép — vải trắng đã ngả vàng.
 
 Khải Phong ghế ba nhìn — vật thứ ba vật gương trên xe này. Sau EP15 — gương vỡ Phong đập đêm hai mốt. Sau EP25 — kính nhỏ Văn Quân — không đập — chỉ phản chiếu.
 
-Đêm này — mảnh gương vỡ — giống EP15 nhiều hơn EP25. Vật echo EP15.
+Đêm này — mảnh gương tan — giống EP15 nhiều hơn EP25. Vật echo EP15.
 
 Xe lăn bánh.
 
@@ -100,7 +100,7 @@ Cánh tay trái anh — Khải Phong thấy — không có vết sẹo dài như
 
 Bác tài liếc gương. Không nói nữa — câu thứ ba đã nói.
 
-Anh đặt mảnh gương lên đùi. Vuốt nhẹ.
+Anh đặt mảnh gương lên đùi. Vuốt nhẹ nhàng.
 
 ---
 
@@ -108,19 +108,19 @@ Anh đặt mảnh gương lên đùi. Vuốt nhẹ.
 
 [pause:500ms]
 
-Xe đi qua xóm cũ. Phía bên phải — một dãy phòng trọ tầng hai — đèn đỏ phòng cuối còn sáng yếu. Cửa sổ phòng — bóng thanh niên đứng — tay không cầm dao — chỉ đứng — nhìn ra ngoài. Không quay đầu.
+Xe đi qua xóm xưa. Phía bên phải — một dãy phòng trọ tầng hai — đèn đỏ phòng cuối còn sáng yếu. Cửa sổ phòng — bóng thanh niên đứng — tay không cầm dao — chỉ đứng — nhìn ra ngoài. Không quay đầu.
 
 Anh ghế tám nhìn về phía đó.
 
 "Tôi..."
 
-Anh nói nhỏ.
+Anh nói rất nhỏ.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
 [pause:1000ms]
 
-Xe đi qua. Phòng trọ khuất.
+Xe đi qua đó. Phòng trọ khuất.
 
 Anh quay đầu lại. Vuốt mảnh gương.
 
@@ -154,15 +154,15 @@ Giọng anh sáng — trẻ — bình tĩnh.
 
 "Tôi nghĩ: 'Tôi hai sáu. Tôi còn nhiều năm. Tôi mới đập gương — tôi chưa cứa — tôi vẫn còn lựa chọn.'"
 
-"Tôi đặt mảnh gương xuống. Tôi không cứa. Tôi ngồi giữa mảnh vỡ — đến sáng."
+"Tôi đặt mảnh gương xuống. Tôi không cứa. Tôi ngồi giữa mảnh tan — đến sáng lên."
 
 [pause:1500ms]
 
-"Sáng — tôi gọi bố mẹ. Tôi xin lỗi đêm qua. Tôi nói: 'Con về quê — con sẽ ở quê một thời gian — con suy nghĩ.'"
+"Sáng — tôi gọi bố mẹ. Tôi xin lỗi đêm qua. Tôi nói: 'Con về quê — con sẽ ở quê một thời gian — con suy nghĩ thầm.'"
 
 "Tôi về Vinh. Tôi ở nhà bố mẹ ba tháng — làm vườn — đọc sách — tập thể dục — không nghĩ về việc làm."
 
-"Sau ba tháng — tôi tỉnh ra. Tôi rải hồ sơ lại — không chỉ năm công ty — tôi rải năm mươi công ty — không chỉ hàng không — tôi mở rộng sang ngành du lịch — khách sạn — vận tải."
+"Sau ba tháng — tôi tỉnh ra ngoài. Tôi rải hồ sơ lại — không chỉ năm công ty — tôi rải năm mươi công ty — không chỉ hàng không — tôi mở rộng sang ngành du lịch — khách sạn — vận tải."
 
 "Một năm sau — tôi vào việc khách sạn ở Vinh — tiếp tân khách sạn 4 sao — lương bảy triệu. Đủ ăn. Tôi làm một năm — kinh nghiệm — nộp lại hãng hàng không — đậu phỏng vấn — được tuyển tiếp viên."
 
@@ -170,7 +170,7 @@ Giọng anh sáng — trẻ — bình tĩnh.
 
 "Sáu tháng nay tôi đào tạo tại Hà Nội — kết thúc khóa đào tạo tuần trước — chuyển sang TP HCM tháng sau bắt đầu bay."
 
-"Tôi giữ mảnh gương — chính mảnh tôi nhìn đêm hai sáu — đã cuốn vải mép — bảo quản hai năm trong hộp giấy. Mảnh gương cứu tôi — không phải bác sĩ — không phải ai — chính tôi nhìn mặt mình quyết định không cứa."
+"Tôi giữ mảnh gương — chính mảnh tôi nhìn đêm hai sáu — đã cuốn vải mép — bảo quản hai năm trong hộp giấy. Mảnh gương cứu tôi — không phải bác người — không phải ai — chính tôi nhìn mặt mình quyết định không cứa."
 
 "Tôi sắp đi TP HCM xa nhà. Tôi không muốn đem mảnh gương theo — không cần kỉ niệm vật chất — tôi đã đủ vững."
 
@@ -182,11 +182,11 @@ Bác tài cất lời.
 
 Trí Hưng gật.
 
-"Tôi nhớ. Tôi đập gương đêm thất nghiệp — không cứa — nhìn mặt mình trong gương vỡ — chọn sống. Mảnh gương là chứng tích tôi chọn sống. Bây giờ tôi đủ vững — không cần vật ngoài."
+"Tôi nhớ. Tôi đập gương đêm thất nghiệp — không cứa — nhìn mặt mình trong gương tan — chọn sống. Mảnh gương là chứng tích tôi chọn sống. Bây giờ tôi đủ vững — không cần vật ngoài."
 
 [pause:1200ms]
 
-"Đêm nay — tôi đem mảnh gương về Vinh — về bệnh viện đa khoa Vinh — chính bệnh viện tôi từng đến điều trị trầm cảm sau đêm đập gương. Tôi sẽ tặng mảnh gương cho bác sĩ tâm lý tôi đã điều trị — bác sĩ Hà — bác sĩ giữ mảnh — đặt phòng tư vấn của bác sĩ. Khi bệnh nhân trẻ trầm cảm đến — bác sĩ cho họ nhìn mảnh — kể chuyện tôi — họ biết mảnh gương có thể cứu."
+"Đêm nay — tôi đem mảnh gương về Vinh — về bệnh viện đa khoa Vinh — chính bệnh viện tôi từng đến điều trị trầm cảm sau đêm đập gương. Tôi sẽ tặng mảnh gương cho bác sĩ tâm lý tôi đã điều trị — bác sĩ Hà — bác sĩ giữ mảnh — đặt phòng tư vấn của bác người. Khi bệnh nhân trẻ trầm cảm đến — bác sĩ cho họ nhìn mảnh — kể chuyện tôi — họ biết mảnh gương có thể cứu."
 
 ---
 
@@ -204,7 +204,7 @@ Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim
 
 Bác tài: "Chưa tới lúc."
 
-Anh bước xuống.
+Anh bước xuống dưới.
 
 [pause:1200ms]
 
@@ -248,7 +248,7 @@ Hình ảnh — bàn làm việc văn phòng kiến trúc phố Khâm Thiên —
 
 Khải Phong cố nhớ về tối cuối — tối Khải Phong ngủ và tỉnh dậy trên xe này. Hình ảnh — phòng trọ phố Nguyễn Trãi — Khải Phong vào phòng — bật đèn — nấu cơm — ăn — đánh răng — đi ngủ.
 
-Trong phòng tắm — Khải Phong nhớ rõ — có gương treo trên bồn rửa mặt. Khải Phong đánh răng — soi gương — thấy mặt mình.
+Trong phòng tắm — Khải Phong nhớ rõ ràng — có gương treo trên bồn rửa mặt. Khải Phong đánh răng — soi gương — thấy mặt mình.
 
 Khải Phong nhìn gương — không động — bình thường. Khải Phong đánh răng xong — tắt đèn — ra giường ngủ.
 
@@ -262,6 +262,6 @@ Bác tài đêm đầu chỉ nói: "Con đi cùng chuyến xe này. Đêm sau co
 
 Bác tài liếc gương. "Đêm ba mươi lăm. Cụm vật gương đủ ba. Con đã nhớ tối cuối — phòng trọ — gương phòng tắm. Đêm sau con sẽ nhớ — vì sao con tỉnh dậy không phải sáng — không phải phòng trọ. Đừng vội."
 
-Khải Phong gật. Lệ rơi nhẹ. Tay run nhẹ.
+Khải Phong gật. Lệ rơi nhẹ nhàng. Tay run nhẹ nhàng.
 
 Đêm thứ ba mươi lăm. Xe đi tiếp. Phía sau — Nghệ An khuất. Trí Hưng ở lại bệnh viện — đứng cửa phòng tư vấn — mảnh gương trong tủ kính.

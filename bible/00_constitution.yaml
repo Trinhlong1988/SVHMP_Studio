@@ -58,6 +58,32 @@ post_render_gate:
 # ============================================================
 # Mr.Long 27/6 lệnh add intro Hắc Dạ Ký mọi EP.
 
+R59_audio_mix_qa_mandatory_pre_publish:
+  # round 15 add 2026-06-28 (Mr.Long: "phải QA trước khi xuất bản")
+  rule: "BẮT BUỘC chạy tools/audit_audio_mix_qa.py PASS 15/15 trước khi ship audio mix EP"
+  enforcement: |
+    Physical gate: tools/post_render_gate.py extend audio check + .githooks/pre-commit
+    Audit 15 checks (C1-C15) load bible/05 v1.1 R_AUDIO_01-10:
+      C1  viewer_empathy_test (manual + auto pairings forbid)
+      C2  moment_map.yaml present + valid
+      C3  ambient bed constant (RMS scan)
+      C4  setting SFX validation (forbidden keywords)
+      C5  death_announce music protocol
+      C6  death_echo music protocol
+      C7  impact_moment mute regions
+      C8  memory_of_dead + haunting music category
+      C9  per-section dB curve match R_AUDIO_06
+      C10 HOOK swell peak vowel-center align ± 200ms
+      C11 LUFS integrated [-17, -15]
+      C12 True peak ≤ -1 dBFS + bell count ≤ 1
+      C13 click/pop detection (sample-level)
+      C14 DC offset (rolling mean)
+      C15 spectral artifact (FFT high-freq spike)
+  fail_action: "BLOCK ship — fix root cause + re-mix + re-audit, KHÔNG ship raw mix"
+  no_inference: "Mọi pick PHẢI verify trên file thực (R_AUDIO_10)"
+  counter: "Vi phạm R58 = LOG B5X BUGS_FIXED + rule_break_count++"
+  cross_ref: [bible/05 v1.1 audio_mix_rules, R41 HARDLOCK pattern, R50 audit_toolkit_mandatory_pre_commit]
+
 R44_dictionary_block:
   # round 8 add 2026-06-28 (Mr.Long lệnh "verify từ điển, không suy luận, block chặt chẽ")
   rule: "CẤM TUYỆT ĐỐI typo phổ biến tiếng Việt + diacritics sai + place lowercase"
@@ -78,15 +104,15 @@ R56_story_mode_hoi_tuong_am_anh:
   rule: "REVEAL phải là HỒI TƯỞNG ÁM ẢNH TÂM LINH — CẤM kể lể chronological year-by-year"
   is_truyen_mode:
     must_be:
-      - "Hồi tưởng" — fragments ký ức không tuyến tính
-      - "Ám ảnh tâm linh" — chi tiết quay trở (vật/âm/mùi/ánh)
-      - "Dư âm" — kết để mở, viewer suy nghĩ tiếp
-      - "Sensory anchor" — mỗi memory có 1 vật/âm/mùi cụ thể neo lại
+      - '"Hồi tưởng" — fragments ký ức không tuyến tính'
+      - '"Ám ảnh tâm linh" — chi tiết quay trở (vật/âm/mùi/ánh)'
+      - '"Dư âm" — kết để mở, viewer suy nghĩ tiếp'
+      - '"Sensory anchor" — mỗi memory có 1 vật/âm/mùi cụ thể neo lại'
     must_NOT_be:
-      - Kể lể tuyến tính: "Năm tôi X — Năm tôi Y — Năm tôi Z..."
-      - Liệt kê đời: học cấp 1, cấp 2, đại học, đi làm, cưới...
-      - Recap biography từ A→Z
-      - Show resume (lương, vị trí công ty)
+      - 'Kể lể tuyến tính: "Năm tôi X — Năm tôi Y — Năm tôi Z..."'
+      - 'Liệt kê đời: học cấp 1, cấp 2, đại học, đi làm, cưới...'
+      - 'Recap biography từ A→Z'
+      - 'Show resume (lương, vị trí công ty)'
   example_correct: |
     "Tay bà run. Lạnh.
      Em nhớ tay bà ấm. Hồi mười tuổi. Bà chải tóc em.
@@ -98,11 +124,118 @@ R56_story_mode_hoi_tuong_am_anh:
      Năm em 18 tuổi sinh Linh. Em chia tay bố Linh khi em 2 tuổi.
      Em nuôi Linh một mình 18 năm. Em đi dạy ở trường X..."
   detection_patterns:
-    - "Năm tôi/em [age] tuổi" lặp 5+ lần consecutive = chronological recap
-    - "Em làm [job]" intro full resume = biography mode
-    - Year-by-year breakdown > 60% REVEAL = miên man
+    - '"Năm tôi/em [age] tuổi" lặp 5+ lần consecutive = chronological recap'
+    - '"Em làm [job]" intro full resume = biography mode'
+    - 'Year-by-year breakdown > 60% REVEAL = miên man'
   enforcement: tools/audit_story_mode.py + manual editorial
   cross_ref: [bible/01 series_bible.soul_dna, bible/06 lexical_style]
+
+R65_total_consistency_no_invention_hardlock:
+  # round 15 add 2026-06-28 — Mr.Long: "kể serri như tiểu thuyết, logic tổng hợp tất cả kiến thức, CẤM SAI, không bịa luyên thuyên"
+  rule: "Truyện = TIỂU THUYẾT serri. Mọi chi tiết PHẢI nhất quán tổng thể logic + kiến thức + thời gian + địa lý + khoa học. CẤM bịa chi tiết không kiểm chứng → vô lý thành luyên thuyên."
+  level: ABSOLUTE_HARDLOCK
+  total_dimensions:
+    1_logic_thoi_gian: "Năm tuổi + khoảng thời gian + chronological order consistent (X tuổi 2026 = sinh 2026-X)"
+    2_logic_dia_ly: "Hà Nội-Sapa 300km 5-6h / HN-HP 120km 2.5h / tỉnh thành đúng vị trí + khí hậu vùng"
+    3_logic_vat_ly: "Trọng lực rơi xuống / vận tốc thời gian / ánh sáng đúng loại đèn / âm thanh có khoảng cách"
+    4_logic_hoa_hoc_sinh_hoc: "Kim loại đúng màu / mùi đúng nguồn / lửa đúng phản ứng / thi thể qua giờ chuyển trạng thái"
+    5_logic_thoi_tiet: "Tháng/mùa/vùng đúng (tháng tư Bắc Bộ mưa phùn + đêm mát)"
+    6_dao_duc_van_hoa_vn: "Xưng hô vai vế / tang chế vùng / lễ 49-100-3 năm / Phật ≠ Công giáo / kiêng kỵ tang"
+    7_logic_toan_dem_vat: "Đếm vật N → cuối N hoặc N±1 — không 'có rồi vẫn có' tự nhiên"
+    8_logic_kien_thuc_tu_nhien: "Cảnh quan + cây cối + chim cá đúng vùng đúng mùa"
+  forbidden_invention:
+    - "Bịa địa danh không tồn tại"
+    - "Bịa số liệu không thực tế (lương cô giáo tiểu học Phú Thọ 50 triệu)"
+    - "Bịa nghi thức tâm linh không có trong VN"
+    - "Bịa phản ứng vật lý/hóa học sai"
+  precedent_28_6:
+    - "EP01 Khải Phong cầm đồng hồ xuống xe → ghế bảy vẫn còn đồng hồ → toán học sai → fixed (đồng hồ trượt rơi khi anh trance)"
+  enforcement: tools/audit_logic_total.py (build phase 2)
+  cross_ref: [R41 hook, R56 hồi tưởng, R63 + R64 fold-in]
+
+R62_anaphora_word_liên_tiếp_hardlock:
+  # round 15 add 2026-06-28 — Mr.Long: "người lặp đi lặp lại liên nhau quá 2 lần nghe nhàm chán"
+  rule: "CẤM từ chỉ định danh (người/cô/anh/chị/ông/bà/em) lặp liền tiếp > 2 trong 3 câu liền"
+  why: |
+    Pattern repetitive "Một người gia. Người y tá. Người đàn ông trung niên..."
+    → TTS đọc đều đều như list → nhàm chán + nghe như lỗi prosody
+  trigger_words: ['người', 'cô', 'anh', 'chị', 'ông', 'bà', 'em', 'cụ']
+  max_consecutive: 2
+  detection: tools/audit_anaphora_consecutive.py
+  fix_pattern:
+    bad: "Một người gia. Người y tá đứng. Người đàn ông trung niên ngồi."
+    good: "Một cụ già. Cô y tá đứng cạnh. Bên kia, người đàn ông trung niên ngồi."
+
+R61_short_syllable_start_sentence_hardlock:
+  # round 15 add 2026-06-28 — Mr.Long: "Đêm hôm ấy, chữ Đêm nghe như bị cụt / hụt hơi"
+  rule: "CẤM mở đầu câu/đoạn bằng từ 1 âm tiết đơn rồi space + content"
+  why: |
+    TTS prosody accelerates at sentence start — short syllable bị nuốt/cụt.
+    Pattern "Đêm đó." / "Hà Nội." / "Khải Phong." mở đầu → "Đêm" cụt mất.
+  banned_starts: ['Đêm', 'Hôm', 'Ngày', 'Năm', 'Sáng', 'Chiều', 'Tối']
+  fix_pattern:
+    bad: "Đêm đó mưa từ bảy giờ."
+    good: "Hôm đó, từ bảy giờ tối, mưa đã rơi không ngớt."
+  alternatives: ["Vào đêm đó", "Trong đêm hôm ấy", "Hôm ấy đêm"]
+  detection: tools/audit_short_syllable_start.py
+
+R60_short_syllable_eol_hardlock:
+  # round 15 add 2026-06-28 — Mr.Long: "các từ 2 chữ ở kết thúc câu như 'im' bị cụt âm"
+  rule: "CẤM kết thúc câu bằng từ 1 âm tiết đơn (mono-syllable cụt)"
+  why: |
+    TTS prosody decay tail — single-syllable bị nuốt sound.
+    "im." / "lặng." / "rơi." / "đi." kết câu → mất âm cuối.
+  banned_words_eol: ['im', 'lặng', 'rơi', 'đi', 'ra', 'qua', 'lui', 'tan', 'nhỏ', 'to']
+  fix_pattern:
+    bad: "Anh đứng im."
+    good: "Anh đứng im lặng một hồi lâu."
+  detection: tools/audit_short_eol.py
+
+R59_concat_short_syllable_cụt_hardlock:
+  # round 15 add 2026-06-28 — Mr.Long: "ướt một góc nhỏ, chữ nhỏ cũng bị cụt do mix"
+  rule: "Chuỗi 3+ từ ngắn (1-syl) liền tiếp ở cuối câu → TTS đọc cụt + mix glitch"
+  why: |
+    Concatenation pipeline + TTS decay → cuối câu chuỗi "ướt một góc nhỏ" cụt.
+    Đặc biệt với từ ending tilde hoặc 1-syl.
+  pattern_detection: '3+ consecutive single-syllable tokens before [.!?—]'
+  fix: "Pad bằng từ 2-syl hoặc thêm cụm bổ nghĩa"
+  example:
+    bad: "Mưa làm ướt một góc nhỏ."
+    good: "Mưa rơi xuống làm ướt một góc nhỏ trên bàn."
+
+R58_no_tilde_ending_sentence_hardlock:
+  # round 15 add 2026-06-28 — Mr.Long lệnh sau phát hiện TTS bug "đi Mỹ → đi Mỵ" + "cũ → cụ"
+  rule: "CẤM TUYỆT ĐỐI từ kết thúc câu (hoặc clause) bằng nguyên âm dấu NGÃ (~)"
+  why: |
+    BigVGAN/IndexTTS2 Vietnamese vocoder lỗi prosody at end-of-sentence:
+    dấu NGÃ (~) đọc giống dấu NẶNG (.) khi nằm cuối câu.
+    Mr.Long phát hiện 28/6: "đi Mỹ" → "đi Mỵ" (Hạ Vy sang du học)
+                            "khung cũ" → "khung cụ" (artifact)
+  banned_chars_at_eol: ['ã', 'ẵ', 'ẫ', 'ẽ', 'ễ', 'ĩ', 'õ', 'ỗ', 'ỡ', 'ũ', 'ữ', 'ỹ']
+  boundary_definition: 'EOL = ngay trước [.!?—"] hoặc \n hoặc [pause:'
+  common_violations:
+    - '"Mỹ" → "Hoa Kỳ" / "nước Mỹ" / "bên đó" (move mid-sentence)'
+    - '"cũ" → "xưa" / "thời xưa" / "lâu năm"'
+    - '"ngã" → "té" / "vấp" / "đổ"'
+    - '"vỡ" → "tan" / "nứt" / "nát"'
+    - '"chỗ" → "nơi" / "địa điểm"'
+    - '"lễ" → "buổi lễ" / "ngày lễ"'
+    - '"đã" → move mid-sentence (rare EOL)'
+    - '"nỗ" → "nỗ lực" full phrase'
+    - '"giã" → "biệt" / "chia tay"'
+    - '"đỗ" → "đậu" / "dừng lại"'
+    - '"bữa" → "ngày" / "lần"'
+    - '"cõi" → "thế giới" / move mid-sentence'
+    - '"nửa" → "phần" / move mid-sentence'
+  exceptions:
+    proper_noun_midword: "Mỹ Đức / Mỹ Linh / Mỹ Đình OK (compound — Mỹ không đứng cuối)"
+    dialogue_quote_close: 'cuối dialogue trong ngoặc kép vẫn áp dụng rule này'
+  enforcement:
+    - tools/audit_tilde_eol.py — scan + report violations
+    - .githooks/pre-commit — block commit if HIGH violations > 0
+    - tools/auto_fix_tilde_eol.py — suggest rewrite (manual approve)
+    - prompts/generator.md PHASE 12.99 — pre-write enforcer
+  cross_ref: [R28 TTS pronunciation, R41 hook]
 
 R57_reveal_vignette_structure:
   # round 14 add 2026-06-28
@@ -127,10 +260,10 @@ R53_template_pattern_variety_hardlock:
   # round 13 add 2026-06-28 (Mr.Long lệnh nghiêm túc khai thác)
   rule: "Atmospheric template phrases CẤM lặp > 30 EPs với pattern identical"
   banned_overuse:
-    - "Chuông xe ngân. Một tiếng. Tan." identical 32/50 → cần varied 4-5 forms
-    - "bước lên xe. Đi qua hàng ghế đầu" 39/50 → cần varied entry
-    - "Khải Phong quan sát từ ghế ba" 40/50 → cần varied observation phrases
-    - "vuốt vai + Mỉm cười" ghost manifest 25/50 → vary ghost desc
+    - '"Chuông xe ngân. Một tiếng. Tan." identical 32/50 → cần varied 4-5 forms'
+    - '"bước lên xe. Đi qua hàng ghế đầu" 39/50 → cần varied entry'
+    - '"Khải Phong quan sát từ ghế ba" 40/50 → cần varied observation phrases'
+    - '"vuốt vai + Mỉm cười" ghost manifest 25/50 → vary ghost desc'
   approved_bell_variants:
     - "Chuông xe ngân. Một tiếng. Tan."          # max 15/50
     - "Tiếng chuông ngân nhẹ. Một hồi. Lặng."
@@ -166,16 +299,16 @@ R51_dialogue_audit_smart_v2:
   # round 12 add 2026-06-28 (Mr.Long lệnh refine bot báo thông minh)
   rule: "Audit dialogue chỉ flag TRUE ambiguity, accept Ngọc Ngạn first-person monologue"
   acceptable_patterns:
-    - First-person passenger monologue: "Em là X. Em sống. Em đi. Em hứa" — natural Vietnamese
-    - Self-action verbs sau 'em': cố/sẽ/đã/không/chỉ/cũng/vẫn/đang/là/có
-    - Quoted direct speech với context rõ về subject
+    - 'First-person passenger monologue: "Em là X. Em sống. Em đi. Em hứa" — natural Vietnamese'
+    - "Self-action verbs sau 'em': cố/sẽ/đã/không/chỉ/cũng/vẫn/đang/là/có"
+    - 'Quoted direct speech với context rõ về subject'
   flag_patterns:
     HIGH: "'em [non-self-verb] em' trong cùng 1 sentence (2 referents)"
     MEDIUM: "3+ em sau named person trong cùng sentence"
   excluded_false_positives:
-    - "Em cố nhớ" / "Em sẽ làm" / "Em đã đi" → self-ref OK
-    - "Em là Bích Trâm" intro → OK
-    - "Chị tắm cho em lúc em mới sinh" → 'em' both refer speaker (self) → OK
+    - '"Em cố nhớ" / "Em sẽ làm" / "Em đã đi" → self-ref OK'
+    - '"Em là Bích Trâm" intro → OK'
+    - '"Chị tắm cho em lúc em mới sinh" → "em" both refer speaker (self) → OK'
   enforcement: tools/audit_dialogue_hierarchy.py v2 smart
   no_inference: "Pattern strict — chỉ flag 'em [object_verb] em' + multi-named context"
   cross_ref: [R46 anaphora accept, R48 hierarchy]

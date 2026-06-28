@@ -54,11 +54,11 @@ arc_design_compliant: bible/21 R33-R38
 
 Hà Nội cuối tháng tư. Đêm. Chuyến xe đi qua đoạn ven đường ven cánh đồng lúa Phú Xu, Hà Nội. Đèn pha rọi lên hàng cây — ánh đèn vàng cô đơn.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ mười sáu. Trong túi áo gió Khải Phong — mười lăm vật. Đêm qua thêm vải bông cuốn gương vỡ.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười sáu. Trong túi áo gió Khải Phong — mười lăm vật. Đêm qua thêm vải bông cuốn gương tan.
 
 Bác tài lái. Đoạn đường này Khải Phong chưa đi — Phú Xuyên ngoại thành phía Nam Hà Nội.
 
-Xe chậm lại trước một sân chùa nhỏ — cổng tam quan đã đóng — đèn dầu treo cột tre còn sáng yếu. Bảng "Chùa Phú Đường" gỗ cũ.
+Xe chậm lại trước một sân chùa nhỏ — cổng tam quan đã đóng — đèn dầu treo cột tre còn sáng yếu. Bảng "Chùa Phú Đường" gỗ xưa.
 
 Một phụ nữ đứng đợi bên cổng. Khoảng ba mươi tám tuổi. Áo dài nâu — vạt áo dài quá đầu gối. Tay phải ôm chậu cúc nhỏ — đường kính bàn tay — chậu sứ trắng — cúc đã ra hoa vàng nhạt.
 
@@ -72,9 +72,9 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Cô ngồi yên. Đỡ chậu cúc. Cánh hoa vàng nhạt — không phải cúc khô — cúc tươi mới hái.
+Cô gái ngồi yên lặng. Đỡ chậu cúc. Cánh hoa vàng nhạt — không phải cúc khô — cúc tươi mới hái.
 
-Khải Phong quan sát từ ghế ba. Cúc trong chậu cô đỡ — màu vàng nhạt — giống cánh cúc khô đêm thứ mười ba — giống chỉ thêu đêm thứ mười bốn. Cùng cúc — vật thứ ba trong cụm.
+Khải Phong quan sát từ ghế ba. Cúc trong chậu cô đỡ lấy — màu vàng nhạt — giống cánh cúc khô đêm thứ mười ba — giống chỉ thêu đêm thứ mười bốn. Cùng cúc — vật thứ ba trong cụm.
 
 Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng. Tắt.
 
@@ -90,21 +90,21 @@ Cô vuốt một cánh cúc trong chậu — dịu — cánh không rụng.
 
 [pause:500ms]
 
-Xe đi qua xóm cũ. Phía bên phải — căn nhà mái ngói — sân nhỏ — hàng chậu cúc xếp dọc hiên. Cạnh hiên — bà cụ ngồi trên ghế gỗ — tay cầm bình nước — tưới cúc. Không quay đầu.
+Xe đi qua xóm xưa. Phía bên phải — căn nhà mái ngói — sân nhỏ — hàng chậu cúc xếp dọc hiên. Cạnh hiên — bà cụ ngồi trên ghế gỗ mun — tay cầm bình nước — tưới cúc. Không quay đầu.
 
 Cô ghế mười nhìn về phía đó. Mắt cô đỏ — không khóc — chỉ đỏ.
 
 "Mẹ..."
 
-Cô nói nhỏ.
+Cô nói rất nhỏ.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
 [pause:1000ms]
 
-Xe đi qua. Nhà mái ngói khuất. Bà cụ khuất.
+Xe đi qua đó. Nhà mái ngói khuất. Bà cụ khuất.
 
-Cô quay đầu. Đỡ chậu cúc chặt hơn. Hơi thở chậm.
+Cô gái quay đầu lại. Đỡ chậu cúc chặt hơn. Hơi thở chậm lại.
 
 ---
 
@@ -124,7 +124,7 @@ Giọng cô đều — chậm.
 
 "Năm em hai mươi tuổi — em sinh viên năm hai — em quen anh Hùng. Anh hơn em năm tuổi — kỹ sư phần mềm — ngoại tỉnh — Quảng Bình. Anh không có nhà Hà Nội — không có tiền — chỉ có lương."
 
-"Em đem anh về giới thiệu mẹ. Mẹ nhìn anh — không nói. Mẹ pha trà — đợi anh đi — gọi em ra."
+"Em đem anh về giới thiệu mẹ. Mẹ nhìn anh — không nói. Mẹ pha trà — đợi anh đi — gọi em ra ngoài."
 
 "Mẹ bảo: 'Yến ơi mẹ không thích anh này. Quê xa — không gia đình ở đây — không nhà — không nền tảng. Em yêu ai — mẹ cho — nhưng anh này — mẹ xin em đừng cưới.'"
 
@@ -138,7 +138,7 @@ Giọng cô đều — chậm.
 
 [pause:1500ms]
 
-"Một tháng sau cãi nhau — em nhận điện thoại bố. Năm giờ sáng. Bố khóc: 'Yến ơi mẹ...' Bố không nói hết."
+"Một tháng sau cãi nhau — em nhận điện thoại bố. Năm giờ sáng lên. Bố khóc: 'Yến ơi mẹ...' Bố không nói hết."
 
 "Em chạy về. Mẹ nằm trong sân — bên chậu cúc — bình nước đổ. Bố bảo: 'Mẹ ra tưới cúc sáng sớm — gục — không kịp gọi.'"
 
@@ -158,7 +158,7 @@ Giọng cô đều — chậm.
 
 [pause:1500ms]
 
-"Bố em vẫn ở nhà cũ Hà Đông — trồng cúc tiếp — hai mươi chậu của mẹ — bố giữ. Năm vừa rồi bố yếu — bố không tưới đủ — mười chậu chết. Bố gọi em: 'Yến ơi bố không chăm cúc của mẹ được nữa. Em đem chậu nào em thích về nhà em.'"
+"Bố em vẫn ở nhà cũ Hà Đông — trồng cúc tiếp — hai mươi chậu của mẹ — bố giữ lại. Năm vừa rồi bố yếu — bố không tưới đủ — mười chậu chết. Bố gọi em: 'Yến ơi bố không chăm cúc của mẹ được nữa. Em đem chậu nào em thích về nhà em.'"
 
 "Em về. Em chọn một chậu — chậu cúc kim ngân — chậu mẹ thích nhất. Chậu này — mẹ trồng năm em hai mươi tuổi — chính năm em cãi mẹ. Mẹ trồng sau ngày em đi Hà Nội không về."
 
@@ -168,7 +168,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Cô gật. Mắt đỏ.
+Cô gái khẽ gật đầu. Mắt đỏ.
 
 "Em nhớ. Em cãi mẹ năm hai mươi — mẹ trồng chậu cúc này tháng sau — mẹ trồng vì mẹ buồn em không về. Chậu này có lẽ chứa nỗi buồn mẹ. Em chăm tám tháng — như xin lỗi mẹ qua đất qua nước qua cánh hoa."
 
@@ -192,7 +192,7 @@ Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim
 
 Bác tài: "Chưa tới lúc."
 
-Cô bước xuống.
+Cô bước xuống dưới.
 
 [pause:1200ms]
 
@@ -202,9 +202,9 @@ Cô đến. Đặt chậu cúc trước bệ. Quỳ. Cúi đầu. Tay chắp.
 
 Khải Phong chớp mắt — nhìn qua cửa sổ. Bên chậu cúc — bà mẹ xuất hiện — mặc áo bà ba xám — tay cầm bình nước — vuốt tóc cô Hoàng Yến một lần. Mỉm cười.
 
-Khải Phong chớp lần nữa. Mẹ tan.
+Khải Phong chớp lần nữa. Mẹ tan ra.
 
-Hoàng Yến ngẩng đầu. Lau khóe mắt bằng tay áo dài. Quỳ thêm. Tụng nhỏ.
+Hoàng Yến ngẩng đầu. Lau khóe mắt bằng tay áo dài. Quỳ thêm. Tụng rất nhỏ.
 
 [pause:1500ms]
 

@@ -52,7 +52,7 @@ arc_design_compliant: bible/21 R33-R42 + R36 callback ep_35
 
 [pause:800ms]
 
-Đêm. Đường vắng. Xe đêm trôi qua đoạn sông Đuống, Bắc Ninh. Đèn pha quét đi quét lại trên hàng dâu cổ — quen Khải Phong — đêm hai mươi hai đã đi — không có ai khác trên đường.
+Đêm. Đường vắng tanh. Xe đêm trôi qua đoạn sông Đuống, Bắc Ninh. Đèn pha quét đi quét lại trên hàng dâu cổ — quen Khải Phong — đêm hai mươi hai đã đi — không có ai khác trên đường.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi lăm. Trong túi áo gió Khải Phong — bốn mươi tư vật.
 
@@ -62,15 +62,15 @@ Bác tài lái. Liếc gương — dừng trên Khải Phong lâu hơn thường
 
 Khải Phong gật. Bác tài tiếp:
 
-"Xe dừng cùng bến đêm hai mươi hai — Quỳnh Mai. Bến cũ — callback. Cứ giữ vật."
+"Xe dừng cùng bến đêm hai mươi hai — Quỳnh Mai. Bến xưa — callback. Cứ giữ vật."
 
 Khải Phong nhớ — đêm hai mươi hai — Quỳnh Mai đem sách thầy về trường THCS Mai Trung. Cùng bến.
 
-Xe chậm lại trước trường THCS Mai Trung — cùng cổng cũ. Một thanh niên đứng đợi bên cổng. Khoảng ba mươi tuổi. Áo gió xám — quần jeans. Tay phải cầm hộp giấy nhỏ.
+Xe chậm lại trước trường THCS Mai Trung — cùng cổng xưa. Một thanh niên đứng đợi bên cổng. Khoảng ba mươi tuổi. Áo gió xám — quần jeans. Tay phải cầm hộp giấy nhỏ.
 
-Anh lên bậc xe. Đi đến hàng ghế giữa — chân chậm. Ngồi xuống ghế thứ bảy.
+Anh lên bậc xe. Đi đến hàng ghế giữa — chân chậm lại. Ngồi xuống ghế thứ bảy.
 
-Mở hộp giấy. Lấy ra một mảnh gương vỡ — cỡ bằng hai ngón tay — cuốn vải bông trắng.
+Mở hộp giấy. Lấy ra một mảnh gương tan — cỡ bằng hai ngón tay — cuốn vải bông trắng.
 
 Xe lăn bánh.
 
@@ -90,7 +90,7 @@ Mảnh gương — Khải Phong nhìn ra — vật thứ tư trong cụm gương
 
 [pause:500ms]
 
-Bác tài liếc gương. Không nói nữa.
+Bác tài liếc gương. Không nói nữa thôi.
 
 Anh đặt mảnh gương lên đùi.
 
@@ -100,7 +100,7 @@ Anh đặt mảnh gương lên đùi.
 
 [pause:500ms]
 
-Xe đi qua xóm cũ. Phía bên phải — căn nhà gạch đỏ — sân nhỏ — cửa khép. Đèn vàng trong nhà còn sáng yếu.
+Xe đi qua xóm xưa. Phía bên phải — căn nhà gạch đỏ — sân nhỏ — cửa khép. Đèn vàng trong nhà còn sáng yếu.
 
 Cạnh cửa — bóng thanh niên trẻ chừng hai mươi tuổi đứng — mặt mệt — tay cầm dao — không quay đầu.
 
@@ -108,13 +108,13 @@ Anh ghế bảy nhìn về phía đó.
 
 "Tôi..."
 
-Anh nói nhỏ.
+Anh nói rất nhỏ.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
 [pause:1000ms]
 
-Xe đi qua. Nhà gạch khuất.
+Xe đi qua đó. Nhà gạch khuất.
 
 Anh quay đầu lại. Vuốt vải bông.
 
@@ -136,15 +136,15 @@ Khải Phong giật mình. Mạnh Hiếu cùng trường THCS Mai Trung — trư
 
 "Em về phòng trọ một mình. Em ngồi trước gương treo tường. Em nhìn mình. Em thấy mặt mình — gầy — thất bại — không nên sống tiếp."
 
-"Em đập gương. Mảnh vỡ rơi. Em nhặt một mảnh — định cứa cổ tay."
+"Em đập gương. Mảnh vỡ rơi xuống. Em nhặt một mảnh — định cứa cổ tay."
 
-"Trước khi cứa — em nhìn mảnh gương vỡ. Em thấy mặt mình trong mảnh — gầy như trên gương lớn — nhưng nhỏ hơn — cô đơn hơn."
+"Trước khi cứa — em nhìn mảnh gương tan. Em thấy mặt mình trong mảnh — gầy như trên gương lớn — nhưng nhỏ hơn — cô đơn hơn."
 
 [pause:1200ms]
 
 "Em nhớ thầy Hồng — thầy chủ nhiệm em hồi cấp hai trường THCS Mai Trung. Thầy đã dạy em hai năm cấp hai. Thầy thương em — thầy giúp em tự tin học tiếp."
 
-"Em nhớ thầy bảo em hồi lớp tám: 'Hiếu ơi em có giỏi hơn em nghĩ. Thất bại một lần — không phải hết. Cuộc đời dài.'"
+"Em nhớ thầy bảo em hồi lớp tám: 'Hiếu ơi em có giỏi hơn em nghĩ thầm. Thất bại một lần — không phải hết rồi. Cuộc đời dài.'"
 
 "Em không cứa. Em gọi thầy Hồng. Thầy bắt máy. Thầy bảo em: 'Em đến nhà thầy tối nay đi.'"
 
@@ -194,7 +194,7 @@ Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim
 
 Bác tài: "Chưa tới lúc."
 
-Anh bước xuống.
+Anh bước xuống dưới.
 
 [pause:1200ms]
 
@@ -204,9 +204,9 @@ Anh đến. Đưa mảnh gương cho cô tư vấn tâm lý trực đêm. Cô nh
 
 Khải Phong chớp mắt — nhìn qua cửa sổ. Bên Mạnh Hiếu — thầy Hồng xuất hiện — ông sáu mươi áo sơ mi xanh (như EP22) — vuốt vai Mạnh Hiếu. Mỉm cười.
 
-Khải Phong chớp lần nữa. Thầy tan.
+Khải Phong chớp lần nữa. Thầy tan ra.
 
-Mạnh Hiếu ngẩng đầu. Đi ra.
+Mạnh Hiếu ngẩng đầu. Đi ra ngoài.
 
 [pause:1500ms]
 
@@ -256,7 +256,7 @@ Khải Phong vẫn không trả lời. Anh không có lý do — anh chỉ ngạ
 
 Bác tài liếc gương. "Đêm bốn mươi lăm. Con nhớ Hạ Nhi mời con dự cưới em sang năm. Đêm sau con sẽ ngẫm — con có đi không. Đừng vội."
 
-Khải Phong gật. Lệ rơi.
+Khải Phong gật. Lệ rơi xuống dưới.
 
 Đêm thứ bốn mươi lăm. Xe đi tiếp. Phía sau — Bắc Ninh khuất. Mạnh Hiếu ở lại phòng tâm lý — mảnh gương trong tủ kính.
 
@@ -266,7 +266,7 @@ Anh đặt vé cho Khải Phong. Anh không hỏi — anh không chờ anh đồ
 
 Khải Phong mở email — anh check. Có vé. Chuyến Vietnam Airlines tháng năm — đúng ngày cưới anh. Anh đã trả tiền vé.
 
-Anh — anh gái Hạ Vy — anh vẫn coi Khải Phong như anh rể. Anh không từ bỏ liên lạc — anh cố giữ. Khải Phong là người đã từ bỏ — không phải anh.
+Anh — anh gái Hạ Vy — anh vẫn coi Khải Phong như anh rể. Anh không từ bỏ liên lạc — anh cố giữ lại. Khải Phong là người đã từ bỏ — không phải anh.
 
 Khải Phong nhói. Anh đã sai. Anh cần đáp anh — anh cần đi dự cưới anh.
 

@@ -1,0 +1,306 @@
+{
+  "total_violations": 33,
+  "eps_with_issues": [
+    [
+      7,
+      4
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      11,
+      2
+    ],
+    [
+      13,
+      1
+    ],
+    [
+      17,
+      2
+    ],
+    [
+      18,
+      2
+    ],
+    [
+      19,
+      1
+    ],
+    [
+      20,
+      3
+    ],
+    [
+      21,
+      2
+    ],
+    [
+      23,
+      4
+    ],
+    [
+      25,
+      1
+    ],
+    [
+      30,
+      3
+    ],
+    [
+      31,
+      2
+    ],
+    [
+      33,
+      2
+    ],
+    [
+      37,
+      1
+    ],
+    [
+      41,
+      1
+    ],
+    [
+      42,
+      1
+    ]
+  ],
+  "violations": [
+    {
+      "line": 59,
+      "word": "chữ",
+      "context": "ên phong bao có viết hai từng chữ \"Tặng mẹ\" — chữ viết",
+      "severity": "HIGH",
+      "ep": 7
+    },
+    {
+      "line": 101,
+      "word": "chữ",
+      "context": "uốt nhẹ mặt phong bao có từng chữ \"Tặng mẹ\".",
+      "severity": "HIGH",
+      "ep": 7
+    },
+    {
+      "line": 253,
+      "word": "chữ",
+      "context": "Có hai nét chữ. Hai chữ rất nhỏ. \"",
+      "severity": "HIGH",
+      "ep": 7
+    },
+    {
+      "line": 255,
+      "word": "chữ",
+      "context": "nh Vượng\". Mặt sau — hai từng chữ \"Tặng mẹ\" viết tay.",
+      "severity": "HIGH",
+      "ep": 7
+    },
+    {
+      "line": 119,
+      "word": "lỡ",
+      "context": "hòng. Mở điện thoại — ba cuộc lỡ. Một tin nhắn từ bà",
+      "severity": "HIGH",
+      "ep": 8
+    },
+    {
+      "line": 45,
+      "word": "chữ",
+      "context": "— đèn vàng hắt lên hàng từng chữ \"Nghĩa trang xã Phú",
+      "severity": "HIGH",
+      "ep": 11
+    },
+    {
+      "line": 125,
+      "word": "chữ",
+      "context": "mẫu giáo. Chị dạy em viết nét chữ. Mọi thứ em biết —",
+      "severity": "HIGH",
+      "ep": 11
+    },
+    {
+      "line": 43,
+      "word": "chữ",
+      "context": "\"Vườn cúc Phú An\" đã mòn nét chữ.",
+      "severity": "HIGH",
+      "ep": 13
+    },
+    {
+      "line": 119,
+      "word": "lỡ",
+      "context": "ty. Tôi không nghe. Cuộc gọi lỡ.\"",
+      "severity": "HIGH",
+      "ep": 17
+    },
+    {
+      "line": 221,
+      "word": "lỡ",
+      "context": "— một tin nhắn — một cuộc gọi lỡ — một tiếng chuông đ",
+      "severity": "HIGH",
+      "ep": 17
+    },
+    {
+      "line": 43,
+      "word": "chữ",
+      "context": "biển \"Cà phê Lâm\" đã mòn nét chữ. Một phụ nữ trẻ đứn",
+      "severity": "HIGH",
+      "ep": 18
+    },
+    {
+      "line": 55,
+      "word": "chữ",
+      "context": "không đọc — chỉ nhìn nét nét chữ. Nét bút bi xanh —",
+      "severity": "HIGH",
+      "ep": 18
+    },
+    {
+      "line": 43,
+      "word": "chữ",
+      "context": "— đèn vàng hắt lên hàng từng chữ \"Nghĩa trang Đông Hộ",
+      "severity": "HIGH",
+      "ep": 19
+    },
+    {
+      "line": 205,
+      "word": "ngõ",
+      "context": "ớp mắt — nhìn qua cửa sổ. Bên ngõ — Hoài xuất hiện — m",
+      "severity": "HIGH",
+      "ep": 20
+    },
+    {
+      "line": 209,
+      "word": "ngõ",
+      "context": "Nhật Minh quay lại — đi xuống ngõ. Không nhìn lại.",
+      "severity": "HIGH",
+      "ep": 20
+    },
+    {
+      "line": 276,
+      "word": "lỡ",
+      "context": "ràng. Còn cuộc gọi Khải Phong lỡ — chưa nhớ.",
+      "severity": "HIGH",
+      "ep": 20
+    },
+    {
+      "line": 45,
+      "word": "chữ",
+      "context": "ỹ Thuận\" gỗ xưa — đã mòn từng chữ — nhưng còn đọc được",
+      "severity": "HIGH",
+      "ep": 21
+    },
+    {
+      "line": 113,
+      "word": "rũ",
+      "context": "nắm tay con một lần — rồi tay rũ. Mẹ con nhìn con —",
+      "severity": "HIGH",
+      "ep": 21
+    },
+    {
+      "line": 45,
+      "word": "chữ",
+      "context": "eon đã tắt nửa — chỉ còn từng chữ \"Hải Cảng\" sáng. Cửa",
+      "severity": "HIGH",
+      "ep": 23
+    },
+    {
+      "line": 61,
+      "word": "chữ",
+      "context": "không đọc — chỉ nhìn nét nét chữ. Nét bút bi xanh —",
+      "severity": "HIGH",
+      "ep": 23
+    },
+    {
+      "line": 71,
+      "word": "chữ",
+      "context": "không đọc — chỉ nhìn nét nét chữ. Như đã thuộc nội d",
+      "severity": "HIGH",
+      "ep": 23
+    },
+    {
+      "line": 209,
+      "word": "chữ",
+      "context": "màu nâu — đã ố — không có nét chữ.",
+      "severity": "HIGH",
+      "ep": 23
+    },
+    {
+      "line": 39,
+      "word": "chữ",
+      "context": "mẩu giấy vở học sinh với từng chữ \"Cô giáo em...\"",
+      "severity": "HIGH",
+      "ep": 25
+    },
+    {
+      "line": 243,
+      "word": "chữ",
+      "context": "p gốc bong từ khung — có từng chữ \"2017\" rõ ràng — và",
+      "severity": "HIGH",
+      "ep": 30
+    },
+    {
+      "line": 282,
+      "word": "chữ",
+      "context": "ải Phong nhìn mẩu bằng — từng chữ \"Khải Phong\" rõ ràng",
+      "severity": "HIGH",
+      "ep": 30
+    },
+    {
+      "line": 284,
+      "word": "chữ",
+      "context": "Lệ rơi xuống mẩu bằng — từng chữ \"Khải Phong\" có giọt",
+      "severity": "HIGH",
+      "ep": 30
+    },
+    {
+      "line": 45,
+      "word": "chữ",
+      "context": "hĩa trang An Vinh\" gỗ mòn nét chữ.",
+      "severity": "HIGH",
+      "ep": 31
+    },
+    {
+      "line": 149,
+      "word": "kỹ",
+      "context": "ậu này nhỏ hơn — em chăm chưa kỹ — vườn vắng tay. Em",
+      "severity": "HIGH",
+      "ep": 31
+    },
+    {
+      "line": 181,
+      "word": "vĩ",
+      "context": "Ngã ba Cát Linh — cây phượng vĩ — bến gần ga. Chuông",
+      "severity": "HIGH",
+      "ep": 33
+    },
+    {
+      "line": 213,
+      "word": "chữ",
+      "context": "Mẩu — màu vàng nhạt — có từng chữ \"Cát Linh-Hà Đông\" r",
+      "severity": "HIGH",
+      "ep": 33
+    },
+    {
+      "line": 43,
+      "word": "kẽ",
+      "context": "n phố hắt xuống — vàng đỏ xen kẽ.",
+      "severity": "HIGH",
+      "ep": 37
+    },
+    {
+      "line": 81,
+      "word": "gõ",
+      "context": "o — tay cầm điện thoại — đang gõ. Không quay đầu.",
+      "severity": "HIGH",
+      "ep": 41
+    },
+    {
+      "line": 63,
+      "word": "chữ",
+      "context": "ra — nhẫn cưới — có khắc từng chữ \"H\" — không phải nhẫ",
+      "severity": "HIGH",
+      "ep": 42
+    }
+  ]
+}

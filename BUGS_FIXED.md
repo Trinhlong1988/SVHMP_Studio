@@ -6,6 +6,129 @@
 
 ---
 
+## Round 18 bugs (2026-06-28 — TTS+LOGIC R58-R65 session)
+
+### B51 — EP01 plot hole logic toán: đồng hồ duplicate [FIXED]
+- Mr.Long phát hiện: Khải Phong xuống xe "tay ôm đồng hồ" (line 572) → ghế bảy "có vật nhỏ... chiếc đồng hồ nữ vỏ xà cừ" (line 604-614) → 2 đồng hồ duplicate
+- Fix: rewrite trance natural — "Bàn tay anh buông lỏng tự khi nào. Chiếc đồng hồ trượt khỏi lòng tay — rơi êm xuống ghế số bảy. Anh không quay đầu nhặt."
+- Regression: R65 logic toán/lý/hóa/sinh consistency hardlock + tools/audit_logic_total.py (build phase 2)
+
+### B52 — TTS pronunciation "Mỹ" → "Mỵ" (dấu ngã EOL bug) [FIXED]
+- Mr.Long phát hiện: "đoạn đi Mỹ, nghe như đi Mỵ" — TTS BigVGAN bug dấu ngã ở EOL đọc thành dấu nặng
+- Cross-EP affected: EP01 / EP06 / EP27 (3x) / EP36 — fix "đi Mỹ" → "đi du học Hoa Kỳ" / "ở Mỹ" → "ở Hoa Kỳ" / "sang Mỹ" → "sang Hoa Kỳ"
+- Regression: R58 hardlock + tools/audit_tilde_eol.py (495→43 violations)
+
+### B53 — TTS "Đêm" mở đầu câu hụt hơi [FIXED]
+- Mr.Long: "đoạn mở đầu Đêm hôm ấy, chữ Đêm nghe như bị cụt/hụt hơi"
+- EP01 line 70: "Đêm đó mưa từ bảy giờ." → "Hôm đó, từ bảy giờ tối, mưa đã rơi không ngớt."
+- Regression: R61 hardlock + tools/audit_short_start.py
+
+### B54 — EP11 rename mistake "chị Hà" → "chị Hạ Vy" (2 nhân vật khác) [FIXED]
+- Em rename "Hà" → "Hạ Vy" cross-EP trước đã làm SAI EP11 line 131 + 215
+- EP11 "chị Hà" = Phạm Thị Thu Hà (chị bác sĩ Đức) ≠ Hạ Vy (người yêu Khải Phong)
+- Fix: revert "chị Hạ Vy" → "chị Thu Hà" EP11 only
+- Regression: R65 character consistency cross-EP
+
+### B55 — Grammar "chợt" + câu hỏi SAI [FIXED]
+- Mr.Long: "dùng từ chợt cho câu hỏi có đúng không?" — "chợt" adverb modifies past-tense statement, KHÔNG hợp câu hỏi
+- Fix: bible/22 anti_slop grammar_note — "Anh chợt hiểu chưa?" SAI → "Anh đã hiểu chưa?"
+- Regression: R44 dictionary block extend grammar dimension
+
+### B56 — TTS "im./đi./tan." short EOL cụt âm [FIXED]
+- Mr.Long: "các từ 2 chữ ở kết thúc câu như im hoặc các từ khác nghe bị cụt âm"
+- 1259 violations across 50 EPs → 50 sau auto-fix
+- Fix: tools/auto_fix_short_eol.py pad bằng từ ≥2 syllables
+- Regression: R60 hardlock
+
+### B57 — Anaphora "người người người" liền >2 nhàm chán [PENDING manual]
+- Mr.Long: "người lặp đi lặp lại liên nhau quá 2 lần nghe nhàm chán như lỗi"
+- 189 violations across 45 EPs — auto-fix risky meaning change → manual per-context
+- Regression: R62 hardlock + tools/audit_anaphora_consecutive.py
+
+### B58 — EP01 "Mặt số La Mã" ending Mã (tilde EOL) [FIXED]
+- 2 instances line 41 + 101 → fix "Mặt số La Mã." → "Mặt số La Mã in chìm trên nền cừ."
+- Regression: R58
+
+### B59 — EP01 "ngoài cửa kính... ngoài kia" lặp phrase [FIXED]
+- Mr.Long: "ngoài cửa kính... xong lại ngoài kia có hợp lý không?"
+- Line 248-250: rewrite — "Khải Phong nhìn ra ngoài. Mặt kính đọng giọt mưa nhỏ. Sương đặc thêm sau lớp kính mờ."
+
+---
+
+## Round 17 bugs (2026-06-28 — AUDIO_MIX_RULES codify session)
+
+### B50 — R42 PRO MIX có 1300 sample-level click/pop từ giây 18.85 [RESOLVED detection, PENDING re-mix R43]
+- **Ngày catch:** 2026-06-28 (audit_audio_mix_qa.py C13 first run)
+- **Phát hiện qua:** `python tools/audit_audio_mix_qa.py --ep 1 --wav output/ep_01/EP01_R42_PRO_MIX.wav` → C13 FAIL HIGH: `1300 click/pop. First @ 18.85s`
+- **Triệu chứng:** Khán giả nghe ra "tạp âm loẹt xoẹt" liên tục từ giây 19 trở đi (Mr.Long judge "tạp âm khác"). 1300 chỗ sample-level discontinuity > 0.3 amplitude trong 2 samples liền.
+- **Root cause:**
+  - `C:/tmp/mix_ep01_v5_pro.py` line 76 `fade_in_out()` chỉ áp fade cho piano section boundaries (3s)
+  - SFX accents (line 332-336) chỉ áp fade 0.5s in + 1s out
+  - Cross-fade giữa moments (khi music switch category mid-section) KHÔNG có fade → hard cut → click
+  - DC offset 4031 windows > 0.001 cũng góp phần (line 346 chỉ DC remove ONCE post-mix, không per-clip)
+- **Fix shipped 28/6 (detection):**
+  - `tools/audit_audio_mix_qa.py` C13 sample-level click/pop scan implemented + verified work
+  - `bible/05 v1.1 R_AUDIO_09_no_audio_artifacts_hardlock` codify zero tolerance + min_fade_ms 80
+  - `bible/00 R59` block ship nếu C13 FAIL
+- **Fix pending (R43 mixer):**
+  - Apply min 80ms fade tất cả clip boundaries (piano + SFX + ambient)
+  - Use scipy.signal.resample_poly với anti-alias filter cho SR conversion (currently lib has 22050 + 48000 mix)
+  - DC offset removal per-clip + per-section, not just final
+  - Re-render R43 + re-audit C13 → must report 0 click
+- **Regression test:** `tools/audit_audio_mix_qa.py --ep N` C13 auto-run pre-commit
+- **Meta-lesson:** Em ship R42 PRO MIX với "sidechain ducking + 3-tier + climax detect" — sophisticated mixing tech, BUT bỏ qua basic mix hygiene (fade boundaries). Sophistication != quality. Always audit BASICS (click/pop/DC) trước features.
+
+### B49 — assignment_planner.py v1.0 chọn SFX phi lý với setting (fire/chandelier/desert trên xe buýt Hà Nội) [RESOLVED v2.0]
+- **Ngày catch:** 2026-06-28 (Mr.Long judge R42 PRO MIX "lồng hiệu ứng không phù hợp")
+- **Phát hiện qua:** Em đọc `output/ep_audio_plan.yaml` EP01.sfx → 4/6 picks phi lý setting:
+  - SETUP: "13_Fire in fireplace" — xe buýt KHÔNG có lò sưởi
+  - INCIDENT: "Shattering Chandelier" — xe buýt KHÔNG có đèn chùm
+  - PAYOFF: "Heavy breathing" — không match emotional swell + vi phạm NEVER.jump_scare
+  - CLIFFHANGER: "Desert wind" — SVHMP Hà Nội KHÔNG phải sa mạc
+- **Triệu chứng:** SFX random từ pool 822 pixabay không cross-check với setting EP. EP01 setting `setting_dem_thang_tu_HN` + `setting_mua_nho` (xe buýt đêm mưa phùn) — SFX picks phải match (rain/wet_road/wiper/lamp), KHÔNG fire/chandelier/desert.
+- **Root cause:**
+  - `tools/assignment_planner.py` v1.0 line 49 `SFX_BY_SECTION['SETUP']` có `'fire'` → category fire match → picks "Fire in fireplace"
+  - Line 49 `'glass'` → picks "Shattering Chandelier"
+  - Line 52 `'wind'` → picks "Desert wind"
+  - Line 120 `pick_sfx()` chỉ `random.choice(avail)` từ pool, NO semantic context check vs `bible/13 setting_library` hoặc `bible/00 NEVER.gore + NEVER.jump_scare`
+  - KHÔNG ưu tiên 25 HDK_* specialized tracks đã categorized sẵn (HDK_MYSTERY/SAD/REVEAL/TENSION/ENDING x5 seeds)
+- **Fix shipped 28/6:**
+  - `bible/05 v1.1 R_AUDIO_04_setting_sfx_validation` define `forbidden_by_vehicle_context.xe_buyt_dem` list (fire/chandelier/desert/etc)
+  - `bible/05 v1.1 R_AUDIO_05` define moment_to_music_category mapping HDK_SAD/REVEAL/MYSTERY
+  - `tools/assignment_planner.py` v1.0 → **v2.0** refactor:
+    - Layer 1: HDK specialized pick first (`get_hdk_tracks_for_category`)
+    - Layer 2: pixabay fallback
+    - `pick_sfx()` filter `FORBIDDEN_SFX_KEYWORDS` PRE-pick
+    - `SFX_BY_SECTION_V2` removed 'fire'/'glass'/'wolf' from defaults
+    - Emit `moment_map_template.yaml` per EP (R_AUDIO_02)
+  - `tools/audit_audio_mix_qa.py` C4 setting validation post-pick gate
+- **Regression test:** `tools/audit_audio_mix_qa.py --ep N` C4 scan SFX picks vs FORBIDDEN_KW. Verified on R42 PRO MIX → caught 4 violations.
+- **Counter:** rule_break N/A (new feature, không repeat violation)
+- **Meta-lesson:** Random pick từ metadata-categorized pool KHÔNG đủ — phải có semantic validation layer. Áp global: mọi pick từ asset library cần cross-check với physical setting + bible NEVER rules.
+
+### B51-B55 — bible/00_constitution.yaml 5 pre-existing YAML parse bugs (quoted scalar trailing text) [RESOLVED]
+- **Ngày catch:** 2026-06-28 (em add R59 → yaml.safe_load FAIL line 107)
+- **Phát hiện qua:** Cascade YAML parse errors fix iteratively (line 107 → 127 → 217 → 263 → 302)
+- **Triệu chứng:** `yaml.safe_load(bible/00)` raises `expected <block end>, but found '<scalar>'`. Bibles không load được → mọi tool dependent (audit_60_dimensions, post_render_gate, audit_audio_mix_qa) crash.
+- **Root cause (pattern B7 family):** YAML inline syntax với quoted string + trailing text trên cùng line:
+  - B51 line 107-110 R56 `must_be: - "Hồi tưởng" — fragments...` (R14 add round 14)
+  - B52 line 127-129 R56 `detection_patterns: - "Năm tôi/em [age] tuổi" lặp 5+ lần...`
+  - B53 line 215 R58 `boundary_definition: "EOL = ngay trước [.!?—""] hoặc..."` (double quote inside double quote)
+  - B54 line 263-266 R53 `banned_overuse: - "Chuông xe ngân. Một tiếng. Tan." identical 32/50...`
+  - B55 line 302-304 + 309-311 R51 `acceptable_patterns: - First-person passenger monologue: "Em là X..."`
+- **Fix:** Wrap entire string trong single quote outer (`- '"..." trailing'`). Fix 5 bugs total. Verified `yaml.safe_load` returns 48 top keys.
+- **Regression test:** `python -c "import yaml; yaml.safe_load(open('bible/00_constitution.yaml', encoding='utf-8'))"` exit 0
+- **Cross-ref:** B7 same pattern bible/20 line 240 (round 12 fix). General lesson: NEVER mix quoted string với trailing text trong YAML inline list — luôn wrap single quote outer.
+- **Meta-lesson:** Bug pattern này lặp 6 lần (B7 + B51-B55) — em phải audit toàn bộ bibles bằng `yaml.safe_load` round 18 + add pre-commit lint check.
+
+### B49 NAMING CONFLICT — R58 duplicate name in bible/00
+- **Ngày catch:** 2026-06-28 (em add R58 audio mới → đã có R58_no_tilde_ending_sentence_hardlock)
+- **Triệu chứng:** YAML mapping key conflict (silent — last definition wins)
+- **Fix:** Rename em ship `R58 → R59_audio_mix_qa_mandatory_pre_publish`. Update VERSION.md + bible/00 cross-refs.
+- **Meta-lesson:** Pre-add rule check `grep "R{N}_" bible/00` để verify name không trùng.
+
+---
+
 ## Bugs (seed từ memory entries existing)
 
 ### B1 — Arc schema thiếu payoff_owner

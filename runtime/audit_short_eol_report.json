@@ -1,0 +1,475 @@
+{
+  "total": 42,
+  "eps": [
+    [
+      6,
+      2
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      9,
+      1
+    ],
+    [
+      10,
+      1
+    ],
+    [
+      11,
+      1
+    ],
+    [
+      14,
+      1
+    ],
+    [
+      16,
+      2
+    ],
+    [
+      17,
+      1
+    ],
+    [
+      18,
+      2
+    ],
+    [
+      19,
+      1
+    ],
+    [
+      20,
+      1
+    ],
+    [
+      21,
+      1
+    ],
+    [
+      22,
+      1
+    ],
+    [
+      26,
+      2
+    ],
+    [
+      27,
+      1
+    ],
+    [
+      28,
+      2
+    ],
+    [
+      29,
+      1
+    ],
+    [
+      30,
+      2
+    ],
+    [
+      31,
+      2
+    ],
+    [
+      32,
+      1
+    ],
+    [
+      33,
+      1
+    ],
+    [
+      34,
+      1
+    ],
+    [
+      36,
+      1
+    ],
+    [
+      41,
+      1
+    ],
+    [
+      42,
+      1
+    ],
+    [
+      43,
+      1
+    ],
+    [
+      45,
+      1
+    ],
+    [
+      46,
+      1
+    ],
+    [
+      47,
+      1
+    ],
+    [
+      48,
+      1
+    ],
+    [
+      49,
+      1
+    ],
+    [
+      50,
+      2
+    ]
+  ],
+  "violations": [
+    {
+      "line": 65,
+      "word": "nhỏ",
+      "context": "Cụ bà ghế thứ tư khẽ ngân theo. Rất rất nhỏ. Như",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 6
+    },
+    {
+      "line": 157,
+      "word": "lặng",
+      "context": "\"Cháu lặng. Chá",
+      "sentence_words": 2,
+      "severity": "HIGH",
+      "ep": 6
+    },
+    {
+      "line": 63,
+      "word": "tan",
+      "context": "câu hát quen thuộc. \"...quê nhà...\" rồi tan.",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 7
+    },
+    {
+      "line": 175,
+      "word": "ra",
+      "context": "n từ ngôi chùa nhỏ xa. Một hồi. Rồi tan ra.",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 7
+    },
+    {
+      "line": 83,
+      "word": "đó",
+      "context": "\"Bà ngồi đó...\"",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 8
+    },
+    {
+      "line": 157,
+      "word": "rồi",
+      "context": "\"Em quên rồi. Em",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 9
+    },
+    {
+      "line": 271,
+      "word": "nữa",
+      "context": "u vọng tới — không phải \"...quê nhà...\" nữa. Lần",
+      "sentence_words": 2,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 91,
+      "word": "to",
+      "context": "Anh nói rất nhỏ. Không rất to. Khô",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 11
+    },
+    {
+      "line": 115,
+      "word": "qua",
+      "context": "\"Em đi qua. Em",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 14
+    },
+    {
+      "line": 187,
+      "word": "ra",
+      "context": "Khải Phong chớp lần nữa. Mẹ tan ra.",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 16
+    },
+    {
+      "line": 189,
+      "word": "nhỏ",
+      "context": "mắt bằng tay áo dài. Quỳ thêm. Tụng rất nhỏ.",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 16
+    },
+    {
+      "line": 197,
+      "word": "ra",
+      "context": "Khải Phong chớp lần nữa. Toàn tan ra.",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 17
+    },
+    {
+      "line": 111,
+      "word": "im",
+      "context": "\"Mẹ em im. Pha",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 18
+    },
+    {
+      "line": 201,
+      "word": "ra",
+      "context": "Khải Phong chớp lần nữa. Khang tan ra.",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 18
+    },
+    {
+      "line": 189,
+      "word": "ra",
+      "context": "Khải Phong chớp lần nữa. Mai tan ra.",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 19
+    },
+    {
+      "line": 207,
+      "word": "ra",
+      "context": "Khải Phong chớp lần nữa. Hoài tan ra.",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 20
+    },
+    {
+      "line": 155,
+      "word": "im",
+      "context": "\"Vợ tôi im. Hiể",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 21
+    },
+    {
+      "line": 205,
+      "word": "ra",
+      "context": "Khải Phong chớp lần nữa. Thầy tan ra.",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 22
+    },
+    {
+      "line": 139,
+      "word": "im",
+      "context": "\"Bố im. Rồi",
+      "sentence_words": 2,
+      "severity": "HIGH",
+      "ep": 26
+    },
+    {
+      "line": 205,
+      "word": "ra",
+      "context": "Khải Phong chớp lần nữa. Bố tan ra.",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 26
+    },
+    {
+      "line": 215,
+      "word": "ra",
+      "context": "Khải Phong chớp lần nữa. Hằng tan ra.",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 27
+    },
+    {
+      "line": 125,
+      "word": "lặng",
+      "context": "\"Em đứng lặng. Em",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 28
+    },
+    {
+      "line": 149,
+      "word": "im",
+      "context": "\"Em im. Em",
+      "sentence_words": 2,
+      "severity": "HIGH",
+      "ep": 28
+    },
+    {
+      "line": 201,
+      "word": "ra",
+      "context": "Khải Phong chớp lần nữa. Nga tan ra.",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 29
+    },
+    {
+      "line": 153,
+      "word": "im",
+      "context": "\"Mẹ tôi im. Tôi",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 30
+    },
+    {
+      "line": 231,
+      "word": "ra",
+      "context": "Khải Phong chớp lần nữa. Thầy tan ra.",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 30
+    },
+    {
+      "line": 189,
+      "word": "ra",
+      "context": "Khải Phong chớp lần nữa. Mẹ tan ra.",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 31
+    },
+    {
+      "line": 213,
+      "word": "to",
+      "context": "ngày cụ thể. Tháng tư năm 2018. Mưa rất to. Đêm",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 31
+    },
+    {
+      "line": 199,
+      "word": "ra",
+      "context": "Khải Phong chớp lần nữa. Nhung tan ra.",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 32
+    },
+    {
+      "line": 201,
+      "word": "ra",
+      "context": "Khải Phong chớp lần nữa. Quỳnh tan ra.",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 33
+    },
+    {
+      "line": 193,
+      "word": "ra",
+      "context": "Khải Phong chớp lần nữa. Bác tan ra.",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 34
+    },
+    {
+      "line": 139,
+      "word": "to",
+      "context": "uấn đến — quỳ bên quan tài em. Khóc rất to. Bố",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 36
+    },
+    {
+      "line": 191,
+      "word": "ra",
+      "context": "Khải Phong chớp lần nữa. Linh tan ra.",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 41
+    },
+    {
+      "line": 189,
+      "word": "ra",
+      "context": "Khải Phong chớp lần nữa. Hằng tan ra.",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 42
+    },
+    {
+      "line": 185,
+      "word": "ra",
+      "context": "Khải Phong chớp lần nữa. Hùng tan ra.",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 43
+    },
+    {
+      "line": 189,
+      "word": "ra",
+      "context": "Khải Phong chớp lần nữa. Thầy tan ra.",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 45
+    },
+    {
+      "line": 183,
+      "word": "ra",
+      "context": "Khải Phong chớp lần nữa. Bin tan ra.",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 46
+    },
+    {
+      "line": 175,
+      "word": "ra",
+      "context": "Khải Phong chớp lần nữa. Khoa tan ra.",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 47
+    },
+    {
+      "line": 185,
+      "word": "ra",
+      "context": "Khải Phong chớp lần nữa. Phong tan ra.",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 48
+    },
+    {
+      "line": 183,
+      "word": "ra",
+      "context": "Khải Phong chớp lần nữa. Vân tan ra.",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 49
+    },
+    {
+      "line": 137,
+      "word": "đi",
+      "context": "\"Anh sẽ đi. Anh",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 50
+    },
+    {
+      "line": 153,
+      "word": "đi",
+      "context": "Khải Phong gật. \"Anh sẽ đi. Anh",
+      "sentence_words": 3,
+      "severity": "HIGH",
+      "ep": 50
+    }
+  ]
+}

@@ -36,10 +36,18 @@ tier_1_banned_words_vietnamese:
       reason: "AI hay dùng làm transition mặc định. Real Vietnamese narrative dùng đa dạng: bỗng, chợt, vụt, thoáng, lúc đó."
       alternatives: [bỗng, chợt, vụt nhiên, thoáng cái, lúc đó]
       precedent: "32 hiến pháp R4 mispronounce trigger (Bất chợt → Bỗng nhiên)"
+      grammar_note: |
+        # round 15 28/6 — Mr.Long: "dùng từ chợt cho câu hỏi có đúng không?"
+        "chợt" + "Anh chợt nhớ" = OK (past tense statement, declarative)
+        "chợt" + câu hỏi như "Anh chợt hiểu ra chưa?" = SAI grammar
+        Lý do: "chợt" là adverb modifies past-tense action realized. Câu hỏi đã chứa
+        "chưa?" interrogative — kết hợp "chợt + chưa?" mâu thuẫn temporal aspect.
+        Fix câu hỏi: BỎ "chợt" — "Anh đã hiểu ra chưa?" / "Anh nhớ ra chưa?"
 
     - word: "bỗng nhiên"
       reason: "Tương tự đột nhiên. Lạm dụng = rhythm flat."
       alternatives: [bỗng, chợt, lúc đó, vụt]
+      grammar_note: "Tương tự 'chợt': không kết hợp với câu hỏi tense — chỉ statement past."
 
     - word: "trong khoảnh khắc đó"
       reason: "Cliché AI horror Vietnamese. Real narrative ít dùng phrase này."
