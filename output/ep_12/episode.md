@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R38 + R36 callback EP01
 
 Tháng tư. Trời đêm vừa khuya. Xe đêm rẽ vào đoạn ven sông Hồng, Hà Nội. Đèn pha cắt qua màn sương — chiếu lên hàng cây bên đường.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ mười hai của hành trình. Trong túi áo gió Khải Phong — mười một vật. Đêm qua thêm mảnh vỏ bạc nhỏ — từ vòng cổ ngôi sao của chị Đức.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười hai — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — mười một vật. Đêm qua thêm mảnh vỏ bạc nhỏ — từ vòng cổ ngôi sao của chị Đức.
 
 Bác tài lái. Hôm nay xe đi gần cầu Long Biên — Khải Phong nhận ra ngay đoạn đường này. Đêm số một — cũng đoạn đường này. Đêm số một có cô gái mặc áo trắng — cũng cầm đồng hồ xà cừ.
 
@@ -250,7 +250,7 @@ Bác tài liếc gương. "Vào đêm mười hai. Đồng hồ xà cừ dừng 
 
 Khải Phong gật.
 
-Đêm thứ mười hai của hành trình. Xe đi xuống dốc cầu. Phía dưới — mặt sông Hồng phẳng. Đồng hồ xà cừ đã chìm. Người anh Khôi đã tan.
+Đêm thứ mười hai — Khải Phong đếm thêm. Xe đi xuống dốc cầu. Phía dưới — mặt sông Hồng phẳng. Đồng hồ xà cừ đã chìm. Người anh Khôi đã tan.
 
 Khải Phong vuốt mảnh xà cừ trong túi. Lạnh.
 

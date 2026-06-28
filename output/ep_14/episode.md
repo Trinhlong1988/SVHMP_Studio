@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R38
 
 Cuối tháng tư. Trời ẩm. Xe đêm chạy chậm qua đường ven sông Đáy, Chương Hoa Kỳ. Hàng tre già — gốc tre dày như cột ven đường — lá còn rơi vài giọt mưa cuối ngày.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ mười bốn của hành trình. Trong túi áo gió Khải Phong — mười ba vật. Đêm qua thêm cánh cúc khô vàng — từ vườn bố anh Bình.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười bốn — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — mười ba vật. Đêm qua thêm cánh cúc khô vàng — từ vườn bố anh Bình.
 
 Bác tài lái. Đoạn đường này Khải Phong đã đi qua một lần — đêm thứ chín — Khải Phong nhớ có cô bé học sinh xuống xe ở Chương Hoa Kỳ.
 
@@ -238,7 +238,7 @@ Bác tài liếc gương. "Vào đêm mười bốn. Hai vật cùng symbol — 
 
 Khải Phong gật.
 
-Đêm thứ mười bốn của hành trình. Xe đi tiếp về phía đường vành đai. Phía sau — Chương Mỹ khuất. Bà Tâm Đan ở lại bên mộ vô danh — quỳ — gửi khăn — gửi ba mươi năm hối tiếc qua đất.
+Đêm thứ mười bốn — Khải Phong đếm thêm. Xe đi tiếp về phía đường vành đai. Phía sau — Chương Mỹ khuất. Bà Tâm Đan ở lại bên mộ vô danh — quỳ — gửi khăn — gửi ba mươi năm hối tiếc qua đất.
 
 
 [pause:800ms]

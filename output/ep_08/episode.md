@@ -50,7 +50,7 @@ cross_ep_continuity: Khải Phong có 3 vật + phong bao trống. Đồng hồ 
 
 Vào đêm ba mươi tháng Chạp. Trời mưa lất phất. Chuyến xe đêm chạy qua một ngôi làng nhỏ vùng Bắc Ninh. Đèn dầu hắt qua mấy cửa sổ.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ tám của hành trình. Trong túi áo, ngoài ba vật cũ, còn có phong bao lì xì trống Khải Phong nhặt từ sàn xe đêm trước.
+Khải Phong ngồi ghế thứ ba. Đêm thứ tám — Khải Phong đếm thêm. Trong túi áo, ngoài ba vật cũ, còn có phong bao lì xì trống Khải Phong nhặt từ sàn xe đêm trước.
 
 Bác tài lái như mọi khi. Hai bàn tay đeo găng trắng. Ánh mắt liếc gương chiếu hậu dừng trên Khải Phong một thoáng. Khải Phong để ý — đêm nay bác không nhìn chỗ ghế khách, chỉ nhìn Khải Phong.
 
@@ -288,7 +288,7 @@ Khải Phong nhớ — đêm thứ tám rồi. Mỗi đêm một vật. Mỗi đ
 
 Vì sao Khải Phong chưa kể?
 
-Khải Phong nhìn ra cửa kính. Đêm hôm nay vẫn còn dài.
+Khải Phong nhìn ra cửa kính. Đêm vẫn dài — chuyến xe chưa dừng.
 
 [pause:1000ms]
 

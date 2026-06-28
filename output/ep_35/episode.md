@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R40 + R36 callback EP25
 
 Trời đã về đêm. Đường vắng tanh. Xe đêm trôi qua đoạn sông Lam, Nghệ An. Đèn pha quét đi quét lại trên hàng dừa miền Trung — dừa cao — gốc dày — không có ai khác trên đường.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi lăm của hành trình. Trong túi áo gió Khải Phong — ba mươi tư vật.
+Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi lăm — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — ba mươi tư vật.
 
 Bác tài lái. Liếc gương — dừng trên Khải Phong lâu hơn thường. Cất lời câu thứ ba.
 
@@ -264,4 +264,4 @@ Bác tài liếc gương. "Vào đêm ba mươi lăm. Cụm vật gương đủ 
 
 Khải Phong gật. Lệ rơi nhẹ nhàng. Tay run nhẹ nhàng.
 
-Đêm thứ ba mươi lăm của hành trình. Xe đi tiếp. Phía sau — Nghệ An khuất. Trí Hưng ở lại bệnh viện — đứng cửa phòng tư vấn — mảnh gương trong tủ kính.
+Đêm thứ ba mươi lăm — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Nghệ An khuất. Trí Hưng ở lại bệnh viện — đứng cửa phòng tư vấn — mảnh gương trong tủ kính.

@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R38
 
 Lớp sương dày đặc. Đêm tháng tư miền Bắc. Xe đêm trôi chậm qua đoạn ven sông Nhuệ, Hà Đông. Đèn pha rọi lên hàng nhãn xưa — tán lá đã rậm sau mùa xuân.
 
-Khải Phong ngồi ghế thứ ba — chỗ xưa — chỗ Khải Phong đã ngồi mười đêm trước. Đêm thứ mười một của hành trình.
+Khải Phong ngồi ghế thứ ba — chỗ xưa — chỗ Khải Phong đã ngồi mười đêm trước. Đêm thứ mười một — Khải Phong đếm thêm.
 
 Trong túi áo gió Khải Phong — mười vật. Mỗi vật một đêm. Mỗi vật một chuyện. Khải Phong đã đếm chiều nay — trước khi xe khởi hành — mười cái cho thấy mười đêm Khải Phong đã sống cùng chuyến xe này. Khải Phong vẫn không nhớ vì sao Khải Phong ngồi đây.
 
@@ -252,6 +252,6 @@ Bác tài liếc gương — lần này dừng trên Khải Phong lâu hơn thư
 
 Khải Phong gật.
 
-Đêm thứ mười một của hành trình. Xe lăn bánh tiếp về phía đường vành đai. Đèn pha quét lên hàng cây — mưa đã hết — chỉ còn đêm.
+Đêm thứ mười một — Khải Phong đếm thêm. Xe lăn bánh tiếp về phía đường vành đai. Đèn pha quét lên hàng cây — mưa đã hết — chỉ còn đêm.
 
 Khải Phong không hỏi bác tài thêm. Khải Phong biết — đêm nào hỏi bác tài cũng chỉ hai câu trả lời. Khải Phong chờ đêm mười hai.

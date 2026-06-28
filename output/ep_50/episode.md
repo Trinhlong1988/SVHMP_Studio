@@ -55,7 +55,7 @@ milestone_special: S1 FINALE - 50 vật xếp thành bản đồ - kết thúc t
 
 Phố vắng tanh. Đêm thưa. Xe đêm đi qua đoạn Vĩnh Bảo — quê Hạ Vy, Hà Nội — đèn pha hắt lên hàng cây cao quá đầu — bóng đổ dài trên mặt đường ướt. Đèn pha quét lên hàng phi lao biển.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ năm mươi của hành trình. Milestone — S1 FINALE.
+Khải Phong ngồi ghế thứ ba. Đêm thứ năm mươi — Khải Phong đếm thêm. Milestone — S1 FINALE.
 
 Trong túi áo gió Khải Phong — bốn mươi chín vật.
 
@@ -293,7 +293,7 @@ Khải Phong gật. Lệ rơi không kìm.
 
 Khải Phong cất năm mươi vật vào túi. Thiệp cưới Hạ Nhi đặt riêng trong túi trong cùng — vật quan trọng.
 
-Đêm thứ năm mươi của hành trình. Khải Phong nhìn ra cửa sổ — bên ngoài — vẫn chưa sáng lên. Đêm tháng tư.
+Đêm thứ năm mươi — Khải Phong đếm thêm. Khải Phong nhìn ra cửa sổ — bên ngoài — vẫn chưa sáng lên. Đêm tháng tư.
 
 Khải Phong đã đi qua một nửa chuyến xe. Còn bốn mươi đêm nữa.
 

@@ -54,7 +54,7 @@ cross_ep_continuity:
 
 Vào đêm ba mươi tháng Chạp. Lớp sương đặc đến nỗi khó nhìn. Chuyến xe đêm chạy về phía Hà Nội. Đèn pha quét lên bụi dứa dại ven đường. Phía xa, ánh đèn thành phố loé sáng qua sương.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ mười của hành trình. Trong túi áo, năm vật: sợi len nâu, sợi lạt buộc, phong bao lì xì trống, sợi chỉ trắng, viên pin cassette rỉ.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười — Khải Phong đếm thêm. Trong túi áo, năm vật: sợi len nâu, sợi lạt buộc, phong bao lì xì trống, sợi chỉ trắng, viên pin cassette rỉ.
 
 Bác tài lái như mọi khi. Hai bàn tay đeo găng trắng. Ánh mắt liếc gương chiếu hậu — đêm nay không liếc. Bác nhìn Khải Phong trực tiếp qua gương, lâu hơn cả đêm trước.
 
@@ -280,7 +280,7 @@ Khải Phong không nhớ bao nhiêu năm rồi mình chưa về.
 
 Khải Phong lấy năm vật trong túi ra. Đặt cạnh chiếc khăn tay vừa nhận. Sáu vật. Mười đêm. Mười người đã xuống — chín hành khách và Khải Phong chính mình ngày mai.
 
-Khải Phong nhìn ra cửa kính. Cầu Long Biên dưới chân xe. Sông Hồng dưới cầu. Đêm hôm nay vẫn còn dài.
+Khải Phong nhìn ra cửa kính. Cầu Long Biên dưới chân xe. Sông Hồng dưới cầu. Đêm vẫn dài — chuyến xe chưa dừng.
 
 Khải Phong khẽ nhắm mắt. Hơi thở chậm xuống một nhịp.
 

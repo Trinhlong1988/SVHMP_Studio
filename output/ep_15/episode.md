@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R38 + R36 callback EP11
 
 Trời đã về đêm. Đường vắng tanh. Xe đêm trôi qua đoạn đường ven hồ Đồng Mô, Hoài Đức. Đèn pha quét đi quét lại trên hàng cây — không có ai khác trên đường.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ mười lăm của hành trình. Trong túi áo gió Khải Phong — mười bốn vật. Đêm qua thêm sợi chỉ vàng thêu cúc từ khăn bà Tâm Đan.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười lăm — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — mười bốn vật. Đêm qua thêm sợi chỉ vàng thêu cúc từ khăn bà Tâm Đan.
 
 Bác tài lái. Hôm nay bác tài liếc gương — dừng trên Khải Phong lâu hơn thường. Trước khi xe dừng đón hành khách — bác tài cất lời. Một câu — câu thứ ba không nằm trong hai câu chuẩn.
 
@@ -254,7 +254,7 @@ Bác tài liếc gương. "Vào đêm mười lăm. Một phần ba phase warmin
 
 Khải Phong gật.
 
-Đêm thứ mười lăm của hành trình. Xe đi tiếp về phía đường vành đai. Phía sau — Hoài Đức khuất. Phong ở lại bên hồ — đứng — không vội đi — đợi mặt nước phẳng lại sau gợn sóng từ mảnh gương chìm.
+Đêm thứ mười lăm — Khải Phong đếm thêm. Xe đi tiếp về phía đường vành đai. Phía sau — Hoài Đức khuất. Phong ở lại bên hồ — đứng — không vội đi — đợi mặt nước phẳng lại sau gợn sóng từ mảnh gương chìm.
 
 
 [pause:800ms]

@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R40
 
 Sau cơn mưa chiều. Đêm xuống nhanh. Xe đêm rẽ vào đoạn đường ven sông Hồng đoạn Phú T, Hà Nội. Hàng cây ven đường còn đẫm — đèn pha quét lên thân cây ướt. Đèn pha quét lên cánh đồng ngô xanh — ngô đã cao nửa người — gió thổi nghiêng ngọn.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi bảy của hành trình. Trong túi áo gió Khải Phong — hai mươi sáu vật. Đêm qua thêm nhãn ngày mua hộp thước T "06/2017".
+Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi bảy — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — hai mươi sáu vật. Đêm qua thêm nhãn ngày mua hộp thước T "06/2017".
 
 Bác tài lái.
 
@@ -274,4 +274,4 @@ Bác tài liếc gương. "Vào đêm hai mươi bảy. Con bắt đầu nhớ t
 
 Khải Phong gật. Lệ rơi xuống ghế — không ai thấy.
 
-Đêm thứ hai mươi bảy của hành trình. Xe đi tiếp. Phía sau — Phú Thọ khuất. Mỹ Linh ở lại trường tiểu học — đứng ngoài cửa văn phòng — nhìn khung ảnh trên bàn.
+Đêm thứ hai mươi bảy — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Phú Thọ khuất. Mỹ Linh ở lại trường tiểu học — đứng ngoài cửa văn phòng — nhìn khung ảnh trên bàn.

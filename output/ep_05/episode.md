@@ -274,7 +274,7 @@ Có một thứ gì đó dưới ghế thứ tám — một sợi len nâu rơi 
 
 [pause:1500ms]
 
-Khải Phong nhìn ra cửa kính. Đêm hôm nay vẫn còn dài. Còn nhiều ngã ba phía trước. Có ai đó sẽ lên xe ở trạm tiếp theo. Khải Phong chưa biết là ai.
+Khải Phong nhìn ra cửa kính. Đêm vẫn dài — chuyến xe chưa dừng. Còn nhiều ngã ba phía trước. Có ai đó sẽ lên xe ở trạm tiếp theo. Khải Phong chưa biết là ai.
 
 Nhưng Khải Phong biết — sợi len nâu kia, ai đó sẽ cầm lên. Có thể là Khải Phong. Có thể là người khác.
 

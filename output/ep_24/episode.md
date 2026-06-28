@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R38 + R39 word count
 
 Cuối tháng tư. Trời ẩm. Xe đêm chạy chậm qua đường ven cánh đồng Hà Nam, Hà Nội. Hàng cây ven đường — lá còn rơi vài giọt mưa cuối ngày. Đèn pha quét lên ruộng lúa mới cấy — nước trong ruộng in sao đêm — mây đã tan sau mưa.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi tư của hành trình. Trong túi áo gió Khải Phong — hai mươi ba vật. Đêm qua thêm mẩu phong bì kraft của Đức Vinh.
+Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi tư — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — hai mươi ba vật. Đêm qua thêm mẩu phong bì kraft của Đức Vinh.
 
 Bác tài lái.
 
@@ -272,4 +272,4 @@ Bác tài liếc gương. "Vào đêm hai mươi tư. Con nhớ chi tiết hơn 
 
 Khải Phong gật.
 
-Đêm thứ hai mươi tư của hành trình. Xe đi tiếp. Phía sau — Hà Nam khuất. Hồng Liên ở lại văn phòng giáo viên — vở Mai Anh trên bàn.
+Đêm thứ hai mươi tư — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Hà Nam khuất. Hồng Liên ở lại văn phòng giáo viên — vở Mai Anh trên bàn.

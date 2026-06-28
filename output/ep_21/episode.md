@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R38 + R39 word count target
 
 Đêm hôm nay thật vắng tanh. Cuối tháng tư miền Bắc. Mặt sông Đáy phẳng — gió ngừng. Chuyến xe đêm chạy qua đoạn đường ven sông Đáy, Nam Định. Đèn pha quét lên hàng cây.
 
-Khải Phong ngồi ghế thứ ba — chỗ ngồi đã không đổi từ đêm đầu. Đêm thứ hai mươi mốt của hành trình. Trong túi áo gió Khải Phong — hai mươi vật. Đêm qua thêm mảnh giấy chữ tròn "Yêu anh. Hoài." — chữ tay phụ cô gái — nét chữ nhỏ tròn quen.
+Khải Phong ngồi ghế thứ ba — chỗ ngồi đã không đổi từ đêm đầu. Đêm thứ hai mươi mốt — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — hai mươi vật. Đêm qua thêm mảnh giấy chữ tròn "Yêu anh. Hoài." — chữ tay phụ cô gái — nét chữ nhỏ tròn quen.
 
 Bác tài lái. Bàn tay già nắm vô lăng — chậm — đều. Đoạn đường này lạ với chuyến xe — Khải Phong nhớ rõ ràng — hai mươi đêm trước chưa đi qua Nam Định.
 
@@ -258,4 +258,4 @@ Bác tài liếc gương — lần này dừng trên Khải Phong lâu. "Vào đ
 
 Khải Phong gật. Không hỏi.
 
-Đêm thứ hai mươi mốt của hành trình. Xe đi tiếp về phía đường vành đai. Mưa đã hết — chỉ còn không khí ướt. Phía sau — Nam Định khuất — Trọng Nhân ở lại quỳ — bên mộ mẹ — đem ảnh mộ về với chính mộ.
+Đêm thứ hai mươi mốt — Khải Phong đếm thêm. Xe đi tiếp về phía đường vành đai. Mưa đã hết — chỉ còn không khí ướt. Phía sau — Nam Định khuất — Trọng Nhân ở lại quỳ — bên mộ mẹ — đem ảnh mộ về với chính mộ.

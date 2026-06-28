@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R40
 
 Tháng tư. Trời đêm vừa khuya. Xe đêm rẽ vào đoạn ven sông Thương, Bắc Giang. Đèn pha cắt qua màn sương — chiếu lên hàng cây bên đường.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi hai của hành trình. Trong túi áo gió Khải Phong — ba mươi mốt vật. Đêm qua thêm cánh cúc tươi vàng nhạt thứ năm.
+Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi hai — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — ba mươi mốt vật. Đêm qua thêm cánh cúc tươi vàng nhạt thứ năm.
 
 Bác tài lái.
 
@@ -258,4 +258,4 @@ Bác tài liếc gương. "Vào đêm ba mươi hai. Con đã nhớ ai đứng c
 
 Khải Phong gật. Lệ rơi nhẹ nhàng.
 
-Đêm thứ ba mươi hai của hành trình. Xe đi tiếp. Phía sau — Bắc Giang khuất. Phan Tâm ở lại bên mộ — chăn đan dở trên bia.
+Đêm thứ ba mươi hai — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Bắc Giang khuất. Phan Tâm ở lại bên mộ — chăn đan dở trên bia.

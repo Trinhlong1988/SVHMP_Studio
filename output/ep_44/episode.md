@@ -56,7 +56,7 @@ arc_design_compliant: bible/21 R33-R42
 
 Cuối tháng tư. Trời ẩm. Xe đêm chạy chậm qua đường ven đồi cà phê Đắk Lắk, Hà Nội. Hàng cây ven đường — lá còn rơi vài giọt mưa cuối ngày. Đèn pha quét lên hàng cà phê — cà phê đã ra hoa trắng.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi tư của hành trình. Trong túi áo gió Khải Phong — bốn mươi ba vật.
+Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi tư — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — bốn mươi ba vật.
 
 Bác tài lái.
 
@@ -234,7 +234,7 @@ Bác tài liếc gương. "Vào đêm bốn mươi tư. Con đã nhớ con khôn
 
 Khải Phong gật. Lệ rơi xuống dưới.
 
-Đêm thứ bốn mươi tư của hành trình. Xe đi tiếp. Phía sau — Đắk Lắk khuất. Phượng Liên ở lại bên cửa — khúc chè trên thềm.
+Đêm thứ bốn mươi tư — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Đắk Lắk khuất. Phượng Liên ở lại bên cửa — khúc chè trên thềm.
 
 Khải Phong cố nhớ tin nhắn Hạ Nhi gần đây. Anh nhắn lần cuối — sinh nhật Khải Phong — tháng giêng năm nay. Anh chúc — anh xin chỗ cưới anh — anh đính kèm thiệp cưới scan PDF.
 

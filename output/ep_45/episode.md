@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R42 + R36 callback ep_35
 
 Trời đã về đêm. Đường vắng tanh. Xe đêm trôi qua đoạn sông Đuống, Bắc Ninh. Đèn pha quét đi quét lại trên hàng dâu cổ — quen Khải Phong — đêm hai mươi hai đã đi — không có ai khác trên đường.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi lăm của hành trình. Trong túi áo gió Khải Phong — bốn mươi tư vật.
+Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi lăm — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — bốn mươi tư vật.
 
 Bác tài lái. Liếc gương — dừng trên Khải Phong lâu hơn thường. Cất lời câu thứ ba foreshadow.
 
@@ -258,7 +258,7 @@ Bác tài liếc gương. "Vào đêm bốn mươi lăm. Con nhớ Hạ Nhi mờ
 
 Khải Phong gật. Lệ rơi xuống dưới.
 
-Đêm thứ bốn mươi lăm của hành trình. Xe đi tiếp. Phía sau — Bắc Ninh khuất. Mạnh Hiếu ở lại phòng tâm lý — mảnh gương trong tủ kính.
+Đêm thứ bốn mươi lăm — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Bắc Ninh khuất. Mạnh Hiếu ở lại phòng tâm lý — mảnh gương trong tủ kính.
 
 Khải Phong cố nhớ chi tiết tin nhắn Hạ Nhi tuần trước. Anh nhắn: "Anh ơi sắp cưới rồi — anh đến nhé. Em đã đặt vé máy bay anh từ Hà Nội vào Sài Gòn — em gửi anh qua email. Người sinh viên chỉ cần check-in thôi. Em đợi anh."
 

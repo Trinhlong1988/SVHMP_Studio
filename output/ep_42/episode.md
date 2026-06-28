@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R42 + R41
 
 Tháng tư. Trời đêm vừa khuya. Xe đêm rẽ vào đoạn ven sông sông Tiền, Bến Tre. Đèn pha cắt qua màn sương — chiếu lên hàng dừa nước bên đường.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi hai của hành trình. Trong túi áo gió Khải Phong — bốn mươi mốt vật.
+Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi hai — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — bốn mươi mốt vật.
 
 Bác tài lái.
 
@@ -246,7 +246,7 @@ Bác tài liếc gương. "Vào đêm bốn mươi hai. Con đã nhớ con đeo 
 
 Khải Phong gật. Lệ rơi xuống dưới.
 
-Đêm thứ bốn mươi hai của hành trình. Xe đi tiếp. Phía sau — Bến Tre khuất. Hoàng Nam ở lại đứng cạnh hộp lost items — nhẫn em trong hộp.
+Đêm thứ bốn mươi hai — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Bến Tre khuất. Hoàng Nam ở lại đứng cạnh hộp lost items — nhẫn em trong hộp.
 
 Khải Phong nhìn ngón út tay trái. Nhẫn bạc Hạ Vy — nhỏ — đơn giản — không khắc tên. Anh mua chợ Đồng Xuân năm anh hai tư — anh thích nhẫn bạc đơn giản — không vàng — không khắc.
 

@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R38
 
 Hà Nội cuối tháng tư. Trời đã về đêm. Chuyến xe đi qua đoạn ven đường ven cánh đồng lúa Phú Xu, Hà Nội. Đèn pha rọi lên hàng cây — ánh đèn vàng cô đơn.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ mười sáu của hành trình. Trong túi áo gió Khải Phong — mười lăm vật. Đêm qua thêm vải bông cuốn gương tan.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười sáu — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — mười lăm vật. Đêm qua thêm vải bông cuốn gương tan.
 
 Bác tài lái. Đoạn đường này Khải Phong chưa đi — Phú Xuyên ngoại thành phía Nam Hà Nội.
 
@@ -242,7 +242,7 @@ Bác tài liếc gương. "Vào đêm mười sáu. Con bắt đầu nhớ cách
 
 Khải Phong gật. Không hỏi.
 
-Đêm thứ mười sáu của hành trình. Xe đi tiếp về phía đường vành đai. Phía sau — Phú Xuyên khuất. Cô Hoàng Yến ở lại chùa — quỳ — tụng — gửi chậu cúc mẹ cho chùa.
+Đêm thứ mười sáu — Khải Phong đếm thêm. Xe đi tiếp về phía đường vành đai. Phía sau — Phú Xuyên khuất. Cô Hoàng Yến ở lại chùa — quỳ — tụng — gửi chậu cúc mẹ cho chùa.
 
 
 [pause:800ms]

@@ -50,7 +50,7 @@ cross_ep_continuity: Khải Phong có 4 vật + bác tài đã nói câu thứ 3
 
 Đêm tháng Một âm lịch. Đông lạnh dày đặc. Chuyến xe đêm chạy qua một đoạn đường ven núi. Hai bên đèo, sương trắng đặc, hắt qua đèn pha xe thành những vệt sáng cong.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ chín của hành trình. Trong túi áo có bốn vật — sợi len, sợi lạt, phong bao trống, sợi chỉ trắng.
+Khải Phong ngồi ghế thứ ba. Đêm thứ chín — Khải Phong đếm thêm. Trong túi áo có bốn vật — sợi len, sợi lạt, phong bao trống, sợi chỉ trắng.
 
 Bác tài lái như mọi khi. Hai bàn tay đeo găng trắng. Ánh mắt liếc gương — đêm nay dừng trên Khải Phong lâu hơn cả đêm trước. Khải Phong cảm thấy.
 
@@ -292,7 +292,7 @@ Có gì đó đang lùi xa.
 
 [pause:1500ms]
 
-Khải Phong nhìn ra cửa kính. Đêm hôm nay vẫn còn dài. Lớp sương núi vẫn còn dày.
+Khải Phong nhìn ra cửa kính. Đêm vẫn dài — chuyến xe chưa dừng. Lớp sương núi vẫn còn dày.
 
 Trên ghế lái, bác tài liếc gương lần nữa. Ánh mắt không buồn. Không vui. Chỉ là nhìn.
 

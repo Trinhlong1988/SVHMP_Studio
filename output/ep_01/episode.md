@@ -67,7 +67,7 @@ v7_changes_round2_chốt:
 
 ## 1. HOOK (≤120 từ — 0:00—0:20) [beat_1: TÒ MÒ]
 
-Hôm đó, từ bảy giờ tối, mưa đã rơi không ngớt.
+Tháng tư Hà Nội. Mưa từ bảy giờ tối, không dứt.
 
 Khải Phong ngồi ghế số bảy.
 
@@ -567,7 +567,7 @@ Khải Phong từ từ đứng dậy. Tay anh vẫn ôm chiếc đồng hồ.
 
 Đến bậc cuối — anh dừng. Mắt nhìn rất xa. Bàn tay anh buông lỏng tự khi nào. Chiếc đồng hồ trượt khỏi lòng tay — rơi êm xuống ghế số bảy. Vỏ xà cừ phản ánh đèn cabin một thoáng.
 
-Anh không quay đầu nhặt. Có lẽ anh không còn nhớ mình vừa đánh rơi điều gì.
+Anh không quay đầu nhặt. Anh không nhận ra mình đánh rơi điều gì.
 
 Anh bước xuống bậc cuối cùng.
 

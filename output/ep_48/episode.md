@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R42
 
 Đêm thứ 48 trên chuyến xe — Khải Phong ngồi ghế thứ ba. Mưa tháng tư rỉ rả ngoài kính xe. Xe đi qua đoạn đường ven sông Hậu, Cần Thơ — hàng cây im bóng. Đèn pha quét lên hàng dừa nước.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi tám của hành trình. Trong túi áo gió Khải Phong — bốn mươi bảy vật.
+Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi tám — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — bốn mươi bảy vật.
 
 Bác tài lái.
 
@@ -238,7 +238,7 @@ Bác tài liếc gương. "Vào đêm bốn mươi tám. Con đã quyết. Đêm
 
 Khải Phong gật. Lệ rơi nhẹ nhàng.
 
-Đêm thứ bốn mươi tám của hành trình. Xe đi tiếp. Phía sau — Cần Thơ khuất. Hữu Duy ở lại tiệm — đàn trước cửa.
+Đêm thứ bốn mươi tám — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Cần Thơ khuất. Hữu Duy ở lại tiệm — đàn trước cửa.
 
 Khải Phong ngẫm thêm — anh sẽ chuẩn bị đi Hàn Quốc trước cưới Hạ Nhi. Anh sẽ đặt vé bay sau dự cưới anh xong — người đàn ông sẽ bay từ Sài Gòn về Hà Nội — sau đó từ Hà Nội bay Hàn Quốc mùa thu. Em sẽ đem theo nhẫn bạc Hạ Vy — đeo ngón út — chụp ảnh dưới lá đỏ. Người đàn ông sẽ đem ảnh về quê anh ở Vĩnh Phúc — đặt trên bàn thờ anh không có (anh chưa lập bàn thờ Hạ Vy ở quê anh — anh chỉ có bàn thờ anh ở quê Hạ Vy). Anh sẽ lập bàn thờ Hạ Vy ở quê anh — anh sẽ đặt ảnh Hàn Quốc lên đó. Đêm thứ bốn mươi tám kết thúc — quyết tâm rõ hơn.
 

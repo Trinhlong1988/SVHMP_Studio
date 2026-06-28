@@ -55,7 +55,7 @@ milestone_special: passenger cùng tên "Khải Phong" — anchor lần đầu +
 
 Phố vắng tanh. Đêm thưa. Xe đêm đi qua đoạn sông Thái Bình, Hải Dương — đèn pha hắt lên hàng vải lồng — vải đã ra trái non — chùm trái xanh nhỏ bên đường cao quá đầu — bóng đổ dài trên mặt đường ướt.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi của hành trình.
+Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi — Khải Phong đếm thêm.
 
 Đêm milestone. Khải Phong cảm thấy — không khí xe khác — đặc hơn — như có ai đó đang lắng nghe — giống đêm hai mươi.
 
@@ -312,7 +312,7 @@ Khải Phong gật. Không hỏi. Lệ vẫn rơi xuống.
 
 Khải Phong cất bốn vật vào túi — cùng hai mươi sáu vật khác. Trong túi giờ có ba mươi vật — đêm ba mươi.
 
-Đêm thứ ba mươi của hành trình. Xe đi tiếp về phía đường vành đai. Trời mưa đã hết hẳn. Trời chưa sáng lên. Phía sau — Hải Dương khuất — Khải Phong Nguyễn ở lại phòng giáo viên — đứng nhìn bằng cũ trên tường.
+Đêm thứ ba mươi — Khải Phong đếm thêm. Xe đi tiếp về phía đường vành đai. Trời mưa đã hết hẳn. Trời chưa sáng lên. Phía sau — Hải Dương khuất — Khải Phong Nguyễn ở lại phòng giáo viên — đứng nhìn bằng cũ trên tường.
 
 Khải Phong còn sáu mươi đêm nữa — đêm 31 sẽ là phase heightening — intensity tăng — Khải Phong sẽ nhớ rõ hơn ngày Hạ Vy mất — tháng tư mười hai.
 

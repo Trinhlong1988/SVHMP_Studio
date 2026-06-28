@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R42
 
 Trời mưa đã rơi từ chiều. Đêm tháng tư — không tan hết rồi. Chuyến xe đêm đi qua đoạn đường ven rừng cao su Bình Phư, Hà Nội — đèn pha hắt lên hàng cây ướt sương. Đèn pha quét lên thân cao su trắng.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi ba của hành trình. Trong túi áo gió Khải Phong — bốn mươi hai vật.
+Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi ba — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — bốn mươi hai vật.
 
 Bác tài lái.
 
@@ -240,7 +240,7 @@ Bác tài liếc gương. "Vào đêm bốn mươi ba. Con đã nhớ điện th
 
 Khải Phong gật. Lệ rơi xuống dưới.
 
-Đêm thứ bốn mươi ba của hành trình. Xe đi tiếp. Phía sau — Bình Phước khuất. Văn Trường ở lại đài — giấy trên bia đá.
+Đêm thứ bốn mươi ba — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Bình Phước khuất. Văn Trường ở lại đài — giấy trên bia đá.
 
 Khải Phong cố nhớ lần cuối anh gặp bố mẹ Hạ Vy. Năm thứ hai sau Hạ Vy mất — anh về Hải Phòng tang lần một — anh ăn cơm chung với bố mẹ anh.
 

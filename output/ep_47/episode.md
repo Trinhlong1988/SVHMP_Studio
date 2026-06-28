@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R42
 
 Sau cơn mưa chiều. Đêm xuống nhanh. Xe đêm rẽ vào đoạn đường vành đai, sân bay Nội Bài. Hàng hàng đèn cao tốc ven đường còn đẫm — đèn pha quét lên thân cây ướt.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi bảy của hành trình. Trong túi áo gió Khải Phong — bốn mươi sáu vật.
+Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi bảy — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — bốn mươi sáu vật.
 
 Bác tài lái.
 
@@ -230,7 +230,7 @@ Bác tài liếc gương. "Vào đêm bốn mươi bảy. Con đã nhớ lời h
 
 Khải Phong gật. Lệ rơi xuống dưới.
 
-Đêm thứ bốn mươi bảy của hành trình. Xe đi tiếp ra khỏi sân bay. Phía sau — Thanh Nga ở lại ga — hai vé trong hộp lost items.
+Đêm thứ bốn mươi bảy — Khải Phong đếm thêm. Xe đi tiếp ra khỏi sân bay. Phía sau — Thanh Nga ở lại ga — hai vé trong hộp lost items.
 
 Khải Phong nghĩ về Hàn Quốc — anh chưa bao giờ thấy lá đỏ mùa thu — anh chỉ thấy qua ảnh — qua phim. Nếu anh đi — anh sẽ chụp ảnh — anh sẽ đem về cho Hạ Vy qua đèn nến.
 

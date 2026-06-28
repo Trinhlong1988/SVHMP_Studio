@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R40 + R41
 
 Đèn xe rọi vào sương. Đêm tháng tư miền Bắc. Chuyến xe đi qua đoạn đường ven biển Quảng Bình, Hà Nội — hàng cây ven đường thấp thoáng trong sương. Đèn pha quét lên hàng phi lao biển — gốc nghiêng vì gió.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi chín của hành trình. Trong túi áo gió Khải Phong — ba mươi tám vật. Đêm qua thêm mẩu giấy quà xanh từ hộp quà Đức Anh tặng Lan.
+Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi chín — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — ba mươi tám vật. Đêm qua thêm mẩu giấy quà xanh từ hộp quà Đức Anh tặng Lan.
 
 Bác tài lái.
 
@@ -242,7 +242,7 @@ Bác tài liếc gương. "Vào đêm ba mươi chín. Con nhớ anh Hải đồ
 
 Khải Phong gật. Lệ rơi nhẹ nhàng.
 
-Đêm thứ ba mươi chín của hành trình. Xe đi tiếp ra khỏi Quảng Bình. Phía sau — xóm Đại Hải khuất. Hồng Mai ở lại đứng trước cửa nhà cũ bà Trinh — tô cơm trên thềm.
+Đêm thứ ba mươi chín — Khải Phong đếm thêm. Xe đi tiếp ra khỏi Quảng Bình. Phía sau — xóm Đại Hải khuất. Hồng Mai ở lại đứng trước cửa nhà cũ bà Trinh — tô cơm trên thềm.
 
 Khải Phong vuốt hạt cơm khô trong tay — hạt cơm bà Hồng Mai đem cho bà Trinh sau tám năm. Lời hứa muộn — vẫn được gửi qua đất.
 

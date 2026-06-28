@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R40 + R41
 
 Đêm thứ 38 trên chuyến xe — Khải Phong ngồi ghế thứ ba. Mưa tháng tư rỉ rả ngoài kính xe. Xe đi qua đoạn đường ven vịnh Hạ Long, Hà Nội — hàng cây im bóng. Đèn pha quét lên hàng dừa biển — gốc cong vì gió biển.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi tám của hành trình. Trong túi áo gió Khải Phong — ba mươi bảy vật. Đêm qua thêm sợi chỉ vải đen từ vải bọc mảnh biển số xe Mỹ Hạnh.
+Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi tám — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — ba mươi bảy vật. Đêm qua thêm sợi chỉ vải đen từ vải bọc mảnh biển số xe Mỹ Hạnh.
 
 Bác tài lái. Đoạn đường biển — mặn gió. Mặt vịnh phía bên trái — tối — vài ánh đèn tàu xa.
 
@@ -256,4 +256,4 @@ Bác tài liếc gương. "Vào đêm ba mươi tám. Con nhớ tên anh Hải. 
 
 Khải Phong gật. Lệ rơi nhẹ nhàng.
 
-Đêm thứ ba mươi tám của hành trình. Xe đi tiếp ra khỏi vịnh Hạ Long. Phía sau — bưu điện khuất. Đức Anh ở lại bên quầy — biên lai trong tay.
+Đêm thứ ba mươi tám — Khải Phong đếm thêm. Xe đi tiếp ra khỏi vịnh Hạ Long. Phía sau — bưu điện khuất. Đức Anh ở lại bên quầy — biên lai trong tay.

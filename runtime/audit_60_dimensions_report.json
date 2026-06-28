@@ -1,9 +1,9 @@
 {
   "1": {
-    "high": 1,
+    "high": 0,
     "medium": 10,
     "low": 10,
-    "ok": 49,
+    "ok": 50,
     "details": [
       {
         "check": "1.2 word frequency > 20 (non-name)",
@@ -44,11 +44,6 @@
         "check": "2.9 Object collection mention",
         "value": "0",
         "sev": "MEDIUM"
-      },
-      {
-        "check": "3.1 anti-slop tier 1 > 2/EP/word",
-        "value": "1",
-        "sev": "HIGH"
       },
       {
         "check": "3.2 anti-slop tier 2 > 3/EP/word (R43)",

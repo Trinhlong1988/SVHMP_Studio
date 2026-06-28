@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R40
 
 Cuối tháng tư. Trời ẩm. Xe đêm chạy chậm qua đường ven cánh đồng Vĩnh Phúc, Hà Nội. Hàng cây ven đường — lá còn rơi vài giọt mưa cuối ngày. Đèn pha quét lên ruộng lúa mới cấy.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi tư của hành trình. Trong túi áo gió Khải Phong — ba mươi ba vật.
+Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi tư — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — ba mươi ba vật.
 
 Bác tài lái.
 
@@ -262,4 +262,4 @@ Bác tài liếc gương. "Vào đêm ba mươi tư. Con đã đếm tám năm. 
 
 Khải Phong gật. Lệ rơi nhẹ nhàng.
 
-Đêm thứ ba mươi tư của hành trình. Xe đi tiếp. Phía sau — Vĩnh Phúc khuất. Văn Tuấn ở lại quỳ — bó hương cháy bên mộ.
+Đêm thứ ba mươi tư — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Vĩnh Phúc khuất. Văn Tuấn ở lại quỳ — bó hương cháy bên mộ.

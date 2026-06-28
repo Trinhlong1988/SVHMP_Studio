@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R42
 
 Đèn xe rọi vào sương. Đêm tháng tư miền Trung-Nam. Chuyến xe đi qua đoạn đường ven sông Hậu, Sóc Trăng — hàng cây ven đường thấp thoáng trong sương. Đèn pha quét lên hàng dừa nước.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi chín của hành trình. Trong túi áo gió Khải Phong — bốn mươi tám vật.
+Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi chín — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — bốn mươi tám vật.
 
 Bác tài lái.
 
@@ -236,7 +236,7 @@ Bác tài liếc gương. "Vào đêm bốn mươi chín. Đêm sau là mileston
 
 Khải Phong gật. Lệ rơi nhẹ nhàng.
 
-Đêm thứ bốn mươi chín của hành trình. Xe đi tiếp. Phía sau — Sóc Trăng khuất. Phương Linh ở lại quán — khăn trong hộp lost items.
+Đêm thứ bốn mươi chín — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Sóc Trăng khuất. Phương Linh ở lại quán — khăn trong hộp lost items.
 
 Khải Phong còn một đêm nữa — đêm thứ năm mươi — S1 finale. Anh sẽ xếp năm mươi vật theo bản đồ — anh sẽ ngẫm 50 đêm anh đã đi qua.
 

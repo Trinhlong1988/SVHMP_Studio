@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R38
 
 Đêm thứ 18 trên chuyến xe — Khải Phong ngồi ghế thứ ba. Mưa tháng tư rỉ rả ngoài kính xe. Xe đi qua đoạn đường ven hồ Gươm, Hà Nội — hàng cây im bóng. Đèn pha quét lên mặt hồ — đèn vàng từ Tháp Rùa hắt xuống.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ mười tám của hành trình. Trong túi áo gió Khải Phong — mười bảy vật. Đêm qua thêm mẩu nhãn USB.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười tám — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — mười bảy vật. Đêm qua thêm mẩu nhãn USB.
 
 Bác tài lái.
 
@@ -250,7 +250,7 @@ Bác tài liếc gương. "Vào đêm mười tám. Con bắt đầu cảm thấ
 
 Khải Phong gật. Không hỏi.
 
-Đêm thứ mười tám của hành trình. Xe đi tiếp. Phía sau — Hoàn Kiếm khuất. Linh Trang ở lại quán — đứng ngoài cửa — nhìn vào bàn còn tro.
+Đêm thứ mười tám — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Hoàn Kiếm khuất. Linh Trang ở lại quán — đứng ngoài cửa — nhìn vào bàn còn tro.
 
 
 [pause:800ms]

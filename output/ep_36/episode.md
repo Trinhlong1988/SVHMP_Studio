@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R40 + R41 HARDLOCK
 
 Hà Nội cuối tháng tư. Trời đã về đêm. Chuyến xe đi qua đoạn ven đường đèo từ Yên Bái lên Lào C, Hà Nội. Đèn pha rọi lên hàng cây — ánh đèn vàng cô đơn.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi sáu của hành trình. Trong túi áo gió Khải Phong — ba mươi lăm vật. Đêm qua thêm vải bông cuốn mảnh gương Trí Hưng — vật thứ ba trong cụm gương/kính.
+Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi sáu — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — ba mươi lăm vật. Đêm qua thêm vải bông cuốn mảnh gương Trí Hưng — vật thứ ba trong cụm gương/kính.
 
 Bác tài lái. Đường đèo quanh co — bác tài lái chậm hơn thường — đèn pha quét theo khúc cua.
 
@@ -258,4 +258,4 @@ Bác tài liếc gương. "Vào đêm ba mươi sáu. Con bắt đầu nhớ có
 
 Khải Phong gật. Lệ rơi nhẹ — không rất to.
 
-Đêm thứ ba mươi sáu của hành trình. Xe đi tiếp xuống đèo. Phía sau — Sa Pa khuất trong sương núi. Văn Khải ở lại nhà thờ — quỳ trước bục — ảnh em gái cạnh tượng Chúa.
+Đêm thứ ba mươi sáu — Khải Phong đếm thêm. Xe đi tiếp xuống đèo. Phía sau — Sa Pa khuất trong sương núi. Văn Khải ở lại nhà thờ — quỳ trước bục — ảnh em gái cạnh tượng Chúa.

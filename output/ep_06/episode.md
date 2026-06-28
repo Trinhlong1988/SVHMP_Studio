@@ -253,7 +253,7 @@ Khải Phong lấy sợi len nâu trong túi áo ra. Nhìn. Sợi len từ đêm
 
 Khải Phong nhớ — câu cụ bà hỏi lúc xuống: "Cháu ngồi đây nhiều đêm rồi nhỉ?"
 
-Đêm thứ sáu của hành trình. Khải Phong biết. Nhưng vì sao Khải Phong ngồi xe này? Khải Phong không nhớ. Lần đầu lên xe là khi nào? Khải Phong không nhớ.
+Đêm thứ sáu — Khải Phong đếm thêm. Khải Phong biết. Nhưng vì sao Khải Phong ngồi xe này? Khải Phong không nhớ. Lần đầu lên xe là khi nào? Khải Phong không nhớ.
 
 Trên ghế lái, bác tài liếc gương chiếu hậu. Ánh mắt dừng trên Khải Phong. Rất lâu.
 
@@ -263,7 +263,7 @@ Bác khẽ chuyển vị trí một bàn tay trên vô-lăng. Như muốn nói g
 
 Khải Phong nhìn xuống tay mình. Hai vật trên đùi — sợi len nâu của chú trung niên đêm trước, sợi lạt buộc của cụ bà đêm nay. Hai vật rời rạc, không liên quan. Nhưng Khải Phong giữ lại.
 
-Khải Phong nhìn ra cửa kính. Đêm hôm nay vẫn còn dài. Còn nhiều ngã ba phía trước. Còn nhiều người mang theo những vật chưa kịp dùng hết.
+Khải Phong nhìn ra cửa kính. Đêm vẫn dài — chuyến xe chưa dừng. Còn nhiều ngã ba phía trước. Còn nhiều người mang theo những vật chưa kịp dùng hết.
 
 Có ai đó sẽ lên xe ở trạm tiếp theo. Khải Phong chưa biết. Nhưng Khải Phong biết — sẽ có một vật nữa.
 

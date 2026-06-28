@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R38 + R39 word count
 
 Tháng tư. Trời đêm vừa khuya. Xe đêm rẽ vào đoạn ven sông sông Đuống, Bắc Ninh. Đèn pha cắt qua màn sương — chiếu lên hàng dâu xưa — gốc dâu dày — đã trồng lâu năm — lá xanh đậm sau mưa bên đường.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi hai của hành trình. Trong túi áo gió Khải Phong — hai mươi mốt vật. Đêm qua thêm sợi chỉ vàng từ vải bọc khung ảnh anh Trọng Nhân.
+Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi hai — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — hai mươi mốt vật. Đêm qua thêm sợi chỉ vàng từ vải bọc khung ảnh anh Trọng Nhân.
 
 Bác tài lái. Bàn tay già — chậm — đều — không đổi từ đêm đầu.
 
@@ -264,4 +264,4 @@ Bác tài liếc gương. "Vào đêm hai mươi hai. Con bắt đầu nhớ nă
 
 Khải Phong gật. Không hỏi.
 
-Đêm thứ hai mươi hai của hành trình. Xe đi tiếp về phía đường vành đai. Phía sau — Bắc Ninh khuất. Quỳnh Mai ở lại trường — đứng ngoài cửa văn phòng — nhìn sách trên ghế.
+Đêm thứ hai mươi hai — Khải Phong đếm thêm. Xe đi tiếp về phía đường vành đai. Phía sau — Bắc Ninh khuất. Quỳnh Mai ở lại trường — đứng ngoài cửa văn phòng — nhìn sách trên ghế.

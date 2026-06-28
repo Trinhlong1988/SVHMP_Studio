@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R40 + R41
 
 Sau cơn mưa chiều. Đêm xuống nhanh. Xe đêm rẽ vào đoạn phố Huế — Hà Nội nội thành, Hà Nội. Hàng cây ven đường còn đẫm — đèn pha quét lên thân cây ướt. Đèn pha quét lên hàng me cổ ven phố — me già — tán cao — đèn neon đường tô lên lá.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi bảy của hành trình. Trong túi áo gió Khải Phong — ba mươi sáu vật. Đêm qua thêm sợi chỉ lụa trắng từ khăn bọc ảnh anh Khải.
+Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi bảy — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — ba mươi sáu vật. Đêm qua thêm sợi chỉ lụa trắng từ khăn bọc ảnh anh Khải.
 
 Bác tài lái. Đoạn phố Huế — Khải Phong nhận ra — gần khu phố cổ — gần phố Hàng Bài — gần ngã tư Hai Bà Trưng — Trần Hưng Đạo. Khải Phong cảm thấy nhịp tim nhanh.
 
@@ -244,7 +244,7 @@ Bác tài liếc gương. "Vào đêm ba mươi bảy. Con bắt đầu nhớ an
 
 Khải Phong gật. Lệ rơi nhẹ nhàng.
 
-Đêm thứ ba mươi bảy của hành trình. Xe đi tiếp ra khỏi phố Huế. Phía sau — tiệm Sửa xe Toàn khuất. Mỹ Hạnh ở lại đứng cửa tiệm — anh Toàn cất mảnh biển vào hộp gỗ mun.
+Đêm thứ ba mươi bảy — Khải Phong đếm thêm. Xe đi tiếp ra khỏi phố Huế. Phía sau — tiệm Sửa xe Toàn khuất. Mỹ Hạnh ở lại đứng cửa tiệm — anh Toàn cất mảnh biển vào hộp gỗ mun.
 
 Khải Phong nhìn ra cửa sổ — phố Huế phía sau. Mưa đã hết — đèn neon còn sáng — phố không có ai đi đêm này.
 

@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R40
 
 Trời mưa đã rơi từ chiều. Đêm tháng tư — không tan hết rồi. Chuyến xe đêm đi qua đoạn đường nội thành Hà Nội — phố C, Hà Nội — đèn pha hắt lên hàng cây ướt sương. Đèn pha quét lên hàng cột tàu điện trên cao — Cát Linh-Hà Đông tuyến đầu.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi ba của hành trình. Trong túi áo gió Khải Phong — ba mươi hai vật.
+Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi ba — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — ba mươi hai vật.
 
 Bác tài lái.
 
@@ -254,4 +254,4 @@ Bác tài liếc gương. "Vào đêm ba mươi ba. Con đã nhớ Hạ Vy về 
 
 Khải Phong gật.
 
-Đêm thứ ba mươi ba của hành trình. Xe đi tiếp. Phía sau — Cát Linh khuất. Hoài An ở lại ga — đứng cạnh hộp lost items — vé tàu trong hộp.
+Đêm thứ ba mươi ba — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Cát Linh khuất. Hoài An ở lại ga — đứng cạnh hộp lost items — vé tàu trong hộp.
