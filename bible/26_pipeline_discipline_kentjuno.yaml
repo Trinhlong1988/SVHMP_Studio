@@ -1,0 +1,165 @@
+# SVHMP — 26 PIPELINE DISCIPLINE (kentjuno architecture import)
+# Round 19.2 add 2026-06-28 — Agent 4 kentjuno research synthesis
+# Codify Phase+Flow state machine + 3 Iron Laws + Observability discipline + 4-layer memory
+
+version: 1.0
+purpose: |
+  Architectural discipline imported từ kentjuno/ainovel-cli for SVHMP pipeline EP51-90.
+  Document only — validate em đã có 76 scripts tuân nguyên tắc.
+
+# ============================================================
+# PHASE + FLOW 2-LAYER STATE MACHINE
+# ============================================================
+
+phase_layer:
+  description: "Big stage — overall production state (only forward, no rollback)"
+  states:
+    init: "EP scaffold + spec defined"
+    drafting: "Generator writing draft"
+    drafted: "Draft complete, ready for QA"
+    rendering: "TTS render in progress"
+    rendered: "Audio rendered, ready audio QA"
+    published: "Published to channel"
+  transitions: |
+    init → drafting → drafted → rendering → rendered → published
+    Allow: same-state update (drafting → drafting if regen)
+    Forbid: backward (drafted → drafting via overwrite without explicit rewrite flag)
+    Forbid: skip (init → rendered)
+  enforcement: tools/lifecycle_state_machine.py (build phase 2)
+
+flow_layer:
+  description: "Active workflow within drafting/rendering — can switch"
+  states:
+    writing: "Generator normal output"
+    reviewing: "QA in progress"
+    rewriting: "Regen due to QA fail"
+    polishing: "Minor refinement (no full regen)"
+    steering: "Mr.Long intervention"
+  transitions: |
+    writing ↔ reviewing ↔ rewriting/polishing/steering
+    All states can switch to steering
+    rewriting → reviewing (not directly to writing)
+  enforcement: tools/flow_router.py (build phase 2)
+
+# ============================================================
+# 3 IRON LAWS (kentjuno architectural principle)
+# ============================================================
+
+iron_law_1_tools_facts_only:
+  rule: "Tools chỉ return FACTS JSON, KHÔNG return cross-scheduling instructions"
+  rationale: |
+    Separation of concerns. Tools là IO layer.
+    Routing decisions belong to flow router (Iron Law 2), not tools.
+  svhmp_validation: |
+    ✅ 76 scripts trong tools/ đều return facts only:
+    - audit_*.py return violation lists
+    - auto_fix_*.py return change counts
+    - rewrite_*.py return apply counts
+    KHÔNG có tool nào dictate next step.
+  enforcement: tools/audit_tools_compliance.py (build phase 2)
+
+iron_law_2_pure_func_router:
+  rule: "Flow Router phải pure function (no side effects), không LLM routing"
+  rationale: |
+    Routing decisions must be deterministic + testable.
+    LLM cho creative writing, code cho process flow.
+  svhmp_validation: |
+    ✅ pre-commit hook (.githooks/pre-commit) = pure function:
+       input = staged files → output = block/pass decision
+    ✅ post_render_gate.py = pure function (11 checks → fail/pass)
+    KHÔNG có LLM trong routing layer.
+  enforcement: review code changes against this rule
+
+iron_law_3_stopguard_hardlock:
+  rule: "Coordinator/Generator KHÔNG được tự terminate trừ khi Phase=Complete"
+  rationale: |
+    Anti-pattern: AI tự bỏ dở vì uncertainty.
+    Force completion + verification.
+  svhmp_validation: |
+    ✅ R41 HARDLOCK pre-commit: BLOCK commit nếu gate FAIL → force fix + retry
+    ✅ R50 audit_toolkit_mandatory_pre_commit: 17 scripts MUST run
+    KHÔNG có exit path nào skip QA.
+  enforcement: R41 hardlock + .githooks/pre-commit
+
+# ============================================================
+# OBSERVABILITY DISCIPLINE
+# ============================================================
+
+observability_principle:
+  rule: "diag/audit scripts ONLY observe + report — NEVER auto-fix without explicit --apply flag"
+  anti_patterns:
+    - "Tự retry on failure (idleResume — kentjuno deleted)"
+    - "Auto modify content based on detection"
+    - "Hide errors via fallback"
+  svhmp_validation: |
+    ✅ TẤT CẢ 76 scripts tools/:
+    - audit_*.py: read-only, write JSON report
+    - auto_fix_*.py: REQUIRE --apply flag, default dry-run
+    - rewrite_*.py: REQUIRE --apply flag
+    - verify_50_rounds.py: orchestrator only, no fix
+    KHÔNG có script nào violate observer-only principle.
+
+# ============================================================
+# 4-LAYER MEMORY SYSTEM (kentjuno pattern)
+# ============================================================
+
+memory_layers:
+  layer_1_working_memory:
+    description: "Current EP context — chapter_contract + current section spec"
+    storage: "bible/21b_ep51_90_spec.yaml ep_N_chapter_contract"
+    loaded_by: "Generator pre-write each EP"
+
+  layer_2_episodic_memory:
+    description: "Long-term continuity — M1-M18 progression + cross-EP state"
+    storage:
+      - "bible/21_series_arc_design.yaml quang_memory_arc"
+      - "bible/24_meta_arc_easter_eggs.yaml"
+      - "runtime/state.yaml ep_lifecycle"
+    loaded_by: "Generator + Editor cross-EP verification"
+
+  layer_3_reference_pack:
+    description: "Style + rule references — anti-AI tone + grammar + bible/22"
+    storage:
+      - "bible/22_anti_slop_vi.yaml"
+      - "bible/22b_anti_ai_tone_kentjuno.yaml"
+      - "bible/01_narrative_structure.yaml Ngạn templates"
+      - "data/place_names.yaml R71"
+    loaded_by: "Generator + Editor as constraint"
+
+  layer_4_memory_policy:
+    description: "Which layer to prioritize for current task"
+    rules:
+      writing_new_ep: "working + episodic > reference"
+      editing_existing: "reference + episodic > working"
+      cross_ep_audit: "episodic primary"
+      style_check: "reference primary"
+    implementation: "Generator prompt PHASE 13 specifies load order per task"
+
+# ============================================================
+# AESTHETIC 5 SUB-DIM AUDIT (kentjuno editor pattern)
+# ============================================================
+
+aesthetic_5_sub_dims:
+  must_cite_source: "Every issue MUST quote 原文 line — no empty conclusions"
+  sub_dimensions:
+    1_description_quality:
+      check: "Abstract summary vs concrete 5-sense detail"
+      svhmp_red_flag: "không khí áp lực / tâm trạng căng thẳng"
+    2_narrative_technique:
+      check: "Viewpoint unified or intentional shift? Time handling natural?"
+      svhmp_red_flag: "Sudden POV shift mid-section"
+    3_dialogue_distinction:
+      check: "Remove speaker tag, can distinguish character?"
+      svhmp_red_flag: "All passengers speak same syntax"
+    4_vocabulary_quality:
+      check: "Three-part parallel / 4-char idiom stacking / template simile"
+      svhmp_red_flag: "Trong khoảnh khắc đó / Như thể... một cách"
+    5_emotional_resonance:
+      check: "Heart-pounding, throat-tightening passages?"
+      svhmp_red_flag: "Flat emotion narrator labeling (sad/scared/angry)"
+  enforcement: tools/audit_aesthetic_5_subdim.py (build phase 2)
+
+authority: Mr.Long
+revision_policy:
+  amendable_by: Mr.Long
+  process: "Documentation only — actual enforcement via scripts (linked above)"

@@ -1,10 +1,10 @@
 # TẬP 1 — ĐỒNG HỒ NỮ MÀU XÀ CỪ (v7 final — fix review round 2 chốt)
 
-[INTRO 4.5s — HẮC DẠ KÝ master]
+[INTRO 4.5s, [pause:250ms] HẮC DẠ KÝ master]
 
 [pause:800ms]
 
-Hắc Dạ Ký — chuyện kể từ cõi vô hình.
+Hắc Dạ Ký, [pause:250ms] chuyện kể từ cõi vô hình.
 
 [pause:600ms]
 
@@ -20,7 +20,7 @@ Ai cũng có một chuyến xe chưa nói lời tạm biệt.
 
 [pause:1000ms]
 
-Tập 1 — câu chuyện đêm nay.
+Tập 1, [pause:250ms] câu chuyện đêm nay.
 
 [pause:1500ms]
 
@@ -30,7 +30,7 @@ Tập 1 — câu chuyện đêm nay.
 prompt_version : SVHMP-10.0-RC3.2
 ep_number      : 1
 phase          : establish (1—10)
-dna_variant    : A (Classic — first run, last=null → random pick A)
+dna_variant    : A (Classic, [pause:250ms] first run, last=null → random pick A)
 emotion_flipped: false
 aftertaste     : ám ảnh nhẹ (establish soul subtle, không nghẹn quá sớm)
 emotion_tags   : [longing, regret, melancholy, lover, unspoken_love]
@@ -43,23 +43,23 @@ estimated_duration:
   note: Ngọc Ngạn pace 150-160 wpm (KHÔNG 180), thực tế audio 14.5-mười sáu phút
 arc_open_new   : ARC-ep1 (đồng hồ xà cừ chuyển sang cô gái ghế 7 mới)
 v7_changes_round1:
-  - cắt 12% câu ngắn lặp "Tôi ..." phần Khải Phong kể về Hạ Vy
+  - cắt 12% câu ngắn lặp [DIALOGUE_SEG_START]"Tôi ..."[DIALOGUE_SEG_END] phần Khải Phong kể về Hạ Vy
   - phát huy 3 hành khách: ông cụ radio + cô y tá + anh trung niên giấy gấp tư
   - thêm 3 chi tiết kinh dị: (a) đồng hồ tự rung dù hết pin, (b) kính xe phản chiếu Hạ Vy phía sau Khải Phong, (c) kim nhích một lần khi Khải Phong nhớ
   - mở rộng SETUP/REVEAL/PAYOFF cho đạt 13-mười sáu phút
 v7_changes_round3_lock:
-  - gộp "Đồng phục xưa" lặp hai lần → "đồng phục y tá xưa" (một lần)
-  - thay "Như ôm một đứa trẻ đã ngủ" (cụ thể) → "Như sợ buông tay ra, thứ trong lòng mình sẽ biến mất" (ám hơn)
-  - bỏ "lời chào nhà nghề" + "thói quen đã làm rất lâu" → chỉ "Như một cử chỉ đã thành thói quen" (không spoil lore)
+  - gộp [DIALOGUE_SEG_START]"Đồng phục xưa"[DIALOGUE_SEG_END] lặp hai lần → [DIALOGUE_SEG_START]"đồng phục y tá xưa"[DIALOGUE_SEG_END] (một lần)
+  - thay [DIALOGUE_SEG_START]"Như ôm một đứa trẻ đã ngủ"[DIALOGUE_SEG_END] (cụ thể) → [DIALOGUE_SEG_START]"Như sợ buông tay ra, thứ trong lòng mình sẽ biến mất"[DIALOGUE_SEG_END] (ám hơn)
+  - bỏ [DIALOGUE_SEG_START]"lời chào nhà nghề"[DIALOGUE_SEG_END] + [DIALOGUE_SEG_START]"thói quen đã làm rất lâu"[DIALOGUE_SEG_END] → chỉ [DIALOGUE_SEG_START]"Như một cử chỉ đã thành thói quen"[DIALOGUE_SEG_END] (không spoil lore)
   - update narration_speed 180 → 142 wpm + estimated_runtime 16.66 phút (Mr.Long giảm 8% balance Ngạn cadence) (sát Ngọc Ngạn pace)
   - add SERIES_RULES lock DNA ESTABLISHED
 
 v7_changes_round2_chốt:
-  - vệt máu y tá → "đồng phục xưa. Màu áo ở ngực trái sẫm hơn một chút." (tinh tế, không horror image)
-  - câu hát ông cụ → "một câu hát cũ, nghe không rõ lời. ...người ơi..." (mơ hồ, không cướp motif)
-  - bỏ spoil "rất nhiều người trước Khải Phong" → "một thói quen đã làm rất lâu."
-  - bỏ giải thích "cô hiểu vật này không thuộc về mình" → chỉ "đặt lại lên ghế. Rồi rút tay về."
-  - thêm [pause:1200ms] sau "Khải Phong biết." + sau "Hạ Vy mất tại nơi." (im lặng radio)
+  - vệt máu y tá → [DIALOGUE_SEG_START]"đồng phục xưa. Màu áo ở ngực trái sẫm hơn một chút."[DIALOGUE_SEG_END] (tinh tế, không horror image)
+  - câu hát ông cụ → [DIALOGUE_SEG_START]"một câu hát cũ, nghe không rõ lời. ...người ơi..."[DIALOGUE_SEG_END] (mơ hồ, không cướp motif)
+  - bỏ spoil [DIALOGUE_SEG_START]"rất nhiều người trước Khải Phong"[DIALOGUE_SEG_END] → [DIALOGUE_SEG_START]"một thói quen đã làm rất lâu."[DIALOGUE_SEG_END]
+  - bỏ giải thích [DIALOGUE_SEG_START]"cô hiểu vật này không thuộc về mình"[DIALOGUE_SEG_END] → chỉ [DIALOGUE_SEG_START]"đặt lại lên ghế. Rồi rút tay về."[DIALOGUE_SEG_END]
+  - thêm [pause:1200ms] sau [DIALOGUE_SEG_START]"Khải Phong biết."[DIALOGUE_SEG_END] + sau [DIALOGUE_SEG_START]"Hạ Vy mất tại nơi."[DIALOGUE_SEG_END] (im lặng radio)
   - SECTION_EMO REVEAL lock: sad 0.25 / afraid 0.10 / melancholic 0.40 / surprised 0.05 / calm 0.20 (Ngọc Ngạn bình thản, không nghẹn)
 ```
 
@@ -115,7 +115,7 @@ Hà Nội đêm Khải Phong vẫn nhớ.
 
 Có một biển báo trắng lướt qua. Chữ mờ vì hơi nước.
 
-"Cầu Long Biên — hai ki-lô-mét."
+[DIALOGUE_SEG_START]"Cầu Long Biên, [pause:250ms] hai ki-lô-mét."[DIALOGUE_SEG_END]
 
 Khải Phong nhíu mắt.
 
@@ -279,7 +279,7 @@ Trên ghế ba, ông cụ chậm rãi xoay núm radio.
 
 Một tiếng rè nhẹ. Rồi một câu hát cũ vọng ra, nghe không rõ lời.
 
-[pause:300ms] "...người ơi..."
+[pause:300ms] [DIALOGUE_SEG_START]"...người ơi..."[DIALOGUE_SEG_END]
 
 Khải Phong khựng người.
 
@@ -299,7 +299,7 @@ Khải Phong nuốt nước bọt.
 
 — Tôi đưa hộp đồng hồ.
 
-— Hạ Vy cười. Hạ Vy nói: "Mình về xong sẽ nói chuyện với cậu nha."
+— Hạ Vy cười. Hạ Vy nói: [DIALOGUE_SEG_START]"Mình về xong sẽ nói chuyện với cậu nha."[DIALOGUE_SEG_END]
 
 — Tôi gật. Tôi tự nhủ sẽ nói khi Hạ Vy về.
 
@@ -329,7 +329,7 @@ Anh không trả lời ngay.
 
 Anh nhìn chiếc đồng hồ trong tay.
 
-Mãi về sau anh mới biết — câu hỏi đó dành riêng cho mình anh.
+Mãi về sau anh mới biết, [pause:250ms] câu hỏi đó dành riêng cho mình anh.
 
 ---
 
@@ -355,7 +355,7 @@ Anh ngồi ở quán cà phê sân bay đến mười giờ.
 
 Anh tự nhủ: chắc Hạ Vy đang ngồi máy bay.
 
-Anh nhắn Hạ Vy: "Sang đó nhớ ăn cơm. Đừng quên uống nước."
+Anh nhắn Hạ Vy: [DIALOGUE_SEG_START]"Sang đó nhớ ăn cơm. Đừng quên uống nước."[DIALOGUE_SEG_END]
 
 Hạ Vy không trả lời.
 
@@ -565,7 +565,7 @@ Anh không nói gì.
 
 Khải Phong từ từ đứng dậy. Tay anh vẫn ôm chiếc đồng hồ.
 
-Đến bậc cuối — anh dừng. Mắt nhìn rất xa. Bàn tay anh buông lỏng tự khi nào. Chiếc đồng hồ trượt khỏi lòng tay — rơi êm xuống ghế số bảy. Vỏ xà cừ phản ánh đèn cabin một thoáng.
+Đến bậc cuối, [pause:250ms] anh dừng. Mắt nhìn rất xa. Bàn tay anh buông lỏng tự khi nào. Chiếc đồng hồ trượt khỏi lòng tay, [pause:250ms] rơi êm xuống ghế số bảy. Vỏ xà cừ phản ánh đèn cabin một thoáng.
 
 Anh không quay đầu nhặt. Anh không nhận ra mình đánh rơi điều gì.
 
@@ -679,17 +679,17 @@ Bác tài liếc gương.
 
 ## SOUL — giữ 93
 - aftertaste: ám ảnh nhẹ ✓ (không nghẹn nặng hơn)
-- beat_4 NGHẸN: REVEAL ~8:00 dialog giữ nguyên + thêm 1 tiếng "Tách" kim nhích → tăng PCC kinh dị
+- beat_4 NGHẸN: REVEAL ~8:00 dialog giữ nguyên + thêm 1 tiếng "Tách[DIALOGUE_SEG_START]" kim nhích → tăng PCC kinh dị
 
 ## REVIEW FIXES APPLIED (4 mục)
 
 | Mục | v6 | v7 |
 |---|---|---|
-| Cắt 10-15% câu ngắn lặp "Tôi …" phần Khải Phong kể Hạ Vy | 12 câu đơn lặp pattern "Tôi …" (line 191-228) | 6 câu gộp, mạch chảy hơn |
-| Phát huy 3 hành khách | giới thiệu xong là biến mất | ông cụ bật radio "...người ơi..." / cô y tá lắc đầu + cử chỉ thói quen (hai ngón thái dương) / anh trung niên mở giấy đọc 1 dòng rồi gập |
-| Đồng hồ tự rung dù hết pin | không có | hai lần: SETUP "rung khẽ một lần như tim đập" + CLIFFHANGER "rung khẽ trong tay cô" |
-| Kính xe phản chiếu Hạ Vy phía sau Khải Phong | không có | REVEAL "Trong tấm kính mờ hơi nước, có hai bóng người. Phía sau anh, sát vai, có một bóng cô gái. Tóc cột cao vút. Áo gió xanh nhạt." |
-| Kim đồng hồ nhích một lần | không có | REVEAL "Tiếng kim đồng hồ trong tay Khải Phong nhích đúng một nhịp. Một nhịp duy nhất. Tách." |
+| Cắt 10-15% câu ngắn lặp "[DIALOGUE_SEG_END]Tôi …[DIALOGUE_SEG_START]" phần Khải Phong kể Hạ Vy | 12 câu đơn lặp pattern "[DIALOGUE_SEG_END]Tôi …[DIALOGUE_SEG_START]" (line 191-228) | 6 câu gộp, mạch chảy hơn |
+| Phát huy 3 hành khách | giới thiệu xong là biến mất | ông cụ bật radio "[DIALOGUE_SEG_END]...người ơi...[DIALOGUE_SEG_START]" / cô y tá lắc đầu + cử chỉ thói quen (hai ngón thái dương) / anh trung niên mở giấy đọc 1 dòng rồi gập |
+| Đồng hồ tự rung dù hết pin | không có | hai lần: SETUP "[DIALOGUE_SEG_END]rung khẽ một lần như tim đập[DIALOGUE_SEG_START]" + CLIFFHANGER "[DIALOGUE_SEG_END]rung khẽ trong tay cô[DIALOGUE_SEG_START]" |
+| Kính xe phản chiếu Hạ Vy phía sau Khải Phong | không có | REVEAL "[DIALOGUE_SEG_END]Trong tấm kính mờ hơi nước, có hai bóng người. Phía sau anh, sát vai, có một bóng cô gái. Tóc cột cao vút. Áo gió xanh nhạt.[DIALOGUE_SEG_START]" |
+| Kim đồng hồ nhích một lần | không có | REVEAL "[DIALOGUE_SEG_END]Tiếng kim đồng hồ trong tay Khải Phong nhích đúng một nhịp. Một nhịp duy nhất. Tách." |
 | Thời lượng 13-mười sáu phút | 12.9 (estimate) → 8.92 (thực render) | 15.hai phút @142 wpm (~2420 từ) |
 
 ## NARRATION METRICS (v7 target)
@@ -697,8 +697,8 @@ Bác tài liếc gương.
 - avg_sentence_words: ~7.5 (target 7-9) ✓
 - punch_ratio: ~12% ✓
 - regret_lines: 6+ giữ lại
-- horror_lines: 3 mới — (a) đồng hồ rung, (b) kính xe phản chiếu Hạ Vy, (c) kim nhích "Tách"
-- sensory_lines: 8+ — vỏ xà cừ lạnh, mùi sông Hồng, mùi phù sa sông Hồng, đèn pha quét, sương đặc, ngực trái áo y tá sẫm hơn, mép giấy sờn, núm radio tiếng rè
+- horror_lines: 3 mới, [pause:250ms] (a) đồng hồ rung, (b) kính xe phản chiếu Hạ Vy, (c) kim nhích "Tách"
+- sensory_lines: 8+, [pause:250ms] vỏ xà cừ lạnh, mùi sông Hồng, mùi phù sa sông Hồng, đèn pha quét, sương đặc, ngực trái áo y tá sẫm hơn, mép giấy sờn, núm radio tiếng rè
 
 ## EMOTION CURVE v7 (per-section emo_vector giữ nguyên script render)
 
@@ -707,7 +707,7 @@ Bác tài liếc gương.
 | HOOK | surprised 0.40 + calm 0.30 | giữ |
 | SETUP | afraid 0.30 + calm 0.30 | + đồng hồ rung khẽ (afraid spike micro) + chi tiết 3 hành khách |
 | INCIDENT | sad 0.25 + calm 0.40 | + ông cụ radio + cô y tá lắc đầu (sad spike) |
-| REVEAL | **melancholic 0.40 + calm 0.20** + sad 0.25 + afraid 0.10 (round 2 chốt — Ngọc Ngạn bình thản) | + kim nhích "Tách" + kính xe phản chiếu Hạ Vy |
+| REVEAL | **melancholic 0.40 + calm 0.20** + sad 0.25 + afraid 0.10 (round 2 chốt — Ngọc Ngạn bình thản) | + kim nhích "Tách[DIALOGUE_SEG_START]" + kính xe phản chiếu Hạ Vy |
 | PAYOFF | melancholic 0.35 + calm 0.35 | + 3 hành khách tiễn Khải Phong (deepen warmth) |
 | CLIFFHANGER | melancholic 0.30 + calm 0.35 | + đồng hồ rung trong tay cô gái mới (callback loop) |
 
@@ -715,11 +715,11 @@ Bác tài liếc gương.
 
 # NOTES cho Mr. Long tinh chỉnh
 
-1. **Câu hát ông cụ "Người ơi người ở đừng về"** — em chọn câu quan họ phổ thông cho tiễn biệt. Mr. Long có thể đổi sang câu Hạ Vy thường hát (nếu memory bible có).
-2. **Cô y tá "đồng phục y tá cũ, ngực trái sẫm hơn một chút"** — round 2 chốt: bỏ "vệt máu khô" (quá horror image), giữ tinh tế. Vẫn ngầm gợi cô từng trực ca tai nạn (gắn lore Hạ Vy mất) qua cử chỉ hai ngón thái dương + lắc đầu chậm.
-3. **Kim nhích "Tách"** — em đặt ngay sau câu "Tôi nhớ ra rồi" thay vì sau dialog "Bảy giờ mười là lúc Hạ Vy mất" — để tiếng "Tách" trở thành CHUÔNG báo memory thật sự về.
-4. **Kính xe phản chiếu Hạ Vy** — anh đặt SAU dialog reveal, không đặt trước. Vì nếu trước → spoil. Sau → confirm cho người nghe rằng Hạ Vy thực sự đến đón Khải Phong.
-5. **Bác tài 2 câu** — giữ y nguyên ("Con đã nhớ ra chưa?" ×2 + "Chưa tới lúc." ×1) như v6.
+1. **Câu hát ông cụ "[DIALOGUE_SEG_END]Người ơi người ở đừng về[DIALOGUE_SEG_START]"**, [pause:250ms] em chọn câu quan họ phổ thông cho tiễn biệt. Mr. Long có thể đổi sang câu Hạ Vy thường hát (nếu memory bible có).
+2. **Cô y tá "[DIALOGUE_SEG_END]đồng phục y tá cũ, ngực trái sẫm hơn một chút[DIALOGUE_SEG_START]"**, [pause:250ms] round 2 chốt: bỏ "[DIALOGUE_SEG_END]vệt máu khô[DIALOGUE_SEG_START]" (quá horror image), giữ tinh tế. Vẫn ngầm gợi cô từng trực ca tai nạn (gắn lore Hạ Vy mất) qua cử chỉ hai ngón thái dương + lắc đầu chậm.
+3. **Kim nhích "[DIALOGUE_SEG_END]Tách[DIALOGUE_SEG_START]"**, [pause:250ms] em đặt ngay sau câu "[DIALOGUE_SEG_END]Tôi nhớ ra rồi[DIALOGUE_SEG_START]" thay vì sau dialog "[DIALOGUE_SEG_END]Bảy giờ mười là lúc Hạ Vy mất[DIALOGUE_SEG_START]", [pause:250ms] để tiếng "[DIALOGUE_SEG_END]Tách[DIALOGUE_SEG_START]" trở thành CHUÔNG báo memory thật sự về.
+4. **Kính xe phản chiếu Hạ Vy**, [pause:250ms] anh đặt SAU dialog reveal, không đặt trước. Vì nếu trước → spoil. Sau → confirm cho người nghe rằng Hạ Vy thực sự đến đón Khải Phong.
+5. **Bác tài 2 câu**, [pause:250ms] giữ y nguyên ("[DIALOGUE_SEG_END]Con đã nhớ ra chưa?[DIALOGUE_SEG_START]" ×2 + "[DIALOGUE_SEG_END]Chưa tới lúc.[DIALOGUE_SEG_START]" ×1) như v6.
 6. **bell_count = 1** giữ nguyên (chuông cuối CLIFFHANGER). KHÔNG thêm chuông phụ vì sẽ break ARC plant rule.
 
 ---
@@ -732,8 +732,8 @@ SERIES_RULES:
     one_bus_only: true
   driver:
     speaks_only:
-      - "Con đã nhớ ra chưa?"
-      - "Chưa tới lúc."
+      - "[DIALOGUE_SEG_END]Con đã nhớ ra chưa?[DIALOGUE_SEG_START]"
+      - "[DIALOGUE_SEG_END]Chưa tới lúc."
   bell:
     max_per_episode: 1
   ghost_visual:
@@ -775,6 +775,6 @@ SVHMP:
   golden_reference: ep_01_v7_final_round3_lock
 ```
 
-> *Từ tập này trở đi, điều quan trọng nhất không còn là "làm truyện ma đáng sợ hơn", mà là giữ tuyệt đối cảm giác: một chuyến xe đêm dành cho những người còn một điều chưa kịp nói.*
+> *Từ tập này trở đi, điều quan trọng nhất không còn là [DIALOGUE_SEG_START]"làm truyện ma đáng sợ hơn"[DIALOGUE_SEG_END], mà là giữ tuyệt đối cảm giác: một chuyến xe đêm dành cho những người còn một điều chưa kịp nói.*
 
 Ep01 v7 final round3 lock = **golden reference** cho 50-100 tập tiếp theo.

@@ -6282,10 +6282,6 @@
           "context": "hỏi.\n\nĐêm thứ hai mươi mốt — Khải Phong đếm thêm. Xe"
         },
         {
-          "word": "Khoảng",
-          "context": "ời đàn ông đứng đợi bên cổng. Khoảng năm mươi tuổi. Áo s"
-        },
-        {
           "word": "Thuận",
           "context": "áng yếu. Bảng \"Nghĩa trang Mỹ Thuận\" gỗ xưa — đã mòn né"
         },
@@ -6296,6 +6292,10 @@
         {
           "word": "Thuận",
           "context": "ng Nhân đi vào nghĩa trang Mỹ Thuận — cổng đã mở. Đèn n"
+        },
+        {
+          "word": "Khoảng",
+          "context": "ời đàn ông đứng đợi bên cổng. Khoảng năm mươi tuổi. Áo s"
         }
       ],
       "R69": [],
@@ -12048,12 +12048,12 @@
       ],
       "R71": [
         {
-          "place": "Lào Cai",
-          "count": 3
-        },
-        {
           "place": "Sa Pa",
           "count": 11
+        },
+        {
+          "place": "Lào Cai",
+          "count": 3
         }
       ],
       "R72": [
@@ -12194,6 +12194,10 @@
           "context": "m gì — vì sao đi cùng đường — Khải Phong cần thêm một"
         },
         {
+          "word": "Khoảng",
+          "context": "nữ trẻ đứng đợi bên cửa tiệm. Khoảng ba mươi hai tuổi. Á"
+        },
+        {
           "word": "Huế",
           "context": "nhanh. Xe đêm rẽ vào đoạn phố Huế — Hà Nội nội thành,"
         },
@@ -12248,10 +12252,6 @@
         {
           "word": "Huế",
           "context": "ải Phong nhìn ra cửa sổ — phố Huế phía sau. Mưa đã hế"
-        },
-        {
-          "word": "Khoảng",
-          "context": "nữ trẻ đứng đợi bên cửa tiệm. Khoảng ba mươi hai tuổi. Á"
         }
       ],
       "R69": [],
@@ -13248,6 +13248,10 @@
           "context": "đồng cảm.\n\nĐêm thứ bốn mươi — Khải Phong đếm thêm. Xe"
         },
         {
+          "word": "Khoảng",
+          "context": "àn ông đứng đợi bên cửa kính. Khoảng hai mươi tám tuổi."
+        },
+        {
           "word": "Huế",
           "context": "sợi vải đen mảnh biển số phố Huế + mảnh giấy can chữ"
         },
@@ -13270,10 +13274,6 @@
         {
           "word": "Huế",
           "context": "iên — Cát Linh — Mộc Hà — phố Huế — Khâm Thiên. Trung"
-        },
-        {
-          "word": "Khoảng",
-          "context": "àn ông đứng đợi bên cửa kính. Khoảng hai mươi tám tuổi."
         }
       ],
       "R69": [],
@@ -16765,16 +16765,16 @@
           "context": "tan trên hiên nhà bố mẹ em.\n\nKhải Phong còn một mình"
         },
         {
+          "word": "Khoảng",
+          "context": "hà — một phụ nữ trẻ đứng đợi. Khoảng hai mươi bốn tuổi."
+        },
+        {
           "word": "Huế",
           "context": "ưng (EP37 + EP40 Mộc Hà), phố Huế (EP37), Khâm Thiên"
         },
         {
           "word": "Huế",
           "context": "— văn phòng Hạ Vy. Ngã tư phố Huế-Trần Hưng Đạo — chỗ"
-        },
-        {
-          "word": "Khoảng",
-          "context": "hà — một phụ nữ trẻ đứng đợi. Khoảng hai mươi bốn tuổi."
         }
       ],
       "R69": [],
@@ -16980,7 +16980,7 @@
       ],
       "R71": [
         {
-          "place": "Lào Cai",
+          "place": "Đà Nẵng",
           "count": 1
         },
         {
@@ -16988,11 +16988,11 @@
           "count": 2
         },
         {
-          "place": "Đà Nẵng",
+          "place": "Đắk Lắk",
           "count": 1
         },
         {
-          "place": "Đắk Lắk",
+          "place": "Lào Cai",
           "count": 1
         }
       ],

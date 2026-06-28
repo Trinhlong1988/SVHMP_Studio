@@ -1,0 +1,125 @@
+# SVHMP — 24 META-ARC EASTER EGGS (Magnus Archives import)
+# Round 19.2 add 2026-06-28 — Agent 3 horror serial scale
+# Plant 1 detail per EP that retroactively matters at EP73 PIVOT or EP90 FINALE
+
+version: 1.0
+purpose: |
+  Magnus Archives proven pattern: anthology episodes seem standalone
+  BUT contain Easter eggs that audience notice in retrospect after meta-reveal.
+  Creates literary moat vs Khánh An / MC Hồng channels (pure binge no meta).
+
+# ============================================================
+# EP73 PIVOT EASTER EGGS (Khải Phong = LIMBO)
+# ============================================================
+
+ep73_pivot_seeds:
+  # Each EP01-72 plant ONE detail that retroactively confirms Khải Phong's limbo status
+  # Audience binge re-listen will catch these
+
+  ep01:
+    seed: "Khải Phong 'không nhận ra mình lên xe lúc nào' (line 94)"
+    retroactive_meaning: "Ghost passenger không nhớ moment chết"
+    status: "✅ ALREADY in text"
+
+  ep02_15:
+    seed_pattern: "Khải Phong KHÔNG bao giờ xuống ghế đi lại trong cabin — chỉ ngồi yên ghế 7"
+    retroactive_meaning: "Ghost bound to assigned seat"
+    enforcement: "Generator EP_N constraint — Khải Phong never leaves seat 7 except final descent"
+
+  ep10_milestone:
+    seed: "Lần đầu Khải Phong khóc — nước mắt rơi xuống đồng hồ KHÔNG để lại vết ẩm"
+    retroactive_meaning: "Nước mắt ghost không có vật chất"
+    location: "EP10 PAYOFF section"
+
+  ep20_milestone:
+    seed: "Khải Phong nhặt vật rơi từ passenger nhưng tay anh KHÔNG để lại vân tay trên kim loại"
+    retroactive_meaning: "Ghost touch không tương tác vật chất"
+
+  ep30_milestone:
+    seed: "Bác tài nhìn Khải Phong qua gương — Khải Phong nhận ra: bác tài KHÔNG dừng nhìn ai khác lâu như anh"
+    retroactive_meaning: "Bác tài đặc biệt quan sát Khải Phong vì biết tình trạng"
+
+  ep40_milestone:
+    seed: "Một passenger hỏi Khải Phong: 'Chú đếm đêm thứ mấy rồi?' — Khải Phong đáp '40'. Passenger nhíu mày: 'Tôi không nhớ tháng nào có 40 đêm.'"
+    retroactive_meaning: "Khải Phong tính 1 đêm = 1 EP nhưng time không tuyến tính"
+
+  ep50_milestone:
+    seed: "EP50 đã ship — bản đồ route từ nhà Khải Phong đến nhà Hạ Vy (per bible/21)"
+    status: "✅ ALREADY in plan"
+
+  ep51_72_each:
+    instruction: |
+      Generator MUST plant 1 seed per EP — pick from pool:
+      - Khải Phong nhìn ngón tay mình thấy lạnh nhưng cabin ấm
+      - Passenger sờ vai Khải Phong, tay đi xuyên qua (subtle)
+      - Khải Phong nhặt vật từ ghế, vật KHÔNG có trọng lượng cảm nhận
+      - Đồng hồ trong tay Khải Phong vẫn dừng bảy giờ mười qua mọi EP
+      - Khải Phong không cảm thấy đói/khát/buồn ngủ
+      - Khi xe dừng trạm, Khải Phong không bao giờ nhận thấy bác tài thay ca
+
+# ============================================================
+# EP90 FINALE EASTER EGGS (Hạ Vy = passenger Khải Phong định collect)
+# ============================================================
+
+ep90_finale_seeds:
+  # Plant Hạ Vy presence indirectly throughout EP31-89
+
+  ep01_05:
+    seed: "Hạ Vy = absent love interest. Object = đồng hồ xà cừ"
+    status: "✅ Foundation"
+
+  ep31_60:
+    seed_pattern: "Object proxies escalate — letters / handwriting / radio music"
+    instruction: "Each EP plant SUBTLE Hạ Vy reference: lyrics radio Hạ Vy từng hát / quán cà phê hai đứa từng đến / áo gió xanh nhạt color recur"
+
+  ep61_72:
+    seed: "Khải Phong nhớ tin nhắn cuối Hạ Vy: 'em sắp về' — chưa biết nội dung đầy đủ"
+    retroactive_meaning: "Hạ Vy đã trên đường về nhà khi tai nạn — Khải Phong đến đón đêm Hạ Vy chết"
+
+  ep82_first_voice_fragment:
+    seed: "Radio static cũ vọng câu hát Hạ Vy — Khải Phong nghẹn"
+    retroactive_meaning: "Hạ Vy linh hồn đã spectrum gần xe nhiều đêm"
+
+  ep87_first_physical_glimpse:
+    seed: "Cô gái ngồi ghế 8 quay đầu — Khải Phong thấy thoáng giống Hạ Vy → cô gái khác"
+    retroactive_meaning: "Hạ Vy chờ Khải Phong qua passengers giống cô"
+
+  ep89:
+    seed: "Khải Phong nghe mùi nước hoa giống Hạ Vy ngày cuối — passenger không phải Hạ Vy"
+    retroactive_meaning: "Hạ Vy lưu hơi qua chuyến xe trước khi xuất hiện EP90"
+
+# ============================================================
+# 4 WESTERN TECHNIQUES IMPORT (Agent 3)
+# ============================================================
+
+magnus_easter_eggs_method:
+  source: "The Magnus Archives Season 1-5 production"
+  rule: "Mỗi EP plant 1 detail retroactively matter future reveal"
+  application: "Ship via chapter_contract.required_beats per EP51-89"
+
+old_gods_cold_open:
+  source: "Old Gods of Appalachia podcast"
+  rule: "30s pre-intro ambient (engine + rain + radio static) + 1 haunting line BEFORE intro 4.5s"
+  application: "Update audio pipeline — add 30s ambient bed before brand_audio intro inject"
+  effort: "Pipeline change (1h)"
+
+night_vale_npc_accrual:
+  source: "Welcome to Night Vale recurring NPCs"
+  rule: "3-4 passengers S1 referenced (KHÔNG re-appear) in S2 EPs"
+  candidates_from_s1:
+    - cụ bà Hằng (EP06) — referenced EP56 passenger nhắc "có cụ bà Hà Nội mất tang trên xe khách"
+    - bác sĩ Thu Hà (EP11) — referenced EP67 passenger nhắc "có bác sĩ Bạch Mai tai nạn vành đai 3"
+    - cô Linh (EP27) — referenced EP78 passenger nhắc "có chị Việt kiều Mỹ về thắp hương bạn"
+    - thầy Phong (EP30) — referenced EP82 passenger nhắc "có thầy giáo Phú Thọ mất 5 năm trước"
+  application: "Generator EP56/67/78/82 add 1-line reference passenger S1"
+
+magnus_season_split:
+  source: "The Magnus Archives season structure"
+  rule: "Split S2 into S2A (EP51-72 discovery) + EP73 hinge + S2B (EP74-90 atonement)"
+  result: "3 season finales total (EP50 done / EP72 / EP90)"
+  application: "Marketing — promote each as standalone milestone"
+
+authority: Mr.Long
+revision_policy:
+  amendable_by: Mr.Long
+  process: "Edit + bump version + add new seeds as EP51-89 viết"
