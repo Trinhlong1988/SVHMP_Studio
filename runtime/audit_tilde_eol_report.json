@@ -1,18 +1,6 @@
 {
-  "total_violations": 17,
+  "total_violations": 10,
   "eps_with_issues": [
-    [
-      21,
-      2
-    ],
-    [
-      23,
-      4
-    ],
-    [
-      25,
-      1
-    ],
     [
       30,
       3
@@ -39,55 +27,6 @@
     ]
   ],
   "violations": [
-    {
-      "line": 45,
-      "word": "chữ",
-      "context": "ỹ Thuận\" gỗ xưa — đã mòn từng chữ — nhưng còn đọc được",
-      "severity": "HIGH",
-      "ep": 21
-    },
-    {
-      "line": 113,
-      "word": "rũ",
-      "context": "nắm tay con một lần — rồi tay rũ. Mẹ con nhìn con —",
-      "severity": "HIGH",
-      "ep": 21
-    },
-    {
-      "line": 45,
-      "word": "chữ",
-      "context": "eon đã tắt nửa — chỉ còn từng chữ \"Hải Cảng\" sáng. Cửa",
-      "severity": "HIGH",
-      "ep": 23
-    },
-    {
-      "line": 61,
-      "word": "chữ",
-      "context": "không đọc — chỉ nhìn nét nét chữ. Nét bút bi xanh —",
-      "severity": "HIGH",
-      "ep": 23
-    },
-    {
-      "line": 71,
-      "word": "chữ",
-      "context": "không đọc — chỉ nhìn nét nét chữ. Như đã thuộc nội d",
-      "severity": "HIGH",
-      "ep": 23
-    },
-    {
-      "line": 209,
-      "word": "chữ",
-      "context": "màu nâu — đã ố — không có nét chữ.",
-      "severity": "HIGH",
-      "ep": 23
-    },
-    {
-      "line": 39,
-      "word": "chữ",
-      "context": "mẩu giấy vở học sinh với từng chữ \"Cô giáo em...\"",
-      "severity": "HIGH",
-      "ep": 25
-    },
     {
       "line": 243,
       "word": "chữ",

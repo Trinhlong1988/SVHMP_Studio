@@ -1,14 +1,6 @@
 {
-  "total": 26,
+  "total": 24,
   "eps": [
-    [
-      21,
-      1
-    ],
-    [
-      22,
-      1
-    ],
     [
       26,
       2
@@ -87,22 +79,6 @@
     ]
   ],
   "violations": [
-    {
-      "line": 155,
-      "word": "im",
-      "context": "\"Vợ tôi im. Hiể",
-      "sentence_words": 3,
-      "severity": "HIGH",
-      "ep": 21
-    },
-    {
-      "line": 205,
-      "word": "ra",
-      "context": "Khải Phong chớp lần nữa. Thầy tan ra.",
-      "sentence_words": 3,
-      "severity": "HIGH",
-      "ep": 22
-    },
     {
       "line": 139,
       "word": "im",
