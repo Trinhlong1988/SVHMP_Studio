@@ -54,9 +54,9 @@ arc_design_compliant: bible/21 R33-R38
 
 Lớp sương dày đặc. Đêm tháng tư miền Bắc. Xe đêm trôi chậm qua đoạn ven sông Nhuệ, Hà Đông. Đèn pha rọi lên hàng nhãn xưa — tán lá đã rậm sau mùa xuân.
 
-Khải Phong ngồi ghế thứ ba — chỗ xưa — chỗ Khải Phong đã ngồi mười đêm trước. Đêm thứ mười một — Khải Phong đếm thêm.
+Khải Phong ngồi ghế thứ ba — chỗ xưa — chỗ Khải Phong đã ngồi mười đêm trước. Đêm thứ mười một — anh đếm thêm.
 
-Trong túi áo gió Khải Phong — mười vật. Mỗi vật một đêm. Mỗi vật một chuyện. Khải Phong đã đếm chiều nay — trước khi xe khởi hành — mười cái cho thấy mười đêm Khải Phong đã sống cùng chuyến xe này. Khải Phong vẫn không hiểu vì sao Khải Phong ngồi đây.
+Trong túi áo gió người khách — mười vật. Mỗi vật một đêm. Mỗi vật một chuyện. người đàn ông đã đếm chiều nay — trước khi xe khởi hành — mười cái cho thấy mười đêm anh ấy đã sống cùng chuyến xe này. anh vẫn không hiểu vì sao người khách ngồi đây.
 
 Bác tài lái. Bàn tay già nắm vô lăng — chậm — đều. Ánh mắt liếc gương — bình thường — không dừng lâu trên ai.
 
@@ -78,7 +78,7 @@ Xe lăn bánh.
 
 Người đàn ông ngồi yên lặng. Mắt nhìn xuống vòng cổ. Mặt buồn nhưng bình tĩnh — như đã sống với nỗi buồn đó nhiều năm.
 
-Khải Phong quay nhẹ — quan sát từ ghế ba. Cách áo sơ mi anh là ủi — không nhăn. Đôi giày là đôi đi tang — đế còn dính một ít đất vườn. Anh có lẽ vừa ra khỏi nhà — đi thẳng đến đây.
+Người đàn ông quay nhẹ — quan sát từ ghế ba. Cách áo sơ mi anh là ủi — không nhăn. Đôi giày là đôi đi tang — đế còn dính một ít đất vườn. Anh có lẽ vừa ra khỏi nhà — đi thẳng đến đây.
 
 Anh vuốt ngôi sao bạc trên ngực. Một vài lần. Đầu ngón tay quen — không cần nhìn — biết nơi.
 
@@ -88,9 +88,9 @@ Anh vuốt ngôi sao bạc trên ngực. Một vài lần. Đầu ngón tay quen
 
 Bác tài liếc gương. Không nói. Quay lại.
 
-Khải Phong cảm thấy — đêm nay khác đêm hôm qua. Đêm hôm qua là một bà cụ đem khăn về quê — chuyện về cháu chắt. Đêm nay — cậu trai trẻ — đi viếng. Mỗi đêm khác — nhưng mỗi đêm cùng một điều — ai cũng đem một vật về.
+Anh ấy cảm thấy — đêm nay khác đêm hôm qua. Đêm hôm qua là một bà cụ đem khăn về quê — chuyện về cháu chắt. Đêm nay — cậu trai trẻ — đi viếng. Mỗi đêm khác — nhưng mỗi đêm cùng một điều — ai cũng đem một vật về.
 
-Khải Phong nhìn ra cửa sổ. Trời mưa đã ngớt. Mặt sông Nhuệ phẳng — phản chiếu đèn đường vàng nhẹ.
+Anh nhìn ra cửa sổ. Trời mưa đã ngớt. Mặt sông Nhuệ phẳng — phản chiếu đèn đường vàng nhẹ.
 
 ---
 
@@ -116,7 +116,7 @@ Xe đi qua đó. Căn nhà khuất. Cây cau khuất. Bóng cô gái khuất.
 
 Anh ghế bảy quay đầu lại. Đặt tay lên ngôi sao bạc trên ngực. Vuốt nhẹ nhàng.
 
-Khải Phong nhìn — không nói gì. Khải Phong biết — đêm nào trên chuyến xe này — kim phút cũng nhích mười lần khi có điều gì đó xảy ra. Khải Phong đã đếm. Mỗi đêm đều mười.
+Người khách nhìn — không nói gì. Hình bóng ngồi Phong biết — đêm nào trên chuyến xe này — kim phút cũng nhích mười lần khi có điều gì đó xảy ra. Hình bóng người đàn ông ấy Phong đã đếm. Mỗi đêm đều mười.
 
 ---
 
@@ -130,9 +130,9 @@ Anh nói — không quay sang ai cụ thể — như nói với cả xe.
 
 "Chị em — chị Thu Hà — mất năm năm trước. Hai mươi tám tuổi. Tai nạn xe — chị đi xe máy về nhà sau ca trực bệnh viện đêm. Đoạn đường vành đai 3 — xe tải lớn va ngang. Người chị Thu Hà đã ra đi ngay tại nơi đó. Không kịp đến bệnh viện cấp cứu."
 
-Khải Phong ghế ba — nghe tên Hạ Vy — tự nhiên nhói trong ngực. Một nhói nhỏ — như có ai gọi tên mình.
+Người đàn ông ghế ba — nghe tên Hạ Vy — tự nhiên nhói trong ngực. Một nhói nhỏ — như có ai gọi tên mình.
 
-Khải Phong không hiểu vì sao tên Hạ Vy lại gây cảm giác đó. Khải Phong lặng — lắng nghe Đức tiếp.
+Anh ấy không hiểu vì sao tên Hạ Vy lại gây cảm giác đó. anh lặng — lắng nghe Đức tiếp.
 
 [pause:800ms]
 
@@ -168,9 +168,9 @@ Anh dừng. Vuốt vòng cổ. Tiếp.
 
 [pause:1500ms]
 
-"Em đeo vòng cổ này tám năm. Không tháo một lần. Em đeo qua bốn năm đại học. Vòng đó cũng theo em qua hai năm đi làm đầu. Em đeo qua một năm chuẩn bị cưới."
+"Em đeo vòng cổ này tám năm. Không tháo một lần. Em qua bốn năm đại học. Vòng đó cũng theo em qua hai năm đi làm đầu. Em qua một năm chuẩn bị cưới."
 
-"Năm vừa rồi em cưới vợ. Vợ em hỏi vòng cổ ngay đêm cưới. Em kể. Vợ em im một lúc. Em sợ — em nói: 'Anh sẽ tháo nếu em không thích.' Vợ em lắc đầu: 'Anh đeo tiếp đi — em không ghen với chị đã mất. Em cảm ơn chị đã nuôi anh thành anh.'"
+"Năm vừa rồi em cưới vợ. Vợ em hỏi vòng cổ ngay đêm cưới. Em kể. Vợ em im một lúc. Em sợ — em nói: 'Anh sẽ tháo nếu em không thích.' Vợ lắc đầu: 'Anh đeo tiếp đi — em không ghen với chị đã mất. Em cảm ơn chị đã nuôi anh thành anh.'"
 
 "Em yêu vợ em hơn vì câu đó."
 
@@ -216,9 +216,9 @@ Bên ngoài — Đức đi vào cổng nghĩa trang đã mở. Đèn nến cháy
 
 Đức đến. Quỳ. Đặt vòng cổ giữa mộ — đúng giữa bia và đèn nến. Cúi đầu.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ. Bên cạnh mộ — chị Hà xuất hiện — mặc áo blu trắng — như trong ảnh bia. Chị cúi xuống — vuốt tóc Đức một lần. Mỉm cười.
+Người khách chớp mắt — nhìn qua cửa sổ. Bên cạnh mộ — chị Hà xuất hiện — mặc áo blu trắng — như trong ảnh bia. Chị cúi xuống — vuốt tóc Đức một lần. Mỉm cười.
 
-Khải Phong chớp lần nữa. Người chị Hà tan ra.
+Người đàn ông chớp lần nữa. Người chị Hà tan ra.
 
 Đức ngẩng đầu. Nhìn lên trời. Hai mắt sáng dưới đèn nến. Anh không khóc — anh cười nhẹ nhàng.
 
@@ -230,7 +230,7 @@ Khải Phong chớp lần nữa. Người chị Hà tan ra.
 
 Xe lăn bánh — rời ngã ba Hà Đông.
 
-Ghế bảy trống. Trên sàn — một mảnh vỏ bạc nhỏ rơi — bong ra từ mép vòng cổ khi Đức đeo lên. Khải Phong nhặt. Bỏ vào túi áo gió cùng mười vật trước.
+Ghế bảy trống. Trên sàn — một mảnh vỏ bạc nhỏ rơi — bong ra từ mép vòng cổ khi Đức đeo lên. anh ấy nhặt. Bỏ vào túi áo gió cùng mười vật trước.
 
 Vật thứ mười một.
 
@@ -238,20 +238,20 @@ Bác tài lái. Kim phút bên cabin nhích — một — hai — đến mười
 
 [pause:1500ms]
 
-Khải Phong ngồi yên. Tên "Hạ Vy" vẫn vọng trong đầu Khải Phong. Tên này — quen — không phải quen từ chị của Đức.
+Anh ngồi yên. Tên "Hạ Vy" vẫn vọng trong đầu người khách. Tên này — quen — không phải quen từ chị của Đức.
 
-Có một cô tên Hạ Vy nào đó — Khải Phong đã yêu? Đã quen? Đã hứa với? Đã mất?
+Có một cô tên Hạ Vy nào đó — người đàn ông đã yêu? Đã quen? Đã hứa với? Đã mất?
 
-Khải Phong cố nhớ. Hình ảnh mờ — không rõ ràng. Cảm giác — một sân trường đại học — một mái tóc dài — một tiếng cười. Cảm giác — đã có. Nhưng Khải Phong không thấy được mặt cô.
+Anh ấy cố nhớ. Hình ảnh mờ — không rõ ràng. Cảm giác — một sân trường đại học — một mái tóc dài — một tiếng cười. Cảm giác — đã có. Nhưng anh không thấy được mặt cô.
 
-Khải Phong vuốt mảnh vỏ bạc trong túi. Lạnh.
+Người khách vuốt mảnh vỏ bạc trong túi. Lạnh.
 
-Bác tài liếc gương — lần này dừng trên Khải Phong lâu hơn thường lệ.
+Bác tài liếc gương — lần này dừng trên người đàn ông lâu hơn thường lệ.
 
 "Vào đêm mười một. Con bắt đầu nhớ một tên, con à. Một tên — sẽ trở lại nhiều đêm sau. Cứ giữ lấy. Đừng vội."
 
-Khải Phong gật.
+Anh ấy gật.
 
-Đêm thứ mười một — Khải Phong đếm thêm. Xe lăn bánh tiếp về phía đường vành đai. Đèn pha quét lên hàng cây — mưa đã hết — chỉ còn đêm.
+Đêm thứ mười một — anh đếm thêm. Xe lăn bánh tiếp về phía đường vành đai. Đèn pha quét lên hàng cây — mưa đã hết — chỉ còn đêm.
 
-Khải Phong không hỏi bác tài thêm. Khải Phong biết — đêm nào hỏi bác tài cũng chỉ hai câu trả lời. Khải Phong chờ đêm mười hai.
+Người khách không hỏi bác tài thêm. Hình bóng ngồi Phong biết — đêm nào hỏi bác tài cũng chỉ hai câu trả lời. Hình bóng người đàn ông ấy Phong chờ đêm mười hai. 

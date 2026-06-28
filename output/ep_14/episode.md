@@ -114,7 +114,7 @@ Bà cụ ghế tám quay đầu. Đặt khăn lên đùi. Vuốt bông cúc thê
 
 [pause:1000ms]
 
-"Em là Tâm Đan. Bà cụ năm mươi sáu tuổi. Em ở Chương Hoa Kỳ — quê. Em làm kế toán Hà Nội — sắp về hưu."
+"Em là Tâm Đan. Bà cụ năm mươi sáu tuổi. Cô gái ấy em ở Chương Hoa Kỳ — quê. Hình bóng người con gái ấy làm kế toán Hà Nội — sắp về hưu."
 
 Giọng bà trầm — chậm — đều.
 
@@ -132,7 +132,7 @@ Giọng bà trầm — chậm — đều.
 
 "Em đi ngang qua. Em có tiền — bốn nghìn đồng trong ví — đủ cho bà một bát phở — phở thời đó hai nghìn rưỡi một bát."
 
-"Em không cho. Người bà cũng vội — đi làm — ca tám giờ — em đi từ chợ tới văn phòng mất bốn mươi phút. Em nghĩ trong đầu: 'Hôm khác. Em sẽ cho hôm khác.'"
+"Em không cho. Người bà cũng vội — đi làm — ca tám giờ — em đi từ chợ tới văn phòng mất bốn mươi phút. Đứa em nghĩ trong đầu: 'Hôm khác. Cô ấy sẽ cho hôm khác.'"
 
 "Em đi làm cả buổi sáng — quên bà cụ. Trưa — em ngồi ăn cơm văn phòng — tự nhiên nhớ bà cụ. Em nghĩ: 'Chiều về em ghé chợ — cho bà.'"
 
@@ -255,4 +255,4 @@ Khải Phong nhớ. Hạ Vy có một bà ngoại trồng cúc. Quê bà ngoại
 
 Bác tài liếc gương. "Đêm sau con sẽ nhớ — quê bà ngoại Hạ Vy ở đâu — Hạ Vy có hay đem cúc từ vườn bà không. Đừng vội."
 
-Khải Phong gật.
+Khải Phong gật. 

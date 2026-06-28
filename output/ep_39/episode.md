@@ -120,7 +120,7 @@ Bà cụ khẽ quay đầu lại. Vuốt mép tô cơm.
 
 [pause:1000ms]
 
-"Em là Hồng Mai. Bà năm mươi lăm tuổi rồi. Em ở Đại Hải — Quảng Phú — Quảng Bình. Em làm nông — vài sào ruộng + nuôi vài con gà."
+"Em là Hồng Mai. Bà năm mươi lăm tuổi rồi. Em ấy ở Đại Hải — Quảng Phú — Quảng Bình. Hình bóng con gái ấy làm nông — vài sào ruộng + nuôi vài con gà."
 
 Giọng bà trầm — chậm.
 
@@ -146,7 +146,7 @@ Giọng bà trầm — chậm.
 
 [pause:1500ms]
 
-"Em đến đám tang. Cô gái quỳ bên quan tài bà. Em xin lỗi — qua thân xác đã đi. Em hứa em đem cơm — em không giữ lại — bà đói trước cửa nhà em không cách."
+"Em đến đám tang. Cô gái quỳ bên quan tài bà. Cô ấy xin lỗi — qua thân xác đã đi. Hình bóng con gái ấy hứa em đem cơm — em không giữ lại — bà đói trước cửa nhà em không cách."
 
 "Sau tang bà — em quyết. Em đem cơm cho ba cụ già khác trong xóm — em không bỏ tuần nào — em không bận đến mức không kịp nấu một tô cơm."
 
@@ -166,7 +166,7 @@ Bác tài cất lời.
 
 Hồng Mai gật. Mắt đỏ — không khóc.
 
-"Em nhớ. Cô gái hứa đem cơm cho bà Trinh — em bỏ ba tuần — bà chết đói. Em không phải lý do duy nhất — nhưng em là một. Em không thể chuộc bà — em chỉ có thể đem cơm cho ba cụ khác tám năm — và đem tô cuối về chỗ bà mất."
+"Em nhớ. Cô gái hứa đem cơm cho bà Trinh — em bỏ ba tuần — bà chết đói. Em ấy không phải lý do duy nhất — nhưng em là một. Hình bóng con gái ấy không thể chuộc bà — em chỉ có thể đem cơm cho ba cụ khác tám năm — và đem tô cuối về chỗ bà mất."
 
 [pause:1200ms]
 
@@ -234,7 +234,7 @@ Anh Hải ngồi cạnh Khải Phong. Anh nói: "Em chia buồn với anh — em
 
 Khải Phong nhớ. Anh Hải cùng văn phòng Mộc Hà với Hạ Vy. Đêm đó anh Hải về cùng đường với Hạ Vy — Mộc Hà phố Hai Bà Trưng. Anh Hải đi xe máy phía sau Hạ Vy — anh chứng kiến tai nạn — gọi cấp cứu.
 
-Anh Hải là đồng nghiệp Hạ Vy. Người tên Hải quen Hạ Vy qua công việc. Anh không phải người dưng — anh là người cùng văn phòng.
+Anh Hải là đồng nghiệp Hạ Vy. Hình ảnh người tên Hải quen Hạ Vy qua công việc. Bóng người đàn ông không phải người dưng — anh là người cùng văn phòng.
 
 [pause:1500ms]
 
@@ -246,4 +246,4 @@ Khải Phong gật. Lệ rơi nhẹ nhàng.
 
 Khải Phong vuốt hạt cơm khô trong tay — hạt cơm bà Hồng Mai đem cho bà Trinh sau tám năm. Lời hứa muộn — vẫn được gửi qua đất.
 
-Khải Phong cố nhớ thêm về anh Hải — đêm Bạch Mai — anh Hải chỉ nói "Em là Hải — em chứng kiến tai nạn." Anh không nói chi tiết anh đi đâu — vì sao đi cùng đường — quen Hạ Vy như thế nào. Khải Phong đã sốc — không hỏi sâu. Đêm sau — milestone EP40 — Khải Phong cảm thấy sẽ là đêm khác — bác tài đã ám chỉ.
+Khải Phong cố nhớ thêm về anh Hải — đêm Bạch Mai — anh Hải chỉ nói "Em là Hải — em chứng kiến tai nạn." Anh không nói chi tiết anh đi đâu — vì sao đi cùng đường — quen Hạ Vy như thế nào. Khải Phong đã sốc — không hỏi sâu. Đêm sau — milestone EP40 — Khải Phong cảm thấy sẽ là đêm khác — bác tài đã ám chỉ. 

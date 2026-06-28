@@ -58,7 +58,7 @@ Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi lăm — Khải Pho
 
 Bác tài lái. Liếc gương — dừng trên Khải Phong lâu hơn thường. Cất lời câu thứ ba foreshadow.
 
-"Đêm hai mươi lăm — con đã thấy Văn Quân đem mảnh kính tặng bệnh nhân trẻ. Đêm ba mươi lăm — Trí Hưng đem mảnh gương tặng bác sĩ tâm lý. Đêm nay — sẽ có cậu trai thứ tư cũng đem mảnh gương. Vật thứ tư trong cụm."
+"Đêm hai mươi lăm — con đã thấy Văn Quân đem mảnh kính tặng bệnh nhân trẻ. Đêm ba mươi lăm — Trí Hưng đem mảnh gương tặng bác sĩ tâm lý. Đêm nay — sẽ có cậu trai thứ tư cũng đem gương. Vật thứ tư trong cụm."
 
 Khải Phong gật. Bác tài tiếp:
 
@@ -134,7 +134,7 @@ Khải Phong giật mình. Mạnh Hiếu cùng trường THCS Mai Trung — trư
 
 "Em sốc. Cô gái nghèo — bố mẹ em làm nông cà phê — họ đã chật vật trang trải học phí cho em. Em phải báo bố mẹ học thêm một năm — em không dám."
 
-"Em về phòng trọ một mình. Cô gái ngồi trước gương treo tường. Em nhìn mình. Em thấy mặt mình — gầy — thất bại — không nên sống tiếp."
+"Em về phòng trọ một mình. Cô gái ngồi trước gương treo tường. Đứa em nhìn mình. Bóng người con gái ấy thấy mặt mình — gầy — thất bại — không nên sống tiếp."
 
 "Em đập gương. Mảnh vỡ rơi xuống. Em nhặt một mảnh — định cứa cổ tay."
 
@@ -162,7 +162,7 @@ Khải Phong giật mình. Mạnh Hiếu cùng trường THCS Mai Trung — trư
 
 "Sau tang thầy — em giữ mảnh gương vỡ này — chính mảnh em đập đêm em hai mươi — em giữ mười năm trong hộp — không vứt. Em đem hộp ra mỗi rằm tháng bảy — vuốt — nhớ đêm thầy cứu em qua điện thoại."
 
-"Vào đêm nay — em quyết. Em đem mảnh gương về trường THCS Mai Trung — em tặng phòng tâm lý trường — phòng mới mở năm vừa rồi — em làm hỗ trợ tâm lý cho học sinh."
+"Vào đêm nay — em quyết. Em đem gương về trường THCS Mai Trung — em tặng phòng tâm lý trường — phòng mới mở năm vừa rồi — em làm hỗ trợ tâm lý cho học sinh."
 
 "Em sẽ kể câu chuyện em — học sinh nào trầm cảm — em sẽ cho em nhìn mảnh — em nói: 'Thầy Hồng đã cứu anh qua mảnh gương này. Em đến gặp thầy Hồng trên đời này không còn — nhưng em có thể đến gặp thầy cô khác.'"
 
@@ -260,14 +260,14 @@ Khải Phong gật. Lệ rơi xuống dưới.
 
 Đêm thứ bốn mươi lăm — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Bắc Ninh khuất. Mạnh Hiếu ở lại phòng tâm lý — mảnh gương trong tủ kính.
 
-Khải Phong cố nhớ chi tiết tin nhắn Hạ Nhi tuần trước. Anh nhắn: "Anh ơi sắp cưới rồi — anh đến nhé. Em đã đặt vé máy bay anh từ Hà Nội vào Sài Gòn — em gửi anh qua email. Người sinh viên chỉ cần check-in thôi. Em đợi anh."
+Khải Phong cố nhớ chi tiết tin nhắn Hạ Nhi tuần trước. Bóng người ngồi đó nhắn: "Anh ơi sắp cưới rồi — anh đến nhé. Hình ảnh người con gái ấy đã đặt vé máy bay anh từ Hà Nội vào Sài Gòn — em gửi anh qua email. Hình bóng sinh viên chỉ cần check-in thôi. Cô ấy đợi anh."
 
 Anh đặt vé cho Khải Phong. Anh không hỏi — anh không chờ anh đồng ý — anh đã đặt sẵn.
 
 Khải Phong mở email — anh check. Có vé. Chuyến Vietnam Airlines tháng năm — đúng ngày cưới anh. Em đã trả tiền vé rồi.
 
-Anh — anh gái Hạ Vy — anh vẫn coi Khải Phong như anh rể. Anh không từ bỏ liên lạc — anh cố giữ lại. Khải Phong là người đã từ bỏ — không phải anh.
+Anh — anh gái Hạ Vy — anh vẫn coi Khải Phong như anh rể. Bóng người khách không từ bỏ liên lạc — anh cố giữ lại. Hình ảnh người đàn ông ấy Phong là người đã từ bỏ — không phải anh.
 
-Khải Phong nhói. Em đã sai rồi. Anh cần đáp anh — anh cần đi dự cưới anh.
+Khải Phong nhói. Đứa em đã sai rồi. Bóng người đàn ông cần đáp anh — anh cần đi dự cưới anh.
 
-Đêm bốn mươi lăm — Khải Phong quyết.
+Đêm bốn mươi lăm — Khải Phong quyết. 

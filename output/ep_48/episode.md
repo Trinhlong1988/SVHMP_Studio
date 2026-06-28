@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R42
 
 Đêm thứ 48 trên chuyến xe — Khải Phong ngồi ghế thứ ba. Mưa tháng tư rỉ rả ngoài kính xe. Xe đi qua đoạn đường ven sông Hậu, Cần Thơ — hàng cây im bóng. Đèn pha quét lên hàng dừa nước.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi tám — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — bốn mươi bảy vật.
+Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi tám — anh đếm thêm. Trong túi áo gió người khách — bốn mươi bảy vật.
 
 Bác tài lái.
 
@@ -74,11 +74,11 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Người đàn ông ngồi yên. Vuốt thân đàn guitar. Đầu ngón tay anh khoẻ — bàn tay người chơi đàn.
+Người đàn ngồi yên. Vuốt thân đàn guitar. Đầu ngón tay anh khoẻ — bàn tay người chơi đàn.
 
-Khải Phong quan sát từ ghế ba. Anh ba lăm tám — tóc đã có sợi bạc — mặt buồn — vẻ người tự trách.
+Người đàn quan sát từ ghế ba. Anh ba lăm tám — tóc đã có sợi bạc — mặt buồn — vẻ người tự trách.
 
-Đàn guitar trên đùi anh — Khải Phong nhìn ra — đàn gỗ classic — không phải đàn electric — đàn xưa — có vài vết xước trên thân.
+Đàn guitar trên đùi anh — anh ấy nhìn ra — đàn gỗ classic — không phải đàn electric — đàn xưa — có vài vết xước trên thân.
 
 Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng — tắt.
 
@@ -102,7 +102,7 @@ Anh ghế chín nhìn về phía đó.
 
 "Phong..."
 
-Người đàn ông nói rất nhỏ.
+Người đàn nói rất nhỏ.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
@@ -110,7 +110,7 @@ Người đàn ông nói rất nhỏ.
 
 Xe đi qua đó. Nhà gạch khuất.
 
-Người đàn ông quay đầu lại. Vuốt đàn.
+Người đàn quay đầu lại. Vuốt đàn.
 
 ---
 
@@ -138,9 +138,9 @@ Giọng anh trầm.
 
 [pause:1200ms]
 
-"Em ra trường năm em hai mươi mốt. Cô gái đi dạy âm nhạc — lương đầu thấp xuống. Em không mua đàn cho em — em không có tiền dư."
+"Em ra trường năm em hai mốt. Cô gái đi dạy âm nhạc — lương đầu thấp xuống. Em không mua đàn cho em — em không có tiền dư."
 
-"Năm em hai mươi ba — em lương cao hơn — em định mua. Em bận đi dạy thêm — em quên. Năm em hai mươi lăm — em cưới vợ — em mua nhà — em không có tiền dư. Năm em hai mươi bảy — em sinh con — em bận. Năm em ba mươi — em đã có hai con — em bận hơn."
+"Năm em hai ba — em lương cao hơn — em định mua. Em bận đi dạy thêm — em quên. Năm em mươi lăm — em cưới vợ — em mua nhà — em không có tiền dư. Năm hai mươi bảy — em sinh con — em bận. Năm ba mươi — em đã có hai con — em bận hơn."
 
 "Mười lăm năm trôi — em không mua đàn cho em. Em không liên lạc em thường — em chỉ biết em qua Facebook — em làm kỹ sư xây dựng ở Sài Gòn — em sống bình thường."
 
@@ -156,11 +156,11 @@ Giọng anh trầm.
 
 "Sau tang em — em quay về Cần Thơ. Em đi tiệm đàn Sông Hậu — chính tiệm em vừa bước lên xe. Em mua một cây đàn guitar gỗ mun — đàn em đã định mua tặng em mười lăm năm trước."
 
-"Em đem đàn về nhà — em chơi vài lần — em không thể giữ lâu. Em quyết — em sẽ đem đàn về quê em — Vĩnh Long — tặng bố mẹ em — để bố mẹ em đặt trên bàn thờ em — coi như em tặng mẹ qua bố mẹ."
+"Em đem đàn về nhà — em chơi vài lần — em không thể giữ lâu. Em quyết — em sẽ đem đàn về quê em — Vĩnh Long — tặng bố mẹ em — để bố em đặt trên bàn thờ em — coi như em tặng mẹ qua bố."
 
 "Năm vừa rồi — em đem đàn về Vĩnh Long. Em đặt đàn trên bàn thờ em. Bố mẹ em ôm đàn — khóc. Em xin lỗi mười lăm năm. Bố em bảo: 'Phong đợi mày đàn — em không trách mày — em chỉ chờ.'"
 
-"Hai năm em đặt đàn ở bàn thờ em. Bố mẹ em chuyển nhà tháng trước — em quyết đem đàn về Cần Thơ — em sẽ giữ tiếp."
+"Hai năm em đặt đàn ở bàn em. Bố mẹ em chuyển nhà tháng trước — em quyết đem đàn về Cần Thơ — em sẽ giữ tiếp."
 
 "Năm vừa rồi — em quyết. Em sẽ đem đàn trả về tiệm Sông Hậu — chính tiệm em mua — như cách trả về nơi xuất phát."
 
@@ -170,7 +170,7 @@ Bác tài cất lời.
 
 Hữu Duy gật.
 
-"Tôi nhớ. Em hứa em đàn mười lăm năm — em quên — cô gái đến muộn ba năm sau em phát hiện ung thư — em không kịp tặng em sống. Cô gái mua đàn sau tang em — em đặt bàn thờ em hai năm. Em trả đàn về tiệm — em đã đủ — em đã giữ lời hứa qua cách khác."
+"Tôi nhớ. Em hứa em đàn mười lăm năm — em quên — cô gái đến muộn ba năm sau em phát hiện ung thư — em không kịp tặng em sống. Bóng cô gái mua đàn sau tang em — em đặt bàn em năm. Hình bóng con gái ấy trả đàn về tiệm — em đã đủ — em đã giữ lời hứa qua cách khác."
 
 [pause:1200ms]
 
@@ -192,15 +192,15 @@ Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim
 
 Bác tài: "Chưa tới lúc."
 
-Người đàn ông bước xuống dưới.
+Người đàn bước xuống dưới.
 
 [pause:1200ms]
 
 Bên ngoài — Hữu Duy đi vào sân tiệm Sông Hậu. Đặt đàn trước cửa kính tiệm. Quỳ một lúc.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ. Bên đàn — Phong xuất hiện — thanh niên hai mươi áo trắng — vuốt vai bạn Hữu Duy. Mỉm cười.
+Anh chớp mắt — nhìn qua cửa sổ. Bên đàn — Phong xuất hiện — thanh niên hai mươi áo trắng — vuốt vai bạn Hữu Duy. Mỉm cười.
 
-Khải Phong chớp lần nữa. Người tên Phong tan đi.
+Người khách chớp lần nữa. Người tên Phong tan đi.
 
 Hữu Duy ngẩng đầu. Đi về.
 
@@ -212,7 +212,7 @@ Hữu Duy ngẩng đầu. Đi về.
 
 Xe lăn bánh — rời ngã ba Cần Thơ.
 
-Ghế chín trống. Trên sàn — một dây đàn nhỏ rơi (bong khi anh vuốt). Khải Phong nhặt. Dây đàn — kim loại mảnh.
+Ghế chín trống. Trên sàn — một dây đàn nhỏ rơi (bong khi anh vuốt). người đàn nhặt. Dây đàn — kim loại mảnh.
 
 Vật thứ bốn mươi tám.
 
@@ -220,30 +220,30 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Khải Phong ngồi. Hữu Duy giữ lời hứa đàn mười lăm năm muộn — qua tiệm. Lời hứa giữ qua cách khác — không cần đúng cách ban đầu.
+Anh ấy ngồi. Hữu Duy giữ lời hứa đàn mười lăm năm muộn — qua tiệm. Lời hứa giữ qua cách khác — không cần đúng cách ban đầu.
 
-Khải Phong nhói. Anh không thể đi Hàn Quốc với Hạ Vy. Nhưng anh có thể giữ lời hứa qua cách khác.
+Anh nhói. Anh không thể đi Hàn Quốc với Hạ Vy. Nhưng anh có thể giữ lời hứa qua cách khác.
 
 [pause:1500ms]
 
-Em có thể đi Hàn Quốc một mình — đem ảnh — chụp ảnh — đem về đốt cùng nén hương em. Như Hữu Duy mua đàn — không cho em sống chơi — chỉ đặt bàn thờ.
+Em có thể đi Hàn một mình — đem ảnh — chụp ảnh — đem về đốt cùng nén hương em. Như Hữu Duy mua đàn — không cho em sống chơi — chỉ đặt bàn.
 
-Hoặc em có thể đem nhẫn bạc Hạ Vy sang Hàn Quốc — đeo trên ngón út — đi qua đường có lá đỏ — chụp ảnh nhẫn dưới lá đỏ — đem ảnh về đặt bàn thờ Hạ Vy ở quê em.
+Hoặc em có thể đem nhẫn bạc Hạ Vy sang Hàn — đeo trên ngón út — đi qua đường có lá đỏ — chụp ảnh nhẫn dưới lá đỏ — đem ảnh về đặt bàn Hạ Vy ở quê em.
 
-Khải Phong quyết — anh sẽ đi Hàn Quốc một mình mùa thu năm sau — sau khi anh dự cưới Hạ Nhi. Anh sẽ giữ lời hứa muộn qua cách anh có thể.
+Người khách quyết — anh sẽ đi Hàn một mình mùa thu năm sau — sau khi anh dự cưới Hạ Nhi. Anh sẽ giữ lời hứa muộn qua cách anh có thể.
 
 Em không phải Hữu Duy — em không có tiệm sinh ra lời hứa. Em có nhẫn — em có ngày — em sẽ tự tạo nghi lễ hội.
 
 Bác tài liếc gương. "Vào đêm bốn mươi tám. Con đã quyết. Đêm sau con sẽ chuẩn bị tinh thần — đêm năm mươi sẽ là milestone S1 finale. Cứ chuẩn bị."
 
-Khải Phong gật. Lệ rơi nhẹ nhàng.
+Người đàn gật. Lệ rơi nhẹ nhàng.
 
-Đêm thứ bốn mươi tám — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Cần Thơ khuất. Hữu Duy ở lại tiệm — đàn trước cửa.
+Đêm thứ bốn mươi tám — anh ấy đếm thêm. Xe đi tiếp. Phía sau — Cần Thơ khuất. Hữu Duy ở lại tiệm — đàn trước cửa.
 
-Khải Phong ngẫm thêm — anh sẽ chuẩn bị đi Hàn Quốc trước cưới Hạ Nhi. Anh sẽ đặt vé bay sau dự cưới anh xong — người đàn ông sẽ bay từ Sài Gòn về Hà Nội — sau đó từ Hà Nội bay Hàn Quốc mùa thu. Em sẽ đem theo nhẫn bạc Hạ Vy — đeo ngón út — chụp ảnh dưới lá đỏ. Người đàn ông sẽ đem ảnh về quê anh ở Vĩnh Phúc — đặt trên bàn thờ anh không có (anh chưa lập bàn thờ Hạ Vy ở quê anh — anh chỉ có bàn thờ anh ở quê Hạ Vy). Anh sẽ lập bàn thờ Hạ Vy ở quê anh — anh sẽ đặt ảnh Hàn Quốc lên đó. Đêm thứ bốn mươi tám kết thúc — quyết tâm rõ hơn.
+Anh ngẫm thêm — anh sẽ chuẩn đi Hàn trước cưới Hạ Nhi. Người đàn sẽ đặt vé bay sau dự cưới anh xong — người đàn ông sẽ bay từ Sài Gòn về Hà Nội — sau đó từ Hà Nội bay Hàn Quốc mùa thu. Hình bóng con gái ấy sẽ đem theo nhẫn bạc cô ấy — đeo ngón út — chụp ảnh dưới lá đỏ. Bóng người đàn ông đem ảnh về quê anh ở Vĩnh Phúc — đặt trên bàn anh không có (anh chưa lập bàn người yêu cũ ở quê anh — anh chỉ có bàn thờ anh ở cô gái ấy). Bóng anh lập bàn thờ cô ấy ở — anh đặt ảnh Hàn Quốc lên đó. Đêm thứ bốn mươi tám kết thúc — quyết tâm rõ hơn.
 
-Khải Phong ngồi đêm tháng tư. Anh đã quyết — anh sẽ đi Hàn Quốc một mình sau dự cưới Hạ Nhi. Người đàn ông sẽ đặt vé sang năm — anh sẽ chuẩn bị nhẫn anh — anh sẽ chuẩn bị máy ảnh. Anh sẽ làm như Hữu Duy đêm này — giữ lời hứa muộn qua cách anh có. Anh không phải Khải Phong yêu ai mới — anh là Khải Phong giữ lời hứa Hạ Vy qua cách khác. Đêm bốn mươi tám kết thúc — Khải Phong quyết tâm chuẩn bị.
+Người khách ngồi đêm tháng tư. Người ấy đã quyết — anh đi Hàn Quốc một mình sau dự cưới Hạ Nhi. Hình bóng đàn đặt vé sang năm — anh chuẩn nhẫn anh — anh sẽ chuẩn bị máy ảnh. Người khách sẽ làm như Hữu Duy đêm này — giữ lời hứa muộn qua cách anh có. Người ngồi đó không phải người đàn ông yêu ai mới — anh là anh ấy giữ lời hứa người yêu cũ qua cách khác. Đêm bốn mươi tám kết thúc — anh quyết tâm chuẩn bị.
 
-Khải Phong nhìn dây đàn nhỏ trong túi — vật thứ bốn mươi tám. Anh sẽ cất riêng — cùng nhẫn — cùng thiệp cưới Hạ Nhi sẽ đến đêm mai. Bốn mươi tám vật — đêm sau là bốn mươi chín — đêm sau nữa là milestone năm mươi.
+Người khách nhìn dây đàn nhỏ trong túi — vật thứ bốn mươi tám. Anh sẽ cất riêng — cùng nhẫn — cùng thiệp cưới Hạ Nhi sẽ đến đêm mai. Bốn mươi tám vật — đêm sau là bốn mươi chín — đêm sau nữa là milestone năm mươi.
 
-Khải Phong vuốt dây đàn nhỏ — kim loại lạnh buốt. Đêm bốn mươi tám đã hết. Anh sẽ ngủ trên ghế ba — đến khi đêm bốn mươi chín bắt đầu — đến khi xe dừng đón passenger tiếp theo.
+Người đàn ông vuốt dây đàn nhỏ — kim loại lạnh buốt. Đêm bốn mươi tám đã hết. Anh sẽ ngủ trên ghế ba — đến khi đêm bốn mươi chín bắt đầu — đến khi xe dừng đón passenger tiếp theo. 

@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R40
 
 Sau cơn mưa chiều. Đêm xuống nhanh. Xe đêm rẽ vào đoạn đường ven sông Hồng đoạn Phú T, Hà Nội. Hàng cây ven đường còn đẫm — đèn pha quét lên thân cây ướt. Đèn pha quét lên cánh đồng ngô xanh — ngô đã cao nửa người — gió thổi nghiêng ngọn.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi bảy — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — hai mươi sáu vật. Đêm qua thêm nhãn ngày mua hộp thước T "06/2017".
+Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi bảy — Khải Phong đếm thêm. Trong túi áo gió anh — hai mươi sáu vật. Đêm qua thêm nhãn ngày mua hộp thước T "06/2017".
 
 Bác tài lái.
 
@@ -78,9 +78,9 @@ Xe lăn bánh.
 
 Cô gái khẽ ngồi yên lặng. Vuốt khung ảnh. Đầu ngón tay cô mảnh — móng tay sơn nhạt — bàn tay người đã sống nước ngoài lâu.
 
-Khải Phong quan sát từ ghế ba. Cô bốn lăm — mặt sáng — trang điểm nhẹ — tóc nhuộm hạt dẻ — không phải tóc đen thuần Việt. Có nét Việt kiều — có lẽ ở Hoa Kỳ hoặc Úc lâu năm.
+Người khách quan sát từ ghế ba. Cô bốn lăm — mặt sáng — trang điểm nhẹ — tóc nhuộm hạt dẻ — không phải tóc đen thuần Việt. Có nét Việt kiều — có lẽ ở Hoa Kỳ hoặc Úc lâu năm.
 
-Ảnh trong khung — Khải Phong nhìn ra — ảnh lớp học xưa — chụp năm xa — có lẽ đầu chín mươi.
+Ảnh trong khung — người đàn ông nhìn ra — ảnh lớp học xưa — chụp năm xa — có lẽ đầu chín mươi.
 
 Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng. Tắt.
 
@@ -120,7 +120,7 @@ Cô gái khẽ quay đầu lại. Vuốt khung ảnh.
 
 [pause:1000ms]
 
-"Em là Mỹ Linh. Bốn mươi lăm tuổi. Em sinh ở Phú Thọ — Vĩnh Lộc. Cô gái sống Hoa Kỳ từ năm em hai mươi mốt. Em vừa về Việt Nam tuần trước."
+"Em là Mỹ Linh. Bốn mươi lăm tuổi. Em sinh ở Phú Thọ — Vĩnh Lộc. Người con gái gái ấy gái sống Hoa Kỳ từ năm em hai mươi mốt. Hình ảnh người con gái ấy vừa về Việt Nam tuần trước."
 
 Giọng cô có nét Việt kiều — nhẹ — đôi khi chèn cách phát âm tiếng Anh.
 
@@ -172,11 +172,11 @@ Giọng cô có nét Việt kiều — nhẹ — đôi khi chèn cách phát âm
 
 [pause:1500ms]
 
-"Em về Hoa Kỳ. Năm sau Tết em không về — em sinh con thứ hai — em ở Hoa Kỳ. Em nhắn Hằng chúc Tết — Hằng đáp bình thường. Em không hỏi thận."
+"Em về Hoa Kỳ. Năm sau Tết em về — em sinh con thứ hai — em ở Hoa Kỳ. Em nhắn Hằng chúc Tết — Hằng đáp bình thường. Em không hỏi thận."
 
 "Năm sau nữa — Hằng nhắn: 'Linh ơi chị nặng hơn — chuyển bệnh viện Bạch Mai tuần sau. Chị xin em — em về thử khám không?' Em đọc. Em định gọi điện — em bận họp — em định gọi tối."
 
-"Vào tối em quên gọi. Em định ngày mai. Mai bận. Tuần sau bận. Hai tháng trôi — em không gọi."
+"Vào tối em quên gọi. Em định ngày mai. Mai bận. Tuần sau bận. Hai tháng trôi — em gọi."
 
 "Một tối — em nhận tin nhắn từ chồng Hằng. 'Linh ơi chị Hằng đã đi sáng nay. Người đàn ông xin báo em.'"
 
@@ -184,13 +184,13 @@ Giọng cô có nét Việt kiều — nhẹ — đôi khi chèn cách phát âm
 
 [pause:1500ms]
 
-"Em không về dự tang Hằng — em đang giữa dự án quan trọng — em không xin nghỉ kịp. Em gửi tiền phúng — em gửi lời chia buồn qua chồng Hằng."
+"Em không về dự tang Hằng — em đang giữa dự án quan trọng — em xin nghỉ kịp. Em gửi tiền phúng — em gửi lời chia buồn qua chồng Hằng."
 
-"Hai năm em sống với cảm giác lỗi. Em hứa Hằng giúp khi cần — em không giúp — em không về thử khám hiến thận — em không gọi điện. Em là người Hằng tin — em làm Hằng chờ — Hằng đi rất xa."
+"Hai năm em sống với cảm giác lỗi. Em hứa Hằng giúp khi cần — em giúp — em về thử khám hiến thận — em gọi điện. Em là người Hằng tin — em làm Hằng chờ — Hằng đi rất xa."
 
-"Em không biết anh có hợp hiến thận không. Có thể không. Nhưng em không thử. Em chưa thử."
+"Em không biết anh có hợp hiến thận không. Có thể không. Nhưng em thử. Em chưa thử."
 
-"Năm vừa rồi — em quyết về Việt Nam dài hạn — sáu tháng. Em đem khung ảnh — chính khung Hằng tặng em hai mươi bốn năm trước. Khung em đem sang Hoa Kỳ — đặt bàn làm việc — em nhìn mỗi ngày — em không nhớ Hằng đủ."
+"Năm vừa rồi — em quyết về Việt Nam dài hạn — sáu tháng. Em đem khung ảnh — chính khung Hằng tặng em hai mươi bốn năm trước. Khung em đem sang Hoa Kỳ — đặt bàn làm việc — em nhìn mỗi ngày — em nhớ Hằng đủ."
 
 Bác tài cất lời.
 
@@ -198,7 +198,7 @@ Bác tài cất lời.
 
 Mỹ Linh gật. Lệ rơi xuống khung.
 
-"Em nhớ. Cô gái hứa Hằng giúp khi cần — em không giữ lại. Em không về thử hiến thận — em không gọi điện. Em không thể chuộc Hằng — em chỉ có thể đem khung trả về trường tiểu học hai đứa em học chung."
+"Em nhớ. Cô gái hứa Hằng giúp khi cần — em giữ lại. Đứa em không về thử hiến thận — em không gọi điện. Bóng người con gái ấy không thể chuộc Hằng — em chỉ có thể đem khung trả về trường tiểu học hai đứa em học chung."
 
 [pause:1200ms]
 
@@ -228,9 +228,9 @@ Bên ngoài — Mỹ Linh đi vào sân trường tiểu học Vĩnh Lộc — b
 
 Cô gái đã đến nơi đó. Đặt khung ảnh lên bàn giáo viên — chính giữa. Cúi đầu một lúc.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên bàn giáo viên — Hằng xuất hiện — áo bà ba xanh — đứng cạnh khung — vuốt tóc Mỹ Linh. Mỉm cười nhẹ — như tha thứ.
+Anh ấy chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên bàn giáo viên — Hằng xuất hiện — áo bà ba xanh — đứng cạnh khung — vuốt tóc Mỹ Linh. Mỉm cười nhẹ — như tha thứ.
 
-Khải Phong chớp lần nữa. Người tên Hằng tan ra.
+Anh chớp lần nữa. Người tên Hằng tan ra.
 
 Mỹ Linh ngẩng đầu. Lau lệ. Đi ra cửa văn phòng.
 
@@ -242,7 +242,7 @@ Mỹ Linh ngẩng đầu. Lau lệ. Đi ra cửa văn phòng.
 
 Xe lăn bánh — rời ngã ba Phú Thọ.
 
-Ghế sáu trống. Trên sàn — một sợi chỉ lụa hồng nhỏ rơi (từ vải lụa bọc khung). Khải Phong nhặt. Sợi chỉ — mảnh — màu hồng nhạt.
+Ghế sáu trống. Trên sàn — một sợi chỉ lụa hồng nhỏ rơi (từ vải lụa bọc khung). người khách nhặt. Sợi chỉ — mảnh — màu hồng nhạt.
 
 Bỏ vào túi áo gió. Vật thứ hai mươi bảy.
 
@@ -250,28 +250,28 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Khải Phong ngồi yên. Mỹ Linh hứa giúp Hằng — không giúp — Hằng đi rất xa.
+Người đàn ông ngồi yên. Mỹ Linh hứa giúp Hằng — không giúp — Hằng đi rất xa.
 
-Khải Phong nhói — Khải Phong có hứa với ai mà không giữ không? Hạ Vy có nhờ Khải Phong điều gì Khải Phong không kịp giúp?
+Anh ấy nhói — anh có hứa với ai mà không giữ không? Hạ Vy có nhờ người khách điều gì người đàn ông không kịp giúp?
 
-Hình ảnh — phòng trọ Khâm Thiên sau tốt nghiệp 2017 — Hạ Vy ngồi bàn vẽ ra — vẽ đồ án cho khách hàng. Khải Phong ngồi cạnh — cầm thước T đo giúp Hạ Vy — đo các chi tiết khó. Hạ Vy cảm ơn: "Cảm ơn anh — em không có anh em không vẽ xong đêm nay."
+Hình ảnh — phòng trọ Khâm Thiên sau tốt nghiệp 2017 — Hạ Vy ngồi bàn vẽ ra — vẽ đồ án cho khách hàng. anh ấy ngồi cạnh — cầm thước T đo giúp Hạ Vy — đo các chi tiết khó. cô ấy cảm ơn: "Cảm ơn anh — em không có anh em không vẽ xong đêm nay."
 
-Khải Phong nhớ rõ ràng — Khải Phong giúp Hạ Vy đồ án nhiều lần — cùng ngành kiến trúc — biết kỹ thuật.
+Anh nhớ rõ ràng — người khách giúp người yêu cũ đồ án nhiều lần — cùng ngành kiến trúc — biết kỹ thuật.
 
 [pause:1500ms]
 
-Hạ Vy có nhờ Khải Phong gì không kịp giúp? Khải Phong cố nhớ. Cảm giác — không có gì quan trọng. Hạ Vy không khó tính — Hạ Vy độc lập — Hạ Vy ít nhờ.
+Cô gái ấy có nhờ người đàn ông gì không kịp giúp? anh ấy cố nhớ. Cảm giác — không có gì quan trọng. cô ấy không khó tính — người yêu cũ độc lập — cô gái ấy ít nhờ.
 
-Nhưng đêm cuối — đêm tháng tư 2018 — Hạ Vy có nhắn gì khác ngoài "Anh ơi em sắp về" không?
+Nhưng đêm cuối — đêm tháng tư 2018 — cô ấy có nhắn gì khác ngoài "Anh ơi em sắp về" không?
 
-Khải Phong cố nhớ. Hình ảnh điện thoại — Khải Phong lướt lại tin nhắn xưa. Tám giờ tối — Hạ Vy nhắn "Anh ơi em sắp về — chờ em — em ăn cơm nhà." Khải Phong đáp "OK em — anh nấu xong rồi — anh chờ em — đi cẩn thận — mưa rất to."
+Anh cố nhớ. Hình ảnh điện thoại — người khách lướt lại tin nhắn xưa. Tám giờ tối — người yêu cũ nhắn "Anh ơi em sắp về — chờ em — em ăn cơm nhà." người đàn ông đáp "OK em — anh nấu xong rồi — anh chờ em — đi cẩn thận — mưa rất rất to."
 
-Trước tin nhắn đó — buổi chiều — Hạ Vy có nhắn không?
+Trước tin nhắn đó — buổi chiều — cô gái ấy có nhắn không?
 
-Khải Phong cố nhớ. Có. Buổi chiều khoảng năm giờ — Hạ Vy nhắn: "Anh ơi tối nay anh có rảnh không? Em muốn bàn chuyện cưới."
+Anh ấy cố nhớ. Có. Buổi chiều khoảng năm giờ — cô ấy nhắn: "Anh ơi tối nay anh có rảnh không? Em muốn bàn chuyện cưới."
 
-Bác tài liếc gương. "Vào đêm hai mươi bảy. Con bắt đầu nhớ tin nhắn buổi chiều của Hạ Vy. Đêm sau con sẽ nhớ — bữa cơm chiều có gì đặc biệt — vì sao Hạ Vy muốn bàn cưới đêm đó. Đừng vội."
+Bác tài liếc gương. "Vào đêm hai mươi bảy. Con bắt đầu nhớ tin nhắn buổi chiều của người yêu xưa. Đêm sau con sẽ nhớ — bữa cơm chiều có gì đặc biệt — vì sao cô gái ấy muốn bàn cưới đêm đó. Đừng vội."
 
-Khải Phong gật. Lệ rơi xuống ghế — không ai thấy.
+Anh gật. Lệ rơi xuống ghế — không ai thấy.
 
-Đêm thứ hai mươi bảy — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Phú Thọ khuất. Mỹ Linh ở lại trường tiểu học — đứng ngoài cửa văn phòng — nhìn khung ảnh trên bàn.
+Đêm thứ hai mươi bảy — người khách đếm thêm. Xe đi tiếp. Phía sau — Phú Thọ khuất. Mỹ Linh ở lại trường tiểu học — đứng ngoài cửa văn phòng — nhìn khung ảnh trên bàn. 

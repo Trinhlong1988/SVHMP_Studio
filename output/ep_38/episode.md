@@ -168,9 +168,9 @@ Giọng anh trầm — chậm.
 
 "Năm vừa rồi — em ba lăm — sắp tròn mười tám năm em đi. Tôi quyết — em đem hộp quà về Hạ Long — về bưu điện huyện — chính bưu điện em vừa bước lên xe."
 
-"Em sẽ gửi hộp quà qua bưu điện — gửi đến địa chỉ nhà cũ Lan — bố mẹ em vẫn ở đó. Em không gặp bố mẹ em ba năm nay — bố mẹ em đã già — em ngại."
+"Em sẽ gửi hộp quà qua bưu điện — gửi đến địa chỉ nhà cũ Lan — bố mẹ em vẫn ở đó. Em không gặp bố mẹ ba năm nay — bố em đã già — em ngại."
 
-"Gửi hộp qua bưu điện — bố mẹ em sẽ nhận. Em viết một bức thư ngắn trong hộp: 'Bác ơi đây là hộp quà cháu hứa tặng Lan sinh nhật mười tám. Cháu không kịp tặng em. Cháu xin gửi bác — bác đặt trên bàn thờ em — như cách cháu tặng em sau mười tám năm.'"
+"Gửi hộp qua bưu điện — bố em sẽ nhận. Em viết một bức thư ngắn trong hộp: 'Bác ơi đây là hộp quà cháu hứa tặng Lan sinh nhật mười tám. Cháu không kịp tặng em. Cháu xin gửi bác — bác đặt trên bàn thờ em — như cách cháu tặng em sau mười tám năm.'"
 
 Bác tài cất lời.
 
@@ -178,7 +178,7 @@ Bác tài cất lời.
 
 Đức Khải Phong khẽ gật đầu.
 
-"Tôi nhớ. Người đàn ông hứa tặng Lan hộp quà sinh nhật mười tám — em đi trước sinh nhật một tháng. Tôi giữ hộp mười bảy năm — không tặng ai — không mở. Bây giờ em gửi qua bưu điện — đến bố mẹ em — bố mẹ em đặt trên bàn thờ em — như cách tặng em sau mười tám năm."
+"Tôi nhớ. Người đàn ông hứa tặng Lan hộp quà sinh nhật mười tám — em đi trước sinh nhật một tháng. Tôi giữ hộp mười bảy năm — không tặng ai — không mở. Bây giờ em gửi qua bưu điện — đến bố — bố mẹ đặt trên bàn thờ em — như cách tặng em sau mười tám năm."
 
 [pause:1200ms]
 
@@ -246,7 +246,7 @@ Khải Phong cố nhớ — anh thanh niên gọi cấp cứu cho Hạ Vy đêm 
 
 Cảm giác — Khải Phong nhớ — anh tên Hải. Hải. Anh tự giới thiệu — "Anh là Hải — em chứng kiến tai nạn — em gọi cấp cứu."
 
-Khải Phong cảm ơn anh Hải. Khải Phong không hỏi Hải làm gì — ở đâu — quen Hạ Vy không. Khải Phong chỉ cảm ơn — sốc quá — không hỏi sâu.
+Khải Phong cảm ơn anh Hải. Anh ấy Phong không hỏi Hải làm gì — ở đâu — quen Hạ Vy không. Hình bóng đàn ông ấy Phong chỉ cảm ơn — sốc quá — không hỏi sâu.
 
 Anh Hải đến bệnh viện một lần đó — sau không liên lạc lại. Khải Phong không có số điện thoại anh — không có địa chỉ — không nhớ mặt rõ ràng.
 
@@ -256,4 +256,4 @@ Bác tài liếc gương. "Vào đêm ba mươi tám. Con nhớ tên anh Hải. 
 
 Khải Phong gật. Lệ rơi nhẹ nhàng.
 
-Đêm thứ ba mươi tám — Khải Phong đếm thêm. Xe đi tiếp ra khỏi vịnh Hạ Long. Phía sau — bưu điện khuất. Đức Anh ở lại bên quầy — biên lai trong tay.
+Đêm thứ ba mươi tám — Khải Phong đếm thêm. Xe đi tiếp ra khỏi vịnh Hạ Long. Phía sau — bưu điện khuất. Đức Anh ở lại bên quầy — biên lai trong tay. 

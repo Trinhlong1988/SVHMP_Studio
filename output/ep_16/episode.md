@@ -54,9 +54,9 @@ arc_design_compliant: bible/21 R33-R38
 
 Hà Nội cuối tháng tư. Trời đã về đêm. Chuyến xe đi qua đoạn ven đường ven cánh đồng lúa Phú Xu, Hà Nội. Đèn pha rọi lên hàng cây — ánh đèn vàng cô đơn.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ mười sáu — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — mười lăm vật. Đêm qua thêm vải bông cuốn gương tan.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười sáu — Khải Phong đếm thêm. Trong túi áo gió anh — mười lăm vật. Đêm qua thêm vải bông cuốn gương tan.
 
-Bác tài lái. Đoạn đường này Khải Phong chưa đi — Phú Xuyên ngoại thành phía Nam Hà Nội.
+Bác tài lái. Đoạn đường này người khách chưa đi — Phú Xuyên ngoại thành phía Nam Hà Nội.
 
 Xe chậm lại trước một sân chùa nhỏ — cổng tam quan đã đóng — đèn dầu treo cột tre còn sáng yếu. Bảng "Chùa Phú Đường" gỗ xưa.
 
@@ -74,7 +74,7 @@ Xe lăn bánh.
 
 Cô gái khẽ ngồi yên lặng. Đỡ chậu cúc. Cánh hoa vàng nhạt — không phải cúc khô — cúc tươi mới hái.
 
-Khải Phong quan sát từ ghế ba. Cúc trong chậu cô đỡ lấy — màu vàng nhạt — giống cánh cúc khô đêm thứ mười ba — giống chỉ thêu đêm thứ mười bốn. Cùng cúc — vật thứ ba trong cụm.
+Người đàn ông quan sát từ ghế ba. Cúc trong chậu cô đỡ lấy — màu vàng nhạt — giống cánh cúc khô đêm thứ mười ba — giống chỉ thêu đêm thứ mười bốn. Cùng cúc — vật thứ ba trong cụm.
 
 Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng. Tắt.
 
@@ -134,7 +134,7 @@ Giọng cô đều — chậm.
 
 "Mẹ không nói tiếp. Mẹ đứng dậy — vào phòng — đóng cửa."
 
-"Em giận. Em về phòng trọ Hà Nội — không về nhà cuối tuần đó. Tuần sau em cũng không về. Tháng sau em cũng không về."
+"Em giận. Em về phòng trọ Hà Nội — không về nhà cuối tuần đó. Tuần sau em cũng không về. Tháng sau em cũng không."
 
 [pause:1500ms]
 
@@ -148,7 +148,7 @@ Giọng cô đều — chậm.
 
 [pause:1500ms]
 
-"Sau tang mẹ — em không cưới anh Hùng. Em chia tay anh hai tháng sau. Cô gái không vì giận anh — em vì giận mình. Em không thể bắt đầu hôn nhân bằng cái chết của mẹ."
+"Sau tang mẹ — em không cưới anh Hùng. Em chia tay anh hai tháng sau. Hình bóng con gái gái không vì giận anh — em vì giận mình. Hình bóng người con gái ấy không thể bắt đầu hôn nhân bằng cái chết của mẹ."
 
 "Người anh Hùng hiểu. Anh không trách. Bốn năm sau anh cưới người khác — em mừng cho anh."
 
@@ -160,7 +160,7 @@ Giọng cô đều — chậm.
 
 "Bố em vẫn ở nhà cũ Hà Đông — trồng cúc tiếp — hai mươi chậu của mẹ — bố giữ lại. Năm vừa rồi bố yếu — bố không tưới đủ — mười chậu chết. Bố gọi em: 'Yến ơi bố không chăm cúc của mẹ được nữa. Em đem chậu nào em thích về nhà em.'"
 
-"Em về. Em chọn một chậu — chậu cúc kim ngân — chậu mẹ thích nhất. Chậu này — mẹ trồng năm em hai mươi tuổi — chính năm em cãi mẹ. Mẹ trồng sau ngày em đi Hà Nội không về."
+"Em về. Em chọn một chậu — chậu cúc kim ngân — chậu mẹ thích nhất. Chậu này — mẹ trồng năm em hai mươi tuổi — chính năm em cãi mẹ. Mẹ trồng sau ngày em đi Hà Nội không."
 
 "Em đem chậu về nhà em ở Hà Đông. Em chăm tám tháng. Cúc nở — vàng nhạt — đẹp như mẹ trồng."
 
@@ -200,9 +200,9 @@ Bên ngoài — cô đi vào chùa Phú Đường — cổng tam quan đã mở.
 
 Cô gái đến nơi đó rồi. Đặt chậu cúc trước bệ. Quỳ. Cúi đầu. Tay chắp.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ. Bên chậu cúc — bà mẹ xuất hiện — mặc áo bà ba xám — tay cầm bình nước — vuốt tóc cô Hoàng Yến một lần. Mỉm cười.
+Anh ấy chớp mắt — nhìn qua cửa sổ. Bên chậu cúc — bà mẹ xuất hiện — mặc áo bà ba xám — tay cầm bình nước — vuốt tóc cô Hoàng Yến một lần. Mỉm cười.
 
-Khải Phong chớp lần nữa. Người mẹ ấy tan ra.
+Anh chớp lần nữa. Người mẹ ấy tan ra.
 
 Hoàng Yến ngẩng đầu. Lau khóe mắt bằng tay áo dài. Quỳ thêm. Tụng rất khẽ khàng.
 
@@ -214,7 +214,7 @@ Hoàng Yến ngẩng đầu. Lau khóe mắt bằng tay áo dài. Quỳ thêm. T
 
 Xe lăn bánh — rời ngã ba Phú Xuyên.
 
-Ghế mười trống. Trên sàn — một cánh cúc tươi vàng nhạt rơi — bong từ chậu khi cô đứng dậy. Khải Phong nhặt. Cánh cúc — mềm — không khô — màu nắng cuối thu.
+Ghế mười trống. Trên sàn — một cánh cúc tươi vàng nhạt rơi — bong từ chậu khi cô đứng dậy. người khách nhặt. Cánh cúc — mềm — không khô — màu nắng cuối thu.
 
 Bỏ vào túi. Vật thứ mười sáu.
 
@@ -222,41 +222,41 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Khải Phong ngồi. Mở túi — đếm — mười sáu vật. Ba vật cúc: cánh cúc khô vàng (đêm mười ba) — chỉ thêu cúc (đêm mười bốn) — cánh cúc tươi (đêm này).
+Người đàn ông ngồi. Mở túi — đếm — mười sáu vật. Ba vật cúc: cánh cúc khô vàng (đêm mười ba) — chỉ thêu cúc (đêm mười bốn) — cánh cúc tươi (đêm này).
 
 Ba cụm. Cụm cúc đã thành — chưa kết thúc.
 
-Khải Phong ngẫm. Hạ Vy — cô cài cúc lên tai — Khải Phong đã thấy hình ảnh đó. Đêm nay — Khải Phong cảm thấy thêm — Hạ Vy mất đột ngột — không tự ý — không bệnh dài — đột tử như mẹ cô Hoàng Yến.
+Anh ấy ngẫm. Hạ Vy — cô cài cúc lên tai — anh đã thấy hình ảnh đó. Đêm nay — người khách cảm thấy thêm — Hạ Vy mất đột ngột — không tự ý — không bệnh dài — đột tử như mẹ cô Hoàng Yến.
 
 Hạ Vy tai nạn? Hay nhồi máu? Hay khác?
 
-Khải Phong cố nhớ. Hình ảnh mờ — một con đường — mưa — một cú va chạm — một âm thanh thật to.
+Người đàn ông cố nhớ. Hình ảnh mờ — một con đường — mưa — một cú va chạm — một âm thanh thật to.
 
 Hạ Vy — tai nạn.
 
 [pause:1500ms]
 
-Khải Phong nhói. Đêm nay Khải Phong đã chuyển từ "Hạ Vy mất" mơ hồ sang "Hạ Vy tai nạn" — cụ thể hơn — đau hơn.
+Anh ấy nhói. Đêm nay anh đã chuyển từ "Hạ Vy mất" mơ hồ sang "Hạ Vy tai nạn" — cụ thể hơn — đau hơn.
 
-Bác tài liếc gương. "Vào đêm mười sáu. Con bắt đầu nhớ cách Hạ Vy đi. Đêm sau con sẽ nhớ rõ hơn — về một đêm mưa — một con đường. Đừng vội."
+Bác tài liếc gương. "Vào đêm sáu. Con bắt đầu nhớ cách Hạ Vy đi. Đêm sau con sẽ nhớ rõ hơn — về một đêm mưa — một con đường. Đừng vội."
 
-Khải Phong gật. Không hỏi.
+Người khách gật. Không hỏi.
 
-Đêm thứ mười sáu — Khải Phong đếm thêm. Xe đi tiếp về phía đường vành đai. Phía sau — Phú Xuyên khuất. Cô Hoàng Yến ở lại chùa — quỳ — tụng — gửi chậu cúc mẹ cho chùa.
+Đêm thứ mười sáu — người đàn ông đếm thêm. Xe đi tiếp về phía đường vành đai. Phía sau — Phú Xuyên khuất. Cô Hoàng Yến ở lại chùa — quỳ — tụng — gửi chậu cúc mẹ cho chùa.
 
 
 [pause:800ms]
 
-Khải Phong ngồi yên một lúc lâu sau khi cô Hoàng Yến xuống xe. Ba vật cúc trong túi giờ — cánh cúc khô đêm mười ba + sợi chỉ thêu cúc đêm mười bốn + cánh cúc tươi vàng nhạt đêm này. Cụm cúc đã có ba — bác tài đã hứa đến đêm mười chín sẽ có vật thứ tư hoàn thành cluster.
+Anh ấy ngồi yên một lúc lâu sau khi cô Hoàng Yến xuống xe. Ba vật cúc trong túi giờ — cánh cúc khô đêm ba + sợi chỉ thêu cúc đêm mười bốn + cánh cúc tươi vàng nhạt đêm này. Cụm cúc đã có ba — bác tài đã hứa đến đêm mười chín sẽ có vật thứ tư hoàn thành cluster.
 
-Khải Phong cố nhớ — bà ngoại Hạ Vy — Khải Phong nhớ tên gì không? Cảm giác — Khải Phong đã gặp bà một lần. Hạ Vy đem Khải Phong về quê Hải Phòng năm hai đại học — Khải Phong gặp bà ngoại — bà tám mươi tuổi lúc đó — bà rất hiền.
+Anh cố nhớ — bà ngoại Hạ Vy — người khách nhớ tên gì không? Cảm giác — người đàn ông đã gặp bà một lần. Hạ Vy đem anh ấy về quê Hải Phòng năm hai đại học — anh gặp bà ngoại — bà tám mươi tuổi lúc đó — bà rất hiền.
 
-Bà ngoại tên Liên. Bà ngoại Liên — Khải Phong nhớ rõ tên. Bà ngoại Liên trồng cúc trong vườn sau nhà — vườn nhỏ chừng sáu mét vuông — đầy cúc vàng nhạt mỗi mùa thu.
+Bà ngoại tên Liên. Hình bóng phụ nữ già già ngoại Liên — người khách nhớ rõ tên. Bà cụ ấy già cụ ấy cụ cụ cụ ngoại Liên trồng cúc trong vườn sau nhà — vườn nhỏ chừng sáu mét vuông — đầy cúc vàng nhạt mỗi mùa thu.
 
-Khải Phong nhớ — Hạ Vy đem Khải Phong vào vườn cúc bà — Hạ Vy cài một bông cúc lên tai Khải Phong — Khải Phong xấu hổ — cười. Bà ngoại Liên thấy — bảo: "Hai đứa con đẹp lắm — bà chụp ảnh."
+Người đàn ông nhớ — Hạ Vy đem anh ấy vào vườn cúc bà — Hạ Vy cài một bông cúc lên tai anh — người khách xấu hổ — cười. Bà ngoại Liên thấy — bảo: "Hai đứa con đẹp lắm — bà chụp ảnh."
 
-Bà chụp ảnh hai đứa — Khải Phong và Hạ Vy đứng giữa vườn cúc — cài cúc lên tai. Ảnh ấy — Khải Phong cố nhớ — Hạ Vy đem về Hà Nội — đặt trên bàn vẽ phòng trọ Khâm Thiên — đến đêm Hạ Vy mất ảnh vẫn còn.
+Bà chụp ảnh hai đứa — người đàn ông và Hạ Vy đứng giữa vườn cúc — cài cúc lên tai. Ảnh ấy — anh ấy cố nhớ — Hạ Vy đem về Hà Nội — đặt trên bàn vẽ phòng trọ Khâm Thiên — đến đêm Hạ Vy mất ảnh vẫn còn.
 
 Bác tài liếc gương. "Đêm sau con sẽ nhớ — ảnh ấy bây giờ ở đâu — con đem theo khi chuyển phòng trọ không. Đừng vội."
 
-Khải Phong gật.
+Anh gật. 

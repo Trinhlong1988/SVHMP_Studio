@@ -1,5 +1,967 @@
 {
-  "total": 0,
-  "eps": [],
-  "violations": []
+  "total": 92,
+  "eps": [
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      7,
+      6
+    ],
+    [
+      8,
+      2
+    ],
+    [
+      9,
+      2
+    ],
+    [
+      10,
+      4
+    ],
+    [
+      11,
+      4
+    ],
+    [
+      12,
+      3
+    ],
+    [
+      13,
+      1
+    ],
+    [
+      16,
+      4
+    ],
+    [
+      17,
+      3
+    ],
+    [
+      18,
+      2
+    ],
+    [
+      19,
+      4
+    ],
+    [
+      21,
+      4
+    ],
+    [
+      22,
+      1
+    ],
+    [
+      23,
+      4
+    ],
+    [
+      24,
+      3
+    ],
+    [
+      25,
+      3
+    ],
+    [
+      26,
+      2
+    ],
+    [
+      27,
+      4
+    ],
+    [
+      28,
+      1
+    ],
+    [
+      29,
+      2
+    ],
+    [
+      30,
+      3
+    ],
+    [
+      31,
+      3
+    ],
+    [
+      35,
+      1
+    ],
+    [
+      40,
+      4
+    ],
+    [
+      42,
+      3
+    ],
+    [
+      44,
+      1
+    ],
+    [
+      45,
+      1
+    ],
+    [
+      48,
+      1
+    ],
+    [
+      50,
+      7
+    ]
+  ],
+  "violations": [
+    {
+      "line": 89,
+      "word": "Anh",
+      "next_word": "nghe",
+      "context": "Anh nghe thấy.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 2
+    },
+    {
+      "line": 123,
+      "word": "Cô",
+      "next_word": "đưa",
+      "context": "Cô đưa hai bàn lên.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 2
+    },
+    {
+      "line": 257,
+      "word": "Anh",
+      "next_word": "ngồi",
+      "context": "Anh ngồi yên.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 3
+    },
+    {
+      "line": 91,
+      "word": "Anh",
+      "next_word": "để",
+      "context": "Anh để ý.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 5
+    },
+    {
+      "line": 199,
+      "word": "Anh",
+      "next_word": "chưa",
+      "context": "Anh chưa kịp trả lời.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 5
+    },
+    {
+      "line": 241,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy đếm.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 5
+    },
+    {
+      "line": 87,
+      "word": "Anh",
+      "next_word": "đếm",
+      "context": "Anh đếm trong đầu.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 6
+    },
+    {
+      "line": 211,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy chớp mắt.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 6
+    },
+    {
+      "line": 213,
+      "word": "Anh",
+      "next_word": "chớp",
+      "context": "Anh chớp mắt lần nữa.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 6
+    },
+    {
+      "line": 129,
+      "word": "Anh",
+      "next_word": "chớp",
+      "context": "Anh chớp mắt.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 7
+    },
+    {
+      "line": 183,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy gật đầu.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 7
+    },
+    {
+      "line": 211,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy nhìn theo.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 7
+    },
+    {
+      "line": 255,
+      "word": "Anh",
+      "next_word": "giật",
+      "context": "Anh giật mình.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 7
+    },
+    {
+      "line": 285,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy quay đầu.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 7
+    },
+    {
+      "line": 295,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy nhắm mắt.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 7
+    },
+    {
+      "line": 209,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy gật đầu.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 8
+    },
+    {
+      "line": 253,
+      "word": "Anh",
+      "next_word": "nhặt",
+      "context": "Anh nhặt sợi chỉ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 8
+    },
+    {
+      "line": 131,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy chớp mắt.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 9
+    },
+    {
+      "line": 259,
+      "word": "Anh",
+      "next_word": "nhặt",
+      "context": "Anh nhặt viên pin.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 9
+    },
+    {
+      "line": 39,
+      "word": "Anh",
+      "next_word": "ngồi",
+      "context": "Anh ngồi ghế thứ ba.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 75,
+      "word": "Anh",
+      "next_word": "gật",
+      "context": "Anh gật đầu.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 227,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy chớp mắt.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 275,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy mở mắt.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 10
+    },
+    {
+      "line": 75,
+      "word": "Anh",
+      "next_word": "nhìn",
+      "context": "Anh nhìn ra cửa sổ.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 11
+    },
+    {
+      "line": 223,
+      "word": "Anh",
+      "next_word": "ngồi",
+      "context": "Anh ngồi yên.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 11
+    },
+    {
+      "line": 227,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy cố nhớ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 11
+    },
+    {
+      "line": 235,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy gật.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 11
+    },
+    {
+      "line": 77,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy gật.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 12
+    },
+    {
+      "line": 217,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy ngồi.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 12
+    },
+    {
+      "line": 233,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy gật.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 12
+    },
+    {
+      "line": 155,
+      "word": "Anh",
+      "next_word": "khẽ",
+      "context": "Anh khẽ gật đầu.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 13
+    },
+    {
+      "line": 187,
+      "word": "Anh",
+      "next_word": "chớp",
+      "context": "Anh chớp lần nữa.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 16
+    },
+    {
+      "line": 211,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy ngẫm.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 16
+    },
+    {
+      "line": 221,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy nhói.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 16
+    },
+    {
+      "line": 244,
+      "word": "Anh",
+      "next_word": "gật.",
+      "context": "Anh gật.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 16
+    },
+    {
+      "line": 197,
+      "word": "Anh",
+      "next_word": "chớp",
+      "context": "Anh chớp lần nữa.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 17
+    },
+    {
+      "line": 223,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy nhói.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 17
+    },
+    {
+      "line": 231,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy gật.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 17
+    },
+    {
+      "line": 221,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy ngồi.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 18
+    },
+    {
+      "line": 256,
+      "word": "Anh",
+      "next_word": "gật.",
+      "context": "Anh gật.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 18
+    },
+    {
+      "line": 189,
+      "word": "Anh",
+      "next_word": "chớp",
+      "context": "Anh chớp lần nữa.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 19
+    },
+    {
+      "line": 217,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy ngẫm.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 19
+    },
+    {
+      "line": 227,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy gật.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 19
+    },
+    {
+      "line": 246,
+      "word": "Anh",
+      "next_word": "gật.",
+      "context": "Anh gật.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 19
+    },
+    {
+      "line": 217,
+      "word": "Anh",
+      "next_word": "ngồi",
+      "context": "Anh ngồi yên.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 21
+    },
+    {
+      "line": 221,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy cố nhớ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 21
+    },
+    {
+      "line": 225,
+      "word": "Anh",
+      "next_word": "cố",
+      "context": "Anh cố nhớ thêm.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 21
+    },
+    {
+      "line": 233,
+      "word": "Anh",
+      "next_word": "cố",
+      "context": "Anh cố nhớ.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 21
+    },
+    {
+      "line": 157,
+      "word": "Cô",
+      "next_word": "ấy",
+      "context": "Cô ấy em chỉ gật.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 22
+    },
+    {
+      "line": 113,
+      "word": "Cô",
+      "next_word": "lên",
+      "context": "Cô lên trợ lý giám.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 23
+    },
+    {
+      "line": 197,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy chớp lần nữa.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 23
+    },
+    {
+      "line": 235,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy đợi cô ấy.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 23
+    },
+    {
+      "line": 237,
+      "word": "Anh",
+      "next_word": "nhói",
+      "context": "Anh nhói thêm.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 23
+    },
+    {
+      "line": 207,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy chớp lần nữa.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 24
+    },
+    {
+      "line": 233,
+      "word": "Anh",
+      "next_word": "cố",
+      "context": "Anh cố nhớ.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 24
+    },
+    {
+      "line": 255,
+      "word": "Anh",
+      "next_word": "gật.",
+      "context": "Anh gật.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 24
+    },
+    {
+      "line": 51,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy gật.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 25
+    },
+    {
+      "line": 249,
+      "word": "Anh",
+      "next_word": "đợi",
+      "context": "Anh đợi mười phút.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 25
+    },
+    {
+      "line": 263,
+      "word": "Anh",
+      "next_word": "gật.",
+      "context": "Anh gật.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 25
+    },
+    {
+      "line": 225,
+      "word": "Anh",
+      "next_word": "ngồi",
+      "context": "Anh ngồi yên.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 26
+    },
+    {
+      "line": 245,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy gật.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 26
+    },
+    {
+      "line": 215,
+      "word": "Anh",
+      "next_word": "chớp",
+      "context": "Anh chớp lần nữa.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 27
+    },
+    {
+      "line": 249,
+      "word": "Anh",
+      "next_word": "cố",
+      "context": "Anh cố nhớ.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 27
+    },
+    {
+      "line": 253,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy cố nhớ.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 27
+    },
+    {
+      "line": 257,
+      "word": "Anh",
+      "next_word": "gật.",
+      "context": "Anh gật.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 27
+    },
+    {
+      "line": 227,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy ngồi yên.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 28
+    },
+    {
+      "line": 221,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy ngồi yên.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 29
+    },
+    {
+      "line": 238,
+      "word": "Anh",
+      "next_word": "dọn.",
+      "context": "Anh dọn.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 29
+    },
+    {
+      "line": 87,
+      "word": "Anh",
+      "next_word": "tim",
+      "context": "Anh tim đập nhanh.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 30
+    },
+    {
+      "line": 193,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy Nguyễn gật.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 30
+    },
+    {
+      "line": 290,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy gật.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 30
+    },
+    {
+      "line": 209,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy ngồi yên.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 31
+    },
+    {
+      "line": 211,
+      "word": "Anh",
+      "next_word": "ngẫm",
+      "context": "Anh ngẫm — tháng.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 31
+    },
+    {
+      "line": 239,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy tim đập nhanh.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 31
+    },
+    {
+      "line": 85,
+      "word": "Anh",
+      "next_word": "đặt",
+      "context": "Anh đặt mảnh lên đùi.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 35
+    },
+    {
+      "line": 53,
+      "word": "Anh",
+      "next_word": "gật.",
+      "context": "Anh gật.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 40
+    },
+    {
+      "line": 91,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy sốc.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 40
+    },
+    {
+      "line": 243,
+      "word": "Anh",
+      "next_word": "phân",
+      "context": "Anh phân loại.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 40
+    },
+    {
+      "line": 269,
+      "word": "Anh",
+      "next_word": "gật.",
+      "context": "Anh gật.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 40
+    },
+    {
+      "line": 189,
+      "word": "Anh",
+      "next_word": "chớp",
+      "context": "Anh chớp lần nữa.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 42
+    },
+    {
+      "line": 211,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy nhói.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 42
+    },
+    {
+      "line": 243,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy nhói.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 42
+    },
+    {
+      "line": 209,
+      "word": "Năm",
+      "next_word": "tư",
+      "context": "Năm tư — không về.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 44
+    },
+    {
+      "line": 245,
+      "word": "Cô",
+      "next_word": "ấy",
+      "context": "Cô ấy đợi anh.\"",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 45
+    },
+    {
+      "line": 205,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy ngồi.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 48
+    },
+    {
+      "line": 67,
+      "word": "Anh",
+      "next_word": "sốc.",
+      "context": "Anh sốc.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 50
+    },
+    {
+      "line": 103,
+      "word": "Anh",
+      "next_word": "sốc.",
+      "context": "Anh sốc.",
+      "word_count": 2,
+      "severity": "HIGH",
+      "ep": 50
+    },
+    {
+      "line": 135,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy nhói.",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 50
+    },
+    {
+      "line": 161,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy cầm phong bì.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 50
+    },
+    {
+      "line": 237,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy ngồi yên.",
+      "word_count": 4,
+      "severity": "HIGH",
+      "ep": 50
+    },
+    {
+      "line": 241,
+      "word": "Anh",
+      "next_word": "phân",
+      "context": "Anh phân loại:",
+      "word_count": 3,
+      "severity": "HIGH",
+      "ep": 50
+    },
+    {
+      "line": 254,
+      "word": "Anh",
+      "next_word": "ấy",
+      "context": "Anh ấy nhìn bản đồ.",
+      "word_count": 5,
+      "severity": "HIGH",
+      "ep": 50
+    }
+  ]
 }

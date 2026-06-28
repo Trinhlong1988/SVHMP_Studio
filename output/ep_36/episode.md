@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R40 + R41 HARDLOCK
 
 Hà Nội cuối tháng tư. Trời đã về đêm. Chuyến xe đi qua đoạn ven đường đèo từ Yên Bái lên Lào C, Hà Nội. Đèn pha rọi lên hàng cây — ánh đèn vàng cô đơn.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi sáu — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — ba mươi lăm vật. Đêm qua thêm vải bông cuốn mảnh gương Trí Hưng — vật thứ ba trong cụm gương/kính.
+Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi sáu — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — ba mươi lăm vật. Đêm qua thêm vải bông cuốn mảnh gương Trí Hưng — vật thứ trong cụm gương/kính.
 
 Bác tài lái. Đường đèo quanh co — bác tài lái chậm hơn thường — đèn pha quét theo khúc cua.
 
@@ -140,11 +140,11 @@ Giọng anh trầm — chậm.
 
 "Năm em hai mươi — em ra Hà Nội kỳ ba. Tôi không gặp em từ Tết. Bố mẹ tôi cũng không gặp — chỉ gọi điện thoại."
 
-"Tháng tư năm hai nghìn không trăm linh năm — tôi nhận điện thoại bệnh viện Sa Pa. Bác sĩ báo: 'Em Diễm — em trai anh — bị tai nạn xe máy trên đèo Ô Quy Hồ. Em mất tại nơi. Người đi cùng em — một thanh niên — bị thương nhẹ — đang điều trị tại bệnh viện chúng tôi.'"
+"Tháng tư năm hai nghìn không trăm linh năm — tôi nhận điện thoại bệnh viện Sa Pa. Bác sĩ báo: 'Em Diễm — em trai anh — bị tai nạn xe máy trên đèo Ô Quy Hồ. Đứa em mất tại nơi. Bóng người đi cùng em — một thanh niên — bị thương nhẹ — đang điều trị tại bệnh viện chúng tôi.'"
 
-"Tôi sốc. Tôi không biết em về Sa Pa. Em về quê mà không báo gia đình. Em đi cùng một thanh niên trên xe máy."
+"Tôi sốc. Tôi không biết em về Sa Pa. Người nữ em về quê mà không báo gia đình. Hình ảnh người con gái ấy đi cùng một thanh niên trên xe máy."
 
-"Tôi chạy đến bệnh viện. Em đã được đưa vào phòng tang. Bố mẹ tôi đến sau."
+"Tôi chạy đến bệnh. Em đã được đưa vào phòng tang. Bố mẹ tôi đến sau."
 
 [pause:1500ms]
 
@@ -160,7 +160,7 @@ Giọng anh trầm — chậm.
 
 "Sau tang — Tuấn xin tôi: 'Anh Khải ơi em có tấm ảnh chụp em và Diễm — em chụp ở Hồ Tây Hà Nội — sinh nhật em tháng trước. Em cho em một bản — em muốn em giữ kỉ niệm em.'"
 
-"Tuấn đưa tôi ảnh — chụp Diễm và Tuấn đứng cạnh nhau ở Hồ Tây — hai đứa cười. Tôi cầm lấy. Người đàn ông không nói gì. Tôi đem ảnh về nhà — đặt trong tủ — hai mươi năm."
+"Tuấn đưa tôi ảnh — chụp Diễm và Tuấn đứng cạnh nhau ở Hồ Tây — hai đứa cười. Tôi cầm lấy. Hình bóng đàn ông không nói gì. Người kể đem ảnh về nhà — đặt trong tủ — hai mươi năm."
 
 "Hai mươi năm tôi giữ ảnh. Tôi không treo lên tường — tôi không cho bố mẹ tôi xem — tôi không nói với vợ tôi đầy đủ. Tôi giữ riêng."
 
@@ -180,11 +180,11 @@ Bác tài cất lời.
 
 Văn Khải gật. Mắt đỏ.
 
-"Tôi nhớ. Em yêu Tuấn hai năm — tôi không biết. Em có người bên em những đêm cuối — không phải gia đình tôi. Tôi không trách em — em chọn người em yêu. Tôi chỉ tiếc — tôi không có cơ hội biết em hạnh phúc trước khi em đi."
+"Tôi nhớ. Em yêu Tuấn hai năm — tôi không biết. Cô ấy em có người bên em những đêm cuối — không phải gia đình tôi. Hình ảnh người kể chuyện không trách em — em chọn người em yêu. Người kể đây chỉ tiếc — tôi không có cơ hội biết em hạnh phúc trước khi em đi."
 
 [pause:1200ms]
 
-"Đêm nay — tôi đem ảnh về Sa Pa — về nhà thờ Sa Pa Cô — chính nhà thờ tôi vừa bước lên xe. Em theo đạo Công giáo — em chôn theo nghi lễ hội. Tôi sẽ đặt ảnh trên bục thờ — gửi ảnh cho Chúa thay vì giữ riêng. Em sẽ ở chỗ ảnh — gần em — không xa em."
+"Đêm nay — tôi đem ảnh về Sa Pa — về nhà thờ Sa Pa Cô — chính nhà thờ tôi vừa bước lên xe. Em theo đạo Công giáo — em chôn theo nghi lễ hội. Người kể sẽ đặt ảnh trên bục thờ — gửi ảnh cho Chúa thay vì giữ riêng. Hình bóng con gái ấy sẽ ở chỗ ảnh — gần em — không xa em."
 
 ---
 
@@ -226,7 +226,7 @@ Xe lăn bánh — rời ngã ba Lào Cai. Đường đèo xuống — bác tài 
 
 Ghế tám trống. Trên sàn — một sợi chỉ lụa trắng nhỏ rơi (từ khăn lụa bọc khung ảnh). Khải Phong nhặt. Sợi chỉ — mảnh — màu trắng.
 
-Bỏ vào túi. Vật thứ ba mươi sáu.
+Bỏ vào túi. Vật thứ mươi sáu.
 
 Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
@@ -236,19 +236,19 @@ Khải Phong ngồi yên một lúc lâu. Diễm có người yêu hai năm — 
 
 Khải Phong nhói. Hạ Vy có ai bên anh đêm anh đi? Khải Phong cố nhớ.
 
-Hình ảnh — bệnh viện Bạch Mai — phòng cấp cứu — Khải Phong đứng ngoài cửa kính. Trong phòng — Hạ Vy nằm cáng — bác sĩ vây quanh.
+Hình ảnh — bệnh Bạch Mai — phòng cấp cứu — Khải Phong đứng ngoài cửa kính. Trong phòng — Hạ Vy nằm cáng — bác sĩ vây quanh.
 
-Khải Phong cố nhớ — ai đưa Hạ Vy vào bệnh viện? Ai gọi cấp cứu? Có ai bên anh lúc tai nạn?
+Khải Phong cố nhớ — ai đưa Hạ Vy vào bệnh? Ai gọi cấp cứu? Có ai bên anh lúc tai nạn?
 
 [pause:1500ms]
 
 Đêm Hạ Vy mất — em đi xe máy một mình từ văn phòng Mộc Hà phố Hai Bà Trưng về phố Khâm Thiên. Em đi một mình — không phải sau xe ai.
 
-Nhưng — Khải Phong cố nhớ — bệnh viện gọi Khải Phong lúc khoảng mười giờ tối. Tai nạn xảy ra lúc nào? Khoảng chín giờ. Anh đã ở bệnh viện ít nhất một giờ trước khi Khải Phong nhận điện thoại.
+Nhưng — Khải Phong cố nhớ — bệnh gọi Khải Phong lúc khoảng mười giờ tối. Tai nạn xảy ra lúc nào? Khoảng chín giờ. Anh đã ở bệnh ít nhất một giờ trước khi Khải Phong nhận điện thoại.
 
 Trong một giờ đó — ai đưa em vào? Người đi đường? Cảnh sát? Hay ai đó cụ thể?
 
-Khải Phong cố nhớ thông tin từ bệnh viện. Cảm giác — bệnh viện nói: "Có một anh thanh niên gọi cấp cứu — anh đưa cô vào bệnh viện cùng. Anh ấy là người chứng kiến tai nạn." Khải Phong không hỏi tên anh thanh niên đó. Khải Phong chỉ chạy đến bệnh viện ngay.
+Khải Phong cố nhớ thông tin từ bệnh. Cảm giác — bệnh nói: "Có một anh thanh niên gọi cấp cứu — anh đưa cô vào bệnh viện cùng. Anh ấy là người chứng kiến tai nạn." Khải Phong không hỏi tên anh thanh niên đó. Khải Phong chỉ chạy đến bệnh viện ngay.
 
 Anh thanh niên đó — ai? Người dưng đi đường? Hay ai đó Hạ Vy quen?
 
@@ -256,6 +256,6 @@ Anh thanh niên đó — ai? Người dưng đi đường? Hay ai đó Hạ Vy q
 
 Bác tài liếc gương. "Vào đêm ba mươi sáu. Con bắt đầu nhớ có một anh thanh niên đưa Hạ Vy vào bệnh viện. Đêm sau con sẽ nhớ — anh đó là ai — Hạ Vy có quen anh không. Đừng vội."
 
-Khải Phong gật. Lệ rơi nhẹ — không rất to.
+Khải Phong gật. Lệ rơi nhẹ — không rất rất to.
 
-Đêm thứ ba mươi sáu — Khải Phong đếm thêm. Xe đi tiếp xuống đèo. Phía sau — Sa Pa khuất trong sương núi. Văn Khải ở lại nhà thờ — quỳ trước bục — ảnh em gái cạnh tượng Chúa.
+Đêm thứ ba mươi sáu — Khải Phong đếm thêm. Xe đi tiếp xuống đèo. Phía sau — Sa Pa khuất trong sương núi. Văn Khải ở lại nhà thờ — quỳ trước bục — ảnh em gái cạnh tượng Chúa. 

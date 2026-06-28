@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R40
 
 Đèn xe rọi vào sương. Đêm tháng tư miền Bắc. Chuyến xe đi qua đoạn đường ven biển Đà Nẵng — qua đ, Hà Nội — hàng cây ven đường thấp thoáng trong sương. Đèn pha quét lên hàng dừa nước ven đường biển — sóng vọng từ phía dưới đèo.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi chín — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — hai mươi tám vật. Đêm qua thêm mảnh nhung đen từ hộp nhẫn Hữu Lộc.
+Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi chín — Khải Phong đếm thêm. Trong túi áo gió anh — hai mươi tám vật. Đêm qua thêm mảnh nhung đen từ hộp nhẫn Hữu Lộc.
 
 Bác tài lái.
 
@@ -68,7 +68,7 @@ Cô gái khẽ lên bậc xe. Đi đến hàng ghế giữa — chân chậm —
 
 Mở ví. Lấy ra một thẻ giấy nhỏ — cỡ thẻ căn cước — đã ố vàng. Trên thẻ — chữ in: "Thẻ đăng ký hiến máu tự nguyện" — bên dưới — tên cô — và năm cấp "2017."
 
-Khải Phong ghế ba nhìn — vật thứ ba mang dấu năm 2017 trong cụm temporal sub-arc.
+Người khách ghế ba nhìn — vật thứ ba mang dấu năm 2017 trong cụm temporal sub-arc.
 
 Xe lăn bánh.
 
@@ -80,9 +80,9 @@ Xe lăn bánh.
 
 Cô gái khẽ ngồi yên lặng. Vuốt thẻ giấy. Đầu ngón tay cô mảnh — bàn tay người làm bàn giấy — móng tay sơn nhạt.
 
-Khải Phong quan sát từ ghế ba. Cô hai tám — mặt sáng — tóc cột thấp — nét buồn lâu ngày.
+Người đàn ông quan sát từ ghế ba. Cô hai tám — mặt sáng — tóc cột thấp — nét buồn lâu ngày.
 
-Thẻ trên đùi cô — Khải Phong thấy rõ năm "2017" trên góc dưới phải. Vật thứ ba có dấu năm 2017 — sau mẩu giấy bản sách thầy Quỳnh Mai (EP22) — và nhãn hộp thước T bố Đức Hùng (EP26).
+Thẻ trên đùi cô — anh ấy thấy rõ năm "2017" trên góc dưới phải. Vật thứ ba có dấu năm 2017 — sau mẩu giấy bản sách thầy Quỳnh Mai (EP22) — và nhãn hộp thước T bố Đức Hùng (EP26).
 
 Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng. Tắt.
 
@@ -144,7 +144,7 @@ Giọng cô đều — chậm.
 
 "Em đáp: 'Em ơi để em xem.'"
 
-"Em không đi khám. Cô gái cảm thấy rất ngại. Em sợ kim tiêm — em sợ đau — em sợ thủ tục ngân hàng tủy phức tạp. Em nghĩ: 'Có thể em không hợp — em đi khám tốn thời gian.'"
+"Em không đi khám. Cô gái cảm thấy rất ngại. Người nữ em sợ kim tiêm — em sợ đau — em thủ tục ngân hàng tủy phức tạp. Hình ảnh người con gái ấy nghĩ: 'Có thể em không hợp — em đi khám tốn thời gian.'"
 
 "Em bịa lý do với em: 'Em ơi em hôm trước tới ngân hàng tủy hỏi — họ bảo phải đợi sáu tháng làm hồ sơ — em vào kỳ thi tốt nghiệp — em chưa làm kịp. Sang năm em làm.'"
 
@@ -152,27 +152,27 @@ Giọng cô đều — chậm.
 
 "Em không nghi em. Em gật. Bảo: 'Em đợi chị tốt nghiệp xong — chị có thời gian.'"
 
-"Em tốt nghiệp năm 2017 — em đi làm cho công ty quảng cáo. Em vẫn ở ghép với em — em vẫn đi truyền máu mỗi tháng — em vẫn yếu hơn — em vẫn hỏi em em đã làm hồ sơ tủy chưa."
+"Em tốt nghiệp năm 2017 — em đi làm cho công ty quảng cáo. Em vẫn ở ghép với em — em vẫn đi truyền máu mỗi tháng — em vẫn yếu hơn — em hỏi em em đã làm hồ sơ tủy chưa."
 
 "Em nói dối em mỗi tháng: 'Chị ơi em đang làm — chậm thủ tục.'"
 
-"Đầu năm 2018 — em ốm nặng — biến chứng tim — không truyền máu kịp đêm. Em đưa em vào bệnh viện. Em mất ba ngày sau."
+"Đầu năm 2018 — em ốm nặng — biến chứng tim — không truyền máu kịp đêm. Em đưa em vào bệnh. Em mất ba ngày sau."
 
 [pause:1500ms]
 
-"Em đến tang em. Cô gái quỳ bên quan tài Nga. Em xin lỗi — qua thân xác đã đi. Em không thử khám hiến tủy — em sợ thủ tục — em lười."
+"Em đến tang em. Cô gái quỳ bên quan tài Nga. Đứa em xin lỗi — qua thân xác đã đi. Bóng người con gái ấy không thử khám hiến tủy — em thủ tục — em lười."
 
-"Mẹ Nga đến — bà nhìn em — không trách — chỉ nhìn. Bà bảo: 'Linh ơi cảm ơn em ở ghép với Nga ba năm — Nga thương em.' Em im — em không nói được — em không nói lý do em không khám tủy."
+"Mẹ Nga đến — bà nhìn em — không trách — chỉ nhìn. Bà bảo: 'Linh ơi cảm ơn em ở ghép với Nga ba năm — Nga thương em.' Em im — em nói được — em nói lý do em không khám tủy."
 
 "Sau tang Nga — em một mình ở phòng trọ. Em không tìm bạn ghép mới. Em ở một mình hai năm — đến khi em chuyển nhà mới."
 
-"Năm vừa rồi — em dọn nhà xưa — em tìm thấy thẻ này. Thẻ đăng ký hiến máu tự nguyện — em đăng ký năm 2017 — em đăng ký vì em định đi hiến tủy cho Nga — em nghĩ thẻ hiến máu là bước đầu — sẽ chuyển sang hiến tủy sau."
+"Năm vừa rồi — em dọn nhà xưa — em tìm thấy thẻ này. Thẻ đăng hiến máu tự nguyện — em đăng năm 2017 — em đăng ký vì em định đi hiến tủy cho Nga — em nghĩ thẻ hiến máu là bước đầu — sẽ chuyển sang hiến tủy sau."
 
 "Em đăng ký xong — không bao giờ đi hiến máu một lần. Em vứt thẻ vào ngăn kéo bàn — quên bảy năm. Bây giờ dọn nhà — em tìm thấy."
 
 [pause:1500ms]
 
-"Em không thể đi hiến tủy cho Nga — em đã đi xa. Em đi hiến máu thường cho bệnh viện — bắt đầu năm vừa rồi — em đi mỗi ba tháng một lần — em làm gì có thể làm bây giờ."
+"Em không thể đi hiến tủy cho Nga — em đã đi xa. Em đi hiến máu thường cho bệnh — bắt đầu năm vừa rồi — em đi mỗi ba tháng một lần — em làm gì có thể làm bây giờ."
 
 "Em đăng ký lại ngân hàng tủy — em làm hồ sơ — em đi khám — em hợp tủy với một bệnh nhân khác — không phải em. Em đã hiến tủy tháng trước — cho một em bé năm tuổi ở Bệnh viện Huyết học Hà Nội — em không biết em này — em chỉ biết em hợp."
 
@@ -188,7 +188,7 @@ Linh Đan gật. Lệ rơi xuống thẻ giấy.
 
 [pause:1200ms]
 
-"Đêm nay — em đem thẻ về Đà Nẵng — về Bệnh viện đa khoa Liên Chiểu — chính bệnh viện em đến đêm Nga mất. Em sẽ đặt thẻ trong phòng tiếp tân — gửi thẻ cho bệnh viện — như cách trả lại nơi em đã đăng ký năm 2017 — không sử dụng. Để bệnh viện biết — thẻ này em đã có — em không dùng — bây giờ em dùng cách khác."
+"Đêm nay — em đem thẻ về Đà Nẵng — về Bệnh viện đa khoa Liên Chiểu — chính bệnh em đến đêm Nga mất. Em sẽ đặt thẻ trong phòng tiếp tân — gửi thẻ cho bệnh viện — như cách trả lại nơi em đã đăng ký năm 2017 — không sử dụng. Để bệnh viện biết — thẻ này em đã có — em không dùng — bây giờ em dùng cách khác."
 
 ---
 
@@ -214,9 +214,9 @@ Bên ngoài — Linh Đan đi vào sân bệnh viện đa khoa Liên Chiểu —
 
 Cô gái đến bên quầy ấy. Lấy thẻ ra ngoài. Đặt thẻ lên quầy tiếp tân — cùng với một ghi chú nhỏ cô vừa viết tay: "Thẻ tôi đăng ký năm 2017 — không sử dụng. Tôi xin lỗi. Bây giờ tôi đã hiến tủy — không kịp cho bạn cùng phòng. Linh Đan." Cúi đầu trước quầy.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên quầy — Nga xuất hiện — cô gái hai mươi mốt — áo trắng — má hồng (không xanh xao như trong INCIDENT) — vuốt vai Linh Đan. Mỉm cười nhẹ nhàng.
+Anh chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên quầy — Nga xuất hiện — cô gái hai mươi mốt — áo trắng — má hồng (không xanh xao như trong INCIDENT) — vuốt vai Linh Đan. Mỉm cười nhẹ nhàng.
 
-Khải Phong chớp lần nữa. Người tên Nga tan ra.
+Người khách chớp lần nữa. Người tên Nga tan ra.
 
 Linh Đan ngẩng đầu. Lau lệ. Đi ra cửa bệnh viện.
 
@@ -228,7 +228,7 @@ Linh Đan ngẩng đầu. Lau lệ. Đi ra cửa bệnh viện.
 
 Xe lăn bánh — rời ngã ba Đà Nẵng.
 
-Ghế mười trống. Trên sàn — một mẩu nhãn nhỏ rơi (bong từ góc thẻ). Khải Phong nhặt. Nhãn — màu trắng — có chữ số "2017" mờ.
+Ghế mười trống. Trên sàn — một mẩu nhãn nhỏ rơi (bong từ góc thẻ). người đàn ông nhặt. Nhãn — màu trắng — có chữ số "2017" mờ.
 
 Bỏ vào túi áo gió. Vật thứ hai mươi chín — vật thứ ba mang dấu năm 2017.
 
@@ -236,31 +236,31 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Khải Phong ngồi yên. Mở túi — đếm — hai mươi chín vật. Ba vật mang dấu năm 2017:
+Anh ấy ngồi yên. Mở túi — đếm — hai mươi chín vật. Ba vật mang dấu năm 2017:
 - Mẩu giấy bản từ sách thầy Quỳnh Mai (đêm 22)
 - Nhãn ngày mua hộp thước T bố Đức Hùng (đêm 26)
 - Nhãn năm thẻ hiến máu Linh Đan (đêm này)
 
 Ba vật rời rạc — ba chủ — không quen nhau — không cùng tỉnh. Nhưng cùng năm 2017.
 
-Khải Phong ngẫm. Năm 2017 — Khải Phong tốt nghiệp Đại học Kiến trúc. Năm em tốt nghiệp xong — em rời quê đi. Năm anh và Hạ Vy ra trường cùng nhau.
+Anh ngẫm. Năm 2017 — người khách tốt nghiệp Đại học Kiến trúc. Năm em tốt nghiệp xong — em rời quê đi. Năm anh và Hạ Vy ra trường cùng nhau.
 
-Năm sau — 2018 — Hạ Vy mất. Sub-arc temporal — ba vật cùng năm 2017 — như đang nhắc Khải Phong: năm tốt nghiệp là một năm trước Hạ Vy đi. Một năm — ngắn.
+Năm sau — 2018 — Hạ Vy mất. Sub-arc temporal — ba vật cùng năm 2017 — như đang nhắc người đàn ông: năm tốt nghiệp là một năm trước Hạ Vy đi. Một năm — ngắn.
 
 [pause:1500ms]
 
-Sau Hạ Vy mất — Khải Phong làm gì? Khải Phong cố nhớ. Cảm giác — Khải Phong ở phòng trọ Khâm Thiên thêm một tuần — không dọn — không thay drap giường — không cất quần áo Hạ Vy.
+Sau Hạ Vy mất — anh ấy làm gì? anh cố nhớ. Cảm giác — người khách ở phòng trọ Khâm Thiên thêm một tuần — không dọn — không thay drap giường — không cất quần áo Hạ Vy.
 
-Sau một tuần — chủ trọ đến nhắc — Khải Phong phải dọn vì phòng được cho hai người thuê — sau một người đi — Khải Phong không thể giữ phòng giá hai người.
+Sau một tuần — chủ trọ đến nhắc — người đàn ông phải dọn vì phòng được cho hai người thuê — sau một người đi — anh ấy không thể giữ phòng giá hai người.
 
-Khải Phong dọn. Khải Phong gom quần áo Hạ Vy vào hộp — không vứt — đem về quê Hạ Vy — gửi bố mẹ Hạ Vy. Khải Phong chuyển sang phòng trọ rẻ hơn — một mình — phố Nguyễn Trãi.
+Anh dọn. Bóng người ngồi Phong gom quần áo Hạ Vy vào hộp — không vứt — đem về quê Hạ Vy — gửi bố mẹ Hạ Vy. Hình ảnh người đàn ông ấy Phong chuyển sang phòng trọ rẻ hơn — một mình — phố Nguyễn Trãi.
 
-Khải Phong tiếp tục đi làm — công ty xây dựng Việt Trường. Nhưng năm sau — 2019 — Khải Phong nghỉ. Khải Phong không thể đi giám sát công trình — Khải Phong mệt — Khải Phong tim đập nhanh khi nghe tin tai nạn lao động — Khải Phong sợ.
+Người khách tiếp tục đi làm — công ty xây dựng Việt Trường. Nhưng năm sau — 2019 — người đàn ông nghỉ. anh ấy không thể đi giám sát công trình — anh mệt — người khách tim đập nhanh khi nghe tin tai nạn lao động — người đàn ông sợ.
 
-Khải Phong xin việc khác — văn phòng kiến trúc — nhẹ hơn — ngồi bàn vẽ ra. Khải Phong làm cho văn phòng nhỏ phố Khâm Thiên — gần phòng trọ xưa.
+Anh ấy xin việc khác — văn phòng kiến trúc — nhẹ hơn — ngồi bàn vẽ ra. anh làm cho văn phòng nhỏ phố Khâm Thiên — gần phòng trọ xưa.
 
 Bác tài liếc gương. "Vào đêm hai mươi chín. Ba vật cùng năm 2017 đã đủ. Đêm mai — milestone — đêm ba mươi — con sẽ ngẫm rõ vì sao ba vật rời rạc cùng năm 2017 — và một vật bất ngờ. Đừng vội."
 
-Khải Phong gật. Không hỏi.
+Người khách gật. Không hỏi.
 
-Đêm thứ hai mươi chín — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Đà Nẵng khuất. Linh Đan ở lại sân bệnh viện — đứng cửa nhìn vào quầy tiếp tân — thẻ giấy còn trên quầy.
+Đêm thứ hai mươi chín — người đàn ông đếm thêm. Xe đi tiếp. Phía sau — Đà Nẵng khuất. Linh Đan ở lại sân bệnh viện — đứng cửa nhìn vào quầy tiếp tân — thẻ giấy còn trên quầy. 

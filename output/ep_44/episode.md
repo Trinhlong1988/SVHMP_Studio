@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R42
 
 [pause:800ms]
 
-Cuối tháng tư. Trời ẩm. Xe đêm chạy chậm qua đường ven đồi cà phê Đắk Lắk, Hà Nội. Hàng cây ven đường — lá còn rơi vài giọt mưa cuối ngày. Đèn pha quét lên hàng cà phê — cà phê đã ra hoa trắng.
+Cuối tháng tư. Trời ẩm. Xe đêm chạy chậm qua đường ven đồi cà phê Đắk Lắk, Hà Nội. Hàng cây ven đường — lá còn rơi vài giọt mưa cuối ngày. Đèn pha quét lên hàng cà phê — cà đã ra hoa trắng.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi tư — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — bốn mươi ba vật.
 
@@ -78,7 +78,7 @@ Xe lăn bánh.
 
 Bà cụ ngồi yên một lát. Vuốt giấy bản. Đầu ngón tay bà thô.
 
-Khải Phong quan sát từ ghế ba. Bà năm mươi hai — tóc bạc — mặt rám nắng cà phê.
+Khải Phong quan sát từ ghế ba. Bà năm mươi hai — tóc bạc — mặt rám nắng cà.
 
 Khúc chè bà giữ lại — Khải Phong nhìn ra — chè khô — không phải tươi — đã giữ rất lâu.
 
@@ -120,7 +120,7 @@ Bà cụ khẽ quay đầu lại. Vuốt giấy bản.
 
 [pause:1000ms]
 
-"Em là Phượng Liên. Bà cụ năm mươi hai tuổi rồi. Em ở Đại Phú — Đắk Lắk — quê. Em làm cà phê — bốn héc-ta."
+"Em là Phượng Liên. Bà cụ năm mươi hai tuổi rồi. Đứa em ở Đại Phú — Đắk Lắk — quê. Bóng người con gái ấy làm cà phê — bốn héc-ta."
 
 Giọng bà trầm.
 
@@ -138,7 +138,7 @@ Giọng bà trầm.
 
 [pause:1200ms]
 
-"Hôm sau em nhớ — em nấu chè — em định đem. Em qua nhà bà — gõ cửa — không ai trả lời. Người bà đẩy cửa — cửa mở. Em vào — bà nằm trên giường — đã đi sáng nay — không ai biết."
+"Hôm sau em nhớ — em nấu chè — em định đem. Em qua nhà bà — gõ cửa — không ai trả lời. Hình bóng bà đẩy cửa — cửa mở. Em ấy vào — bà nằm trên giường — đã đi sáng nay — không ai biết."
 
 "Em quỳ bên giường bà. Em đem khúc chè theo — bà không ăn được — em không kịp đem hôm bà thèm."
 
@@ -166,7 +166,7 @@ Bác tài cất lời.
 
 Phượng Liên gật.
 
-"Em nhớ. Em hứa đem chè cho bà Sáu — em quên một tối. Bà cụ mất sáng hôm sau. Em không phải lý do duy nhất — bà yếu nhiều tháng — nhưng em là một trong nhiều người có thể giúp lúc bà cần."
+"Em nhớ. Em hứa đem chè cho bà Sáu — em quên một tối. Bóng người bà cụ mất sáng hôm sau. Hình ảnh người con gái ấy không phải lý do duy nhất — bà yếu nhiều tháng — nhưng em là một trong nhiều người có thể giúp lúc bà cần."
 
 [pause:1200ms]
 
@@ -224,11 +224,11 @@ Khải Phong nhói. Bố mẹ Hạ Vy không liên lạc Khải Phong tám năm.
 
 [pause:1500ms]
 
-Khải Phong cố nhớ — Khải Phong có liên lạc bố mẹ Hạ Vy không? Cảm giác — có vài lần đầu sau tang. Sau đó thưa hơn. Năm thứ hai — Khải Phong về tang Hạ Vy lần một. Năm thứ ba — không về. Năm thứ tư — không về.
+Khải Phong cố nhớ — Khải Phong có liên lạc bố mẹ Hạ Vy không? Cảm giác — có vài lần đầu sau tang. Sau đó thưa hơn. Năm thứ hai — Khải Phong về tang Hạ Vy lần một. Năm thứ ba — không về. Năm tư — không về.
 
-Khải Phong không gọi điện thoại bố mẹ Hạ Vy năm năm gần đây. Em đã sai rồi. Anh đã không giữ liên lạc với gia đình anh vợ tương lai — dù anh không cưới anh.
+Khải Phong không gọi điện thoại bố mẹ Hạ Vy năm năm gần đây. Cô gái ấy em đã sai rồi. Hình ảnh người đàn ông đã không giữ liên lạc với gia đình anh vợ tương lai — dù anh không cưới anh.
 
-Anh anh — Hạ Nhi — anh gái Hạ Vy — anh hai bốn tuổi bây giờ. Em sống Sài Gòn lâu rồi. Khải Phong không có số anh.
+Anh anh — Hạ Nhi — anh gái Hạ Vy — anh hai bốn tuổi bây giờ. Đứa em sống Sài Gòn lâu rồi. Bóng người đàn ông ấy Phong không có số anh.
 
 Bác tài liếc gương. "Vào đêm bốn mươi tư. Con đã nhớ con không liên lạc gia đình Hạ Vy nhiều năm. Đêm sau con sẽ nhớ — Hạ Nhi em gái Hạ Vy giờ thế nào — em có nhắn con không. Đừng vội."
 
@@ -236,7 +236,7 @@ Khải Phong gật. Lệ rơi xuống dưới.
 
 Đêm thứ bốn mươi tư — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Đắk Lắk khuất. Phượng Liên ở lại bên cửa — khúc chè trên thềm.
 
-Khải Phong cố nhớ tin nhắn Hạ Nhi gần đây. Anh nhắn lần cuối — sinh nhật Khải Phong — tháng giêng năm nay. Anh chúc — anh xin chỗ cưới anh — anh đính kèm thiệp cưới scan PDF.
+Khải Phong cố nhớ tin nhắn Hạ Nhi gần đây. Bóng người ấy nhắn lần cuối — sinh nhật Khải Phong — tháng giêng năm nay. Hình ảnh người đàn ông chúc — anh xin chỗ cưới anh — anh đính kèm thiệp cưới scan PDF.
 
 Khải Phong đọc thiệp — cưới tháng năm sang năm — Sài Gòn — chú rể Trần Hoàng Long — nghề kiến trúc sư.
 
@@ -246,9 +246,9 @@ Khải Phong không đáp anh — anh không từ chối — anh chỉ im lặng
 
 Đêm bốn mươi tư — Khải Phong vẫn không quyết. Đêm sau — có thể anh sẽ quyết.
 
-Khải Phong cố nhớ tin nhắn Hạ Nhi gần đây. Anh mới nhắn tuần trước — Khải Phong chưa đáp. Anh định đáp sáng mai — anh quên. Khi anh quay về đời thực — anh sẽ nhắn Hạ Nhi đầu tiên — anh sẽ đáp lời mời cưới anh. Đêm thứ bốn mươi bốn kết thúc — đêm chưa sáng lên.
+Khải Phong cố nhớ tin nhắn Hạ Nhi gần đây. Bóng người khách mới nhắn tuần trước — Khải Phong chưa đáp. Hình ảnh người đàn ông định đáp sáng mai — anh quên. Khi anh quay về đời thực — anh sẽ nhắn Hạ Nhi đầu tiên — anh sẽ đáp lời mời cưới anh. Đêm thứ bốn mươi bốn kết thúc — đêm chưa sáng lên.
 
-Khải Phong cố nhớ Hạ Nhi tuổi nào. Anh mười sáu khi Hạ Vy mất — bây giờ anh hai mươi tư. Anh vào đại học năm anh mười tám — anh tốt nghiệp năm anh hai hai — anh làm thiết kế hai năm — sắp cưới năm anh hai sáu.
+Khải Phong cố nhớ Hạ Nhi tuổi nào. Hình bóng anh mười sáu khi Hạ Vy mất — bây giờ anh hai mươi tư. Hình ảnh người đàn ông vào đại học năm anh mười tám — anh tốt nghiệp năm anh — anh làm thiết kế hai năm — sắp cưới năm hai sáu.
 
 Hạ Nhi giống chị anh chỗ nét mặt — không phải y hệt — có nét chung. Khải Phong nhớ anh từng đến phòng trọ Khâm Thiên chơi với Hạ Vy hồi anh mười bốn — anh ngồi học bài bên bàn vẽ ra — Hạ Vy chỉ anh làm toán. Khải Phong nấu cơm — ba người ăn chung.
 
@@ -258,4 +258,4 @@ Anh lớn — anh vẫn nhớ Khải Phong. Anh gửi thiệp cưới — anh mu
 
 Đêm thứ bốn mươi bốn — Khải Phong quyết anh sẽ đi dự cưới Hạ Nhi. Anh sẽ gặp bố mẹ Hạ Vy ở tiệc cưới — anh sẽ ngồi cùng bàn.
 
-Khải Phong cố nhớ thêm — Hạ Nhi gửi thiệp mời cưới — Khải Phong đã in thiệp đặt trên bàn — anh quên cất. Thiệp vẫn ở bàn làm việc văn phòng kiến trúc xưa — anh không đem theo khi nghỉ việc. Anh không biết thiệp giờ ở đâu — có thể bảo vệ văn phòng dọn vứt. Anh sẽ nhắn Hạ Nhi xin thiệp khác — nếu anh quay về đời thực.
+Khải Phong cố nhớ thêm — Hạ Nhi gửi thiệp mời cưới — Khải Phong đã in thiệp đặt trên bàn — anh quên cất. Thiệp vẫn ở bàn làm việc văn phòng kiến trúc xưa — anh không đem theo khi nghỉ việc. Anh không biết thiệp giờ ở đâu — có thể bảo vệ văn phòng dọn vứt. Anh sẽ nhắn Hạ Nhi xin thiệp khác — nếu anh quay về đời thực. 

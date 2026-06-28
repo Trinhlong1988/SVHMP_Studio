@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R38
 
 Sau cơn mưa chiều. Đêm xuống nhanh. Xe đêm rẽ vào đoạn đường ven đồi Sóc Sơn, Hà Nội. Hàng cây ven đường còn đẫm — đèn pha quét lên thân cây ướt. Đèn pha quét lên rừng thông non — cành thông đẫm sương đêm.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ mười bảy — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — mười sáu vật. Đêm qua thêm cánh cúc tươi vàng nhạt.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười bảy — Khải Phong đếm thêm. Trong túi áo gió anh — mười sáu vật. Đêm qua thêm cánh cúc tươi vàng nhạt.
 
 Bác tài lái.
 
@@ -72,7 +72,7 @@ Xe lăn bánh.
 
 Người đàn ông ngồi yên. Vuốt USB. Đầu ngón tay anh cử động chậm — như đang cảm USB lần đầu.
 
-Khải Phong quan sát. Anh trạc tuổi bốn hai — tóc đã có sợi bạc — mắt sâu — vẻ người bận rộn.
+Người khách quan sát. Anh trạc tuổi bốn hai — tóc đã có sợi bạc — mắt sâu — vẻ người bận rộn.
 
 Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng. Tắt.
 
@@ -102,7 +102,7 @@ Người đàn ông nói rất nhỏ.
 
 Xe đi qua đó. Nhà tập thể khuất.
 
-Khải Phong quay đầu lại. Đặt tay lên USB. Nín thở vài giây.
+Người đàn ông quay đầu lại. Đặt tay lên USB. Nín thở vài giây.
 
 ---
 
@@ -156,9 +156,9 @@ Giọng anh trầm.
 
 "Tôi tắt máy. Tôi tiếp tục họp. Tuần đó tôi xoay tiền — nhưng tôi chỉ xoay được một trăm triệu — không phải hai trăm. Tôi định: 'Một trăm trước — tuần sau xoay thêm.'"
 
-"Thứ năm tuần đó — vợ Toàn nhắn tin: 'Anh Tài ơi anh Toàn đã đi. Vào tối qua ở đó. Đột ngột nặng hơn — không kịp.'"
+"Thứ năm tuần đó — vợ Toàn nhắn tin: 'Anh Tài ơi anh Toàn đã đi. Vào tối qua ở đó. Đột ngột nặng hơn — không.'"
 
-"Tôi sốc. Người đàn ông không khóc. Tôi ngồi văn phòng — nhìn ngoài cửa sổ. Người đàn ông đã định mai gửi một trăm triệu cho Toàn. Tôi không kịp."
+"Tôi sốc. Người đàn ông không khóc. Tôi đây đây ngồi văn phòng — nhìn ngoài cửa sổ. Hình bóng người đàn ông đã định mai gửi một trăm triệu cho Toàn. Tôi đây đây không."
 
 [pause:1500ms]
 
@@ -166,7 +166,7 @@ Giọng anh trầm.
 
 "Tôi cầm USB. Về nhà. Mở. Đọc thư."
 
-"Toàn viết: 'Tài thân — nếu anh đọc thư này — tức là tôi đã đi. Tôi không trách anh không xoay kịp tiền. Người đàn ông biết anh bận. Tôi biết anh thương tôi. Tôi xin anh một điều — chăm con tôi thay tôi — hai đứa nhỏ — chúng coi anh như chú ruột. Anh là người tôi tin nhất sau vợ tôi. Cảm ơn anh đã làm bạn tôi ba mươi năm. Toàn.'"
+"Toàn viết: 'Tài thân — nếu anh đọc thư này — tức là tôi đã đi. Tôi không trách anh không xoay kịp tiền. Hình bóng người đàn ông biết anh bận. Tôi đây đây biết anh thương tôi. Bóng người kể xin anh một điều — chăm con tôi thay tôi — hai đứa nhỏ — chúng coi anh như chú ruột. Hình bóng đàn ông là người tôi tin nhất sau vợ tôi. Cảm ơn anh đã làm bạn tôi ba mươi năm. Toàn.'"
 
 "Tôi đọc xong — khóc. Lần đầu khóc sau ba mươi năm — không khóc từ lúc bố tôi mất."
 
@@ -178,7 +178,7 @@ Bác tài cất lời.
 
 Tài gật. Mắt đỏ.
 
-"Tôi nhớ. Tôi không kịp xoay tiền — không kịp gọi lại — không kịp cứu. Toàn không trách tôi — Toàn dặn tôi chăm con Toàn. Tôi đã chăm — ba năm — đem hai cháu đi học — đem đi chơi cuối tuần — như cha. Nhưng USB này — tôi không buông được."
+"Tôi nhớ. Tôi không xoay tiền — không kịp gọi lại — không kịp cứu. Toàn không trách tôi — Toàn dặn tôi chăm con Toàn. Tôi đã chăm — ba năm — đem hai cháu đi học — đem đi chơi cuối tuần — như cha. Nhưng USB này — tôi không buông được."
 
 [pause:1200ms]
 
@@ -210,9 +210,9 @@ Người đàn ông khẽ quỳ. Đào hố nhỏ bằng tay. Đặt USB vào tr
 
 Cúi đầu.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ. Bên hố — Toàn xuất hiện — mặc áo sơ mi xanh — vuốt vai Tài một lần. Cười nhẹ nhàng.
+Anh ấy chớp mắt — nhìn qua cửa sổ. Bên hố — Toàn xuất hiện — mặc áo sơ mi xanh — vuốt vai Tài một lần. Cười nhẹ nhàng.
 
-Khải Phong chớp lần nữa. Người tên Toàn tan ra.
+Anh chớp lần nữa. Người tên Toàn tan ra.
 
 Tài ngẩng đầu. Lau khóe mắt. Đứng dậy. Vỗ tay phủi đất.
 
@@ -224,7 +224,7 @@ Tài ngẩng đầu. Lau khóe mắt. Đứng dậy. Vỗ tay phủi đất.
 
 Xe lăn bánh — rời ngã ba Sóc Sơn.
 
-Ghế tư trống. Trên sàn — một mẩu nhãn nhỏ rơi (nhãn dán trên USB bong khi anh cầm). Khải Phong nhặt. Nhãn — màu trắng — có chữ mờ.
+Ghế tư trống. Trên sàn — một mẩu nhãn nhỏ rơi (nhãn dán trên USB bong khi anh cầm). người khách nhặt. Nhãn — màu trắng — có chữ mờ.
 
 Bỏ vào túi. Vật thứ mười bảy.
 
@@ -232,45 +232,45 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Khải Phong ngồi. USB không cùng cụm cúc. Diversify cụm tiếp.
+Người đàn ông ngồi. USB không cùng cụm cúc. Diversify cụm tiếp.
 
-Khải Phong ngẫm — Hạ Vy có ai từng nhờ Khải Phong giúp không? Khải Phong có lỡ không giúp ai như Tài lỡ không cứu Toàn không?
+Anh ấy ngẫm — Hạ Vy có ai từng nhờ anh giúp không? người khách có lỡ không giúp ai như Tài lỡ không cứu Toàn không?
 
-Hình ảnh mờ — một tin nhắn — một cuộc gọi không nhận được — một tiếng chuông điện thoại Khải Phong không bắt.
+Hình ảnh mờ — một tin nhắn — một cuộc gọi không nhận được — một tiếng chuông điện thoại người đàn ông không bắt.
 
-Khải Phong nhói. Có. Khải Phong đã nhỡ một cuộc gọi nào đó — Khải Phong cảm thấy.
+Anh ấy nhói. Có. anh đã nhỡ một cuộc gọi nào đó — người khách cảm thấy.
 
 Cuộc gọi của Hạ Vy?
 
-Khải Phong không nhớ rõ ràng. Cảm giác — không phải đêm Hạ Vy tai nạn — cuộc gọi khác — trước đêm tai nạn.
+Người đàn ông không nhớ rõ ràng. Cảm giác — không phải đêm Hạ Vy tai nạn — cuộc gọi khác — trước đêm tai nạn.
 
 Bác tài liếc gương. "Vào đêm mười bảy. Con bắt đầu cảm thấy lỡ một cuộc gọi. Đêm sau sẽ rõ hơn về cuộc gọi đó. Đừng vội."
 
-Khải Phong gật. Không hỏi.
+Anh ấy gật. Không hỏi.
 
-Đêm thứ mười bảy — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Sóc Sơn khuất. Tài ở lại đứng — nhìn hố đất đã lấp — USB Toàn đã chôn.
+Đêm thứ mười bảy — anh đếm thêm. Xe đi tiếp. Phía sau — Sóc Sơn khuất. Tài ở lại đứng — nhìn hố đất đã lấp — USB Toàn đã chôn.
 
 
 [pause:800ms]
 
-Khải Phong ngồi. USB không cùng cụm cúc — vật riêng. Diversify cụm tiếp tục.
+Người khách ngồi. USB không cùng cụm cúc — vật riêng. Diversify cụm tiếp tục.
 
-Khải Phong ngẫm về Hạ Vy. Đêm trước — Khải Phong nhớ tên bà ngoại Liên + vườn cúc. Đêm này — Khải Phong cố nhớ tiếp.
+Người đàn ông ngẫm về Hạ Vy. Đêm trước — anh ấy nhớ tên bà ngoại Liên + vườn cúc. Đêm này — anh cố nhớ tiếp.
 
 Hình ảnh — phòng trọ Khâm Thiên năm cuối đại học — Hạ Vy ngồi bàn vẽ ra. Trên bàn vẽ có ảnh — ảnh hai đứa cài cúc tai trong vườn bà ngoại Liên. Ảnh khung gỗ đơn — Hạ Vy mua khung ở chợ Đồng Xuân.
 
-Khải Phong cố nhớ — sau Hạ Vy mất Khải Phong đem ảnh đi đâu. Cảm giác — Khải Phong cất ảnh vào hộp cùng quần áo Hạ Vy — đem về quê Hải Phòng gửi bố mẹ Hạ Vy.
+Người khách cố nhớ — sau Hạ Vy mất người đàn ông đem ảnh đi đâu. Cảm giác — anh ấy cất ảnh vào hộp cùng quần áo Hạ Vy — đem về quê Hải Phòng gửi bố mẹ Hạ Vy.
 
-Khải Phong không giữ ảnh. Khải Phong chỉ giữ kỉ niệm — không vật ngoài. Khải Phong đã không nhìn ảnh từ ngày Hạ Vy mất.
+Anh không giữ ảnh. Anh ấy Phong chỉ giữ kỉ niệm — không vật ngoài. Hình bóng đàn ông ấy Phong đã không nhìn ảnh từ ngày Hạ Vy mất.
 
-Khải Phong nhói — đáng lẽ Khải Phong nên giữ ảnh. Khải Phong đã sai khi gửi bố mẹ Hạ Vy. Bố mẹ Hạ Vy có ảnh — Khải Phong không có. Khải Phong chỉ có kỉ niệm trong đầu — kỉ niệm mờ dần.
+Người khách nhói — đáng lẽ người đàn ông nên giữ ảnh. anh ấy đã sai khi gửi bố mẹ Hạ Vy. Bố mẹ Hạ Vy có ảnh — anh không có. người khách chỉ có kỉ niệm trong đầu — kỉ niệm mờ dần.
 
 Bác tài liếc gương. "Đêm sau con sẽ nhớ — bố mẹ Hạ Vy giữ ảnh thế nào — có khi nào con liên lạc lại để xin lại ảnh không. Đừng vội."
 
-Khải Phong gật. Lệ rơi nhẹ nhàng.
+Người đàn ông gật. Lệ rơi nhẹ nhàng.
 
-Đêm thứ mười bảy kết thúc. Khải Phong cố giữ hình ảnh ảnh hai đứa cài cúc tai trong vườn bà ngoại Liên — kỉ niệm Khải Phong đã không giữ vật chứng — chỉ giữ trong đầu. Hình ảnh trong đầu sẽ mờ dần — vật chứng không có để xem lại.
+Đêm thứ mười bảy kết thúc. anh ấy cố giữ hình ảnh ảnh hai đứa cài cúc tai trong vườn bà ngoại Liên — kỉ niệm anh đã không giữ vật chứng — chỉ giữ trong đầu. Hình ảnh trong đầu sẽ mờ dần — vật chứng không có để xem lại.
 
-Khải Phong nhìn ra cửa sổ xe — đường khuya vắng — chỉ có đèn xe — không gió. Phía xa — vài ngọn đèn xóm — chưa ngủ. Đêm tháng tư — mưa đã ngớt — không khí ẩm — không lạnh buốt.
+Người khách nhìn ra cửa sổ xe — đường khuya vắng — chỉ có đèn xe — không gió. Phía xa — vài ngọn đèn xóm — chưa ngủ. Đêm tháng tư — mưa đã ngớt — không khí ẩm — không lạnh buốt.
 
-Khải Phong cảm giác — mỗi đêm Khải Phong đang dần đầy túi vật — và cũng dần đầy ký ức. Hai song song. Túi vật vật lý — ký ức tinh thần. Đến đêm cuối — túi sẽ đầy chín mươi vật — ký ức Khải Phong sẽ trở lại trọn vẹn.
+Người đàn ông cảm giác — mỗi đêm anh ấy đang dần đầy túi vật — và cũng dần đầy ký ức. Hai song song. Túi vật vật lý — ký ức tinh thần. Đến đêm cuối — túi sẽ đầy chín mươi vật — ký anh sẽ trở lại trọn vẹn. 

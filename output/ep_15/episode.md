@@ -124,7 +124,7 @@ Người đàn ông quay đầu lại. Đặt mảnh gương lên đùi. Hơi th
 
 "Tôi là Phong. Ba mươi mốt tuổi. Tôi ở Hoài Đức — quê. Tôi làm thợ điện tự do — Hà Nội."
 
-Giọng anh đều — bình tĩnh — không gấp — không thấp xuống.
+Giọng anh đều — bình tĩnh — không gấp — không thấp xuống dưới.
 
 "Mười năm trước — tôi hai mươi mốt tuổi — sinh viên năm cuối Đại học Công nghiệp. Tôi không thi đỗ Bách khoa năm đầu — phải xuống cao đẳng — sau đó liên thông lên đại học — học chậm hai năm so với bạn cùng tuổi."
 
@@ -154,7 +154,7 @@ Giọng anh đều — bình tĩnh — không gấp — không thấp xuống.
 
 [pause:1500ms]
 
-"Tôi sợ. Người con không sợ chết — tôi sợ không nhận ra chính mình. Tôi nghĩ: 'Nếu tôi chết bây giờ — người chết là ai? Người không phải tôi.'"
+"Tôi sợ. Người con không sợ chết — tôi sợ không nhận ra chính mình. Tôi đây đây nghĩ: 'Nếu tôi chết bây giờ — người chết là ai? Hình bóng người không phải tôi.'"
 
 "Tôi lấy điện thoại — gọi cấp cứu. Bệnh viện đến mười phút sau. Cứu kịp. Mất máu nhưng không nguy hiểm."
 
@@ -176,7 +176,7 @@ Giọng anh đều — bình tĩnh — không gấp — không thấp xuống.
 
 "Đôi khi đêm tôi vuốt mảnh gương — nhớ đêm đó — nhớ mình đã chọn gọi cấp cứu thay vì để máu chảy hết. Mảnh gương cứu tôi — không phải bác người — là chính tôi đã thấy mình không quen trong gương tan."
 
-"Đêm nay — đúng mười năm — tôi ba mươi mốt. Tôi vừa hoàn thành điều trị tâm lý — bác sĩ bảo: 'Em đã ổn. Em không cần thuốc nữa. Em đã đi qua.'"
+"Đêm nay — đúng mười năm — tôi ba mươi mốt. Tôi vừa hoàn thành điều trị tâm lý — bác sĩ bảo: 'Em đã ổn. Đứa em không cần thuốc nữa. Bóng người con gái ấy đã đi qua.'"
 
 Bác tài cất lời.
 
@@ -240,15 +240,15 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 Khải Phong ngồi. Mở túi — đếm — mười lăm vật. Hai vật cúc — và một vải bông gương tan. Vải bông không cùng cụm cúc. Diversify.
 
-Khải Phong ngẫm — Hạ Vy — cô có bao giờ định không sống không?
+Khải Phong ngẫm — cô ấy — cô có bao giờ định không sống không?
 
-Khải Phong cố nhớ. Hình ảnh Hạ Vy — vai gầy — áo trắng — bông cúc cài tai. Mặt vẫn mờ. Nhưng cảm giác — Hạ Vy không tự ý. Hạ Vy không định không sống. Hạ Vy — bị tai nạn? Hay khác?
+Khải Phong cố nhớ. Hình ảnh người yêu xưa — vai gầy — áo trắng — bông cúc cài tai. Mặt vẫn mờ. Nhưng cảm giác — cô gái ấy không tự ý. cô ấy không định không sống. người yêu xưa — bị tai nạn? Hay khác?
 
 Khải Phong nhói. Có một va đập — một âm thanh thật to — một mặt đường đêm — mưa.
 
 Khải Phong không thấy rõ ràng. Chỉ cảm giác.
 
-Hạ Vy đi đột ngột — không tự ý.
+Cô gái ấy đi đột ngột — không tự ý.
 
 Bác tài liếc gương. "Vào đêm mười lăm. Một phần ba phase warming đã qua. Đêm mười sáu sẽ có hành khách family thứ ba — không phải mẹ — không phải bố — là khác. Cứ giữ vật. Cụm sẽ rõ dần."
 
@@ -259,4 +259,4 @@ Khải Phong gật.
 
 [pause:800ms]
 
-Khải Phong ngồi. Vật vải bông cuốn gương — không cùng cụm cúc. Diversify cụm vật. Khải Phong cảm thấy — túi áo gió đang dần đầy — mỗi đêm thêm một vật — mỗi vật một câu chuyện không lặp lại.
+Khải Phong ngồi. Vật vải bông cuốn gương — không cùng cụm cúc. Diversify cụm vật. Khải Phong cảm thấy — túi áo gió đang dần đầy — mỗi đêm thêm một vật — mỗi vật một câu chuyện không lặp lại. 

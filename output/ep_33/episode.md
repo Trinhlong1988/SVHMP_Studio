@@ -146,7 +146,7 @@ Giọng cô đều — chậm.
 
 [pause:1500ms]
 
-"Hai năm trôi. Em bận. Cô gái không ra ngoài chơi. Em vẫn dạy. Em vẫn nhắc tin nhắn 'tháng sau em sẽ ra.'"
+"Hai năm trôi. Em bận. Người con gái gái không ra ngoài chơi. Hình bóng con gái ấy vẫn dạy. Cô ấy vẫn nhắc tin nhắn 'tháng sau em sẽ ra.'"
 
 "Năm hai nghìn không trăm hai mươi ba — em nhắn em: 'Hoài An ơi em được chẩn đoán ung thư cổ tử cung. Giai đoạn ba. Bác sĩ Thái Bình chuyển em lên Bệnh viện K Hà Nội điều trị.'"
 
@@ -254,4 +254,4 @@ Bác tài liếc gương. "Vào đêm ba mươi ba. Con đã nhớ Hạ Vy về 
 
 Khải Phong gật.
 
-Đêm thứ ba mươi ba — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Cát Linh khuất. Hoài An ở lại ga — đứng cạnh hộp lost items — vé tàu trong hộp.
+Đêm thứ ba mươi ba — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Cát Linh khuất. Hoài An ở lại ga — đứng cạnh hộp lost items — vé tàu trong hộp. 

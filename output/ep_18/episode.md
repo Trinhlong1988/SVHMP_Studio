@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R38
 
 Đêm thứ 18 trên chuyến xe — Khải Phong ngồi ghế thứ ba. Mưa tháng tư rỉ rả ngoài kính xe. Xe đi qua đoạn đường ven hồ Gươm, Hà Nội — hàng cây im bóng. Đèn pha quét lên mặt hồ — đèn vàng từ Tháp Rùa hắt xuống.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ mười tám — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — mười bảy vật. Đêm qua thêm mẩu nhãn USB.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười tám — anh đếm thêm. Trong túi áo gió người khách — mười bảy vật. Đêm qua thêm mẩu nhãn USB.
 
 Bác tài lái.
 
@@ -72,7 +72,7 @@ Xe lăn bánh.
 
 Cô gái khẽ ngồi yên lặng. Mở thư — không đọc — chỉ nhìn từng nét bút. Nét bút bi xanh — đậm — chữ nghiêng.
 
-Khải Phong quan sát. Cô trẻ — chừng hai mươi tám — mặt mộc — đôi mắt sưng nhẹ — đã khóc trước khi lên xe.
+Người đàn ông quan sát. Cô trẻ — chừng hai mươi tám — mặt mộc — đôi mắt sưng nhẹ — đã khóc trước khi lên xe.
 
 Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng. Tắt.
 
@@ -130,7 +130,7 @@ Giọng cô đều — đã quen kể.
 
 [pause:1200ms]
 
-"Mẹ bảo: 'Trang ơi mẹ không cho. Cháu này không hợp gia đình mình. Em yêu — mẹ không cấm — nhưng cưới — mẹ không đồng ý.'"
+"Mẹ bảo: 'Trang ơi mẹ không cho. Cháu này không hợp gia đình mình. Em yêu — mẹ không cấm — nhưng cưới — mẹ đồng ý.'"
 
 "Em cãi mẹ. Em nói: 'Mẹ không hiểu anh — anh hiền — anh thương con — anh có sự nghiệp tương lai — mẹ chỉ nhìn nguồn gốc.'"
 
@@ -150,13 +150,13 @@ Giọng cô đều — đã quen kể.
 
 [pause:1500ms]
 
-"Khải Phong bước đi. Em ngồi quán cà phê hai giờ — không đọc thư — chỉ giữ phong bì."
+"anh ấy bước đi. Em ngồi quán cà phê hai giờ — không đọc thư — chỉ giữ phong bì."
 
 "Em về nhà. Mẹ ôm em — biết bạn đã chia tay. Mẹ không nói gì."
 
 "Em không đọc thư anh trong một tháng. Cô gái sợ — không biết anh viết gì. Em sợ thư có lời trách em."
 
-"Một tháng sau — em đọc. Anh không trách. Người anh chỉ viết: 'Trang ơi cảm ơn em đã yêu anh hai năm. Anh không trách em chọn mẹ — em đúng. Anh sẽ về Hải Phòng — đi học cao học bên đó — quên Hà Nội. Em sống vui — lấy chồng tốt — sinh con khỏe. Khang.'"
+"Một tháng sau — em đọc. Anh không trách. Hình ảnh người anh chỉ viết: 'Trang ơi cảm ơn em đã yêu anh hai năm. Bóng người ấy không trách em chọn mẹ — em đúng. Hình bóng đàn ông sẽ về Hải Phòng — đi học cao học bên đó — quên Hà Nội. Hình bóng con gái ấy sống vui — lấy chồng tốt — sinh con khỏe. Khang.'"
 
 [pause:1500ms]
 
@@ -172,7 +172,7 @@ Giọng cô đều — đã quen kể.
 
 "Em quỳ bên quan tài. Cô gái xin lỗi anh — qua thân xác đã đi. Em không cứu được anh — em không cãi mẹ kịp lúc anh cần em."
 
-"Bảy năm em giữ thư anh. Bảy năm em không lấy chồng — không yêu ai. Mẹ em không ép em cưới — mẹ em hiểu — mẹ đã ép em chia tay — mẹ không thể ép em cưới ai khác."
+"Bảy năm em giữ thư anh. Bảy năm em không lấy chồng — không yêu ai. Mẹ em không ép em cưới — mẹ em hiểu — mẹ đã ép em chia tay — mẹ thể ép cưới ai khác."
 
 Bác tài cất lời.
 
@@ -184,7 +184,7 @@ Linh Trang gật. Lệ rơi xuống thư lần nữa.
 
 [pause:1200ms]
 
-"Đêm nay — em đem thư về phố Hàng Bài — đến quán cà phê Lâm — chính quán em ngồi đêm chia tay. Em sẽ đốt thư trên bàn quán — như tro tiễn anh. Em đã đủ bảy năm — em không cần thư nữa. Anh ở đâu đó — biết bạn đã thôi cầm thư."
+"Đêm nay — em đem thư về phố Hàng Bài — đến quán cà phê Lâm — chính quán em ngồi đêm chia tay. Em sẽ đốt thư trên bàn quán — như tro tiễn anh. Em ấy đã đủ bảy năm — em không cần thư nữa. Hình bóng đàn ông ở đâu đó — biết bạn đã thôi cầm thư."
 
 ---
 
@@ -214,9 +214,9 @@ Thư cháy hết rồi. Tro rơi xuống bàn.
 
 Cô gái từ từ đứng dậy.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ. Bên bàn cà phê — anh Khang xuất hiện — ngồi đối diện ghế cô vừa đứng dậy — vuốt tro thư. Mỉm cười.
+Anh chớp mắt — nhìn qua cửa sổ. Bên bàn cà phê — anh Khang xuất hiện — ngồi đối diện ghế cô vừa đứng dậy — vuốt tro thư. Mỉm cười.
 
-Khải Phong chớp lần nữa. Người tên Khang tan ra.
+Người khách chớp lần nữa. Người tên Khang tan ra.
 
 Linh Trang ra cửa quán. Không khóc.
 
@@ -228,7 +228,7 @@ Linh Trang ra cửa quán. Không khóc.
 
 Xe lăn bánh — rời ngã ba Hoàn Kiếm.
 
-Ghế mười một trống. Trên sàn — một mảnh tro nhỏ rơi (mảnh thư cháy còn dính phong bì khi cô đứng dậy). Khải Phong nhặt. Tro — đã nguội — mỏng.
+Ghế mười một trống. Trên sàn — một mảnh tro nhỏ rơi (mảnh thư cháy còn dính phong bì khi cô đứng dậy). người đàn ông nhặt. Tro — đã nguội — mỏng.
 
 Bỏ vào túi. Vật thứ mười tám.
 
@@ -236,41 +236,41 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Khải Phong ngồi. Tro thư trong túi — bên cạnh mười bảy vật.
+Anh ấy ngồi. Tro thư trong túi — bên cạnh mười bảy vật.
 
-Khải Phong ngẫm — Hạ Vy có viết thư cho Khải Phong không?
+Anh ngẫm — Hạ Vy có viết thư cho người khách không?
 
 Hình ảnh mờ — một quyển sổ tay nhỏ — màu xanh — chữ tay phụ cô gái — nét chữ nhỏ tròn.
 
-Khải Phong cảm thấy — có. Có một quyển sổ tay — chữ Hạ Vy — Khải Phong đã đọc — Khải Phong không nhớ Hà viết gì.
+Người đàn ông cảm thấy — có. Có một quyển sổ tay — chữ Hạ Vy — anh ấy đã đọc — anh không nhớ Hà viết gì.
 
 [pause:1500ms]
 
 Bác tài liếc gương. "Vào đêm mười tám. Con bắt đầu cảm thấy có một quyển sổ tay. Đêm sau con sẽ nhớ chữ trong sổ. Đừng vội."
 
-Khải Phong gật. Không hỏi.
+Người khách gật. Không hỏi.
 
-Đêm thứ mười tám — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Hoàn Kiếm khuất. Linh Trang ở lại quán — đứng ngoài cửa — nhìn vào bàn còn tro.
+Đêm thứ mười tám — người đàn ông đếm thêm. Xe đi tiếp. Phía sau — Hoàn Kiếm khuất. Linh Trang ở lại quán — đứng ngoài cửa — nhìn vào bàn còn tro.
 
 
 [pause:800ms]
 
-Khải Phong ngồi yên một lúc lâu. Một quyển sổ tay — chữ tay nhỏ tròn — Khải Phong cảm thấy quen. Hạ Vy có viết sổ tay không?
+Anh ấy ngồi yên một lúc lâu. Một quyển sổ tay — chữ tay nhỏ tròn — anh cảm thấy quen. Hạ Vy có viết sổ tay không?
 
 Hình ảnh — phòng trọ Khâm Thiên — Hạ Vy ngồi bàn vẽ ra — không phải đang vẽ ra — đang viết sổ. Hạ Vy có một quyển sổ tay nhỏ — bìa cứng xanh đậm — em viết mỗi tối trước khi ngủ.
 
-Khải Phong nhớ. Hạ Vy viết nhật ký. Anh viết về ngày anh vẽ bài gì — anh uống cà phê với ai — anh nghĩ gì.
+Người khách nhớ. Hạ Vy viết nhật ký. Anh viết về ngày anh vẽ bài gì — anh uống cà phê với ai — anh nghĩ gì.
 
-Khải Phong cố nhớ — anh có đọc sổ Hạ Vy không. Cảm giác — không. Khải Phong tôn trọng — anh không bao giờ mở sổ anh viết. Sổ Hạ Vy là riêng anh.
+Người đàn ông cố nhớ — anh có đọc sổ Hạ Vy không. Cảm giác — không. anh ấy tôn trọng — anh không bao giờ mở sổ anh viết. Sổ Hạ Vy là riêng anh.
 
-Sau Hạ Vy mất — sổ ở đâu? Khải Phong cố nhớ. Cảm giác — anh cất trong ngăn kéo bàn vẽ ra. Khải Phong dọn phòng — anh đem ngăn kéo bàn vẽ về quê Hải Phòng cùng quần áo anh — gửi bố mẹ Hạ Vy.
+Sau Hạ Vy mất — sổ ở đâu? anh cố nhớ. Cảm giác — anh cất trong ngăn kéo bàn vẽ ra. người khách dọn phòng — anh đem ngăn kéo bàn vẽ về quê Hải Phòng cùng quần áo anh — gửi bố mẹ Hạ Vy.
 
-Bố mẹ Hạ Vy có sổ. Khải Phong không có. Khải Phong không biết Hạ Vy viết gì những đêm cuối — không biết anh có viết về chuyện cưới không.
+Bố mẹ Hạ Vy có sổ. người đàn ông không có. anh ấy không biết Hạ Vy viết gì những đêm cuối — không biết anh có viết về chuyện cưới không.
 
-Khải Phong nhói. Đáng lẽ Khải Phong nên đọc sổ Hạ Vy — anh đã mất — anh không phiền. Khải Phong tôn trọng quá — đã làm Khải Phong mất một mảnh ký ức anh không thể bù.
+Anh nhói. Đáng lẽ người khách nên đọc sổ Hạ Vy — anh đã mất — anh không phiền. người đàn ông tôn trọng quá — đã làm anh ấy mất một mảnh ký ức anh không thể bù.
 
 Bác tài liếc gương. "Đêm sau con sẽ ngẫm tiếp về sổ tay Hạ Vy. Đừng vội."
 
-Khải Phong gật.
+Anh gật.
 
-Đêm thứ mười tám kết thúc. Khải Phong cảm thấy mỗi đêm nhớ thêm một điều — nhưng cũng phát hiện một điều mình đã không làm. Hai mặt: nhớ + hối tiếc — đi song song. Đêm sau sẽ có thêm passenger — Khải Phong sẽ nhớ thêm — và hối tiếc thêm. Cứ vậy đến đêm chín mươi.
+Đêm thứ mười tám kết thúc. người khách cảm thấy mỗi đêm nhớ thêm một điều — nhưng cũng phát hiện một điều mình đã không làm. Hai mặt: nhớ + hối tiếc — đi song song. Đêm sau sẽ có thêm passenger — người đàn ông sẽ nhớ thêm — và hối tiếc thêm. Cứ vậy đến đêm chín mươi. 

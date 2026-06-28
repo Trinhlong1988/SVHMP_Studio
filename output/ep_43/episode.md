@@ -118,7 +118,7 @@ Người đàn ông quay đầu lại. Vuốt giấy.
 
 [pause:1000ms]
 
-"Tôi là Văn Trường. Em năm mươi tuổi rồi. Tôi ở Bình Phước — quê. Tôi làm chủ vườn cao su — ba héc-ta."
+"Tôi là Văn Trường. Em năm mươi tuổi rồi. Người kể đây ở Bình Phước — quê. Hình ảnh người kể chuyện làm chủ vườn cao su — ba héc-ta."
 
 Giọng anh trầm.
 
@@ -140,7 +140,7 @@ Giọng anh trầm.
 
 "Hùng yêu Mai — cô bạn cùng lớp cấp ba. Hai đứa quen từ năm cuối cấp ba. Mai đợi em đi nghĩa vụ về — em sẽ cưới em."
 
-"Em hứa em đêm đó: 'Hùng ơi nếu em không kịp về — em sẽ chăm Mai thay em.' Em đùa — em không nghĩ em không về thật."
+"Em hứa em đêm đó: 'Hùng ơi nếu em không kịp về — em sẽ chăm Mai thay em.' Em đùa — em không nghĩ em về thật."
 
 "Hùng cười: 'Cảm ơn mày trước. Hai năm thôi — không lâu.'"
 
@@ -150,11 +150,11 @@ Giọng anh trầm.
 
 "Em đến tang em. Cô em quỳ bên quan tài em. Em nhớ lời hứa em đêm trước — về việc chăm Mai."
 
-"Sau tang em — em đến gặp Mai. Mai khóc — em ngồi nghe. Em không tỏ tình em với Mai — em chỉ là bạn em — em không thể yêu em ngay sau em mất."
+"Sau tang em — em đến gặp Mai. Mai khóc — em ngồi nghe. Em không tỏ tình em với Mai — em chỉ là bạn em — em thể yêu em ngay sau em mất."
 
 [pause:1500ms]
 
-"Một năm sau — Mai cưới người khác. Anh ấy ở xã bên cạnh. Em mừng cho Mai — em quyết em không can thiệp. Em không bao giờ giữ lời hứa em với Hùng về chăm Mai — vì Mai đã có người."
+"Một năm sau — Mai cưới người khác. Anh ấy ở xã bên cạnh. Đứa em mừng cho Mai — em quyết em không can thiệp. Bóng người con gái ấy không bao giờ giữ lời hứa em với Hùng về chăm Mai — vì Mai đã có người."
 
 "Hai mươi tám năm em ăn năn vì câu hứa em với Hùng đêm đó — câu hứa đùa em không kịp giữ lại. Em không lấy vợ — em không có lý do rõ ràng — chỉ là em sống một mình quê làm cao su."
 
@@ -170,7 +170,7 @@ Bác tài cất lời.
 
 Văn Trường gật.
 
-"Tôi nhớ. Em hứa em đêm trước em đi nghĩa vụ — chăm Mai. Người đàn ông không kịp giữ lại — Mai cưới khác. Em ăn năn hai mươi tám năm. Em không thể chuộc em — em chỉ có thể đem giấy em chưa nhận về đài tưởng niệm — coi em đã nhận giấy sau hai mươi tám năm."
+"Tôi nhớ. Em hứa em đêm trước em đi nghĩa vụ — chăm Mai. Hình bóng đàn ông không kịp giữ lại — Mai cưới khác. Em ấy ăn năn hai mươi tám năm. Đứa em không thể chuộc em — em chỉ có thể đem giấy em chưa nhận về đài tưởng niệm — coi em đã nhận giấy sau hai mươi tám năm."
 
 [pause:1200ms]
 
@@ -254,7 +254,7 @@ Bố mẹ em chắc đã già — em chưa hỏi thăm sức khỏe. Em sai. Em 
 
 Vào đêm bốn mươi ba.
 
-Khải Phong định — sáng — anh sẽ gọi điện bố mẹ Hạ Vy. Anh sẽ hỏi thăm — anh sẽ xin lỗi không liên lạc lâu. Người đàn ông không biết anh có gọi được không — anh đã đổi điện thoại ba lần — anh không lưu số. Anh sẽ tìm qua bạn chung — qua Facebook. Đêm thứ bốn mươi ba kết thúc.
+Khải Phong định — sáng — anh sẽ gọi điện bố mẹ Hạ Vy. Người khách sẽ hỏi thăm — anh sẽ xin lỗi không liên lạc lâu. Hình bóng đàn ông không biết anh có gọi được không — anh đã đổi điện thoại ba lần — anh không lưu số. Bóng anh tìm qua bạn chung — qua Facebook. Đêm thứ bốn mươi ba kết thúc.
 
 Khải Phong cố nhớ tên bố mẹ Hạ Vy. Bố anh — chú Phạm Văn Hà — sáu lăm tuổi bây giờ. Mẹ anh — cô Trần Thị Lan — sáu ba tuổi. Khải Phong đã gặp hai bác nhiều lần khi Hạ Vy còn sống.
 
@@ -262,6 +262,6 @@ Hai bác hiền. Sau Hạ Vy mất — hai bác giữ chuyện Khải Phong là 
 
 Khải Phong đã sai khi không liên lạc bốn năm gần. Anh không có lý do — chỉ ngại — sợ gặp hai bác sẽ nhớ Hạ Vy nhiều hơn.
 
-Đêm thứ bốn mươi ba — Khải Phong quyết. Anh sẽ tìm số bố mẹ Hạ Vy qua Hạ Nhi — anh gái Hạ Vy còn liên lạc Khải Phong. Hạ Nhi sẽ cho anh số bố mẹ. Anh sẽ gọi điện chú Hà — anh sẽ xin lỗi.
+Đêm thứ bốn mươi ba — Khải Phong quyết. Anh sẽ tìm số bố mẹ Hạ Vy qua Hạ Nhi — anh gái Hạ Vy còn liên lạc Khải Phong. Hạ Nhi sẽ cho anh số bố mẹ. Anh sẽ gọi điện chú Hà — anh xin lỗi.
 
-Trời đêm chưa sáng lên. Khải Phong còn thời gian suy nghĩ trên xe.
+Trời đêm chưa sáng lên. Khải Phong còn thời gian suy nghĩ trên xe. 

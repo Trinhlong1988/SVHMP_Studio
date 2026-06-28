@@ -150,7 +150,7 @@ Giọng anh trầm — chậm.
 
 "Tôi dậy bảy giờ. Người đàn ông ra phòng khách. Tôi thấy em — ngồi ghế gỗ mun — đầu gục về phía trước — kim đan còn trên tay — chăn đan dở trên đùi."
 
-"Tôi gọi: 'Nhung ơi.' Em không đáp. Tôi đến — vuốt vai em. Em không động. Tôi sờ cổ — không có mạch."
+"Tôi gọi: 'Nhung ơi.' Em không đáp. Tôi đến — vuốt vai em. Đứa em không động. Bóng người kể chuyện sờ cổ — không có mạch."
 
 "Tôi gọi cấp cứu. Bệnh viện đến mười phút sau. Bác sĩ xác định: đã ngừng tim một giờ — không cứu được."
 
@@ -168,7 +168,7 @@ Giọng anh trầm — chậm.
 
 "Tôi sẽ đặt chăn lên mộ em — gấp gọn — kim đan còn cắm — như chứng tích em đan đến phút cuối. Em không kịp xong chăn cho tôi — tôi không kịp đắp chăn em. Hai phía đều dở — phù hợp."
 
-"Tôi cũng không tổ chức kỷ niệm cưới mười năm. Em đi trước đúng kỷ niệm tròn — em mất ngày mười tháng tư — cưới em mười bốn tháng tư. Bốn ngày khoảng cách. Em đi trước kỷ niệm — không kịp tổ chức."
+"Tôi cũng không tổ chức kỷ niệm cưới mười năm. Em đi trước đúng kỷ niệm tròn — em mất ngày mười tháng tư — cưới em mười bốn tháng tư. Bốn ngày khoảng cách. Em đi trước kỷ — không kịp tổ chức."
 
 "Bảy năm — mỗi tháng tư — tôi không tổ chức gì. Tôi chỉ đến mộ em — đặt cúc — ngồi yên. Tôi không mời gia đình — không mời bạn — chỉ một mình."
 
@@ -180,7 +180,7 @@ Bác tài cất lời.
 
 Phan Tâm gật.
 
-"Tôi nhớ. Em mất đột ngột tháng tư — không ai biết em bệnh tim. Em đan chăn cho tôi đến phút cuối — không kịp xong. Tôi giữ chăn bảy năm — không đắp — vì chăn không phải của tôi — chưa được tặng đúng cách. Em đem chăn về với em — nơi chăn sinh ra."
+"Tôi nhớ. Em mất đột ngột tháng tư — không ai biết em bệnh tim. Cô ấy em đan chăn cho tôi đến phút cuối — không kịp xong. Hình ảnh người kể chuyện giữ chăn bảy năm — không đắp — vì chăn không phải của tôi — chưa được tặng đúng cách. Đứa em đem chăn về với em — nơi chăn sinh ra."
 
 [pause:1200ms]
 
@@ -246,7 +246,7 @@ Mẹ Hạ Vy. Mẹ Hạ Vy đến từ quê — bệnh viện gọi — bà từ
 
 [pause:1500ms]
 
-Bà đứng cạnh Khải Phong — không nói gì. Bà nhìn vào phòng cấp cứu qua kính. Bà cầm tay Khải Phong — tay bà run.
+Bà đứng cạnh Khải Phong — không nói gì. Bóng người bà nhìn vào phòng cấp cứu qua kính. Hình bóng phụ nữ già cụ ấy cụ ấy cụ cầm tay Khải Phong — tay bà run.
 
 Khải Phong nhớ — bà nói nhẹ: "Phong ơi cháu đợi mẹ Hạ Vy. Mẹ Hạ Vy cũng đang đến."
 
@@ -258,4 +258,4 @@ Bác tài liếc gương. "Vào đêm ba mươi hai. Con đã nhớ ai đứng c
 
 Khải Phong gật. Lệ rơi nhẹ nhàng.
 
-Đêm thứ ba mươi hai — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Bắc Giang khuất. Phan Tâm ở lại bên mộ — chăn đan dở trên bia.
+Đêm thứ ba mươi hai — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Bắc Giang khuất. Phan Tâm ở lại bên mộ — chăn đan dở trên bia. 

@@ -1,0 +1,251 @@
+{
+  "total": 24,
+  "eps": [
+    [
+      1,
+      1
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      7,
+      3
+    ],
+    [
+      8,
+      4
+    ],
+    [
+      9,
+      3
+    ],
+    [
+      10,
+      4
+    ],
+    [
+      12,
+      1
+    ],
+    [
+      25,
+      1
+    ],
+    [
+      26,
+      2
+    ],
+    [
+      30,
+      1
+    ],
+    [
+      31,
+      1
+    ],
+    [
+      40,
+      1
+    ],
+    [
+      50,
+      1
+    ]
+  ],
+  "violations": [
+    {
+      "type": "phrase_2gram_repeat",
+      "phrase": "0 30",
+      "count": 3,
+      "para_idx": 295,
+      "para_preview": "| Section | emo focus | New element |\n|---|---|---|\n| HOOK | surprised 0.40 + calm 0.30 | giữ |\n| SE",
+      "ep": 1
+    },
+    {
+      "type": "phrase_2gram_repeat",
+      "phrase": "viết Cháu",
+      "count": 3,
+      "para_idx": 20,
+      "para_preview": "Cô gái lật xấp phong bao. Có vài cái đã được viết tên. Chữ viết tay run run, mực hơi nhoè. Có cái vi",
+      "ep": 4
+    },
+    {
+      "type": "phrase_2gram_repeat",
+      "phrase": "lần Tách",
+      "count": 3,
+      "para_idx": 26,
+      "para_preview": "Đồng hồ trên xe — chiếc đồng hồ nhỏ — kim phút nhích một lần. Tách. Hai lần. Tách. Ba lần. Tách. Bốn",
+      "ep": 7
+    },
+    {
+      "type": "phrase_2gram_repeat",
+      "phrase": "Tách Tách",
+      "count": 3,
+      "para_idx": 82,
+      "para_preview": "Đồng hồ kim phút nhích bốn lần liền. Tách. Tách. Tách. Tách.",
+      "ep": 7
+    },
+    {
+      "type": "phrase_2gram_repeat",
+      "phrase": "phong bao",
+      "count": 3,
+      "para_idx": 92,
+      "para_preview": "Anh cầm phong bao lì xì đỏ — phong bao trống người khách vừa nhặt từ sàn. Phong bao mới. Chưa có tên",
+      "ep": 7
+    },
+    {
+      "type": "phrase_2gram_repeat",
+      "phrase": "tách tách",
+      "count": 4,
+      "para_idx": 28,
+      "para_preview": "Đồng hồ trên xe kim phút nhích — tách, tách, tách, tách, tách. Năm lần liên tiếp sau đó. anh ấy đếm.",
+      "ep": 8
+    },
+    {
+      "type": "phrase_3gram_repeat",
+      "phrase": "tách tách tách",
+      "count": 3,
+      "para_idx": 28,
+      "para_preview": "Đồng hồ trên xe kim phút nhích — tách, tách, tách, tách, tách. Năm lần liên tiếp sau đó. anh ấy đếm.",
+      "ep": 8
+    },
+    {
+      "type": "phrase_2gram_repeat",
+      "phrase": "Tách Tách",
+      "count": 4,
+      "para_idx": 92,
+      "para_preview": "Đồng hồ kim phút nhích năm lần liền. Tách. Tách. Tách. Tách. Tách.",
+      "ep": 8
+    },
+    {
+      "type": "phrase_3gram_repeat",
+      "phrase": "Tách Tách Tách",
+      "count": 3,
+      "para_idx": 92,
+      "para_preview": "Đồng hồ kim phút nhích năm lần liền. Tách. Tách. Tách. Tách. Tách.",
+      "ep": 8
+    },
+    {
+      "type": "phrase_2gram_repeat",
+      "phrase": "tách tách",
+      "count": 5,
+      "para_idx": 27,
+      "para_preview": "Đồng hồ trên xe nhích — tách, tách, tách, tách, tách, tách. Sáu lần liền sau. anh đếm. Đêm thứ chín ",
+      "ep": 9
+    },
+    {
+      "type": "phrase_3gram_repeat",
+      "phrase": "tách tách tách",
+      "count": 4,
+      "para_idx": 27,
+      "para_preview": "Đồng hồ trên xe nhích — tách, tách, tách, tách, tách, tách. Sáu lần liền sau. anh đếm. Đêm thứ chín ",
+      "ep": 9
+    },
+    {
+      "type": "phrase_2gram_repeat",
+      "phrase": "cụ cụ",
+      "count": 3,
+      "para_idx": 109,
+      "para_preview": "Đó là dấu vân tay phụ cô gái — nhỏ, mảnh. Có một vết sẹo nhỏ ở đầu ngón cái — vết hình lưỡi liềm. an",
+      "ep": 9
+    },
+    {
+      "type": "phrase_2gram_repeat",
+      "phrase": "tách tách",
+      "count": 6,
+      "para_idx": 32,
+      "para_preview": "Đồng hồ trên xe kim phút nhích — tách, tách, tách, tách, tách, tách, tách. Bảy lần liền sau. anh đếm",
+      "ep": 10
+    },
+    {
+      "type": "phrase_3gram_repeat",
+      "phrase": "tách tách tách",
+      "count": 5,
+      "para_idx": 32,
+      "para_preview": "Đồng hồ trên xe kim phút nhích — tách, tách, tách, tách, tách, tách, tách. Bảy lần liền sau. anh đếm",
+      "ep": 10
+    },
+    {
+      "type": "phrase_2gram_repeat",
+      "phrase": "tách tách",
+      "count": 7,
+      "para_idx": 103,
+      "para_preview": "Đồng hồ trên xe kim phút nhích — tách, tách, tách, tách, tách, tách, tách, tách. Tám lần liền sau.",
+      "ep": 10
+    },
+    {
+      "type": "phrase_3gram_repeat",
+      "phrase": "tách tách tách",
+      "count": 6,
+      "para_idx": 103,
+      "para_preview": "Đồng hồ trên xe kim phút nhích — tách, tách, tách, tách, tách, tách, tách, tách. Tám lần liền sau.",
+      "ep": 10
+    },
+    {
+      "type": "phrase_2gram_repeat",
+      "phrase": "đồng hồ",
+      "count": 3,
+      "para_idx": 90,
+      "para_preview": "Hai mảnh xà cừ — hai đêm — hai cô gái khác nhau. Nhưng đồng hồ kim phút đều dừng đúng bảy giờ mười p",
+      "ep": 12
+    },
+    {
+      "type": "phrase_2gram_repeat",
+      "phrase": "đàn ông",
+      "count": 3,
+      "para_idx": 96,
+      "para_preview": "\"Người đàn ông là người đàn ông à? Em ở bệnh viện Bạch Mai. Vợ anh — chị Hạ Vy — vừa được đưa vào cấ",
+      "ep": 25
+    },
+    {
+      "type": "phrase_2gram_repeat",
+      "phrase": "thước T",
+      "count": 3,
+      "para_idx": 64,
+      "para_preview": "\"Đêm nay — tôi đem bộ thước T về Hoài Đức — về văn phòng Hoài An đã đóng cửa — chính tòa nhà tôi vừa",
+      "ep": 26
+    },
+    {
+      "type": "phrase_2gram_repeat",
+      "phrase": "văn phòng",
+      "count": 3,
+      "para_idx": 64,
+      "para_preview": "\"Đêm nay — tôi đem bộ thước T về Hoài Đức — về văn phòng Hoài An đã đóng cửa — chính tòa nhà tôi vừa",
+      "ep": 26
+    },
+    {
+      "type": "phrase_2gram_repeat",
+      "phrase": "tốt nghiệp",
+      "count": 3,
+      "para_idx": 104,
+      "para_preview": "Anh tốt nghiệp THPT năm 2013 — bốn năm trước người khách Nguyễn. người đàn ông vào Đại học Kiến trúc",
+      "ep": 30
+    },
+    {
+      "type": "phrase_2gram_repeat",
+      "phrase": "tháng tư",
+      "count": 3,
+      "para_idx": 84,
+      "para_preview": "Tám năm. Hôm nay đêm tháng tư 2025. Mười hai tháng tư — gần đúng ngày. anh cố tính — đêm hôm nay là ",
+      "ep": 31
+    },
+    {
+      "type": "phrase_2gram_repeat",
+      "phrase": "riêng Cluster",
+      "count": 3,
+      "para_idx": 101,
+      "para_preview": "Người đàn ông cất bốn mươi vật vào túi — cẩn thận. Cluster cúc xếp riêng. Cluster gương xếp riêng. C",
+      "ep": 40
+    },
+    {
+      "type": "phrase_2gram_repeat",
+      "phrase": "mẹ em",
+      "count": 3,
+      "para_idx": 51,
+      "para_preview": "\"Cảm ơn anh. Bố mẹ em sẽ vui. Bố mẹ em hay nhắc anh — hai năm gần đây — em ăn cơm Tết với bố mẹ — em",
+      "ep": 50
+    }
+  ]
+}
