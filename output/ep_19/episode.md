@@ -54,13 +54,13 @@ arc_design_compliant: bible/21 R33-R38 + R36 callback EP14
 
 Đèn xe rọi vào sương. Đêm tháng tư miền Bắc. Chuyến xe đi qua đoạn đường ven sông Đuống, Đông Anh — hàng cây ven đường thấp thoáng trong sương. Đèn pha quét lên bãi mía dài bên đường.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ mười chín. Trong túi áo gió Khải Phong — mười tám vật. Đêm qua thêm mảnh tro thư.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười chín của hành trình. Trong túi áo gió Khải Phong — mười tám vật. Đêm qua thêm mảnh tro thư.
 
 Bác tài lái.
 
-Xe chậm lại trước một nghĩa trang xã đó — cổng gạch cũ đã đóng — đèn vàng hắt lên hàng từng chữ "Nghĩa trang Đông Hội". Một phụ nữ đứng đợi bên cổng. Khoảng năm mươi tuổi. Áo bà ba đen — vạt áo dài quá đầu gối. Hai tay cô ôm vòng hoa cúc lớn — hoa cúc vàng tươi — dày — to bằng vòng tay.
+Xe chậm lại trước một nghĩa trang xã đó — cổng gạch cũ đã đóng — đèn vàng hắt lên hàng nét bút "Nghĩa trang Đông Hội". Một phụ nữ đứng đợi bên cổng. Khoảng năm mươi tuổi. Áo bà ba đen — vạt áo dài quá đầu gối. Hai tay cô ôm vòng hoa cúc lớn — hoa cúc vàng tươi — dày — to bằng vòng tay.
 
-Cô bước lên xe. Đi qua hàng ghế đầu — ngồi xuống ghế thứ chín. Đặt vòng hoa lên đùi. Hai tay đỡ lấy — vòng quá lớn không đặt được hoàn toàn.
+Cô gái khẽ bước lên xe. Đi qua hàng ghế đầu — ngồi xuống ghế thứ chín. Đặt vòng hoa lên đùi. Hai tay đỡ lấy — vòng quá lớn không đặt được hoàn toàn.
 
 Khải Phong ghế ba nhìn — vòng hoa cúc vàng tươi — vật thứ tư trong cụm cúc.
 
@@ -72,7 +72,7 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Cô gái ngồi yên lặng. Đỡ vòng hoa. Hoa cúc tươi — vài cánh đã rụng xuống đùi.
+Cô gái khẽ ngồi yên lặng. Đỡ vòng hoa. Hoa cúc tươi — vài cánh đã rụng xuống đùi.
 
 Khải Phong quan sát. Cô năm mươi — tóc bạc một số sợi — mặt mệt — vẻ người đã đi xa đêm nay.
 
@@ -82,7 +82,7 @@ Khải Phong quan sát. Cô năm mươi — tóc bạc một số sợi — mặ
 
 Bác tài liếc gương. Không nói.
 
-Cô vuốt một cánh cúc. Nhẹ.
+Cô gái vuốt một cánh cúc. Nhẹ.
 
 ---
 
@@ -96,7 +96,7 @@ Cô ghế chín nhìn về phía đó. Mắt đỏ.
 
 "Mai..."
 
-Cô nói rất nhỏ.
+Cô gái nói rất nhỏ nhẹ.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
@@ -104,7 +104,7 @@ Cô nói rất nhỏ.
 
 Xe đi qua đó. Nhà mái ngói khuất.
 
-Cô gái quay đầu lại. Đỡ vòng hoa chặt hơn.
+Cô gái khẽ quay đầu lại. Đỡ vòng hoa chặt hơn.
 
 ---
 
@@ -112,7 +112,7 @@ Cô gái quay đầu lại. Đỡ vòng hoa chặt hơn.
 
 [pause:1000ms]
 
-"Em là Bích Hoa. Năm mươi tuổi. Em ở Đông Anh — quê. Em làm cán bộ xã đó."
+"Em là Bích Hoa. Cô gái năm mươi tuổi rồi. Em ở Đông Anh — quê. Em làm cán bộ xã đó."
 
 Giọng cô đều.
 
@@ -146,17 +146,17 @@ Giọng cô đều.
 
 "Em chạy đến nhà Mai. Mai nằm trên giường — gầy — mặt yên — đã đi sáng sớm — không có ai bên cạnh."
 
-"Em quỳ bên Mai. Em xin lỗi — qua thân xác đã đi. Em không đến tuần trước — Mai đi một mình — em không có mặt."
+"Em quỳ bên Mai. Cô gái xin lỗi — qua thân xác đã đi. Em không đến tuần trước — Mai đi một mình — em không có mặt."
 
 [pause:1500ms]
 
 "Tang Mai — em sắp xếp. Mai không có người thân — em là người duy nhất tổ chức."
 
-"Đêm tang Mai — em không đến đúng giờ. Em ngại. Em ngại nhìn Mai trong quan tài — em sợ cảm giác lỗi sẽ nặng hơn. Em đến muộn ba giờ — tang đã gần xong."
+"Đêm tang Mai — em không đến đúng giờ. Em ngại. Cô gái ngại nhìn Mai trong quan tài — em sợ cảm giác lỗi sẽ nặng hơn. Em đến muộn ba giờ — tang đã gần xong."
 
 "Bác hàng xóm cũ trông tang. Bác bảo: 'Hoa ơi sao cô đến muộn — Mai chỉ có cô bạn thân — cô đến muộn — Mai một mình suốt ba giờ trong tang.'"
 
-"Em sốc. Em không trả lời. Em ngồi xuống bên quan tài Mai. Quỳ cả đêm."
+"Em sốc. Cô gái không hề trả lời. Em ngồi xuống bên quan tài Mai. Quỳ cả đêm."
 
 [pause:1500ms]
 
@@ -170,9 +170,9 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Cô gái khẽ gật đầu. Mắt đỏ.
+Cô gái khẽ gật đầu một cái. Mắt đỏ.
 
-"Em nhớ. Em không đến với Mai tuần cuối — Mai đi một mình. Em đến tang muộn — Mai cô đơn trong tang. Em không sửa được — em chỉ có thể đem cúc mỗi tháng — đến mộ Mai — quỳ — xin lỗi."
+"Em nhớ. Cô gái không đến với Mai tuần cuối — Mai đi một mình. Em đến tang muộn — Mai cô đơn trong tang. Em không sửa được — em chỉ có thể đem cúc mỗi tháng — đến mộ Mai — quỳ — xin lỗi."
 
 [pause:1200ms]
 
@@ -186,7 +186,7 @@ Cô gái khẽ gật đầu. Mắt đỏ.
 
 Xe chậm lại. Ngã ba Đông Anh — cây nhãn lớn — bến không tên. Một tiếng chuông. Ngắn. Tan trong sương.
 
-Cô đỡ vòng cúc. Đứng dậy.
+Cô gái đỡ vòng hoa cúc. Đứng dậy.
 
 "Chào anh."
 
@@ -194,17 +194,17 @@ Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim
 
 Bác tài: "Chưa tới lúc."
 
-Cô bước xuống dưới.
+Cô gái bước xuống dưới đường.
 
 [pause:1200ms]
 
 Bên ngoài — Bích Hoa đi vào nghĩa trang xã đó — đã mở cổng. Đèn nến cháy bên trong. Phía cuối — mộ Mai — bia đá xám — ảnh Mai mặc áo bà ba xanh.
 
-Cô đến. Quỳ. Đặt vòng cúc trên mộ. Cánh cúc vàng phủ kín bia. Cúi đầu.
+Cô gái đến nơi đó rồi. Quỳ. Đặt vòng cúc trên mộ. Cánh cúc vàng phủ kín bia. Cúi đầu.
 
 Khải Phong chớp mắt — nhìn qua cửa sổ. Bên mộ — Mai xuất hiện — mặc áo bà ba xanh — tóc cài bông cúc vàng — vuốt tay Hoa. Mỉm cười.
 
-Khải Phong chớp lần nữa. Mai tan ra.
+Khải Phong chớp lần nữa. Người tên Mai tan ra.
 
 Bích Hoa ngẩng đầu. Khóc nhẹ nhàng. Quỳ thêm.
 
@@ -240,16 +240,16 @@ Hạ Vy cài cúc lên tai. Khải Phong biết — chắc chắn. Hồi Hà cò
 
 [pause:1500ms]
 
-Bác tài liếc gương. "Đêm mười chín. Cụm cúc đủ bốn. Đêm mai — đêm hai mươi — con sẽ ngẫm rõ vì sao bốn vật rời rạc cùng có cúc. Cứ giữ lại."
+Bác tài liếc gương. "Vào đêm mười chín. Cụm cúc đủ bốn. Đêm mai — đêm hai mươi — con sẽ ngẫm rõ vì sao bốn vật rời rạc cùng có cúc. Cứ giữ lại."
 
 Khải Phong gật. Không hỏi.
 
-Đêm thứ mười chín. Xe đi tiếp. Phía sau — Đông Anh khuất. Bích Hoa ở lại bên mộ — quỳ — không vội đi xa.
+Đêm thứ mười chín của hành trình. Xe đi tiếp. Phía sau — Đông Anh khuất. Bích Hoa ở lại bên mộ — quỳ — không vội đi xa.
 
 
 [pause:800ms]
 
-Khải Phong ngồi yên. Bốn vật cúc đã đủ. Bác tài hứa từ đêm mười ba — bốn vật cúc thành cluster. Đêm này hoàn thành.
+Khải Phong ngồi yên. Bốn vật cúc đã đủ. Bác tài hứa từ đêm mười ba — bốn vật cúc thành cluster. Đêm hôm nay đã hoàn thành.
 
 Khải Phong cố nhớ thêm. Hạ Vy cài cúc tai — Hạ Vy thích cúc — Hạ Vy có sổ tay viết nhật ký. Mỗi đêm Khải Phong nhớ thêm một chi tiết.
 
@@ -257,7 +257,7 @@ Khải Phong cố nhớ thêm. Hạ Vy cài cúc tai — Hạ Vy thích cúc —
 
 Khải Phong cảm thấy — bác tài đang dẫn Khải Phong từng bước. Mỗi đêm một mảnh. Không vội. Không ép. Bác tài để Khải Phong tự nhớ — không kể trực tiếp.
 
-Đêm thứ mười chín. Còn bảy mươi mốt đêm nữa — nếu chuyến xe có chín mươi đêm như bác tài ám chỉ. Khải Phong không biết mục đích cuối — chỉ biết mỗi đêm Khải Phong đang gần hơn với Hạ Vy — không phải vật lý — là ký ức.
+Đêm thứ mười chín của hành trình. Còn bảy mươi mốt đêm nữa — nếu chuyến xe có chín mươi đêm như bác tài ám chỉ. Khải Phong không biết mục đích cuối — chỉ biết mỗi đêm Khải Phong đang gần hơn với Hạ Vy — không phải vật lý — là ký ức.
 
 Bác tài liếc gương — không nói. Chỉ chậm nhịp ngón trỏ ba cái — như đồng cảm.
 

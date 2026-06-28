@@ -54,13 +54,13 @@ arc_design_compliant: bible/21 R33-R38
 
 Đêm thứ 18 trên chuyến xe — Khải Phong ngồi ghế thứ ba. Mưa tháng tư rỉ rả ngoài kính xe. Xe đi qua đoạn đường ven hồ Gươm, Hà Nội — hàng cây im bóng. Đèn pha quét lên mặt hồ — đèn vàng từ Tháp Rùa hắt xuống.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ mười tám. Trong túi áo gió Khải Phong — mười bảy vật. Đêm qua thêm mẩu nhãn USB.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười tám của hành trình. Trong túi áo gió Khải Phong — mười bảy vật. Đêm qua thêm mẩu nhãn USB.
 
 Bác tài lái.
 
-Xe chậm lại trước một quán cà phê cũ phố Hàng Bài — đèn vàng còn sáng — biển "Cà phê Lâm" đã mòn nét chữ. Một phụ nữ trẻ đứng đợi. Khoảng hai mươi tám tuổi. Áo dạ xám — váy đen ngắn. Tay phải cầm phong bì kraft xưa.
+Xe chậm lại trước một quán cà phê cũ phố Hàng Bài — đèn vàng còn sáng — biển "Cà phê Lâm" đã mòn nét bút. Một phụ nữ trẻ đứng đợi. Khoảng hai mươi tám tuổi. Áo dạ xám — váy đen ngắn. Tay phải cầm phong bì kraft xưa.
 
-Cô vào xe. Đi qua mấy hàng ghế trước — ngồi xuống ghế thứ mười một. Đặt phong bì lên đùi. Mở. Lấy ra một bức thư tay — giấy đã ố vàng — gấp tư.
+Cô gái khẽ vào trong xe. Đi qua mấy hàng ghế trước — ngồi xuống ghế thứ mười một. Đặt phong bì lên đùi. Mở. Lấy ra một bức thư tay — giấy đã ố vàng — gấp tư.
 
 Xe lăn bánh.
 
@@ -70,7 +70,7 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Cô gái ngồi yên lặng. Mở thư — không đọc — chỉ nhìn nét nét chữ. Nét bút bi xanh — đậm — chữ nghiêng.
+Cô gái khẽ ngồi yên lặng. Mở thư — không đọc — chỉ nhìn từng nét bút. Nét bút bi xanh — đậm — chữ nghiêng.
 
 Khải Phong quan sát. Cô trẻ — chừng hai mươi tám — mặt mộc — đôi mắt sưng nhẹ — đã khóc trước khi lên xe.
 
@@ -94,7 +94,7 @@ Cô ghế mười một nhìn về phía đó. Lệ rơi xuống thư.
 
 "Khang..."
 
-Cô nói rất nhỏ.
+Cô gái nói rất nhỏ nhẹ.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
@@ -102,7 +102,7 @@ Cô nói rất nhỏ.
 
 Xe đi qua đó. Cửa sổ khuất. Bóng thanh niên khuất.
 
-Cô gái quay đầu lại. Lau lệ trên thư bằng ngón tay. Vuốt chỗ ướt sũng.
+Cô gái khẽ quay đầu lại. Lau lệ trên thư bằng ngón tay. Vuốt chỗ ướt sũng.
 
 ---
 
@@ -116,7 +116,7 @@ Giọng cô đều — đã quen kể.
 
 "Năm em hai mươi mốt — em sinh viên năm cuối ngoại lời — em yêu anh Khang. Anh hơn em hai tuổi — học bách khoa — quê Hải Phòng — không phải Hà Nội."
 
-"Em và anh quen qua câu lạc bộ ghi-ta đại học. Anh chơi ghi-ta tốt. Em hát. Hai đứa em luyện chung — biểu diễn chung — sau buổi tập đi cà phê — yêu nhau ba tháng sau."
+"Em và anh quen qua câu lạc bộ ghi-ta đại học. Anh ấy chơi đàn ghi-ta rất tốt. Em hát. Hai đứa em luyện chung — biểu diễn chung — sau buổi tập đi cà phê — yêu nhau ba tháng sau."
 
 [pause:800ms]
 
@@ -126,7 +126,7 @@ Giọng cô đều — đã quen kể.
 
 "Anh đáp thật: 'Quê Hải Phòng. Bố nông dân. Mẹ giáo viên cấp hai. Không có nhà Hà Nội — em đang ở trọ phòng nhỏ.'"
 
-"Mẹ em im. Pha trà. Đợi anh đi — gọi em vào phòng."
+"Mẹ em im lặng. Pha trà. Đợi anh đi — gọi em vào phòng."
 
 [pause:1200ms]
 
@@ -144,7 +144,7 @@ Giọng cô đều — đã quen kể.
 
 "Em hẹn anh ra quán cà phê Lâm — phố Hàng Bài — chính quán em vừa bước lên xe đêm nay. Em nói thật với anh."
 
-"Anh nghe — im một lúc — không khóc. Rồi anh bảo: 'Trang ơi em chọn mẹ. Anh không muốn em mất gia đình vì anh. Anh sẽ chia tay em.'"
+"Anh nghe — im một lúc — không khóc. Rồi anh bảo: 'Trang ơi em chọn mẹ. Anh không muốn em mất gia đình vì anh. Anh ấy sẽ chia tay em.'"
 
 "Em không nói lại. Em im lặng yên. Anh đứng dậy — đi ra cửa. Trước khi đi — anh quay lại — đặt phong bì lên bàn. 'Anh viết thư cho em — tối qua ở đó. Em đọc khi nào em sẵn sàng.'"
 
@@ -154,9 +154,9 @@ Giọng cô đều — đã quen kể.
 
 "Em về nhà. Mẹ ôm em — biết bạn đã chia tay. Mẹ không nói gì."
 
-"Em không đọc thư anh trong một tháng. Em sợ — không biết anh viết gì. Em sợ thư có lời trách em."
+"Em không đọc thư anh trong một tháng. Cô gái sợ — không biết anh viết gì. Em sợ thư có lời trách em."
 
-"Một tháng sau — em đọc. Anh không trách. Anh chỉ viết: 'Trang ơi cảm ơn em đã yêu anh hai năm. Anh không trách em chọn mẹ — em đúng. Anh sẽ về Hải Phòng — đi học cao học bên đó — quên Hà Nội. Em sống vui — lấy chồng tốt — sinh con khỏe. Khang.'"
+"Một tháng sau — em đọc. Anh không trách. Người anh chỉ viết: 'Trang ơi cảm ơn em đã yêu anh hai năm. Anh không trách em chọn mẹ — em đúng. Anh sẽ về Hải Phòng — đi học cao học bên đó — quên Hà Nội. Em sống vui — lấy chồng tốt — sinh con khỏe. Khang.'"
 
 [pause:1500ms]
 
@@ -164,13 +164,13 @@ Giọng cô đều — đã quen kể.
 
 "Hai tháng sau — em nhận điện thoại bạn cùng câu lạc bộ ghi-ta. Bạn bảo: 'Trang ơi Khang tự tử. Treo cổ trong phòng trọ Hải Phòng. Bố mẹ Khang phát hiện sáng nay.'"
 
-"Em sốc. Em không tin. Em đi Hải Phòng — đến nhà tang. Bố mẹ Khang nhìn em — biết em là người yêu — không trách — chỉ buồn."
+"Em sốc. Cô gái không tin nổi điều đó. Em đi Hải Phòng — đến nhà tang. Bố mẹ Khang nhìn em — biết em là người yêu — không trách — chỉ buồn."
 
 "Mẹ Khang bảo: 'Khang về Hải Phòng tháng trước — không nói lý do. Khang im suốt — không ăn — không ngủ. Cô không biết Khang đau như vậy. Cô không cứu được con cô.'"
 
 [pause:1200ms]
 
-"Em quỳ bên quan tài. Em xin lỗi anh — qua thân xác đã đi. Em không cứu được anh — em không cãi mẹ kịp lúc anh cần em."
+"Em quỳ bên quan tài. Cô gái xin lỗi anh — qua thân xác đã đi. Em không cứu được anh — em không cãi mẹ kịp lúc anh cần em."
 
 "Bảy năm em giữ thư anh. Bảy năm em không lấy chồng — không yêu ai. Mẹ em không ép em cưới — mẹ em hiểu — mẹ đã ép em chia tay — mẹ không thể ép em cưới ai khác."
 
@@ -180,7 +180,7 @@ Bác tài cất lời.
 
 Linh Trang gật. Lệ rơi xuống thư lần nữa.
 
-"Em nhớ. Em chia tay anh Khang vì mẹ — em chọn mẹ — em không cứu được anh khi anh tự tử. Em giữ thư bảy năm — vì thư là câu cuối anh nói với em — anh không trách em — nhưng em trách em."
+"Em nhớ. Cô gái chia tay anh Khang vì mẹ — em chọn mẹ — em không cứu được anh khi anh tự tử. Em giữ thư bảy năm — vì thư là câu cuối anh nói với em — anh không trách em — nhưng em trách em."
 
 [pause:1200ms]
 
@@ -194,7 +194,7 @@ Linh Trang gật. Lệ rơi xuống thư lần nữa.
 
 Xe chậm lại. Ngã ba Hoàn Kiếm — cây phượng già — bến không tên. Chuông xe rung nhẹ. Vang một nhịp. Tan.
 
-Cô gấp thư. Đặt vào phong bì. Đứng dậy.
+Cô gái gấp lá thư lại. Đặt vào phong bì. Đứng dậy.
 
 "Chào anh."
 
@@ -202,13 +202,13 @@ Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim
 
 Bác tài: "Chưa tới lúc."
 
-Cô bước xuống dưới.
+Cô gái bước xuống dưới đường.
 
 [pause:1200ms]
 
 Bên ngoài — Linh Trang đi vào quán cà phê Lâm — quán còn mở — đèn vàng. Cô ngồi xuống bàn — chính bàn cô và anh Khang ngồi bảy năm trước.
 
-Cô lấy thư ra. Lấy bật lửa. Đốt góc thư. Lửa cháy chậm — giấy ố vàng — cháy đẹp.
+Cô gái lấy lá thư ra ngoài. Lấy bật lửa. Đốt góc thư. Lửa cháy chậm — giấy ố vàng — cháy đẹp.
 
 Thư cháy hết rồi. Tro rơi xuống bàn.
 
@@ -216,7 +216,7 @@ Cô gái từ từ đứng dậy.
 
 Khải Phong chớp mắt — nhìn qua cửa sổ. Bên bàn cà phê — anh Khang xuất hiện — ngồi đối diện ghế cô vừa đứng dậy — vuốt tro thư. Mỉm cười.
 
-Khải Phong chớp lần nữa. Khang tan ra.
+Khải Phong chớp lần nữa. Người tên Khang tan ra.
 
 Linh Trang ra cửa quán. Không khóc.
 
@@ -246,11 +246,11 @@ Khải Phong cảm thấy — có. Có một quyển sổ tay — chữ Hạ Vy 
 
 [pause:1500ms]
 
-Bác tài liếc gương. "Đêm mười tám. Con bắt đầu cảm thấy có một quyển sổ tay. Đêm sau con sẽ nhớ chữ trong sổ. Đừng vội."
+Bác tài liếc gương. "Vào đêm mười tám. Con bắt đầu cảm thấy có một quyển sổ tay. Đêm sau con sẽ nhớ chữ trong sổ. Đừng vội."
 
 Khải Phong gật. Không hỏi.
 
-Đêm thứ mười tám. Xe đi tiếp. Phía sau — Hoàn Kiếm khuất. Linh Trang ở lại quán — đứng ngoài cửa — nhìn vào bàn còn tro.
+Đêm thứ mười tám của hành trình. Xe đi tiếp. Phía sau — Hoàn Kiếm khuất. Linh Trang ở lại quán — đứng ngoài cửa — nhìn vào bàn còn tro.
 
 
 [pause:800ms]

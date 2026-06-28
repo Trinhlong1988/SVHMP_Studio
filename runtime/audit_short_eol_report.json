@@ -1,26 +1,6 @@
 {
-  "total": 33,
+  "total": 26,
   "eps": [
-    [
-      16,
-      2
-    ],
-    [
-      17,
-      1
-    ],
-    [
-      18,
-      2
-    ],
-    [
-      19,
-      1
-    ],
-    [
-      20,
-      1
-    ],
     [
       21,
       1
@@ -107,62 +87,6 @@
     ]
   ],
   "violations": [
-    {
-      "line": 187,
-      "word": "ra",
-      "context": "Khải Phong chớp lần nữa. Mẹ tan ra.",
-      "sentence_words": 3,
-      "severity": "HIGH",
-      "ep": 16
-    },
-    {
-      "line": 189,
-      "word": "nhỏ",
-      "context": "mắt bằng tay áo dài. Quỳ thêm. Tụng rất nhỏ.",
-      "sentence_words": 3,
-      "severity": "HIGH",
-      "ep": 16
-    },
-    {
-      "line": 197,
-      "word": "ra",
-      "context": "Khải Phong chớp lần nữa. Toàn tan ra.",
-      "sentence_words": 3,
-      "severity": "HIGH",
-      "ep": 17
-    },
-    {
-      "line": 111,
-      "word": "im",
-      "context": "\"Mẹ em im. Pha",
-      "sentence_words": 3,
-      "severity": "HIGH",
-      "ep": 18
-    },
-    {
-      "line": 201,
-      "word": "ra",
-      "context": "Khải Phong chớp lần nữa. Khang tan ra.",
-      "sentence_words": 3,
-      "severity": "HIGH",
-      "ep": 18
-    },
-    {
-      "line": 189,
-      "word": "ra",
-      "context": "Khải Phong chớp lần nữa. Mai tan ra.",
-      "sentence_words": 3,
-      "severity": "HIGH",
-      "ep": 19
-    },
-    {
-      "line": 207,
-      "word": "ra",
-      "context": "Khải Phong chớp lần nữa. Hoài tan ra.",
-      "sentence_words": 3,
-      "severity": "HIGH",
-      "ep": 20
-    },
     {
       "line": 155,
       "word": "im",

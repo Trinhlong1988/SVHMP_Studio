@@ -1,22 +1,6 @@
 {
-  "total_violations": 25,
+  "total_violations": 17,
   "eps_with_issues": [
-    [
-      17,
-      2
-    ],
-    [
-      18,
-      2
-    ],
-    [
-      19,
-      1
-    ],
-    [
-      20,
-      3
-    ],
     [
       21,
       2
@@ -55,62 +39,6 @@
     ]
   ],
   "violations": [
-    {
-      "line": 119,
-      "word": "lỡ",
-      "context": "ty. Tôi không nghe. Cuộc gọi lỡ.\"",
-      "severity": "HIGH",
-      "ep": 17
-    },
-    {
-      "line": 221,
-      "word": "lỡ",
-      "context": "— một tin nhắn — một cuộc gọi lỡ — một tiếng chuông đ",
-      "severity": "HIGH",
-      "ep": 17
-    },
-    {
-      "line": 43,
-      "word": "chữ",
-      "context": "biển \"Cà phê Lâm\" đã mòn nét chữ. Một phụ nữ trẻ đứn",
-      "severity": "HIGH",
-      "ep": 18
-    },
-    {
-      "line": 55,
-      "word": "chữ",
-      "context": "không đọc — chỉ nhìn nét nét chữ. Nét bút bi xanh —",
-      "severity": "HIGH",
-      "ep": 18
-    },
-    {
-      "line": 43,
-      "word": "chữ",
-      "context": "— đèn vàng hắt lên hàng từng chữ \"Nghĩa trang Đông Hộ",
-      "severity": "HIGH",
-      "ep": 19
-    },
-    {
-      "line": 205,
-      "word": "ngõ",
-      "context": "ớp mắt — nhìn qua cửa sổ. Bên ngõ — Hoài xuất hiện — m",
-      "severity": "HIGH",
-      "ep": 20
-    },
-    {
-      "line": 209,
-      "word": "ngõ",
-      "context": "Nhật Minh quay lại — đi xuống ngõ. Không nhìn lại.",
-      "severity": "HIGH",
-      "ep": 20
-    },
-    {
-      "line": 276,
-      "word": "lỡ",
-      "context": "ràng. Còn cuộc gọi Khải Phong lỡ — chưa nhớ.",
-      "severity": "HIGH",
-      "ep": 20
-    },
     {
       "line": 45,
       "word": "chữ",

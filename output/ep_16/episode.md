@@ -52,9 +52,9 @@ arc_design_compliant: bible/21 R33-R38
 
 [pause:800ms]
 
-Hà Nội cuối tháng tư. Đêm. Chuyến xe đi qua đoạn ven đường ven cánh đồng lúa Phú Xu, Hà Nội. Đèn pha rọi lên hàng cây — ánh đèn vàng cô đơn.
+Hà Nội cuối tháng tư. Trời đã về đêm. Chuyến xe đi qua đoạn ven đường ven cánh đồng lúa Phú Xu, Hà Nội. Đèn pha rọi lên hàng cây — ánh đèn vàng cô đơn.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ mười sáu. Trong túi áo gió Khải Phong — mười lăm vật. Đêm qua thêm vải bông cuốn gương tan.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười sáu của hành trình. Trong túi áo gió Khải Phong — mười lăm vật. Đêm qua thêm vải bông cuốn gương tan.
 
 Bác tài lái. Đoạn đường này Khải Phong chưa đi — Phú Xuyên ngoại thành phía Nam Hà Nội.
 
@@ -62,7 +62,7 @@ Xe chậm lại trước một sân chùa nhỏ — cổng tam quan đã đóng 
 
 Một phụ nữ đứng đợi bên cổng. Khoảng ba mươi tám tuổi. Áo dài nâu — vạt áo dài quá đầu gối. Tay phải ôm chậu cúc nhỏ — đường kính bàn tay — chậu sứ trắng — cúc đã ra hoa vàng nhạt.
 
-Cô lên xe. Đi xuống lối giữa — ngồi xuống ghế thứ mười. Đặt chậu cúc lên đùi. Hai bàn tay đỡ chậu — không buông.
+Cô gái khẽ lên xe ấy. Đi xuống lối giữa — ngồi xuống ghế thứ mười. Đặt chậu cúc lên đùi. Hai bàn tay đỡ chậu — không buông.
 
 Xe lăn bánh.
 
@@ -72,7 +72,7 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Cô gái ngồi yên lặng. Đỡ chậu cúc. Cánh hoa vàng nhạt — không phải cúc khô — cúc tươi mới hái.
+Cô gái khẽ ngồi yên lặng. Đỡ chậu cúc. Cánh hoa vàng nhạt — không phải cúc khô — cúc tươi mới hái.
 
 Khải Phong quan sát từ ghế ba. Cúc trong chậu cô đỡ lấy — màu vàng nhạt — giống cánh cúc khô đêm thứ mười ba — giống chỉ thêu đêm thứ mười bốn. Cùng cúc — vật thứ ba trong cụm.
 
@@ -96,15 +96,15 @@ Cô ghế mười nhìn về phía đó. Mắt cô đỏ — không khóc — ch
 
 "Mẹ..."
 
-Cô nói rất nhỏ.
+Cô gái nói rất nhỏ nhẹ.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
 [pause:1000ms]
 
-Xe đi qua đó. Nhà mái ngói khuất. Bà cụ khuất.
+Xe đi qua đó. Nhà mái ngói khuất. Bóng bà cụ khuất.
 
-Cô gái quay đầu lại. Đỡ chậu cúc chặt hơn. Hơi thở chậm lại.
+Cô gái khẽ quay đầu lại. Đỡ chậu cúc chặt hơn. Hơi thở chậm lại.
 
 ---
 
@@ -130,7 +130,7 @@ Giọng cô đều — chậm.
 
 [pause:1200ms]
 
-"Em cãi mẹ. Em lớn tiếng — chuyện đầu tiên trong đời em cãi mẹ. Em nói: 'Mẹ không hiểu — anh hiền — anh thương em. Mẹ nhìn vẻ ngoài — mẹ định kiến.'"
+"Em cãi mẹ. Cô con gái lớn tiếng — chuyện đầu tiên trong đời em cãi mẹ. Em nói: 'Mẹ không hiểu — anh hiền — anh thương em. Mẹ nhìn vẻ ngoài — mẹ định kiến.'"
 
 "Mẹ không nói tiếp. Mẹ đứng dậy — vào phòng — đóng cửa."
 
@@ -138,7 +138,7 @@ Giọng cô đều — chậm.
 
 [pause:1500ms]
 
-"Một tháng sau cãi nhau — em nhận điện thoại bố. Năm giờ sáng lên. Bố khóc: 'Yến ơi mẹ...' Bố không nói hết."
+"Một tháng sau cãi nhau — em nhận điện thoại bố. Vào lúc năm giờ sáng dần lên. Bố khóc: 'Yến ơi mẹ...' Bố không nói hết."
 
 "Em chạy về. Mẹ nằm trong sân — bên chậu cúc — bình nước đổ. Bố bảo: 'Mẹ ra tưới cúc sáng sớm — gục — không kịp gọi.'"
 
@@ -148,9 +148,9 @@ Giọng cô đều — chậm.
 
 [pause:1500ms]
 
-"Sau tang mẹ — em không cưới anh Hùng. Em chia tay anh hai tháng sau. Em không vì giận anh — em vì giận mình. Em không thể bắt đầu hôn nhân bằng cái chết của mẹ."
+"Sau tang mẹ — em không cưới anh Hùng. Em chia tay anh hai tháng sau. Cô gái không vì giận anh — em vì giận mình. Em không thể bắt đầu hôn nhân bằng cái chết của mẹ."
 
-"Anh Hùng hiểu. Anh không trách. Bốn năm sau anh cưới người khác — em mừng cho anh."
+"Người anh Hùng hiểu. Anh không trách. Bốn năm sau anh cưới người khác — em mừng cho anh."
 
 "Em cưới năm em hai mươi tám — chồng em là bạn cấp ba — gia đình ở Hà Đông — mẹ em hồi sống có gặp — mẹ đã từng khen."
 
@@ -168,7 +168,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Cô gái khẽ gật đầu. Mắt đỏ.
+Cô gái khẽ gật đầu một cái. Mắt đỏ.
 
 "Em nhớ. Em cãi mẹ năm hai mươi — mẹ trồng chậu cúc này tháng sau — mẹ trồng vì mẹ buồn em không về. Chậu này có lẽ chứa nỗi buồn mẹ. Em chăm tám tháng — như xin lỗi mẹ qua đất qua nước qua cánh hoa."
 
@@ -184,7 +184,7 @@ Cô gái khẽ gật đầu. Mắt đỏ.
 
 Xe chậm lại. Ngã ba Phú Xuyên — cây bồ đề già — bến không tên. Chuông xe ngân. Một tiếng. Tan.
 
-Cô ôm chậu cúc. Đứng dậy.
+Cô gái ôm chậu cúc khô. Đứng dậy.
 
 "Chào anh."
 
@@ -192,19 +192,19 @@ Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim
 
 Bác tài: "Chưa tới lúc."
 
-Cô bước xuống dưới.
+Cô gái bước xuống dưới đường.
 
 [pause:1200ms]
 
 Bên ngoài — cô đi vào chùa Phú Đường — cổng tam quan đã mở. Đèn nến cháy bên trong. Chánh điện — tượng Phật bà — bệ đá.
 
-Cô đến. Đặt chậu cúc trước bệ. Quỳ. Cúi đầu. Tay chắp.
+Cô gái đến nơi đó rồi. Đặt chậu cúc trước bệ. Quỳ. Cúi đầu. Tay chắp.
 
 Khải Phong chớp mắt — nhìn qua cửa sổ. Bên chậu cúc — bà mẹ xuất hiện — mặc áo bà ba xám — tay cầm bình nước — vuốt tóc cô Hoàng Yến một lần. Mỉm cười.
 
-Khải Phong chớp lần nữa. Mẹ tan ra.
+Khải Phong chớp lần nữa. Người mẹ ấy tan ra.
 
-Hoàng Yến ngẩng đầu. Lau khóe mắt bằng tay áo dài. Quỳ thêm. Tụng rất nhỏ.
+Hoàng Yến ngẩng đầu. Lau khóe mắt bằng tay áo dài. Quỳ thêm. Tụng rất khẽ khàng.
 
 [pause:1500ms]
 
@@ -238,11 +238,11 @@ Hạ Vy — tai nạn.
 
 Khải Phong nhói. Đêm nay Khải Phong đã chuyển từ "Hạ Vy mất" mơ hồ sang "Hạ Vy tai nạn" — cụ thể hơn — đau hơn.
 
-Bác tài liếc gương. "Đêm mười sáu. Con bắt đầu nhớ cách Hạ Vy đi. Đêm sau con sẽ nhớ rõ hơn — về một đêm mưa — một con đường. Đừng vội."
+Bác tài liếc gương. "Vào đêm mười sáu. Con bắt đầu nhớ cách Hạ Vy đi. Đêm sau con sẽ nhớ rõ hơn — về một đêm mưa — một con đường. Đừng vội."
 
 Khải Phong gật. Không hỏi.
 
-Đêm thứ mười sáu. Xe đi tiếp về phía đường vành đai. Phía sau — Phú Xuyên khuất. Cô Hoàng Yến ở lại chùa — quỳ — tụng — gửi chậu cúc mẹ cho chùa.
+Đêm thứ mười sáu của hành trình. Xe đi tiếp về phía đường vành đai. Phía sau — Phú Xuyên khuất. Cô Hoàng Yến ở lại chùa — quỳ — tụng — gửi chậu cúc mẹ cho chùa.
 
 
 [pause:800ms]

@@ -54,13 +54,13 @@ arc_design_compliant: bible/21 R33-R38
 
 Sau cơn mưa chiều. Đêm xuống nhanh. Xe đêm rẽ vào đoạn đường ven đồi Sóc Sơn, Hà Nội. Hàng cây ven đường còn đẫm — đèn pha quét lên thân cây ướt. Đèn pha quét lên rừng thông non — cành thông đẫm sương đêm.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ mười bảy. Trong túi áo gió Khải Phong — mười sáu vật. Đêm qua thêm cánh cúc tươi vàng nhạt.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười bảy của hành trình. Trong túi áo gió Khải Phong — mười sáu vật. Đêm qua thêm cánh cúc tươi vàng nhạt.
 
 Bác tài lái.
 
 Xe chậm lại trước một bệnh viện huyện xưa — biển "Bệnh viện đa khoa Sóc Sơn" — cổng vẫn mở — đèn vàng hắt ra. Một người đàn ông đứng đợi. Khoảng bốn mươi hai tuổi. Áo gió xám — quần tây đen. Tay phải cầm hộp giấy nhỏ — bên trong có gì cứng.
 
-Anh lên bậc xe. Đi đến hàng ghế giữa — ngồi xuống ghế thứ tư. Mở hộp. Lấy ra một chiếc USB — vỏ kim loại đen — xưa — đã trầy.
+Người đàn ông lên bậc xe. Đi đến hàng ghế giữa — ngồi xuống ghế thứ tư. Mở hộp. Lấy ra một chiếc USB — vỏ kim loại đen — xưa — đã trầy.
 
 Xe lăn bánh.
 
@@ -70,7 +70,7 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Anh ngồi yên. Vuốt USB. Đầu ngón tay anh cử động chậm — như đang cảm USB lần đầu.
+Người đàn ông ngồi yên. Vuốt USB. Đầu ngón tay anh cử động chậm — như đang cảm USB lần đầu.
 
 Khải Phong quan sát. Anh trạc tuổi bốn hai — tóc đã có sợi bạc — mắt sâu — vẻ người bận rộn.
 
@@ -80,7 +80,7 @@ Khải Phong quan sát. Anh trạc tuổi bốn hai — tóc đã có sợi bạ
 
 Bác tài liếc gương. Không nói.
 
-Anh đặt USB lên đùi. Hai tay anh đỡ lấy — như đỡ vật quý.
+Người đàn ông đặt USB lên đùi. Hai tay anh đỡ lấy — như đỡ vật quý.
 
 ---
 
@@ -94,7 +94,7 @@ Anh ghế tư nhìn về phía đó.
 
 "Toàn..."
 
-Anh nói rất nhỏ.
+Người đàn ông nói rất nhỏ.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
@@ -134,7 +134,7 @@ Giọng anh trầm.
 
 "Toàn không có hai trăm triệu. Lương kỹ sư Toàn nuôi gia đình — tiết kiệm được bốn năm chục triệu. Vợ Toàn nghỉ làm chăm con nhỏ."
 
-"Toàn gọi tôi. Một tối — bảy giờ — tháng năm. Tôi đang họp công ty. Tôi không nghe. Cuộc gọi lỡ."
+"Toàn gọi tôi. Một tối — bảy giờ — tháng năm. Tôi đang họp công ty. Tôi không nghe. Cuộc gọi không nhận được."
 
 [pause:1500ms]
 
@@ -144,7 +144,7 @@ Giọng anh trầm.
 
 "Sáng hôm sau — sáu giờ — Toàn nhắn tin: 'Tài ơi tôi xin mượn anh hai trăm triệu chữa ung thư. Tôi sẽ trả dần năm năm. Cảm ơn anh trước.'"
 
-"Tôi đọc tin. Tôi sốc — tôi không biết Toàn đến giai đoạn nặng. Tôi không gọi lại ngay — tôi đến công ty — họp tiếp — đối tác Nhật chưa xong việc hôm qua."
+"Tôi đọc tin. Người đàn ông sốc — tôi không biết Toàn đến giai đoạn nặng. Tôi không gọi lại ngay — tôi đến công ty — họp tiếp — đối tác Nhật chưa xong việc hôm qua."
 
 "Trưa tôi gọi Toàn. Toàn bắt. Giọng yếu. 'Tài ơi cảm ơn anh đọc tin. Anh quyết được không?'"
 
@@ -156,9 +156,9 @@ Giọng anh trầm.
 
 "Tôi tắt máy. Tôi tiếp tục họp. Tuần đó tôi xoay tiền — nhưng tôi chỉ xoay được một trăm triệu — không phải hai trăm. Tôi định: 'Một trăm trước — tuần sau xoay thêm.'"
 
-"Thứ năm tuần đó — vợ Toàn nhắn tin: 'Anh Tài ơi anh Toàn đã đi. Tối qua ở đó. Đột ngột nặng hơn — không kịp.'"
+"Thứ năm tuần đó — vợ Toàn nhắn tin: 'Anh Tài ơi anh Toàn đã đi. Vào tối qua ở đó. Đột ngột nặng hơn — không kịp.'"
 
-"Tôi sốc. Tôi không khóc. Tôi ngồi văn phòng — nhìn ngoài cửa sổ. Tôi đã định mai gửi một trăm triệu cho Toàn. Tôi không kịp."
+"Tôi sốc. Người đàn ông không khóc. Tôi ngồi văn phòng — nhìn ngoài cửa sổ. Người đàn ông đã định mai gửi một trăm triệu cho Toàn. Tôi không kịp."
 
 [pause:1500ms]
 
@@ -166,7 +166,7 @@ Giọng anh trầm.
 
 "Tôi cầm USB. Về nhà. Mở. Đọc thư."
 
-"Toàn viết: 'Tài thân — nếu anh đọc thư này — tức là tôi đã đi. Tôi không trách anh không xoay kịp tiền. Tôi biết anh bận. Tôi biết anh thương tôi. Tôi xin anh một điều — chăm con tôi thay tôi — hai đứa nhỏ — chúng coi anh như chú ruột. Anh là người tôi tin nhất sau vợ tôi. Cảm ơn anh đã làm bạn tôi ba mươi năm. Toàn.'"
+"Toàn viết: 'Tài thân — nếu anh đọc thư này — tức là tôi đã đi. Tôi không trách anh không xoay kịp tiền. Người đàn ông biết anh bận. Tôi biết anh thương tôi. Tôi xin anh một điều — chăm con tôi thay tôi — hai đứa nhỏ — chúng coi anh như chú ruột. Anh là người tôi tin nhất sau vợ tôi. Cảm ơn anh đã làm bạn tôi ba mươi năm. Toàn.'"
 
 "Tôi đọc xong — khóc. Lần đầu khóc sau ba mươi năm — không khóc từ lúc bố tôi mất."
 
@@ -206,13 +206,13 @@ Tài bước xuống dưới.
 
 Bên ngoài — Tài đi vào sân sau bệnh viện. Vườn cây thông nhỏ — đất mềm vì mưa.
 
-Anh quỳ. Đào hố nhỏ bằng tay. Đặt USB vào trong. Lấp đất lên cao.
+Người đàn ông khẽ quỳ. Đào hố nhỏ bằng tay. Đặt USB vào trong. Lấp đất lên cao.
 
 Cúi đầu.
 
 Khải Phong chớp mắt — nhìn qua cửa sổ. Bên hố — Toàn xuất hiện — mặc áo sơ mi xanh — vuốt vai Tài một lần. Cười nhẹ nhàng.
 
-Khải Phong chớp lần nữa. Toàn tan ra.
+Khải Phong chớp lần nữa. Người tên Toàn tan ra.
 
 Tài ngẩng đầu. Lau khóe mắt. Đứng dậy. Vỗ tay phủi đất.
 
@@ -236,7 +236,7 @@ Khải Phong ngồi. USB không cùng cụm cúc. Diversify cụm tiếp.
 
 Khải Phong ngẫm — Hạ Vy có ai từng nhờ Khải Phong giúp không? Khải Phong có lỡ không giúp ai như Tài lỡ không cứu Toàn không?
 
-Hình ảnh mờ — một tin nhắn — một cuộc gọi lỡ — một tiếng chuông điện thoại Khải Phong không bắt.
+Hình ảnh mờ — một tin nhắn — một cuộc gọi không nhận được — một tiếng chuông điện thoại Khải Phong không bắt.
 
 Khải Phong nhói. Có. Khải Phong đã nhỡ một cuộc gọi nào đó — Khải Phong cảm thấy.
 
@@ -244,11 +244,11 @@ Cuộc gọi của Hạ Vy?
 
 Khải Phong không nhớ rõ ràng. Cảm giác — không phải đêm Hạ Vy tai nạn — cuộc gọi khác — trước đêm tai nạn.
 
-Bác tài liếc gương. "Đêm mười bảy. Con bắt đầu cảm thấy lỡ một cuộc gọi. Đêm sau sẽ rõ hơn về cuộc gọi đó. Đừng vội."
+Bác tài liếc gương. "Vào đêm mười bảy. Con bắt đầu cảm thấy lỡ một cuộc gọi. Đêm sau sẽ rõ hơn về cuộc gọi đó. Đừng vội."
 
 Khải Phong gật. Không hỏi.
 
-Đêm thứ mười bảy. Xe đi tiếp. Phía sau — Sóc Sơn khuất. Tài ở lại đứng — nhìn hố đất đã lấp — USB Toàn đã chôn.
+Đêm thứ mười bảy của hành trình. Xe đi tiếp. Phía sau — Sóc Sơn khuất. Tài ở lại đứng — nhìn hố đất đã lấp — USB Toàn đã chôn.
 
 
 [pause:800ms]
