@@ -42,7 +42,7 @@ signature_setting: setting_dem_giao_thua
 stop_location  : ngã ba Hà Tĩnh (miền Trung)
 bell_count     : 1
 ghost_manifest : 1 (kính chiếu hậu — bóng mẹ trẻ ngồi đan, không quay đầu)
-word_count     : ~2400 (~15.5 phút @ 155 wpm)
+word_count     : ~2400 (~15.năm phút @ 155 wpm)
 cross_ep_continuity:
   - Khải Phong đếm: đêm nay là đêm thứ năm Khải Phong ngồi ghế thứ ba
   - Driver liếc gương lâu hơn EP04 (gradual foreshadow)
@@ -287,5 +287,5 @@ Chuyến xe đêm vẫn lăn bánh.
 - ✅ ALWAYS_5 + NEVER_7 + GHOST_3 + SERIES_8
 - ✅ Driver chỉ 2 câu chuẩn
 - ✅ Variation EP02 (cùng obj AO_LEN_NAU): EP02 cô gái trẻ raw wound / EP05 chú trung niên 30 năm sau, retrospective tone
-- ✅ Cross-ep continuity: Khải Phong đếm 5 đêm + đồng hồ nhích nhiều hơn dần + driver stare lâu hơn dần
+- ✅ Cross-ep continuity: Khải Phong đếm năm đêm + đồng hồ nhích nhiều hơn dần + driver stare lâu hơn dần
 - ✅ Cliffhanger: sợi len nâu rơi → setup ai sẽ cầm lên (EP06+)

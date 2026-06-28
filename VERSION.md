@@ -1,6 +1,6 @@
 ---
 project: SVHMP_Studio
-current_round: 18
+current_round: 19
 last_update_ts: 2026-06-28
 last_update_by: Claude session 28/6 (round 18 — TTS+LOGIC RULES R58-R65 hardlock + 6 audit/fix scripts + EP01 golden ref ZERO violations + EP02-50 partial fix + generator.md PHASE 12.99 enforce)
 rule_break_count: 2  # R39 vi phạm 2 lần (EP21-25 + EP12-19/EP31-34) — counter R41

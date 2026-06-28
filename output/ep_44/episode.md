@@ -38,7 +38,7 @@ quang_memory_fragment: M9 (Khải Phong nhớ bố mẹ Hạ Vy đã không liê
 object_sub_arc: none
 callback_target: none
 passenger_main: nu 52 Phượng Liên Đắk Lắk (không đem khúc chè cho hàng xóm bệnh - bà mất)
-signature_object: OBJ_KHUC_CHE (khúc chè bà chuẩn bị 5 năm trước)
+signature_object: OBJ_KHUC_CHE (khúc chè bà chuẩn bị năm năm trước)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Đắk Lắk
 bell_count: 1

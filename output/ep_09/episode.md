@@ -39,7 +39,7 @@ stop_location: ngã ba Lạng Sơn (miền núi phía Bắc)
 bell_count: 1
 ghost_manifest: 1
 word_count: ~2350
-cross_ep_continuity: Khải Phong có 4 vật + bác tài đã nói câu thứ 3 "Hôm nào con sẽ tự ngồi vào ghế thứ chín". Đồng hồ nhích 6 lần.
+cross_ep_continuity: Khải Phong có 4 vật + bác tài đã nói câu thứ 3 "Hôm nào con sẽ tự ngồi vào ghế thứ chín". Đồng hồ nhích sáu lần.
 ```
 
 ---

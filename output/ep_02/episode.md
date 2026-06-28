@@ -45,7 +45,7 @@ ghost_manifest : 1 (kính chiếu hậu — bóng mẹ thoáng qua, không nói)
 word_count     : ~1800
 estimated_duration:
   narration_speed: 155 wpm
-  estimated_runtime: 11.6 phút
+  estimated_runtime: 11.sáu phút
 arc_open_new   : ARC-ep2 (áo len nâu chuyển sang ai? — passenger khác sau)
 constitution_compliance:
   bible_00:

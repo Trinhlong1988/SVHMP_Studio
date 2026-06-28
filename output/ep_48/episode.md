@@ -35,7 +35,7 @@ intensity_level: 0.70
 quang_memory_fragment: M10 (Khải Phong nhớ lời hứa Hàn Quốc - quyết tâm giữ qua cách khác)
 object_sub_arc: none
 callback_target: none
-passenger_main: nam 38 Hữu Duy Cần Thơ (hứa tặng guitar bạn cấp ba - quên 20 năm - bạn chết bệnh)
+passenger_main: nam 38 Hữu Duy Cần Thơ (hứa tặng guitar bạn cấp ba - quên hai mươi năm - bạn chết bệnh)
 signature_object: OBJ_DAN_GUITAR (đàn guitar gỗ - hứa tặng bạn)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Cần Thơ

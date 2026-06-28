@@ -41,7 +41,7 @@ ghost_manifest: 1
 word_count: ~2400
 cross_ep_continuity: 
   - Khải Phong đã có 5 vật. Phase này Khải Phong ngồi đối diện chính mình — chú trung niên 36-50 có thể là PHIÊN BẢN LỚN của Khải Phong
-  - Đồng hồ nhích 7 lần (peak gradient establish phase)
+  - Đồng hồ nhích bảy lần (peak gradient establish phase)
   - Driver câu thứ 5: "Con sắp ngồi cùng họ rồi"
   - Cliffhanger MEGA: cây cầu Long Biên — EP01 stop_location. Có Hà chăng?
 ```

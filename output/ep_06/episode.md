@@ -42,10 +42,10 @@ signature_setting: setting_can_tet
 stop_location  : ngã ba Ninh Bình (Bắc bộ)
 bell_count     : 1
 ghost_manifest : 1 (kính chiếu hậu — bóng cháu gái nhỏ, không quay đầu)
-word_count     : ~2300 (~14.8 phút @ 155 wpm)
+word_count     : ~2300 (~14.tám phút @ 155 wpm)
 cross_ep_continuity:
   - Khải Phong nhặt sợi len nâu rơi từ EP05 lên — đặt vào túi áo
-  - Đồng hồ nhích 3 lần (gradient: EP04=1, EP05=2, EP06=3)
+  - Đồng hồ nhích ba lần (gradient: EP04=1, EP05=2, EP06=3)
   - Driver stare lâu hơn nữa
   - Ông cụ radio quen thuộc (cross-ep)
   - Bà cụ NGƯỢC PERSPECTIVE: bà giờ là "mẹ đợi" — gen reversal đẹp
@@ -273,5 +273,5 @@ Có ai đó sẽ lên xe ở trạm tiếp theo. Khải Phong chưa biết. Như
 
 - ✅ ALWAYS_5 + NEVER_7 + GHOST_3 + SERIES_8 + ENDING_2
 - ✅ Variation: cụ bà 66+ = perspective REVERSED (mẹ đợi, không phải con)
-- ✅ Cross-ep continuity: Khải Phong nhặt vật từ ep trước → đồng hồ 3 lần (gradient) → driver foreshadow
+- ✅ Cross-ep continuity: Khải Phong nhặt vật từ ep trước → đồng hồ ba lần (gradient) → driver foreshadow
 - ✅ Generational loop: cụ bà chuyển vai từ "con đợi mẹ" (60 năm trước) → "mẹ đợi con" (giờ)

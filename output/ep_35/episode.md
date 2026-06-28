@@ -35,7 +35,7 @@ intensity_level: 0.70
 quang_memory_fragment: M7 PEAK (Khải Phong nhớ tỉnh dậy không phải giấc ngủ thường)
 object_sub_arc: callback EP25 (vật giống mảnh kính EP25 echo)
 callback_target: ep_25 (object_echo)
-passenger_main: nam 28 Trí Hưng Nghệ An (định tự tử 2 năm trước - mảnh gương cứu - tương tự EP15 Phong + EP25 Van Quan)
+passenger_main: nam 28 Trí Hưng Nghệ An (định tự tử hai năm trước - mảnh gương cứu - tương tự EP15 Phong + EP25 Van Quan)
 signature_object: OBJ_MANH_GUONG (mảnh gương vỡ cứu cuộc)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Nghệ An

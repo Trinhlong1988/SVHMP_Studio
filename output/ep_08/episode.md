@@ -39,7 +39,7 @@ stop_location: ngã ba Bắc Ninh
 bell_count: 1
 ghost_manifest: 1
 word_count: ~2300
-cross_ep_continuity: Khải Phong có 3 vật + phong bao trống. Đồng hồ nhích 5 lần. Driver đã nói câu thứ 3 ("Con cũng sẽ nhớ ra thôi") cuối EP07.
+cross_ep_continuity: Khải Phong có 3 vật + phong bao trống. Đồng hồ nhích năm lần. Driver đã nói câu thứ 3 ("Con cũng sẽ nhớ ra thôi") cuối EP07.
 ```
 
 ---

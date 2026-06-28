@@ -128,9 +128,9 @@ Giọng cô đều — chậm.
 
 "Sau cưới — em định mỗi năm đi nước ngoài một lần trăng mật bù. Năm cưới em hai mươi sáu — sau khi em ổn định công việc — em đặt vé Hàn Quốc — mùa thu lá đỏ — em mơ đi với Khoa hai tuần."
 
-"Em đặt vé ba tháng trước ngày bay — em mua bằng tiền thưởng công ty — vé Vietjet giảm giá. Hai vé khứ hồi — bay 15 tháng 10 — về 28 tháng 10. Em in vé giấy — em treo trên tủ lạnh — đếm ngược."
+"Em đặt vé ba tháng trước ngày bay — em mua bằng tiền thưởng công ty — vé Vietjet giảm giá. Hai vé khứ hồi — bay mười lăm tháng 10 — về 28 tháng 10. Em in vé giấy — em treo trên tủ lạnh — đếm ngược."
 
-"Ngày 14 tháng 10 — đêm trước hôm bay — em và Khoa ăn cơm tối ở nhà — em chuẩn bị vali — em vui — em đợi sáng đi sân bay."
+"Ngày mười bốn tháng 10 — đêm trước hôm bay — em và Khoa ăn cơm tối ở nhà — em chuẩn bị vali — em vui — em đợi sáng đi sân bay."
 
 [pause:1200ms]
 
@@ -248,6 +248,6 @@ Khải Phong vuốt nhẫn ngón út một lần nữa. Anh ấm — anh không 
 
 Khải Phong nhìn ra cửa sổ — đường vành đai vẫn dài. Đêm tháng tư chưa hết. Anh đợi đêm thứ bốn mươi tám tiếp tục.
 
-Khải Phong cố nhớ ngày 15 tháng 10 năm 2021 — anh đang ở đâu lúc đó? Anh vẫn đi làm văn phòng kiến trúc Khâm Thiên. Người đàn ông không đi nước ngoài. Anh không nhớ ngày đó đặc biệt gì với anh.
+Khải Phong cố nhớ ngày mười lăm tháng mười năm 2021 — anh đang ở đâu lúc đó? Anh vẫn đi làm văn phòng kiến trúc Khâm Thiên. Người đàn ông không đi nước ngoài. Anh không nhớ ngày đó đặc biệt gì với anh.
 
-Khải Phong ngẫm — 15 tháng 10 năm 2021 — anh vẫn đi làm văn phòng kiến trúc Khâm Thiên. Anh vẫn ngủ một mình phố Nguyễn Trãi. Người đàn ông không nhớ ngày đó. Anh chỉ là một ngày bình thường trong tám năm Khải Phong sau Hạ Vy mất. Hàng triệu ngày bình thường — không ngày đặc biệt nào kéo anh đi nước ngoài.
+Khải Phong ngẫm — mười lăm tháng mười năm 2021 — anh vẫn đi làm văn phòng kiến trúc Khâm Thiên. Anh vẫn ngủ một mình phố Nguyễn Trãi. Người đàn ông không nhớ ngày đó. Anh chỉ là một ngày bình thường trong tám năm Khải Phong sau Hạ Vy mất. Hàng triệu ngày bình thường — không ngày đặc biệt nào kéo anh đi nước ngoài.

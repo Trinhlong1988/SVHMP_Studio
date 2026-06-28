@@ -35,7 +35,7 @@ intensity_level: 0.75 (+0.05 milestone bump)
 quang_memory_fragment: M8 PEAK (Khải Phong nhận anh Hải có thể yêu thầm Hạ Vy + reveal sub-arc geographic)
 object_sub_arc: GEOGRAPHIC HN nội thành REVEAL (Khải Phong xếp 40 items theo bản đồ — bắt đầu khu Long Biên)
 callback_target: ep_30 (passenger_recognition — passenger nói 'tôi biết anh — anh đêm 30 từng nhìn tôi')
-passenger_main: nam 28 Trung Hậu Hà Nội (anh Hải - chính anh Hải gọi cấp cứu Hạ Vy 7 năm trước - đêm này lên xe gặp Khải Phong)
+passenger_main: nam 28 Trung Hậu Hà Nội (anh Hải - chính anh Hải gọi cấp cứu Hạ Vy bảy năm trước - đêm này lên xe gặp Khải Phong)
 signature_object: OBJ_GIAY_KTS (giấy thiết kế đồ án cũ - anh giữ từ 2018)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Long Biên (chính bến EP01 + EP12)

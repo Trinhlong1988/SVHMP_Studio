@@ -32,10 +32,10 @@ ep_number: 31
 phase: heightening (S2 start)
 pillar: family
 intensity_level: 0.70
-quang_memory_fragment: M7 (Khải Phong nhớ tháng tư - Hạ Vy mất 12 tháng 4)
+quang_memory_fragment: M7 (Khải Phong nhớ tháng tư - Hạ Vy mất mười hai tháng 4)
 object_sub_arc: ngoài cluster geographic
 callback_target: none
-passenger_main: nu 55 Thanh Vân Hưng Yên (mẹ mất tháng tư 13 năm trước - đem cúc mỗi tháng tư)
+passenger_main: nu 55 Thanh Vân Hưng Yên (mẹ mất tháng tư mười ba năm trước - đem cúc mỗi tháng tư)
 signature_object: OBJ_CHAU_CUC_THANG_TU (chậu cúc đem mộ mỗi tháng tư)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Hưng Yên

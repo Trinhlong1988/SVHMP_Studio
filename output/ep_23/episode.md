@@ -35,7 +35,7 @@ intensity_level: 0.55
 quang_memory_fragment: M5 (Khải Phong nhớ tỏ tình Hạ Vy + hai đứa yêu nhau từ năm 3)
 object_sub_arc: ngoài cluster (bức thư)
 callback_target: none
-passenger_main: nam 45 Đức Vinh Hải Phòng (yêu thư ký 20 năm không tỏ tình)
+passenger_main: nam 45 Đức Vinh Hải Phòng (yêu thư ký hai mươi năm không tỏ tình)
 signature_object: OBJ_THU_TU_CHOI (bức thư cô viết khi anh tỏ tình muộn)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Hải Phòng

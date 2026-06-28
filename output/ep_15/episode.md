@@ -35,7 +35,7 @@ intensity_level: 0.55
 quang_memory_fragment: M3 (Khải Phong ngẫm Hạ Vy có tự ý không — kết luận không)
 object_sub_arc: gương vỡ (vật ngoài cluster cúc — diversify symbol)
 callback_target: ep_11 (driver mention "đêm mười một con đã thấy cậu trai đem vòng cổ chị")
-passenger_main: nam 31 Phong Hoài Đức (định tự tử 10 năm trước — gương vỡ cứu)
+passenger_main: nam 31 Phong Hoài Đức (định tự tử mười năm trước — gương vỡ cứu)
 signature_object: OBJ_GUONG_VO (mảnh gương vỡ đêm Phong định không sống)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Hoài Đức

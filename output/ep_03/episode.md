@@ -42,7 +42,7 @@ signature_setting: setting_dem_giao_thua
 stop_location  : ngã ba Thái Bình (đồng bằng Bắc)
 bell_count     : 1 (chuông giao thừa từ xa)
 ghost_manifest : 1 (bóng mẹ ngồi bên nồi luộc, không quay đầu)
-word_count     : ~2600 (~16-17 phút @ 155 wpm)
+word_count     : ~2600 (~16-mười bảy phút @ 155 wpm)
 arc_open_new   : ARC-ep3 (bánh chưng → biểu tượng đêm giao thừa)
 ```
 
@@ -297,7 +297,7 @@ SVHMP_EP03:
   version: v1_draft
   story_status: DRAFT_FOR_QA
   word_count_actual: ~2600
-  estimated_runtime: 16.7 phút @ 155 wpm
+  estimated_runtime: 16.bảy phút @ 155 wpm
   pipeline_trigger: auto_watch_daemon will catch
 ```
 

@@ -42,7 +42,7 @@ signature_setting: setting_can_tet
 stop_location  : ngã ba Phú Thọ (trung du Bắc)
 bell_count     : 1
 ghost_manifest : 1 (kính chiếu hậu — bóng mẹ ngồi viết, không quay đầu)
-word_count     : ~2400 (~15.5 phút @ 155 wpm)
+word_count     : ~2400 (~15.năm phút @ 155 wpm)
 arc_open_new   : ARC-ep4 (phong bao lì xì → ai sẽ nhận?)
 ```
 
@@ -80,7 +80,7 @@ Cô gái mở khoá cặp da. Bên trong có một xấp phong bao lì xì màu 
 
 Cô lấy ra một phong bao lì xì. Phong bao mới, chưa gấp. Mặt trước in nét bút "An Khang Thịnh Vượng" màu vàng. Mặt sau trống.
 
-Cô gái lật xấp phong bao. Có vài cái đã được viết tên. Chữ viết tay run run, mực hơi nhoè. Có cái viết "Cháu Bảo Lâm — 5 tuổi". Có cái viết "Cháu Hà Anh — 3 tuổi". Có cái viết "Cháu Khôi — 8 tuổi".
+Cô gái lật xấp phong bao. Có vài cái đã được viết tên. Chữ viết tay run run, mực hơi nhoè. Có cái viết "Cháu Bảo Lâm — năm tuổi". Có cái viết "Cháu Hà Anh — ba tuổi". Có cái viết "Cháu Khôi — tám tuổi".
 
 Cái cuối cùng trong xấp, có viết tên dở. Chỉ có hai nét bút "Cháu Diệu" — phần còn lại bỏ trống. Cây bút bi vẫn còn áp lên giấy ở chữ cuối, như ai đó vừa đặt xuống.
 
@@ -284,6 +284,6 @@ Xe vẫn chạy. Đêm hôm nay vẫn còn rất dài. Còn nhiều ngã ba phí
 SVHMP_EP04:
   version: v1_draft
   word_count_actual: ~2400
-  estimated_runtime: 15.5 phút @ 155 wpm
+  estimated_runtime: 15.năm phút @ 155 wpm
   pipeline_trigger: auto_watch_daemon will catch
 ```

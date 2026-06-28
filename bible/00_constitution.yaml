@@ -188,6 +188,64 @@ R66_short_sentence_chain_hardlock:
   enforcement: tools/audit_short_chain.py (build phase 2)
   cross_ref: [R60 short EOL, R61 short START, R62 anaphora]
 
+R73_lufs_gating_hardlock:
+  # round 18 add 2026-06-28 — Agent 2 TTS validation gap fill
+  rule: "Audio output PHẢI gate LUFS integrated [-19, -16] cho narration / [-23, -20] cho broadcast"
+  why: "Industry standard VN TTS production (VBee, Zalo, Viettel) + Audible spec — under -19 = quiet listener strains, over -16 = compression artifacts"
+  enforcement: "tools/audit_audio_mix_qa.py C11 + .githooks/pre-publish"
+  cross_ref: [R58 audio mix QA, bible/05 audio_bible]
+
+R72_dialogue_quote_render_separate:
+  # round 18 add 2026-06-28 — Agent 2 gap: IndexTTS2 ignores quote boundary, blends voices
+  rule: "Dialogue trong dấu \" \" PHẢI render separate + concat với 180ms bridge + slight pitch shift"
+  why: "IndexTTS2 + BigVGAN không respect quote boundary — narrator voice + dialogue voice blend → mất character distinction"
+  enforcement: "tools/tts_dialogue_segmenter.py + render pipeline"
+  format_change: "Convert quote dialogue → separate WAV segment, concat with bridge + pitch shift ±5%"
+
+R71_place_name_canonical_form_hardlock:
+  # round 18 add 2026-06-28 — Agent 2 gap: lesser cities fail >30%
+  rule: "Place names ngoài Hà Nội/Sài Gòn/Hải Phòng PHẢI có whitelist + phonetic respelling fallback"
+  why: "IndexTTS2 mispronounce Buôn Ma Thuột / Pleiku / Quy Nhơn >30% time"
+  whitelist_must_verify:
+    - Buôn Ma Thuột → "Buôn-Ma-Thuột" (em-dash hint)
+    - Pleiku → "Plây-cu" (phonetic respell)
+    - Quy Nhơn → "Quy-Nhơn"
+    - Đắk Lắk → "Đắc-Lắc"
+    - Phước Long → check pronunciation per render
+  enforcement: tools/audit_place_name.py + manual whitelist data/place_names.yaml
+
+R70_em_dash_prosody_explicit_pause_hardlock:
+  # round 18 add 2026-06-28 — Agent 2 gap: BigVGAN em-dash 0ms pause
+  rule: "Em-dash (—) trong narrative PHẢI convert → ', ' + explicit pause 250ms cho horror beats"
+  why: |
+    BigVGAN không insert pause cho em-dash (comma 120ms, ellipsis 220ms, em-dash 0ms).
+    SVHMP horror dùng nhiều em-dash để pause dramatic → bị flat trong audio.
+  exception: "Dialogue dash giữa speaker (— Cô ấy đi rồi.) giữ nguyên"
+  enforcement: "Pre-render TTS adapter: scan em-dash narrative position → insert [pause:250ms] marker"
+  cross_ref: [R75 em-dash không pause TTS memory 26/6]
+
+R69_number_reading_vietnamese_chu_hardlock:
+  # round 18 add 2026-06-28 — Agent 2 gap: IndexTTS2 reads "7" as English "seven" ~12%
+  rule: "Mọi số <100 + giờ giấc PHẢI viết chữ Việt (không số Ả Rập)"
+  why: "IndexTTS2 + BigVGAN có 12% probability đọc số Ả Rập theo English → 'seven', 'twenty'"
+  examples:
+    bad: ["7 giờ tối", "20 tuổi", "5 năm trước"]
+    good: ["bảy giờ tối", "hai mươi tuổi", "năm năm trước"]
+  exception: "Năm cụ thể >1000 (1990, 2018) — giữ số nhưng test pronounce"
+  enforcement: tools/audit_number_form.py + .githooks/pre-render
+
+R68_triphthong_diphthong_proper_noun_hardlock:
+  # round 18 add 2026-06-28 — Agent 2 gap: BigVGAN 22kHz under-resolve triphthongs
+  rule: "Triphthongs (uê / uyê / oai / ươi / uây) trong proper nouns PHẢI flag + alternate spelling fallback"
+  why: "BigVGAN 22kHz sample rate under-resolve second glide của triphthongs"
+  affected_words:
+    - "Huế" → check render, may need "Hu-ế"
+    - "Quỳnh" → "Quy-nhh"
+    - "Thuận" → "Thu-ận"
+    - "Khải" → check
+    - "Tuyến" → "Tu-yến"
+  enforcement: tools/audit_triphthong.py + whitelist data/triphthong_fallback.yaml
+
 R65_total_consistency_no_invention_hardlock:
   # round 15 add 2026-06-28 — Mr.Long: "kể serri như tiểu thuyết, logic tổng hợp tất cả kiến thức, CẤM SAI, không bịa luyên thuyên"
   rule: "Truyện = TIỂU THUYẾT serri. Mọi chi tiết PHẢI nhất quán tổng thể logic + kiến thức + thời gian + địa lý + khoa học. CẤM bịa chi tiết không kiểm chứng → vô lý thành luyên thuyên."

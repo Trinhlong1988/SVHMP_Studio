@@ -85,7 +85,7 @@ Người đàn ông vào xe. Đi qua mấy hàng ghế trước — chân chậm
 
 Lần thứ hai trong ba mươi đêm — có người ngồi cùng ghế ba với Khải Phong. Lần đầu — đêm hai mươi — Nhật Minh — cũng milestone EP20.
 
-Khải Phong giật mình lần thứ hai. Anh không nhìn Khải Phong — anh nhìn xuống khung bằng trên đùi. Trong khung — bằng tốt nghiệp THPT — chữ in: "Khải Phong Nguyễn — tốt nghiệp ngày 15 tháng 6 năm 2017."
+Khải Phong giật mình lần thứ hai. Anh không nhìn Khải Phong — anh nhìn xuống khung bằng trên đùi. Trong khung — bằng tốt nghiệp THPT — chữ in: "Khải Phong Nguyễn — tốt nghiệp ngày mười lăm tháng sáu năm 2017."
 
 Khải Phong ghế ba — đọc tên bằng — Khải Phong Nguyễn — cùng tên với chính mình.
 

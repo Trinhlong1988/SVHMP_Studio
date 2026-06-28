@@ -35,7 +35,7 @@ intensity_level: 0.70
 quang_memory_fragment: M7 (Khải Phong nhớ quê Hạ Vy - Hải Phòng Vĩnh Bảo)
 object_sub_arc: ngoài cluster geographic
 callback_target: none
-passenger_main: nam 50 Văn Tuấn Vĩnh Phúc (không thắp hương cho hàng xóm cũ - bác mất 10 năm)
+passenger_main: nam 50 Văn Tuấn Vĩnh Phúc (không thắp hương cho hàng xóm cũ - bác mất mười năm)
 signature_object: OBJ_HUONG_TRAM (bó hương trầm anh chuẩn bị từ năm trước)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Vĩnh Phúc
@@ -250,7 +250,7 @@ Năm bảy — 2024 — Khải Phong về Tết.
 
 Năm tám — 2025 — đây là năm hiện tại — Khải Phong đã về Tết tháng giêng — tháng tư chưa về.
 
-Khải Phong nhói thêm. Tháng tư 2025 — sắp tròn tám năm Hạ Vy đi — Khải Phong chưa về. Khải Phong đã định về — nhưng không đi — không nhớ vì sao.
+Khải Phong nhói thêm. Tháng tư 2025 — sắp tròn tám năm Hạ Vy đi — Khải Phong chưa về. Khải Phong đã định về — nhưng không đi — không hiểu vì sao.
 
 Khải Phong cố nhớ. Hình ảnh — Khải Phong ngồi bàn làm việc văn phòng kiến trúc phố Khâm Thiên — buổi chiều — không có gì đặc biệt. Khải Phong đi về phòng trọ phố Nguyễn Trãi — ăn cơm — đi ngủ.
 

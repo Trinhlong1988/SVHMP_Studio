@@ -35,7 +35,7 @@ intensity_level: 0.80 (+0.10 milestone bump — S1 finale)
 quang_memory_fragment: M10 PEAK (Khải Phong nhận 50 đêm không sáng + xếp 50 items thành bản đồ Hà Nội + Hải Phòng - bản đồ kết thúc tại nhà Hạ Vy quê)
 object_sub_arc: META PATTERN REVEAL (50 items xếp thành bản đồ route từ nhà Khải Phong đến nhà Hạ Vy)
 callback_target: meta — Khải Phong nhìn xuyên 50 ghế trống thấy 50 vật mình đã nhặt
-passenger_main: nam 28 Hạ Nhi (Hạ Nhi đột nhiên xuất hiện trên xe - lần đầu thấy Khải Phong sau 8 năm trong đời thực)
+passenger_main: nam 28 Hạ Nhi (Hạ Nhi đột nhiên xuất hiện trên xe - lần đầu thấy Khải Phong sau tám năm trong đời thực)
 signature_object: OBJ_THIEP_CUOI (thiệp cưới Hạ Nhi tháng 5 sang năm - mời Khải Phong dự)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Vĩnh Bảo Hải Phòng (chính quê Hạ Vy - bến nhà em chôn)

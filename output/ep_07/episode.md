@@ -38,7 +38,7 @@ stop_location: ngã ba Hải Dương
 bell_count: 1
 ghost_manifest: 1
 word_count: ~2350
-cross_ep_continuity: Khải Phong giữ sợi len + sợi lạt + chuẩn bị nhận vật thứ ba. Đồng hồ nhích 4 lần (gradient).
+cross_ep_continuity: Khải Phong giữ sợi len + sợi lạt + chuẩn bị nhận vật thứ ba. Đồng hồ nhích bốn lần (gradient).
 ```
 
 ---

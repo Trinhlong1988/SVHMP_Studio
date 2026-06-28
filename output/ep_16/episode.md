@@ -35,7 +35,7 @@ intensity_level: 0.55
 quang_memory_fragment: M4 (Khải Phong nhớ Hạ Vy mất — cảm giác mất rõ hơn)
 object_sub_arc: HOA_CUC cluster vật 3 (chậu cúc mẹ trồng — echo EP13/14)
 callback_target: none (cluster build continue)
-passenger_main: nu 38 Hoàng Yến Hà Đông (cãi mẹ chuyện chồng — mẹ mất sau 1 tháng)
+passenger_main: nu 38 Hoàng Yến Hà Đông (cãi mẹ chuyện chồng — mẹ mất sau một tháng)
 signature_object: OBJ_CHAU_CUC (chậu cúc mẹ trồng — em đem theo)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Phú Xuyên

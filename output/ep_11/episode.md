@@ -35,7 +35,7 @@ intensity_level: 0.55
 quang_memory_fragment: M3 (đầu — Khải Phong nghe tên Hạ Vy vọng lần đầu)
 object_sub_arc: setup (vòng cổ ngôi sao bạc)
 callback_target: none (EP đầu arc M3)
-passenger_main: nu_45 → nam 26 Đức Hà Đông (em chị mất 5 năm)
+passenger_main: nu_45 → nam 26 Đức Hà Đông (em chị mất năm năm)
 signature_object: OBJ_VONG_CO_SAO (vòng cổ ngôi sao bạc chị Hà tặng em đêm trước tai nạn)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Hà Đông
@@ -56,7 +56,7 @@ Lớp sương dày đặc. Đêm tháng tư miền Bắc. Xe đêm trôi chậm 
 
 Khải Phong ngồi ghế thứ ba — chỗ xưa — chỗ Khải Phong đã ngồi mười đêm trước. Đêm thứ mười một — Khải Phong đếm thêm.
 
-Trong túi áo gió Khải Phong — mười vật. Mỗi vật một đêm. Mỗi vật một chuyện. Khải Phong đã đếm chiều nay — trước khi xe khởi hành — mười cái cho thấy mười đêm Khải Phong đã sống cùng chuyến xe này. Khải Phong vẫn không nhớ vì sao Khải Phong ngồi đây.
+Trong túi áo gió Khải Phong — mười vật. Mỗi vật một đêm. Mỗi vật một chuyện. Khải Phong đã đếm chiều nay — trước khi xe khởi hành — mười cái cho thấy mười đêm Khải Phong đã sống cùng chuyến xe này. Khải Phong vẫn không hiểu vì sao Khải Phong ngồi đây.
 
 Bác tài lái. Bàn tay già nắm vô lăng — chậm — đều. Ánh mắt liếc gương — bình thường — không dừng lâu trên ai.
 
