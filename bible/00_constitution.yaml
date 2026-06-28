@@ -58,6 +58,43 @@ post_render_gate:
 # ============================================================
 # Mr.Long 27/6 lệnh add intro Hắc Dạ Ký mọi EP.
 
+R67_verb_semantic_precision_memory_vs_perception:
+  # round 18 add 2026-06-28 (Mr.Long: "từ nhớ và từ nhận ra liên quan đến rule sử dụng đúng QA + fix triệt để")
+  rule: "Verb 'nhớ / không nhớ / quên' CHỈ dùng cho event distant past. Action VỪA xảy ra (< 5s narrative) PHẢI dùng 'nhận ra / hiểu / ý thức'"
+  semantic_distinction:
+    nhớ_quên:
+      meaning: "Memory recall của distant past event (≥ minutes/hours/days ago)"
+      examples_correct:
+        - '"Khải Phong không nhớ rõ Hạ Vy hát bài đó khi nào" — past memory distant ✓'
+        - '"Tôi không nhớ tên cô ấy" passenger backstory ✓'
+      examples_wrong:
+        - '"Anh không nhớ mình lên xe lúc nào" ✗ (vừa lên — KHÔNG phải distant past)'
+        - '"Anh không nhớ mình vừa đánh rơi điều gì" ✗ (action 2s trước)'
+    nhận_ra:
+      meaning: "Awareness/perception gap của current state hoặc recent action"
+      examples_correct:
+        - '"Anh không nhận ra mình đánh rơi điều gì" ✓ (action vừa xảy ra)'
+        - '"Cô không nhận ra mình lên xe lúc nào" ✓ (perception gap)'
+    hiểu:
+      meaning: "Cognitive reasoning / understanding cause"
+      examples_correct:
+        - '"Anh không hiểu sao mình lại mang nó theo" ✓ (reasoning cause)'
+        - '"Anh không hiểu tại sao" ✓ (question why = reasoning, KHÔNG memory)'
+  forbidden_patterns:
+    - 'không nhớ + [action vừa xảy ra < 5s narrative]'
+    - 'đã quên + [action present/just-now]'
+    - 'không nhớ + tại sao/vì sao/sao (reasoning question — phải dùng "không hiểu")'
+  detection_heuristic:
+    - 'Scan "không nhớ" / "đã quên" → check 2 câu trước có action verb past-tense gần (vừa/mới/đang) không'
+    - 'Scan "không nhớ + tại sao/vì sao/sao" → flag (should be "không hiểu")'
+  enforcement: 'tools/audit_verb_semantic.py (build phase 2) + manual editorial review pre-render'
+  precedent: |
+    EP01 round 18 fix 3 chỗ: L94 "không nhớ mình lên" → "không nhận ra"
+                              L170 "không nhớ tại sao" → "không hiểu tại sao"
+                              L632 "Cô không nhớ mình lên" → "không nhận ra"
+    Mr.Long 28/6 catch + codify hardlock.
+  cross_ref: [R44 dictionary_block, R45 context_block verb_collocation, R65 logic_consistency 1_logic_thoi_gian]
+
 R59_audio_mix_qa_mandatory_pre_publish:
   # round 15 add 2026-06-28 (Mr.Long: "phải QA trước khi xuất bản")
   rule: "BẮT BUỘC chạy tools/audit_audio_mix_qa.py PASS 15/15 trước khi ship audio mix EP"
