@@ -154,6 +154,18 @@ Giọng anh trầm.
 
 [pause:1500ms]
 
+[pause:800ms]
+
+"Đêm trước hôm em đi — chúng tôi nằm cùng giường. Em xoa lưng tôi. Em bảo: 'Anh ngủ đi mai dậy sớm em đi chợ.' Em không biết đó là câu cuối."
+
+"Sáng — sáu giờ — em rời nhà. Tôi ngủ tiếp. Tiếng cửa khép nhẹ. Tiếng xe máy nổ ngoài sân. Tôi ngủ tiếp."
+
+"Bảy giờ rưỡi — điện thoại reo. Bệnh viện Bến Tre. Giọng bác sĩ. Em đã đi trong phòng cấp cứu — chấn thương sọ não nặng — không ai gọi em kịp."
+
+"Tôi không nhớ tôi mặc gì lúc chạy đến viện. Tôi không nhớ tôi lái xe thế nào. Tôi chỉ nhớ tay tôi run khi y tá đưa nhẫn em ra — nhẫn còn ấm vì em vừa đeo sáng đó."
+
+[pause:1500ms]
+
 Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
