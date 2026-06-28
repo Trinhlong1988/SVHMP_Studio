@@ -24,6 +24,15 @@ import sys
 import json
 import argparse
 from pathlib import Path
+
+# Update round 19.7 — filter false positives natural Vietnamese
+NATURAL_AFTER_EM_WHITELIST = {
+    'qua', 'đi', 'về', 'sẽ', 'đã', 'không', 'cũng', 'vẫn', 'còn', 'đang',
+    'sẽ', 'mới', 'lại', 'cứ', 'thì', 'là', 'có', 'phải', 'nên', 'mà',
+    'hay', 'chỉ', 'cố', 'ngày', 'đêm', 'tuần', 'tháng', 'năm', 'giờ',
+    'sáng', 'trưa', 'chiều', 'tối', 'khi', 'lúc', 'nhớ', 'biết', 'thấy',
+    'nghe', 'thường', 'từng', 'hay', 'kể', 'nói', 'bảo', 'hẹn',
+}
 from collections import defaultdict
 
 sys.stdout.reconfigure(encoding='utf-8') if hasattr(sys.stdout, 'reconfigure') else None
@@ -94,7 +103,11 @@ def detect_pronoun_issues_in_quote(quote, passenger_name=None):
         if verb_em_em_match:
             verb = verb_em_em_match.group(1)
             # Self-action verbs: skip (em làm gì cho chính mình — not ambiguous)
-            self_verbs = {'cố', 'sẽ', 'đã', 'không', 'chỉ', 'cũng', 'vẫn', 'đang', 'là', 'có'}
+            self_verbs = {'cố', 'sẽ', 'đã', 'không', 'chỉ', 'cũng', 'vẫn', 'đang', 'là', 'có',
+                          'qua', 'đi', 'về', 'còn', 'mới', 'lại', 'cứ', 'thì', 'phải', 'nên',
+                          'mà', 'hay', 'ngày', 'đêm', 'tuần', 'tháng', 'năm', 'giờ',
+                          'sáng', 'trưa', 'chiều', 'tối', 'khi', 'lúc', 'nhớ', 'biết', 'thấy',
+                          'nghe', 'thường', 'từng', 'kể', 'nói', 'bảo', 'hẹn', 'hứa', 'làm'}
             if verb not in self_verbs:
                 issues.append({
                     'type': 'true_ambiguity_em_verb_em',
@@ -108,7 +121,11 @@ def detect_pronoun_issues_in_quote(quote, passenger_name=None):
         cap_match = re.search(r'\bEm (\w+(?:\s+thầm)?)\s+em\b', sent)
         if cap_match:
             verb = cap_match.group(1)
-            self_verbs = {'cố', 'sẽ', 'đã', 'không', 'chỉ', 'cũng', 'vẫn', 'đang', 'là', 'có'}
+            self_verbs = {'cố', 'sẽ', 'đã', 'không', 'chỉ', 'cũng', 'vẫn', 'đang', 'là', 'có',
+                          'qua', 'đi', 'về', 'còn', 'mới', 'lại', 'cứ', 'thì', 'phải', 'nên',
+                          'mà', 'hay', 'ngày', 'đêm', 'tuần', 'tháng', 'năm', 'giờ',
+                          'sáng', 'trưa', 'chiều', 'tối', 'khi', 'lúc', 'nhớ', 'biết', 'thấy',
+                          'nghe', 'thường', 'từng', 'kể', 'nói', 'bảo', 'hẹn', 'hứa', 'làm'}
             if verb not in self_verbs:
                 issues.append({
                     'type': 'true_ambiguity_em_verb_em',
@@ -169,6 +186,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--ep', type=int)
     parser.add_argument('--detail', action='store_true')
+    parser.add_argument('--summary', action='store_true')
     args = parser.parse_args()
 
     print("=" * 70)

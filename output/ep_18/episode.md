@@ -134,7 +134,7 @@ Giọng cô đều — đã quen kể.
 
 "Em cãi mẹ. Em nói: 'Mẹ không hiểu anh — anh hiền — anh thương con — anh có sự nghiệp tương lai — mẹ chỉ nhìn nguồn gốc.'"
 
-"Mẹ không nói tiếp. Mẹ đứng dậy: 'Em cưới em chịu. Nhưng nếu em cưới em này — em không phải con mẹ nữa.'"
+"Mẹ không nói tiếp. Mẹ đứng dậy: 'Em cưới em chịu. Nhưng nếu em cưới người này — em không phải con mẹ nữa.'"
 
 [pause:1500ms]
 
@@ -180,7 +180,7 @@ Bác tài cất lời.
 
 Linh Trang gật. Lệ rơi xuống thư lần nữa.
 
-"Em nhớ. Cô gái chia tay anh Khang vì mẹ — em chọn mẹ — em không cứu được anh khi anh tự tử. Em giữ thư bảy năm — vì thư là câu cuối anh nói với em — anh không trách em — nhưng em trách em."
+"Em nhớ. Cô gái chia tay anh Khang vì mẹ — em chọn mẹ — em không cứu được anh khi anh tự tử. Em giữ thư bảy năm — vì thư là câu cuối anh nói với em — anh không trách em — nhưng em trách bản thân."
 
 [pause:1200ms]
 

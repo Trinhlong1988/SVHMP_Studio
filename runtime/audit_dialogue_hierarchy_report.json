@@ -1,13 +1,660 @@
 {
   "summary": {
-    "high": 0,
-    "medium": 0
+    "high": 34,
+    "medium": 63
   },
   "per_ep_severity": {
+    "12": {
+      "MEDIUM": 1,
+      "HIGH": 0
+    },
+    "18": {
+      "HIGH": 1,
+      "MEDIUM": 0
+    },
+    "19": {
+      "MEDIUM": 2,
+      "HIGH": 0
+    },
+    "22": {
+      "MEDIUM": 3,
+      "HIGH": 0
+    },
+    "24": {
+      "MEDIUM": 6,
+      "HIGH": 1
+    },
+    "26": {
+      "MEDIUM": 1,
+      "HIGH": 0
+    },
+    "27": {
+      "MEDIUM": 8,
+      "HIGH": 0
+    },
+    "28": {
+      "MEDIUM": 3,
+      "HIGH": 2
+    },
+    "29": {
+      "HIGH": 3,
+      "MEDIUM": 3
+    },
+    "30": {
+      "MEDIUM": 3,
+      "HIGH": 1
+    },
+    "31": {
+      "HIGH": 1,
+      "MEDIUM": 2
+    },
+    "32": {
+      "HIGH": 1,
+      "MEDIUM": 0
+    },
+    "33": {
+      "MEDIUM": 8,
+      "HIGH": 1
+    },
+    "36": {
+      "MEDIUM": 2,
+      "HIGH": 3
+    },
+    "37": {
+      "MEDIUM": 1,
+      "HIGH": 1
+    },
+    "38": {
+      "MEDIUM": 1,
+      "HIGH": 1
+    },
+    "39": {
+      "HIGH": 1,
+      "MEDIUM": 1
+    },
+    "40": {
+      "HIGH": 2,
+      "MEDIUM": 1
+    },
+    "41": {
+      "HIGH": 2,
+      "MEDIUM": 0
+    },
+    "42": {
+      "HIGH": 2,
+      "MEDIUM": 0
+    },
+    "43": {
+      "HIGH": 2,
+      "MEDIUM": 4
+    },
+    "44": {
+      "MEDIUM": 1,
+      "HIGH": 0
+    },
+    "45": {
+      "MEDIUM": 3,
+      "HIGH": 1
+    },
+    "46": {
+      "MEDIUM": 3,
+      "HIGH": 2
+    },
+    "47": {
+      "MEDIUM": 2,
+      "HIGH": 0
+    },
+    "48": {
+      "MEDIUM": 2,
+      "HIGH": 0
+    },
+    "49": {
+      "HIGH": 5,
+      "MEDIUM": 2
+    },
+    "50": {
+      "HIGH": 1,
+      "MEDIUM": 0
+    },
     "1": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "2": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "3": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "4": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "5": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "6": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "7": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "8": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "9": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "10": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "11": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "13": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "14": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "15": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "16": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "17": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "20": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "21": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "23": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "25": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "34": {
+      "HIGH": 0,
+      "MEDIUM": 0
+    },
+    "35": {
       "HIGH": 0,
       "MEDIUM": 0
     }
   },
-  "sample_issues": []
+  "sample_issues": [
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Long\" — có thể refer Long",
+      "severity": "MEDIUM",
+      "sample": "Đêm nay — em về Long Biên — em đến giữa cầu Long Biên — nơi anh từng làm dự án — em ném đồng này xuống sông Hồng",
+      "ep": 12,
+      "passenger": "Vy An",
+      "quote_idx": 28
+    },
+    {
+      "type": "true_ambiguity_em_verb_em",
+      "detail": "\"Em cưới em\" — 2 referents",
+      "severity": "HIGH",
+      "sample": "Mẹ đứng dậy: 'Em cưới em chịu",
+      "ep": 18,
+      "passenger": "Linh Trang",
+      "quote_idx": 12
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Mai\" — có thể refer Mai",
+      "severity": "MEDIUM",
+      "sample": "Mai gọi em: 'Hoa ơi em đến đây đi — em ngủ một đêm với chị — chị sợ một mình.'",
+      "ep": 19,
+      "passenger": "Bích Hoa",
+      "quote_idx": 10
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Mai\" — có thể refer Mai",
+      "severity": "MEDIUM",
+      "sample": "Em đáp: 'Mai ơi tuần này em bận họp xã đó — cuối tuần em đến.'",
+      "ep": 19,
+      "passenger": "Bích Hoa",
+      "quote_idx": 11
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Hồng\" — có thể refer Hồng",
+      "severity": "MEDIUM",
+      "sample": "Thầy giáo chủ nhiệm em — thầy Hồng — tặng em cuốn sách này ngày em ra trường",
+      "ep": 22,
+      "passenger": "Quỳnh Mai",
+      "quote_idx": 8
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Vân\" — có thể refer Vân",
+      "severity": "MEDIUM",
+      "sample": "Em hứa thầy: 'Vâng thầy — em sẽ về mỗi năm — không quên — em nhớ ơn thầy.'",
+      "ep": 22,
+      "passenger": "Quỳnh Mai",
+      "quote_idx": 15
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Mai\" — có thể refer Mai",
+      "severity": "MEDIUM",
+      "sample": "Đêm nay — em đem sách về Bắc Ninh — về trường THCS Mai Trung — em sẽ vào văn phòng thầy — đặt sách trên ghế chờ em",
+      "ep": 22,
+      "passenger": "Quỳnh Mai",
+      "quote_idx": 32
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Lan\" — có thể refer Lan",
+      "severity": "MEDIUM",
+      "sample": "Em đáp: 'Chị Lan ơi em xin lỗi — em cũng đang khó — em đang gửi tiền cho bố mẹ em chữa bệnh — em không cho được",
+      "ep": 24,
+      "passenger": "Hồng Liên",
+      "quote_idx": 14
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Mai\" — có thể refer Mai",
+      "severity": "MEDIUM",
+      "sample": "Bốn năm sau — Mai học lớp chín — học không nổi nữa — em xếp loại trung bình — em ngại đi học — em bỏ học sau học kỳ một ",
+      "ep": 24,
+      "passenger": "Hồng Liên",
+      "quote_idx": 19
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Mai\" — có thể refer Mai",
+      "severity": "MEDIUM",
+      "sample": "Em không thể cứu Mai sống lại — em có thể cứu hai em khác khỏi cảnh không học",
+      "ep": 24,
+      "passenger": "Hồng Liên",
+      "quote_idx": 24
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Lan\" — có thể refer Lan",
+      "severity": "MEDIUM",
+      "sample": "Một sáng — em đang quét sân — chị Lan đến nhà em — không gọi trước — đưa em cuốn vở.",
+      "ep": 24,
+      "passenger": "Hồng Liên",
+      "quote_idx": 25
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Lan\" — có thể refer Lan",
+      "severity": "MEDIUM",
+      "sample": "Em ngạc nhiên — chị Lan không trách em — chị còn đưa vở cho em",
+      "ep": 24,
+      "passenger": "Hồng Liên",
+      "quote_idx": 27
+    },
+    {
+      "type": "true_ambiguity_em_verb_em",
+      "detail": "\"Em muốn em\" — 2 referents",
+      "severity": "HIGH",
+      "sample": "Sao chị không giữ lại?' Chị Lan đáp: 'Em muốn em nhớ Mai — em nhớ thì Mai Anh không bao giờ mất hoàn toàn",
+      "ep": 24,
+      "passenger": "Hồng Liên",
+      "quote_idx": 28
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Mai\" — có thể refer Mai",
+      "severity": "MEDIUM",
+      "sample": "Cô gái từ chối đỡ học phí Mai Anh — em ngại — em không phải lý do trực tiếp em mất — nhưng em là một trong những người c",
+      "ep": 24,
+      "passenger": "Hồng Liên",
+      "quote_idx": 31
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Hùng\" — có thể refer Hùng",
+      "severity": "MEDIUM",
+      "sample": "'Hùng ơi đây là vật quý nhất bố em — anh không thể giữ lại — em là con — em giữ lại.'",
+      "ep": 26,
+      "passenger": "Đức Hùng",
+      "quote_idx": 22
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Hằng\" — có thể refer Hằng",
+      "severity": "MEDIUM",
+      "sample": "Hằng cưới năm em hai sáu — em không về dự cưới — em đang ở bên đó — em gửi quà cưới — em xin lỗi không về kịp.",
+      "ep": 27,
+      "passenger": "Mỹ Linh",
+      "quote_idx": 17
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Việt\" — có thể refer Việt",
+      "severity": "MEDIUM",
+      "sample": "Em định viết: 'Chị ơi em về Việt Nam khám — em có thể là người hiến nếu hợp.' Em chưa kịp viết — em bận họp công ty — em",
+      "ep": 27,
+      "passenger": "Mỹ Linh",
+      "quote_idx": 20
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Việt\" — có thể refer Việt",
+      "severity": "MEDIUM",
+      "sample": "Tối em viết tin nhắn ngắn: 'Chị ơi em sẽ về Việt Nam Tết tới — em đi khám — xem em có hợp hiến chị không",
+      "ep": 27,
+      "passenger": "Mỹ Linh",
+      "quote_idx": 21
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Việt\" — có thể refer Việt",
+      "severity": "MEDIUM",
+      "sample": "Tết năm đó em về Việt Nam — em đến nhà Hằng — em đem quà",
+      "ep": 27,
+      "passenger": "Mỹ Linh",
+      "quote_idx": 23
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Hằng\" — có thể refer Hằng",
+      "severity": "MEDIUM",
+      "sample": "Em quên hỏi về việc hiến thận — em chỉ uống cà phê — hỏi sức khỏe — Hằng bảo: 'Đỡ rồi em — chạy thận quen.' Em tin — khô",
+      "ep": 27,
+      "passenger": "Mỹ Linh",
+      "quote_idx": 23
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Hằng\" — có thể refer Hằng",
+      "severity": "MEDIUM",
+      "sample": "Em không về dự tang Hằng — em đang giữa dự án quan trọng — em xin nghỉ kịp",
+      "ep": 27,
+      "passenger": "Mỹ Linh",
+      "quote_idx": 29
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Hằng\" — có thể refer Hằng",
+      "severity": "MEDIUM",
+      "sample": "Em hứa Hằng giúp khi cần — em giúp — em về thử khám hiến thận — em gọi điện",
+      "ep": 27,
+      "passenger": "Mỹ Linh",
+      "quote_idx": 30
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Hoa\" — có thể refer Hoa",
+      "severity": "MEDIUM",
+      "sample": "Khung em đem sang Hoa Kỳ — đặt bàn làm việc — em nhìn mỗi ngày — em nhớ Hằng đủ.",
+      "ep": 27,
+      "passenger": "Mỹ Linh",
+      "quote_idx": 32
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Hoa\" — có thể refer Hoa",
+      "severity": "MEDIUM",
+      "sample": "Em đi biển — em gửi Hoa nhà mẹ em — mẹ em chăm cháu.",
+      "ep": 28,
+      "passenger": "Hữu Lộc",
+      "quote_idx": 15
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Hoa\" — có thể refer Hoa",
+      "severity": "MEDIUM",
+      "sample": "Hoa lớn — em nuôi mẹ ăn học — em tốt nghiệp đại học — em lấy chồng — em sinh con — bây giờ em ba mươi ba — em sống Sài G",
+      "ep": 28,
+      "passenger": "Hữu Lộc",
+      "quote_idx": 16
+    },
+    {
+      "type": "true_ambiguity_em_verb_em",
+      "detail": "\"em tránh em\" trong 1 câu — 2 referents",
+      "severity": "HIGH",
+      "sample": "Em tránh em — em tránh em.",
+      "ep": 28,
+      "passenger": "Hữu Lộc",
+      "quote_idx": 19
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Hoa\" — có thể refer Hoa",
+      "severity": "MEDIUM",
+      "sample": "Em ấy đi yên với lời xin lỗi qua Hoa — em không nghe trực tiếp từ em",
+      "ep": 28,
+      "passenger": "Hữu Lộc",
+      "quote_idx": 31
+    },
+    {
+      "type": "true_ambiguity_em_verb_em",
+      "detail": "\"em tha em\" trong 1 câu — 2 referents",
+      "severity": "HIGH",
+      "sample": "Em đặt nhẫn ở bục — nói với Chúa thay vì với em: 'Chúa ơi xin Chúa truyền lời em — em tha em ba mươi năm — em đi yên.'",
+      "ep": 28,
+      "passenger": "Hữu Lộc",
+      "quote_idx": 32
+    },
+    {
+      "type": "true_ambiguity_em_verb_em",
+      "detail": "\"em xem em\" trong 1 câu — 2 referents",
+      "severity": "HIGH",
+      "sample": "Em hỏi em: 'Linh ơi em xem em có hợp tủy với chị không",
+      "ep": 29,
+      "passenger": "Linh Đan",
+      "quote_idx": 12
+    },
+    {
+      "type": "true_ambiguity_em_verb_em",
+      "detail": "\"Em ơi em\" — 2 referents",
+      "severity": "HIGH",
+      "sample": "Em bịa lý do với em: 'Em ơi em hôm trước tới ngân hàng tủy hỏi — họ bảo phải đợi sáu tháng làm hồ sơ — em vào kỳ thi tốt",
+      "ep": 29,
+      "passenger": "Linh Đan",
+      "quote_idx": 15
+    },
+    {
+      "type": "true_ambiguity_em_verb_em",
+      "detail": "\"em hỏi em\" trong 1 câu — 2 referents",
+      "severity": "HIGH",
+      "sample": "Em vẫn ở ghép với em — em vẫn đi truyền máu mỗi tháng — em vẫn yếu hơn — em hỏi em em đã làm hồ sơ tủy chưa.",
+      "ep": 29,
+      "passenger": "Linh Đan",
+      "quote_idx": 17
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Nga\" — có thể refer Nga",
+      "severity": "MEDIUM",
+      "sample": "Bà bảo: 'Linh ơi cảm ơn em ở ghép với Nga ba năm — Nga thương em.' Em im — em nói được — em nói lý do em không khám tủy.",
+      "ep": 29,
+      "passenger": "Linh Đan",
+      "quote_idx": 21
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Hà\" — có thể refer Hà",
+      "severity": "MEDIUM",
+      "sample": "Em đã hiến tủy tháng trước — cho một em bé năm tuổi ở Bệnh viện Huyết học Hà Nội — em không biết em này — em chỉ biết em",
+      "ep": 29,
+      "passenger": "Linh Đan",
+      "quote_idx": 26
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Nga\" — có thể refer Nga",
+      "severity": "MEDIUM",
+      "sample": "Cô gái không thử khám tủy cho Nga — em ngại — em sợ kim — em lười",
+      "ep": 29,
+      "passenger": "Linh Đan",
+      "quote_idx": 29
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Hải\" — có thể refer Hải",
+      "severity": "MEDIUM",
+      "sample": "Tôi tìm một em ở quê Hải Dương — gia đình nghèo — em định bỏ học — em đỡ học phí em từ năm tôi hai bốn",
+      "ep": 30,
+      "passenger": "người khách Nguyễn",
+      "quote_idx": 22
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Hùng\" — có thể refer Hùng",
+      "severity": "MEDIUM",
+      "sample": "Tôi quyết về quê thăm thầy Hùng — đem bằng tốt THPT em đỡ lấy — em vừa tốt — em muốn khoe thầy 'thầy ơi nhờ thầy em đã đ",
+      "ep": 30,
+      "passenger": "người khách Nguyễn",
+      "quote_idx": 23
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Hùng\" — có thể refer Hùng",
+      "severity": "MEDIUM",
+      "sample": "'Anh Hùng không nhận tiền em — em đỡ bạn khác như anh Hùng đỡ em.'",
+      "ep": 30,
+      "passenger": "người khách Nguyễn",
+      "quote_idx": 26
+    },
+    {
+      "type": "true_ambiguity_em_verb_em",
+      "detail": "\"Em đỡ em\" — 2 referents",
+      "severity": "HIGH",
+      "sample": "Em đỡ em ở quê tốt đại học sư phạm năm vừa rồi — em làm theo lời thầy",
+      "ep": 30,
+      "passenger": "người khách Nguyễn",
+      "quote_idx": 33
+    },
+    {
+      "type": "true_ambiguity_em_verb_em",
+      "detail": "\"em quyết em\" trong 1 câu — 2 referents",
+      "severity": "HIGH",
+      "sample": "Sau tang — em quyết em sẽ thay mẹ",
+      "ep": 31,
+      "passenger": "Thanh Vân",
+      "quote_idx": 9
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Hà\" — có thể refer Hà",
+      "severity": "MEDIUM",
+      "sample": "Em đi xe đạp về quê từ Hà Nội — ba mươi cây — em ở quê ba ngày — em đặt chậu cúc lên mộ mẹ — quỳ — về.",
+      "ep": 31,
+      "passenger": "Thanh Vân",
+      "quote_idx": 10
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Vinh\" — có thể refer Vinh",
+      "severity": "MEDIUM",
+      "sample": "Em về An Vinh — em sống căn nhà mẹ — em trồng cúc tiếp như mẹ.",
+      "ep": 31,
+      "passenger": "Thanh Vân",
+      "quote_idx": 11
+    },
+    {
+      "type": "true_ambiguity_em_verb_em",
+      "detail": "\"Em quyết em\" — 2 referents",
+      "severity": "HIGH",
+      "sample": "Em quyết em sẽ đan tặng tôi một chiếc chăn mới — chăn cưới mười năm",
+      "ep": 32,
+      "passenger": "Phan Tâm",
+      "quote_idx": 10
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Bình\" — có thể refer Bình",
+      "severity": "MEDIUM",
+      "sample": "Em ở Hà Nội — Quỳnh quê Thái Bình — em ở ký túc xá — em đến ở chơi nhà em mỗi cuối tuần.",
+      "ep": 33,
+      "passenger": "Hoài An",
+      "quote_idx": 6
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Hà\" — có thể refer Hà",
+      "severity": "MEDIUM",
+      "sample": "Cô gái đáp ngay: 'Quỳnh ơi em đến Hà Nội — em đến đón em ở ga",
+      "ep": 33,
+      "passenger": "Hoài An",
+      "quote_idx": 15
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Hoài\" — có thể refer Hoài",
+      "severity": "MEDIUM",
+      "sample": "Đêm trước hôm em quay về Thái Bình — em nói với em: 'Hoài An ơi em muốn đi tàu điện trên cao trước em về quê",
+      "ep": 33,
+      "passenger": "Hoài An",
+      "quote_idx": 18
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Quỳnh\" — có thể refer Quỳnh",
+      "severity": "MEDIUM",
+      "sample": "Em đáp: 'Quỳnh ơi chiều mai em đi — em đem bạn đi",
+      "ep": 33,
+      "passenger": "Hoài An",
+      "quote_idx": 19
+    },
+    {
+      "type": "true_ambiguity_em_verb_em",
+      "detail": "\"Em đưa em\" — 2 referents",
+      "severity": "HIGH",
+      "sample": "Em đưa em vào Bệnh viện K cấp cứu",
+      "ep": 33,
+      "passenger": "Hoài An",
+      "quote_idx": 20
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Hà\" — có thể refer Hà",
+      "severity": "MEDIUM",
+      "sample": "Vé tàu hai chiều em đặt ba năm — chưa dùng — em chưa kịp đi tàu trên cao Hà Nội — em không kịp giữ lời hứa với em.",
+      "ep": 33,
+      "passenger": "Hoài An",
+      "quote_idx": 21
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Bình\" — có thể refer Bình",
+      "severity": "MEDIUM",
+      "sample": "Em đem vé về Thái Bình — em đến tang em",
+      "ep": 33,
+      "passenger": "Hoài An",
+      "quote_idx": 22
+    },
+    {
+      "type": "em_after_named_person_ambiguous",
+      "detail": "2+ em sau \"Quỳnh\" — có thể refer Quỳnh",
+      "severity": "MEDIUM",
+      "sample": "Em đi tàu điện một mình mỗi cuối tuần — không dùng vé Quỳnh — em không thể dùng vé em không nên dùng.",
+      "ep": 33,
+      "passenger": "Hoài An",
+      "quote_idx": 23
+    }
+  ]
 }

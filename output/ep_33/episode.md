@@ -132,7 +132,7 @@ Giọng cô đều — chậm.
 
 "Sau ra trường — em ở lại Hà Nội — đi làm. Quỳnh về Thái Bình dạy cấp ba ở quê — em không muốn xa nhà — bố mẹ yếu — cần em chăm."
 
-"Hai đứa em vẫn liên lạc qua điện thoại — qua tin nhắn. Mỗi năm em về quê em một lần — em ở chơi nhà em vài ngày. Quỳnh ra Hà Nội đôi lần — em đón em ở ga — đem em đi chơi phố cổ."
+"Hai đứa em vẫn liên lạc qua điện thoại — qua tin nhắn. Mỗi năm em về quê em một lần — em ở chơi nhà em vài ngày. Quỳnh ra Hà Nội đôi lần — em đón cô ấy ở ga — đem cô đi chơi phố cổ."
 
 "Năm hai nghìn không trăm hai mươi mốt — tàu điện Cát Linh-Hà Đông khai trương. Em rất hào hứng — em sinh ở Hà Nội — em chờ tàu điện trên cao bao lâu."
 
@@ -140,7 +140,7 @@ Giọng cô đều — chậm.
 
 "Em gọi Quỳnh: 'Quỳnh ơi tàu điện mở rồi — em ra Hà Nội đi tàu thử nhé! Em đặt vé khứ hồi đợi em — em chỉ cần lên Hà Nội — em đem bạn đi.'"
 
-"Quỳnh đáp: 'Hoài An ơi em hứa đi. Sang năm khi em rảnh em sẽ ra. Em đang dạy năm cuối lớp mười hai — bận ôn thi đại học cho em — em không nghỉ được.'"
+"Quỳnh đáp: 'Hoài An ơi em hứa đi. Sang năm khi em rảnh sẽ ra. Em đang dạy năm cuối lớp mười hai — bận ôn thi đại học cho em — em không nghỉ được.'"
 
 "Em đặt mua hai vé tàu điện — vé khứ hồi — em một vé Quỳnh một vé. Em đặt sẵn — chờ em ra Hà Nội."
 
@@ -148,7 +148,7 @@ Giọng cô đều — chậm.
 
 "Hai năm trôi. Cô gái gái gái gái bận. Người con gái không ra ngoài chơi. Hình bóng con gái ấy vẫn dạy. Cô ấy vẫn nhắc tin nhắn 'tháng sau em sẽ ra.'"
 
-"Năm hai nghìn không trăm hai mươi ba — em nhắn em: 'Hoài An ơi em được chẩn đoán ung thư cổ tử cung. Giai đoạn ba. Bác sĩ Thái Bình chuyển em lên Bệnh viện K Hà Nội điều trị.'"
+"Năm hai nghìn không trăm hai mươi ba — em nhắn cô ấy: 'Hoài An ơi em được chẩn đoán ung thư cổ tử cung. Giai đoạn ba. Bác sĩ Thái Bình chuyển em lên Bệnh viện K Hà Nội điều trị.'"
 
 "Em sốc. Cô gái đáp ngay: 'Quỳnh ơi em đến Hà Nội — em đến đón em ở ga. Em ở nhà em — em chăm bạn điều trị.'"
 
@@ -178,7 +178,7 @@ Bác tài cất lời.
 
 Hoài An gật. Lệ rơi xuống vé.
 
-"Em nhớ. Cô gái hứa em đi tàu điện ba năm — em không kịp đem em đi. Em đi trước em định em ngày sau. Vé hai chiều em đặt — em chưa dùng. Em không thể chuộc — em chỉ có thể đem vé về ga tàu — gửi vé cho ga."
+"Em nhớ. Cô gái hứa em đi tàu điện ba năm — em không kịp đem em đi. Em đi trước em định ngày sau. Vé hai chiều em đặt — em chưa dùng. Em không thể chuộc — em chỉ có thể đem vé về ga tàu — gửi vé cho ga."
 
 [pause:1200ms]
 

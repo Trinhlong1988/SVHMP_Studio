@@ -146,7 +146,7 @@ Giọng anh trầm.
 
 [pause:1500ms]
 
-"Năm em ba mươi sáu — em phát hiện ung thư xương. Cô gái điều trị Sài Gòn. Cô gái đến thăm em một lần — em tặng mẹ hộp trái cây — em không tặng đàn — em sợ em không kịp chơi nhiều."
+"Năm em ba mươi sáu — em phát hiện ung thư xương. Cô gái điều trị Sài Gòn. Cô gái đến thăm em một lần — em tặng mẹ hộp trái cây — em không tặng đàn — em sợ không kịp chơi nhiều."
 
 "Em không nhắc lời hứa đàn. Cô gái không hỏi gì nữa. Em chỉ hỏi sức khỏe."
 

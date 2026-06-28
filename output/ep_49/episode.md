@@ -168,7 +168,7 @@ Bác tài cất lời.
 
 Phương Linh gật.
 
-"Em nhớ. Cô gái đỡ em hai tháng — em bỏ em ba tuần — em tự tử. Cô ấy không phải lý do duy nhất — em là một. Hình bóng đàn ông không thể chuộc em — em đỡ ba em khác — em không bỏ ai. Em ấy đem khăn trả về quán em hay ngồi."
+"Em nhớ. Cô gái đỡ em hai tháng — em bỏ Vân ba tuần — Vân tự tử. Cô ấy không phải lý do duy nhất — em là một. Hình bóng đàn ông không thể chuộc em — em đỡ ba em khác — em không bỏ ai. Em ấy đem khăn trả về quán em hay ngồi."
 
 [pause:1200ms]
 

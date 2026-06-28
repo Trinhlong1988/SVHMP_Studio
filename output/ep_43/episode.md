@@ -154,13 +154,13 @@ Giọng anh trầm.
 
 [pause:1500ms]
 
-"Một năm sau — Mai cưới người khác. Anh ấy ở xã bên cạnh. Đứa em mừng cho Mai — em quyết em không can thiệp. Bóng người con gái ấy không bao giờ giữ lời hứa em với Hùng về chăm Mai — vì Mai đã có người."
+"Một năm sau — Mai cưới người khác. Anh ấy ở xã bên cạnh. Đứa em mừng cho Mai — em quyết không can thiệp. Bóng người con gái ấy không bao giờ giữ lời hứa em với Hùng về chăm Mai — vì Mai đã có người."
 
 "Hai mươi tám năm em ăn năn vì câu hứa em với Hùng đêm đó — câu hứa đùa em không kịp giữ lại. Em không lấy vợ — em không có lý do rõ ràng — chỉ là em sống một mình quê làm cao su."
 
 "Em đến đài tưởng niệm liệt sĩ Bình Phước mỗi rằm tháng bảy — em thắp hương em Hùng — em xin lỗi đêm đó."
 
-"Năm vừa rồi — em năm mươi — em quyết. Em đem giấy chứng nhận hoàn thành nghĩa vụ — chính giấy em định em sẽ nhận khi em về — không nhận vì em đi sớm. Em đã xin lại giấy từ ủy ban xã đó — họ giữ giấy của các liệt sĩ chưa nhận."
+"Năm vừa rồi — em năm mươi — em quyết. Em đem giấy chứng nhận hoàn thành nghĩa vụ — chính giấy em định sẽ nhận khi anh ấy về — không nhận vì anh ấy đi sớm. Em đã xin lại giấy từ ủy ban xã đó — họ giữ giấy của các liệt sĩ chưa nhận."
 
 "Em sẽ đặt giấy trên đài tưởng niệm. Người đàn ông viết tên em — em đã hoàn thành nghĩa vụ — em được công nhận. Em không kịp nhận giấy lúc sống — em nhận sau hai mươi tám năm — qua em — bạn em."
 
