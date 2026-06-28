@@ -85,7 +85,7 @@ Cụ vuốt nhẹ lên tệp lá dong. Một động tác đã làm rất nhiề
 
 Một ông cụ ngồi ghế đầu vặn nhẹ núm radio xưa. Tiếng radio rè rè vang lên — câu hát quen thuộc. "...quê nhà..." rồi tiếng tan.
 
-Cụ bà ghế thứ tư khẽ ngân theo. Rất rất nhỏ. Như đã thuộc câu hát đó từ lâu lắm.
+Cụ bà ghế thứ tư khẽ ngân theo. Rất rất nhỏ nhẹ. Như đã thuộc câu hát đó từ lâu lắm.
 
 [pause:500ms]
 
@@ -107,7 +107,7 @@ Bên ngoài cửa kính, một con chó nào đó sủa rất xa. Tiếng chó v
 
 Đồng hồ trên xe — chiếc đồng hồ nhỏ gắn cạnh ghế lái — kim phút nhích một lần. Tách. Rồi nhích thêm. Tách. Rồi nhích lần thứ ba. Tách.
 
-Khải Phong đếm trong đầu. Ba lần. Đêm nay ba lần liền.
+Khải Phong đếm trong đầu. Ba lần. Vào đêm nay đếm được ba lần liền.
 
 Bác tài không quay đầu. Tay vẫn đặt vô-lăng. Nhưng ánh mắt liếc gương chiếu hậu kéo dài.
 
@@ -127,11 +127,11 @@ Cụ quay đầu nhìn theo. Một thoáng. Rồi quay lại nhìn xuống rổ 
 
 Cụ vuốt nhẹ lên cây lạt buộc. Lạt mới, chưa cong.
 
-"Cụ tên Hằng. Năm nay tám mươi mốt. Quê Ninh Bình. Sáu mươi năm rồi cụ gói bánh chưng đêm hai tám. Năm đầu cụ tự gói là năm mười tám tuổi — vừa cưới chú cụ. Mẹ chồng cụ dạy. Cụ học một năm, hai năm thì gói thành thạo. Năm thứ ba, mẹ chồng cụ đi. Cụ thay mẹ chồng gói cho cả nhà."
+"Cụ tên Hằng. Cụ năm nay tám mươi mốt tuổi. Quê Ninh Bình. Sáu mươi năm rồi cụ gói bánh chưng đêm hai tám. Năm đầu cụ tự gói là năm mười tám tuổi — vừa cưới chú cụ. Mẹ chồng cụ dạy. Cụ học một năm, hai năm thì gói thành thạo. Năm thứ ba, mẹ chồng cụ đi. Cụ thay mẹ chồng gói cho cả nhà."
 
 Giọng cụ run nhẹ. Nhưng không buồn. Như kể chuyện xưa.
 
-"Cụ có ba đứa con. Hai trai, một gái. Đứa lớn ở Hà Nội, đứa thứ ở Sài Gòn, đứa út ở nước ngoài. Đứa nào cũng có gia đình riêng. Đứa nào cũng có con. Năm cháu nội ngoại."
+"Cụ có ba đứa con. Hai trai, một gái. Đứa lớn ở Hà Nội, đứa thứ ở Sài Gòn, đứa út ở nước ngoài. Đứa nào cũng có gia đình riêng. Đứa nào cũng có con. Cụ có năm cháu nội ngoại."
 
 Cụ ngừng. Vuốt lá dong.
 
@@ -147,7 +147,7 @@ Cụ ngừng. Vuốt lá dong.
 
 Cụ ngừng. Lâu hơn. Tay vẫn đặt lên rổ lá dong.
 
-"Cụ vẫn gói. Năm nay cụ tự xuống chợ huyện mua lá dong, mua gạo nếp, mua đậu xanh, mua thịt. Cụ thuê xe ôm chở rổ về. Cụ ngồi nhà gói. Một mình. Đêm hai tám."
+"Cụ vẫn gói. Năm nay cụ tự xuống chợ huyện mua lá dong, mua gạo nếp, mua đậu xanh, mua thịt. Cụ thuê xe ôm chở rổ về. Cụ ngồi nhà gói. Một mình. Vào đêm hai tám tháng Chạp."
 
 Bác tài nhìn gương chiếu hậu một thoáng. Im lặng yên.
 
@@ -161,7 +161,7 @@ Bác tài cất lời. Câu hỏi xưa.
 
 Cụ bà ghế tư không quay đầu. Khẽ gật.
 
-"Cụ nhớ, bác. Cụ nhớ năm mẹ chồng cụ ngồi gói đêm hai tám. Lúc cụ mười tám tuổi. Cụ ngồi xem mẹ chồng gói. Mẹ chồng cụ cũng già như cụ bây giờ. Cụ chưa hiểu vì sao đêm đó mẹ chồng cụ buồn — bây giờ cụ hiểu rồi."
+"Cụ nhớ, bác. Cụ nhớ năm mẹ chồng cụ ngồi gói đêm hai tám. Vào lúc cụ mười tám tuổi. Cụ ngồi xem mẹ chồng gói. Mẹ chồng cụ cũng già như cụ bây giờ. Cụ chưa hiểu vì sao đêm đó mẹ chồng cụ buồn — bây giờ cụ hiểu rồi."
 
 [pause:800ms]
 
@@ -175,9 +175,9 @@ Cụ bà ghế tư không quay đầu. Khẽ gật.
 
 "Con gái nuôi của cụ là cháu họ xa — bố mẹ nó mất trong tai nạn giao thông năm nó lên năm. Cụ nhận nuôi. Cháu giờ đã ba mươi sáu, lấy chồng ở thị xã đó. Có hai con. Cháu là đứa duy nhất trong họ còn về quê thăm cụ mỗi tháng."
 
-"Hai năm trước cháu sinh đứa thứ hai — em bé Nhi. Cụ về thăm. Cụ ôm em Nhi lần đầu. Cụ khóc. Cháu hỏi: 'Bà sao khóc?' Cụ bảo: 'Bà nhớ ngày mẹ con sinh con trong hoàn cảnh đó. Mẹ con đã không sống đủ để ôm con như thế này.'"
+"Hai năm trước cháu sinh đứa thứ hai — em bé Nhi. Cụ về thăm. Bà cụ ôm em Nhi lần đầu. Người bà cụ khẽ khóc. Cháu hỏi: 'Bà sao khóc?' Cụ bảo: 'Bà nhớ ngày mẹ con sinh con trong hoàn cảnh đó. Mẹ con đã không sống đủ để ôm con như thế này.'"
 
-"Cháu lặng. Cháu không trả lời. Cụ biết — cháu chưa bao giờ hỏi mẹ ruột. Cụ cũng không nhắc nữa. Cụ chỉ ôm em Nhi lâu hơn. Để em Nhi cũng có hơi của cụ — của bà cố."
+"Cháu im lặng một thoáng. Cháu không trả lời. Cụ biết — cháu chưa bao giờ hỏi mẹ ruột. Bà cụ cũng không nhắc nữa. Cụ chỉ ôm em Nhi lâu hơn. Để em Nhi cũng có hơi của cụ — của bà cố."
 
 [pause:600ms]
 
@@ -211,7 +211,7 @@ Khi đi qua chỗ Khải Phong ngồi, cụ khẽ nói:
 
 Khải Phong ngẩng đầu. Khải Phong chưa kịp trả lời. Cụ đã đi tiếp.
 
-Cụ đi ra cửa xe. Cửa từ từ mở. Gió đêm khép vào.
+Cụ đi ra cửa xe. Cửa từ từ mở. Cơn gió đêm khép vào cửa.
 
 Trước khi xuống, cụ quay đầu nhìn bác tài. Lâu. Lâu lắm. Rồi nhìn lên đồng hồ trên xe.
 
@@ -243,7 +243,7 @@ Chỉ có bếp lò chưa nhóm và đèn dầu nhấp nháy.
 
 Xe tiếp tục lăn bánh.
 
-Trên ghế thứ tư trống. Đệm ghế còn lõm một chút. Trên sàn, có một sợi lạt buộc nhỏ rơi xuống. Lạt mới, chưa cong.
+Trên mặt ghế thứ tư trống. Đệm ghế còn lõm một chút. Trên sàn, có một sợi lạt buộc nhỏ rơi xuống. Lạt mới, chưa cong.
 
 Bác tài lái như mọi khi. Hai tay vô-lăng. Găng trắng. Nhịp ngón trỏ ba cái.
 
@@ -253,7 +253,7 @@ Khải Phong lấy sợi len nâu trong túi áo ra. Nhìn. Sợi len từ đêm
 
 Khải Phong nhớ — câu cụ bà hỏi lúc xuống: "Cháu ngồi đây nhiều đêm rồi nhỉ?"
 
-Đêm thứ sáu. Khải Phong biết. Nhưng vì sao Khải Phong ngồi xe này? Khải Phong không nhớ. Lần đầu lên xe là khi nào? Khải Phong không nhớ.
+Đêm thứ sáu của hành trình. Khải Phong biết. Nhưng vì sao Khải Phong ngồi xe này? Khải Phong không nhớ. Lần đầu lên xe là khi nào? Khải Phong không nhớ.
 
 Trên ghế lái, bác tài liếc gương chiếu hậu. Ánh mắt dừng trên Khải Phong. Rất lâu.
 
@@ -263,7 +263,7 @@ Bác khẽ chuyển vị trí một bàn tay trên vô-lăng. Như muốn nói g
 
 Khải Phong nhìn xuống tay mình. Hai vật trên đùi — sợi len nâu của chú trung niên đêm trước, sợi lạt buộc của cụ bà đêm nay. Hai vật rời rạc, không liên quan. Nhưng Khải Phong giữ lại.
 
-Khải Phong nhìn ra cửa kính. Đêm vẫn dài. Còn nhiều ngã ba phía trước. Còn nhiều người mang theo những vật chưa kịp dùng hết.
+Khải Phong nhìn ra cửa kính. Đêm hôm nay vẫn còn dài. Còn nhiều ngã ba phía trước. Còn nhiều người mang theo những vật chưa kịp dùng hết.
 
 Có ai đó sẽ lên xe ở trạm tiếp theo. Khải Phong chưa biết. Nhưng Khải Phong biết — sẽ có một vật nữa.
 

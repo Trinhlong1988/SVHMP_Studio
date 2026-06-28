@@ -52,17 +52,17 @@ arc_design_compliant: bible/21 R33-R38
 
 [pause:800ms]
 
-Mưa đã rơi từ chiều. Đêm tháng tư — không tan hết rồi. Chuyến xe đêm đi qua đoạn đường ven cánh đồng lúa Mỹ Đức, Hà Nội — đèn pha hắt lên hàng cây ướt sương. Đèn pha quét lên rừng cúc dại bên đường — cúc đã ra hoa sớm năm nay — vàng nhạt giữa cỏ.
+Trời mưa đã rơi từ chiều. Đêm tháng tư — không tan hết rồi. Chuyến xe đêm đi qua đoạn đường ven cánh đồng lúa Mỹ Đức, Hà Nội — đèn pha hắt lên hàng cây ướt sương. Đèn pha quét lên rừng cúc dại bên đường — cúc đã ra hoa sớm năm nay — vàng nhạt giữa cỏ.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ mười ba. Trong túi áo gió Khải Phong — mười hai vật. Đêm qua thêm mảnh xà cừ thứ hai.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười ba của hành trình. Trong túi áo gió Khải Phong — mười hai vật. Đêm qua thêm mảnh xà cừ thứ hai.
 
 Bác tài lái. Đoạn đường này lạ với Khải Phong — Khải Phong chưa đi qua Mỹ Đức trên chuyến xe này.
 
-Xe chậm lại trước một vườn cúc nhỏ ven đường — chủ vườn đã đóng cổng tre — đèn dầu treo cột tre còn sáng yếu. Bảng hiệu gỗ mun "Vườn cúc Phú An" đã mòn nét chữ.
+Xe chậm lại trước một vườn cúc nhỏ ven đường — chủ vườn đã đóng cổng tre — đèn dầu treo cột tre còn sáng yếu. Bảng hiệu gỗ mun "Vườn cúc Phú An" đã mòn nét bút.
 
 Một người đàn ông trung niên đứng đợi bên cổng. Khoảng bốn mươi sáu tuổi. Áo sơ mi xám — tay áo cuộn — quần kaki nâu. Tay phải cầm bó hoa cúc khô — gói trong giấy bản.
 
-Anh lên bậc xe. Đi đến hàng ghế giữa — ngồi xuống ghế thứ năm. Đặt bó cúc khô lên đùi. Mở giấy. Cánh cúc đã giòn — màu vàng nhạt như nắng cuối thu — một số cánh đã rụng vào giấy.
+Người đàn ông lên bậc xe. Đi đến hàng ghế giữa — ngồi xuống ghế thứ năm. Đặt bó cúc khô lên đùi. Mở giấy. Cánh cúc đã giòn — màu vàng nhạt như nắng cuối thu — một số cánh đã rụng vào giấy.
 
 Xe lăn bánh.
 
@@ -72,7 +72,7 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Anh ngồi yên. Vuốt cánh cúc khô. Đầu ngón tay anh thô — bàn tay quen làm vườn — móng tay có đất.
+Người đàn ông ngồi yên. Vuốt cánh cúc khô. Đầu ngón tay anh thô — bàn tay quen làm vườn — móng tay có đất.
 
 Khải Phong quan sát từ ghế ba. Anh trạc tuổi bố Khải Phong nếu bố Khải Phong còn sống — Khải Phong không nhớ bố Khải Phong có còn không.
 
@@ -98,15 +98,15 @@ Anh ghế năm nhìn về phía đó. Cánh tay anh hơi run.
 
 "Bố..."
 
-Anh nói rất nhỏ. Một từ — như tiếng thở.
+Người đàn ông nói rất nhỏ. Một từ — như tiếng thở.
 
 Đồng hồ trên xe — kim phút nhích một lần — hai — đến mười.
 
 [pause:1000ms]
 
-Xe đi qua đó. Vườn cúc khuất. Ông cụ khuất. Bóng tan vào màu đêm.
+Xe đi qua đó. Vườn cúc khuất. Bóng ông cụ khuất sau cửa. Bóng tan vào màu đêm.
 
-Anh quay đầu lại. Đặt tay lên bó cúc khô. Nín thở vài giây — rồi thở ra ngoài.
+Người đàn ông quay đầu lại. Đặt tay lên bó cúc khô. Nín thở vài giây — rồi thở ra ngoài.
 
 ---
 
@@ -186,7 +186,7 @@ Khải Phong khẽ gật đầu. Mắt đỏ — không khóc.
 
 Xe chậm lại. Ngã ba Mỹ Đức — cây đa cổ — bến không tên. Chuông xe rung nhẹ. Vang một nhịp. Tan.
 
-Anh ôm bó cúc khô. Đứng dậy.
+Người đàn ông ôm bó cúc khô. Đứng dậy.
 
 "Chào anh."
 
@@ -194,13 +194,13 @@ Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim
 
 Bác tài: "Chưa tới lúc."
 
-Anh bước xuống dưới.
+Người đàn ông bước xuống dưới.
 
 [pause:1200ms]
 
 Bên ngoài — anh đi vào đường đất ven cánh đồng — đường tre hai bên. Phía cuối — nghĩa trang xã Phú An — bia đá xếp ngay hàng. Mộ bố anh — bia thứ ba từ cổng — bia gỗ đã thay bằng đá hai năm trước.
 
-Anh đến. Quỳ. Đặt bó cúc khô lên mộ — chính giữa bia. Cánh cúc rơi vài cánh xuống đất.
+Người đàn ông đến nơi. Quỳ. Đặt bó cúc khô lên mộ — chính giữa bia. Cánh cúc rơi vài cánh xuống đất.
 
 Cúi đầu.
 
@@ -208,7 +208,7 @@ Khải Phong chớp mắt — nhìn qua cửa sổ. Bên mộ — bố anh xuấ
 
 Khải Phong chớp lần nữa. Bố tan vào ánh đèn nến.
 
-Anh Bình ngẩng đầu. Lau khóe mắt bằng tay áo cuộn. Không nói thêm.
+Người tên Bình ngẩng đầu. Lau khóe mắt bằng tay áo cuộn. Không nói thêm.
 
 [pause:1500ms]
 
@@ -238,11 +238,11 @@ Hạ Vy — đã cài cúc lên tai một lần. Khải Phong cảm thấy chắ
 
 Khải Phong không biết khi nào — không biết tại đâu — không biết Hạ Vy bao tuổi lúc đó. Nhưng Hạ Vy — và cúc — có liên quan.
 
-Bác tài liếc gương. "Đêm mười ba. Cúc khô sẽ trở lại đêm mai. Để ý xem — đêm mai có thể không phải cúc khô — nhưng có cúc trong nó. Cứ giữ cánh cúc đêm nay. Cụm vật sẽ lớn dần."
+Bác tài liếc gương. "Vào đêm mười ba. Cúc khô sẽ trở lại đêm mai. Để ý xem — đêm mai có thể không phải cúc khô — nhưng có cúc trong nó. Cứ giữ cánh cúc đêm nay. Cụm vật sẽ lớn dần."
 
 Khải Phong gật.
 
-Đêm thứ mười ba. Xe đi tiếp về phía đường vành đai. Phía sau — Mỹ Đức khuất. Anh Bình ở lại bên mộ bố — quỳ — không vội đứng.
+Đêm thứ mười ba của hành trình. Xe đi tiếp về phía đường vành đai. Phía sau — Mỹ Đức khuất. Anh Bình ở lại bên mộ bố — quỳ — không vội đứng.
 
 
 [pause:800ms]

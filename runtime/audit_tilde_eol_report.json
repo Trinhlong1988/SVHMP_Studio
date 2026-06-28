@@ -1,22 +1,6 @@
 {
-  "total_violations": 33,
+  "total_violations": 25,
   "eps_with_issues": [
-    [
-      7,
-      4
-    ],
-    [
-      8,
-      1
-    ],
-    [
-      11,
-      2
-    ],
-    [
-      13,
-      1
-    ],
     [
       17,
       2
@@ -71,62 +55,6 @@
     ]
   ],
   "violations": [
-    {
-      "line": 59,
-      "word": "chữ",
-      "context": "ên phong bao có viết hai từng chữ \"Tặng mẹ\" — chữ viết",
-      "severity": "HIGH",
-      "ep": 7
-    },
-    {
-      "line": 101,
-      "word": "chữ",
-      "context": "uốt nhẹ mặt phong bao có từng chữ \"Tặng mẹ\".",
-      "severity": "HIGH",
-      "ep": 7
-    },
-    {
-      "line": 253,
-      "word": "chữ",
-      "context": "Có hai nét chữ. Hai chữ rất nhỏ. \"",
-      "severity": "HIGH",
-      "ep": 7
-    },
-    {
-      "line": 255,
-      "word": "chữ",
-      "context": "nh Vượng\". Mặt sau — hai từng chữ \"Tặng mẹ\" viết tay.",
-      "severity": "HIGH",
-      "ep": 7
-    },
-    {
-      "line": 119,
-      "word": "lỡ",
-      "context": "hòng. Mở điện thoại — ba cuộc lỡ. Một tin nhắn từ bà",
-      "severity": "HIGH",
-      "ep": 8
-    },
-    {
-      "line": 45,
-      "word": "chữ",
-      "context": "— đèn vàng hắt lên hàng từng chữ \"Nghĩa trang xã Phú",
-      "severity": "HIGH",
-      "ep": 11
-    },
-    {
-      "line": 125,
-      "word": "chữ",
-      "context": "mẫu giáo. Chị dạy em viết nét chữ. Mọi thứ em biết —",
-      "severity": "HIGH",
-      "ep": 11
-    },
-    {
-      "line": 43,
-      "word": "chữ",
-      "context": "\"Vườn cúc Phú An\" đã mòn nét chữ.",
-      "severity": "HIGH",
-      "ep": 13
-    },
     {
       "line": 119,
       "word": "lỡ",

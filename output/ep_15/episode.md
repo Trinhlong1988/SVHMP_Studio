@@ -52,9 +52,9 @@ arc_design_compliant: bible/21 R33-R38 + R36 callback EP11
 
 [pause:800ms]
 
-Đêm. Đường vắng tanh. Xe đêm trôi qua đoạn đường ven hồ Đồng Mô, Hoài Đức. Đèn pha quét đi quét lại trên hàng cây — không có ai khác trên đường.
+Trời đã về đêm. Đường vắng tanh. Xe đêm trôi qua đoạn đường ven hồ Đồng Mô, Hoài Đức. Đèn pha quét đi quét lại trên hàng cây — không có ai khác trên đường.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ mười lăm. Trong túi áo gió Khải Phong — mười bốn vật. Đêm qua thêm sợi chỉ vàng thêu cúc từ khăn bà Tâm Đan.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười lăm của hành trình. Trong túi áo gió Khải Phong — mười bốn vật. Đêm qua thêm sợi chỉ vàng thêu cúc từ khăn bà Tâm Đan.
 
 Bác tài lái. Hôm nay bác tài liếc gương — dừng trên Khải Phong lâu hơn thường. Trước khi xe dừng đón hành khách — bác tài cất lời. Một câu — câu thứ ba không nằm trong hai câu chuẩn.
 
@@ -70,7 +70,7 @@ Khải Phong gật. Không hỏi thêm.
 
 Xe chậm lại trước một bệnh viện tâm thần ngoại ô — biển "Bệnh viện Tâm thần Hoài Đức" — cổng còn mở — đèn vàng hắt ra. Một thanh niên đứng đợi bên cổng. Khoảng ba mươi mốt tuổi. Áo gió đen — quần jeans xưa — túi vải nhỏ trên vai phải.
 
-Anh bước lên xe. Đi qua hàng ghế đầu — ngồi xuống ghế thứ sáu. Đặt túi vải lên đùi. Mở. Lấy ra một mảnh gương tan — cỡ bàn tay — đã được cuốn vải bông quanh mép sắc.
+Người đàn ông bước lên xe. Đi qua hàng ghế đầu — ngồi xuống ghế thứ sáu. Đặt túi vải lên đùi. Mở. Lấy ra một mảnh gương tan — cỡ bàn tay — đã được cuốn vải bông quanh mép sắc.
 
 Xe lăn bánh.
 
@@ -80,7 +80,7 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Anh ngồi yên. Vuốt mặt gương — phía không sắc. Mảnh gương — phản chiếu trần xe loáng nhẹ — phản chiếu mặt anh — anh không nhìn vào mặt mình trong gương.
+Người đàn ông ngồi yên. Vuốt mặt gương — phía không sắc. Mảnh gương — phản chiếu trần xe loáng nhẹ — phản chiếu mặt anh — anh không nhìn vào mặt mình trong gương.
 
 Khải Phong quan sát từ ghế ba. Mặt anh gầy. Hai mắt thâm — nhưng không buồn — bình tĩnh — như người đã quen sống với điều khó.
 
@@ -106,7 +106,7 @@ Anh ghế sáu nhìn về phía đó. Mắt anh trống — vài giây — rồi
 
 "Tôi..."
 
-Anh nói rất nhỏ.
+Người đàn ông nói rất nhỏ.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
@@ -114,7 +114,7 @@ Anh nói rất nhỏ.
 
 Xe đi qua đó. Phòng trọ khuất. Bóng thanh niên khuất — chỉ là bóng thanh niên anh mười năm trước.
 
-Anh quay đầu lại. Đặt mảnh gương lên đùi. Hơi thở đều.
+Người đàn ông quay đầu lại. Đặt mảnh gương lên đùi. Hơi thở đều.
 
 ---
 
@@ -134,7 +134,7 @@ Giọng anh đều — bình tĩnh — không gấp — không thấp xuống.
 
 "Khi tôi nhận giấy báo trượt — bố không nói gì sáu tháng. Bố không nhìn tôi. Bố ăn cơm cùng — nhưng không nói. Mẹ tôi đứng giữa — khóc."
 
-"Tôi sống với cảm giác bố không thương — sáu tháng. Tôi học cao đẳng. Tôi không tự sát ngay — tôi cố."
+"Tôi sống với cảm giác bố không thương — sáu tháng. Người con cũng học cao đẳng. Tôi không tự sát ngay — tôi cố."
 
 "Năm tôi hai mốt — học năm cuối cao đẳng — bạn gái tôi chia tay. Cô bảo: 'Em không đợi anh được — anh chậm hai năm — em sắp tốt nghiệp đại học — em đi du học — anh không theo kịp.'"
 
@@ -154,7 +154,7 @@ Giọng anh đều — bình tĩnh — không gấp — không thấp xuống.
 
 [pause:1500ms]
 
-"Tôi sợ. Tôi không sợ chết — tôi sợ không nhận ra chính mình. Tôi nghĩ: 'Nếu tôi chết bây giờ — người chết là ai? Người không phải tôi.'"
+"Tôi sợ. Người con không sợ chết — tôi sợ không nhận ra chính mình. Tôi nghĩ: 'Nếu tôi chết bây giờ — người chết là ai? Người không phải tôi.'"
 
 "Tôi lấy điện thoại — gọi cấp cứu. Bệnh viện đến mười phút sau. Cứu kịp. Mất máu nhưng không nguy hiểm."
 
@@ -206,7 +206,7 @@ Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim
 
 Bác tài: "Chưa tới lúc."
 
-Anh bước xuống dưới.
+Người đàn ông bước xuống dưới.
 
 [pause:1200ms]
 
@@ -250,11 +250,11 @@ Khải Phong không thấy rõ ràng. Chỉ cảm giác.
 
 Hạ Vy đi đột ngột — không tự ý.
 
-Bác tài liếc gương. "Đêm mười lăm. Một phần ba phase warming đã qua. Đêm mười sáu sẽ có hành khách family thứ ba — không phải mẹ — không phải bố — là khác. Cứ giữ vật. Cụm sẽ rõ dần."
+Bác tài liếc gương. "Vào đêm mười lăm. Một phần ba phase warming đã qua. Đêm mười sáu sẽ có hành khách family thứ ba — không phải mẹ — không phải bố — là khác. Cứ giữ vật. Cụm sẽ rõ dần."
 
 Khải Phong gật.
 
-Đêm thứ mười lăm. Xe đi tiếp về phía đường vành đai. Phía sau — Hoài Đức khuất. Phong ở lại bên hồ — đứng — không vội đi — đợi mặt nước phẳng lại sau gợn sóng từ mảnh gương chìm.
+Đêm thứ mười lăm của hành trình. Xe đi tiếp về phía đường vành đai. Phía sau — Hoài Đức khuất. Phong ở lại bên hồ — đứng — không vội đi — đợi mặt nước phẳng lại sau gợn sóng từ mảnh gương chìm.
 
 
 [pause:800ms]

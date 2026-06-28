@@ -48,9 +48,9 @@ cross_ep_continuity: Khải Phong có 3 vật + phong bao trống. Đồng hồ 
 
 [pause:800ms]
 
-Đêm ba mươi tháng Chạp. Mưa lất phất. Chuyến xe đêm chạy qua một ngôi làng nhỏ vùng Bắc Ninh. Đèn dầu hắt qua mấy cửa sổ.
+Vào đêm ba mươi tháng Chạp. Trời mưa lất phất. Chuyến xe đêm chạy qua một ngôi làng nhỏ vùng Bắc Ninh. Đèn dầu hắt qua mấy cửa sổ.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ tám. Trong túi áo, ngoài ba vật cũ, còn có phong bao lì xì trống Khải Phong nhặt từ sàn xe đêm trước.
+Khải Phong ngồi ghế thứ ba. Đêm thứ tám của hành trình. Trong túi áo, ngoài ba vật cũ, còn có phong bao lì xì trống Khải Phong nhặt từ sàn xe đêm trước.
 
 Bác tài lái như mọi khi. Hai bàn tay đeo găng trắng. Ánh mắt liếc gương chiếu hậu dừng trên Khải Phong một thoáng. Khải Phong để ý — đêm nay bác không nhìn chỗ ghế khách, chỉ nhìn Khải Phong.
 
@@ -94,9 +94,9 @@ Xe đi qua một xóm nhỏ. Phía bên kia ruộng, có một ngôi nhà gạch
 
 Em ghế chín nhìn về phía đó. Em đưa khăn tay áp lên trán. Khóc khẽ hơn.
 
-"Bà ngồi đó..." Em lẩm bẩm.
+"Bà ngồi ở đó..." Em lẩm bẩm.
 
-Đồng hồ trên xe kim phút nhích — tách, tách, tách, tách, tách. Năm lần liền sau. Khải Phong đếm. Đêm thứ tám, năm lần.
+Đồng hồ trên xe kim phút nhích — tách, tách, tách, tách, tách. Năm lần liên tiếp sau đó. Khải Phong đếm. Đêm thứ tám có năm lần như thế.
 
 Em không nghe tiếng đồng hồ. Đang nhìn theo căn nhà.
 
@@ -126,11 +126,11 @@ Em ngừng. Áp khăn lên trán.
 
 "Em lên Hà Nội. Học bận. Thi cử. Cũng lười về quê — đường xa, một mình. Mỗi tháng em gọi điện cho bà một hai lần. Bà luôn hỏi: 'Cháu ăn cơm chưa? Cháu mặc đủ ấm chưa?' Em luôn trả lời: 'Bà yên tâm.'"
 
-"Đêm ba mươi Tết năm ngoái, bà gọi cho em lúc tám giờ tối. Em đang đi nhậu với bạn lớp. Em không bắt. Em nghĩ: 'Lát nữa về phòng gọi lại.' Bà gọi thêm hai lần. Em không bắt."
+"Đêm ba mươi Tết năm ngoái, bà gọi cho em lúc tám giờ tối. Em đang đi nhậu với bạn lớp. Cháu không bắt máy. Em nghĩ: 'Lát nữa về phòng gọi lại.' Bà gọi thêm hai lần. Em không bắt."
 
 [pause:800ms]
 
-"Mười một giờ đêm em về phòng. Mở điện thoại — ba cuộc lỡ. Một tin nhắn từ bà: 'Cháu ơi, bà thấy mệt. Cháu về với bà nhé.'"
+"Mười một giờ đêm em về phòng. Mở điện thoại — ba cuộc gọi không nhận được. Một tin nhắn từ bà: 'Cháu ơi, bà thấy mệt. Cháu về với bà nhé.'"
 
 "Em gọi lại. Bà không bắt. Em hoảng. Gọi cho cô em — cô bảo: 'Cô đang đến nhà bà. Bà nằm trên giường, không thở nữa.'"
 
@@ -154,25 +154,25 @@ Em ghế chín gật đầu. Khóc rõ hơn.
 
 [pause:800ms]
 
-"Em về quê sáng mùng một. Cô em đứng cổng đón. Đám tang bà đông lắm. Em không đứng vững. Cô em phải dìu em vào."
+"Em về quê sáng mùng một. Người cô em đứng cổng đón. Đám tang bà đông lắm. Em không đứng vững. Cô em phải dìu em vào."
 
-"Bà nằm trong quan tài. Em đặt tay lên ngực bà. Trong túi áo bà — chiếc áo bông xám bà vẫn mặc — em sờ thấy cái khăn tay này. Khăn bà giữ lại. Em rút ra ngoài. Em ấp lên mặt. Mùi long não xưa. Mùi tay bà."
+"Người bà nằm trong quan tài. Em đặt tay lên ngực bà. Trong túi áo bà — chiếc áo bông xám bà vẫn mặc — em sờ thấy cái khăn tay này. Khăn bà giữ lại. Em rút ra ngoài. Em ấp lên mặt. Mùi long não xưa. Mùi tay bà."
 
 "Em mang theo từ ngày đó. Mỗi đêm trước khi ngủ, em đặt khăn dưới gối. Mùi bà chưa tan."
 
 [pause:1000ms]
 
-"Em vẫn nhớ những đêm hè bà nằm võng kể chuyện cho em. Bà kể chuyện hồi bà còn trẻ — bà mười tám tuổi, đẹp nhất làng, ai cũng đến hỏi. Ông nội em là một thanh niên nghèo, không có gì. Bà chọn ông. Bố mẹ bà phản đối. Bà bỏ nhà, theo ông. Hai người dựng nhà tranh ở rìa làng — chính cái nhà em ở với bà sau này."
+"Em vẫn nhớ những đêm hè bà nằm võng kể chuyện cho em. Bà kể chuyện hồi bà còn trẻ — bà mười tám tuổi, đẹp nhất làng, ai cũng đến hỏi. Ông nội em là một thanh niên nghèo, không có gì. Bà cụ ngày ấy đã chọn ông. Bố mẹ bà phản đối. Bà cụ bỏ nhà, theo ông. Hai người dựng nhà tranh ở rìa làng — chính cái nhà em ở với bà sau này."
 
 [pause:600ms]
 
-"Ông nội em mất khi bố em mới năm tuổi. Bà nuôi bố em một mình. Sau đó bố em lớn lên, đi làm ăn xa, gửi em về cho bà nuôi. Bà nuôi hai thế hệ. Cả đời bà nấu cơm bằng nồi đất nhỏ — bà nói nồi gang nóng quá."
+"Ông nội em mất khi bố em mới năm tuổi. Bà nuôi bố em một mình. Sau đó bố em lớn lên, đi làm ăn xa, gửi em về cho bà nuôi. Bà cụ nuôi hai thế hệ. Cả đời bà nấu cơm bằng nồi đất nhỏ — bà nói nồi gang nóng quá."
 
 "Mỗi mùa hè em về, bà luôn nấu món em thích — bún cá rô đồng. Bà bắt cá ở ruộng sau nhà. Tự kho. Tự nấu nước dùng. Em ngồi xem bà nấu. Tay bà rất nhanh — nhanh hơn em mặc dù em trẻ."
 
 [pause:800ms]
 
-"Năm cuối em về, bà đã yếu. Tay bà run, không nấu được nữa. Cô em nấu hộ. Bà ngồi cạnh nhìn. Em hỏi: 'Bà thấy có ngon không?' Bà bảo: 'Ngon. Nhưng không phải vị bà nấu.'"
+"Năm cuối em về, bà đã yếu. Tay bà run, không nấu được nữa. Người cô em nấu hộ. Bà cụ ngồi cạnh đó nhìn. Em hỏi: 'Bà thấy có ngon không?' Bà bảo: 'Ngon. Nhưng không phải vị bà nấu.'"
 
 "Em nhớ câu đó. Bây giờ em hối hận. Em không học bà cách nấu bún cá rô. Em không bao giờ ăn lại được vị đó."
 
@@ -186,7 +186,7 @@ Em ghế chín gật đầu. Khóc rõ hơn.
 
 [pause:800ms]
 
-"Năm nay em về quê đúng đêm ba mươi. Một mình. Em sẽ ngồi cạnh ban thờ bà. Em sẽ gọi điện cho bà — gọi vào sim bà vẫn còn trong điện thoại em. Em sẽ nói: 'Bà ơi cháu về rồi. Cháu xin lỗi năm ngoái cháu không bắt máy.'"
+"Năm nay em về quê đúng đêm ba mươi. Một mình. Em sẽ ngồi cạnh ban thờ bà. Cháu sẽ gọi điện cho bà — gọi vào sim bà vẫn còn trong điện thoại em. Em sẽ nói: 'Bà ơi cháu về rồi. Cháu xin lỗi năm ngoái cháu không bắt máy.'"
 
 [pause:800ms]
 
@@ -196,7 +196,7 @@ Em ghế chín gật đầu. Khóc rõ hơn.
 
 [pause:600ms]
 
-"Bạn em ở trường không ai biết chuyện. Em đi học bình thường. Em đi làm thêm. Em ăn cơm sinh viên. Em nói chuyện cười đùa. Nhưng đêm về phòng trọ, em lấy khăn tay ra. Ấp lên mặt. Khóc nhẹ nhàng. Để sáng dậy, mắt không sưng quá — không ai biết."
+"Bạn em ở trường không ai biết chuyện. Em đi học bình thường. Cháu đi làm thêm. Em ăn cơm sinh viên. Em nói chuyện cười đùa. Nhưng đêm về phòng trọ, em lấy khăn tay ra. Ấp lên mặt. Khóc nhẹ nhàng. Để sáng dậy, mắt không sưng quá — không ai biết."
 
 "Có một đêm bạn cùng phòng dậy đi vệ sinh, thấy em ngồi trên giường, khăn tay áp trên mặt. Bạn hỏi: 'Mày sao thế?' Em bảo: 'Không. Tao mất ngủ.' Bạn không hỏi nữa. Bạn quay lại ngủ. Em cũng không kể."
 
@@ -204,7 +204,7 @@ Em ghế chín gật đầu. Khóc rõ hơn.
 
 "Em giấu bà trong lòng. Vì nếu em kể, bà thành câu chuyện. Em không muốn bà thành câu chuyện. Bà là bà của em — không phải câu chuyện ai cũng có thể nghe."
 
-"Đêm nay là lần đầu em kể. Em không biết vì sao em kể với anh — người lạ trên chuyến xe lạ. Có lẽ vì anh không quen bà. Anh sẽ không nhớ bà. Khi anh xuống xe, câu chuyện cũng đi theo. Bà vẫn riêng của em."
+"Đêm nay là lần đầu em kể. Em không biết vì sao em kể với anh — người lạ trên chuyến xe lạ. Có lẽ vì anh không quen bà. Em sẽ không nhớ bà nữa. Khi anh xuống xe, câu chuyện cũng đi theo. Người bà vẫn riêng của em."
 
 "Em biết bà không bắt. Nhưng em vẫn gọi. Để tự gọi cho mình. Để tự tha thứ một chút."
 
@@ -220,7 +220,7 @@ Khi đi qua chỗ Khải Phong, anh khẽ nói:
 
 "Chào anh."
 
-Khải Phong gật đầu. Anh đi tiếp.
+Khải Phong gật đầu. Khải Phong bước đi tiếp.
 
 Trước khi xuống, em quay đầu nhìn bác tài. Rồi nhìn lên đồng hồ trên xe.
 
@@ -242,7 +242,7 @@ Cửa xe khép lại. Xe lăn bánh.
 
 Bên ngoài, em đi vào con đường đất nhỏ. Phía cuối đường, ngôi nhà gạch ngói. Trước hiên, cụ bà vẫn ngồi ghế mây, tay vuốt khăn tay khác. Em ngừng ở giữa đường. Cụ bà ngẩng đầu. Hai cái bóng nhìn nhau qua sương.
 
-Khải Phong chớp mắt. Cụ bà không còn. Anh đi tiếp.
+Khải Phong chớp mắt. Cụ bà không còn. Khải Phong bước đi tiếp.
 
 [pause:1000ms]
 
@@ -288,11 +288,11 @@ Khải Phong nhớ — đêm thứ tám rồi. Mỗi đêm một vật. Mỗi đ
 
 Vì sao Khải Phong chưa kể?
 
-Khải Phong nhìn ra cửa kính. Đêm vẫn dài.
+Khải Phong nhìn ra cửa kính. Đêm hôm nay vẫn còn dài.
 
 [pause:1000ms]
 
-Khải Phong nhớ — bà nội Khải Phong. Bà có cái khăn tay xanh nhạt, hoa thêu trắng. Bà giữ trong túi áo. Bà bảo Khải Phong: "Khăn này bà dệt từ hồi mười tám. Sau này cháu cầm." Khải Phong đã quên câu đó.
+Khải Phong nhớ — bà nội Khải Phong. Bà có cái khăn tay xanh nhạt, hoa thêu trắng. Bà cụ giữ trong túi áo. Bà bảo Khải Phong: "Khăn này bà dệt từ hồi mười tám. Sau này cháu cầm." Khải Phong đã quên câu đó.
 
 Bà nội Khải Phong mất khi Khải Phong bao tuổi? Mười sáu? Hai mươi? Khải Phong không nhớ. Khải Phong đã ở đâu hôm đó? Khải Phong không nhớ.
 

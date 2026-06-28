@@ -52,9 +52,9 @@ cross_ep_continuity:
 
 [pause:800ms]
 
-Đêm ba mươi tháng Chạp. Sương đặc. Chuyến xe đêm chạy về phía Hà Nội. Đèn pha quét lên bụi dứa dại ven đường. Phía xa, ánh đèn thành phố loé sáng qua sương.
+Vào đêm ba mươi tháng Chạp. Lớp sương đặc đến nỗi khó nhìn. Chuyến xe đêm chạy về phía Hà Nội. Đèn pha quét lên bụi dứa dại ven đường. Phía xa, ánh đèn thành phố loé sáng qua sương.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ mười. Trong túi áo, năm vật: sợi len nâu, sợi lạt buộc, phong bao lì xì trống, sợi chỉ trắng, viên pin cassette rỉ.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười của hành trình. Trong túi áo, năm vật: sợi len nâu, sợi lạt buộc, phong bao lì xì trống, sợi chỉ trắng, viên pin cassette rỉ.
 
 Bác tài lái như mọi khi. Hai bàn tay đeo găng trắng. Ánh mắt liếc gương chiếu hậu — đêm nay không liếc. Bác nhìn Khải Phong trực tiếp qua gương, lâu hơn cả đêm trước.
 
@@ -108,7 +108,7 @@ Chú ngồi cạnh Khải Phong nhìn về phía đó. Cổ họng nuốt một 
 
 "Bệnh viện này..." Chú nói nhẹ.
 
-Đồng hồ trên xe kim phút nhích — tách, tách, tách, tách, tách, tách, tách. Bảy lần liền sau. Khải Phong đếm. Đêm thứ mười, bảy lần.
+Đồng hồ trên xe kim phút nhích — tách, tách, tách, tách, tách, tách, tách. Bảy lần liền sau. Khải Phong đếm. Đêm thứ mười có bảy lần như thế.
 
 Chú không nghe tiếng đồng hồ. Đang nhìn bóng người dưới gốc bồ đề.
 
@@ -124,11 +124,11 @@ Chú quay đầu. Áp khăn tay lên má.
 
 [pause:800ms]
 
-"Anh tên Việt. Bốn mươi sáu tuổi. Quê Bắc Ninh. Bà nội anh mất đêm ba mươi Tết — ba mươi năm trước. Lúc anh mười sáu tuổi."
+"Em tên Việt. Bốn mươi sáu tuổi. Quê Bắc Ninh. Bà nội anh mất đêm ba mươi Tết — ba mươi năm trước. Vào lúc em mười sáu tuổi."
 
 Giọng chú trầm. Lặng. Không buồn — như đã thấm.
 
-"Bà nội nuôi anh từ ba tuổi. Bố anh mất sớm, mẹ anh đi bước nữa và chuyển vào Nam. Anh ở với bà. Mười ba năm. Bà nuôi anh bằng đồng lương hưu giáo viên ít ỏi."
+"Bà nội nuôi anh từ ba tuổi. Bố anh mất sớm, mẹ anh đi bước nữa và chuyển vào Nam. Em ở với bà nội. Mười ba năm. Bà nuôi anh bằng đồng lương hưu giáo viên ít ỏi."
 
 "Tết năm anh mười sáu, anh đi học thêm xa nhà — học trường nội trú. Lâu lắm mới về nhà. Đêm ba mươi anh đang ở trường thì cô anh gọi điện: 'Việt ơi bà ngất, đang đưa cấp cứu.' Anh chạy bộ về nhà — hai mươi cây số. Mưa phùn."
 
@@ -136,19 +136,19 @@ Chú ngừng. Vuốt khăn.
 
 [pause:600ms]
 
-"Anh đến bệnh viện huyện lúc bảy giờ tối. Bà nằm phòng cấp cứu. Cô anh đang ngồi ngoài. Cô bảo: 'Bác sĩ bảo bà nhồi máu não. Đang theo dõi. Cháu vào với bà.'"
+"Anh đến bệnh viện huyện lúc bảy giờ tối. Bà nội nằm phòng cấp cứu. Người cô đang ngồi ngoài. Cô bảo: 'Bác sĩ bảo bà nhồi máu não. Đang theo dõi. Cháu vào với bà.'"
 
-"Anh vào phòng. Bà nằm trên giường. Máy thở. Mắt nhắm. Anh ngồi xuống ghế. Cầm tay bà. Bàn tay bà lạnh. Anh nói: 'Bà ơi cháu về.' Bà không trả lời."
+"Em vào trong phòng. Bà nội đang nằm trên giường. Máy thở. Mắt nhắm. Em ngồi xuống ghế. Cầm tay bà. Bàn tay bà lạnh. Anh nói: 'Bà ơi cháu về.' Bà không trả lời."
 
 [pause:800ms]
 
-"Đến mười giờ đêm, bà mở mắt. Một thoáng. Bà nhìn anh. Môi bà động. Anh ghé tai sát. Bà thì thầm: 'Khăn tay... trong túi áo bà...'"
+"Đến mười giờ đêm, bà mở mắt. Một thoáng. Người bà nội khẽ nhìn em. Môi bà động. Em ghé tai sát lại. Bà nội thì thầm: 'Khăn tay... trong túi áo bà...'"
 
-"Anh hỏi: 'Bà nói gì?' Bà đã nhắm mắt lại. Hơi thở chậm lại. Mười một giờ đêm, bà đi. Đêm ba mươi tháng Chạp. Pháo hoa giao thừa nổ ngoài đường."
+"Anh hỏi: 'Bà nói gì?' Bà đã nhắm mắt lại. Hơi thở chậm lại. Mười một giờ đêm, bà đi. Vào đêm ba mươi tháng Chạp. Pháo hoa giao thừa nổ ngoài đường."
 
 [pause:1500ms]
 
-"Cô anh dìu anh ra. Đưa anh về nhà. Trong tủ áo bà, anh tìm chiếc áo bông xám bà vẫn mặc. Trong túi áo — chiếc khăn tay này. Cùng cái khăn ba mươi năm trước bà đã đưa anh khi anh đi học nội trú. Bà giữ lại, không đem theo."
+"Người cô dìu em ra ngoài. Đưa anh về nhà. Trong tủ áo bà, anh tìm chiếc áo bông xám bà vẫn mặc. Trong túi áo — chiếc khăn tay này. Cùng cái khăn ba mươi năm trước bà đã đưa anh khi anh đi học nội trú. Bà giữ lại, không đem theo."
 
 "Anh không hiểu vì sao bà đưa khăn cho anh hồi đó, rồi giữ lại khăn của mình. Sau này anh nghĩ thầm — chắc bà muốn giữ một cái gì có hơi tay anh. Để khi nhớ anh, bà có cái mà sờ."
 
@@ -164,13 +164,13 @@ Bác tài cất lời.
 
 Chú Việt khẽ gật.
 
-"Anh nhớ, bác."
+"Em nhớ, bác."
 
 [pause:1000ms]
 
 "Ba mươi năm anh giữ khăn này. Tháng nào anh cũng mang theo trong cặp. Đi công tác. Đi họp. Đi du lịch. Khăn luôn trong cặp. Vợ anh từng hỏi: 'Sao anh không giặt khăn cho mới?' Anh bảo: 'Giặt mất hơi bà.'"
 
-"Năm năm trước cô anh mất — em gái bà. Người duy nhất còn nhớ bà cùng anh đã đi. Anh đứng đám tang cô. Anh nhận ra — chỉ còn anh nhớ bà. Khi anh đi, sẽ không còn ai nhớ giọng bà, mùi bà, cách bà nấu canh chua."
+"Năm năm trước cô anh mất — em gái bà. Người duy nhất còn nhớ bà cùng anh đã đi. Em đứng đám tang cô. Anh nhận ra — chỉ còn anh nhớ bà. Khi anh đi, sẽ không còn ai nhớ giọng bà, mùi bà, cách bà nấu canh chua."
 
 "Năm nay anh quyết định về quê đêm ba mươi. Anh sẽ thắp hương cho bà. Cho cô. Cho cả những người đã đi mà còn ai nhớ — và những người đã đi mà không ai nhớ nữa."
 
@@ -178,7 +178,7 @@ Chú Việt khẽ gật.
 
 "Vợ anh ở Hà Nội, một người Hà Nội. Vợ chưa bao giờ gặp bà — bà mất trước khi anh lập gia đình mười lăm năm. Vợ chỉ thấy ảnh bà trên ban thờ ở nhà anh. Anh chưa kể với vợ chuyện đêm bà mất — chuyện anh chạy bộ hai mươi cây số dưới mưa. Chuyện bà thì thầm 'Khăn tay... trong túi áo bà...'."
 
-"Anh muốn kể. Nhiều lần. Nhưng mỗi lần định kể, anh lại dừng. Vì câu chuyện là của riêng anh và bà. Vợ anh có thể hiểu — nhưng vợ sẽ không thấm như anh. Câu chuyện sẽ thành ký ức của hai người — và bà sẽ ít riêng hơn."
+"Em muốn kể. Nhiều lần. Nhưng mỗi lần định kể, anh lại dừng. Vì câu chuyện là của riêng anh và bà. Vợ anh có thể hiểu — nhưng vợ sẽ không thấm như anh. Câu chuyện sẽ thành ký ức của hai người — và bà sẽ ít riêng hơn."
 
 [pause:800ms]
 
@@ -190,9 +190,9 @@ Chú Việt khẽ gật.
 
 "Có một ngày anh sẽ đi. Khi anh đi, không còn ai biết cụ. Vợ anh sẽ kể với con anh — nhưng chỉ là kể lại lời anh kể. Câu chuyện sẽ phai đi qua hai thế hệ — đến khi không còn ai nhớ cụ là ai, đã có cuộc đời như thế nào."
 
-"Anh sợ điều đó. Anh sợ ngày bà thực sự mất — không phải lúc bà tắt thở, mà là lúc không còn ai trên đời nhớ bà."
+"Em sợ điều đó. Anh sợ ngày bà thực sự mất — không phải lúc bà tắt thở, mà là lúc không còn ai trên đời nhớ bà."
 
-"Đêm nay anh về quê. Để gặp bà một lần nữa. Để nói: 'Bà ơi, cháu vẫn nhớ bà. Khi nào cháu đi, sẽ có ai khác biết bà không? Cháu không chắc. Nhưng cháu vẫn nhớ.'"
+"Vào đêm nay em về quê. Để gặp bà một lần nữa. Để nói: 'Bà ơi, cháu vẫn nhớ bà. Khi nào cháu đi, sẽ có ai khác biết bà không? Cháu không chắc. Nhưng cháu vẫn nhớ.'"
 
 ---
 
@@ -216,7 +216,7 @@ Chú đứng dậy. Cầm cặp. Khăn tay vẫn cầm tay.
 
 Khi đi qua Khải Phong, chú khẽ nói:
 
-"Chào anh. Năm mới đến rồi."
+"Chào anh. Một năm mới đến rồi."
 
 Khải Phong gật đầu. Chú đi tiếp.
 
@@ -238,7 +238,7 @@ Cửa xe khép lại. Xe lăn bánh.
 
 [pause:1200ms]
 
-Bên ngoài, Khải Phong thấy chú Việt đứng giữa cầu Long Biên. Khăn tay cầm trên tay. Chú quay đầu nhìn về phía sông Hồng. Sông tối đen. Sương dày đặc.
+Bên ngoài, Khải Phong thấy chú Việt đứng giữa cầu Long Biên. Khăn tay cầm trên tay. Chú quay đầu nhìn về phía sông Hồng. Sông tối đen. Lớp sương dày đặc.
 
 Có một bóng người khác — phụ nữ, tóc cột thấp — đang đi trên cầu, hướng về phía chú. Người ấy mặc áo dài nâu. Trong tay cầm một cuộn áo len nâu — chưa đan xong.
 
@@ -280,13 +280,13 @@ Khải Phong không nhớ bao nhiêu năm rồi mình chưa về.
 
 Khải Phong lấy năm vật trong túi ra. Đặt cạnh chiếc khăn tay vừa nhận. Sáu vật. Mười đêm. Mười người đã xuống — chín hành khách và Khải Phong chính mình ngày mai.
 
-Khải Phong nhìn ra cửa kính. Cầu Long Biên dưới chân xe. Sông Hồng dưới cầu. Đêm vẫn dài.
+Khải Phong nhìn ra cửa kính. Cầu Long Biên dưới chân xe. Sông Hồng dưới cầu. Đêm hôm nay vẫn còn dài.
 
 Khải Phong khẽ nhắm mắt. Hơi thở chậm xuống một nhịp.
 
 Đồng hồ trên xe kim phút nhích — tách, tách, tách, tách, tách, tách, tách, tách. Tám lần liền sau.
 
-Tới rồi đấy. Có một câu hát từ ông cụ radio ghế đầu vọng tới — không phải "...quê nhà..." nữa. Lần này là một câu khác:
+Tới rồi đấy. Có một câu hát từ ông cụ radio ghế đầu vọng tới — không phải "...quê nhà..." nữa lần nào. Lần này là một câu khác:
 
 "...bà ơi cháu về..."
 

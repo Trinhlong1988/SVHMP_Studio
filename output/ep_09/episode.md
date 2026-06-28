@@ -50,7 +50,7 @@ cross_ep_continuity: Khải Phong có 4 vật + bác tài đã nói câu thứ 3
 
 Đêm tháng Một âm lịch. Đông lạnh dày đặc. Chuyến xe đêm chạy qua một đoạn đường ven núi. Hai bên đèo, sương trắng đặc, hắt qua đèn pha xe thành những vệt sáng cong.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ chín. Trong túi áo có bốn vật — sợi len, sợi lạt, phong bao trống, sợi chỉ trắng.
+Khải Phong ngồi ghế thứ ba. Đêm thứ chín của hành trình. Trong túi áo có bốn vật — sợi len, sợi lạt, phong bao trống, sợi chỉ trắng.
 
 Bác tài lái như mọi khi. Hai bàn tay đeo găng trắng. Ánh mắt liếc gương — đêm nay dừng trên Khải Phong lâu hơn cả đêm trước. Khải Phong cảm thấy.
 
@@ -60,7 +60,7 @@ Xe chậm lại trước một quán bún chả đóng cửa. Ánh đèn vàng y
 
 Một phụ cô gái. Khoảng ba mươi mấy tuổi. Mặc áo khoác dày màu xám, tóc cột thấp. Tay phải xách túi vải nhỏ, tay trái che dù. Dáng người mảnh.
 
-Cô bước lên xe. Khép dù. Đi xuống lối giữa. Ngồi vào ghế thứ năm. Đặt túi vải lên đùi. Lấy ra một vật nhỏ — chiếc băng cassette cũ, vỏ nhựa hơi vỡ ở góc.
+Cô gái khẽ bước lên xe. Khép dù. Đi xuống lối giữa. Ngồi vào ghế thứ năm. Đặt túi vải lên đùi. Lấy ra một vật nhỏ — chiếc băng cassette cũ, vỏ nhựa hơi vỡ ở góc.
 
 Xe lăn bánh.
 
@@ -74,7 +74,7 @@ Khải Phong nhìn cô qua khe ghế. Cô khoảng ba mươi mấy. Mặt thanh 
 
 Cô đặt băng cassette lên đùi. Tay vuốt nhẹ vỏ. Trên mặt vỏ băng có viết tay bằng bút bi: "Bà ngoại hát ru cho cháu Ngọc". Chữ viết tay người già — chậm, run.
 
-Cô áp băng lên ngực. Nhắm mắt.
+Cô gái áp băng lên ngực. Nhắm mắt.
 
 Ông cụ ngồi ghế đầu vặn radio. Tiếng radio rè rè — câu hát "...quê nhà..." quen thuộc.
 
@@ -94,7 +94,7 @@ Cô ghế năm nhìn về phía đó. Mắt cô mở to.
 
 "Máy của bà..." Cô lẩm bẩm.
 
-Đồng hồ trên xe nhích — tách, tách, tách, tách, tách, tách. Sáu lần liền sau. Khải Phong đếm. Đêm thứ chín, sáu lần.
+Đồng hồ trên xe nhích — tách, tách, tách, tách, tách, tách. Sáu lần liền sau. Khải Phong đếm. Đêm thứ chín có sáu lần như thế.
 
 Bác tài không quay đầu. Ánh mắt liếc gương dừng trên Khải Phong. Rất lâu.
 
@@ -104,7 +104,7 @@ Cô ghế năm không nghe tiếng đồng hồ. Vẫn nhìn ngôi nhà sàn.
 
 Xe đi qua đó. Ngôi nhà sàn mất sau núi.
 
-Cô gái quay đầu lại. Cầm băng cassette. Áp lên má.
+Cô gái khẽ quay đầu lại. Cầm băng cassette. Áp lên má.
 
 ---
 
@@ -112,7 +112,7 @@ Cô gái quay đầu lại. Cầm băng cassette. Áp lên má.
 
 [pause:800ms]
 
-"Em tên Ngọc. Năm nay ba mốt. Quê em Lạng Sơn. Bà ngoại em mất bốn năm trước, cũng vào tháng Một âm. Đợt rét đậm. Bà bị viêm phổi, mất sau ba ngày nằm bệnh viện huyện."
+"Em tên Ngọc. Em năm nay ba mốt tuổi. Quê em Lạng Sơn. Bà ngoại em mất bốn năm trước, cũng vào tháng Một âm. Đợt rét đậm. Bà bị viêm phổi, mất sau ba ngày nằm bệnh viện huyện."
 
 Giọng cô rất nhỏ. Khô.
 
@@ -124,15 +124,15 @@ Cô ngừng. Vuốt vỏ băng.
 
 [pause:600ms]
 
-"Mấy năm em không về kịp hè — bận con nhỏ, bận công việc. Cuối năm tính về Tết — lại bận. Tết năm bà mất, em hứa: 'Tết này con đưa con của con về cho bà. Bà chưa gặp chắt.'"
+"Mấy năm em không về kịp hè — bận con nhỏ, bận công việc. Cuối năm tính về Tết — lại bận. Tết năm bà mất, em hứa: 'Tết này con đưa con của con về cho bà. Bà cụ ấy chưa gặp chắt.'"
 
-"Bà bảo: 'Bà chờ cháu.'"
+"Người bà bảo: 'Bà chờ cháu.'"
 
 [pause:800ms]
 
-"Tết em đi du lịch với gia đình chồng ở Đà Lạt. Không về quê. Em nghĩ: 'Hè con sẽ về. Bà còn khoẻ, không sao.'"
+"Tết em đi du lịch với gia đình chồng ở Đà Lạt. Không về quê. Em nghĩ: 'Hè con sẽ về. Bà cụ còn khoẻ, không sao.'"
 
-"Tháng Một âm, em đang ở Hà Nội. Em gái nhắn: 'Chị ơi bà ngoại nhập viện viêm phổi. Bác sĩ bảo bà yếu lắm rồi.' Em đặt vé xe luôn. Lên xe đêm. Đến bệnh viện huyện sáng. Bà đã đi đêm trước."
+"Tháng Một âm, em đang ở Hà Nội. Em gái nhắn: 'Chị ơi bà ngoại nhập viện viêm phổi. Bác sĩ bảo bà yếu lắm rồi.' Em đặt vé xe luôn. Lên xe đêm. Đến bệnh viện huyện sáng. Bà cụ đã đi đêm trước."
 
 [pause:1500ms]
 
@@ -148,7 +148,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Cô gái khẽ gật đầu. Mắt cô khẽ ngấn nước.
+Cô gái khẽ gật đầu một cái. Mắt cô khẽ ngấn nước.
 
 "Em nhớ, bác."
 
@@ -168,7 +168,7 @@ Cô gái khẽ gật đầu. Mắt cô khẽ ngấn nước.
 
 "Bà ngoại em là người Tày. Bà nói tiếng Tày với em từ bé. Em hiểu nhưng không nói được nữa — lâu rồi không tập. Trên băng cassette, có một đoạn bà nói tiếng Tày — bà bảo: 'Cháu nhớ tiếng quê mình. Đừng quên.'"
 
-"Em quên rồi. Em chỉ nhớ vài câu chào. Mỗi lần em nghe đoạn đó, em xấu hổ. Vì em đã quên tiếng bà."
+"Em đã quên rồi. Em chỉ nhớ vài câu chào. Mỗi lần em nghe đoạn đó, em xấu hổ. Vì em đã quên tiếng bà."
 
 [pause:600ms]
 
@@ -192,11 +192,11 @@ Cô gái khẽ gật đầu. Mắt cô khẽ ngấn nước.
 
 [pause:800ms]
 
-"Năm nay em về quê đúng tháng Một âm. Một mình. Em sẽ đem băng đến nhà sàn cũ của bà. Em sẽ ngồi trên hiên nhà — chỗ bà vẫn ngồi võng — bật băng cho bà nghe lại. Em sẽ nói: 'Bà ơi cháu về rồi. Chắt của bà đã năm tuổi. Cháu sẽ về thường xuyên hơn.'"
+"Năm nay em về quê đúng tháng Một âm. Một mình. Em sẽ đem băng đến nhà sàn cũ của bà. Cháu sẽ ngồi trên hiên nhà — chỗ bà vẫn ngồi võng — bật băng cho bà nghe lại. Em sẽ nói: 'Bà ơi cháu về rồi. Chắt của bà đã năm tuổi. Cháu sẽ về thường xuyên hơn.'"
 
 [pause:800ms]
 
-"Chồng em không hiểu vì sao em đi một mình. Em không kể đủ. Em chỉ bảo: 'Em về quê thắp hương bà. Em đi hai ngày.' Chồng em gật. Anh ấy là người thành phố — không có quê nội ngoại ở vùng núi. Anh ấy không hiểu việc đi xa thắp hương."
+"Chồng em không hiểu vì sao em đi một mình. Em không kể đủ. Cháu chỉ bảo: 'Em về quê thắp hương bà. Em đi hai ngày.' Chồng em gật. Anh ấy là người thành phố — không có quê nội ngoại ở vùng núi. Anh ấy không hiểu việc đi xa thắp hương."
 
 "Con em năm tuổi đã hỏi: 'Mẹ ơi bà cố ở đâu?' Em chỉ vào ngực mình. Con em không hiểu. Em bảo: 'Bà ở trong lòng mẹ. Khi con lớn, mẹ kể cho con nghe.' Con em không hỏi nữa. Nhưng con thường hát theo băng cassette — bài cò bay. Con không thuộc lời. Nhưng con cố hát."
 
@@ -230,7 +230,7 @@ Trước khi xuống, cô quay đầu nhìn bác tài. Rồi nhìn lên đồng 
 
 Đồng hồ chỉ bảy giờ mười phút.
 
-Cô hỏi:
+Cô gái khẽ hỏi nhỏ tiếp:
 
 "Bác có còn ai để gọi không?"
 
@@ -238,21 +238,21 @@ Bác tài không trả lời. Bác khẽ nói:
 
 "Chưa tới lúc."
 
-Cô gái khẽ gật đầu. Bước xuống dưới. Cửa xe khép lại. Xe lăn bánh.
+Cô gái khẽ gật đầu một cái. Bước xuống dưới. Cửa xe khép lại. Xe lăn bánh.
 
 [pause:1000ms]
 
-Bên ngoài, cô đi vào con đường đất ven núi. Túi vải xách bên hông. Phía xa, nhà sàn đèn dầu. Trên hiên, cụ bà vẫn ngồi võng, tay đặt máy cassette. Cô lên đến hiên. Cụ bà ngẩng đầu. Hai cái bóng nhìn nhau qua sương.
+Bên ngoài, cô đi vào con đường đất ven núi. Túi vải xách bên hông. Phía xa, nhà sàn đèn dầu. Trên hiên, cụ bà vẫn ngồi võng, tay đặt máy cassette. Cô gái bước lên đến hiên. Cụ bà ngẩng đầu. Hai cái bóng nhìn nhau qua sương.
 
-Khải Phong chớp mắt. Cụ bà không còn. Cô đặt băng lên máy.
+Khải Phong chớp mắt. Cụ bà không còn. Cô gái đặt băng lên máy.
 
 [pause:1000ms]
 
-Cô bấm nút Play. Lâu. Băng quay rè rè.
+Cô gái khẽ bấm nút Play. Lâu. Băng quay rè rè.
 
 Không có tiếng. Băng có lẽ đã hỏng. Hoặc pin đã hết.
 
-Cô vẫn ngồi đó. Tay đặt lên máy. Mắt nhìn xuống dưới. Như chờ tiếng nào đó cất lên.
+Cô gái vẫn ngồi yên đó. Tay đặt lên máy. Mắt nhìn xuống dưới. Như chờ tiếng nào đó cất lên.
 
 Khải Phong nghe — qua sương, qua tiếng gió núi — có một giọng phụ nữ rất nhẹ. Tiếng Tày. Mấy câu. Không rõ ràng.
 
@@ -292,7 +292,7 @@ Có gì đó đang lùi xa.
 
 [pause:1500ms]
 
-Khải Phong nhìn ra cửa kính. Đêm vẫn dài. Sương núi vẫn dày.
+Khải Phong nhìn ra cửa kính. Đêm hôm nay vẫn còn dài. Lớp sương núi vẫn còn dày.
 
 Trên ghế lái, bác tài liếc gương lần nữa. Ánh mắt không buồn. Không vui. Chỉ là nhìn.
 
@@ -306,7 +306,7 @@ Khải Phong lật pin. Mặt sau có một dấu in nhỏ — bóng mờ, khôn
 
 Khải Phong đưa pin lên gần ngọn đèn nhỏ trong xe. Cố nhìn dấu vân tay.
 
-Đó là dấu vân tay phụ cô gái — nhỏ, mảnh. Có một vết sẹo nhỏ ở đầu ngón cái — vết hình lưỡi liềm. Khải Phong nhớ — bà ngoại Khải Phong. Bà có vết sẹo đó. Bà bị bỏng dầu khi nấu cơm hồi trẻ.
+Đó là dấu vân tay phụ cô gái — nhỏ, mảnh. Có một vết sẹo nhỏ ở đầu ngón cái — vết hình lưỡi liềm. Khải Phong nhớ — bà ngoại Khải Phong. Bà cụ có vết sẹo đó. Bà bị bỏng dầu khi nấu cơm hồi trẻ.
 
 Bao giờ bà ngoại Khải Phong đã chạm vào viên pin này? Khải Phong không nhớ. Khải Phong chưa từng có máy cassette. Hay đã có? Khải Phong không chắc.
 

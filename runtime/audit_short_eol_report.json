@@ -1,34 +1,6 @@
 {
-  "total": 42,
+  "total": 33,
   "eps": [
-    [
-      6,
-      2
-    ],
-    [
-      7,
-      2
-    ],
-    [
-      8,
-      1
-    ],
-    [
-      9,
-      1
-    ],
-    [
-      10,
-      1
-    ],
-    [
-      11,
-      1
-    ],
-    [
-      14,
-      1
-    ],
     [
       16,
       2
@@ -135,78 +107,6 @@
     ]
   ],
   "violations": [
-    {
-      "line": 65,
-      "word": "nhỏ",
-      "context": "Cụ bà ghế thứ tư khẽ ngân theo. Rất rất nhỏ. Như",
-      "sentence_words": 3,
-      "severity": "HIGH",
-      "ep": 6
-    },
-    {
-      "line": 157,
-      "word": "lặng",
-      "context": "\"Cháu lặng. Chá",
-      "sentence_words": 2,
-      "severity": "HIGH",
-      "ep": 6
-    },
-    {
-      "line": 63,
-      "word": "tan",
-      "context": "câu hát quen thuộc. \"...quê nhà...\" rồi tan.",
-      "sentence_words": 3,
-      "severity": "HIGH",
-      "ep": 7
-    },
-    {
-      "line": 175,
-      "word": "ra",
-      "context": "n từ ngôi chùa nhỏ xa. Một hồi. Rồi tan ra.",
-      "sentence_words": 3,
-      "severity": "HIGH",
-      "ep": 7
-    },
-    {
-      "line": 83,
-      "word": "đó",
-      "context": "\"Bà ngồi đó...\"",
-      "sentence_words": 3,
-      "severity": "HIGH",
-      "ep": 8
-    },
-    {
-      "line": 157,
-      "word": "rồi",
-      "context": "\"Em quên rồi. Em",
-      "sentence_words": 3,
-      "severity": "HIGH",
-      "ep": 9
-    },
-    {
-      "line": 271,
-      "word": "nữa",
-      "context": "u vọng tới — không phải \"...quê nhà...\" nữa. Lần",
-      "sentence_words": 2,
-      "severity": "HIGH",
-      "ep": 10
-    },
-    {
-      "line": 91,
-      "word": "to",
-      "context": "Anh nói rất nhỏ. Không rất to. Khô",
-      "sentence_words": 3,
-      "severity": "HIGH",
-      "ep": 11
-    },
-    {
-      "line": 115,
-      "word": "qua",
-      "context": "\"Em đi qua. Em",
-      "sentence_words": 3,
-      "severity": "HIGH",
-      "ep": 14
-    },
     {
       "line": 187,
       "word": "ra",
