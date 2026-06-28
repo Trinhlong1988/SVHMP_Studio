@@ -54,17 +54,17 @@ arc_design_compliant: bible/21 R33-R40
 
 Sau cơn mưa chiều. Đêm xuống nhanh. Xe đêm rẽ vào đoạn đường ven sông Hồng đoạn Phú T, Hà Nội. Hàng cây ven đường còn đẫm — đèn pha quét lên thân cây ướt. Đèn pha quét lên cánh đồng ngô xanh — ngô đã cao nửa người — gió thổi nghiêng ngọn.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi bảy. Trong túi áo gió Khải Phong — hai mươi sáu vật. Đêm qua thêm nhãn ngày mua hộp thước T "06/2017".
+Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi bảy của hành trình. Trong túi áo gió Khải Phong — hai mươi sáu vật. Đêm qua thêm nhãn ngày mua hộp thước T "06/2017".
 
 Bác tài lái.
 
-Mưa rơi nhẹ nhàng. Mặt sông Hồng phía bên trái đường — phẳng — đèn cầu xa chiếu xuống nước vàng nhạt.
+Trời mưa rơi nhẹ nhàng. Mặt sông Hồng phía bên trái đường — phẳng — đèn cầu xa chiếu xuống nước vàng nhạt.
 
 Xe chậm lại trước một ngôi trường tiểu học xưa — biển gỗ mun "Trường tiểu học Vĩnh Lộc" — cổng sắt đã đóng — đèn vàng treo cột cổng còn sáng. Tường trường có dấu vẽ phấn của học sinh — chưa kịp lau.
 
 Một phụ nữ đứng đợi bên cổng. Khoảng bốn mươi lăm tuổi. Áo dạ trắng — quần tây xanh đậm. Cách ăn mặc Việt kiều — sang trọng nhẹ — không quê. Tay phải cầm khung ảnh nhỏ — gói trong vải lụa hồng nhạt.
 
-Cô bước lên xe. Đi qua hàng ghế đầu — chân chậm — vai cô gầy. Ngồi xuống ghế thứ sáu.
+Cô gái khẽ bước lên xe. Đi qua hàng ghế đầu — chân chậm — vai cô gầy. Ngồi xuống ghế thứ sáu.
 
 Đặt khung ảnh lên đùi. Mở vải lụa. Khung ảnh gỗ nhỏ — bên trong tấm ảnh đen trắng — chụp một lớp tiểu học — khoảng ba mươi em — cô giáo đứng giữa.
 
@@ -76,7 +76,7 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Cô gái ngồi yên lặng. Vuốt khung ảnh. Đầu ngón tay cô mảnh — móng tay sơn nhạt — bàn tay người đã sống nước ngoài lâu.
+Cô gái khẽ ngồi yên lặng. Vuốt khung ảnh. Đầu ngón tay cô mảnh — móng tay sơn nhạt — bàn tay người đã sống nước ngoài lâu.
 
 Khải Phong quan sát từ ghế ba. Cô bốn lăm — mặt sáng — trang điểm nhẹ — tóc nhuộm hạt dẻ — không phải tóc đen thuần Việt. Có nét Việt kiều — có lẽ ở Hoa Kỳ hoặc Úc lâu năm.
 
@@ -104,7 +104,7 @@ Cô ghế sáu nhìn về phía đó. Mắt cô ngấn lệ.
 
 "Hằng..."
 
-Cô nói rất nhỏ.
+Cô gái nói rất nhỏ nhẹ.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
@@ -112,7 +112,7 @@ Cô nói rất nhỏ.
 
 Xe đi qua đó. Nhà gạch khuất.
 
-Cô quay đầu lại. Vuốt khung ảnh.
+Cô gái khẽ quay đầu lại. Vuốt khung ảnh.
 
 ---
 
@@ -120,7 +120,7 @@ Cô quay đầu lại. Vuốt khung ảnh.
 
 [pause:1000ms]
 
-"Em là Mỹ Linh. Bốn mươi lăm tuổi. Em sinh ở Phú Thọ — Vĩnh Lộc. Em sống Mỹ từ năm em hai mươi mốt. Em vừa về Việt Nam tuần trước."
+"Em là Mỹ Linh. Bốn mươi lăm tuổi. Em sinh ở Phú Thọ — Vĩnh Lộc. Cô gái sống Hoa Kỳ từ năm em hai mươi mốt. Em vừa về Việt Nam tuần trước."
 
 Giọng cô có nét Việt kiều — nhẹ — đôi khi chèn cách phát âm tiếng Anh.
 
@@ -166,7 +166,7 @@ Giọng cô có nét Việt kiều — nhẹ — đôi khi chèn cách phát âm
 
 "Tối em viết tin nhắn ngắn: 'Chị ơi em sẽ về Việt Nam Tết tới — em đi khám — xem em có hợp hiến chị không. Em xin lỗi em đang bận — em viết dài sau.'"
 
-"Em không viết dài sau. Em quên. Em bận con — bận công việc — bận chuẩn bị di chuyển bộ phận."
+"Em không viết dài sau. Cô gái quên hẳn câu chuyện. Em bận con — bận công việc — bận chuẩn bị di chuyển bộ phận."
 
 "Tết năm đó em về Việt Nam — em đến nhà Hằng — em đem quà. Em quên hỏi về việc hiến thận — em chỉ uống cà phê — hỏi sức khỏe — Hằng bảo: 'Đỡ rồi em — chạy thận quen.' Em tin — không hỏi sâu — em định Tết sau hỏi."
 
@@ -176,11 +176,11 @@ Giọng cô có nét Việt kiều — nhẹ — đôi khi chèn cách phát âm
 
 "Năm sau nữa — Hằng nhắn: 'Linh ơi chị nặng hơn — chuyển bệnh viện Bạch Mai tuần sau. Chị xin em — em về thử khám không?' Em đọc. Em định gọi điện — em bận họp — em định gọi tối."
 
-"Tối em quên gọi. Em định ngày mai. Mai bận. Tuần sau bận. Hai tháng trôi — em không gọi."
+"Vào tối em quên gọi. Em định ngày mai. Mai bận. Tuần sau bận. Hai tháng trôi — em không gọi."
 
-"Một tối — em nhận tin nhắn từ chồng Hằng. 'Linh ơi chị Hằng đã đi sáng nay. Anh xin báo em.'"
+"Một tối — em nhận tin nhắn từ chồng Hằng. 'Linh ơi chị Hằng đã đi sáng nay. Người đàn ông xin báo em.'"
 
-"Em sốc. Em không khóc trước chồng. Em ngồi văn phòng — đêm — khóc một mình."
+"Em sốc. Cô gái không khóc trước chồng. Em ngồi văn phòng — đêm — khóc một mình."
 
 [pause:1500ms]
 
@@ -198,7 +198,7 @@ Bác tài cất lời.
 
 Mỹ Linh gật. Lệ rơi xuống khung.
 
-"Em nhớ. Em hứa Hằng giúp khi cần — em không giữ lại. Em không về thử hiến thận — em không gọi điện. Em không thể chuộc Hằng — em chỉ có thể đem khung trả về trường tiểu học hai đứa em học chung."
+"Em nhớ. Cô gái hứa Hằng giúp khi cần — em không giữ lại. Em không về thử hiến thận — em không gọi điện. Em không thể chuộc Hằng — em chỉ có thể đem khung trả về trường tiểu học hai đứa em học chung."
 
 [pause:1200ms]
 
@@ -220,17 +220,17 @@ Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim
 
 Bác tài: "Chưa tới lúc."
 
-Cô bước xuống dưới.
+Cô gái bước xuống dưới đường.
 
 [pause:1200ms]
 
 Bên ngoài — Mỹ Linh đi vào sân trường tiểu học Vĩnh Lộc — bảo vệ đã mở cổng — đèn hành lang còn sáng. Văn phòng giáo viên tầng một — cửa đã mở.
 
-Cô đến. Đặt khung ảnh lên bàn giáo viên — chính giữa. Cúi đầu một lúc.
+Cô gái đã đến nơi đó. Đặt khung ảnh lên bàn giáo viên — chính giữa. Cúi đầu một lúc.
 
 Khải Phong chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên bàn giáo viên — Hằng xuất hiện — áo bà ba xanh — đứng cạnh khung — vuốt tóc Mỹ Linh. Mỉm cười nhẹ — như tha thứ.
 
-Khải Phong chớp lần nữa. Hằng tan ra.
+Khải Phong chớp lần nữa. Người tên Hằng tan ra.
 
 Mỹ Linh ngẩng đầu. Lau lệ. Đi ra cửa văn phòng.
 
@@ -270,8 +270,8 @@ Trước tin nhắn đó — buổi chiều — Hạ Vy có nhắn không?
 
 Khải Phong cố nhớ. Có. Buổi chiều khoảng năm giờ — Hạ Vy nhắn: "Anh ơi tối nay anh có rảnh không? Em muốn bàn chuyện cưới."
 
-Bác tài liếc gương. "Đêm hai mươi bảy. Con bắt đầu nhớ tin nhắn buổi chiều của Hạ Vy. Đêm sau con sẽ nhớ — bữa cơm chiều có gì đặc biệt — vì sao Hạ Vy muốn bàn cưới đêm đó. Đừng vội."
+Bác tài liếc gương. "Vào đêm hai mươi bảy. Con bắt đầu nhớ tin nhắn buổi chiều của Hạ Vy. Đêm sau con sẽ nhớ — bữa cơm chiều có gì đặc biệt — vì sao Hạ Vy muốn bàn cưới đêm đó. Đừng vội."
 
 Khải Phong gật. Lệ rơi xuống ghế — không ai thấy.
 
-Đêm thứ hai mươi bảy. Xe đi tiếp. Phía sau — Phú Thọ khuất. Mỹ Linh ở lại trường tiểu học — đứng ngoài cửa văn phòng — nhìn khung ảnh trên bàn.
+Đêm thứ hai mươi bảy của hành trình. Xe đi tiếp. Phía sau — Phú Thọ khuất. Mỹ Linh ở lại trường tiểu học — đứng ngoài cửa văn phòng — nhìn khung ảnh trên bàn.

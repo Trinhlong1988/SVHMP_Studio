@@ -55,7 +55,7 @@ milestone_special: S1 FINALE - 50 vật xếp thành bản đồ - kết thúc t
 
 Phố vắng tanh. Đêm thưa. Xe đêm đi qua đoạn Vĩnh Bảo — quê Hạ Vy, Hà Nội — đèn pha hắt lên hàng cây cao quá đầu — bóng đổ dài trên mặt đường ướt. Đèn pha quét lên hàng phi lao biển.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ năm mươi. Milestone — S1 FINALE.
+Khải Phong ngồi ghế thứ ba. Đêm thứ năm mươi của hành trình. Milestone — S1 FINALE.
 
 Trong túi áo gió Khải Phong — bốn mươi chín vật.
 
@@ -71,7 +71,7 @@ Khải Phong nhói. Bác tài đem anh về chính nhà Hạ Vy.
 
 Bên cổng nhà — một phụ nữ trẻ đứng đợi. Khoảng hai mươi bốn tuổi. Áo dài hồng — phong cách áo dài cô dâu. Tóc cột thấp xuống. Tay phải cầm thiệp cưới giấy — phong bì đỏ.
 
-Khải Phong nhìn — cô gái này — Khải Phong biết — Hạ Nhi. Anh gái Hạ Vy.
+Khải Phong nhìn — cô gái này — Khải Phong biết — Hạ Nhi. Người chị gái Hạ Vy.
 
 Hạ Nhi vào xe. Đi qua mấy hàng ghế trước — không nhìn ai — như quen đường. Ngồi xuống ghế thứ ba — bên cạnh Khải Phong.
 
@@ -81,7 +81,7 @@ Hạ Nhi quay sang Khải Phong. Mắt anh chạm anh — không sốc — như 
 
 Em mỉm cười. Bảo:
 
-"Anh Khải Phong. Em đã tìm anh tám năm. Đêm nay em gặp được anh."
+"Người tên Khải Phong. Em đã tìm anh tám năm. Đêm nay em gặp được anh."
 
 Khải Phong sốc. Anh không phải passenger thường — anh là người đời thực — anh gái Hạ Vy.
 
@@ -105,7 +105,7 @@ Phong bì em giữ lại — thiệp cưới Hạ Nhi — mời tháng năm sang
 
 Bác tài liếc gương. Không nói nữa thôi.
 
-Hạ Nhi quay sang Khải Phong. Anh nói tiếp:
+Hạ Nhi quay sang Khải Phong. Người đàn ông nói tiếp:
 
 "Anh biết em không lên xe đêm thường. Em ở Sài Gòn — em đang ngủ trong giường em. Đêm nay em mơ — em mơ thấy chuyến xe của chị Hạ Vy — em được phép lên xe gặp anh."
 
@@ -121,7 +121,7 @@ Hai chị em — Hạ Vy ngoài cửa sổ — Hạ Nhi trên xe — cùng nhìn
 
 Khải Phong sốc. Lần đầu trong năm mươi đêm — anh nhìn rõ mặt Hạ Vy. Mặt anh không mờ nữa.
 
-"Chị..."
+"Người chị Hạ Nhi ơi..."
 
 Hạ Nhi nói nhỏ. Lệ rơi nhanh.
 
@@ -143,7 +143,7 @@ Hạ Nhi quay sang Khải Phong. Lệ trên má.
 
 Hạ Nhi nói tiếp — giọng đều — chậm.
 
-"Anh Khải Phong. Em hai mươi tư tuổi. Em ở Sài Gòn. Em làm thiết kế — em sắp cưới tháng năm sang năm. Em mời anh dự cưới — em đã gửi thiệp PDF và mua vé máy bay cho anh."
+"Người tên Khải Phong. Em hai mươi tư tuổi. Cô gái ở thành phố Sài Gòn. Em làm thiết kế — em sắp cưới tháng năm sang năm. Em mời anh dự cưới — em đã gửi thiệp PDF và mua vé máy bay cho anh."
 
 "Anh không trả lời em ba tháng. Em không trách — em hiểu — anh ngại."
 
@@ -153,7 +153,7 @@ Hạ Nhi nói tiếp — giọng đều — chậm.
 
 Khải Phong nhói. Anh nói chậm — giọng anh khàn vì lệ.
 
-"Anh sẽ đi. Anh xin lỗi em không trả lời. Anh sẽ đi dự cưới em."
+"Em sẽ đến. Em xin lỗi em không trả lời. Anh sẽ đi dự cưới em."
 
 Hạ Nhi gật. Cười nhẹ nhàng.
 
@@ -169,13 +169,13 @@ Hạ Nhi gật. Cười nhẹ nhàng.
 
 [pause:1500ms]
 
-Khải Phong gật. "Anh sẽ đi. Anh sẽ ngồi cùng bàn bố em. Anh sẽ gọi bố em chú Hà. Anh sẽ xin lỗi tám năm anh không liên lạc."
+Khải Phong gật. "Em sẽ đến. Em sẽ ngồi cùng bàn bố em. Anh sẽ gọi bố em chú Hà. Anh sẽ xin lỗi tám năm anh không liên lạc."
 
-Hạ Nhi cười. "Bố em không cần xin lỗi. Bố em chỉ cần thấy anh. Anh đến — đủ."
+Hạ Nhi cười. "Bố em không cần xin lỗi. Bố em chỉ cần thấy anh. Người đàn ông đến — đủ rồi."
 
 Anh vuốt phong bì thiệp cưới. Đưa Khải Phong.
 
-"Anh cầm. Đây là thiệp gốc — em đã in thật — không phải PDF. Em định em sẽ gửi anh sáng mai qua bưu điện. Em đem theo lên xe — em gửi anh trực tiếp."
+"Em cầm lấy. Đây là thiệp gốc — em đã in thật — không phải PDF. Em định em sẽ gửi anh sáng mai qua bưu điện. Em đem theo lên xe — em gửi anh trực tiếp."
 
 Khải Phong cầm phong bì. Mở. Bên trong — thiệp cưới in đẹp — chữ vàng — tên hai vợ chồng tương lai.
 
@@ -183,7 +183,7 @@ Khải Phong cầm phong bì. Mở. Bên trong — thiệp cưới in đẹp —
 
 Em nói tiếp:
 
-"Anh Khải Phong — em đã thấy chị em đêm nay qua cửa sổ xe. Chị em đẹp. Em không gặp chị em sống — em chỉ thấy ảnh. Đêm nay em thấy chị em thật."
+"Anh Khải Phong — em đã thấy chị em đêm nay qua cửa sổ xe. Người chị em đẹp lắm. Em không gặp chị em sống — em chỉ thấy ảnh. Đêm nay em thấy chị em thật."
 
 "Cảm ơn anh đã đem em đến chuyến xe đêm. Em không phải hành khách — em chỉ đi gặp anh."
 
@@ -231,7 +231,7 @@ Khải Phong chớp mắt — nhìn qua cửa sổ. Hạ Vy xuất hiện trên 
 
 Khải Phong nhìn rõ mặt Hạ Vy — anh đẹp như trong ký ức — không mờ.
 
-Hạ Vy quay sang xe. Anh nhìn Khải Phong qua cửa sổ. Anh mỉm cười. Anh vẫy tay một lần.
+Hạ Vy quay sang xe. Anh nhìn Khải Phong qua cửa sổ. Em mỉm cười nhẹ. Em vẫy tay một lần.
 
 Khải Phong vẫy tay lại. Lệ rơi xuống dưới.
 
@@ -255,7 +255,7 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 Khải Phong ngồi yên. Lấy năm mươi vật ra khỏi túi. Đặt lên ghế trống bên cạnh — xếp thành hàng dài.
 
-Năm mươi vật. Năm mươi đêm. Năm mươi câu chuyện.
+Có năm mươi vật. Có năm mươi đêm. Có năm mươi câu chuyện.
 
 Khải Phong phân loại:
 - Bốn vật cúc (EP13-19 cluster cúc symbol).
@@ -293,11 +293,11 @@ Khải Phong gật. Lệ rơi không kìm.
 
 Khải Phong cất năm mươi vật vào túi. Thiệp cưới Hạ Nhi đặt riêng trong túi trong cùng — vật quan trọng.
 
-Đêm thứ năm mươi. Khải Phong nhìn ra cửa sổ — bên ngoài — vẫn chưa sáng lên. Đêm tháng tư.
+Đêm thứ năm mươi của hành trình. Khải Phong nhìn ra cửa sổ — bên ngoài — vẫn chưa sáng lên. Đêm tháng tư.
 
 Khải Phong đã đi qua một nửa chuyến xe. Còn bốn mươi đêm nữa.
 
-Đêm năm mươi đặc biệt:
+Vào đêm năm mươi đặc biệt:
 - Khải Phong gặp Hạ Nhi qua giấc mơ anh
 - Khải Phong nhìn rõ mặt Hạ Vy lần đầu
 - Khải Phong quyết đi dự cưới Hạ Nhi
@@ -308,6 +308,6 @@ Khải Phong đã đi qua một nửa chuyến xe. Còn bốn mươi đêm nữa
 
 Bác tài liếc gương lần nữa — không nói thêm. Bác chỉ nhịp ngón trỏ trên vô-lăng ba cái — đồng cảm.
 
-Xe đi tiếp về phía đường vành đai. Mưa đã hết rồi. Trời chưa sáng lên. Phía sau — Vĩnh Bảo khuất — Hạ Nhi đã về Sài Gòn qua giấc mơ — Hạ Vy đã tan trên hiên nhà bố mẹ em.
+Xe đi tiếp về phía đường vành đai. Trời mưa đã hết hẳn. Trời chưa sáng lên. Phía sau — Vĩnh Bảo khuất — Hạ Nhi đã về Sài Gòn qua giấc mơ — Hạ Vy đã tan trên hiên nhà bố mẹ em.
 
 Khải Phong còn một mình — ghế thứ ba — chuyến xe đêm — Season 2 sẽ bắt đầu đêm năm mươi mốt.

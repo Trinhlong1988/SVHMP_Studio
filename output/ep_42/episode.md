@@ -52,9 +52,9 @@ arc_design_compliant: bible/21 R33-R42 + R41
 
 [pause:800ms]
 
-Tháng tư. Đêm vừa khuya. Xe đêm rẽ vào đoạn ven sông sông Tiền, Bến Tre. Đèn pha cắt qua màn sương — chiếu lên hàng dừa nước bên đường.
+Tháng tư. Trời đêm vừa khuya. Xe đêm rẽ vào đoạn ven sông sông Tiền, Bến Tre. Đèn pha cắt qua màn sương — chiếu lên hàng dừa nước bên đường.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi hai. Trong túi áo gió Khải Phong — bốn mươi mốt vật.
+Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi hai của hành trình. Trong túi áo gió Khải Phong — bốn mươi mốt vật.
 
 Bác tài lái.
 
@@ -62,7 +62,7 @@ Mưa rải nhẹ — không khí ẩm nóng miền Tây. Mặt sông Tiền tĩn
 
 Xe chậm lại trước một quán cà phê ven sông — biển "Cà phê Bến Tre" — cửa kính đã đóng — đèn vàng trong quán còn sáng yếu. Một người đàn ông đứng đợi bên cửa. Khoảng bốn mươi hai tuổi. Áo sơ mi trắng — quần tây đen. Tay phải cầm hộp nhung đỏ nhỏ.
 
-Anh vào xe. Đi qua mấy hàng ghế trước — chân chậm lại. Ngồi xuống ghế thứ tám.
+Người đàn ông vào xe. Đi qua mấy hàng ghế trước — chân chậm lại. Ngồi xuống ghế thứ tám.
 
 Mở hộp nhung. Lấy ra một chiếc nhẫn vàng nhỏ — nhẫn cưới phụ cô gái — có khắc tên "H" bên trong.
 
@@ -74,11 +74,11 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Anh ngồi yên. Vuốt nhẫn vàng. Đầu ngón tay anh nhẹ — như sợ làm trầy.
+Người đàn ông ngồi yên. Vuốt nhẫn vàng. Đầu ngón tay anh nhẹ — như sợ làm trầy.
 
 Khải Phong quan sát từ ghế ba. Anh bốn mươi hai — tóc đã bạc một vài sợi — mắt buồn — vẻ người mới mất người thân.
 
-Nhẫn anh giữ lại — Khải Phong nhìn ra — nhẫn cưới — có khắc từng chữ "H" — không phải nhẫn anh.
+Nhẫn anh giữ lại — Khải Phong nhìn ra — nhẫn cưới — có khắc dòng chữ in chìm "H" — không phải nhẫn anh.
 
 Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng — tắt.
 
@@ -102,7 +102,7 @@ Anh ghế tám nhìn về phía đó.
 
 "Hằng..."
 
-Anh nói rất nhỏ.
+Người đàn ông nói rất nhỏ.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
@@ -110,7 +110,7 @@ Anh nói rất nhỏ.
 
 Xe đi qua đó. Nhà gạch khuất.
 
-Anh quay đầu lại. Vuốt nhẫn.
+Người đàn ông quay đầu lại. Vuốt nhẫn.
 
 ---
 
@@ -132,7 +132,7 @@ Giọng anh trầm.
 
 "Bảy giờ rưỡi — em về — đoạn đường ven sông — xe tải vào đường nhỏ không đúng. Em va. Em mất trong phòng cấp cứu bệnh viện Bến Tre lúc chín giờ sáng."
 
-"Tôi đang ở vườn dừa khi nhận điện thoại bệnh viện. Tôi chạy. Tôi đến bệnh viện lúc em đã đi."
+"Tôi đang ở vườn dừa khi nhận điện thoại bệnh viện. Người đàn ông chạy ngay. Tôi đến bệnh viện lúc em đã đi."
 
 [pause:1200ms]
 
@@ -162,7 +162,7 @@ Giọng anh trầm.
 
 "Bảy giờ rưỡi — điện thoại reo. Bệnh viện Bến Tre. Giọng bác người. Em đã đi trong phòng cấp cứu — chấn thương sọ não nặng — không ai gọi em kịp."
 
-"Tôi không nhớ tôi mặc gì lúc chạy đến viện. Tôi không nhớ tôi lái xe thế nào. Tôi chỉ nhớ tay tôi run khi y tá đưa nhẫn em ra — nhẫn còn ấm vì em vừa đeo sáng đó."
+"Tôi không nhớ tôi mặc gì lúc chạy đến viện. Người đàn ông không nhớ tôi lái xe thế nào. Tôi chỉ nhớ tay tôi run khi y tá đưa nhẫn em ra — nhẫn còn ấm vì em vừa đeo sáng đó."
 
 [pause:1500ms]
 
@@ -194,17 +194,17 @@ Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim
 
 Bác tài: "Chưa tới lúc."
 
-Anh bước xuống dưới.
+Người đàn ông bước xuống dưới.
 
 [pause:1200ms]
 
 Bên ngoài — Hoàng Nam đi vào quán cà phê Bến Tre. Bảo vệ quán đã mở cửa — đèn trong còn sáng yếu. Hộp "lost items" gỗ đặt cạnh quầy.
 
-Anh đến. Đặt hộp nhung vào hộp lost items. Cúi đầu.
+Người đàn ông đến nơi đó. Đặt hộp nhung vào hộp lost items. Cúi đầu.
 
 Khải Phong chớp mắt — nhìn qua cửa sổ. Bên hộp — Hằng xuất hiện — phụ nữ ba mươi tám áo dài hồng — vuốt vai chồng. Mỉm cười nhẹ nhàng.
 
-Khải Phong chớp lần nữa. Hằng tan ra.
+Khải Phong chớp lần nữa. Người tên Hằng tan đi.
 
 Hoàng Nam ngẩng đầu. Đi ra cửa.
 
@@ -242,11 +242,11 @@ Khải Phong đeo nhẫn anh — ngón út tay trái — vừa khít vì ngón a
 
 Khải Phong vuốt ngón út tay trái — nhẫn vẫn ở đó. Nhẫn anh — Khải Phong đeo tám năm.
 
-Bác tài liếc gương. "Đêm bốn mươi hai. Con đã nhớ con đeo nhẫn Hạ Vy. Đêm sau con sẽ nhớ — điện thoại Hạ Vy giờ ở đâu — em trả bố mẹ Hạ Vy hay giữ riêng. Đừng vội."
+Bác tài liếc gương. "Vào đêm bốn mươi hai. Con đã nhớ con đeo nhẫn Hạ Vy. Đêm sau con sẽ nhớ — điện thoại Hạ Vy giờ ở đâu — em trả bố mẹ Hạ Vy hay giữ riêng. Đừng vội."
 
 Khải Phong gật. Lệ rơi xuống dưới.
 
-Đêm thứ bốn mươi hai. Xe đi tiếp. Phía sau — Bến Tre khuất. Hoàng Nam ở lại đứng cạnh hộp lost items — nhẫn em trong hộp.
+Đêm thứ bốn mươi hai của hành trình. Xe đi tiếp. Phía sau — Bến Tre khuất. Hoàng Nam ở lại đứng cạnh hộp lost items — nhẫn em trong hộp.
 
 Khải Phong nhìn ngón út tay trái. Nhẫn bạc Hạ Vy — nhỏ — đơn giản — không khắc tên. Anh mua chợ Đồng Xuân năm anh hai tư — anh thích nhẫn bạc đơn giản — không vàng — không khắc.
 
@@ -256,15 +256,15 @@ Khải Phong đeo nhẫn anh tám năm. Anh không tháo một lần. Vào nhà 
 
 Nhẫn vẫn ở ngón út tay trái Khải Phong đêm này. Anh cảm nhận nhẫn qua áo gió.
 
-Đêm bốn mươi hai. Còn bốn mươi tám đêm nữa.
+Vào đêm bốn mươi hai. Còn bốn mươi tám đêm nữa.
 
-Khải Phong nhói. Anh không hỏi mẹ Hạ Vy về nhẫn bạc anh — anh đã không gọi điện bốn năm gần đây. Anh sống một mình Hà Nội — không ai nhắc anh Hạ Vy. Anh chỉ có nhẫn — ngón út tay trái — đeo tám năm. Anh chỉ có ký ức — không vật chứng khác. Đêm thứ bốn mươi hai kết thúc. Khải Phong sẽ đeo đến đêm chín mươi nếu cần.
+Khải Phong nhói. Em không hỏi mẹ Hạ Vy về nhẫn bạc anh — em đã không gọi điện bốn năm gần đây. Anh sống một mình Hà Nội — không ai nhắc anh Hạ Vy. Em chỉ có nhẫn — ngón út tay trái — đeo tám năm. Anh chỉ có ký ức — không vật chứng khác. Đêm thứ bốn mươi hai kết thúc. Khải Phong sẽ đeo đến đêm chín mươi nếu cần.
 
 Khải Phong vuốt nhẫn bạc lần nữa qua áo gió. Anh vẫn ở đó — không ai biết. Tám năm anh đeo riêng — không khoe — chỉ đeo.
 
-Đêm thứ bốn mươi hai — em ngẫm. Hoàng Nam giữ nhẫn cưới vợ sáu tháng — em đem trả quán cà phê. Em — tám năm — vẫn giữ lại. Em không có quán cà phê em quen Hạ Vy — hai đứa quen ở giảng đường — không phải chỗ riêng có thể trả. Em đeo tiếp đến đêm chín mươi.
+Đêm thứ bốn mươi hai — em ngẫm. Hoàng Nam giữ nhẫn cưới vợ sáu tháng — em đem trả quán cà phê. Em — tám năm — vẫn giữ lại. Cô gái không có quán cà phê em quen Hạ Vy — hai đứa quen ở giảng đường — không phải chỗ riêng có thể trả. Em đeo tiếp đến đêm chín mươi.
 
-Khải Phong nhìn đồng hồ cabin — vẫn bảy giờ mười phút. Đêm này dài.
+Khải Phong nhìn đồng hồ cabin — vẫn bảy giờ mười phút. Đêm hôm nay còn dài lắm.
 
 Bên ngoài — mặt sông Tiền tối. Hoàng Nam đã đi sâu vào quán cà phê — anh không nhìn được nữa. Anh cất hộp nhung vào lost items — anh đi về. Khải Phong tưởng tượng anh về căn nhà anh — hai con — anh sẽ ngủ.
 

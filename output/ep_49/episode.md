@@ -54,15 +54,15 @@ arc_design_compliant: bible/21 R33-R42
 
 Đèn xe rọi vào sương. Đêm tháng tư miền Trung-Nam. Chuyến xe đi qua đoạn đường ven sông Hậu, Sóc Trăng — hàng cây ven đường thấp thoáng trong sương. Đèn pha quét lên hàng dừa nước.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi chín. Trong túi áo gió Khải Phong — bốn mươi tám vật.
+Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi chín của hành trình. Trong túi áo gió Khải Phong — bốn mươi tám vật.
 
 Bác tài lái.
 
-Mưa rơi nhẹ nhàng. Không khí miền Tây ẩm.
+Trời mưa rơi nhẹ nhàng. Không khí miền Tây ẩm.
 
 Xe chậm lại trước một quán cà phê xưa — biển "Cà phê Sông Hậu" — cửa đã đóng — đèn vàng trong quán còn sáng yếu. Một phụ nữ đứng đợi bên cửa. Khoảng bốn mươi hai tuổi. Áo dạ xám — tay phải cầm khăn tay vải hoa nhỏ — đã ố vàng.
 
-Cô lên bậc xe. Đi đến hàng ghế giữa — chân chậm lại. Ngồi xuống ghế thứ bảy.
+Cô gái khẽ lên bậc xe. Đi đến hàng ghế giữa — chân chậm lại. Ngồi xuống ghế thứ bảy.
 
 Mở khăn tay — gấp tư — bên trong còn vết son lipstick mờ.
 
@@ -74,7 +74,7 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Cô gái ngồi yên lặng. Vuốt khăn tay. Đầu ngón tay cô mảnh — bàn tay người làm bàn giấy.
+Cô gái khẽ ngồi yên lặng. Vuốt khăn tay. Đầu ngón tay cô mảnh — bàn tay người làm bàn giấy.
 
 Khải Phong quan sát từ ghế ba. Cô bốn lăm hai — mặt buồn — mắt sâu — vẻ người mang ăn năn lâu.
 
@@ -100,7 +100,7 @@ Cô ghế bảy nhìn về phía đó. Hơi thở chậm lại.
 
 "Vân..."
 
-Cô nói rất nhỏ.
+Cô gái nói rất nhỏ nhẹ.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
@@ -108,7 +108,7 @@ Cô nói rất nhỏ.
 
 Xe đi qua đó. Quán khuất.
 
-Cô quay đầu lại. Vuốt khăn.
+Cô gái khẽ quay đầu lại. Vuốt khăn.
 
 ---
 
@@ -122,19 +122,19 @@ Giọng cô đều — chậm.
 
 "Cô gái em đỡ lấy — Vân — mất mười lăm năm trước. Hai mươi tuổi. Tự tử nhảy sông — sau hai tháng em không tiếp tục giúp em."
 
-"Em hai mươi bảy tuổi lúc đó. Em đi làm về tối — mưa rất to. Em đi xe máy — em thấy một cô gái đứng giữa đường — áo mưa rách — tóc ướt — mặt xanh xao."
+"Em hai mươi bảy tuổi lúc đó. Cô gái đi làm về tối — mưa rất to. Em đi xe máy — em thấy một cô gái đứng giữa đường — áo mưa rách — tóc ướt — mặt xanh xao."
 
 [pause:800ms]
 
-"Em dừng xe. Em hỏi: 'Em ơi em có sao không? Em cần giúp không?' Em đáp: 'Cô ơi em không nhà — em chạy khỏi nhà — em không có chỗ trú.'"
+"Em dừng xe. Cô gái hỏi: 'Em ơi em có sao không? Em cần giúp không?' Em đáp: 'Cô ơi em không nhà — em chạy khỏi nhà — em không có chỗ trú.'"
 
-"Em đem em về phòng trọ em ở Sóc Trăng. Em pha nước nóng — em nấu cơm — em cho bạn ăn. Em kể em chuyện em. Em mười tám tuổi — em bỏ học cấp ba — em chạy khỏi gia đình vì bố em đánh đập."
+"Em đem em về phòng trọ em ở Sóc Trăng. Cô gái pha nước nóng — em nấu cơm — em cho bạn ăn. Em kể em chuyện em. Em mười tám tuổi — em bỏ học cấp ba — em chạy khỏi gia đình vì bố em đánh đập."
 
 "Em ngủ trên ghế phòng em — em ngủ giường em. Sáng em đưa bạn đến trung tâm bảo trợ xã hội Sóc Trăng — em đưa bạn đăng ký — em cho bạn tiền tiêu — em hẹn em mỗi tuần em qua thăm."
 
 [pause:1200ms]
 
-"Em qua thăm em hai tháng — mỗi tuần một lần. Em đem cơm — em đem áo. Em đỡ em tiền học tiếng Anh ở trung tâm gần."
+"Em qua thăm em hai tháng — mỗi tuần một lần. Cô gái đem cơm — em đem áo. Em đỡ em tiền học tiếng Anh ở trung tâm gần."
 
 "Tháng thứ ba — em bận công ty — em đi công tác Sài Gòn ba tuần. Em không qua thăm. Em định: 'Khi em về em sẽ qua bù.'"
 
@@ -146,7 +146,7 @@ Giọng cô đều — chậm.
 
 "Một tháng sau — cảnh sát gọi em. Em đã được tìm thấy — chết nhảy sông Hậu — đoạn cầu Cần Thơ. Em tự tử."
 
-"Em đến nhà tang — em quỳ bên quan tài em. Em không có gia đình đến tang. Em là người duy nhất."
+"Em đến nhà tang — em quỳ bên quan tài em. Cô gái không có gia đình đến tang. Em là người duy nhất."
 
 [pause:1500ms]
 
@@ -168,7 +168,7 @@ Bác tài cất lời.
 
 Phương Linh gật.
 
-"Em nhớ. Em đỡ em hai tháng — em bỏ em ba tuần — em tự tử. Em không phải lý do duy nhất — em là một. Em không thể chuộc em — em đỡ ba em khác — em không bỏ ai. Em đem khăn trả về quán em hay ngồi."
+"Em nhớ. Cô gái đỡ em hai tháng — em bỏ em ba tuần — em tự tử. Em không phải lý do duy nhất — em là một. Người đàn ông không thể chuộc em — em đỡ ba em khác — em không bỏ ai. Em đem khăn trả về quán em hay ngồi."
 
 [pause:1200ms]
 
@@ -190,15 +190,15 @@ Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim
 
 Bác tài: "Chưa tới lúc."
 
-Cô bước xuống dưới.
+Cô gái bước xuống dưới đường.
 
 [pause:1200ms]
 
-Bên ngoài — Phương Linh đi vào quán cà phê Sông Hậu. Bảo vệ đã mở cửa phụ. Hộp lost items gỗ mun. Cô đến. Đặt khăn vào hộp. Cúi đầu.
+Bên ngoài — Phương Linh đi vào quán cà phê Sông Hậu. Bảo vệ đã mở cửa phụ. Hộp lost items gỗ mun. Cô gái đã đến nơi đó. Đặt khăn vào hộp. Cúi đầu.
 
 Khải Phong chớp mắt — nhìn qua cửa sổ. Bên hộp — Vân xuất hiện — cô gái hai mươi áo mưa — vuốt vai Phương Linh. Mỉm cười nhẹ nhàng.
 
-Khải Phong chớp lần nữa. Vân tan ra.
+Khải Phong chớp lần nữa. Người tên Vân tan đi.
 
 Phương Linh ngẩng đầu. Đi ra ngoài.
 
@@ -220,7 +220,7 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 Khải Phong ngồi. Phương Linh đỡ ba cô gái khác sau mất Vân. Lời hứa muộn — giữ qua người khác.
 
-Khải Phong nhói — anh đã hứa Hạ Vy không bao giờ anh yêu ai khác. Hứa thề ngầm. Sau Hạ Vy mất — anh sống một mình tám năm — không yêu ai. Anh đã giữ lời hứa.
+Khải Phong nhói — anh đã hứa Hạ Vy không bao giờ anh yêu ai khác. Hứa thề ngầm. Sau Hạ Vy mất — anh sống một mình tám năm — không yêu ai. Em đã giữ lời hứa rồi.
 
 [pause:1500ms]
 
@@ -232,11 +232,11 @@ Em không yêu ai mới. Lý do — em không quên Hạ Vy. Hoặc — em sợ 
 
 Có thể cả ba. Em không phân biệt.
 
-Bác tài liếc gương. "Đêm bốn mươi chín. Đêm sau là milestone S1 finale — đêm năm mươi. Con sẽ ngẫm rõ hơn. Cứ chuẩn bị."
+Bác tài liếc gương. "Vào đêm bốn mươi chín. Đêm sau là milestone S1 finale — đêm năm mươi. Con sẽ ngẫm rõ hơn. Cứ chuẩn bị."
 
 Khải Phong gật. Lệ rơi nhẹ nhàng.
 
-Đêm thứ bốn mươi chín. Xe đi tiếp. Phía sau — Sóc Trăng khuất. Phương Linh ở lại quán — khăn trong hộp lost items.
+Đêm thứ bốn mươi chín của hành trình. Xe đi tiếp. Phía sau — Sóc Trăng khuất. Phương Linh ở lại quán — khăn trong hộp lost items.
 
 Khải Phong còn một đêm nữa — đêm thứ năm mươi — S1 finale. Anh sẽ xếp năm mươi vật theo bản đồ — anh sẽ ngẫm 50 đêm anh đã đi qua.
 
@@ -252,6 +252,6 @@ Khải Phong vuốt áo gió bốn mươi chín vật. Anh chuẩn bị cho năm
 
 Khải Phong vuốt sợi chỉ vải hoa — sợi mảnh. Anh đặt vào túi cùng bốn mươi tám vật khác. Năm mươi vật đêm mai — anh chuẩn bị tinh thần.
 
-Khải Phong nhìn ra biển miền Tây tối. Anh hồi tưởng — anh đã đỡ ai trong tám năm sau Hạ Vy không? Cảm giác — không. Anh chỉ đi làm — về phòng — ngủ. Anh không đỡ ai — anh không bỏ ai — anh không yêu ai mới. Anh sống lặng yên. Anh sẽ phải sống khác sau milestone EP50.
+Khải Phong nhìn ra biển miền Tây tối. Anh hồi tưởng — anh đã đỡ ai trong tám năm sau Hạ Vy không? Cảm giác — không. Anh chỉ đi làm — về phòng — ngủ. Người đàn ông không đỡ ai — anh không bỏ ai — anh không yêu ai mới. Em sống lặng yên một mình. Anh sẽ phải sống khác sau milestone EP50.
 
-Khải Phong vuốt sợi chỉ vải hoa thêm lần nữa. Vật bốn mươi chín — vật cuối trước milestone. Anh cất cẩn thận. Mỗi vật là một câu chuyện. Bốn mươi chín câu chuyện — anh đã nghe đủ cho phase heightening. Đêm thứ bốn mươi chín kết thúc — đêm tháng tư tiếp tục — chưa sáng lên.
+Khải Phong vuốt sợi chỉ vải hoa thêm lần nữa. Vật bốn mươi chín — vật cuối trước milestone. Em cất giữ cẩn thận. Mỗi vật là một câu chuyện. Bốn mươi chín câu chuyện — anh đã nghe đủ cho phase heightening. Đêm thứ bốn mươi chín kết thúc — đêm tháng tư tiếp tục — chưa sáng lên.

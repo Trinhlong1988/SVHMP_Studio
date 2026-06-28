@@ -56,7 +56,7 @@ arc_design_compliant: bible/21 R33-R42
 
 Cuối tháng tư. Trời ẩm. Xe đêm chạy chậm qua đường ven đồi cà phê Đắk Lắk, Hà Nội. Hàng cây ven đường — lá còn rơi vài giọt mưa cuối ngày. Đèn pha quét lên hàng cà phê — cà phê đã ra hoa trắng.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi tư. Trong túi áo gió Khải Phong — bốn mươi ba vật.
+Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi tư của hành trình. Trong túi áo gió Khải Phong — bốn mươi ba vật.
 
 Bác tài lái.
 
@@ -64,7 +64,7 @@ Bác tài lái.
 
 Xe chậm lại trước một xóm xưa — bảng "Xóm Đại Phú — xã Ea Hu" — đường đất đỏ vào xóm. Một bà đứng đợi bên cột điện. Khoảng năm mươi hai tuổi. Áo bà ba xám — tay phải bê khúc chè nhỏ — gói trong giấy bản nâu.
 
-Bà lên xe. Đi xuống lối giữa — chân chậm lại. Ngồi xuống ghế thứ bảy.
+Bà cụ khẽ bước lên xe. Đi xuống lối giữa — chân chậm lại. Ngồi xuống ghế thứ bảy.
 
 Đặt khúc chè lên đùi. Khúc chè đã khô — gói giấy đã ố.
 
@@ -76,7 +76,7 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Bà ngồi yên. Vuốt giấy bản. Đầu ngón tay bà thô.
+Bà cụ ngồi yên một lát. Vuốt giấy bản. Đầu ngón tay bà thô.
 
 Khải Phong quan sát từ ghế ba. Bà năm mươi hai — tóc bạc — mặt rám nắng cà phê.
 
@@ -104,7 +104,7 @@ Bà ghế bảy nhìn về phía đó.
 
 "Bác Sáu..."
 
-Bà nói rất nhỏ.
+Bà cụ nói rất nhỏ nhẹ.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
@@ -112,7 +112,7 @@ Bà nói rất nhỏ.
 
 Xe đi qua đó. Nhà gỗ khuất.
 
-Bà quay đầu lại. Vuốt giấy bản.
+Bà cụ khẽ quay đầu lại. Vuốt giấy bản.
 
 ---
 
@@ -120,7 +120,7 @@ Bà quay đầu lại. Vuốt giấy bản.
 
 [pause:1000ms]
 
-"Em là Phượng Liên. Năm mươi hai tuổi. Em ở Đại Phú — Đắk Lắk — quê. Em làm cà phê — bốn héc-ta."
+"Em là Phượng Liên. Bà cụ năm mươi hai tuổi rồi. Em ở Đại Phú — Đắk Lắk — quê. Em làm cà phê — bốn héc-ta."
 
 Giọng bà trầm.
 
@@ -138,7 +138,7 @@ Giọng bà trầm.
 
 [pause:1200ms]
 
-"Hôm sau em nhớ — em nấu chè — em định đem. Em qua nhà bà — gõ cửa — không ai trả lời. Em đẩy cửa — cửa mở. Em vào — bà nằm trên giường — đã đi sáng nay — không ai biết."
+"Hôm sau em nhớ — em nấu chè — em định đem. Em qua nhà bà — gõ cửa — không ai trả lời. Người bà đẩy cửa — cửa mở. Em vào — bà nằm trên giường — đã đi sáng nay — không ai biết."
 
 "Em quỳ bên giường bà. Em đem khúc chè theo — bà không ăn được — em không kịp đem hôm bà thèm."
 
@@ -166,7 +166,7 @@ Bác tài cất lời.
 
 Phượng Liên gật.
 
-"Em nhớ. Em hứa đem chè cho bà Sáu — em quên một tối. Bà mất sáng hôm sau. Em không phải lý do duy nhất — bà yếu nhiều tháng — nhưng em là một trong nhiều người có thể giúp lúc bà cần."
+"Em nhớ. Em hứa đem chè cho bà Sáu — em quên một tối. Bà cụ mất sáng hôm sau. Em không phải lý do duy nhất — bà yếu nhiều tháng — nhưng em là một trong nhiều người có thể giúp lúc bà cần."
 
 [pause:1200ms]
 
@@ -188,17 +188,17 @@ Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim
 
 Bác tài: "Chưa tới lúc."
 
-Bà bước xuống dưới.
+Bà cụ bước xuống dưới đường.
 
 [pause:1200ms]
 
 Bên ngoài — Phượng Liên đi vào xóm Đại Phú — đường đất đỏ. Nhà bà Sáu xưa — đã có người khác ở.
 
-Bà đến. Đặt khúc chè trước cửa — chính thềm bà Sáu ngồi đợi năm năm trước. Quỳ. Cúi đầu.
+Bà cụ đã đến nơi đó. Đặt khúc chè trước cửa — chính thềm bà Sáu ngồi đợi năm năm trước. Quỳ. Cúi đầu.
 
 Khải Phong chớp mắt — nhìn qua cửa sổ. Bên cửa — bà Sáu xuất hiện — bà cụ bảy mươi áo bà ba nâu — cúi xuống nhặt khúc — vuốt vai Phượng Liên. Mỉm cười.
 
-Khải Phong chớp lần nữa. Bà Sáu tan ra.
+Khải Phong chớp lần nữa. Người bà Sáu tan ra.
 
 Phượng Liên ngẩng đầu. Đi về.
 
@@ -226,15 +226,15 @@ Khải Phong nhói. Bố mẹ Hạ Vy không liên lạc Khải Phong tám năm.
 
 Khải Phong cố nhớ — Khải Phong có liên lạc bố mẹ Hạ Vy không? Cảm giác — có vài lần đầu sau tang. Sau đó thưa hơn. Năm thứ hai — Khải Phong về tang Hạ Vy lần một. Năm thứ ba — không về. Năm thứ tư — không về.
 
-Khải Phong không gọi điện thoại bố mẹ Hạ Vy năm năm gần đây. Anh đã sai. Anh đã không giữ liên lạc với gia đình anh vợ tương lai — dù anh không cưới anh.
+Khải Phong không gọi điện thoại bố mẹ Hạ Vy năm năm gần đây. Em đã sai rồi. Anh đã không giữ liên lạc với gia đình anh vợ tương lai — dù anh không cưới anh.
 
-Anh anh — Hạ Nhi — anh gái Hạ Vy — anh hai bốn tuổi bây giờ. Anh sống Sài Gòn. Khải Phong không có số anh.
+Anh anh — Hạ Nhi — anh gái Hạ Vy — anh hai bốn tuổi bây giờ. Em sống Sài Gòn lâu rồi. Khải Phong không có số anh.
 
-Bác tài liếc gương. "Đêm bốn mươi tư. Con đã nhớ con không liên lạc gia đình Hạ Vy nhiều năm. Đêm sau con sẽ nhớ — Hạ Nhi em gái Hạ Vy giờ thế nào — em có nhắn con không. Đừng vội."
+Bác tài liếc gương. "Vào đêm bốn mươi tư. Con đã nhớ con không liên lạc gia đình Hạ Vy nhiều năm. Đêm sau con sẽ nhớ — Hạ Nhi em gái Hạ Vy giờ thế nào — em có nhắn con không. Đừng vội."
 
 Khải Phong gật. Lệ rơi xuống dưới.
 
-Đêm thứ bốn mươi tư. Xe đi tiếp. Phía sau — Đắk Lắk khuất. Phượng Liên ở lại bên cửa — khúc chè trên thềm.
+Đêm thứ bốn mươi tư của hành trình. Xe đi tiếp. Phía sau — Đắk Lắk khuất. Phượng Liên ở lại bên cửa — khúc chè trên thềm.
 
 Khải Phong cố nhớ tin nhắn Hạ Nhi gần đây. Anh nhắn lần cuối — sinh nhật Khải Phong — tháng giêng năm nay. Anh chúc — anh xin chỗ cưới anh — anh đính kèm thiệp cưới scan PDF.
 
@@ -252,7 +252,7 @@ Khải Phong cố nhớ Hạ Nhi tuổi nào. Anh mười sáu khi Hạ Vy mất
 
 Hạ Nhi giống chị anh chỗ nét mặt — không phải y hệt — có nét chung. Khải Phong nhớ anh từng đến phòng trọ Khâm Thiên chơi với Hạ Vy hồi anh mười bốn — anh ngồi học bài bên bàn vẽ ra — Hạ Vy chỉ anh làm toán. Khải Phong nấu cơm — ba người ăn chung.
 
-Sau Hạ Vy mất — anh chỉ gặp Hạ Nhi tang đám. Anh nhỏ — anh khóc. Anh không nói được câu nào với Khải Phong. Anh chỉ ôm Khải Phong một lúc — sau anh theo bố mẹ về quê.
+Sau Hạ Vy mất — anh chỉ gặp Hạ Nhi tang đám. Cậu trai nhỏ — anh khóc. Anh không nói được câu nào với Khải Phong. Anh chỉ ôm Khải Phong một lúc — sau anh theo bố mẹ về quê.
 
 Anh lớn — anh vẫn nhớ Khải Phong. Anh gửi thiệp cưới — anh mua vé máy bay cho anh.
 

@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R40 + R41
 
 Đèn xe rọi vào sương. Đêm tháng tư miền Bắc. Chuyến xe đi qua đoạn đường ven biển Quảng Bình, Hà Nội — hàng cây ven đường thấp thoáng trong sương. Đèn pha quét lên hàng phi lao biển — gốc nghiêng vì gió.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi chín. Trong túi áo gió Khải Phong — ba mươi tám vật. Đêm qua thêm mẩu giấy quà xanh từ hộp quà Đức Anh tặng Lan.
+Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi chín của hành trình. Trong túi áo gió Khải Phong — ba mươi tám vật. Đêm qua thêm mẩu giấy quà xanh từ hộp quà Đức Anh tặng Lan.
 
 Bác tài lái.
 
@@ -64,7 +64,7 @@ Xe chậm lại trước một xóm xưa — bảng "Xóm Đại Hải — xã Q
 
 Một bà đứng đợi bên cột điện. Khoảng năm mươi lăm tuổi. Áo bà ba xám — tay phải bê tô cơm nhỏ — tô sứ trắng — bên trong cơm đã nguội — có vẻ chuẩn bị từ tối.
 
-Bà bước lên xe. Đi qua hàng ghế đầu — chân chậm lại. Ngồi xuống ghế thứ sáu.
+Bà cụ khẽ bước lên xe. Đi qua hàng ghế đầu — chân chậm lại. Ngồi xuống ghế thứ sáu.
 
 Đặt tô cơm lên đùi cẩn thận — không để rơi xuống. Hai tay đỡ tô.
 
@@ -76,7 +76,7 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Bà ngồi yên. Đỡ tô cơm. Cơm trong tô đã nguội — có vẻ ăn đơn giản — cơm trắng + canh chua + ít cá kho — bữa cơm tối Việt Nam điển hình.
+Bà cụ ngồi yên lặng một lát. Đỡ tô cơm. Cơm trong tô đã nguội — có vẻ ăn đơn giản — cơm trắng + canh chua + ít cá kho — bữa cơm tối Việt Nam điển hình.
 
 Khải Phong quan sát từ ghế ba. Bà năm lăm — tóc bạc nửa — mặt rám nắng — vẻ người sống biển.
 
@@ -104,7 +104,7 @@ Bà ghế sáu nhìn về phía đó. Hơi thở chậm lại.
 
 "Bác..."
 
-Bà nói rất nhỏ.
+Bà cụ nói rất nhỏ nhẹ.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
@@ -112,7 +112,7 @@ Bà nói rất nhỏ.
 
 Xe đi qua đó. Nhà cấp bốn khuất.
 
-Bà quay đầu lại. Vuốt mép tô cơm.
+Bà cụ khẽ quay đầu lại. Vuốt mép tô cơm.
 
 ---
 
@@ -120,7 +120,7 @@ Bà quay đầu lại. Vuốt mép tô cơm.
 
 [pause:1000ms]
 
-"Em là Hồng Mai. Năm mươi lăm tuổi. Em ở Đại Hải — Quảng Phú — Quảng Bình. Em làm nông — vài sào ruộng + nuôi vài con gà."
+"Em là Hồng Mai. Bà năm mươi lăm tuổi rồi. Em ở Đại Hải — Quảng Phú — Quảng Bình. Em làm nông — vài sào ruộng + nuôi vài con gà."
 
 Giọng bà trầm — chậm.
 
@@ -134,7 +134,7 @@ Giọng bà trầm — chậm.
 
 "Em đem cơm cho bà thứ bảy mỗi tuần — một tô cơm trắng + ít cá kho + canh rau. Bà cảm ơn em — bà ăn — bà sống thêm vài năm nhờ cơm em và cơm cụm vài hàng xóm khác."
 
-"Năm tám — em bận. Em đi làm thuê ở Đồng Hới — em phải đi cả tuần — về cuối tuần. Thứ bảy em mệt — em không kịp nấu cơm cho bà. Em bảo bụng: 'Tuần sau em đem.'"
+"Vào năm tám — em bận. Em đi làm thuê ở Đồng Hới — em phải đi cả tuần — về cuối tuần. Thứ bảy em mệt — em không kịp nấu cơm cho bà. Em bảo bụng: 'Tuần sau em đem.'"
 
 [pause:1200ms]
 
@@ -142,11 +142,11 @@ Giọng bà trầm — chậm.
 
 "Người ta tìm thấy bà — sáng thứ tư — trước cửa nhà bà — bát mẻ trong tay — không có gì trong bát. Bà ngồi trên thềm — chết. Cảnh sát đến — xác định: chết đói + suy nhược tuổi già."
 
-"Em sốc. Em đã không đem cơm ba tuần liên tiếp. Em không phải lý do duy nhất em đói — em có thể chỉ là một trong nhiều — nhưng em là một trong nhiều người không đem cơm như đã hứa."
+"Em sốc. Cô gái đã không đem cơm ba tuần liên tiếp. Em không phải lý do duy nhất em đói — em có thể chỉ là một trong nhiều — nhưng em là một trong nhiều người không đem cơm như đã hứa."
 
 [pause:1500ms]
 
-"Em đến đám tang. Em quỳ bên quan tài bà. Em xin lỗi — qua thân xác đã đi. Em hứa em đem cơm — em không giữ lại — bà đói trước cửa nhà em không cách."
+"Em đến đám tang. Cô gái quỳ bên quan tài bà. Em xin lỗi — qua thân xác đã đi. Em hứa em đem cơm — em không giữ lại — bà đói trước cửa nhà em không cách."
 
 "Sau tang bà — em quyết. Em đem cơm cho ba cụ già khác trong xóm — em không bỏ tuần nào — em không bận đến mức không kịp nấu một tô cơm."
 
@@ -166,7 +166,7 @@ Bác tài cất lời.
 
 Hồng Mai gật. Mắt đỏ — không khóc.
 
-"Em nhớ. Em hứa đem cơm cho bà Trinh — em bỏ ba tuần — bà chết đói. Em không phải lý do duy nhất — nhưng em là một. Em không thể chuộc bà — em chỉ có thể đem cơm cho ba cụ khác tám năm — và đem tô cuối về chỗ bà mất."
+"Em nhớ. Cô gái hứa đem cơm cho bà Trinh — em bỏ ba tuần — bà chết đói. Em không phải lý do duy nhất — nhưng em là một. Em không thể chuộc bà — em chỉ có thể đem cơm cho ba cụ khác tám năm — và đem tô cuối về chỗ bà mất."
 
 [pause:1200ms]
 
@@ -188,13 +188,13 @@ Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim
 
 Bác tài: "Chưa tới lúc."
 
-Bà bước xuống dưới.
+Bà cụ bước xuống dưới đường.
 
 [pause:1200ms]
 
 Bên ngoài — Hồng Mai đi vào xóm xưa — đường đất tối — đèn cột điện thưa. Nhà bà Trinh xưa — đã xây lại — chủ mới ngủ — cửa đóng.
 
-Bà đến. Đặt tô cơm trước cửa — chính chỗ bà Trinh chết tám năm trước. Quỳ. Cúi đầu.
+Bà cụ đã đến nơi đó. Đặt tô cơm trước cửa — chính chỗ bà Trinh chết tám năm trước. Quỳ. Cúi đầu.
 
 Khải Phong chớp mắt — nhìn qua cửa sổ. Bên cửa — bà Trinh xuất hiện — bà cụ bảy mươi sáu áo bà ba nâu — cúi xuống nhặt tô cơm — vuốt vai Hồng Mai. Mỉm cười nhẹ nhàng.
 
@@ -234,15 +234,15 @@ Anh Hải ngồi cạnh Khải Phong. Anh nói: "Em chia buồn với anh — em
 
 Khải Phong nhớ. Anh Hải cùng văn phòng Mộc Hà với Hạ Vy. Đêm đó anh Hải về cùng đường với Hạ Vy — Mộc Hà phố Hai Bà Trưng. Anh Hải đi xe máy phía sau Hạ Vy — anh chứng kiến tai nạn — gọi cấp cứu.
 
-Anh Hải là đồng nghiệp Hạ Vy. Anh quen Hạ Vy qua công việc. Anh không phải người dưng — anh là người cùng văn phòng.
+Anh Hải là đồng nghiệp Hạ Vy. Người tên Hải quen Hạ Vy qua công việc. Anh không phải người dưng — anh là người cùng văn phòng.
 
 [pause:1500ms]
 
-Bác tài liếc gương. "Đêm ba mươi chín. Con nhớ anh Hải đồng nghiệp Hạ Vy. Đêm sau — milestone EP40 — con sẽ ngẫm rõ hơn vì sao anh Hải đi cùng đường Hạ Vy đêm đó — có phải anh tình cờ hay có hẹn. Đừng vội."
+Bác tài liếc gương. "Vào đêm ba mươi chín. Con nhớ anh Hải đồng nghiệp Hạ Vy. Đêm sau — milestone EP40 — con sẽ ngẫm rõ hơn vì sao anh Hải đi cùng đường Hạ Vy đêm đó — có phải anh tình cờ hay có hẹn. Đừng vội."
 
 Khải Phong gật. Lệ rơi nhẹ nhàng.
 
-Đêm thứ ba mươi chín. Xe đi tiếp ra khỏi Quảng Bình. Phía sau — xóm Đại Hải khuất. Hồng Mai ở lại đứng trước cửa nhà cũ bà Trinh — tô cơm trên thềm.
+Đêm thứ ba mươi chín của hành trình. Xe đi tiếp ra khỏi Quảng Bình. Phía sau — xóm Đại Hải khuất. Hồng Mai ở lại đứng trước cửa nhà cũ bà Trinh — tô cơm trên thềm.
 
 Khải Phong vuốt hạt cơm khô trong tay — hạt cơm bà Hồng Mai đem cho bà Trinh sau tám năm. Lời hứa muộn — vẫn được gửi qua đất.
 

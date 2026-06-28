@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R40
 
 Cuối tháng tư. Trời ẩm. Xe đêm chạy chậm qua đường ven cánh đồng Vĩnh Phúc, Hà Nội. Hàng cây ven đường — lá còn rơi vài giọt mưa cuối ngày. Đèn pha quét lên ruộng lúa mới cấy.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi tư. Trong túi áo gió Khải Phong — ba mươi ba vật.
+Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi tư của hành trình. Trong túi áo gió Khải Phong — ba mươi ba vật.
 
 Bác tài lái.
 
@@ -62,7 +62,7 @@ Xe chậm lại trước một xóm xưa — bảng "Xóm Đông Văn — xã Ta
 
 Một người đàn ông đứng đợi bên cột điện. Khoảng năm mươi tuổi. Áo sơ mi đen — quần tây xám. Tay phải cầm bó hương trầm — bó dài chừng nửa mét — gói trong giấy bản nâu.
 
-Anh vào xe. Đi qua mấy hàng ghế trước — chân chậm lại. Ngồi xuống ghế thứ bảy.
+Người đàn ông vào xe. Đi qua mấy hàng ghế trước — chân chậm lại. Ngồi xuống ghế thứ bảy.
 
 Đặt bó hương lên đùi. Mở giấy bản. Hương trầm — sắc đỏ đậm — mùi gỗ trầm thơm nhẹ — đã tỏa ngay trong xe.
 
@@ -74,7 +74,7 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Anh ngồi yên. Vuốt bó hương trầm — cẩn thận — không gãy chân hương.
+Người đàn ông ngồi yên. Vuốt bó hương trầm — cẩn thận — không gãy chân hương.
 
 Khải Phong quan sát từ ghế ba. Anh năm mươi — tóc bạc nửa — mặt buồn lâu ngày.
 
@@ -102,7 +102,7 @@ Anh ghế bảy nhìn về phía đó.
 
 "Bác Bính..."
 
-Anh nói rất nhỏ.
+Người đàn ông nói rất nhỏ.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
@@ -110,7 +110,7 @@ Anh nói rất nhỏ.
 
 Xe đi qua đó. Nhà mái ngói khuất.
 
-Anh quay đầu lại. Vuốt bó hương.
+Người đàn ông quay đầu lại. Vuốt bó hương.
 
 ---
 
@@ -118,7 +118,7 @@ Anh quay đầu lại. Vuốt bó hương.
 
 [pause:1000ms]
 
-"Tôi là Văn Tuấn. Năm mươi tuổi. Tôi ở Đông Văn — Vĩnh Phúc — quê. Tôi làm cán bộ xã đó."
+"Tôi là Văn Tuấn. Em năm mươi tuổi rồi. Tôi ở Đông Văn — Vĩnh Phúc — quê. Tôi làm cán bộ xã đó."
 
 Giọng anh trầm — chậm.
 
@@ -198,17 +198,17 @@ Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim
 
 Bác tài: "Chưa tới lúc."
 
-Anh bước xuống dưới.
+Người đàn ông bước xuống dưới.
 
 [pause:1200ms]
 
 Bên ngoài — Văn Tuấn đi vào nghĩa trang xã Đông Văn. Cổng đã mở. Mộ bác Bính — bia gỗ mun — đã có dấu xưa.
 
-Anh đến. Quỳ. Đốt bó hương — cháy đậm — mùi trầm tỏa khắp nghĩa trang. Cắm vào bia. Cúi đầu.
+Người đàn ông đến nơi đó. Quỳ. Đốt bó hương — cháy đậm — mùi trầm tỏa khắp nghĩa trang. Cắm vào bia. Cúi đầu.
 
 Khải Phong chớp mắt — nhìn qua cửa sổ. Bên mộ — bác Bính xuất hiện — ông cụ bảy mươi áo sơ mi nâu — vuốt vai Văn Tuấn. Mỉm cười.
 
-Khải Phong chớp lần nữa. Bác tan ra.
+Khải Phong chớp lần nữa. Người bác tan ra.
 
 Văn Tuấn ngẩng đầu. Không khóc.
 
@@ -254,12 +254,12 @@ Khải Phong nhói thêm. Tháng tư 2025 — sắp tròn tám năm Hạ Vy đi 
 
 Khải Phong cố nhớ. Hình ảnh — Khải Phong ngồi bàn làm việc văn phòng kiến trúc phố Khâm Thiên — buổi chiều — không có gì đặc biệt. Khải Phong đi về phòng trọ phố Nguyễn Trãi — ăn cơm — đi ngủ.
 
-Sau giấc ngủ đó — Khải Phong tỉnh dậy trên xe đêm này. Ngày đầu tiên. Ghế thứ ba. Không nhớ vì sao.
+Sau giấc ngủ đó — Khải Phong tỉnh dậy trên xe đêm này. Vào ngày đầu tiên. Ghế thứ ba. Không nhớ vì sao.
 
 Khải Phong cảm giác — Khải Phong tỉnh dậy không phải từ giấc ngủ thường. Khải Phong tỉnh dậy từ điều gì khác. Khải Phong không nhớ.
 
-Bác tài liếc gương. "Đêm ba mươi tư. Con đã đếm tám năm. Đêm sau con sẽ nhớ — vì sao đêm con tỉnh dậy không phải giấc ngủ thường — vì sao con ngồi ghế thứ ba mà không nhớ. Đừng vội."
+Bác tài liếc gương. "Vào đêm ba mươi tư. Con đã đếm tám năm. Đêm sau con sẽ nhớ — vì sao đêm con tỉnh dậy không phải giấc ngủ thường — vì sao con ngồi ghế thứ ba mà không nhớ. Đừng vội."
 
 Khải Phong gật. Lệ rơi nhẹ nhàng.
 
-Đêm thứ ba mươi tư. Xe đi tiếp. Phía sau — Vĩnh Phúc khuất. Văn Tuấn ở lại quỳ — bó hương cháy bên mộ.
+Đêm thứ ba mươi tư của hành trình. Xe đi tiếp. Phía sau — Vĩnh Phúc khuất. Văn Tuấn ở lại quỳ — bó hương cháy bên mộ.

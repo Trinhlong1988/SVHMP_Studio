@@ -52,9 +52,9 @@ arc_design_compliant: bible/21 R33-R40 + R41 HARDLOCK
 
 [pause:800ms]
 
-Hà Nội cuối tháng tư. Đêm. Chuyến xe đi qua đoạn ven đường đèo từ Yên Bái lên Lào C, Hà Nội. Đèn pha rọi lên hàng cây — ánh đèn vàng cô đơn.
+Hà Nội cuối tháng tư. Trời đã về đêm. Chuyến xe đi qua đoạn ven đường đèo từ Yên Bái lên Lào C, Hà Nội. Đèn pha rọi lên hàng cây — ánh đèn vàng cô đơn.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi sáu. Trong túi áo gió Khải Phong — ba mươi lăm vật. Đêm qua thêm vải bông cuốn mảnh gương Trí Hưng — vật thứ ba trong cụm gương/kính.
+Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi sáu của hành trình. Trong túi áo gió Khải Phong — ba mươi lăm vật. Đêm qua thêm vải bông cuốn mảnh gương Trí Hưng — vật thứ ba trong cụm gương/kính.
 
 Bác tài lái. Đường đèo quanh co — bác tài lái chậm hơn thường — đèn pha quét theo khúc cua.
 
@@ -64,7 +64,7 @@ Xe chậm lại trước một nhà thờ làng nhỏ — biển gỗ mun "Nhà 
 
 Một người đàn ông đứng đợi bên cổng. Khoảng bốn mươi tám tuổi. Áo dạ đen — vest đen — phong cách đi tang. Tay phải cầm khung ảnh nhỏ — gói trong khăn lụa trắng.
 
-Anh lên xe. Đi xuống lối giữa — chân chậm — vai gầy. Ngồi xuống ghế thứ tám.
+Người đàn ông lên xe. Đi xuống lối giữa — chân chậm — vai gầy. Ngồi xuống ghế thứ tám.
 
 Mở khăn lụa. Lấy khung ảnh ra — khung gỗ nhỏ — bên trong tấm ảnh đen trắng xưa — chụp một cô gái trẻ đứng cạnh một thanh niên — hai người cười.
 
@@ -76,7 +76,7 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Anh ngồi yên. Vuốt mép khung ảnh. Đầu ngón tay anh thô — bàn tay người làm bàn giấy lâu — móng tay cắt ngắn.
+Người đàn ông ngồi yên. Vuốt mép khung ảnh. Đầu ngón tay anh thô — bàn tay người làm bàn giấy lâu — móng tay cắt ngắn.
 
 Khải Phong quan sát từ ghế ba. Anh bốn tám — tóc bạc nhiều — mắt sâu — vẻ người vừa đi tang.
 
@@ -104,7 +104,7 @@ Anh ghế tám nhìn về phía đó. Hơi thở chậm lại.
 
 "Diễm..."
 
-Anh nói rất nhỏ.
+Người đàn ông nói rất nhỏ.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
@@ -112,7 +112,7 @@ Anh nói rất nhỏ.
 
 Xe đi qua đó. Nhà sàn khuất.
 
-Anh quay đầu lại. Vuốt khung ảnh.
+Người đàn ông quay đầu lại. Vuốt khung ảnh.
 
 ---
 
@@ -154,13 +154,13 @@ Giọng anh trầm — chậm.
 
 "Tôi sốc lần thứ hai. Em yêu một người hai năm — tôi không biết. Bố mẹ tôi không biết. Em giấu cả gia đình — không phải vì sợ — vì em muốn em ổn định kinh tế trước khi báo."
 
-"Tang em — Tuấn đến — quỳ bên quan tài em. Khóc rất to. Bố mẹ tôi đón Tuấn như con — vì em đã chọn Tuấn — không trách."
+"Tang em — Tuấn đến — quỳ bên quan tài em. Khóc rất to lớn. Bố mẹ tôi đón Tuấn như con — vì em đã chọn Tuấn — không trách."
 
 [pause:1500ms]
 
 "Sau tang — Tuấn xin tôi: 'Anh Khải ơi em có tấm ảnh chụp em và Diễm — em chụp ở Hồ Tây Hà Nội — sinh nhật em tháng trước. Em cho em một bản — em muốn em giữ kỉ niệm em.'"
 
-"Tuấn đưa tôi ảnh — chụp Diễm và Tuấn đứng cạnh nhau ở Hồ Tây — hai đứa cười. Tôi cầm. Tôi không nói gì. Tôi đem ảnh về nhà — đặt trong tủ — hai mươi năm."
+"Tuấn đưa tôi ảnh — chụp Diễm và Tuấn đứng cạnh nhau ở Hồ Tây — hai đứa cười. Tôi cầm lấy. Người đàn ông không nói gì. Tôi đem ảnh về nhà — đặt trong tủ — hai mươi năm."
 
 "Hai mươi năm tôi giữ ảnh. Tôi không treo lên tường — tôi không cho bố mẹ tôi xem — tôi không nói với vợ tôi đầy đủ. Tôi giữ riêng."
 
@@ -208,7 +208,7 @@ Anh bước xuống — chân chạm đường đèo ướt.
 
 Bên ngoài — Văn Khải đi vào sân nhà thờ Sa Pa Cô — cổng đã mở. Chánh điện — tượng Chúa — bục gỗ mun.
 
-Anh đến. Đặt ảnh giữa bục — chính giữa. Quỳ. Cúi đầu.
+Người đàn ông đến nơi đó. Đặt ảnh giữa bục — chính giữa. Quỳ. Cúi đầu.
 
 Khải Phong chớp mắt — nhìn qua cửa sổ. Bên bục — Diễm xuất hiện — cô gái hai mươi áo dạ nâu — vuốt vai anh Khải. Mỉm cười — như nói cảm ơn.
 
@@ -254,8 +254,8 @@ Anh thanh niên đó — ai? Người dưng đi đường? Hay ai đó Hạ Vy q
 
 [pause:1500ms]
 
-Bác tài liếc gương. "Đêm ba mươi sáu. Con bắt đầu nhớ có một anh thanh niên đưa Hạ Vy vào bệnh viện. Đêm sau con sẽ nhớ — anh đó là ai — Hạ Vy có quen anh không. Đừng vội."
+Bác tài liếc gương. "Vào đêm ba mươi sáu. Con bắt đầu nhớ có một anh thanh niên đưa Hạ Vy vào bệnh viện. Đêm sau con sẽ nhớ — anh đó là ai — Hạ Vy có quen anh không. Đừng vội."
 
 Khải Phong gật. Lệ rơi nhẹ — không rất to.
 
-Đêm thứ ba mươi sáu. Xe đi tiếp xuống đèo. Phía sau — Sa Pa khuất trong sương núi. Văn Khải ở lại nhà thờ — quỳ trước bục — ảnh em gái cạnh tượng Chúa.
+Đêm thứ ba mươi sáu của hành trình. Xe đi tiếp xuống đèo. Phía sau — Sa Pa khuất trong sương núi. Văn Khải ở lại nhà thờ — quỳ trước bục — ảnh em gái cạnh tượng Chúa.

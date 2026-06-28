@@ -54,17 +54,17 @@ arc_design_compliant: bible/21 R33-R40 + R41
 
 Đêm thứ 38 trên chuyến xe — Khải Phong ngồi ghế thứ ba. Mưa tháng tư rỉ rả ngoài kính xe. Xe đi qua đoạn đường ven vịnh Hạ Long, Hà Nội — hàng cây im bóng. Đèn pha quét lên hàng dừa biển — gốc cong vì gió biển.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi tám. Trong túi áo gió Khải Phong — ba mươi bảy vật. Đêm qua thêm sợi chỉ vải đen từ vải bọc mảnh biển số xe Mỹ Hạnh.
+Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi tám của hành trình. Trong túi áo gió Khải Phong — ba mươi bảy vật. Đêm qua thêm sợi chỉ vải đen từ vải bọc mảnh biển số xe Mỹ Hạnh.
 
 Bác tài lái. Đoạn đường biển — mặn gió. Mặt vịnh phía bên trái — tối — vài ánh đèn tàu xa.
 
-Mưa rải nhẹ nhàng. Mặt đường ướt — gió biển thổi lên cửa kính xe.
+Trời mưa rải nhẹ nhàng. Mặt đường ướt — gió biển thổi lên cửa kính xe.
 
 Xe chậm lại trước một bưu điện xưa — biển gỗ mun "Bưu điện huyện Hạ Long" — cổng đã đóng — đèn vàng treo cột còn sáng. Tường bưu điện có dấu sơn xanh đã tróc.
 
 Một người đàn ông đứng đợi bên cổng. Khoảng ba mươi lăm tuổi. Áo sơ mi trắng — quần tây xanh đậm — tay phải cầm hộp quà nhỏ — gói trong giấy quà màu xanh nhạt — buộc nơ đỏ.
 
-Anh vào xe. Đi qua mấy hàng ghế trước — chân chậm lại. Ngồi xuống ghế thứ chín.
+Người đàn ông vào xe. Đi qua mấy hàng ghế trước — chân chậm lại. Ngồi xuống ghế thứ chín.
 
 Đặt hộp quà lên đùi. Nhìn xuống hộp — không mở.
 
@@ -76,7 +76,7 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Anh ngồi yên. Vuốt nơ đỏ trên hộp quà. Đầu ngón tay anh nhẹ — như sợ làm hư nơ.
+Người đàn ông ngồi yên. Vuốt nơ đỏ trên hộp quà. Đầu ngón tay anh nhẹ — như sợ làm hư nơ.
 
 Khải Phong quan sát từ ghế ba. Anh ba lăm — mặt sáng — vẻ người ổn — không khổ tâm — chỉ buồn nhẹ nhàng.
 
@@ -104,7 +104,7 @@ Anh ghế chín nhìn về phía đó. Hơi thở chậm lại.
 
 "Lan..."
 
-Anh nói rất nhỏ.
+Người đàn ông nói rất nhỏ.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
@@ -112,7 +112,7 @@ Anh nói rất nhỏ.
 
 Xe đi qua đó. Nhà mái tôn khuất.
 
-Anh quay đầu lại. Vuốt hộp quà.
+Người đàn ông quay đầu lại. Vuốt hộp quà.
 
 ---
 
@@ -148,7 +148,7 @@ Giọng anh trầm — chậm.
 
 [pause:1500ms]
 
-"Tôi nghĩ về hộp quà em hai tháng. Tôi quyết — tôi sẽ tặng em một hộp gỗ nhỏ — chứa bộ bút máy đẹp — bút em có thể viết thơ. Tôi đặt mua bút ở phố Tràng Tiền Hà Nội — gửi về Hạ Long."
+"Tôi nghĩ về hộp quà em hai tháng. Người đàn ông quyết — tôi sẽ tặng em một hộp gỗ nhỏ — chứa bộ bút máy đẹp — bút em có thể viết thơ. Tôi đặt mua bút ở phố Tràng Tiền Hà Nội — gửi về Hạ Long."
 
 "Tôi gói hộp quà — giấy quà xanh nhạt — nơ đỏ — em thích màu đỏ. Tôi chuẩn bị từ sinh nhật em mười bảy — định tặng em một năm sau."
 
@@ -162,7 +162,7 @@ Giọng anh trầm — chậm.
 
 "Em cất hộp về nhà — đặt trong tủ — mười bảy năm. Không mở — không tặng ai khác — không vứt."
 
-"Tôi sống tiếp. Tôi học cấp ba xong — vào Đại học Du lịch — ra trường làm hướng dẫn viên ở Hạ Long. Tôi cưới vợ ba năm trước — vợ tôi biết chuyện hộp quà — em hiểu — không trách em giữ lại."
+"Tôi sống tiếp. Người đàn ông học cấp ba xong — vào Đại học Du lịch — ra trường làm hướng dẫn viên ở Hạ Long. Tôi cưới vợ ba năm trước — vợ tôi biết chuyện hộp quà — em hiểu — không trách em giữ lại."
 
 [pause:1500ms]
 
@@ -178,7 +178,7 @@ Bác tài cất lời.
 
 Đức Khải Phong khẽ gật đầu.
 
-"Tôi nhớ. Tôi hứa tặng Lan hộp quà sinh nhật mười tám — em đi trước sinh nhật một tháng. Tôi giữ hộp mười bảy năm — không tặng ai — không mở. Bây giờ em gửi qua bưu điện — đến bố mẹ em — bố mẹ em đặt trên bàn thờ em — như cách tặng em sau mười tám năm."
+"Tôi nhớ. Người đàn ông hứa tặng Lan hộp quà sinh nhật mười tám — em đi trước sinh nhật một tháng. Tôi giữ hộp mười bảy năm — không tặng ai — không mở. Bây giờ em gửi qua bưu điện — đến bố mẹ em — bố mẹ em đặt trên bàn thờ em — như cách tặng em sau mười tám năm."
 
 [pause:1200ms]
 
@@ -200,13 +200,13 @@ Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim
 
 Bác tài: "Chưa tới lúc."
 
-Anh bước xuống dưới.
+Người đàn ông bước xuống dưới.
 
 [pause:1200ms]
 
 Bên ngoài — Đức Anh đi vào sân bưu điện huyện Hạ Long — bảo vệ đã mở cửa — đèn bưu điện trực đêm còn sáng. Quầy gửi bưu kiện — nhân viên trực đêm đang ngồi.
 
-Anh đến. Đưa hộp quà — nhân viên cân — anh viết địa chỉ — gửi. Anh đặt tiền cước. Nhân viên đưa biên lai.
+Người đàn ông đến quầy. Đưa hộp quà — nhân viên cân — anh viết địa chỉ — gửi. Người đàn ông đặt tiền cước. Nhân viên đưa biên lai.
 
 Khải Phong chớp mắt — nhìn qua cửa sổ. Bên quầy — Lan xuất hiện — cô gái mười bảy áo dạ trắng — vuốt vai Đức Anh. Mỉm cười nhẹ nhàng.
 
@@ -252,8 +252,8 @@ Anh Hải đến bệnh viện một lần đó — sau không liên lạc lại
 
 [pause:1500ms]
 
-Bác tài liếc gương. "Đêm ba mươi tám. Con nhớ tên anh Hải. Đêm sau con sẽ nhớ — anh Hải làm gì — vì sao anh đứng cùng đường với Hạ Vy đêm đó — anh có quen em không. Đừng vội."
+Bác tài liếc gương. "Vào đêm ba mươi tám. Con nhớ tên anh Hải. Đêm sau con sẽ nhớ — anh Hải làm gì — vì sao anh đứng cùng đường với Hạ Vy đêm đó — anh có quen em không. Đừng vội."
 
 Khải Phong gật. Lệ rơi nhẹ nhàng.
 
-Đêm thứ ba mươi tám. Xe đi tiếp ra khỏi vịnh Hạ Long. Phía sau — bưu điện khuất. Đức Anh ở lại bên quầy — biên lai trong tay.
+Đêm thứ ba mươi tám của hành trình. Xe đi tiếp ra khỏi vịnh Hạ Long. Phía sau — bưu điện khuất. Đức Anh ở lại bên quầy — biên lai trong tay.

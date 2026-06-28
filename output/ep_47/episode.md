@@ -54,7 +54,7 @@ arc_design_compliant: bible/21 R33-R42
 
 Sau cơn mưa chiều. Đêm xuống nhanh. Xe đêm rẽ vào đoạn đường vành đai, sân bay Nội Bài. Hàng hàng đèn cao tốc ven đường còn đẫm — đèn pha quét lên thân cây ướt.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi bảy. Trong túi áo gió Khải Phong — bốn mươi sáu vật.
+Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi bảy của hành trình. Trong túi áo gió Khải Phong — bốn mươi sáu vật.
 
 Bác tài lái.
 
@@ -62,7 +62,7 @@ Bác tài lái.
 
 Xe chậm lại trước nhà ga T1 sân bay Nội Bài — biển "Ga đến T1" — cửa kính đã đóng. Một phụ nữ trẻ đứng đợi bên cửa. Khoảng ba mươi tuổi. Áo dạ đen — phong cách đi đám tang. Tay phải cầm phong bì kraft nhỏ — bên trong vật giấy.
 
-Cô bước lên xe. Đi qua hàng ghế đầu — chân chậm lại. Ngồi xuống ghế thứ năm.
+Cô gái khẽ bước lên xe. Đi qua hàng ghế đầu — chân chậm lại. Ngồi xuống ghế thứ năm.
 
 Mở phong bì. Lấy hai vé máy bay giấy — vé bay cặp đôi Vietjet — Hà Nội-Seoul khứ hồi — ngày bay "15/10/2021."
 
@@ -74,7 +74,7 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Cô gái ngồi yên lặng. Vuốt vé máy bay. Đầu ngón tay cô dừng ở ngày bay.
+Cô gái khẽ ngồi yên lặng. Vuốt vé máy bay. Đầu ngón tay cô dừng ở ngày bay.
 
 Khải Phong quan sát từ ghế ba. Cô ba mươi — mặt thanh — mắt buồn — vẻ người vừa đi tang.
 
@@ -100,7 +100,7 @@ Cô ghế năm nhìn về phía đó.
 
 "Khoa..."
 
-Cô nói rất nhỏ.
+Cô gái nói rất nhỏ nhẹ.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
@@ -108,7 +108,7 @@ Cô nói rất nhỏ.
 
 Xe đi qua đó. Nhà tập thể khuất.
 
-Cô quay đầu lại. Vuốt vé.
+Cô gái khẽ quay đầu lại. Vuốt vé.
 
 ---
 
@@ -136,9 +136,9 @@ Giọng cô đều — chậm.
 
 "Khoa cũng vui — em đùa: 'Mai mình bay rồi — đếm giờ.' Em cười."
 
-"Đêm em đi ngủ. Sáng — em dậy bốn rưỡi — định gọi em dậy chuẩn bị. Em không động."
+"Vào đêm em đi ngủ. Sáng — em dậy bốn rưỡi — định gọi em dậy chuẩn bị. Em không động."
 
-"Em sờ — em không thở. Em lạnh — đã đi mấy giờ. Em hét — em gọi cấp cứu — không kịp."
+"Em sờ — em không thở. Cô gái lạnh — đã đi mấy giờ. Em hét — em gọi cấp cứu — không kịp."
 
 [pause:1500ms]
 
@@ -160,7 +160,7 @@ Bác tài cất lời.
 
 Thanh Nga gật. Lệ rơi xuống vé.
 
-"Em nhớ. Em hứa đi Hàn Quốc trăng mật với em — em đi trước ngày bay. Em không kịp giữ vé. Em đem trả vé về sân bay — em đã sẵn sàng tiếp tục đời em."
+"Em nhớ. Cô gái hứa đi Hàn Quốc trăng mật với em — em đi trước ngày bay. Em không kịp giữ vé. Em đem trả vé về sân bay — em đã sẵn sàng tiếp tục đời em."
 
 [pause:1200ms]
 
@@ -182,15 +182,15 @@ Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim
 
 Bác tài: "Chưa tới lúc."
 
-Cô bước xuống dưới.
+Cô gái bước xuống dưới đường.
 
 [pause:1200ms]
 
-Bên ngoài — Thanh Nga đi vào ga T1 — bảo vệ đã mở cửa phụ. Phòng thông tin — hộp lost items gỗ đặt cạnh quầy. Cô đến. Đặt phong bì vào hộp. Cúi đầu.
+Bên ngoài — Thanh Nga đi vào ga T1 — bảo vệ đã mở cửa phụ. Phòng thông tin — hộp lost items gỗ đặt cạnh quầy. Cô gái đã đến nơi đó. Đặt phong bì vào hộp. Cúi đầu.
 
 Khải Phong chớp mắt — nhìn qua cửa sổ. Bên quầy — Khoa xuất hiện — thanh niên hai sáu áo gió đen — vuốt vai Thanh Nga. Mỉm cười.
 
-Khải Phong chớp lần nữa. Khoa tan ra.
+Khải Phong chớp lần nữa. Người tên Khoa tan đi.
 
 Thanh Nga ngẩng đầu. Đi ra ngoài.
 
@@ -226,11 +226,11 @@ Nhưng có thể anh đi với Hạ Nhi — anh gái Hạ Vy. Hạ Nhi sắp cư
 
 Khải Phong nhói thêm. Anh đã hứa với Hạ Vy đi Hàn Quốc — anh không có cách nào giữ lại. Anh chỉ có thể đi qua tưởng tượng — qua ký ức — không qua chân.
 
-Bác tài liếc gương. "Đêm bốn mươi bảy. Con đã nhớ lời hứa Hàn Quốc. Đêm sau con sẽ ngẫm — có thể con đi một mình thay em không. Đừng vội."
+Bác tài liếc gương. "Vào đêm bốn mươi bảy. Con đã nhớ lời hứa Hàn Quốc. Đêm sau con sẽ ngẫm — có thể con đi một mình thay em không. Đừng vội."
 
 Khải Phong gật. Lệ rơi xuống dưới.
 
-Đêm thứ bốn mươi bảy. Xe đi tiếp ra khỏi sân bay. Phía sau — Thanh Nga ở lại ga — hai vé trong hộp lost items.
+Đêm thứ bốn mươi bảy của hành trình. Xe đi tiếp ra khỏi sân bay. Phía sau — Thanh Nga ở lại ga — hai vé trong hộp lost items.
 
 Khải Phong nghĩ về Hàn Quốc — anh chưa bao giờ thấy lá đỏ mùa thu — anh chỉ thấy qua ảnh — qua phim. Nếu anh đi — anh sẽ chụp ảnh — anh sẽ đem về cho Hạ Vy qua đèn nến.
 
@@ -238,16 +238,16 @@ Em không quyết được đêm nay. Em sẽ ngẫm tiếp.
 
 Đêm thứ bốn mươi bảy kết thúc.
 
-Khải Phong nhớ thêm chi tiết — đêm anh hứa Hạ Vy đi Hàn Quốc — anh đang ngồi ở bàn ăn phòng trọ Khâm Thiên — anh vừa nấu xong canh chua. Anh ăn xong. Hạ Vy nói "Hứa thật nhé." Em đáp "Hứa thật" — em nhìn em mắt. Em không đùa. Em tin em sẽ làm thật. Em sẽ tìm cách giữ lời hứa muộn — qua nhẫn bạc — qua ảnh dưới lá đỏ — qua đèn nến. Em đã quyết. Sang năm — sau dự cưới Hạ Nhi — em sẽ đi Hàn Quốc. Đêm thứ bốn mươi bảy kết thúc.
+Khải Phong nhớ thêm chi tiết — đêm anh hứa Hạ Vy đi Hàn Quốc — anh đang ngồi ở bàn ăn phòng trọ Khâm Thiên — anh vừa nấu xong canh chua. Em ăn xong rồi. Hạ Vy nói "Hứa thật nhé." Em đáp "Hứa thật" — em nhìn em mắt. Em không đùa. Cô gái tin em sẽ làm thật. Em sẽ tìm cách giữ lời hứa muộn — qua nhẫn bạc — qua ảnh dưới lá đỏ — qua đèn nến. Em đã quyết. Sang năm — sau dự cưới Hạ Nhi — em sẽ đi Hàn Quốc. Đêm thứ bốn mươi bảy kết thúc.
 
-Khải Phong ngồi đêm chưa sáng. Anh không đặt vé Hàn Quốc — anh chỉ hứa miệng. Anh không có vé giấy treo tủ lạnh như Thanh Nga. Anh chỉ có ký ức — chỉ có lời hứa miệng đêm 2017. Có thể anh sẽ tự tạo vé — anh đặt vé mới — bay một mình mùa thu năm sau — anh sẽ đem nhẫn bạc anh — anh sẽ chụp ảnh dưới lá đỏ — anh sẽ trở về Việt Nam đặt ảnh trên bàn thờ anh. Đêm bốn mươi bảy kết thúc — anh quyết.
+Khải Phong ngồi đêm chưa sáng. Anh không đặt vé Hàn Quốc — anh chỉ hứa miệng. Người đàn ông không có vé giấy treo tủ lạnh như Thanh Nga. Anh chỉ có ký ức — chỉ có lời hứa miệng đêm 2017. Có thể anh sẽ tự tạo vé — anh đặt vé mới — bay một mình mùa thu năm sau — anh sẽ đem nhẫn bạc anh — anh sẽ chụp ảnh dưới lá đỏ — anh sẽ trở về Việt Nam đặt ảnh trên bàn thờ anh. Đêm bốn mươi bảy kết thúc — anh quyết.
 
-Khải Phong nhìn lá đỏ trong tưởng tượng. Anh sẽ đi Hàn Quốc một mình. Anh đem nhẫn Hạ Vy. Anh chụp ảnh. Anh đem về Việt Nam. Anh đặt bàn thờ anh ở quê Khải Phong — anh chưa lập bàn thờ. Anh sẽ lập sau dự cưới Hạ Nhi.
+Khải Phong nhìn lá đỏ trong tưởng tượng. Anh sẽ đi Hàn Quốc một mình. Khải Phong đem nhẫn Hạ Vy. Em chụp ảnh kỉ niệm. Khải Phong đem về Việt Nam. Anh đặt bàn thờ anh ở quê Khải Phong — anh chưa lập bàn thờ. Anh sẽ lập sau dự cưới Hạ Nhi.
 
 Khải Phong vuốt nhẫn ngón út một lần nữa. Anh ấm — anh không lạnh dù đêm tháng tư. Anh sẽ đeo qua Hàn Quốc — anh sẽ đeo qua dự cưới Hạ Nhi — anh sẽ đeo cả đời nếu cần. Đêm bốn mươi bảy kết thúc.
 
 Khải Phong nhìn ra cửa sổ — đường vành đai vẫn dài. Đêm tháng tư chưa hết. Anh đợi đêm thứ bốn mươi tám tiếp tục.
 
-Khải Phong cố nhớ ngày 15 tháng 10 năm 2021 — anh đang ở đâu lúc đó? Anh vẫn đi làm văn phòng kiến trúc Khâm Thiên. Anh không đi nước ngoài. Anh không nhớ ngày đó đặc biệt gì với anh.
+Khải Phong cố nhớ ngày 15 tháng 10 năm 2021 — anh đang ở đâu lúc đó? Anh vẫn đi làm văn phòng kiến trúc Khâm Thiên. Người đàn ông không đi nước ngoài. Anh không nhớ ngày đó đặc biệt gì với anh.
 
-Khải Phong ngẫm — 15 tháng 10 năm 2021 — anh vẫn đi làm văn phòng kiến trúc Khâm Thiên. Anh vẫn ngủ một mình phố Nguyễn Trãi. Anh không nhớ ngày đó. Anh chỉ là một ngày bình thường trong tám năm Khải Phong sau Hạ Vy mất. Hàng triệu ngày bình thường — không ngày đặc biệt nào kéo anh đi nước ngoài.
+Khải Phong ngẫm — 15 tháng 10 năm 2021 — anh vẫn đi làm văn phòng kiến trúc Khâm Thiên. Anh vẫn ngủ một mình phố Nguyễn Trãi. Người đàn ông không nhớ ngày đó. Anh chỉ là một ngày bình thường trong tám năm Khải Phong sau Hạ Vy mất. Hàng triệu ngày bình thường — không ngày đặc biệt nào kéo anh đi nước ngoài.

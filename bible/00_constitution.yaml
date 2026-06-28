@@ -130,6 +130,27 @@ R56_story_mode_hoi_tuong_am_anh:
   enforcement: tools/audit_story_mode.py + manual editorial
   cross_ref: [bible/01 series_bible.soul_dna, bible/06 lexical_style]
 
+R66_short_sentence_chain_hardlock:
+  # round 18 add 2026-06-28 — Mr.Long: "anh đến đó, anh ngồi xuống, anh đứng dậy — giật cục không mềm mại"
+  rule: "1 câu ngắn (4-6 từ) phải đi kèm 1 câu dài (≥10 từ) — CẤM lạm dụng chuỗi câu ngắn liên tiếp"
+  why: |
+    TTS Vietnamese đọc chuỗi câu ngắn liên tiếp → rhythm chopped, giật cục.
+    Nghe giống máy đọc đều đều, không tự nhiên như Ngọc Ngạn cadence.
+    Mr.Long flag: "anh đến đó, anh ngồi xuống, anh đứng dậy" = lỗi.
+  rule_detail:
+    short_sentence: "câu 4-6 từ"
+    max_consecutive: 2  # tối đa 2 câu ngắn liền — câu thứ 3 PHẢI dài ≥10 từ
+    exception: "Cho phép sử dụng trường hợp đặc biệt nhấn mạnh dramatic — KHÔNG được lạm dụng"
+  example:
+    bad: |
+      Anh đến đó.
+      Anh ngồi xuống.
+      Anh đứng dậy.
+    good: |
+      Khải Phong đến đó. Người đàn ông ngồi xuống một lúc, rồi từ từ đứng dậy bước ra ngoài.
+  enforcement: tools/audit_short_chain.py (build phase 2)
+  cross_ref: [R60 short EOL, R61 short START, R62 anaphora]
+
 R65_total_consistency_no_invention_hardlock:
   # round 15 add 2026-06-28 — Mr.Long: "kể serri như tiểu thuyết, logic tổng hợp tất cả kiến thức, CẤM SAI, không bịa luyên thuyên"
   rule: "Truyện = TIỂU THUYẾT serri. Mọi chi tiết PHẢI nhất quán tổng thể logic + kiến thức + thời gian + địa lý + khoa học. CẤM bịa chi tiết không kiểm chứng → vô lý thành luyên thuyên."
