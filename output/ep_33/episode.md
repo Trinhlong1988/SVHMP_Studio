@@ -146,13 +146,13 @@ Giọng cô đều — chậm.
 
 [pause:1500ms]
 
-"Hai năm trôi. Em bận. Người con gái gái không ra ngoài chơi. Hình bóng con gái ấy vẫn dạy. Cô ấy vẫn nhắc tin nhắn 'tháng sau em sẽ ra.'"
+"Hai năm trôi. Cô gái gái gái gái bận. Người con gái không ra ngoài chơi. Hình bóng con gái ấy vẫn dạy. Cô ấy vẫn nhắc tin nhắn 'tháng sau em sẽ ra.'"
 
 "Năm hai nghìn không trăm hai mươi ba — em nhắn em: 'Hoài An ơi em được chẩn đoán ung thư cổ tử cung. Giai đoạn ba. Bác sĩ Thái Bình chuyển em lên Bệnh viện K Hà Nội điều trị.'"
 
 "Em sốc. Cô gái đáp ngay: 'Quỳnh ơi em đến Hà Nội — em đến đón em ở ga. Em ở nhà em — em chăm bạn điều trị.'"
 
-"Quỳnh đến Hà Nội tuần sau. Em đón em ở ga. Em ở nhà em — em đi Bệnh viện K mỗi tuần hóa trị."
+"Quỳnh đến Hà Nội tuần sau. Em ấy đón em ở ga. Em ở nhà em — em đi Bệnh viện K mỗi tuần hóa trị."
 
 "Em em yếu nhanh. Hóa trị sáu tháng — bệnh không thuyên giảm. Bác sĩ chuyển sang chăm sóc giảm nhẹ."
 

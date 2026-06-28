@@ -146,7 +146,7 @@ Giọng anh trầm.
 
 [pause:1500ms]
 
-"Năm em ba mươi sáu — em phát hiện ung thư xương. Em điều trị Sài Gòn. Cô gái đến thăm em một lần — em tặng mẹ hộp trái cây — em không tặng đàn — em sợ em không kịp chơi nhiều."
+"Năm em ba mươi sáu — em phát hiện ung thư xương. Cô gái điều trị Sài Gòn. Cô gái đến thăm em một lần — em tặng mẹ hộp trái cây — em không tặng đàn — em sợ em không kịp chơi nhiều."
 
 "Em không nhắc lời hứa đàn. Cô gái không hỏi gì nữa. Em chỉ hỏi sức khỏe."
 
@@ -220,9 +220,9 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Anh ấy ngồi. Hữu Duy giữ lời hứa đàn mười lăm năm muộn — qua tiệm. Lời hứa giữ qua cách khác — không cần đúng cách ban đầu.
+Người đàn ông ấy ngồi. Hữu Duy giữ lời hứa đàn mười lăm năm muộn — qua tiệm. Lời hứa giữ qua cách khác — không cần đúng cách ban đầu.
 
-Anh nhói. Anh không thể đi Hàn Quốc với Hạ Vy. Nhưng anh có thể giữ lời hứa qua cách khác.
+Khải Phong nhói. Anh không thể đi Hàn Quốc với Hạ Vy. Nhưng anh có thể giữ lời hứa qua cách khác.
 
 [pause:1500ms]
 

@@ -126,7 +126,7 @@ Giọng anh trầm — chậm.
 
 "Bạn cấp ba tôi — Lan — mất mười bảy năm trước. Mười bảy tuổi. Bệnh bạch cầu — chữa hai năm — không qua ở đó. Mất một tháng trước sinh nhật mười tám tuổi."
 
-"Lan và tôi học cùng lớp 10A trường THPT Hạ Long. Em ngồi bàn trên tôi. Em hiền — em học giỏi văn — em viết thơ đăng báo tường lớp mỗi tháng."
+"Lan và tôi học cùng lớp 10A trường THPT Hạ Long. Cô gái ngồi bàn trên tôi. Em hiền — em học giỏi văn — em viết thơ đăng báo tường lớp mỗi tháng."
 
 [pause:800ms]
 

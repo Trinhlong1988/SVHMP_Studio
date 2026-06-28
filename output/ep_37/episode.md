@@ -142,13 +142,13 @@ Giọng cô đều — chậm.
 
 [pause:1500ms]
 
-"Sau tang em — em quay lại phòng trọ. Em ở một mình. Em không thể dọn ngay — vật của em vẫn ở nơi — quần áo trong tủ — laptop trên bàn — sách trên kệ."
+"Sau tang em — em quay lại phòng trọ. Cô gái gái ở một mình. Em không thể dọn ngay — vật của em vẫn ở nơi — quần áo trong tủ — laptop trên bàn — sách trên kệ."
 
 "Em dọn dần — sáu tháng. Cô gái đem quần áo em về Bình Định gửi mẹ em. Em bán laptop — bán xe máy còn lại của em."
 
 "Em đến tiệm sửa xe — chính tiệm Sửa xe Toàn em vừa bước lên xe — em gửi xe máy hỏng em sau tai nạn cho thợ Toàn xử lý."
 
-"Anh Toàn thợ sửa xe đưa em mảnh biển số xe — biển vỡ một góc — anh giữ làm chứng tích sau tai nạn. Anh hỏi em có muốn giữ không. Em ấy gật. Hình bóng con gái ấy đem mảnh về."
+"Anh Toàn thợ sửa xe đưa em mảnh biển số xe — biển vỡ một góc — anh giữ làm chứng tích sau tai nạn. Anh hỏi em có muốn giữ không. Cô gái ấy ấy ấy gật. Hình bóng con gái ấy đem mảnh về."
 
 [pause:1500ms]
 

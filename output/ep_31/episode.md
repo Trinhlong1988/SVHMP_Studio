@@ -224,9 +224,9 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Anh ấy ngồi yên. Có năm vật cúc trong túi. Cụm cúc mở rộng — không đóng ở bốn vật.
+Khải Phong ấy ngồi yên. Có năm vật cúc trong túi. Cụm cúc mở rộng — không đóng ở bốn vật.
 
-Anh ngẫm — tháng. Thanh Vân nói rõ ràng — mẹ mất ngày mười hai tháng. Hạ Vy cũng tháng.
+Người đàn ông ngẫm — tháng. Thanh Vân nói rõ ràng — mẹ mất ngày mười hai tháng. Hạ Vy cũng tháng.
 
 Người khách cố nhớ ngày cụ thể. Tháng tư năm 2018. Trời mưa rất to lớn. Trời đã về đêm. Bệnh viện Bạch Mai gọi.
 
@@ -236,7 +236,7 @@ Hôm nay ngày bao nhiêu rồi nhỉ? người đàn ông tim đập nhanh — 
 
 Mười hai tháng. Hôm nay ngày mười hai tháng. Cùng ngày với mẹ Thanh Vân.
 
-Anh nhói. Bác tài cố ý đem Thanh Vân lên xe đêm nay — để người khách nhớ ngày cụ thể.
+Khải Phong nhói. Bác tài cố ý đem Thanh Vân lên xe đêm nay — để người khách nhớ ngày cụ thể.
 
 Hạ Vy mất ngày mười hai tháng năm 2018. Tám năm trước hôm nay. Đêm tháng mưa to — bệnh viện Bạch Mai.
 
@@ -246,7 +246,7 @@ Người đàn ông gật. Lệ rơi nhẹ — không rất rất to.
 
 Anh ấy lấy mảnh bằng tốt nghiệp anh Nguyễn ra — đọc lại chữ thầy Hùng: "người khách — học sinh quý của tôi — 2017." người đàn ông cố nhớ — chính anh ấy tốt nghiệp Đại học Kiến trúc 2017 — sau đó năm 2018 Hạ Vy mất.
 
-Tám năm. Hôm nay đêm tháng 2025. Mười hai tháng tư — gần đúng ngày. anh cố tính — đêm hôm nay là đêm mấy tháng tư.
+Tám năm. Vào hôm nay đêm tháng 2025. Mười hai tháng tư — gần đúng ngày. anh cố tính — đêm hôm nay là đêm mấy tháng tư.
 
 Người khách nhìn ra cửa sổ. Bên ngoài — trời chưa sáng lên. Sao tháng tư còn sáng — chưa lệch sang tháng năm. Đêm tháng tư — chưa biết chính xác ngày nào.
 
@@ -254,6 +254,6 @@ Người khách nhìn ra cửa sổ. Bên ngoài — trời chưa sáng lên. Sa
 
 Người đàn ông nhớ — Thanh Vân nói ngày mười hai tháng tư mẹ anh mất. Có thể đêm nay — đêm thứ ba mươi mốt — chính ngày mười hai. Hoặc gần lại.
 
-Anh ấy tim đập nhanh. Hạ Vy mất ngày mười hai tháng tư 2018. Đêm hôm nay có thể là kỉ niệm tám năm.
+Người đàn ông ấy tim đập nhanh. Hạ Vy mất ngày mười hai tháng tư 2018. Đêm hôm nay có thể là kỉ niệm tám năm.
 
 Đêm thứ ba mươi mốt — anh đếm thêm. Xe đi tiếp. Phía sau — Hưng Yên khuất. Thanh Vân ở lại quỳ — bên mộ mẹ — đến sáng lên cao. Cùng đêm tháng tư. 

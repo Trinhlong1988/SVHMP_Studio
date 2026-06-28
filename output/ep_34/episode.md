@@ -118,7 +118,7 @@ Người đàn ông quay đầu lại. Vuốt bó hương.
 
 [pause:1000ms]
 
-"Tôi là Văn Tuấn. Em năm mươi tuổi rồi. Người kể đây ở Đông Văn — Vĩnh Phúc — quê. Hình ảnh người kể chuyện làm cán bộ xã đó."
+"Tôi là Văn Tuấn. Cô gái năm mươi tuổi rồi. Người kể đây ở Đông Văn — Vĩnh Phúc — quê. Hình ảnh người kể chuyện làm cán bộ xã đó."
 
 Giọng anh trầm — chậm.
 

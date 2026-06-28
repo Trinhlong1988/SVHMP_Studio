@@ -151,7 +151,7 @@ Giọng anh đều — mệt.
 
 "Một năm sau ra trường — tôi gặp Hoài cuối tuần được hai lần một tháng. Hoài không trách. Em không nói gì."
 
-"Năm thứ hai — tôi gặp Hoài một lần một tháng. Em im lặng yên. Vẫn không trách."
+"Năm thứ hai — tôi gặp Hoài một lần một tháng. Cô gái gái im lặng yên. Vẫn không trách."
 
 "Năm thứ ba sau ra trường — tôi gặp Hoài hai lần năm đó. Sinh nhật em — tôi không đến — bận đối tác. Tôi nhắn em: 'Anh xin lỗi sinh nhật em — anh bù em cuối tuần.'"
 

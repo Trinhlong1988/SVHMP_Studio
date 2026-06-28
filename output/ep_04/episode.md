@@ -176,6 +176,12 @@ Người phụ nữ ghế chín không quay đầu. Nhưng môi cô khẽ độn
 
 "Mỗi đêm trước khi ngủ, con lấy phong bao ra. Đặt trước mặt. Cầm bút. Nhìn lâu lắm. Rồi đặt lại vào cặp da."
 
+
+
+[pause:1000ms]
+
+Cô gái vuốt nét bút "Cháu Diệu" thêm một lần. Tay run nhẹ nhàng. "Đêm nay em sẽ viết hộ mẹ. Lần đầu. Em đã chuẩn bị suốt năm năm — mực, giấy, tâm thế. Hình bóng cô ấy sẽ viết: 'Bà tặng cháu mạnh khoẻ. Hình ảnh người bà chờ cháu lớn.' Em sẽ ký tên mẹ. Bóng cô em ấy sẽ đặt phong bao vào tay bé Diệu — mùng một Tết tới."
+
 ---
 
 # PAYOFF [section 5 — Kết quả]

@@ -170,7 +170,7 @@ Giọng anh trầm — chậm.
 
 "Tuấn — sau tang em — em không liên lạc nhà tôi tiếp. Em tốt nghiệp đi làm — đi nước ngoài năm năm. Năm vừa rồi tôi nghe em đã cưới một cô khác ở Hoa Kỳ — sinh con — sống ổn."
 
-"Tôi mừng cho em. Em đã sống tiếp. Em không bị Diễm kéo lui."
+"Tôi mừng cho em. Cô gái gái đã sống tiếp. Em không bị Diễm kéo lui."
 
 "Tôi cũng nên sống tiếp. Hai mươi năm tôi giữ ảnh — tôi nên buông. Em đi rồi — em không cần tôi giữ ảnh em với Tuấn."
 

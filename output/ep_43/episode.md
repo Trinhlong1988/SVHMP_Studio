@@ -118,7 +118,7 @@ Người đàn ông quay đầu lại. Vuốt giấy.
 
 [pause:1000ms]
 
-"Tôi là Văn Trường. Em năm mươi tuổi rồi. Người kể đây ở Bình Phước — quê. Hình ảnh người kể chuyện làm chủ vườn cao su — ba héc-ta."
+"Tôi là Văn Trường. Cô gái năm mươi tuổi rồi. Người kể đây ở Bình Phước — quê. Hình ảnh người kể chuyện làm chủ vườn cao su — ba héc-ta."
 
 Giọng anh trầm.
 
@@ -248,9 +248,9 @@ Bố mẹ anh hiền. Bố anh không trách Khải Phong. Mẹ anh nắm tay Kh
 
 Khải Phong gật. Không nói. Anh ăn cơm — quá ngọt — anh không hợp khẩu vị Hải Phòng. Anh ngồi một giờ — anh xin về Hà Nội — anh nói có việc gấp.
 
-Sau lần đó — em không về. Em không gọi. Em ngại.
+Sau lần đó — em không về. Em không gọi. Cô gái gái gái ấy ngại.
 
-Bố mẹ em chắc đã già — em chưa hỏi thăm sức khỏe. Em sai. Em nên gọi điện một lần năm vừa rồi.
+Bố mẹ em chắc đã già — em chưa hỏi thăm sức khỏe. Người con gái gái sai. Em nên gọi điện một lần năm vừa rồi.
 
 Vào đêm bốn mươi ba.
 

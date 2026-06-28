@@ -110,7 +110,7 @@ Bên trong căn nhà phía xa, qua ô cửa sổ tối, không có đèn. Không
 
 Rồi nhích thêm một lần nữa. Tách. Hai lần liền sau.
 
-Anh để ý. Đêm trước chỉ một lần. Vào đêm nay đến hai lần.
+Khải Phong để ý. Đêm trước chỉ một lần. Vào đêm nay đến hai lần.
 
 Bác tài không quay đầu. Tay vẫn đặt vô-lăng. Nhưng ánh mắt liếc gương chiếu hậu kéo dài hơn nữa.
 
@@ -218,7 +218,7 @@ Khi đi qua chỗ anh ấy ngồi, chú khẽ nói:
 
 "Chào con. Con cũng đi đêm thường xuyên à?"
 
-Anh chưa kịp trả lời. Chú đã đi ra cửa. Cửa xe từ từ mở. Lớp sương biển khép vào lạnh.
+Người đàn ông chưa kịp trả lời. Chú đã đi ra cửa. Cửa xe từ từ mở. Lớp sương biển khép vào lạnh.
 
 Trước khi xuống, chú quay đầu nhìn bác tài. Lâu hơn một thoáng. Rồi nhìn lên đồng hồ trên xe.
 
@@ -260,7 +260,7 @@ Bác tài lái như mọi khi. Hai tay vô-lăng. Găng trắng. Nhịp ngón tr
 
 Đồng hồ trên xe kim phút lại nhích. Tách. Một lần. Rồi nhích thêm. Tách. Hai lần liền sau.
 
-Anh ấy đếm. Đêm thứ năm anh ngồi ghế ba. Đồng hồ nhích hai lần. Đêm trước một lần. Đêm trước nữa một lần.
+Khải Phong ấy đếm. Đêm thứ năm anh ngồi ghế ba. Đồng hồ nhích hai lần. Đêm trước một lần. Đêm trước nữa một lần.
 
 Người khách nhớ — câu chú trung niên hỏi lúc xuống xe: "Bác tài lái xe này bao nhiêu năm rồi nhỉ?"
 

@@ -170,7 +170,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Anh khẽ gật đầu. Mắt đỏ — không khóc.
+Khải Phong khẽ gật đầu. Mắt đỏ — không khóc.
 
 "Tôi nhớ. Tôi hứa bố giữ vườn — tôi không giữ được. Cúc khô — là lời hứa khô của tôi với bố. Tôi không thể đem cúc tươi lên mộ bố — tôi đem cúc khô của chính bố — như chứng tích thất hứa."
 
@@ -226,7 +226,7 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Anh ngồi. Mảnh cúc khô trong túi — bên cạnh mảnh xà cừ — bên cạnh vỏ bạc — bên mười vật trước.
+Người đàn ông ngồi. Mảnh cúc khô trong túi — bên cạnh mảnh xà cừ — bên cạnh vỏ bạc — bên mười vật trước.
 
 Người khách vuốt cánh. Cảm thấy quen — không phải vì cúc dại bên đường — quen vì điều khác.
 
@@ -253,4 +253,4 @@ Bác tài liếc gương — không thêm lời. Chỉ chậm nhịp ngón trỏ
 
 Anh ấy cất cánh vào túi áo gió cẩn thận — không để bị nát giữa các vật khác. anh biết — cánh cúc này sẽ là một trong nhiều cánh cúc người khách nhặt — sẽ thành cụm vật quan trọng — bác tài đã hứa.
 
-Đêm thứ mười ba — người đàn ông đã đếm — đêm thứ mười ba trên chuyến xe này. Mỗi đêm anh ấy nhớ thêm một mảnh ký ức nhỏ. Ký ức về Hạ Vy đang trở lại — từng chút — từng cánh cúc — từng vật.
+Đêm thứ mười ba — người đàn ông đã đếm — đêm thứ mười ba trên chuyến xe này. Mỗi đêm anh ấy nhớ thêm một mảnh ký ức nhỏ. Ký ức về Hạ Vy đang trở lại — từng chút — từng cánh cúc — từng vật. 

@@ -130,7 +130,7 @@ Giọng anh trầm.
 
 "Đêm em mất — sáng — em đi chợ sớm. Sáu giờ sáng — em đi xe máy ra chợ. Em chở giỏ rau muối — chuẩn bị tan chợ về."
 
-"Bảy giờ rưỡi — em về — đoạn đường ven sông — xe tải vào đường nhỏ không đúng. Em va. Em mất trong phòng cấp cứu bệnh viện Bến Tre lúc chín giờ sáng."
+"Bảy giờ rưỡi — em về — đoạn đường ven sông — xe tải vào đường nhỏ không đúng. Cô gái gái gái gái va. Em mất trong phòng cấp cứu bệnh viện Bến Tre lúc chín giờ sáng."
 
 "Tôi đang ở vườn dừa khi nhận điện thoại bệnh viện. Người đàn ông chạy ngay. Tôi đến bệnh viện lúc em đã đi."
 
@@ -156,7 +156,7 @@ Giọng anh trầm.
 
 [pause:800ms]
 
-"Đêm trước hôm em đi — chúng tôi nằm cùng giường. Em xoa lưng tôi. Em bảo: 'Anh ngủ đi mai dậy sớm em đi chợ.' Em không biết đó là câu cuối."
+"Đêm trước hôm em đi — chúng tôi nằm cùng giường. Em ấy ấy xoa lưng tôi. Em bảo: 'Anh ngủ đi mai dậy sớm em đi chợ.' Em không biết đó là câu cuối."
 
 "Sáng — sáu giờ — em rời nhà. Tôi ngủ tiếp. Tiếng cửa khép nhẹ. Tiếng xe máy nổ ngoài sân. Tôi ngủ tiếp."
 
@@ -204,7 +204,7 @@ Người đàn ông đến nơi đó. Đặt hộp nhung vào hộp lost items. 
 
 Anh ấy chớp mắt — nhìn qua cửa sổ. Bên hộp — Hằng xuất hiện — phụ nữ ba mươi tám áo dài hồng — vuốt vai chồng. Mỉm cười nhẹ nhàng.
 
-Anh chớp lần nữa. Người tên Hằng tan đi.
+Khải Phong chớp lần nữa. Người tên Hằng tan đi.
 
 Hoàng Nam ngẩng đầu. Đi ra cửa.
 
@@ -226,7 +226,7 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 Người đàn ông ngồi. Hoàng Nam đem nhẫn vợ về quán cà phê chỗ yêu nhau — không giữ riêng nữa.
 
-Anh ấy nhói. anh có giữ nhẫn cưới Hạ Vy không?
+Người đàn ông ấy nhói. anh có giữ nhẫn cưới Hạ Vy không?
 
 Hình ảnh — người khách và Hạ Vy chưa cưới. Hai đứa định cưới sau hai năm làm việc — đêm Hạ Vy mất chưa cưới. Không có nhẫn cưới.
 
@@ -258,7 +258,7 @@ Nhẫn vẫn ở ngón út tay trái người đàn ông đêm này. Anh cảm n
 
 Vào đêm bốn mươi hai. Còn bốn mươi tám đêm nữa.
 
-Anh ấy nhói. Đứa em không hỏi mẹ Hạ Vy về nhẫn bạc anh — em đã không gọi điện bốn năm gần đây. Bóng người đàn ông sống một mình Hà Nội — không ai nhắc anh Hạ Vy. Người nữ em chỉ có nhẫn — ngón út tay trái — đeo tám năm. Hình ảnh người đàn ông chỉ có ký ức — không vật chứng khác. Đêm thứ bốn mươi hai kết thúc. anh sẽ đeo đến đêm chín mươi nếu cần.
+Khải Phong ấy nhói. Đứa em không hỏi mẹ Hạ Vy về nhẫn bạc anh — em đã không gọi điện bốn năm gần đây. Bóng người đàn ông sống một mình Hà Nội — không ai nhắc anh Hạ Vy. Người nữ em chỉ có nhẫn — ngón út tay trái — đeo tám năm. Hình ảnh người đàn ông chỉ có ký ức — không vật chứng khác. Đêm thứ bốn mươi hai kết thúc. anh sẽ đeo đến đêm chín mươi nếu cần.
 
 Người khách vuốt nhẫn bạc lần nữa qua áo gió. Anh vẫn ở đó — không ai biết. Tám năm đeo riêng — không khoe — chỉ đeo.
 

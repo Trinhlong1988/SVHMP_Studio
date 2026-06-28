@@ -67,7 +67,7 @@ Người đàn ông gật. Tim đập nhanh.
 
 Xe chậm lại trước căn nhà mái ngói nhỏ ven sông — đèn vàng trong nhà còn sáng. anh ấy nhận ra — nhà bố mẹ Hạ Vy — căn nhà anh đã đến hai lần khi Hạ Vy sống.
 
-Anh nhói. Bác tài đem anh về chính nhà Hạ Vy.
+Khải Phong nhói. Bác tài đem anh về chính nhà Hạ Vy.
 
 Bên cổng nhà — một phụ nữ trẻ đứng đợi. Khoảng hai mươi bốn tuổi. Áo dài hồng — phong cách áo dài cô dâu. Tóc cột thấp xuống. Tay phải cầm thiệp cưới giấy — phong bì đỏ.
 
@@ -79,11 +79,11 @@ Lần thứ tư trong năm đêm có người ngồi cùng ghế ba với anh. S
 
 Hạ Nhi quay sang người đàn ông. Mắt anh chạm anh — không sốc — như đã đợi anh.
 
-Em mỉm cười. Bảo:
+Cô gái gái ấy mỉm cười. Bảo:
 
 "Người tên anh ấy. Em đã tìm anh tám năm. Đêm nay em gặp được anh."
 
-Anh sốc. Anh không phải passenger thường — anh là người đời thực — anh gái Hạ Vy.
+Khải Phong sốc. Anh không phải passenger thường — anh là người đời thực — anh gái Hạ Vy.
 
 Xe lăn bánh.
 
@@ -119,7 +119,7 @@ Xe đi qua xóm. Phía bên trái — căn nhà mái ngói xưa — sân có hai
 
 Hai chị em — Hạ Vy ngoài cửa sổ — Hạ Nhi trên xe — cùng nhìn nhau.
 
-Anh sốc. Lần đầu trong năm đêm — anh nhìn rõ mặt Hạ Vy. Mặt anh không mờ nữa.
+Người đàn ông sốc. Lần đầu trong năm đêm — anh nhìn rõ mặt Hạ Vy. Mặt anh không mờ nữa.
 
 "Người chị Hạ Nhi ơi..."
 
@@ -143,7 +143,7 @@ Hạ Nhi quay sang người khách. Lệ trên má.
 
 Hạ Nhi nói tiếp — giọng đều — chậm.
 
-"Người tên người đàn ông. Em hai mươi tư tuổi. Cô ấy gái ở thành phố Sài Gòn. Hình bóng con gái ấy làm thiết kế — em sắp cưới tháng năm sang năm. Cô ấy mời anh dự cưới — em đã gửi thiệp PDF và mua vé máy bay cho anh."
+"Người tên người đàn ông. Cô gái hai mươi tư tuổi. Cô ấy gái ở thành phố Sài Gòn. Hình bóng con gái ấy làm thiết kế — em sắp cưới tháng năm sang năm. Cô ấy mời anh dự cưới — em đã gửi thiệp PDF và mua vé máy bay cho anh."
 
 "Anh không trả lời em ba tháng. Em không trách — em hiểu — anh ngại."
 
@@ -151,7 +151,7 @@ Hạ Nhi nói tiếp — giọng đều — chậm.
 
 "Em đến đêm nay — em đến để xin anh quyết định. Anh có đi dự cưới em không?"
 
-Anh ấy nhói. Anh nói chậm — giọng anh khàn vì lệ.
+Người đàn ông ấy nhói. Anh nói chậm — giọng anh khàn vì lệ.
 
 "Em sẽ đến. Em xin lỗi em không trả lời. Anh sẽ đi dự cưới em."
 
@@ -161,7 +161,7 @@ Hạ Nhi gật. Cười nhẹ nhàng.
 
 [pause:1200ms]
 
-"Em không gọi anh — em ngại như anh. Em đợi anh gọi. Anh không gọi — em hứa em sẽ chủ động — em gửi tin nhắn em — anh không đáp."
+"Em không gọi anh — em ngại như anh. Người con gái gái đợi anh gọi. Anh không gọi — em hứa em sẽ chủ động — em gửi tin nhắn em — anh không đáp."
 
 "Em đến đây để xin anh quyết. Bố em năm vừa rồi bệnh — viêm phổi nặng — em sợ bố không qua. Em muốn bố em gặp anh trước khi muộn."
 
@@ -177,7 +177,7 @@ Anh vuốt phong bì thiệp cưới. Đưa người đàn ông.
 
 "Em cầm lấy. Đây là thiệp gốc — em đã in thật — không phải PDF. Em định em sẽ gửi anh sáng mai qua bưu điện. Em đem theo lên xe — em gửi anh trực tiếp."
 
-Anh ấy cầm phong bì. Mở. Bên trong — thiệp cưới in đẹp — chữ vàng — tên hai vợ chồng tương lai.
+Người đàn ông ấy cầm phong bì. Mở. Bên trong — thiệp cưới in đẹp — chữ vàng — tên hai vợ chồng tương lai.
 
 [pause:1500ms]
 
@@ -202,6 +202,12 @@ Người đàn ông hỏi nhỏ:
 "Hạ Nhi — em có thể nhắn lại bố mẹ — anh sẽ về quê tháng sau — anh sẽ gặp bố mẹ trước cưới em?"
 
 Hạ Nhi gật. "Em sẽ nhắn bố em sáng mai. Em sẽ nói anh sẽ đến."
+
+
+
+[pause:1000ms]
+
+Khải Phong vuốt vật cuối cùng — chiếc đồng hồ xà cừ. Vỏ lạnh buốt. "Đêm nay — anh nhận ra — anh không thu thập vật. Anh thu thập hành trình. Mỗi người khách — mỗi đêm — một câu chuyện. Năm mươi đêm — năm mươi mảnh ký ức người khác — gộp lại — thành bản đồ về với Hạ Vy."
 
 ---
 
@@ -253,7 +259,7 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Anh ấy ngồi yên. Lấy năm mươi vật ra khỏi túi. Đặt lên ghế trống bên cạnh — xếp thành hàng dài.
+Khải Phong ấy ngồi yên. Lấy năm mươi vật ra khỏi túi. Đặt lên ghế trống bên cạnh — xếp thành hàng dài.
 
 Có năm mươi vật. Có năm mươi đêm. Có mươi câu chuyện.
 
@@ -270,7 +276,7 @@ Ngoại tỉnh: Hải Dương (EP30), Hải Phòng (EP23, EP50), Nam Định (EP
 
 [pause:1500ms]
 
-Anh ấy nhìn bản đồ. Trung tâm Hà Nội — các vật xếp thành cụm dày. Khâm Thiên — phòng trọ anh và Hạ Vy. Mộc Hà — văn phòng Hạ Vy. Ngã tư phố Huế-Trần Hưng Đạo — chỗ Hạ Vy va.
+Người đàn ông ấy nhìn bản đồ. Trung tâm Hà Nội — các vật xếp thành cụm dày. Khâm Thiên — phòng trọ anh và Hạ Vy. Mộc Hà — văn phòng Hạ Vy. Ngã tư phố Huế-Trần Hưng Đạo — chỗ Hạ Vy va.
 
 Cụm trung tâm — nối ra Hải Phòng — quê Hạ Vy. Vĩnh Bảo — bến em xuống dưới.
 

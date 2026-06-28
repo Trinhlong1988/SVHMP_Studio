@@ -142,7 +142,7 @@ Bác tài nhìn gương chiếu hậu. Im lặng yên.
 
 Trong gương chiếu hậu, người đàn ông thấy hai cái bóng. Một là cô. Một là cụ bà — tóc bạc, áo bông xám — ngồi sát ngay sau cô. Cụ bà cầm chiếc máy cassette trên đùi. Tay run run ấn nút Play. Không có tiếng.
 
-Anh ấy chớp mắt. Trong gương vẫn chỉ có cô và một bóng mờ.
+Khải Phong ấy chớp mắt. Trong gương vẫn chỉ có cô và một bóng mờ.
 
 Bác tài cất lời.
 
@@ -178,9 +178,9 @@ Cô gái khẽ gật đầu một cái. Mắt cô khẽ ngấn nước.
 
 [pause:800ms]
 
-"Em đã quên câu đó suốt mười năm. Lúc em sinh con đầu lòng — em đau đẻ — em tự nhiên nhớ câu bà. Em cố cười. Cười không ra ngoài. Nhưng cố. Em sinh con xong, cô bác sĩ bảo: 'Mẹ này lạ — cười suốt lúc đau.'"
+"Em đã quên câu đó suốt mười năm. Lúc em sinh con đầu lòng — em đau đẻ — em tự nhiên nhớ câu bà. Cô gái gái ấy cố cười. Cười không ra ngoài. Nhưng cố. Em sinh con xong, cô bác sĩ bảo: 'Mẹ này lạ — cười suốt lúc đau.'"
 
-"Em không kể chuyện bà cho ai. Em chỉ giữ trong lòng. Bà ngoại — chỉ riêng em hiểu bà."
+"Em không kể chuyện bà cho ai. Cô gái chỉ giữ trong lòng. Bà ngoại — chỉ riêng em hiểu bà."
 
 "Khi em đi, không còn ai biết câu bà đã nói với em. Không còn ai biết bà có vết sẹo ở bắp chân. Không còn biết bà nói tiếng Tày."
 
@@ -208,7 +208,7 @@ Cô gái khẽ gật đầu một cái. Mắt cô khẽ ngấn nước.
 
 [pause:1000ms]
 
-"Bà thường nói tiếng Tày một câu cuối ngày: 'Pò en chi pài.' Em nhớ câu đó. Nhưng em không biết nghĩa. Em chưa bao giờ hỏi. Bây giờ em không hỏi được ai. Người duy nhất biết tiếng Tày trong họ em — là bà."
+"Bà thường nói tiếng Tày một câu cuối ngày: 'Pò en chi pài.' Em nhớ câu đó. Nhưng em không biết nghĩa. Em ấy chưa bao giờ hỏi. Bây giờ em không hỏi được ai. Người duy nhất biết tiếng Tày trong họ em — là bà."
 
 "Em đem băng cassette về quê. Định sẽ tìm cụ già nào trong xóm còn biết tiếng Tày. Xin dịch câu đó. Để em biết bà nói gì với em mỗi tối."
 
@@ -270,7 +270,7 @@ Xe lăn bánh tiếp.
 
 Ghế năm trống. Trên sàn, một viên pin cassette cũ rơi — vỏ pin đã rỉ một góc.
 
-Anh nhặt viên pin. Cất vào túi áo. Vật thứ năm.
+Khải Phong nhặt viên pin. Cất vào túi áo. Vật thứ năm.
 
 Đồng hồ kim phút nhích sáu lần liền.
 

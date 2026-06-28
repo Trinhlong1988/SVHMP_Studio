@@ -116,7 +116,7 @@ Giọng cô đều — đã quen kể.
 
 "Năm em hai mươi mốt — em sinh viên năm cuối ngoại lời — em yêu anh Khang. Anh hơn em hai tuổi — học bách khoa — quê Hải Phòng — không phải Hà Nội."
 
-"Em và anh quen qua câu lạc bộ ghi-ta đại học. Anh ấy chơi đàn ghi-ta rất tốt. Em hát. Hai đứa em luyện chung — biểu diễn chung — sau buổi tập đi cà phê — yêu nhau ba tháng sau."
+"Em và anh quen qua câu lạc bộ ghi-ta đại học. Anh ấy chơi đàn ghi-ta rất tốt. Cô gái gái gái gái hát. Hai đứa em luyện chung — biểu diễn chung — sau buổi tập đi cà phê — yêu nhau ba tháng sau."
 
 [pause:800ms]
 
@@ -146,7 +146,7 @@ Giọng cô đều — đã quen kể.
 
 "Anh nghe — im một lúc — không khóc. Rồi anh bảo: 'Trang ơi em chọn mẹ. Anh không muốn em mất gia đình vì anh. Anh ấy sẽ chia tay em.'"
 
-"Em không nói lại. Em im lặng yên. Anh đứng dậy — đi ra cửa. Trước khi đi — anh quay lại — đặt phong bì lên bàn. 'Anh viết thư cho em — tối qua ở đó. Em đọc khi nào em sẵn sàng.'"
+"Em không nói lại. Em ấy ấy im lặng yên. Anh đứng dậy — đi ra cửa. Trước khi đi — anh quay lại — đặt phong bì lên bàn. 'Anh viết thư cho em — tối qua ở đó. Em đọc khi nào em sẵn sàng.'"
 
 [pause:1500ms]
 
@@ -236,7 +236,7 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Anh ấy ngồi. Tro thư trong túi — bên cạnh mười bảy vật.
+Khải Phong ấy ngồi. Tro thư trong túi — bên cạnh mười bảy vật.
 
 Anh ngẫm — Hạ Vy có viết thư cho người khách không?
 
@@ -267,10 +267,10 @@ Sau Hạ Vy mất — sổ ở đâu? anh cố nhớ. Cảm giác — anh cất 
 
 Bố mẹ Hạ Vy có sổ. người đàn ông không có. anh ấy không biết Hạ Vy viết gì những đêm cuối — không biết anh có viết về chuyện cưới không.
 
-Anh nhói. Đáng lẽ người khách nên đọc sổ Hạ Vy — anh đã mất — anh không phiền. người đàn ông tôn trọng quá — đã làm anh ấy mất một mảnh ký ức anh không thể bù.
+Người đàn ông nhói. Đáng lẽ người khách nên đọc sổ Hạ Vy — anh đã mất — anh không phiền. người đàn ông tôn trọng quá — đã làm anh ấy mất một mảnh ký ức anh không thể bù.
 
 Bác tài liếc gương. "Đêm sau con sẽ ngẫm tiếp về sổ tay Hạ Vy. Đừng vội."
 
-Anh gật.
+Khải Phong gật.
 
 Đêm thứ mười tám kết thúc. người khách cảm thấy mỗi đêm nhớ thêm một điều — nhưng cũng phát hiện một điều mình đã không làm. Hai mặt: nhớ + hối tiếc — đi song song. Đêm sau sẽ có thêm passenger — người đàn ông sẽ nhớ thêm — và hối tiếc thêm. Cứ vậy đến đêm chín mươi. 

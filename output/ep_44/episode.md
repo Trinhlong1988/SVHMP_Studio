@@ -148,7 +148,7 @@ Giọng bà trầm.
 
 "Sau tang — em quyết. Em sẽ đem khúc chè đó — chính khúc em đã nấu hôm sau — về nhà bà Sáu xưa — đặt trên thềm cửa — chỗ bà ngồi đợi chè em."
 
-"Em đặt khúc — em quỳ — em xin lỗi. Em đi về. Sáng hôm sau em qua xem — khúc chè đã được người nhà bà (mới về tang sau em) đem đi. Em không biết người đó là ai — em chỉ thấy khúc đã đi."
+"Em đặt khúc — em quỳ — em xin lỗi. Cô gái gái gái đi về. Sáng hôm sau em qua xem — khúc chè đã được người nhà bà (mới về tang sau em) đem đi. Em không biết người đó là ai — em chỉ thấy khúc đã đi."
 
 "Em giữ một khúc chè khác — em đem đêm trước cuối — em giữ trong tủ năm năm — em không vứt — không ăn — không đem ai khác."
 
@@ -224,7 +224,7 @@ Khải Phong nhói. Bố mẹ Hạ Vy không liên lạc Khải Phong tám năm.
 
 [pause:1500ms]
 
-Khải Phong cố nhớ — Khải Phong có liên lạc bố mẹ Hạ Vy không? Cảm giác — có vài lần đầu sau tang. Sau đó thưa hơn. Năm thứ hai — Khải Phong về tang Hạ Vy lần một. Năm thứ ba — không về. Năm tư — không về.
+Khải Phong cố nhớ — Khải Phong có liên lạc bố mẹ Hạ Vy không? Cảm giác — có vài lần đầu sau tang. Sau đó thưa hơn. Năm thứ hai — Khải Phong về tang Hạ Vy lần một. Năm thứ ba — không về. Vào năm tư — không về.
 
 Khải Phong không gọi điện thoại bố mẹ Hạ Vy năm năm gần đây. Cô gái ấy em đã sai rồi. Hình ảnh người đàn ông đã không giữ liên lạc với gia đình anh vợ tương lai — dù anh không cưới anh.
 

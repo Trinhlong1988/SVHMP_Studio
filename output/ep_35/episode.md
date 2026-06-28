@@ -100,7 +100,7 @@ Cánh tay trái anh — Khải Phong thấy — không có vết sẹo dài như
 
 Bác tài liếc gương. Không nói nữa — câu thứ ba đã nói.
 
-Anh đặt mảnh lên đùi. Vuốt nhẹ nhàng.
+Khải Phong đặt mảnh lên đùi. Vuốt nhẹ nhàng.
 
 ---
 
@@ -264,4 +264,4 @@ Bác tài liếc gương. "Vào đêm ba mươi lăm. Cụm vật gương đủ 
 
 Khải Phong gật. Lệ rơi nhẹ nhàng. Tay run nhẹ nhàng.
 
-Đêm thứ ba mươi lăm — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Nghệ An khuất. Trí Hưng ở lại bệnh viện — đứng cửa phòng tư vấn — mảnh gương trong tủ kính.
+Đêm thứ ba mươi lăm — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Nghệ An khuất. Trí Hưng ở lại bệnh viện — đứng cửa phòng tư vấn — mảnh gương trong tủ kính. 

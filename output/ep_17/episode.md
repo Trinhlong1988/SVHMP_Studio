@@ -212,7 +212,7 @@ Cúi đầu.
 
 Anh ấy chớp mắt — nhìn qua cửa sổ. Bên hố — Toàn xuất hiện — mặc áo sơ mi xanh — vuốt vai Tài một lần. Cười nhẹ nhàng.
 
-Anh chớp lần nữa. Người tên Toàn tan ra.
+Khải Phong chớp lần nữa. Người tên Toàn tan ra.
 
 Tài ngẩng đầu. Lau khóe mắt. Đứng dậy. Vỗ tay phủi đất.
 
@@ -238,7 +238,7 @@ Anh ấy ngẫm — Hạ Vy có ai từng nhờ anh giúp không? người khác
 
 Hình ảnh mờ — một tin nhắn — một cuộc gọi không nhận được — một tiếng chuông điện thoại người đàn ông không bắt.
 
-Anh ấy nhói. Có. anh đã nhỡ một cuộc gọi nào đó — người khách cảm thấy.
+Người đàn ông ấy nhói. Có. anh đã nhỡ một cuộc gọi nào đó — người khách cảm thấy.
 
 Cuộc gọi của Hạ Vy?
 
@@ -246,7 +246,7 @@ Người đàn ông không nhớ rõ ràng. Cảm giác — không phải đêm 
 
 Bác tài liếc gương. "Vào đêm mười bảy. Con bắt đầu cảm thấy lỡ một cuộc gọi. Đêm sau sẽ rõ hơn về cuộc gọi đó. Đừng vội."
 
-Anh ấy gật. Không hỏi.
+Khải Phong ấy gật. Không hỏi.
 
 Đêm thứ mười bảy — anh đếm thêm. Xe đi tiếp. Phía sau — Sóc Sơn khuất. Tài ở lại đứng — nhìn hố đất đã lấp — USB Toàn đã chôn.
 

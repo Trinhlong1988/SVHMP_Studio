@@ -146,17 +146,17 @@ Khải Phong giật mình. Mạnh Hiếu cùng trường THCS Mai Trung — trư
 
 "Em nhớ thầy bảo em hồi lớp tám: 'Hiếu ơi em có giỏi hơn em nghĩ thầm. Thất bại một lần — không phải hết rồi. Cuộc đời dài.'"
 
-"Em không cứa. Em gọi thầy Hồng. Thầy bắt máy. Thầy bảo em: 'Em đến nhà thầy tối nay đi.'"
+"Em không cứa. Cô gái gái gọi thầy Hồng. Thầy bắt máy. Thầy bảo em: 'Em đến nhà thầy tối nay đi.'"
 
 "Em đến nhà thầy. Thầy pha trà — ngồi nói chuyện với em hai giờ. Thầy nghe em kể. Thầy không phán xét. Thầy chỉ bảo: 'Em học lại một năm — không sao. Bố mẹ em sẽ hiểu. Thầy gọi giúp em nếu em sợ.'"
 
 [pause:1500ms]
 
-"Hôm sau thầy Hồng gọi bố mẹ em. Bố mẹ em buồn nhưng hiểu. Em học lại một năm. Em tốt nghiệp năm em hai mươi mốt — chính năm hai nghìn không trăm mười bảy — em là một trong khóa em — chỉ chậm một năm."
+"Hôm sau thầy Hồng gọi bố mẹ em. Bố mẹ em buồn nhưng hiểu. Em ấy học lại một năm. Em tốt nghiệp năm em hai mươi mốt — chính năm hai nghìn không trăm mười bảy — em là một trong khóa em — chỉ chậm một năm."
 
 "Sau tốt nghiệp — em quay về trường THCS Mai Trung dạy — chính trường thầy dạy. Em làm đồng nghiệp thầy chín năm. Em gặp thầy mỗi sáng — em coi thầy như bố thứ hai."
 
-"Năm vừa rồi — thầy mất. Đột tử — tim. Em đi tang thầy. Em quỳ bên quan tài — em xin cảm ơn thầy đã cứu em mười năm trước."
+"Năm vừa rồi — thầy mất. Đột tử — tim. Người con gái gái đi tang thầy. Em quỳ bên quan tài — em xin cảm ơn thầy đã cứu em mười năm trước."
 
 [pause:1500ms]
 

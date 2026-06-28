@@ -144,7 +144,7 @@ Giọng cô đều — chậm.
 
 "Bác sĩ xác định: bệnh cơ tim phì đại — di truyền — không phát hiện được — em đột tử trong ngủ. Hai mươi sáu tuổi — không phải bệnh tuổi này thường có."
 
-"Em không bay Hàn Quốc. Em hủy chuyến. Vietjet không hoàn tiền vì đặt vé giảm giá không hoàn."
+"Em không bay Hàn Quốc. Cô gái gái gái hủy chuyến. Vietjet không hoàn tiền vì đặt vé giảm giá không hoàn."
 
 "Em giữ hai vé giấy — không xé. Em treo trên tủ lạnh bốn năm — em nhìn mỗi sáng — em nhớ bạn."
 
@@ -165,6 +165,18 @@ Thanh Nga gật. Lệ rơi xuống vé.
 [pause:1200ms]
 
 "Đêm nay — em đem hai vé về nhà ga T1 — đặt vào hộp lost items. Em sẽ bay tuyến em làm tiếp viên — không phải tuyến em hủy."
+
+
+
+[pause:1000ms]
+
+Thanh Nga vuốt tấm vé thứ hai. Vé Hàn Quốc — chuyến đi đã không bao giờ có. "Em nhớ — cô gái em đứng trước cổng check-in. Quay đầu lại cười. Em vẫy tay. Em không biết đó là lần cuối em thấy cô gái. Buổi tối em nhận tin — cô em đã bị tai nạn xe máy trên đường ra sân bay."
+
+
+
+[pause:1000ms]
+
+"Em đã hứa Nam — em sẽ đi Hàn cùng cô. Ba năm em chuẩn tiền — chuẩn bị visa — chuẩn bị nghỉ phép. Cô em đã không kịp. Em — đem hai vé. Vé em — vé cô gái — em giữ một mình. Đêm nay — em trả lại sân bay. Em không thể đem cô gái theo nữa."
 
 ---
 
@@ -234,11 +246,11 @@ Khải Phong gật. Lệ rơi xuống dưới.
 
 Khải Phong nghĩ về Hàn Quốc — anh chưa bao giờ thấy lá đỏ mùa thu — anh chỉ thấy qua ảnh — qua phim. Nếu anh đi — anh sẽ chụp ảnh — anh đem về cho Hạ Vy qua đèn nến.
 
-Em không quyết được đêm nay. Em sẽ ngẫm tiếp.
+Em không quyết được đêm nay. Em ấy ấy sẽ ngẫm tiếp.
 
 Đêm thứ bốn mươi bảy kết thúc.
 
-Khải Phong nhớ thêm chi tiết — đêm anh hứa Hạ Vy đi Hàn Quốc — anh đang ngồi ở bàn ăn phòng trọ Khâm Thiên — anh vừa nấu xong canh chua. Em ăn xong rồi. Hạ Vy nói "Hứa thật nhé." Em đáp "Hứa thật" — em nhìn em mắt. Em không đùa. Bóng cô gái tin em sẽ làm thật. Hình con gái ấy sẽ tìm cách giữ lời hứa muộn — qua nhẫn bạc — qua ảnh dưới lá đỏ — qua đèn nến. Em ấy đã quyết. Sang năm — sau dự cưới Hạ Nhi — em sẽ đi Hàn Quốc. Đêm thứ bốn mươi bảy kết thúc.
+Khải Phong nhớ thêm chi tiết — đêm anh hứa Hạ Vy đi Hàn Quốc — anh đang ngồi ở bàn ăn phòng trọ Khâm Thiên — anh vừa nấu xong canh chua. Cô gái gái ăn xong rồi. Hạ Vy nói "Hứa thật nhé." Em đáp "Hứa thật" — em nhìn em mắt. Em không đùa. Bóng cô gái tin em sẽ làm thật. Hình con gái ấy sẽ tìm cách giữ lời hứa muộn — qua nhẫn bạc — qua ảnh dưới lá đỏ — qua đèn nến. Em ấy ấy ấy đã quyết. Sang năm — sau dự cưới Hạ Nhi — em sẽ đi Hàn Quốc. Đêm thứ bốn mươi bảy kết thúc.
 
 Khải Phong ngồi đêm chưa sáng. Hình khách không đặt vé Hàn Quốc — anh chỉ hứa miệng. Hình bóng người đàn không có vé giấy treo tủ lạnh như Thanh Nga. Hình ảnh anh chỉ có ký ức — chỉ có lời hứa miệng đêm 2017. Có thể anh tự tạo vé — anh đặt vé mới — bay một mình mùa thu năm sau — anh đem nhẫn bạc anh — anh sẽ chụp ảnh dưới lá đỏ — anh sẽ trở về Việt Nam đặt ảnh trên bàn thờ anh. Đêm bốn mươi bảy kết thúc — anh quyết.
 

@@ -160,7 +160,7 @@ Giọng bà trầm — chậm — đều.
 
 "Em giữ khăn — ba mươi năm. Không bao giờ tặng ai. Không dùng. Chỉ giữ trong tủ — gấp gọn — mỗi rằm tháng giêng em lấy ra — phơi nắng — gấp lại."
 
-"Ba mươi năm em sống tử tế hơn — vì một lần không tử tế đã mất một người. Em làm từ thiện. Em mỗi cuối tháng đem cơm cho cụ già khu vực gần nhà em — cụ nghèo neo đơn."
+"Ba mươi năm em sống tử tế hơn — vì một lần không tử tế đã mất một người. Cô gái gái làm từ thiện. Em mỗi cuối tháng đem cơm cho cụ già khu vực gần nhà em — cụ nghèo neo đơn."
 
 "Em cưới — sinh hai con — chăm con tử tế. Em dạy con: 'Khi thấy người cần — đừng nói "hôm khác". Hôm khác có thể không có.'"
 

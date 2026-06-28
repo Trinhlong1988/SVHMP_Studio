@@ -240,7 +240,7 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Anh ngồi yên. Mở túi — đếm — hai mươi sáu vật. Hai vật mang dấu năm 2017: mẩu giấy bản từ sách thầy Quỳnh Mai (đêm 22) — nhãn hộp thước T bố Đức Hùng (đêm này).
+Khải Phong ngồi yên. Mở túi — đếm — hai mươi sáu vật. Hai vật mang dấu năm 2017: mẩu giấy bản từ sách thầy Quỳnh Mai (đêm 22) — nhãn hộp thước T bố Đức Hùng (đêm này).
 
 Trùng hợp? Hay sub-arc?
 
@@ -260,6 +260,6 @@ Sau Hạ Vy mất 2018 — anh ấy có còn liên lạc bố mẹ không? anh c
 
 Bác tài liếc gương. "Vào đêm hai mươi sáu. Vật thứ hai mang dấu năm 2017. Đêm hai mươi chín sẽ có vật thứ ba. Đến đêm ba mươi — milestone — con sẽ ngẫm rõ vì sao ba vật rời rạc cùng có năm 2017. Đừng vội."
 
-Anh ấy gật. Không hỏi.
+Người đàn ông ấy gật. Không hỏi.
 
 Đêm thứ hai mươi sáu — anh đếm thêm. Xe đi tiếp về phía đường vành đai. Phía sau — Hoài Đức khuất. Đức Hùng ở lại sân văn phòng Hoài An — đứng nhìn hộp thước T trước cửa kính. 

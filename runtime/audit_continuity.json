@@ -1,12 +1,5 @@
 {
   "eps_with_warn": {
-    "1": [
-      [
-        "Hạ_Vy_mentions",
-        "WARN",
-        "45/5"
-      ]
-    ],
     "4": [
       [
         "Naked_Hà_check",
@@ -30,11 +23,6 @@
     ],
     "12": [
       [
-        "Hạ_Vy_mentions",
-        "WARN",
-        "7/5"
-      ],
-      [
         "Naked_Hà_check",
         "WARN",
         "1 naked"
@@ -52,13 +40,6 @@
         "Hạ_Vy_mentions",
         "WARN",
         "13/5"
-      ]
-    ],
-    "15": [
-      [
-        "Hạ_Vy_mentions",
-        "WARN",
-        "8/5"
       ]
     ],
     "16": [
@@ -120,13 +101,6 @@
         "9/5"
       ]
     ],
-    "23": [
-      [
-        "Hạ_Vy_mentions",
-        "WARN",
-        "17/5"
-      ]
-    ],
     "24": [
       [
         "Hạ_Vy_mentions",
@@ -149,13 +123,6 @@
         "Naked_Hà_check",
         "WARN",
         "1 naked"
-      ]
-    ],
-    "27": [
-      [
-        "Hạ_Vy_mentions",
-        "WARN",
-        "15/5"
       ]
     ],
     "28": [
@@ -293,20 +260,6 @@
         "Hạ_Vy_mentions",
         "WARN",
         "11/5"
-      ]
-    ],
-    "48": [
-      [
-        "Hạ_Vy_mentions",
-        "WARN",
-        "8/5"
-      ]
-    ],
-    "49": [
-      [
-        "Hạ_Vy_mentions",
-        "WARN",
-        "10/5"
       ]
     ],
     "50": [

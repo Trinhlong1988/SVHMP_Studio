@@ -142,7 +142,7 @@ Giọng anh trầm — chậm.
 
 "Em quyết em sẽ đan tặng tôi một chiếc chăn mới — chăn cưới mười năm. Vợ tôi mua len xanh nhạt — len Hàn Quốc — đẹp — mềm. Em đan từ tháng ba — đan mỗi tối đen."
 
-"Đêm thứ tám tháng tư — em đan đến mười một giờ đêm. Em đan được nửa chăn. Em bảo: 'Anh ơi tuần sau em đan xong — chăn mới tròn mười năm cưới — anh đắp.'"
+"Đêm thứ tám tháng tư — em đan đến mười một giờ đêm. Cô gái đan được nửa chăn. Em bảo: 'Anh ơi tuần sau em đan xong — chăn mới tròn mười năm cưới — anh đắp.'"
 
 [pause:1500ms]
 

@@ -103,7 +103,7 @@ Anh ba mươi — mặt sáng — vẻ người đã ổn — không vẻ mệt.
 
 Bằng trong khung — chữ in rõ: "người đàn ông Nguyễn." Trùng tên hoàn toàn với anh ấy — không phải gần giống — trùng tuyệt đối.
 
-Anh tim đập nhanh. Ba mươi đêm trên chuyến xe này — người khách chưa nghe ai gọi tên mình — người đàn ông không biết bác tài gọi mình tên gì — bác tài chỉ gọi "con" — anh ấy tự nhớ tên mình từ ký ức.
+Khải Phong tim đập nhanh. Ba mươi đêm trên chuyến xe này — người khách chưa nghe ai gọi tên mình — người đàn ông không biết bác tài gọi mình tên gì — bác tài chỉ gọi "con" — anh ấy tự nhớ tên mình từ ký ức.
 
 Đêm nay — bằng tốt của passenger — ghi đúng tên anh.
 
@@ -209,7 +209,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Anh ấy Nguyễn gật.
+Người đàn ông ấy Nguyễn gật.
 
 "Tôi nhớ. Thầy đỡ tôi học hai năm cấp ba — tôi trả thầy bằng tiền — chỉ bằng cách đỡ em khác. Thầy giữ bằng tôi bảy năm trong phòng — tôi biết — không thăm — chỉ gửi tiền. Thầy đi — tôi không kịp gặp lần cuối."
 
@@ -278,7 +278,7 @@ Người đàn ông ngồi yên. Lấy bốn vật mang dấu năm 2017 ra khỏ
 
 Bốn vật — bốn câu chuyện không liên quan — bốn chủ không quen nhau. Cùng năm 2017.
 
-Anh ngẫm. Trùng hợp? Không thể trùng hợp.
+Khải Phong ngẫm. Trùng hợp? Không thể trùng hợp.
 
 Năm 2017 — người khách tốt Đại học Kiến trúc. Bốn vật như đang chỉ vào một năm — như nhắc người đàn ông về năm cuối cùng Hạ Vy còn sống — một năm trước tháng tư đêm mưa 2018.
 
@@ -306,7 +306,7 @@ Bác tài liếc gương — lần này dừng trên người khách rất lâu.
 
 "Vào đêm ba mươi — milestone. Con đã nghe tên con lần đầu từ bên ngoài, con à. người đàn ông Nguyễn không phải con — nhưng đêm nay anh ấy đem tên con vào xe — vào chỗ con ngồi. Cứ giữ tên. Bốn vật cùng năm 2017 — con sẽ ngẫm sau."
 
-Anh ấy gật. Không hỏi. Lệ vẫn rơi xuống.
+Người đàn ông ấy gật. Không hỏi. Lệ vẫn rơi xuống.
 
 [pause:1500ms]
 

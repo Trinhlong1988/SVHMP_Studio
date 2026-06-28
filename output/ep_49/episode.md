@@ -254,4 +254,4 @@ Khải Phong vuốt sợi chỉ vải hoa — sợi mảnh. Anh đặt vào túi
 
 Khải Phong nhìn ra biển miền Tây tối. Anh hồi tưởng — anh đã đỡ ai trong tám năm sau cô ấy không? Cảm giác — không. Anh chỉ đi làm — về phòng — ngủ. Hình bóng đàn ông không đỡ ai — anh không bỏ ai — anh không yêu ai mới. Cô ấy sống lặng yên một mình. Người đàn ông sẽ phải sống khác sau milestone EP50.
 
-Khải Phong vuốt sợi chỉ vải hoa thêm lần nữa. Vật bốn mươi — vật cuối trước milestone. Em cất giữ cẩn thận. Mỗi vật là một câu chuyện. Bốn mươi chín câu chuyện — anh đã nghe đủ cho phase heightening. Đêm thứ bốn mươi chín kết thúc — đêm tháng tư tiếp tục — chưa sáng lên cao. 
+Khải Phong vuốt sợi chỉ vải hoa thêm lần nữa. Vật bốn mươi — vật cuối trước milestone. Cô gái cất giữ cẩn thận. Mỗi vật là một câu chuyện. Bốn mươi chín câu chuyện — anh đã nghe đủ cho phase heightening. Đêm thứ bốn mươi chín kết thúc — đêm tháng tư tiếp tục — chưa sáng lên cao. 

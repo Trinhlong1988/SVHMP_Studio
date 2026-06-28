@@ -66,7 +66,7 @@ Bác tài tiếp:
 
 "Đêm nay sẽ có cậu trai khác — cũng đem một mảnh kính — nhưng không phải mảnh đập tan — là kính phản chiếu chính anh ấy hồi khỏe. Hai mảnh kính — hai câu chuyện khác — cùng cụm vật. Cứ giữ vật con nhặt mỗi đêm."
 
-Anh ấy gật. Câu thứ ba bác tài — không thường — chỉ ở đêm có callback.
+Khải Phong ấy gật. Câu thứ ba bác tài — không thường — chỉ ở đêm có callback.
 
 Xe chậm lại trước một bệnh viện chuyên khoa lao — biển "Bệnh viện Phổi Thái Nguyên" — cổng đã đóng — đèn vàng treo cột cổng còn sáng yếu. Tường bệnh có dấu rêu xanh ở chân — bệnh xưa — đã có lâu năm.
 
@@ -250,7 +250,7 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Anh ngồi. Hai vật vải trong túi — vải bông cuốn gương vỡ EP15 — và vải bông cuốn mảnh kính EP25. người khách ngẫm — người đàn có gương kỉ niệm không? Hình ảnh — phòng trọ Khâm Thiên — có gương trên cửa tủ — sáng nào hai đứa cũng soi gương — Hạ Vy chải tóc — anh ấy đeo cà vạt đi làm. Gương bình thường — không đập — không kỉ niệm đặc biệt.
+Người đàn ông ngồi. Hai vật vải trong túi — vải bông cuốn gương vỡ EP15 — và vải bông cuốn mảnh kính EP25. người khách ngẫm — người đàn có gương kỉ niệm không? Hình ảnh — phòng trọ Khâm Thiên — có gương trên cửa tủ — sáng nào hai đứa cũng soi gương — Hạ Vy chải tóc — anh ấy đeo cà vạt đi làm. Gương bình thường — không đập — không kỉ niệm đặc biệt.
 
 [pause:1500ms]
 
@@ -264,7 +264,7 @@ Người đàn đợi đến chín giờ. Không thấy Hạ Vy về.
 
 Anh ấy gọi điện Hạ Vy. Chuông kêu năm hồi — không bắt. Cuộc gọi đầu.
 
-Anh đợi mười phút. Gọi lại. Chuông kêu năm hồi — không bắt. Cuộc gọi thứ hai.
+Khải Phong đợi mười phút. Gọi lại. Chuông kêu năm hồi — không bắt. Cuộc gọi thứ hai.
 
 Người khách đợi thêm năm phút. Gọi lần thứ ba. Chuông kêu — không bắt. Cuộc gọi thứ ba.
 
@@ -278,6 +278,6 @@ Hạ Vy mất ba tiếng sau khi vào phòng mổ — bốn giờ sáng — thá
 
 Bác tài liếc gương. "Vào đêm hai mươi lăm. Con đã nhớ rõ ba cuộc gọi và đêm Bạch Mai. Đêm sau con sẽ nhớ — Hạ Vy có nhắn tin gì cuối — trước khi không bắt máy con. Đừng vội."
 
-Anh gật. Không hỏi.
+Người đàn ông gật. Không hỏi.
 
 Vào đêm hai mươi lăm. Xe đi tiếp về phía đường vành đai. Trời mưa đã hết hẳn. Phía sau — Thái Nguyên khuất — Văn Quân ở lại bệnh viện — đã trao mảnh kính cho cậu hai mươi tuổi. 

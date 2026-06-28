@@ -107,7 +107,7 @@ Bên ngoài cửa kính, một con chó nào đó sủa rất xa. Tiếng chó v
 
 Đồng hồ trên xe — chiếc đồng hồ nhỏ gắn cạnh ghế lái — kim phút nhích một lần. Tách. Rồi nhích thêm. Tách. Rồi nhích lần thứ ba. Tách.
 
-Anh đếm trong đầu. Ba lần. Vào đêm nay đếm được ba lần liền.
+Khải Phong đếm trong đầu. Ba lần. Vào đêm nay đếm được ba lần liền.
 
 Bác tài không quay đầu. Tay vẫn đặt vô-lăng. Nhưng ánh mắt liếc gương chiếu hậu kéo dài.
 
@@ -231,9 +231,9 @@ Cửa xe khép lại. Xe lăn bánh.
 
 Bên ngoài cửa kính, người đàn ông thấy cụ đi vào con đường đất nhỏ ven ngã ba. Tay chống gậy, tay xách rổ. Phía cuối đường, có ngôi nhà gạch nhỏ, đèn vàng yếu hắt qua cửa sổ. Trước sân nhà, có một cái bếp lò ba viên gạch — chưa nhóm. Nồi gang chưa đặt.
 
-Anh ấy chớp mắt. Bên cạnh bếp lò, có một bóng cụ già khác — tóc bạc, lưng còng, ngồi trên ghế thấp. Như đang chờ ai mang rổ lá dong tới gói cùng.
+Người đàn ông ấy chớp mắt. Bên cạnh bếp lò, có một bóng cụ già khác — tóc bạc, lưng còng, ngồi trên ghế thấp. Như đang chờ ai mang rổ lá dong tới gói cùng.
 
-Anh chớp mắt lần nữa. Bóng đó không còn.
+Khải Phong chớp mắt lần nữa. Bóng đó không còn.
 
 Chỉ có bếp lò chưa nhóm và đèn dầu nhấp nháy.
 

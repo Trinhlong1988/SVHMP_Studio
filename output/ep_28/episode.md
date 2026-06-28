@@ -150,7 +150,7 @@ Giọng anh trầm — chậm — giọng người sống biển.
 
 "Hồng không cãi. Em đi khỏi nhà ngày hôm sau — em đi về nhà mẹ em ở làng bên. Ly hôn xã làm thủ tục một tháng sau."
 
-"Hoa ba tuổi — không hiểu — chỉ khóc đòi mẹ. Em chăm Hoa một mình. Em đi biển — em gửi Hoa nhà mẹ em — mẹ em chăm cháu."
+"Hoa ba tuổi — không hiểu — chỉ khóc đòi mẹ. Cô gái chăm Hoa một mình. Em đi biển — em gửi Hoa nhà mẹ em — mẹ em chăm cháu."
 
 "Em không tái hôn. Em sống với Hoa ba mươi năm. Hoa lớn — em nuôi mẹ ăn học — em tốt nghiệp đại học — em lấy chồng — em sinh con — bây giờ em ba mươi ba — em sống Sài Gòn với chồng con."
 
@@ -174,7 +174,7 @@ Giọng anh trầm — chậm — giọng người sống biển.
 
 [pause:1500ms]
 
-"Hoa về nhà em. Kể em lời Hồng. Em im lặng yên. Em không nói gì cả tối."
+"Hoa về nhà em. Kể em lời Hồng. Cô gái ấy im lặng yên. Em không nói gì cả tối."
 
 "Hai ngày sau — Hồng đi rất xa. Hoa báo em. Em quyết — em đi tang Hồng. Hình bóng đàn ông đến nhà thờ Vĩnh Hòa — chính giáo xứ tôi vừa bước lên xe đêm nay. Cô ấy quỳ bên quan tài Hồng. Cô em im — không nói gì."
 
@@ -242,9 +242,9 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Anh ấy ngồi yên. Hữu Lộc và Hồng ly hôn ba mươi năm — anh đi mà anh không kịp tha trực tiếp. Người đàn ông chỉ tha qua Chúa.
+Khải Phong ấy ngồi yên. Hữu Lộc và Hồng ly hôn ba mươi năm — anh đi mà anh không kịp tha trực tiếp. Người đàn ông chỉ tha qua Chúa.
 
-Anh nhói. người khách và Hạ Vy có chuyện cưới chưa? Đêm cuối Hạ Vy nhắn buổi chiều: "Anh ơi tối nay anh có rảnh không? Em muốn bàn chuyện cưới."
+Người đàn ông nhói. người khách và Hạ Vy có chuyện cưới chưa? Đêm cuối Hạ Vy nhắn buổi chiều: "Anh ơi tối nay anh có rảnh không? Em muốn bàn chuyện cưới."
 
 Người đàn ông cố nhớ. anh ấy đáp gì buổi chiều đó? Hình ảnh — anh đang ở công trường giám sát — đọc tin nhắn lúc nghỉ trưa — người khách đáp: "Vâng em — anh rảnh tối — về sớm — anh nấu cơm — bàn cùng em."
 

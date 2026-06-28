@@ -150,13 +150,13 @@ Giọng cô đều — chậm.
 
 [pause:1500ms]
 
-"Em không nghi em. Em gật. Bảo: 'Em đợi chị tốt nghiệp xong — chị có thời gian.'"
+"Em không nghi em. Cô gái gái gái gái gật. Bảo: 'Em đợi chị tốt nghiệp xong — chị có thời gian.'"
 
 "Em tốt nghiệp năm 2017 — em đi làm cho công ty quảng cáo. Em vẫn ở ghép với em — em vẫn đi truyền máu mỗi tháng — em vẫn yếu hơn — em hỏi em em đã làm hồ sơ tủy chưa."
 
 "Em nói dối em mỗi tháng: 'Chị ơi em đang làm — chậm thủ tục.'"
 
-"Đầu năm 2018 — em ốm nặng — biến chứng tim — không truyền máu kịp đêm. Em đưa em vào bệnh. Em mất ba ngày sau."
+"Đầu năm 2018 — em ốm nặng — biến chứng tim — không truyền máu kịp đêm. Em ấy đưa em vào bệnh. Em mất ba ngày sau."
 
 [pause:1500ms]
 
@@ -236,14 +236,14 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Anh ấy ngồi yên. Mở túi — đếm — hai mươi chín vật. Ba vật mang dấu năm 2017:
+Khải Phong ấy ngồi yên. Mở túi — đếm — hai mươi chín vật. Ba vật mang dấu năm 2017:
 - Mẩu giấy bản từ sách thầy Quỳnh Mai (đêm 22)
 - Nhãn ngày mua hộp thước T bố Đức Hùng (đêm 26)
 - Nhãn năm thẻ hiến máu Linh Đan (đêm này)
 
 Ba vật rời rạc — ba chủ — không quen nhau — không cùng tỉnh. Nhưng cùng năm 2017.
 
-Anh ngẫm. Năm 2017 — người khách tốt nghiệp Đại học Kiến trúc. Năm em tốt nghiệp xong — em rời quê đi. Năm anh và Hạ Vy ra trường cùng nhau.
+Người đàn ông ngẫm. Năm 2017 — người khách tốt nghiệp Đại học Kiến trúc. Năm em tốt nghiệp xong — em rời quê đi. Năm anh và Hạ Vy ra trường cùng nhau.
 
 Năm sau — 2018 — Hạ Vy mất. Sub-arc temporal — ba vật cùng năm 2017 — như đang nhắc người đàn ông: năm tốt nghiệp là một năm trước Hạ Vy đi. Một năm — ngắn.
 
@@ -253,7 +253,7 @@ Sau Hạ Vy mất — anh ấy làm gì? anh cố nhớ. Cảm giác — ngườ
 
 Sau một tuần — chủ trọ đến nhắc — người đàn ông phải dọn vì phòng được cho hai người thuê — sau một người đi — anh ấy không thể giữ phòng giá hai người.
 
-Anh dọn. Bóng người ngồi Phong gom quần áo Hạ Vy vào hộp — không vứt — đem về quê Hạ Vy — gửi bố mẹ Hạ Vy. Hình ảnh người đàn ông ấy Phong chuyển sang phòng trọ rẻ hơn — một mình — phố Nguyễn Trãi.
+Khải Phong dọn. Bóng người ngồi Phong gom quần áo Hạ Vy vào hộp — không vứt — đem về quê Hạ Vy — gửi bố mẹ Hạ Vy. Hình ảnh người đàn ông ấy Phong chuyển sang phòng trọ rẻ hơn — một mình — phố Nguyễn Trãi.
 
 Người khách tiếp tục đi làm — công ty xây dựng Việt Trường. Nhưng năm sau — 2019 — người đàn ông nghỉ. anh ấy không thể đi giám sát công trình — anh mệt — người khách tim đập nhanh khi nghe tin tai nạn lao động — người đàn ông sợ.
 

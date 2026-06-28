@@ -136,7 +136,7 @@ Giọng cô đều — chậm.
 
 [pause:1200ms]
 
-"Em ngồi ngoài phòng mổ năm giờ — không ai bên cạnh. Em đợi. Bác sĩ ra báo: 'Chị Trâm ơi em xin lỗi — chúng tôi không cứu được Linh.'"
+"Em ngồi ngoài phòng mổ năm giờ — không ai bên cạnh. Cô gái gái gái gái đợi. Bác sĩ ra báo: 'Chị Trâm ơi em xin lỗi — chúng tôi không cứu được Linh.'"
 
 "Em không khóc trước bác. Cô con gái chỉ khẽ gật đầu. Em xin vào phòng mổ — em quỳ bên em — em vuốt tóc em một lúc."
 
@@ -240,7 +240,7 @@ Nhưng — Khải Phong cố nhớ — Hạ Vy có nhắn gì sau đó? Trước
 
 Khải Phong cố nhớ. Hình ảnh — điện thoại Hạ Vy — sau khi anh đi — bệnh viện trả lại Khải Phong. Khải Phong mở. Có một tin nhắn dở chưa gửi.
 
-Tin dở viết: "Anh ơi em yêu" — ba từ. Em chưa viết tiếp. Em đang gõ trên xe máy — em va chạm — em không kịp viết "anh" cuối.
+Tin dở viết: "Anh ơi em yêu" — ba từ. Em ấy ấy chưa viết tiếp. Em đang gõ trên xe máy — em va chạm — em không kịp viết "anh" cuối.
 
 Khải Phong nhói. Hạ Vy nhắn ba từ chưa kịp gửi — như con gái Bích Trâm.
 
@@ -262,8 +262,8 @@ Khải Phong cố giữ ba từ trong đầu. Đêm thứ bốn mươi mốt —
 
 Khải Phong nhìn ra cửa sổ — Bình Định khuất. Bích Trâm có con gái không kịp gửi tin. Khải Phong có Hạ Vy không kịp gửi tin. Hai câu chuyện song song — hai mất mát qua tin nhắn ba từ. Một mẹ-con — một anh-anh. Mất khác nhau — nhưng cùng cảm giác chưa kịp.
 
-Khải Phong cố nhớ — sau Hạ Vy mất anh có viết tin nào không kịp gửi cho anh không. Cảm giác — có. Anh có một tin dở trong điện thoại anh năm thứ ba sau Hạ Vy đi — anh viết: "Anh ơi anh nhớ em." Em viết — không có ai để gửi. Em xóa.
+Khải Phong cố nhớ — sau Hạ Vy mất anh có viết tin nào không kịp gửi cho anh không. Cảm giác — có. Anh có một tin dở trong điện thoại anh năm thứ ba sau Hạ Vy đi — anh viết: "Anh ơi anh nhớ em." Em viết — không có ai để gửi. Người con gái xóa.
 
-Em đã mất Hạ Vy. Bích Trâm mất Linh. Hai người trên xe đêm nay — chia sẻ cảm giác qua hai câu chuyện riêng.
+Em ấy đã mất Hạ Vy. Bích Trâm mất Linh. Hai người trên xe đêm nay — chia sẻ cảm giác qua hai câu chuyện riêng.
 
 Đêm thứ bốn mươi mốt kết thúc — Khải Phong nhói thêm. Tin nhắn không gửi — vẫn là tin nhắn. 
