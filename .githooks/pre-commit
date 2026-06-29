@@ -21,6 +21,27 @@ if [ -n "$staged_bible" ]; then
   fi
 fi
 
+# === SECTION C: MASS-REPLACE LOG GUARD (CMD LEAD 29/6) ===
+# Detect mass-replace pattern (≥10 instances cùng word→word trong staged diff)
+# → require log entry trong RENAME_LOG.md (precedent: Hắc Vỹ Dạ → Hắc Dạ Ký revert silent)
+mass_replace=$(git diff --cached --unified=0 | grep -E "^-[^-]" | head -200 | sort | uniq -c | sort -rn | awk '$1 >= 10 {print $0}')
+if [ -n "$mass_replace" ]; then
+  echo "=== SVHMP MASS-REPLACE GUARD ==="
+  echo "Mass-replace pattern detected (≥10 same lines removed):"
+  echo "$mass_replace" | head -5
+  # Check RENAME_LOG.md has entry today
+  today=$(date +%Y-%m-%d)
+  if [ ! -f RENAME_LOG.md ] || ! grep -q "$today" RENAME_LOG.md; then
+    echo ""
+    echo "==================================================================="
+    echo "⚠ MASS-REPLACE WITHOUT LOG — please document decision"
+    echo "==================================================================="
+    echo "Run: python tools/log_rename.py <old> <new> \"reason\""
+    echo ""
+    echo "(WARN only — commit allowed but document for audit trail)"
+  fi
+fi
+
 # === SECTION B: R41 POST_RENDER_GATE ===
 staged_eps=$(git diff --cached --name-only | grep -E '^output/ep_[0-9]+/episode\.md$' || true)
 
