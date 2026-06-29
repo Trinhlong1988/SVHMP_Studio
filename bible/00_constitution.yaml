@@ -531,10 +531,11 @@ R60_short_syllable_eol_hardlock:
     good: "Anh đứng im lặng một hồi lâu."
   detection: tools/audit_short_eol.py
 
-R93_concat_short_syllable_cụt_hardlock:
+R105_concat_short_syllable_cụt_hardlock:
   # round 15 add 2026-06-28 — Mr.Long: "ướt một góc nhỏ, chữ nhỏ cũng bị cụt do mix"
   # 2026-06-29 RENUMBERED R59→R91 by CMD LEAD (collision với R59_audio_mix_qa_mandatory_pre_publish line 322)
-  # 2026-06-29 RE-RENUMBERED R91→R93 by CMD LEAD (em vi phạm lesson grep_no_assumption — R91 đã occupied by CMD #2 MASTER_PIPELINE_LOCK line 1337 list format)
+  # 2026-06-29 RE-RENUMBERED R91→R93 by CMD LEAD (collision với R91 MASTER_PIPELINE_LOCK)
+  # 2026-06-29 RE-RENUMBERED R93→R105 by CMD LEAD LẦN 3 (vi phạm chính lesson lần 3 — R93 đã codified bởi CMD #2 full_update_on_new_bug list 1392 trước; em rename không 4-format check)
   rule: "Chuỗi 3+ từ ngắn (1-syl) liền tiếp ở cuối câu → TTS đọc cụt + mix glitch"
   why: |
     Concatenation pipeline + TTS decay → cuối câu chuỗi "ướt một góc nhỏ" cụt.
@@ -1388,4 +1389,177 @@ changelog:
       = Lãng phí round + làm chậm workflow
     added: '2026-06-29 11:25'
     why: 'Em v42-v47 propose text với R86 violation 2 lần. Mr.Long: "đã có bài học kinh nghiệm rồi sao vẫn bị" - cần PRE-PROPOSE self-verify gate.'
+
+  - id: R93
+    name: 'Mỗi fix lỗi MỚI → UPDATE FULL stack'
+    severity: HARD_BLOCK
+    rule: 'Khi gặp BUG TYPE MỚI: codify rule bible + update QA tool + memory + PING log_ping. KHÔNG ad-hoc fix.'
+    added: '2026-06-29 11:47'
+
+  - id: R94
+    name: 'Music mix - NO sidechain cho dialogue exchange'
+    severity: HARD
+    rule: 'Dialogue rapid (chunks ngắn <5s, pauses <2s): dùng CONSTANT music level + EQ scoop voice formant. KHÔNG sidechain ducking (gây pumping artifact). Sidechain CHỈ dùng cho music LONG + voice INTERMITTENT.'
+    pattern_safe: 'volume=0.15-0.30, highpass=80-150Hz, lowpass=3000Hz, equalizer=1500Hz Q=1 g=-6'
+    added: '2026-06-29 12:46'
+
+  - id: R95
+    name: 'Character name max 6 lần per episode + xưng hô kể truyện'
+    severity: HARD_BLOCK
+    rule: 'Mỗi character tối đa 6 lần gọi tên/episode. Trong câu/đoạn: introduce name lần đầu → pronoun (anh/cô ấy/ông) các lần sau.'
+    keep_strategy: 'intro character (lần đầu) + key REVEAL moments + dialogue gọi tên'
+    added: '2026-06-29 14:33'
+    why: 'Mr.Long: tuyệt đối tuân thủ tối đa 6 lần gọi tên — cách xưng hô trong kể truyện'
+
+  - id: R96
+    name: 'BigVGAN onset ramp MITIGATION (không cure)'
+    severity: HARD
+    statement: 'BigVGAN chunk-start slow onset ramp INHERENT vocoder artifact. CANNOT eliminate by trim without consonant loss. Mitigate via pre-roll + overlap-add + conservative trim.'
+    mitigation:
+      pre_roll: 'Prepend warm-up syllable to TTS input → model warmed when actual content starts. Strip in post-process.'
+      overlap_add: 'Render chunks với overlap, crossfade 30-50ms tại boundary cosine ramp'
+      conservative_trim: 'Head trim SAFETY only, max 80-180ms, fade-in 5-15ms nếu trim > 100ms'
+    pre_check_consonants: 'KHÔNG split chunk ngay trước phụ âm mạnh (b, đ, t, k, ch, tr, p)'
+    voiced_onset_detection: 'Multi-metric: RMS energy + zero-crossing rate + spectral flux (không chỉ dB threshold)'
+    chunk_strategy: 'Chunk dài hơn nếu VRAM chịu được (giảm số boundaries → ít ramps)'
+    added: '2026-06-29 14:38'
+    why: 'Mr.Long lock report: trim alone cannot fix onset. Need mitigation strategy.'
+
+  - id: R97
+    name: 'Music dạo đầu 6s + gentle fade-in (HARDLOCK)'
+    severity: HARD
+    rule: 'Final mix PHẢI có 6s dạo đầu nhạc trước voice. Music fade-in từ 0 → full level over 6s. Voice delay 6s, bắt đầu ĐÚNG TẠI thời điểm music đạt full level.'
+    spec:
+      music_intro_duration: '6 seconds'
+      music_fade_curve: 'gentle linear/exp ramp 0 → full'
+      voice_delay: '6 seconds (start at music full level)'
+    ffmpeg_pattern: |
+      [voice]adelay=6000|6000[voice_delayed];
+      [music]afade=t=in:st=0:d=6[music_fade];
+      [voice_delayed][music_fade]amix
+    added: '2026-06-29 15:35'
+    why: 'Mr.Long: tăng nhẹ dần bắt vào đúng nhịp nói đầu tiên + dạo đầu nhạc khoảng 6s'
+
+  - id: R98
+    name: 'Merge chunks dialogue dense (chống boundary ramps stack)'
+    severity: HARD
+    rule: 'Dialogue exchange với 3+ chunks ngắn liên tiếp (≤6 words) → MERGE narrator chunk vào dialogue tiếp theo. Giảm chunk boundaries = giảm BigVGAN onset ramps stack = giảm "ù" perceptual.'
+    pattern_bad: |
+      "Cô gái mỉm cười nhẹ nhàng." (5w)
+      "— Đồng hồ đẹp." (4w)
+      "Vỏ xà cừ thật phải không?" (6w)
+    pattern_good: |
+      "Cô gái ngước nhìn anh rồi nở nụ cười dịu dàng và hỏi nhỏ: — Đồng hồ đẹp lắm, vỏ xà cừ thật phải không?"
+    added: '2026-06-29 15:39'
+    why: 'Mr.Long: 06:40-42 ù → gen lại lời khác. Em merge dialogue density giảm boundary onset ramps.'
+
+  - id: R99
+    name: 'INTRO order hardlock SVHMP series'
+    severity: HARD
+    rule: |
+      INTRO BẮT BUỘC theo thứ tự:
+      1. "Hắc Dạ Ký — chuyện kể từ cõi vô hình." [pause:600ms]
+      2. "Tác giả và giọng đọc: Hắc Dạ Ký." [pause:600ms]
+      3. "Loạt truyện Chuyến xe cuối cùng về đâu — câu chuyện không lời chia tay sau cuối." [pause:600ms]
+      4. "Ai trong chúng ta cũng từng có một chuyến xe — chuyến xe chưa kịp nói lời tạm biệt với người mình thương." [pause:1000ms]
+      5. "Câu chuyện đêm nay." [pause:800ms]
+      6. "Một câu chuyện về điều chưa kịp nói." [pause:1500ms]
+      7. "[TÊN TRUYỆN EPISODE] — [SUBTITLE]." [pause:1800ms]
+      8. [HOOK content starts]
+    forbidden: ['"Tập một"', '"Câu chuyện đầu tiên"', 'redundant intro phrases']
+    added: '2026-06-29 15:32'
+    why: 'Mr.Long simplify: bỏ Tập một awkward + giữ Câu chuyện đêm nay + Đồng hồ tên truyện [pause 1800ms]'
+
+  - id: R100
+    name: 'Period vs Comma split — chống R86 NẶNG short word'
+    severity: HARD
+    rule: 'Nếu sentence ngắn ending R86 NẶNG/HỎI/NGÃ → thay period bằng comma để KHÔNG split chunk. Word này sẽ trở thành mid-sentence position, không phải EOL.'
+    example: '"Đồng hồ đẹp. Vỏ xà cừ thật..." (đẹp NẶNG EOL R86 fail) → "Đồng hồ đẹp lắm, vỏ xà cừ thật..." (đẹp giờ mid-sentence)'
+    added: '2026-06-29 15:39'
+
+  - id: R101
+    name: 'FFmpeg SIMPLE pipeline (volume + alimiter only)'
+    severity: HARD
+    rule: |
+      FFmpeg final chain DO NOT USE: loudnorm (single-pass blind), agate stage 2 (-45dB extreme), acompressor (multi-stage tạo clicks).
+      USE ONLY: atempo + volume + alimiter
+    pattern_locked: 'atempo=0.95,volume=0.95,alimiter=limit=0.85:attack=10:release=80'
+    forbidden_filters: ['loudnorm', 'agate ratio>10', 'acompressor multi-stage', 'agate stage 2']
+    added: '2026-06-29 12:58'
+    why: 'Em phát hiện RAW seg 2 clicks → output 72 clicks. Multi-stage processing thêm clicks ~35x. SIMPLE pipeline cleanest.'
+
+  - id: R102
+    name: 'KHÔNG volume boost > 1.0 (chống pcm_s16le clamp)'
+    severity: HARD_BLOCK
+    rule: 'FFmpeg volume filter PHẢI ≤ 1.0 nếu RAW peak gần 0dB. Volume > 1.0 trên RAW peak -1dB → boost +0.6dB → pcm_s16le clamps → square wave distortion → audible CLICKS.'
+    safe_volume: '0.95 (no boost, safe headroom)'
+    forbidden: 'volume > 1.0 trên audio với peak gần 0dB'
+    added: '2026-06-29 13:24'
+    why: 'Em v50 volume 1.2 → 56 clicks chunk 86. Reduce 0.95 → 0 clicks.'
+
+  - id: R103
+    name: 'amix ≠ concat — sequential audio dùng concat'
+    severity: HARD_BLOCK
+    rule: 'amix MIXES audio inputs (chồng chéo). concat NỐI TIẾP. Để ghép HOOK + SETUP sequential PHẢI dùng concat=n=2. Sai dùng amix = 2 voices play đồng thời.'
+    forbidden: 'amix=inputs=2:duration=longest cho sequential voice (= chồng đè)'
+    correct: 'concat=n=2:v=0:a=1 (hoặc concat=n=3 với silence bridge)'
+    added: '2026-06-29 14:25'
+    why: 'Em SAI dùng amix cho HOOK+SETUP → chồng đè 134s đầu. Mr.Long catch "chồng đè lên nhau".'
+
+  - id: R92b
+    name: 'Text proposal SELF-VERIFY EXTENDED (R92 + context + repeat + grammar)'
+    severity: HARD_BLOCK
+    rule: |
+      Em propose text PHẢI verify 4 LAYERS:
+        1. R86 EOL diacritic (đã codify R92)
+        2. SOCIAL HIERARCHY: speaker→listener relation, dùng honorific phù hợp
+           - Anh trung niên → cô gái trẻ: KHÔNG "thưa cô gái" (chỉ "vâng/dạ")
+           - Cháu → ông/chú: dùng "thưa chú/ông"
+           - Equal age: KHÔNG honorific
+        3. REPEAT PATTERN: KHÔNG repeat chủ thể 2 lần liên tiếp
+           ("Cô ấy ... Cô ấy ..." → "Cô ấy ... rồi ...")
+        4. AWKWARD GRAMMAR: read mentally as Vietnamese audio
+           - Avoid double honorific ("vậy thưa chú")
+           - Avoid stilted formality where inappropriate
+    examples_violations_29_6:
+      - 'L216 "Dạ, đúng vỏ xà cừ thật đó thưa cô gái" (anh đáp cô gái trẻ KHÔNG dùng thưa)'
+      - 'L218 "Vậy của ai vậy thưa chú có thể kể không" (vậy thưa awkward)'
+      - 'L276 "Cô ấy cười. Cô ấy nói: ..." (repeat Cô ấy)'
+    workflow:
+      step_1: 'Identify text issue (R86/repeat/awkward/context)'
+      step_2: 'Draft reword candidate'
+      step_3: 'SELF-VERIFY 4 LAYERS mental check'
+      step_4: 'If FAIL any layer → draft new candidate'
+      step_5: 'Only propose candidates PASSING all 4'
+    added: '2026-06-29 17:20'
+    why: 'Em v66+ propose 3 text fixes vi phạm: thưa cô gái (hierarchy), vậy thưa (grammar), Cô ấy repeat. Mr.Long catch all 3. R92 chỉ scan R86 không đủ.'
+
+  - id: R104b
+    name: 'MASTER MIX LOCK v66 — voice +5% boost in mix step (chống clip)'
+    severity: HARD
+    rule: |
+      Voice boost +5% (volume=1.05) PHẢI apply trong FINAL MIX step, KHÔNG trong svhmp_v13_render.py ffmpeg chain.
+      Reason: render ffmpeg + atempo expand peak → boost trong render gây clip.
+      Mix step có alimiter 0.85 final → safer boost headroom.
+    pattern_locked: |
+      Render ffmpeg chain (svhmp_v13_render.py): atempo=0.95, volume=0.95, alimiter=0.85 (baseline)
+      Final mix ffmpeg: [voice]volume=1.05, atempo, adelay → concat → alimiter=0.85 (boost step)
+      Music: volume=0.282 (after Mr.Long -3% adjustments)
+      Music fade-in: 0-6s gentle, voice adelay 6s, voice starts at music full level
+    added: '2026-06-29 16:22'
+    why: 'Mr.Long: vocal hơi bé tăng 5% + giảm music nhạc nền 3% (separate fixes). Render chain volume 1.0 → clip → 26 clicks. Mix step boost an toàn hơn.'
+
+  - id: R104
+    name: 'RAW reuse — change ffmpeg only chain → re-process raw.wav (5s) thay re-render TTS (12min)'
+    severity: HARD
+    rule: |
+      Khi change CHỈ ffmpeg chain (atempo/volume/filters) — KHÔNG re-render TTS 12 phút.
+      Reuse setup.wav.raw.wav (cached concat trước ffmpeg) + run ffmpeg only.
+      = 5 giây processing thay 12 phút TTS infer.
+    pattern: |
+      # KHÔNG re-render: ffmpeg trực tiếp trên raw.wav
+      ffmpeg -y -i setup.wav.raw.wav -af "new_chain" -ar 22050 -c:a pcm_s16le setup.wav
+    when_re_render: 'CHỈ khi change Python trim/fade pipeline (head_trim, tail_trim) hoặc text content'
+    added: '2026-06-29 13:24'
+    why: 'Em lãng phí 12 phút re-render khi chỉ cần đổi volume. RAW cached reusable.'
 
