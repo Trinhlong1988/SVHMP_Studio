@@ -531,9 +531,10 @@ R60_short_syllable_eol_hardlock:
     good: "Anh đứng im lặng một hồi lâu."
   detection: tools/audit_short_eol.py
 
-R91_concat_short_syllable_cụt_hardlock:
+R93_concat_short_syllable_cụt_hardlock:
   # round 15 add 2026-06-28 — Mr.Long: "ướt một góc nhỏ, chữ nhỏ cũng bị cụt do mix"
   # 2026-06-29 RENUMBERED R59→R91 by CMD LEAD (collision với R59_audio_mix_qa_mandatory_pre_publish line 322)
+  # 2026-06-29 RE-RENUMBERED R91→R93 by CMD LEAD (em vi phạm lesson grep_no_assumption — R91 đã occupied by CMD #2 MASTER_PIPELINE_LOCK line 1337 list format)
   rule: "Chuỗi 3+ từ ngắn (1-syl) liền tiếp ở cuối câu → TTS đọc cụt + mix glitch"
   why: |
     Concatenation pipeline + TTS decay → cuối câu chuỗi "ướt một góc nhỏ" cụt.
@@ -1333,4 +1334,58 @@ changelog:
       antipattern: 'render → ship → Mr.Long flag → fix 1 layer → re-render (em iterate v22-v33 vì thiếu gate)'
     added: '2026-06-29 09:30'
     why: 'Mr.Long: "đã có bài học kinh nghiệm rồi sao vẫn bị" — em REACTIVE iter 12 versions vì thiếu audit gate. R90 force PROACTIVE workflow.'
+
+  - id: R91
+    name: 'MASTER PIPELINE LOCK + cấm REACTIVE render (HARDLOCK Mr.Long capslock 29/6)'
+    severity: HARD_BLOCK
+    rule: |
+      Khi 1 S section đã KHÓA MASTER -> ÁP DỤNG CHO TẤT CẢ S SAU.
+      TRƯỚC KHI render bất kỳ S nào phải VERIFY 3 dimension:
+        1. Nhịp điệu (WPM, atempo, pause distribution)
+        2. Ngắt nghỉ (sentence_end, comma_pause, section transition)
+        3. Khử tạp âm (peak <= -0.1, R87 pauses CLEAN, R88 head onset, R86 EOL)
+      FIX TẤT CẢ issues identified TRƯỚC KHI render.
+      CẤM render reactive (fix 1 layer -> re-render lặp).
+    mandatory_pre_render:
+      - 'tools/qa_pre_render.py (R86 STAGE 1)'
+      - 'Verify pipeline config match locked master S'
+      - 'Scan text: duplicate words / awkward phrasing / cao vút dialogue / EOL diacritic'
+      - 'Confirm với Mr.Long approve text trước render'
+    forbidden:
+      - 'Render trước khi confirm 3-dim verify'
+      - 'Ship audio STAGE 3 FAIL với lý do "false positive"'
+      - 'Fix 1 layer re-render mà không scan toàn bộ pipeline'
+    enforcement:
+      - 'Memory feedback_master_pipeline_lock_proactive.md'
+      - 'R90 STAGE 1 hardlock inline svhmp_v13_render.py (no bypass)'
+      - 'Pre-commit hook R41 BLOCK commit'
+    added: '2026-06-29 12:00'
+    why: 'Mr.Long capslock: ANH ĐÃ NÓI KHÓA MASTER S2 ÁP DỤNG CHO CÁC S SAU. KIỂM TRA NHỊP/NGẮT/TẠP ÂM. FIX CHẶT CHẼ TRƯỚC REN. Em v42-v46 render reactive 5 lần liên tục.'
+
+  - id: R92
+    name: 'Text proposal SELF-VERIFY R86 trước propose (PRE-PROPOSE GATE)'
+    severity: HARD_BLOCK
+    rule: |
+      Mọi text reword/fix proposal PHẢI tự scan R86 EOL diacritic BEFORE shipping cho Mr.Long.
+      KHÔNG propose text với R86 violation, lãng phí round-trip với Mr.Long.
+    workflow:
+      step_1: 'Identify issue (duplicate / awkward / cụt / cao vút)'
+      step_2: 'Draft reword candidate'
+      step_3: 'SELF-VERIFY: scan candidate cho R86 banned chars at EOL'
+      step_4: 'Reject candidate if R86 fail → draft another'
+      step_5: 'Only propose candidates PASSING R86'
+    forbidden:
+      - 'Ship text proposal mà KHÔNG tự scan R86'
+      - 'Apply reword → Mr.Long catch R86 → em mới re-fix (vi phạm session 29/6 SETUP v47)'
+    enforcement:
+      - 'Em mental check trước Edit tool call'
+      - 'Sau Edit → invoke tools/qa_eol_diacritic.py confirm'
+      - 'Log VIOLATION nếu introduce R86 mới'
+    precedent_29_6: |
+      Em đề xuất: 'Một chiếc đài radio kiểu rất cũ' (cũ NGA fail)
+      Em đề xuất: 'phải sốt ruột chờ đợi' (đợi NẶNG fail)
+      STAGE 1 catch → em re-fix 2 lần thêm
+      = Lãng phí round + làm chậm workflow
+    added: '2026-06-29 11:25'
+    why: 'Em v42-v47 propose text với R86 violation 2 lần. Mr.Long: "đã có bài học kinh nghiệm rồi sao vẫn bị" - cần PRE-PROPOSE self-verify gate.'
 

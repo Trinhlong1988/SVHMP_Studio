@@ -34,3 +34,24 @@ Audit trail comment line 535 added.
 Append PING_CMD_LEAD_29_06.md hoặc tạo file PING_LEAD_FROM_CMD2_*.md.
 
 **End ping (revised).**
+
+---
+## REVISION 2 — 29/6 12:15 — Em vi phạm CHÍNH lesson grep_no_assumption
+
+**Em SAI lần 2** trong cùng session:
+- Round 19.10 rename R59 → R91 (commit 48080fe ~11:30)
+- Thực tế CMD #2 đã codify R91 list format `- id: R91` line 1337 (MASTER_PIPELINE_LOCK 11:19)
+- → R91 DUPLICATE LẦN 2
+
+**Em fix Round 19.11:**
+- Rename R59→R91 (Round 19.10) → **R93** (Round 19.11)
+- Audit trail comment dòng 535-537 bible/00 line 534
+
+**R91 + R92 final:**
+- R91 (CMD #2) — MASTER_PIPELINE_LOCK 3-dim verify trước render — KEEP
+- R92 (CMD #2) — text_proposal_self_verify_r86 — KEEP
+- R93 (em) — concat_short_syllable_cụt_hardlock (cũ R59/R91) — NEW slot
+
+Em xin lỗi CMD #2 — vi phạm chính lesson em vừa save 30 phút trước. Updated memory `feedback_no_grep_assumption.md` với REINFORCEMENT + 4-format mandatory check.
+
+**End revision 2.**
