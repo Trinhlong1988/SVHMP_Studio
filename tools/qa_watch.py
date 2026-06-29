@@ -64,11 +64,14 @@ def stage_3(section):
 
 # R98 whitelist — onomatopoeia / idiom Vietnamese 2-syl reduplication
 # CMD LEAD 29/6 18:10: catch false positive "rì rì" (tiếng máy), "từ từ" (slowly)
+# CMD LEAD 29/6 23:00: add "dần" sau 22 iter QA WATCH persistent L550 "dần dần"
 WHITELIST_REDUP = {
     "rì", "rầm", "ầm", "ù", "vù", "rì", "lách", "lộc", "phù",
     "từ", "chậm", "nhẹ", "khẽ", "thoăn", "thoắt", "rón",
     "chầm", "lúp", "lụp", "loạng", "lúng", "thấp", "lủng",
     "thì", "lập", "chập", "lờ", "ngơ", "ngẩn",
+    "dần", "đần", "mãi", "hoài", "luôn", "thoáng", "thấp", "thỉnh",
+    "lai", "lác", "ngấp", "ngúng", "phập", "phồng", "đăm", "ngơ",
 }
 
 
