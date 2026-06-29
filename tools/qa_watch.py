@@ -132,6 +132,22 @@ def main():
                 status = "PASS" if res else "FAIL"
                 p(f"  STAGE 3 {section}: {status}")
 
+        # CMD LEAD 29/6 23:35: wire verify_ping_claim mỗi iter — auto-catch CMD #2 claim sai
+        try:
+            r = subprocess.run(
+                ["python", str(ROOT / "tools/verify_ping_claim.py"), "--recent", "5"],
+                capture_output=True, text=True, encoding="utf-8",
+                env={**os.environ, "PYTHONIOENCODING": "utf-8"}, timeout=60,
+            )
+            m = re.search(r"VERIFIED=(\d+)\s+FAILED=(\d+)\s+UNKNOWN=(\d+)", r.stdout)
+            if m:
+                ver, fail, unk = m.group(1), m.group(2), m.group(3)
+                p(f"  PING VERIFY: V={ver} F={fail} U={unk}")
+                if int(fail) > 0:
+                    log("VIOLATION", f"QA WATCH iter {iter_count}: {fail} PING claim FAILED — em CMD LEAD verify cụ thể từng claim")
+        except Exception as e:
+            p(f"  PING VERIFY: [ERR {e}]")
+
         p(f"\n  Next iter in 60s...")
         time.sleep(60)
 
