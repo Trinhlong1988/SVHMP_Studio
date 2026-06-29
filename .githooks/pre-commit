@@ -1,11 +1,27 @@
 #!/bin/bash
-# SVHMP pre-commit hook — R41 HARDLOCK
+# SVHMP pre-commit hook — R41 HARDLOCK + R-ID conflict guard
 # Mr.Long 27/6: CẤM commit EP nếu post_render_gate FAIL
+# CMD LEAD 29/6: CẤM commit nếu bible/*.yaml add R{N} đã occupied (em vi phạm 3 lần session 29/6)
 # Setup: git config core.hooksPath .githooks
 
 set -e
 
-# Find staged EP files
+# === SECTION A: R-ID CONFLICT GUARD (CMD LEAD 29/6) ===
+staged_bible=$(git diff --cached --name-only | grep -E '^bible/0[05]_.*\.yaml$' || true)
+if [ -n "$staged_bible" ]; then
+  echo "=== SVHMP R-ID CONFLICT GUARD ==="
+  if ! PYTHONIOENCODING=utf-8 python tools/check_rule_id_free.py --staged; then
+    echo ""
+    echo "==================================================================="
+    echo "✗✗✗ R-ID CONFLICT — COMMIT BLOCKED"
+    echo "==================================================================="
+    echo "Pick different R{N} ID. Verify free slot: python tools/check_rule_id_free.py <N>"
+    echo "KHÔNG dùng --no-verify (Mr.Long lệnh nghiêm cấm sai)."
+    exit 1
+  fi
+fi
+
+# === SECTION B: R41 POST_RENDER_GATE ===
 staged_eps=$(git diff --cached --name-only | grep -E '^output/ep_[0-9]+/episode\.md$' || true)
 
 if [ -z "$staged_eps" ]; then
