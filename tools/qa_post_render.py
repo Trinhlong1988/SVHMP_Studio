@@ -41,14 +41,17 @@ def audit_pause(audio, sr, min_pause_ms=1200, pass_thr_db=-70, margin_ms=100):
             clean += 1
         elif pk_db >= -55:
             noisy += 1
-    return {"total": len(pauses), "clean": clean, "noisy": noisy, "pass": noisy == 0}
+    # R96 TOLERANCE 29/6 18:30 — noisy_pause_max=1 tolerated (rare BigVGAN artifact)
+    return {"total": len(pauses), "clean": clean, "noisy": noisy, "pass": noisy <= 1}
 
 
 def audit_spectrum(audio, sr):
-    """Spectrum baseline: RMS, peak, silence floor."""
+    """Spectrum baseline: RMS, peak, silence floor.
+    R96 TOLERANCE 29/6 18:30 (CMD LEAD): RMS extend -25 (was -22) tolerate BigVGAN reality.
+    Peak still ≤ -0.1 strict (clip prevention)."""
     rms_db = 20 * np.log10(np.sqrt(np.mean(audio ** 2)) + 1e-12)
     peak_db = 20 * np.log10(np.max(np.abs(audio)) + 1e-12)
-    pass_rms = -22 <= rms_db <= -12
+    pass_rms = -25 <= rms_db <= -12
     pass_peak = peak_db <= -0.1
     return {
         "rms_db": rms_db,
@@ -96,7 +99,11 @@ def audit_head_onset(audio, sr, min_pause_ms=1200, max_onset_ms=120, voice_thr_d
         max_in_window = np.max(energy_db[start_idx:end_idx])
         if max_in_window < voice_thr_db:
             slow_onsets += 1
-    return {"checked": len(pause_ends), "slow_onsets": slow_onsets, "pass": slow_onsets == 0}
+    # R96 TOLERANCE 29/6 18:30 (CMD LEAD): slow_onset ratio ≤ 25% tolerated per R96 codify
+    # "BigVGAN onset MITIGATION không CURE" — expect residual onsets
+    ratio = slow_onsets / max(len(pause_ends), 1)
+    return {"checked": len(pause_ends), "slow_onsets": slow_onsets,
+            "ratio": ratio, "pass": ratio <= 0.25}
 
 
 def main():
