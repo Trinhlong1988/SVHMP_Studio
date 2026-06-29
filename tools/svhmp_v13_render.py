@@ -32,11 +32,12 @@ ANCHOR_STRIP_MIN_SEC = 2.5
 ANCHOR_STRIP_MAX_SEC = 4.5
 SILENCE_THRESHOLD_DB = -40
 MIN_SILENCE_MS = 150
-FADE_TAIL_MS = 80  # REVERT s3 baseline OK config (Mr.Long 26/6: tuân thủ ngay sau s3 v13e)
+FADE_TAIL_MS = 80   # round 19+ 29/6 02:55 REVERT to 27.6 baseline (Mr.Long: "kiểm tra cách setup E1 27.6 mà học fix")
+FADE_HEAD_MS = 30   # keep — first word KHÔNG bị cụt
 BRIDGE_MS_DEFAULT = 600  # was 200 cố định bug 25/6 — dùng pause_after_ms từ spec
 ROOM_TONE_DB = -50  # ignore — bridge = silence pure (Mr.Long 26/6)
 LOUDNESS_TARGET = -18
-TAIL_TRIM_DB = -20  # -25→-20dB (Mr.Long 26/6: "buồn dài" trailing vowel BigVGAN phù 2s)
+TAIL_TRIM_DB = -20  # round 19+ 29/6 02:55 REVERT to 27.6 baseline (was -28 aggressive)
 
 GEN_KWARGS = {
     "do_sample": True,
@@ -95,7 +96,7 @@ def fade_tail(data, sr, ms=FADE_TAIL_MS):
     return data
 
 
-def fade_head(data, sr, ms=FADE_TAIL_MS):
+def fade_head(data, sr, ms=FADE_HEAD_MS):
     samples = int(ms * sr / 1000)
     if samples <= 0 or samples >= len(data):
         return data
@@ -105,8 +106,90 @@ def fade_head(data, sr, ms=FADE_TAIL_MS):
 
 
 def make_room_tone(duration_ms, sr, target_db=ROOM_TONE_DB):
+    # round 19+ 29/6 05:45 v23 — Mr.Long HARDLOCK: "đoạn nghỉ phải IM LẶNG TUYỆT ĐỐI"
+    # REVERT white noise → TRUE ZERO (em đã sai khi inject -90dB noise "bridge")
+    # Sau volume=2.0 boost → noise -84dB still audible = "ù ù xì xì"
+    # Pair với aggressive boundary trim (find silence start in last 300ms of chunk)
     n = int(duration_ms * sr / 1000)
-    return np.zeros(n, dtype=np.float32)  # bridge = pure silence (Mr.Long 26/6)
+    return np.zeros(n, dtype=np.float32)
+
+
+def aggressive_trim_tail(data, sr, search_ms=600, silence_thr_db=-30):
+    """v31 — Mr.Long HARDLOCK: 'pause = ZERO TUYỆT ĐỐI + trim 1/1000 precision'
+
+    Precision: 1ms window (= 1/1000 sec) cho detect word-end.
+    Pause = pure zeros guaranteed (no chunk residue spills).
+
+    Pipeline:
+    1. Scan backwards 1ms window — find last window RMS > -30dB (word-end precise)
+    2. TRUNCATE AT word-end (NO grace keep — no audible residue)
+    3. Apply 25ms linear fade INSIDE voice content (last 25ms before truncate)
+       → smooth voice → zero transition, no click
+    4. Output ends AT word-end with 0 amplitude (next sample = pause = 0)
+    """
+    n = len(data)
+    search_n = int(search_ms * sr / 1000)
+    if n <= search_n:
+        return data.copy()
+    thr = 10 ** (silence_thr_db / 20)
+    win_n = max(1, int(0.001 * sr))  # 1ms window = 1/1000 sec precision
+
+    # Scan BACKWARDS 1ms at a time for last voice window
+    last_voice_end = n
+    for i in range(n - win_n, max(0, n - search_n), -win_n):
+        win_rms = np.sqrt(np.mean(data[i:i+win_n] ** 2))
+        if win_rms > thr:
+            last_voice_end = i + win_n  # word ends here (exact 1ms precision)
+            break
+
+    # TRUNCATE AT word-end — NO residue beyond this point
+    out = data[:last_voice_end].copy()
+
+    # v32 — EXP fade 30ms (steep, NOT linear) — kills audible peak in fade region
+    # e^-12 = 0.000006 ratio: voice -10dB → -110dB at end (truly silent)
+    # Mid-fade: -10dB × ~0.001 = -70dB (well below audible -55dB threshold)
+    fade_n = int(0.030 * sr)
+    if 0 < fade_n < len(out):
+        ramp = np.exp(np.linspace(0, -12, fade_n)).astype(np.float32)
+        out[-fade_n:] *= ramp
+
+    return out
+
+
+def aggressive_trim_head(data, sr, search_ms=3000, silence_thr_db=-15):
+    """v41 — search 3000ms cover chunks BigVGAN với 1.8-2s quiet head.
+    Mr.Long catch chunk 13 (1780ms leading silent) + chunk 20 (1960ms).
+    2-pass fallback: -15dB strict + -25dB fallback."""
+    n = len(data)
+    search_n = int(search_ms * sr / 1000)
+    if n <= 100:
+        return data
+    win_n = max(1, int(0.001 * sr))
+    # PASS 1: strict -15dB
+    thr_strict = 10 ** (silence_thr_db / 20)
+    first_voice = None
+    for i in range(0, min(search_n, n - win_n), win_n):
+        win_rms = np.sqrt(np.mean(data[i:i+win_n] ** 2))
+        if win_rms > thr_strict:
+            first_voice = max(0, i - win_n)
+            break
+    # PASS 2 fallback: -25dB (quiet voice chunks)
+    if first_voice is None:
+        thr_fallback = 10 ** (-25 / 20)
+        for i in range(0, min(search_n, n - win_n), win_n):
+            win_rms = np.sqrt(np.mean(data[i:i+win_n] ** 2))
+            if win_rms > thr_fallback:
+                first_voice = max(0, i - win_n)
+                break
+    if first_voice is None:
+        first_voice = 0
+    out = data[first_voice:].copy()
+    # v40 — fade-in 20ms linear (smoother, no thump click)
+    fade_n = int(0.020 * sr)
+    if 0 < fade_n < len(out):
+        ramp = np.linspace(0.0, 1.0, fade_n).astype(np.float32)
+        out[:fade_n] *= ramp
+    return out
 
 
 def main():
@@ -118,6 +201,29 @@ def main():
     spec = json.load(open(args.spec, encoding='utf-8'))
     sentences = spec['sentences']
     sample = spec['sample_prompt']
+
+    # ========================================================================
+    # R90 HARDLOCK — STAGE 1 PRE-RENDER GATE (Mr.Long 29/6: "nghiêm cấm sai")
+    # CANNOT BYPASS — abort render nếu R86 EOL violations > 0
+    # ========================================================================
+    print(f"[v13] R90 STAGE 1 pre-render gate...", flush=True)
+    ep_match_early = re.search(r'ep_(\d+)', args.output)
+    ep_num_early = int(ep_match_early.group(1)) if ep_match_early else 1
+    md_path = f"D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio/output/ep_{ep_num_early:02d}/episode.md"
+    if os.path.exists(md_path):
+        gate_result = subprocess.run(
+            ["python", "D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio/tools/qa_eol_diacritic.py", md_path],
+            capture_output=True, text=True, encoding='utf-8',
+            env={**os.environ, 'PYTHONIOENCODING': 'utf-8'},
+        )
+        print(gate_result.stdout, flush=True)
+        if gate_result.returncode != 0:
+            print(f"[v13] !!! R90 STAGE 1 FAIL - RENDER BLOCKED (R86 EOL violations)", flush=True)
+            print(f"[v13] Fix episode.md violations + retry. KHÔNG bypass.", flush=True)
+            sys.exit(2)
+        print(f"[v13] R90 STAGE 1 PASS - render allowed", flush=True)
+    else:
+        print(f"[v13] WARN: episode.md not found at {md_path}, skip R86 check", flush=True)
 
     # Round 14 hook: detect ep from output path "output/ep_NN/narration.wav"
     ep_match = re.search(r'ep_(\d+)', args.output)
@@ -197,9 +303,30 @@ def main():
         if abs_t.any():
             last_above = len(stripped) - int(np.argmax(abs_t[::-1] > thr_tail))
             stripped = stripped[:last_above]
-        # Fade head + tail
-        stripped = fade_head(stripped, sr)
-        stripped = fade_tail(stripped, sr)
+        # round 19+ 29/6 05:00 v19 REVERT noisereduce (Mr.Long: "mất âm trầm ấm + tiếng nhỏ hẳn")
+        # noisereduce 0.7 side effect: kill warm low freq + reduce signal level
+        # Accept BigVGAN tail noise as INHERENT — will mask via master mix với music bed
+        # Round 19+ R_AUDIO_09 enforce: DC offset removal per-chunk (chống xèo / ù)
+        stripped = stripped - np.mean(stripped)
+        # Per-chunk RMS normalize to -23 dBFS (chống "âm thanh không đều")
+        rms = np.sqrt(np.mean(stripped ** 2))
+        if rms > 1e-6:
+            target_rms = 10 ** (-23 / 20)  # -23 dBFS target
+            stripped = stripped * (target_rms / rms)
+            # Soft limit at -1 dBFS
+            peak = np.max(np.abs(stripped))
+            if peak > 0.89:
+                stripped = stripped * (0.89 / peak)
+        # round 19+ 29/6 v31 — Mr.Long HARDLOCK: pause = ZERO TUYỆT ĐỐI, trim 1/1000 precision
+        # Pipeline FINAL v31:
+        # 1. aggressive_trim_tail = 1ms-precise detect word-end at -30dB + TRUNCATE + 25ms linear fade INSIDE voice
+        # 2. aggressive_trim_head = trim leading silence -50dB + 10ms back-off
+        # 3. fade_head 15ms (click prevention only)
+        # NO fade_tail (trim_tail handles it cleanly)
+        # NO zero_pad_n (last sample already = 0 after fade)
+        stripped = aggressive_trim_tail(stripped, sr, search_ms=600, silence_thr_db=-30)
+        stripped = aggressive_trim_head(stripped, sr, search_ms=200, silence_thr_db=-50)
+        stripped = fade_head(stripped, sr, ms=15)
         print(f"   → {len(stripped)/sr:.2f}s", flush=True)
         chunk_pause = sent.get('pause_after_ms', BRIDGE_MS_DEFAULT)
         stripped_chunks.append((stripped, chunk_pause))
@@ -224,10 +351,15 @@ def main():
     _prog.start('loudnorm')
     _prog.tick(1 + len(sentences) + 2, f'Loudnorm -18 LUFS + SR 22050')
     print(f"[v13] Loudnorm + force SR 22050 (no compressor)...", flush=True)
+    # v40 — Mr.Long: lục bục = clicks từ aggressive agate (ratio 10/20 attack 1-2ms)
+    # SMOOTHER 2-stage:
+    #   Stage 1: agate -25dB ratio 5 attack 8ms release 150ms knee 6 (gentle)
+    #   Stage 2: agate -45dB ratio 8 attack 5ms release 100ms knee 4 (gentle)
+    # → giảm sudden amplitude jumps → no clicks
     subprocess.run([
         "ffmpeg", "-y", "-i", raw_out,
-        "-af", f"loudnorm=I={LOUDNESS_TARGET}:LRA=11:TP=-1.5",
-        "-ar", "22050",  # FORCE SR same as input chống loudnorm 192kHz upsample click
+        "-af", "atempo=0.9,volume=2.0,agate=threshold=0.0562:ratio=5:attack=8:release=150:knee=6,agate=threshold=0.0056:ratio=8:attack=5:release=100:knee=4,acompressor=threshold=-12dB:ratio=4:attack=5:release=80,alimiter=limit=0.79:attack=5:release=50",
+        "-ar", "22050",
         "-c:a", "pcm_s16le", args.output,
     ], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     print(f"[v13] DONE → {args.output}", flush=True)

@@ -22,9 +22,9 @@ SVHMP = Path(r'D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio')
 
 INTRO_ELEMENTS = [
     'Hắc Dạ Ký — chuyện kể từ cõi vô hình',
-    'Tác giả: Hắc Dạ Ký',
-    'Series: Chuyến xe cuối cùng về đâu',
-    'Ai cũng có một chuyến xe chưa nói lời tạm biệt',
+    'Tác giả và giọng đọc: Hắc Dạ Ký',
+    'Loạt truyện Chuyến xe cuối cùng về đâu',
+    'chuyến xe chưa kịp nói lời tạm biệt',
 ]
 
 FORBIDDEN_HA_PATTERNS = [

@@ -58,6 +58,230 @@ post_render_gate:
 # ============================================================
 # Mr.Long 27/6 lệnh add intro Hắc Dạ Ký mọi EP.
 
+R81_demonstrative_kia_ban_hardlock:
+  # round 19+ add 2026-06-29 00:55 (Mr.Long: "chữ kia không nên dùng")
+  rule: "CẤM TUYỆT ĐỐI từ 'kia' (demonstrative pointer) trong narration TTS"
+  why: |
+    "kia" pointer ambiguous trong narration văn nói TTS:
+    - "Bóng kia" → "bóng nào?" reader/listener confuse
+    - Văn phong Ngọc Ngạn thường specific (vật cụ thể) hoặc temporal ("vừa rồi", "lúc nãy")
+  banned_word: 'kia'
+  fix_alternatives:
+    - 'kia → "vừa rồi" (temporal)'
+    - 'kia → "ấy" (mild demonstrative, less pointed)'
+    - 'kia → drop entirely + add concrete noun (vd "Bóng kia" → "Hình bóng vừa rồi")'
+  precedent: 'EP01 L416 "bóng kia đã không còn" → "hình bóng vừa rồi đã tan biến" ✅'
+  enforcement: 'grep "\\bkia\\b" episode.md → must return 0 matches in body content'
+  cross_ref: [R44 dictionary_block, R45 context_block]
+
+R84_temporal_anchor_for_events:
+  # round 19+ add 2026-06-29 01:50 (Mr.Long: "không có rõ ràng thời gian cho từng sự kiện à?")
+  rule: "Mỗi sự kiện trong narrative PHẢI có temporal anchor cụ thể (khi nào / hôm nào / lúc nào)"
+  why: |
+    Audience nghe văn nói KHÔNG có bookmark → cần temporal anchor để hiểu sequence.
+    Vague "Tháng tư Hà Nội. Mưa từ bảy giờ" → "hôm nào? đêm nào? sáng nào?"
+  bad:
+    - 'Tháng tư Hà Nội. Mưa từ bảy giờ tối, không dứt. → "tháng tư hôm nào?"'
+  good:
+    - 'Một đêm cuối tháng tư ở Hà Nội. Trời đổ mưa từ bảy giờ tối, đến tận khuya vẫn chưa dứt.'
+  protocol:
+    - 'Scene/section transition → temporal anchor (Một đêm / Hôm đó / Sáng hôm sau / Vào lúc...)'
+    - 'Flashback → temporal marker (Năm tôi 18 / Hồi cấp ba / Tám năm trước...)'
+    - 'Event sequence → connective time (Sau đó / Một lúc sau / Vài giờ sau...)'
+  precedent: 'EP01 L78 "Tháng tư Hà Nội. Mưa từ bảy giờ tối" → "Một đêm cuối tháng tư ở Hà Nội. Trời đổ mưa từ bảy giờ tối, đến tận khuya vẫn chưa dứt."'
+  cross_ref: [R56 story_mode_hồi_tưởng, R65 logic_consistency 1_logic_thoi_gian]
+
+R85_single_word_eol_extend:
+  # round 19+ add 2026-06-29 01:55 (Mr.Long flag: "khác / vút / hậu bé/cụt EOL")
+  rule: "EXTEND R60 banned EOL words — single-syllable CLOSED-vowel word EOL có volume drop TTS"
+  extended_banned_eol:
+    - 'khác'   # /xak̚/ stop /-k/ EOL volume drop
+    - 'vút'    # /vũt̚/ stop /-t/ EOL volume drop
+    - 'hậu'    # mono open vowel cụt
+    - 'lúc'    # stop /-k/ EOL
+    - 'rồi'    # closed vowel /-i/ — flag interrogative + statement
+    # round 19+ 29/6 02:10 add (Mr.Long flag HOOK v5):
+    - 'cừ'     # /kɨː/ closed eng vowel — BigVGAN "phù" tail (precedent L84 "Vỏ xà cừ.")
+    - 'dứt'    # /zɨt̚/ stop /-t/ + closed vowel — phù tail (L78 "...vẫn chưa dứt")
+    - 'tách'   # /tax̚/ — onomatopoeia + stop /-x/
+    - 'tích'   # /tic̚/ — similar
+    - 'mất'    # /mɤt̚/ stop /-t/ + ɤ vowel — cụt
+    - 'mưa'    # /mɨə/ open eng — common phù tail
+    # round 19+ 29/6 04:15 add (Mr.Long flag HOOK v15-v16):
+    - 'mười'   # /mɨəj/ nasal + diphthong — cụt + sôi
+    - 'ngồi'   # /ŋoj/ — TTS đọc thành "ngồ" cụt + sôi
+    - 'rõ'     # /zɔ/ open vowel — phù tail
+    - 'giờ'    # /ɟəː/ open eng — common
+    - 'lâu'    # /ləw/ open diphthong — common
+  GENERAL_RULE: 'AVOID single-syllable word at EOL — pattern detected MANY words have BigVGAN cụt/sôi'
+  fix_protocol:
+    - 'Reposition single-syllable to mid-sentence'
+    - 'Pad with following clarifier ("khác cùng ngồi" instead of "khác.")'
+    - 'Pair with multi-syllable closer'
+  precedent:
+    - 'EP01 L96 "Mười một vị khách khác." → "Trên xe còn mười một vị khách khác cùng ngồi." (reposition khác mid-sentence)'
+    - 'EP01 L102 "Anh cũng không nhận ra mình lên lúc nào." → "Bản thân anh cũng không nhận ra mình đã bước lên xe từ lúc nào." (smooth end)'
+  cross_ref: [R60 short_syllable_eol_hardlock]
+
+R83_subtext_clarity_for_audience:
+  # round 19+ add 2026-06-29 01:20 (Mr.Long: "tay sạch / cô y tá đoạn này rất vô ý nghĩa")
+  rule: "Subtle horror cues PHẢI có narrative anchor để audience hiểu — KHÔNG để symbol bare orphan"
+  why: |
+    Văn nói TTS audience nghe 1 lần, KHÔNG đọc lại → subtle metaphor lost.
+    Cô y tá "tay sạch / không vết máu" = subtext "trực ca tai nạn nhưng không thực còn ở đó (=ghost)"
+    BUT nếu audience KHÔNG biết Hạ-Vy chết tai nạn (chưa reveal) → cue floating without anchor.
+  protocol:
+    - 'Place subtle cue AFTER context reveal, không trước'
+    - 'OR add narrative bridge câu ngắn give context'
+    - 'OR pair với object cụ thể (vết máu → object cô y tá từng cứu / khăn thấm máu)'
+  example_bad:
+    - 'Cô y tá "tay sạch, không một vết máu" (SETUP — trước reveal Hạ-Vy chết)'
+  example_good:
+    - 'Move "tay sạch" cue to AFTER L388 "Cô ấy mất tại chỗ" (audience đã biết tai nạn + cô y tá liên quan)'
+    - 'OR rephrase neutral "Đôi bàn tay trắng tinh, gọn gàng đặt yên" (drop "không vết máu" — vẫn subtle visual)'
+  precedent: |
+    EP01 L198 "Tay cô đặt trên đùi, trắng tinh, không một vết máu." → reword "Đôi bàn tay trắng tinh, gọn gàng đặt yên — như chưa từng chạm vào điều gì cả." (drop "không vết máu" lost cue → safer subtext)
+  cross_ref: [R47 POV, R56 story_mode_hồi_tưởng]
+
+R82_pronoun_subject_explicit_for_non_main_character:
+  # round 19+ add 2026-06-29 01:00 (Mr.Long: "không định danh vật thể với người nào à?")
+  rule: "Action verbs gắn với NON-MAIN-character PHẢI có proper noun anchor explicit, KHÔNG dùng pronoun ambiguous"
+  why: |
+    R47 narrator 3rd person Khải-Phong = "anh" (close POV).
+    Khi action tied to NON-Khải-Phong character (ông cụ / cô y tá / anh trung niên / cô gái ghế tám)
+    và em mass-replace anaphora với "anh" hay "cô" → reader/listener confuse subject.
+    EP01 L426: em fix anh trung niên "Anh đọc tờ giấy..." → Mr.Long confuse Khải-Phong làm action với vật KHÔNG phải của mình.
+  protocol:
+    main_character_action: 'KEEP "anh" pronoun (R47 narrator close POV)'
+    non_main_character_action: 'PROPER NOUN explicit ("anh trung niên", "ông cụ", "cô y tá", "cô gái ghế tám", "bác tài") cho FIRST sentence của paragraph + tiếp pronoun OK trong cùng paragraph'
+    object_specific_action: 'Subject anchor REQUIRED khi action involves vật riêng nhân vật phụ (giấy gấp tư = anh trung niên / radio = ông cụ / etc)'
+  precedent: |
+    EP01 L426 (round 19+ 29/6 01:00): "Anh đọc một lần, gấp tờ giấy lại..." (em mass-replace from "Người đàn ông đọc...") →
+    Mr.Long confuse Khải-Phong làm action với tờ giấy của anh ghế 12.
+    Fix: "Người trung niên đọc nó một lần, rồi lặng lẽ gập tờ giấy lại..."
+  enforcement: |
+    Manual editorial review post-anaphora-fix.
+    Check: every action paragraph với vật/đối tượng → subject must be EXPLICIT proper noun (not "Anh"/"Cô").
+  cross_ref: [R47 POV, R75 anaphora hardlock, R48 dialogue hierarchy]
+
+R76_short_hoi_tone_drift_hardlock:
+  # round 19+ add 2026-06-28 22:55 (Mr.Long catch TTS R39: "ở cầu" → "ỡ cầu" multiple occurrences)
+  # Mr.Long lock: "cấm các chữ ỡ ở đầu đoạn đầu câu, cấm ở để thành ỡ"
+  rule: "CẤM TUYỆT ĐỐI single-syllable 'ở' (hỏi tone) standalone — TTS BigVGAN tone drift hỏi → ngã ('ỡ')"
+  why: |
+    BigVGAN 22kHz vocoder tone instability cho single-syllable function words.
+    "ở" /ɔ̌ː/ (hỏi tone) standalone trước danh từ open vowel → tone reads as "ỡ" /ɔ̃ː/ (ngã).
+    Specially bad ở positions:
+      - Đầu câu / đầu đoạn (prosody reset)
+      - Trước proper noun open vowel ("ở cầu", "ở đâu", "ở cổng")
+      - Trước stop consonant + open vowel sequence
+  banned_patterns:
+    - 'Ở đầu câu / đầu đoạn (CẤM TUYỆT ĐỐI)'
+    - '"ở" + danh từ open vowel (ở cầu, ở đâu, ở cổng, ở quán...)'
+    - '"ở" + động từ position (ở phòng, ở bên, ở cuối...)'
+  fix_options:
+    - '"ở X" → "tại X" (locative replacement)'
+    - '"ở X" → "nơi X" (location synonym)'
+    - '"ở X" → "ngay ở X" (pad with closed-vowel syllable trước "ở" để stabilize tone)'
+    - '"ở X" → "X" (drop if context clear)'
+    - 'Reword sentence entirely'
+  examples:
+    bad:
+      - 'Bạn của chú giờ ở đâu? → "Bạn của chú giờ tại đâu?"'
+      - 'Hạ-Vy đang đứng ở cổng B → "Hạ-Vy đang đứng tại cổng B"'
+      - 'Anh ngồi ở quán cà phê → "Anh ngồi tại quán cà phê"'
+    good_pad:
+      - 'Anh nói đứng yên ngay ở cuối con đường (pad "ngay" before "ở")'
+  enforcement: |
+    Pre-render gate scan: count "ở" + check position.
+    Detection: tools/audit_short_hoi_tone.py (BUILD round 19+)
+    Auto-fix: tools/auto_fix_hoi_tone.py (BUILD round 19+)
+  precedent: |
+    EP01 round 19+ 28/6: Mr.Long nghe TTS R39 → 8 occurrences "ở X" rendered "ỡ X" pattern.
+    Specific catch: "ở cầu Long Biên" → "ỡ cầu Long Biên" (Mr.Long 22:30).
+  cross_ref: [R58 tilde EOL, R74 hyphen proper noun, R69 number reading]
+  no_inference: "Pattern strict — check every standalone 'ở' word."
+
+R74_hyphen_proper_noun_phonetic_clash_hardlock:
+  # round 19+ add 2026-06-28 (Mr.Long catch TTS bản v3: "Khải Phong → Hải Phòng", "Hạ Vy → Hà Vy")
+  # Renamed from R68 (avoid conflict with round 19 R68 triphthong proper noun)
+  rule: "Proper noun có phonetic clash với địa danh/từ phổ biến PHẢI dùng HYPHEN khi viết episode.md để IndexTTS2 đọc đúng"
+  why: |
+    BigVGAN/IndexTTS2 đọc liền 2 syllable proper noun → elide tone/onset → nghe ra từ khác:
+    - "Khải Phong" → "Hải Phòng" (thành phố lớn — well-known city)
+    - "Hạ Vy" → "Hà Vy" (common name)
+    Hyphen prosody break → vocoder pronounce both syllables distinct → đúng.
+  banned_unhyphened_proper_nouns:
+    - "Khải Phong"   # MUST write "Khải-Phong"
+    - "Hạ Vy"        # MUST write "Hạ-Vy"
+  enforcement: |
+    Pre-render gate: scan episode.md cho banned unhyphened occurrences.
+    Bất kỳ chỗ nào → BLOCK render + auto-suggest fix.
+    Auto-fix: replace "Khải Phong" → "Khải-Phong", "Hạ Vy" → "Hạ-Vy".
+  precedent: |
+    EP01 round 18 28/6: Mr.Long nghe bản v3 → "Khải Phong" sound "Hải Phòng",
+    "Hạ Vy" sound "Hà Vy". Fix: hyphen 63 + N replacements.
+  cross_ref: [R28 TTS pronunciation, R58 tilde EOL, B14 BigVGAN tail]
+  no_inference: "Pattern strict — chỉ check banned list."
+
+R75_proper_noun_anaphora_hardlock:
+  # round 19+ add 2026-06-28 (Mr.Long: "tuyệt đối không lặp Khải Phong nhiều liền nhau, các trường hợp khác cũng vậy, khóa chặt vào")
+  # Renamed from R69 (avoid conflict with round 19 R69 number reading Việt chữ)
+  # round 19.5 update (Mr.Long 28/6 22:30 listen R39 18:38): HARD CAP 6 per EP
+  rule: "TUYỆT ĐỐI CẤM proper noun (tên nhân vật chính) > 6 occurrences per EP + > 2 câu consecutive. Replace với pronoun ('anh/anh ấy'/'cô/cô ấy') hoặc descriptor."
+  hard_cap_per_ep: 6
+  spacing_rule: '6 mentions PHẢI distribute đều across EP — KHÔNG cluster đầu/cuối/section. Tối thiểu cách 200 từ giữa 2 mentions.'
+  context_rule: |
+    Mention proper noun CHỈ khi:
+      1. Intro character per scene/section
+      2. Emotional anchor moment (peak / dialogue intro)
+      3. Cross-EP callback (R36)
+    KHÔNG mention proper noun cho:
+      - Routine action sentences (use 'anh'/'cô ấy')
+      - Recall flashback details (use 'cô ấy')
+  pronoun_convention:
+    khải_phong:
+      full_name: 'Section start / emotional peak / 1st intro per scene (6 anchors)'
+      anh: 'Default narrator describing action/feeling — close POV per R47'
+      anh_ấy: 'Rare — only when shifting POV to outsider observer'
+    hạ_vy:
+      full_name: '6 anchors: intro "Tên cô ấy là Hạ-Vy" / emotional peak / Hạ-Vy vision present'
+      cô_ấy: 'Default narrator/Khải-Phong recall (distant past)'
+      cô: 'Only when Hạ-Vy physically present in scene (flashback vivid)'
+  reduction_protocol:
+    narrator_lines:
+      - 'First 6 occurrences per EP → KEEP proper noun (anchor)'
+      - '7th+ occurrence → REPLACE pronoun (anh/cô ấy)'
+    dialogue_lines (start with —):
+      - 'Passenger speaks về 1 character → reduce 60% via "cô ấy"/"anh ấy"'
+      - 'Keep key emotional anchor mentions only (eg "Tên cô ấy là Hạ-Vy" intro)'
+  why: |
+    Lặp "Khải-Phong" 3+ consecutive sentences → text sound "máy đọc danh sách":
+      "Khải-Phong ngồi yên. Khải-Phong nhìn ra cửa. Khải-Phong nuốt nước bọt."
+    Real Vietnamese narrator rotate: name → pronoun → descriptor.
+    R62 đã codify cho common nouns ("người người người"), R69 extend cho proper nouns.
+  max_consecutive: 2
+  must_rotate_pattern: 'name → name/pronoun → PRONOUN/descriptor → name → ...'
+  applies_to:
+    - '"Khải-Phong" (narrator 3rd person — R47 → fallback "anh")'
+    - '"Hạ-Vy" (passenger speak → "cô"/"cô ấy")'
+    - 'All passenger proper nouns (Bích Trâm / Hải / Linh / etc — fallback "cô/anh/chú/bà")'
+  forbidden_patterns:
+    - '"{Name} {verb1}. {Name} {verb2}. {Name} {verb3}." (3+ consecutive name-subject)'
+    - '"Khải-Phong ngồi. Khải-Phong nhìn. Khải-Phong thấy." (canonical bad)'
+  detection_heuristic:
+    - 'Scan paragraph: count sentences starting với "{Name}" — flag >2 consecutive'
+    - 'Tool: tools/audit_proper_noun_anaphora.py (build phase 2)'
+  enforcement: |
+    Pre-render gate BLOCK: scan all proper nouns + character names từ bible/03.
+    Any 3+ consecutive same-name-subject sentences → BLOCK + report locations.
+    Auto-fix: odd-indexed sentence subject "{Name}" → "anh"/"cô" theo gender bible/03.
+  precedent: |
+    EP01 round 18 28/6: "Khải-Phong" 63 lần / EP — Mr.Long flag "quá nhiều".
+    Mr.Long lock R69 hardlock cho tất cả EP02-EP90.
+  cross_ref: [R47 narrator 3rd person, R62 anaphora consecutive, R49 template variation, R53 template pattern variety]
+  no_inference: "Rule strict — count consecutive sentences. Pronoun fallback per bible/03 gender."
+
 R67_verb_semantic_precision_memory_vs_perception:
   # round 18 add 2026-06-28 (Mr.Long: "từ nhớ và từ nhận ra liên quan đến rule sử dụng đúng QA + fix triệt để")
   rule: "Verb 'nhớ / không nhớ / quên' CHỈ dùng cho event distant past. Action VỪA xảy ra (< 5s narrative) PHẢI dùng 'nhận ra / hiểu / ý thức'"
@@ -239,11 +463,11 @@ R68_triphthong_diphthong_proper_noun_hardlock:
   rule: "Triphthongs (uê / uyê / oai / ươi / uây) trong proper nouns PHẢI flag + alternate spelling fallback"
   why: "BigVGAN 22kHz sample rate under-resolve second glide của triphthongs"
   affected_words:
-    - "Huế" → check render, may need "Hu-ế"
-    - "Quỳnh" → "Quy-nhh"
-    - "Thuận" → "Thu-ận"
-    - "Khải" → check
-    - "Tuyến" → "Tu-yến"
+    - '"Huế" → check render, may need "Hu-ế"'
+    - '"Quỳnh" → "Quy-nhh"'
+    - '"Thuận" → "Thu-ận"'
+    - '"Khải" → check'
+    - '"Tuyến" → "Tu-yến"'
   enforcement: tools/audit_triphthong.py + whitelist data/triphthong_fallback.yaml
 
 R65_total_consistency_no_invention_hardlock:
@@ -979,3 +1203,133 @@ changelog:
       Fix: Add 6 series-wide ARC rules (interleave / escalation / memory progressive / callback / milestone / object sub-arc).
       Cross-ref bible/21_series_arc_design.yaml mới (EP-level arc map).
       QA Lock thêm PHASE 12.16-12.18 enforce R33-R38.
+
+  - id: R86
+    name: 'EOL diacritic ban — ngã/nặng/hỏi (HARDLOCK)'
+    severity: HARD_BLOCK
+    rule: 'CẤM TUYỆT ĐỐI sentence/chunk kết thúc bằng từ mà ký tự cuối có dấu ngã (combining U+0303), dấu nặng (combining U+0323), dấu hỏi (combining U+0309). BigVGAN vocoder không model accurate glottal stop pitch contour → âm ngắn cụt / hụt hơi / lệch tone / phát thành dấu sai.'
+    banned_chars_complete:
+      hoi:   ['ả', 'ẳ', 'ẩ', 'ẻ', 'ể', 'ỉ', 'ỏ', 'ổ', 'ở', 'ủ', 'ử', 'ỷ']
+      nga:   ['ã', 'ẵ', 'ẫ', 'ẽ', 'ễ', 'ĩ', 'õ', 'ỗ', 'ỡ', 'ũ', 'ữ', 'ỹ']
+      nang:  ['ạ', 'ặ', 'ậ', 'ẹ', 'ệ', 'ị', 'ọ', 'ộ', 'ợ', 'ụ', 'ự', 'ỵ']
+    banned_unicode_combining_marks: ['U+0303 ngã', 'U+0309 hỏi', 'U+0323 nặng']
+    examples_banned_words: ['nữa', 'đã', 'cũng', 'nhỏ', 'vỏ', 'rõ', 'cả', 'ạ', 'nhẹ', 'chỗ', 'tủ', 'sợ', 'nở', 'mở', 'ngỗ', 'hỏi', 'ở', 'thử', 'đặt', 'mặt', 'lại', 'chậm', 'ngại', 'lặng', 'Nội', 'mịch', 'tĩnh', 'lạnh', 'lệ', 'dạ', 'lụa']
+    examples_safe_eol: ['rồi', 'này', 'kia', 'đó', 'nay', 'mai', 'sáng', 'tối', 'đêm', 'ngày', 'thôi', 'hôm nay', 'lúc đó', 'nhanh', 'lắm', 'ấy', 'này nữa rồi']
+    fix_strategy:
+      - 'Reword EOL với từ kết thúc dấu SẮC ́ / HUYỀN ̀ / KHÔNG-DẤU'
+      - 'Prefer nguyên âm đóng + phụ âm /-n/, /-m/, /-ng/, /-t/, /-p/, /-k/'
+      - 'KHÔNG sliding glide tail /-j/, /-w/ với từ có dấu ngã/nặng/hỏi'
+      - 'Tên riêng (Hà Nội, Mỹ Chi…) bắt buộc giữ → MERGE sang câu sau, KHÔNG để EOL'
+    detect_tool: 'tools/qa_eol_diacritic.py — scan NFD combining 0x0303/0x0309/0x0323 trên ký tự cuối từ cuối câu'
+    enforce:
+      pre_render: 'qa_eol_diacritic.py BLOCK render nếu > 0 violations'
+      post_render: 'auto-flag chunk có EOL banned tone for re-render với reworded text'
+    added: '2026-06-29 06:30'
+    updated: '2026-06-29 07:00 — full diacritic chars + enforce gate'
+    why: 'Mr.Long catch v25 nữa/mườ/ngày-nào-nữa/Hà-Nội/tĩnh-mịch hụt chữ — BigVGAN vocoder không thể model accurate 6-tone Vietnamese tại EOL, đặc biệt 3 dấu glottal stop pattern (ngã/nặng/hỏi)'
+
+  - id: R87
+    name: 'Pause = ZERO TUYỆT ĐỐI + trim 1/1000 precision (HARDLOCK)'
+    severity: HARD_BLOCK
+    rule: 'Mọi đoạn pause/silence giữa chunks PHẢI có amplitude = 0 TUYỆT ĐỐI. KHÔNG residue, KHÔNG breath, KHÔNG vocoder noise tail. Trim precision = 1ms (1/1000 second) cho word-end detection.'
+    requirements:
+      pause_silence: 'np.zeros(pause_ms * sr / 1000) — pure zero amplitude bridge'
+      trim_precision: '1ms window (= 22 samples @ 22050Hz) for word-end RMS detection'
+      truncate_policy: 'TRUNCATE AT detected word-end (NO grace zone keeping voice content)'
+      fade_method: 'Linear fade 25ms INSIDE last voice content → 0 at truncate point (chống click, no residue past truncate)'
+      no_post_trim_fade: 'KHÔNG fade_tail post-truncate (already smooth via linear fade inside voice)'
+      no_zero_pad: 'KHÔNG zero pad after truncate (audio ends AT 0 already)'
+    verification_audit:
+      method: 'Find pauses >=1200ms in final audio, measure peak amplitude in pause zones'
+      pass_criteria: 'ALL pauses peak < -70 dBFS (true silence inaudible)'
+      fail_criteria: 'ANY pause peak > -55 dBFS (audible residue)'
+      tool: 'tools/qa_pause_silence.py (TBD)'
+    pipeline_v31:
+      stage_1: '1ms-precise scan backwards 600ms — find last window RMS > -30dB'
+      stage_2: 'Truncate AT detected word-end (NO grace keep)'
+      stage_3: 'Linear fade 25ms INSIDE voice (last 25ms before truncate)'
+      stage_4: 'Concat với np.zeros(pause_ms) bridge — pure silence'
+    why: 'Mr.Long catch v22-v30 vẫn còn ù/phù/tiếng-gió/tiếng-thở ở pause boundaries. ROOT CAUSE: pipeline keep grace zone 40ms với voice content -27 đến -50dB AUDIBLE. FIX: hard truncate ngay word-end + smooth voice→0 fade INSIDE voice.'
+    added: '2026-06-29 08:00'
+    updated: '2026-06-29 10:30 — v39 LOCKED FINAL (head_trim 1500ms search + 2-pass fallback + 2-stage agate)'
+    enforced_by: 'svhmp_v13_render.py v39 (aggressive_trim_tail + aggressive_trim_head 2-pass + 2-stage agate)'
+    pipeline_v39_FINAL_LOCKED:
+      tail_trim:
+        method: '1ms-precise scan backwards 600ms'
+        threshold: '-30 dBFS find word-end'
+        action: 'TRUNCATE AT word-end (NO grace keep)'
+        fade: 'EXP 30ms inside voice (e^-12 = 0.000006 ratio)'
+      head_trim:
+        method: '1ms-precise scan forward 1500ms (PASS 1) + 1500ms fallback (PASS 2)'
+        pass_1_threshold: '-15 dBFS strict (catch full voice)'
+        pass_2_threshold: '-25 dBFS fallback (catch quiet voice chunks)'
+        action: 'Trim từ (first_voice - 1ms) preserve attack'
+        fade: 'EXP fade-in 8ms (e^-12 reverse)'
+        bug_v33_v37: 'search_ms=400 → fail detect chunks với voice ramp >400ms → keep entire chunk → audible'
+      bridge: 'np.zeros(pause_ms * sr / 1000) — TRUE SILENCE'
+      ffmpeg_chain:
+        - 'atempo=0.9 (WPM 142)'
+        - 'volume=2.0 (gain)'
+        - 'agate=threshold=0.0562:ratio=10:attack=2:release=80:knee=2 (=-25dBFS STAGE 1)'
+        - 'agate=threshold=0.0056:ratio=20:attack=1:release=30 (=-45dBFS STAGE 2)'
+        - 'acompressor=threshold=-12dB:ratio=4:attack=5:release=80'
+        - 'alimiter=limit=0.79:attack=5:release=50'
+      lessons_from_v22_v39:
+        - 'BigVGAN inherent onset ramp 50-500ms — KHÔNG trim alone được'
+        - 'head_trim search_ms PHẢI ≥ 1500ms (cover long chunks)'
+        - '2-pass threshold fallback (-15 → -25) catch quiet chunks'
+        - '2-stage agate -25/-45 catches all ramp ranges'
+        - 'REACTIVE iter v22-v39 = waste; PROACTIVE STAGE 1+3+5 mandatory'
+      no_loudnorm_per_section: 'apply only on full concatenated 18-min audio'
+
+  - id: R88
+    name: 'Head onset breath ban (BigVGAN slow ramp)'
+    severity: HARD_BLOCK
+    rule: 'Chunk start phải reach voice level (-20dBFS) trong < 50ms sau pause end. Slow onset = BigVGAN inhale breath audible TRƯỚC voice → Mr.Long flag "ù ù tiếng gió tiếng thở".'
+    measure: 'Frame energy 20ms windows. Check first 50ms after pause-end: max energy phải > -20dBFS'
+    fix_method: 'aggressive_trim_head với silence_thr_db=-20 (strict) + exp fade-in 8ms (fast onset)'
+    detect_tool: 'tools/qa_post_render.py [3.4] audit_head_onset()'
+    pass_criteria: 'slow_onsets == 0 across all pause-ends'
+    fail_history:
+      v31: 'head_thr=-50dB → kept onset breath -40 đến -50dB → audible "ù 1s trước voice"'
+      v32: 'head_thr=-30dB → still 6/15 slow onsets'
+      v33: 'head_thr=-20dB → PASS expected'
+    added: '2026-06-29 09:30'
+    why: 'Mr.Long catch v32 "01:12 và 02:06 vẫn ù" = BigVGAN onset ramp 670ms từ silence → full voice. Head trim phải strict cắt breath ramp.'
+
+  - id: R89
+    name: 'Peak clip prevention (-0.1 dBFS hard limit)'
+    severity: HARD
+    rule: 'Final audio peak phải ≤ -0.1 dBFS. Peak 0.0 dB = clip distortion + downstream encoder lỗi.'
+    measure: 'np.max(np.abs(audio)) → 20*log10 → must be ≤ -0.1 dBFS'
+    fix_method: 'ffmpeg alimiter limit=0.85 (was 0.89) + volume gain trim'
+    detect_tool: 'tools/qa_post_render.py [3.2] audit_spectrum.peak_db'
+    pass_criteria: 'peak_db ≤ -0.1'
+    added: '2026-06-29 09:30'
+
+  - id: R90
+    name: 'Pre-render + post-render QA gate enforcement (HARDLOCK STAGE 1+3+5)'
+    severity: HARD_BLOCK
+    rule: 'BẮT BUỘC chạy STAGE 1 trước render + STAGE 3 sau render + STAGE 5 trước commit. KHÔNG ship audio nếu any gate FAIL.'
+    stage_1_pre_render:
+      tool: 'tools/qa_pre_render.py'
+      checks: ['R86 EOL diacritic (qa_eol_diacritic.py)']
+      blocks_on_fail: 'render execution'
+    stage_3_post_render:
+      tool: 'tools/qa_post_render.py'
+      checks:
+        - '[3.1] R87 pause silence (qa_pause_silence.py — 100ms margin, peak < -70 dBFS)'
+        - '[3.2] R89 spectrum baseline (RMS -22 to -12, peak ≤ -0.1)'
+        - '[3.3] Boundary continuity (clicks < 10 với threshold 0.8)'
+        - '[3.4] R88 head onset audit (voice reach -20dB within 50ms)'
+      blocks_on_fail: 'ship to Mr.Long'
+    stage_5_pre_commit:
+      tool: '.githooks/pre-commit'
+      checks: ['R86 + R87 + R88 + R89']
+      blocks_on_fail: 'git commit'
+    workflow:
+      proper: 'STAGE 1 → render → STAGE 3 audit → if FAIL fix + restart STAGE 1 → if PASS ship → STAGE 5 commit'
+      antipattern: 'render → ship → Mr.Long flag → fix 1 layer → re-render (em iterate v22-v33 vì thiếu gate)'
+    added: '2026-06-29 09:30'
+    why: 'Mr.Long: "đã có bài học kinh nghiệm rồi sao vẫn bị" — em REACTIVE iter 12 versions vì thiếu audit gate. R90 force PROACTIVE workflow.'
+
