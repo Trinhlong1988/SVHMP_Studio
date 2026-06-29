@@ -142,15 +142,14 @@ def aggressive_trim_tail(data, sr, search_ms=600, silence_thr_db=-30):
             last_voice_end = i + win_n  # word ends here (exact 1ms precision)
             break
 
-    # TRUNCATE AT word-end — NO residue beyond this point
-    out = data[:last_voice_end].copy()
-
-    # v32 — EXP fade 30ms (steep, NOT linear) — kills audible peak in fade region
-    # e^-12 = 0.000006 ratio: voice -10dB → -110dB at end (truly silent)
-    # Mid-fade: -10dB × ~0.001 = -70dB (well below audible -55dB threshold)
-    fade_n = int(0.030 * sr)
+    # v54 ROLLBACK to v45 (Mr.Long approved baseline)
+    # Grace +50ms + LINEAR fade 10ms (chống cụt chữ TỪ CUỐI)
+    grace_n = int(0.050 * sr)
+    keep_end = min(len(data), last_voice_end + grace_n)
+    out = data[:keep_end].copy()
+    fade_n = int(0.010 * sr)
     if 0 < fade_n < len(out):
-        ramp = np.exp(np.linspace(0, -12, fade_n)).astype(np.float32)
+        ramp = np.linspace(1.0, 0.0, fade_n).astype(np.float32)
         out[-fade_n:] *= ramp
 
     return out
@@ -173,7 +172,7 @@ def aggressive_trim_head(data, sr, search_ms=3000, silence_thr_db=-15):
         if win_rms > thr_strict:
             first_voice = max(0, i - win_n)
             break
-    # PASS 2 fallback: -25dB (quiet voice chunks)
+    # v54 ROLLBACK PASS 2 fallback: -25dB (v41 baseline)
     if first_voice is None:
         thr_fallback = 10 ** (-25 / 20)
         for i in range(0, min(search_n, n - win_n), win_n):
@@ -184,10 +183,10 @@ def aggressive_trim_head(data, sr, search_ms=3000, silence_thr_db=-15):
     if first_voice is None:
         first_voice = 0
     out = data[first_voice:].copy()
-    # v40 — fade-in 20ms linear (smoother, no thump click)
-    fade_n = int(0.020 * sr)
+    # v54 ROLLBACK to v41 exp fade-in 8ms e^-12 (Mr.Long approved)
+    fade_n = int(0.008 * sr)
     if 0 < fade_n < len(out):
-        ramp = np.linspace(0.0, 1.0, fade_n).astype(np.float32)
+        ramp = np.exp(np.linspace(-12, 0, fade_n)).astype(np.float32)
         out[:fade_n] *= ramp
     return out
 
@@ -351,14 +350,11 @@ def main():
     _prog.start('loudnorm')
     _prog.tick(1 + len(sentences) + 2, f'Loudnorm -18 LUFS + SR 22050')
     print(f"[v13] Loudnorm + force SR 22050 (no compressor)...", flush=True)
-    # v40 — Mr.Long: lục bục = clicks từ aggressive agate (ratio 10/20 attack 1-2ms)
-    # SMOOTHER 2-stage:
-    #   Stage 1: agate -25dB ratio 5 attack 8ms release 150ms knee 6 (gentle)
-    #   Stage 2: agate -45dB ratio 8 attack 5ms release 100ms knee 4 (gentle)
-    # → giảm sudden amplitude jumps → no clicks
+    # v65 MASTER LOCK Mr.Long approved: vocal +5% boost (0.95 → 1.0)
+    # RAW peak -1 to -2 dB safe room for boost. Output peak ~-0.5 dB (alimiter 0.85 catch).
     subprocess.run([
         "ffmpeg", "-y", "-i", raw_out,
-        "-af", "atempo=0.9,volume=2.0,agate=threshold=0.0562:ratio=5:attack=8:release=150:knee=6,agate=threshold=0.0056:ratio=8:attack=5:release=100:knee=4,acompressor=threshold=-12dB:ratio=4:attack=5:release=80,alimiter=limit=0.79:attack=5:release=50",
+        "-af", "atempo=0.95,volume=1.0,alimiter=limit=0.85:attack=10:release=80",
         "-ar", "22050",
         "-c:a", "pcm_s16le", args.output,
     ], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)

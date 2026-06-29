@@ -4,25 +4,53 @@
 
 [pause:800ms]
 
-Hắc Dạ Ký, [pause:250ms] chuyện kể từ cõi vô hình.
-
-[pause:600ms]
-
-Tác giả: Hắc Dạ Ký.
-
-[pause:600ms]
-
-Series: Chuyến xe cuối cùng về đâu.
-
-[pause:600ms]
-
-Ai cũng có một chuyến xe chưa nói lời tạm biệt.
+Đêm đã buông xuống. Và những điều không ai dám kể giữa đêm khuya bắt đầu thì thầm trở về.
 
 [pause:1000ms]
 
-Tập 1, [pause:250ms] câu chuyện đêm nay.
+Hắc, Dạ, Ký, những câu chuyện tâm linh.
+
+[pause:800ms]
+
+Nơi những linh hồn còn dang dở lên tiếng, nơi mỗi bóng tối đều cất giữ một bí mật riêng tư.
+
+[pause:800ms]
+
+Tất cả những câu chuyện bạn sắp nghe đều được Hắc, Dạ, Ký sáng tác và thể hiện bằng chính giọng đọc của mình.
+
+[pause:800ms]
+
+Đừng chỉ lắng nghe, hãy cảm nhận từng giây từng phút.
+
+[pause:1000ms]
+
+Hắc, Dạ, Ký, [pause:250ms] chuyện kể từ cõi vô hình.
+
+[pause:1000ms]
+
+Loạt truyện đêm khuya, Chuyến xe cuối cùng về đâu, [pause:250ms] câu chuyện không lời chia tay sau cuối.
+
+[pause:1200ms]
+
+Ai trong chúng ta cũng từng có một chuyến xe, một chuyến xe chưa kịp nói lời tạm biệt với người mình thương.
+
+[pause:1000ms]
+
+Tập một, mời các bạn nghe câu chuyện đêm nay.
+
+[pause:1000ms]
+
+Một câu chuyện về điều chưa kịp nói.
 
 [pause:1500ms]
+
+Đồng hồ nữ màu xà cừ.
+
+[pause:500ms]
+
+Chiếc kim dừng lại đúng lúc bảy giờ mười phút trong đêm.
+
+[pause:1800ms]
 
 ---
 
@@ -43,9 +71,9 @@ estimated_duration:
   note: Ngọc Ngạn pace 150-160 wpm (KHÔNG 180), thực tế audio 14.5-mười sáu phút
 arc_open_new   : ARC-ep1 (đồng hồ xà cừ chuyển sang cô gái ghế 7 mới)
 v7_changes_round1:
-  - cắt 12% câu ngắn lặp [DIALOGUE_SEG_START]"Tôi ..."[DIALOGUE_SEG_END] phần Khải Phong kể về Hạ Vy
+  - cắt 12% câu ngắn lặp [DIALOGUE_SEG_START]"Tôi ..."[DIALOGUE_SEG_END] phần Khải-Phong kể về Hạ-Vy
   - phát huy 3 hành khách: ông cụ radio + cô y tá + anh trung niên giấy gấp tư
-  - thêm 3 chi tiết kinh dị: (a) đồng hồ tự rung dù hết pin, (b) kính xe phản chiếu Hạ Vy phía sau Khải Phong, (c) kim nhích một lần khi Khải Phong nhớ
+  - thêm 3 chi tiết kinh dị: (a) đồng hồ tự rung dù hết pin, (b) kính xe phản chiếu Hạ-Vy phía sau Khải-Phong, (c) kim nhích một lần khi Khải-Phong nhớ
   - mở rộng SETUP/REVEAL/PAYOFF cho đạt 13-mười sáu phút
 v7_changes_round3_lock:
   - gộp [DIALOGUE_SEG_START]"Đồng phục xưa"[DIALOGUE_SEG_END] lặp hai lần → [DIALOGUE_SEG_START]"đồng phục y tá xưa"[DIALOGUE_SEG_END] (một lần)
@@ -55,11 +83,11 @@ v7_changes_round3_lock:
   - add SERIES_RULES lock DNA ESTABLISHED
 
 v7_changes_round2_chốt:
-  - vệt máu y tá → [DIALOGUE_SEG_START]"đồng phục xưa. Màu áo ở ngực trái sẫm hơn một chút."[DIALOGUE_SEG_END] (tinh tế, không horror image)
+  - vệt máu y tá → [DIALOGUE_SEG_START]"đồng phục xưa. Màu áo nơi ngực trái sẫm hơn một chút."[DIALOGUE_SEG_END] (tinh tế, không horror image)
   - câu hát ông cụ → [DIALOGUE_SEG_START]"một câu hát cũ, nghe không rõ lời. ...người ơi..."[DIALOGUE_SEG_END] (mơ hồ, không cướp motif)
-  - bỏ spoil [DIALOGUE_SEG_START]"rất nhiều người trước Khải Phong"[DIALOGUE_SEG_END] → [DIALOGUE_SEG_START]"một thói quen đã làm rất lâu."[DIALOGUE_SEG_END]
-  - bỏ giải thích [DIALOGUE_SEG_START]"cô hiểu vật này không thuộc về mình"[DIALOGUE_SEG_END] → chỉ [DIALOGUE_SEG_START]"đặt lại lên ghế. Rồi rút tay về."[DIALOGUE_SEG_END]
-  - thêm [pause:1200ms] sau [DIALOGUE_SEG_START]"Khải Phong biết."[DIALOGUE_SEG_END] + sau [DIALOGUE_SEG_START]"Hạ Vy mất tại nơi."[DIALOGUE_SEG_END] (im lặng radio)
+  - bỏ spoil [DIALOGUE_SEG_START]"rất nhiều người trước Khải-Phong"[DIALOGUE_SEG_END] → [DIALOGUE_SEG_START]"một thói quen đã làm rất lâu."[DIALOGUE_SEG_END]
+  - bỏ giải thích [DIALOGUE_SEG_START]"cô hiểu vật này không thuộc về mình"[DIALOGUE_SEG_END] → chỉ [DIALOGUE_SEG_START]"đặt lại lên ghế. Rồi rút tay về nhẹ nhàng như chưa từng chạm vào."[DIALOGUE_SEG_END]
+  - thêm [pause:1200ms] sau [DIALOGUE_SEG_START]"Khải-Phong biết."[DIALOGUE_SEG_END] + sau [DIALOGUE_SEG_START]"Hạ-Vy mất tại nơi."[DIALOGUE_SEG_END] (im lặng radio)
   - SECTION_EMO REVEAL lock: sad 0.25 / afraid 0.10 / melancholic 0.40 / surprised 0.05 / calm 0.20 (Ngọc Ngạn bình thản, không nghẹn)
 ```
 
@@ -67,131 +95,107 @@ v7_changes_round2_chốt:
 
 ## 1. HOOK (≤120 từ — 0:00—0:20) [beat_1: TÒ MÒ]
 
-Tháng tư Hà Nội. Mưa từ bảy giờ tối, không dứt.
+Một đêm cuối tháng tư, mưa đổ xuống thủ đô Hà Nội từ lúc bảy giờ tối, kéo dài đến tận khuya vẫn còn rả rích vọng vào trong màn đêm yên lặng tới não nề.
 
-Khải Phong ngồi ghế số bảy.
+Khải-Phong đang ngồi trên ghế số bảy của chuyến xe đêm.
 
-Trong tay anh, một chiếc đồng hồ cô gái.
+Trong tay anh, một chiếc đồng hồ nữ dáng nhỏ xinh xắn lắm.
 
-Vỏ xà cừ. Mặt số La Mã in chìm trên nền cừ.
+Vỏ làm bằng xà cừ óng ánh, mặt số La Mã màu đen nổi bật trên nền vỏ ngọc trai sáng.
 
-Kim đồng hồ dừng lúc bảy giờ mười.
+Cây kim đồng hồ đã dừng lại từ rất lâu, [pause:250ms] đúng vào con số bảy giờ mười phút của đêm, im lìm bất động, hệt như một pho tượng nhỏ làm bằng kim loại đen.
 
 Anh không hiểu sao mình lại mang nó theo.
 
-Hình như chiều nay anh kéo ngăn kéo.
+Hình như chiều nay anh đã mở ngăn tủ đáy ra, [pause:250ms] chính là nơi anh đã giấu nó suốt tám năm qua đến tận hôm nay.
 
-Phía ngoài cửa kính, mưa rơi đều.
+Phía ngoài cửa kính, mưa vẫn đều đặn rơi xuống mặt đường.
 
-Đèn trần xe vàng. Sáng vừa đủ thấy mặt người.
+Đèn trần xe hắt ánh vàng nhạt xuống, sáng vừa đủ để nhìn rõ khuôn mặt từng người.
 
-Mười một vị khách khác.
+Trên xe còn mười một vị khách khác ngồi cùng anh trong im lìm thinh không một tiếng nào.
 
-Họ ngồi yên. Như đã ngồi đã lâu rồi.
+Họ ngồi rất yên lặng, dáng vẻ như đã ở đó từ một khoảng thời gian xa xôi mà chẳng còn ai trên xe này còn nhớ rõ là vào lúc nào trong đêm.
 
-Khải Phong chưa từng đi xe này.
+Anh không nhớ đã từng đi chuyến xe đêm này hay chưa.
 
-Anh cũng không nhận ra mình lên lúc nào.
+Bản thân anh cũng không nhận ra mình đã bước lên xe từ lúc nào.
 
 ---
 
 ## 2. SETUP (~480 từ — 0:20—3:30) [beat_2: BẤT AN]
 
-Xe chạy chậm lại.
+Xe chạy chậm dần. Bác tài đặt hai tay trên vô-lăng, găng tay trắng, không nói gì.
 
-Bác tài hai tay trên vô-lăng.
-
-Găng tay trắng.
-
-Bác không nói.
-
-Khải Phong nhìn ra cửa kính.
+Anh ngước nhìn cửa kính.
 
 Sương ngoài cửa kính dày dần.
 
-Hà Nội đêm tháng tư.
+Hà Nội đêm tháng tư, [pause:250ms] cái đêm mà anh vẫn còn nhớ mãi cho đến tận hôm nay.
 
-Hà Nội đêm Khải Phong vẫn nhớ.
+Có một biển báo trắng lướt qua, [pause:250ms] chữ trên đó mờ đi vì hơi nước, nhưng vẫn đọc rõ dòng chữ: Cầu Long Biên còn cách đây hai ki-lô-mét nữa thôi.
 
-Có một biển báo trắng lướt qua. Chữ mờ vì hơi nước.
-
-[DIALOGUE_SEG_START]"Cầu Long Biên, [pause:250ms] hai ki-lô-mét."[DIALOGUE_SEG_END]
-
-Khải Phong nhíu mắt.
+Anh nhíu mắt.
 
 Anh không có lý do gì để qua cầu đêm nay.
 
-Hay là có?
+Hay là cũng có lý do nào đó?
 
-Lâu lắm rồi anh không tưởng đến cây cầu này.
+Lâu lắm rồi anh không nghĩ đến cây cầu này.
 
-Bác tài liếc gương chiếu hậu.
+Bác tài liếc gương chiếu hậu, [pause:250ms] ánh mắt dừng lại nơi anh một thoáng, rồi quay đi như chưa từng nhìn.
 
-Bác không nói.
+Anh xoay chiếc đồng hồ trong lòng bàn tay.
 
-Khải Phong xoay chiếc đồng hồ trong lòng bàn tay.
+Vỏ xà cừ thấy lạnh buốt cả lòng tay anh. Mặt số La Mã đen. Kim dừng bảy giờ mười.
 
-Vỏ xà cừ lạnh. Mặt số La Mã in chìm trên nền cừ. Kim dừng bảy giờ mười.
-
-Có lẽ pin hết.
-
-Có lẽ vì cái khác.
+Có lẽ pin đã hết, hoặc vì một lý do nào khác.
 
 [pause:300ms] Bỗng nhiên, chiếc đồng hồ rung khẽ một lần.
 
-Một cái rung nhỏ. Như tim đập một nhịp.
+Một cái rung khe khẽ rất nhanh thôi. Như tim đập một cái thật mạnh sau đó.
 
-Khải Phong cứng tay.
+Anh cứng cả bàn tay.
 
 Đồng hồ này tám năm không thay pin.
 
-Khải Phong cúi xuống nhìn. Kim vẫn dừng bảy giờ mười.
+Anh cúi xuống nhìn, [pause:250ms] kim vẫn dừng bảy giờ mười, không nhúc nhích.
 
-Không nhúc nhích.
+Khải-Phong chợt nhớ ra, [pause:250ms] anh đã giữ chiếc đồng hồ này suốt tám năm trời, từ cái đêm sân bay hôm ấy.
 
-Khải Phong nhớ rồi. Anh đã giữ chiếc đồng hồ này tám năm.
-
-Tám năm cất trong ngăn kéo đáy.
+Tám năm cất trong ngăn tủ đáy.
 
 Mỗi sáng anh đi qua bàn. Anh không mở ngăn.
 
-Mỗi tối anh về. Khải Phong cũng không hề mở ngăn.
+Mỗi tối anh về, cũng không hề mở ngăn.
 
-Chỉ đôi khi đêm khuya.
+Chỉ đôi khi vào lúc khuya.
 
-Khi không ngủ được.
+Khi không tài nào chợp mắt được lâu hơn.
 
-Khải Phong mới kéo ngăn kéo ra. Khải Phong nhìn nó một thoáng. Rồi anh đóng lại nhẹ nhàng.
+Anh mới mở ngăn tủ ra, nhìn nó một thoáng, rồi đóng lại nhẹ nhàng. Không bao giờ chạm vào, [pause:250ms] chỉ tối nay anh mới mang nó theo người.
 
-Không bao giờ cầm.
+Anh cũng không hiểu vì sao đêm nay mình lại làm thế. Bên ngoài, tiếng mưa rơi nhịp nhàng, hòa cùng tiếng máy xe rì rì trầm thấp.
 
-Chỉ tối nay anh mới cầm.
+Có ai đó ho khẽ phía cuối xe.
 
-Anh cũng không hiểu tại sao.
+Anh không quay đầu nhìn ra phía sau lưng.
 
-Tiếng mưa rơi đều bên ngoài.
+Trên ghế ba, một ông cụ ôm chiếc đài radio cũ kỹ trong tay.
 
-Tiếng máy xe đều.
+Một chiếc đài radio mang dáng thời xa xôi. Vỏ nhựa đã ngả vàng theo thời gian năm tháng.
 
-Có ai đó ho khẽ ở phía sau.
-
-Khải Phong không quay.
-
-Trên ghế ba, một ông cụ ôm chiếc radio nhỏ.
-
-Radio xưa. Vỏ nhựa ngả vàng.
-
-Người ông cụ không bật radio. Ông cụ chỉ ngồi ôm nó vào lòng.
+Ông cụ không bật radio, chỉ ngồi ôm nó vào lòng.
 
 Như sợ buông tay ra, thứ trong lòng mình sẽ biến mất.
 
-Trên ghế chín, một cô gái mặc đồng phục y tá xưa.
+Trên ghế chín, một cô gái mặc bộ đồng phục y tá thời xưa.
 
-Màu áo ở ngực trái sẫm hơn một chút.
+Màu áo nơi ngực trái sẫm hơn một chút.
 
 Cô không nhìn ai.
 
-Tay cô đặt trên đùi. Tay sạch.
+Đôi bàn tay trắng tinh, gọn gàng đặt yên, [pause:250ms] như chưa từng chạm vào điều gì trên cõi đời này.
 
 Trên ghế mười hai, một anh trung niên cầm tờ giấy gấp tư.
 
@@ -203,9 +207,7 @@ Mỗi vài giây, ngón cái anh khẽ miết qua nếp gấp.
 
 Mọi người đều mang một thứ gì đó.
 
-Khải Phong nhìn xuống đồng hồ.
-
-Khải Phong thấy mình như bé lại.
+Anh cúi mặt vào đồng hồ, thấy mình như đang bé đi rất nhiều.
 
 Bé như cậu sinh viên năm hai.
 
@@ -213,121 +215,97 @@ Bé như cậu sinh viên năm hai.
 
 ## 3. INCIDENT (~480 từ — 3:30—6:30) [beat_3: ĐỒNG CẢM]
 
-Cô gái ghế tám nhìn sang Khải Phong.
+Cô gái ghế tám nhìn sang anh.
 
-Cô gái tóc cột thấp sau gáy. Áo khoác len màu xám nhạt.
+Cô gái tóc cột thấp sau gáy. Áo khoác len mỏng màu xám tro.
 
-Cô gái không hỏi thêm câu nào.
+Cô không nói gì, chỉ lặng nhìn chiếc đồng hồ.
 
-Cô gái chỉ lặng nhìn chiếc đồng hồ.
+Anh ngẩng đầu lên.
 
-Khải Phong ngẩng lên.
+— Này cô gái, cô đang nhìn ngắm cái gì đấy?
 
-— Này cô, cô nhìn gì vậy?
+Cô gái ngước nhìn anh rồi nở một nụ cười rất dịu dàng và hỏi nhỏ với giọng nhẹ tênh:, [pause:250ms] Đồng hồ đẹp lắm, vỏ xà cừ thật phải không thưa chú?
 
-Cô gái mỉm cười nhẹ nhàng.
+— Dạ, đúng là vỏ xà cừ thật đó.
 
-— Đồng hồ đẹp. Xà cừ phải không ạ?
+— Vậy của ai thế chú có thể kể cho cháu nghe không?
 
-— Dạ.
-
-— Của ai vậy chú?
-
-Khải Phong im lặng. Rất lâu. Lâu lắm.
+Anh im lặng hồi lâu, đến mức cô ấy phải sốt cả lòng chờ đợi câu trả lời.
 
 — Của một người bạn.
 
-Cô gái gật đầu chậm rãi.
+Cô gái gật đầu chầm chậm một cái.
 
-— Bạn của chú giờ ở đâu?
+— Chắc là một người bạn xưa rất quan trọng với chú phải không?
 
-Khải Phong nhìn ra ngoài. Mặt kính đọng giọt mưa nhỏ.
+Anh quay nhìn ra ngoài cửa kính, nơi giọt mưa đọng lại và lớp sương dày thêm sau làn kính mờ.
 
-Sương đặc thêm sau lớp kính mờ.
+— Cô ấy mất tám năm trước, trong một tai nạn.
 
-— Cô ấy đã đi từ lâu rồi.
+Cô gái không hỏi thêm câu nào.
 
-Cô gái không hỏi thêm nữa.
+Cô gái chỉ ngồi yên lặng, hai tay đan vào nhau.
 
-Cô gái chỉ ngồi yên lặng. Hai tay cô đan vào nhau đặt trên đùi.
-
-Khải Phong thở ra một hơi dài.
-
-Anh không định kể.
-
-[pause:500ms] Nhưng anh kể.
+Anh buông một hơi dài. Định im lặng, [pause:500ms] nhưng cuối cùng vẫn lên tiếng.
 
 — Cô ấy là bạn lớp tôi hồi cấp ba.
 
-— Tên cô ấy là Hạ Vy.
+— Tên cô ấy là Hạ-Vy.
 
-— Tôi thương Hạ Vy từ năm lớp mười một, không nói.
+— Tôi thương cô ấy từ năm lớp mười một, không nói.
 
-— Năm cuối Hạ Vy được học bổng đi du học Hoa Kỳ. Tôi đưa Hạ Vy ra sân bay.
+— Năm cuối cô ấy được học bổng đi du học Hoa Kỳ. Tôi đưa cô ấy ra sân bay.
 
-— Tôi mua chiếc đồng hồ này tặng Hạ Vy. Định nói câu tôi đã định nói tám năm.
+— Tôi mua chiếc đồng hồ này tặng cô ấy. Và nói câu mà tôi đã ấp ủ suốt tám năm trời.
 
-Khải Phong ngừng.
-
-Tiếng máy xe rì rì.
+Anh ngừng kể, chỉ còn tiếng máy xe rì rầm vọng đến tai anh.
 
 Có chiếc xe khác chạy qua, đèn pha quét vào cửa kính một giây.
 
-Rồi tối lại.
+Rồi mọi thứ trở nên tối thui.
 
 Trên ghế ba, ông cụ chậm rãi xoay núm radio.
 
-Một tiếng rè nhẹ. Rồi một câu hát cũ vọng ra, nghe không rõ lời.
+Một tiếng rè khe khẽ vang lên trong tai. Rồi một câu hát cũ vọng ra, nghe không rõ lời.
 
-[pause:300ms] [DIALOGUE_SEG_START]"...người ơi..."[DIALOGUE_SEG_END]
+[pause:300ms] [DIALOGUE_SEG_START]"...Người ơi, người ở đừng về..."[DIALOGUE_SEG_END]
 
-Khải Phong khựng người.
-
-Hạ Vy từng hát một câu rất giống vậy. Khải Phong không nhớ rõ là khi nào.
+Anh khựng người. Hạ-Vy từng hát một câu rất giống như vậy, [pause:250ms] anh không nhớ rõ là khi nào.
 
 Ông cụ chậm rãi tắt radio.
 
-Như vô tình. Như không vô tình.
+Như vô tình mà trở thành hữu ý.
 
 Cô gái ngồi ghế tám đợi anh kể tiếp.
 
-Khải Phong nuốt nước bọt.
+Cổ họng anh nghẹn đắng trong giây lát.
 
-— Sân bay hôm đó mưa.
-
-— Hạ Vy tới muộn vì kẹt xe ngập nước. Tôi đứng cổng B, Hạ Vy chạy lên.
+— Sân bay hôm đó trời đổ mưa, cô ấy tới muộn vì kẹt xe ngập nước. Tôi đứng ở cổng B, cô ấy hớt hải chạy lên.
 
 — Tôi đưa hộp đồng hồ.
 
-— Hạ Vy cười. Hạ Vy nói: [DIALOGUE_SEG_START]"Mình về xong sẽ nói chuyện với cậu nha."[DIALOGUE_SEG_END]
+— Cô ấy cười rồi nói: [DIALOGUE_SEG_START]"Khi nào mình về, mình sẽ nói chuyện với cậu nha."[DIALOGUE_SEG_END]
 
-— Tôi gật. Tôi tự nhủ sẽ nói khi Hạ Vy về.
+— Tôi gật. Tôi tự nhủ sẽ nói khi cô ấy về.
 
-— Hạ Vy ôm tôi một cái. Rồi Hạ Vy chạy vào cổng.
+— Cô ấy ôm tôi một cái. Rồi cô ấy chạy vào cổng.
 
-Khải Phong mở mắt.
+Anh mở mắt.
 
-— Đó là lần cuối tôi gặp Hạ Vy.
+— Đó là lần cuối tôi gặp cô ấy.
 
-Trên ghế chín, cô y tá ngước lên.
+Trên ghế chín, cô y tá ngước lên, nhìn về phía anh rồi khẽ lắc đầu một cái.
 
-Cô y tá nhìn về phía Khải Phong.
+Một cái lắc đầu thật khoan thai. Như đã từng đứng cạnh một ai đó khi hung tin báo đến.
 
-Cô y tá khẽ lắc đầu một cái.
+Anh không hiểu hết, nhưng cảm thấy cổ họng nghèn nghẹn đi.
 
-Một cái lắc rất chậm. Như đã từng đứng cạnh một ai đó khi tin báo đến.
-
-Khải Phong không hiểu hết. Nhưng anh thấy cổ họng nghẹn.
-
-Bác tài liếc gương chiếu hậu.
+Bác tài đưa mắt liếc nhanh vào gương chiếu hậu phía trên.
 
 — Con đã nhớ ra chưa?
 
-Khải Phong cứng người.
-
-Anh không trả lời ngay.
-
-Anh nhìn chiếc đồng hồ trong tay.
+Anh cứng người, không trả lời ngay, [pause:250ms] chỉ nhìn chiếc đồng hồ trong tay.
 
 Mãi về sau anh mới biết, [pause:250ms] câu hỏi đó dành riêng cho mình anh.
 
@@ -335,31 +313,23 @@ Mãi về sau anh mới biết, [pause:250ms] câu hỏi đó dành riêng cho m
 
 ## 4. REVEAL (~620 từ — 6:30—10:15) [beat_3→beat_4: NGHẸN]
 
-Khải Phong nhắm mắt.
+Anh nhắm mắt. Trong đầu anh, Hạ-Vy đang đứng tại cổng B, [pause:250ms] mặc áo gió xanh nhạt, tóc cột cao.
 
-Trong đầu anh, Hạ Vy đang đứng ở cổng B.
+Cô ấy cười, vẫy tay.
 
-Hạ Vy mặc áo gió xanh nhạt.
+Bóng Hạ-Vy khuất dần sau cánh cửa kính.
 
-Tóc Hạ Vy cột cao.
+Anh nhìn đồng hồ tay, [pause:250ms] kim chỉ đúng bảy giờ mười tối hôm ấy.
 
-Hạ Vy cười. Hạ Vy vẫy tay.
+Anh ngồi tại quán cà phê sân bay đến tận mười giờ khuya.
 
-Hạ Vy mất hút sau cánh cửa kính.
+Anh tự nhủ chắc cô ấy đang trên máy bay.
 
-Bảy giờ mười tối.
+Anh nhắn cho cô ấy: [DIALOGUE_SEG_START]"Sang bên đó nhớ ăn uống đầy đủ, giữ ấm, cẩn thận đường xa."[DIALOGUE_SEG_END]
 
-Khải Phong nhìn đồng hồ tay. Kim chỉ bảy giờ mười.
+Cô ấy không trả lời.
 
-Anh ngồi ở quán cà phê sân bay đến mười giờ.
-
-Anh tự nhủ: chắc Hạ Vy đang ngồi máy bay.
-
-Anh nhắn Hạ Vy: [DIALOGUE_SEG_START]"Sang đó nhớ ăn cơm. Đừng quên uống nước."[DIALOGUE_SEG_END]
-
-Hạ Vy không trả lời.
-
-Anh tự nhủ: Hạ Vy đang bay.
+Anh thầm hy vọng chuyến bay sẽ êm xuôi đến nơi.
 
 Mười giờ tối thứ Sáu.
 
@@ -367,87 +337,71 @@ Sáng ngày thứ Bảy không có tin.
 
 Trưa ngày thứ Bảy không có tin.
 
-Chiều ngày thứ Bảy mẹ Hạ Vy gọi anh.
+Chiều ngày thứ Bảy mẹ cô ấy gọi anh.
 
-Tiếng mẹ Hạ Vy khàn.
+Tiếng mẹ cô ấy khàn.
 
-— Khải Phong ơi…
+— Khải-Phong ơi…
 
-Khải Phong biết.
+Anh biết.
 
 [pause:1200ms]
 
-Khải Phong chưa nghe hết câu, Khải Phong đã biết.
+Anh chưa nghe hết câu, đã biết.
 
-Mẹ Hạ Vy nói:
+Mẹ cô ấy nói:
 
-— Máy bay tới nơi an toàn. Hạ Vy xuống sân bay JFK. Bắt taxi về nhà người dì.
+— Máy bay đáp xuống bình an. Cô ấy xuống sân bay Kennedy ở New York. Rồi bắt taxi về nhà người dì.
 
 — Taxi gặp xe tải. Trên đường cao tốc.
 
-— Hạ Vy mất tại nơi.
+— cô ấy đã mất ngay tại nơi đó rồi.
 
 [pause:1200ms]
 
-Khải Phong ngừng nói.
+Anh ngừng nói, cô gái ghế tám đặt tay lên đùi, không hỏi gì, chỉ ngồi đợi anh nói tiếp.
 
-Cô gái ghế tám đặt tay lên đùi.
+Anh buông một hơi dài.
 
-Cô không hỏi gì.
+— Tôi nhớ ra rồi đấy cháu ạ.
 
-Cô gái chỉ ngồi đợi anh nói tiếp.
+[pause:600ms] Tiếng kim đồng hồ trong tay anh nhích đúng một nhịp duy nhất rất nhẹ. Anh cúi xuống nhìn — kim vẫn dừng bảy giờ mười, nhưng anh nghe rõ tiếng đó vừa vang lên trong không gian khuya.
 
-Khải Phong thở ra.
+Giọng anh trầm xuống, dịu lại, [pause:250ms] như sợ cô ấy đang say giấc nồng trong căn phòng bên kia tường.
 
-— Tôi nhớ ra rồi.
-
-[pause:600ms] Tiếng kim đồng hồ trong tay Khải Phong nhích đúng một nhịp. Một nhịp duy nhất.
-
-Tách.
-
-Khải Phong cúi xuống nhìn.
-
-Kim vẫn dừng bảy giờ mười.
-
-Nhưng anh nghe rõ một tiếng tích vừa rồi.
-
-Tiếng anh nhẹ nhàng. Như sợ Hạ Vy đang ngủ ở phòng bên.
-
-— Bảy giờ mười.
-
-— Là lúc Hạ Vy mất.
+— Bảy giờ mười là lúc cô ấy mất.
 
 — Tôi giữ đồng hồ này.
 
-— Kim dừng đúng giờ Hạ Vy mất.
+— Kim dừng đúng giờ Hạ-Vy mất.
 
-Cô gái ghế tám cụp mắt.
+Cô gái ghế tám khẽ nghiêng đầu xuống.
 
-Bác tài liếc gương chiếu hậu.
+Bác tài đảo mắt nhìn nhanh vào gương phía trên cabin.
 
 Bác không nói.
 
-Khải Phong nhìn xuống chiếc đồng hồ.
+Anh nhìn xuống chiếc đồng hồ.
 
-— Tôi không nói được câu đó với Hạ Vy.
+— Tôi không nói được câu đó với cô ấy.
 
-— Tám năm tôi không mở ngăn kéo.
+— Tám năm tôi không hề mở ngăn tủ ấy ra.
 
-— Tôi sợ. Tôi sợ mở ngăn ra, kim đồng hồ vẫn dừng bảy giờ mười.
+— Tôi vẫn còn sợ... [pause:400ms] sợ đến tận hôm nay. [pause:500ms] Sợ mở ngăn tủ ra... [pause:300ms] mà thấy kim đồng hồ vẫn dừng nguyên tại bảy giờ mười phút... [pause:300ms] trong đêm sâu thẳm.
 
-— Tôi sợ nhận ra Hạ Vy thật sự không quay lại.
+— Tôi sợ nhận ra cô ấy thật sự không quay lại.
 
 Anh siết tay lại quanh chiếc đồng hồ.
 
-— Trớ trêu thay. Tôi mua đồng hồ để Hạ Vy nhớ giờ về.
+— Trớ trêu thay. Tôi mua đồng hồ để cô ấy nhớ giờ về.
 
-— Cuối cùng đồng hồ chỉ nhớ giờ Hạ Vy đi.
+— Cuối cùng chiếc đồng hồ này chỉ còn nhớ đúng cái giờ mà cô ấy ra đi.
 
-Thì ra trong ngăn kéo đáy đó, chỉ còn lại tiếng tích tắc của một câu chưa kịp nói.
+Thì ra trong ngăn tủ đáy đó, chỉ còn lại tiếng tích tắc của một câu chưa kịp nói.
 
-Cô gái ghế tám đưa tay che miệng.
+Cô gái ghế tám đưa tay che miệng khe khẽ, để ngăn một tiếng nức nở rất nhỏ vang lên trong cabin.
 
-Khải Phong ngẩng lên.
+Khải-Phong ngẩng đầu lên.
 
 Mắt anh chạm vào cửa kính phía bác tài.
 
@@ -457,221 +411,149 @@ Một là anh.
 
 Phía sau anh, sát vai, có một bóng cô gái.
 
-Tóc cột cao vút. Áo gió xanh nhạt.
+Tóc cột thật cao, mặc áo gió xanh nhạt một màu.
 
-Khải Phong quay phắt lại.
+Anh quay phắt lại, [pause:250ms] ghế phía sau trống không. Không thấy bóng dáng một ai hết.
 
-Ghế phía sau anh trống.
+Anh ngoái nhìn về cửa kính, hình bóng vừa rồi đã tan biến, [pause:250ms] chỉ còn lại mình anh, ngồi một mình trên chiếc ghế số bảy giờ đã trống không.
 
-Không ai cả.
-
-Khải Phong quay đầu nhìn về cửa kính.
-
-Bóng kia không còn.
-
-Chỉ còn anh, ngồi một mình trên ghế số bảy.
-
-Anh thở ra một hơi rất dài.
+Anh buông một hơi rất dài.
 
 Một giọt nước rơi xuống mặt đồng hồ.
 
-Khải Phong không biết là mưa hay là gì khác.
+Anh không biết là mưa, hay là gì khác.
 
 Trên ghế mười hai, anh trung niên chậm rãi mở tờ giấy gấp tư.
 
-Một dòng chữ tay ngắn. Khải Phong đọc nó một lần. Khải Phong gấp tờ giấy lại như lúc đầu.
+Một dòng chữ viết tay rất ngắn gọn lắm. Người trung niên đọc nó một lần, rồi lặng lẽ gập tờ giấy đó lại như lúc đầu, đặt bàn tay phải lên ngực, [pause:250ms] nơi trái tim đang đập từng nhịp khe khẽ thôi.
 
-Khải Phong đặt một bàn tay lên ngực.
-
-Bác tài chậm rãi liếc gương chiếu hậu một lần nữa.
+Bác tài ngước nhanh lên gương chiếu hậu thêm một thoáng.
 
 Sương ngoài cửa kính tách ra.
 
-Một ngọn đèn vàng hiện lên ở cuối con dốc.
+Một ngọn đèn vàng hiện lên nơi cuối con dốc.
 
 ---
 
 ## 5. PAYOFF (~440 từ — 10:15—13:00) [beat_4 vang → transition dư âm]
 
-Khải Phong đứng dậy.
+Anh từ từ đứng lên rồi bước đi. Bàn tay anh buông lỏng tự khi nào, [pause:250ms] chiếc đồng hồ trượt khỏi lòng tay, rơi êm xuống nệm chiếc ghế bỏ trống số bảy, vỏ xà cừ phản chiếu ánh đèn cabin một thoáng.
 
-Khải Phong thở chậm lại. Như có ai đỡ vai anh từ phía sau.
+Anh không buồn nhặt nó lên, [pause:250ms] cũng không nhận ra mình vừa đánh rơi điều gì.
 
-Anh ôm chiếc đồng hồ trong lòng bàn tay.
+Lồng ngực anh chậm lại, [pause:250ms] như có ai đỡ vai anh từ phía sau. Anh dõi mắt theo cửa xe, ánh nhìn rất xa.
 
-Anh không khóc.
-
-Anh chỉ nhìn ra cửa xe.
-
-Đèn vàng le lói. Cách xe khoảng năm chục mét.
-
-Cầu Long Biên.
+Đèn vàng le lói cách xe khoảng năm chục mét, [pause:250ms] Cầu Long Biên.
 
 Trên ghế ba, ông cụ tắt hẳn ngón tay ra khỏi núm radio.
 
-Ông cụ cúi đầu một lần thật chậm. Rất nhẹ nhàng.
+Ông cụ nghiêng đầu một cái thật khoan thai. Rất nhẹ nhàng.
 
 Trên ghế chín, cô y tá ngẩng lên.
 
-Cô không nói. Cô chỉ đưa hai ngón tay lên thái dương rồi hạ xuống.
+Cô không nói gì, chỉ đưa hai ngón tay lên thái dương rồi hạ xuống.
 
 Như một cử chỉ đã thành thói quen.
 
-Trên ghế mười hai, anh trung niên gập tờ giấy gấp tư lại.
-
-Anh đặt nó vào túi áo ngực.
-
-Cô gái ghế tám đưa tay ra.
-
-Cô không chạm vào Khải Phong.
-
-Cô chỉ đặt bàn tay lên ghế cạnh anh.
+Cô gái ghế tám đưa tay ra, [pause:250ms] không chạm vào anh, chỉ đặt bàn tay lên ghế cạnh anh.
 
 Như một lời chào.
 
-Khải Phong quay lại.
+Anh quay lại, nhìn về phía cô gái ghế tám và khẽ gật đầu, [pause:250ms] một cái gật khe khẽ rất nhanh.
 
-Khải Phong nhìn về phía cô gái ghế tám. Khải Phong khẽ gật đầu.
+— Cảm ơn cô gái nhé, chú xin phép xuống đây.
 
-Một cái gật rất nhẹ.
+Cô gái khẽ nghiêng đầu.
 
-— Cảm ơn cô.
+Anh bước về phía cánh cửa xe.
 
-Cô gái khẽ cụp mắt xuống.
+Đi ngang qua ghế số ba, ông cụ ngước nhìn một giây rồi quay đi. Ghế chín, cô y tá dõi theo bóng anh, [pause:250ms] ánh mắt buồn.
 
-Khải Phong bước về phía cửa.
-
-Khải Phong đi ngang qua ghế thứ ba. Ông cụ ngẩng lên một giây, rồi cúi.
-
-Khải Phong đi ngang qua ghế chín. Cô y tá đưa mắt nhìn theo. Mắt cô buồn.
-
-Anh đi ngang ghế mười hai. Anh trung niên không ngẩng.
-
-Xe chậm lại. Cửa từ từ mở.
+Chiếc xe đêm dần đi chậm lại, rồi cánh cửa xe khẽ mở ra một cách nhẹ nhàng.
 
 Mưa hắt vào sàn xe một chút.
 
-Mùi sông Hồng. Mùi phù sa sông Hồng.
+Mùi sông Hồng. Mùi phù sa quê hương.
 
-Khải Phong quay đầu nhìn bác tài.
+Anh quay đầu nhìn bác tài.
 
-Bác tài liếc gương.
+Bác tài buông một cái nhìn rất ngắn lên gương phía trước.
 
 — Con đã nhớ ra chưa?
 
-Khải Phong gật.
+Anh gật một cái rất nhẹ, không nói gì.
 
-Anh không nói gì.
+Đến bậc cuối, anh bước xuống, đi về phía đèn vàng cuối con dốc.
 
-Khải Phong từ từ đứng dậy. Tay anh vẫn ôm chiếc đồng hồ.
+Bóng anh nhỏ dần trong màn mưa đêm, [pause:250ms] cửa xe đóng lại, tiếng bản lề khẽ vang lên rồi tan.
 
-Đến bậc cuối, [pause:250ms] anh dừng. Mắt nhìn rất xa. Bàn tay anh buông lỏng tự khi nào. Chiếc đồng hồ trượt khỏi lòng tay, [pause:250ms] rơi êm xuống ghế số bảy. Vỏ xà cừ phản ánh đèn cabin một thoáng.
+Trong cabin xe, không gian chìm vào trong tĩnh không.
 
-Anh không quay đầu nhặt. Anh không nhận ra mình đánh rơi điều gì.
+Ông cụ vẫn ôm radio. Cô y tá vẫn đặt đôi bàn tay trắng lên đùi không nhúc nhích. Anh trung niên vẫn giữ tờ giấy gấp tư trong túi áo. Cô gái ghế tám lặng nhìn về phía chiếc ghế trống bên ghế cô ngồi.
 
-Anh bước xuống bậc cuối cùng.
-
-Anh đi về phía đèn vàng.
-
-Bóng anh nhỏ dần.
-
-Còn lại tiếng mưa.
-
-Cửa xe đóng lại. Tiếng bản lề nhẹ.
-
-Trong cabin xe, không gian chìm vào im lặng.
-
-Ông cụ ôm radio như xưa.
-
-Cô y tá đặt tay sạch lên đùi như xưa.
-
-Anh trung niên giữ giấy gấp tư trong túi áo.
-
-Cô gái ghế tám cúi đầu.
-
-Cô nhìn ghế trống số bảy.
-
-Ghế còn ấm.
-
-Cô không nói gì.
+Ghế vẫn còn nguyên hơi ấm áp, cô không nói thêm lời nào.
 
 Bác tài chậm rãi đặt tay lên vô-lăng.
 
-Xe chạy tiếp.
-
-Cô gái mới ghế bảy ngẩng đầu lên.
-
-Trên mặt ghế số bảy ấy.
-
-Có một vật nhỏ.
-
-Cô gái khẽ nhíu cặp mày.
-
-Cô gái khẽ cúi người xuống.
-
-Cô gái nhặt vật ấy lên.
-
-Chiếc đồng hồ nữ vỏ xà cừ. Kim chỉ bảy giờ mười.
-
-Cô gái đặt chiếc đồng hồ lại lên ghế.
-
-Rồi rút tay về.
+Xe chạy tiếp trên đường khuya mịt mù. Không một lần xe dừng.
 
 ---
 
 ## 6. CLIFFHANGER (~210 từ — 13:00—14:30) [beat_5: DƯ ÂM mandatory]
 
-Ghế số bảy trống được hai giây.
+Vậy mà chỉ vài giây sau, trên chiếc ghế số bảy đã có một cô gái trẻ ngồi sẵn từ lúc nào, [pause:250ms] tóc xõa ngang vai, khoác áo gió xanh dương trong sáng. Cô không nhận ra mình lên xe vào lúc nào.
 
-Rồi có một cô gái trẻ ngồi vào.
+Nhìn xuống ghế cạnh mình, cô thấy chiếc đồng hồ đang nằm đó, [pause:250ms] vỏ xà cừ, kim chỉ bảy giờ mười.
 
-Cô gái tóc xõa ngang vai.
+Cô gái nhặt nó lên trước mặt, nhíu mắt nhìn thật chăm chú.
 
-Áo gió xanh nhạt.
+Cô gái nói khẽ trong tiếng thì thầm hỏi như nói với chính mình:, [pause:250ms] Của tôi à, sao tôi lại không nhớ ra…
 
-Cô không nhận ra mình lên xe lúc nào.
-
-Cô gái nhìn xuống ghế cạnh mình.
-
-Chiếc đồng hồ đang nằm trên ghế cạnh cô.
-
-Vỏ xà cừ. Kim chỉ bảy giờ mười.
-
-Cô gái nhặt vật lên trước mặt.
-
-Cô gái nhíu mắt nhìn thật cẩn thận.
-
-— Của tôi à?
-
-Cô gái nói khẽ nhỏ nhẹ.
-
-— Tôi không nhớ…
-
-Cô đưa đồng hồ lên trước mặt.
+Cô siết chặt nó trong lòng bàn tay.
 
 [pause:500ms] Chiếc đồng hồ rung khẽ một lần trong tay cô.
 
-Cô gái khẽ rùng mình một thoáng.
+Cô gái khẽ rùng mình, ánh mắt thoáng dại đi.
 
 Như nhớ ra điều gì rất xa.
 
-Cô áp đồng hồ vào ngực.
+Cô áp đồng hồ vào ngực mình.
 
-Bên ngoài cửa kính,
+Bên ngoài cửa kính, sương đêm lại khép kín dần dần.
 
-sương lại khép lại.
+Đèn vàng tắt dần, chỉ còn lại tiếng mưa rơi rả rích.
 
-Đèn vàng tắt.
+Và một câu chưa kịp nói, dừng lại lúc bảy giờ mười.
 
-Còn lại tiếng mưa.
+Bác tài ngước nhẹ lên gương, ánh mắt hướng về phía cô gái vừa ngồi xuống chiếc ghế số bảy đó. Ông già nhẹ giọng thì thầm:
 
-Và một câu chưa kịp nói, dừng lại ở bảy giờ mười.
+— Chưa tới lúc đâu cháu ạ.
 
-Bác tài liếc gương.
+[pause:2000ms]
 
-— Chưa tới lúc.
+Đồng hồ rồi sẽ điểm sang một ngày mới...
 
-[chuông ngân một nhịp, 1.0s vang nhẹ]
+[pause:1000ms]
+
+Nhưng đâu đó trong bóng tối... vẫn còn những câu chuyện chưa ai từng kể ra.
+
+[pause:1000ms]
+
+Nếu một đêm nào đó... bạn lại nghe thấy tiếng gió gọi tên mình...
+
+[pause:1000ms]
+
+Hãy nhớ rằng...
+
+[pause:1000ms]
+
+Hắc, Dạ, Ký vẫn đang chờ... để kể tiếp câu chuyện chưa từng có hồi kết.
+
+[pause:1500ms]
+
+Hắc, Dạ, Ký xin hẹn gặp lại quý vị trong những câu chuyện của cõi vô hình.
+
+[pause:2000ms]
 
 ---
 
@@ -685,11 +567,11 @@ Bác tài liếc gương.
 
 | Mục | v6 | v7 |
 |---|---|---|
-| Cắt 10-15% câu ngắn lặp "[DIALOGUE_SEG_END]Tôi …[DIALOGUE_SEG_START]" phần Khải Phong kể Hạ Vy | 12 câu đơn lặp pattern "[DIALOGUE_SEG_END]Tôi …[DIALOGUE_SEG_START]" (line 191-228) | 6 câu gộp, mạch chảy hơn |
+| Cắt 10-15% câu ngắn lặp "[DIALOGUE_SEG_END]Tôi …[DIALOGUE_SEG_START]" phần Khải-Phong kể cô ấy | 12 câu đơn lặp pattern "[DIALOGUE_SEG_END]Tôi …[DIALOGUE_SEG_START]" (line 191-228) | 6 câu gộp, mạch chảy hơn |
 | Phát huy 3 hành khách | giới thiệu xong là biến mất | ông cụ bật radio "[DIALOGUE_SEG_END]...người ơi...[DIALOGUE_SEG_START]" / cô y tá lắc đầu + cử chỉ thói quen (hai ngón thái dương) / anh trung niên mở giấy đọc 1 dòng rồi gập |
 | Đồng hồ tự rung dù hết pin | không có | hai lần: SETUP "[DIALOGUE_SEG_END]rung khẽ một lần như tim đập[DIALOGUE_SEG_START]" + CLIFFHANGER "[DIALOGUE_SEG_END]rung khẽ trong tay cô[DIALOGUE_SEG_START]" |
-| Kính xe phản chiếu Hạ Vy phía sau Khải Phong | không có | REVEAL "[DIALOGUE_SEG_END]Trong tấm kính mờ hơi nước, có hai bóng người. Phía sau anh, sát vai, có một bóng cô gái. Tóc cột cao vút. Áo gió xanh nhạt.[DIALOGUE_SEG_START]" |
-| Kim đồng hồ nhích một lần | không có | REVEAL "[DIALOGUE_SEG_END]Tiếng kim đồng hồ trong tay Khải Phong nhích đúng một nhịp. Một nhịp duy nhất. Tách." |
+| Kính xe phản chiếu Hạ-Vy phía sau anh | không có | REVEAL "[DIALOGUE_SEG_END]Trong tấm kính mờ hơi nước, có hai bóng người. Phía sau anh, sát vai, có một bóng cô gái. Tóc cột cao vút. Áo gió xanh nhạt.[DIALOGUE_SEG_START]" |
+| Kim đồng hồ nhích một lần | không có | REVEAL "[DIALOGUE_SEG_END]Tiếng kim đồng hồ trong tay anh nhích đúng một nhịp. Một nhịp duy nhất. Tách." |
 | Thời lượng 13-mười sáu phút | 12.9 (estimate) → 8.92 (thực render) | 15.hai phút @142 wpm (~2420 từ) |
 
 ## NARRATION METRICS (v7 target)
@@ -697,7 +579,7 @@ Bác tài liếc gương.
 - avg_sentence_words: ~7.5 (target 7-9) ✓
 - punch_ratio: ~12% ✓
 - regret_lines: 6+ giữ lại
-- horror_lines: 3 mới, [pause:250ms] (a) đồng hồ rung, (b) kính xe phản chiếu Hạ Vy, (c) kim nhích "Tách"
+- horror_lines: 3 mới, [pause:250ms] (a) đồng hồ rung, (b) kính xe phản chiếu cô gái ấy, (c) kim nhích "Tách"
 - sensory_lines: 8+, [pause:250ms] vỏ xà cừ lạnh, mùi sông Hồng, mùi phù sa sông Hồng, đèn pha quét, sương đặc, ngực trái áo y tá sẫm hơn, mép giấy sờn, núm radio tiếng rè
 
 ## EMOTION CURVE v7 (per-section emo_vector giữ nguyên script render)
@@ -705,20 +587,20 @@ Bác tài liếc gương.
 | Section | emo focus | New element |
 |---|---|---|
 | HOOK | surprised 0.40 + calm 0.30 | giữ |
-| SETUP | afraid 0.30 + calm 0.30 | + đồng hồ rung khẽ (afraid spike micro) + chi tiết 3 hành khách |
-| INCIDENT | sad 0.25 + calm 0.40 | + ông cụ radio + cô y tá lắc đầu (sad spike) |
-| REVEAL | **melancholic 0.40 + calm 0.20** + sad 0.25 + afraid 0.10 (round 2 chốt — Ngọc Ngạn bình thản) | + kim nhích "Tách[DIALOGUE_SEG_START]" + kính xe phản chiếu Hạ Vy |
-| PAYOFF | melancholic 0.35 + calm 0.35 | + 3 hành khách tiễn Khải Phong (deepen warmth) |
+| SETUP | afraid 0.30 + calm.30 | + đồng hồ rung khẽ (afraid spike micro) + chi tiết 3 hành khách |
+| INCIDENT | sad 0.25 + calm.40 | + ông cụ radio + cô y tá lắc đầu (sad spike) |
+| REVEAL | **melancholic 0.40 + calm.20** + sad 0.25 + afraid 0.10 (round 2 chốt — Ngọc Ngạn bình thản) | + kim nhích "Tách[DIALOGUE_SEG_START]" + kính xe phản chiếu Hạ-Vy |
+| PAYOFF | melancholic.35 + calm.35 | + 3 hành khách tiễn Khải-Phong (deepen warmth) |
 | CLIFFHANGER | melancholic 0.30 + calm 0.35 | + đồng hồ rung trong tay cô gái mới (callback loop) |
 
 ---
 
 # NOTES cho Mr. Long tinh chỉnh
 
-1. **Câu hát ông cụ "[DIALOGUE_SEG_END]Người ơi người ở đừng về[DIALOGUE_SEG_START]"**, [pause:250ms] em chọn câu quan họ phổ thông cho tiễn biệt. Mr. Long có thể đổi sang câu Hạ Vy thường hát (nếu memory bible có).
-2. **Cô y tá "[DIALOGUE_SEG_END]đồng phục y tá cũ, ngực trái sẫm hơn một chút[DIALOGUE_SEG_START]"**, [pause:250ms] round 2 chốt: bỏ "[DIALOGUE_SEG_END]vệt máu khô[DIALOGUE_SEG_START]" (quá horror image), giữ tinh tế. Vẫn ngầm gợi cô từng trực ca tai nạn (gắn lore Hạ Vy mất) qua cử chỉ hai ngón thái dương + lắc đầu chậm.
-3. **Kim nhích "[DIALOGUE_SEG_END]Tách[DIALOGUE_SEG_START]"**, [pause:250ms] em đặt ngay sau câu "[DIALOGUE_SEG_END]Tôi nhớ ra rồi[DIALOGUE_SEG_START]" thay vì sau dialog "[DIALOGUE_SEG_END]Bảy giờ mười là lúc Hạ Vy mất[DIALOGUE_SEG_START]", [pause:250ms] để tiếng "[DIALOGUE_SEG_END]Tách[DIALOGUE_SEG_START]" trở thành CHUÔNG báo memory thật sự về.
-4. **Kính xe phản chiếu Hạ Vy**, [pause:250ms] anh đặt SAU dialog reveal, không đặt trước. Vì nếu trước → spoil. Sau → confirm cho người nghe rằng Hạ Vy thực sự đến đón Khải Phong.
+1. **Câu hát ông cụ "[DIALOGUE_SEG_END]Người ơi người ở đừng về[DIALOGUE_SEG_START]"**, [pause:250ms] em chọn câu quan họ phổ thông cho tiễn biệt. Mr. Long có thể đổi sang câu cô ấy thường hát (nếu memory bible có).
+2. **Cô y tá "[DIALOGUE_SEG_END]đồng phục y tá cũ, ngực trái sẫm hơn một chút[DIALOGUE_SEG_START]"**, [pause:250ms] round 2 chốt: bỏ "[DIALOGUE_SEG_END]vệt máu khô[DIALOGUE_SEG_START]" (quá horror image), giữ tinh tế. Vẫn ngầm gợi cô từng trực ca tai nạn (gắn lore Hạ-Vy mất) qua cử chỉ hai ngón thái dương + lắc đầu chậm.
+3. **Kim nhích "[DIALOGUE_SEG_END]Tách[DIALOGUE_SEG_START]"**, [pause:250ms] em đặt ngay sau câu "[DIALOGUE_SEG_END]Tôi nhớ ra rồi[DIALOGUE_SEG_START]" thay vì sau dialog "[DIALOGUE_SEG_END]Bảy giờ mười là lúc cô gái ấy mất[DIALOGUE_SEG_START]", [pause:250ms] để tiếng "[DIALOGUE_SEG_END]Tách[DIALOGUE_SEG_START]" trở thành CHUÔNG báo memory thật sự về.
+4. **Kính xe phản chiếu cô ấy**, [pause:250ms] anh đặt SAU dialog reveal, không đặt trước. Vì nếu trước → spoil. Sau → confirm cho người nghe rằng cô ấy thực sự đến đón Khải-Phong.
 5. **Bác tài 2 câu**, [pause:250ms] giữ y nguyên ("[DIALOGUE_SEG_END]Con đã nhớ ra chưa?[DIALOGUE_SEG_START]" ×2 + "[DIALOGUE_SEG_END]Chưa tới lúc.[DIALOGUE_SEG_START]" ×1) như v6.
 6. **bell_count = 1** giữ nguyên (chuông cuối CLIFFHANGER). KHÔNG thêm chuông phụ vì sẽ break ARC plant rule.
 

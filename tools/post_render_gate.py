@@ -21,9 +21,11 @@ sys.stdout.reconfigure(encoding='utf-8') if hasattr(sys.stdout, 'reconfigure') e
 SVHMP = Path(r'D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio')
 
 INTRO_ELEMENTS = [
-    'Hắc Dạ Ký — chuyện kể từ cõi vô hình',
-    'Tác giả và giọng đọc: Hắc Dạ Ký',
-    'Loạt truyện Chuyến xe cuối cùng về đâu',
+    # 2026-06-29 R108 brand sync — comma version "Hắc, Dạ, Ký" (TTS pronunciation fix Mr.Long approved)
+    'Hắc, Dạ, Ký',  # brand presence (any form)
+    'chuyện kể từ cõi vô hình',
+    'Loạt truyện',
+    'Chuyến xe cuối cùng về đâu',
     'chuyến xe chưa kịp nói lời tạm biệt',
 ]
 

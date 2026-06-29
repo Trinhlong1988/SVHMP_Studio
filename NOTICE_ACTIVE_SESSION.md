@@ -1,3 +1,72 @@
+# 🎵 PING — HDK MUSIC LIBRARY READY (29/6/2026, 22:39)
+
+> **CMD 2 / CMD KHÁC ĐỌC**: thư viện nhạc HDK đã sẵn sàng để assign vào EP tập.
+
+## 📦 HDK Music Library — D:\hdk_music_library\
+
+| Item | Số lượng | Path |
+|---|---|---|
+| **Raw tracks Suno V5** | 56 files (20 prompts A,B) | `D:\hdk_music_library\A1_*` → `B10_*\` |
+| **Raw tracks Suno V6 intense** | 32 files (20 prompts C,D) | `D:\hdk_music_library\C1_*` → `D10_*\` |
+| **EPs mixed final** | **60 EPs** | `D:\hdk_music_library\_episodes\ep_001\` → `ep_060\` |
+| Total size | 175 MB raw + 1.1 GB EPs | |
+
+## 🎭 Style coverage (7 tiêu chí Mr.Long lock 29/6)
+
+✅ ám ảnh / rùng rợn / đặc tả / sâu lắng / buồn / violin da diết / cao trào  
+✅ Dynamic arc: soft → climactic → soft (no flat)  
+✅ Unique mood × instrument per prompt (audit_uniqueness.py PASS)  
+✅ Lyrics field = `[Instrumental]` only (rule B1 BUGS_FIXED)  
+✅ Style field 200 chars + negative prompts đầy đủ
+
+**V5 (A+B)**: haunting sad — mournful/melancholic/sorrowful/regret narrative  
+**V6 (C+D)**: intense dồn dập — pounding/cascading/screaming/wailing/dirge dense
+
+## 🎬 EP Format
+
+Mỗi `ep_NNN_full.mp3`:
+- Pattern: **A-B-C-A-B-C** (3 unique tracks × loop 2 lần)
+- Crossfade 2s giữa segments
+- LUFS -16 (YouTube standard)
+- Duration: 7.8 → 17.5 min (avg ~13 min)
+- Metadata: `_episodes/ep_NNN/metadata.json` chứa tracks list + LUFS + crossfade params
+
+## 🔧 Pipeline scripts
+
+`C:\Users\Administrator\suno-library-builder\scripts\`
+- `orchestrator.py` — gen + harvest + organize (Playwright CDP Chrome real)
+- `harvest_all.py` — pickup tất cả songs từ workspace
+- `organize_staging.py` — match title VN + move library
+- `mix_ep.py` — concat 3 tracks loop 2x + crossfade + LUFS
+- `audit_csv.py` + `audit_uniqueness.py` — QA gate
+- `catalog.py` — track DONE/PENDING + skip duplicate
+
+## 📋 CMD 2 USAGE — assign tracks vào HDK EP
+
+Nếu CMD 2 dùng `assignment_planner.py` (memory `feedback_hdk_audio_no_repeat_rules.md` R1-R3 cooldown ≥5/10 EP):
+
+```python
+# Pool: 60 EPs sẵn dùng trực tiếp (mỗi EP có 3 tracks unique)
+# Hoặc pick từ 88 raw tracks self-mix khác pattern
+LIBRARY_EPS = "D:\\hdk_music_library\\_episodes"
+LIBRARY_RAW = "D:\\hdk_music_library"
+```
+
+R1-R3 cooldown: 60 EPs đã apply auto (cooldown 10 groups trong mix_ep.py auto_pick_tracks). Có thể assign **1 EP audio mỗi HDK tập** không trùng cross-tập trong ~10 tập gần nhất.
+
+## ❌ Còn THIẾU (báo nếu cần)
+- 940 EPs còn lại (ep_061-1000): Mr.Long DỪNG batch mix, chưa scale
+- Suno credits còn ~1,608 (dư 1,608 cho gen mới nếu cần V7+)
+
+## Project ref
+- CLAUDE.md: `C:\Users\Administrator\suno-library-builder\CLAUDE.md`
+- BUGS_FIXED: B1 lock rule Lyrics [Instrumental]
+- VERSION: round 2 (2026-06-29)
+
+Memory updated: `feedback_hdk_suno_music_criteria.md` + `feedback_suno_lyrics_style_rule.md`
+
+---
+
 # 🚨 NOTICE — ACTIVE SESSION ROUND 19.2 (28/6/2026)
 
 > **CMD KHÁC ĐỌC NGAY** trước khi modify project.

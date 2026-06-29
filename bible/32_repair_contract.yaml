@@ -1,0 +1,85 @@
+# R161 — REPAIR CONTRACT (ChatGPT-verified, Mr.Long lock 30/6)
+# Ràng buộc khi sửa episode: KHÔNG được rewrite tự do.
+
+repair_contract_schema:
+  description: "Mọi propose fix PHẢI tuân schema này. Vi phạm = REJECT."
+
+  target:
+    required: [section, paragraph_or_line]
+    optional: [sentence, chunk_idx]
+
+  locked:
+    facts: true              # KHÔNG đổi sự kiện (tuổi/tên/timeline/địa danh)
+    timeline: true           # KHÔNG đổi mốc thời gian (7:10, 8 năm)
+    character_memory: true   # KHÔNG đổi character knows/doesn't know
+    object_state: true       # KHÔNG đổi vị trí vật (đồng hồ ở đâu)
+    immutable_dialogues: true  # 2 câu Bác tài lock
+
+  allowed_actions:
+    - replace_word           # đổi 1 từ
+    - merge_sentence         # gộp 2 câu thành 1
+    - split_sentence         # tách 1 câu thành 2
+    - change_pronoun         # đổi đại từ (anh/cô/ông)
+    - reword_phrase          # đổi cụm từ ≤5 từ (vary action verb)
+    - add_pause_marker       # thêm [pause:Xms]
+    - insert_breath          # thêm breath cue
+
+  forbidden_actions:
+    - rewrite_scene
+    - rewrite_paragraph_full
+    - change_fact
+    - change_character_age
+    - change_character_relation
+    - change_timeline_event
+    - change_dialogue_line_lock  # Bác tài lines
+    - remove_locked_object       # đồng hồ, radio, giấy gấp tư
+
+  post_verify:
+    must_pass:
+      - R86
+      - R92b
+      - R110
+      - R111
+      - R113
+      - R117
+      - R128
+      - R141
+    optional:
+      - R114
+      - R115
+      - R116
+
+  rollback_if_fail: true       # CRITICAL — nếu post_verify FAIL → quay lại bản cũ
+
+  cost_limit:
+    max_words_changed: 50      # sửa quá 50 từ = REJECT (Repair Cost rule)
+    max_facts_touched: 0       # KHÔNG được động vào fact
+
+# Severity mapping
+severity_levels:
+  Critical: "Block ship — phải fix"
+  Major: "Should fix — Mr.Long approve trước skip"
+  Minor: "Could fix — không block"
+  Cosmetic: "Polish — không bắt buộc"
+
+# Example repair plan
+example_repair_plan:
+  id: RP-001
+  trigger_rule: R113
+  target:
+    section: REVEAL
+    paragraph: 4
+    sentence: 2
+  diagnosis: "'đưa mắt' x7 quá nhiều"
+  proposed_fix:
+    action: reword_phrase
+    old: "Bác tài đưa mắt qua kính chiếu hậu một thoáng nữa."
+    new: "Bác tài ngước nhanh lên gương chiếu hậu một lần nữa."
+  cost:
+    words_changed: 4
+    facts_touched: 0
+  post_verify_results:
+    R86: PASS
+    R113: PASS (đưa mắt giảm xuống 6)
+  decision: APPROVED
+  applied_at: "2026-06-30T01:09:00"

@@ -1575,3 +1575,685 @@ changelog:
     added: '2026-06-29 13:24'
     why: 'Em lãng phí 12 phút re-render khi chỉ cần đổi volume. RAW cached reusable.'
 
+
+
+# ============================================================
+# SESSION 30/6 — RULES R110-R116 (Mr.Long lock sau EP01 35 fix)
+# ============================================================
+
+rule_R110_narrative_continuity:
+  description: "Object location tracker + scene physics + character count consistency"
+  enforce: "tools/qa_continuity.py GATE PASS before render"
+  trigger_examples:
+    - "L488 'tay vẫn ôm đồng hồ' contradict L444 'rơi xuống ghế'"
+    - "2 cô gái ngồi ghế 7 (PAYOFF + CLIFFHANGER duplicate)"
+
+rule_R111_tts_phonetic_safe:
+  description: "BigVGAN phù phù safe-word database — aspirated 'h' sau open vowel"
+  enforce: "tools/qa_phonetic_safe.py GATE PASS before render"
+  forbidden_patterns:
+    - "thở ra một hơi → use 'buông một hơi'"
+    - "Hơi thở chậm lại → use 'Lồng ngực anh chậm lại'"
+    - "tới nơi an toàn → use 'đáp xuống bình an'"
+    - "cao vút. → use 'thật cao,'"
+    - "ghế trống số bảy đó. → use 'chiếc ghế bỏ trống số bảy,'"
+    - "kể lại bao giờ → use 'kể ra lần nào'"
+
+rule_R112_cross_section_repeat:
+  description: "Phrase ≥4 words KHÔNG được lặp xuyên section, except intentional anchor"
+  enforce: "extend qa_honorific.py (TBD)"
+
+rule_R113_action_verb_repeat:
+  description: "1 action verb phrase ≥3 từ KHÔNG được lặp >2 lần/EP cùng wording"
+  enforce: "tools/qa_repeat_action.py GATE PASS before render"
+  varied_required: "Lặp >2 lần PHẢI varied wording (chủ ý + uyển chuyển)"
+
+rule_R114_clarity_mandatory:
+  description: "Hành động + lời nói phải RÕ NGHĨA, trừ chủ ý ẩn cốt truyện hoặc lời nói ẩn ý gây tò mò"
+  enforce: "Manual review post-edit"
+  examples:
+    - "L300 'khi tin báo đến' → 'khi hung tin báo đến' (rõ)"
+    - "L534 'Chưa đến lúc nào đâu cháu của ông' (awkward) → 'Chưa tới lúc đâu cháu ạ'"
+
+rule_R115_real_world_fact_accuracy:
+  description: "Logic toán/vật lý/địa lý/tên thật/văn học/thời tiết PHẢI đúng thực tế. KHÔNG bịa."
+  enforce: "Manual fact-check + reference real-world sources"
+  domains:
+    - "math: số liệu chính xác (8 năm, 11 vị khách, 7h10)"
+    - "physics: gravity, motion, xe dừng/chạy logic"
+    - "geography: Hà Nội, Cầu Long Biên, sân bay Kennedy đúng real-world"
+    - "names: Khải-Phong / Hạ-Vy / tên địa danh consistent"
+    - "weather: Hà Nội tháng tư có mưa rả rích plausible"
+    - "literature: cốt logic tropes consistent"
+
+rule_R116_literary_grammar_structure:
+  description: "Áp dụng cấu trúc văn học VN chuẩn + từ điển VN"
+  enforce: "Manual + future qa_grammar.py"
+  requirements:
+    - "Ngôi xưng hô consistent (chú/cháu/anh/cô/ông)"
+    - "Subject + verb + object structure chuẩn"
+    - "Động từ + tính từ + trạng từ precise"
+    - "Từ điển VN authoritative — không tự bịa từ"
+  consistency_rules:
+    character_descriptions: "1 nhân vật = 1 mô tả nhất quán cross-EP"
+    example: "Hạ-Vy = 'áo gió xanh nhạt + tóc cột cao' (L316 + L414 sync)"
+
+# Session 30/6 commit lock
+session_30_6_master_lock:
+  ep01_fixes_total: 35
+  ep01_qa_passes:
+    - R86 EOL: 0 violations
+    - R92b/R95/R107 honorific: PASS
+    - R113 action repeat: PASS
+    - R111 phonetic safe: PASS
+    - R110 continuity: PASS
+  cam_ket: "Pre-render mandatory PASS 5 QA gates. Em SELF-VERIFY R86+R113 sau mỗi propose fix."
+
+
+# ============================================================
+# SESSION 30/6 — ROADMAP R117-R143 từ Mr.Long blueprint .docx
+# Status: planned (not built) — em cam kết tuần này
+# ============================================================
+
+rule_R117_fact_database:
+  status: TBD
+  description: "bible/27_fact_db.yaml — character age/height/relations/locations/times lock immutable"
+  enforce: "writer NEVER modify, QA diff-check fact_db vs episode"
+
+rule_R118_timeline_qa:
+  status: TBD
+  description: "tools/qa_timeline.py — scan 22:00→23:00→22:30 inconsistency"
+  enforce: "GATE PASS before render"
+
+rule_R119_geography_distance:
+  status: TBD
+  description: "Real-world fact (Cầu Long Biên km, sân bay Kennedy, đi bộ vs phút)"
+
+rule_R120_physics_cause_effect:
+  status: TBD
+  description: "Đốt nhà → nhà nguyên / đèn pin hết → sáng = SAI"
+
+rule_R121_weather_logic:
+  status: TBD
+  description: "Mưa to → không ai ướt = SAI"
+
+rule_R122_story_arc_audit:
+  status: TBD
+  description: "Hook/Inciting/Rising/Midpoint/Crisis/Climax/Resolution/Cliffhanger present check"
+
+rule_R123_character_arc_yaml:
+  status: TBD
+  description: "bible/28_character_arcs.yaml — Motivation/Goal/Fear/Conflict per char"
+
+rule_R124_emotional_curve:
+  status: TBD
+  priority: CRITICAL
+  description: "Cấm 100% căng suốt. Curve 20→40→55→35→60→90 — biểu đồ cảm xúc."
+
+rule_R125_reveal_control:
+  status: TBD
+  description: "Cấm reveal 'X là ma' phút 3 — 30 phút mới được reveal"
+
+rule_R126_foreshadow_payoff_chekhov:
+  status: TBD
+  description: "Vật/chi tiết xuất hiện đầu PHẢI dùng cuối (Chekhov's Gun)"
+
+rule_R127_sentence_rhythm:
+  status: TBD
+  description: "Length variance 8/17/5/23/11 — KHÔNG đều 18 từ"
+
+rule_R128_anti_generic_ai:
+  status: TBD
+  priority: CRITICAL
+  description: "Cấm 'Một cảm giác khó tả' / 'Không ai biết rằng' / 'Trong khoảnh khắc ấy' / 'Có lẽ' (≤2 lần/EP)"
+  
+rule_R129_continuity_ledger:
+  status: TBD
+  description: "object state by timestamp yaml — đèn pin 22:10 cầm, 22:20 rơi, 22:35 KHÔNG xuất hiện"
+
+rule_R130_scene_contract_yaml:
+  status: TBD
+  description: "bible/29_scene_contracts.yaml — mục tiêu/cấm/phải cài/cảm xúc per scene"
+
+rule_R131_verb_diversity:
+  status: TBD
+  description: "nói/nói/nói/nói = rewrite. Verb pool varied."
+
+rule_R132_dialogue_attribution:
+  status: TBD
+  description: "Sau ≥3 lượt dialogue phải có '...X nói' để biết ai nói"
+
+rule_R133_speech_style_per_char:
+  status: TBD
+  description: "Bà cụ KHÔNG nói formal. Trẻ em KHÔNG dùng academic."
+
+rule_R134_symbol_consistency:
+  status: TBD
+  description: "Symbol (chuông/đồng hồ/giấy) consistent đầu/giữa/cuối"
+
+rule_R135_color_consistency:
+  status: TBD
+  description: "Áo đỏ → áo xanh = lỗi (trừ thay đồ rõ ràng)"
+
+rule_R136_voiceprint:
+  status: TBD
+  description: "Mỗi nhân vật unique cadence + word choice"
+
+rule_R137_folklore_consistency:
+  status: TBD
+  description: "Ma Việt KHÔNG vampire/werewolf/holy water (trừ chủ ý)"
+
+rule_R138_style_fingerprint:
+  status: TBD
+  description: "sentence_avg 9-16 / name_density low / dialogue 15-25% / horror_density rising"
+
+rule_R139_golden_sample:
+  status: TBD
+  description: "3-5 EP mẫu chuẩn LOCK reference cho regression test"
+
+rule_R140_publish_score:
+  status: TBD
+  priority: CRITICAL
+  description: "Gate ship: Logic≥90, Language≥85, Repetition≤threshold, TTS≥90, Hook≥85"
+
+rule_R141_diff_check:
+  status: TBD
+  description: "Bản rewrite vs cũ — flag fact drift"
+
+rule_R142_kill_switch:
+  status: TBD
+  priority: CRITICAL
+  description: "Lỗi nặng (timeline/reveal sớm/fact mâu thuẫn) → QUAY LẠI outline. KHÔNG rewrite tiếp"
+
+rule_R143_multi_pass_agent:
+  status: TBD
+  priority: CRITICAL
+  description: "Tách Writer + Logic QA + Language QA + Emotion QA + Publisher. Mỗi agent 1 việc. KHÔNG em vừa viết vừa QA."
+
+# Mr.Long blueprint commitment 30/6
+blueprint_commitment:
+  source: "C:/Users/Administrator/Desktop/New Microsoft Word Document.docx"
+  current_coverage: "25-30% (10 rule technical / 40+ rule production)"
+  cam_ket: "Tuần này (3-7 ngày) build R117-R130 critical first. R131-R143 enhancement sau."
+
+
+# ============================================================
+# SESSION 30/6 — RULES R141-R150 (Mr.Long blueprint 15 SE principles)
+# ============================================================
+
+rule_R141_ssot_diff_check:
+  status: BUILT
+  tool: tools/qa_ssot_diff.py
+  description: "Post-edit episode.md diff vs bible/27_fact_db.yaml. Flag fact drift."
+  implements: Principle 3 (SSOT) + Principle 4 (AI không quyết Fact)
+
+rule_R142_kill_switch:
+  status: PARTIAL (publish_score gate fails → exit 1, but render orchestrator chưa enforce)
+  description: "Publish Score FAIL → ABORT pipeline. Quay lại Writer, KHÔNG vá."
+  implements: Principle 11 (Failure Recovery)
+  TODO: Update svhmp_v13_render.py main() to subprocess.run publish_score.py + sys.exit if fail
+
+rule_R143_multi_pass_agent:
+  status: PARTIAL (cmd/ prompts written, infrastructure spawning TBD)
+  description: "Separation of Concerns — CMD QA LOGIC + LANGUAGE + AUDIO specialized"
+  files: cmd/CMD_QA_LOGIC.md + cmd/CMD_QA_LANGUAGE.md + cmd/CMD_QA_AUDIO.md
+  implements: Principle 1 (Separation of Concerns)
+
+rule_R146_per_chunk_render:
+  status: BUILT (render_chunk.py + patch_audio_chunk.py)
+  description: "Render CHỈ 1 chunk lỗi, splice into existing WAV. Không re-render whole section."
+  implements: Principle 9 (Minimal Edit)
+  TODO: Update svhmp_v13_render.py emit chunk_timestamps.json
+
+rule_R147_error_handbook:
+  status: BUILT (bible/30_error_handbook.yaml)
+  description: "Structured error knowledge base — id/loại/nguyên nhân/cách sửa/regression test"
+  implements: Principle 10 (Continuous Learning)
+
+rule_R148_constraint_generation:
+  status: PARTIAL (spec.json + emo_vector có)
+  description: "Constraint-based: word count + climax position + reveal lock"
+  TODO: bible/29_scene_contracts.yaml per scene constraint
+
+rule_R149_episode_state_machine:
+  status: BUILT (tools/episode_state.py + _state.yaml per EP)
+  description: "State machine: draft → outline_approved → ... → published. KHÔNG bỏ qua bước."
+  implements: Principle 2 (State Machine)
+
+rule_R150_suggest_fix:
+  status: TBD
+  description: "Mỗi QA tool báo: lỗi gì + ở đâu + vì sao + rule nào + gợi ý sửa (varied)"
+  implements: Principle 8 (Explainability)
+
+# Test harness
+test_infrastructure:
+  test_harness: tests/test_harness.py
+  rounds_default: 10
+  current_status: 10/10 PASS ALL 8 tools, KHÔNG flake (30/6 02:00)
+  command: "python tests/test_harness.py --rounds 10"
+
+# CMD agent prompts
+cmd_agents:
+  CMD_LEAD: em (Opus 4.7 1M) — coordinator, render orchestrator, fix decision
+  CMD_QA_LOGIC: cmd/CMD_QA_LOGIC.md — R110/R117/R141
+  CMD_QA_LANGUAGE: cmd/CMD_QA_LANGUAGE.md — R86/R92b/R113/R114/R116/R128
+  CMD_QA_AUDIO: cmd/CMD_QA_AUDIO.md — R87/R88/R89 + Whisper compare (TBD)
+
+# Session 30/6 02:00 master lock
+session_30_6_phase2_complete:
+  built_tools:
+    - tools/qa_ssot_diff.py (R141)
+    - tools/render_chunk.py (R146)
+    - tools/patch_audio_chunk.py (R146)
+    - tools/episode_state.py (R149)
+    - tools/qa_fact_check.py (R117 — built earlier today)
+    - tools/qa_anti_generic.py (R128 — built earlier)
+    - tools/qa_continuity.py (R110 — built earlier)
+    - tools/qa_phonetic_safe.py (R111 — built earlier)
+    - tools/qa_repeat_action.py (R113 — built earlier)
+    - tools/publish_score.py (R140 — built earlier, updated with R141)
+    - tools/log_ping.py (audit trail)
+    - tests/test_harness.py (10-vòng test runner)
+  built_data:
+    - bible/27_fact_db.yaml (R117 fact DB EP01)
+    - bible/30_error_handbook.yaml (R147 structured errors)
+    - cmd/CMD_QA_LOGIC.md (R143 multi-pass agent prompt)
+    - cmd/CMD_QA_LANGUAGE.md
+    - cmd/CMD_QA_AUDIO.md
+  qa_status: 8 QA tools all PASS + 10-vòng test STABLE no flake
+
+
+# ============================================================
+# R170 — ZERO-HALLUCINATION MODE (Mr.Long lock 30/6 02:09 — TOP PRIORITY)
+# Mr.Long: "khi vận hành luôn đặt hiến pháp lên hàng đầu"
+# Source: C:/Users/Administrator/Desktop/New Microsoft Word Document.docx
+# ============================================================
+
+rule_R170_zero_hallucination:
+  priority: TOP_OF_ALL_RULES
+  description: "Em là TECHNICAL AUDITOR (KHÔNG Developer / KHÔNG PM). Kiểm toán + xác minh trạng thái thực tế."
+
+  forbidden_words_without_evidence:
+    - PASS
+    - DONE
+    - BUILT
+    - VERIFIED
+    - STABLE
+    - PRODUCTION READY
+    - "Có vẻ như..."
+    - "Có thể..."
+    - "Nhiều khả năng..."
+    - "Tôi nghĩ..."
+    - "Chắc là..."
+    - "Đã ổn."
+    - "Đã hoàn thành."
+    - "Có thể dùng production."
+
+  required_substitutes:
+    - NOT VERIFIED
+    - NOT TESTED
+    - SOURCE NOT FOUND
+    - NO TEST EVIDENCE
+    - "Evidence insufficient."
+
+  evidence_priority_order:
+    1: Source Code
+    2: Test Code
+    3: Test Output
+    4: Generated Artifact
+    5: Runtime Log
+    6: Documentation
+    7: User Description (lowest)
+  rule: "KHÔNG được đảo thứ tự"
+
+  module_report_format:
+    required_fields:
+      - name
+      - status: [NOT_STARTED, IN_PROGRESS, BUILT, TESTED, VERIFIED, PRODUCTION_READY, NOT_VERIFIED]
+      - evidence:
+          file: "<absolute path>"
+          class: "<class name or N/A>"
+          function: "<func name or N/A>"
+          test: "<test file path or NO_TEST>"
+          output: "<expected output or NO_OUTPUT>"
+          log: "<log path or NO_LOG>"
+      - missing: "<chính xác còn thiếu gì>"
+      - confidence: [HIGH, MEDIUM, LOW]
+      - reason: "<giải thích vì sao>"
+
+  five_questions_before_conclusion:
+    - "Tôi có thấy source code không?"
+    - "Tôi có thấy test không?"
+    - "Tôi có thấy log không?"
+    - "Tôi có thấy artifact không?"
+    - "Tôi có đang suy đoán không?"
+  five_questions_enforcement: "Nếu BẤT KỲ câu nào trả lời KHÔNG → kết luận PHẢI là NOT_VERIFIED"
+
+  user_claim_handling:
+    user_says_da_build: "KHÔNG được tin. Phải xác minh source file."
+    user_says_da_test: "KHÔNG được tin. Phải tìm pytest/unittest/coverage/test report."
+    user_says_100_100: "Phải yêu cầu hoặc kiểm tra report/log/metrics/artifact. Không có → NOT_VERIFIED."
+
+  enforcement:
+    session_start_protocol: "LOAD bible/00 R170 TRƯỚC tất cả rule khác"
+    runtime: "Mỗi report từ em PHẢI dùng AUDIT format. Không free-form claim."
+    violation_consequence: "Mr.Long lệnh hủy gói nếu em vi phạm zero-hallucination"
+
+# Session 30/6 02:09 — Mr.Long ship ZERO-HALLUCINATION blueprint
+session_30_6_r170_lock:
+  source_doc: C:/Users/Administrator/Desktop/New Microsoft Word Document.docx (mtime 2026-06-30 02:09:40, 213.8 KB)
+  scope: "TẤT CẢ vận hành về sau"
+  test_required: "Trước render EP01, em PHẢI audit-format report toàn bộ Phase 2 build với evidence"
+
+
+# ============================================================
+# R171 — TECHNICAL AUDIT PROTOCOL v1.0 (Mr.Long lock 30/6 02:11 — UPGRADES R170)
+# Source: C:/Users/Administrator/Desktop/New Microsoft Word Document.docx
+# ============================================================
+
+rule_R171_technical_audit_protocol_v1:
+  supersedes: R170
+  role: Independent Technical Auditor (NOT developer / NOT assistant)
+  goal: "accuracy, NOT optimism"
+  golden_rule: "Every conclusion MUST be supported by evidence. No evidence = No conclusion."
+
+  absolute_prohibitions:
+    - Assume
+    - Guess
+    - Infer implementation from descriptions
+    - Infer test results
+    - Infer production readiness
+    - Mark PASS without evidence
+    - Mark VERIFIED without evidence
+    - Mark COMPLETED from user claims alone
+
+  evidence_hierarchy:
+    1: Source Code
+    2: Configuration
+    3: Unit Test
+    4: Integration Test
+    5: Test Output
+    6: Runtime Log
+    7: Generated Artifact
+    8: User Statement (LOWEST)
+  user_priority_rule: "User statements are ALWAYS the lowest priority"
+
+  verification_levels:
+    - NOT_STARTED
+    - IN_PROGRESS
+    - SOURCE_EXISTS
+    - SOURCE_REVIEWED
+    - UNIT_TESTED
+    - INTEGRATION_TESTED
+    - VERIFIED
+    - PRODUCTION_READY
+    - NOT_VERIFIED
+  rule: "Do not invent additional statuses"
+
+  required_module_output_fields:
+    - Module
+    - Status
+    - Evidence:
+        Source: "<path>"
+        Test: "<path or NO_TEST>"
+        Output: "<path or NO_OUTPUT>"
+        Log: "<path or NO_LOG>"
+    - Missing
+    - Confidence: [HIGH, MEDIUM, LOW, UNKNOWN]
+    - Reason
+
+  production_ready_rule:
+    requires_all:
+      - "✓ Source exists"
+      - "✓ Tests exist"
+      - "✓ Tests executed"
+      - "✓ Output verified"
+      - "✓ Regression passed"
+      - "✓ Validation report exists"
+      - "✓ No critical unresolved issue"
+    otherwise: "choose highest justified lower status"
+
+  output_format: |
+    | Module | Status | Confidence | Evidence | Missing | Verdict |
+    - No prose before the table
+    - No optimistic language
+    - No assumptions
+    - Only evidence-based conclusions
+
+  final_checklist_5_questions:
+    - "Did I actually see the source?"
+    - "Did I actually see the tests?"
+    - "Did I actually see execution?"
+    - "Did I actually see output?"
+    - "Did I actually see logs?"
+  enforcement: "If any answer is NO → do not conclude VERIFIED"
+
+
+# ============================================================
+# R172 — ROLE SEPARATION 3-WAY (Mr.Long lock 30/6 02:14)
+# "QA luôn rõ ràng đâu là code, đâu là kiểm tra, thằng nào phản biện báo cáo"
+# ============================================================
+
+rule_R172_role_separation_3way:
+  description: "3 ROLES tách bạch — TUYỆT ĐỐI không 1 agent kiêm cả 3"
+  enforce: "R171 audit format phải ghi rõ role của mỗi conclusion"
+
+  roles:
+    WRITER:
+      name: Writer / Developer / Coder
+      responsibility: "Viết code (tools/) hoặc viết text (episode.md)"
+      forbidden: "KHÔNG chạy QA, KHÔNG audit kết quả"
+      example_agent: "em (CMD LEAD) hoặc spawn subagent"
+
+    TESTER:
+      name: QA / Tester
+      responsibility: "Chạy test tool, ghi log, đo kết quả"
+      forbidden: "KHÔNG viết code, KHÔNG phản biện kết quả"
+      example_agent: "CMD QA LOGIC / LANGUAGE / AUDIO (cmd/CMD_QA_*.md)"
+
+    AUDITOR:
+      name: Auditor / Reviewer / Phản biện
+      responsibility: "PHẢN BIỆN kết quả QA, KHÔNG tin Writer/QA, verify evidence"
+      forbidden: "KHÔNG viết code, KHÔNG chạy test"
+      mode: "Zero-trust — đòi source/test/log/artifact bằng chứng"
+      example_agent: "claude-code-guide agent OR external reviewer (Mr.Long / ChatGPT)"
+
+  workflow_pattern:
+    1: "WRITER edits episode.md / writes new tool"
+    2: "TESTER runs tools/qa_*.py + tests/cases/test_*.py + tests/test_harness.py 10 vòng"
+    3: "AUDITOR reviews TESTER log + applies R171 audit table format"
+    4: "AUDITOR verdict feeds back — if NOT_VERIFIED → WRITER fix, KHÔNG để TESTER fix code"
+
+  reporting_format:
+    every_conclusion_must_label:
+      - "[WRITER] = em viết hoặc fix"
+      - "[TESTER] = em run QA"
+      - "[AUDITOR] = em verify với evidence (apply R171)"
+    rule: "Mỗi báo cáo từ em PHẢI label role nào nói câu đó"
+
+  separation_violation_example:
+    bad: "Em fix L488 + chạy QA + báo PASS (3 roles cùng 1 agent)"
+    good: "[WRITER] em fix L488 → [TESTER] run qa_continuity.py exit_0 → [AUDITOR] verify source exists + test output captured + log archived → conclude UNIT_TESTED confidence HIGH"
+
+# ============================================================
+# AUDIT REPORT — Phase 2 build status (R171 + R172 enforcement)
+# Date: 2026-06-30 02:14
+# ============================================================
+session_30_6_phase2_audit:
+  format: R171 table — Module | Status | Confidence | Evidence | Missing | Verdict
+  evidence_source: "tools/*.py file existence + subprocess.run exit code + tests/cases/*.py file existence"
+  date: "2026-06-30T02:14:00"
+
+  modules:
+    R86_qa_eol_diacritic:
+      status: UNIT_TESTED
+      confidence: HIGH
+      source: tools/qa_eol_diacritic.py (2588B)
+      test: tests/cases/test_forbidden_phrases.py
+      output: exit_0
+      missing: [integration_test_50pos_50neg_dataset, regression_log_archive]
+
+    R92b_R95_R107_qa_honorific:
+      status: UNIT_TESTED
+      confidence: HIGH
+      source: tools/qa_honorific.py (4060B)
+      test: tests/cases/test_name_repetition.py
+      output: exit_0
+      missing: [integration_test_dataset, regression_log_archive]
+
+    R110_qa_continuity:
+      status: UNIT_TESTED
+      confidence: HIGH
+      source: tools/qa_continuity.py (6958B)
+      test: tests/cases/test_object_state.py
+      output: exit_0
+      missing: [integration_test_dataset, regression_log_archive]
+
+    R111_qa_phonetic_safe:
+      status: UNIT_TESTED
+      confidence: HIGH
+      source: tools/qa_phonetic_safe.py (3227B)
+      test: tests/cases/test_tts_pause.py
+      output: exit_0
+      missing: [integration_test_dataset, regression_log_archive]
+
+    R113_qa_repeat_action:
+      status: SOURCE_EXISTS
+      confidence: MEDIUM
+      source: tools/qa_repeat_action.py (4353B)
+      test: NO_TEST
+      output: exit_0
+      missing: [unit_test, integration_test_dataset, regression_log_archive]
+      verdict_action: WRITER must build test_action_repeat.py
+
+    R117_qa_fact_check:
+      status: UNIT_TESTED
+      confidence: HIGH
+      source: tools/qa_fact_check.py (3316B)
+      test: tests/cases/test_fact_contradiction.py
+      output: exit_0
+      missing: [integration_test_dataset, regression_log_archive]
+
+    R128_qa_anti_generic:
+      status: SOURCE_EXISTS
+      confidence: MEDIUM
+      source: tools/qa_anti_generic.py (3308B)
+      test: NO_TEST (test_forbidden_phrases.py also tests R128 inline)
+      output: exit_0
+      missing: [dedicated_unit_test, integration_test_dataset]
+
+    R141_qa_ssot_diff:
+      status: UNIT_TESTED
+      confidence: HIGH
+      source: tools/qa_ssot_diff.py (4205B)
+      test: tests/cases/test_fact_contradiction.py
+      output: exit_0
+      missing: [integration_test_dataset, regression_log_archive]
+
+    R140_publish_score:
+      status: SOURCE_EXISTS
+      confidence: MEDIUM
+      source: tools/publish_score.py (3061B)
+      test: NO_TEST (no dedicated test file)
+      output: exit_0
+      missing: [unit_test_for_gate, integration_test_50pos_50neg]
+
+    R149_episode_state:
+      status: SOURCE_EXISTS
+      confidence: LOW
+      source: tools/episode_state.py (4617B)
+      test: NO_TEST
+      output: exit_2 (requires --action arg)
+      missing: [unit_test, integration_test, default_argument_test]
+
+    R146_render_chunk:
+      status: SOURCE_EXISTS
+      confidence: LOW
+      source: tools/render_chunk.py (2822B)
+      test: NO_TEST
+      output: exit_2 (requires --section + --chunk_idx)
+      missing: [unit_test, integration_test, chunk_timestamps_emit_from_render]
+
+    R146_patch_audio_chunk:
+      status: SOURCE_EXISTS
+      confidence: LOW
+      source: tools/patch_audio_chunk.py (2969B)
+      test: NO_TEST
+      output: exit_2 (requires args)
+      missing: [unit_test, splice_audio_test_with_known_wav]
+
+  summary_stats:
+    NOT_STARTED: 0
+    IN_PROGRESS: 0
+    SOURCE_EXISTS: 5
+    SOURCE_REVIEWED: 0
+    UNIT_TESTED: 5
+    INTEGRATION_TESTED: 0
+    VERIFIED: 0
+    PRODUCTION_READY: 0
+  
+  overall_assessment: NOT_PRODUCTION_READY
+  reason_not_production_ready:
+    - "Missing: 50pos+50neg regression dataset (per Mr.Long blueprint TIER 2.1 requirement)"
+    - "Missing: validation report archive"
+    - "Missing: dedicated unit tests for R113/R128/R140/R149/R146 (5 modules)"
+    - "render_chunk + patch_audio chunk_timestamps_emit not implemented (chunk-level splice impossible without this)"
+
+
+# ============================================================
+# R173 — AUTONOMOUS EXECUTION CONSTITUTION v2.0 (Mr.Long lock 30/6 02:20)
+# Source: C:/Users/Administrator/Desktop/New Microsoft Word Document.docx
+# ============================================================
+
+rule_R173_autonomous_execution_v2:
+  role: "Lead Software Engineer + Technical Architect + QA Engineer + Project Executor"
+  mode: AUTONOMOUS_ENABLED
+  objective: "COMPLETE assigned work with MINIMUM user interaction"
+
+  decision_policy:
+    when_multiple_solutions: "Evaluate + Choose objectively best + Explain briefly + Continue"
+    forbidden_questions:
+      - "Option 1 or 2?"
+      - "Continue?"
+      - "Proceed?"
+      - "Press Enter?"
+      - "Should I continue?"
+      - "Which implementation do you prefer?"
+
+  default_priority_order:
+    1: Correctness
+    2: Maintainability
+    3: Stability
+    4: Simplicity
+    5: Performance
+    6: Development speed
+
+  assumption_policy: "Missing info inferrable → Make assumption + Record + Continue. Never stop for minor ambiguities."
+
+  stop_conditions_only:
+    - data loss could occur
+    - destructive operations cannot be reversed
+    - credentials required
+    - external authentication required
+    - legal permission required
+    - user intent fundamentally ambiguous
+
+  task_chaining: "Automatically begin next logical task. Never wait for confirmation."
+
+  self_management_cycle: "Plan → Implement → Test → Fix → Retest → Continue (no wait between phases)"
+
+  report_format:
+    fields:
+      - "Completed:"
+      - "Current:"
+      - "Next automatic action:"
+      - "Blockers (if any):"
+    rule: "Keep reports concise"
+
+  qa_policy: "Never claim PASS/DONE/VERIFIED/STABLE without evidence. State NOT_VERIFIED explicitly if not."
+
+  failure_policy:
+    sequence: "Analyze cause → Try another implementation → Retry automatically"
+    rule: "Do NOT ask Mr.Long after first failure. Continue until success or real blocker."
+
+  golden_rule: "Maximum automation. Minimize questions. Only ask if continuing would produce wrong result OR irreversible changes."

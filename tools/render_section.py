@@ -23,12 +23,12 @@ SECTIONS_DIR.mkdir(exist_ok=True)
 
 # Section boundaries — verify with current spec
 SECTION_RANGES = {
-    'HOOK':        (0, 20),     # intro 7 + hook 13 (chunks 20-21 thuộc SETUP, đã fix 29/6)
-    'SETUP':       (20, 90),
-    'INCIDENT':    (90, 160),
-    'REVEAL':      (160, 220),
-    'PAYOFF':      (220, 270),
-    'CLIFFHANGER': (270, 999),
+    'HOOK':        (0, 26),
+    'SETUP':       (26, 78),
+    'INCIDENT':    (78, 109),
+    'REVEAL':      (109, 204),
+    'PAYOFF':      (204, 244),
+    'CLIFFHANGER': (244, 999),  # 30/6 v86 — total 269 sau 35 fixes
 }
 
 def main():

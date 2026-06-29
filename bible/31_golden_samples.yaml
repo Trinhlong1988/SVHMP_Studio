@@ -1,0 +1,76 @@
+# R159 — GOLDEN SAMPLE LOCK
+# Mr.Long lock 30/6 — Text golden REFERENCE cho regression test.
+
+golden_text_ep01:
+  file: output/ep_01/episode_golden_text.md
+  locked_at: "2026-06-30T02:00:00"
+  qa_status:
+    R86: PASS
+    R92b: PASS
+    R110: PASS
+    R111: PASS
+    R113: PASS
+    R117: PASS
+    R128: PASS
+    R141: PASS
+  publish_score:
+    Logic: 100
+    Language: 100
+    TTS: 100
+    gate: PASS
+  fixes_session:
+    "27-29/6": "v22-v85 60+ iteration TTS production"
+    "30/6": "35 lỗi Mr.Long catch + 5 R86 self-violation em catch"
+  metrics:
+    total_chunks: 269
+    sections: 6
+    word_count_estimate: 2420
+    duration_estimate: 16.5 phút
+  characters_locked:
+    - Khải-Phong: anh trung niên, lớp 11 cấp 3
+    - Hạ-Vy: deceased, áo gió xanh nhạt, tóc cột cao
+    - Cô_gái_ghế_tám: tóc cột thấp + áo khoác len xám tro
+    - Cô_gái_ghế_bảy_mới: tóc xõa + áo gió xanh dương trong sáng
+    - Ông_cụ_ghế_3: ôm radio
+    - Cô_y_tá_ghế_9: đồng phục y tá xưa
+    - Anh_trung_niên_ghế_12: giấy gấp tư
+    - Bác_tài: găng tay trắng + 2 lock dialogues
+
+golden_audio_ep01:
+  status: TBD  # lock sau render v86 done
+  expected_file: output/ep_01/EP01_FULL_v86.mp3
+
+regression_use:
+  description: "Mỗi lần đổi prompt/rule/model → chạy lại publish_score trên golden text → must PASS"
+  command: "python tools/publish_score.py"
+  acceptance: "Logic≥90 + Lang≥85 + TTS≥90"
+
+
+# ============================================================
+# LOCK NOTE — 2026-06-30 02:45 — Post-regression 8/8 PASS
+# ============================================================
+
+regression_validation:
+  date: "2026-06-30T02:45:57.479851"
+  result: ALL_PASS_8_OF_8
+  samples_tested: 100 (50 positive + 50 negative)
+  qa_tools_tested: 8
+  total_runs: 800
+  duration_seconds: 70
+  artifacts:
+    - tests/regression/validation_report.md
+    - tests/regression/regression_report.json
+    - tests/regression/rule_score.csv
+  per_rule_pass:
+    R86: FP=0.0% FN=14.3% (PASS)
+    R92b: FP=0.0% FN=0.0% (PASS)
+    R110: FP=0.0% FN=0.0% (PASS)
+    R111: FP=0.0% FN=14.3% (PASS)
+    R113: FP=0.0% FN=0.0% (PASS)
+    R117: FP=0.0% FN=0.0% (PASS)
+    R128: FP=0.0% FN=0.0% (PASS)
+    R141: FP=0.0% FN=0.0% (PASS)
+
+  golden_text_status: LOCKED
+  golden_audio_status: NOT_YET_RENDERED
+  next_step: Render EP01 v86 → lock Golden Audio

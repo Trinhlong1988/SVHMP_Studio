@@ -1,10 +1,22 @@
 ---
 project: SVHMP_Studio
-current_round: 19
-last_update_ts: 2026-06-28
-last_update_by: Claude session 28/6 (round 19.2 — FULL 13 items ship + TTS adapter applied 50 EPs + WPM 142 + bible/24-25-26 NEW + DEEP_ASSESSMENT)
-rule_break_count: 2  # R39 vi phạm 2 lần (EP21-25 + EP12-19/EP31-34) — counter R41
+current_round: 20
+current_version: v1.0.0-rc1
+status: Tier 1 FROZEN
+last_update_ts: 2026-06-30T02:48:00
+last_update_by: Claude session 30/6 (Tier 1 QA Engine v1.0.0-rc1 frozen — regression 8/8 PASS — bible/00 R110-R173 + 8 QA tools + 100 dataset)
+rule_break_count: 7  # R39×2 + R86×5 self-violation 30/6 (em propose fix tự gây)
 schema_version: 1
+---
+
+## v1.0.0-rc1 — Tier 1 Frozen (2026-06-30 02:48)
+- 43 codified rules (bible/00 R1-R173)
+- 8 QA tools UNIT_TESTED regression 8/8 PASS KPI
+- 100 regression samples (50pos+50neg)
+- Evidence: tests/regression/validation_report.md, regression_report.json, rule_score.csv
+- See: CHANGELOG.md, RELEASE_NOTES.md, TIER1_SUMMARY.md
+- Recommended: `git tag -a v1.0.0-rc1 -m "Tier 1 Frozen — 8 QA regression 8/8 PASS"`
+- Tier 2.1 next: Whisper + Character Memory + Repair Engine + Dashboard
 ---
 
 # VERSION — SVHMP_Studio
