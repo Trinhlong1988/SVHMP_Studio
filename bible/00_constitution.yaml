@@ -531,8 +531,9 @@ R60_short_syllable_eol_hardlock:
     good: "Anh đứng im lặng một hồi lâu."
   detection: tools/audit_short_eol.py
 
-R59_concat_short_syllable_cụt_hardlock:
+R91_concat_short_syllable_cụt_hardlock:
   # round 15 add 2026-06-28 — Mr.Long: "ướt một góc nhỏ, chữ nhỏ cũng bị cụt do mix"
+  # 2026-06-29 RENUMBERED R59→R91 by CMD LEAD (collision với R59_audio_mix_qa_mandatory_pre_publish line 322)
   rule: "Chuỗi 3+ từ ngắn (1-syl) liền tiếp ở cuối câu → TTS đọc cụt + mix glitch"
   why: |
     Concatenation pipeline + TTS decay → cuối câu chuỗi "ướt một góc nhỏ" cụt.
