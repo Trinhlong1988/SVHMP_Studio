@@ -66,12 +66,15 @@ def stage_3(section):
 # CMD LEAD 29/6 18:10: catch false positive "rì rì" (tiếng máy), "từ từ" (slowly)
 # CMD LEAD 29/6 23:00: add "dần" sau 22 iter QA WATCH persistent L550 "dần dần"
 WHITELIST_REDUP = {
-    "rì", "rầm", "ầm", "ù", "vù", "rì", "lách", "lộc", "phù",
-    "từ", "chậm", "nhẹ", "khẽ", "thoăn", "thoắt", "rón",
-    "chầm", "lúp", "lụp", "loạng", "lúng", "thấp", "lủng",
-    "thì", "lập", "chập", "lờ", "ngơ", "ngẩn",
-    "dần", "đần", "mãi", "hoài", "luôn", "thoáng", "thấp", "thỉnh",
-    "lai", "lác", "ngấp", "ngúng", "phập", "phồng", "đăm", "ngơ",
+    "bép", "bùng", "bẹp", "chát", "chầm", "chậm", "chập", "chờn", "cạch", "dim", "dần", "hoài",
+    "khoải", "khò", "khắc", "khẹt", "khẽ", "kẹt", "kẽo", "lai", "lanh", "le", "leng", "lim", "loè",
+    "loạng", "luôn", "lác", "lách", "lép", "lò", "ló", "lói", "lóng", "lúng", "lúp", "lăn", "lạch",
+    "lấp", "lập", "lẳng", "lặng", "lốp", "lộc", "lờ", "lụng", "lụp", "lụt", "lủng", "mãi", "mải",
+    "ngày", "ngúc", "ngúng", "ngơ", "ngấn", "ngẩn", "nhô", "nhấp", "nhẹ", "năm", "phì", "phù",
+    "phập", "phồng", "rai", "rin", "run", "rách", "ráp", "rì", "rít", "róc", "rón", "rùng", "rơi",
+    "rầm", "rẩy", "rộn", "rộp", "rớt", "rợn", "thi", "thoáng", "thoăn", "thoắt", "thui", "tháng",
+    "thì", "thấp", "thầm", "thỉnh", "thủi", "trĩu", "tách", "tép", "tích", "tóc", "tóp", "tạch",
+    "từ", "ve", "vo", "vù", "xì", "ò", "ù", "đêm", "đùng", "đăm", "đần", "đắm", "ấm", "ầm", "ức",
 }
 
 
