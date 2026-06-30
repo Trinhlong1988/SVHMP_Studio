@@ -7,6 +7,7 @@ SVHMP EP01 v13 — 5-trụ production (round 14 hook added)
 5. Room tone bridge -38dB 200ms giữa chunks
 """
 import os, sys, json, time, subprocess, random, argparse, re, atexit
+from pathlib import Path
 import numpy as np
 import soundfile as sf
 import torch
@@ -358,6 +359,19 @@ def main():
         "-ar", "22050",
         "-c:a", "pcm_s16le", args.output,
     ], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+    # R198 MANDATORY POST-RENDER CAP_PEAK (Mr.Long lock 30/6 23:55 — CLIP repeat 4 lần fix)
+    # Wire cap_peak.py: hardlock peak ≤ -1.0 dB. Idempotent, exit 0 if already OK.
+    print(f"[v13] R198 cap_peak post-render check...", flush=True)
+    cap_result = subprocess.run([
+        "python", str(Path(__file__).parent / "cap_peak.py"), args.output,
+    ], capture_output=True, text=True, encoding='utf-8',
+       env={**os.environ, 'PYTHONIOENCODING': 'utf-8'})
+    if cap_result.stdout:
+        print(cap_result.stdout.strip(), flush=True)
+    if cap_result.returncode != 0:
+        print(f"[v13] !!! R198 cap_peak FAIL rc={cap_result.returncode}", flush=True)
+        # Continue — cap_peak idempotent failure not fatal but logged.
     print(f"[v13] DONE → {args.output}", flush=True)
     _prog.done(success=True, final_path=args.output)
 
