@@ -2257,3 +2257,340 @@ rule_R173_autonomous_execution_v2:
     rule: "Do NOT ask Mr.Long after first failure. Continue until success or real blocker."
 
   golden_rule: "Maximum automation. Minimize questions. Only ask if continuing would produce wrong result OR irreversible changes."
+
+
+# ============================================================
+# R94b — SECTION BOUNDARY SILENCE BRIDGE (Mr.Long catch 30/6 10:45)
+# ============================================================
+
+rule_R94b_section_silence_bridge:
+  description: "Khi concat 6 sections, PHẢI insert silence bridge ≥1500ms giữa mỗi section. Cấm concat trực tiếp = 0 gap."
+  trigger: "Mr.Long catch v100: 'bé như cậu sinh viên năm 2 ngắt nhịp chưa mà đã cô gái...sát'"
+  enforce: "ffmpeg filter_complex: [0:a][s][1:a][s][2:a][s][3:a][s][4:a][s][5:a]concat=n=11 với [s] = anullsrc=r=22050:cl=mono:d=1.5"
+  duration_ms: 1500
+  applies_to: concat_step (post-render section join)
+  severity: Critical
+
+
+# ============================================================
+# R175 — DIALOGUE TONE PER-CHUNK EMO OVERRIDE (Mr.Long lock 30/6 12:30)
+# Trigger: "sao các đoạn thoại không căn chỉnh đúng ngữ cảnh đúng trạng thái à? đúng tâm trạng đúng giọng điệu thoại"
+# ============================================================
+
+rule_R175_dialogue_emo_override:
+  description: |
+    Mọi dialogue line (chunk có dấu '—' đầu hoặc text thoại trực tiếp) PHẢI có per-chunk emo_vector override
+    riêng dựa trên ngữ cảnh/tâm trạng — KHÔNG dùng section-level emo chung.
+  severity: Critical
+  trigger_examples:
+    - "Bác tài 'Chưa tới lúc đâu cháu ạ' — thì thầm bí ẩn (calm 0.60 + melancholic 0.40)"
+    - "Khải-Phong 'Tôi nhớ ra rồi đấy cháu ạ' — buồn bã, vừa nhớ Hạ-Vy chết (sad 0.55 + melancholic 0.50)"
+    - "Cô gái CLIFFHANGER 'Của tôi à, sao tôi lại không thể nhớ ra điều gì...' — mơ hồ, lạc lõng (afraid 0.20 + calm 0.40 + melancholic 0.45)"
+  enforce: 
+    tool: tools/spec_chunk_emo_override.py (TBD build)
+    registry: bible/35_text_fix_registry.yaml#emo_overrides
+    apply_phase: AFTER build_spec, BEFORE render
+  required_fields_per_override:
+    - chunk_text_match (substring để locate chunk)
+    - section (HOOK/SETUP/INCIDENT/REVEAL/PAYOFF/CLIFFHANGER)
+    - emo_vector (8 dimensions: happy/angry/sad/afraid/disgusted/melancholic/surprised/calm)
+    - volume_scale (0.0-1.5, default 1.0)
+    - reason (mô tả ngữ cảnh + tâm trạng)
+  scan_protocol:
+    auto_scan_dialogue:
+      pattern: '^—\s+.+'
+      action: "Flag ALL dialogue lines without emo_override → MUST add to registry"
+    pre_render_gate: "publish_score check: all dialogue lines have emo_override → else BLOCK"
+  pattern_library_starter:
+    whisper_secret: 
+      calm: 0.60
+      melancholic: 0.40
+      sad: 0.20
+      volume_scale: 0.70
+    grief_revelation:
+      sad: 0.55
+      melancholic: 0.50
+      afraid: 0.10
+      volume_scale: 0.85
+    fear_realization:
+      afraid: 0.40
+      surprised: 0.20
+      sad: 0.30
+      volume_scale: 0.90
+    confusion_lost:
+      afraid: 0.20
+      calm: 0.40
+      melancholic: 0.45
+      volume_scale: 0.80
+
+
+# ============================================================
+# R177 — ADJACENT WORD REPEAT (Mr.Long lock 30/6 12:40)
+# Trigger: "sương đêm khép lại dần dần xong tắt dần lặp 3 dần 2 dòng"
+# ============================================================
+
+rule_R177_adjacent_word_repeat:
+  description: "Cấm lặp 1 từ ngắn (1-2 âm tiết) ≥3 lần trong 3 dòng liền nhau"
+  severity: Major
+  enforce: "qa_adjacent_word_repeat.py (TBD) — scan adjacent N=3 lines, flag word count ≥3"
+  pattern_examples:
+    - "dần dần + tắt dần = 3 'dần' trong 2 dòng"
+    - "chậm chậm + chậm rãi = 3 'chậm' trong 2 dòng"
+    - "khẽ khẽ + rất khẽ = 3 'khẽ'"
+  whitelist:
+    - intentional duplicate (vd 'dần dần' 1 phrase OK, NHƯNG kèm 'tắt dần' không OK)
+    - onomatopoeia ('rì rì', 'lụp bụp')
+
+
+# ============================================================
+# R178 — CHARACTER VOICE PROFILE LOCK (Mr.Long lock 30/6 12:37)
+# Trigger: "phải fix giọng ai - theo giới tính, hoàn cảnh, độ tuổi, chất giọng khóa chặt KHÔNG biến đổi"
+# ============================================================
+
+rule_R178_character_voice_lock:
+  description: |
+    Mỗi nhân vật có 1 voice profile LOCKED — KHÔNG cho TTS render biến đổi giữa các chunks.
+    Profile gồm: giới tính / độ tuổi / chất giọng / cảm xúc base.
+  severity: Critical
+  enforce:
+    file: bible/37_character_voice_profiles.yaml (TBD)
+    tool: tools/spec_chunk_emo_override.py auto-apply profile per character dialogue (TBD)
+    pre_render_gate: scan dialogue lines, verify voice profile assigned
+  required_fields_per_character:
+    - name (Khải-Phong / Hạ-Vy / Bác tài / Cô gái ghế tám / Ông cụ / etc.)
+    - gender (male / female / elderly_male / elderly_female / young_female / young_male)
+    - age_range (e.g., "30-40" / "60+" / "20-25")
+    - voice_quality (deep / soft / hoarse / clear / trembling / steady / whisper)
+    - base_emo_vector (8-dim)
+    - context_overrides:
+        - context_name (e.g., "grief", "whisper", "anger")
+        - emo_vector_delta (overlay on base)
+        - volume_scale
+  starter_profiles_ep01:
+    Khải-Phong:
+      gender: male
+      age_range: "30-40"
+      voice_quality: deep_steady
+      base_emo: {calm: 0.50, melancholic: 0.30, sad: 0.20}
+    Bác_tài:
+      gender: elderly_male
+      age_range: "60+"
+      voice_quality: hoarse_whisper
+      base_emo: {calm: 0.60, melancholic: 0.40}
+      lock_volume_scale: 0.70
+    Cô_gái_ghế_tám:
+      gender: young_female
+      age_range: "20-25"
+      voice_quality: soft_clear
+      base_emo: {calm: 0.40, melancholic: 0.30, afraid: 0.10}
+    Cô_gái_ghế_bảy_CLIFFHANGER:
+      gender: young_female
+      age_range: "20-25"
+      voice_quality: confused_lost
+      base_emo: {afraid: 0.20, calm: 0.40, melancholic: 0.45, surprised: 0.10}
+
+
+# ============================================================
+# R179 — MANDATORY SELF-VERIFY BEFORE COMMIT EDIT (Mr.Long lock 30/6 12:40)
+# Trigger: "rewrite mà không QA à? quy trình đâu?" (em vi phạm self-verify R86 lần 4)
+# ============================================================
+
+rule_R179_mandatory_self_verify:
+  description: |
+    Mọi propose text rewrite (F00X / fix substitute / dialogue rephrase) PHẢI:
+    1. Self-verify EOL diacritic của mỗi word ending — KHÔNG ngã/nặng/hỏi cuối câu
+    2. Self-verify usage đúng (word fit context — vd 'lụi' với đèn điện inappropriate)
+    3. Run qa_eol_diacritic + qa_phonetic_safe + qa_repeat_action TRƯỚC commit
+    4. Nếu fail → revise + re-verify, KHÔNG submit
+  severity: Critical
+  enforce:
+    workflow: |
+      WRITER propose → SELF_VERIFY (R86/R111/R113) → if FAIL re-propose → else commit
+    tool: tools/text_batch_fix.py post_verify wrap (đã có) — MUST extend to include word usage check
+  failure_pattern:
+    em_violations:
+      - F001 "gọn." NANG
+      - F007 "cả." HỎI
+      - F020 "lại." NANG (lần 4)
+      - F011 "tan ra" / "nhạt" awkward
+    root_cause: "Em LLM propose từ generic không scan diacritic của final word"
+  enforcement_check:
+    pre_commit: "Mỗi NEW value PHẢI scan qa_eol_diacritic standalone trước add registry"
+    post_commit: "text_batch_fix --apply auto-verify (đã có)"
+
+
+# ============================================================
+# R180 — VIETNAMESE WORD COLLOCATION / USAGE CHECK (Mr.Long lock 30/6 12:42)
+# Trigger: "khép chặt lại chỉ dùng cho vật lý" / "màn sương không khép" / "phủ kín lại"
+# ============================================================
+
+rule_R180_word_collocation_check:
+  description: |
+    Em LLM propose generic words không scan Vietnamese collocation context.
+    Mỗi propose verb-noun PHẢI verify collocation đúng:
+    - "khép" = vật lý close (cửa, tay, sách, mắt)
+    - "phủ" = cover surface (sương, bóng tối, tuyết)
+    - "lụi" = fade out (đèn dầu, nến, lửa, sinh mạng)
+    - "tắt" = power off (đèn điện, máy, lửa)
+    - "nhòa" = blur (ánh sáng, hình ảnh, kỷ niệm)
+  severity: Major
+  collocation_starter_db:
+    sương:
+      OK: [phủ, đọng, lan, vén, mờ, dày]
+      AVOID: [khép, tắt, đóng]
+    đèn_điện:
+      OK: [tắt, sáng, mờ, nhòa, phai]
+      AVOID: [lụi, tan, vỡ]
+    đèn_dầu_nến:
+      OK: [lụi, tắt, sáng, leo lét]
+      AVOID: [khép, đóng]
+    cửa:
+      OK: [khép, đóng, mở, sập]
+      AVOID: [phủ, lụi]
+    bóng_tối:
+      OK: [phủ, lan, bao, trùm]
+      AVOID: [khép, tắt]
+  enforce:
+    pre_propose: WRITER PHẢI verify từng verb-noun pair với DB trên (manual or qa_collocation.py TBD)
+    runtime: Mr.Long catch các lỗi như "khép sương" → add to AVOID list
+
+
+# ============================================================
+# R181-R184 — Tier 2.5 Language Intelligence (Mr.Long lock 30/6 12:42)
+# ============================================================
+
+rule_R181_verb_noun_compatibility:
+  description: "Verb-Noun pair phải fit natural Vietnamese (extends R180 collocation)"
+  severity: Major
+  example_violations:
+    - 'chuông bò qua phòng (chuông không bo)'
+    - 'ánh mắt chảy xuống (ánh mắt không chảy)'
+    - 'màn sương khép chặt (sương không khep)'
+  enforce: tools/qa_collocation.py (TBD build)
+
+rule_R182_adjective_noun_compatibility:
+  description: "Adj-Noun pair tự nhiên VN"
+  severity: Major
+  example_violations:
+    - 'đèn vàng cứng (cứng không hợp đèn)'
+    - 'sương đêm sắc (sắc không hợp sương)'
+  enforce: qa_collocation.py
+
+rule_R183_register_consistency:
+  description: "Register (formality) consistent per character + scene"
+  severity: Major
+  examples:
+    - 'bà cụ KHÔNG nói: Theo quan điểm của tôi...'
+    - 'đứa bé KHÔNG dùng từ Hán Việt cao'
+    - 'dialogue gần gũi (cô-cháu) KHÔNG mix với formal speech'
+  enforce: per-character voice profile (R178)
+
+rule_R184_metaphor_sanity:
+  description: "Metaphor phải logic + cultural Vietnamese"
+  severity: Minor
+  example_violations:
+    - 'Tiếng chuông như bóng tối phủ xuống (mixed sensory)'
+    - 'Trái tim đập như tia chớp (cường độ mismatch)'
+  enforce: manual review + corpus-based novelty score
+
+rule_R185_corpus_collocation_db:
+  description: |
+    Build corpus collocation DB từ 20-50 truyện approved (SVHMP DNA-validated).
+    Trích cặp noun-verb / noun-adj / verb-adverb.
+    QA: Ưu tiên kết hợp đã có, flag novel combinations review.
+  severity: Long-term
+  enforce: tools/build_corpus_collocation.py (TBD)
+  status: PLANNING
+
+
+# === FLUSHED FROM REGRESSION TEST by CMD LEAD ===
+
+R110_codified_from_test_stub:
+  # CODIFIED 2026-06-30 by CMD LEAD flush_rules_from_test.py
+  # Source: regression test PASS — TP=4 TN=50 FP=0 FN=0
+  # WARN: STUB only — em CMD LEAD chỉ flush từ test evidence
+  # TODO: fill rule/why/example từ memory hoặc CMD #2 spec gốc
+  rule: "STUB — em CMD LEAD chỉ flush từ regression test evidence. CMD ship rule cần fill full spec."
+  detection: tools/qa_continuity.py
+  test_evidence:
+    TP: 4
+    TN: 50
+    FP: 0
+    FN: 0
+    report: tests/regression/regression_report.json
+  status: stub_pending_full_spec
+
+R111_codified_from_test_stub:
+  # CODIFIED 2026-06-30 by CMD LEAD flush_rules_from_test.py
+  # Source: regression test PASS — TP=6 TN=50 FP=0 FN=1
+  # WARN: STUB only — em CMD LEAD chỉ flush từ test evidence
+  # TODO: fill rule/why/example từ memory hoặc CMD #2 spec gốc
+  rule: "STUB — em CMD LEAD chỉ flush từ regression test evidence. CMD ship rule cần fill full spec."
+  detection: tools/qa_phonetic_safe.py
+  test_evidence:
+    TP: 6
+    TN: 50
+    FP: 0
+    FN: 1
+    report: tests/regression/regression_report.json
+  status: stub_pending_full_spec
+
+R113_codified_from_test_stub:
+  # CODIFIED 2026-06-30 by CMD LEAD flush_rules_from_test.py
+  # Source: regression test PASS — TP=7 TN=50 FP=0 FN=0
+  # WARN: STUB only — em CMD LEAD chỉ flush từ test evidence
+  # TODO: fill rule/why/example từ memory hoặc CMD #2 spec gốc
+  rule: "STUB — em CMD LEAD chỉ flush từ regression test evidence. CMD ship rule cần fill full spec."
+  detection: tools/qa_repeat_action.py
+  test_evidence:
+    TP: 7
+    TN: 50
+    FP: 0
+    FN: 0
+    report: tests/regression/regression_report.json
+  status: stub_pending_full_spec
+
+R117_codified_from_test_stub:
+  # CODIFIED 2026-06-30 by CMD LEAD flush_rules_from_test.py
+  # Source: regression test PASS — TP=3 TN=50 FP=0 FN=0
+  # WARN: STUB only — em CMD LEAD chỉ flush từ test evidence
+  # TODO: fill rule/why/example từ memory hoặc CMD #2 spec gốc
+  rule: "STUB — em CMD LEAD chỉ flush từ regression test evidence. CMD ship rule cần fill full spec."
+  detection: tools/qa_fact_check.py
+  test_evidence:
+    TP: 3
+    TN: 50
+    FP: 0
+    FN: 0
+    report: tests/regression/regression_report.json
+  status: stub_pending_full_spec
+
+R128_codified_from_test_stub:
+  # CODIFIED 2026-06-30 by CMD LEAD flush_rules_from_test.py
+  # Source: regression test PASS — TP=7 TN=50 FP=0 FN=0
+  # WARN: STUB only — em CMD LEAD chỉ flush từ test evidence
+  # TODO: fill rule/why/example từ memory hoặc CMD #2 spec gốc
+  rule: "STUB — em CMD LEAD chỉ flush từ regression test evidence. CMD ship rule cần fill full spec."
+  detection: tools/qa_anti_generic.py
+  test_evidence:
+    TP: 7
+    TN: 50
+    FP: 0
+    FN: 0
+    report: tests/regression/regression_report.json
+  status: stub_pending_full_spec
+
+R141_codified_from_test_stub:
+  # CODIFIED 2026-06-30 by CMD LEAD flush_rules_from_test.py
+  # Source: regression test PASS — TP=3 TN=50 FP=0 FN=0
+  # WARN: STUB only — em CMD LEAD chỉ flush từ test evidence
+  # TODO: fill rule/why/example từ memory hoặc CMD #2 spec gốc
+  rule: "STUB — em CMD LEAD chỉ flush từ regression test evidence. CMD ship rule cần fill full spec."
+  detection: tools/qa_ssot_diff.py
+  test_evidence:
+    TP: 3
+    TN: 50
+    FP: 0
+    FN: 0
+    report: tests/regression/regression_report.json
+  status: stub_pending_full_spec
