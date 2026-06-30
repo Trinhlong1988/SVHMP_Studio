@@ -6,6 +6,8 @@ Usage:
 """
 import sys
 import subprocess
+
+CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
 from pathlib import Path
 
 TOOLS = Path(__file__).parent
@@ -15,7 +17,7 @@ DEFAULT_MD = Path(r"D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Stu
 def check(name, cmd):
     print(f"\n[STAGE 1] {name}")
     print(f"  cmd: {' '.join(cmd)}")
-    r = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8")
+    r = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", creationflags=CREATE_NO_WINDOW)
     print(r.stdout)
     if r.returncode != 0:
         print(f"  FAIL (exit {r.returncode})")

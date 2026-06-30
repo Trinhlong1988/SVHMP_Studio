@@ -20,6 +20,8 @@ import json
 import os
 import signal
 import subprocess
+
+CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
 import sys
 import time
 from datetime import datetime, timezone
@@ -102,7 +104,7 @@ def trigger_orchestrator(ep_num: int, episode_path: Path, run_autofix: bool) -> 
     start = time.time()
     try:
         result = subprocess.run(cmd, capture_output=True, text=True,
-                                encoding='utf-8', errors='replace', timeout=600)
+                                encoding='utf-8', errors='replace', timeout=600, creationflags=CREATE_NO_WINDOW)
         return {
             'ep': ep_num,
             'rc': result.returncode,

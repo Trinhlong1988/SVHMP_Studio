@@ -13,6 +13,8 @@ Pipeline: build template → VNQA check → expand nếu duration <15p → repea
 import argparse
 import json
 import subprocess
+
+CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
 import sys
 import yaml
 from pathlib import Path

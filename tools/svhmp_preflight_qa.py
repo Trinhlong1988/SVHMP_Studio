@@ -1,12 +1,18 @@
-"""SVHMP pre-flight QA — check 10 hard rules trước render.
-Usage: python svhmp_preflight_qa.py <spec.json>
+"""SVHMP pre-flight QA — FULL_TEXT_GATE (Mr.Long lock 30/6 23:00)
+Now includes qa_eol_diacritic (R86 broad NGA + NANG + HOI) — process gap PV-01..04 fix.
+
+Usage: python svhmp_preflight_qa.py <spec.json> [--skip-r86]
 Exit 0 = PASS, exit 1 = FAIL (block render).
 """
 import sys
 import json
 import re
 import os
+import subprocess
+
+CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
 import atexit
+from pathlib import Path
 
 # Round 14 dashboard live render hook
 _TOOLS = os.path.dirname(os.path.abspath(__file__))
@@ -148,6 +154,31 @@ for i in range(len(sents) - 1):
 
 _prog.tick(10, f'Preflight {"FAIL" if issues else "PASS"} — {len(issues)} issues / {len(sents)} chunks')
 
+# ========================================================================
+# FULL_TEXT_GATE — Mr.Long lock 30/6 23:00 process gap PV-01..04 fix
+# Chain qa_eol_diacritic R86 broad EOL (NGA + NANG + HOI).
+# ========================================================================
+if '--skip-r86' not in sys.argv:
+    spec_path = Path(sys.argv[1])
+    ep_match = re.search(r'ep_(\d+)', str(spec_path))
+    if ep_match:
+        ep_num = int(ep_match.group(1))
+        md_path = spec_path.parents[1] / 'episode.md'
+        if md_path.exists():
+            print('[FULL_TEXT_GATE] R86 broad EOL check via qa_eol_diacritic.py')
+            r86 = subprocess.run(
+                ['python', str(Path(__file__).parent / 'qa_eol_diacritic.py'), str(md_path)],
+                capture_output=True, text=True, encoding='utf-8',
+                env={**os.environ, 'PYTHONIOENCODING': 'utf-8'},
+            )
+            sys.stdout.write(r86.stdout)
+            if r86.returncode != 0:
+                issues.append(f'R86 broad EOL BLOCKED via qa_eol_diacritic rc={r86.returncode}')
+        else:
+            print(f'[FULL_TEXT_GATE] WARN: episode.md not found at {md_path}, skip R86 broad')
+    else:
+        print('[FULL_TEXT_GATE] WARN: cannot detect ep_N from spec path, skip R86 broad')
+
 if issues:
     print(f'PREFLIGHT FAIL — {len(issues)} issues')
     for iss in issues:
@@ -155,6 +186,6 @@ if issues:
     _prog.done(success=False)
     sys.exit(1)
 else:
-    print(f'PREFLIGHT PASS — {len(sents)} chunks OK')
+    print(f'PREFLIGHT PASS — {len(sents)} chunks OK + FULL_TEXT_GATE (R86 broad) PASS')
     _prog.done(success=True)
     sys.exit(0)

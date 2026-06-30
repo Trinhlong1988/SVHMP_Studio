@@ -114,6 +114,8 @@ def main():
     # === Integrate post_rotate_verify (R88) ===
     print(f"\n=== R88 Post-rotate verify (double-prep + Hoàng Phê + tail) ===")
     import subprocess
+
+CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
     prv_path = Path(__file__).parent / 'post_rotate_verify.py'
     result = subprocess.run([sys.executable, str(prv_path), spec_path], capture_output=True, text=True, env={**os.environ, 'PYTHONIOENCODING':'utf-8'})
     print(result.stdout)

@@ -10,6 +10,8 @@ Loop tự động:
 Scope: EP02-50 only (EP01 do CMD khác)
 """
 import subprocess
+
+CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
 import sys
 import json
 import time
@@ -45,7 +47,7 @@ def count_chains_all():
 def run_vary_fix():
     """Apply vary subject fix EP02-50."""
     cmd = [sys.executable, str(SVHMP / 'tools' / 'fix_anaphora_vary_subject.py'), '--apply']
-    result = subprocess.run(cmd, cwd=SVHMP, capture_output=True, text=True, encoding='utf-8', errors='replace', timeout=120)
+    result = subprocess.run(cmd, cwd=SVHMP, capture_output=True, text=True, encoding='utf-8', errors='replace', timeout=120, creationflags=CREATE_NO_WINDOW)
     return result.stdout
 
 def main():

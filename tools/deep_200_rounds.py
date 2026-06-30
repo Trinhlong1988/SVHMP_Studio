@@ -8,6 +8,8 @@ Mỗi vòng = 1 sweep:
 Early-stop nếu 5 vòng liên tiếp KHÔNG có thay đổi.
 """
 import subprocess
+
+CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
 import sys
 import json
 import re
@@ -29,7 +31,7 @@ def audit_count(audit_script):
     """Run audit, return total violation count."""
     r = subprocess.run([sys.executable, f'tools/{audit_script}', '--summary'],
                       capture_output=True, text=True, encoding='utf-8', errors='replace',
-                      cwd=SVHMP, timeout=120)
+                      cwd=SVHMP, timeout=120, creationflags=CREATE_NO_WINDOW)
     m = re.search(r'SUMMARY:?\s*(\d+)\s*HIGH', r.stdout)
     return int(m.group(1)) if m else 0
 
@@ -37,7 +39,7 @@ def apply_fix(fix_script):
     if not fix_script: return 0
     r = subprocess.run([sys.executable, f'tools/{fix_script}', '--apply'],
                       capture_output=True, text=True, encoding='utf-8', errors='replace',
-                      cwd=SVHMP, timeout=120)
+                      cwd=SVHMP, timeout=120, creationflags=CREATE_NO_WINDOW)
     # Extract change count
     for pat in [r'Total:\s*(\d+)', r'fixes=(\d+)', r'(\d+)\s*changes?\s*in']:
         m = re.search(pat, r.stdout)

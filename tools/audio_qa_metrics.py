@@ -18,6 +18,8 @@ Usage:
 import sys
 import json
 import subprocess
+
+CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
 import re
 import soundfile as sf
 import numpy as np
@@ -93,7 +95,7 @@ def compute_metrics(audio_path):
     lufs_i = None
     true_peak = None
     try:
-        r = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="ignore", timeout=180)
+        r = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="ignore", timeout=180, creationflags=CREATE_NO_WINDOW)
         out = (r.stderr or "") + (r.stdout or "")
         # ffmpeg prints JSON block after "[Parsed_loudnorm_..." header
         # Find LAST JSON block (most relevant)

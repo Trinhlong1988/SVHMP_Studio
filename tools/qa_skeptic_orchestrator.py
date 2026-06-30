@@ -26,6 +26,8 @@ Output:
 import argparse
 import json
 import subprocess
+
+CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
 import sys
 import os
 import tempfile
@@ -78,7 +80,7 @@ def orchestrate(ep_number: int, episode_path: str, skeptic_provider: str = 'olla
                 autofix_cmd.append('--apply')
             print(f"[orchestrator] Running auto_fix ({autofix_mode} mode)...")
             af_run = subprocess.run(autofix_cmd, capture_output=True, text=True,
-                                    encoding='utf-8', errors='replace', timeout=60)
+                                    encoding='utf-8', errors='replace', timeout=60, creationflags=CREATE_NO_WINDOW)
             autofix_result = {
                 'mode': autofix_mode,
                 'returncode': af_run.returncode,
@@ -111,7 +113,7 @@ def orchestrate(ep_number: int, episode_path: str, skeptic_provider: str = 'olla
             ]
             print(f"[orchestrator] Running VNQA library check (H1-H7)...")
             vnqa_run = subprocess.run(vnqa_cmd, capture_output=True, text=True,
-                                      encoding='utf-8', errors='replace', timeout=120)
+                                      encoding='utf-8', errors='replace', timeout=120, creationflags=CREATE_NO_WINDOW)
             if vnqa_run.returncode == 0 and vnqa_path.exists():
                 with open(vnqa_path, encoding='utf-8') as f:
                     vnqa_result = json.load(f)
@@ -148,7 +150,7 @@ def orchestrate(ep_number: int, episode_path: str, skeptic_provider: str = 'olla
         '--provider', skeptic_provider,
     ]
     skeptic_run = subprocess.run(skeptic_cmd, capture_output=True, text=True,
-                                  encoding='utf-8', errors='replace', timeout=300)
+                                  encoding='utf-8', errors='replace', timeout=300, creationflags=CREATE_NO_WINDOW)
     if skeptic_run.returncode != 0:
         result = {
             'ep_number': ep_number,

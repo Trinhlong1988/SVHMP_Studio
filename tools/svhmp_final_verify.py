@@ -5,6 +5,8 @@ import re
 import sys
 import atexit
 import subprocess
+
+CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
 from collections import Counter
 
 # Round 14 dashboard live hook
@@ -88,6 +90,6 @@ print('=== PREFLIGHT 11 rules ===')
 for fn in SPECS_NAMES:
     p = os.path.join(WD, f'spec_ep01_section_{fn}.json')
     r = subprocess.run(['python', r'C:\tmp\svhmp_preflight_qa.py', p],
-                       capture_output=True, text=True, encoding='utf-8')
+                       capture_output=True, text=True, encoding='utf-8', creationflags=CREATE_NO_WINDOW)
     print(f'  s{fn[0]}: {r.stdout.splitlines()[0]}')
 _prog.done(success=(total_remaining == 0), final_path=f'final_verify_ep01 — {total_remaining} bug remaining')

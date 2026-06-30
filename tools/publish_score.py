@@ -14,6 +14,8 @@ Fail = KILL SWITCH (R142): không publish, quay lại fix.
 """
 import sys
 import subprocess
+
+CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
 from pathlib import Path
 
 BASE = Path(r"D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio")

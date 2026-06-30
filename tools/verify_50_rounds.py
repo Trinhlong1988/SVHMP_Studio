@@ -19,6 +19,8 @@ Audits run:
 13. audit_continuity_cross_ep
 """
 import subprocess
+
+CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
 import sys
 import json
 from pathlib import Path
@@ -44,7 +46,7 @@ def run_audit(name, script, args):
         cmd = [sys.executable, str(SVHMP / 'tools' / script)]
         if args:
             cmd.extend(args.split())
-        result = subprocess.run(cmd, cwd=SVHMP, capture_output=True, text=True, encoding='utf-8', errors='replace', timeout=120)
+        result = subprocess.run(cmd, cwd=SVHMP, capture_output=True, text=True, encoding='utf-8', errors='replace', timeout=120, creationflags=CREATE_NO_WINDOW)
         output = result.stdout + result.stderr
         # Extract SUMMARY line + short report
         summary_lines = [l for l in output.split('\n') if 'SUMMARY' in l or 'Total' in l or '✓' in l or '⚠' in l or 'ALL' in l]
@@ -63,7 +65,7 @@ def run_post_render_gate_all():
     for ep in range(1, 51):
         cmd = [sys.executable, str(SVHMP / 'tools' / 'post_render_gate.py'), '--ep', str(ep)]
         try:
-            result = subprocess.run(cmd, cwd=SVHMP, capture_output=True, text=True, encoding='utf-8', errors='replace', timeout=60)
+            result = subprocess.run(cmd, cwd=SVHMP, capture_output=True, text=True, encoding='utf-8', errors='replace', timeout=60, creationflags=CREATE_NO_WINDOW)
             if '0 FAIL' in result.stdout:
                 pass_count += 1
             else:

@@ -15,6 +15,8 @@ Per cell (R_i × EP_N):
   Log result per cell
 """
 import subprocess
+
+CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
 import sys
 import re
 import json
@@ -61,8 +63,7 @@ def main():
 
         # Run audit once to populate report
         subprocess.run([sys.executable, f'tools/{audit_s}', '--summary'],
-                       capture_output=True, cwd=SVHMP)
-
+                       capture_output=True, cwd=SVHMP, creationflags=CREATE_NO_WINDOW)
         for ep in range(1, 51):
             initial = count_violations_ep(audit_s, ep)
             if initial == 0:
@@ -81,10 +82,10 @@ def main():
                     # These scripts may not support --ep; run global
                     pass
                 fr = subprocess.run(fix_cmd, capture_output=True, text=True,
-                                   encoding='utf-8', errors='replace', cwd=SVHMP)
+                                   encoding='utf-8', errors='replace', cwd=SVHMP, creationflags=CREATE_NO_WINDOW)
                 # Re-audit
                 subprocess.run([sys.executable, f'tools/{audit_s}', '--summary'],
-                              capture_output=True, cwd=SVHMP)
+                              capture_output=True, cwd=SVHMP, creationflags=CREATE_NO_WINDOW)
                 new = count_violations_ep(audit_s, ep)
                 if new == current: break  # no progress
                 current = new

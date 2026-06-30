@@ -9,6 +9,8 @@ Usage:
 import argparse
 import sys
 import subprocess
+
+CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
 import yaml
 from pathlib import Path
 
@@ -72,6 +74,9 @@ def main():
 
     for f in fixes:
         fid = f["id"]
+        if "old" not in f or "new" not in f:
+            skipped.append((fid, "skipped (no old/new field, status: " + f.get("status", "unknown") + ")"))
+            continue
         old = f["old"]
         new = f["new"]
         verify = f.get("verify_rules", [])

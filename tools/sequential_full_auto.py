@@ -14,6 +14,8 @@ Per cell (EP_N × R_i):
 Extendable: thêm rule mới vào RULES list.
 """
 import subprocess
+
+CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
 import sys
 import json
 from pathlib import Path
@@ -38,7 +40,7 @@ def count_violations_ep(rpt_name, ep):
 
 def audit_then_count(audit_s, rpt, ep):
     subprocess.run([sys.executable, f'tools/{audit_s}', '--summary'],
-                   capture_output=True, cwd=SVHMP, timeout=60)
+                   capture_output=True, cwd=SVHMP, timeout=60, creationflags=CREATE_NO_WINDOW)
     return count_violations_ep(rpt, ep)
 
 def main():
@@ -60,7 +62,7 @@ def main():
             if initial > 0:
                 # Apply fix
                 subprocess.run([sys.executable, f'tools/{fix_s}', '--apply'],
-                              capture_output=True, cwd=SVHMP, timeout=120)
+                              capture_output=True, cwd=SVHMP, timeout=120, creationflags=CREATE_NO_WINDOW)
                 final = audit_then_count(audit_s, rpt, ep)
             else:
                 final = 0

@@ -114,6 +114,8 @@ def call_provider(provider_id: str, prompt: str, system: Optional[str] = None, *
         try:
             import ollama
             import subprocess
+
+CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
             client = ollama.Client()
             messages = []
             if system:
@@ -133,7 +135,7 @@ def call_provider(provider_id: str, prompt: str, system: Optional[str] = None, *
             # (Ollama keep_alive=0 chỉ unload model logically, CUDA context vẫn giữ ~7GB)
             try:
                 subprocess.run(['taskkill', '/F', '/IM', 'llama-server.exe'],
-                              capture_output=True, timeout=5)
+                              capture_output=True, timeout=5, creationflags=CREATE_NO_WINDOW)
             except Exception:
                 pass  # best-effort, không break flow
             return result
@@ -149,7 +151,7 @@ def free_ollama_vram():
     try:
         import subprocess
         subprocess.run(['taskkill', '/F', '/IM', 'llama-server.exe'],
-                       capture_output=True, timeout=5)
+                       capture_output=True, timeout=5, creationflags=CREATE_NO_WINDOW)
         return True
     except Exception:
         return False

@@ -20,6 +20,8 @@ import argparse
 import json
 import sys
 import subprocess
+
+CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
 from pathlib import Path
 from datetime import datetime
 

@@ -10,6 +10,8 @@ Each round:
 Early-stop nếu 5 vòng KHÔNG có thay đổi.
 """
 import subprocess
+
+CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
 import sys
 import json
 import re
@@ -43,7 +45,7 @@ def audit_count(audit_script):
     """Run audit, parse violation count."""
     r = subprocess.run([sys.executable, f'tools/{audit_script}', '--summary'],
                       capture_output=True, text=True, encoding='utf-8', errors='replace',
-                      cwd=SVHMP, timeout=180)
+                      cwd=SVHMP, timeout=180, creationflags=CREATE_NO_WINDOW)
     # Try multiple patterns
     for pat in [r'SUMMARY:?\s*(\d+)\s*HIGH', r'Total:\s*(\d+)', r'Total\s+violations?:\s*(\d+)',
                 r'(\d+)\s*HIGH\s*violations']:
@@ -55,7 +57,7 @@ def apply_fix(fix_script):
     if not fix_script: return 0
     r = subprocess.run([sys.executable, f'tools/{fix_script}', '--apply'],
                       capture_output=True, text=True, encoding='utf-8', errors='replace',
-                      cwd=SVHMP, timeout=180)
+                      cwd=SVHMP, timeout=180, creationflags=CREATE_NO_WINDOW)
     for pat in [r'Total:\s*(\d+)', r'fixes=(\d+)', r'(\d+)\s*changes?\s*in', r'(\d+)\s*phrase\s*fixes']:
         m = re.search(pat, r.stdout)
         if m: return int(m.group(1))

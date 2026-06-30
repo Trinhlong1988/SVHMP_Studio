@@ -5,6 +5,8 @@ Usage:
 """
 import argparse
 import subprocess
+
+CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
 import sys
 from pathlib import Path
 import soundfile as sf
@@ -60,7 +62,7 @@ def main():
             args.output
         ]
 
-    r = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
+    r = subprocess.run(cmd, capture_output=True, text=True, timeout=300, creationflags=CREATE_NO_WINDOW)
     if r.returncode != 0:
         print(f"ERROR: ffmpeg failed:\n{r.stderr[-500:]}")
         sys.exit(1)

@@ -24,6 +24,8 @@ Why exists:
 import re
 import sys
 import subprocess
+
+CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
 from pathlib import Path
 
 SVHMP = Path(__file__).resolve().parent.parent
@@ -89,7 +91,7 @@ def check_staged() -> int:
     r = subprocess.run(['git', 'diff', '--cached', '--unified=0', '--',
                         'bible/00_constitution.yaml', 'bible/05_audio_bible.yaml'],
                        capture_output=True, text=True, encoding='utf-8',
-                       errors='replace', cwd=SVHMP)
+                       errors='replace', cwd=SVHMP, creationflags=CREATE_NO_WINDOW)
     diff = r.stdout
     # Patterns for ADDED lines defining new rule
     add_top = re.compile(r'^\+R(\d+)_[a-zA-Z]', re.MULTILINE)
