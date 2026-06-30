@@ -21,6 +21,23 @@ if [ -n "$staged_bible" ]; then
   fi
 fi
 
+# === SECTION D: RULE MENTION CODIFIED GUARD (CMD LEAD 30/6) ===
+# Chặn cứng pattern CMD #2: PING/memory mention "R{N} codified" mà KHÔNG flush bible/00.
+# Precedent 30/6: R110-R172 (14 orphan) + R175-R180 (5 orphan) = 19 rules test orphan.
+echo "=== SVHMP RULE MENTION GUARD ==="
+if ! PYTHONIOENCODING=utf-8 python tools/check_rule_mention_codified.py --staged; then
+  echo ""
+  echo "==================================================================="
+  echo "✗✗✗ RULE MENTION ORPHAN — COMMIT BLOCKED"
+  echo "==================================================================="
+  echo "Staged diff claim 'R{N} codified' nhưng bible/00 chưa có entry."
+  echo "Fix: either (a) actually codify rule R{N} bible/00, OR"
+  echo "     (b) remove claim từ PING/memory text."
+  echo "Run: python tools/check_rule_mention_codified.py --staged"
+  echo "KHÔNG dùng --no-verify (Mr.Long lệnh nghiêm cấm)."
+  exit 1
+fi
+
 # === SECTION C: MASS-REPLACE LOG GUARD (CMD LEAD 29/6) ===
 # Detect mass-replace pattern (≥10 instances cùng word→word trong staged diff)
 # → require log entry trong RENAME_LOG.md (precedent: Hắc Vỹ Dạ → Hắc Dạ Ký revert silent)
