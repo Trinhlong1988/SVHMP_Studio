@@ -14,6 +14,10 @@ import sys
 import re
 from pathlib import Path
 
+# CMD LEAD 30/6 Round 19.31: CREATE_NO_WINDOW cho mọi subprocess — Mr.Long lệnh ẩn nháy
+CREATE_NO_WINDOW = 0x08000000 if sys.platform == "win32" else 0
+PYW = sys.executable.replace("python.exe", "pythonw.exe") if Path(sys.executable.replace("python.exe", "pythonw.exe")).exists() else sys.executable
+
 ROOT = Path(r"D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio")
 EPISODE = ROOT / "output/ep_01/episode.md"
 SECTIONS = ROOT / "output/ep_01/sections"
@@ -27,10 +31,11 @@ def p(msg):
 def log(category, msg):
     try:
         subprocess.run(
-            ["python", str(LOG_PING), category, msg],
+            [PYW, str(LOG_PING), category, msg],
             capture_output=True,
             env={**os.environ, "PYTHONIOENCODING": "utf-8"},
             timeout=10,
+            creationflags=CREATE_NO_WINDOW,
         )
     except: pass
 
@@ -38,10 +43,11 @@ def log(category, msg):
 def stage_1():
     try:
         r = subprocess.run(
-            ["python", str(ROOT / "tools/qa_eol_diacritic.py"), str(EPISODE)],
+            [PYW, str(ROOT / "tools/qa_eol_diacritic.py"), str(EPISODE)],
             capture_output=True, text=True, encoding="utf-8",
             env={**os.environ, "PYTHONIOENCODING": "utf-8"},
             timeout=30,
+            creationflags=CREATE_NO_WINDOW,
         )
         return r.returncode == 0
     except: return False
@@ -53,10 +59,11 @@ def stage_3(section):
         return None
     try:
         r = subprocess.run(
-            ["python", str(ROOT / "tools/qa_post_render.py"), str(wav)],
+            [PYW, str(ROOT / "tools/qa_post_render.py"), str(wav)],
             capture_output=True, text=True, encoding="utf-8",
             env={**os.environ, "PYTHONIOENCODING": "utf-8"},
             timeout=30,
+            creationflags=CREATE_NO_WINDOW,
         )
         return r.returncode == 0
     except: return None
@@ -138,9 +145,10 @@ def main():
         # CMD LEAD 29/6 23:35: wire verify_ping_claim mỗi iter — auto-catch CMD #2 claim sai
         try:
             r = subprocess.run(
-                ["python", str(ROOT / "tools/verify_ping_claim.py"), "--recent", "5"],
+                [PYW, str(ROOT / "tools/verify_ping_claim.py"), "--recent", "5"],
                 capture_output=True, text=True, encoding="utf-8",
                 env={**os.environ, "PYTHONIOENCODING": "utf-8"}, timeout=60,
+                creationflags=CREATE_NO_WINDOW,
             )
             m = re.search(r"VERIFIED=(\d+)\s+FAILED=(\d+)\s+UNKNOWN=(\d+)", r.stdout)
             if m:

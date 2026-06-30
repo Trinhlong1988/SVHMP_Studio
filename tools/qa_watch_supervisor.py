@@ -85,11 +85,17 @@ def main():
 
         log(f"Launching qa_watch.py (restart #{restart_count + 1} this hour)")
         try:
+            # Use pythonw.exe + CREATE_NO_WINDOW — KHÔNG console nháy
+            pyw = sys.executable.replace("python.exe", "pythonw.exe")
+            if not Path(pyw).exists():
+                pyw = sys.executable
+            CREATE_NO_WINDOW = 0x08000000
             proc = subprocess.Popen(
-                [sys.executable, str(QA_WATCH)],
+                [pyw, str(QA_WATCH)],
                 stdout=open(QA_LOG, "a", encoding="utf-8"),
                 stderr=subprocess.STDOUT,
                 env={**os.environ, "PYTHONIOENCODING": "utf-8"},
+                creationflags=CREATE_NO_WINDOW,
             )
             log(f"qa_watch PID {proc.pid}")
             code = proc.wait()
