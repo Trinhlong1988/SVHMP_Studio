@@ -16,7 +16,7 @@
        ┌─────────────┼─────────────┐
        │             │             │
 ┌──────▼──────┐ ┌────▼────────┐ ┌──▼──────────┐
-│  CMD LEAD   │ │  CMD #2     │ │ CMD #3      │
+│  CMD LEAD   │ │  CMD THỰC THI     │ │ CMD #3      │
 │  (em)       │ │  RENDER     │ │ QA WATCH    │
 │             │ │             │ │ (60s loop)  │
 │ APPLY fix   │ │ RENDER TTS  │ │ DETECT only │
@@ -40,13 +40,13 @@ CMD #3 qa_watch.py → log VIOLATION với từ + line CỤ THỂ
 → Em git commit (pre-commit hook auto-validate)
 ```
 
-### Trigger 2: CMD #2 ship section render
+### Trigger 2: CMD THỰC THI ship section render
 ```
-CMD #2 render_section.py done → log [RENDER]
+CMD THỰC THI render_section.py done → log [RENDER]
 → CMD #3 next iter (60s) detect file mới → STAGE 3 audit
 → Log [AUDIT] PASS/FAIL
 → Nếu FAIL: CMD LEAD đọc → action (rerender / text fix)
-→ Nếu PASS: CMD #2 next section
+→ Nếu PASS: CMD THỰC THI next section
 ```
 
 ### Trigger 3: Em commit changes
@@ -65,8 +65,8 @@ Em git commit
 | Rule | Owner | Hardlock |
 |------|-------|----------|
 | R86 EOL diacritic | All | qa_eol_diacritic.py |
-| R90 STAGE 1 inline | CMD #2 | svhmp_v13_render.py:206 sys.exit(2) |
-| R91 MASTER_PIPELINE_LOCK | CMD #2 | pipeline v66 LOCKED, cấm reactive |
+| R90 STAGE 1 inline | CMD THỰC THI | svhmp_v13_render.py:206 sys.exit(2) |
+| R91 MASTER_PIPELINE_LOCK | CMD THỰC THI | pipeline v66 LOCKED, cấm reactive |
 | R92 + R92b SELF-VERIFY | All | propose text → check R86 trước |
 | R-ID conflict | All | .githooks/pre-commit SECTION A |
 | R41 post_render_gate | All | .githooks/pre-commit SECTION B |
@@ -77,9 +77,9 @@ Em git commit
 |---------|-----------|--------|
 | `PING_CMD_LEAD_29_06.md` | All → All | AUTO LOG via `log_ping.py CATEGORY "msg"` |
 | `COORDINATION_HUB.md` (THIS) | LEAD → All | Static protocol doc, update khi rule mới |
-| `BUG_CATALOG_29_06.md` | CMD #2 → All | Session bug summary |
+| `BUG_CATALOG_29_06.md` | CMD THỰC THI → All | Session bug summary |
 | `git log --oneline` | All → All | Source of truth for repo state |
-| `output/ep_01/sections/*.wav` | CMD #2 → CMD #3 | Render artifacts |
+| `output/ep_01/sections/*.wav` | CMD THỰC THI → CMD #3 | Render artifacts |
 
 ## 🚨 Anti-patterns (cấm)
 
@@ -101,5 +101,5 @@ Em git commit
 ## ⏭️ Next workflow
 
 1. CMD #3 qa_watch.py restart với whitelist mới → expect 0 R98 violations
-2. CMD #2 mix REVEAL/PAYOFF/CLIFFHANGER + music → concat full EP01 master
+2. CMD THỰC THI mix REVEAL/PAYOFF/CLIFFHANGER + music → concat full EP01 master
 3. CMD LEAD verify post_render_gate PASS full EP → ship batch EP02-50 R86 fix
