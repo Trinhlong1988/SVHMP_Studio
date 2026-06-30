@@ -21,8 +21,8 @@ sys.stdout.reconfigure(encoding='utf-8') if hasattr(sys.stdout, 'reconfigure') e
 SVHMP = Path(r'D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio')
 
 INTRO_ELEMENTS = [
-    # 2026-06-29 R108 brand sync — comma version "Hắc, Dạ, Ký" (TTS pronunciation fix Mr.Long approved)
-    'Hắc, Dạ, Ký',  # brand presence (any form)
+    # 2026-06-30 R108 brand: "Hắc Dạ Ký" plain (Mr.Long revert comma 10:42 — comma pause quá xa)
+    'Hắc Dạ Ký',
     'chuyện kể từ cõi vô hình',
     'Loạt truyện',
     'Chuyến xe cuối cùng về đâu',

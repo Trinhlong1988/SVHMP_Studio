@@ -2485,13 +2485,20 @@ rule_R183_register_consistency:
     - 'dialogue gần gũi (cô-cháu) KHÔNG mix với formal speech'
   enforce: per-character voice profile (R178)
 
-rule_R184_metaphor_sanity:
-  description: "Metaphor phải logic + cultural Vietnamese"
-  severity: Minor
-  example_violations:
-    - 'Tiếng chuông như bóng tối phủ xuống (mixed sensory)'
-    - 'Trái tim đập như tia chớp (cường độ mismatch)'
-  enforce: manual review + corpus-based novelty score
+rule_R184_ai_style_sentence_detector:
+  description: |
+    Phát hiện các pattern câu LLM-generic "AI tone" — câu đối xứng quá đều, kết luận khuôn mẫu,
+    transition từ ngữ phổ biến.
+  severity: Major
+  ai_pattern_examples:
+    - "Tóm lại..."
+    - "Cuối cùng..."
+    - "Trong khoảnh khắc ấy..."
+    - "Điều quan trọng là..."
+    - "Có thể nói rằng..."
+    - "Cảm giác như..."
+    - 5+ câu liên tiếp cùng cấu trúc (Subject+Verb đầu)
+  enforce: tools/qa_ai_style.py (TBD build) — score per chunk based on N-gram + sentence rhythm
 
 rule_R185_corpus_collocation_db:
   description: |
@@ -2594,3 +2601,53 @@ R141_codified_from_test_stub:
     FN: 0
     report: tests/regression/regression_report.json
   status: stub_pending_full_spec
+
+
+# ============================================================
+# R186 + R187 — Tier 2.2 additions (Mr.Long lock 30/6 13:00)
+# ============================================================
+
+rule_R186_metaphor_sanity:
+  description: "Metaphor phải logic + cultural Vietnamese (renamed from R184 — separate concern)"
+  severity: Minor
+  example_violations:
+    - 'Tiếng chuông như bóng tối phủ xuống (mixed sensory)'
+    - 'Trái tim đập như tia chớp (cường độ mismatch)'
+  enforce: manual review + corpus-based novelty score
+
+rule_R187_vietnamese_language_judge:
+  description: |
+    Aggregate scoring module — chấm tổng thể độ TỰ NHIÊN Vietnamese của episode.
+    Run AFTER all sub-rules R180-R186, output 5-dim score + final verdict.
+  severity: Critical
+  dimensions:
+    collocation_score: "R180/R181/R182 compositive (% safe pairs)"
+    register_score: "R183 character voice consistency"
+    ai_style_score: "R184 inverse (low AI pattern = high)"
+    metaphor_score: "R186 (sane/insane ratio)"
+    natural_score: "Subjective per-chunk LLM judge (Claude/external API)"
+  output_format:
+    - score_per_dim: 0-100
+    - aggregate_score: weighted avg
+    - verdict: PASS (≥80) / REVIEW (60-79) / REJECT (<60)
+    - flagged_lines: list specific concerns
+  enforce: tools/language_judge.py (TBD build — LLM call required)
+  human_loop: "REVIEW verdict → người duyệt quyết tranh cãi"
+
+# Tier 2.2 architecture
+tier_2_2_vietnamese_language_layer:
+  description: "Vietnamese Language Layer ĐỘC LẬP khỏi Logic QA (Mr.Long lock 30/6 13:00)"
+  pipeline: "WRITER → LOGIC QA (8 tools) → LANGUAGE JUDGE (R180-R187) → REPAIR (R161) → AUDIO GATE → FINAL"
+  modules:
+    R180: Collocation QA (built bible/00)
+    R181: Verb-Noun Compatibility (built bible/00)
+    R182: Adj-Noun Compatibility (built bible/00)
+    R183: Register Consistency (built bible/00)
+    R184: AI-style Sentence Detector (UPDATED)
+    R186: Metaphor Sanity (moved from old R184)
+    R187: Vietnamese Language Judge (aggregate)
+  build_status:
+    rules_codified: 7/7
+    tools_built: 0/7 (all TBD)
+    next_milestone: Build tools/qa_collocation.py + tools/qa_ai_style.py + tools/language_judge.py
+  human_loop_policy: "REVIEW score 60-79 → Mr.Long verify"

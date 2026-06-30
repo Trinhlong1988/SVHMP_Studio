@@ -74,3 +74,40 @@ regression_validation:
   golden_text_status: LOCKED
   golden_audio_status: NOT_YET_RENDERED
   next_step: Render EP01 v86 → lock Golden Audio
+
+
+# ============================================================
+# GOLDEN AUDIO LOCK — EP01_FULL_v103.mp3 (Mr.Long accept 30/6 12:08)
+# ============================================================
+
+golden_audio_ep01_locked:
+  file: output/ep_01/EP01_FULL_v103.mp3
+  size_mb: 11.69
+  duration_sec: 1147.29
+  duration_human: 19m07s
+  rendered_at: 2026-06-30T12:03:18
+  locked_at: 2026-06-30T12:08:00
+  approved_by: Mr.Long ("hắc dạ ký khá ok rồi" + "như v103 vừa gen là ok rồi")
+
+  audio_metrics:
+    peak_dbfs: 0.98
+    lufs_i: -20.99
+    true_peak_dbtp: 0.98
+    noise_floor_dbfs: -34.42
+    silence_ratio_pct: 9.15
+    longest_silence_sec: 1.581
+    clip_count: 8
+    dc_offset_dbfs: -85.64
+    sample_rate_hz: 44100
+    bit_depth: MP3-VBR
+
+  qa_gates:
+    R94b_concat_silence: PASS (5/5 boundaries)
+    publish_score_text: PASS (Logic 100, Language 100, TTS 100)
+    audio_metrics_strict: FAIL (clip 8 samples — Mr.Long accept as acceptable)
+    setup_stage3: FAIL legacy (peak -0.0 ngưỡng — Mr.Long accept)
+    cliffhanger_stage3: FAIL (R96 onset inherent — Mr.Long accept)
+
+  text_source: output/ep_01/episode_golden_text.md (35+ fix Mr.Long catch + 7 batch fixes via tool)
+  
+  brand: "Hắc Dạ Ký" plain (no syllable separator) — Mr.Long verified pronunciation OK
