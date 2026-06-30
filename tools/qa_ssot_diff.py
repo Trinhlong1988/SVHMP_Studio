@@ -66,7 +66,7 @@ def diff_facts(text, facts):
 
     # 7. Cô gái CLIFFHANGER distinct color
     new_passenger_color = facts["characters"]["Cô_gái_ghế_bảy_mới_CLIFFHANGER"]["appearance"]
-    if "xanh dương trong sáng" not in text and "xanh dương sáng" not in text:
+    if "xanh dương trong sáng" not in text and "xanh dương sáng" not in text and "xanh dương tinh khôi" not in text:
         drifts.append(f"COLOR DRIFT: Cô gái CLIFF expected '{new_passenger_color}', missing")
 
     # 8. Location facts

@@ -425,7 +425,7 @@ Anh không biết là mưa, hay là gì khác.
 
 Trên ghế mười hai, anh trung niên chậm rãi mở tờ giấy gấp tư.
 
-Một dòng chữ viết tay rất ngắn. Người trung niên đọc nó một lần, rồi lặng lẽ gập tờ giấy đó lại như lúc đầu, đặt bàn tay phải lên ngực, nơi trái tim đang đập từng nhịp khẽ khàng êm đềm.
+Một dòng chữ viết tay rất ngắn. Người trung niên đọc nó một lần, rồi lặng lẽ gấp tờ giấy lại như ban đầu, áp bàn tay phải lên ngực, như muốn cất từng câu chữ vào nơi trái tim đang đập êm đềm.
 
 Bác tài ngước nhanh lên gương chiếu hậu thêm một thoáng.
 
@@ -439,9 +439,9 @@ Một ngọn đèn vàng hiện lên nơi cuối con dốc.
 
 Anh từ từ đứng lên rồi bước đi. Bàn tay anh buông lỏng tự khi nào — chiếc đồng hồ trượt khỏi lòng tay, rơi êm xuống nệm chiếc ghế bỏ trống số bảy, vỏ xà cừ phản chiếu ánh đèn cabin một thoáng.
 
-Anh không buồn nhặt nó lên — cũng không nhận ra mình vừa đánh rơi điều gì.
+Anh không buồn nhặt nó lên — chiếc đồng hồ ở lại với chiếc ghế trống, như chính anh đang lặng lẽ để lại quá khứ.
 
-Lồng ngực anh chậm lại — như có ai đỡ vai anh từ phía sau. Anh dõi mắt theo cửa xe, ánh nhìn rất xa.
+Lồng ngực anh chậm lại — như có một bàn tay vô hình đặt nhẹ lên ngực, ru nhịp thở anh dần êm. Anh dõi mắt theo cửa xe, ánh nhìn rất xa.
 
 Đèn vàng le lói cách xe khoảng năm chục mét — Cầu Long Biên.
 
@@ -499,7 +499,7 @@ Bác tài chậm rãi đặt tay lên vô-lăng. [pause:1500ms] Xe chạy tiếp
 
 ## 6. CLIFFHANGER (~210 từ — 13:00—14:30) [beat_5: DƯ ÂM mandatory]
 
-Vậy mà chỉ vài giây sau, trên chiếc ghế số bảy đã có một cô gái trẻ ngồi sẵn từ lúc nào — tóc xõa ngang vai, khoác áo gió xanh dương trong sáng. Cô không nhận ra mình lên xe vào lúc nào.
+Vậy mà chỉ vài giây sau, trên chiếc ghế số bảy đã có một cô gái trẻ ngồi sẵn từ lúc nào — tóc xõa ngang vai, khoác áo gió xanh dương tinh khôi. Cô không nhận ra mình lên xe vào lúc nào.
 
 Nhìn xuống ghế cạnh mình, cô thấy chiếc đồng hồ đang nằm đó — vỏ xà cừ, kim chỉ bảy giờ mười.
 
@@ -527,7 +527,7 @@ Bác tài ngước nhẹ lên gương, ánh mắt hướng về phía cô gái v
 
 — Chưa tới lúc đâu cháu ạ.
 
-[pause:2000ms]
+[pause:2800ms]
 
 Đồng hồ rồi sẽ điểm sang một ngày mới...
 

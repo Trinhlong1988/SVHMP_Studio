@@ -72,10 +72,26 @@ fixes:
     verify_rules: [R86, R111]
     note: "'đi' ngang tone safe + replace 'radio' → 'chiếc đài cũ' (consistent với 'đài radio cũ kỹ' L184)"
 
+  - id: F023
+    reason: "L428 'đặt bàn tay lên ngực' thiếu purpose. Mr.Long catch: làm gì? Cần clarify ý nghĩa cử chỉ."
+    old: "đưa bàn tay phải lên áp vào ngực — như muốn giữ những lời ấy vào sâu trong lòng."
+    new: "áp bàn tay phải lên ngực, như muốn cất từng câu chữ vào nơi trái tim đang đập êm đềm."
+    section: REVEAL
+    verify_rules: [R86, R111, R180]
+    note: "Clarify purpose (giữ kỷ niệm vào tim) + 'lòng' huyền tone EOL safe"
+
+  - id: F022
+    reason: "L428 'gập tờ giấy đó lại' sai collocation — phải 'GẤP' (giấy gấp tư L426). Mr.Long catch R180 verb-noun. 'gập' dùng cho sách/người gập, 'gấp' dùng cho giấy."
+    old: "lặng lẽ gập tờ giấy đó lại như lúc đầu"
+    new: "lặng lẽ gấp tờ giấy lại như ban đầu"
+    section: REVEAL
+    verify_rules: [R86, R111, R180]
+    note: "gập → gấp (collocation đúng giấy), 'đó' → bỏ, 'lúc đầu' → 'ban đầu' (formal natural)"
+
   - id: F012
     reason: "L458 cô gái 8 'đưa tay ra...đặt lên ghế' hành động không rõ — Mr.Long catch v103"
     old: "Cô gái ghế tám đưa tay ra — không chạm vào anh, chỉ đặt bàn tay lên ghế cạnh anh."
-    new: "Cô gái ghế tám khẽ đưa tay chạm nhẹ vào thành ghế cạnh anh — một cử chỉ tiễn biệt thầm lặng."
+    new: "Cô gái ghế tám khẽ đưa tay chạm nhẹ vào thành ghế cạnh anh — như muốn nói lời chia tay không thành tiếng."
     section: REVEAL
     verify_rules: [R86, R111, R180]
     note: "Clarify action purpose (farewell gesture). 'lặng' nặng EOL — fix tail"
