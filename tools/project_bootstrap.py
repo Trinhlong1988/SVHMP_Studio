@@ -58,17 +58,20 @@ def step1_kill_old_supervisor():
 
 
 def step2_launch_supervisor():
-    section("Launch fresh qa_watch_supervisor", 2)
+    section("Launch fresh qa_watch_supervisor (hidden window)", 2)
     log_path = SVHMP / "runtime" / "realtime_logs" / "qa_watch_supervisor.log"
     log_path.parent.mkdir(exist_ok=True, parents=True)
-    # Detached background
+    # Use pythonw.exe (no console window) — Mr.Long lệnh ẩn supervisor
+    pyw = sys.executable.replace("python.exe", "pythonw.exe")
+    if not Path(pyw).exists():
+        pyw = sys.executable
+    CREATE_NO_WINDOW = 0x08000000
     subprocess.Popen(
-        [sys.executable, str(SVHMP / "tools" / "qa_watch_supervisor.py")],
+        [pyw, str(SVHMP / "tools" / "qa_watch_supervisor.py")],
         cwd=SVHMP,
         stdout=open(log_path, "a", encoding="utf-8"),
         stderr=subprocess.STDOUT,
-        creationflags=subprocess.CREATE_NEW_PROCESS_GROUP | subprocess.DETACHED_PROCESS
-            if hasattr(subprocess, 'DETACHED_PROCESS') else 0,
+        creationflags=CREATE_NO_WINDOW,
     )
     time.sleep(4)
     out, _ = run([
@@ -172,6 +175,15 @@ NGAY: load context + signal Mr.Long ready
     PROMPT_THUCTHI_FILE.write_text(cmd2, encoding="utf-8")
     print(f"  ✓ {PROMPT_LEAD_FILE.name} ({len(lead)} chars)")
     print(f"  ✓ {PROMPT_THUCTHI_FILE.name} ({len(cmd2)} chars)")
+    # Ship .md ra Desktop cho Mr.Long mở dễ
+    import os as _os
+    desktop = Path(_os.path.join(_os.path.expanduser("~"), "Desktop"))
+    desktop_lead = desktop / "PROMPT_CMD_LEAD.md"
+    desktop_thucthi = desktop / "PROMPT_CMD_THUC_THI.md"
+    desktop_lead.write_text(f"# PROMPT CMD LEAD\n\n```\n{lead}\n```\n", encoding="utf-8")
+    desktop_thucthi.write_text(f"# PROMPT CMD THỰC THI\n\n```\n{cmd2}\n```\n", encoding="utf-8")
+    print(f"  ✓ Desktop\\{desktop_lead.name}")
+    print(f"  ✓ Desktop\\{desktop_thucthi.name}")
 
 
 def step8_open_terminals():
@@ -180,21 +192,23 @@ def step8_open_terminals():
     wt = subprocess.run(["where", "wt.exe"], capture_output=True, text=True)
     if wt.returncode == 0:
         try:
+            # chcp 65001 trước khi launch shell — UTF-8 cho tiếng Việt
             subprocess.Popen([
                 "wt.exe",
                 "new-tab", "--title", "CMD-LEAD", "-d", str(SVHMP),
+                "cmd", "/k", "chcp 65001 >nul && echo === CMD-LEAD ready - go: claude ===",
                 ";",
                 "new-tab", "--title", "CMD-THUC-THI", "-d", str(SVHMP),
+                "cmd", "/k", "chcp 65001 >nul && echo === CMD-THUC-THI ready - go: claude ===",
             ])
-            print("  ✓ Windows Terminal 2 tabs opened (CMD-LEAD + CMD-THUC-THI)")
-            print(f"  Trong mỗi tab gõ: claude")
+            print("  ✓ Windows Terminal 2 tabs opened (CMD-LEAD + CMD-THUC-THI) + chcp 65001 UTF-8")
             return
         except Exception as e:
             print(f"  [WARN] wt.exe failed: {e}")
-    # Fallback: 2 cmd windows
-    subprocess.Popen(["cmd", "/c", "start", "cmd", "/k", f"cd /d {SVHMP} && echo CMD-LEAD ready - go ahead and run: claude"])
-    subprocess.Popen(["cmd", "/c", "start", "cmd", "/k", f"cd /d {SVHMP} && echo CMD-THUC-THI ready - go ahead and run: claude"])
-    print("  ✓ 2 CMD windows opened (fallback — wt.exe not found)")
+    # Fallback: 2 cmd windows với chcp 65001
+    subprocess.Popen(["cmd", "/c", "start", "cmd", "/k", f"chcp 65001 >nul && cd /d {SVHMP} && echo CMD-LEAD ready - go: claude"])
+    subprocess.Popen(["cmd", "/c", "start", "cmd", "/k", f"chcp 65001 >nul && cd /d {SVHMP} && echo CMD-THUC-THI ready - go: claude"])
+    print("  ✓ 2 CMD windows opened + chcp 65001 (fallback — wt.exe not found)")
 
 
 def step9_clipboard_prompt():
