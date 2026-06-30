@@ -5,11 +5,127 @@
 # Loaded by: Generator (writing constraints) / QA Lock (HARD-FAIL audit) / TTS Director (no SFX violation) / Video Director (no visual violation)
 # Mục tiêu: 1 file duy nhất chứa identity + bất biến của series. Tránh AI trôi DNA sau 50-100 ep.
 
-version: 1.2
-lock_date: 2026-06-27 (round 5 — ALL rules HARD + pre-render scaffold mandatory)
-lock_trigger: "Mr.Long 27/6: 'tất cả rule phải cứng' + 'đọc kỹ trước render tránh làm đi làm lại'"
+version: 1.3
+lock_date: 2026-06-30 (R_SUPREME workflow lock + Tier sequencing)
+lock_trigger: "Mr.Long docx 30/6 21:30: 'STOP Feature Development. Build->Verify->Freeze->Tag->Build tiếp'"
 authority: Mr.Long
-supersedes: 1.1
+supersedes: 1.2
+
+
+# ============================================================
+# R_SUPREME — TỐI THƯỢNG (Mr.Long lock 30/6 21:30 — docx)
+# Đứng trên tất cả rule khác. Vi phạm = STOP ALL WORK + ROLLBACK.
+# ============================================================
+
+rule_R_SUPREME_workflow_lock:
+  description: |
+    Hiến pháp tối thượng cho mọi Tier/Phase trong dự án này (và các dự án tương tự).
+
+    Bệnh PHẢI tránh: "Build -> Build -> Build" (xây thêm công cụ
+    nhưng chưa chứng minh công cụ hiện tại đã giải quyết vấn đề thực tế).
+
+    Workflow ĐÚNG cứng:
+
+       Build
+        ↓
+       Unit Test
+        ↓
+       Regression Test
+        ↓
+       Production Validation
+        ↓
+       Freeze
+        ↓
+       Git Tag
+
+       (CHỈ sau Tag mới được Build Tier tiếp theo)
+  severity: TỐI_THƯỢNG  # Supreme — outranks all other rules
+  authority: Mr.Long
+  authority_source: docx "New Microsoft Word Document (2).docx" 30/6 21:30
+  enforcement_level: ABSOLUTE
+  exception_policy: ZERO
+
+  tier_sequencing_lock:
+    rule: "Không mở Tier N+1 cho đến khi Tier N hoàn thành chu trình Build->Test->Validate->Freeze->Tag"
+    examples:
+      - "Tier 2.2 (Vietnamese Language Layer) FROZEN until Tier 2.1 Golden Audio cert + Git Tag v2.1.0"
+      - "Tier 2.5 (SSOT migration) FROZEN until Tier 2.1 cert"
+      - "Tier 3.x FROZEN until Tier 2.x cert"
+
+  forbidden_patterns:
+    - "Build new feature trước khi verify existing feature hoạt động"
+    - "Codify rule mới mà chưa có unit test + regression cho rule cũ"
+    - "Spawn parallel build streams (multiple tiers in flight)"
+    - "Threshold tune trên data chưa cert Golden (xem R195)"
+    - "Lift any production lock without explicit Mr.Long approve"
+
+  mandatory_cycle_per_tier:
+    1_build: "Implement feature according to spec"
+    2_unit_test: "Per-module tests covering invariants + edge cases"
+    3_regression_test: "10-round regression with full metrics (PASS/FAIL counts, F1)"
+    4_production_validation: "Run on real production input + STRICT PROTOCOL report"
+    5_artifact_audit: "Verify all generated files match spec + sha256 lock where applicable"
+    6_mr_long_review: "Mr.Long reads report + listens (audio) + approves"
+    7_freeze: "Lock thresholds, schemas, sha256 in bible/* files"
+    8_git_tag: "git tag -a tierX.Y.Z -m '...' — creates immutable snapshot"
+
+  current_state_30_06:
+    active_tier: "Tier 2.1 closeout"
+    blocked_until_tier_2_1_freeze:
+      - "Tier 2.2 (R193 vn_style_db) — BUILT but FROZEN_FOR_FUTURE"
+      - "Tier 2.5 SSOT (R194 build_specs_from_episode) — BUILT but FROZEN_FOR_FUTURE"
+    workflow_step_now: "2_unit_test + 3_regression_test for Voice QA tools"
+    next_blocked_until_approval:
+      - "Render EP01 (Step 4_production_validation requires Mr.Long lift render lock)"
+      - "Golden Audio cert (Step 6 awaits successful render + listen)"
+
+  meta_rule:
+    statement: "This rule defines how all other rules are added, modified, frozen."
+    self_modification_policy: "R_SUPREME itself only changes via Mr.Long explicit re-lock with new docx authority."
+
+  test_process_failure_principle:
+    description: |
+      Mr.Long lock 30/6 21:45:
+      "Mỗi lần Mr.Long đào sâu mà phát hiện bug mới, hãy coi đó là thất bại của
+      quy trình kiểm thử, không chỉ là thất bại của module. Sau khi sửa bug,
+      hãy đề xuất thay đổi quy trình hoặc bổ sung test để loại bug đó không
+      thể lọt qua lần nữa."
+    enforce_after_every_user_bug:
+      1: "Fix the immediate bug"
+      2: "Trace WHY existing QA missed it"
+      3: "Propose process change (new test / new rule / new gate / new audit step)"
+      4: "Apply the process change before continuing other work"
+      5: "Document in BUGS_FIXED.md with both module fix AND process change"
+    rationale: |
+      Treating user-found bugs as module-only failures preserves the testing
+      blind spot. Every Mr.Long-caught bug is evidence that the test suite
+      missed coverage — fixing the test (not just the code) prevents the
+      same class of bug.
+    examples_from_30_06:
+      - "Mr.Long catch L130+L132 'kính' lặp -> em fix episode -> phải add R177 adjacent-line check vào audit_phrase_repetition.py"
+      - "Mr.Long catch L480 'cái nhìn rất ngắn' -> em fix -> R180b codified + bible/36 collocation entry"
+      - "Mr.Long catch v108 audio drift -> em catalog -> R181b/R181c/R188-R191 entire Voice QA layer added"
+    severity: TỐI_THƯỢNG
+    applies_global: "Every project, every session, every CMD"
+
+  applies_global: |
+    Pattern reusable across all Mr.Long projects:
+    SVHMP / HDK / GLOBEWAY-5 / TSOnline / VSonline / art-pilot-filter /
+    rvc-vn / index-tts / vieneu-tts / ace-step / tro-ly / tai-xiu /
+    ComfyUI / piano-midi-gen / stable-audio-open / vpop-dataset.
+
+  references:
+    - R195 golden_audio_threshold_calibration
+    - R173 autonomous_execution (operates within R_SUPREME bounds)
+    - R171 technical_audit_protocol
+
+
+# ============================================================
+# UNIVERSAL HARD RULE ENFORCEMENT (v1.2 add 2026-06-27)
+# ============================================================
+# Mr.Long lệnh: "tất cả các rule phải cứng" — ALL rules hard, ZERO exception.
+# "đã là rule phải tuân thủ tuyệt đối — đọc kỹ trước khi render —
+#  phải có định hướng dựng chuẩn trước — tránh làm đi làm lại."
 
 # ============================================================
 # UNIVERSAL HARD RULE ENFORCEMENT (v1.2 add 2026-06-27)
@@ -2512,142 +2628,57 @@ rule_R185_corpus_collocation_db:
 
 # === FLUSHED FROM REGRESSION TEST by CMD LEAD ===
 
-R110_codified_from_test_stub:
-  # CODIFIED 2026-06-30 by CMD LEAD flush_rules_from_test.py
-  # Source: regression test PASS — TP=4 TN=50 FP=0 FN=0
-  # WARN: STUB only — em CMD LEAD chỉ flush từ test evidence
-  # TODO: fill rule/why/example từ memory hoặc CMD #2 spec gốc
-  rule: "STUB — em CMD LEAD chỉ flush từ regression test evidence. CMD ship rule cần fill full spec."
+R110_codified_from_test:
+  # CODIFIED 2026-06-30 Round 19.32 by CMD LEAD bible_audit fill_stub
+  # Source: docstring extract từ tools/qa_continuity.py
+  rule: "Narrative continuity hardlock — KHÔNG cho phép contradiction trong cùng EP: object location (đồng hồ, radio, giấy gấp tư) / scene physics (xe dừng/chạy, cửa xe mở/đóng) / character count (cô gái ghế 7/8, ông cụ) / NOT-X sau X."
+  why: |
+    Audience lose trust khi text contradict (vd L488 'tay vẫn ôm đồng hồ' khi L444 'rơi xuống ghế'). Mr.Long catch session 30/6 00:48.
   detection: tools/qa_continuity.py
-  test_evidence:
-    TP: 4
-    TN: 50
-    FP: 0
-    FN: 0
-    report: tests/regression/regression_report.json
-  status: stub_pending_full_spec
-
-R111_codified_from_test_stub:
-  # CODIFIED 2026-06-30 by CMD LEAD flush_rules_from_test.py
-  # Source: regression test PASS — TP=6 TN=50 FP=0 FN=1
-  # WARN: STUB only — em CMD LEAD chỉ flush từ test evidence
-  # TODO: fill rule/why/example từ memory hoặc CMD #2 spec gốc
-  rule: "STUB — em CMD LEAD chỉ flush từ regression test evidence. CMD ship rule cần fill full spec."
+  test_evidence: tests/regression/regression_report.json
+  status: filled_from_docstring_pending_cmd_thuc_thi_full_review
+R111_codified_from_test:
+  # CODIFIED 2026-06-30 Round 19.32 by CMD LEAD bible_audit fill_stub
+  # Source: docstring extract từ tools/qa_phonetic_safe.py
+  rule: "TTS phonetic safe-word audit — BigVGAN vocoder tạo 'phù phù' artifact với: aspirated consonant 'h' sau open vowel (thở ra, hơi thở) / long open vowel + period (an toàn., cao vút.) / short fragment EOL aspirated (cabin., cánh., phút.)."
+  why: |
+    Voice render TTS bị aspirated artifact perceptual unpleasant. Mr.Long catch L380 cabin / L402 khoang / L468 cao vút session 30/6.
   detection: tools/qa_phonetic_safe.py
-  test_evidence:
-    TP: 6
-    TN: 50
-    FP: 0
-    FN: 1
-    report: tests/regression/regression_report.json
-  status: stub_pending_full_spec
-
-R113_codified_from_test_stub:
-  # CODIFIED 2026-06-30 by CMD LEAD flush_rules_from_test.py
-  # Source: regression test PASS — TP=7 TN=50 FP=0 FN=0
-  # WARN: STUB only — em CMD LEAD chỉ flush từ test evidence
-  # TODO: fill rule/why/example từ memory hoặc CMD #2 spec gốc
-  rule: "STUB — em CMD LEAD chỉ flush từ regression test evidence. CMD ship rule cần fill full spec."
+  test_evidence: tests/regression/regression_report.json
+  status: filled_from_docstring_pending_cmd_thuc_thi_full_review
+R113_codified_from_test:
+  # CODIFIED 2026-06-30 Round 19.32 by CMD LEAD bible_audit fill_stub
+  # Source: docstring extract từ tools/qa_repeat_action.py
+  rule: "Action verb repeat hardlock — 1 action phrase ≥3 từ KHÔNG được lặp >2 lần / EP cùng wording. Nếu cần lặp >2 phải VARIED wording (chủ ý + uyển chuyển)."
+  why: |
+    Pattern Mr.Long catch session 30/6 01:09: 'liếc gương chiếu hậu' x4 / 'cúi xuống' x5 / 'thở ra' x6 không varied → reader feel mechanical.
   detection: tools/qa_repeat_action.py
-  test_evidence:
-    TP: 7
-    TN: 50
-    FP: 0
-    FN: 0
-    report: tests/regression/regression_report.json
-  status: stub_pending_full_spec
-
-R117_codified_from_test_stub:
-  # CODIFIED 2026-06-30 by CMD LEAD flush_rules_from_test.py
-  # Source: regression test PASS — TP=3 TN=50 FP=0 FN=0
-  # WARN: STUB only — em CMD LEAD chỉ flush từ test evidence
-  # TODO: fill rule/why/example từ memory hoặc CMD #2 spec gốc
-  rule: "STUB — em CMD LEAD chỉ flush từ regression test evidence. CMD ship rule cần fill full spec."
+  test_evidence: tests/regression/regression_report.json
+  status: filled_from_docstring_pending_cmd_thuc_thi_full_review
+R117_codified_from_test:
+  # CODIFIED 2026-06-30 Round 19.32 by CMD LEAD bible_audit fill_stub
+  # Source: docstring extract từ tools/qa_fact_check.py
+  rule: "Fact Database check — Episode text PHẢI khớp bible/27_fact_db.yaml. KHÔNG cho phép drift fact (names, ages, dates, locations, dialogue lines)."
+  why: |
+    Cross-episode consistency critical cho series 90 EPs. Drift fact = continuity error.
   detection: tools/qa_fact_check.py
-  test_evidence:
-    TP: 3
-    TN: 50
-    FP: 0
-    FN: 0
-    report: tests/regression/regression_report.json
-  status: stub_pending_full_spec
-
-R128_codified_from_test_stub:
-  # CODIFIED 2026-06-30 by CMD LEAD flush_rules_from_test.py
-  # Source: regression test PASS — TP=7 TN=50 FP=0 FN=0
-  # WARN: STUB only — em CMD LEAD chỉ flush từ test evidence
-  # TODO: fill rule/why/example từ memory hoặc CMD #2 spec gốc
-  rule: "STUB — em CMD LEAD chỉ flush từ regression test evidence. CMD ship rule cần fill full spec."
+  test_evidence: tests/regression/regression_report.json
+  status: filled_from_docstring_pending_cmd_thuc_thi_full_review
+R128_codified_from_test:
+  # CODIFIED 2026-06-30 Round 19.32 by CMD LEAD bible_audit fill_stub
+  # Source: docstring extract từ tools/qa_anti_generic.py
+  rule: "Anti-Generic AI Detection — Cấm/giới hạn cụm sáo AI: 'Một cảm giác khó tả' / 'Không ai biết rằng' / 'Trong khoảnh khắc ấy' / 'Có lẽ...' / 'Từ đó về sau' / 'Bỗng nhiên' overuse / 'im lặng' / 'lạnh sống lưng' / 'rợn người' / 'rùng mình' / 'nuốt nước bọt'. Threshold: mỗi cụm max 1 lần / EP (trừ chủ ý)."
+  why: |
+    Sáo từ AI làm content sound generic / template-y. Ngọc Ngạn style yêu cầu specific imagery, KHÔNG abstract cliché.
   detection: tools/qa_anti_generic.py
-  test_evidence:
-    TP: 7
-    TN: 50
-    FP: 0
-    FN: 0
-    report: tests/regression/regression_report.json
-  status: stub_pending_full_spec
-
-R141_codified_from_test_stub:
-  # CODIFIED 2026-06-30 by CMD LEAD flush_rules_from_test.py
-  # Source: regression test PASS — TP=3 TN=50 FP=0 FN=0
-  # WARN: STUB only — em CMD LEAD chỉ flush từ test evidence
-  # TODO: fill rule/why/example từ memory hoặc CMD #2 spec gốc
-  rule: "STUB — em CMD LEAD chỉ flush từ regression test evidence. CMD ship rule cần fill full spec."
+  test_evidence: tests/regression/regression_report.json
+  status: filled_from_docstring_pending_cmd_thuc_thi_full_review
+R141_codified_from_test:
+  # CODIFIED 2026-06-30 Round 19.32 by CMD LEAD bible_audit fill_stub
+  # Source: docstring extract từ tools/qa_ssot_diff.py
+  rule: "SSOT Diff Check — Episode current vs bible/27_fact_db.yaml (Single Source of Truth). Names / numbers / locations / dialogue / color descriptions PHẢI exact match. Flag ANY fact drift."
+  why: |
+    Extend R117 — verify mọi field cụ thể (vd Hạ-Vy = áo gió xanh nhạt KHÔNG drift). PING claim 11:48 Round 19.6 codify.
   detection: tools/qa_ssot_diff.py
-  test_evidence:
-    TP: 3
-    TN: 50
-    FP: 0
-    FN: 0
-    report: tests/regression/regression_report.json
-  status: stub_pending_full_spec
-
-
-# ============================================================
-# R186 + R187 — Tier 2.2 additions (Mr.Long lock 30/6 13:00)
-# ============================================================
-
-rule_R186_metaphor_sanity:
-  description: "Metaphor phải logic + cultural Vietnamese (renamed from R184 — separate concern)"
-  severity: Minor
-  example_violations:
-    - 'Tiếng chuông như bóng tối phủ xuống (mixed sensory)'
-    - 'Trái tim đập như tia chớp (cường độ mismatch)'
-  enforce: manual review + corpus-based novelty score
-
-rule_R187_vietnamese_language_judge:
-  description: |
-    Aggregate scoring module — chấm tổng thể độ TỰ NHIÊN Vietnamese của episode.
-    Run AFTER all sub-rules R180-R186, output 5-dim score + final verdict.
-  severity: Critical
-  dimensions:
-    collocation_score: "R180/R181/R182 compositive (% safe pairs)"
-    register_score: "R183 character voice consistency"
-    ai_style_score: "R184 inverse (low AI pattern = high)"
-    metaphor_score: "R186 (sane/insane ratio)"
-    natural_score: "Subjective per-chunk LLM judge (Claude/external API)"
-  output_format:
-    - score_per_dim: 0-100
-    - aggregate_score: weighted avg
-    - verdict: PASS (≥80) / REVIEW (60-79) / REJECT (<60)
-    - flagged_lines: list specific concerns
-  enforce: tools/language_judge.py (TBD build — LLM call required)
-  human_loop: "REVIEW verdict → người duyệt quyết tranh cãi"
-
-# Tier 2.2 architecture
-tier_2_2_vietnamese_language_layer:
-  description: "Vietnamese Language Layer ĐỘC LẬP khỏi Logic QA (Mr.Long lock 30/6 13:00)"
-  pipeline: "WRITER → LOGIC QA (8 tools) → LANGUAGE JUDGE (R180-R187) → REPAIR (R161) → AUDIO GATE → FINAL"
-  modules:
-    R180: Collocation QA (built bible/00)
-    R181: Verb-Noun Compatibility (built bible/00)
-    R182: Adj-Noun Compatibility (built bible/00)
-    R183: Register Consistency (built bible/00)
-    R184: AI-style Sentence Detector (UPDATED)
-    R186: Metaphor Sanity (moved from old R184)
-    R187: Vietnamese Language Judge (aggregate)
-  build_status:
-    rules_codified: 7/7
-    tools_built: 0/7 (all TBD)
-    next_milestone: Build tools/qa_collocation.py + tools/qa_ai_style.py + tools/language_judge.py
-  human_loop_policy: "REVIEW score 60-79 → Mr.Long verify"
+  test_evidence: tests/regression/regression_report.json
+  status: filled_from_docstring_pending_cmd_thuc_thi_full_review
