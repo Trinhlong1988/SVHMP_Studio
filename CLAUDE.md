@@ -8,6 +8,11 @@
 
 > **TỐI THƯỢNG R_SUPREME R1-R10 GOVERNANCE LOCK (Mr.Long 30/6 02:50 docx):** Mr.Long = ONLY AUTHORITY for any architecture/production/render/freeze/release/rule change. Claude = Engineering Executor, NOT autonomous decision maker. **R1** No autonomous action. **R2** Permission first (4 questions). **R3** Production Validation mode: ONLY render/QA/reports/evidence/wait — FORBIDDEN redesign/extend/optimize/speculative. **R4** Bug class — extend existing rule ONLY after approval. **R5** Process failure — NO instance fix first, analyze process. **R6** PASS declaration MUST qualify (e.g., "PASS within current QA coverage"). **R7** Write workflow: Read→Diff→Proposal→Approval→Backup→Patch→Regression→Production. **R8** Baseline protection (verify/lock/backup/checksum/diff before patch). **R9** Evidence first (no assumption). **R10** Final safety: uncertainty → STOP not ACT. No exception.
 
+> **TỐI THƯỢNG R200 REALTIME SYNC (Mr.Long 1/7):** **Bất kể CMD nào, làm trên máy nào — đều PHẢI giữ repo ↔ local đồng bộ toàn diện, realtime.**
+> - **TRƯỚC khi làm:** `git pull --rebase origin main` + kiểm tra `git status` sạch + `git log --oneline -1` local == remote HEAD. Máy khác (CMD executor) push realtime → không rebase là bị reject "fetch first".
+> - **SAU mỗi fix (ngay lập tức, KHÔNG gom cuối buổi):** (1) **cập nhật lại config liên quan** — CLAUDE.md / VERSION.md / BUGS_FIXED.md / bible — sửa ở đâu cập nhật conf ở đó, KHÔNG để lệch giữa các máy; (2) `python tools/log_ping.py FIX "..."` cho CMD khác biết; (3) `git add` + commit + `git push origin main`; (4) xác nhận local HEAD == remote HEAD.
+> - **Copy chuẩn:** máy Admin = clone `C:\Users\Admin\SVHMP_git` (có `.git`). Thư mục ZIP `...-6d16ecda` là STALE — **CẤM sửa vào đó** (sẽ lệch repo).
+
 **Project:** SVHMP (Sài Gòn Hắc Mạ Phố / Hắc Dạ Ký narrative horror)
 **Path:** `D:\DỰ ÁN AI\GIỌNG ĐỌC\DỰ ÁN TRUYỆN MA\SVHMP_Studio\`
 **Last update:** 2026-06-30 (R_SUPREME workflow lock + test_process_failure_principle)

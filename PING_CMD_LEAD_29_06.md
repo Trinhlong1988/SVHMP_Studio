@@ -321,6 +321,7 @@ SAU ĐÓ FIX CHẶT CHẼ CÁC s TRƯỚC KHI REN"
 
 ---
 ## AUTO LOG (tự động cập nhật)
+- `16:43` **[RULE]** Rule new/update: R200 REALTIME SYNC codified in CLAUDE.md - pull truoc / commit-push sau / cam sua ZIP stale
 - `16:32` **[FIX]** Em fix: max_mel_tokens 1500->1000 chan runaway (30s->20s), Session 1/7
 - `16:25` **[FIX]** Em fix: Go path cung C:\Users\Administrator (index-tts/workdir/ffmpeg/.claude) trong 9 tool -> Path.home()/expanduser. svhmp_v13_render nay portable. Lo ra tu smoke-test import
 - `16:15` **[FIX]** Em fix: Sua narrator: 'Khanh An' -> 'Hac Da Ky' (dung identity B39). Chua: tts_adapter.py intro (chuc nang), prompts/tts_adapter.md, assets/voice_refs/README.md. ep_01 re-adapt QA PASS ~21min
