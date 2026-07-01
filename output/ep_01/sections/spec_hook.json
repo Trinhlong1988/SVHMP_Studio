@@ -1,0 +1,213 @@
+{
+  "sentences": [
+    {
+      "text": "Một đêm cuối tháng tư, mưa đổ xuống thủ đô Hà Nội từ lúc bảy giờ tối, kéo dài đến tận khuya vẫn còn rả rích vọng vào trong màn đêm yên lặng tới não nề.",
+      "emo_vector": [
+        0.0,
+        0.0,
+        0.05,
+        0.1,
+        0.0,
+        0.15,
+        0.4,
+        0.3
+      ],
+      "pause_after_ms": 1500,
+      "is_dialogue": false,
+      "tempo_factor": 0.97
+    },
+    {
+      "text": "Khải-Phong đang ngồi trên ghế số bảy của chuyến xe đêm.",
+      "emo_vector": [
+        0.0,
+        0.0,
+        0.05,
+        0.1,
+        0.0,
+        0.15,
+        0.4,
+        0.3
+      ],
+      "pause_after_ms": 1500,
+      "is_dialogue": false,
+      "tempo_factor": 0.97
+    },
+    {
+      "text": "Trong tay anh, một chiếc đồng hồ nữ dáng nhỏ xinh xắn lắm.",
+      "emo_vector": [
+        0.0,
+        0.0,
+        0.05,
+        0.1,
+        0.0,
+        0.15,
+        0.4,
+        0.3
+      ],
+      "pause_after_ms": 1500,
+      "is_dialogue": false,
+      "tempo_factor": 0.97
+    },
+    {
+      "text": "Vỏ làm bằng xà cừ óng ánh, mặt số La Mã màu đen nổi bật trên nền vỏ ngọc trai sáng.",
+      "emo_vector": [
+        0.0,
+        0.0,
+        0.05,
+        0.1,
+        0.0,
+        0.15,
+        0.4,
+        0.3
+      ],
+      "pause_after_ms": 1500,
+      "is_dialogue": false,
+      "tempo_factor": 0.97
+    },
+    {
+      "text": "Kim đồng hồ đã dừng lại từ rất lâu — đúng vào con số bảy giờ mười phút tối, im lìm bất động, hệt như một pho tượng nhỏ làm bằng kim loại đen.",
+      "emo_vector": [
+        0.0,
+        0.0,
+        0.05,
+        0.1,
+        0.0,
+        0.15,
+        0.4,
+        0.3
+      ],
+      "pause_after_ms": 1500,
+      "is_dialogue": false,
+      "tempo_factor": 0.97
+    },
+    {
+      "text": "Anh không hiểu sao mình lại mang nó theo.",
+      "emo_vector": [
+        0.0,
+        0.0,
+        0.05,
+        0.1,
+        0.0,
+        0.15,
+        0.4,
+        0.3
+      ],
+      "pause_after_ms": 1500,
+      "is_dialogue": false,
+      "tempo_factor": 0.97
+    },
+    {
+      "text": "Hình như chiều nay anh đã mở ngăn tủ đáy ra — chính là nơi anh đã giấu nó suốt tám năm qua đến tận hôm nay.",
+      "emo_vector": [
+        0.0,
+        0.0,
+        0.05,
+        0.1,
+        0.0,
+        0.15,
+        0.4,
+        0.3
+      ],
+      "pause_after_ms": 1500,
+      "is_dialogue": false,
+      "tempo_factor": 0.97
+    },
+    {
+      "text": "Phía ngoài cửa kính, mưa vẫn đều đặn rơi xuống mặt đường.",
+      "emo_vector": [
+        0.0,
+        0.0,
+        0.05,
+        0.1,
+        0.0,
+        0.15,
+        0.4,
+        0.3
+      ],
+      "pause_after_ms": 1500,
+      "is_dialogue": false,
+      "tempo_factor": 0.97
+    },
+    {
+      "text": "Đèn trần xe hắt ánh vàng nhạt xuống, sáng vừa đủ để nhìn rõ khuôn mặt từng người.",
+      "emo_vector": [
+        0.0,
+        0.0,
+        0.05,
+        0.1,
+        0.0,
+        0.15,
+        0.4,
+        0.3
+      ],
+      "pause_after_ms": 1500,
+      "is_dialogue": false,
+      "tempo_factor": 0.97
+    },
+    {
+      "text": "Trên xe còn mười một vị khách khác ngồi cùng anh không một tiếng nói.",
+      "emo_vector": [
+        0.0,
+        0.0,
+        0.05,
+        0.1,
+        0.0,
+        0.15,
+        0.4,
+        0.3
+      ],
+      "pause_after_ms": 1500,
+      "is_dialogue": false,
+      "tempo_factor": 0.97
+    },
+    {
+      "text": "Họ ngồi rất yên lặng, dáng vẻ như đã ở đó từ một khoảng thời gian xa xôi mà chẳng còn ai trên xe này còn nhớ rõ là vào lúc nào trong đêm.",
+      "emo_vector": [
+        0.0,
+        0.0,
+        0.05,
+        0.1,
+        0.0,
+        0.15,
+        0.4,
+        0.3
+      ],
+      "pause_after_ms": 1500,
+      "is_dialogue": false,
+      "tempo_factor": 0.97
+    },
+    {
+      "text": "Anh không nhớ đã từng đi một chuyến xe đêm như thế hay chưa.",
+      "emo_vector": [
+        0.0,
+        0.0,
+        0.05,
+        0.1,
+        0.0,
+        0.15,
+        0.4,
+        0.3
+      ],
+      "pause_after_ms": 1500,
+      "is_dialogue": false,
+      "tempo_factor": 0.97
+    },
+    {
+      "text": "Bản thân anh cũng không nhận ra mình đã bước lên xe từ lúc nào.",
+      "emo_vector": [
+        0.0,
+        0.0,
+        0.05,
+        0.1,
+        0.0,
+        0.15,
+        0.4,
+        0.3
+      ],
+      "pause_after_ms": 1500,
+      "is_dialogue": false,
+      "tempo_factor": 0.97
+    }
+  ],
+  "sample_prompt": "C:\\Users\\Administrator\\Desktop\\NNG_narration_sample_19062026.wav"
+}

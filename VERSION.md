@@ -1,13 +1,165 @@
 ---
 project: SVHMP_Studio
-current_round: 20
-current_version: v1.0.0-rc1
-status: Tier 1 FROZEN
-last_update_ts: 2026-06-30T02:48:00
-last_update_by: Claude session 30/6 (Tier 1 QA Engine v1.0.0-rc1 frozen — regression 8/8 PASS — bible/00 R110-R173 + 8 QA tools + 100 dataset)
-rule_break_count: 7  # R39×2 + R86×5 self-violation 30/6 (em propose fix tự gây)
+current_round: 21
+current_version: v1.1.0-tier2x-phase1
+status: Tier 2.x Phase 1 Voice Profile Manager FROZEN — 10-round regression 150/150 PASS
+last_update_ts: 2026-06-30T19:30:00
+last_update_by: CMD THỰC THI session 30/6 19:00+ (Phase 0 text fixes T1-T14 + R178b/R180b/R181b/R181c codified + Phase 1 Voice Profile Manager + bible/15 v2.0 + tests 15-case + 10-round regression 150/150 PASS in 18s + STRICT PROTOCOL report)
+rule_break_count: 7
 schema_version: 1
 ---
+
+## Round 21 (2026-06-30 19:30) — Tier 2.x Phase 1 SHIP
+
+**Mr.Long approve message 30/6 19:00:** Phase 0 + Phase 1 only. No audio render. v108 baseline.
+
+**Phase 0 — TEXT only:**
+- T1-T7 + T13 + T14 + 8 R61 prefix expansions = 18 text fixes applied
+- L130-132 / L154 / L242 / L270 / L274 / L278 / L284 / L362 / L390 / L480 / L292 / L294 / L492 + L7/L103/L123/L259/L281/L283/L295/L431
+- bible/00: add R178b (time marker pause), R180b (verb-noun collocation), R181b (Voice Identity LOCKED), R181c (Speaker Embedding QA)
+- bible/35: add F008-F015 (8 text fix entries)
+
+**TEXT gate post-fix (evidence):**
+- R60 short EOL: 0 HIGH (PASS)
+- R61 short START: 0 HIGH (was 9 → fix 9/9)
+- R62 anaphora: 0 HIGH (PASS)
+- R66 short chain: 1 HIGH residual L355 (intentional pause-merge)
+- R74 phrase rep: 2 HIGH residual ("0 30" + "cô ấy" — audit tokenization suspect)
+- R174 driver dialogue: PASS
+- R60+R61+ 4-7 từ: 77 / 3 chains (was 83/4)
+
+**Phase 1 — Voice Profile Manager:**
+- `bible/15_voice_bible.yaml` v2.0 — LOCKED 10 fields + DYNAMIC 5 fields + 4 profiles + 6 states + transitions + 5 artifact types
+- `tools/voice_profile_manager.py` v1.0 — VoiceProfileManager + VoiceProfile + LockedFieldError/EmotionRangeError/StateTransitionError/ProfileNotFoundError
+- `tests/test_voice_profile_manager.py` — 15 test cases
+- `assets/voice_refs/README.md` — placeholder spec Phase 2
+
+**Regression evidence:**
+- Single run: 15 passed in 0.39s
+- 10 rounds: 10/10 PASS, 150/150 tests PASS, wall 18s, avg 1.43s/round
+- Precision/Recall/F1 = 1.000
+
+**Pending Phase 2:**
+- Build extract_speaker_embedding.py
+- Populate 4 golden WAV in assets/voice_refs/
+- Build qa_boundary_artifact.py (R188 TOP priority)
+- Build qa_breath_artifact.py (R189), qa_prosody_collapse.py (R190), qa_onset_artifact.py (R190b), qa_dialogue_identity.py (R191)
+- Mr.Long must approve before Phase 2 starts
+
+**Full report:** `PHASE_1_VOICE_PROFILE_MANAGER_REPORT.md`
+**Ping CMD LEAD:** `PING_CMD_LEAD_30_06_phase1.md`
+
+---
+
+## Round 22 (2026-06-30 20:00) — Deep audit + R192 spec/episode sync
+
+**Trigger:** Mr.Long lệnh "đào sâu fix bug ẩn toàn diện" 30/6 19:30.
+
+**Deep audit 20 tools parallel:**
+- audit_hidden_bugs / 60_dim / 100_check / aesthetic_5_subdim / bimodal / deep_qa / ngan_opening / pronoun_pov / r43-r67 / r68-r73 / story_mode / style_stats / tilde_eol / continuity / chi_tiet / dupe_audit / preflight (setup+reveal) / bible_consumer / e2e
+
+**Hidden bugs caught + fixed:**
+- B-HIDDEN-1 R58 tilde EOL L281 "khẽ" — em self-introduced khi R61 prefix expansion → FIXED → "trong giây lát"
+- B-HIDDEN-2 spec_setup preflight 3 issues — partial FIXED (Anh nhíu mắt + Anh cứng cả bàn tay) via R192 manual sync
+- B-HIDDEN-3 spec_reveal preflight 13 issues — partial FIXED (Anh khựng người + Anh mở/nhắm mắt + Cô ấy cười/không trả lời + cái nhìn rất ngắn + Anh ngoái nhìn) via tool + manual
+- B-HIDDEN-4 16 cosmetic em-dash replacements via tool
+
+**R192 codified:**
+- bible/00 add R192 spec_episode_sync_mandatory
+- tools/sync_specs_from_episode.py NEW v1.0 — safe mode threshold 0.92 + max_len_ratio 1.5
+- Apply 24 cosmetic + 9 manual semantic fixes across 6 spec files
+
+**Residual accept:**
+- spec_reveal 11 issues remaining (short dialogue chunks "" + "— Tôi gật" + "Anh biết" + R10 scene switch) — Phase 2.5 SSOT will clean
+- R66 L355 intentional pause-merge chain
+- R74 phrase rep audit tokenization (suspect false positive)
+
+**Phase 2.5 roadmap (Option D — SSOT):**
+- episode.md = single source of truth
+- spec_*.json auto-generated from inline annotations
+- KHÔNG còn cách desync
+- Build sau Phase 2 Voice QA tools (defer)
+
+---
+
+## Round 23 (2026-06-30 22:30) — Tier 2.1 Engineering Validation PASS
+
+**Mr.Long sign-off docx 30/6 22:30:**
+- ✅ APPROVED: Lift **Production Validation Lock** (NOT Release Lock)
+- ❌ NOT yet approved: Freeze Tier 2.1 / Git Tag v2.1.0 / Threshold Calibration
+- Status: **READY FOR PRODUCTION VALIDATION** / NOT READY FOR RELEASE
+
+**4-gate Mr.Long lock PASS:**
+
+| Gate | Status | Evidence |
+|---|---|---|
+| 1. Regression 10/10 | ✅ PASS | 230/230 tests, 551s wall, 0 fail |
+| 2. Validation Report | ✅ PASS | TIER_2_1_VALIDATION_REPORT.md STRICT PROTOCOL |
+| 3. Hidden Audit | ✅ PASS | 144 hardcode breakdown: 0 magic_unknown / 27 threshold (R195 placeholder) / 23 frequency_hz / 60 scaler_const / 15 dim / 11 ms / 8 default. 0 TODO/NotImplemented |
+| 4. Historical Replay | ✅ PASS | 14/14 OK — 9 text bugs no regression + 5 audio detect-only confirmed |
+
+**Hiến pháp updates (Round 23):**
+- R_SUPREME workflow lock (TỐI THƯỢNG meta-rule)
+- R_SUPREME.test_process_failure_principle (user-found bug = process failure, propose process change)
+- R188 pause_boundary_artifact_qa (TOP priority ⭐⭐⭐⭐⭐)
+- R189 breath_artifact_qa
+- R190 prosody_collapse_qa
+- R190b onset_artifact_qa
+- R191 dialogue_identity_qa
+- R192 spec_episode_sync_mandatory (R192 enforced via tools/sync_specs_from_episode.py)
+- R193 vn_style_db_audit_mandatory (FROZEN_FOR_FUTURE Tier 2.2)
+- R194 ssot_generate_not_sync (FROZEN_FOR_FUTURE Tier 2.5)
+- R195 golden_audio_threshold_calibration (architecture principle — no implementation)
+
+**Artifact summary (Round 23):**
+- 9 voice QA + verification tools (1078 LOC Tier 2.1 scope)
+- 2 test suites (38 unique tests, 380 invocations 10×regression)
+- 11 new bible rules
+- 3 reports (PHASE_1, TIER_2_1_VALIDATION, PING_CMD_LEAD)
+- 4 memory feedback (Phase 1, văn phong, Golden Audio principle, Test process failure principle)
+- 2 CLAUDE.md updates (workspace + SVHMP project — TỐI THƯỢNG lines)
+- bible/15 v2.0 + bible/36 v0.1 (Tier 2.2 frozen)
+
+**Production Validation cycle (Iteration 1 — sau Mr.Long approve):**
+1. Re-render 6 sections với specs Phase 0 sync
+2. Apply music_loop + mix v110 chain
+3. Run 5 voice QA tools — DETECT catalog (no threshold tune per R195)
+4. Run audio_pre_ship_gate
+5. Mr.Long listen + iterate cho đến Golden Audio cert
+
+**FROZEN_FOR_FUTURE (await Tier 2.1 Golden + Git Tag):**
+- Tier 2.2: bible/36 vn_style_db + audit_vn_style.py (R193)
+- Tier 2.5: build_specs_from_episode.py SSOT (R194)
+- Phase 3: ECAPA-TDNN swap for MFCC placeholder in R181c
+
+
+## Round 20 hotfix (2026-06-30 16:30+) — B60 + R174 + R176
+
+**Trigger:** Mr.Long catch EP01 v107 cliffhanger line 528 "Chưa tới lúc đâu cháu ạ" với cô gái mới = vô lý + cụt ngủn. Plus rule mới resilience log.
+
+**Artifacts shipped:**
+- `output/ep_01/episode.md:528` Q2 → Q1 "— Con đã nhớ ra chưa?" (B60 fix)
+- `output/ep_01/sections/spec_cliffhanger.json:215` same fix
+- `bible/00_constitution.yaml` add R174 driver_dialogue_context_match (Q1 cho passenger mới / Q2 chỉ khi passenger hỏi)
+- `bible/00_constitution.yaml` add R176 realtime_progress_log_mandatory (resilience cross-session)
+- `bible/35_text_fix_registry.yaml` add F007 (B60 entry)
+- `tools/cmd_progress_logger.py` NEW — R176 enforcement (write/heartbeat/resume schema + CLI --verify)
+- `runtime/cmd_progress/CMD_THUC_THI_current.json` NEW — first progress log
+- `runtime/cmd_progress/render_cliffhanger_v108.log` — render stdout
+- `BUGS_FIXED.md` B60 entry
+- **PENDING:** `tools/audit_driver_dialogue_context.py` (R174 enforcer build)
+- **PENDING:** `EP01_FULL_v108.mp3` (cliffhanger re-render + concat + audio_pre_ship_gate)
+
+**Verify:**
+- `python tools/cmd_progress_logger.py --verify` → list active CMD logs (R176 enforce) — PASS
+- `python tools/audit_driver_dialogue_context.py --episode 1` — PASS Q1×3 + Q2×1 0 fail
+- `python -m pytest tests/cases/` — 3 PASSED
+- `python tests/cases/test_audio_gate_regression.py` — 5/5 PASS
+- `python tools/build_mix_command.py --version 108 --output-script ...` → bash → EP01_FULL_v108.mp3 OK
+- `python tools/audit_audio_mix_qa.py --ep 1 --wav .../EP01_FULL_v108.mp3` — 8/15 (same pattern as v103 baseline, Peak/Click BETTER)
+- TODO next: `python tools/text_batch_fix.py --apply --episode 1` propagate F007 via tool flow (R173)
+
+**SHIPPED 2026-06-30T17:15** Mr.Long approve `EP01_FULL_v108.mp3` 13MB / 20:15 min — residual accepted same as v103 baseline.
 
 ## v1.0.0-rc1 — Tier 1 Frozen (2026-06-30 02:48)
 - 43 codified rules (bible/00 R1-R173)

@@ -36,30 +36,30 @@
   },
   {
     "check": "1.6 internal anaphora >= 4 consecutive",
-    "count": 25,
+    "count": 13,
     "severity": "MEDIUM",
-    "detail": "[(1, 4), (4, 4), (7, 4), (8, 6), (11, 4)]",
+    "detail": "[(1, 5), (4, 4), (7, 4), (8, 5), (23, 4)]",
     "layer": "LAYER 1 — REPETITION"
   },
   {
     "check": "1.7 Khải Phong name count > 80/EP",
-    "count": 1,
-    "severity": "LOW",
-    "detail": "[(30, 104)]",
+    "count": 0,
+    "severity": "OK",
+    "detail": "[]",
     "layer": "LAYER 1 — REPETITION"
   },
   {
     "check": "1.8 \"Đêm tháng tư\" > 2/EP",
-    "count": 2,
-    "severity": "LOW",
-    "detail": "[(31, 3), (40, 3)]",
+    "count": 0,
+    "severity": "OK",
+    "detail": "[]",
     "layer": "LAYER 1 — REPETITION"
   },
   {
     "check": "1.9 \"Bác tài liếc gương\" mention",
     "count": 38,
     "severity": "OK",
-    "detail": "79 total mentions",
+    "detail": "75 total mentions",
     "layer": "LAYER 1 — REPETITION"
   },
   {
@@ -85,9 +85,9 @@
   },
   {
     "check": "2.3 Hạ Vy mention in each EP",
-    "count": 32,
+    "count": 31,
     "severity": "MEDIUM",
-    "detail": "[(2, 0), (3, 0), (4, 0), (6, 0), (7, 0), (8, 0), (10, 0), (35, 0)]",
+    "detail": "[(1, 0), (2, 0), (3, 0), (4, 0), (6, 0), (7, 0), (8, 0), (10, 0), (35, 0)]",
     "layer": "LAYER 2 — EMOTIONAL ENGAGEMENT"
   },
   {
@@ -99,9 +99,9 @@
   },
   {
     "check": "2.5 Aftertaste unresolved (no fairy tale)",
-    "count": 1,
-    "severity": "HIGH",
-    "detail": "[36]",
+    "count": 0,
+    "severity": "OK",
+    "detail": "[]",
     "layer": "LAYER 2 — EMOTIONAL ENGAGEMENT"
   },
   {
@@ -113,16 +113,16 @@
   },
   {
     "check": "2.7 Tear/cry mentions (Khải Phong tears EP20/30/40)",
-    "count": 38,
+    "count": 37,
     "severity": "OK",
-    "detail": "38/40 EPs have tear/cry",
+    "detail": "37/40 EPs have tear/cry",
     "layer": "LAYER 2 — EMOTIONAL ENGAGEMENT"
   },
   {
     "check": "2.8 Night counter \"Đêm thứ N\" present",
-    "count": 36,
+    "count": 35,
     "severity": "OK",
-    "detail": "36/40",
+    "detail": "35/40",
     "layer": "LAYER 2 — EMOTIONAL ENGAGEMENT"
   },
   {
@@ -141,16 +141,16 @@
   },
   {
     "check": "3.1 Tier 1 anti-slop (đột nhiên/bỗng nhiên/...)",
-    "count": 1,
-    "severity": "HIGH",
-    "detail": "{'có lẽ': [(3, 3)]}",
+    "count": 0,
+    "severity": "OK",
+    "detail": "{}",
     "layer": "LAYER 3 — FORBIDDEN WORDS"
   },
   {
     "check": "3.2 Tier 2 filler (thoáng/khẽ/lặng lẽ/...) total",
-    "count": 179,
+    "count": 304,
     "severity": "MEDIUM",
-    "detail": "{'khẽ': 77, 'vô hình': 40, 'thoáng': 34, 'ánh mắt': 28}",
+    "detail": "{'khẽ': 137, 'thoáng': 50, 'nhẹ nhàng': 43, 'vô hình': 42, 'ánh mắt': 32}",
     "layer": "LAYER 3 — FORBIDDEN WORDS"
   },
   {
@@ -197,9 +197,9 @@
   },
   {
     "check": "3.9 \"Khải Phong Nguyễn\" name leak outside EP30",
-    "count": 2,
-    "severity": "LOW",
-    "detail": "2",
+    "count": 0,
+    "severity": "OK",
+    "detail": "0",
     "layer": "LAYER 3 — FORBIDDEN WORDS"
   },
   {
@@ -225,9 +225,9 @@
   },
   {
     "check": "4.3 R76 open-vowel line-end excess",
-    "count": 1,
+    "count": 4,
     "severity": "LOW",
-    "detail": "[(1, 22)]",
+    "detail": "[(1, 25), (5, 21), (19, 16), (30, 16)]",
     "layer": "LAYER 4 — TTS ISSUES"
   },
   {
@@ -239,9 +239,9 @@
   },
   {
     "check": "4.5 R77 short fragment chain >= 5",
-    "count": 16,
+    "count": 15,
     "severity": "MEDIUM",
-    "detail": "[(5, 6), (7, 9), (8, 5), (9, 6), (12, 5)]",
+    "detail": "[(7, 5), (8, 5), (9, 6), (12, 5), (14, 5)]",
     "layer": "LAYER 4 — TTS ISSUES"
   },
   {
@@ -269,7 +269,7 @@
     "check": "4.9 Arabic numbers > 10/EP (TTS prefers written)",
     "count": 1,
     "severity": "LOW",
-    "detail": "[(1, 57)]",
+    "detail": "[(1, 56)]",
     "layer": "LAYER 4 — TTS ISSUES"
   },
   {

@@ -1,0 +1,10 @@
+{
+  "tts_file": "output\\ep_01\\EP01_R38_FULL.wav",
+  "first_word": "điểm",
+  "start_ms": 0,
+  "end_ms": 320,
+  "center_ms": 160,
+  "paragraph_1_end_ms": 8320,
+  "whisper_model": "tiny",
+  "note": "For R_AUDIO_08: HOOK crescendo peak should hit at center_ms (after intro 4.5s prepend = absolute peak_ms = 4500 + center_ms)"
+}

@@ -21,7 +21,12 @@ def codified_in_bible(n):
     if not BIBLE.exists():
         return False
     text = BIBLE.read_text(encoding="utf-8")
-    pats = [rf"^R{n}_[a-zA-Z]", rf"^\s*-\s*id:\s*R{n}\b"]
+    pats = [
+        rf"^R{n}_[a-zA-Z]",           # legacy format: R74_...
+        rf"^\s*-\s*id:\s*R{n}\b",     # list-item format
+        rf"^rule_R{n}_[a-zA-Z]",      # new format (session 30/6+): rule_R174_...
+        rf"^rule_R{n}[a-z]?_[a-zA-Z]", # variant with sub-letter: rule_R181b_...
+    ]
     return any(re.search(p, text, re.MULTILINE) for p in pats)
 
 
@@ -34,7 +39,7 @@ def extract_claims(text):
         r"R(\d+)\s+ship",
         r"ship\s+R(\d+)",
         r"\bRule\s+new[^.]*R(\d+)",
-        r"\b(\d+)\s+(?:rule|rules)\s+R(\d+)[-–]R(\d+)",
+        r"\b\d+\s+(?:rule|rules)\s+R(\d+)[-–]R(\d+)",   # count NOT captured (only range endpoints)
     ]:
         for m in re.finditer(pat, text, re.IGNORECASE):
             for g in m.groups():

@@ -1,444 +1,212 @@
-# SVHMP — 15 VOICE BIBLE (round 14 — Mr.Long docx v6 19/6 17:14)
-# Status: IMMUTABLE per series — voice = soul brand identity
-# Loaded by: TTS Director M9 voice_bible (round 14) / Publisher P5 comment classifier (verify voice signature)
-# Mục tiêu: lock cấu hình giọng từng character. Sai giọng = prompt 10/10 vẫn nghe dở.
+# SVHMP — bible/15 VOICE BIBLE v2.0
+# Mr.Long lock 30/6 19:00 — Tier 2.x Phase 1
+# Loaded by: tools/voice_profile_manager.py + TTS render + Speaker QA
+# Supersedes: v1.0 (backed up to 15_voice_bible.yaml.bak.v1_30_06)
+#
+# Architecture (Mr.Long docx 30/6 18:46):
+#   Voice Identity = LOCKED (Cannot change between chunks)
+#   Emotion Layer = DYNAMIC (Allowed change within bounds)
 
-version: 1.0
-lock_date: 2026-06-19 17:30
+version: 2.0
+lock_date: 2026-06-30
+supersedes: 1.0
+authority: Mr.Long
+authority_source: docx "New Microsoft Word Document (2).docx" 30/6 18:46
 purpose: |
-  Phần quyết định thành bại của kênh KHÔNG nằm ở LUFS/ffmpeg/checksum
-  mà nằm ở GIỌNG ĐỌC GỐC (voice actor + voice cloning quality).
-  Voice Bible khóa cấu hình voice theo từng role để render nhất quán 90 ep.
+  Phần quyết định thành bại = voice identity bất biến + emotion layer dynamic.
+  Sai DNA giọng = nhân vật cùng đoạn nghe như người khác (drift artifact).
 
 # ============================================================
-# NARRATOR (kể chuyện đêm khuya — soul brand)
+# LOCKED FIELDS (DNA của giọng — KHÔNG được modify cross-chunk)
 # ============================================================
-
-voice_bible:
-
-  narrator:
-    role: kể_chuyện_đêm_khuya
-    target_persona: "60% người lớn tuổi kể chuyện đời / 25% MC đêm khuya / 15% khàn nhẹ người từng trải"
-
-    demographic:
-      gender: male
-      age_impression: "50-55"
-      regional_accent: neutral_northern   # Hà Nội chuẩn, không gắt
-      vocal_health: warm_dark             # giọng ấm trầm, KHÔNG khàn rít
-
-    technical_config:
-      speech_rate: 0.88                   # khớp bible/01 + bible/05
-      pitch_semitones: -1
-      energy: 0.25                        # thấp — không kịch tính
-
-    emotional_baseline:
-      sadness: 0.45
-      melancholy: 0.50
-      mystery: 0.30
-      horror: 0.10                        # CỰC THẤP — bible/01 fear_source = unsaid_words, KHÔNG ma
-      warmth: 0.25
-      authority: 0.40
-
-    voice_clone_spec:
-      # === ROUND 15 LOCKED v3.0 (19/6 17:49) — Mr.Long ship full pipeline spec ở Desktop\AN KHÁNH.md ===
-      # Pipeline 4-LAYER (NOT 1-stage). Mr.Long script production-ready ở:
-      #   C:\Users\Administrator\index-tts\narration_pipeline.py
-      # Usage:
-      #   cd C:\Users\Administrator\index-tts
-      #   uv run --no-sync python narration_pipeline.py --input spec.json --output ep_NN.wav
-
-      pipeline_version: "NNG_NARRATION_v3.0_LOCKED_19062026"
-      reference_output_sample: "C:\\Users\\Administrator\\Desktop\\NNG_narration_profile_v3_regret_silences.wav"
-      reference_size_mb: 1.72
-      production_script: "C:\\Users\\Administrator\\index-tts\\narration_pipeline.py"
-      input_format: JSON spec.json (sentences array với regret bool flag)
-      output_format: 44100Hz mono PCM s16le WAV (NOT 48k/24bit — locked spec)
-
-      layer_1_indextts2:
-        engine: indextts2
-        model_dir: checkpoints-vi (dinhthuan/index-tts-2-vietnamese)
-        use_fp16: true
-        spk_audio_prompt: "C:\\Users\\Administrator\\Downloads\\nng_out_1781850707426.wav"
-        spk_audio_prompt_size_kb: 798
-        emo_vector: [0.00, 0.00, 0.10, 0.20, 0.00, 0.35, 0.15, 0.15]
-        emo_vector_order: [happy, angry, sad, afraid, disgusted, melancholic, surprised, calm]
-        emo_vector_mapping:
-          curiosity_0_15: surprised 0.15
-          unease_0_20: afraid 0.20
-          empathy_0_25: sad 0.10 + calm 0.15
-          regret_0_35: melancholic 0.35 (dominant)
-        emo_alpha: 1.0
-        interval_silence_intra_segment_ms: 200
-        per_sentence_generation: true   # NOT one-shot whole text
-
-      layer_2_silence_concat:
-        sentence_end_ms: 450        # giữa câu thường
-        regret_before_ms: 1200      # trước câu tiếc nuối (next sentence is regret)
-        regret_after_ms: 1800       # sau câu tiếc nuối (current sentence is regret)
-        ending_silence_ms: 3000     # sau câu cuối cùng tập
-
-      layer_3_rvc_nng:
-        engine: rvc-vn
-        rvc_dir: "D:\\rvc-vn"
-        rvc_python: "D:\\rvc-vn\\.venv\\Scripts\\python.exe"
-        model_name: "NNG.pth"
-        index_path: "D:\\rvc-vn\\logs\\NNG\\added_IVF5704_Flat_nprobe_1_NNG_v2.index"
-        f0method: rmvpe
-        f0up_key: -1 semitone
-        index_rate: 0.90
-        rms_mix_rate: 0.20
-        protect: 0.40
-
-      layer_4_ffmpeg_master:
-        chain: |
-          asetrate=38861,                                          # = 40000 × 2^(-0.5/12) (pitch -0.5 semitone)
-          atempo=0.94701,                                          # = 0.92 / 0.97153 (tempo 0.92 sau pitch shift)
-          aresample=44100,                                         # resample về 44100
-          bass=g=1.5:f=200,                                        # warmth +15%
-          treble=g=-1:f=8000,                                      # darkness +10%
-          equalizer=f=2500:width_type=q:width=2:g=-0.5,            # huskiness +5% (cắt presence)
-          acompressor=threshold=-18dB:ratio=2:attack=20:release=200, # compression 2:1
-          loudnorm=I=-16:TP=-1.5:LRA=11                            # LUFS -16 broadcast
-        cumulative_pitch_shift: -1.5 semitone (RVC -1 + ffmpeg -0.5)
-        cumulative_tempo: 0.92 (effective speech rate)
-        output_sr: 44100
-        output_format: pcm_s16le mono
-
-      voice_profile_target:
-        gender: male
-        age_impression: "50-55"
-        timbre:
-          warmth: "+15%"
-          darkness: "+10%"
-          huskiness: "+5%"
-        speech:
-          speed: 0.92
-          energy: "-15%"
-          expressiveness: "+20%"
-        pitch: -1.5 semitone
-        compression: "2:1"
-        loudness: "LUFS -16, TP -1.5, LRA 11"
-
-      cost_per_ep: $0 (local GPU RTX 5060 Ti 16GB)
-      latency_estimate_per_ep: "13-15 min cho ~236 sentence Ep01 (= IndexTTS2 ~12min + concat 5s + RVC 30s + ffmpeg 10s)"
-
-      spec_json_schema:
-        sentences:
-          - text: string
-            regret: boolean   # true → trigger regret_before/regret_after silence rules
-        sample_prompt: string (optional override default)
-
-      regret_flag_heuristic_for_generator:
-        # Generator/QA Lock flag regret=true cho câu nào trong beat_4 PHẦN 3:
-        - "Tôi nhớ ra rồi…"
-        - "Tôi đã không [verb]"
-        - "Tôi không [verb] kịp"
-        - "Tôi không [verb] được"
-        - "Tôi sợ [verb]"
-        - "Tám năm [verb không]"
-        - "Trớ trêu thay"
-        - "Thì ra"
-        - "câu chưa kịp nói"
-        - "không kịp về"
-        - "không bao giờ"
-        - "không quay lại"
-        - "Là lúc [tên] [động từ chết/đi]"
-
-      voice_signature_checksum: PLACEHOLDER  # compute từ first ep render Ep01
-
-      voice_prompt_sample:
-        # === SHIPPED 19/6 14:09 by Mr.Long — INPUT voice prompt cho IndexTTS2 zero-shot clone ===
-        # Mr.Long flow: drop file này vào IndexTTS2 PHASE 1 (Tab "🎤 PHASE 2" SET MẪU) →
-        # PHASE 1 fill prompt_audio → IndexTTS2 generate narration giống tone NNG
-        # KHÔNG dùng RVC 2-stage convert nữa — IndexTTS2 với voice_prompt là đủ.
-        file_path: "C:\\Users\\Administrator\\Desktop\\NNG_narration_sample_19062026.wav"
-        duration_s: 13.52
-        channels: mono
-        sample_rate_hz: 40000      # IndexTTS2 chấp nhận đa rate — không cần preprocess
-        bit_depth: 16
-        size_mb: 1.08
-        usage:
-          - PRIMARY: IndexTTS2 voice_prompt input (prompt_audio field)
-          - SECONDARY (optional): emo_audio_prompt cùng file (extract emotion tone)
-          - QA reference: M13 blind_listen Q1 brand recognition (so sánh output vs sample)
-        upload_to_indextts2_webui:
-          port: 7861
-          tab: "🎤 PHASE 2 — SET MẪU"
-          field: prompt_audio
-          persistence: drop 1 lần đầu mỗi session, hoặc lưu vào checkpoints-vi config
-        immutable: true            # KHÔNG replace sample giữa series — drift voice = HARD-FAIL
-        notes: "Output target M5 vẫn là 48kHz 24-bit. IndexTTS2 generate ở 16-24kHz tùy model, ffmpeg upsample cuối."
-
-      provider_fallback_1:
-        name: "IndexTTS2 local raw (skip RVC convert)"
-        use_when: "RVC server down OR voice convert fails QA"
-        port: 7861
-        model_dir: "checkpoints-vi (dinhthuan/index-tts-2-vietnamese)"
-        MOS_gap_vs_NNG: "~0.5 (lower — không có signature warm-dark)"
-
-      provider_fallback_2:
-        name: "ElevenLabs cloud (last resort)"
-        use_when: "cả NNG và IndexTTS2 fail"
-        voice_id: TODO_clone_30s_if_ever_needed
-        cost: "$2.50/ep"
-        warning: "Brand signature drift — không khớp NNG signature"
-
-    qa_target_perception:
-      first_2s_recognizable: true        # nghe 2s đầu phải nhận ra brand
-      mistaken_for_actual_narrator_human: ">70% blind test (per docx v6 Blind Listen Test)"
-      mistaken_for_NNG_original: ">60% (homage threshold — không cần 100% giống NNG)"
-      not_robotic_perception: ">85%"
-      emotional_believability_MOS: "≥4.2"
-      RVC_signature_consistency_90_ep: "≥0.95 cosine similarity"
-
-  bac_tai:
-    role: tài_xế_xe_khách
-    target_persona: "gentle authoritative weary — patient infinite, tired but never angry"
-
-    demographic:
-      gender: male
-      age_impression: "55-60"
-      regional_accent: neutral_northern (slight rural touch)
-      vocal_health: warm_low (chậm hơn narrator)
-
-    technical_config:
-      speech_rate: 0.83                   # CHẬM hơn narrator
-      pitch_semitones: -2                 # TRẦM hơn narrator
-      energy: 0.20                        # gần flat
-
-    emotional_baseline:
-      sadness: 0.35
-      melancholy: 0.30
-      mystery: 0.40
-      horror: 0.00                        # ZERO
-      warmth: 0.30
-      authority: 0.60                     # cao — bác tài là rule-keeper
-      patience: 1.00                      # vô tận
-
-    speech_lines_locked:
-      - "Con đã nhớ ra chưa?"
-      - "Chưa tới lúc."
-
-    cue_per_line:
-      "Con đã nhớ ra chưa?":
-        intonation: "xuống thấp dần, hỏi nhưng KHÔNG cao giọng cuối"
-        pause_before_ms: 1500
-        pause_after_ms: 800
-        breath_before: true (chậm)
-
-      "Chưa tới lúc.":
-        intonation: "flat hoàn toàn, dứt khoát nhưng không khô"
-        pause_before_ms: 1200
-        pause_after_ms: 1500             # nặng hơn — báo hiệu chuyển scene
-        breath_before: true (chậm)
-
-    voice_clone_spec:
-      reference_duration_s: 30 (2 câu chuẩn × 5-10 lần intonation khác nhau)
-      provider_primary: ElevenLabs
-      voice_id: PLACEHOLDER_CLONE_BAC_TAI_SEPARATE  # KHÁC narrator
-      voice_signature_checksum: PLACEHOLDER
-      drift_policy: HARD-FAIL nếu voice_id swap với narrator giữa ep
-
-    qa_target_perception:
-      first_2_words_recognizable_as_bac_tai: true
-      cross_ep_consistency_similarity: ≥0.95 (CLIP / cosine voice)
+locked_fields:
+  - voice_id
+  - speaker_embedding_path        # path .npy file 192-dim ECAPA-TDNN
+  - speaker_embedding_sha256      # integrity verify
+  - golden_reference_wav          # source WAV cho embedding
+  - accent
+  - timbre
+  - gender
+  - age_range
+  - pitch_base_hz
+  - speaking_rate_base_wps
 
 # ============================================================
-# PASSENGER VOICES (12 archetype × ~3 voice clone)
+# DYNAMIC FIELDS (Emotion layer — allowed within bounds)
 # ============================================================
-
-passenger_voices:
-  # Clone 12 archetype voice — mỗi archetype 1 voice_id riêng
-  # Khi gen ep, pick voice_id theo passenger_archetype của tập đó
-
-  ARCH_01_me_doi_con:
-    demographic: {gender: female, age: "55-72", accent: regional_mom}
-    config: {speech_rate: 0.85, pitch_semitones: 0, energy: 0.20}
-    emotional_baseline: {sadness: 0.60, warmth: 0.55, regret: 0.50}
-    voice_id: PLACEHOLDER_ARCH_01
-
-  ARCH_02_cha_cam_lang:
-    demographic: {gender: male, age: "48-65", accent: rural_father}
-    config: {speech_rate: 0.82, pitch_semitones: -2, energy: 0.20}
-    emotional_baseline: {sadness: 0.50, suppressed_emotion: 0.70, authority: 0.45}
-    voice_id: PLACEHOLDER_ARCH_02
-
-  ARCH_03_vo_tre:
-    demographic: {gender: female, age: "26-38", accent: urban_young_female}
-    config: {speech_rate: 0.88, pitch_semitones: 0, energy: 0.30}
-    emotional_baseline: {sadness: 0.55, regret: 0.55, warmth: 0.45}
-    voice_id: PLACEHOLDER_ARCH_03
-
-  ARCH_04_gai_18:
-    demographic: {gender: female, age: "17-20", accent: student}
-    config: {speech_rate: 0.92, pitch_semitones: +1, energy: 0.35}
-    emotional_baseline: {sadness: 0.45, regret: 0.60, naivety: 0.40}
-    voice_id: PLACEHOLDER_ARCH_04
-
-  ARCH_05_linh_gia:
-    demographic: {gender: male, age: "65-80", accent: northern_elder}
-    config: {speech_rate: 0.80, pitch_semitones: -2, energy: 0.20}
-    emotional_baseline: {sadness: 0.50, gravitas: 0.65, acceptance: 0.50}
-    voice_id: PLACEHOLDER_ARCH_05
-
-  ARCH_06_ban_hang_dem:
-    demographic: {gender: female, age: "24-35", accent: south_urban}
-    config: {speech_rate: 0.88, pitch_semitones: 0, energy: 0.30}
-    emotional_baseline: {sadness: 0.55, fatigue: 0.40, regret: 0.50}
-    voice_id: PLACEHOLDER_ARCH_06
-
-  ARCH_07_chong_di_xa:
-    demographic: {gender: male, age: "32-48", accent: laborer}
-    config: {speech_rate: 0.85, pitch_semitones: -1, energy: 0.25}
-    emotional_baseline: {sadness: 0.55, regret: 0.60, weariness: 0.40}
-    voice_id: PLACEHOLDER_ARCH_07
-
-  ARCH_08_ba_co_don:
-    demographic: {gender: female, age: "68-82", accent: northern_grandmother}
-    config: {speech_rate: 0.78, pitch_semitones: -1, energy: 0.20}
-    emotional_baseline: {sadness: 0.50, warmth: 0.55, acceptance: 0.60}
-    voice_id: PLACEHOLDER_ARCH_08
-
-  ARCH_09_con_roi_nha:
-    demographic: {gender: any, age: "28-40", accent: urban_professional}
-    config: {speech_rate: 0.88, pitch_semitones: 0, energy: 0.30}
-    emotional_baseline: {sadness: 0.55, regret: 0.65, suppressed_emotion: 0.40}
-    voice_id: PLACEHOLDER_ARCH_09 (male) + PLACEHOLDER_ARCH_09F (female)
-
-  ARCH_10_co_giao_lang:
-    demographic: {gender: female, age: "35-55", accent: rural_teacher}
-    config: {speech_rate: 0.85, pitch_semitones: 0, energy: 0.25}
-    emotional_baseline: {sadness: 0.50, regret: 0.55, warmth: 0.45}
-    voice_id: PLACEHOLDER_ARCH_10
-
-  ARCH_11_ban_ve_so:
-    demographic: {gender: male/female, age: "50-70", accent: street_seller}
-    config: {speech_rate: 0.82, pitch_semitones: -1, energy: 0.22}
-    emotional_baseline: {sadness: 0.55, weariness: 0.55, acceptance: 0.45}
-    voice_id: PLACEHOLDER_ARCH_11
-
-  ARCH_12_yeu_xa:
-    demographic: {gender: any, age: "22-26", accent: urban_young}
-    config: {speech_rate: 0.90, pitch_semitones: 0, energy: 0.30}
-    emotional_baseline: {sadness: 0.60, regret: 0.70, longing: 0.65}
-    voice_id: PLACEHOLDER_ARCH_12 (male) + PLACEHOLDER_ARCH_12F (female)
+dynamic_fields:
+  emotion_vector:
+    type: list_float
+    length: 8
+    sum_max: 1.0                  # R175b normalize hardlock
+    range_per_dim: [0.0, 1.0]
+  intensity:
+    type: float
+    range: [0.0, 1.0]
+  pause_ms:
+    type: int
+    range: [0, 3000]
+  speech_rate_modifier:
+    type: float
+    range: [0.95, 1.05]            # docx limit
+  breath_intensity:
+    type: float
+    range: [0.0, 0.3]
 
 # ============================================================
-# DIALOGUE ACTING RULES (per Mr.Long docx v6)
+# VOICE STATE MACHINE
 # ============================================================
-# Người già / trẻ / mẹ / bố KHÔNG đọc giống nhau
+states:
+  NORMAL:
+    description: "Trung tính, kể chuyện"
+    default_emotion_vector: [0.0, 0.0, 0.1, 0.1, 0.0, 0.2, 0.0, 0.6]
+  SO:
+    label_vi: "SỢ"
+    description: "Sợ hãi, dè dặt"
+    default_emotion_vector: [0.0, 0.0, 0.0, 0.4, 0.0, 0.2, 0.0, 0.4]
+  THI_THAM:
+    label_vi: "THÌ THẦM"
+    description: "Thì thầm bí ẩn"
+    default_emotion_vector: [0.0, 0.0, 0.2, 0.05, 0.0, 0.3, 0.0, 0.45]
+  HOANG:
+    label_vi: "HOẢNG"
+    description: "Hoảng hốt"
+    default_emotion_vector: [0.0, 0.0, 0.0, 0.5, 0.0, 0.2, 0.1, 0.2]
+  NGHEN:
+    label_vi: "NGHẸN"
+    description: "Nghẹn ngào xúc động"
+    default_emotion_vector: [0.0, 0.0, 0.4, 0.1, 0.0, 0.3, 0.0, 0.2]
+  XUC_DONG:
+    label_vi: "XÚC ĐỘNG"
+    description: "Xúc động bồi hồi"
+    default_emotion_vector: [0.0, 0.0, 0.3, 0.05, 0.0, 0.4, 0.0, 0.25]
 
-dialog_acting:
-  elder:
-    pace: slower (×0.92)
-    breathiness: medium
-    vibrato: subtle
-    pitch_variance: low
-    notes: "Câu ngắn hơn, có pause giữa câu. Hơi thở rõ nhẹ."
-
-  child:
-    pace: faster (×1.05)
-    brightness: higher (energy +0.10)
-    pitch_semitones: +2 vs adult baseline
-    notes: "Câu rời, đôi khi reset giữa câu. ONLY trong flashback có voice trẻ con."
-
-  mother:
-    warmth: high (warmth +0.15)
-    pace: normal
-    pitch_variance: medium-high
-    notes: "Câu gắt mềm — yêu nhưng kiên định. Tránh 'syrupy'."
-
-  father:
-    authority: medium (authority +0.20)
-    pace: slower (×0.95)
-    breathiness: low
-    pitch_variance: low
-    notes: "Câu ngắn dứt khoát. Tránh nâng cao giọng kết câu."
-
-  young_woman:
-    pace: normal
-    pitch_variance: medium-high
-    energy: 0.30
-    notes: "Câu mềm nhưng KHÔNG yếu. Tránh whisper-y."
-
-  young_man:
-    pace: normal
-    pitch_semitones: 0 (baseline male)
-    energy: 0.30
-    notes: "Câu trầm tĩnh. Tránh 'cool guy' style — quá flat."
-
-  elder_woman_grandmother:
-    pace: slower (×0.88)
-    warmth: high (warmth +0.15)
-    breathiness: medium
-    pitch_semitones: -1
-    notes: "Câu chậm rãi, ấm. Có pause thoughtful. Tránh whispy."
-
-  elder_man_grandfather:
-    pace: slower (×0.88)
-    gravitas: high (authority +0.25)
-    pitch_semitones: -2
-    notes: "Câu trầm vang. Pause trước câu key. Tránh sermonizing."
+state_transitions:
+  NORMAL: [SO, THI_THAM, NGHEN, XUC_DONG]
+  SO: [HOANG, THI_THAM, NORMAL]
+  THI_THAM: [NORMAL, SO, NGHEN]
+  HOANG: [SO, NORMAL]
+  NGHEN: [XUC_DONG, NORMAL, THI_THAM]
+  XUC_DONG: [NGHEN, NORMAL, THI_THAM]
 
 # ============================================================
-# EMOTION SCALE MAP (per docx v6 — chuẩn intensity vocabulary)
+# CHARACTER PROFILES — 4 mandatory cho EP01-EP90
 # ============================================================
-# Mỗi number trên scale = 1 label cụ thể. Generator/TTS đồng bộ vocabulary.
+profiles:
+  NARRATOR:
+    voice_id: NARRATOR
+    speaker_embedding_path: assets/voice_refs/NARRATOR_embedding.npy
+    speaker_embedding_sha256: PLACEHOLDER_TBD_ON_FIRST_EMBEDDING_EXTRACT
+    golden_reference_wav: assets/voice_refs/NARRATOR_golden.wav
+    accent: Bac
+    timbre: warm_baritone
+    gender: male
+    age_range: [40, 55]
+    pitch_base_hz: 105
+    speaking_rate_base_wps: 2.7
+    initial_state: NORMAL
+    allowed_states: [NORMAL, NGHEN, THI_THAM, XUC_DONG]
+    notes: "Khanh An kenh Hac Da Ky official narrator. Reuse NNG profile baseline."
 
-emotion_scale:
-  0.00: "silent"           # không có emotion (room tone only, no narration emotion)
-  0.20: "almost_flat"      # baseline narrator, gentle
-  0.40: "reflective"       # contemplative, slight melancholy
-  0.60: "emotional"        # tearing up, voice slight tremor
-  0.80: "choking"          # voice broken at edges (beat_4 peak REGRET LINE)
-  1.00: "crying"           # NOT used — too dramatic, soul drift
-                          # CAP intensity at 0.85 cho mọi production render
+  KHAI_PHONG:
+    voice_id: KHAI_PHONG
+    speaker_embedding_path: assets/voice_refs/KHAI_PHONG_embedding.npy
+    speaker_embedding_sha256: PLACEHOLDER_TBD_ON_FIRST_EMBEDDING_EXTRACT
+    golden_reference_wav: assets/voice_refs/KHAI_PHONG_golden.wav
+    accent: Bac
+    timbre: warm_tenor
+    gender: male
+    age_range: [38, 45]
+    pitch_base_hz: 130
+    speaking_rate_base_wps: 2.5
+    initial_state: NORMAL
+    allowed_states: [NORMAL, NGHEN, XUC_DONG, THI_THAM, SO]
+    notes: "Khai-Phong protagonist EP01. Recurring qua flashback EP02+."
 
-scale_mapping_to_presets:
-  curious:        0.40 (reflective)
-  uneasy:         0.50
-  empathy:        0.55
-  regret:         0.70 (emotional)
-  regret_climax:  0.80 (choking) — ONLY beat_4 PHẦN 3 dòng 3-5 câu
-  regret_fading:  0.55
-  lingering:      0.45
-  lingering_extended: 0.40
-  bac_tai_speech: 0.20 (almost_flat)
-  passenger_regret: 0.75
-  child_voiceover_flashback: 0.50
+  DRIVER:
+    voice_id: DRIVER
+    speaker_embedding_path: assets/voice_refs/DRIVER_embedding.npy
+    speaker_embedding_sha256: PLACEHOLDER_TBD_ON_FIRST_EMBEDDING_EXTRACT
+    golden_reference_wav: assets/voice_refs/DRIVER_golden.wav
+    accent: Bac
+    timbre: deep_old_male
+    gender: male
+    age_range: [55, 65]
+    pitch_base_hz: 95
+    speaking_rate_base_wps: 2.2
+    initial_state: THI_THAM
+    allowed_states: [THI_THAM, NORMAL]
+    notes: "Bac tai recurring 90 EP. CHI 2 cau chuan Q1/Q2 per R174."
 
-intensity_per_ep_range_apply (load bible/09_emotion_intensity):
-  ep_1_10:    base × 0.85   # khán giả mới, không đẩy quá
-  ep_11_30:   base × 1.00
-  ep_31_60:   base × 1.15
-  ep_61_90:   base × 1.30
-  ep_73:      base × 1.40   # PIVOT
-  ep_90:      base × 1.45   # FINALE
-  hard_cap:   0.85          # KHÔNG vượt — "crying" forbidden
+  GIRL_GHE7:
+    voice_id: GIRL_GHE7
+    speaker_embedding_path: assets/voice_refs/GIRL_GHE7_embedding.npy
+    speaker_embedding_sha256: PLACEHOLDER_TBD_ON_FIRST_EMBEDDING_EXTRACT
+    golden_reference_wav: assets/voice_refs/GIRL_GHE7_golden.wav
+    accent: Bac
+    timbre: soft_young_female
+    gender: female
+    age_range: [20, 28]
+    pitch_base_hz: 215
+    speaking_rate_base_wps: 2.6
+    initial_state: NORMAL
+    allowed_states: [NORMAL, THI_THAM, NGHEN]
+    notes: "Co gai ghe 7 EP01 cliffhanger. Cycle horror hook EP02."
 
 # ============================================================
-# DRIFT POLICY
+# QA TIER 2.x — 5 artifact types riêng biệt (Mr.Long docx 30/6)
 # ============================================================
-
-drift_policy:
-  - voice_id swap giữa series → HARD-FAIL (brand identity 90 ep)
-  - voice_signature checksum drift > 5% → REJECT
-  - speech_rate drift > 0.02 → REJECT
-  - pitch_semitones drift > 0.5 → WARNING
-  - cross-passenger voice contamination → REJECT (vd ARCH_01 voice hiện ở ARCH_07)
-  - intensity > 0.85 hard cap → REGEN (avoid "crying" drift)
+artifact_types:
+  voice_identity_drift:
+    detect_via: speaker_embedding cosine sim < 0.85
+    severity: Critical
+    fix: re-render with same seed + voice profile reload
+  pause_boundary_artifact:
+    description: u u / xi / e tai pause boundary
+    detect_via: spectral analysis +/- 200ms quanh pause
+    severity: Critical
+    priority_rank: 1
+    note: Mr.Long mark TOP 5-star
+    rule_ref: R188
+  breath_artifact:
+    description: xi / phu / e / hu khong mong muon
+    detect_via: sibilance excess + aspiration energy
+    severity: High
+    rule_ref: R189
+  onset_artifact:
+    description: e o dau cau
+    detect_via: spectral analysis +/- 100ms tu chunk start
+    severity: High
+    rule_ref: R190b
+  prosody_collapse:
+    description: tut cao do / rung / lem sau ...
+    detect_via: F0 contour anomaly
+    severity: High
+    rule_ref: R190
 
 # ============================================================
-# QA INTEGRATION (TTS M12 MOS QA loads this)
+# SEALED FIELD INVARIANT (R181b enforcement)
 # ============================================================
+sealed_invariants:
+  - VoiceProfile.set_locked_field() PHAI raise LockedFieldError
+  - VoiceProfile.modify_emotion() PHAI validate range truoc apply
+  - VoiceProfile.transition_state() PHAI check transition matrix
+  - Registry init tu bible/15 KHONG ad-hoc voice_id
+  - Moi TTS render call PHAI lookup profile truoc
 
-mos_target_per_voice:
-  narrator: ≥4.3 naturalness / ≥4.5 intelligibility / ≥4.2 emotional_believability
-  bac_tai: ≥4.4 naturalness / ≥4.5 intelligibility / ≥4.3 emotional_believability
-  passenger_voices: ≥4.0 / ≥4.4 / ≥4.0 (lower threshold — one-shot)
-
-blind_listen_test_passing_thresholds:
-  Q1_brand_recognition_3s: ≥70%
-  Q2_human_perception: ≥85%
-  Q3_no_robot_segments: ≥80%
-  Q4_want_to_continue: ≥75%
+# ============================================================
+# CHANGELOG
+# ============================================================
+changelog:
+  v2.0:
+    date: 2026-06-30
+    by: CMD THUC THI Phase 1 build per Mr.Long approve
+    changes:
+      - Add LOCKED/DYNAMIC schema split
+      - Add 4 character profiles
+      - Add voice state machine
+      - Add 5 artifact types Mr.Long lock
+      - Add sealed invariants
+  v1.0:
+    date: 2026-06-23
+    note: Original v1.0 minimal voice config only. Replaced by v2.0.

@@ -1,0 +1,27 @@
+{
+  "auto_fixed": [
+    {
+      "ep": "ep_11",
+      "fixes": [
+        {
+          "pattern": "không nhớ vì sao",
+          "replacement": "không hiểu vì sao",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "ep": "ep_34",
+      "fixes": [
+        {
+          "pattern": "không nhớ vì sao",
+          "replacement": "không hiểu vì sao",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "manual_review": [],
+  "total_eps_auto_fixed": 2,
+  "total_manual_cases": 0
+}

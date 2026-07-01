@@ -1,49 +1,9 @@
 {
-  "total": 11,
+  "total": 2,
   "eps": [
     [
       1,
-      1
-    ],
-    [
-      3,
-      1
-    ],
-    [
-      7,
-      1
-    ],
-    [
-      11,
-      1
-    ],
-    [
-      18,
-      1
-    ],
-    [
-      19,
-      1
-    ],
-    [
-      22,
-      1
-    ],
-    [
-      29,
-      1
-    ],
-    [
-      33,
-      1
-    ],
-    [
-      41,
-      1
-    ],
-    [
-      42,
-      1
+      2
     ]
   ],
   "violations": [
@@ -51,89 +11,17 @@
       "type": "phrase_2gram_repeat",
       "phrase": "0 30",
       "count": 3,
-      "para_idx": 295,
+      "para_idx": 233,
       "para_preview": "| Section | emo focus | New element |\n|---|---|---|\n| HOOK | surprised 0.40 + calm 0.30 | giữ |\n| SE",
       "ep": 1
     },
     {
       "type": "phrase_2gram_repeat",
-      "phrase": "gái gái",
+      "phrase": "cô ấy",
       "count": 3,
-      "para_idx": 45,
-      "para_preview": "\"Hai chín tối, em gái gọi điện. Không phải tin nhắn. Cô gái gái gái gái gọi. Em gọi đến lần thứ ba c",
-      "ep": 3
-    },
-    {
-      "type": "phrase_2gram_repeat",
-      "phrase": "lần Tách",
-      "count": 3,
-      "para_idx": 26,
-      "para_preview": "Đồng hồ trên xe — chiếc đồng hồ nhỏ — kim phút nhích một lần. Tách. Hai lần. Tách. Ba lần. Tách. Bốn",
-      "ep": 7
-    },
-    {
-      "type": "phrase_2gram_repeat",
-      "phrase": "gái gái",
-      "count": 3,
-      "para_idx": 55,
-      "para_preview": "\"Năm vừa rồi em cưới vợ. Vợ em hỏi vòng cổ ngay đêm cưới. Cô gái gái gái gái kể. Vợ em im một lúc. E",
-      "ep": 11
-    },
-    {
-      "type": "phrase_2gram_repeat",
-      "phrase": "gái gái",
-      "count": 3,
-      "para_idx": 32,
-      "para_preview": "\"Em và anh quen qua câu lạc bộ ghi-ta đại học. Anh ấy chơi đàn ghi-ta rất tốt. Cô gái gái gái gái há",
-      "ep": 18
-    },
-    {
-      "type": "phrase_2gram_repeat",
-      "phrase": "gái gái",
-      "count": 3,
-      "para_idx": 46,
-      "para_preview": "\"Đêm tang Mai — em không đến đúng giờ. Cô gái gái gái gái ngại. Cô ấy gái ngại nhìn Mai trong quan t",
-      "ep": 19
-    },
-    {
-      "type": "phrase_2gram_repeat",
-      "phrase": "gái gái",
-      "count": 3,
-      "para_idx": 48,
-      "para_preview": "\"Năm thứ hai — em hai bảy — em yêu — em lấy chồng — em sinh con đầu lòng. Cô gái gái gái gái bận. Em",
-      "ep": 22
-    },
-    {
-      "type": "phrase_2gram_repeat",
-      "phrase": "gái gái",
-      "count": 3,
-      "para_idx": 46,
-      "para_preview": "\"Em không nghi em. Cô gái gái gái gái gật. Bảo: 'Em đợi chị tốt nghiệp xong — chị có thời gian.'\"",
-      "ep": 29
-    },
-    {
-      "type": "phrase_2gram_repeat",
-      "phrase": "gái gái",
-      "count": 3,
-      "para_idx": 44,
-      "para_preview": "\"Hai năm trôi. Cô gái gái gái gái bận. Người con gái không ra ngoài chơi. Hình bóng con gái ấy vẫn d",
-      "ep": 33
-    },
-    {
-      "type": "phrase_2gram_repeat",
-      "phrase": "gái gái",
-      "count": 3,
-      "para_idx": 40,
-      "para_preview": "\"Em ngồi ngoài phòng mổ năm giờ — không ai bên cạnh. Cô gái gái gái gái đợi. Bác sĩ ra báo: 'Chị Trâ",
-      "ep": 41
-    },
-    {
-      "type": "phrase_2gram_repeat",
-      "phrase": "gái gái",
-      "count": 3,
-      "para_idx": 38,
-      "para_preview": "\"Bảy giờ rưỡi — em về — đoạn đường ven sông — xe tải vào đường nhỏ không đúng. Cô gái gái gái gái va",
-      "ep": 42
+      "para_idx": 235,
+      "para_preview": "1. **Câu hát ông cụ \"Người ơi người ở đừng về\"** — em chọn câu quan họ phổ thông cho tiễn biệt. Mr. ",
+      "ep": 1
     }
   ]
 }

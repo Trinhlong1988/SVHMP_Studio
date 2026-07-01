@@ -1,21 +1,18 @@
-=== SVHMP 90 EP AUDIO PLAN REPORT ===
-Generated: R1-R3 SVHMP HDK 28/6
-EPs planned: 90 × 6 sections = 540 piano slots + ~540 SFX slots
+=== SVHMP 90 EP AUDIO PLAN REPORT v2.0 ===
+Generated: R1-R3 + bible/05 v1.1 R_AUDIO_01-10
+EPs planned: 90 x 6 sections = 540 piano slots + ~540 SFX slots
 
-PIANO USAGE DISTRIBUTION:
-  Tracks used: 210/384
-  Usage histogram: {1: 64, 2: 48, 3: 45, 4: 37, 5: 7, 6: 4, 7: 2, 8: 3}
-  Mean uses/track: 2.57
+PIANO SOURCE BREAKDOWN (R_AUDIO_05):
+  HDK_specialized picks: 384/540 (71%)
+  pixabay_fallback:      156/540 (29%)
 
-R2 VIOLATIONS (HOOK == CLIFFHANGER in same EP):
-  0/90 (0 expected)
+SETTING VALIDATION (R_AUDIO_04):
+  Forbidden SFX caught (in final picks): 0 (must be 0)
 
-R3 VIOLATIONS (cooldown violated):
-  0 total
+R2 VIOLATIONS (HOOK==CLIFFHANGER): 0/90 (0 expected)
+R3 VIOLATIONS (cooldown): 0
 
-SFX USAGE:
-  Unique SFX used: 373/822
-
-OUTPUT FILES:
+OUTPUT:
   D:\DỰ ÁN AI\GIỌNG ĐỌC\DỰ ÁN TRUYỆN MA\SVHMP_Studio\output\ep_audio_plan.yaml
   D:\DỰ ÁN AI\GIỌNG ĐỌC\DỰ ÁN TRUYỆN MA\SVHMP_Studio\output\library_usage_log.json
+  output/ep_NN/moment_map_template.yaml (90 files)

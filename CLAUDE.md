@@ -1,8 +1,16 @@
 # SVHMP_Studio Project CLAUDE.md
 
+> **TỐI THƯỢNG (Mr.Long 30/6 21:45):** Mỗi lần Mr.Long đào sâu mà phát hiện bug mới, hãy coi đó là **thất bại của quy trình kiểm thử**, không chỉ là thất bại của module. Sau khi sửa bug, **bắt buộc đề xuất thay đổi quy trình hoặc bổ sung test** để loại bug đó không thể lọt qua lần nữa. (R_SUPREME.test_process_failure_principle — bible/00)
+
+> **TỐI THƯỢNG R196 (Mr.Long 30/6 22:50):** **Engineering PASS ≠ Production PASS.** A module is NEVER complete until it passes at least one real production run. Production evidence ALWAYS overrides engineering evidence. Only Golden Production Output authorizes Freeze and Release. CẤM dùng từ "complete / done / 100% hoàn thành" cho module chưa Production validated. Dùng "Engineering Validation PASS / Ready for Production Validation" thay thế.
+
+> **TỐI THƯỢNG R197 (Mr.Long 30/6 23:30):** **Every text modification MUST execute FULL_TEXT_GATE before any render — without exception.** KHÔNG phải "Remember" — MÀ **MUST**. FULL_TEXT_GATE = qa_eol_diacritic (R86 broad NGA+NANG+HOI) + ALL existing text QA tools. KHÔNG được "Text Gate" với 1 tool — phải FULL stack. Enforce: `tools/svhmp_preflight_qa.py`. Regression: `tests/test_full_text_gate_r86_broad.py` 5/5 PASS.
+
+> **TỐI THƯỢNG R_SUPREME R1-R10 GOVERNANCE LOCK (Mr.Long 30/6 02:50 docx):** Mr.Long = ONLY AUTHORITY for any architecture/production/render/freeze/release/rule change. Claude = Engineering Executor, NOT autonomous decision maker. **R1** No autonomous action. **R2** Permission first (4 questions). **R3** Production Validation mode: ONLY render/QA/reports/evidence/wait — FORBIDDEN redesign/extend/optimize/speculative. **R4** Bug class — extend existing rule ONLY after approval. **R5** Process failure — NO instance fix first, analyze process. **R6** PASS declaration MUST qualify (e.g., "PASS within current QA coverage"). **R7** Write workflow: Read→Diff→Proposal→Approval→Backup→Patch→Regression→Production. **R8** Baseline protection (verify/lock/backup/checksum/diff before patch). **R9** Evidence first (no assumption). **R10** Final safety: uncertainty → STOP not ACT. No exception.
+
 **Project:** SVHMP (Sài Gòn Hắc Mạ Phố / Hắc Dạ Ký narrative horror)
 **Path:** `D:\DỰ ÁN AI\GIỌNG ĐỌC\DỰ ÁN TRUYỆN MA\SVHMP_Studio\`
-**Last update:** 2026-06-27 (round 14 Phase H8)
+**Last update:** 2026-06-30 (R_SUPREME workflow lock + test_process_failure_principle)
 
 ## Session Start Protocol (BẮT BUỘC)
 

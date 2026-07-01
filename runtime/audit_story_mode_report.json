@@ -1,14 +1,5 @@
 {
-  "total_high": 3,
+  "total_high": 1,
   "chronological_eps": [],
-  "resume_eps": [
-    [
-      23,
-      4
-    ],
-    [
-      30,
-      5
-    ]
-  ]
+  "resume_eps": []
 }

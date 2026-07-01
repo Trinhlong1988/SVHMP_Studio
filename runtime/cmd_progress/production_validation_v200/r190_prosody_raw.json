@@ -1,0 +1,8277 @@
+{
+  "rule": "R190 prosody_collapse",
+  "wav": "output/ep_01/EP01_VOICE_v200.wav",
+  "n_high": 516,
+  "n_medium": 862,
+  "verdict": "FAIL",
+  "findings": [
+    {
+      "ts_sec": 3.622,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.415
+    },
+    {
+      "ts_sec": 3.622,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.55
+    },
+    {
+      "ts_sec": 4.18,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.635
+    },
+    {
+      "ts_sec": 5.016,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.676
+    },
+    {
+      "ts_sec": 6.687,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.638
+    },
+    {
+      "ts_sec": 6.966,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.618
+    },
+    {
+      "ts_sec": 7.523,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.667
+    },
+    {
+      "ts_sec": 7.802,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.83
+    },
+    {
+      "ts_sec": 8.916,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.453
+    },
+    {
+      "ts_sec": 8.916,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.493
+    },
+    {
+      "ts_sec": 11.146,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.59
+    },
+    {
+      "ts_sec": 13.096,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.414
+    },
+    {
+      "ts_sec": 13.932,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.624
+    },
+    {
+      "ts_sec": 17.833,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.427
+    },
+    {
+      "ts_sec": 19.505,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.602
+    },
+    {
+      "ts_sec": 20.619,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.538
+    },
+    {
+      "ts_sec": 20.619,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.521
+    },
+    {
+      "ts_sec": 21.455,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.455
+    },
+    {
+      "ts_sec": 22.57,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.754
+    },
+    {
+      "ts_sec": 23.127,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.553
+    },
+    {
+      "ts_sec": 24.242,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.411
+    },
+    {
+      "ts_sec": 24.52,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.451
+    },
+    {
+      "ts_sec": 25.913,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.397
+    },
+    {
+      "ts_sec": 26.192,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.666
+    },
+    {
+      "ts_sec": 26.471,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.569
+    },
+    {
+      "ts_sec": 27.307,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.514
+    },
+    {
+      "ts_sec": 27.307,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.611
+    },
+    {
+      "ts_sec": 27.585,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.425
+    },
+    {
+      "ts_sec": 28.979,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.453
+    },
+    {
+      "ts_sec": 29.257,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.427
+    },
+    {
+      "ts_sec": 29.814,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.535
+    },
+    {
+      "ts_sec": 31.486,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.468
+    },
+    {
+      "ts_sec": 32.601,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.729
+    },
+    {
+      "ts_sec": 32.879,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.626
+    },
+    {
+      "ts_sec": 33.158,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.761
+    },
+    {
+      "ts_sec": 33.994,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.423
+    },
+    {
+      "ts_sec": 35.109,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.507
+    },
+    {
+      "ts_sec": 35.109,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.71
+    },
+    {
+      "ts_sec": 35.387,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.505
+    },
+    {
+      "ts_sec": 37.059,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.539
+    },
+    {
+      "ts_sec": 37.338,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.402
+    },
+    {
+      "ts_sec": 37.338,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.541
+    },
+    {
+      "ts_sec": 38.174,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.425
+    },
+    {
+      "ts_sec": 38.452,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.468
+    },
+    {
+      "ts_sec": 39.01,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.483
+    },
+    {
+      "ts_sec": 39.845,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.528
+    },
+    {
+      "ts_sec": 41.239,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.578
+    },
+    {
+      "ts_sec": 42.353,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.373
+    },
+    {
+      "ts_sec": 44.025,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.47
+    },
+    {
+      "ts_sec": 44.861,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.501
+    },
+    {
+      "ts_sec": 45.418,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.392
+    },
+    {
+      "ts_sec": 45.697,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.41
+    },
+    {
+      "ts_sec": 45.976,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.574
+    },
+    {
+      "ts_sec": 47.926,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.472
+    },
+    {
+      "ts_sec": 47.926,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.616
+    },
+    {
+      "ts_sec": 48.205,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.46
+    },
+    {
+      "ts_sec": 49.876,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.487
+    },
+    {
+      "ts_sec": 50.155,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.373
+    },
+    {
+      "ts_sec": 50.434,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.502
+    },
+    {
+      "ts_sec": 51.548,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.521
+    },
+    {
+      "ts_sec": 51.548,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.632
+    },
+    {
+      "ts_sec": 52.106,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.516
+    },
+    {
+      "ts_sec": 52.384,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.456
+    },
+    {
+      "ts_sec": 52.663,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.695
+    },
+    {
+      "ts_sec": 53.22,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.56
+    },
+    {
+      "ts_sec": 53.777,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.413
+    },
+    {
+      "ts_sec": 55.449,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.494
+    },
+    {
+      "ts_sec": 55.728,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.621
+    },
+    {
+      "ts_sec": 56.007,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.496
+    },
+    {
+      "ts_sec": 56.564,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.66
+    },
+    {
+      "ts_sec": 56.842,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.436
+    },
+    {
+      "ts_sec": 56.842,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.692
+    },
+    {
+      "ts_sec": 57.121,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.662
+    },
+    {
+      "ts_sec": 59.072,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.417
+    },
+    {
+      "ts_sec": 59.629,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.414
+    },
+    {
+      "ts_sec": 59.907,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.577
+    },
+    {
+      "ts_sec": 60.465,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.525
+    },
+    {
+      "ts_sec": 61.022,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.701
+    },
+    {
+      "ts_sec": 61.858,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.434
+    },
+    {
+      "ts_sec": 63.808,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.651
+    },
+    {
+      "ts_sec": 65.759,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.613
+    },
+    {
+      "ts_sec": 66.038,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.476
+    },
+    {
+      "ts_sec": 67.431,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.64
+    },
+    {
+      "ts_sec": 67.988,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.769
+    },
+    {
+      "ts_sec": 68.267,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.773
+    },
+    {
+      "ts_sec": 68.545,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.487
+    },
+    {
+      "ts_sec": 69.103,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.429
+    },
+    {
+      "ts_sec": 71.332,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.365
+    },
+    {
+      "ts_sec": 71.889,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.628
+    },
+    {
+      "ts_sec": 73.282,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.433
+    },
+    {
+      "ts_sec": 73.561,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.412
+    },
+    {
+      "ts_sec": 74.118,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.468
+    },
+    {
+      "ts_sec": 75.79,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.684
+    },
+    {
+      "ts_sec": 76.626,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.593
+    },
+    {
+      "ts_sec": 77.462,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.522
+    },
+    {
+      "ts_sec": 77.74,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.504
+    },
+    {
+      "ts_sec": 78.019,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.452
+    },
+    {
+      "ts_sec": 78.576,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.554
+    },
+    {
+      "ts_sec": 80.248,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.539
+    },
+    {
+      "ts_sec": 81.363,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.433
+    },
+    {
+      "ts_sec": 82.756,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.5
+    },
+    {
+      "ts_sec": 83.035,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.401
+    },
+    {
+      "ts_sec": 83.592,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.454
+    },
+    {
+      "ts_sec": 85.264,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.757
+    },
+    {
+      "ts_sec": 86.378,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.698
+    },
+    {
+      "ts_sec": 86.657,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.532
+    },
+    {
+      "ts_sec": 88.607,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.358
+    },
+    {
+      "ts_sec": 89.443,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.658
+    },
+    {
+      "ts_sec": 90.001,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.369
+    },
+    {
+      "ts_sec": 90.279,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.685
+    },
+    {
+      "ts_sec": 90.558,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.621
+    },
+    {
+      "ts_sec": 91.115,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.431
+    },
+    {
+      "ts_sec": 92.787,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.485
+    },
+    {
+      "ts_sec": 93.344,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.375
+    },
+    {
+      "ts_sec": 94.459,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.726
+    },
+    {
+      "ts_sec": 96.967,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.803
+    },
+    {
+      "ts_sec": 97.524,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.365
+    },
+    {
+      "ts_sec": 98.638,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.473
+    },
+    {
+      "ts_sec": 99.474,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.447
+    },
+    {
+      "ts_sec": 99.753,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.382
+    },
+    {
+      "ts_sec": 100.589,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.451
+    },
+    {
+      "ts_sec": 100.867,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.554
+    },
+    {
+      "ts_sec": 100.867,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.474
+    },
+    {
+      "ts_sec": 101.146,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.505
+    },
+    {
+      "ts_sec": 102.261,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.487
+    },
+    {
+      "ts_sec": 103.933,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.606
+    },
+    {
+      "ts_sec": 103.933,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.718
+    },
+    {
+      "ts_sec": 106.719,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.384
+    },
+    {
+      "ts_sec": 107.555,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.433
+    },
+    {
+      "ts_sec": 109.227,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.546
+    },
+    {
+      "ts_sec": 109.227,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.543
+    },
+    {
+      "ts_sec": 110.899,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.469
+    },
+    {
+      "ts_sec": 111.177,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.356
+    },
+    {
+      "ts_sec": 111.177,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.567
+    },
+    {
+      "ts_sec": 112.57,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.397
+    },
+    {
+      "ts_sec": 115.078,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.46
+    },
+    {
+      "ts_sec": 117.307,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.491
+    },
+    {
+      "ts_sec": 117.586,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.755
+    },
+    {
+      "ts_sec": 117.864,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.431
+    },
+    {
+      "ts_sec": 118.979,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.743
+    },
+    {
+      "ts_sec": 120.094,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.85
+    },
+    {
+      "ts_sec": 121.765,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.605
+    },
+    {
+      "ts_sec": 121.765,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.587
+    },
+    {
+      "ts_sec": 122.044,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.531
+    },
+    {
+      "ts_sec": 123.159,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.457
+    },
+    {
+      "ts_sec": 123.995,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.4
+    },
+    {
+      "ts_sec": 124.273,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.447
+    },
+    {
+      "ts_sec": 124.83,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.495
+    },
+    {
+      "ts_sec": 125.109,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.696
+    },
+    {
+      "ts_sec": 125.388,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.729
+    },
+    {
+      "ts_sec": 125.666,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.512
+    },
+    {
+      "ts_sec": 127.06,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.752
+    },
+    {
+      "ts_sec": 128.731,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.537
+    },
+    {
+      "ts_sec": 129.289,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.443
+    },
+    {
+      "ts_sec": 130.961,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.544
+    },
+    {
+      "ts_sec": 131.518,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.47
+    },
+    {
+      "ts_sec": 132.075,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.489
+    },
+    {
+      "ts_sec": 132.911,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.518
+    },
+    {
+      "ts_sec": 135.14,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.621
+    },
+    {
+      "ts_sec": 135.14,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.548
+    },
+    {
+      "ts_sec": 135.419,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.443
+    },
+    {
+      "ts_sec": 136.812,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.424
+    },
+    {
+      "ts_sec": 138.205,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.68
+    },
+    {
+      "ts_sec": 138.762,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.513
+    },
+    {
+      "ts_sec": 139.598,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.678
+    },
+    {
+      "ts_sec": 139.877,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.415
+    },
+    {
+      "ts_sec": 140.156,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.496
+    },
+    {
+      "ts_sec": 140.713,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.431
+    },
+    {
+      "ts_sec": 141.549,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.742
+    },
+    {
+      "ts_sec": 141.827,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.595
+    },
+    {
+      "ts_sec": 142.942,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.562
+    },
+    {
+      "ts_sec": 143.499,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.659
+    },
+    {
+      "ts_sec": 144.057,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.426
+    },
+    {
+      "ts_sec": 145.45,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.505
+    },
+    {
+      "ts_sec": 145.728,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.569
+    },
+    {
+      "ts_sec": 148.236,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.543
+    },
+    {
+      "ts_sec": 149.351,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.374
+    },
+    {
+      "ts_sec": 149.908,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.429
+    },
+    {
+      "ts_sec": 151.58,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.698
+    },
+    {
+      "ts_sec": 151.58,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.481
+    },
+    {
+      "ts_sec": 154.645,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.517
+    },
+    {
+      "ts_sec": 154.924,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.444
+    },
+    {
+      "ts_sec": 155.202,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.718
+    },
+    {
+      "ts_sec": 156.874,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.638
+    },
+    {
+      "ts_sec": 158.824,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.427
+    },
+    {
+      "ts_sec": 159.382,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.689
+    },
+    {
+      "ts_sec": 160.218,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.403
+    },
+    {
+      "ts_sec": 160.218,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.478
+    },
+    {
+      "ts_sec": 160.496,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.613
+    },
+    {
+      "ts_sec": 160.775,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.451
+    },
+    {
+      "ts_sec": 162.447,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.668
+    },
+    {
+      "ts_sec": 163.84,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.679
+    },
+    {
+      "ts_sec": 164.119,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.431
+    },
+    {
+      "ts_sec": 165.79,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.397
+    },
+    {
+      "ts_sec": 165.79,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.589
+    },
+    {
+      "ts_sec": 166.069,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.444
+    },
+    {
+      "ts_sec": 170.249,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.476
+    },
+    {
+      "ts_sec": 170.527,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.794
+    },
+    {
+      "ts_sec": 171.363,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.489
+    },
+    {
+      "ts_sec": 171.642,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.695
+    },
+    {
+      "ts_sec": 173.035,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.682
+    },
+    {
+      "ts_sec": 175.543,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.526
+    },
+    {
+      "ts_sec": 177.215,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.585
+    },
+    {
+      "ts_sec": 178.887,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.46
+    },
+    {
+      "ts_sec": 179.165,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.522
+    },
+    {
+      "ts_sec": 182.509,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.459
+    },
+    {
+      "ts_sec": 182.787,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.403
+    },
+    {
+      "ts_sec": 184.181,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.428
+    },
+    {
+      "ts_sec": 185.017,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.466
+    },
+    {
+      "ts_sec": 185.853,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.414
+    },
+    {
+      "ts_sec": 185.853,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.475
+    },
+    {
+      "ts_sec": 186.41,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.59
+    },
+    {
+      "ts_sec": 188.36,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.466
+    },
+    {
+      "ts_sec": 190.032,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.544
+    },
+    {
+      "ts_sec": 190.032,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.543
+    },
+    {
+      "ts_sec": 191.147,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.706
+    },
+    {
+      "ts_sec": 191.425,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.45
+    },
+    {
+      "ts_sec": 192.261,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.596
+    },
+    {
+      "ts_sec": 192.261,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.462
+    },
+    {
+      "ts_sec": 193.376,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.476
+    },
+    {
+      "ts_sec": 193.654,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.558
+    },
+    {
+      "ts_sec": 193.933,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.766
+    },
+    {
+      "ts_sec": 194.49,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.591
+    },
+    {
+      "ts_sec": 195.884,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.568
+    },
+    {
+      "ts_sec": 197.277,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.423
+    },
+    {
+      "ts_sec": 198.949,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.59
+    },
+    {
+      "ts_sec": 199.784,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.665
+    },
+    {
+      "ts_sec": 202.571,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.351
+    },
+    {
+      "ts_sec": 202.85,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.523
+    },
+    {
+      "ts_sec": 203.964,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.553
+    },
+    {
+      "ts_sec": 204.521,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.411
+    },
+    {
+      "ts_sec": 204.8,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.573
+    },
+    {
+      "ts_sec": 205.915,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.487
+    },
+    {
+      "ts_sec": 206.193,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.636
+    },
+    {
+      "ts_sec": 206.472,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.548
+    },
+    {
+      "ts_sec": 207.586,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.545
+    },
+    {
+      "ts_sec": 209.537,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.725
+    },
+    {
+      "ts_sec": 212.045,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.534
+    },
+    {
+      "ts_sec": 212.323,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.475
+    },
+    {
+      "ts_sec": 213.438,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.416
+    },
+    {
+      "ts_sec": 214.552,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.545
+    },
+    {
+      "ts_sec": 214.831,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.641
+    },
+    {
+      "ts_sec": 215.11,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.625
+    },
+    {
+      "ts_sec": 215.388,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.409
+    },
+    {
+      "ts_sec": 216.224,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.481
+    },
+    {
+      "ts_sec": 216.503,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.353
+    },
+    {
+      "ts_sec": 217.06,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.552
+    },
+    {
+      "ts_sec": 218.453,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.546
+    },
+    {
+      "ts_sec": 218.453,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.495
+    },
+    {
+      "ts_sec": 220.125,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.413
+    },
+    {
+      "ts_sec": 220.404,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.498
+    },
+    {
+      "ts_sec": 220.961,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.735
+    },
+    {
+      "ts_sec": 221.518,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.63
+    },
+    {
+      "ts_sec": 222.354,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.39
+    },
+    {
+      "ts_sec": 222.354,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.449
+    },
+    {
+      "ts_sec": 222.912,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.486
+    },
+    {
+      "ts_sec": 224.305,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.527
+    },
+    {
+      "ts_sec": 226.813,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.498
+    },
+    {
+      "ts_sec": 226.813,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.576
+    },
+    {
+      "ts_sec": 227.927,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.512
+    },
+    {
+      "ts_sec": 228.484,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.396
+    },
+    {
+      "ts_sec": 228.484,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.797
+    },
+    {
+      "ts_sec": 228.763,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.567
+    },
+    {
+      "ts_sec": 230.992,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.442
+    },
+    {
+      "ts_sec": 230.992,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.56
+    },
+    {
+      "ts_sec": 234.057,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.601
+    },
+    {
+      "ts_sec": 234.057,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.689
+    },
+    {
+      "ts_sec": 237.679,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.652
+    },
+    {
+      "ts_sec": 239.073,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.509
+    },
+    {
+      "ts_sec": 239.63,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.603
+    },
+    {
+      "ts_sec": 241.023,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.441
+    },
+    {
+      "ts_sec": 241.302,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.441
+    },
+    {
+      "ts_sec": 242.138,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.714
+    },
+    {
+      "ts_sec": 243.531,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.448
+    },
+    {
+      "ts_sec": 244.088,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.522
+    },
+    {
+      "ts_sec": 245.481,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.603
+    },
+    {
+      "ts_sec": 246.317,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.521
+    },
+    {
+      "ts_sec": 246.596,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.58
+    },
+    {
+      "ts_sec": 247.432,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.673
+    },
+    {
+      "ts_sec": 248.268,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.679
+    },
+    {
+      "ts_sec": 248.546,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.723
+    },
+    {
+      "ts_sec": 250.497,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.52
+    },
+    {
+      "ts_sec": 250.497,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.642
+    },
+    {
+      "ts_sec": 253.562,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.488
+    },
+    {
+      "ts_sec": 253.841,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.805
+    },
+    {
+      "ts_sec": 254.119,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.4
+    },
+    {
+      "ts_sec": 254.955,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.432
+    },
+    {
+      "ts_sec": 255.234,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.631
+    },
+    {
+      "ts_sec": 255.512,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.407
+    },
+    {
+      "ts_sec": 255.791,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.555
+    },
+    {
+      "ts_sec": 257.184,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.449
+    },
+    {
+      "ts_sec": 258.856,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.624
+    },
+    {
+      "ts_sec": 261.921,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.652
+    },
+    {
+      "ts_sec": 261.921,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.666
+    },
+    {
+      "ts_sec": 262.478,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.469
+    },
+    {
+      "ts_sec": 264.429,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.741
+    },
+    {
+      "ts_sec": 265.822,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.581
+    },
+    {
+      "ts_sec": 267.494,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.576
+    },
+    {
+      "ts_sec": 268.33,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.576
+    },
+    {
+      "ts_sec": 268.887,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.433
+    },
+    {
+      "ts_sec": 270.838,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.411
+    },
+    {
+      "ts_sec": 270.838,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.566
+    },
+    {
+      "ts_sec": 271.116,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.398
+    },
+    {
+      "ts_sec": 271.673,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.709
+    },
+    {
+      "ts_sec": 272.231,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.573
+    },
+    {
+      "ts_sec": 273.624,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.451
+    },
+    {
+      "ts_sec": 274.181,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.491
+    },
+    {
+      "ts_sec": 274.46,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.647
+    },
+    {
+      "ts_sec": 275.017,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.556
+    },
+    {
+      "ts_sec": 275.574,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.518
+    },
+    {
+      "ts_sec": 276.968,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.586
+    },
+    {
+      "ts_sec": 277.804,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.623
+    },
+    {
+      "ts_sec": 280.033,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.475
+    },
+    {
+      "ts_sec": 280.869,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.381
+    },
+    {
+      "ts_sec": 282.54,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.494
+    },
+    {
+      "ts_sec": 282.54,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.456
+    },
+    {
+      "ts_sec": 282.819,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.4
+    },
+    {
+      "ts_sec": 283.098,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.652
+    },
+    {
+      "ts_sec": 283.376,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.467
+    },
+    {
+      "ts_sec": 284.212,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.669
+    },
+    {
+      "ts_sec": 285.884,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.48
+    },
+    {
+      "ts_sec": 287.277,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.515
+    },
+    {
+      "ts_sec": 287.835,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.4
+    },
+    {
+      "ts_sec": 290.064,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.736
+    },
+    {
+      "ts_sec": 290.342,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.809
+    },
+    {
+      "ts_sec": 291.736,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.542
+    },
+    {
+      "ts_sec": 292.014,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.659
+    },
+    {
+      "ts_sec": 293.129,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.361
+    },
+    {
+      "ts_sec": 293.965,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.756
+    },
+    {
+      "ts_sec": 294.243,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.75
+    },
+    {
+      "ts_sec": 295.358,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.592
+    },
+    {
+      "ts_sec": 295.636,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.785
+    },
+    {
+      "ts_sec": 297.587,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.43
+    },
+    {
+      "ts_sec": 297.587,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.533
+    },
+    {
+      "ts_sec": 302.324,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.377
+    },
+    {
+      "ts_sec": 302.324,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.429
+    },
+    {
+      "ts_sec": 303.16,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.37
+    },
+    {
+      "ts_sec": 305.667,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.441
+    },
+    {
+      "ts_sec": 305.946,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.359
+    },
+    {
+      "ts_sec": 307.061,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.421
+    },
+    {
+      "ts_sec": 307.618,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.47
+    },
+    {
+      "ts_sec": 307.897,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.433
+    },
+    {
+      "ts_sec": 308.733,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.426
+    },
+    {
+      "ts_sec": 310.962,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.555
+    },
+    {
+      "ts_sec": 310.962,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.759
+    },
+    {
+      "ts_sec": 311.519,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.474
+    },
+    {
+      "ts_sec": 313.191,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.623
+    },
+    {
+      "ts_sec": 313.748,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.508
+    },
+    {
+      "ts_sec": 315.141,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.693
+    },
+    {
+      "ts_sec": 315.141,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.715
+    },
+    {
+      "ts_sec": 317.649,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.542
+    },
+    {
+      "ts_sec": 319.042,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.629
+    },
+    {
+      "ts_sec": 319.599,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.549
+    },
+    {
+      "ts_sec": 320.714,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.426
+    },
+    {
+      "ts_sec": 321.271,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.665
+    },
+    {
+      "ts_sec": 322.107,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.413
+    },
+    {
+      "ts_sec": 323.5,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.517
+    },
+    {
+      "ts_sec": 323.5,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.48
+    },
+    {
+      "ts_sec": 325.73,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.409
+    },
+    {
+      "ts_sec": 326.565,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.415
+    },
+    {
+      "ts_sec": 327.959,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.585
+    },
+    {
+      "ts_sec": 328.795,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.391
+    },
+    {
+      "ts_sec": 329.073,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.534
+    },
+    {
+      "ts_sec": 329.909,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.595
+    },
+    {
+      "ts_sec": 330.188,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.439
+    },
+    {
+      "ts_sec": 330.466,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.601
+    },
+    {
+      "ts_sec": 331.024,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.513
+    },
+    {
+      "ts_sec": 331.302,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.553
+    },
+    {
+      "ts_sec": 331.581,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.53
+    },
+    {
+      "ts_sec": 332.974,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.719
+    },
+    {
+      "ts_sec": 333.81,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.376
+    },
+    {
+      "ts_sec": 335.203,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.412
+    },
+    {
+      "ts_sec": 336.875,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.398
+    },
+    {
+      "ts_sec": 338.268,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.574
+    },
+    {
+      "ts_sec": 339.94,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.556
+    },
+    {
+      "ts_sec": 341.891,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.537
+    },
+    {
+      "ts_sec": 342.169,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.428
+    },
+    {
+      "ts_sec": 344.12,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.611
+    },
+    {
+      "ts_sec": 345.792,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.561
+    },
+    {
+      "ts_sec": 346.349,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.443
+    },
+    {
+      "ts_sec": 350.528,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.54
+    },
+    {
+      "ts_sec": 350.528,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.657
+    },
+    {
+      "ts_sec": 352.758,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.738
+    },
+    {
+      "ts_sec": 353.593,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.478
+    },
+    {
+      "ts_sec": 353.872,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.51
+    },
+    {
+      "ts_sec": 355.823,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.415
+    },
+    {
+      "ts_sec": 355.823,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.41
+    },
+    {
+      "ts_sec": 358.052,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.537
+    },
+    {
+      "ts_sec": 359.445,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.624
+    },
+    {
+      "ts_sec": 362.231,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.549
+    },
+    {
+      "ts_sec": 362.789,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.482
+    },
+    {
+      "ts_sec": 364.182,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.616
+    },
+    {
+      "ts_sec": 364.182,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.498
+    },
+    {
+      "ts_sec": 365.854,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.622
+    },
+    {
+      "ts_sec": 366.968,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.492
+    },
+    {
+      "ts_sec": 367.247,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.52
+    },
+    {
+      "ts_sec": 368.64,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.442
+    },
+    {
+      "ts_sec": 369.197,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.352
+    },
+    {
+      "ts_sec": 370.59,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.738
+    },
+    {
+      "ts_sec": 371.984,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.62
+    },
+    {
+      "ts_sec": 373.377,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.467
+    },
+    {
+      "ts_sec": 375.049,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.631
+    },
+    {
+      "ts_sec": 378.392,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.508
+    },
+    {
+      "ts_sec": 378.95,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.511
+    },
+    {
+      "ts_sec": 379.786,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.464
+    },
+    {
+      "ts_sec": 381.457,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.608
+    },
+    {
+      "ts_sec": 381.457,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.73
+    },
+    {
+      "ts_sec": 381.736,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.39
+    },
+    {
+      "ts_sec": 384.244,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.439
+    },
+    {
+      "ts_sec": 386.194,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.418
+    },
+    {
+      "ts_sec": 386.473,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.418
+    },
+    {
+      "ts_sec": 387.03,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.524
+    },
+    {
+      "ts_sec": 387.587,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.45
+    },
+    {
+      "ts_sec": 387.866,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.566
+    },
+    {
+      "ts_sec": 388.981,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.813
+    },
+    {
+      "ts_sec": 390.653,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.51
+    },
+    {
+      "ts_sec": 390.653,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.467
+    },
+    {
+      "ts_sec": 391.21,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.367
+    },
+    {
+      "ts_sec": 391.488,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.622
+    },
+    {
+      "ts_sec": 393.16,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.696
+    },
+    {
+      "ts_sec": 393.16,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.727
+    },
+    {
+      "ts_sec": 393.996,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.693
+    },
+    {
+      "ts_sec": 394.832,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.726
+    },
+    {
+      "ts_sec": 395.389,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.436
+    },
+    {
+      "ts_sec": 395.668,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.593
+    },
+    {
+      "ts_sec": 397.34,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.503
+    },
+    {
+      "ts_sec": 397.34,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.453
+    },
+    {
+      "ts_sec": 397.897,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.449
+    },
+    {
+      "ts_sec": 399.29,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.641
+    },
+    {
+      "ts_sec": 399.569,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.455
+    },
+    {
+      "ts_sec": 399.848,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.485
+    },
+    {
+      "ts_sec": 400.126,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.579
+    },
+    {
+      "ts_sec": 400.684,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.602
+    },
+    {
+      "ts_sec": 400.962,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.354
+    },
+    {
+      "ts_sec": 400.962,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.718
+    },
+    {
+      "ts_sec": 403.749,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.573
+    },
+    {
+      "ts_sec": 404.306,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.564
+    },
+    {
+      "ts_sec": 404.584,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.483
+    },
+    {
+      "ts_sec": 404.863,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.626
+    },
+    {
+      "ts_sec": 405.142,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.702
+    },
+    {
+      "ts_sec": 405.42,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.468
+    },
+    {
+      "ts_sec": 405.699,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.411
+    },
+    {
+      "ts_sec": 406.256,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.544
+    },
+    {
+      "ts_sec": 407.928,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.552
+    },
+    {
+      "ts_sec": 407.928,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.452
+    },
+    {
+      "ts_sec": 409.043,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.492
+    },
+    {
+      "ts_sec": 409.321,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.628
+    },
+    {
+      "ts_sec": 409.6,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.691
+    },
+    {
+      "ts_sec": 411.829,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.37
+    },
+    {
+      "ts_sec": 411.829,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.644
+    },
+    {
+      "ts_sec": 413.501,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.391
+    },
+    {
+      "ts_sec": 416.287,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.569
+    },
+    {
+      "ts_sec": 416.845,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.542
+    },
+    {
+      "ts_sec": 419.631,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.452
+    },
+    {
+      "ts_sec": 419.91,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.676
+    },
+    {
+      "ts_sec": 420.188,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.52
+    },
+    {
+      "ts_sec": 420.746,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.5
+    },
+    {
+      "ts_sec": 422.417,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.626
+    },
+    {
+      "ts_sec": 422.417,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.809
+    },
+    {
+      "ts_sec": 422.975,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.42
+    },
+    {
+      "ts_sec": 423.532,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.477
+    },
+    {
+      "ts_sec": 423.811,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.65
+    },
+    {
+      "ts_sec": 424.089,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.607
+    },
+    {
+      "ts_sec": 425.761,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.508
+    },
+    {
+      "ts_sec": 426.876,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.67
+    },
+    {
+      "ts_sec": 427.154,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.705
+    },
+    {
+      "ts_sec": 427.712,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.711
+    },
+    {
+      "ts_sec": 428.547,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.504
+    },
+    {
+      "ts_sec": 430.219,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.563
+    },
+    {
+      "ts_sec": 430.219,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.577
+    },
+    {
+      "ts_sec": 431.055,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.409
+    },
+    {
+      "ts_sec": 431.613,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.447
+    },
+    {
+      "ts_sec": 433.842,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.464
+    },
+    {
+      "ts_sec": 435.513,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.523
+    },
+    {
+      "ts_sec": 436.628,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.516
+    },
+    {
+      "ts_sec": 438.3,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.511
+    },
+    {
+      "ts_sec": 438.579,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.351
+    },
+    {
+      "ts_sec": 438.857,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.436
+    },
+    {
+      "ts_sec": 439.136,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.739
+    },
+    {
+      "ts_sec": 439.972,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.55
+    },
+    {
+      "ts_sec": 441.086,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.432
+    },
+    {
+      "ts_sec": 441.365,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.701
+    },
+    {
+      "ts_sec": 443.037,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.522
+    },
+    {
+      "ts_sec": 443.037,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.577
+    },
+    {
+      "ts_sec": 444.151,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.536
+    },
+    {
+      "ts_sec": 444.987,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.473
+    },
+    {
+      "ts_sec": 445.266,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.762
+    },
+    {
+      "ts_sec": 447.216,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.41
+    },
+    {
+      "ts_sec": 447.495,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.396
+    },
+    {
+      "ts_sec": 448.052,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.431
+    },
+    {
+      "ts_sec": 448.331,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.45
+    },
+    {
+      "ts_sec": 450.281,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.421
+    },
+    {
+      "ts_sec": 450.56,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.482
+    },
+    {
+      "ts_sec": 451.117,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.352
+    },
+    {
+      "ts_sec": 451.117,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.805
+    },
+    {
+      "ts_sec": 453.068,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.407
+    },
+    {
+      "ts_sec": 453.346,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.731
+    },
+    {
+      "ts_sec": 455.018,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.543
+    },
+    {
+      "ts_sec": 455.018,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.508
+    },
+    {
+      "ts_sec": 456.133,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.515
+    },
+    {
+      "ts_sec": 457.526,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.5
+    },
+    {
+      "ts_sec": 457.805,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.445
+    },
+    {
+      "ts_sec": 458.362,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.482
+    },
+    {
+      "ts_sec": 459.476,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.542
+    },
+    {
+      "ts_sec": 459.476,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.604
+    },
+    {
+      "ts_sec": 462.263,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.553
+    },
+    {
+      "ts_sec": 463.377,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.601
+    },
+    {
+      "ts_sec": 463.935,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.527
+    },
+    {
+      "ts_sec": 465.607,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.599
+    },
+    {
+      "ts_sec": 467.278,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.389
+    },
+    {
+      "ts_sec": 467.278,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.404
+    },
+    {
+      "ts_sec": 467.557,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.707
+    },
+    {
+      "ts_sec": 469.229,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.569
+    },
+    {
+      "ts_sec": 470.065,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.433
+    },
+    {
+      "ts_sec": 470.343,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.455
+    },
+    {
+      "ts_sec": 471.458,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.441
+    },
+    {
+      "ts_sec": 471.737,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.374
+    },
+    {
+      "ts_sec": 472.015,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.473
+    },
+    {
+      "ts_sec": 473.687,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.613
+    },
+    {
+      "ts_sec": 474.244,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.535
+    },
+    {
+      "ts_sec": 474.523,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.381
+    },
+    {
+      "ts_sec": 476.473,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.563
+    },
+    {
+      "ts_sec": 478.424,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.566
+    },
+    {
+      "ts_sec": 481.21,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.441
+    },
+    {
+      "ts_sec": 481.489,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.469
+    },
+    {
+      "ts_sec": 482.046,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.488
+    },
+    {
+      "ts_sec": 482.604,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.668
+    },
+    {
+      "ts_sec": 482.882,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.428
+    },
+    {
+      "ts_sec": 483.161,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.548
+    },
+    {
+      "ts_sec": 484.833,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.371
+    },
+    {
+      "ts_sec": 485.111,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.424
+    },
+    {
+      "ts_sec": 485.669,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.462
+    },
+    {
+      "ts_sec": 485.947,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.354
+    },
+    {
+      "ts_sec": 486.226,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.589
+    },
+    {
+      "ts_sec": 486.783,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.661
+    },
+    {
+      "ts_sec": 487.062,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.559
+    },
+    {
+      "ts_sec": 487.34,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.627
+    },
+    {
+      "ts_sec": 487.619,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.399
+    },
+    {
+      "ts_sec": 488.176,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.691
+    },
+    {
+      "ts_sec": 488.455,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.572
+    },
+    {
+      "ts_sec": 490.127,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.553
+    },
+    {
+      "ts_sec": 490.405,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.369
+    },
+    {
+      "ts_sec": 490.963,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.507
+    },
+    {
+      "ts_sec": 491.241,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.621
+    },
+    {
+      "ts_sec": 491.52,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.55
+    },
+    {
+      "ts_sec": 492.635,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.359
+    },
+    {
+      "ts_sec": 493.192,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.641
+    },
+    {
+      "ts_sec": 494.028,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.577
+    },
+    {
+      "ts_sec": 495.7,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.354
+    },
+    {
+      "ts_sec": 496.536,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.444
+    },
+    {
+      "ts_sec": 496.814,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.451
+    },
+    {
+      "ts_sec": 497.65,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.43
+    },
+    {
+      "ts_sec": 498.486,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.709
+    },
+    {
+      "ts_sec": 498.765,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.409
+    },
+    {
+      "ts_sec": 499.043,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.456
+    },
+    {
+      "ts_sec": 500.994,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.483
+    },
+    {
+      "ts_sec": 500.994,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.62
+    },
+    {
+      "ts_sec": 501.272,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.35
+    },
+    {
+      "ts_sec": 501.272,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.529
+    },
+    {
+      "ts_sec": 501.83,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.577
+    },
+    {
+      "ts_sec": 502.666,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.465
+    },
+    {
+      "ts_sec": 504.337,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.582
+    },
+    {
+      "ts_sec": 505.452,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.445
+    },
+    {
+      "ts_sec": 505.731,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.476
+    },
+    {
+      "ts_sec": 506.009,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.512
+    },
+    {
+      "ts_sec": 507.681,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.529
+    },
+    {
+      "ts_sec": 508.796,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.433
+    },
+    {
+      "ts_sec": 510.189,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.426
+    },
+    {
+      "ts_sec": 510.467,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.658
+    },
+    {
+      "ts_sec": 511.025,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.472
+    },
+    {
+      "ts_sec": 512.697,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.608
+    },
+    {
+      "ts_sec": 514.368,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.66
+    },
+    {
+      "ts_sec": 514.368,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.571
+    },
+    {
+      "ts_sec": 514.647,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.567
+    },
+    {
+      "ts_sec": 517.433,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.695
+    },
+    {
+      "ts_sec": 519.105,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.686
+    },
+    {
+      "ts_sec": 521.892,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.783
+    },
+    {
+      "ts_sec": 523.564,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.611
+    },
+    {
+      "ts_sec": 524.678,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.487
+    },
+    {
+      "ts_sec": 524.957,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.542
+    },
+    {
+      "ts_sec": 525.514,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.432
+    },
+    {
+      "ts_sec": 526.35,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.603
+    },
+    {
+      "ts_sec": 526.629,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.436
+    },
+    {
+      "ts_sec": 526.907,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.491
+    },
+    {
+      "ts_sec": 528.022,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.478
+    },
+    {
+      "ts_sec": 528.579,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.666
+    },
+    {
+      "ts_sec": 529.972,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.418
+    },
+    {
+      "ts_sec": 530.251,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.584
+    },
+    {
+      "ts_sec": 530.808,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.73
+    },
+    {
+      "ts_sec": 531.365,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.524
+    },
+    {
+      "ts_sec": 533.037,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.445
+    },
+    {
+      "ts_sec": 534.43,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.804
+    },
+    {
+      "ts_sec": 536.102,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.604
+    },
+    {
+      "ts_sec": 536.102,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.46
+    },
+    {
+      "ts_sec": 536.66,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.641
+    },
+    {
+      "ts_sec": 536.938,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.406
+    },
+    {
+      "ts_sec": 537.496,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.371
+    },
+    {
+      "ts_sec": 537.496,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.431
+    },
+    {
+      "ts_sec": 537.774,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.505
+    },
+    {
+      "ts_sec": 539.725,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.368
+    },
+    {
+      "ts_sec": 539.725,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.508
+    },
+    {
+      "ts_sec": 540.003,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.42
+    },
+    {
+      "ts_sec": 541.675,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.464
+    },
+    {
+      "ts_sec": 541.954,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.375
+    },
+    {
+      "ts_sec": 541.954,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.596
+    },
+    {
+      "ts_sec": 542.232,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.62
+    },
+    {
+      "ts_sec": 543.068,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.49
+    },
+    {
+      "ts_sec": 544.74,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.547
+    },
+    {
+      "ts_sec": 545.297,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.664
+    },
+    {
+      "ts_sec": 546.133,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.485
+    },
+    {
+      "ts_sec": 546.412,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.73
+    },
+    {
+      "ts_sec": 548.362,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.59
+    },
+    {
+      "ts_sec": 548.362,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.779
+    },
+    {
+      "ts_sec": 550.313,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.461
+    },
+    {
+      "ts_sec": 550.592,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.398
+    },
+    {
+      "ts_sec": 550.87,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.778
+    },
+    {
+      "ts_sec": 552.542,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.45
+    },
+    {
+      "ts_sec": 552.542,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.463
+    },
+    {
+      "ts_sec": 553.657,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.675
+    },
+    {
+      "ts_sec": 553.935,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.412
+    },
+    {
+      "ts_sec": 554.493,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.49
+    },
+    {
+      "ts_sec": 554.771,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.473
+    },
+    {
+      "ts_sec": 555.607,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.464
+    },
+    {
+      "ts_sec": 555.886,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.735
+    },
+    {
+      "ts_sec": 556.164,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.432
+    },
+    {
+      "ts_sec": 556.443,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.447
+    },
+    {
+      "ts_sec": 556.722,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.479
+    },
+    {
+      "ts_sec": 558.393,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.532
+    },
+    {
+      "ts_sec": 558.393,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.415
+    },
+    {
+      "ts_sec": 558.672,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.411
+    },
+    {
+      "ts_sec": 558.951,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.438
+    },
+    {
+      "ts_sec": 560.344,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.415
+    },
+    {
+      "ts_sec": 560.623,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.673
+    },
+    {
+      "ts_sec": 561.18,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.444
+    },
+    {
+      "ts_sec": 562.852,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.521
+    },
+    {
+      "ts_sec": 563.13,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.407
+    },
+    {
+      "ts_sec": 563.688,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.434
+    },
+    {
+      "ts_sec": 565.359,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.493
+    },
+    {
+      "ts_sec": 565.638,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.79
+    },
+    {
+      "ts_sec": 565.917,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.451
+    },
+    {
+      "ts_sec": 566.195,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.492
+    },
+    {
+      "ts_sec": 567.867,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.468
+    },
+    {
+      "ts_sec": 569.818,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.527
+    },
+    {
+      "ts_sec": 572.047,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.35
+    },
+    {
+      "ts_sec": 572.047,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.456
+    },
+    {
+      "ts_sec": 572.325,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.419
+    },
+    {
+      "ts_sec": 572.325,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.753
+    },
+    {
+      "ts_sec": 573.997,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.396
+    },
+    {
+      "ts_sec": 573.997,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.464
+    },
+    {
+      "ts_sec": 574.276,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.69
+    },
+    {
+      "ts_sec": 574.555,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.54
+    },
+    {
+      "ts_sec": 577.341,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.474
+    },
+    {
+      "ts_sec": 577.62,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.421
+    },
+    {
+      "ts_sec": 579.013,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.661
+    },
+    {
+      "ts_sec": 579.57,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.485
+    },
+    {
+      "ts_sec": 580.127,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.524
+    },
+    {
+      "ts_sec": 580.406,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.545
+    },
+    {
+      "ts_sec": 580.685,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.758
+    },
+    {
+      "ts_sec": 580.963,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.572
+    },
+    {
+      "ts_sec": 581.521,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.606
+    },
+    {
+      "ts_sec": 583.192,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.698
+    },
+    {
+      "ts_sec": 584.028,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.406
+    },
+    {
+      "ts_sec": 584.307,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.784
+    },
+    {
+      "ts_sec": 584.586,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.45
+    },
+    {
+      "ts_sec": 585.979,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.487
+    },
+    {
+      "ts_sec": 586.257,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.484
+    },
+    {
+      "ts_sec": 586.536,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.362
+    },
+    {
+      "ts_sec": 587.929,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.402
+    },
+    {
+      "ts_sec": 590.158,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.506
+    },
+    {
+      "ts_sec": 590.437,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.497
+    },
+    {
+      "ts_sec": 590.994,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.594
+    },
+    {
+      "ts_sec": 591.552,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.492
+    },
+    {
+      "ts_sec": 591.83,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.436
+    },
+    {
+      "ts_sec": 592.109,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.458
+    },
+    {
+      "ts_sec": 593.781,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.506
+    },
+    {
+      "ts_sec": 594.617,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.359
+    },
+    {
+      "ts_sec": 597.124,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.445
+    },
+    {
+      "ts_sec": 597.403,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.642
+    },
+    {
+      "ts_sec": 597.96,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.401
+    },
+    {
+      "ts_sec": 600.189,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.424
+    },
+    {
+      "ts_sec": 600.189,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.621
+    },
+    {
+      "ts_sec": 601.025,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.685
+    },
+    {
+      "ts_sec": 601.304,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.504
+    },
+    {
+      "ts_sec": 601.861,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.56
+    },
+    {
+      "ts_sec": 603.533,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.618
+    },
+    {
+      "ts_sec": 604.648,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.352
+    },
+    {
+      "ts_sec": 604.926,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.516
+    },
+    {
+      "ts_sec": 605.484,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.456
+    },
+    {
+      "ts_sec": 605.762,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.405
+    },
+    {
+      "ts_sec": 606.877,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.499
+    },
+    {
+      "ts_sec": 608.549,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.53
+    },
+    {
+      "ts_sec": 608.549,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.551
+    },
+    {
+      "ts_sec": 609.663,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.548
+    },
+    {
+      "ts_sec": 611.056,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.393
+    },
+    {
+      "ts_sec": 613.564,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.405
+    },
+    {
+      "ts_sec": 613.564,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.484
+    },
+    {
+      "ts_sec": 613.843,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.473
+    },
+    {
+      "ts_sec": 615.236,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.506
+    },
+    {
+      "ts_sec": 615.515,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.63
+    },
+    {
+      "ts_sec": 616.35,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.628
+    },
+    {
+      "ts_sec": 616.629,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.534
+    },
+    {
+      "ts_sec": 618.301,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.466
+    },
+    {
+      "ts_sec": 618.301,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.625
+    },
+    {
+      "ts_sec": 618.58,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.531
+    },
+    {
+      "ts_sec": 619.694,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.451
+    },
+    {
+      "ts_sec": 622.481,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.545
+    },
+    {
+      "ts_sec": 623.038,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.439
+    },
+    {
+      "ts_sec": 623.038,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.679
+    },
+    {
+      "ts_sec": 623.316,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.64
+    },
+    {
+      "ts_sec": 623.874,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.433
+    },
+    {
+      "ts_sec": 624.71,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.543
+    },
+    {
+      "ts_sec": 624.988,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.468
+    },
+    {
+      "ts_sec": 625.267,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.417
+    },
+    {
+      "ts_sec": 625.546,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.465
+    },
+    {
+      "ts_sec": 625.824,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.723
+    },
+    {
+      "ts_sec": 626.381,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.4
+    },
+    {
+      "ts_sec": 627.775,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.407
+    },
+    {
+      "ts_sec": 628.053,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.552
+    },
+    {
+      "ts_sec": 628.332,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.497
+    },
+    {
+      "ts_sec": 628.611,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.566
+    },
+    {
+      "ts_sec": 630.004,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.533
+    },
+    {
+      "ts_sec": 631.954,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.457
+    },
+    {
+      "ts_sec": 633.347,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.462
+    },
+    {
+      "ts_sec": 633.626,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.456
+    },
+    {
+      "ts_sec": 634.183,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.372
+    },
+    {
+      "ts_sec": 634.183,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.527
+    },
+    {
+      "ts_sec": 636.691,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.56
+    },
+    {
+      "ts_sec": 637.527,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.462
+    },
+    {
+      "ts_sec": 638.642,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.646
+    },
+    {
+      "ts_sec": 639.478,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.514
+    },
+    {
+      "ts_sec": 639.756,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.449
+    },
+    {
+      "ts_sec": 640.592,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.385
+    },
+    {
+      "ts_sec": 641.428,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.669
+    },
+    {
+      "ts_sec": 641.707,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.563
+    },
+    {
+      "ts_sec": 643.379,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.571
+    },
+    {
+      "ts_sec": 643.379,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.421
+    },
+    {
+      "ts_sec": 643.936,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.757
+    },
+    {
+      "ts_sec": 644.772,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.477
+    },
+    {
+      "ts_sec": 645.329,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.356
+    },
+    {
+      "ts_sec": 645.886,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.509
+    },
+    {
+      "ts_sec": 646.165,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.381
+    },
+    {
+      "ts_sec": 647.837,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.512
+    },
+    {
+      "ts_sec": 648.115,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.449
+    },
+    {
+      "ts_sec": 649.23,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.548
+    },
+    {
+      "ts_sec": 649.509,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.495
+    },
+    {
+      "ts_sec": 649.787,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.648
+    },
+    {
+      "ts_sec": 651.738,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.401
+    },
+    {
+      "ts_sec": 651.738,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.484
+    },
+    {
+      "ts_sec": 652.016,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.539
+    },
+    {
+      "ts_sec": 653.967,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.452
+    },
+    {
+      "ts_sec": 654.524,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.485
+    },
+    {
+      "ts_sec": 654.803,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.523
+    },
+    {
+      "ts_sec": 655.081,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.68
+    },
+    {
+      "ts_sec": 655.36,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.446
+    },
+    {
+      "ts_sec": 655.917,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.432
+    },
+    {
+      "ts_sec": 657.31,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.41
+    },
+    {
+      "ts_sec": 657.589,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.526
+    },
+    {
+      "ts_sec": 657.868,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.796
+    },
+    {
+      "ts_sec": 658.146,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.747
+    },
+    {
+      "ts_sec": 660.097,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.561
+    },
+    {
+      "ts_sec": 660.376,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.497
+    },
+    {
+      "ts_sec": 660.933,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.528
+    },
+    {
+      "ts_sec": 662.605,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.463
+    },
+    {
+      "ts_sec": 663.162,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.534
+    },
+    {
+      "ts_sec": 663.162,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.611
+    },
+    {
+      "ts_sec": 663.719,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.413
+    },
+    {
+      "ts_sec": 664.834,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.495
+    },
+    {
+      "ts_sec": 666.506,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.626
+    },
+    {
+      "ts_sec": 667.341,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.553
+    },
+    {
+      "ts_sec": 669.013,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.546
+    },
+    {
+      "ts_sec": 669.013,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.436
+    },
+    {
+      "ts_sec": 670.685,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.535
+    },
+    {
+      "ts_sec": 670.964,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.516
+    },
+    {
+      "ts_sec": 670.964,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.807
+    },
+    {
+      "ts_sec": 672.078,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.52
+    },
+    {
+      "ts_sec": 672.914,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.573
+    },
+    {
+      "ts_sec": 674.586,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.565
+    },
+    {
+      "ts_sec": 675.143,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.381
+    },
+    {
+      "ts_sec": 675.422,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.564
+    },
+    {
+      "ts_sec": 675.701,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.67
+    },
+    {
+      "ts_sec": 676.258,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.749
+    },
+    {
+      "ts_sec": 676.537,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.598
+    },
+    {
+      "ts_sec": 678.208,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.504
+    },
+    {
+      "ts_sec": 678.766,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.467
+    },
+    {
+      "ts_sec": 680.716,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.443
+    },
+    {
+      "ts_sec": 682.388,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.673
+    },
+    {
+      "ts_sec": 685.174,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.44
+    },
+    {
+      "ts_sec": 685.453,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.414
+    },
+    {
+      "ts_sec": 685.732,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.469
+    },
+    {
+      "ts_sec": 686.289,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.464
+    },
+    {
+      "ts_sec": 688.797,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.427
+    },
+    {
+      "ts_sec": 689.075,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.524
+    },
+    {
+      "ts_sec": 690.19,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.563
+    },
+    {
+      "ts_sec": 691.862,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.648
+    },
+    {
+      "ts_sec": 691.862,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.442
+    },
+    {
+      "ts_sec": 692.14,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.353
+    },
+    {
+      "ts_sec": 692.698,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.495
+    },
+    {
+      "ts_sec": 693.812,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.459
+    },
+    {
+      "ts_sec": 694.091,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.482
+    },
+    {
+      "ts_sec": 695.763,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.447
+    },
+    {
+      "ts_sec": 695.763,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.476
+    },
+    {
+      "ts_sec": 696.041,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.378
+    },
+    {
+      "ts_sec": 696.32,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.482
+    },
+    {
+      "ts_sec": 696.877,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.454
+    },
+    {
+      "ts_sec": 698.549,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.591
+    },
+    {
+      "ts_sec": 700.778,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.373
+    },
+    {
+      "ts_sec": 702.171,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.449
+    },
+    {
+      "ts_sec": 702.171,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.548
+    },
+    {
+      "ts_sec": 703.565,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.477
+    },
+    {
+      "ts_sec": 703.843,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.433
+    },
+    {
+      "ts_sec": 705.515,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.493
+    },
+    {
+      "ts_sec": 705.515,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.69
+    },
+    {
+      "ts_sec": 706.351,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.476
+    },
+    {
+      "ts_sec": 707.744,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.415
+    },
+    {
+      "ts_sec": 708.023,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.446
+    },
+    {
+      "ts_sec": 708.301,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.487
+    },
+    {
+      "ts_sec": 711.088,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.455
+    },
+    {
+      "ts_sec": 711.924,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.639
+    },
+    {
+      "ts_sec": 712.76,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.738
+    },
+    {
+      "ts_sec": 713.038,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.544
+    },
+    {
+      "ts_sec": 713.317,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.606
+    },
+    {
+      "ts_sec": 715.267,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.448
+    },
+    {
+      "ts_sec": 718.054,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.578
+    },
+    {
+      "ts_sec": 720.283,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.448
+    },
+    {
+      "ts_sec": 720.283,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.534
+    },
+    {
+      "ts_sec": 720.562,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.377
+    },
+    {
+      "ts_sec": 721.398,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.586
+    },
+    {
+      "ts_sec": 722.233,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.638
+    },
+    {
+      "ts_sec": 723.627,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.613
+    },
+    {
+      "ts_sec": 724.741,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.443
+    },
+    {
+      "ts_sec": 728.085,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.392
+    },
+    {
+      "ts_sec": 728.642,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.454
+    },
+    {
+      "ts_sec": 728.921,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.653
+    },
+    {
+      "ts_sec": 729.478,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.499
+    },
+    {
+      "ts_sec": 730.035,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.807
+    },
+    {
+      "ts_sec": 730.314,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.478
+    },
+    {
+      "ts_sec": 730.871,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.357
+    },
+    {
+      "ts_sec": 731.429,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.427
+    },
+    {
+      "ts_sec": 731.707,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.517
+    },
+    {
+      "ts_sec": 731.986,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.506
+    },
+    {
+      "ts_sec": 733.936,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.452
+    },
+    {
+      "ts_sec": 734.215,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.394
+    },
+    {
+      "ts_sec": 735.051,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.802
+    },
+    {
+      "ts_sec": 736.723,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.507
+    },
+    {
+      "ts_sec": 736.723,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.46
+    },
+    {
+      "ts_sec": 737.837,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.411
+    },
+    {
+      "ts_sec": 739.509,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.468
+    },
+    {
+      "ts_sec": 740.066,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.519
+    },
+    {
+      "ts_sec": 740.345,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.672
+    },
+    {
+      "ts_sec": 742.017,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.715
+    },
+    {
+      "ts_sec": 742.853,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.417
+    },
+    {
+      "ts_sec": 743.131,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.432
+    },
+    {
+      "ts_sec": 744.525,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.453
+    },
+    {
+      "ts_sec": 744.803,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.509
+    },
+    {
+      "ts_sec": 745.639,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.666
+    },
+    {
+      "ts_sec": 746.475,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.43
+    },
+    {
+      "ts_sec": 746.754,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.361
+    },
+    {
+      "ts_sec": 747.59,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.823
+    },
+    {
+      "ts_sec": 749.54,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.41
+    },
+    {
+      "ts_sec": 752.605,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.414
+    },
+    {
+      "ts_sec": 752.605,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.599
+    },
+    {
+      "ts_sec": 752.884,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.381
+    },
+    {
+      "ts_sec": 753.998,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.49
+    },
+    {
+      "ts_sec": 754.277,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.624
+    },
+    {
+      "ts_sec": 754.556,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.595
+    },
+    {
+      "ts_sec": 756.506,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.391
+    },
+    {
+      "ts_sec": 757.063,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.506
+    },
+    {
+      "ts_sec": 758.178,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.677
+    },
+    {
+      "ts_sec": 759.85,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.5
+    },
+    {
+      "ts_sec": 760.128,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.668
+    },
+    {
+      "ts_sec": 761.243,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.406
+    },
+    {
+      "ts_sec": 761.522,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.513
+    },
+    {
+      "ts_sec": 761.8,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.653
+    },
+    {
+      "ts_sec": 762.358,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.425
+    },
+    {
+      "ts_sec": 763.751,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.478
+    },
+    {
+      "ts_sec": 764.029,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.457
+    },
+    {
+      "ts_sec": 764.587,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.372
+    },
+    {
+      "ts_sec": 764.865,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.807
+    },
+    {
+      "ts_sec": 766.537,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.536
+    },
+    {
+      "ts_sec": 767.373,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.411
+    },
+    {
+      "ts_sec": 767.652,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.455
+    },
+    {
+      "ts_sec": 767.93,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.495
+    },
+    {
+      "ts_sec": 769.602,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.553
+    },
+    {
+      "ts_sec": 769.602,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.588
+    },
+    {
+      "ts_sec": 771.553,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.361
+    },
+    {
+      "ts_sec": 771.831,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.762
+    },
+    {
+      "ts_sec": 772.11,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.457
+    },
+    {
+      "ts_sec": 772.389,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.357
+    },
+    {
+      "ts_sec": 774.618,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.408
+    },
+    {
+      "ts_sec": 774.618,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.492
+    },
+    {
+      "ts_sec": 774.896,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.518
+    },
+    {
+      "ts_sec": 775.175,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.71
+    },
+    {
+      "ts_sec": 775.732,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.367
+    },
+    {
+      "ts_sec": 777.961,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.485
+    },
+    {
+      "ts_sec": 779.633,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.463
+    },
+    {
+      "ts_sec": 779.912,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.373
+    },
+    {
+      "ts_sec": 780.748,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.465
+    },
+    {
+      "ts_sec": 782.42,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.507
+    },
+    {
+      "ts_sec": 782.42,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.606
+    },
+    {
+      "ts_sec": 784.091,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.441
+    },
+    {
+      "ts_sec": 784.927,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.533
+    },
+    {
+      "ts_sec": 785.206,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.632
+    },
+    {
+      "ts_sec": 786.878,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.577
+    },
+    {
+      "ts_sec": 787.435,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.537
+    },
+    {
+      "ts_sec": 788.271,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.622
+    },
+    {
+      "ts_sec": 789.943,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.376
+    },
+    {
+      "ts_sec": 789.943,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.517
+    },
+    {
+      "ts_sec": 790.221,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.386
+    },
+    {
+      "ts_sec": 791.615,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.604
+    },
+    {
+      "ts_sec": 791.893,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.592
+    },
+    {
+      "ts_sec": 792.172,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.455
+    },
+    {
+      "ts_sec": 793.844,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.516
+    },
+    {
+      "ts_sec": 794.401,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.516
+    },
+    {
+      "ts_sec": 794.68,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.632
+    },
+    {
+      "ts_sec": 796.352,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.487
+    },
+    {
+      "ts_sec": 796.352,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.408
+    },
+    {
+      "ts_sec": 797.745,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.506
+    },
+    {
+      "ts_sec": 799.695,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.492
+    },
+    {
+      "ts_sec": 799.974,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.444
+    },
+    {
+      "ts_sec": 799.974,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.476
+    },
+    {
+      "ts_sec": 800.253,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.381
+    },
+    {
+      "ts_sec": 800.81,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.566
+    },
+    {
+      "ts_sec": 801.088,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.553
+    },
+    {
+      "ts_sec": 802.76,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.66
+    },
+    {
+      "ts_sec": 802.76,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.609
+    },
+    {
+      "ts_sec": 803.596,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.485
+    },
+    {
+      "ts_sec": 804.153,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.513
+    },
+    {
+      "ts_sec": 804.432,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.372
+    },
+    {
+      "ts_sec": 805.547,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.787
+    },
+    {
+      "ts_sec": 806.383,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.472
+    },
+    {
+      "ts_sec": 807.497,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.482
+    },
+    {
+      "ts_sec": 809.169,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.616
+    },
+    {
+      "ts_sec": 812.234,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.438
+    },
+    {
+      "ts_sec": 812.791,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.472
+    },
+    {
+      "ts_sec": 814.742,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.411
+    },
+    {
+      "ts_sec": 814.742,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.6
+    },
+    {
+      "ts_sec": 815.02,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.659
+    },
+    {
+      "ts_sec": 817.528,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.419
+    },
+    {
+      "ts_sec": 818.085,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.384
+    },
+    {
+      "ts_sec": 818.364,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.782
+    },
+    {
+      "ts_sec": 820.036,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.426
+    },
+    {
+      "ts_sec": 820.036,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.451
+    },
+    {
+      "ts_sec": 822.265,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.434
+    },
+    {
+      "ts_sec": 822.544,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.553
+    },
+    {
+      "ts_sec": 823.38,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.71
+    },
+    {
+      "ts_sec": 823.658,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.519
+    },
+    {
+      "ts_sec": 824.773,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.836
+    },
+    {
+      "ts_sec": 826.445,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.462
+    },
+    {
+      "ts_sec": 826.723,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.57
+    },
+    {
+      "ts_sec": 827.281,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.359
+    },
+    {
+      "ts_sec": 827.559,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.431
+    },
+    {
+      "ts_sec": 827.559,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.421
+    },
+    {
+      "ts_sec": 828.395,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.653
+    },
+    {
+      "ts_sec": 828.674,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.59
+    },
+    {
+      "ts_sec": 828.952,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.534
+    },
+    {
+      "ts_sec": 829.788,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.391
+    },
+    {
+      "ts_sec": 829.788,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.431
+    },
+    {
+      "ts_sec": 830.624,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.72
+    },
+    {
+      "ts_sec": 831.46,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.412
+    },
+    {
+      "ts_sec": 833.132,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.611
+    },
+    {
+      "ts_sec": 833.968,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.502
+    },
+    {
+      "ts_sec": 834.247,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.506
+    },
+    {
+      "ts_sec": 834.804,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.463
+    },
+    {
+      "ts_sec": 835.082,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.377
+    },
+    {
+      "ts_sec": 835.082,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.632
+    },
+    {
+      "ts_sec": 836.197,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.451
+    },
+    {
+      "ts_sec": 836.476,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.632
+    },
+    {
+      "ts_sec": 836.754,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.418
+    },
+    {
+      "ts_sec": 837.033,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.465
+    },
+    {
+      "ts_sec": 837.312,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.618
+    },
+    {
+      "ts_sec": 839.262,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.458
+    },
+    {
+      "ts_sec": 842.048,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.543
+    },
+    {
+      "ts_sec": 843.163,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.491
+    },
+    {
+      "ts_sec": 845.113,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.591
+    },
+    {
+      "ts_sec": 846.785,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.715
+    },
+    {
+      "ts_sec": 847.9,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.576
+    },
+    {
+      "ts_sec": 849.572,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.54
+    },
+    {
+      "ts_sec": 850.408,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.784
+    },
+    {
+      "ts_sec": 850.686,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.397
+    },
+    {
+      "ts_sec": 851.522,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.512
+    },
+    {
+      "ts_sec": 853.194,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.443
+    },
+    {
+      "ts_sec": 853.194,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.568
+    },
+    {
+      "ts_sec": 853.473,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.351
+    },
+    {
+      "ts_sec": 857.374,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.564
+    },
+    {
+      "ts_sec": 857.374,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.748
+    },
+    {
+      "ts_sec": 857.652,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.416
+    },
+    {
+      "ts_sec": 857.931,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.516
+    },
+    {
+      "ts_sec": 859.603,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.468
+    },
+    {
+      "ts_sec": 860.439,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.512
+    },
+    {
+      "ts_sec": 861.832,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.525
+    },
+    {
+      "ts_sec": 862.389,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.59
+    },
+    {
+      "ts_sec": 864.061,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.409
+    },
+    {
+      "ts_sec": 864.34,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.715
+    },
+    {
+      "ts_sec": 866.569,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.371
+    },
+    {
+      "ts_sec": 868.519,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.462
+    },
+    {
+      "ts_sec": 868.798,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.455
+    },
+    {
+      "ts_sec": 869.355,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.409
+    },
+    {
+      "ts_sec": 871.306,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.451
+    },
+    {
+      "ts_sec": 872.977,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.643
+    },
+    {
+      "ts_sec": 874.092,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.391
+    },
+    {
+      "ts_sec": 876.042,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.405
+    },
+    {
+      "ts_sec": 876.042,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.534
+    },
+    {
+      "ts_sec": 876.321,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.406
+    },
+    {
+      "ts_sec": 877.157,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.629
+    },
+    {
+      "ts_sec": 877.436,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.412
+    },
+    {
+      "ts_sec": 877.993,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.353
+    },
+    {
+      "ts_sec": 877.993,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.512
+    },
+    {
+      "ts_sec": 878.829,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.526
+    },
+    {
+      "ts_sec": 878.829,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.749
+    },
+    {
+      "ts_sec": 879.107,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.534
+    },
+    {
+      "ts_sec": 880.222,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.509
+    },
+    {
+      "ts_sec": 880.501,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.705
+    },
+    {
+      "ts_sec": 883.844,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.467
+    },
+    {
+      "ts_sec": 886.352,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.405
+    },
+    {
+      "ts_sec": 886.631,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.457
+    },
+    {
+      "ts_sec": 887.467,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.429
+    },
+    {
+      "ts_sec": 889.139,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.437
+    },
+    {
+      "ts_sec": 889.417,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.539
+    },
+    {
+      "ts_sec": 893.875,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.358
+    },
+    {
+      "ts_sec": 893.875,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.475
+    },
+    {
+      "ts_sec": 894.154,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.385
+    },
+    {
+      "ts_sec": 895.547,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.604
+    },
+    {
+      "ts_sec": 897.776,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.528
+    },
+    {
+      "ts_sec": 900.005,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.476
+    },
+    {
+      "ts_sec": 900.563,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.7
+    },
+    {
+      "ts_sec": 903.07,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.369
+    },
+    {
+      "ts_sec": 903.07,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.588
+    },
+    {
+      "ts_sec": 903.349,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.638
+    },
+    {
+      "ts_sec": 903.628,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.638
+    },
+    {
+      "ts_sec": 906.414,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.381
+    },
+    {
+      "ts_sec": 906.414,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.52
+    },
+    {
+      "ts_sec": 908.365,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.476
+    },
+    {
+      "ts_sec": 908.922,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.472
+    },
+    {
+      "ts_sec": 909.479,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.442
+    },
+    {
+      "ts_sec": 909.479,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.677
+    },
+    {
+      "ts_sec": 910.872,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.556
+    },
+    {
+      "ts_sec": 913.659,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.45
+    },
+    {
+      "ts_sec": 913.937,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.45
+    },
+    {
+      "ts_sec": 914.495,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.411
+    },
+    {
+      "ts_sec": 917.838,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.435
+    },
+    {
+      "ts_sec": 918.117,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.504
+    },
+    {
+      "ts_sec": 919.789,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.591
+    },
+    {
+      "ts_sec": 920.067,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.535
+    },
+    {
+      "ts_sec": 920.346,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.651
+    },
+    {
+      "ts_sec": 920.625,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.702
+    },
+    {
+      "ts_sec": 922.297,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.438
+    },
+    {
+      "ts_sec": 922.297,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.658
+    },
+    {
+      "ts_sec": 922.575,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.55
+    },
+    {
+      "ts_sec": 923.411,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.634
+    },
+    {
+      "ts_sec": 923.69,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.596
+    },
+    {
+      "ts_sec": 924.526,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.405
+    },
+    {
+      "ts_sec": 926.198,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.596
+    },
+    {
+      "ts_sec": 926.476,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.455
+    },
+    {
+      "ts_sec": 930.099,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.413
+    },
+    {
+      "ts_sec": 930.377,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.361
+    },
+    {
+      "ts_sec": 931.492,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.579
+    },
+    {
+      "ts_sec": 931.77,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.842
+    },
+    {
+      "ts_sec": 932.885,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.543
+    },
+    {
+      "ts_sec": 934.557,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.654
+    },
+    {
+      "ts_sec": 935.671,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.598
+    },
+    {
+      "ts_sec": 936.229,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.368
+    },
+    {
+      "ts_sec": 937.064,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.451
+    },
+    {
+      "ts_sec": 937.622,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.591
+    },
+    {
+      "ts_sec": 937.9,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.644
+    },
+    {
+      "ts_sec": 940.687,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.575
+    },
+    {
+      "ts_sec": 941.523,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.398
+    },
+    {
+      "ts_sec": 941.801,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.594
+    },
+    {
+      "ts_sec": 942.08,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.446
+    },
+    {
+      "ts_sec": 942.637,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.71
+    },
+    {
+      "ts_sec": 942.916,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.522
+    },
+    {
+      "ts_sec": 943.752,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.556
+    },
+    {
+      "ts_sec": 944.588,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.694
+    },
+    {
+      "ts_sec": 946.26,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.417
+    },
+    {
+      "ts_sec": 946.538,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.405
+    },
+    {
+      "ts_sec": 946.817,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.589
+    },
+    {
+      "ts_sec": 947.096,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.514
+    },
+    {
+      "ts_sec": 948.21,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.413
+    },
+    {
+      "ts_sec": 948.489,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.459
+    },
+    {
+      "ts_sec": 948.767,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.524
+    },
+    {
+      "ts_sec": 949.046,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.575
+    },
+    {
+      "ts_sec": 951.275,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.44
+    },
+    {
+      "ts_sec": 952.111,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.617
+    },
+    {
+      "ts_sec": 952.39,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.535
+    },
+    {
+      "ts_sec": 952.668,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.519
+    },
+    {
+      "ts_sec": 952.947,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.624
+    },
+    {
+      "ts_sec": 954.619,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.715
+    },
+    {
+      "ts_sec": 955.733,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.534
+    },
+    {
+      "ts_sec": 956.569,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.38
+    },
+    {
+      "ts_sec": 957.684,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.411
+    },
+    {
+      "ts_sec": 958.241,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.685
+    },
+    {
+      "ts_sec": 959.077,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.535
+    },
+    {
+      "ts_sec": 959.634,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.55
+    },
+    {
+      "ts_sec": 962.142,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.373
+    },
+    {
+      "ts_sec": 962.142,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.504
+    },
+    {
+      "ts_sec": 962.421,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.376
+    },
+    {
+      "ts_sec": 962.978,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.475
+    },
+    {
+      "ts_sec": 963.257,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.561
+    },
+    {
+      "ts_sec": 963.535,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.376
+    },
+    {
+      "ts_sec": 964.928,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.47
+    },
+    {
+      "ts_sec": 966.6,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.73
+    },
+    {
+      "ts_sec": 967.993,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.384
+    },
+    {
+      "ts_sec": 968.272,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.474
+    },
+    {
+      "ts_sec": 968.551,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.606
+    },
+    {
+      "ts_sec": 969.108,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.576
+    },
+    {
+      "ts_sec": 969.387,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.374
+    },
+    {
+      "ts_sec": 969.944,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.743
+    },
+    {
+      "ts_sec": 970.223,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.382
+    },
+    {
+      "ts_sec": 970.501,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.613
+    },
+    {
+      "ts_sec": 972.173,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.554
+    },
+    {
+      "ts_sec": 973.288,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.435
+    },
+    {
+      "ts_sec": 973.845,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.368
+    },
+    {
+      "ts_sec": 977.189,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.383
+    },
+    {
+      "ts_sec": 977.189,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.53
+    },
+    {
+      "ts_sec": 977.467,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.422
+    },
+    {
+      "ts_sec": 977.746,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.444
+    },
+    {
+      "ts_sec": 978.86,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.531
+    },
+    {
+      "ts_sec": 979.139,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.418
+    },
+    {
+      "ts_sec": 979.418,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.559
+    },
+    {
+      "ts_sec": 981.09,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.465
+    },
+    {
+      "ts_sec": 981.368,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.396
+    },
+    {
+      "ts_sec": 981.647,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.788
+    },
+    {
+      "ts_sec": 983.319,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.522
+    },
+    {
+      "ts_sec": 983.319,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.498
+    },
+    {
+      "ts_sec": 984.433,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.475
+    },
+    {
+      "ts_sec": 986.941,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.412
+    },
+    {
+      "ts_sec": 987.22,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.376
+    },
+    {
+      "ts_sec": 987.22,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.46
+    },
+    {
+      "ts_sec": 987.777,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.409
+    },
+    {
+      "ts_sec": 988.056,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.557
+    },
+    {
+      "ts_sec": 988.334,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.477
+    },
+    {
+      "ts_sec": 990.563,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.462
+    },
+    {
+      "ts_sec": 991.121,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.576
+    },
+    {
+      "ts_sec": 992.792,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.601
+    },
+    {
+      "ts_sec": 993.071,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.66
+    },
+    {
+      "ts_sec": 993.35,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.529
+    },
+    {
+      "ts_sec": 993.628,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.639
+    },
+    {
+      "ts_sec": 993.907,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.463
+    },
+    {
+      "ts_sec": 994.464,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.502
+    },
+    {
+      "ts_sec": 996.415,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.41
+    },
+    {
+      "ts_sec": 996.693,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.402
+    },
+    {
+      "ts_sec": 998.365,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.506
+    },
+    {
+      "ts_sec": 998.922,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.552
+    },
+    {
+      "ts_sec": 999.201,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.562
+    },
+    {
+      "ts_sec": 999.48,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.36
+    },
+    {
+      "ts_sec": 1000.037,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.405
+    },
+    {
+      "ts_sec": 1001.709,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.588
+    },
+    {
+      "ts_sec": 1003.381,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.617
+    },
+    {
+      "ts_sec": 1003.659,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.374
+    },
+    {
+      "ts_sec": 1003.938,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.767
+    },
+    {
+      "ts_sec": 1005.61,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.422
+    },
+    {
+      "ts_sec": 1005.888,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.523
+    },
+    {
+      "ts_sec": 1006.446,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.434
+    },
+    {
+      "ts_sec": 1008.953,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.472
+    },
+    {
+      "ts_sec": 1009.789,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.639
+    },
+    {
+      "ts_sec": 1010.347,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.415
+    },
+    {
+      "ts_sec": 1010.625,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.431
+    },
+    {
+      "ts_sec": 1013.412,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.436
+    },
+    {
+      "ts_sec": 1013.412,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.642
+    },
+    {
+      "ts_sec": 1013.69,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.351
+    },
+    {
+      "ts_sec": 1015.641,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.448
+    },
+    {
+      "ts_sec": 1017.313,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.55
+    },
+    {
+      "ts_sec": 1017.313,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.433
+    },
+    {
+      "ts_sec": 1018.427,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.556
+    },
+    {
+      "ts_sec": 1020.099,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.513
+    },
+    {
+      "ts_sec": 1021.492,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.555
+    },
+    {
+      "ts_sec": 1021.771,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.477
+    },
+    {
+      "ts_sec": 1022.328,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.512
+    },
+    {
+      "ts_sec": 1024.279,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.405
+    },
+    {
+      "ts_sec": 1024.279,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.483
+    },
+    {
+      "ts_sec": 1024.557,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.355
+    },
+    {
+      "ts_sec": 1026.229,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.444
+    },
+    {
+      "ts_sec": 1026.508,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.406
+    },
+    {
+      "ts_sec": 1027.622,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.715
+    },
+    {
+      "ts_sec": 1028.18,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.449
+    },
+    {
+      "ts_sec": 1029.573,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.401
+    },
+    {
+      "ts_sec": 1029.851,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.484
+    },
+    {
+      "ts_sec": 1032.638,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.449
+    },
+    {
+      "ts_sec": 1033.195,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.643
+    },
+    {
+      "ts_sec": 1034.867,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.546
+    },
+    {
+      "ts_sec": 1035.981,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.57
+    },
+    {
+      "ts_sec": 1036.26,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.388
+    },
+    {
+      "ts_sec": 1039.047,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.397
+    },
+    {
+      "ts_sec": 1039.325,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.809
+    },
+    {
+      "ts_sec": 1040.997,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.596
+    },
+    {
+      "ts_sec": 1041.554,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.434
+    },
+    {
+      "ts_sec": 1041.833,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.648
+    },
+    {
+      "ts_sec": 1042.39,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.509
+    },
+    {
+      "ts_sec": 1044.062,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.382
+    },
+    {
+      "ts_sec": 1044.062,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.62
+    },
+    {
+      "ts_sec": 1044.341,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.669
+    },
+    {
+      "ts_sec": 1045.734,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.44
+    },
+    {
+      "ts_sec": 1047.127,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.465
+    },
+    {
+      "ts_sec": 1047.406,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.63
+    },
+    {
+      "ts_sec": 1047.684,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.632
+    },
+    {
+      "ts_sec": 1048.799,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.494
+    },
+    {
+      "ts_sec": 1050.471,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.604
+    },
+    {
+      "ts_sec": 1051.028,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.41
+    },
+    {
+      "ts_sec": 1051.864,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.798
+    },
+    {
+      "ts_sec": 1053.536,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.521
+    },
+    {
+      "ts_sec": 1053.536,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.504
+    },
+    {
+      "ts_sec": 1053.814,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.411
+    },
+    {
+      "ts_sec": 1057.715,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.43
+    },
+    {
+      "ts_sec": 1057.715,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.645
+    },
+    {
+      "ts_sec": 1057.994,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.595
+    },
+    {
+      "ts_sec": 1059.109,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.438
+    },
+    {
+      "ts_sec": 1061.895,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.533
+    },
+    {
+      "ts_sec": 1061.895,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.417
+    },
+    {
+      "ts_sec": 1062.174,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.439
+    },
+    {
+      "ts_sec": 1063.567,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.425
+    },
+    {
+      "ts_sec": 1064.124,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.454
+    },
+    {
+      "ts_sec": 1065.796,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.57
+    },
+    {
+      "ts_sec": 1066.075,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.579
+    },
+    {
+      "ts_sec": 1068.025,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.518
+    },
+    {
+      "ts_sec": 1068.304,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.625
+    },
+    {
+      "ts_sec": 1069.14,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.728
+    },
+    {
+      "ts_sec": 1069.697,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.537
+    },
+    {
+      "ts_sec": 1071.369,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.587
+    },
+    {
+      "ts_sec": 1071.926,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.646
+    },
+    {
+      "ts_sec": 1073.041,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.513
+    },
+    {
+      "ts_sec": 1074.712,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.705
+    },
+    {
+      "ts_sec": 1074.712,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.725
+    },
+    {
+      "ts_sec": 1075.548,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.351
+    },
+    {
+      "ts_sec": 1077.499,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.541
+    },
+    {
+      "ts_sec": 1077.777,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.477
+    },
+    {
+      "ts_sec": 1078.335,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.429
+    },
+    {
+      "ts_sec": 1080.007,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.517
+    },
+    {
+      "ts_sec": 1081.957,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.406
+    },
+    {
+      "ts_sec": 1081.957,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.603
+    },
+    {
+      "ts_sec": 1082.236,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.52
+    },
+    {
+      "ts_sec": 1084.465,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.432
+    },
+    {
+      "ts_sec": 1085.022,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.427
+    },
+    {
+      "ts_sec": 1087.251,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.408
+    },
+    {
+      "ts_sec": 1087.53,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.562
+    },
+    {
+      "ts_sec": 1090.038,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.663
+    },
+    {
+      "ts_sec": 1090.316,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.561
+    },
+    {
+      "ts_sec": 1092.545,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.59
+    },
+    {
+      "ts_sec": 1093.66,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.738
+    },
+    {
+      "ts_sec": 1094.774,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.57
+    },
+    {
+      "ts_sec": 1095.332,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.698
+    },
+    {
+      "ts_sec": 1097.004,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.663
+    },
+    {
+      "ts_sec": 1098.118,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.375
+    },
+    {
+      "ts_sec": 1098.675,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.576
+    },
+    {
+      "ts_sec": 1098.954,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.51
+    },
+    {
+      "ts_sec": 1100.904,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.648
+    },
+    {
+      "ts_sec": 1102.576,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.595
+    },
+    {
+      "ts_sec": 1103.134,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.396
+    },
+    {
+      "ts_sec": 1104.248,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.445
+    },
+    {
+      "ts_sec": 1104.527,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.403
+    },
+    {
+      "ts_sec": 1105.641,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.766
+    },
+    {
+      "ts_sec": 1107.313,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.533
+    },
+    {
+      "ts_sec": 1107.592,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.643
+    },
+    {
+      "ts_sec": 1107.87,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.58
+    },
+    {
+      "ts_sec": 1108.149,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.457
+    },
+    {
+      "ts_sec": 1109.542,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.489
+    },
+    {
+      "ts_sec": 1111.214,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.504
+    },
+    {
+      "ts_sec": 1111.493,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.433
+    },
+    {
+      "ts_sec": 1112.329,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.719
+    },
+    {
+      "ts_sec": 1112.886,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.624
+    },
+    {
+      "ts_sec": 1113.165,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.582
+    },
+    {
+      "ts_sec": 1114.836,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.66
+    },
+    {
+      "ts_sec": 1115.672,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.573
+    },
+    {
+      "ts_sec": 1116.787,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.585
+    },
+    {
+      "ts_sec": 1118.459,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.688
+    },
+    {
+      "ts_sec": 1118.737,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.609
+    },
+    {
+      "ts_sec": 1119.016,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.651
+    },
+    {
+      "ts_sec": 1121.245,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.516
+    },
+    {
+      "ts_sec": 1121.802,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.561
+    },
+    {
+      "ts_sec": 1122.917,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.527
+    },
+    {
+      "ts_sec": 1123.196,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.457
+    },
+    {
+      "ts_sec": 1123.474,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.478
+    },
+    {
+      "ts_sec": 1123.753,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.503
+    },
+    {
+      "ts_sec": 1124.032,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.763
+    },
+    {
+      "ts_sec": 1127.654,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.572
+    },
+    {
+      "ts_sec": 1129.326,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.613
+    },
+    {
+      "ts_sec": 1129.326,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.522
+    },
+    {
+      "ts_sec": 1132.391,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.578
+    },
+    {
+      "ts_sec": 1132.948,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.724
+    },
+    {
+      "ts_sec": 1134.62,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.689
+    },
+    {
+      "ts_sec": 1135.456,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.408
+    },
+    {
+      "ts_sec": 1136.849,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.491
+    },
+    {
+      "ts_sec": 1138.799,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.496
+    },
+    {
+      "ts_sec": 1139.078,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.736
+    },
+    {
+      "ts_sec": 1139.357,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.656
+    },
+    {
+      "ts_sec": 1139.635,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.537
+    },
+    {
+      "ts_sec": 1142.7,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.451
+    },
+    {
+      "ts_sec": 1144.094,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.39
+    },
+    {
+      "ts_sec": 1144.094,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.697
+    },
+    {
+      "ts_sec": 1145.208,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.36
+    },
+    {
+      "ts_sec": 1145.208,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.421
+    },
+    {
+      "ts_sec": 1145.765,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.409
+    },
+    {
+      "ts_sec": 1147.995,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.515
+    },
+    {
+      "ts_sec": 1149.388,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.42
+    },
+    {
+      "ts_sec": 1149.666,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.485
+    },
+    {
+      "ts_sec": 1151.617,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.455
+    },
+    {
+      "ts_sec": 1151.896,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.565
+    },
+    {
+      "ts_sec": 1152.174,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.758
+    },
+    {
+      "ts_sec": 1153.01,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.404
+    },
+    {
+      "ts_sec": 1154.961,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.593
+    },
+    {
+      "ts_sec": 1156.632,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.575
+    },
+    {
+      "ts_sec": 1156.632,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.634
+    },
+    {
+      "ts_sec": 1158.861,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.427
+    },
+    {
+      "ts_sec": 1159.419,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.559
+    },
+    {
+      "ts_sec": 1162.484,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.517
+    },
+    {
+      "ts_sec": 1164.713,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.413
+    },
+    {
+      "ts_sec": 1166.385,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.48
+    },
+    {
+      "ts_sec": 1167.221,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.499
+    },
+    {
+      "ts_sec": 1167.778,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.589
+    },
+    {
+      "ts_sec": 1170.564,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.549
+    },
+    {
+      "ts_sec": 1170.564,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.71
+    },
+    {
+      "ts_sec": 1170.843,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.443
+    },
+    {
+      "ts_sec": 1171.958,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.785
+    },
+    {
+      "ts_sec": 1172.236,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.441
+    },
+    {
+      "ts_sec": 1172.793,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.567
+    },
+    {
+      "ts_sec": 1174.465,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.503
+    },
+    {
+      "ts_sec": 1175.023,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.452
+    },
+    {
+      "ts_sec": 1175.859,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.838
+    },
+    {
+      "ts_sec": 1177.53,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.464
+    },
+    {
+      "ts_sec": 1177.809,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.433
+    },
+    {
+      "ts_sec": 1178.088,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.743
+    },
+    {
+      "ts_sec": 1178.366,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.435
+    },
+    {
+      "ts_sec": 1179.481,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.434
+    },
+    {
+      "ts_sec": 1179.759,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.384
+    },
+    {
+      "ts_sec": 1181.71,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.464
+    },
+    {
+      "ts_sec": 1181.989,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.665
+    },
+    {
+      "ts_sec": 1183.382,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.488
+    },
+    {
+      "ts_sec": 1183.66,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.543
+    },
+    {
+      "ts_sec": 1183.939,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.684
+    },
+    {
+      "ts_sec": 1184.218,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.446
+    },
+    {
+      "ts_sec": 1185.332,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.656
+    },
+    {
+      "ts_sec": 1187.004,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.508
+    },
+    {
+      "ts_sec": 1187.283,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.568
+    },
+    {
+      "ts_sec": 1188.119,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.499
+    },
+    {
+      "ts_sec": 1188.119,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.624
+    },
+    {
+      "ts_sec": 1188.955,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.509
+    },
+    {
+      "ts_sec": 1189.79,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.479
+    },
+    {
+      "ts_sec": 1190.348,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.641
+    },
+    {
+      "ts_sec": 1192.02,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.462
+    },
+    {
+      "ts_sec": 1192.298,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.486
+    },
+    {
+      "ts_sec": 1192.856,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.61
+    },
+    {
+      "ts_sec": 1193.691,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.447
+    },
+    {
+      "ts_sec": 1194.806,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.556
+    },
+    {
+      "ts_sec": 1195.642,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.607
+    },
+    {
+      "ts_sec": 1195.921,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.65
+    },
+    {
+      "ts_sec": 1197.314,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.577
+    },
+    {
+      "ts_sec": 1197.871,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.588
+    },
+    {
+      "ts_sec": 1198.15,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.722
+    },
+    {
+      "ts_sec": 1198.986,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.662
+    },
+    {
+      "ts_sec": 1199.264,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.772
+    },
+    {
+      "ts_sec": 1200.936,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.586
+    },
+    {
+      "ts_sec": 1200.936,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.651
+    },
+    {
+      "ts_sec": 1206.509,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.59
+    },
+    {
+      "ts_sec": 1208.459,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.515
+    },
+    {
+      "ts_sec": 1209.574,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.651
+    },
+    {
+      "ts_sec": 1210.967,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.527
+    },
+    {
+      "ts_sec": 1212.639,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.525
+    },
+    {
+      "ts_sec": 1213.753,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.664
+    },
+    {
+      "ts_sec": 1214.589,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.66
+    },
+    {
+      "ts_sec": 1215.983,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.453
+    },
+    {
+      "ts_sec": 1216.261,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.703
+    },
+    {
+      "ts_sec": 1219.884,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.443
+    },
+    {
+      "ts_sec": 1220.162,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.476
+    },
+    {
+      "ts_sec": 1221.555,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.495
+    },
+    {
+      "ts_sec": 1221.834,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.687
+    },
+    {
+      "ts_sec": 1222.949,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.593
+    },
+    {
+      "ts_sec": 1223.506,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.538
+    },
+    {
+      "ts_sec": 1224.063,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.509
+    },
+    {
+      "ts_sec": 1225.456,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.522
+    },
+    {
+      "ts_sec": 1225.735,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.496
+    },
+    {
+      "ts_sec": 1226.014,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.406
+    },
+    {
+      "ts_sec": 1227.407,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.472
+    },
+    {
+      "ts_sec": 1229.079,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.427
+    },
+    {
+      "ts_sec": 1229.357,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.537
+    },
+    {
+      "ts_sec": 1230.472,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.632
+    },
+    {
+      "ts_sec": 1231.029,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.406
+    },
+    {
+      "ts_sec": 1231.308,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.387
+    },
+    {
+      "ts_sec": 1231.865,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.507
+    },
+    {
+      "ts_sec": 1232.144,
+      "artifact_type": "prosody_rung_lem",
+      "severity": "MEDIUM",
+      "metric": 0.566
+    },
+    {
+      "ts_sec": 1232.422,
+      "artifact_type": "prosody_pitch_drop",
+      "severity": "HIGH",
+      "metric": 0.495
+    }
+  ]
+}

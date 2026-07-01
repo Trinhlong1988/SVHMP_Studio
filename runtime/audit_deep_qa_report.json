@@ -1,24 +1,14 @@
 {
   "summary": {
-    "dialogue_em_overload": 265,
+    "dialogue_em_overload": 234,
     "kp_age_inconsistency": false,
     "format_inconsistent": true,
     "ghế_7_legacy_only_ep01": 9,
-    "consecutive_short_excess": 1,
+    "consecutive_short_excess": 0,
     "invalid_ages": 0,
     "exclaim_total": 2
   },
   "dialogue_em_overload": [
-    [
-      2,
-      5,
-      "Hai chín tối, em gái gọi. Em không nói gì. Em chỉ khóc. Khóc trong điện thoại. Khóc rất khẽ, sợ mẹ n"
-    ],
-    [
-      7,
-      5,
-      "Con kể về em gái — em đã thi đỗ học sinh giỏi tỉnh. Em vẫn vui. Em chưa hiểu chuyện gì sắp xảy ra. C"
-    ],
     [
       8,
       6,
@@ -27,17 +17,7 @@
     [
       8,
       5,
-      "Đêm ba mươi Tết năm ngoái, bà gọi cho em lúc tám giờ tối. Em đang đi nhậu với bạn lớp. Em không bắt."
-    ],
-    [
-      8,
-      5,
-      "Em về quê sáng mùng một. Cô em đứng cổng đón. Đám tang bà đông lắm. Em không đứng vững. Cô em phải d"
-    ],
-    [
-      8,
-      5,
-      "Ông nội em mất khi bố em mới năm tuổi. Bà nuôi bố em một mình. Sau đó bố em lớn lên, đi làm ăn xa, g"
+      "Em về quê sáng mùng một. Người cô em đứng cổng đón. Đám tang bà đông lắm. Em không đứng vững. Cô em "
     ],
     [
       8,
@@ -51,38 +31,28 @@
     ],
     [
       8,
-      5,
-      "Năm nay em về quê đúng đêm ba mươi. Một mình. Em sẽ ngồi cạnh ban thờ bà. Em sẽ gọi điện cho bà — gọ"
-    ],
-    [
-      8,
       6,
       "Em không kể chuyện này với bố mẹ em. Bố mẹ em ở Bình Dương — không về kịp đám tang bà năm ngoái. Họ "
     ],
     [
       8,
-      6,
-      "Bạn em ở trường không ai biết chuyện. Em đi học bình thường. Em đi làm thêm. Em ăn cơm sinh viên. Em"
+      5,
+      "Đêm nay là lần đầu em kể. Em không biết vì sao em kể với anh — người lạ trên chuyến xe lạ. Có lẽ vì "
     ],
     [
       9,
       5,
-      "Em quên rồi. Em chỉ nhớ vài câu chào. Mỗi lần em nghe đoạn đó, em xấu hổ. Vì em đã quên tiếng bà."
-    ],
-    [
-      9,
-      6,
-      "Em đã quên câu đó suốt mười năm. Lúc em sinh con đầu lòng — em đau đẻ — em tự nhiên nhớ câu bà. Em c"
-    ],
-    [
-      9,
-      7,
-      "Chồng em không hiểu vì sao em đi một mình. Em không kể đủ. Em chỉ bảo: 'Em về quê thắp hương bà. Em "
+      "Em đã quên rồi. Em chỉ nhớ vài câu chào. Mỗi lần em nghe đoạn đó, em xấu hổ. Vì em đã quên tiếng bà."
     ],
     [
       9,
       5,
-      "Con em năm tuổi đã hỏi: 'Mẹ ơi bà cố ở đâu?' Em chỉ vào ngực mình. Con em không hiểu. Em bảo: 'Bà ở "
+      "Em đã quên câu đó suốt mười năm. Lúc em sinh con đầu lòng — em đau đẻ — em tự nhiên nhớ câu bà. Cô g"
+    ],
+    [
+      9,
+      6,
+      "Chồng em không hiểu vì sao em đi một mình. Em không kể đủ. Cháu chỉ bảo: 'Em về quê thắp hương bà. E"
     ],
     [
       9,
@@ -102,12 +72,42 @@
     [
       11,
       7,
-      "Chị hơn em mười tuổi. Em sinh sau chị mười năm — em là con út — lập gia đình muộn của mẹ em. Chị nuô"
+      "Chị Thu Hà hơn em mười tuổi. Em sinh sau chị mười năm — em là con út — lập gia đình muộn của mẹ em. "
     ],
     [
       11,
       8,
-      "Chị tắm cho em lúc em mới sinh. Chị đút em ăn lúc em hai tuổi. Chị đưa em đi học mẫu giáo. Chị dạy e"
+      "Chị tắm cho em lúc em mới sinh. Người chị đút em ăn lúc em hai tuổi. Chị đưa em đi học mẫu giáo. Chị"
+    ],
+    [
+      11,
+      8,
+      "Năm vừa rồi em cưới vợ. Vợ em hỏi vòng cổ ngay đêm cưới. Cô gái gái gái gái kể. Vợ em im một lúc. Em"
+    ],
+    [
+      11,
+      5,
+      "Em nhớ. Chị em tặng vòng cổ đêm trước hôm chị đi — như cách chị chia tay em. Em không biết lúc đó. N"
+    ],
+    [
+      11,
+      9,
+      "Tám năm em mang vòng — như mang chị đi cùng em mỗi ngày. Bây giờ — em sắp có con — em không muốn vòn"
+    ],
+    [
+      11,
+      7,
+      "Đêm nay — đúng kỉ niệm năm thứ năm chị đi — em đem vòng về nghĩa trang Hà Đông. Đặt vòng giữa mộ chị"
+    ],
+    [
+      12,
+      6,
+      "Em đến văn phòng anh ba lần. Lần thứ nhất — anh trả lời câu hỏi luận văn của em — chuyên môn. Lần th"
+    ],
+    [
+      12,
+      5,
+      "Anh đứng dậy — đi ra xe — mở cốp — lấy hộp giấy bọc gấm đỏ. Đưa em. 'Anh mua đồng này tuần trước — đ"
     ]
   ],
   "kp_ages": {},

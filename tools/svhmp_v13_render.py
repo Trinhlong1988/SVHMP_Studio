@@ -1,7 +1,7 @@
 """
 SVHMP EP01 v13 — 5-trụ production (round 14 hook added)
 1. Micro-chunk (≤200, đã ≤131)
-2. Voice anchor "Khánh An kể chậm rãi rằng," → strip sau render
+2. Anchor DISABLED v13b — narrator Hắc Dạ Ký anonymous (1/7 lock)
 3. Setting tuyệt đối: seed=42, temp=0.3, top_k=5, top_p=0.5, num_beams=5
 4. Post-process: fade 40ms, loudnorm -18 LUFS
 5. Room tone bridge -38dB 200ms giữa chunks
@@ -27,9 +27,9 @@ except ImportError:
         def done(self, *a, **k): pass
         def fail(self, *a, **k): pass
 
-USE_ANCHOR = False  # v13b: skip anchor (silence strip unreliable)
-ANCHOR = "Khánh An kể chậm rãi rằng,"
-ANCHOR_STRIP_MIN_SEC = 2.5
+USE_ANCHOR = False  # v13b: anchor permanently disabled — narrator Hắc Dạ Ký anonymous (1/7 Mr.Long lock)
+# ANCHOR const removed 1/7: legacy "Khánh An" name conflicted with Hắc Dạ Ký channel identity
+ANCHOR_STRIP_MIN_SEC = 2.5  # kept for detect_anchor_end backward compat (dead path)
 ANCHOR_STRIP_MAX_SEC = 4.5
 SILENCE_THRESHOLD_DB = -40
 MIN_SILENCE_MS = 150
@@ -253,11 +253,12 @@ def main():
         text = sent['text']
         emo = sent.get('emo_vector', [0.0] * 8)
         tempo = sent.get('tempo_factor', 1.0)
-        rendered_text = f"{ANCHOR} {text}" if USE_ANCHOR else text
+        rendered_text = text  # USE_ANCHOR=False permanent (1/7 Hắc Dạ Ký anonymous narrator)
         out_path = os.path.join(tmpdir, f"seg_{i:03d}.wav")
 
-        set_all_seeds(42)
-        print(f"[v13] Chunk {i+1}/{len(sentences)}: {text[:50]}...", flush=True)
+        # Item 6 (Mr.Long docx 1/7): seed=42+chunk_index → deterministic variation chống robotic onset
+        set_all_seeds(42 + i)
+        print(f"[v13] Chunk {i+1}/{len(sentences)} (seed={42+i}): {text[:50]}...", flush=True)
         _prog.tick(1 + i + 1, f'TTS chunk {i+1}/{len(sentences)}: {text[:40]}...')
         t0 = time.time()
         tts.infer(

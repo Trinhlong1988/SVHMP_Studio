@@ -523,7 +523,7 @@ Bên ngoài cửa kính, sương đêm phủ kín thêm.
 
 Và một câu chưa kịp nói, dừng lại lúc bảy giờ mười.
 
-Bác tài ngước nhẹ lên gương, ánh mắt hướng về phía cô gái vừa ngồi xuống chiếc ghế số bảy ấy, ông già nhẹ giọng thì thầm:
+Bác tài ngước nhẹ lên gương, ánh mắt hướng về phía cô gái vừa ngồi xuống chiếc ghế số bảy ấy, rồi nhẹ giọng thì thầm:
 
 — Chưa tới lúc đâu cháu ạ.
 

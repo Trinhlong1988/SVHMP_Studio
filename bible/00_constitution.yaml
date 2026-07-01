@@ -83,6 +83,134 @@ rule_R_SUPREME_workflow_lock:
     statement: "This rule defines how all other rules are added, modified, frozen."
     self_modification_policy: "R_SUPREME itself only changes via Mr.Long explicit re-lock with new docx authority."
 
+  bug_class_extension_principle:
+    description: |
+      Mr.Long lock 30/6 23:55 docx:
+      "Tiếp tục tư duy theo bug class, NHƯNG đừng mặc định mỗi bug class = 1 rule mới.
+      Ưu tiên: EXTEND rule hiện có nếu phù hợp.
+      Chỉ CREATE NEW rule khi đó là loại lỗi thật sự KHÁC bản chất."
+    workflow:
+      1: "Phát hiện bug X"
+      2: "Hỏi: Bug X thuộc nhóm nào? (Language/TTS/Voice/Mix/Story)"
+      3: "Hỏi: Có rule existing trong nhóm đó không?"
+      4: "Nếu CÓ → EXTEND existing rule"
+      5: "Nếu KHÔNG → CREATE NEW rule (truly different nature)"
+    bug_class_groups:
+      Language_QA:
+        scope: ["collocation", "word_repetition", "kinship_pronoun", "abstract_unclear_term", "em_dash_logic", "register_consistency", "semantic_dictionary"]
+        existing_rules: ["R74", "R133", "R177", "R180", "R180b", "R193", "R182-R187"]
+        tier_2_2_target: "Language Intelligence — semantic dictionary + register module extend, NOT new rules"
+      TTS_QA:
+        scope: ["EOL_diacritic_all_6_tones", "pause_marker_literal", "mispronunciation", "mono_syllable_eol_risk"]
+        existing_rules: ["R58", "R60", "R61", "R66", "R86_extend", "R90"]
+      Voice_QA:
+        scope: ["voice_drift", "voice_identity", "character_consistency"]
+        existing_rules: ["R175", "R181b", "R181c", "R188-R191"]
+      Mix_QA:
+        scope: ["clip_peak", "loudness", "silence_bridge"]
+        existing_rules: ["R59", "R94b", "R104b", "R198"]
+      Story_QA:
+        scope: ["logic_continuity", "timeline_consistency", "character_arc"]
+        existing_rules: ["R117-R128", "R174", "R178b"]
+    forbidden_pattern:
+      - "Tạo R86b khi có thể EXTEND R86 → ALL 6 tones"
+      - "Tạo R177b khi có thể EXTEND R177 → cross-line"
+      - "Tạo R199-R203 individually khi belongs Language_QA group"
+    examples_30_06:
+      bad: "Em đề xuất 7 rules mới R199-R203 + R86b + R177b cho 7 bugs riêng"
+      good: "EXTEND R86 (ALL 6 tones) + EXTEND R177 (cross-line) + defer Language QA bugs to Tier 2.2"
+    rationale: |
+      Hệ thống mạnh hơn (cover more class via extension) +
+      maintain dễ (fewer rules to track) +
+      future-proof multi-content (rules generalize).
+
+    goal_lock_mr_long_30_06_24_05:
+      principle: "The architecture must grow by improving existing capabilities, NOT by continuously increasing the number of rules."
+      objectives:
+        - "Fewer Rules"
+        - "Broader Coverage"
+        - "Higher Maintainability"
+      examples_mr_long_locked:
+        example_1: "tone-ending risk → EXTEND R86, NOT create R86b"
+        example_2: "cross-line repetition → EXTEND R177, NOT create R177b"
+        example_3: "'tĩnh không' abstract → ADD to Language QA semantic dictionary (bible/36), NOT create independent rule"
+        example_4: "Wrong kinship addressing → EXTEND Language QA Register module, NOT create isolated rule"
+      decision_workflow_when_new_bug:
+        step_1: "Identify bug group (Language/TTS/Voice/Mix/Story)"
+        step_2: "Check existing rules in group"
+        step_3a_if_extendable: "EXTEND existing rule OR ADD to semantic dictionary/register module"
+        step_3b_truly_new: "Only if truly different nature → CREATE NEW rule"
+        step_4: "Document decision rationale in BUGS_FIXED.md"
+
+  governance_lock_mr_long_30_06_02_50:
+    authority: "Mr.Long is the ONLY authority that may approve any architecture change, production modification, render, freeze, release, or rule expansion."
+    claude_role: "Engineering Executor, NOT autonomous decision maker."
+    R1_no_autonomous_action:
+      forbidden:
+        - "Create production scripts without approval"
+        - "Modify production data without approval"
+        - "Overwrite spec files"
+        - "Batch-sync files"
+        - "Auto-fix production content"
+        - "Extend rules"
+        - "Create new rules"
+        - "Declare READY FOR RELEASE"
+        - "Declare PASS beyond actual coverage of existing QA"
+      if_uncertain: "STOP. Report. Wait."
+    R2_permission_first:
+      questions_before_every_action:
+        Q1: "Do I have explicit approval for THIS action? If NO → STOP."
+        Q2: "Am I modifying production data? If YES → Approval REQUIRED."
+        Q3: "Am I changing architecture? If YES → Approval REQUIRED."
+        Q4: "Am I introducing/extending rule? If YES → Production evidence REQUIRED first."
+    R3_production_validation_mode:
+      allowed: ["render", "run QA", "generate reports", "generate diff", "generate evidence", "catalog bugs", "wait for review"]
+      forbidden: ["redesign architecture", "extend QA", "extend rules", "calibrate thresholds", "optimize pipeline", "implement speculative improvements"]
+    R4_bug_class_principle:
+      step_1: "Identify Bug Class"
+      step_2: "Check whether existing rule covers this class"
+      step_3_yes: "Extend existing rule ONLY AFTER approval"
+      step_4_no: "Propose new rule"
+      rule: "Never create rules automatically"
+    R5_process_failure_principle:
+      when_mr_long_finds_bug_not_caught_by_eng_qa:
+        - "MUST NOT fix instance first"
+        - "MUST first answer: (1) Why Engineering missed it (2) Which QA layer failed (3) Which Bug Class (4) Whether existing rule can extend (5) What process change prevents recurrence"
+        - "Only then may implementation be proposed"
+    R6_pass_declaration_rule:
+      forbidden_unqualified: ["PASS", "READY", "COMPLETE", "PRODUCTION READY"]
+      correct_examples:
+        - "PASS within current QA coverage"
+        - "Audio PASS except manual listening"
+        - "Engineering PASS"
+        - "Production NOT VERIFIED"
+        - "Manual review REQUIRED"
+    R7_write_protection:
+      workflow: "Read → Diff → Proposal → Mr.Long Approval → Backup → Patch → Regression → Production"
+      rule: "Skipping any step is a workflow violation"
+    R8_baseline_protection:
+      before_modification:
+        - "Verify clean baseline"
+        - "Lock baseline"
+        - "Backup"
+        - "Generate checksum"
+        - "Produce diff"
+        - "Apply patch ONLY after approval"
+      rule: "No baseline. No write."
+    R9_evidence_first:
+      forbidden: "Implement changes based on assumptions"
+      required_order: "Evidence → Analysis → Proposal → Approval → Implementation → Regression → Production"
+    R10_final_safety_rule:
+      principle: "When uncertainty exists, Claude SHALL choose STOP instead of ACT"
+      forbidden:
+        - "Assumption modifying production"
+        - "Optimization without approval"
+        - "Autonomous engineering decision"
+      exception_policy: "No exception"
+    severity: TỐI_THƯỢNG_TUYỆT_ĐỐI
+    authority_source: docx "New Microsoft Word Document (2).docx" 30/6 02:50
+    applies_global: "Every project, every action, every rule, every decision."
+
   test_process_failure_principle:
     description: |
       Mr.Long lock 30/6 21:45:
@@ -2682,3 +2810,269 @@ R141_codified_from_test:
   detection: tools/qa_ssot_diff.py
   test_evidence: tests/regression/regression_report.json
   status: filled_from_docstring_pending_cmd_thuc_thi_full_review
+
+
+# ============================================================
+# RECOVERY APPEND 30/6 23:45 — bible/00 lost 18 rules between 19:30 edits
+# and 21:55 (possibly during render spawn / file rewrite).
+# Re-codify all R174/R176/R178b/R180b/R181b/R181c/R188-R197.
+# ============================================================
+
+rule_R174_driver_dialogue_context_match:
+  description: |
+    Bác tài CHỈ 2 câu LOCK. Q1 'Con đã nhớ ra chưa?' cho passenger mới.
+    Q2 'Chưa tới lúc.' chỉ khi passenger HỎI bác tài trong 3 sentence trước.
+  severity: Critical
+  enforce: tools/audit_driver_dialogue_context.py
+  trigger: Mr.Long catch EP01 v107 cliffhanger 30/6 16:30 - B60.
+
+rule_R176_realtime_progress_log_mandatory:
+  description: |
+    Long-running CMD tasks PHẢI ghi realtime progress log để CMD khác / phiên sau
+    đọc + tự resume khi crash.
+  severity: Critical
+  enforce: tools/cmd_progress_logger.py
+  log_path: runtime/cmd_progress/CMD_<NAME>_current.json
+
+rule_R178b_time_marker_pause_opening_flashback:
+  description: |
+    Cụm thời gian mở đầu hồi tưởng (hôm/ngày/đêm/thuở/hồi/lúc/khi/năm + ấy/đó/kia)
+    PHẢI có pause >=400ms sau cụm để TTS tạo sắc thái ngập ngừng.
+  severity: Medium
+  trigger: Mr.Long 30/6 17:36.
+
+rule_R180b_verb_noun_collocation_antiawkward:
+  description: |
+    Cấm pattern AI 'cái nhìn rất ngắn/dài' / 'cái cười nhỏ'.
+    Cụm động-danh / tính-danh PHẢI hợp collocation Vietnamese chuẩn.
+  severity: Medium
+  enforce: tools/audit_vn_style.py + bible/36
+  trigger: Mr.Long 30/6 17:40 - B-T14.
+
+rule_R181b_voice_identity_locked_emotion_dynamic:
+  description: |
+    Character profile 2 lớp:
+      LOCKED (DNA giọng): voice_id, speaker_embedding, accent, timbre, gender, age, pitch_base, rate_base
+      DYNAMIC (Emotion layer): emotion_vector (sum<=1), intensity, pause_ms, rate_modifier (0.95-1.05), breath_intensity
+  severity: Critical
+  schema_ref: bible/15_voice_bible.yaml v2.0
+  enforce: tools/voice_profile_manager.py
+  trigger: Mr.Long docx 30/6 18:46.
+
+rule_R181c_speaker_embedding_qa_mandatory:
+  description: |
+    Sau mỗi TTS render, MỌI chunk PHẢI qua Speaker Embedding Similarity check
+    vs golden reference. Threshold cosine sim >=0.85 PASS / <0.85 BLOCK + auto-retry render.
+  severity: Critical
+  enforce: tools/extract_speaker_embedding.py + tools/qa_dialogue_identity.py
+  embedding_method_phase2: mfcc_summary_placeholder
+  embedding_method_phase3: ecapa_tdnn_wespeaker_pyannote
+
+rule_R188_pause_boundary_artifact_qa:
+  description: |
+    Detect 'ù / xì / ẹ' artifacts tại pause boundaries TTS output via spectral analysis
+    +/-200ms around chunk boundaries.
+  severity: Critical
+  priority_rank: 1
+  note: Mr.Long mark TOP 5-star
+  enforce: tools/qa_boundary_artifact.py
+
+rule_R189_breath_artifact_qa:
+  description: |
+    Detect 'xì / phù / ẹ / hự' breath artifacts. Sibilance burst 5-10kHz z-score>3 +
+    aspiration burst 200-2000Hz z-score>3.5.
+  severity: High
+  enforce: tools/qa_breath_artifact.py
+
+rule_R190_prosody_collapse_qa:
+  description: |
+    Detect F0 contour break sau dấu ba chấm: tụt cao độ >35% / rung lẹm (std/mean F0 >0.40)
+    trong window 300ms.
+  severity: High
+  enforce: tools/qa_prosody_collapse.py
+
+rule_R190b_onset_artifact_qa:
+  description: |
+    Detect onset artifacts trong 100ms đầu mỗi chunk: F0 jump >1.5x, spectral peak >2x vs rest.
+  severity: High
+  enforce: tools/qa_onset_artifact.py
+
+rule_R191_dialogue_identity_qa:
+  description: |
+    Speaker embedding cosine similarity per segment vs section centroid.
+    Threshold default 0.85. Khải-Phong KHÔNG được thành ông già qua chunks.
+  severity: Critical
+  enforce: tools/qa_dialogue_identity.py
+  cosine_threshold: 0.85
+
+rule_R192_spec_episode_sync_mandatory:
+  description: |
+    Mỗi lần edit episode.md PHẢI sync ngay spec_*.json. Vi phạm = re-render TTS dùng OLD text.
+  severity: Critical
+  enforce: tools/sync_specs_from_episode.py
+  threshold: 0.92 + max_len_ratio 1.5
+  superseded_by_phase_2_5: R194 SSOT.
+
+rule_R193_vn_style_db_audit_mandatory:
+  description: |
+    Every text edit + every episode pre-render PHẢI qua audit_vn_style.py với bible/36.
+    Check forbidden collocations + AI-slop overuse + time marker pause + em-dash style.
+  severity: Critical
+  enforce: tools/audit_vn_style.py + bible/36_vn_style_db.yaml
+  status_30_06: FROZEN_FOR_FUTURE Tier 2.2 (await Tier 2.1 Golden cert + Git Tag)
+  trigger: Mr.Long 30/6 20:30.
+
+rule_R194_ssot_generate_not_sync:
+  description: |
+    Phase 2.5 architecture: episode.md = SOURCE duy nhất. spec_*.json auto-generate.
+    Inline annotation: [emo:STATE] [pause:Xms] [dialogue:CHAR] [volume:0.X].
+  severity: Critical
+  enforce: tools/build_specs_from_episode.py
+  status_30_06: FROZEN_FOR_FUTURE Tier 2.5 (skeleton built, migration deferred)
+  supersedes_when_live: R192.
+
+rule_R195_golden_audio_threshold_calibration:
+  description: |
+    FORBIDDEN: Calibrate voice QA thresholds (R188-R191, R181c) using non-Golden data.
+    Workflow: iterate render-fix until Text QA PASS + Audio/Mix QA PASS + Mr.Long accept ->
+    snapshot golden -> calibrate -> freeze. v108 = detect-only baseline NOT for calibration.
+  severity: TỐI_THƯỢNG
+  trigger: Mr.Long lock 30/6 21:00.
+  applies_global: All threshold-based QA in any project.
+
+rule_R196_production_reality_principle:
+  description: |
+    Module NEVER complete until >=1 real production run + Mr.Long accept.
+    Engineering PASS != Production PASS. Production evidence overrides engineering evidence.
+    Only Golden Production Output authorizes Freeze and Release.
+  severity: TỐI_THƯỢNG
+  terminology_forbidden_until_L3:
+    - 'complete'
+    - 'finished'
+    - 'done'
+    - '100% hoàn thành'
+    - 'Module complete'
+    - 'Tier complete'
+  completion_levels:
+    - L1_engineering
+    - L2_production_validation
+    - L3_golden_output
+    - L4_freeze
+    - L5_release
+  trigger: Mr.Long lock 30/6 22:50 docx.
+  applies_global: Every project, every module, every tier.
+
+# ============================================================
+# ORPHAN FLUSH 30/6 23:55 — 8 rules referenced in tools but not codified
+# Per memory feedback_flush_rules_from_test_pattern.md
+# R_SUPREME.test_process_failure_principle: tools build > rule codify gap.
+# ============================================================
+
+rule_R77_short_fragment_chain:
+  description: |
+    Detect ≥5 consecutive sentences <3 từ (short fragment chain causing TTS 'máy đọc' feel).
+  severity: Medium
+  enforce: tools/audit_short_chain.py + audit_100_check.py
+  status: stub_codified_from_tool_reference_30_06
+
+rule_R78_voice_carryover_passenger_ghost:
+  description: |
+    Voice carryover artifact — passenger keeping ghost voice character từ previous segment.
+    Render-time check (TTS pipeline emo override).
+  severity: Medium
+  enforce: tools/pre_render_audit.py + audit_60_dimensions.py
+  status: stub_codified_from_tool_reference_30_06
+
+rule_R79_tts_risk_phrases:
+  description: |
+    Catalog TTS risk phrases R74-R79 (BigVGAN mispronunciation patterns).
+  severity: Medium
+  enforce: tools/audit_100_check.py
+  status: stub_codified_from_tool_reference_30_06
+
+rule_R80_transient_peak_bup:
+  description: |
+    Detect transient peak 'bụp' — silence→loud burst (true audible transient).
+  severity: High
+  enforce: tools/svhmp_audio_qa.py
+  status: stub_codified_from_tool_reference_30_06
+
+rule_R87b_head_onset_audit:
+  description: |
+    Voice reach -20dB within 50ms of segment head onset. BigVGAN onset ramp inherent — check + auto-fix.
+  severity: Medium
+  enforce: tools/qa_post_render.py
+  status: stub_codified_from_tool_reference_30_06
+
+rule_R108_brand_name_hac_da_ky:
+  description: |
+    Brand name 'Hắc Dạ Ký' plain — no comma pause (Mr.Long revert 30/6 10:42).
+    Comma pause quá xa cho brand recognition.
+  severity: Critical
+  enforce: tools/post_render_gate.py
+  trigger: Mr.Long revert 30/6 10:42 comma break.
+  status: stub_codified_from_tool_reference_30_06
+
+rule_R109_rule_id_codification_verify:
+  description: |
+    Verify rule ID claimed codified via verify_ping_claim.py CLI.
+    Meta-rule: prevents 'tool built ≠ rule codified' gap.
+  severity: Critical
+  enforce: tools/verify_ping_claim.py + tools/check_rule_id_free.py
+  related: R_SUPREME.test_process_failure_principle
+  status: stub_codified_from_tool_reference_30_06
+
+rule_R175b_emo_vector_sum_normalize:
+  description: |
+    Emotion vector sum ≤ 1.0 normalize hardlock. Sum > 1.0 → IndexTTS2 voice drift.
+    Per-chunk pre-render gate.
+  severity: Critical
+  enforce: tools/voice_profile_manager.py (raises EmotionRangeError) + tools/spec_chunk_emo_override.py
+  trigger: |
+    v107 'Tôi nhớ ra rồi đấy cháu ạ' E002 sum=1.35 → voice drift.
+  affected_overrides_fixed_30_6:
+    - E001 Bác tài 1.35 → 1.00
+    - E002 Khải-Phong grief 1.35 → 1.00
+    - E003 Khải-Phong fear 1.50 → 1.00
+    - E004 Cô gái CLIFF 1.30 → 1.00
+    - E005 + E005b Bác tài Con đã nhớ 1.35 → 1.00
+  status: codified_30_06
+
+
+rule_R198_cap_peak_post_render_mandatory:
+  description: |
+    POST-RENDER cap_peak gate MANDATORY. Tool tools/cap_peak.py PHẢI wire vào cuối
+    pipeline render. Hardlock peak ≤ -1.0 dB. Idempotent — re-run safe.
+
+    BEFORE (broken pipeline causing setup.wav CLIP 4 lần):
+      TTS render → loudnorm → volume → alimiter (0.85) → OUTPUT (peak push qua 0 = CLIP)
+    AFTER (R198 wired):
+      TTS render → loudnorm → volume → alimiter → cap_peak.py → OUTPUT (peak ≤ -1.0 dB)
+  severity: Critical
+  trigger: |
+    Mr.Long catch 30/6 23:55: setup.wav CLIP recur 4 lần. CMD THỰC THI render lại
+    nhiều lần với volume manual fix nhưng KHÔNG wire cap_peak.py tool có sẵn.
+    Process gap: tool tồn tại ≠ tool wired.
+  enforce:
+    primary_tool: tools/cap_peak.py
+    wire_location: tools/svhmp_v13_render.py post-loudnorm finalize step
+    mode: idempotent (peak ≤ -1.0 dB → no-op exit 0)
+    hardlock_target_db: -1.0
+    trigger_fix_db: -0.5
+  related: R_SUPREME.test_process_failure_principle (tool built ≠ tool wired)
+
+
+rule_R197_full_text_gate_mandatory:
+  description: |
+    Every text modification MUST execute FULL_TEXT_GATE before any render — without exception.
+    KHÔNG phải Remember — MÀ MUST.
+    FULL_TEXT_GATE = qa_eol_diacritic (R86 broad NGA+NANG+HOI) + ALL existing text QA stack.
+  severity: TỐI_THƯỢNG
+  trigger: Mr.Long lock 30/6 23:30 docx.
+  enforce: tools/svhmp_preflight_qa.py (chains qa_eol_diacritic)
+  regression_test: tests/test_full_text_gate_r86_broad.py (5/5 PASS)
+  forbidden_shortcut:
+    - Running only audit_tilde_eol (NGA narrow)
+    - Skipping qa_eol_diacritic
+    - Manual confidence 'tin rằng OK'
+  applies_global: Mọi project Vietnamese TTS với BigVGAN/HiFiGAN vocoders.

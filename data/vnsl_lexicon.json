@@ -95,7 +95,15 @@
     "verb_misuse": [
       {"pattern": "khẽ thốt", "reason": "R73 mâu thuẫn thốt+khẽ", "fix": "khẽ nói / thì thầm"},
       {"pattern": "thốt được", "reason": "R73 gượng", "fix": "nói được / kể được"},
-      {"pattern": "thốt từ từ", "reason": "R73 mâu thuẫn", "fix": "chậm rãi nói"}
+      {"pattern": "thốt từ từ", "reason": "R73 mâu thuẫn", "fix": "chậm rãi nói"},
+      {"pattern": "thở hắt ra", "reason": "Hoàng Phê: thở dồn dập của người sắp chết → KHÔNG dùng cho nhân vật sống", "fix": "thở chậm / thở dài / buông tiếng thở / hít một hơi"},
+      {"pattern": "hấp hối", "reason": "trạng thái sắp chết → chỉ dùng death-context", "fix": "mệt mỏi / kiệt sức / chìm vào im lặng"},
+      {"pattern": "tắt thở", "reason": "chết", "fix": "ngừng thở / nín thở (alive context)"},
+      {"pattern": "ngấp ngoái", "reason": "sắp chết", "fix": "yếu ớt / mỏi mệt"}
+    ],
+    "death_context_only": [
+      "thở hắt ra", "hấp hối", "tắt thở", "ngấp ngoái", "đột tử", "lìa đời",
+      "trút hơi thở cuối", "qua đời", "khuất núi"
     ],
     "stop_consonant_tail": [
       {"word": "suốt", "fix_examples": ["trong suốt → lặng lẽ / mờ đục"]},

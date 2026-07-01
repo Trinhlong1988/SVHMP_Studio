@@ -413,6 +413,90 @@ errors:
     rule: R111
     status: FIXED
 
+
+  # ========== SESSION 30/6 chiều — E051-E060 sau v100 ship ==========
+  - id: E-051
+    loại: Em mis-diagnose text_batch_fix tool silent persist bug
+    ngày: 2026-06-30
+    session: 30/6 v105-v107 cycle
+    nguyên_nhân: 'Em interpret "OLD pattern not in text" = tool failed silently. Actually tool đúng — pattern already applied, em wrong root cause analysis'
+    cách_sửa: Verify text state TRƯỚC accuse tool. Em learning Always check current state vs registry OLD pattern
+    rule: R171 audit protocol — evidence-based not assumption
+    status: FIXED
+
+  - id: E-052
+    loại: 'F022 collocation gập→gấp (gập = vật lý đóng cửa, gấp = giấy fold)'
+    ngày: 2026-06-30
+    nguyên_nhân: Em propose generic verb không scan Vietnamese collocation
+    cách_sửa: 'R180 codified + Mr.Long word collocation DB extended (sương=phủ KHÔNG khép, giấy=gấp KHÔNG gập)'
+    rule: R180
+    status: FIXED
+
+  - id: E-053
+    loại: F023 đặt bàn tay lên ngực thiếu purpose/why
+    ngày: 2026-06-30
+    nguyên_nhân: Action mô tả không clarify ý nghĩa cử chỉ
+    cách_sửa: '"áp bàn tay phải lên ngực, như muốn cất từng câu chữ vào nơi trái tim đang đập êm đềm" (purpose explicit + literary)'
+    rule: R114 clarity mandatory
+    status: FIXED
+
+  - id: E-054
+    loại: 'F024 contradict logic — không buồn nhặt (chủ ý) + không nhận ra đánh rơi (vô ý)'
+    ngày: 2026-06-30
+    nguyên_nhân: Spec v6 logic hole 2 vế contradict
+    cách_sửa: 'Choose CHỦ Ý → "không buồn nhặt nó lên — chiếc đồng hồ ở lại với chiếc ghế trống, như chính anh đang lặng lẽ để lại quá khứ"'
+    rule: R110 narrative continuity + R114
+    status: FIXED
+
+  - id: E-055
+    loại: 'F025 metaphor mismatch (Lồng ngực chậm = breath, Đỡ vai = touch — 2 sensations different)'
+    ngày: 2026-06-30
+    nguyên_nhân: Em propose simile không match logical
+    cách_sửa: '"bàn tay vô hình đặt nhẹ lên ngực, ru nhịp thở anh dần êm" (touch on NGỰC match lồng ngực + ru nhịp thở rõ ý)'
+    rule: R186 metaphor sanity
+    status: FIXED
+
+  - id: E-056
+    loại: '"trong sáng." aspirated EOL — đèn cabin TTS phù'
+    ngày: 2026-06-30
+    nguyên_nhân: '"sáng" sắc open vowel /aŋ/ + period EOL → BigVGAN aspirated'
+    cách_sửa: '"tinh khôi" — "khôi" ngang OK + R141 ssot_diff accept variant'
+    rule: R111 phonetic safe
+    status: FIXED
+
+  - id: E-057
+    loại: Pause sau Bác tài dialogue ngắn — Mr.Long want xa hơn
+    ngày: 2026-06-30
+    nguyên_nhân: Default pause 2000ms cho dialogue trầm bí ẩn không đủ
+    cách_sửa: Tăng pause 2000ms → 2800ms (Bác tài Chưa tới lúc đâu cháu ạ)
+    rule: R175 dialogue tone + manual pause
+    status: FIXED
+
+  - id: E-058
+    loại: '"ông già" vs "Bác tài" inconsistent same character (R178 character voice lock)'
+    ngày: 2026-06-30
+    nguyên_nhân: 'Em mix subject reference ("Bác tài"/"ông già") cùng sentence'
+    cách_sửa: 'L526 "ông già" → "rồi" (subject continuity Bác tài)'
+    rule: R178 character voice profile lock
+    status: FIXED
+
+  - id: E-059
+    loại: Emo vector sum > 1.0 → IndexTTS2 voice character drift (Mr.Long catch v107 lạc giọng)
+    ngày: 2026-06-30
+    nguyên_nhân: 5/6 emo overrides sum 1.30-1.50 (em set quá mạnh)
+    cách_sửa: Normalize all sums ≤ 1.0 + codify R175b
+    rule: R175b emo vector sum normalize
+    status: FIXED
+
+  - id: E-060
+    loại: Em R86 self-violation lần 7 (F012 "lặng" NẶNG EOL — em propose substitute không pre-verify)
+    ngày: 2026-06-30
+    nguyên_nhân: Em vi phạm R179 PHẢI self-verify R86 trước propose. Pattern repeat 7 lần hôm nay (F001/F007/F020/F011/F024/F025/F012)
+    cách_sửa: 'Build tools/pre_verify_word_ending.py (R179 tool). Em USE forward TRƯỚC propose mỗi substitute. Mandatory pre-commit.'
+    rule: R179 mandatory self-verify
+    status: TOOL_BUILT
+
+
 # ========== ROOT CAUSE PATTERNS ==========
 patterns:
   - pattern: "Em vừa Writer vừa QA vừa Editor (single point of failure)"

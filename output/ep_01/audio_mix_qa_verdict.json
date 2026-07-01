@@ -1,0 +1,51 @@
+{
+  "ep": 1,
+  "wav": "output\\ep_01\\EP01_R38_FULL.wav",
+  "duration_s": 1087.12358276644,
+  "verdict": "FAIL",
+  "pass_count": 9,
+  "high": 3,
+  "medium": 5,
+  "issues": [
+    {
+      "sev": "HIGH",
+      "check": "C2",
+      "msg": "moment_map.yaml MISSING (R_AUDIO_02)"
+    },
+    {
+      "sev": "MEDIUM",
+      "check": "C9",
+      "msg": "SETUP avg -33.3 vs -22 (off 11.3)"
+    },
+    {
+      "sev": "MEDIUM",
+      "check": "C9",
+      "msg": "REVEAL avg -42.5 vs -15 (off 27.5)"
+    },
+    {
+      "sev": "MEDIUM",
+      "check": "C9",
+      "msg": "PAYOFF avg -40.3 vs -14 (off 26.3)"
+    },
+    {
+      "sev": "MEDIUM",
+      "check": "C10",
+      "msg": "first_word_center_ms not provided"
+    },
+    {
+      "sev": "HIGH",
+      "check": "C11",
+      "msg": "LUFS -19.99 outside [-17,-15]"
+    },
+    {
+      "sev": "HIGH",
+      "check": "C13",
+      "msg": "28798 click/pop. First @ 3.16s"
+    },
+    {
+      "sev": "MEDIUM",
+      "check": "C14",
+      "msg": "3955 windows DC > 0.001"
+    }
+  ]
+}

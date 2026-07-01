@@ -46,3 +46,28 @@ secrets.yaml
 # But DO commit small reference audio (brand SFX, sample voices)
 !assets/sfx/brand/*.wav
 !GIỌNG\ ĐỌC\ \ ANH\ KHÁNH.wav
+
+# HUGE model checkpoints + music library (91 GB total — session 1/7 add)
+assets/sfx/hdk_music_library/
+**/checkpoints/
+**/checkpoints-vi/
+*.safetensors
+*.pth
+*.pt
+*.bin
+*.onnx
+*.gguf
+hf_cache/
+.cache/
+
+# Rendered audio + video in any location
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.mp4
+*.m4a
+*.aac
+# But keep exceptions above
+!assets/sfx/brand/*.wav
+!GIỌNG\ ĐỌC\ \ ANH\ KHÁNH.wav

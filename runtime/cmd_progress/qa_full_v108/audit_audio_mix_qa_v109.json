@@ -1,0 +1,36 @@
+{
+  "ep": 1,
+  "wav": "output\\ep_01\\EP01_FULL_v109.mp3",
+  "duration_s": 1214.9714285714285,
+  "verdict": "FAIL",
+  "pass_count": 11,
+  "high": 2,
+  "medium": 3,
+  "issues": [
+    {
+      "sev": "MEDIUM",
+      "check": "C9",
+      "msg": "REVEAL avg -20.3 vs -15 (off 5.3)"
+    },
+    {
+      "sev": "MEDIUM",
+      "check": "C9",
+      "msg": "PAYOFF avg -19.6 vs -14 (off 5.6)"
+    },
+    {
+      "sev": "HIGH",
+      "check": "C10",
+      "msg": "HOOK peak @ 6500ms, expected 12000.0ms (off 5500.0ms)"
+    },
+    {
+      "sev": "HIGH",
+      "check": "C13",
+      "msg": "13429 click/pop. First @ 6.71s"
+    },
+    {
+      "sev": "MEDIUM",
+      "check": "C14",
+      "msg": "6024 windows DC > 0.001"
+    }
+  ]
+}

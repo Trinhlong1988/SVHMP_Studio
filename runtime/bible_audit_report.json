@@ -1,0 +1,1723 @@
+{
+  "timestamp": "2026-06-30T22:09:29.984637",
+  "rules": {
+    "40": {
+      "format": "top_level",
+      "name": "intro_hac_da_ky_mandatory",
+      "file": "00_constitution.yaml",
+      "line": 938,
+      "fields": [
+        "core_promise",
+        "cross_ref",
+        "duration_target",
+        "elements",
+        "enforcement",
+        "format",
+        "genre",
+        "golden_reference",
+        "identity",
+        "pause_pattern",
+        "production_status",
+        "risk_of_dna_drift",
+        "rule",
+        "scalability",
+        "series_id",
+        "soul",
+        "status"
+      ],
+      "tools": [
+        "deep_200_rounds_all_rules.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "41": {
+      "format": "top_level",
+      "name": "no_commit_if_gate_fail_HARDLOCK",
+      "file": "00_constitution.yaml",
+      "line": 918,
+      "fields": [
+        "Cause",
+        "Fix",
+        "R40_intro_hac_da_ky_mandatory",
+        "cross_ref",
+        "duration_target",
+        "elements",
+        "enforcement",
+        "no_exception",
+        "pause_pattern",
+        "rationale",
+        "rule",
+        "violation_action"
+      ],
+      "tools": [],
+      "tests": [],
+      "hook_referenced": true,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "42": {
+      "format": "top_level",
+      "name": "driver_foreshadow_line_allowed_cliffhanger",
+      "file": "00_constitution.yaml",
+      "line": 891,
+      "fields": [
+        "R41_no_commit_if_gate_fail_HARDLOCK",
+        "R43_tier2_filler_cap_per_ep",
+        "allowed_format",
+        "cross_ref",
+        "enforcement",
+        "not_allowed",
+        "rationale",
+        "rule"
+      ],
+      "tools": [
+        "trim_driver_extras.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "43": {
+      "format": "top_level",
+      "name": "tier2_filler_cap_per_ep",
+      "file": "00_constitution.yaml",
+      "line": 908,
+      "fields": [
+        "Cause",
+        "Fix",
+        "R40_intro_hac_da_ky_mandatory",
+        "R41_no_commit_if_gate_fail_HARDLOCK",
+        "cross_ref",
+        "enforcement",
+        "no_exception",
+        "rationale",
+        "rule",
+        "violation_action"
+      ],
+      "tools": [
+        "audit_r43_to_r67_missing.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "44": {
+      "format": "top_level",
+      "name": "dictionary_block",
+      "file": "00_constitution.yaml",
+      "line": 464,
+      "fields": [
+        "R56_story_mode_hoi_tuong_am_anh",
+        "banned_typos",
+        "diacritics_strict",
+        "enforcement",
+        "example_correct",
+        "is_truyen_mode",
+        "must_NOT_be",
+        "must_be",
+        "no_inference",
+        "rule"
+      ],
+      "tools": [],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "45": {
+      "format": "top_level",
+      "name": "context_block",
+      "file": "00_constitution.yaml",
+      "line": 882,
+      "fields": [
+        "R42_driver_foreshadow_line_allowed_cliffhanger",
+        "R43_tier2_filler_cap_per_ep",
+        "age_sanity",
+        "allowed_format",
+        "cross_ref",
+        "enforcement",
+        "foreign_words_max",
+        "no_inference",
+        "not_allowed",
+        "rationale",
+        "rule",
+        "verb_collocation"
+      ],
+      "tools": [
+        "audit_r43_to_r67_missing.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "46": {
+      "format": "top_level",
+      "name": "passenger_first_person_anaphora_accept",
+      "file": "00_constitution.yaml",
+      "line": 868,
+      "fields": [
+        "HIGH",
+        "MEDIUM",
+        "OK",
+        "R42_driver_foreshadow_line_allowed_cliffhanger",
+        "R45_context_block",
+        "age_sanity",
+        "enforcement",
+        "foreign_words_max",
+        "no_inference",
+        "rationale",
+        "rule",
+        "threshold",
+        "verb_collocation"
+      ],
+      "tools": [],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "47": {
+      "format": "top_level",
+      "name": "narrator_3rd_person_pov_hardlock",
+      "file": "00_constitution.yaml",
+      "line": 842,
+      "fields": [
+        "R46_passenger_first_person_anaphora_accept",
+        "R48_passenger_dialogue_hierarchy_pronoun",
+        "check_script",
+        "cross_ref",
+        "enforcement",
+        "example_correct",
+        "example_wrong",
+        "in_quotes",
+        "no_inference",
+        "out_of_quotes",
+        "rationale",
+        "rule"
+      ],
+      "tools": [
+        "audit_pronoun_pov.py",
+        "pre_write_enforcer.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "48": {
+      "format": "top_level",
+      "name": "passenger_dialogue_hierarchy_pronoun",
+      "file": "00_constitution.yaml",
+      "line": 857,
+      "fields": [
+        "HIGH",
+        "MEDIUM",
+        "OK",
+        "R45_context_block",
+        "R46_passenger_first_person_anaphora_accept",
+        "age_sanity",
+        "enforcement",
+        "example_correct",
+        "example_wrong",
+        "foreign_words_max",
+        "no_inference",
+        "rationale",
+        "rule",
+        "threshold",
+        "verb_collocation"
+      ],
+      "tools": [
+        "audit_deep_qa.py",
+        "audit_dialogue_hierarchy.py",
+        "auto_fix_dialogue_hierarchy.py",
+        "pre_write_enforcer.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "49": {
+      "format": "top_level",
+      "name": "template_variation_hardlock",
+      "file": "00_constitution.yaml",
+      "line": 815,
+      "fields": [
+        "R47_narrator_3rd_person_pov_hardlock",
+        "approved_opener_variants",
+        "atmospheric_descriptions_min",
+        "cross_ref",
+        "enforcement",
+        "hook_opener_templates_min",
+        "no_inference",
+        "rationale",
+        "repetition_max_consecutive",
+        "required_variation",
+        "rule"
+      ],
+      "tools": [
+        "audit_r43_to_r67_missing.py",
+        "hook_swell_aligner.py",
+        "vary_templates.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "50": {
+      "format": "top_level",
+      "name": "audit_toolkit_mandatory_pre_commit",
+      "file": "00_constitution.yaml",
+      "line": 792,
+      "fields": [
+        "R49_template_variation_hardlock",
+        "cross_ref",
+        "enforcement",
+        "mandatory_tools",
+        "no_inference",
+        "rationale",
+        "rule",
+        "violation_action"
+      ],
+      "tools": [],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "51": {
+      "format": "top_level",
+      "name": "dialogue_audit_smart_v2",
+      "file": "00_constitution.yaml",
+      "line": 757,
+      "fields": [
+        "HIGH",
+        "MEDIUM",
+        "R52_acceptable_ngoc_ngan_first_person",
+        "acceptable_patterns",
+        "cross_ref",
+        "enforcement",
+        "example_accept",
+        "example_flag",
+        "excluded_false_positives",
+        "flag_patterns",
+        "no_inference",
+        "rationale",
+        "rule"
+      ],
+      "tools": [],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "52": {
+      "format": "top_level",
+      "name": "acceptable_ngoc_ngan_first_person",
+      "file": "00_constitution.yaml",
+      "line": 775,
+      "fields": [
+        "R50_audit_toolkit_mandatory_pre_commit",
+        "cross_ref",
+        "enforcement",
+        "example_accept",
+        "example_flag",
+        "mandatory_tools",
+        "rationale",
+        "rule"
+      ],
+      "tools": [],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "53": {
+      "format": "top_level",
+      "name": "template_pattern_variety_hardlock",
+      "file": "00_constitution.yaml",
+      "line": 718,
+      "fields": [
+        "R54_reveal_word_count_min",
+        "approved_bell_variants",
+        "approved_entry_variants",
+        "banned_overuse",
+        "cross_ref",
+        "enforcement",
+        "hard_floor",
+        "rationale",
+        "rule",
+        "target_range"
+      ],
+      "tools": [
+        "vary_bell_entry.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "54": {
+      "format": "top_level",
+      "name": "reveal_word_count_min",
+      "file": "00_constitution.yaml",
+      "line": 740,
+      "fields": [
+        "HIGH",
+        "MEDIUM",
+        "R51_dialogue_audit_smart_v2",
+        "R55_driver_R42_strict_enforce",
+        "acceptable_patterns",
+        "cross_ref",
+        "detection",
+        "enforcement",
+        "excluded_false_positives",
+        "flag_patterns",
+        "hard_floor",
+        "rationale",
+        "rule",
+        "target_range"
+      ],
+      "tools": [],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "55": {
+      "format": "top_level",
+      "name": "driver_R42_strict_enforce",
+      "file": "00_constitution.yaml",
+      "line": 750,
+      "fields": [
+        "HIGH",
+        "MEDIUM",
+        "R51_dialogue_audit_smart_v2",
+        "R52_acceptable_ngoc_ngan_first_person",
+        "acceptable_patterns",
+        "cross_ref",
+        "detection",
+        "enforcement",
+        "excluded_false_positives",
+        "flag_patterns",
+        "no_inference",
+        "rationale",
+        "rule"
+      ],
+      "tools": [
+        "trim_driver_extras.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "56": {
+      "format": "top_level",
+      "name": "story_mode_hoi_tuong_am_anh",
+      "file": "00_constitution.yaml",
+      "line": 479,
+      "fields": [
+        "cross_ref",
+        "detection_patterns",
+        "enforcement",
+        "example_correct",
+        "example_wrong",
+        "is_truyen_mode",
+        "must_NOT_be",
+        "must_be",
+        "rule"
+      ],
+      "tools": [
+        "audit_story_mode.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "57": {
+      "format": "top_level",
+      "name": "reveal_vignette_structure",
+      "file": "00_constitution.yaml",
+      "line": 699,
+      "fields": [
+        "R53_template_pattern_variety_hardlock",
+        "approved_bell_variants",
+        "banned_overuse",
+        "cross_ref",
+        "enforcement",
+        "forbidden",
+        "hard_limit",
+        "ideal_structure",
+        "max_chronological_year_mentions",
+        "max_resume_facts",
+        "rule",
+        "vignette_1",
+        "vignette_2",
+        "vignette_3",
+        "vignette_4",
+        "vignette_5"
+      ],
+      "tools": [
+        "audit_r43_to_r67_missing.py",
+        "audit_story_mode.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "58": {
+      "format": "top_level",
+      "name": "no_tilde_ending_sentence_hardlock",
+      "file": "00_constitution.yaml",
+      "line": 665,
+      "fields": [
+        "banned_chars_at_eol",
+        "boundary_definition",
+        "common_violations",
+        "dialogue_quote_close",
+        "enforcement",
+        "exceptions",
+        "proper_noun_midword",
+        "rule",
+        "why"
+      ],
+      "tools": [
+        "audit_tilde_eol.py",
+        "auto_fix_tilde_eol.py",
+        "deep_200_rounds.py",
+        "historical_bug_replay.py",
+        "rewrite_ep01_final.py",
+        "rewrite_ep02_05.py",
+        "rewrite_ep06_10.py",
+        "rewrite_ep11_15.py",
+        "rewrite_ep16_20.py",
+        "rewrite_ep21_25.py",
+        "sequential_full_auto.py",
+        "sequential_rule_per_ep.py",
+        "verify_50_rounds.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "59": {
+      "format": "top_level",
+      "name": "audio_mix_qa_mandatory_pre_publish",
+      "file": "00_constitution.yaml",
+      "line": 438,
+      "fields": [
+        "R44_dictionary_block",
+        "banned_typos",
+        "counter",
+        "cross_ref",
+        "enforcement",
+        "fail_action",
+        "no_inference",
+        "rule"
+      ],
+      "tools": [
+        "audit_audio_mix_qa.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "60": {
+      "format": "top_level",
+      "name": "short_syllable_eol_hardlock",
+      "file": "00_constitution.yaml",
+      "line": 638,
+      "fields": [
+        "R105_concat_short_syllable_cụt_hardlock",
+        "R58_no_tilde_ending_sentence_hardlock",
+        "bad",
+        "banned_words_eol",
+        "detection",
+        "example",
+        "fix",
+        "fix_pattern",
+        "good",
+        "pattern_detection",
+        "rule",
+        "why"
+      ],
+      "tools": [
+        "audit_short_4to7.py",
+        "audit_short_eol.py",
+        "auto_fix_short_eol.py",
+        "deep_200_rounds.py",
+        "rewrite_ep02_05.py",
+        "rewrite_ep06_10.py",
+        "rewrite_ep11_15.py",
+        "rewrite_ep16_20.py",
+        "rewrite_ep21_25.py",
+        "sequential_full_auto.py",
+        "sequential_rule_per_ep.py",
+        "verify_50_rounds.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "61": {
+      "format": "top_level",
+      "name": "short_syllable_start_sentence_hardlock",
+      "file": "00_constitution.yaml",
+      "line": 625,
+      "fields": [
+        "R105_concat_short_syllable_cụt_hardlock",
+        "R60_short_syllable_eol_hardlock",
+        "alternatives",
+        "bad",
+        "banned_starts",
+        "banned_words_eol",
+        "detection",
+        "fix_pattern",
+        "good",
+        "rule",
+        "why"
+      ],
+      "tools": [
+        "audit_short_4to7.py",
+        "audit_short_start.py",
+        "auto_fix_r61_aggressive.py",
+        "auto_fix_short_start.py",
+        "deep_200_rounds.py",
+        "historical_bug_replay.py",
+        "rewrite_batch_r61.py",
+        "rewrite_ep01_final.py",
+        "rewrite_ep01_r61.py",
+        "rewrite_ep02_05.py",
+        "rewrite_ep06_10.py",
+        "rewrite_ep11_15.py",
+        "rewrite_ep16_20.py",
+        "rewrite_ep21_25.py",
+        "sequential_full_auto.py",
+        "sequential_rule_per_ep.py",
+        "verify_50_rounds.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "65": {
+      "format": "top_level",
+      "name": "total_consistency_no_invention_hardlock",
+      "file": "00_constitution.yaml",
+      "line": 589,
+      "fields": [
+        "1_logic_thoi_gian",
+        "2_logic_dia_ly",
+        "3_logic_vat_ly",
+        "4_logic_hoa_hoc_sinh_hoc",
+        "5_logic_thoi_tiet",
+        "6_dao_duc_van_hoa_vn",
+        "7_logic_toan_dem_vat",
+        "8_logic_kien_thuc_tu_nhien",
+        "R62_anaphora_word_liên_tiếp_hardlock",
+        "cross_ref",
+        "enforcement",
+        "forbidden_invention",
+        "level",
+        "max_consecutive",
+        "precedent_28_6",
+        "rule",
+        "total_dimensions",
+        "trigger_words",
+        "why"
+      ],
+      "tools": [
+        "audit_r43_to_r67_missing.py",
+        "vnsl_validator.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "66": {
+      "format": "top_level",
+      "name": "short_sentence_chain_hardlock",
+      "file": "00_constitution.yaml",
+      "line": 510,
+      "fields": [
+        "R72_dialogue_quote_render_separate",
+        "R73_lufs_gating_hardlock",
+        "bad",
+        "cross_ref",
+        "enforcement",
+        "example",
+        "exception",
+        "good",
+        "max_consecutive",
+        "rule",
+        "rule_detail",
+        "short_sentence",
+        "why"
+      ],
+      "tools": [
+        "audit_r43_to_r67_missing.py",
+        "audit_short_chain.py",
+        "auto_fix_r66_chain_merge.py",
+        "check_counter_canonical.py",
+        "historical_bug_replay.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "67": {
+      "format": "top_level",
+      "name": "verb_semantic_precision_memory_vs_perception",
+      "file": "00_constitution.yaml",
+      "line": 401,
+      "fields": [
+        "detection_heuristic",
+        "enforcement",
+        "examples_correct",
+        "examples_wrong",
+        "forbidden_patterns",
+        "hiểu",
+        "meaning",
+        "nhận_ra",
+        "nhớ_quên",
+        "precedent",
+        "rule",
+        "semantic_distinction"
+      ],
+      "tools": [
+        "audit_r43_to_r67_missing.py",
+        "post_rotate_verify.py",
+        "pre_render_audit.py",
+        "vnsl_validator.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "68": {
+      "format": "top_level",
+      "name": "triphthong_diphthong_proper_noun_hardlock",
+      "file": "00_constitution.yaml",
+      "line": 577,
+      "fields": [
+        "1_logic_thoi_gian",
+        "2_logic_dia_ly",
+        "3_logic_vat_ly",
+        "4_logic_hoa_hoc_sinh_hoc",
+        "5_logic_thoi_tiet",
+        "6_dao_duc_van_hoa_vn",
+        "7_logic_toan_dem_vat",
+        "8_logic_kien_thuc_tu_nhien",
+        "R65_total_consistency_no_invention_hardlock",
+        "affected_words",
+        "enforcement",
+        "forbidden_invention",
+        "level",
+        "precedent_28_6",
+        "rule",
+        "total_dimensions",
+        "why"
+      ],
+      "tools": [
+        "audit_r68_to_r73.py",
+        "verify_50_rounds.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "69": {
+      "format": "top_level",
+      "name": "number_reading_vietnamese_chu_hardlock",
+      "file": "00_constitution.yaml",
+      "line": 567,
+      "fields": [
+        "1_logic_thoi_gian",
+        "2_logic_dia_ly",
+        "3_logic_vat_ly",
+        "4_logic_hoa_hoc_sinh_hoc",
+        "R65_total_consistency_no_invention_hardlock",
+        "R68_triphthong_diphthong_proper_noun_hardlock",
+        "affected_words",
+        "bad",
+        "enforcement",
+        "examples",
+        "exception",
+        "good",
+        "level",
+        "rule",
+        "total_dimensions",
+        "why"
+      ],
+      "tools": [
+        "audit_r68_to_r73.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "70": {
+      "format": "top_level",
+      "name": "em_dash_prosody_explicit_pause_hardlock",
+      "file": "00_constitution.yaml",
+      "line": 557,
+      "fields": [
+        "R68_triphthong_diphthong_proper_noun_hardlock",
+        "R69_number_reading_vietnamese_chu_hardlock",
+        "affected_words",
+        "bad",
+        "cross_ref",
+        "enforcement",
+        "examples",
+        "exception",
+        "good",
+        "rule",
+        "why"
+      ],
+      "tools": [
+        "audit_r68_to_r73.py",
+        "tts_adapter_pre_render.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "71": {
+      "format": "top_level",
+      "name": "place_name_canonical_form_hardlock",
+      "file": "00_constitution.yaml",
+      "line": 545,
+      "fields": [
+        "R69_number_reading_vietnamese_chu_hardlock",
+        "R70_em_dash_prosody_explicit_pause_hardlock",
+        "bad",
+        "cross_ref",
+        "enforcement",
+        "examples",
+        "exception",
+        "good",
+        "rule",
+        "whitelist_must_verify",
+        "why"
+      ],
+      "tools": [
+        "audit_r68_to_r73.py",
+        "pre_render_audit.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "72": {
+      "format": "top_level",
+      "name": "dialogue_quote_render_separate",
+      "file": "00_constitution.yaml",
+      "line": 538,
+      "fields": [
+        "R69_number_reading_vietnamese_chu_hardlock",
+        "R70_em_dash_prosody_explicit_pause_hardlock",
+        "R71_place_name_canonical_form_hardlock",
+        "cross_ref",
+        "enforcement",
+        "exception",
+        "format_change",
+        "rule",
+        "whitelist_must_verify",
+        "why"
+      ],
+      "tools": [
+        "audit_r68_to_r73.py",
+        "pre_render_audit.py",
+        "tts_adapter_pre_render.py",
+        "verify_50_rounds.py",
+        "vnsl_validator.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "73": {
+      "format": "top_level",
+      "name": "lufs_gating_hardlock",
+      "file": "00_constitution.yaml",
+      "line": 531,
+      "fields": [
+        "R70_em_dash_prosody_explicit_pause_hardlock",
+        "R71_place_name_canonical_form_hardlock",
+        "R72_dialogue_quote_render_separate",
+        "cross_ref",
+        "enforcement",
+        "format_change",
+        "rule",
+        "whitelist_must_verify",
+        "why"
+      ],
+      "tools": [
+        "audit_r68_to_r73.py",
+        "vnsl_validator.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "74": {
+      "format": "top_level",
+      "name": "hyphen_proper_noun_phonetic_clash_hardlock",
+      "file": "00_constitution.yaml",
+      "line": 321,
+      "fields": [
+        "R75_proper_noun_anaphora_hardlock",
+        "banned_unhyphened_proper_nouns",
+        "context_rule",
+        "cross_ref",
+        "enforcement",
+        "hard_cap_per_ep",
+        "no_inference",
+        "precedent",
+        "rule",
+        "spacing_rule",
+        "why"
+      ],
+      "tools": [
+        "audit_100_check.py",
+        "audit_phrase_repetition.py",
+        "auto_fix_phrase_repetition.py",
+        "deep_200_rounds.py",
+        "deep_200_rounds_all_rules.py",
+        "pre_render_audit.py",
+        "sequential_full_auto.py",
+        "sequential_rule_per_ep.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "75": {
+      "format": "top_level",
+      "name": "proper_noun_anaphora_hardlock",
+      "file": "00_constitution.yaml",
+      "line": 343,
+      "fields": [
+        "anh",
+        "anh_ấy",
+        "context_rule",
+        "cô",
+        "cô_ấy",
+        "full_name",
+        "hard_cap_per_ep",
+        "hạ_vy",
+        "khải_phong",
+        "narrator_lines",
+        "pronoun_convention",
+        "reduction_protocol",
+        "rule",
+        "spacing_rule"
+      ],
+      "tools": [
+        "auto_fix_r66_chain_merge.py",
+        "pre_render_audit.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "76": {
+      "format": "top_level",
+      "name": "short_hoi_tone_drift_hardlock",
+      "file": "00_constitution.yaml",
+      "line": 283,
+      "fields": [
+        "Detection",
+        "bad",
+        "banned_patterns",
+        "enforcement",
+        "examples",
+        "fix_options",
+        "good_pad",
+        "rule",
+        "why"
+      ],
+      "tools": [
+        "post_rotate_verify.py",
+        "pre_render_audit.py",
+        "qa_pre_render.py",
+        "svhmp_audio_qa.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "81": {
+      "format": "top_level",
+      "name": "demonstrative_kia_ban_hardlock",
+      "file": "00_constitution.yaml",
+      "line": 177,
+      "fields": [
+        "R84_temporal_anchor_for_events",
+        "bad",
+        "banned_word",
+        "cross_ref",
+        "enforcement",
+        "fix_alternatives",
+        "good",
+        "precedent",
+        "protocol",
+        "rule",
+        "why"
+      ],
+      "tools": [],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "82": {
+      "format": "top_level",
+      "name": "pronoun_subject_explicit_for_non_main_character",
+      "file": "00_constitution.yaml",
+      "line": 262,
+      "fields": [
+        "Check",
+        "Fix",
+        "R76_short_hoi_tone_drift_hardlock",
+        "cross_ref",
+        "enforcement",
+        "main_character_action",
+        "non_main_character_action",
+        "object_specific_action",
+        "precedent",
+        "protocol",
+        "rule",
+        "why"
+      ],
+      "tools": [
+        "pre_render_audit.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "83": {
+      "format": "top_level",
+      "name": "subtext_clarity_for_audience",
+      "file": "00_constitution.yaml",
+      "line": 242,
+      "fields": [
+        "R82_pronoun_subject_explicit_for_non_main_character",
+        "cross_ref",
+        "example_bad",
+        "example_good",
+        "main_character_action",
+        "non_main_character_action",
+        "precedent",
+        "protocol",
+        "rule",
+        "why"
+      ],
+      "tools": [],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "84": {
+      "format": "top_level",
+      "name": "temporal_anchor_for_events",
+      "file": "00_constitution.yaml",
+      "line": 193,
+      "fields": [
+        "R85_single_word_eol_extend",
+        "bad",
+        "cross_ref",
+        "extended_banned_eol",
+        "good",
+        "precedent",
+        "protocol",
+        "rule",
+        "why"
+      ],
+      "tools": [
+        "pre_render_audit.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "85": {
+      "format": "top_level",
+      "name": "single_word_eol_extend",
+      "file": "00_constitution.yaml",
+      "line": 210,
+      "fields": [
+        "GENERAL_RULE",
+        "cross_ref",
+        "extended_banned_eol",
+        "fix_protocol",
+        "precedent",
+        "rule"
+      ],
+      "tools": [
+        "qa_pre_render.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "86": {
+      "format": "list",
+      "name": "EOL diacritic ban — ngã/nặng/hỏi (HARDLOCK)",
+      "file": "00_constitution.yaml",
+      "line": 1325,
+      "fields": [
+        "banned_chars_complete",
+        "banned_unicode_combining_marks",
+        "examples_banned_words",
+        "examples_safe_eol",
+        "fix_strategy",
+        "hoi",
+        "name",
+        "nang",
+        "nga",
+        "rule",
+        "severity"
+      ],
+      "tools": [
+        "check_counter_canonical.py",
+        "flush_rules_from_test.py",
+        "pre_verify_word_ending.py",
+        "project_health_audit.py",
+        "publish_score.py",
+        "qa_eol_diacritic.py",
+        "qa_pre_render.py",
+        "qa_watch.py",
+        "session_start_audit.py",
+        "svhmp_preflight_qa.py",
+        "text_batch_fix.py",
+        "verify_ping_claim.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "87": {
+      "format": "list",
+      "name": "Pause = ZERO TUYỆT ĐỐI + trim 1/1000 precision (HARDLOCK)",
+      "file": "00_constitution.yaml",
+      "line": 1349,
+      "fields": [
+        "fade_method",
+        "fail_criteria",
+        "method",
+        "name",
+        "no_post_trim_fade",
+        "no_zero_pad",
+        "pass_criteria",
+        "pause_silence",
+        "pipeline_v31",
+        "requirements",
+        "rule",
+        "severity",
+        "stage_1",
+        "stage_2",
+        "stage_3",
+        "stage_4",
+        "tool",
+        "trim_precision",
+        "truncate_policy",
+        "verification_audit"
+      ],
+      "tools": [
+        "audio_pre_ship_gate.py",
+        "qa_pause_silence.py",
+        "qa_post_render.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "88": {
+      "format": "list",
+      "name": "Head onset breath ban (BigVGAN slow ramp)",
+      "file": "00_constitution.yaml",
+      "line": 1403,
+      "fields": [
+        "added",
+        "detect_tool",
+        "fail_history",
+        "fix_method",
+        "measure",
+        "name",
+        "pass_criteria",
+        "rule",
+        "severity",
+        "v31",
+        "v32",
+        "v33",
+        "why"
+      ],
+      "tools": [
+        "audio_pre_ship_gate.py",
+        "post_rotate_verify.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "89": {
+      "format": "list",
+      "name": "Peak clip prevention (-0.1 dBFS hard limit)",
+      "file": "00_constitution.yaml",
+      "line": 1418,
+      "fields": [
+        "added",
+        "detect_tool",
+        "fix_method",
+        "measure",
+        "name",
+        "pass_criteria",
+        "rule",
+        "severity"
+      ],
+      "tools": [
+        "audio_pre_ship_gate.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "90": {
+      "format": "list",
+      "name": "Pre-render + post-render QA gate enforcement (HARDLOCK STAGE 1+3+5)",
+      "file": "00_constitution.yaml",
+      "line": 1428,
+      "fields": [
+        "blocks_on_fail",
+        "checks",
+        "name",
+        "rule",
+        "severity",
+        "stage_1_pre_render",
+        "stage_3_post_render",
+        "tool"
+      ],
+      "tools": [],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "91": {
+      "format": "list",
+      "name": "MASTER PIPELINE LOCK + cấm REACTIVE render (HARDLOCK Mr.Long capslock 29/6)",
+      "file": "00_constitution.yaml",
+      "line": 1454,
+      "fields": [
+        "name",
+        "rule",
+        "severity"
+      ],
+      "tools": [
+        "check_rule_id_free.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "92": {
+      "format": "list",
+      "name": "Text proposal SELF-VERIFY R86 trước propose (PRE-PROPOSE GATE)",
+      "file": "00_constitution.yaml",
+      "line": 1481,
+      "fields": [
+        "name",
+        "rule",
+        "severity"
+      ],
+      "tools": [],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "93": {
+      "format": "list",
+      "name": "Mỗi fix lỗi MỚI → UPDATE FULL stack",
+      "file": "00_constitution.yaml",
+      "line": 1508,
+      "fields": [
+        "added",
+        "name",
+        "rule",
+        "severity"
+      ],
+      "tools": [],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "94": {
+      "format": "list",
+      "name": "Music mix - NO sidechain cho dialogue exchange",
+      "file": "00_constitution.yaml",
+      "line": 1514,
+      "fields": [
+        "added",
+        "name",
+        "pattern_safe",
+        "rule",
+        "severity"
+      ],
+      "tools": [],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "95": {
+      "format": "list",
+      "name": "Character name max 6 lần per episode + xưng hô kể truyện",
+      "file": "00_constitution.yaml",
+      "line": 1521,
+      "fields": [
+        "added",
+        "keep_strategy",
+        "name",
+        "rule",
+        "severity",
+        "why"
+      ],
+      "tools": [
+        "publish_score.py",
+        "qa_honorific.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "96": {
+      "format": "list",
+      "name": "BigVGAN onset ramp MITIGATION (không cure)",
+      "file": "00_constitution.yaml",
+      "line": 1529,
+      "fields": [
+        "chunk_strategy",
+        "conservative_trim",
+        "mitigation",
+        "name",
+        "overlap_add",
+        "pre_check_consonants",
+        "pre_roll",
+        "qa_tolerance",
+        "severity",
+        "statement",
+        "voiced_onset_detection"
+      ],
+      "tools": [
+        "audio_pre_ship_gate.py",
+        "qa_post_render.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "97": {
+      "format": "list",
+      "name": "Music dạo đầu 6s + gentle fade-in (HARDLOCK)",
+      "file": "00_constitution.yaml",
+      "line": 1555,
+      "fields": [
+        "ffmpeg_pattern",
+        "music_fade_curve",
+        "music_intro_duration",
+        "name",
+        "rule",
+        "severity",
+        "spec",
+        "voice_delay"
+      ],
+      "tools": [
+        "apply_pause_variation.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "98": {
+      "format": "list",
+      "name": "Merge chunks dialogue dense (chống boundary ramps stack)",
+      "file": "00_constitution.yaml",
+      "line": 1570,
+      "fields": [
+        "name",
+        "pattern_bad",
+        "rule",
+        "severity"
+      ],
+      "tools": [
+        "apply_pause_variation.py",
+        "project_health_audit.py",
+        "session_start_audit.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "99": {
+      "format": "list",
+      "name": "INTRO order hardlock SVHMP series",
+      "file": "00_constitution.yaml",
+      "line": 1583,
+      "fields": [
+        "name",
+        "rule",
+        "severity"
+      ],
+      "tools": [],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "100": {
+      "format": "list",
+      "name": "Period vs Comma split — chống R86 NẶNG short word",
+      "file": "00_constitution.yaml",
+      "line": 1600,
+      "fields": [
+        "added",
+        "example",
+        "name",
+        "rule",
+        "severity"
+      ],
+      "tools": [],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "101": {
+      "format": "list",
+      "name": "FFmpeg SIMPLE pipeline (volume + alimiter only)",
+      "file": "00_constitution.yaml",
+      "line": 1607,
+      "fields": [
+        "name",
+        "rule",
+        "severity"
+      ],
+      "tools": [],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "102": {
+      "format": "list",
+      "name": "KHÔNG volume boost > 1.0 (chống pcm_s16le clamp)",
+      "file": "00_constitution.yaml",
+      "line": 1618,
+      "fields": [
+        "added",
+        "forbidden",
+        "name",
+        "rule",
+        "safe_volume",
+        "severity",
+        "why"
+      ],
+      "tools": [],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "103": {
+      "format": "list",
+      "name": "amix ≠ concat — sequential audio dùng concat",
+      "file": "00_constitution.yaml",
+      "line": 1627,
+      "fields": [
+        "added",
+        "correct",
+        "forbidden",
+        "name",
+        "rule",
+        "severity",
+        "why"
+      ],
+      "tools": [],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "104": {
+      "format": "list",
+      "name": "RAW reuse — change ffmpeg only chain → re-process raw.wav (5s) thay re-render TT",
+      "file": "00_constitution.yaml",
+      "line": 1679,
+      "fields": [
+        "name",
+        "rule",
+        "severity"
+      ],
+      "tools": [],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "110": {
+      "format": "top_level",
+      "name": "codified_from_test",
+      "file": "00_constitution.yaml",
+      "line": 2631,
+      "fields": [
+        "detection",
+        "rule",
+        "status",
+        "test_evidence",
+        "why"
+      ],
+      "tools": [
+        "check_rule_mention_codified.py",
+        "flush_rules_from_test.py",
+        "publish_score.py",
+        "qa_continuity.py",
+        "text_batch_fix.py"
+      ],
+      "tests": [],
+      "hook_referenced": true,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "111": {
+      "format": "top_level",
+      "name": "codified_from_test",
+      "file": "00_constitution.yaml",
+      "line": 2640,
+      "fields": [
+        "detection",
+        "rule",
+        "status",
+        "test_evidence",
+        "why"
+      ],
+      "tools": [
+        "flush_rules_from_test.py",
+        "publish_score.py",
+        "qa_phonetic_safe.py",
+        "text_batch_fix.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "113": {
+      "format": "top_level",
+      "name": "codified_from_test",
+      "file": "00_constitution.yaml",
+      "line": 2649,
+      "fields": [
+        "detection",
+        "rule",
+        "status",
+        "test_evidence",
+        "why"
+      ],
+      "tools": [
+        "flush_rules_from_test.py",
+        "publish_score.py",
+        "qa_repeat_action.py",
+        "text_batch_fix.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "117": {
+      "format": "top_level",
+      "name": "codified_from_test",
+      "file": "00_constitution.yaml",
+      "line": 2658,
+      "fields": [
+        "detection",
+        "rule",
+        "status",
+        "test_evidence",
+        "why"
+      ],
+      "tools": [
+        "flush_rules_from_test.py",
+        "publish_score.py",
+        "qa_fact_check.py",
+        "text_batch_fix.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "128": {
+      "format": "top_level",
+      "name": "codified_from_test",
+      "file": "00_constitution.yaml",
+      "line": 2667,
+      "fields": [
+        "detection",
+        "rule",
+        "status",
+        "test_evidence",
+        "why"
+      ],
+      "tools": [
+        "audio_qa_metrics.py",
+        "flush_rules_from_test.py",
+        "publish_score.py",
+        "qa_anti_generic.py",
+        "text_batch_fix.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    },
+    "141": {
+      "format": "top_level",
+      "name": "codified_from_test",
+      "file": "00_constitution.yaml",
+      "line": 2676,
+      "fields": [
+        "detection",
+        "rule",
+        "status",
+        "test_evidence",
+        "why"
+      ],
+      "tools": [
+        "flush_rules_from_test.py",
+        "publish_score.py",
+        "qa_ssot_diff.py",
+        "text_batch_fix.py"
+      ],
+      "tests": [],
+      "hook_referenced": false,
+      "is_duplicate": false,
+      "is_stub": false
+    }
+  },
+  "summary": {
+    "total_rules": 64,
+    "range": "R40-R141",
+    "gaps_count": 38,
+    "gaps": [
+      62,
+      63,
+      64,
+      77,
+      78,
+      79,
+      80,
+      105,
+      106,
+      107,
+      108,
+      109,
+      112,
+      114,
+      115,
+      116,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140
+    ],
+    "duplicates": [],
+    "stubs": [],
+    "missing_spec": [],
+    "no_tool": [
+      41,
+      44,
+      46,
+      50,
+      51,
+      52,
+      54,
+      81,
+      83,
+      90,
+      92,
+      93,
+      94,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104
+    ],
+    "no_test_count": 64,
+    "high_issues": 0,
+    "medium_issues": 0
+  }
+}

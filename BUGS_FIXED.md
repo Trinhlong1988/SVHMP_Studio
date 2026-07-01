@@ -445,3 +445,57 @@ ROUND 18-24 TOTAL ARTIFACTS:
 - New tools: 9 audit/fix scripts
 - Pre-commit hook R50 mandatory 3-layer (POV + 70-dim + formulaic)
 - Counter rule_break_count: 2 (R39 vi phạm 2 lần — historical)
+
+---
+
+## Round 20 bugs (2026-06-30 — Tier 2.x driver dialogue context)
+
+### B60 — EP01 cliffhanger: bác tài "Chưa tới lúc" với cô gái mới = vô lý + cụt ngủn [FIXED]
+- **Mr.Long phát hiện 30/6:** "đoạn cuối với cô gái đa vô lý ko rõ ý gì, cụt ngun"
+- **Bối cảnh:** EP01 line 526-528. Khải-Phong vừa "nhớ ra rồi — bảy giờ mười là lúc cô gái ấy mất" → rời xe. Cô gái mới xuất hiện ghế bảy giữ đủ 12 (`fact_004`). Bác tài thì thầm: "— Chưa tới lúc đâu cháu ạ."
+- **Root cause (3 lớp):**
+  1. **Sai trigger:** câu Q2 "Chưa tới lúc" theo `bible/02_lore_db.yaml:20` là TRẢ LỜI khi passenger HỎI bác tài. Scene cuối cô gái KHÔNG hỏi → dialogue floating, không trigger.
+  2. **Cụt ngủn:** "Chưa tới lúc đâu cháu ạ" thiếu object/complement. Bible LOCK câu cộc gọn vì giả định trigger câu hỏi tạo object ngầm.
+  3. **Logic break `fact_003`+`fact_004`:** cô gái VỪA xuất hiện (passenger mới) → đáng lẽ trigger Q1 "Con đã nhớ ra chưa?" để khởi vòng lặp horror. Q2 chỉ hợp với passenger có trigger câu hỏi.
+- **Fix:** EP01 line 528 đổi "— Chưa tới lúc đâu cháu ạ." → "— Con đã nhớ ra chưa?"
+- **Verify dialog count:** trước = Q1×2 + Q2×1 = 3 ✓ ; sau = Q1×3 + Q2×0 = 3 ✓ (`max_dialog_per_ep: 3` OK)
+- **Effect:** cycle horror rõ hơn — cô gái = passenger tiếp theo phải nhớ ra (hook EP02). Match `fact_003` (mỗi điểm dừng 1 người nhớ ra + rời) + `fact_004` (1 rời → 1 mới giữ đủ 12).
+- **Backup:** `output/ep_01/episode.md.bak.B_driver_dialog_30_06`
+- **Regression rule (cần build):** R174 driver_dialogue_context_match — Q1 cho passenger mới xuất hiện / Q2 chỉ khi passenger HỎI bác tài trong 3 câu trước. Tool `tools/audit_driver_dialogue_context.py` (PENDING).
+- **SHIPPED v108 17:15** Mr.Long approve. `output/ep_01/EP01_FULL_v108.mp3` 13MB / 20:15 min. Audio residual accepted same as v103 baseline (peak/click BETTER than v103).
+- **R174 codified** bible/00 — driver_dialogue_context_match (Q1 cho passenger mới / Q2 chỉ khi passenger hỏi)
+- **tools/audit_driver_dialogue_context.py** built — verify EP01 PASS 0 fail
+
+---
+
+## Round 23 (2026-06-30 22:30) — Process improvements catalog (R_SUPREME)
+
+Per R_SUPREME.test_process_failure_principle: every user-found bug = process failure, propose process change.
+
+### Process changes applied 30/6 (NOT just module fixes)
+
+| Mr.Long catch | Module fix | **Process change applied** |
+|---|---|---|
+| L130+L132 'kính' lặp | episode.md vary | Add adjacent-line check coverage to phrase_repetition (TODO Round 24) |
+| L480 'cái nhìn rất ngắn' | episode.md vary | R180b codify + bible/36 collocation entry + audit_vn_style.py |
+| v108 voice 'ẹ ẹ' | (no module fix per Mr.Long lock) | R181b/c + R188-R191 entire Voice QA layer + bible/15 v2.0 |
+| Outro 'Hãy nhớ rằng...' cụt | Option D edit | Outro completeness verification (TODO new test) |
+| Nhạc nền thiếu 2:38 cuối | music_loop.py invocation | music duration check mandatory in audio_pre_ship_gate (TODO Round 24) |
+| Spec out of sync episode | R192 sync tool | R192 codified + tools/sync_specs_from_episode.py + R194 SSOT roadmap (FROZEN_FOR_FUTURE Tier 2.5) |
+| 134 hardcode breakdown question | hidden_audit refined | tools/hardcode_classifier.py NEW — answer broken-by-category (0 magic_unknown) |
+| Tier 2.1 not yet validated | TIER_2_1_VALIDATION_REPORT.md | 4-gate lock workflow R_SUPREME enforced |
+
+### Workflow patterns codified
+
+| Pattern | Rule | Tool |
+|---|---|---|
+| Build → Test → Validate → Freeze → Tag → (only then) Build next | R_SUPREME | (workflow) |
+| Calibrate threshold ONLY from Golden Audio | R195 | (architecture) |
+| Every user-found bug → process change required | R_SUPREME.test_process_failure_principle | (process) |
+| Real-time progress log mandatory for long tasks | R176 | tools/cmd_progress_logger.py |
+| Spec/episode sync mandatory before render | R192 | tools/sync_specs_from_episode.py |
+| Voice Identity LOCKED + Emotion DYNAMIC | R181b | tools/voice_profile_manager.py |
+| Speaker similarity QA per chunk | R181c | tools/extract_speaker_embedding.py |
+| 5 voice artifact types tách riêng | R188-R191 + R190b | tools/qa_*.py 5 modules |
+| Hidden code audit gate | (gate 3) | tools/hidden_audit.py + tools/hardcode_classifier.py |
+| Historical bug replay gate | (gate 4) | tools/historical_bug_replay.py |
