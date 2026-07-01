@@ -38,7 +38,7 @@ FADE_HEAD_MS = 30   # keep — first word KHÔNG bị cụt
 BRIDGE_MS_DEFAULT = 600  # was 200 cố định bug 25/6 — dùng pause_after_ms từ spec
 ROOM_TONE_DB = -50  # ignore — bridge = silence pure (Mr.Long 26/6)
 LOUDNESS_TARGET = -18
-TAIL_TRIM_DB = -20  # round 19+ 29/6 02:55 REVERT to 27.6 baseline (was -28 aggressive)
+TAIL_TRIM_DB = -62  # 1/7 Boss: -75 GIU luon duoi residue/hoi tho ~-38dB -> "lup bup" vao bridge zero. -62 = bo bot residue nhung van giu release; Tang 2 fade dai 140ms don not
 
 GEN_KWARGS = {
     "do_sample": True,
@@ -103,7 +103,8 @@ def fade_head(data, sr, ms=FADE_HEAD_MS):
     samples = int(ms * sr / 1000)
     if samples <= 0 or samples >= len(data):
         return data
-    fade = np.linspace(0.0, 1.0, samples, dtype=np.float32)
+    # 1/7 Boss: raised-cosine (muot hon linear) chong pop onset dau chunk sau bridge zero
+    fade = (0.5 * (1 - np.cos(np.linspace(0, np.pi, samples)))).astype(np.float32)
     data[:samples] *= fade
     return data
 
@@ -188,6 +189,58 @@ def aggressive_trim_tail(data, sr, silence_thr_db=-40, gap_ms=300, main_run_ms=3
         out[-fade_n:] *= ramp
 
     return out
+
+
+def qa_clean_tail(data, sr, release_pad_ms=140, fade_ms=50,
+                  flatness_thr=0.35, zcr_thr=0.25, energy_floor_db=-46, win_ms=10):
+    """1/7 Boss — VOICING-based deterministic tail cleaner (thay aggressive_trim_tail).
+    Van de: BigVGAN de lai residue/hoi tho ~-37dB sau tu -> nguong dB khong tach duoc
+    (residue to ngang release). Giai phap: do word-end bang VOICING (spectral flatness +
+    zero-crossing), giu toi last-voiced + release_pad, cosine-fade fade_ms ve 0, GATE cung
+    phan residue con lai. Deterministic, khong can van tay. Tra (out, info) cho QA gate.
+    """
+    n = len(data)
+    win = max(1, int(win_ms * sr / 1000))
+    nf = n // win
+    info = {'voiced_end_s': None, 'gated_ms': 0.0, 'gated_peak_db': -99.0, 'end_db': -99.0}
+    if nf < 4:
+        return data.copy(), info
+    peak = float(np.max(np.abs(data))) + 1e-9
+    hann = np.hanning(win)
+    last_voiced = None
+    run = 0
+    min_run = 6  # 1/7 Boss: yeu cau voiced LIEN TUC >=60ms moi tinh -> loai crackle/buzz duoi roi rac ("tap am cuoi")
+    for i in range(nf):
+        seg = data[i * win:(i + 1) * win]
+        rms = np.sqrt(np.mean(seg ** 2))
+        voiced = False
+        if 20 * np.log10(rms / peak + 1e-12) >= energy_floor_db:
+            mag = np.abs(np.fft.rfft(seg * hann)) + 1e-9
+            flat = float(np.exp(np.mean(np.log(mag))) / np.mean(mag))   # spectral flatness 0..1
+            zcr = float(np.mean(np.abs(np.diff(np.sign(seg))))) / 2.0   # zero-crossing rate
+            voiced = (flat < flatness_thr and zcr < zcr_thr)            # tonal + ZCR thap = giong noi
+        if voiced:
+            run += 1
+            if run >= min_run:
+                last_voiced = i + 1
+        else:
+            run = 0
+    if last_voiced is None:
+        return data.copy(), info                                   # fallback: khong bao gio cat het
+    keep = min(n, last_voiced * win + int(release_pad_ms * sr / 1000))
+    gated = data[keep:]
+    if len(gated):
+        info['gated_ms'] = len(gated) / sr * 1000
+        info['gated_peak_db'] = float(20 * np.log10(np.max(np.abs(gated)) + 1e-9))
+    out = data[:keep].copy()
+    fn = min(len(out), int(fade_ms * sr / 1000))
+    if fn > 0:
+        ramp = (0.5 * (1 + np.cos(np.linspace(0, np.pi, fn)))).astype(np.float32)  # cosine 1->0
+        out[-fn:] *= ramp
+    info['voiced_end_s'] = last_voiced * win / sr
+    t5 = out[-max(1, int(0.005 * sr)):]
+    info['end_db'] = float(20 * np.log10(np.sqrt(np.mean(t5 ** 2)) + 1e-9))
+    return out, info
 
 
 def aggressive_trim_head(data, sr, search_ms=3000, silence_thr_db=-15):
@@ -284,6 +337,7 @@ def main():
 
     _prog.start('tts')
     stripped_chunks = []
+    _qa_reports = []
     sr_main = None
     for i, sent in enumerate(sentences):
         text = sent['text']
@@ -361,12 +415,36 @@ def main():
         # 3. fade_head 15ms (click prevention only)
         # NO fade_tail (trim_tail handles it cleanly)
         # NO zero_pad_n (last sample already = 0 after fade)
-        stripped = aggressive_trim_tail(stripped, sr, silence_thr_db=-40, gap_ms=300, main_run_ms=300, grace_ms=80)  # v55 R199
+        stripped, _qa = qa_clean_tail(stripped, sr)  # 1/7 Boss: QA voicing-based tail clean thay v55 (do word-end bang voicing, GATE residue, cosine-fade ve 0) - het "lup bup xi xi"
+        _qa_reports.append((i + 1, text[:32], _qa))
         stripped = aggressive_trim_head(stripped, sr, search_ms=200, silence_thr_db=-50)
-        stripped = fade_head(stripped, sr, ms=15)
+        stripped = fade_head(stripped, sr, ms=80)  # 1/7 Boss: 15->80ms cosine chong "xet" pop onset chunk tach ra
         print(f"   → {len(stripped)/sr:.2f}s", flush=True)
         chunk_pause = sent.get('pause_after_ms', BRIDGE_MS_DEFAULT)
         stripped_chunks.append((stripped, chunk_pause))
+
+    # 1/7 Boss: QA tail cleanliness report — generate -> QA tu dong, khong fix tay
+    _qa_fail = 0
+    print("[QA] === Tail cleanliness (voicing clean) ===", flush=True)
+    for _idx, _txt, _q in _qa_reports:
+        _end = _q['end_db']
+        _st = 'PASS' if _end < -50 else 'FAIL'
+        if _st == 'FAIL':
+            _qa_fail += 1
+        print("[QA]  ch%d end=%.0fdB v_end=%.2fs gated=%.0fms(pk %.0fdB) [%s] %s" % (
+            _idx, _end, (_q['voiced_end_s'] or 0.0), _q['gated_ms'], _q['gated_peak_db'], _txt, _st), flush=True)
+    print("[QA] %d/%d PASS" % (len(_qa_reports) - _qa_fail, len(_qa_reports)), flush=True)
+
+    # 1/7 Boss (R_SUPREME test_process_failure): QA onset-pop — chong "xet" pop dau chunk
+    # sau bridge zero (bug xuat hien khi tach nhieu chunk ngan). Nguong 0.13 (onset thuong <0.08).
+    _onset_fail = 0
+    for _k, (_chunk, _pp) in enumerate(stripped_chunks):
+        _oseg = _chunk[:int(0.03 * sr_main)]
+        _omd = float(np.max(np.abs(np.diff(_oseg)))) if len(_oseg) > 2 else 0.0
+        if _omd >= 0.13:
+            _onset_fail += 1
+            print("[QA]  onset-pop ch%d maxDiff=%.3f FAIL (>0.13)" % (_k + 1, _omd), flush=True)
+    print("[QA] onset-pop: %d/%d PASS" % (len(stripped_chunks) - _onset_fail, len(stripped_chunks)), flush=True)
 
     # Concat with VARIABLE room tone bridge (pause_after_ms từ spec)
     _prog.start('concat')

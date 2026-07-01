@@ -52,6 +52,7 @@ DIALOG_MARKERS = [
 ENDING_PHRASES = [
     'nhớ mãi', 'nhớ rất rõ', 'còn vọng', 'chưa quên', 'mãi mãi',
     'không thể nào quên', 'chưa biết', 'còn theo tôi mãi',
+    'bắt đầu',  # R4 ext (Boss duyet 1/7): intro closer dan vao truyen ("...cau chuyen bat dau")
 ]
 
 GOOD_TRANSITIONS = [

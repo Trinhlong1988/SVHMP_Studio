@@ -485,6 +485,18 @@ Per R_SUPREME.test_process_failure_principle: every user-found bug = process fai
 | 134 hardcode breakdown question | hidden_audit refined | tools/hardcode_classifier.py NEW — answer broken-by-category (0 magic_unknown) |
 | Tier 2.1 not yet validated | TIER_2_1_VALIDATION_REPORT.md | 4-gate lock workflow R_SUPREME enforced |
 
+### B37 — Intro ep_01 tail/onset artifacts (Boss 1/7)
+
+| Bug | Nguyên nhân | Fix | Test |
+|---|---|---|---|
+| Cụt chữ / hụt hơi cuối câu | threshold-trim cắt release mềm dưới ngưỡng | `qa_clean_tail` (voicing + continuity ≥60ms) thay aggressive_trim_tail; KHÔNG over-trim | R201, R202 |
+| Tạp âm cuối ("Ký" buzz) | voicing giữ window tonal lẻ tẻ của crackle | continuity: chỉ tính voiced khi liên tục ≥60ms → gate crackle rời rạc | R202 |
+| "Xẹt" onset đầu chunk | pop biên do fade ngắn sau bridge zero | `fade_head` cosine 80ms + QA onset-pop nhúng pipeline (maxDiff<0.13) | pipeline gate |
+| "Tập một" rush | chunk 2-từ dày transient | merge + ellipsis "Tập một…" (nghỉ 700ms) | — |
+
+Test process-fix (R_SUPREME): `tests/test_qa_clean_tail_r201.py` (6/6), `tests/test_intro_tail_50cases_r202.py` (50-case adversarial: hụt hơi / cụt chữ / tạp âm cuối, 50/50).
+Ghi chú: R80.peak -1.0dB do master v65 alimiter 0.85 (Mr.Long lock) — R198 cap_peak PASS, R80 advisory.
+
 ### Workflow patterns codified
 
 | Pattern | Rule | Tool |

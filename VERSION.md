@@ -515,6 +515,13 @@ Total: 143/153 PASS at last verify (2026-06-26 round 13).
 - 7-point checklist trước finalize sentence
 - 4 audit commands post-write verify
 
+### Intro ep_01 v2q — tail/onset LOCK (1/7)
+- `svhmp_v13_render.py`: `qa_clean_tail` (voicing + continuity ≥60ms), `fade_head` cosine 80ms, QA onset-pop gate, TAIL_TRIM_DB -62
+- `svhmp_preflight_qa.py`: R5 ENDING_PHRASES +'bắt đầu' (R4 ext, Boss duyệt 1/7)
+- `spec_intro_v2.json`: ch4 bỏ lặp "đều" (R3), ch7 credits + "…câu chuyện bắt đầu" (R5)
+- Tests: R199 7/7, R201 6/6, R202 50/50 PASS; FULL_TEXT_GATE PASS
+- Output `D:\SVHMP_render\ep_01\intro_FULL_v2q.wav` — Engineering Validation PASS (chờ Boss nghe = Production)
+
 ### Pending
 - 49 EPs còn nhiều R61/R62 violations (cần per-EP manual rewrite — pattern-specific)
 - 43 R58 còn (words không có safe synonym: chữ/gỗ/vẽ — need manual)

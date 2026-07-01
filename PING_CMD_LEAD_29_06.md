@@ -321,6 +321,7 @@ SAU ĐÓ FIX CHẶT CHẼ CÁC s TRƯỚC KHI REN"
 
 ---
 ## AUTO LOG (tự động cập nhật)
+- `22:57` **[FIX]** Em fix: B37 intro ep_01: qa_clean_tail voicing+continuity (cut/tap am cuoi), fade_head cosine 80ms + onset-pop gate (xet), R5 ENDING_PHRASES +bat dau; tests R201 6/6 + R202 50/50 + R199 7/7; gate PASS; v2q rendered
 - `18:42` **[INFO]** Info: Lock handle @Hacdaky.channel + SDT verified (khong luu so) vao identity doc. KHONG dung svhmp_v13_render.py (thay doi '1/7 Boss' TAIL_TRIM_DB -50/grace 150 van cho nguoi lam tu commit)
 - `18:07` **[RULE]** Rule new/update: LOCK Mo ta kenh (About) + chot gio dang 20:00 ICT (Mr.Long override bible/07 cu 21:00-22:00). Cap nhat assets/hdk_channel/youtube_channel_identity_LOCK.md + bible/07_viewer_persona.yaml cho dong bo toan du an
 - `17:49` **[RULE]** Rule new/update: LOCK YouTube channel keywords (19 tu, Mr.Long chot 1/7) -> assets/hdk_channel/youtube_channel_identity_LOCK.md. Da kiem chung kenh that + SEO 2025. Pending: handle/About/avatar/banner/xac minh SDT

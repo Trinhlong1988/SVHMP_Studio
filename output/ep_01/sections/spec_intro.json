@@ -1,0 +1,61 @@
+{
+  "sample_prompt": "assets/voice_samples/NNG_narration_sample_19062026.wav",
+  "sentences": [
+    {
+      "text": "Màn đêm đã buông xuống lặng lẽ trên thành phố. Và những điều không ai dám kể giữa đêm khuya bắt đầu thì thầm trở về.",
+      "emo_vector": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "pause_after_ms": 1200,
+      "is_dialogue": false,
+      "tempo_factor": 1.0
+    },
+    {
+      "text": "Hắc Dạ Ký, những câu chuyện tâm linh.",
+      "emo_vector": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "pause_after_ms": 1200,
+      "is_dialogue": false,
+      "tempo_factor": 1.0
+    },
+    {
+      "text": "Nơi những linh hồn còn dang dở lên tiếng, nơi mỗi bóng tối đều cất giữ một bí mật riêng tư.",
+      "emo_vector": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "pause_after_ms": 1000,
+      "is_dialogue": false,
+      "tempo_factor": 1.0
+    },
+    {
+      "text": "Tất cả những câu chuyện bạn sắp nghe đều được Hắc Dạ Ký sáng tác và thể hiện bằng chính giọng đọc của mình.",
+      "emo_vector": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "pause_after_ms": 1000,
+      "is_dialogue": false,
+      "tempo_factor": 1.0
+    },
+    {
+      "text": "Đừng chỉ lắng nghe, hãy cảm nhận từng giây từng phút.",
+      "emo_vector": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "pause_after_ms": 1200,
+      "is_dialogue": false,
+      "tempo_factor": 1.0
+    },
+    {
+      "text": "Hắc Dạ Ký — chuyện kể từ cõi vô hình.",
+      "emo_vector": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "pause_after_ms": 1500,
+      "is_dialogue": false,
+      "tempo_factor": 1.0
+    },
+    {
+      "text": "Tập một, mời các bạn nghe câu chuyện đêm nay.",
+      "emo_vector": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "pause_after_ms": 1500,
+      "is_dialogue": false,
+      "tempo_factor": 1.0
+    },
+    {
+      "text": "Một câu chuyện về những điều chưa kịp nói.",
+      "emo_vector": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "pause_after_ms": 1200,
+      "is_dialogue": false,
+      "tempo_factor": 1.0
+    }
+  ]
+}
