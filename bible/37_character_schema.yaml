@@ -1,11 +1,12 @@
 # 37_CHARACTER_SCHEMA — Character Identity System v2 (SVHMP)
 # Hop nhat: Đúng.docx (20 muc/~200 field) + phan bien.txt (3 tang) + phan bien Claude (audio-first).
-# Status: PROPOSED — cho Mr.Long LOCK (R1). Authority: Mr.Long. Lap: 2026-07-01.
+# Status: LOCKED (Boss/Mr.Long 2/7). Authority: Mr.Long. Roster DA migrate v2 (0 flag can bang).
 # Tai dung: bible/03 (recurring), bible/11 (regret), bible/12 (object), bible/13 (setting),
 #           bible/23 (naming — KHONG sinh lai ten), runtime/passenger_roster_100.yaml.
 
 meta:
-  version: 2.0-proposed
+  version: 2.0
+  status: LOCKED
   sources: [Đúng.docx, phản biện.txt, claude_critique]
   principle: |
     AUDIO-FIRST. Dự án TTS kể chuyện, KHÔNG hình → CẮT field thị giác thuần

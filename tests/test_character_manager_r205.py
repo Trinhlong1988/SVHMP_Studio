@@ -21,10 +21,10 @@ ck("naming bible/23 = 0 loi (tai dung, khong sinh)", len(reg.validate_names()) =
 d = reg.distribution()
 ck("pillar khoa 32/24/20/14/10", d['by_pillar'].get('family_regret') == 32 and d['by_pillar'].get('self_regret') == 10)
 ck("gender 50/50", d['by_gender'] == {'nu': 50, 'nam': 50}, d['by_gender'])
-ck("region_dialect CHUA set (bang chung gap)", d['by_region_dialect'].get('?') == 100)
+ck("region_dialect DA set >=3 vung (sau migrate v2)", d['by_region_dialect'].get('?', 0) == 0 and len([k for k in d['by_region_dialect'] if k != '?']) >= 3)
 
 cr = reg.completeness_report()
-ck("skeleton: completeness 0, 100 skeleton_only", cr['avg_completeness'] == 0.0 and cr['skeleton_only'] == 100)
+ck("enriched v2: completeness > 0, khong con skeleton", cr['avg_completeness'] > 0.0 and cr['skeleton_only'] < 100)
 
 # get / filter
 c0 = pas[0]

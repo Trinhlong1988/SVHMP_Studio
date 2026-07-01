@@ -1,4 +1,4 @@
-schema_version: 1
+schema_version: 2
 generated: '2026-06-27'
 generator: tools/gen_100_passenger.py
 constitution_compliance:
@@ -44,13 +44,25 @@ passengers:
   regret_label: Mẹ đợi con về Tết — con không về kịp
   signature_object: OBJ_AO_LEN_NAU
   signature_setting: setting_can_tet
-  age_range: 18-25
+  age_range: 13-17
   gender: nu
-  display_name: Hạ Diệu (18-25)
+  display_name: Hạ Diệu (13-17)
   narrative_hook: TBD by Generator
   assigned_ep: 2
-  novelty_hash: 5c28374fe4b2
-  status: framework_lock
+  novelty_hash: 73c7a1d79634
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: tai_nan
+    pain: Mẹ đợi con về Tết — con không về kịp
+  haunting_symbol: OBJ_AO_LEN_NAU
 - id: PAS_0014
   char_name: Hoàng Lâm
   pillar: family_regret
@@ -63,8 +75,20 @@ passengers:
   display_name: Hoàng Lâm (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: 3
-  novelty_hash: f898f501381f
-  status: framework_lock
+  novelty_hash: e6d9a3849465
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Nghệ An
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: benh_tat
+    pain: Mẹ đợi con về Tết — con không về kịp
+  haunting_symbol: OBJ_BANH_CHUNG_GOI_DO
 - id: PAS_0015
   char_name: Diễm Tường
   pillar: family_regret
@@ -72,13 +96,25 @@ passengers:
   regret_label: Mẹ đợi con về Tết — con không về kịp
   signature_object: OBJ_LI_XI_DO
   signature_setting: setting_can_tet
-  age_range: 36-50
+  age_range: 66+
   gender: nu
-  display_name: Diễm Tường (36-50)
+  display_name: Diễm Tường (66+)
   narrative_hook: TBD by Generator
   assigned_ep: 4
-  novelty_hash: 95ed6392b05c
-  status: framework_lock
+  novelty_hash: 3ba2542a1991
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: nam
+    hometown: Vũng Tàu
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: mat_tich
+    pain: Mẹ đợi con về Tết — con không về kịp
+  haunting_symbol: OBJ_LI_XI_DO
 - id: PAS_0016
   char_name: Tuấn Quốc
   pillar: family_regret
@@ -86,13 +122,25 @@ passengers:
   regret_label: Mẹ đợi con về Tết — con không về kịp
   signature_object: OBJ_AO_LEN_NAU
   signature_setting: setting_dem_giao_thua
-  age_range: 51-65
+  age_range: 13-17
   gender: nam
-  display_name: Tuấn Quốc (51-65)
+  display_name: Tuấn Quốc (13-17)
   narrative_hook: TBD by Generator
   assigned_ep: 5
-  novelty_hash: 96a4a3fd8bf5
-  status: framework_lock
+  novelty_hash: 728f88972704
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Bắc Ninh
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: oan_khuat
+    pain: Mẹ đợi con về Tết — con không về kịp
+  haunting_symbol: OBJ_AO_LEN_NAU
 - id: PAS_0017
   char_name: Nguyệt Hằng
   pillar: family_regret
@@ -100,13 +148,25 @@ passengers:
   regret_label: Mẹ đợi con về Tết — con không về kịp
   signature_object: OBJ_BANH_CHUNG_GOI_DO
   signature_setting: setting_can_tet
-  age_range: 66+
+  age_range: 36-50
   gender: nu
-  display_name: Nguyệt Hằng (66+)
+  display_name: Nguyệt Hằng (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 6
-  novelty_hash: d999a0d4d114
-  status: framework_lock
+  novelty_hash: 18ecc99721db
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Quảng Bình
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: tu_nhien
+    pain: Mẹ đợi con về Tết — con không về kịp
+  haunting_symbol: OBJ_BANH_CHUNG_GOI_DO
 - id: PAS_0018
   char_name: Bảo Minh
   pillar: family_regret
@@ -114,13 +174,25 @@ passengers:
   regret_label: Mẹ đợi con về Tết — con không về kịp
   signature_object: OBJ_LI_XI_DO
   signature_setting: setting_dem_giao_thua
-  age_range: 18-25
+  age_range: 66+
   gender: nam
-  display_name: Bảo Minh (18-25)
+  display_name: Bảo Minh (66+)
   narrative_hook: TBD by Generator
   assigned_ep: 7
-  novelty_hash: fe0105b57de3
-  status: framework_lock
+  novelty_hash: f1d300970f65
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: nam
+    hometown: Biên Hòa
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: hieu_lam
+    pain: Mẹ đợi con về Tết — con không về kịp
+  haunting_symbol: OBJ_LI_XI_DO
 - id: PAS_0019
   char_name: Hùng Kiệt
   pillar: family_regret
@@ -133,8 +205,20 @@ passengers:
   display_name: Hùng Kiệt (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 8
-  novelty_hash: 3545b0e213d8
-  status: framework_lock
+  novelty_hash: c1b705f72e6c
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Hải Phòng
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: hy_sinh
+    pain: Bà nội mất giao thừa — cháu không bắt máy
+  haunting_symbol: OBJ_KHAN_TAY_CU
 - id: PAS_0020
   char_name: Phượng Ngọc
   pillar: family_regret
@@ -142,13 +226,25 @@ passengers:
   regret_label: Bà nội mất giao thừa — cháu không bắt máy
   signature_object: OBJ_BANG_CASSETTE
   signature_setting: setting_dong_lanh
-  age_range: 26-35
+  age_range: 51-65
   gender: nu
-  display_name: Phượng Ngọc (26-35)
+  display_name: Phượng Ngọc (51-65)
   narrative_hook: TBD by Generator
   assigned_ep: 9
-  novelty_hash: '574579121825'
-  status: framework_lock
+  novelty_hash: ab398050e98c
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Hà Tĩnh
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: bi_phan_boi
+    pain: Bà nội mất giao thừa — cháu không bắt máy
+  haunting_symbol: OBJ_BANG_CASSETTE
 - id: PAS_0021
   char_name: Nguyên Việt
   pillar: family_regret
@@ -156,13 +252,25 @@ passengers:
   regret_label: Bà nội mất giao thừa — cháu không bắt máy
   signature_object: OBJ_KHAN_TAY_CU
   signature_setting: setting_dem_giao_thua
-  age_range: 36-50
+  age_range: ''
   gender: nam
-  display_name: Nguyên Việt (36-50)
+  display_name: Nguyên Việt (linh hồn)
   narrative_hook: TBD by Generator
   assigned_ep: 10
-  novelty_hash: c31aed3cce6f
-  status: framework_lock
+  novelty_hash: ed9ac56ce2f2
+  status: identity_v2
+  life_status: linh_hon
+  voice:
+    region_dialect: nam
+    hometown: Sài Gòn
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: khong_ro
+    pain: Bà nội mất giao thừa — cháu không bắt máy
+  haunting_symbol: OBJ_KHAN_TAY_CU
 - id: PAS_0022
   char_name: Châu Quỳnh
   pillar: family_regret
@@ -170,13 +278,25 @@ passengers:
   regret_label: Bà nội mất giao thừa — cháu không bắt máy
   signature_object: OBJ_BANG_CASSETTE
   signature_setting: setting_dong_lanh
-  age_range: 51-65
+  age_range: 26-35
   gender: nu
-  display_name: Châu Quỳnh (51-65)
+  display_name: Châu Quỳnh (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: 11
-  novelty_hash: b510c7b800fd
-  status: framework_lock
+  novelty_hash: 99fa23b005b7
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Thái Bình
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: tai_nan
+    pain: Bà nội mất giao thừa — cháu không bắt máy
+  haunting_symbol: OBJ_BANG_CASSETTE
 - id: PAS_0023
   char_name: Hữu Trí
   pillar: family_regret
@@ -184,13 +304,25 @@ passengers:
   regret_label: Bà nội mất giao thừa — cháu không bắt máy
   signature_object: OBJ_KHAN_TAY_CU
   signature_setting: setting_dem_giao_thua
-  age_range: 66+
+  age_range: 36-50
   gender: nam
-  display_name: Hữu Trí (66+)
+  display_name: Hữu Trí (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 12
-  novelty_hash: 0393d337bbcb
-  status: framework_lock
+  novelty_hash: c814230a569b
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Huế
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: benh_tat
+    pain: Bà nội mất giao thừa — cháu không bắt máy
+  haunting_symbol: OBJ_KHAN_TAY_CU
 - id: PAS_0024
   char_name: Tuyết Lan
   pillar: family_regret
@@ -198,13 +330,25 @@ passengers:
   regret_label: Bà nội mất giao thừa — cháu không bắt máy
   signature_object: OBJ_BANG_CASSETTE
   signature_setting: setting_dong_lanh
-  age_range: 18-25
+  age_range: 13-17
   gender: nu
-  display_name: Tuyết Lan (18-25)
+  display_name: Tuyết Lan (13-17)
   narrative_hook: TBD by Generator
   assigned_ep: 13
-  novelty_hash: 76b8bf4d729e
-  status: framework_lock
+  novelty_hash: 0fd3cc5217a8
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: nam
+    hometown: Hồ Chí Minh
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: mat_tich
+    pain: Bà nội mất giao thừa — cháu không bắt máy
+  haunting_symbol: OBJ_BANG_CASSETTE
 - id: PAS_0025
   char_name: Cúc Trúc
   pillar: family_regret
@@ -212,13 +356,25 @@ passengers:
   regret_label: Cha câm lặng — con không hiểu cha
   signature_object: OBJ_BUT_MAY_CHA
   signature_setting: setting_TBD
-  age_range: 18-25
+  age_range: 36-50
   gender: nu
-  display_name: Cúc Trúc (18-25)
+  display_name: Cúc Trúc (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 14
-  novelty_hash: 0ececd71cfec
-  status: framework_lock
+  novelty_hash: 56b9cdebc19b
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Nam Định
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: oan_khuat
+    pain: Cha câm lặng — con không hiểu cha
+  haunting_symbol: OBJ_BUT_MAY_CHA
 - id: PAS_0026
   char_name: Triết Vinh
   pillar: family_regret
@@ -226,13 +382,25 @@ passengers:
   regret_label: Cha câm lặng — con không hiểu cha
   signature_object: OBJ_SO_GHI_CHEP
   signature_setting: setting_TBD
-  age_range: 26-35
+  age_range: 66+
   gender: nam
-  display_name: Triết Vinh (26-35)
+  display_name: Triết Vinh (66+)
   narrative_hook: TBD by Generator
   assigned_ep: 15
-  novelty_hash: 887e916bb036
-  status: framework_lock
+  novelty_hash: 6bdf8ae88fcf
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Đà Nẵng
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: tu_nhien
+    pain: Cha câm lặng — con không hiểu cha
+  haunting_symbol: OBJ_SO_GHI_CHEP
 - id: PAS_0027
   char_name: Liễu Đào
   pillar: family_regret
@@ -240,13 +408,25 @@ passengers:
   regret_label: Cha câm lặng — con không hiểu cha
   signature_object: OBJ_BUT_MAY_CHA
   signature_setting: setting_TBD
-  age_range: 36-50
+  age_range: 18-25
   gender: nu
-  display_name: Liễu Đào (36-50)
+  display_name: Liễu Đào (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 16
-  novelty_hash: 73ef6b46c529
-  status: framework_lock
+  novelty_hash: 12ee70e3de74
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: nam
+    hometown: Vũng Tàu
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: hieu_lam
+    pain: Cha câm lặng — con không hiểu cha
+  haunting_symbol: OBJ_BUT_MAY_CHA
 - id: PAS_0028
   char_name: Phú Quý
   pillar: family_regret
@@ -259,8 +439,20 @@ passengers:
   display_name: Phú Quý (51-65)
   narrative_hook: TBD by Generator
   assigned_ep: 17
-  novelty_hash: 23251ff55cf6
-  status: framework_lock
+  novelty_hash: 5e236300b861
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: hy_sinh
+    pain: Cha câm lặng — con không hiểu cha
+  haunting_symbol: OBJ_SO_GHI_CHEP
 - id: PAS_0029
   char_name: Hồng Hạnh
   pillar: family_regret
@@ -268,13 +460,25 @@ passengers:
   regret_label: Cha câm lặng — con không hiểu cha
   signature_object: OBJ_BUT_MAY_CHA
   signature_setting: setting_TBD
-  age_range: 66+
+  age_range: ''
   gender: nu
-  display_name: Hồng Hạnh (66+)
+  display_name: Hồng Hạnh (linh hồn)
   narrative_hook: TBD by Generator
   assigned_ep: 18
-  novelty_hash: b2c5e839a989
-  status: framework_lock
+  novelty_hash: 4468b7f551a8
+  status: identity_v2
+  life_status: linh_hon
+  voice:
+    region_dialect: trung
+    hometown: Nghệ An
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: bi_phan_boi
+    pain: Cha câm lặng — con không hiểu cha
+  haunting_symbol: OBJ_BUT_MAY_CHA
 - id: PAS_0030
   char_name: Đức Phúc
   pillar: family_regret
@@ -282,13 +486,25 @@ passengers:
   regret_label: Em mất khi anh đi xa — anh không kịp về
   signature_object: OBJ_AO_DAI_TRANG
   signature_setting: setting_TBD
-  age_range: 18-25
+  age_range: 26-35
   gender: nam
-  display_name: Đức Phúc (18-25)
+  display_name: Đức Phúc (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: 19
-  novelty_hash: d455fcee3119
-  status: framework_lock
+  novelty_hash: 07550c66374a
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: nam
+    hometown: Biên Hòa
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: khong_ro
+    pain: Em mất khi anh đi xa — anh không kịp về
+  haunting_symbol: OBJ_AO_DAI_TRANG
 - id: PAS_0031
   char_name: Hiền Thuỳ
   pillar: family_regret
@@ -296,13 +512,25 @@ passengers:
   regret_label: Em mất khi anh đi xa — anh không kịp về
   signature_object: OBJ_THU_TAY
   signature_setting: setting_TBD
-  age_range: 26-35
+  age_range: 36-50
   gender: nu
-  display_name: Hiền Thuỳ (26-35)
+  display_name: Hiền Thuỳ (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 20
-  novelty_hash: 740021249ca3
-  status: framework_lock
+  novelty_hash: 041297093e47
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Bắc Ninh
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: tai_nan
+    pain: Em mất khi anh đi xa — anh không kịp về
+  haunting_symbol: OBJ_THU_TAY
 - id: PAS_0032
   char_name: Khang Huy
   pillar: family_regret
@@ -310,13 +538,25 @@ passengers:
   regret_label: Em mất khi anh đi xa — anh không kịp về
   signature_object: OBJ_AO_DAI_TRANG
   signature_setting: setting_TBD
-  age_range: 36-50
+  age_range: 13-17
   gender: nam
-  display_name: Khang Huy (36-50)
+  display_name: Khang Huy (13-17)
   narrative_hook: TBD by Generator
   assigned_ep: 21
-  novelty_hash: 9f14ef68de79
-  status: framework_lock
+  novelty_hash: 356a3104674d
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Quảng Bình
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: benh_tat
+    pain: Em mất khi anh đi xa — anh không kịp về
+  haunting_symbol: OBJ_AO_DAI_TRANG
 - id: PAS_0033
   char_name: Mỹ Nhi
   pillar: family_regret
@@ -324,13 +564,25 @@ passengers:
   regret_label: Em mất khi anh đi xa — anh không kịp về
   signature_object: OBJ_THU_TAY
   signature_setting: setting_TBD
-  age_range: 51-65
+  age_range: 36-50
   gender: nu
-  display_name: Mỹ Nhi (51-65)
+  display_name: Mỹ Nhi (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 22
-  novelty_hash: 4e7bd605cbec
-  status: framework_lock
+  novelty_hash: 0c201145173b
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: nam
+    hometown: Sài Gòn
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: mat_tich
+    pain: Em mất khi anh đi xa — anh không kịp về
+  haunting_symbol: OBJ_THU_TAY
 - id: PAS_0034
   char_name: Hải Nhật
   pillar: family_regret
@@ -343,8 +595,20 @@ passengers:
   display_name: Hải Nhật (66+)
   narrative_hook: TBD by Generator
   assigned_ep: 23
-  novelty_hash: e81a844d14aa
-  status: framework_lock
+  novelty_hash: e4ff358f2bf4
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Hải Phòng
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: oan_khuat
+    pain: Em mất khi anh đi xa — anh không kịp về
+  haunting_symbol: OBJ_AO_DAI_TRANG
 - id: PAS_0035
   char_name: Vy Vi
   pillar: family_regret
@@ -357,8 +621,20 @@ passengers:
   display_name: Vy Vi (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 24
-  novelty_hash: 9c4ea9212a91
-  status: framework_lock
+  novelty_hash: 687257e03913
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Hà Tĩnh
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: tu_nhien
+    pain: Ông mất — cháu chưa kịp xin lỗi vì cãi ông
+  haunting_symbol: OBJ_GAY_TRUC
 - id: PAS_0036
   char_name: Thành Đạt
   pillar: family_regret
@@ -366,13 +642,25 @@ passengers:
   regret_label: Ông mất — cháu chưa kịp xin lỗi vì cãi ông
   signature_object: OBJ_KINH_CU
   signature_setting: setting_TBD
-  age_range: 26-35
+  age_range: 51-65
   gender: nam
-  display_name: Thành Đạt (26-35)
+  display_name: Thành Đạt (51-65)
   narrative_hook: TBD by Generator
   assigned_ep: 25
-  novelty_hash: 6ec16e926cc4
-  status: framework_lock
+  novelty_hash: 3c4ebcc747d7
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: nam
+    hometown: Hồ Chí Minh
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: hieu_lam
+    pain: Ông mất — cháu chưa kịp xin lỗi vì cãi ông
+  haunting_symbol: OBJ_KINH_CU
 - id: PAS_0037
   char_name: Hà Như
   pillar: family_regret
@@ -380,13 +668,25 @@ passengers:
   regret_label: Ông mất — cháu chưa kịp xin lỗi vì cãi ông
   signature_object: OBJ_GAY_TRUC
   signature_setting: setting_TBD
-  age_range: 36-50
+  age_range: 66+
   gender: nu
-  display_name: Hà Như (36-50)
+  display_name: Hà Như (66+)
   narrative_hook: TBD by Generator
   assigned_ep: 26
-  novelty_hash: 3c442c862448
-  status: framework_lock
+  novelty_hash: 45c6e702b1df
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Thái Bình
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: hy_sinh
+    pain: Ông mất — cháu chưa kịp xin lỗi vì cãi ông
+  haunting_symbol: OBJ_GAY_TRUC
 - id: PAS_0038
   char_name: Trung Hiếu
   pillar: family_regret
@@ -394,13 +694,25 @@ passengers:
   regret_label: Ông mất — cháu chưa kịp xin lỗi vì cãi ông
   signature_object: OBJ_KINH_CU
   signature_setting: setting_TBD
-  age_range: 51-65
+  age_range: 26-35
   gender: nam
-  display_name: Trung Hiếu (51-65)
+  display_name: Trung Hiếu (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: 27
-  novelty_hash: af2ee3d3b634
-  status: framework_lock
+  novelty_hash: 9d2cc2d3764d
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Huế
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: bi_phan_boi
+    pain: Ông mất — cháu chưa kịp xin lỗi vì cãi ông
+  haunting_symbol: OBJ_KINH_CU
 - id: PAS_0039
   char_name: Yến Hương
   pillar: family_regret
@@ -408,13 +720,25 @@ passengers:
   regret_label: Ông mất — cháu chưa kịp xin lỗi vì cãi ông
   signature_object: OBJ_GAY_TRUC
   signature_setting: setting_TBD
-  age_range: 66+
+  age_range: 36-50
   gender: nu
-  display_name: Yến Hương (66+)
+  display_name: Yến Hương (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 28
-  novelty_hash: 93952eb9718a
-  status: framework_lock
+  novelty_hash: f43dd5a27289
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: nam
+    hometown: Vũng Tàu
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: khong_ro
+    pain: Ông mất — cháu chưa kịp xin lỗi vì cãi ông
+  haunting_symbol: OBJ_GAY_TRUC
 - id: PAS_0040
   char_name: Khoa Đăng
   pillar: family_regret
@@ -422,13 +746,25 @@ passengers:
   regret_label: Mẹ chăm con suốt đời — con quên hỏi mẹ thích gì
   signature_object: OBJ_NOI_DAT_CU
   signature_setting: setting_TBD
-  age_range: 18-25
+  age_range: ''
   gender: nam
-  display_name: Khoa Đăng (18-25)
+  display_name: Khoa Đăng (linh hồn)
   narrative_hook: TBD by Generator
   assigned_ep: 29
-  novelty_hash: 7f38efc12d86
-  status: framework_lock
+  novelty_hash: 2522b89cd03e
+  status: identity_v2
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Nam Định
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: tai_nan
+    pain: Mẹ chăm con suốt đời — con quên hỏi mẹ thích gì
+  haunting_symbol: OBJ_NOI_DAT_CU
 - id: PAS_0041
   char_name: Thảo Sương
   pillar: family_regret
@@ -436,13 +772,25 @@ passengers:
   regret_label: Mẹ chăm con suốt đời — con quên hỏi mẹ thích gì
   signature_object: OBJ_DAO_NHA_BEP
   signature_setting: setting_TBD
-  age_range: 26-35
+  age_range: 18-25
   gender: nu
-  display_name: Thảo Sương (26-35)
+  display_name: Thảo Sương (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 30
-  novelty_hash: 94f926d38473
-  status: framework_lock
+  novelty_hash: 0762826060db
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Đà Nẵng
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: benh_tat
+    pain: Mẹ chăm con suốt đời — con quên hỏi mẹ thích gì
+  haunting_symbol: OBJ_DAO_NHA_BEP
 - id: PAS_0042
   char_name: Trường Thiên
   pillar: family_regret
@@ -450,13 +798,25 @@ passengers:
   regret_label: Mẹ chăm con suốt đời — con quên hỏi mẹ thích gì
   signature_object: OBJ_NOI_DAT_CU
   signature_setting: setting_TBD
-  age_range: 36-50
+  age_range: 66+
   gender: nam
-  display_name: Trường Thiên (36-50)
+  display_name: Trường Thiên (66+)
   narrative_hook: TBD by Generator
   assigned_ep: 31
-  novelty_hash: 98ff26dbffbc
-  status: framework_lock
+  novelty_hash: 8733287932d7
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: nam
+    hometown: Biên Hòa
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: mat_tich
+    pain: Mẹ chăm con suốt đời — con quên hỏi mẹ thích gì
+  haunting_symbol: OBJ_NOI_DAT_CU
 - id: PAS_0043
   char_name: Tiên Nga
   pillar: family_regret
@@ -464,13 +824,25 @@ passengers:
   regret_label: Mẹ chăm con suốt đời — con quên hỏi mẹ thích gì
   signature_object: OBJ_DAO_NHA_BEP
   signature_setting: setting_TBD
-  age_range: 51-65
+  age_range: 13-17
   gender: nu
-  display_name: Tiên Nga (51-65)
+  display_name: Tiên Nga (13-17)
   narrative_hook: TBD by Generator
   assigned_ep: 32
-  novelty_hash: 64c5915af8d5
-  status: framework_lock
+  novelty_hash: 87be7ac6e885
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: oan_khuat
+    pain: Mẹ chăm con suốt đời — con quên hỏi mẹ thích gì
+  haunting_symbol: OBJ_DAO_NHA_BEP
 - id: PAS_0044
   char_name: Cường Sơn
   pillar: family_regret
@@ -478,13 +850,25 @@ passengers:
   regret_label: Mẹ chăm con suốt đời — con quên hỏi mẹ thích gì
   signature_object: OBJ_NOI_DAT_CU
   signature_setting: setting_TBD
-  age_range: 66+
+  age_range: 51-65
   gender: nam
-  display_name: Cường Sơn (66+)
+  display_name: Cường Sơn (51-65)
   narrative_hook: TBD by Generator
   assigned_ep: 33
-  novelty_hash: 85ec9fdad580
-  status: framework_lock
+  novelty_hash: 29f0bf9ac34a
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Nghệ An
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: tu_nhien
+    pain: Mẹ chăm con suốt đời — con quên hỏi mẹ thích gì
+  haunting_symbol: OBJ_NOI_DAT_CU
 - id: PAS_0045
   char_name: Hoa Trinh
   pillar: love_regret
@@ -492,13 +876,25 @@ passengers:
   regret_label: Yêu thầm tới lúc người ấy mất — chưa kịp tỏ tình
   signature_object: OBJ_DONG_HO_XA_CU
   signature_setting: setting_dem_thang_tu_HN
-  age_range: 18-25
+  age_range: 66+
   gender: nu
-  display_name: Hoa Trinh (18-25)
+  display_name: Hoa Trinh (66+)
   narrative_hook: TBD by Generator
   assigned_ep: 34
-  novelty_hash: 7d928019ed36
-  status: framework_lock
+  novelty_hash: 4ab30d0d4a78
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: nam
+    hometown: Sài Gòn
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: hieu_lam
+    pain: Yêu thầm tới lúc người ấy mất — chưa kịp tỏ tình
+  haunting_symbol: OBJ_DONG_HO_XA_CU
 - id: PAS_0046
   char_name: Hào Hoài
   pillar: love_regret
@@ -511,8 +907,20 @@ passengers:
   display_name: Hào Hoài (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: 35
-  novelty_hash: 9229e3d33a41
-  status: framework_lock
+  novelty_hash: 9cd466e41ecf
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Bắc Ninh
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: hy_sinh
+    pain: Yêu thầm tới lúc người ấy mất — chưa kịp tỏ tình
+  haunting_symbol: OBJ_AO_GIO_XANH
 - id: PAS_0047
   char_name: Hân Hậu
   pillar: love_regret
@@ -525,8 +933,20 @@ passengers:
   display_name: Hân Hậu (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 36
-  novelty_hash: 4a1d90270cd4
-  status: framework_lock
+  novelty_hash: 76e9dedb08a0
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Quảng Bình
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: bi_phan_boi
+    pain: Yêu thầm tới lúc người ấy mất — chưa kịp tỏ tình
+  haunting_symbol: OBJ_DONG_HO_XA_CU
 - id: PAS_0048
   char_name: Tấn Phát
   pillar: love_regret
@@ -534,13 +954,25 @@ passengers:
   regret_label: Yêu thầm tới lúc người ấy mất — chưa kịp tỏ tình
   signature_object: OBJ_AO_GIO_XANH
   signature_setting: setting_san_bay_dem
-  age_range: 51-65
+  age_range: ''
   gender: nam
-  display_name: Tấn Phát (51-65)
+  display_name: Tấn Phát (linh hồn)
   narrative_hook: TBD by Generator
   assigned_ep: 37
-  novelty_hash: e2069268baa1
-  status: framework_lock
+  novelty_hash: 40c56be22ba0
+  status: identity_v2
+  life_status: linh_hon
+  voice:
+    region_dialect: nam
+    hometown: Hồ Chí Minh
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: khong_ro
+    pain: Yêu thầm tới lúc người ấy mất — chưa kịp tỏ tình
+  haunting_symbol: OBJ_AO_GIO_XANH
 - id: PAS_0049
   char_name: Gia Khôi
   pillar: love_regret
@@ -553,8 +985,20 @@ passengers:
   display_name: Gia Khôi (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 38
-  novelty_hash: 96e7ee75d547
-  status: framework_lock
+  novelty_hash: 814a2049330c
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Hải Phòng
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: tai_nan
+    pain: Vợ trẻ mất khi sinh — chồng vắng vì công tác
+  haunting_symbol: OBJ_VONG_TAY
 - id: PAS_0050
   char_name: Khanh Trân
   pillar: love_regret
@@ -562,13 +1006,25 @@ passengers:
   regret_label: Vợ trẻ mất khi sinh — chồng vắng vì công tác
   signature_object: OBJ_QUAN_AO_TRE_SO_SINH
   signature_setting: setting_TBD
-  age_range: 26-35
+  age_range: 51-65
   gender: nu
-  display_name: Khanh Trân (26-35)
+  display_name: Khanh Trân (51-65)
   narrative_hook: TBD by Generator
   assigned_ep: 39
-  novelty_hash: 7577d63d53da
-  status: framework_lock
+  novelty_hash: 090119e4baa3
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Hà Tĩnh
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: benh_tat
+    pain: Vợ trẻ mất khi sinh — chồng vắng vì công tác
+  haunting_symbol: OBJ_QUAN_AO_TRE_SO_SINH
 - id: PAS_0051
   char_name: Dũng Anh
   pillar: love_regret
@@ -576,13 +1032,25 @@ passengers:
   regret_label: Vợ trẻ mất khi sinh — chồng vắng vì công tác
   signature_object: OBJ_VONG_TAY
   signature_setting: setting_TBD
-  age_range: 36-50
+  age_range: 13-17
   gender: nam
-  display_name: Dũng Anh (36-50)
+  display_name: Dũng Anh (13-17)
   narrative_hook: TBD by Generator
   assigned_ep: 40
-  novelty_hash: 8103cafd4633
-  status: framework_lock
+  novelty_hash: c74036ad45f8
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: nam
+    hometown: Vũng Tàu
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: mat_tich
+    pain: Vợ trẻ mất khi sinh — chồng vắng vì công tác
+  haunting_symbol: OBJ_VONG_TAY
 - id: PAS_0052
   char_name: Quyên My
   pillar: love_regret
@@ -595,8 +1063,20 @@ passengers:
   display_name: Quyên My (51-65)
   narrative_hook: TBD by Generator
   assigned_ep: 41
-  novelty_hash: 00f0e02db479
-  status: framework_lock
+  novelty_hash: 588159c22bdc
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Thái Bình
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: oan_khuat
+    pain: Vợ trẻ mất khi sinh — chồng vắng vì công tác
+  haunting_symbol: OBJ_QUAN_AO_TRE_SO_SINH
 - id: PAS_0053
   char_name: Hợp Ái
   pillar: love_regret
@@ -604,13 +1084,25 @@ passengers:
   regret_label: Chia tay vì hiểu lầm — chưa kịp xin lỗi
   signature_object: OBJ_NHAN_CUOI
   signature_setting: setting_TBD
-  age_range: 18-25
+  age_range: 66+
   gender: nu
-  display_name: Hợp Ái (18-25)
+  display_name: Hợp Ái (66+)
   narrative_hook: TBD by Generator
   assigned_ep: 42
-  novelty_hash: 559e7e7bc0ab
-  status: framework_lock
+  novelty_hash: 1acaf314e2db
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Huế
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: tu_nhien
+    pain: Chia tay vì hiểu lầm — chưa kịp xin lỗi
+  haunting_symbol: OBJ_NHAN_CUOI
 - id: PAS_0054
   char_name: Vũ Thái
   pillar: love_regret
@@ -623,8 +1115,20 @@ passengers:
   display_name: Vũ Thái (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: 43
-  novelty_hash: 22822a038c31
-  status: framework_lock
+  novelty_hash: 45f3e609e85e
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: nam
+    hometown: Biên Hòa
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: hieu_lam
+    pain: Chia tay vì hiểu lầm — chưa kịp xin lỗi
+  haunting_symbol: OBJ_THU_CHIA_TAY
 - id: PAS_0055
   char_name: Ân Ly
   pillar: love_regret
@@ -637,8 +1141,20 @@ passengers:
   display_name: Ân Ly (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 44
-  novelty_hash: 00dad6b4db17
-  status: framework_lock
+  novelty_hash: 218bdb9d2173
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Nam Định
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: hy_sinh
+    pain: Chia tay vì hiểu lầm — chưa kịp xin lỗi
+  haunting_symbol: OBJ_NHAN_CUOI
 - id: PAS_0056
   char_name: Hoà Sĩ
   pillar: love_regret
@@ -646,13 +1162,25 @@ passengers:
   regret_label: Chia tay vì hiểu lầm — chưa kịp xin lỗi
   signature_object: OBJ_THU_CHIA_TAY
   signature_setting: setting_TBD
-  age_range: 51-65
+  age_range: ''
   gender: nam
-  display_name: Hoà Sĩ (51-65)
+  display_name: Hoà Sĩ (linh hồn)
   narrative_hook: TBD by Generator
   assigned_ep: 45
-  novelty_hash: e874e000a972
-  status: framework_lock
+  novelty_hash: 070243cde00d
+  status: identity_v2
+  life_status: linh_hon
+  voice:
+    region_dialect: trung
+    hometown: Đà Nẵng
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: bi_phan_boi
+    pain: Chia tay vì hiểu lầm — chưa kịp xin lỗi
+  haunting_symbol: OBJ_THU_CHIA_TAY
 - id: PAS_0057
   char_name: Lộc Phong
   pillar: love_regret
@@ -665,8 +1193,20 @@ passengers:
   display_name: Lộc Phong (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 46
-  novelty_hash: 14fd39ac39c0
-  status: framework_lock
+  novelty_hash: d5d606d9c5dc
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: nam
+    hometown: Sài Gòn
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: khong_ro
+    pain: Yêu xa 10 năm — gặp lại thì người ấy đã có gia đình
+  haunting_symbol: OBJ_HOP_THU_CU
 - id: PAS_0058
   char_name: Liên Thư
   pillar: love_regret
@@ -674,13 +1214,25 @@ passengers:
   regret_label: Yêu xa 10 năm — gặp lại thì người ấy đã có gia đình
   signature_object: OBJ_VE_TAU_KHU_HOI
   signature_setting: setting_TBD
-  age_range: 26-35
+  age_range: 51-65
   gender: nu
-  display_name: Liên Thư (26-35)
+  display_name: Liên Thư (51-65)
   narrative_hook: TBD by Generator
   assigned_ep: 47
-  novelty_hash: af86de31191f
-  status: framework_lock
+  novelty_hash: eb38c8c9a9a7
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: tai_nan
+    pain: Yêu xa 10 năm — gặp lại thì người ấy đã có gia đình
+  haunting_symbol: OBJ_VE_TAU_KHU_HOI
 - id: PAS_0059
   char_name: Bá Nhân
   pillar: love_regret
@@ -688,13 +1240,25 @@ passengers:
   regret_label: Yêu xa 10 năm — gặp lại thì người ấy đã có gia đình
   signature_object: OBJ_HOP_THU_CU
   signature_setting: setting_TBD
-  age_range: 36-50
+  age_range: 13-17
   gender: nam
-  display_name: Bá Nhân (36-50)
+  display_name: Bá Nhân (13-17)
   narrative_hook: TBD by Generator
   assigned_ep: 48
-  novelty_hash: 8c7754f2997b
-  status: framework_lock
+  novelty_hash: 9596380ab223
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Nghệ An
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: benh_tat
+    pain: Yêu xa 10 năm — gặp lại thì người ấy đã có gia đình
+  haunting_symbol: OBJ_HOP_THU_CU
 - id: PAS_0060
   char_name: Yên Thy
   pillar: love_regret
@@ -702,13 +1266,25 @@ passengers:
   regret_label: Yêu xa 10 năm — gặp lại thì người ấy đã có gia đình
   signature_object: OBJ_VE_TAU_KHU_HOI
   signature_setting: setting_TBD
-  age_range: 51-65
+  age_range: 26-35
   gender: nu
-  display_name: Yên Thy (51-65)
+  display_name: Yên Thy (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: 49
-  novelty_hash: 4f6725a6f287
-  status: framework_lock
+  novelty_hash: c38ab57ac3f2
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: nam
+    hometown: Hồ Chí Minh
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: mat_tich
+    pain: Yêu xa 10 năm — gặp lại thì người ấy đã có gia đình
+  haunting_symbol: OBJ_VE_TAU_KHU_HOI
 - id: PAS_0061
   char_name: Khả Thanh
   pillar: love_regret
@@ -716,13 +1292,25 @@ passengers:
   regret_label: Chồng già mất — vợ tiếc chưa nói 'cảm ơn'
   signature_object: OBJ_AO_LEN_NAU
   signature_setting: setting_TBD
-  age_range: 18-25
+  age_range: 66+
   gender: nu
-  display_name: Khả Thanh (18-25)
+  display_name: Khả Thanh (66+)
   narrative_hook: TBD by Generator
   assigned_ep: 50
-  novelty_hash: 2d54f548fdee
-  status: framework_lock
+  novelty_hash: 47b844486309
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Bắc Ninh
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: oan_khuat
+    pain: Chồng già mất — vợ tiếc chưa nói 'cảm ơn'
+  haunting_symbol: OBJ_AO_LEN_NAU
 - id: PAS_0062
   char_name: Khải Toàn
   pillar: love_regret
@@ -735,8 +1323,20 @@ passengers:
   display_name: Khải Toàn (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: 51
-  novelty_hash: 591489bf23b0
-  status: framework_lock
+  novelty_hash: 9448886fcb0a
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Quảng Bình
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: tu_nhien
+    pain: Chồng già mất — vợ tiếc chưa nói 'cảm ơn'
+  haunting_symbol: OBJ_KINH_LAO
 - id: PAS_0063
   char_name: Cẩm Bích
   pillar: love_regret
@@ -749,8 +1349,20 @@ passengers:
   display_name: Cẩm Bích (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 52
-  novelty_hash: b2b63991abef
-  status: framework_lock
+  novelty_hash: 377323c07267
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: nam
+    hometown: Vũng Tàu
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: hieu_lam
+    pain: Chồng già mất — vợ tiếc chưa nói 'cảm ơn'
+  haunting_symbol: OBJ_AO_LEN_NAU
 - id: PAS_0064
   char_name: Định Sang
   pillar: love_regret
@@ -758,13 +1370,25 @@ passengers:
   regret_label: Chồng già mất — vợ tiếc chưa nói 'cảm ơn'
   signature_object: OBJ_KINH_LAO
   signature_setting: setting_TBD
-  age_range: 51-65
+  age_range: 66+
   gender: nam
-  display_name: Định Sang (51-65)
+  display_name: Định Sang (66+)
   narrative_hook: TBD by Generator
   assigned_ep: 53
-  novelty_hash: 35e538144215
-  status: framework_lock
+  novelty_hash: d9a4b0b3574c
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Hải Phòng
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: hy_sinh
+    pain: Chồng già mất — vợ tiếc chưa nói 'cảm ơn'
+  haunting_symbol: OBJ_KINH_LAO
 - id: PAS_0065
   char_name: Tín Đông
   pillar: love_regret
@@ -777,8 +1401,20 @@ passengers:
   display_name: Tín Đông (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 54
-  novelty_hash: 6c2e29c5d83f
-  status: framework_lock
+  novelty_hash: 4a75cd288fe6
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Hà Tĩnh
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: bi_phan_boi
+    pain: Yêu xa thư tay — cô gái mất trước khi anh đọc thư cuối
+  haunting_symbol: OBJ_THU_TAY
 - id: PAS_0066
   char_name: Kim Ngân
   pillar: love_regret
@@ -786,13 +1422,25 @@ passengers:
   regret_label: Yêu xa thư tay — cô gái mất trước khi anh đọc thư cuối
   signature_object: OBJ_HOP_THU_CU
   signature_setting: setting_TBD
-  age_range: 26-35
+  age_range: 51-65
   gender: nu
-  display_name: Kim Ngân (26-35)
+  display_name: Kim Ngân (51-65)
   narrative_hook: TBD by Generator
   assigned_ep: 55
-  novelty_hash: 6c23c7144818
-  status: framework_lock
+  novelty_hash: 4479e6a7ceb7
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: nam
+    hometown: Biên Hòa
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: khong_ro
+    pain: Yêu xa thư tay — cô gái mất trước khi anh đọc thư cuối
+  haunting_symbol: OBJ_HOP_THU_CU
 - id: PAS_0067
   char_name: Văn Triệu
   pillar: love_regret
@@ -800,13 +1448,25 @@ passengers:
   regret_label: Yêu xa thư tay — cô gái mất trước khi anh đọc thư cuối
   signature_object: OBJ_THU_TAY
   signature_setting: setting_TBD
-  age_range: 36-50
+  age_range: ''
   gender: nam
-  display_name: Văn Triệu (36-50)
+  display_name: Văn Triệu (linh hồn)
   narrative_hook: TBD by Generator
   assigned_ep: 56
-  novelty_hash: c83ac021228f
-  status: framework_lock
+  novelty_hash: 743607bf7f6c
+  status: identity_v2
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Thái Bình
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: tai_nan
+    pain: Yêu xa thư tay — cô gái mất trước khi anh đọc thư cuối
+  haunting_symbol: OBJ_THU_TAY
 - id: PAS_0068
   char_name: Quân Tịnh
   pillar: love_regret
@@ -814,13 +1474,25 @@ passengers:
   regret_label: Yêu xa thư tay — cô gái mất trước khi anh đọc thư cuối
   signature_object: OBJ_HOP_THU_CU
   signature_setting: setting_TBD
-  age_range: 51-65
+  age_range: 26-35
   gender: nu
-  display_name: Quân Tịnh (51-65)
+  display_name: Quân Tịnh (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: 57
-  novelty_hash: e2a3bcb2d2f9
-  status: framework_lock
+  novelty_hash: 5fc9bc50a2ca
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Huế
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: benh_tat
+    pain: Yêu xa thư tay — cô gái mất trước khi anh đọc thư cuối
+  haunting_symbol: OBJ_HOP_THU_CU
 - id: PAS_0069
   char_name: Quế Vân
   pillar: promise_regret
@@ -828,13 +1500,25 @@ passengers:
   regret_label: Hứa đưa con đi công viên — không kịp
   signature_object: OBJ_VE_CONG_VIEN
   signature_setting: setting_TBD
-  age_range: 18-25
+  age_range: 36-50
   gender: nu
-  display_name: Quế Vân (18-25)
+  display_name: Quế Vân (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 58
-  novelty_hash: dcf663388041
-  status: framework_lock
+  novelty_hash: 740792f10bcf
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: nam
+    hometown: Sài Gòn
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: mat_tich
+    pain: Hứa đưa con đi công viên — không kịp
+  haunting_symbol: OBJ_VE_CONG_VIEN
 - id: PAS_0070
   char_name: Thắng Mẫn
   pillar: promise_regret
@@ -842,13 +1526,25 @@ passengers:
   regret_label: Hứa đưa con đi công viên — không kịp
   signature_object: OBJ_GAU_BONG
   signature_setting: setting_TBD
-  age_range: 26-35
+  age_range: 13-17
   gender: nam
-  display_name: Thắng Mẫn (26-35)
+  display_name: Thắng Mẫn (13-17)
   narrative_hook: TBD by Generator
   assigned_ep: 59
-  novelty_hash: 6514aa17a1bd
-  status: framework_lock
+  novelty_hash: 9352be8dd33e
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Nam Định
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: oan_khuat
+    pain: Hứa đưa con đi công viên — không kịp
+  haunting_symbol: OBJ_GAU_BONG
 - id: PAS_0071
   char_name: Đan Phụng
   pillar: promise_regret
@@ -861,8 +1557,20 @@ passengers:
   display_name: Đan Phụng (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 60
-  novelty_hash: b09e715968e9
-  status: framework_lock
+  novelty_hash: 0d4d23ea6cf0
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Đà Nẵng
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: tu_nhien
+    pain: Hứa đưa con đi công viên — không kịp
+  haunting_symbol: OBJ_VE_CONG_VIEN
 - id: PAS_0072
   char_name: Cảnh Bình
   pillar: promise_regret
@@ -870,13 +1578,25 @@ passengers:
   regret_label: Hứa đưa con đi công viên — không kịp
   signature_object: OBJ_GAU_BONG
   signature_setting: setting_TBD
-  age_range: 51-65
+  age_range: 66+
   gender: nam
-  display_name: Cảnh Bình (51-65)
+  display_name: Cảnh Bình (66+)
   narrative_hook: TBD by Generator
   assigned_ep: 61
-  novelty_hash: 236165d43607
-  status: framework_lock
+  novelty_hash: 6a28e7fd0dbb
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: nam
+    hometown: Hồ Chí Minh
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: hieu_lam
+    pain: Hứa đưa con đi công viên — không kịp
+  haunting_symbol: OBJ_GAU_BONG
 - id: PAS_0073
   char_name: Tâm Bằng
   pillar: promise_regret
@@ -889,8 +1609,20 @@ passengers:
   display_name: Tâm Bằng (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 62
-  novelty_hash: 0c7e6aa18e3c
-  status: framework_lock
+  novelty_hash: 137fb7f5b58c
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: hy_sinh
+    pain: Hứa về ăn Tết với mẹ — không về
+  haunting_symbol: OBJ_BANH_CHUNG_GOI_DO
 - id: PAS_0074
   char_name: Ánh Thuý
   pillar: promise_regret
@@ -898,13 +1630,25 @@ passengers:
   regret_label: Hứa về ăn Tết với mẹ — không về
   signature_object: OBJ_THU_TAY
   signature_setting: setting_can_tet
-  age_range: 26-35
+  age_range: 51-65
   gender: nu
-  display_name: Ánh Thuý (26-35)
+  display_name: Ánh Thuý (51-65)
   narrative_hook: TBD by Generator
   assigned_ep: 63
-  novelty_hash: 659a0ba6e054
-  status: framework_lock
+  novelty_hash: 6a58d50618e2
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Nghệ An
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: bi_phan_boi
+    pain: Hứa về ăn Tết với mẹ — không về
+  haunting_symbol: OBJ_THU_TAY
 - id: PAS_0075
   char_name: Hoàn Liêm
   pillar: promise_regret
@@ -912,13 +1656,25 @@ passengers:
   regret_label: Hứa về ăn Tết với mẹ — không về
   signature_object: OBJ_BANH_CHUNG_GOI_DO
   signature_setting: setting_can_tet
-  age_range: 36-50
+  age_range: ''
   gender: nam
-  display_name: Hoàn Liêm (36-50)
+  display_name: Hoàn Liêm (linh hồn)
   narrative_hook: TBD by Generator
   assigned_ep: 64
-  novelty_hash: d1612da1322f
-  status: framework_lock
+  novelty_hash: 97c687fe8cb9
+  status: identity_v2
+  life_status: linh_hon
+  voice:
+    region_dialect: nam
+    hometown: Vũng Tàu
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: khong_ro
+    pain: Hứa về ăn Tết với mẹ — không về
+  haunting_symbol: OBJ_BANH_CHUNG_GOI_DO
 - id: PAS_0076
   char_name: Trà Thu
   pillar: promise_regret
@@ -926,13 +1682,25 @@ passengers:
   regret_label: Hứa về ăn Tết với mẹ — không về
   signature_object: OBJ_THU_TAY
   signature_setting: setting_can_tet
-  age_range: 51-65
+  age_range: 26-35
   gender: nu
-  display_name: Trà Thu (51-65)
+  display_name: Trà Thu (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: 65
-  novelty_hash: b17a80456587
-  status: framework_lock
+  novelty_hash: d9afcfc42222
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Bắc Ninh
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: tai_nan
+    pain: Hứa về ăn Tết với mẹ — không về
+  haunting_symbol: OBJ_THU_TAY
 - id: PAS_0077
   char_name: Loan Giang
   pillar: promise_regret
@@ -940,13 +1708,25 @@ passengers:
   regret_label: Hứa cưới — đến ngày không tới được
   signature_object: OBJ_NHAN_CUOI
   signature_setting: setting_TBD
-  age_range: 18-25
+  age_range: 36-50
   gender: nu
-  display_name: Loan Giang (18-25)
+  display_name: Loan Giang (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 66
-  novelty_hash: 144172cc5a4f
-  status: framework_lock
+  novelty_hash: 794362b8a43c
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Quảng Bình
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: benh_tat
+    pain: Hứa cưới — đến ngày không tới được
+  haunting_symbol: OBJ_NHAN_CUOI
 - id: PAS_0078
   char_name: Đỉnh Pháp
   pillar: promise_regret
@@ -954,13 +1734,25 @@ passengers:
   regret_label: Hứa cưới — đến ngày không tới được
   signature_object: OBJ_VAY_CUOI_TRANG
   signature_setting: setting_TBD
-  age_range: 26-35
+  age_range: 13-17
   gender: nam
-  display_name: Đỉnh Pháp (26-35)
+  display_name: Đỉnh Pháp (13-17)
   narrative_hook: TBD by Generator
   assigned_ep: 67
-  novelty_hash: 8ccf6d090597
-  status: framework_lock
+  novelty_hash: 5d06a900c6ce
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: nam
+    hometown: Biên Hòa
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: mat_tich
+    pain: Hứa cưới — đến ngày không tới được
+  haunting_symbol: OBJ_VAY_CUOI_TRANG
 - id: PAS_0079
   char_name: Lam Mộc
   pillar: promise_regret
@@ -973,8 +1765,20 @@ passengers:
   display_name: Lam Mộc (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 68
-  novelty_hash: c41c5196b4fc
-  status: framework_lock
+  novelty_hash: 584a367a1a96
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Hải Phòng
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: oan_khuat
+    pain: Hứa cưới — đến ngày không tới được
+  haunting_symbol: OBJ_NHAN_CUOI
 - id: PAS_0080
   char_name: Tỉnh Đoàn
   pillar: promise_regret
@@ -982,13 +1786,25 @@ passengers:
   regret_label: Hứa thăm ông bà cuối tuần — quên
   signature_object: OBJ_KINH_LAO
   signature_setting: setting_TBD
-  age_range: 18-25
+  age_range: 66+
   gender: nam
-  display_name: Tỉnh Đoàn (18-25)
+  display_name: Tỉnh Đoàn (66+)
   narrative_hook: TBD by Generator
   assigned_ep: 69
-  novelty_hash: 2cc252084b35
-  status: framework_lock
+  novelty_hash: fb1b789a6fc0
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Hà Tĩnh
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: tu_nhien
+    pain: Hứa thăm ông bà cuối tuần — quên
+  haunting_symbol: OBJ_KINH_LAO
 - id: PAS_0081
   char_name: Băng Chi
   pillar: promise_regret
@@ -996,13 +1812,25 @@ passengers:
   regret_label: Hứa thăm ông bà cuối tuần — quên
   signature_object: OBJ_RADIO_CU
   signature_setting: setting_TBD
-  age_range: 26-35
+  age_range: 18-25
   gender: nu
-  display_name: Băng Chi (26-35)
+  display_name: Băng Chi (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 70
-  novelty_hash: 7bc0842288a7
-  status: framework_lock
+  novelty_hash: fa6fb6be6206
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: nam
+    hometown: Sài Gòn
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: hieu_lam
+    pain: Hứa thăm ông bà cuối tuần — quên
+  haunting_symbol: OBJ_RADIO_CU
 - id: PAS_0082
   char_name: Cát Bính
   pillar: promise_regret
@@ -1010,13 +1838,25 @@ passengers:
   regret_label: Hứa thăm ông bà cuối tuần — quên
   signature_object: OBJ_KINH_LAO
   signature_setting: setting_TBD
-  age_range: 36-50
+  age_range: 51-65
   gender: nam
-  display_name: Cát Bính (36-50)
+  display_name: Cát Bính (51-65)
   narrative_hook: TBD by Generator
   assigned_ep: 71
-  novelty_hash: 2583128df1a4
-  status: framework_lock
+  novelty_hash: b93a4644d594
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Thái Bình
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: hy_sinh
+    pain: Hứa thăm ông bà cuối tuần — quên
+  haunting_symbol: OBJ_KINH_LAO
 - id: PAS_0083
   char_name: Khiết Dung
   pillar: promise_regret
@@ -1024,13 +1864,25 @@ passengers:
   regret_label: Hứa đưa mẹ đi khám sức khỏe — quên 6 tháng
   signature_object: OBJ_TOA_THUOC_CU
   signature_setting: setting_TBD
-  age_range: 18-25
+  age_range: ''
   gender: nu
-  display_name: Khiết Dung (18-25)
+  display_name: Khiết Dung (linh hồn)
   narrative_hook: TBD by Generator
   assigned_ep: 72
-  novelty_hash: 9b8a62a84d3f
-  status: framework_lock
+  novelty_hash: aa556b4ff11d
+  status: identity_v2
+  life_status: linh_hon
+  voice:
+    region_dialect: trung
+    hometown: Huế
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: bi_phan_boi
+    pain: Hứa đưa mẹ đi khám sức khỏe — quên 6 tháng
+  haunting_symbol: OBJ_TOA_THUOC_CU
 - id: PAS_0084
   char_name: Mạnh Đạo
   pillar: promise_regret
@@ -1043,8 +1895,20 @@ passengers:
   display_name: Mạnh Đạo (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: 74
-  novelty_hash: cef240a29b0b
-  status: framework_lock
+  novelty_hash: e7f58ae36e0a
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: nam
+    hometown: Hồ Chí Minh
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: khong_ro
+    pain: Hứa đưa mẹ đi khám sức khỏe — quên 6 tháng
+  haunting_symbol: OBJ_THE_BHYT_HET_HAN
 - id: PAS_0085
   char_name: Hiên Thiền
   pillar: promise_regret
@@ -1057,8 +1921,20 @@ passengers:
   display_name: Hiên Thiền (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 75
-  novelty_hash: 67a9fcdfbbfe
-  status: framework_lock
+  novelty_hash: f93fd682e8b7
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Nam Định
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: tai_nan
+    pain: Hứa đưa mẹ đi khám sức khỏe — quên 6 tháng
+  haunting_symbol: OBJ_TOA_THUOC_CU
 - id: PAS_0086
   char_name: Sinh Tự
   pillar: promise_regret
@@ -1066,13 +1942,25 @@ passengers:
   regret_label: Hứa giữ liên lạc — 5 năm không gọi 1 lần
   signature_object: OBJ_HOP_THU_CU
   signature_setting: setting_TBD
-  age_range: 18-25
+  age_range: 13-17
   gender: nam
-  display_name: Sinh Tự (18-25)
+  display_name: Sinh Tự (13-17)
   narrative_hook: TBD by Generator
   assigned_ep: 76
-  novelty_hash: 9ef92914eb02
-  status: framework_lock
+  novelty_hash: e3177a569b34
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Đà Nẵng
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: benh_tat
+    pain: Hứa giữ liên lạc — 5 năm không gọi 1 lần
+  haunting_symbol: OBJ_HOP_THU_CU
 - id: PAS_0087
   char_name: Tuệ Lệ
   pillar: promise_regret
@@ -1080,13 +1968,25 @@ passengers:
   regret_label: Hứa giữ liên lạc — 5 năm không gọi 1 lần
   signature_object: OBJ_DANH_BA_GHI_TAY
   signature_setting: setting_TBD
-  age_range: 26-35
+  age_range: 18-25
   gender: nu
-  display_name: Tuệ Lệ (26-35)
+  display_name: Tuệ Lệ (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 77
-  novelty_hash: 3a7ace1f9ef1
-  status: framework_lock
+  novelty_hash: aa2bb32adfc3
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: nam
+    hometown: Vũng Tàu
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: mat_tich
+    pain: Hứa giữ liên lạc — 5 năm không gọi 1 lần
+  haunting_symbol: OBJ_DANH_BA_GHI_TAY
 - id: PAS_0088
   char_name: Quan Phục
   pillar: promise_regret
@@ -1094,13 +1994,25 @@ passengers:
   regret_label: Hứa giữ liên lạc — 5 năm không gọi 1 lần
   signature_object: OBJ_HOP_THU_CU
   signature_setting: setting_TBD
-  age_range: 36-50
+  age_range: 66+
   gender: nam
-  display_name: Quan Phục (36-50)
+  display_name: Quan Phục (66+)
   narrative_hook: TBD by Generator
   assigned_ep: 78
-  novelty_hash: 5678bb6e971d
-  status: framework_lock
+  novelty_hash: 093a08d0b72f
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: oan_khuat
+    pain: Hứa giữ liên lạc — 5 năm không gọi 1 lần
+  haunting_symbol: OBJ_HOP_THU_CU
 - id: PAS_0089
   char_name: Nương Sa
   pillar: kindness_regret
@@ -1113,8 +2025,20 @@ passengers:
   display_name: Nương Sa (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 79
-  novelty_hash: ba899ce79927
-  status: framework_lock
+  novelty_hash: c458823d9a2a
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Nghệ An
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: tu_nhien
+    pain: Cô giáo cũ mất — chưa kịp đến thăm
+  haunting_symbol: OBJ_PHAN_TRANG
 - id: PAS_0090
   char_name: Vĩnh Thịnh
   pillar: kindness_regret
@@ -1122,13 +2046,25 @@ passengers:
   regret_label: Cô giáo cũ mất — chưa kịp đến thăm
   signature_object: OBJ_QUYEN_SACH_GIAO_KHOA_CU
   signature_setting: setting_TBD
-  age_range: 26-35
+  age_range: 51-65
   gender: nam
-  display_name: Vĩnh Thịnh (26-35)
+  display_name: Vĩnh Thịnh (51-65)
   narrative_hook: TBD by Generator
   assigned_ep: 80
-  novelty_hash: 6f1b3d9f0154
-  status: framework_lock
+  novelty_hash: a70b40de0b9a
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: nam
+    hometown: Biên Hòa
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: hieu_lam
+    pain: Cô giáo cũ mất — chưa kịp đến thăm
+  haunting_symbol: OBJ_QUYEN_SACH_GIAO_KHOA_CU
 - id: PAS_0091
   char_name: Vịnh Sao
   pillar: kindness_regret
@@ -1136,13 +2072,25 @@ passengers:
   regret_label: Cô giáo cũ mất — chưa kịp đến thăm
   signature_object: OBJ_PHAN_TRANG
   signature_setting: setting_TBD
-  age_range: 36-50
+  age_range: 66+
   gender: nu
-  display_name: Vịnh Sao (36-50)
+  display_name: Vịnh Sao (66+)
   narrative_hook: TBD by Generator
   assigned_ep: 81
-  novelty_hash: 3049b1029c5c
-  status: framework_lock
+  novelty_hash: 20dc5278ae04
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Bắc Ninh
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: hy_sinh
+    pain: Cô giáo cũ mất — chưa kịp đến thăm
+  haunting_symbol: OBJ_PHAN_TRANG
 - id: PAS_0092
   char_name: Đại Nghĩa
   pillar: kindness_regret
@@ -1150,13 +2098,25 @@ passengers:
   regret_label: Bà bán nước cho mình ngồi nhờ đêm mưa — không kịp cảm ơn
   signature_object: OBJ_AM_TRA_NHOM
   signature_setting: setting_TBD
-  age_range: 18-25
+  age_range: 26-35
   gender: nam
-  display_name: Đại Nghĩa (18-25)
+  display_name: Đại Nghĩa (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: 82
-  novelty_hash: a46a071905f2
-  status: framework_lock
+  novelty_hash: 5984eda5776b
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Quảng Bình
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: bi_phan_boi
+    pain: Bà bán nước cho mình ngồi nhờ đêm mưa — không kịp cảm ơn
+  haunting_symbol: OBJ_AM_TRA_NHOM
 - id: PAS_0093
   char_name: Hỷ Nhuệ
   pillar: kindness_regret
@@ -1164,13 +2124,25 @@ passengers:
   regret_label: Bà bán nước cho mình ngồi nhờ đêm mưa — không kịp cảm ơn
   signature_object: OBJ_GHE_DAU
   signature_setting: setting_TBD
-  age_range: 26-35
+  age_range: 36-50
   gender: nu
-  display_name: Hỷ Nhuệ (26-35)
+  display_name: Hỷ Nhuệ (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: 83
-  novelty_hash: 5e587a6bd40a
-  status: framework_lock
+  novelty_hash: e3cb75314a4c
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: nam
+    hometown: Sài Gòn
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: khong_ro
+    pain: Bà bán nước cho mình ngồi nhờ đêm mưa — không kịp cảm ơn
+  haunting_symbol: OBJ_GHE_DAU
 - id: PAS_0094
   char_name: Lực Thiết
   pillar: kindness_regret
@@ -1178,13 +2150,25 @@ passengers:
   regret_label: Bà bán nước cho mình ngồi nhờ đêm mưa — không kịp cảm ơn
   signature_object: OBJ_AM_TRA_NHOM
   signature_setting: setting_TBD
-  age_range: 36-50
+  age_range: ''
   gender: nam
-  display_name: Lực Thiết (36-50)
+  display_name: Lực Thiết (linh hồn)
   narrative_hook: TBD by Generator
   assigned_ep: 84
-  novelty_hash: e962f4d0dc6b
-  status: framework_lock
+  novelty_hash: 5bbc6eda80df
+  status: identity_v2
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Hải Phòng
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: tai_nan
+    pain: Bà bán nước cho mình ngồi nhờ đêm mưa — không kịp cảm ơn
+  haunting_symbol: OBJ_AM_TRA_NHOM
 - id: PAS_0095
   char_name: Thoa Lý
   pillar: kindness_regret
@@ -1197,8 +2181,20 @@ passengers:
   display_name: Thoa Lý (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: 85
-  novelty_hash: de74c95c9f9d
-  status: framework_lock
+  novelty_hash: c48af0d45861
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Hà Tĩnh
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: benh_tat
+    pain: Đồng nghiệp giúp mình lúc khó — chưa kịp trả ơn thì họ chuyển
+  haunting_symbol: OBJ_HOP_QUA_CHUA_TANG
 - id: PAS_0096
   char_name: Tây Kha
   pillar: kindness_regret
@@ -1206,13 +2202,25 @@ passengers:
   regret_label: Đồng nghiệp giúp mình lúc khó — chưa kịp trả ơn thì họ chuyển
   signature_object: OBJ_THE_NHAN_VIEN
   signature_setting: setting_TBD
-  age_range: 26-35
+  age_range: 51-65
   gender: nam
-  display_name: Tây Kha (26-35)
+  display_name: Tây Kha (51-65)
   narrative_hook: TBD by Generator
   assigned_ep: 86
-  novelty_hash: a430df5527e7
-  status: framework_lock
+  novelty_hash: 4df3cd0b8506
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: nam
+    hometown: Hồ Chí Minh
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: mat_tich
+    pain: Đồng nghiệp giúp mình lúc khó — chưa kịp trả ơn thì họ chuyển
+  haunting_symbol: OBJ_THE_NHAN_VIEN
 - id: PAS_0097
   char_name: Mây Nắng
   pillar: kindness_regret
@@ -1220,13 +2228,25 @@ passengers:
   regret_label: Đồng nghiệp giúp mình lúc khó — chưa kịp trả ơn thì họ chuyển
   signature_object: OBJ_HOP_QUA_CHUA_TANG
   signature_setting: setting_TBD
-  age_range: 36-50
+  age_range: 13-17
   gender: nu
-  display_name: Mây Nắng (36-50)
+  display_name: Mây Nắng (13-17)
   narrative_hook: TBD by Generator
   assigned_ep: 87
-  novelty_hash: 55ef9bca4487
-  status: framework_lock
+  novelty_hash: 3aa0d87a2816
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Thái Bình
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: oan_khuat
+    pain: Đồng nghiệp giúp mình lúc khó — chưa kịp trả ơn thì họ chuyển
+  haunting_symbol: OBJ_HOP_QUA_CHUA_TANG
 - id: PAS_0098
   char_name: Huỳnh Cao
   pillar: kindness_regret
@@ -1234,13 +2254,25 @@ passengers:
   regret_label: Bác xe ôm 10 năm chở đi học — chưa lần cảm ơn
   signature_object: OBJ_NON_BAO_HIEM_CU
   signature_setting: setting_TBD
-  age_range: 18-25
+  age_range: 51-65
   gender: nam
-  display_name: Huỳnh Cao (18-25)
+  display_name: Huỳnh Cao (51-65)
   narrative_hook: TBD by Generator
   assigned_ep: 88
-  novelty_hash: 4e1ba9ce692e
-  status: framework_lock
+  novelty_hash: a5301c569f9e
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Huế
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: tu_nhien
+    pain: Bác xe ôm 10 năm chở đi học — chưa lần cảm ơn
+  haunting_symbol: OBJ_NON_BAO_HIEM_CU
 - id: PAS_0099
   char_name: Thi Ninh
   pillar: kindness_regret
@@ -1248,13 +2280,25 @@ passengers:
   regret_label: Bác xe ôm 10 năm chở đi học — chưa lần cảm ơn
   signature_object: OBJ_TIEN_LE_GIAY
   signature_setting: setting_TBD
-  age_range: 26-35
+  age_range: 66+
   gender: nu
-  display_name: Thi Ninh (26-35)
+  display_name: Thi Ninh (66+)
   narrative_hook: TBD by Generator
   assigned_ep: 89
-  novelty_hash: 0e875bebf8cd
-  status: framework_lock
+  novelty_hash: 902c4a5dc45d
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: nam
+    hometown: Vũng Tàu
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: hieu_lam
+    pain: Bác xe ôm 10 năm chở đi học — chưa lần cảm ơn
+  haunting_symbol: OBJ_TIEN_LE_GIAY
 - id: PAS_0100
   char_name: Trọng Lễ
   pillar: kindness_regret
@@ -1262,13 +2306,25 @@ passengers:
   regret_label: Bác xe ôm 10 năm chở đi học — chưa lần cảm ơn
   signature_object: OBJ_NON_BAO_HIEM_CU
   signature_setting: setting_TBD
-  age_range: 36-50
+  age_range: 26-35
   gender: nam
-  display_name: Trọng Lễ (36-50)
+  display_name: Trọng Lễ (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: null
-  novelty_hash: b7670a3840b1
-  status: framework_lock
+  novelty_hash: 799ea6c9f371
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Nam Định
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: hy_sinh
+    pain: Bác xe ôm 10 năm chở đi học — chưa lần cảm ơn
+  haunting_symbol: OBJ_NON_BAO_HIEM_CU
 - id: PAS_0101
   char_name: Phi Tô
   pillar: kindness_regret
@@ -1276,13 +2332,25 @@ passengers:
   regret_label: Người lạ giúp lúc lạc đường — chưa kịp hỏi tên
   signature_object: OBJ_AO_MUA_CU
   signature_setting: setting_TBD
-  age_range: 18-25
+  age_range: 36-50
   gender: nu
-  display_name: Phi Tô (18-25)
+  display_name: Phi Tô (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: null
-  novelty_hash: 60abbe943ff0
-  status: framework_lock
+  novelty_hash: cd435fa4d461
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Đà Nẵng
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: bi_phan_boi
+    pain: Người lạ giúp lúc lạc đường — chưa kịp hỏi tên
+  haunting_symbol: OBJ_AO_MUA_CU
 - id: PAS_0102
   char_name: Thoại Đỗ
   pillar: kindness_regret
@@ -1290,13 +2358,25 @@ passengers:
   regret_label: Người lạ giúp lúc lạc đường — chưa kịp hỏi tên
   signature_object: OBJ_BAN_DO_GIAY
   signature_setting: setting_TBD
-  age_range: 26-35
+  age_range: ''
   gender: nam
-  display_name: Thoại Đỗ (26-35)
+  display_name: Thoại Đỗ (linh hồn)
   narrative_hook: TBD by Generator
   assigned_ep: null
-  novelty_hash: ef7d1ed5a82e
-  status: framework_lock
+  novelty_hash: 4718efed6802
+  status: identity_v2
+  life_status: linh_hon
+  voice:
+    region_dialect: nam
+    hometown: Biên Hòa
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: khong_ro
+    pain: Người lạ giúp lúc lạc đường — chưa kịp hỏi tên
+  haunting_symbol: OBJ_BAN_DO_GIAY
 - id: PAS_0103
   char_name: Mỵ Bạch
   pillar: self_regret
@@ -1309,8 +2389,20 @@ passengers:
   display_name: Mỵ Bạch (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: null
-  novelty_hash: 80522406f69c
-  status: framework_lock
+  novelty_hash: 7f34567ea5df
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: tai_nan
+    pain: Bỏ giấc mơ vẽ — theo nghề an toàn
+  haunting_symbol: OBJ_HOP_MAU_VE_CU
 - id: PAS_0104
   char_name: Chí Thiện
   pillar: self_regret
@@ -1318,13 +2410,25 @@ passengers:
   regret_label: Bỏ giấc mơ vẽ — theo nghề an toàn
   signature_object: OBJ_BUC_TRANH_DANG_DO
   signature_setting: setting_TBD
-  age_range: 26-35
+  age_range: 51-65
   gender: nam
-  display_name: Chí Thiện (26-35)
+  display_name: Chí Thiện (51-65)
   narrative_hook: TBD by Generator
   assigned_ep: null
-  novelty_hash: cc35563d699e
-  status: framework_lock
+  novelty_hash: 7645a8739e90
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Nghệ An
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: benh_tat
+    pain: Bỏ giấc mơ vẽ — theo nghề an toàn
+  haunting_symbol: OBJ_BUC_TRANH_DANG_DO
 - id: PAS_0105
   char_name: Khuyên Hảo
   pillar: self_regret
@@ -1332,13 +2436,25 @@ passengers:
   regret_label: Bỏ giấc mơ vẽ — theo nghề an toàn
   signature_object: OBJ_HOP_MAU_VE_CU
   signature_setting: setting_TBD
-  age_range: 36-50
+  age_range: 13-17
   gender: nu
-  display_name: Khuyên Hảo (36-50)
+  display_name: Khuyên Hảo (13-17)
   narrative_hook: TBD by Generator
   assigned_ep: null
-  novelty_hash: dbd62e47e547
-  status: framework_lock
+  novelty_hash: d93adb21667c
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: nam
+    hometown: Sài Gòn
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: mat_tich
+    pain: Bỏ giấc mơ vẽ — theo nghề an toàn
+  haunting_symbol: OBJ_HOP_MAU_VE_CU
 - id: PAS_0106
   char_name: Nhiên Dụng
   pillar: self_regret
@@ -1346,13 +2462,25 @@ passengers:
   regret_label: Không dám tỏ tình — cả đời độc thân
   signature_object: OBJ_THU_CHUA_GUI
   signature_setting: setting_TBD
-  age_range: 18-25
+  age_range: 51-65
   gender: nam
-  display_name: Nhiên Dụng (18-25)
+  display_name: Nhiên Dụng (51-65)
   narrative_hook: TBD by Generator
   assigned_ep: null
-  novelty_hash: f60bb8195827
-  status: framework_lock
+  novelty_hash: 031c50ecc3ca
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Bắc Ninh
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: oan_khuat
+    pain: Không dám tỏ tình — cả đời độc thân
+  haunting_symbol: OBJ_THU_CHUA_GUI
 - id: PAS_0107
   char_name: Trầm Mộng
   pillar: self_regret
@@ -1360,13 +2488,25 @@ passengers:
   regret_label: Không dám tỏ tình — cả đời độc thân
   signature_object: OBJ_ANH_CHUP_CHUNG
   signature_setting: setting_TBD
-  age_range: 26-35
+  age_range: 66+
   gender: nu
-  display_name: Trầm Mộng (26-35)
+  display_name: Trầm Mộng (66+)
   narrative_hook: TBD by Generator
   assigned_ep: null
-  novelty_hash: f0f1a06848bd
-  status: framework_lock
+  novelty_hash: 4849b6a0305d
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Quảng Bình
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: tu_nhien
+    pain: Không dám tỏ tình — cả đời độc thân
+  haunting_symbol: OBJ_ANH_CHUP_CHUNG
 - id: PAS_0108
   char_name: Diễn Thuận
   pillar: self_regret
@@ -1374,13 +2514,25 @@ passengers:
   regret_label: Không dám tỏ tình — cả đời độc thân
   signature_object: OBJ_THU_CHUA_GUI
   signature_setting: setting_TBD
-  age_range: 36-50
+  age_range: 26-35
   gender: nam
-  display_name: Diễn Thuận (36-50)
+  display_name: Diễn Thuận (26-35)
   narrative_hook: TBD by Generator
   assigned_ep: null
-  novelty_hash: 8ae3d0436d8a
-  status: framework_lock
+  novelty_hash: 13c474e2ec79
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: nam
+    hometown: Hồ Chí Minh
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: hieu_lam
+    pain: Không dám tỏ tình — cả đời độc thân
+  haunting_symbol: OBJ_THU_CHUA_GUI
 - id: PAS_0109
   char_name: Tuyên Phấn
   pillar: self_regret
@@ -1388,13 +2540,25 @@ passengers:
   regret_label: Bỏ con vì sự nghiệp — cuối đời không có ai
   signature_object: OBJ_HUY_CHUONG_VANG
   signature_setting: setting_TBD
-  age_range: 18-25
+  age_range: 36-50
   gender: nu
-  display_name: Tuyên Phấn (18-25)
+  display_name: Tuyên Phấn (36-50)
   narrative_hook: TBD by Generator
   assigned_ep: null
-  novelty_hash: 4541b98a9498
-  status: framework_lock
+  novelty_hash: 2a1f6bd3a5f5
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Hải Phòng
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: hy_sinh
+    pain: Bỏ con vì sự nghiệp — cuối đời không có ai
+  haunting_symbol: OBJ_HUY_CHUONG_VANG
 - id: PAS_0110
   char_name: Hiệp Phương
   pillar: self_regret
@@ -1402,13 +2566,25 @@ passengers:
   regret_label: Bỏ con vì sự nghiệp — cuối đời không có ai
   signature_object: OBJ_KEM_LO_BAT_CO_DON
   signature_setting: setting_TBD
-  age_range: 26-35
+  age_range: 66+
   gender: nam
-  display_name: Hiệp Phương (26-35)
+  display_name: Hiệp Phương (66+)
   narrative_hook: TBD by Generator
   assigned_ep: null
-  novelty_hash: 75b7716dd9d2
-  status: framework_lock
+  novelty_hash: babd7fa4644a
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: trung
+    hometown: Hà Tĩnh
+    pronoun_system: tui
+    particles:
+    - rứa
+    register: dan_da
+  death:
+    type: bi_phan_boi
+    pain: Bỏ con vì sự nghiệp — cuối đời không có ai
+  haunting_symbol: OBJ_KEM_LO_BAT_CO_DON
 - id: PAS_0111
   char_name: Thuấn Bạt
   pillar: self_regret
@@ -1421,8 +2597,20 @@ passengers:
   display_name: Thuấn Bạt (18-25)
   narrative_hook: TBD by Generator
   assigned_ep: null
-  novelty_hash: 60c24106a7ac
-  status: framework_lock
+  novelty_hash: 48a759cbafc6
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: nam
+    hometown: Vũng Tàu
+    pronoun_system: con
+    particles:
+    - nghen
+    register: dan_da
+  death:
+    type: khong_ro
+    pain: Sợ bệnh viện — bỏ qua dấu hiệu cảnh báo 2 năm
+  haunting_symbol: OBJ_DON_THUOC_GIAU
 - id: PAS_0112
   char_name: Trầu Quách
   pillar: self_regret
@@ -1430,10 +2618,39 @@ passengers:
   regret_label: Sợ bệnh viện — bỏ qua dấu hiệu cảnh báo 2 năm
   signature_object: OBJ_LICH_HEN_KHONG_DI
   signature_setting: setting_TBD
-  age_range: 26-35
+  age_range: 51-65
   gender: nu
-  display_name: Trầu Quách (26-35)
+  display_name: Trầu Quách (51-65)
   narrative_hook: TBD by Generator
   assigned_ep: null
-  novelty_hash: 5ff914577385
-  status: framework_lock
+  novelty_hash: d14718b87a88
+  status: identity_v2
+  life_status: da_mat
+  voice:
+    region_dialect: bac
+    hometown: Thái Bình
+    pronoun_system: tôi
+    particles:
+    - nhỉ
+    register: dan_da
+  death:
+    type: tai_nan
+    pain: Sợ bệnh viện — bỏ qua dấu hiệu cảnh báo 2 năm
+  haunting_symbol: OBJ_LICH_HEN_KHONG_DI
+migration_v2:
+  by: tools/migrate_roster_v2.py
+  date: '2026-07-02'
+  enriched:
+  - age_range(rebalanced)
+  - life_status
+  - voice
+  - death
+  - haunting_symbol
+  preserved:
+  - id
+  - char_name
+  - pillar
+  - regret_*
+  - signature_object/setting
+  - gender
+  - assigned_ep
