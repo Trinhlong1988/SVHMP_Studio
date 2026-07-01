@@ -22,8 +22,8 @@ except ImportError:
         def done(self, *a, **k): pass
         def fail(self, *a, **k): pass
 
-WD = r'C:\Users\Administrator\Desktop\SVHMP_v10_workdir'
-MEM = r'C:\Users\Administrator\.claude\projects\C--Users-Administrator\memory'
+WD = os.path.expanduser(r'~/Desktop/SVHMP_v10_workdir')
+MEM = os.path.expanduser(r'~/.claude/projects/C--Users-Administrator/memory')
 PIPELINE = r'C:\tmp\svhmp_v13_render.py'
 PREFLIGHT = r'C:\tmp\svhmp_preflight_qa.py'
 

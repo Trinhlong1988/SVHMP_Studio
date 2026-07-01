@@ -149,7 +149,7 @@ if __name__ == '__main__':
     if len(sys.argv) > 1:
         paths = sys.argv[1:]
     else:
-        os.chdir(r'C:\Users\Administrator\Desktop\SVHMP_v10_workdir')
+        os.chdir(os.path.expanduser(r'~/Desktop/SVHMP_v10_workdir'))
         paths = sorted(p for p in glob.glob('spec_ep01_section_*.json')
                        if '_v' not in p and 'backup' not in p and 'old' not in p)
     main(paths)

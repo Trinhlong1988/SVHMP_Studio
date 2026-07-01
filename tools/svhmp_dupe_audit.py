@@ -27,7 +27,7 @@ _prog = RenderProgress(cmd='dupe_audit', ep=1, total_steps=3)
 atexit.register(lambda: _prog.fail('exit without done') if _prog.current_step < _prog.total_steps else None)
 _prog.start('main')
 
-WD = r'C:\Users\Administrator\Desktop\SVHMP_v10_workdir'
+WD = os.path.expanduser(r'~/Desktop/SVHMP_v10_workdir')
 
 STOPWORDS = {'anh', 'cô', 'tôi', 'là', 'có', 'không', 'mà', 'và', 'của', 'một',
              'như', 'hai', 'những', 'này', 'ở', 'với', 'để', 'từ', 'cũng', 'đã',

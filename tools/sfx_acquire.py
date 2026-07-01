@@ -31,7 +31,7 @@ LOG_FILE = ROOT / "tools" / "sfx_acquire_log.yaml"
 SEARCH_LOG = ROOT / "tools" / "sfx_search_log.yaml"
 CHECKSUMS_FILE = SFX_DIR / "CHECKSUMS.sha256"
 ATTRIBUTIONS_FILE = SFX_DIR / "ATTRIBUTIONS.md"
-FFMPEG = r"C:\Users\Administrator\ffmpeg\bin\ffmpeg.exe"
+FFMPEG = os.path.expanduser(r'~/ffmpeg/bin/ffmpeg.exe')
 ACE_STEP_PORT = 7865
 
 # ============================================================

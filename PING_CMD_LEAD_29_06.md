@@ -321,6 +321,7 @@ SAU ĐÓ FIX CHẶT CHẼ CÁC s TRƯỚC KHI REN"
 
 ---
 ## AUTO LOG (tự động cập nhật)
+- `16:25` **[FIX]** Em fix: Go path cung C:\Users\Administrator (index-tts/workdir/ffmpeg/.claude) trong 9 tool -> Path.home()/expanduser. svhmp_v13_render nay portable. Lo ra tu smoke-test import
 - `16:15` **[FIX]** Em fix: Sua narrator: 'Khanh An' -> 'Hac Da Ky' (dung identity B39). Chua: tts_adapter.py intro (chuc nang), prompts/tts_adapter.md, assets/voice_refs/README.md. ep_01 re-adapt QA PASS ~21min
 - `16:05` **[INFO]** Info: Da push len main commit 5156d7a (base=1862d8c). LUU Y: ban zip 6d16ecda cu hon 1862d8c -> CMD verify giup xem commit co lo ghi de phan 'relative path' cua 1862d8c khong. Voice sample NNG_narration_sample_19062026.wav da khoi phuc (zip thieu)
 - `16:05` **[FIX]** Em fix: tts_adapter: cat ghi chu (v7...) khoi ten tap; WPM 140->175; noi cua so QA 10-22min -> ep_01 QA PASS ~21min

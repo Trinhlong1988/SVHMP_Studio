@@ -19,7 +19,7 @@ except ImportError:
         def done(self, *a, **k): pass
         def fail(self, *a, **k): pass
 
-WD = r'C:\Users\Administrator\Desktop\SVHMP_v10_workdir'
+WD = os.path.expanduser(r'~/Desktop/SVHMP_v10_workdir')
 SPECS = ['1_hook', '2_setup', '3_incident', '4_reveal', '5_payoff', '6_cliffhanger']
 
 _prog = RenderProgress(cmd='audit_chi_tiet', ep=1, total_steps=len(SPECS) + 1)

@@ -25,7 +25,7 @@ from datetime import datetime
 from pathlib import Path
 
 SVHMP = Path(__file__).resolve().parent.parent
-MEMORY_INDEX = Path(r"C:/Users/Administrator/.claude/projects/C--Users-Administrator/memory/MEMORY.md")
+MEMORY_INDEX = (Path.home() / r'.claude/projects/C--Users-Administrator/memory/MEMORY.md')
 
 
 def run(cmd, cwd=None, timeout=30):

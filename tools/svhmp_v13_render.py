@@ -12,7 +12,7 @@ import numpy as np
 import soundfile as sf
 import torch
 
-sys.path.insert(0, r'C:\Users\Administrator\index-tts')
+sys.path.insert(0, os.path.expanduser(r'~/index-tts'))
 # Round 14: dashboard live render hook
 _TOOLS = os.path.dirname(os.path.abspath(__file__))
 if _TOOLS not in sys.path:
@@ -240,7 +240,7 @@ def main():
     t0 = time.time()
     _prog.tick(1, 'Loading IndexTTS2 model')
     from indextts.infer_v2 import IndexTTS2
-    tts = IndexTTS2(model_dir=r"C:\Users\Administrator\index-tts\checkpoints-vi", use_fp16=True)
+    tts = IndexTTS2(model_dir=os.path.expanduser(r'~/index-tts/checkpoints-vi'), use_fp16=True)
     print(f"[v13] Init done [{time.time()-t0:.1f}s]", flush=True)
     _prog.tick(1, f'Model loaded ({time.time()-t0:.1f}s)')
 
