@@ -22,7 +22,10 @@ except ImportError:
         def done(self, *a, **k): pass
         def fail(self, *a, **k): pass
 
-WD = os.path.expanduser(r'~/Desktop/SVHMP_v10_workdir')
+WD = os.environ.get('SVHMP_WORKDIR', os.path.expanduser(r'~/Desktop/SVHMP_v10_workdir'))
+if not os.path.isdir(WD):
+    import sys
+    sys.exit(f"[SKIP] Legacy workdir khong ton tai: {WD} — set env SVHMP_WORKDIR tro toi thu muc chua spec_ep01_section_*.json de chay tool nay.")
 SPECS_NAMES = ['1_hook', '2_setup', '3_incident', '4_reveal', '5_payoff', '6_cliffhanger']
 
 _prog = RenderProgress(cmd='final_verify', ep=1, total_steps=len(SPECS_NAMES) + 1)

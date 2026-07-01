@@ -22,7 +22,10 @@ except ImportError:
         def done(self, *a, **k): pass
         def fail(self, *a, **k): pass
 
-WD = os.path.expanduser(r'~/Desktop/SVHMP_v10_workdir')
+WD = os.environ.get('SVHMP_WORKDIR', os.path.expanduser(r'~/Desktop/SVHMP_v10_workdir'))
+if not os.path.isdir(WD):
+    import sys
+    sys.exit(f"[SKIP] Legacy workdir khong ton tai: {WD} — set env SVHMP_WORKDIR tro toi thu muc chua spec_ep01_section_*.json de chay tool nay.")
 MEM = os.path.expanduser(r'~/.claude/projects/C--Users-Administrator/memory')
 PIPELINE = r'C:\tmp\svhmp_v13_render.py'
 PREFLIGHT = r'C:\tmp\svhmp_preflight_qa.py'

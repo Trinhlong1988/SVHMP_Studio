@@ -90,7 +90,10 @@ def audit(spec_path):
 def main():
     if len(sys.argv) < 2:
         # Audit all sections
-        os.chdir(os.path.expanduser(r'~/Desktop/SVHMP_v10_workdir'))
+        _wd = os.environ.get('SVHMP_WORKDIR', os.path.expanduser(r'~/Desktop/SVHMP_v10_workdir'))
+        if not os.path.isdir(_wd):
+            sys.exit(f"[SKIP] Legacy workdir khong ton tai: {_wd} — set env SVHMP_WORKDIR de chay, hoac truyen spec path lam tham so.")
+        os.chdir(_wd)
         paths = sorted([p for p in glob.glob('spec_ep01_section_*.json') if '_v' not in p and 'backup' not in p and 'old' not in p])
     else:
         paths = sys.argv[1:]
