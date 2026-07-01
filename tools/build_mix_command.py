@@ -12,7 +12,7 @@ import sys
 import yaml
 from pathlib import Path
 
-BASE = Path(r"D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio")
+BASE = Path(__file__).resolve().parents[1]
 CONFIG = BASE / "bible/34_mix_config.yaml"
 
 

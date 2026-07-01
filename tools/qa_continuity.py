@@ -12,7 +12,7 @@ import re
 import sys
 from pathlib import Path
 
-EPISODE = Path(r"D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio/output/ep_01/episode.md")
+EPISODE = Path(__file__).resolve().parents[1] / r'output/ep_01/episode.md'
 
 # Track key objects
 TRACKED_OBJECTS = {

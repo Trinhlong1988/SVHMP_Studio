@@ -25,7 +25,7 @@ CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
 from pathlib import Path
 from datetime import datetime
 
-BASE = Path(r"D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio")
+BASE = Path(__file__).resolve().parents[1]
 SECTIONS_DIR = BASE / "output/ep_01/sections"
 
 

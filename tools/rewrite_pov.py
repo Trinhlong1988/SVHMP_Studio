@@ -15,7 +15,7 @@ from pathlib import Path
 
 sys.stdout.reconfigure(encoding='utf-8') if hasattr(sys.stdout, 'reconfigure') else None
 
-SVHMP = Path(r'D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio')
+SVHMP = Path(__file__).resolve().parents[1]
 
 # Verb patterns where "em" / "Em" likely refers to Khải Phong (narrator)
 KP_VERBS = ['cố', 'không', 'đã', 'sẽ', 'là', 'có', 'nhớ', 'nhìn', 'đi', 'về',

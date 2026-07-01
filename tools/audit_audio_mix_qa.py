@@ -14,7 +14,7 @@ import numpy as np
 import soundfile as sf
 import yaml
 
-BASE = Path(r'D:\DỰ ÁN AI\GIỌNG ĐỌC\DỰ ÁN TRUYỆN MA\SVHMP_Studio')
+BASE = Path(__file__).resolve().parents[1]
 BIBLE_05 = BASE / 'bible' / '05_audio_bible.yaml'
 
 def lufs_approx(audio, sr):

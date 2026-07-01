@@ -26,7 +26,7 @@ import json
 from pathlib import Path
 
 sys.stdout.reconfigure(encoding='utf-8') if hasattr(sys.stdout, 'reconfigure') else None
-SVHMP = Path(r'D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio')
+SVHMP = Path(__file__).resolve().parents[1]
 
 AUDITS = [
     ('R58 tilde EOL', 'audit_tilde_eol.py', '--summary'),

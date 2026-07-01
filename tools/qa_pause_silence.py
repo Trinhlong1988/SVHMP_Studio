@@ -95,7 +95,7 @@ def report(audit_result):
 
 
 if __name__ == "__main__":
-    fp = sys.argv[1] if len(sys.argv) > 1 else r"D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio/output/ep_01/sections/hook.wav"
+    fp = sys.argv[1] if len(sys.argv) > 1 else str(Path(__file__).resolve().parents[1] / r'output/ep_01/sections/hook.wav')
     res = audit(fp)
     passed = report(res)
     sys.exit(0 if passed else 1)

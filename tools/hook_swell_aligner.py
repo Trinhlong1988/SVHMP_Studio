@@ -20,7 +20,7 @@ import sys, json, argparse
 from pathlib import Path
 from faster_whisper import WhisperModel
 
-BASE = Path(r'D:\DỰ ÁN AI\GIỌNG ĐỌC\DỰ ÁN TRUYỆN MA\SVHMP_Studio')
+BASE = Path(__file__).resolve().parents[1]
 
 def main():
     ap = argparse.ArgumentParser()

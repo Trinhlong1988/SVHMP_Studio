@@ -13,7 +13,7 @@ import sys
 import yaml
 from pathlib import Path
 
-BASE = Path(r"D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio")
+BASE = Path(__file__).resolve().parents[1]
 EPISODE = BASE / "output/ep_01/episode.md"
 FACT_DB = BASE / "bible/27_fact_db.yaml"
 

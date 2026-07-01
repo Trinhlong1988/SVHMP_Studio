@@ -6,7 +6,7 @@ Each entry: short-start sentence → expanded version (≥6 words OR prefix adde
 import shutil
 from pathlib import Path
 
-SVHMP = Path(r'D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio')
+SVHMP = Path(__file__).resolve().parents[1]
 EP01 = SVHMP / 'output' / 'ep_01' / 'episode.md'
 
 # Map: exact line text → rewrite

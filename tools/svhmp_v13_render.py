@@ -209,10 +209,12 @@ def main():
     print(f"[v13] R90 STAGE 1 pre-render gate...", flush=True)
     ep_match_early = re.search(r'ep_(\d+)', args.output)
     ep_num_early = int(ep_match_early.group(1)) if ep_match_early else 1
-    md_path = f"D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio/output/ep_{ep_num_early:02d}/episode.md"
+    _tools_dir = os.path.dirname(os.path.abspath(__file__))
+    _proj_root = os.path.dirname(_tools_dir)
+    md_path = os.path.join(_proj_root, "output", f"ep_{ep_num_early:02d}", "episode.md")
     if os.path.exists(md_path):
         gate_result = subprocess.run(
-            ["python", "D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio/tools/qa_eol_diacritic.py", md_path],
+            [sys.executable, os.path.join(_tools_dir, "qa_eol_diacritic.py"), md_path],
             capture_output=True, text=True, encoding='utf-8',
             env={**os.environ, 'PYTHONIOENCODING': 'utf-8'},
         )

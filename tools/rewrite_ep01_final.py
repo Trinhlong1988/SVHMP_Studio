@@ -2,7 +2,7 @@
 import shutil
 from pathlib import Path
 
-EP01 = Path(r'D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio/output/ep_01/episode.md')
+EP01 = Path(__file__).resolve().parents[1] / r'output/ep_01/episode.md'
 
 REWRITES = {
     # R58 tilde EOL

@@ -18,7 +18,7 @@ from pathlib import Path
 
 sys.stdout.reconfigure(encoding='utf-8') if hasattr(sys.stdout, 'reconfigure') else None
 
-SVHMP = Path(r'D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio')
+SVHMP = Path(__file__).resolve().parents[1]
 
 INTRO_ELEMENTS = [
     # 2026-06-30 R108 brand: "Hắc Dạ Ký" plain (Mr.Long revert comma 10:42 — comma pause quá xa)

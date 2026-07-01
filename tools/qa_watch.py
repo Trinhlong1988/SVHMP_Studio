@@ -18,7 +18,7 @@ from pathlib import Path
 CREATE_NO_WINDOW = 0x08000000 if sys.platform == "win32" else 0
 PYW = sys.executable.replace("python.exe", "pythonw.exe") if Path(sys.executable.replace("python.exe", "pythonw.exe")).exists() else sys.executable
 
-ROOT = Path(r"D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio")
+ROOT = Path(__file__).resolve().parents[1]
 EPISODE = ROOT / "output/ep_01/episode.md"
 SECTIONS = ROOT / "output/ep_01/sections"
 LOG_PING = ROOT / "tools/log_ping.py"

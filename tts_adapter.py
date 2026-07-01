@@ -30,6 +30,10 @@ sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', line_bufferin
 ADAPTER_VERSION = "SVHMP-TTSA-1.0"
 TZ_VN = timezone(timedelta(hours=7))
 
+# Tốc độ đọc narration (chữ/phút). Hiệu chỉnh theo thực tế ep_01:
+# 3177 chữ ≈ 21 phút → ~175 wpm (trước đây để 140 nên đoán dư ~4 phút).
+NARRATION_WPM = 175
+
 # ===================================================================
 # Normalize dictionary (M-6 / R-7)
 # ===================================================================
@@ -808,12 +812,12 @@ def render_scene(scene_spec: dict, sections: list[Section],
 
     text = "\n".join(rendered_lines).rstrip() + "\n"
     word_count = sum(s.word_count for s, _ in tagged)
-    # estimated duration: 140 wpm + pause sum / 1000
+    # estimated duration: NARRATION_WPM wpm + pause sum / 1000
     pause_total_sec = sum(decide_pause(s, (tagged[i + 1][0] if i + 1 < n else None),
                                         (i + 1 == n or tagged[i + 1][0].para_idx != s.para_idx),
                                         i + 1 == n, default_pause) / 1000
                           for i, (s, _) in enumerate(tagged))
-    est_dur = (word_count / 140 * 60) + pause_total_sec
+    est_dur = (word_count / NARRATION_WPM * 60) + pause_total_sec
 
     return RenderedScene(
         id=scene_spec["id"],
@@ -878,9 +882,9 @@ def qa_check(scene_files: list[Path], yaml_path: Path, scenes: list[RenderedScen
         yaml.safe_load(yaml_path.read_text(encoding="utf-8"))
     except Exception as e:
         issues.append(f"QA-10: invalid yaml: {e}")
-    # 12. duration window 11.0 - 16.0 min (compound sentences read faster than short runs)
-    if not (11.0 <= total_estimated_min <= 16.0):
-        issues.append(f"QA-12: total duration {total_estimated_min:.1f}min out of 11.0-16.0 window")
+    # 12. duration window 10.0 - 22.0 min (ep có intro thương hiệu dài hơn; Mr.Long cho phép ~21 phút)
+    if not (10.0 <= total_estimated_min <= 22.0):
+        issues.append(f"QA-12: total duration {total_estimated_min:.1f}min out of 10.0-22.0 window")
 
     return len(issues) == 0, issues
 
@@ -901,7 +905,11 @@ def _vn_title_case(s: str) -> str:
 def derive_title(meta: EpisodeMeta, raw_md: str) -> str:
     m = re.search(r"^#\s+TẬP\s+\d+\s*[—-]\s*(.+)$", raw_md, re.MULTILINE)
     if m:
-        return _vn_title_case(m.group(1).strip().rstrip("."))
+        title = m.group(1).strip()
+        # Strip trailing editorial/version notes in parentheses so chúng không lọt
+        # vào text đọc cho TTS. Vd "(v7 final — fix review round 2 chốt)".
+        title = re.sub(r"\s*\([^)]*\)\s*$", "", title).strip()
+        return _vn_title_case(title.rstrip("."))
     return "Tập mới"
 
 

@@ -13,7 +13,7 @@ import os, json, yaml, random, sys
 from pathlib import Path
 from collections import defaultdict, Counter
 
-BASE = Path(r'D:\DỰ ÁN AI\GIỌNG ĐỌC\DỰ ÁN TRUYỆN MA\SVHMP_Studio')
+BASE = Path(__file__).resolve().parents[1]
 LIB = BASE / 'assets' / 'sfx' / 'hdk_music_library' / 'library_index.yaml'
 OUT_DIR = BASE / 'output'
 OUT_DIR.mkdir(exist_ok=True)

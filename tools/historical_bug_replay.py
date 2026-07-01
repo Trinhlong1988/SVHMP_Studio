@@ -59,7 +59,7 @@ def run_cmd(cmd: list[str]) -> tuple[int, str, str]:
         encoding="utf-8",
         errors="replace",
         cwd=REPO_ROOT,
-    , creationflags=CREATE_NO_WINDOW)
+        creationflags=CREATE_NO_WINDOW)
     return proc.returncode, proc.stdout, proc.stderr
 
 

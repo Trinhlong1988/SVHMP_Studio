@@ -29,7 +29,7 @@ def apply_variation(spec_path):
     return spec
 
 if __name__ == '__main__':
-    base = Path(r'D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio/output/ep_01/sections')
+    base = Path(__file__).resolve().parents[1] / r'output/ep_01/sections'
     for section in ['setup', 'incident', 'reveal', 'payoff', 'cliffhanger']:
         fp = base / f'spec_{section}.json'
         if fp.exists():

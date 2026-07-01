@@ -18,7 +18,7 @@ import subprocess
 CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
 from pathlib import Path
 
-BASE = Path(r"D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio")
+BASE = Path(__file__).resolve().parents[1]
 
 QA_TOOLS = [
     ("R86 EOL diacritic", "qa_eol_diacritic.py", 100),

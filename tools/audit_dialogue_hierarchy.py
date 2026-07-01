@@ -37,7 +37,7 @@ from collections import defaultdict
 
 sys.stdout.reconfigure(encoding='utf-8') if hasattr(sys.stdout, 'reconfigure') else None
 
-SVHMP = Path(r'D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio')
+SVHMP = Path(__file__).resolve().parents[1]
 
 # Verbs that follow "em" to indicate distinct referent
 VERBS_SELF = ['cố', 'nhớ', 'thấy', 'biết', 'sẽ', 'đã', 'không', 'có', 'sống', 'làm', 'đi', 'về',

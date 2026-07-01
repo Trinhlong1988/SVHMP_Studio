@@ -13,7 +13,7 @@ import soundfile as sf
 import numpy as np
 from pathlib import Path
 
-BASE = Path(r"D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio")
+BASE = Path(__file__).resolve().parents[1]
 SECTIONS_DIR = BASE / "output/ep_01/sections"
 
 

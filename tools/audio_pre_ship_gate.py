@@ -19,7 +19,7 @@ CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
 import sys
 from pathlib import Path
 
-BASE = Path(r"D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio")
+BASE = Path(__file__).resolve().parents[1]
 
 
 def run_tool(args_list, timeout=300):

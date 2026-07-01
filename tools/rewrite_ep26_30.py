@@ -1,7 +1,7 @@
 """SVHMP — Manual rewrite EP26-30."""
 import shutil, sys
 from pathlib import Path
-SVHMP = Path(r'D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio')
+SVHMP = Path(__file__).resolve().parents[1]
 
 EP_REWRITES = {
     26: {

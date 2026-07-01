@@ -16,7 +16,7 @@ import sys
 
 sys.stdout.reconfigure(encoding='utf-8') if hasattr(sys.stdout, 'reconfigure') else None
 
-SVHMP = Path(r'D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio')
+SVHMP = Path(__file__).resolve().parents[1]
 
 # Banned words from bible/22 + NEVER_7 + R4 catalog
 ANTI_SLOP_TIER_1 = ['đột nhiên', 'bỗng nhiên', 'trong khoảnh khắc đó', 'không thể nào quên',

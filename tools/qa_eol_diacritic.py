@@ -65,7 +65,7 @@ def scan(md_path):
 
 
 if __name__ == "__main__":
-    fp = sys.argv[1] if len(sys.argv) > 1 else r"D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio/output/ep_01/episode.md"
+    fp = sys.argv[1] if len(sys.argv) > 1 else str(Path(__file__).resolve().parents[1] / r'output/ep_01/episode.md')
     vio = scan(fp)
     print(f"R86 EOL violations: {len(vio)}")
     for lnum, tone, w, s in vio:

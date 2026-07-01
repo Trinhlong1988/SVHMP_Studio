@@ -10,7 +10,7 @@ import re, sys, json
 from pathlib import Path
 
 sys.stdout.reconfigure(encoding='utf-8') if hasattr(sys.stdout, 'reconfigure') else None
-SVHMP = Path(r'D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio')
+SVHMP = Path(__file__).resolve().parents[1]
 
 MILESTONE_EPS = {10, 20, 30, 40, 50, 60, 70, 73, 80, 90}
 

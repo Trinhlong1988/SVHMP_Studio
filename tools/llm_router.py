@@ -115,7 +115,7 @@ def call_provider(provider_id: str, prompt: str, system: Optional[str] = None, *
             import ollama
             import subprocess
 
-CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
+            CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
             client = ollama.Client()
             messages = []
             if system:

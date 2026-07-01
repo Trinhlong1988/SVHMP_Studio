@@ -1,0 +1,26 @@
+# SVHMP Studio — Python dependencies
+# Sinh tự động bằng cách quét import trong 175 file .py (2026-07-01).
+# Cài: pip install -r requirements.txt
+# Lưu ý: cần Python 3.10+ (đã kiểm thử trên 3.10.20).
+
+# ---- Core: text pipeline + QA tools (bắt buộc cho tts_adapter + tests) ----
+pyyaml            # đọc/ghi bible *.yaml, episode.tts.yaml  (module: yaml)
+
+# ---- NLP tiếng Việt (một số QA tool VNQA) ----
+underthesea       # tách từ/câu tiếng Việt (H1-H9 checks)
+
+# ---- Audio / TTS layer (Phase 2 — chỉ cần khi render giọng) ----
+numpy
+soundfile         # đọc/ghi .wav
+librosa           # phân tích audio, loudness
+torch             # backend cho IndexTTS2 / vocoder
+faster-whisper    # QA phát âm: so khớp giọng đọc vs text
+resemblyzer       # voice cosine similarity (audit giọng)
+gradio            # cung cấp gradio_client cho webui TTS
+
+# ---- Dev / test ----
+pytest            # test harness tuỳ chọn (dự án cũng có runner riêng)
+
+# ---- KHÔNG cài qua pip ----
+# indextts : là project IndexTTS2 cục bộ (C:\Users\Admin\index-tts),
+#            cài theo hướng dẫn riêng của IndexTTS2, không phải gói PyPI.

@@ -9,7 +9,7 @@ Usage:
 import re, json, argparse
 from pathlib import Path
 
-BASE = Path(r'D:\DỰ ÁN AI\GIỌNG ĐỌC\DỰ ÁN TRUYỆN MA\SVHMP_Studio')
+BASE = Path(__file__).resolve().parents[1]
 SHORT_MIN = 4
 SHORT_MAX = 6
 MAX_CONSECUTIVE = 2

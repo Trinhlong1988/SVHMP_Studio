@@ -14,7 +14,7 @@ CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
 import yaml
 from pathlib import Path
 
-BASE = Path(r"D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio")
+BASE = Path(__file__).resolve().parents[1]
 EPISODE = BASE / "output/ep_01/episode.md"
 GOLDEN = BASE / "output/ep_01/episode_golden_text.md"
 REGISTRY = BASE / "bible/35_text_fix_registry.yaml"

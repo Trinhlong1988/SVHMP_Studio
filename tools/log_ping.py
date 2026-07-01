@@ -12,7 +12,7 @@ import sys
 import datetime
 from pathlib import Path
 
-PING = Path(r"D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio/PING_CMD_LEAD_29_06.md")
+PING = Path(__file__).resolve().parents[1] / r'PING_CMD_LEAD_29_06.md'
 
 CATEGORIES = {
     "VIOLATION": "Mr.Long flag",

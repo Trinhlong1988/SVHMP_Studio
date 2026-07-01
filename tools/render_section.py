@@ -16,7 +16,7 @@ Per-section sentence index ranges (verify trước render):
 import json, sys, argparse, subprocess
 from pathlib import Path
 
-BASE = Path(r'D:\DỰ ÁN AI\GIỌNG ĐỌC\DỰ ÁN TRUYỆN MA\SVHMP_Studio')
+BASE = Path(__file__).resolve().parents[1]
 SPEC = BASE / 'output' / 'ep_01' / 'spec.json'
 SECTIONS_DIR = BASE / 'output' / 'ep_01' / 'sections'
 SECTIONS_DIR.mkdir(exist_ok=True)

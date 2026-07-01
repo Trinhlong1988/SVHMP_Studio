@@ -71,4 +71,3 @@ hf_cache/
 # But keep exceptions above
 !assets/sfx/brand/*.wav
 !GIỌNG\ ĐỌC\ \ ANH\ KHÁNH.wav
-!assets/voice_samples/*.wav

@@ -11,7 +11,7 @@ CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
 from pathlib import Path
 
 TOOLS = Path(__file__).parent
-DEFAULT_MD = Path(r"D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio/output/ep_01/episode.md")
+DEFAULT_MD = Path(__file__).resolve().parents[1] / r'output/ep_01/episode.md'
 
 
 def check(name, cmd):

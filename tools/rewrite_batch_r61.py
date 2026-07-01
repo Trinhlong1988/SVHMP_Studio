@@ -6,7 +6,7 @@ Strategy: expand subject + verb compound or prefix với spatial/temporal contex
 import shutil
 from pathlib import Path
 
-SVHMP = Path(r'D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio')
+SVHMP = Path(__file__).resolve().parents[1]
 
 # Generic patterns (sentence ≤5 words starting with banned + short next)
 PATTERNS = {
