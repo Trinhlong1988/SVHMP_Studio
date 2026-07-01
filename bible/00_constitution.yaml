@@ -3076,3 +3076,57 @@ rule_R197_full_text_gate_mandatory:
     - Skipping qa_eol_diacritic
     - Manual confidence 'tin rằng OK'
   applies_global: Mọi project Vietnamese TTS với BigVGAN/HiFiGAN vocoders.
+
+
+# ============================================================================
+# R199 — TAIL PATHOLOGY HARDLOCK (Mr.Long lock 1/7 09:00)
+# ============================================================================
+
+rule_R199_tail_pathology_hardlock:
+  description: |
+    Tail-region audio artifacts từ IndexTTS2 + BigVGAN có 3 case:
+      #1 Đuôi rác burst: burst nhỏ (peak -30dB đến -15dB) sau silence gap ≥300ms
+      #2 Runaway generation: model sinh lố tới max_mel_tokens → trail silence dài (5s-20s)
+      #3 Auto-trim lỗ hổng: aggressive_trim_tail search_ms=600 quá hẹp
+         → nếu tail rác nằm ngoài 600ms window → PRESERVED
+         → nếu tail runaway hoàn toàn silent trong 600ms window → last_voice_end=n → giữ nguyên
+    Case #1 confirm trong legacy wavs (6 files SVHMP_v10_workdir).
+    Case #2 confirm trong AB test rp<10 (T4.B/C).
+    Case #3 structural code hole confirmed via review tools/svhmp_v13_render.py:118-158.
+  severity: TỐI_THƯỢNG
+  trigger: Mr.Long lock 1/7 09:00 — 3-case tail pathology analysis.
+
+  mandatory_fix:
+    tier: 1  # Post-process only, không đụng model
+    tool: tools/aggressive_trim_tail_v2.py (SPECS below)
+    apply_at: tools/svhmp_v13_render.py replace aggressive_trim_tail() with _v2.
+
+  aggressive_trim_tail_v2_spec:
+    scan_range: FULL AUDIO backwards (KHÔNG cap search_ms)
+    silence_threshold_dB: -40  # was -30 in v1
+    gap_ms_qualifier: 300      # silence ≥300ms → tail boundary
+    main_voice_min_run_ms: 100 # 10 consecutive 10ms windows above threshold
+    grace_ms: 80               # keep +80ms after last main voice
+    fade_ms: 10                # linear fade inside voice content
+    fallback: no main voice → return unchanged (never over-trim to zero)
+
+  regression_test_required:
+    - Test on ≥5 THƯỜNG (regular) chunks: v2 output diff ≤100ms vs v1 → OK
+    - Test on 1 runaway chunk (rp=2.0): v2 cắt 30s→~10s, v1 giữ 30s
+    - Test on 1 case #1 chunk (legacy w/ tail burst): v2 xoá burst, v1 preserve
+    - New regression: tests/test_tail_pathology_r199.py
+
+  audit_evidence:
+    location: runtime/audits/tail_pathology_audit_1_7.json
+    chunks_scanned: 6861
+    tmpdirs_scanned: 281
+    case1_hits_current_pipeline: 0  # rp=10 clean
+    case2_hits_current_pipeline: 0  # rp=10 clean
+    case1_hits_legacy: 6            # SVHMP_v10_workdir era
+    verdict: Current pipeline (rp=10) clean, but structural hole = TIME BOMB nếu params change
+
+  forbidden_shortcut:
+    - Chỉ tăng search_ms cũ mà không đổi logic (vẫn miss runaway pure-silent tail)
+    - Skip regression test THƯỜNG chunks (risk over-trim đuôi chữ)
+    - Apply v2 mà không A/B test đối chiếu v1
+  applies_global: Mọi project TTS với BigVGAN/HiFiGAN, đặc biệt Vietnamese production.
