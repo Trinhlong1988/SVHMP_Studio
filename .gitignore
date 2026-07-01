@@ -39,6 +39,10 @@ secrets.yaml
 *.log
 *.pid
 
+# Live per-command progress state (RenderProgress ghi đè mỗi lần chạy tool — máy-local, KHÔNG phải evidence)
+# CHỈ ignore *.yaml cấp trên cùng; GIỮ NGUYÊN production_validation_v200/ + qa_full_v108/ (bằng chứng CMD executor)
+runtime/cmd_progress/*.yaml
+
 # Render output temp (large generated files)
 *.wav.tmp
 *.mp4.tmp

@@ -321,6 +321,7 @@ SAU ĐÓ FIX CHẶT CHẼ CÁC s TRƯỚC KHI REN"
 
 ---
 ## AUTO LOG (tự động cập nhật)
+- `17:04` **[FIX]** Em fix: gitignore runtime/cmd_progress/*.yaml (live progress may-local) + untrack v13_render.yaml. GIU production_validation_v200 + qa_full_v108 evidence. Fix 'unstaged changes' chan pull
 - `16:47` **[FIX]** Em fix: 6 tool legacy (svhmp_100check_master/dupe_audit/final_verify/audit_chi_tiet/post_rotate_verify/vnsl_validator) nay thoat gon [SKIP] khi thieu workdir + ho tro env SVHMP_WORKDIR, thay vi crash traceback
 - `16:43` **[RULE]** Rule new/update: Them TOI THUONG R200 REALTIME SYNC vao CLAUDE.md: moi CMD/may phai pull --rebase truoc khi lam + sau moi fix cap nhat conf + log_ping + push ngay. Copy chuan may Admin = C:\Users\Admin\SVHMP_git (KHONG sua thu muc ZIP stale)
 - `16:43` **[RULE]** Rule new/update: R200 REALTIME SYNC codified in CLAUDE.md - pull truoc / commit-push sau / cam sua ZIP stale
