@@ -321,6 +321,7 @@ SAU ĐÓ FIX CHẶT CHẼ CÁC s TRƯỚC KHI REN"
 
 ---
 ## AUTO LOG (tự động cập nhật)
+- `16:43` **[RULE]** Rule new/update: Them TOI THUONG R200 REALTIME SYNC vao CLAUDE.md: moi CMD/may phai pull --rebase truoc khi lam + sau moi fix cap nhat conf + log_ping + push ngay. Copy chuan may Admin = C:\Users\Admin\SVHMP_git (KHONG sua thu muc ZIP stale)
 - `16:43` **[RULE]** Rule new/update: R200 REALTIME SYNC codified in CLAUDE.md - pull truoc / commit-push sau / cam sua ZIP stale
 - `16:32` **[FIX]** Em fix: max_mel_tokens 1500->1000 chan runaway (30s->20s), Session 1/7
 - `16:25` **[FIX]** Em fix: Go path cung C:\Users\Administrator (index-tts/workdir/ffmpeg/.claude) trong 9 tool -> Path.home()/expanduser. svhmp_v13_render nay portable. Lo ra tu smoke-test import
