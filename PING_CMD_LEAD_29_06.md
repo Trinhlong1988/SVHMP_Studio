@@ -321,6 +321,7 @@ SAU ĐÓ FIX CHẶT CHẼ CÁC s TRƯỚC KHI REN"
 
 ---
 ## AUTO LOG (tự động cập nhật)
+- `23:25` **[FIX]** Em fix: B37b bug an QA: scan_bup bo sot pop muc vua -> them scan_click_transients (spike ngan-roi-tut, calibrate tu Golden v2q=0FP, bat click-in-gap tu -28dB). Confusion R203 mo rong 6 detector = 240/240 (0 FN 0 FP). Golden v2q van HIGH=1 (khong flag oan).
 - `23:11` **[FIX]** Em fix: R203 confusion-matrix 200-case (100 dung/100 sai) x5 QA detector: 100% (100/100 bat loi, 100/100 de yen, 0 FN 0 FP). Phat hien+sua nhan test silence (chung minh detector chinh xac ng&#432;&#7905;ng 200ms).
 - `22:57` **[FIX]** Em fix: B37 intro ep_01: qa_clean_tail voicing+continuity (cut/tap am cuoi), fade_head cosine 80ms + onset-pop gate (xet), R5 ENDING_PHRASES +bat dau; tests R201 6/6 + R202 50/50 + R199 7/7; gate PASS; v2q rendered
 - `18:42` **[INFO]** Info: Lock handle @Hacdaky.channel + SDT verified (khong luu so) vao identity doc. KHONG dung svhmp_v13_render.py (thay doi '1/7 Boss' TAIL_TRIM_DB -50/grace 150 van cho nguoi lam tu commit)

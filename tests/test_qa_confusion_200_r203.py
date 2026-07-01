@@ -1,13 +1,14 @@
 """R203 — 200-case confusion-matrix audit cho TOAN BO QA detector (Boss 1/7).
 
 Muc tieu (khong suy luan — chay that, dem ket qua):
-  100 case DUNG (sach, QA phai DE YEN)  + 100 case SAI (co loi, QA phai BAT).
-  5 co che QA x (20 good + 20 bad):
-    - bup       scan_bup_transients   (R80 bup = im->burst to)
+  120 case DUNG (sach, QA phai DE YEN)  + 120 case SAI (co loi, QA phai BAT).
+  6 co che QA x (20 good + 20 bad):
+    - bup       scan_bup_transients   (R80 bup = im->burst to >-3dB)
     - peak      scan_overall_peak     (R80.peak > -3dB)
     - tail      scan_tail_residue     (R76 duoi 200ms > -15dB)
     - silence   scan_internal_silence (R77 im >200ms giua chunk)
     - qct       qa_clean_tail         (cut chu / tap am cuoi)
+    - click     scan_click_transients (R80.click = pop muc vua no tren nen im, mid-chunk)
   Bao cao TP/FN/TN/FP moi co che. FN=bo sot loi, FP=bao nham -> bug an -> fix.
 Exit 0 = 0 FN + 0 FP (QA chinh xac tuyet doi).
 """
@@ -18,7 +19,8 @@ sys.stdout.reconfigure(encoding='utf-8')
 import numpy as np
 from collections import defaultdict
 from svhmp_audio_qa import (scan_bup_transients, scan_overall_peak,
-                            scan_tail_residue, scan_internal_silence)
+                            scan_tail_residue, scan_internal_silence,
+                            scan_click_transients)
 from svhmp_v13_render import qa_clean_tail
 
 SR = 22050
@@ -96,18 +98,45 @@ for k in range(20):  # BAD: tu + crackle duoi -> phai GATE
     gated = info['gated_ms'] > 1 and len(out) / SR <= wd + 0.4
     judge('qct', True, gated, f'word{wd:.2f}')
 
+# ===== 6. CLICK TRANSIENT (bup/pop muc vua no tren nen im, mid-chunk) =====
+def voiced(d, f0=140, a=0.4):
+    t = np.arange(int(d * SR)) / SR
+    ph = 2 * np.pi * np.cumsum(f0 * (1 + 0.01 * np.sin(2 * np.pi * 5 * t))) / SR
+    y = sum((a / k) * np.sin(k * ph) for k in range(1, 6))
+    return (y * (0.6 + 0.4 * np.sin(2 * np.pi * 3 * t))).astype(np.float32)
+
+def click_gap(amp):
+    z = np.concatenate([tone(0.4, 300, 0.3), sil(0.3), tone(0.4, 300, 0.3)])
+    p = int(0.55 * SR); z[p:p + 60] = amp; return z
+
+for k in range(20):  # GOOD: giong/plosive/onset/tone muot -> KHONG duoc bat
+    typ = k % 4
+    if typ == 0:
+        g = voiced(1.2, 90 + 15 * k, 0.4)
+    elif typ == 1:
+        g = np.concatenate([sil(0.1), tone(0.02, 300, 0.6), tone(0.5, 300, 0.5)])  # plosive->vowel
+    elif typ == 2:
+        g = np.concatenate([sil(0.15), tone(0.5, 300, 0.4 + 0.01 * k)])  # onset sau nghi
+    else:
+        g = tone(0.6, 200 + 20 * k, 0.5)  # tone muot
+    judge('click', False, len(scan_click_transients(g, SR)) > 0, f'good{k}')
+for k in range(20):  # BAD: click no trong gap im, muc vua->to (-18..-2dB)
+    amp = 0.12 + 0.03 * k
+    judge('click', True, len(scan_click_transients(click_gap(amp), SR)) > 0, f'click{amp:.2f}')
+
 # ===== REPORT =====
-print("=== R203 CONFUSION MATRIX (200 case: 100 dung / 100 sai) ===")
+N = sum(sum(CM[m].values()) for m in CM)
+print(f"=== R203 CONFUSION MATRIX ({N} case: {N//2} dung / {N//2} sai) ===")
 tot = {'TP': 0, 'FN': 0, 'TN': 0, 'FP': 0}
 print(f"{'co che':10} {'TP':>4} {'FN':>4} {'TN':>4} {'FP':>4}  verdict")
-for m in ['bup', 'peak', 'tail', 'silence', 'qct']:
+for m in ['bup', 'peak', 'tail', 'silence', 'qct', 'click']:
     d = CM[m]
     for k in tot: tot[k] += d[k]
     v = 'OK' if d['FN'] == 0 and d['FP'] == 0 else 'LOI QA!'
     print(f"{m:10} {d['TP']:>4} {d['FN']:>4} {d['TN']:>4} {d['FP']:>4}  {v}")
 print(f"{'TONG':10} {tot['TP']:>4} {tot['FN']:>4} {tot['TN']:>4} {tot['FP']:>4}")
 caught = tot['TP'] + tot['TN']
-print(f"\nDo chinh xac: {caught}/200 = {caught/2:.1f}%  (bat dung {tot['TP']}/100 loi, de yen {tot['TN']}/100 sach)")
+print(f"\nDo chinh xac: {caught}/{N} = {caught/N*100:.1f}%  (bat dung {tot['TP']}/{N//2} loi, de yen {tot['TN']}/{N//2} sach)")
 if DETAIL:
     print("\n!!! BUG AN (misclassify):")
     for m, kind, tag in DETAIL:

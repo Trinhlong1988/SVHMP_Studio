@@ -71,6 +71,29 @@ def scan_internal_silence(audio, sr, max_silence_ms=200, silence_threshold_db=-4
             in_run = False
     return issues
 
+def scan_click_transients(audio, sr, win_ms=10, cur_thr_db=-30, delta_db=30):
+    """R80.click: bit lo hong scan_bup_transients (chi bat cur>-3dB) — bat "bup"/pop
+    muc VUA no tren nen IM (trong gap/bien chunk), mid-chunk.
+    Chu ky click = 1 cua so loud roi TUT lai (>=delta so voi CA 2 hang xom) ->
+    phan biet click voi onset giong (to & DUY TRI: hang xom sau cung loud).
+    KHONG dung sample-diff (giong that sau master Δ toi 0.55 -> flag oan golden 155x).
+    Calibrate tu Golden v2q: golden=0, 5x voiced speech-like=0 FP, plosive->vowel &
+    onset-sau-nghi khong flag; bat click-in-gap tu ~-28dB tro len. (Boss duyet A 1/7)."""
+    ws = max(1, int(win_ms * sr / 1000))
+    ab = np.abs(audio)
+    n = len(audio) // ws
+    if n < 3:
+        return []
+    pk = np.array([ab[i*ws:(i+1)*ws].max() for i in range(n)]) + 1e-9
+    db = 20 * np.log10(pk)
+    issues = []
+    for i in range(1, n - 1):
+        if db[i] > cur_thr_db and (db[i]-db[i-1]) > delta_db and (db[i]-db[i+1]) > delta_db:
+            issues.append({'rule': 'R80.click', 'sev': 'HIGH', 'type': 'click_transient',
+                           't': round(i*ws/sr, 2), 'cur_db': round(float(db[i]), 1),
+                           'drop_db': round(float(min(db[i]-db[i-1], db[i]-db[i+1])), 1)})
+    return issues
+
 def qa_section(path):
     a, sr = sf.read(path)
     if a.ndim > 1: a = a.mean(axis=1)
@@ -79,6 +102,7 @@ def qa_section(path):
     issues.extend(scan_overall_peak(a, sr))
     issues.extend(scan_tail_residue(a, sr))
     issues.extend(scan_internal_silence(a, sr))
+    issues.extend(scan_click_transients(a, sr))
     return issues, {'duration': len(a)/sr, 'sr': sr,
                     'peak_db': round(20*np.log10(np.abs(a).max()+1e-9), 2),
                     'rms_db': round(20*np.log10(np.sqrt(np.mean(a**2))+1e-9), 2)}
