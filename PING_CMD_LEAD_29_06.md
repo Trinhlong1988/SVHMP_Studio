@@ -321,6 +321,7 @@ SAU ĐÓ FIX CHẶT CHẼ CÁC s TRƯỚC KHI REN"
 
 ---
 ## AUTO LOG (tự động cập nhật)
+- `01:06` **[FIX]** Em fix: PACK1 item4: registry.yaml flow-style -> block-style multi-line indent chuan (giu nguyen comment+data). Verify semantic bat bien: registry 0/0/0, auditor SHIP, pytest 18 passed, py_compile exit0. Items 1-3 von da dung tren 6ccdad0 (bang chung remote).
 - `00:57` **[FIX]** Em fix: PACK1 deep-fix: auditor.decide([]) -> BLOCK_SHIP (fail-safe, khong mac dinh SHIP) + test R209 cap nhat. Verify: py_compile auditor/test exit0, YAML safe_load OK (item1-3 von da valid), registry 0/0/0, auditor SHIP, pytest 18 passed. + PACK2 tool artifact_contract_check.py (DoD matrix + chong phantom).
 - `00:51` **[FIX]** Em fix: PACK1 Constitution (enterprise 18-doc, tuan tu): 5 doc constitution tool-tied + auditor.py (independent auditor, Builder cam tu tuyen PASS) + test R209 enforce (auditor BLOCK khi fail). Reconcile R1/R7/R200/R211 (chong spam). Kiem chung: registry 0/0/0 PASS, pytest 18 passed, auditor SHIP 3/3.
 - `00:37` **[FIX]** Em fix: G1 complete (Boss 2/7): file_index 217 mapped 0 UNMAPPED, deprecation_report (196 active/21 deprecated/1 forbidden), 14 domain manifests, CI gate + pre-push hook (core.hooksPath=.githooks), pytest bridge. Registry 0 MISSING/0 DUP/0 UNMAPPED PASS. pytest -q 13 passed.
