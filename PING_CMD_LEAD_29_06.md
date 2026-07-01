@@ -321,6 +321,7 @@ SAU ĐÓ FIX CHẶT CHẼ CÁC s TRƯỚC KHI REN"
 
 ---
 ## AUTO LOG (tự động cập nhật)
+- `18:42` **[INFO]** Info: Lock handle @Hacdaky.channel + SDT verified (khong luu so) vao identity doc. KHONG dung svhmp_v13_render.py (thay doi '1/7 Boss' TAIL_TRIM_DB -50/grace 150 van cho nguoi lam tu commit)
 - `18:07` **[RULE]** Rule new/update: LOCK Mo ta kenh (About) + chot gio dang 20:00 ICT (Mr.Long override bible/07 cu 21:00-22:00). Cap nhat assets/hdk_channel/youtube_channel_identity_LOCK.md + bible/07_viewer_persona.yaml cho dong bo toan du an
 - `17:49` **[RULE]** Rule new/update: LOCK YouTube channel keywords (19 tu, Mr.Long chot 1/7) -> assets/hdk_channel/youtube_channel_identity_LOCK.md. Da kiem chung kenh that + SEO 2025. Pending: handle/About/avatar/banner/xac minh SDT
 - `17:04` **[FIX]** Em fix: gitignore runtime/cmd_progress/*.yaml (live progress may-local) + untrack v13_render.yaml. GIU production_validation_v200 + qa_full_v108 evidence. Fix 'unstaged changes' chan pull

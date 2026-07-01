@@ -10,7 +10,7 @@ Verified:  Đối chiếu kênh thật (Quàng A Tũn, Truyện của Emma, VOV)
 ## Brand
 - **Tên kênh:** Hắc Dạ Ký
 - **Slogan:** Chuyện kể từ cõi vô hình
-- **@handle (dự kiến):** @hacdaky (fallback: @HacDaKy.official / @chuyenkecovohinh)
+- **@handle:** **@Hacdaky.channel** — ĐÃ SET (https://www.youtube.com/@Hacdaky.channel)
 - **Series đang phát:** Chuyến xe cuối cùng về đâu (90 tập, 3 season, pivot ep73, finale ep90)
 - **Quốc gia:** Việt Nam
 - **Narrator/tác giả:** Hắc Dạ Ký (ẩn danh — KHÔNG dùng "Khánh An", xem B39)
@@ -70,6 +70,6 @@ Hãy Đăng ký Hắc Dạ Ký để đồng hành cùng những câu chuyện g
 ```
 
 ## Chưa lock (pending — set trên YouTube)
-- [ ] @handle chính thức
+- [x] @handle — **@Hacdaky.channel** ✅
+- [x] Xác minh SĐT — ✅ ĐÃ XÁC MINH (mở khoá upload >15 phút + thumbnail tùy chỉnh; KHÔNG lưu số)
 - [ ] Avatar 800×800 + Banner 2560×1440
-- [ ] Xác minh SĐT (bắt buộc để upload video >15 phút)
