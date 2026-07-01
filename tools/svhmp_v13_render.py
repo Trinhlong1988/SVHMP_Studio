@@ -48,7 +48,9 @@ GEN_KWARGS = {
     "length_penalty": 1.0,
     "num_beams": 5,
     "repetition_penalty": 10.0,
-    "max_mel_tokens": 1500,
+    # 1/7 Mr.Long: hạ 1500->1000 chặn runaway (1500=30s -> 1000=20s). ~50 tok/giây;
+    # câu dài nhất ~10s=500tok nên 1000 dư gấp đôi, KHÔNG cụt câu thật. Runaway còn lại -> trim v2 dọn.
+    "max_mel_tokens": 1000,
 }
 
 
