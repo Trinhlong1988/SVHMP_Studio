@@ -71,8 +71,16 @@ class CharacterProfile:
     death: dict = field(default_factory=dict)         # type(cai chet), pain(noi dau), time_of_loss
     relationships: list = field(default_factory=list) # [{who, relation, status}] — ho hang/ban be/dong nghiep
 
+    # --- 6 MODULE mo rong (phan bien.txt) — tai dung du an dai hoi ---
+    lifecycle: dict = field(default_factory=dict)     # created, first_ep, last_ep, locked, dead, reincarnated, reusable
+    state_by_episode: dict = field(default_factory=dict)  # STATE dong theo tap (vui/so/bi thuong/say...) — khac identity
+    story_memory: dict = field(default_factory=dict)  # su kien: ai biet / ai chua / khan gia biet / nguoi ke chua lo
+    suspense_profile: dict = field(default_factory=dict)  # muc bi an/am anh/hoi tiec/cam dong/so hai (SVHMP)
+
     # nhom truong MO RONG dung do completeness
-    EXT_GROUPS = ('physical', 'attire', 'personality', 'voice', 'background', 'death', 'relationships', 'dob', 'life_status')
+    EXT_GROUPS = ('physical', 'attire', 'personality', 'voice', 'background', 'death',
+                  'relationships', 'dob', 'life_status', 'lifecycle', 'state_by_episode',
+                  'story_memory', 'suspense_profile')
 
     def completeness(self) -> float:
         filled = 0
@@ -130,7 +138,8 @@ class CharacterRegistry:
         if isinstance(v, dict):
             prof.voice = VoiceProfile(**{k: x for k, x in v.items()
                                          if k in {f.name for f in dc_fields(VoiceProfile)}})
-        for g in ('physical', 'attire', 'personality', 'background', 'death'):
+        for g in ('physical', 'attire', 'personality', 'background', 'death',
+                  'lifecycle', 'state_by_episode', 'story_memory', 'suspense_profile'):
             if isinstance(p.get(g), dict):
                 setattr(prof, g, p[g])
         if isinstance(p.get('relationships'), list):

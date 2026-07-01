@@ -76,3 +76,28 @@ Tiếng Việt 3 vùng khác **từ vựng + tiểu từ + xưng hô** (không c
 | **5. Dàn phụ** | Đăng ký nhân vật phụ mỗi tập (chống trùng/mâu thuẫn) | mở rộng roster (secondary cast) |
 
 **Quyết định cần Boss chốt:** (a) khoá 100 hay mở thêm dàn phụ có kiểm soát? (b) bổ sung **trẻ em/người già** vào phân bố tuổi? (c) chốt 3 vùng giọng + quota? (d) mức "completeness gate" để 1 tập được render?
+
+---
+
+## PHẦN E — CHỐT: Character Identity System **v2** (hợp nhất 3 nguồn + thực thi)
+
+Hợp nhất **Đúng.docx** + **phản biện.txt (bản 2)** + phản biện Claude → xây + kiểm chứng xong:
+
+**Schema `bible/37_character_schema.yaml`** — audio-first, 3 tầng + 6 module + Diversity + Canon Lock:
+- Tier1 bắt buộc (~40) / Tier2 bối cảnh / Tier3 mở rộng · Voice + Relationship Graph **bắt buộc**
+- 6 module: Lifecycle · State(động/tập) · Story Memory · Dialogue Consistency · Suspense Profile · **Canon Lock**
+- Cắt field thị giác thuần (blood_type/eyelash/ADN…) — **không bịa vô căn cứ**
+
+**Hệ vận hành + QA (4 tool, chạy được):**
+| Tool | Vai trò | Bằng chứng test |
+|---|---|---|
+| `character_manager.py` | class định danh id + trường, tái dùng roster/bible/23 | **R205 16/16** |
+| `dialog_voice_validator.py` | giọng/vùng/xưng hô + đúng tuổi | **R206 1000/1000**, **R208 1000/1000** |
+| `story_consistency_validator.py` | Canon Lock cross-episode | **R207 1000/1000** |
+| `character_balance_report.py` | cân bằng + Diversity vs target | 7 flag + 6 trục 0-distinct |
+
+**Bằng chứng lệch (số thật):** tuổi child **0%**/elderly **6%** (target 10-15/15-20); death **9/9 kiểu thiếu**; region **100/100 chưa set**; diversity occupation/hometown/region/death/pain = **0 distinct**.
+
+**Hiến pháp:** đã thêm **TỐI THƯỢNG R210 CHARACTER IDENTITY SYSTEM v2** vào `CLAUDE.md` (completeness gate + Canon Lock + balance target + reconcile không phá bible/23/11).
+
+**Còn chờ Mr.Long lock:** (1) chốt schema PROPOSED→LOCKED; (2) duyệt **roster migration** (thêm trẻ em/người già + set giọng/quê/death — đụng `framework_lock`).
