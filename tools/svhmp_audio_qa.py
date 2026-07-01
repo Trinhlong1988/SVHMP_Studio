@@ -107,23 +107,41 @@ def qa_section(path):
                     'peak_db': round(20*np.log10(np.abs(a).max()+1e-9), 2),
                     'rms_db': round(20*np.log10(np.sqrt(np.mean(a**2))+1e-9), 2)}
 
+def _load_waivers(path):
+    """Waiver chong spam: (rule[,type]) da phat hien+duyet -> QA khong bao lai."""
+    if not path:
+        return []
+    return json.load(open(path, encoding='utf-8')).get('waive', [])
+
+def _is_waived(issue, waivers):
+    for w in waivers:
+        if w.get('rule') == issue.get('rule') and w.get('type', issue.get('type')) == issue.get('type'):
+            return True
+    return False
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('files', nargs='+')
     ap.add_argument('--json-out', default=None)
     ap.add_argument('--strict', action='store_true', help='exit 1 if any HIGH issue')
+    ap.add_argument('--waivers', default=None,
+                    help='JSON waiver: bo qua cac lop loi DA DUYET (chong spam lai loi da phat hien)')
     args = ap.parse_args()
+    waivers = _load_waivers(args.waivers)
 
-    total = {'files': [], 'high_count': 0, 'med_count': 0}
+    total = {'files': [], 'high_count': 0, 'med_count': 0, 'waived_count': 0}
     for f in args.files:
-        issues, stats = qa_section(f)
+        raw_issues, stats = qa_section(f)
+        waived = [i for i in raw_issues if _is_waived(i, waivers)]
+        issues = [i for i in raw_issues if not _is_waived(i, waivers)]
         high = sum(1 for i in issues if i['sev'] == 'HIGH')
         med = sum(1 for i in issues if i['sev'] == 'MED')
         total['high_count'] += high
         total['med_count'] += med
+        total['waived_count'] += len(waived)
         print(f"\n=== {Path(f).name} ===")
         print(f"  dur={stats['duration']:.2f}s sr={stats['sr']} peak={stats['peak_db']}dB rms={stats['rms_db']}dB")
-        print(f"  Issues: HIGH={high} MED={med}")
+        print(f"  Issues MOI: HIGH={high} MED={med}" + (f"  (da waive {len(waived)} loi biet/duyet - khong spam)" if waived else ""))
         for i in issues[:10]:
             print(f"  [{i['sev']}][{i['rule']}] {i['type']}: {dict((k,v) for k,v in i.items() if k not in ('rule','sev','type'))}")
         if len(issues) > 10:
