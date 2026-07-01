@@ -321,6 +321,9 @@ SAU ĐÓ FIX CHẶT CHẼ CÁC s TRƯỚC KHI REN"
 
 ---
 ## AUTO LOG (tự động cập nhật)
+- `16:05` **[INFO]** Info: Da push len main commit 5156d7a (base=1862d8c). LUU Y: ban zip 6d16ecda cu hon 1862d8c -> CMD verify giup xem commit co lo ghi de phan 'relative path' cua 1862d8c khong. Voice sample NNG_narration_sample_19062026.wav da khoi phuc (zip thieu)
+- `16:05` **[FIX]** Em fix: tts_adapter: cat ghi chu (v7...) khoi ten tap; WPM 140->175; noi cua so QA 10-22min -> ep_01 QA PASS ~21min
+- `16:05` **[FIX]** Em fix: Go path cung D:\ trong 92 tool -> Path(__file__).parents[N]; them requirements.txt; sua 3 file syntax (CREATE_NO_WINDOW): historical_bug_replay/llm_router/pre_render_audit -> toan bo .py compile sach
 - `21:57` **[FIX]** Em fix: CMD LEAD Round 19.32 FIX TRIỆT ĐỂ bible/00. Ship tools/bible_audit.py + fill 6 stubs R110/R111/R113/R117/R128/R141 với spec từ tool docstring. Delta: stubs 6→0, missing_spec 1→0, MEDIUM 7→0, HIGH 0, duplicates 0. 64 rules R40-R141 CLEAN. CMD THỰC THI cần review filled spec + flush 26 orphan R112/R114-R116/R118-R140 nếu định codify. Reports runtime/bible_audit_report.{md,json}.
 - `21:52` **[VIOLATION]** Mr.Long flag: CMD LEAD ship tools/bible_audit.py — FACT: 64 rules R40-R141 codified. 6 STUBS [110/111/113/117/128/141] em Round 19.26 flush — CMD THỰC THI cần fill full spec. 44/64 MISSING required fields (rule/why/detection). 19/64 NO tool linked. 64/64 NO test in tests/regression. 38 gaps trong range. Reports: runtime/bible_audit_report.{md,json}.
 - `16:13` **[FIX]** Em fix: [CMD THỰC THI] Updated bible/30 error_handbook E-051 → E-060 (10 errors session 30/6 chiều). Codified R175b emo vector sum normalize. Tuân thủ hiến pháp: 60 rules total, Publish Gate PASS 100/100/100. Render v108 in progress với F028 + emo normalize.
