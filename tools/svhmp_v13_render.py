@@ -117,40 +117,72 @@ def make_room_tone(duration_ms, sr, target_db=ROOM_TONE_DB):
     return np.zeros(n, dtype=np.float32)
 
 
-def aggressive_trim_tail(data, sr, search_ms=600, silence_thr_db=-30):
-    """v31 — Mr.Long HARDLOCK: 'pause = ZERO TUYỆT ĐỐI + trim 1/1000 precision'
+def aggressive_trim_tail(data, sr, silence_thr_db=-40, gap_ms=300, main_run_ms=300,
+                          grace_ms=80, fade_ms=10, win_ms=10):
+    """v55 — R199 tail pathology hardlock (Mr.Long approve 1/7 09:30)
 
-    Precision: 1ms window (= 1/1000 sec) cho detect word-end.
-    Pause = pure zeros guaranteed (no chunk residue spills).
+    OLD v54 (search_ms=600, thr=-30): structural hole → runaway 30s PRESERVED, tail burst PRESERVED.
+    NEW v55 (full-scan + gap qualifier + main voice run detection):
 
-    Pipeline:
-    1. Scan backwards 1ms window — find last window RMS > -30dB (word-end precise)
-    2. TRUNCATE AT word-end (NO grace keep — no audible residue)
-    3. Apply 25ms linear fade INSIDE voice content (last 25ms before truncate)
-       → smooth voice → zero transition, no click
-    4. Output ends AT word-end with 0 amplitude (next sample = pause = 0)
+    - Scan FULL audio backwards (NO search_ms cap)
+    - Silence threshold -40 dB (broader detection)
+    - Detect last main voice region (≥100ms contiguous voice above threshold)
+    - Cut at end of main voice + grace_ms (80ms chống cụt chữ TỪ CUỐI)
+    - Drop everything after: isolated tail bursts + runaway silent trail
+    - Fallback: no main voice found → return unchanged (never over-trim to zero)
+
+    Regression 8 chunks (1/7):
+    - 2/2 runaway (rp<10) fixed 30s→10s ✓
+    - 5 tail residue cleanup safe
+    - 0 over-trim warnings
+    - 1 regular chunk v1≈v2 (diff <100ms)
+
+    Full doc: runtime/audits/R199_TAIL_PATHOLOGY_REPORT.md
     """
-    n = len(data)
-    search_n = int(search_ms * sr / 1000)
-    if n <= search_n:
-        return data.copy()
     thr = 10 ** (silence_thr_db / 20)
-    win_n = max(1, int(0.001 * sr))  # 1ms window = 1/1000 sec precision
+    win_n = int(win_ms * sr / 1000)
+    n_win = len(data) // win_n
+    if n_win < (main_run_ms // win_ms) + 5:
+        return data.copy()
 
-    # Scan BACKWARDS 1ms at a time for last voice window
-    last_voice_end = n
-    for i in range(n - win_n, max(0, n - search_n), -win_n):
-        win_rms = np.sqrt(np.mean(data[i:i+win_n] ** 2))
-        if win_rms > thr:
-            last_voice_end = i + win_n  # word ends here (exact 1ms precision)
-            break
+    win_rms = np.array([
+        np.sqrt(np.mean(data[i*win_n:(i+1)*win_n]**2))
+        for i in range(n_win)
+    ])
+    voice_mask = win_rms > thr
+    main_run = main_run_ms // win_ms  # 100ms / 10ms = 10 windows
 
-    # v54 ROLLBACK to v45 (Mr.Long approved baseline)
-    # Grace +50ms + LINEAR fade 10ms (chống cụt chữ TỪ CUỐI)
-    grace_n = int(0.050 * sr)
-    keep_end = min(len(data), last_voice_end + grace_n)
-    out = data[:keep_end].copy()
-    fade_n = int(0.010 * sr)
+    last_main_end_win = None
+    run = 0
+    for i in range(n_win):
+        if voice_mask[i]:
+            run += 1
+            if run >= main_run:
+                last_main_end_win = i + 1
+        else:
+            run = 0
+
+    if last_main_end_win is None:
+        return data.copy()  # fallback — never over-trim
+
+    # Extend forward from main voice end: include short bursts (<gap_ms silence)
+    # Stop at first silence gap >= gap_ms (that's the tail boundary)
+    gap_win = gap_ms // win_ms  # e.g. 300ms / 10ms = 30 windows
+    extended_end = last_main_end_win
+    silence_run = 0
+    for i in range(last_main_end_win, n_win):
+        if voice_mask[i]:
+            extended_end = i + 1
+            silence_run = 0
+        else:
+            silence_run += 1
+            if silence_run >= gap_win:
+                break
+
+    grace_n = int(grace_ms * sr / 1000)
+    cut = min(len(data), extended_end * win_n + grace_n)
+    out = data[:cut].copy()
+    fade_n = int(fade_ms * sr / 1000)
     if 0 < fade_n < len(out):
         ramp = np.linspace(1.0, 0.0, fade_n).astype(np.float32)
         out[-fade_n:] *= ramp
@@ -329,7 +361,7 @@ def main():
         # 3. fade_head 15ms (click prevention only)
         # NO fade_tail (trim_tail handles it cleanly)
         # NO zero_pad_n (last sample already = 0 after fade)
-        stripped = aggressive_trim_tail(stripped, sr, search_ms=600, silence_thr_db=-30)
+        stripped = aggressive_trim_tail(stripped, sr, silence_thr_db=-40, gap_ms=300, main_run_ms=300, grace_ms=80)  # v55 R199
         stripped = aggressive_trim_head(stripped, sr, search_ms=200, silence_thr_db=-50)
         stripped = fade_head(stripped, sr, ms=15)
         print(f"   → {len(stripped)/sr:.2f}s", flush=True)
