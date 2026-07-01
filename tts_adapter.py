@@ -700,7 +700,7 @@ BRAND_INTRO_TEXT = """[emph:whisper] Kính chào quý thính giả. [pause:1000m
 
 Có những câu chuyện chỉ kể được lúc đêm khuya — khi đèn đã tắt, khi mưa còn rơi ngoài cửa kính, khi lòng người chưa kịp ngủ. [pause:1500ms]
 
-Đêm nay, qua giọng đọc của tác giả Khánh An, xin gửi tới quý vị một loạt truyện ma. [pause:1000ms] Những câu chuyện về điều người ta giấu kín, về những lời chưa kịp nói. [pause:1500ms]
+Đêm nay, qua giọng đọc của Hắc Dạ Ký, xin gửi tới quý vị một loạt truyện ma. [pause:1000ms] Những câu chuyện về điều người ta giấu kín, về những lời chưa kịp nói. [pause:1500ms]
 
 [emph:whisper] Xin mời quý thính giả... cùng tôi lắng nghe. [pause:2500ms]
 """

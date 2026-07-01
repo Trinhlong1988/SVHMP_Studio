@@ -22,7 +22,7 @@ Embedding cached `.npy` file để speaker similarity QA (R181c) load nhanh.
 
 | Voice ID | Source plan | Status |
 |---|---|---|
-| `NARRATOR` | Reuse `D:/rvc-vn/assets/weights/NNG.pth` source WAV — Khánh An | PLACEHOLDER — TBD Phase 2 |
+| `NARRATOR` | Reuse `D:/rvc-vn/assets/weights/NNG.pth` source WAV — Hắc Dạ Ký (narrator ẩn danh) | PLACEHOLDER — TBD Phase 2 |
 | `KHAI_PHONG` | Reuse `D:/DỰ ÁN AI/GIỌNG ĐỌC/DỰ ÁN TRUYỆN MA/SVHMP_Studio/GIỌNG ĐỌC  ANH KHÁNH.wav` baseline | PLACEHOLDER — TBD Phase 2 |
 | `DRIVER` | Cần record / source — voice trầm già 55-65 tuổi | PLACEHOLDER — TBD Phase 2 |
 | `GIRL_GHE7` | Cần record / source — voice nữ trẻ 20-28 tuổi | PLACEHOLDER — TBD Phase 2 |

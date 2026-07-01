@@ -158,7 +158,7 @@ Kính chào quý thính giả.
 
 Có những câu chuyện chỉ kể được lúc đêm khuya — khi đèn đã tắt, khi mưa còn rơi ngoài cửa kính, khi lòng người chưa kịp ngủ.
 
-Đêm nay, qua giọng kể Nguyễn Ngọc Ngạn, xin gửi tới quý vị một loạt truyện ma của tác giả Khánh An. Những câu chuyện về điều người ta giấu kín, về những lời chưa kịp nói.
+Đêm nay, qua giọng kể Nguyễn Ngọc Ngạn, xin gửi tới quý vị một loạt truyện ma của tác giả Hắc Dạ Ký. Những câu chuyện về điều người ta giấu kín, về những lời chưa kịp nói.
 
 Mời quý thính giả lắng nghe. [pause:1500ms]
 
