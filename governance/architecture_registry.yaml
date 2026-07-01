@@ -55,9 +55,15 @@ domains:
                       governance/master_roadmap.md, governance/deprecation_report.md, CLAUDE.md]
     checker: tools/architecture_registry_check.py
     ci_gate: tools/ci_gate.py
+    auditor: tools/auditor.py    # PACK1: independent auditor (Builder cam tu tuyen PASS)
     triage: [tools/registry_triage.py, tools/deprecation_report.py, tools/gen_domain_manifests.py]
     manifests_dir: governance/manifests/
-    promotion_status: locked
+    constitution: [governance/constitution/00_constitution.md, governance/constitution/01_builder.md,
+                   governance/constitution/02_architecture_auditor.md, governance/constitution/03_qa_auditor.md,
+                   governance/constitution/04_publish_auditor.md]
+    tests: [tests/test_governance_enforce_r209.py]
+    promotion_status: candidate   # PACK1 dang mo rong; 'locked' sau khi du 5 pack
+    enterprise_pack_progress: {pack1_constitution: candidate, pack2_governance: todo, pack3_cicd: todo, pack4_template: todo, pack5_quality: todo}
     data_contract: {input: "registry yaml + disk scan", output: "gap report", exit: "0 ok / 1 missing"}
 
   character:

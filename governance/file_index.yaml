@@ -176,6 +176,10 @@ files:
     domain: tests
     status: active
     tier: 3
+  tests/test_governance_enforce_r209.py:
+    domain: tests
+    status: active
+    tier: 3
   tests/test_harness.py:
     domain: tests
     status: active
@@ -352,6 +356,10 @@ files:
     domain: text_qa
     status: active
     tier: 3
+  tools/auditor.py:
+    domain: unclassified
+    status: active
+    tier: null
   tools/auto_fix_anaphora.py:
     domain: text_autofix
     status: active
@@ -869,4 +877,4 @@ files:
     status: active
     tier: 3
 generated_by: tools/registry_triage.py
-total: 217
+total: 219

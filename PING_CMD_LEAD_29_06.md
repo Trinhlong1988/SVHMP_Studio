@@ -321,6 +321,7 @@ SAU ĐÓ FIX CHẶT CHẼ CÁC s TRƯỚC KHI REN"
 
 ---
 ## AUTO LOG (tự động cập nhật)
+- `00:51` **[FIX]** Em fix: PACK1 Constitution (enterprise 18-doc, tuan tu): 5 doc constitution tool-tied + auditor.py (independent auditor, Builder cam tu tuyen PASS) + test R209 enforce (auditor BLOCK khi fail). Reconcile R1/R7/R200/R211 (chong spam). Kiem chung: registry 0/0/0 PASS, pytest 18 passed, auditor SHIP 3/3.
 - `00:37` **[FIX]** Em fix: G1 complete (Boss 2/7): file_index 217 mapped 0 UNMAPPED, deprecation_report (196 active/21 deprecated/1 forbidden), 14 domain manifests, CI gate + pre-push hook (core.hooksPath=.githooks), pytest bridge. Registry 0 MISSING/0 DUP/0 UNMAPPED PASS. pytest -q 13 passed.
 - `00:22` **[FIX]** Em fix: Tier-0 Governance + Master Roadmap (Boss 2/7): architecture_registry.yaml + checker (evidence 213 file/0 MISSING/186 unmapped) + hien phap R211 + governance/master_roadmap.md (generic-core+genre-overlay, tai dung tieu thuyet/podcast/tinh cam/trinh tham). Full test SHOW: R199-208 + confusion 3x1000/1000 all exit=0.
 - `00:16` **[FIX]** Em fix: Character v2 LOCK + roster migrate (Boss 2/7 'mo rule + fix hoan chinh'): enrich 100 passenger age/region/quehuong/death/life_status can bang -> balance 7 flag->0, 100/100 profile hop le (que<->giong), giu nguyen identity. bible/37 + R210 = LOCKED. R205 16/16.
