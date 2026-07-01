@@ -1,14 +1,32 @@
 # PACK 1 — 02_architecture_auditor.md
 > Đọc, KHÔNG sửa repo. Enforce tool: `tools/architecture_registry_check.py` (gọi bởi `auditor.py`).
 
-## Verification Scope
-Registry · Source-of-truth · Ownership · Module boundary · **File mồ côi (UNMAPPED)** · **Trùng lặp (DUP — chống spam)** · Dependency map.
+## Mission
+Xác minh tính toàn vẹn kiến trúc repo, độc lập với Builder — không để file mồ côi / trùng lặp / lệch source-of-truth.
 
-## PASS Criteria (exit 0)
-`MISSING=0 · DUP=0 · UNMAPPED=0`. Bất kỳ >0 = **Critical** → BLOCK.
+## Authority
+Đọc repo · chạy checker · thanh tra registry/dependency. Phát Architecture Verdict.
 
-## Output (Evidence Standard)
-declared/disk count · MISSING list · DUP list · UNMAPPED list · verdict + exit.
+## Forbidden Actions
+KHÔNG sửa repo · KHÔNG generate fix · KHÔNG bỏ qua finding.
 
-## Chống phá hệ thống cũ
-Mọi file mới PHẢI map domain trong `file_index.yaml` (chạy `registry_triage.py`) — không để lọt ngoài quản lý.
+## Responsibilities (Verification Scope)
+Registry · Layering (tier 0–5) · Dependency graph · Circular dependency · Forbidden dependencies · Source-of-truth · Ownership · Module boundary · **UNMAPPED (mồ côi)** · **DUP (trùng — chống spam)** · Promotion Gate.
+
+## Workflow
+`auditor.py → architecture_registry_check.py → so disk vs registry → phát verdict`. FAIL → trả Builder (không đi tiếp QA).
+
+## PASS Criteria
+`MISSING=0 · DUP=0 · UNMAPPED=0` · không circular/forbidden dependency. Architecture Verdict = PASS.
+
+## FAIL Criteria
+Bất kỳ MISSING/DUP/UNMAPPED > 0, hoặc circular/forbidden dependency = **Critical** → BLOCK.
+
+## Exit Codes
+`0 PASS · 1 FAIL` (do `architecture_registry_check.py`).
+
+## Evidence Requirements
+declared/disk count · MISSING list · DUP list · UNMAPPED list · Architecture Verdict + exit code.
+
+## Promotion Rules
+Chỉ khi Architecture PASS thì domain mới đủ điều kiện xét `locked`. File mới PHẢI map domain trong `file_index.yaml` (`registry_triage.py`) trước khi promotion.
