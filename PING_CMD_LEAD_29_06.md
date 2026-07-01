@@ -321,6 +321,7 @@ SAU ĐÓ FIX CHẶT CHẼ CÁC s TRƯỚC KHI REN"
 
 ---
 ## AUTO LOG (tự động cập nhật)
+- `18:07` **[RULE]** Rule new/update: LOCK Mo ta kenh (About) + chot gio dang 20:00 ICT (Mr.Long override bible/07 cu 21:00-22:00). Cap nhat assets/hdk_channel/youtube_channel_identity_LOCK.md + bible/07_viewer_persona.yaml cho dong bo toan du an
 - `17:49` **[RULE]** Rule new/update: LOCK YouTube channel keywords (19 tu, Mr.Long chot 1/7) -> assets/hdk_channel/youtube_channel_identity_LOCK.md. Da kiem chung kenh that + SEO 2025. Pending: handle/About/avatar/banner/xac minh SDT
 - `17:04` **[FIX]** Em fix: gitignore runtime/cmd_progress/*.yaml (live progress may-local) + untrack v13_render.yaml. GIU production_validation_v200 + qa_full_v108 evidence. Fix 'unstaged changes' chan pull
 - `16:47` **[FIX]** Em fix: 6 tool legacy (svhmp_100check_master/dupe_audit/final_verify/audit_chi_tiet/post_rotate_verify/vnsl_validator) nay thoat gon [SKIP] khi thieu workdir + ho tro env SVHMP_WORKDIR, thay vi crash traceback
