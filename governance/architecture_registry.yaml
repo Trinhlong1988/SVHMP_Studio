@@ -51,8 +51,12 @@ dependency_map:
 domains:
   governance:
     tier: 0
-    source_of_truth: [governance/architecture_registry.yaml, CLAUDE.md]
+    source_of_truth: [governance/architecture_registry.yaml, governance/file_index.yaml,
+                      governance/master_roadmap.md, governance/deprecation_report.md, CLAUDE.md]
     checker: tools/architecture_registry_check.py
+    ci_gate: tools/ci_gate.py
+    triage: [tools/registry_triage.py, tools/deprecation_report.py, tools/gen_domain_manifests.py]
+    manifests_dir: governance/manifests/
     promotion_status: locked
     data_contract: {input: "registry yaml + disk scan", output: "gap report", exit: "0 ok / 1 missing"}
 

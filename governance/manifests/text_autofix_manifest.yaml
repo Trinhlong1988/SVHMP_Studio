@@ -1,0 +1,18 @@
+domain: text_autofix
+tier: 3
+owner: UNASSIGNED
+promotion_status: candidate
+source_of_truth: []
+data_contract: null
+files:
+- tools/auto_fix_anaphora.py
+- tools/auto_fix_dialogue_hierarchy.py
+- tools/auto_fix_phrase_repetition.py
+- tools/auto_fix_r66_chain_merge.py
+- tools/auto_fix_short_eol.py
+- tools/auto_fix_short_start.py
+- tools/auto_fix_tilde_eol.py
+- tools/detect_template_repetition.py
+- tools/pre_write_enforcer.py
+- tools/text_batch_fix.py
+file_count: 10

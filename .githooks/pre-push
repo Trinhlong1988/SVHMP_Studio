@@ -1,3 +1,10 @@
 #!/bin/sh
-command -v git-lfs >/dev/null 2>&1 || { printf >&2 "\n%s\n\n" "This repository is configured for Git LFS but 'git-lfs' was not found on your path. If you no longer wish to use Git LFS, remove this hook by deleting the 'pre-push' file in the hooks directory (set by 'core.hookspath'; usually '.git/hooks')."; exit 2; }
-git lfs pre-push "$@"
+# git-lfs optional (may Admin khong co lfs) — skip neu thieu, KHONG chan push
+if command -v git-lfs >/dev/null 2>&1; then git lfs pre-push "$@" || exit $?; fi
+
+# --- SVHMP CI GATE (R211, Boss 2/7) — chan push neu registry/test FAIL ---
+PY="C:/Users/Admin/index-tts/.venv/Scripts/python.exe"
+[ -x "$PY" ] || PY=python
+echo "[pre-push] SVHMP CI gate..."
+"$PY" tools/ci_gate.py || { echo "[pre-push] CI GATE FAIL -> push BI CHAN."; exit 1; }
+exit 0

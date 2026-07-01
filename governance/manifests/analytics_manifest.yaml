@@ -1,0 +1,11 @@
+domain: analytics
+tier: 5
+owner: UNASSIGNED
+promotion_status: candidate
+source_of_truth: []
+data_contract: null
+files:
+- tools/analytics_populate.py
+- tools/cost_tracker.py
+- tools/publish_score.py
+file_count: 3
