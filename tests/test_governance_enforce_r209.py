@@ -25,8 +25,9 @@ def test_all_fail_blocks():
     assert auditor.decide([FAIL, FAIL, FAIL]) == ('BLOCK_SHIP', 1)
 
 
-def test_empty_ships():
-    assert auditor.decide([]) == ('SHIP', 0)
+def test_empty_blocks():
+    # fail-safe: khong co auditor nao chay -> PHAI BLOCK (khong mac dinh SHIP)
+    assert auditor.decide([]) == ('BLOCK_SHIP', 1)
 
 
 def test_live_architecture_and_publish_healthy():

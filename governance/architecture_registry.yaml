@@ -56,6 +56,7 @@ domains:
     checker: tools/architecture_registry_check.py
     ci_gate: tools/ci_gate.py
     auditor: tools/auditor.py    # PACK1: independent auditor (Builder cam tu tuyen PASS)
+    contract_check: tools/artifact_contract_check.py   # PACK2: DoD matrix + chong phantom artifact
     triage: [tools/registry_triage.py, tools/deprecation_report.py, tools/gen_domain_manifests.py]
     manifests_dir: governance/manifests/
     constitution: [governance/constitution/00_constitution.md, governance/constitution/01_builder.md,

@@ -48,7 +48,11 @@ def publish_auditor():
 
 def decide(results):
     """results: list[(name, ok, detail, code)] -> (verdict, exit_code).
-    Enforce: BAT KY auditor FAIL -> BLOCK_SHIP. Tach ra de test R209 chung thuc."""
+    Enforce: BAT KY auditor FAIL -> BLOCK_SHIP.
+    Fail-safe: KHONG co auditor nao chay -> BLOCK_SHIP (khong duoc mac dinh SHIP).
+    Tach ra de test R209 chung thuc."""
+    if not results:
+        return ('BLOCK_SHIP', 1)
     fail = sum(1 for _, ok, _, _ in results if not ok)
     return ('SHIP', 0) if not fail else ('BLOCK_SHIP', 1)
 
