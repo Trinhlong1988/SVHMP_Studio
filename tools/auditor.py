@@ -33,6 +33,11 @@ def architecture_auditor():
     return ('Architecture', code == 0, detail, code)
 
 
+def contract_auditor():
+    code, out = _run('tools/artifact_contract_check.py')
+    return ('Contract', code == 0, 'DoD matrix — 0 phantom artifact' if code == 0 else 'phantom artifact khai != disk', code)
+
+
 def qa_auditor():
     code, out = _run('tools/ci_gate.py')
     npass = out.count('[PASS]')
@@ -60,7 +65,7 @@ def decide(results):
 def main():
     commit = _git(['rev-parse', 'HEAD'])
     branch = _git(['rev-parse', '--abbrev-ref', 'HEAD'])
-    results = [architecture_auditor(), qa_auditor(), publish_auditor()]
+    results = [architecture_auditor(), contract_auditor(), qa_auditor(), publish_auditor()]
 
     print("# INDEPENDENT AUDITOR REPORT")
     print("(Builder KHONG tu tuyen PASS — verdict do gate may nay phat ra)")

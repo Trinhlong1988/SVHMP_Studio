@@ -97,6 +97,8 @@ domains:
     ci_gate: tools/ci_gate.py
     auditor: tools/auditor.py                          # PACK1: independent auditor (Builder cam tu tuyen PASS)
     contract_check: tools/artifact_contract_check.py   # PACK2: DoD matrix + chong phantom artifact
+    evidence_gate: tools/evidence_check.py             # PACK2 07: chan report thieu bang chung
+    severity_gate: tools/severity_gate.py              # PACK2 06: chi Critical chan
     triage:
       - tools/registry_triage.py
       - tools/deprecation_report.py
@@ -108,12 +110,22 @@ domains:
       - governance/constitution/02_architecture_auditor.md
       - governance/constitution/03_qa_auditor.md
       - governance/constitution/04_publish_auditor.md
+    pack2_governance:
+      - governance/pack2/05_decision_matrix.md
+      - governance/pack2/06_severity_matrix.md
+      - governance/pack2/07_evidence_standard.md
+      - governance/pack2/08_artifact_contract.md
+      - governance/pack2/09_review_workflow.md
+      - governance/pack2/10_exception_policy.md
     tests:
       - tests/test_governance_enforce_r209.py
+      - tests/test_artifact_contract_r212.py
+      - tests/test_evidence_standard_r213.py
+      - tests/test_severity_rule_r214.py
     promotion_status: candidate   # PACK1 dang mo rong; 'locked' sau khi du 5 pack
     enterprise_pack_progress:
       pack1_constitution: candidate
-      pack2_governance: todo
+      pack2_governance: candidate
       pack3_cicd: todo
       pack4_template: todo
       pack5_quality: todo

@@ -12,6 +12,12 @@ SVHMP = Path(__file__).parent.parent
 DIMS = ['schema', 'manager', 'validator', 'report', 'test', 'md_doc', 'sample_yaml', 'regression']
 
 
+def _list(v):
+    if v is None:
+        return []
+    return v if isinstance(v, list) else [v]
+
+
 def _paths(v, acc):
     if isinstance(v, str):
         if '/' in v and v.rsplit('.', 1)[-1] in ('py', 'yaml', 'yml', 'md'):
@@ -42,22 +48,30 @@ def _matrix(dom):
     }
 
 
-def main():
+def check():
+    """-> (matrix: {domain: {dim: bool}}, missing: [(domain, rel_path)]).
+    Tach ra de test R212 chung thuc (khong sys.exit)."""
     reg = yaml.safe_load((SVHMP / 'governance' / 'architecture_registry.yaml').read_text(encoding='utf-8'))
     domains = reg.get('domains') or {}
-    print("=== ARTIFACT CONTRACT CHECK (DoD matrix, may sinh) ===")
-    header = 'domain'.ljust(15) + ''.join(d[:4].ljust(6) for d in DIMS)
-    print(header)
-    missing = []
+    matrix, missing = {}, []
     for name, dom in domains.items():
-        m = _matrix(dom)
-        row = name.ljust(15) + ''.join(('  ✓  ' if m[d] else '  ·  ').ljust(6) for d in DIMS)
-        print(row)
+        matrix[name] = _matrix(dom)
         p = []
         _paths(dom, p)
         for rel in p:
             if not (SVHMP / rel).exists():
                 missing.append((name, rel))
+    return matrix, missing
+
+
+def main():
+    matrix, missing = check()
+    print("=== ARTIFACT CONTRACT CHECK (DoD matrix, may sinh) ===")
+    header = 'domain'.ljust(15) + ''.join(d[:4].ljust(6) for d in DIMS)
+    print(header)
+    for name, m in matrix.items():
+        row = name.ljust(15) + ''.join(('  ✓  ' if m[d] else '  ·  ').ljust(6) for d in DIMS)
+        print(row)
     print("-" * len(header))
     if missing:
         print(f"[CRITICAL] {len(missing)} artifact KHAI nhung KHONG co tren disk:")
@@ -65,7 +79,7 @@ def main():
             print(f"  ! {name}: {rel}")
         print("=== FAIL ===")
         sys.exit(1)
-    print(f"OK: moi artifact khai deu ton tai ({len(domains)} domain).  === PASS ===")
+    print(f"OK: moi artifact khai deu ton tai ({len(matrix)} domain).  === PASS ===")
     sys.exit(0)
 
 
