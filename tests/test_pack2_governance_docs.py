@@ -20,9 +20,9 @@ PACK2_DOCS = ['05_decision_matrix.md', '06_severity_matrix.md',
               '07_evidence_standard.md', '08_artifact_contract.md',
               '09_review_workflow.md', '10_exception_policy.md']
 
-# 8 element bat buoc / doc (enterprise template). Match theo nhan (case-insensit).
-REQUIRED_ELEMENTS = ['purpose', 'scope', 'responsibilit', 'mandatory',
-                     'pass', 'fail', 'example', 'promotion']
+# 11 element bat buoc / doc (enterprise freeze-gate v1.0). Match nhan (case-insensit).
+REQUIRED_ELEMENTS = ['mission', 'purpose', 'scope', 'authority', 'responsibilit',
+                     'workflow', 'mandatory', 'pass', 'fail', 'promotion', 'example']
 
 
 # ---------- (1) DECISION MATRIX <-> IMPL DRIFT GUARD ----------
@@ -70,7 +70,7 @@ def test_pack2_docs_have_8_elements():
 
 def test_pack2_docs_no_placeholder():
     """Governance integrity: khong TODO/FIXME/PLACEHOLDER/DRAFT marker."""
-    bad = re.compile(r'TODO|FIXME|PLACEHOLDER|\bDRAFT\b')  # 'draft' lifecycle != DRAFT
+    bad = re.compile(r'TODO|FIXME|PLACEHOLDER|TBD|\bDRAFT\b')  # v1.0: +TBD; 'draft' lifecycle != DRAFT
     for name in PACK2_DOCS:
         text = (PACK2 / name).read_text(encoding='utf-8')
         assert not bad.search(text), f'{name} chua placeholder/draft marker'

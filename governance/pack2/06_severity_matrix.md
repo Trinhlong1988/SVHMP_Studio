@@ -1,11 +1,14 @@
 # PACK 2 — 06_severity_matrix.md
 > Chuẩn hoá 4 mức (dùng chung QA + Architecture). Enforce: gate exit code.
 
+**Mission:** Chuẩn hoá mức độ nghiêm trọng để enforcement nhất quán — chống chặn tuỳ tiện lẫn bỏ sót.
 **Purpose:** Chuẩn hoá 4 mức severity để phân loại finding → có/không chặn promotion.
 **Scope:** Mọi QA + Architecture finding; map QA code → severity trong từng validator.
+**Authority:** Phái sinh từ PACK1 Constitution (`constitution/00`) + LEAD (Mr.Long R1); doc không tự tạo quyền.
 **Responsibilities:** Enforcer `tools/severity_gate.py` · Certify `test R214` · Approver hạ mức = LEAD (R1).
+**Workflow:** Áp ở chặng QA + Architecture Auditor — map finding → severity trước khi `decide()`.
 **Mandatory Rules · PASS Criteria · FAIL Criteria · Examples:** xem bảng dưới (cột "Ví dụ SVHMP"; PASS=Major/Minor/Info không chặn, FAIL=Critical BLOCK).
-**Promotion Rules:** reconcile theo `governance/constitution/00_constitution.md` (`draft→candidate→locked→deprecated`) — KHÔNG nhân đôi.
+**Promotion Rules:** theo mục Promotion Rules ở `governance/constitution/00_constitution.md` — reconcile, KHÔNG nhân đôi.
 
 | Mức | Định nghĩa | Ví dụ SVHMP | Gate |
 |---|---|---|---|
