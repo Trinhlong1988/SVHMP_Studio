@@ -192,6 +192,10 @@ files:
     domain: tests
     status: active
     tier: 3
+  tests/test_cmd_pipeline_gate.py:
+    domain: tests
+    status: active
+    tier: 3
   tests/test_no_orphan_tests.py:
     domain: tests
     status: active
@@ -505,6 +509,10 @@ files:
     status: active
     tier: 0
   tools/audit_clean.py:
+    domain: governance_audit
+    status: active
+    tier: 0
+  tools/cmd_pipeline_gate.py:
     domain: governance_audit
     status: active
     tier: 0

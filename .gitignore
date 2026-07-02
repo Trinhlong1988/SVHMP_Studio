@@ -47,6 +47,12 @@ runtime/cmd_progress/*.yaml
 *.wav.tmp
 *.mp4.tmp
 
+# CMD pipeline runtime (machine-authoritative reports regenerated moi run — KHONG phai source)
+reports/cmd_pipeline_gate_report.md
+reports/cmd_pipeline_gate_report.json
+reports/build_report.md
+runtime/*.lock
+
 # But DO commit small reference audio (brand SFX, sample voices)
 !assets/sfx/brand/*.wav
 !GIỌNG\ ĐỌC\ \ ANH\ KHÁNH.wav
