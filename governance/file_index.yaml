@@ -188,6 +188,10 @@ files:
     domain: tests
     status: active
     tier: 3
+  tests/test_audit_clean.py:
+    domain: tests
+    status: active
+    tier: 3
   tests/test_verify_commit_claim.py:
     domain: tests
     status: active
@@ -489,6 +493,10 @@ files:
     status: active
     tier: 0
   tools/freeze_gate.py:
+    domain: governance_audit
+    status: active
+    tier: 0
+  tools/audit_clean.py:
     domain: governance_audit
     status: active
     tier: 0
