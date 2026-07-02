@@ -1,6 +1,12 @@
 # PACK 2 — 05_decision_matrix.md
 > Enforce: `tools/auditor.py` `decide()` · chứng thực: test R209.
 
+**Purpose:** Chuẩn hoá verdict SHIP/BLOCK_SHIP — mọi quyết định ship do MÁY, không do Builder.
+**Scope:** Mọi milestone/commit chạy qua `auditor.py`; KHÔNG phán nội dung sáng tạo.
+**Responsibilities:** Enforcer `auditor.py decide()` · Certify `test R209` · Approver tranh chấp = LEAD (R1) · Builder nộp evidence, cấm tự PASS.
+**Mandatory Rules · PASS Criteria · FAIL Criteria · Examples:** xem bảng dưới (SHIP=all auditor PASS; BLOCK=≥1 FAIL / fail-safe).
+**Promotion Rules:** reconcile theo `governance/constitution/00_constitution.md` (`draft→candidate→locked→deprecated`) — KHÔNG nhân đôi.
+
 ## PASS / FAIL Matrix (mọi verdict do MÁY, không do Builder)
 | Điều kiện | Verdict | Exit |
 |---|---|---|

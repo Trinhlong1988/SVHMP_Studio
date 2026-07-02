@@ -1,6 +1,12 @@
 # PACK 2 — 08_artifact_contract.md
 > Enforce: `tools/artifact_contract_check.py` · chứng thực: test R212.
 
+**Purpose:** Ràng buộc artifact KHAI trong registry == file thật trên disk (chống phantom/báo cáo láo).
+**Scope:** Mọi domain/milestone theo DoD 8 chiều.
+**Responsibilities:** Enforcer `tools/artifact_contract_check.py` · Certify `test R212` · Builder sinh artifact bằng máy, không tay.
+**Mandatory Rules · PASS Criteria · FAIL Criteria · Examples:** xem dưới (PASS=0 phantom; FAIL=artifact khai != disk → Critical BLOCK; ví dụ G2 thiếu validator → block).
+**Promotion Rules:** reconcile theo `governance/constitution/00_constitution.md` (`draft→candidate→locked→deprecated`) — KHÔNG nhân đôi.
+
 ## Hợp đồng: mỗi domain khai artifact nào PHẢI có file đó trên disk
 DoD 8 chiều: `schema · manager · validator · report · test · md_doc · sample_yaml · regression`.
 - **Critical:** artifact KHAI trong registry mà KHÔNG có trên disk (phantom) → `BLOCK` (chống báo cáo láo).

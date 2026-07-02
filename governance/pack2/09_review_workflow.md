@@ -1,6 +1,12 @@
 # PACK 2 — 09_review_workflow.md
 > Enforce: pipeline trong `tools/auditor.py`.
 
+**Purpose:** Chuỗi review tuần tự Builder→Auditor→Promotion, chống shortcut lậu.
+**Scope:** Mọi ship chạy qua `auditor.py`; mỗi chặng 1 tool.
+**Responsibilities:** Enforcer `auditor.py` pipeline · fail bất kỳ chặng → trả Builder · Builder cấm tự PASS.
+**Mandatory Rules · PASS Criteria · FAIL Criteria · Examples:** xem dưới (PASS=mọi chặng PASS → SHIP; FAIL=1 chặng FAIL → dừng, trả Builder; ví dụ Architecture FAIL → không đi tiếp).
+**Promotion Rules:** reconcile theo `governance/constitution/00_constitution.md` (`draft→candidate→locked→deprecated`) — KHÔNG nhân đôi.
+
 ## Chuỗi review (1 lệnh `python tools/auditor.py`)
 ```
 Builder → Architecture Auditor → Contract Auditor → QA Auditor → Publish Auditor → SHIP
