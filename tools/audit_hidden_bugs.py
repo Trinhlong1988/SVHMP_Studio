@@ -44,6 +44,11 @@ def main():
     print("HIDDEN BUGS AUDIT — 20 patterns chưa detected")
     print("="*70)
     eps = load_eps()
+    if not eps:
+        # deep-audit F6 (2/7): 0 episode = thieu input -> exit 2 (BLOCKED),
+        # KHONG return 0 "no findings" (false-pass tren repo trong).
+        print("[BLOCKED] khong tim thay episode nao (thieu input) — KHONG PASS.")
+        return 2
     findings = []
 
     # 1. Timeline math: EP30 Khải Phong Nguyễn 30 tuổi + tốt nghiệp 2017

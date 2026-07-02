@@ -515,6 +515,11 @@ def main():
                     print(f"  {sym} {c}: {v}")
 
     print(f"\n{'='*70}\n60-DIMENSION AUDIT SUMMARY EP01-50\n{'='*70}")
+    if not target_eps:
+        # deep-audit F6 (2/7): 0 EP = THIEU INPUT, KHONG phai PASS (truoc day
+        # global_high/len -> ZeroDivisionError; con exit 0 se la false-pass).
+        print("  [BLOCKED] khong tim thay episode nao (thieu input) — KHONG PASS.")
+        return 2
     print(f"  Total EPs audited: {len(target_eps)}")
     print(f"  Total HIGH issues: {global_high}")
     print(f"  Total MEDIUM issues: {global_med}")

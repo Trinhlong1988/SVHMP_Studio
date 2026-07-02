@@ -283,7 +283,11 @@ def main():
         "summary": {k: len(v) for k, v in bugs.items()},
     }, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"\nReport: {rep}")
-    if "--strict" in sys.argv and bugs["HIGH"]:
+    # deep-audit F6 (2/7): HIGH = severity chan (Critical/Major) -> LUON exit 1
+    # (truoc day chi fail khi CO --strict -> caller quen flag = luon pass du co HIGH).
+    if bugs["HIGH"]:
+        return 1
+    if "--strict" in sys.argv and bugs["MEDIUM"]:
         return 1
     return 0
 

@@ -402,6 +402,11 @@ def main():
     print("SVHMP 100-CHECK AUDIT EP01-40")
     print("=" * 70)
     eps = load_episodes()
+    if not eps:
+        # deep-audit F6 (2/7): 0 episode = thieu input -> exit 2 (BLOCKED),
+        # KHONG "VERDICT PASS" khi hi==0 tren repo trong (false-pass).
+        print("  [BLOCKED] khong tim thay episode nao (thieu input) — KHONG PASS.")
+        return 2
     print(f"\nLoaded {len(eps)} EPs\n")
 
     all_issues = []
