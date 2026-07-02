@@ -192,6 +192,10 @@ files:
     domain: tests
     status: active
     tier: 3
+  tests/test_no_orphan_tests.py:
+    domain: tests
+    status: active
+    tier: 3
   tests/test_supervisor_dedup.py:
     domain: tests
     status: active
