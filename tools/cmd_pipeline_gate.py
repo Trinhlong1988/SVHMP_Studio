@@ -41,12 +41,15 @@ REPORTS = SVHMP / "reports"
 LOCK = SVHMP / "runtime" / "cmd_pipeline.lock"
 
 # (key, argv[repo-relative])  — thu tu = thu tu cong
-GATES = [
-    ("ARCH", ["tools/architecture_registry_check.py"]),
-    ("QA", ["tools/ci_gate.py"]),
-    ("RELEASE", ["tools/freeze_gate.py", "--skip-remote"]),
-    ("OVERALL", ["tools/auditor.py"]),
-]
+def build_gates(pack, tag, doc_test):
+    """Cong may theo thu tu. RELEASE nham dung PACK dang xu ly (--pack)."""
+    return [
+        ("ARCH", ["tools/architecture_registry_check.py"]),
+        ("QA", ["tools/ci_gate.py"]),
+        ("RELEASE", ["tools/freeze_gate.py", "--skip-remote",
+                     "--pack", pack, "--tag", tag, "--doc-test", doc_test]),
+        ("OVERALL", ["tools/auditor.py"]),
+    ]
 
 
 def _pid_alive(pid):
@@ -184,6 +187,10 @@ def write_reports(state):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--ref", default="origin/main")
+    ap.add_argument("--pack", default="pack2_governance",
+                    help="PACK dang xu ly cho cong RELEASE (vd pack3_cicd)")
+    ap.add_argument("--tag", default="pack2-governance-v1.0")
+    ap.add_argument("--doc-test", default="tests/test_pack2_governance_docs.py")
     ap.add_argument("--skip-build", action="store_true")
     ap.add_argument("--json", action="store_true")
     ap.add_argument("--no-lock", action="store_true")
@@ -219,7 +226,7 @@ def main():
                 print("[pipeline] ERR tao worktree sach")
                 return 2
             stopped = False
-            for key, argv in GATES:
+            for key, argv in build_gates(a.pack, a.tag, a.doc_test):
                 if stopped:
                     gates.append({"key": key, "status": "NOT_VERIFIED", "exit": "-",
                                   "command": "python " + " ".join(argv),
