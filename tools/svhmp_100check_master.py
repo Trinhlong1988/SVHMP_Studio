@@ -28,7 +28,7 @@ if not os.path.isdir(WD):
     sys.exit(f"[SKIP] Legacy workdir khong ton tai: {WD} — set env SVHMP_WORKDIR tro toi thu muc chua spec_ep01_section_*.json de chay tool nay.")
 MEM = os.path.expanduser(r'~/.claude/projects/C--Users-Administrator/memory')
 PIPELINE = r'C:\tmp\svhmp_v13_render.py'
-PREFLIGHT = r'C:\tmp\svhmp_preflight_qa.py'
+PREFLIGHT = os.path.join(_TOOLS, 'svhmp_preflight_qa.py')
 
 SPECS = [f'spec_ep01_section_{n}.json' for n in
          ['1_hook', '2_setup', '3_incident', '4_reveal', '5_payoff', '6_cliffhanger']]

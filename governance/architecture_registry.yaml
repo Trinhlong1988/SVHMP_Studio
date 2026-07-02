@@ -128,6 +128,11 @@ domains:
       - governance/pack4/16_episode_scaffold.md
       - governance/pack4/17_reuse_boundary.md
       - governance/pack4/18_template_governance.md
+    pack5_quality:
+      - governance/pack5/19_qa_pipeline.md
+      - governance/pack5/20_golden_dataset.md
+      - governance/pack5/21_detector_suite.md
+      - governance/pack5/22_waiver_watch.md
     tests:
       - tests/test_governance_enforce_r209.py
       - tests/test_artifact_contract_r212.py
@@ -140,6 +145,8 @@ domains:
       - tests/test_validate_project_config.py   # PACK4/15: lock validate_project_config tool (50/50 + empty-value reject)
       - tests/test_pack1_docs.py   # PACK1: constitution 11-element doc completeness + enforcer-exists
       - tests/test_promotion_guard.py   # PACK1: promotion_guard hard-gate HANH VI (negative that: tu-lock/tu-tag khong uy quyen -> block)
+      - tests/test_preflight_repo_path.py   # PACK5 BUG P0: khoa preflight path trong repo (cam hard-path C:\tmp + python tran)
+      - tests/test_pack5_docs.py   # PACK5: quality 11-element doc completeness + enforcer-exists
     promotion_status: candidate   # PACK1 dang mo rong; 'locked' sau khi du 5 pack
     enterprise_pack_progress:
       pack1_constitution: locked   # FROZEN v1.0 (Mr.Long authorized 2/7): 6 doc 11-element, promotion_guard HANH VI (pre-push+server-CI, battle-tested), test_pack1_docs; tag pack1-constitution-v1.0
