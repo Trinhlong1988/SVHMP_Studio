@@ -924,6 +924,10 @@ files:
     domain: audio_render
     status: active
     tier: 4
+  project_config.yaml:
+    domain: governance_audit
+    status: active
+    tier: 1
   tools/validate_project_config.py:
     domain: governance_audit
     status: active

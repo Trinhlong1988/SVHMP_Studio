@@ -24,6 +24,7 @@ CHECKS = [
     ('R206_voice', 'tests/test_character_system_1000_r206.py'),
     ('R207_canon', 'tests/test_story_consistency_1000_r207.py'),
     ('R208_age',  'tests/test_dialogue_appropriateness_1000_r208.py'),
+    ('project_config', 'tools/validate_project_config.py'),   # PACK4/15: hop dong project_config (scan repo)
 ]
 
 

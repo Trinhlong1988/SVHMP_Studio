@@ -45,16 +45,31 @@ REQUIRED = {
 def find_configs():
     """Tim moi project_config*.yaml tren disk (bo qua .git)."""
     out = []
+    # Bo qua fixture/mau + cay output/runtime (tranh false-fail tren file khong phai
+    # config THAT cua project).
+    SKIP_DIR = {'.git', 'output', 'runtime', 'node_modules', '.cmd_pipeline_wt'}
+    SKIP_MARK = ('example', 'template', 'sample')
     for p in SVHMP.rglob('project_config*.yaml'):
-        if '.git' in p.parts:
+        if SKIP_DIR & set(x.lower() for x in p.parts):
+            continue
+        if any(m in p.name.lower() for m in SKIP_MARK):
             continue
         out.append(p)
     return sorted(out)
 
 
+def _is_empty(val):
+    """Gia tri 'rong' theo kieu: '' / '   ' (str), [] (list), {} (dict)."""
+    if isinstance(val, str):
+        return val.strip() == ''
+    return val == [] or val == {}
+
+
 def validate_one(path):
     """Tra ve list loi (rong = hop le)."""
     errors = []
+    if not path.exists():
+        return [f'file khong ton tai: {path}']
     try:
         data = yaml.safe_load(path.read_text(encoding='utf-8'))
     except Exception as e:  # noqa: BLE001
@@ -67,6 +82,8 @@ def validate_one(path):
         elif not isinstance(data[field], typ):
             errors.append(
                 f'field {field} sai kieu: can {typ.__name__}, co {type(data[field]).__name__}')
+        elif _is_empty(data[field]):
+            errors.append(f'field {field} RONG (bat buoc non-empty)')
     return errors
 
 

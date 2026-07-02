@@ -137,6 +137,7 @@ domains:
       - tests/test_builder_hard_gate.py   # PACK1: Builder Hard Gate v2 hard-rules locked (cam PASS/tag/freeze)
       - tests/test_pack3_docs.py   # PACK3: CI/CD 11-element doc completeness + enforcer-exists
       - tests/test_pack4_docs.py   # PACK4: template 11-element doc completeness + enforcer-exists
+      - tests/test_validate_project_config.py   # PACK4/15: lock validate_project_config tool (50/50 + empty-value reject)
     promotion_status: candidate   # PACK1 dang mo rong; 'locked' sau khi du 5 pack
     enterprise_pack_progress:
       pack1_constitution: candidate
