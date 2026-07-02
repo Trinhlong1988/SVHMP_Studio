@@ -1,51 +1,7 @@
-#!/bin/bash
-# SVHMP commit-msg hook — Round 19.27 KHÓA CỨNG "báo láo" rule codified
-# Mr.Long 30/6: CMD #2 báo "đã ghi RXXX" mà chưa ghi → CỬA TỰ KHOÁ
-# Scan commit message for "ghi R\d+" / "codify R\d+" / "add R\d+" / "R\d+ codified"
-# → Extract R-IDs → grep bible/00 → if not found BLOCK
-
-set -e
-msg_file="$1"
-msg=$(cat "$msg_file")
-
-# Extract R-IDs mentioned with codify/ghi/add patterns
-mentioned=$(echo "$msg" | grep -oiE "(ghi|codify|add|codified|locked|shipped|wrote)\s+R[0-9]+[a-z]?" | grep -oE "R[0-9]+[a-z]?" | sort -u)
-mentioned2=$(echo "$msg" | grep -oiE "R[0-9]+[a-z]?\s+(codified|locked|shipped|added|ghi)" | grep -oE "R[0-9]+[a-z]?" | sort -u)
-all_mentioned=$(echo -e "$mentioned\n$mentioned2" | sort -u | grep -v '^$' || true)
-
-if [ -z "$all_mentioned" ]; then
-  exit 0  # No R-ID claim — skip
-fi
-
-echo "=== COMMIT-MSG GUARD — Round 19.27 ==="
-echo "Mentioned in commit msg: $all_mentioned"
-
-bible="bible/00_constitution.yaml"
-missing=""
-for r in $all_mentioned; do
-  # Search for rule_<r>_ pattern in bible/00 (case-insensitive)
-  if ! grep -qiE "^rule_${r}_" "$bible"; then
-    missing="$missing $r"
-  fi
-done
-
-if [ -n "$missing" ]; then
-  echo ""
-  echo "==================================================================="
-  echo "✗✗✗ COMMIT BLOCKED — Round 19.27 KHÓA CỨNG"
-  echo "==================================================================="
-  echo "Commit message claims rule(s) codified BUT NOT FOUND in bible/00:"
-  for r in $missing; do
-    echo "    ✗ $r — KHÔNG có 'rule_${r}_*' trong bible/00_constitution.yaml"
-  done
-  echo ""
-  echo "Phải làm 1 trong 2:"
-  echo "  (a) Ghi thật vào bible/00 (rule_RXXX_<name>: ...) → git add bible/00 → re-commit"
-  echo "  (b) Xóa câu báo cáo về RXXX khỏi commit message"
-  echo ""
-  echo "KHÔNG --no-verify (Mr.Long lệnh)."
-  exit 1
-fi
-
-echo "✓ All mentioned R-IDs verified in bible/00"
-exit 0
+#!/bin/sh
+# SVHMP commit-msg — thin wrapper delegating to Python (deep-audit F1c 2/7).
+# Portable: MinGit has no bash.exe / coreutils. Logic in git_hook_commit_msg.py.
+# Round 19.27: block if message claims a rule codified that bible/00 lacks.
+PY="C:/Users/Admin/index-tts/.venv/Scripts/python.exe"
+[ -x "$PY" ] || PY=python
+exec "$PY" tools/git_hook_commit_msg.py "$1"

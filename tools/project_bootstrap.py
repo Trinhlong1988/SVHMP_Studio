@@ -118,7 +118,15 @@ def step6_verify_hooks():
         print(f"  SECTION {sec}: {status}")
     out, _ = run(["git", "config", "--get", "core.hooksPath"])
     path = out.strip()
-    print(f"  core.hooksPath: {path or '[NOT SET — hook WILL NOT RUN]'}")
+    if path != ".githooks":
+        # Self-heal: fresh clone khong tu co core.hooksPath -> hooks INERT (F1).
+        # Set ngay de pre-commit/pre-push (ci_gate) thuc su chay.
+        run(["git", "config", "core.hooksPath", ".githooks"])
+        out2, _ = run(["git", "config", "--get", "core.hooksPath"])
+        path = out2.strip()
+        print(f"  core.hooksPath: [AUTO-SET] -> {path or '[FAILED to set]'}")
+    else:
+        print(f"  core.hooksPath: {path}")
 
 
 def step7_write_prompts():
