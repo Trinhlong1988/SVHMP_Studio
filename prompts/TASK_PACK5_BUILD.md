@@ -8,15 +8,29 @@
 ## 4 doc — governance/pack5/ (11-element/doc, 0 placeholder, khuôn pack4)
 
 ### 19_qa_pipeline.md — Render-time content-QA pipeline
-- Enforcer: `tools/svhmp_preflight_qa.py` — **WIRED THẬT** (`svhmp_v13_render.py` gọi; kiểm duyệt đã grep 2/7).
-- Scope: chuỗi preflight → render → verify (`tools/svhmp_final_verify.py`, `tools/svhmp_100check_master.py`).
+- Enforcer ENFORCED THẬT: gate TRONG render = `tools/character_manager.py`
+  (`CharacterRegistry.episode_completeness` + `render_gate_lines` — svhmp_v13_render
+  L339/L344, kiểm duyệt đọc code 2/7).
+- `tools/svhmp_preflight_qa.py` = content-QA STANDALONE — render KHÔNG gọi nó (chỉ comment
+  tham chiếu; xem BUG P0 dưới). Doc phải trình bày đúng vai: preflight = bước verify-chain riêng.
+- Scope: preflight → render(gate G2) → verify (`svhmp_final_verify.py`, `svhmp_100check_master.py`).
 - Phân ranh với pack3/11 (ci_gate = code-QA; doc này = content-QA render-time — reconcile, không nhân đôi).
 - ⚠️ KHÔNG sửa `svhmp_v13_render.py` (LOCKED v1.3) — chỉ mô tả + trỏ.
 
-### 20_golden_dataset.md — Golden samples + detector calibration (R195)
-- Enforcer: `bible/31_golden_samples.yaml` + `tools/hardcode_classifier.py`.
+### 20_golden_dataset.md — Golden samples + calibration policy (R195)
+- Enforcer: `bible/31_golden_samples.yaml` (data) + `tools/hardcode_classifier.py`
+  (INVENTORY — phân loại hardcode nào cần calibrate theo R195; nó KHÔNG tự calibrate).
+- Tool calibrate-từ-Golden tự động: **CHƯA CÓ → dán (ROADMAP — CHƯA gate)**, ghi thẳng.
 - Codify bài học: detector PHẢI calibrate từ Golden Audio, chứng minh bằng confusion-matrix
   (R203 240-case) — không tin detector chưa calibrate.
+
+## 🐞 BUG P0 — FIX TRONG TASK NÀY (kiểm duyệt tái hiện 2/7)
+`svhmp_final_verify.py` L95: `subprocess.run(['python', r'C:\tmp\svhmp_preflight_qa.py',...])`
+và `svhmp_100check_master.py` L31: `PREFLIGHT = r'C:\tmp\...'` — **C:\tmp\svhmp_preflight_qa.py
+KHÔNG TỒN TẠI** (Test-Path False) → bước preflight của final_verify ĐANG CHẾT. 2 lớp bug cũ
+tái xuất: hard-path C:\tmp + `'python'` trần (Store-stub PATH).
+FIX: repath `Path(__file__).parent / 'svhmp_preflight_qa.py'` + `sys.executable`;
+kèm negative-test khoá (path resolve trong repo). KHÔNG sửa logic preflight.
 
 ### 21_detector_suite.md — Voice/audio detector suite (R188–R191)
 - Enforcers: `tools/qa_boundary_artifact.py` · `qa_breath_artifact.py` · `qa_onset_artifact.py`
