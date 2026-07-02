@@ -5,6 +5,9 @@
 ## Mission
 Định nghĩa luật quản trị cho mọi thay đổi repo — **enforced bằng tool máy chạy**, không phải prose.
 
+## Purpose
+Biến governance thành cổng máy tái lập được: mỗi principle neo vào 1 tool + test, để verdict do exit-code quyết, không do câu chữ.
+
 ## Core Principles (mỗi cái → tool + test)
 | # | Principle | Enforce tool | Chứng thực |
 |---|---|---|---|
@@ -53,8 +56,16 @@ Tất cả Auditor PASS → **SHIP** (exit 0). Enforce `auditor.decide()`.
 ## Exit Codes (chuẩn hoá toàn dự án)
 `0 SUCCESS/SHIP · 1 FAIL/BLOCK_SHIP · 2 BLOCKED (thiếu input)`.
 
+## Mandatory Rules
+Mỗi rule PHẢI có tool enforce + test chứng thực (không prose-only); mọi report đủ Evidence Standard; verdict SHIP/BLOCK do máy (`auditor.py`), KHÔNG do Builder tự tuyên. Promotion→`locked`/tag chỉ do LEAD — cưỡng chế hành vi bằng `tools/promotion_guard.py` (pre-push).
+
 ## Promotion Rules
-`draft → candidate → locked → deprecated`. Chỉ `locked` được Generator dùng. Freeze v1.0 = tất cả 14 phase FREEZE GATE PASS + LEAD duyệt. Reconcile: bible lock_date + git backup (R8).
+`draft → candidate → locked → deprecated`. Chỉ `locked` được Generator dùng. Freeze v1.0 = `tools/freeze_gate.py` exit 0 (5 phase P1-P5: registry locked · auditor SHIP · doc-test · tag local · tag remote) + LEAD duyệt. Reconcile: bible lock_date + git backup (R8).
+
+## Examples
+- registry UNMAPPED > 0 → `architecture_registry_check.py` exit 1 → BLOCK.
+- Builder đổi `promotion_status: locked` không "per Mr.Long authorization" → `promotion_guard.py` chặn push (exit 1).
+- freeze v1.0: `freeze_gate.py --pack packN --tag ...` phải exit 0 (5/5 phase) trước khi LEAD ký.
 
 ## Reconcile (KHÔNG nhân đôi hiến pháp cũ)
 Builder-role=R_SUPREME R1 · Change-Gate=R7 · Audit-log=R200+log_ping · Promotion=bible lock · Registry=R211.

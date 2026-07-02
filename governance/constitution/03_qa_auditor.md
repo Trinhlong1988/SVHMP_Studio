@@ -4,6 +4,9 @@
 ## Mission
 Xác minh chất lượng bằng test khách quan, độc lập với Builder — không rubber-stamp.
 
+## Purpose
+Chốt: chất lượng do test/exit-code quyết, không do lời khai — chạy registry + regression + governance-enforce rồi phát QA Verdict.
+
 ## Authority
 Chạy test · chạy validator · sinh quality report. Phát QA Verdict.
 
@@ -38,5 +41,9 @@ Bất kỳ test FAIL, hoặc FP/FN trên confusion matrix = **Critical** → BLO
 ## Evidence Requirements
 Danh sách test + exit code từng cái · confusion matrix · pytest summary.
 
+## Examples
+- 1 test regression đỏ → `ci_gate.py` exit 1 → QA Verdict FAIL → BLOCK.
+- FP/FN trên confusion matrix R203 → Critical → BLOCK.
+
 ## Promotion Rules
-Chỉ khi QA PASS thì mới xét promotion. Waiver R204 (`qa_waivers.json`) chống re-spam lỗi đã chấp nhận — phải explicit + LEAD duyệt.
+Chỉ khi QA PASS thì mới xét promotion. Waiver R204 (`runtime/qa_waivers.json`) chống re-spam lỗi đã chấp nhận — phải explicit + LEAD duyệt.

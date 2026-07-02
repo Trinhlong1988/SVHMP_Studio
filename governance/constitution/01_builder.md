@@ -4,6 +4,12 @@
 ## Mission
 Implement đúng, **giữ nguyên kiến trúc** — không phá hệ thống đã có.
 
+## Purpose
+Chuẩn hoá vai Builder: giao code+test+evidence đủ để Auditor xác minh độc lập, không tự chấm điểm mình.
+
+## Scope
+Áp cho mọi thay đổi repo do Builder thực hiện (code/test/doc/registry/migrate) trong phạm vi LEAD duyệt. KHÔNG gồm verdict release (thuộc `auditor.py` / 04).
+
 ## Authority (được làm)
 code · refactor · add test · update doc/registry · migrate — trong phạm vi được LEAD duyệt (R7).
 
@@ -38,6 +44,10 @@ Thiếu test/doc/evidence, registry ≠ 0/0/0, hoặc vi phạm Forbidden Action
 
 ## Evidence Requirements
 Commit hash + log_ping (R200) + output lệnh thật cho mỗi deliverable (chống báo cáo láo).
+
+## Examples
+- Thêm tool mới nhưng quên map `file_index.yaml` → `ci_gate.py`/registry exit 1 → BUILD_FAILED.
+- Builder tự tuyên "PASS/FREEZE" trong report → vi phạm Forbidden (verdict do `auditor.py`).
 
 ## Promotion Rules
 Builder chỉ đề xuất promotion; chuyển `candidate→locked` do LEAD sau khi Auditor PASS. Builder không tự locked.

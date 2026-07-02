@@ -138,6 +138,8 @@ domains:
       - tests/test_pack3_docs.py   # PACK3: CI/CD 11-element doc completeness + enforcer-exists
       - tests/test_pack4_docs.py   # PACK4: template 11-element doc completeness + enforcer-exists
       - tests/test_validate_project_config.py   # PACK4/15: lock validate_project_config tool (50/50 + empty-value reject)
+      - tests/test_pack1_docs.py   # PACK1: constitution 11-element doc completeness + enforcer-exists
+      - tests/test_promotion_guard.py   # PACK1: promotion_guard hard-gate HANH VI (negative that: tu-lock/tu-tag khong uy quyen -> block)
     promotion_status: candidate   # PACK1 dang mo rong; 'locked' sau khi du 5 pack
     enterprise_pack_progress:
       pack1_constitution: candidate
