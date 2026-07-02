@@ -118,6 +118,11 @@ domains:
       - governance/pack2/08_artifact_contract.md
       - governance/pack2/09_review_workflow.md
       - governance/pack2/10_exception_policy.md
+    pack3_cicd:
+      - governance/pack3/11_ci_pipeline.md
+      - governance/pack3/12_git_hooks.md
+      - governance/pack3/13_test_policy.md
+      - governance/pack3/14_release_gate.md
     tests:
       - tests/test_governance_enforce_r209.py
       - tests/test_artifact_contract_r212.py
@@ -125,11 +130,12 @@ domains:
       - tests/test_severity_rule_r214.py
       - tests/test_pack2_governance_docs.py   # PACK2: decision-matrix drift guard + 11-element doc completeness
       - tests/test_builder_hard_gate.py   # PACK1: Builder Hard Gate v2 hard-rules locked (cam PASS/tag/freeze)
+      - tests/test_pack3_docs.py   # PACK3: CI/CD 11-element doc completeness + enforcer-exists
     promotion_status: candidate   # PACK1 dang mo rong; 'locked' sau khi du 5 pack
     enterprise_pack_progress:
       pack1_constitution: candidate
       pack2_governance: locked   # FROZEN v1.0 (LEAD duyet 2/7): freeze-gate 16-phase PASS, auditor SHIP; tag pack2-governance-v1.0
-      pack3_cicd: todo
+      pack3_cicd: candidate   # PACK3 CI/CD 4 doc (11-14) + test built 2/7; candidate (Builder KHONG tu locked - 05_builder_hard_gate)
       pack4_template: todo
       pack5_quality: todo
     data_contract:
