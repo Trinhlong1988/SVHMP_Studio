@@ -36,9 +36,46 @@ QA_WATCH = SVHMP / "tools" / "qa_watch.py"
 LOG = SVHMP / "runtime" / "realtime_logs" / "qa_watch_supervisor.log"
 QA_LOG = SVHMP / "runtime" / "realtime_logs" / "qa_watch.log"
 LOG_PING = SVHMP / "tools" / "log_ping.py"
+SUP_LOCK = SVHMP / "runtime" / "qa_watch_supervisor.lock"
 
 RESTART_DELAY_S = 5
 MAX_RESTARTS_PER_HOUR = 12  # circuit-breaker để không infinite loop nếu qa_watch crash ngay
+
+
+def _pid_alive(pid):
+    """Cross-platform PID liveness (Windows OpenProcess / POSIX os.kill 0)."""
+    if pid <= 0:
+        return False
+    try:
+        if sys.platform == "win32":
+            import ctypes
+            h = ctypes.windll.kernel32.OpenProcess(0x1000, False, pid)  # QUERY_LIMITED
+            if h:
+                ctypes.windll.kernel32.CloseHandle(h)
+                return True
+            return False
+        os.kill(pid, 0)
+        return True
+    except Exception:
+        return False
+
+
+def acquire_single_instance():
+    """deep-audit (2/7) supervisor-dedup: chan 2 SUPERVISOR chay trung. Truoc day
+    chi worker qa_watch.py co lock -> 2 supervisor van song, moi cai spawn worker;
+    worker#2 gap lock -> return 0 -> supervisor#2 tuong 'die' -> restart moi 5s ->
+    RESTART STORM toi khi circuit-breaker trip (12 lan + VIOLATION nhieu). Lock PID
+    o SUP_LOCK; ban cu con song -> (False, old_pid). Loi lock -> fail-open."""
+    try:
+        if SUP_LOCK.exists():
+            old = int((SUP_LOCK.read_text(encoding="utf-8") or "0").strip() or "0")
+            if old and old != os.getpid() and _pid_alive(old):
+                return False, old
+        SUP_LOCK.parent.mkdir(exist_ok=True, parents=True)
+        SUP_LOCK.write_text(str(os.getpid()), encoding="utf-8")
+        return True, None
+    except Exception:
+        return True, None
 
 
 def log(msg):
@@ -63,6 +100,11 @@ def ping_log(category, msg):
 
 
 def main():
+    ok, other = acquire_single_instance()
+    if not ok:
+        log(f"[SINGLE-INSTANCE] supervisor da chay PID {other} — thoat (khong chay trung).")
+        ping_log("INFO", f"qa_watch_supervisor single-instance: da co PID {other} — ban nay thoat")
+        return 0
     log("=== SUPERVISOR started ===")
     log(f"Target: {QA_WATCH}")
     log(f"Log: {LOG}")
