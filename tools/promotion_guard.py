@@ -99,8 +99,11 @@ def _from_prepush_stdin(stdin_text, cwd=None):
     Tong hop: bat ky ref nao vi pham -> BLOCK (tru khi authorized trong range do)."""
     ZERO = '0' * 40
     processed = 0
+    # BOM-strip phong thu: pipe Windows/PowerShell co the chen U+FEFF dau stream
+    # -> 'refs/tags/x' thanh U+FEFF+'refs/tags/x' khong match, guard bi mu (audit 2/7).
+    stdin_text = (stdin_text or '').lstrip('﻿')
     for raw in stdin_text.splitlines():
-        parts = raw.split()
+        parts = raw.lstrip('﻿').split()
         if len(parts) < 4:
             continue
         processed += 1
