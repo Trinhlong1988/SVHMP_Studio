@@ -1,5 +1,0 @@
-# deep-audit F1b (2/7): shell hooks MUST stay LF, else git on Windows checks
-# them out with CRLF and the shebang becomes "#!/bin/bash\r" -> git aborts with
-# "cannot spawn .githooks/pre-commit: No such file or directory" -> hooks INERT.
-.githooks/** text eol=lf
-*.sh text eol=lf

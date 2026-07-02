@@ -1,9 +1,0 @@
-domain: infra
-tier: 0
-owner: UNASSIGNED
-promotion_status: candidate
-source_of_truth: []
-data_contract: null
-files:
-- tools/llm_router.py
-file_count: 1

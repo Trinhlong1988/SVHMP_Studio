@@ -1,6 +1,0 @@
-{
-  "audits_run": 9,
-  "post_render_gate_pass": 50,
-  "post_render_gate_fail": 0,
-  "total_checks": 500
-}

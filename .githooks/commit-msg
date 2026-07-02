@@ -1,7 +1,0 @@
-#!/bin/sh
-# SVHMP commit-msg — thin wrapper delegating to Python (deep-audit F1c 2/7).
-# Portable: MinGit has no bash.exe / coreutils. Logic in git_hook_commit_msg.py.
-# Round 19.27: block if message claims a rule codified that bible/00 lacks.
-PY="C:/Users/Admin/index-tts/.venv/Scripts/python.exe"
-[ -x "$PY" ] || PY=python
-exec "$PY" tools/git_hook_commit_msg.py "$1"

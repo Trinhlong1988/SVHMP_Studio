@@ -1,9 +1,0 @@
-{
-  "_note": "Waiver chong spam: cac lop loi DA PHAT HIEN + DA DUYET, QA khong bao lai (chi surface loi MOI). Match theo (rule[,type]). Sua = can Boss duyet (R4).",
-  "waive": [
-    {"rule": "R77.audio", "type": "internal_silence",
-     "reason": "Khoang nghi intro CO Y (pause_after_ms trong spec) — khong phai defect. Boss 1/7."},
-    {"rule": "R80.peak", "type": "overall_peak_clipping",
-     "reason": "Master v65 alimiter 0.85 (Mr.Long LOCK); R198 cap_peak PASS; R80 advisory. Boss duyet giu 1/7."}
-  ]
-}
