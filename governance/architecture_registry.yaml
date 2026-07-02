@@ -110,6 +110,7 @@ domains:
       - governance/constitution/02_architecture_auditor.md
       - governance/constitution/03_qa_auditor.md
       - governance/constitution/04_publish_auditor.md
+      - governance/constitution/05_builder_hard_gate.md
     pack2_governance:
       - governance/pack2/05_decision_matrix.md
       - governance/pack2/06_severity_matrix.md
@@ -123,6 +124,7 @@ domains:
       - tests/test_evidence_standard_r213.py
       - tests/test_severity_rule_r214.py
       - tests/test_pack2_governance_docs.py   # PACK2: decision-matrix drift guard + 11-element doc completeness
+      - tests/test_builder_hard_gate.py   # PACK1: Builder Hard Gate v2 hard-rules locked (cam PASS/tag/freeze)
     promotion_status: candidate   # PACK1 dang mo rong; 'locked' sau khi du 5 pack
     enterprise_pack_progress:
       pack1_constitution: candidate
