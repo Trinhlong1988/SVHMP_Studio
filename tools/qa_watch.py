@@ -22,6 +22,41 @@ ROOT = Path(__file__).resolve().parents[1]
 EPISODE = ROOT / "output/ep_01/episode.md"
 SECTIONS = ROOT / "output/ep_01/sections"
 LOG_PING = ROOT / "tools/log_ping.py"
+LOCK = ROOT / "runtime" / "qa_watch.lock"
+
+
+def _pid_alive(pid):
+    """Cross-platform PID liveness (Windows OpenProcess / POSIX os.kill 0)."""
+    if pid <= 0:
+        return False
+    try:
+        if sys.platform == "win32":
+            import ctypes
+            h = ctypes.windll.kernel32.OpenProcess(0x1000, False, pid)  # QUERY_LIMITED
+            if h:
+                ctypes.windll.kernel32.CloseHandle(h)
+                return True
+            return False
+        os.kill(pid, 0)
+        return True
+    except Exception:
+        return False
+
+
+def acquire_single_instance():
+    """deep-audit item2 (2/7): chan qa_watch chay TRUNG (2 ban song song sua
+    file luc test chay -> QA flaky, xac nhan qua test_harness). Lock PID; neu
+    ban cu con song -> tra (False, old_pid). Loi lock -> fail-open."""
+    try:
+        if LOCK.exists():
+            old = int((LOCK.read_text(encoding="utf-8") or "0").strip() or "0")
+            if old and old != os.getpid() and _pid_alive(old):
+                return False, old
+        LOCK.parent.mkdir(exist_ok=True, parents=True)
+        LOCK.write_text(str(os.getpid()), encoding="utf-8")
+        return True, None
+    except Exception:
+        return True, None
 
 
 def p(msg):
@@ -111,6 +146,11 @@ def text_repeats():
 
 
 def main():
+    ok, other = acquire_single_instance()
+    if not ok:
+        p(f"[SINGLE-INSTANCE] qa_watch da chay PID {other} — thoat (khong chay trung).")
+        log("INFO", f"qa_watch single-instance: da co PID {other} — ban nay thoat")
+        return 0
     p("=== CMD QA WATCH started ===")
     p(f"Episode: {EPISODE}")
     p(f"Loop every 60s. Logs to PING via log_ping.py.\n")

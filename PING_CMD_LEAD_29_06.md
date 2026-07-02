@@ -321,6 +321,9 @@ SAU ĐÓ FIX CHẶT CHẼ CÁC s TRƯỚC KHI REN"
 
 ---
 ## AUTO LOG (tự động cập nhật)
+- `10:54` **[FIX]** Em fix: item2/3: qa_watch single-instance lock (het 2 daemon trung -> het flaky); project_health d4 sua false-HIGH sau F1 (check orchestrator, HIGH 1->0); verify_ping_claim them format rule_R{n}_ (F9, het bao nham codified missing). CMD THUC THI luu y: pre-commit gio la wrapper Python.
+- `10:50` **[INFO]** Info: qa_watch single-instance: da co PID 17744 — ban nay thoat
+- `10:50` **[INFO]** Info: CMD QA WATCH started loop 60s
 - `10:37` **[FIX]** Em fix: F8+F2: prosody detector het false-negative octave drop (window smearing -> truot min buoc); test_harness doi sang do SUC KHOE tool (clean/gate-fail/FLAKY/CRASH), dung 2 daemon qa_watch trung -> stable exit 0; wire test_voice_qa_tools (74 pass). 4 gate-fail = content ep_01 that.
 - `10:26` **[FIX]** Em fix: F7: doc drift - roadmap + CLAUDE cap nhat 186 unmapped -> 0/0/0 (G1 done, strict-enforced). Khop may that.
 - `10:23` **[FIX]** Em fix: F6: audit_60 het ZeroDivision (0 EP -> exit 2 BLOCKED); audit_hidden_bugs + audit_100_check het false-pass tren 0 episode (exit 2); project_health HIGH luon exit 1 (khong con can --strict).

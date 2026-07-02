@@ -59,6 +59,11 @@ def verify_rule_codified(n):
         for fmt, pat in [
             ("top_level", rf"^R{n}_[a-zA-Z]"),
             ("list_id", rf"^\s*-\s*id:\s*R{n}\b"),
+            # deep-audit F9 (2/7): thieu format `rule_R{n}_` (session 30/6+) ma
+            # bible/00 dang dung + check_rule_mention_codified.py da co -> tool
+            # verify BAO NHAM missing (vd R77-R80 codified that -> flag FAILED).
+            ("rule_prefix", rf"^rule_R{n}_[a-zA-Z]"),
+            ("rule_subletter", rf"^rule_R{n}[a-z]?_[a-zA-Z]"),
         ]:
             for m in re.finditer(pat, text, re.MULTILINE):
                 line_num = text[:m.start()].count("\n") + 1

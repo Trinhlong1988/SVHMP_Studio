@@ -110,15 +110,22 @@ def d4_hook_sections():
         print("  ✗ hook missing")
         return
     text = hook.read_text(encoding="utf-8")
-    sections = [
-        ("A R-ID conflict", "R-ID CONFLICT"),
-        ("B R41 post_render_gate", "R41 PRE-COMMIT"),
-        ("C MASS-REPLACE log", "MASS-REPLACE"),
-        ("D Rule mention orphan", "RULE MENTION"),
-    ]
+    # deep-audit F1/F3-followup: pre-commit gio la wrapper sh -> orchestrator
+    # Python (git_hook_pre_commit.py). Guard sections nam TRONG orchestrator,
+    # KHONG con o file hook (truoc day grep file hook -> false-positive HIGH).
+    orch = SVHMP / "tools" / "git_hook_pre_commit.py"
+    orch_text = orch.read_text(encoding="utf-8") if orch.exists() else ""
     missing = []
+    if "git_hook_pre_commit" not in text:
+        missing.append("wrapper-delegation")
+    sections = [
+        ("A R-ID conflict", "check_rule_id_free"),
+        ("B R41 post_render_gate", "post_render_gate"),
+        ("C MASS-REPLACE log", "MASS-REPLACE"),
+        ("D Rule mention orphan", "check_rule_mention_codified"),
+    ]
     for nm, kw in sections:
-        if kw in text:
+        if kw in orch_text:
             print(f"  ✓ SECTION {nm}")
         else:
             print(f"  ✗ SECTION {nm} — missing")
