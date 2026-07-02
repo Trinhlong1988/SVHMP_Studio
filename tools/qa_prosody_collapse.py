@@ -49,12 +49,20 @@ def detect_prosody_collapse(audio: np.ndarray, sr: int) -> list[ProsodyIssue]:
     rms_db = 20 * np.log10(rms + 1e-9)
 
     win_frames = max(4, int(0.3 * sr / hop))
+    # deep-audit F8 (2/7): truoc day truot cua so theo buoc = win_frames -> diem
+    # chuyen cao do luon roi GIUA cua so post -> mu_post bi tron (220+110)/2 ~165
+    # -> drop do duoc ~0.25-0.33 < 0.35 -> MISS ca octave drop that (false-neg,
+    # test R190 test_04). Fix: truot MIN (step nho) de it nhat 1 cua so co pre
+    # tron trong 220 va post tron trong 110; sau moi HIGH nhay qua 1 win_frames
+    # de khong spam trung 1 su kien.
+    step = max(1, win_frames // 3)
     i = win_frames
     while i < len(f0) - win_frames:
         valid_pre = f0[i - win_frames : i]
         valid_post = f0[i : i + win_frames]
         valid_pre = valid_pre[~np.isnan(valid_pre)]
         valid_post = valid_post[~np.isnan(valid_post)]
+        advanced = False
         if len(valid_pre) >= 3 and len(valid_post) >= 3:
             mu_pre = float(np.mean(valid_pre))
             mu_post = float(np.mean(valid_post))
@@ -68,14 +76,17 @@ def detect_prosody_collapse(audio: np.ndarray, sr: int) -> list[ProsodyIssue]:
                         severity="HIGH",
                         metric=round(drop, 3),
                     ))
-                if mu_post > 0 and std_post / mu_post > 0.40:
+                    i += win_frames  # nhay qua su kien -> 1 HIGH / event
+                    advanced = True
+                elif mu_post > 0 and std_post / mu_post > 0.40:
                     out.append(ProsodyIssue(
                         ts_sec=round(float(times[i]), 3),
                         artifact_type="prosody_rung_lem",
                         severity="MEDIUM",
                         metric=round(std_post / mu_post, 3),
                     ))
-        i += win_frames
+        if not advanced:
+            i += step
 
     return out
 

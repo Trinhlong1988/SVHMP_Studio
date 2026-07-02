@@ -321,6 +321,7 @@ SAU ĐÓ FIX CHẶT CHẼ CÁC s TRƯỚC KHI REN"
 
 ---
 ## AUTO LOG (tự động cập nhật)
+- `10:37` **[FIX]** Em fix: F8+F2: prosody detector het false-negative octave drop (window smearing -> truot min buoc); test_harness doi sang do SUC KHOE tool (clean/gate-fail/FLAKY/CRASH), dung 2 daemon qa_watch trung -> stable exit 0; wire test_voice_qa_tools (74 pass). 4 gate-fail = content ep_01 that.
 - `10:26` **[FIX]** Em fix: F7: doc drift - roadmap + CLAUDE cap nhat 186 unmapped -> 0/0/0 (G1 done, strict-enforced). Khop may that.
 - `10:23` **[FIX]** Em fix: F6: audit_60 het ZeroDivision (0 EP -> exit 2 BLOCKED); audit_hidden_bugs + audit_100_check het false-pass tren 0 episode (exit 2); project_health HIGH luon exit 1 (khong con can --strict).
 - `10:19` **[FIX]** Em fix: F3+F5: go 2 test mo coi vao gate (test_full_text_gate_r86 R197 + voice_profile_manager, 39->59 pass); registry strict exit tren MISSING/DUP/UNMAPPED (0/0/0); map 3 file hook. F8: prosody detector FN synthetic pitch drop (can calibration).
