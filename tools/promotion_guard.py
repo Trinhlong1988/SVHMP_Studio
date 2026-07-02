@@ -98,13 +98,12 @@ def _from_prepush_stdin(stdin_text, cwd=None):
     """Moi dong: <local_ref> <local_sha> <remote_ref> <remote_sha>.
     Tong hop: bat ky ref nao vi pham -> BLOCK (tru khi authorized trong range do)."""
     ZERO = '0' * 40
-    worst = (0, 'OK: khong co ref nao push.')
-    any_ref = False
+    processed = 0
     for raw in stdin_text.splitlines():
         parts = raw.split()
         if len(parts) < 4:
             continue
-        any_ref = True
+        processed += 1
         local_ref, local_sha, _remote_ref, remote_sha = parts[0], parts[1], parts[2], parts[3]
         if local_sha == ZERO:            # xoa ref -> bo qua
             continue
@@ -121,9 +120,9 @@ def _from_prepush_stdin(stdin_text, cwd=None):
         code, reason = decide(lock, tag, is_authorized(msgs))
         if code != 0:
             return code, f'[{local_ref}] {reason}'
-    if not any_ref:
-        return 0, 'OK: stdin rong (khong co ref).'
-    return worst
+    if not processed:
+        return 0, 'OK: stdin rong (khong co ref hop le de kiem).'
+    return 0, f'OK: {processed} ref kiem — khong co lock/tag chua uy quyen.'
 
 
 def main(argv=None):

@@ -118,3 +118,31 @@ def test_integration_normal_change_exit_0(tmp_path):
     _git(d, 'commit', '-aqm', 'chore: add note')
     r = _run_guard(d, 'HEAD~1', 'HEAD')
     assert r.returncode == 0, r.stdout + r.stderr
+
+
+# ---------- path pre-push stdin (chong inert) ----------
+def _run_guard_stdin(cwd, stdin_text):
+    return subprocess.run([sys.executable, str(GUARD)], cwd=cwd, input=stdin_text,
+                          capture_output=True, text=True)
+
+
+def test_stdin_lock_without_auth_blocks(tmp_path):
+    d, f = _init_repo(tmp_path)
+    base = _git(d, 'rev-parse', 'HEAD').stdout.strip()
+    f.write_text('enterprise_pack_progress:\n  pack1_constitution: locked\n', encoding='utf-8')
+    _git(d, 'commit', '-aqm', 'freeze (khong uy quyen)')
+    head = _git(d, 'rev-parse', 'HEAD').stdout.strip()
+    r = _run_guard_stdin(d, f'refs/heads/main {head} refs/heads/main {base}\n')
+    assert r.returncode == 1, r.stdout + r.stderr
+
+
+def test_stdin_normal_reports_refs_checked(tmp_path):
+    """Message PHAI phan anh da kiem ref (chong output 'khong co ref' gay hieu lam inert)."""
+    d, f = _init_repo(tmp_path)
+    base = _git(d, 'rev-parse', 'HEAD').stdout.strip()
+    f.write_text('enterprise_pack_progress:\n  pack1_constitution: candidate\n  n: 1\n', encoding='utf-8')
+    _git(d, 'commit', '-aqm', 'chore')
+    head = _git(d, 'rev-parse', 'HEAD').stdout.strip()
+    r = _run_guard_stdin(d, f'refs/heads/main {head} refs/heads/main {base}\n')
+    assert r.returncode == 0, r.stdout + r.stderr
+    assert 'ref kiem' in r.stdout, r.stdout
