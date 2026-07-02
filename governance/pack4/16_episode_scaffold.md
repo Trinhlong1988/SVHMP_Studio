@@ -7,13 +7,13 @@
 **Authority:** Phái sinh registry R211 + `constitution/00`; scaffold là khuôn, không tạo quyền nội dung.
 **Responsibilities:** Enforcer template `prompts/ep_scaffold_template.md` · audit mở đầu `tools/audit_ngan_opening_template.py` (chống opening lặp khuôn) · Certify `tests/test_pack4_docs.py`.
 **Workflow:** lấy `ep_scaffold_template.md` → điền moment_map theo beat (từ 15) → audit opening (`audit_ngan_opening_template.py`) → chuyển QA pipeline.
-**Mandatory Rules:** mỗi episode PHẢI bám scaffold (bảng moment_map dưới); opening PHẢI qua `audit_ngan_opening_template.py` (không lặp khuôn mở).
-**PASS Criteria:** episode khớp scaffold + opening audit exit 0.
-**FAIL Criteria:** thiếu moment bắt buộc hoặc opening trùng khuôn → BLOCK.
-**Examples:** moment_map thiếu `reveal` → FAIL; opening 5 tập liền cùng khuôn → audit flag.
+**Mandatory Rules:** opening PHẢI qua `audit_ngan_opening_template.py` (không lặp khuôn mở) — ENFORCED. *(ROADMAP — CHƯA gate: "episode phải bám đủ moment_map" — KHÔNG tool nào check completeness moment_map; enforcer hiện chỉ soi opening.)*
+**PASS Criteria:** opening audit exit 0 (ENFORCED). *(ROADMAP: "episode khớp scaffold" chưa có tool kiểm.)*
+**FAIL Criteria:** opening trùng khuôn → audit flag (ENFORCED). *(ROADMAP: "thiếu moment bắt buộc → BLOCK" chưa gate.)*
+**Examples:** opening 5 tập liền cùng khuôn → `audit_ngan_opening_template.py` flag (ENFORCED). *(ROADMAP: "moment_map thiếu reveal → FAIL" chưa gate.)*
 **Promotion Rules:** theo mục Promotion Rules ở `governance/constitution/00_constitution.md` — reconcile, KHÔNG nhân đôi.
 
-## Moment map template (khung bắt buộc)
+## Moment map template (khung tham chiếu — completeness CHƯA gate)
 | # | Moment | Vai trò |
 |---|---|---|
 | 1 | opening | thiết lập bối cảnh + hook (audit chống lặp khuôn) |

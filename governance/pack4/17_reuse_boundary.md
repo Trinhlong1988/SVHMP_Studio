@@ -7,10 +7,10 @@
 **Authority:** Phái sinh registry R211 (source-of-truth per domain) + `constitution/00`.
 **Responsibilities:** Enforcer `tools/detect_template_repetition.py` (phát hiện copy-paste per-project lẽ ra phải share) · Certify `tests/test_pack4_docs.py` · giữ engine trung tính project.
 **Workflow:** phân loại file (shared vs per-project) → `detect_template_repetition.py` quét trùng lặp → trùng vượt ngưỡng = ứng viên đưa về shared.
-**Mandatory Rules:** shared-code CẤM chứa giá trị per-project hard-code; per-project data CẤM chứa logic. Lặp template vượt ngưỡng = vi phạm ranh giới.
-**PASS Criteria:** detect_template_repetition dưới ngưỡng + phân loại đúng phía ranh giới.
-**FAIL Criteria:** engine hard-code giá trị project, hoặc lặp template vượt ngưỡng → BLOCK.
-**Examples:** tên vùng giọng hard-code trong tool → phải chuyển sang `project_config`; 3 project copy cùng scaffold → đưa về shared template.
+**Mandatory Rules:** lặp TEXT-template across EP vượt ngưỡng = flag `detect_template_repetition.py` (ENFORCED). *(ROADMAP — CHƯA gate: nguyên tắc "shared-code cấm hard-code per-project / per-project data cấm logic" — KHÔNG tool nào dò hard-code trong engine; đây là kỷ luật review, chưa cưỡng chế.)*
+**PASS Criteria:** `detect_template_repetition.py` dưới ngưỡng (ENFORCED). *(ROADMAP: "phân loại đúng phía ranh giới" chưa có tool.)*
+**FAIL Criteria:** lặp TEXT-template across EP vượt ngưỡng → flag (ENFORCED). *(ROADMAP: "engine hard-code giá trị project → BLOCK" — CHƯA gate; tool chỉ bắt lặp text, không dò hardcode.)*
+**Examples:** cùng câu HOOK/REVEAL lặp qua nhiều EP → `detect_template_repetition.py` flag (ENFORCED). *(ROADMAP: "tên vùng giọng hard-code trong tool → chuyển sang project_config" — cần dò hardcode, chưa có tool.)*
 **Promotion Rules:** theo mục Promotion Rules ở `governance/constitution/00_constitution.md` — reconcile, KHÔNG nhân đôi.
 
 ## Ranh giới (phân phía)
