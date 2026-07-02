@@ -9,13 +9,11 @@ verify wiring -> claim prose sai lot vao git history + DoD.
 Test nay bien lop do thanh loi CI-bat-duoc: render entrypoint PHAI tham chieu
 character completeness gate.
 
-Trang thai HIEN TAI: xfail(strict) vi a171120 chua wire that. Khi ai do wire
-gate vao render (#2), test XPASS -> strict lat thanh FAIL -> BUOC go marker
-xfail nay -> tu do thanh guard song (block neu ai un-wire lai).
+Trang thai: GUARD SONG (2026-07-02). Gate da wire that vao svhmp_v13_render.py
+(CHARACTER_GATE, WARN-default + --strict-characters). xfail marker DA GO -> test
+nay gio BLOCK neu ai un-wire gate khoi render.
 """
 from pathlib import Path
-
-import pytest
 
 REPO = Path(__file__).resolve().parent.parent
 RENDER = REPO / "tools" / "svhmp_v13_render.py"
@@ -31,10 +29,6 @@ WIRE_MARKERS = (
 )
 
 
-@pytest.mark.xfail(
-    reason="G2 gate chua wire vao render (a171120: 0 reference) — XPASS khi #2 wire that thi go marker",
-    strict=True,
-)
 def test_character_gate_reachable_from_render():
     assert RENDER.exists(), "svhmp_v13_render.py missing"
     txt = RENDER.read_text(encoding="utf-8")
