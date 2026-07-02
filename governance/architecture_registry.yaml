@@ -135,7 +135,7 @@ domains:
     enterprise_pack_progress:
       pack1_constitution: candidate
       pack2_governance: locked   # FROZEN v1.0 (LEAD duyet 2/7): freeze-gate 16-phase PASS, auditor SHIP; tag pack2-governance-v1.0
-      pack3_cicd: candidate   # PACK3 CI/CD 4 doc (11-14) + test built 2/7; candidate (Builder KHONG tu locked - 05_builder_hard_gate)
+      pack3_cicd: locked   # FROZEN v1.0 (Mr.Long authorized 2/7): server-CI green (a8cf7d2), freeze_gate 4/4, auditor SHIP; tag pack3-cicd-v1.0
       pack4_template: todo
       pack5_quality: todo
     data_contract:
