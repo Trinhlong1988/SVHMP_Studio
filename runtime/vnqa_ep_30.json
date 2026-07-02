@@ -1,0 +1,93 @@
+{
+  "ep_number": 30,
+  "phase_h_version": "H1-H7 v1.0",
+  "stats": {
+    "tokens_count": 3167,
+    "sentences_approx": 281,
+    "adverbs_count": 135,
+    "adverbs_ratio": 0.043,
+    "word_count": 3041,
+    "estimated_minutes": 19.6
+  },
+  "issues": [
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"khải phong\" lặp 94x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"bằng\" lặp 41x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"đêm\" lặp 37x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"tốt nghiệp\" lặp 26x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"tên\" lặp 25x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H2_dict_unusual_compound",
+      "severity": "minor",
+      "evidence": "Cụm từ dài bất thường: ['` prompt_version', 'MILESTONE pillar', 'TEMPORAL REVEAL']",
+      "suggestion": "TENTATIVE — Mr.Long verify trong từ điển VN"
+    },
+    {
+      "check": "H7_ngram_repetition",
+      "severity": "warning",
+      "evidence": "Bi-gram \"khải phong\" lặp 3x trong 1 câu",
+      "suggestion": "Reword câu để tránh repetition"
+    },
+    {
+      "check": "H7_ngram_repetition",
+      "severity": "warning",
+      "evidence": "Bi-gram \"khải phong\" lặp 4x trong 1 câu",
+      "suggestion": "Reword câu để tránh repetition"
+    },
+    {
+      "check": "H7_ngram_repetition",
+      "severity": "warning",
+      "evidence": "Bi-gram \"tốt nghiệp\" lặp 3x trong 1 câu",
+      "suggestion": "Reword câu để tránh repetition"
+    },
+    {
+      "check": "H9_stop_consonant_tail",
+      "severity": "minor",
+      "evidence": "Word \"khuất\" xuất hiện 3x (BigVGAN tail risk)",
+      "suggestion": "khuất bóng → khuất dần / mờ xa"
+    },
+    {
+      "check": "H9_stop_consonant_tail",
+      "severity": "minor",
+      "evidence": "Word \"biết\" xuất hiện 8x (BigVGAN tail risk)",
+      "suggestion": "chưa biết → vẫn chưa hay / vẫn chưa rõ"
+    },
+    {
+      "check": "H10_duration_above_preferred",
+      "severity": "minor",
+      "evidence": "19.6 phút (preferred 15-18p, max 20p)",
+      "suggestion": "OK acceptable nhưng listener có thể mệt"
+    }
+  ],
+  "issues_count_by_severity": {
+    "critical": 0,
+    "warning": 8,
+    "minor": 4
+  },
+  "verdict": "WARN",
+  "next_action": "Generator review issues, optional regen"
+}

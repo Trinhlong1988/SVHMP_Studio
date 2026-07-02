@@ -1,0 +1,81 @@
+{
+  "ep_number": 35,
+  "phase_h_version": "H1-H7 v1.0",
+  "stats": {
+    "tokens_count": 2174,
+    "sentences_approx": 208,
+    "adverbs_count": 105,
+    "adverbs_ratio": 0.048,
+    "word_count": 2080,
+    "estimated_minutes": 13.4
+  },
+  "issues": [
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"gương\" lặp 40x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"mảnh\" lặp 32x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"khải phong\" lặp 23x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"đêm\" lặp 22x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H2_dict_unusual_compound",
+      "severity": "minor",
+      "evidence": "Cụm từ dài bất thường: ['` prompt_version', '0.70 quang_memory_fragment', 'callback EP25']",
+      "suggestion": "TENTATIVE — Mr.Long verify trong từ điển VN"
+    },
+    {
+      "check": "H7_ngram_repetition",
+      "severity": "warning",
+      "evidence": "Bi-gram \"trí hưng\" lặp 3x trong 1 câu",
+      "suggestion": "Reword câu để tránh repetition"
+    },
+    {
+      "check": "H7_ngram_repetition",
+      "severity": "warning",
+      "evidence": "Bi-gram \"vải bông\" lặp 4x trong 1 câu",
+      "suggestion": "Reword câu để tránh repetition"
+    },
+    {
+      "check": "H9_stop_consonant_tail",
+      "severity": "minor",
+      "evidence": "Word \"khuất\" xuất hiện 2x (BigVGAN tail risk)",
+      "suggestion": "khuất bóng → khuất dần / mờ xa"
+    },
+    {
+      "check": "H9_stop_consonant_tail",
+      "severity": "minor",
+      "evidence": "Word \"biết\" xuất hiện 2x (BigVGAN tail risk)",
+      "suggestion": "chưa biết → vẫn chưa hay / vẫn chưa rõ"
+    },
+    {
+      "check": "H10_duration_too_short",
+      "severity": "warning",
+      "evidence": "13.4 phút (target 15-18p, max 20p)",
+      "suggestion": "Expand thêm 244 từ để đạt 15p"
+    }
+  ],
+  "issues_count_by_severity": {
+    "critical": 0,
+    "warning": 7,
+    "minor": 3
+  },
+  "verdict": "WARN",
+  "next_action": "Generator review issues, optional regen"
+}

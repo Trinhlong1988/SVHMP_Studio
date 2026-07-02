@@ -1,0 +1,8 @@
+#!/bin/sh
+# SVHMP pre-commit — thin wrapper delegating to Python (deep-audit F1c 2/7).
+# Portable: MinGit has no bash.exe / coreutils, so the old #!/bin/bash hook
+# with grep/sed/awk/date could not spawn. All logic in git_hook_pre_commit.py.
+# Sections: A R-ID conflict, D rule-mention, C mass-replace warn, B R41 gate.
+PY="C:/Users/Admin/index-tts/.venv/Scripts/python.exe"
+[ -x "$PY" ] || PY=python
+exec "$PY" tools/git_hook_pre_commit.py

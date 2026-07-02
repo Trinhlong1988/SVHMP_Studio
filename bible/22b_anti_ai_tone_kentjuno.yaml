@@ -1,0 +1,143 @@
+# SVHMP — 22b ANTI-AI TONE 5 CATEGORIES (kentjuno pattern import)
+# Round 18 add 2026-06-28 — Agent 4 kentjuno/ainovel-cli research synthesis
+# Status: PRODUCTION CANDIDATE v1.0
+# Loaded by: Generator pre-write hint + Editor aesthetic 5 sub-dim review
+# Cross-ref: bible/22_anti_slop_vi.yaml (word-level autonovel) + kentjuno assets/references/anti-ai-tone.md
+
+description: |
+  5-category anti-AI tone reference imported từ kentjuno/ainovel-cli (Vietnamese adaptation of voocel/ainovel-cli).
+  Complement bible/22 (word-level) với higher-level structural/semantic patterns.
+  Writer regulate while writing, Editor cite source khi flag aesthetic issues.
+
+  Mechanical layer (bible/22 user_rules structured) catch surface patterns.
+  This file catches "không thể mechanize" semantic judgments.
+
+# ============================================================
+# CATEGORY 1 — STRUCTURE AI-TONE
+# ============================================================
+
+category_1_structure:
+  three_part_parallel:
+    pattern: "Connect 3 short clauses parallel ('Anh không do dự, không lui, không quay lại')"
+    fix: "Keep one strongest, others convert to action/detail"
+    svhmp_examples_to_avoid:
+      - '"Khải Phong không nhớ, không hiểu, không tin."  ← parallel triple → wrong'
+      - '"Cô lên xe. Cô ngồi xuống. Cô khóc."  ← parallel triple → wrong (R66 already catch some)'
+
+  symmetric_sentence_stacking:
+    pattern: "Each para length + sentence pattern highly uniform, reads like list"
+    fix: "Mix long + short, give rhythm breathing"
+
+  in_chapter_numbered_headings:
+    pattern: '"一" "二" "三" or ## ### appearing in narrative body'
+    fix: "Only keep chapter title, scene transitions via blank line"
+    svhmp_note: "SVHMP đã có section headers HOOK/SETUP/INCIDENT — internal só OK. Cấm số ngoài structure."
+
+# ============================================================
+# CATEGORY 2 — VOCABULARY AI-TONE
+# ============================================================
+
+category_2_vocabulary:
+  four_char_idiom_stacking:
+    pattern: 'Multiple 4-char idioms crammed in one para ("kinh tâm động phách, hiểm tượng hoàn sinh, ngàn cân nhất phát")'
+    fix: "Replace string of idioms with one concrete action or image"
+
+  simile_template:
+    pattern: '"Như... một cách", "Tựa như... vậy", "Giống hệt... thế nào" — repeated stock simile'
+    fix: "Replace with precise verb or fresh comparison, or direct description"
+
+  classifier_addiction:
+    pattern: '"một tia", "một nét", "một làn" + emotion repeated'
+    sub_addiction: '"không nhịn được", "vô tình", "không khỏi", "tựa như" used as filler'
+    fix: "Delete buffer words, let action happen directly"
+    svhmp_examples:
+      bad: '"Anh không nhịn được mỉm cười nhẹ."'
+      good: '"Anh mỉm cười."'
+
+  abstract_big_words:
+    pattern: '"Trong một số trường hợp", "đáng chú ý là", "không hiểu vì sao", "khó nói rõ" — narrator summarize for reader'
+    fix: "Delete, let concrete facts drive judgment"
+
+  contrast_definition_syntax:
+    pattern: '"Anh muốn không phải X, mà là Y", "Đây không phải kết thúc, mà là bắt đầu" — negation+turn point patterns repeated'
+    fix: "Use concrete action/choice to deliver point, not aphoristic syntax"
+
+# ============================================================
+# CATEGORY 3 — DESCRIPTION AI-TONE
+# ============================================================
+
+category_3_description:
+  abstract_replaces_sensory:
+    pattern: '"Không khí áp lực", "tâm trạng căng thẳng" — label-style description'
+    fix: "Give tactile/olfactory/auditory concrete detail (better than pure visual)"
+    svhmp_example:
+      bad: '"Cabin xe căng thẳng."'
+      good: '"Tay Khải Phong nắm chặt vào thành ghế đến trắng đốt ngón."'
+
+  emotion_label:
+    pattern: 'Direct write "Anh rất căng thẳng/giận/buồn"'
+    fix: "Use body reaction + choice to deliver ('khớp ngón trắng', 'cổ họng nghẹn'), don't name emotion"
+    svhmp_check: "audit_emotion_label.py scan + flag direct labels"
+
+# ============================================================
+# CATEGORY 4 — DIALOGUE AI-TONE
+# ============================================================
+
+category_4_dialogue:
+  character_homogenization:
+    pattern: "Remove speaker tag, cannot distinguish who speaks — all use same sentence pattern, vocabulary, cultural level"
+    fix: "Give each character stable sentence length + verbal tic + subtext ratio"
+    svhmp_action: "Build character voice profile per recurring NPC (bác tài, passengers per archetype)"
+
+  over_explained_motivation:
+    pattern: 'Character vomits inner psychology, OR narrator immediately explains "He said that because..."'
+    fix: "Let motivation hide in choice + subtext, trust the reader"
+
+  written_style_speech:
+    pattern: "Everyone speaks complete, neat, logical-connector-having sentences"
+    fix: "Spoken VN has pause, ellipsis, off-topic answers — apply per character"
+
+# ============================================================
+# CATEGORY 5 — PACING + EMOTION AI-TONE
+# ============================================================
+
+category_5_pacing_emotion:
+  everything_explained:
+    pattern: "Every action + cause-effect fully written, no imagination space"
+    fix: "Hide what should hide, use ellipsis to drive追读"
+
+  forced_ascension_chapter_end:
+    pattern: "Chapter-end pull to life lesson or theme aphorism"
+    fix: "Stop on concrete image, choice, or emotion residue, don't summarize meaning for reader"
+    svhmp_alignment: |
+      Match Ngạn-style kết lửng triết lý (bible/01 cliffhanger_pool_ngan).
+      CẤM cliffhanger Mỹ-style or moral aphorism.
+    examples_forbidden:
+      - '"Cuộc đời như chuyến xe đêm, ai cũng có lần dừng lại."  ← life lesson → wrong'
+      - '"Đó là bài học quý giá nhất tôi từng nhận."  ← aphorism → wrong'
+    examples_good:
+      - '"Khải Phong đứng yên. Mưa rơi đều trên vai anh."  ← image stop ✓'
+      - '"...đến giờ tôi vẫn không hiểu vì sao đêm hôm ấy lại như vậy."  ← Ngạn lửng ✓'
+
+# ============================================================
+# ENFORCEMENT MAP
+# ============================================================
+
+enforcement:
+  pre_write_writer:
+    description: "Generator load 5 categories as constraint before writing each section"
+    integration: prompts/generator.md PHASE 13
+
+  post_write_editor:
+    description: "Editor scan 5 categories + cite original text for each violation found"
+    rule: "MUST quote the source line — no empty conclusions"
+    integration: tools/audit_aesthetic_5_subdim.py (build phase 2)
+
+  mechanical_layer_overlap:
+    description: "Bible/22 user_rules.structured already catches mechanical patterns (em-dash, fixed phrases, fatigue words)"
+    this_file: "Catches semantic + structural judgments NOT mechanizable"
+
+authority: Mr.Long
+revision_policy:
+  amendable_by: Mr.Long
+  process: "Edit + bump version + cross-ref bible/22 sync"

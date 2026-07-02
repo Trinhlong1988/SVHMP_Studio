@@ -1,0 +1,63 @@
+{
+  "ep_number": 23,
+  "phase_h_version": "H1-H7 v1.0",
+  "stats": {
+    "tokens_count": 2690,
+    "sentences_approx": 263,
+    "adverbs_count": 145,
+    "adverbs_ratio": 0.054,
+    "word_count": 2622,
+    "estimated_minutes": 16.9
+  },
+  "issues": [
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"yến\" lặp 37x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"khải phong\" lặp 24x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H2_dict_unusual_compound",
+      "severity": "minor",
+      "evidence": "Cụm từ dài bất thường: ['` prompt_version', '0.55 quang_memory_fragment', 'Trần Nguyên Hãn']",
+      "suggestion": "TENTATIVE — Mr.Long verify trong từ điển VN"
+    },
+    {
+      "check": "H7_ngram_repetition",
+      "severity": "warning",
+      "evidence": "Bi-gram \"phòng trọ\" lặp 3x trong 1 câu",
+      "suggestion": "Reword câu để tránh repetition"
+    },
+    {
+      "check": "H9_stop_consonant_tail",
+      "severity": "minor",
+      "evidence": "Word \"suốt\" xuất hiện 1x (BigVGAN tail risk)",
+      "suggestion": "trong suốt → lặng lẽ / mờ đục"
+    },
+    {
+      "check": "H9_stop_consonant_tail",
+      "severity": "minor",
+      "evidence": "Word \"khuất\" xuất hiện 3x (BigVGAN tail risk)",
+      "suggestion": "khuất bóng → khuất dần / mờ xa"
+    },
+    {
+      "check": "H9_stop_consonant_tail",
+      "severity": "minor",
+      "evidence": "Word \"biết\" xuất hiện 3x (BigVGAN tail risk)",
+      "suggestion": "chưa biết → vẫn chưa hay / vẫn chưa rõ"
+    }
+  ],
+  "issues_count_by_severity": {
+    "critical": 0,
+    "warning": 3,
+    "minor": 4
+  },
+  "verdict": "WARN",
+  "next_action": "Generator review issues, optional regen"
+}

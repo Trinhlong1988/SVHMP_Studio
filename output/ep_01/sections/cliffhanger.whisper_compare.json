@@ -1,0 +1,11 @@
+{
+  "wav": "D:\\DỰ ÁN AI\\GIỌNG ĐỌC\\DỰ ÁN TRUYỆN MA\\SVHMP_Studio\\output\\ep_01\\sections\\cliffhanger.wav",
+  "spec": "D:\\DỰ ÁN AI\\GIỌNG ĐỌC\\DỰ ÁN TRUYỆN MA\\SVHMP_Studio\\output\\ep_01\\sections\\spec_cliffhanger.json",
+  "model": "small",
+  "ref_words": 298,
+  "hyp_words": 298,
+  "overall_wer_pct": 10.4,
+  "similarity_pct": 89.6,
+  "threshold_pct": 20.0,
+  "verdict": "PASS"
+}

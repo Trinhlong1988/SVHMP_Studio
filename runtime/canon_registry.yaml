@@ -1,0 +1,201 @@
+# RUNTIME/CANON_REGISTRY — immutable post-first-seen lock (BUG 4 fix round 8).
+# Sau khi nhân vật xuất hiện lần đầu, các field immutable_fields KHÔNG được đổi.
+# Mục đích: chống AI sau 60-100 ep đổi tên/tuổi/nghề/vật phẩm.
+
+meta:
+  schema_version: 1
+  policy: "Immutable post-first-seen — drift = HARD-FAIL ở QA"
+  override_required: human_explicit_only
+
+# ============================================================
+# RECURRING CHARACTERS (always immutable post-first-seen)
+# ============================================================
+
+CANON_CHAR_DRIVER:
+  id: CHAR_DRIVER
+  role: BAC_TAI
+  display_name: "Bác tài"
+  first_seen_ep: 1
+  full_def_ref: "bible/03_character_bible.yaml#CHAR_DRIVER"
+  immutable_fields: [id, display_name, role, visual, behavior, speech_lines, secret, why_white_gloves]
+
+CANON_CHAR_NAM:
+  id: CHAR_NAM
+  role: POV_PROTAGONIST
+  display_name: "Nam"
+  first_seen_ep_indirect: 21    # qua ký ức người khác
+  first_seen_ep_direct: 30      # lên xe lần đầu
+  full_def_ref: "bible/03_character_bible.yaml#CHAR_NAM"
+  immutable_fields: [id, display_name, age, visual, personality, fear, core_wound, secret]
+
+# ============================================================
+# ONE-SHOT PASSENGERS — lock từ ep first_seen
+# ============================================================
+
+# Pattern: CANON_PAS_NNNN
+# Auto-populate sau khi ship ep N pass QA.
+
+CANON_PAS_0001:
+  id: PAS_0001
+  seat_first: 1
+  display_name: "Ông cụ radio"
+  first_seen_ep: 1
+  age: UNKNOWN
+  occupation: UNKNOWN
+  object_held: "radio nhỏ"
+  immutable_fields: [id, display_name, first_seen_ep, object_held]
+
+CANON_PAS_0002:
+  id: PAS_0002
+  seat_first: 2
+  display_name: "Chị Loan trung niên"
+  first_seen_ep: 1
+  age: UNKNOWN
+  occupation: UNKNOWN
+  object_held: UNKNOWN
+  immutable_fields: [id, display_name, first_seen_ep]
+
+CANON_PAS_0003:
+  id: PAS_0003
+  seat_first: 3
+  display_name: "Người đàn ông áo nâu"
+  first_seen_ep: 1
+  age: UNKNOWN
+  occupation: UNKNOWN
+  object_held: UNKNOWN
+  immutable_fields: [id, display_name, first_seen_ep]
+
+CANON_PAS_0004:
+  id: PAS_0004
+  seat_first: 4
+  display_name: "Cô giáo trẻ"
+  first_seen_ep: 1
+  age: UNKNOWN
+  occupation: "giáo viên (heuristic — chưa reveal)"
+  object_held: UNKNOWN
+  immutable_fields: [id, display_name, first_seen_ep]
+
+CANON_PAS_0005:
+  id: PAS_0005
+  seat_first: 5
+  display_name: "Bác trai trầm"
+  first_seen_ep: 1
+  age: UNKNOWN
+  occupation: UNKNOWN
+  object_held: UNKNOWN
+  immutable_fields: [id, display_name, first_seen_ep]
+
+CANON_PAS_0006:
+  id: PAS_0006
+  seat_first: 6
+  display_name: "Cô gái tóc cột thấp ghế 6"
+  first_seen_ep: 1
+  age: UNKNOWN
+  occupation: UNKNOWN
+  object_held: UNKNOWN
+  immutable_fields: [id, display_name, first_seen_ep]
+
+CANON_PAS_0007:
+  id: PAS_0007
+  seat_first: 7
+  display_name: "Cô gái áo gió xanh nhạt"
+  first_seen_ep: 1
+  age: UNKNOWN
+  occupation: UNKNOWN
+  object_held: "đồng hồ nữ vỏ xà cừ (kim dừng 7:10)"
+  immutable_fields: [id, display_name, first_seen_ep, object_held]
+  note: "ARC_0001 carry — Hà callback. KHÔNG reveal liên hệ Hà trước ep 7."
+
+CANON_PAS_0008:
+  id: PAS_0008
+  seat_first: 8
+  display_name: "Cô gái tóc cột thấp ghế 8"
+  first_seen_ep: 1
+  age: UNKNOWN
+  occupation: UNKNOWN
+  object_held: UNKNOWN
+  immutable_fields: [id, display_name, first_seen_ep]
+
+CANON_PAS_0009:
+  id: PAS_0009
+  seat_first: 9
+  display_name: "Cô y tá đồng phục cũ"
+  first_seen_ep: 1
+  age: UNKNOWN
+  occupation: "y tá"
+  object_held: "đồng phục y tá cũ"
+  immutable_fields: [id, display_name, first_seen_ep, occupation, object_held]
+
+CANON_PAS_0010:
+  id: PAS_0010
+  seat_first: 10
+  display_name: "Anh xe ôm trẻ"
+  first_seen_ep: 1
+  age: UNKNOWN
+  occupation: "xe ôm"
+  object_held: UNKNOWN
+  immutable_fields: [id, display_name, first_seen_ep, occupation]
+
+CANON_PAS_0011:
+  id: PAS_0011
+  seat_first: 11
+  display_name: "Cô bé sinh viên"
+  first_seen_ep: 1
+  age: "18-22"
+  occupation: "sinh viên"
+  object_held: UNKNOWN
+  immutable_fields: [id, display_name, first_seen_ep, age, occupation]
+
+CANON_PAS_0012:
+  id: PAS_0012
+  seat_first: 12
+  display_name: "Anh trung niên cầm giấy gấp tư"
+  first_seen_ep: 1
+  age: UNKNOWN
+  occupation: UNKNOWN
+  object_held: "tờ giấy gấp tư"
+  immutable_fields: [id, display_name, first_seen_ep, object_held]
+
+# ============================================================
+# CANON DRIFT POLICY
+# ============================================================
+
+drift_policy:
+  rules:
+    - "Khi gen ep mới, AI MUST cross-check passenger reference với canon_registry."
+    - "Nếu generated text mention PAS_XXXX với field khác immutable_fields lock → HARD-FAIL"
+    - "Vd: PAS_0007 'cô gái áo gió xanh' → tập 20 KHÔNG được gọi 'cô y tá áo xanh' hay 'cô gái áo đỏ'"
+  on_drift:
+    - REGEN section vi phạm
+    - Update QA flag canon_drift_violation
+    - Log canon_drift_count vào ledger
+  override:
+    - Human explicit only (script.txt edit by Mr.Long)
+    - Lý do phải ghi vào canon_override_log.yaml
+
+# ============================================================
+# OBJECT REGISTRY (significant objects ≥2 ep mention)
+# ============================================================
+
+CANON_OBJ_0001:
+  id: OBJ_0001
+  display_name: "Đồng hồ nữ vỏ xà cừ"
+  first_seen_ep: 1
+  description: "Mặt số La Mã, kim dừng 7:10, mạ vàng đã xước"
+  belongs_to_history:
+    - {ep: 1, owner: "Khải Phong (ep_1 protagonist) - rời ep 1"}
+    - {ep: 1, owner: PAS_0007, transition: "Khải Phong rời → cô gái áo gió xanh nhặt"}
+  arc_link: ARC_0001
+  immutable_fields: [id, display_name, description]
+
+# ============================================================
+# LOCATION REGISTRY
+# ============================================================
+
+CANON_LOC_0001:
+  id: LOC_0001
+  display_name: "Cầu Long Biên"
+  first_seen_ep: 1
+  type: stop_location
+  used_for_passenger_id: "Khải Phong (ep_1 protagonist)"
+  reuse_policy: "KHÔNG dùng lại cho ep khác trong 30 ep gần nhất"

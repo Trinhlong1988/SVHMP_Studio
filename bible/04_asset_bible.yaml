@@ -1,0 +1,396 @@
+# 04_ASSET_BIBLE — visual + audio masters lock. Cross-ep consistency.
+# Extract từ SVHMP-RC3.2 asset_bible + asset_registry block.
+# Khi gen asset thật → compute sha256 → lock manifest. Hiện placeholder.
+#
+# v1.1 (2026-06-26) — add channel_brand_assets section cho HDK channel intro (ref prompts/video_intro.md + bible/19_motion_bible.yaml)
+
+version: 1.1
+lock_date: 2026-06-26 (v1.1 extension)
+previous_lock: 2026-06-19 (v1.0 ep body asset registry)
+
+visual_masters:
+  bus_interior_master: bus_v01
+  bus_exterior_master: bus_ext_v01
+  rain_master: rain_v02
+  fog_master: fog_v01
+  lamp_master: lamp_v01
+  bell_master: bell_v01
+  card_73_master: card_v01
+
+character_masters:
+  bac_tai_visual: char_bac_tai_v01
+  nam_visual: char_nam_v01
+
+# IMAGE GENERATION CONFIG
+image_generation:
+  model: stable_diffusion_xl
+  lora: lora_bus_night_rain_v01
+  style: photoreal_dim_lighting
+  color_grade: cool_blue + warm_yellow_pop
+  consistency_rule: |
+    Mọi tập SINH ảnh bus interior PHẢI reference bus_interior_master + LoRA.
+    KHÔNG generate ad-hoc.
+
+# ASSET REGISTRY — sha256 + resolution + seed (placeholder cho đến khi gen thật)
+asset_registry:
+  bus_v01:
+    type: image
+    file: assets/visual/bus_interior_v01.png
+    checksum: sha256:PLACEHOLDER_COMPUTE_AFTER_GEN
+    resolution: 1920x1080
+    seed: 845212
+    lora: lora_bus_night_rain_v01
+    style_prompt: "interior of vintage minibus, dim yellow ceiling lamp, 12 seats, wooden handrail, rain streaks on windows, photoreal cool-blue grading"
+    immutable: true
+
+  bus_ext_v01:
+    type: image
+    file: assets/visual/bus_exterior_v01.png
+    checksum: sha256:PLACEHOLDER
+    resolution: 1920x1080
+    seed: 102934
+    style_prompt: "old gray minibus on rural road night rain, faded license plate, single yellow headlight beam"
+    immutable: true
+
+  rain_v02:
+    type: texture
+    file: assets/visual/rain_texture_v02.png
+    checksum: sha256:PLACEHOLDER
+    resolution: 1920x1080
+    seed: 558901
+    immutable: true
+
+  fog_v01:
+    type: texture
+    file: assets/visual/fog_v01.png
+    checksum: sha256:PLACEHOLDER
+    resolution: 1920x1080
+    seed: 720144
+    immutable: true
+
+  lamp_v01:
+    type: image
+    file: assets/visual/yellow_lamp_v01.png
+    checksum: sha256:PLACEHOLDER
+    resolution: 1920x1080
+    seed: 339201
+    style_prompt: "lone yellow street lamp at end of foggy road, warm pop against cool blue night"
+    immutable: true
+
+  bell_v01:
+    type: image
+    file: assets/visual/bell_v01.png
+    checksum: sha256:PLACEHOLDER
+    resolution: 1920x1080
+    seed: 412877
+    style_prompt: "small brass bell hanging from rearview mirror, soft glow when ringing"
+    immutable: true
+
+  card_v01:
+    type: image
+    file: assets/visual/card_chuyen_73_v01.png
+    checksum: sha256:PLACEHOLDER
+    resolution: 1920x1080
+    seed: 738291
+    style_prompt: "old paper ticket card with handwritten 'CHUYẾN THỨ 73' text, slightly bent"
+    immutable: true
+
+  char_bac_tai_v01:
+    type: character
+    file: assets/visual/bac_tai_v01.png
+    checksum: sha256:PLACEHOLDER
+    resolution: 1024x1024
+    seed: 882114
+    style_prompt: "Vietnamese elderly bus driver age 55-60, gaunt slightly hunched, gray dress shirt, white cotton gloves, sunken eyes weathered face, calm posture"
+    lora: lora_bac_tai_face_v01
+    immutable: true
+
+  char_nam_v01:
+    type: character
+    file: assets/visual/nam_v01.png
+    checksum: sha256:PLACEHOLDER
+    resolution: 1024x1024
+    seed: 657033
+    style_prompt: "Vietnamese man age 28-32, thoughtful introverted, dark blue old shirt, jeans, carrying brown leather satchel"
+    immutable: true
+
+# DRIFT RULES
+drift_policy:
+  - Phát hiện asset name khác master → HARD-FAIL
+  - Phát hiện checksum mismatch → reject ep, regenerate asset từ seed
+  - Migrate master version (vd bus_v01 → bus_v02) yêu cầu update toàn series, KHÔNG partial
+  - 0 ad-hoc generation: mọi asset phải reference asset_registry entry
+
+asset_audit_per_ep:
+  - liệt kê master nào được dùng trong ep
+  - verify tên + checksum trùng `asset_registry`
+  - báo cáo trong `runtime/ledger.yaml.assets_used`
+
+# ============================================================
+# CHANNEL BRAND ASSETS (HDK channel-level — v1.1 add 2026-06-26)
+# ============================================================
+# ✅ APPROVED Mr.Long 2026-06-26 — T6.1-T6.7 LOCKED
+# Audit trail historical: assets/hdk_channel/_AUDIT_TENTATIVE_LOG.md cluster T6.
+# Status: APPROVED IMMUTABLE v1.1 channel_brand_assets section.
+# Rule cứng cho content MỚI sau 26/6: memory feedback_cam_suy_luan.md.
+# ============================================================
+# Tách riêng vì:
+# - asset_registry trên = EP BODY (bus/passenger/rain/fog ep scene)
+# - channel_brand_assets = CHANNEL-LEVEL (logo, intro_master, brand typography)
+# - 1 channel chứa nhiều series → channel_brand bất biến trên mọi series
+
+channel_brand_assets:
+  channel_id: HDK
+  channel_name: "Hắc Dạ Ký"
+  channel_handle: "@hacdaky"
+  channel_tagline: "Chuyện kể từ cõi vô hình"
+  base_path: assets/hdk_channel/
+  ref_video_pipeline: prompts/video_intro.md
+  ref_motion_rules: bible/19_motion_bible.yaml
+  ref_audio_brand: bible/10_brand_audio.yaml
+
+  brand_masters:
+    - id: logo_hdk_v01
+      type: vector
+      file: assets/hdk_channel/brand/logo/hdk_logo.svg
+      png_2k: assets/hdk_channel/brand/logo/hdk_logo_2k.png
+      png_4k: assets/hdk_channel/brand/logo/hdk_logo_4k.png
+      checksum: sha256:PLACEHOLDER_COMPUTE_AFTER_GEN
+      resolution: 2048x2048
+      tool: Inkscape
+      font: Cormorant Garamond
+      color: "#E8DCC4 (warm ivory)"
+      immutable: true
+      prompt_ref: assets/hdk_channel/_prompts/01_brand_logo.md
+
+    - id: tagline_channel_v01
+      type: vector
+      file: assets/hdk_channel/brand/typography/hdk_tagline_channel.svg
+      png_4k: assets/hdk_channel/brand/typography/hdk_tagline_channel.png
+      checksum: sha256:PLACEHOLDER
+      resolution: 3840x800
+      tool: Inkscape
+      text: "Chuyện kể từ cõi vô hình"
+      font: Cormorant Garamond Italic
+      color: "#C9B789 (mờ vàng đèn dầu)"
+      immutable: true
+      prompt_ref: assets/hdk_channel/_prompts/02_brand_typography.md
+
+    - id: tagline_chuyenxe_v01
+      type: vector
+      file: assets/hdk_channel/brand/typography/hdk_tagline_chuyenxe.svg
+      png_4k: assets/hdk_channel/brand/typography/hdk_tagline_chuyenxe.png
+      checksum: sha256:PLACEHOLDER
+      resolution: 3840x800
+      tool: Inkscape
+      text: "Ai cũng có một chuyến xe chưa nói lời tạm biệt"
+      font: Cormorant Garamond Italic
+      color: "#C9B789"
+      series_specific: "Chuyến xe cuối cùng về đâu"
+      immutable: true (per series 1, có thể clone tagline khác cho series 2+)
+      prompt_ref: assets/hdk_channel/_prompts/02_brand_typography.md
+
+  still_masters:
+    - id: still_moon_phase_v01
+      type: image
+      file: assets/hdk_channel/shared/still/moon_phase.png
+      checksum: sha256:PLACEHOLDER
+      resolution: 3840x2160
+      tool: SDXL_local_ComfyUI
+      seed: TBD_after_first_gen
+      lora: none
+      style_prompt: "crescent moon hanging low in deep indigo night sky, thin pale clouds, faint warm halo, cinematic wide composition, upper-third right, deep navy and charcoal palette, dust particles softly catching moonlight, vietnamese folklore ghost story atmosphere"
+      use_in_intro: false  # docx LOCK không mention
+      use_in_ep_body: true # reserve cho ep scene
+      immutable: true
+      prompt_ref: assets/hdk_channel/_prompts/03_still_moon_phase.md
+
+    - id: still_railway_dusk_v01
+      type: image
+      file: assets/hdk_channel/shared/still/railway_dusk.png
+      checksum: sha256:PLACEHOLDER
+      resolution: 3840x2160
+      tool: SDXL_local_ComfyUI
+      seed: TBD
+      style_prompt: "old vietnamese countryside railway track stretching into vanishing point, dusk twilight indigo and burnt orange sky horizon, rusted iron rails, low fog hugging ground, no train visible, melancholic empty mood"
+      use_in_intro: false
+      use_in_ep_body: true
+      immutable: true
+      prompt_ref: assets/hdk_channel/_prompts/04_still_railway_dusk.md
+
+    - id: still_storyteller_silhouette_v01
+      type: image
+      file: assets/hdk_channel/shared/still/storyteller_silhouette.png
+      checksum: sha256:PLACEHOLDER
+      resolution: 3840x2160
+      tool: SDXL_local_ComfyUI
+      seed: TBD
+      style_prompt: "silhouette of elderly vietnamese storyteller seated in profile, holding small oil lantern at chest level, lantern is only light source illuminating face from below, deep shadows, rembrandt lighting style, intimate close-medium shot"
+      use_in_intro: false
+      use_in_ep_body: true (brand mark mọi ep, end card)
+      immutable: true
+      prompt_ref: assets/hdk_channel/_prompts/05_still_storyteller_silhouette.md
+
+    - id: still_lantern_v01
+      type: image
+      file: assets/hdk_channel/shared/still/lantern_still.png
+      checksum: sha256:PLACEHOLDER
+      resolution: 2048x2048
+      tool: SDXL_local_ComfyUI
+      seed: TBD
+      style_prompt: "single antique vietnamese oil lantern centered on black background, brass body with patina, glass chimney slightly smoked, flame inside glowing warm amber, soft halo, pure black void around"
+      use_in_intro: true  # segment 2-4 of intro 4.5s
+      use_in_ep_body: true
+      composite_pair: motion_lantern_flame_loop_v01 (screen blend overlay)
+      immutable: true
+      prompt_ref: assets/hdk_channel/_prompts/06_still_lantern.md
+
+    - id: still_smoke_base_v01
+      type: image
+      file: assets/hdk_channel/shared/still/smoke_base.png
+      checksum: sha256:PLACEHOLDER
+      resolution: 3840x2160
+      tool: SDXL_local_ComfyUI
+      seed: TBD
+      style_prompt: "thick volumetric smoke and fog filling frame, rolling slow curls of grey-white smoke against pitch black background, soft volumetric light from upper-left, smoke density medium, neutral grey no color cast"
+      use_in_intro: true  # segment 3-4
+      use_in_ep_body: true
+      immutable: true
+      prompt_ref: assets/hdk_channel/_prompts/07_still_smoke_base.md
+
+  motion_masters:
+    - id: motion_fog_loop_v01
+      type: video_loop
+      file: assets/hdk_channel/shared/motion/fog_loop_4s.mp4
+      checksum: sha256:PLACEHOLDER
+      resolution: 1920x1080
+      fps: 24
+      duration_s: 4.0
+      frame_count: 96
+      tool: Wan_2_1_local_ComfyUI (fallback AnimateDiff)
+      loop_seamless: required
+      style_prompt: "slow drifting fog moving horizontally left to right, low-lying ground fog, neutral grey-white, pure black background, smooth continuous motion"
+      use_in_intro: true  # segment 2-4
+      use_in_ep_body: true
+      motion_speed_constraint: "ref bible/19_motion_bible.yaml fog_rules.speed"
+      immutable: true (sau A/B Mr.Long approve)
+      prompt_ref: assets/hdk_channel/_prompts/08_motion_fog_loop.md
+
+    - id: motion_lantern_flame_loop_v01
+      type: video_loop
+      file: assets/hdk_channel/shared/motion/lantern_flame_loop.mp4
+      checksum: sha256:PLACEHOLDER
+      resolution: 1024x1024
+      fps: 24
+      duration_s: 3.0
+      frame_count: 72
+      tool: Wan_2_1_local_ComfyUI
+      loop_seamless: required
+      composite_pair: still_lantern_v01 (overlay screen blend khớp glass chimney)
+      use_in_intro: true  # segment 2-4
+      use_in_ep_body: true
+      motion_speed_constraint: "ref bible/19_motion_bible.yaml lantern_rules.flame_flicker"
+      immutable: true (sau A/B)
+      prompt_ref: assets/hdk_channel/_prompts/09_motion_lantern_flame.md
+
+    - id: motion_smoke_fx_v01
+      type: video_loop
+      file: assets/hdk_channel/shared/motion/smoke_fx.mp4
+      checksum: sha256:PLACEHOLDER
+      resolution: 1920x1080
+      fps: 24
+      duration_s: 5.0
+      frame_count: 120
+      tool: Wan_2_1_local_ComfyUI
+      loop_seamless: required
+      use_in_intro: false  # reserve ep body dramatic beats
+      use_in_ep_body: true
+      immutable: true (sau A/B)
+      prompt_ref: assets/hdk_channel/_prompts/10_motion_smoke_fx.md
+
+    - id: motion_dust_particle_v01
+      type: video_loop
+      file: assets/hdk_channel/shared/motion/dust_particle.mp4
+      checksum: sha256:PLACEHOLDER
+      resolution: 1920x1080
+      fps: 24
+      duration_s: 4.0
+      frame_count: 96
+      tool: Wan_2_1_local_ComfyUI
+      loop_seamless: required
+      use_in_intro: false  # docx LOCK không mention
+      use_in_ep_body: true (atmospheric overlay)
+      immutable: true (sau A/B)
+      prompt_ref: assets/hdk_channel/_prompts/11_motion_dust_particle.md
+
+  utility_masters:
+    - id: util_glow_plate_radial_v01
+      type: image_alpha
+      file: assets/hdk_channel/shared/utility/glow_plate_radial.png
+      checksum: sha256:PLACEHOLDER
+      resolution: 2048x2048
+      tool: Inkscape_or_SDXL
+      use_in_intro: false  # docx LOCK "không phát sáng mạnh"
+      use_in_ep_body: true (end card highlight)
+      immutable: true
+      prompt_ref: assets/hdk_channel/_prompts/12_utility_glow_plate.md
+
+    - id: util_transition_mask_blackout_v01
+      type: image_alpha
+      file: assets/hdk_channel/shared/utility/transition_mask_blackout.png
+      checksum: sha256:PLACEHOLDER
+      resolution: 3840x2160
+      tool: Inkscape
+      variant: ["linear", "iris"]
+      use_in_intro: false  # docx LOCK hard cut, no transition
+      use_in_ep_body: true (inter-scene fade)
+      immutable: true
+      prompt_ref: assets/hdk_channel/_prompts/13_utility_transition_mask.md
+
+  font_masters:
+    - id: font_cormorant_garamond_v01
+      type: font
+      family: "Cormorant Garamond"
+      source: Google Fonts (free)
+      license: SIL Open Font License 1.1
+      install_required: true (Windows system font)
+      use: brand logo + tagline typography
+      ref: assets/hdk_channel/_prompts/01_brand_logo.md, 02_brand_typography.md
+
+  intro_master_render:
+    - id: hdk_intro_4500ms_v01
+      type: video_with_audio
+      file: assets/hdk_channel/brand/intro_master/HDK_INTRO_4500ms_LOCKED_v01.mov
+      checksum: sha256:PLACEHOLDER (compute sau render)
+      resolution: 3840x2160
+      fps: 24
+      duration_ms: 4500
+      frame_count: 108
+      video_codec: ProRes_422_HQ (master) + H264_NVENC (delivery)
+      audio: "stereo 48kHz (5 SFX: gió + chuông xa + đèn dầu + piano + còi tàu)"
+      docx_constitution: "Mr.Long docx 2026-06-25 23:56 LOCK 4 segment + hard cut instant 4.5s"
+      storyboard_ref: assets/hdk_channel/_storyboard/intro_master_4500ms.md
+      pipeline_ref: prompts/video_intro.md
+      motion_ref: bible/19_motion_bible.yaml
+      assets_used:
+        - still_lantern_v01
+        - motion_lantern_flame_loop_v01
+        - still_smoke_base_v01
+        - motion_fog_loop_v01
+        - logo_hdk_v01
+        - tagline_channel_v01
+        - font_cormorant_garamond_v01
+      reuse_policy: byte-identical mọi ep, mọi series dưới channel HDK
+      version_policy: |
+        immutable AFTER lock. Nâng cấp v02 (vd HDK_INTRO_4500ms_LOCKED_v02.mov) yêu cầu:
+        - Mr.Long approve
+        - A/B test ≥ 10 ep
+        - changelog bible/04 + bible/19
+        - bump file path v01 → v02 (NEVER overwrite v01 file)
+
+channel_drift_policy:
+  - channel_brand_assets.brand_masters checksum change → HARD-FAIL toàn channel renders
+  - intro_master_render checksum change → HARD-FAIL + alert (intro phải byte-identical)
+  - motion_masters speed/timing drift > bible/19 threshold → REJECT render
+  - new channel asset add → Mr.Long approve + bump bible/04 minor version
+  - version bump v01 → v02 require side-by-side comparison + 10 ep A/B

@@ -1,0 +1,254 @@
+# Tier 2.1 — Text fix registry (apply via tools/text_batch_fix.py)
+# Mr.Long lock 30/6 11:00 — KHÔNG bash patch manually
+# Mỗi entry: id / reason / old / new / verify_rule
+
+fixes:
+  - id: F001
+    reason: "L428 'rất ngắn gọn lắm' redundant (rất+lắm) + 'khe khẽ thôi' awkward + 'thôi.' aspirated"
+    old: "Một dòng chữ viết tay rất ngắn gọn lắm. Người trung niên đọc nó một lần, rồi lặng lẽ gập tờ giấy đó lại như lúc đầu, đặt bàn tay phải lên ngực — nơi trái tim đang đập từng nhịp khe khẽ thôi."
+    new: "Một dòng chữ viết tay rất ngắn. Người trung niên đọc nó một lần, rồi lặng lẽ gập tờ giấy đó lại như lúc đầu, đặt bàn tay phải lên ngực, nơi trái tim đang đập từng nhịp khẽ khàng êm đềm."
+    section: REVEAL
+    verify_rules: [R86, R111, R114]
+
+  - id: F002
+    reason: "L378 'cô gái khẽ nghiêng đầu xuống.' — 'xuống.' /ɨə̆ŋ/ phù aspirated"
+    old: "Cô gái ghế tám khẽ nghiêng đầu xuống."
+    new: "Cô gái ghế tám khẽ nghiêng đầu, không nói lời nào."
+    section: REVEAL
+    verify_rules: [R86, R111]
+
+  - id: F003
+    reason: "L528 OUTTRO 'ghế số bảy đó. Ông già' — 'đó.' aspirated period"
+    old: "Bác tài ngước nhẹ lên gương, ánh mắt hướng về phía cô gái vừa ngồi xuống chiếc ghế số bảy đó. Ông già nhẹ giọng thì thầm:"
+    new: "Bác tài ngước nhẹ lên gương, ánh mắt hướng về phía cô gái vừa ngồi xuống chiếc ghế số bảy ấy, ông già nhẹ giọng thì thầm:"
+    section: CLIFFHANGER
+    verify_rules: [R86, R111]
+
+  - id: F004
+    reason: "L550 OUTTRO 'Hắc Dạ Ký' lặp 2 chunks liền — Mr.Long bỏ lần 2, giữ lần cuối (L554)"
+    old: "Hãy nhớ rằng...\n\n[pause:1000ms]\n\nHắc Dạ Ký vẫn đang chờ... để kể tiếp câu chuyện chưa từng có hồi kết.\n\n[pause:1500ms]\n\nHắc Dạ Ký xin hẹn gặp lại quý vị trong những câu chuyện của cõi vô hình."
+    new: "Hãy nhớ rằng...\n\n[pause:1500ms]\n\nHắc Dạ Ký xin hẹn gặp lại quý vị trong những câu chuyện của cõi vô hình."
+    section: CLIFFHANGER
+    verify_rules: [R86, R111]
+    note: "Removed entire chunk 5. Now OUTTRO has 5 chunks instead of 6."
+
+  - id: F005
+    reason: "L484 'bóng anh mờ dần trong màn mưa đêm' verify pause sau đủ — extend nếu cần"
+    old: "Bóng anh nhỏ dần trong màn mưa đêm — cửa xe đóng lại, tiếng bản lề khẽ vang lên rồi tan."
+    new: "Bóng anh nhỏ dần trong màn mưa đêm. [pause:2000ms] Cửa xe đóng lại, tiếng bản lề khẽ vang lên rồi tan dần."
+    section: PAYOFF
+    verify_rules: [R86, R111]
+    note: "Replaced em-dash with explicit pause 2000ms + 'tan' → 'tan dần' extend aspirated tail"
+
+  - id: F006
+    reason: "L500 'Bác tài chậm rãi đặt tay lên vô-lăng. Xe chạy tiếp' ngắt quá ngắn — TTS dính"
+    old: "Bác tài chậm rãi đặt tay lên vô-lăng.\n\nXe chạy tiếp trên đường khuya mịt mù. Không một lần xe dừng."
+    new: "Bác tài chậm rãi đặt tay lên vô-lăng. [pause:1500ms] Xe chạy tiếp trên đường khuya mịt mù. Không một lần xe dừng."
+    section: PAYOFF
+    verify_rules: [R86, R111]
+    note: "Explicit pause 1500ms between sentences + merge period→comma cuối"
+
+  - id: F007
+    reason: "L528 bác tài 'Chưa tới lúc đâu cháu ạ' với cô gái mới = vô lý + cụt ngủn. Wrong Q2 context (passenger không hỏi). R174 driver_dialogue_context_match: Q1 cho passenger mới giữ đủ 12 per fact_004."
+    old: "— Chưa tới lúc đâu cháu ạ."
+    new: "— Con đã nhớ ra chưa?"
+    section: CLIFFHANGER
+    verify_rules: [R174, R86, R111]
+    note: "B60 fix 30/6. Cô gái mới xuất hiện ghế 7 → Q1 spawns cycle horror hook EP02. Match fact_003+fact_004. max_dialog_per_ep: Q1×2+Q2×1=3 → Q1×3+Q2×0=3 OK. Mr.Long approve Option A."
+
+  - id: F008
+    reason: "L130+L132 'kính' lặp 2 dòng liên tiếp (R177 adjacent word repeat)"
+    old: "Anh ngước nhìn cửa kính."
+    new: "Anh ngước nhìn ra phía trước."
+    section: SETUP
+    verify_rules: [R177, R111]
+    note: "B61 fix 30/6. Mr.Long catch trên v107 audio."
+
+  - id: F009
+    reason: "L154 'Bỗng nhiên,' thiếu pause/ellipsis cảm xúc bất ngờ"
+    old: "[pause:300ms] Bỗng nhiên, chiếc đồng hồ rung khẽ một lần."
+    new: "[pause:1200ms] Bỗng nhiên... chiếc đồng hồ rung khẽ một lần."
+    section: SETUP
+    verify_rules: [R86, R111]
+
+  - id: F010
+    reason: "L242 'cửa kính... làn kính' cùng câu R177 + L274 'Anh khựng người' 3 từ cụt + L278 cụt EOL + L284 collocation"
+    old: "MULTI"
+    new: "MULTI — see episode.md.bak_B62_outro_30_06 diff"
+    section: INCIDENT
+    verify_rules: [R177, R60, R86]
+    note: "B62 batch fix 30/6. T3-T7 từ comprehensive audit catalog."
+
+  - id: F011
+    reason: "L390 chain 3 'sợ' liên tiếp R66 + 'sâu thẳm' EOL — vary 2 'sợ' giữ 1 đầu"
+    old: "Tôi vẫn còn sợ... sợ đến tận hôm nay. Sợ mở ngăn tủ ra... mà thấy kim đồng hồ vẫn dừng nguyên tại bảy giờ mười phút, trong đêm sâu thẳm."
+    new: "Tôi vẫn còn sợ... ám ảnh đến tận hôm nay. Mỗi lần mở ngăn tủ ra... tôi thấy kim đồng hồ vẫn dừng nguyên tại bảy giờ mười phút, giữa đêm khuya sâu thẳm."
+    section: REVEAL
+    verify_rules: [R66, R177, R86]
+
+  - id: F012
+    reason: "L362 'Anh ngừng nói' câu cụt — thêm pause + extend câu sau"
+    old: "Anh ngừng nói, cô gái ghế tám đặt tay lên đùi, không hỏi gì, chỉ ngồi đợi anh nói tiếp."
+    new: "Anh ngừng nói. [pause:1500ms] Cô gái ghế tám đặt tay lên đùi, không hỏi gì, chỉ lặng lẽ ngồi đợi anh nói tiếp."
+    section: REVEAL
+    verify_rules: [R1, R60]
+
+  - id: F013
+    reason: "L480 'cái nhìn rất ngắn' SAI collocation R180b"
+    old: "Bác tài buông một cái nhìn rất ngắn lên gương phía trước."
+    new: "Bác tài buông một cái nhìn thoáng qua lên gương phía trước."
+    section: REVEAL
+    verify_rules: [R180b]
+    note: "B-T14 30/6 18:30. 'Cái nhìn' collocation chuẩn = thoáng qua/đăm chiêu/lạnh/sâu, không phải dài/ngắn."
+
+  - id: F014
+    reason: "R61 short START 9 HIGH — prefix expansion để câu mở đầu >7 từ"
+    old: "MULTI: Đêm đã buông xuống. / Anh nhíu mắt. / Anh cứng cả bàn tay. / Anh mở mắt. / Anh nhắm mắt. / Cô ấy cười, vẫy tay. / Cô ấy không trả lời. / Cô gái khẽ nghiêng đầu."
+    new: "MULTI: see episode.md L7,103,123,259,281,283,295,431 — added complements"
+    section: mixed
+    verify_rules: [R61]
+    note: "B-T11 30/6. Prefix expansion: 'khẽ một thoáng' / 'lại thật khẽ' / 'thoáng giật mình' / 'ra thật chậm' / etc. Verify post-fix R61 PASS."
+
+  - id: F015
+    reason: "L544 outro 'Hãy nhớ rằng...' cụt — Mr.Long approve option D viewer engagement"
+    old: "Hãy nhớ rằng..."
+    new: "Hãy nhớ rằng... có thể chính bạn cũng đang ngồi trên chuyến xe ấy mà chưa biết."
+    section: CLIFFHANGER
+    verify_rules: [R86, R111]
+    note: "B62 fix 30/6. Theme echo Q1 bác tài 'Con đã nhớ ra chưa?' — outro viewer engagement."
+
+  - id: F020
+    reason: "L520 + L522 'dần' lặp 3 lần trong 2 dòng (dần dần + tắt dần). R177 adjacent word repeat"
+    old: "Bên ngoài cửa kính, sương đêm lại khép kín dần dần.\n\nĐèn vàng tắt dần, chỉ còn lại tiếng mưa rơi rả rích."
+    new: "Bên ngoài cửa kính, sương đêm phủ kín thêm.\n\nĐèn vàng nhòa đi, chỉ còn lại tiếng mưa rơi rả rích."
+    section: CLIFFHANGER
+    verify_rules: [R86, R111, R113]
+    note: "Vary 'dần' → 'chặt lại' + 'phai nhạt' không lặp"
+
+  - id: F011
+    reason: "L432 sương lặp + 'tan ra' awkward — Mr.Long suggest 'Màn sương sau cửa kính vén dần...'"
+    old: "Màn sương trên cửa kính bỗng nhiên tan ra."
+    new: "Màn sương sau cửa kính vén dần..."
+    section: PAYOFF
+    verify_rules: [R86, R111]
+    note: "Mr.Long propose proper Vietnamese — sương 'vén dần' tự nhiên hơn 'tan ra'"
+
+  - id: F010
+    reason: "L276 INCIDENT 'Ông cụ chậm rãi tắt radio.' — 'radio.' /o/ open vowel + period EOL → ù lục bục"
+    old: "Ông cụ chậm rãi tắt radio."
+    new: "Ông cụ chậm rãi tắt chiếc đài cũ đi."
+    section: INCIDENT
+    verify_rules: [R86, R111]
+    note: "'đi' ngang tone safe + replace 'radio' → 'chiếc đài cũ' (consistent với 'đài radio cũ kỹ' L184)"
+
+  - id: F023
+    reason: "L428 'đặt bàn tay lên ngực' thiếu purpose. Mr.Long catch: làm gì? Cần clarify ý nghĩa cử chỉ."
+    old: "đưa bàn tay phải lên áp vào ngực — như muốn giữ những lời ấy vào sâu trong lòng."
+    new: "áp bàn tay phải lên ngực, như muốn cất từng câu chữ vào nơi trái tim đang đập êm đềm."
+    section: REVEAL
+    verify_rules: [R86, R111, R180]
+    note: "Clarify purpose (giữ kỷ niệm vào tim) + 'lòng' huyền tone EOL safe"
+
+  - id: F022
+    reason: "L428 'gập tờ giấy đó lại' sai collocation — phải 'GẤP' (giấy gấp tư L426). Mr.Long catch R180 verb-noun. 'gập' dùng cho sách/người gập, 'gấp' dùng cho giấy."
+    old: "lặng lẽ gập tờ giấy đó lại như lúc đầu"
+    new: "lặng lẽ gấp tờ giấy lại như ban đầu"
+    section: REVEAL
+    verify_rules: [R86, R111, R180]
+    note: "gập → gấp (collocation đúng giấy), 'đó' → bỏ, 'lúc đầu' → 'ban đầu' (formal natural)"
+
+  - id: F012
+    reason: "L458 cô gái 8 'đưa tay ra...đặt lên ghế' hành động không rõ — Mr.Long catch v103"
+    old: "Cô gái ghế tám đưa tay ra — không chạm vào anh, chỉ đặt bàn tay lên ghế cạnh anh."
+    new: "Cô gái ghế tám khẽ đưa tay chạm nhẹ vào thành ghế cạnh anh — như muốn nói lời chia tay không thành tiếng."
+    section: REVEAL
+    verify_rules: [R86, R111, R180]
+    note: "Clarify action purpose (farewell gesture). 'lặng' nặng EOL — fix tail"
+
+  - id: F018
+    reason: "L492 'ghế trống bên ghế cô ngồi' lặp 'ghế' 2 lần gần nhau"
+    old: "Cô gái ghế tám lặng nhìn về phía chiếc ghế trống bên ghế cô ngồi."
+    new: "Cô gái ghế tám lặng nhìn về phía chiếc ghế trống vừa kề bên cô."
+    section: PAYOFF
+    verify_rules: [R86, R111, R113]
+    note: "Vary 'ghế' lặp → 'kề bên cô' không lặp"
+
+  - id: F019
+    reason: "PAYOFF 'Anh' lặp 6 lần (L440, L442, L462, L468, L478, L484) — Mr.Long want vary bổ sung tên"
+    section: PAYOFF
+    note: "TBD bulk reword — em propose: keep Anh đầu sentences strong, replace 2-3 với 'Khải-Phong' + 1-2 với hành động khác"
+    status: PENDING_DETAIL
+
+  - id: F021
+    reason: "OUTTRO cụt thiếu ám ảnh kỳ bí — Mr.Long ask thiết kế lại"
+    section: CLIFFHANGER
+    note: "TBD creative redesign 5 chunks OUTTRO với mood haunting/mystery/atmospheric"
+    status: PENDING_DETAIL
+
+  - id: F009
+    reason: "L236 INCIDENT '— Của một người bạn.' 4-word short + 'bạn.' /aːn/ aspirated EOL → lục bục tạp âm"
+    old: "— Của một người bạn."
+    new: "— Của một người bạn thân từ thuở ấy."
+    section: INCIDENT
+    verify_rules: [R86, R111]
+    note: "Extend dialogue + 'ấy' sắc tone EOL safe"
+
+  - id: F008
+    reason: "INTRO L47-L51 'Đồng hồ nữ màu xà cừ.' + 'Chiếc kim dừng lại...' pause 500ms quá gần — Mr.Long catch v103"
+    old: "Đồng hồ nữ màu xà cừ.\n\n[pause:500ms]\n\nChiếc kim dừng lại đúng lúc bảy giờ mười phút trong đêm."
+    new: "Đồng hồ nữ màu xà cừ.\n\n[pause:1800ms]\n\nChiếc kim dừng lại đúng lúc bảy giờ mười phút trong đêm."
+    section: HOOK
+    verify_rules: [R86, R111]
+    note: "Increase pause 500ms → 1800ms"
+
+  - id: F007
+    reason: "L514 'sao tôi lại không nhớ ra…' — '…' ellipsis sau 'ra' aspirated"
+    old: "— Của tôi à, sao tôi lại không nhớ ra…"
+    new: "— Của tôi à, sao tôi lại không thể nhớ ra điều gì..."
+    section: CLIFFHANGER
+    verify_rules: [R86, R111]
+    note: "'ra...' bare ellipsis → 'ra gì cả...' add tail word safe"
+
+# Per-chunk emo override (separate registry — apply via spec_chunk_emo_override.py)
+emo_overrides:
+  - id: E001
+    reason: "Bác tài whisper. Sum ≤1.0 chống voice drift (R175b)"
+    chunk_text_match: "Chưa tới lúc đâu cháu ạ"
+    section: CLIFFHANGER
+    emo_vector: {happy: 0.0, angry: 0.0, sad: 0.20, afraid: 0.05, disgusted: 0.0, melancholic: 0.30, surprised: 0.0, calm: 0.45}
+    volume_scale: 0.75
+
+  - id: E002
+    reason: "Khải-Phong 'Tôi nhớ ra rồi đấy cháu ạ' — grief revelation. Reduced intensity (Mr.Long catch v107 lạc giọng) — sum 1.0 chống IndexTTS2 voice drift"
+    chunk_text_match: "Tôi nhớ ra rồi đấy cháu ạ"
+    section: REVEAL
+    emo_vector: {happy: 0.0, angry: 0.0, sad: 0.30, afraid: 0.05, disgusted: 0.0, melancholic: 0.30, surprised: 0.0, calm: 0.35}
+    volume_scale: 0.90
+
+  - id: E003
+    reason: "Khải-Phong fear realization. Sum ≤1.0 (R175b)"
+    chunk_text_match: "Tôi vẫn còn sợ"
+    section: REVEAL
+    emo_vector: {happy: 0.0, angry: 0.0, sad: 0.20, afraid: 0.30, disgusted: 0.0, melancholic: 0.25, surprised: 0.10, calm: 0.15}
+    volume_scale: 0.90
+
+  - id: E004
+    reason: "Cô gái mới CLIFF confusion lost. Sum ≤1.0 (R175b)"
+    chunk_text_match: "Của tôi à, sao tôi lại không thể nhớ ra"
+    section: CLIFFHANGER
+    emo_vector: {happy: 0.0, angry: 0.0, sad: 0.10, afraid: 0.15, disgusted: 0.0, melancholic: 0.35, surprised: 0.10, calm: 0.30}
+    volume_scale: 0.85
+
+  - id: E005
+    reason: "Bác tài 'Con đã nhớ ra chưa?' — whisper secret (REVEAL + PAYOFF same pattern as E001)"
+    chunk_text_match: "Con đã nhớ ra chưa?"
+    section: REVEAL
+    emo_vector: {happy: 0.0, angry: 0.0, sad: 0.20, afraid: 0.05, disgusted: 0.0, melancholic: 0.30, surprised: 0.0, calm: 0.45}
+    volume_scale: 0.75
+
+  - id: E005b
+    reason: "Bác tài 'Con đã nhớ ra chưa?' — same in PAYOFF"
+    chunk_text_match: "Con đã nhớ ra chưa?"
+    section: PAYOFF
+    emo_vector: {happy: 0.0, angry: 0.0, sad: 0.20, afraid: 0.05, disgusted: 0.0, melancholic: 0.30, surprised: 0.0, calm: 0.45}
+    volume_scale: 0.75

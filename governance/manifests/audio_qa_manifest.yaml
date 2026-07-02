@@ -1,0 +1,22 @@
+domain: audio_qa
+tier: 3
+owner: CMD_AUDIO
+promotion_status: candidate
+source_of_truth: []
+data_contract: null
+files:
+- tools/audio_qa_metrics.py
+- tools/audio_qa_report.py
+- tools/qa_boundary_artifact.py
+- tools/qa_breath_artifact.py
+- tools/qa_concat_silence.py
+- tools/qa_onset_artifact.py
+- tools/qa_output_writer.py
+- tools/qa_pause_silence.py
+- tools/qa_post_render.py
+- tools/qa_pre_render.py
+- tools/qa_prosody_collapse.py
+- tools/qa_watch.py
+- tools/qa_watch_supervisor.py
+- tools/qa_whisper_compare.py
+file_count: 14

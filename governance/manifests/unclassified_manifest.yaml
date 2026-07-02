@@ -1,0 +1,25 @@
+domain: unclassified
+tier: null
+owner: UNASSIGNED
+promotion_status: candidate
+source_of_truth: []
+data_contract: null
+files:
+- tools/artifact_contract_check.py
+- tools/auditor.py
+- tools/build_name_pool.py
+- tools/cap_peak.py
+- tools/character_balance_report.py
+- tools/character_manager.py
+- tools/dialog_voice_validator.py
+- tools/evidence_check.py
+- tools/gen_100_passenger.py
+- tools/log_ping.py
+- tools/migrate_roster_v2.py
+- tools/qa_eol_diacritic.py
+- tools/severity_gate.py
+- tools/story_consistency_validator.py
+- tools/svhmp_audio_qa.py
+- tools/svhmp_preflight_qa.py
+- tools/svhmp_v13_render.py
+file_count: 17

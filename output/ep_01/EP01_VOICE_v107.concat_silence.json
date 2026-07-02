@@ -1,0 +1,36 @@
+{
+  "wav": "output\\ep_01\\EP01_VOICE_v107.wav",
+  "duration_sec": 1206.72,
+  "sample_rate": 22050,
+  "expected_boundaries_count": 5,
+  "matched_count": 5,
+  "expected_count_required": 5,
+  "verdict": "PASS",
+  "boundaries": [
+    {
+      "expected_sec": 154.9,
+      "matched": true,
+      "actual_duration_ms": 1519
+    },
+    {
+      "expected_sec": 369.04,
+      "matched": true,
+      "actual_duration_ms": 1517
+    },
+    {
+      "expected_sec": 508.58,
+      "matched": true,
+      "actual_duration_ms": 1518
+    },
+    {
+      "expected_sec": 909.07,
+      "matched": true,
+      "actual_duration_ms": 1522
+    },
+    {
+      "expected_sec": 1095.18,
+      "matched": true,
+      "actual_duration_ms": 1517
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "mode": "apply",
+  "returncode": 0,
+  "stdout_tail": "=== VNQA Auto-Fix EP27 ===\nRules applied: 0 | Total replacements: 0\nSkipped (no match): ['R001', 'R002']\n→ Không có thay đổi nào. Bỏ qua.\n",
+  "success": true
+}

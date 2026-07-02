@@ -1,0 +1,84 @@
+# SVHMP_Studio .gitignore (round 14 — F1.1 git init 2026-06-26)
+
+# Large binary audio (track separately via Git LFS if needed)
+output/**/*.wav
+output/**/*.mp3
+output/**/*.flac
+output/**/*.ogg
+output/**/*.mp4
+
+# Backup files (numbered backups, .bak variants)
+*.bak
+*.bak_*
+output/**/*.bak*
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Local credentials (KHÔNG commit secrets)
+.env
+.env.local
+*.key
+*.pem
+credentials.json
+secrets.yaml
+
+# Temporary
+*.tmp
+*.log
+*.pid
+
+# Live per-command progress state (RenderProgress ghi đè mỗi lần chạy tool — máy-local, KHÔNG phải evidence)
+# CHỈ ignore *.yaml cấp trên cùng; GIỮ NGUYÊN production_validation_v200/ + qa_full_v108/ (bằng chứng CMD executor)
+runtime/cmd_progress/*.yaml
+
+# Render output temp (large generated files)
+*.wav.tmp
+*.mp4.tmp
+
+# CMD pipeline runtime (machine-authoritative reports regenerated moi run — KHONG phai source)
+reports/cmd_pipeline_gate_report.md
+reports/cmd_pipeline_gate_report.json
+reports/build_report.md
+runtime/*.lock
+
+# But DO commit small reference audio (brand SFX, sample voices)
+!assets/sfx/brand/*.wav
+!GIỌNG\ ĐỌC\ \ ANH\ KHÁNH.wav
+
+# HUGE model checkpoints + music library (91 GB total — session 1/7 add)
+assets/sfx/hdk_music_library/
+**/checkpoints/
+**/checkpoints-vi/
+*.safetensors
+*.pth
+*.pt
+*.bin
+*.onnx
+*.gguf
+hf_cache/
+.cache/
+
+# Rendered audio + video in any location
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.mp4
+*.m4a
+*.aac
+# But keep exceptions above
+!assets/sfx/brand/*.wav
+!GIỌNG\ ĐỌC\ \ ANH\ KHÁNH.wav
+!assets/voice_samples/*.wav

@@ -1,0 +1,11 @@
+{
+  "wav": "D:\\DỰ ÁN AI\\GIỌNG ĐỌC\\DỰ ÁN TRUYỆN MA\\SVHMP_Studio\\output\\ep_01\\sections\\reveal.wav",
+  "spec": "D:\\DỰ ÁN AI\\GIỌNG ĐỌC\\DỰ ÁN TRUYỆN MA\\SVHMP_Studio\\output\\ep_01\\sections\\spec_reveal.json",
+  "model": "small",
+  "ref_words": 892,
+  "hyp_words": 897,
+  "overall_wer_pct": 12.22,
+  "similarity_pct": 87.78,
+  "threshold_pct": 20.0,
+  "verdict": "PASS"
+}

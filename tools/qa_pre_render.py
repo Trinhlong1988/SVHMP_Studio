@@ -1,0 +1,50 @@
+"""STAGE 1 — PRE-RENDER GATE (R86 + R76 + R85 + sanity).
+BLOCK render if any check fails.
+
+Usage:
+  python tools/qa_pre_render.py [episode.md_path]
+"""
+import sys
+import subprocess
+
+CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
+from pathlib import Path
+
+TOOLS = Path(__file__).parent
+DEFAULT_MD = Path(__file__).resolve().parents[1] / r'output/ep_01/episode.md'
+
+
+def check(name, cmd):
+    print(f"\n[STAGE 1] {name}")
+    print(f"  cmd: {' '.join(cmd)}")
+    r = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", creationflags=CREATE_NO_WINDOW)
+    print(r.stdout)
+    if r.returncode != 0:
+        print(f"  FAIL (exit {r.returncode})")
+        return False
+    print(f"  PASS")
+    return True
+
+
+def main():
+    fp = Path(sys.argv[1]) if len(sys.argv) > 1 else DEFAULT_MD
+    checks = [
+        ("R86 EOL diacritic", [sys.executable, str(TOOLS / "qa_eol_diacritic.py"), str(fp)]),
+    ]
+    results = []
+    for name, cmd in checks:
+        results.append((name, check(name, cmd)))
+
+    print("\n== STAGE 1 PRE-RENDER GATE SUMMARY ==")
+    all_pass = True
+    for name, ok in results:
+        status = "PASS" if ok else "FAIL"
+        print(f"  [{status}] {name}")
+        if not ok:
+            all_pass = False
+    print(f"\nGATE: {'PASS - RENDER ALLOWED' if all_pass else 'FAIL - RENDER BLOCKED'}")
+    sys.exit(0 if all_pass else 1)
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,90 @@
+# RUNTIME/LEDGER — biên bản từng ep. Tiered compression.
+# Tier 1 (10 ep gần): full detail
+# Tier 2 (ep -10 đến -30): 1-line compact
+# Tier 3 (ep cũ hơn): block summary 10 ep/block
+
+meta:
+  schema_version: 1
+  total_eps_logged: 1
+  tier_1_window: 10
+  tier_2_window: 20
+
+# ============================================================
+# TIER 1 — FULL DETAIL (latest 10 ep)
+# ============================================================
+
+tier_1:
+  ep_1:
+    dna_variant: A
+    impossible_event: "đồng hồ giữ 8 năm trong ngăn kéo đáy, hôm nay tự nhiên mang theo"
+    clue: "kim dừng 7:10 = giờ Hạ Vy mất ở JFK timezone"
+    reveal: "Khải Phong thương Hà từ lớp 11, mua đồng hồ ở sân bay, Hạ Vy mất ngày bay sang Mỹ"
+    passenger_leave: {seat: 7, name: "Khải Phong"}
+    passenger_join: {seat: 7, canon_id: PAS_0007, name: "Cô gái áo gió xanh nhạt", object: "đồng hồ xà cừ kim 7:10"}
+    cliffhanger_pattern: A
+    cliffhanger_beat: "cô gái áp đồng hồ vào ngực, áo gió xanh giống Hà"
+    arcs_opened: [ARC_0001]
+    arcs_closed: []
+    dominant_emotion: longing
+    aftertaste: "ám ảnh nhẹ"
+    beat_4_dialog: "Tôi nhớ ra rồi… Bảy giờ mười. Là lúc Hạ Vy mất. Tôi giữ đồng hồ này. Kim dừng đúng giờ Hạ Vy mất."
+    beat_5_pattern: A
+    predicted_top_comments:
+      - "Có người tôi từng thương mà không kịp nói."
+      - "Bảy giờ mười... đau quá."
+      - "Tôi cũng có một chiếc đồng hồ giữ tám năm."
+    metrics:
+      word_count: 1812
+      estimated_duration_minutes: 12.9
+      avg_sentence_words: 7.2
+      punch_ratio: 0.11
+      short_pause_per_1000: 13
+      long_pause_per_1000: 9
+      regret_lines: 6
+      memory_trigger_lines: 5
+      sensory_lines: 6
+      visual_still_lines: 5
+    lexical_compliance:
+      signature_phrases: 8
+      uncertainty: 4
+      recall: 4
+      revelation: 2
+      forbidden_hits: 0
+      preferred_opener_ratio: 0.40
+      voice_tics: 3
+    emotion_tags: [longing, regret, melancholy, lover, unspoken_love]
+    canon_drift: 0
+    assets_used:
+      - {name: bus_v01, checksum_match: pending_real_asset}
+      - {name: bell_v01, checksum_match: pending_real_asset}
+      - {name: lamp_v01, checksum_match: pending_real_asset}
+      - {name: rain_v02, checksum_match: pending_real_asset}
+      - {name: char_bac_tai_v01, checksum_match: pending_real_asset}
+    bell_count: 1
+    qa_decision: PASS_TENTATIVE_SELF_RATING        # chờ CMD2 QA Lock chạy thật
+    self_rating_pre_qa: 92.55                      # generator self-rate (RC3.2 6-trục)
+    qa_lock_v1_score: PENDING                      # chờ chạy QA Lock
+
+# ============================================================
+# TIER 2 — 1-LINE COMPACT (ep -10 đến -30)
+# ============================================================
+
+tier_2: {}
+
+# ============================================================
+# TIER 3 — BLOCK SUMMARY (ep cũ hơn -30)
+# ============================================================
+
+tier_3: {}
+
+# ============================================================
+# AUDIENCE SNAPSHOT (mỗi 10 ep)
+# ============================================================
+
+audience_snapshots: []                              # rỗng — chưa upload ep nào
+
+# ============================================================
+# SEASON CLOSE (mỗi 30 ep)
+# ============================================================
+
+season_close_summaries: {}

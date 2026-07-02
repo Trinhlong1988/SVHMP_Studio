@@ -1,0 +1,240 @@
+# RUNTIME/ANALYTICS — YouTube data + comment classification + feedback loop.
+# Lock date: 2026-06-23 (Mr.Long round 3 docx 16:05 — missing item 2 extension)
+# Status: schema IMMUTABLE, data dynamic
+# Loaded by: Publisher (write after T+48h scrape) / Director (read for next-ep tuning) / Generator (current_overrides apply)
+# Mục tiêu: feedback loop analytics → director → generator. Series 90-500 ep cần data-driven tuning.
+
+meta:
+  schema_version: 2                      # round 3 (2026-06-23) bump — analytics schema expanded
+  last_scrape: null
+  scrape_cadence: every_10_eps_T_plus_48h
+  feedback_loop_enabled: true            # round 3 add — auto_tune dựa drift_alerts
+
+# ============================================================
+# METRIC DEFINITIONS — 5 axes Mr.Long round 3 + ext
+# ============================================================
+
+metric_definitions:                      # round 3 add — explicit schema cho mỗi metric
+
+  ctr:                                   # click-through rate
+    unit: percent
+    source: "YouTube Studio Analytics API"
+    target_range: [4.5, 12.0]            # % industry baseline cho Vietnamese horror podcast
+    excellent: ">= 8.0"
+    poor: "< 3.0"
+    drift_trigger: "ctr < 4.0 cho 5 ep liên tiếp"
+    feeds_into: thumbnail_formula_note + title_AB
+    bible_ref: "bible/10_brand_audio + Publisher P3 title_AB"
+
+  avg_retention:                         # average view duration %
+    unit: percent_of_total_duration
+    source: "YouTube Analytics retention curve"
+    target_range: [55, 75]               # % cho 12-14 phút video
+    excellent: ">= 65"
+    poor: "< 45"
+    drift_trigger: "avg_retention < 50 cho 3 ep liên tiếp"
+    feeds_into: retention_engine + emotion_intensity multiplier
+    bible_ref: "Generator round 9 C8 retention_engine + bible/09 axis_breakdown"
+
+  replay_rate:                           # % viewers rewatched specific moments
+    unit: percent
+    source: "YouTube Analytics rewatch heatmap"
+    target_range: [8, 25]
+    excellent: ">= 18"
+    poor: "< 5"
+    drift_trigger: "replay_rate < 5 cho 3 ep liên tiếp = beat_4 không đủ punch"
+    feeds_into: beat_4_word_budget + regret_line_depth
+    bible_ref: "QA PHASE 12.7 retention_engine + 12.8 emotional_depth"
+
+  completion_rate:                       # % viewers watched 90%+
+    unit: percent
+    source: "YouTube Analytics"
+    target_range: [40, 65]
+    excellent: ">= 55"
+    poor: "< 30"
+    drift_trigger: "completion_rate < 30 cho 3 ep liên tiếp = cliffhanger yếu OR thiếu dư âm"
+    feeds_into: cliffhanger_pattern + beat_5_aftertaste
+    bible_ref: "Generator E6 cliffhanger_patterns A-G"
+
+  comments_classified:                   # round 3 add — comment classification distribution
+    unit: dict
+    source: "Publisher P6 comment_classifier"
+    schema:
+      regret_recognition: int            # "Tôi cũng có..." — DESIRED, target ≥35%
+      empathy_share: int                 # "Nghe mà nhớ mẹ" — DESIRED, target ≥25%
+      memory_trigger: int                # "Đêm qua tôi mơ..." — DESIRED, target ≥15%
+      praise_quality: int                # "Giọng đọc hay" — NEUTRAL, target ≤20%
+      complaint_pacing: int              # "Chậm quá" — ANTI, target ≤5%
+      complaint_horror_wrong: int        # "Không sợ lắm" — ANTI, target ≤3% (đúng vì series KHÔNG bán sợ)
+      spam: int                          # filter
+    target_desired_ratio: ">= 0.70"      # (recognition + empathy + memory_trigger) / total
+    drift_trigger: "desired_ratio < 0.60 cho 5 ep = soul drift"
+    feeds_into: pillar_distribution + relationship_distribution + emotion_rotation
+    bible_ref: "bible/14_comment_trigger_library + Publisher P6"
+
+# ============================================================
+# PER-EP ANALYTICS
+# ============================================================
+
+eps: {}
+  # Schema sau khi scrape (ep_N):
+  # ep_N:
+  #   upload_ts: ISO8601
+  #   first_scrape_ts: ISO8601 (T+48h)
+  #   last_scrape_ts: ISO8601 (latest)
+  #   metrics:
+  #     ctr: float
+  #     avg_retention: float
+  #     replay_rate: float
+  #     completion_rate: float
+  #   comments_classified: {regret_recognition: N, empathy_share: N, ...}
+  #   total_views: int
+  #   total_likes: int
+  #   like_ratio: float
+  #   desired_ratio: float                # (recognition + empathy + memory_trigger) / total_comments_classified
+  #   drift_alerts_triggered: []
+  #   tuning_actions_applied: []
+
+# ============================================================
+# BATCH AGGREGATES (mỗi 10 ep)
+# ============================================================
+
+batches: {}
+  # Schema:
+  # batch_1_10:
+  #   eps: [1..10]
+  #   avg_ctr: float
+  #   avg_retention: float
+  #   avg_completion: float
+  #   avg_desired_ratio: float
+  #   top_3_eps: [ep_N, ep_M, ep_K]      # by composite score
+  #   worst_eps: [ep_X]                   # for postmortem
+  #   pillar_distribution_observed: {family: %, love: %, ...}
+  #   pillar_distribution_target: {family: 32%, love: 24%, ...}
+  #   pillar_drift: float
+  #   recommendation: "increase X / decrease Y" (Director apply)
+
+# ============================================================
+# FEEDBACK LOOP — auto-tune contract (round 3 add)
+# ============================================================
+
+feedback_loop:
+  trigger_evaluation_frequency: "every 10 eps after T+48h scrape"
+
+  rules:
+    rule_1_ctr_low:
+      condition: "ctr drift_trigger fired"
+      action:
+        - field: current_overrides.thumbnail_intensity
+          value: "+15%"
+        - field: current_overrides.title_pattern_rotation
+          value: "weight_template_3_4_5_more"
+      version_bump: minor
+      log_to: tuning_log
+
+    rule_2_retention_low:
+      condition: "avg_retention drift_trigger fired"
+      action:
+        - field: current_overrides.beat_4_word_budget
+          value: "+50 words (deepen REGRET LINE)"
+        - field: current_overrides.silence_at_beat_4_end
+          value: "1500ms (was 1200ms)"
+        - field: current_overrides.emotion_intensity_multiplier
+          value: "+0.05 cap"
+      version_bump: minor
+
+    rule_3_replay_low:
+      condition: "replay_rate drift_trigger fired"
+      action:
+        - field: current_overrides.regret_line_depth
+          value: "force 2-line key (was 1-line)"
+        - field: current_overrides.sensory_line_count
+          value: "+1 (force 1 micro detail strong)"
+      version_bump: minor
+
+    rule_4_completion_low:
+      condition: "completion_rate drift_trigger fired"
+      action:
+        - field: current_overrides.cliffhanger_pattern_filter
+          value: "exclude pattern A, prefer C/F/G (delayed reveal)"
+        - field: current_overrides.beat_5_extension
+          value: "+8 sentences (extend dư âm)"
+      version_bump: minor
+
+    rule_5_soul_drift:
+      condition: "comments_classified.desired_ratio drift_trigger fired"
+      action:
+        - field: current_overrides.pillar_skew
+          value: "increase family_regret +5% (proven highest desired_ratio per batch_1_10 data)"
+        - field: current_overrides.relationship_skew
+          value: "increase mother + grandmother + father (family core)"
+        - field: severity_review
+          value: "human_review_required IF persists 10 ep"
+      version_bump: MAJOR
+
+# ============================================================
+# AUTO-TUNING LOG
+# ============================================================
+
+tuning_log: []
+  # Schema:
+  # - ts: ISO8601
+  #   trigger: "rule_X_condition"
+  #   ep_range_observed: [N..M]
+  #   before:
+  #     metric_X: value
+  #   after_action:
+  #     - field: X
+  #       value: Y
+  #   version_bump: minor / MAJOR
+  #   applied_from_ep: N+1
+  #   evaluation_after_eps: 10
+  #   outcome: pending / improved / unchanged / regressed
+
+# ============================================================
+# CURRENT TUNING STATE — Generator + Director load this
+# ============================================================
+
+current_overrides: {}
+  # Schema:
+  # current_overrides:
+  #   beat_4_word_budget: "+50"
+  #   regret_line_depth: "force_2_line"
+  #   sensory_line_count: "+1"
+  #   silence_at_beat_4_end: 1500
+  #   emotion_intensity_multiplier: "+0.05_cap"
+  #   cliffhanger_pattern_filter: ["exclude_A", "prefer_C_F_G"]
+  #   pillar_skew: {family_regret: "+5%"}
+  #   thumbnail_intensity: "+15%"
+  #   title_pattern_rotation: "weight_3_4_5"
+  #   version: 1.0.X
+  #   applied_from_ep: N
+
+# ============================================================
+# DRIFT ALERTS
+# ============================================================
+
+drift_alerts: []
+  # Schema:
+  # - ts: ISO8601
+  #   alert_type: ctr_drop / retention_drop / replay_drop / completion_drop / soul_drift
+  #   ep_range: [N..M]
+  #   severity: minor / major / critical
+  #   recommendation: "see feedback_loop.rules.rule_X"
+  #   auto_action_taken: true / false (false = chờ human)
+  #   resolved_at_ep: N
+
+# ============================================================
+# DIRECTOR INTEGRATION
+# ============================================================
+
+director_integration:
+  read_when:
+    - pre-write next ep: "load current_overrides, apply to ep_input"
+    - post-publish T+48h: "trigger Publisher scrape, populate eps[ep_N]"
+    - batch_close (every 10 ep): "compute batches[batch_X_Y], evaluate feedback_loop rules"
+
+  write_when:
+    - after scrape: "update eps[ep_N]"
+    - after rule fired: "append tuning_log + update current_overrides"
+    - after batch_close: "update batches[batch_X_Y] + drift_alerts"

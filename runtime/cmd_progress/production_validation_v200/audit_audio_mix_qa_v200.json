@@ -1,0 +1,31 @@
+{
+  "ep": 1,
+  "wav": "output\\ep_01\\EP01_FULL_v200.mp3",
+  "duration_s": 1238.9910657596372,
+  "verdict": "FAIL",
+  "pass_count": 11,
+  "high": 2,
+  "medium": 2,
+  "issues": [
+    {
+      "sev": "MEDIUM",
+      "check": "C9",
+      "msg": "SETUP avg -17.7 vs -22 (off 4.3)"
+    },
+    {
+      "sev": "HIGH",
+      "check": "C10",
+      "msg": "HOOK peak @ 20000ms, expected 12000.0ms (off 8000.0ms)"
+    },
+    {
+      "sev": "HIGH",
+      "check": "C13",
+      "msg": "9964 click/pop. First @ 6.72s"
+    },
+    {
+      "sev": "MEDIUM",
+      "check": "C14",
+      "msg": "7510 windows DC > 0.001"
+    }
+  ]
+}

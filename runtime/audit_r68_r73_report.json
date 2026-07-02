@@ -1,0 +1,206 @@
+{
+  "totals": {
+    "R68": 7,
+    "R69": 0,
+    "R70": 51,
+    "R71": 0,
+    "R72": 1
+  },
+  "eps_data": {
+    "1": {
+      "R68": [
+        {
+          "word": "Khải",
+          "context": "màn đêm yên lặng tới não nề.\n\nKhải-Phong đang ngồi trê"
+        },
+        {
+          "word": "Khải",
+          "context": "giờ mười, không nhúc nhích.\n\nKhải-Phong chợt nhớ ra —"
+        },
+        {
+          "word": "Khải",
+          "context": "anh.\n\nTiếng mẹ cô ấy khàn.\n\n— Khải-Phong ơi…\n\nAnh biết"
+        },
+        {
+          "word": "Khải",
+          "context": "hỏ vang lên trong khoang xe.\n\nKhải-Phong ngẩng đầu lên"
+        },
+        {
+          "word": "Khải",
+          "context": "15% câu ngắn lặp \"Tôi …\" phần Khải-Phong kể cô ấy | 12"
+        },
+        {
+          "word": "Khải",
+          "context": "calm.35 | + 3 hành khách tiễn Khải-Phong (deepen warmt"
+        },
+        {
+          "word": "Khải",
+          "context": "he rằng cô ấy thực sự đến đón Khải-Phong.\n5. **Bác tài"
+        }
+      ],
+      "R69": [],
+      "R70": [
+        {
+          "context": "# TẬP 1 — ĐỒNG HỒ NỮ MÀU XÀ CỪ (v7 final — fix review round 2 chốt)"
+        },
+        {
+          "context": "[INTRO 4.5s — HẮC DẠ KÝ master]"
+        },
+        {
+          "context": "Hắc Dạ Ký — chuyện kể từ cõi vô hình."
+        },
+        {
+          "context": "Loạt truyện đêm khuya, Chuyến xe cuối cùng về đâu — câu chuyện không lời chia ta"
+        },
+        {
+          "context": "## 1. HOOK (≤120 từ — 0:00—0:20) [beat_1: TÒ MÒ]"
+        },
+        {
+          "context": "Cây kim đồng hồ đã dừng lại từ rất lâu — đúng vào con số bảy giờ mười phút của đ"
+        },
+        {
+          "context": "Hình như chiều nay anh đã mở ngăn tủ đáy ra — chính là nơi anh đã giấu nó suốt t"
+        },
+        {
+          "context": "## 2. SETUP (~480 từ — 0:20—3:30) [beat_2: BẤT AN]"
+        },
+        {
+          "context": "Hà Nội đêm tháng tư — cái đêm mà anh vẫn còn nhớ mãi cho đến tận hôm nay."
+        },
+        {
+          "context": "Có một biển báo trắng lướt qua — chữ trên đó mờ đi vì hơi nước, nhưng vẫn đọc rõ"
+        },
+        {
+          "context": "Bác tài liếc gương chiếu hậu — ánh mắt dừng lại nơi anh một thoáng, rồi quay đi"
+        },
+        {
+          "context": "Anh cúi xuống nhìn — kim vẫn dừng bảy giờ mười, không nhúc nhích."
+        },
+        {
+          "context": "Khải-Phong chợt nhớ ra — anh đã giữ chiếc đồng hồ này suốt tám năm trời, từ cái"
+        },
+        {
+          "context": "Anh mới mở ngăn tủ ra, nhìn nó một thoáng, rồi đóng lại nhẹ nhàng. Không bao giờ"
+        },
+        {
+          "context": "Đôi bàn tay trắng tinh, gọn gàng đặt yên — như chưa từng chạm vào điều gì trên c"
+        },
+        {
+          "context": "## 3. INCIDENT (~480 từ — 3:30—6:30) [beat_3: ĐỒNG CẢM]"
+        },
+        {
+          "context": "Cô gái ngước nhìn anh rồi nở một nụ cười rất dịu dàng và hỏi nhỏ với giọng nhẹ t"
+        },
+        {
+          "context": "Anh khựng người — Hạ-Vy từng hát một câu rất giống như vậy, anh không nhớ rõ là"
+        },
+        {
+          "context": "Như vô tình mà trở thành hữu ý — anh thoáng rùng mình."
+        },
+        {
+          "context": "Anh cứng người, không trả lời ngay — chỉ nhìn chiếc đồng hồ trong tay."
+        },
+        {
+          "context": "Mãi về sau anh mới biết — câu hỏi đó dành riêng cho mình anh."
+        },
+        {
+          "context": "## 4. REVEAL (~620 từ — 6:30—10:15) [beat_3→beat_4: NGHẸN]"
+        },
+        {
+          "context": "Anh nhắm mắt lại thật khẽ. Trong đầu anh, Hạ-Vy đang đứng tại cổng B — mặc áo gi"
+        },
+        {
+          "context": "Anh nhìn đồng hồ tay — kim chỉ đúng bảy giờ mười tối hôm ấy."
+        },
+        {
+          "context": "[pause:600ms] Tiếng kim đồng hồ trong tay anh nhích đúng một nhịp duy nhất rất n"
+        },
+        {
+          "context": "Giọng anh trầm xuống, dịu lại — như sợ cô ấy đang say giấc nồng trong căn phòng"
+        },
+        {
+          "context": "Anh quay phắt lại — ghế phía sau trống không. Không thấy bóng dáng một ai hết."
+        },
+        {
+          "context": "Anh ngoái nhìn về cửa kính, hình bóng vừa rồi đã tan biến — chỉ còn lại mình anh"
+        },
+        {
+          "context": "## 5. PAYOFF (~440 từ — 10:15—13:00) [beat_4 vang → transition dư âm]"
+        },
+        {
+          "context": "Anh từ từ đứng lên rồi bước đi. Bàn tay anh buông lỏng tự khi nào — chiếc đồng h"
+        },
+        {
+          "context": "Anh không buồn nhặt nó lên — chiếc đồng hồ ở lại với chiếc ghế trống, như chính"
+        },
+        {
+          "context": "Lồng ngực anh chậm lại — như có một bàn tay vô hình đặt nhẹ lên ngực, ru nhịp th"
+        },
+        {
+          "context": "Đèn vàng le lói cách xe khoảng năm chục mét — Cầu Long Biên."
+        },
+        {
+          "context": "Cô gái ghế tám đưa tay ra — không chạm vào anh, chỉ đặt bàn tay lên ghế cạnh anh"
+        },
+        {
+          "context": "Anh quay lại, nhìn về phía cô gái ghế tám và khẽ gật đầu — một cái gật khe khẽ r"
+        },
+        {
+          "context": "Đi ngang qua ghế số ba, ông cụ ngước nhìn một giây rồi quay đi. Ghế chín, cô y t"
+        },
+        {
+          "context": "## 6. CLIFFHANGER (~210 từ — 13:00—14:30) [beat_5: DƯ ÂM mandatory]"
+        },
+        {
+          "context": "Vậy mà chỉ vài giây sau, trên chiếc ghế số bảy đã có một cô gái trẻ ngồi sẵn từ"
+        },
+        {
+          "context": "Nhìn xuống ghế cạnh mình, cô thấy chiếc đồng hồ đang nằm đó — vỏ xà cừ, kim chỉ"
+        },
+        {
+          "context": "Cô gái nói khẽ trong tiếng thì thầm hỏi như nói với chính mình: — Của tôi à, sao"
+        },
+        {
+          "context": "## SOUL — giữ 93"
+        },
+        {
+          "context": "- horror_lines: 3 mới — (a) đồng hồ rung, (b) kính xe phản chiếu cô gái ấy, (c)"
+        },
+        {
+          "context": "- sensory_lines: 8+ — vỏ xà cừ lạnh, mùi sông Hồng, mùi phù sa sông Hồng, đèn ph"
+        },
+        {
+          "context": "| REVEAL | **melancholic 0.40 + calm.20** + sad 0.25 + afraid 0.10 (round 2 chốt"
+        },
+        {
+          "context": "1. **Câu hát ông cụ \"Người ơi người ở đừng về\"** — em chọn câu quan họ phổ thông"
+        },
+        {
+          "context": "2. **Cô y tá \"đồng phục y tá cũ, ngực trái sẫm hơn một chút\"** — round 2 chốt: b"
+        },
+        {
+          "context": "3. **Kim nhích \"Tách\"** — em đặt ngay sau câu \"Tôi nhớ ra rồi\" thay vì sau dialo"
+        },
+        {
+          "context": "4. **Kính xe phản chiếu cô ấy** — anh đặt SAU dialog reveal, không đặt trước. Vì"
+        },
+        {
+          "context": "5. **Bác tài 2 câu** — giữ y nguyên ("
+        },
+        {
+          "context": "# SERIES_RULES — DNA LOCK (round 3 Mr. Long chốt)"
+        },
+        {
+          "context": "# SVHMP SERIES IDENTITY — LOCKED (Mr. Long chốt round 3)"
+        }
+      ],
+      "R71": [],
+      "R72": [
+        {
+          "quote_segments": 20,
+          "note": "separate render needed per R72"
+        }
+      ]
+    }
+  }
+}

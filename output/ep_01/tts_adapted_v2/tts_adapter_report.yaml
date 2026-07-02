@@ -1,0 +1,389 @@
+adapter_run_at: '2026-06-23T18:45:29+07'
+adapter_version: SVHMP-TTSA-1.0
+ep_number: 1
+violations: []
+rewrites:
+- rule: M-1-anaphora-preserve
+  before: Hà Nội đêm tháng tư. | Hà Nội đêm Khải Phong vẫn nhớ.
+  after: (kept as 2 sentences w/ melancholy emph)
+- rule: M-1-anaphora-preserve
+  before: Có lẽ pin hết. | Có lẽ vì cái khác.
+  after: (kept as 2 sentences w/ melancholy emph)
+- rule: M-1-echo-preserve
+  before: Anh đã giữ chiếc đồng hồ này tám năm. | Tám năm cất trong ngăn bàn đáy.
+  after: (kept as 2 sentences w/ melancholy emph)
+- rule: M-1-echo-preserve
+  before: Chỉ đôi khi đêm khuya. | Khi không ngủ được.
+  after: (kept as 2 sentences w/ melancholy emph)
+- rule: M-1-echo-preserve
+  before: Trên ghế ba, một ông cụ ôm chiếc radio nhỏ. | Radio cũ.
+  after: (kept as 2 sentences w/ melancholy emph)
+- rule: M-1-echo-preserve
+  before: Tay cô đặt trên đùi. | Tay sạch.
+  after: (kept as 2 sentences w/ melancholy emph)
+- rule: M-1-echo-preserve
+  before: Trên ghế mười hai, một anh trung niên cầm tờ giấy gấp tư. | Tờ giấy mép
+    đã sờn.
+  after: (kept as 2 sentences w/ melancholy emph)
+- rule: M-1-compound
+  before: Đêm đó mưa từ bảy giờ. Khải Phong ngồi ghế số bảy.
+  after: Đêm đó mưa từ bảy giờ — Khải Phong ngồi ghế số bảy.
+- rule: M-1-compound
+  before: Vỏ xà cừ. Mặt số La-mã.
+  after: Vỏ xà cừ — Mặt số La-mã.
+- rule: M-1-compound
+  before: Kim đồng hồ dừng lúc bảy giờ mười. Anh không hiểu sao mình lại mang nó theo.
+  after: Kim đồng hồ dừng lúc bảy giờ mười — Anh không hiểu sao mình lại mang nó theo.
+- rule: M-1-compound
+  before: Hình như chiều nay anh kéo ngăn bàn. Ngoài cửa kính, mưa rơi đều.
+  after: Hình như chiều nay anh kéo ngăn bàn — Ngoài cửa kính, mưa rơi đều.
+- rule: M-1-compound
+  before: Đèn trần xe vàng. Sáng vừa đủ thấy mặt người.
+  after: Đèn trần xe vàng — Sáng vừa đủ thấy mặt người.
+- rule: M-1-compound
+  before: Họ ngồi yên. Như đã ngồi đã lâu rồi.
+  after: Họ ngồi yên — Như đã ngồi đã lâu rồi.
+- rule: M-1-compound
+  before: Khải Phong chưa từng đi xe này. Anh cũng không nhớ mình lên lúc nào.
+  after: Khải Phong chưa từng đi xe này — Anh cũng không nhớ mình lên lúc nào.
+- rule: M-1-compound
+  before: Xe chạy chậm. Bác tài hai tay trên vô-lăng.
+  after: Xe chạy chậm — Bác tài hai tay trên vô-lăng.
+- rule: M-1-compound
+  before: Khải Phong nhìn ra cửa kính. Sương dày dần.
+  after: Khải Phong nhìn ra cửa kính — Sương dày dần.
+- rule: M-1-compound
+  before: Có một biển báo trắng lướt qua. Chữ mờ vì hơi nước.
+  after: Có một biển báo trắng lướt qua — Chữ mờ vì hơi nước.
+- rule: M-1-compound
+  before: '"Cầu Long Biên — hai ki-lô-mét." Khải Phong nhíu mắt. Anh không có lý do gì
+    để qua cầu đêm nay.'
+  after: '"Cầu Long Biên — hai ki-lô-mét." Khải Phong nhíu mắt — Anh không có lý do gì
+    để qua cầu đêm nay.'
+- rule: M-1-compound
+  before: Lâu lắm rồi anh không tưởng đến cây cầu này. Bác tài liếc gương chiếu hậu.
+  after: Lâu lắm rồi anh không tưởng đến cây cầu này — Bác tài liếc gương chiếu hậu.
+- rule: M-1-compound
+  before: Vỏ xà cừ lạnh. Mặt số La-mã.
+  after: Vỏ xà cừ lạnh — Mặt số La-mã.
+- rule: M-1-compound
+  before: Một cái rung nhỏ. Như tim đập một nhịp.
+  after: Một cái rung nhỏ — Như tim đập một nhịp.
+- rule: M-1-compound
+  before: Khải Phong cứng tay. Đồng hồ này tám năm không thay pin.
+  after: Khải Phong cứng tay — Đồng hồ này tám năm không thay pin.
+- rule: M-1-compound
+  before: Anh nhìn xuống. Kim vẫn dừng bảy giờ mười.
+  after: Anh nhìn xuống — Kim vẫn dừng bảy giờ mười.
+- rule: M-1-compound
+  before: Mỗi sáng anh đi qua bàn. Anh không mở ngăn.
+  after: Mỗi sáng anh đi qua bàn — Anh không mở ngăn.
+- rule: M-1-compound
+  before: Mỗi tối anh về. Anh cũng không mở.
+  after: Mỗi tối anh về — Anh cũng không mở.
+- rule: M-1-compound
+  before: Anh mới kéo ngăn ra. Anh nhìn nó.
+  after: Anh mới kéo ngăn ra — Anh nhìn nó.
+- rule: M-1-compound
+  before: Không bao giờ cầm. Chỉ tối nay anh mới cầm.
+  after: Không bao giờ cầm — Chỉ tối nay anh mới cầm.
+- rule: M-1-compound
+  before: Anh cũng không nhớ tại sao. Mưa rơi đều.
+  after: Anh cũng không nhớ tại sao — Mưa rơi đều.
+- rule: M-1-compound
+  before: Tiếng máy xe đều. Có ai đó ho khẽ ở phía sau.
+  after: Tiếng máy xe đều — Có ai đó ho khẽ ở phía sau.
+- rule: M-1-compound
+  before: Ông cụ không bật. Ông chỉ ôm.
+  after: Ông cụ không bật — Ông chỉ ôm.
+- rule: M-1-compound
+  before: Màu áo ở ngực trái sẫm hơn một chút. Cô không nhìn ai.
+  after: Màu áo ở ngực trái sẫm hơn một chút — Cô không nhìn ai.
+- rule: M-1-compound
+  before: Anh không mở. Anh chỉ giữ.
+  after: Anh không mở — Anh chỉ giữ.
+- rule: M-1-compound
+  before: Mỗi vài giây, ngón cái anh khẽ miết qua nếp gấp. Mọi người đều mang một
+    thứ gì đó.
+  after: Mỗi vài giây, ngón cái anh khẽ miết qua nếp gấp — Mọi người đều mang một
+    thứ gì đó.
+- rule: M-1-compound
+  before: Khải Phong nhìn xuống đồng hồ. Anh thấy mình bé lại.
+  after: Khải Phong nhìn xuống đồng hồ — Anh thấy mình bé lại.
+- rule: M-1-echo-preserve
+  before: Rất lâu. | Lâu lắm.
+  after: (kept as 2 sentences w/ melancholy emph)
+- rule: M-1-echo-preserve
+  before: Như vô tình. | Như không vô tình.
+  after: (kept as 2 sentences w/ melancholy emph)
+- rule: M-1-compound
+  before: Cô tóc cột thấp. Áo khoác len màu xám.
+  after: Cô tóc cột thấp — Áo khoác len màu xám.
+- rule: M-1-compound
+  before: Cô không hỏi gì. Cô chỉ nhìn chiếc đồng hồ.
+  after: Cô không hỏi gì — Cô chỉ nhìn chiếc đồng hồ.
+- rule: M-1-compound
+  before: Khải Phong nhìn ra cửa kính. Sương ngoài kia đặc thêm.
+  after: Khải Phong nhìn ra cửa kính — Sương ngoài kia đặc thêm.
+- rule: M-1-compound
+  before: Cô chỉ ngồi yên. Tay cô đan vào nhau trên đùi.
+  after: Cô chỉ ngồi yên — Tay cô đan vào nhau trên đùi.
+- rule: M-1-compound
+  before: Khải Phong thở ra một hơi dài. Anh không định kể.
+  after: Khải Phong thở ra một hơi dài — Anh không định kể.
+- rule: M-1-compound
+  before: Khải Phong ngừng. Tiếng máy xe rì rì.
+  after: Khải Phong ngừng — Tiếng máy xe rì rì.
+- rule: M-1-compound
+  before: Một tiếng rè khẽ. Rồi một câu hát cũ vọng ra, nghe không rõ lời.
+  after: Một tiếng rè khẽ — Rồi một câu hát cũ vọng ra, nghe không rõ lời.
+- rule: M-1-compound
+  before: Hà từng hát một câu rất giống vậy. Khải Phong không nhớ rõ là khi nào.
+  after: Hà từng hát một câu rất giống vậy — Khải Phong không nhớ rõ là khi nào.
+- rule: M-1-compound
+  before: Cô gái ghế tám đợi. Khải Phong nuốt nước bọt.
+  after: Cô gái ghế tám đợi — Khải Phong nuốt nước bọt.
+- rule: M-1-compound
+  before: Trên ghế chín, cô y tá ngước lên. Cô nhìn Khải Phong.
+  after: Trên ghế chín, cô y tá ngước lên — Cô nhìn Khải Phong.
+- rule: M-1-compound
+  before: Khải Phong không hiểu hết. Nhưng anh thấy cổ họng nghẹn.
+  after: Khải Phong không hiểu hết — Nhưng anh thấy cổ họng nghẹn.
+- rule: M-1-compound
+  before: Khải Phong cứng người. Anh không trả lời ngay.
+  after: Khải Phong cứng người — Anh không trả lời ngay.
+- rule: M-1-echo-preserve
+  before: Trong đầu anh, Hà đang đứng ở cổng Bê. | Hạ Vy mặc áo gió xanh nhạt.
+  after: (kept as 2 sentences w/ melancholy emph)
+- rule: M-1-echo-preserve
+  before: Tóc Hà cột cao. | Hà cười.
+  after: (kept as 2 sentences w/ melancholy emph)
+- rule: M-1-echo-preserve
+  before: Hà cười. | Hà vẫy tay.
+  after: (kept as 2 sentences w/ melancholy emph)
+- rule: M-1-echo-preserve
+  before: Hà vẫy tay. | Hạ Vy mất hút sau cánh cửa kính.
+  after: (kept as 2 sentences w/ melancholy emph)
+- rule: M-1-echo-preserve
+  before: Khải Phong biết. | Khải Phong chưa nghe hết câu, Khải Phong đã biết.
+  after: (kept as 2 sentences w/ melancholy emph)
+- rule: M-1-echo-preserve
+  before: Nhưng anh nghe rõ một tiếng tích vừa rồi. | Tiếng anh khẽ.
+  after: (kept as 2 sentences w/ melancholy emph)
+- rule: M-1-compound
+  before: Khải Phong nhìn đồng hồ tay. Kim chỉ bảy giờ mười.
+  after: Khải Phong nhìn đồng hồ tay — Kim chỉ bảy giờ mười.
+- rule: M-1-compound
+  before: 'Anh ngồi ở quán cà phê sân bay đến mười giờ. Anh tự nhủ: chắc Hà đang ngồi
+    máy bay.'
+  after: 'Anh ngồi ở quán cà phê sân bay đến mười giờ — Anh tự nhủ: chắc Hà đang ngồi
+    máy bay.'
+- rule: M-1-compound
+  before: 'Anh nhắn Hà: "Sang đó nhớ ăn cơm. Đừng quên uống nước."'
+  after: 'Anh nhắn Hà: "Sang đó nhớ ăn cơm — Đừng quên uống nước."'
+- rule: M-1-compound
+  before: 'Hạ Vy không trả lời. Anh tự nhủ: Hà đang bay.'
+  after: 'Hạ Vy không trả lời — Anh tự nhủ: Hà đang bay.'
+- rule: M-1-compound
+  before: Mười giờ tối thứ Sáu. Sáng ngày thứ Bảy không có tin.
+  after: Mười giờ tối thứ Sáu — Sáng ngày thứ Bảy không có tin.
+- rule: M-1-compound
+  before: Trưa ngày thứ Bảy không có tin. Chiều ngày thứ Bảy mẹ Hà gọi anh.
+  after: Trưa ngày thứ Bảy không có tin — Chiều ngày thứ Bảy mẹ Hà gọi anh.
+- rule: M-1-compound
+  before: Hà xuống sân bay J F K. Bắt taxi về nhà người dì.
+  after: Hà xuống sân bay J F K — Bắt taxi về nhà người dì.
+- rule: M-1-compound
+  before: Khải Phong ngừng nói. Cô gái ghế tám đặt tay lên đùi.
+  after: Khải Phong ngừng nói — Cô gái ghế tám đặt tay lên đùi.
+- rule: M-1-compound
+  before: Cô không hỏi gì. Cô chỉ đợi.
+  after: Cô không hỏi gì — Cô chỉ đợi.
+- rule: M-1-compound
+  before: Tách. Khải Phong cúi xuống nhìn.
+  after: Tách — Khải Phong cúi xuống nhìn.
+- rule: M-1-compound
+  before: Cô gái ghế tám cụp mắt. Bác tài liếc gương chiếu hậu.
+  after: Cô gái ghế tám cụp mắt — Bác tài liếc gương chiếu hậu.
+- rule: M-1-compound
+  before: Cô gái ghế tám đưa tay che miệng. Khải Phong ngẩng lên.
+  after: Cô gái ghế tám đưa tay che miệng — Khải Phong ngẩng lên.
+- rule: M-1-compound
+  before: Mắt anh chạm vào cửa kính phía bác tài. [pause:400ms] Trong tấm kính mờ
+    hơi nước, có hai bóng người.
+  after: Mắt anh chạm vào cửa kính phía bác tài — [pause:400ms] Trong tấm kính mờ
+    hơi nước, có hai bóng người.
+- rule: M-1-compound
+  before: Một là anh. Phía sau anh, sát vai, có một bóng nữ.
+  after: Một là anh — Phía sau anh, sát vai, có một bóng nữ.
+- rule: M-1-compound
+  before: Tóc cột cao. Áo gió xanh nhạt.
+  after: Tóc cột cao — Áo gió xanh nhạt.
+- rule: M-1-compound
+  before: Khải Phong quay phắt lại. Ghế phía sau anh trống.
+  after: Khải Phong quay phắt lại — Ghế phía sau anh trống.
+- rule: M-1-compound
+  before: Không ai cả. Anh quay về cửa kính.
+  after: Không ai cả — Anh quay về cửa kính.
+- rule: M-1-compound
+  before: Bóng kia không còn. Chỉ còn anh, ngồi một mình trên ghế số bảy.
+  after: Bóng kia không còn — Chỉ còn anh, ngồi một mình trên ghế số bảy.
+- rule: M-1-compound
+  before: Anh thở ra một hơi rất dài. Một giọt nước rơi xuống mặt đồng hồ.
+  after: Anh thở ra một hơi rất dài — Một giọt nước rơi xuống mặt đồng hồ.
+- rule: M-1-compound
+  before: Một dòng chữ tay ngắn. Anh đọc một lần.
+  after: Một dòng chữ tay ngắn — Anh đọc một lần.
+- rule: M-1-compound
+  before: Anh đặt tay lên ngực. Bác tài chậm rãi liếc gương chiếu hậu một lần nữa.
+  after: Anh đặt tay lên ngực — Bác tài chậm rãi liếc gương chiếu hậu một lần nữa.
+- rule: M-1-compound
+  before: Sương ngoài cửa kính tách ra. Một ngọn đèn vàng hiện lên ở cuối con dốc.
+  after: Sương ngoài cửa kính tách ra — Một ngọn đèn vàng hiện lên ở cuối con dốc.
+- rule: M-1-echo-preserve
+  before: Mùi sông Hồng. | Mùi bùn cầu.
+  after: (kept as 2 sentences w/ melancholy emph)
+- rule: M-1-echo-preserve
+  before: Khải Phong quay đầu nhìn bác tài. | Bác tài liếc gương.
+  after: (kept as 2 sentences w/ melancholy emph)
+- rule: M-1-echo-preserve
+  before: Cô nhìn ghế trống số bảy. | Ghế còn ấm.
+  after: (kept as 2 sentences w/ melancholy emph)
+- rule: M-1-compound
+  before: Anh chậm. Như có ai đỡ vai anh từ phía sau.
+  after: Anh chậm — Như có ai đỡ vai anh từ phía sau.
+- rule: R-4
+  before: Anh ôm chiếc đồng hồ trong lòng bàn tay. Anh không khóc. Anh chỉ nhìn ra
+    cửa xe.
+  after: Anh ôm chiếc đồng hồ trong lòng bàn tay, rồi khẽ không khóc, trước khi chỉ
+    nhìn ra cửa xe.
+- rule: M-1-compound
+  before: Đèn vàng le lói. Cách xe khoảng năm chục mét.
+  after: Đèn vàng le lói — Cách xe khoảng năm chục mét.
+- rule: M-1-compound
+  before: Ông cúi đầu một lần. Rất khẽ.
+  after: Ông cúi đầu một lần — Rất khẽ.
+- rule: M-1-compound
+  before: Anh đặt nó vào túi áo ngực. Cô gái ghế tám đưa tay ra.
+  after: Anh đặt nó vào túi áo ngực — Cô gái ghế tám đưa tay ra.
+- rule: M-1-compound
+  before: Cô không chạm vào Khải Phong. Cô chỉ đặt bàn tay lên ghế cạnh anh.
+  after: Cô không chạm vào Khải Phong — Cô chỉ đặt bàn tay lên ghế cạnh anh.
+- rule: M-1-compound
+  before: Như một lời chào. Khải Phong quay lại.
+  after: Như một lời chào — Khải Phong quay lại.
+- rule: M-1-compound
+  before: Anh nhìn cô. Anh gật.
+  after: Anh nhìn cô — Anh gật.
+- rule: M-1-compound
+  before: Cô gái cụp mắt. Khải Phong bước về phía cửa.
+  after: Cô gái cụp mắt — Khải Phong bước về phía cửa.
+- rule: M-1-compound
+  before: Anh đi ngang ghế ba. Ông cụ ngẩng lên một giây, rồi cúi.
+  after: Anh đi ngang ghế ba — Ông cụ ngẩng lên một giây, rồi cúi.
+- rule: M-1-compound
+  before: Anh đi ngang ghế chín. Cô y tá nhìn theo.
+  after: Anh đi ngang ghế chín — Cô y tá nhìn theo.
+- rule: M-1-compound
+  before: Anh đi ngang ghế mười hai. Anh trung niên không ngẩng.
+  after: Anh đi ngang ghế mười hai — Anh trung niên không ngẩng.
+- rule: M-1-compound
+  before: Xe chậm lại. Cửa từ từ mở.
+  after: Xe chậm lại — Cửa từ từ mở.
+- rule: M-1-compound
+  before: Anh bước xuống. Tay anh ôm chiếc đồng hồ.
+  after: Anh bước xuống — Tay anh ôm chiếc đồng hồ.
+- rule: M-1-compound
+  before: Anh đi về phía đèn vàng. Bóng anh nhỏ dần.
+  after: Anh đi về phía đèn vàng — Bóng anh nhỏ dần.
+- rule: M-1-compound
+  before: Cửa xe đóng lại. Tiếng bản lề khẽ.
+  after: Cửa xe đóng lại — Tiếng bản lề khẽ.
+- rule: M-1-compound
+  before: Trong xe, im lặng. Ông cụ ôm radio như cũ.
+  after: Trong xe, im lặng — Ông cụ ôm radio như cũ.
+- rule: M-1-compound
+  before: Cô y tá đặt tay sạch lên đùi như cũ. Anh trung niên giữ giấy gấp tư trong
+    túi áo.
+  after: Cô y tá đặt tay sạch lên đùi như cũ — Anh trung niên giữ giấy gấp tư trong
+    túi áo.
+- rule: M-1-compound
+  before: Bác tài chậm rãi đặt tay lên vô-lăng. Xe chạy tiếp.
+  after: Bác tài chậm rãi đặt tay lên vô-lăng — Xe chạy tiếp.
+- rule: M-1-compound
+  before: Cô gái ngẩng lên. Trên ghế số bảy.
+  after: Cô gái ngẩng lên — Trên ghế số bảy.
+- rule: M-1-compound
+  before: Có một vật nhỏ. Cô nhíu mày.
+  after: Có một vật nhỏ — Cô nhíu mày.
+- rule: M-1-compound
+  before: Cô cúi xuống. Cô nhặt lên.
+  after: Cô cúi xuống — Cô nhặt lên.
+- rule: M-1-compound
+  before: Chiếc đồng hồ nữ vỏ xà cừ. Kim chỉ bảy giờ mười.
+  after: Chiếc đồng hồ nữ vỏ xà cừ — Kim chỉ bảy giờ mười.
+- rule: M-1-compound
+  before: Cô gái đặt chiếc đồng hồ lại lên ghế. Rồi rút tay về.
+  after: Cô gái đặt chiếc đồng hồ lại lên ghế — Rồi rút tay về.
+- rule: M-1-compound
+  before: Ghế số bảy trống được hai giây. Rồi có một cô gái trẻ ngồi vào.
+  after: Ghế số bảy trống được hai giây — Rồi có một cô gái trẻ ngồi vào.
+- rule: M-1-compound
+  before: Cô tóc xõa. Áo gió xanh nhạt.
+  after: Cô tóc xõa — Áo gió xanh nhạt.
+- rule: M-1-compound
+  before: Cô không nhớ mình lên xe lúc nào. Cô nhìn xuống.
+  after: Cô không nhớ mình lên xe lúc nào — Cô nhìn xuống.
+- rule: M-1-compound
+  before: Vỏ xà cừ. Kim chỉ bảy giờ mười.
+  after: Vỏ xà cừ — Kim chỉ bảy giờ mười.
+- rule: M-1-compound
+  before: Cô nhặt lên. Cô nhíu mắt nhìn.
+  after: Cô nhặt lên — Cô nhíu mắt nhìn.
+- rule: M-1-compound
+  before: Cô đưa đồng hồ lên trước mặt. [pause:500ms] Chiếc đồng hồ rung khẽ một lần
+    trong tay cô. Cô khẽ rùng mình.
+  after: Cô đưa đồng hồ lên trước mặt — [pause:500ms] Chiếc đồng hồ rung khẽ một lần
+    trong tay cô, Cô khẽ rùng mình.
+- rule: M-1-compound
+  before: Cô áp đồng hồ vào ngực. Ngoài cửa kính, sương lại khép lại.
+  after: Cô áp đồng hồ vào ngực — Ngoài cửa kính, sương lại khép lại.
+normalize_subs:
+- from: La Mã
+  to: La-mã
+  rule: roman_numeral
+  count: 2
+- from: ngăn kéo
+  to: ngăn bàn
+  rule: anti_repeat_drawer
+  count: 2
+- from: Khải Phong không quay.
+  to: Khải Phong không quay đầu lại.
+  rule: anti_merge_clarity
+  count: 1
+- from: Bé như cậu sinh viên năm hai
+  to: Như thời sinh viên năm hai
+  rule: anti_repeat_be
+  count: 1
+- from: cổng B
+  to: cổng Bê
+  rule: letter_standalone
+- from: JFK
+  to: J F K
+  rule: airport
+- from: ngăn kéo
+  to: ngăn bàn
+  rule: anti_repeat_drawer
+  count: 2
+- from: cổng B
+  to: cổng Bê
+  rule: letter_standalone
+metrics:
+  total_word_count: 2164
+  total_estimated_duration_sec: 1148.6
+  total_estimated_duration_min: 19.14
+  scenes: 5
+qa_pass: false
+qa_issues:
+- 'QA-6: scene_01_xe_dem.txt has stray digits: [''7'', ''2'']'
+- 'QA-12: total duration 19.1min out of 11.0-16.0 window'

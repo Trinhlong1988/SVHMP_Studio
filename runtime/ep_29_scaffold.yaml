@@ -1,0 +1,51 @@
+ep_number: 29
+must_read:
+- file: bible/00_constitution.yaml
+  exists: true
+- file: bible/09_emotion_intensity.yaml
+  exists: true
+- file: bible/11_regret_catalog.yaml
+  exists: true
+- file: bible/12_object_library.yaml
+  exists: true
+- file: bible/13_setting_library.yaml
+  exists: true
+- file: bible/21_series_arc_design.yaml
+  exists: true
+- file: prompts/ep_scaffold_template.md
+  exists: true
+- file: BUGS_FIXED.md
+  exists: true
+arc_lookups:
+  pillar: kindness
+  intensity_level: 0.55
+  memory_fragment: M6
+  memory_text: Khải Phong nhớ tên ngành học (kiến trúc)
+  cliffhanger_hint: Khải Phong nhớ cầm thước T
+  callback: null
+  milestone: false
+  object_sub_arc:
+    range: ep_21_to_30
+    sub_arc_type: temporal_arc
+    target_pattern: vật mang dấu năm 2017
+    eps_with_year:
+    - 22
+    - 26
+    - 29
+    reveal_ep: 30
+    reveal_moment: Khải Phong nhận 3 vật cùng năm 2017 — năm Khải Phong chưa rõ
+hard_constraints:
+  word_count_target_min: 2200
+  word_count_target_max: 2500
+  word_count_hard_floor: 2000
+  word_count_hard_ceiling: 2700
+  duration_min_minutes: 13
+  bell_count_max: 1
+  ghost_manifest_max: 1
+  driver_lines_max: 2
+  intro_required: true
+  name_rename_required:
+    Hà: Hạ Vy (selective)
+    Quang: Khải Phong (full)
+  aftertaste: unresolved
+pre_write_status: PENDING

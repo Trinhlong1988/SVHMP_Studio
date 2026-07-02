@@ -1,0 +1,121 @@
+# SVHMP — 25 SUSPENSE ARC TEMPLATES (kentjuno import)
+# Round 19.2 add 2026-06-28 — Agent 4 kentjuno/ainovel-cli adapt
+# 6 arc templates cho passenger backstory variety EP51-90
+
+version: 1.0
+purpose: |
+  6 suspense/mystery arc templates from kentjuno assets/references/genres/suspense/.
+  Adapt cho SVHMP passenger backstory variety — tránh archetype lặp.
+  Each passenger EP có 1 arc template làm skeleton, generator fill specifics.
+
+# ============================================================
+# 6 ARC TEMPLATES
+# ============================================================
+
+case_investigation_arc:
+  # Original kentjuno: 10-15 chapters
+  # SVHMP adapt: 1 EP REVEAL section (~480 từ)
+  pattern: "Hiện trường → Truy tìm manh mối → Đột phá then chốt → Hệ quả cảm xúc"
+  structure_in_ep:
+    setup: "Passenger giới thiệu vụ việc (3-5 câu)"
+    incident: "1-2 manh mối khám phá"
+    reveal: "Đột phá then chốt — hiểu được câu chuyện"
+    payoff: "Hệ quả cảm xúc — passenger chấp nhận / hối hận"
+  rules:
+    - "Clue phải fair — audience có thể trace từ early hint"
+    - "Sự kiện cảm xúc reveal QUAN TRỌNG HƠN logic suy luận"
+  use_for_passenger_archetype: "A11 factory accident / A8 mountain doctor / mystery deaths"
+  example_ep_planned: "EP54 (cô gái điều tra cái chết em trai)"
+
+truth_approach_arc:
+  # Long-form serial mystery
+  pattern: "Vụ cũ tái hiện → Đào sâu (mỗi bước trả giá) → Nguy hiểm leo thang → Lựa chọn cưỡng bức"
+  structure_in_ep:
+    setup: "Passenger nhắc đến vụ cũ chưa giải"
+    incident: "Manh mới làm lộ thêm 1 lớp"
+    reveal: "Tiếp cận sự thật KHÔNG resolved — chỉ partially"
+    payoff: "Passenger trả giá (mất niềm tin / cô lập / đe dọa)"
+  rules:
+    - "KHÔNG resolve hoàn toàn — tạo open-ended Ngạn-style"
+    - "Mỗi tiếp cận trả 1 cái giá"
+  use_for_passenger_archetype: "A6 war veteran / A2 soldier returning (war crimes secret)"
+  example_ep_planned: "EP63 (cựu lính tìm chiến hữu chết bất minh)"
+
+chase_infiltrate_arc:
+  # High-action escape/pursuit
+  pattern: "Mục tiêu xác định → Quá trình thực hiện (nhiều cú twist) → Đối đầu cuối + bất ngờ lật"
+  structure_in_ep:
+    setup: "Passenger kể plan / nhiệm vụ"
+    incident: "Sự cố ngoài kế hoạch — adapt"
+    reveal: "Confrontation — KHÔNG chỉ vũ lực, có tâm lý + thông tin chiến"
+    payoff: "Twist cuối — kết quả khác kế hoạch"
+  rules:
+    - "Plan deviation showcase adaptability"
+    - "Confrontation tâm lý > vũ lực"
+  use_for_passenger_archetype: "A9 refugee / A2 soldier escape"
+  example_ep_planned: "EP69 (người vượt biên 1986 nhớ chuyến cuối)"
+
+trial_reveal_arc:
+  # Court / judgment / public reveal
+  pattern: "Chứng cứ chuẩn bị → Tranh tụng (qua lại) → Chứng cứ bất ngờ + phán quyết"
+  structure_in_ep:
+    setup: "Passenger trong trial situation (figurative — family judgment / community trial)"
+    incident: "Tranh luận, qua lại"
+    reveal: "Chứng cứ ngoài tầm — thay đổi outcome"
+    payoff: "Phán quyết — không nhất thiết justice thắng"
+  rules:
+    - "Đôi bên thay phiên chiếm thế"
+    - "Phán quyết có thể là compromise / âm mưu lớn hơn"
+  use_for_passenger_archetype: "A5 old teacher (community judgment) / A3 unwed bride (family trial)"
+  example_ep_planned: "EP75 (cô dâu chưa cưới bị gia đình từ chối)"
+
+connected_cases_arc:
+  # Long-form serial — multiple cases share underlying pattern
+  pattern: "Vụ độc lập → Phát hiện liên kết → Truy tìm chủ mưu → Đối đầu cuối + sự thật"
+  structure_in_ep:
+    setup: "Passenger kể vụ độc lập (independent at first)"
+    incident: "Hint connect với 1 vụ EP trước (NPC accrual)"
+    reveal: "Pattern revealed — chủ mưu / nguyên nhân chung"
+    payoff: "Confront — có thể partial resolution"
+  rules:
+    - "Mỗi case độc lập trước, link là turning point"
+    - "Chủ mưu có động cơ planted từ early"
+  use_for_passenger_archetype: "A10 drowned fisherman + A11 factory accident (industrial negligence pattern)"
+  example_ep_planned: "EP78 + EP82 (cùng công ty hóa chất → mass tragedy)"
+
+daily_transition_arc:
+  # Breather — between high-stress arcs
+  pattern: "Quan hệ hàn gắn / manh mới nhú lên / phục hồi tâm lý / ngầm tiến triển"
+  structure_in_ep:
+    setup: "Passenger nhẹ nhàng giới thiệu"
+    incident: "Memory peak quiet emotional"
+    reveal: "Small recognition — không drama lớn"
+    payoff: "Healing / acceptance gentle"
+  rules:
+    - "Sau high-stress arc → breathing space"
+    - "Underplay: 'gì đó sắp xảy ra' lurking"
+  use_for_passenger_archetype: "A12 monk returning / A4 lost child (gentle reunion)"
+  example_ep_planned: "EP74 (sau EP73 PIVOT) — daily quiet — Khải Phong adjust knowing he's dead"
+
+# ============================================================
+# DISTRIBUTION 6 ARC TEMPLATES CROSS EP51-90 (40 EPs)
+# ============================================================
+
+distribution_plan:
+  case_investigation: "8 EPs (20%)"
+  truth_approach: "7 EPs (17.5%)"
+  chase_infiltrate: "5 EPs (12.5%)"
+  trial_reveal: "5 EPs (12.5%)"
+  connected_cases: "8 EPs (20%)"
+  daily_transition: "7 EPs (17.5%)"
+  total: "40 EPs (EP51-90, except EP73 milestone)"
+
+  cluster_rules:
+    - "No 2 adjacent EPs same arc template"
+    - "Daily transition AFTER chase or trial high-stress arc"
+    - "Connected cases pair EPs 5-8 apart (build retroactive recognition)"
+
+authority: Mr.Long
+revision_policy:
+  amendable_by: Mr.Long
+  process: "Edit + sync with bible/21b chapter_contract per EP"

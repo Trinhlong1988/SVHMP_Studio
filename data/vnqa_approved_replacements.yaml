@@ -1,0 +1,41 @@
+---
+schema_version: 1
+description: |
+  VNQA semi-auto fix registry (Option B Mr.Long approve 26/6).
+  Mỗi entry là 1-1 literal map ĐÃ được Mr.Long approve.
+  Auto-fix tool đọc registry này + match vs VNQA issues + propose diff.
+  KHÔNG auto-apply — tạo .proposed_fix, Mr.Long review trước.
+  Áp dụng cross-episode (EP01-EP90) cho SVHMP, có thể scope theo genre.
+
+policy:
+  default_mode: propose         # tạo .proposed_fix file, không ghi đè
+  apply_mode: atomic_replace    # --apply flag → atomic write + backup
+  conflict_resolution: skip_if_match_zero  # nếu pattern không match exact, skip
+
+# ─── REPLACEMENTS REGISTRY ───
+
+replacements:
+  - id: R001
+    pattern: "bùn cầu"
+    replace: "phù sa sông Hồng"
+    case_sensitive: false
+    approved_by: Mr.Long
+    approved_date: 2026-06-26
+    scope: [horror_narrative]
+    reason: "B31 phonetic ambiguity — TTS đọc giống 'bồn cầu' (toilet)"
+    source_bug: B31
+    first_applied_ep: 1
+
+  - id: R002
+    pattern: "Bất chợt"
+    replace: "Bỗng nhiên"
+    case_sensitive: true        # giữ capital đầu câu
+    approved_by: Mr.Long
+    approved_date: 2026-06-26   # rule gốc memory feedback_svhmp_tts_voice_fixes 22/6
+    scope: [horror_narrative]
+    reason: "TTS BigVGAN mispronounce trigger"
+    source_memory: feedback_svhmp_tts_voice_fixes.md
+    first_applied_ep: 1
+
+  # Future: thêm rules khi Mr.Long approve trong session sau
+  # Pattern thêm vào đây để áp cross-episode tự động

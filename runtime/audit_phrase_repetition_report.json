@@ -1,0 +1,27 @@
+{
+  "total": 2,
+  "eps": [
+    [
+      1,
+      2
+    ]
+  ],
+  "violations": [
+    {
+      "type": "phrase_2gram_repeat",
+      "phrase": "0 30",
+      "count": 3,
+      "para_idx": 233,
+      "para_preview": "| Section | emo focus | New element |\n|---|---|---|\n| HOOK | surprised 0.40 + calm 0.30 | giữ |\n| SE",
+      "ep": 1
+    },
+    {
+      "type": "phrase_2gram_repeat",
+      "phrase": "cô ấy",
+      "count": 3,
+      "para_idx": 235,
+      "para_preview": "1. **Câu hát ông cụ \"Người ơi người ở đừng về\"** — em chọn câu quan họ phổ thông cho tiễn biệt. Mr. ",
+      "ep": 1
+    }
+  ]
+}

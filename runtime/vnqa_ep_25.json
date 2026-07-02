@@ -1,0 +1,87 @@
+{
+  "ep_number": 25,
+  "phase_h_version": "H1-H7 v1.0",
+  "stats": {
+    "tokens_count": 2908,
+    "sentences_approx": 259,
+    "adverbs_count": 150,
+    "adverbs_ratio": 0.052,
+    "word_count": 2888,
+    "estimated_minutes": 18.6
+  },
+  "issues": [
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"đêm\" lặp 27x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"mảnh\" lặp 24x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H1_token_repeat",
+      "severity": "warning",
+      "evidence": "\"phổi\" lặp 22x trong ep",
+      "suggestion": "Đa dạng từ vựng, dùng synonym"
+    },
+    {
+      "check": "H2_dict_unusual_compound",
+      "severity": "minor",
+      "evidence": "Cụm từ dài bất thường: ['` prompt_version', '0.55 quang_memory_fragment', 'EP15 OBJ_GUONG']",
+      "suggestion": "TENTATIVE — Mr.Long verify trong từ điển VN"
+    },
+    {
+      "check": "H7_ngram_repetition",
+      "severity": "warning",
+      "evidence": "Bi-gram \"bệnh viện\" lặp 3x trong 1 câu",
+      "suggestion": "Reword câu để tránh repetition"
+    },
+    {
+      "check": "H7_ngram_repetition",
+      "severity": "warning",
+      "evidence": "Bi-gram \"văn quân\" lặp 3x trong 1 câu",
+      "suggestion": "Reword câu để tránh repetition"
+    },
+    {
+      "check": "H7_ngram_repetition",
+      "severity": "warning",
+      "evidence": "Bi-gram \"vải bông\" lặp 3x trong 1 câu",
+      "suggestion": "Reword câu để tránh repetition"
+    },
+    {
+      "check": "H9_stop_consonant_tail",
+      "severity": "minor",
+      "evidence": "Word \"suốt\" xuất hiện 1x (BigVGAN tail risk)",
+      "suggestion": "trong suốt → lặng lẽ / mờ đục"
+    },
+    {
+      "check": "H9_stop_consonant_tail",
+      "severity": "minor",
+      "evidence": "Word \"khuất\" xuất hiện 3x (BigVGAN tail risk)",
+      "suggestion": "khuất bóng → khuất dần / mờ xa"
+    },
+    {
+      "check": "H9_stop_consonant_tail",
+      "severity": "minor",
+      "evidence": "Word \"biết\" xuất hiện 2x (BigVGAN tail risk)",
+      "suggestion": "chưa biết → vẫn chưa hay / vẫn chưa rõ"
+    },
+    {
+      "check": "H10_duration_above_preferred",
+      "severity": "minor",
+      "evidence": "18.6 phút (preferred 15-18p, max 20p)",
+      "suggestion": "OK acceptable nhưng listener có thể mệt"
+    }
+  ],
+  "issues_count_by_severity": {
+    "critical": 0,
+    "warning": 6,
+    "minor": 5
+  },
+  "verdict": "WARN",
+  "next_action": "Generator review issues, optional regen"
+}

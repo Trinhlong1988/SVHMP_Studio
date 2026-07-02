@@ -1,0 +1,34 @@
+# VNQA — Novel literary genre (văn học truyền thống)
+# Lock date: 2026-06-26 (template — chưa có project user)
+
+inherits: _base
+schema_version: 1
+genre_id: novel_literary
+purpose: "Vietnamese literary novel narration (Nguyễn Tuân / Nam Cao / Tô Hoài style)"
+project_examples: ["audiobook văn học VN", "đọc truyện đêm khuya"]
+
+thresholds:
+  adverb_ratio_max: 0.18        # văn học natural adverb cao
+  idiom_max_per_ep: 5           # văn học dùng idiom tự nhiên
+  sentence_len_max_words: 200   # long literary sentence OK (≥ horror 150 — R074 invariant)
+  token_repeat_min: 4
+  paragraph_uniformity_stddev_min_pct: 50  # văn học rất varied paragraph
+
+required_tone:
+  - literary
+  - descriptive
+  - rhythmic
+
+forbidden_tone:
+  - colloquial_slang_modern     # tránh slang hiện đại trong văn cổ
+  - technical_jargon
+
+word_density_overrides:
+  # Văn học allow rich vocabulary
+  rare_words_encouraged: true
+  metaphor_allowed_dense: true
+  similes_max_per_paragraph: 3  # "như" 3+ trong paragraph OK trong văn học
+
+cross_ref:
+  - Vietnamese literary corpus reference (Nguyễn Tuân, Nam Cao, Tô Hoài)
+  - vietnamese_story Hugging Face dataset

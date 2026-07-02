@@ -1,0 +1,186 @@
+# SVHMP — 16 SERIES KPI BIBLE (round 14 — Mr.Long docx v6 19/6 17:14)
+# Status: IMMUTABLE per series — Tăng theo ep range để AI biết "đang tốt hay tệ"
+# Loaded by: Publisher P8 KPI gate + P9 viewer funnel + P7 batch reporting
+
+version: 1.0
+lock_date: 2026-06-19 17:35
+purpose: |
+  Hiện Publisher chấm CTR/AVD/finish_rate/comments nhưng KHÔNG có target benchmarks.
+  AI cần biết: ep 5 CTR 4% là TỐT (early) vs ep 35 CTR 4% là TỆ (mid mature).
+
+# ============================================================
+# SERIES TARGETS PER EP RANGE (per Mr.Long docx v6)
+# ============================================================
+
+series_targets:
+
+  ep_1_10:                           # establish phase — kênh mới, target low
+    description: "Khán giả mới đến — phục vụ slow burn establishment"
+    ctr: 5%                          # impressions → click
+    finish_rate: 55%
+    avg_view_duration_s: 430         # 55% × 780s = 430s
+    like_ratio: 0.92
+    comments_per_1k_views: 8
+    subscribers_per_1k_impressions: 5
+    soul_metric_desired_ratio: 55%   # % top 20 comments là "desired" category
+
+  ep_11_30:                          # warm-up — viewer chuyển từ casual → fan
+    description: "Audience đang invested. Push depth + variety"
+    ctr: 6%
+    finish_rate: 60%
+    avg_view_duration_s: 470
+    like_ratio: 0.94
+    comments_per_1k_views: 12
+    subscribers_per_1k_impressions: 7
+    soul_metric_desired_ratio: 60%
+
+  ep_31_90:                          # mature — series locked, target high
+    description: "Audience là fan. Quality + uniqueness là everything"
+    ctr: 7%
+    finish_rate: 65%
+    avg_view_duration_s: 510
+    like_ratio: 0.95
+    comments_per_1k_views: 15
+    subscribers_per_1k_impressions: 8
+    soul_metric_desired_ratio: 65%
+
+# ============================================================
+# SPECIAL EP TARGETS (override default)
+# ============================================================
+
+special_ep_targets:
+
+  ep_73_PIVOT:
+    description: "Pivot reveal Nam — expected viral"
+    ctr: 9%                          # higher boost — fan ép share
+    finish_rate: 75%
+    avg_view_duration_s: 580
+    like_ratio: 0.97
+    comments_per_1k_views: 25        # PIVOT high engagement
+    subscribers_per_1k_impressions: 12
+    soul_metric_desired_ratio: 70%
+    extended_scrape_window_h: 72     # vs default 48h
+    soul_drift_threshold_anti: 5%    # stricter — PIVOT nhạy cảm
+
+  ep_90_FINALE:
+    description: "Series closure — closure peak"
+    ctr: 9%
+    finish_rate: 78%
+    avg_view_duration_s: 600
+    like_ratio: 0.97
+    comments_per_1k_views: 30
+    subscribers_per_1k_impressions: 10
+    soul_metric_desired_ratio: 72%
+    extended_scrape_window_h: 168    # 7 days
+    farewell_engagement_metrics: [end_card_clicks, playlist_completion, subscriber_retention_30d]
+
+# ============================================================
+# KPI DECISION GATES (Publisher P8 enforces)
+# ============================================================
+
+decision_gates:
+
+  per_ep_at_t_plus_48h:
+    if ctr < target_ctr × 0.7:
+      severity: major_alert
+      action: feed to auto_tuning → suggest title/thumbnail change next ep
+    if finish_rate < target_finish_rate × 0.8:
+      severity: critical_alert
+      action: feed to auto_tuning → suggest HOOK rework + cadence review
+    if soul_metric_desired_ratio < target × 0.7:
+      severity: critical_alert
+      action: feed to QA Lock → tighten content_score next ep
+    "if anti_soul_ratio > 10% (ep_73 stricter: 5%)":
+      severity: critical_alert
+      action: BLOCK next ep upload + escalate Mr.Long manual review
+
+  per_batch_at_10_ep:
+    if avg_ctr < target × 0.85:
+      severity: trend_drift
+      action: review last 10 title patterns + thumbnail strategy
+    if avg_finish_rate < target × 0.85:
+      severity: trend_drift
+      action: review cadence_map + retention_events density
+    if avg_desired_ratio < target × 0.85:
+      severity: soul_drift
+      action: review pillar distribution + REGRET LINE quality
+
+# ============================================================
+# VIEWER FUNNEL (per Mr.Long docx v6 — answer "Rớt ở đâu?")
+# ============================================================
+
+viewer_funnel:
+  stages:
+    1_impression:
+      metric: youtube_impressions
+      target_pass_rate_to_next: N/A (this is entry)
+
+    2_click:
+      metric: clicks
+      target_pass_rate: ctr (per ep range — 5/6/7%)
+      drop_indicator: "title/thumbnail mismatch hoặc clickbait perception"
+      auto_tuning_trigger: ctr < target × 0.7 → P2 title A/B + P5 thumbnail rotation
+
+    3_first_30_seconds:
+      metric: viewers_retained_at_30s / clicks
+      target_pass_rate: ≥85%
+      drop_indicator: "HOOK weak hoặc audio quality issue"
+      auto_tuning_trigger: pass_rate < 80% → tune_hook (Generator regen HOOK only)
+
+    4_midpoint:
+      metric: viewers_retained_at_50pct / clicks
+      target_pass_rate: ≥70%
+      drop_indicator: "SETUP/INCIDENT loãng"
+      auto_tuning_trigger: pass_rate < 65% → tune cadence_map INCIDENT section
+
+    5_beat_4:
+      metric: viewers_retained_at_beat_4_timestamp / clicks
+      target_pass_rate: ≥62%
+      drop_indicator: "REGRET LINE không land"
+      auto_tuning_trigger: pass_rate < 55% → tune_regret_line (QA + Generator review)
+
+    6_end:
+      metric: viewers_retained_at_end / clicks (= finish_rate)
+      target_pass_rate: per ep range (55/60/65%)
+      drop_indicator: "CLIFFHANGER weak hoặc đã đạt soul"
+
+    7_subscribe:
+      metric: subscribers_gained / clicks
+      target_pass_rate: ≥1.0% (≥0.7% S1, ≥1.0% S2, ≥1.2% S3)
+      drop_indicator: "end_screen template weak hoặc viewer chưa invested"
+
+    8_next_episode:
+      metric: next_ep_clicks / current_ep_views
+      target_pass_rate: ≥45%
+      drop_indicator: "next ep title weak hoặc viewer mệt"
+
+# ============================================================
+# CROSS-MODULE QUERY
+# ============================================================
+
+publisher_p8_kpi_gate:
+  load: this file + analytics_48h.yaml + comment_classification.yaml
+  compute: actual_metrics vs target per ep range
+  output: kpi_decision.yaml → PASS / TUNE / ALERT
+  feed_to: auto_tuning_suggestions
+
+publisher_p9_viewer_funnel:
+  load: this file + analytics_48h.drop_off_curve
+  compute: 8-stage funnel pass rates
+  output: viewer_funnel_report.yaml + html viz
+  identify: lowest pass rate stage = priority fix area
+
+publisher_p7_batch_reporting:
+  load: this file + 10 ep aggregate
+  compute: avg vs target per batch
+  output: batch_report.yaml.kpi_section
+
+generator_feedback:
+  if HOOK weak (stage 3 fail): tune_hook
+  if cadence weak (stage 4 fail): tune_cadence_map
+  if REGRET LINE weak (stage 5 fail): tune_regret_line
+
+freeze_decision_at_batch_3 (ep 30):
+  require: all 3 batches PASS target for v10.1-FINAL freeze
+  if 1 batch below: extend tuning to batch_4 before freeze
+  if 2+ batches below: pause series, deep Mr.Long review

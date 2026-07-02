@@ -1,0 +1,33 @@
+domain: audio_render
+tier: 4
+owner: UNASSIGNED
+promotion_status: locked
+source_of_truth:
+- tools/svhmp_v13_render.py
+data_contract:
+  input: spec json + prompt wav
+  output: wav 22050/16bit + [QA] report
+  exit: 0/1
+files:
+- tools/ab_test_tail_trim_v1_vs_v2.py
+- tools/apply_pause_variation.py
+- tools/audio_pre_ship_gate.py
+- tools/build_mix_command.py
+- tools/cleanup_vary_artifacts.py
+- tools/gen_sfx_audioldm2.py
+- tools/hook_swell_aligner.py
+- tools/music_loop.py
+- tools/patch_audio_chunk.py
+- tools/post_render_gate.py
+- tools/post_rotate_verify.py
+- tools/pre_render_checklist.py
+- tools/pre_verify_word_ending.py
+- tools/render_chunk.py
+- tools/render_progress_hook.py
+- tools/render_section.py
+- tools/sfx_acquire.py
+- tools/spec_chunk_emo_override.py
+- tools/tts_adapter_pre_render.py
+- tools/vary_bell_entry.py
+- tools/vary_templates.py
+file_count: 21

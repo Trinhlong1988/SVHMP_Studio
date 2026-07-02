@@ -1,0 +1,51 @@
+ep_number: 31
+must_read:
+- file: bible/00_constitution.yaml
+  exists: true
+- file: bible/09_emotion_intensity.yaml
+  exists: true
+- file: bible/11_regret_catalog.yaml
+  exists: true
+- file: bible/12_object_library.yaml
+  exists: true
+- file: bible/13_setting_library.yaml
+  exists: true
+- file: bible/21_series_arc_design.yaml
+  exists: true
+- file: prompts/ep_scaffold_template.md
+  exists: true
+- file: BUGS_FIXED.md
+  exists: true
+arc_lookups:
+  pillar: family
+  intensity_level: 0.7
+  memory_fragment: M7
+  memory_text: Khải Phong nhớ ngày Hạ Vy mất (12 tháng 4)
+  cliffhanger_hint: Đêm thứ N — Khải Phong nhớ tháng tư
+  callback: null
+  milestone: false
+  object_sub_arc:
+    range: ep_31_to_40
+    sub_arc_type: geographic_arc
+    target_route: vật mang dấu Hà Nội nội thành
+    eps_with_marker:
+    - 33
+    - 37
+    - 40
+    reveal_ep: 40
+    reveal_moment: Khải Phong xếp 40 items theo bản đồ → thấy bắt đầu khu Long Biên
+hard_constraints:
+  word_count_target_min: 2200
+  word_count_target_max: 2500
+  word_count_hard_floor: 2000
+  word_count_hard_ceiling: 2700
+  duration_min_minutes: 13
+  bell_count_max: 1
+  ghost_manifest_max: 1
+  driver_lines_max: 2
+  intro_required: true
+  name_rename_required:
+    Hà: Hạ Vy (selective)
+    Quang: Khải Phong (full)
+  aftertaste: unresolved
+pre_write_status: PENDING

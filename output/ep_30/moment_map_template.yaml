@@ -1,0 +1,83 @@
+ep: 30
+note: TEMPLATE — Mr.Long pick moments từ episode.md per R_AUDIO_02 viewer empathy
+ambient_bed:
+  rain_light:
+    volume_db: -22
+    fade_in_ms: 1500
+    loop: true
+  bus_engine:
+    volume_db: -27
+    fade_in_ms: 1500
+    loop: true
+  wet_road:
+    volume_db: -28
+    loop: true
+    when: xe đang chạy
+section_default_picks:
+  HOOK:
+    id: pxb_349862
+    file: hdk_styled_piano\hdk_piano_349862_horror-scene-suspense-tense-background-m.wav
+    title: Suspense Tense Background Music | Royalty-free Music
+    bpm: 99.4
+    key: F# minor
+    duration_sec: 60.0
+    source: pixabay_fallback
+  SETUP:
+    id: pxb_262413
+    file: hdk_styled_piano\hdk_piano_262413_modern-classical-cinematic-sad-piano-dra.wav
+    title: Cinematic Sad Piano (Dramatic Piano) | Royalty-free Music
+    bpm: 99.4
+    key: A minor
+    duration_sec: 60.0
+    source: pixabay_fallback
+  INCIDENT:
+    id: pxb_531687
+    file: hdk_styled_piano\hdk_piano_531687_crime-scene-trapped.wav
+    title: Trapped | Royalty-free Music
+    bpm: 66.3
+    key: F# Major
+    duration_sec: 60.0
+    source: pixabay_fallback
+  REVEAL:
+    id: pxb_143426
+    file: hdk_styled_piano\hdk_piano_143426_scary-childrens-tunes-18012502-piano-pra.wav
+    title: 18012502 - piano / prank / mischeif / ghost / trick / strang
+    bpm: 95.7
+    key: G# minor
+    duration_sec: 60.0
+    source: pixabay_fallback
+  PAYOFF:
+    id: pxb_483771
+    file: hdk_styled_piano\hdk_piano_483771_solo-piano-emotional-piano-3.wav
+    title: Emotional Piano 3 | Royalty-free Music
+    bpm: 71.8
+    key: F minor
+    duration_sec: 60.0
+    source: pixabay_fallback
+  CLIFFHANGER:
+    id: pxb_512251
+    file: hdk_styled_piano\hdk_piano_512251_solo-piano-reflective-piano.wav
+    title: Reflective Piano | Royalty-free Music
+    bpm: 80.7
+    key: C# minor
+    duration_sec: 60.0
+    source: pixabay_fallback
+moments:
+- line_range: L120-130
+  section: HOOK
+  text_quote: 'TODO: Mr.Long paste câu'
+  emotion_label: 'TODO: setup/tension/death_announce/memory_of_dead/haunting/regret/farewell'
+  music_pick: 'TODO: HDK_MYSTERY_seed42 hoặc HDK_SAD_seed123 etc'
+  music_category: 'TODO: HDK_MYSTERY/HDK_SAD/HDK_REVEAL/HDK_TENSION/HDK_ENDING'
+  dB_level: -20
+  transition_type: cross_fade_3s
+  impact_moment: false
+  mute_window: null
+  special_treatment: null
+_schema_required_per_moment:
+- line_range
+- emotion_label
+- music_pick
+- dB_level
+- transition_type
+_per_R_AUDIO_02: min 15 moments per EP, sub-pick per moment NOT 1 track sustained

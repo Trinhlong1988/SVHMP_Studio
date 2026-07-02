@@ -1,0 +1,11 @@
+{
+  "wav": "D:\\DỰ ÁN AI\\GIỌNG ĐỌC\\DỰ ÁN TRUYỆN MA\\SVHMP_Studio\\output\\ep_01\\sections\\hook.wav",
+  "spec": "D:\\DỰ ÁN AI\\GIỌNG ĐỌC\\DỰ ÁN TRUYỆN MA\\SVHMP_Studio\\output\\ep_01\\sections\\spec_hook.json",
+  "model": "small",
+  "ref_words": 432,
+  "hyp_words": 446,
+  "overall_wer_pct": 20.6,
+  "similarity_pct": 79.4,
+  "threshold_pct": 20.0,
+  "verdict": "FAIL"
+}

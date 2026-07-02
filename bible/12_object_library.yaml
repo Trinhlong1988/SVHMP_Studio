@@ -1,0 +1,832 @@
+# SVHMP — 12 OBJECT LIBRARY (round 13 — Mr.Long docx v5 19/6 15:22)
+# Status: IMMUTABLE per series
+# Loaded by: Generator (object selection) / QA Lock (novelty + uniqueness scoring) / Video Director (object_close render asset)
+# Mục tiêu: viewer nhớ "tập cái áo len" hơn "tập 27". Object = vehicle of regret.
+
+version: 1.0
+lock_date: 2026-06-19 15:30
+purpose: |
+  Mỗi object có metadata pairable_archetypes + emotional_value + used_count + last_used_ep.
+  Generator pick object phù hợp pillar/archetype/regret. QA verify novelty distance.
+  Video Director render object_close visual asset.
+
+# ============================================================
+# CORE OBJECT LIBRARY (40 vật — cover 90 ep với distance 10)
+# ============================================================
+# 40 object × distance 10 = 400 capacity ≥ 90 ep ✓ (cushion 4.4x)
+
+object_library:
+
+  # ───────────── CLOTHING (~10 objects) ─────────────
+
+  OBJ_AO_LEN_NAU:
+    display_name: "chiếc áo len màu nâu chưa đan xong"
+    category: clothing
+    emotional_value: 0.92            # 0-1, cao = dễ ăn (Mr.Long pattern classic)
+    pairable_archetypes: [ARCH_01_me_doi_con, ARCH_08_ba_co_don]
+    pairable_pillars: [family_regret]
+    pairable_regret_archetypes: [unfinished_gift, last_meal_together]
+    pairable_relationships: [mother, grandmother]
+    pairable_settings: [setting_mua_nho, setting_dem_giao_thua, setting_can_tet]
+    used_count: 0
+    last_used_ep: null
+    notes: "Mẹ/bà đan dở. Beat_4: 'Tôi không đan kịp.'"
+
+  OBJ_AO_GIO_XANH:
+    display_name: "áo gió xanh nhạt"
+    category: clothing
+    emotional_value: 0.78
+    pairable_archetypes: [ARCH_03_vo_tre, ARCH_04_gai_18, ARCH_12_yeu_xa]
+    pairable_pillars: [love_regret, family_regret]
+    pairable_regret_archetypes: [unspoken_love, missed_call]
+    pairable_relationships: [lover, spouse, sibling]
+    pairable_settings: [setting_dem_thang_tu_HN, setting_dem_mua]
+    used_count: 1                    # ep_01 (Hà callback)
+    last_used_ep: 1
+    notes: "Có thể là vật mặc, hoặc gói/cất. Ep_01 dùng cho cô gái áo gió xanh = Hà callback."
+
+  OBJ_KHAN_TAY_CU:
+    display_name: "chiếc khăn tay cũ thêu hoa"
+    category: clothing
+    emotional_value: 0.75
+    pairable_archetypes: [ARCH_01_me_doi_con, ARCH_05_linh_gia, ARCH_08_ba_co_don]
+    pairable_pillars: [family_regret, promise_regret]
+    pairable_regret_archetypes: [unfinished_gift, returned_too_late]
+    pairable_relationships: [mother, grandmother, lover]
+    used_count: 0
+    last_used_ep: null
+
+  OBJ_AO_DAI_TRANG:
+    display_name: "áo dài trắng tốt nghiệp"
+    category: clothing
+    emotional_value: 0.80
+    pairable_archetypes: [ARCH_04_gai_18, ARCH_10_co_giao_lang]
+    pairable_pillars: [family_regret, self_regret]
+    pairable_regret_archetypes: [missed_graduation]
+    pairable_relationships: [father, mother, teacher]
+    used_count: 0
+    last_used_ep: null
+
+  OBJ_GIAY_BUOC_DAY:
+    display_name: "đôi giày buộc dây kiểu cũ"
+    category: clothing
+    emotional_value: 0.65
+    pairable_archetypes: [ARCH_02_cha_cam_lang, ARCH_05_linh_gia]
+    pairable_pillars: [family_regret, kindness_regret]
+    pairable_regret_archetypes: [never_visited_again, broken_promise]
+    pairable_relationships: [father, friend]
+    used_count: 0
+    last_used_ep: null
+
+  # ───────────── TIMEKEEPING (~5 objects) ─────────────
+
+  OBJ_DONG_HO_XA_CU:
+    display_name: "đồng hồ nữ vỏ xà cừ"
+    category: timekeeping
+    emotional_value: 0.95            # cao nhất series — Mr.Long pattern key
+    pairable_archetypes: [ARCH_12_yeu_xa, ARCH_03_vo_tre]
+    pairable_pillars: [love_regret, promise_regret]
+    pairable_regret_archetypes: [unspoken_love, broken_promise]
+    pairable_relationships: [lover, spouse]
+    pairable_settings: [setting_san_bay, setting_dem_thang_tu_HN]
+    used_count: 1                    # ep_01 (Khải Phong→cô gái áo gió xanh)
+    last_used_ep: 1
+    notes: "Kim dừng đúng giờ người đó mất. ARC_0001 carry."
+
+  OBJ_DONG_HO_DEO_TAY_CU:
+    display_name: "chiếc đồng hồ đeo tay cũ kim mạ vàng"
+    category: timekeeping
+    emotional_value: 0.85
+    pairable_archetypes: [ARCH_02_cha_cam_lang, ARCH_05_linh_gia]
+    pairable_pillars: [family_regret, kindness_regret]
+    pairable_regret_archetypes: [unsaid_apology, never_visited_again]
+    pairable_relationships: [father, grandfather]
+    used_count: 0
+    last_used_ep: null
+    notes: "Khác OBJ_DONG_HO_XA_CU: male design, kim chạy/dừng khác giờ"
+
+  OBJ_LICH_TREO_TUONG:
+    display_name: "tờ lịch giấy treo tường ngày cuối tháng"
+    category: timekeeping
+    emotional_value: 0.55
+    pairable_archetypes: [ARCH_01_me_doi_con, ARCH_08_ba_co_don]
+    pairable_pillars: [promise_regret, family_regret]
+    pairable_regret_archetypes: [forgotten_birthday, promised_trip]
+    pairable_relationships: [mother, child]
+    used_count: 0
+    last_used_ep: null
+
+  # ───────────── DOCUMENTS (~6 objects) ─────────────
+
+  OBJ_LA_THU_CHUA_GUI:
+    display_name: "lá thư viết tay chưa kịp gửi"
+    category: document
+    emotional_value: 0.88
+    pairable_archetypes: [ARCH_03_vo_tre, ARCH_12_yeu_xa, ARCH_05_linh_gia]
+    pairable_pillars: [love_regret, family_regret, kindness_regret]
+    pairable_regret_archetypes: [unread_letter, unspoken_love]
+    pairable_relationships: [lover, spouse, friend, mother]
+    used_count: 0
+    last_used_ep: null
+
+  OBJ_VE_TAU_KHU_HOI:
+    display_name: "tờ vé tàu khứ hồi chưa dùng"
+    category: document
+    emotional_value: 0.72
+    pairable_archetypes: [ARCH_09_con_roi_nha, ARCH_07_chong_di_xa]
+    pairable_pillars: [promise_regret]
+    pairable_regret_archetypes: [promised_trip, returned_too_late]
+    pairable_relationships: [father, mother, lover]
+    used_count: 0
+    last_used_ep: null
+
+  OBJ_CUON_SO_NHO:
+    display_name: "cuốn sổ tay bìa da nâu"
+    category: document
+    emotional_value: 0.78
+    pairable_archetypes: [ARCH_04_gai_18, ARCH_10_co_giao_lang]
+    pairable_pillars: [self_regret, kindness_regret]
+    pairable_regret_archetypes: [unsaid_apology, ignored_message]
+    pairable_relationships: [teacher, classmate, sibling]
+    used_count: 0
+    last_used_ep: null
+
+  OBJ_THE_HOC_SINH:
+    display_name: "thẻ học sinh cấp ba ép nhựa cũ"
+    category: document
+    emotional_value: 0.65
+    pairable_archetypes: [ARCH_04_gai_18]
+    pairable_pillars: [self_regret, family_regret]
+    pairable_regret_archetypes: [missed_graduation, unsaid_apology]
+    pairable_relationships: [father, mother, teacher]
+    used_count: 0
+    last_used_ep: null
+
+  OBJ_ANH_CUOI_GAP_TU:
+    display_name: "ảnh cưới gấp tư trong ví"
+    category: document
+    emotional_value: 0.82
+    pairable_archetypes: [ARCH_03_vo_tre, ARCH_07_chong_di_xa]
+    pairable_pillars: [love_regret, family_regret]
+    pairable_regret_archetypes: [unfinished_photo, last_meal_together]
+    pairable_relationships: [spouse]
+    used_count: 0
+    last_used_ep: null
+
+  # ───────────── PERSONAL ITEMS (~6 objects) ─────────────
+
+  OBJ_NHAN_CUOI:
+    display_name: "nhẫn cưới cất trong hộp"
+    category: personal
+    emotional_value: 0.85
+    pairable_archetypes: [ARCH_03_vo_tre, ARCH_12_yeu_xa]
+    pairable_pillars: [love_regret]
+    pairable_regret_archetypes: [unspoken_love, broken_promise]
+    pairable_relationships: [lover, spouse]
+    used_count: 0
+    last_used_ep: null
+
+  OBJ_DAY_CHUYEN_CA:
+    display_name: "sợi dây chuyền hình con cá nhỏ"
+    category: personal
+    emotional_value: 0.72
+    pairable_archetypes: [ARCH_06_ban_hang_dem, ARCH_03_vo_tre]
+    pairable_pillars: [love_regret, family_regret]
+    pairable_regret_archetypes: [unfinished_gift, returned_too_late]
+    pairable_relationships: [spouse, child]
+    used_count: 0
+    last_used_ep: null
+
+  OBJ_KEP_TOC_NHO:
+    display_name: "chiếc kẹp tóc nhỏ màu đỏ"
+    category: personal
+    emotional_value: 0.62
+    pairable_archetypes: [ARCH_04_gai_18, ARCH_06_ban_hang_dem]
+    pairable_pillars: [love_regret, family_regret]
+    pairable_regret_archetypes: [unfinished_gift, forgotten_birthday]
+    pairable_relationships: [child, sibling, classmate]
+    used_count: 0
+    last_used_ep: null
+
+  OBJ_VI_DA_CU:
+    display_name: "ví da nâu đã sờn"
+    category: personal
+    emotional_value: 0.68
+    pairable_archetypes: [ARCH_02_cha_cam_lang, ARCH_07_chong_di_xa]
+    pairable_pillars: [family_regret, self_regret]
+    pairable_regret_archetypes: [missed_funeral, returned_too_late]
+    pairable_relationships: [father, child]
+    used_count: 0
+    last_used_ep: null
+
+  OBJ_BUT_BI_DO:
+    display_name: "cây bút bi đỏ chấm bài"
+    category: personal
+    emotional_value: 0.55
+    pairable_archetypes: [ARCH_10_co_giao_lang]
+    pairable_pillars: [kindness_regret]
+    pairable_regret_archetypes: [unsaid_apology, never_visited_again]
+    pairable_relationships: [teacher, classmate]
+    used_count: 0
+    last_used_ep: null
+
+  # ───────────── HOUSEHOLD (~6 objects) ─────────────
+
+  OBJ_HOP_CO_NHO:
+    display_name: "hộp cơm nhôm vợ gói buổi sáng"
+    category: household
+    emotional_value: 0.90
+    pairable_archetypes: [ARCH_07_chong_di_xa, ARCH_02_cha_cam_lang]
+    pairable_pillars: [family_regret, love_regret]
+    pairable_regret_archetypes: [last_meal_together]
+    pairable_relationships: [spouse]
+    used_count: 0
+    last_used_ep: null
+
+  OBJ_BAT_CANH_CHUA:
+    display_name: "bát canh chua mẹ nấu chưa kịp ăn"
+    category: household
+    emotional_value: 0.88
+    pairable_archetypes: [ARCH_01_me_doi_con, ARCH_08_ba_co_don]
+    pairable_pillars: [family_regret]
+    pairable_regret_archetypes: [last_meal_together, forgotten_recipe]
+    pairable_relationships: [mother, grandmother]
+    used_count: 0
+    last_used_ep: null
+
+  OBJ_CHIEC_RADIO_NHO:
+    display_name: "chiếc radio nhỏ pin yếu"
+    category: household
+    emotional_value: 0.70
+    pairable_archetypes: [ARCH_05_linh_gia, ARCH_02_cha_cam_lang]
+    pairable_pillars: [self_regret, family_regret]
+    pairable_regret_archetypes: [never_visited_again, forgotten_recipe]
+    pairable_relationships: [father, grandfather]
+    used_count: 1                    # ep_01 ông cụ ghế 3 (mention)
+    last_used_ep: 1
+    notes: "Có thể bật/không. Mention ep_01 PAS_0001."
+
+  OBJ_CHIA_KHOA_NHA:
+    display_name: "chùm chìa khóa nhà cửa rỉ"
+    category: household
+    emotional_value: 0.65
+    pairable_archetypes: [ARCH_02_cha_cam_lang, ARCH_08_ba_co_don]
+    pairable_pillars: [family_regret]
+    pairable_regret_archetypes: [returned_too_late, never_visited_again]
+    pairable_relationships: [father, grandfather, mother]
+    used_count: 0
+    last_used_ep: null
+
+  OBJ_NHANG_THAP_DO:
+    display_name: "que nhang thắp dở trên bàn thờ"
+    category: household
+    emotional_value: 0.85
+    pairable_archetypes: [ARCH_01_me_doi_con, ARCH_05_linh_gia]
+    pairable_pillars: [family_regret, kindness_regret]
+    pairable_regret_archetypes: [missed_funeral, never_visited_again]
+    pairable_relationships: [mother, father, grandmother]
+    used_count: 0
+    last_used_ep: null
+
+  # ───────────── COMMUNICATION (~5 objects) ─────────────
+
+  OBJ_DIEN_THOAI_NOKIA:
+    display_name: "điện thoại Nokia cũ pin yếu màn hình xanh"
+    category: communication
+    emotional_value: 0.92
+    pairable_archetypes: [ARCH_01_me_doi_con, ARCH_08_ba_co_don, ARCH_09_con_roi_nha]
+    pairable_pillars: [family_regret]
+    pairable_regret_archetypes: [missed_call, ignored_message]
+    pairable_relationships: [mother, child, father]
+    used_count: 0
+    last_used_ep: null
+    notes: "Cliffhanger pattern F: màn hình hiện 'Mẹ đang gọi'"
+
+  OBJ_TIN_NHAN_GIAY:
+    display_name: "mẩu giấy ghi vội số điện thoại"
+    category: communication
+    emotional_value: 0.60
+    pairable_archetypes: [ARCH_06_ban_hang_dem, ARCH_11_ban_ve_so]
+    pairable_pillars: [kindness_regret]
+    pairable_regret_archetypes: [unsaid_apology, never_visited_again]
+    pairable_relationships: [stranger_kind, friend]
+    used_count: 0
+    last_used_ep: null
+
+  OBJ_BANG_CASSETTE:
+    display_name: "cuộn băng cassette ghi giọng mẹ"
+    category: communication
+    emotional_value: 0.88
+    pairable_archetypes: [ARCH_01_me_doi_con, ARCH_09_con_roi_nha]
+    pairable_pillars: [family_regret]
+    pairable_regret_archetypes: [unsent_voice_message, last_meal_together]
+    pairable_relationships: [mother, grandmother]
+    used_count: 0
+    last_used_ep: null
+
+  # ───────────── PROFESSIONAL (~4 objects) ─────────────
+
+  OBJ_CAP_DA_NAU:
+    display_name: "cặp da nâu cũ quai sờn"
+    category: professional
+    emotional_value: 0.70
+    pairable_archetypes: [ARCH_07_chong_di_xa, ARCH_02_cha_cam_lang]
+    pairable_pillars: [family_regret, self_regret]
+    pairable_regret_archetypes: [missed_graduation, broken_promise]
+    pairable_relationships: [father, child]
+    used_count: 0
+    last_used_ep: null
+
+  OBJ_HUY_CHUONG_CHIEN_BINH:
+    display_name: "huy chương cựu chiến binh trong hộp"
+    category: professional
+    emotional_value: 0.75
+    pairable_archetypes: [ARCH_05_linh_gia]
+    pairable_pillars: [kindness_regret, promise_regret]
+    pairable_regret_archetypes: [never_visited_again, broken_promise]
+    pairable_relationships: [friend, benefactor]
+    used_count: 0
+    last_used_ep: null
+
+  OBJ_XAP_VE_SO:
+    display_name: "xấp vé số chưa bán hết"
+    category: professional
+    emotional_value: 0.68
+    pairable_archetypes: [ARCH_11_ban_ve_so]
+    pairable_pillars: [kindness_regret, self_regret]
+    pairable_regret_archetypes: [unfinished_gift, missed_funeral]
+    pairable_relationships: [child, grandchild, stranger_kind]
+    used_count: 0
+    last_used_ep: null
+
+  OBJ_BANG_GHI_NO:
+    display_name: "cuốn sổ ghi nợ tạp hóa nhàu"
+    category: professional
+    emotional_value: 0.65
+    pairable_archetypes: [ARCH_06_ban_hang_dem]
+    pairable_pillars: [kindness_regret, self_regret]
+    pairable_regret_archetypes: [forgotten_birthday, never_visited_again]
+    pairable_relationships: [neighbor, friend]
+    used_count: 0
+    last_used_ep: null
+
+  # ───────────── SEASONAL / SPECIAL (~4 objects — Tết/Vu Lan/giao thừa) ─────────────
+
+  OBJ_LI_XI_DO:
+    display_name: "phong bì lì xì màu đỏ chưa kịp trao"
+    category: seasonal_tet
+    emotional_value: 0.82
+    pairable_archetypes: [ARCH_01_me_doi_con, ARCH_07_chong_di_xa]
+    pairable_pillars: [family_regret, promise_regret]
+    pairable_regret_archetypes: [unfinished_gift, promised_trip]
+    pairable_relationships: [child, grandchild]
+    pairable_settings: [setting_can_tet, setting_dem_giao_thua]
+    used_count: 0
+    last_used_ep: null
+    notes: "Use chỉ ep cận Tết (ep 25-30 và 85-90 phase Tết special)"
+
+  OBJ_BANH_CHUNG_GOI_DO:
+    display_name: "đòn bánh chưng gói dở chưa luộc"
+    category: seasonal_tet
+    emotional_value: 0.78
+    pairable_archetypes: [ARCH_08_ba_co_don, ARCH_01_me_doi_con]
+    pairable_pillars: [family_regret]
+    pairable_regret_archetypes: [last_meal_together, returned_too_late]
+    pairable_relationships: [mother, grandmother]
+    pairable_settings: [setting_can_tet, setting_dem_giao_thua]
+    used_count: 0
+    last_used_ep: null
+
+  OBJ_VANG_MA_GAP_DO:
+    display_name: "xấp vàng mã gấp dở chưa đốt"
+    category: seasonal_vulan
+    emotional_value: 0.85
+    pairable_archetypes: [ARCH_08_ba_co_don, ARCH_05_linh_gia]
+    pairable_pillars: [family_regret, kindness_regret]
+    pairable_regret_archetypes: [missed_funeral, never_visited_again]
+    pairable_relationships: [grandmother, grandfather, benefactor]
+    pairable_settings: [setting_ram_thang_bay, setting_ban_tho]
+    used_count: 0
+    last_used_ep: null
+
+  OBJ_BO_QUAN_AO_CUOI:
+    display_name: "bộ quần áo cưới còn nguyên trong tủ"
+    category: seasonal_wedding
+    emotional_value: 0.80
+    pairable_archetypes: [ARCH_03_vo_tre, ARCH_12_yeu_xa]
+    pairable_pillars: [love_regret]
+    pairable_regret_archetypes: [missed_wedding, broken_promise]
+    pairable_relationships: [lover, spouse]
+    used_count: 0
+    last_used_ep: null
+
+
+  # ============================================================
+  # ROUND 3 EXTENSION (2026-06-23) — 37 OBJ added for 11_regret_catalog R71-R91 fix
+  # ============================================================
+
+  OBJ_AM_TRA_NHOM:
+    display_name: "ấm trà nhôm cũ"
+    category: household
+    emotional_value: 0.65
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['kindness_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_ANH_CHUP_CHUNG:
+    display_name: "tấm ảnh chụp chung đã ngả vàng"
+    category: memorabilia
+    emotional_value: 0.82
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['love_regret', 'self_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_AO_MUA_CU:
+    display_name: "áo mưa cũ rách vai"
+    category: clothing
+    emotional_value: 0.62
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['kindness_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_BAN_DO_GIAY:
+    display_name: "bản đồ giấy gấp tư"
+    category: document
+    emotional_value: 0.58
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['kindness_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_BUC_TRANH_DANG_DO:
+    display_name: "bức tranh dang dở chưa kịp ký tên"
+    category: memorabilia
+    emotional_value: 0.85
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['self_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_BUT_MAY_CHA:
+    display_name: "bút máy cũ của cha"
+    category: memorabilia
+    emotional_value: 0.84
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['family_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_DANH_BA_GHI_TAY:
+    display_name: "danh bạ điện thoại ghi tay"
+    category: document
+    emotional_value: 0.7
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['promise_regret', 'kindness_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_DAO_NHA_BEP:
+    display_name: "con dao nhà bếp mòn lưỡi"
+    category: household
+    emotional_value: 0.72
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['family_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_DON_THUOC_GIAU:
+    display_name: "đơn thuốc giấu trong ngăn kéo"
+    category: medical
+    emotional_value: 0.8
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['self_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_GAU_BONG:
+    display_name: "gấu bông cũ một mắt"
+    category: memorabilia
+    emotional_value: 0.78
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['promise_regret', 'family_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_GAY_TRUC:
+    display_name: "gậy trúc của ông"
+    category: memorabilia
+    emotional_value: 0.76
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['family_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_GHE_DAU:
+    display_name: "ghế đẩu gỗ nhỏ"
+    category: household
+    emotional_value: 0.55
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['kindness_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_HOP_MAU_VE_CU:
+    display_name: "hộp màu vẽ cũ chưa mở"
+    category: memorabilia
+    emotional_value: 0.83
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['self_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_HOP_QUA_CHUA_TANG:
+    display_name: "hộp quà chưa kịp tặng"
+    category: memorabilia
+    emotional_value: 0.81
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['kindness_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_HOP_THU_CU:
+    display_name: "hộp thư cũ bằng gỗ"
+    category: memorabilia
+    emotional_value: 0.79
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['love_regret', 'kindness_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_HUY_CHUONG_VANG:
+    display_name: "huy chương vàng phai màu"
+    category: memorabilia
+    emotional_value: 0.74
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['self_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_KEM_LO_BAT_CO_DON:
+    display_name: "kèm lò bát cô đơn cuối hẻm"
+    category: household
+    emotional_value: 0.66
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['self_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_KINH_CU:
+    display_name: "cặp kính đọc cũ một bên xước"
+    category: memorabilia
+    emotional_value: 0.71
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['family_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_KINH_LAO:
+    display_name: "kính lão gọng vàng"
+    category: memorabilia
+    emotional_value: 0.73
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['family_regret', 'love_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_LICH_HEN_KHONG_DI:
+    display_name: "lịch hẹn bệnh viện không đi"
+    category: medical
+    emotional_value: 0.77
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['self_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_NOI_DAT_CU:
+    display_name: "nồi đất kho cá cũ"
+    category: household
+    emotional_value: 0.79
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['family_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_NON_BAO_HIEM_CU:
+    display_name: "nón bảo hiểm cũ móp một bên"
+    category: memorabilia
+    emotional_value: 0.64
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['kindness_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_PHAN_TRANG:
+    display_name: "viên phấn trắng cuối"
+    category: memorabilia
+    emotional_value: 0.75
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['kindness_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_QUAN_AO_TRE_SO_SINH:
+    display_name: "quần áo trẻ sơ sinh chưa mặc"
+    category: clothing
+    emotional_value: 0.88
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['love_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_QUYEN_SACH_GIAO_KHOA_CU:
+    display_name: "quyển sách giáo khoa cũ"
+    category: memorabilia
+    emotional_value: 0.69
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['kindness_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_RADIO_CU:
+    display_name: "chiếc radio cũ vỏ nhựa ngả vàng"
+    category: memorabilia
+    emotional_value: 0.8
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['family_regret', 'promise_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_SO_GHI_CHEP:
+    display_name: "sổ ghi chép viết tay của cha"
+    category: memorabilia
+    emotional_value: 0.82
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['family_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_THE_BHYT_HET_HAN:
+    display_name: "thẻ bảo hiểm y tế hết hạn"
+    category: medical
+    emotional_value: 0.68
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['promise_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_THE_NHAN_VIEN:
+    display_name: "thẻ nhân viên cũ đã nghỉ việc"
+    category: document
+    emotional_value: 0.6
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['kindness_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_THU_CHIA_TAY:
+    display_name: "thư chia tay chưa gửi"
+    category: document
+    emotional_value: 0.85
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['love_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_THU_CHUA_GUI:
+    display_name: "thư tay chưa kịp gửi"
+    category: document
+    emotional_value: 0.86
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['self_regret', 'love_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_THU_TAY:
+    display_name: "thư tay nét chữ run"
+    category: document
+    emotional_value: 0.83
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['family_regret', 'love_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_TIEN_LE_GIAY:
+    display_name: "tiền lẻ bằng giấy bạc cũ"
+    category: memorabilia
+    emotional_value: 0.62
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['kindness_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_TOA_THUOC_CU:
+    display_name: "toa thuốc cũ ngả vàng"
+    category: medical
+    emotional_value: 0.71
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['promise_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_VAY_CUOI_TRANG:
+    display_name: "váy cưới trắng chưa kịp mặc"
+    category: clothing
+    emotional_value: 0.89
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['promise_regret', 'love_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_VE_CONG_VIEN:
+    display_name: "vé công viên chưa kịp dùng"
+    category: memorabilia
+    emotional_value: 0.75
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['promise_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+  OBJ_VONG_TAY:
+    display_name: "vòng tay bạc khắc tên trẻ"
+    category: memorabilia
+    emotional_value: 0.87
+    pairable_archetypes: []   # TODO populate khi Director chọn
+    pairable_pillars: ['love_regret', 'family_regret']
+    used_count: 0
+    last_used_ep: null
+    added_in: round_3_extension_20260623
+
+# ============================================================
+# USAGE RULES
+# ============================================================
+
+selection_rules:
+  - Generator pre-write: load object_library + state.object_history (last 15 ep)
+  - filter: object NOT in last_used within same_object_distance (10 ep per bible/08)
+  - pair: chosen object MUST be in pairable_pillars + pairable_archetypes intersect
+  - pick: prefer highest emotional_value × novelty_score
+  - update: after ep ship, increment used_count + set last_used_ep + state.object_history
+
+emotional_value_distribution_per_season:
+  season_1 (ep 1-30): avg emotional_value 0.65-0.80 (warm establishing)
+  season_2 (ep 31-60): avg 0.75-0.90 (depth increase)
+  season_3 (ep 61-90): avg 0.85-0.95 (climax — high impact objects)
+
+forbidden_objects:
+  - vũ khí (dao, súng, gậy) — soul drift
+  - máu / xác / quan tài chi tiết
+  - drugs / rượu (chỉ context, không object central)
+  - sex toys / lingerie chi tiết
+  - tài sản giá trị cao (xe hơi, vàng miếng) — không relatable middle class
+
+video_render_pairing:
+  - Mỗi OBJ_ có corresponding render prompt template (V4 asset_registry)
+  - Color palette match brand: warm wood / faded fabric / dim metal
+  - Lighting: rim light từ lamp_v01 (warm yellow)
+  - DOF: f/2.0 background blur
+
+cross_module_query:
+  generator: pick object → ghi vào episode.md INCIDENT section
+  qa_lock: PHASE 12.4 (regret) + 12.5 (relationship) cross-check pairable
+  video_director: V4 asset_registry includes object_one_shot from this library
+  publisher: P3 description tease có thể quote object name
+  novelty_hash (bible/08 round 13 upgrade): object as 1 of 7 hash dimensions

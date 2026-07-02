@@ -1,0 +1,78 @@
+Quang đứng dậy. [pause:1200ms]
+
+Anh chậm — Như có ai đỡ vai anh từ phía sau. [pause:800ms]
+
+[emph:whisper] Anh ôm chiếc đồng hồ trong lòng bàn tay, rồi khẽ không khóc, trước khi chỉ nhìn ra cửa xe. [pause:800ms]
+
+Đèn vàng le lói — Cách xe khoảng năm chục mét. [pause:800ms]
+
+Cầu Long Biên. [pause:1200ms]
+Trên ghế ba, ông cụ tắt hẳn ngón tay ra khỏi núm radio. [pause:800ms]
+
+[emph:whisper] Ông cúi đầu một lần — Rất khẽ. [pause:800ms]
+
+Trên ghế chín, cô y tá ngẩng lên. [pause:1500ms]
+
+[emph:regret_climax] Cô không nói. [pause:2000ms]
+Cô chỉ đưa hai ngón tay lên thái dương rồi hạ xuống. [pause:800ms]
+
+Như một cử chỉ đã thành thói quen. [pause:300ms]
+Trên ghế mười hai, anh trung niên gập tờ giấy gấp tư lại. [pause:300ms]
+Anh đặt nó vào túi áo ngực — Cô gái ghế tám đưa tay ra. [pause:800ms]
+
+Cô không chạm vào Quang — Cô chỉ đặt bàn tay lên ghế cạnh anh. [pause:300ms]
+Như một lời chào — Quang quay lại. [pause:800ms]
+
+Anh nhìn cô — Anh gật. [pause:800ms]
+
+[emph:whisper] Một cái gật rất khẽ. [pause:800ms]
+
+— Cảm ơn cô. [pause:800ms]
+
+Cô gái cụp mắt — Quang bước về phía cửa. [pause:800ms]
+
+Anh đi ngang ghế ba — Ông cụ ngẩng lên một giây, rồi cúi. [pause:800ms]
+
+Anh đi ngang ghế chín — Cô y tá nhìn theo. [pause:300ms]
+Mắt cô buồn. [pause:1200ms]
+
+Anh đi ngang ghế mười hai — Anh trung niên không ngẩng. [pause:800ms]
+
+Xe chậm lại — Cửa từ từ mở. [pause:800ms]
+
+Mưa hắt vào sàn xe một chút. [pause:800ms]
+
+[emph:melancholy] Mùi sông Hồng. [pause:800ms]
+Mùi bùn cầu. [pause:800ms]
+
+[emph:melancholy] Quang quay đầu nhìn bác tài. [pause:1400ms]
+Bác tài liếc gương. [pause:1200ms]
+
+[emph:question] — Con đã nhớ ra chưa? [pause:800ms]
+
+Quang gật. [pause:1500ms]
+[emph:regret_climax] Anh không nói gì. [pause:2000ms]
+Anh bước xuống — Tay anh ôm chiếc đồng hồ. [pause:800ms]
+
+Anh đi về phía đèn vàng — Bóng anh nhỏ dần. [pause:300ms]
+Còn lại tiếng mưa. [pause:1200ms]
+
+[emph:whisper] Cửa xe đóng lại — Tiếng bản lề khẽ. [pause:800ms]
+
+Trong xe, im lặng — Ông cụ ôm radio như cũ. [pause:300ms]
+Cô y tá đặt tay sạch lên đùi như cũ — Anh trung niên giữ giấy gấp tư trong túi áo. [pause:800ms]
+
+Cô gái ghế tám cúi đầu. [pause:300ms]
+[emph:melancholy] Cô nhìn ghế trống số bảy. [pause:1400ms]
+Ghế còn ấm. [pause:1500ms]
+[emph:regret_climax] Cô không nói gì. [pause:2000ms]
+
+Bác tài chậm rãi đặt tay lên vô-lăng — Xe chạy tiếp. [pause:300ms]
+Cô gái ngẩng lên — Trên ghế số bảy. [pause:800ms]
+
+Có một vật nhỏ — Cô nhíu mày. [pause:300ms]
+Cô cúi xuống — Cô nhặt lên. [pause:800ms]
+
+Chiếc đồng hồ nữ vỏ xà cừ — Kim chỉ bảy giờ mười. [pause:800ms]
+
+Cô gái đặt chiếc đồng hồ lại lên ghế — Rồi rút tay về. [pause:3000ms]

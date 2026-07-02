@@ -1,0 +1,24 @@
+# VNQA — Base genre defaults
+# Inherited by all specific genres. Override per use case.
+
+schema_version: 1
+genre_id: _base
+purpose: "Default thresholds — all genres inherit"
+
+thresholds:
+  adverb_ratio_max: 0.12        # 12% adverbs (>15% = AI flat rhythm)
+  idiom_max_per_ep: 3
+  filler_max_per_ep: 5
+  sentence_len_max_words: 35
+  token_repeat_min: 3           # word repeat 3+ in ep = flag
+  bigram_repeat_per_sentence: 2
+  paragraph_uniformity_stddev_min_pct: 30   # paragraph length stddev < 30% = AI uniformity
+
+required_tone: []
+forbidden_tone: []
+
+ai_tell_resources:
+  - tools/vnqa/resources/ai_tell_words.yaml
+  - tools/vnqa/resources/idioms_seed.yaml
+  - tools/vnqa/resources/filler_phrases.yaml
+  - tools/vnqa/resources/formality_markers.yaml

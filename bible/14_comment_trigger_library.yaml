@@ -1,0 +1,376 @@
+# SVHMP — 14 COMMENT TRIGGER LIBRARY (round 13 — Mr.Long docx v5 19/6 15:22)
+# Status: IMMUTABLE per series
+# Loaded by: Generator (write toward trigger) / QA Lock (PHASE 12.8 comment_trigger sub-score) / Publisher (P5 comment classifier + P9 viewer_funnel)
+
+version: 1.0
+lock_date: 2026-06-19 17:20
+purpose: |
+  Mục tiêu mỗi tập kích trigger ≥1 comment dạng "tôi vừa gọi cho mẹ" / "nhớ mẹ quá" / "giá như".
+  Đây mới là "vũ khí" kéo tương tác bền — viewer hành động real-world sau khi nghe.
+
+# ============================================================
+# CORE TRIGGER LINES (30 line × distance 8 = 240 capacity ≥ 90 ep ✓)
+# ============================================================
+
+trigger_lines:
+
+  # ───────────── FAMILY ACTION (~10 trigger) ─────────────
+
+  T_GOI_CHO_ME:
+    target_comment: "Nghe xong tôi vừa gọi cho mẹ."
+    pillar: family_regret
+    relationship: mother
+    weight: 1.00              # cao nhất — Mr.Long pattern viral
+    pairable_archetypes: [ARCH_01_me_doi_con, ARCH_09_con_roi_nha]
+    pairable_regret: [missed_call, ignored_message, never_visited_again]
+    trigger_mechanism: |
+      Beat_4 phải có ≥1 dòng nói về cuộc gọi/tin nhắn mẹ chưa kịp trả lời.
+      Cliffhanger có thể có vật là điện thoại với màn hình "Mẹ đang gọi" (pattern F).
+    used_count: 0
+    last_used_ep: null
+
+  T_NHAN_CHO_BO:
+    target_comment: "Tôi vừa nhắn tin cho bố."
+    pillar: family_regret
+    relationship: father
+    weight: 0.92
+    pairable_archetypes: [ARCH_02_cha_cam_lang, ARCH_09_con_roi_nha]
+    pairable_regret: [unsaid_apology, ignored_message]
+    trigger_mechanism: |
+      Bố là kiểu "câm lặng" — passenger ép bản thân không gọi. REGRET LINE:
+      "Tôi không bao giờ nói câu ấy với bố." → viewer ép mình HÀNH ĐỘNG.
+    used_count: 0
+    last_used_ep: null
+
+  T_OM_CON:
+    target_comment: "Về nhà tôi sẽ ôm con thêm một cái nữa."
+    pillar: family_regret
+    relationship: child
+    weight: 0.88
+    pairable_archetypes: [ARCH_07_chong_di_xa, ARCH_03_vo_tre]
+    pairable_regret: [promised_trip, missed_graduation]
+    trigger_mechanism: |
+      Passenger ngộ ra mình đã bỏ lỡ thời gian với con vì công việc.
+      Beat_4 ghim hình ảnh con đợi cha/mẹ về.
+    used_count: 0
+    last_used_ep: null
+
+  T_VE_THAM_QUE:
+    target_comment: "Cuối tuần này tôi sẽ về quê thăm bà."
+    pillar: promise_regret
+    relationship: grandmother
+    weight: 0.85
+    pairable_archetypes: [ARCH_08_ba_co_don, ARCH_09_con_roi_nha]
+    pairable_regret: [never_visited_again, returned_too_late]
+    trigger_mechanism: |
+      Passenger trì hoãn thăm bà/ông quá lâu — bà mất trước khi kịp đến.
+      REGRET LINE: "Tôi đã định cuối tháng về thăm bà..."
+    used_count: 0
+    last_used_ep: null
+
+  T_NAU_COM_CHO_ME:
+    target_comment: "Tối nay tôi sẽ về sớm ăn cơm với mẹ."
+    pillar: family_regret
+    relationship: mother
+    weight: 0.78
+    pairable_archetypes: [ARCH_01_me_doi_con, ARCH_07_chong_di_xa]
+    pairable_regret: [last_meal_together]
+    trigger_mechanism: "Mẹ nấu cơm chờ → con không về. Beat_4 ghim 'mẹ ngồi đợi đến 9 giờ tối'."
+    used_count: 0
+    last_used_ep: null
+
+  T_HOI_THAM_ANH_CHI:
+    target_comment: "Tôi vừa nhắn anh/chị tôi hỏi thăm."
+    pillar: family_regret
+    relationship: sibling
+    weight: 0.72
+    pairable_archetypes: [ARCH_04_gai_18, ARCH_03_vo_tre]
+    pairable_regret: [unsaid_apology, forgotten_birthday]
+    trigger_mechanism: "Cãi vã chưa giảng hòa với anh chị em → passenger nhận ra muộn."
+    used_count: 0
+    last_used_ep: null
+
+  T_NHO_ME_QUA:
+    target_comment: "Nghe xong nhớ mẹ quá."
+    pillar: family_regret
+    relationship: mother
+    weight: 0.95             # 2nd cao nhất — easy trigger broad audience
+    pairable_archetypes: ALL  # universal
+    pairable_regret: ALL
+    trigger_mechanism: |
+      Bất kỳ archetype nào có hình ảnh mẹ trong beat_4 đều có thể trigger.
+      Universal — luôn fallback nếu khó pick specific trigger.
+    used_count: 0
+    last_used_ep: null
+
+  T_TIEC_VOI_BA:
+    target_comment: "Tôi tiếc lần cuối với bà nhất."
+    pillar: family_regret
+    relationship: grandmother
+    weight: 0.80
+    pairable_archetypes: [ARCH_08_ba_co_don]
+    pairable_regret: [last_meal_together, missed_funeral]
+    used_count: 0
+    last_used_ep: null
+
+  T_NHIN_ANH_BO:
+    target_comment: "Tôi vừa lấy ảnh bố ra nhìn."
+    pillar: family_regret
+    relationship: father
+    weight: 0.75
+    pairable_archetypes: [ARCH_02_cha_cam_lang]
+    pairable_regret: [unsaid_apology, missed_funeral]
+    pairable_objects: [OBJ_ANH_CUOI_GAP_TU, OBJ_VI_DA_CU]
+    used_count: 0
+    last_used_ep: null
+
+  T_CHIA_SE_CON:
+    target_comment: "Ngày mai tôi nghỉ làm 1 ngày để chở con đi chơi."
+    pillar: family_regret
+    relationship: child
+    weight: 0.82
+    pairable_archetypes: [ARCH_07_chong_di_xa]
+    pairable_regret: [promised_trip, missed_graduation]
+    used_count: 0
+    last_used_ep: null
+
+  # ───────────── LOVE ACTION (~5 trigger) ─────────────
+
+  T_XIN_LOI_NGUOI_YEU:
+    target_comment: "Tôi vừa gửi tin xin lỗi người ấy."
+    pillar: love_regret
+    relationship: lover
+    weight: 0.78
+    pairable_archetypes: [ARCH_03_vo_tre, ARCH_12_yeu_xa]
+    pairable_regret: [unsaid_apology, unsent_voice_message]
+    used_count: 0
+    last_used_ep: null
+
+  T_NOI_VOI_VO_THUONG:
+    target_comment: "Tôi vừa nói với vợ là tôi thương cô ấy."
+    pillar: love_regret
+    relationship: spouse
+    weight: 0.75
+    pairable_archetypes: [ARCH_07_chong_di_xa]
+    pairable_regret: [unspoken_love, last_meal_together]
+    used_count: 0
+    last_used_ep: null
+
+  T_NHO_NGUOI_CU:
+    target_comment: "Tôi nhớ một người tôi đã không nói câu đó."
+    pillar: love_regret
+    relationship: lover
+    weight: 0.80
+    pairable_archetypes: [ARCH_12_yeu_xa]
+    pairable_regret: [unspoken_love]
+    used_count: 1             # ep_01 Khải Phong-Hà (unspoken_love)
+    last_used_ep: 1
+
+  T_OM_NGUOI_YEU:
+    target_comment: "Tối nay tôi sẽ ôm người yêu thêm 1 phút."
+    pillar: love_regret
+    relationship: spouse
+    weight: 0.68
+    pairable_archetypes: [ARCH_03_vo_tre]
+    pairable_regret: [unsaid_apology, last_meal_together]
+    used_count: 0
+    last_used_ep: null
+
+  T_VIET_THU_TAY:
+    target_comment: "Tôi vừa viết tay 1 lá thư cho người tôi yêu."
+    pillar: love_regret
+    relationship: lover
+    weight: 0.70
+    pairable_archetypes: [ARCH_12_yeu_xa]
+    pairable_regret: [unread_letter, unsent_voice_message]
+    pairable_objects: [OBJ_LA_THU_CHUA_GUI]
+    used_count: 0
+    last_used_ep: null
+
+  # ───────────── KINDNESS ACTION (~5 trigger) ─────────────
+
+  T_CAM_ON_THAY_CO:
+    target_comment: "Tôi vừa nhắn tin cảm ơn thầy/cô cũ."
+    pillar: kindness_regret
+    relationship: teacher
+    weight: 0.72
+    pairable_archetypes: [ARCH_10_co_giao_lang]
+    pairable_regret: [never_visited_again, unsaid_apology]
+    used_count: 0
+    last_used_ep: null
+
+  T_THAM_LANG_GIENG:
+    target_comment: "Tôi vừa qua nhà thăm bác hàng xóm tốt bụng năm xưa."
+    pillar: kindness_regret
+    relationship: neighbor
+    weight: 0.58
+    pairable_archetypes: [ARCH_06_ban_hang_dem, ARCH_11_ban_ve_so]
+    pairable_regret: [never_visited_again, forgotten_birthday]
+    used_count: 0
+    last_used_ep: null
+
+  T_CAM_ON_AN_NHAN:
+    target_comment: "Có một người tôi mãi không quên ơn — tôi sẽ tìm lại họ."
+    pillar: kindness_regret
+    relationship: benefactor
+    weight: 0.65
+    pairable_archetypes: [ARCH_05_linh_gia]
+    pairable_regret: [never_visited_again, forgotten_recipe]
+    used_count: 0
+    last_used_ep: null
+
+  T_THAM_BAN_CU:
+    target_comment: "Tôi vừa gọi cho người bạn lâu rồi không liên lạc."
+    pillar: kindness_regret
+    relationship: friend
+    weight: 0.70
+    pairable_archetypes: [ARCH_04_gai_18, ARCH_05_linh_gia]
+    pairable_regret: [ignored_message, broken_promise]
+    used_count: 0
+    last_used_ep: null
+
+  T_CAM_ON_NGUOI_LA:
+    target_comment: "Có một người lạ tôi muốn cảm ơn cả đời."
+    pillar: kindness_regret
+    relationship: stranger_kind
+    weight: 0.62
+    pairable_archetypes: [ARCH_06_ban_hang_dem, ARCH_11_ban_ve_so]
+    pairable_regret: [forgotten_birthday, unsaid_apology]
+    used_count: 0
+    last_used_ep: null
+
+  # ───────────── SELF / EXISTENTIAL ACTION (~5 trigger) ─────────────
+
+  T_DUNG_LAI_NHIN:
+    target_comment: "Nghe xong nằm im 5 phút."
+    pillar: ALL
+    weight: 0.90
+    pairable_archetypes: ALL
+    pairable_regret: ALL
+    trigger_mechanism: "Beat_5 dư âm extended + final_silence ≥4s + 'câu chưa kịp nói' (universal)."
+    used_count: 0
+    last_used_ep: null
+    notes: "Universal trigger — không cần action ngoài, chỉ quiet acceptance."
+
+  T_GIA_NHU:
+    target_comment: "Giá như tôi quay lại được khoảnh khắc đó..."
+    pillar: ALL
+    weight: 0.88
+    pairable_archetypes: ALL
+    pairable_regret: ALL
+    trigger_mechanism: "REGRET LINE PHẦN 3 phải khắc rõ 'Tôi không [hành động]'."
+    used_count: 0
+    last_used_ep: null
+
+  T_NEU_LA_MINH:
+    target_comment: "Nếu là mình, mình cũng đã không kịp."
+    pillar: ALL
+    weight: 0.85
+    pairable_archetypes: ALL
+    pairable_regret: ALL
+    trigger_mechanism: "Story phải dễ self-insert — archetype gần đời thực, regret nhỏ."
+    used_count: 0
+    last_used_ep: null
+
+  T_GHI_SO_TAY:
+    target_comment: "Tôi vừa ghi vào sổ tay 1 việc cần làm."
+    pillar: self_regret
+    weight: 0.65
+    pairable_archetypes: [ARCH_04_gai_18, ARCH_06_ban_hang_dem]
+    pairable_regret: [unsaid_apology, broken_promise]
+    used_count: 0
+    last_used_ep: null
+
+  T_XIN_LOI_CHINH_MINH:
+    target_comment: "Tôi đã không xin lỗi chính mình đủ lâu."
+    pillar: self_regret
+    weight: 0.72
+    pairable_archetypes: [ARCH_04_gai_18, ARCH_06_ban_hang_dem]
+    pairable_regret: [missed_graduation, broken_promise]
+    used_count: 0
+    last_used_ep: null
+
+  # ───────────── EXISTENTIAL DEEP (~5 trigger — S3 + ep_73/90 only) ─────────────
+
+  T_TIM_LAI_DAM_ME:
+    target_comment: "Tôi muốn tìm lại đam mê mà tôi đã bỏ quên."
+    pillar: self_regret
+    weight: 0.70
+    pairable_archetypes: [ARCH_06_ban_hang_dem, ARCH_07_chong_di_xa]
+    pairable_regret: [unfinished_song, broken_promise]
+    season_constraint: 3   # only S3 (ep 61-90)
+    used_count: 0
+    last_used_ep: null
+
+  T_BUONG_QUA_KHU:
+    target_comment: "Tôi sẽ tha thứ cho chính mình."
+    pillar: self_regret
+    weight: 0.78
+    pairable_archetypes: [ARCH_05_linh_gia, ARCH_08_ba_co_don]
+    pairable_regret: [forgotten_birthday, never_visited_again]
+    season_constraint: 3
+    used_count: 0
+    last_used_ep: null
+    notes: "Pair với payoff_kind RELEASE only"
+
+  T_NGUYEN_DAM_DI:
+    target_comment: "Tôi sẽ dám đi một chuyến đã hứa từ lâu."
+    pillar: promise_regret
+    weight: 0.65
+    pairable_archetypes: [ARCH_07_chong_di_xa, ARCH_09_con_roi_nha]
+    pairable_regret: [promised_trip, broken_promise]
+    season_constraint: 3
+    used_count: 0
+    last_used_ep: null
+
+  T_NHO_AI_DA_BO_LO:
+    target_comment: "Có một người tôi đã bỏ lỡ — tôi vẫn nghĩ về họ."
+    pillar: love_regret
+    weight: 0.75
+    pairable_archetypes: [ARCH_12_yeu_xa]
+    pairable_regret: [unspoken_love]
+    season_constraint: 2  # mid-series
+    used_count: 0
+    last_used_ep: null
+
+  T_DAY_LON_CO_HOI:
+    target_comment: "Tôi sẽ dạy con tôi đừng để 'lát nữa' thành 'mãi mãi'."
+    pillar: family_regret
+    weight: 0.82
+    pairable_archetypes: [ARCH_07_chong_di_xa]
+    pairable_regret: [last_meal_together, missed_graduation]
+    season_constraint: 3
+    used_count: 0
+    last_used_ep: null
+    notes: "Pair với payoff_kind RELEASE only (lesson-passing)"
+
+# ============================================================
+# USAGE RULES
+# ============================================================
+
+selection_rules:
+  - Generator pre-write: load trigger_lines + state.trigger_history (last 8 ep — distance 8)
+  - filter: NOT in last 8 ep
+  - pair: pillar + archetype + relationship match cumulative
+  - apply: write beat_4 + beat_5 to maximize trigger_mechanism probability
+  - update: ledger trigger_id used + used_count ++
+
+distance: 8 (= same_trigger_distance — bible/08 sẽ track)
+
+ratio_target_per_batch_10:
+  family_action: ≥4 trigger (universal pull)
+  love_action: ≥1
+  kindness_action: ≥1
+  self_existential: ≥2 trigger (deep moments)
+  universal: ≥2 (T_DUNG_LAI_NHIN / T_GIA_NHU / T_NHO_ME_QUA — fallback)
+
+cross_module_query:
+  generator: pick trigger → write toward in beat_4 + beat_5
+  qa_lock: PHASE 12.8 comment_trigger sub-score = how many target comments likely trigger
+  publisher_P5: comment_classifier desired_keywords merge với trigger_lines.target_comment
+  publisher_P11: audience_memory.top_triggers = winners feed back to Generator
+
+forbidden:
+  - target_comment dạng "tôi shock quá" / "tôi sợ" / "tôi giật mình" (anti-soul)
+  - target_comment dạng "twist hay" / "AI làm hay" (meta-engagement, không soul)
+  - manipulation rõ rệt ("comment ABC để được tha thứ")

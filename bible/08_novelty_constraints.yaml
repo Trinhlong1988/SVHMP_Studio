@@ -1,0 +1,244 @@
+# SVHMP — 08 NOVELTY CONSTRAINTS (Anti-Repetition Engine)
+# Lock date: 2026-06-19 (round 11 — Mr.Long docx 13:33)
+# Status: IMMUTABLE per series — KHÔNG sửa mid-production
+# Loaded by: Generator (pre-write check) / QA Lock (PHASE 12.4 + 12.5 audit)
+
+version: 1.0
+lock_date: 2026-06-19
+purpose: |
+  Sau 100+ tập, AI vẫn có thể vô tình viết "mẹ gọi → không bắt máy → mẹ mất"
+  với biến tấu mỏng. Novelty Engine ép distance giữa các lần dùng cùng motif.
+
+distance_constraints:
+  # đơn vị: số tập tối thiểu giữa 2 lần dùng cùng giá trị
+
+  same_regret_archetype_distance: 15
+    # ví dụ: "missed_call" dùng ep 5 → ep tiếp theo dùng ≥ ep 20
+    # 20 archetype × 15 distance ≥ 300 ep capacity
+
+  same_object_distance: 10
+    # "chiếc áo len" dùng ep 5 → ≥ ep 15
+    # 12 object_palette × 10 distance ≥ 120 ep capacity
+
+  same_relationship_distance: 8
+    # "mother" dùng ep 5 → ≥ ep 13
+    # 15 relationship × 8 distance ≥ 120 ep capacity
+
+  same_twist_pattern_distance: 20
+    # twist = cấu trúc reveal (vd "passenger nhận ra mình đã chết qua điện thoại")
+    # 5 twist_pattern × 20 distance ≥ 100 ep capacity
+
+  same_passenger_archetype_distance: 6   # round 12 fix B11.1 — was 8, only 6 ep slack vs 90 series (96 capacity / 90 ep = RISKY).
+    # ARCH_01 (mẹ đợi con) dùng ep 5 → ≥ ep 11
+    # 12 archetype × 6 distance ≥ 72 ep + grace ≥ 90 ep
+    # Khi extend library lên 16+ archetype (ARCH_13-24 TODO), distance có thể tăng lại 8.
+
+  same_aftertaste_distance: 3
+    # "ám ảnh nhẹ" dùng ep 5 → ≥ ep 8 (chỉ 1 ep skip để xoay)
+    # 3 aftertaste × 3 distance ≥ 9 ep minimum cycle
+
+  same_dna_variant_distance: 2
+    # variant A ep 5 → ≥ ep 8
+    # 3 variant × 2 distance ≥ 6 ep cycle
+
+  same_cliffhanger_pattern_distance: 4
+    # pattern A ep 5 → ≥ ep 9
+    # 7 pattern (A-G) × 4 ≥ 28 ep cycle
+
+  same_pillar_distance: 2
+    # family_regret ep 5 → ≥ ep 7
+    # 5 pillar × 2 ≥ 10 ep cycle
+
+  same_emotion_distance: 2
+    # nghẹn ep 5 → ≥ ep 7
+    # 6 emotion × 2 ≥ 12 ep cycle
+
+  same_title_keyword_distance: 6
+    # "áo len" trong title ep 5 → ≥ ep 11
+    # tránh khán giả nghĩ "lại áo len nữa"
+
+  same_regret_line_phrase_distance: 30
+    # phrase "Tôi không kịp về" dùng ep 5 → ≥ ep 35
+    # ép Generator tự generate phrase mới mỗi 30 ep
+
+twist_pattern_taxonomy:
+  TP1_phone_recognition:
+    description: "passenger nhận ra qua điện thoại / tin nhắn"
+  TP2_object_recognition:
+    description: "passenger nhận ra qua vật trong tay/cặp"
+  TP3_other_passenger_link:
+    description: "passenger nhận ra qua hành khách khác (variant C)"
+  TP4_driver_mirror_recognition:
+    description: "passenger nhận ra qua gương chiếu hậu / phản chiếu"
+  TP5_environmental_clue:
+    description: "passenger nhận ra qua cảnh ngoài cửa kính / địa danh"
+
+novelty_score:
+  # QA Lock tính score (0-100) phụ vào content.uniqueness sub-score
+  formula: |
+    novelty_score =
+        25 * (regret_distance_compliance ? 1 : 0)
+      + 20 * (object_distance_compliance ? 1 : 0)
+      + 15 * (relationship_distance_compliance ? 1 : 0)
+      + 15 * (twist_distance_compliance ? 1 : 0)
+      + 10 * (passenger_archetype_distance_compliance ? 1 : 0)
+      + 10 * (cliffhanger_pattern_distance_compliance ? 1 : 0)
+      +  5 * (title_keyword_distance_compliance ? 1 : 0)
+
+  pass_threshold: 85
+  if_fail: REGEN with regen_scope adapted (regret_archetype_only / cliffhanger_only / etc.)
+
+state_tracking:
+  # runtime/state.yaml phải maintain các history list
+  required_fields:
+    - regret_archetype_history: last 30 ep
+    - object_history: last 15 ep
+    - relationship_history: last 15 ep
+    - twist_pattern_history: last 25 ep
+    - passenger_archetype_history: last 15 ep
+    - cliffhanger_pattern_history: last 10 ep
+    - title_keywords_history: last 10 ep
+    - regret_line_phrase_history: last 35 ep (substring match)
+    - pillar_history: last 10 ep
+    - emotion_history: last 12 ep
+    - dna_variant_history: last 6 ep
+
+  update_after_each_ep: append + truncate to window size
+
+drift_alert:
+  - if same_X used twice within distance: BLOCK Generator pre-write
+  - if 5/10 distance constraints violated trong 1 ep: REJECT (likely lazy gen)
+  - if novelty_score < 85: REGEN scope = "narrative_dna + cliffhanger + regret"
+
+generator_usage:
+  # NOTE round 12 fix B5.1: Generator (RC3.4) FROZEN — KHÔNG explicit load file này.
+  # Inline rule trong generator.md round 9: regret_library_v2 (20 archetype),
+  # last_3_variants check, archetype_history 5 ep, etc. khớp distance rules dưới.
+  # Khi unfreeze (v10.1-FINAL), migrate sang load bible/08 trực tiếp.
+  intend_migrate_to_load_file: true (v10.1-FINAL)
+
+  pre_write_check:
+    - load state.yaml history
+    - candidate_motif = [regret_archetype, object, relationship, twist, passenger_arch]
+    - if any candidate violates distance → MUST pick alternative
+    - if 2nd attempt still violates → escalate REVIEW_REQUIRED
+
+  pre_write_pool_filter:
+    - regret_library_pool = full 20 - {used in last 15 ep}
+    - if pool size < 3: alert (chu kỳ quá ngắn — extend library)
+
+qa_lock_usage:
+  # NOTE round 12 fix B5.1: QA Lock v1.1 FROZEN — PHASE 12.4/12.5 already audit
+  # archetype/relationship distance inline. PHASE 12 reads runtime/state.yaml history.
+  # bible/08 hash similarity (round 13 plan) sẽ add khi unfreeze.
+  intend_migrate_to_load_file: true (v10.1-FINAL)
+
+# ============================================================
+# NOVELTY HASH ENGINE (round 13 — Mr.Long docx v5 + v6)
+# ============================================================
+# Distance constraints (cứng) ở trên đảm bảo KHÔNG TRÙNG TUYỆT ĐỐI
+# Novelty hash (mềm) dưới đảm bảo KHÔNG GẦN GIỐNG (near-duplicate)
+# 2 cơ chế song song — distance là hard floor, hash là soft ceiling
+
+novelty_hash_engine:
+  enabled: true
+  applies_after: bible/12_object_library + bible/13_setting_library + bible/14_comment_trigger ship (round 13)
+
+  hash_dimensions:                 # 7 dimensions per Mr.Long docx v5
+    1: pillar                      # weight 0.20
+    2: regret_archetype            # weight 0.20 (one of 20 in regret_library_v2)
+    3: relationship                # weight 0.15 (one of 15)
+    4: object                      # weight 0.15 (one of OBJ_* in bible/12)
+    5: setting                     # weight 0.10 (one of setting_* in bible/13)
+    6: reveal_pattern              # weight 0.10 (twist_pattern_taxonomy TP1-TP5)
+    7: payoff_pattern              # weight 0.10 (REGRET/RECOGNITION/RETURN/RELEASE)
+
+  # similarity computation per dimension
+  similarity_per_dimension:
+    pillar:
+      same: 1.0
+      different: 0.0
+    regret_archetype:
+      exact: 1.0
+      same_category: 0.6           # vd unread_letter + ignored_message = same "communication"
+      different_category: 0.0
+    relationship:
+      exact: 1.0
+      same_family_branch: 0.5      # mother↔grandmother / father↔grandfather
+      different: 0.0
+    object:
+      exact_OBJ_id: 1.0
+      same_category: 0.4           # clothing/timekeeping/document/personal/...
+      same_pillar_pair: 0.2
+      different: 0.0
+    setting:
+      exact_setting_id: 1.0
+      same_category: 0.3           # weather/lighting/seasonal/location
+      different: 0.0
+    reveal_pattern:
+      exact_TP: 1.0
+      different: 0.0
+    payoff_pattern:
+      exact: 1.0
+      same_lifecycle: 0.5          # REGRET↔RECOGNITION (early lifecycle) | RETURN↔RELEASE (late)
+      different: 0.0
+
+  # overall similarity formula
+  formula: |
+    similarity = (
+      pillar_sim          * 0.20 +
+      archetype_sim       * 0.20 +
+      relationship_sim    * 0.15 +
+      object_sim          * 0.15 +
+      setting_sim         * 0.10 +
+      reveal_sim          * 0.10 +
+      payoff_sim          * 0.10
+    )
+
+  # decision thresholds (per Mr.Long docx v5 + v6)
+  thresholds:
+    safe:           0.40       # < 0.40 = OK ship
+    review:         0.50       # 0.40-0.50 = review for minor uniqueness flag
+    near_duplicate: 0.70       # ≥ 0.70 = REGEN required (major_error: near_duplicate_episode)
+    duplicate:      0.90       # ≥ 0.90 = REJECT outright (critical_error: duplicate_episode)
+
+  comparison_scope:
+    - current ep vs last 30 ep (sliding window)
+    - flag highest similarity vs any past ep
+    - report top 3 most similar past eps for context
+
+  qa_lock_integration:
+    new_phase: 12.13_novelty_hash_check
+    check_at: after PHASE 12.4 (regret) + 12.5 (relationship) + 12.6 (title)
+    action_if_near_duplicate:
+      severity: major_error
+      message: "near_duplicate_episode similarity={value} vs ep_{N}"
+      regen_scope: [content_pillar_only, regret_archetype_only, object_change, setting_change]
+      max_regen_attempts: 2 (after escalate REVIEW_REQUIRED)
+    action_if_duplicate:
+      severity: critical_error
+      message: "duplicate_episode similarity={value} vs ep_{N} — block ship"
+      regen_scope: [full_episode]
+
+  generator_integration:
+    pre_write_hash_check:
+      - compute candidate ep hash (7 dimensions)
+      - compare vs state.episode_hash_history (last 30 ep)
+      - if max_similarity >= 0.60: WARNING + suggest pillar/object swap
+      - if max_similarity >= 0.70: BLOCK + force regen attempt với khác dimension
+
+  state_tracking:
+    field: state.episode_hash_history
+    schema:
+      - {ep: 1, pillar: love_regret, archetype: unspoken_love, relationship: lover, object: OBJ_DONG_HO_XA_CU, setting: setting_dem_thang_tu_HN, reveal: TP2_object_recognition, payoff: RECOGNITION}
+    window: 30 ep rolling
+
+  long_term_safety:
+    # với 500 ep series capacity check:
+    # total unique hash combinations possible:
+    #   5 pillar × 20 archetype × 15 relationship × 30 object × 20 setting × 5 reveal × 4 payoff
+    #   = 5 × 20 × 15 × 30 × 20 × 5 × 4 = 18,000,000 combinations
+    # đủ cho 500+ ep mà ko near-duplicate ✓
+    # Bottleneck thực tế: pillar (5) + relationship (15) → 75 base combinations
+    #   với rotation distance pillar=2 + relationship=8 → batch 10 ep có ≥3 pillar × ≥5 relationship
+    #   → 15+ base combinations per batch 10 → safe

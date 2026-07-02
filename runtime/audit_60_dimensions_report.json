@@ -1,0 +1,115 @@
+{
+  "1": {
+    "high": 0,
+    "medium": 10,
+    "low": 11,
+    "ok": 49,
+    "details": [
+      {
+        "check": "1.2 word frequency > 20 (non-name)",
+        "value": "20",
+        "sev": "MEDIUM"
+      },
+      {
+        "check": "1.3 common sentence openers > 8",
+        "value": "3",
+        "sev": "LOW"
+      },
+      {
+        "check": "1.4 4-gram self-repeat > 2",
+        "value": "10",
+        "sev": "MEDIUM"
+      },
+      {
+        "check": "1.10 template phrase total reuse",
+        "value": "1",
+        "sev": "LOW"
+      },
+      {
+        "check": "2.1 REVEAL section depth (words)",
+        "value": "0",
+        "sev": "MEDIUM"
+      },
+      {
+        "check": "2.2 CLIFFHANGER depth (words)",
+        "value": "0",
+        "sev": "MEDIUM"
+      },
+      {
+        "check": "2.6 driver foreshadow in CLIFF (R42)",
+        "value": "0",
+        "sev": "LOW"
+      },
+      {
+        "check": "2.7 Khải Phong emotional response",
+        "value": "0",
+        "sev": "LOW"
+      },
+      {
+        "check": "2.8 Đêm thứ N continuity",
+        "value": "0",
+        "sev": "MEDIUM"
+      },
+      {
+        "check": "2.9 Object collection mention",
+        "value": "0",
+        "sev": "MEDIUM"
+      },
+      {
+        "check": "3.2 anti-slop tier 2 > 3/EP/word (R43)",
+        "value": "4",
+        "sev": "MEDIUM"
+      },
+      {
+        "check": "3.10 driver unauthorized speech (post-R42)",
+        "value": "3",
+        "sev": "LOW"
+      },
+      {
+        "check": "4.9 arabic numbers > 10",
+        "value": "56",
+        "sev": "LOW"
+      },
+      {
+        "check": "5.2 dialogue ratio",
+        "value": "0.034",
+        "sev": "LOW"
+      },
+      {
+        "check": "5.5 internal monologue depth",
+        "value": "1",
+        "sev": "MEDIUM"
+      },
+      {
+        "check": "5.9 Vietnamese pronoun balance",
+        "value": "{'em': 2, 'anh': 42, 'chị': 0, 'bác': 3}",
+        "sev": "LOW"
+      },
+      {
+        "check": "6.7 regret time depth",
+        "value": "1",
+        "sev": "MEDIUM"
+      },
+      {
+        "check": "6.8 moral self-judgment",
+        "value": "0",
+        "sev": "LOW"
+      },
+      {
+        "check": "6.9 aftertaste lingering",
+        "value": "0",
+        "sev": "LOW"
+      },
+      {
+        "check": "6.10 passenger info present",
+        "value": "0",
+        "sev": "MEDIUM"
+      },
+      {
+        "check": "7.3 foreign words leak",
+        "value": "240",
+        "sev": "LOW"
+      }
+    ]
+  }
+}

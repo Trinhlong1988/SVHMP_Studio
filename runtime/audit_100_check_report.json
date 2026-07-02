@@ -1,0 +1,282 @@
+[
+  {
+    "check": "1.1 bigram_similarity > 70%",
+    "count": 0,
+    "severity": "OK",
+    "detail": "[]",
+    "layer": "LAYER 1 — REPETITION"
+  },
+  {
+    "check": "1.2 4-gram similarity > 30%",
+    "count": 0,
+    "severity": "OK",
+    "detail": "[]",
+    "layer": "LAYER 1 — REPETITION"
+  },
+  {
+    "check": "1.3 duplicate passenger names",
+    "count": 0,
+    "severity": "OK",
+    "detail": "{}",
+    "layer": "LAYER 1 — REPETITION"
+  },
+  {
+    "check": "1.4 duplicate signature_objects (sub-arc clustering OK)",
+    "count": 4,
+    "severity": "OK",
+    "detail": "{'OBJ_AO_LEN_NAU': 2, 'OBJ_BANH_CHUNG_GOI_DO': 2, 'OBJ_LI_XI_DO': 2, 'OBJ_KHAN_TAY_CU': 2}",
+    "layer": "LAYER 1 — REPETITION"
+  },
+  {
+    "check": "1.5 duplicate stop_location (callback OK)",
+    "count": 3,
+    "severity": "OK",
+    "detail": "{'ngã ba Hải Dương': 2, 'ngã ba Bắc Ninh': 2, 'ngã ba Hoài Đức': 2}",
+    "layer": "LAYER 1 — REPETITION"
+  },
+  {
+    "check": "1.6 internal anaphora >= 4 consecutive",
+    "count": 13,
+    "severity": "MEDIUM",
+    "detail": "[(1, 5), (4, 4), (7, 4), (8, 5), (23, 4)]",
+    "layer": "LAYER 1 — REPETITION"
+  },
+  {
+    "check": "1.7 Khải Phong name count > 80/EP",
+    "count": 0,
+    "severity": "OK",
+    "detail": "[]",
+    "layer": "LAYER 1 — REPETITION"
+  },
+  {
+    "check": "1.8 \"Đêm tháng tư\" > 2/EP",
+    "count": 0,
+    "severity": "OK",
+    "detail": "[]",
+    "layer": "LAYER 1 — REPETITION"
+  },
+  {
+    "check": "1.9 \"Bác tài liếc gương\" mention",
+    "count": 38,
+    "severity": "OK",
+    "detail": "75 total mentions",
+    "layer": "LAYER 1 — REPETITION"
+  },
+  {
+    "check": "1.10 Intro Hắc Dạ Ký consistent",
+    "count": 40,
+    "severity": "OK",
+    "detail": "40/40",
+    "layer": "LAYER 1 — REPETITION"
+  },
+  {
+    "check": "2.1 REVEAL section present",
+    "count": 39,
+    "severity": "HIGH",
+    "detail": "39/40",
+    "layer": "LAYER 2 — EMOTIONAL ENGAGEMENT"
+  },
+  {
+    "check": "2.2 CLIFFHANGER present",
+    "count": 39,
+    "severity": "HIGH",
+    "detail": "39/40",
+    "layer": "LAYER 2 — EMOTIONAL ENGAGEMENT"
+  },
+  {
+    "check": "2.3 Hạ Vy mention in each EP",
+    "count": 31,
+    "severity": "MEDIUM",
+    "detail": "[(1, 0), (2, 0), (3, 0), (4, 0), (6, 0), (7, 0), (8, 0), (10, 0), (35, 0)]",
+    "layer": "LAYER 2 — EMOTIONAL ENGAGEMENT"
+  },
+  {
+    "check": "2.4 Milestone bác tài foreshadow",
+    "count": 3,
+    "severity": "OK",
+    "detail": "[40, 20, 30]",
+    "layer": "LAYER 2 — EMOTIONAL ENGAGEMENT"
+  },
+  {
+    "check": "2.5 Aftertaste unresolved (no fairy tale)",
+    "count": 0,
+    "severity": "OK",
+    "detail": "[]",
+    "layer": "LAYER 2 — EMOTIONAL ENGAGEMENT"
+  },
+  {
+    "check": "2.6 Ghost manifest restraint",
+    "count": 0,
+    "severity": "OK",
+    "detail": "[]",
+    "layer": "LAYER 2 — EMOTIONAL ENGAGEMENT"
+  },
+  {
+    "check": "2.7 Tear/cry mentions (Khải Phong tears EP20/30/40)",
+    "count": 37,
+    "severity": "OK",
+    "detail": "37/40 EPs have tear/cry",
+    "layer": "LAYER 2 — EMOTIONAL ENGAGEMENT"
+  },
+  {
+    "check": "2.8 Night counter \"Đêm thứ N\" present",
+    "count": 35,
+    "severity": "OK",
+    "detail": "35/40",
+    "layer": "LAYER 2 — EMOTIONAL ENGAGEMENT"
+  },
+  {
+    "check": "2.9 Object collection mention",
+    "count": 35,
+    "severity": "OK",
+    "detail": "35/40",
+    "layer": "LAYER 2 — EMOTIONAL ENGAGEMENT"
+  },
+  {
+    "check": "2.10 Đồng hồ 7:10 motif",
+    "count": 40,
+    "severity": "OK",
+    "detail": "40/40",
+    "layer": "LAYER 2 — EMOTIONAL ENGAGEMENT"
+  },
+  {
+    "check": "3.1 Tier 1 anti-slop (đột nhiên/bỗng nhiên/...)",
+    "count": 0,
+    "severity": "OK",
+    "detail": "{}",
+    "layer": "LAYER 3 — FORBIDDEN WORDS"
+  },
+  {
+    "check": "3.2 Tier 2 filler (thoáng/khẽ/lặng lẽ/...) total",
+    "count": 304,
+    "severity": "MEDIUM",
+    "detail": "{'khẽ': 137, 'thoáng': 50, 'nhẹ nhàng': 43, 'vô hình': 42, 'ánh mắt': 32}",
+    "layer": "LAYER 3 — FORBIDDEN WORDS"
+  },
+  {
+    "check": "3.3 Structural AI tells (Trong khi đó/Mặt khác/...)",
+    "count": 0,
+    "severity": "OK",
+    "detail": "[]",
+    "layer": "LAYER 3 — FORBIDDEN WORDS"
+  },
+  {
+    "check": "3.4 NEVER gore phrases",
+    "count": 0,
+    "severity": "OK",
+    "detail": "[]",
+    "layer": "LAYER 3 — FORBIDDEN WORDS"
+  },
+  {
+    "check": "3.5 NEVER jump scare",
+    "count": 0,
+    "severity": "OK",
+    "detail": "[]",
+    "layer": "LAYER 3 — FORBIDDEN WORDS"
+  },
+  {
+    "check": "3.6 NEVER exorcism",
+    "count": 0,
+    "severity": "OK",
+    "detail": "[]",
+    "layer": "LAYER 3 — FORBIDDEN WORDS"
+  },
+  {
+    "check": "3.7 Driver unauthorized speech (non-milestone)",
+    "count": 35,
+    "severity": "MEDIUM",
+    "detail": "[(2, 4), (3, 3), (4, 4), (5, 4), (6, 3)]",
+    "layer": "LAYER 3 — FORBIDDEN WORDS"
+  },
+  {
+    "check": "3.8 Bell > 1 per EP",
+    "count": 0,
+    "severity": "OK",
+    "detail": "[]",
+    "layer": "LAYER 3 — FORBIDDEN WORDS"
+  },
+  {
+    "check": "3.9 \"Khải Phong Nguyễn\" name leak outside EP30",
+    "count": 0,
+    "severity": "OK",
+    "detail": "0",
+    "layer": "LAYER 3 — FORBIDDEN WORDS"
+  },
+  {
+    "check": "3.10 Naked \"Hà\" leak",
+    "count": 0,
+    "severity": "OK",
+    "detail": "[]",
+    "layer": "LAYER 3 — FORBIDDEN WORDS"
+  },
+  {
+    "check": "4.1 R4 \"Bất chợt\" mispronunciation risk",
+    "count": 0,
+    "severity": "OK",
+    "detail": "[]",
+    "layer": "LAYER 4 — TTS ISSUES"
+  },
+  {
+    "check": "4.2 R88 double preposition errors",
+    "count": 0,
+    "severity": "OK",
+    "detail": "[]",
+    "layer": "LAYER 4 — TTS ISSUES"
+  },
+  {
+    "check": "4.3 R76 open-vowel line-end excess",
+    "count": 4,
+    "severity": "LOW",
+    "detail": "[(1, 25), (5, 21), (19, 16), (30, 16)]",
+    "layer": "LAYER 4 — TTS ISSUES"
+  },
+  {
+    "check": "4.4 R75 em-dash style (intentional)",
+    "count": 0,
+    "severity": "OK",
+    "detail": "Style mark intentional, skip auto-check",
+    "layer": "LAYER 4 — TTS ISSUES"
+  },
+  {
+    "check": "4.5 R77 short fragment chain >= 5",
+    "count": 15,
+    "severity": "MEDIUM",
+    "detail": "[(7, 5), (8, 5), (9, 6), (12, 5), (14, 5)]",
+    "layer": "LAYER 4 — TTS ISSUES"
+  },
+  {
+    "check": "4.6 R87 \"thở hắt ra\" context (death only)",
+    "count": 0,
+    "severity": "OK",
+    "detail": "[]",
+    "layer": "LAYER 4 — TTS ISSUES"
+  },
+  {
+    "check": "4.7 R86 action+dialogue repeat (manual check)",
+    "count": 0,
+    "severity": "OK",
+    "detail": "Requires manual check per character/EP",
+    "layer": "LAYER 4 — TTS ISSUES"
+  },
+  {
+    "check": "4.8 R78 voice carryover (skip — auto-fix in TTS render)",
+    "count": 0,
+    "severity": "OK",
+    "detail": "Render-time check",
+    "layer": "LAYER 4 — TTS ISSUES"
+  },
+  {
+    "check": "4.9 Arabic numbers > 10/EP (TTS prefers written)",
+    "count": 1,
+    "severity": "LOW",
+    "detail": "[(1, 56)]",
+    "layer": "LAYER 4 — TTS ISSUES"
+  },
+  {
+    "check": "4.10 [pause:XXXms] count < 10/EP",
+    "count": 0,
+    "severity": "OK",
+    "detail": "[]",
+    "layer": "LAYER 4 — TTS ISSUES"
+  }
+]

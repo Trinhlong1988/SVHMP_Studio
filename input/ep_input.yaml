@@ -1,0 +1,59 @@
+# 05_EPISODE_INPUT — per-ep config, overwrite mỗi ep.
+# Current: chuẩn bị ep_2 (sau Ep01 đã ship PASS QA placeholder).
+
+episode_metadata:
+  episode_number: 2
+  season: 1
+  title: AUTO_GENERATE             # hoặc fix nếu user chốt
+  variant: AUTO                    # A/B/C, ≠ last (last = A → ép 2 = B or C)
+  estimated_duration_minutes: [12, 14]
+
+story_constraints:
+  target_words: [1700, 2000]
+  target_duration_minutes: [12, 14]
+  fear_source: unsaid_words        # 1 trong soul_dna.fear_source_valid
+  required_beats:
+    - beat_1
+    - beat_2
+    - beat_3
+    - beat_4
+    - beat_5
+  required_aftertaste: AUTO         # ≠ last "ám ảnh nhẹ" — chọn "buồn" hoặc "nghẹn"
+
+input_passenger:
+  leaving_seat: AUTO                # 1-12, exclude PAS_0007 (carry ARC_0001)
+  leaving_passenger_id: AUTO        # bind theo leaving_seat
+  new_passenger:
+    id_template: PAS_{:04d}         # next available = PAS_0013
+    seat: AUTO                      # = leaving_seat
+    display_name: AUTO
+    object_held: AUTO
+    pending_regret: AUTO
+    constraint_regret_archetype:    # diversify, KHÔNG dùng:
+      already_used_last_3_eps: [unspoken_love]
+    constraint_relationship_archetype: # diversify, KHÔNG dùng:
+      already_used_last_3_eps: [lover]
+
+stop_location: AUTO                 # exclude "Cầu Long Biên"
+bell_count: AUTO                    # 1 (tension establish phase low-mid)
+
+arc_carryover:
+  - ARC_0001                        # còn OPEN, plant_ep=1, payoff_ep=7
+
+plant_new_arc: OPTIONAL              # nếu cần plant ARC mới ep 2
+
+state_input:
+  series_bible: "../01_series_bible.yaml"
+  lore_bible: "../02_lore_bible.yaml"
+  character_bible: "../03_character_bible.yaml"
+  state: "../04_state.yaml"
+
+generator_options:
+  metrics_source: external          # parser ngoài, KHÔNG dùng generator self-count
+  tts_enabled: true
+  qa_run_after: true
+
+output_paths:
+  episode: "../output/ep_{ep_number}/episode.md"
+  qa: "../output/ep_{ep_number}/qa_output.yaml"
+  state_diff: "../output/ep_{ep_number}/state_diff.yaml"

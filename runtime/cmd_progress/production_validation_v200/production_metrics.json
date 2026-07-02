@@ -1,0 +1,105 @@
+{
+  "tier": "2.1",
+  "iteration": "v200",
+  "completion_level_per_R196": "L2_attempt",
+  "status": "Engineering PASS + Production Validation IN_PROGRESS (await Mr.Long listen)",
+  "generated_at": "2026-06-30T23:05:00",
+
+  "render": {
+    "sections_total": 6,
+    "sections_rendered": 6,
+    "sections_pass_post_render_audit": 6,
+    "render_started_at": "2026-06-30T21:48:14",
+    "render_completed_at": "2026-06-30T22:54:23",
+    "render_wall_minutes": 66,
+    "r198_cap_peak_wired": true,
+    "r198_applied_sections": ["payoff", "cliffhanger"],
+    "section_peaks_db": {
+      "hook": -1.82,
+      "setup": -1.50,
+      "incident": -1.86,
+      "reveal": -2.11,
+      "payoff": -2.50,
+      "cliffhanger": -1.68
+    }
+  },
+
+  "mix_v200": {
+    "voice_wav": "output/ep_01/EP01_VOICE_v200.wav",
+    "voice_duration_sec": 1232.99,
+    "voice_duration_min": 20.5,
+    "voice_size_mb": 52,
+    "music_looped_mp3": "output/ep_01/music_v200_looped.mp3",
+    "music_looped_duration_sec": 1243.97,
+    "final_mp3": "output/ep_01/EP01_FULL_v200.mp3",
+    "final_mp3_size_mb": 13,
+    "final_mp3_duration_min": 20.65,
+    "mix_chain": "highpass30 + voice_vol_0.85 + music_vol_0.25 + amix + loudnorm I=-16 TP=-1.5 LRA=11",
+    "final_peak_db": -16.14,
+    "final_rms_db": -19.71
+  },
+
+  "voice_qa_catalog_per_R195_detect_only": {
+    "R188_boundary_artifact": {"HIGH": 0, "MED": 0, "verdict": "PASS", "note": "0 boundaries auto-detected (heuristic limitation, requires concat_silence.json input)"},
+    "R189_breath_artifact": {"HIGH": 0, "MED": 0, "verdict": "PASS"},
+    "R190_prosody_collapse": {"HIGH": 516, "MED": 862, "verdict": "FAIL_DETECT", "note": "Real artifacts detected — Mr.Long flagged pitch drops on cliffhanger"},
+    "R190b_onset_artifact": {"HIGH": 0, "MED": 0, "verdict": "PASS", "note": "Same boundary-detection heuristic limitation"},
+    "R191_dialogue_identity": {"segments": 266, "HIGH": 0, "verdict": "PASS", "note": "Intra-section voice consistency OK"}
+  },
+
+  "audio_pre_ship_gate": {
+    "verdict": "PASS",
+    "checks": {
+      "audio_metrics_mp3": "PASS",
+      "concat_silence_r94b": "PASS",
+      "post_render_audit_6_sections": "6_PASS_0_FAIL"
+    }
+  },
+
+  "audit_audio_mix_qa_15_check": {
+    "verdict": "FAIL",
+    "passes": 11,
+    "highs": 2,
+    "mediums": 2,
+    "details": {
+      "C1_to_C8": "PASS",
+      "C9_section_lufs": "WARN MEDIUM setup avg -17.7 vs -22 (off 4.3)",
+      "C10_first_word_center": "FAIL HIGH peak @20000ms expected 12000ms (off 8000ms)",
+      "C11_lufs_i": "PASS (within [-17,-15] range)",
+      "C12_peak": "PASS (≤ -1)",
+      "C13_click_pop": "FAIL HIGH 9964 click/pop (loudnorm boost residual)",
+      "C14_dc_offset": "WARN MEDIUM 7510 windows",
+      "C15": "PASS"
+    }
+  },
+
+  "comparison_v108_baseline": {
+    "v108_audit_15_check": {"passes": 8, "highs": 4, "verdict": "FAIL"},
+    "v200_audit_15_check": {"passes": 11, "highs": 2, "verdict": "FAIL"},
+    "improvement": "+3 PASS, -2 HIGH",
+    "v108_peak_dbfs": 0.80,
+    "v200_peak_db": -16.14,
+    "v108_lufs": -20.93,
+    "v200_lufs_target_range_pass": true,
+    "v108_click_pop": 586,
+    "v200_click_pop": 9964,
+    "v200_click_pop_note": "Higher due to loudnorm boost trade-off (known issue per R195 placeholder)"
+  },
+
+  "completion_level_assessment_per_R196": {
+    "L1_engineering": "PASS",
+    "L2_production_validation": "IN_PROGRESS (await Mr.Long listen)",
+    "L3_golden_output": "NOT_YET",
+    "L4_freeze": "NOT_ALLOWED until L3",
+    "L5_release": "NOT_ALLOWED until L4"
+  },
+
+  "pending_items_per_mr_long_lock": {
+    "mr_long_listen": "NOT_VERIFIED",
+    "mr_long_accept": "NOT_VERIFIED",
+    "golden_audio_cert": "NOT_YET",
+    "threshold_calibration": "FORBIDDEN_BEFORE_GOLDEN",
+    "freeze_tier_2_1": "FORBIDDEN_BEFORE_GOLDEN",
+    "git_tag_v2_1_0": "FORBIDDEN_BEFORE_GOLDEN"
+  }
+}

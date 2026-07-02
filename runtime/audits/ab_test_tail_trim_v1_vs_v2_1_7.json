@@ -1,0 +1,66 @@
+[
+  {
+    "file": "A_rp10.0.wav",
+    "orig_s": 10.995,
+    "v1_out_s": 10.995,
+    "v2_out_s": 10.037,
+    "diff_ms": 957.3,
+    "verdict": "V2_CUT_MORE (potential tail burst/runaway removed)"
+  },
+  {
+    "file": "B_rp2.0.wav",
+    "orig_s": 29.954,
+    "v1_out_s": 29.954,
+    "v2_out_s": 9.968,
+    "diff_ms": 19986.2,
+    "verdict": "RUNAWAY_FIXED_BY_V2"
+  },
+  {
+    "file": "C_rp1.2.wav",
+    "orig_s": 29.954,
+    "v1_out_s": 29.954,
+    "v2_out_s": 9.878,
+    "diff_ms": 20076.0,
+    "verdict": "RUNAWAY_FIXED_BY_V2"
+  },
+  {
+    "file": "A_full_single.wav",
+    "orig_s": 10.995,
+    "v1_out_s": 10.995,
+    "v2_out_s": 10.037,
+    "diff_ms": 957.3,
+    "verdict": "V2_CUT_MORE (potential tail burst/runaway removed)"
+  },
+  {
+    "file": "A_seed42_fixed.wav",
+    "orig_s": 10.995,
+    "v1_out_s": 10.995,
+    "v2_out_s": 10.037,
+    "diff_ms": 957.3,
+    "verdict": "V2_CUT_MORE (potential tail burst/runaway removed)"
+  },
+  {
+    "file": "B_seed42_plus_index.wav",
+    "orig_s": 10.995,
+    "v1_out_s": 10.995,
+    "v2_out_s": 10.037,
+    "diff_ms": 957.3,
+    "verdict": "V2_CUT_MORE (potential tail burst/runaway removed)"
+  },
+  {
+    "file": "A_current_surprised40.wav",
+    "orig_s": 10.995,
+    "v1_out_s": 10.995,
+    "v2_out_s": 10.037,
+    "diff_ms": 957.3,
+    "verdict": "V2_CUT_MORE (potential tail burst/runaway removed)"
+  },
+  {
+    "file": "B_calm_higher60.wav",
+    "orig_s": 9.903,
+    "v1_out_s": 9.763,
+    "v2_out_s": 9.818,
+    "diff_ms": -55.1,
+    "verdict": "v1≈v2 (regular chunk)"
+  }
+]

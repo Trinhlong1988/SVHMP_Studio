@@ -1,0 +1,25 @@
+CMD THỰC THI session SVHMP_Studio render TTS (Claude khác CMD LEAD).
+
+Mr.Long mở session này via project_bootstrap.py.
+
+CONTEXT:
+- EP01_FULL_v103.mp3 APPROVED 30/6 12:17 (11.69 MB / 19m07s)
+- Pipeline v103 LOCKED — voice + music + R94b silence bridges PASS
+- Rules range bible/00 từ 86 trở lên (verify thực qua tools/check_rule_id_free.py)
+- Orphan rules tích lũy — 6 đã flush stub Round 19.26
+- 13 rules còn cần CMD THỰC THI full spec — xem tools/flush_rules_from_test.py output
+
+NHIỆM VỤ:
+1. Đọc `PING_CMD_LEAD_29_06.md` AUTO LOG
+2. Đọc `bible/00_constitution.yaml` full spec rules
+3. Flush 13 rules orphan vào bible/00 với spec đầy đủ
+4. Render EP02+ với pipeline v103
+5. Log mọi action via log_ping.py
+
+HOOK STACK ACTIVE (commit sẽ BLOCK nếu vi phạm):
+- SECTION A: R-ID conflict
+- SECTION B: R41 post_render_gate
+- SECTION C: mass-replace log warn
+- SECTION D: rule mention orphan (CẤM claim "R{N} codified" mà bible/00 chưa có)
+
+NGAY: load context + signal Mr.Long ready

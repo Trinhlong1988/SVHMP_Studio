@@ -1,0 +1,90 @@
+# VNQA — AI-tell Vietnamese words (cross-genre baseline)
+# Lock date: 2026-06-26
+# Inherit from bible/22_anti_slop_vi.yaml + augment cross-genre overrides.
+
+schema_version: 1
+description: Vietnamese AI-tell words detected via overuse patterns. Per-genre override threshold.
+
+tier_1_kill_on_sight:
+  default_max_per_ep: 3
+  words:
+    - word: "đột nhiên"
+      reason: "transition mặc định AI lạm dụng"
+      alternatives: [bỗng, chợt, vụt nhiên, thoáng cái, lúc đó]
+      genre_overrides:
+        news_broadcast: 1
+        podcast_casual: 5
+
+    - word: "bỗng nhiên"
+      reason: "tương tự đột nhiên, rhythm flat"
+      alternatives: [bỗng, chợt, lúc đó]
+
+    - word: "trong khoảnh khắc đó"
+      reason: "cliché AI horror Vietnamese"
+      alternatives: [lúc ấy, khi đó, giây phút ấy]
+      genre_overrides:
+        news_broadcast: 0       # news không dùng
+        podcast_casual: 2
+
+    - word: "không thể nào quên"
+      reason: "AI horror cliché — telling instead of showing"
+      alternatives: ["còn nhớ rõ", "in sâu trí", "vẫn nhớ từng chi tiết"]
+
+    - word: "như thể"
+      reason: "simile crutch overuse"
+      alternatives: [như, tưởng chừng, cứ như]
+      genre_overrides:
+        novel_literary: 5      # văn học dùng nhiều OK
+
+    - word: "có lẽ"
+      reason: "hedge AI — narrator unconfident"
+      alternatives: [có thể, hình như, biết đâu]
+      genre_overrides:
+        news_broadcast: 1
+        podcast_casual: 8
+
+    - word: "dường như"
+      reason: "hedge same với 'có lẽ'"
+      alternatives: [hình như, có vẻ, tưởng chừng]
+
+    - word: "vô cùng"
+      reason: "adverb generic AI"
+      alternatives: [rất, quá, lắm, kinh khủng, đến mức]
+
+    - word: "thầm lặng"
+      reason: "adjective AI horror cliché"
+      alternatives: [im lìm, lặng lẽ, không tiếng động]
+
+    - word: "rùng mình"
+      reason: "cliché horror reaction. Show body specific."
+      alternatives: ["tóc gáy dựng đứng", "cổ lạnh ngắt", "tim hụt nhịp"]
+
+tier_2_cluster_suspicious:
+  default_threshold_cluster_per_paragraph: 3
+  words:
+    - "thoáng"
+    - "khẽ"
+    - "se sẽ"
+    - "lặng lẽ"
+    - "dần dần"
+    - "nhẹ nhàng"
+    - "chậm rãi"
+    - "vô hình"
+    - "ánh mắt"
+    - "khuôn mặt"
+
+tier_3_filler_always_delete:
+  default_action: always_delete
+  phrases:
+    - "Trong khi đó,"
+    - "Mặt khác,"
+    - "Đáng chú ý,"
+    - "Đáng kể,"
+    - "Cần lưu ý rằng"
+    - "Có một điều đặc biệt là"
+    - "Thực ra,"
+    - "Nói chung,"
+    - "Một cách nào đó,"
+  genre_overrides:
+    news_broadcast:
+      keep_allowed: ["Mặt khác,", "Trong khi đó,"]    # news OK dùng transition formal
