@@ -56,5 +56,6 @@ def test_pack3_docs_reference_real_enforcers():
     }
     for name, rel in enforcers.items():
         assert (REPO / rel).exists(), f'{name} enforcer thieu tren disk: {rel}'
-        assert rel.split('/')[-1] in (PACK3 / name).read_text(encoding='utf-8'), \
-            f'{name} khong reference enforcer {rel}'
+        doc_text = (PACK3 / name).read_text(encoding='utf-8')
+        basename = rel.split('/')[-1]
+        assert basename in doc_text, f'{name} khong reference enforcer {rel}'

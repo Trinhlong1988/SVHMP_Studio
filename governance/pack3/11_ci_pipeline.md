@@ -7,7 +7,10 @@
 **Authority:** Phái sinh từ PACK1 Constitution (`constitution/00`) + registry R211; doc không tự tạo quyền.
 **Responsibilities:** Enforcer `tools/ci_gate.py` · Certify `tests/test_ci_suite.py` · re-entrancy guard env `SVHMP_CI_GATE_PYTEST_RUNNING` (chống fork-bomb).
 **Workflow:** registry → R199/203/205/206/207/208 → pytest_suite → verdict (fail 1 stage = BLOCK, exit 1).
-**Mandatory Rules · PASS Criteria · FAIL Criteria · Examples:** xem bảng dưới (PASS=mọi stage exit 0; FAIL=1 stage exit≠0 → CI GATE FAIL exit 1; ví dụ registry UNMAPPED>0 → BLOCK).
+**Mandatory Rules:** chuỗi stage gate máy (bảng dưới) — mọi commit/push qua `ci_gate.py`, fail 1 stage = BLOCK.
+**PASS Criteria:** mọi stage exit 0 → CI GATE PASS.
+**FAIL Criteria:** 1 stage exit ≠ 0 → CI GATE FAIL, exit 1.
+**Examples:** registry UNMAPPED > 0 → BLOCK; 1 test đỏ → BLOCK.
 **Promotion Rules:** theo mục Promotion Rules ở `governance/constitution/00_constitution.md` — reconcile, KHÔNG nhân đôi.
 
 ## Stage gate (máy sinh)

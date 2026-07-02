@@ -7,7 +7,10 @@
 **Authority:** Independent auditor / LEAD (R1); Builder chỉ ĐỀ XUẤT (`05_builder_hard_gate`).
 **Responsibilities:** Enforcer `auditor.py` (SHIP/BLOCK) + hard-gate 05 · Certify `test_builder_hard_gate.py` · Builder CẤM tự `locked`/tag.
 **Workflow:** Builder `READY_FOR_AUDIT=YES` → independent auditor chạy freeze-gate 16-phase → SHIP → LEAD (R1) ký → `promotion_status→locked` + tag.
-**Mandatory Rules · PASS Criteria · FAIL Criteria · Examples:** xem dưới (PASS=independent auditor SHIP + LEAD duyệt; FAIL=Builder tự freeze/tag → vi phạm 05; ví dụ PACK2 v1.0 = ngoại lệ LEAD-ratified một lần).
+**Mandatory Rules:** release gate 3 bước (bảng dưới) — freeze do independent auditor + LEAD.
+**PASS Criteria:** independent auditor SHIP + LEAD duyệt.
+**FAIL Criteria:** Builder tự freeze/tag → vi phạm 05.
+**Examples:** PACK2 v1.0 = ngoại lệ LEAD-ratified một lần.
 **Promotion Rules:** theo mục Promotion Rules ở `governance/constitution/00_constitution.md` — reconcile, KHÔNG nhân đôi.
 
 ## Release gate (3 bước)

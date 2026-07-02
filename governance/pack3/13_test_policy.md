@@ -7,7 +7,10 @@
 **Authority:** Phái sinh từ PACK1 Constitution (`constitution/00`); doc không tự tạo quyền.
 **Responsibilities:** Enforcer `conftest.collect_ignore` (EXACT-filename, KHÔNG glob) · Certify pytest collect count · Builder CẤM skip/xoá test đỏ.
 **Workflow:** pytest-func → `pytest tests/` tự collect; script-style → CHECKS trong `ci_gate` (subprocess) + `collect_ignore` exact.
-**Mandatory Rules · PASS Criteria · FAIL Criteria · Examples:** xem dưới (PASS=mỗi loại chạy đúng kênh, 0 test ẩn; FAIL=pytest-func bị glob ignore / test đỏ bị skip; ví dụ `test_voice_qa_tools` ignore vì FN F8 chưa calibrate — có lý do log).
+**Mandatory Rules:** taxonomy + luật collect (dưới) — mỗi loại test chạy đúng kênh.
+**PASS Criteria:** mỗi loại chạy đúng kênh, 0 test ẩn.
+**FAIL Criteria:** pytest-func bị glob ignore, hoặc test đỏ bị skip.
+**Examples:** `test_voice_qa_tools` ignore vì FN F8 chưa calibrate (có lý do log).
 **Promotion Rules:** theo mục Promotion Rules ở `governance/constitution/00_constitution.md` — reconcile, KHÔNG nhân đôi.
 
 ## Loại test bắt buộc

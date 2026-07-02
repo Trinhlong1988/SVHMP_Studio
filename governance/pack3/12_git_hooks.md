@@ -7,7 +7,10 @@
 **Authority:** Phái sinh từ PACK1 Constitution (`constitution/00`) + R41 HARDLOCK; doc không tự tạo quyền.
 **Responsibilities:** Enforcer `.githooks/*` (Python wrapper, MinGit-safe) · Certify `tests/test_hooks_wired.py` (chống "built≠wired" F1).
 **Workflow:** pre-commit (R-ID conflict + rule-mention codified + mass-replace + R41 post_render_gate) → cho commit; pre-push (`ci_gate.py`) → cho push.
-**Mandatory Rules · PASS Criteria · FAIL Criteria · Examples:** xem dưới (PASS=guard exit 0; FAIL=guard exit 1 → commit/push BLOCK; ví dụ R{N} occupied → block, ci_gate FAIL → push block).
+**Mandatory Rules:** hook guards (bảng dưới) chạy tại commit/push.
+**PASS Criteria:** mọi guard exit 0 → cho commit/push.
+**FAIL Criteria:** guard exit 1 → commit/push BLOCK.
+**Examples:** R{N} occupied → commit block; ci_gate FAIL → push block.
 **Promotion Rules:** theo mục Promotion Rules ở `governance/constitution/00_constitution.md` — reconcile, KHÔNG nhân đôi.
 
 ## Hooks
