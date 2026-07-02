@@ -1,5 +1,5 @@
 # PACK 3 — 11_ci_pipeline.md — CI Pipeline
-> Enforce: `tools/ci_gate.py` · chứng thực: `tests/test_ci_suite.py` + pytest.
+> Enforce: `tools/ci_gate.py` (client-side) + `.github/workflows/ci.yml` (server-side) · chứng thực: `tests/test_ci_suite.py` + pytest.
 
 **Mission:** Bảo đảm KHÔNG commit/push nào lọt mà chưa qua chuỗi gate máy — chống regression + báo cáo láo.
 **Purpose:** Định nghĩa các stage CI tuần tự + verdict PASS/FAIL.
@@ -19,6 +19,9 @@
 | 1 | registry | `architecture_registry_check.py` | BLOCK nếu MISSING/DUP/UNMAPPED > 0 |
 | 2 | R199/203/205/206/207/208 | test script (subprocess exit) | BLOCK |
 | 3 | pytest_suite | `pytest tests/` | BLOCK nếu 1 test đỏ |
+
+## Server-side CI (chống hook-inert)
+Git hook client-side có thể INERT (hooksPath rỗng / MinGit / máy chưa bootstrap) → từng để commit hỏng lọt lên origin. **`.github/workflows/ci.yml`** chạy `ci_gate.py` trên GitHub mỗi `push`/`pull_request` vào `main` — **cưỡng chế BẤT KỂ trạng thái hook của từng máy**. Đây là chốt gate không phụ thuộc client. (CD/deploy tự động: chưa có — thuộc pack sau.)
 
 ## Reconcile
 Không thay `09_review_workflow` — `ci_gate` = chặng QA Auditor trong chuỗi đó. Re-entrancy guard chống đệ quy R213→auditor→ci_gate→pytest (fork-bomb). KHÔNG nhân đôi luật gate của hook (12) — hook chỉ chạy cùng gate sớm hơn.

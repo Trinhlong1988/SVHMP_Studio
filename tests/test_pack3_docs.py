@@ -59,3 +59,14 @@ def test_pack3_docs_reference_real_enforcers():
         doc_text = (PACK3 / name).read_text(encoding='utf-8')
         basename = rel.split('/')[-1]
         assert basename in doc_text, f'{name} khong reference enforcer {rel}'
+
+
+def test_server_side_ci_wired():
+    """Server-side CI PHAI ton tai + duoc 11_ci_pipeline tham chieu (chong
+    'CI/CD' overclaim khi chi co hook client-side co the inert)."""
+    wf = REPO / '.github' / 'workflows' / 'ci.yml'
+    assert wf.exists(), 'thieu .github/workflows/ci.yml (CI server-side)'
+    body = wf.read_text(encoding='utf-8')
+    assert 'ci_gate.py' in body, 'workflow khong chay tools/ci_gate.py'
+    doc = (PACK3 / '11_ci_pipeline.md').read_text(encoding='utf-8')
+    assert 'ci.yml' in doc, '11_ci_pipeline.md khong reference .github/workflows/ci.yml'
