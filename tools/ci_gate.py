@@ -1,6 +1,7 @@
 """SVHMP — CI GATE (Boss 2/7): bat buoc chay TRUOC push (git pre-push hook goi).
 Chay registry check + regression test lõi. FAIL bat ky -> exit 1 -> chan push.
 """
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -8,6 +9,12 @@ sys.stdout.reconfigure(encoding='utf-8') if hasattr(sys.stdout, 'reconfigure') e
 
 SVHMP = Path(__file__).parent.parent
 PY = sys.executable
+
+# Re-entrancy guard: the pytest suite (tests/) contains R213 which runs auditor.py,
+# which runs ci_gate.py again. Without this guard the pytest step below would recurse
+# infinitely (ci_gate -> pytest -> R213 -> auditor -> ci_gate -> pytest -> ...).
+# We only launch pytest at the OUTERMOST ci_gate; nested invocations skip it.
+_PYTEST_GUARD = 'SVHMP_CI_GATE_PYTEST_RUNNING'
 
 CHECKS = [
     ('registry',  'tools/architecture_registry_check.py'),
@@ -18,6 +25,14 @@ CHECKS = [
     ('R207_canon', 'tests/test_story_consistency_1000_r207.py'),
     ('R208_age',  'tests/test_dialogue_appropriateness_1000_r208.py'),
 ]
+
+
+def _pytest_summary(out):
+    """Trich dong tom tat cuoi cua pytest (vd '32 passed in 27s') de lam evidence."""
+    for line in reversed((out or '').strip().splitlines()):
+        if 'passed' in line or 'failed' in line or 'error' in line:
+            return line.strip()
+    return '(no pytest summary)'
 
 
 def main():
@@ -31,6 +46,25 @@ def main():
             fail += 1
             print((r.stdout or '')[-400:])
             print((r.stderr or '')[-200:])
+    # Constitution 03_qa_auditor.md: PASS = "ci_gate exit 0, pytest all pass";
+    # scope bao gom governance enforce R209/R212/R213/R214 (pytest-func tests).
+    # Chay ca pytest suite (tests/) de dong khe ho: script-style tests o tren KHONG
+    # phu R209/R212/R213/R214 va cac case pytest-func khac.
+    if os.environ.get(_PYTEST_GUARD):
+        # Nested ci_gate (goi tu pytest R213 -> auditor). Bo qua de tranh de quy vo han;
+        # pytest tang ngoai cung da/dang enforce toan bo suite.
+        print("  [SKIP] pytest_suite (re-entrant: da o trong pytest do ci_gate khoi chay)")
+    else:
+        env = dict(os.environ, **{_PYTEST_GUARD: '1'})
+        pt = subprocess.run([PY, '-m', 'pytest', 'tests/', '-q'],
+                            capture_output=True, text=True, cwd=str(SVHMP), env=env)
+        pt_ok = pt.returncode == 0
+        summary = _pytest_summary(pt.stdout)
+        print(f"  [{'PASS' if pt_ok else 'FAIL'}] pytest_suite (exit {pt.returncode}) — {summary}")
+        if not pt_ok:
+            fail += 1
+            print((pt.stdout or '')[-600:])
+            print((pt.stderr or '')[-200:])
     print(f"=== CI GATE: {'PASS ✅' if not fail else f'FAIL ❌ ({fail})'} ===")
     sys.exit(1 if fail else 0)
 
