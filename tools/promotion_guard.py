@@ -59,18 +59,30 @@ def is_authorized(messages):
     return AUTH_PHRASE in (messages or '').lower()
 
 
-def decide(lock_change, tag_change, authorized):
+# Tripwire chong WIPE (su co 2/7: origin mat 1037 file trong 1 push): push xoa
+# qua nguong nay ma khong uy quyen -> BLOCK. Refactor lon hop le thi xin uy quyen.
+MASS_DELETE_LIMIT = 50
+
+
+def count_deleted_files(diff_text):
+    """Dem file bi XOA trong unified diff ('+++ /dev/null' moi file xoa 1 lan)."""
+    return sum(1 for ln in (diff_text or '').splitlines() if ln.strip() == '+++ /dev/null')
+
+
+def decide(lock_change, tag_change, authorized, mass_delete=0):
     """Logic thuan — de test NEGATIVE truc tiep, khong can git."""
-    if (lock_change or tag_change) and not authorized:
-        what = []
-        if lock_change:
-            what.append("doi promotion_status/pack -> 'locked'")
-        if tag_change:
-            what.append("tao/push release tag pack*-v*")
-        return 1, ('BLOCK: ' + ' + '.join(what) +
+    violations = []
+    if lock_change:
+        violations.append("doi promotion_status/pack -> 'locked'")
+    if tag_change:
+        violations.append("tao/push release tag pack*-v*")
+    if mass_delete > MASS_DELETE_LIMIT:
+        violations.append(f"XOA {mass_delete} file (> {MASS_DELETE_LIMIT} — chong wipe 2/7)")
+    if violations and not authorized:
+        return 1, ('BLOCK: ' + ' + '.join(violations) +
                    " — thieu \"per Mr.Long authorization\" trong commit message. "
-                   "Chi LEAD (Mr.Long) moi duoc lock/tag (05_builder_hard_gate).")
-    return 0, 'OK: khong co lock/tag chua uy quyen.'
+                   "Chi LEAD (Mr.Long) moi duoc lock/tag/mass-delete (05_builder_hard_gate).")
+    return 0, 'OK: khong co lock/tag/mass-delete chua uy quyen.'
 
 
 def _git(args, cwd=None):
@@ -91,7 +103,7 @@ def check_range(base, head, cwd=None, pushed_ref=None):
     msgs = _range_messages(base, head, cwd=cwd)
     lock = added_yaml_sets_locked(diff)
     tag = tag_from_ref(pushed_ref) is not None
-    return decide(lock, tag, is_authorized(msgs))
+    return decide(lock, tag, is_authorized(msgs), mass_delete=count_deleted_files(diff))
 
 
 def _from_prepush_stdin(stdin_text, cwd=None):
@@ -120,7 +132,8 @@ def _from_prepush_stdin(stdin_text, cwd=None):
             diff = _range_diff(remote_sha, local_sha, cwd=cwd)
             msgs = _range_messages(remote_sha, local_sha, cwd=cwd)
         lock = added_yaml_sets_locked(diff)
-        code, reason = decide(lock, tag, is_authorized(msgs))
+        code, reason = decide(lock, tag, is_authorized(msgs),
+                              mass_delete=count_deleted_files(diff))
         if code != 0:
             return code, f'[{local_ref}] {reason}'
     if not processed:

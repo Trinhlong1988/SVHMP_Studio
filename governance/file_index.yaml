@@ -196,6 +196,10 @@ files:
     domain: tests
     status: active
     tier: 3
+  tests/test_no_git_env_leak.py:
+    domain: tests
+    status: active
+    tier: 3
   tests/test_no_orphan_tests.py:
     domain: tests
     status: active

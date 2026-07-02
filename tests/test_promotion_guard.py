@@ -63,6 +63,20 @@ def test_tag_pattern():
     assert pg.tag_from_ref('refs/heads/main') is None
 
 
+def test_mass_delete_without_auth_blocks():
+    '''Tripwire chong wipe (su co 2/7): xoa > MASS_DELETE_LIMIT file khong uy quyen -> BLOCK.'''
+    assert pg.decide(False, False, False, mass_delete=pg.MASS_DELETE_LIMIT + 1)[0] == 1
+    assert pg.decide(False, False, True, mass_delete=pg.MASS_DELETE_LIMIT + 1)[0] == 0
+    assert pg.decide(False, False, False, mass_delete=pg.MASS_DELETE_LIMIT)[0] == 0
+
+
+def test_count_deleted_files():
+    diff = ('--- a/x.py\n+++ /dev/null\n@@\n-gone\n'
+            '--- a/y.py\n+++ /dev/null\n@@\n-gone\n'
+            '--- a/z.py\n+++ b/z.py\n@@\n+kept\n')
+    assert pg.count_deleted_files(diff) == 2
+
+
 def test_is_authorized():
     assert pg.is_authorized('feat: freeze pack1 per Mr.Long authorization') is True
     assert pg.is_authorized('feat: freeze pack1') is False

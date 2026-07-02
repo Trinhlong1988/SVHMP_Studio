@@ -1,3 +1,12 @@
+# MIEN DICH TOAN CUC (su co 2/7 — origin bi wipe 1037 file): pytest chay TRONG
+# git hook ke thua GIT_DIR/GIT_INDEX_FILE/GIT_WORK_TREE tro repo THAT -> test
+# spawn git danh vao repo that bat chap cwd=tmp_path. Xoa GIT_* ngay khi pytest
+# khoi dong -> MOI test (hien tai + tuong lai) an toan, khong phu thuoc tung tac
+# gia test nho scrub. Khoa boi tests/test_no_git_env_leak.py.
+import os
+for _k in [k for k in os.environ if k.startswith('GIT_')]:
+    del os.environ[_k]
+
 # pytest config — bo qua test script-style (chay bang python + sys.exit, khong phai pytest-func).
 # Chung duoc chay qua subprocess trong test_ci_suite.py (assert exit 0).
 #
