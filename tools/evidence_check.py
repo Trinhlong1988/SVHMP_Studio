@@ -6,7 +6,9 @@ Thieu bat ky -> exit 1 (report VO HIEU). Dung: `python tools/auditor.py | python
 import re
 import sys
 from pathlib import Path
-sys.stdout.reconfigure(encoding='utf-8') if hasattr(sys.stdout, 'reconfigure') else None
+
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
 
 # field -> regex chung minh su ton tai trong report
 REQUIRED = {
@@ -35,7 +37,7 @@ def main():
         print(f"[EVIDENCE FAIL] report THIEU {len(miss)} truong: {miss}")
         print("=== BLOCK (report vo hieu) ===")
         sys.exit(1)
-    print(f"[EVIDENCE OK] du 6 truong bang chung.  === PASS ===")
+    print("[EVIDENCE OK] du 6 truong bang chung.  === PASS ===")
     sys.exit(0)
 
 

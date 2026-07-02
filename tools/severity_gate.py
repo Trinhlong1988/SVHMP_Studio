@@ -3,7 +3,9 @@ Luat: CHI 'Critical' chan promotion (BLOCK). Major/Minor/Info = report, khong tu
 (chong spam chan). Findings: list[dict{severity}] hoac list[str].
 """
 import sys
-sys.stdout.reconfigure(encoding='utf-8') if hasattr(sys.stdout, 'reconfigure') else None
+
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
 
 SEVERITIES = ['Critical', 'Major', 'Minor', 'Info']
 BLOCKING = {'Critical'}

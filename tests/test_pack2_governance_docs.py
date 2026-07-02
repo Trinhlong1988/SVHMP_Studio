@@ -3,7 +3,8 @@
 Dong 2 lo hong enterprise-audit tim ra:
   1. Decision-matrix doc <-> auditor.decide() DRIFT: doc mo ta bang PASS/FAIL
      nhung khong test nao assert impl khop doc -> doc co the stale am tham.
-  2. PACK2 doc thieu 8-element enterprise template (Purpose/Scope/.../Promotion).
+  2. PACK2 doc thieu 11-element enterprise template (Mission/Purpose/Scope/
+     Authority/Responsibilities/Workflow/Mandatory/PASS/FAIL/Promotion/Examples).
 
 pytest-func -> chay trong `pytest tests/` va ci_gate.
 """
@@ -48,7 +49,7 @@ def test_decide_never_defaults_ship_on_empty():
     assert verdict == 'BLOCK_SHIP' and ec == 1
 
 
-# ---------- (2) PACK2 DOC 8-ELEMENT COMPLETENESS ----------
+# ---------- (2) PACK2 DOC 11-ELEMENT COMPLETENESS ----------
 
 def test_all_pack2_docs_exist_nonempty():
     for name in PACK2_DOCS:
@@ -57,8 +58,8 @@ def test_all_pack2_docs_exist_nonempty():
         assert p.stat().st_size > 0, f'PACK2 doc empty: {name}'
 
 
-def test_pack2_docs_have_8_elements():
-    """Moi doc PACK2 PHAI co du 8 element enterprise template (Phase 3 audit)."""
+def test_pack2_docs_have_11_elements():
+    """Moi doc PACK2 PHAI co du 11 element enterprise template (Phase 3 freeze-gate v1.0)."""
     missing = {}
     for name in PACK2_DOCS:
         text = (PACK2 / name).read_text(encoding='utf-8').lower()

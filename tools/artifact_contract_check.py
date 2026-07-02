@@ -5,8 +5,11 @@ DoD dims: schema/manager/validator/report/test/md_doc/sample_yaml/regression.
 """
 import sys
 from pathlib import Path
-sys.stdout.reconfigure(encoding='utf-8') if hasattr(sys.stdout, 'reconfigure') else None
+
 import yaml
+
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
 
 SVHMP = Path(__file__).parent.parent
 DIMS = ['schema', 'manager', 'validator', 'report', 'test', 'md_doc', 'sample_yaml', 'regression']
