@@ -10,7 +10,11 @@ import os, sys, json, time, subprocess, random, argparse, re, atexit
 from pathlib import Path
 import numpy as np
 import soundfile as sf
-import torch
+# G3 (2026-07-02): torch is lazy-imported inside set_all_seeds() only.
+# The QA-logic functions used by the CI gate (qa_clean_tail, tail-trim, intro
+# audit) do NOT touch torch, so a top-level import blocked QA tests on any
+# machine without the full ML stack. Deferring it keeps QA runnable everywhere
+# and off the CI's dependency surface, while render still gets full GPU seeding.
 
 sys.path.insert(0, os.path.expanduser(r'~/index-tts'))
 # Round 14: dashboard live render hook
@@ -57,6 +61,10 @@ GEN_KWARGS = {
 def set_all_seeds(seed=42):
     random.seed(seed)
     np.random.seed(seed)
+    try:
+        import torch  # lazy: only render needs it, QA logic does not
+    except ImportError:
+        return  # no ML stack (e.g. CI/QA box) — random+numpy seeded is enough
     torch.manual_seed(seed)
     if torch.cuda.is_available():
         torch.cuda.manual_seed_all(seed)

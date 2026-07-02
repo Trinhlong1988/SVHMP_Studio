@@ -244,6 +244,32 @@ class CharacterRegistry:
             'most_missing': dict(miss.most_common()),
         }
 
+    @staticmethod
+    def render_gate_lines(cg: dict, strict: bool) -> tuple:
+        """Format ket qua episode_completeness() cho render gate (single-source,
+        preflight + test deu goi). Return (warn_lines, block_issues):
+        strict=True -> char duoi nguong thanh block_issues (CHAN render);
+        strict=False -> chi warn_lines (WARN, KHONG chan)."""
+        warns, blocks = [], []
+        for c in cg.get('below', []):
+            msg = (f'CHAR {c["id"]} "{c["name"]}" '
+                   f'completeness={c["completeness"]} missing={c["missing"][:5]}')
+            (blocks if strict else warns).append(msg)
+        return warns, blocks
+
+    def episode_completeness(self, ep: int, threshold: float = 0.5) -> dict:
+        """G2 render-gate helper: Character DoD-completeness cho 1 episode.
+        Tra ve char trong ep + danh sach char DUOI nguong (skeleton). Preflight
+        (svhmp_preflight_qa) dung de WARN/BLOCK render. Single-source: preflight
+        va test deu goi ham nay, KHONG nhan doi logic."""
+        chars = self.by_ep(ep)
+        below = [
+            {'id': c.id, 'name': c.char_name,
+             'completeness': c.completeness(), 'missing': c.missing_ext()}
+            for c in chars if c.completeness() < threshold
+        ]
+        return {'ep': ep, 'total': len(chars), 'threshold': threshold, 'below': below}
+
     def save_enriched(self, out_path: Path):
         """Ghi roster DA ENRICH ra file rieng (khong de len skeleton goc)."""
         pas = []

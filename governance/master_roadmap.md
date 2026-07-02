@@ -31,7 +31,7 @@ _Hoàn thiện tổng thể + tái dùng cho tiểu thuyết / podcast / tình c
 |---|---|---|
 | **G0** | Tier-0 Governance (registry+checker+R211+ownership+change-gate) | ✅ **DONE** (evidence trên) |
 | **G1** | Triage 186 unmapped → gán domain / dedupe / mark deprecated | ✅ **DONE** (0 unmapped, strict-enforced F5) |
-| **G2** | Character domain DoD-complete: +sample YAML, secondary-cast, fill occupation/role, **WIRE completeness-gate** vào render | ~80% (schema/manager/4 validator/report/test done) |
+| **G2** | Character domain DoD-complete: **WIRE completeness-gate vào render ✅** (svhmp_preflight_qa CHARACTER_GATE, WARN-default + `--strict-characters` block + `--char-threshold`; `character_manager.episode_completeness`/`render_gate_lines` single-source; 7 test PASS). Còn: +sample YAML, secondary-cast, fill occupation/role (roster avg 0.23 → mở strict sau khi đầy) | ~92% (wire xong; còn fill data) |
 | **G3** | **Dialogue domain** — generator sinh thoại DÙNG voice profile (ROI cao nhất cho chất truyện) | ⏳ |
 | **G4** | World/Time/Event + Story Memory + Continuity/Timeline QA | ⏳ |
 | **G5** | Trích **generic-core** + `project_config` → chạy thử 1 project mẫu (romance-podcast) không sửa code | ⏳ (mốc tái dùng) |

@@ -180,6 +180,38 @@ if '--skip-r86' not in sys.argv:
     else:
         print('[FULL_TEXT_GATE] WARN: cannot detect ep_N from spec path, skip R86 broad')
 
+# ========================================================================
+# CHARACTER_COMPLETENESS_GATE (G2, 2026-07-02) — wire Character DoD vao render.
+# WARN-by-default: roster hien "vo dien" (avg completeness ~0.23, occupation/role
+# chua fill) nen HARD-block se chan MOI episode -> production dung. Gate nay chi
+# CANH BAO trong render log; them --strict-characters de BLOCK khi roster da day.
+# Nguong chinh qua --char-threshold=<0..1> (default 0.5). Khong bao gio crash render.
+# ========================================================================
+_strict_chars = '--strict-characters' in sys.argv
+_char_thr = 0.5
+for _a in sys.argv:
+    if _a.startswith('--char-threshold='):
+        try:
+            _char_thr = float(_a.split('=', 1)[1])
+        except ValueError:
+            pass
+try:
+    from character_manager import CharacterRegistry
+    _cg = CharacterRegistry().episode_completeness(_ep, _char_thr) if _ep else None
+    if _cg and _cg['total']:
+        mode = 'STRICT' if _strict_chars else 'WARN'
+        print(f'[CHARACTER_GATE:{mode}] ep{_ep}: {_cg["total"]} char(s), '
+              f'{len(_cg["below"])} below completeness {_char_thr}')
+        _warns, _blocks = CharacterRegistry.render_gate_lines(_cg, _strict_chars)
+        for _w in _warns:
+            print(f'  [WARN] {_w}')
+        for _b in _blocks:
+            issues.append(f'R-CHAR {_b}')
+    elif _ep:
+        print(f'[CHARACTER_GATE] ep{_ep}: no roster char mapped (assigned_ep) — skip')
+except Exception as _e:
+    print(f'[CHARACTER_GATE] WARN: skipped ({type(_e).__name__}: {_e})')
+
 if issues:
     print(f'PREFLIGHT FAIL — {len(issues)} issues')
     for iss in issues:

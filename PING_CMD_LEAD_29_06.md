@@ -321,6 +321,8 @@ SAU ĐÓ FIX CHẶT CHẼ CÁC s TRƯỚC KHI REN"
 
 ---
 ## AUTO LOG (tự động cập nhật)
+- `10:57` **[VIOLATION]** Mr.Long flag: SHARED-INDEX HAZARD: 2 session chung 1 working-tree/index. git status thay 7 file G2 staged (executor). 'git commit -F' se GOM nham G2 chua xong. Khuyen: moi session 1 worktree rieng (git worktree) HOAC chi 1 nguoi commit/luc. Kiem duyet KHONG commit tu day.
+- `10:56` **[FIX]** Em fix: G2 Character DoD: WIRE completeness-gate vao render (svhmp_preflight_qa CHARACTER_GATE, WARN-default + --strict-characters block + --char-threshold). character_manager.episode_completeness + render_gate_lines (single-source). 7 test PASS, ci_gate PASS (74 passed, registry 0/0/0). +G3 torch lazy-import (QA chay tren may khong ML stack).
 - `10:54` **[FIX]** Em fix: item2/3: qa_watch single-instance lock (het 2 daemon trung -> het flaky); project_health d4 sua false-HIGH sau F1 (check orchestrator, HIGH 1->0); verify_ping_claim them format rule_R{n}_ (F9, het bao nham codified missing). CMD THUC THI luu y: pre-commit gio la wrapper Python.
 - `10:50` **[INFO]** Info: qa_watch single-instance: da co PID 17744 — ban nay thoat
 - `10:50` **[INFO]** Info: CMD QA WATCH started loop 60s
