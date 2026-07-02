@@ -924,6 +924,10 @@ files:
     domain: audio_render
     status: active
     tier: 4
+  tools/validate_project_config.py:
+    domain: governance_audit
+    status: active
+    tier: 1
   tools/vary_bell_entry.py:
     domain: audio_render
     status: active

@@ -123,6 +123,11 @@ domains:
       - governance/pack3/12_git_hooks.md
       - governance/pack3/13_test_policy.md
       - governance/pack3/14_release_gate.md
+    pack4_template:
+      - governance/pack4/15_project_config.md
+      - governance/pack4/16_episode_scaffold.md
+      - governance/pack4/17_reuse_boundary.md
+      - governance/pack4/18_template_governance.md
     tests:
       - tests/test_governance_enforce_r209.py
       - tests/test_artifact_contract_r212.py
@@ -131,6 +136,7 @@ domains:
       - tests/test_pack2_governance_docs.py   # PACK2: decision-matrix drift guard + 11-element doc completeness
       - tests/test_builder_hard_gate.py   # PACK1: Builder Hard Gate v2 hard-rules locked (cam PASS/tag/freeze)
       - tests/test_pack3_docs.py   # PACK3: CI/CD 11-element doc completeness + enforcer-exists
+      - tests/test_pack4_docs.py   # PACK4: template 11-element doc completeness + enforcer-exists
     promotion_status: candidate   # PACK1 dang mo rong; 'locked' sau khi du 5 pack
     enterprise_pack_progress:
       pack1_constitution: candidate
