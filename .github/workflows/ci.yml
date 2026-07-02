@@ -24,8 +24,8 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install deps (minimal — gate + regression)
-        run: python -m pip install --upgrade pip pyyaml pytest numpy soundfile
+      - name: Install deps (gate + regression; librosa = voice-QA tools R188-R191)
+        run: python -m pip install --upgrade pip pyyaml pytest numpy soundfile librosa
 
       - name: CI GATE (registry 0/0/0 + regression pytest)
         run: python tools/ci_gate.py
