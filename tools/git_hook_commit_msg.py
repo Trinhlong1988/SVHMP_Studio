@@ -25,6 +25,22 @@ def main():
     if len(sys.argv) < 2:
         return 0
     msg = Path(sys.argv[1]).read_text(encoding="utf-8", errors="replace")
+
+    # deep-audit (2/7): WARN neu commit khai style/no-logic MA .py staged doi AST.
+    # KHONG block (refactor bao toan hanh vi cung doi AST -> block se false-pos);
+    # chi canh bao de nguoi commit doi nhan (refactor/feat) hoac tach commit.
+    # Wrap defensive: bat ky loi -> bo qua, TUYET DOI khong chan commit.
+    try:
+        import subprocess
+        cc = subprocess.run(
+            [sys.executable, str(SVHMP / "tools" / "verify_commit_claim.py"),
+             "--staged", "--msg", msg],
+            capture_output=True, text=True, encoding="utf-8", errors="replace")
+        if "khai 'no-logic" in (cc.stdout or ""):
+            print(cc.stdout.strip())
+    except Exception:
+        pass
+
     ids = set()
     for pat in PATS:
         for m in pat.finditer(msg):

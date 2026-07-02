@@ -184,6 +184,10 @@ files:
     domain: tests
     status: active
     tier: 3
+  tests/test_verify_commit_claim.py:
+    domain: tests
+    status: active
+    tier: 3
   tests/test_gate_wired_g2.py:
     domain: tests
     status: active
@@ -477,6 +481,10 @@ files:
     status: active
     tier: 0
   tools/ci_gate.py:
+    domain: governance_audit
+    status: active
+    tier: 0
+  tools/verify_commit_claim.py:
     domain: governance_audit
     status: active
     tier: 0
