@@ -147,7 +147,7 @@ domains:
       - tests/test_promotion_guard.py   # PACK1: promotion_guard hard-gate HANH VI (negative that: tu-lock/tu-tag khong uy quyen -> block)
       - tests/test_preflight_repo_path.py   # PACK5 BUG P0: khoa preflight path trong repo (cam hard-path C:\tmp + python tran)
       - tests/test_pack5_docs.py   # PACK5: quality 11-element doc completeness + enforcer-exists
-    promotion_status: candidate   # PACK1 dang mo rong; 'locked' sau khi du 5 pack
+    promotion_status: locked   # GOVERNANCE v1.0 (Mr.Long signed 2/7): DU 5 pack locked+tagged, freeze_gate 5/5 moi pack, cross-pack audit nhat quan; tag governance-v1.0
     enterprise_pack_progress:
       pack1_constitution: locked   # FROZEN v1.0 (Mr.Long authorized 2/7): 6 doc 11-element, promotion_guard HANH VI (pre-push+server-CI, battle-tested), test_pack1_docs; tag pack1-constitution-v1.0
       pack2_governance: locked   # FROZEN v1.0 (LEAD duyet 2/7): freeze-gate 16-phase PASS, auditor SHIP; tag pack2-governance-v1.0
