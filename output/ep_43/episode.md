@@ -1,0 +1,267 @@
+# TẬP 43 — LỜI HỨA TÔI NÓI BẠN ĐÊM TRƯỚC BẠN ĐI NGHĨA VỤ
+
+[INTRO 4.5s — HẮC DẠ KÝ master]
+
+[pause:800ms]
+
+Hắc Dạ Ký — chuyện kể từ cõi vô hình.
+
+[pause:600ms]
+
+Tác giả: Hắc Dạ Ký.
+
+[pause:600ms]
+
+Series: Chuyến xe cuối cùng về đâu.
+
+[pause:600ms]
+
+Ai cũng có một chuyến xe chưa nói lời tạm biệt.
+
+[pause:1000ms]
+
+Tập 43 — câu chuyện đêm nay.
+
+[pause:1500ms]
+
+---
+
+```
+prompt_version: SVHMP-10.0-RC3.6
+ep_number: 43
+phase: heightening (S2)
+pillar: promise
+intensity_level: 0.70
+quang_memory_fragment: M9 (Khải Phong nhớ điện thoại Hạ Vy đã trả bố mẹ em - không giữ)
+object_sub_arc: none
+callback_target: none
+passenger_main: nam 50 Văn Trường Bình Phước (hứa cưới khi bạn đi nghĩa vụ về - bạn không về)
+signature_object: OBJ_GIAY_CONG_DAN (giấy chứng nhận hoàn thành nghĩa vụ - bạn không nhận)
+signature_setting: setting_dem_thang_tu_HN
+stop_location: ngã ba Bình Phước
+bell_count: 1
+ghost_manifest: 1
+word_count: ~2300
+hand_crafted: true
+arc_design_compliant: bible/21 R33-R42
+```
+
+---
+
+# HOOK [section 1]
+
+[pause:800ms]
+
+Trời mưa đã rơi từ chiều. Đêm tháng tư — không tan hết rồi. Chuyến xe đêm đi qua đoạn đường ven rừng cao su Bình Phư, Hà Nội — đèn pha hắt lên hàng cây ướt sương. Đèn pha quét lên thân cao su trắng.
+
+Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi ba — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — bốn mươi hai vật.
+
+Bác tài lái.
+
+Đường rừng cao su quanh co. Đèn pha cắt qua thân cao su.
+
+Xe chậm lại trước một đài tưởng niệm liệt sĩ nhỏ — biển "Đài tưởng niệm liệt sĩ Bình Phước" — đèn vàng còn sáng. Một người đàn ông đứng đợi bên đài. Khoảng năm mươi tuổi. Áo sơ mi nâu xưa — quần kaki — tay phải cầm tờ giấy A4 đã ố vàng.
+
+Người đàn ông bước lên xe. Đi qua hàng ghế đầu — chân chậm lại. Ngồi xuống ghế thứ năm.
+
+Mở tờ giấy. Đọc lại. Tờ giấy là "Giấy chứng nhận hoàn thành nghĩa vụ quân sự" — tên người: "Trần Văn Hùng — 1995-1997."
+
+Xe lăn bánh.
+
+---
+
+# SETUP [section 2]
+
+[pause:600ms]
+
+Người đàn ông ngồi yên. Vuốt mép giấy. Đầu ngón tay anh thô — bàn tay làm nông cao su.
+
+Khải Phong quan sát từ ghế ba. Anh năm mươi — tóc bạc nửa — mặt rám nắng.
+
+Tờ giấy — Khải Phong nhìn ra — giấy nhà nước — chữ in đậm — chữ ký dấu mộc. Tên Trần Văn Hùng — không phải tên anh.
+
+Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng — tắt.
+
+[pause:500ms]
+
+Bác tài liếc gương. Không nói.
+
+Anh đọc lại tờ giấy lần nữa — như đã đọc nhiều lần.
+
+---
+
+# INCIDENT [section 3]
+
+[pause:500ms]
+
+Xe đi qua xóm xưa. Phía bên phải — căn nhà gạch nhỏ — sân nhỏ — cửa khép. Đèn dầu trong nhà còn sáng yếu.
+
+Cạnh cửa — bóng thanh niên trẻ đứng — chừng hai mươi tuổi — mặc đồng phục lính xưa. Không quay đầu.
+
+Anh ghế năm nhìn về phía đó.
+
+"Hùng..."
+
+Người đàn ông nói rất nhỏ.
+
+Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
+
+[pause:1000ms]
+
+Xe đi qua đó. Nhà gạch khuất.
+
+Người đàn ông quay đầu lại. Vuốt giấy.
+
+---
+
+# REVEAL [section 4]
+
+[pause:1000ms]
+
+"Tôi là Văn Trường. Cô gái năm mươi tuổi rồi. Người kể đây ở Bình Phước — quê. Hình ảnh người kể chuyện làm chủ vườn cao su — ba héc-ta."
+
+Giọng anh trầm.
+
+"Bạn thân nhất tôi — Hùng — mất hai mươi tám năm trước. Mười chín tuổi. Hy sinh trong nghĩa vụ quân sự năm hai — tai nạn huấn luyện — đứa bạn cùng tổ đặt mìn nhầm — Hùng đứng gần lại."
+
+"Tôi và Hùng cùng làng. Bạn từ tiểu học — cấp hai — cấp ba. Cùng tổ bóng đá xã đó. Hai đứa em chia tay học cấp ba — Hùng đỗ trường nghề — em vào đại học nông lâm."
+
+[pause:800ms]
+
+"Năm em mười chín — Hùng cũng mười chín — em đi nghĩa vụ quân sự. Em ở nhà học đại học."
+
+"Đêm trước hôm Hùng đi nghĩa vụ — em đến nhà em chơi. Hai đứa em ngồi sân giếng — uống nước chè. Em hỏi em: 'Hùng ơi mày đi hai năm — sau hai năm về — mày tính làm gì?'"
+
+"Hùng đáp: 'Tao về — tao làm nông cùng bố tao. Mày học xong đại học — mày làm kỹ sư. Mày về xã làm — hai đứa cùng làng — vẫn chơi.'"
+
+"Em gật: 'OK Hùng. Mày về — em sẽ chuẩn bị bàn cưới mày với Mai.' Em cười: 'Tao sẽ cưới Mai sau hai năm.'"
+
+[pause:1200ms]
+
+"Hùng yêu Mai — cô bạn cùng lớp cấp ba. Hai đứa quen từ năm cuối cấp ba. Mai đợi em đi nghĩa vụ về — em sẽ cưới em."
+
+"Em hứa em đêm đó: 'Hùng ơi nếu em không kịp về — em sẽ chăm Mai thay em.' Em đùa — em không nghĩ em về thật."
+
+"Hùng cười: 'Cảm ơn mày trước. Hai năm thôi — không lâu.'"
+
+[pause:1500ms]
+
+"Sáu tháng sau Hùng đi — em nhận tin Hùng đã hy sinh. Tai nạn huấn luyện. Em sốc."
+
+"Em đến tang em. Cô em quỳ bên quan tài em. Em nhớ lời hứa em đêm trước — về việc chăm Mai."
+
+"Sau tang em — em đến gặp Mai. Mai khóc — em ngồi nghe. Em không tỏ tình em với Mai — em chỉ là bạn em — em thể yêu em ngay sau em mất."
+
+[pause:1500ms]
+
+"Một năm sau — Mai cưới người khác. Anh ấy ở xã bên cạnh. Đứa em mừng cho Mai — em quyết không can thiệp. Bóng người con gái ấy không bao giờ giữ lời hứa em với Hùng về chăm Mai — vì Mai đã có người."
+
+"Hai mươi tám năm em ăn năn vì câu hứa em với Hùng đêm đó — câu hứa đùa em không kịp giữ lại. Em không lấy vợ — em không có lý do rõ ràng — chỉ là em sống một mình quê làm cao su."
+
+"Em đến đài tưởng niệm liệt sĩ Bình Phước mỗi rằm tháng bảy — em thắp hương em Hùng — em xin lỗi đêm đó."
+
+"Năm vừa rồi — em năm mươi — em quyết. Em đem giấy chứng nhận hoàn thành nghĩa vụ — chính giấy em định sẽ nhận khi anh ấy về — không nhận vì anh ấy đi sớm. Em đã xin lại giấy từ ủy ban xã đó — họ giữ giấy của các liệt sĩ chưa nhận."
+
+"Em sẽ đặt giấy trên đài tưởng niệm. Người đàn ông viết tên em — em đã hoàn thành nghĩa vụ — em được công nhận. Em không kịp nhận giấy lúc sống — em nhận sau hai mươi tám năm — qua em — bạn em."
+
+Bác tài cất lời.
+
+"Con đã nhớ ra chưa?"
+
+Văn Trường gật.
+
+"Tôi nhớ. Em hứa em đêm trước em đi nghĩa vụ — chăm Mai. Hình bóng đàn ông không kịp giữ lại — Mai cưới khác. Em ấy ăn năn hai mươi tám năm. Đứa em không thể chuộc em — em chỉ có thể đem giấy em chưa nhận về đài tưởng niệm — coi em đã nhận giấy sau hai mươi tám năm."
+
+[pause:1200ms]
+
+"Đêm nay — em đem giấy về đài. Đặt lên bia đá — em viết tên em. Em coi em đã nhận giấy chính thức — qua em — bạn em — chứng nhận em hoàn thành nghĩa vụ."
+
+---
+
+# PAYOFF [section 5]
+
+[pause:800ms]
+
+Xe chậm lại. Ngã ba Bình Phước — cây cao su lớn — bến gần đài. Chuông xe rung nhẹ. Vang một nhịp. Tan.
+
+Văn Trường gấp giấy. Đứng dậy.
+
+"Chào anh."
+
+Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển.
+
+Bác tài: "Chưa tới lúc."
+
+Người đàn ông bước xuống dưới.
+
+[pause:1200ms]
+
+Bên ngoài — Văn Trường đi vào đài tưởng niệm liệt sĩ Bình Phước. Đèn nến trên đài. Anh đặt giấy chứng nhận trên bia đá — chính giữa. Cúi đầu.
+
+Khải Phong chớp mắt — nhìn qua cửa sổ. Bên đài — Hùng xuất hiện — thanh niên mười chín đồng phục lính — vuốt vai Văn Trường. Mỉm cười.
+
+Khải Phong chớp lần nữa. Người tên Hùng tan đi.
+
+Văn Trường ngẩng đầu. Đi ra ngoài.
+
+[pause:1500ms]
+
+---
+
+# CLIFFHANGER [section 6]
+
+Xe lăn bánh — rời ngã ba Bình Phước.
+
+Ghế năm trống. Trên sàn — một mảnh giấy A4 nhỏ rơi (bong góc). Khải Phong nhặt. Giấy ố vàng.
+
+Bỏ vào túi. Vật thứ bốn mươi ba.
+
+Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
+
+[pause:1500ms]
+
+Khải Phong ngồi. Văn Trường hứa với Hùng — không kịp giữ lại — anh đem giấy chưa nhận về đài. Lời hứa muộn — vẫn được gửi.
+
+Khải Phong nhói. Điện thoại Hạ Vy giờ ở đâu?
+
+Hình ảnh — sau tang Hạ Vy — Khải Phong cầm điện thoại anh từ bệnh viện. Khải Phong mở — thấy tin nhắn dở "Anh ơi em yêu" ba từ chưa kịp viết "anh" cuối.
+
+Khải Phong đem điện thoại về quê Hải Phòng cùng quần áo anh — gửi bố mẹ anh. Khải Phong không giữ điện thoại — anh đã trả anh cho gia đình anh.
+
+[pause:1500ms]
+
+Bố mẹ Hạ Vy có thấy tin nhắn dở không? Khải Phong cố nhớ. Có thể có. Bố mẹ anh có thể đọc tin "Anh ơi em yêu" — anh hiểu anh đang nhắn cho Khải Phong.
+
+Bố mẹ anh không liên lạc Khải Phong về tin nhắn. Bố mẹ anh chỉ giữ điện thoại anh — không nói gì.
+
+Khải Phong nhói — Khải Phong đã không giữ điện thoại anh. Tin nhắn cuối anh — anh không có. Anh chỉ có ký ức về tin — không có vật chứng.
+
+Bác tài liếc gương. "Vào đêm bốn mươi ba. Con đã nhớ điện thoại Hạ Vy ở bố mẹ em. Đêm sau con sẽ nhớ — bố mẹ em còn liên lạc con không. Đừng vội."
+
+Khải Phong gật. Lệ rơi xuống dưới.
+
+Đêm thứ bốn mươi ba — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Bình Phước khuất. Văn Trường ở lại đài — giấy trên bia đá.
+
+Khải Phong cố nhớ lần cuối anh gặp bố mẹ Hạ Vy. Năm thứ hai sau Hạ Vy mất — anh về Hải Phòng tang lần một — anh ăn cơm chung với bố mẹ anh.
+
+Bố mẹ anh hiền. Bố anh không trách Khải Phong. Mẹ anh nắm tay Khải Phong — bảo: "Phong ơi cháu sống tiếp đi — Hạ Vy không trách cháu."
+
+Khải Phong gật. Không nói. Anh ăn cơm — quá ngọt — anh không hợp khẩu vị Hải Phòng. Anh ngồi một giờ — anh xin về Hà Nội — anh nói có việc gấp.
+
+Sau lần đó — em không về. Em không gọi. Cô gái gái gái ấy ngại.
+
+Bố mẹ em chắc đã già — em chưa hỏi thăm sức khỏe. Người con gái gái sai. Em nên gọi điện một lần năm vừa rồi.
+
+Vào đêm bốn mươi ba.
+
+Khải Phong định — sáng — anh sẽ gọi điện bố mẹ Hạ Vy. Người khách sẽ hỏi thăm — anh sẽ xin lỗi không liên lạc lâu. Hình bóng đàn ông không biết anh có gọi được không — anh đã đổi điện thoại ba lần — anh không lưu số. Bóng anh tìm qua bạn chung — qua Facebook. Đêm thứ bốn mươi ba kết thúc.
+
+Khải Phong cố nhớ tên bố mẹ Hạ Vy. Bố anh — chú Phạm Văn Hà — sáu lăm tuổi bây giờ. Mẹ anh — cô Trần Thị Lan — sáu ba tuổi. Khải Phong đã gặp hai bác nhiều lần khi Hạ Vy còn sống.
+
+Hai bác hiền. Sau Hạ Vy mất — hai bác giữ chuyện Khải Phong là người yêu Hạ Vy — không quên. Hai bác chấp nhận Khải Phong sẽ sống tiếp — không trách.
+
+Khải Phong đã sai khi không liên lạc bốn năm gần. Anh không có lý do — chỉ ngại — sợ gặp hai bác sẽ nhớ Hạ Vy nhiều hơn.
+
+Đêm thứ bốn mươi ba — Khải Phong quyết. Anh sẽ tìm số bố mẹ Hạ Vy qua Hạ Nhi — anh gái Hạ Vy còn liên lạc Khải Phong. Hạ Nhi sẽ cho anh số bố mẹ. Anh sẽ gọi điện chú Hà — anh xin lỗi.
+
+Trời đêm chưa sáng lên. Khải Phong còn thời gian suy nghĩ trên xe. 
