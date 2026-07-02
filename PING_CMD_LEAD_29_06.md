@@ -321,6 +321,7 @@ SAU ĐÓ FIX CHẶT CHẼ CÁC s TRƯỚC KHI REN"
 
 ---
 ## AUTO LOG (tự động cập nhật)
+- `10:19` **[FIX]** Em fix: F3+F5: go 2 test mo coi vao gate (test_full_text_gate_r86 R197 + voice_profile_manager, 39->59 pass); registry strict exit tren MISSING/DUP/UNMAPPED (0/0/0); map 3 file hook. F8: prosody detector FN synthetic pitch drop (can calibration).
 - `10:11` **[FIX]** Em fix: F1 hoan tat: hooks INERT (core.hooksPath rong + CRLF shebang + MinGit khong bash/coreutils). Fix: set hooksPath + .gitattributes LF + hooks -> sh wrapper -> Python orchestrator (git_hook_pre_commit/commit_msg). test_hooks_wired 7 test. Dogfood commit nay.
 - `10:03` **[FIX]** Em fix: F1 hooks-inert fix: project_bootstrap self-heal core.hooksPath=.githooks + tests/test_hooks_wired.py (4 tests) — verify hooks THAT SU active moi may, khong con inert am tham. ci_gate PASS (pytest 36 passed, registry 0/0/0).
 - `10:02` **[FIX]** Em fix: F1 deep-audit: git hooks INERT (core.hooksPath rong -> pre-commit/pre-push khong chay). Set core.hooksPath=.githooks + bootstrap self-heal + tests/test_hooks_wired.py (4 test). Regression 36 passed.

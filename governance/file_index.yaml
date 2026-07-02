@@ -192,6 +192,10 @@ files:
     domain: tests
     status: active
     tier: 3
+  tests/test_hooks_wired.py:
+    domain: tests
+    status: active
+    tier: 3
   tests/test_intro_tail_50cases_r202.py:
     domain: tests
     status: active
@@ -469,6 +473,14 @@ files:
     status: active
     tier: 0
   tools/ci_gate.py:
+    domain: governance_audit
+    status: active
+    tier: 0
+  tools/git_hook_pre_commit.py:
+    domain: governance_audit
+    status: active
+    tier: 0
+  tools/git_hook_commit_msg.py:
     domain: governance_audit
     status: active
     tier: 0

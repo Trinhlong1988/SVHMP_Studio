@@ -67,8 +67,13 @@ def main():
     for p, o in dup.items():
         print(f"  ! {p} -> {set(o)}")
 
-    print(f"\n=== {'FAIL (co MISSING)' if missing else 'PASS (source-of-truth du)'} ; {len(unmapped)} unmapped can triage ===")
-    sys.exit(1 if missing else 0)
+    # deep-audit F5 (2/7): truoc day CHI exit 1 khi MISSING -> nhan auditor.py
+    # "0 MISSING/DUP/UNMAPPED" noi qua (unmapped/dup KHONG chan). G1 da dua ve
+    # 0/0/0 nen gio ENFORCE strict: bat ky MISSING/DUP/UNMAPPED -> exit 1.
+    bad = bool(missing or dup or unmapped)
+    verdict = 'FAIL' if bad else 'PASS (source-of-truth du, 0/0/0)'
+    print(f"\n=== {verdict} ; MISSING={len(missing)} DUP={len(dup)} UNMAPPED={len(unmapped)} ===")
+    sys.exit(1 if bad else 0)
 
 
 if __name__ == '__main__':
