@@ -4,7 +4,7 @@ _Hoàn thiện tổng thể + tái dùng cho tiểu thuyết / podcast / tình c
 ---
 
 ## 1. LẬP LUẬN TỪ HIỆN TRẠNG (evidence)
-`tools/architecture_registry_check.py` (chạy 2/7): **213 file · 30 mapped · 0 MISSING · 0 DUP · 186 UNMAPPED**.
+`tools/architecture_registry_check.py` (deep-audit 2/7, strict): **230 disk file · 246 declared · 0 MISSING · 0 DUP · 0 UNMAPPED**. _(G1 đã triage xong 186→0; checker giờ exit 1 nếu bất kỳ MISSING/DUP/UNMAPPED — F5.)_
 - Dự án đã phình hữu cơ (nhiều thế hệ `audit_*`, `auto_fix_*`, `rewrite_ep*`, `qa_*`).
 - **Rủi ro gốc:** thiếu Tier-0 → mỗi lần code thêm dễ trùng module, mất source-of-truth → loạn.
 - **Đã fix gốc (G0):** `governance/architecture_registry.yaml` + checker + hiến pháp **R211** (reconcile R7/R200, không nhân đôi).
@@ -30,7 +30,7 @@ _Hoàn thiện tổng thể + tái dùng cho tiểu thuyết / podcast / tình c
 | Phase | Nội dung | Trạng thái |
 |---|---|---|
 | **G0** | Tier-0 Governance (registry+checker+R211+ownership+change-gate) | ✅ **DONE** (evidence trên) |
-| **G1** | Triage 186 unmapped → gán domain / dedupe / mark deprecated | ⏳ tiếp theo |
+| **G1** | Triage 186 unmapped → gán domain / dedupe / mark deprecated | ✅ **DONE** (0 unmapped, strict-enforced F5) |
 | **G2** | Character domain DoD-complete: +sample YAML, secondary-cast, fill occupation/role, **WIRE completeness-gate** vào render | ~80% (schema/manager/4 validator/report/test done) |
 | **G3** | **Dialogue domain** — generator sinh thoại DÙNG voice profile (ROI cao nhất cho chất truyện) | ⏳ |
 | **G4** | World/Time/Event + Story Memory + Continuity/Timeline QA | ⏳ |
