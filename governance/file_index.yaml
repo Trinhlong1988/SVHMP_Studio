@@ -184,6 +184,10 @@ files:
     domain: tests
     status: active
     tier: 3
+  tests/test_gate_wired_g2.py:
+    domain: tests
+    status: active
+    tier: 3
   tests/test_governance_enforce_r209.py:
     domain: tests
     status: active
