@@ -122,11 +122,11 @@ domains:
       - tests/test_artifact_contract_r212.py
       - tests/test_evidence_standard_r213.py
       - tests/test_severity_rule_r214.py
-      - tests/test_pack2_governance_docs.py   # PACK2: decision-matrix drift guard + 8-element doc completeness
+      - tests/test_pack2_governance_docs.py   # PACK2: decision-matrix drift guard + 11-element doc completeness
     promotion_status: candidate   # PACK1 dang mo rong; 'locked' sau khi du 5 pack
     enterprise_pack_progress:
       pack1_constitution: candidate
-      pack2_governance: candidate
+      pack2_governance: locked   # FROZEN v1.0 (LEAD duyet 2/7): freeze-gate 16-phase PASS, auditor SHIP; tag pack2-governance-v1.0
       pack3_cicd: todo
       pack4_template: todo
       pack5_quality: todo
