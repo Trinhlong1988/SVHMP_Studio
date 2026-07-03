@@ -27,3 +27,14 @@ trỏ đúng key; facet chưa có = planned 5-metadata. CẤM bịa facet không
 ## MUTATION AUDIT SẼ BẮN (tự test trước)
 facet 2 domain · facet_id trùng · SoT giả · domain canon thiếu block · invariant trỏ enforcer ma.
 STATUS cuối: READY_FOR_AUDIT / FAIL_NEEDS_FIX.
+
+## BỘ FACET TỐI THIỂU cho CHARACTER (Mr.Long duyệt 3/7 — advisor đề xuất, kiểm duyệt phân xử)
+identity · appearance · voice · relationship · memory · emotion · occupation · health · belief ·
+inventory · **knowledge** (QUAN TRỌNG NHẤT truyện dài tập: nhân vật KHÔNG được biết bí mật chưa
+tiết lộ — nền cho QA gate sau) · location_state (giá trị PHẢI trỏ entity domain location) ·
+life_timeline (mốc đời — trỏ entity domain timeline) · speech_style.
+RANH GIỚI: speech_style = NẾT NÓI của người, character OWN, dialogue chỉ ĐỌC — KHÁC facet
+tone/accent cấp-câu-thoại thuộc domain dialogue (2 tầng, cấm gộp). Facet đã có trường trong
+bible/37 = exists trỏ key; chưa có = planned 5-metadata. Domain khác: bộ tối thiểu tự suy
+từ bible tương ứng (object: material/origin/curse_state...; supernatural: entity_type/trigger/
+rule...), cùng chuẩn.
