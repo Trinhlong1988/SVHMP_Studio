@@ -60,7 +60,8 @@ _Hoàn thiện tổng thể + tái dùng cho tiểu thuyết / podcast / tình c
 - ✅ **GPU máy render = RTX 5060 Ti 16GB** (Mr.Long cấp specs 3/7 tối) → máy render = máy TRAIN chính (LoRA FLUX); máy Admin 3060 12GB = inference phụ/QA. S3-0 chỉ còn benchmark tốc độ, không còn câu hỏi khả thi.
 - ✅ **Phong cách video HDK = ĐỘNG-TĨNH 2D · stack FLUX + LoRA** (Mr.Long chốt 3/7 tối): FLUX.1-dev fp8 trên 16GB cho still cinematic + parallax/hiệu ứng + lip-sync (LivePortrait) — không cần full animation, hợp horror.
 - Cloud-GPU fallback: **tạm đóng** — 5060 Ti 16GB đủ train local; chỉ mở lại nếu benchmark S3-0 fail.
-- ⏳ IP thứ 2: chốt **Huyền Sử Việt**?
+- ✅ **IP2 = HUYỀN SỬ VIỆT** (Mr.Long chốt 3/7 tối): visual **anime/chibi** (ảnh + video), cách kể **trẻ trung hoạt náo** — đối cực HDK (horror trầm) → test overlay platform chuẩn nhất: cùng engine, khác bible/LoRA/tone. LoRA chibi train dễ trên 5060 Ti, dung sai consistency cao.
+→ **§7 ĐÓNG — cả 4 quyết định đã chốt 3/7 tối.**
 
 ## 8. AI STUDIO EXPANSION — Mr.Long CHỐT 3/7/2026
 > Bản đầy đủ (kiến trúc 4 tầng · phân xử AUDIT.md · hạ tầng đo thật · rủi ro): `AI_STUDIO_PLAN.md`
@@ -78,7 +79,7 @@ Studio Core = **EXTRACT từ dây chuyền đã chạy** (sau S1), cấm build-a
 | **S2** | Studio Core v0 (extract từ S1): Asset Registry mở rộng · Prompt Registry · Cost Dashboard · dep-matrix generator (máy-sinh từ BP yaml) · ADR retro mỏng | dashboard trả lời "1 tập = bao lâu/token/$" bằng số thật |
 | **S3** | Visual Foundation: S3-0 benchmark tốc độ (timebox 3 ngày) → Art/Character Visual Bible (từ bible/37) → **LoRA FLUX** style + nhân vật, train trên **máy render 5060 Ti 16GB**, inference phụ/QA trên 3060 12GB | consistency 20 ảnh/nhân vật, người duyệt ≥90% |
 | **S4** | Animation 2D + lip-sync + compose → **EP01 VIDEO** publish YouTube | EP01 video lên kênh + KPI video vào dashboard |
-| **S5** | Multi-IP: IP2 onboard CHỈ bằng `project_config` + bible + LoRA riêng (P4 validator sẵn) | 1 tập IP2 end-to-end; đo thời-gian-onboard = KPI platform #1 |
+| **S5** | Multi-IP: **Huyền Sử Việt** (anime/chibi, kể trẻ trung hoạt náo) onboard CHỈ bằng `project_config` + bible + LoRA riêng (P4 validator sẵn) | 1 tập HSV end-to-end; đo thời-gian-onboard = KPI platform #1 |
 | **S6** | Scale 90 tập HDK · cost optimize · analytics feedback loop | tập/tuần ổn định; $/tập giảm theo đường cong |
 
 **KPI tách:** _Platform_ = thời gian onboard IP mới · % tool tái dùng · $/phút content ‖ _Product_ = tập/tuần · lỗi QA/tập · retention/comment · $/tập.
