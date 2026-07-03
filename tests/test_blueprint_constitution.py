@@ -140,10 +140,28 @@ def test_neg7_memory_without_owner_fails():
     _assert_fails(data, 'KHONG co owner')
 
 
-def test_neg8_candidate_self_locked_fails():
+def test_neg8_candidate_self_locked_fails(tmp_path):
+    """State-aware (RE-APPLY 3/7 — amendment v2 vo tinh de mat fix 4eda3aa):
+    dung registry TAM 'candidate' de test dung ca truoc va SAU khi Mr.Long
+    lock that trong registry chinh."""
     data = load()
     data['meta']['promotion_status'] = 'locked'
-    _assert_fails(data, 'SELF-LOCK')
+    reg = tmp_path / 'reg.yaml'
+    reg.write_text('domains:\n  governance:\n    enterprise_pack_progress:\n'
+                   '      blueprint_constitution: candidate\n', encoding='utf-8')
+    errs = check(data, registry_path=reg)
+    assert any('SELF-LOCK' in e for e in errs), f'phai bat SELF-LOCK: {errs}'
+
+
+def test_neg8b_locked_with_registry_signature_passes(tmp_path):
+    """Doi chung: yaml locked + registry DA ky locked -> KHONG SELF-LOCK."""
+    data = load()
+    data['meta']['promotion_status'] = 'locked'
+    reg = tmp_path / 'reg.yaml'
+    reg.write_text('domains:\n  governance:\n    enterprise_pack_progress:\n'
+                   '      blueprint_constitution: locked\n', encoding='utf-8')
+    errs = check(data, registry_path=reg)
+    assert not any('SELF-LOCK' in e for e in errs), errs
 
 
 def test_neg9_missing_audit_gate_fails():
