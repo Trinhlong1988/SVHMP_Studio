@@ -15,8 +15,18 @@ import yaml
 SVHMP = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(SVHMP / 'tools'))
 from roster_validator import validate, load_forbidden  # noqa: E402
+import ci_gate  # noqa: E402
 
 FORBIDDEN = load_forbidden()
+
+
+# ---------- UNWIRE-GUARD (audit G2 vòng 1: gỡ stage 29 test vẫn xanh -> lỗ) ----------
+
+def test_g2_roster_stage_wired_in_ci_gate():
+    """Chống unwire (mirror test_blueprint_stage_wired_in_ci_gate BP5):
+    gỡ ('G2_roster', tools/roster_validator.py) khỏi ci_gate CHECKS -> test này đỏ."""
+    assert ('G2_roster', 'tools/roster_validator.py') in ci_gate.CHECKS, \
+        'stage G2_roster bị gỡ khỏi ci_gate CHECKS (unwire!)'
 
 
 def _real_passengers():

@@ -14,9 +14,9 @@ CHECKS:
      (map HOME single-source từ tools/migrate_roster_v2.py — không nhân đôi)
   C3 Tier1 R210 hiện diện: char_name/gender/voice đủ field/death.type/haunting_symbol/regret
   C4 naming region/generation/culture (rule_06..08): PENDING_SCHEMA — chờ Mr.Long
-     ký bible/23 v1.1 (governance/blueprint/schemas/naming_extension_rules.yaml)
+     ký bible/23 v1.1 (governance/blueprint/schemas/proposals/naming_extension_rules.yaml)
   C5 reveal_permission↔knowledge + arc↔state machine: PENDING_SCHEMA — chờ ký
-     bible/37 v2 (governance/blueprint/schemas/character_ext_schema.yaml)
+     bible/37 v2 (governance/blueprint/schemas/proposals/character_ext_schema.yaml)
 
 Exit: violation (C1-C3) -> 1; sạch -> 0. PENDING_SCHEMA in rõ SKIP + lý do
 (KHÔNG đếm là pass ngầm). --strict: WARN-class cũng fail (B4 bật khi fill đạt ngưỡng
@@ -112,9 +112,9 @@ def main(argv=None):
         print(f"  [WARN] {w}")
     print(f"  C1 naming + C2 quê↔giọng + C3 tier1: {len(violations)} violation, {len(warns)} warn")
     print("  [SKIP] C4 naming region/generation/culture — PENDING_SCHEMA "
-          "(chờ Mr.Long ký bible/23 v1.1; đề xuất: governance/blueprint/schemas/naming_extension_rules.yaml)")
+          "(chờ Mr.Long ký bible/23 v1.1; đề xuất: governance/blueprint/schemas/proposals/naming_extension_rules.yaml)")
     print("  [SKIP] C5 reveal_permission↔knowledge + arc↔BP4 state machine — PENDING_SCHEMA "
-          "(chờ Mr.Long ký bible/37 v2; đề xuất: governance/blueprint/schemas/character_ext_schema.yaml)")
+          "(chờ Mr.Long ký bible/37 v2; đề xuất: governance/blueprint/schemas/proposals/character_ext_schema.yaml)")
 
     fail = bool(violations) or (args.strict and bool(warns))
     print(f"=== {'FAIL' if fail else 'PASS (trong phạm vi C1-C3 hiện hành)'} ===")
