@@ -163,7 +163,7 @@ domains:
       pack3_cicd: locked   # FROZEN v1.0 (Mr.Long authorized 2/7): server-CI green (a8cf7d2), freeze_gate 4/4, auditor SHIP; tag pack3-cicd-v1.0
       pack4_template: locked   # FROZEN v1.0 (Mr.Long authorized 2/7): validator hardened+wired ci_gate, 4 doc ENFORCED/ROADMAP trung thuc, server-CI green 23b1e53; tag pack4-template-v1.0
       pack5_quality: locked   # FROZEN v1.0 (Mr.Long authorized 2/7): 4 doc 19-22 ENFORCED/ROADMAP doi chung code, BUG P0 preflight fixed+locked, Actions green ae5e9bf; tag pack5-quality-v1.0
-      blueprint_constitution: candidate   # RFC AMENDMENT v2 OPEN (Mr.Long ky bang E 3/7): A1-A8 theo reports/BP_PHASE_PLAN_PROPOSAL.md + 2 dieu kien kiem duyet; v1.0 tag giu lam moc; re-lock v2.0 sau audit
+      blueprint_constitution: locked   # FROZEN v2.0 (Mr.Long authorized 3/7): 22+1 domain inventory DONG, decision_engine, lifecycle+versioning, dup-key loader; audit 12 mutation PASS; tag blueprint-constitution-v2.0
     data_contract:
       input: "registry yaml + disk scan"
       output: "gap report"
