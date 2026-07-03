@@ -57,10 +57,10 @@ _Hoàn thiện tổng thể + tái dùng cho tiểu thuyết / podcast / tình c
 5. **Calibrate/kiểm chứng từ dữ liệu thật (Golden/roster), không suy luận, không bịa field.**
 
 ## 7. QUYẾT ĐỊNH CẦN BOSS (cập nhật 3/7 tối — câu G1/G3 cũ hết hiệu lực, G1 đã DONE)
-- GPU máy render (Administrator): cho benchmark S3-0 hay Boss cấp specs?
-- IP thứ 2: chốt **Huyền Sử Việt**?
-- Phong cách video HDK: **động-tĩnh cinematic** (khuyến nghị — hợp 3060 12GB, hợp horror) hay full 2D animation (~5-10× thời gian)?
-- Ngân sách cloud-GPU fallback nếu benchmark local không đạt?
+- ✅ **GPU máy render = RTX 5060 Ti 16GB** (Mr.Long cấp specs 3/7 tối) → máy render = máy TRAIN chính (LoRA FLUX); máy Admin 3060 12GB = inference phụ/QA. S3-0 chỉ còn benchmark tốc độ, không còn câu hỏi khả thi.
+- ✅ **Phong cách video HDK = ĐỘNG-TĨNH 2D · stack FLUX + LoRA** (Mr.Long chốt 3/7 tối): FLUX.1-dev fp8 trên 16GB cho still cinematic + parallax/hiệu ứng + lip-sync (LivePortrait) — không cần full animation, hợp horror.
+- Cloud-GPU fallback: **tạm đóng** — 5060 Ti 16GB đủ train local; chỉ mở lại nếu benchmark S3-0 fail.
+- ⏳ IP thứ 2: chốt **Huyền Sử Việt**?
 
 ## 8. AI STUDIO EXPANSION — Mr.Long CHỐT 3/7/2026
 > Bản đầy đủ (kiến trúc 4 tầng · phân xử AUDIT.md · hạ tầng đo thật · rủi ro): `AI_STUDIO_PLAN.md`
@@ -76,7 +76,7 @@ Studio Core = **EXTRACT từ dây chuyền đã chạy** (sau S1), cấm build-a
 | **S0** 🔄 | BP5+G2-B1/B2 (đang build) → BP6-8 thin → `system-blueprint-v1.0` | freeze_gate 5/5 mỗi pack; blueprint_suite 1 lệnh xanh |
 | **S1** | Vertical slice AUDIO: fix 4 vi phạm content ep_01 → re-render EP01 → đo KPI thật | EP01 PASS golden + bảng KPI per-episode đầu tiên |
 | **S2** | Studio Core v0 (extract từ S1): Asset Registry mở rộng · Prompt Registry · Cost Dashboard · dep-matrix generator (máy-sinh từ BP yaml) · ADR retro mỏng | dashboard trả lời "1 tập = bao lâu/token/$" bằng số thật |
-| **S3** | Visual Foundation: S3-0 benchmark GPU (timebox 3 ngày) → Art/Character Visual Bible (từ bible/37) → LoRA style + nhân vật (local, 3060 12GB) | consistency 20 ảnh/nhân vật, người duyệt ≥90% |
+| **S3** | Visual Foundation: S3-0 benchmark tốc độ (timebox 3 ngày) → Art/Character Visual Bible (từ bible/37) → **LoRA FLUX** style + nhân vật, train trên **máy render 5060 Ti 16GB**, inference phụ/QA trên 3060 12GB | consistency 20 ảnh/nhân vật, người duyệt ≥90% |
 | **S4** | Animation 2D + lip-sync + compose → **EP01 VIDEO** publish YouTube | EP01 video lên kênh + KPI video vào dashboard |
 | **S5** | Multi-IP: IP2 onboard CHỈ bằng `project_config` + bible + LoRA riêng (P4 validator sẵn) | 1 tập IP2 end-to-end; đo thời-gian-onboard = KPI platform #1 |
 | **S6** | Scale 90 tập HDK · cost optimize · analytics feedback loop | tập/tuần ổn định; $/tập giảm theo đường cong |
