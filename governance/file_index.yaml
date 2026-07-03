@@ -1128,5 +1128,41 @@ files:
     domain: bp5_validation
     status: active
     tier: 0
+  tools/roster_backfill_miner.py:
+    domain: g2_character
+    status: active
+    tier: 1
+  tools/roster_validator.py:
+    domain: g2_character
+    status: active
+    tier: 1
+  tests/test_roster_backfill_miner_g2.py:
+    domain: g2_character
+    status: active
+    tier: 1
+  tests/test_roster_validator_g2.py:
+    domain: g2_character
+    status: active
+    tier: 1
+  governance/blueprint/schemas/proposals/character_ext_schema.yaml:
+    domain: g2_character
+    status: proposal_awaiting_signature
+    tier: 1
+  governance/blueprint/schemas/proposals/naming_extension_rules.yaml:
+    domain: g2_character
+    status: proposal_awaiting_signature
+    tier: 1
+  runtime/roster_backfill_draft.yaml:
+    domain: g2_character
+    status: draft
+    tier: 1
+  reports/G2_CONTINUITY_FINDINGS.md:
+    domain: g2_character
+    status: active
+    tier: 1
+  tests/test_file_index_total.py:
+    domain: governance_audit
+    status: active
+    tier: 0
 generated_by: tools/registry_triage.py
-total: 264
+total: 291

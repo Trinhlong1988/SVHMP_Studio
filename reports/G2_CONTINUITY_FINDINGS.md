@@ -1,0 +1,134 @@
+# G2 CONTINUITY FINDINGS — máy đào ngược episode ĐÃ CÓ (TASK_G2_CHARACTER B2)
+
+- Sinh bởi: `tools/roster_backfill_miner.py` — 2026-07-03
+- Tập quét: 50 (ep_01..ep_50)
+- **LỆCH SO VỚI TASK:** task ghi "90 tập đã có" — thực tế trên disk chỉ 50 tập có `episode.md` (ep_51..90 mới có moment_map_template). KHÔNG overclaim.
+- Route: **executor xử lý** (TASK G2 DoD). Mọi finding kèm evidence ep:line — không suy luận.
+
+## F1 — Roster drift: tập KHÔNG dùng PAS_ id (đứt liên kết roster↔episode) — 41 finding
+- ep_01: header KHÔNG có passenger_main
+- ep_11: passenger_main='nu_45 → nam 26 Đức Hà Đông (em chị mất năm năm)' (KHÔNG PAS_ id)
+- ep_12: passenger_main='nu 36 Vy An Long Biên (chia tay anh Khôi cầu Long Biên)' (KHÔNG PAS_ id)
+- ep_13: passenger_main='nam 45 Bình Mỹ Đức (bố ung thư phổi hai năm trước)' (KHÔNG PAS_ id)
+- ep_14: passenger_main='nu 56 Tâm Đan Chương Mỹ (từ chối cụ Mai bát phở 30 năm trước)' (KHÔNG PAS_ id)
+- ep_15: passenger_main='nam 31 Phong Hoài Đức (định tự tử mười năm trước — gương vỡ cứu)' (KHÔNG PAS_ id)
+- ep_16: passenger_main='nu 38 Hoàng Yến Hà Đông (cãi mẹ chuyện chồng — mẹ mất sau một tháng)' (KHÔNG PAS_ id)
+- ep_17: passenger_main='nam 42 Hữu Tài Sóc Sơn (bạn thân nhờ vay tiền chữa ung thư — không kịp về)' (KHÔNG PAS_ id)
+- ep_18: passenger_main='nu 28 Linh Trang Hà Nội (chia tay anh Khang vì mẹ ép — anh tự tử sau)' (KHÔNG PAS_ id)
+- ep_19: passenger_main='nu 50 Bích Hoa Đông Anh (ngại đi tang bạn — bạn chết cô đơn)' (KHÔNG PAS_ id)
+- ep_20: passenger_main='nam 27 Nhật Minh Cầu Giấy (cảm giác mất chính mình — quên người yêu vì sự nghiệp)' (KHÔNG PAS_ id)
+- ep_21: passenger_main='nam 50 Trọng Nhân Nam Định (mẹ chết khi sinh — không có ảnh)' (KHÔNG PAS_ id)
+- ep_22: passenger_main='nu 35 Quỳnh Mai Bắc Ninh (hứa với thầy đại học sẽ về thăm — mười năm)' (KHÔNG PAS_ id)
+- ep_23: passenger_main='nam 45 Đức Vinh Hải Phòng (yêu thư ký hai mươi năm không tỏ tình)' (KHÔNG PAS_ id)
+- ep_24: passenger_main='nu 60 Hồng Liên Hà Nam (từ chối đỡ học cháu chị họ — cháu chết trẻ)' (KHÔNG PAS_ id)
+- ep_25: passenger_main='nam 38 Văn Quân Thái Nguyên (ung thư phổi 36 tuổi — phẫu thuật cắt phổi)' (KHÔNG PAS_ id)
+- ep_26: passenger_main='nam 38 Đức Hùng Hà Nội (bố KTS mất — con ngại học theo)' (KHÔNG PAS_ id)
+- ep_27: passenger_main='nu 45 Mỹ Linh Sài Gòn (hứa với bạn tiểu học giúp chữa bệnh — đi nước ngoài quên)' (KHÔNG PAS_ id)
+- ep_28: passenger_main='nam 55 Hữu Lộc Hà Tĩnh (ly hôn vợ 30 năm trước — vợ vừa mất)' (KHÔNG PAS_ id)
+- ep_29: passenger_main='nu 28 Linh Đan Đà Nẵng (từ chối hiến máu cho bạn cùng phòng 2017 — bạn chết)' (KHÔNG PAS_ id)
+- ep_30: passenger_main='nam 30 anh Nguyễn (người khách cùng tên!) — anh thầy giáo cứu khỏi bỏ học' (KHÔNG PAS_ id)
+- ep_31: passenger_main='nu 55 Thanh Vân Hưng Yên (mẹ mất tháng tư mười ba năm trước - đem cúc mỗi tháng)' (KHÔNG PAS_ id)
+- ep_32: passenger_main='nam 40 Phan Tâm Bắc Giang (vợ chết đột ngột tháng tư - chăn may dở)' (KHÔNG PAS_ id)
+- ep_33: passenger_main='nu 38 Hoài An Hà Nội (hứa đưa bạn quê đi tàu điện - bạn chết trước kịp)' (KHÔNG PAS_ id)
+- ep_34: passenger_main='nam 50 Văn Tuấn Vĩnh Phúc (không thắp hương cho hàng xóm cũ - bác mất mười năm)' (KHÔNG PAS_ id)
+- ep_35: passenger_main='nam 28 Trí Hưng Nghệ An (định tự tử hai năm trước - mảnh gương cứu - tương tự EP15 Phong +' (KHÔNG PAS_ id)
+- ep_36: passenger_main='nam 48 Văn Khải Lào Cai (em gái mất tai nạn xe — em đã có người yêu Khải Phong không biết)' (KHÔNG PAS_ id)
+- ep_37: passenger_main='nu 32 Mỹ Hạnh Hà Nội (vợ chồng đi xe máy phố Huế - chồng mất tai nạn)' (KHÔNG PAS_ id)
+- ep_38: passenger_main='nam 35 Đức Anh Quảng Ninh (hứa tặng quà sinh nhật 18 cho bạn cấp 3 — bạn chết trước sinh n' (KHÔNG PAS_ id)
+- ep_39: passenger_main='nu 55 Hồng Mai Quảng Bình (không đem cơm cho hàng xóm già — bà chết đói trước nhà)' (KHÔNG PAS_ id)
+- ep_40: passenger_main='nam 28 Trung Hậu Hà Nội (anh Hải - chính anh Hải gọi cấp cứu Hạ Vy bảy năm trước - đêm này' (KHÔNG PAS_ id)
+- ep_41: passenger_main='nu 32 Bích Trâm Bình Định (con gái mất bệnh - không kịp gửi tin cuối cho mẹ)' (KHÔNG PAS_ id)
+- ep_42: passenger_main='nam 42 Hoàng Nam Bến Tre (vợ mất tai nạn xe - nhẫn cưới còn trên tay)' (KHÔNG PAS_ id)
+- ep_43: passenger_main='nam 50 Văn Trường Bình Phước (hứa cưới khi bạn đi nghĩa vụ về - bạn không về)' (KHÔNG PAS_ id)
+- ep_44: passenger_main='nu 52 Phượng Liên Đắk Lắk (không đem khúc chè cho hàng xóm bệnh - bà mất)' (KHÔNG PAS_ id)
+- ep_45: passenger_main='nam 30 Mạnh Hiếu Bắc Ninh (định tự tử sau tốt nghiệp - gương cứu - echo EP15+EP25+EP35)' (KHÔNG PAS_ id)
+- ep_46: passenger_main='nu 68 Bà Hảo Thái Bình (hứa đem cháu nội đi biển - cháu chết trước)' (KHÔNG PAS_ id)
+- ep_47: passenger_main='nu 30 Thanh Nga Hà Nội (vé máy bay đi du học - chồng chết trước ngày đi)' (KHÔNG PAS_ id)
+- ep_48: passenger_main='nam 38 Hữu Duy Cần Thơ (hứa tặng guitar bạn cấp ba - quên hai mươi năm - bạn chết bệnh)' (KHÔNG PAS_ id)
+- ep_49: passenger_main='nu 42 Phương Linh Sóc Trăng (đỡ cô gái mưa - cô gái sau tự tử do em không tiếp tục giúp)' (KHÔNG PAS_ id)
+- ep_50: passenger_main='nam 28 Hạ Nhi (Hạ Nhi đột nhiên xuất hiện trên xe - lần đầu thấy anh sau tám năm trong đời' (KHÔNG PAS_ id)
+
+## F2 — PAS_ id lệch assigned_ep trong roster — 0 finding
+- (không có)
+
+## F3 — char_name roster xuất hiện ngoài tập được gán (one-shot bible/03) — 0 finding
+- (không có)
+
+## F4 — Tên free-form nghi vi phạm bible/23 (forbidden/trùng âm/1 âm tiết) — 77 finding
+- ep_12: rule_02: 'Vy An' trùng âm tiết 'Vy' với 'Vy Vi' [name_guess parse_confidence=low — người duyệt]
+- ep_12: forbidden: 'Vy An' chứa từ cấm 'An' (Mr.Long 27/6) [name_guess parse_confidence=low — người duyệt]
+- ep_13: rule_02: 'Bình Mỹ' trùng âm tiết 'Bình' với 'Cảnh Bình' [name_guess parse_confidence=low — người duyệt]
+- ep_13: rule_02: 'Bình Mỹ' trùng âm tiết 'Mỹ' với 'Mỹ Nhi' [name_guess parse_confidence=low — người duyệt]
+- ep_14: rule_02: 'Tâm Đan' trùng âm tiết 'Tâm' với 'Tâm Bằng' [name_guess parse_confidence=low — người duyệt]
+- ep_14: rule_02: 'Tâm Đan' trùng âm tiết 'Đan' với 'Đan Phụng' [name_guess parse_confidence=low — người duyệt]
+- ep_15: rule_02: 'Phong Hoài' trùng âm tiết 'Phong' với 'Lộc Phong' [name_guess parse_confidence=low — người duyệt]
+- ep_15: rule_02: 'Phong Hoài' trùng âm tiết 'Hoài' với 'Hào Hoài' [name_guess parse_confidence=low — người duyệt]
+- ep_16: rule_02: 'Hoàng Yến' trùng âm tiết 'Hoàng' với 'Hoàng Lâm' [name_guess parse_confidence=low — người duyệt]
+- ep_16: rule_02: 'Hoàng Yến' trùng âm tiết 'Yến' với 'Yến Hương' [name_guess parse_confidence=low — người duyệt]
+- ep_17: rule_02: 'Hữu Tài' trùng âm tiết 'Hữu' với 'Hữu Trí' [name_guess parse_confidence=low — người duyệt]
+- ep_17: forbidden: 'Hữu Tài' chứa từ cấm 'Tài' (Mr.Long 27/6) [name_guess parse_confidence=low — người duyệt]
+- ep_18: forbidden: 'Linh Trang' chứa từ cấm 'Linh' (Mr.Long 27/6) [name_guess parse_confidence=low — người duyệt]
+- ep_18: forbidden: 'Linh Trang' chứa từ cấm 'Trang' (Mr.Long 27/6) [name_guess parse_confidence=low — người duyệt]
+- ep_19: rule_02: 'Bích Hoa' trùng âm tiết 'Bích' với 'Cẩm Bích' [name_guess parse_confidence=low — người duyệt]
+- ep_19: rule_02: 'Bích Hoa' trùng âm tiết 'Hoa' với 'Hoa Trinh' [name_guess parse_confidence=low — người duyệt]
+- ep_20: rule_02: 'Nhật Minh' trùng âm tiết 'Nhật' với 'Hải Nhật' [name_guess parse_confidence=low — người duyệt]
+- ep_20: rule_02: 'Nhật Minh' trùng âm tiết 'Minh' với 'Bảo Minh' [name_guess parse_confidence=low — người duyệt]
+- ep_21: rule_02: 'Trọng Nhân' trùng âm tiết 'Trọng' với 'Trọng Lễ' [name_guess parse_confidence=low — người duyệt]
+- ep_21: rule_02: 'Trọng Nhân' trùng âm tiết 'Nhân' với 'Bá Nhân' [name_guess parse_confidence=low — người duyệt]
+- ep_22: rule_02: 'Quỳnh Mai' trùng âm tiết 'Quỳnh' với 'Châu Quỳnh' [name_guess parse_confidence=low — người duyệt]
+- ep_22: forbidden: 'Quỳnh Mai' chứa từ cấm 'Mai' (Mr.Long 27/6) [name_guess parse_confidence=low — người duyệt]
+- ep_23: rule_02: 'Đức Vinh' trùng âm tiết 'Đức' với 'Đức Phúc' [name_guess parse_confidence=low — người duyệt]
+- ep_23: rule_02: 'Đức Vinh' trùng âm tiết 'Vinh' với 'Triết Vinh' [name_guess parse_confidence=low — người duyệt]
+- ep_24: rule_02: 'Hồng Liên' trùng âm tiết 'Hồng' với 'Hồng Hạnh' [name_guess parse_confidence=low — người duyệt]
+- ep_24: rule_02: 'Hồng Liên' trùng âm tiết 'Liên' với 'Liên Thư' [name_guess parse_confidence=low — người duyệt]
+- ep_25: rule_02: 'Văn Quân' trùng âm tiết 'Văn' với 'Văn Triệu' [name_guess parse_confidence=low — người duyệt]
+- ep_25: rule_02: 'Văn Quân' trùng âm tiết 'Quân' với 'Quân Tịnh' [name_guess parse_confidence=low — người duyệt]
+- ep_26: rule_02: 'Đức Hùng' trùng âm tiết 'Đức' với 'Đức Phúc' [name_guess parse_confidence=low — người duyệt]
+- ep_26: rule_02: 'Đức Hùng' trùng âm tiết 'Hùng' với 'Hùng Kiệt' [name_guess parse_confidence=low — người duyệt]
+- ep_27: rule_02: 'Mỹ Linh' trùng âm tiết 'Mỹ' với 'Mỹ Nhi' [name_guess parse_confidence=low — người duyệt]
+- ep_27: forbidden: 'Mỹ Linh' chứa từ cấm 'Linh' (Mr.Long 27/6) [name_guess parse_confidence=low — người duyệt]
+- ep_27: rule_02: 'Mỹ Linh' trùng âm tiết 'Linh' với 'Linh Trang' [name_guess parse_confidence=low — người duyệt]
+- ep_28: rule_02: 'Hữu Lộc' trùng âm tiết 'Hữu' với 'Hữu Trí' [name_guess parse_confidence=low — người duyệt]
+- ep_28: rule_02: 'Hữu Lộc' trùng âm tiết 'Lộc' với 'Lộc Phong' [name_guess parse_confidence=low — người duyệt]
+- ep_29: forbidden: 'Linh Đan' chứa từ cấm 'Linh' (Mr.Long 27/6) [name_guess parse_confidence=low — người duyệt]
+- ep_29: rule_02: 'Linh Đan' trùng âm tiết 'Linh' với 'Linh Trang' [name_guess parse_confidence=low — người duyệt]
+- ep_29: rule_02: 'Linh Đan' trùng âm tiết 'Đan' với 'Đan Phụng' [name_guess parse_confidence=low — người duyệt]
+- ep_31: rule_02: 'Thanh Vân' trùng âm tiết 'Thanh' với 'Khả Thanh' [name_guess parse_confidence=low — người duyệt]
+- ep_31: rule_02: 'Thanh Vân' trùng âm tiết 'Vân' với 'Quế Vân' [name_guess parse_confidence=low — người duyệt]
+- ep_32: rule_02: 'Phan Tâm' trùng âm tiết 'Tâm' với 'Tâm Bằng' [name_guess parse_confidence=low — người duyệt]
+- ep_33: rule_02: 'Hoài An' trùng âm tiết 'Hoài' với 'Hào Hoài' [name_guess parse_confidence=low — người duyệt]
+- ep_33: forbidden: 'Hoài An' chứa từ cấm 'An' (Mr.Long 27/6) [name_guess parse_confidence=low — người duyệt]
+- ep_33: rule_02: 'Hoài An' trùng âm tiết 'An' với 'Vy An' [name_guess parse_confidence=low — người duyệt]
+- ep_34: rule_02: 'Văn Tuấn' trùng âm tiết 'Văn' với 'Văn Triệu' [name_guess parse_confidence=low — người duyệt]
+- ep_34: rule_02: 'Văn Tuấn' trùng âm tiết 'Tuấn' với 'Tuấn Quốc' [name_guess parse_confidence=low — người duyệt]
+- ep_35: rule_02: 'Trí Hưng' trùng âm tiết 'Trí' với 'Hữu Trí' [name_guess parse_confidence=low — người duyệt]
+- ep_35: forbidden: 'Trí Hưng' chứa từ cấm 'Hưng' (Mr.Long 27/6) [name_guess parse_confidence=low — người duyệt]
+- ep_36: rule_02: 'Văn Khải' trùng âm tiết 'Văn' với 'Văn Triệu' [name_guess parse_confidence=low — người duyệt]
+- ep_36: rule_02: 'Văn Khải' trùng âm tiết 'Khải' với 'Khải Toàn' [name_guess parse_confidence=low — người duyệt]
+- ep_37: rule_02: 'Mỹ Hạnh' trùng âm tiết 'Mỹ' với 'Mỹ Nhi' [name_guess parse_confidence=low — người duyệt]
+- ep_37: rule_02: 'Mỹ Hạnh' trùng âm tiết 'Hạnh' với 'Hồng Hạnh' [name_guess parse_confidence=low — người duyệt]
+- ep_38: rule_02: 'Đức Anh' trùng âm tiết 'Đức' với 'Đức Phúc' [name_guess parse_confidence=low — người duyệt]
+- ep_38: rule_02: 'Đức Anh' trùng âm tiết 'Anh' với 'Dũng Anh' [name_guess parse_confidence=low — người duyệt]
+- ep_39: rule_02: 'Hồng Mai' trùng âm tiết 'Hồng' với 'Hồng Hạnh' [name_guess parse_confidence=low — người duyệt]
+- ep_39: forbidden: 'Hồng Mai' chứa từ cấm 'Mai' (Mr.Long 27/6) [name_guess parse_confidence=low — người duyệt]
+- ep_39: rule_02: 'Hồng Mai' trùng âm tiết 'Mai' với 'Quỳnh Mai' [name_guess parse_confidence=low — người duyệt]
+- ep_40: rule_02: 'Trung Hậu' trùng âm tiết 'Trung' với 'Trung Hiếu' [name_guess parse_confidence=low — người duyệt]
+- ep_40: rule_02: 'Trung Hậu' trùng âm tiết 'Hậu' với 'Hân Hậu' [name_guess parse_confidence=low — người duyệt]
+- ep_41: rule_02: 'Bích Trâm' trùng âm tiết 'Bích' với 'Cẩm Bích' [name_guess parse_confidence=low — người duyệt]
+- ep_42: rule_02: 'Hoàng Nam' trùng âm tiết 'Hoàng' với 'Hoàng Lâm' [name_guess parse_confidence=low — người duyệt]
+- ep_42: forbidden: 'Hoàng Nam' chứa từ cấm 'Nam' (Mr.Long 27/6) [name_guess parse_confidence=low — người duyệt]
+- ep_43: rule_02: 'Văn Trường' trùng âm tiết 'Văn' với 'Văn Triệu' [name_guess parse_confidence=low — người duyệt]
+- ep_43: rule_02: 'Văn Trường' trùng âm tiết 'Trường' với 'Trường Thiên' [name_guess parse_confidence=low — người duyệt]
+- ep_44: rule_02: 'Phượng Liên' trùng âm tiết 'Phượng' với 'Phượng Ngọc' [name_guess parse_confidence=low — người duyệt]
+- ep_44: rule_02: 'Phượng Liên' trùng âm tiết 'Liên' với 'Liên Thư' [name_guess parse_confidence=low — người duyệt]
+- ep_45: rule_02: 'Mạnh Hiếu' trùng âm tiết 'Mạnh' với 'Mạnh Đạo' [name_guess parse_confidence=low — người duyệt]
+- ep_45: rule_02: 'Mạnh Hiếu' trùng âm tiết 'Hiếu' với 'Trung Hiếu' [name_guess parse_confidence=low — người duyệt]
+- ep_46: rule_02: 'Bà Hảo' trùng âm tiết 'Hảo' với 'Khuyên Hảo' [name_guess parse_confidence=low — người duyệt]
+- ep_47: rule_02: 'Thanh Nga' trùng âm tiết 'Thanh' với 'Khả Thanh' [name_guess parse_confidence=low — người duyệt]
+- ep_47: rule_02: 'Thanh Nga' trùng âm tiết 'Nga' với 'Tiên Nga' [name_guess parse_confidence=low — người duyệt]
+- ep_48: rule_02: 'Hữu Duy' trùng âm tiết 'Hữu' với 'Hữu Trí' [name_guess parse_confidence=low — người duyệt]
+- ep_49: rule_02: 'Phương Linh' trùng âm tiết 'Phương' với 'Hiệp Phương' [name_guess parse_confidence=low — người duyệt]
+- ep_49: forbidden: 'Phương Linh' chứa từ cấm 'Linh' (Mr.Long 27/6) [name_guess parse_confidence=low — người duyệt]
+- ep_49: rule_02: 'Phương Linh' trùng âm tiết 'Linh' với 'Linh Trang' [name_guess parse_confidence=low — người duyệt]
+- ep_50: rule_02: 'Hạ Nhi' trùng âm tiết 'Hạ' với 'Hạ Diệu' [name_guess parse_confidence=low — người duyệt]
+- ep_50: rule_02: 'Hạ Nhi' trùng âm tiết 'Nhi' với 'Mỹ Nhi' [name_guess parse_confidence=low — người duyệt]

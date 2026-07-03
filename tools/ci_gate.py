@@ -26,6 +26,7 @@ CHECKS = [
     ('R207_canon', 'tests/test_story_consistency_1000_r207.py'),
     ('R208_age',  'tests/test_dialogue_appropriateness_1000_r208.py'),
     ('project_config', 'tools/validate_project_config.py'),   # PACK4/15: hop dong project_config (scan repo)
+    ('G2_roster',  'tools/roster_validator.py'),   # G2 B4: naming bible/23 + que<->giong R210 (WARN mode; --strict sau khi fill dat nguong Tier1 100%)
 ]
 
 

@@ -1,0 +1,85 @@
+# CHARACTER EXT SCHEMA — G2 B1 ĐỀ XUẤT (3 facet planned của BP2 domain character)
+# planned_path khai tại governance/blueprint/bp2/domain_specs.yaml (facet knowledge /
+# reveal_permission / continuity_risk — sot.status: planned, owner: character).
+# VỊ TRÍ proposals/: CỐ Ý KHÔNG đặt tại planned_path — bp2_domain_check (lock)
+# enforce path planned phải TRỐNG tới khi ký (chống stub/drift). Khi Mr.Long ký:
+# nội dung chuyển về planned_path + domain_specs flip planned->exists (BP2 amendment).
+# =====================================================================
+# STATUS: PROPOSAL — CHƯA CÓ HIỆU LỰC. Bible writer = mr_long (bp3 ownership).
+# Chỉ khi Mr.Long ký thì: (1) status -> signed, (2) patch tương ứng ghi vào
+# bible/37_character_schema.yaml v2 (xem proposed_bible37_v2_patch cuối file).
+# CMD_BUILD soạn 2026-07-03 theo TASK_G2_CHARACTER B1. KHÔNG bịa field vô căn cứ:
+# mọi field đều truy về facet desc đã đóng ở BP2 (bp2-domain-v1.0) hoặc R210.
+# =====================================================================
+
+meta:
+  version: 0.1-proposal
+  status: PROPOSAL_AWAITING_MR_LONG_SIGNATURE
+  drafted_by: CMD_BUILD
+  date: 2026-07-03
+  source_facets: [knowledge, reveal_permission, continuity_risk]  # đúng facet_id bp2/domain_specs.yaml
+  target_when_signed: bible/37_character_schema.yaml v2 (g2_extension section)
+
+# ---------------------------------------------------------------
+# FACET 1: knowledge — "Nhân vật BIẾT gì" (QUAN TRỌNG NHẤT truyện dài tập)
+# Chống know-the-script: CẤM nhân vật biết bí mật chưa reveal.
+# ---------------------------------------------------------------
+knowledge:
+  data_type: list
+  per_character: true
+  item_fields:
+    fact_id:        {type: str,  required: true,  desc: "ID sự kiện/bí mật (ref story_memory.su_kien)"}
+    desc:           {type: str,  required: true,  desc: "Nội dung nhân vật biết"}
+    learned_ep:     {type: int,  required: true,  desc: "Biết từ tập nào (0 = trước series)"}
+    source_evidence: {type: str, required: true,  desc: "Căn cứ trong truyện (ep:line) — KHÔNG bịa"}
+    secrecy:        {type: enum, values: [public, private, secret], required: true}
+  invariant: "dialog tập N chỉ được dùng fact có learned_ep <= N (validator enforce)"
+  reconcile: "mở rộng modules_v2.story_memory (ai_biet/ai_chua_biet) xuống mức per-character per-fact"
+
+# ---------------------------------------------------------------
+# FACET 2: reveal_permission — PERMISSION lộ bí mật (character OWN)
+# TIMING lộ tập nào = story_planner reveal_curve — 2 chữ CẤM gộp (phán xử BP2b).
+# ---------------------------------------------------------------
+reveal_permission:
+  data_type: mapping
+  per_character: true
+  entry_fields:
+    fact_id:    {type: str, required: true, desc: "ref knowledge.fact_id"}
+    permission: {type: enum, values: [never, after_story_reveal, always], required: true}
+    note:       {type: str, required: false, desc: "vd: chỉ hé lộ gián tiếp qua vật/ám hiệu"}
+  invariant: "mọi fact secrecy=secret PHẢI có entry reveal_permission (validator: reveal↔knowledge nhất quán)"
+  forbidden: "KHÔNG chứa timing (tập nào lộ) — đó là reveal_curve của story_planner"
+
+# ---------------------------------------------------------------
+# FACET 3: continuity_risk — cờ rủi ro continuity (qa_runtime đọc)
+# ---------------------------------------------------------------
+continuity_risk:
+  data_type: flags
+  per_character: true
+  fields:
+    flags:
+      type: list
+      allowed_values:
+        - da_chet_xuat_hien_lai   # chết/mất trong tập N nhưng xuất hiện tập M>N
+        - mat_tich                 # mất tích chưa rõ số phận
+        - doi_ten                  # tên trong episode lệch roster
+        - bi_nhap                  # bị nhập/chiếm hồn (đổi hành vi)
+        - biet_bi_mat              # giữ secret chưa reveal (ưu tiên fill cao)
+        - recurring_cross_ep       # xuất hiện >1 tập (chỉ hợp lệ với recurring bible/03)
+        - roster_drift_no_pas_id   # tập dùng nhân vật KHÔNG có PAS_ id (phát hiện G2 mining 3/7)
+    level: {type: enum, values: [low, medium, high], desc: "high = fill trước (TASK G2 B3 thứ tự)"}
+    evidence: {type: list, desc: "mỗi flag kèm (ep:line) căn cứ — KHÔNG suy luận"}
+  invariant: "flag chỉ được set kèm evidence; máy đề xuất (roster_backfill_miner) — người duyệt"
+
+# ---------------------------------------------------------------
+# PATCH ĐỀ XUẤT vào bible/37 v2 KHI MR.LONG KÝ (diff tối thiểu, không đổi field khóa)
+# ---------------------------------------------------------------
+proposed_bible37_v2_patch:
+  add_section: g2_extension
+  content_summary: |
+    g2_extension:
+      knowledge: [fact_id, desc, learned_ep, source_evidence, secrecy]
+      reveal_permission: [fact_id, permission, note]   # PERMISSION only — timing = story_planner
+      continuity_risk: [flags, level, evidence]
+    meta.version: 2.0 -> 2.1 ; note "G2 extension (Mr.Long ký <ngày>)"
+  untouched: [tier_1_mandatory, critical_groups, modules_v2, balance_targets]  # KHÔNG đụng lock
