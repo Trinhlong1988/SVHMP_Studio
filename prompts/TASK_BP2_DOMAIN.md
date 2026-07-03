@@ -51,3 +51,17 @@ cấm-trùng-từ toàn cục · pool ≥100 · né recurring). BP2 khai FACET +
   đi kèm) — liên kết facet belief.
 - naming_vietnamese: giữ chuẩn thuần Việt đẹp (rule_01 đã có) + CẤM tên lai/tên game/tên phi thực.
 QA gate tương lai (G2): roster validator so name↔quê↔tuổi↔belief, lệch = WARN→STRICT.
+
+## 🔒 CHỐT G2-CORE — 10 FACET ƯU TIÊN (Mr.Long ký 3/7, ĐÓNG — "không mở rộng thêm field")
+G2 fill data theo đúng 10 mảng này TRƯỚC, các facet khác của inventory = paper cho tương lai:
+**identity · voice · relationship · knowledge · state · goal · fear · arc · reveal_permission
+· audit_gate** (audit_gate = completeness gate character_manager, exists).
++ 5 mảng bổ sung 3/7 (đã phân xử ownership):
+- continuity_risk: character own (cờ: đã-chết/mất-tích/đổi-tên/bị-nhập/biết-bí-mật) — qa_runtime đọc.
+- reveal_permission: PERMISSION = character · TIMING (lộ tập nào) = story_planner reveal_curve — 2 chủ, CẤM gộp.
+- trauma_backstory_lock: character + lock_type (canon khoá — AI cấm bịa thêm quá khứ).
+- scene_function (dẫn chuyện/gây nghi/đánh lạc hướng/hy sinh...): thuộc tính của SCENE —
+  story_planner OWN, character chỉ được tham chiếu (KHÔNG phải facet character).
+- arc (sợ→dũng cảm · sống→vong linh→siêu thoát): character own, trạng thái PHẢI map
+  state machine BP4.
+SAU BP2 LOCK: facet list ĐÓNG như domain inventory — thêm facet = RFC.
