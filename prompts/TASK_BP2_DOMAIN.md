@@ -38,3 +38,16 @@ tone/accent cấp-câu-thoại thuộc domain dialogue (2 tầng, cấm gộp). 
 bible/37 = exists trỏ key; chưa có = planned 5-metadata. Domain khác: bộ tối thiểu tự suy
 từ bible tương ứng (object: material/origin/curse_state...; supernatural: entity_type/trigger/
 rule...), cùng chuẩn.
+
+## LUẬT ĐẶT TÊN MỞ RỘNG (Mr.Long yêu cầu 3/7 — facet identity.naming)
+Reconcile `bible/23_passenger_naming.yaml` (exists, IMMUTABLE — 4 rule hiện có: 2-âm-tiết đẹp ·
+cấm-trùng-từ toàn cục · pool ≥100 · né recurring). BP2 khai FACET + FORMAT cho 4 rule MỞ RỘNG
+(status planned — số liệu/pool cụ thể do Mr.Long ký vào bible/23 v1.1 tại G2):
+- naming_region: TÊN GẮN QUÊ (mirror "giọng gắn quê" R206) — Bắc: Hòa/Thắm/Toan kiểu cổ điển;
+  Trung/Huế: Diệu/Tôn Nữ...; Nam/miền Tây: thứ-danh Út/Tư/Sáu + tên mộc mạc. Validator so
+  name_style ↔ quê trong roster.
+- naming_generation: tuổi ↔ thời tên (58 tuổi sinh ~196x mang tên thời đó, KHÔNG tên trend trẻ).
+- naming_culture: tôn giáo/tín ngưỡng ảnh hưởng tên (Phật tử: Diệu/Minh...; Công giáo: tên thánh
+  đi kèm) — liên kết facet belief.
+- naming_vietnamese: giữ chuẩn thuần Việt đẹp (rule_01 đã có) + CẤM tên lai/tên game/tên phi thực.
+QA gate tương lai (G2): roster validator so name↔quê↔tuổi↔belief, lệch = WARN→STRICT.
