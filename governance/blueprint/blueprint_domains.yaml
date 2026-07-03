@@ -1,66 +1,103 @@
 # ============================================================
-# SYSTEM_BLUEPRINT_CONSTITUTION v1.0 — DOMAIN CONTRACT (source-of-truth, machine-checkable)
-# Enforcer: tools/blueprint_constitution_check.py (exit 0/1)
-# Certify:  tests/test_blueprint_constitution.py (negative case bat buoc)
+# SYSTEM_BLUEPRINT_CONSTITUTION v2.0 — DOMAIN CONTRACT (source-of-truth, machine-checkable)
+# Amendment v2 per Mr.Long ky bang E 3/7 (prompts/TASK_BPC_AMENDMENT_V2.md).
+# Enforcer: tools/blueprint_constitution_check.py v2.0.0 (exit 0/1)
+# Certify:  tests/test_blueprint_constitution.py
 # Nguyen tac:
-#  - status=exists: path DA Test-Path 3/7 (khai lao = FAIL phantom).
-#  - status=planned: PLANNED HONESTY RULE — bat buoc du 5 metadata
-#    (planned_path/owner/reason_not_exists_yet/target_milestone/blocking_dependency),
-#    thieu 1 = FAIL. KHONG FAIL vi planned; CAM stub/vaporware de qua test.
-#  - Builder KHONG duoc doi promotion_status sang locked (checker bat SELF-LOCK).
+#  - status: exists|planned|deprecated|archived.
+#    exists  = path DA tren disk (khai lao = FAIL phantom).
+#    planned = PLANNED HONESTY RULE: du 5 metadata; planned_path DA xuat hien
+#              tren disk = VIOLATION (Cond 2 kiem duyet: chong stub tuyet doi).
+#    deprecated/archived = quan ly vong doi (archived cam moi tham chieu).
+#  - Canon L1 (8 domain): dependencies = [] TUYET DOI — tham chieu nhau CHI qua
+#    reader (Cond 1 kiem duyet). Dep giua 2 domain L1 = VIOLATION L1-CROSS-DEP.
+#  - Builder KHONG doi promotion_status sang locked (checker bat SELF-LOCK).
 # ============================================================
 meta:
   name: SYSTEM_BLUEPRINT_CONSTITUTION
-  version: v1.0
-  promotion_status: candidate      # lock = chu ky Mr.Long trong architecture_registry.yaml
+  version: v2.0
+  schema_version: 2.0.0        # format cua file nay
+  contract_version: 2.0.0      # noi dung hop dong
+  validator_version: 2.0.0     # PHAI khop __version__ cua checker (may so)
+  promotion_status: candidate  # re-lock v2.0 = chu ky Mr.Long sau audit 7 buoc
   authority: "Mr.Long (LEAD) — Builder chi de xuat; R211 registry = nguoi giu promotion"
 
-# Milestone hop le cho target_milestone cua planned ref (checker cuong che).
 milestones:
-  M1_canon_managers: "Manager/schema/validator cho canon domain (world/timeline/supernatural/event) + ledger"
-  M2_planner_generator: "Story planner + dialogue manager + episode generator + schema sinh tap"
+  M1_canon_managers: "Manager/schema/validator + bible cho canon domain (world/timeline/location/weather/culture/belief/ritual/supernatural/object/event)"
+  M2_planner_generator: "Story planner + decision engine + dialogue manager + episode generator + schema sinh tap"
   M3_qa_render_schemas: "Schema verdict/render/tts/audio cho chuoi QA-production"
-  M4_video_publisher: "Video builder + publisher gate (phan phoi)"
+  M4_video_publisher: "Video builder + publisher gate + analytics (phan phoi)"
+  M5_reserved_overlay: "Domain RESERVED cho overlay the loai (quest/knowledge) — chi mo khi du an moi can"
 
 # Huong phu thuoc HOP LE: layer CAO chi duoc depend layer THAP HON (strictly).
-# Layer 1 = canon goc (khong depend ai). Nguoc chieu = FAIL (negative test).
+# L1 = canon goc: dependencies rong tuyet doi, tham chieu ngang CHI qua reader.
 layers:
   world: 1
   timeline: 1
+  location: 1
+  weather: 1
+  culture: 1
+  belief: 1
+  ritual: 1
   supernatural: 1
   character: 2
+  object: 2
   dialogue: 3
   event: 3
   story_planner: 4
-  generator: 5
-  qa_runtime: 6
-  tts: 7
-  audio: 8
-  production: 9
-  video: 10
-  publisher: 11
+  quest: 4
+  decision_engine: 5
+  generator: 6
+  qa_runtime: 7
+  tts: 8
+  audio: 9
+  production: 10
+  video: 11
+  publisher: 12
+  analytics: 12
+
+# 4 nhan nhom (finding #2 ARCH_AUDIT) — nhan tren layer-so, KHONG thay DAG.
+layer_groups:
+  narrative: [world, timeline, location, weather, culture, belief, ritual,
+              supernatural, character, object, dialogue, event, story_planner,
+              quest, decision_engine]
+  runtime: [generator, qa_runtime, production]
+  presentation: [tts, audio, video]
+  business: [publisher, analytics]
+
+# FORMAT spec (A7) — DATA day du o pack BP3 (facet/ownership) va BP4 (event/state).
+# Checker validate moi entry xuat hien theo format nay tu bay gio (forward-compat).
+formats:
+  facet:
+    required: [writer, readers]
+    rule: "1 facet = DUNG 1 writer (domain); >1 writer = VIOLATION (chong 3 manager cung sua Emotion)"
+  event:
+    required: [name, emitter, chain]
+    rule: "moi hop ke tiep trong chain PHAI nam trong reader cua hop truoc"
+  state_machine:
+    required: [entity, states, transitions]
+    rule: "transition chi giua states da khai"
 
 domains:
   world:
-    responsibility: "Canon khong gian: dia danh, setting, lore Sai Gon/hac ma pho; nguon su that cho moi mo ta boi canh."
-    non_responsibility: "KHONG quan luat sieu nhien (domain supernatural), KHONG quan nhan vat, KHONG sinh text."
+    responsibility: "Canon LUAT khong gian: lore Sai Gon/hac ma pho, quy tac the gioi (bible/02). KHONG giu instance dia diem (location)."
+    non_responsibility: "KHONG quan instance dia diem (location giu bible/13), KHONG quan luat sieu nhien (supernatural), KHONG quan phong tuc (culture)."
     source_of_truth:
       - {path: bible/02_lore_db.yaml, status: exists}
-      - {path: bible/13_setting_library.yaml, status: exists}
     manager:
       status: planned
       planned_path: tools/world_manager.py
       owner: world
       reason_not_exists_yet: "Canon hien do Mr.Long sua bible truc tiep — chua co nhu cau API doc/ghi rieng."
       target_milestone: M1_canon_managers
-      blocking_dependency: "blueprint_constitution lock (chu ky Mr.Long) + schema world duyet truoc"
+      blocking_dependency: "world schema (M1) duyet truoc"
     schema:
       status: planned
       planned_path: governance/blueprint/schemas/world_schema.yaml
       owner: world
-      reason_not_exists_yet: "bible/02+13 dang o dang tu do, chua chuan hoa field."
+      reason_not_exists_yet: "bible/02 dang o dang tu do, chua chuan hoa field."
       target_milestone: M1_canon_managers
-      blocking_dependency: "Mr.Long duyet danh sach field bat buoc cua setting/lore"
+      blocking_dependency: "Mr.Long duyet danh sach field bat buoc cua lore"
     validator:
       status: planned
       planned_path: tools/world_consistency_validator.py
@@ -68,16 +105,17 @@ domains:
       reason_not_exists_yet: "Chua co schema thi validator chua co gi de cuong che."
       target_milestone: M1_canon_managers
       blocking_dependency: "world schema (M1)"
-    reader: [character, event, story_planner, generator, qa_runtime]
+    reader: [location, weather, culture, character, event, story_planner, generator, qa_runtime]
     writer: [mr_long]
-    lifecycle: locked_bible
+    lifecycle: approved
+    lock_type: bible
     dependencies: []
     forbidden_dependencies: [generator, production, publisher]
-    audit_rule: "Moi setting_ ma episode dung phai co trong bible/13; lore trai bible/02 = VIOLATION; bible chi Mr.Long sua."
+    audit_rule: "Lore trai bible/02 = VIOLATION; bible chi Mr.Long sua."
 
   timeline:
     responsibility: "Truc thoi gian series: thu tu tap, moc su kien xuyen 100 tap, nhip reveal theo thoi gian."
-    non_responsibility: "KHONG dinh nghia noi dung su kien (domain event), KHONG quan budget reveal nhan vat (story_planner giu bible/18)."
+    non_responsibility: "KHONG dinh nghia noi dung su kien (event), KHONG quan budget reveal nhan vat (story_planner giu bible/18), KHONG quan thoi tiet (weather)."
     source_of_truth:
       - {path: bible/01_narrative_structure.yaml, status: exists}
     manager:
@@ -103,14 +141,205 @@ domains:
       blocking_dependency: "timeline schema (M1)"
     reader: [event, story_planner, generator, qa_runtime]
     writer: [mr_long]
-    lifecycle: locked_bible
+    lifecycle: approved
+    lock_type: bible
     dependencies: []
     forbidden_dependencies: [generator, production, publisher]
     audit_rule: "Su kien cross-episode phai khop thu tu timeline; mau thuan thoi gian giua 2 tap = VIOLATION consistency."
 
+  location:
+    responsibility: "Instance dia diem cu the co state: 21+ setting_ (bible/13) — ben xe, nghia trang, chua, nha co... noi canh dien ra."
+    non_responsibility: "KHONG phai luat/lore khong gian tong (world giu bible/02); KHONG quan thoi tiet tai dia diem (weather)."
+    source_of_truth:
+      - {path: bible/13_setting_library.yaml, status: exists}
+    manager:
+      status: planned
+      planned_path: tools/location_manager.py
+      owner: location
+      reason_not_exists_yet: "Setting hien tra cuu tay tu bible/13 khi viet tap; chua can API."
+      target_milestone: M1_canon_managers
+      blocking_dependency: "location schema (M1)"
+    schema:
+      status: planned
+      planned_path: governance/blueprint/schemas/location_schema.yaml
+      owner: location
+      reason_not_exists_yet: "bible/13 chua chuan hoa field (suc chua, gio hoat dong, trang thai)."
+      target_milestone: M1_canon_managers
+      blocking_dependency: "Mr.Long duyet field instance dia diem"
+    validator:
+      status: planned
+      planned_path: tools/location_validator.py
+      owner: location
+      reason_not_exists_yet: "Phu thuoc location schema chua co."
+      target_milestone: M1_canon_managers
+      blocking_dependency: "location schema (M1)"
+    reader: [event, character, story_planner, generator, qa_runtime, video]
+    writer: [mr_long]
+    lifecycle: approved
+    lock_type: bible
+    dependencies: []
+    forbidden_dependencies: [generator, production, publisher]
+    audit_rule: "Moi setting_ episode dung phai co trong bible/13 (audit_rule setting chuyen tu world ve dung chu so huu)."
+
+  weather:
+    responsibility: "Trang thai moi truong theo canh: mua/suong/gio/trang — phuc vu khong khi kinh di va am thanh nen."
+    non_responsibility: "KHONG phai moc thoi gian (timeline), KHONG phai dia diem (location), KHONG chon nhac (audio quyet am thanh)."
+    source_of_truth:
+      - status: planned
+        planned_path: bible/41_weather_bible.yaml
+        owner: weather
+        reason_not_exists_yet: "Thoi tiet hien mo ta tu do trong episode text; chua co canon rieng."
+        target_milestone: M1_canon_managers
+        blocking_dependency: "Mr.Long duyet taxonomy thoi tiet kinh di (mua dem/suong nghia trang...)"
+    manager:
+      status: planned
+      planned_path: tools/weather_manager.py
+      owner: weather
+      reason_not_exists_yet: "Chua co canon weather de quan."
+      target_milestone: M1_canon_managers
+      blocking_dependency: "bible/41 weather (M1)"
+    schema:
+      status: planned
+      planned_path: governance/blueprint/schemas/weather_schema.yaml
+      owner: weather
+      reason_not_exists_yet: "Taxonomy chua duyet."
+      target_milestone: M1_canon_managers
+      blocking_dependency: "Mr.Long duyet taxonomy"
+    validator:
+      status: planned
+      planned_path: tools/weather_validator.py
+      owner: weather
+      reason_not_exists_yet: "Phu thuoc schema chua co."
+      target_milestone: M1_canon_managers
+      blocking_dependency: "weather schema (M1)"
+    reader: [event, story_planner, generator, qa_runtime, audio]
+    writer: [mr_long]
+    lifecycle: draft
+    lock_type: none
+    dependencies: []
+    forbidden_dependencies: [generator, production, publisher]
+    audit_rule: "Thoi tiet phai nhat quan trong 1 canh (mua roi tanh giua cau = VIOLATION continuity)."
+
+  culture:
+    responsibility: "Phong tuc song nguoi Viet trong truyen: gio, dinh, le, tap quan xung ho, kieng ky doi thuong."
+    non_responsibility: "KHONG phai he tin nguong (belief), KHONG phai nghi thuc hanh vi (ritual), KHONG phai luat hon ma (supernatural) — 4 domain rieng, cam nuot nhau."
+    source_of_truth:
+      - status: planned
+        planned_path: bible/38_culture_bible.yaml
+        owner: culture
+        reason_not_exists_yet: "Phong tuc hien nam rai trong bible/22 anti-slop + episode text; chua gom canon rieng."
+        target_milestone: M1_canon_managers
+        blocking_dependency: "Mr.Long duyet taxonomy phong tuc"
+    manager:
+      status: planned
+      planned_path: tools/culture_manager.py
+      owner: culture
+      reason_not_exists_yet: "Chua co canon culture de quan."
+      target_milestone: M1_canon_managers
+      blocking_dependency: "bible/38 culture (M1)"
+    schema:
+      status: planned
+      planned_path: governance/blueprint/schemas/culture_schema.yaml
+      owner: culture
+      reason_not_exists_yet: "Taxonomy chua duyet."
+      target_milestone: M1_canon_managers
+      blocking_dependency: "Mr.Long duyet taxonomy"
+    validator:
+      status: planned
+      planned_path: tools/culture_validator.py
+      owner: culture
+      reason_not_exists_yet: "Phu thuoc schema chua co."
+      target_milestone: M1_canon_managers
+      blocking_dependency: "culture schema (M1)"
+    reader: [belief, ritual, character, dialogue, event, story_planner, generator, qa_runtime]
+    writer: [mr_long]
+    lifecycle: draft
+    lock_type: none
+    dependencies: []
+    forbidden_dependencies: [generator, production, publisher]
+    audit_rule: "Chi tiet phong tuc sai (gio cung sai le, xung ho trai tap quan vung) = VIOLATION culture."
+
+  belief:
+    responsibility: "He tin nguong: Phat giao, Dao Mau, tho Thanh Hoang, quan niem am duong — dieu nhan vat TIN."
+    non_responsibility: "KHONG phai phong tuc song (culture), KHONG phai nghi thuc cu the (ritual), KHONG phai luat hon ma THAT (supernatural — belief co the SAI so voi supernatural)."
+    source_of_truth:
+      - status: planned
+        planned_path: bible/39_belief_bible.yaml
+        owner: belief
+        reason_not_exists_yet: "Tin nguong hien mo ta ngau nhien theo tap; chua canon hoa."
+        target_milestone: M1_canon_managers
+        blocking_dependency: "Mr.Long duyet danh muc tin nguong (nhay cam ton giao — can LEAD)"
+    manager:
+      status: planned
+      planned_path: tools/belief_manager.py
+      owner: belief
+      reason_not_exists_yet: "Chua co canon belief de quan."
+      target_milestone: M1_canon_managers
+      blocking_dependency: "bible/39 belief (M1)"
+    schema:
+      status: planned
+      planned_path: governance/blueprint/schemas/belief_schema.yaml
+      owner: belief
+      reason_not_exists_yet: "Danh muc chua duyet."
+      target_milestone: M1_canon_managers
+      blocking_dependency: "Mr.Long duyet danh muc"
+    validator:
+      status: planned
+      planned_path: tools/belief_validator.py
+      owner: belief
+      reason_not_exists_yet: "Phu thuoc schema chua co."
+      target_milestone: M1_canon_managers
+      blocking_dependency: "belief schema (M1)"
+    reader: [ritual, supernatural, character, dialogue, event, generator, qa_runtime]
+    writer: [mr_long]
+    lifecycle: draft
+    lock_type: none
+    dependencies: []
+    forbidden_dependencies: [generator, production, publisher]
+    audit_rule: "Nhan vat hanh xu trai belief da khai trong ho so = VIOLATION."
+
+  ritual:
+    responsibility: "Nghi thuc HANH VI cu the: cung, khan, dot vang, goi hon, tay ue — chuoi hanh dong co the lam dung/sai."
+    non_responsibility: "KHONG phai he tin nguong dang sau (belief), KHONG phai phong tuc thuong nhat (culture), KHONG quyet hieu luc sieu nhien (supernatural quyet nghi thuc CO tac dung voi hon ma khong)."
+    source_of_truth:
+      - status: planned
+        planned_path: bible/40_ritual_bible.yaml
+        owner: ritual
+        reason_not_exists_yet: "Nghi thuc hien viet tu do theo tap; chua co catalog buoc-chuan."
+        target_milestone: M1_canon_managers
+        blocking_dependency: "Mr.Long duyet catalog nghi thuc + muc chi tiet cho phep"
+    manager:
+      status: planned
+      planned_path: tools/ritual_manager.py
+      owner: ritual
+      reason_not_exists_yet: "Chua co canon ritual de quan."
+      target_milestone: M1_canon_managers
+      blocking_dependency: "bible/40 ritual (M1)"
+    schema:
+      status: planned
+      planned_path: governance/blueprint/schemas/ritual_schema.yaml
+      owner: ritual
+      reason_not_exists_yet: "Catalog chua duyet."
+      target_milestone: M1_canon_managers
+      blocking_dependency: "Mr.Long duyet catalog"
+    validator:
+      status: planned
+      planned_path: tools/ritual_validator.py
+      owner: ritual
+      reason_not_exists_yet: "Phu thuoc schema chua co."
+      target_milestone: M1_canon_managers
+      blocking_dependency: "ritual schema (M1)"
+    reader: [character, dialogue, event, generator, qa_runtime]
+    writer: [mr_long]
+    lifecycle: draft
+    lock_type: none
+    dependencies: []
+    forbidden_dependencies: [generator, production, publisher]
+    audit_rule: "Nghi thuc trong tap phai theo catalog (buoc/vat pham); nghi thuc bia = VIOLATION canon."
+
   supernatural:
-    responsibility: "He thong sieu nhien DOC LAP: GHOST_RULES (bible/00), regret catalog 27 sub-archetype + distribution 32/24/20/14/10 (bible/11), quy tac hien hinh/rang buoc hon ma."
-    non_responsibility: "KHONG phai world-lore thuong (domain world), KHONG phai su kien tap (event), KHONG phai ke hoach truyen (story_planner). CAM gop/an domain nay vao world/event/story_planner."
+    responsibility: "LUAT sieu nhien THAT cua the gioi truyen (doc lap): GHOST_RULES (bible/00), regret catalog 27 sub-archetype + distribution 32/24/20/14/10 (bible/11), quy tac hien hinh/rang buoc hon ma."
+    non_responsibility: "KHONG phai lore thuong (world), KHONG phai su kien tap (event), KHONG phai ke hoach truyen (story_planner), KHONG phai dieu nhan vat TIN (belief — co the sai). CAM gop/an domain nay vao world/event/story_planner."
     source_of_truth:
       - {path: bible/11_regret_catalog.yaml, status: exists}
       - {path: bible/00_constitution.yaml, status: exists}
@@ -120,7 +349,7 @@ domains:
       owner: supernatural
       reason_not_exists_yet: "Luat sieu nhien hien enforce tay qua QA + bible lock; chua co API rieng."
       target_milestone: M1_canon_managers
-      blocking_dependency: "supernatural schema (M1) + Mr.Long duyet danh muc GHOST_RULES may-doc-duoc"
+      blocking_dependency: "supernatural schema (M1) + Mr.Long duyet GHOST_RULES may-doc-duoc"
     schema:
       status: planned
       planned_path: governance/blueprint/schemas/supernatural_schema.yaml
@@ -135,16 +364,17 @@ domains:
       reason_not_exists_yet: "Phu thuoc schema sieu nhien chua co."
       target_milestone: M1_canon_managers
       blocking_dependency: "supernatural schema (M1)"
-    reader: [character, event, story_planner, generator, qa_runtime]
+    reader: [character, object, event, story_planner, generator, qa_runtime]
     writer: [mr_long]
-    lifecycle: locked_bible
+    lifecycle: approved
+    lock_type: bible
     dependencies: []
     forbidden_dependencies: [world, event, story_planner, generator]
-    audit_rule: "Moi hanh vi hon ma trong episode phai truy ve GHOST_RULES + dung sub-archetype bible/11 (khong pha regret lock); vi pham = VIOLATION canon."
+    audit_rule: "Moi hanh vi hon ma phai truy ve GHOST_RULES + dung sub-archetype bible/11 (khong pha regret lock); vi pham = VIOLATION canon."
 
   character:
-    responsibility: "Ho so song 100 passenger + recurring (bible/03): identity Tier1-3, voice profile, relationship graph (R210)."
-    non_responsibility: "KHONG sinh dialog (generator/dialogue), KHONG quyet dinh chet o tap nao (event/story_planner)."
+    responsibility: "Ho so song 100 passenger + recurring (bible/03): identity Tier1-3, voice profile, relationship graph, inventory/skill/knowledge ca nhan (FACET — khong phai domain rieng, per bang E)."
+    non_responsibility: "KHONG sinh dialog (generator/dialogue), KHONG quyet chet o tap nao (event/story_planner), KHONG dinh nghia vat pham toan cuc (object giu bible/12)."
     source_of_truth:
       - {path: runtime/passenger_roster_100.yaml, status: exists}
       - {path: bible/37_character_schema.yaml, status: exists}
@@ -153,16 +383,51 @@ domains:
     manager: {path: tools/character_manager.py, status: exists}
     schema: {path: bible/37_character_schema.yaml, status: exists}
     validator: {path: tools/story_consistency_validator.py, status: exists}
-    reader: [dialogue, event, story_planner, generator, qa_runtime, tts]
+    reader: [dialogue, event, story_planner, decision_engine, generator, qa_runtime, tts]
     writer: [mr_long, character]
-    lifecycle: active
-    dependencies: [world, supernatural]
+    lifecycle: approved
+    lock_type: bible
+    dependencies: [world, supernatural, culture]
     forbidden_dependencies: [generator, production, publisher]
-    audit_rule: "Completeness gate G2 (episode_completeness) truoc render; CAM doi field khoa cross-episode (story_consistency_validator); can bang R210 (character_balance_report)."
+    audit_rule: "Completeness gate G2 truoc render; CAM doi field khoa cross-episode; can bang R210 (balance_report)."
+
+  object:
+    responsibility: "Thu vien vat pham toan cuc: 71+ OBJ_ (bible/12), lien ket vat-regret voi bible/11 — vat la neo hoi uc/haunting_symbol."
+    non_responsibility: "KHONG quan vat AI DANG CAM (inventory = facet cua character), KHONG tu quyet y nghia sieu nhien cua vat (supernatural quyet)."
+    source_of_truth:
+      - {path: bible/12_object_library.yaml, status: exists}
+    manager:
+      status: planned
+      planned_path: tools/object_manager.py
+      owner: object
+      reason_not_exists_yet: "OBJ_ hien tra cuu tay tu bible/12; chua can API."
+      target_milestone: M1_canon_managers
+      blocking_dependency: "object schema (M1)"
+    schema:
+      status: planned
+      planned_path: governance/blueprint/schemas/object_schema.yaml
+      owner: object
+      reason_not_exists_yet: "bible/12 chua chuan hoa field (regret-link, era, trang thai)."
+      target_milestone: M1_canon_managers
+      blocking_dependency: "Mr.Long duyet field vat pham"
+    validator:
+      status: planned
+      planned_path: tools/object_validator.py
+      owner: object
+      reason_not_exists_yet: "Phu thuoc object schema chua co."
+      target_milestone: M1_canon_managers
+      blocking_dependency: "object schema (M1)"
+    reader: [character, event, story_planner, generator, qa_runtime]
+    writer: [mr_long]
+    lifecycle: approved
+    lock_type: bible
+    dependencies: [supernatural]
+    forbidden_dependencies: [generator, production, publisher]
+    audit_rule: "Moi OBJ_ episode dung phai co trong bible/12; vat gan regret phai khop bible/11 = VIOLATION neu lech."
 
   dialogue:
-    responsibility: "Quy tac thoai: xung ho, giong vung, dac trung voice tung nhan vat, anti-slop VN (bible/22)."
-    non_responsibility: "KHONG quan identity nhan vat (character), KHONG render giong (tts)."
+    responsibility: "Quy tac thoai + narration voice (narration = FACET per bang E): xung ho, giong vung, dac trung voice, anti-slop VN (bible/22), narrator rules (bible/15)."
+    non_responsibility: "KHONG quan identity nhan vat (character), KHONG render giong (tts), KHONG quyet ratio thoai/narration (decision_engine)."
     source_of_truth:
       - {path: bible/22_anti_slop_vi.yaml, status: exists}
       - {path: bible/06_lexical_style.yaml, status: exists}
@@ -176,15 +441,16 @@ domains:
       blocking_dependency: "quyet dinh tach/giu chung voi character_manager (Change Request Gate R211)"
     schema: {path: bible/37_character_schema.yaml, status: exists}
     validator: {path: tools/dialog_voice_validator.py, status: exists}
-    reader: [generator, qa_runtime, tts]
+    reader: [decision_engine, generator, qa_runtime, tts]
     writer: [mr_long]
-    lifecycle: active
-    dependencies: [character]
+    lifecycle: approved
+    lock_type: bible
+    dependencies: [character, culture]
     forbidden_dependencies: [production, publisher]
-    audit_rule: "CAM sinh dialog khi focal char thieu Tier1 (R210); thoai phai qua dialog_voice_validator; vi pham anti-slop = VIOLATION."
+    audit_rule: "CAM sinh dialog khi focal char thieu Tier1 (R210); thoai qua dialog_voice_validator; vi pham anti-slop = VIOLATION."
 
   event:
-    responsibility: "Su kien tap: incident, cai chet (9 kieu, can bang R210), reveal, hau qua cross-episode."
+    responsibility: "Su kien tap: incident, cai chet (9 kieu, can bang R210), reveal, hau qua cross-episode — xay ra O DAU (location), TRONG thoi tiet nao (weather), quanh VAT gi (object)."
     non_responsibility: "KHONG dinh nghia luat sieu nhien (supernatural), KHONG xep lich series (timeline/story_planner)."
     source_of_truth:
       - status: planned
@@ -209,16 +475,17 @@ domains:
       target_milestone: M1_canon_managers
       blocking_dependency: "Mr.Long duyet taxonomy su kien"
     validator: {path: tools/story_consistency_validator.py, status: exists}
-    reader: [story_planner, generator, qa_runtime]
+    reader: [story_planner, decision_engine, generator, qa_runtime]
     writer: [mr_long, event]
-    lifecycle: planned
-    dependencies: [character, world, timeline, supernatural]
+    lifecycle: draft
+    lock_type: none
+    dependencies: [character, world, timeline, supernatural, location, weather, object]
     forbidden_dependencies: [generator, production, publisher]
     audit_rule: "Su kien da xay ra = bat bien (ledger append-only); tap sau mau thuan tap truoc = VIOLATION consistency."
 
   story_planner:
-    responsibility: "Ke hoach 100 tap: driver reveal budget (bible/18 — EP73+EP90 reserved), phan bo regret/arc, series KPI."
-    non_responsibility: "KHONG viet text tap (generator), KHONG tao su kien ngoai ke hoach (event ghi nhan)."
+    responsibility: "Ke hoach 100 tap: driver reveal budget (bible/18 — EP73+EP90 reserved), phan bo regret/arc, series KPI; cau truc Scene/Act/Episode/Season/Series/Ending (STRUCTURE noi bo per bang E)."
+    non_responsibility: "KHONG viet text tap (generator), KHONG quyet nhip/ratio tung canh (decision_engine), KHONG tao su kien ngoai ke hoach (event ghi nhan)."
     source_of_truth:
       - {path: bible/18_driver_reveal_budget.yaml, status: exists}
       - {path: bible/01_series_bible.yaml, status: exists}
@@ -238,16 +505,95 @@ domains:
       target_milestone: M2_planner_generator
       blocking_dependency: "Mr.Long duyet format ke hoach"
     validator: {path: tools/character_balance_report.py, status: exists}
-    reader: [generator, qa_runtime]
+    reader: [decision_engine, generator, qa_runtime]
     writer: [mr_long]
-    lifecycle: active
+    lifecycle: approved
+    lock_type: bible
     dependencies: [character, event, timeline, world, supernatural]
     forbidden_dependencies: [production, publisher]
     audit_rule: "Reveal driver ngoai budget bible/18 = VIOLATION; can bang xuyen tap theo target R210 (balance_report 0 flag)."
 
+  quest:
+    responsibility: "RESERVED (bang E): khung nhiem vu/manh moi cho overlay the loai (trinh tham/phieu luu) — KHOA CHO, chua kich hoat cho SVHMP."
+    non_responsibility: "KHONG dung cho SVHMP season hien tai; KHONG duoc build tool khi chua co du an can (M5)."
+    source_of_truth:
+      - status: planned
+        planned_path: bible/43_quest_overlay.yaml
+        owner: quest
+        reason_not_exists_yet: "RESERVED — chua co du an the loai can quest; khoa cho de inventory dong 1 lan."
+        target_milestone: M5_reserved_overlay
+        blocking_dependency: "du an overlay dau tien (trinh tham/phieu luu) duoc Mr.Long mo"
+    manager:
+      status: planned
+      planned_path: tools/quest_manager.py
+      owner: quest
+      reason_not_exists_yet: "RESERVED — chua kich hoat."
+      target_milestone: M5_reserved_overlay
+      blocking_dependency: "quest bible (M5)"
+    schema:
+      status: planned
+      planned_path: governance/blueprint/schemas/quest_schema.yaml
+      owner: quest
+      reason_not_exists_yet: "RESERVED — chua kich hoat."
+      target_milestone: M5_reserved_overlay
+      blocking_dependency: "quest bible (M5)"
+    validator:
+      status: planned
+      planned_path: tools/quest_validator.py
+      owner: quest
+      reason_not_exists_yet: "RESERVED — chua kich hoat."
+      target_milestone: M5_reserved_overlay
+      blocking_dependency: "quest schema (M5)"
+    reader: []
+    writer: [mr_long]
+    lifecycle: draft
+    lock_type: none
+    dependencies: []
+    forbidden_dependencies: [generator, production, publisher]
+    audit_rule: "RESERVED: kich hoat phai qua Change Request Gate R211 + Mr.Long ky; build tool truoc khi kich hoat = VIOLATION chong stub."
+
+  decision_engine:
+    responsibility: "AI DECISION LAYER (finding #6 ARCH_AUDIT): quyet dinh nhip truyen TRUOC khi generator viet — dialogue/narration ratio, emotion/fear/reveal curve, pacing, scene/information/silence budget, character focus, POV."
+    non_responsibility: "KHONG viet text (generator), KHONG chon noi dung su kien (story_planner), KHONG bia so — moi threshold/curve phai calibrate tu EP01 golden theo R195."
+    source_of_truth:
+      - status: planned
+        planned_path: bible/42_decision_policy.yaml
+        owner: decision_engine
+        reason_not_exists_yet: "Policy curve/ratio chua ton tai — phai calibrate tu EP01 golden (R195), khong duoc bia 45%/0.72."
+        target_milestone: M2_planner_generator
+        blocking_dependency: "EP01 golden production output (R196) lam du lieu calibrate"
+    manager:
+      status: planned
+      planned_path: tools/decision_engine.py
+      owner: decision_engine
+      reason_not_exists_yet: "Domain moi them theo audit 3/7; chua khoi cong."
+      target_milestone: M2_planner_generator
+      blocking_dependency: "decision policy (M2) + story_planner manager"
+    schema:
+      status: planned
+      planned_path: governance/blueprint/schemas/decision_schema.yaml
+      owner: decision_engine
+      reason_not_exists_yet: "Format quyet dinh (per-scene budget sheet) chua duyet."
+      target_milestone: M2_planner_generator
+      blocking_dependency: "Mr.Long duyet format budget sheet"
+    validator:
+      status: planned
+      planned_path: tools/decision_validator.py
+      owner: decision_engine
+      reason_not_exists_yet: "Phu thuoc decision schema chua co."
+      target_milestone: M2_planner_generator
+      blocking_dependency: "decision schema (M2)"
+    reader: [generator, qa_runtime]
+    writer: [mr_long, decision_engine]
+    lifecycle: draft
+    lock_type: none
+    dependencies: [story_planner, character, event]
+    forbidden_dependencies: [generator, production, publisher]
+    audit_rule: "Generator thieu budget sheet cho canh dang viet = VIOLATION (chong generator tu nghi = hallucination); so trong policy chua co evidence calibrate = VIOLATION R195."
+
   generator:
-    responsibility: "Sinh episode.md tu canon + ke hoach: hook/setup/incident/reveal/payoff/cliffhanger theo scaffold."
-    non_responsibility: "KHONG tu tao nhan vat moi (bible/03 CAM), KHONG tu phong PASS (qa_runtime + auditor quyet), KHONG render."
+    responsibility: "Sinh episode.md tu canon + ke hoach + budget sheet cua decision_engine: hook/setup/incident/reveal/payoff/cliffhanger theo scaffold."
+    non_responsibility: "KHONG tu tao nhan vat moi (bible/03 CAM), KHONG tu quyet ratio/pacing (decision_engine), KHONG tu phong PASS (qa_runtime + auditor), KHONG render."
     source_of_truth:
       - {path: prompts/ep_scaffold_template.md, status: exists}
       - {path: bible/08_novelty_constraints.yaml, status: exists}
@@ -257,21 +603,23 @@ domains:
       owner: generator
       reason_not_exists_yet: "Episode hien sinh boi CMD prompt-based (nguoi + LLM), chua dong goi thanh tool tai lap duoc."
       target_milestone: M2_planner_generator
-      blocking_dependency: "story_planner manager (M2) + episode schema duyet"
+      blocking_dependency: "story_planner + decision_engine (M2) + episode schema duyet"
     schema:
       status: planned
       planned_path: governance/blueprint/schemas/episode_schema.yaml
       owner: generator
-      reason_not_exists_yet: "Cau truc section (hook..cliffhanger) moi chuan hoa o scaffold prose, chua field-hoa."
+      reason_not_exists_yet: "Cau truc section moi chuan hoa o scaffold prose, chua field-hoa."
       target_milestone: M2_planner_generator
-      blocking_dependency: "Mr.Long duyet field bat buoc cua episode spec"
+      blocking_dependency: "Mr.Long duyet field episode spec"
     validator: {path: tools/svhmp_preflight_qa.py, status: exists}
     reader: [qa_runtime, production]
     writer: [generator]
-    lifecycle: planned
-    dependencies: [story_planner, dialogue, character, event, world, timeline, supernatural]
+    lifecycle: draft
+    lock_type: none
+    dependencies: [story_planner, decision_engine, dialogue, character, event, object,
+                   world, timeline, supernatural, location, weather, culture, belief, ritual]
     forbidden_dependencies: [production, tts, audio, video, publisher, qa_runtime]
-    audit_rule: "Output chi duoc dung domain promotion_status=locked (Promotion Gate R211); moi episode.md phai qua FULL_TEXT_GATE truoc render (R197)."
+    audit_rule: "Output chi dung domain lifecycle=approved (Promotion Gate R211); episode.md qua FULL_TEXT_GATE truoc render (R197); viet canh khong co budget sheet = VIOLATION."
 
   qa_runtime:
     responsibility: "Content-QA runtime: FULL_TEXT_GATE (preflight R86/R197), VNQA H1-H9, skeptic adversarial, watch daemon, waiver R204."
@@ -290,10 +638,11 @@ domains:
     validator: {path: tools/svhmp_preflight_qa.py, status: exists}
     reader: [production]
     writer: [qa_runtime]
-    lifecycle: active
+    lifecycle: approved
+    lock_type: tool
     dependencies: [character, dialogue, supernatural, world]
     forbidden_dependencies: [generator]
-    audit_rule: "Verdict chi tu tool chay that (exit-code), khong tu cau chu; waiver chi Mr.Long duyet (pack5/22); daemon phai co supervisor chong die-silent."
+    audit_rule: "Verdict chi tu tool chay that (exit-code); waiver chi Mr.Long duyet (pack5/22); daemon phai co supervisor chong die-silent."
 
   tts:
     responsibility: "Chuyen text da PASS thanh giong doc: voice mapping theo profile nhan vat, pronunciation fix."
@@ -312,10 +661,11 @@ domains:
     validator: {path: tools/qa_dialogue_identity.py, status: exists}
     reader: [audio, production]
     writer: [tts]
-    lifecycle: locked_tool
+    lifecycle: approved
+    lock_type: tool
     dependencies: [dialogue, character]
     forbidden_dependencies: [publisher, video]
-    audit_rule: "svhmp_v13_render.py LOCKED v1.3 — sua phai co chu ky Mr.Long; giong doc sai identity nhan vat (qa_dialogue_identity do) = VIOLATION."
+    audit_rule: "svhmp_v13_render.py LOCKED v1.3 — sua phai co chu ky Mr.Long; giong sai identity (qa_dialogue_identity do) = VIOLATION."
 
   audio:
     responsibility: "Audio QA + hau ky: detector suite R188-191, metrics peak/LUFS, golden calibration R195, music bed."
@@ -334,7 +684,8 @@ domains:
     validator: {path: tools/qa_boundary_artifact.py, status: exists}
     reader: [production, video, publisher]
     writer: [audio]
-    lifecycle: active
+    lifecycle: approved
+    lock_type: tool
     dependencies: [tts]
     forbidden_dependencies: [generator, publisher]
     audit_rule: "Threshold detector phai calibrate tu golden (pack5/20, R195); detector do khong waiver = CAM khai audio sach."
@@ -353,16 +704,17 @@ domains:
       target_milestone: M3_qa_render_schemas
       blocking_dependency: "tts_spec_schema (M3) — render spec bao goi tts spec"
     validator: {path: tools/svhmp_final_verify.py, status: exists}
-    reader: [video, publisher]
+    reader: [video, publisher, analytics]
     writer: [production]
-    lifecycle: locked_tool
+    lifecycle: approved
+    lock_type: tool
     dependencies: [generator, qa_runtime, tts, audio]
     forbidden_dependencies: [publisher, video]
     audit_rule: "R196: chi Golden Production Output cho phep Freeze/Release; production evidence override engineering evidence."
 
   video:
     responsibility: "Ghep audio final thanh video (visualizer/thumbnail/subtitle) cho kenh."
-    non_responsibility: "KHONG sua audio (audio domain final), KHONG upload (publisher)."
+    non_responsibility: "KHONG sua audio (audio final), KHONG upload (publisher)."
     source_of_truth:
       - status: planned
         planned_path: governance/blueprint/schemas/video_spec_schema.yaml
@@ -393,14 +745,15 @@ domains:
       blocking_dependency: "video builder (M4)"
     reader: [publisher]
     writer: [video]
-    lifecycle: planned
+    lifecycle: draft
+    lock_type: none
     dependencies: [audio, production]
     forbidden_dependencies: [generator, qa_runtime]
     audit_rule: "Video chi build tu audio da PASS production; audio bi sua sau QA ma khong re-verify = VIOLATION."
 
   publisher:
-    responsibility: "Phat hanh: metadata, lich dang, KPI tracking (bible/16), phan hoi audience ve story_planner (qua Mr.Long)."
-    non_responsibility: "KHONG sua content/audio/video (chi dong goi + dang); KHONG tu quyet dang bai (Mr.Long duyet outward-facing)."
+    responsibility: "Phat hanh: metadata, lich dang, phan hoi audience (qua Mr.Long)."
+    non_responsibility: "KHONG sua content/audio/video (chi dong goi + dang); KHONG tu quyet dang bai (Mr.Long duyet outward-facing); KHONG do KPI (analytics do)."
     source_of_truth:
       - {path: bible/16_series_kpi.yaml, status: exists}
     manager:
@@ -424,15 +777,49 @@ domains:
       reason_not_exists_yet: "Gate dang bai phu thuoc publish manifest schema chua co."
       target_milestone: M4_video_publisher
       blocking_dependency: "publish_manifest_schema (M4)"
-    reader: []
+    reader: [analytics]
     writer: [publisher]
-    lifecycle: planned
+    lifecycle: draft
+    lock_type: none
     dependencies: [production, video, audio]
     forbidden_dependencies: [generator, character, world]
-    audit_rule: "Chi publish artifact co Golden Production Output (R196) + Mr.Long ky; dang ngoai = irreversible, khong co ngoai le."
+    audit_rule: "Chi publish artifact co Golden Production Output (R196) + Mr.Long ky; dang ngoai = irreversible, khong ngoai le."
 
-# MEMORY RULE — moi memory PHAI co owner (1 domain khai bao o tren) + scope + store.
-# Khong owner = FAIL (negative test). Store planned tuan PLANNED HONESTY RULE.
+  analytics:
+    responsibility: "Do luong sau phat hanh: retention, comment, error-feedback loop — phan hoi ve story_planner QUA Mr.Long (khong tu dieu chinh canon)."
+    non_responsibility: "KHONG dang bai (publisher), KHONG sua ke hoach truyen truc tiep (story_planner doc qua reader, Mr.Long quyet)."
+    source_of_truth:
+      - status: planned
+        planned_path: runtime/memory/analytics_state.yaml
+        owner: analytics
+        reason_not_exists_yet: "Chua co tap nao publish nen chua co du lieu do; tools/analytics_populate.py moi la khung."
+        target_milestone: M4_video_publisher
+        blocking_dependency: "tap dau tien duoc publish"
+    manager: {path: tools/analytics_populate.py, status: exists}
+    schema:
+      status: planned
+      planned_path: governance/blueprint/schemas/analytics_schema.yaml
+      owner: analytics
+      reason_not_exists_yet: "Field do luong (retention/comment taxonomy) chua duyet."
+      target_milestone: M4_video_publisher
+      blocking_dependency: "Mr.Long duyet KPI taxonomy (bible/16 lam goc)"
+    validator:
+      status: planned
+      planned_path: tools/analytics_validator.py
+      owner: analytics
+      reason_not_exists_yet: "Phu thuoc analytics schema chua co."
+      target_milestone: M4_video_publisher
+      blocking_dependency: "analytics schema (M4)"
+    reader: [story_planner]
+    writer: [analytics]
+    lifecycle: candidate
+    lock_type: none
+    dependencies: [production]
+    forbidden_dependencies: [generator, character, world]
+    audit_rule: "So lieu chi tu nguon do that (API kenh), khong tu nhap tay; feedback vao canon phai qua Mr.Long ky."
+
+# MEMORY RULE — memory la KIEN TRUC XUYEN SUOT (bang E: KHONG phai domain).
+# Moi scope PHAI co owner (domain da khai) + scope + store. Khong owner = FAIL.
 memory:
   global_memory:
     owner: story_planner

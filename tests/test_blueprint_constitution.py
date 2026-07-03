@@ -1,9 +1,9 @@
-"""SYSTEM_BLUEPRINT_CONSTITUTION v1.0 — certify (positive + 9 negative bat buoc).
+"""SYSTEM_BLUEPRINT_CONSTITUTION v2.0 — certify (positive + negative behavioral).
 
-Negative test = chung minh checker KHONG phai weak-verifier: moi lop vi pham
-theo AUDIT.md phai lam tools/blueprint_constitution_check.py FAIL that su.
-Mutate deep-copy cua contract THAT roi assert check() tra vi pham dung lop
-(khong subprocess de nhanh + khong phu thuoc cwd; CLI exit-code co test rieng).
+Amendment v2 (bang E 3/7 + 2 dieu kien kiem duyet). Negative test = chung minh
+checker KHONG phai weak-verifier: moi lop vi pham phai lam
+tools/blueprint_constitution_check.py FAIL that su. Mutate deep-copy cua contract
+THAT roi assert check() tra vi pham dung lop.
 
 pytest-func -> tu dong collect trong `pytest tests/` va ci_gate.
 """
@@ -16,16 +16,27 @@ import yaml
 
 REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO / 'tools'))
-from blueprint_constitution_check import check, REQUIRED_DOMAINS, REQUIRED_MEMORY  # noqa: E402
+from blueprint_constitution_check import (check, REQUIRED_DOMAINS,  # noqa: E402
+                                          REQUIRED_MEMORY, __version__)
 
 BP = REPO / 'governance' / 'blueprint'
 CONTRACT = BP / 'blueprint_domains.yaml'
 DOCS = ['00_system_blueprint_constitution.md', '01_required_documents.md',
         '02_domain_contract.md', '03_dependency_rules.md', '04_blueprint_audit_gate.md']
 
+FULL_PLANNED = {'status': 'planned', 'planned_path': 'tools/chua_he_ton_tai.py',
+                'owner': 'video', 'reason_not_exists_yet': 'chua khoi cong',
+                'target_milestone': 'M4_video_publisher', 'blocking_dependency': 'R196'}
+
 
 def load():
     return yaml.safe_load(CONTRACT.read_text(encoding='utf-8'))
+
+
+def _assert_fails(data, needle):
+    errs = check(data)
+    assert errs, f'checker phai FAIL (mong bat: {needle})'
+    assert any(needle in e for e in errs), f'khong thay vi pham {needle!r} trong: {errs}'
 
 
 # ---------- POSITIVE ----------
@@ -34,17 +45,24 @@ def test_real_contract_passes():
     assert check(load()) == [], 'contract that phai 0 vi pham'
 
 
-def test_cli_exit_codes():
-    """Gate that: CLI exit 0 tren contract that (chay bang sys.executable)."""
+def test_cli_exit_zero():
     r = subprocess.run([sys.executable, str(REPO / 'tools' / 'blueprint_constitution_check.py')],
                        capture_output=True, text=True, encoding='utf-8')
     assert r.returncode == 0, f'CLI phai exit 0: {r.stdout}\n{r.stderr}'
 
 
-def test_all_14_domains_declared():
+def test_all_22_required_domains_declared():
     data = load()
     assert set(REQUIRED_DOMAINS) <= set(data['domains']), 'contract thieu domain bat buoc'
-    assert len(REQUIRED_DOMAINS) == 14
+    assert len(REQUIRED_DOMAINS) == 22
+    assert 'quest' in data['domains'], 'quest RESERVED phai duoc khai cho (bang E)'
+
+
+def test_versioning_meta_present_and_matches_checker():
+    meta = load()['meta']
+    for k in ('schema_version', 'contract_version', 'validator_version'):
+        assert meta.get(k), f'meta.{k} thieu (A4)'
+    assert str(meta['validator_version']) == __version__
 
 
 def test_blueprint_docs_exist_nonempty():
@@ -55,17 +73,27 @@ def test_blueprint_docs_exist_nonempty():
 
 
 def test_promotion_is_candidate_not_locked_by_builder():
-    """Builder giu candidate — yaml khong duoc mang locked khi registry chua ky."""
     assert load()['meta']['promotion_status'] == 'candidate'
 
 
-# ---------- 9 NEGATIVE BAT BUOC (AUDIT.md) ----------
+def test_planned_with_full_metadata_does_not_fail():
+    """KHONG FAIL vi planned (du 5 metadata) — trung thuc, cam ep stub."""
+    data = load()
+    data['domains']['video']['manager'] = dict(FULL_PLANNED)
+    assert check(data) == [], 'planned du metadata khong duoc lam checker FAIL'
 
-def _assert_fails(data, needle):
-    errs = check(data)
-    assert errs, f'checker phai FAIL (mong bat: {needle})'
-    assert any(needle in e for e in errs), f'khong thay vi pham {needle!r} trong: {errs}'
 
+def test_l1_canon_domains_have_empty_dependencies():
+    """Cond 1: 8 domain canon L1 dependencies rong tuyet doi (reader-only)."""
+    data = load()
+    l1 = [n for n, layer in data['layers'].items() if layer == 1]
+    assert len(l1) == 8
+    for name in l1:
+        assert (data['domains'][name].get('dependencies') or []) == [], (
+            f'{name} la L1 nhung co dependencies — vi pham Cond 1')
+
+
+# ---------- 9 NEGATIVE GOC (AUDIT.md) ----------
 
 def test_neg1_missing_required_domain_fails():
     data = load()
@@ -93,17 +121,15 @@ def test_neg4_missing_validator_fails():
 
 def test_neg5_wrong_dependency_direction_fails():
     data = load()
-    data['domains']['character']['dependencies'] = ['generator']  # L2 dep L5
+    data['domains']['character']['dependencies'] = ['generator']  # L2 dep L6
     _assert_fails(data, 'SAI HUONG')
 
 
 def test_neg6_supernatural_merged_into_world_fails():
-    data = load()
-    # ca 2 kieu gop: world nuot supernatural / supernatural khai sub_of world
-    d1 = copy.deepcopy(data)
+    d1 = load()
     d1['domains']['world']['contains'] = ['supernatural']
     _assert_fails(d1, 'contains supernatural')
-    d2 = copy.deepcopy(data)
+    d2 = load()
     d2['domains']['supernatural']['sub_of'] = 'world'
     _assert_fails(d2, 'DOC LAP')
 
@@ -114,29 +140,10 @@ def test_neg7_memory_without_owner_fails():
     _assert_fails(data, 'KHONG co owner')
 
 
-def test_neg8_candidate_self_locked_fails(tmp_path):
-    """Builder tu doi yaml sang locked ma registry CHUA ky -> FAIL.
-    State-aware (fix 3/7): dung registry TAM 'candidate' — test dung ca TRUOC
-    va SAU khi Mr.Long lock that trong registry chinh (ban cu doc registry
-    thuc -> gay ngay khi lock hop le duoc ky)."""
+def test_neg8_candidate_self_locked_fails():
     data = load()
     data['meta']['promotion_status'] = 'locked'
-    reg = tmp_path / 'reg.yaml'
-    reg.write_text('domains:\n  governance:\n    enterprise_pack_progress:\n'
-                   '      blueprint_constitution: candidate\n', encoding='utf-8')
-    errs = check(data, registry_path=reg)
-    assert any('SELF-LOCK' in e for e in errs), f'phai bat SELF-LOCK: {errs}'
-
-
-def test_neg8b_locked_with_registry_signature_passes(tmp_path):
-    """Doi chung: yaml locked + registry DA ky locked -> KHONG SELF-LOCK."""
-    data = load()
-    data['meta']['promotion_status'] = 'locked'
-    reg = tmp_path / 'reg.yaml'
-    reg.write_text('domains:\n  governance:\n    enterprise_pack_progress:\n'
-                   '      blueprint_constitution: locked\n', encoding='utf-8')
-    errs = check(data, registry_path=reg)
-    assert not any('SELF-LOCK' in e for e in errs), errs
+    _assert_fails(data, 'SELF-LOCK')
 
 
 def test_neg9_missing_audit_gate_fails():
@@ -145,48 +152,99 @@ def test_neg9_missing_audit_gate_fails():
     _assert_fails(data, 'production: field audit_rule RONG')
 
 
-# ---------- CHONG PHANTOM + CHONG PASS-RONG ----------
-
-def test_phantom_exists_path_fails():
-    """Khai exists cho path khong ton tai = khai lao/phantom -> FAIL (lesson built!=wired)."""
-    data = load()
-    data['domains']['world']['manager'] = {'path': 'tools/khong_ton_tai_dau.py',
-                                           'status': 'exists'}
-    _assert_fails(data, 'phantom')
-
-
-def test_planned_with_full_metadata_does_not_fail():
-    """Rule 1: KHONG FAIL vi planned (du 5 metadata) — trung thuc, cam ep stub."""
-    data = load()
-    data['domains']['video']['manager'] = {
-        'status': 'planned', 'planned_path': 'tools/chua_he_ton_tai.py',
-        'owner': 'video', 'reason_not_exists_yet': 'chua khoi cong',
-        'target_milestone': 'M4_video_publisher', 'blocking_dependency': 'R196'}
-    assert check(data) == [], 'planned du metadata khong duoc lam checker FAIL'
-
+# ---------- NEGATIVE v1 (PLANNED HONESTY) ----------
 
 def test_neg10_planned_missing_metadata_fails():
-    """PLANNED HONESTY RULE: planned thieu bat ky metadata nao -> FAIL."""
     for missing in ('planned_path', 'owner', 'reason_not_exists_yet',
                     'target_milestone', 'blocking_dependency'):
         data = load()
-        ref = {'status': 'planned', 'planned_path': 'tools/x.py', 'owner': 'video',
-               'reason_not_exists_yet': 'r', 'target_milestone': 'M4_video_publisher',
-               'blocking_dependency': 'b'}
+        ref = dict(FULL_PLANNED)
         del ref[missing]
         data['domains']['video']['manager'] = ref
         _assert_fails(data, f'thieu metadata {missing}')
 
 
 def test_neg11_planned_bogus_milestone_fails():
-    """target_milestone phai nam trong milestones map — chong milestone bia."""
     data = load()
-    data['domains']['video']['manager']['target_milestone'] = 'M99_khong_ton_tai'
+    ref = dict(FULL_PLANNED)
+    ref['target_milestone'] = 'M99_khong_ton_tai'
+    data['domains']['video']['manager'] = ref
     _assert_fails(data, 'khong co trong milestones')
 
 
+def test_phantom_exists_path_fails():
+    data = load()
+    data['domains']['world']['manager'] = {'path': 'tools/khong_ton_tai_dau.py',
+                                           'status': 'exists'}
+    _assert_fails(data, 'phantom')
+
+
+# ---------- NEGATIVE v2 (amendment: Cond 1+2, A2-A7) ----------
+
+def test_neg12_l1_cross_dep_fails():
+    """Cond 1: canon L1 dep canon L1 -> L1-CROSS-DEP (chi duoc reader)."""
+    data = load()
+    data['domains']['location']['dependencies'] = ['world']
+    _assert_fails(data, 'L1-CROSS-DEP')
+
+
+def test_neg13_planned_path_on_disk_is_violation():
+    """Cond 2 chong stub: planned nhung path DA ton tai -> VIOLATION (khong phai WARN)."""
+    data = load()
+    ref = dict(FULL_PLANNED)
+    ref['planned_path'] = 'tools/character_manager.py'  # file THAT dang ton tai
+    data['domains']['video']['manager'] = ref
+    _assert_fails(data, 'DRIFT/STUB')
+
+
+def test_neg14_archived_dependency_fails():
+    """A2: dep vao domain lifecycle=archived = VIOLATION."""
+    data = load()
+    data['domains']['culture']['lifecycle'] = 'archived'
+    # character dang dep culture trong contract that
+    _assert_fails(data, 'archived')
+
+
+def test_neg15_validator_version_mismatch_fails():
+    """A4: contract khai validator_version lech checker -> FAIL."""
+    data = load()
+    data['meta']['validator_version'] = '1.0.0'
+    _assert_fails(data, 'VERSIONING')
+
+
+def test_neg16_old_lifecycle_enum_rejected():
+    """A3: enum cu (active/locked_bible) khong con hop le."""
+    data = load()
+    data['domains']['world']['lifecycle'] = 'locked_bible'
+    _assert_fails(data, "lifecycle 'locked_bible'")
+
+
+def test_neg17_facet_two_writers_fails():
+    """A7 FORMAT facet: 1 facet = DUNG 1 writer (chong 3 manager cung sua Emotion)."""
+    data = load()
+    data['domains']['character']['facets'] = {
+        'emotion': {'writer': ['character', 'dialogue'], 'readers': ['story_planner']}}
+    _assert_fails(data, '1 facet = DUNG 1 writer')
+
+
+def test_neg18_domain_outside_layer_groups_fails():
+    """A6: moi domain phai thuoc dung 1 nhom."""
+    data = load()
+    data['layer_groups']['narrative'].remove('quest')
+    _assert_fails(data, "domain 'quest' khong thuoc nhom nao")
+
+
+def test_neg19_event_chain_violates_reader_fails():
+    """A7 FORMAT event: hop ke tiep phai nam trong reader cua hop truoc."""
+    data = load()
+    data['events'] = [{'name': 'ghost_appears', 'emitter': 'supernatural',
+                       'chain': ['publisher']}]  # publisher KHONG trong supernatural.reader
+    _assert_fails(data, 'chain pham quyen doc')
+
+
+# ---------- CHONG PASS-RONG ----------
+
 def test_all_exists_refs_truly_on_disk():
-    """Khong pass rong: contract that phai co >=15 ref exists va TAT CA ton tai."""
     data = load()
     n = 0
     for d in data['domains'].values():
@@ -206,7 +264,7 @@ def test_memory_six_scopes_owned():
         assert entry['owner'] in data['domains'], f'{m} owner khong hop le'
 
 
-# ---------- DOC BAR (Rule 2 — khuon test_pack5_docs) ----------
+# ---------- DOC BAR (khuon test_pack5_docs) ----------
 
 REQUIRED_ELEMENTS = ['mission', 'purpose', 'scope', 'authority', 'responsibilit',
                      'workflow', 'mandatory', 'pass', 'fail', 'promotion', 'example']
