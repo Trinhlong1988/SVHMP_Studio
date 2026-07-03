@@ -242,6 +242,43 @@ def test_neg19_event_chain_violates_reader_fails():
     _assert_fails(data, 'chain pham quyen doc')
 
 
+def test_neg20_duplicate_domain_key_fails(tmp_path):
+    """C10 (audit blocker 3/7): block domain trung ten chen vao yaml -> checker
+    phai FAIL DUP-KEY exit 1. Truoc fix: safe_load nuot ban trung -> PASS mu.
+    Tai hien DUNG lo hong kiem duyet ban: nhan doi nguyen van block 'character:'
+    trong contract THAT, chay CLI qua FILE TAM (scrub GIT_* nhu thuong le)."""
+    import os
+    import re as _re
+    text = CONTRACT.read_text(encoding='utf-8')
+    m = _re.search(r'^  character:\n(?:^(?:    .*|)\n)+?(?=^  \w)', text, flags=_re.M)
+    assert m, 'khong tach duoc block character de nhan doi'
+    # chen ban trung NGAY SAU block goc -> 2 khoa 'character' cung nam trong domains
+    # (append cuoi file se roi vao mapping 'memory' — khong tai hien dung lo hong)
+    dup_text = text[:m.end()] + m.group(0) + text[m.end():]
+    bad = tmp_path / 'dup_contract.yaml'
+    bad.write_text(dup_text, encoding='utf-8')
+    env = {k: v for k, v in os.environ.items() if not k.startswith('GIT_')}
+    r = subprocess.run(
+        [sys.executable, str(REPO / 'tools' / 'blueprint_constitution_check.py'),
+         '--file', str(bad)],
+        capture_output=True, text=True, encoding='utf-8', env=env)
+    assert r.returncode == 1, f'checker phai exit 1 voi dup key: {r.stdout}'
+    assert 'DUP-KEY' in r.stdout, f'phai bao DUP-KEY: {r.stdout}'
+
+
+def test_neg21_duplicate_nested_key_fails(tmp_path):
+    """C10: khoa trung o CAP SAU (khong chi top-level domains) cung phai FAIL."""
+    import os
+    bad = tmp_path / 'dup_nested.yaml'
+    bad.write_text('meta:\n  name: x\n  name: y\n', encoding='utf-8')
+    env = {k: v for k, v in os.environ.items() if not k.startswith('GIT_')}
+    r = subprocess.run(
+        [sys.executable, str(REPO / 'tools' / 'blueprint_constitution_check.py'),
+         '--file', str(bad)],
+        capture_output=True, text=True, encoding='utf-8', env=env)
+    assert r.returncode == 1 and 'DUP-KEY' in r.stdout, f'nested dup phai FAIL: {r.stdout}'
+
+
 # ---------- CHONG PASS-RONG ----------
 
 def test_all_exists_refs_truly_on_disk():

@@ -18,7 +18,7 @@ meta:
   version: v2.0
   schema_version: 2.0.0        # format cua file nay
   contract_version: 2.0.0      # noi dung hop dong
-  validator_version: 2.0.0     # PHAI khop __version__ cua checker (may so)
+  validator_version: 2.1.0     # PHAI khop __version__ cua checker (may so; 2.1.0 = +C10 DUP-KEY)
   promotion_status: candidate  # re-lock v2.0 = chu ky Mr.Long sau audit 7 buoc
   authority: "Mr.Long (LEAD) — Builder chi de xuat; R211 registry = nguoi giu promotion"
 

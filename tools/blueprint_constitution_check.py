@@ -21,6 +21,9 @@ Amendment v2 (Mr.Long ky bang E 3/7 + 2 dieu kien kiem duyet). Cuong che:
   C8  layer_groups: moi domain thuoc DUNG 1 nhom; thanh vien nhom la domain that.
   C9  FORMAT (A7): facets (1 facet = 1 writer) / events (hop sau thuoc reader
       hop truoc) / state_machines (transition trong states) — validate khi xuat hien.
+  C10 DUP-KEY (audit blocker 3/7): PyYAML safe_load mac dinh NUOT key trung
+      (block 'character:' thu 2 de len block 1 im lang -> checker mu). Custom
+      SafeLoader phat hien khoa trung MOI CAP -> [VIOLATION] DUP-KEY, exit 1.
 
 Exit 0 = PASS, exit 1 = FAIL. Khong tu phong PASS ngoai exit-code.
 Usage: python tools/blueprint_constitution_check.py [--file <yaml>] [--registry <yaml>]
@@ -31,7 +34,39 @@ from pathlib import Path
 
 import yaml
 
-__version__ = '2.0.0'
+__version__ = '2.1.0'
+
+
+class DupKeyError(Exception):
+    """Khoa YAML bi khai >=2 lan (moi cap) — vi pham DUP-KEY."""
+
+
+class _DupKeySafeLoader(yaml.SafeLoader):
+    """SafeLoader + phat hien duplicate key moi cap (C10)."""
+
+
+def _construct_mapping_no_dup(loader, node, deep=False):
+    seen = set()
+    for key_node, _ in node.value:
+        key = loader.construct_object(key_node, deep=deep)
+        try:
+            if key in seen:
+                raise DupKeyError(
+                    f"DUP-KEY: khoa {key!r} bi khai >=2 lan tai line {key_node.start_mark.line + 1} "
+                    '(safe_load mac dinh nuot ban trung — block sau de len block truoc im lang)')
+            seen.add(key)
+        except TypeError:  # key khong hashable — de SafeLoader tu xu
+            pass
+    return yaml.SafeLoader.construct_mapping(loader, node, deep=deep)
+
+
+_DupKeySafeLoader.add_constructor(
+    yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, _construct_mapping_no_dup)
+
+
+def load_yaml_no_dup(text):
+    """Parse YAML, raise DupKeyError neu co khoa trung o bat ky cap nao."""
+    return yaml.load(text, Loader=_DupKeySafeLoader)
 
 REPO = Path(__file__).resolve().parent.parent
 DEFAULT_FILE = REPO / 'governance' / 'blueprint' / 'blueprint_domains.yaml'
@@ -301,7 +336,11 @@ def main(argv):
     print(f'=== BLUEPRINT CONSTITUTION CHECK v{__version__} ===')
     print(f'file: {file}')
     try:
-        data = yaml.safe_load(Path(file).read_text(encoding='utf-8'))
+        data = load_yaml_no_dup(Path(file).read_text(encoding='utf-8'))
+    except DupKeyError as e:
+        print(f'  [VIOLATION] {e}')
+        print('=== FAIL — DUP-KEY (C10) ===')
+        return 1
     except Exception as e:
         print(f'FAIL: khong doc duoc yaml: {e}')
         return 1
