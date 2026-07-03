@@ -1,0 +1,60 @@
+# BP6 DECISION IO v1.0.0 — hop dong vao/ra cua decision_engine
+# INPUT: ke hoach tu story_planner (CAI GI xay ra) -> OUTPUT: decision packet
+# (NHIP the nao) ma generator nhan. Generator KHONG co nguon nhip nao khac.
+# Enforcer: tools/bp6_decision_check.py (packet field ma = FAIL; field knob
+# phai khop DUNG 12 knob_id cua decision_contract.yaml).
+
+meta:
+  version: 1.0.0
+  pack: bp6_decision
+  status: candidate
+  owner_domain: decision_engine
+
+# ------------------------------------------------------------
+# INPUT — YEU CAU doi voi story plan (KHONG dinh nghia ho schema story_planner:
+# schema do la planned cua story_planner tai BP2; day chi la REQUIREMENT
+# decision_engine doc nhung field nao tu plan)
+# ------------------------------------------------------------
+input:
+  source_schema:
+    status: planned
+    planned_path: governance/blueprint/schemas/story_plan_schema.yaml
+    owner: story_planner            # SoT cua story_planner (BP2 scene_act_structure) — bp6 CHI tham chieu
+    reason_not_exists_yet: "Cau truc plan chua field-hoa (BP2 khai planned, M2)"
+    target_milestone: M2_planner_generator
+    blocking_dependency: "Mr.Long duyet format ke hoach"
+  required_fields_from_plan:        # decision_engine DOC (read-only theo BP3 dep dec->planner)
+    - {field: ep_number, why: "dinh danh tap"}
+    - {field: scenes, why: "danh sach scene_id + scene_function (SCENE own — BP2b) de gan knob per-scene"}
+    - {field: cast_per_scene, why: "character_focus chi duoc chon trong cast story_planner da chot (5-8/tap balance_targets)"}
+    - {field: reveals_allowed, why: "reveal_curve chi phan bo fact DA duoc story_planner cho phep (timing xuyen tap = story_planner own)"}
+    - {field: regret_pillar_context, why: "emotion/fear/suspense curve phai khop pillar tap (bible/11)"}
+  forbidden_inputs:
+    - "episode.md / text da sinh (decision di TRUOC generator — khong duoc nhin text roi quyet)"
+    - "so lieu bia khong co evidence calibrate (R195)"
+
+# ------------------------------------------------------------
+# OUTPUT — DECISION PACKET (nguon nhip DUY NHAT cua generator)
+# ------------------------------------------------------------
+output:
+  packet_schema:
+    packet_id: {type: str, required: true, desc: "dinh danh packet (ep + version)"}
+    ep_number: {type: int, required: true}
+    plan_ref: {type: str, required: true, desc: "tham chieu story plan lam input (traceability)"}
+    calibration_evidence: {type: str, required: true, desc: "ref nguon calibrate (bible/31 + EP01 golden) — R195, khong co = packet vo hieu"}
+    per_scene:
+      type: list
+      required: true
+      item:
+        scene_id: {type: str, required: true, desc: "khop scene_id trong plan"}
+        knobs:
+          type: mapping
+          required: true
+          keys_must_equal: decision_contract.yaml#knobs[].knob_id   # DUNG 12 knob — field ma = FAIL
+  consumer_contract:
+    reader: [generator, qa_runtime]          # khop reader grant decision_engine BP-C
+    generator_rule: "Moi field nhip generator duoc doc PHAI nam trong packet nay. Nguon nhip ngoai packet = VIOLATION (audit_rule BP-C: generator thieu budget sheet cho canh dang viet = VIOLATION)."
+    qa_runtime_rule: "qa_runtime doc packet de doi chieu output generator co tuan knob khong (G-phase)."
+  writer: [decision_engine, mr_long]         # BP3 1-writer
+  lifecycle: draft
+  status: planned                            # packet instance sinh o G-phase; day la CONTRACT

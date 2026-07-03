@@ -1164,5 +1164,29 @@ files:
     domain: governance_audit
     status: active
     tier: 0
+  governance/blueprint/bp6/00_decision.md:
+    domain: bp6_decision
+    status: active
+    tier: 0
+  governance/blueprint/bp6/decision_contract.yaml:
+    domain: bp6_decision
+    status: active
+    tier: 0
+  governance/blueprint/bp6/decision_io.yaml:
+    domain: bp6_decision
+    status: active
+    tier: 0
+  tools/bp6_decision_check.py:
+    domain: bp6_decision
+    status: active
+    tier: 0
+  tests/test_bp6_decision.py:
+    domain: bp6_decision
+    status: active
+    tier: 0
+  reports/BP6_REPORT.md:
+    domain: bp6_decision
+    status: active
+    tier: 0
 generated_by: tools/registry_triage.py
-total: 291
+total: 297

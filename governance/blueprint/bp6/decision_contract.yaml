@@ -1,0 +1,150 @@
+# BP6 DECISION CONTRACT v1.0.0 — 12 knob cua decision_engine (domain L5, khai BP-C)
+# FORMAT + CONTRACT, KHONG BIA SO (R195): file nay CAM chua gia tri mac dinh/so cu the
+# ngoai valid_range; so that sinh o G6 tu calibrate golden. Enforcer: tools/bp6_decision_check.py
+# (knob co gia tri hardcode -> FAIL). Consumer generator = READ-ONLY (BP3 1-writer).
+
+meta:
+  version: 1.0.0
+  pack: bp6_decision
+  status: candidate            # Builder khong lock/tag — Mr.Long ky sau audit
+  owner_domain: decision_engine
+  calibration_law: |
+    R195 (bat di dich): moi gia tri mac dinh cua knob = calibrate_from
+    bible/31_golden_samples.yaml + EP01 golden production output (R196).
+    File contract nay CHI khai format/range hop le. So cu the xuat hien
+    ngoai valid_range = VIOLATION (validator FAIL).
+  calibrate_from:
+    - bible/31_golden_samples.yaml
+    - "EP01 golden production output (R196 — blocking_dependency cua bible/42)"
+  policy_sot:                  # noi SO THAT se song sau calibrate (khai BP-C, giu planned)
+    status: planned
+    planned_path: bible/42_decision_policy.yaml
+    owner: decision_engine
+    reason_not_exists_yet: "Policy curve/ratio phai calibrate tu EP01 golden (R195), khong duoc bia."
+    target_milestone: M2_planner_generator
+    blocking_dependency: "EP01 golden production output (R196) lam du lieu calibrate"
+
+# ============================================================
+# 12 KNOB — dung danh sach TASK_BP6 (them/bot knob = RFC + Mr.Long)
+# type: scalar | curve | enum. curve = list diem theo scene/section (so diem
+# = so scene cua packet, khong co dinh). Moi knob: consumer generator read-only.
+# ============================================================
+knobs:
+  - knob_id: dialogue_ratio
+    type: scalar
+    units: ty_le_word_thoai_tren_tong_word_canh
+    valid_range: [0.0, 1.0]
+    desc: "Ty le THOAI trong canh — chong generator viet thoai tran lan hoac cam khau."
+    consumer: {domain: generator, access: read_only, per_bp3: true}
+    calibration_source: {calibrate_from: "bible/31_golden_samples.yaml + EP01 golden", method: "do word-count thoai/tong tren golden", status: planned_G6}
+    lifecycle: draft
+    status: planned
+  - knob_id: narration_ratio
+    type: scalar
+    units: ty_le_word_ke_tren_tong_word_canh
+    valid_range: [0.0, 1.0]
+    constraint: "dialogue_ratio + narration_ratio = 1.0 theo dinh nghia ty le (toan hoc, khong phai so calibrate)"
+    desc: "Ty le NARRATION — phan bu cua dialogue_ratio, khai rieng de generator khong tu suy."
+    consumer: {domain: generator, access: read_only, per_bp3: true}
+    calibration_source: {calibrate_from: "bible/31_golden_samples.yaml + EP01 golden", method: "do word-count narration/tong tren golden", status: planned_G6}
+    lifecycle: draft
+    status: planned
+  - knob_id: emotion_curve
+    type: curve
+    units: cuong_do_cam_xuc_0_1_theo_scene
+    valid_range: [0.0, 1.0]
+    desc: "Duong cam xuc theo scene (map bible/09_emotion_intensity) — dinh/xa cam xuc dat o dau."
+    consumer: {domain: generator, access: read_only, per_bp3: true}
+    calibration_source: {calibrate_from: "bible/31_golden_samples.yaml + EP01 golden", method: "trich curve tu emotion_tags golden + bible/09", status: planned_G6}
+    lifecycle: draft
+    status: planned
+  - knob_id: fear_curve
+    type: curve
+    units: cuong_do_so_0_1_theo_scene
+    valid_range: [0.0, 1.0]
+    desc: "Duong SO theo scene — map state machine character_fear (BP4); khong jump-scare (NEVER_7)."
+    consumer: {domain: generator, access: read_only, per_bp3: true}
+    calibration_source: {calibrate_from: "bible/31_golden_samples.yaml + EP01 golden", method: "trich tu muc_so_hai suspense_profile golden", status: planned_G6}
+    lifecycle: draft
+    status: planned
+  - knob_id: suspense_curve
+    type: curve
+    units: cuong_do_hoi_hop_0_1_theo_scene
+    valid_range: [0.0, 1.0]
+    desc: "Duong hoi hop/bi an theo scene (map bible/25_suspense_arc_templates)."
+    consumer: {domain: generator, access: read_only, per_bp3: true}
+    calibration_source: {calibrate_from: "bible/31_golden_samples.yaml + EP01 golden", method: "map template bible/25 vao scene golden", status: planned_G6}
+    lifecycle: draft
+    status: planned
+  - knob_id: reveal_curve
+    type: curve
+    units: so_thong_tin_nha_moi_scene
+    valid_range: [0, 5]
+    desc: "Nhip NHA thong tin TRONG TAP (intra-episode, per-scene). RECONCILE: KHAC reveal TIMING xuyen tap (story_planner own — bible/18 driver budget) va KHAC reveal PERMISSION (character own, BP2b). decision_engine chi quyet scene nao nha bao nhieu fact DA duoc story_planner cho phep."
+    consumer: {domain: generator, access: read_only, per_bp3: true}
+    calibration_source: {calibrate_from: "bible/31_golden_samples.yaml + EP01 golden", method: "dem fact nha/scene tren golden", status: planned_G6}
+    lifecycle: draft
+    status: planned
+  - knob_id: pacing
+    type: enum
+    units: nhan_nhip_moi_scene
+    values: [rat_cham, cham, vua, nhanh]      # nhan dinh danh (format), khong phai so calibrate
+    desc: "Nhip ke moi scene — anh xa bimodal_sentence_structure (bible/01) khi generator viet."
+    consumer: {domain: generator, access: read_only, per_bp3: true}
+    calibration_source: {calibrate_from: "bible/31_golden_samples.yaml + EP01 golden", method: "gan nhan pacing scene golden lam chuan doi chieu", status: planned_G6}
+    lifecycle: draft
+    status: planned
+  - knob_id: scene_budget
+    type: scalar
+    units: so_scene_moi_tap
+    valid_range: [1, 12]
+    desc: "So scene toi da cua tap — chong phinh/vun canh."
+    consumer: {domain: generator, access: read_only, per_bp3: true}
+    calibration_source: {calibrate_from: "bible/31_golden_samples.yaml + EP01 golden", method: "dem section golden (HOOK/SETUP/...)", status: planned_G6}
+    lifecycle: draft
+    status: planned
+  - knob_id: information_budget
+    type: scalar
+    units: so_fact_moi_toi_da_moi_scene
+    valid_range: [0, 10]
+    desc: "Tran thong tin moi/scene — chong explanation_dump (NEVER_7)."
+    consumer: {domain: generator, access: read_only, per_bp3: true}
+    calibration_source: {calibrate_from: "bible/31_golden_samples.yaml + EP01 golden", method: "dem fact moi/scene golden", status: planned_G6}
+    lifecycle: draft
+    status: planned
+  - knob_id: silence_budget
+    type: scalar
+    units: so_khoang_lang_pause_moi_scene
+    valid_range: [0, 20]
+    desc: "So khoang lang ([pause]) moi scene — negative space (bible/01), audio-first."
+    consumer: {domain: generator, access: read_only, per_bp3: true}
+    calibration_source: {calibrate_from: "bible/31_golden_samples.yaml + EP01 golden", method: "dem [pause:*ms] golden theo scene", status: planned_G6}
+    lifecycle: draft
+    status: planned
+  - knob_id: character_focus
+    type: enum
+    units: character_id_focal_moi_scene
+    values_source: "runtime/passenger_roster_100.yaml (PAS_*) + bible/03 (CHAR_DRIVER/CHAR_NAM) — id that, KHONG liet ke cung o day"
+    desc: "Nhan vat focal moi scene — phai co Tier1 du (completeness gate R210) truoc khi generator viet."
+    consumer: {domain: generator, access: read_only, per_bp3: true}
+    calibration_source: {calibrate_from: "bible/31_golden_samples.yaml + EP01 golden", method: "focal per scene golden", status: planned_G6}
+    lifecycle: draft
+    status: planned
+  - knob_id: pov
+    type: enum
+    units: diem_nhin_ke_chuyen_moi_scene
+    values_source: "bible/01_narrative_structure.yaml (narrator/POV conventions) — enum cu the chot khi ky bible/42"
+    desc: "POV moi scene (nguoi ke / quan sat qua Khai Phong...) — doi POV giua tap = decision, khong phai generator tu y."
+    consumer: {domain: generator, access: read_only, per_bp3: true}
+    calibration_source: {calibrate_from: "bible/31_golden_samples.yaml + EP01 golden", method: "gan nhan POV scene golden", status: planned_G6}
+    lifecycle: draft
+    status: planned
+
+# ============================================================
+# LUAT CHUNG (validator enforce)
+# ============================================================
+rules:
+  no_hardcode: "So chi duoc xuat hien trong valid_range/values enum dinh danh. default/value/baseline/initial trong knob = FAIL (R195)."
+  consumer_read_only: "Moi knob consumer = generator read_only (BP3 1-writer: writer knob = decision_engine + mr_long). Generator ghi knob = VIOLATION leo thang."
+  knob_list_closed: "DUNG 12 knob. Knob 13 la / thieu knob = FAIL. Them/bot = RFC + Mr.Long."
+  packet_only: "Generator KHONG co nguon nhip nao khac ngoai decision packet (mirror audit_rule decision_engine BP-C: thieu budget sheet = VIOLATION)."
