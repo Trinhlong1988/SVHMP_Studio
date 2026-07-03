@@ -153,6 +153,12 @@ domains:
       - governance/blueprint/bp2/domain_specs.yaml   # 13 domain / 70 facet inventory (BP2b addendum G2-CORE) — key-resolve may
       - reports/BP2_REPORT.md
     bp2_check: tools/bp2_domain_check.py   # BP2: facet unique toan cuc + SoT path/key verify + ENFORCER-MA
+    bp3_ownership:
+      - governance/blueprint/bp3/00_ownership.md
+      - governance/blueprint/bp3/facet_ownership_matrix.yaml   # SINH MAY — 70 facet, 1-writer, coverage 2 chieu BP2
+      - governance/blueprint/bp3/dependency_detail.yaml        # SINH MAY — 52 dep + reason, 3 nguon khop
+      - reports/BP3_REPORT.md
+    bp3_check: tools/bp3_ownership_check.py   # BP3: 1-facet-1-writer + coverage BP2 + dep 3-nguon-khop
     tests:
       - tests/test_governance_enforce_r209.py
       - tests/test_artifact_contract_r212.py
@@ -170,6 +176,7 @@ domains:
       - tests/test_blueprint_constitution.py   # BLUEPRINT: 11 negative case (domain/field/dep/supernatural/memory/self-lock/planned-honesty) + doc bar
       - tests/test_bp1_architecture.py   # BP1: mutation battery M1-M10 + drift/layer-scheme/iface-completeness
       - tests/test_bp2_domain.py   # BP2: mutation (facet-2-domain/sot-key-lao/enforcer-ma/canon-thieu-block)
+      - tests/test_bp3_ownership.py   # BP3: mutation (2-writer/facet-ma/thieu-facet/leo-thang/dep-3-nguon-lech)
     promotion_status: locked   # GOVERNANCE v1.0 (Mr.Long signed 2/7): DU 5 pack locked+tagged, freeze_gate 5/5 moi pack, cross-pack audit nhat quan; tag governance-v1.0
     enterprise_pack_progress:
       pack1_constitution: locked   # FROZEN v1.0 (Mr.Long authorized 2/7): 6 doc 11-element, promotion_guard HANH VI (pre-push+server-CI, battle-tested), test_pack1_docs; tag pack1-constitution-v1.0
@@ -180,6 +187,7 @@ domains:
       blueprint_constitution: locked   # FROZEN v2.0 (Mr.Long authorized 3/7): 22+1 domain inventory DONG, decision_engine, lifecycle+versioning, dup-key loader; audit 12 mutation PASS; tag blueprint-constitution-v2.0
       bp1_core: locked   # FROZEN v1.0 (Mr.Long authorized 3/7): 23 domain graph + 92 iface (4 exists/88 planned honesty) + layer contracts; audit 0 finding, mutation LECH-BP0/dup-key/phantom-src PASS; tag bp1-core-v1.0
       bp2_domain: locked   # FROZEN v1.0 (Mr.Long authorized 3/7): 13 domain / 70 facet (49 exists/21 planned), G2-core 10 + naming vung mien + invariants 13/13; audit 5 mutation PASS, exists 62/62; FACET LIST DONG; tag bp2-domain-v1.0
+      bp3_ownership: candidate   # BP3 Ownership+Dependency — 70 facet 1-writer (sinh may) + 52 dep 3-nguon-khop; Builder khong lock
     data_contract:
       input: "registry yaml + disk scan"
       output: "gap report"

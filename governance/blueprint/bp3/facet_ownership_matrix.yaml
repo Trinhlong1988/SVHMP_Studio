@@ -1,0 +1,645 @@
+# BP3 — facet ownership matrix (SINH MAY tu bp2/domain_specs + BP0 reader/writer — cam lech tay)
+# LUAT VANG: 1 facet = DUNG 1 writer-domain; writable_by ⊆ {owner, mr_long};
+# readable_by = reader grant BP0 cua owner; forbidden_writers = readable_by (read-only).
+# SoT bible/prompts/tools/governance -> writable [mr_long] (catalog/gate bat bien).
+# Enforcer: tools/bp3_ownership_check.py (coverage 2 chieu voi BP2 — thieu/ma deu FAIL).
+validator_version: 1.0.0
+source_constitution_version: 2.0.0
+facets:
+- facet_id: world_facts_ledger
+  owning_domain: world
+  readable_by: &id001
+  - location
+  - weather
+  - culture
+  - character
+  - event
+  - story_planner
+  - generator
+  - qa_runtime
+  writable_by:
+  - mr_long
+  forbidden_writers: *id001
+  lifecycle: approved
+  owner_artifact: bible/02_lore_db.yaml
+- facet_id: world_symbols
+  owning_domain: world
+  readable_by: *id001
+  writable_by:
+  - mr_long
+  forbidden_writers: *id001
+  lifecycle: approved
+  owner_artifact: bible/02_lore_db.yaml
+- facet_id: spoiler_rule
+  owning_domain: world
+  readable_by: *id001
+  writable_by:
+  - mr_long
+  forbidden_writers: *id001
+  lifecycle: approved
+  owner_artifact: bible/02_lore_db.yaml
+- facet_id: episode_order
+  owning_domain: timeline
+  readable_by: &id002
+  - event
+  - story_planner
+  - generator
+  - qa_runtime
+  writable_by:
+  - mr_long
+  forbidden_writers: *id002
+  lifecycle: approved
+  owner_artifact: governance/blueprint/schemas/timeline_schema.yaml
+- facet_id: era_anchor
+  owning_domain: timeline
+  readable_by: *id002
+  writable_by:
+  - mr_long
+  forbidden_writers: *id002
+  lifecycle: approved
+  owner_artifact: governance/blueprint/schemas/timeline_schema.yaml
+- facet_id: setting_catalog
+  owning_domain: location
+  readable_by: &id003
+  - event
+  - character
+  - story_planner
+  - generator
+  - qa_runtime
+  - video
+  writable_by:
+  - mr_long
+  forbidden_writers: *id003
+  lifecycle: approved
+  owner_artifact: bible/13_setting_library.yaml
+- facet_id: setting_selection_rules
+  owning_domain: location
+  readable_by: *id003
+  writable_by:
+  - mr_long
+  forbidden_writers: *id003
+  lifecycle: approved
+  owner_artifact: bible/13_setting_library.yaml
+- facet_id: setting_variety
+  owning_domain: location
+  readable_by: *id003
+  writable_by:
+  - mr_long
+  forbidden_writers: *id003
+  lifecycle: approved
+  owner_artifact: bible/13_setting_library.yaml
+- facet_id: seasonal_cluster
+  owning_domain: location
+  readable_by: *id003
+  writable_by:
+  - mr_long
+  forbidden_writers: *id003
+  lifecycle: approved
+  owner_artifact: bible/13_setting_library.yaml
+- facet_id: weather_condition
+  owning_domain: weather
+  readable_by: &id004
+  - event
+  - story_planner
+  - generator
+  - qa_runtime
+  - audio
+  writable_by:
+  - mr_long
+  forbidden_writers: *id004
+  lifecycle: draft
+  owner_artifact: bible/41_weather_bible.yaml
+- facet_id: atmospheric_audio_cue
+  owning_domain: weather
+  readable_by: *id004
+  writable_by:
+  - mr_long
+  forbidden_writers: *id004
+  lifecycle: draft
+  owner_artifact: bible/41_weather_bible.yaml
+- facet_id: xung_ho_convention
+  owning_domain: culture
+  readable_by: &id005
+  - belief
+  - ritual
+  - character
+  - dialogue
+  - event
+  - story_planner
+  - generator
+  - qa_runtime
+  writable_by:
+  - mr_long
+  forbidden_writers: *id005
+  lifecycle: draft
+  owner_artifact: bible/38_culture_bible.yaml
+- facet_id: le_gio_custom
+  owning_domain: culture
+  readable_by: *id005
+  writable_by:
+  - mr_long
+  forbidden_writers: *id005
+  lifecycle: draft
+  owner_artifact: bible/38_culture_bible.yaml
+- facet_id: kieng_ky_daily
+  owning_domain: culture
+  readable_by: *id005
+  writable_by:
+  - mr_long
+  forbidden_writers: *id005
+  lifecycle: draft
+  owner_artifact: bible/38_culture_bible.yaml
+- facet_id: tin_nguong_he
+  owning_domain: belief
+  readable_by: &id006
+  - ritual
+  - supernatural
+  - character
+  - dialogue
+  - event
+  - generator
+  - qa_runtime
+  writable_by:
+  - mr_long
+  forbidden_writers: *id006
+  lifecycle: draft
+  owner_artifact: bible/39_belief_bible.yaml
+- facet_id: am_duong_quan_niem
+  owning_domain: belief
+  readable_by: *id006
+  writable_by:
+  - mr_long
+  forbidden_writers: *id006
+  lifecycle: draft
+  owner_artifact: bible/39_belief_bible.yaml
+- facet_id: nghi_thuc_catalog
+  owning_domain: ritual
+  readable_by: &id007
+  - character
+  - dialogue
+  - event
+  - generator
+  - qa_runtime
+  writable_by:
+  - mr_long
+  forbidden_writers: *id007
+  lifecycle: draft
+  owner_artifact: bible/40_ritual_bible.yaml
+- facet_id: ritual_steps
+  owning_domain: ritual
+  readable_by: *id007
+  writable_by:
+  - mr_long
+  forbidden_writers: *id007
+  lifecycle: draft
+  owner_artifact: bible/40_ritual_bible.yaml
+- facet_id: regret_pillars
+  owning_domain: supernatural
+  readable_by: &id008
+  - character
+  - object
+  - event
+  - story_planner
+  - generator
+  - qa_runtime
+  writable_by:
+  - mr_long
+  forbidden_writers: *id008
+  lifecycle: approved
+  owner_artifact: bible/11_regret_catalog.yaml
+- facet_id: regret_variety_rules
+  owning_domain: supernatural
+  readable_by: *id008
+  writable_by:
+  - mr_long
+  forbidden_writers: *id008
+  lifecycle: approved
+  owner_artifact: bible/11_regret_catalog.yaml
+- facet_id: bus_supernatural_rules
+  owning_domain: supernatural
+  readable_by: *id008
+  writable_by:
+  - mr_long
+  forbidden_writers: *id008
+  lifecycle: approved
+  owner_artifact: bible/02_lore_db.yaml
+- facet_id: permanent_reveal_locks
+  owning_domain: supernatural
+  readable_by: *id008
+  writable_by:
+  - mr_long
+  forbidden_writers: *id008
+  lifecycle: approved
+  owner_artifact: bible/02_lore_db.yaml
+- facet_id: ghost_manifest_style
+  owning_domain: supernatural
+  readable_by: *id008
+  writable_by:
+  - mr_long
+  forbidden_writers: *id008
+  lifecycle: approved
+  owner_artifact: bible/01_narrative_structure.yaml
+- facet_id: ghost_negative_space
+  owning_domain: supernatural
+  readable_by: *id008
+  writable_by:
+  - mr_long
+  forbidden_writers: *id008
+  lifecycle: approved
+  owner_artifact: bible/01_narrative_structure.yaml
+- facet_id: core_identity
+  owning_domain: character
+  readable_by: &id009
+  - dialogue
+  - event
+  - story_planner
+  - decision_engine
+  - generator
+  - qa_runtime
+  - tts
+  writable_by:
+  - mr_long
+  forbidden_writers: *id009
+  lifecycle: approved
+  owner_artifact: bible/37_character_schema.yaml
+- facet_id: background
+  owning_domain: character
+  readable_by: *id009
+  writable_by:
+  - mr_long
+  forbidden_writers: *id009
+  lifecycle: approved
+  owner_artifact: bible/37_character_schema.yaml
+- facet_id: psyche_regret
+  owning_domain: character
+  readable_by: *id009
+  writable_by:
+  - mr_long
+  forbidden_writers: *id009
+  lifecycle: approved
+  owner_artifact: bible/37_character_schema.yaml
+- facet_id: voice_profile
+  owning_domain: character
+  readable_by: *id009
+  writable_by:
+  - mr_long
+  forbidden_writers: *id009
+  lifecycle: approved
+  owner_artifact: bible/37_character_schema.yaml
+- facet_id: story_arc_personal
+  owning_domain: character
+  readable_by: *id009
+  writable_by:
+  - mr_long
+  forbidden_writers: *id009
+  lifecycle: approved
+  owner_artifact: bible/37_character_schema.yaml
+- facet_id: relationships
+  owning_domain: character
+  readable_by: *id009
+  writable_by:
+  - mr_long
+  forbidden_writers: *id009
+  lifecycle: approved
+  owner_artifact: bible/37_character_schema.yaml
+- facet_id: character_memory
+  owning_domain: character
+  readable_by: *id009
+  writable_by:
+  - mr_long
+  forbidden_writers: *id009
+  lifecycle: approved
+  owner_artifact: bible/37_character_schema.yaml
+- facet_id: dialogue_dna
+  owning_domain: character
+  readable_by: *id009
+  writable_by:
+  - mr_long
+  forbidden_writers: *id009
+  lifecycle: approved
+  owner_artifact: bible/37_character_schema.yaml
+- facet_id: emotion_trigger
+  owning_domain: character
+  readable_by: *id009
+  writable_by:
+  - mr_long
+  forbidden_writers: *id009
+  lifecycle: approved
+  owner_artifact: bible/37_character_schema.yaml
+- facet_id: character_state
+  owning_domain: character
+  readable_by: *id009
+  writable_by:
+  - mr_long
+  forbidden_writers: *id009
+  lifecycle: approved
+  owner_artifact: bible/37_character_schema.yaml
+- facet_id: balance_targets
+  owning_domain: character
+  readable_by: *id009
+  writable_by:
+  - mr_long
+  forbidden_writers: *id009
+  lifecycle: approved
+  owner_artifact: bible/37_character_schema.yaml
+- facet_id: goal
+  owning_domain: character
+  readable_by: *id009
+  writable_by:
+  - mr_long
+  forbidden_writers: *id009
+  lifecycle: approved
+  owner_artifact: bible/37_character_schema.yaml
+- facet_id: fear
+  owning_domain: character
+  readable_by: *id009
+  writable_by:
+  - mr_long
+  forbidden_writers: *id009
+  lifecycle: approved
+  owner_artifact: bible/37_character_schema.yaml
+- facet_id: knowledge
+  owning_domain: character
+  readable_by: *id009
+  writable_by:
+  - mr_long
+  - character
+  forbidden_writers: *id009
+  lifecycle: approved
+  owner_artifact: governance/blueprint/schemas/character_ext_schema.yaml
+- facet_id: reveal_permission
+  owning_domain: character
+  readable_by: *id009
+  writable_by:
+  - mr_long
+  - character
+  forbidden_writers: *id009
+  lifecycle: approved
+  owner_artifact: governance/blueprint/schemas/character_ext_schema.yaml
+- facet_id: audit_gate
+  owning_domain: character
+  readable_by: *id009
+  writable_by:
+  - mr_long
+  forbidden_writers: *id009
+  lifecycle: approved
+  owner_artifact: tools/character_manager.py
+- facet_id: continuity_risk
+  owning_domain: character
+  readable_by: *id009
+  writable_by:
+  - mr_long
+  - character
+  forbidden_writers: *id009
+  lifecycle: approved
+  owner_artifact: governance/blueprint/schemas/character_ext_schema.yaml
+- facet_id: trauma_backstory_lock
+  owning_domain: character
+  readable_by: *id009
+  writable_by:
+  - mr_long
+  forbidden_writers: *id009
+  lifecycle: approved
+  owner_artifact: bible/37_character_schema.yaml
+- facet_id: naming_rules
+  owning_domain: character
+  readable_by: *id009
+  writable_by:
+  - mr_long
+  forbidden_writers: *id009
+  lifecycle: approved
+  owner_artifact: bible/23_passenger_naming.yaml
+- facet_id: naming_region
+  owning_domain: character
+  readable_by: *id009
+  writable_by:
+  - mr_long
+  forbidden_writers: *id009
+  lifecycle: approved
+  owner_artifact: governance/blueprint/schemas/naming_extension_rules.yaml
+- facet_id: naming_generation
+  owning_domain: character
+  readable_by: *id009
+  writable_by:
+  - mr_long
+  forbidden_writers: *id009
+  lifecycle: approved
+  owner_artifact: governance/blueprint/schemas/naming_extension_rules.yaml
+- facet_id: naming_culture
+  owning_domain: character
+  readable_by: *id009
+  writable_by:
+  - mr_long
+  forbidden_writers: *id009
+  lifecycle: approved
+  owner_artifact: governance/blueprint/schemas/naming_extension_rules.yaml
+- facet_id: naming_vietnamese
+  owning_domain: character
+  readable_by: *id009
+  writable_by:
+  - mr_long
+  forbidden_writers: *id009
+  lifecycle: approved
+  owner_artifact: governance/blueprint/schemas/naming_extension_rules.yaml
+- facet_id: object_catalog
+  owning_domain: object
+  readable_by: &id010
+  - character
+  - event
+  - story_planner
+  - generator
+  - qa_runtime
+  writable_by:
+  - mr_long
+  forbidden_writers: *id010
+  lifecycle: approved
+  owner_artifact: bible/12_object_library.yaml
+- facet_id: object_selection_rules
+  owning_domain: object
+  readable_by: *id010
+  writable_by:
+  - mr_long
+  forbidden_writers: *id010
+  lifecycle: approved
+  owner_artifact: bible/12_object_library.yaml
+- facet_id: emotional_value_distribution
+  owning_domain: object
+  readable_by: *id010
+  writable_by:
+  - mr_long
+  forbidden_writers: *id010
+  lifecycle: approved
+  owner_artifact: bible/12_object_library.yaml
+- facet_id: forbidden_objects
+  owning_domain: object
+  readable_by: *id010
+  writable_by:
+  - mr_long
+  forbidden_writers: *id010
+  lifecycle: approved
+  owner_artifact: bible/12_object_library.yaml
+- facet_id: voice_states
+  owning_domain: dialogue
+  readable_by: &id011
+  - decision_engine
+  - generator
+  - qa_runtime
+  - tts
+  writable_by:
+  - mr_long
+  forbidden_writers: *id011
+  lifecycle: approved
+  owner_artifact: bible/15_voice_bible.yaml
+- facet_id: voice_state_transitions
+  owning_domain: dialogue
+  readable_by: *id011
+  writable_by:
+  - mr_long
+  forbidden_writers: *id011
+  lifecycle: approved
+  owner_artifact: bible/15_voice_bible.yaml
+- facet_id: recurring_voice_profiles
+  owning_domain: dialogue
+  readable_by: *id011
+  writable_by:
+  - mr_long
+  forbidden_writers: *id011
+  lifecycle: approved
+  owner_artifact: bible/15_voice_bible.yaml
+- facet_id: dynamic_prosody
+  owning_domain: dialogue
+  readable_by: *id011
+  writable_by:
+  - mr_long
+  forbidden_writers: *id011
+  lifecycle: approved
+  owner_artifact: bible/15_voice_bible.yaml
+- facet_id: voice_artifact_taxonomy
+  owning_domain: dialogue
+  readable_by: *id011
+  writable_by:
+  - mr_long
+  forbidden_writers: *id011
+  lifecycle: approved
+  owner_artifact: bible/15_voice_bible.yaml
+- facet_id: signature_phrases
+  owning_domain: dialogue
+  readable_by: *id011
+  writable_by:
+  - mr_long
+  forbidden_writers: *id011
+  lifecycle: approved
+  owner_artifact: bible/06_lexical_style.yaml
+- facet_id: diction_preferences
+  owning_domain: dialogue
+  readable_by: *id011
+  writable_by:
+  - mr_long
+  forbidden_writers: *id011
+  lifecycle: approved
+  owner_artifact: bible/06_lexical_style.yaml
+- facet_id: anti_slop_rules
+  owning_domain: dialogue
+  readable_by: *id011
+  writable_by:
+  - mr_long
+  forbidden_writers: *id011
+  lifecycle: approved
+  owner_artifact: bible/22_anti_slop_vi.yaml
+- facet_id: death_type_taxonomy
+  owning_domain: event
+  readable_by: &id012
+  - story_planner
+  - decision_engine
+  - generator
+  - qa_runtime
+  writable_by:
+  - mr_long
+  forbidden_writers: *id012
+  lifecycle: draft
+  owner_artifact: bible/37_character_schema.yaml
+- facet_id: incident_record
+  owning_domain: event
+  readable_by: *id012
+  writable_by:
+  - mr_long
+  - event
+  forbidden_writers: *id012
+  lifecycle: draft
+  owner_artifact: runtime/memory/event_ledger.yaml
+- facet_id: reveal_record
+  owning_domain: event
+  readable_by: *id012
+  writable_by:
+  - mr_long
+  - event
+  forbidden_writers: *id012
+  lifecycle: draft
+  owner_artifact: runtime/memory/event_ledger.yaml
+- facet_id: comment_trigger
+  owning_domain: event
+  readable_by: *id012
+  writable_by:
+  - mr_long
+  forbidden_writers: *id012
+  lifecycle: draft
+  owner_artifact: bible/14_comment_trigger_library.yaml
+- facet_id: driver_reveal_budget
+  owning_domain: story_planner
+  readable_by: &id013
+  - decision_engine
+  - generator
+  - qa_runtime
+  writable_by:
+  - mr_long
+  forbidden_writers: *id013
+  lifecycle: approved
+  owner_artifact: bible/18_driver_reveal_budget.yaml
+- facet_id: opening_hook_template
+  owning_domain: story_planner
+  readable_by: *id013
+  writable_by:
+  - mr_long
+  forbidden_writers: *id013
+  lifecycle: approved
+  owner_artifact: bible/01_narrative_structure.yaml
+- facet_id: cliffhanger_pool
+  owning_domain: story_planner
+  readable_by: *id013
+  writable_by:
+  - mr_long
+  forbidden_writers: *id013
+  lifecycle: approved
+  owner_artifact: bible/01_narrative_structure.yaml
+- facet_id: bimodal_sentence_structure
+  owning_domain: story_planner
+  readable_by: *id013
+  writable_by:
+  - mr_long
+  forbidden_writers: *id013
+  lifecycle: approved
+  owner_artifact: bible/01_narrative_structure.yaml
+- facet_id: reveal_pause_marker
+  owning_domain: story_planner
+  readable_by: *id013
+  writable_by:
+  - mr_long
+  forbidden_writers: *id013
+  lifecycle: approved
+  owner_artifact: bible/01_narrative_structure.yaml
+- facet_id: series_kpi
+  owning_domain: story_planner
+  readable_by: *id013
+  writable_by:
+  - mr_long
+  forbidden_writers: *id013
+  lifecycle: approved
+  owner_artifact: bible/16_series_kpi.yaml
+- facet_id: scene_act_structure
+  owning_domain: story_planner
+  readable_by: *id013
+  writable_by:
+  - mr_long
+  forbidden_writers: *id013
+  lifecycle: approved
+  owner_artifact: governance/blueprint/schemas/story_plan_schema.yaml

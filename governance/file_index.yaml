@@ -1056,5 +1056,29 @@ files:
     domain: bp2_domain
     status: active
     tier: 0
+  governance/blueprint/bp3/00_ownership.md:
+    domain: bp3_ownership
+    status: active
+    tier: 0
+  governance/blueprint/bp3/facet_ownership_matrix.yaml:
+    domain: bp3_ownership
+    status: active
+    tier: 0
+  governance/blueprint/bp3/dependency_detail.yaml:
+    domain: bp3_ownership
+    status: active
+    tier: 0
+  reports/BP3_REPORT.md:
+    domain: bp3_ownership
+    status: active
+    tier: 0
+  tools/bp3_ownership_check.py:
+    domain: bp3_ownership
+    status: active
+    tier: 0
+  tests/test_bp3_ownership.py:
+    domain: bp3_ownership
+    status: active
+    tier: 0
 generated_by: tools/registry_triage.py
-total: 246
+total: 252

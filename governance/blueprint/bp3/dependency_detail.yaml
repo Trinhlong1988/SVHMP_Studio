@@ -1,0 +1,267 @@
+# BP3 — dependency detail (VI SAO tung dep ton tai; SINH MAY tu BP0.dependencies)
+# 3 nguon PHAI khop: blueprint_domains.dependencies == bp1 graph.depends_on == file nay.
+# data_flow=read toan bo: khong domain nao GHI domain khac (luat 1-writer); write chi vao store cua chinh minh.
+# Enforcer: tools/bp3_ownership_check.py.
+validator_version: 1.0.0
+source_constitution_version: 2.0.0
+dependencies:
+- dep_id: dep__character__world
+  from: character
+  to: world
+  reason: que quan/boi canh nhan vat phai hop lore
+  data_flow: read
+- dep_id: dep__character__supernatural
+  from: character
+  to: supernatural
+  reason: regret sub-archetype gan cho passenger tu bible/11
+  data_flow: read
+- dep_id: dep__character__culture
+  from: character
+  to: culture
+  reason: xung ho/tap quan theo phong tuc vung
+  data_flow: read
+- dep_id: dep__object__supernatural
+  from: object
+  to: supernatural
+  reason: vat gan regret — y nghia sieu nhien do supernatural quyet
+  data_flow: read
+- dep_id: dep__dialogue__character
+  from: dialogue
+  to: character
+  reason: thoai phai khop identity + voice profile nhan vat
+  data_flow: read
+- dep_id: dep__dialogue__culture
+  from: dialogue
+  to: culture
+  reason: xung ho trong thoai theo tap quan vung
+  data_flow: read
+- dep_id: dep__event__character
+  from: event
+  to: character
+  reason: su kien xay ra voi nhan vat cu the
+  data_flow: read
+- dep_id: dep__event__world
+  from: event
+  to: world
+  reason: su kien phai hop lore the gioi
+  data_flow: read
+- dep_id: dep__event__timeline
+  from: event
+  to: timeline
+  reason: su kien co moc thu tu tren truc thoi gian
+  data_flow: read
+- dep_id: dep__event__supernatural
+  from: event
+  to: supernatural
+  reason: cai chet/hien hinh theo luat hon ma
+  data_flow: read
+- dep_id: dep__event__location
+  from: event
+  to: location
+  reason: su kien xay ra tai setting cu the
+  data_flow: read
+- dep_id: dep__event__weather
+  from: event
+  to: weather
+  reason: khong khi canh su kien theo thoi tiet
+  data_flow: read
+- dep_id: dep__event__object
+  from: event
+  to: object
+  reason: su kien xoay quanh vat neo hoi uc
+  data_flow: read
+- dep_id: dep__story_planner__character
+  from: story_planner
+  to: character
+  reason: xep arc/cast theo ho so nhan vat
+  data_flow: read
+- dep_id: dep__story_planner__event
+  from: story_planner
+  to: event
+  reason: ke hoach dua tren su kien da xay ra (ledger)
+  data_flow: read
+- dep_id: dep__story_planner__timeline
+  from: story_planner
+  to: timeline
+  reason: xep tap theo truc thoi gian
+  data_flow: read
+- dep_id: dep__story_planner__world
+  from: story_planner
+  to: world
+  reason: ke hoach ton trong lore
+  data_flow: read
+- dep_id: dep__story_planner__supernatural
+  from: story_planner
+  to: supernatural
+  reason: reveal budget theo luat sieu nhien (bible/18)
+  data_flow: read
+- dep_id: dep__decision_engine__story_planner
+  from: decision_engine
+  to: story_planner
+  reason: budget sheet sinh tu ke hoach tap
+  data_flow: read
+- dep_id: dep__decision_engine__character
+  from: decision_engine
+  to: character
+  reason: character focus/POV theo ho so
+  data_flow: read
+- dep_id: dep__decision_engine__event
+  from: decision_engine
+  to: event
+  reason: nhip theo mat do su kien
+  data_flow: read
+- dep_id: dep__generator__story_planner
+  from: generator
+  to: story_planner
+  reason: viet theo ke hoach tap
+  data_flow: read
+- dep_id: dep__generator__decision_engine
+  from: generator
+  to: decision_engine
+  reason: viet theo budget sheet (chong tu nghi)
+  data_flow: read
+- dep_id: dep__generator__dialogue
+  from: generator
+  to: dialogue
+  reason: thoai theo luat dialogue
+  data_flow: read
+- dep_id: dep__generator__character
+  from: generator
+  to: character
+  reason: nhan vat dung tu roster
+  data_flow: read
+- dep_id: dep__generator__event
+  from: generator
+  to: event
+  reason: su kien theo ledger/ke hoach
+  data_flow: read
+- dep_id: dep__generator__object
+  from: generator
+  to: object
+  reason: OBJ_ tu bible/12
+  data_flow: read
+- dep_id: dep__generator__world
+  from: generator
+  to: world
+  reason: lore tu bible/02
+  data_flow: read
+- dep_id: dep__generator__timeline
+  from: generator
+  to: timeline
+  reason: moc thoi gian dung thu tu
+  data_flow: read
+- dep_id: dep__generator__supernatural
+  from: generator
+  to: supernatural
+  reason: hanh vi hon ma theo GHOST_RULES
+  data_flow: read
+- dep_id: dep__generator__location
+  from: generator
+  to: location
+  reason: setting tu bible/13
+  data_flow: read
+- dep_id: dep__generator__weather
+  from: generator
+  to: weather
+  reason: thoi tiet canh nhat quan
+  data_flow: read
+- dep_id: dep__generator__culture
+  from: generator
+  to: culture
+  reason: phong tuc dung
+  data_flow: read
+- dep_id: dep__generator__belief
+  from: generator
+  to: belief
+  reason: tin nguong nhan vat dung
+  data_flow: read
+- dep_id: dep__generator__ritual
+  from: generator
+  to: ritual
+  reason: nghi thuc theo catalog
+  data_flow: read
+- dep_id: dep__qa_runtime__character
+  from: qa_runtime
+  to: character
+  reason: cham completeness/identity theo ho so
+  data_flow: read
+- dep_id: dep__qa_runtime__dialogue
+  from: qa_runtime
+  to: dialogue
+  reason: cham thoai theo luat voice/anti-slop
+  data_flow: read
+- dep_id: dep__qa_runtime__supernatural
+  from: qa_runtime
+  to: supernatural
+  reason: cham canon hon ma
+  data_flow: read
+- dep_id: dep__qa_runtime__world
+  from: qa_runtime
+  to: world
+  reason: cham lore consistency
+  data_flow: read
+- dep_id: dep__tts__dialogue
+  from: tts
+  to: dialogue
+  reason: render giong theo voice states/profiles
+  data_flow: read
+- dep_id: dep__tts__character
+  from: tts
+  to: character
+  reason: voice mapping theo profile nhan vat
+  data_flow: read
+- dep_id: dep__audio__tts
+  from: audio
+  to: tts
+  reason: mix/QA tren voice track da render
+  data_flow: read
+- dep_id: dep__production__generator
+  from: production
+  to: generator
+  reason: dieu phoi render tren episode.md
+  data_flow: read
+- dep_id: dep__production__qa_runtime
+  from: production
+  to: qa_runtime
+  reason: chi render text da PASS
+  data_flow: read
+- dep_id: dep__production__tts
+  from: production
+  to: tts
+  reason: goi tts trong chuoi render
+  data_flow: read
+- dep_id: dep__production__audio
+  from: production
+  to: audio
+  reason: goi audio QA trong chuoi render
+  data_flow: read
+- dep_id: dep__video__audio
+  from: video
+  to: audio
+  reason: video build tu audio final
+  data_flow: read
+- dep_id: dep__video__production
+  from: video
+  to: production
+  reason: video sau golden output
+  data_flow: read
+- dep_id: dep__publisher__production
+  from: publisher
+  to: production
+  reason: chi dang artifact co golden output R196
+  data_flow: read
+- dep_id: dep__publisher__video
+  from: publisher
+  to: video
+  reason: dang video master
+  data_flow: read
+- dep_id: dep__publisher__audio
+  from: publisher
+  to: audio
+  reason: dang audio (podcast) master
+  data_flow: read
+- dep_id: dep__analytics__production
+  from: analytics
+  to: production
+  reason: do luong tren san pham da phat hanh
+  data_flow: read
