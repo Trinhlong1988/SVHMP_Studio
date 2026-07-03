@@ -27,15 +27,24 @@ _Hoàn thiện tổng thể + tái dùng cho tiểu thuyết / podcast / tình c
 | 5 | Analytics | retention · comment · error-feedback loop | — |
 
 ## 4. TIẾN TRÌNH (phased, mỗi phase DoD-gated + test + registry + log_ping + commit)
+> **PHƯƠNG ÁN MỚI — Mr.Long duyệt 3/7/2026** (thay bảng cũ; đây là source-of-truth DUY NHẤT, bảng G-số cũ hết hiệu lực). Sau Governance v1.0 (locked): Luật bản vẽ → Bản vẽ → xây từng domain. Mỗi tầng: BUILD → audit adversarial → Mr.Long ký → freeze.
+
 | Phase | Nội dung | Trạng thái |
 |---|---|---|
-| **G0** | Tier-0 Governance (registry+checker+R211+ownership+change-gate) | ✅ **DONE** (evidence trên) |
-| **G1** | Triage 186 unmapped → gán domain / dedupe / mark deprecated | ✅ **DONE** (0 unmapped, strict-enforced F5) |
-| **G2** | Character domain DoD-complete: **WIRE completeness-gate vào render ✅** (svhmp_preflight_qa CHARACTER_GATE, WARN-default + `--strict-characters` block + `--char-threshold`; `character_manager.episode_completeness`/`render_gate_lines` single-source; 7 test PASS). Còn: +sample YAML, secondary-cast, fill occupation/role (roster avg 0.23 → mở strict sau khi đầy) | ~92% (wire xong; còn fill data) |
-| **G3** | **Dialogue domain** — generator sinh thoại DÙNG voice profile (ROI cao nhất cho chất truyện) | ⏳ |
-| **G4** | World/Time/Event + Story Memory + Continuity/Timeline QA | ⏳ |
-| **G5** | Trích **generic-core** + `project_config` → chạy thử 1 project mẫu (romance-podcast) không sửa code | ⏳ (mốc tái dùng) |
-| **G6** | Analytics Tier-5 (retention/comment feedback → cải tiến) | ⏳ |
+| **G0** | Tier-0 Governance (registry+checker+R211+ownership+change-gate) | ✅ DONE |
+| **G1** | Triage 186 unmapped → 0 | ✅ DONE |
+| **GOV** | Enterprise Governance v1.0 — 5 pack locked + tag `governance-v1.0` + promotion_status locked | ✅ **DONE 2/7** |
+| **BP-C** | **Blueprint Constitution** (luật xây bản vẽ) — `governance/blueprint/00-04` + checker + test; Domain Inventory khoá TRƯỚC (18 domain); mọi element khai `exists\|planned` | ⏳ **KẾ TIẾP** |
+| **BP** | **SYSTEM_BLUEPRINT v1.0** (bản vẽ thật ~20 doc: domain catalog/dependency/data-flow/memory-architecture/manager specs...) — xây theo BP-C | ⏳ |
+| **G2** | **Character** — ĐÃ CÓ LÕI (bible/37 + character_manager wired render L339/344 + R205/R206; ~92%): **AUDIT theo blueprint + vá gap** (fill roster, secondary-cast, sample YAML) — KHÔNG rebuild (cấm nhân đôi) | ⏳ |
+| **G3** | **Dialogue** — generator sinh thoại dùng voice profile (ROI cao nhất) | ⏳ |
+| **G4** | **World + Timeline + Event** + Story Memory + Continuity QA | ⏳ |
+| **G5** | **Supernatural** (domain độc lập — Ghost/Spirit/Curse/Ritual/Omen/SacredObject/Belief/Karma/Possession; KHÔNG giấu trong World/Event) | ⏳ |
+| **G6** | **Story Planner** — Dialogue/Narration Ratio · Pacing · Emotion/Suspense/Reveal Curve · Cliffhanger · Scene Budget | ⏳ |
+| **G7** | **Generator** — sinh episode theo planner + domain managers | ⏳ |
+| **G8** | **QA Runtime** — ĐÃ CÓ LÕI (pack5: detector R188-191, waiver R204, watch): AUDIT theo blueprint + vá gap (F2 harness, F8 real-audio calibrate) — KHÔNG rebuild | ⏳ |
+| **EP01** | Prototype: re-render EP01 bằng pipeline mới = acceptance test toàn hệ | ⏳ |
+| _(sau)_ | Generic-core đa dự án (`project_config` — validator P4 sẵn) · Analytics · Video · Publisher | backlog |
 
 ## 5. DEFINITION OF DONE (mỗi domain mới ship)
 `schema · manager · validator · report · test PASS · md doc · sample YAML · regression chống trùng` — thiếu 1 = chưa DONE.
