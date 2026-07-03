@@ -167,6 +167,10 @@ domains:
       - governance/blueprint/bp4/memory_architecture.yaml  # 6 scope khop BP0 + writers theo BP3
       - reports/BP4_REPORT.md
     bp4_check: tools/bp4_runtime_check.py   # BP4: hop-hop-le + trigger-that + orphan-state + memory-BP3 + flow-tang-layer
+    bp5_validation:
+      - governance/blueprint/bp5/00_validation.md
+      - reports/BP5_REPORT.md
+    bp5_check: tools/blueprint_suite_check.py   # BP5: suite 1-cua GOI bp0-bp4 checker (khong viet lai), wired ci_gate stage 'blueprint'
     tests:
       - tests/test_governance_enforce_r209.py
       - tests/test_artifact_contract_r212.py
@@ -186,6 +190,7 @@ domains:
       - tests/test_bp2_domain.py   # BP2: mutation (facet-2-domain/sot-key-lao/enforcer-ma/canon-thieu-block)
       - tests/test_bp3_ownership.py   # BP3: mutation (2-writer/facet-ma/thieu-facet/leo-thang/dep-3-nguon-lech)
       - tests/test_bp4_runtime.py   # BP4: mutation (hop-bia/trigger-ma/orphan/memory-2-writer/flow-nguoc)
+      - tests/test_bp5_validation.py   # BP5: suite 1-cua (1-tang-fail-exit1/dup-key-moi-tang/unwire-guard/loader-1-impl)
     promotion_status: locked   # GOVERNANCE v1.0 (Mr.Long signed 2/7): DU 5 pack locked+tagged, freeze_gate 5/5 moi pack, cross-pack audit nhat quan; tag governance-v1.0
     enterprise_pack_progress:
       pack1_constitution: locked   # FROZEN v1.0 (Mr.Long authorized 2/7): 6 doc 11-element, promotion_guard HANH VI (pre-push+server-CI, battle-tested), test_pack1_docs; tag pack1-constitution-v1.0
@@ -198,6 +203,7 @@ domains:
       bp2_domain: locked   # FROZEN v1.0 (Mr.Long authorized 3/7): 13 domain / 70 facet (49 exists/21 planned), G2-core 10 + naming vung mien + invariants 13/13; audit 5 mutation PASS, exists 62/62; FACET LIST DONG; tag bp2-domain-v1.0
       bp3_ownership: locked   # FROZEN v1.0 (Mr.Long authorized 3/7): 70 facet 1-writer (0 vi pham luat vang), 52 dep 3-nguon khop, reveal permission/timing tach 3 chu; audit 5 mutation PASS (2-writer/facet-ma/leo-thang/dup-key/dep-lech); tag bp3-ownership-v1.0
       bp4_runtime: locked   # FROZEN v1.0 (Mr.Long authorized 3/7): 9 hop layer-tang, 8 event chain domain/facet-da-khai, 4 state machine 0-orphan, 6 memory scope khop BP3; audit 5 mutation PASS (hop-bia/trigger-ma/orphan/writer-leo-thang/dup-key); tag bp4-runtime-v1.0
+      bp5_validation: candidate   # BUILT 3/7: suite 1-cua bp0-bp4 + wired ci_gate stage 'blueprint' + unwire-guard + loader-1-impl; cho audit 7 buoc + Mr.Long ky
     data_contract:
       input: "registry yaml + disk scan"
       output: "gap report"

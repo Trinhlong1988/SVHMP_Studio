@@ -18,6 +18,7 @@ _PYTEST_GUARD = 'SVHMP_CI_GATE_PYTEST_RUNNING'
 
 CHECKS = [
     ('registry',  'tools/architecture_registry_check.py'),
+    ('blueprint', 'tools/blueprint_suite_check.py'),   # BP5: 1 cua BP0-BP4 (unwire = test_bp5 do)
     ('R199_tail', 'tests/test_tail_pathology_r199.py'),
     ('R203_conf', 'tests/test_qa_confusion_200_r203.py'),
     ('R205_char', 'tests/test_character_manager_r205.py'),

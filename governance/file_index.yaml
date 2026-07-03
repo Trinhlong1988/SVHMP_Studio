@@ -1112,5 +1112,21 @@ files:
     domain: bp4_runtime
     status: active
     tier: 0
+  governance/blueprint/bp5/00_validation.md:
+    domain: bp5_validation
+    status: active
+    tier: 0
+  tools/blueprint_suite_check.py:
+    domain: bp5_validation
+    status: active
+    tier: 0
+  tests/test_bp5_validation.py:
+    domain: bp5_validation
+    status: active
+    tier: 0
+  reports/BP5_REPORT.md:
+    domain: bp5_validation
+    status: active
+    tier: 0
 generated_by: tools/registry_triage.py
-total: 260
+total: 264
