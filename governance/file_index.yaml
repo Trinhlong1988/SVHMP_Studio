@@ -972,5 +972,41 @@ files:
     domain: text_qa
     status: active
     tier: 3
+  governance/blueprint/00_system_blueprint_constitution.md:
+    domain: blueprint_constitution
+    status: active
+    tier: 0
+  governance/blueprint/01_required_documents.md:
+    domain: blueprint_constitution
+    status: active
+    tier: 0
+  governance/blueprint/02_domain_contract.md:
+    domain: blueprint_constitution
+    status: active
+    tier: 0
+  governance/blueprint/03_dependency_rules.md:
+    domain: blueprint_constitution
+    status: active
+    tier: 0
+  governance/blueprint/04_blueprint_audit_gate.md:
+    domain: blueprint_constitution
+    status: active
+    tier: 0
+  governance/blueprint/blueprint_domains.yaml:
+    domain: blueprint_constitution
+    status: active
+    tier: 0
+  governance/manifests/blueprint_manifest.yaml:
+    domain: blueprint_constitution
+    status: active
+    tier: 0
+  tools/blueprint_constitution_check.py:
+    domain: blueprint_constitution
+    status: active
+    tier: 0
+  tests/test_blueprint_constitution.py:
+    domain: blueprint_constitution
+    status: active
+    tier: 0
 generated_by: tools/registry_triage.py
-total: 225
+total: 234

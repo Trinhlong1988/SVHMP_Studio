@@ -1,0 +1,19 @@
+domain: blueprint_constitution
+tier: 0
+owner: Mr.Long
+promotion_status: candidate
+source_of_truth:
+- governance/blueprint/blueprint_domains.yaml
+data_contract:
+  input: "blueprint_domains.yaml (14 domain x 12 field + 6 memory scope + milestones)"
+  output: "violation report (C1-C8)"
+  exit: "0 hop le / 1 vi pham"
+files:
+- governance/blueprint/00_system_blueprint_constitution.md
+- governance/blueprint/01_required_documents.md
+- governance/blueprint/02_domain_contract.md
+- governance/blueprint/03_dependency_rules.md
+- governance/blueprint/04_blueprint_audit_gate.md
+- governance/blueprint/blueprint_domains.yaml
+- tools/blueprint_constitution_check.py
+- tests/test_blueprint_constitution.py

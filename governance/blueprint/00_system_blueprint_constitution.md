@@ -1,0 +1,17 @@
+# BLUEPRINT — 00_system_blueprint_constitution.md — Hiến pháp SYSTEM_BLUEPRINT v1.0
+> Enforce: `tools/blueprint_constitution_check.py` (đọc `governance/blueprint/blueprint_domains.yaml`, exit 0/1) · chứng thực: `tests/test_blueprint_constitution.py` (9 negative case bắt buộc + doc bar).
+
+**Mission:** Định nghĩa CÁCH SYSTEM_BLUEPRINT_v1.0 phải được xây và audit — mọi domain của hệ truyện (Character tới Publisher) có hợp đồng máy-kiểm-được TRƯỚC khi code được viết.
+**Purpose:** Chặn 3 lớp bệnh đã trả giá thật: (1) built ≠ wired (module có mà không ai gọi), (2) domain chồng vai không ranh giới, (3) phụ thuộc ngược chiều (canon đi gọi generator). Contract-first: khai hợp đồng → checker cưỡng chế → mới được build.
+**Scope:** 14 domain bắt buộc (character, dialogue, world, timeline, event, supernatural, story_planner, generator, qa_runtime, production, tts, audio, video, publisher) + 6 memory scope. KHÔNG sửa semantics Governance P1–P5 (đã LOCKED) — hiến pháp này đứng TRÊN nền đó, vuông góc.
+**Authority:** Mr.Long = thẩm quyền duy nhất lock/tag/đổi ranh giới contract. Builder chỉ đề xuất qua Change Request Gate (R211). Phái sinh từ `governance/constitution/00_constitution.md` — reconcile, không nhân đôi.
+**Responsibilities:** `blueprint_domains.yaml` = source-of-truth hợp đồng (machine-readable, KHÔNG phải prose); `blueprint_constitution_check.py` = enforcer C1–C8 (14 domain, 12 field, hướng dep, supernatural độc lập, memory có owner, chống phantom, chống self-lock); `tests/test_blueprint_constitution.py` = certify checker không phải weak-verifier.
+**Workflow:** đề xuất sửa contract → `blueprint_constitution_check.py` local exit 0 → `pytest -q` → commit theo R200 (worktree, pull --rebase trước, log_ping + push sau, KHÔNG --no-verify) → auditor soi committed ref → Mr.Long ký nếu đổi ranh giới domain.
+**Mandatory Rules:** (1) Path khai `exists` PHẢI tồn tại trên disk — khai láo = checker FAIL. (2) Chưa có = `planned` (trung thực, KHÔNG FAIL) nhưng theo PLANNED HONESTY RULE phải đủ 5 metadata (`planned_path/owner/reason_not_exists_yet/target_milestone/blocking_dependency` — thiếu 1 = FAIL); CẤM tạo stub/vaporware chỉ để qua test; planned mà path xuất hiện trên disk → WARN drift, cập nhật contract có duyệt. (3) Supernatural là domain ĐỘC LẬP — cấm gộp vào world/event/story_planner. (4) Builder CẤM tự đổi `promotion_status` sang locked (checker bắt SELF-LOCK). (5) Code mới của domain phải khớp manager/schema/validator đã khai — lệch = sửa contract trước (có duyệt).
+**PASS Criteria:** `blueprint_constitution_check.py` exit 0 (0 vi phạm, 14/14 domain, 6/6 memory) + `tests/test_blueprint_constitution.py` xanh trong `pytest tests/` + ci_gate (ENFORCED).
+**FAIL Criteria:** thiếu domain / thiếu field / sai hướng dep / supernatural bị gộp / memory không owner / phantom `exists` / self-lock → checker exit 1 → ci_gate đỏ.
+**Examples:** khai `world.manager, status: exists` khi file chưa có → `[VIOLATION] khai lao/phantom`; đổi `meta.promotion_status: locked` khi registry chưa ký → `[VIOLATION] SELF-LOCK`; character khai dep `generator` → `[VIOLATION] SAI HUONG (L2 depend L5)`.
+**Promotion Rules:** `blueprint_constitution` giữ `candidate` trong registry; lock = chữ ký Mr.Long sau audit (theo `governance/constitution/00_constitution.md` — reconcile, KHÔNG nhân đôi).
+
+## Vị trí trong governance
+Governance P1–P5 (LOCKED) quản CÁCH LÀM VIỆC (constitution/evidence/CI/template/quality). Blueprint Constitution quản CÁI SẼ ĐƯỢC XÂY (kiến trúc hệ truyện). Doc này không đụng semantics P1–P5.

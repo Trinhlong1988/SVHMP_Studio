@@ -133,6 +133,14 @@ domains:
       - governance/pack5/20_golden_dataset.md
       - governance/pack5/21_detector_suite.md
       - governance/pack5/22_waiver_watch.md
+    blueprint_constitution:
+      - governance/blueprint/00_system_blueprint_constitution.md
+      - governance/blueprint/01_required_documents.md
+      - governance/blueprint/02_domain_contract.md
+      - governance/blueprint/03_dependency_rules.md
+      - governance/blueprint/04_blueprint_audit_gate.md
+      - governance/blueprint/blueprint_domains.yaml   # source-of-truth contract 14 domain (machine-checkable)
+    blueprint_check: tools/blueprint_constitution_check.py   # BLUEPRINT: enforcer C1-C8 (14 domain / 12 field / dep direction / planned honesty)
     tests:
       - tests/test_governance_enforce_r209.py
       - tests/test_artifact_contract_r212.py
@@ -147,6 +155,7 @@ domains:
       - tests/test_promotion_guard.py   # PACK1: promotion_guard hard-gate HANH VI (negative that: tu-lock/tu-tag khong uy quyen -> block)
       - tests/test_preflight_repo_path.py   # PACK5 BUG P0: khoa preflight path trong repo (cam hard-path C:\tmp + python tran)
       - tests/test_pack5_docs.py   # PACK5: quality 11-element doc completeness + enforcer-exists
+      - tests/test_blueprint_constitution.py   # BLUEPRINT: 11 negative case (domain/field/dep/supernatural/memory/self-lock/planned-honesty) + doc bar
     promotion_status: locked   # GOVERNANCE v1.0 (Mr.Long signed 2/7): DU 5 pack locked+tagged, freeze_gate 5/5 moi pack, cross-pack audit nhat quan; tag governance-v1.0
     enterprise_pack_progress:
       pack1_constitution: locked   # FROZEN v1.0 (Mr.Long authorized 2/7): 6 doc 11-element, promotion_guard HANH VI (pre-push+server-CI, battle-tested), test_pack1_docs; tag pack1-constitution-v1.0
@@ -154,6 +163,7 @@ domains:
       pack3_cicd: locked   # FROZEN v1.0 (Mr.Long authorized 2/7): server-CI green (a8cf7d2), freeze_gate 4/4, auditor SHIP; tag pack3-cicd-v1.0
       pack4_template: locked   # FROZEN v1.0 (Mr.Long authorized 2/7): validator hardened+wired ci_gate, 4 doc ENFORCED/ROADMAP trung thuc, server-CI green 23b1e53; tag pack4-template-v1.0
       pack5_quality: locked   # FROZEN v1.0 (Mr.Long authorized 2/7): 4 doc 19-22 ENFORCED/ROADMAP doi chung code, BUG P0 preflight fixed+locked, Actions green ae5e9bf; tag pack5-quality-v1.0
+      blueprint_constitution: candidate   # SYSTEM_BLUEPRINT_CONSTITUTION v1.0 — Builder giu candidate, lock = chu ky Mr.Long sau audit
     data_contract:
       input: "registry yaml + disk scan"
       output: "gap report"
