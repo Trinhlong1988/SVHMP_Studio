@@ -187,6 +187,7 @@ domains:
       blueprint_constitution: locked   # FROZEN v2.0 (Mr.Long authorized 3/7): 22+1 domain inventory DONG, decision_engine, lifecycle+versioning, dup-key loader; audit 12 mutation PASS; tag blueprint-constitution-v2.0
       bp1_core: locked   # FROZEN v1.0 (Mr.Long authorized 3/7): 23 domain graph + 92 iface (4 exists/88 planned honesty) + layer contracts; audit 0 finding, mutation LECH-BP0/dup-key/phantom-src PASS; tag bp1-core-v1.0
       bp2_domain: locked   # FROZEN v1.0 (Mr.Long authorized 3/7): 13 domain / 70 facet (49 exists/21 planned), G2-core 10 + naming vung mien + invariants 13/13; audit 5 mutation PASS, exists 62/62; FACET LIST DONG; tag bp2-domain-v1.0
+      bp3_ownership: locked   # FROZEN v1.0 (Mr.Long authorized 3/7): 70 facet 1-writer (0 vi pham luat vang), 52 dep 3-nguon khop, reveal permission/timing tach 3 chu; audit 5 mutation PASS (2-writer/facet-ma/leo-thang/dup-key/dep-lech); tag bp3-ownership-v1.0
       bp3_ownership: candidate   # BP3 Ownership+Dependency — 70 facet 1-writer (sinh may) + 52 dep 3-nguon-khop; Builder khong lock
     data_contract:
       input: "registry yaml + disk scan"
