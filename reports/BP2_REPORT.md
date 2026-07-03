@@ -46,6 +46,17 @@
 3. `key` với ký tự tiếng Việt (`cliffhanger_pool_ngan_lung_triết_lý`) — checker resolve OK (UTF-8), lưu ý khi grep tay.
 4. 14 facet planned đều neo bible/38-43 đề xuất — đổi số khi Mr.Long đặt tên khác (rẻ, metadata).
 
+## BP2b ADDENDUM (sau audit PASS cấu trúc — 2 chốt Mr.Long 3/7: G2-CORE + NAMING)
+- **Character +12 facet → tổng 70 (49 exists / 21 planned):**
+  - `goal` + `fear`: TÁCH RÕ facet_id — trường có sẵn trong `tier_1_mandatory.psyche` (verified list chứa 'goal','fear') → **exists**.
+  - `knowledge` (quan trọng nhất truyện dài tập — CẤM biết bí mật chưa reveal, nền QA gate G2) · `reveal_permission` (PERMISSION only — TIMING thuộc story_planner reveal_curve, 2 chủ CẤM gộp) · `continuity_risk` (cờ đã-chết/mất-tích/đổi-tên/bị-nhập/biết-bí-mật, qa_runtime đọc) → **planned** 5-metadata (bible/37 v1.1 ký tại G2).
+  - `audit_gate` → **exists** `tools/character_manager.py` (gate G2 đang chạy thật).
+  - `trauma_backstory_lock` → **exists** `modules_v2.canon_lock` (trường khóa canon có sẵn bible/37 — không cần planned).
+  - `naming_rules` → **exists** `bible/23` key `RULES` (4 rule hiện có, IMMUTABLE); `naming_region/generation/culture/vietnamese` → **planned** (pool cụ thể Mr.Long ký bible/23 v1.1 tại G2).
+- **`story_arc_personal`** desc bổ sung: arc phải map state machine BP4.
+- **Verify `scene_function`:** KHÔNG nằm trong character (chưa từng lỡ) — đã ghi vào desc `scene_act_structure` của story_planner (SCENE own, character chỉ tham chiếu). ✅
+- Checker + 15 test chạy lại: PASS (facet unique 70, key-resolve máy).
+
 ## Next recommendation
 Audit 7 bước → Mr.Long ký lock BP2 (`bp2-domain-v1.0`) → theo MASTER chain tự chạy `TASK_BP3_OWNERSHIP` (facet inventory 58 đã sẵn làm input cho ownership matrix 1-facet-1-writer).
 

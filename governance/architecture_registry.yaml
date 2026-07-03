@@ -1,4 +1,4 @@
-# ============================================================
+﻿# ============================================================
 # TIER 0 GOVERNANCE — ARCHITECTURE REGISTRY (source of truth)
 # Boss 2/7 (phản biện.txt): chống loạn khi Claude chạy lâu — map file→domain,
 # source-of-truth, quyền sửa, promotion, data-contract. Kiểm bằng tools/architecture_registry_check.py.
@@ -150,7 +150,7 @@ domains:
     bp1_check: tools/bp1_architecture_check.py   # BP1: 11 check + equality BP0 + DUP-KEY loader
     bp2_domain:
       - governance/blueprint/bp2/00_domain_architecture.md
-      - governance/blueprint/bp2/domain_specs.yaml   # 13 domain / 58 facet inventory — key-resolve may
+      - governance/blueprint/bp2/domain_specs.yaml   # 13 domain / 70 facet inventory (BP2b addendum G2-CORE) — key-resolve may
       - reports/BP2_REPORT.md
     bp2_check: tools/bp2_domain_check.py   # BP2: facet unique toan cuc + SoT path/key verify + ENFORCER-MA
     tests:
