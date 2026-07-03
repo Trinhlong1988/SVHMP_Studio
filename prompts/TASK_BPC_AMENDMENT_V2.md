@@ -29,3 +29,10 @@ python tools/cmd_pipeline_gate.py --ref origin/main --skip-build   # ARCH+QA PAS
 Sign-off `reports/build_report.md`. Dòng cuối: STATUS: READY_FOR_AUDIT / NOT_READY.
 Sau READY → kiểm duyệt audit 7 bước (CMD_AUDIT_PROTOCOL.md) → Mr.Long ký re-lock
 `blueprint-constitution-v2.0`.
+
+## + A8b — BUG ẨN kiểm duyệt đào được 3/7 (bắt buộc vá trong amendment)
+`yaml.safe_load` NUỐT KEY TRÙNG im lặng (probe H6: 2 block `character:` → chỉ thấy block cuối)
+→ đường lách: thêm block domain thứ hai GHI ĐÈ hợp đồng đã audit mà checker mù.
+FIX: checker dùng custom SafeLoader phát hiện duplicate key ở MỌI cấp → [VIOLATION] DUP-KEY, exit 1.
++ negative test: yaml 2 block cùng tên domain → FAIL.
+(Probe H1-H5 checker đã đỡ hết — tự-dep/dep-in-forbidden/reader-lạ/layer-thiếu/owner-lạ: ghi nhận.)
