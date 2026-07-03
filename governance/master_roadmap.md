@@ -34,8 +34,8 @@ _Hoàn thiện tổng thể + tái dùng cho tiểu thuyết / podcast / tình c
 | **G0** | Tier-0 Governance (registry+checker+R211+ownership+change-gate) | ✅ DONE |
 | **G1** | Triage 186 unmapped → 0 | ✅ DONE |
 | **GOV** | Enterprise Governance v1.0 — 5 pack locked + tag `governance-v1.0` + promotion_status locked | ✅ **DONE 2/7** |
-| **BP-C** | **Blueprint Constitution** (luật xây bản vẽ) — `governance/blueprint/00-04` + checker + test; Domain Inventory khoá TRƯỚC (18 domain); mọi element khai `exists\|planned` | ⏳ **KẾ TIẾP** |
-| **BP** | **SYSTEM_BLUEPRINT v1.0** (bản vẽ thật ~20 doc: domain catalog/dependency/data-flow/memory-architecture/manager specs...) — xây theo BP-C | ⏳ |
+| **BP-C** | **Blueprint Constitution v2.0** — 22+1 domain ĐÓNG · decision layer · lifecycle+versioning · dup-key loader; tag `blueprint-constitution-v2.0` | ✅ **DONE 3/7** |
+| **BP** | **SYSTEM_BLUEPRINT v1.0** — BP1 Core · BP2 Domain · BP3 Ownership · BP4 Runtime ✅ locked+tag 3/7 · **BP5 Validation + G2-B1/B2 miner 🔄 đang build** (song song per TASK_G2 đã duyệt) · BP6-8 **THIN+TIMEBOX** (luật 10 MASTER) → FINAL AUDIT (+implementability) → tag `system-blueprint-v1.0` | 🔄 |
 | **G2** | **Character** — ĐÃ CÓ LÕI (bible/37 + character_manager wired render L339/344 + R205/R206; ~92%): **AUDIT theo blueprint + vá gap** (fill roster, secondary-cast, sample YAML) — KHÔNG rebuild (cấm nhân đôi) | ⏳ |
 | **G3** | **Dialogue** — generator sinh thoại dùng voice profile (ROI cao nhất) | ⏳ |
 | **G4** | **World + Timeline + Event** + Story Memory + Continuity QA | ⏳ |
@@ -56,6 +56,31 @@ _Hoàn thiện tổng thể + tái dùng cho tiểu thuyết / podcast / tình c
 4. **Reconcile hiến pháp sẵn có, không nhân đôi** (Change-Gate=R7, Audit=R200/log_ping, Promotion=bible lock).
 5. **Calibrate/kiểm chứng từ dữ liệu thật (Golden/roster), không suy luận, không bịa field.**
 
-## 7. QUYẾT ĐỊNH CẦN BOSS (để em chạy tiếp đúng thứ tự)
-- Ưu tiên **G1 (dọn 186 file)** hay **G3 (Dialogue generator — ra chất truyện nhanh)** trước?
-- Mốc tái dùng G5: chọn thể loại làm project mẫu đầu tiên (podcast tình cảm / trinh thám)?
+## 7. QUYẾT ĐỊNH CẦN BOSS (cập nhật 3/7 tối — câu G1/G3 cũ hết hiệu lực, G1 đã DONE)
+- GPU máy render (Administrator): cho benchmark S3-0 hay Boss cấp specs?
+- IP thứ 2: chốt **Huyền Sử Việt**?
+- Phong cách video HDK: **động-tĩnh cinematic** (khuyến nghị — hợp 3060 12GB, hợp horror) hay full 2D animation (~5-10× thời gian)?
+- Ngân sách cloud-GPU fallback nếu benchmark local không đạt?
+
+## 8. AI STUDIO EXPANSION — Mr.Long CHỐT 3/7/2026
+> Bản đầy đủ (kiến trúc 4 tầng · phân xử AUDIT.md · hạ tầng đo thật · rủi ro): `AI_STUDIO_PLAN.md`
+> — hiện ở Desktop, nhập vào `governance/` kèm mapping file_index sau khi builder lands BP5.
+
+Hắc Dạ Ký → **AI Studio đa IP** (video 2D animation, train local). Nguyên tắc bất biến:
+Governance hiện tại = móng, KHÔNG xây lại · mỗi Factory mới = pack ceremony đầy đủ ·
+**REALITY ANCHOR** (luật 9 MASTER): pack lock cần ≥1 artifact chạy dữ liệu thật ·
+Studio Core = **EXTRACT từ dây chuyền đã chạy** (sau S1), cấm build-ahead.
+
+| Phase | Nội dung | Acceptance đo được |
+|---|---|---|
+| **S0** 🔄 | BP5+G2-B1/B2 (đang build) → BP6-8 thin → `system-blueprint-v1.0` | freeze_gate 5/5 mỗi pack; blueprint_suite 1 lệnh xanh |
+| **S1** | Vertical slice AUDIO: fix 4 vi phạm content ep_01 → re-render EP01 → đo KPI thật | EP01 PASS golden + bảng KPI per-episode đầu tiên |
+| **S2** | Studio Core v0 (extract từ S1): Asset Registry mở rộng · Prompt Registry · Cost Dashboard · dep-matrix generator (máy-sinh từ BP yaml) · ADR retro mỏng | dashboard trả lời "1 tập = bao lâu/token/$" bằng số thật |
+| **S3** | Visual Foundation: S3-0 benchmark GPU (timebox 3 ngày) → Art/Character Visual Bible (từ bible/37) → LoRA style + nhân vật (local, 3060 12GB) | consistency 20 ảnh/nhân vật, người duyệt ≥90% |
+| **S4** | Animation 2D + lip-sync + compose → **EP01 VIDEO** publish YouTube | EP01 video lên kênh + KPI video vào dashboard |
+| **S5** | Multi-IP: IP2 onboard CHỈ bằng `project_config` + bible + LoRA riêng (P4 validator sẵn) | 1 tập IP2 end-to-end; đo thời-gian-onboard = KPI platform #1 |
+| **S6** | Scale 90 tập HDK · cost optimize · analytics feedback loop | tập/tuần ổn định; $/tập giảm theo đường cong |
+
+**KPI tách:** _Platform_ = thời gian onboard IP mới · % tool tái dùng · $/phút content ‖ _Product_ = tập/tuần · lỗi QA/tập · retention/comment · $/tập.
+**Track song song:** G3-G8 (bảng §4) = Story Factory buildout; EP01-pipeline-mới vẫn là acceptance của track đó.
+**Backlog trả trong S0-S1:** dup-key loader cho `architecture_registry_check` (bug class H6) · `verify_ping_claim` 24 UNKNOWN · bảng rule↔enforcer máy-sinh · ADR retro (`docs/adr/`) · xác nhận revoke PAT.
