@@ -71,3 +71,21 @@ def test_read_build_ready_no(tmp_path, monkeypatch):
 def test_pid_alive_self_and_invalid():
     assert pg._pid_alive(os.getpid()) is True
     assert pg._pid_alive(0) is False
+
+
+def test_acquire_lock_fail_closed(tmp_path, monkeypatch):
+    """Audit 3/7: loi IO tren lock PHAI fail-closed (khong coi la chiem duoc)."""
+    bad = tmp_path / 'lock_as_dir'
+    bad.mkdir()  # read_text tren THU MUC -> exception -> phai (False, ...)
+    monkeypatch.setattr(pg, 'LOCK', bad)
+    ok, other = pg.acquire_lock()
+    assert ok is False, 'lock IO error ma van cho chay = fail-open (bug cu)'
+
+
+def test_no_ctmp_hardpath_in_ops_tools():
+    """Khoa lop bug C:\\tmp (P0 2/7): 3 tool tung dinh khong duoc tai nhiem."""
+    repo = Path(__file__).resolve().parent.parent
+    for rel in ['tools/svhmp_final_verify.py', 'tools/svhmp_100check_master.py',
+                'tools/dashboard/server.py']:
+        text = (repo / rel).read_text(encoding='utf-8')
+        assert 'C:\\tmp' not in text and 'C:/tmp' not in text, f'{rel} lai co hard-path C:\\tmp'

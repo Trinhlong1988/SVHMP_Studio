@@ -27,7 +27,7 @@ if not os.path.isdir(WD):
     import sys
     sys.exit(f"[SKIP] Legacy workdir khong ton tai: {WD} — set env SVHMP_WORKDIR tro toi thu muc chua spec_ep01_section_*.json de chay tool nay.")
 MEM = os.path.expanduser(r'~/.claude/projects/C--Users-Administrator/memory')
-PIPELINE = r'C:\tmp\svhmp_v13_render.py'
+PIPELINE = os.path.join(_TOOLS, 'svhmp_v13_render.py')  # fix 3/7: het hard-path tmp legacy
 PREFLIGHT = os.path.join(_TOOLS, 'svhmp_preflight_qa.py')
 
 SPECS = [f'spec_ep01_section_{n}.json' for n in
@@ -270,10 +270,10 @@ SCRIPTS = ['svhmp_v13_render.py', 'svhmp_preflight_qa.py', 'svhmp_dupe_audit.py'
            'svhmp_final_verify.py', 'svhmp_10round_comprehensive.py',
            'svhmp_audit_chi_tiet.py', 'svhmp_100check_master.py']
 for i, s in enumerate(SCRIPTS, 1):
-    exists = os.path.exists(rf'C:\tmp\{s}')
+    exists = os.path.exists(os.path.join(_TOOLS, s))
     check('SCRIPTS', i, f'{s} exists', 'PASS' if exists else 'FAIL')
 # 8-10
-bf_deleted = not os.path.exists(r'C:\tmp\boundary_fix.py')
+bf_deleted = not os.path.exists(os.path.join(_TOOLS, 'boundary_fix.py'))
 check('SCRIPTS', 8, 'boundary_fix.py brute force DELETED', 'PASS' if bf_deleted else 'FAIL')
 # Memory files
 mem_files = ['feedback_svhmp_script_8_hard_rules.md', 'feedback_svhmp_tts_production_principles.md',

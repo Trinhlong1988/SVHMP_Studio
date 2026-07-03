@@ -78,8 +78,11 @@ def acquire_lock():
         LOCK.parent.mkdir(exist_ok=True, parents=True)
         LOCK.write_text(str(os.getpid()), encoding="utf-8")
         return True, None
-    except Exception:
-        return True, None
+    except Exception as e:
+        # FAIL-CLOSED (audit 3/7): loi doc/ghi lock KHONG duoc coi la chiem duoc
+        # (fail-open cu cho 2 coordinator chay chong -> vi pham non-overlap).
+        print(f"[pipeline] lock IO error ({e}) — fail-closed. Xoa {LOCK} neu chac khong co phien khac.")
+        return False, "lock-io-error"
 
 
 def release_lock():

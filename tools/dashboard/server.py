@@ -380,8 +380,8 @@ class DashHandler(SimpleHTTPRequestHandler):
                     'next_step_manual': (
                         f'Final backed up. Run pipeline manually:\n'
                         f'  cd "D:\\DỰ ÁN AI\\GIỌNG ĐỌC\\DỰ ÁN TRUYỆN MA\\SVHMP_Studio"\n'
-                        f'  python C:\\tmp\\svhmp_100check_master.py --ep {ep_num}   # MUST PASS ≥95 first\n'
-                        f'  python C:\\tmp\\svhmp_v13_render.py --ep {ep_num}        # if 100-check pass'
+                        f'  python tools\\svhmp_100check_master.py --ep {ep_num}   # MUST PASS ≥95 first\n'
+                        f'  python tools\\svhmp_v13_render.py --ep {ep_num}        # if 100-check pass'
                     ),
                     'reason_not_auto': '32 hiến pháp hardlock + 100-check ≥95 PASS gate (Rule 31) — KHÔNG bypass',
                 })
