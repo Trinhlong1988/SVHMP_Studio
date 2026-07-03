@@ -1,0 +1,33 @@
+# BP1 CORE ARCHITECTURE — layer contracts (4 nhan layer_groups DA LOCK trong BP0 v2.0)
+# CAM scheme layer moi (TASK_BP1_CORE hard rule 6): layer model = SO 1-12 + 4 nhan nay.
+# Luat that cua dependency = "chi depend layer-SO thap hon strictly" (BP0, checker cuong che);
+# contract nay them rang buoc THO o cap NHOM: moi dep phai thoa CA HAI (so + nhom).
+# reads_from (reader grant) KHONG bi rang buoc boi bang nay (duoc nguoc tang co kiem soat).
+# Enforcer: tools/bp1_architecture_check.py.
+validator_version: 1.0.0
+source_constitution_version: 2.0.0
+layers:
+  - layer_id: narrative
+    purpose: "Canon + cau truc truyen (L1-L5: 8 canon, character, object, dialogue, event, story_planner, quest, decision_engine) — su that va ke hoach, chua sinh text."
+    allowed_dependencies: [narrative]
+    forbidden_dependencies: [runtime, presentation, business]
+    allowed_outputs: [canon_data, profile_data, plan_data, budget_sheet]
+    forbidden_outputs: [episode_text, audio, video, publish_artifact]
+  - layer_id: runtime
+    purpose: "Sinh + cham + dieu phoi render (generator L6, qa_runtime L7, production L10) — episode.md, verdict, golden output R196."
+    allowed_dependencies: [narrative, runtime, presentation]
+    forbidden_dependencies: [business]
+    allowed_outputs: [episode_text, qa_verdict, render_master]
+    forbidden_outputs: [canon_data, publish_artifact]
+  - layer_id: presentation
+    purpose: "The hien am-hinh (tts L8, audio L9, video L11) — giong doc, mix, video tu text/audio da PASS."
+    allowed_dependencies: [narrative, runtime, presentation]
+    forbidden_dependencies: [business]
+    allowed_outputs: [voice_track, audio_mix, video_master]
+    forbidden_outputs: [canon_data, episode_text, publish_artifact]
+  - layer_id: business
+    purpose: "Phan phoi + do luong (publisher L12, analytics L12) — dang bai (Mr.Long ky), KPI, feedback ve story_planner QUA Mr.Long."
+    allowed_dependencies: [narrative, runtime, presentation]
+    forbidden_dependencies: [business]
+    allowed_outputs: [publish_artifact, analytics_report]
+    forbidden_outputs: [canon_data, episode_text, audio, video]

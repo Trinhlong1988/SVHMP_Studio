@@ -141,6 +141,13 @@ domains:
       - governance/blueprint/04_blueprint_audit_gate.md
       - governance/blueprint/blueprint_domains.yaml   # source-of-truth contract 14 domain (machine-checkable)
     blueprint_check: tools/blueprint_constitution_check.py   # BLUEPRINT: enforcer C1-C8 (14 domain / 12 field / dep direction / planned honesty)
+    bp1_core:
+      - governance/blueprint/bp1/00_system_blueprint.md
+      - governance/blueprint/bp1/dependency_graph.yaml      # SINH MAY tu BP0 — 23 domain, layer so 1-12 + 4 nhan
+      - governance/blueprint/bp1/interface_contracts.yaml   # SINH MAY — 92 contract, PLANNED HONESTY 4 exists/88 planned
+      - governance/blueprint/bp1/layer_contracts.yaml
+      - reports/BP1_CORE_ARCHITECTURE_REPORT.md
+    bp1_check: tools/bp1_architecture_check.py   # BP1: 11 check + equality BP0 + DUP-KEY loader
     tests:
       - tests/test_governance_enforce_r209.py
       - tests/test_artifact_contract_r212.py
@@ -156,6 +163,7 @@ domains:
       - tests/test_preflight_repo_path.py   # PACK5 BUG P0: khoa preflight path trong repo (cam hard-path C:\tmp + python tran)
       - tests/test_pack5_docs.py   # PACK5: quality 11-element doc completeness + enforcer-exists
       - tests/test_blueprint_constitution.py   # BLUEPRINT: 11 negative case (domain/field/dep/supernatural/memory/self-lock/planned-honesty) + doc bar
+      - tests/test_bp1_architecture.py   # BP1: mutation battery M1-M10 + drift/layer-scheme/iface-completeness
     promotion_status: locked   # GOVERNANCE v1.0 (Mr.Long signed 2/7): DU 5 pack locked+tagged, freeze_gate 5/5 moi pack, cross-pack audit nhat quan; tag governance-v1.0
     enterprise_pack_progress:
       pack1_constitution: locked   # FROZEN v1.0 (Mr.Long authorized 2/7): 6 doc 11-element, promotion_guard HANH VI (pre-push+server-CI, battle-tested), test_pack1_docs; tag pack1-constitution-v1.0

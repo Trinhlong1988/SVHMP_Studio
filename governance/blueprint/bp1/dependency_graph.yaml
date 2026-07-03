@@ -1,0 +1,366 @@
+# BP1 CORE ARCHITECTURE — dependency graph (SINH MAY tu blueprint_domains.yaml v2.0 LOCKED)
+# Layer model = SO 1-12 + layer_groups 4 nhan COPY NGUYEN VEN tu BP0 (CAM scheme la — drift = FAIL).
+# reads_from = reader grant (duoc nguoc tang, vd analytics->story_planner feedback qua Mr.Long);
+# depends_on = build coupling CHI xuoi tang. writes_to loai bible/*+prompts/* (Mr.Long territory).
+# Enforcer: tools/bp1_architecture_check.py (equality voi BP0 moi lan chay — sua tay lech la do).
+validator_version: 1.0.0
+source_constitution_version: 2.0.0
+generated_at: '2026-07-03'
+layers:
+  world: 1
+  timeline: 1
+  location: 1
+  weather: 1
+  culture: 1
+  belief: 1
+  ritual: 1
+  supernatural: 1
+  character: 2
+  object: 2
+  dialogue: 3
+  event: 3
+  story_planner: 4
+  quest: 4
+  decision_engine: 5
+  generator: 6
+  qa_runtime: 7
+  tts: 8
+  audio: 9
+  production: 10
+  video: 11
+  publisher: 12
+  analytics: 12
+layer_groups:
+  narrative:
+  - world
+  - timeline
+  - location
+  - weather
+  - culture
+  - belief
+  - ritual
+  - supernatural
+  - character
+  - object
+  - dialogue
+  - event
+  - story_planner
+  - quest
+  - decision_engine
+  runtime:
+  - generator
+  - qa_runtime
+  - production
+  presentation:
+  - tts
+  - audio
+  - video
+  business:
+  - publisher
+  - analytics
+domains:
+- domain_id: world
+  layer: 1
+  depends_on: []
+  reads_from: []
+  writes_to: []
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.world
+- domain_id: timeline
+  layer: 1
+  depends_on: []
+  reads_from: []
+  writes_to: []
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.timeline
+- domain_id: location
+  layer: 1
+  depends_on: []
+  reads_from:
+  - world
+  writes_to: []
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.location
+- domain_id: weather
+  layer: 1
+  depends_on: []
+  reads_from:
+  - world
+  writes_to: []
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.weather
+- domain_id: culture
+  layer: 1
+  depends_on: []
+  reads_from:
+  - world
+  writes_to: []
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.culture
+- domain_id: belief
+  layer: 1
+  depends_on: []
+  reads_from:
+  - culture
+  writes_to: []
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.belief
+- domain_id: ritual
+  layer: 1
+  depends_on: []
+  reads_from:
+  - culture
+  - belief
+  writes_to: []
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.ritual
+- domain_id: supernatural
+  layer: 1
+  depends_on: []
+  reads_from:
+  - belief
+  writes_to: []
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.supernatural
+- domain_id: character
+  layer: 2
+  depends_on:
+  - world
+  - supernatural
+  - culture
+  reads_from:
+  - world
+  - location
+  - culture
+  - belief
+  - ritual
+  - supernatural
+  - object
+  writes_to:
+  - runtime/passenger_roster_100.yaml
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.character
+- domain_id: object
+  layer: 2
+  depends_on:
+  - supernatural
+  reads_from:
+  - supernatural
+  writes_to: []
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.object
+- domain_id: dialogue
+  layer: 3
+  depends_on:
+  - character
+  - culture
+  reads_from:
+  - culture
+  - belief
+  - ritual
+  - character
+  writes_to: []
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.dialogue
+- domain_id: event
+  layer: 3
+  depends_on:
+  - character
+  - world
+  - timeline
+  - supernatural
+  - location
+  - weather
+  - object
+  reads_from:
+  - world
+  - timeline
+  - location
+  - weather
+  - culture
+  - belief
+  - ritual
+  - supernatural
+  - character
+  - object
+  writes_to:
+  - runtime/memory/event_ledger.yaml
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.event
+- domain_id: story_planner
+  layer: 4
+  depends_on:
+  - character
+  - event
+  - timeline
+  - world
+  - supernatural
+  reads_from:
+  - world
+  - timeline
+  - location
+  - weather
+  - culture
+  - supernatural
+  - character
+  - object
+  - event
+  - analytics
+  writes_to: []
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.story_planner
+- domain_id: quest
+  layer: 4
+  depends_on: []
+  reads_from: []
+  writes_to: []
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.quest
+- domain_id: decision_engine
+  layer: 5
+  depends_on:
+  - story_planner
+  - character
+  - event
+  reads_from:
+  - character
+  - dialogue
+  - event
+  - story_planner
+  writes_to: []
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.decision_engine
+- domain_id: generator
+  layer: 6
+  depends_on:
+  - story_planner
+  - decision_engine
+  - dialogue
+  - character
+  - event
+  - object
+  - world
+  - timeline
+  - supernatural
+  - location
+  - weather
+  - culture
+  - belief
+  - ritual
+  reads_from:
+  - world
+  - timeline
+  - location
+  - weather
+  - culture
+  - belief
+  - ritual
+  - supernatural
+  - character
+  - object
+  - dialogue
+  - event
+  - story_planner
+  - decision_engine
+  writes_to: []
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.generator
+- domain_id: qa_runtime
+  layer: 7
+  depends_on:
+  - character
+  - dialogue
+  - supernatural
+  - world
+  reads_from:
+  - world
+  - timeline
+  - location
+  - weather
+  - culture
+  - belief
+  - ritual
+  - supernatural
+  - character
+  - object
+  - dialogue
+  - event
+  - story_planner
+  - decision_engine
+  - generator
+  writes_to:
+  - runtime/qa_waivers.json
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.qa_runtime
+- domain_id: tts
+  layer: 8
+  depends_on:
+  - dialogue
+  - character
+  reads_from:
+  - character
+  - dialogue
+  writes_to: []
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.tts
+- domain_id: audio
+  layer: 9
+  depends_on:
+  - tts
+  reads_from:
+  - weather
+  - tts
+  writes_to: []
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.audio
+- domain_id: production
+  layer: 10
+  depends_on:
+  - generator
+  - qa_runtime
+  - tts
+  - audio
+  reads_from:
+  - generator
+  - qa_runtime
+  - tts
+  - audio
+  writes_to: []
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.production
+- domain_id: video
+  layer: 11
+  depends_on:
+  - audio
+  - production
+  reads_from:
+  - location
+  - audio
+  - production
+  writes_to: []
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.video
+- domain_id: publisher
+  layer: 12
+  depends_on:
+  - production
+  - video
+  - audio
+  reads_from:
+  - audio
+  - production
+  - video
+  writes_to: []
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.publisher
+- domain_id: analytics
+  layer: 12
+  depends_on:
+  - production
+  reads_from:
+  - production
+  - publisher
+  writes_to:
+  - runtime/memory/analytics_state.yaml
+  lifecycle: candidate
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.analytics

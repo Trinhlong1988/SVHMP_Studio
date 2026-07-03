@@ -1008,5 +1008,33 @@ files:
     domain: blueprint_constitution
     status: active
     tier: 0
+  governance/blueprint/bp1/00_system_blueprint.md:
+    domain: bp1_core
+    status: active
+    tier: 0
+  governance/blueprint/bp1/dependency_graph.yaml:
+    domain: bp1_core
+    status: active
+    tier: 0
+  governance/blueprint/bp1/interface_contracts.yaml:
+    domain: bp1_core
+    status: active
+    tier: 0
+  governance/blueprint/bp1/layer_contracts.yaml:
+    domain: bp1_core
+    status: active
+    tier: 0
+  reports/BP1_CORE_ARCHITECTURE_REPORT.md:
+    domain: bp1_core
+    status: active
+    tier: 0
+  tools/bp1_architecture_check.py:
+    domain: bp1_core
+    status: active
+    tier: 0
+  tests/test_bp1_architecture.py:
+    domain: bp1_core
+    status: active
+    tier: 0
 generated_by: tools/registry_triage.py
-total: 234
+total: 241

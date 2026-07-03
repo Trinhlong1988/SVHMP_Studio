@@ -1,0 +1,1740 @@
+# BP1 CORE ARCHITECTURE — interface contracts (SINH MAY: 1 contract / reader-edge + write-edge BP0)
+# PLANNED HONESTY: hau het interface CHUA co code wire -> status planned + 5 metadata (trung thuc);
+# exists CHI khi co bang chung code that (character->tts: v13_render L339 G2; character->qa_runtime:
+# preflight --strict-characters). Khai exists lao = FAIL (validator Test-Path source_artifact).
+# Enforcer: tools/bp1_architecture_check.py (completeness 2 chieu voi reader edges BP0).
+validator_version: 1.0.0
+source_constitution_version: 2.0.0
+contracts:
+- contract_id: read__world__location
+  provider_domain: world
+  consumer_domain: location
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.world
+  source_artifact: bible/02_lore_db.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_world.md
+  owner: world
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__world__weather
+  provider_domain: world
+  consumer_domain: weather
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.world
+  source_artifact: bible/02_lore_db.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_world.md
+  owner: world
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__world__culture
+  provider_domain: world
+  consumer_domain: culture
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.world
+  source_artifact: bible/02_lore_db.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_world.md
+  owner: world
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__world__character
+  provider_domain: world
+  consumer_domain: character
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.world
+  source_artifact: bible/02_lore_db.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_world.md
+  owner: world
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__world__event
+  provider_domain: world
+  consumer_domain: event
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.world
+  source_artifact: bible/02_lore_db.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_world.md
+  owner: world
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__world__story_planner
+  provider_domain: world
+  consumer_domain: story_planner
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.world
+  source_artifact: bible/02_lore_db.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_world.md
+  owner: world
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__world__generator
+  provider_domain: world
+  consumer_domain: generator
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.world
+  source_artifact: bible/02_lore_db.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_world.md
+  owner: world
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__world__qa_runtime
+  provider_domain: world
+  consumer_domain: qa_runtime
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.world
+  source_artifact: bible/02_lore_db.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_world.md
+  owner: world
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__timeline__event
+  provider_domain: timeline
+  consumer_domain: event
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.timeline
+  source_artifact: bible/01_narrative_structure.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_timeline.md
+  owner: timeline
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__timeline__story_planner
+  provider_domain: timeline
+  consumer_domain: story_planner
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.timeline
+  source_artifact: bible/01_narrative_structure.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_timeline.md
+  owner: timeline
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__timeline__generator
+  provider_domain: timeline
+  consumer_domain: generator
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.timeline
+  source_artifact: bible/01_narrative_structure.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_timeline.md
+  owner: timeline
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__timeline__qa_runtime
+  provider_domain: timeline
+  consumer_domain: qa_runtime
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.timeline
+  source_artifact: bible/01_narrative_structure.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_timeline.md
+  owner: timeline
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__location__event
+  provider_domain: location
+  consumer_domain: event
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.location
+  source_artifact: bible/13_setting_library.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_location.md
+  owner: location
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__location__character
+  provider_domain: location
+  consumer_domain: character
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.location
+  source_artifact: bible/13_setting_library.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_location.md
+  owner: location
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__location__story_planner
+  provider_domain: location
+  consumer_domain: story_planner
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.location
+  source_artifact: bible/13_setting_library.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_location.md
+  owner: location
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__location__generator
+  provider_domain: location
+  consumer_domain: generator
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.location
+  source_artifact: bible/13_setting_library.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_location.md
+  owner: location
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__location__qa_runtime
+  provider_domain: location
+  consumer_domain: qa_runtime
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.location
+  source_artifact: bible/13_setting_library.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_location.md
+  owner: location
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__location__video
+  provider_domain: location
+  consumer_domain: video
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.location
+  source_artifact: bible/13_setting_library.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_location.md
+  owner: location
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__weather__event
+  provider_domain: weather
+  consumer_domain: event
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.weather
+  source_artifact: bible/41_weather_bible.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_weather.md
+  owner: weather
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__weather__story_planner
+  provider_domain: weather
+  consumer_domain: story_planner
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.weather
+  source_artifact: bible/41_weather_bible.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_weather.md
+  owner: weather
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__weather__generator
+  provider_domain: weather
+  consumer_domain: generator
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.weather
+  source_artifact: bible/41_weather_bible.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_weather.md
+  owner: weather
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__weather__qa_runtime
+  provider_domain: weather
+  consumer_domain: qa_runtime
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.weather
+  source_artifact: bible/41_weather_bible.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_weather.md
+  owner: weather
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__weather__audio
+  provider_domain: weather
+  consumer_domain: audio
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.weather
+  source_artifact: bible/41_weather_bible.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_weather.md
+  owner: weather
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__culture__belief
+  provider_domain: culture
+  consumer_domain: belief
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.culture
+  source_artifact: bible/38_culture_bible.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_culture.md
+  owner: culture
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__culture__ritual
+  provider_domain: culture
+  consumer_domain: ritual
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.culture
+  source_artifact: bible/38_culture_bible.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_culture.md
+  owner: culture
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__culture__character
+  provider_domain: culture
+  consumer_domain: character
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.culture
+  source_artifact: bible/38_culture_bible.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_culture.md
+  owner: culture
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__culture__dialogue
+  provider_domain: culture
+  consumer_domain: dialogue
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.culture
+  source_artifact: bible/38_culture_bible.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_culture.md
+  owner: culture
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__culture__event
+  provider_domain: culture
+  consumer_domain: event
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.culture
+  source_artifact: bible/38_culture_bible.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_culture.md
+  owner: culture
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__culture__story_planner
+  provider_domain: culture
+  consumer_domain: story_planner
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.culture
+  source_artifact: bible/38_culture_bible.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_culture.md
+  owner: culture
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__culture__generator
+  provider_domain: culture
+  consumer_domain: generator
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.culture
+  source_artifact: bible/38_culture_bible.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_culture.md
+  owner: culture
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__culture__qa_runtime
+  provider_domain: culture
+  consumer_domain: qa_runtime
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.culture
+  source_artifact: bible/38_culture_bible.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_culture.md
+  owner: culture
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__belief__ritual
+  provider_domain: belief
+  consumer_domain: ritual
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.belief
+  source_artifact: bible/39_belief_bible.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_belief.md
+  owner: belief
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__belief__supernatural
+  provider_domain: belief
+  consumer_domain: supernatural
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.belief
+  source_artifact: bible/39_belief_bible.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_belief.md
+  owner: belief
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__belief__character
+  provider_domain: belief
+  consumer_domain: character
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.belief
+  source_artifact: bible/39_belief_bible.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_belief.md
+  owner: belief
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__belief__dialogue
+  provider_domain: belief
+  consumer_domain: dialogue
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.belief
+  source_artifact: bible/39_belief_bible.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_belief.md
+  owner: belief
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__belief__event
+  provider_domain: belief
+  consumer_domain: event
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.belief
+  source_artifact: bible/39_belief_bible.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_belief.md
+  owner: belief
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__belief__generator
+  provider_domain: belief
+  consumer_domain: generator
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.belief
+  source_artifact: bible/39_belief_bible.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_belief.md
+  owner: belief
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__belief__qa_runtime
+  provider_domain: belief
+  consumer_domain: qa_runtime
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.belief
+  source_artifact: bible/39_belief_bible.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_belief.md
+  owner: belief
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__ritual__character
+  provider_domain: ritual
+  consumer_domain: character
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.ritual
+  source_artifact: bible/40_ritual_bible.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_ritual.md
+  owner: ritual
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__ritual__dialogue
+  provider_domain: ritual
+  consumer_domain: dialogue
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.ritual
+  source_artifact: bible/40_ritual_bible.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_ritual.md
+  owner: ritual
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__ritual__event
+  provider_domain: ritual
+  consumer_domain: event
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.ritual
+  source_artifact: bible/40_ritual_bible.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_ritual.md
+  owner: ritual
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__ritual__generator
+  provider_domain: ritual
+  consumer_domain: generator
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.ritual
+  source_artifact: bible/40_ritual_bible.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_ritual.md
+  owner: ritual
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__ritual__qa_runtime
+  provider_domain: ritual
+  consumer_domain: qa_runtime
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.ritual
+  source_artifact: bible/40_ritual_bible.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_ritual.md
+  owner: ritual
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__supernatural__character
+  provider_domain: supernatural
+  consumer_domain: character
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.supernatural
+  source_artifact: bible/11_regret_catalog.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_supernatural.md
+  owner: supernatural
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__supernatural__object
+  provider_domain: supernatural
+  consumer_domain: object
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.supernatural
+  source_artifact: bible/11_regret_catalog.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_supernatural.md
+  owner: supernatural
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__supernatural__event
+  provider_domain: supernatural
+  consumer_domain: event
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.supernatural
+  source_artifact: bible/11_regret_catalog.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_supernatural.md
+  owner: supernatural
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__supernatural__story_planner
+  provider_domain: supernatural
+  consumer_domain: story_planner
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.supernatural
+  source_artifact: bible/11_regret_catalog.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_supernatural.md
+  owner: supernatural
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__supernatural__generator
+  provider_domain: supernatural
+  consumer_domain: generator
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.supernatural
+  source_artifact: bible/11_regret_catalog.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_supernatural.md
+  owner: supernatural
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__supernatural__qa_runtime
+  provider_domain: supernatural
+  consumer_domain: qa_runtime
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.supernatural
+  source_artifact: bible/11_regret_catalog.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_supernatural.md
+  owner: supernatural
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__character__dialogue
+  provider_domain: character
+  consumer_domain: dialogue
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.character
+  source_artifact: runtime/passenger_roster_100.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_character.md
+  owner: character
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__character__event
+  provider_domain: character
+  consumer_domain: event
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.character
+  source_artifact: runtime/passenger_roster_100.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_character.md
+  owner: character
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__character__story_planner
+  provider_domain: character
+  consumer_domain: story_planner
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.character
+  source_artifact: runtime/passenger_roster_100.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_character.md
+  owner: character
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__character__decision_engine
+  provider_domain: character
+  consumer_domain: decision_engine
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.character
+  source_artifact: runtime/passenger_roster_100.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_character.md
+  owner: character
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__character__generator
+  provider_domain: character
+  consumer_domain: generator
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.character
+  source_artifact: runtime/passenger_roster_100.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_character.md
+  owner: character
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__character__qa_runtime
+  provider_domain: character
+  consumer_domain: qa_runtime
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.character
+  source_artifact: runtime/passenger_roster_100.yaml
+  status: exists
+- contract_id: read__character__tts
+  provider_domain: character
+  consumer_domain: tts
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.character
+  source_artifact: runtime/passenger_roster_100.yaml
+  status: exists
+- contract_id: read__object__character
+  provider_domain: object
+  consumer_domain: character
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.object
+  source_artifact: bible/12_object_library.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_object.md
+  owner: object
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__object__event
+  provider_domain: object
+  consumer_domain: event
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.object
+  source_artifact: bible/12_object_library.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_object.md
+  owner: object
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__object__story_planner
+  provider_domain: object
+  consumer_domain: story_planner
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.object
+  source_artifact: bible/12_object_library.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_object.md
+  owner: object
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__object__generator
+  provider_domain: object
+  consumer_domain: generator
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.object
+  source_artifact: bible/12_object_library.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_object.md
+  owner: object
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__object__qa_runtime
+  provider_domain: object
+  consumer_domain: qa_runtime
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.object
+  source_artifact: bible/12_object_library.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_object.md
+  owner: object
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__dialogue__decision_engine
+  provider_domain: dialogue
+  consumer_domain: decision_engine
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.dialogue
+  source_artifact: bible/22_anti_slop_vi.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_dialogue.md
+  owner: dialogue
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__dialogue__generator
+  provider_domain: dialogue
+  consumer_domain: generator
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.dialogue
+  source_artifact: bible/22_anti_slop_vi.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_dialogue.md
+  owner: dialogue
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__dialogue__qa_runtime
+  provider_domain: dialogue
+  consumer_domain: qa_runtime
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.dialogue
+  source_artifact: bible/22_anti_slop_vi.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_dialogue.md
+  owner: dialogue
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__dialogue__tts
+  provider_domain: dialogue
+  consumer_domain: tts
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.dialogue
+  source_artifact: bible/22_anti_slop_vi.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_dialogue.md
+  owner: dialogue
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__event__story_planner
+  provider_domain: event
+  consumer_domain: story_planner
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.event
+  source_artifact: runtime/memory/event_ledger.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_event.md
+  owner: event
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__event__decision_engine
+  provider_domain: event
+  consumer_domain: decision_engine
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.event
+  source_artifact: runtime/memory/event_ledger.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_event.md
+  owner: event
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__event__generator
+  provider_domain: event
+  consumer_domain: generator
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.event
+  source_artifact: runtime/memory/event_ledger.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_event.md
+  owner: event
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__event__qa_runtime
+  provider_domain: event
+  consumer_domain: qa_runtime
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.event
+  source_artifact: runtime/memory/event_ledger.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_event.md
+  owner: event
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M1_canon_managers
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__story_planner__decision_engine
+  provider_domain: story_planner
+  consumer_domain: decision_engine
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.story_planner
+  source_artifact: bible/18_driver_reveal_budget.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_story_planner.md
+  owner: story_planner
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M2_planner_generator
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__story_planner__generator
+  provider_domain: story_planner
+  consumer_domain: generator
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.story_planner
+  source_artifact: bible/18_driver_reveal_budget.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_story_planner.md
+  owner: story_planner
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M2_planner_generator
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__story_planner__qa_runtime
+  provider_domain: story_planner
+  consumer_domain: qa_runtime
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.story_planner
+  source_artifact: bible/18_driver_reveal_budget.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_story_planner.md
+  owner: story_planner
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M2_planner_generator
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__decision_engine__generator
+  provider_domain: decision_engine
+  consumer_domain: generator
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.decision_engine
+  source_artifact: bible/42_decision_policy.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_decision_engine.md
+  owner: decision_engine
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M2_planner_generator
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__decision_engine__qa_runtime
+  provider_domain: decision_engine
+  consumer_domain: qa_runtime
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.decision_engine
+  source_artifact: bible/42_decision_policy.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_decision_engine.md
+  owner: decision_engine
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M2_planner_generator
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__generator__qa_runtime
+  provider_domain: generator
+  consumer_domain: qa_runtime
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.generator
+  source_artifact: prompts/ep_scaffold_template.md
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_generator.md
+  owner: generator
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M2_planner_generator
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__generator__production
+  provider_domain: generator
+  consumer_domain: production
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.generator
+  source_artifact: prompts/ep_scaffold_template.md
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_generator.md
+  owner: generator
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M2_planner_generator
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__qa_runtime__production
+  provider_domain: qa_runtime
+  consumer_domain: production
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.qa_runtime
+  source_artifact: governance/pack5/19_qa_pipeline.md
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_qa_runtime.md
+  owner: qa_runtime
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M3_qa_render_schemas
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__tts__audio
+  provider_domain: tts
+  consumer_domain: audio
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.tts
+  source_artifact: bible/15_voice_bible.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_tts.md
+  owner: tts
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M3_qa_render_schemas
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__tts__production
+  provider_domain: tts
+  consumer_domain: production
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.tts
+  source_artifact: bible/15_voice_bible.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_tts.md
+  owner: tts
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M3_qa_render_schemas
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__audio__production
+  provider_domain: audio
+  consumer_domain: production
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.audio
+  source_artifact: bible/31_golden_samples.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_audio.md
+  owner: audio
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M3_qa_render_schemas
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__audio__video
+  provider_domain: audio
+  consumer_domain: video
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.audio
+  source_artifact: bible/31_golden_samples.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_audio.md
+  owner: audio
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M3_qa_render_schemas
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__audio__publisher
+  provider_domain: audio
+  consumer_domain: publisher
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.audio
+  source_artifact: bible/31_golden_samples.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_audio.md
+  owner: audio
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M3_qa_render_schemas
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__production__video
+  provider_domain: production
+  consumer_domain: video
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.production
+  source_artifact: governance/pack5/19_qa_pipeline.md
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_production.md
+  owner: production
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M3_qa_render_schemas
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__production__publisher
+  provider_domain: production
+  consumer_domain: publisher
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.production
+  source_artifact: governance/pack5/19_qa_pipeline.md
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_production.md
+  owner: production
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M3_qa_render_schemas
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__production__analytics
+  provider_domain: production
+  consumer_domain: analytics
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.production
+  source_artifact: governance/pack5/19_qa_pipeline.md
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_production.md
+  owner: production
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M3_qa_render_schemas
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__video__publisher
+  provider_domain: video
+  consumer_domain: publisher
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.video
+  source_artifact: governance/blueprint/schemas/video_spec_schema.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_video.md
+  owner: video
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M4_video_publisher
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__publisher__analytics
+  provider_domain: publisher
+  consumer_domain: analytics
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.publisher
+  source_artifact: bible/16_series_kpi.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_publisher.md
+  owner: publisher
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M4_video_publisher
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__analytics__story_planner
+  provider_domain: analytics
+  consumer_domain: story_planner
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: candidate
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.analytics
+  source_artifact: runtime/memory/analytics_state.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_analytics.md
+  owner: analytics
+  reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
+  target_milestone: M4_video_publisher
+  blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: write__character__self
+  provider_domain: character
+  consumer_domain: character
+  interface_type: data_write
+  allowed_operations:
+  - append
+  - update
+  forbidden_operations:
+  - delete_history
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.character
+  source_artifact: runtime/passenger_roster_100.yaml
+  status: exists
+- contract_id: write__event__self
+  provider_domain: event
+  consumer_domain: event
+  interface_type: data_write
+  allowed_operations:
+  - append
+  - update
+  forbidden_operations:
+  - delete_history
+  - schema_change
+  version: 1.0.0
+  lifecycle: draft
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.event
+  source_artifact: runtime/memory/event_ledger.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_event.md
+  owner: event
+  reason_not_exists_yet: Store chua ton tai (planned trong BP0); write-contract spec o BP2.
+  target_milestone: M1_canon_managers
+  blocking_dependency: store planned trong BP0 (xem blueprint_domains)
+- contract_id: write__qa_runtime__self
+  provider_domain: qa_runtime
+  consumer_domain: qa_runtime
+  interface_type: data_write
+  allowed_operations:
+  - append
+  - update
+  forbidden_operations:
+  - delete_history
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.qa_runtime
+  source_artifact: runtime/qa_waivers.json
+  status: exists
+- contract_id: write__analytics__self
+  provider_domain: analytics
+  consumer_domain: analytics
+  interface_type: data_write
+  allowed_operations:
+  - append
+  - update
+  forbidden_operations:
+  - delete_history
+  - schema_change
+  version: 1.0.0
+  lifecycle: candidate
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.analytics
+  source_artifact: runtime/memory/analytics_state.yaml
+  status: planned
+  planned_path: governance/blueprint/bp2/interfaces_analytics.md
+  owner: analytics
+  reason_not_exists_yet: Store chua ton tai (planned trong BP0); write-contract spec o BP2.
+  target_milestone: M4_video_publisher
+  blocking_dependency: store planned trong BP0 (xem blueprint_domains)
