@@ -30,11 +30,14 @@
 | gỡ stage blueprint khỏi ci_gate CHECKS | test unwire đỏ ✅ (assert tuple in ci_gate.CHECKS) |
 | dup-key ở file blueprint tầng KHÁC (bp4 event_bus) | suite đỏ ✅ (loader chung phủ mọi tầng) |
 | copy-paste loader bản 2 vào tools/ | test single-impl đỏ ✅ (regex quét mọi *.py) |
+| copy loader kèm UTF-8 BOM đầu file (BOM evasion — audit BP5 Minor) | bị bắt ✅ (guard đọc `utf-8-sig`; neg-test `test_mut_loader_copy_with_bom_detected`) |
 
 ## Sự cố bắt được TRONG KHI BUILD (bằng chứng suite có giá trị)
 Chạy suite lần đầu ở clone chính: `[FAIL] bp2 — 7 vi phạm PLANNED-DRIFT` do `governance/blueprint/schemas/{character_ext_schema,naming_extension_rules}.yaml` (UNTRACKED, tạo 3/7 20:13 bởi phiên G2 song song) chạm `planned_path` của 7 facet character trong domain_specs. Ref committed origin/main vẫn sạch (suite 5/5 trong worktree). **Heads-up G2/Mr.Long:** sau khi BP5 wire, G2 commit các file này mà không flip `planned→exists` trong `bp2/domain_specs.yaml` (pack LOCKED — cần Mr.Long ký) sẽ bị ci_gate chặn. Đây là PLANNED HONESTY vận hành đúng thiết kế, không phải false-alarm.
 
 ## Fix trong build
+Audit BP5 (3/7 tối, Minor): guard single-impl đọc `utf-8` thường → file copy loader có BOM đầu (vẫn là Python hợp lệ) làm `^def` re.M trượt match dòng 1 = evasion. Fix: helper `_scan_loader_impls` đọc `utf-8-sig` + neg-test BOM-copy tự chứng minh cắn.
+
 `shlex.split` posix mode nuốt backslash Windows → pass-through path nát → checker con fail SAI LOẠI LỖI (file-not-found thay vì DUP-KEY). Bắt được nhờ luật "negative test phải assert đúng loại lỗi". Fix: `posix=False` + strip quote.
 
 ## Drift check

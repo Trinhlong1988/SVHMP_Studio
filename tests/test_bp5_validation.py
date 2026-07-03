@@ -37,15 +37,23 @@ def test_suite_covers_all_five_layers():
         assert (REPO / rel).exists(), f'checker tang thieu tren disk: {rel}'
 
 
+def _scan_loader_impls(dir_path):
+    """Quet cac file *.py co IMPLEMENTATION loader dup-key (def/class top-level).
+    Doc utf-8-sig: BOM dau file (van la Python hop le!) tung lam '^def' re.M
+    truot match dong 1 -> copy-paste loader kem BOM lot guard (audit BP5 Minor)."""
+    hits = []
+    for py in sorted(Path(dir_path).glob('*.py')):
+        src = py.read_text(encoding='utf-8-sig')
+        if re.search(r'^def load_yaml_no_dup\b', src, re.M) or \
+           re.search(r'^class _DupKeySafeLoader\b', src, re.M):
+            hits.append(py.name)
+    return hits
+
+
 def test_dup_key_loader_single_impl():
     """DUP-KEY loader dung chung: DUNG 1 implementation (constitution_check),
     cac checker con IMPORT — khong copy-paste 5 ban (rang buoc TASK_BP5)."""
-    defs = []
-    for py in (REPO / 'tools').glob('*.py'):
-        src = py.read_text(encoding='utf-8')
-        if re.search(r'^def load_yaml_no_dup\b', src, re.M) or \
-           re.search(r'^class _DupKeySafeLoader\b', src, re.M):
-            defs.append(py.name)
+    defs = _scan_loader_impls(REPO / 'tools')
     assert defs == ['blueprint_constitution_check.py'], \
         f'loader phai 1 implementation duy nhat, thay: {defs}'
     for name in ['bp1_architecture_check.py', 'bp2_domain_check.py',
@@ -53,6 +61,22 @@ def test_dup_key_loader_single_impl():
         src = (REPO / 'tools' / name).read_text(encoding='utf-8')
         assert 'from blueprint_constitution_check import load_yaml_no_dup' in src, \
             f'{name} khong import loader dung chung'
+
+
+def test_mut_loader_copy_with_bom_detected(tmp_path):
+    """Neg-test BOM evasion (audit BP5): copy loader vao file MOI co UTF-8 BOM
+    dau file — guard PHAI van bat (utf-8-sig strip BOM truoc khi match)."""
+    bom_copy = tmp_path / 'sneaky_loader.py'
+    bom_copy.write_bytes(b'\xef\xbb\xbf' +
+                         'def load_yaml_no_dup(text):\n    return None\n'
+                         .encode('utf-8'))
+    # tu chung minh don danh dung cho: khong co BOM cung phai bat
+    plain_copy = tmp_path / 'plain_loader.py'
+    plain_copy.write_text('class _DupKeySafeLoader:\n    pass\n', encoding='utf-8')
+    hits = _scan_loader_impls(tmp_path)
+    assert 'sneaky_loader.py' in hits, \
+        f'BOM evasion khong bi bat — guard thung: {hits}'
+    assert 'plain_loader.py' in hits, hits
 
 
 def test_real_suite_passes():
