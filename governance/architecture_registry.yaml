@@ -1,4 +1,4 @@
-﻿# ============================================================
+# ============================================================
 # TIER 0 GOVERNANCE — ARCHITECTURE REGISTRY (source of truth)
 # Boss 2/7 (phản biện.txt): chống loạn khi Claude chạy lâu — map file→domain,
 # source-of-truth, quyền sửa, promotion, data-contract. Kiểm bằng tools/architecture_registry_check.py.
@@ -197,7 +197,7 @@ domains:
       bp1_core: locked   # FROZEN v1.0 (Mr.Long authorized 3/7): 23 domain graph + 92 iface (4 exists/88 planned honesty) + layer contracts; audit 0 finding, mutation LECH-BP0/dup-key/phantom-src PASS; tag bp1-core-v1.0
       bp2_domain: locked   # FROZEN v1.0 (Mr.Long authorized 3/7): 13 domain / 70 facet (49 exists/21 planned), G2-core 10 + naming vung mien + invariants 13/13; audit 5 mutation PASS, exists 62/62; FACET LIST DONG; tag bp2-domain-v1.0
       bp3_ownership: locked   # FROZEN v1.0 (Mr.Long authorized 3/7): 70 facet 1-writer (0 vi pham luat vang), 52 dep 3-nguon khop, reveal permission/timing tach 3 chu; audit 5 mutation PASS (2-writer/facet-ma/leo-thang/dup-key/dep-lech); tag bp3-ownership-v1.0
-      bp4_runtime: candidate   # BP4 Runtime+Event — 9 hop flow + 8 event + 4 state machine + 6 memory scope; Builder khong lock
+      bp4_runtime: locked   # FROZEN v1.0 (Mr.Long authorized 3/7): 9 hop layer-tang, 8 event chain domain/facet-da-khai, 4 state machine 0-orphan, 6 memory scope khop BP3; audit 5 mutation PASS (hop-bia/trigger-ma/orphan/writer-leo-thang/dup-key); tag bp4-runtime-v1.0
     data_contract:
       input: "registry yaml + disk scan"
       output: "gap report"
