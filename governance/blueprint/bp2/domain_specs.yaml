@@ -1,0 +1,262 @@
+# BP2 DOMAIN ARCHITECTURE — domain specs (13 domain tang thap: canon 8 + character/object/dialogue/event + story_planner)
+# Enforcer: tools/bp2_domain_check.py (facet_id duy nhat toan cuc · SoT exists that — path+key verify · planned 5-metadata)
+# RECONCILE — CAM REBUILD: moi facet exists tro path+key THAT (doc code/yaml 3/7). Facet != domain (BPC_V2_FINAL_ADJUDICATION).
+# CAM bia facet khong phuc vu truyen ma audio.
+validator_version: 1.0.0
+source_constitution_version: 2.0.0
+domains:
+  world:
+    facets:
+      - {facet_id: world_facts_ledger, desc: "So cai fact bat bien cua the gioi (fact_001..073)", data_type: mapping,
+         sot: {status: exists, path: bible/02_lore_db.yaml, key: facts}}
+      - {facet_id: world_symbols, desc: "He bieu tuong xuyen suot (den do, ao mua, ghe 13...)", data_type: list,
+         sot: {status: exists, path: bible/02_lore_db.yaml, key: symbols}}
+      - {facet_id: spoiler_rule, desc: "Luat chong lo truoc reveal_order", data_type: mapping,
+         sot: {status: exists, path: bible/02_lore_db.yaml, key: spoiler_rule}}
+    entities: [fact, symbol]
+    invariants:
+      - {rule: "Fact da lock = bat bien; lore trai bible/02 = VIOLATION canon",
+         enforcer: {status: planned, planned_path: tools/world_consistency_validator.py, owner: world,
+                    reason_not_exists_yet: "Chua co world schema (BP0 M1)", target_milestone: M1_canon_managers,
+                    blocking_dependency: "world schema (M1)"}}
+  timeline:
+    facets:
+      - {facet_id: episode_order, desc: "Thu tu tap + moc su kien xuyen 100 tap", data_type: sequence,
+         sot: {status: planned, planned_path: governance/blueprint/schemas/timeline_schema.yaml, owner: timeline,
+               reason_not_exists_yet: "Truc thoi gian dang prose trong bible/01, chua field-hoa", target_milestone: M1_canon_managers,
+               blocking_dependency: "Mr.Long duyet don vi thoi gian canon"}}
+      - {facet_id: era_anchor, desc: "Moc thoi dai cua hoi uc/regret (thap nien 60-90...)", data_type: enum,
+         sot: {status: planned, planned_path: governance/blueprint/schemas/timeline_schema.yaml, owner: timeline,
+               reason_not_exists_yet: "Era hien suy tu object/regret tung tap, chua canon rieng", target_milestone: M1_canon_managers,
+               blocking_dependency: "timeline schema (M1)"}}
+    entities: [episode_slot, era]
+    invariants:
+      - {rule: "Su kien cross-episode phai khop thu tu timeline; mau thuan = VIOLATION consistency",
+         enforcer: {status: exists, path: tools/story_consistency_validator.py}}
+  location:
+    facets:
+      - {facet_id: setting_catalog, desc: "21+ setting_ instance dia diem (ben xe, nghia trang, chua...)", data_type: mapping,
+         sot: {status: exists, path: bible/13_setting_library.yaml, key: setting_library}}
+      - {facet_id: setting_selection_rules, desc: "Luat chon setting theo tap/mua", data_type: mapping,
+         sot: {status: exists, path: bible/13_setting_library.yaml, key: selection_rules}}
+      - {facet_id: setting_variety, desc: "Rang buoc da dang setting xuyen tap", data_type: mapping,
+         sot: {status: exists, path: bible/13_setting_library.yaml, key: variety_constraint}}
+      - {facet_id: seasonal_cluster, desc: "Cum setting theo mua (seasonal_cluster_rule)", data_type: mapping,
+         sot: {status: exists, path: bible/13_setting_library.yaml, key: seasonal_cluster_rule}}
+    entities: [setting]
+    invariants:
+      - {rule: "Moi setting_ episode dung phai co trong bible/13",
+         enforcer: {status: planned, planned_path: tools/location_validator.py, owner: location,
+                    reason_not_exists_yet: "Chua co location schema (BP0 M1)", target_milestone: M1_canon_managers,
+                    blocking_dependency: "location schema (M1)"}}
+  weather:
+    facets:
+      - {facet_id: weather_condition, desc: "Trang thai thoi tiet theo canh (mua dem/suong/gio)", data_type: enum,
+         sot: {status: planned, planned_path: bible/41_weather_bible.yaml, owner: weather,
+               reason_not_exists_yet: "Thoi tiet dang mo ta tu do trong text", target_milestone: M1_canon_managers,
+               blocking_dependency: "Mr.Long duyet taxonomy thoi tiet kinh di"}}
+      - {facet_id: atmospheric_audio_cue, desc: "Goi y am thanh nen theo thoi tiet (phuc vu audio-first)", data_type: mapping,
+         sot: {status: planned, planned_path: bible/41_weather_bible.yaml, owner: weather,
+               reason_not_exists_yet: "Phu thuoc taxonomy weather chua duyet", target_milestone: M1_canon_managers,
+               blocking_dependency: "weather taxonomy (M1)"}}
+    entities: [weather_state]
+    invariants:
+      - {rule: "Thoi tiet nhat quan trong 1 canh (mua roi tanh giua cau = VIOLATION continuity)",
+         enforcer: {status: planned, planned_path: tools/weather_validator.py, owner: weather,
+                    reason_not_exists_yet: "Chua co weather schema", target_milestone: M1_canon_managers,
+                    blocking_dependency: "weather schema (M1)"}}
+  culture:
+    facets:
+      - {facet_id: xung_ho_convention, desc: "Tap quan xung ho theo vung/tuoi/quan he", data_type: mapping,
+         sot: {status: planned, planned_path: bible/38_culture_bible.yaml, owner: culture,
+               reason_not_exists_yet: "Xung ho dang nam rai trong bible/22 anti-slop + episode text", target_milestone: M1_canon_managers,
+               blocking_dependency: "Mr.Long duyet taxonomy phong tuc"}}
+      - {facet_id: le_gio_custom, desc: "Phong tuc gio/le/dinh lang doi thuong", data_type: mapping,
+         sot: {status: planned, planned_path: bible/38_culture_bible.yaml, owner: culture,
+               reason_not_exists_yet: "Chua gom canon rieng", target_milestone: M1_canon_managers,
+               blocking_dependency: "bible/38 culture (M1)"}}
+      - {facet_id: kieng_ky_daily, desc: "Kieng ky doi thuong nguoi Viet (khong phai luat sieu nhien)", data_type: list,
+         sot: {status: planned, planned_path: bible/38_culture_bible.yaml, owner: culture,
+               reason_not_exists_yet: "Chua gom canon rieng", target_milestone: M1_canon_managers,
+               blocking_dependency: "bible/38 culture (M1)"}}
+    entities: [custom]
+    invariants:
+      - {rule: "Chi tiet phong tuc sai (gio cung sai le, xung ho trai vung) = VIOLATION culture",
+         enforcer: {status: planned, planned_path: tools/culture_validator.py, owner: culture,
+                    reason_not_exists_yet: "Chua co culture schema", target_milestone: M1_canon_managers,
+                    blocking_dependency: "culture schema (M1)"}}
+  belief:
+    facets:
+      - {facet_id: tin_nguong_he, desc: "He tin nguong nhan vat TIN (Phat/Dao Mau/Thanh Hoang)", data_type: enum,
+         sot: {status: planned, planned_path: bible/39_belief_bible.yaml, owner: belief,
+               reason_not_exists_yet: "Tin nguong mo ta ngau nhien theo tap", target_milestone: M1_canon_managers,
+               blocking_dependency: "Mr.Long duyet danh muc (nhay cam ton giao)"}}
+      - {facet_id: am_duong_quan_niem, desc: "Quan niem am duong/vong hon trong dan gian (co the SAI so voi supernatural)", data_type: mapping,
+         sot: {status: planned, planned_path: bible/39_belief_bible.yaml, owner: belief,
+               reason_not_exists_yet: "Chua canon hoa", target_milestone: M1_canon_managers,
+               blocking_dependency: "bible/39 belief (M1)"}}
+    entities: [belief_system]
+    invariants:
+      - {rule: "Nhan vat hanh xu trai belief da khai trong ho so = VIOLATION",
+         enforcer: {status: planned, planned_path: tools/belief_validator.py, owner: belief,
+                    reason_not_exists_yet: "Chua co belief schema", target_milestone: M1_canon_managers,
+                    blocking_dependency: "belief schema (M1)"}}
+  ritual:
+    facets:
+      - {facet_id: nghi_thuc_catalog, desc: "Catalog nghi thuc (cung/khan/dot vang/goi hon/tay ue)", data_type: mapping,
+         sot: {status: planned, planned_path: bible/40_ritual_bible.yaml, owner: ritual,
+               reason_not_exists_yet: "Nghi thuc viet tu do theo tap, chua co catalog buoc-chuan", target_milestone: M1_canon_managers,
+               blocking_dependency: "Mr.Long duyet catalog + muc chi tiet cho phep"}}
+      - {facet_id: ritual_steps, desc: "Chuoi buoc chuan tung nghi thuc (lam dung/sai co hau qua)", data_type: sequence,
+         sot: {status: planned, planned_path: bible/40_ritual_bible.yaml, owner: ritual,
+               reason_not_exists_yet: "Phu thuoc catalog chua duyet", target_milestone: M1_canon_managers,
+               blocking_dependency: "ritual catalog (M1)"}}
+    entities: [ritual]
+    invariants:
+      - {rule: "Nghi thuc trong tap phai theo catalog; nghi thuc bia = VIOLATION canon",
+         enforcer: {status: planned, planned_path: tools/ritual_validator.py, owner: ritual,
+                    reason_not_exists_yet: "Chua co ritual schema", target_milestone: M1_canon_managers,
+                    blocking_dependency: "ritual schema (M1)"}}
+  supernatural:
+    facets:
+      - {facet_id: regret_pillars, desc: "27 sub-archetype regret theo 5 tru (distribution 32/24/20/14/10)", data_type: mapping,
+         sot: {status: exists, path: bible/11_regret_catalog.yaml, key: pillars}}
+      - {facet_id: regret_variety_rules, desc: "Luat da dang regret xuyen tap (chong lap)", data_type: mapping,
+         sot: {status: exists, path: bible/11_regret_catalog.yaml, key: variety_rules}}
+      - {facet_id: bus_supernatural_rules, desc: "Ban chat sieu nhien chuyen xe/tai xe/ghe 13", data_type: mapping,
+         sot: {status: exists, path: bible/02_lore_db.yaml, key: world_rules}}
+      - {facet_id: permanent_reveal_locks, desc: "Khoa reveal vinh vien (destination/driver_nature/reveal_order)", data_type: mapping,
+         sot: {status: exists, path: bible/02_lore_db.yaml, key: permanent_locks}}
+      - {facet_id: ghost_manifest_style, desc: "Cach hon ma hien hinh (sensory hierarchy — am thanh truoc)", data_type: mapping,
+         sot: {status: exists, path: bible/01_narrative_structure.yaml, key: sensory_hierarchy_ghost_manifest}}
+      - {facet_id: ghost_negative_space, desc: "Ta hon ma bang khoang trong (negative space, blacklist pattern)", data_type: mapping,
+         sot: {status: exists, path: bible/01_narrative_structure.yaml, key: ghost_negative_space_description}}
+    entities: [regret_archetype, ghost_rule]
+    invariants:
+      - {rule: "Hon ma theo dung sub-archetype bible/11, KHONG pha regret lock (R210 reconcile)",
+         enforcer: {status: exists, path: tools/story_consistency_validator.py}}
+      - {rule: "Hien hinh tuan sensory hierarchy + negative space (bible/01)",
+         enforcer: {status: exists, path: tools/svhmp_preflight_qa.py}}
+  character:
+    facets:
+      - {facet_id: core_identity, desc: "id/ten/tuoi/gioi (Tier1 bat buoc)", data_type: mapping,
+         sot: {status: exists, path: bible/37_character_schema.yaml, key: tier_1_mandatory.core_id}}
+      - {facet_id: background, desc: "Que/giong vung/nghe nghiep", data_type: mapping,
+         sot: {status: exists, path: bible/37_character_schema.yaml, key: tier_1_mandatory.background}}
+      - {facet_id: psyche_regret, desc: "Noi dau/haunting_symbol/tam ly", data_type: mapping,
+         sot: {status: exists, path: bible/37_character_schema.yaml, key: tier_1_mandatory.psyche}}
+      - {facet_id: voice_profile, desc: "Ho so giong doc nhan vat (xung ho/tic/vung)", data_type: mapping,
+         sot: {status: exists, path: bible/37_character_schema.yaml, key: tier_1_mandatory.voice}}
+      - {facet_id: story_arc_personal, desc: "Vai tro trong truyen + arc ca nhan", data_type: mapping,
+         sot: {status: exists, path: bible/37_character_schema.yaml, key: tier_1_mandatory.story}}
+      - {facet_id: relationships, desc: "Relationship graph (R210 bat buoc)", data_type: graph,
+         sot: {status: exists, path: bible/37_character_schema.yaml, key: tier_1_mandatory.relationships}}
+      - {facet_id: character_memory, desc: "Ky uc nhan vat (critical group)", data_type: list,
+         sot: {status: exists, path: bible/37_character_schema.yaml, key: critical_groups.character_memory}}
+      - {facet_id: dialogue_dna, desc: "DNA thoai rieng tung nhan vat", data_type: list,
+         sot: {status: exists, path: bible/37_character_schema.yaml, key: critical_groups.dialogue_dna}}
+      - {facet_id: emotion_trigger, desc: "Diem kich hoat cam xuc (critical group)", data_type: list,
+         sot: {status: exists, path: bible/37_character_schema.yaml, key: critical_groups.emotion_trigger}}
+      - {facet_id: character_state, desc: "Trang thai song/chet/bien doi theo tap (modules_v2)", data_type: state,
+         sot: {status: exists, path: bible/37_character_schema.yaml, key: modules_v2.character_state}}
+      - {facet_id: balance_targets, desc: "Target can bang tuoi/vung/kieu chet xuyen 100 tap", data_type: mapping,
+         sot: {status: exists, path: bible/37_character_schema.yaml, key: balance_targets}}
+    entities: [passenger_100, recurring_char]
+    invariants:
+      - {rule: "1 passenger = dung 1 voice profile; thoai phai khop profile",
+         enforcer: {status: exists, path: tools/dialog_voice_validator.py}}
+      - {rule: "CAM doi field khoa cross-episode (id/ten/tuoi/gioi/que/nghe)",
+         enforcer: {status: exists, path: tools/story_consistency_validator.py}}
+      - {rule: "Completeness Tier1 truoc render (gate G2 WARN/STRICT)",
+         enforcer: {status: exists, path: tools/character_manager.py}}
+      - {rule: "Can bang age/region/death theo balance_targets (R210, 0 flag)",
+         enforcer: {status: exists, path: tools/character_balance_report.py}}
+      - {rule: "Ten theo bible/23 (5 luat + 15 ten cam Mr.Long)",
+         enforcer: {status: exists, path: tools/build_name_pool.py}}
+    entities_note: "100 passenger LOCK tai runtime/passenger_roster_100.yaml; recurring CHI CHAR_DRIVER + CHAR_NAM (bible/03 CAM tao moi)"
+  object:
+    facets:
+      - {facet_id: object_catalog, desc: "71+ OBJ_ vat pham neo hoi uc", data_type: mapping,
+         sot: {status: exists, path: bible/12_object_library.yaml, key: object_library}}
+      - {facet_id: object_selection_rules, desc: "Luat chon vat theo regret/tap", data_type: mapping,
+         sot: {status: exists, path: bible/12_object_library.yaml, key: selection_rules}}
+      - {facet_id: emotional_value_distribution, desc: "Phan bo gia tri cam xuc vat theo season", data_type: mapping,
+         sot: {status: exists, path: bible/12_object_library.yaml, key: emotional_value_distribution_per_season}}
+      - {facet_id: forbidden_objects, desc: "Vat cam dung", data_type: list,
+         sot: {status: exists, path: bible/12_object_library.yaml, key: forbidden_objects}}
+    entities: [obj]
+    invariants:
+      - {rule: "Moi OBJ_ episode dung phai co trong catalog; vat gan regret khop bible/11",
+         enforcer: {status: planned, planned_path: tools/object_validator.py, owner: object,
+                    reason_not_exists_yet: "Chua co object schema (BP0 M1)", target_milestone: M1_canon_managers,
+                    blocking_dependency: "object schema (M1)"}}
+  dialogue:
+    facets:
+      - {facet_id: voice_states, desc: "6 trang thai giong (NORMAL/SO/THI_THAM/HOANG/NGHEN/XUC_DONG)", data_type: enum,
+         sot: {status: exists, path: bible/15_voice_bible.yaml, key: states}}
+      - {facet_id: voice_state_transitions, desc: "Ma tran chuyen trang thai giong hop le", data_type: mapping,
+         sot: {status: exists, path: bible/15_voice_bible.yaml, key: state_transitions}}
+      - {facet_id: recurring_voice_profiles, desc: "Profile khoa NARRATOR/KHAI_PHONG/DRIVER/GIRL_GHE7", data_type: mapping,
+         sot: {status: exists, path: bible/15_voice_bible.yaml, key: profiles}}
+      - {facet_id: dynamic_prosody, desc: "Truong dong emotion_vector/intensity/pause/rate/breath", data_type: mapping,
+         sot: {status: exists, path: bible/15_voice_bible.yaml, key: dynamic_fields}}
+      - {facet_id: voice_artifact_taxonomy, desc: "Phan loai artifact giong (drift/pause/breath/onset/prosody)", data_type: mapping,
+         sot: {status: exists, path: bible/15_voice_bible.yaml, key: artifact_types}}
+      - {facet_id: signature_phrases, desc: "Cau chu ky Ngan-style", data_type: list,
+         sot: {status: exists, path: bible/06_lexical_style.yaml, key: signature_phrases}}
+      - {facet_id: diction_preferences, desc: "Uu tien tu vung + sentence openers + voice tics", data_type: mapping,
+         sot: {status: exists, path: bible/06_lexical_style.yaml, key: diction_preferences}}
+      - {facet_id: anti_slop_rules, desc: "32 luat anti-slop VN", data_type: list,
+         sot: {status: exists, path: bible/22_anti_slop_vi.yaml}}
+    entities: [utterance_rule, voice_state]
+    invariants:
+      - {rule: "Thoai khop voice profile nhan vat; sealed_invariants bible/15 bat kha xam pham",
+         enforcer: {status: exists, path: tools/dialog_voice_validator.py}}
+      - {rule: "Text qua FULL_TEXT_GATE (R86 broad + 11 rule) truoc render — R197",
+         enforcer: {status: exists, path: tools/svhmp_preflight_qa.py}}
+  event:
+    facets:
+      - {facet_id: death_type_taxonomy, desc: "9 kieu chet + target can bang (nam trong balance_targets)", data_type: list,
+         sot: {status: exists, path: bible/37_character_schema.yaml, key: balance_targets.death_types}}
+      - {facet_id: incident_record, desc: "Ban ghi su kien tap (append-only ledger)", data_type: sequence,
+         sot: {status: planned, planned_path: runtime/memory/event_ledger.yaml, owner: event,
+               reason_not_exists_yet: "Chua tap nao ghi ledger; su kien EP01 nam trong episode.md + BUGS log", target_milestone: M1_canon_managers,
+               blocking_dependency: "event schema (M1) + format append-only Mr.Long duyet"}}
+      - {facet_id: reveal_record, desc: "Reveal da ban ra cho khan gia (doi chieu budget bible/18)", data_type: sequence,
+         sot: {status: planned, planned_path: runtime/memory/event_ledger.yaml, owner: event,
+               reason_not_exists_yet: "Chung ledger voi incident_record", target_milestone: M1_canon_managers,
+               blocking_dependency: "event ledger (M1)"}}
+      - {facet_id: comment_trigger, desc: "Thu vien trigger binh luan (hook tuong tac)", data_type: mapping,
+         sot: {status: exists, path: bible/14_comment_trigger_library.yaml}}
+    entities: [incident, death, reveal]
+    invariants:
+      - {rule: "Su kien da xay ra = bat bien (append-only); tap sau mau thuan tap truoc = VIOLATION",
+         enforcer: {status: exists, path: tools/story_consistency_validator.py}}
+      - {rule: "Kieu chet can bang theo death_types target (0 flag)",
+         enforcer: {status: exists, path: tools/character_balance_report.py}}
+  story_planner:
+    facets:
+      - {facet_id: driver_reveal_budget, desc: "Budget reveal driver (EP73+EP90 reserved)", data_type: mapping,
+         sot: {status: exists, path: bible/18_driver_reveal_budget.yaml}}
+      - {facet_id: opening_hook_template, desc: "Khuon hook mo tap Ngan-style", data_type: mapping,
+         sot: {status: exists, path: bible/01_narrative_structure.yaml, key: opening_hook_template_ngan_style}}
+      - {facet_id: cliffhanger_pool, desc: "Pool cliffhanger ngan-lung-triet-ly", data_type: mapping,
+         sot: {status: exists, path: bible/01_narrative_structure.yaml, key: "cliffhanger_pool_ngan_lung_triết_lý"}}
+      - {facet_id: bimodal_sentence_structure, desc: "Nhip cau dai-ngan theo section", data_type: mapping,
+         sot: {status: exists, path: bible/01_narrative_structure.yaml, key: bimodal_sentence_length_per_section}}
+      - {facet_id: reveal_pause_marker, desc: "Marker ngat truoc reveal", data_type: mapping,
+         sot: {status: exists, path: bible/01_narrative_structure.yaml, key: reveal_pause_marker}}
+      - {facet_id: series_kpi, desc: "KPI series (retention/comment target)", data_type: mapping,
+         sot: {status: exists, path: bible/16_series_kpi.yaml}}
+      - {facet_id: scene_act_structure, desc: "Cau truc Scene/Act/Episode/Season/Series/Ending (STRUCTURE noi bo)", data_type: schema,
+         sot: {status: planned, planned_path: governance/blueprint/schemas/story_plan_schema.yaml, owner: story_planner,
+               reason_not_exists_yet: "Cau truc chua field-hoa (BP0 M2)", target_milestone: M2_planner_generator,
+               blocking_dependency: "Mr.Long duyet format ke hoach"}}
+    entities: [season_plan, episode_plan, scene]
+    invariants:
+      - {rule: "Reveal driver ngoai budget bible/18 = VIOLATION",
+         enforcer: {status: planned, planned_path: tools/story_planner.py, owner: story_planner,
+                    reason_not_exists_yet: "Planner tool chua co (BP0 M2)", target_milestone: M2_planner_generator,
+                    blocking_dependency: "event ledger + timeline manager (M1)"}}
+      - {rule: "Cast 5-8 nhan vat/tap + can bang xuyen tap theo balance_targets",
+         enforcer: {status: exists, path: tools/character_balance_report.py}}

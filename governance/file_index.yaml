@@ -1036,5 +1036,25 @@ files:
     domain: bp1_core
     status: active
     tier: 0
+  governance/blueprint/bp2/00_domain_architecture.md:
+    domain: bp2_domain
+    status: active
+    tier: 0
+  governance/blueprint/bp2/domain_specs.yaml:
+    domain: bp2_domain
+    status: active
+    tier: 0
+  reports/BP2_REPORT.md:
+    domain: bp2_domain
+    status: active
+    tier: 0
+  tools/bp2_domain_check.py:
+    domain: bp2_domain
+    status: active
+    tier: 0
+  tests/test_bp2_domain.py:
+    domain: bp2_domain
+    status: active
+    tier: 0
 generated_by: tools/registry_triage.py
-total: 241
+total: 246

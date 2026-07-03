@@ -148,6 +148,11 @@ domains:
       - governance/blueprint/bp1/layer_contracts.yaml
       - reports/BP1_CORE_ARCHITECTURE_REPORT.md
     bp1_check: tools/bp1_architecture_check.py   # BP1: 11 check + equality BP0 + DUP-KEY loader
+    bp2_domain:
+      - governance/blueprint/bp2/00_domain_architecture.md
+      - governance/blueprint/bp2/domain_specs.yaml   # 13 domain / 58 facet inventory — key-resolve may
+      - reports/BP2_REPORT.md
+    bp2_check: tools/bp2_domain_check.py   # BP2: facet unique toan cuc + SoT path/key verify + ENFORCER-MA
     tests:
       - tests/test_governance_enforce_r209.py
       - tests/test_artifact_contract_r212.py
@@ -164,6 +169,7 @@ domains:
       - tests/test_pack5_docs.py   # PACK5: quality 11-element doc completeness + enforcer-exists
       - tests/test_blueprint_constitution.py   # BLUEPRINT: 11 negative case (domain/field/dep/supernatural/memory/self-lock/planned-honesty) + doc bar
       - tests/test_bp1_architecture.py   # BP1: mutation battery M1-M10 + drift/layer-scheme/iface-completeness
+      - tests/test_bp2_domain.py   # BP2: mutation (facet-2-domain/sot-key-lao/enforcer-ma/canon-thieu-block)
     promotion_status: locked   # GOVERNANCE v1.0 (Mr.Long signed 2/7): DU 5 pack locked+tagged, freeze_gate 5/5 moi pack, cross-pack audit nhat quan; tag governance-v1.0
     enterprise_pack_progress:
       pack1_constitution: locked   # FROZEN v1.0 (Mr.Long authorized 2/7): 6 doc 11-element, promotion_guard HANH VI (pre-push+server-CI, battle-tested), test_pack1_docs; tag pack1-constitution-v1.0
@@ -173,6 +179,7 @@ domains:
       pack5_quality: locked   # FROZEN v1.0 (Mr.Long authorized 2/7): 4 doc 19-22 ENFORCED/ROADMAP doi chung code, BUG P0 preflight fixed+locked, Actions green ae5e9bf; tag pack5-quality-v1.0
       blueprint_constitution: locked   # FROZEN v2.0 (Mr.Long authorized 3/7): 22+1 domain inventory DONG, decision_engine, lifecycle+versioning, dup-key loader; audit 12 mutation PASS; tag blueprint-constitution-v2.0
       bp1_core: locked   # FROZEN v1.0 (Mr.Long authorized 3/7): 23 domain graph + 92 iface (4 exists/88 planned honesty) + layer contracts; audit 0 finding, mutation LECH-BP0/dup-key/phantom-src PASS; tag bp1-core-v1.0
+      bp2_domain: candidate   # BP2 Domain Architecture — 13 domain / 58 facet (44 exists key-verified / 14 planned honest); Builder khong lock
     data_contract:
       input: "registry yaml + disk scan"
       output: "gap report"
