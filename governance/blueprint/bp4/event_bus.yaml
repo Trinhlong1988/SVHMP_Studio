@@ -1,0 +1,40 @@
+# BP4 — event bus (LUAT phan quyet 3/7: moi hop PHAI la DOMAIN inventory HOAC FACET da khai
+# BP2/BP3 dang "domain.facet_id" — hop la kieu Music/Lighting phai MAP ve domain/facet that,
+# khong bia ten. Chain = luong PHAN UNG su kien (notification), khac data-read grant —
+# ghi ro semantics o 00_runtime_event.md; kiem duyet phan khi audit).
+# Enforcer: tools/bp4_runtime_check.py.
+validator_version: 1.0.0
+source_constitution_version: 2.0.0
+events:
+  - event_id: passenger_boards
+    emitter: event
+    chain: [character, supernatural, qa_runtime]
+    desc: "Khach len chuyen xe — ho so kich hoat, hon ma bat dau quan sat"
+  - event_id: ghost_appears
+    emitter: supernatural
+    chain: [world, character.emotion_trigger, dialogue, audio, qa_runtime, analytics]
+    desc: "Chuoi mau bat buoc (task 3/7): hon hien hinh -> khung canh -> cam xuc nhan vat -> thoai -> am thanh (sfx/music map ve DOMAIN audio — audio chua co facet inventory, BP2 chi phu 13 domain tang thap) -> QA -> do luong"
+  - event_id: regret_triggered
+    emitter: supernatural
+    chain: [character.emotion_trigger, character.character_memory, dialogue, audio]
+    desc: "Cham vao regret/haunting_symbol — hoi uc troi day"
+  - event_id: passenger_dies
+    emitter: event
+    chain: [character.character_state, supernatural, story_planner, qa_runtime]
+    desc: "Cai chet trong tap (9 kieu can bang) — doi life_status, sinh hon moi"
+  - event_id: secret_revealed
+    emitter: story_planner
+    chain: [character.knowledge, event, qa_runtime, analytics]
+    desc: "Bi mat duoc lo theo TIMING story_planner (permission van cua character — BP3)"
+  - event_id: ghost_released
+    emitter: supernatural
+    chain: [character.character_state, story_planner, analytics]
+    desc: "Hon sieu thoat — dong arc, cap nhat ke hoach"
+  - event_id: qa_violation_found
+    emitter: qa_runtime
+    chain: [generator, production]
+    desc: "QA do — chan render, tra ve generator sua (khong waiver thi khong di tiep)"
+  - event_id: episode_rendered
+    emitter: production
+    chain: [video, publisher, analytics]
+    desc: "Golden output R196 xong — mo duong phan phoi"

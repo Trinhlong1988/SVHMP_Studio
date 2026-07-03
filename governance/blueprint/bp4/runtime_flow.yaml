@@ -1,0 +1,33 @@
+# BP4 — runtime flow (chuoi render end-to-end; FORMAT tu BP-C, gio do DATA)
+# Enforcer: tools/bp4_runtime_check.py (hop ∈ inventory · layer TANG strictly · via exists = Test-Path)
+# Chuoi tts→audio→production HIEN CO THAT quanh tools/svhmp_v13_render.py LOCKED — TRO, khong ta lai.
+validator_version: 1.0.0
+source_constitution_version: 2.0.0
+flow:
+  - {hop: 1, domain: story_planner, input: "bible/18 budget + bible/01_series_bible arc", output: episode_plan,
+     status: planned, via: {status: planned, planned_path: tools/story_planner.py, owner: story_planner,
+       reason_not_exists_yet: "Ke hoach hien Mr.Long dieu phoi tay", target_milestone: M2_planner_generator,
+       blocking_dependency: "event ledger + timeline manager (M1)"}}
+  - {hop: 2, domain: decision_engine, input: episode_plan, output: budget_sheet,
+     status: planned, via: {status: planned, planned_path: tools/decision_engine.py, owner: decision_engine,
+       reason_not_exists_yet: "Domain moi audit 3/7, chua khoi cong", target_milestone: M2_planner_generator,
+       blocking_dependency: "decision policy calibrate tu EP01 golden (R195)"}}
+  - {hop: 3, domain: generator, input: "budget_sheet + canon (world/character/object/dialogue/event)", output: episode_md,
+     status: exists, via: {status: exists, path: prompts/ep_scaffold_template.md},
+     note: "Dang chay THAT dang prompt-based (nguoi + LLM) — EP01 episode.md ton tai; tool dong goi = M2"}
+  - {hop: 4, domain: qa_runtime, input: episode_md, output: qa_verdict,
+     status: exists, via: {status: exists, path: tools/svhmp_preflight_qa.py}}
+  - {hop: 5, domain: tts, input: "spec section json (text da PASS)", output: voice_track,
+     status: exists, via: {status: exists, path: tools/svhmp_v13_render.py}}
+  - {hop: 6, domain: audio, input: voice_track, output: audio_mix_qa,
+     status: exists, via: {status: exists, path: tools/svhmp_audio_qa.py}}
+  - {hop: 7, domain: production, input: audio_mix_qa, output: "golden production output (R196)",
+     status: exists, via: {status: exists, path: tools/svhmp_final_verify.py}}
+  - {hop: 8, domain: video, input: "golden audio", output: video_master,
+     status: planned, via: {status: planned, planned_path: tools/video_builder.py, owner: video,
+       reason_not_exists_yet: "Audio-first; chua co golden output R196", target_milestone: M4_video_publisher,
+       blocking_dependency: "production Golden Output (R196)"}}
+  - {hop: 9, domain: publisher, input: video_master, output: publish_artifact,
+     status: planned, via: {status: planned, planned_path: tools/publisher_manager.py, owner: publisher,
+       reason_not_exists_yet: "Chua co artifact du dieu kien dang", target_milestone: M4_video_publisher,
+       blocking_dependency: "video pipeline (M4) + Mr.Long duyet kenh"}}

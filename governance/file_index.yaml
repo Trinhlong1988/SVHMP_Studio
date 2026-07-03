@@ -1080,5 +1080,37 @@ files:
     domain: bp3_ownership
     status: active
     tier: 0
+  governance/blueprint/bp4/00_runtime_event.md:
+    domain: bp4_runtime
+    status: active
+    tier: 0
+  governance/blueprint/bp4/runtime_flow.yaml:
+    domain: bp4_runtime
+    status: active
+    tier: 0
+  governance/blueprint/bp4/event_bus.yaml:
+    domain: bp4_runtime
+    status: active
+    tier: 0
+  governance/blueprint/bp4/state_machines.yaml:
+    domain: bp4_runtime
+    status: active
+    tier: 0
+  governance/blueprint/bp4/memory_architecture.yaml:
+    domain: bp4_runtime
+    status: active
+    tier: 0
+  reports/BP4_REPORT.md:
+    domain: bp4_runtime
+    status: active
+    tier: 0
+  tools/bp4_runtime_check.py:
+    domain: bp4_runtime
+    status: active
+    tier: 0
+  tests/test_bp4_runtime.py:
+    domain: bp4_runtime
+    status: active
+    tier: 0
 generated_by: tools/registry_triage.py
-total: 252
+total: 260

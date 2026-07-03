@@ -1,0 +1,60 @@
+# BP4 — memory architecture (mo rong 6 scope BP-C thanh chi tiet van hanh)
+# LUAT: owner/store PHAI KHOP BP0.memory (drift = FAIL); writers ⊆ {owner, mr_long} (BP3);
+# readers ⊆ reader grant BP0 cua owner. Enforcer: tools/bp4_runtime_check.py.
+validator_version: 1.0.0
+source_constitution_version: 2.0.0
+memory_scopes:
+  - scope: global_memory
+    owner: story_planner
+    store: {status: exists, path: bible/01_series_bible.yaml}
+    retention: permanent
+    readers: [decision_engine, generator, qa_runtime]
+    writers: [mr_long]
+  - scope: series_memory
+    owner: story_planner
+    store: {status: exists, path: bible/18_driver_reveal_budget.yaml}
+    retention: season
+    readers: [decision_engine, generator, qa_runtime]
+    writers: [mr_long]
+  - scope: episode_memory
+    owner: generator
+    store:
+      status: planned
+      planned_path: runtime/memory/episode_state.yaml
+      owner: generator
+      reason_not_exists_yet: "EP01 dang track qua BUGS log + spec json roi rac; chua gom ve 1 store."
+      target_milestone: M2_planner_generator
+      blocking_dependency: "episode schema (M2)"
+    retention: until_episode_freeze
+    readers: [qa_runtime, production]
+    writers: [generator]
+  - scope: character_memory
+    owner: character
+    store: {status: exists, path: runtime/passenger_roster_100.yaml}
+    retention: permanent_updated_per_episode
+    readers: [dialogue, event, story_planner, decision_engine, generator, qa_runtime, tts]
+    writers: [mr_long, character]
+  - scope: event_memory
+    owner: event
+    store:
+      status: planned
+      planned_path: runtime/memory/event_ledger.yaml
+      owner: event
+      reason_not_exists_yet: "Chua co tap nao ghi ledger; format cho Mr.Long duyet."
+      target_milestone: M1_canon_managers
+      blocking_dependency: "event schema (M1)"
+    retention: append_only_permanent
+    readers: [story_planner, decision_engine, generator, qa_runtime]
+    writers: [mr_long, event]
+  - scope: supernatural_memory
+    owner: supernatural
+    store:
+      status: planned
+      planned_path: runtime/memory/supernatural_reveal_state.yaml
+      owner: supernatural
+      reason_not_exists_yet: "Reveal state hien theo doi tay trong bible/18 budget; chua tach store rieng."
+      target_milestone: M1_canon_managers
+      blocking_dependency: "supernatural schema (M1)"
+    retention: season
+    readers: [character, object, event, story_planner, generator, qa_runtime]
+    writers: [mr_long]

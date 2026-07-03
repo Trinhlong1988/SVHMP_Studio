@@ -1,0 +1,48 @@
+# BP4 — state machines (FORMAT tu BP-C: entity · states · transitions[from, to, trigger])
+# LUAT: trigger PHAI la event_id da khai trong event_bus.yaml; state khong duong vao (tru initial) = FAIL.
+# Enforcer: tools/bp4_runtime_check.py.
+validator_version: 1.0.0
+source_constitution_version: 2.0.0
+state_machines:
+  - entity: ghost
+    owner_domain: supernatural
+    states: [dormant, watching, manifest, attack, released]
+    initial: dormant
+    transitions:
+      - {from: dormant, to: watching, trigger: passenger_boards}
+      - {from: watching, to: manifest, trigger: ghost_appears}
+      - {from: manifest, to: attack, trigger: regret_triggered}
+      - {from: attack, to: released, trigger: ghost_released}
+      - {from: manifest, to: released, trigger: ghost_released}
+  - entity: character_fear
+    owner_domain: character
+    states: [normal, fear, panic, trauma, recovery]
+    initial: normal
+    transitions:
+      - {from: normal, to: fear, trigger: ghost_appears}
+      - {from: fear, to: panic, trigger: regret_triggered}
+      - {from: panic, to: trauma, trigger: passenger_dies}
+      - {from: trauma, to: recovery, trigger: ghost_released}
+      - {from: fear, to: normal, trigger: ghost_released}
+  - entity: character_life
+    owner_domain: character
+    states: [alive, dead, ghost, released]
+    initial: alive
+    transitions:
+      - {from: alive, to: dead, trigger: passenger_dies}
+      - {from: dead, to: ghost, trigger: regret_triggered}
+      - {from: ghost, to: released, trigger: ghost_released}
+    note: "Map truc tiep facet story_arc_personal (BP2b: 'arc PHAI map state machine BP4') — song -> vong linh -> sieu thoat"
+  - entity: voice_state
+    owner_domain: dialogue
+    states: [NORMAL, SO, THI_THAM, HOANG, NGHEN, XUC_DONG]
+    initial: NORMAL
+    sot: {status: exists, path: bible/15_voice_bible.yaml, key: state_transitions}
+    transitions:
+      - {from: NORMAL, to: SO, trigger: ghost_appears}
+      - {from: SO, to: HOANG, trigger: regret_triggered}
+      - {from: SO, to: THI_THAM, trigger: ghost_appears}
+      - {from: NORMAL, to: XUC_DONG, trigger: secret_revealed}
+      - {from: XUC_DONG, to: NGHEN, trigger: regret_triggered}
+      - {from: HOANG, to: NORMAL, trigger: ghost_released}
+    note: "6 state THAT tu bible/15 (SoT exists — ma tran chuyen day du nam trong bible, day chi khai cac canh gan event; render KHONG doi bible/15)"
