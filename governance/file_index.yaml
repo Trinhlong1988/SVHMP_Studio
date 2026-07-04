@@ -1304,5 +1304,13 @@ files:
     domain: governance
     status: active
     tier: 0
+  governance/operational_policy_gates.yaml:
+    domain: governance
+    status: active
+    tier: 0
+  tests/test_operational_policy_gates.py:
+    domain: governance
+    status: active
+    tier: 0
 generated_by: tools/registry_triage.py
-total: 326
+total: 328

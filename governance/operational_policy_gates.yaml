@@ -1,0 +1,142 @@
+# ============================================================
+# OPERATIONAL POLICY GATES (SVAF pattern 3/5, TASK_BACKLOG_SVAF_PATTERNS.md)
+# CMD_BUILD_3 4/7 — gom luat VAN HANH/QUY TRINH repo (pack claim/promotion/CI/
+# R_SUPREME/git hooks) dang rai rac trong CLAUDE.md + PIPELINE_PROTOCOL.md + code
+# thanh 1 danh sach khai bao may-doc-duoc (kieu SVAF Policy Gates).
+#
+# KHAC PHAM VI voi governance/blueprint/bp9/policy_gates.yaml (gate NOI DUNG truyen:
+# ritual/belief/supernatural/publisher sensitivity) — file nay la gate QUY TRINH/
+# VAN HANH repo (ai duoc lam gi, khi nao chan push/build). Khong trung, khong thay the.
+#
+# Nguyen tac overclaim (hoc tu governance/*): gate nao CHUA co tool cuong che that ->
+# enforcer.status = roadmap (KHONG duoc ghi enforced). Doc lai file nay khi Mr.Long
+# them/doi luat van hanh moi — day la INDEX, khong phai luat goc (luat goc van o
+# CLAUDE.md/PIPELINE_PROTOCOL.md, file nay chi tro + severity + ai duyet).
+# ============================================================
+version: 1.0
+authority: "CMD_BUILD_3 (svaf_patterns_backlog task 3/5), per Mr.Long authorization 2026-07-04"
+source_docs:
+  - CLAUDE.md
+  - prompts/PIPELINE_PROTOCOL.md
+  - docs/ENVIRONMENT_GOTCHAS.md
+
+gates:
+  - gate_id: PACK_CLAIM_BEFORE_BUILD
+    domain: process
+    desc: "MASTER luat 11 (Mr.Long ky 4/7): PHAI `build_claim.py claim <pack> <session>`
+          exit 0 TRUOC khi dong bat ky file nao trong pack; `release` SAU khi push
+          verified. Chong 2 builder cung build 1 pack (tien le va cham BP6 ban A/B)."
+    severity: HIGH
+    owner_review: "Tu dong (may kiem qua build_claim.py exit code) — khong can nguoi duyet tung lan"
+    enforcer: {status: enforced, tool: tools/build_claim.py, ledger: runtime/build_claim.yaml}
+
+  - gate_id: PROMOTION_LOCK_MR_LONG_ONLY
+    domain: process
+    desc: "Chi Mr.Long (LEAD) duoc doi promotion_status/packN_* sang 'locked' hoac push
+          tag 'pack*-v*'. Builder tu lam bi CHAN THAT o pre-push (khong chi cam bang chu),
+          tru khi commit message chua 'per Mr.Long authorization'."
+    severity: HIGH
+    owner_review: "Mr.Long (chinh nguoi duoc phep, khong uy quyen)"
+    enforcer: {status: enforced, tool: tools/promotion_guard.py, wired: ".githooks/pre-push"}
+
+  - gate_id: CI_GATE_MANDATORY_PREPUSH
+    domain: process
+    desc: "Moi push PHAI qua tools/ci_gate.py (registry 0/0/0 + blueprint suite + regression
+          R199/R203/R205-208 + project_config + roster + pytest suite day du). FAIL bat ky
+          stage -> chan push (xem governance/error_code_standard.yaml cho ma loi tung stage)."
+    severity: HIGH
+    owner_review: "Tu dong (may) — khong can nguoi duyet, nhung FAIL phai ve CMD_BUILD sua, khong bypass"
+    enforcer: {status: enforced, tool: tools/ci_gate.py, wired: ".githooks/pre-push"}
+
+  - gate_id: FULL_TEXT_GATE_MANDATORY_R197
+    domain: content_qa
+    desc: "R197 TOI THUONG (Mr.Long 30/6 23:30): moi text modification PHAI qua
+          FULL_TEXT_GATE (qa_eol_diacritic R86 broad + toan bo text QA tool hien co)
+          TRUOC khi render — khong duoc 'Text Gate' voi 1 tool le."
+    severity: HIGH
+    owner_review: "Tu dong (may) qua svhmp_preflight_qa.py; violat -> STOP render, khong tu sua roi render tiep"
+    enforcer: {status: enforced, tool: tools/svhmp_preflight_qa.py, regression: tests/test_full_text_gate_r86_broad.py}
+
+  - gate_id: PRODUCTION_VALIDATION_OVERRIDE_R196
+    domain: release
+    desc: "R196 (Mr.Long 30/6 22:50): Engineering PASS != Production PASS. Module CHUA
+          duoc goi 'complete/done/100% hoan thanh' neu chua qua it nhat 1 lan production
+          run that. Dung 'Engineering Validation PASS / Ready for Production Validation'."
+    severity: HIGH
+    owner_review: "Mr.Long (nguoi duy nhat ky Freeze/Release dua tren Golden Production Output)"
+    enforcer: {status: roadmap, reason_not_exists_yet: "quy uoc ngon tu trong report/commit message,
+              chua co linter tu dong quet tu 'complete/done' trong report + doi chieu production evidence"}
+
+  - gate_id: CHANGE_REQUEST_GATE_R211
+    domain: governance
+    desc: "TRUOC khi tao module/tool moi: (1) chay architecture_registry_check.py (0
+          MISSING/DUP/UNMAPPED); (2) tra du 6 cau hoi Change Request Gate (domain?
+          trung module cu? source-of-truth? schema hay runtime? anh huong QA nao? test
+          nao chung minh?) — khong du -> STOP."
+    severity: MEDIUM
+    owner_review: "Tu danh gia (Claude/Builder) truoc khi code; Mr.Long duyet khi vuot ownership_matrix"
+    enforcer: {status: enforced, tool: tools/architecture_registry_check.py}
+
+  - gate_id: OWNERSHIP_MATRIX_SCOPE
+    domain: governance
+    desc: "Moi file chi duoc sua boi dung CMD so huu theo governance/architecture_registry.yaml
+          ownership_matrix (LEAD/CMD_CHARACTER/CMD_AUDIO/CMD_TEXT/CMD_NAMING...). Sai quyen -> STOP,
+          khong tu sua roi bao cao sau."
+    severity: HIGH
+    owner_review: "Mr.Long (chu so huu domain) hoac tu-check truoc khi sua (khong may cuong che truc tiep)"
+    enforcer: {status: roadmap, reason_not_exists_yet: "chua co tool doi chieu tac gia commit vs
+              ownership_matrix tu dong — hien la quy uoc doc truoc khi lam + kiem duyet doc lai"}
+
+  - gate_id: R_SUPREME_NO_AUTONOMOUS_ACTION
+    domain: governance
+    desc: "R_SUPREME R1-R3: Mr.Long la THAM QUYEN DUY NHAT cho architecture/production/
+          render/freeze/release/rule change. Claude = Engineering Executor, KHONG tu quyet.
+          Permission-first (4 cau hoi) truoc hanh dong co anh huong lon."
+    severity: HIGH
+    owner_review: "Mr.Long (nguon tham quyen)"
+    enforcer: {status: roadmap, reason_not_exists_yet: "nguyen tac hanh vi cho nguoi/AI van hanh,
+              khong phai dieu kien may-kiem-duoc tren diff"}
+
+  - gate_id: R_SUPREME_BASELINE_PROTECTION_R8
+    domain: governance
+    desc: "R8: truoc khi patch file quan trong PHAI verify/lock/backup/checksum/diff.
+          Workflow chuan R7: Read -> Diff -> Proposal -> Approval -> Backup -> Patch ->
+          Regression -> Production."
+    severity: MEDIUM
+    owner_review: "Tu thuc hien (Claude/Builder) — git history dong vai backup thuc te"
+    enforcer: {status: roadmap, reason_not_exists_yet: "backup=git (co san) nhung chua co
+              tool tu dong xac nhan da 'Read->Diff->Proposal' truoc patch"}
+
+  - gate_id: R200_REALTIME_SYNC
+    domain: process
+    desc: "Truoc khi lam: pull --rebase + status sach + local HEAD == remote HEAD.
+          Sau moi fix (ngay lap tuc, khong gom cuoi buoi): cap nhat config lien quan +
+          log_ping + commit + push + xac nhan lai HEAD khop."
+    severity: MEDIUM
+    owner_review: "Tu thuc hien (moi CMD/session) — khong can nguoi duyet tung lan"
+    enforcer: {status: partial, tool: tools/log_ping.py, note: "log_ping ho tro ghi log,
+              nhung buoc pull-rebase-truoc + push-ngay-sau van la ky luat tu giac, chua co
+              tool chan neu bo qua"}
+
+  - gate_id: GIT_HOOKS_NO_BYPASS
+    domain: process
+    desc: "Khong duoc dung --no-verify / bypass git hook (pre-commit rule-mention-guard,
+          pre-push promotion_guard + ci_gate, commit-msg check). Hook FAIL phai sua goc,
+          khong bypass."
+    severity: HIGH
+    owner_review: "Tu giac (khong may chan --no-verify duoc, day la ky luat hanh vi)"
+    enforcer: {status: partial, tool: ".githooks/pre-commit,.githooks/pre-push,.githooks/commit-msg",
+              note: "hook that su chay va chan (enforced khi khong dung --no-verify), nhung
+              --no-verify van co the bypass ve mat ky thuat git — khong co server-side chan tuyet doi"}
+
+notes:
+  - "gate PACK_CLAIM/PROMOTION_LOCK/CI_GATE/FULL_TEXT_GATE/CHANGE_REQUEST_GATE: co tool
+     that, exit-code that, da kiem chung qua nhieu phien (xem git log commit 'per Mr.Long
+     authorization')."
+  - "gate R_SUPREME/R200/OWNERSHIP: phan lon la ky luat HANH VI nguoi/AI van hanh, chua co
+     may cuong che 100% — ghi ro 'roadmap'/'partial', KHONG duoc bao 'enforced' sai (chong
+     overclaim, dung tinh than governance/deprecation_report.md)."
+  - "Khac governance/blueprint/bp9/policy_gates.yaml: file do la gate NOI DUNG truyen
+     (ritual/belief/supernatural/publisher, schema domain=BP0 domain that). File nay la
+     gate QUY TRINH van hanh repo (schema domain=process/governance/content_qa/release).
+     2 file KHONG hop nhat vi khac tang (BP-layer content vs repo-operational)."
