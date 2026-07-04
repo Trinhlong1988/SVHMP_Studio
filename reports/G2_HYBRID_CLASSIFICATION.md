@@ -53,11 +53,24 @@ Toàn bộ 37 ca + đề xuất cụ thể (2-3 alternative/ca) nằm trong `ros
 - Quy mô: mỗi vùng × thế hệ ~20-30 tên/giới (đủ dư cho 37 ca PHẠM + margin tương lai ep_51-90)
 - **Ghi chú:** đây là tên GHÉP từ âm tiết do executor soạn theo khung rule_06 (tên gần quê) — Mr.Long duyệt/sửa/loại trực tiếp trong draft yaml, không phải danh sách chốt.
 
+## B3 FILL — BATCH 2 (32/34, per Mr.Long "G2 tiếp tục batch 2")
+- **Độ sâu evidence:** batch 2 dùng **context-level** (câu tóm tắt regret đã mined thật từ header episode.md, KHÔNG bịa) thay vì đọc full speech_evidence như batch 1 — đánh đổi cần thiết để xử lý khối lượng 32 nhân vật trong 1 lượt mà vẫn có căn cứ. Mỗi entry vẫn có `evidence_ref` + `archetype_fit_note` ghi rõ mức độ khớp.
+- **Phát hiện lớn: CỤM VẬT "mảnh gương" xuyên 4 tập (bible/24 meta-arc easter egg)** — ep_15/25/35/45 đều là "định tự tử — mảnh gương/kính cứu", và chính người dẫn chuyện (driver) callback trực tiếp xuyên 4 tập ("đêm mười lăm... đêm nay sẽ có... cùng cụm vật"). Đây là chuỗi easter egg CÓ CHỦ ĐÍCH, không phải 4 regret độc lập. Dùng placeholder `GAP_MANH_GUONG_VO` (ep_15/35/45, mảnh vỡ) + `GAP_KINH_PHAN_CHIEU` (ep_25, kính nguyên — chi tiết khác). **Không có object gương/kính nào trong bible/12** — đề xuất RFC. Cũng phát hiện **không có regret_sub_archetype nào cho "suýt tự tử"** trong 27 sub-archetype bible/11 (dùng REG_SELF_004 gần nhất, không khớp hoàn hảo) — đề xuất RFC REG_SELF_005 mới.
+- **2 CẢNH BÁO continuity nghiêm trọng — chưa chốt, cần Mr.Long xem trực tiếp:**
+  - **PAS_0137 (ep_36):** context nhắc "Khải Phong" — nhân vật chính đã khóa `bible/31`. Em gái nhân vật này mất tai nạn, từng yêu Khải Phong mà anh trai (hành khách) không biết.
+  - **PAS_0141 (ep_40):** nhân vật tự xưng "anh Hải" — **chính người đã gọi cấp cứu Hạ Vy 7 năm trước** (liên kết trực tiếp nhân vật chính đã khóa). Chưa điền regret_label cuối, chỉ ghi cảnh báo.
+- **2 waiver (ep_30, ep_50) GÁC LẠI HOÀN TOÀN — KHÔNG fill Tier1 trong batch này.** Cả hai đụng chạm nhân vật chính đã khóa (Khải Phong/Hạ Vy) sâu hơn 2 ca cảnh báo trên (là chính chủ đề tập, không phải nhắc thoáng qua) — cần Mr.Long đọc trực tiếp `episode.md` ep_30/ep_50 trước khi gán regret/object, tránh áp đặt sai ý đồ cốt truyện đã cài cắm. `tests/test_roster_backfill_ep11_50.py::test_waivers_ep30_ep50_absent_pending_mr_long` khóa quyết định này (chống tự-fill âm thầm sau này).
+- **Mô-típ lặp khác:** PAS_0115 (batch 1, ep_14) và PAS_0140 (ep_39) cùng dạng "từ chối giúp người già đói → họ chết" — 2/37 lặp lại, cùng đề xuất RFC REG_KIN mới. PAS_0114/0117/0132 (3 ca) đều liên quan hoa cúc — GAP catalog object tiếp tục lặp.
+- **Vấn đề mapping vùng (HOME dict eo hẹp):** `migrate_roster_v2.HOME` chỉ có 5 tên tỉnh/thành mỗi vùng (không phủ hết 34 tỉnh/thành xuất hiện trong dữ liệu thật) — dùng tỉnh KHỚP ĐÚNG khi có, mặc định về thành phố lớn nhất vùng khi không khớp (giữ chi tiết thật ở `hometown_detail`). Riêng Đắk Lắk (Tây Nguyên) tạm xếp "trung" — cần Mr.Long xác nhận quy ước.
+
 ## Hành động tiếp theo
 1. ~~Duyệt pool đợt 1~~ ✅ DONE (2026-07-04, phương án a — mở rộng database).
-2. ~~Quyết ep_30/ep_50~~ ✅ DONE — cả 2 waiver giữ nguyên.
+2. ~~Quyết ep_30/ep_50 (tên)~~ ✅ DONE — cả 2 waiver giữ nguyên tên.
 3. ~~Flip ceremony~~ ✅ DONE (chạy sau BP6 landed, xem commit `c8a6041`).
-4. **CÒN LẠI (B3 fill, chưa làm):** 39 nhân vật (37 rename + 2 waiver, PAS_0101-0139) mới chỉ có identity tối thiểu (id/tên/ep nguồn/gender/tuổi/quê thô). Cần fill đủ Tier1 (regret_sub_archetype/haunting_symbol/death.type/voice đầy đủ) theo thứ tự continuity_risk CAO trước (TASK_G2 B3) rồi mới merge từng batch vào `passenger_roster_100.yaml` + chạy `roster_validator.py`. **Kiến trúc lưu ý:** file tên "100" khóa cứng đúng 100 passenger (`tests/test_character_manager_r205.py` assert `len==100`) — 39 nhân vật mới KHÔNG thể append trực tiếp vào file đó mà không phá invariant; cần quyết định kiến trúc (file mở rộng riêng, hay bump invariant có kiểm soát) trước khi B3 merge.
-5. ep_01 (golden EP01, Mr.Long quyết riêng) + ep_11 (header dị dạng, người đọc lại episode.md) vẫn NGƯỜI DUYỆT, chưa thuộc quyết định này.
+4. ~~B3 fill batch 1 (5/39)~~ ✅ DONE.
+5. ~~B3 fill batch 2 (32/39)~~ ✅ DONE (context-level evidence) — **37/39 đã có Tier1**.
+6. **CÒN LẠI:** 2 waiver (ep_30/ep_50) — Tier1 GÁC LẠI, cần Mr.Long đọc trực tiếp 2 episode.md trước khi gán. 2 cảnh báo continuity (PAS_0137/PAS_0141) cần Mr.Long xác nhận có phải liên kết canon cố ý không trước khi chốt regret_label cuối. ep_01 + ep_11 vẫn NGƯỜI DUYỆT riêng.
+7. **RFC đang chờ (không tự quyết):** (a) bible/12 +object gương/kính (4 tập) +object hoa cúc (3 tập); (b) bible/11 +REG_SELF_005 (suýt tự tử) +REG_KIN_006 (từ chối giúp người đói → chết).
+8. **Kiến trúc merge cuối:** vẫn CHƯA merge 37 nhân vật vào `passenger_roster_100.yaml` (đúng thiết kế — file mở rộng riêng `passenger_roster_backfill_ep11_50.yaml` là nơi ở lâu dài, không phải bước trung gian chờ merge, trừ khi Mr.Long quyết khác).
 
 Commit: qua worktree riêng, đã push origin/main (xem commit hash trong git log).

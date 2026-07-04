@@ -1,183 +1,1080 @@
-# PASSENGER ROSTER — BACKFILL EP11-50 (G2 B3, per Mr.Long authorization 2026-07-04)
-#
-# Nhan vat ONE-SHOT dao nguoc tu episode.md DA CO (ep_11..ep_50) — KHONG dung
-# trong runtime/passenger_roster_100.yaml (file do khoa DUNG 100, xem
-# tests/test_character_manager_r205.py assert len==100). File nay la EXTENSION
-# rieng, CUNG SCHEMA voi passenger_roster_100.yaml, kiem boi cung
-# tools/roster_validator.py (--roster flag).
-#
-# Nguon: runtime/roster_backfill_draft.yaml#hybrid_classification (ten da duyet
-# Mr.Long 2026-07-04) + speech_evidence goc tu unmatched_episode_characters.
-# THU TU FILL: continuity_risk cao truoc (TASK_G2 B3) — CA 40 unmatched deu
-# flag 'high' (roster_drift_no_pas_id), nen batch dau chon theo do phong phu
-# evidence + tinh da dang pillar (khong bia, chi dung fact co can cu ep:line).
-#
-# BATCH 1 (5/39, con 34 cho batch sau): PAS_0113 (ep_12), PAS_0114 (ep_13),
-# PAS_0115 (ep_14), PAS_0117 (ep_16), PAS_0118 (ep_17).
-#
-# BUG FIX 2026-07-04: PAS_id ban dau gan 0101+ gia dinh SAI roster-100 dung
-# 0001-0100. Thuc te roster-100 dung PAS_0013-PAS_0112 (khong lien tuc tu 1).
-# Bat boi test_batch1_no_overlap_with_locked_roster_100 (tu chinh test nay!).
-# Renumber toan bo ve PAS_0113+ (dai TU DO thuc su sau max that PAS_0112).
-#
-# GHI CHU KIEN TRUC:
-# - voice.hometown PHAI la ten cap tinh/thanh trong migrate_roster_v2.HOME
-#   (vd 'Ha Noi'), KHONG phai quan/huyen cu the (Long Bien/My Duc/...) — do
-#   roster_validator C2 check exact-match vao HOME[region]. Chi tiet quan/huyen
-#   giu o field hometown_detail (rieng, KHONG kiem boi C2).
-# - death.type: HAU HET cac tap nay KHONG neu ro CHINH nhan vat (hanh khach)
-#   chet nhu the nao — regret ke ve NGUOI KHAC mat (me/cha/nguoi yeu cu/ban).
-#   Dung 'khong_ro' (co trong enum bible/37 death_types) THAY VI bia — evidence
-#   khong du de gan tai_nan/benh_tat cho chinh hanh khach.
-# - regret_sub_archetype: map ve ID GAN NHAT trong bible/11 (27 sub-archetype,
-#   LOCKED). Khi khong co match hoan hao, field archetype_fit_note ghi ro (
-#   KHONG lam vo bang phan bo QA vi chon sai loai, nhung trung thuc ve do khop).
-# - haunting_symbol: khi vat that (evidence) KHONG co trong bible/12 (40 object,
-#   LOCKED) — dung placeholder GAP_* (KHONG phai ma OBJ_ that) + ghi object_gap_note
-#   de xuat RFC bo sung, KHONG tu y them vao bible/12.
-
 meta:
   tool: manual fill (G2_EXECUTOR, doc truc tiep speech_evidence)
   generated: '2026-07-04'
   status: draft
-  batch: 1
-  batch_size: 5
-  remaining: 34
-  principle: "Moi field co can cu ep:line trong roster_backfill_draft.yaml. KHONG suy dien ngoai evidence."
-  schema_note: "Cung schema passenger_roster_100.yaml + 2 field bo sung: hometown_detail, archetype_fit_note/object_gap_note (chi o file nay, khong dung cho 100-roster)."
-
+  batch: 2
+  batch_size: 32
+  remaining: 0
+  principle: Moi field co can cu ep:line trong roster_backfill_draft.yaml. KHONG suy dien ngoai evidence.
+  schema_note: 'Cung schema passenger_roster_100.yaml + 2 field bo sung: hometown_detail, archetype_fit_note/object_gap_note
+    (chi o file nay, khong dung cho 100-roster).'
+  batch2_note: '32 nhan vat dung context-level evidence (mined header, khong bia) — nong hon full-speech-evidence cua batch
+    1 nhung van co can cu ep. 2 ca CANH BAO continuity (dung cham Khai Phong/Ha Vy da khoa): [''PAS_0137'', ''PAS_0141'']
+    — CHUA chot regret_label cuoi, cho Mr.Long xem truoc. 2 waiver ep_30/ep_50 GAC LAI HOAN TOAN (khong fill Tier1) vi ca
+    2 deu dung cham nhan vat chinh da khoa (Khai Phong/Ha Vy) — can Mr.Long doc truc tiep truoc khi gan regret/object, tranh
+    ap dat sai y do cot truyen.'
 passengers:
-  - id: PAS_0113
-    char_name: Huyền Trâm
-    pillar: love_regret
-    regret_sub_archetype: REG_LOV_003
-    regret_label: "Chia tay vì người mới — chưa kịp nói lời cảm ơn trước khi anh mất"
-    archetype_fit_note: "Gần nhất REG_LOV_003 (chia tay + chưa kịp nói điều cần nói); KHÔNG hoàn toàn khớp — case này là chủ động chọn người khác (Tuấn), không phải hiểu lầm, và điều chưa nói là 'cảm ơn' chứ không phải 'xin lỗi'."
-    signature_object: OBJ_DONG_HO_DEO_TAY_CU
-    object_pairing_note: "Vật thật: đồng hồ xà mặt trắng viền bạc, kim dừng ở giờ hẹn đầu (ep_12:161). OBJ_DONG_HO_DEO_TAY_CU khớp category (đồng hồ) nhưng pairable_pillars khai family/kindness — không phải love_regret; dùng vì không có object đồng-hồ nào khác trong catalog."
-    signature_setting: setting_TBD
-    age_range: 36-50
-    gender: nu
-    display_name: "Huyền Trâm (36-50)"
-    narrative_hook: "TBD by Generator"
-    source_ep: 12
-    evidence_ref: "runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 12)"
-    hometown_detail: "Long Biên (quận Hà Nội)"
-    status: draft
-    life_status: linh_hon
-    voice:
-      region_dialect: bac
-      hometown: Hà Nội
-      pronoun_system: em
-    death:
-      type: khong_ro
-      pain: "Chia tay hôn phu (kỹ sư cầu Long Biên) 1 tháng trước cưới vì yêu người khác; 4 năm sau biết anh mất (sạt lở núi công tác) — chưa kịp cảm ơn anh đã không trách"
-    haunting_symbol: OBJ_DONG_HO_DEO_TAY_CU
-
-  - id: PAS_0114
-    char_name: Chương Dương
-    pillar: promise_regret
-    regret_sub_archetype: REG_PRO_004
-    regret_label: "Hứa chăm vườn cúc của cha — vườn chết trong 6 tháng vì bỏ bê"
-    archetype_fit_note: "Gần nhất REG_PRO_004 (hứa với người thân lớn tuổi, không giữ được); khác biệt: đây là hứa CHĂM VƯỜN (di vật), không phải thăm hỏi trực tiếp."
-    signature_object: GAP_HOA_CUC_KHO
-    object_gap_note: "Vật thật: cánh cúc khô giữ từ vườn cha trồng, cha mất vì ung thư phổi (ep_13:167). KHÔNG có object hoa/cây cảnh nào trong bible/12 (40 object) — đề xuất RFC bổ sung OBJ_CUC_KHO ('cánh cúc khô ép giấy bản') cho bible/12 nếu Mr.Long duyệt. Placeholder GAP_* KHÔNG phải mã canon."
-    signature_setting: setting_TBD
-    age_range: 36-50
-    gender: nam
-    display_name: "Chương Dương (36-50)"
-    narrative_hook: "TBD by Generator"
-    source_ep: 13
-    evidence_ref: "runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 13)"
-    hometown_detail: "Mỹ Đức (huyện Hà Nội)"
-    status: draft
-    life_status: linh_hon
-    voice:
-      region_dialect: bac
-      hometown: Hà Nội
-      pronoun_system: tôi
-    death:
-      type: khong_ro
-      pain: "Hứa cha (mất vì ung thư phổi) sẽ chăm vườn cúc cha trồng 4 năm bằng tay — vườn chết trong 6 tháng vì công việc bận, hoa cúc trồng lại không bằng xưa"
-    haunting_symbol: GAP_HOA_CUC_KHO
-
-  - id: PAS_0115
-    char_name: Thắm Hường
-    pillar: kindness_regret
-    regret_sub_archetype: REG_KIN_001
-    regret_label: "Từ chối cho cụ ăn xin bát phở, hẹn 'hôm khác' — cụ chết đói đêm đó"
-    archetype_fit_note: "KHÔNG có archetype khớp trong 5 REG_KIN hiện có (tất cả 5 đều về 'chưa trả ơn NGƯỜI GIÚP MÌNH', ngược hướng với case này — TỪ CHỐI giúp người lạ cần cấp thiết, họ chết). Chọn REG_KIN_001 là gần nhất về mặt cấu trúc (chết + gắn với việc-chưa-làm của người kể). Đề xuất RFC bổ sung REG_KIN_006 'Từ chối giúp người lạ cần cấp thiết — họ chết đêm đó' nếu case tương tự lặp lại."
-    signature_object: OBJ_KHAN_TAY_CU
-    object_pairing_note: "Khớp tốt: khăn tay cũ thêu hoa cúc (ep_14:155), đúng category 'chiếc khăn tay cũ thêu hoa' của OBJ_KHAN_TAY_CU."
-    signature_setting: setting_TBD
-    age_range: 51-65
-    gender: nu
-    display_name: "Thắm Hường (51-65)"
-    narrative_hook: "TBD by Generator"
-    source_ep: 14
-    evidence_ref: "runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 14)"
-    hometown_detail: "Chương Mỹ (huyện Hà Nội)"
-    status: draft
-    life_status: linh_hon
-    voice:
-      region_dialect: bac
-      hometown: Hà Nội
-      pronoun_system: em
-    death:
-      type: khong_ro
-      pain: "30 năm trước từ chối mua phở cho cụ ăn xin (cụ Mai) vì nghĩ 'hôm khác' — cụ chết đói ngay đêm đó; giữ khăn thêu hoa cúc (hoa cụ thích) suốt 30 năm không dùng"
-    haunting_symbol: OBJ_KHAN_TAY_CU
-
-  - id: PAS_0117
-    char_name: Oanh Duyên
-    pillar: family_regret
-    regret_sub_archetype: REG_FAM_005
-    regret_label: "Cãi mẹ vì chuyện người yêu — mẹ mất đột ngột 1 tháng sau, chưa kịp xin lỗi"
-    archetype_fit_note: "Khớp mạnh REG_FAM_005 (cãi người thân lớn tuổi + mất trước khi xin lỗi) — chỉ khác đối tượng (mẹ thay vì ông)."
-    signature_object: GAP_CHAU_CUC
-    object_gap_note: "Vật thật: chậu cúc kim ngân mẹ trồng năm xảy ra cãi vã, con chăm lại 8 tháng cho nở (ep_16:163-165). KHÔNG có object chậu-cây-cảnh trong bible/12 — đề xuất RFC bổ sung OBJ_CHAU_CUC ('chậu cúc kim ngân của mẹ') tương tự OBJ_HOA_CUC_KHO ở PAS_0102 (2/5 batch này đều liên quan cúc — nghi mô-típ lặp lại trong nguồn, đáng cân nhắc bổ sung catalog)."
-    signature_setting: setting_TBD
-    age_range: 36-50
-    gender: nu
-    display_name: "Oanh Duyên (36-50)"
-    narrative_hook: "TBD by Generator"
-    source_ep: 16
-    evidence_ref: "runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 16)"
-    hometown_detail: "Hà Đông (quận Hà Nội)"
-    status: draft
-    life_status: linh_hon
-    voice:
-      region_dialect: bac
-      hometown: Hà Nội
-      pronoun_system: em
-    death:
-      type: khong_ro
-      pain: "Cãi mẹ vì phản đối bạn trai (anh Hùng) — giận không về nhà 1 tháng — mẹ đột tử (nhồi máu cơ tim) khi đang tưới cúc, chưa kịp xin lỗi"
-    haunting_symbol: GAP_CHAU_CUC
-
-  - id: PAS_0118
-    char_name: Thạch Vượng
-    pillar: promise_regret
-    regret_sub_archetype: REG_PRO_006
-    regret_label: "Bạn thân nhắn xin vay tiền chữa ung thư — trì hoãn xoay tiền, bạn mất trước khi kịp giúp"
-    archetype_fit_note: "Gần nhất REG_PRO_006 (bạn thân, không phản hồi kịp lúc bạn cần, bạn mất) — đúng quan hệ 'bạn thân', khác chi tiết (tiền chữa bệnh thay vì cuộc gọi giữ liên lạc)."
-    signature_object: OBJ_THU_TAY
-    object_pairing_note: "Vật thật: USB chứa thư bạn viết trước khi mất (ep_17:165-169) — vật lý là USB (kỹ thuật số), không phải giấy, nhưng chức năng tường thuật giống 'thư từ người đã mất' của OBJ_THU_TAY. Dùng OBJ_THU_TAY làm concept gần nhất, ghi rõ vật lý khác biệt."
-    signature_setting: setting_TBD
-    age_range: 36-50
-    gender: nam
-    display_name: "Thạch Vượng (36-50)"
-    narrative_hook: "TBD by Generator"
-    source_ep: 17
-    evidence_ref: "runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 17)"
-    hometown_detail: "Sóc Sơn (huyện Hà Nội)"
-    status: draft
-    life_status: linh_hon
-    voice:
-      region_dialect: bac
-      hometown: Hà Nội
-      pronoun_system: tôi
-    death:
-      type: khong_ro
-      pain: "Bạn thân từ tiểu học (Toàn) nhắn tin xin vay 200 triệu chữa ung thư gan — trì hoãn vì bận họp, chỉ xoay được 100 triệu — bạn mất trước khi kịp gửi; giữ USB chứa thư bạn viết trước khi mất suốt 3 năm"
-    haunting_symbol: OBJ_THU_TAY
+- id: PAS_0113
+  char_name: Huyền Trâm
+  pillar: love_regret
+  regret_sub_archetype: REG_LOV_003
+  regret_label: Chia tay vì người mới — chưa kịp nói lời cảm ơn trước khi anh mất
+  archetype_fit_note: Gần nhất REG_LOV_003 (chia tay + chưa kịp nói điều cần nói); KHÔNG hoàn toàn khớp — case này là chủ
+    động chọn người khác (Tuấn), không phải hiểu lầm, và điều chưa nói là 'cảm ơn' chứ không phải 'xin lỗi'.
+  signature_object: OBJ_DONG_HO_DEO_TAY_CU
+  object_pairing_note: 'Vật thật: đồng hồ xà mặt trắng viền bạc, kim dừng ở giờ hẹn đầu (ep_12:161). OBJ_DONG_HO_DEO_TAY_CU
+    khớp category (đồng hồ) nhưng pairable_pillars khai family/kindness — không phải love_regret; dùng vì không có object
+    đồng-hồ nào khác trong catalog.'
+  signature_setting: setting_TBD
+  age_range: 36-50
+  gender: nu
+  display_name: Huyền Trâm (36-50)
+  narrative_hook: TBD by Generator
+  source_ep: 12
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 12)
+  hometown_detail: Long Biên (quận Hà Nội)
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: em
+  death:
+    type: khong_ro
+    pain: Chia tay hôn phu (kỹ sư cầu Long Biên) 1 tháng trước cưới vì yêu người khác; 4 năm sau biết anh mất (sạt lở núi
+      công tác) — chưa kịp cảm ơn anh đã không trách
+  haunting_symbol: OBJ_DONG_HO_DEO_TAY_CU
+- id: PAS_0114
+  char_name: Chương Dương
+  pillar: promise_regret
+  regret_sub_archetype: REG_PRO_004
+  regret_label: Hứa chăm vườn cúc của cha — vườn chết trong 6 tháng vì bỏ bê
+  archetype_fit_note: 'Gần nhất REG_PRO_004 (hứa với người thân lớn tuổi, không giữ được); khác biệt: đây là hứa CHĂM VƯỜN
+    (di vật), không phải thăm hỏi trực tiếp.'
+  signature_object: GAP_HOA_CUC_KHO
+  object_gap_note: 'Vật thật: cánh cúc khô giữ từ vườn cha trồng, cha mất vì ung thư phổi (ep_13:167). KHÔNG có object hoa/cây
+    cảnh nào trong bible/12 (40 object) — đề xuất RFC bổ sung OBJ_CUC_KHO (''cánh cúc khô ép giấy bản'') cho bible/12 nếu
+    Mr.Long duyệt. Placeholder GAP_* KHÔNG phải mã canon.'
+  signature_setting: setting_TBD
+  age_range: 36-50
+  gender: nam
+  display_name: Chương Dương (36-50)
+  narrative_hook: TBD by Generator
+  source_ep: 13
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 13)
+  hometown_detail: Mỹ Đức (huyện Hà Nội)
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: tôi
+  death:
+    type: khong_ro
+    pain: Hứa cha (mất vì ung thư phổi) sẽ chăm vườn cúc cha trồng 4 năm bằng tay — vườn chết trong 6 tháng vì công việc bận,
+      hoa cúc trồng lại không bằng xưa
+  haunting_symbol: GAP_HOA_CUC_KHO
+- id: PAS_0115
+  char_name: Thắm Hường
+  pillar: kindness_regret
+  regret_sub_archetype: REG_KIN_001
+  regret_label: Từ chối cho cụ ăn xin bát phở, hẹn 'hôm khác' — cụ chết đói đêm đó
+  archetype_fit_note: KHÔNG có archetype khớp trong 5 REG_KIN hiện có (tất cả 5 đều về 'chưa trả ơn NGƯỜI GIÚP MÌNH', ngược
+    hướng với case này — TỪ CHỐI giúp người lạ cần cấp thiết, họ chết). Chọn REG_KIN_001 là gần nhất về mặt cấu trúc (chết
+    + gắn với việc-chưa-làm của người kể). Đề xuất RFC bổ sung REG_KIN_006 'Từ chối giúp người lạ cần cấp thiết — họ chết
+    đêm đó' nếu case tương tự lặp lại.
+  signature_object: OBJ_KHAN_TAY_CU
+  object_pairing_note: 'Khớp tốt: khăn tay cũ thêu hoa cúc (ep_14:155), đúng category ''chiếc khăn tay cũ thêu hoa'' của OBJ_KHAN_TAY_CU.'
+  signature_setting: setting_TBD
+  age_range: 51-65
+  gender: nu
+  display_name: Thắm Hường (51-65)
+  narrative_hook: TBD by Generator
+  source_ep: 14
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 14)
+  hometown_detail: Chương Mỹ (huyện Hà Nội)
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: em
+  death:
+    type: khong_ro
+    pain: 30 năm trước từ chối mua phở cho cụ ăn xin (cụ Mai) vì nghĩ 'hôm khác' — cụ chết đói ngay đêm đó; giữ khăn thêu
+      hoa cúc (hoa cụ thích) suốt 30 năm không dùng
+  haunting_symbol: OBJ_KHAN_TAY_CU
+- id: PAS_0117
+  char_name: Oanh Duyên
+  pillar: family_regret
+  regret_sub_archetype: REG_FAM_005
+  regret_label: Cãi mẹ vì chuyện người yêu — mẹ mất đột ngột 1 tháng sau, chưa kịp xin lỗi
+  archetype_fit_note: Khớp mạnh REG_FAM_005 (cãi người thân lớn tuổi + mất trước khi xin lỗi) — chỉ khác đối tượng (mẹ thay
+    vì ông).
+  signature_object: GAP_CHAU_CUC
+  object_gap_note: 'Vật thật: chậu cúc kim ngân mẹ trồng năm xảy ra cãi vã, con chăm lại 8 tháng cho nở (ep_16:163-165). KHÔNG
+    có object chậu-cây-cảnh trong bible/12 — đề xuất RFC bổ sung OBJ_CHAU_CUC (''chậu cúc kim ngân của mẹ'') tương tự OBJ_HOA_CUC_KHO
+    ở PAS_0102 (2/5 batch này đều liên quan cúc — nghi mô-típ lặp lại trong nguồn, đáng cân nhắc bổ sung catalog).'
+  signature_setting: setting_TBD
+  age_range: 36-50
+  gender: nu
+  display_name: Oanh Duyên (36-50)
+  narrative_hook: TBD by Generator
+  source_ep: 16
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 16)
+  hometown_detail: Hà Đông (quận Hà Nội)
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: em
+  death:
+    type: khong_ro
+    pain: Cãi mẹ vì phản đối bạn trai (anh Hùng) — giận không về nhà 1 tháng — mẹ đột tử (nhồi máu cơ tim) khi đang tưới cúc,
+      chưa kịp xin lỗi
+  haunting_symbol: GAP_CHAU_CUC
+- id: PAS_0118
+  char_name: Thạch Vượng
+  pillar: promise_regret
+  regret_sub_archetype: REG_PRO_006
+  regret_label: Bạn thân nhắn xin vay tiền chữa ung thư — trì hoãn xoay tiền, bạn mất trước khi kịp giúp
+  archetype_fit_note: Gần nhất REG_PRO_006 (bạn thân, không phản hồi kịp lúc bạn cần, bạn mất) — đúng quan hệ 'bạn thân',
+    khác chi tiết (tiền chữa bệnh thay vì cuộc gọi giữ liên lạc).
+  signature_object: OBJ_THU_TAY
+  object_pairing_note: 'Vật thật: USB chứa thư bạn viết trước khi mất (ep_17:165-169) — vật lý là USB (kỹ thuật số), không
+    phải giấy, nhưng chức năng tường thuật giống ''thư từ người đã mất'' của OBJ_THU_TAY. Dùng OBJ_THU_TAY làm concept gần
+    nhất, ghi rõ vật lý khác biệt.'
+  signature_setting: setting_TBD
+  age_range: 36-50
+  gender: nam
+  display_name: Thạch Vượng (36-50)
+  narrative_hook: TBD by Generator
+  source_ep: 17
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 17)
+  hometown_detail: Sóc Sơn (huyện Hà Nội)
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: tôi
+  death:
+    type: khong_ro
+    pain: Bạn thân từ tiểu học (Toàn) nhắn tin xin vay 200 triệu chữa ung thư gan — trì hoãn vì bận họp, chỉ xoay được 100
+      triệu — bạn mất trước khi kịp gửi; giữ USB chứa thư bạn viết trước khi mất suốt 3 năm
+  haunting_symbol: OBJ_THU_TAY
+- id: PAS_0116
+  char_name: Duy Khiêm
+  pillar: self_regret
+  regret_sub_archetype: REG_SELF_004
+  regret_label: 10 nam truoc dinh tu tu vi bo that vong thi truot Bach Khoa — thay minh trong guong vo, chon goi cap cuu thay
+    vi de mau chay — giu manh guong 10 nam, cuoi cung nem xuong ho
+  archetype_fit_note: 'Khong khop hoan hao (004 la so benh vien/bo qua dau hieu suc khoe, khong phai tu tu). CUM VAT bible/24:
+    ep_15/25/35/45 deu ''manh guong/kinh vo cuu nguoi dinh tu tu'' — nguoi dan chuyen (driver) TRUC TIEP callback xuyen 4
+    tap (''dem muoi lam... dem nay se co cau trai khac... cung cum vat''). De xuat RFC bible/11 REG_SELF_005 ''Tu tu bat thanh
+    — tu nhan ra minh trong guong vo, chon song'' cho ca cum 4 nhan vat nay.'
+  signature_setting: setting_TBD
+  age_range: 26-35
+  gender: nam
+  display_name: Duy Khiêm (26-35)
+  narrative_hook: TBD by Generator
+  source_ep: 15
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 15)
+  hometown_detail: Hoài Đức (huyện Hà Nội)
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: tôi
+  death:
+    type: khong_ro
+    pain: 10 nam truoc dinh tu tu vi bo that vong thi truot Bach Khoa — thay minh trong guong vo, chon goi cap cuu thay vi
+      de mau chay — giu manh guong 10 nam, cuoi cung nem xuong ho
+  signature_object: GAP_MANH_GUONG_VO
+  haunting_symbol: GAP_MANH_GUONG_VO
+  object_gap_note: Manh guong tu dap dem dinh tu tu, giu 10 nam, cuoi tap nem xuong ho Dong Mo (ep_15:175-191). KHONG co object
+    guong/kinh nao trong bible/12 (40 object). Placeholder GAP_MANH_GUONG_VO dung CHUNG cho ca 4 nhan vat cum nay (cung loai
+    vat, chi tiet rieng khac nhau).
+- id: PAS_0119
+  char_name: Nhã Miên
+  pillar: love_regret
+  regret_sub_archetype: REG_LOV_003
+  regret_label: Chia tay anh Khang vi me ep — anh tu tu sau do; chua doc sau chi tiet vat (context-level evidence)
+  archetype_fit_note: Kha khop (chia tay + tiec) nhung nguyen nhan la me ep chu khong phai hieu lam.
+  signature_setting: setting_TBD
+  age_range: 26-35
+  gender: nu
+  display_name: Nhã Miên (26-35)
+  narrative_hook: TBD by Generator
+  source_ep: 18
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 18)
+  hometown_detail: Hà Nội
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: em
+  death:
+    type: khong_ro
+    pain: Chia tay anh Khang vi me ep — anh tu tu sau do; chua doc sau chi tiet vat (context-level evidence)
+  signature_object: GAP_CHUA_XAC_DINH
+  haunting_symbol: GAP_CHUA_XAC_DINH
+  object_gap_note: Chua doc sau speech_evidence de xac dinh vat cu the (chi dung context-level evidence cho batch nay) — can
+    doc sau truoc khi chot object thuc, tam de placeholder ro rang.
+- id: PAS_0120
+  char_name: Nhàn Thục
+  pillar: kindness_regret
+  regret_sub_archetype: REG_KIN_001
+  regret_label: Ngai di tang ban vi ly do ca nhan — ban chet co don, khong ai o ben
+  archetype_fit_note: 'Gan nhat (nguoi mat + chua lam dieu can lam) — khac chi tiet: day la NGAI DI TANG (khong phai chua
+    kip THAM truoc khi mat).'
+  signature_setting: setting_TBD
+  age_range: 36-50
+  gender: nu
+  display_name: Nhàn Thục (36-50)
+  narrative_hook: TBD by Generator
+  source_ep: 19
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 19)
+  hometown_detail: Đông Anh (huyện Hà Nội)
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: em
+  death:
+    type: khong_ro
+    pain: Ngai di tang ban vi ly do ca nhan — ban chet co don, khong ai o ben
+  signature_object: GAP_CHUA_XAC_DINH
+  haunting_symbol: GAP_CHUA_XAC_DINH
+  object_gap_note: Chua doc sau speech_evidence de xac dinh vat cu the (chi dung context-level evidence cho batch nay) — can
+    doc sau truoc khi chot object thuc, tam de placeholder ro rang.
+- id: PAS_0121
+  char_name: Vĩ Huân
+  pillar: self_regret
+  regret_sub_archetype: REG_SELF_003
+  regret_label: Danh mat cam giac ve chinh minh — quen nguoi yeu vi mai theo duoi su nghiep
+  archetype_fit_note: 'Gan nhat (uu tien su nghiep, mat quan he) — khac: doi tuong la NGUOI YEU khong phai CON.'
+  signature_setting: setting_TBD
+  age_range: 26-35
+  gender: nam
+  display_name: Vĩ Huân (26-35)
+  narrative_hook: TBD by Generator
+  source_ep: 20
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 20)
+  hometown_detail: Cầu Giấy (quận Hà Nội)
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: tôi
+  death:
+    type: khong_ro
+    pain: Danh mat cam giac ve chinh minh — quen nguoi yeu vi mai theo duoi su nghiep
+  signature_object: GAP_CHUA_XAC_DINH
+  haunting_symbol: GAP_CHUA_XAC_DINH
+  object_gap_note: Chua doc sau speech_evidence de xac dinh vat cu the (chi dung context-level evidence cho batch nay) — can
+    doc sau truoc khi chot object thuc, tam de placeholder ro rang.
+- id: PAS_0122
+  char_name: Tân Chiến
+  pillar: family_regret
+  regret_sub_archetype: REG_FAM_001
+  regret_label: Me mat khi sinh minh ra — khong co lay 1 tam anh cua me de lai
+  archetype_fit_note: KHONG khop tot — 6 archetype FAM hien co deu ve nguoi THAN DA TUNG HIEN DIEN roi mat; case nay la CHUA
+    TUNG BIET me (me mat khi sinh minh, khong co anh). De xuat RFC bo sung archetype 'chua tung biet mat — khong co anh de
+    nho'.
+  signature_setting: setting_TBD
+  age_range: 36-50
+  gender: nam
+  display_name: Tân Chiến (36-50)
+  narrative_hook: TBD by Generator
+  source_ep: 21
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 21)
+  hometown_detail: Nam Định
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Nam Định
+    pronoun_system: tôi
+  death:
+    type: khong_ro
+    pain: Me mat khi sinh minh ra — khong co lay 1 tam anh cua me de lai
+  signature_object: GAP_CHUA_XAC_DINH
+  haunting_symbol: GAP_CHUA_XAC_DINH
+  object_gap_note: Chua doc sau speech_evidence de xac dinh vat cu the (chi dung context-level evidence cho batch nay) — can
+    doc sau truoc khi chot object thuc, tam de placeholder ro rang.
+- id: PAS_0123
+  char_name: Tuyền Ngần
+  pillar: promise_regret
+  regret_sub_archetype: REG_PRO_006
+  regret_label: Hua voi thay dai hoc se ve tham — muoi nam chua ve
+  archetype_fit_note: Kha khop (hua giu lien lac/tham hoi voi nguoi quan trong, khong giu duoc 10 nam) — quan he la thay-tro
+    chu khong phai ban than.
+  signature_setting: setting_TBD
+  age_range: 26-35
+  gender: nu
+  display_name: Tuyền Ngần (26-35)
+  narrative_hook: TBD by Generator
+  source_ep: 22
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 22)
+  hometown_detail: Bắc Ninh
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Bắc Ninh
+    pronoun_system: em
+  death:
+    type: khong_ro
+    pain: Hua voi thay dai hoc se ve tham — muoi nam chua ve
+  signature_object: GAP_CHUA_XAC_DINH
+  haunting_symbol: GAP_CHUA_XAC_DINH
+  object_gap_note: Chua doc sau speech_evidence de xac dinh vat cu the (chi dung context-level evidence cho batch nay) — can
+    doc sau truoc khi chot object thuc, tam de placeholder ro rang.
+- id: PAS_0124
+  char_name: Lợi Lĩnh
+  pillar: love_regret
+  regret_sub_archetype: REG_LOV_001
+  regret_label: Yeu tham thu ky hai muoi nam, chua tung to tinh
+  archetype_fit_note: Khop tot (yeu tham, khong tho tinh, keo dai nhieu nam) — 20 nam thay vi den luc nguoi mat.
+  signature_setting: setting_TBD
+  age_range: 36-50
+  gender: nam
+  display_name: Lợi Lĩnh (36-50)
+  narrative_hook: TBD by Generator
+  source_ep: 23
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 23)
+  hometown_detail: Hải Phòng
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Hải Phòng
+    pronoun_system: tôi
+  death:
+    type: khong_ro
+    pain: Yeu tham thu ky hai muoi nam, chua tung to tinh
+  signature_object: GAP_CHUA_XAC_DINH
+  haunting_symbol: GAP_CHUA_XAC_DINH
+  object_gap_note: Chua doc sau speech_evidence de xac dinh vat cu the (chi dung context-level evidence cho batch nay) — can
+    doc sau truoc khi chot object thuc, tam de placeholder ro rang.
+- id: PAS_0125
+  char_name: Xuyến Nhài
+  pillar: kindness_regret
+  regret_sub_archetype: REG_KIN_003
+  regret_label: Tu choi day hoc cho chau ho — chau mat tre
+  archetype_fit_note: 'Gan nhat (tu choi/khong the giup, nguoi do gap chuyen roi) — khac: la TU CHOI DAY HOC (khong phai chua
+    tra on), va nguoi bi anh huong la CHAU chu khong phai dong nghiep.'
+  signature_setting: setting_TBD
+  age_range: 51-65
+  gender: nu
+  display_name: Xuyến Nhài (51-65)
+  narrative_hook: TBD by Generator
+  source_ep: 24
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 24)
+  hometown_detail: Hà Nam
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: em
+  death:
+    type: khong_ro
+    pain: Tu choi day hoc cho chau ho — chau mat tre
+  signature_object: GAP_CHUA_XAC_DINH
+  haunting_symbol: GAP_CHUA_XAC_DINH
+  object_gap_note: Chua doc sau speech_evidence de xac dinh vat cu the (chi dung context-level evidence cho batch nay) — can
+    doc sau truoc khi chot object thuc, tam de placeholder ro rang.
+- id: PAS_0126
+  char_name: Danh Hiển
+  pillar: self_regret
+  regret_sub_archetype: REG_SELF_004
+  regret_label: Ung thu phoi giai doan 3 nam 36 tuoi (hut thuoc+ruou 20 nam, khong kham dinh ky) — phau thuat cat nua phoi
+    trai, song nhung khong nhu xua
+  archetype_fit_note: 'Khop tot (bo be suc khoe — hut thuoc/uong ruou 20 nam — khong kham dinh ky — ung thu phoi). CUM VAT
+    bible/24 (xem PAS ep_15): mang ''kinh phan chieu chinh minh hoi khoe'' — vat KHAC loai (khong phai manh vo) nhung CUNG
+    cum callback voi ep_15/35/45.'
+  signature_setting: setting_TBD
+  age_range: 36-50
+  gender: nam
+  display_name: Danh Hiển (36-50)
+  narrative_hook: TBD by Generator
+  source_ep: 25
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 25)
+  hometown_detail: Thái Nguyên
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: tôi
+  death:
+    type: khong_ro
+    pain: Ung thu phoi giai doan 3 nam 36 tuoi (hut thuoc+ruou 20 nam, khong kham dinh ky) — phau thuat cat nua phoi trai,
+      song nhung khong nhu xua
+  signature_object: GAP_KINH_PHAN_CHIEU
+  haunting_symbol: GAP_KINH_PHAN_CHIEU
+  object_gap_note: Kinh nguyen (khong vo) phan chieu chinh minh luc con khoe manh, mang tang ai do trong tap (ep_25:61-67,
+    chi tiet cuoi chua doc sau). Cung GAP category voi ep_15 nhung vat cu the khac (kinh nguyen vs manh vo) — dung ma rieng
+    GAP_KINH_PHAN_CHIEU.
+- id: PAS_0127
+  char_name: Thế Quyết
+  pillar: family_regret
+  regret_sub_archetype: REG_FAM_003
+  regret_label: Bo la kien truc su mat — con ngai hoc theo nghe cha
+  archetype_fit_note: 'Gan nhat (cha co chuyen mon rieng, con khong hieu/khong theo duoc) — khac: la KTS mat, khong phai cha
+    cam lang.'
+  signature_setting: setting_TBD
+  age_range: 36-50
+  gender: nam
+  display_name: Thế Quyết (36-50)
+  narrative_hook: TBD by Generator
+  source_ep: 26
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 26)
+  hometown_detail: Hà Nội
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: tôi
+  death:
+    type: khong_ro
+    pain: Bo la kien truc su mat — con ngai hoc theo nghe cha
+  signature_object: GAP_CHUA_XAC_DINH
+  haunting_symbol: GAP_CHUA_XAC_DINH
+  object_gap_note: Chua doc sau speech_evidence de xac dinh vat cu the (chi dung context-level evidence cho batch nay) — can
+    doc sau truoc khi chot object thuc, tam de placeholder ro rang.
+- id: PAS_0128
+  char_name: Kiều Thương
+  pillar: promise_regret
+  regret_sub_archetype: REG_PRO_005
+  regret_label: Hua voi ban tieu hoc giup chua benh — di nuoc ngoai quen mat
+  archetype_fit_note: Gan nhat (hua giup viec quan trong, tri hoan/quen) — quan he la BAN TIEU HOC khong phai me.
+  signature_setting: setting_TBD
+  age_range: 36-50
+  gender: nu
+  display_name: Kiều Thương (36-50)
+  narrative_hook: TBD by Generator
+  source_ep: 27
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 27)
+  hometown_detail: Sài Gòn
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: em
+  death:
+    type: khong_ro
+    pain: Hua voi ban tieu hoc giup chua benh — di nuoc ngoai quen mat
+  signature_object: GAP_CHUA_XAC_DINH
+  haunting_symbol: GAP_CHUA_XAC_DINH
+  object_gap_note: Chua doc sau speech_evidence de xac dinh vat cu the (chi dung context-level evidence cho batch nay) — can
+    doc sau truoc khi chot object thuc, tam de placeholder ro rang.
+- id: PAS_0129
+  char_name: Đàn Luân
+  pillar: love_regret
+  regret_sub_archetype: REG_LOV_005
+  regret_label: Ly hon vo 30 nam truoc — vo vua mat, chua kip noi loi gi
+  archetype_fit_note: 'Gan nhat (vo/chong lau nam, tiec chua noi loi can noi) — khac: DA LY HON 30 nam truoc, vo vua moi mat
+    (khong phai con chung song den cuoi).'
+  signature_setting: setting_TBD
+  age_range: 51-65
+  gender: nam
+  display_name: Đàn Luân (51-65)
+  narrative_hook: TBD by Generator
+  source_ep: 28
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 28)
+  hometown_detail: Hà Tĩnh
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: tôi
+  death:
+    type: khong_ro
+    pain: Ly hon vo 30 nam truoc — vo vua mat, chua kip noi loi gi
+  signature_object: GAP_CHUA_XAC_DINH
+  haunting_symbol: GAP_CHUA_XAC_DINH
+  object_gap_note: Chua doc sau speech_evidence de xac dinh vat cu the (chi dung context-level evidence cho batch nay) — can
+    doc sau truoc khi chot object thuc, tam de placeholder ro rang.
+- id: PAS_0130
+  char_name: Ý Thơ
+  pillar: kindness_regret
+  regret_sub_archetype: REG_KIN_003
+  regret_label: Tu choi hien mau cho ban cung phong nam 2017 — ban chet
+  archetype_fit_note: Gan nhat (tu choi giup khi ban can, ban gap chuyen) — la TU CHOI HIEN MAU cho ban cung phong.
+  signature_setting: setting_TBD
+  age_range: 26-35
+  gender: nu
+  display_name: Ý Thơ (26-35)
+  narrative_hook: TBD by Generator
+  source_ep: 29
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 29)
+  hometown_detail: Đà Nẵng
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: em
+  death:
+    type: khong_ro
+    pain: Tu choi hien mau cho ban cung phong nam 2017 — ban chet
+  signature_object: GAP_CHUA_XAC_DINH
+  haunting_symbol: GAP_CHUA_XAC_DINH
+  object_gap_note: Chua doc sau speech_evidence de xac dinh vat cu the (chi dung context-level evidence cho batch nay) — can
+    doc sau truoc khi chot object thuc, tam de placeholder ro rang.
+- id: PAS_0132
+  char_name: Khuê Diệp
+  pillar: family_regret
+  regret_sub_archetype: REG_FAM_001
+  regret_label: Me mat thang tu muoi ba nam truoc — con dem hoa cuc len mo moi thang
+  archetype_fit_note: Kha khop (me mat, con tuong nho dinh ky) — 13 nam truoc, hanh dong la dem cuc moi thang (khac 'doi con
+    ve Tet').
+  signature_setting: setting_TBD
+  age_range: 51-65
+  gender: nu
+  display_name: Khuê Diệp (51-65)
+  narrative_hook: TBD by Generator
+  source_ep: 31
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 31)
+  hometown_detail: Hưng Yên
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: em
+  death:
+    type: khong_ro
+    pain: Me mat thang tu muoi ba nam truoc — con dem hoa cuc len mo moi thang
+  signature_object: GAP_HOA_CUC
+  haunting_symbol: GAP_HOA_CUC
+  object_gap_note: Dem cuc len mo me moi thang suot 13 nam — CUNG GAP category voi PAS_0114/0117 (hoa cuc, 3/32 batch nay
+    lien quan cuc — mo-tip lap lai manh, cang cung co de xuat RFC bible/12).
+- id: PAS_0133
+  char_name: Cần Kiên
+  pillar: love_regret
+  regret_sub_archetype: REG_LOV_005
+  regret_label: Vo mat dot ngot thang tu (tai nan/benh chua ro) — chan vo dang may con do dang
+  archetype_fit_note: Kha khop (vo chet dot ngot, tiec chua noi dieu gi) — vo con tre (khong phai gia), chan dang may con
+    do dang.
+  signature_setting: setting_TBD
+  age_range: 36-50
+  gender: nam
+  display_name: Cần Kiên (36-50)
+  narrative_hook: TBD by Generator
+  source_ep: 32
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 32)
+  hometown_detail: Bắc Giang
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: tôi
+  death:
+    type: khong_ro
+    pain: Vo mat dot ngot thang tu (tai nan/benh chua ro) — chan vo dang may con do dang
+  signature_object: GAP_CHAN_MAY_DO
+  haunting_symbol: GAP_CHAN_MAY_DO
+  object_gap_note: Chan vo dang may khi mat dot ngot thang tu — giu chan may do dang. Khong co object 'chan/do may do dang'
+    trong bible/12 — gan nhat OBJ_AO_LEN_NAU (ao len chua dan xong) nhung do la AO khong phai CHAN — khac category ro, dung
+    GAP.
+- id: PAS_0134
+  char_name: Xuân Uyên
+  pillar: promise_regret
+  regret_sub_archetype: REG_PRO_004
+  regret_label: Hua dua ban que len Ha Noi di tau dien — ban mat truoc khi kip thuc hien
+  archetype_fit_note: Gan nhat (hua dieu gi do voi nguoi quen, khong kip) — hua dua BAN QUE di tau dien, ban mat truoc khi
+    kip.
+  signature_setting: setting_TBD
+  age_range: 36-50
+  gender: nu
+  display_name: Xuân Uyên (36-50)
+  narrative_hook: TBD by Generator
+  source_ep: 33
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 33)
+  hometown_detail: Hà Nội
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: em
+  death:
+    type: khong_ro
+    pain: Hua dua ban que len Ha Noi di tau dien — ban mat truoc khi kip thuc hien
+  signature_object: GAP_CHUA_XAC_DINH
+  haunting_symbol: GAP_CHUA_XAC_DINH
+  object_gap_note: Chua doc sau speech_evidence de xac dinh vat cu the (chi dung context-level evidence cho batch nay) — can
+    doc sau truoc khi chot object thuc, tam de placeholder ro rang.
+- id: PAS_0135
+  char_name: Nghị Đôn
+  pillar: kindness_regret
+  regret_sub_archetype: REG_KIN_004
+  regret_label: Khong thap huong cho hang xom cu suot muoi nam — bac hang xom mat muoi nam truoc
+  archetype_fit_note: Gan nhat (nguoi quen lau nam giup do, chua tra on/tuong nho) — la HANG XOM (khong phai bac xe om), muoi
+    nam khong thap huong.
+  signature_setting: setting_TBD
+  age_range: 36-50
+  gender: nam
+  display_name: Nghị Đôn (36-50)
+  narrative_hook: TBD by Generator
+  source_ep: 34
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 34)
+  hometown_detail: Vĩnh Phúc
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: tôi
+  death:
+    type: khong_ro
+    pain: Khong thap huong cho hang xom cu suot muoi nam — bac hang xom mat muoi nam truoc
+  signature_object: GAP_CHUA_XAC_DINH
+  haunting_symbol: GAP_CHUA_XAC_DINH
+  object_gap_note: Chua doc sau speech_evidence de xac dinh vat cu the (chi dung context-level evidence cho batch nay) — can
+    doc sau truoc khi chot object thuc, tam de placeholder ro rang.
+- id: PAS_0136
+  char_name: Kỳ Bách
+  pillar: self_regret
+  regret_sub_archetype: REG_SELF_004
+  regret_label: 2 nam truoc suyt tu tu vi that nghiep sau tot nghiep Dai hoc Hang khong — thay minh trong guong vo, chon song
+    — giu manh guong 2 nam, tang bac si tam ly
+  archetype_fit_note: Cung cum vat bible/24 voi ep_15/25/45 (xem PAS_0116) — manh guong/kinh cuu nguoi dinh tu tu, callback
+    truc tiep tu driver ('tuong tu EP15 Phong + EP25 Van Quan').
+  signature_setting: setting_TBD
+  age_range: 26-35
+  gender: nam
+  display_name: Kỳ Bách (26-35)
+  narrative_hook: TBD by Generator
+  source_ep: 35
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 35)
+  hometown_detail: Nghệ An
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: trung
+    hometown: Nghệ An
+    pronoun_system: tôi
+  death:
+    type: khong_ro
+    pain: 2 nam truoc suyt tu tu vi that nghiep sau tot nghiep Dai hoc Hang khong — thay minh trong guong vo, chon song —
+      giu manh guong 2 nam, tang bac si tam ly
+  signature_object: GAP_MANH_GUONG_VO
+  haunting_symbol: GAP_MANH_GUONG_VO
+  object_gap_note: Manh guong tu dap 2 nam truoc dinh tu tu (that nghiep sau tot nghiep hang khong), cuoi tap tang bac si
+    tam ly. Dung chung GAP_MANH_GUONG_VO voi PAS_0116 (cum vat).
+- id: PAS_0137
+  char_name: Thuần Vạn
+  pillar: family_regret
+  regret_sub_archetype: REG_FAM_004
+  regret_label: 'CANH BAO CONTINUITY: context nhac ten ''Khai Phong'' — nhan vat chinh da khoa bible/31. Em gai nhan vat nay
+    mat tai nan xe, tung yeu Khai Phong ma anh trai khong biet. De nghi Mr.Long xac nhan day co phai lien ket co chu dich
+    voi canon chinh truoc khi duyet regret_label cuoi cung.'
+  archetype_fit_note: 'Gan nhat (em mat, anh o xa khong kip) — em gai mat tai nan xe, anh chua biet em da co nguoi yeu (Khai
+    Phong — CANH BAO: cham nhan vat chinh da khoa bible/31, can Mr.Long xac nhan).'
+  signature_setting: setting_TBD
+  age_range: 36-50
+  gender: nam
+  display_name: Thuần Vạn (36-50)
+  narrative_hook: TBD by Generator
+  source_ep: 36
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 36)
+  hometown_detail: Lào Cai
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: tôi
+  death:
+    type: khong_ro
+    pain: 'CANH BAO CONTINUITY: context nhac ten ''Khai Phong'' — nhan vat chinh da khoa bible/31. Em gai nhan vat nay mat
+      tai nan xe, tung yeu Khai Phong ma anh trai khong biet. De nghi Mr.Long xac nhan day co phai lien ket co chu dich voi
+      canon chinh truoc khi duyet regret_label cuoi cung.'
+  signature_object: GAP_CHUA_XAC_DINH
+  haunting_symbol: GAP_CHUA_XAC_DINH
+  object_gap_note: Chua doc sau speech_evidence de xac dinh vat cu the (chi dung context-level evidence cho batch nay) — can
+    doc sau truoc khi chot object thuc, tam de placeholder ro rang.
+- id: PAS_0138
+  char_name: Sen Lụa
+  pillar: family_regret
+  regret_sub_archetype: REG_FAM_002
+  regret_label: Vo chong di xe may pho Hue — chong mat tai nan, vo song sot
+  archetype_fit_note: Gan nhat (mat dot ngot, chua kip lam gi) — day la CHONG mat tai nan xe may (khong phai ba noi).
+  signature_setting: setting_TBD
+  age_range: 26-35
+  gender: nu
+  display_name: Sen Lụa (26-35)
+  narrative_hook: TBD by Generator
+  source_ep: 37
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 37)
+  hometown_detail: Hà Nội
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: em
+  death:
+    type: khong_ro
+    pain: Vo chong di xe may pho Hue — chong mat tai nan, vo song sot
+  signature_object: GAP_CHUA_XAC_DINH
+  haunting_symbol: GAP_CHUA_XAC_DINH
+  object_gap_note: Chua doc sau speech_evidence de xac dinh vat cu the (chi dung context-level evidence cho batch nay) — can
+    doc sau truoc khi chot object thuc, tam de placeholder ro rang.
+- id: PAS_0139
+  char_name: Tráng Doãn
+  pillar: promise_regret
+  regret_sub_archetype: REG_PRO_006
+  regret_label: Hua tang qua sinh nhat 18 cho ban cap ba — quen 20 nam, ban da mat truoc do
+  archetype_fit_note: Gan nhat (hua voi ban, khong giu — 20 nam quen) — hua tang qua sinh nhat 18 cho ban cap 3, ban mat truoc
+    sinh nhat.
+  signature_setting: setting_TBD
+  age_range: 26-35
+  gender: nam
+  display_name: Tráng Doãn (26-35)
+  narrative_hook: TBD by Generator
+  source_ep: 38
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 38)
+  hometown_detail: Quảng Ninh
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: tôi
+  death:
+    type: khong_ro
+    pain: Hua tang qua sinh nhat 18 cho ban cap ba — quen 20 nam, ban da mat truoc do
+  signature_object: GAP_CHUA_XAC_DINH
+  haunting_symbol: GAP_CHUA_XAC_DINH
+  object_gap_note: Chua doc sau speech_evidence de xac dinh vat cu the (chi dung context-level evidence cho batch nay) — can
+    doc sau truoc khi chot object thuc, tam de placeholder ro rang.
+- id: PAS_0140
+  char_name: Đoan Cầm
+  pillar: kindness_regret
+  regret_sub_archetype: REG_KIN_002
+  regret_label: Khong dem com cho hang xom gia truoc nha — ba chet doi. CUNG MO-TIP voi PAS_0115 (tu choi giup nguoi gia doi/can
+    -> ho chet) — cung co de xuat RFC REG_KIN moi cho mo-tip nay.
+  archetype_fit_note: Kha khop (khong dap le/cam on nguoi giup, ho mat) — la KHONG DEM COM cho hang xom gia, ba chet doi truoc
+    nha (tuong tu PAS_0115 — 2/32 batch nay cung mo-tip 'tu choi giup nguoi gia doi -> ho chet').
+  signature_setting: setting_TBD
+  age_range: 51-65
+  gender: nu
+  display_name: Đoan Cầm (51-65)
+  narrative_hook: TBD by Generator
+  source_ep: 39
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 39)
+  hometown_detail: Quảng Bình
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: trung
+    hometown: Quảng Bình
+    pronoun_system: em
+  death:
+    type: khong_ro
+    pain: Khong dem com cho hang xom gia truoc nha — ba chet doi. CUNG MO-TIP voi PAS_0115 (tu choi giup nguoi gia doi/can
+      -> ho chet) — cung co de xuat RFC REG_KIN moi cho mo-tip nay.
+  signature_object: GAP_CHUA_XAC_DINH
+  haunting_symbol: GAP_CHUA_XAC_DINH
+  object_gap_note: Chua doc sau speech_evidence de xac dinh vat cu the (chi dung context-level evidence cho batch nay) — can
+    doc sau truoc khi chot object thuc, tam de placeholder ro rang.
+- id: PAS_0141
+  char_name: Lãm Chấn
+  pillar: family_regret
+  regret_sub_archetype: REG_FAM_006
+  regret_label: 'CANH BAO: nhan vat nay (''anh Hai'') tu xung la nguoi da goi cap cuu Ha Vy 7 nam truoc — lien ket truc tiep
+    voi canon chinh bible/31. Chua dien day tier1 day du, cho Mr.Long xem truoc.'
+  archetype_fit_note: 'CANH BAO CONTINUITY: context nhac ''anh Hai — chinh anh Hai goi cap cuu Ha Vy bay nam truoc'' — lien
+    ket TRUC TIEP toi nhan vat chinh da khoa (Ha Vy, bible/31). De nghi Mr.Long xac nhan truoc khi chot regret_label — day
+    co the la nhan vat co chu dich lien ket canon chinh, khong phai regret doc lap thong thuong.'
+  signature_setting: setting_TBD
+  age_range: 26-35
+  gender: nam
+  display_name: Lãm Chấn (26-35)
+  narrative_hook: TBD by Generator
+  source_ep: 40
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 40)
+  hometown_detail: Hà Nội
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: tôi
+  death:
+    type: khong_ro
+    pain: 'CANH BAO: nhan vat nay (''anh Hai'') tu xung la nguoi da goi cap cuu Ha Vy 7 nam truoc — lien ket truc tiep voi
+      canon chinh bible/31. Chua dien day tier1 day du, cho Mr.Long xem truoc.'
+  signature_object: GAP_CHUA_XAC_DINH
+  haunting_symbol: GAP_CHUA_XAC_DINH
+  object_gap_note: Chua doc sau speech_evidence de xac dinh vat cu the (chi dung context-level evidence cho batch nay) — can
+    doc sau truoc khi chot object thuc, tam de placeholder ro rang.
+- id: PAS_0142
+  char_name: Nhụy Lài
+  pillar: family_regret
+  regret_sub_archetype: REG_FAM_004
+  regret_label: Con gai mat vi benh — khong kip gui tin nhan cuoi cho me
+  archetype_fit_note: Gan nhat (nguoi than mat, chua kip lam dieu gi) — la CON GAI mat vi benh, chua kip gui tin cuoi cho
+    ME (nguoc huong voi 004 goc — o day nguoi ke la ME cua nguoi mat, khong phai anh cho em).
+  signature_setting: setting_TBD
+  age_range: 26-35
+  gender: nu
+  display_name: Nhụy Lài (26-35)
+  narrative_hook: TBD by Generator
+  source_ep: 41
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 41)
+  hometown_detail: Bình Định
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: trung
+    hometown: Huế
+    pronoun_system: em
+  death:
+    type: khong_ro
+    pain: Con gai mat vi benh — khong kip gui tin nhan cuoi cho me
+  signature_object: GAP_CHUA_XAC_DINH
+  haunting_symbol: GAP_CHUA_XAC_DINH
+  object_gap_note: Chua doc sau speech_evidence de xac dinh vat cu the (chi dung context-level evidence cho batch nay) — can
+    doc sau truoc khi chot object thuc, tam de placeholder ro rang.
+- id: PAS_0143
+  char_name: Ba Bảy
+  pillar: family_regret
+  regret_sub_archetype: REG_FAM_002
+  regret_label: Vo mat tai nan xe — nhan cuoi con nguyen tren tay luc mat
+  archetype_fit_note: Gan nhat (mat dot ngot, vat con lai) — vo mat tai nan xe, nhan cuoi con tren tay.
+  signature_setting: setting_TBD
+  age_range: 36-50
+  gender: nam
+  display_name: Ba Bảy (36-50)
+  narrative_hook: TBD by Generator
+  source_ep: 42
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 42)
+  hometown_detail: Bến Tre
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: nam
+    hometown: Sài Gòn
+    pronoun_system: tôi
+  death:
+    type: khong_ro
+    pain: Vo mat tai nan xe — nhan cuoi con nguyen tren tay luc mat
+  signature_object: GAP_CHUA_XAC_DINH
+  haunting_symbol: GAP_CHUA_XAC_DINH
+  object_gap_note: Chua doc sau speech_evidence de xac dinh vat cu the (chi dung context-level evidence cho batch nay) — can
+    doc sau truoc khi chot object thuc, tam de placeholder ro rang.
+- id: PAS_0144
+  char_name: Chín Được
+  pillar: promise_regret
+  regret_sub_archetype: REG_PRO_003
+  regret_label: Hua cuoi ban gai khi ban di nghia vu ve — ban khong bao gio ve
+  archetype_fit_note: Khop tot (hua cuoi, den ngay khong toi duoc) — ban di nghia vu, hua cuoi khi ve, ban khong ve.
+  signature_setting: setting_TBD
+  age_range: 36-50
+  gender: nam
+  display_name: Chín Được (36-50)
+  narrative_hook: TBD by Generator
+  source_ep: 43
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 43)
+  hometown_detail: Bình Phước
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: nam
+    hometown: Sài Gòn
+    pronoun_system: tôi
+  death:
+    type: khong_ro
+    pain: Hua cuoi ban gai khi ban di nghia vu ve — ban khong bao gio ve
+  signature_object: GAP_CHUA_XAC_DINH
+  haunting_symbol: GAP_CHUA_XAC_DINH
+  object_gap_note: Chua doc sau speech_evidence de xac dinh vat cu the (chi dung context-level evidence cho batch nay) — can
+    doc sau truoc khi chot object thuc, tam de placeholder ro rang.
+- id: PAS_0145
+  char_name: Gấm Mận
+  pillar: kindness_regret
+  regret_sub_archetype: REG_KIN_002
+  regret_label: Khong dem khuc che cho hang xom benh — ba hang xom mat
+  archetype_fit_note: Gan nhat (khong dap le nguoi gan gui, ho mat) — khong dem che cho hang xom benh, ba mat. Vung Dak Lak
+    (Tay Nguyen) khong khop gon vao bac/trung/nam — tam xep trung (theo cach goi 'mien Trung-Tay Nguyen' pho bien), can Mr.Long
+    xac nhan quy uoc vung cho khu vuc nay.
+  signature_setting: setting_TBD
+  age_range: 51-65
+  gender: nu
+  display_name: Gấm Mận (51-65)
+  narrative_hook: TBD by Generator
+  source_ep: 44
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 44)
+  hometown_detail: Đắk Lắk
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: trung
+    hometown: Huế
+    pronoun_system: em
+  death:
+    type: khong_ro
+    pain: Khong dem khuc che cho hang xom benh — ba hang xom mat
+  signature_object: GAP_CHUA_XAC_DINH
+  haunting_symbol: GAP_CHUA_XAC_DINH
+  object_gap_note: Chua doc sau speech_evidence de xac dinh vat cu the (chi dung context-level evidence cho batch nay) — can
+    doc sau truoc khi chot object thuc, tam de placeholder ro rang.
+- id: PAS_0146
+  char_name: Triều Quảng
+  pillar: self_regret
+  regret_sub_archetype: REG_SELF_004
+  regret_label: 10 nam truoc dinh tu tu vi truot thi cuoi khoa su pham — thay giao (thay Hong) cuu qua dien thoai — thay vua
+    mat nam ngoai, dem manh guong tang phong tam ly truong cu
+  archetype_fit_note: Cum vat bible/24 hoan tat voi ep_15/25/35 (xem PAS_0116) — nhan vat thu 4, thay Hong (giao vien) cuu
+    qua dien thoai, thay mat, nhan vat tang manh guong cho phong tam ly truong.
+  signature_setting: setting_TBD
+  age_range: 26-35
+  gender: nam
+  display_name: Triều Quảng (26-35)
+  narrative_hook: TBD by Generator
+  source_ep: 45
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 45)
+  hometown_detail: Bắc Ninh
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Bắc Ninh
+    pronoun_system: tôi
+  death:
+    type: khong_ro
+    pain: 10 nam truoc dinh tu tu vi truot thi cuoi khoa su pham — thay giao (thay Hong) cuu qua dien thoai — thay vua mat
+      nam ngoai, dem manh guong tang phong tam ly truong cu
+  signature_object: GAP_MANH_GUONG_VO
+  haunting_symbol: GAP_MANH_GUONG_VO
+  object_gap_note: Manh guong tu dap 10 nam truoc (that bai thi cuoi khoa cao dang su pham), thay Hong cuu qua dien thoai
+    — thay mat nam ngoai, nhan vat tang manh guong cho phong tam ly truong THCS Mai Trung. Dung chung GAP_MANH_GUONG_VO (cum
+    vat 4 tap 15/25/35/45).
+- id: PAS_0147
+  char_name: Xoan Nụ
+  pillar: promise_regret
+  regret_sub_archetype: REG_PRO_001
+  regret_label: Hua dua chau noi di bien — chau mat truoc khi kip thuc hien
+  archetype_fit_note: 'Gan nhat (hua dua di choi, khong kip) — ba hua dua CHAU NOI di bien, chau mat truoc do (nguoc vai:
+    goc la bo hua con, day la ba-chau).'
+  signature_setting: setting_TBD
+  age_range: 66+
+  gender: nu
+  display_name: Xoan Nụ (66+)
+  narrative_hook: TBD by Generator
+  source_ep: 46
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 46)
+  hometown_detail: Thái Bình
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Thái Bình
+    pronoun_system: em
+  death:
+    type: khong_ro
+    pain: Hua dua chau noi di bien — chau mat truoc khi kip thuc hien
+  signature_object: GAP_CHUA_XAC_DINH
+  haunting_symbol: GAP_CHUA_XAC_DINH
+  object_gap_note: Chua doc sau speech_evidence de xac dinh vat cu the (chi dung context-level evidence cho batch nay) — can
+    doc sau truoc khi chot object thuc, tam de placeholder ro rang.
+- id: PAS_0148
+  char_name: Đài Ngà
+  pillar: love_regret
+  regret_sub_archetype: REG_LOV_002
+  regret_label: Da mua ve may bay di du hoc — chong mat truoc ngay khoi hanh
+  archetype_fit_note: 'Gan nhat (vo/chong mat dot ngot, nguoi kia vang mat vi ly do khac) — o day la VE MAY BAY di du hoc,
+    chong mat truoc ngay di (nguoc voi goc: vo tre mat khi sinh, chong vang vi cong tac).'
+  signature_setting: setting_TBD
+  age_range: 26-35
+  gender: nu
+  display_name: Đài Ngà (26-35)
+  narrative_hook: TBD by Generator
+  source_ep: 47
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 47)
+  hometown_detail: Hà Nội
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: bac
+    hometown: Hà Nội
+    pronoun_system: em
+  death:
+    type: khong_ro
+    pain: Da mua ve may bay di du hoc — chong mat truoc ngay khoi hanh
+  signature_object: GAP_CHUA_XAC_DINH
+  haunting_symbol: GAP_CHUA_XAC_DINH
+  object_gap_note: Chua doc sau speech_evidence de xac dinh vat cu the (chi dung context-level evidence cho batch nay) — can
+    doc sau truoc khi chot object thuc, tam de placeholder ro rang.
+- id: PAS_0149
+  char_name: Thiệt Lành
+  pillar: promise_regret
+  regret_sub_archetype: REG_PRO_006
+  regret_label: Hua tang guitar cho ban cap ba — quen 20 nam, ban mat vi benh
+  archetype_fit_note: Kha khop (hua voi ban lau nam, quen — ban mat) — hua tang guitar ban cap 3, quen 20 nam, ban mat vi
+    benh.
+  signature_setting: setting_TBD
+  age_range: 36-50
+  gender: nam
+  display_name: Thiệt Lành (36-50)
+  narrative_hook: TBD by Generator
+  source_ep: 48
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 48)
+  hometown_detail: Cần Thơ
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: nam
+    hometown: Sài Gòn
+    pronoun_system: tôi
+  death:
+    type: khong_ro
+    pain: Hua tang guitar cho ban cap ba — quen 20 nam, ban mat vi benh
+  signature_object: GAP_CHUA_XAC_DINH
+  haunting_symbol: GAP_CHUA_XAC_DINH
+  object_gap_note: Chua doc sau speech_evidence de xac dinh vat cu the (chi dung context-level evidence cho batch nay) — can
+    doc sau truoc khi chot object thuc, tam de placeholder ro rang.
+- id: PAS_0150
+  char_name: Sáu Mến
+  pillar: kindness_regret
+  regret_sub_archetype: REG_KIN_005
+  regret_label: Do mot co gai gap mua 1 lan nhung khong tiep tuc giup do — co gai do sau tu tu vi khong ai giup them
+  archetype_fit_note: Gan nhat (giup nguoi la 1 lan, khong theo den cung) — do co gai gap mua 1 lan nhung KHONG TIEP TUC giup,
+    co gai do sau tu tu.
+  signature_setting: setting_TBD
+  age_range: 36-50
+  gender: nu
+  display_name: Sáu Mến (36-50)
+  narrative_hook: TBD by Generator
+  source_ep: 49
+  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 49)
+  hometown_detail: Sóc Trăng
+  status: draft
+  life_status: linh_hon
+  voice:
+    region_dialect: nam
+    hometown: Sài Gòn
+    pronoun_system: em
+  death:
+    type: khong_ro
+    pain: Do mot co gai gap mua 1 lan nhung khong tiep tuc giup do — co gai do sau tu tu vi khong ai giup them
+  signature_object: GAP_CHUA_XAC_DINH
+  haunting_symbol: GAP_CHUA_XAC_DINH
+  object_gap_note: Chua doc sau speech_evidence de xac dinh vat cu the (chi dung context-level evidence cho batch nay) — can
+    doc sau truoc khi chot object thuc, tam de placeholder ro rang.
