@@ -6,8 +6,9 @@ claims:
     status: released
   bp7_narrative:
     claimed_at: '2026-07-04T18:26:35'
+    released_at: '2026-07-04T20:18:34'
     session: CMD_BUILD
-    status: active
+    status: released
   g2_character:
     claimed_at: '2026-07-04T20:06:00'
     released_at: '2026-07-04T20:21:35'
