@@ -9,8 +9,11 @@ claims:
     released_at: '2026-07-04T20:18:34'
     session: CMD_BUILD
     status: released
+  bp8_production:
+    claimed_at: '2026-07-04T20:39:17'
+    session: CMD_BUILD
+    status: active
   g2_character:
-    claimed_at: '2026-07-04T20:06:00'
-    released_at: '2026-07-04T20:21:35'
+    claimed_at: '2026-07-04T20:39:19'
     session: G2_EXECUTOR
-    status: released
+    status: active
