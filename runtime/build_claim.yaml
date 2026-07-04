@@ -4,6 +4,10 @@ claims:
     released_at: '2026-07-04T18:08:39'
     session: CMD_BUILD
     status: released
+  bp7_narrative:
+    claimed_at: '2026-07-04T18:26:35'
+    session: CMD_BUILD
+    status: active
   g2_character:
     claimed_at: '2026-07-04T18:11:16'
     session: G2_EXECUTOR
