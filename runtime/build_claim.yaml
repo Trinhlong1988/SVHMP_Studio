@@ -1,5 +1,6 @@
 claims:
   bp6_decision:
     claimed_at: '2026-07-04T13:04:26'
+    released_at: '2026-07-04T18:08:39'
     session: CMD_BUILD
-    status: active
+    status: released
