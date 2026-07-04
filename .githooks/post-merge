@@ -1,3 +1,4 @@
 #!/bin/sh
-command -v git-lfs >/dev/null 2>&1 || { printf >&2 "\n%s\n\n" "This repository is configured for Git LFS but 'git-lfs' was not found on your path. If you no longer wish to use Git LFS, remove this hook by deleting the 'post-merge' file in the hooks directory (set by 'core.hookspath'; usually '.git/hooks')."; exit 2; }
-git lfs post-merge "$@"
+# git-lfs optional (may Admin khong co lfs) — skip neu thieu, KHONG bao loi false exit-2
+# (bug 4/7, mirror pre-push, per Mr.Long authorization 2026-07-04 — xem post-checkout)
+if command -v git-lfs >/dev/null 2>&1; then git lfs post-merge "$@" || exit $?; fi
