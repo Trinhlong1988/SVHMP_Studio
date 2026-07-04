@@ -11,8 +11,9 @@ claims:
     status: released
   bp8_production:
     claimed_at: '2026-07-04T20:39:17'
+    released_at: '2026-07-04T21:10:05'
     session: CMD_BUILD
-    status: active
+    status: released
   g2_character:
     claimed_at: '2026-07-04T20:52:10'
     session: G2_EXECUTOR
