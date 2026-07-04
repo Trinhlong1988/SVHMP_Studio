@@ -14,7 +14,6 @@ claims:
     session: CMD_BUILD
     status: active
   g2_character:
-    claimed_at: '2026-07-04T20:39:19'
-    released_at: '2026-07-04T20:47:42'
+    claimed_at: '2026-07-04T20:52:10'
     session: G2_EXECUTOR
-    status: released
+    status: active
