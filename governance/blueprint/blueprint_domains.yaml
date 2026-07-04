@@ -764,19 +764,17 @@ domains:
       target_milestone: M4_video_publisher
       blocking_dependency: "video pipeline (M4) + Mr.Long duyet kenh"
     schema:
-      status: planned
-      planned_path: governance/blueprint/schemas/publish_manifest_schema.yaml
-      owner: publisher
-      reason_not_exists_yet: "Metadata dang (title/desc/tag) chua chuan hoa."
-      target_milestone: M4_video_publisher
-      blocking_dependency: "Mr.Long duyet format metadata kenh"
+      status: exists
+      path: governance/blueprint/bp9/content_policy.yaml
+      note: "BP9 field-hoa (4/7): 2 hard_boundary (HB01 mo_ta_chi_tiet + HB02 truc_loi_gan_kem)
+            + sensitivity tier + disclaimer rule. Metadata dang (title/desc/tag) van CHUA
+            chuan hoa (ngoai pham vi BP9 — chi phan COMPLIANCE cua schema duoc field-hoa)."
     validator:
-      status: planned
-      planned_path: tools/publish_gate.py
-      owner: publisher
-      reason_not_exists_yet: "Gate dang bai phu thuoc publish manifest schema chua co."
-      target_milestone: M4_video_publisher
-      blocking_dependency: "publish_manifest_schema (M4)"
+      status: exists
+      path: tools/bp9_compliance_check.py
+      note: "BP9 field-hoa (4/7): validator CAU TRUC (BP-layer, kiem content_policy/policy_gates
+            hop le) — KHAC runtime episode-scanner that luc publish (tools/publish_gate.py,
+            VAN planned, G8 QA Runtime se xay + wire ci_gate sau, RANG BUOC RIENG TASK_BP9)."
     reader: [analytics]
     writer: [publisher]
     lifecycle: draft

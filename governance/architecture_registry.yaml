@@ -191,6 +191,12 @@ domains:
       - governance/blueprint/bp8/distribution_spec.yaml  # video/publisher planned mirror bp4, analytics exists
       - reports/BP8_REPORT.md
     bp8_check: tools/bp8_production_check.py   # BP8: drift-vs-bp4 + gate named!=enforced + numeric-leak + tool/detector-ma
+    bp9_compliance:
+      - governance/blueprint/bp9/00_compliance.md
+      - governance/blueprint/bp9/content_policy.yaml   # 2 hard_boundary (HB01/HB02) can cu Nghi dinh 38/2021 + Dieu 320 BLHS, 0 hardcode
+      - governance/blueprint/bp9/policy_gates.yaml     # 7 gate khai bao, domain that BP0, severity HIGH bat buoc Mr.Long duyet
+      - reports/BP9_REPORT.md
+    bp9_check: tools/bp9_compliance_check.py   # BP9: hard-boundary-thieu + domain-ma + loai_check-la + severity-HIGH-thieu-Mr.Long + numeric-leak + BP0-drift
     tests:
       - tests/test_governance_enforce_r209.py
       - tests/test_artifact_contract_r212.py
@@ -214,6 +220,7 @@ domains:
       - tests/test_bp6_decision.py   # BP6: mutation (hardcode-045/knob-13-la/knob-thieu/writable/packet-field-ma/dup-key)
       - tests/test_bp7_narrative.py   # BP7: mutation (reveal-thieu/thu-tu-sai-bible01/cultural-facet-ma/pacing-hardcode/curve-ma/dup-key)
       - tests/test_bp8_production.py   # BP8: mutation (tool-ma/drift-runtime_flow/gate-auto-caption-ma/hardcode/named-khong-enforced)
+      - tests/test_bp9_compliance.py   # BP9: mutation (domain-ma/hard-boundary-thieu/hardcode/drift-bp0/dup-key/doc-unwire-guard)
     promotion_status: locked   # GOVERNANCE v1.0 (Mr.Long signed 2/7): DU 5 pack locked+tagged, freeze_gate 5/5 moi pack, cross-pack audit nhat quan; tag governance-v1.0
     enterprise_pack_progress:
       pack1_constitution: locked   # FROZEN v1.0 (Mr.Long authorized 2/7): 6 doc 11-element, promotion_guard HANH VI (pre-push+server-CI, battle-tested), test_pack1_docs; tag pack1-constitution-v1.0
@@ -230,6 +237,7 @@ domains:
       bp6_decision: locked   # FROZEN v1.0 (Mr.Long authorized 4/7): 12 knob R195 no-hardcode + io packet dong; audit 7 buoc 2 vong (bat R195 top-level leak lot qua scan trong-knob, fix full-file scan) + mutation re-verify tren ref sau ca bible R142/R143 fix; registry 0/0/0, suite 5/5, pytest 359; tag bp6-decision-v1.0
       bp7_narrative: locked   # FROZEN v1.0 (Mr.Long authorized 4/7): 6 cap Scene->Act->Episode->Season->Series->Ending (episode tro bible/01) + 7 cultural item (lore_db 0 noi dung, van planned) + 5 curve_application tro bp6 (0 hardcode, full-file scan tu dau); audit 7 buoc PASS (3 don real-file: xoa REVEAL/dup-key cultural deu FAIL dung, bang chung doc-that bible/02 verify dung); registry 0/0/0, pytest 376, server-CI xanh ddb8eaf; tag bp7-narrative-v1.0
       bp8_production: locked   # FROZEN v1.0 (Mr.Long authorized 4/7): 7 stage mirror bp4 hop 3-9 (LOCKED) + gate 6 automated (grep_evidence xac minh 2/2 tu kiem doc lap) + 1 manual (audio - khong bia wired); golden_output 8 tieu chi tro detector that, 0 hardcode; distribution video/publisher planned mirror bp4; audit 7 buoc PASS (1 don real-file tool-ma FAIL dung, restore sach); registry 0/0/0, pytest 402, server-CI xanh. Cung phat hien+fix bible/31 dong 113 dup-key crash (per Mr.Long authorization, khong doi noi dung). TIEP THEO: BP9 Compliance (KHONG phai FINAL AUDIT truc tiep — MASTER cap nhat 4/7 chen BP9 truoc); tag bp8-production-v1.0
+      bp9_compliance: candidate   # BUILT 4/7: 2 hard_boundary (HB01 mo_ta_chi_tiet + HB02 truc_loi_gan_kem) can cu Nghi dinh 38/2021 Dieu 14+5.3 + Dieu 320 BLHS 2015; 7 policy_gates khai bao domain that BP0, severity HIGH bat buoc Mr.Long duyet; field-hoa publisher.schema+validator BP0 (planned->exists, tro dung 2 file bp9); 18 test mutation. KHONG viet runtime scanner that (G8 xay sau). Cho audit 7 buoc + Mr.Long ky
     data_contract:
       input: "registry yaml + disk scan"
       output: "gap report"

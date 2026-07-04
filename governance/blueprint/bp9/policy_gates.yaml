@@ -1,0 +1,94 @@
+# BP9 POLICY GATES v1.0.0 — danh sach gate KHAI BAO (TASK_BP9_COMPLIANCE deliverable 2)
+# Mirror pattern SVAF Policy Gates — CHI khai bao (gate_id/domain/loai_check/severity/
+# owner_review), KHONG viet 1 ham to quet noi dung. Runtime scanner THAT (quet episode
+# that) la viec G8 QA Runtime sau nay — BP9 chi ra LUAT de G8 ap dung, KHONG tu wire
+# vao ci_gate.py (RANG BUOC RIENG TASK_BP9).
+#
+# FIELD-HOA publisher.validator (BP0 blueprint_domains.yaml planned_path: tools/publish_gate.py)
+# theo nghia TANG KIEN TRUC (BP-layer structural validator = tools/bp9_compliance_check.py,
+# KHAC voi runtime episode-scanner tools/publish_gate.py ma G8 se xay dung sau — 2 tang
+# khac nhau, giong cach BP6 decision_contract.yaml khac voi runtime tools/decision_engine.py).
+
+meta:
+  version: 1.0.0
+  pack: bp9_compliance
+  status: candidate
+  owner_domain: publisher
+  fills_bp0_slot: "domains.publisher.validator (blueprint_domains.yaml, LOCKED v2.0) — flip planned->exists, tro tools/bp9_compliance_check.py (BP-layer structural check, KHAC runtime scanner G8 se xay sau)"
+  loai_check_enum: [mo_ta_chi_tiet, truc_loi_gan_kem, ton_giao_khong_ton_kinh, thieu_disclaimer]
+
+# ============================================================
+# GATE (moi gate: domain PHAI la domain THAT da khai BP0 — domain-ma = FAIL)
+# ============================================================
+gates:
+  - gate_id: RITUAL_DETAIL_LIMIT
+    ap_dung_domain: [ritual]
+    loai_check: mo_ta_chi_tiet
+    desc: "Nghi thuc mo ta trong truyen KHONG duoc du chi tiet de lam theo that (HB01)"
+    severity: HIGH
+    owner_review: "Mr.Long duyet case-by-case KHI sensitivity_tier=high (khong may tu quyet)"
+
+  - gate_id: BELIEF_PRACTICE_RESPECT
+    ap_dung_domain: [belief]
+    loai_check: ton_giao_khong_ton_kinh
+    desc: "Quan niem am duong/tin nguong dan gian trong truyen KHONG duoc nhai/che gieu ton
+          giao dang duoc thuc hanh that (sensitivity high extra_rule)"
+    severity: HIGH
+    owner_review: "Mr.Long duyet case-by-case (nhay cam ton giao — mirror bp2 belief facet blocking_dependency)"
+
+  - gate_id: CULTURE_CUSTOM_ACCURACY
+    ap_dung_domain: [culture]
+    loai_check: mo_ta_chi_tiet
+    desc: "Phong tuc gio/le mo ta KHONG duoc thanh 'huong dan thuc hanh' chi tiet toi muc lam theo that"
+    severity: MEDIUM
+    owner_review: "Executor duyet theo content_policy sensitivity_tier; escalate Mr.Long neu tier=high"
+
+  - gate_id: SUPERNATURAL_NO_REAL_SOLICITATION
+    ap_dung_domain: [supernatural]
+    loai_check: truc_loi_gan_kem
+    desc: "Yeu to sieu nhien (chuong/ghe 13/hon ma) KHONG duoc gan voi loi keu goi dong gop/
+          lien he THAT ngoai doi (HB02)"
+    severity: HIGH
+    owner_review: "Mr.Long duyet case-by-case (vi pham HB02 = rui ro hinh su Dieu 320)"
+
+  - gate_id: GENERATOR_PREWRITE_AWARENESS
+    ap_dung_domain: [generator]
+    loai_check: thieu_disclaimer
+    desc: "Generator PHAI biet sensitivity_tier truoc khi viet (tranh viet xong moi phat hien
+          can disclaimer) — pre-write check, KHONG phai post-hoc"
+    severity: MEDIUM
+    owner_review: "Executor duyet; khong can Mr.Long tung tap tru sensitivity=high"
+
+  - gate_id: QA_RUNTIME_DISCLAIMER_PRESENCE
+    ap_dung_domain: [qa_runtime]
+    loai_check: thieu_disclaimer
+    desc: "Tap co sensitivity_tier>=medium PHAI co disclaimer hu cau truoc khi qua production
+          (G8 wire runtime scanner THAT — BP9 chi khai gate, khong viet scanner)"
+    severity: MEDIUM
+    owner_review: "Executor duyet theo content_policy.disclaimer_rule"
+
+  - gate_id: PUBLISHER_FINAL_COMPLIANCE_GATE
+    ap_dung_domain: [publisher]
+    loai_check: truc_loi_gan_kem
+    desc: "Gate CUOI truoc xuat ban — tong hop ca 2 hard_boundaries (HB01+HB02), sensitivity
+          tier, disclaimer presence. Gate cuoi cung, khong co gate nao sau"
+    severity: HIGH
+    owner_review: "Mr.Long duyet outward-facing (mirror publisher.audit_rule BP0: dang ngoai =
+                  irreversible, khong ngoai le)"
+
+# ============================================================
+# INVARIANT (validator enforce — CAU TRUC, KHONG quet noi dung episode that)
+# ============================================================
+invariants:
+  - rule: "Moi gate.ap_dung_domain[] PHAI la domain THAT da khai trong blueprint_domains.yaml (23 domain dong) — domain-ma = FAIL"
+    enforcer: {status: planned, planned_path: tools/bp9_compliance_check.py, owner: publisher,
+              reason_not_exists_yet: "Dang xay dung cung BP9", target_milestone: M4_video_publisher,
+              blocking_dependency: "BP9 candidate build"}
+  - rule: "Moi gate.loai_check PHAI thuoc dung 4 gia tri enum da khai (meta.loai_check_enum) — loai_check la = FAIL"
+    enforcer: {status: planned, planned_path: tools/bp9_compliance_check.py, owner: publisher,
+              reason_not_exists_yet: "Dang xay dung cung BP9", target_milestone: M4_video_publisher,
+              blocking_dependency: "BP9 candidate build"}
+  - rule: "Gate severity=HIGH PHAI co owner_review nhac ro 'Mr.Long' (sensitivity cao -> nguoi duyet, KHONG may tu quyet — RANG BUOC RIENG TASK_BP9)"
+    enforcer: {status: planned, planned_path: tools/bp9_compliance_check.py, owner: publisher,
+              reason_not_exists_yet: "Dang xay dung cung BP9", target_milestone: M4_video_publisher,
+              blocking_dependency: "BP9 candidate build"}

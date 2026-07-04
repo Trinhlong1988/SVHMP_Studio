@@ -1276,5 +1276,29 @@ files:
     domain: bp8_production
     status: active
     tier: 0
+  governance/blueprint/bp9/00_compliance.md:
+    domain: bp9_compliance
+    status: active
+    tier: 0
+  governance/blueprint/bp9/content_policy.yaml:
+    domain: bp9_compliance
+    status: active
+    tier: 0
+  governance/blueprint/bp9/policy_gates.yaml:
+    domain: bp9_compliance
+    status: active
+    tier: 0
+  tools/bp9_compliance_check.py:
+    domain: bp9_compliance
+    status: active
+    tier: 0
+  tests/test_bp9_compliance.py:
+    domain: bp9_compliance
+    status: active
+    tier: 0
+  reports/BP9_REPORT.md:
+    domain: bp9_compliance
+    status: active
+    tier: 0
 generated_by: tools/registry_triage.py
-total: 319
+total: 325
