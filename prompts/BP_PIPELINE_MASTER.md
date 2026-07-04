@@ -31,6 +31,11 @@ BP1→BP4 ✅ locked+tag 3/7 → **BP5 Validation** (+ G2-B1/B2 song song per TA
    DỮ LIỆU THẬT đã exists, số liệu đo được ghi trong REPORT — cấm pack thuần lời hứa.
 10. **THIN+TIMEBOX (áp BP6-BP8):** chỉ deliverables đã liệt kê trong task, KHÔNG nở thêm doc/scope;
    timebox ≤1 phiên/pack — quá hạn = STOP báo Mr.Long, không âm thầm kéo dài.
+11. **PACK CLAIM (Mr.Long ký 4/7 — sau 2 va chạm builder-song-song 3-4/7):** TRƯỚC khi bắt đầu
+   pack/task: `python tools/build_claim.py claim <pack_id> <tên_phiên>` PHẢI exit 0 + log_ping CLAIM;
+   exit 1 = pack đã có chủ → KHÔNG build, không "làm tạm để merge sau". Push verified xong:
+   `... release <pack_id> <tên_phiên>` + log_ping RELEASE. Ledger: `runtime/build_claim.yaml`
+   (guard: tests/test_build_claim.py — gỡ luật này khỏi MASTER = test đỏ).
 
 ## SAU BP8
 Kiểm duyệt chạy FINAL AUDIT (freeze_gate mọi bp-pack + cross-pack consistency + mutation tổng
