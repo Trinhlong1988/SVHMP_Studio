@@ -6,8 +6,8 @@
 |---|---|---|
 | Knob khai | **12/12** (đúng danh sách TASK đóng) | `bp6_decision_check.py` máy đếm, `assert set == EXPECTED` |
 | Checker trên data thật | **exit 0, 0 violation** | `tools/bp6_decision_check.py` |
-| Mutation battery | **17/17 pass** | `tests/test_bp6_decision.py` (pytest) |
-| Số hardcode trong contract | **0** (numeric-leak scan: số chỉ trong valid_range) | check R195 |
+| Mutation battery | **22/22 pass** (+5 sau fix 4/7) | `tests/test_bp6_decision.py` (pytest) |
+| Số hardcode trong contract + io | **0** (numeric-leak scan FULL-FILE từ document root, không chỉ trong tùng knob) | check R195 |
 | Consumer read-only | **12/12 knob** generator read_only (BP3) | check LEO-THANG |
 | Packet field | **5 field đóng** + per_scene.knobs == 12 knob_id (field ma = FAIL) | check FIELD-MA |
 
@@ -25,3 +25,28 @@
 - **KHÔNG sửa BP5 LOCKED**: `bp6_check` đứng riêng (như bp4_check trước BP5); wire vào `blueprint_suite_check` SUITE = quyết định lúc lock BP6 (sửa tool pack locked cần Mr.Long).
 - Registry: `bp6_decision: candidate` (1 dòng, không dup-key — auditor REPLACE in-place khi lock theo ROOT-FIX 8af9682).
 - Builder không kết luận PASS/FREEZE — chỉ READY FOR AUDIT.
+
+## FIX 4/7 (Mr.Long lệnh, sau audit landed bản c8a6041-adjacent) — R195 scan toàn file
+
+**Lỗ hổng phát hiện:** `_numeric_leaks` bản landed chỉ được gọi TRÊN TỪNG DICT KNOB riêng lẻ
+(`for leak in _numeric_leaks(k, kid): ...` bên trong vòng lặp `for k in knobs`). Hệ quả:
+số hardcode nằm NGOÀI danh sách `knobs` — trong `meta`, `rules`, hoặc bất kỳ section mới nào
+thêm sau này — **không bao giờ được quét**. Nghiêm trọng hơn: `check_io()` **không gọi
+`_numeric_leaks` một lần nào** — toàn bộ `decision_io.yaml` có 0% coverage R195, số hardcode
+ở bất kỳ đâu trong file đó (packet_schema, meta...) lọt 100%.
+
+**Fix:** `_numeric_leaks` giữ nguyên thuật toán đệ quy, nhưng giờ được gọi **1 lần duy nhất
+từ document root** (`_numeric_leaks(contract, 'contract')` và `_numeric_leaks(io, 'io',
+allowed_keys=set())`) thay vì lặp qua từng knob — quét toàn bộ cây, đúng nghĩa "full-file".
+`decision_io.yaml` là schema thuần (field name/type), nên `allowed_keys=set()` — **0 số được
+phép ở bất kỳ đâu** trong file đó (khác `decision_contract.yaml` cho phép số dưới `valid_range`).
+
+**Bằng chứng (5 test mới, tự chứng minh đúng lỗ hổng cũ):**
+- `test_mut_numeric_leak_in_contract_meta_bites` — số trong `meta` (ngoài knobs) → FAIL
+- `test_mut_numeric_leak_in_contract_rules_section_bites` — số trong `rules` (top-level) → FAIL
+- `test_mut_numeric_leak_anywhere_in_io_bites` — số trong `packet_schema` mới thêm → FAIL
+- `test_mut_numeric_leak_in_io_meta_bites` — số trong `io.meta` (xa packet_schema, chứng minh scan thật sự full-file) → FAIL
+- `test_real_bp6_files_zero_numeric_leak_no_false_positive` — regression: data thật vẫn 0 violation (không quá-nhạy)
+
+Data thật (12 knob + io) vẫn PASS 0 violation sau fix — không đổi hành vi trên input hợp lệ,
+chỉ đóng lỗ hổng trên input KHÔNG hợp lệ mà bản cũ bỏ lọt.

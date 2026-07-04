@@ -154,3 +154,54 @@ def test_dup_key_in_bp6_file_bites():
     """DUP-KEY loader single-impl phải bắt (lớp bug H6 blueprint)."""
     with pytest.raises(DupKeyError):
         load_yaml_no_dup('meta:\n  version: 1.0.0\nmeta:\n  version: 2.0.0\n')
+
+
+# ---------- R195 FULL-FILE SCAN (fix 4/7 — ban cu chi scan tung knob rieng le,
+# so hardcode NGOAI knobs (meta/rules/io) lot 100%. Cac test duoi day CHUNG MINH
+# lo hong that va da vam) ----------
+
+def test_mut_numeric_leak_in_contract_meta_bites():
+    """So hardcode trong contract['meta'] (NGOAI knobs) — ban cu (_numeric_leaks(k, kid)
+    chi goi tren tung dict knob) se KHONG bao gio thay vi khong scan meta. Full-file
+    scan tu document root phai bat."""
+    c = _mut_contract()
+    c['meta']['default_dialogue_ratio'] = 0.45
+    errs = check_contract(c)
+    assert any('R195-HARDCODE' in e and 'meta.default_dialogue_ratio' in e for e in errs), errs
+
+
+def test_mut_numeric_leak_in_contract_rules_section_bites():
+    """So hardcode trong contract['rules'] (top-level, ngoai knobs) phai bat."""
+    c = _mut_contract()
+    c['rules']['max_scene_hardcode'] = 8
+    errs = check_contract(c)
+    assert any('R195-HARDCODE' in e and 'rules.max_scene_hardcode' in e for e in errs), errs
+
+
+def test_mut_numeric_leak_anywhere_in_io_bites():
+    """decision_io.yaml TRUOC FIX khong scan R195 mot chut nao (check_io khong goi
+    _numeric_leaks). So hardcode bat ky dau trong io (vd packet_schema field moi
+    mang so) phai bi bat SAU fix."""
+    io = copy.deepcopy(IO)
+    io['output']['packet_schema']['default_scene_count'] = {'type': 'int', 'value': 6}
+    errs = check_io(io, CONTRACT, BP0)
+    assert any('R195-HARDCODE' in e and 'so hardcode trong decision_io' in e for e in errs), errs
+    assert any('packet_schema.default_scene_count.value' in e for e in errs), errs
+
+
+def test_mut_numeric_leak_in_io_meta_bites():
+    """So hardcode trong io['meta'] (xa packet_schema, chung minh scan la FULL-FILE
+    tu document root chu khong phai 1 nhanh cu the)."""
+    io = copy.deepcopy(IO)
+    io['meta']['retry_count'] = 3
+    errs = check_io(io, CONTRACT, BP0)
+    assert any('R195-HARDCODE' in e and 'io.meta.retry_count' in e for e in errs), errs
+
+
+def test_real_bp6_files_zero_numeric_leak_no_false_positive():
+    """Regression: data BP6 that (12 knob + valid_range hop le) KHONG duoc bao
+    R195-HARDCODE gia — full-file scan phai chinh xac, khong qua-nhay."""
+    errs_c = check_contract(CONTRACT)
+    errs_io = check_io(IO, CONTRACT, BP0)
+    assert not any('R195-HARDCODE' in e for e in errs_c), errs_c
+    assert not any('R195-HARDCODE' in e for e in errs_io), errs_io

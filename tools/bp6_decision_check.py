@@ -8,8 +8,10 @@ Check:
      type ∈ {scalar, curve, enum} · scalar/curve phải có valid_range · enum phải
      có values HOẶC values_source.
   3  NO-HARDCODE (R195): key cấm (default/value/values_default/baseline/initial/
-     fixed) trong knob = FAIL · số (int/float) trong knob CHỈ được nằm dưới key
-     valid_range = FAIL nếu lạc chỗ khác (enum values chứa số = FAIL).
+     fixed) trong knob = FAIL · số (int/float) CHỈ được nằm dưới key valid_range —
+     scan ĐỆ QUY TOÀN BỘ document (contract full-tree, không chỉ trong tùng knob;
+     io full-tree, 0 số được phép — schema thuần) = FAIL nếu lạc chỗ bất kỳ đâu
+     trong 2 file bp6 (enum values chứa số = FAIL).
   4  consumer: mọi knob consumer.domain == generator, access == read_only —
      khớp reader grant decision_engine BP-C (blueprint_domains: [generator,
      qa_runtime]) · io.writer ⊆ {decision_engine, mr_long} (BP3 1-writer).
@@ -59,8 +61,12 @@ def _load(path, errs, label):
     return None
 
 
-def _numeric_leaks(node, path, allowed_parent=False):
-    """R195: tra ve list vi tri co so nam NGOAI key duoc phep (valid_range)."""
+def _numeric_leaks(node, path, allowed_parent=False, allowed_keys=NUMERIC_ALLOWED_KEYS):
+    """R195: quet DE QUY TOAN BO node (goi tu document root, khong phai tung
+    knob rieng le) — tra ve list vi tri co so nam NGOAI key duoc phep. Fix audit
+    4/7: ban cu chi goi tren tung dict knob (_numeric_leaks(k, kid)) -> so hardcode
+    NGOAI knobs (meta/rules/them section moi sau nay) lot hoan toan. Goi tren
+    document root moi bat het toan file, ke ca knob n"""
     leaks = []
     if isinstance(node, bool):
         return leaks
@@ -69,17 +75,21 @@ def _numeric_leaks(node, path, allowed_parent=False):
             leaks.append(path)
     elif isinstance(node, list):
         for i, x in enumerate(node):
-            leaks.extend(_numeric_leaks(x, f'{path}[{i}]', allowed_parent))
+            leaks.extend(_numeric_leaks(x, f'{path}[{i}]', allowed_parent, allowed_keys))
     elif isinstance(node, dict):
         for k, v in node.items():
             leaks.extend(_numeric_leaks(
-                v, f'{path}.{k}', allowed_parent or k in NUMERIC_ALLOWED_KEYS))
+                v, f'{path}.{k}', allowed_parent or k in allowed_keys, allowed_keys))
     return leaks
 
 
 def check_contract(contract):
     """Check 2+3+4 tren dict contract. Tra ve list loi."""
     errs = []
+    # R195 full-file scan (fix 4/7): quet TU DOCUMENT ROOT, phu ca knobs LAN
+    # meta/rules/section tuong lai — khong con lo hong "chi scan tung knob".
+    for leak in _numeric_leaks(contract, 'contract'):
+        errs.append(f'R195-HARDCODE so nam ngoai valid_range tai {leak} (full-file scan)')
     knobs = (contract or {}).get('knobs') or []
     ids = [k.get('knob_id') for k in knobs]
     missing = [k for k in EXPECTED_KNOBS if k not in ids]
@@ -103,12 +113,10 @@ def check_contract(contract):
             errs.append(f'{kid}: {t} thieu valid_range')
         if t == 'enum' and not (k.get('values') or k.get('values_source')):
             errs.append(f'{kid}: enum thieu values/values_source')
-        # R195 no-hardcode
+        # R195 no-hardcode: key cam (numeric-leak da chuyen len full-file scan tren)
         bad_keys = FORBIDDEN_VALUE_KEYS & set(k)
         if bad_keys:
             errs.append(f'{kid}: R195-HARDCODE key cam {sorted(bad_keys)} — so that phai calibrate tu golden')
-        for leak in _numeric_leaks(k, kid):
-            errs.append(f'{kid}: R195-HARDCODE so nam ngoai valid_range tai {leak}')
         if t == 'enum':
             for v in (k.get('values') or []):
                 if isinstance(v, (int, float)) and not isinstance(v, bool):
@@ -129,6 +137,12 @@ def check_contract(contract):
 def check_io(io, contract, bp0):
     """Check 5 + doi chieu reader grant BP0. Tra ve list loi."""
     errs = []
+    # R195 full-file scan (fix 4/7): io.yaml la SCHEMA thuan (field name/type/
+    # required) — KHONG duoc chua so nao (0 key duoc phep, khac contract co
+    # valid_range). Ban cu KHONG scan io.yaml chut nao -> so hardcode lot 100%.
+    for leak in _numeric_leaks(io, 'io', allowed_keys=set()):
+        errs.append(f'R195-HARDCODE: so hardcode trong decision_io tai {leak} '
+                    '(io la schema thuan, 0 so duoc phep)')
     out = (io or {}).get('output') or {}
     ps = out.get('packet_schema') or {}
     for f in PACKET_REQUIRED:
