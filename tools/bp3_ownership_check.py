@@ -145,10 +145,10 @@ def main(argv):
     print(f'=== BP3 OWNERSHIP CHECK v{__version__} ===')
     errs, warns = run_checks(**kw)
     for w in warns:
-        print(f'  [WARN] {w}')
+        print(f'  [WARN REG2003] {w}')
     if errs:
         for e in errs:
-            print(f'  [VIOLATION] {e}')
+            print(f'  [VIOLATION REG2003] {e}')
         print(f'=== FAIL — {len(errs)} vi pham ===')
         return 1
     m = load_yaml_no_dup(Path(kw.get('matrix_p', D_MATRIX)).read_text(encoding='utf-8'))

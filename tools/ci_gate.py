@@ -29,6 +29,16 @@ CHECKS = [
     ('G2_roster',  'tools/roster_validator.py'),   # G2 B4: naming bible/23 + que<->giong R210 (WARN mode; --strict sau khi fill dat nguong Tier1 100%)
 ]
 
+# Error Code Standard (SVAF backlog 2/5, governance/error_code_standard.yaml) — chi
+# THEM 1 bracket rieng cuoi dong hien thi, KHONG dung vao [PASS]/[FAIL] goc (bi
+# tools/auditor.py dem chuoi cung out.count('[PASS]')).
+STAGE_CODES = {
+    'registry': 'REG2000', 'blueprint': 'ART4001', 'R199_tail': 'QA1010',
+    'R203_conf': 'QA1011', 'R205_char': 'QA1012', 'R206_voice': 'QA1013',
+    'R207_canon': 'QA1014', 'R208_age': 'QA1015', 'project_config': 'ART4002',
+    'G2_roster': 'QA1001', 'pytest_suite': 'QA1099',
+}
+
 
 def _pytest_summary(out):
     """Trich dong tom tat cuoi cua pytest (vd '32 passed in 27s') de lam evidence."""
@@ -44,7 +54,7 @@ def main():
     for name, rel in CHECKS:
         r = subprocess.run([PY, str(SVHMP / rel)], capture_output=True, text=True)
         ok = r.returncode == 0
-        print(f"  [{'PASS' if ok else 'FAIL'}] {name} (exit {r.returncode})")
+        print(f"  [{'PASS' if ok else 'FAIL'}] {name} (exit {r.returncode}) [{STAGE_CODES.get(name, '?')}]")
         if not ok:
             fail += 1
             print((r.stdout or '')[-400:])
@@ -67,7 +77,8 @@ def main():
                             capture_output=True, text=True, cwd=str(SVHMP), env=env)
         pt_ok = pt.returncode == 0
         summary = _pytest_summary(pt.stdout)
-        print(f"  [{'PASS' if pt_ok else 'FAIL'}] pytest_suite (exit {pt.returncode}) — {summary}")
+        print(f"  [{'PASS' if pt_ok else 'FAIL'}] pytest_suite (exit {pt.returncode}) — {summary} "
+              f"[{STAGE_CODES['pytest_suite']}]")
         if not pt_ok:
             fail += 1
             print((pt.stdout or '')[-600:])

@@ -224,10 +224,10 @@ def main(argv):
     print(f'=== BP4 RUNTIME+EVENT CHECK v{__version__} ===')
     errs, warns = run_checks(**kw)
     for w in warns:
-        print(f'  [WARN] {w}')
+        print(f'  [WARN STATE3001] {w}')
     if errs:
         for e in errs:
-            print(f'  [VIOLATION] {e}')
+            print(f'  [VIOLATION STATE3001] {e}')
         print(f'=== FAIL — {len(errs)} vi pham ===')
         return 1
     bus = load_yaml_no_dup(Path(kw.get('bus_p', D_BUS)).read_text(encoding='utf-8'))

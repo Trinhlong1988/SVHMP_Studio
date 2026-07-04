@@ -241,10 +241,10 @@ def main(argv):
     print(f'=== BP1 ARCHITECTURE CHECK v{__version__} ===')
     errs, warns = run_checks(**kw)
     for w in warns:
-        print(f'  [WARN] {w}')
+        print(f'  [WARN REG2001] {w}')
     if errs:
         for e in errs:
-            print(f'  [VIOLATION] {e}')
+            print(f'  [VIOLATION REG2001] {e}')
         print(f'=== FAIL — {len(errs)} vi pham ===')
         return 1
     print('=== PASS — BP1 core architecture hop le (0 vi pham; equality BP0 + honesty interface) ===')

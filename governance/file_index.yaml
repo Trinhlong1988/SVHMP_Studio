@@ -1300,5 +1300,9 @@ files:
     domain: bp9_compliance
     status: active
     tier: 0
+  governance/error_code_standard.yaml:
+    domain: governance
+    status: active
+    tier: 0
 generated_by: tools/registry_triage.py
-total: 325
+total: 326

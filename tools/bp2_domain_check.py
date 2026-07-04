@@ -162,10 +162,10 @@ def main(argv):
     print(f'=== BP2 DOMAIN CHECK v{__version__} ===')
     errs, warns = run_checks(**kw)
     for w in warns:
-        print(f'  [WARN] {w}')
+        print(f'  [WARN REG2002] {w}')
     if errs:
         for e in errs:
-            print(f'  [VIOLATION] {e}')
+            print(f'  [VIOLATION REG2002] {e}')
         print(f'=== FAIL — {len(errs)} vi pham ===')
         return 1
     spec = load_yaml_no_dup(Path(kw.get('spec_p', D_SPEC)).read_text(encoding='utf-8'))

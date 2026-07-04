@@ -1,0 +1,100 @@
+# ============================================================
+# ERROR CODE STANDARD (SVAF pattern 2/5, TASK_BACKLOG_SVAF_PATTERNS.md)
+# CMD_BUILD_3 4/7 — pham vi duyet qua Boss relay (Mr.Long authorization 2026-07-04):
+#   roster_validator.py + bp1-5_check + ci_gate.py (chi doi format print, KHONG doi logic).
+#   bp6/7/8_check.py: BO QUA (vua khoa hom nay). bp9_compliance_check.py: TUYET DOI KHONG
+#   (CMD_BUILD dang active claim). Cosmetic-only: khong doi ky tu [PASS]/[FAIL]/[WARN]/
+#   [VIOLATION] da co (mot so bi test/auditor.py dem/match chuoi cung -> ma moi CHI
+#   THEM, khong thay the, xem chi tiet tung file trong "codes" duoi).
+# ============================================================
+version: 1.0
+authority: "CMD_BUILD_3 (svaf_patterns_backlog task 2/5), per Mr.Long authorization 2026-07-04 (Boss relay)"
+
+prefixes:
+  STATE3xxx: "State-machine / runtime event-flow transitions (bp4 runtime)"
+  REG2xxx: "Registry / architecture-graph / domain / ownership consistency (bp1-bp3)"
+  QA1xxx: "Noi dung/text/character QA checks (roster_validator, ci_gate regression stages)"
+  ART4xxx: "Artifact/suite/contract validation (bp0 constitution, bp5 suite, project_config)"
+  ONT5xxx: "Ontology / cultural-belief facet checks — RESERVED, chua co checker gan (xem
+    TASK_BACKLOG item 4 Evidence Schema Cultural KB, se dung khi bible cultural_events_kb
+    duoc ky chinh thuc)"
+
+# Moi code: file that su in ra ma nay (hoac stage trong ci_gate/blueprint_suite dai dien
+# cho file do). "placement": inline = nam trong chinh bracket [FAIL CODE]/[WARN CODE];
+# append = ma la 1 bracket rieng [CODE] noi THEM cuoi dong (khong dung vao [PASS]/[FAIL]
+# goc vi bi test_bp5_validation.py / tools/auditor.py dem/match chuoi).
+codes:
+  QA1001:
+    file: tools/roster_validator.py
+    desc: "roster C1-C5: naming bible/23, que<->giong R210, tier1, naming-framework, rule09 content, knowledge<->reveal_permission"
+    placement: inline
+  REG2001:
+    file: tools/bp1_architecture_check.py
+    desc: "BP1 architecture graph/interface/layer equality vs BP0"
+    placement: inline
+  REG2002:
+    file: tools/bp2_domain_check.py
+    desc: "BP2 domain/facet registry (13 domain / 70 facet, facet_id unique)"
+    placement: inline
+  REG2003:
+    file: tools/bp3_ownership_check.py
+    desc: "BP3 ownership matrix (1-facet-1-writer) + dependency 3-nguon-khop"
+    placement: inline
+  STATE3001:
+    file: tools/bp4_runtime_check.py
+    desc: "BP4 runtime flow/event-bus/state-machine/memory scope"
+    placement: inline
+  ART4000:
+    file: tools/blueprint_constitution_check.py
+    desc: "BP0 constitution (22+1 domain inventory) - hien qua stage 'bp0' trong blueprint_suite_check.py, khong sua truc tiep file nay"
+    placement: "append (via blueprint_suite_check.py stage line)"
+  ART4001:
+    file: tools/blueprint_suite_check.py
+    desc: "BP5 blueprint suite 1-cua (goi bp0-bp4), hien qua ci_gate stage 'blueprint'"
+    placement: append
+  ART4002:
+    file: tools/validate_project_config.py
+    desc: "project_config contract (ci_gate stage 'project_config')"
+    placement: "append (via ci_gate.py stage line)"
+  QA1010:
+    file: tests/test_tail_pathology_r199.py
+    desc: "ci_gate stage R199_tail — EOL tail pathology regression"
+    placement: "append (via ci_gate.py stage line)"
+  QA1011:
+    file: tests/test_qa_confusion_200_r203.py
+    desc: "ci_gate stage R203_conf — 200-case confusion QA"
+    placement: "append (via ci_gate.py stage line)"
+  QA1012:
+    file: tests/test_character_manager_r205.py
+    desc: "ci_gate stage R205_char — CharacterRegistry regression"
+    placement: "append (via ci_gate.py stage line)"
+  QA1013:
+    file: tests/test_character_system_1000_r206.py
+    desc: "ci_gate stage R206_voice — 1000-case voice/character system"
+    placement: "append (via ci_gate.py stage line)"
+  QA1014:
+    file: tests/test_story_consistency_1000_r207.py
+    desc: "ci_gate stage R207_canon — 1000-case cross-episode canon consistency"
+    placement: "append (via ci_gate.py stage line)"
+  QA1015:
+    file: tests/test_dialogue_appropriateness_1000_r208.py
+    desc: "ci_gate stage R208_age — 1000-case dialogue age-appropriateness"
+    placement: "append (via ci_gate.py stage line)"
+  QA1099:
+    file: "tests/ (pytest tien hanh boi ci_gate.py)"
+    desc: "ci_gate stage pytest_suite — toan bo regression suite tong hop"
+    placement: "append (via ci_gate.py stage line)"
+  REG2000:
+    file: tools/architecture_registry_check.py
+    desc: "ci_gate stage registry — governance file_index/architecture_registry 0/0/0"
+    placement: "append (via ci_gate.py stage line)"
+
+notes:
+  - "Chua doi tools/architecture_registry_check.py hay tools/validate_project_config.py
+     truc tiep (chi hien ma cua chung qua dong stage trong ci_gate.py) - giu diff toi
+     thieu, tranh dung vao 2 file nay dang duoc tool khac tham chieu chat (registry
+     checker la Tier0 nhay cam nhat repo)."
+  - "bp6_decision_check.py / bp7_narrative_check.py / bp8_production_check.py /
+     bp9_compliance_check.py: CHUA co ma trong chuan nay (ngoai pham vi duyet 4/7).
+     Khi Mr.Long uy quyen tiep, cap ma theo cung prefix da dinh (bp6/7/8 deu la REG2xxx
+     hoac ONT5xxx tuy phan; bp9 compliance/publish co the la ART4xxx)."

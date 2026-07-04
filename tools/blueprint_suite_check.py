@@ -40,6 +40,12 @@ SUITE = [
     ('bp4', 'BP4 runtime',      'tools/bp4_runtime_check.py'),
 ]
 
+# Error Code Standard (SVAF backlog 2/5, governance/error_code_standard.yaml) — chi
+# THEM 1 bracket rieng cuoi dong hien thi, KHONG dung vao [PASS]/[FAIL] goc (bi
+# test_bp5_validation.py + tools/auditor.py dem/match chuoi cung).
+SUITE_CODES = {'bp0': 'ART4000', 'bp1': 'REG2001', 'bp2': 'REG2002',
+               'bp3': 'REG2003', 'bp4': 'STATE3001'}
+
 
 def run_suite(overrides=None):
     """Chay tuan tu 5 tang; overrides={key: [extra args]} chi de test/audit
@@ -68,7 +74,8 @@ def main(argv):
     fails = [row for row in rows if row['rc'] != 0]
     for row in rows:
         mark = 'PASS' if row['rc'] == 0 else 'FAIL'
-        print(f"  [{mark}] {row['key']}  {row['label']:<18} {row['script']} (exit {row['rc']})")
+        print(f"  [{mark}] {row['key']}  {row['label']:<18} {row['script']} (exit {row['rc']}) "
+              f"[{SUITE_CODES.get(row['key'], '?')}]")
         if row['rc'] != 0:
             print(row['tail'])
     if fails:

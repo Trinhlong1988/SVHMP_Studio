@@ -217,9 +217,9 @@ def main(argv=None):
     print("=== ROSTER VALIDATOR (G2 B3) ===")
     print(f"  roster: {args.roster} ({len(passengers)} passenger)")
     for v in violations:
-        print(f"  [FAIL] {v}")
+        print(f"  [FAIL QA1001] {v}")
     for w in warns:
-        print(f"  [WARN] {w}")
+        print(f"  [WARN QA1001] {w}")
     print(f"  C1-C5 (naming + quê↔giọng + tier1 + naming-framework + rule_09-content + "
           f"knowledge↔reveal): {len(violations)} violation, {len(warns)} warn")
 
