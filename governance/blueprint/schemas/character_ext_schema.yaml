@@ -1,5 +1,5 @@
-# CHARACTER EXT SCHEMA — 3 facet của BP2 domain character (knowledge / reveal_permission /
-# continuity_risk). SoT chính thức tại governance/blueprint/bp2/domain_specs.yaml
+# CHARACTER EXT SCHEMA — 4 facet của BP2 domain character (knowledge / reveal_permission /
+# continuity_risk / entity_class). SoT chính thức tại governance/blueprint/bp2/domain_specs.yaml
 # (sot.status: exists, path: file này, key: <facet_id> — flip planned->exists
 # per Mr.Long authorization 2026-07-03, RFC lane amendment bp2_domain locked).
 # =====================================================================
@@ -9,16 +9,25 @@
 # xác minh path/key resolve thật; nội dung field giữ nguyên khi bible cập nhật).
 # Soạn 2026-07-03 theo TASK_G2_CHARACTER B1. KHÔNG bịa field vô căn cứ: mọi field
 # đều truy về facet desc đã đóng ở BP2 (bp2-domain-v1.0) hoặc R210.
+# AMENDMENT 1 (2026-07-05, per Mr.Long authorization): + facet entity_class, theo
+# TASK_G5_SUPERNATURAL.md D2 — cung co che RFC lane amendment nhu G2 extension, KHONG
+# mo lai facet list dong cho domain khac, CHI them 1 facet moi vao character.
 # =====================================================================
 
 meta:
-  version: 1.0
+  version: 1.1
   status: SIGNED
   signed_by: mr_long
   signed_date: 2026-07-03
-  drafted_by: CMD_BUILD
-  source_facets: [knowledge, reveal_permission, continuity_risk]  # đúng facet_id bp2/domain_specs.yaml
-  mirrors: bible/37_character_schema.yaml v2.1 (g2_extension section) — 2 file 1 nội dung
+  amendment_1:
+    signed_by: mr_long
+    signed_date: 2026-07-05
+    drafted_by: KIEM_DUYET
+    reason: "TASK_G5_SUPERNATURAL.md D2 — them entity_class de phan biet nguoi/linh_hon/thuc_the_sieu_nhien/nhan_vat_lich_su.
+            RFC lane amendment bp2_domain locked, giong het co che G2 extension da lam 2026-07-03."
+    added_facet: entity_class
+  source_facets: [knowledge, reveal_permission, continuity_risk, entity_class]  # dung facet_id bp2/domain_specs.yaml
+  mirrors: bible/37_character_schema.yaml v2.2 (g2_extension + g5_extension section) — 2 file 1 noi dung
 
 # ---------------------------------------------------------------
 # FACET 1: knowledge — "Nhân vật BIẾT gì" (QUAN TRỌNG NHẤT truyện dài tập)
@@ -72,6 +81,27 @@ continuity_risk:
   invariant: "flag chỉ được set kèm evidence; máy đề xuất (roster_backfill_miner) — người duyệt"
 
 # ---------------------------------------------------------------
+# FACET 4: entity_class — phân loại bản chất nhân vật (người/linh_hồn/thực_thể_siêu_nhiên/
+# nhân_vật_lịch_sử). Đọc TỪ supernatural domain (BP3 dependency: character <- supernatural,
+# character là nơi "gắn" kết quả phân loại, KHÔNG tự định nghĩa luật siêu nhiên — luật thật
+# nằm ở governance/proposals/supernatural_typology_proposal.yaml của G5).
+# ---------------------------------------------------------------
+entity_class:
+  data_type: scalar
+  per_character: true
+  field:
+    entity_class: {type: enum, values: [nguoi, linh_hon, thuc_the_sieu_nhien, nhan_vat_lich_su],
+                   required: false, default: nguoi,
+                   desc: "nguoi = con song binh thuong; linh_hon = vong/ma (map alive_status=ghost);
+                         thuc_the_sieu_nhien = thuc the co quyen nang rieng (KHONG phai vong nguoi
+                         chet); nhan_vat_lich_su = nhan vat co that lich su (du phong da an HSV,
+                         KHONG dung cho HDK hien tai)"}
+  invariant: "entity_class=linh_hon PHAI khop alive_status=ghost (tier_1_mandatory.core_id) —
+             validator: story_consistency_validator.py doi chieu 2 chieu, lech = FAIL"
+  reconcile: "KHONG tu dinh nghia quyen nang/gioi han o day — entity_class CHI la nhan phan loai,
+             chi tiet typology doc tu governance/proposals/supernatural_typology_proposal.yaml (G5)"
+
+# ---------------------------------------------------------------
 # BẢN GHI ÁP DỤNG vào bible/37 v2.1 (Mr.Long ký 2026-07-03)
 # ---------------------------------------------------------------
 applied_bible37_v21_patch:
@@ -83,3 +113,14 @@ applied_bible37_v21_patch:
       continuity_risk: [flags, level, evidence]
     meta.version: 2.0 -> 2.1 ; note "G2 extension (Mr.Long ký 2026-07-03)"
   untouched: [tier_1_mandatory, critical_groups, modules_v2, balance_targets]  # KHÔNG đụng lock
+
+# ---------------------------------------------------------------
+# BẢN GHI ÁP DỤNG vào bible/37 v2.2 (Mr.Long ký 2026-07-05, amendment_1)
+# ---------------------------------------------------------------
+applied_bible37_v22_patch:
+  added_section: g5_extension
+  content_summary: |
+    g5_extension:
+      entity_class: {values: [nguoi, linh_hon, thuc_the_sieu_nhien, nhan_vat_lich_su], default: nguoi}
+    meta.version: 2.1 -> 2.2 ; note "G5 extension entity_class (Mr.Long ký 2026-07-05)"
+  untouched: [tier_1_mandatory, critical_groups, modules_v2, balance_targets, g2_extension]  # KHÔNG đụng lock

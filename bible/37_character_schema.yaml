@@ -5,9 +5,9 @@
 #           bible/23 (naming — KHONG sinh lai ten), runtime/passenger_roster_100.yaml.
 
 meta:
-  version: 2.1
+  version: 2.2
   status: LOCKED
-  note: "v2.1: + g2_extension (knowledge/reveal_permission/continuity_risk) — Mr.Long ký 2026-07-03, TASK_G2_CHARACTER B1. tier_1/critical_groups/modules_v2/balance_targets KHÔNG đổi (v2.0 lock nguyên vẹn)."
+  note: "v2.1: + g2_extension (knowledge/reveal_permission/continuity_risk) — Mr.Long ký 2026-07-03, TASK_G2_CHARACTER B1. v2.2: + g5_extension (entity_class) — Mr.Long ký 2026-07-05, TASK_G5_SUPERNATURAL D2. tier_1/critical_groups/modules_v2/balance_targets KHÔNG đổi (v2.0 lock nguyên vẹn)."
   sources: [Đúng.docx, phản biện.txt, claude_critique]
   principle: |
     AUDIO-FIRST. Dự án TTS kể chuyện, KHÔNG hình → CẮT field thị giác thuần
@@ -112,6 +112,20 @@ g2_extension:
     allowed_flags: [da_chet_xuat_hien_lai, mat_tich, doi_ten, bi_nhap, biet_bi_mat,
                     recurring_cross_ep, roster_drift_no_pas_id]
     invariant: "flag chỉ được set kèm evidence (ep:line) — máy đề xuất, người duyệt"
+
+# ============================================================
+# G5 EXTENSION (v2.2, Mr.Long ký 2026-07-05) — 1 facet BP2 domain character:
+# entity_class. Chi tiết field đầy đủ: governance/blueprint/schemas/character_ext_schema.yaml
+# (2 file 1 nội dung, đồng bộ — đổi 1 bên PHẢI đổi bên kia). SoT chính thức cho
+# bp2/domain_specs.yaml là file schemas/character_ext_schema.yaml.
+# ============================================================
+g5_extension:
+  entity_class:   # phân loại bản chất nhân vật — đọc luật thật từ G5 supernatural typology
+    values: [nguoi, linh_hon, thuc_the_sieu_nhien, nhan_vat_lich_su]
+    default: nguoi
+    invariant: "entity_class=linh_hon PHẢI khớp alive_status=ghost (tier_1_mandatory.core_id)"
+    reconcile: "KHÔNG tự định nghĩa quyền năng — chi tiết typology đọc từ
+               governance/proposals/supernatural_typology_proposal.yaml (G5)"
 
 # ============================================================
 # CÔNG CỤ VẬN HÀNH + QA

@@ -393,6 +393,15 @@ facets:
   forbidden_writers: *id009
   lifecycle: approved
   owner_artifact: governance/blueprint/schemas/character_ext_schema.yaml
+- facet_id: entity_class
+  owning_domain: character
+  readable_by: *id009
+  writable_by:
+  - mr_long
+  - character
+  forbidden_writers: *id009
+  lifecycle: approved
+  owner_artifact: governance/blueprint/schemas/character_ext_schema.yaml
 - facet_id: trauma_backstory_lock
   owning_domain: character
   readable_by: *id009

@@ -110,8 +110,10 @@ def test_c4_mutation_unsigned_version_bites():
 
 
 def test_c5_bible37_version_signed():
-    assert str(BIBLE37['meta'].get('version', '')).startswith('2.1'), \
-        'bible/37 phải v2.1 (g2_extension đã ký) để C5 hoạt động'
+    v = str(BIBLE37['meta'].get('version', ''))
+    v_tuple = tuple(int(x) for x in v.split('.')[:2])
+    assert v_tuple >= (2, 1), \
+        f"bible/37 phải >=v2.1 (g2_extension đã ký) để C5 hoạt động, hiện '{v}'"
 
 
 def test_c5_g2_extension_sections_present():
