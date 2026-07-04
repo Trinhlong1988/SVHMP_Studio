@@ -64,6 +64,18 @@ yaml, vì chính yaml.safe_load là nạn nhân), phải liệt kê ĐỦ mọi 
 disk (`grep -c "^X_" file` vs `grep -c "^prefix_X_" file` — so cả 2 con số), không chỉ theo docstring
 mô tả "4 format" — docstring có thể lạc hậu so với thực tế file đã tăng trưởng.
 
+## G9 — Kiểm duyệt FIX xong + LOCK xong KHÔNG tự động báo cho phiên builder đang bị chặn biết
+Case thật (4/7): kiểm duyệt sửa bible/00 (R142/R143) lúc 19:15, lock BP6 lúc 19:28 — nhưng worktree
+của CMD_BUILD (`bp7_narrative`) đứng yên nguyên tại commit lúc claim, KHÔNG tự pull/biết gì, tiếp tục
+"bị chặn" trong đầu nó dù chặn đã gỡ từ lâu. **Nguyên nhân:** không có kênh nào đẩy tin giữa các
+phiên Claude Code (mỗi phiên = terminal riêng, không thấy nhau) — chỉ có `log_ping` (phiên phải TỰ
+đọc mới biết) hoặc Mr.Long làm người chuyển lời thủ công. **Bài học:** sau khi fix/lock một defect
+đang CHẶN builder khác, kiểm duyệt phải chủ động soạn sẵn đoạn relay ngắn (lệnh cụ thể: fetch+rebase+
+lệnh verify) để Mr.Long dán ngay — đừng chỉ ghi log_ping rồi coi như xong việc, vì thời gian chờ
+Mr.Long thấy + dán lại = thời gian builder ngồi không oan uổng. Về lâu dài: đây là ca dùng thật cho
+ý tưởng "Hermes-style PING→Telegram" (xem Nguồn cảm hứng) — mức ưu tiên nên nâng lên khi có nhiều
+pack chạy song song hơn.
+
 ## Nguồn cảm hứng
 So sánh với Hermes Agent (Nous Research, 4/7): pattern "skill file agent tự viết, mọi lần gọi lại
 đọc được" đúng hướng nhưng KHÔNG áp dụng "tự viết không kiểm duyệt" — file này làm thủ công, review
