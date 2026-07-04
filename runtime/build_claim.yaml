@@ -1,3 +1,5 @@
-# PACK CLAIM ledger (Mr.Long ky 4/7 — MASTER luat 11; tool: tools/build_claim.py)
-# 1 pack = 1 claim active. Claim truoc khi build, release sau khi push verified.
-claims: {}
+claims:
+  bp6_decision:
+    claimed_at: '2026-07-04T13:04:26'
+    session: CMD_BUILD
+    status: active
