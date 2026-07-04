@@ -125,10 +125,15 @@ def check_c4_naming_framework(bible23, passengers):
 
 
 def check_c5_knowledge_consistency(bible37, passengers):
-    """C5 — bible/37 v2.1 g2_extension đủ section + per-passenger knowledge↔reveal_permission."""
+    """C5 — bible/37 >= v2.1 g2_extension đủ section + per-passenger knowledge↔reveal_permission.
+    So sánh SO (khong startswith chuoi — v2.2/v2.10 deu la >=2.1, bug tung gap khi bump v2.1->v2.2)."""
     errs = []
     v = str((bible37 or {}).get('meta', {}).get('version', ''))
-    if not v.startswith('2.1'):
+    try:
+        v_tuple = tuple(int(x) for x in v.split('.')[:2])
+    except ValueError:
+        v_tuple = (0, 0)
+    if v_tuple < (2, 1):
         errs.append(f"C5: bible/37 version '{v}' chưa v2.1 (g2_extension chưa ký)")
         return errs
     g2 = (bible37 or {}).get('g2_extension', {})
