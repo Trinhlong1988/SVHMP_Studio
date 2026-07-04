@@ -15,10 +15,9 @@ claims:
     session: CMD_BUILD
     status: released
   g2_character:
-    claimed_at: '2026-07-05T00:38:51'
-    released_at: '2026-07-05T00:57:33'
-    session: G2_EXECUTOR
-    status: released
+    claimed_at: '2026-07-05T01:32:22'
+    session: KIEM_DUYET
+    status: active
   g4_world:
     claimed_at: '2026-07-04T23:55:53'
     session: CMD_BUILD
