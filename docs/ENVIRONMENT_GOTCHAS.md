@@ -43,6 +43,17 @@ enforcer** — backlog: `build_claim.py claim` nên tự kiểm registry pack li
 đã `locked` chưa trước khi cho claim pack kế. Hiện tại: builder + kiểm duyệt phải tự ý thức, chưa có
 máy chặn.
 
+## G7 — Nhiều `git worktree` của CÙNG 1 clone chia sẻ chung `.git` objects/refs, KHÔNG cách ly
+"local-only, chưa push" như tưởng. Case thật (4/7): kiểm duyệt `git rebase origin/main` trên shared
+main tree tạo ra commit local `c725729` (G2 cố ý ghi "Commit LOCAL — CHƯA push, chờ Mr.Long duyệt
+pool tên + waiver"). Không hề `git push` — nhưng 1 worktree KHÁC được tạo sau đó (cùng clone) thấy
+được nhánh `main` cục bộ này qua `git log --all` (không cần qua origin!) và vô tình đẩy nó lên. Hệ quả:
+nội dung "chờ duyệt" lọt lên origin/main mà KHÔNG ai chủ đích push nó. **Bài học:** "commit local
+chưa push" chỉ thật sự an toàn nếu nó nằm trên **branch riêng đặt tên rõ** (vd `g2/hybrid-draft-nopush`),
+KHÔNG phải branch `main` dùng chung — vì bất kỳ worktree nào khác của cùng clone đều nhìn thấy và có
+thể vô tình publish nó. Áp dụng: nội dung "chờ Mr.Long duyệt trước khi lên chung" PHẢI commit trên
+branch cách ly tên riêng, không rebase/để trên `main` dù chỉ tạm thời.
+
 ## Nguồn cảm hứng
 So sánh với Hermes Agent (Nous Research, 4/7): pattern "skill file agent tự viết, mọi lần gọi lại
 đọc được" đúng hướng nhưng KHÔNG áp dụng "tự viết không kiểm duyệt" — file này làm thủ công, review
