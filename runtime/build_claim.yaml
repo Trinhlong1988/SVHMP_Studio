@@ -20,5 +20,6 @@ claims:
     status: active
   svaf_patterns_backlog:
     claimed_at: '2026-07-04T21:37:49'
+    released_at: '2026-07-04T23:14:23'
     session: CMD_BUILD_3
-    status: active
+    status: released
