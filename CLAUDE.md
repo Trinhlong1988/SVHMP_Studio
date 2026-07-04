@@ -1,5 +1,9 @@
 # SVHMP_Studio Project CLAUDE.md
 
+> **Đọc trước khi thao tác git/tool trên máy Admin:** `docs/ENVIRONMENT_GOTCHAS.md` — bẫy môi trường
+> đã dò ra (BOM encoding, shlex Windows path, MinGit no-bash, worktree removal, PACK CLAIM giới hạn).
+> Mọi phiên (builder/G2/kiểm duyệt) đều thêm mục mới vào đó khi tự phát hiện bẫy mới — append-only.
+
 > **TỐI THƯỢNG (Mr.Long 30/6 21:45):** Mỗi lần Mr.Long đào sâu mà phát hiện bug mới, hãy coi đó là **thất bại của quy trình kiểm thử**, không chỉ là thất bại của module. Sau khi sửa bug, **bắt buộc đề xuất thay đổi quy trình hoặc bổ sung test** để loại bug đó không thể lọt qua lần nữa. (R_SUPREME.test_process_failure_principle — bible/00)
 
 > **TỐI THƯỢNG R196 (Mr.Long 30/6 22:50):** **Engineering PASS ≠ Production PASS.** A module is NEVER complete until it passes at least one real production run. Production evidence ALWAYS overrides engineering evidence. Only Golden Production Output authorizes Freeze and Release. CẤM dùng từ "complete / done / 100% hoàn thành" cho module chưa Production validated. Dùng "Engineering Validation PASS / Ready for Production Validation" thay thế.
