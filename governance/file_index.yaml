@@ -1360,5 +1360,41 @@ files:
     domain: supernatural
     status: active
     tier: 3
+  tools/vn_number_words.py:
+    domain: g4_world
+    status: active
+    tier: 1
+  tools/event_ledger_miner.py:
+    domain: g4_world
+    status: active
+    tier: 1
+  tools/timeline_check.py:
+    domain: g4_world
+    status: active
+    tier: 1
+  tools/g4_world_check.py:
+    domain: g4_world
+    status: active
+    tier: 1
+  governance/proposals/fact_ledger_schema.yaml:
+    domain: g4_world
+    status: proposal_awaiting_signature
+    tier: 1
+  runtime/event_ledger_draft.yaml:
+    domain: g4_world
+    status: draft
+    tier: 1
+  reports/G4_EVENT_FINDINGS.md:
+    domain: g4_world
+    status: active
+    tier: 1
+  reports/G4_REPORT.md:
+    domain: g4_world
+    status: active
+    tier: 1
+  tests/test_g4_world.py:
+    domain: g4_world
+    status: active
+    tier: 1
 generated_by: tools/registry_triage.py
-total: 340
+total: 349

@@ -1,0 +1,2177 @@
+meta:
+  tool: tools/event_ledger_miner.py
+  generated: '2026-07-05'
+  status: draft
+  principle: Máy trích xuất — người DUYỆT. Chưa có sổ cái chính (chờ D3 fact_ledger_schema ký).
+  episodes_scanned: 50
+  episodes_range: ep_01..ep_50
+events:
+  ep_01:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: null
+      signature_setting: null
+      passenger_main: null
+      stop_location: Cầu Long Biên
+    temporal_mentions:
+    - ep: 1
+      line: 232
+      kind: years_ago
+      value: 8
+      text: tám năm trước
+    object_mentions: []
+  ep_02:
+    status: draft
+    primary_event:
+      regret_sub: REG_FAM_001 — Mẹ đợi con về Tết — con không về kịp
+      signature_object: OBJ_AO_LEN_NAU
+      signature_setting: setting_can_tet
+      passenger_main: PAS_0013 (Hạ Diệu, nu 18-25)
+      stop_location: ngã ba Phú Yên (quê Hạ Diệu, vùng đồng bằng)
+    temporal_mentions: []
+    object_mentions:
+    - OBJ_AO_LEN_NAU
+    - OBJ_AO_LEN_NAU (áo len nâu mẹ đan dở)
+  ep_03:
+    status: draft
+    primary_event:
+      regret_sub: 'REG_FAM_001 — Mẹ đợi con về Tết — con không về kịp (variation: con trai xa, đêm giao thừa)'
+      signature_object: OBJ_BANH_CHUNG_GOI_DO
+      signature_setting: setting_dem_giao_thua
+      passenger_main: PAS_0014 (Hoàng Lâm, nam 26-35)
+      stop_location: ngã ba Thái Bình (đồng bằng Bắc)
+    temporal_mentions: []
+    object_mentions:
+    - OBJ_BANH_CHUNG_GOI_DO
+    - OBJ_BANH_CHUNG_GOI_DO (bánh chưng mẹ gói dở, lá còn cuộn)
+  ep_04:
+    status: draft
+    primary_event:
+      regret_sub: 'REG_FAM_001 — Mẹ đợi con về Tết (variation: con gái trung niên — cháu là người vắng)'
+      signature_object: OBJ_LI_XI_DO
+      signature_setting: setting_can_tet
+      passenger_main: PAS_0015 (Diễm Tường, nu 36-50)
+      stop_location: ngã ba Phú Thọ (trung du Bắc)
+    temporal_mentions:
+    - ep: 4
+      line: 83
+      kind: age
+      value: 5
+      text: năm tuổi
+    - ep: 4
+      line: 83
+      kind: age
+      value: 3
+      text: ba tuổi
+    - ep: 4
+      line: 83
+      kind: age
+      value: 8
+      text: tám tuổi
+    - ep: 4
+      line: 191
+      kind: age
+      value: 10
+      text: mười tuổi
+    - ep: 4
+      line: 191
+      kind: age
+      value: 5
+      text: năm tuổi
+    object_mentions:
+    - OBJ_LI_XI_DO
+    - OBJ_LI_XI_DO (phong bao lì xì đỏ mẹ già viết tên cháu dở)
+  ep_05:
+    status: draft
+    primary_event:
+      regret_sub: 'REG_FAM_001 (variation: con trai đã già — mẹ mất 30 năm — di vật cũ)'
+      signature_object: OBJ_AO_LEN_NAU
+      signature_setting: setting_dem_giao_thua
+      passenger_main: PAS_0016 (Tuấn Quốc, nam 51-65)
+      stop_location: ngã ba Hà Tĩnh (miền Trung)
+    temporal_mentions:
+    - ep: 5
+      line: 1
+      kind: years_ago
+      value: 30
+      text: BA MƯƠI NĂM TRƯỚC
+    - ep: 5
+      line: 133
+      kind: age
+      value: 21
+      text: hai mươi mốt tuổi
+    - ep: 5
+      line: 159
+      kind: age
+      value: 40
+      text: bốn mươi tuổi
+    object_mentions:
+    - OBJ_AO_LEN_NAU
+    - OBJ_AO_LEN_NAU (áo len nâu cũ, đã mặc 30 năm)
+  ep_06:
+    status: draft
+    primary_event:
+      regret_sub: 'REG_FAM_001 (variation: cụ bà giờ ở vị trí MẸ đợi — cháu là người vắng)'
+      signature_object: OBJ_BANH_CHUNG_GOI_DO
+      signature_setting: setting_can_tet
+      passenger_main: PAS_0017 (Nguyệt Hằng, nu 66+)
+      stop_location: ngã ba Ninh Bình (Bắc bộ)
+    temporal_mentions:
+    - ep: 6
+      line: 130
+      kind: age
+      value: 81
+      text: tám mươi mốt tuổi
+    - ep: 6
+      line: 164
+      kind: age
+      value: 18
+      text: mười tám tuổi
+    - ep: 6
+      line: 172
+      kind: years_ago
+      value: 2
+      text: hai năm trước
+    - ep: 6
+      line: 178
+      kind: years_ago
+      value: 2
+      text: Hai năm trước
+    object_mentions:
+    - OBJ_BANH_CHUNG_GOI_DO
+    - OBJ_BANH_CHUNG_GOI_DO (bánh chưng cụ tự gói chờ cháu)
+  ep_07:
+    status: draft
+    primary_event:
+      regret_sub: 'REG_FAM_001 (variation: con trai trẻ — lì xì đầu tiên CHO mẹ, mẹ chưa kịp mở)'
+      signature_object: OBJ_LI_XI_DO
+      signature_setting: setting_dem_giao_thua
+      passenger_main: PAS_0018 (Bảo Minh, nam 18-25)
+      stop_location: ngã ba Hải Dương
+    temporal_mentions:
+    - ep: 7
+      line: 116
+      kind: age
+      value: 21
+      text: hai mốt tuổi
+    - ep: 7
+      line: 140
+      kind: age
+      value: 50
+      text: năm mươi tuổi
+    object_mentions:
+    - OBJ_LI_XI_DO
+  ep_08:
+    status: draft
+    primary_event:
+      regret_sub: REG_FAM_002 (Bà nội mất giao thừa — cháu không bắt máy)
+      signature_object: OBJ_KHAN_TAY_CU
+      signature_setting: setting_dem_giao_thua
+      passenger_main: PAS_0019 (Hùng Kiệt, nam 18-25)
+      stop_location: ngã ba Bắc Ninh
+    temporal_mentions:
+    - ep: 8
+      line: 165
+      kind: age
+      value: 18
+      text: mười tám tuổi
+    - ep: 8
+      line: 169
+      kind: age
+      value: 5
+      text: năm tuổi
+    object_mentions:
+    - OBJ_KHAN_TAY_CU
+  ep_09:
+    status: draft
+    primary_event:
+      regret_sub: REG_FAM_002 (Bà ngoại — cháu xa xôi, đông lạnh)
+      signature_object: OBJ_BANG_CASSETTE
+      signature_setting: setting_dong_lanh
+      passenger_main: PAS_0020 (Phượng Ngọc, nu 26-35)
+      stop_location: ngã ba Lạng Sơn (miền núi phía Bắc)
+    temporal_mentions:
+    - ep: 9
+      line: 115
+      kind: years_ago
+      value: 4
+      text: bốn năm trước
+    - ep: 9
+      line: 115
+      kind: age
+      value: 31
+      text: ba mốt tuổi
+    - ep: 9
+      line: 119
+      kind: age
+      value: 3
+      text: ba tuổi
+    - ep: 9
+      line: 161
+      kind: age
+      value: 5
+      text: năm tuổi
+    - ep: 9
+      line: 195
+      kind: age
+      value: 5
+      text: năm tuổi
+    - ep: 9
+      line: 201
+      kind: age
+      value: 5
+      text: năm tuổi
+    object_mentions:
+    - OBJ_BANG_CASSETTE
+    - OBJ_BANG_CASSETTE (băng cassette bà ngoại hát ru thu cho cháu)
+  ep_10:
+    status: draft
+    primary_event:
+      regret_sub: 'REG_FAM_002 (variation: chú trung niên — bà mất 30 năm rồi — khăn tay di vật)'
+      signature_object: OBJ_KHAN_TAY_CU
+      signature_setting: setting_dem_giao_thua
+      passenger_main: PAS_0021 (Nguyên Việt, nam 36-50)
+      stop_location: ngã ba Hà Nội (Cầu Long Biên — quê EP01 quay vòng)
+    temporal_mentions:
+    - ep: 10
+      line: 127
+      kind: years_ago
+      value: 30
+      text: ba mươi năm trước
+    - ep: 10
+      line: 127
+      kind: age
+      value: 46
+      text: Bốn mươi sáu tuổi
+    - ep: 10
+      line: 127
+      kind: age
+      value: 16
+      text: mười sáu tuổi
+    - ep: 10
+      line: 131
+      kind: age
+      value: 3
+      text: ba tuổi
+    - ep: 10
+      line: 151
+      kind: years_ago
+      value: 30
+      text: ba mươi năm trước
+    - ep: 10
+      line: 173
+      kind: years_ago
+      value: 5
+      text: Năm năm trước
+    - ep: 10
+      line: 185
+      kind: age
+      value: 20
+      text: hai mươi tuổi
+    - ep: 10
+      line: 185
+      kind: age
+      value: 3
+      text: ba tuổi
+    object_mentions:
+    - OBJ_KHAN_TAY_CU
+    - 'OBJ_KHAN_TAY_CU (collision EP08, variation: 30 năm sau, đã thấm thành ký ức xa)'
+  ep_11:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_VONG_CO_SAO
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nu_45 → nam 26 Đức Hà Đông (em chị mất năm năm)
+      stop_location: ngã ba Hà Đông
+    temporal_mentions:
+    - ep: 11
+      line: 65
+      kind: age
+      value: 26
+      text: hai mươi sáu tuổi
+    - ep: 11
+      line: 127
+      kind: age
+      value: 26
+      text: Hai mươi sáu tuổi
+    - ep: 11
+      line: 131
+      kind: years_ago
+      value: 5
+      text: năm năm trước
+    - ep: 11
+      line: 131
+      kind: age
+      value: 28
+      text: Hai mươi tám tuổi
+    - ep: 11
+      line: 141
+      kind: age
+      value: 10
+      text: mười tuổi
+    - ep: 11
+      line: 143
+      kind: age
+      value: 2
+      text: hai tuổi
+    object_mentions:
+    - OBJ_VONG_CO_SAO
+    - OBJ_VONG_CO_SAO (vòng cổ ngôi sao bạc chị Hà tặng em đêm trước tai nạn)
+  ep_12:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_DONG_HO_XA_CU
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nu 36 Vy An Long Biên (chia tay anh Khôi cầu Long Biên)
+      stop_location: ngã ba Cầu Long Biên
+    temporal_mentions:
+    - ep: 12
+      line: 61
+      kind: age
+      value: 36
+      text: ba mươi sáu tuổi
+    - ep: 12
+      line: 125
+      kind: age
+      value: 36
+      text: Ba mươi sáu tuổi
+    - ep: 12
+      line: 131
+      kind: age
+      value: 5
+      text: năm tuổi
+    - ep: 12
+      line: 167
+      kind: age
+      value: 4
+      text: bốn tuổi
+    - ep: 12
+      line: 175
+      kind: lived_years
+      value: 4
+      text: sống bốn năm
+    - ep: 12
+      line: 183
+      kind: age
+      value: 21
+      text: Hai mươi mốt tuổi
+    - ep: 12
+      line: 209
+      kind: age
+      value: 23
+      text: hai mươi ba tuổi
+    object_mentions:
+    - OBJ_DONG_HO_XA_CU
+    - OBJ_DONG_HO_XA_CU (đồng hồ kim dừng 7:10)
+  ep_13:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_HOA_CUC_KHO
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nam 45 Bình Mỹ Đức (bố ung thư phổi hai năm trước)
+      stop_location: ngã ba Mỹ Đức
+    temporal_mentions:
+    - ep: 13
+      line: 38
+      kind: years_ago
+      value: 2
+      text: hai năm trước
+    - ep: 13
+      line: 63
+      kind: age
+      value: 46
+      text: bốn mươi sáu tuổi
+    - ep: 13
+      line: 117
+      kind: age
+      value: 45
+      text: Bốn mươi lăm tuổi
+    - ep: 13
+      line: 121
+      kind: years_ago
+      value: 2
+      text: hai năm trước
+    - ep: 13
+      line: 121
+      kind: age
+      value: 76
+      text: Bảy mươi sáu tuổi
+    - ep: 13
+      line: 201
+      kind: years_ago
+      value: 2
+      text: hai năm trước
+    object_mentions:
+    - OBJ_HOA_CUC_KHO
+    - OBJ_HOA_CUC_KHO (cúc khô từ vườn bố trồng — chưa kịp tưới)
+  ep_14:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_KHAN_QUANG_THEU_CUC
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nu 56 Tâm Đan Chương Mỹ (từ chối cụ Mai bát phở 30 năm trước)
+      stop_location: ngã ba Chương Hoa Kỳ
+    temporal_mentions:
+    - ep: 14
+      line: 63
+      kind: age
+      value: 56
+      text: năm mươi sáu tuổi
+    - ep: 14
+      line: 117
+      kind: age
+      value: 56
+      text: năm mươi sáu tuổi
+    - ep: 14
+      line: 121
+      kind: years_ago
+      value: 30
+      text: Ba mươi năm trước
+    - ep: 14
+      line: 121
+      kind: age
+      value: 26
+      text: hai mươi sáu tuổi
+    - ep: 14
+      line: 127
+      kind: age
+      value: 70
+      text: bảy mươi tuổi
+    - ep: 14
+      line: 151
+      kind: age
+      value: 78
+      text: bảy mươi tám tuổi
+    object_mentions:
+    - OBJ_KHAN_QUANG_THEU_CUC
+    - OBJ_KHAN_QUANG_THEU_CUC (khăn thêu cúc kỉ niệm bà cụ Mai)
+  ep_15:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_GUONG_VO
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nam 31 Phong Hoài Đức (định tự tử mười năm trước — gương vỡ cứu)
+      stop_location: ngã ba Hoài Đức
+    temporal_mentions:
+    - ep: 15
+      line: 1
+      kind: years_ago
+      value: 10
+      text: MƯỜI NĂM TRƯỚC
+    - ep: 15
+      line: 1
+      kind: lived_years
+      value: 10
+      text: SỐNG MƯỜI NĂM
+    - ep: 15
+      line: 38
+      kind: years_ago
+      value: 10
+      text: mười năm trước
+    - ep: 15
+      line: 71
+      kind: age
+      value: 31
+      text: ba mươi mốt tuổi
+    - ep: 15
+      line: 115
+      kind: years_ago
+      value: 10
+      text: mười năm trước
+    - ep: 15
+      line: 125
+      kind: age
+      value: 31
+      text: Ba mươi mốt tuổi
+    - ep: 15
+      line: 129
+      kind: years_ago
+      value: 10
+      text: Mười năm trước
+    - ep: 15
+      line: 129
+      kind: age
+      value: 21
+      text: hai mươi mốt tuổi
+    - ep: 15
+      line: 215
+      kind: years_ago
+      value: 10
+      text: mười năm trước
+    - ep: 15
+      line: 219
+      kind: age
+      value: 21
+      text: hai mốt tuổi
+    object_mentions:
+    - OBJ_GUONG_VO
+    - OBJ_GUONG_VO (mảnh gương vỡ đêm Phong định không sống)
+  ep_16:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_CHAU_CUC
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nu 38 Hoàng Yến Hà Đông (cãi mẹ chuyện chồng — mẹ mất sau một tháng)
+      stop_location: ngã ba Phú Xuyên
+    temporal_mentions:
+    - ep: 16
+      line: 63
+      kind: age
+      value: 38
+      text: ba mươi tám tuổi
+    - ep: 16
+      line: 115
+      kind: age
+      value: 38
+      text: Ba mươi tám tuổi
+    - ep: 16
+      line: 119
+      kind: years_ago
+      value: 8
+      text: tám năm trước
+    - ep: 16
+      line: 119
+      kind: age
+      value: 68
+      text: Sáu mươi tám tuổi
+    - ep: 16
+      line: 125
+      kind: age
+      value: 20
+      text: hai mươi tuổi
+    - ep: 16
+      line: 125
+      kind: age
+      value: 5
+      text: năm tuổi
+    - ep: 16
+      line: 163
+      kind: age
+      value: 20
+      text: hai mươi tuổi
+    - ep: 16
+      line: 252
+      kind: age
+      value: 80
+      text: tám mươi tuổi
+    object_mentions:
+    - OBJ_CHAU_CUC
+    - OBJ_CHAU_CUC (chậu cúc mẹ trồng — em đem theo)
+  ep_17:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_USB
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nam 42 Hữu Tài Sóc Sơn (bạn thân nhờ vay tiền chữa ung thư — không kịp về)
+      stop_location: ngã ba Sóc Sơn
+    temporal_mentions:
+    - ep: 17
+      line: 61
+      kind: age
+      value: 42
+      text: bốn mươi hai tuổi
+    - ep: 17
+      line: 113
+      kind: age
+      value: 42
+      text: Bốn mươi hai tuổi
+    - ep: 17
+      line: 117
+      kind: years_ago
+      value: 3
+      text: ba năm trước
+    - ep: 17
+      line: 117
+      kind: age
+      value: 40
+      text: Bốn mươi tuổi
+    - ep: 17
+      line: 131
+      kind: years_ago
+      value: 4
+      text: Bốn năm trước
+    object_mentions:
+    - OBJ_USB
+    - OBJ_USB (USB chứa thư bạn gửi — Tài không kịp đọc)
+  ep_18:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_THU_TAY
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nu 28 Linh Trang Hà Nội (chia tay anh Khang vì mẹ ép — anh tự tử sau)
+      stop_location: ngã ba Hoàn Kiếm
+    temporal_mentions:
+    - ep: 18
+      line: 61
+      kind: age
+      value: 28
+      text: hai mươi tám tuổi
+    - ep: 18
+      line: 113
+      kind: age
+      value: 28
+      text: Hai mươi tám tuổi
+    - ep: 18
+      line: 117
+      kind: age
+      value: 2
+      text: hai tuổi
+    - ep: 18
+      line: 209
+      kind: years_ago
+      value: 7
+      text: bảy năm trước
+    object_mentions:
+    - OBJ_THU_TAY
+    - OBJ_THU_TAY (thư tay anh viết đêm chia tay)
+  ep_19:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_VONG_HOA_CUC
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nu 50 Bích Hoa Đông Anh (ngại đi tang bạn — bạn chết cô đơn)
+      stop_location: ngã ba Đông Anh
+    temporal_mentions:
+    - ep: 19
+      line: 61
+      kind: age
+      value: 50
+      text: năm mươi tuổi
+    - ep: 19
+      line: 115
+      kind: age
+      value: 50
+      text: năm mươi tuổi
+    - ep: 19
+      line: 119
+      kind: age
+      value: 48
+      text: Bốn mươi tám tuổi
+    - ep: 19
+      line: 127
+      kind: years_ago
+      value: 6
+      text: sáu năm trước
+    - ep: 19
+      line: 133
+      kind: years_ago
+      value: 2
+      text: Hai năm trước
+    object_mentions:
+    - OBJ_VONG_HOA_CUC
+    - OBJ_VONG_HOA_CUC (vòng hoa cúc cô đem trễ tang bạn)
+  ep_20:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_SO_TAY
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nam 27 Nhật Minh Cầu Giấy (cảm giác mất chính mình — quên người yêu vì sự nghiệp)
+      stop_location: ngã ba Cầu Giấy
+    temporal_mentions:
+    - ep: 20
+      line: 72
+      kind: age
+      value: 27
+      text: hai mươi bảy tuổi
+    - ep: 20
+      line: 134
+      kind: age
+      value: 27
+      text: Hai mươi bảy tuổi
+    - ep: 20
+      line: 138
+      kind: years_ago
+      value: 2
+      text: hai năm trước
+    - ep: 20
+      line: 164
+      kind: age
+      value: 30
+      text: ba mươi tuổi
+    object_mentions:
+    - OBJ_SO_TAY
+    - OBJ_SO_TAY (sổ tay người yêu cũ tặng — Khải Phong sẽ nhớ chữ tay tròn)
+  ep_21:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_ANH_MO
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nam 50 Trọng Nhân Nam Định (mẹ chết khi sinh — không có ảnh)
+      stop_location: ngã ba Nam Định
+    temporal_mentions:
+    - ep: 21
+      line: 65
+      kind: age
+      value: 50
+      text: năm mươi tuổi
+    - ep: 21
+      line: 125
+      kind: age
+      value: 50
+      text: năm mươi tuổi
+    - ep: 21
+      line: 129
+      kind: years_ago
+      value: 51
+      text: năm mươi mốt năm trước
+    - ep: 21
+      line: 141
+      kind: age
+      value: 10
+      text: mười tuổi
+    - ep: 21
+      line: 145
+      kind: lived_years
+      value: 50
+      text: sống năm mươi năm
+    - ep: 21
+      line: 151
+      kind: years_ago
+      value: 51
+      text: năm mươi mốt năm trước
+    - ep: 21
+      line: 153
+      kind: age
+      value: 10
+      text: mười tuổi
+    - ep: 21
+      line: 159
+      kind: age
+      value: 70
+      text: bảy mươi tuổi
+    - ep: 21
+      line: 213
+      kind: age
+      value: 27
+      text: hai mươi bảy tuổi
+    - ep: 21
+      line: 213
+      kind: age
+      value: 50
+      text: năm mươi tuổi
+    object_mentions:
+    - OBJ_ANH_MO
+    - OBJ_ANH_MO (ảnh mộ mẹ chụp lần đầu)
+  ep_22:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_SACH_
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nu 35 Quỳnh Mai Bắc Ninh (hứa với thầy đại học sẽ về thăm — mười năm)
+      stop_location: ngã ba Bắc Ninh
+    temporal_mentions:
+    - ep: 22
+      line: 65
+      kind: age
+      value: 35
+      text: ba mươi lăm tuổi
+    - ep: 22
+      line: 103
+      kind: age
+      value: 60
+      text: sáu mươi tuổi
+    - ep: 22
+      line: 125
+      kind: age
+      value: 35
+      text: Ba mươi lăm tuổi
+    - ep: 22
+      line: 131
+      kind: age
+      value: 48
+      text: bốn mươi tám tuổi
+    - ep: 22
+      line: 159
+      kind: age
+      value: 1
+      text: một tuổi
+    - ep: 22
+      line: 167
+      kind: age
+      value: 34
+      text: ba mươi tư tuổi
+    - ep: 22
+      line: 167
+      kind: age
+      value: 60
+      text: sáu mươi tuổi
+    object_mentions:
+    - OBJ_SACH_
+    - OBJ_SACH_2017 (cuốn sách thầy tặng năm 2017 tốt nghiệp)
+  ep_23:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_THU_TU_CHOI
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nam 45 Đức Vinh Hải Phòng (yêu thư ký hai mươi năm không tỏ tình)
+      stop_location: ngã ba Hải Phòng
+    temporal_mentions:
+    - ep: 23
+      line: 65
+      kind: age
+      value: 45
+      text: bốn mươi lăm tuổi
+    - ep: 23
+      line: 97
+      kind: age
+      value: 40
+      text: bốn mươi tuổi
+    - ep: 23
+      line: 109
+      kind: years_ago
+      value: 20
+      text: hai mươi năm trước
+    - ep: 23
+      line: 119
+      kind: age
+      value: 45
+      text: Bốn mươi lăm tuổi
+    - ep: 23
+      line: 123
+      kind: age
+      value: 2
+      text: hai tuổi
+    - ep: 23
+      line: 163
+      kind: age
+      value: 46
+      text: bốn mươi sáu tuổi
+    - ep: 23
+      line: 213
+      kind: age
+      value: 40
+      text: bốn mươi tuổi
+    - ep: 23
+      line: 239
+      kind: years_ago
+      value: 3
+      text: ba năm trước
+    - ep: 23
+      line: 247
+      kind: years_ago
+      value: 2
+      text: hai năm trước
+    object_mentions:
+    - OBJ_THU_TU_CHOI
+    - OBJ_THU_TU_CHOI (bức thư cô viết khi anh tỏ tình muộn)
+  ep_24:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_VO_VIET
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nu 60 Hồng Liên Hà Nam (từ chối đỡ học cháu chị họ — cháu chết trẻ)
+      stop_location: ngã ba Hà Nam
+    temporal_mentions:
+    - ep: 24
+      line: 65
+      kind: age
+      value: 60
+      text: sáu mươi tuổi
+    - ep: 24
+      line: 83
+      kind: age
+      value: 14
+      text: mười bốn năm tuổi
+    - ep: 24
+      line: 101
+      kind: age
+      value: 10
+      text: mười tuổi
+    - ep: 24
+      line: 123
+      kind: years_ago
+      value: 2
+      text: hai năm trước
+    - ep: 24
+      line: 123
+      kind: age
+      value: 60
+      text: Sáu mươi tuổi
+    - ep: 24
+      line: 127
+      kind: years_ago
+      value: 10
+      text: mười năm trước
+    - ep: 24
+      line: 127
+      kind: age
+      value: 14
+      text: Mười bốn tuổi
+    - ep: 24
+      line: 133
+      kind: age
+      value: 10
+      text: mười tuổi
+    - ep: 24
+      line: 163
+      kind: age
+      value: 14
+      text: mười bốn tuổi
+    - ep: 24
+      line: 197
+      kind: years_ago
+      value: 10
+      text: mười năm trước
+    - ep: 24
+      line: 245
+      kind: age
+      value: 10
+      text: mười tuổi
+    object_mentions:
+    - OBJ_VO_VIET
+    - OBJ_VO_VIET (cuốn vở cháu viết hồi tiểu học)
+  ep_25:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_KINH_NHO
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nam 38 Văn Quân Thái Nguyên (ung thư phổi 36 tuổi — phẫu thuật cắt phổi)
+      stop_location: ngã ba Thái Nguyên
+    temporal_mentions:
+    - ep: 25
+      line: 63
+      kind: lived_years
+      value: 10
+      text: sống mười năm
+    - ep: 25
+      line: 73
+      kind: age
+      value: 38
+      text: ba mươi tám tuổi
+    - ep: 25
+      line: 111
+      kind: age
+      value: 30
+      text: ba mươi tuổi
+    - ep: 25
+      line: 123
+      kind: years_ago
+      value: 2
+      text: hai năm trước
+    - ep: 25
+      line: 123
+      kind: age
+      value: 30
+      text: ba mươi tuổi
+    - ep: 25
+      line: 133
+      kind: age
+      value: 38
+      text: Ba mươi tám tuổi
+    - ep: 25
+      line: 137
+      kind: years_ago
+      value: 2
+      text: Hai năm trước
+    - ep: 25
+      line: 145
+      kind: years_ago
+      value: 20
+      text: Hai mươi năm trước
+    - ep: 25
+      line: 153
+      kind: age
+      value: 20
+      text: hai mươi tuổi
+    - ep: 25
+      line: 169
+      kind: lived_years
+      value: 5
+      text: sống năm năm
+    - ep: 25
+      line: 203
+      kind: age
+      value: 20
+      text: hai mươi tuổi
+    - ep: 25
+      line: 205
+      kind: lived_years
+      value: 40
+      text: sống bốn mươi năm
+    - ep: 25
+      line: 231
+      kind: age
+      value: 30
+      text: ba mươi tuổi
+    - ep: 25
+      line: 283
+      kind: age
+      value: 20
+      text: hai mươi tuổi
+    object_mentions:
+    - OBJ_GUONG
+    - OBJ_KINH_NHO
+    - OBJ_KINH_NHO (kính nhỏ phản chiếu mặt hồi khỏe)
+  ep_26:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_THUOC_T
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nam 38 Đức Hùng Hà Nội (bố KTS mất — con ngại học theo)
+      stop_location: ngã ba Hoài Đức
+    temporal_mentions:
+    - ep: 26
+      line: 65
+      kind: age
+      value: 38
+      text: ba mươi tám tuổi
+    - ep: 26
+      line: 103
+      kind: age
+      value: 60
+      text: sáu mươi tuổi
+    - ep: 26
+      line: 125
+      kind: age
+      value: 38
+      text: Ba mươi tám tuổi
+    - ep: 26
+      line: 129
+      kind: years_ago
+      value: 7
+      text: bảy năm trước
+    - ep: 26
+      line: 129
+      kind: age
+      value: 61
+      text: Sáu mươi mốt tuổi
+    - ep: 26
+      line: 135
+      kind: age
+      value: 10
+      text: mười tuổi
+    - ep: 26
+      line: 163
+      kind: age
+      value: 60
+      text: sáu mươi tuổi
+    - ep: 26
+      line: 183
+      kind: years_ago
+      value: 7
+      text: bảy năm trước
+    - ep: 26
+      line: 221
+      kind: age
+      value: 60
+      text: sáu mươi tuổi
+    object_mentions:
+    - OBJ_THUOC_T
+    - OBJ_THUOC_T (bộ thước bố mua 2017 — bố mất sau)
+  ep_27:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_ANH_CHUNG
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nu 45 Mỹ Linh Sài Gòn (hứa với bạn tiểu học giúp chữa bệnh — đi nước ngoài quên)
+      stop_location: ngã ba Phú Thọ
+    temporal_mentions:
+    - ep: 27
+      line: 65
+      kind: age
+      value: 45
+      text: bốn mươi lăm tuổi
+    - ep: 27
+      line: 101
+      kind: age
+      value: 40
+      text: bốn mươi tuổi
+    - ep: 27
+      line: 123
+      kind: age
+      value: 45
+      text: Bốn mươi lăm tuổi
+    - ep: 27
+      line: 127
+      kind: years_ago
+      value: 2
+      text: hai năm trước
+    - ep: 27
+      line: 127
+      kind: age
+      value: 43
+      text: Bốn mươi ba tuổi
+    - ep: 27
+      line: 193
+      kind: years_ago
+      value: 24
+      text: hai mươi bốn năm trước
+    object_mentions:
+    - OBJ_ANH_CHUNG
+    - OBJ_ANH_CHUNG (ảnh chung lớp tiểu học bạn tặng)
+  ep_28:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_NHAN_CUOI
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nam 55 Hữu Lộc Hà Tĩnh (ly hôn vợ 30 năm trước — vợ vừa mất)
+      stop_location: ngã ba Hà Tĩnh
+    temporal_mentions:
+    - ep: 28
+      line: 1
+      kind: years_ago
+      value: 30
+      text: BA MƯƠI NĂM TRƯỚC
+    - ep: 28
+      line: 65
+      kind: age
+      value: 55
+      text: năm mươi lăm tuổi
+    - ep: 28
+      line: 99
+      kind: age
+      value: 50
+      text: năm mươi tuổi
+    - ep: 28
+      line: 121
+      kind: age
+      value: 55
+      text: năm mươi lăm tuổi
+    - ep: 28
+      line: 125
+      kind: age
+      value: 53
+      text: năm mươi ba tuổi
+    - ep: 28
+      line: 135
+      kind: age
+      value: 3
+      text: ba tuổi
+    - ep: 28
+      line: 153
+      kind: age
+      value: 3
+      text: ba tuổi
+    - ep: 28
+      line: 169
+      kind: age
+      value: 3
+      text: ba tuổi
+    - ep: 28
+      line: 181
+      kind: years_ago
+      value: 31
+      text: ba mươi mốt năm trước
+    - ep: 28
+      line: 193
+      kind: years_ago
+      value: 30
+      text: ba mươi năm trước
+    object_mentions:
+    - OBJ_NHAN_CUOI
+    - OBJ_NHAN_CUOI (nhẫn cưới cũ tháo 30 năm)
+  ep_29:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_THE_HIEN_MAU
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nu 28 Linh Đan Đà Nẵng (từ chối hiến máu cho bạn cùng phòng 2017 — bạn chết)
+      stop_location: ngã ba Đà Nẵng
+    temporal_mentions:
+    - ep: 29
+      line: 65
+      kind: age
+      value: 28
+      text: hai mươi tám tuổi
+    - ep: 29
+      line: 103
+      kind: age
+      value: 20
+      text: hai mươi tuổi
+    - ep: 29
+      line: 125
+      kind: age
+      value: 28
+      text: Hai mươi tám tuổi
+    - ep: 29
+      line: 129
+      kind: years_ago
+      value: 7
+      text: bảy năm trước
+    - ep: 29
+      line: 129
+      kind: age
+      value: 21
+      text: Hai mươi mốt tuổi
+    - ep: 29
+      line: 139
+      kind: age
+      value: 21
+      text: hai mươi mốt tuổi
+    - ep: 29
+      line: 177
+      kind: age
+      value: 5
+      text: năm tuổi
+    - ep: 29
+      line: 187
+      kind: lived_years
+      value: 7
+      text: sống bảy năm
+    - ep: 29
+      line: 248
+      kind: years_ago
+      value: 1
+      text: một năm trước
+    object_mentions:
+    - OBJ_THE_HIEN_MAU
+    - OBJ_THE_HIEN_MAU (thẻ đăng ký hiến máu cô vứt 2017)
+  ep_30:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_BANG_TOT_NGHIEP
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nam 30 anh Nguyễn (người khách cùng tên!) — anh thầy giáo cứu khỏi bỏ học
+      stop_location: ngã ba Hải Dương
+    temporal_mentions:
+    - ep: 30
+      line: 82
+      kind: age
+      value: 30
+      text: ba mươi tuổi
+    - ep: 30
+      line: 126
+      kind: age
+      value: 60
+      text: sáu mươi tuổi
+    - ep: 30
+      line: 148
+      kind: age
+      value: 30
+      text: Ba mươi tuổi
+    - ep: 30
+      line: 154
+      kind: age
+      value: 58
+      text: năm mươi tám tuổi
+    - ep: 30
+      line: 283
+      kind: years_ago
+      value: 1
+      text: một năm trước
+    - ep: 30
+      line: 295
+      kind: years_ago
+      value: 4
+      text: bốn năm trước
+    object_mentions:
+    - OBJ_BANG_TOT_NGHIEP
+    - OBJ_BANG_TOT_NGHIEP (bằng tốt nghiệp THPT năm 2017)
+  ep_31:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_CHAU_CUC_THANG_TU
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nu 55 Thanh Vân Hưng Yên (mẹ mất tháng tư mười ba năm trước - đem cúc mỗi tháng)
+      stop_location: ngã ba Hưng Yên
+    temporal_mentions:
+    - ep: 31
+      line: 65
+      kind: age
+      value: 55
+      text: năm mươi lăm tuổi
+    - ep: 31
+      line: 121
+      kind: age
+      value: 55
+      text: năm mươi lăm tuổi
+    - ep: 31
+      line: 125
+      kind: years_ago
+      value: 13
+      text: mười ba năm trước
+    - ep: 31
+      line: 125
+      kind: age
+      value: 71
+      text: Bảy mươi mốt tuổi
+    - ep: 31
+      line: 241
+      kind: years_ago
+      value: 8
+      text: Tám năm trước
+    object_mentions:
+    - OBJ_CHAU_CUC_THANG_TU
+    - OBJ_CHAU_CUC_THANG_TU (chậu cúc đem mộ mỗi tháng)
+  ep_32:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_CHAN_DAN_DO
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nam 40 Phan Tâm Bắc Giang (vợ chết đột ngột tháng tư - chăn may dở)
+      stop_location: ngã ba Bắc Giang
+    temporal_mentions:
+    - ep: 32
+      line: 65
+      kind: age
+      value: 40
+      text: bốn mươi tuổi
+    - ep: 32
+      line: 123
+      kind: age
+      value: 40
+      text: Bốn mươi tuổi
+    - ep: 32
+      line: 127
+      kind: years_ago
+      value: 7
+      text: bảy năm trước
+    - ep: 32
+      line: 127
+      kind: age
+      value: 33
+      text: Ba mươi ba tuổi
+    object_mentions:
+    - OBJ_CHAN_DAN_DO
+    - OBJ_CHAN_DAN_DO (chiếc chăn vợ đan dở đêm trước em đi)
+  ep_33:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_VE_TAU_DIEN
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nu 38 Hoài An Hà Nội (hứa đưa bạn quê đi tàu điện - bạn chết trước kịp)
+      stop_location: ngã ba Cát Linh
+    temporal_mentions:
+    - ep: 33
+      line: 65
+      kind: age
+      value: 38
+      text: ba mươi tám tuổi
+    - ep: 33
+      line: 123
+      kind: age
+      value: 38
+      text: Ba mươi tám tuổi
+    - ep: 33
+      line: 127
+      kind: years_ago
+      value: 3
+      text: ba năm trước
+    - ep: 33
+      line: 127
+      kind: age
+      value: 36
+      text: Ba mươi sáu tuổi
+    - ep: 33
+      line: 249
+      kind: age
+      value: 16
+      text: mười sáu tuổi
+    object_mentions:
+    - OBJ_VE_TAU_DIEN
+    - OBJ_VE_TAU_DIEN (vé tàu điện Cát Linh đợt mở)
+  ep_34:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_HUONG_TRAM
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nam 50 Văn Tuấn Vĩnh Phúc (không thắp hương cho hàng xóm cũ - bác mất mười năm)
+      stop_location: ngã ba Vĩnh Phúc
+    temporal_mentions:
+    - ep: 34
+      line: 63
+      kind: age
+      value: 50
+      text: năm mươi tuổi
+    - ep: 34
+      line: 99
+      kind: age
+      value: 70
+      text: bảy mươi tuổi
+    - ep: 34
+      line: 121
+      kind: age
+      value: 50
+      text: năm mươi tuổi
+    - ep: 34
+      line: 125
+      kind: years_ago
+      value: 10
+      text: mười năm trước
+    - ep: 34
+      line: 125
+      kind: age
+      value: 71
+      text: Bảy mươi mốt tuổi
+    - ep: 34
+      line: 131
+      kind: age
+      value: 10
+      text: mười tuổi
+    - ep: 34
+      line: 167
+      kind: age
+      value: 10
+      text: mười tuổi
+    object_mentions:
+    - OBJ_HUONG_TRAM
+    - OBJ_HUONG_TRAM (bó hương trầm anh chuẩn bị từ năm trước)
+  ep_35:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_MANH_GUONG
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nam 28 Trí Hưng Nghệ An (định tự tử hai năm trước - mảnh gương cứu - tương tự EP15 Phong + EP25 Van
+        Quan)
+      stop_location: ngã ba Nghệ An
+    temporal_mentions:
+    - ep: 35
+      line: 1
+      kind: years_ago
+      value: 2
+      text: HAI NĂM TRƯỚC
+    - ep: 35
+      line: 38
+      kind: years_ago
+      value: 2
+      text: hai năm trước
+    - ep: 35
+      line: 63
+      kind: age
+      value: 20
+      text: hai mươi tuổi
+    - ep: 35
+      line: 73
+      kind: age
+      value: 28
+      text: hai mươi tám tuổi
+    - ep: 35
+      line: 133
+      kind: age
+      value: 28
+      text: Hai mươi tám tuổi
+    - ep: 35
+      line: 137
+      kind: years_ago
+      value: 2
+      text: Hai năm trước
+    object_mentions:
+    - OBJ_MANH_GUONG
+    - OBJ_MANH_GUONG (mảnh gương vỡ cứu cuộc)
+  ep_36:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_TAM_ANH
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nam 48 Văn Khải Lào Cai (em gái mất tai nạn xe — em đã có người yêu Khải Phong không biết)
+      stop_location: ngã ba Lào Cai
+    temporal_mentions:
+    - ep: 36
+      line: 65
+      kind: age
+      value: 48
+      text: bốn mươi tám tuổi
+    - ep: 36
+      line: 101
+      kind: age
+      value: 20
+      text: hai mươi tuổi
+    - ep: 36
+      line: 123
+      kind: age
+      value: 48
+      text: Bốn mươi tám tuổi
+    - ep: 36
+      line: 127
+      kind: years_ago
+      value: 20
+      text: hai mươi năm trước
+    - ep: 36
+      line: 127
+      kind: age
+      value: 20
+      text: Hai mươi tuổi
+    - ep: 36
+      line: 129
+      kind: age
+      value: 8
+      text: tám tuổi
+    - ep: 36
+      line: 151
+      kind: age
+      value: 22
+      text: hai mươi hai tuổi
+    object_mentions:
+    - OBJ_TAM_ANH
+    - OBJ_TAM_ANH (tấm ảnh em gái chụp với người yêu Khải Phong không biết)
+  ep_37:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_BIEN_SO
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nu 32 Mỹ Hạnh Hà Nội (vợ chồng đi xe máy phố Huế - chồng mất tai nạn)
+      stop_location: ngã ba phố Huế (đoạn ngã tư Hai Bà Trưng)
+    temporal_mentions:
+    - ep: 37
+      line: 65
+      kind: age
+      value: 32
+      text: ba mươi hai tuổi
+    - ep: 37
+      line: 121
+      kind: age
+      value: 32
+      text: Ba mươi hai tuổi
+    - ep: 37
+      line: 125
+      kind: years_ago
+      value: 1
+      text: một năm trước
+    - ep: 37
+      line: 125
+      kind: age
+      value: 31
+      text: Ba mươi mốt tuổi
+    - ep: 37
+      line: 225
+      kind: years_ago
+      value: 8
+      text: tám năm trước
+    object_mentions:
+    - OBJ_BIEN_SO
+    - OBJ_BIEN_SO (mảnh biển số xe máy chồng - tai nạn phố Huế)
+  ep_38:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_HOP_QUA
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nam 35 Đức Anh Quảng Ninh (hứa tặng quà sinh nhật 18 cho bạn cấp 3 — bạn chết trước sinh nhật)
+      stop_location: ngã ba Quảng Ninh
+    temporal_mentions:
+    - ep: 38
+      line: 1
+      kind: age
+      value: 18
+      text: MƯỜI TÁM TUỔI
+    - ep: 38
+      line: 65
+      kind: age
+      value: 35
+      text: ba mươi lăm tuổi
+    - ep: 38
+      line: 101
+      kind: age
+      value: 18
+      text: mười tám tuổi
+    - ep: 38
+      line: 123
+      kind: age
+      value: 35
+      text: Ba mươi lăm tuổi
+    - ep: 38
+      line: 127
+      kind: years_ago
+      value: 17
+      text: mười bảy năm trước
+    - ep: 38
+      line: 127
+      kind: age
+      value: 17
+      text: Mười bảy tuổi
+    - ep: 38
+      line: 127
+      kind: age
+      value: 18
+      text: mười tám tuổi
+    - ep: 38
+      line: 143
+      kind: age
+      value: 16
+      text: mười sáu tuổi
+    - ep: 38
+      line: 145
+      kind: age
+      value: 18
+      text: mười tám tuổi
+    - ep: 38
+      line: 157
+      kind: age
+      value: 18
+      text: mười tám tuổi
+    - ep: 38
+      line: 165
+      kind: years_ago
+      value: 3
+      text: ba năm trước
+    object_mentions:
+    - OBJ_HOP_QUA
+    - OBJ_HOP_QUA (hộp quà chuẩn bị sẵn không kịp tặng)
+  ep_39:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_TO_COM
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nu 55 Hồng Mai Quảng Bình (không đem cơm cho hàng xóm già — bà chết đói trước nhà)
+      stop_location: ngã ba Quảng Bình
+    temporal_mentions:
+    - ep: 39
+      line: 65
+      kind: age
+      value: 55
+      text: năm mươi lăm tuổi
+    - ep: 39
+      line: 101
+      kind: age
+      value: 70
+      text: bảy mươi tuổi
+    - ep: 39
+      line: 123
+      kind: age
+      value: 55
+      text: năm mươi lăm tuổi
+    - ep: 39
+      line: 127
+      kind: years_ago
+      value: 8
+      text: tám năm trước
+    - ep: 39
+      line: 127
+      kind: age
+      value: 76
+      text: Bảy mươi sáu tuổi
+    - ep: 39
+      line: 133
+      kind: years_ago
+      value: 8
+      text: Tám năm trước
+    - ep: 39
+      line: 159
+      kind: years_ago
+      value: 8
+      text: tám năm trước
+    - ep: 39
+      line: 197
+      kind: years_ago
+      value: 8
+      text: tám năm trước
+    - ep: 39
+      line: 231
+      kind: age
+      value: 30
+      text: ba mươi tuổi
+    object_mentions:
+    - OBJ_TO_COM
+    - OBJ_TO_COM (tô cơm bà chuẩn bị mỗi tuần - chưa kịp đem)
+  ep_40:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_GIAY_KTS
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nam 28 Trung Hậu Hà Nội (anh Hải - chính anh Hải gọi cấp cứu Hạ Vy tám năm trước - đêm này lên xe gặp
+        Khải Phong)
+      stop_location: ngã ba Long Biên (chính bến EP01 + EP12)
+    temporal_mentions:
+    - ep: 40
+      line: 38
+      kind: years_ago
+      value: 8
+      text: tám năm trước
+    - ep: 40
+      line: 78
+      kind: age
+      value: 28
+      text: hai mươi tám tuổi
+    - ep: 40
+      line: 108
+      kind: years_ago
+      value: 8
+      text: tám năm trước
+    - ep: 40
+      line: 142
+      kind: age
+      value: 28
+      text: Hai mươi tám tuổi
+    - ep: 40
+      line: 144
+      kind: age
+      value: 6
+      text: sáu tuổi
+    - ep: 40
+      line: 188
+      kind: age
+      value: 30
+      text: ba mươi tuổi
+    object_mentions:
+    - OBJ_GIAY_KTS
+    - OBJ_GIAY_KTS (giấy thiết kế đồ án cũ - anh giữ từ 2018)
+  ep_41:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_DIEN_THOAI
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nu 32 Bích Trâm Bình Định (con gái mất bệnh - không kịp gửi tin cuối cho mẹ)
+      stop_location: ngã ba Bình Định
+    temporal_mentions:
+    - ep: 41
+      line: 63
+      kind: age
+      value: 32
+      text: ba mươi hai tuổi
+    - ep: 41
+      line: 99
+      kind: age
+      value: 18
+      text: mười tám tuổi
+    - ep: 41
+      line: 121
+      kind: age
+      value: 32
+      text: Ba mươi hai tuổi
+    - ep: 41
+      line: 125
+      kind: age
+      value: 18
+      text: Mười tám tuổi
+    - ep: 41
+      line: 127
+      kind: age
+      value: 18
+      text: mười tám tuổi
+    - ep: 41
+      line: 127
+      kind: age
+      value: 2
+      text: hai tuổi
+    - ep: 41
+      line: 233
+      kind: years_ago
+      value: 8
+      text: tám năm trước
+    object_mentions:
+    - OBJ_DIEN_THOAI
+    - OBJ_DIEN_THOAI (điện thoại con còn lưu tin nhắn dở)
+  ep_42:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_NHAN_CUOI
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nam 42 Hoàng Nam Bến Tre (vợ mất tai nạn xe - nhẫn cưới còn trên tay)
+      stop_location: ngã ba Bến Tre
+    temporal_mentions:
+    - ep: 42
+      line: 63
+      kind: age
+      value: 42
+      text: bốn mươi hai tuổi
+    - ep: 42
+      line: 99
+      kind: age
+      value: 38
+      text: ba mươi tám tuổi
+    - ep: 42
+      line: 121
+      kind: age
+      value: 42
+      text: Bốn mươi hai tuổi
+    - ep: 42
+      line: 125
+      kind: age
+      value: 38
+      text: Ba mươi tám tuổi
+    - ep: 42
+      line: 127
+      kind: age
+      value: 10
+      text: mười tuổi
+    - ep: 42
+      line: 127
+      kind: age
+      value: 6
+      text: sáu tuổi
+    - ep: 42
+      line: 151
+      kind: years_ago
+      value: 12
+      text: mười hai năm trước
+    object_mentions:
+    - OBJ_NHAN_CUOI
+    - OBJ_NHAN_CUOI (nhẫn cưới vợ - bệnh viện trả về)
+  ep_43:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_GIAY_CONG_DAN
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nam 50 Văn Trường Bình Phước (hứa cưới khi bạn đi nghĩa vụ về - bạn không về)
+      stop_location: ngã ba Bình Phước
+    temporal_mentions:
+    - ep: 43
+      line: 63
+      kind: age
+      value: 50
+      text: năm mươi tuổi
+    - ep: 43
+      line: 99
+      kind: age
+      value: 20
+      text: hai mươi tuổi
+    - ep: 43
+      line: 121
+      kind: age
+      value: 50
+      text: năm mươi tuổi
+    - ep: 43
+      line: 125
+      kind: years_ago
+      value: 28
+      text: hai mươi tám năm trước
+    - ep: 43
+      line: 125
+      kind: age
+      value: 19
+      text: Mười chín tuổi
+    object_mentions:
+    - OBJ_GIAY_CONG_DAN
+    - OBJ_GIAY_CONG_DAN (giấy chứng nhận hoàn thành nghĩa vụ - bạn không nhận)
+  ep_44:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_KHUC_CHE
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nu 52 Phượng Liên Đắk Lắk (không đem khúc chè cho hàng xóm bệnh - bà mất)
+      stop_location: ngã ba Đắk Lắk
+    temporal_mentions:
+    - ep: 44
+      line: 41
+      kind: years_ago
+      value: 5
+      text: năm năm trước
+    - ep: 44
+      line: 65
+      kind: age
+      value: 52
+      text: năm mươi hai tuổi
+    - ep: 44
+      line: 101
+      kind: age
+      value: 70
+      text: bảy mươi tuổi
+    - ep: 44
+      line: 123
+      kind: age
+      value: 52
+      text: năm mươi hai tuổi
+    - ep: 44
+      line: 127
+      kind: years_ago
+      value: 5
+      text: năm năm trước
+    - ep: 44
+      line: 127
+      kind: age
+      value: 70
+      text: Bảy mươi tuổi
+    - ep: 44
+      line: 157
+      kind: years_ago
+      value: 5
+      text: năm năm trước
+    - ep: 44
+      line: 197
+      kind: years_ago
+      value: 5
+      text: năm năm trước
+    object_mentions:
+    - OBJ_KHUC_CHE
+    - OBJ_KHUC_CHE (khúc chè bà chuẩn bị năm năm trước)
+  ep_45:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_MANH_GUONG
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nam 30 Mạnh Hiếu Bắc Ninh (định tự tử sau tốt nghiệp - gương cứu - echo EP15+EP25+EP35)
+      stop_location: ngã ba Bắc Ninh (callback EP20 setting + EP45 object echo)
+    temporal_mentions:
+    - ep: 45
+      line: 69
+      kind: age
+      value: 30
+      text: ba mươi tuổi
+    - ep: 45
+      line: 105
+      kind: age
+      value: 20
+      text: hai mươi tuổi
+    - ep: 45
+      line: 127
+      kind: age
+      value: 30
+      text: Ba mươi tuổi
+    - ep: 45
+      line: 131
+      kind: years_ago
+      value: 10
+      text: Mười năm trước
+    - ep: 45
+      line: 131
+      kind: age
+      value: 20
+      text: hai mươi tuổi
+    - ep: 45
+      line: 159
+      kind: years_ago
+      value: 10
+      text: mười năm trước
+    - ep: 45
+      line: 179
+      kind: years_ago
+      value: 10
+      text: mười năm trước
+    object_mentions:
+    - OBJ_MANH_GUONG
+    - OBJ_MANH_GUONG (mảnh gương cuộc thứ tư trong cụm)
+  ep_46:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_TUI_VAI_CAT
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nu 68 Bà Hảo Thái Bình (hứa đem cháu nội đi biển - cháu chết trước)
+      stop_location: ngã ba Thái Bình
+    temporal_mentions:
+    - ep: 46
+      line: 63
+      kind: age
+      value: 68
+      text: sáu mươi tám tuổi
+    - ep: 46
+      line: 99
+      kind: age
+      value: 8
+      text: tám tuổi
+    - ep: 46
+      line: 121
+      kind: age
+      value: 68
+      text: Sáu mươi tám tuổi
+    - ep: 46
+      line: 125
+      kind: years_ago
+      value: 4
+      text: bốn năm trước
+    - ep: 46
+      line: 125
+      kind: age
+      value: 8
+      text: Tám tuổi
+    - ep: 46
+      line: 131
+      kind: age
+      value: 8
+      text: tám tuổi
+    - ep: 46
+      line: 135
+      kind: years_ago
+      value: 4
+      text: Bốn năm trước
+    - ep: 46
+      line: 145
+      kind: age
+      value: 8
+      text: tám tuổi
+    - ep: 46
+      line: 199
+      kind: age
+      value: 8
+      text: tám tuổi
+    object_mentions:
+    - OBJ_TUI_VAI_CAT
+    - OBJ_TUI_VAI_CAT (túi vải cát biển bà chuẩn bị)
+  ep_47:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_VE_MAY_BAY
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nu 30 Thanh Nga Hà Nội (vé máy bay đi du học - chồng chết trước ngày đi)
+      stop_location: ngã ba sân bay Nội Bài
+    temporal_mentions:
+    - ep: 47
+      line: 63
+      kind: age
+      value: 30
+      text: ba mươi tuổi
+    - ep: 47
+      line: 97
+      kind: age
+      value: 30
+      text: ba mươi tuổi
+    - ep: 47
+      line: 119
+      kind: age
+      value: 30
+      text: Ba mươi tuổi
+    - ep: 47
+      line: 123
+      kind: years_ago
+      value: 4
+      text: bốn năm trước
+    - ep: 47
+      line: 123
+      kind: age
+      value: 26
+      text: Hai mươi sáu tuổi
+    - ep: 47
+      line: 125
+      kind: years_ago
+      value: 1
+      text: một năm trước
+    - ep: 47
+      line: 125
+      kind: years_ago
+      value: 3
+      text: ba năm trước
+    - ep: 47
+      line: 145
+      kind: age
+      value: 26
+      text: Hai mươi sáu tuổi
+    object_mentions:
+    - OBJ_VE_MAY_BAY
+    - OBJ_VE_MAY_BAY (vé máy bay cặp đôi không dùng)
+  ep_48:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_DAN_GUITAR
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nam 38 Hữu Duy Cần Thơ (hứa tặng guitar bạn cấp ba - quên hai mươi năm - bạn chết bệnh)
+      stop_location: ngã ba Cần Thơ
+    temporal_mentions:
+    - ep: 48
+      line: 63
+      kind: age
+      value: 38
+      text: ba mươi tám tuổi
+    - ep: 48
+      line: 99
+      kind: age
+      value: 20
+      text: hai mươi tuổi
+    - ep: 48
+      line: 121
+      kind: age
+      value: 38
+      text: Ba mươi tám tuổi
+    - ep: 48
+      line: 125
+      kind: years_ago
+      value: 2
+      text: hai năm trước
+    - ep: 48
+      line: 125
+      kind: age
+      value: 36
+      text: Ba mươi sáu tuổi
+    - ep: 48
+      line: 153
+      kind: years_ago
+      value: 15
+      text: mười lăm năm trước
+    - ep: 48
+      line: 157
+      kind: years_ago
+      value: 15
+      text: mười lăm năm trước
+    object_mentions:
+    - OBJ_DAN_GUITAR
+    - OBJ_DAN_GUITAR (đàn guitar gỗ - hứa tặng bạn)
+  ep_49:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_KHAN_TAY
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nu 42 Phương Linh Sóc Trăng (đỡ cô gái mưa - cô gái sau tự tử do em không tiếp tục giúp)
+      stop_location: ngã ba Sóc Trăng
+    temporal_mentions:
+    - ep: 49
+      line: 97
+      kind: age
+      value: 20
+      text: hai mươi tuổi
+    - ep: 49
+      line: 119
+      kind: age
+      value: 42
+      text: Bốn mươi hai tuổi
+    - ep: 49
+      line: 123
+      kind: years_ago
+      value: 15
+      text: mười lăm năm trước
+    - ep: 49
+      line: 123
+      kind: age
+      value: 20
+      text: Hai mươi tuổi
+    - ep: 49
+      line: 125
+      kind: age
+      value: 27
+      text: hai mươi bảy tuổi
+    - ep: 49
+      line: 131
+      kind: age
+      value: 18
+      text: mười tám tuổi
+    object_mentions:
+    - OBJ_KHAN_TAY
+    - OBJ_KHAN_TAY (khăn tay cô gái em đỡ - cô để quên)
+  ep_50:
+    status: draft
+    primary_event:
+      regret_sub: null
+      signature_object: OBJ_THIEP_CUOI
+      signature_setting: setting_dem_thang_tu_HN
+      passenger_main: nam 28 Hạ Nhi (Hạ Nhi đột nhiên xuất hiện trên xe - lần đầu thấy anh sau tám năm trong đời thực)
+      stop_location: ngã ba Vĩnh Bảo Hải Phòng (chính quê Hạ Vy - bến nhà em chôn)
+    temporal_mentions:
+    - ep: 50
+      line: 72
+      kind: age
+      value: 24
+      text: hai mươi bốn tuổi
+    - ep: 50
+      line: 146
+      kind: age
+      value: 24
+      text: hai mươi tư tuổi
+    object_mentions:
+    - OBJ_THIEP_CUOI
+    - OBJ_THIEP_CUOI (thiệp cưới Hạ Nhi tháng 5 sang năm - mời người khách dự)

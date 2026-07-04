@@ -1,0 +1,79 @@
+# FACT LEDGER SCHEMA — G4 D3 ĐỀ XUẤT (TASK_G4_WORLD, kiểm chứng 4/7)
+# =====================================================================
+# STATUS: PROPOSAL — CHƯA CÓ HIỆU LỰC. Bible writer = mr_long (bp3 ownership).
+# Đặt tại proposals/ (mirror pattern G2-B1 đã thắng — bp2_domain_check enforce
+# planned_path phải TRỐNG tới khi ký). Khi Mr.Long ký: nội dung chuyển thành
+# bible/41_fact_ledger.yaml (số hiệu đề xuất — Mr.Long có thể đổi) + qa_fact_check.py
+# mở rộng đọc file này (diff tối thiểu, xem proposed_qa_fact_check_patch cuối file).
+#
+# NGUYÊN LÝ "KHÔNG BỊA": mọi fact phải có evidence ep:line thật — máy (D2 miner)
+# chỉ ĐỀ XUẤT status=draft, người duyệt mới merge vào sổ chính thức.
+# =====================================================================
+
+meta:
+  version: 0.1-proposal
+  status: PROPOSAL_AWAITING_MR_LONG_SIGNATURE
+  drafted_by: CMD_BUILD
+  date: 2026-07-05
+  source_task: TASK_G4_WORLD.md D3
+  fills_gap: "qa_fact_check.py hien chi co 1 fact_db EP01 (bible/27), khong co so
+             cai xuyen 90 tap — fact rai rac nhieu file bible, khong nguon/cap-do-tin"
+
+# ============================================================
+# CAU TRUC 1 FACT ENTRY
+# ============================================================
+fact_entry_schema:
+  fact_id:
+    type: str
+    desc: "Dinh danh duy nhat (vd FACT_DONGHO_XALU_001)"
+  nguon:
+    type: list
+    item: "ep:line (vd 'ep_01:78')"
+    required: true
+    desc: "KHONG duoc trong — moi fact PHAI co it nhat 1 nguon that trong episode.md"
+  cap_do_tin:
+    type: enum
+    values: [canon, dan_loi_nhan_vat, tin_don]
+    desc: |
+      canon = su that xac nhan boi narrator/bien co da xay ra that trong truyen
+      dan_loi_nhan_vat = nhan vat TU KE (co the sai/thien vi — khong phai canon
+        tuyet doi, vd hoi tuong chu quan)
+      tin_don = nhan vat khac don doan/nghe noi lai (do tin thap nhat)
+  trang_thai_theo_thoi_gian:
+    type: mapping
+    desc: "Trang thai fact tai 1 THOI DIEM cu the (vd 'dong ho vo xa cu dang o
+          tay ai tai tap N') — cho phep fact THAY DOI hop le theo tap, khac
+          bible/27 tinh (immutable). Key = ep_number, value = mo ta trang thai."
+    example: {2: "trong tay Khai Phong", 15: "khong lien quan (fact khac nhan vat)"}
+  lien_quan_nhan_vat:
+    type: list
+    item: "character_id hoac PAS_id"
+  lien_quan_do_vat:
+    type: list
+    item: "OBJ_ id (bible/12)"
+
+# ============================================================
+# VI DU AP DUNG (KHONG bia — dua tren du lieu D2 miner da dao that tu 50 tap)
+# ============================================================
+example_entries:
+  - fact_id: FACT_AOLENAU_HADIEU_001
+    nguon: ["ep_02:78"]
+    cap_do_tin: canon
+    trang_thai_theo_thoi_gian: {2: "Hạ Diệu ôm trên xe, chưa đan xong"}
+    lien_quan_nhan_vat: [PAS_0013]
+    lien_quan_do_vat: [OBJ_AO_LEN_NAU]
+    note: "Vi du FORMAT — noi dung day du can nguoi duyet dien tu D2 draft"
+
+# ============================================================
+# BAN GHI AP DUNG (KHI KY): mo rong tools/qa_fact_check.py
+# ============================================================
+proposed_qa_fact_check_patch:
+  diff_toi_thieu: |
+    Them ham moi (KHONG sua check_facts() hien co — van EP01-specific, giu
+    nguyen de khong vo regression):
+      def check_fact_ledger(ep_number, ledger_path=FACT_LEDGER):
+          # doc bible/41_fact_ledger.yaml, loc entry co lien_quan tap = ep_number
+          # verify trang_thai_theo_thoi_gian[ep_number] khop text episode do
+          # (tong quat hoa dung nghia, khac check_facts() EP01-hardcode)
+  khong_thay_doi: [check_facts, main]  # giu nguyen ham EP01 hien co
+  wire: "g4_world_check.py (D5) goi check_fact_ledger cho tap co du lieu ledger; tap chua co ledger = SKIP (khong FAIL)"
