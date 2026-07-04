@@ -3,7 +3,13 @@
 - Nguồn: `runtime/roster_backfill_draft.yaml` → section `hybrid_classification` (rows) + `name_pool_wave1_proposal`
 - Sinh bởi: máy phân loại (executor) — **NGƯỜI DUYỆT trước khi merge roster**
 - Phạm vi: F1 (41 tên không dùng PAS_ id) — gồm ep_01 (không có passenger_main) + 40 unmatched (ep_11..ep_50)
-- Status: **PROPOSAL_AWAITING_MR_LONG** — chưa merge vào `passenger_roster_100.yaml`
+- Status: **APPROVED_WAVE1 (Mr.Long duyệt 2026-07-04)** — 37/37 PHẠM đã chốt tên + 2 waiver đã quyết. **CHƯA merge vào `passenger_roster_100.yaml`** (khóa đúng 100 passenger; 39 nhân vật này còn thiếu Tier1 đầy đủ — chờ B3 fill theo thứ tự continuity_risk)
+
+## CẬP NHẬT 2026-07-04 — Mr.Long đã duyệt pool đợt 1 + 2 waiver
+- **Pool đợt 1: DUYỆT.** Thực thi phát hiện pool ban đầu THIẾU quy mô (database `feminine_syllables` chỉ còn 8/142 mục free, cả 8 đều dính cấm → 0 khả dụng). Mr.Long chọn phương án **(a) mở rộng database**: `data/vietnamese_names_extended.yaml` +32 âm tiết nữ +34 âm tiết nam (section mới `g2_wave1_2026_07`, chỉ THÊM — không sửa/xóa mục cũ, máy-verify 0 trùng roster-200/forbidden-15/nội bộ batch).
+- **2 waiver: DUYỆT GIỮ NGUYÊN.** ep_30 "anh Nguyễn" và ep_50 "Hạ Nhi" — giữ tên gốc, `waiver_approved: true`.
+- **Kết quả cuối: 37/37 PHẠM đã chốt tên** (0 còn PENDING), **0 trùng âm tiết lẫn nhau/roster-200/forbidden-15** (máy-verify), **12/37 (32%) cần era-fallback nhẹ** (vd dự định "phổ thông" nhưng chốt "cũ" — cùng vùng, chỉ lệch thế hệ), **0 ca cần region-fallback** (đúng vùng dự định 100%). Toàn bộ 39 tên (37 PHẠM + 2 waiver) đã qua C4b (rule_09 content-check) — sạch.
+- Chi tiết đầy đủ: `runtime/roster_backfill_draft.yaml#hybrid_classification` (mỗi row có `final_name`, `final_pas_id`, `decision`, `naming_fallback_note` nếu có).
 
 ## Tổng số
 | Verdict | Số lượng | Ý nghĩa |
@@ -34,10 +40,11 @@ Toàn bộ 37 ca + đề xuất cụ thể (2-3 alternative/ca) nằm trong `ros
 - Quy mô: mỗi vùng × thế hệ ~20-30 tên/giới (đủ dư cho 37 ca PHẠM + margin tương lai ep_51-90)
 - **Ghi chú:** đây là tên GHÉP từ âm tiết do executor soạn theo khung rule_06 (tên gần quê) — Mr.Long duyệt/sửa/loại trực tiếp trong draft yaml, không phải danh sách chốt.
 
-## Hành động tiếp theo (chờ Mr.Long)
-1. Duyệt/sửa pool đợt 1 trong draft yaml.
-2. Quyết ep_30 và ep_50: waiver giữ nguyên hay đổi tên (nếu đổi, đề xuất thay đã có sẵn dự phòng — có thể bổ sung nếu cần).
-3. Sau khi duyệt: executor gán PAS_id thật (đề xuất 0101+) + merge vào `passenger_roster_100.yaml` (vẫn KHÔNG song song BP6/flip ceremony).
-4. Flip ceremony (proposals→planned_path, bible/37 v2.1, bible/23 v1.1, C4/C5) chạy SAU khi BP6 landed trên origin/main — route riêng, đã ghi PING.
+## Hành động tiếp theo
+1. ~~Duyệt pool đợt 1~~ ✅ DONE (2026-07-04, phương án a — mở rộng database).
+2. ~~Quyết ep_30/ep_50~~ ✅ DONE — cả 2 waiver giữ nguyên.
+3. ~~Flip ceremony~~ ✅ DONE (chạy sau BP6 landed, xem commit `c8a6041`).
+4. **CÒN LẠI (B3 fill, chưa làm):** 39 nhân vật (37 rename + 2 waiver, PAS_0101-0139) mới chỉ có identity tối thiểu (id/tên/ep nguồn/gender/tuổi/quê thô). Cần fill đủ Tier1 (regret_sub_archetype/haunting_symbol/death.type/voice đầy đủ) theo thứ tự continuity_risk CAO trước (TASK_G2 B3) rồi mới merge từng batch vào `passenger_roster_100.yaml` + chạy `roster_validator.py`. **Kiến trúc lưu ý:** file tên "100" khóa cứng đúng 100 passenger (`tests/test_character_manager_r205.py` assert `len==100`) — 39 nhân vật mới KHÔNG thể append trực tiếp vào file đó mà không phá invariant; cần quyết định kiến trúc (file mở rộng riêng, hay bump invariant có kiểm soát) trước khi B3 merge.
+5. ep_01 (golden EP01, Mr.Long quyết riêng) + ep_11 (header dị dạng, người đọc lại episode.md) vẫn NGƯỜI DUYỆT, chưa thuộc quyết định này.
 
-Commit: LOCAL only (chưa push) — chờ Mr.Long duyệt trước khi đẩy lên chung.
+Commit: qua worktree riêng, đã push origin/main (xem commit hash trong git log).

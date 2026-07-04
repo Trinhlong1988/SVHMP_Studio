@@ -6811,13 +6811,22 @@ hybrid_classification:
     authorized_by: 'Mr.Long PING 21:39 (HYBRID ep_11-50: ten sach giu + PAS id; ten pham sua theo pool rule_06/07)'
     generated_by: may phan loai (scratchpad g2_hybrid_classify.py) — nguoi DUYET, khong tu merge
     date: '2026-07-03'
-    status: PROPOSAL_AWAITING_MR_LONG
+    status: APPROVED_WAVE1
     counts:
       total: 41
       sach: 0
       pham: 37
       nguoi_duyet: 4
     pas_id_note: PAS id de xuat 0101+ de KHONG dung roster 0001-0100 — Mr.Long co the doi scheme
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
+    approved_note: '37/37 PHAM chot ten (sau khi Mr.Long duyet mo rong database data/vietnamese_names_extended.yaml +32 nu
+      +34 nam, phuong an a). 12/37 ca can fallback era/vung (ghi ro naming_fallback_note tung row — minh bach, khong am tham).
+      TAT CA 37/37 chot xong. 2 waiver (ep_30 anh Nguyen, ep_50 Ha Nhi): GIU NGUYEN ten, waiver_approved=true. ep_01 + ep_11
+      (NGUOI_DUYET khac loai) CHUA thuoc quyet dinh nay. CHUA merge vao passenger_roster_100.yaml (khoa dung 100, thieu Tier1
+      day du cho 39 nhan vat nay — B3 fill tiep theo thu tu continuity_risk).'
+    fallback_count: 12
+    pending_pool_exhausted_count: 0
   rows:
   - ep: 1
     current_name: null
@@ -6859,6 +6868,11 @@ hybrid_classification:
     - Huyền Duyên
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0101)
     proposed_pas_id: PAS_0101
+    final_name: Huyền Trâm
+    final_pas_id: PAS_0101
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
   - ep: 13
     current_name: Bình Mỹ
     gender: nam
@@ -6876,6 +6890,11 @@ hybrid_classification:
     - Chương Vượng
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0102)
     proposed_pas_id: PAS_0102
+    final_name: Chương Dương
+    final_pas_id: PAS_0102
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
   - ep: 14
     current_name: Tâm Đan
     gender: nu
@@ -6893,6 +6912,11 @@ hybrid_classification:
     - Thắm Nhài
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0103)
     proposed_pas_id: PAS_0103
+    final_name: Thắm Hường
+    final_pas_id: PAS_0103
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
   - ep: 15
     current_name: Phong Hoài
     gender: nam
@@ -6910,6 +6934,11 @@ hybrid_classification:
     - Duy Huân
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0104)
     proposed_pas_id: PAS_0104
+    final_name: Duy Khiêm
+    final_pas_id: PAS_0104
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
   - ep: 16
     current_name: Hoàng Yến
     gender: nu
@@ -6927,6 +6956,11 @@ hybrid_classification:
     - Huyền Tuyền
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0105)
     proposed_pas_id: PAS_0105
+    final_name: Oanh Duyên
+    final_pas_id: PAS_0105
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
   - ep: 17
     current_name: Hữu Tài
     gender: nam
@@ -6944,6 +6978,11 @@ hybrid_classification:
     - Chương Lợi
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0106)
     proposed_pas_id: PAS_0106
+    final_name: Thạch Vượng
+    final_pas_id: PAS_0106
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
   - ep: 18
     current_name: Linh Trang
     gender: nu
@@ -6961,6 +7000,11 @@ hybrid_classification:
     - Nhã Đài
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0107)
     proposed_pas_id: PAS_0107
+    final_name: Nhã Miên
+    final_pas_id: PAS_0107
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
   - ep: 19
     current_name: Bích Hoa
     gender: nu
@@ -6978,6 +7022,11 @@ hybrid_classification:
     - Huyền Khuê
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0108)
     proposed_pas_id: PAS_0108
+    final_name: Nhàn Thục
+    final_pas_id: PAS_0108
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
   - ep: 20
     current_name: Nhật Minh
     gender: nam
@@ -6995,6 +7044,11 @@ hybrid_classification:
     - Duy Kỳ
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0109)
     proposed_pas_id: PAS_0109
+    final_name: Vĩ Huân
+    final_pas_id: PAS_0109
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
   - ep: 21
     current_name: Trọng Nhân
     gender: nam
@@ -7012,6 +7066,11 @@ hybrid_classification:
     - Chương Hiển
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0110)
     proposed_pas_id: PAS_0110
+    final_name: Tân Chiến
+    final_pas_id: PAS_0110
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
   - ep: 22
     current_name: Quỳnh Mai
     gender: nu
@@ -7029,6 +7088,11 @@ hybrid_classification:
     - Trâm Huyền
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0111)
     proposed_pas_id: PAS_0111
+    final_name: Tuyền Ngần
+    final_pas_id: PAS_0111
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
   - ep: 23
     current_name: Đức Vinh
     gender: nam
@@ -7046,6 +7110,11 @@ hybrid_classification:
     - Dương Chương
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0112)
     proposed_pas_id: PAS_0112
+    final_name: Lợi Lĩnh
+    final_pas_id: PAS_0112
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
   - ep: 24
     current_name: Hồng Liên
     gender: nu
@@ -7063,6 +7132,11 @@ hybrid_classification:
     - Thắm Gấm
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0113)
     proposed_pas_id: PAS_0113
+    final_name: Xuyến Nhài
+    final_pas_id: PAS_0113
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
   - ep: 25
     current_name: Văn Quân
     gender: nam
@@ -7080,6 +7154,11 @@ hybrid_classification:
     - Dương Tân
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0114)
     proposed_pas_id: PAS_0114
+    final_name: Danh Hiển
+    final_pas_id: PAS_0114
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
   - ep: 26
     current_name: Đức Hùng
     gender: nam
@@ -7097,6 +7176,11 @@ hybrid_classification:
     - Dương Lĩnh
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0115)
     proposed_pas_id: PAS_0115
+    final_name: Thế Quyết
+    final_pas_id: PAS_0115
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
   - ep: 27
     current_name: Mỹ Linh
     gender: nu
@@ -7114,6 +7198,11 @@ hybrid_classification:
     - Kiều Thương
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0116)
     proposed_pas_id: PAS_0116
+    final_name: Kiều Thương
+    final_pas_id: PAS_0116
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
   - ep: 28
     current_name: Hữu Lộc
     gender: nam
@@ -7131,6 +7220,11 @@ hybrid_classification:
     - Danh Luân
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0117)
     proposed_pas_id: PAS_0117
+    final_name: Đàn Luân
+    final_pas_id: PAS_0117
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
   - ep: 29
     current_name: Linh Đan
     gender: nu
@@ -7148,6 +7242,11 @@ hybrid_classification:
     - Miên Nhã
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0118)
     proposed_pas_id: PAS_0118
+    final_name: Ý Thơ
+    final_pas_id: PAS_0118
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
   - ep: 30
     current_name: anh Nguyễn
     gender: nam
@@ -7160,6 +7259,12 @@ hybrid_classification:
     - '1-am-tiet: ''Nguyễn'''
     plot_note: ten 'Nguyễn' la diem cot truyen (khach CUNG TEN anh thay giao cuu khoi bo hoc) — doi ten pha plot
     action: TEN DINH COT TRUYEN — may khong de xuat doi; Mr.Long quyet (giu + waiver hoac doi thu cong)
+    final_name: anh Nguyễn
+    final_pas_id: PAS_0138
+    decision: APPROVED_WAIVER
+    waiver_approved: true
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
   - ep: 31
     current_name: Thanh Vân
     gender: nu
@@ -7177,6 +7282,11 @@ hybrid_classification:
     - Trâm Nhàn
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0119)
     proposed_pas_id: PAS_0119
+    final_name: Khuê Diệp
+    final_pas_id: PAS_0119
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
   - ep: 32
     current_name: Phan Tâm
     gender: nam
@@ -7193,6 +7303,12 @@ hybrid_classification:
     - Dương Thế
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0120)
     proposed_pas_id: PAS_0120
+    final_name: Cần Kiên
+    final_pas_id: PAS_0120
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
+    naming_fallback_note: era-fallback pt->cu (bucket chinh can)
   - ep: 33
     current_name: Hoài An
     gender: nu
@@ -7210,6 +7326,11 @@ hybrid_classification:
     - Trâm Ngần
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0121)
     proposed_pas_id: PAS_0121
+    final_name: Xuân Uyên
+    final_pas_id: PAS_0121
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
   - ep: 34
     current_name: Văn Tuấn
     gender: nam
@@ -7227,6 +7348,12 @@ hybrid_classification:
     - Thạch Dương
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0122)
     proposed_pas_id: PAS_0122
+    final_name: Nghị Đôn
+    final_pas_id: PAS_0122
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
+    naming_fallback_note: era-fallback pt->cu (bucket chinh can)
   - ep: 35
     current_name: Trí Hưng
     gender: nam
@@ -7244,6 +7371,11 @@ hybrid_classification:
     - Khiêm Bách
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0123)
     proposed_pas_id: PAS_0123
+    final_name: Kỳ Bách
+    final_pas_id: PAS_0123
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
   - ep: 36
     current_name: Văn Khải
     gender: nam
@@ -7261,6 +7393,12 @@ hybrid_classification:
     - Thạch Chiến
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0124)
     proposed_pas_id: PAS_0124
+    final_name: Thuần Vạn
+    final_pas_id: PAS_0124
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
+    naming_fallback_note: era-fallback pt->cu (bucket chinh can)
   - ep: 37
     current_name: Mỹ Hạnh
     gender: nu
@@ -7278,6 +7416,12 @@ hybrid_classification:
     - Trâm Diệp
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0125)
     proposed_pas_id: PAS_0125
+    final_name: Sen Lụa
+    final_pas_id: PAS_0125
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
+    naming_fallback_note: era-fallback pt->cu (bucket chinh can)
   - ep: 38
     current_name: Đức Anh
     gender: nam
@@ -7295,6 +7439,12 @@ hybrid_classification:
     - Thạch Danh
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0126)
     proposed_pas_id: PAS_0126
+    final_name: Tráng Doãn
+    final_pas_id: PAS_0126
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
+    naming_fallback_note: era-fallback pt->cu (bucket chinh can)
   - ep: 39
     current_name: Hồng Mai
     gender: nu
@@ -7312,6 +7462,12 @@ hybrid_classification:
     - Uyên Khuê
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0127)
     proposed_pas_id: PAS_0127
+    final_name: Đoan Cầm
+    final_pas_id: PAS_0127
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
+    naming_fallback_note: era-fallback pt->cu (bucket chinh can)
   - ep: 40
     current_name: Trung Hậu
     gender: nam
@@ -7329,6 +7485,11 @@ hybrid_classification:
     - Duy Quảng
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0128)
     proposed_pas_id: PAS_0128
+    final_name: Lãm Chấn
+    final_pas_id: PAS_0128
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
   - ep: 41
     current_name: Bích Trâm
     gender: nu
@@ -7345,6 +7506,12 @@ hybrid_classification:
     - Kiều Uyên
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0129)
     proposed_pas_id: PAS_0129
+    final_name: Nhụy Lài
+    final_pas_id: PAS_0129
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
+    naming_fallback_note: era-fallback pt->cu (bucket chinh can)
   - ep: 42
     current_name: Hoàng Nam
     gender: nam
@@ -7362,6 +7529,12 @@ hybrid_classification:
     - Toản Vượng
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0130)
     proposed_pas_id: PAS_0130
+    final_name: Ba Bảy
+    final_pas_id: PAS_0130
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
+    naming_fallback_note: era-fallback pt->cu (bucket chinh can)
   - ep: 43
     current_name: Văn Trường
     gender: nam
@@ -7379,6 +7552,12 @@ hybrid_classification:
     - Toản Danh
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0131)
     proposed_pas_id: PAS_0131
+    final_name: Chín Được
+    final_pas_id: PAS_0131
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
+    naming_fallback_note: era-fallback pt->cu (bucket chinh can)
   - ep: 44
     current_name: Phượng Liên
     gender: nu
@@ -7396,6 +7575,12 @@ hybrid_classification:
     - Kiều Xuân
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0132)
     proposed_pas_id: PAS_0132
+    final_name: Gấm Mận
+    final_pas_id: PAS_0132
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
+    naming_fallback_note: era-fallback pt->cu (bucket chinh can)
   - ep: 45
     current_name: Mạnh Hiếu
     gender: nam
@@ -7413,6 +7598,11 @@ hybrid_classification:
     - Khiêm Lãm
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0133)
     proposed_pas_id: PAS_0133
+    final_name: Triều Quảng
+    final_pas_id: PAS_0133
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
   - ep: 46
     current_name: Bà Hảo
     gender: nu
@@ -7430,6 +7620,11 @@ hybrid_classification:
     - Thắm Nụ
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0134)
     proposed_pas_id: PAS_0134
+    final_name: Xoan Nụ
+    final_pas_id: PAS_0134
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
   - ep: 47
     current_name: Thanh Nga
     gender: nu
@@ -7447,6 +7642,11 @@ hybrid_classification:
     - Miên Ý
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0135)
     proposed_pas_id: PAS_0135
+    final_name: Đài Ngà
+    final_pas_id: PAS_0135
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
   - ep: 48
     current_name: Hữu Duy
     gender: nam
@@ -7463,6 +7663,12 @@ hybrid_classification:
     - Luân Tân
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0136)
     proposed_pas_id: PAS_0136
+    final_name: Thiệt Lành
+    final_pas_id: PAS_0136
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
+    naming_fallback_note: era-fallback pt->cu (bucket chinh can)
   - ep: 49
     current_name: Phương Linh
     gender: nu
@@ -7480,6 +7686,12 @@ hybrid_classification:
     - Oanh Thương
     action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0137)
     proposed_pas_id: PAS_0137
+    final_name: Sáu Mến
+    final_pas_id: PAS_0137
+    decision: APPROVED_RENAME
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
+    naming_fallback_note: era-fallback pt->cu (bucket chinh can)
   - ep: 50
     current_name: Hạ Nhi
     gender: nam
@@ -7494,9 +7706,16 @@ hybrid_classification:
     plot_note: '''Hạ Nhi'' nghi lien quan truc tiep Hạ Vy (bible/31 characters_locked, ''lan dau thay anh sau tam nam'') —
       doi ten pha plot'
     action: TEN DINH COT TRUYEN — may khong de xuat doi; Mr.Long quyet (giu + waiver hoac doi thu cong)
+    final_name: Hạ Nhi
+    final_pas_id: PAS_0139
+    decision: APPROVED_WAIVER
+    waiver_approved: true
+    approved_by: Mr.Long
+    approved_date: '2026-07-04'
 name_pool_wave1_proposal:
   meta:
-    status: PROPOSAL_AWAITING_MR_LONG (rule_06 ten-gan-que + rule_07 tuoi-hop-thoi)
+    status: APPROVED_WAVE1 (Mr.Long duyet 2026-07-04) — database mo rong +32nu/+34nam (per authorization phuong an a). 37/37
+      ten PHAM chot (12 can fallback). Con du cho wave sau.
     constraint_verified_by_machine: moi ten 2 am tiet, 0 am tiet trung roster-200, 0 tu cam-15
     era_buckets:
       cu: sinh <=1970
