@@ -10,6 +10,19 @@
 - **2 waiver: DUYỆT GIỮ NGUYÊN.** ep_30 "anh Nguyễn" và ep_50 "Hạ Nhi" — giữ tên gốc, `waiver_approved: true`.
 - **Kết quả cuối: 37/37 PHẠM đã chốt tên** (0 còn PENDING), **0 trùng âm tiết lẫn nhau/roster-200/forbidden-15** (máy-verify), **12/37 (32%) cần era-fallback nhẹ** (vd dự định "phổ thông" nhưng chốt "cũ" — cùng vùng, chỉ lệch thế hệ), **0 ca cần region-fallback** (đúng vùng dự định 100%). Toàn bộ 39 tên (37 PHẠM + 2 waiver) đã qua C4b (rule_09 content-check) — sạch.
 - Chi tiết đầy đủ: `runtime/roster_backfill_draft.yaml#hybrid_classification` (mỗi row có `final_name`, `final_pas_id`, `decision`, `naming_fallback_note` nếu có).
+- **BUG FIX (bắt được nhờ test tự viết khi bắt đầu B3):** PAS_id ban đầu gán cho 39 nhân vật (đề xuất `PAS_0101`-`PAS_0139`) **giả định SAI** rằng `passenger_roster_100.yaml` dùng dải liên tục `PAS_0001`-`PAS_0100`. Thực tế roster khóa dùng `PAS_0013`-`PAS_0112` (không liên tục từ 1) — nghĩa là dải đề xuất ban đầu **đụng thẳng** 12 ID thật (`PAS_0101`-`PAS_0112`) đang tồn tại trong roster khóa! Phát hiện bởi `test_batch1_no_overlap_with_locked_roster_100` (tự chứng minh cắn ngay lần chạy đầu). **Đã renumber toàn bộ 39 ID về dải tự do thật `PAS_0113`-`PAS_0151`** (mapping đầy đủ ghi trong `hybrid_classification.meta.pas_id_bug_fix_2026_07_04`).
+
+## B3 FILL — BATCH 1 (5/39, per Mr.Long xác nhận: batch nhỏ + file mở rộng riêng)
+- **Kiến trúc:** `runtime/passenger_roster_backfill_ep11_50.yaml` — file mở rộng riêng, cùng schema `passenger_roster_100.yaml`, **KHÔNG** đụng file 100 đã khóa (test `test_character_manager_r205` assert `len==100` vẫn nguyên vẹn). Kiểm bởi `tools/roster_validator.py --roster <file>` (đã có sẵn flag) + test riêng `tests/test_roster_backfill_ep11_50.py` (7 case, bao gồm chống trùng ID/tên với roster-100 khóa).
+- **5 nhân vật đã fill Tier1 đầy đủ** (PAS_0113 ep_12, PAS_0114 ep_13, PAS_0115 ep_14, PAS_0117 ep_16, PAS_0118 ep_17): pillar/regret_sub_archetype (map vào 27 sub-archetype LOCKED bible/11) + haunting_symbol (map vào 40 object LOCKED bible/12) + death.type + voice — mỗi field có `evidence_ref` trỏ về `ep:line` thật, **không suy diễn**.
+- **death.type = `khong_ro` cho cả 5** (giá trị hợp lệ trong enum `bible/37.death_types`): evidence chỉ kể về NGƯỜI KHÁC mất (mẹ/cha/người yêu cũ/bạn thân), không nêu rõ chính hành khách qua đời thế nào — dùng `khong_ro` thay vì bịa, đúng tinh thần "KHÔNG bịa".
+- **2 phát hiện GAP catalog (bible/12 object library, 40 object, LOCKED):** PAS_0114 (cúc khô từ vườn cha) và PAS_0117 (chậu cúc mẹ trồng) — **KHÔNG object hoa/cây cảnh nào** trong 40 object hiện có khớp. Dùng placeholder `GAP_HOA_CUC_KHO`/`GAP_CHAU_CUC` (không phải mã canon, rõ ràng đánh dấu) — đề xuất RFC bổ sung 1-2 object hoa cúc vào bible/12 nếu mô-típ này lặp lại ở batch sau (2/5 batch đầu đã trùng mô-típ — đáng chú ý).
+- **3 ca dùng object thật nhưng lệch pillar-tag** (không phải gap, chỉ là bible/12 khai `pairable_pillars` không khớp use-case): PAS_0113 (đồng hồ, pillar khai family/kindness nhưng dùng cho love_regret), PAS_0118 (USB thư — vật lý khác giấy nhưng chức năng tường thuật giống `OBJ_THU_TAY`). Không có validator nào enforce pairing này (đã kiểm tra `tools/`), nên không chặn, nhưng ghi rõ `object_pairing_note` để minh bạch.
+- **Còn lại 34/39** cho batch sau (ep_11 tạm gác — chưa có tên do header dị dạng, ep_15/18-29/31-49 trừ đã làm).
+
+## Đề xuất RFC (chờ Mr.Long, không tự quyết)
+1. Bổ sung bible/12: 1-2 object liên quan hoa cúc (`cúc khô ép giấy bản` / `chậu cúc kim ngân`) — nếu mô-típ tiếp tục lặp ở batch sau.
+2. Bổ sung bible/11 REG_KIN: archetype mới cho case "từ chối giúp người lạ cần cấp thiết → họ chết" (PAS_0115 hiện dùng REG_KIN_001 gần nhất nhưng không khớp hướng — 5 archetype KIN hiện có đều là "chưa trả ơn", ngược hướng).
 
 ## Tổng số
 | Verdict | Số lượng | Ý nghĩa |

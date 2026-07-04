@@ -1172,6 +1172,14 @@ files:
     domain: g2_character
     status: draft
     tier: 1
+  runtime/passenger_roster_backfill_ep11_50.yaml:
+    domain: g2_character
+    status: draft
+    tier: 1
+  tests/test_roster_backfill_ep11_50.py:
+    domain: g2_character
+    status: active
+    tier: 1
   reports/G2_CONTINUITY_FINDINGS.md:
     domain: g2_character
     status: active
@@ -1261,4 +1269,4 @@ files:
     status: active
     tier: 0
 generated_by: tools/registry_triage.py
-total: 315
+total: 317

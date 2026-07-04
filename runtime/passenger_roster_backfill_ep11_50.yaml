@@ -1,0 +1,183 @@
+# PASSENGER ROSTER — BACKFILL EP11-50 (G2 B3, per Mr.Long authorization 2026-07-04)
+#
+# Nhan vat ONE-SHOT dao nguoc tu episode.md DA CO (ep_11..ep_50) — KHONG dung
+# trong runtime/passenger_roster_100.yaml (file do khoa DUNG 100, xem
+# tests/test_character_manager_r205.py assert len==100). File nay la EXTENSION
+# rieng, CUNG SCHEMA voi passenger_roster_100.yaml, kiem boi cung
+# tools/roster_validator.py (--roster flag).
+#
+# Nguon: runtime/roster_backfill_draft.yaml#hybrid_classification (ten da duyet
+# Mr.Long 2026-07-04) + speech_evidence goc tu unmatched_episode_characters.
+# THU TU FILL: continuity_risk cao truoc (TASK_G2 B3) — CA 40 unmatched deu
+# flag 'high' (roster_drift_no_pas_id), nen batch dau chon theo do phong phu
+# evidence + tinh da dang pillar (khong bia, chi dung fact co can cu ep:line).
+#
+# BATCH 1 (5/39, con 34 cho batch sau): PAS_0113 (ep_12), PAS_0114 (ep_13),
+# PAS_0115 (ep_14), PAS_0117 (ep_16), PAS_0118 (ep_17).
+#
+# BUG FIX 2026-07-04: PAS_id ban dau gan 0101+ gia dinh SAI roster-100 dung
+# 0001-0100. Thuc te roster-100 dung PAS_0013-PAS_0112 (khong lien tuc tu 1).
+# Bat boi test_batch1_no_overlap_with_locked_roster_100 (tu chinh test nay!).
+# Renumber toan bo ve PAS_0113+ (dai TU DO thuc su sau max that PAS_0112).
+#
+# GHI CHU KIEN TRUC:
+# - voice.hometown PHAI la ten cap tinh/thanh trong migrate_roster_v2.HOME
+#   (vd 'Ha Noi'), KHONG phai quan/huyen cu the (Long Bien/My Duc/...) — do
+#   roster_validator C2 check exact-match vao HOME[region]. Chi tiet quan/huyen
+#   giu o field hometown_detail (rieng, KHONG kiem boi C2).
+# - death.type: HAU HET cac tap nay KHONG neu ro CHINH nhan vat (hanh khach)
+#   chet nhu the nao — regret ke ve NGUOI KHAC mat (me/cha/nguoi yeu cu/ban).
+#   Dung 'khong_ro' (co trong enum bible/37 death_types) THAY VI bia — evidence
+#   khong du de gan tai_nan/benh_tat cho chinh hanh khach.
+# - regret_sub_archetype: map ve ID GAN NHAT trong bible/11 (27 sub-archetype,
+#   LOCKED). Khi khong co match hoan hao, field archetype_fit_note ghi ro (
+#   KHONG lam vo bang phan bo QA vi chon sai loai, nhung trung thuc ve do khop).
+# - haunting_symbol: khi vat that (evidence) KHONG co trong bible/12 (40 object,
+#   LOCKED) — dung placeholder GAP_* (KHONG phai ma OBJ_ that) + ghi object_gap_note
+#   de xuat RFC bo sung, KHONG tu y them vao bible/12.
+
+meta:
+  tool: manual fill (G2_EXECUTOR, doc truc tiep speech_evidence)
+  generated: '2026-07-04'
+  status: draft
+  batch: 1
+  batch_size: 5
+  remaining: 34
+  principle: "Moi field co can cu ep:line trong roster_backfill_draft.yaml. KHONG suy dien ngoai evidence."
+  schema_note: "Cung schema passenger_roster_100.yaml + 2 field bo sung: hometown_detail, archetype_fit_note/object_gap_note (chi o file nay, khong dung cho 100-roster)."
+
+passengers:
+  - id: PAS_0113
+    char_name: Huyền Trâm
+    pillar: love_regret
+    regret_sub_archetype: REG_LOV_003
+    regret_label: "Chia tay vì người mới — chưa kịp nói lời cảm ơn trước khi anh mất"
+    archetype_fit_note: "Gần nhất REG_LOV_003 (chia tay + chưa kịp nói điều cần nói); KHÔNG hoàn toàn khớp — case này là chủ động chọn người khác (Tuấn), không phải hiểu lầm, và điều chưa nói là 'cảm ơn' chứ không phải 'xin lỗi'."
+    signature_object: OBJ_DONG_HO_DEO_TAY_CU
+    object_pairing_note: "Vật thật: đồng hồ xà mặt trắng viền bạc, kim dừng ở giờ hẹn đầu (ep_12:161). OBJ_DONG_HO_DEO_TAY_CU khớp category (đồng hồ) nhưng pairable_pillars khai family/kindness — không phải love_regret; dùng vì không có object đồng-hồ nào khác trong catalog."
+    signature_setting: setting_TBD
+    age_range: 36-50
+    gender: nu
+    display_name: "Huyền Trâm (36-50)"
+    narrative_hook: "TBD by Generator"
+    source_ep: 12
+    evidence_ref: "runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 12)"
+    hometown_detail: "Long Biên (quận Hà Nội)"
+    status: draft
+    life_status: linh_hon
+    voice:
+      region_dialect: bac
+      hometown: Hà Nội
+      pronoun_system: em
+    death:
+      type: khong_ro
+      pain: "Chia tay hôn phu (kỹ sư cầu Long Biên) 1 tháng trước cưới vì yêu người khác; 4 năm sau biết anh mất (sạt lở núi công tác) — chưa kịp cảm ơn anh đã không trách"
+    haunting_symbol: OBJ_DONG_HO_DEO_TAY_CU
+
+  - id: PAS_0114
+    char_name: Chương Dương
+    pillar: promise_regret
+    regret_sub_archetype: REG_PRO_004
+    regret_label: "Hứa chăm vườn cúc của cha — vườn chết trong 6 tháng vì bỏ bê"
+    archetype_fit_note: "Gần nhất REG_PRO_004 (hứa với người thân lớn tuổi, không giữ được); khác biệt: đây là hứa CHĂM VƯỜN (di vật), không phải thăm hỏi trực tiếp."
+    signature_object: GAP_HOA_CUC_KHO
+    object_gap_note: "Vật thật: cánh cúc khô giữ từ vườn cha trồng, cha mất vì ung thư phổi (ep_13:167). KHÔNG có object hoa/cây cảnh nào trong bible/12 (40 object) — đề xuất RFC bổ sung OBJ_CUC_KHO ('cánh cúc khô ép giấy bản') cho bible/12 nếu Mr.Long duyệt. Placeholder GAP_* KHÔNG phải mã canon."
+    signature_setting: setting_TBD
+    age_range: 36-50
+    gender: nam
+    display_name: "Chương Dương (36-50)"
+    narrative_hook: "TBD by Generator"
+    source_ep: 13
+    evidence_ref: "runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 13)"
+    hometown_detail: "Mỹ Đức (huyện Hà Nội)"
+    status: draft
+    life_status: linh_hon
+    voice:
+      region_dialect: bac
+      hometown: Hà Nội
+      pronoun_system: tôi
+    death:
+      type: khong_ro
+      pain: "Hứa cha (mất vì ung thư phổi) sẽ chăm vườn cúc cha trồng 4 năm bằng tay — vườn chết trong 6 tháng vì công việc bận, hoa cúc trồng lại không bằng xưa"
+    haunting_symbol: GAP_HOA_CUC_KHO
+
+  - id: PAS_0115
+    char_name: Thắm Hường
+    pillar: kindness_regret
+    regret_sub_archetype: REG_KIN_001
+    regret_label: "Từ chối cho cụ ăn xin bát phở, hẹn 'hôm khác' — cụ chết đói đêm đó"
+    archetype_fit_note: "KHÔNG có archetype khớp trong 5 REG_KIN hiện có (tất cả 5 đều về 'chưa trả ơn NGƯỜI GIÚP MÌNH', ngược hướng với case này — TỪ CHỐI giúp người lạ cần cấp thiết, họ chết). Chọn REG_KIN_001 là gần nhất về mặt cấu trúc (chết + gắn với việc-chưa-làm của người kể). Đề xuất RFC bổ sung REG_KIN_006 'Từ chối giúp người lạ cần cấp thiết — họ chết đêm đó' nếu case tương tự lặp lại."
+    signature_object: OBJ_KHAN_TAY_CU
+    object_pairing_note: "Khớp tốt: khăn tay cũ thêu hoa cúc (ep_14:155), đúng category 'chiếc khăn tay cũ thêu hoa' của OBJ_KHAN_TAY_CU."
+    signature_setting: setting_TBD
+    age_range: 51-65
+    gender: nu
+    display_name: "Thắm Hường (51-65)"
+    narrative_hook: "TBD by Generator"
+    source_ep: 14
+    evidence_ref: "runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 14)"
+    hometown_detail: "Chương Mỹ (huyện Hà Nội)"
+    status: draft
+    life_status: linh_hon
+    voice:
+      region_dialect: bac
+      hometown: Hà Nội
+      pronoun_system: em
+    death:
+      type: khong_ro
+      pain: "30 năm trước từ chối mua phở cho cụ ăn xin (cụ Mai) vì nghĩ 'hôm khác' — cụ chết đói ngay đêm đó; giữ khăn thêu hoa cúc (hoa cụ thích) suốt 30 năm không dùng"
+    haunting_symbol: OBJ_KHAN_TAY_CU
+
+  - id: PAS_0117
+    char_name: Oanh Duyên
+    pillar: family_regret
+    regret_sub_archetype: REG_FAM_005
+    regret_label: "Cãi mẹ vì chuyện người yêu — mẹ mất đột ngột 1 tháng sau, chưa kịp xin lỗi"
+    archetype_fit_note: "Khớp mạnh REG_FAM_005 (cãi người thân lớn tuổi + mất trước khi xin lỗi) — chỉ khác đối tượng (mẹ thay vì ông)."
+    signature_object: GAP_CHAU_CUC
+    object_gap_note: "Vật thật: chậu cúc kim ngân mẹ trồng năm xảy ra cãi vã, con chăm lại 8 tháng cho nở (ep_16:163-165). KHÔNG có object chậu-cây-cảnh trong bible/12 — đề xuất RFC bổ sung OBJ_CHAU_CUC ('chậu cúc kim ngân của mẹ') tương tự OBJ_HOA_CUC_KHO ở PAS_0102 (2/5 batch này đều liên quan cúc — nghi mô-típ lặp lại trong nguồn, đáng cân nhắc bổ sung catalog)."
+    signature_setting: setting_TBD
+    age_range: 36-50
+    gender: nu
+    display_name: "Oanh Duyên (36-50)"
+    narrative_hook: "TBD by Generator"
+    source_ep: 16
+    evidence_ref: "runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 16)"
+    hometown_detail: "Hà Đông (quận Hà Nội)"
+    status: draft
+    life_status: linh_hon
+    voice:
+      region_dialect: bac
+      hometown: Hà Nội
+      pronoun_system: em
+    death:
+      type: khong_ro
+      pain: "Cãi mẹ vì phản đối bạn trai (anh Hùng) — giận không về nhà 1 tháng — mẹ đột tử (nhồi máu cơ tim) khi đang tưới cúc, chưa kịp xin lỗi"
+    haunting_symbol: GAP_CHAU_CUC
+
+  - id: PAS_0118
+    char_name: Thạch Vượng
+    pillar: promise_regret
+    regret_sub_archetype: REG_PRO_006
+    regret_label: "Bạn thân nhắn xin vay tiền chữa ung thư — trì hoãn xoay tiền, bạn mất trước khi kịp giúp"
+    archetype_fit_note: "Gần nhất REG_PRO_006 (bạn thân, không phản hồi kịp lúc bạn cần, bạn mất) — đúng quan hệ 'bạn thân', khác chi tiết (tiền chữa bệnh thay vì cuộc gọi giữ liên lạc)."
+    signature_object: OBJ_THU_TAY
+    object_pairing_note: "Vật thật: USB chứa thư bạn viết trước khi mất (ep_17:165-169) — vật lý là USB (kỹ thuật số), không phải giấy, nhưng chức năng tường thuật giống 'thư từ người đã mất' của OBJ_THU_TAY. Dùng OBJ_THU_TAY làm concept gần nhất, ghi rõ vật lý khác biệt."
+    signature_setting: setting_TBD
+    age_range: 36-50
+    gender: nam
+    display_name: "Thạch Vượng (36-50)"
+    narrative_hook: "TBD by Generator"
+    source_ep: 17
+    evidence_ref: "runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 17)"
+    hometown_detail: "Sóc Sơn (huyện Hà Nội)"
+    status: draft
+    life_status: linh_hon
+    voice:
+      region_dialect: bac
+      hometown: Hà Nội
+      pronoun_system: tôi
+    death:
+      type: khong_ro
+      pain: "Bạn thân từ tiểu học (Toàn) nhắn tin xin vay 200 triệu chữa ung thư gan — trì hoãn vì bận họp, chỉ xoay được 100 triệu — bạn mất trước khi kịp gửi; giữ USB chứa thư bạn viết trước khi mất suốt 3 năm"
+    haunting_symbol: OBJ_THU_TAY
