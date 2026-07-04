@@ -1324,5 +1324,17 @@ files:
     domain: bible_library
     status: active
     tier: 1
+  docs/adr/0001-pack-claim-mechanism.md:
+    domain: governance
+    status: active
+    tier: 0
+  docs/adr/0002-bp6-r195-full-file-scan.md:
+    domain: governance
+    status: active
+    tier: 0
+  docs/adr/0003-bp-chain-sequential-order.md:
+    domain: governance
+    status: active
+    tier: 0
 generated_by: tools/registry_triage.py
-total: 331
+total: 334
