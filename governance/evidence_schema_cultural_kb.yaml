@@ -1,0 +1,53 @@
+# ============================================================
+# EVIDENCE SCHEMA cho Cultural KB (SVAF pattern 4/5, TASK_BACKLOG_SVAF_PATTERNS.md)
+# CMD_BUILD_3 4/7 — ap {status/source/volume/page/confidence} (SVAF Ontology-style
+# evidence tracking) vao du lieu van hoa dang o C:\Users\Admin\Desktop\
+# CULTURAL_EVENTS_KB_DRAFT.md (deep-research 108 agent, adversarial verify 4/7).
+#
+# QUAN TRONG: Desktop\CULTURAL_EVENTS_KB_DRAFT.md la INPUT THO, KHONG PHAI
+# source-of-truth trong repo (bai hoc 3/7: "Desktop file != source-of-truth" — xem
+# memory svhmp-cmd-build-sync-gotchas). File nay o trong repo, KHONG sua Desktop
+# file goc. Khi BP7 (cultural_spec.yaml, domain rieng, khac quyen CMD_BUILD_3)
+# chinh thuc dua Cultural KB vao bible, ho DUNG schema + sample nay lam khuon.
+#
+# KHONG bia du lieu: field nao draft goc KHONG ghi ro (vd so trang sach cu the)
+# thi de null + ghi chu ⚠️needs-source, KHONG doan.
+# ============================================================
+version: 1.0
+authority: "CMD_BUILD_3 (svaf_patterns_backlog task 4/5), per Mr.Long authorization 2026-07-04"
+applies_to: "C:\\Users\\Admin\\Desktop\\CULTURAL_EVENTS_KB_DRAFT.md (v2, 4/7/2026)"
+consumed_by_domain_future: "bp7_narrative (cultural_spec.yaml) — KHONG phai domain cua CMD_BUILD_3, chi chuan bi schema/sample"
+
+schema:
+  status:
+    type: enum
+    values: [verified, hypothesis]
+    desc: "verified = co >=1 nguon doc lap xac nhan truc tiep (fetch duoc, doi chieu
+          duoc); hypothesis = suy doan hop ly nhung CHUA co nguon rieng xac nhan
+          chi tiet do (draft goc danh dau ⚠️needs-source)"
+  source:
+    type: string
+    desc: "Ten nguon/van ban/to chuc phat hanh — PHAI la nguon THAT da xuat hien trong
+          draft goc (khong bia them nguon moi khi ap schema)"
+  volume:
+    type: "string | null"
+    desc: "So tap/quyen sach neu nguon la an pham nhieu tap. null neu nguon la website/
+          van ban phap luat/ho so UNESCO (khong co khai niem 'tap')"
+  page:
+    type: "integer | null"
+    desc: "So trang cu the neu nguon la sach/van ban co so trang ro rang (vd Dieu X
+          Nghi dinh). null neu nguon la trang web dong (khong co so trang co dinh) —
+          KHONG DUOC DOAN so trang"
+  confidence:
+    type: float
+    range: "0.0 - 1.0"
+    desc: "1.0 = van ban phap luat/ho so UNESCO chinh thuc (khong the tranh cai); 0.9-0.95
+          = 2-3 nguon doc lap khop nhau; 0.7-0.85 = 1 nguon dia phuong/hoc gia uy tin;
+          <0.7 = chua dat nguong verified (nen la hypothesis thay vi confidence thap)"
+
+notes:
+  - "confidence CHI gan cho status=verified. status=hypothesis khong gan confidence
+     (chua co gi de do do tin cay — se sai neu bia so)."
+  - "Muc dich: khi BP7 doc entry co status=hypothesis, PHAI tra nguon truoc khi ghi
+     cung vao bible (dung tinh than R9 Evidence First cua R_SUPREME) — schema nay LA
+     co che thuc thi nguyen tac do, khong phai giay to hinh thuc."

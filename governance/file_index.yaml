@@ -1312,5 +1312,17 @@ files:
     domain: governance
     status: active
     tier: 0
+  governance/evidence_schema_cultural_kb.yaml:
+    domain: bible_library
+    status: active
+    tier: 1
+  governance/proposals/cultural_kb_evidence_sample.yaml:
+    domain: bible_library
+    status: active
+    tier: 1
+  tests/test_cultural_kb_evidence_schema.py:
+    domain: bible_library
+    status: active
+    tier: 1
 generated_by: tools/registry_triage.py
-total: 328
+total: 331

@@ -1,0 +1,138 @@
+# ============================================================
+# SAMPLE: Evidence Schema ap dung len Cultural Events KB draft (SVAF pattern 4/5)
+# Nguon: C:\Users\Admin\Desktop\CULTURAL_EVENTS_KB_DRAFT.md v2 (4/7/2026, deep-research
+# 108 agent adversarial verify). Day la MAU CHUNG MINH FORMAT — 10/30+ entry co nguon
+# ro rang nhat trong draft, KHONG PHAI ban day du (ban day du la viec cua BP7 khi
+# chinh thuc dua vao bible, ngoai pham vi CMD_BUILD_3 backlog task nay).
+#
+# Xem schema dinh nghia tai governance/evidence_schema_cultural_kb.yaml.
+# status=hypothesis lay dung tu draft muc ⚠️needs-source / "can them nguon" — KHONG
+# tu nang cap len verified du co ve hop ly.
+# ============================================================
+version: 1.0
+schema_ref: governance/evidence_schema_cultural_kb.yaml
+source_draft: "C:\\Users\\Admin\\Desktop\\CULTURAL_EVENTS_KB_DRAFT.md (v2, 4/7/2026)"
+
+entries:
+  - item_id: ca_ong_nghinh_ong
+    mo_ta_ngan: "Ca Ong (Nam Hai Cu Toc Ngoc Lan) duoc trieu Nguyen sac phong; le Nghinh Ong +
+                hat ba trao la Danh muc di san van hoa phi vat the quoc gia"
+    evidence:
+      status: verified
+      source: "QD 4614/QD-BVHTTDL, 20/12/2019 (Van Thuy Tu — Phan Thiet)"
+      volume: null
+      page: null
+      confidence: 0.9
+
+  - item_id: le_cung_than_rung_pu_peo
+    mo_ta_ngan: "Le cung than rung dan toc Pu Peo (Chung Chai, Pho La, Dong Van, Ha Giang),
+                mung 6/6 am lich — di san van hoa phi vat the quoc gia tu 2012"
+    evidence:
+      status: verified
+      source: "Cuc Di san van hoa + Bo VHTTDL, cong nhan 2012"
+      volume: null
+      page: null
+      confidence: 0.9
+
+  - item_id: thanh_hoang_lang_sac_phong
+    mo_ta_ngan: "Than duoc trieu dinh cong nhan qua sac phong (3 bac thuong/trung/ha dang
+                than, phan biet chinh than/ta than); co le nghinh sac trong hoi lang"
+    evidence:
+      status: verified
+      source: "hoc gia Nguyen Duy Hinh"
+      volume: null
+      page: null
+      confidence: 0.75   # 1 hoc gia, chua doi chieu da-nguon nhu cac entry UNESCO/van ban phap luat
+
+  - item_id: dan_am_hon_hue_lap_1894
+    mo_ta_ngan: "Dan Am Hon (Hue) lap nam 1894 duoi vua Thanh Thai (9 nam sau su bien 1885),
+                nay tai 73 Ong Ich Khiem, phuong Thuan Hoa, Hue"
+    evidence:
+      status: verified
+      source: "khao cuu lich su Hue (su bien Kinh do 1885 + trieu Thanh Thai)"
+      volume: null
+      page: null
+      confidence: 0.85
+
+  - item_id: dan_am_hon_pho_phuoc_loi_truong_pho_doi_4
+    mo_ta_ngan: "Sau 1945 nha nuoc ngung to chuc, dan gian (Pho Phuoc Loi, ~100 ho) duy tri
+                le te hang nam; chi tiet 'truong pho doi 4 tu 2001'"
+    evidence:
+      status: hypothesis
+      source: "husta.vn (draft ghi ro chi 1 nguon — gan nhan can them nguon truoc khi ghi cung vao bible)"
+      volume: null
+      page: null
+      confidence: null
+
+  - item_id: tho_mau_tam_phu_unesco_2016
+    mo_ta_ngan: "Tin nguong tho Mau Tam phu duoc UNESCO ghi danh NAM 2016 (khong phai 2024
+                nhu nham lan truoc — CORRECTION 2 trong draft)"
+    evidence:
+      status: verified
+      source: "UNESCO ICH ky hop 11.COM, phien 30/11-3/12/2016, Addis Ababa, ho so so 01064;
+              doi chieu VnExpress International + UN Vietnam"
+      volume: null
+      page: null
+      confidence: 0.95
+
+  - item_id: via_ba_chua_xu_nui_sam_unesco_2024
+    mo_ta_ngan: "Vi Ba Chua Xu nui Sam duoc UNESCO ghi danh Di san van hoa phi vat the
+                dai dien nhan loai 4/12/2024, ky hop 19, Asuncion (Paraguay)"
+    evidence:
+      status: verified
+      source: "UNESCO ICH ky hop 19, Asuncion, 4/12/2024"
+      volume: null
+      page: null
+      confidence: 0.95
+
+  - item_id: via_ba_chua_xu_tuc_vay_tra_le
+    mo_ta_ngan: "Tuc 'vay Ba' ma quen tra le — chi tiet nghi thuc cu the chua tim duoc
+                nguon xac nhan rieng (draft ghi ro 'giu nhan can them nguon')"
+    evidence:
+      status: hypothesis
+      source: null
+      volume: null
+      page: null
+      confidence: null
+
+  - item_id: nghi_dinh_38_2021_me_tin_di_doan
+    mo_ta_ngan: "Nghi dinh 38/2021/ND-CP (29/3/2021, hieu luc 1/6/2021), Dieu 14: to chuc
+                hoat dong me tin di doan trong le hoi = phat 15-20 trieu; tham gia = 3-5 trieu"
+    evidence:
+      status: verified
+      source: "Nghi dinh 38/2021/ND-CP, Dieu 14 + Dieu 5 khoan 3"
+      volume: null
+      page: null
+      confidence: 1.0   # van ban phap luat chinh thuc, khong the tranh cai
+
+  - item_id: dieu_320_blhs_2015_tai_pham
+    mo_ta_ngan: "Tai pham sau xu phat hanh chinh -> hinh su: Dieu 320 Bo luat Hinh su 2015 —
+                'dung boi toan, dong bong hoac me tin di doan khac' tai pham = phat 10-100
+                trieu hoac tu 6 thang-3 nam; len 3-10 nam neu gay chet nguoi/thu loi >=200 trieu"
+    evidence:
+      status: verified
+      source: "Bo luat Hinh su 2015, Dieu 320"
+      volume: null
+      page: null
+      confidence: 1.0
+
+  - item_id: kieng_ky_di_bien_correction_1
+    mo_ta_ngan: "CORRECTION 1: kieng de thau/xoong noi/gau muc o tu the up (phai ngua) +
+                kieng lam ROI dao/chen bat/gau xuong bien (2 luat khac nhau, khong phai
+                'up bat'); tuc 'up non = diem lat thuyen' co that nhung nguon khac"
+    evidence:
+      status: verified
+      source: "hoianheritage.net (up/roi do dung); chatluongvacuocsong.vn + meeyland.com (up non)"
+      volume: null
+      page: null
+      confidence: 0.85
+
+notes:
+  - "10 entry tren la MAU dai dien 3 muc do evidence (verified da-nguon 0.9-1.0,
+     verified 1-nguon 0.75-0.85, hypothesis chua co nguon). Con ~20 entry khac trong
+     draft (ma da/ma tranh/ma xo/le cau ngu chi tiet tung lang...) chua ap schema —
+     de lai cho buoc BP7 chinh thuc dua vao bible, luc do se co du thoi gian tra nguon
+     day du cho tung muc thay vi lam voi o day."
+  - "KHONG entry nao trong mau nay bi bia them page/volume ngoai nhung gi draft goc da
+     ghi (da so nguon la website/UNESCO record/van ban phap luat, khong co khai niem
+     so trang co dinh -> de null dung theo schema)."
