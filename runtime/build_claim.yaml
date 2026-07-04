@@ -10,5 +10,6 @@ claims:
     status: active
   g2_character:
     claimed_at: '2026-07-04T18:11:16'
+    released_at: '2026-07-04T18:31:11'
     session: G2_EXECUTOR
-    status: active
+    status: released
