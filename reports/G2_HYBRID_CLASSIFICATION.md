@@ -3,7 +3,15 @@
 - Nguồn: `runtime/roster_backfill_draft.yaml` → section `hybrid_classification` (rows) + `name_pool_wave1_proposal`
 - Sinh bởi: máy phân loại (executor) — **NGƯỜI DUYỆT trước khi merge roster**
 - Phạm vi: F1 (41 tên không dùng PAS_ id) — gồm ep_01 (không có passenger_main) + 40 unmatched (ep_11..ep_50)
-- Status: **APPROVED_WAVE1 (Mr.Long duyệt 2026-07-04)** — 37/37 PHẠM đã chốt tên + 2 waiver đã quyết. **CHƯA merge vào `passenger_roster_100.yaml`** (khóa đúng 100 passenger; 39 nhân vật này còn thiếu Tier1 đầy đủ — chờ B3 fill theo thứ tự continuity_risk)
+- Status: **B3 FILL HOÀN TẤT 37/39 (2026-07-05)** — 37/37 PHẠM đã chốt tên + Tier1 đầy đủ (kể cả signature_object/haunting_symbol, 24 ca cuối vừa fill theo relay Boss). 2 waiver (ep_30/ep_50) vẫn gác lại. **VẪN CHƯA merge vào `passenger_roster_100.yaml`** — xem cảnh báo kiến trúc dưới.
+
+## ⚠️ CẢNH BÁO KIẾN TRÚC (2026-07-05) — relay "merge vào passenger_roster_100.yaml" CHƯA thực hiện
+Relay Boss yêu cầu "merge vào `passenger_roster_100.yaml` khi xong" — nhưng việc này **mâu thuẫn trực tiếp** với quyết định kiến trúc đã chốt trước đó (AskUserQuestion, Boss chọn "File mở rộng riêng — Recommended"):
+- `tests/test_character_manager_r205.py:16` khóa cứng `assert len(pas) == 100` — merge 37 nhân vật mới vào sẽ phá invariant này (thành 137).
+- `tests/test_roster_backfill_ep11_50.py::test_no_overlap_with_locked_roster_100` (tôi tự viết, đang PASS) khóa NGƯỢC hướng — cấm trùng ID/tên với roster-100.
+- File `passenger_roster_100.yaml` gắn với cả hệ thống pool tên/bible/23 rule_03 ("pool ≥ số passenger cần, default 100") — bump lên 137 cần rà lại nhiều chỗ, không phải chỉ đổi 1 file.
+
+**Tôi CHƯA merge** — đã fill xong Tier1 đầy đủ (37/37) trong file mở rộng, chờ Boss xác nhận: (a) giữ kiến trúc file riêng như đã chốt (không cần "merge" theo nghĩa đen — coi file mở rộng là nơi ở lâu dài), hay (b) thật sự muốn gộp vào `passenger_roster_100.yaml` + đổi tên file/bump invariant 100→137 + sửa lại các test liên quan (việc lớn hơn nhiều so với "chạy roster_validator xác nhận PASS").
 
 ## CẬP NHẬT 2026-07-04 — Mr.Long đã duyệt pool đợt 1 + 2 waiver
 - **Pool đợt 1: DUYỆT.** Thực thi phát hiện pool ban đầu THIẾU quy mô (database `feminine_syllables` chỉ còn 8/142 mục free, cả 8 đều dính cấm → 0 khả dụng). Mr.Long chọn phương án **(a) mở rộng database**: `data/vietnamese_names_extended.yaml` +32 âm tiết nữ +34 âm tiết nam (section mới `g2_wave1_2026_07`, chỉ THÊM — không sửa/xóa mục cũ, máy-verify 0 trùng roster-200/forbidden-15/nội bộ batch).

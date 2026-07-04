@@ -131,6 +131,31 @@ def test_pas_0137_diem_boyfriend_named_tuan_not_khai_phong():
         "xac nhan ten that la Tuan")
 
 
+def test_zero_placeholder_object_remaining():
+    """37/37 nhan vat (batch1+batch2, tru 2 waiver gac lai) phai co signature_object/
+    haunting_symbol THAT (OBJ_ that hoac GAP_<TEN> co y nghia) — KHONG con
+    GAP_CHUA_XAC_DINH tam (24 ca da fill xong per relay Boss 5/7)."""
+    for p in _passengers():
+        assert p['signature_object'] != 'GAP_CHUA_XAC_DINH', (
+            f"{p['id']}: van con placeholder tam GAP_CHUA_XAC_DINH")
+        assert p['haunting_symbol'] != 'GAP_CHUA_XAC_DINH', (
+            f"{p['id']}: van con placeholder tam GAP_CHUA_XAC_DINH")
+        assert p['signature_object'] == p['haunting_symbol'], (
+            f"{p['id']}: signature_object != haunting_symbol (quy uoc file nay dung 1 gia tri)")
+
+
+def test_gap_object_reuse_across_characters_allowed():
+    """Nhieu nhan vat khac nhau co the dung CHUNG 1 ma object (OBJ_ that hoac GAP_)
+    khi vat that trong evidence CUNG loai (vd 2 nguoi cung mat nhan cuoi) — KHONG
+    phai loi trung lap can sua, mien moi entry co evidence_ref rieng."""
+    from collections import Counter
+    codes = Counter(p['signature_object'] for p in _passengers())
+    reused = {c: n for c, n in codes.items() if n > 1}
+    # it nhat 1 ma dung lai (OBJ_NHAN_CUOI: PAS ep_28+ep_42; OBJ_BAT_CANH_CHUA:
+    # ep_39+ep_44) — xac nhan hanh vi dung y, khong phai bug
+    assert reused, 'ky vong co it nhat 1 object-code dung lai giua >=2 nhan vat khac nhau'
+
+
 def test_waivers_ep30_ep50_absent_pending_mr_long():
     """2 waiver (ep_30 anh Nguyen / ep_50 Ha Nhi) GAC LAI HOAN TOAN — dung cham
     Khai Phong/Ha Vy da khoa, KHONG duoc tu y gan regret/object khi chua co
