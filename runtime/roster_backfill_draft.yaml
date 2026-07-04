@@ -6806,3 +6806,1257 @@ unmatched_episode_characters:
     speaker: UNATTRIBUTED_can_nguoi_duyet
   knowledge_candidates: []
   status: draft
+hybrid_classification:
+  meta:
+    authorized_by: 'Mr.Long PING 21:39 (HYBRID ep_11-50: ten sach giu + PAS id; ten pham sua theo pool rule_06/07)'
+    generated_by: may phan loai (scratchpad g2_hybrid_classify.py) — nguoi DUYET, khong tu merge
+    date: '2026-07-03'
+    status: PROPOSAL_AWAITING_MR_LONG
+    counts:
+      total: 41
+      sach: 0
+      pham: 37
+      nguoi_duyet: 4
+    pas_id_note: PAS id de xuat 0101+ de KHONG dung roster 0001-0100 — Mr.Long co the doi scheme
+  rows:
+  - ep: 1
+    current_name: null
+    gender: null
+    region_rule06: null
+    era_rule07: null
+    age: null
+    hometown: null
+    verdict: NGUOI_DUYET
+    violations:
+    - header KHONG co passenger_main (F1 finding dau tien)
+    action: EP01 golden (Hạ Vy / Khải Phong LOCKED bible/31 characters_locked) — mapping roster/PAS do Mr.Long quyet, may
+      khong de xuat
+  - ep: 11
+    current_name: null
+    gender: nu
+    region_rule06: bac
+    era_rule07: '1970_1995'
+    age: '45'
+    hometown: 26 Đức Hà Đông
+    verdict: NGUOI_DUYET
+    violations:
+    - khong parse duoc ten tu header (di dang)
+    action: nguoi duyet doc lai episode.md gan ten/PAS id tay
+  - ep: 12
+    current_name: Vy An
+    gender: nu
+    region_rule06: bac
+    era_rule07: '1970_1995'
+    age: '36'
+    hometown: Long Biên
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Vy'' voi roster ''Vy Vi'''
+    - 'tu-cam: ''An'' (Mr.Long 27/6)'
+    proposed_alternatives:
+    - Huyền Trâm
+    - Huyền Oanh
+    - Huyền Duyên
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0101)
+    proposed_pas_id: PAS_0101
+  - ep: 13
+    current_name: Bình Mỹ
+    gender: nam
+    region_rule06: unknown
+    era_rule07: '1970_1995'
+    age: '45'
+    hometown: Đức
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Bình'' voi roster ''Cảnh Bình'''
+    - 'trung-am: ''Mỹ'' voi roster ''Mỹ Nhi'''
+    proposed_alternatives:
+    - Chương Dương
+    - Chương Thạch
+    - Chương Vượng
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0102)
+    proposed_pas_id: PAS_0102
+  - ep: 14
+    current_name: Tâm Đan
+    gender: nu
+    region_rule06: bac
+    era_rule07: truoc_1970
+    age: '56'
+    hometown: Chương Mỹ
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Tâm'' voi roster ''Tâm Bằng'''
+    - 'trung-am: ''Đan'' voi roster ''Đan Phụng'''
+    proposed_alternatives:
+    - Thắm Hường
+    - Thắm Xuyến
+    - Thắm Nhài
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0103)
+    proposed_pas_id: PAS_0103
+  - ep: 15
+    current_name: Phong Hoài
+    gender: nam
+    region_rule06: unknown
+    era_rule07: sau_1995
+    age: '31'
+    hometown: Đức
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Phong'' voi roster ''Lộc Phong'''
+    - 'trung-am: ''Hoài'' voi roster ''Hào Hoài'''
+    proposed_alternatives:
+    - Duy Khiêm
+    - Duy Vĩ
+    - Duy Huân
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0104)
+    proposed_pas_id: PAS_0104
+  - ep: 16
+    current_name: Hoàng Yến
+    gender: nu
+    region_rule06: bac
+    era_rule07: '1970_1995'
+    age: '38'
+    hometown: Hà Đông
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Hoàng'' voi roster ''Hoàng Lâm'''
+    - 'trung-am: ''Yến'' voi roster ''Yến Hương'''
+    proposed_alternatives:
+    - Huyền Nhàn
+    - Huyền Thục
+    - Huyền Tuyền
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0105)
+    proposed_pas_id: PAS_0105
+  - ep: 17
+    current_name: Hữu Tài
+    gender: nam
+    region_rule06: bac
+    era_rule07: '1970_1995'
+    age: '42'
+    hometown: Sóc Sơn
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Hữu'' voi roster ''Hữu Trí'''
+    - 'tu-cam: ''Tài'' (Mr.Long 27/6)'
+    proposed_alternatives:
+    - Chương Tân
+    - Chương Chiến
+    - Chương Lợi
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0106)
+    proposed_pas_id: PAS_0106
+  - ep: 18
+    current_name: Linh Trang
+    gender: nu
+    region_rule06: bac
+    era_rule07: sau_1995
+    age: '28'
+    hometown: Hà Nội
+    verdict: PHAM
+    violations:
+    - 'tu-cam: ''Linh'' (Mr.Long 27/6)'
+    - 'tu-cam: ''Trang'' (Mr.Long 27/6)'
+    proposed_alternatives:
+    - Nhã Miên
+    - Nhã Ý
+    - Nhã Đài
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0107)
+    proposed_pas_id: PAS_0107
+  - ep: 19
+    current_name: Bích Hoa
+    gender: nu
+    region_rule06: bac
+    era_rule07: '1970_1995'
+    age: '50'
+    hometown: Đông Anh
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Bích'' voi roster ''Cẩm Bích'''
+    - 'trung-am: ''Hoa'' voi roster ''Hoa Trinh'''
+    proposed_alternatives:
+    - Huyền Ngần
+    - Huyền Thương
+    - Huyền Khuê
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0108)
+    proposed_pas_id: PAS_0108
+  - ep: 20
+    current_name: Nhật Minh
+    gender: nam
+    region_rule06: bac
+    era_rule07: sau_1995
+    age: '27'
+    hometown: Cầu Giấy
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Nhật'' voi roster ''Hải Nhật'''
+    - 'trung-am: ''Minh'' voi roster ''Bảo Minh'''
+    proposed_alternatives:
+    - Duy Bách
+    - Duy Lãm
+    - Duy Kỳ
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0109)
+    proposed_pas_id: PAS_0109
+  - ep: 21
+    current_name: Trọng Nhân
+    gender: nam
+    region_rule06: bac
+    era_rule07: '1970_1995'
+    age: '50'
+    hometown: Nam Định
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Trọng'' voi roster ''Trọng Lễ'''
+    - 'trung-am: ''Nhân'' voi roster ''Bá Nhân'''
+    proposed_alternatives:
+    - Chương Lĩnh
+    - Chương Danh
+    - Chương Hiển
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0110)
+    proposed_pas_id: PAS_0110
+  - ep: 22
+    current_name: Quỳnh Mai
+    gender: nu
+    region_rule06: bac
+    era_rule07: '1970_1995'
+    age: '35'
+    hometown: Bắc Ninh
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Quỳnh'' voi roster ''Châu Quỳnh'''
+    - 'tu-cam: ''Mai'' (Mr.Long 27/6)'
+    proposed_alternatives:
+    - Huyền Diệp
+    - Huyền Xuân
+    - Trâm Huyền
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0111)
+    proposed_pas_id: PAS_0111
+  - ep: 23
+    current_name: Đức Vinh
+    gender: nam
+    region_rule06: bac
+    era_rule07: '1970_1995'
+    age: '45'
+    hometown: Hải Phòng
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Đức'' voi roster ''Đức Phúc'''
+    - 'trung-am: ''Vinh'' voi roster ''Triết Vinh'''
+    proposed_alternatives:
+    - Chương Thế
+    - Chương Quyết
+    - Dương Chương
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0112)
+    proposed_pas_id: PAS_0112
+  - ep: 24
+    current_name: Hồng Liên
+    gender: nu
+    region_rule06: bac
+    era_rule07: truoc_1970
+    age: '60'
+    hometown: Hà Nam
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Hồng'' voi roster ''Hồng Hạnh'''
+    - 'trung-am: ''Liên'' voi roster ''Liên Thư'''
+    proposed_alternatives:
+    - Thắm Sen
+    - Thắm Lụa
+    - Thắm Gấm
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0113)
+    proposed_pas_id: PAS_0113
+  - ep: 25
+    current_name: Văn Quân
+    gender: nam
+    region_rule06: bac
+    era_rule07: '1970_1995'
+    age: '38'
+    hometown: Thái Nguyên
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Văn'' voi roster ''Văn Triệu'''
+    - 'trung-am: ''Quân'' voi roster ''Quân Tịnh'''
+    proposed_alternatives:
+    - Dương Thạch
+    - Dương Vượng
+    - Dương Tân
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0114)
+    proposed_pas_id: PAS_0114
+  - ep: 26
+    current_name: Đức Hùng
+    gender: nam
+    region_rule06: bac
+    era_rule07: '1970_1995'
+    age: '38'
+    hometown: Hà Nội
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Đức'' voi roster ''Đức Phúc'''
+    - 'trung-am: ''Hùng'' voi roster ''Hùng Kiệt'''
+    proposed_alternatives:
+    - Dương Chiến
+    - Dương Lợi
+    - Dương Lĩnh
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0115)
+    proposed_pas_id: PAS_0115
+  - ep: 27
+    current_name: Mỹ Linh
+    gender: nu
+    region_rule06: nam
+    era_rule07: '1970_1995'
+    age: '45'
+    hometown: Sài Gòn
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Mỹ'' voi roster ''Mỹ Nhi'''
+    - 'tu-cam: ''Linh'' (Mr.Long 27/6)'
+    proposed_alternatives:
+    - Kiều Oanh
+    - Kiều Duyên
+    - Kiều Thương
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0116)
+    proposed_pas_id: PAS_0116
+  - ep: 28
+    current_name: Hữu Lộc
+    gender: nam
+    region_rule06: trung
+    era_rule07: '1970_1995'
+    age: '55'
+    hometown: Hà Tĩnh
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Hữu'' voi roster ''Hữu Trí'''
+    - 'trung-am: ''Lộc'' voi roster ''Lộc Phong'''
+    proposed_alternatives:
+    - Danh Hiển
+    - Danh Đàn
+    - Danh Luân
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0117)
+    proposed_pas_id: PAS_0117
+  - ep: 29
+    current_name: Linh Đan
+    gender: nu
+    region_rule06: trung
+    era_rule07: sau_1995
+    age: '28'
+    hometown: Đà Nẵng
+    verdict: PHAM
+    violations:
+    - 'tu-cam: ''Linh'' (Mr.Long 27/6)'
+    - 'trung-am: ''Đan'' voi roster ''Đan Phụng'''
+    proposed_alternatives:
+    - Nhã Thơ
+    - Nhã Nhị
+    - Miên Nhã
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0118)
+    proposed_pas_id: PAS_0118
+  - ep: 30
+    current_name: anh Nguyễn
+    gender: nam
+    region_rule06: unknown
+    era_rule07: sau_1995
+    age: '30'
+    hometown: (người khách cùng tên!) — anh thầy giáo cứu khỏi bỏ học
+    verdict: NGUOI_DUYET
+    violations:
+    - '1-am-tiet: ''Nguyễn'''
+    plot_note: ten 'Nguyễn' la diem cot truyen (khach CUNG TEN anh thay giao cuu khoi bo hoc) — doi ten pha plot
+    action: TEN DINH COT TRUYEN — may khong de xuat doi; Mr.Long quyet (giu + waiver hoac doi thu cong)
+  - ep: 31
+    current_name: Thanh Vân
+    gender: nu
+    region_rule06: bac
+    era_rule07: '1970_1995'
+    age: '55'
+    hometown: Hưng Yên
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Thanh'' voi roster ''Khả Thanh'''
+    - 'trung-am: ''Vân'' voi roster ''Quế Vân'''
+    proposed_alternatives:
+    - Trâm Oanh
+    - Trâm Duyên
+    - Trâm Nhàn
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0119)
+    proposed_pas_id: PAS_0119
+  - ep: 32
+    current_name: Phan Tâm
+    gender: nam
+    region_rule06: bac
+    era_rule07: '1970_1995'
+    age: '40'
+    hometown: Bắc Giang
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Tâm'' voi roster ''Tâm Bằng'''
+    proposed_alternatives:
+    - Dương Danh
+    - Dương Hiển
+    - Dương Thế
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0120)
+    proposed_pas_id: PAS_0120
+  - ep: 33
+    current_name: Hoài An
+    gender: nu
+    region_rule06: bac
+    era_rule07: '1970_1995'
+    age: '38'
+    hometown: Hà Nội
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Hoài'' voi roster ''Hào Hoài'''
+    - 'tu-cam: ''An'' (Mr.Long 27/6)'
+    proposed_alternatives:
+    - Trâm Thục
+    - Trâm Tuyền
+    - Trâm Ngần
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0121)
+    proposed_pas_id: PAS_0121
+  - ep: 34
+    current_name: Văn Tuấn
+    gender: nam
+    region_rule06: bac
+    era_rule07: '1970_1995'
+    age: '50'
+    hometown: Vĩnh Phúc
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Văn'' voi roster ''Văn Triệu'''
+    - 'trung-am: ''Tuấn'' voi roster ''Tuấn Quốc'''
+    proposed_alternatives:
+    - Dương Quyết
+    - Thạch Chương
+    - Thạch Dương
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0122)
+    proposed_pas_id: PAS_0122
+  - ep: 35
+    current_name: Trí Hưng
+    gender: nam
+    region_rule06: trung
+    era_rule07: sau_1995
+    age: '28'
+    hometown: Nghệ An
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Trí'' voi roster ''Hữu Trí'''
+    - 'tu-cam: ''Hưng'' (Mr.Long 27/6)'
+    proposed_alternatives:
+    - Khiêm Duy
+    - Khiêm Kỳ
+    - Khiêm Bách
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0123)
+    proposed_pas_id: PAS_0123
+  - ep: 36
+    current_name: Văn Khải
+    gender: nam
+    region_rule06: bac
+    era_rule07: '1970_1995'
+    age: '48'
+    hometown: Lào Cai
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Văn'' voi roster ''Văn Triệu'''
+    - 'trung-am: ''Khải'' voi roster ''Khải Toàn'''
+    proposed_alternatives:
+    - Thạch Vượng
+    - Thạch Tân
+    - Thạch Chiến
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0124)
+    proposed_pas_id: PAS_0124
+  - ep: 37
+    current_name: Mỹ Hạnh
+    gender: nu
+    region_rule06: bac
+    era_rule07: '1970_1995'
+    age: '32'
+    hometown: Hà Nội
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Mỹ'' voi roster ''Mỹ Nhi'''
+    - 'trung-am: ''Hạnh'' voi roster ''Hồng Hạnh'''
+    proposed_alternatives:
+    - Trâm Thương
+    - Trâm Khuê
+    - Trâm Diệp
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0125)
+    proposed_pas_id: PAS_0125
+  - ep: 38
+    current_name: Đức Anh
+    gender: nam
+    region_rule06: bac
+    era_rule07: '1970_1995'
+    age: '35'
+    hometown: Quảng Ninh
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Đức'' voi roster ''Đức Phúc'''
+    - '1-am-tiet: ''Đức'' (rule_01 bible/23 can 2 am tiet)'
+    proposed_alternatives:
+    - Thạch Lợi
+    - Thạch Lĩnh
+    - Thạch Danh
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0126)
+    proposed_pas_id: PAS_0126
+  - ep: 39
+    current_name: Hồng Mai
+    gender: nu
+    region_rule06: trung
+    era_rule07: '1970_1995'
+    age: '55'
+    hometown: Quảng Bình
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Hồng'' voi roster ''Hồng Hạnh'''
+    - 'tu-cam: ''Mai'' (Mr.Long 27/6)'
+    proposed_alternatives:
+    - Uyên Kiều
+    - Uyên Thương
+    - Uyên Khuê
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0127)
+    proposed_pas_id: PAS_0127
+  - ep: 40
+    current_name: Trung Hậu
+    gender: nam
+    region_rule06: bac
+    era_rule07: sau_1995
+    age: '28'
+    hometown: Hà Nội
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Trung'' voi roster ''Trung Hiếu'''
+    - 'trung-am: ''Hậu'' voi roster ''Hân Hậu'''
+    proposed_alternatives:
+    - Duy Chấn
+    - Duy Triều
+    - Duy Quảng
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0128)
+    proposed_pas_id: PAS_0128
+  - ep: 41
+    current_name: Bích Trâm
+    gender: nu
+    region_rule06: trung
+    era_rule07: '1970_1995'
+    age: '32'
+    hometown: Bình Định
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Bích'' voi roster ''Cẩm Bích'''
+    proposed_alternatives:
+    - Uyên Diệp
+    - Uyên Xuân
+    - Kiều Uyên
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0129)
+    proposed_pas_id: PAS_0129
+  - ep: 42
+    current_name: Hoàng Nam
+    gender: nam
+    region_rule06: nam
+    era_rule07: '1970_1995'
+    age: '42'
+    hometown: Bến Tre
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Hoàng'' voi roster ''Hoàng Lâm'''
+    - 'tu-cam: ''Nam'' (Mr.Long 27/6)'
+    proposed_alternatives:
+    - Toản Luân
+    - Toản Tân
+    - Toản Vượng
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0130)
+    proposed_pas_id: PAS_0130
+  - ep: 43
+    current_name: Văn Trường
+    gender: nam
+    region_rule06: nam
+    era_rule07: '1970_1995'
+    age: '50'
+    hometown: Bình Phước
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Văn'' voi roster ''Văn Triệu'''
+    - 'trung-am: ''Trường'' voi roster ''Trường Thiên'''
+    proposed_alternatives:
+    - Toản Lợi
+    - Toản Dương
+    - Toản Danh
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0131)
+    proposed_pas_id: PAS_0131
+  - ep: 44
+    current_name: Phượng Liên
+    gender: nu
+    region_rule06: trung
+    era_rule07: '1970_1995'
+    age: '52'
+    hometown: Đắk Lắk
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Phượng'' voi roster ''Phượng Ngọc'''
+    - 'trung-am: ''Liên'' voi roster ''Liên Thư'''
+    proposed_alternatives:
+    - Kiều Khuê
+    - Kiều Diệp
+    - Kiều Xuân
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0132)
+    proposed_pas_id: PAS_0132
+  - ep: 45
+    current_name: Mạnh Hiếu
+    gender: nam
+    region_rule06: bac
+    era_rule07: sau_1995
+    age: '30'
+    hometown: Bắc Ninh
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Mạnh'' voi roster ''Mạnh Đạo'''
+    - 'trung-am: ''Hiếu'' voi roster ''Trung Hiếu'''
+    proposed_alternatives:
+    - Khiêm Vĩ
+    - Khiêm Huân
+    - Khiêm Lãm
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0133)
+    proposed_pas_id: PAS_0133
+  - ep: 46
+    current_name: Bà Hảo
+    gender: nu
+    region_rule06: bac
+    era_rule07: truoc_1970
+    age: '68'
+    hometown: Thái Bình
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Hảo'' voi roster ''Khuyên Hảo'''
+    - '1-am-tiet: ''Hảo'' (rule_01 bible/23 can 2 am tiet)'
+    proposed_alternatives:
+    - Thắm Mận
+    - Thắm Xoan
+    - Thắm Nụ
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0134)
+    proposed_pas_id: PAS_0134
+  - ep: 47
+    current_name: Thanh Nga
+    gender: nu
+    region_rule06: bac
+    era_rule07: sau_1995
+    age: '30'
+    hometown: Hà Nội
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Thanh'' voi roster ''Khả Thanh'''
+    - 'trung-am: ''Nga'' voi roster ''Tiên Nga'''
+    proposed_alternatives:
+    - Nhã Ngà
+    - Nhã Ban
+    - Miên Ý
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0135)
+    proposed_pas_id: PAS_0135
+  - ep: 48
+    current_name: Hữu Duy
+    gender: nam
+    region_rule06: nam
+    era_rule07: '1970_1995'
+    age: '38'
+    hometown: Cần Thơ
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Hữu'' voi roster ''Hữu Trí'''
+    proposed_alternatives:
+    - Toản Quyết
+    - Luân Toản
+    - Luân Tân
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0136)
+    proposed_pas_id: PAS_0136
+  - ep: 49
+    current_name: Phương Linh
+    gender: nu
+    region_rule06: nam
+    era_rule07: '1970_1995'
+    age: '42'
+    hometown: Sóc Trăng
+    verdict: PHAM
+    violations:
+    - 'trung-am: ''Phương'' voi roster ''Hiệp Phương'''
+    - 'tu-cam: ''Linh'' (Mr.Long 27/6)'
+    proposed_alternatives:
+    - Oanh Kiều
+    - Oanh Duyên
+    - Oanh Thương
+    action: thay ten theo pool dot 1 (PENDING Mr.Long duyet pool) roi gan PAS id moi (de xuat PAS_0137)
+    proposed_pas_id: PAS_0137
+  - ep: 50
+    current_name: Hạ Nhi
+    gender: nam
+    region_rule06: unknown
+    era_rule07: sau_1995
+    age: '28'
+    hometown: ''
+    verdict: NGUOI_DUYET
+    violations:
+    - 'trung-am: ''Hạ'' voi roster ''Hạ Diệu'''
+    - 'trung-am: ''Nhi'' voi roster ''Mỹ Nhi'''
+    plot_note: '''Hạ Nhi'' nghi lien quan truc tiep Hạ Vy (bible/31 characters_locked, ''lan dau thay anh sau tam nam'') —
+      doi ten pha plot'
+    action: TEN DINH COT TRUYEN — may khong de xuat doi; Mr.Long quyet (giu + waiver hoac doi thu cong)
+name_pool_wave1_proposal:
+  meta:
+    status: PROPOSAL_AWAITING_MR_LONG (rule_06 ten-gan-que + rule_07 tuoi-hop-thoi)
+    constraint_verified_by_machine: moi ten 2 am tiet, 0 am tiet trung roster-200, 0 tu cam-15
+    era_buckets:
+      cu: sinh <=1970
+      pt: sinh 1970-1995
+      tre: sinh >=1995
+    note: ten ghep tu am-tiet du thao cua executor; Mr.Long duyet/sua/loai truc tiep
+    dropped_syllables: []
+  nu:
+    bac:
+      cu:
+      - Thắm Hường
+      - Thắm Xuyến
+      - Thắm Nhài
+      - Thắm Sen
+      - Thắm Lụa
+      - Thắm Gấm
+      - Thắm Mận
+      - Thắm Xoan
+      - Thắm Nụ
+      - Hường Thắm
+      - Hường Xuyến
+      - Hường Nhài
+      - Hường Sen
+      - Hường Lụa
+      - Hường Gấm
+      - Hường Mận
+      - Hường Xoan
+      - Hường Nụ
+      - Xuyến Thắm
+      - Xuyến Hường
+      - Xuyến Nhài
+      - Xuyến Sen
+      - Xuyến Lụa
+      - Xuyến Gấm
+      - Xuyến Mận
+      - Xuyến Xoan
+      - Xuyến Nụ
+      - Nhài Thắm
+      - Nhài Hường
+      - Nhài Xuyến
+      pt:
+      - Huyền Trâm
+      - Huyền Oanh
+      - Huyền Duyên
+      - Huyền Nhàn
+      - Huyền Thục
+      - Huyền Tuyền
+      - Huyền Ngần
+      - Huyền Thương
+      - Huyền Khuê
+      - Huyền Diệp
+      - Huyền Xuân
+      - Trâm Huyền
+      - Trâm Oanh
+      - Trâm Duyên
+      - Trâm Nhàn
+      - Trâm Thục
+      - Trâm Tuyền
+      - Trâm Ngần
+      - Trâm Thương
+      - Trâm Khuê
+      - Trâm Diệp
+      - Trâm Xuân
+      - Oanh Huyền
+      - Oanh Trâm
+      - Oanh Duyên
+      - Oanh Nhàn
+      - Oanh Thục
+      - Oanh Tuyền
+      - Oanh Ngần
+      - Oanh Thương
+      tre:
+      - Nhã Miên
+      - Nhã Ý
+      - Nhã Đài
+      - Nhã Ngà
+      - Nhã Nhị
+      - Nhã Thơ
+      - Nhã Ban
+      - Miên Nhã
+      - Miên Ý
+      - Miên Đài
+      - Miên Ngà
+      - Miên Nhị
+      - Miên Thơ
+      - Miên Ban
+      - Ý Nhã
+      - Ý Miên
+      - Ý Đài
+      - Ý Ngà
+      - Ý Nhị
+      - Ý Thơ
+      - Ý Ban
+      - Đài Nhã
+      - Đài Miên
+      - Đài Ý
+      - Đài Ngà
+      - Đài Nhị
+      - Đài Thơ
+      - Đài Ban
+      - Ngà Nhã
+      - Ngà Miên
+    trung:
+      cu:
+      - Đoan Cầm
+      - Đoan Nhụy
+      - Đoan Lài
+      - Đoan Thắm
+      - Đoan Hường
+      - Cầm Đoan
+      - Cầm Nhụy
+      - Cầm Lài
+      - Cầm Thắm
+      - Cầm Hường
+      - Nhụy Đoan
+      - Nhụy Cầm
+      - Nhụy Lài
+      - Nhụy Thắm
+      - Nhụy Hường
+      - Lài Đoan
+      - Lài Cầm
+      - Lài Nhụy
+      - Lài Thắm
+      - Lài Hường
+      - Thắm Đoan
+      - Thắm Cầm
+      - Thắm Nhụy
+      - Thắm Lài
+      - Thắm Hường
+      - Hường Đoan
+      - Hường Cầm
+      - Hường Nhụy
+      - Hường Lài
+      - Hường Thắm
+      pt:
+      - Uyên Kiều
+      - Uyên Thương
+      - Uyên Khuê
+      - Uyên Diệp
+      - Uyên Xuân
+      - Kiều Uyên
+      - Kiều Thương
+      - Kiều Khuê
+      - Kiều Diệp
+      - Kiều Xuân
+      - Thương Uyên
+      - Thương Kiều
+      - Thương Khuê
+      - Thương Diệp
+      - Thương Xuân
+      - Khuê Uyên
+      - Khuê Kiều
+      - Khuê Thương
+      - Khuê Diệp
+      - Khuê Xuân
+      - Diệp Uyên
+      - Diệp Kiều
+      - Diệp Thương
+      - Diệp Khuê
+      - Diệp Xuân
+      - Xuân Uyên
+      - Xuân Kiều
+      - Xuân Thương
+      - Xuân Khuê
+      - Xuân Diệp
+      tre:
+      - Nhã Miên
+      - Nhã Ý
+      - Nhã Thơ
+      - Nhã Đài
+      - Nhã Nhị
+      - Miên Nhã
+      - Miên Ý
+      - Miên Thơ
+      - Miên Đài
+      - Miên Nhị
+      - Ý Nhã
+      - Ý Miên
+      - Ý Thơ
+      - Ý Đài
+      - Ý Nhị
+      - Thơ Nhã
+      - Thơ Miên
+      - Thơ Ý
+      - Thơ Đài
+      - Thơ Nhị
+      - Đài Nhã
+      - Đài Miên
+      - Đài Ý
+      - Đài Thơ
+      - Đài Nhị
+      - Nhị Nhã
+      - Nhị Miên
+      - Nhị Ý
+      - Nhị Thơ
+      - Nhị Đài
+    nam:
+      cu:
+      - Sáu Lành
+      - Sáu Mến
+      - Sáu Ngoan
+      - Sáu Thiệt
+      - Lành Sáu
+      - Lành Mến
+      - Lành Ngoan
+      - Lành Thiệt
+      - Mến Sáu
+      - Mến Lành
+      - Mến Ngoan
+      - Mến Thiệt
+      - Ngoan Sáu
+      - Ngoan Lành
+      - Ngoan Mến
+      - Ngoan Thiệt
+      - Thiệt Sáu
+      - Thiệt Lành
+      - Thiệt Mến
+      - Thiệt Ngoan
+      pt:
+      - Kiều Oanh
+      - Kiều Duyên
+      - Kiều Thương
+      - Kiều Diệp
+      - Kiều Xuân
+      - Oanh Kiều
+      - Oanh Duyên
+      - Oanh Thương
+      - Oanh Diệp
+      - Oanh Xuân
+      - Duyên Kiều
+      - Duyên Oanh
+      - Duyên Thương
+      - Duyên Diệp
+      - Duyên Xuân
+      - Thương Kiều
+      - Thương Oanh
+      - Thương Duyên
+      - Thương Diệp
+      - Thương Xuân
+      - Diệp Kiều
+      - Diệp Oanh
+      - Diệp Duyên
+      - Diệp Thương
+      - Diệp Xuân
+      - Xuân Kiều
+      - Xuân Oanh
+      - Xuân Duyên
+      - Xuân Thương
+      - Xuân Diệp
+      tre:
+      - Ngà Nhí
+      - Ngà Xíu
+      - Ngà Út
+      - Ngà Nhị
+      - Ngà Thơ
+      - Nhí Ngà
+      - Nhí Xíu
+      - Nhí Út
+      - Nhí Nhị
+      - Nhí Thơ
+      - Xíu Ngà
+      - Xíu Nhí
+      - Xíu Út
+      - Xíu Nhị
+      - Xíu Thơ
+      - Út Ngà
+      - Út Nhí
+      - Út Xíu
+      - Út Nhị
+      - Út Thơ
+      - Nhị Ngà
+      - Nhị Nhí
+      - Nhị Xíu
+      - Nhị Út
+      - Nhị Thơ
+      - Thơ Ngà
+      - Thơ Nhí
+      - Thơ Xíu
+      - Thơ Út
+      - Thơ Nhị
+  nam:
+    bac:
+      cu:
+      - Cần Kiên
+      - Cần Nghị
+      - Cần Đôn
+      - Cần Thuần
+      - Cần Vạn
+      - Cần Tráng
+      - Cần Doãn
+      - Kiên Cần
+      - Kiên Nghị
+      - Kiên Đôn
+      - Kiên Thuần
+      - Kiên Vạn
+      - Kiên Tráng
+      - Kiên Doãn
+      - Nghị Cần
+      - Nghị Kiên
+      - Nghị Đôn
+      - Nghị Thuần
+      - Nghị Vạn
+      - Nghị Tráng
+      - Nghị Doãn
+      - Đôn Cần
+      - Đôn Kiên
+      - Đôn Nghị
+      - Đôn Thuần
+      - Đôn Vạn
+      - Đôn Tráng
+      - Đôn Doãn
+      - Thuần Cần
+      - Thuần Kiên
+      pt:
+      - Chương Dương
+      - Chương Thạch
+      - Chương Vượng
+      - Chương Tân
+      - Chương Chiến
+      - Chương Lợi
+      - Chương Lĩnh
+      - Chương Danh
+      - Chương Hiển
+      - Chương Thế
+      - Chương Quyết
+      - Dương Chương
+      - Dương Thạch
+      - Dương Vượng
+      - Dương Tân
+      - Dương Chiến
+      - Dương Lợi
+      - Dương Lĩnh
+      - Dương Danh
+      - Dương Hiển
+      - Dương Thế
+      - Dương Quyết
+      - Thạch Chương
+      - Thạch Dương
+      - Thạch Vượng
+      - Thạch Tân
+      - Thạch Chiến
+      - Thạch Lợi
+      - Thạch Lĩnh
+      - Thạch Danh
+      tre:
+      - Duy Khiêm
+      - Duy Vĩ
+      - Duy Huân
+      - Duy Bách
+      - Duy Lãm
+      - Duy Kỳ
+      - Duy Chấn
+      - Duy Triều
+      - Duy Quảng
+      - Khiêm Duy
+      - Khiêm Vĩ
+      - Khiêm Huân
+      - Khiêm Bách
+      - Khiêm Lãm
+      - Khiêm Kỳ
+      - Khiêm Chấn
+      - Khiêm Triều
+      - Khiêm Quảng
+      - Vĩ Duy
+      - Vĩ Khiêm
+      - Vĩ Huân
+      - Vĩ Bách
+      - Vĩ Lãm
+      - Vĩ Kỳ
+      - Vĩ Chấn
+      - Vĩ Triều
+      - Vĩ Quảng
+      - Huân Duy
+      - Huân Khiêm
+      - Huân Vĩ
+    trung:
+      cu:
+      - Đôn Cần
+      - Đôn Cẩn
+      - Đôn Trạch
+      - Đôn Kiên
+      - Đôn Thuần
+      - Cần Đôn
+      - Cần Cẩn
+      - Cần Trạch
+      - Cần Kiên
+      - Cần Thuần
+      - Cẩn Đôn
+      - Cẩn Cần
+      - Cẩn Trạch
+      - Cẩn Kiên
+      - Cẩn Thuần
+      - Trạch Đôn
+      - Trạch Cần
+      - Trạch Cẩn
+      - Trạch Kiên
+      - Trạch Thuần
+      - Kiên Đôn
+      - Kiên Cần
+      - Kiên Cẩn
+      - Kiên Trạch
+      - Kiên Thuần
+      - Thuần Đôn
+      - Thuần Cần
+      - Thuần Cẩn
+      - Thuần Trạch
+      - Thuần Kiên
+      pt:
+      - Danh Hiển
+      - Danh Đàn
+      - Danh Luân
+      - Danh Thạch
+      - Danh Thế
+      - Hiển Danh
+      - Hiển Đàn
+      - Hiển Luân
+      - Hiển Thạch
+      - Hiển Thế
+      - Đàn Danh
+      - Đàn Hiển
+      - Đàn Luân
+      - Đàn Thạch
+      - Đàn Thế
+      - Luân Danh
+      - Luân Hiển
+      - Luân Đàn
+      - Luân Thạch
+      - Luân Thế
+      - Thạch Danh
+      - Thạch Hiển
+      - Thạch Đàn
+      - Thạch Luân
+      - Thạch Thế
+      - Thế Danh
+      - Thế Hiển
+      - Thế Đàn
+      - Thế Luân
+      - Thế Thạch
+      tre:
+      - Khiêm Duy
+      - Khiêm Kỳ
+      - Khiêm Bách
+      - Khiêm Vĩ
+      - Khiêm Triều
+      - Duy Khiêm
+      - Duy Kỳ
+      - Duy Bách
+      - Duy Vĩ
+      - Duy Triều
+      - Kỳ Khiêm
+      - Kỳ Duy
+      - Kỳ Bách
+      - Kỳ Vĩ
+      - Kỳ Triều
+      - Bách Khiêm
+      - Bách Duy
+      - Bách Kỳ
+      - Bách Vĩ
+      - Bách Triều
+      - Vĩ Khiêm
+      - Vĩ Duy
+      - Vĩ Kỳ
+      - Vĩ Bách
+      - Vĩ Triều
+      - Triều Khiêm
+      - Triều Duy
+      - Triều Kỳ
+      - Triều Bách
+      - Triều Vĩ
+    nam:
+      cu:
+      - Ba Bảy
+      - Ba Chín
+      - Ba Được
+      - Ba Thiệt
+      - Ba Lành
+      - Bảy Ba
+      - Bảy Chín
+      - Bảy Được
+      - Bảy Thiệt
+      - Bảy Lành
+      - Chín Ba
+      - Chín Bảy
+      - Chín Được
+      - Chín Thiệt
+      - Chín Lành
+      - Được Ba
+      - Được Bảy
+      - Được Chín
+      - Được Thiệt
+      - Được Lành
+      - Thiệt Ba
+      - Thiệt Bảy
+      - Thiệt Chín
+      - Thiệt Được
+      - Thiệt Lành
+      - Lành Ba
+      - Lành Bảy
+      - Lành Chín
+      - Lành Được
+      - Lành Thiệt
+      pt:
+      - Toản Luân
+      - Toản Tân
+      - Toản Vượng
+      - Toản Lợi
+      - Toản Dương
+      - Toản Danh
+      - Toản Quyết
+      - Luân Toản
+      - Luân Tân
+      - Luân Vượng
+      - Luân Lợi
+      - Luân Dương
+      - Luân Danh
+      - Luân Quyết
+      - Tân Toản
+      - Tân Luân
+      - Tân Vượng
+      - Tân Lợi
+      - Tân Dương
+      - Tân Danh
+      - Tân Quyết
+      - Vượng Toản
+      - Vượng Luân
+      - Vượng Tân
+      - Vượng Lợi
+      - Vượng Dương
+      - Vượng Danh
+      - Vượng Quyết
+      - Lợi Toản
+      - Lợi Luân
+      tre:
+      - Duy Huân
+      - Duy Vĩ
+      - Duy Khiêm
+      - Duy Triều
+      - Duy Quảng
+      - Huân Duy
+      - Huân Vĩ
+      - Huân Khiêm
+      - Huân Triều
+      - Huân Quảng
+      - Vĩ Duy
+      - Vĩ Huân
+      - Vĩ Khiêm
+      - Vĩ Triều
+      - Vĩ Quảng
+      - Khiêm Duy
+      - Khiêm Huân
+      - Khiêm Vĩ
+      - Khiêm Triều
+      - Khiêm Quảng
+      - Triều Duy
+      - Triều Huân
+      - Triều Vĩ
+      - Triều Khiêm
+      - Triều Quảng
+      - Quảng Duy
+      - Quảng Huân
+      - Quảng Vĩ
+      - Quảng Khiêm
+      - Quảng Triều
