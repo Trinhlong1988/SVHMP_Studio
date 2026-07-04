@@ -3,10 +3,10 @@
 > — không chờ lệnh miệng. Kiểm duyệt audit 7 bước giữa mỗi pack; chỉ Mr.Long ký lock.
 
 ## CHUỖI (cập nhật 3/7 tối per Mr.Long — khớp master_roadmap §8 AI Studio)
-BP1→BP4 ✅ locked+tag 3/7 → **BP5 Validation** (+ G2-B1/B2 song song per TASK_G2 đã duyệt
-"không đợi BP8") → BP6 Decision → BP7 Narrative → BP8 Production (BP6-8 áp luật 10)
-→ FINAL AUDIT BP0-BP8 → tag `system-blueprint-v1.0` → **S1 vertical slice EP01 audio + KPI**
-(roadmap §8) → G2 B3/B4.
+BP1→BP7 ✅ locked+tag (BP5 3/7, BP6-7 4/7) — G2-B1/B2 song song per TASK_G2 → BP8 Production
+(đang build) → **BP9 Compliance** (Mr.Long duyệt 4/7, sau tự đánh giá "sau P8 bổ sung gì" — reconcile
+domain `publisher` đã khai BP0, KHÔNG phải mở rộng scope, cross-cutting publish-gate) → FINAL AUDIT
+BP0-BP9 → tag `system-blueprint-v1.0` → **S1 vertical slice EP01 audio + KPI** (roadmap §8) → G2 B3/B4.
 
 ## LUẬT CHUNG MỌI PACK (không lặp lại trong từng task — vi phạm = audit BÁC)
 1. **Source of truth:** BP-C v2.0 LOCKED (`blueprint_domains.yaml`: 22+1 domain ĐÓNG, layer 1-12,
@@ -37,10 +37,11 @@ BP1→BP4 ✅ locked+tag 3/7 → **BP5 Validation** (+ G2-B1/B2 song song per TA
    `... release <pack_id> <tên_phiên>` + log_ping RELEASE. Ledger: `runtime/build_claim.yaml`
    (guard: tests/test_build_claim.py — gỡ luật này khỏi MASTER = test đỏ).
 
-## SAU BP8
-Kiểm duyệt chạy FINAL AUDIT (freeze_gate mọi bp-pack + cross-pack consistency + mutation tổng
-+ **phân loại mọi element planned**: mâu-thuẫn-nội-bộ / không-thể-implement / chưa-implement —
-2 loại đầu = FAIL phải xử trước tag) → Mr.Long ký tag `system-blueprint-v1.0`
+## SAU BP8 → BP9 (KHÔNG phải BP10 — đã tự đánh giá 4/7: Dialogue/Supernatural KHÔNG cần BP riêng,
+đã scope trong TASK_G3/TASK_G5 làm cùng content; chỉ Compliance là cross-cutting đủ điều kiện BP)
+Sau BP9 lock: Kiểm duyệt chạy FINAL AUDIT (freeze_gate mọi bp-pack + cross-pack consistency +
+mutation tổng + **phân loại mọi element planned**: mâu-thuẫn-nội-bộ / không-thể-implement /
+chưa-implement — 2 loại đầu = FAIL phải xử trước tag) → Mr.Long ký tag `system-blueprint-v1.0`
 → Domain/Facet/Interface/Flow ĐÓNG → **S1 EP01 vertical slice** (roadmap §8) → G2 B3/B4.
 Backlog trả trong S0-S1: dup-key loader `architecture_registry_check` (H6) · `verify_ping_claim`
 24 UNKNOWN · bảng rule↔enforcer máy-sinh · ADR retro mỏng (`docs/adr/`).
