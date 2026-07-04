@@ -15,10 +15,9 @@ claims:
     session: CMD_BUILD
     status: released
   g2_character:
-    claimed_at: '2026-07-04T21:52:20'
-    released_at: '2026-07-04T22:09:34'
+    claimed_at: '2026-07-04T22:35:30'
     session: G2_EXECUTOR
-    status: released
+    status: active
   svaf_patterns_backlog:
     claimed_at: '2026-07-04T21:37:49'
     session: CMD_BUILD_3
