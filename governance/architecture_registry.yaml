@@ -211,7 +211,7 @@ domains:
       bp3_ownership: locked   # FROZEN v1.0 (Mr.Long authorized 3/7): 70 facet 1-writer (0 vi pham luat vang), 52 dep 3-nguon khop, reveal permission/timing tach 3 chu; audit 5 mutation PASS (2-writer/facet-ma/leo-thang/dup-key/dep-lech); tag bp3-ownership-v1.0
       bp4_runtime: locked   # FROZEN v1.0 (Mr.Long authorized 3/7): 9 hop layer-tang, 8 event chain domain/facet-da-khai, 4 state machine 0-orphan, 6 memory scope khop BP3; audit 5 mutation PASS (hop-bia/trigger-ma/orphan/writer-leo-thang/dup-key); tag bp4-runtime-v1.0
       bp5_validation: locked   # FROZEN v1.0 (Mr.Long authorized 3/7): suite 1-cua bp0-bp4 wired ci_gate 'blueprint' + unwire-guard + loader-1-impl utf-8-sig chong BOM; audit 7 buoc PASS (mutation 6 don + real-file gate-mode + BOM shot, re-verify 306 test, server-CI xanh 7541f8e); tag bp5-validation-v1.0
-      bp6_decision: candidate   # BUILT 3/7: 12 knob R195 no-hardcode + io packet dong + checker + 17 test mutation; cho audit 7 buoc + Mr.Long ky
+      bp6_decision: locked   # FROZEN v1.0 (Mr.Long authorized 4/7): 12 knob R195 no-hardcode + io packet dong; audit 7 buoc 2 vong (bat R195 top-level leak lot qua scan trong-knob, fix full-file scan) + mutation re-verify tren ref sau ca bible R142/R143 fix; registry 0/0/0, suite 5/5, pytest 359; tag bp6-decision-v1.0
     data_contract:
       input: "registry yaml + disk scan"
       output: "gap report"
