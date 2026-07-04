@@ -23,7 +23,7 @@ STAGE_TARGET = [('child', 12), ('youth', 28), ('middle', 33), ('elderly', 17), (
 AGE_OF = {'child': ['13-17', '13-17'], 'youth': ['18-25', '26-35'],
           'middle': ['36-50', '51-65'], 'elderly': ['66+', '66+'], 'unknown': ['', '']}
 REGIONS = ['bac', 'trung', 'nam']
-HOME = {'bac': ['Hà Nội', 'Hải Phòng', 'Nam Định', 'Bắc Ninh', 'Thái Bình'],
+HOME = {'bac': ['Hà Nội', 'Hải Phòng', 'Nam Định', 'Bắc Ninh', 'Thái Bình', 'Hải Dương'],
         'trung': ['Huế', 'Nghệ An', 'Hà Tĩnh', 'Đà Nẵng', 'Quảng Bình'],
         'nam': ['Sài Gòn', 'Biên Hòa', 'Vũng Tàu', 'Hồ Chí Minh']}  # chi town map 'nam' (tranh mismatch tay)
 PRON = {'bac': 'tôi', 'trung': 'tui', 'nam': 'con'}
