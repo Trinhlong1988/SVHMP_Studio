@@ -89,6 +89,17 @@ thật là 1 lệnh `git diff <lock-branch> <archive-branch>` chạy NGAY lúc a
 mọi lần "archive, không merge" PHẢI kèm bước diff-and-extract LÀM NGAY trong cùng phiên, ghi kết quả
 diff vào chính commit message archive (không chỉ nói "tôi sẽ...").
 
+## G11 — File mới tạo trong worktree KHÔNG tự xuất hiện trên shared main tree sau khi push
+Case thật (4/7): tạo `prompts/launch_build3.cmd` trong worktree riêng (đúng R200) → commit → push →
+**xóa worktree** — nhưng vì file gốc từng bị `Remove-Item` khỏi shared main tree (`SVHMP_git`) lúc
+chuyển sang worktree, và sau khi push KHÔNG `git pull` lại shared tree, file vẫn THIẾU trên
+`SVHMP_git` dù đã lên `origin/main`. Hệ quả: shortcut Desktop trỏ đường dẫn shared-tree báo lỗi
+"is not recognized" — Boss double-click chạy fail ngay lần đầu dùng. **Bài học:** sau MỌI lần push
+từ worktree phụ, nếu file đó cần dùng NGAY trên shared tree (script/shortcut target, không chỉ để
+builder khác pull sau) — PHẢI `git pull --rebase` trên `SVHMP_git` NGAY LẬP TỨC, không coi push
+xong = việc xong. Kiểm chứng bằng `Test-Path` trên đường dẫn THẬT trước khi báo "đã tạo xong", không
+tin "đã push" là đủ.
+
 ## Nguồn cảm hứng
 So sánh với Hermes Agent (Nous Research, 4/7): pattern "skill file agent tự viết, mọi lần gọi lại
 đọc được" đúng hướng nhưng KHÔNG áp dụng "tự viết không kiểm duyệt" — file này làm thủ công, review
