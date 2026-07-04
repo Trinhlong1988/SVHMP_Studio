@@ -4,10 +4,12 @@
 # Mục tiêu: chuẩn hóa naming 88-100 hành khách one-shot xuyên EP02-EP90.
 # Cross-ref: bible/00.cross_bible_refs (sẽ add cross_ref entry sau)
 
-version: 1.0
+version: 1.1
 lock_date: 2026-06-27
+v1_1_date: 2026-07-03
 authority: Mr.Long
 supersedes: none
+v1_1_note: "v1.1 THÊM rule_06..09 (region/generation/culture/vietnamese) — rule_01..05 GIỮ NGUYÊN VĂN, KHÔNG sửa. TASK_G2_CHARACTER B1, Mr.Long ký 2026-07-03. Pool tên cụ thể theo vùng CHƯA ký (chờ hybrid classification riêng)."
 
 # ============================================================
 # RULES (HARD-FAIL nếu vi phạm — QA enforce)
@@ -43,6 +45,32 @@ RULES:
     examples_good: ["Hạ Vi", "Tường Vân", "Hoàng Yến", "Minh Châu"]
     examples_bad_aesthetic: ["Tèo", "Tí", "Hùng Lùn", "Mèo Mun"]
     enforcement: subjective — Mr.Long approve pool lần đầu, frozen after
+
+  rule_06_region_match:   # facet naming_region (v1.1, Mr.Long ký 2026-07-03)
+    description: "TÊN GẦN QUÊ: tên phải hợp vùng quê nhân vật (mirror 'giọng gần quê' R206)."
+    style_by_region:
+      bac:   "cổ điển Bắc: Hạ/Nguyệt/Tường/Hoàng + âm Hán-Việt trang nhã"
+      trung: "Huế/Trung: Diệu/Tôn Nữ/Như/Đoan — nữ tính cung đình; nam: Bảo/Vĩnh/Hữu"
+      nam:   "Nam bộ: thứ danh Út/Tư/Sáu chấp nhận trong xưng gọi (KHÔNG làm char_name chính vì vướng rule_01); tên mộc: Kiều/Diễm/Phụng"
+    enforcement: "roster_validator C4 (khung — pool cụ thể chờ ký riêng)"
+    note: "Chi tiết đầy đủ: governance/blueprint/schemas/naming_extension_rules.yaml (2 file 1 nội dung)."
+
+  rule_07_generation_match:   # facet naming_generation (v1.1)
+    description: "TUỔI ↔ THỜI TÊN: nhân vật 58 tuổi (sinh ~196x) mang tên thời đó; CẤM tên trend trẻ cho người già."
+    era_style:
+      "sinh <=1970":  "tên mộc/Hán-Việt cũ: Hảo/Liên/Hồng/Văn/Hữu/Trọng"
+      "sinh 1970-1995": "tên phổ thông: Tuấn/Hằng/Minh/Ngọc"
+      "sinh >=1995":  "tên trẻ hiện đại: Nhi/Khả/Bảo (vẫn thuần Việt rule_09)"
+    enforcement: "roster_validator C4 — PENDING_CONTENT (roster chưa có birth_year field)"
+
+  rule_08_culture_belief:   # facet naming_culture (v1.1)
+    description: "TÔN GIÁO/TÍN NGƯỠNG ảnh hưởng tên: Phật tử pháp danh Diệu/Minh; Công giáo thêm tên thánh (chỉ trong thoại xưng gọi, char_name vẫn thuần Việt)."
+    link_facet: belief (tier_2 religion)
+    enforcement: "roster_validator C4 — PENDING_CONTENT (roster chưa có religion field)"
+
+  rule_09_vietnamese_purity:   # facet naming_vietnamese (v1.1)
+    description: "Giữ chuẩn thuần Việt đẹp (rule_01 sẵn) + CẤM tên lai (Jenny Trần), tên game/phi thực (Dragon, Zed), teencode."
+    enforcement: "phủ một phần bởi C1 hiện có (rule_01/02/forbidden); regex charset đầy đủ hoãn (chống false-positive trên roster LOCK)"
 
 # ============================================================
 # VALIDATION HOOKS

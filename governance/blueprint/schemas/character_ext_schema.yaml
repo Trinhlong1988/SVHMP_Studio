@@ -1,24 +1,24 @@
-# CHARACTER EXT SCHEMA — G2 B1 ĐỀ XUẤT (3 facet planned của BP2 domain character)
-# planned_path khai tại governance/blueprint/bp2/domain_specs.yaml (facet knowledge /
-# reveal_permission / continuity_risk — sot.status: planned, owner: character).
-# VỊ TRÍ proposals/: CỐ Ý KHÔNG đặt tại planned_path — bp2_domain_check (lock)
-# enforce path planned phải TRỐNG tới khi ký (chống stub/drift). Khi Mr.Long ký:
-# nội dung chuyển về planned_path + domain_specs flip planned->exists (BP2 amendment).
+# CHARACTER EXT SCHEMA — 3 facet của BP2 domain character (knowledge / reveal_permission /
+# continuity_risk). SoT chính thức tại governance/blueprint/bp2/domain_specs.yaml
+# (sot.status: exists, path: file này, key: <facet_id> — flip planned->exists
+# per Mr.Long authorization 2026-07-03, RFC lane amendment bp2_domain locked).
 # =====================================================================
-# STATUS: PROPOSAL — CHƯA CÓ HIỆU LỰC. Bible writer = mr_long (bp3 ownership).
-# Chỉ khi Mr.Long ký thì: (1) status -> signed, (2) patch tương ứng ghi vào
-# bible/37_character_schema.yaml v2 (xem proposed_bible37_v2_patch cuối file).
-# CMD_BUILD soạn 2026-07-03 theo TASK_G2_CHARACTER B1. KHÔNG bịa field vô căn cứ:
-# mọi field đều truy về facet desc đã đóng ở BP2 (bp2-domain-v1.0) hoặc R210.
+# STATUS: SIGNED. Ký bởi Mr.Long 2026-07-03 (khung — pool/nội dung cụ thể theo
+# G2 B3 fill, không thuộc phạm vi schema này). Nội dung đồng bộ bible/37
+# v2.1 (g2_extension) — 2 nơi PHẢI khớp nhau (registry_check + bp2_domain_check
+# xác minh path/key resolve thật; nội dung field giữ nguyên khi bible cập nhật).
+# Soạn 2026-07-03 theo TASK_G2_CHARACTER B1. KHÔNG bịa field vô căn cứ: mọi field
+# đều truy về facet desc đã đóng ở BP2 (bp2-domain-v1.0) hoặc R210.
 # =====================================================================
 
 meta:
-  version: 0.1-proposal
-  status: PROPOSAL_AWAITING_MR_LONG_SIGNATURE
+  version: 1.0
+  status: SIGNED
+  signed_by: mr_long
+  signed_date: 2026-07-03
   drafted_by: CMD_BUILD
-  date: 2026-07-03
   source_facets: [knowledge, reveal_permission, continuity_risk]  # đúng facet_id bp2/domain_specs.yaml
-  target_when_signed: bible/37_character_schema.yaml v2 (g2_extension section)
+  mirrors: bible/37_character_schema.yaml v2.1 (g2_extension section) — 2 file 1 nội dung
 
 # ---------------------------------------------------------------
 # FACET 1: knowledge — "Nhân vật BIẾT gì" (QUAN TRỌNG NHẤT truyện dài tập)
@@ -48,7 +48,7 @@ reveal_permission:
     permission: {type: enum, values: [never, after_story_reveal, always], required: true}
     note:       {type: str, required: false, desc: "vd: chỉ hé lộ gián tiếp qua vật/ám hiệu"}
   invariant: "mọi fact secrecy=secret PHẢI có entry reveal_permission (validator: reveal↔knowledge nhất quán)"
-  forbidden: "KHÔNG chứa timing (tập nào lộ) — đó là reveal_curve của story_planner"
+  forbidden: "KHÔNG chứa timing (tập nào lộ) — đó là reveal_curve của story_planner (bp6 decision_engine)"
 
 # ---------------------------------------------------------------
 # FACET 3: continuity_risk — cờ rủi ro continuity (qa_runtime đọc)
@@ -72,14 +72,14 @@ continuity_risk:
   invariant: "flag chỉ được set kèm evidence; máy đề xuất (roster_backfill_miner) — người duyệt"
 
 # ---------------------------------------------------------------
-# PATCH ĐỀ XUẤT vào bible/37 v2 KHI MR.LONG KÝ (diff tối thiểu, không đổi field khóa)
+# BẢN GHI ÁP DỤNG vào bible/37 v2.1 (Mr.Long ký 2026-07-03)
 # ---------------------------------------------------------------
-proposed_bible37_v2_patch:
-  add_section: g2_extension
+applied_bible37_v21_patch:
+  added_section: g2_extension
   content_summary: |
     g2_extension:
       knowledge: [fact_id, desc, learned_ep, source_evidence, secrecy]
       reveal_permission: [fact_id, permission, note]   # PERMISSION only — timing = story_planner
       continuity_risk: [flags, level, evidence]
-    meta.version: 2.0 -> 2.1 ; note "G2 extension (Mr.Long ký <ngày>)"
+    meta.version: 2.0 -> 2.1 ; note "G2 extension (Mr.Long ký 2026-07-03)"
   untouched: [tier_1_mandatory, critical_groups, modules_v2, balance_targets]  # KHÔNG đụng lock

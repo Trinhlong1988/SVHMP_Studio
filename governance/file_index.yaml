@@ -1144,13 +1144,13 @@ files:
     domain: g2_character
     status: active
     tier: 1
-  governance/blueprint/schemas/proposals/character_ext_schema.yaml:
+  governance/blueprint/schemas/character_ext_schema.yaml:
     domain: g2_character
-    status: proposal_awaiting_signature
+    status: active
     tier: 1
-  governance/blueprint/schemas/proposals/naming_extension_rules.yaml:
+  governance/blueprint/schemas/naming_extension_rules.yaml:
     domain: g2_character
-    status: proposal_awaiting_signature
+    status: active
     tier: 1
   runtime/roster_backfill_draft.yaml:
     domain: g2_character

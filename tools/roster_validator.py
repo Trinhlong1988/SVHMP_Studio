@@ -13,14 +13,18 @@ CHECKS:
   C2 quê↔giọng: voice.hometown PHẢI thuộc vùng voice.region_dialect
      (map HOME single-source từ tools/migrate_roster_v2.py — không nhân đôi)
   C3 Tier1 R210 hiện diện: char_name/gender/voice đủ field/death.type/haunting_symbol/regret
-  C4 naming region/generation/culture (rule_06..08): PENDING_SCHEMA — chờ Mr.Long
-     ký bible/23 v1.1 (governance/blueprint/schemas/proposals/naming_extension_rules.yaml)
-  C5 reveal_permission↔knowledge + arc↔state machine: PENDING_SCHEMA — chờ ký
-     bible/37 v2 (governance/blueprint/schemas/proposals/character_ext_schema.yaml)
+  C4 naming region/generation/culture (rule_06..09, bible/23 v1.1 — Mr.Long ký
+     2026-07-03): KHUNG check — bible/23 v1.1 phải có đủ 4 rule + roster region
+     dùng phải có style_by_region khai (structural). Pool cụ thể theo vùng CHƯA
+     ký (riêng hybrid classification, PING) — KHÔNG kiểm content-pool tới khi ký.
+  C5 knowledge↔reveal_permission (bible/37 v2.1 — Mr.Long ký 2026-07-03): bible
+     phải có đủ g2_extension section; MỌI passenger có fact secrecy=secret PHẢI
+     có entry reveal_permission tương ứng (hiện roster CHƯA có field per-passenger
+     này — B3 fill sẽ thêm; 0 passenger có field = 0 violation, gate SẴN SÀNG
+     khi B3 đổ dữ liệu, KHÔNG phải giả PASS).
 
-Exit: violation (C1-C3) -> 1; sạch -> 0. PENDING_SCHEMA in rõ SKIP + lý do
-(KHÔNG đếm là pass ngầm). --strict: WARN-class cũng fail (B4 bật khi fill đạt ngưỡng
-Tier1 100% / Tier2 >=90% / recurring 100%).
+Exit: violation (C1-C5) -> 1; sạch -> 0. --strict: WARN-class cũng fail (B4 bật
+khi fill đạt ngưỡng Tier1 100% / Tier2 >=90% / recurring 100%).
 """
 import argparse
 import sys
@@ -35,9 +39,13 @@ from migrate_roster_v2 import HOME  # single-source map vùng->quê hợp lệ
 SVHMP = Path(__file__).parent.parent
 ROSTER = SVHMP / 'runtime' / 'passenger_roster_100.yaml'
 NAMES_DB = SVHMP / 'data' / 'vietnamese_names_extended.yaml'
+BIBLE_23 = SVHMP / 'bible' / '23_passenger_naming.yaml'
+BIBLE_37 = SVHMP / 'bible' / '37_character_schema.yaml'
 
 TIER1_TOP = ['char_name', 'gender', 'regret_sub_archetype', 'haunting_symbol']
 VOICE_REQ = ['region_dialect', 'hometown', 'pronoun_system']
+NAMING_RULES_REQUIRED = ['rule_06_region_match', 'rule_07_generation_match',
+                         'rule_08_culture_belief', 'rule_09_vietnamese_purity']
 
 
 def load_forbidden():
@@ -45,8 +53,60 @@ def load_forbidden():
     return {i['syl'] for i in db.get('forbidden_words', [])}
 
 
-def validate(passengers, forbidden):
-    """Trả (violations, warns). Mỗi item: 'Cx pas_id: mô tả'."""
+def load_bible23():
+    return yaml.safe_load(BIBLE_23.read_text(encoding='utf-8'))
+
+
+def load_bible37():
+    return yaml.safe_load(BIBLE_37.read_text(encoding='utf-8'))
+
+
+def check_c4_naming_framework(bible23, passengers):
+    """C4 — khung naming region/generation/culture/vietnamese (bible/23 v1.1)."""
+    errs = []
+    v = str((bible23 or {}).get('version', ''))
+    if not v.startswith('1.1'):
+        errs.append(f"C4: bible/23 version '{v}' chưa v1.1 (naming framework chưa ký)")
+        return errs
+    rules = (bible23 or {}).get('RULES', {})
+    for rid in NAMING_RULES_REQUIRED:
+        if rid not in rules:
+            errs.append(f"C4: thiếu {rid} trong bible/23 v1.1")
+    style = (rules.get('rule_06_region_match') or {}).get('style_by_region', {})
+    for p in passengers:
+        region = (p.get('voice') or {}).get('region_dialect')
+        if region and region not in style:
+            errs.append(f"C4 {p.get('id', '?')}: vùng '{region}' dùng trong roster "
+                        "nhưng bible/23 rule_06 chưa khai style_by_region")
+    return errs
+
+
+def check_c5_knowledge_consistency(bible37, passengers):
+    """C5 — bible/37 v2.1 g2_extension đủ section + per-passenger knowledge↔reveal_permission."""
+    errs = []
+    v = str((bible37 or {}).get('meta', {}).get('version', ''))
+    if not v.startswith('2.1'):
+        errs.append(f"C5: bible/37 version '{v}' chưa v2.1 (g2_extension chưa ký)")
+        return errs
+    g2 = (bible37 or {}).get('g2_extension', {})
+    for key in ('knowledge', 'reveal_permission', 'continuity_risk'):
+        if key not in g2:
+            errs.append(f"C5: thiếu section g2_extension.{key} trong bible/37 v2.1")
+    for p in passengers:
+        pid = p.get('id', '?')
+        knowledge = p.get('knowledge') or []
+        secret_ids = {k['fact_id'] for k in knowledge
+                      if k.get('secrecy') == 'secret' and k.get('fact_id')}
+        perm_ids = {rp.get('fact_id') for rp in (p.get('reveal_permission') or [])}
+        missing = secret_ids - perm_ids
+        if missing:
+            errs.append(f"C5 {pid}: fact secret {sorted(missing)} thiếu reveal_permission entry")
+    return errs
+
+
+def validate(passengers, forbidden, bible23=None, bible37=None):
+    """Trả (violations, warns). Mỗi item: 'Cx pas_id: mô tả'.
+    bible23/bible37 None -> bỏ qua C4/C5 (tương thích test C1-C3 cũ)."""
     violations, warns = [], []
     word_owner = {}
     for p in passengers:
@@ -90,6 +150,11 @@ def validate(passengers, forbidden):
         if not p.get('age_range') and p.get('life_status') != 'linh_hon':
             warns.append(f"C3 {pid}: age_range trống (chỉ hợp lệ với linh_hon)")
 
+    if bible23 is not None:
+        violations += check_c4_naming_framework(bible23, passengers)
+    if bible37 is not None:
+        violations += check_c5_knowledge_consistency(bible37, passengers)
+
     return violations, warns
 
 
@@ -102,7 +167,8 @@ def main(argv=None):
 
     data = yaml.safe_load(Path(args.roster).read_text(encoding='utf-8'))
     passengers = data.get('passengers', [])
-    violations, warns = validate(passengers, load_forbidden())
+    bible23, bible37 = load_bible23(), load_bible37()
+    violations, warns = validate(passengers, load_forbidden(), bible23, bible37)
 
     print("=== ROSTER VALIDATOR (G2 B3) ===")
     print(f"  roster: {args.roster} ({len(passengers)} passenger)")
@@ -110,14 +176,11 @@ def main(argv=None):
         print(f"  [FAIL] {v}")
     for w in warns:
         print(f"  [WARN] {w}")
-    print(f"  C1 naming + C2 quê↔giọng + C3 tier1: {len(violations)} violation, {len(warns)} warn")
-    print("  [SKIP] C4 naming region/generation/culture — PENDING_SCHEMA "
-          "(chờ Mr.Long ký bible/23 v1.1; đề xuất: governance/blueprint/schemas/proposals/naming_extension_rules.yaml)")
-    print("  [SKIP] C5 reveal_permission↔knowledge + arc↔BP4 state machine — PENDING_SCHEMA "
-          "(chờ Mr.Long ký bible/37 v2; đề xuất: governance/blueprint/schemas/proposals/character_ext_schema.yaml)")
+    print(f"  C1-C5 (naming + quê↔giọng + tier1 + naming-framework + knowledge↔reveal): "
+          f"{len(violations)} violation, {len(warns)} warn")
 
     fail = bool(violations) or (args.strict and bool(warns))
-    print(f"=== {'FAIL' if fail else 'PASS (trong phạm vi C1-C3 hiện hành)'} ===")
+    print(f"=== {'FAIL' if fail else 'PASS (C1-C5)'} ===")
     return 1 if fail else 0
 
 

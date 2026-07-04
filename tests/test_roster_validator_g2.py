@@ -4,6 +4,10 @@ PHÂN VAI TASK_G2: "Kiểm duyệt: mutation (roster giả lệch quê/tuổi ->
 Bài học 3/7: negative test PHẢI tự chứng minh nó cắn — mỗi mutation assert
 violation CỤ THỂ xuất hiện (không assert rỗng-pass).
 
+C4/C5 test thêm sau G2-B1-FLIP ceremony (Mr.Long ký bible/37 v2.1 + bible/23
+v1.1, 2026-07-03): version-signed check + section/rule-present check + mutation
+(thiếu rule/section, vùng không khai style, secret fact thiếu reveal_permission).
+
 pytest-func -> tự động collect trong `pytest tests/` và ci_gate.
 """
 import copy
@@ -14,10 +18,14 @@ import yaml
 
 SVHMP = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(SVHMP / 'tools'))
-from roster_validator import validate, load_forbidden  # noqa: E402
+from roster_validator import (  # noqa: E402
+    validate, load_forbidden, load_bible23, load_bible37,
+    check_c4_naming_framework, check_c5_knowledge_consistency)
 import ci_gate  # noqa: E402
 
 FORBIDDEN = load_forbidden()
+BIBLE23 = load_bible23()
+BIBLE37 = load_bible37()
 
 
 # ---------- UNWIRE-GUARD (audit G2 vòng 1: gỡ stage 29 test vẫn xanh -> lỗ) ----------
@@ -55,9 +63,91 @@ def test_real_locked_roster_zero_violations():
     assert w == []
 
 
+def test_real_locked_roster_zero_violations_c1_to_c5():
+    """Sau flip planned->exists (Mr.Long ký 2026-07-03): C4/C5 chạy thật, vẫn 0 violation."""
+    v, w = validate(_real_passengers(), FORBIDDEN, BIBLE23, BIBLE37)
+    assert v == [], f"roster LOCK phải 0 violation C1-C5, got: {v[:5]}"
+    assert w == []
+
+
 def test_synthetic_valid_passenger_clean():
     v, w = validate(_base(), FORBIDDEN)
     assert v == [] and w == []
+
+
+# ---------- C4/C5 (bật sau Mr.Long ký bible/37 v2.1 + bible/23 v1.1) ----------
+
+def test_c4_bible23_version_signed():
+    assert str(BIBLE23.get('version', '')).startswith('1.1'), \
+        'bible/23 phải v1.1 (naming framework đã ký) để C4 hoạt động'
+
+
+def test_c4_all_4_naming_rules_present():
+    rules = BIBLE23['RULES']
+    for rid in ['rule_06_region_match', 'rule_07_generation_match',
+                'rule_08_culture_belief', 'rule_09_vietnamese_purity']:
+        assert rid in rules, f'thiếu {rid} trong bible/23 v1.1'
+
+
+def test_c4_mutation_missing_rule_bites():
+    b23 = copy.deepcopy(BIBLE23)
+    del b23['RULES']['rule_06_region_match']
+    errs = check_c4_naming_framework(b23, [])
+    assert any('rule_06_region_match' in e for e in errs), errs
+
+
+def test_c4_mutation_region_without_style_bites():
+    """Roster dùng vùng KHÔNG có style_by_region khai -> C4 FAIL."""
+    errs = check_c4_naming_framework(BIBLE23, [{'id': 'PAS_X', 'voice': {'region_dialect': 'tay_bac_fake'}}])
+    assert any('tay_bac_fake' in e for e in errs), errs
+
+
+def test_c4_mutation_unsigned_version_bites():
+    b23 = copy.deepcopy(BIBLE23)
+    b23['version'] = 1.0
+    errs = check_c4_naming_framework(b23, [])
+    assert any("chưa v1.1" in e for e in errs), errs
+
+
+def test_c5_bible37_version_signed():
+    assert str(BIBLE37['meta'].get('version', '')).startswith('2.1'), \
+        'bible/37 phải v2.1 (g2_extension đã ký) để C5 hoạt động'
+
+
+def test_c5_g2_extension_sections_present():
+    g2 = BIBLE37['g2_extension']
+    for key in ('knowledge', 'reveal_permission', 'continuity_risk'):
+        assert key in g2, f'thiếu g2_extension.{key} trong bible/37 v2.1'
+
+
+def test_c5_mutation_missing_section_bites():
+    b37 = copy.deepcopy(BIBLE37)
+    del b37['g2_extension']['reveal_permission']
+    errs = check_c5_knowledge_consistency(b37, [])
+    assert any('reveal_permission' in e for e in errs), errs
+
+
+def test_c5_mutation_secret_knowledge_without_permission_bites():
+    """Passenger biết fact secrecy=secret nhưng KHÔNG có reveal_permission -> FAIL."""
+    p = [{'id': 'PAS_SECRET', 'knowledge': [{'fact_id': 'FACT_001', 'secrecy': 'secret'}],
+         'reveal_permission': []}]
+    errs = check_c5_knowledge_consistency(BIBLE37, p)
+    assert any('FACT_001' in e and 'PAS_SECRET' in e for e in errs), errs
+
+
+def test_c5_secret_knowledge_with_matching_permission_clean():
+    """Có reveal_permission khớp fact_id -> KHÔNG FAIL (đối chứng dương)."""
+    p = [{'id': 'PAS_OK', 'knowledge': [{'fact_id': 'FACT_002', 'secrecy': 'secret'}],
+         'reveal_permission': [{'fact_id': 'FACT_002', 'permission': 'never'}]}]
+    errs = check_c5_knowledge_consistency(BIBLE37, p)
+    assert errs == [], errs
+
+
+def test_c5_mutation_unsigned_version_bites():
+    b37 = copy.deepcopy(BIBLE37)
+    b37['meta']['version'] = 2.0
+    errs = check_c5_knowledge_consistency(b37, [])
+    assert any("chưa v2.1" in e for e in errs), errs
 
 
 # ---------- MUTATIONS (mỗi cái phải CẮN với violation cụ thể) ----------

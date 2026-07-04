@@ -167,40 +167,26 @@ domains:
       - {facet_id: fear, desc: "Noi so nhan vat (TACH RO tu psyche — truong 'fear' co san trong list psyche)", data_type: scalar,
          sot: {status: exists, path: bible/37_character_schema.yaml, key: tier_1_mandatory.psyche}}
       - {facet_id: knowledge, desc: "Nhan vat BIET gi — QUAN TRONG NHAT truyen dai tap: CAM biet bi mat chua reveal (nen QA gate G2)", data_type: list,
-         sot: {status: planned, planned_path: governance/blueprint/schemas/character_ext_schema.yaml, owner: character,
-               reason_not_exists_yet: "bible/37 chua co truong knowledge; data ky vao bible/37 v1.1 tai G2 (file dang ton tai — khong khai planned_path vao no)", target_milestone: M1_canon_managers,
-               blocking_dependency: "Mr.Long ky bible/37 v1.1 tai G2"}}
+         sot: {status: exists, path: governance/blueprint/schemas/character_ext_schema.yaml, key: knowledge}}
       - {facet_id: reveal_permission, desc: "PERMISSION lo bi mat (character OWN) — TIMING lo tap nao = story_planner reveal_curve, 2 chu CAM gop", data_type: mapping,
-         sot: {status: planned, planned_path: governance/blueprint/schemas/character_ext_schema.yaml, owner: character,
-               reason_not_exists_yet: "bible/37 chua co truong reveal_permission", target_milestone: M1_canon_managers,
-               blocking_dependency: "Mr.Long ky bible/37 v1.1 tai G2"}}
+         sot: {status: exists, path: governance/blueprint/schemas/character_ext_schema.yaml, key: reveal_permission}}
       - {facet_id: audit_gate, desc: "Completeness gate G2 (episode_completeness + render_gate_lines) — enforcer dang chay that", data_type: gate,
          sot: {status: exists, path: tools/character_manager.py}}
       - {facet_id: continuity_risk, desc: "Co rui ro continuity: da-chet/mat-tich/doi-ten/bi-nhap/biet-bi-mat — qa_runtime doc", data_type: flags,
-         sot: {status: planned, planned_path: governance/blueprint/schemas/character_ext_schema.yaml, owner: character,
-               reason_not_exists_yet: "Co tong hop chua co truong rieng (alive_status/canon_lock moi phu 1 phan)", target_milestone: M1_canon_managers,
-               blocking_dependency: "Mr.Long ky bible/37 v1.1 tai G2"}}
+         sot: {status: exists, path: governance/blueprint/schemas/character_ext_schema.yaml, key: continuity_risk}}
       - {facet_id: trauma_backstory_lock, desc: "Khoa canon qua khu — AI CAM bia them backstory (truong canon_lock co san modules_v2)", data_type: lock,
          sot: {status: exists, path: bible/37_character_schema.yaml, key: modules_v2.canon_lock}}
       # ---- identity.naming (reconcile bible/23 IMMUTABLE + 4 rule mo rong planned) ----
       - {facet_id: naming_rules, desc: "4 rule hien co bible/23: 2-am-tiet dep / cam-trung-tu toan cuc / pool >=100 / ne recurring", data_type: mapping,
          sot: {status: exists, path: bible/23_passenger_naming.yaml, key: RULES}}
       - {facet_id: naming_region, desc: "TEN GAN QUE (mirror 'giong gan que' R206): Bac co dien / Trung-Hue Dieu-Ton Nu / Nam thu-danh Ut-Tu-Sau", data_type: rule,
-         sot: {status: planned, planned_path: governance/blueprint/schemas/naming_extension_rules.yaml, owner: character,
-               reason_not_exists_yet: "bible/23 hien CHUA co rule region; pool cu the Mr.Long ky bible/23 v1.1 tai G2", target_milestone: M1_canon_managers,
-               blocking_dependency: "Mr.Long ky bible/23 v1.1 tai G2"}}
+         sot: {status: exists, path: governance/blueprint/schemas/naming_extension_rules.yaml, key: RULES.rule_06_region_match}}
       - {facet_id: naming_generation, desc: "Tuoi <-> thoi ten (58 tuoi sinh ~196x mang ten thoi do, CAM ten trend tre)", data_type: rule,
-         sot: {status: planned, planned_path: governance/blueprint/schemas/naming_extension_rules.yaml, owner: character,
-               reason_not_exists_yet: "bible/23 chua co rule generation", target_milestone: M1_canon_managers,
-               blocking_dependency: "Mr.Long ky bible/23 v1.1 tai G2"}}
+         sot: {status: exists, path: governance/blueprint/schemas/naming_extension_rules.yaml, key: RULES.rule_07_generation_match}}
       - {facet_id: naming_culture, desc: "Ton giao/tin nguong anh huong ten (Phat tu Dieu/Minh; Cong giao ten thanh) — lien ket facet belief", data_type: rule,
-         sot: {status: planned, planned_path: governance/blueprint/schemas/naming_extension_rules.yaml, owner: character,
-               reason_not_exists_yet: "bible/23 chua co rule culture", target_milestone: M1_canon_managers,
-               blocking_dependency: "Mr.Long ky bible/23 v1.1 tai G2"}}
+         sot: {status: exists, path: governance/blueprint/schemas/naming_extension_rules.yaml, key: RULES.rule_08_culture_belief}}
       - {facet_id: naming_vietnamese, desc: "Giu chuan thuan Viet dep (rule_01 co san) + CAM ten lai/ten game/ten phi thuc", data_type: rule,
-         sot: {status: planned, planned_path: governance/blueprint/schemas/naming_extension_rules.yaml, owner: character,
-               reason_not_exists_yet: "Phan mo rong CAM-lai/game chua co trong bible/23", target_milestone: M1_canon_managers,
-               blocking_dependency: "Mr.Long ky bible/23 v1.1 tai G2"}}
+         sot: {status: exists, path: governance/blueprint/schemas/naming_extension_rules.yaml, key: RULES.rule_09_vietnamese_purity}}
     entities: [passenger_100, recurring_char]
     invariants:
       - {rule: "1 passenger = dung 1 voice profile; thoai phai khop profile",
