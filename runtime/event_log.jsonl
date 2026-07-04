@@ -1,0 +1,2 @@
+{"ts": "2026-07-04T14:48:57.480118+00:00", "ep_id": "ep_smoke", "event": "smoke_cli", "from_state": "queued", "to_state": "running", "gpu": "NVIDIA GeForce RTX 3060", "duration_sec": null}
+{"ts": "2026-07-04T14:48:57.641210+00:00", "ep_id": "ep_smoke", "event": "smoke_cli", "from_state": "running", "to_state": "done", "gpu": "NVIDIA GeForce RTX 3060", "duration_sec": 0.064}
