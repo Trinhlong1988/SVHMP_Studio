@@ -54,6 +54,16 @@ KHÔNG phải branch `main` dùng chung — vì bất kỳ worktree nào khác c
 thể vô tình publish nó. Áp dụng: nội dung "chờ Mr.Long duyệt trước khi lên chung" PHẢI commit trên
 branch cách ly tên riêng, không rebase/để trên `main` dù chỉ tạm thời.
 
+## G8 — Tool quét trùng-ID bằng regex phải liệt kê ĐỦ mọi quy ước đặt tên đang dùng thật
+`check_rule_id_free.py` chỉ coi `^R{N}_xxx:` và `- id: R{N}` là "định nghĩa" — bỏ sót quy ước
+`rule_R{N}_xxx:` (76/123 rule bible/00 dùng dạng này) → 2 dup-key THẬT (R142, R143 — cùng literal
+key lặp 2 lần, `yaml.safe_load` âm thầm nuốt bản đầu) lọt qua `--all` VÀ qua `--staged` (guard sống
+trong pre-commit hook) suốt nhiều tuần, chỉ lộ khi 1 checker khác (BP7, dùng loader nghiêm ngặt hơn)
+tình cờ raise lỗi khi load toàn file. **Bài học:** khi viết tool quét-trùng bằng regex (không parse
+yaml, vì chính yaml.safe_load là nạn nhân), phải liệt kê ĐỦ mọi biến thể đặt tên đang tồn tại trên
+disk (`grep -c "^X_" file` vs `grep -c "^prefix_X_" file` — so cả 2 con số), không chỉ theo docstring
+mô tả "4 format" — docstring có thể lạc hậu so với thực tế file đã tăng trưởng.
+
 ## Nguồn cảm hứng
 So sánh với Hermes Agent (Nous Research, 4/7): pattern "skill file agent tự viết, mọi lần gọi lại
 đọc được" đúng hướng nhưng KHÔNG áp dụng "tự viết không kiểm duyệt" — file này làm thủ công, review
