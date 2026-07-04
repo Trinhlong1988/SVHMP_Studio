@@ -16,8 +16,9 @@ claims:
     status: released
   g2_character:
     claimed_at: '2026-07-05T01:32:22'
+    released_at: '2026-07-05T02:04:20'
     session: KIEM_DUYET
-    status: active
+    status: released
   g4_world:
     claimed_at: '2026-07-04T23:55:53'
     session: CMD_BUILD
