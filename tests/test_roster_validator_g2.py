@@ -20,7 +20,7 @@ SVHMP = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(SVHMP / 'tools'))
 from roster_validator import (  # noqa: E402
     validate, load_forbidden, load_bible23, load_bible37,
-    check_c4_naming_framework, check_c5_knowledge_consistency)
+    check_c4_naming_framework, check_c4b_vietnamese_purity, check_c5_knowledge_consistency)
 import ci_gate  # noqa: E402
 
 FORBIDDEN = load_forbidden()
@@ -148,6 +148,53 @@ def test_c5_mutation_unsigned_version_bites():
     b37['meta']['version'] = 2.0
     errs = check_c5_knowledge_consistency(b37, [])
     assert any("chưa v2.1" in e for e in errs), errs
+
+
+# ---------- C4b rule_09 content-check (Mr.Long lệnh 4/7 — "Jenny Trần phải đỏ") ----------
+
+def test_c4b_lai_western_name_jenny_bites():
+    """Đòn Mr.Long chỉ định: 'Jenny Trần' PHẢI đỏ."""
+    errs = check_c4b_vietnamese_purity([{'id': 'PAS_X', 'char_name': 'Jenny Trần'}])
+    assert any('C4b' in e and 'rule_09' in e for e in errs), errs
+
+
+def test_c4b_game_pattern_name_bites():
+    errs = check_c4b_vietnamese_purity([{'id': 'PAS_X', 'char_name': 'Thục Dragon'}])
+    assert any('C4b' in e and 'pattern' in e for e in errs), errs
+
+
+def test_c4b_foreign_charset_name_bites():
+    """Ky tu ngoai bang chu cai Viet (vd Cyrillic) -> FAIL charset."""
+    errs = check_c4b_vietnamese_purity([{'id': 'PAS_X', 'char_name': 'Thục Ыа'}])
+    assert any('C4b' in e and 'charset' in e for e in errs), errs
+
+
+def test_c4b_valid_vietnamese_diacritics_clean():
+    """Regression cho bug charset liệt-kê-tay từng thiếu ú/ý (false-positive
+    Phú Quý / Ánh Thúy) — tên dấu đầy đủ PHẢI sạch."""
+    for name in ('Phú Quý', 'Ánh Thúy', 'Thoa Lý'):
+        errs = check_c4b_vietnamese_purity([{'id': 'PAS_X', 'char_name': name}])
+        assert errs == [], (name, errs)
+
+
+def test_c4b_real_roster_zero_violation_no_false_positive():
+    """Roster LOCK 100 passenger phải 0 violation C4b (không quá-nhạy)."""
+    data = yaml.safe_load((SVHMP / 'runtime' / 'passenger_roster_100.yaml')
+                          .read_text(encoding='utf-8'))
+    errs = check_c4b_vietnamese_purity(data['passengers'])
+    assert errs == [], errs[:5]
+
+
+def test_c4b_wired_into_validate():
+    """C4b phai chay trong validate() ngay ca khi khong truyen bible23/bible37
+    (content-check khong phu thuoc bible da ky)."""
+    p = [{'id': 'PAS_X', 'char_name': 'Jenny Trần', 'gender': 'nu',
+         'regret_sub_archetype': 'REG_FAM_001', 'haunting_symbol': 'OBJ_TEST',
+         'age_range': '26-35', 'life_status': 'da_mat',
+         'voice': {'region_dialect': 'bac', 'hometown': 'Hà Nội', 'pronoun_system': 'tôi'},
+         'death': {'type': 'tai_nan'}}]
+    v, _ = validate(p, FORBIDDEN)
+    assert any('C4b' in x for x in v), v
 
 
 # ---------- MUTATIONS (mỗi cái phải CẮN với violation cụ thể) ----------

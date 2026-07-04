@@ -17,6 +17,11 @@ CHECKS:
      2026-07-03): KHUNG check — bible/23 v1.1 phải có đủ 4 rule + roster region
      dùng phải có style_by_region khai (structural). Pool cụ thể theo vùng CHƯA
      ký (riêng hybrid classification, PING) — KHÔNG kiểm content-pool tới khi ký.
+  C4b rule_09 vietnamese_purity CONTENT-CHECK (Mr.Long lệnh 4/7, sau C4 landed
+     chỉ structural): charset Unicode-range (Latin-1 Supplement + Extended-A/B +
+     Extended Additional — phủ mọi tổ hợp dấu Việt) + blacklist tên lai/game/
+     teencode trên CHÍNH char_name — machine-checkable thật, không cần pool
+     (khác C4 rule_06-08 vẫn chờ pool). "Jenny Trần" phải FAIL.
   C5 knowledge↔reveal_permission (bible/37 v2.1 — Mr.Long ký 2026-07-03): bible
      phải có đủ g2_extension section; MỌI passenger có fact secrecy=secret PHẢI
      có entry reveal_permission tương ứng (hiện roster CHƯA có field per-passenger
@@ -27,6 +32,7 @@ Exit: violation (C1-C5) -> 1; sạch -> 0. --strict: WARN-class cũng fail (B4 b
 khi fill đạt ngưỡng Tier1 100% / Tier2 >=90% / recurring 100%).
 """
 import argparse
+import re
 import sys
 from pathlib import Path
 
@@ -46,6 +52,43 @@ TIER1_TOP = ['char_name', 'gender', 'regret_sub_archetype', 'haunting_symbol']
 VOICE_REQ = ['region_dialect', 'hometown', 'pronoun_system']
 NAMING_RULES_REQUIRED = ['rule_06_region_match', 'rule_07_generation_match',
                          'rule_08_culture_belief', 'rule_09_vietnamese_purity']
+
+# C4b rule_09 (vietnamese_purity, content-check thật — Mr.Long lenh 4/7): charset
+# dung UNICODE CODEPOINT RANGE (khong liet ke tay tung ky tu — lan dau liet ke tay
+# bo sot 'ú'/'ý' lam false-positive 'Phú Quý'/'Ánh Thúy', da fix bang range) —
+# Latin-1 Supplement (À-ÿ) + Extended-A/B (Ā-ɏ, phu ơ/ư) + Extended Additional
+# (Ḁ-ỿ, phu to hop dau VN: sac/huyen/hoi/nga/nang). KHONG dung range tho À-ỿ vi
+# se lot ca Cyrillic/Hy Lap nam giua 2 block Latin do.
+_VN_CHARSET_RE = re.compile(r"^[A-Za-zÀ-ÿĀ-ɏḀ-ỿ\s]+$")
+_LAI_GAME_PATTERNS = [
+    r'\b(jenny|kevin|kelly|amy|david|john|mary|anna)\b',   # ten lai pho bien
+    r'\b(dragon|zed|shadow|blade|phoenix|angel|devil)\b',   # ten game/phi thuc
+    r'\d',                                                   # teencode so xen chu
+]
+
+
+def check_vietnamese_purity_content(name):
+    """C4b rule_09: FAIL-class content-check that tren char_name. Tra list ly do
+    (rong = sach)."""
+    reasons = []
+    if not _VN_CHARSET_RE.match(name or ''):
+        reasons.append('charset ngoai bang chu cai Viet (nghi ten lai/ky tu la)')
+    low = (name or '').lower()
+    for pat in _LAI_GAME_PATTERNS:
+        if re.search(pat, low):
+            reasons.append(f'khop pattern lai/game/teencode cam ({pat})')
+    return reasons
+
+
+def check_c4b_vietnamese_purity(passengers):
+    """C4b — content-check rule_09 tren TOAN BO passenger (khac C4 structural)."""
+    errs = []
+    for p in passengers:
+        pid = p.get('id', '?')
+        name = p.get('char_name', '') or ''
+        for reason in check_vietnamese_purity_content(name):
+            errs.append(f"C4b {pid}: '{name}' vi phạm rule_09 vietnamese_purity — {reason}")
+    return errs
 
 
 def load_forbidden():
@@ -152,6 +195,7 @@ def validate(passengers, forbidden, bible23=None, bible37=None):
 
     if bible23 is not None:
         violations += check_c4_naming_framework(bible23, passengers)
+    violations += check_c4b_vietnamese_purity(passengers)
     if bible37 is not None:
         violations += check_c5_knowledge_consistency(bible37, passengers)
 
@@ -176,8 +220,8 @@ def main(argv=None):
         print(f"  [FAIL] {v}")
     for w in warns:
         print(f"  [WARN] {w}")
-    print(f"  C1-C5 (naming + quê↔giọng + tier1 + naming-framework + knowledge↔reveal): "
-          f"{len(violations)} violation, {len(warns)} warn")
+    print(f"  C1-C5 (naming + quê↔giọng + tier1 + naming-framework + rule_09-content + "
+          f"knowledge↔reveal): {len(violations)} violation, {len(warns)} warn")
 
     fail = bool(violations) or (args.strict and bool(warns))
     print(f"=== {'FAIL' if fail else 'PASS (C1-C5)'} ===")
