@@ -1,0 +1,78 @@
+# BP8 GOLDEN OUTPUT v1.0.0 — chuan nghiem thu Production (TASK_BP8 deliverable 2)
+# R196 TOI THUONG: Engineering PASS != Production PASS. Production evidence LUON
+# override Engineering evidence. CHI Golden Production Output cho phep Freeze/Release.
+# CAM dung "complete/done/100% hoan thanh" cho module chua Production validated.
+#
+# GHI CHU KY THUAT (4/7): bible/31_golden_samples.yaml hien co 1 loi cu phap YAML
+# (dong 113, da bao kiem duyet/Mr.Long, cho fix "per Mr.Long authorization") khien
+# TOAN FILE khong the parse duoc bang bat ky YAML loader nao (khong rieng loader
+# strict). File nay vi vay tham chieu bible/31 KHONG kem `key:` (chi xac nhan file
+# TON TAI tren dia — Path.exists, giong cach cac facet exists-khong-key khac trong
+# BP2/BP7) — TRANH claim resolve mot key cu the ma hien khong verify duoc. Khi
+# bible/31 duoc fix, co the amendment them `key:` cu the (RFC nhe, khong doi cau
+# truc file nay).
+
+meta:
+  version: 1.0.0
+  pack: bp8_production
+  status: candidate
+  owner_domain: production
+  r196_law: |
+    Golden = bang chung Production THAT (it nhat 1 lan render production that,
+    KHONG phai chi Engineering/unit-test). golden_output nay CHI dinh FORMAT tieu
+    chi (ten metric + detector tro toi) — SO NGUONG CU THE khong duoc hardcode o
+    day (mirror R195/BP6): so that phai calibrate tu chinh golden reference, ghi
+    lai trong bible/31 (hoac ke thua) khi co Production PASS moi.
+  golden_reference:
+    - {status: exists, path: bible/31_golden_samples.yaml}   # KHONG key (xem ghi chu tren)
+    - {status: exists, path: output/ep_01/episode_golden_text.md}
+
+# ============================================================
+# TIEU CHI FORMAT (moi tieu chi TRO detector THAT — khong bia so nguong)
+# ============================================================
+criteria:
+  - criterion_id: logic_score
+    desc: "Logic consistency score (fact/timeline/reveal-order) tren golden text"
+    detector: {status: exists, path: tools/publish_score.py}
+    threshold_source: "calibrate tu bible/31 golden_text_ep01.publish_score.Logic (KHONG hardcode o day)"
+  - criterion_id: language_score
+    desc: "Language quality score (VNQA + anti-slop) tren golden text"
+    detector: {status: exists, path: tools/publish_score.py}
+    threshold_source: "calibrate tu bible/31 golden_text_ep01.publish_score.Language"
+  - criterion_id: tts_score
+    desc: "TTS readiness score (pronunciation/pause markers) tren golden text"
+    detector: {status: exists, path: tools/publish_score.py}
+    threshold_source: "calibrate tu bible/31 golden_text_ep01.publish_score.TTS"
+  - criterion_id: boundary_artifact
+    desc: "R188 boundary artifact detection (chunk-splice click/pop)"
+    detector: {status: exists, path: tools/qa_boundary_artifact.py}
+    threshold_source: "calibrate tu golden audio render (R196 — cho EP01 golden_audio du dieu kien)"
+  - criterion_id: breath_artifact
+    desc: "R189 breath artifact detection (hoi tho khong tu nhien giua cau)"
+    detector: {status: exists, path: tools/qa_breath_artifact.py}
+    threshold_source: "calibrate tu golden audio render (R196)"
+  - criterion_id: prosody_collapse
+    desc: "R190 prosody collapse detection (pitch/energy drop bat thuong)"
+    detector: {status: exists, path: tools/qa_prosody_collapse.py}
+    threshold_source: "calibrate tu golden audio render (R196)"
+  - criterion_id: onset_artifact
+    desc: "R190b onset artifact detection (tieng dong dau chunk bat thuong)"
+    detector: {status: exists, path: tools/qa_onset_artifact.py}
+    threshold_source: "calibrate tu golden audio render (R196)"
+  - criterion_id: dialogue_identity
+    desc: "R191 dialogue speaker identity consistency (giong nhan vat nhat quan)"
+    detector: {status: exists, path: tools/qa_dialogue_identity.py}
+    threshold_source: "calibrate tu golden audio render (R196)"
+
+# ============================================================
+# INVARIANT (validator enforce)
+# ============================================================
+invariants:
+  - rule: "File nay KHONG duoc chua so nguong hardcode (int/float) — chi threshold_source dang MO TA nguon calibrate, khong phai gia tri. Scan TOAN FILE (mirror R195/BP6, tai su dung _numeric_leaks)"
+    enforcer: {status: planned, planned_path: tools/bp8_production_check.py, owner: production,
+              reason_not_exists_yet: "Dang xay dung cung BP8", target_milestone: M4_video_publisher,
+              blocking_dependency: "BP8 candidate build"}
+  - rule: "Moi criterion.detector.status=exists PHAI ton tai that tren dia (chong phantom detector)"
+    enforcer: {status: planned, planned_path: tools/bp8_production_check.py, owner: production,
+              reason_not_exists_yet: "Dang xay dung cung BP8", target_milestone: M4_video_publisher,
+              blocking_dependency: "BP8 candidate build"}

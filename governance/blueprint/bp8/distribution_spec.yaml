@@ -1,0 +1,69 @@
+# BP8 DISTRIBUTION SPEC v1.0.0 — video/publisher/analytics contract (TASK_BP8 deliverable 3)
+# RECONCILE: video/publisher = planned (khop BP4 hop 8/9, chua co pipeline that — audio-first,
+# chua co Golden Output R196 lam nguon). analytics = exists (tools/analytics_populate.py that)
+# nhung INPUT cua no (metrics tu publish_artifact) van planned vi publisher chua chay —
+# hien analytics chay tren du lieu nhap tay/report co san, KHONG tu dong tu publish_artifact.
+
+meta:
+  version: 1.0.0
+  pack: bp8_production
+  status: candidate
+  owner_domains: [video, publisher, analytics]
+  reconcile_note: |
+    video/publisher planned_path/status COPY CHINH XAC tu bp4/runtime_flow.yaml hop 8/9
+    (KHONG doi). analytics KHONG phai domain rieng trong BP0/BP2 inventory — xem la
+    cong cu ho tro publisher (owner: publisher), dung tam thoi doc lap vi publisher
+    pipeline chua hinh thanh.
+
+# ============================================================
+# VIDEO (planned — mirror BP4 hop 8, audio-first nen chua khoi cong)
+# ============================================================
+video:
+  status: planned
+  planned_path: tools/video_builder.py
+  owner: video
+  input: "golden audio (production Golden Output R196)"
+  output: video_master
+  reason_not_exists_yet: "Audio-first; chua co golden output R196 lam nguon dung"
+  target_milestone: M4_video_publisher
+  blocking_dependency: "production Golden Output (R196) — it nhat 1 EP Production PASS that"
+  contract_note: "Chua co dinh dang video cu the — se field-hoa khi khoi cong M4 (RFC rieng, KHONG bia truoc)"
+
+# ============================================================
+# PUBLISHER (planned — mirror BP4 hop 9)
+# ============================================================
+publisher:
+  status: planned
+  planned_path: tools/publisher_manager.py
+  owner: publisher
+  input: video_master
+  output: publish_artifact
+  reason_not_exists_yet: "Chua co artifact du dieu kien dang (phu thuoc video M4)"
+  target_milestone: M4_video_publisher
+  blocking_dependency: "video pipeline (M4) + Mr.Long duyet kenh phan phoi"
+  contract_note: "Kenh phan phoi CHUA duoc Mr.Long chot (YouTube/TikTok/khac) — KHONG bia truoc"
+
+# ============================================================
+# ANALYTICS (exists — cong cu THAT nhung dau vao tu publish_artifact van planned)
+# ============================================================
+analytics:
+  status: exists
+  path: tools/analytics_populate.py
+  owner: publisher   # khong phai domain rieng BP0/BP2 — cong cu ho tro publisher
+  input: "metrics + comments (hien nhap tay/report co san — CHUA tu dong tu publish_artifact vi publisher planned)"
+  output: "ep_entry (build_ep_entry) ghi vao analytics store"
+  functions_verified: [build_ep_entry, populate, cli]
+  gap_note: "Khi publisher (M4) hinh thanh, can noi INPUT tu publish_artifact THAT thay vi nhap tay — RFC rieng luc do, KHONG bia ket noi truoc"
+
+# ============================================================
+# INVARIANT (validator enforce)
+# ============================================================
+invariants:
+  - rule: "video/publisher status/planned_path PHAI KHOP CHINH XAC bp4/runtime_flow.yaml hop 8/9 — lech = FAIL"
+    enforcer: {status: planned, planned_path: tools/bp8_production_check.py, owner: production,
+              reason_not_exists_yet: "Dang xay dung cung BP8", target_milestone: M4_video_publisher,
+              blocking_dependency: "BP8 candidate build"}
+  - rule: "analytics.status=exists path PHAI ton tai tren dia (chong phantom)"
+    enforcer: {status: planned, planned_path: tools/bp8_production_check.py, owner: production,
+              reason_not_exists_yet: "Dang xay dung cung BP8", target_milestone: M4_video_publisher,
+              blocking_dependency: "BP8 candidate build"}

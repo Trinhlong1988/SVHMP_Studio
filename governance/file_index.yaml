@@ -1232,5 +1232,33 @@ files:
     domain: bp7_narrative
     status: active
     tier: 0
+  governance/blueprint/bp8/00_production.md:
+    domain: bp8_production
+    status: active
+    tier: 0
+  governance/blueprint/bp8/render_chain.yaml:
+    domain: bp8_production
+    status: active
+    tier: 0
+  governance/blueprint/bp8/golden_output.yaml:
+    domain: bp8_production
+    status: active
+    tier: 0
+  governance/blueprint/bp8/distribution_spec.yaml:
+    domain: bp8_production
+    status: active
+    tier: 0
+  tools/bp8_production_check.py:
+    domain: bp8_production
+    status: active
+    tier: 0
+  tests/test_bp8_production.py:
+    domain: bp8_production
+    status: active
+    tier: 0
+  reports/BP8_REPORT.md:
+    domain: bp8_production
+    status: active
+    tier: 0
 generated_by: tools/registry_triage.py
-total: 308
+total: 315

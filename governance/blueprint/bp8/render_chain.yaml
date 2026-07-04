@@ -1,0 +1,128 @@
+# BP8 RENDER CHAIN v1.0.0 — formalize chuoi render->phan phoi DANG CHAY THAT
+# (TASK_BP8_PRODUCTION deliverable 1). RECONCILE bat buoc: TRO dung
+# governance/blueprint/bp4/runtime_flow.yaml hop 3-9 (da khai FORMAT o BP4,
+# gio do THEM gate + failure_route chi tiet cho tang production). CAM rebuild,
+# CAM ta sai he dang chay — moi status/path COPY CHINH XAC tu BP4 hoac verify
+# lai bang Test-Path/grep that.
+
+meta:
+  version: 1.0.0
+  pack: bp8_production
+  status: candidate            # Builder khong lock/tag — Mr.Long ky sau audit
+  owner_domains: [generator, qa_runtime, tts, audio, production, video, publisher]
+  reconcile_note: |
+    Nguon THAT DUY NHAT cho hop/status/via.path = governance/blueprint/bp4/runtime_flow.yaml
+    (da LOCKED v1.0). File nay CHI THEM 2 truong BP4 chua co: gate (list ten gate +
+    enforcer thuc thi that) + failure_route (khi stage FAIL thi lam gi). KHONG duoc
+    doi domain/status/path khac BP4 — drift = FAIL (validator doi chieu tung hop).
+
+# ============================================================
+# STAGE (mirror CHINH XAC BP4 runtime_flow hop 3-9 — pipeline sinh->render->phoi)
+# BP8 KHONG lam lai hop 1-2 (story_planner/decision_engine — thuoc BP6/BP7 dang planned)
+# ============================================================
+stages:
+  - stage_id: generator
+    bp4_hop: 3
+    input: "budget_sheet + canon (world/character/object/dialogue/event)"
+    output: episode_md
+    tool: {status: exists, path: prompts/ep_scaffold_template.md}
+    note: "Dang chay THAT dang prompt-based (nguoi + LLM) — EP01 episode.md ton tai; tool dong goi = M2 (mirror BP4)"
+    gate: []   # generator chua co gate rieng — gate dau tien o qa_runtime (hop ke)
+    failure_route: "N/A — chua co tool dong goi de bat loi tu dong (BP4 M2)"
+
+  - stage_id: qa_runtime
+    bp4_hop: 4
+    input: episode_md
+    output: qa_verdict
+    tool: {status: exists, path: tools/svhmp_preflight_qa.py}
+    gate:
+      - gate_id: FULL_TEXT_GATE
+        desc: "R197 TOI THUONG — qa_eol_diacritic + FULL stack text QA truoc render"
+        enforcement_mode: automated
+        wired_evidence: {status: exists, path: tools/svhmp_preflight_qa.py, grep_evidence: "goi subprocess qa_eol_diacritic.py (line 171), print [FULL_TEXT_GATE] (line 169)"}
+      - gate_id: G2_CHARACTER_GATE_PREFLIGHT
+        desc: "Character DoD completeness — nguon ban dau (truoc khi wire vao render hop ke)"
+        enforcement_mode: automated
+        wired_evidence: {status: exists, path: tools/svhmp_preflight_qa.py, grep_evidence: "import CharacterRegistry + episode_completeness/render_gate_lines (line 199-205)"}
+    failure_route: "QA FAIL -> KHONG chuyen sang tts (R197 MUST — khong phai Remember)"
+
+  - stage_id: tts
+    bp4_hop: 5
+    input: "spec section json (text da PASS)"
+    output: voice_track
+    tool: {status: exists, path: tools/svhmp_v13_render.py}
+    gate:
+      - gate_id: G2_CHARACTER_GATE_RENDER
+        desc: "Character DoD completeness WIRE THAT vao render entrypoint (WARN-default, --strict-characters -> BLOCK exit 2)"
+        enforcement_mode: automated
+        wired_evidence: {status: exists, path: tools/svhmp_v13_render.py, grep_lines: "339,344"}
+      - gate_id: R90_STAGE1_HARDLOCK
+        desc: "R86 broad text gate STAGE 1 — inline hardlock truoc render, no bypass"
+        enforcement_mode: automated
+        wired_evidence: {status: exists, path: tools/svhmp_v13_render.py, grep_evidence: "print R90 STAGE 1 PASS - render allowed (line 325)"}
+    failure_route: "CHARACTER_GATE STRICT FAIL -> sys.exit(2), render BLOCKED (khong tao voice_track)"
+
+  - stage_id: audio
+    bp4_hop: 6
+    input: voice_track
+    output: audio_mix_qa
+    tool: {status: exists, path: tools/svhmp_audio_qa.py}
+    gate:
+      - gate_id: AUDIO_METRICS_SCAN
+        desc: "R80 transient peak + R76 open-vowel tail + R77 internal silence — scan inline trong chinh tool nay"
+        enforcement_mode: manual   # KHONG tim thay caller .py tu dong nao goi svhmp_audio_qa.py — hien la buoc chay tay/human-in-loop (mirror thuc te du an: AUDIO_QA_REPORT_v100.md la output tay-chay-roi-doc), KHONG bia "automated"
+        wired_evidence: {status: exists, path: tools/svhmp_audio_qa.py, grep_evidence: "scan_bup_transients/scan_overall_peak/scan_tail_residue/scan_internal_silence inline trong file"}
+    failure_route: "audio_mix_qa FAIL (nguoi doc report) -> khong chuyen production (khong co Golden Output tu audio loi)"
+
+  - stage_id: production
+    bp4_hop: 7
+    input: audio_mix_qa
+    output: "golden production output (R196)"
+    tool: {status: exists, path: tools/svhmp_final_verify.py}
+    gate:
+      - gate_id: R41_POST_RENDER_GATE_HARDLOCK
+        desc: "CAM TUYET DOI commit EP neu post_render_gate FAIL bat ky check nao (bible/00 R41)"
+        enforcement_mode: automated
+        wired_evidence: {status: exists, path: tools/git_hook_pre_commit.py, grep_evidence: "goi tools/post_render_gate.py --ep N (line 94), .githooks/pre-commit exec git_hook_pre_commit.py"}
+      - gate_id: SERVER_CI
+        desc: "ci_gate.py chay lai toan bo suite (registry+blueprint+R199-208+G2_roster+pytest) truoc khi cho push"
+        enforcement_mode: automated
+        wired_evidence: {status: exists, path: .githooks/pre-push, grep_evidence: "tools/ci_gate.py (line 17) || BLOCK push"}
+    failure_route: "R41 HARDLOCK -> git pre-commit hook BLOCK commit vat ly; ci_gate FAIL -> pre-push hook BLOCK push vat ly (khong phai chi canh bao)"
+
+  - stage_id: video
+    bp4_hop: 8
+    input: "golden audio"
+    output: video_master
+    tool: {status: planned, planned_path: tools/video_builder.py, owner: video,
+          reason_not_exists_yet: "Audio-first; chua co golden output R196 (mirror BP4)",
+          target_milestone: M4_video_publisher, blocking_dependency: "production Golden Output (R196)"}
+    gate: []   # chua co tool -> chua co gate that de khai (khai gate cho tool planned = bia)
+    failure_route: "N/A — planned, chua co pipeline that de fail"
+
+  - stage_id: publisher
+    bp4_hop: 9
+    input: video_master
+    output: publish_artifact
+    tool: {status: planned, planned_path: tools/publisher_manager.py, owner: publisher,
+          reason_not_exists_yet: "Chua co artifact du dieu kien dang (mirror BP4)",
+          target_milestone: M4_video_publisher, blocking_dependency: "video pipeline (M4) + Mr.Long duyet kenh"}
+    gate: []
+    failure_route: "N/A — planned"
+
+# ============================================================
+# INVARIANTS (validator enforce)
+# ============================================================
+invariants:
+  - rule: "Moi stage.bp4_hop + input/output/tool.status/tool.path (hoac planned_path) PHAI KHOP CHINH XAC governance/blueprint/bp4/runtime_flow.yaml hop tuong ung — lech (drift) = FAIL"
+    enforcer: {status: planned, planned_path: tools/bp8_production_check.py, owner: production,
+              reason_not_exists_yet: "Dang xay dung cung BP8", target_milestone: M4_video_publisher,
+              blocking_dependency: "BP8 candidate build"}
+  - rule: "Gate enforcement_mode=automated PHAI co grep_evidence tro diem goi THAT trong file nguon (named != enforced — khong duoc chi 'khai ten' ma khong co code goi that). enforcement_mode=manual duoc phep KHONG co grep_evidence (buoc nguoi chay tay, khong bia tu dong)."
+    enforcer: {status: planned, planned_path: tools/bp8_production_check.py, owner: production,
+              reason_not_exists_yet: "Dang xay dung cung BP8", target_milestone: M4_video_publisher,
+              blocking_dependency: "BP8 candidate build"}
+  - rule: "Stage tool.status=exists nhung path KHONG ton tai tren dia = TOOL-MA FAIL (chong phantom)"
+    enforcer: {status: planned, planned_path: tools/bp8_production_check.py, owner: production,
+              reason_not_exists_yet: "Dang xay dung cung BP8", target_milestone: M4_video_publisher,
+              blocking_dependency: "BP8 candidate build"}

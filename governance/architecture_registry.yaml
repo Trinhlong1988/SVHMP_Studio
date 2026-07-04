@@ -184,6 +184,13 @@ domains:
       - governance/blueprint/bp7/pacing_format.yaml     # 5 curve_application tro bp6 knob, 0 so hardcode
       - reports/BP7_REPORT.md
     bp7_check: tools/bp7_narrative_check.py   # BP7: component-order-vs-bible01 + facet-ma cultural + numeric-leak/curve-ma pacing
+    bp8_production:
+      - governance/blueprint/bp8/00_production.md
+      - governance/blueprint/bp8/render_chain.yaml       # 7 stage mirror bp4 hop 3-9, gate automated/manual co grep_evidence
+      - governance/blueprint/bp8/golden_output.yaml      # R196 8 tieu chi tro detector that, 0 so hardcode
+      - governance/blueprint/bp8/distribution_spec.yaml  # video/publisher planned mirror bp4, analytics exists
+      - reports/BP8_REPORT.md
+    bp8_check: tools/bp8_production_check.py   # BP8: drift-vs-bp4 + gate named!=enforced + numeric-leak + tool/detector-ma
     tests:
       - tests/test_governance_enforce_r209.py
       - tests/test_artifact_contract_r212.py
@@ -206,6 +213,7 @@ domains:
       - tests/test_bp5_validation.py   # BP5: suite 1-cua (1-tang-fail-exit1/dup-key-moi-tang/unwire-guard/loader-1-impl)
       - tests/test_bp6_decision.py   # BP6: mutation (hardcode-045/knob-13-la/knob-thieu/writable/packet-field-ma/dup-key)
       - tests/test_bp7_narrative.py   # BP7: mutation (reveal-thieu/thu-tu-sai-bible01/cultural-facet-ma/pacing-hardcode/curve-ma/dup-key)
+      - tests/test_bp8_production.py   # BP8: mutation (tool-ma/drift-runtime_flow/gate-auto-caption-ma/hardcode/named-khong-enforced)
     promotion_status: locked   # GOVERNANCE v1.0 (Mr.Long signed 2/7): DU 5 pack locked+tagged, freeze_gate 5/5 moi pack, cross-pack audit nhat quan; tag governance-v1.0
     enterprise_pack_progress:
       pack1_constitution: locked   # FROZEN v1.0 (Mr.Long authorized 2/7): 6 doc 11-element, promotion_guard HANH VI (pre-push+server-CI, battle-tested), test_pack1_docs; tag pack1-constitution-v1.0
@@ -221,6 +229,7 @@ domains:
       bp5_validation: locked   # FROZEN v1.0 (Mr.Long authorized 3/7): suite 1-cua bp0-bp4 wired ci_gate 'blueprint' + unwire-guard + loader-1-impl utf-8-sig chong BOM; audit 7 buoc PASS (mutation 6 don + real-file gate-mode + BOM shot, re-verify 306 test, server-CI xanh 7541f8e); tag bp5-validation-v1.0
       bp6_decision: locked   # FROZEN v1.0 (Mr.Long authorized 4/7): 12 knob R195 no-hardcode + io packet dong; audit 7 buoc 2 vong (bat R195 top-level leak lot qua scan trong-knob, fix full-file scan) + mutation re-verify tren ref sau ca bible R142/R143 fix; registry 0/0/0, suite 5/5, pytest 359; tag bp6-decision-v1.0
       bp7_narrative: locked   # FROZEN v1.0 (Mr.Long authorized 4/7): 6 cap Scene->Act->Episode->Season->Series->Ending (episode tro bible/01) + 7 cultural item (lore_db 0 noi dung, van planned) + 5 curve_application tro bp6 (0 hardcode, full-file scan tu dau); audit 7 buoc PASS (3 don real-file: xoa REVEAL/dup-key cultural deu FAIL dung, bang chung doc-that bible/02 verify dung); registry 0/0/0, pytest 376, server-CI xanh ddb8eaf; tag bp7-narrative-v1.0
+      bp8_production: candidate   # BUILT 4/7: 7 stage mirror bp4 hop 3-9 (LOCKED) + gate 6 automated (grep_evidence xac minh) + 1 manual (audio - khong bia wired); golden_output 8 tieu chi tro detector that, 0 hardcode; distribution video/publisher planned mirror bp4; 19 test mutation. PACK CUOI CHUOI BP-C — lock xong bao kiem duyet FINAL AUDIT BP0-BP8 -> tag system-blueprint-v1.0. Cho audit 7 buoc + Mr.Long ky
     data_contract:
       input: "registry yaml + disk scan"
       output: "gap report"
