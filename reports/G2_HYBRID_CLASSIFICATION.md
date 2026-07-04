@@ -3,7 +3,31 @@
 - Nguồn: `runtime/roster_backfill_draft.yaml` → section `hybrid_classification` (rows) + `name_pool_wave1_proposal`
 - Sinh bởi: máy phân loại (executor) — **NGƯỜI DUYỆT trước khi merge roster**
 - Phạm vi: F1 (41 tên không dùng PAS_ id) — gồm ep_01 (không có passenger_main) + 40 unmatched (ep_11..ep_50)
-- Status: **B3 FILL HOÀN TẤT 37/39 (2026-07-05)** — 37/37 PHẠM đã chốt tên + Tier1 đầy đủ (kể cả signature_object/haunting_symbol, 24 ca cuối vừa fill theo relay Boss). 2 waiver (ep_30/ep_50) vẫn gác lại. **VẪN CHƯA merge vào `passenger_roster_100.yaml`** — xem cảnh báo kiến trúc dưới.
+- Status: **B3 FILL 37/39, đã qua 1 vòng sửa lỗi đối chiếu (2026-07-05)** — 37/37 PHẠM đã chốt tên + Tier1 đầy đủ, nhưng **KHÔNG còn tuyên bố "37/37 hoàn tất" cho phần signature_object** cho tới khi đọc kỹ mục sửa lỗi ngay dưới. 2 waiver (ep_30/ep_50) vẫn gác lại. **VẪN CHƯA merge vào `passenger_roster_100.yaml`** — xem cảnh báo kiến trúc dưới.
+
+## 🔧 SỬA LỖI ĐỐI CHIẾU signature_object (2026-07-05) — Boss spot-check PAS_0126 phát hiện, mở rộng ra cả batch
+**Nguyên nhân gốc (process failure):** mỗi `output/ep_N/episode.md` TỰ KHAI sẵn 1 dòng `signature_object: OBJ_XXX (mô tả)` — khi fill 32 object ở batch2 (đợt trước), tôi KHÔNG đối chiếu dòng này trước khi tự đặt mã GAP_/OBJ_ riêng, dẫn đến nhiều trường hợp trùng lặp ẩn hoặc lệch nội dung.
+
+**Boss spot-check PAS_0126 (ep_25):** `GAP_KINH_PHAN_CHIEU` trùng vật với `OBJ_KINH_NHO` mà ep_25 tự khai (cùng 1 chiếc kính nhỏ phản chiếu, khác tên) — xác nhận đúng, đã đổi thành `GAP_KINH_NHO` để khớp.
+
+**Mở rộng kiểm tra ra toàn bộ 32 entry đã fill object**, phát hiện thêm 7 lỗi NỘI DUNG thật (không chỉ lệch tên):
+| PAS_id | ep | Lỗi | Sửa |
+|---|---|---|---|
+| PAS_0126 | 25 | trùng vật khác tên (kính) | `GAP_KINH_PHAN_CHIEU` → `GAP_KINH_NHO` |
+| PAS_0130 | 29 | ghi "hiến tủy" nhưng vật thật là thẻ đăng ký **hiến máu** | `GAP_THE_HIEN_TUY` → `GAP_THE_HIEN_MAU` |
+| PAS_0113 | 12 | dùng mã đồng hồ **nam** cho nhân vật nữ (văn bản: "đồng hồ xà cừ") | `OBJ_DONG_HO_DEO_TAY_CU` → `GAP_DONG_HO_XA_NU` (bible/12 có `OBJ_DONG_HO_XA_CU` khớp mô tả nhưng đã khóa với ARC_0001/ep_01 — tránh nhận lầm là cùng vật lý, xem RFC #4 dưới) |
+| PAS_0115 | 14 | dùng "khăn tay" (khăn lau) thay vì **khăn quàng cổ** thêu cúc | `OBJ_KHAN_TAY_CU` → `GAP_KHAN_QUANG_THEU_CUC` |
+| PAS_0118 | 17 | dùng mã thư giấy cho vật là **USB** | `OBJ_THU_TAY` → `GAP_USB_THU` |
+| PAS_0140 | 39 | ép "tô cơm" vào object "bát canh chua" (khác món, khác người) | `OBJ_BAT_CANH_CHUA` → `GAP_TO_COM` |
+| PAS_0145 | 44 | ép "khúc chè" (món ngọt) vào "bát canh chua" (món mặn) | `OBJ_BAT_CANH_CHUA` → `GAP_KHUC_CHE` |
+| PAS_0132 | 31 | "hoa cúc" chung chung thay vì đúng loại vật **chậu cúc** | `GAP_HOA_CUC` → `GAP_CHAU_CUC` |
+| PAS_0133 | 32 | sai thuật ngữ "may" (khâu) thay vì **"đan"** (văn bản: "đang đan chăn", "kim đan") | `GAP_CHAN_MAY_DO` → `GAP_CHAN_DAN_DO` |
+
+Còn lại 24 entry: đối chiếu xong, KHÔNG cần đổi mã (phần lớn dùng mã thật bible/12 category-khớp thay vì mirror mã ad-hoc của tập — hợp lệ), chỉ bổ sung ghi chú đối chiếu tường minh.
+
+**PROCESS-FIX (bắt buộc theo R_SUPREME test_process_failure_principle):** thêm test mới `test_object_code_cross_referenced_against_episode_declaration` (`tests/test_roster_backfill_ep11_50.py`) — đọc trực tiếp `output/ep_N/episode.md`, trích dòng `signature_object:` tự khai, bắt buộc mọi entry phải đối chiếu (trùng mã hoặc có nhắc trong note). Test này tự bắt được 5/9 lỗi trên (bao gồm PAS_0126) mà không cần đọc tay lại toàn bộ — chống lặp lại lớp bug này ở các batch tương lai.
+
+**RFC #4 (mới, chưa chặn việc khác — theo đúng tinh thần "không cần chờ RFC"):** đề xuất Mr.Long xem xét bổ sung bible/12 một object đồng-hồ-nữ-vỏ-xà-cừ KHÔNG ràng buộc ARC_0001/ep_01, để các nhân vật nữ khác (như PAS_0113/ep_12) có thể dùng mã thật thay vì GAP_ tạm.
 
 ## ⚠️ CẢNH BÁO KIẾN TRÚC (2026-07-05) — relay "merge vào passenger_roster_100.yaml" CHƯA thực hiện
 Relay Boss yêu cầu "merge vào `passenger_roster_100.yaml` khi xong" — nhưng việc này **mâu thuẫn trực tiếp** với quyết định kiến trúc đã chốt trước đó (AskUserQuestion, Boss chọn "File mở rộng riêng — Recommended"):

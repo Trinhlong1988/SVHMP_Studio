@@ -21,10 +21,7 @@ passengers:
   regret_label: Chia tay vì người mới — chưa kịp nói lời cảm ơn trước khi anh mất
   archetype_fit_note: Gần nhất REG_LOV_003 (chia tay + chưa kịp nói điều cần nói); KHÔNG hoàn toàn khớp — case này là chủ
     động chọn người khác (Tuấn), không phải hiểu lầm, và điều chưa nói là 'cảm ơn' chứ không phải 'xin lỗi'.
-  signature_object: OBJ_DONG_HO_DEO_TAY_CU
-  object_pairing_note: 'Vật thật: đồng hồ xà mặt trắng viền bạc, kim dừng ở giờ hẹn đầu (ep_12:161). OBJ_DONG_HO_DEO_TAY_CU
-    khớp category (đồng hồ) nhưng pairable_pillars khai family/kindness — không phải love_regret; dùng vì không có object
-    đồng-hồ nào khác trong catalog.'
+  signature_object: GAP_DONG_HO_XA_NU
   signature_setting: setting_TBD
   age_range: 36-50
   gender: nu
@@ -43,7 +40,14 @@ passengers:
     type: khong_ro
     pain: Chia tay hôn phu (kỹ sư cầu Long Biên) 1 tháng trước cưới vì yêu người khác; 4 năm sau biết anh mất (sạt lở núi
       công tác) — chưa kịp cảm ơn anh đã không trách
-  haunting_symbol: OBJ_DONG_HO_DEO_TAY_CU
+  haunting_symbol: GAP_DONG_HO_XA_NU
+  object_gap_note: 'Dong ho xa cu mat trang vien bac, Khoi mua tang truoc khi chia tay, kim dung 7:10 gio hen phong van dau
+    (ep_12:159-163). CANH BAO: bible/12 CO OBJ_DONG_HO_XA_CU (dong ho NU vo xa cu, category+gioi tinh khop 100% mo ta nay)
+    NHUNG object nay da used_count=1 last_used_ep=1 voi note ''ARC_0001 carry — Mr.Long pattern key'' (dong ho cua ep_01,
+    Khai Phong -> co gai ao gio xanh) — dung lai code nay se ham y day la CUNG MOT dong ho vat ly voi ep_01 (sai, day la dong
+    ho khac cua nhan vat khac). Dung GAP_DONG_HO_XA_NU thay vi OBJ_DONG_HO_DEO_TAY_CU (sai gioi tinh — code do la ''nam design''
+    theo bible/12) de tranh 2 loai loi cung luc. RFC #4 de xuat Mr.Long: bible/12 can them 1 object dong-ho-xa-cu-nu KHONG
+    rang buoc ARC_0001 rieng, cho cac nhan vat nu khac tai su dung an toan.'
 - id: PAS_0114
   char_name: Chương Dương
   pillar: promise_regret
@@ -54,7 +58,8 @@ passengers:
   signature_object: GAP_HOA_CUC_KHO
   object_gap_note: 'Vật thật: cánh cúc khô giữ từ vườn cha trồng, cha mất vì ung thư phổi (ep_13:167). KHÔNG có object hoa/cây
     cảnh nào trong bible/12 (40 object) — đề xuất RFC bổ sung OBJ_CUC_KHO (''cánh cúc khô ép giấy bản'') cho bible/12 nếu
-    Mr.Long duyệt. Placeholder GAP_* KHÔNG phải mã canon.'
+    Mr.Long duyệt. Placeholder GAP_* KHÔNG phải mã canon. | episode.md tu khai signature_object: OBJ_HOA_CUC_KHO (dong 39)
+    — khop ten voi GAP_HOA_CUC_KHO da chon, xac nhan OBJ_HOA_CUC_KHO khong co trong bible/12 that.'
   signature_setting: setting_TBD
   age_range: 36-50
   gender: nam
@@ -83,8 +88,7 @@ passengers:
     hướng với case này — TỪ CHỐI giúp người lạ cần cấp thiết, họ chết). Chọn REG_KIN_001 là gần nhất về mặt cấu trúc (chết
     + gắn với việc-chưa-làm của người kể). Đề xuất RFC bổ sung REG_KIN_006 'Từ chối giúp người lạ cần cấp thiết — họ chết
     đêm đó' nếu case tương tự lặp lại.
-  signature_object: OBJ_KHAN_TAY_CU
-  object_pairing_note: 'Khớp tốt: khăn tay cũ thêu hoa cúc (ep_14:155), đúng category ''chiếc khăn tay cũ thêu hoa'' của OBJ_KHAN_TAY_CU.'
+  signature_object: GAP_KHAN_QUANG_THEU_CUC
   signature_setting: setting_TBD
   age_range: 51-65
   gender: nu
@@ -103,7 +107,11 @@ passengers:
     type: khong_ro
     pain: 30 năm trước từ chối mua phở cho cụ ăn xin (cụ Mai) vì nghĩ 'hôm khác' — cụ chết đói ngay đêm đó; giữ khăn thêu
       hoa cúc (hoa cụ thích) suốt 30 năm không dùng
-  haunting_symbol: OBJ_KHAN_TAY_CU
+  haunting_symbol: GAP_KHAN_QUANG_THEU_CUC
+  object_gap_note: 'SUA LOI NOI DUNG: la KHAN QUANG CO (khan choang co) co theu hoa cuc goc, mua o cho dat theu rieng cho
+    ba cu Mai (ep_14:155-161), KHONG phai ''khan tay'' (khan tay = khan nho lau tay/mat, khac vat voi khan quang co). Khop
+    voi tu khai cua tap (signature_object: OBJ_KHAN_QUANG_THEU_CUC, dong 39) — xac nhan khong co trong bible/12 that, dung
+    GAP_ thay the.'
 - id: PAS_0117
   char_name: Oanh Duyên
   pillar: family_regret
@@ -114,7 +122,9 @@ passengers:
   signature_object: GAP_CHAU_CUC
   object_gap_note: 'Vật thật: chậu cúc kim ngân mẹ trồng năm xảy ra cãi vã, con chăm lại 8 tháng cho nở (ep_16:163-165). KHÔNG
     có object chậu-cây-cảnh trong bible/12 — đề xuất RFC bổ sung OBJ_CHAU_CUC (''chậu cúc kim ngân của mẹ'') tương tự OBJ_HOA_CUC_KHO
-    ở PAS_0102 (2/5 batch này đều liên quan cúc — nghi mô-típ lặp lại trong nguồn, đáng cân nhắc bổ sung catalog).'
+    ở PAS_0102 (2/5 batch này đều liên quan cúc — nghi mô-típ lặp lại trong nguồn, đáng cân nhắc bổ sung catalog). | episode.md
+    tu khai signature_object: OBJ_CHAU_CUC (dong 39) — khop ten voi GAP_CHAU_CUC da chon, xac nhan OBJ_CHAU_CUC khong co trong
+    bible/12 that.'
   signature_setting: setting_TBD
   age_range: 36-50
   gender: nu
@@ -141,10 +151,7 @@ passengers:
   regret_label: Bạn thân nhắn xin vay tiền chữa ung thư — trì hoãn xoay tiền, bạn mất trước khi kịp giúp
   archetype_fit_note: Gần nhất REG_PRO_006 (bạn thân, không phản hồi kịp lúc bạn cần, bạn mất) — đúng quan hệ 'bạn thân',
     khác chi tiết (tiền chữa bệnh thay vì cuộc gọi giữ liên lạc).
-  signature_object: OBJ_THU_TAY
-  object_pairing_note: 'Vật thật: USB chứa thư bạn viết trước khi mất (ep_17:165-169) — vật lý là USB (kỹ thuật số), không
-    phải giấy, nhưng chức năng tường thuật giống ''thư từ người đã mất'' của OBJ_THU_TAY. Dùng OBJ_THU_TAY làm concept gần
-    nhất, ghi rõ vật lý khác biệt.'
+  signature_object: GAP_USB_THU
   signature_setting: setting_TBD
   age_range: 36-50
   gender: nam
@@ -163,7 +170,11 @@ passengers:
     type: khong_ro
     pain: Bạn thân từ tiểu học (Toàn) nhắn tin xin vay 200 triệu chữa ung thư gan — trì hoãn vì bận họp, chỉ xoay được 100
       triệu — bạn mất trước khi kịp gửi; giữ USB chứa thư bạn viết trước khi mất suốt 3 năm
-  haunting_symbol: OBJ_THU_TAY
+  haunting_symbol: GAP_USB_THU
+  object_gap_note: 'SUA LOI PHUONG TIEN: la USB chua thu Toan viet truoc khi mat, vo Toan dua lai (ep_17:165-169), chon USB
+    nhu buoc dau tien huong toi hien tuy — KHONG phai thu tay giay (toi da tu ghi nhan trong note cu la ''khac phuong tien
+    giay'' nhung van chon nham ma thu-tay-giay). Khop voi tu khai cua tap (signature_object: OBJ_USB, dong 39) — xac nhan
+    khong co OBJ_USB trong bible/12 that, dung GAP_ thay the.'
 - id: PAS_0116
   char_name: Duy Khiêm
   pillar: self_regret
@@ -173,7 +184,9 @@ passengers:
   archetype_fit_note: 'Khong khop hoan hao (004 la so benh vien/bo qua dau hieu suc khoe, khong phai tu tu). CUM VAT bible/24:
     ep_15/25/35/45 deu ''manh guong/kinh vo cuu nguoi dinh tu tu'' — nguoi dan chuyen (driver) TRUC TIEP callback xuyen 4
     tap (''dem muoi lam... dem nay se co cau trai khac... cung cum vat''). De xuat RFC bible/11 REG_SELF_005 ''Tu tu bat thanh
-    — tu nhan ra minh trong guong vo, chon song'' cho ca cum 4 nhan vat nay.'
+    — tu nhan ra minh trong guong vo, chon song'' cho ca cum 4 nhan vat nay. | episode.md tu khai signature_object: OBJ_GUONG_VO
+    (dong 39) — dung GAP_MANH_GUONG_VO thong nhat ca cum thay vi mirror tung ten ad-hoc rieng cua moi tap (co chu y, dung
+    bible/24 callback).'
   signature_setting: setting_TBD
   age_range: 26-35
   gender: nam
@@ -223,7 +236,8 @@ passengers:
   signature_object: OBJ_THU_TAY
   haunting_symbol: OBJ_THU_TAY
   object_pairing_note: 'Khớp tốt: bức thư anh Khang viết trước khi tự tử, giữ 7 năm (ep_18:175-187), đúng ''thư tay nét chữ
-    run'' của OBJ_THU_TAY.'
+    run'' của OBJ_THU_TAY. | episode.md tu khai signature_object: OBJ_THU_TAY (dong 39) — khop hoan toan voi OBJ_THU_TAY (that,
+    bible/12) da chon.'
 - id: PAS_0120
   char_name: Nhàn Thục
   pillar: kindness_regret
@@ -250,9 +264,10 @@ passengers:
     pain: Ngai di tang ban vi ly do ca nhan — ban chet co don, khong ai o ben
   signature_object: GAP_VONG_HOA_CUC
   haunting_symbol: GAP_VONG_HOA_CUC
-  object_gap_note: Vòng hoa cúc đem lên mộ Mai mỗi tháng (ep_19:165-179) — hành động LẶP LẠI hàng tháng, không phải 1 vật
+  object_gap_note: 'Vòng hoa cúc đem lên mộ Mai mỗi tháng (ep_19:165-179) — hành động LẶP LẠI hàng tháng, không phải 1 vật
     giữ lại. Cùng nhóm GAP hoa cúc với PAS_0114/0117/0132 (4/24 batch này liên quan cúc — mô-típ rất mạnh, càng củng cố RFC
-    bổ sung bible/12 nhóm object hoa cúc).
+    bổ sung bible/12 nhóm object hoa cúc). | episode.md tu khai signature_object: OBJ_VONG_HOA_CUC (dong 39) — khop hoan toan
+    ten voi GAP_VONG_HOA_CUC da chon.'
 - id: PAS_0121
   char_name: Vĩ Huân
   pillar: self_regret
@@ -278,7 +293,9 @@ passengers:
     pain: Danh mat cam giac ve chinh minh — quen nguoi yeu vi mai theo duoi su nghiep
   signature_object: OBJ_CUON_SO_NHO
   haunting_symbol: OBJ_CUON_SO_NHO
-  object_pairing_note: 'Khớp tốt: sổ tay Hoài viết, giữ 4 năm (ep_20:184-198), đúng ''cuốn sổ tay bìa da nâu'' của OBJ_CUON_SO_NHO.'
+  object_pairing_note: 'Khớp tốt: sổ tay Hoài viết, giữ 4 năm (ep_20:184-198), đúng ''cuốn sổ tay bìa da nâu'' của OBJ_CUON_SO_NHO.
+    | episode.md tu khai signature_object: OBJ_SO_TAY (dong 39, ad-hoc) — toi dung ma that OBJ_CUON_SO_NHO (bible/12) vi khop
+    category (so tay bia da nau), day la lua chon hop le (uu tien ma that khi category khop thay vi mirror ma ad-hoc cua tap).'
 - id: PAS_0122
   char_name: Tân Chiến
   pillar: family_regret
@@ -306,8 +323,10 @@ passengers:
     pain: Me mat khi sinh minh ra — khong co lay 1 tam anh cua me de lai
   signature_object: GAP_ANH_MO_ME
   haunting_symbol: GAP_ANH_MO_ME
-  object_gap_note: Ảnh CHỤP MỘ mẹ (không phải ảnh mẹ thật — mẹ mất khi sinh, không có ảnh) (ep_21:175-187). Không khớp OBJ_ANH_CHUP_CHUNG
+  object_gap_note: 'Ảnh CHỤP MỘ mẹ (không phải ảnh mẹ thật — mẹ mất khi sinh, không có ảnh) (ep_21:175-187). Không khớp OBJ_ANH_CHUP_CHUNG
     (ảnh chụp CHUNG người sống) hay OBJ_ANH_CUOI_GAP_TU (ảnh cưới) — category khác biệt rõ (ảnh mộ, không phải ảnh người).
+    | episode.md tu khai signature_object: OBJ_ANH_MO (dong 39, ad-hoc) — gan khop voi GAP_ANH_MO_ME da chon (anh chup mo,
+    khong phai anh nguoi), chi khac 1 tu bo sung ''ME'' de ro nguon.'
 - id: PAS_0123
   char_name: Tuyền Ngần
   pillar: promise_regret
@@ -335,7 +354,8 @@ passengers:
   signature_object: OBJ_QUYEN_SACH_GIAO_KHOA_CU
   haunting_symbol: OBJ_QUYEN_SACH_GIAO_KHOA_CU
   object_pairing_note: 'Gần khớp: cuốn sách thầy Hồng tặng lúc tốt nghiệp, giữ 8 năm (ep_22:181-193) — không hoàn toàn là
-    ''sách giáo khoa'' nhưng cùng category sách-cũ-của-thầy.'
+    ''sách giáo khoa'' nhưng cùng category sách-cũ-của-thầy. | episode.md tu khai signature_object: OBJ_SACH_2017 (dong 39,
+    ad-hoc) — toi dung ma that OBJ_QUYEN_SACH_GIAO_KHOA_CU (bible/12), category khop (sach cu thay tang).'
 - id: PAS_0124
   char_name: Lợi Lĩnh
   pillar: love_regret
@@ -361,7 +381,10 @@ passengers:
     pain: Yeu tham thu ky hai muoi nam, chua tung to tinh
   signature_object: OBJ_THU_TAY
   haunting_symbol: OBJ_THU_TAY
-  object_pairing_note: 'Khớp tốt: bức thư giữ 5 năm sau khi Yến mất (ep_23:171-185), đúng thư tay.'
+  object_pairing_note: 'Khớp tốt: bức thư giữ 5 năm sau khi Yến mất (ep_23:171-185), đúng thư tay. | episode.md tu khai signature_object:
+    OBJ_THU_TU_CHOI (dong 39, ad-hoc) — toi dung ma that OBJ_THU_TAY (bible/12), category khop (thu tay), du noi dung tu khai
+    la thu TU CHOI (co viet khi anh to tinh muon) con toi ghi la thu giu sau khi Yen mat — CAN Mr.Long xac nhan lai noi dung
+    neu can chinh xac tuyet doi, nhung ca hai deu la ''buc thu tay giu lai'' nen ma OBJ_THU_TAY van dung ve category.'
 - id: PAS_0125
   char_name: Xuyến Nhài
   pillar: kindness_regret
@@ -389,7 +412,8 @@ passengers:
   signature_object: OBJ_CUON_SO_NHO
   haunting_symbol: OBJ_CUON_SO_NHO
   object_pairing_note: 'Gần khớp: vở học sinh của Mai Anh, giữ 10 năm (ep_24:183-197) — không hoàn toàn là ''sổ tay bìa da
-    nâu'' (đây là vở học sinh) nhưng cùng category sổ/vở.'
+    nâu'' (đây là vở học sinh) nhưng cùng category sổ/vở. | episode.md tu khai signature_object: OBJ_VO_VIET (dong 39, ad-hoc)
+    — toi dung ma that OBJ_CUON_SO_NHO (bible/12), category khop (vo/so).'
 - id: PAS_0126
   char_name: Danh Hiển
   pillar: self_regret
@@ -417,11 +441,12 @@ passengers:
     type: khong_ro
     pain: Ung thu phoi giai doan 3 nam 36 tuoi (hut thuoc+ruou 20 nam, khong kham dinh ky) — phau thuat cat nua phoi trai,
       song nhung khong nhu xua
-  signature_object: GAP_KINH_PHAN_CHIEU
-  haunting_symbol: GAP_KINH_PHAN_CHIEU
-  object_gap_note: Kinh nguyen (khong vo) phan chieu chinh minh luc con khoe manh, mang tang ai do trong tap (ep_25:61-67,
-    chi tiet cuoi chua doc sau). Cung GAP category voi ep_15 nhung vat cu the khac (kinh nguyen vs manh vo) — dung ma rieng
-    GAP_KINH_PHAN_CHIEU.
+  signature_object: GAP_KINH_NHO
+  haunting_symbol: GAP_KINH_NHO
+  object_gap_note: 'Kinh nguyen (khong vo) phan chieu chinh minh luc con khoe manh (ep_25:dong 39 tu khai signature_object:
+    OBJ_KINH_NHO). Doi ten tu GAP_KINH_PHAN_CHIEU -> GAP_KINH_NHO de khop dung thuat ngu tap tu khai (xac nhan OBJ_KINH_NHO
+    KHONG co trong bible/12 that — chi co OBJ_KINH_CU va OBJ_KINH_LAO, khac mo ta). Boss spot-check phat hien ten cu khong
+    khop tu khai cua tap — da sua.'
 - id: PAS_0127
   char_name: Thế Quyết
   pillar: family_regret
@@ -448,8 +473,10 @@ passengers:
     pain: Bo la kien truc su mat — con ngai hoc theo nghe cha
   signature_object: GAP_BO_THUOC_KTS
   haunting_symbol: GAP_BO_THUOC_KTS
-  object_gap_note: Bộ thước T kiến trúc của bố, mua 2017 (ep_26:183-195). Không có object dụng cụ nghề nghiệp/kỹ thuật nào
-    trong bible/12 — cùng nhóm GAP với PAS_0141 (cuộn giấy thiết kế) — đề xuất RFC nhóm 'dụng cụ nghề nghiệp'.
+  object_gap_note: 'Bộ thước T kiến trúc của bố, mua 2017 (ep_26:183-195). Không có object dụng cụ nghề nghiệp/kỹ thuật nào
+    trong bible/12 — cùng nhóm GAP với PAS_0141 (cuộn giấy thiết kế) — đề xuất RFC nhóm ''dụng cụ nghề nghiệp''. | episode.md
+    tu khai signature_object: OBJ_THUOC_T (dong 39, ad-hoc) — gan khop voi GAP_BO_THUOC_KTS da chon (bo thuoc T kien truc
+    cua bo).'
 - id: PAS_0128
   char_name: Kiều Thương
   pillar: promise_regret
@@ -473,10 +500,12 @@ passengers:
   death:
     type: khong_ro
     pain: Hua voi ban tieu hoc giup chua benh — di nuoc ngoai quen mat
-  signature_object: GAP_KHUNG_ANH
-  haunting_symbol: GAP_KHUNG_ANH
-  object_gap_note: Khung ảnh Hằng tặng, giữ 24 năm mang cả sang Mỹ (ep_27:193-205). Không có object 'khung ảnh' (khác ảnh/tấm
-    hình) trong bible/12.
+  signature_object: GAP_KHUNG_ANH_CHUNG_LOP
+  haunting_symbol: GAP_KHUNG_ANH_CHUNG_LOP
+  object_gap_note: 'Khung anh chup chung lop tieu hoc, Hang tang truoc khi Linh di du hoc, giu 24 nam mang ca sang My (ep_27:141-193).
+    Doi ten tu GAP_KHUNG_ANH -> GAP_KHUNG_ANH_CHUNG_LOP de khop ro hon voi tu khai cua tap (signature_object: OBJ_ANH_CHUNG
+    ''anh chung lop tieu hoc ban tang'', dong 39) — cung 1 vat (khung + anh ben trong), khong phai loi noi dung, chi la doi
+    ten cho khop truy vet. Xac nhan OBJ_ANH_CHUNG khong co trong bible/12 that, dung GAP_ thay the.'
 - id: PAS_0129
   char_name: Đàn Luân
   pillar: love_regret
@@ -504,7 +533,8 @@ passengers:
   signature_object: OBJ_NHAN_CUOI
   haunting_symbol: OBJ_NHAN_CUOI
   object_pairing_note: 'Khớp tốt: nhẫn cưới cũ (ly hôn 30 năm trước), định đặt vào quan tài vợ cũ (ep_28:183-197), đúng ''nhẫn
-    cưới cất trong hộp'' của OBJ_NHAN_CUOI.'
+    cưới cất trong hộp'' của OBJ_NHAN_CUOI. | episode.md tu khai signature_object: OBJ_NHAN_CUOI (dong 39) — khop hoan toan
+    voi OBJ_NHAN_CUOI (that, bible/12) da chon.'
 - id: PAS_0130
   char_name: Ý Thơ
   pillar: kindness_regret
@@ -528,17 +558,21 @@ passengers:
   death:
     type: khong_ro
     pain: Tu choi hien mau cho ban cung phong nam 2017 — ban chet
-  signature_object: GAP_THE_HIEN_TUY
-  haunting_symbol: GAP_THE_HIEN_TUY
-  object_gap_note: Thẻ đăng ký hiến tủy (ep_29:177-191, sau khi không thử hiến tủy kịp cho Nga). Không có object y tế/hiến
-    tặng nào trong bible/12.
+  signature_object: GAP_THE_HIEN_MAU
+  haunting_symbol: GAP_THE_HIEN_MAU
+  object_gap_note: 'SUA LOI NOI DUNG: the la THE DANG KY HIEN MAU tinh nguyen (dang nam 2017, dinh dung lam buoc dau tien
+    de tien toi hien tuy cho Nga nhung chua bao gio di hien mau thuc te — ep_29:169-171), KHONG phai ''the hien tuy'' nhu
+    toi da ghi sai truoc do. Khop voi tu khai cua tap (signature_object: OBJ_THE_HIEN_MAU, dong 39) — xac nhan OBJ_THE_HIEN_MAU
+    khong co trong bible/12 that, dung GAP_ thay the.'
 - id: PAS_0132
   char_name: Khuê Diệp
   pillar: family_regret
   regret_sub_archetype: REG_FAM_001
   regret_label: Me mat thang tu muoi ba nam truoc — con dem hoa cuc len mo moi thang
-  archetype_fit_note: Kha khop (me mat, con tuong nho dinh ky) — 13 nam truoc, hanh dong la dem cuc moi thang (khac 'doi con
-    ve Tet').
+  archetype_fit_note: 'Kha khop (me mat, con tuong nho dinh ky) — 13 nam truoc, hanh dong la dem cuc moi thang (khac ''doi
+    con ve Tet''). | SUA object: GAP_HOA_CUC -> GAP_CHAU_CUC (vat that la CHAU cuc me trong, khong phai ''hoa cuc'' chung
+    chung — dung lai ma voi PAS_0117/ep_16 cung loai vat). episode.md tu khai signature_object: OBJ_CHAU_CUC_THANG_TU (dong
+    39) — khop noi dung, ten rieng hon (chau cuc THANG TU) nhung cung category chau cuc.'
   signature_setting: setting_TBD
   age_range: 51-65
   gender: nu
@@ -556,8 +590,8 @@ passengers:
   death:
     type: khong_ro
     pain: Me mat thang tu muoi ba nam truoc — con dem hoa cuc len mo moi thang
-  signature_object: GAP_HOA_CUC
-  haunting_symbol: GAP_HOA_CUC
+  signature_object: GAP_CHAU_CUC
+  haunting_symbol: GAP_CHAU_CUC
   object_gap_note: Dem cuc len mo me moi thang suot 13 nam — CUNG GAP category voi PAS_0114/0117 (hoa cuc, 3/32 batch nay
     lien quan cuc — mo-tip lap lai manh, cang cung co de xuat RFC bible/12).
 - id: PAS_0133
@@ -565,8 +599,10 @@ passengers:
   pillar: love_regret
   regret_sub_archetype: REG_LOV_005
   regret_label: Vo mat dot ngot thang tu (tai nan/benh chua ro) — chan vo dang may con do dang
-  archetype_fit_note: Kha khop (vo chet dot ngot, tiec chua noi dieu gi) — vo con tre (khong phai gia), chan dang may con
-    do dang.
+  archetype_fit_note: 'Kha khop (vo chet dot ngot, tiec chua noi dieu gi) — vo con tre (khong phai gia), chan dang may con
+    do dang. | SUA object: GAP_CHAN_MAY_DO -> GAP_CHAN_DAN_DO (sua thuat ngu: van ban dung ''dan chan'' + ''kim dan'' (dan
+    len = knit), KHONG phai ''may'' (sew) nhu ten cu ghi nham). episode.md tu khai signature_object: OBJ_CHAN_DAN_DO (dong
+    39) — khop chinh xac sau khi sua.'
   signature_setting: setting_TBD
   age_range: 36-50
   gender: nam
@@ -584,8 +620,8 @@ passengers:
   death:
     type: khong_ro
     pain: Vo mat dot ngot thang tu (tai nan/benh chua ro) — chan vo dang may con do dang
-  signature_object: GAP_CHAN_MAY_DO
-  haunting_symbol: GAP_CHAN_MAY_DO
+  signature_object: GAP_CHAN_DAN_DO
+  haunting_symbol: GAP_CHAN_DAN_DO
   object_gap_note: Chan vo dang may khi mat dot ngot thang tu — giu chan may do dang. Khong co object 'chan/do may do dang'
     trong bible/12 — gan nhat OBJ_AO_LEN_NAU (ao len chua dan xong) nhung do la AO khong phai CHAN — khac category ro, dung
     GAP.
@@ -616,7 +652,8 @@ passengers:
   signature_object: OBJ_VE_TAU_KHU_HOI
   haunting_symbol: OBJ_VE_TAU_KHU_HOI
   object_pairing_note: 'Khớp XUẤT SẮC: vé tàu điện hai chiều chưa dùng (ep_33:181-191), đúng ''tờ vé tàu khứ hồi chưa dùng''
-    của OBJ_VE_TAU_KHU_HOI — không cần sửa gì.'
+    của OBJ_VE_TAU_KHU_HOI — không cần sửa gì. | episode.md tu khai signature_object: OBJ_VE_TAU_DIEN (dong 39, ad-hoc) —
+    toi dung ma that OBJ_VE_TAU_KHU_HOI (bible/12), khop XUAT SAC.'
 - id: PAS_0135
   char_name: Nghị Đôn
   pillar: kindness_regret
@@ -644,15 +681,17 @@ passengers:
   signature_object: OBJ_NHANG_THAP_DO
   haunting_symbol: OBJ_NHANG_THAP_DO
   object_pairing_note: 'Gần khớp: bó hương đốt tại mộ bác Bính (ep_34:183-195) — display_name gốc là ''que nhang'' (số ít)
-    còn đây là ''bó hương'' (nhiều que), cùng category nhang/hương thắp.'
+    còn đây là ''bó hương'' (nhiều que), cùng category nhang/hương thắp. | episode.md tu khai signature_object: OBJ_HUONG_TRAM
+    (dong 39, ad-hoc) — toi dung ma that OBJ_NHANG_THAP_DO (bible/12), category khop (huong thap).'
 - id: PAS_0136
   char_name: Kỳ Bách
   pillar: self_regret
   regret_sub_archetype: REG_SELF_004
   regret_label: 2 nam truoc suyt tu tu vi that nghiep sau tot nghiep Dai hoc Hang khong — thay minh trong guong vo, chon song
     — giu manh guong 2 nam, tang bac si tam ly
-  archetype_fit_note: Cung cum vat bible/24 voi ep_15/25/45 (xem PAS_0116) — manh guong/kinh cuu nguoi dinh tu tu, callback
-    truc tiep tu driver ('tuong tu EP15 Phong + EP25 Van Quan').
+  archetype_fit_note: 'Cung cum vat bible/24 voi ep_15/25/45 (xem PAS_0116) — manh guong/kinh cuu nguoi dinh tu tu, callback
+    truc tiep tu driver (''tuong tu EP15 Phong + EP25 Van Quan''). | episode.md tu khai signature_object: OBJ_MANH_GUONG (dong
+    39) — dung GAP_MANH_GUONG_VO thong nhat ca cum (xem PAS_0116).'
   signature_setting: setting_TBD
   age_range: 26-35
   gender: nam
@@ -708,7 +747,9 @@ passengers:
   signature_object: OBJ_ANH_CHUP_CHUNG
   haunting_symbol: OBJ_ANH_CHUP_CHUNG
   object_pairing_note: 'Khớp tốt: tấm ảnh Diễm+Tuấn chụp cùng ở Hồ Tây (ep_36:161-163), đúng ''tấm ảnh chụp chung đã ngả vàng''
-    của OBJ_ANH_CHUP_CHUNG.'
+    của OBJ_ANH_CHUP_CHUNG. | episode.md tu khai signature_object: OBJ_TAM_ANH (dong 39, chung ''tam anh'' hon) — OBJ_ANH_CHUP_CHUNG
+    (that, bible/12) van la lua chon chinh xac hon vi mo ta dung noi dung (anh chup CHUNG 2 nguoi cuoi o Ho Tay, ep_36:161-163).
+    Khong doi.'
 - id: PAS_0138
   char_name: Sen Lụa
   pillar: family_regret
@@ -734,7 +775,8 @@ passengers:
     pain: Vo chong di xe may pho Hue — chong mat tai nan, vo song sot
   signature_object: GAP_MANH_BIEN_SO
   haunting_symbol: GAP_MANH_BIEN_SO
-  object_gap_note: Mảnh biển số xe máy (ep_37:159-173, sau tai nạn). Không có object liên quan phương tiện/biển số trong bible/12.
+  object_gap_note: 'Mảnh biển số xe máy (ep_37:159-173, sau tai nạn). Không có object liên quan phương tiện/biển số trong
+    bible/12. | episode.md tu khai signature_object: OBJ_BIEN_SO (dong 39, ad-hoc) — gan khop voi GAP_MANH_BIEN_SO da chon.'
 - id: PAS_0139
   char_name: Tráng Doãn
   pillar: promise_regret
@@ -762,7 +804,8 @@ passengers:
   signature_object: OBJ_HOP_QUA_CHUA_TANG
   haunting_symbol: OBJ_HOP_QUA_CHUA_TANG
   object_pairing_note: 'Khớp XUẤT SẮC: hộp quà sinh nhật 18 chưa kịp tặng Lan, giữ 17 năm (ep_38:171-185), đúng tuyệt đối
-    ''hộp quà chưa kịp tặng'' của OBJ_HOP_QUA_CHUA_TANG.'
+    ''hộp quà chưa kịp tặng'' của OBJ_HOP_QUA_CHUA_TANG. | episode.md tu khai signature_object: OBJ_HOP_QUA (dong 39, ad-hoc)
+    — toi dung ma that OBJ_HOP_QUA_CHUA_TANG (bible/12), khop XUAT SAC.'
 - id: PAS_0140
   char_name: Đoan Cầm
   pillar: kindness_regret
@@ -789,10 +832,12 @@ passengers:
     type: khong_ro
     pain: Khong dem com cho hang xom gia truoc nha — ba chet doi. CUNG MO-TIP voi PAS_0115 (tu choi giup nguoi gia doi/can
       -> ho chet) — cung co de xuat RFC REG_KIN moi cho mo-tip nay.
-  signature_object: OBJ_BAT_CANH_CHUA
-  haunting_symbol: OBJ_BAT_CANH_CHUA
-  object_pairing_note: 'Gần khớp: tô cơm định đem cho bà Trinh (ep_39:159-173) — display_name gốc là ''bát canh chua mẹ nấu''
-    (món khác, người khác) nhưng cùng category bát đồ ăn chưa kịp trao.'
+  signature_object: GAP_TO_COM
+  haunting_symbol: GAP_TO_COM
+  object_gap_note: 'SUA LOI NOI DUNG: la TO COM (com, khong phai canh) ba chuan bi moi tuan cho chau, chua kip dem (ep_39
+    evidence). OBJ_BAT_CANH_CHUA that (bible/12) la ''bat canh chua me nau'' — khac mon an (canh chua man vs com) va khac
+    nguoi (me vs ba) — dung sai category. Khop voi tu khai cua tap (signature_object: OBJ_TO_COM, dong 39) — xac nhan khong
+    co trong bible/12 that, dung GAP_ thay the.'
 - id: PAS_0141
   char_name: Lãm Chấn
   pillar: love_regret
@@ -832,7 +877,9 @@ passengers:
     OBJ_GIAY_KTS'' nhưng mã này KHÔNG tồn tại trong bible/12 (40 object thật, đã kiểm chứng bằng grep) — xác nhận ĐỘC LẬP
     cùng phát hiện GAP với PAS_0102 (cúc khô)/PAS_0117 (chậu cúc): bible/12 thiếu hẳn nhóm object ''văn bản/bản vẽ nghề nghiệp''.
     Dùng placeholder GAP_CUON_GIAY_THIET_KE (khác OBJ_GIAY_KTS ad-hoc của episode.md, để nhất quán quy ước GAP_ trong file
-    này) — đề xuất RFC bổ sung bible/12.'
+    này) — đề xuất RFC bổ sung bible/12. | episode.md tu khai signature_object: OBJ_GIAY_KTS (dong 39) — noi dung khop tot
+    voi GAP_CUON_GIAY_THIET_KE da chon (cuon giay can do an kien truc, ep_40:184-190), xac nhan OBJ_GIAY_KTS khong co trong
+    bible/12 that. Khong doi ma, chi bo sung doi chieu.'
 - id: PAS_0142
   char_name: Nhụy Lài
   pillar: family_regret
@@ -860,7 +907,9 @@ passengers:
   signature_object: OBJ_DIEN_THOAI_NOKIA
   haunting_symbol: OBJ_DIEN_THOAI_NOKIA
   object_pairing_note: 'Khớp tốt theo tinh thần: điện thoại cũ giữ tin nhắn chưa gửi ''mẹ ơi em yêu mẹ'' (ep_41:167-181) —
-    đúng mô-típ ''điện thoại cũ'' của OBJ_DIEN_THOAI_NOKIA dù văn bản không nói rõ hãng máy.'
+    đúng mô-típ ''điện thoại cũ'' của OBJ_DIEN_THOAI_NOKIA dù văn bản không nói rõ hãng máy. | episode.md tu khai signature_object:
+    OBJ_DIEN_THOAI (dong 39, ad-hoc, khong neu hang may) — toi dung ma that OBJ_DIEN_THOAI_NOKIA (bible/12) vi khong co ma
+    dien-thoai-chung, hang may la suy dien tu ma co san chu khong phai van ban xac nhan.'
 - id: PAS_0143
   char_name: Ba Bảy
   pillar: family_regret
@@ -887,7 +936,8 @@ passengers:
   signature_object: OBJ_NHAN_CUOI
   haunting_symbol: OBJ_NHAN_CUOI
   object_pairing_note: 'Khớp tốt: nhẫn cưới vợ, bệnh viện trả về sau tai nạn (ep_42:163-179), đúng OBJ_NHAN_CUOI (dùng lại
-    mã, khác nhân vật với PAS_0129/ep_28).'
+    mã, khác nhân vật với PAS_0129/ep_28). | episode.md tu khai signature_object: OBJ_NHAN_CUOI (dong 39) — khop hoan toan
+    voi OBJ_NHAN_CUOI (that, bible/12) da chon (dung lai ma, khac nhan vat voi PAS_0129/ep_28).'
 - id: PAS_0144
   char_name: Chín Được
   pillar: promise_regret
@@ -913,8 +963,9 @@ passengers:
     pain: Hua cuoi ban gai khi ban di nghia vu ve — ban khong bao gio ve
   signature_object: GAP_GIAY_CHUNG_NHAN_NVQS
   haunting_symbol: GAP_GIAY_CHUNG_NHAN_NVQS
-  object_gap_note: Giấy chứng nhận hoàn thành nghĩa vụ quân sự, xin lại từ ủy ban sau 28 năm (ep_43:163-177). Không có object
-    giấy tờ hành chính/quân sự trong bible/12.
+  object_gap_note: 'Giấy chứng nhận hoàn thành nghĩa vụ quân sự, xin lại từ ủy ban sau 28 năm (ep_43:163-177). Không có object
+    giấy tờ hành chính/quân sự trong bible/12. | episode.md tu khai signature_object: OBJ_GIAY_CONG_DAN (dong 39, ad-hoc)
+    — gan khop voi GAP_GIAY_CHUNG_NHAN_NVQS da chon.'
 - id: PAS_0145
   char_name: Gấm Mận
   pillar: kindness_regret
@@ -940,18 +991,21 @@ passengers:
   death:
     type: khong_ro
     pain: Khong dem khuc che cho hang xom benh — ba hang xom mat
-  signature_object: OBJ_BAT_CANH_CHUA
-  haunting_symbol: OBJ_BAT_CANH_CHUA
-  object_pairing_note: 'Gần khớp: khúc chè định đem cho bà Sáu (ep_44:159-173) — cùng category bát/khúc đồ ăn chưa kịp trao,
-    dùng lại mã với PAS_0140/ep_39.'
+  signature_object: GAP_KHUC_CHE
+  haunting_symbol: GAP_KHUC_CHE
+  object_gap_note: 'SUA LOI NOI DUNG: la KHUC CHE (che — mon trang mieng ngot) ba chuan bi 5 nam truoc cho chau, chua kip
+    dem (ep_44 evidence). OBJ_BAT_CANH_CHUA that (bible/12) la ''bat canh chua me nau'' — khac mon an hoan toan (che ngot
+    vs canh chua man) — dung sai category. Khop voi tu khai cua tap (signature_object: OBJ_KHUC_CHE, dong 39) — xac nhan khong
+    co trong bible/12 that, dung GAP_ thay the.'
 - id: PAS_0146
   char_name: Triều Quảng
   pillar: self_regret
   regret_sub_archetype: REG_SELF_004
   regret_label: 10 nam truoc dinh tu tu vi truot thi cuoi khoa su pham — thay giao (thay Hong) cuu qua dien thoai — thay vua
     mat nam ngoai, dem manh guong tang phong tam ly truong cu
-  archetype_fit_note: Cum vat bible/24 hoan tat voi ep_15/25/35 (xem PAS_0116) — nhan vat thu 4, thay Hong (giao vien) cuu
-    qua dien thoai, thay mat, nhan vat tang manh guong cho phong tam ly truong.
+  archetype_fit_note: 'Cum vat bible/24 hoan tat voi ep_15/25/35 (xem PAS_0116) — nhan vat thu 4, thay Hong (giao vien) cuu
+    qua dien thoai, thay mat, nhan vat tang manh guong cho phong tam ly truong. | episode.md tu khai signature_object: OBJ_MANH_GUONG
+    (dong 39) — dung GAP_MANH_GUONG_VO thong nhat ca cum (xem PAS_0116).'
   signature_setting: setting_TBD
   age_range: 26-35
   gender: nam
@@ -1001,8 +1055,9 @@ passengers:
     pain: Hua dua chau noi di bien — chau mat truoc khi kip thuc hien
   signature_object: GAP_TUI_CAT_BIEN
   haunting_symbol: GAP_TUI_CAT_BIEN
-  object_gap_note: Túi cát biển Diêm Điền, đem vào nhà thờ thay cho việc đưa cháu ra biển (ep_46:161-175). Không có object
-    liên quan cát/biển trong bible/12.
+  object_gap_note: 'Túi cát biển Diêm Điền, đem vào nhà thờ thay cho việc đưa cháu ra biển (ep_46:161-175). Không có object
+    liên quan cát/biển trong bible/12. | episode.md tu khai signature_object: OBJ_TUI_VAI_CAT (dong 39, ad-hoc) — gan khop
+    voi GAP_TUI_CAT_BIEN da chon.'
 - id: PAS_0148
   char_name: Đài Ngà
   pillar: love_regret
@@ -1029,8 +1084,9 @@ passengers:
     pain: Da mua ve may bay di du hoc — chong mat truoc ngay khoi hanh
   signature_object: GAP_VE_MAY_BAY
   haunting_symbol: GAP_VE_MAY_BAY
-  object_gap_note: Hai vé máy bay đi Hàn Quốc chưa dùng (ep_47:155-179). bible/12 có vé tàu (OBJ_VE_TAU_KHU_HOI) và vé công
-    viên (OBJ_VE_CONG_VIEN) nhưng KHÔNG có vé máy bay — cùng nhóm 'vé' nhưng khác loại phương tiện, đề xuất RFC bổ sung.
+  object_gap_note: 'Hai vé máy bay đi Hàn Quốc chưa dùng (ep_47:155-179). bible/12 có vé tàu (OBJ_VE_TAU_KHU_HOI) và vé công
+    viên (OBJ_VE_CONG_VIEN) nhưng KHÔNG có vé máy bay — cùng nhóm ''vé'' nhưng khác loại phương tiện, đề xuất RFC bổ sung.
+    | episode.md tu khai signature_object: OBJ_VE_MAY_BAY (dong 39) — khop hoan toan ten voi GAP_VE_MAY_BAY da chon.'
 - id: PAS_0149
   char_name: Thiệt Lành
   pillar: promise_regret
@@ -1057,8 +1113,8 @@ passengers:
     pain: Hua tang guitar cho ban cap ba — quen 20 nam, ban mat vi benh
   signature_object: GAP_DAN_GUITAR
   haunting_symbol: GAP_DAN_GUITAR
-  object_gap_note: Đàn guitar hứa tặng bạn cấp 3, giữ 15+ năm rồi trả về tiệm (ep_48:163-177). Không có nhạc cụ nào trong
-    bible/12.
+  object_gap_note: 'Đàn guitar hứa tặng bạn cấp 3, giữ 15+ năm rồi trả về tiệm (ep_48:163-177). Không có nhạc cụ nào trong
+    bible/12. | episode.md tu khai signature_object: OBJ_DAN_GUITAR (dong 39) — khop hoan toan ten voi GAP_DAN_GUITAR da chon.'
 - id: PAS_0150
   char_name: Sáu Mến
   pillar: kindness_regret
@@ -1086,4 +1142,6 @@ passengers:
   signature_object: OBJ_KHAN_TAY_CU
   haunting_symbol: OBJ_KHAN_TAY_CU
   object_pairing_note: 'Dùng lại mã: khăn tại quán cà phê (ep_49:161-175) — văn bản không mô tả chi tiết thêu hoa như PAS_0115/ep_14,
-    nhưng cùng category khăn tay/khăn quàng cũ, không có object khăn nào khác trong catalog để phân biệt.'
+    nhưng cùng category khăn tay/khăn quàng cũ, không có object khăn nào khác trong catalog để phân biệt. | episode.md tu
+    khai signature_object: OBJ_KHAN_TAY (dong 39, ad-hoc) — toi dung ma that OBJ_KHAN_TAY_CU (bible/12), category khop (khan
+    tay).'

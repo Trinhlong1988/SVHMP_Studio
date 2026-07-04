@@ -91,15 +91,17 @@ def test_all_have_evidence_ref():
 def test_mirror_shard_cluster_consistent_object():
     """CUM VAT bible/24 (ep_15/25/35/45 — 'manh guong/kinh cuu nguoi dinh tu tu',
     driver callback truc tiep xuyen 4 tap): ep_15/35/45 (manh VO) phai dung CUNG
-    GAP_MANH_GUONG_VO; ep_25 (kinh NGUYEN, khac chi tiet) dung GAP_KINH_PHAN_CHIEU
-    rieng — khong duoc lan sang nhau."""
+    GAP_MANH_GUONG_VO; ep_25 (kinh NGUYEN, khac chi tiet) dung GAP_KINH_NHO
+    rieng — khong duoc lan sang nhau. (Ten GAP_KINH_NHO thay cho GAP_KINH_PHAN_CHIEU
+    ngay 2026-07-05 de khop dung tu khai signature_object cua ep_25:39 — Boss
+    spot-check phat hien ten cu khong doi chieu voi episode.md.)"""
     by_ep = {p['source_ep']: p for p in _passengers()}
     for ep in (15, 35, 45):
         assert by_ep[ep]['haunting_symbol'] == 'GAP_MANH_GUONG_VO', (
             f"ep_{ep}: phai dung GAP_MANH_GUONG_VO (cum vat manh vo), "
             f"dang la {by_ep[ep]['haunting_symbol']!r}")
-    assert by_ep[25]['haunting_symbol'] == 'GAP_KINH_PHAN_CHIEU', (
-        f"ep_25: phai dung GAP_KINH_PHAN_CHIEU (kinh nguyen, khac ep_15/35/45), "
+    assert by_ep[25]['haunting_symbol'] == 'GAP_KINH_NHO', (
+        f"ep_25: phai dung GAP_KINH_NHO (kinh nguyen, khac ep_15/35/45), "
         f"dang la {by_ep[25]['haunting_symbol']!r}")
 
 
@@ -151,9 +153,43 @@ def test_gap_object_reuse_across_characters_allowed():
     from collections import Counter
     codes = Counter(p['signature_object'] for p in _passengers())
     reused = {c: n for c, n in codes.items() if n > 1}
-    # it nhat 1 ma dung lai (OBJ_NHAN_CUOI: PAS ep_28+ep_42; OBJ_BAT_CANH_CHUA:
-    # ep_39+ep_44) — xac nhan hanh vi dung y, khong phai bug
+    # it nhat 1 ma dung lai (OBJ_NHAN_CUOI: PAS ep_28+ep_42) — xac nhan hanh vi
+    # dung y, khong phai bug. (OBJ_BAT_CANH_CHUA ep_39/ep_44 KHONG con dung lai
+    # tu 2026-07-05 — phat hien la loi noi dung (com/che bi ep vao category
+    # canh chua), da tach rieng GAP_TO_COM/GAP_KHUC_CHE.)
     assert reused, 'ky vong co it nhat 1 object-code dung lai giua >=2 nhan vat khac nhau'
+
+
+def test_object_code_cross_referenced_against_episode_declaration():
+    """PROCESS-FIX (Boss spot-check PAS_0126 5/7): moi episode.md TU KHAI rieng
+    mot dong `signature_object: OBJ_XXX (mo ta)` — truoc day toi bia GAP_/OBJ_
+    code rieng ma KHONG doi chieu dong nay, dan den PAS_0126/ep_25 dung
+    GAP_KINH_PHAN_CHIEU trong khi episode.md da tu khai OBJ_KINH_NHO (cung 1
+    vat, khac ten — trung lap an). Test nay bat buoc: voi MOI entry co
+    source_ep, ma tu khai cua episode.md phai xuat hien nguyen van trong
+    object_gap_note/object_pairing_note (hoac trung chinh xac signature_object
+    khi dung lai ma that) — dam bao buoc doi chieu khong the bi bo qua am
+    tham lan sau."""
+    import re
+    by_ep = {p['source_ep']: p for p in _passengers()}
+    missing = []
+    for ep, p in sorted(by_ep.items()):
+        md_path = SVHMP / 'output' / f'ep_{ep}' / 'episode.md'
+        if not md_path.exists():
+            continue
+        text = md_path.read_text(encoding='utf-8')
+        m = re.search(r'^signature_object:\s*(\S+)', text, re.MULTILINE)
+        if not m:
+            continue
+        declared_code = m.group(1)
+        note = (p.get('object_gap_note') or p.get('object_pairing_note') or '') + \
+            p.get('archetype_fit_note', '')
+        matches = (declared_code == p['signature_object']) or (declared_code in note)
+        if not matches:
+            missing.append((p['id'], ep, declared_code, p['signature_object']))
+    assert not missing, (
+        "Cac entry sau CHUA doi chieu voi signature_object tu khai cua episode.md "
+        "(id, ep, ma_tu_khai, ma_dang_dung): " + repr(missing))
 
 
 def test_waivers_ep30_ep50_absent_pending_mr_long():
