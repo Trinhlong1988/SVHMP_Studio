@@ -1,0 +1,61 @@
+# BP7 PACING FORMAT v1.0.0 — HINH THUC duong cong theo cap cau truc (TASK_BP7 deliverable 3)
+# CHI dinh HINH (level ap dung / don vi / sample-rate) — SO va KNOB cu the thuoc BP6
+# (governance/blueprint/bp6/decision_contract.yaml) + calibrate G6 tu golden (R195).
+# File nay TUYET DOI KHONG chua so cu the nao (kieu R195) — validator numeric-leak scan.
+
+meta:
+  version: 1.0.0
+  pack: bp7_narrative
+  status: candidate
+  owner_domain: story_planner
+  no_hardcode_rule: |
+    R195-style: file nay CHI mo ta HINH THUC (level/don vi/sample-rate la NHAN,
+    KHONG phai gia tri do). So cu the (gia tri curve, threshold) thuoc BP6
+    decision_contract.yaml (calibrate_from bible/31 + EP01 golden) — KHONG duoc
+    chep/bia o day.
+
+# ============================================================
+# AP DUNG CURVE THEO CAP CAU TRUC (tham chieu BP6 knob, khong chep so)
+# ============================================================
+curve_application:
+  - curve_ref: bp6.decision_contract.knobs.emotion_curve
+    applies_at_level: scene
+    sample_unit: diem_moi_scene
+    aggregation_to_episode: trung_binh_cong_scene_trong_episode
+  - curve_ref: bp6.decision_contract.knobs.fear_curve
+    applies_at_level: scene
+    sample_unit: diem_moi_scene
+    aggregation_to_episode: dinh_cao_nhat_trong_episode   # fear = lay peak, khong lay trung binh (san sinh dung)
+  - curve_ref: bp6.decision_contract.knobs.suspense_curve
+    applies_at_level: scene
+    sample_unit: diem_moi_scene
+    aggregation_to_episode: trung_binh_cong_scene_trong_episode
+  - curve_ref: bp6.decision_contract.knobs.reveal_curve
+    applies_at_level: scene
+    sample_unit: so_fact_nha_moi_scene
+    aggregation_to_episode: tong_cong_scene_trong_episode   # reveal = cong don (dem fact), khong lay trung binh
+  - curve_ref: bp6.decision_contract.knobs.pacing
+    applies_at_level: scene
+    sample_unit: nhan_dinh_danh_moi_scene   # enum, khong phai so — xem bp6 pacing.values
+
+# ============================================================
+# TANG SERIES (90 tap) — arc rolling, tham chieu KHONG chep
+# ============================================================
+series_level_aggregation:
+  desc: "Duong cong toan series = chuoi gia tri episode-level, dung cho arc rolling expansion"
+  sot: {status: exists, path: bible/20_arc_rolling_expansion.yaml}
+  sample_unit: diem_moi_episode
+  cross_ref_suspense_template: {status: exists, path: bible/25_suspense_arc_templates.yaml}
+
+# ============================================================
+# INVARIANT (validator enforce)
+# ============================================================
+invariants:
+  - rule: "File nay KHONG duoc chua so (int/float) o bat ky dau — chi enum/nhan dinh danh; so hardcode = FAIL (mirror R195 nguyen tac BP6)"
+    enforcer: {status: planned, planned_path: tools/bp7_narrative_check.py, owner: story_planner,
+              reason_not_exists_yet: "Dang xay dung cung BP7", target_milestone: M2_planner_generator,
+              blocking_dependency: "BP7 candidate build"}
+  - rule: "Moi curve_ref PHAI khop dung knob_id da khai trong bp6/decision_contract.yaml (curve_ref ma = FAIL)"
+    enforcer: {status: planned, planned_path: tools/bp7_narrative_check.py, owner: story_planner,
+              reason_not_exists_yet: "Dang xay dung cung BP7", target_milestone: M2_planner_generator,
+              blocking_dependency: "BP7 candidate build"}

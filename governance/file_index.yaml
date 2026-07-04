@@ -1204,5 +1204,33 @@ files:
     domain: bp6_decision
     status: active
     tier: 0
+  governance/blueprint/bp7/00_narrative.md:
+    domain: bp7_narrative
+    status: active
+    tier: 0
+  governance/blueprint/bp7/story_structure.yaml:
+    domain: bp7_narrative
+    status: active
+    tier: 0
+  governance/blueprint/bp7/cultural_spec.yaml:
+    domain: bp7_narrative
+    status: active
+    tier: 0
+  governance/blueprint/bp7/pacing_format.yaml:
+    domain: bp7_narrative
+    status: active
+    tier: 0
+  tools/bp7_narrative_check.py:
+    domain: bp7_narrative
+    status: active
+    tier: 0
+  tests/test_bp7_narrative.py:
+    domain: bp7_narrative
+    status: active
+    tier: 0
+  reports/BP7_REPORT.md:
+    domain: bp7_narrative
+    status: active
+    tier: 0
 generated_by: tools/registry_triage.py
-total: 301
+total: 308

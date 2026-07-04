@@ -1,0 +1,75 @@
+# BP7 CULTURAL SPEC v1.0.0 — facet data cho culture/belief/ritual (TASK_BP7 deliverable 2)
+# NGUYEN TAC: doc bible/02_lore_db.yaml TRUOC, phan loai facet da khai BP2 xem noi dung
+# da co trong lore chua. KET QUA DOC (bang chung, khong suy luan): bible/02_lore_db.yaml
+# CHI chua world_rules (bus/driver/seat_13) + facts_001-015 + fact_073_* + symbols +
+# permanent_locks + spoiler_rule — KHONG co bat ky noi dung phong tuc/tin nguong/nghi
+# thuc nao. => CA 7 facet culture/belief/ritual VAN planned (khop dung bp2/domain_specs.yaml
+# hien tai — file nay KHONG flip, chi xac nhan phan loai + dinh dang FORMAT cho khi bible/38-40 duoc ky).
+
+meta:
+  version: 1.0.0
+  pack: bp7_narrative
+  status: candidate
+  owner_domain: [culture, belief, ritual]   # 3 domain BP2 rieng, BP7 gom chung 1 file kien truc
+  lore_db_read_evidence: |
+    Đọc toàn bộ bible/02_lore_db.yaml (81 dòng, 2026-07-04): world_rules {bus, driver,
+    seat_13} + facts {fact_001..015, fact_073_A..F} + permanent_locks + symbols +
+    spoiler_rule. KHÔNG một dòng nào thuộc phong tục/giỗ/đình/tín ngưỡng/nghi thức
+    dân gian. Kết luận: 0/7 facet culture/belief/ritual có nguồn trong lore_db hiện tại
+    → giữ nguyên planned (KHÔNG bịa nội dung để lấp — R_SUPREME "không bịa").
+
+# ============================================================
+# 7 FACET (mirror bp2/domain_specs.yaml — KHÔNG nhân đôi planned declaration,
+# chỉ tham chiếu domain.facet_id + tóm tắt usage_rule để đọc liền mạch tại BP7)
+# ============================================================
+items:
+  - item: xung_ho_convention
+    domain_facet: culture.xung_ho_convention
+    desc_mirror: "Tap quan xung ho theo vung/tuoi/quan he"
+    lore_classification: "KHONG co trong bible/02 — planned, giu nguyen bp2 sot (bible/38_culture_bible.yaml)"
+    usage_rule: "Nhan vat xung ho SAI vung/tuoi so voi ho so (khi ho so co du lieu) = VIOLATION culture (mirror bp2 invariant)"
+
+  - item: le_gio_custom
+    domain_facet: culture.le_gio_custom
+    desc_mirror: "Phong tuc gio/le/dinh lang doi thuong"
+    lore_classification: "KHONG co trong bible/02 — planned, giu nguyen bp2 sot (bible/38_culture_bible.yaml)"
+    usage_rule: "Chi tiet gio/le sai (vd sai le nghi thuc dia phuong) = VIOLATION culture"
+
+  - item: kieng_ky_daily
+    domain_facet: culture.kieng_ky_daily
+    desc_mirror: "Kieng ky doi thuong nguoi Viet (khong phai luat sieu nhien)"
+    lore_classification: "KHONG co trong bible/02 — planned, giu nguyen bp2 sot (bible/38_culture_bible.yaml)"
+    usage_rule: "Phan biet kieng-ky-dan-gian (culture, co the SAI-that) voi luat sieu nhien that (supernatural domain, bible/02 permanent_locks) — 2 domain KHONG gop"
+
+  - item: tin_nguong_he
+    domain_facet: belief.tin_nguong_he
+    desc_mirror: "He tin nguong nhan vat TIN (Phat/Dao Mau/Thanh Hoang)"
+    lore_classification: "KHONG co trong bible/02 — planned, giu nguyen bp2 sot (bible/39_belief_bible.yaml). NHAY CAM: Mr.Long duyet danh muc truoc khi field-hoa (bp2 blocking_dependency)"
+    usage_rule: "Nhan vat hanh xu trai belief da khai trong ho so = VIOLATION (chi ap dung KHI ho so co field nay — hien chua co nhan vat nao co)"
+
+  - item: am_duong_quan_niem
+    domain_facet: belief.am_duong_quan_niem
+    desc_mirror: "Quan niem am duong/vong hon trong dan gian (co the SAI so voi supernatural that)"
+    lore_classification: "KHONG co trong bible/02 — planned, giu nguyen bp2 sot (bible/39_belief_bible.yaml)"
+    usage_rule: "PHAN BIET RO: quan niem dan gian (belief, nhan vat TIN, co the SAI) vs su that sieu nhien (bible/02 world_rules/permanent_locks, KHONG duoc mau thuan) — nhan vat co the tin sai ve chuyen xe, nhung truyen KHONG duoc mau thuan voi permanent_locks"
+
+  - item: nghi_thuc_catalog
+    domain_facet: ritual.nghi_thuc_catalog
+    desc_mirror: "Catalog nghi thuc (cung/khan/dot vang/goi hon/tay ue)"
+    lore_classification: "KHONG co trong bible/02 — planned, giu nguyen bp2 sot (bible/40_ritual_bible.yaml). Mr.Long duyet catalog + muc chi tiet cho phep"
+    usage_rule: "Nghi thuc trong tap PHAI theo catalog (khi co); nghi thuc bia = VIOLATION canon (mirror bp2 invariant)"
+
+  - item: ritual_steps
+    domain_facet: ritual.ritual_steps
+    desc_mirror: "Chuoi buoc chuan tung nghi thuc (lam dung/sai co hau qua)"
+    lore_classification: "KHONG co trong bible/02 — planned, giu nguyen bp2 sot (bible/40_ritual_bible.yaml), phu thuoc nghi_thuc_catalog"
+    usage_rule: "Buoc nghi thuc sai thu tu so voi catalog (khi co) = VIOLATION — hau qua trong truyen phai nhat quan voi 'lam sai co hau qua'"
+
+# ============================================================
+# INVARIANT (validator enforce)
+# ============================================================
+invariants:
+  - rule: "Moi item.domain_facet PHAI resolve that trong bp2/domain_specs.yaml (domain ton tai + facet_id ton tai duoi dung domain do) — facet ma = FAIL"
+    enforcer: {status: planned, planned_path: tools/bp7_narrative_check.py, owner: story_planner,
+              reason_not_exists_yet: "Dang xay dung cung BP7", target_milestone: M2_planner_generator,
+              blocking_dependency: "BP7 candidate build"}

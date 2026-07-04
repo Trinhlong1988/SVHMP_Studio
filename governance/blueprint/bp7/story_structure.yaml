@@ -1,0 +1,80 @@
+# BP7 STORY STRUCTURE v1.0.0 — cap cau truc Scene->Act->Episode->Season->Series->Ending
+# (TASK_BP7_NARRATIVE deliverable 1). STRUCTURE thuoc domain story_planner (da dong
+# BP2 — phan quyet: facet != domain, BPC_V2_FINAL_ADJUDICATION) — BP7 KHONG nang domain,
+# chi field-hoa cau truc chi tiet hon o tang kien truc rieng (mirror cach BP6 lam voi
+# decision_engine: bp2 sot van planned, BP6/BP7 la lop kien truc bo sung).
+# RECONCILE bat buoc: component EPISODE TRO bible/01 (khong chep) — lech bible = FAIL.
+
+meta:
+  version: 1.0.0
+  pack: bp7_narrative
+  status: candidate            # Builder khong lock/tag — Mr.Long ky sau audit
+  owner_domain: story_planner
+  reconcile_note: |
+    scene_act_structure (bp2 facet, story_planner) van planned (planned_path:
+    schemas/story_plan_schema.yaml — chua ky). File nay la kien truc CHI TIET
+    cap-tang, khong flip bp2 facet (giong cach BP6 khong flip decision_engine facet).
+
+# ============================================================
+# 6 CAP CAU TRUC (Scene -> Act -> Episode -> Season -> Series -> Ending)
+# ============================================================
+levels:
+  - level_id: scene
+    parent: act
+    desc: "Don vi nho nhat — 1 boi canh/1 khoanh khac lien tuc, khong ngat thoi gian"
+    components_required: []   # scene tu do noi dung, khong component co dinh
+    sot: {status: planned, planned_path: governance/blueprint/schemas/story_plan_schema.yaml,
+          owner: story_planner, reason_not_exists_yet: "Cau truc scene chua field-hoa (BP2 M2)",
+          target_milestone: M2_planner_generator, blocking_dependency: "Mr.Long duyet format ke hoach"}
+    entity_ref: scene   # khop bp2 story_planner.entities
+
+  - level_id: act
+    parent: episode
+    desc: "Nhom scene trong 1 episode theo nhip kich tinh (KHONG phai component ten rieng nhu HOOK/SETUP)"
+    components_required: []   # Act = grouping level, chua co component rieng field-hoa
+    sot: {status: planned, planned_path: governance/blueprint/schemas/story_plan_schema.yaml,
+          owner: story_planner, reason_not_exists_yet: "Act chua co entity/facet rieng trong BP2 (chi scene/episode_plan/season_plan) — cho RFC neu can field-hoa sau",
+          target_milestone: M2_planner_generator, blocking_dependency: "Mr.Long duyet format ke hoach"}
+    note: "Task BP7 chi dinh Act trong chuoi cap — KHONG bia component/rule rieng cho Act (chua co can cu trong bible)."
+
+  - level_id: episode
+    parent: season
+    desc: "1 tap — 6 section bat buoc theo dung thu tu (bible/01 da khoa nhip cau moi section)"
+    components_required: [HOOK, SETUP, INCIDENT, REVEAL, PAYOFF, CLIFFHANGER]
+    sot: {status: exists, path: bible/01_narrative_structure.yaml,
+          key: bimodal_sentence_length_per_section.pattern_per_section}
+    reconcile: "6 component TRO bible/01 (khong chep noi dung nhip cau) — lech bible/01 (thieu/thua/doi ten section) = FAIL"
+    entity_ref: episode_plan   # khop bp2 story_planner.entities (dat ten episode_plan trong BP2)
+
+  - level_id: season
+    parent: series
+    desc: "Nhom episode (vd EP01-EP50 / EP51-EP90 theo bible/21b) — chua co field-hoa boundary rieng ngoai spec"
+    components_required: []
+    sot: {status: exists, path: bible/21b_ep51_90_spec.yaml}   # chi xac nhan file ton tai (season boundary tham chieu)
+    entity_ref: season_plan   # khop bp2 story_planner.entities
+
+  - level_id: series
+    parent: null
+    desc: "Toan bo 90 tap — KPI + arc tong (SERIES_ARC_RULES bible/00)"
+    components_required: []
+    sot: {status: exists, path: bible/16_series_kpi.yaml}
+
+  - level_id: ending
+    parent: series
+    desc: "Quy tac ket thuc — MOI episode (unresolved_memory bat buoc) + series finale (EP90)"
+    components_required: []
+    sot: {status: exists, path: bible/00_constitution.yaml, key: ENDING_RULES}
+    reconcile: "2 quy tac (unresolved_memory mandatory, lingering_question preferred) TRO bible/00 — khong chep lai gia tri"
+
+# ============================================================
+# INVARIANTS (validator enforce)
+# ============================================================
+invariants:
+  - rule: "components_required cua level 'episode' PHAI == đúng thứ tự bible/01 pattern_per_section keys (HOOK/SETUP/INCIDENT/REVEAL/PAYOFF/CLIFFHANGER) — xoá/thêm/đổi thứ tự = FAIL"
+    enforcer: {status: planned, planned_path: tools/bp7_narrative_check.py, owner: story_planner,
+              reason_not_exists_yet: "Dang xay dung cung BP7", target_milestone: M2_planner_generator,
+              blocking_dependency: "BP7 candidate build"}
+  - rule: "level.sot.status=exists path+key PHAI resolve that (DUP-KEY loader single-impl)"
+    enforcer: {status: planned, planned_path: tools/bp7_narrative_check.py, owner: story_planner,
+              reason_not_exists_yet: "Dang xay dung cung BP7", target_milestone: M2_planner_generator,
+              blocking_dependency: "BP7 candidate build"}
