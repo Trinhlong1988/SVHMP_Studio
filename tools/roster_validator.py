@@ -152,6 +152,23 @@ def check_c5_knowledge_consistency(bible37, passengers):
     return errs
 
 
+# C1 MIEN TRU ten canon trich TRUC TIEP tu episode.md DA PHAT HANH (khong phai sinh
+# moi tu pool) - cung nguyen tac voi bible/23 CHAR_NAM='Nam'/CHAR_DRIVER='Bac tai' (MIEN
+# TRU vi recurring), nhung day la waiver 1-lan, KHONG phai recurring. Pham vi HEP, tung
+# ten phai ghi ro nguon (waiver ep_30/ep_50, Mr.Long xac nhan 5/7) - KHONG duoc dung de
+# nhet ten bia sau nay.
+C1_CANON_SINGLE_SYLLABLE_EXEMPT = {
+    'Nguyễn': 'PAS_0131 waiver ep_30 - ten canon episode.md da phat hanh, khong sinh moi',
+}
+# rule_02 (unique am-tiet toan cuc) MIEN TRU rieng cho ten canon co am-tiet trung nhan
+# vat chinh da khoa vi ly do THAT trong truyen (vd chi em gai cung goc ten gia dinh) -
+# KHONG phai sinh trung ngau nhien tu pool.
+C1_RULE02_CANON_EXEMPT_WORDS = {
+    'Hạ': 'PAS_0151 Ha Nhi (waiver ep_50) - chi gai ruot Ha Vy, cung goc ten gia dinh THAT trong truyen (episode.md dong 74), khong phai trung ngau nhien',
+    'Nhi': 'PAS_0151 Ha Nhi (waiver ep_50) - ten canon episode.md da phat hanh',
+}
+
+
 def validate(passengers, forbidden, bible23=None, bible37=None):
     """Trả (violations, warns). Mỗi item: 'Cx pas_id: mô tả'.
     bible23/bible37 None -> bỏ qua C4/C5 (tương thích test C1-C3 cũ)."""
@@ -163,17 +180,17 @@ def validate(passengers, forbidden, bible23=None, bible37=None):
         words = name.split()
 
         # C1 naming
-        if len(words) < 2:
+        if len(words) < 2 and name not in C1_CANON_SINGLE_SYLLABLE_EXEMPT:
             violations.append(f"C1 {pid}: '{name}' vi phạm rule_01 (<2 âm tiết)")
         for w in words:
             if w == 'Nam':
                 violations.append(f"C1 {pid}: '{name}' chứa 'Nam' (rule_04 recurring collision)")
             if w in forbidden:
                 violations.append(f"C1 {pid}: '{name}' chứa từ cấm '{w}' (Mr.Long 27/6)")
-            if w in word_owner:
+            if w in word_owner and w not in C1_RULE02_CANON_EXEMPT_WORDS:
                 violations.append(
                     f"C1 {pid}: '{name}' trùng âm tiết '{w}' với '{word_owner[w]}' (rule_02)")
-            else:
+            elif w not in word_owner:
                 word_owner[w] = name
 
         # C2 quê↔giọng

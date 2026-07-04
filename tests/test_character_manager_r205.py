@@ -13,14 +13,22 @@ reg = CharacterRegistry()
 pas = reg.all('passenger')
 rec = reg.all('recurring')
 
-ck("load 100 passenger", len(pas) == 100, len(pas))
+ck("load 139 passenger (100 goc + 39 backfill ep11-50, merge per Mr.Long 5/7)", len(pas) == 139, len(pas))
 ck("load 2 recurring (Bac tai + Nam)", len(rec) == 2, len(rec))
 ck("id duy nhat", len({c.id for c in reg.all()}) == len(reg.all()))
 ck("naming bible/23 = 0 loi (tai dung, khong sinh)", len(reg.validate_names()) == 0)
 
 d = reg.distribution()
-ck("pillar khoa 32/24/20/14/10", d['by_pillar'].get('family_regret') == 32 and d['by_pillar'].get('self_regret') == 10)
-ck("gender 50/50", d['by_gender'] == {'nu': 50, 'nam': 50}, d['by_gender'])
+# CAP NHAT 5/7: 32/24/20/14/10 la balance-target CHI cho 100 passenger GOC (gen_100_passenger.py,
+# distribution_lock_bible_11 trong roster yaml) - 39 backfill (text-mining tu episode.md, khong
+# phai generator can bang) lam thay doi tong so THAT: family=40/love=31/promise=29/kindness=23/self=15
+# + 1 RFC_PENDING (Ha Nhi, waiver ep_50, cho Mr.Long duyet archetype moi). Kiem tong THAT, khong
+# phai balance-target cu (van giu nguyen trong roster yaml, chi ap dung cho 100 goc).
+ck("pillar tong THAT sau merge (family=40/love=31/promise=29/kindness=23/self=15/RFC_PENDING=1)",
+   d['by_pillar'].get('family_regret') == 40 and d['by_pillar'].get('self_regret') == 15
+   and d['by_pillar'].get('RFC_PENDING') == 1, d['by_pillar'])
+ck("gender tong THAT sau merge (khong con 50/50 dung vi 39 backfill khong can bang theo generator)",
+   d['by_gender'] == {'nu': 69, 'nam': 70}, d['by_gender'])
 ck("region_dialect DA set >=3 vung (sau migrate v2)", d['by_region_dialect'].get('?', 0) == 0 and len([k for k in d['by_region_dialect'] if k != '?']) >= 3)
 
 cr = reg.completeness_report()

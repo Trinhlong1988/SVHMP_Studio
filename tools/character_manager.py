@@ -199,19 +199,26 @@ class CharacterRegistry:
         }
 
     # ---------- VALIDATE NAMING (reuse bible/23 rules — QA enforce, KHONG sinh) ----------
+    # MIEN TRU ten canon trich TRUC TIEP tu episode.md DA PHAT HANH (waiver ep_30/ep_50,
+    # Mr.Long xac nhan 2026-07-05) - PHAI dong bo voi tools/roster_validator.py cung ten
+    # (2 noi kiem trung logic, chua gop lai - R211 backlog). Sua 1 ben PHAI sua ben kia.
+    _RULE01_EXEMPT = {'Nguyễn'}
+    _RULE02_EXEMPT_WORDS = {'Hạ', 'Nhi'}
+
     def validate_names(self) -> list:
         issues = []
         seen_words = {}
         for c in self.all('passenger'):
             words = c.char_name.split()
-            if len(words) < 2:
+            if len(words) < 2 and c.char_name not in self._RULE01_EXEMPT:
                 issues.append(f"{c.id} '{c.char_name}': rule_01 <2 am tiet")
             if 'Nam' in words:
                 issues.append(f"{c.id} '{c.char_name}': rule_04 trung word recurring 'Nam'")
             for w in words:
-                if w in seen_words and seen_words[w] != c.id:
+                if w in seen_words and seen_words[w] != c.id and w not in self._RULE02_EXEMPT_WORDS:
                     issues.append(f"{c.id} '{c.char_name}': rule_02 word '{w}' trung {seen_words[w]}")
-                seen_words[w] = c.id
+                if w not in seen_words:
+                    seen_words[w] = c.id
         return issues
 
     # ---------- ENRICH (bo sung truong mo rong, co validate) ----------
