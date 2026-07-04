@@ -1336,5 +1336,29 @@ files:
     domain: governance
     status: active
     tier: 0
+  governance/proposals/supernatural_typology_proposal.yaml:
+    domain: supernatural
+    status: active
+    tier: 1
+  runtime/supernatural_state_machine.yaml:
+    domain: supernatural
+    status: active
+    tier: 2
+  reports/G5_HANDOFF_G8.md:
+    domain: supernatural
+    status: active
+    tier: 2
+  tools/supernatural_validator.py:
+    domain: supernatural
+    status: active
+    tier: 3
+  tools/g5_supernatural_check.py:
+    domain: supernatural
+    status: active
+    tier: 3
+  tests/test_supernatural_validator.py:
+    domain: supernatural
+    status: active
+    tier: 3
 generated_by: tools/registry_triage.py
-total: 334
+total: 340

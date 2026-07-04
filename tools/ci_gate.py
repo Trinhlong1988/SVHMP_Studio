@@ -27,6 +27,7 @@ CHECKS = [
     ('R208_age',  'tests/test_dialogue_appropriateness_1000_r208.py'),
     ('project_config', 'tools/validate_project_config.py'),   # PACK4/15: hop dong project_config (scan repo)
     ('G2_roster',  'tools/roster_validator.py'),   # G2 B4: naming bible/23 + que<->giong R210 (WARN mode; --strict sau khi fill dat nguong Tier1 100%)
+    ('g5_supernatural', 'tools/g5_supernatural_check.py'),   # G5: typology + possession SM cau truc (KHONG quet noi dung episode - do la G8)
 ]
 
 # Error Code Standard (SVAF backlog 2/5, governance/error_code_standard.yaml) — chi
@@ -36,7 +37,7 @@ STAGE_CODES = {
     'registry': 'REG2000', 'blueprint': 'ART4001', 'R199_tail': 'QA1010',
     'R203_conf': 'QA1011', 'R205_char': 'QA1012', 'R206_voice': 'QA1013',
     'R207_canon': 'QA1014', 'R208_age': 'QA1015', 'project_config': 'ART4002',
-    'G2_roster': 'QA1001', 'pytest_suite': 'QA1099',
+    'G2_roster': 'QA1001', 'pytest_suite': 'QA1099', 'g5_supernatural': 'ONT5001',
 }
 
 

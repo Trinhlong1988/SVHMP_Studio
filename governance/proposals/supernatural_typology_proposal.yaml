@@ -1,0 +1,123 @@
+# ============================================================
+# D1 — SUPERNATURAL TYPOLOGY PROPOSAL (TASK_G5_SUPERNATURAL.md, CMD_BUILD_3 4-5/7)
+# DE XUAT — writer chinh thuc = mr_long. File nay KHONG dat trong bible/ (bible/*.yaml
+# thuoc quyen LEAD/Mr.Long, khong phai CMD_BUILD_3). Khi Mr.Long duyet, noi dung se
+# duoc chuyen vao bible/38-40 (culture/belief/ritual, hien planned theo bp7/cultural_spec.yaml)
+# hoac 1 bible moi rieng cho supernatural typology.
+#
+# NGUON: Cultural KB DA VERIFY (governance/evidence_schema_cultural_kb.yaml +
+# governance/proposals/cultural_kb_evidence_sample.yaml, deep-research 4/7) VA
+# Desktop\CULTURAL_EVENTS_KB_DRAFT.md (input tho, tham chieu muc 3/6). KHONG bia
+# quyen_nang/gioi_han ngoai nhung gi draft da mo ta — dien giai hop ly TU mo ta co san,
+# khong them chi tiet moi.
+#
+# QUAN TRONG (PLANNED HONESTY): governance/blueprint/bp7/cultural_spec.yaml xac nhan
+# CA 7 facet culture/belief/ritual VAN la "planned" (0 noi dung that trong bible/02_lore_db.yaml
+# — tu bp7 tu ghi ro). Vi vay truong `bp7_facet_mirror` duoi day CHI la lien ket CAU TRUC
+# (facet_id da khai) cho tuong lai, KHONG PHAI claim da co noi dung that trong BP7 —
+# nguon THAT duy nhat cho typology nay la Cultural KB (evidence schema rieng), khong phai BP7.
+#
+# sensitivity: PHAI dung dung enum bp9/content_policy.yaml#sensitivity_tiers
+# (low|medium|high) — KHONG tu dinh nghia thang do moi (R211, theo dung PHAN BIEN
+# TASK_G5 "chi dung enum sensitivity BP9").
+# ============================================================
+version: 1.0
+authority: "CMD_BUILD_3 (TASK_G5_SUPERNATURAL.md deliverable D1), per Mr.Long authorization"
+status: proposal   # KHONG phai locked/candidate cua BP-chain — day la DE XUAT cho ben ngoai chuoi BP
+writer_of_record: mr_long
+sensitivity_enum_source: governance/blueprint/bp9/content_policy.yaml#sensitivity_tiers
+
+entities:
+  - entity_type: ma_da
+    nguon_goc:
+      cultural_kb_ref: "Desktop CULTURAL_EVENTS_KB_DRAFT.md muc 2 (VUNG BIEN) — 'Ma da'"
+      bp7_facet_mirror: "belief.am_duong_quan_niem (planned, chua co noi dung that trong BP7)"
+      evidence: {status: hypothesis, source: "folklore pho bien toan quoc, draft khong trich nguon
+                hoc thuat cu the", volume: null, page: null, confidence: null}
+    mo_ta: "Vong nguoi chet duoi chua sieu thoat, dan gian tin 'keo chan nguoi the mang' o ben
+           song/bai bien"
+    quyen_nang: "Keo/nam giu nguoi song xuong nuoc (chi noi voi khu vuc nuoc — song/ben/bai bien,
+                khong roi khoi vung nuoc gan noi chet)"
+    gioi_han: "Chi hoat dong duoc gan/trong nuoc noi minh chet; khong the len bo/vao nha"
+    cach_hoa_giai: "Nguoi 'the mang' moi thay the duoc vi tri — vong cu duoc sieu thoat (dung
+                   motif dan gian pho bien, KHONG mo ta nghi thuc cu the co the lam theo — HB01)"
+    sensitivity: low
+
+  - entity_type: ma_tranh
+    nguon_goc:
+      cultural_kb_ref: "Desktop CULTURAL_EVENTS_KB_DRAFT.md muc 3 (RUNG NUI) — 'Ma tranh'"
+      bp7_facet_mirror: "belief.am_duong_quan_niem (planned, chua co noi dung that trong BP7)"
+      evidence: {status: hypothesis, source: "folklore mien nui pho bien, draft khong trich nguon
+                hoc thuat cu the", volume: null, page: null, confidence: null}
+    mo_ta: "Dan gian: vong nguoi bi ho vo, phai 'dan' ho bat nguoi khac moi duoc thoat"
+    quyen_nang: "Dan duong/du ho toi nan nhan moi (chi hoat dong o rung nui, gan khu vuc minh
+                bi vo)"
+    gioi_han: "Bi rang buoc vao dung 1 con ho (khong tu do), khong the roi khoi rung"
+    cach_hoa_giai: "Nan nhan moi bi ho vo thay the vi tri — chuoi nan nhan tiep dien cho den khi
+                   co nguoi pha vong lap (motif dan gian, khong mo ta nghi thuc pha giai cu the)"
+    sensitivity: low
+
+  - entity_type: ma_xo
+    nguon_goc:
+      cultural_kb_ref: "Desktop CULTURAL_EVENTS_KB_DRAFT.md muc 3 (RUNG NUI) — 'Ma xo', draft tu
+                       danh dau '⚠️needs-source'"
+      bp7_facet_mirror: "belief.tin_nguong_he (planned, chua co noi dung that trong BP7)"
+      evidence: {status: hypothesis, source: null, volume: null, page: null, confidence: null}
+    mo_ta: "Vong giu cua trong nha/kho, gan tin nguong mot so dan toc thieu so phia Bac"
+    quyen_nang: "Bao ve/giu tai san trong pham vi 1 can nha/kho cu the (khong roi khoi noi duoc
+                giao giu)"
+    gioi_han: "Chi hoat dong trong pham vi nha/kho da gan bo; khong the tan cong nguoi ngoai cuoc
+              khong lien quan tai san"
+    cach_hoa_giai: "KHONG mo ta cach 'tro/duoi' cu the (sensitivity high — dung den tin nguong
+                   DTTS dang thuc hanh that, HB01 + ton kinh tuyet doi theo bp9 extra_rule)"
+    sensitivity: high   # dung den van hoa DTTS — bp9 sensitivity_tiers.high.extra_rule ap dung
+
+  - entity_type: oan_hon_chien_tran
+    nguon_goc:
+      cultural_kb_ref: "Desktop CULTURAL_EVENTS_KB_DRAFT.md muc 6 (HUE) — 'Oan hon chien tran',
+                       lien he Dan Am Hon Hue da verified"
+      bp7_facet_mirror: "belief.am_duong_quan_niem (planned, chua co noi dung that trong BP7)"
+      evidence: {status: hypothesis, source: "khai quat dan gian; rieng su kien Dan Am Hon Hue
+                lap 1894 la verified (xem cultural_kb_evidence_sample.yaml#dan_am_hon_hue_lap_1894),
+                nhung 'oan hon chien tran' noi chung khong co nguon hoc thuat rieng trong draft",
+                volume: null, page: null, confidence: null}
+    mo_ta: "Dai dat nhieu lop chien tranh chong len nhau; mieu am hon rai rac, gan voi su kien
+           lich su that (vd That thu Kinh do 1885)"
+    quyen_nang: "Hien dien/gay cam giac bat an tai dung vi tri xay ra su kien lich su (khong di
+               chuyen xa khoi dia diem goc)"
+    gioi_han: "Gan chat voi dia diem lich su cu the — khong the xuat hien noi khong lien quan
+              chien su"
+    cach_hoa_giai: "Le te chung (mirror Dan Am Hon — cung chung 1 ngay gio, KHONG mo ta chi tiet
+                   nghi thuc co the lam theo — HB01)"
+    sensitivity: medium   # cham lich su that (su kien 1885) — bp9 sensitivity_tiers.medium
+
+  - entity_type: hon_sieu_thoat_phat_giao
+    nguon_goc:
+      cultural_kb_ref: "Desktop CULTURAL_EVENTS_KB_DRAFT.md muc 4 (BAC BO) — 'Thang co hon' +
+                       khai niem sieu thoat Phat giao pho bien"
+      bp7_facet_mirror: "belief.tin_nguong_he (planned, chua co noi dung that trong BP7)"
+      evidence: {status: hypothesis, source: "khai niem Phat giao pho bien (Vu Lan bao hieu, xa
+                toi vong nhan thang 7 am), draft khong trich kinh dien cu the", volume: null,
+                page: null, confidence: null}
+    mo_ta: "Vong linh duoc tung kinh/hoi huong cong duc de sieu thoat, gan le Vu Lan/xa toi vong
+           nhan (thang 7 am lich)"
+    quyen_nang: "Nhan duoc cong duc hoi huong -> giam dan luyen chap, tien toi sieu thoat"
+    gioi_han: "Khong the tu sieu thoat neu con nang chap (regret) chua duoc giai — can tac dong
+              tu ben ngoai (nguoi song hoi huong/tha thu)"
+    cach_hoa_giai: "Nguoi song hoi huong cong duc/tha thu cho vong — mo ta o muc khai quat tinh
+                   than Phat giao, KHONG huong dan nghi thuc tung kinh cu the (HB01); TON KINH
+                   TUYET DOI, khong che gieu (bp9 sensitivity_tiers.high.extra_rule vi day la
+                   ton giao dang thuc hanh that)"
+    sensitivity: high   # dung den Phat giao dang thuc hanh that — extra_rule ton kinh ap dung
+
+notes:
+  - "5/5 entity co nguon (Cultural KB draft, mirror DoD 'Typology >=5 loai co nguon') — 4/5 la
+     status=hypothesis (dan gian pho bien, draft khong trich nguon hoc thuat rieng cho tung
+     chi tiet), 1 phan (oan_hon_chien_tran) lien he 1 su kien da verified (Dan Am Hon Hue).
+     KHONG nang cap gia tao len 'verified' khi chua co nguon rieng — dung tinh than R9 Evidence First."
+  - "sensitivity gan theo dung tinh than bp9/content_policy.yaml: ma_da/ma_tranh (folklore
+     thuan, khong dung ton giao/DTTS that) = low; oan_hon_chien_tran (dung lich su that
+     nhung khong phai ton giao dang hanh) = medium; ma_xo (DTTS dang thuc hanh) va
+     hon_sieu_thoat_phat_giao (Phat giao dang thuc hanh) = high."
+  - "KHONG entity nao mo ta du chi tiet buoc+vat lieu+cau khan de lam theo that (HB01) — moi
+     cach_hoa_giai deu o muc khai quat/motif, dung tinh than PHAN BIEN TASK_G5."

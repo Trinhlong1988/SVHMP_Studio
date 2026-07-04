@@ -15,9 +15,8 @@ prefixes:
   REG2xxx: "Registry / architecture-graph / domain / ownership consistency (bp1-bp3)"
   QA1xxx: "Noi dung/text/character QA checks (roster_validator, ci_gate regression stages)"
   ART4xxx: "Artifact/suite/contract validation (bp0 constitution, bp5 suite, project_config)"
-  ONT5xxx: "Ontology / cultural-belief facet checks — RESERVED, chua co checker gan (xem
-    TASK_BACKLOG item 4 Evidence Schema Cultural KB, se dung khi bible cultural_events_kb
-    duoc ky chinh thuc)"
+  ONT5xxx: "Ontology / cultural-belief facet checks (tools/g5_supernatural_check.py —
+    typology + possession state machine, TASK_G5_SUPERNATURAL.md)"
 
 # Moi code: file that su in ra ma nay (hoac stage trong ci_gate/blueprint_suite dai dien
 # cho file do). "placement": inline = nam trong chinh bracket [FAIL CODE]/[WARN CODE];
@@ -88,6 +87,11 @@ codes:
     file: tools/architecture_registry_check.py
     desc: "ci_gate stage registry — governance file_index/architecture_registry 0/0/0"
     placement: "append (via ci_gate.py stage line)"
+  ONT5001:
+    file: tools/g5_supernatural_check.py
+    desc: "typology proposal (sensitivity enum BP9 + facet mirror BP7) + possession
+          state machine (khong treo mai) — CAU TRUC, KHONG quet noi dung episode that"
+    placement: inline
 
 notes:
   - "Chua doi tools/architecture_registry_check.py hay tools/validate_project_config.py
