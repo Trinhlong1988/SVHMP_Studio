@@ -76,6 +76,19 @@ Mr.Long thấy + dán lại = thời gian builder ngồi không oan uổng. Về
 ý tưởng "Hermes-style PING→Telegram" (xem Nguồn cảm hứng) — mức ưu tiên nên nâng lên khi có nhiều
 pack chạy song song hơn.
 
+## G10 — "Sẽ vớt ý từ nhánh archive" là lời hứa, KHÔNG phải hành động — phải làm ngay lúc archive
+Case thật (4/7, LỖI CỦA CHÍNH KIỂM DUYỆT): va chạm BP6 (Bản A vs Bản B) — kiểm duyệt phán "Bản A đi
+tiếp, Bản B archive" và NÓI "sẽ diff Bản B vớt ý hay trước khi trình ký" — nhưng KHÔNG thực sự chạy
+diff đó. Bản B đã tự phát hiện **bible/31_golden_samples.yaml dòng 113 lỗi cú pháp YAML (crash cứng
+mọi parser, không riêng loader strict)** — Mr.Long chính tay ghi PING lúc đó "bible/31 defect cần ký
+fix bất kể chọn bản nào" — nhưng vì không ai trích ra khỏi nhánh archive, defect nằm chết ở đó **suốt
+nhiều tiếng đồng hồ** cho tới khi CMD_BUILD (làm BP8, cần bible/31 làm SoT golden_output) tình cờ đụng
+lại TỪ ĐẦU, tưởng là phát hiện mới. **Bài học:** "tôi sẽ vớt ý từ bản thua" là câu nói dễ, hành động
+thật là 1 lệnh `git diff <lock-branch> <archive-branch>` chạy NGAY lúc archive, không phải ý định để
+đó. Archive một nhánh mà không diff trước = tự tay chôn mọi phát hiện nó có, dù đúng dù sai. Áp dụng:
+mọi lần "archive, không merge" PHẢI kèm bước diff-and-extract LÀM NGAY trong cùng phiên, ghi kết quả
+diff vào chính commit message archive (không chỉ nói "tôi sẽ...").
+
 ## Nguồn cảm hứng
 So sánh với Hermes Agent (Nous Research, 4/7): pattern "skill file agent tự viết, mọi lần gọi lại
 đọc được" đúng hướng nhưng KHÔNG áp dụng "tự viết không kiểm duyệt" — file này làm thủ công, review
