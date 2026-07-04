@@ -2004,15 +2004,13 @@ rule_R141_diff_check:
   status: TBD
   description: "Bản rewrite vs cũ — flag fact drift"
 
-rule_R142_kill_switch:
+rule_R144_outline_kill_switch:
   status: TBD
   priority: CRITICAL
   description: "Lỗi nặng (timeline/reveal sớm/fact mâu thuẫn) → QUAY LẠI outline. KHÔNG rewrite tiếp"
-
-rule_R143_multi_pass_agent:
-  status: TBD
-  priority: CRITICAL
-  description: "Tách Writer + Logic QA + Language QA + Emotion QA + Publisher. Mỗi agent 1 việc. KHÔNG em vừa viết vừa QA."
+  note: "Đổi từ R142 (per Mr.Long authorization 2026-07-04, audit dup-key 4/7): R142 dup-key với
+    bản Publish Score (session 30/6 dòng dưới, status PARTIAL, có gate thật publish_score.py) —
+    giữ R142 = bản Publish Score; ý tưởng outline-stage (chưa build) dời sang R144."
 
 # Mr.Long blueprint commitment 30/6
 blueprint_commitment:
