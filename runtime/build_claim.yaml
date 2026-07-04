@@ -16,8 +16,9 @@ claims:
     status: released
   g2_character:
     claimed_at: '2026-07-05T00:38:51'
+    released_at: '2026-07-05T00:57:33'
     session: G2_EXECUTOR
-    status: active
+    status: released
   g4_world:
     claimed_at: '2026-07-04T23:55:53'
     session: CMD_BUILD
