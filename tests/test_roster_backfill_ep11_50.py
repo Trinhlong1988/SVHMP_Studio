@@ -103,16 +103,32 @@ def test_mirror_shard_cluster_consistent_object():
         f"dang la {by_ep[25]['haunting_symbol']!r}")
 
 
-def test_continuity_warning_flagged_for_canon_touching_entries():
-    """PAS_0137 (ep_36, nhac Khai Phong) va PAS_0141 (ep_40, nhac Ha Vy/anh Hai)
-    dung cham nhan vat chinh da khoa bible/31 — PHAI co canh bao ro trong
-    archetype_fit_note hoac death.pain, KHONG duoc am tham chot nhu binh thuong."""
+def test_continuity_resolved_entries_have_real_regret_no_placeholder_warning():
+    """PAS_0137 (ep_36) va PAS_0141 (ep_40) tung bi gac 'CANH BAO CONTINUITY' cho
+    Mr.Long xac nhan. Mr.Long DA XAC NHAN khong dung canon (2026-07-04) — 2 co
+    canh bao placeholder DA GO, thay bang regret_label/death.pain THAT (khong
+    con text 'CANH BAO CONTINUITY' cu, khong con object GAP_CHUA_XAC_DINH tam)."""
     by_id = {p['id']: p for p in _passengers()}
     for pid in ('PAS_0137', 'PAS_0141'):
         p = by_id[pid]
-        text = (p.get('archetype_fit_note', '') + p['death']['pain'])
-        assert 'CANH BAO' in text or 'canh bao' in text.lower(), (
-            f"{pid}: dung cham canon chinh (Khai Phong/Ha Vy) nhung KHONG co canh bao ro")
+        assert 'CANH BAO CONTINUITY' not in p['regret_label'], (
+            f"{pid}: van con placeholder 'CANH BAO CONTINUITY' cu — chua duoc go dung")
+        assert p['haunting_symbol'] != 'GAP_CHUA_XAC_DINH', (
+            f"{pid}: van con object placeholder tam GAP_CHUA_XAC_DINH — chua dien that")
+        assert p.get('signature_object') and p.get('haunting_symbol'), pid
+
+
+def test_pas_0137_diem_boyfriend_named_tuan_not_khai_phong():
+    """Doc sau speech_evidence ep_36 xac nhan: nguoi yeu cua Diem (em gai nhan
+    vat) la 'Tuan' (SV Bach khoa) — header episode.md ghi nham 'Khai Phong' la
+    loi miner/header (KHONG phai lien ket canon that). regret_label/death.pain
+    PHAI dung ten THAT tu than bai (Tuan), khong lap lai ten sai cua header."""
+    by_id = {p['id']: p for p in _passengers()}
+    p = by_id['PAS_0137']
+    assert 'Tuấn' in p['death']['pain']
+    assert 'Khải Phong' not in p['death']['pain'], (
+        "death.pain khong duoc lap lai ten sai 'Khai Phong' tu header — than bai "
+        "xac nhan ten that la Tuan")
 
 
 def test_waivers_ep30_ep50_absent_pending_mr_long():

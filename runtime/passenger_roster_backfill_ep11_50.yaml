@@ -679,12 +679,15 @@ passengers:
 - id: PAS_0137
   char_name: Thuần Vạn
   pillar: family_regret
-  regret_sub_archetype: REG_FAM_004
-  regret_label: 'CANH BAO CONTINUITY: context nhac ten ''Khai Phong'' — nhan vat chinh da khoa bible/31. Em gai nhan vat nay
-    mat tai nan xe, tung yeu Khai Phong ma anh trai khong biet. De nghi Mr.Long xac nhan day co phai lien ket co chu dich
-    voi canon chinh truoc khi duyet regret_label cuoi cung.'
-  archetype_fit_note: 'Gan nhat (em mat, anh o xa khong kip) — em gai mat tai nan xe, anh chua biet em da co nguoi yeu (Khai
-    Phong — CANH BAO: cham nhan vat chinh da khoa bible/31, can Mr.Long xac nhan).'
+  regret_sub_archetype: REG_FAM_006
+  regret_label: 'Em gái (Diễm) yêu Tuấn 2 năm, giấu cả gia đình — Diễm mất tai nạn xe máy trên đèo Ô Quy Hồ, anh giữ tấm ảnh
+    Diễm+Tuấn 20 năm không dám cho ai xem'
+  archetype_fit_note: 'Gần nhất REG_FAM_006 (chưa thực sự hiểu người thân trước khi mất) — không hoàn hảo (đây là em gái
+    giấu chuyện tình chứ không phải mẹ). ĐÃ ĐỌC SÂU speech_evidence (ep_36:127-187) để xác nhận: header episode.md ghi nhầm
+    tên người yêu của Diễm là ''Khải Phong'' — THÂN BÀI xác nhận tên THẬT là ''Tuấn'' (sinh viên Bách khoa, xuất hiện lặp
+    lại dòng 151/153/157/161/163/171). Đây là LỖI MINER HEADER (tương tự lỗi bảy-năm/tám-năm ep_40) — KHÔNG có liên kết
+    Khải Phong trong truyện. Cảnh báo cũ đã GỠ đúng theo xác nhận Mr.Long; phát hiện thêm: header episode.md gốc cần sửa
+    ''Khải Phong'' → ''Tuấn'' (đề xuất riêng, ngoài phạm vi fix roster này).'
   signature_setting: setting_TBD
   age_range: 36-50
   gender: nam
@@ -692,7 +695,7 @@ passengers:
   narrative_hook: TBD by Generator
   source_ep: 36
   evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 36)
-  hometown_detail: Lào Cai
+  hometown_detail: Sa Pa (Lào Cai)
   status: draft
   life_status: linh_hon
   voice:
@@ -701,13 +704,12 @@ passengers:
     pronoun_system: tôi
   death:
     type: khong_ro
-    pain: 'CANH BAO CONTINUITY: context nhac ten ''Khai Phong'' — nhan vat chinh da khoa bible/31. Em gai nhan vat nay mat
-      tai nan xe, tung yeu Khai Phong ma anh trai khong biet. De nghi Mr.Long xac nhan day co phai lien ket co chu dich voi
-      canon chinh truoc khi duyet regret_label cuoi cung.'
-  signature_object: GAP_CHUA_XAC_DINH
-  haunting_symbol: GAP_CHUA_XAC_DINH
-  object_gap_note: Chua doc sau speech_evidence de xac dinh vat cu the (chi dung context-level evidence cho batch nay) — can
-    doc sau truoc khi chot object thuc, tam de placeholder ro rang.
+    pain: 'Em gái Diễm mất tai nạn xe máy đèo Ô Quy Hồ năm 20 tuổi — sau tang mới biết em yêu Tuấn (SV Bách khoa) 2 năm,
+      giấu cả gia đình vì muốn ổn định kinh tế trước khi báo — giữ tấm ảnh Diễm+Tuấn 20 năm không dám treo/cho ai xem'
+  signature_object: OBJ_ANH_CHUP_CHUNG
+  haunting_symbol: OBJ_ANH_CHUP_CHUNG
+  object_pairing_note: 'Khớp tốt: tấm ảnh Diễm+Tuấn chụp cùng ở Hồ Tây (ep_36:161-163), đúng ''tấm ảnh chụp chung đã ngả
+    vàng'' của OBJ_ANH_CHUP_CHUNG.'
 - id: PAS_0138
   char_name: Sen Lụa
   pillar: family_regret
@@ -795,35 +797,44 @@ passengers:
     doc sau truoc khi chot object thuc, tam de placeholder ro rang.
 - id: PAS_0141
   char_name: Lãm Chấn
-  pillar: family_regret
-  regret_sub_archetype: REG_FAM_006
-  regret_label: 'CANH BAO: nhan vat nay (''anh Hai'') tu xung la nguoi da goi cap cuu Ha Vy 7 nam truoc — lien ket truc tiep
-    voi canon chinh bible/31. Chua dien day tier1 day du, cho Mr.Long xem truoc.'
-  archetype_fit_note: 'CANH BAO CONTINUITY: context nhac ''anh Hai — chinh anh Hai goi cap cuu Ha Vy bay nam truoc'' — lien
-    ket TRUC TIEP toi nhan vat chinh da khoa (Ha Vy, bible/31). De nghi Mr.Long xac nhan truoc khi chot regret_label — day
-    co the la nhan vat co chu dich lien ket canon chinh, khong phai regret doc lap thong thuong.'
+  pillar: love_regret
+  regret_sub_archetype: REG_LOV_006
+  regret_label: 'Cùng Hạ Vy vẽ đồ án nhà phố hai tầng, ký tên chung — giữ cuộn giấy thiết kế 7 năm sau khi chị mất, cuối
+    cùng đặt lại trên thành cầu nơi từng gặp'
+  archetype_fit_note: 'Đã đọc SÂU đầy đủ episode.md ep_40 (không chỉ context) — nhân vật chính là ''Hải'' (đổi tên thành
+    Lãm Chấn theo wave1), kiến trúc sư 28 tuổi, từng hợp tác đồ án với Hạ Vy, gặp lại chị tại bệnh viện Bạch Mai 8 năm trước
+    (đã fix số liệu ''bảy năm''→''tám năm'' tại header ep_40 theo xác nhận kiểm duyệt/bible/27 fact_db). Gần nhất REG_LOV_006
+    (giữ vật kỷ niệm người đã mất, xử lý cảm xúc trì hoãn) — không hoàn hảo (đây là đồng nghiệp/bạn thân, không phải người
+    yêu xa). MR.LONG ĐÃ XÁC NHẬN (2026-07-04): liên kết với Hạ Vy tại đây là CHI TIẾT CỐ Ý của mạch truyện (episode.md dòng
+    262 xác nhận ep_33+ep_37+ep_40 là ''cluster geographic Hà Nội nội thành'' do Khải Phong tự phân loại) — KHÔNG phải xung
+    đột canon ngoài ý muốn, cảnh báo cũ đã GỠ.'
   signature_setting: setting_TBD
   age_range: 26-35
   gender: nam
   display_name: Lãm Chấn (26-35)
   narrative_hook: TBD by Generator
   source_ep: 40
-  evidence_ref: runtime/roster_backfill_draft.yaml#unmatched_episode_characters (ep 40)
+  evidence_ref: 'output/ep_40/episode.md (dòng 96-240, đọc đầy đủ); runtime/roster_backfill_draft.yaml#unmatched_episode_characters
+    (ep 40)'
   hometown_detail: Hà Nội
   status: draft
   life_status: linh_hon
   voice:
     region_dialect: bac
     hometown: Hà Nội
-    pronoun_system: tôi
+    pronoun_system: em
   death:
     type: khong_ro
-    pain: 'CANH BAO: nhan vat nay (''anh Hai'') tu xung la nguoi da goi cap cuu Ha Vy 7 nam truoc — lien ket truc tiep voi
-      canon chinh bible/31. Chua dien day tier1 day du, cho Mr.Long xem truoc.'
-  signature_object: GAP_CHUA_XAC_DINH
-  haunting_symbol: GAP_CHUA_XAC_DINH
-  object_gap_note: Chua doc sau speech_evidence de xac dinh vat cu the (chi dung context-level evidence cho batch nay) — can
-    doc sau truoc khi chot object thuc, tam de placeholder ro rang.
+    pain: 'Hợp tác đồ án nhà phố hai tầng với Hạ Vy, ký tên chung trên bản vẽ — gặp lại chị lần cuối tại bệnh viện Bạch
+      Mai 8 năm trước — giữ cuộn giấy thiết kế 7 năm không vứt, đã cưới người khác và hồi phục, cuối cùng đặt lại cuộn giấy
+      trên thành cầu nơi từng gặp chị'
+  signature_object: GAP_CUON_GIAY_THIET_KE
+  haunting_symbol: GAP_CUON_GIAY_THIET_KE
+  object_gap_note: 'Vật thật: cuộn giấy can thiết kế đồ án (ep_40:184,234). Episode.md dòng 39 tự ghi ''signature_object:
+    OBJ_GIAY_KTS'' nhưng mã này KHÔNG tồn tại trong bible/12 (40 object thật, đã kiểm chứng bằng grep) — xác nhận ĐỘC LẬP
+    cùng phát hiện GAP với PAS_0102 (cúc khô)/PAS_0117 (chậu cúc): bible/12 thiếu hẳn nhóm object ''văn bản/bản vẽ nghề
+    nghiệp''. Dùng placeholder GAP_CUON_GIAY_THIET_KE (khác OBJ_GIAY_KTS ad-hoc của episode.md, để nhất quán quy ước GAP_
+    trong file này) — đề xuất RFC bổ sung bible/12.'
 - id: PAS_0142
   char_name: Nhụy Lài
   pillar: family_regret
