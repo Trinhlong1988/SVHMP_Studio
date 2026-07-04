@@ -12,11 +12,11 @@ Tác giả: Hắc Dạ Ký.
 
 [pause:600ms]
 
-Series: Chuyến xe cuối cùng về đâu.
+Loạt truyện: Chuyến xe cuối cùng về đâu.
 
 [pause:600ms]
 
-Ai cũng có một chuyến xe chưa nói lời tạm biệt.
+Ai cũng có một chuyến xe chưa kịp nói lời tạm biệt.
 
 [pause:1000ms]
 
