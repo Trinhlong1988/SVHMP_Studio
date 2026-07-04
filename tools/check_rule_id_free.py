@@ -35,16 +35,23 @@ BIBLE_FILES = [
 ]
 
 
-def scan_id(n: int):
-    """Return list of (file, line_num, line_text, format_name) for all matches."""
+def scan_id(n: int, files=None):
+    """Return list of (file, line_num, line_text, format_name) for all matches.
+    files=None -> quet BIBLE_FILES that; truyen list khac de test tren tmp copy."""
     hits = []
     patterns = [
         (f'top_level',  re.compile(rf'^R{n}_[a-zA-Z]')),
+        (f'rule_prefix', re.compile(rf'^rule_R{n}_[a-zA-Z]')),   # bug 4/7: bible/00 dung
+        # quy uoc "rule_R{N}_xxx:" cho 76/123 rule (vd rule_R142_kill_switch) — pattern
+        # any_indent phia duoi VAN khop nhung scan_all()/check_staged() cu CHI dem
+        # top_level+list_id la "definition" -> rule_prefix lot khoi dup-check hoan toan
+        # (R142 dup that o bible/00 L2007+L2034 khong bi --all bat, chi --staged 1-ID bat).
         (f'any_indent', re.compile(rf'(?<![\dR])R{n}_[a-zA-Z]')),
         (f'list_id',    re.compile(rf'^\s*-\s*id:\s*R{n}\b')),
         (f'mention',    re.compile(rf'(?<![\d])R{n}(?![\d_])')),
     ]
-    for bf in BIBLE_FILES:
+    for bf in (files if files is not None else BIBLE_FILES):
+        bf = Path(bf)
         if not bf.exists(): continue
         lines = bf.read_text(encoding='utf-8').split('\n')
         for lnum, line in enumerate(lines, 1):
@@ -66,13 +73,16 @@ def check_single(n: int) -> int:
     return 1
 
 
-def scan_all() -> int:
+DEF_FORMATS = ('top_level', 'list_id', 'rule_prefix')
+
+
+def scan_all(files=None) -> int:
     """Scan R40-R200 for duplicates."""
     duplicates = []
     for n in range(40, 201):
-        hits = scan_id(n)
-        # filter to "definition" hits (top_level or list_id) — not just mentions
-        defs = [h for h in hits if h[3] in ('top_level', 'list_id')]
+        hits = scan_id(n, files)
+        # filter to "definition" hits (top_level/list_id/rule_prefix) — not just mentions
+        defs = [h for h in hits if h[3] in DEF_FORMATS]
         if len(defs) > 1:
             duplicates.append((n, defs))
     if not duplicates:
@@ -93,11 +103,14 @@ def check_staged() -> int:
                        capture_output=True, text=True, encoding='utf-8',
                        errors='replace', cwd=SVHMP, creationflags=CREATE_NO_WINDOW)
     diff = r.stdout
-    # Patterns for ADDED lines defining new rule
+    # Patterns for ADDED lines defining new rule (bug 4/7: thieu rule_R{N}_ prefix ->
+    # commit staged rule_R{N}_moi trung ID cu se lot qua pre-commit guard nay)
     add_top = re.compile(r'^\+R(\d+)_[a-zA-Z]', re.MULTILINE)
+    add_rule_prefix = re.compile(r'^\+rule_R(\d+)_[a-zA-Z]', re.MULTILINE)
     add_list = re.compile(r'^\+\s*-\s*id:\s*R(\d+)\b', re.MULTILINE)
     added_ids = set()
     for m in add_top.finditer(diff): added_ids.add(int(m.group(1)))
+    for m in add_rule_prefix.finditer(diff): added_ids.add(int(m.group(1)))
     for m in add_list.finditer(diff): added_ids.add(int(m.group(1)))
 
     if not added_ids:
@@ -108,7 +121,7 @@ def check_staged() -> int:
     fail = 0
     for n in sorted(added_ids):
         hits = scan_id(n)
-        defs = [h for h in hits if h[3] in ('top_level', 'list_id')]
+        defs = [h for h in hits if h[3] in DEF_FORMATS]
         if len(defs) > 1:
             fail += 1
             print(f'[BLOCK] R{n} CONFLICT — {len(defs)} definitions:')

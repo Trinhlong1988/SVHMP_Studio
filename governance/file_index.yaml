@@ -224,6 +224,10 @@ files:
     domain: tests
     status: active
     tier: 3
+  tests/test_check_rule_id_free_prefix.py:
+    domain: tests
+    status: active
+    tier: 3
   tests/test_hooks_wired.py:
     domain: tests
     status: active
@@ -1201,4 +1205,4 @@ files:
     status: active
     tier: 0
 generated_by: tools/registry_triage.py
-total: 300
+total: 301
