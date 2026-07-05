@@ -20,10 +20,9 @@ claims:
     session: KIEM_DUYET
     status: released
   g3_dialogue:
-    claimed_at: '2026-07-05T12:51:26'
-    released_at: '2026-07-05T15:11:58'
-    session: KIEM_DUYET_CLAUDE_5_7
-    status: released
+    claimed_at: '2026-07-05T15:35:32'
+    session: CMD_BUILD_3
+    status: active
   g4_world:
     claimed_at: '2026-07-04T23:55:53'
     released_at: '2026-07-05T01:51:56'
