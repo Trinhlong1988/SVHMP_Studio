@@ -35,7 +35,7 @@ intensity_level: 0.55
 quang_memory_fragment: M3 (Khải Phong ngẫm tên Hạ Vy + cúc tai)
 object_sub_arc: HOA_CUC cluster vật 2 (khăn thêu cúc — echo EP13)
 callback_target: ep_13 (object_echo HOA_CUC symbol)
-passenger_main: nu 56 Tâm Đan Chương Mỹ (từ chối cụ Mai bát phở 30 năm trước)
+passenger_main: nu 56 Thắm Hường Chương Mỹ (từ chối cụ Mai bát phở 30 năm trước)
 signature_object: OBJ_KHAN_QUANG_THEU_CUC (khăn thêu cúc kỉ niệm bà cụ Mai)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Chương Hoa Kỳ
@@ -114,7 +114,7 @@ Bà cụ ghế tám quay đầu. Đặt khăn lên đùi. Vuốt bông cúc thê
 
 [pause:1000ms]
 
-"Em là Tâm Đan. Bà cụ năm mươi sáu tuổi. Cô gái ấy em ở Chương Hoa Kỳ — quê. Hình bóng người con gái ấy làm kế toán Hà Nội — sắp về hưu."
+"Em là Thắm Hường. Bà cụ năm mươi sáu tuổi. Cô gái ấy em ở Chương Hoa Kỳ — quê. Hình bóng người con gái ấy làm kế toán Hà Nội — sắp về hưu."
 
 Giọng bà trầm — chậm — đều.
 
@@ -206,7 +206,7 @@ Khải Phong chớp mắt — nhìn qua cửa sổ. Bên mộ — bà cụ Mai x
 
 Khải Phong chớp lần nữa. Người bà cụ ấy tan ra.
 
-Người tên Tâm Đan ngẩng đầu. Lau khóe mắt. Quỳ thêm một lúc. Rồi đứng dậy.
+Người tên Thắm Hường ngẩng đầu. Lau khóe mắt. Quỳ thêm một lúc. Rồi đứng dậy.
 
 [pause:1500ms]
 
@@ -238,7 +238,7 @@ Bác tài liếc gương. "Vào đêm mười bốn. Hai vật cùng symbol — 
 
 Khải Phong gật.
 
-Đêm thứ mười bốn — Khải Phong đếm thêm. Xe đi tiếp về phía đường vành đai. Phía sau — Chương Mỹ khuất. Bà Tâm Đan ở lại bên mộ vô danh — quỳ — gửi khăn — gửi ba mươi năm hối tiếc qua đất.
+Đêm thứ mười bốn — Khải Phong đếm thêm. Xe đi tiếp về phía đường vành đai. Phía sau — Chương Mỹ khuất. Bà Thắm Hường ở lại bên mộ vô danh — quỳ — gửi khăn — gửi ba mươi năm hối tiếc qua đất.
 
 
 [pause:800ms]

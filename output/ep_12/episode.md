@@ -35,7 +35,7 @@ intensity_level: 0.55
 quang_memory_fragment: M3 (deepens — Khải Phong ngẫm tên Hạ Vy sâu hơn qua callback EP01)
 object_sub_arc: callback symbol (đồng hồ xà cừ 7:10 echo EP01)
 callback_target: ep_01 (object_echo OBJ_DONG_HO_XA_CU + driver extra line)
-passenger_main: nu 36 Vy An Long Biên (chia tay anh Khôi cầu Long Biên)
+passenger_main: nu 36 Huyền Trâm Long Biên (chia tay anh Khôi cầu Long Biên)
 signature_object: OBJ_DONG_HO_XA_CU (đồng hồ kim dừng 7:10)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Cầu Long Biên
@@ -122,7 +122,7 @@ Cô gái khẽ quay đầu lại. Vuốt mặt đồng xà trên cổ tay. Hơi 
 
 [pause:1000ms]
 
-"Em là Vy An. Ba mươi sáu tuổi. Em ở Long Biên — quận Long Biên. Em làm kiến trúc — văn phòng riêng nhỏ."
+"Em là Huyền Trâm. Ba mươi sáu tuổi. Em ở Long Biên — quận Long Biên. Em làm kiến trúc — văn phòng riêng nhỏ."
 
 Cô nói — giọng đều — như đã chuẩn bị từ trước.
 

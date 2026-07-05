@@ -35,7 +35,7 @@ intensity_level: 0.55
 quang_memory_fragment: M4 (Khải Phong ngẫm Hạ Vy tai nạn — đêm mưa — con đường)
 object_sub_arc: USB (ngoài cluster cúc — diversify)
 callback_target: none
-passenger_main: nam 42 Hữu Tài Sóc Sơn (bạn thân nhờ vay tiền chữa ung thư — không kịp về)
+passenger_main: nam 42 Thạch Vượng Sóc Sơn (bạn thân nhờ vay tiền chữa ung thư — không kịp về)
 signature_object: OBJ_USB (USB chứa thư bạn gửi — Tài không kịp đọc)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Sóc Sơn
@@ -110,7 +110,7 @@ Người đàn ông quay đầu lại. Đặt tay lên USB. Nín thở vài giâ
 
 [pause:1000ms]
 
-"Tôi là Hữu Tài. Bốn mươi hai tuổi. Tôi ở Sóc Sơn — quê. Tôi làm giám đốc nhỏ — công ty xuất nhập khẩu Hà Nội."
+"Tôi là Thạch Vượng. Bốn mươi hai tuổi. Tôi ở Sóc Sơn — quê. Tôi làm giám đốc nhỏ — công ty xuất nhập khẩu Hà Nội."
 
 Giọng anh trầm.
 

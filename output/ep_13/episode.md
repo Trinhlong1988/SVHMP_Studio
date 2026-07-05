@@ -35,7 +35,7 @@ intensity_level: 0.55
 quang_memory_fragment: M3 (Khải Phong nghe tên Hạ Vy — bắt đầu liên hệ với hoa cúc)
 object_sub_arc: HOA_CUC_KHO start cluster (vật 1 trong cluster 4)
 callback_target: none (EP setup sub-arc)
-passenger_main: nam 45 Bình Mỹ Đức (bố ung thư phổi hai năm trước)
+passenger_main: nam 45 Chương Dương Đức (bố ung thư phổi hai năm trước)
 signature_object: OBJ_HOA_CUC_KHO (cúc khô từ vườn bố trồng — chưa kịp tưới)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Mỹ Đức
