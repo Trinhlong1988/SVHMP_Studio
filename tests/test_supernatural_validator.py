@@ -1,8 +1,13 @@
 """D5 Supernatural Validator (TASK_G5_SUPERNATURAL.md, CMD_BUILD_3 4-5/7): kiem chung
-data that (governance/proposals/supernatural_typology_proposal.yaml + runtime/
-supernatural_state_machine.yaml) PASS 0 vi pham, + mutation behavioral M1/M2/M3/M4/M7
-(TASK_G5 "MUTATION AUDIT SE BAN") tu bien PHAI bat duoc loi. Unwire-guard chong stage
-g5_supernatural bi go khoi ci_gate.CHECKS."""
+data that (governance/proposals/supernatural_typology_proposal.yaml + governance/
+blueprint/bp4/state_machines.yaml entity 'ghost') PASS 0 vi pham, + mutation
+behavioral M1/M2/M3/M4/M7 (TASK_G5 "MUTATION AUDIT SE BAN") tu bien PHAI bat duoc
+loi. Unwire-guard chong stage g5_supernatural bi go khoi ci_gate.CHECKS.
+
+R211 RECONCILE (2026-07-05, fix/g5-4-possession-dup): possession state machine
+KHONG con doc tu runtime/supernatural_state_machine.yaml (file da bi audit xac
+nhan la nhan doi voi entity 'ghost' cua bp4) — nguon THAT gio la bp4/state_machines.yaml
+entity 'ghost' (da duoc MO RONG state), xem reports/G5_FIX_POSSESSION_DEDUP.md."""
 import sys
 from pathlib import Path
 
@@ -16,7 +21,7 @@ from supernatural_validator import (
 
 SVHMP = Path(__file__).resolve().parent.parent
 REAL_TYPOLOGY_YAML = SVHMP / 'governance' / 'proposals' / 'supernatural_typology_proposal.yaml'
-REAL_SM_YAML = SVHMP / 'runtime' / 'supernatural_state_machine.yaml'
+REAL_SM_YAML = SVHMP / 'governance' / 'blueprint' / 'bp4' / 'state_machines.yaml'
 
 
 # ---------- data that PASS 0 vi pham ----------
@@ -72,19 +77,36 @@ def test_bp7_facets_loaded_from_real_file():
 # ---------- M3: possession khong truc xuat (treo mai) ----------
 
 def test_m3_possession_stuck_state_fails():
-    bad_sm = {'possession_state_machine': {
-        'states': ['none', 'entering', 'stuck_forever', 'released'],
+    bad_sm = {'state_machines': [{'entity': 'ghost',
+        'states': ['dormant', 'entering', 'stuck_forever', 'released'],
         'transitions': [
-            {'from': 'none', 'to': 'entering'},
+            {'from': 'dormant', 'to': 'entering'},
             {'from': 'entering', 'to': 'released'},
             {'from': 'stuck_forever', 'to': 'stuck_forever'},   # tu-lap, khong ra duoc
-        ]}}
+        ]}]}
     errs = check_possession_state_machine(sm=bad_sm)
     assert any('stuck_forever' in e and 'M3' in e for e in errs)
 
 
+def test_m3_missing_ghost_entity_fails():
+    errs = check_possession_state_machine(sm={'state_machines': []})
+    assert any('ghost' in e for e in errs)
+
+
 def test_real_state_machine_no_stuck_state():
     assert check_possession_state_machine() == []
+
+
+def test_real_state_machine_reads_from_bp4_ghost_entity():
+    """R211 reconcile: nguon THAT la bp4/state_machines.yaml entity 'ghost', KHONG
+    phai runtime/supernatural_state_machine.yaml (da xoa possession_state_machine
+    block khoi file do — xem reports/G5_FIX_POSSESSION_DEDUP.md)."""
+    import supernatural_validator as sv
+    assert sv.STATE_MACHINE == REAL_SM_YAML
+    import yaml
+    data = yaml.safe_load(REAL_SM_YAML.read_text(encoding='utf-8'))
+    ghost = next(m for m in data['state_machines'] if m['entity'] == 'ghost')
+    assert 'entering' in ghost['states'] and 'exorcising' in ghost['states']
 
 
 # ---------- M1: nang luc ngoai typology da khai ----------

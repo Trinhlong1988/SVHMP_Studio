@@ -6,14 +6,26 @@ source_constitution_version: 2.0.0
 state_machines:
   - entity: ghost
     owner_domain: supernatural
-    states: [dormant, watching, manifest, attack, released]
+    states: [dormant, watching, entering, manifest, attack, exorcising, released]
     initial: dormant
     transitions:
       - {from: dormant, to: watching, trigger: passenger_boards}
-      - {from: watching, to: manifest, trigger: ghost_appears}
+      - {from: watching, to: entering, trigger: ghost_appears}
+      - {from: entering, to: manifest, trigger: regret_triggered}
       - {from: manifest, to: attack, trigger: regret_triggered}
-      - {from: attack, to: released, trigger: ghost_released}
-      - {from: manifest, to: released, trigger: ghost_released}
+      - {from: attack, to: exorcising, trigger: ghost_released}
+      - {from: exorcising, to: released, trigger: ghost_released}
+      - {from: manifest, to: exorcising, trigger: ghost_released}
+      - {from: entering, to: released, trigger: ghost_released}
+    note: "R211 RECONCILE (2026-07-05, fix/g5-4-possession-dup): possession la chi tiet
+          hoa CUA entity ghost, KHONG phai state machine song song. 2 state 'entering'
+          (nhap) va 'exorcising' (truc xuat chu dong) them vao day de mo hinh dung
+          'nhap -> bieu hien -> truc xuat/thoat' — mirror 1-doi-1 topology 7 transition
+          tung nam o runtime/supernatural_state_machine.yaml#possession_state_machine
+          (DA XOA khoi runtime/, xem reports/G5_FIX_POSSESSION_DEDUP.md): none~dormant,
+          entering~entering, manifesting~manifest, peak~attack, released~released. 0
+          event_id moi — dung nguyen 4 trigger BP4 event_bus.yaml da co (passenger_boards/
+          ghost_appears/regret_triggered/ghost_released)."
   - entity: character_fear
     owner_domain: character
     states: [normal, fear, panic, trauma, recovery]

@@ -1,46 +1,23 @@
 # ============================================================
-# D3 — POSSESSION & POWER STATE MACHINE (TASK_G5_SUPERNATURAL.md, CMD_BUILD_3 4-5/7)
-# RECONCILE governance/blueprint/bp4/state_machines.yaml#entity=ghost (owner_domain:
-# supernatural, states dormant/watching/manifest/attack/released) — KHONG sua BP4
-# (LOCKED, ngoai pham vi CMD_BUILD_3 lan nay). File nay la LOP CHI TIET HOA nam ben
-# NGOAI BP4 (giong cach bible/15_voice_bible.yaml chi tiet hoa voice_state — bp4 chi
-# khai "cac canh gan event" cap cao, chi tiet day du song o file rieng, xem note tai
-# bp4/state_machines.yaml#voice_state).
+# D3 — POWER LEVEL SCHEMA (TASK_G5_SUPERNATURAL.md, CMD_BUILD_3 4-5/7)
 #
-# LUAT: moi transition.trigger PHAI la event_id DA KHAI trong
-# governance/blueprint/bp4/event_bus.yaml (ghost_appears/regret_triggered/
-# ghost_released/passenger_boards/passenger_dies/secret_revealed) — KHONG bia
-# event_id moi (se phai sua bp4/event_bus.yaml, ngoai quyen CMD_BUILD_3 lan nay).
+# R211 FIX (2026-07-05, fix/g5-4-possession-dup): file nay TUNG chua 1 block
+# "possession_state_machine" tu dinh nghia rieng (entity: possession, 6 state,
+# 7 transition) — CMD_AUDIT_G4_G5.md checkpoint G5-4 xac nhan day la state machine
+# SONG SONG voi entity 'ghost' cua governance/blueprint/bp4/state_machines.yaml
+# (dung R211, du file tu nhan la "RECONCILE"/"chi tiet hoa": nguon THUC THI THAT
+# van la file nay, khong phai bp4). Block do DA XOA khoi day va CHUYEN THANG vao
+# bp4/state_machines.yaml#entity=ghost (mo rong them state 'entering'/'exorcising'
+# NGAY TRONG bp4, khong con file rieng). tools/supernatural_validator.py
+# check_possession_state_machine() gio doc bp4/state_machines.yaml, KHONG doc file
+# nay nua. Chi tiet: reports/G5_FIX_POSSESSION_DEDUP.md.
+#
+# Phan CON LAI duoi day (power_level_by_lunar_date) KHONG phai state machine va
+# KHONG trung BP4/BP9 — la schema HANDOFF rieng cho G4 (World/Timeline/Event, xem
+# reports/G5_HANDOFF_G8.md), giu nguyen tai day.
 # ============================================================
-version: 1.0
+version: 1.1
 authority: "CMD_BUILD_3 (TASK_G5_SUPERNATURAL.md deliverable D3), per Mr.Long authorization"
-reconciles: "governance/blueprint/bp4/state_machines.yaml#entity=ghost (LOCKED, KHONG sua)"
-trigger_source_of_truth: "governance/blueprint/bp4/event_bus.yaml (0 event_id moi duoc them o day)"
-
-# ============================================================
-# POSSESSION SUB-STATES — chi tiet hoa qua trinh BEN TRONG cac state 'manifest'/
-# 'attack' cua BP4 ghost entity thanh chuoi nhap -> bieu hien -> truc xuat/thoat
-# (D3 yeu cau, TASK_G5 muc "Possession & Power State Machine")
-# ============================================================
-possession_state_machine:
-  entity: possession
-  owner_domain: supernatural
-  reconciles_bp4_entity: ghost
-  states: [none, entering, manifesting, peak, exorcising, released]
-  initial: none
-  transitions:
-    - {from: none, to: entering, trigger: ghost_appears}
-    - {from: entering, to: manifesting, trigger: regret_triggered}
-    - {from: manifesting, to: peak, trigger: regret_triggered}
-    - {from: peak, to: exorcising, trigger: ghost_released}
-    - {from: exorcising, to: released, trigger: ghost_released}
-    - {from: manifesting, to: exorcising, trigger: ghost_released}
-    - {from: entering, to: released, trigger: ghost_released}
-  note: "Moi state (tru 'released' la trang thai cuoi) PHAI co duong ra 'released'
-        (truc tiep hoac qua 'exorcising') — chong M3 'possession khong truc xuat, treo
-        mai'. Mirror bp4 ghost.manifest/attack -> released, chi tiet hoa 2 buoc trung
-        gian 'entering'/'peak' de model dung 'nhap -> bieu hien -> truc xuat' ma BP4
-        cap cao khong the hien."
 
 # ============================================================
 # POWER LEVEL THEO LICH AM — HANDOFF cho G4 (World/Timeline/Event, dang build song
@@ -68,7 +45,9 @@ power_level_by_lunar_date:
             blocking_dependency: "G4 timeline engine"}
 
 notes:
-  - "KHONG viet engine rieng — possession_state_machine RECONCILE (mo rong chi tiet)
-     entity 'ghost' da khai BP4, dung nguyen 6 trigger event_id BP4 da co."
+  - "R211 FIX 2026-07-05: possession_state_machine block DA XOA khoi file nay — nguon
+     THAT gio la governance/blueprint/bp4/state_machines.yaml entity 'ghost' (mo rong
+     truc tiep trong bp4, KHONG con state machine song song). Xem
+     reports/G5_FIX_POSSESSION_DEDUP.md."
   - "power_level_by_lunar_date la HANDOFF cho G4, khong phai claim da wire — enforcer
      status=roadmap trung thuc (chua co tool doc field nay), tranh overclaim."
