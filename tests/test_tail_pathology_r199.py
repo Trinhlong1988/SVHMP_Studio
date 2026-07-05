@@ -91,7 +91,8 @@ dur = len(out) / SR
 check("voice+burst_no_gap → keep both (no gap qualifier)", 3.2 < dur < 3.5, f"got {dur:.2f}s")
 
 # Case H: real AB test files if available
-AB_ROOT = Path(r'C:/Users/Administrator/Desktop/EP01_AB_TESTS')
+import os
+AB_ROOT = Path(os.environ.get('SVHMP_AB_ROOT', r'C:/Users/Administrator/Desktop/EP01_AB_TESTS'))
 if AB_ROOT.exists():
     print()
     print("=== R199 REGRESSION — real AB tests ===")
@@ -108,6 +109,11 @@ if AB_ROOT.exists():
         dur = len(out) / sr
         _, lo, hi = expected
         check(f"AB {p.name} → duration {lo}-{hi}s", lo <= dur <= hi, f"got {dur:.2f}s")
+else:
+    print()
+    print(f"[SKIP-WARN] AB_ROOT khong ton tai tai {AB_ROOT}, "
+          f"3 case regression audio That (repetition-penalty) KHONG duoc chay. "
+          f"Set env var SVHMP_AB_ROOT de tro toi thu muc EP01_AB_TESTS tren may nay.")
 
 print()
 print(f"=== SUMMARY: {len(PASS_CASES)} PASS / {len(FAIL_CASES)} FAIL ===")
