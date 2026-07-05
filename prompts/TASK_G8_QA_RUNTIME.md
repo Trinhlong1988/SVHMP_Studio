@@ -7,6 +7,13 @@
 > nghiêm trọng (1 luồng đang chạy thật nhưng chưa từng được ghi vào pack5). G8 KHÔNG PHẢI "viết
 > manager mới" như G7 — là **RECONCILE + DEDUPE + CODIFY** trước, chỉ bổ sung code thật cần thiết.
 
+> **Đã qua 2 lớp (điều tra + phản biện độc lập, 5/7 tối):** 5/5 claim cốt lõi được phản biện xác
+> nhận ĐÚNG bằng đọc code thật (không tin lời kể lớp 1). 3 chỗ đã SỬA LẠI theo phản biện (đánh dấu
+> `[SỬA theo phản biện]` trong bảng dưới) — lớp điều tra đầu có 2 chỗ hơi quá tay (gán domain
+> `dialogue`/liệt kê "3 domain" khi bằng chứng thật chỉ ủng hộ kết luận hẹp hơn). Tin cậy được để
+> giao CMD_BUILD, nhưng CMD_BUILD vẫn nên tự verify lại D1 trước khi code D2 trở đi (đừng tin
+> task doc này 100% mù quáng — đúng tinh thần dự án).
+
 ## HIỆN TRẠNG THẬT (đã điều tra 5/7, không suy đoán — đọc kỹ trước khi động vào bất kỳ file nào)
 
 ### 6 luồng QA đang chạy song song (xác nhận qua đọc code, không phải đoán từ tên file)
@@ -23,12 +30,25 @@
 - `qa_post_render.py::audit_pause()` (ngưỡng -70dB/1200ms, thuật toán 20ms-window) gần như **giống hệt** `qa_pause_silence.py::audit()` — 2 bản cài đặt song song của cùng 1 rule.
 - `qa_post_render.py::audit_boundary()`/`audit_head_onset()` là bản **thô hơn** so với `qa_boundary_artifact.py`/`qa_onset_artifact.py` (bản chính thức, spectral analysis, R188).
 - `audit_60_dimensions.py` và `audit_100_check.py`: chính comment trong `tools/ha_patterns.py` đã tự ghi "4 pattern giống nhau" — trùng lặp ĐÃ được biết nhưng chưa reconcile hết.
+- **[Phản biện độc lập xác nhận 5/7, thêm chi tiết quan trọng]** `qa_post_render.audit_pause()` và
+  `qa_pause_silence.audit()` dùng Y HỆT window 20ms/`min_pause_ms=1200`/`silence_thr_db=-55`/
+  `pass_thr_db=-70`/margin 100ms — đúng là bản sao 1-1. NHƯNG có 1 khác biệt thật: `audit_pause()`
+  cho phép tolerance (`noisy<=1`, theo R96), còn `qa_pause_silence.audit()` strict (`noisy==0`).
+  **D3 KHÔNG được hợp nhất mù** — phải xác định trước tolerance nào là ý định thật (hỏi Mr.Long
+  nếu không rõ), không tự chọn 1 bên rồi coi là "đã dedupe xong".
 
 ### Domain gán SAI (file_index.yaml/blueprint mismatch — cần sửa manifest, KHÔNG sửa code)
-- `qa_skeptic_orchestrator.py` bị gắn `domain: generation` trong `file_index.yaml`, mâu thuẫn với `blueprint_domains.yaml` gọi nó là manager của `qa_runtime`.
-- `audit_dialogue_hierarchy.py`/`audit_driver_dialogue_context.py` thực chất được gọi bởi `dialogue_generator.py`/`g3_dialogue_check.py` → **thuộc G3 dialogue**, không phải qa_runtime.
-- `story_consistency_validator.py` được gọi bởi `roster_validator.py`/`g4_world_check.py` → **thuộc G4 world**.
-- `qa_dialogue_identity.py` bị gắn **3 domain khác nhau** cùng lúc (text_qa trong file_index, audio detector trong pack5/21, tts validator trong blueprint) — mâu thuẫn thật, cần Mr.Long chọn 1.
+- `qa_skeptic_orchestrator.py` bị gắn `domain: generation` trong `file_index.yaml`, mâu thuẫn với `blueprint_domains.yaml` gọi nó là manager của `qa_runtime`. **[Phản biện xác nhận đúng]** — 2 nguồn field chính thức mâu thuẫn thật, sửa an toàn.
+- **[SỬA LẠI theo phản biện độc lập 5/7 — bản đầu SAI, đây là bản đúng]:** `audit_dialogue_hierarchy.py`/`audit_driver_dialogue_context.py` ĐÚNG là được gọi bởi `dialogue_generator.py`/`g3_dialogue_check.py` (G3 dùng qua wrapper) — NHƯNG domain SỞ HỮU thật của 2 file này (theo `file_index.yaml:359-366` VÀ `architecture_registry.yaml:290-295` ghi rõ "vẫn thuộc sở hữu domain character/text_qa") là **`text_qa`**, KHÔNG PHẢI `dialogue`. **KHÔNG đổi domain 2 file này sang `dialogue`** — đó sẽ là sửa sai theo đúng lỗi agent điều tra đầu tiên mắc phải. Giữ nguyên `text_qa`, chỉ ghi chú rõ "G3 dialogue tiêu thụ qua wrapper, không sở hữu".
+- `story_consistency_validator.py` được gọi bởi `roster_validator.py`/`g4_world_check.py` → **thuộc G4 world** (chưa bị phản biện bác, giữ nguyên).
+- `qa_dialogue_identity.py` bị gắn tín hiệu domain KHÔNG NHẤT QUÁN — **[SỬA theo phản biện 5/7]**:
+  CHỈ 2/3 là field domain CHÍNH THỨC thật sự mâu thuẫn (`text_qa` trong `file_index.yaml` vs
+  `tts` trong `blueprint_domains.yaml` phần validator) + `architecture_registry.yaml` xác nhận lại
+  `character/text_qa`. Cái thứ 3 ("audio detector" trong pack5/21) chỉ là NGỮ CẢNH văn bản (file
+  này được liệt kê trong mục "Voice/Audio Detector Suite") — KHÔNG có field `domain:` tường minh ở
+  đó, không nên trình bày như 1 domain chính thức thứ 3. Khi báo cáo D2, ghi đúng: "2 field domain
+  chính thức mâu thuẫn (text_qa/tts) + 1 tín hiệu ngữ cảnh không chính thức (audio)" — tránh bị bắt
+  bẻ "gán nhầm 1 domain không tồn tại trong hệ thống".
 
 ### Ranh giới domain (trích nguyên văn pack5, đã xác nhận)
 Pack5/19: *"KHÔNG gồm... audio-detector (= 21_detector_suite.md)"*. Pack5/21: *"Detector chạy trên
