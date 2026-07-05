@@ -61,6 +61,7 @@ ownership_matrix:
     - runtime/passenger_roster_100.yaml
   CMD_AUDIO:
     - tools/svhmp_v13_render.py
+    - tools/render_with_character_gate.py
     - tools/svhmp_audio_qa.py
     - tools/cap_peak.py
   CMD_TEXT:

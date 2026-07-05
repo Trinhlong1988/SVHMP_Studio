@@ -291,10 +291,6 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--spec', required=True)
     ap.add_argument('--output', required=True)
-    ap.add_argument('--strict-characters', action='store_true',
-                    help='G2 CHARACTER_GATE: BLOCK render neu char trong ep duoi threshold')
-    ap.add_argument('--char-threshold', type=float, default=0.5,
-                    help='G2 CHARACTER_GATE: nguong completeness (default 0.5)')
     args = ap.parse_args()
 
     spec = json.load(open(args.spec, encoding='utf-8'))
@@ -325,36 +321,6 @@ def main():
         print(f"[v13] R90 STAGE 1 PASS - render allowed", flush=True)
     else:
         print(f"[v13] WARN: episode.md not found at {md_path}, skip R86 check", flush=True)
-
-    # ========================================================================
-    # CHARACTER_GATE (G2, 2026-07-02) — WIRE Character DoD completeness vao render.
-    # Truoc: gate chi song o svhmp_preflight_qa, render entrypoint 0 reference ->
-    # built!=wired (a171120 khai sai). Nay render TU chay gate: WARN-default,
-    # --strict-characters -> BLOCK (exit 2). Single-source: dung
-    # character_manager.episode_completeness + render_gate_lines (giong preflight,
-    # KHONG nhan doi). Wrap try/except: khong bao gio crash render.
-    # ========================================================================
-    try:
-        from character_manager import CharacterRegistry
-        _cg = CharacterRegistry().episode_completeness(ep_num_early, args.char_threshold)
-        if _cg['total']:
-            _mode = 'STRICT' if args.strict_characters else 'WARN'
-            print(f"[v13] CHARACTER_GATE:{_mode} ep{ep_num_early}: {_cg['total']} char, "
-                  f"{len(_cg['below'])} below {args.char_threshold}", flush=True)
-            _warns, _blocks = CharacterRegistry.render_gate_lines(_cg, args.strict_characters)
-            for _w in _warns:
-                print(f"[v13]   [WARN] {_w}", flush=True)
-            if _blocks:
-                for _b in _blocks:
-                    print(f"[v13]   [BLOCK] {_b}", flush=True)
-                print("[v13] !!! CHARACTER_GATE STRICT FAIL - RENDER BLOCKED", flush=True)
-                sys.exit(2)
-        else:
-            print(f"[v13] CHARACTER_GATE ep{ep_num_early}: no roster char mapped - skip", flush=True)
-    except SystemExit:
-        raise
-    except Exception as _e:
-        print(f"[v13] CHARACTER_GATE WARN: skipped ({type(_e).__name__}: {_e})", flush=True)
 
     # Round 14 hook: detect ep from output path "output/ep_NN/narration.wav"
     ep_match = re.search(r'ep_(\d+)', args.output)

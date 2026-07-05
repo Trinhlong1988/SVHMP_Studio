@@ -824,6 +824,10 @@ files:
     domain: audio_render
     status: active
     tier: 4
+  tools/render_with_character_gate.py:
+    domain: audio_render
+    status: active
+    tier: 4
   tools/render_section.py:
     domain: audio_render
     status: active
@@ -1433,4 +1437,4 @@ files:
     status: active
     tier: 1
 generated_by: tools/registry_triage.py
-total: 358
+total: 359
