@@ -35,7 +35,7 @@ intensity_level: 0.70
 quang_memory_fragment: M10 (Khải Phong nhớ vé máy bay Hàn Quốc em đã đặt sẵn)
 object_sub_arc: none
 callback_target: none
-passenger_main: nu 30 Thanh Nga Hà Nội (vé máy bay đi du học - chồng chết trước ngày đi)
+passenger_main: nu 30 Đài Ngà Hà Nội (vé máy bay đi du học - chồng chết trước ngày đi)
 signature_object: OBJ_VE_MAY_BAY (vé máy bay cặp đôi không dùng)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba sân bay Nội Bài
@@ -116,7 +116,7 @@ Cô gái khẽ quay đầu lại. Vuốt vé.
 
 [pause:1000ms]
 
-"Em là Thanh Nga. Ba mươi tuổi. Em ở Hà Nội — phố Long Biên. Em làm tiếp viên hàng không Vietjet."
+"Em là Đài Ngà. Ba mươi tuổi. Em ở Hà Nội — phố Long Biên. Em làm tiếp viên hàng không Vietjet."
 
 Giọng cô đều — chậm.
 
@@ -158,7 +158,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Thanh Nga gật. Lệ rơi xuống vé.
+Đài Ngà gật. Lệ rơi xuống vé.
 
 "Em nhớ. Cô gái hứa đi Hàn Quốc trăng mật với em — em đi trước ngày bay. Cô ấy em không kịp giữ vé. Hình ảnh người con gái ấy đem trả vé về sân bay — em đã sẵn sàng tiếp tục đời em."
 
@@ -170,7 +170,7 @@ Thanh Nga gật. Lệ rơi xuống vé.
 
 [pause:1000ms]
 
-Thanh Nga vuốt tấm vé thứ hai. Vé Hàn Quốc — chuyến đi đã không bao giờ có. "Em nhớ — cô gái em đứng trước cổng check-in. Quay đầu lại cười. Em vẫy tay. Em không biết đó là lần cuối em thấy cô gái. Buổi tối em nhận tin — cô em đã bị tai nạn xe máy trên đường ra sân bay."
+Đài Ngà vuốt tấm vé thứ hai. Vé Hàn Quốc — chuyến đi đã không bao giờ có. "Em nhớ — cô gái em đứng trước cổng check-in. Quay đầu lại cười. Em vẫy tay. Em không biết đó là lần cuối em thấy cô gái. Buổi tối em nhận tin — cô em đã bị tai nạn xe máy trên đường ra sân bay."
 
 
 
@@ -186,7 +186,7 @@ Thanh Nga vuốt tấm vé thứ hai. Vé Hàn Quốc — chuyến đi đã khô
 
 Xe chậm lại. Ngã ba sân bay Nội Bài — cây bàng cổ — bến gần ga T1. Tiếng chuông ngân nhẹ. Một hồi. Lặng.
 
-Thanh Nga gói vé vào phong bì. Đứng dậy.
+Đài Ngà gói vé vào phong bì. Đứng dậy.
 
 "Chào anh."
 
@@ -198,13 +198,13 @@ Cô gái bước xuống dưới đường.
 
 [pause:1200ms]
 
-Bên ngoài — Thanh Nga đi vào ga T1 — bảo vệ đã mở cửa phụ. Phòng thông tin — hộp lost items gỗ đặt cạnh quầy. Cô gái đã đến nơi đó. Đặt phong bì vào hộp. Cúi đầu.
+Bên ngoài — Đài Ngà đi vào ga T1 — bảo vệ đã mở cửa phụ. Phòng thông tin — hộp lost items gỗ đặt cạnh quầy. Cô gái đã đến nơi đó. Đặt phong bì vào hộp. Cúi đầu.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ. Bên quầy — Khoa xuất hiện — thanh niên hai sáu áo gió đen — vuốt vai Thanh Nga. Mỉm cười.
+Khải Phong chớp mắt — nhìn qua cửa sổ. Bên quầy — Khoa xuất hiện — thanh niên hai sáu áo gió đen — vuốt vai Đài Ngà. Mỉm cười.
 
 Khải Phong chớp lần nữa. Người tên Khoa tan đi.
 
-Thanh Nga ngẩng đầu. Đi ra ngoài.
+Đài Ngà ngẩng đầu. Đi ra ngoài.
 
 [pause:1500ms]
 
@@ -222,7 +222,7 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Khải Phong ngồi. Thanh Nga đặt vé Hàn Quốc trăng mật chưa dùng — đêm cuối Khoa đột tử trước ngày bay.
+Khải Phong ngồi. Đài Ngà đặt vé Hàn Quốc trăng mật chưa dùng — đêm cuối Khoa đột tử trước ngày bay.
 
 Khải Phong nhói. Hình bóng anh đã hứa Hạ Vy đi Hàn Quốc trăng mật. Hình ảnh người đàn ông không đặt vé sẵn — chỉ hứa miệng. Bóng người ngồi Phong và Hạ Vy đợi cưới — chưa cưới — không đặt vé.
 
@@ -242,7 +242,7 @@ Bác tài liếc gương. "Vào đêm bốn mươi bảy. Con đã nhớ lời h
 
 Khải Phong gật. Lệ rơi xuống dưới.
 
-Đêm thứ bốn mươi bảy — Khải Phong đếm thêm. Xe đi tiếp ra khỏi sân bay. Phía sau — Thanh Nga ở lại ga — hai vé trong hộp lost items.
+Đêm thứ bốn mươi bảy — Khải Phong đếm thêm. Xe đi tiếp ra khỏi sân bay. Phía sau — Đài Ngà ở lại ga — hai vé trong hộp lost items.
 
 Khải Phong nghĩ về Hàn Quốc — anh chưa bao giờ thấy lá đỏ mùa thu — anh chỉ thấy qua ảnh — qua phim. Nếu anh đi — anh sẽ chụp ảnh — anh đem về cho Hạ Vy qua đèn nến.
 
@@ -252,7 +252,7 @@ Em không quyết được đêm nay. Em ấy ấy sẽ ngẫm tiếp.
 
 Khải Phong nhớ thêm chi tiết — đêm anh hứa Hạ Vy đi Hàn Quốc — anh đang ngồi ở bàn ăn phòng trọ Khâm Thiên — anh vừa nấu xong canh chua. Cô gái gái ăn xong rồi. Hạ Vy nói "Hứa thật nhé." Em đáp "Hứa thật" — em nhìn em mắt. Em không đùa. Bóng cô gái tin em sẽ làm thật. Hình con gái ấy sẽ tìm cách giữ lời hứa muộn — qua nhẫn bạc — qua ảnh dưới lá đỏ — qua đèn nến. Em ấy ấy ấy đã quyết. Sang năm — sau dự cưới Hạ Nhi — em sẽ đi Hàn Quốc. Đêm thứ bốn mươi bảy kết thúc.
 
-Khải Phong ngồi đêm chưa sáng. Hình khách không đặt vé Hàn Quốc — anh chỉ hứa miệng. Hình bóng người đàn không có vé giấy treo tủ lạnh như Thanh Nga. Hình ảnh anh chỉ có ký ức — chỉ có lời hứa miệng đêm 2017. Có thể anh tự tạo vé — anh đặt vé mới — bay một mình mùa thu năm sau — anh đem nhẫn bạc anh — anh sẽ chụp ảnh dưới lá đỏ — anh sẽ trở về Việt Nam đặt ảnh trên bàn thờ anh. Đêm bốn mươi bảy kết thúc — anh quyết.
+Khải Phong ngồi đêm chưa sáng. Hình khách không đặt vé Hàn Quốc — anh chỉ hứa miệng. Hình bóng người đàn không có vé giấy treo tủ lạnh như Đài Ngà. Hình ảnh anh chỉ có ký ức — chỉ có lời hứa miệng đêm 2017. Có thể anh tự tạo vé — anh đặt vé mới — bay một mình mùa thu năm sau — anh đem nhẫn bạc anh — anh sẽ chụp ảnh dưới lá đỏ — anh sẽ trở về Việt Nam đặt ảnh trên bàn thờ anh. Đêm bốn mươi bảy kết thúc — anh quyết.
 
 Khải Phong nhìn lá đỏ trong tưởng tượng. Người ấy sẽ đi Hàn Quốc một mình. Hình bóng đàn ấy Phong đem nhẫn Hạ Vy. Cô ấy chụp ảnh kỉ niệm. Hình bóng ông ấy Phong đem về Việt Nam. Bóng anh đặt bàn thờ anh ở quê Khải Phong — anh chưa lập bàn thờ. Hình ông sẽ lập sau dự cưới Hạ Nhi.
 

@@ -35,7 +35,7 @@ intensity_level: 0.70
 quang_memory_fragment: M9 PEAK (Khải Phong nhớ Hạ Nhi em gái Hạ Vy nhắn em)
 object_sub_arc: gương (echo EP25 + EP35)
 callback_target: ep_35 (xe dừng 2 stop EP20 + EP45 + object echo)
-passenger_main: nam 30 Mạnh Hiếu Bắc Ninh (định tự tử sau tốt nghiệp - gương cứu - echo EP15+EP25+EP35)
+passenger_main: nam 30 Triều Quảng Bắc Ninh (định tự tử sau tốt nghiệp - gương cứu - echo EP15+EP25+EP35)
 signature_object: OBJ_MANH_GUONG (mảnh gương cuộc thứ tư trong cụm)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Bắc Ninh (callback EP20 setting + EP45 object echo)
@@ -124,9 +124,9 @@ Người đàn ông quay đầu lại. Vuốt vải bông.
 
 [pause:1000ms]
 
-"Em là Mạnh Hiếu. Ba mươi tuổi. Em ở Mai Trung — Bắc Ninh — quê. Em làm giáo viên cấp hai — chính trường THCS Mai Trung em vừa bước lên xe — trường em đã học cấp hai — trường thầy Hồng dạy."
+"Em là Triều Quảng. Ba mươi tuổi. Em ở Mai Trung — Bắc Ninh — quê. Em làm giáo viên cấp hai — chính trường THCS Mai Trung em vừa bước lên xe — trường em đã học cấp hai — trường thầy Hồng dạy."
 
-Khải Phong giật mình. Mạnh Hiếu cùng trường THCS Mai Trung — trường Quỳnh Mai EP22 đem sách thầy về.
+Khải Phong giật mình. Triều Quảng cùng trường THCS Mai Trung — trường Quỳnh Mai EP22 đem sách thầy về.
 
 "Mười năm trước — em hai mươi tuổi — em sinh viên năm cuối cao đẳng sư phạm. Em vừa nhận thông báo trượt thi cuối khóa môn chính. Em phải học lại một năm."
 
@@ -170,7 +170,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Mạnh Hiếu gật.
+Triều Quảng gật.
 
 "Em nhớ. Thầy Hồng cứu em qua điện thoại đêm em hai mươi. Mảnh gương là chứng tích em đã chọn sống — thầy là người chọn em sống. Bây giờ thầy đi — em đem mảnh tặng phòng tâm lý trường — em làm tiếp thay thầy."
 
@@ -186,7 +186,7 @@ Mạnh Hiếu gật.
 
 Xe chậm lại. Ngã ba Bắc Ninh — cây dâu cổ — bến cũ (đêm 22 Quỳnh Mai). Chuông xe vọng. Nhịp đơn. Im.
 
-Mạnh Hiếu cất mảnh gương vào hộp. Đứng dậy.
+Triều Quảng cất mảnh gương vào hộp. Đứng dậy.
 
 "Chào anh."
 
@@ -198,15 +198,15 @@ Người đàn ông bước xuống dưới.
 
 [pause:1200ms]
 
-Bên ngoài — Mạnh Hiếu đi vào sân trường THCS Mai Trung — cùng cổng Quỳnh Mai đêm 22. Đèn hành lang sáng. Phòng tâm lý mới — cuối hành lang tầng một.
+Bên ngoài — Triều Quảng đi vào sân trường THCS Mai Trung — cùng cổng Quỳnh Mai đêm 22. Đèn hành lang sáng. Phòng tâm lý mới — cuối hành lang tầng một.
 
 Người đàn ông đến nơi đó. Đưa mảnh gương cho cô tư vấn tâm lý trực đêm. Cô nhận — cảm động — đặt vào tủ kính.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ. Bên Mạnh Hiếu — thầy Hồng xuất hiện — ông sáu mươi áo sơ mi xanh (như EP22) — vuốt vai Mạnh Hiếu. Mỉm cười.
+Khải Phong chớp mắt — nhìn qua cửa sổ. Bên Triều Quảng — thầy Hồng xuất hiện — ông sáu mươi áo sơ mi xanh (như EP22) — vuốt vai Triều Quảng. Mỉm cười.
 
 Khải Phong chớp lần nữa. Người thầy tan đi.
 
-Mạnh Hiếu ngẩng đầu. Đi ra ngoài.
+Triều Quảng ngẩng đầu. Đi ra ngoài.
 
 [pause:1500ms]
 
@@ -224,7 +224,7 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Khải Phong ngồi yên. Bốn vật vải bông trong túi — EP15 Phong gương vỡ + EP25 Văn Quân kính + EP35 Trí Hưng gương + EP45 Mạnh Hiếu gương. Cluster gương/kính đã đủ bốn.
+Khải Phong ngồi yên. Bốn vật vải bông trong túi — EP15 Phong gương vỡ + EP25 Văn Quân kính + EP35 Trí Hưng gương + EP45 Triều Quảng gương. Cluster gương/kính đã đủ bốn.
 
 Khải Phong ngẫm. Bốn cậu trai — bốn câu chuyện khác — cùng vật gương. Bốn cách gương cứu.
 
@@ -258,7 +258,7 @@ Bác tài liếc gương. "Vào đêm bốn mươi lăm. Con nhớ Hạ Nhi mờ
 
 Khải Phong gật. Lệ rơi xuống dưới.
 
-Đêm thứ bốn mươi lăm — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Bắc Ninh khuất. Mạnh Hiếu ở lại phòng tâm lý — mảnh gương trong tủ kính.
+Đêm thứ bốn mươi lăm — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Bắc Ninh khuất. Triều Quảng ở lại phòng tâm lý — mảnh gương trong tủ kính.
 
 Khải Phong cố nhớ chi tiết tin nhắn Hạ Nhi tuần trước. Bóng người ngồi đó nhắn: "Anh ơi sắp cưới rồi — anh đến nhé. Hình ảnh người con gái ấy đã đặt vé máy bay anh từ Hà Nội vào Sài Gòn — em gửi anh qua email. Hình bóng sinh viên chỉ cần check-in thôi. Cô ấy đợi anh."
 

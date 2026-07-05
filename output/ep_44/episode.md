@@ -37,7 +37,7 @@ intensity_level: 0.70
 quang_memory_fragment: M9 (Khải Phong nhớ bố mẹ Hạ Vy đã không liên lạc)
 object_sub_arc: none
 callback_target: none
-passenger_main: nu 52 Phượng Liên Đắk Lắk (không đem khúc chè cho hàng xóm bệnh - bà mất)
+passenger_main: nu 52 Gấm Mận Đắk Lắk (không đem khúc chè cho hàng xóm bệnh - bà mất)
 signature_object: OBJ_KHUC_CHE (khúc chè bà chuẩn bị năm năm trước)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Đắk Lắk
@@ -120,7 +120,7 @@ Bà cụ khẽ quay đầu lại. Vuốt giấy bản.
 
 [pause:1000ms]
 
-"Em là Phượng Liên. Bà cụ năm mươi hai tuổi rồi. Đứa em ở Đại Phú — Đắk Lắk — quê. Bóng người con gái ấy làm cà phê — bốn héc-ta."
+"Em là Gấm Mận. Bà cụ năm mươi hai tuổi rồi. Đứa em ở Đại Phú — Đắk Lắk — quê. Bóng người con gái ấy làm cà phê — bốn héc-ta."
 
 Giọng bà trầm.
 
@@ -164,7 +164,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Phượng Liên gật.
+Gấm Mận gật.
 
 "Em nhớ. Em hứa đem chè cho bà Sáu — em quên một tối. Bóng người bà cụ mất sáng hôm sau. Hình ảnh người con gái ấy không phải lý do duy nhất — bà yếu nhiều tháng — nhưng em là một trong nhiều người có thể giúp lúc bà cần."
 
@@ -180,7 +180,7 @@ Phượng Liên gật.
 
 Xe chậm lại. Ngã ba Đắk Lắk — cây cà phê cổ — bến không tên. Một tiếng chuông. Ngắn. Tan trong sương.
 
-Phượng Liên ôm khúc chè. Đứng dậy.
+Gấm Mận ôm khúc chè. Đứng dậy.
 
 "Chào con."
 
@@ -192,15 +192,15 @@ Bà cụ bước xuống dưới đường.
 
 [pause:1200ms]
 
-Bên ngoài — Phượng Liên đi vào xóm Đại Phú — đường đất đỏ. Nhà bà Sáu xưa — đã có người khác ở.
+Bên ngoài — Gấm Mận đi vào xóm Đại Phú — đường đất đỏ. Nhà bà Sáu xưa — đã có người khác ở.
 
 Bà cụ đã đến nơi đó. Đặt khúc chè trước cửa — chính thềm bà Sáu ngồi đợi năm năm trước. Quỳ. Cúi đầu.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ. Bên cửa — bà Sáu xuất hiện — bà cụ bảy mươi áo bà ba nâu — cúi xuống nhặt khúc — vuốt vai Phượng Liên. Mỉm cười.
+Khải Phong chớp mắt — nhìn qua cửa sổ. Bên cửa — bà Sáu xuất hiện — bà cụ bảy mươi áo bà ba nâu — cúi xuống nhặt khúc — vuốt vai Gấm Mận. Mỉm cười.
 
 Khải Phong chớp lần nữa. Người bà Sáu tan ra.
 
-Phượng Liên ngẩng đầu. Đi về.
+Gấm Mận ngẩng đầu. Đi về.
 
 [pause:1500ms]
 
@@ -218,7 +218,7 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Khải Phong ngồi. Phượng Liên không đem chè cho bà Sáu một tối — bà mất sáng lên. Sau đó năm năm không liên lạc — anh giữ khúc.
+Khải Phong ngồi. Gấm Mận không đem chè cho bà Sáu một tối — bà mất sáng lên. Sau đó năm năm không liên lạc — anh giữ khúc.
 
 Khải Phong nhói. Bố mẹ Hạ Vy không liên lạc Khải Phong tám năm. Anh không hỏi thăm. Anh không gửi ảnh — không gửi thư.
 
@@ -234,7 +234,7 @@ Bác tài liếc gương. "Vào đêm bốn mươi tư. Con đã nhớ con khôn
 
 Khải Phong gật. Lệ rơi xuống dưới.
 
-Đêm thứ bốn mươi tư — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Đắk Lắk khuất. Phượng Liên ở lại bên cửa — khúc chè trên thềm.
+Đêm thứ bốn mươi tư — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Đắk Lắk khuất. Gấm Mận ở lại bên cửa — khúc chè trên thềm.
 
 Khải Phong cố nhớ tin nhắn Hạ Nhi gần đây. Bóng người ấy nhắn lần cuối — sinh nhật Khải Phong — tháng giêng năm nay. Hình ảnh người đàn ông chúc — anh xin chỗ cưới anh — anh đính kèm thiệp cưới scan PDF.
 

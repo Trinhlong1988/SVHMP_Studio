@@ -35,7 +35,7 @@ intensity_level: 0.70
 quang_memory_fragment: M10 (Khải Phong nhớ mình hứa với Hạ Vy điều gì)
 object_sub_arc: none
 callback_target: none
-passenger_main: nu 68 Bà Hảo Thái Bình (hứa đem cháu nội đi biển - cháu chết trước)
+passenger_main: nu 68 Xoan Nụ Thái Bình (hứa đem cháu nội đi biển - cháu chết trước)
 signature_object: OBJ_TUI_VAI_CAT (túi vải cát biển bà chuẩn bị)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Thái Bình
@@ -218,7 +218,7 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Khải Phong ngồi. Bà Hảo hứa Bin đem ra biển — không.
+Khải Phong ngồi. Xoan Nụ hứa Bin đem ra biển — không.
 
 Khải Phong nhói. Khải Phong đã hứa với Hạ Vy điều gì chưa kịp giữ lại?
 
@@ -244,7 +244,7 @@ Bác tài liếc gương. "Vào đêm bốn sáu. Con đã nhớ lời hứa Hà
 
 Khải Phong gật. Lệ rơi xuống dưới.
 
-Đêm thứ bốn mươi — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Diêm Điền khuất. Bà Hảo ở lại nhà thờ — quỳ trước Chúa.
+Đêm thứ bốn mươi — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Diêm Điền khuất. Xoan Nụ ở lại nhà thờ — quỳ trước Chúa.
 
 Khải Phong cố nhớ thêm về lời Hàn Quốc. Đứa em hứa vào đêm cuối năm 2017 — sau khi hai đứa tốt nghiệp Đại học Kiến trúc cùng nhau. Bóng người đàn ông bảo: "Hứa thật nhé." Hạ Vy gật. Người con gái em đặt vé Hàn Quốc bao giờ? Hình ảnh người đàn ông không kịp đặt — anh hứa miệng — chưa mua. Chỉ tháng tư 2018 — anh đi sớm. Lời hứa miệng — không thực hiện được — không có vé. Khải Phong chỉ có trí nhớ về lời hứa — không có vật chứng. Đêm thứ bốn kết thúc — Khải Phong nhói về hứa.
 

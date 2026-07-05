@@ -35,7 +35,7 @@ intensity_level: 0.70
 quang_memory_fragment: M9 (Khải Phong nhớ điện thoại Hạ Vy đã trả bố mẹ em - không giữ)
 object_sub_arc: none
 callback_target: none
-passenger_main: nam 50 Văn Trường Bình Phước (hứa cưới khi bạn đi nghĩa vụ về - bạn không về)
+passenger_main: nam 50 Chín Được Bình Phước (hứa cưới khi bạn đi nghĩa vụ về - bạn không về)
 signature_object: OBJ_GIAY_CONG_DAN (giấy chứng nhận hoàn thành nghĩa vụ - bạn không nhận)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Bình Phước
@@ -118,7 +118,7 @@ Người đàn ông quay đầu lại. Vuốt giấy.
 
 [pause:1000ms]
 
-"Tôi là Văn Trường. Cô gái năm mươi tuổi rồi. Người kể đây ở Bình Phước — quê. Hình ảnh người kể chuyện làm chủ vườn cao su — ba héc-ta."
+"Tôi là Chín Được. Cô gái năm mươi tuổi rồi. Người kể đây ở Bình Phước — quê. Hình ảnh người kể chuyện làm chủ vườn cao su — ba héc-ta."
 
 Giọng anh trầm.
 
@@ -168,7 +168,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Văn Trường gật.
+Chín Được gật.
 
 "Tôi nhớ. Em hứa em đêm trước em đi nghĩa vụ — chăm Mai. Hình bóng đàn ông không kịp giữ lại — Mai cưới khác. Em ấy ăn năn hai mươi tám năm. Đứa em không thể chuộc em — em chỉ có thể đem giấy em chưa nhận về đài tưởng niệm — coi em đã nhận giấy sau hai mươi tám năm."
 
@@ -184,7 +184,7 @@ Văn Trường gật.
 
 Xe chậm lại. Ngã ba Bình Phước — cây cao su lớn — bến gần đài. Chuông xe rung nhẹ. Vang một nhịp. Tan.
 
-Văn Trường gấp giấy. Đứng dậy.
+Chín Được gấp giấy. Đứng dậy.
 
 "Chào anh."
 
@@ -196,13 +196,13 @@ Người đàn ông bước xuống dưới.
 
 [pause:1200ms]
 
-Bên ngoài — Văn Trường đi vào đài tưởng niệm liệt sĩ Bình Phước. Đèn nến trên đài. Anh đặt giấy chứng nhận trên bia đá — chính giữa. Cúi đầu.
+Bên ngoài — Chín Được đi vào đài tưởng niệm liệt sĩ Bình Phước. Đèn nến trên đài. Anh đặt giấy chứng nhận trên bia đá — chính giữa. Cúi đầu.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ. Bên đài — Hùng xuất hiện — thanh niên mười chín đồng phục lính — vuốt vai Văn Trường. Mỉm cười.
+Khải Phong chớp mắt — nhìn qua cửa sổ. Bên đài — Hùng xuất hiện — thanh niên mười chín đồng phục lính — vuốt vai Chín Được. Mỉm cười.
 
 Khải Phong chớp lần nữa. Người tên Hùng tan đi.
 
-Văn Trường ngẩng đầu. Đi ra ngoài.
+Chín Được ngẩng đầu. Đi ra ngoài.
 
 [pause:1500ms]
 
@@ -220,7 +220,7 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Khải Phong ngồi. Văn Trường hứa với Hùng — không kịp giữ lại — anh đem giấy chưa nhận về đài. Lời hứa muộn — vẫn được gửi.
+Khải Phong ngồi. Chín Được hứa với Hùng — không kịp giữ lại — anh đem giấy chưa nhận về đài. Lời hứa muộn — vẫn được gửi.
 
 Khải Phong nhói. Điện thoại Hạ Vy giờ ở đâu?
 
@@ -240,7 +240,7 @@ Bác tài liếc gương. "Vào đêm bốn mươi ba. Con đã nhớ điện th
 
 Khải Phong gật. Lệ rơi xuống dưới.
 
-Đêm thứ bốn mươi ba — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Bình Phước khuất. Văn Trường ở lại đài — giấy trên bia đá.
+Đêm thứ bốn mươi ba — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Bình Phước khuất. Chín Được ở lại đài — giấy trên bia đá.
 
 Khải Phong cố nhớ lần cuối anh gặp bố mẹ Hạ Vy. Năm thứ hai sau Hạ Vy mất — anh về Hải Phòng tang lần một — anh ăn cơm chung với bố mẹ anh.
 
