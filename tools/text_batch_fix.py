@@ -8,8 +8,10 @@ Usage:
 """
 import argparse
 import os
+import shutil
 import sys
 import subprocess
+import tempfile
 
 CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
 import yaml
@@ -31,55 +33,76 @@ def _atomic_write(path, content):
     os.replace(tmp, path)
 
 
-def verify_post_fix(text, verify_rules):
-    """Apply text to episode.md (the REAL golden EP01) temp + run verify rules.
+TOOL_MAP = {
+    "R86": "qa_eol_diacritic.py",
+    "R92b": "qa_honorific.py",
+    "R110": "qa_continuity.py",
+    "R111": "qa_phonetic_safe.py",
+    "R113": "qa_repeat_action.py",
+    "R114": "qa_honorific.py",  # share with R92b
+    "R117": "qa_fact_check.py",
+    "R128": "qa_anti_generic.py",
+    "R141": "qa_ssot_diff.py",
+}
 
-    SAFETY: this is the only place in the whole tool/test suite that writes
-    directly into the golden output/ep_01/episode.md. The write+restore MUST
-    be crash-safe:
-      - every write to episode.md/backup goes through _atomic_write() (tmp +
-        os.replace) so a write interrupted mid-flight never leaves a
-        half-written file at the real path.
-      - the mutate + subprocess-verify block runs inside try/finally so that
-        ANY exception (including subprocess.TimeoutExpired or a raised error
-        from subprocess.run) still restores episode.md from backup before
-        the exception propagates. Previously there was no try/finally: an
-        exception between the write (line ~27 pre-fix) and the restore
-        (line ~51 pre-fix) left episode.md permanently overwritten with the
-        probe text.
-    """
-    backup = EPISODE.with_suffix(".md.batchfix_bak")
-    original = EPISODE.read_text(encoding="utf-8")
-    _atomic_write(backup, original)
-    try:
-        _atomic_write(EPISODE, text)
-        subprocess.run([sys.executable, str(BASE / "tools/tts_adapter_pre_render.py"), "--ep", "1", "--apply"],
-                       capture_output=True, timeout=30)
-        tool_map = {
-            "R86": "qa_eol_diacritic.py",
-            "R92b": "qa_honorific.py",
-            "R110": "qa_continuity.py",
-            "R111": "qa_phonetic_safe.py",
-            "R113": "qa_repeat_action.py",
-            "R114": "qa_honorific.py",  # share with R92b
-            "R117": "qa_fact_check.py",
-            "R128": "qa_anti_generic.py",
-            "R141": "qa_ssot_diff.py",
-        }
+# Bo phu (bible/27) ma 2 tool trong TOOL_MAP can doc canh episode.md - copy luon
+# vao tmp de khong bi thieu file khi chay trong thu muc cach ly.
+_EXTRA_COPY_FILES = ["bible/27_fact_db.yaml"]
+
+
+def verify_post_fix(text, verify_rules):
+    """Apply `text` len 1 BAN COPY episode.md trong tempfile.TemporaryDirectory()
+    rieng va chay verify rules TREN BAN COPY DO — KHONG BAO GIO dung vao
+    output/ep_01/episode.md THAT, du chi tam thoi (DEBT-005 fix, kiem duyet 5/7
+    toi: 2 phien chay dong thoi tren cung thu muc dung chung co the giam len
+    file backup CO DINH cua nhau (episode.md.batchfix_bak) -> corrupt du lieu
+    that. Trien khai cu ghi thang vao file that + backup/restore try-finally AN
+    TOAN cho 1 tien trinh don le nhung KHONG an toan khi >=2 tien trinh chay
+    cung luc — loai bo hoan toan rui ro bang cach khong bao gio cham vao file
+    that, thay vi giam thieu bang lock/ten-file-ngau-nhien.
+
+    Ca 8 tool trong TOOL_MAP + qa_eol_diacritic.py deu tu tinh duong dan episode.md
+    bang `Path(__file__).resolve().parents[1] / 'output/ep_01/episode.md'` (dua
+    tren VI TRI SCRIPT, khong phai cwd) — nen chi can COPY tool sang thu muc tam
+    + dat episode.md dung cho tuong doi la moi tool TU DONG doc dung ban trong
+    tmp, KHONG can sua logic ben trong bat ky tool QA nao."""
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp_root = Path(tmp)
+        tmp_tools = tmp_root / "tools"
+        tmp_ep_dir = tmp_root / "output" / "ep_01"
+        tmp_tools.mkdir(parents=True)
+        tmp_ep_dir.mkdir(parents=True)
+        tmp_episode = tmp_ep_dir / "episode.md"
+        tmp_episode.write_text(text, encoding="utf-8")
+
+        needed_tools = {"tts_adapter_pre_render.py"} | {
+            TOOL_MAP[r] for r in set(verify_rules) if r in TOOL_MAP}
+        for tool_name in needed_tools:
+            shutil.copy(BASE / "tools" / tool_name, tmp_tools / tool_name)
+        for rel in _EXTRA_COPY_FILES:
+            src = BASE / rel
+            if src.exists():
+                dst = tmp_root / rel
+                dst.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy(src, dst)
+
+        # Regen episode_tts_ready.md tren BAN COPY (giu dung y do ban goc:
+        # 1 so QA tool tuong lai co the can file nay ke episode.md).
+        subprocess.run([sys.executable, str(tmp_tools / "tts_adapter_pre_render.py"),
+                        "--ep", "1", "--apply"], capture_output=True, timeout=30,
+                       cwd=str(tmp_root))
+
         failed = []
         for rule in set(verify_rules):
-            tool = tool_map.get(rule)
-            if not tool: continue
-            r = subprocess.run([sys.executable, str(BASE / "tools" / tool)],
-                               capture_output=True, text=True, cwd=str(BASE), timeout=60,
+            tool = TOOL_MAP.get(rule)
+            if not tool:
+                continue
+            r = subprocess.run([sys.executable, str(tmp_tools / tool)],
+                               capture_output=True, text=True, cwd=str(tmp_root), timeout=60,
                                encoding="utf-8", errors="ignore")
             if r.returncode != 0:
                 failed.append(rule)
         return failed
-    finally:
-        # ALWAYS restore, even if the try block raised (timeout/crash/etc).
-        _atomic_write(EPISODE, backup.read_text(encoding="utf-8"))
-        backup.unlink(missing_ok=True)
 
 
 def main():

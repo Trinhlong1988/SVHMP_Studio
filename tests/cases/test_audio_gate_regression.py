@@ -9,7 +9,6 @@
 """
 import subprocess
 import sys
-import shutil
 from pathlib import Path
 import soundfile as sf
 import numpy as np
@@ -142,74 +141,29 @@ def case_4_music_shorter_than_voice():
 
 
 def case_5_substitute_violates_r111():
-    """text_batch_fix substitute that still violates R86 → must FAIL self-verify."""
+    """text_batch_fix substitute that still violates R86 → must FAIL self-verify.
+
+    DEBT-005 fix (5/7 tối): tools/text_batch_fix.py::verify_post_fix() giờ chạy
+    HOÀN TOÀN trên 1 bản copy episode.md trong tempfile.TemporaryDirectory() riêng
+    của chính nó — KHÔNG BAO GIỜ đụng output/ep_01/episode.md / episode_tts_ready.md
+    THẬT, dù chỉ tạm thời. Vì vậy test này KHÔNG CÒN CẦN backup/restore 2 file thật
+    (đã bỏ toàn bộ khối try/finally cũ) — verify_post_fix() tự cô lập, an toàn kể cả
+    khi nhiều tiến trình gọi đồng thời (đã test thủ công 2 terminal song song, xem
+    governance/TECH_DEBT.md#DEBT-005)."""
     print("\n--- Case 5: substitute violates R111/R86 (must FAIL self-verify) ---")
-    # Build temp registry with bad substitute
-    bad_registry = BASE / "bible/_test_bad_registry.yaml"
-    bad_registry.write_text("""fixes:
-  - id: BAD001
-    reason: "test bad substitute"
-    old: "Khải-Phong đang ngồi trên ghế số bảy của chuyến xe đêm."
-    new: "Khải-Phong đang ngồi trên ghế số bảy đó cũ."
-    section: HOOK
-    verify_rules: [R86]
-""", encoding='utf-8')
-    # Temporarily redirect text_batch_fix to use bad registry
-    # Easier: directly verify behavior via text_batch_fix module
-    # Inline check: verify substitute "cũ." triggers R86
     import importlib.util
     spec = importlib.util.spec_from_file_location("tbf", str(BASE / "tools/text_batch_fix.py"))
     tbf = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(tbf)
 
     ep = BASE / "output/ep_01/episode.md"
-    ready = BASE / "output/ep_01/episode_tts_ready.md"
-    backup = ep.with_suffix(".md.case5_bak")
-    ready_backup = ready.with_suffix(".md.case5_bak")
-    shutil.copy(ep, backup)
-    if ready.exists():
-        shutil.copy(ready, ready_backup)
-    try:
-        t = ep.read_text(encoding='utf-8')
-        bad_text = t.replace("Khải-Phong đang ngồi trên ghế số bảy của chuyến xe đêm.",
-                             "Khải-Phong đang ngồi trên ghế số bảy đó cũ.")
-        # NOTE: verify_post_fix() itself writes bad_text into the REAL
-        # output/ep_01/episode.md for the duration of the probe (and, via its
-        # own internal --apply call, also regenerates the REAL
-        # episode_tts_ready.md from that bad_text). It restores episode.md
-        # from its own backup before returning (see tools/text_batch_fix.py),
-        # but it does NOT know about / restore episode_tts_ready.md — that's
-        # this test's job below.
-        failed = tbf.verify_post_fix(bad_text, ["R86"])
-        assert "R86" in failed, f"R86 should fail on 'cũ.' EOL but didn't"
-        print(f"  ✅ Case 5: R86 self-verify caught bad substitute")
-    finally:
-        # Restore both real ep_01 files byte-for-byte from the backups taken
-        # BEFORE the probe ran. Do NOT regenerate episode_tts_ready.md by
-        # rerunning tools/tts_adapter_pre_render.py --ep 1 --apply against the
-        # real output/ep_01/ dir: process_ep()'s naive re-derivation does not
-        # byte-match the committed golden episode_tts_ready.md (observed diff
-        # 90+/118- lines), which left permanent uncommitted drift in
-        # output/ep_01/ after every suite run even though the test itself
-        # PASSED. Restoring from backup guarantees `git diff` is empty.
-        shutil.copy(backup, ep)
-        backup.unlink()
-        if ready_backup.exists():
-            shutil.copy(ready_backup, ready)
-            ready_backup.unlink()
-        bad_registry.unlink()
-        # Smoke-check that the pre-render adapter still runs cleanly on the
-        # restored text — but point it at a throwaway tmp copy of the tool +
-        # tree, never at the real output/ep_01/, so the check can never leave
-        # drift in the real repo.
-        with tempfile.TemporaryDirectory() as tmp:
-            tmp_path = Path(tmp)
-            (tmp_path / "tools").mkdir()
-            (tmp_path / "output" / "ep_01").mkdir(parents=True)
-            shutil.copy(BASE / "tools/tts_adapter_pre_render.py", tmp_path / "tools" / "tts_adapter_pre_render.py")
-            shutil.copy(ep, tmp_path / "output" / "ep_01" / "episode.md")
-            subprocess.run([sys.executable, str(tmp_path / "tools" / "tts_adapter_pre_render.py"),
-                            "--ep", "1", "--apply"], capture_output=True, timeout=30, cwd=str(tmp_path))
+    t = ep.read_text(encoding='utf-8')
+    bad_text = t.replace("Khải-Phong đang ngồi trên ghế số bảy của chuyến xe đêm.",
+                         "Khải-Phong đang ngồi trên ghế số bảy đó cũ.")
+    assert bad_text != t, "substitution did not apply — case setup broken"
+    failed = tbf.verify_post_fix(bad_text, ["R86"])
+    assert "R86" in failed, f"R86 should fail on 'cũ.' EOL but didn't"
+    print(f"  ✅ Case 5: R86 self-verify caught bad substitute")
 
 
 def main():
