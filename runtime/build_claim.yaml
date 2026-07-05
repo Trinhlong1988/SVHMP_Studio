@@ -25,8 +25,9 @@ claims:
     status: active
   g2_audit_fix:
     claimed_at: '2026-07-05T19:52:31'
+    released_at: '2026-07-05T21:42:16'
     session: CMD_BUILD_2
-    status: active
+    status: released
   g2_b4_voice_fill:
     claimed_at: '2026-07-05T17:32:22'
     released_at: '2026-07-05T18:53:27'
