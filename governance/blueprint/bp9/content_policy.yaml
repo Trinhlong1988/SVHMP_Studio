@@ -14,7 +14,7 @@
 meta:
   version: 1.0.0
   pack: bp9_compliance
-  status: candidate            # Builder khong lock/tag — Mr.Long ky sau audit
+  status: locked               # FROZEN v1.0 (Mr.Long authorized 4/7), tag bp9-compliance-v1.0 — xem governance/architecture_registry.yaml#bp9_compliance
   owner_domain: publisher
   fills_bp0_slot: "domains.publisher.schema (blueprint_domains.yaml, LOCKED v2.0) — flip planned->exists"
   legal_note: |
@@ -80,10 +80,6 @@ disclaimer_rule:
 # ============================================================
 invariants:
   - rule: "Dung 2 hard_boundaries (HB01, HB02) — thieu 1 trong 2 = FAIL"
-    enforcer: {status: planned, planned_path: tools/bp9_compliance_check.py, owner: publisher,
-              reason_not_exists_yet: "Dang xay dung cung BP9", target_milestone: M4_video_publisher,
-              blocking_dependency: "BP9 candidate build"}
+    enforcer: {status: exists, path: tools/bp9_compliance_check.py, owner: publisher}
   - rule: "Moi hard_boundary PHAI co can_cu_phap_ly (>=1) — khong duoc la luat rong (chong bia)"
-    enforcer: {status: planned, planned_path: tools/bp9_compliance_check.py, owner: publisher,
-              reason_not_exists_yet: "Dang xay dung cung BP9", target_milestone: M4_video_publisher,
-              blocking_dependency: "BP9 candidate build"}
+    enforcer: {status: exists, path: tools/bp9_compliance_check.py, owner: publisher}

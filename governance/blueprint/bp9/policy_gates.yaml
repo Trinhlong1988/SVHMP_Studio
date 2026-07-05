@@ -12,7 +12,7 @@
 meta:
   version: 1.0.0
   pack: bp9_compliance
-  status: candidate
+  status: locked        # FROZEN v1.0 (Mr.Long authorized 4/7), tag bp9-compliance-v1.0 — xem governance/architecture_registry.yaml#bp9_compliance
   owner_domain: publisher
   fills_bp0_slot: "domains.publisher.validator (blueprint_domains.yaml, LOCKED v2.0) — flip planned->exists, tro tools/bp9_compliance_check.py (BP-layer structural check, KHAC runtime scanner G8 se xay sau)"
   loai_check_enum: [mo_ta_chi_tiet, truc_loi_gan_kem, ton_giao_khong_ton_kinh, thieu_disclaimer]
@@ -81,14 +81,8 @@ gates:
 # ============================================================
 invariants:
   - rule: "Moi gate.ap_dung_domain[] PHAI la domain THAT da khai trong blueprint_domains.yaml (23 domain dong) — domain-ma = FAIL"
-    enforcer: {status: planned, planned_path: tools/bp9_compliance_check.py, owner: publisher,
-              reason_not_exists_yet: "Dang xay dung cung BP9", target_milestone: M4_video_publisher,
-              blocking_dependency: "BP9 candidate build"}
+    enforcer: {status: exists, path: tools/bp9_compliance_check.py, owner: publisher}
   - rule: "Moi gate.loai_check PHAI thuoc dung 4 gia tri enum da khai (meta.loai_check_enum) — loai_check la = FAIL"
-    enforcer: {status: planned, planned_path: tools/bp9_compliance_check.py, owner: publisher,
-              reason_not_exists_yet: "Dang xay dung cung BP9", target_milestone: M4_video_publisher,
-              blocking_dependency: "BP9 candidate build"}
+    enforcer: {status: exists, path: tools/bp9_compliance_check.py, owner: publisher}
   - rule: "Gate severity=HIGH PHAI co owner_review nhac ro 'Mr.Long' (sensitivity cao -> nguoi duyet, KHONG may tu quyet — RANG BUOC RIENG TASK_BP9)"
-    enforcer: {status: planned, planned_path: tools/bp9_compliance_check.py, owner: publisher,
-              reason_not_exists_yet: "Dang xay dung cung BP9", target_milestone: M4_video_publisher,
-              blocking_dependency: "BP9 candidate build"}
+    enforcer: {status: exists, path: tools/bp9_compliance_check.py, owner: publisher}

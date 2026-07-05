@@ -21,7 +21,7 @@
 
 **Examples:** gate mới `ap_dung_domain: [khong_ton_tai]` → FAIL DOMAIN-MA; xóa HB02 khỏi content_policy → FAIL HARD-BOUNDARY-THIEU; thêm `min_disclaimer_words: 15` vào content_policy → FAIL R195-HARDCODE; BP0 publisher.schema path lệch bp9/content_policy.yaml → FAIL DRIFT-BP0.
 
-**Promotion Rules:** `bp9_compliance: candidate` — Builder không lock/tag; Mr.Long ký sau audit (reconcile `governance/constitution/00_constitution.md`). REALITY ANCHOR (luật 9): checker chạy trên data bp9 THẬT + số đo trong `reports/BP9_REPORT.md`. Pack này chèn vào MASTER chain trước FINAL AUDIT (không phải sau BP8 như dự kiến ban đầu).
+**Promotion Rules:** `bp9_compliance: locked` — FROZEN v1.0 (Mr.Long authorized 4/7), tag `bp9-compliance-v1.0` (xem `governance/architecture_registry.yaml#bp9_compliance`). REALITY ANCHOR (luật 9): checker chạy trên data bp9 THẬT + số đo trong `reports/BP9_REPORT.md`. Pack này chèn vào MASTER chain trước FINAL AUDIT (không phải sau BP8 như dự kiến ban đầu).
 
 ## Ghi chú semantics (kiểm duyệt phán khi audit)
 `publisher.validator` (BP0) field-hóa trỏ `tools/bp9_compliance_check.py` mang nghĩa "validator cấu trúc luật" (BP-layer, giống bp6/bp7/bp8_check), KHÔNG phải "validator quét episode thật lúc publish" — cái sau là `tools/publish_gate.py` (vẫn CHƯA build, chờ G8 QA Runtime theo đúng RÀNG BUỘC RIÊNG TASK_BP9). Đây là diễn giải CHỦ ĐỘNG của Builder khi field-hóa 2 slot BP0 cùng lúc; nếu kiểm duyệt thấy cách hiểu này sai lệch với ý Mr.Long, đây là điểm cần làm rõ đầu tiên khi audit (không phải lỗi cấu trúc — là quyết định thiết kế cần xác nhận).
