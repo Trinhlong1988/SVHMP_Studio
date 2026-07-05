@@ -21,8 +21,9 @@ claims:
     status: released
   g2_b4_voice_req_fix:
     claimed_at: '2026-07-05T16:04:12'
+    released_at: '2026-07-05T16:21:11'
     session: CMD_BUILD_2
-    status: active
+    status: released
   g2_character:
     claimed_at: '2026-07-05T01:32:22'
     released_at: '2026-07-05T02:04:20'
