@@ -19,6 +19,10 @@ claims:
     released_at: '2026-07-04T21:10:05'
     session: CMD_BUILD
     status: released
+  debt005_006_fix:
+    claimed_at: '2026-07-05T21:11:57'
+    session: CMD_BUILD_3
+    status: active
   g2_audit_fix:
     claimed_at: '2026-07-05T19:52:31'
     session: CMD_BUILD_2
