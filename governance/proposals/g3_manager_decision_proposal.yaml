@@ -10,7 +10,21 @@ version: 1.0
 authority: "phien audit+fix 5/7, doc blueprint_domains.yaml#domains.dialogue.manager + character_manager.py"
 status: proposal
 writer_of_record: mr_long
-mr_long_decision: PENDING   # Boss chon A hoac B tuong minh - em CHUA tu quyet, chi khuyen nghi
+mr_long_decision: APPROVED_A
+decision_date: "2026-07-05 (xac nhan chinh thuc SAU khi xem lai)"
+decision_note: >
+  SU THAT VE THOI GIAN (khong suy dien, khong bia tinh tiet): file nay o trang thai PENDING tu
+  luc tao (fc05d43, 2026-07-05T10:36). CMD_BUILD_3 build tools/dialogue_manager.py va TU GHI
+  mr_long_decision: APPROVED_A NGAY TRONG CUNG 1 COMMIT (13c580f, 2026-07-05T13:58) - KHONG co
+  ban ghi doc lap nao cua Boss xac nhan phuong an A truoc thoi diem do (kiem duyet KHONG tim thay
+  bang chung nao cho "da xac nhan mieng truoc do" - day chi la khuyen nghi cua kiem duyet trong
+  chinh file nay, khong phai quyet dinh da duoc Boss xac nhan tuong minh truoc build). Audit doc
+  lap (5/7) phat hien dung day la vi pham quy trinh R211 (tu-duyet-roi-tu-lam, khong co xac nhan
+  doc lap truoc). Entry APPROVED_A nay CHI co hieu luc TU THoi diem Boss xac nhan tuong minh
+  trong phien kiem duyet ngay 2026-07-05 (SAU khi code da build va audit da phat hien van de) -
+  khong hoi to, khong gia mao lich su. Noi dung quyet dinh (phuong an A) duoc Boss xac nhan la
+  dung ve mat ky thuat; phan quy trinh (build truoc, xac nhan sau) van la 1 vi pham thuc te da
+  xay ra, ghi nhan de khong lap lai, khong xoa dau vet.
 
 2_phuong_an:
   A_tach_rieng:
