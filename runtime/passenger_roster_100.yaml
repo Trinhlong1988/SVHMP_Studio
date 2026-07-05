@@ -1085,6 +1085,12 @@ passengers:
     particles:
     - nghen
     register: dan_da
+    speaking_speed: cham
+    catchphrase: con giấu tình cảm tới khi người đó mất
+    forbidden_words:
+    - yêu đương
+    - thổ lộ
+    dialogue_sample: Con thương người đó âm thầm bao năm, con chưa từng dám nói, giờ người đó đi rồi con vẫn giữ trong lòng.
   death:
     type: hieu_lam
     pain: Yêu thầm tới lúc người ấy mất — chưa kịp tỏ tình
@@ -1111,6 +1117,12 @@ passengers:
     particles:
     - nhỉ
     register: dan_da
+    speaking_speed: vua
+    catchphrase: tôi giấu lòng mình quá lâu
+    forbidden_words:
+    - tỏ tình
+    - nói ra
+    dialogue_sample: Tôi thương người ta từ lâu mà không dám nói, cứ chờ đúng lúc, đến khi người ta mất tôi vẫn chưa nói được.
   death:
     type: hy_sinh
     pain: Yêu thầm tới lúc người ấy mất — chưa kịp tỏ tình
@@ -1137,6 +1149,12 @@ passengers:
     particles:
     - rứa
     register: dan_da
+    speaking_speed: vua
+    catchphrase: tui thương thầm mà không dám nói
+    forbidden_words:
+    - liều lĩnh
+    - mạnh dạn
+    dialogue_sample: Tui để bụng thương người đó bao năm, tui sợ mất tình bạn nên không dám nói, giờ người đó không còn nữa.
   death:
     type: bi_phan_boi
     pain: Yêu thầm tới lúc người ấy mất — chưa kịp tỏ tình
@@ -1163,6 +1181,12 @@ passengers:
     particles:
     - nghen
     register: dan_da
+    speaking_speed: vua
+    catchphrase: con tiếc vì con không đủ can đảm
+    forbidden_words:
+    - nhát gan
+    - sợ bị từ chối
+    dialogue_sample: Con thương người đó thầm lặng, con sợ nói ra sẽ mất luôn tình bạn, giờ con hối không còn cơ hội nữa.
   death:
     type: khong_ro
     pain: Yêu thầm tới lúc người ấy mất — chưa kịp tỏ tình
@@ -1189,6 +1213,12 @@ passengers:
     particles:
     - nhỉ
     register: dan_da
+    speaking_speed: nhanh
+    catchphrase: con không có mặt lúc vợ con cần con nhất
+    forbidden_words:
+    - công tác
+    - đi xa
+    dialogue_sample: Vợ con sinh con lúc con đang đi công tác xa, con không kịp về, con ân hận suốt đời.
   death:
     type: tai_nan
     pain: Vợ trẻ mất khi sinh — chồng vắng vì công tác
@@ -1215,6 +1245,12 @@ passengers:
     particles:
     - rứa
     register: dan_da
+    speaking_speed: cham
+    catchphrase: tui vắng mặt lúc chồng cần tui nhất
+    forbidden_words:
+    - bận công việc
+    - đi làm xa
+    dialogue_sample: Chồng tui gọi lúc vợ sắp sinh, tui đang công tác chưa về kịp, tui tiếc mãi chuyện đó.
   death:
     type: benh_tat
     pain: Vợ trẻ mất khi sinh — chồng vắng vì công tác
@@ -1241,6 +1277,12 @@ passengers:
     particles:
     - nghen
     register: dan_da
+    speaking_speed: nhanh
+    catchphrase: con hối vì con đi công tác xa lúc đó
+    forbidden_words:
+    - bận rộn
+    - không sắp xếp được
+    dialogue_sample: Vợ con một mình lúc sinh nở khó khăn, con đang công tác xa chưa về kịp, con tự trách mình suốt.
   death:
     type: mat_tich
     pain: Vợ trẻ mất khi sinh — chồng vắng vì công tác
@@ -1267,6 +1309,12 @@ passengers:
     particles:
     - nhỉ
     register: dan_da
+    speaking_speed: cham
+    catchphrase: tôi ân hận vì tôi không có mặt lúc đó
+    forbidden_words:
+    - công tác xa
+    - trách nhiệm công việc
+    dialogue_sample: Chồng tôi đi công tác xa lúc tôi sinh con, tôi một mình vượt cạn, chồng tôi day dứt mãi vì chuyện đó.
   death:
     type: oan_khuat
     pain: Vợ trẻ mất khi sinh — chồng vắng vì công tác
@@ -1293,6 +1341,12 @@ passengers:
     particles:
     - rứa
     register: dan_da
+    speaking_speed: cham
+    catchphrase: tui chưa kịp xin lỗi vì hiểu lầm đó
+    forbidden_words:
+    - ghen tuông
+    - nghi ngờ
+    dialogue_sample: Tui hiểu lầm chuyện nhỏ rồi chia tay người ta, tui định xin lỗi làm lành, mà không kịp nữa.
   death:
     type: tu_nhien
     pain: Chia tay vì hiểu lầm — chưa kịp xin lỗi
@@ -1319,6 +1373,13 @@ passengers:
     particles:
     - nghen
     register: dan_da
+    speaking_speed: vua
+    catchphrase: con tiếc vì chia tay do hiểu lầm
+    forbidden_words:
+    - nghi oan
+    - trách lầm
+    dialogue_sample: Con trách oan người ta chuyện không đâu, chia tay xong con mới biết mình hiểu lầm, giờ không sửa được
+      nữa.
   death:
     type: hieu_lam
     pain: Chia tay vì hiểu lầm — chưa kịp xin lỗi
@@ -1345,6 +1406,12 @@ passengers:
     particles:
     - nhỉ
     register: dan_da
+    speaking_speed: vua
+    catchphrase: tôi ân hận vì đã hiểu lầm người ấy
+    forbidden_words:
+    - ghen
+    - nghi kỵ
+    dialogue_sample: Tôi nghi oan người ta phản bội mình, chia tay trong giận dữ, sau này mới biết mình hiểu lầm hết.
   death:
     type: hy_sinh
     pain: Chia tay vì hiểu lầm — chưa kịp xin lỗi
@@ -1371,6 +1438,12 @@ passengers:
     particles:
     - rứa
     register: dan_da
+    speaking_speed: vua
+    catchphrase: tui chưa nói được lời xin lỗi vì hiểu lầm
+    forbidden_words:
+    - cãi vã
+    - giận lẫy
+    dialogue_sample: Tui giận người ta vì chuyện hiểu lầm, chia tay trong lúc nóng giận, tui chưa kịp quay lại xin lỗi.
   death:
     type: bi_phan_boi
     pain: Chia tay vì hiểu lầm — chưa kịp xin lỗi
@@ -1397,6 +1470,12 @@ passengers:
     particles:
     - nghen
     register: dan_da
+    speaking_speed: nhanh
+    catchphrase: con chờ mười năm mà không nói được lời nào
+    forbidden_words:
+    - yêu xa
+    - chờ đợi
+    dialogue_sample: Con yêu xa người đó mười năm, gặp lại thì người ta đã có gia đình, con chỉ biết cười chúc mừng.
   death:
     type: khong_ro
     pain: Yêu xa 10 năm — gặp lại thì người ấy đã có gia đình
@@ -1423,6 +1502,12 @@ passengers:
     particles:
     - nhỉ
     register: dan_da
+    speaking_speed: cham
+    catchphrase: tôi chờ đợi mười năm không kết quả
+    forbidden_words:
+    - hy vọng
+    - chờ mong
+    dialogue_sample: Tôi cứ hy vọng một ngày đoàn tụ với người yêu xa, mười năm sau gặp lại người ta đã yên bề gia thất.
   death:
     type: tai_nan
     pain: Yêu xa 10 năm — gặp lại thì người ấy đã có gia đình
@@ -1449,6 +1534,12 @@ passengers:
     particles:
     - rứa
     register: dan_da
+    speaking_speed: nhanh
+    catchphrase: tui giữ tình cảm mười năm rồi buông
+    forbidden_words:
+    - ghen tị
+    - tiếc nuối
+    dialogue_sample: Tui yêu xa người đó mười năm đằng đẵng, gặp lại người ta đã có vợ có con, tui chỉ biết lặng lẽ rời đi.
   death:
     type: benh_tat
     pain: Yêu xa 10 năm — gặp lại thì người ấy đã có gia đình
@@ -1475,6 +1566,12 @@ passengers:
     particles:
     - nghen
     register: dan_da
+    speaking_speed: vua
+    catchphrase: con tiếc mười năm yêu xa vô vọng
+    forbidden_words:
+    - trách móc
+    - oán giận
+    dialogue_sample: Con chờ người yêu xa mười năm ròng rã, ngày gặp lại người ta đã lập gia đình, con không trách được ai.
   death:
     type: mat_tich
     pain: Yêu xa 10 năm — gặp lại thì người ấy đã có gia đình
@@ -1501,6 +1598,12 @@ passengers:
     particles:
     - nhỉ
     register: dan_da
+    speaking_speed: cham
+    catchphrase: tôi chưa nói được câu cảm ơn với chồng
+    forbidden_words:
+    - nợ nần
+    - ơn nghĩa
+    dialogue_sample: Chồng tôi lo cho tôi cả đời, tôi chưa từng nói một câu cảm ơn, giờ ông đi rồi tôi mới tiếc.
   death:
     type: oan_khuat
     pain: Chồng già mất — vợ tiếc chưa nói 'cảm ơn'
@@ -1527,6 +1630,12 @@ passengers:
     particles:
     - rứa
     register: dan_da
+    speaking_speed: vua
+    catchphrase: tui thiếu chồng một lời cảm ơn
+    forbidden_words:
+    - hy sinh
+    - chịu đựng
+    dialogue_sample: Chồng tui vất vả nuôi gia đình cả đời, tui quen với sự chăm sóc đó mà chưa từng nói cảm ơn.
   death:
     type: tu_nhien
     pain: Chồng già mất — vợ tiếc chưa nói 'cảm ơn'
@@ -1553,6 +1662,12 @@ passengers:
     particles:
     - nghen
     register: dan_da
+    speaking_speed: vua
+    catchphrase: con nợ chồng một câu cảm ơn cả đời
+    forbidden_words:
+    - âm thầm
+    - lặng lẽ
+    dialogue_sample: Chồng con âm thầm lo cho gia đình bao năm, con chưa từng nói cảm ơn, giờ ông mất rồi con mới ân hận.
   death:
     type: hieu_lam
     pain: Chồng già mất — vợ tiếc chưa nói 'cảm ơn'
@@ -1579,6 +1694,12 @@ passengers:
     particles:
     - nhỉ
     register: dan_da
+    speaking_speed: cham
+    catchphrase: tôi tiếc vì chưa cảm ơn vợ đúng lúc
+    forbidden_words:
+    - gánh vác
+    - chịu khổ
+    dialogue_sample: Vợ tôi gánh vác gia đình một đời, tôi chưa từng nói lời cảm ơn đúng nghĩa, giờ bà đi rồi tôi mới hối.
   death:
     type: hy_sinh
     pain: Chồng già mất — vợ tiếc chưa nói 'cảm ơn'
@@ -1605,6 +1726,12 @@ passengers:
     particles:
     - rứa
     register: dan_da
+    speaking_speed: nhanh
+    catchphrase: tui chưa đọc kịp lá thư cuối của cô ấy
+    forbidden_words:
+    - chậm trễ
+    - để lâu
+    dialogue_sample: Cô ấy gửi thư tay cho tui trước khi mất, tui để đó chưa đọc ngay, đọc xong thì cô ấy đã không còn.
   death:
     type: bi_phan_boi
     pain: Yêu xa thư tay — cô gái mất trước khi anh đọc thư cuối
@@ -1631,6 +1758,12 @@ passengers:
     particles:
     - nghen
     register: dan_da
+    speaking_speed: cham
+    catchphrase: con để thư của anh ấy quá lâu chưa đọc
+    forbidden_words:
+    - bận rộn
+    - quên mất
+    dialogue_sample: Anh ấy gửi thư tay cho con trước lúc mất, con bận việc để đó, đọc xong thì đã muộn màng.
   death:
     type: khong_ro
     pain: Yêu xa thư tay — cô gái mất trước khi anh đọc thư cuối
@@ -1657,6 +1790,12 @@ passengers:
     particles:
     - nhỉ
     register: dan_da
+    speaking_speed: vua
+    catchphrase: tôi chậm trễ đọc bức thư cuối cùng
+    forbidden_words:
+    - trì hoãn
+    - để đó đã
+    dialogue_sample: Cô ấy viết thư tay gửi tôi trước khi mất, tôi định đọc sau, khi đọc được thì cô ấy đã đi xa.
   death:
     type: tai_nan
     pain: Yêu xa thư tay — cô gái mất trước khi anh đọc thư cuối
@@ -1683,6 +1822,12 @@ passengers:
     particles:
     - rứa
     register: dan_da
+    speaking_speed: vua
+    catchphrase: tui tiếc vì đọc thư trễ quá
+    forbidden_words:
+    - chần chừ
+    - lần lữa
+    dialogue_sample: Anh gửi thư tay cho tui rồi mất, tui chần chừ chưa mở thư ngay, lúc đọc được thì đã không kịp hồi âm.
   death:
     type: benh_tat
     pain: Yêu xa thư tay — cô gái mất trước khi anh đọc thư cuối
