@@ -179,6 +179,22 @@ render mới có thể xoá bản gốc).
 svhmp-render-on-this-machine) trên spec còn nguyên (`spec_hook.json`/`spec_cliffhanger.json`) là
 đủ, vì phần khó (làm sạch tạp âm/cắt cụt chữ) đã giải xong, không phải giải lại.
 
+## G16 — `tests/cases/test_audio_gate_regression.py` (qua `text_batch_fix.py::verify_post_fix`) ghi
+tạm THẲNG vào `output/ep_01/episode.md` THẬT — an toàn 1 tiến trình, KHÔNG an toàn khi 2 phiên chạy
+`pytest` đồng thời trên CÙNG thư mục dùng chung → corrupt file golden thật (chi tiết đầy đủ +
+hướng fix: xem `governance/TECH_DEBT.md` DEBT-005)
+Case thật (5/7 tối): push bị CI gate chặn, điều tra ra `output/ep_01/episode.md` giảm từ ~630 dòng
+xuống gần rỗng trong working tree (chưa commit, khôi phục an toàn bằng `git checkout --`). Nguyên
+nhân: hàm `verify_post_fix()` cố ý ghi `bad_text` vào file thật để chạy probe QA-rule, có try/finally
+khôi phục đúng cho 1 tiến trình, nhưng dùng đường dẫn backup CỐ ĐỊNH (không có PID/lock) — 2 tiến
+trình cùng chạy test này cùng lúc (thường xảy ra vì chỉ kiểm duyệt dùng worktree cách ly cho audit,
+các phiên CMD_BUILD khác làm việc trực tiếp trên thư mục dùng chung) sẽ giẫm backup của nhau.
+**Bài học:** khi CI gate FAIL trên file `output/ep_01/`, LUÔN tự hỏi "có phiên khác đang chạy full
+suite cùng lúc không" trước khi coi là lỗi thật trong commit đang push — kiểm `git status`/chạy lại
+test độc lập để phân biệt nhiễu-đồng-thời (tự hết, retry được) với lỗi-commit-thật (không tự hết).
+Đồng thời: phát hiện thêm 1 regression KHÔNG liên quan (R86 không bắt lỗi "cũ." EOL đúng như test kỳ
+vọng) trong lúc điều tra — ghi riêng `DEBT-006`, không lẫn với vấn đề concurrency ở trên.
+
 ## Nguồn cảm hứng
 So sánh với Hermes Agent (Nous Research, 4/7): pattern "skill file agent tự viết, mọi lần gọi lại
 đọc được" đúng hướng nhưng KHÔNG áp dụng "tự viết không kiểm duyệt" — file này làm thủ công, review
