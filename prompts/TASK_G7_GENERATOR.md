@@ -1,30 +1,29 @@
-# TASK G7 — GENERATOR (KHUNG chuẩn bị trước, CHƯA build được — chờ G6a+G6b thật)
+# TASK G7 — GENERATOR (ĐỦ 4/4 ĐIỀU KIỆN — CMD_BUILD ĐƯỢC PHÉP CLAIM)
 
 > Viết bởi kiểm duyệt 5/7, ÁP DỤNG rút kinh nghiệm toàn bộ lỗi thật đã xảy ra trong phiên G2-G6
 > (liệt kê đầy đủ ở mục "RÚT KINH NGHIỆM" cuối file — đọc trước khi build, không phải đọc sau khi
-> bị audit bắt lại đúng lỗi cũ). Đây là **KHUNG**, không phải lệnh "chạy ngay" — G7 hiện KHÔNG THỂ
-> build thật vì vẫn còn 1/4 điều kiện chưa xong hẳn (G6b đang code, xem bảng dưới — **CẬP NHẬT
-> 5/7 tối**, 3/4 điều kiện đã đổi trạng thái so với bản viết sáng 5/7).
+> bị audit bắt lại đúng lỗi cũ). **CẬP NHẬT tối 5/7:** cả 4/4 điều kiện chặn đã đủ — G6a locked,
+> G6b locked (tag `story-planner-v1.0`), cả 2 schema đã duyệt. **CMD_BUILD được phép claim và bắt
+> đầu D1 ngay** — đây không còn là "khung chờ", là task thật.
 
-## ĐIỀU KIỆN CHẠY — đọc TRƯỚC khi claim pack (đọc trực tiếp `blueprint_domains.yaml` dòng 594-622)
+## ĐIỀU KIỆN CHẠY — ĐỦ 4/4, đã tự tay verify (đọc trực tiếp `blueprint_domains.yaml` dòng 594-622)
 
 `generator` là domain có **blocking_dependency rộng nhất toàn dự án**: 14 domain phải đọc được
 (`story_planner, decision_engine, dialogue, character, event, object, world, timeline,
 supernatural, location, weather, culture, belief, ritual`) + 2 cổng duyệt Mr.Long riêng biệt:
 
-| Cổng chặn | Trạng thái thật (cập nhật tối 5/7) | Lệnh xác nhận |
+| Cổng chặn | Trạng thái thật (cập nhật tối 5/7, ĐỦ 4/4) | Bằng chứng |
 |---|---|---|
-| `story_planner` (G6b) manager thật tồn tại | 🟡 ĐANG LÀM — CMD_BUILD đã claim `g6b_story_planner`, chưa release | `python tools/build_claim.py status` — chờ dòng `released` + `Test-Path tools/story_planner.py` |
+| `story_planner` (G6b) manager thật tồn tại | ✅ XONG — locked v1.0, tag `story-planner-v1.0` | `Test-Path tools/story_planner.py` = True |
 | `decision_engine` (G6a) packet builder thật | ✅ XONG — locked v1.0, tag `g6a-decision-engine-v1.0` | `Test-Path bible/42_decision_policy.yaml` = True |
 | Mr.Long duyệt `story_plan_schema.yaml` (G6b riêng) | ✅ Đã duyệt phương án A (nguyên văn), `governance/proposals/story_plan_schema_proposal.yaml` `APPROVED_A`, commit `9f5ccbd` | — |
 | Mr.Long duyệt `episode_schema.yaml` (G7 riêng, KHÁC cổng trên) | ✅ Đã duyệt phương án B (có bổ sung ngoại lệ ep73/90 cho bell_count/driver_lines), `governance/proposals/episode_schema_proposal.yaml` `APPROVED_B`, commit `eef436b` | — |
 
-**Luật cứng (mirror G6-1, REALITY ANCHOR luật 9):** BẤT KỲ dòng code nào của
-`tools/episode_generator.py` xuất hiện trong diff mà thiếu 1 trong 4 điều kiện trên = build-ahead,
-**100% SAI, không có mức tạm chấp nhận** — đúng lớp lỗi đã bắt G3 (dialogue_manager tự duyệt) và
-suýt bắt G6b (chờ G4). G7 rủi ro build-ahead CAO HƠN mọi domain trước vì phụ thuộc nhiều nhất.
-**Chỉ còn đúng 1 điều kiện chưa xong (G6b code) — khi CMD_BUILD release `g6b_story_planner` VÀ
-`tools/story_planner.py` tồn tại thật, đủ cả 4/4, G7 mới được claim.**
+**Luật cứng (mirror G6-1, REALITY ANCHOR luật 9) vẫn áp dụng dù đủ điều kiện:** mọi field trong
+D1 (`episode_schema.yaml`) PHẢI khớp nguyên văn bản đã duyệt B — không tự thêm/bớt. G7 rủi ro
+build-ahead/cross-domain CAO NHẤT dự án (đọc 14 domain, y hệt lớp lỗi vừa bắt ở G6a/bp4 và G6b/bp6)
+— đọc kỹ mục "RÚT KINH NGHIỆM" trước khi code, đặc biệt mục 8 (không tự sửa file domain khác khi
+"tiện thể" thấy drift, phải báo/xin phép riêng dù nội dung đúng).
 
 ## NỀN ĐÃ CÓ (reconcile trước — CẤM nhân đôi R211, đã verify trực tiếp 5/7)
 
@@ -122,6 +121,14 @@ không kiểm lại tình trạng sửa lỗi G2-1 (công thức hóa) → ghi n
 8. **Vai trò kiểm duyệt tự build (đầu phiên 5/7):** kiểm duyệt viết task/audit doc (như file này)
    nhưng KHÔNG tự code `tools/episode_generator.py` — giao đúng CMD_BUILD rảnh, kiểm duyệt chỉ
    audit độc lập sau.
+9. **Cross-domain "tiện thể sửa luôn" (đã xảy ra 2 LẦN LIÊN TIẾP — G6a sửa `bp4/runtime_flow.yaml`,
+   G6b sửa `bp6/decision_io.yaml` + `tests/test_bp6_decision.py` — cả 2 lần nội dung ĐÚNG nhưng
+   đều thiếu xin phép trước, phải xử lý bằng ủy quyền hồi tố):** khi build G7 mà thấy 1 domain khác
+   (trong 14 domain đọc) có drift/lỗi rõ ràng (vd field khai `planned` nhưng thực đã `exists`),
+   **DỪNG LẠI báo kiểm duyệt/Boss xin phép TRƯỚC**, KHÔNG tự sửa "vì đằng nào cũng đúng, tiện thể
+   sửa luôn cho gọn" — dù nội dung sửa có đúng 100% thì thiếu bước xin phép vẫn là vi phạm ranh
+   giới 1-domain-1-writer, và đã tốn công xử lý ủy quyền hồi tố 2 lần vì lỗi y hệt nhau. G7 đọc
+   14 domain nên xác suất gặp tình huống này rất cao — phải nhớ bài học này trước khi bắt đầu.
 
 ## DoD
 D1 (episode_schema) field-hóa khớp đúng bản đã duyệt B, không tự thêm/bớt ✅ · D2
