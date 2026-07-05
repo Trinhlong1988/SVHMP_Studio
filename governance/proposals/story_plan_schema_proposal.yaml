@@ -1,0 +1,126 @@
+# ============================================================
+# DE XUAT — story_plan_schema.yaml (G6b blocking_dependency: "Mr.Long duyet format ke hoach")
+# Nguon can cu (doc truc tiep, khong bia):
+#   - governance/blueprint/bp2/domain_specs.yaml dong 266-291 (domain story_planner, facet
+#     "scene_act_structure" dang planned, planned_path DUNG file nay, entities: [season_plan,
+#     episode_plan, scene])
+#   - governance/blueprint/bp7/story_structure.yaml (6 cap Scene->Act->Episode->Season->Series->
+#     Ending, LOCKED v1.0.0 candidate) — level "scene" va "act" 2 cap CHUA field-hoa, cung tro
+#     ve file nay; level episode/season/series/ending DA co sot exists (bible/01, bible/21b,
+#     bible/16, bible/00) — file nay KHONG dinh nghia lai chung, chi RECONCILE tham chieu.
+#   - bible/18_driver_reveal_budget.yaml (budget_curve, clue_weight_taxonomy, state_tracking)
+#   - bible/16_series_kpi.yaml (series_targets per ep range)
+#   - project_config.yaml (distribution target: age_child/age_elder/region_voice_min/chars_per_ep)
+# KIEM DUYET soan de xuat theo yeu cau Boss (5/7) - CHUA phai file chinh thuc, mr_long_decision
+# PENDING cho toi khi Mr.Long xac nhan tuong minh. Builder KHONG duoc field-hoa
+# governance/blueprint/schemas/story_plan_schema.yaml tu file nay khi decision con PENDING.
+# ============================================================
+
+version: 1.0
+proposal_status: PENDING
+writer_of_record: mr_long
+mr_long_decision: PENDING
+decision_date: null
+
+# ------------------------------------------------------------
+# PHAM VI — CHI field-hoa dung 1 facet BP2 dang planned: scene_act_structure
+# KHONG dong lai episode/season/series/ending (da co sot exists o file khac, xem tren).
+# KHONG tao entity "act" rieng — BP2 chi khai entities: [season_plan, episode_plan, scene],
+# BP7 tu ghi ro "Act chua co entity/facet rieng trong BP2 (cho RFC neu can field-hoa sau)".
+# ------------------------------------------------------------
+
+schema_draft:
+
+  scene:
+    desc: "Don vi nho nhat trong episode_plan — 1 boi canh/1 khoanh khac lien tuc"
+    fields:
+      scene_id: {type: string, required: true, format: "EP{N}_SC{M}"}
+      episode_ref: {type: int, required: true, desc: "So tap chua scene nay"}
+      order_in_episode: {type: int, required: true, desc: "Thu tu scene trong episode (1..N)"}
+      component_ref:
+        type: enum
+        required: true
+        values: [HOOK, SETUP, INCIDENT, REVEAL, PAYOFF, CLIFFHANGER]
+        desc: "Scene thuoc section nao — PHAI khop dung 6 ten + thu tu bible/01 (BP7 invariant), khong tu them/doi ten"
+      scene_function:
+        type: enum
+        required: true
+        values: [dan_chuyen, gay_nghi, danh_lac_huong, hy_sinh]
+        desc: "Vai tro ke chuyen cua scene (theo dung desc facet BP2 dong 280) - SCENE so huu, character CHI tham chieu, khong duoc gan scene_function vao ho so nhan vat"
+      characters_present:
+        type: list
+        item_type: string
+        desc: "Danh sach PAS_id xuat hien trong scene - PHAI ton tai that trong runtime/passenger_roster_100.yaml (character domain, chi doc)"
+      location_ref: {type: string, required: false, desc: "Tro bible/13_setting_library.yaml (world domain, chi doc)"}
+      driver_clue:
+        type: object
+        required: false
+        desc: "Neu scene co clue driver/73 - PHAI khop dung clue_weight_taxonomy + budget_curve cua bible/18 (event domain xac nhan, khong tu bia weight)"
+        fields:
+          weight: {type: enum, values: [1, 2, 5, 10, 30]}
+          content: {type: string}
+      summary: {type: string, required: true, desc: "Tom tat 1-2 cau, KHONG phai van ban day du (day la ke hoach, khong phai the sinh)"}
+
+  episode_plan:
+    desc: "Ke hoach 1 tap - KHONG chua van ban day du, chi khung quyet dinh truoc khi generator viet"
+    fields:
+      episode_number: {type: int, required: true, range: [1, 90]}
+      season_ref: {type: string, required: true, desc: "Tro season_plan.season_id"}
+      scenes: {type: list, item_type: string, desc: "Danh sach scene_id THEO DUNG THU TU, moi component_ref bat buoc du 6 ten HOOK..CLIFFHANGER (BP7 invariant, thieu/thua/sai thu tu = FAIL)"}
+      driver_reveal_cumulative:
+        type: int
+        required: true
+        desc: "% cong don sau tap nay - PHAI <= budget_curve[ep_range].cumulative_cap cua bible/18 (event/story_planner tinh, KHONG tu bia)"
+      cast_count: {type: int, required: true, range: [5, 8], desc: "Theo invariant BP2 dong 290 (character_balance_report.py da exists, chi doi chieu)"}
+      regret_pillars_covered:
+        type: list
+        item_type: string
+        desc: "Cac pillar hoi tiec (family_regret/love_regret/promise_regret/kindness_regret/self_regret...) xuat hien trong tap - tro du lieu that roster, khong tu dat ten pillar moi"
+      kpi_ep_range_ref:
+        type: enum
+        values: [ep_1_10, ep_11_30, ep_31_90]
+        desc: "Tro dung bucket bible/16_series_kpi.yaml.series_targets - CHI tham chieu, KHONG chep lai gia tri so"
+
+  season_plan:
+    desc: "Nhom episode - vd EP01-50/EP51-90 theo bible/21b"
+    fields:
+      season_id: {type: string, required: true}
+      episode_range: {type: list, item_type: int, length: 2, desc: "[start, end] - PHAI khop boundary bible/21b_ep51_90_spec.yaml neu overlap season 2"}
+      driver_phase_refs:
+        type: list
+        item_type: enum
+        values: [ESTABLISH, MYSTERY, ESCALATION, REVELATION, PIVOT, AFTERMATH, FINALE]
+        desc: "Cac phase bible/18.budget_curve roi vao season nay - CHI tham chieu ten phase, khong chep lai cumulative_cap"
+      regret_distribution_target:
+        type: object
+        desc: "Tro dung project_config.yaml.distribution - KHONG dinh nghia lai ty le, chi xac nhan season nay co dam bao target toan cuc hay khong"
+
+# ------------------------------------------------------------
+# GHI CHU RIENG — "act" KHONG co trong schema nay
+# BP7 (story_structure.yaml dong 31-38) tu ghi: "Act chua co entity/facet rieng trong BP2
+# (chi scene/episode_plan/season_plan) - cho RFC neu can field-hoa sau". De xuat nay THEO
+# DUNG pham vi da khoa - KHONG tu them entity "act" de "cho du 6 cap". Neu Mr.Long muon field-hoa
+# Act rieng, can 1 RFC/proposal khac (Change Request Gate R211), khong lam chung trong file nay.
+# ------------------------------------------------------------
+
+enforcer_planned:
+  path: tools/story_plan_schema_check.py
+  status: planned
+  reason_not_exists_yet: "Chi build sau khi schema nay duoc duyet - build truoc = build-ahead (REALITY ANCHOR luat 9)"
+  checks_to_implement_later:
+    - "component_ref cua moi scene trong 1 episode_plan PHAI dung 6 gia tri + dung thu tu bible/01"
+    - "driver_reveal_cumulative moi episode_plan PHAI <= cap cua bible/18 dung ep_range"
+    - "cast_count moi episode_plan PHAI trong [5,8]"
+    - "characters_present moi scene PHAI resolve that trong roster (khong PAS_id bia)"
+    - "driver_clue.weight PHAI thuoc {1,2,5,10,30} dung clue_weight_taxonomy"
+
+# ------------------------------------------------------------
+# CAU HOI CAN MR.LONG XAC NHAN (chon 1 hoac ghi y kien khac)
+# ------------------------------------------------------------
+decision_request:
+  question: "Format tren co dung y muon cho ke hoach 100 tap khong?"
+  options:
+    A_approve_as_is: "Duyet nguyen van draft tren - CMD_BUILD field-hoa dung thanh governance/blueprint/schemas/story_plan_schema.yaml"
+    B_approve_with_changes: "Duyet voi sua doi (Mr.Long ghi ro cho nao doi truc tiep trong file nay truoc khi field-hoa)"
+    C_reject_redesign: "Khong dung huong - can thiet ke lai tu dau (Mr.Long neu ly do)"
+  note: "KHONG co muc 'tam chap nhan' - build_ahead voi schema con PENDING = FAIL toan bo G6b (dung tinh than checkpoint G6-5 cua CMD_AUDIT_G6.md)."
