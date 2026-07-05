@@ -1,0 +1,2594 @@
+version: 1.0
+status: draft
+meta:
+  task: TASK_G3_DIALOGUE.md D5
+  note: 'Nguon A + Nguon B TACH BACH, khong tron nhan (source field moi entry). Nguon B KHONG dung bible/31
+    (D1B Phan B: vi pham kien truc lop that, dialogue/narrative khong duoc depend audio/presentation -
+    xem governance/proposals/g3_bp3_dependency_gap_proposal.yaml Phan B).'
+source_a_synthetic_r206:
+  description: 500 cau VALID_LINE import THAT tu tests/test_character_system_1000_r206.py (REG/HOME/VALID_LINE/base
+    - da xac nhan 0 FN/0 FP), khong sua noi dung.
+  count: 500
+  entries:
+  - index: 0
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 1
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 2
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 3
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 4
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 5
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 6
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 7
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 8
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 9
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 10
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 11
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 12
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 13
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 14
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 15
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 16
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 17
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 18
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 19
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 20
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 21
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 22
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 23
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 24
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 25
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 26
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 27
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 28
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 29
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 30
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 31
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 32
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 33
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 34
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 35
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 36
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 37
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 38
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 39
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 40
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 41
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 42
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 43
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 44
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 45
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 46
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 47
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 48
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 49
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 50
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 51
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 52
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 53
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 54
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 55
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 56
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 57
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 58
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 59
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 60
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 61
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 62
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 63
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 64
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 65
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 66
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 67
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 68
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 69
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 70
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 71
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 72
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 73
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 74
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 75
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 76
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 77
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 78
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 79
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 80
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 81
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 82
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 83
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 84
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 85
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 86
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 87
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 88
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 89
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 90
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 91
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 92
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 93
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 94
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 95
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 96
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 97
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 98
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 99
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 100
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 101
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 102
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 103
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 104
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 105
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 106
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 107
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 108
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 109
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 110
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 111
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 112
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 113
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 114
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 115
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 116
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 117
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 118
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 119
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 120
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 121
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 122
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 123
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 124
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 125
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 126
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 127
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 128
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 129
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 130
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 131
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 132
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 133
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 134
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 135
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 136
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 137
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 138
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 139
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 140
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 141
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 142
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 143
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 144
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 145
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 146
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 147
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 148
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 149
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 150
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 151
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 152
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 153
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 154
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 155
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 156
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 157
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 158
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 159
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 160
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 161
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 162
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 163
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 164
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 165
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 166
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 167
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 168
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 169
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 170
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 171
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 172
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 173
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 174
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 175
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 176
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 177
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 178
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 179
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 180
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 181
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 182
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 183
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 184
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 185
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 186
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 187
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 188
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 189
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 190
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 191
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 192
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 193
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 194
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 195
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 196
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 197
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 198
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 199
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 200
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 201
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 202
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 203
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 204
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 205
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 206
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 207
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 208
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 209
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 210
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 211
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 212
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 213
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 214
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 215
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 216
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 217
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 218
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 219
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 220
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 221
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 222
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 223
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 224
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 225
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 226
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 227
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 228
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 229
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 230
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 231
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 232
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 233
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 234
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 235
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 236
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 237
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 238
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 239
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 240
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 241
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 242
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 243
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 244
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 245
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 246
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 247
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 248
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 249
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 250
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 251
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 252
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 253
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 254
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 255
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 256
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 257
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 258
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 259
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 260
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 261
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 262
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 263
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 264
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 265
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 266
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 267
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 268
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 269
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 270
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 271
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 272
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 273
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 274
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 275
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 276
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 277
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 278
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 279
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 280
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 281
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 282
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 283
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 284
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 285
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 286
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 287
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 288
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 289
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 290
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 291
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 292
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 293
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 294
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 295
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 296
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 297
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 298
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 299
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 300
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 301
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 302
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 303
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 304
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 305
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 306
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 307
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 308
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 309
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 310
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 311
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 312
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 313
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 314
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 315
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 316
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 317
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 318
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 319
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 320
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 321
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 322
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 323
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 324
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 325
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 326
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 327
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 328
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 329
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 330
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 331
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 332
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 333
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 334
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 335
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 336
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 337
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 338
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 339
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 340
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 341
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 342
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 343
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 344
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 345
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 346
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 347
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 348
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 349
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 350
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 351
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 352
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 353
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 354
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 355
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 356
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 357
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 358
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 359
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 360
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 361
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 362
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 363
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 364
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 365
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 366
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 367
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 368
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 369
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 370
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 371
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 372
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 373
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 374
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 375
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 376
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 377
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 378
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 379
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 380
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 381
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 382
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 383
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 384
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 385
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 386
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 387
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 388
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 389
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 390
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 391
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 392
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 393
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 394
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 395
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 396
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 397
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 398
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 399
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 400
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 401
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 402
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 403
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 404
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 405
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 406
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 407
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 408
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 409
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 410
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 411
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 412
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 413
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 414
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 415
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 416
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 417
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 418
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 419
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 420
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 421
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 422
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 423
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 424
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 425
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 426
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 427
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 428
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 429
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 430
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 431
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 432
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 433
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 434
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 435
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 436
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 437
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 438
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 439
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 440
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 441
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 442
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 443
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 444
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 445
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 446
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 447
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 448
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 449
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 450
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 451
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 452
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 453
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 454
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 455
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 456
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 457
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 458
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 459
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 460
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 461
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 462
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 463
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 464
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 465
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 466
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 467
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 468
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 469
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 470
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 471
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 472
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 473
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 474
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 475
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 476
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 477
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 478
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 479
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 480
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 481
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 482
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 483
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 484
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 485
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 486
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 487
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+  - index: 488
+    region: nam
+    hometown: Sài Gòn
+    line: Con dìa nghen.
+    source: synthetic_r206
+  - index: 489
+    region: bac
+    hometown: Hà Nội
+    line: Thế cơ à.
+    source: synthetic_r206
+  - index: 490
+    region: trung
+    hometown: Huế
+    line: Răng hỉ.
+    source: synthetic_r206
+  - index: 491
+    region: nam
+    hometown: Sài Gòn
+    line: Con thương má nghen.
+    source: synthetic_r206
+  - index: 492
+    region: bac
+    hometown: Hà Nội
+    line: Con về nhé.
+    source: synthetic_r206
+  - index: 493
+    region: trung
+    hometown: Huế
+    line: Mạ ơi con về tê.
+    source: synthetic_r206
+  - index: 494
+    region: nam
+    hometown: Sài Gòn
+    line: Vô nhà nghen.
+    source: synthetic_r206
+  - index: 495
+    region: bac
+    hometown: Hà Nội
+    line: Con biết rồi nhé.
+    source: synthetic_r206
+  - index: 496
+    region: trung
+    hometown: Huế
+    line: Con đi mô rứa.
+    source: synthetic_r206
+  - index: 497
+    region: nam
+    hometown: Sài Gòn
+    line: Cưng ơi con nè.
+    source: synthetic_r206
+  - index: 498
+    region: bac
+    hometown: Hà Nội
+    line: Mẹ đợi con nhỉ.
+    source: synthetic_r206
+  - index: 499
+    region: trung
+    hometown: Huế
+    line: Con nhớ mô rứa.
+    source: synthetic_r206
+source_b_real_mined:
+  description: 'pronoun-ambiguity/driver-context tu du lieu THAT. correct_cases: 2 cau LOCK bible/02 (D1B
+    Phan A APPROVED). incorrect_cases: sample_issues severity HIGH tu audit_dialogue_hierarchy_report.json
+    (R48, evidence ep:quote_idx co san).'
+  correct_cases:
+  - text: Con đã nhớ ra chưa
+    rule: R174_Q1
+    source: bible/02_lore_db.yaml:19 (dep__dialogue__world, D1B Phan A APPROVED 5/7)
+  - text: Chưa tới lúc
+    rule: R174_Q2
+    source: bible/02_lore_db.yaml:20 (dep__dialogue__world, D1B Phan A APPROVED 5/7)
+  incorrect_cases:
+  - ep: 18
+    quote_idx: 12
+    type: true_ambiguity_em_verb_em
+    detail: '"Em cưới em" — 2 referents'
+    sample: 'Mẹ đứng dậy: ''Em cưới em chịu'
+    source: runtime/audit_dialogue_hierarchy_report.json sample_issues[ep=18:quote_idx=12]
+  - ep: 24
+    quote_idx: 28
+    type: true_ambiguity_em_verb_em
+    detail: '"Em muốn em" — 2 referents'
+    sample: 'Sao chị không giữ lại?'' Chị Lan đáp: ''Em muốn em nhớ Mai — em nhớ thì Mai Anh không bao
+      giờ mất hoàn toàn'
+    source: runtime/audit_dialogue_hierarchy_report.json sample_issues[ep=24:quote_idx=28]
+  - ep: 28
+    quote_idx: 19
+    type: true_ambiguity_em_verb_em
+    detail: '"em tránh em" trong 1 câu — 2 referents'
+    sample: Em tránh em — em tránh em.
+    source: runtime/audit_dialogue_hierarchy_report.json sample_issues[ep=28:quote_idx=19]
+  - ep: 28
+    quote_idx: 32
+    type: true_ambiguity_em_verb_em
+    detail: '"em tha em" trong 1 câu — 2 referents'
+    sample: 'Em đặt nhẫn ở bục — nói với Chúa thay vì với em: ''Chúa ơi xin Chúa truyền lời em — em tha
+      em ba mươi năm — em đi yên.'''
+    source: runtime/audit_dialogue_hierarchy_report.json sample_issues[ep=28:quote_idx=32]
+  - ep: 29
+    quote_idx: 12
+    type: true_ambiguity_em_verb_em
+    detail: '"em xem em" trong 1 câu — 2 referents'
+    sample: 'Em hỏi em: ''Linh ơi em xem em có hợp tủy với chị không'
+    source: runtime/audit_dialogue_hierarchy_report.json sample_issues[ep=29:quote_idx=12]
+  - ep: 29
+    quote_idx: 15
+    type: true_ambiguity_em_verb_em
+    detail: '"Em ơi em" — 2 referents'
+    sample: 'Em bịa lý do với em: ''Em ơi em hôm trước tới ngân hàng tủy hỏi — họ bảo phải đợi sáu tháng
+      làm hồ sơ — em vào kỳ thi tốt'
+    source: runtime/audit_dialogue_hierarchy_report.json sample_issues[ep=29:quote_idx=15]
+  - ep: 29
+    quote_idx: 17
+    type: true_ambiguity_em_verb_em
+    detail: '"em hỏi em" trong 1 câu — 2 referents'
+    sample: Em vẫn ở ghép với em — em vẫn đi truyền máu mỗi tháng — em vẫn yếu hơn — em hỏi em em đã làm
+      hồ sơ tủy chưa.
+    source: runtime/audit_dialogue_hierarchy_report.json sample_issues[ep=29:quote_idx=17]
+  - ep: 30
+    quote_idx: 33
+    type: true_ambiguity_em_verb_em
+    detail: '"Em đỡ em" — 2 referents'
+    sample: Em đỡ em ở quê tốt đại học sư phạm năm vừa rồi — em làm theo lời thầy
+    source: runtime/audit_dialogue_hierarchy_report.json sample_issues[ep=30:quote_idx=33]
+  - ep: 31
+    quote_idx: 9
+    type: true_ambiguity_em_verb_em
+    detail: '"em quyết em" trong 1 câu — 2 referents'
+    sample: Sau tang — em quyết em sẽ thay mẹ
+    source: runtime/audit_dialogue_hierarchy_report.json sample_issues[ep=31:quote_idx=9]
+  - ep: 32
+    quote_idx: 10
+    type: true_ambiguity_em_verb_em
+    detail: '"Em quyết em" — 2 referents'
+    sample: Em quyết em sẽ đan tặng tôi một chiếc chăn mới — chăn cưới mười năm
+    source: runtime/audit_dialogue_hierarchy_report.json sample_issues[ep=32:quote_idx=10]
+  - ep: 33
+    quote_idx: 20
+    type: true_ambiguity_em_verb_em
+    detail: '"Em đưa em" — 2 referents'
+    sample: Em đưa em vào Bệnh viện K cấp cứu
+    source: runtime/audit_dialogue_hierarchy_report.json sample_issues[ep=33:quote_idx=20]
