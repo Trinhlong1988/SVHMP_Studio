@@ -1,0 +1,59 @@
+# ============================================================
+# D2 — DIALOGUE MANAGER: TACH RIENG hay GIU CHUNG voi character_manager.py?
+# (TASK_G3_DIALOGUE.md deliverable D2, blocking_dependency cua blueprint_domains.yaml
+# dong 435-441: "quyet dinh tach/giu chung voi character_manager (Change Request Gate R211)")
+# DE XUAT - quyet dinh kien truc, KHONG dung file lock_type:bible/layer-graph, nhung van la
+# quyet dinh Mr.Long/Boss can xac nhan tuong minh truoc khi ai viet code (R211, khong "tam chap
+# nhan"). Em (Claude) DUA RA khuyen nghi co ly do ro rang o duoi, CHUA tu y code theo huong nao.
+# ============================================================
+version: 1.0
+authority: "phien audit+fix 5/7, doc blueprint_domains.yaml#domains.dialogue.manager + character_manager.py"
+status: proposal
+writer_of_record: mr_long
+mr_long_decision: PENDING   # Boss chon A hoac B tuong minh - em CHUA tu quyet, chi khuyen nghi
+
+2_phuong_an:
+  A_tach_rieng:
+    mo_ta: "tools/dialogue_manager.py moi, mong (~100-150 dong), API
+      get_dialogue_context(character_id, ep_n) -> {voice_profile, known_facts_upto_ep, recent_lines},
+      doc voice_profile qua character_manager.CharacterRegistry (khong doc YAML lan 2)."
+    uu_diem:
+      - "Domain dialogue da duoc quy hoach la block doc lap trong registry (D6) - co manager rieng
+         khop dung ranh gioi domain, giong cach G4/G5 moi domain co tool rieng."
+      - "character_manager.py (thuoc CMD_CHARACTER, dang audit+va gap) khong bi phinh them trach
+         nhiem cua domain khac - giu dung 1-domain-1-manager, de audit doc lap sau nay."
+      - "Neu sau nay dialogue can them logic rieng (vd cache lich su thoai, ratio tu G6), khong
+         phai dung vao file cua domain khac."
+    nhuoc_diem:
+      - "Them 1 file moi, 1 domain block moi phai dang ky (D6) - chi phi governance ban dau cao hon."
+      - "Rui ro nho: neu API thiet ke khong khop voi CharacterRegistry that, co the phai sua ca 2 ben."
+  B_giu_chung:
+    mo_ta: "Them method cung chu ky thang vao tools/character_manager.py, khong tao file moi."
+    uu_diem:
+      - "It file hon, khong can dang ky domain moi ngay lap tuc."
+      - "Du lieu voice_profile da nam trong CharacterRegistry - truy cap noi bo, khong can lop
+         gian tiep them."
+    nhuoc_diem:
+      - "character_manager.py thuoc so huu CMD_CHARACTER (domain character, dang khoa mot phan) -
+         them trach nhiem domain dialogue vao day lam mo ranh gioi domain, di nguoc xu huong tach
+         domain ro rang ma du an theo duoi (G4/G5 moi domain 1 bo tool rieng, khong gop chung)."
+      - "Domain dialogue van con 'reader'/'dependencies' rieng trong blueprint_domains.yaml nhung
+         'manager' lai nam vat ly trong file domain khac - lech giua khai bao governance va vi tri
+         code that, de gay nham lan khi audit sau nay (ai do doc registry se tim dialogue_manager.py
+         khong thay, phai biet no nam trong character_manager.py)."
+
+khuyen_nghi_cua_Claude: >
+  Phuong an A (tach rieng). Ly do chinh: du an nay nhat quan xay 1-domain-1-bo-tool (G4 co
+  event_ledger_miner.py/timeline_check.py/g4_world_check.py rieng, G5 co supernatural_validator.py/
+  g5_supernatural_check.py rieng, khong domain nao gop chung voi domain khac du lien quan gan) - giu
+  B se la ngoai le duy nhat pha nguyen tac nay, va se gay lech giua "governance khai domain dialogue
+  co manager" (blueprint_domains.yaml) voi "code that nam trong file domain character" - dung loai
+  lech named-vs-thuc-te ma nhieu audit truoc day (lesson-enforcer-claim-vs-behavior) da bat duoc o
+  cho khac. Chi phi them 1 file mong (~100-150 dong, chi doc lai CharacterRegistry khong doc YAML
+  lan 2) la nho so voi loi ich giu ranh gioi domain ro rang cho audit doc lap sau nay.
+  KHONG tu quyet dut khoat - day la khuyen nghi, mr_long_decision van PENDING cho toi khi Boss xac
+  nhan tuong minh A hoac B.
+
+dieu_kien_ap_dung: "0 dong code cua bat ky nhanh nao duoc viet truoc khi mr_long_decision != PENDING
+  (TASK_G3_DIALOGUE.md D2 + mutation M7: file tools/dialogue_manager.py xuat hien trong diff ma
+  khong kem quyet dinh nay = FAIL toan bo pack ngay khi audit)."

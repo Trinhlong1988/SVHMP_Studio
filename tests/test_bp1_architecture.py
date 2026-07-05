@@ -68,7 +68,9 @@ def test_interface_planned_honesty_counts():
     """Hau het interface planned (trung thuc); exists chi khi co bang chung wire."""
     doc = yaml.safe_load(IFACE.read_text(encoding='utf-8'))
     sts = [c['status'] for c in doc['contracts']]
-    assert sts.count('exists') == 4, f'exists phai dung 4 (2 read wire that + 2 write store that): {sts.count("exists")}'
+    # 5 = 4 cu (2 read wire that + 2 write store that) + 1 moi read__world__dialogue (D1B Phase A,
+    # per Mr.Long authorization 2026-07-05: audit_driver_dialogue_context.py da doc that bible/02_lore_db.yaml)
+    assert sts.count('exists') == 5, f'exists phai dung 5: {sts.count("exists")}'
     assert all(s in ('exists', 'planned') for s in sts)
 
 

@@ -1,0 +1,48 @@
+# ============================================================
+# D1 — DIALECT/REGION SSOT RECONCILE PROPOSAL (TASK_G3_DIALOGUE.md deliverable D1)
+# DE XUAT da THUC THI (khac D1B/D2 duoi day, day la code fix don gian, thap rui ro,
+# khong dung layer/dependency graph khoa) — ghi lai ceremony giong cac proposal khac
+# de dung mau, khong phai vi can RFC phuc tap.
+# ============================================================
+version: 1.0
+authority: "phien audit+fix 5/7 (workflow multi-agent), per Mr.Long authorization (Boss lenh 'ky D1 D1B D2')"
+status: proposal
+writer_of_record: mr_long
+mr_long_decision: APPROVED
+decision_date: "2026-07-05"
+decision_note: >
+  Boss lenh truc tiep "ky D1 D1B D2" trong phien lam viec 5/7 - coi la uy quyen thuc thi
+  ca 3 deliverable nay. D1 KHONG dung file lock_type:bible/layer-graph nen da thuc thi
+  ngay (commit 6319a67, worktree SVHMP_wt_g3signoff, chua merge main - cho Boss xem lai
+  truoc khi merge).
+
+van_de:
+  mo_ta: >
+    tools/dialog_voice_validator.py tu viet tay dict HOMETOWN_REGION (5 vung: bac/trung/nam/tay/do_thi,
+    key lowercase), tach biet hoan toan voi tools/migrate_roster_v2.py::HOME (3 vung: bac/trung/nam,
+    key Title Case) - day moi la nguon THAT ma tools/roster_validator.py dang import lam single-source
+    cho check C2 que<->giong (R210).
+  bang_chung_cu_the: >
+    "Hai Duong" co trong HOME['bac'] nhung THIEU trong HOMETOWN_REGION cu - hau qua that:
+    validate_profile() chi raise HOMETOWN_REGION_MISMATCH khi que nam trong HOMETOWN_REGION,
+    nen que thieu trong bang = false negative cam lang (khong bao gio bi bat, du khai sai vung).
+
+giai_phap_da_thuc_thi:
+  file: tools/dialog_voice_validator.py
+  thay_doi: >
+    Xoa HOMETOWN_REGION tu-viet-tay. Import HOME tu migrate_roster_v2 (dung pattern
+    roster_validator.py da dung). HOMETOWN_REGION moi = suy nguoc tu HOME qua dict comprehension
+    (object-identity, khong copy gia tri tay - ai doi HOME sau nay se tu dong phan anh).
+    2 vung tay/do_thi (dialogue-only, HOME khong co) giu lai rieng trong EXTRA_REGIONS_DIALOGUE_ONLY
+    - khong mat du lieu cu, khong tu suy luan them que moi ngoai danh sach nay.
+  test_moi: tests/test_dialog_voice_single_source.py (5 test, dang ky vao architecture_registry.yaml
+    domain character) - object-identity check dam bao khong ai dan lai dict cung sau nay ma khong do.
+  bang_chung_verify: >
+    Truoc fix: "hải dương" khong co trong HOMETOWN_REGION (mismatch se khong bao gio bi bat).
+    Sau fix: dvv.HOMETOWN_REGION.get('hải dương') == 'bac'; validate_profile voi region='nam'
+    + hometown='Hải Dương' -> raise HOMETOWN_REGION_MISMATCH dung.
+  regression: "Full suite 496 passed truoc -> 501 passed sau (+5 test moi D1), 0 regression."
+
+trang_thai: "Da code + test + commit (6319a67) trong worktree SVHMP_wt_g3signoff. CHUA merge vao main
+  - cho lenh merge tuong minh (D1 khong dung file lock/layer-graph nen rui ro thap, nhung van la
+  thay doi ghi vao shared main tree, theo dung tinh than 'do o dau ghi o do' cua du an)."

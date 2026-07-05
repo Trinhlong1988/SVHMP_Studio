@@ -158,6 +158,20 @@ contracts:
   reason_not_exists_yet: Chua co code wire that giua 2 domain; spec chi tiet interface thuoc pack BP2 Domain Architecture.
   target_milestone: M1_canon_managers
   blocking_dependency: BP2 domain architecture pack (spec truoc, wire sau)
+- contract_id: read__world__dialogue
+  provider_domain: world
+  consumer_domain: dialogue
+  interface_type: data_read
+  allowed_operations:
+  - read
+  forbidden_operations:
+  - write
+  - schema_change
+  version: 1.0.0
+  lifecycle: approved
+  owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.world
+  source_artifact: bible/02_lore_db.yaml
+  status: exists
 - contract_id: read__timeline__event
   provider_domain: timeline
   consumer_domain: event

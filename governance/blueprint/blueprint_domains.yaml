@@ -105,7 +105,7 @@ domains:
       reason_not_exists_yet: "Chua co schema thi validator chua co gi de cuong che."
       target_milestone: M1_canon_managers
       blocking_dependency: "world schema (M1)"
-    reader: [location, weather, culture, character, event, story_planner, generator, qa_runtime]
+    reader: [location, weather, culture, character, event, story_planner, generator, qa_runtime, dialogue]
     writer: [mr_long]
     lifecycle: approved
     lock_type: bible
@@ -445,7 +445,7 @@ domains:
     writer: [mr_long]
     lifecycle: approved
     lock_type: bible
-    dependencies: [character, culture]
+    dependencies: [character, culture, world]
     forbidden_dependencies: [production, publisher]
     audit_rule: "CAM sinh dialog khi focal char thieu Tier1 (R210); thoai qua dialog_voice_validator; vi pham anti-slop = VIOLATION."
 

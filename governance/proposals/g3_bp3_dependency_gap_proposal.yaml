@@ -1,0 +1,88 @@
+# ============================================================
+# D1B — BP3 DEPENDENCY GAP PROPOSAL (TASK_G3_DIALOGUE.md deliverable D1B, phat hien skeptic-3)
+# DE XUAT - writer chinh thuc = mr_long (blueprint_domains.yaml/bp1/bp3 la file LOCKED,
+# lock_type: bible cho blueprint_domains.yaml cac domain). File nay CHUA duoc thuc thi vao
+# 3 file that (blueprint_domains.yaml, bp1/dependency_graph.yaml, bp3/dependency_detail.yaml)
+# - Claude Code auto-mode classifier CHAN sua truc tiep file khoa tu lenh "ky D1 D1B D2" (qua
+# chung chung de xac dinh day la file+edit cu the duoc Boss chi dinh). Ghi lai day du phat hien
+# + de xuat de Boss xem va xac nhan tung dong THAT truoc khi ai do thuc thi.
+# ============================================================
+version: 1.0
+authority: "phien audit+fix 5/7, doc truc tiep governance/blueprint/bp1/layer_contracts.yaml + bp1/dependency_graph.yaml + blueprint_domains.yaml"
+status: proposal
+writer_of_record: mr_long
+mr_long_decision: PENDING   # Boss can xac nhan tung phan RIENG (xem 2 phan duoi, KHONG giong nhau)
+
+# ============================================================
+# PHAN A — dep__dialogue__world: HOP LE, SAN SANG THUC THI KHI BOSS XAC NHAN
+# ============================================================
+phan_a_dialogue_to_world:
+  van_de: >
+    tools/audit_driver_dialogue_context.py (da ton tai that) doc 2 cau LOCK tu bible/02_lore_db.yaml
+    dong 18-20 (SoT domain world) - nhung bp3/dependency_detail.yaml KHONG co dep_id nao voi
+    from:dialogue to:world, va blueprint_domains.yaml#domains.world.reader (dong 108) KHONG liet
+    "dialogue" trong danh sach duoc phep doc.
+  kiem_tra_hop_le_kien_truc: >
+    DA KIEM (quan trong, khac gia dinh ban dau cua TASK_G3_DIALOGUE.md): dialogue o layer 3, nhom
+    "narrative" (blueprint_domains.yaml dong 61-63). world o layer 1, cung nhom "narrative". Theo
+    bp1/layer_contracts.yaml dong 3 ("luat that cua dependency = chi depend layer-SO thap hon
+    strictly") + dong 12 (narrative.allowed_dependencies: [narrative]) - dialogue (layer 3) phu
+    thuoc world (layer 1, cung nhom narrative) la HOP LE ca ve layer-so lan nhom.
+  de_xuat_thuc_thi_cu_the:
+    - file: governance/blueprint/blueprint_domains.yaml
+      dong: 108 (domains.world.reader) va 448 (domains.dialogue.dependencies)
+      doi: 'world.reader them "dialogue"; dialogue.dependencies tu [character, culture]
+            thanh [character, culture, world]'
+    - file: governance/blueprint/bp1/dependency_graph.yaml
+      dong: 154-156 (domain_id: dialogue, depends_on)
+      doi: 'them "world" vao depends_on'
+    - file: governance/blueprint/bp3/dependency_detail.yaml
+      doi: 'them 1 dep_id moi: dep__dialogue__world, from: dialogue, to: world,
+            reason: "audit_driver_dialogue_context.py doc 2 cau LOCK bac tai tu bible/02 (world SoT)",
+            data_flow: read'
+  verify_sau_khi_sua: "python tools/bp1_architecture_check.py && python tools/bp3_ownership_check.py
+    && python tools/architecture_registry_check.py && python -m pytest tests/ -q — ca 4 phai PASS,
+    dac biet bp1 check 'DEP 3-NGUON-KHOP' (blueprint_domains.dependencies == bp1 graph.depends_on
+    == bp3 dependency_detail, exact set)."
+  trang_thai: "CHUA thuc thi - can Boss xac nhan cu the dong/file tren, hoac tu tay sua, roi chay
+    lai 4 lenh verify o tren."
+
+# ============================================================
+# PHAN B — dep__dialogue__audio: PHAT HIEN MOI, KHAC HAN gia dinh cua TASK_G3_DIALOGUE.md D1B
+# KHONG THE "chi them dependency" nhu phan A — day la VI PHAM KIEN TRUC THAT, khong phai
+# "gap chua khai" don thuan.
+# ============================================================
+phan_b_dialogue_to_audio:
+  van_de_TASK_G3_gia_dinh: >
+    TASK_G3_DIALOGUE.md (D5-Nguon-B) de xuat doc bible/31_golden_samples.yaml (SoT domain audio)
+    lam "golden text" cho pronoun/driver-context test, va PHAN BIEN #12 coi day la "2 canh phu thuoc
+    ngam chua khai trong BP3" - ham y chi can lam RFC them dep_id + reader whitelist giong Phan A
+    o tren la du.
+  phat_hien_that_khi_doc_layer_contracts: >
+    SAI - day KHONG phai truong hop giong Phan A. audio o layer 9, nhom "presentation"
+    (blueprint_domains.yaml dong 65: presentation: [tts, audio, video]). dialogue o layer 3, nhom
+    "narrative". bp1/layer_contracts.yaml dong 10-13 quy dinh RO: nhom "narrative"
+    (allowed_dependencies: [narrative], forbidden_dependencies: [runtime, presentation, business]) —
+    "presentation" NAM TRONG forbidden_dependencies cua "narrative". VA quy tac gom hon (dong 3):
+    "chi depend layer-SO thap hon strictly" — dialogue (layer 3) khong the depend audio (layer 9,
+    CAO hon). Ca 2 lop kiem (layer-so + nhom) deu CAM chieu phu thuoc nay.
+  ket_luan: >
+    dep__dialogue__audio KHONG THE duoc RFC-them nhu 1 "gap" don gian — no VI PHAM truc tiep
+    layer_contracts.yaml DA KHOA (validator_version 1.0.0, enforcer tools/bp1_architecture_check.py).
+    Neu co ai them dep_id nay vao ca 3 file (blueprint_domains/bp1-graph/bp3-detail) de "hop thuc
+    hoa", bp1_architecture_check.py se FAIL ngay (dong 150-153 cua tool: kiem tra nhom dich nam
+    trong forbidden_dependencies cua nhom nguon).
+  he_qua_cho_TASK_G3_DIALOGUE_D5: >
+    Deliverable D5-Nguon-B (trich cau "dung" tu bible/31_golden_samples.yaml lam golden set) CAN
+    THIET KE LAI co che khac, KHONG the coi la "dialogue doc truc tiep bible/31" duoi bat ky hinh
+    thuc RFC nao — vi pham kien truc, khong phai thu tuc giay to con thieu. Phuong an thay the (Boss
+    quyet, khong tu y chon): (1) mot domain o layer thap hon audio (vd narrative/runtime) doc san
+    bible/31 va "day xuong" cho dialogue duoi dang du lieu tinh (khong phai dialogue tu doc nguoc
+    audio); hoac (2) tach rieng golden set cho D5 khoi bible/31, dung nguon khac trong nhom narrative
+    (vd output/ep_01/episode.md da qua qa_dialogue_identity.py xac nhan, hoac 1 file moi trong
+    narrative layer copy lai 1 doan van ban tu bible/31 do CHINH domain audio xuat ban, khong phai
+    dialogue tu vao doc).
+  trang_thai: "KHONG duoc thuc thi duoi dang RFC don gian. Da flag ro cho Boss - D5-Nguon-B trong
+    TASK_G3_DIALOGUE.md can sua lai truoc khi bat ky ai claim g3_dialogue de build, neu khong builder
+    se dam vao dung vi pham layer da khoa nay va bi audit bac (giong tinh than G5-1 cua
+    CMD_AUDIT_G4_G5.md - phat hien TRUOC khi build, khong phai sau)."
