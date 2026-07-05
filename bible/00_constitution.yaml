@@ -5,11 +5,15 @@
 # Loaded by: Generator (writing constraints) / QA Lock (HARD-FAIL audit) / TTS Director (no SFX violation) / Video Director (no visual violation)
 # Mục tiêu: 1 file duy nhất chứa identity + bất biến của series. Tránh AI trôi DNA sau 50-100 ep.
 
-version: 1.3
+version: 4.4
 lock_date: 2026-06-30 (R_SUPREME workflow lock + Tier sequencing)
 lock_trigger: "Mr.Long docx 30/6 21:30: 'STOP Feature Development. Build->Verify->Freeze->Tag->Build tiếp'"
 authority: Mr.Long
-supersedes: 1.2
+supersedes: 4.3
+# NOTE 2026-07-05 (per Mr.Long authorization 2026-07-05): version nhảy 1.3 -> 4.4 vì backfill changelog
+# phát hiện 33 commit nội dung thật từ sau v1.1 (27/6) chưa từng được version-bump/ghi log. Xem changelog:
+# bên dưới (entry version 1.2 - 4.4) cho đầy đủ lịch sử tái dựng từ git log thật. Backfill này KHÔNG đổi
+# nội dung bất kỳ rule nào — chỉ thêm changelog + sửa version/supersedes ở header.
 
 
 # ============================================================
@@ -1453,6 +1457,335 @@ changelog:
       Fix: Add 6 series-wide ARC rules (interleave / escalation / memory progressive / callback / milestone / object sub-arc).
       Cross-ref bible/21_series_arc_design.yaml mới (EP-level arc map).
       QA Lock thêm PHASE 12.16-12.18 enforce R33-R38.
+
+  # ============================================================
+  # CHANGELOG BACKFILL 2026-07-05 (per Mr.Long authorization 2026-07-05)
+  # 33 entry version 1.2-4.4 = 33 commit nội dung thật chạm bible/00_constitution.yaml
+  # giữa v1.1 (2026-06-27) và commit mới nhất (2026-07-05), tái dựng từ:
+  #   git log --follow -- bible/00_constitution.yaml
+  #   git show <hash> -- bible/00_constitution.yaml  (đọc diff thật, không suy đoán từ commit message)
+  # Không đổi nội dung rule nào — chỉ backfill changelog + header version/supersedes.
+  # ============================================================
+
+  - version: 1.2
+    date: 2026-06-27
+    author: "CMD LEAD (chưa có evidence per-Mr.Long-authorization trong git log — xem xác nhận hồi tố ở cuối changelog)"
+    note: "Round 4b — đổi tên nhân vật 'Quang' → 'Khải Phong' trong text rule R35 (memory unlock progressive) và ví dụ R38 (sub_arc temporal). Hệ quả của lần đổi tên toàn dự án (30 file). [evidence: 148a80cf8c2a279f43a4910e40e89d3b6ab5879e]"
+
+  - version: 1.3
+    date: 2026-06-27
+    author: "CMD LEAD"
+    note: "Round 15 — thêm rule R39_word_count_target_hard: hard_floor 2000 / hard_ceiling 2700 / target 2200-2500 từ, section budget theo HOOK/SETUP/INCIDENT/REVEAL/PAYOFF/CLIFFHANGER, cross_ref bible/07+16, thêm QA PHASE 12.19 block ship nếu dưới floor. [evidence: 7fcf71026791e5773cb00b15d765267456f070c2]"
+
+  - version: 1.4
+    date: 2026-06-27
+    author: "CMD LEAD"
+    note: |
+      Round 15b — v1.2 ALL rules HARD (đây là điểm file tự bump header thành '1.2' lúc đó, thực tế đúng ra phải là 1.4 theo thứ tự thật).
+      Thêm enforcement_level: HARD_UNIVERSAL, exception_policy: ZERO, pre_render_protocol: MANDATORY.
+      Thêm block pre_render_checklist (12 must_verify item tham chiếu bible 00/21/09/11 + R33-R39).
+      Thêm block post_render_gate (9 must_pass item: VNQA, word_count, duration>=13, bell_count==1, ghost_manifest==1, driver line limit, rename check Hạ Vy/Khải Phong, intro injected) fail_action BLOCK commit.
+      Thêm rule R40_intro_hac_da_ky_mandatory — intro cố định 5-phần bắt buộc trước mỗi tập.
+      Sửa R39.hard_ceiling: 2700 → 2800.
+      [evidence: b8add5d867d5726df5f32e31604b7471f8463b35]
+
+  - version: 1.5
+    date: 2026-06-27
+    author: "CMD LEAD"
+    note: "Sửa R39.hard_ceiling: 2800 → 2900 (case EP25 M5 PEAK được chấp nhận vượt ceiling cũ). [evidence: 060b78475fdfcc0c358f5d34329e4b3108b53374]"
+
+  - version: 1.6
+    date: 2026-06-27
+    author: "CMD LEAD"
+    note: "Thêm field R39.hard_ceiling_milestone = 3200 áp dụng riêng cho các EP mốc [1,10,20,30,40,50,60,70,73,80,90]. [evidence: 94c120ac3bce2b3a672290d012bcc3c39359d3ef]"
+
+  - version: 1.7
+    date: 2026-06-27
+    author: "CMD LEAD"
+    note: "Round 16 — thêm rule R41_no_commit_if_gate_fail_HARDLOCK: pre-commit hook chặn cứng nếu post_render_gate fail, cấm bypass --no-verify, log vi phạm vào rule_break_count (escalation tại count>=3). [evidence: 03c4318a4f7fc3f29ded63894c73938fb26e98af]"
+
+  - version: 1.8
+    date: 2026-06-27
+    author: "CMD LEAD"
+    note: |
+      Round 17 — thêm 2 rule:
+      R42_driver_foreshadow_line_allowed_cliffhanger — cho phép driver có câu thứ 3 tại CLIFFHANGER nếu là foreshadow ký ức (theo R35), kèm template duyệt.
+      R43_tier2_filler_cap_per_ep — giới hạn filler tier-2 (khẽ/vô hình/thoáng/ánh mắt/lặng lẽ) tối đa 3 lần/từ/tập. Trigger: audit phát hiện "khẽ" dùng 77 lần/40 tập.
+      [evidence: 2783252108a21bf763c64e8a833edbf4f4b22c56]
+
+  - version: 1.9
+    date: 2026-06-28
+    author: "CMD LEAD"
+    note: |
+      Round 18 (70-dim audit) — thêm 3 rule:
+      R44_dictionary_block — chặn lỗi chính tả phổ biến (chánh/sét/dùm/sẳn/chử) + bắt buộc viết hoa đúng địa danh.
+      R46_passenger_first_person_anaphora_accept — chấp nhận chuỗi "Em/Tôi" tự quy chiếu tới 14 lần liên tiếp cho độc thoại hành khách (ngưỡng OK<=7, MEDIUM 8-14, HIGH>=15).
+      R45_context_block — chặn sai nghĩa động từ, age_sanity [10,100], giới hạn từ ngoại lai 5/tập.
+      [evidence: 45b20341ee855b56f70017e87cfed3a83e857190]
+
+  - version: 2.0
+    date: 2026-06-28
+    author: "CMD LEAD"
+    note: |
+      Round 19 — fix bug POV thật: narrator dùng "Em" cho Khải Phong sai ngôi kể (275 vi phạm phát hiện ở EP02-50, đã rewrite 138 chỗ ở 20 EP — phần rewrite nằm ngoài file này).
+      Thêm rule R47_narrator_3rd_person_pov_hardlock — narrator PHẢI xưng ngôi 3 với Khải Phong ngoài lời thoại trích dẫn.
+      Thêm rule R48_passenger_dialogue_hierarchy_pronoun — đại từ hành khách theo tôn ti tuổi thật (anh/chị cho người lớn tuổi hơn, em cho nhỏ hơn, cậu/tớ/bạn cho ngang hàng).
+      [evidence: c9bc7d31cea24aae3cc00c75c40ed0e49ad3fee6]
+
+  - version: 2.1
+    date: 2026-06-28
+    author: "CMD LEAD"
+    note: "Round 21 — thêm rule R49_template_variation_hardlock: cấm lặp cùng template mở đầu (HOOK) quá 5 tập liên tiếp, yêu cầu tối thiểu 10 mẫu mở + 8 mẫu miêu tả khí quyển, kèm 10 mẫu đã duyệt. Trigger: audit phát hiện 40/50 EP mở bằng 'Đêm tháng tư', 38/50 dùng chung cụm 'Chuyến xe đêm...'. [evidence: 01a11f2eeec9e1f7ea3222ef1d3141eac228d424]"
+
+  - version: 2.2
+    date: 2026-06-28
+    author: "CMD LEAD"
+    note: "Round 25 — thêm rule R50_audit_toolkit_mandatory_pre_commit: bắt buộc chạy 7 tool audit (post_render_gate/audit_pronoun_pov/audit_60_dimensions/audit_dialogue_hierarchy/audit_deep_qa/detect_template_repetition/audit_100_check) trước mọi commit, block nếu tool nào exit code khác 0. [evidence: 3a069c5a45ccc3b9f190574aa35a4a4cbb8d3680]"
+
+  - version: 2.3
+    date: 2026-06-28
+    author: "CMD LEAD"
+    note: |
+      Round 26 — thêm 2 rule làm mượt lại detector hội thoại vừa siết ở R48:
+      R51_dialogue_audit_smart_v2 — chấp nhận chuỗi 'em [tự-động-từ]' và giới thiệu tên, chỉ flag ambiguity đa chủ thể thật; giảm false positive HIGH từ 152→63 (-59%).
+      R52_acceptable_ngoc_ngan_first_person — công nhận độc thoại kiểu Nguyễn Ngọc Ngạn/Hồ Biểu Chánh (mở mọi câu bằng 'Em/Tôi') là convention văn học được chấp nhận, không giới hạn.
+      [evidence: 70cae2da581ead9b4bbb5973dba14ffd9de43475]
+
+  - version: 2.4
+    date: 2026-06-28
+    author: "CMD LEAD"
+    note: |
+      Round 27 (audit hidden bugs 20-dim) — thêm 3 rule:
+      R53_template_pattern_variety_hardlock — cấm lặp template khí quyển/chuông/ghost-manifest giống hệt nhau quá 30 tập, cấp 5 mẫu chuông + 4 mẫu entry thay thế.
+      R54_reveal_word_count_min — REVEAL tối thiểu 600 từ, target 800-1050.
+      R55_driver_R42_strict_enforce — giới hạn câu thoại bác tài, chỉ ngoại lệ tại foreshadow CLIFFHANGER theo R42.
+      [evidence: 1058d63b57196644fb76b6b955acded2a90c2947]
+
+  - version: 2.5
+    date: 2026-06-28
+    author: "CMD LEAD"
+    note: |
+      Round 29 — thêm 2 rule cấu trúc REVEAL:
+      R56_story_mode_hoi_tuong_am_anh — REVEAL phải phi tuyến tính ('hồi tưởng ám ảnh tâm linh'), cấm kể tuần tự theo năm/kiểu resume (trường-đại học-việc làm-hôn nhân).
+      R57_reveal_vignette_structure — REVEAL phải có cấu trúc 3-5 vignette (memory peak → sensory return → death moment → regret → tonight's purpose), max 3 mốc năm / 2 fact resume.
+      [evidence: d8d760be06f021f82fadefb06ba332e7aae19674]
+
+  - version: 2.6
+    date: 2026-06-28
+    author: "CMD LEAD"
+    note: |
+      Round 18 (TTS+LOGIC) — thêm 6 rule bug TTS thật phát hiện qua nghe:
+      R58 cấm kết câu bằng nguyên âm dấu ngã (bug: 'đi Mỹ'→'đi Mỵ').
+      R59 cấm chuỗi ≥3 từ đơn âm liền trước dấu câu cuối câu (ID này bị trùng, đổi thành R91 ở version 3.1 bên dưới).
+      R60 cấm kết câu bằng từ đơn âm.
+      R61 cấm mở câu bằng từ thời gian đơn âm (Đêm/Hôm/Ngày...).
+      R62 cấm lặp danh từ quy chiếu (người/cô/anh...) quá 2 lần liên tiếp/3 câu.
+      R65 HARDLOCK nhất quán logic 8 chiều (thời gian/địa lý/vật lý/hoá-sinh/thời tiết/phong tục/số học/khoa học tự nhiên) — trigger: bug tính sai số đếm vật ở EP01.
+      Kèm 1 sửa format thuần (requote list items R56/R53/R51 để hợp lệ YAML — không đổi nghĩa).
+      [evidence: e6a7a3b538f66e70838e9bab18d829beb852e0a1]
+
+  - version: 2.7
+    date: 2026-06-28
+    author: "CMD LEAD"
+    note: "Round 18.4 — thêm rule R66_short_sentence_chain_hardlock: câu ngắn 4-6 từ phải kèm câu dài >=10 từ, tối đa 2 câu ngắn liên tiếp (chống nhịp 'giật cục'). [evidence: a851e0e7843f646c7f8028079cff143739742728]"
+
+  - version: 2.8
+    date: 2026-06-28
+    author: "CMD LEAD"
+    note: "Round 18.6 — thêm rule R67_verb_semantic_precision_memory_vs_perception: 'nhớ/quên' chỉ dùng cho ký ức xa; hành động vừa xảy ra (<5s) phải dùng 'nhận ra/hiểu/ý thức'. Trigger: 3 lỗi dòng L94/L170/L632 ở EP01. [evidence: 4001b62306e49f0b36b410ca0325385d95fd2de9]"
+
+  - version: 2.9
+    date: 2026-06-28
+    author: "CMD LEAD"
+    note: |
+      Round 19 (P0 ship từ deep assessment) — thêm 6 rule TTS-vocoder:
+      R68 triphthong/diphthong trong danh từ riêng gây lỗi phát âm BigVGAN (Huế/Quỳnh/Thuận/Khải/Tuyến).
+      R69 số <100 và giờ phải viết chữ, không số Ả Rập (IndexTTS2 ~12% đọc sai thành tiếng Anh).
+      R70 em-dash (—) phải chuyển dấu phẩy + pause 250ms tường minh (BigVGAN insert 0ms pause cho em-dash).
+      R71 địa danh ngoài Hà Nội/Sài Gòn/Hải Phòng cần whitelist + phiên âm fallback.
+      R72 thoại trong ngoặc kép phải render tách kênh riêng + bridge 180ms.
+      R73 gate LUFS: [-19,-16] narration / [-23,-20] broadcast.
+      [evidence: 204693cb43489107bd27076af6b27b9fbaf154fd]
+
+  - version: 3.0
+    date: 2026-06-29
+    author: "CMD LEAD"
+    note: |
+      SVHMP v22-v41 TTS FINAL LOCK — commit lớn nhất trong lô này, thêm 13 rule:
+      R74 nối gạch ngang tên riêng tránh đọc nhầm ('Khải Phong'→'Hải Phòng'; đổi số từ R68 do trùng ngay trước khi commit).
+      R75 giới hạn nhắc tên riêng nhân vật <=6 lần/tập, <=2 câu liên tiếp (đổi số từ R69 do trùng).
+      R76 cấm 'ở' đứng riêng đầu câu/trước nguyên âm mở (BigVGAN tone-drift hỏi→ngã).
+      R81 cấm từ 'kia' trong narration.
+      R82 nhân vật phụ phải có anchor rõ ràng lần đầu xuất hiện/đoạn.
+      R83 manh mối rùng rợn phải neo ngữ cảnh (đặt sau reveal liên quan), không để trôi nổi.
+      R84 mọi sự kiện cần mốc thời gian tường minh.
+      R85 mở rộng danh sách từ cấm cuối câu của R60 (khác/vút/hậu/lúc/rồi...).
+      R86 EOL diacritic ban — cấm tuyệt đối kết câu bằng ký tự dấu ngã/nặng/hỏi.
+      R87 pause = 0 tuyệt đối, trim precision 1ms, truncate tại word-end + fade 25ms trong voice.
+      R88 chặn breath-ramp đầu chunk phải đạt voice level trong <50ms sau pause.
+      R89 peak cuối audio <= -0.1 dBFS.
+      R90 bắt buộc pipeline QA STAGE 1 (pre-render R86) → STAGE 3 (post-render R87/R88/R89) → STAGE 5 (pre-commit).
+      Kèm 1 sửa format thuần (requote list R68, không đổi nghĩa).
+      [evidence: 4f406d78baa5a1d43f8427cce7a5a5ec5efceaf5]
+
+  - version: 3.1
+    date: 2026-06-29
+    author: "CMD LEAD"
+    note: "Round 19.10 — đổi tên R59_concat_short_syllable_cụt_hardlock (thêm ở v2.6) → R91 để fix trùng ID với R59_audio_mix_qa_mandatory (dòng 322). Không đổi nội dung rule, chỉ đổi khoá. [evidence: 48080fe5c7921c2058891ab3746f75f7e6915a00]"
+
+  - version: 3.2
+    date: 2026-06-29
+    author: "CMD LEAD"
+    note: |
+      Round 19.11 — đổi tên tiếp R91 (v3.1) → R93 vì R91 lại trùng với rule R91_MASTER_PIPELINE_LOCK do nhánh song song ('CMD #2') đặt tên độc lập không đồng bộ số ID.
+      Đồng thời thêm 2 rule thật mới (từ nhánh CMD #2):
+      R91_master_pipeline_lock — config audio đã lock của 1 section phải lan truyền cho các section sau, cấm sửa-render kiểu phản ứng.
+      R92_text_proposal_self_verify_r86 — mọi đề xuất sửa văn bản phải tự scan theo R86 trước khi trình Mr.Long.
+      [evidence: 388f58337ffbe8a7e5544f7fdbe3676601408554]
+
+  - version: 3.3
+    date: 2026-06-29
+    author: "CMD LEAD"
+    note: |
+      Round 19.12 — đổi tên LẦN 3 R93 (v3.2) → R105 vì R93 lại trùng R93_full_update_on_new_bug (nhánh CMD #2). Kết thúc chuỗi đổi tên R59→R91→R93→R105 (nội dung rule không đổi qua các lần đổi tên, chỉ đổi khoá).
+      Đồng thời thêm 13 rule thật mới (nhánh CMD #2):
+      R93 full_update_on_new_bug — bug mới phát hiện phải codify thành rule + update tool + memory, không vá tạm.
+      R94 cấm sidechain ducking cho hội thoại trao đổi nhanh (gây pumping).
+      R95 giới hạn tên nhân vật <=6 lần/tập, chuyển sang đại từ sau lần đầu.
+      R96 thừa nhận BigVGAN onset ramp là lỗi vocoder vốn có, không chữa được — chỉ giảm nhẹ (pre-roll warm-up, overlap-add crossfade, head-trim tối đa 80-180ms).
+      R97 nhạc intro 6 giây trước khi giọng bắt đầu.
+      R98 gộp chunk ngắn (<6 từ) liên tiếp để giảm số lần onset ramp cộng dồn.
+      R99 thứ tự INTRO cố định 8 bước cho cả series, cấm cách nói 'Tập một'.
+      R100 câu ngắn kết bằng tone cấm (R86) thì chuyển dấu chấm thành dấu phẩy để từ đó dịch vào giữa câu.
+      R101 khoá pipeline ffmpeg chỉ atempo+volume+alimiter (bỏ loudnorm/agate/acompressor gây click).
+      R102 không boost ffmpeg volume >1.0 khi raw peak gần 0dB (gây clamp méo tiếng dạng sóng vuông); giá trị an toàn 0.95.
+      R103 amix chỉ dùng cho audio chồng lấn, concat cho tuần tự — bug thật: dùng nhầm amix gây lặp/chồng giọng 134s.
+      R104 khi chỉ đổi ffmpeg (không đổi TTS) thì tái dùng raw.wav cache, không render lại TTS (tiết kiệm 12 phút → 5 giây).
+      R104b boost giọng +5% phải ở bước mix cuối cùng, không phải mỗi chunk (tránh clip sau atempo).
+      R92b mở rộng self-verify của R92 lên 4 lớp (EOL + tôn ti xưng hô + không lặp chủ ngữ liên tiếp + đọc-thử ngữ pháp).
+      [evidence: 1d54bed21979e20730751246f4a99436e19c374]
+
+  - version: 3.4
+    date: 2026-06-29
+    author: "CMD LEAD"
+    note: "Round 19.15 — sửa rule R96 (v3.3): thêm block qa_tolerance với slow_onset_ratio_max 0.25, nới rms_range_db xuống [-25,-12], nới noisy_pause_max từ 0 lên 1; giữ nguyên peak_max_db -0.1 và click_count_max 10. [evidence: 8c2e929f8f94a7f040480c98ee9a14a8a25a6e8]"
+
+  - version: 3.5
+    date: 2026-06-30
+    author: "CMD LEAD"
+    note: |
+      Tier 1 v1.0.0-rc1 — QA Engine Frozen (Mr.Long approved 30/6, theo commit message — nhưng KHÔNG có cụm 'per Mr.Long authorization' tường minh trong git log). Thêm khối rule lớn nhất tính tới thời điểm này:
+      R110-R116 — narrative continuity tracker, TTS phonetic-safe word DB, chặn lặp cụm >=4 từ xuyên section, chặn lặp cụm động từ >2 lần/tập, rõ ràng bắt buộc, chính xác thực tế đa lĩnh vực (toán/lý/địa/tên/thời tiết/văn học), ngữ pháp + mô tả nhân vật nhất quán.
+      R117-R150 — roadmap kế hoạch (đa số status: TBD chưa build): fact DB, timeline QA, geography/physics/weather logic, story-arc audit, character-arc YAML, emotional curve, reveal-pacing, Chekhov's-gun tracking, sentence-rhythm variance, anti-generic-AI-phrase, continuity ledger, scene-contract, verb diversity, dialogue attribution, speech style/character, symbol/color consistency, voiceprint uniqueness, folklore consistency, style fingerprint, golden-sample lock, publish-score gate, diff-check, kill-switch, multi-pass agent separation.
+      R170_zero_hallucination — cấm dùng từ PASS/DONE/BUILT/VERIFIED không kèm bằng chứng; yêu cầu evidence hierarchy (source>test>log>artifact>docs>user claim) + 5 câu hỏi self-check.
+      R171_technical_audit_protocol_v1 — supersedes R170; audit report bắt buộc 8-cấp evidence + 9-cấp verification-level + bảng, không được viết văn trước bảng.
+      R172_role_separation_3way — bắt buộc tách vai WRITER/TESTER/AUDITOR, cấm 1 agent kiêm nhiều vai trong 1 báo cáo.
+      R173_autonomous_execution_v2 — cấm hỏi lại xin phép/tiếp tục; định nghĩa 6 điều kiện dừng hợp lệ duy nhất (mất dữ liệu, thao tác phá hoại không đảo ngược, cần credential, cần auth ngoài, cần cho phép pháp lý, ý định mơ hồ căn bản).
+      [evidence: dbac26f6542a80235cdeed09b1d95f1c]
+
+  - version: 3.6
+    date: 2026-06-30
+    author: "CMD LEAD"
+    note: |
+      Round 19.26 — 'flush' 6 rule stub từ regression test evidence (chưa có nội dung thật, chỉ placeholder liên kết tool: R110/R111/R113/R117/R128/R141_codified_from_test_stub — status stub_pending_full_spec).
+      Đồng thời thêm rule thật:
+      R94b_section_silence_bridge — silence bridge >=1500ms giữa các section (không concat 0-gap).
+      R175_dialogue_emo_override — mỗi dòng thoại phải có emotion-vector override riêng theo chunk, không dùng emo mặc định theo section.
+      R177_adjacent_word_repeat — cấm lặp từ ngắn (1-2 âm tiết) >=3 lần trong 3 dòng liên tiếp.
+      R178_character_voice_lock — mỗi nhân vật có 1 voice profile LOCKED (giới tính/tuổi/chất giọng/emo nền); path tham chiếu 'bible/37_character_voice_profiles.yaml (TBD)' — file này chưa tồn tại tại thời điểm add, đây chính là 'stale path' được fix ở version 4.3 bên dưới.
+      R179_mandatory_self_verify — bắt buộc self-verify EOL/word-usage trước khi commit text rewrite (trigger: 4 vi phạm thật F001/F007/F020/F011).
+      R180_word_collocation_check, R181_verb_noun_compatibility, R182_adjective_noun_compatibility, R183_register_consistency, R184_metaphor_sanity (bản gốc — bị thay thế ở version 3.7), R185_corpus_collocation_db (kế hoạch).
+      [evidence: 35176c09a8f48125098a5fbbcacb0362b30c8c94]
+
+  - version: 3.7
+    date: 2026-06-30
+    author: "CMD LEAD"
+    note: |
+      Round 19.26+19.27 — thay thế R184_metaphor_sanity (v3.6) bằng nội dung hoàn toàn khác: R184_ai_style_sentence_detector (phát hiện văn phong AI generic: 'Tóm lại...', 'Cuối cùng...', 'Có thể nói rằng...', 5+ câu cùng cấu trúc liên tiếp).
+      Bản metaphor_sanity gốc (v3.6) được đổi tên (không mất nội dung) sang R186_metaphor_sanity.
+      Thêm R187_vietnamese_language_judge — module chấm điểm tổng hợp 5 chiều (collocation/register/ai_style/metaphor/natural) trên R180-R186, verdict PASS>=80/REVIEW 60-79/REJECT<60.
+      Thêm block kiến trúc tier_2_2_vietnamese_language_layer (pipeline WRITER→LOGIC QA→LANGUAGE JUDGE→REPAIR→AUDIO GATE→FINAL).
+      Toàn bộ R186/R187/tier_2_2 này bị XOÁ chỉ ~6 tiếng sau bởi commit tiếp theo (version 3.8) — xem quyết định cuối cùng ở entry version 3.8 bên dưới.
+      [evidence: 580daed8daf926c844ea3ce29e38a96246251782]
+
+  - version: 3.8
+    date: 2026-06-30
+    author: "CMD LEAD"
+    note: |
+      Round 19.32 — đây là điểm file tự bump header thành '1.3' lúc đó (thực tế đúng ra phải là 3.8 theo thứ tự thật — header đã thiếu ~24 bước version kể từ đây).
+      Đổi lock_date/lock_trigger sang trích dẫn Mr.Long docx 30/6 21:30 ('STOP Feature Development. Build->Verify->Freeze->Tag->Build tiếp'). supersedes ghi 1.1→1.2 lúc đó (không phản ánh đúng chuỗi thật).
+      Thêm rule_R_SUPREME_workflow_lock — rule tối thượng, đứng trên mọi rule khác: bắt buộc chu trình Build→Unit Test→Regression Test→Production Validation→Freeze→Git Tag; tier_sequencing_lock (không mở Tier N+1 khi Tier N chưa freeze+tag); test_process_failure_principle (mọi bug user tìm ra = process failure, phải thêm rule/gate mới chứ không chỉ vá).
+      Điền nội dung thật cho 6 rule stub (v3.6): R110/R111/R113/R117/R128/R141 (bỏ hậu tố '_stub', thêm rule text + why lấy từ docstring tool).
+      ĐỒNG THỜI XOÁ block R186/R187/tier_2_2_vietnamese_language_layer (thêm ở v3.7). QUYẾT ĐỊNH (per Mr.Long authorization 2026-07-05, xác nhận hồi tố): khả năng cao đây là dọn dẹp có chủ ý — trùng đúng thời điểm với việc thêm rule_R_SUPREME_workflow_lock ở chính commit này, vốn cấm 'Feature Development' cho tính năng chưa build (R186/R187/tier_2_2 là kiến trúc 0/7 tool đã build tại thời điểm đó). KHÔNG khôi phục lại nội dung R186/R187/tier_2_2; giữ nguyên trạng thái đã xoá.
+      Kèm 1 lỗi format vô hại (duplicate 1 dòng comment header).
+      [evidence: f7c1959545810f353b83635742ce288655ad468b]
+
+  - version: 3.9
+    date: 2026-07-01
+    author: "CMD LEAD"
+    note: |
+      Round 20.1 (Session 1/7 spec rebuild v2) — mở rộng đáng kể tầng governance:
+      Thêm bug_class_extension_principle (chính sách 'mở rộng rule có sẵn, không tự tạo rule mới mỗi bug' — 5 nhóm bug-class).
+      Thêm governance_lock R1-R10: no-autonomous-action, permission-first (4 câu hỏi bắt buộc trước hành động), production-validation-mode, bug-class-principle, process-failure-principle, pass-declaration-rule (cấm tuyên bố PASS/READY/COMPLETE không định tính), write-protection workflow (Read→Diff→Proposal→Approval→Backup→Patch→Regression→Production), baseline-protection (checksum/backup trước sửa), evidence-first, final-safety-rule (mặc định STOP khi không chắc).
+      Khối 'RECOVERY APPEND' — khôi phục 18 rule bị MẤT giữa 19:30-21:55 ngày 30/6 (chưa rõ nguyên nhân mất, chỉ ghi lại là re-codify): R174, R176, R178b, R180b, R181b, R181c, R188-R196.
+      Khối 'ORPHAN FLUSH' — 8 rule tồn tại trong code từ trước nhưng chưa từng được codify vào bible: R77-R80, R87b, R108, R109, R175b (R175b sửa luôn bug thật: emotion vector sum vượt 1.0 ở 5 file mẫu E001-E005b).
+      Thêm R197_full_text_gate_mandatory, R198_cap_peak_post_render_mandatory (fix bug thật: setup.wav clip 4 lần do thiếu bước wiring cap_peak.py).
+      [evidence: 6d16ecda8e16361bfbffab85d3d1b19ffd563911]
+
+  - version: 4.0
+    date: 2026-07-01
+    author: "CMD LEAD"
+    note: "Round 20.3 — thêm rule R199_tail_pathology_hardlock: codify 3 loại lỗi đuôi audio thật xác nhận qua A/B test (đuôi rác burst -30..-15dB sau gap>=300ms; runaway generation model overgenerate tới max_mel_tokens gây 5-20s im lặng thừa; lỗ hổng cấu trúc aggressive_trim_tail search_ms=600 quá hẹp). Fix v2: threshold -40dB, gap_ms 300, full-audio backward scan thay vì giới hạn search_ms. [evidence: 822ee951fee33ae62f78d553e09697486f40611b]"
+
+  # --- INCIDENT RECORD (không đánh version, không phải content edit hợp lệ) ---
+  - incident: true
+    date: 2026-07-02
+    note: |
+      File bible/00_constitution.yaml bị XOÁ TOÀN BỘ (3132 dòng) lúc 18:37 do lỗi 'hook-env test vandalism' — pytest chạy trong git hook kế thừa biến môi trường GIT_DIR trỏ thẳng vào repo thật thay vì repo test tạm, khiến 1 fixture test tự ý 'git commit' xoá file lên repo thật.
+      Được phát hiện và khôi phục lại ĐÚNG Y NGUYÊN (byte-for-byte, đã verify diff giữa 2 blob = rỗng) lúc 19:03 cùng ngày, kèm fix root cause (scrub biến GIT_* trong mọi subprocess test).
+      Net content delta = 0, không cần version bump — ghi lại để lịch sử changelog không có khoảng trống bí ẩn tại mốc thời gian này.
+      [evidence xoá: eff2a1a6c98a164d8606e622da746128dd5acbcb] [evidence khôi phục: fcd01b039ac3053f26145d732a3c8498890bf6b1]
+
+  - version: 4.1
+    date: 2026-07-04
+    author: "Mr.Long (per Mr.Long authorization 2026-07-04 — có evidence tường minh trong commit message)"
+    note: |
+      Fix trùng KEY YAML thật (yaml.safe_load âm thầm drop bản đầu khi 2 key giống hệt nhau):
+      R142_kill_switch — có 2 định nghĩa trùng key: bản 'outline-stage kill switch' (status TBD, chưa build) và bản 'Publish Score kill switch' (status PARTIAL, tool publish_score.py thật). Quyết định (Cách A): giữ bản Publish Score làm R142 chính thức; đổi bản outline-stage → R144_outline_kill_switch, thêm note giải thích.
+      R143_multi_pass_agent — có 2 định nghĩa trùng key, cùng 1 ý tưởng (tách Writer/QA agent): bản stub TBD và bản PARTIAL có file thật (cmd/CMD_QA_*.md). Quyết định: XOÁ bản stub (không đổi tên, vì trùng ý tưởng thật sự không phải 2 khái niệm khác nhau), giữ bản PARTIAL làm R143 chính thức.
+      Máy verify: số dup-key giảm từ 8 → 6 (còn lại R141 khác-key và nhóm R110/111/113/117/128 'companion pattern', được xử lý ở version 4.4).
+      [evidence: c735e36aefb2b9995efe6707b749348989c75d04]
+
+  - version: 4.2
+    date: 2026-07-05
+    author: "CMD LEAD"
+    note: "Xoá cross_ref sai của R70 (em-dash pause rule) đang trỏ nhầm sang R75 — R75 đã đổi nghĩa từ version 3.0 (từ 'em-dash' cũ sang 'proper-noun anaphora cap') nên cross_ref cũ không còn đúng. Thay bằng comment giải thích R70 tự thân là rule duy nhất trong bible/00 quản lý pause em-dash. [evidence: 690aad3d74c10d7c772ba49c033e8b153da5378c]"
+
+  - version: 4.3
+    date: 2026-07-05
+    author: "Mr.Long (per Mr.Long authorization 2026-07-05)"
+    note: "Sửa R178.enforce.file: path ảo 'bible/37_character_voice_profiles.yaml (TBD)' (chưa từng tồn tại, thêm nhầm ở version 3.6) → path thật 'bible/37_character_schema.yaml' (file đã build, có field voice liên quan). Fix severity_counts.Major (9→10) nằm ở bible/33_rule_catalog.yaml, KHÔNG thuộc file constitution này — không tính vào changelog file này. [evidence: b944259f93374a9b5116a4d46be449993a7ad520]"
+
+  - version: 4.4
+    date: 2026-07-05
+    author: "Mr.Long (per Mr.Long authorization 2026-07-05)"
+    note: |
+      Fix trùng SỐ rule (khác key YAML, không mất dữ liệu qua loader nhưng gây nhầm lẫn ngữ nghĩa 'R{N} nghĩa là gì'):
+      R110/R111/R113 — merge nội dung block 'codified_from_test' (thêm rời ở version 3.6) vào thẳng bên trong rule chính (rule_R110_narrative_continuity, rule_R111_tts_phonetic_safe, rule_R113_action_verb_repeat); xoá block đứng riêng, nội dung xác nhận giữ nguyên (không mất dữ liệu).
+      R117/R128 — merge tương tự, ĐỒNG THỜI sửa status TBD→BUILT (đã wire vào tools/publish_score.py — qa_fact_check.py weight 100, qa_anti_generic.py weight 100 — từ trước nhưng bookkeeping status bị bỏ sót).
+      R141 — có 2 định nghĩa khác key cùng claim số 141: rule_R141_diff_check (status TBD, ý tưởng 'diff rewrite vs cũ', chưa build) và rule_R141_ssot_diff_check (status BUILT, tool tools/qa_ssot_diff.py chạy thật). Quyết định: giữ rule_R141_ssot_diff_check làm R141 chính thức; đổi rule_R141_diff_check (chưa build) → R145_diff_check, giữ nguyên status TBD + mô tả, thêm note giải thích renumbering.
+      Xoá toàn bộ section '# === FLUSHED FROM REGRESSION TEST ===' (6 block companion đứng riêng từ version 3.6), thay bằng comment ngắn giải thích nội dung đã merge đi đâu.
+      [evidence: 7ce92025350065423a732a6e6e2e901acd50af71]
+
+  - retroactive_confirmation: true
+    date: 2026-07-05
+    author: "Mr.Long"
+    note: |
+      Xác nhận hồi tố qua trao đổi trực tiếp ngày 2026-07-05 (không sửa lại nội dung/author/ngày của 33 entry version 1.2-4.4 phía trên — chỉ bổ sung xác nhận):
+      (1) Các round 27/6-1/7 (version 1.2 đến 4.0) không có cụm "per Mr.Long authorization" trong commit message gốc tại thời điểm đó — entry vẫn ghi đúng sự thật lịch sử này (thiếu bằng chứng tường minh). Mr.Long xác nhận hôm nay các round đó đã dưới sự chỉ đạo/giám sát chung, nhưng KHÔNG hồi tố sửa lại text các entry gốc.
+      (2) R186/R187/tier_2_2_vietnamese_language_layer (bị xoá ở version 3.8): xác nhận giữ nguyên đã xoá, KHÔNG khôi phục — xem lý do chi tiết ở entry version 3.8.
+      (3) Việc backfill toàn bộ changelog này (entry version 1.2-4.4 + incident record 2026-07-02 + xác nhận này) và bump header version 1.3→4.4/supersedes 1.2→4.3 được thực hiện per Mr.Long authorization 2026-07-05.
+      [nguồn: phiên làm việc Claude 2026-07-05, điều tra git log --follow + git show trên từng commit]
 
   - id: R86
     name: 'EOL diacritic ban — ngã/nặng/hỏi (HARDLOCK)'
