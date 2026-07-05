@@ -1,0 +1,146 @@
+# ============================================================
+# DE XUAT — episode_schema.yaml (G7 blocking_dependency RIENG, KHAC cong story_plan_schema cua G6b)
+# Nguon can cu (da doc truc tiep, khong bia — liet ke ro cai nao DA doc ky, cai nao CHUA):
+#   DA DOC KY:
+#   - governance/blueprint/blueprint_domains.yaml dong 594-622 (domain generator: schema
+#     planned_path DUNG file nay, reason: "Cau truc section moi chuan hoa o scaffold prose,
+#     chua field-hoa", blocking_dependency: "Mr.Long duyet field episode spec")
+#   - prompts/ep_scaffold_template.md (HARD MANDATORY, lock 27/6) - toan bo scaffold that dang
+#     dung: front-matter YAML block + INTRO + 6 section (HOOK/SETUP/INCIDENT/REVEAL/PAYOFF/
+#     CLIFFHANGER) + word budget + 12-check post-render gate da liet ke san
+#   - governance/blueprint/bp7/story_structure.yaml level "episode" (dong 40-47) - 6 component
+#     BAT BUOC tro bible/01, KHONG dinh nghia lai o day
+#   - bible/08_novelty_constraints.yaml (dau file) - distance_constraints (vd cung archetype
+#     hoi tiec cach nhau >=15 tap) - CHI tham chieu, khong chep lai so
+#   - governance/blueprint/bp1/interface_contracts.yaml - 14 contract read__<domain>__generator,
+#     toan bo allowed_operations:[read] forbidden:[write, schema_change]
+#   CHUA DOC HET (ghi trung thuc, khong gia vo da kiem tra day du):
+#   - tools/svhmp_preflight_qa.py: BP0 khai day la validator "status: exists" cua domain
+#     generator, nhung noi dung thuc (20 dong dau da doc) la FULL_TEXT_GATE kiem tren
+#     spec.json (R86 dau thanh...) - CHUA xac nhan no co kiem cau truc episode.md 6-section
+#     hay khong, hay chi la 1 lop khac (render-spec-level) tach biet voi post_render_gate.py
+#     (12-check tren chinh episode.md, da thay ro trong scaffold doc). Day la 1 diem CAN
+#     CMD_BUILD doi chieu ky truoc khi code enforcer that, KHONG phai kiem duyet tu suy doan.
+# KIEM DUYET soan de xuat theo yeu cau Boss (5/7). CHUA phai file chinh thuc.
+# ============================================================
+
+version: 1.0
+proposal_status: PENDING
+writer_of_record: mr_long
+mr_long_decision: PENDING
+decision_date: null
+
+# ------------------------------------------------------------
+# VI SAO CAN FILE NAY (tra loi truoc khi hoi "co can khong") — PHAN BIEN #1
+# ------------------------------------------------------------
+# Cau hoi tu phan bien: he thong hien tai (scaffold prose + post_render_gate.py 12-check)
+# DA CHAY DUOC that cho 50 tap (ep_01-50) MA KHONG CAN schema nay — vay field-hoa de lam gi?
+#
+# Tra loi (can cu BP0 chinh no khai): scaffold.md hien la template PROSE cho NGUOI/LLM doc va
+# tu dien tay ([BRACKET]) — khong phai du lieu may-doc-duoc. Khi G7 (tools/episode_generator.py)
+# build that, no can 1 CAU TRUC DU LIEU trung gian (khong phai van ban) de: nhan input tu G6a
+# (budget_sheet 12-knob) + G6b (episode_plan tu story_plan_schema) + 14 domain con lai, RAP LAI
+# thanh cac gia tri cu the (vd "pillar: love", "signature_object: OBJ_042") TRUOC khi render
+# ra prose khop dung scaffold. Neu khong co schema nay, generator se phai tu "doan" cau truc tu
+# chinh van ban markdown - dung nguy co gay loi da thay o DEBT-001 (intro drift dan theo thoi
+# gian vi khong co 1 nguon cau truc hoa de doi chieu).
+# KHONG PHAI mandate retrofit 50 tap cu (ep_01-50 la "CMD prompt-based nguoi+LLM", theo dung
+# BP0 tu ghi) - schema nay danh cho OUTPUT MOI cua generator (G7), khong bat buoc sua tap cu.
+# ------------------------------------------------------------
+
+schema_draft:
+
+  episode_frontmatter:
+    desc: "Field-hoa dung khoi YAML front-matter da co that trong scaffold.md dong 88-106"
+    fields:
+      prompt_version: {type: string, required: true, desc: "vd SVHMP-10.0-RC3.6 - version cua chinh scaffold/pipeline, khong phai version noi dung tap"}
+      ep_number: {type: int, required: true, range: [1, 90]}
+      phase: {type: enum, values: [introductory, warming, heightening, peak, climax], required: true, desc: "Tro bible/09 - KHONG dinh nghia lai nguong, chi tham chieu enum"}
+      pillar: {type: enum, values: [family, love, promise, kindness, self], required: true, desc: "Tro bible/21 R33 interleave - PHAI khop pillar_interleave_ep01_50[ep_N] (post_render_gate.py check 11 da co)"}
+      intensity_level: {type: enum, values: [0.45, 0.55, 0.70, 0.85, 0.95], required: true, desc: "Tro bible/09 + milestone bump - khong tu them muc moi"}
+      quang_memory_fragment: {type: string, required: true, format: "M_{1-18}", desc: "Tro bible/21 R35 progression_table - text PHAI khop dung (post_render_gate.py check 10)"}
+      callback_target: {type: string, required: false, desc: "ep_N hoac 'none' - PHAI khop bible/21 callback_schedule_s1[ep_N] (check 12)"}
+      object_sub_arc: {type: object, required: false, fields: {type: {type: enum, values: [symbol_clustering, temporal_arc, geographic_arc, none]}, target_symbol: {type: string}}}
+      milestone: {type: bool, required: true, desc: "true neu ep_number in [10,20,30,40,50,60,70,80,90] (bible/21 R37)"}
+      passenger_main: {type: string, required: true, desc: "PHAI la 1 PAS_id that trong runtime/passenger_roster_100.yaml (character domain, chi doc) - KHONG duoc la ten tu do (dung DEBT-002/G2-4 lap lai)"}
+      signature_object: {type: string, required: true, format: "OBJ_{id}", desc: "Tro bible/12_object_library.yaml"}
+      signature_setting: {type: string, required: true, desc: "Tro bible/13_setting_library.yaml"}
+      stop_location: {type: string, required: true}
+      word_count_target: {type: int, required: true, default: 2300, range: [2000, 2700], desc: "R39 hard_floor/hard_ceiling"}
+      bell_count: {type: int, required: true, const: 1, desc: "SERIES_RULES.bell HARD MAX - trong ep thuong; ep 73/90 co ngoai le rieng theo bible/18, schema nay KHONG the hien ngoai le do (thuoc pham vi driver_reveal_budget)"}
+      ghost_manifest: {type: int, required: true, const: 1, desc: "SERIES_RULES.ghost_visual HARD MAX"}
+      driver_lines: {type: int, required: true, default: 2, desc: "'Con da nho ra chua?' + 'Chua toi luc.' - TRU ep milestone hoac [73,90] (bible/18 special_rules)"}
+      hand_crafted: {type: bool, required: true, desc: "false cho output G7 tu dong sinh (phan biet voi 50 tap cu hand_crafted:true)"}
+
+  episode_sections:
+    desc: "6 section BAT BUOC + INTRO rieng - KHONG dinh nghia lai thu tu/ten, chi RECONCILE tro bp7 + bible/01"
+    intro_block:
+      status: "KHONG field-hoa o day - thuoc pham vi DEBT-001 (intro brand text, da co van de rieng dang xu ly), schema nay CHI tham chieu su ton tai, khong chep lai noi dung 5-element"
+    sections:
+      component_ref:
+        type: enum
+        required: true
+        values: [HOOK, SETUP, INCIDENT, REVEAL, PAYOFF, CLIFFHANGER]
+        desc: "PHAI dung 6 gia tri + dung thu tu bp7/story_structure.yaml level 'episode' (tro bible/01 pattern_per_section) - day la RECONCILE, KHONG phai dinh nghia moi"
+      word_budget:
+        type: object
+        desc: "Tu ep_scaffold_template.md SECTION BUDGET (dong 39-53) - CHI tham chieu, so THAT nam o file scaffold, khong chep gia tri roi de lech theo thoi gian"
+        fields:
+          HOOK: {target: 280}
+          SETUP: {target: 240}
+          INCIDENT: {target: 240}
+          REVEAL: {target: 1050}
+          PAYOFF: {target: 270}
+          CLIFFHANGER: {target: 320}
+      content_summary: {type: string, required: true, desc: "Tom tat cau truc scene trong section (KHONG phai van ban day du - day la ke hoach truoc khi generator viet prose that)"}
+
+  novelty_check_ref:
+    desc: "KHONG dinh nghia lai distance_constraints - CHI khai field de generator tu doi chieu"
+    fields:
+      regret_archetype_used: {type: string, desc: "Tra bible/08 distance_constraints.same_regret_archetype_distance (>=15 tap) truoc khi chon"}
+      object_used: {type: string, desc: "Tra same_object_distance (>=10 tap)"}
+      relationship_used: {type: string, desc: "Tra same_relationship_distance (>=8 tap)"}
+
+# ------------------------------------------------------------
+# PHAN BIEN #2 — enforcer nao THAT su kiem schema nay, tranh trung R211
+# ------------------------------------------------------------
+# CANH BAO TU KIEM DUYET (chua giai quyet duoc, can CMD_BUILD xac nhan khi code that):
+# post_render_gate.py (12 check, DA EXISTS, dang chay that cho 50 tap) co VE trung mot phan
+# lon voi cac field tren (word_count, bell_count, ghost_manifest, driver_lines, pillar-match,
+# memory-fragment-match, callback-match - deu la 12 check da liet ke trong scaffold.md). Nguy
+# co R211 (nhan doi): neu tools/episode_schema_check.py (enforcer moi, se can build) chi lam
+# lai dung 12 check do tren cau truc YAML thay vi tren markdown, day KHONG phai nhan doi ma la
+# NANG CAP dung nghia (kiem truoc khi render thay vi sau khi render) - NHUNG neu code check
+# giong het logic cu ma khong doc lai post_render_gate.py truoc, se de bi viet lai kem hon ban
+# goc. RANG BUOC bat buoc cho nguoi build enforcer sau nay: DOC HET tools/post_render_gate.py
+# truoc, TAI SU DUNG ham kiem tra da co (import, khong copy-paste logic) neu kien truc cho phep.
+# ------------------------------------------------------------
+
+enforcer_planned:
+  path: tools/episode_schema_check.py
+  status: planned
+  reason_not_exists_yet: "Chi build sau khi schema nay duoc duyet - build truoc = build-ahead (REALITY ANCHOR luat 9)"
+  mandatory_before_coding: "Doc tools/post_render_gate.py + tools/svhmp_preflight_qa.py TOAN BO truoc, xac dinh ro pham vi 2 file nay kiem gi, tranh nhan doi logic (R211)"
+
+# ------------------------------------------------------------
+# PHAN BIEN #3 — rui ro con lai neu duyet nguyen van
+# ------------------------------------------------------------
+# 1. 50 tap cu (ep_01-50) KHONG khop schema nay 100% (vd milestone/bell_count ngoai le o ep73/90
+#    chua the hien du trong schema) - neu ai do sau nay dung schema nay de "audit nguoc" 50 tap
+#    cu se ra FAIL sai (khong phai loi tap cu, la gioi han pham vi schema). Phai ghi ro schema
+#    nay CHI ap cho output MOI cua generator (G7), khong ap nguoc.
+# 2. object_sub_arc/callback_target fields hien mo ta "kieu enum + string tu do" - chua co
+#    danh sach dong closed-set cho "type" ngoai 3 gia tri da liet - neu sau nay can them kieu
+#    sub-arc moi, day la diem se can RFC (khong tu y them trong enforcer).
+#
+# KHONG co muc "tam chap nhan" cho phan schema_draft chinh (episode_frontmatter/episode_sections)
+# - build tools/episode_generator.py khi con PENDING = FAIL build-ahead, dung tinh than G6-1/G6-5.
+# ------------------------------------------------------------
+
+decision_request:
+  question: "Format tren co dung y muon cho cau truc du lieu 1 tap khong?"
+  options:
+    A_approve_as_is: "Duyet nguyen van draft - CMD_BUILD field-hoa thanh governance/blueprint/schemas/episode_schema.yaml"
+    B_approve_with_changes: "Giu huong nhung sua 1 vai cho - Mr.Long ghi ro truoc khi field-hoa"
+    C_reject_redesign: "Khong dung huong - thiet ke lai"
+  note: "Truoc khi build enforcer that, CMD_BUILD PHAI doc post_render_gate.py + svhmp_preflight_qa.py toan bo de tranh nhan doi R211 (xem PHAN BIEN #2) - khong phu thuoc vao lua chon A/B/C."
