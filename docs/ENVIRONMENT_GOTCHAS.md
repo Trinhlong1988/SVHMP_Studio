@@ -117,6 +117,44 @@ thật:** trước fix `git worktree add` → exit 2; sau fix → exit 0 sạch 
 (`pre-push`), **rà tất cả hook cùng họ** (mọi `post-*`/`pre-*` khác) xem có dính cùng bug — đừng chỉ
 vá đúng chỗ vừa bị bắt.
 
+## G13 — `git stash` dùng CHUNG toàn bộ clone, KHÔNG cách ly theo từng `git worktree`
+Case thật (5/7): 2 agent chạy song song, mỗi agent làm việc trong 1 worktree RIÊNG (đường dẫn khác
+nhau, tưởng độc lập hoàn toàn), nhưng cả 2 đều `git stash` tại một thời điểm gần nhau để dọn tạm rồi
+`git stash pop` lại. Vì `git stash` lưu vào 1 stack DÙNG CHUNG cho cả clone (nằm trong `.git/` gốc,
+không phải trong thư mục worktree), agent A `stash pop` vô tình lấy nhầm stash của agent B (branch/
+task khác hẳn), và ngược lại — kết quả: file của agent B (2 file, `governance/TECH_DEBT.md` +
+`tools/sfx_acquire.py`) xuất hiện uncommitted trong worktree của agent A, và file của agent A
+(`tools/hidden_audit.py`) xuất hiện trong worktree của agent B. May mắn không mất gì (đã đối chiếu
+byte-for-byte với bản mỗi bên tự commit, giống hệt, dọn sạch an toàn) nhưng đây là **rủi ro mất dữ
+liệu thật** nếu 1 trong 2 bên không kiểm tra kỹ trước khi commit. **Bài học:** KHÔNG dùng `git stash`
+trần khi chạy nhiều agent/phiên song song trên cùng 1 clone (dù khác worktree) — nếu cần dọn tạm,
+dùng `git stash push -m "<nhãn duy nhất theo task>"` VÀ pop bằng đúng tên/index đã lưu lại
+(`git stash list` để tìm đúng, không `pop` mù theo mặc định `stash@{0}`), hoặc tránh stash hoàn toàn
+(dùng `git worktree` cho mỗi task — đã làm — nhưng thao tác TRONG mỗi worktree vẫn phải né stash
+chung, ưu tiên commit-tạm-rồi-amend thay vì stash khi làm việc song song).
+
+## G14 — Gate mới GỌI LẠI `pytest` qua subprocess trên chính file test CHỨA NÓ → fork-bomb đệ quy
+vô hạn nếu thiếu re-entrancy guard (tái diễn đúng lớp lỗi đã biết — xem lesson-ci-gate-pytest-recursion)
+Case thật (5/7, lúc build G3 D7): `tools/g3_dialogue_check.py` (gate 1 cửa mới) có 1 stage gọi
+`subprocess.run([py, '-m', 'pytest', 'tests/test_g3_dialogue.py'])` để tái dùng test có sẵn làm
+smoke-check. Nhưng CHÍNH file `tests/test_g3_dialogue.py` đó lại có 1 test tự gọi lại
+`g3_dialogue_check.py` (để test "gate chạy được, ghi report đúng") — tạo vòng lặp: gate → pytest →
+test → gate → pytest → test → ... **Hậu quả THẬT đã xảy ra:** sinh ra **hơn 2200 tiến trình
+`python.exe`** trước khi bị phát hiện và kill kịp thời (may mắn kill đúng phạm vi, không đụng tiến
+trình khác của Boss). Đây là ĐÚNG lớp lỗi `ci_gate.py` từng dính trước đây (R213→auditor→ci_gate→
+pytest) — dự án ĐÃ CÓ pattern fix chuẩn (`_PYTEST_GUARD` bằng biến môi trường) nhưng người viết gate
+mới không tự động biết để áp lại, phải tự nhớ mirror đúng pattern. **Fix (đã áp dụng, xem
+`tools/g3_dialogue_check.py::_PYTEST_GUARD`):** guard 2 lớp bằng 1 biến môi trường dùng chung —
+(1) trong hàm gọi subprocess pytest của gate: nếu guard đã set thì SKIP không spawn thêm; (2) trong
+chính test hay bị gọi lại: nếu guard đã set thì `pytest.skip()` ngay đầu test, không chạy logic gì
+thêm. Đặt guard NGAY TRƯỚC khi spawn subprocess con (`env[GUARD]='1'`), không set global toàn tiến
+trình cha. **Bài học (áp dụng bắt buộc cho MỌI gate mới có stage gọi `subprocess.run(pytest ...)`):**
+trước khi ship 1 gate mới có stage tái dùng pytest, PHẢI tự hỏi "test được gọi có thể trực tiếp/gián
+tiếp gọi lại chính gate này không?" — nếu có, bắt buộc thêm guard theo đúng pattern `ci_gate.py` đã
+có, KHÔNG viết gate mới mà bỏ qua bước này. Khi nghi ngờ đang chạy thử 1 gate mới lần đầu, mở sẵn
+`Get-Process python | Measure-Object` ở cửa sổ khác để bắt sớm nếu số tiến trình tăng bất thường,
+đừng đợi máy đơ mới biết.
+
 ## Nguồn cảm hứng
 So sánh với Hermes Agent (Nous Research, 4/7): pattern "skill file agent tự viết, mọi lần gọi lại
 đọc được" đúng hướng nhưng KHÔNG áp dụng "tự viết không kiểm duyệt" — file này làm thủ công, review
