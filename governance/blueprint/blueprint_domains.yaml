@@ -432,13 +432,12 @@ domains:
       - {path: bible/22_anti_slop_vi.yaml, status: exists}
       - {path: bible/06_lexical_style.yaml, status: exists}
       - {path: bible/15_voice_bible.yaml, status: exists}
-    manager:
-      status: planned
-      planned_path: tools/dialogue_manager.py
-      owner: dialogue
-      reason_not_exists_yet: "Flow thoai hien nam trong character_manager (voice profile) + validator; chua tach manager rieng."
-      target_milestone: M2_planner_generator
-      blocking_dependency: "quyet dinh tach/giu chung voi character_manager (Change Request Gate R211)"
+    # status planned -> exists (per Mr.Long authorization 2026-07-05, TASK_G3_DIALOGUE.md D2:
+    # blocking_dependency da go - g3_manager_decision_proposal.yaml mr_long_decision=APPROVED_A,
+    # phuong an tach rieng. Drift-guard cua tools/blueprint_constitution_check.py (Cond 2) bat
+    # dung "planned nhung path da co tren disk" khi tools/dialogue_manager.py duoc tao o D3 -
+    # cap nhat contract sang exists co duyet, dung mau cua commit 307a6a8 (bp9 status drift).
+    manager: {status: exists, path: tools/dialogue_manager.py, owner: dialogue}
     schema: {path: bible/37_character_schema.yaml, status: exists}
     validator: {path: tools/dialog_voice_validator.py, status: exists}
     reader: [decision_engine, generator, qa_runtime, tts]
