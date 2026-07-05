@@ -7,6 +7,7 @@ Usage:
   python tools/text_batch_fix.py --apply
 """
 import argparse
+import os
 import sys
 import subprocess
 
@@ -20,37 +21,65 @@ GOLDEN = BASE / "output/ep_01/episode_golden_text.md"
 REGISTRY = BASE / "bible/35_text_fix_registry.yaml"
 
 
+def _atomic_write(path, content):
+    """Write `content` to `path` atomically: write to a sibling .tmp file then
+    os.replace() over the real path. A write interrupted mid-flight (kill /
+    crash / disk full) never leaves `path` half-written — it holds either the
+    OLD full content or the NEW full content, never a partial one."""
+    tmp = path.with_name(path.name + ".tmp")
+    tmp.write_text(content, encoding="utf-8")
+    os.replace(tmp, path)
+
+
 def verify_post_fix(text, verify_rules):
-    """Apply text to episode.md temp + run verify rules."""
+    """Apply text to episode.md (the REAL golden EP01) temp + run verify rules.
+
+    SAFETY: this is the only place in the whole tool/test suite that writes
+    directly into the golden output/ep_01/episode.md. The write+restore MUST
+    be crash-safe:
+      - every write to episode.md/backup goes through _atomic_write() (tmp +
+        os.replace) so a write interrupted mid-flight never leaves a
+        half-written file at the real path.
+      - the mutate + subprocess-verify block runs inside try/finally so that
+        ANY exception (including subprocess.TimeoutExpired or a raised error
+        from subprocess.run) still restores episode.md from backup before
+        the exception propagates. Previously there was no try/finally: an
+        exception between the write (line ~27 pre-fix) and the restore
+        (line ~51 pre-fix) left episode.md permanently overwritten with the
+        probe text.
+    """
     backup = EPISODE.with_suffix(".md.batchfix_bak")
-    backup.write_text(EPISODE.read_text(encoding="utf-8"), encoding="utf-8")
-    EPISODE.write_text(text, encoding="utf-8")
-    subprocess.run([sys.executable, str(BASE / "tools/tts_adapter_pre_render.py"), "--ep", "1", "--apply"],
-                   capture_output=True, timeout=30)
-    tool_map = {
-        "R86": "qa_eol_diacritic.py",
-        "R92b": "qa_honorific.py",
-        "R110": "qa_continuity.py",
-        "R111": "qa_phonetic_safe.py",
-        "R113": "qa_repeat_action.py",
-        "R114": "qa_honorific.py",  # share with R92b
-        "R117": "qa_fact_check.py",
-        "R128": "qa_anti_generic.py",
-        "R141": "qa_ssot_diff.py",
-    }
-    failed = []
-    for rule in set(verify_rules):
-        tool = tool_map.get(rule)
-        if not tool: continue
-        r = subprocess.run([sys.executable, str(BASE / "tools" / tool)],
-                           capture_output=True, text=True, cwd=str(BASE), timeout=60,
-                           encoding="utf-8", errors="ignore")
-        if r.returncode != 0:
-            failed.append(rule)
-    # restore backup
-    EPISODE.write_text(backup.read_text(encoding="utf-8"), encoding="utf-8")
-    backup.unlink()
-    return failed
+    original = EPISODE.read_text(encoding="utf-8")
+    _atomic_write(backup, original)
+    try:
+        _atomic_write(EPISODE, text)
+        subprocess.run([sys.executable, str(BASE / "tools/tts_adapter_pre_render.py"), "--ep", "1", "--apply"],
+                       capture_output=True, timeout=30)
+        tool_map = {
+            "R86": "qa_eol_diacritic.py",
+            "R92b": "qa_honorific.py",
+            "R110": "qa_continuity.py",
+            "R111": "qa_phonetic_safe.py",
+            "R113": "qa_repeat_action.py",
+            "R114": "qa_honorific.py",  # share with R92b
+            "R117": "qa_fact_check.py",
+            "R128": "qa_anti_generic.py",
+            "R141": "qa_ssot_diff.py",
+        }
+        failed = []
+        for rule in set(verify_rules):
+            tool = tool_map.get(rule)
+            if not tool: continue
+            r = subprocess.run([sys.executable, str(BASE / "tools" / tool)],
+                               capture_output=True, text=True, cwd=str(BASE), timeout=60,
+                               encoding="utf-8", errors="ignore")
+            if r.returncode != 0:
+                failed.append(rule)
+        return failed
+    finally:
+        # ALWAYS restore, even if the try block raised (timeout/crash/etc).
+        _atomic_write(EPISODE, backup.read_text(encoding="utf-8"))
+        backup.unlink(missing_ok=True)
 
 
 def main():

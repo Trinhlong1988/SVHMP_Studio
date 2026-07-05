@@ -163,21 +163,53 @@ def case_5_substitute_violates_r111():
     spec.loader.exec_module(tbf)
 
     ep = BASE / "output/ep_01/episode.md"
+    ready = BASE / "output/ep_01/episode_tts_ready.md"
     backup = ep.with_suffix(".md.case5_bak")
+    ready_backup = ready.with_suffix(".md.case5_bak")
     shutil.copy(ep, backup)
+    if ready.exists():
+        shutil.copy(ready, ready_backup)
     try:
         t = ep.read_text(encoding='utf-8')
         bad_text = t.replace("Khải-Phong đang ngồi trên ghế số bảy của chuyến xe đêm.",
                              "Khải-Phong đang ngồi trên ghế số bảy đó cũ.")
+        # NOTE: verify_post_fix() itself writes bad_text into the REAL
+        # output/ep_01/episode.md for the duration of the probe (and, via its
+        # own internal --apply call, also regenerates the REAL
+        # episode_tts_ready.md from that bad_text). It restores episode.md
+        # from its own backup before returning (see tools/text_batch_fix.py),
+        # but it does NOT know about / restore episode_tts_ready.md — that's
+        # this test's job below.
         failed = tbf.verify_post_fix(bad_text, ["R86"])
         assert "R86" in failed, f"R86 should fail on 'cũ.' EOL but didn't"
         print(f"  ✅ Case 5: R86 self-verify caught bad substitute")
     finally:
+        # Restore both real ep_01 files byte-for-byte from the backups taken
+        # BEFORE the probe ran. Do NOT regenerate episode_tts_ready.md by
+        # rerunning tools/tts_adapter_pre_render.py --ep 1 --apply against the
+        # real output/ep_01/ dir: process_ep()'s naive re-derivation does not
+        # byte-match the committed golden episode_tts_ready.md (observed diff
+        # 90+/118- lines), which left permanent uncommitted drift in
+        # output/ep_01/ after every suite run even though the test itself
+        # PASSED. Restoring from backup guarantees `git diff` is empty.
         shutil.copy(backup, ep)
         backup.unlink()
+        if ready_backup.exists():
+            shutil.copy(ready_backup, ready)
+            ready_backup.unlink()
         bad_registry.unlink()
-        subprocess.run([sys.executable, str(BASE / "tools/tts_adapter_pre_render.py"),
-                        "--ep", "1", "--apply"], capture_output=True, timeout=30)
+        # Smoke-check that the pre-render adapter still runs cleanly on the
+        # restored text — but point it at a throwaway tmp copy of the tool +
+        # tree, never at the real output/ep_01/, so the check can never leave
+        # drift in the real repo.
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            (tmp_path / "tools").mkdir()
+            (tmp_path / "output" / "ep_01").mkdir(parents=True)
+            shutil.copy(BASE / "tools/tts_adapter_pre_render.py", tmp_path / "tools" / "tts_adapter_pre_render.py")
+            shutil.copy(ep, tmp_path / "output" / "ep_01" / "episode.md")
+            subprocess.run([sys.executable, str(tmp_path / "tools" / "tts_adapter_pre_render.py"),
+                            "--ep", "1", "--apply"], capture_output=True, timeout=30, cwd=str(tmp_path))
 
 
 def main():

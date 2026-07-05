@@ -5,14 +5,27 @@ FAIL R86: ngã/nặng/hỏi EOL
 FAIL R128: generic AI phrase overuse
 EDGE: phrase ở threshold boundary
 """
+import os
 import subprocess
 import sys
 from pathlib import Path
 
 BASE = Path(__file__).resolve().parent.parent.parent
 EPISODE = BASE / "output/ep_01/episode.md"
+READY = BASE / "output/ep_01/episode_tts_ready.md"
 R86_TOOL = BASE / "tools/qa_eol_diacritic.py"
 R128_TOOL = BASE / "tools/qa_anti_generic.py"
+
+
+def _atomic_write(path, content):
+    """Write atomically (tmp + os.replace) so a write interrupted mid-flight
+    never leaves `path` half-written. See tools/text_batch_fix.py for the
+    same helper — this file has the same golden-EP01-write hazard: it
+    replaces output/ep_01/episode.md with throwaway probe text and must
+    guarantee restore even if a subprocess call raises/times out."""
+    tmp = path.with_name(path.name + ".tmp")
+    tmp.write_text(content, encoding="utf-8")
+    os.replace(tmp, path)
 
 
 def run_tool(tool):
@@ -26,11 +39,18 @@ def run_tool(tool):
 
 def case(name, text, tool, expect_fail):
     orig = EPISODE.read_text(encoding="utf-8")
-    EPISODE.write_text(text, encoding="utf-8")
-    # Rebuild tts_ready
-    subprocess.run([sys.executable, str(BASE / "tools/tts_adapter_pre_render.py"), "--ep", "1", "--apply"],
-                   capture_output=True, cwd=str(BASE), timeout=30)
+    ready_orig = READY.read_text(encoding="utf-8") if READY.exists() else None
     try:
+        _atomic_write(EPISODE, text)
+        # Rebuild tts_ready so the pipeline stays internally consistent for
+        # the duration of the probe. NOTE: this writes into the REAL
+        # output/ep_01/episode_tts_ready.md — the finally block below
+        # restores it byte-for-byte from ready_orig afterwards (process_ep()'s
+        # re-derivation does not byte-match the committed golden file, so
+        # regenerating it "forward" instead of restoring from backup would
+        # leave permanent uncommitted drift after every test run).
+        subprocess.run([sys.executable, str(BASE / "tools/tts_adapter_pre_render.py"), "--ep", "1", "--apply"],
+                       capture_output=True, cwd=str(BASE), timeout=30)
         code, out = run_tool(tool)
         if expect_fail:
             assert code != 0, f"{name} should FAIL: {out[-200:]}"
@@ -39,9 +59,10 @@ def case(name, text, tool, expect_fail):
             assert code == 0, f"{name} should PASS: {out[-200:]}"
             print(f"  ✅ {name}: passed")
     finally:
-        EPISODE.write_text(orig, encoding="utf-8")
-        subprocess.run([sys.executable, str(BASE / "tools/tts_adapter_pre_render.py"), "--ep", "1", "--apply"],
-                       capture_output=True, cwd=str(BASE), timeout=30)
+        # ALWAYS restore, even if the try block raised (timeout/crash/etc).
+        _atomic_write(EPISODE, orig)
+        if ready_orig is not None:
+            _atomic_write(READY, ready_orig)
 
 
 def main():
