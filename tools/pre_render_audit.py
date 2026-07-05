@@ -5,7 +5,7 @@ Check R84 mandatory:
 2. High-freq word audit
 3. Cross-chunk 3-gram repeat (R74.2)
 4. Open-vowel tail check (R76)
-5. Em-dash check (R75)
+5. Em-dash check (R70 — bible/00 R70_em_dash_prosody_explicit_pause_hardlock; "R75" renamed away to proper_noun_anaphora, no longer em-dash)
 6. Pause > 1500ms check
 7. Tempo factor consistency (R71/R82)
 8. Emo_vector consistency (R82)
@@ -69,7 +69,7 @@ def audit(spec_path):
     for i,c in enumerate(chunks):
         t = c.get('text','') if isinstance(c,dict) else c
         if '—' in t:
-            issues['MED'].append(f'R75 ch{i} em-dash')
+            issues['MED'].append(f'R70 ch{i} em-dash')
 
     # 6. Pause > 1500ms
     for i,c in enumerate(chunks):

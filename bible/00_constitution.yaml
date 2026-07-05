@@ -690,7 +690,10 @@ R70_em_dash_prosody_explicit_pause_hardlock:
     SVHMP horror dùng nhiều em-dash để pause dramatic → bị flat trong audio.
   exception: "Dialogue dash giữa speaker (— Cô ấy đi rồi.) giữ nguyên"
   enforcement: "Pre-render TTS adapter: scan em-dash narrative position → insert [pause:250ms] marker"
-  cross_ref: [R75 em-dash không pause TTS memory 26/6]
+  # cross_ref cũ trỏ "R75 em-dash" đã sai từ khi R75 đổi nghĩa thành
+  # R75_proper_noun_anaphora_hardlock (xem dòng ~471, "Renamed from R69") —
+  # không còn liên quan em-dash. Check này tự quản lý, không còn rule
+  # riêng trong bible/00 quản lý em-dash — đã xoá cross_ref sai (fix HIGH finding 5/7).
 
 R69_number_reading_vietnamese_chu_hardlock:
   # round 18 add 2026-06-28 — Agent 2 gap: IndexTTS2 reads "7" as English "seven" ~12%
