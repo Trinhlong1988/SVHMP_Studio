@@ -20,6 +20,10 @@ sys.stdout.reconfigure(encoding='utf-8') if hasattr(sys.stdout, 'reconfigure') e
 
 SVHMP = Path(__file__).resolve().parents[1]
 
+# Single source of truth (deep-audit HIGH fix: 4 tool tung tu dinh nghia pattern
+# "Hà" lech nhau -> cung 1 doan van PASS gate nay, FAIL gate kia). Xem tools/ha_patterns.py.
+from ha_patterns import FORBIDDEN_HA_PATTERNS
+
 INTRO_ELEMENTS = [
     # 2026-06-30 R108 brand: "Hắc Dạ Ký" plain (Mr.Long revert comma 10:42 — comma pause quá xa)
     'Hắc Dạ Ký',
@@ -27,18 +31,6 @@ INTRO_ELEMENTS = [
     'Loạt truyện',
     'Chuyến xe cuối cùng về đâu',
     'chuyến xe chưa kịp nói lời tạm biệt',
-]
-
-FORBIDDEN_HA_PATTERNS = [
-    r'\btên Hà\b',
-    r'\bcô Hà\b',
-    r'\byêu Hà\b',
-    r'\bHà mất\b',
-    r'\bHà chết\b',
-    r'\bHà tai nạn\b',
-    r'\bvới Hà\b',
-    r'\bcho Hà\b',
-    r'\bcủa Hà\b',
 ]
 
 def check_ep(ep_number):

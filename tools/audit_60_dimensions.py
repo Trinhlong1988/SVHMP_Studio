@@ -21,6 +21,10 @@ sys.stdout.reconfigure(encoding='utf-8') if hasattr(sys.stdout, 'reconfigure') e
 
 SVHMP = Path(__file__).resolve().parents[1]
 
+# Single source of truth (deep-audit HIGH fix: 4 tool tung tu dinh nghia pattern
+# "Hà" lech nhau -> cung 1 doan van PASS gate nay, FAIL gate kia). Xem tools/ha_patterns.py.
+from ha_patterns import FORBIDDEN_HA_PATTERNS
+
 # ============================================================
 # CONSTANTS
 # ============================================================
@@ -218,8 +222,8 @@ def check_ep_60(ep_num, text, all_eps):
     exor_v = sum(1 for p in NEVER_EXORCISM if p in body_lower)
     results.append(('3.6 NEVER exorcism', exor_v, 'HIGH' if exor_v else 'OK'))
 
-    # 3.7 Naked Hà leak
-    naked_ha = sum(1 for p in [r'\byêu Hà\b', r'\btên Hà\b', r'\bcô Hà\b', r'\bHà tai nạn\b'] if re.search(p, body))
+    # 3.7 Naked Hà leak (single source: tools/ha_patterns.py)
+    naked_ha = sum(1 for p in FORBIDDEN_HA_PATTERNS if re.search(p, body))
     results.append(('3.7 naked Hà leak', naked_ha, 'HIGH' if naked_ha else 'OK'))
 
     # 3.8 Quang leak (rename check)
