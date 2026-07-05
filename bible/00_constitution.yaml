@@ -1829,13 +1829,21 @@ changelog:
 # ============================================================
 
 rule_R110_narrative_continuity:
+  status: BUILT
   description: "Object location tracker + scene physics + character count consistency"
   enforce: "tools/qa_continuity.py GATE PASS before render"
   trigger_examples:
     - "L488 'tay vẫn ôm đồng hồ' contradict L444 'rơi xuống ghế'"
     - "2 cô gái ngồi ghế 7 (PAYOFF + CLIFFHANGER duplicate)"
+  codified_from_test:
+    date: "2026-06-30 Round 19.32 (CMD LEAD bible_audit fill_stub)"
+    source: "docstring extract từ tools/qa_continuity.py"
+    rule_detail: "Narrative continuity hardlock — KHÔNG cho phép contradiction trong cùng EP: object location (đồng hồ, radio, giấy gấp tư) / scene physics (xe dừng/chạy, cửa xe mở/đóng) / character count (cô gái ghế 7/8, ông cụ) / NOT-X sau X."
+    why: "Audience lose trust khi text contradict (vd L488 'tay vẫn ôm đồng hồ' khi L444 'rơi xuống ghế'). Mr.Long catch session 30/6 00:48."
+    test_evidence: tests/regression/regression_report.json
 
 rule_R111_tts_phonetic_safe:
+  status: BUILT
   description: "BigVGAN phù phù safe-word database — aspirated 'h' sau open vowel"
   enforce: "tools/qa_phonetic_safe.py GATE PASS before render"
   forbidden_patterns:
@@ -1845,15 +1853,28 @@ rule_R111_tts_phonetic_safe:
     - "cao vút. → use 'thật cao,'"
     - "ghế trống số bảy đó. → use 'chiếc ghế bỏ trống số bảy,'"
     - "kể lại bao giờ → use 'kể ra lần nào'"
+  codified_from_test:
+    date: "2026-06-30 Round 19.32 (CMD LEAD bible_audit fill_stub)"
+    source: "docstring extract từ tools/qa_phonetic_safe.py"
+    rule_detail: "TTS phonetic safe-word audit — BigVGAN vocoder tạo 'phù phù' artifact với: aspirated consonant 'h' sau open vowel (thở ra, hơi thở) / long open vowel + period (an toàn., cao vút.) / short fragment EOL aspirated (cabin., cánh., phút.)."
+    why: "Voice render TTS bị aspirated artifact perceptual unpleasant. Mr.Long catch L380 cabin / L402 khoang / L468 cao vút session 30/6."
+    test_evidence: tests/regression/regression_report.json
 
 rule_R112_cross_section_repeat:
   description: "Phrase ≥4 words KHÔNG được lặp xuyên section, except intentional anchor"
   enforce: "extend qa_honorific.py (TBD)"
 
 rule_R113_action_verb_repeat:
+  status: BUILT
   description: "1 action verb phrase ≥3 từ KHÔNG được lặp >2 lần/EP cùng wording"
   enforce: "tools/qa_repeat_action.py GATE PASS before render"
   varied_required: "Lặp >2 lần PHẢI varied wording (chủ ý + uyển chuyển)"
+  codified_from_test:
+    date: "2026-06-30 Round 19.32 (CMD LEAD bible_audit fill_stub)"
+    source: "docstring extract từ tools/qa_repeat_action.py"
+    rule_detail: "Action verb repeat hardlock — 1 action phrase ≥3 từ KHÔNG được lặp >2 lần / EP cùng wording. Nếu cần lặp >2 phải VARIED wording (chủ ý + uyển chuyển)."
+    why: "Pattern Mr.Long catch session 30/6 01:09: 'liếc gương chiếu hậu' x4 / 'cúi xuống' x5 / 'thở ra' x6 không varied → reader feel mechanical."
+    test_evidence: tests/regression/regression_report.json
 
 rule_R114_clarity_mandatory:
   description: "Hành động + lời nói phải RÕ NGHĨA, trừ chủ ý ẩn cốt truyện hoặc lời nói ẩn ý gây tò mò"
@@ -1903,9 +1924,17 @@ session_30_6_master_lock:
 # ============================================================
 
 rule_R117_fact_database:
-  status: TBD
+  status: BUILT   # sua tu TBD (4/7, kiem duyet doi chieu chuan bi tra no #1): tool qa_fact_check.py
+  # da ton tai + wired that vao tools/publish_score.py dong 29 ("R117 fact database", weight 100)
+  # — TBD la stale, viet luc chua build, khong ai cap nhat sau khi xong.
   description: "bible/27_fact_db.yaml — character age/height/relations/locations/times lock immutable"
-  enforce: "writer NEVER modify, QA diff-check fact_db vs episode"
+  enforce: "tools/qa_fact_check.py GATE PASS — wired tools/publish_score.py (R117 fact database, weight 100)"
+  codified_from_test:
+    date: "2026-06-30 Round 19.32 (CMD LEAD bible_audit fill_stub)"
+    source: "docstring extract từ tools/qa_fact_check.py"
+    rule_detail: "Fact Database check — Episode text PHẢI khớp bible/27_fact_db.yaml. KHÔNG cho phép drift fact (names, ages, dates, locations, dialogue lines)."
+    why: "Cross-episode consistency critical cho series 90 EPs. Drift fact = continuity error."
+    test_evidence: tests/regression/regression_report.json
 
 rule_R118_timeline_qa:
   status: TBD
@@ -1950,10 +1979,19 @@ rule_R127_sentence_rhythm:
   description: "Length variance 8/17/5/23/11 — KHÔNG đều 18 từ"
 
 rule_R128_anti_generic_ai:
-  status: TBD
+  status: BUILT   # sua tu TBD (4/7, kiem duyet doi chieu chuan bi tra no #1): tool qa_anti_generic.py
+  # da ton tai + wired that vao tools/publish_score.py dong 30 ("R128 anti-generic AI", weight 100)
+  # — TBD la stale, viet luc chua build, khong ai cap nhat sau khi xong.
   priority: CRITICAL
   description: "Cấm 'Một cảm giác khó tả' / 'Không ai biết rằng' / 'Trong khoảnh khắc ấy' / 'Có lẽ' (≤2 lần/EP)"
-  
+  enforce: "tools/qa_anti_generic.py GATE PASS — wired tools/publish_score.py (R128 anti-generic AI, weight 100)"
+  codified_from_test:
+    date: "2026-06-30 Round 19.32 (CMD LEAD bible_audit fill_stub)"
+    source: "docstring extract từ tools/qa_anti_generic.py"
+    rule_detail: "Anti-Generic AI Detection — Cấm/giới hạn cụm sáo AI: 'Một cảm giác khó tả' / 'Không ai biết rằng' / 'Trong khoảnh khắc ấy' / 'Có lẽ...' / 'Từ đó về sau' / 'Bỗng nhiên' overuse / 'im lặng' / 'lạnh sống lưng' / 'rợn người' / 'rùng mình' / 'nuốt nước bọt'. Threshold: mỗi cụm max 1 lần / EP (trừ chủ ý)."
+    why: "Sáo từ AI làm content sound generic / template-y. Ngọc Ngạn style yêu cầu specific imagery, KHÔNG abstract cliché."
+    test_evidence: tests/regression/regression_report.json
+
 rule_R129_continuity_ledger:
   status: TBD
   description: "object state by timestamp yaml — đèn pin 22:10 cầm, 22:20 rơi, 22:35 KHÔNG xuất hiện"
@@ -2003,10 +2041,6 @@ rule_R140_publish_score:
   priority: CRITICAL
   description: "Gate ship: Logic≥90, Language≥85, Repetition≤threshold, TTS≥90, Hook≥85"
 
-rule_R141_diff_check:
-  status: TBD
-  description: "Bản rewrite vs cũ — flag fact drift"
-
 rule_R144_outline_kill_switch:
   status: TBD
   priority: CRITICAL
@@ -2014,6 +2048,14 @@ rule_R144_outline_kill_switch:
   note: "Đổi từ R142 (per Mr.Long authorization 2026-07-04, audit dup-key 4/7): R142 dup-key với
     bản Publish Score (session 30/6 dòng dưới, status PARTIAL, có gate thật publish_score.py) —
     giữ R142 = bản Publish Score; ý tưởng outline-stage (chưa build) dời sang R144."
+
+rule_R145_diff_check:
+  status: TBD
+  description: "Bản rewrite vs cũ — flag fact drift"
+  note: "Đổi từ R141 (per Mr.Long authorization 2026-07-05, audit dup-key 5/7): R141 trùng số hiệu với
+    bản SSOT Diff Check (session 30/6 dòng dưới, status BUILT, tool tools/qa_ssot_diff.py thật đang
+    chạy) — giữ R141 = bản SSOT Diff Check đã build; ý tưởng diff-check phác thảo (chưa build,
+    status TBD) dời sang R145."
 
 # Mr.Long blueprint commitment 30/6
 blueprint_commitment:
@@ -2031,6 +2073,12 @@ rule_R141_ssot_diff_check:
   tool: tools/qa_ssot_diff.py
   description: "Post-edit episode.md diff vs bible/27_fact_db.yaml. Flag fact drift."
   implements: Principle 3 (SSOT) + Principle 4 (AI không quyết Fact)
+  codified_from_test:
+    date: "2026-06-30 Round 19.32 (CMD LEAD bible_audit fill_stub)"
+    source: "docstring extract từ tools/qa_ssot_diff.py"
+    rule_detail: "SSOT Diff Check — Episode current vs bible/27_fact_db.yaml (Single Source of Truth). Names / numbers / locations / dialogue / color descriptions PHẢI exact match. Flag ANY fact drift."
+    why: "Extend R117 — verify mọi field cụ thể (vd Hạ-Vy = áo gió xanh nhạt KHÔNG drift). PING claim 11:48 Round 19.6 codify."
+    test_evidence: tests/regression/regression_report.json
 
 rule_R142_kill_switch:
   status: PARTIAL (publish_score gate fails → exit 1, but render orchestrator chưa enforce)
@@ -2755,62 +2803,11 @@ rule_R185_corpus_collocation_db:
   status: PLANNING
 
 
-# === FLUSHED FROM REGRESSION TEST by CMD LEAD ===
-
-R110_codified_from_test:
-  # CODIFIED 2026-06-30 Round 19.32 by CMD LEAD bible_audit fill_stub
-  # Source: docstring extract từ tools/qa_continuity.py
-  rule: "Narrative continuity hardlock — KHÔNG cho phép contradiction trong cùng EP: object location (đồng hồ, radio, giấy gấp tư) / scene physics (xe dừng/chạy, cửa xe mở/đóng) / character count (cô gái ghế 7/8, ông cụ) / NOT-X sau X."
-  why: |
-    Audience lose trust khi text contradict (vd L488 'tay vẫn ôm đồng hồ' khi L444 'rơi xuống ghế'). Mr.Long catch session 30/6 00:48.
-  detection: tools/qa_continuity.py
-  test_evidence: tests/regression/regression_report.json
-  status: filled_from_docstring_pending_cmd_thuc_thi_full_review
-R111_codified_from_test:
-  # CODIFIED 2026-06-30 Round 19.32 by CMD LEAD bible_audit fill_stub
-  # Source: docstring extract từ tools/qa_phonetic_safe.py
-  rule: "TTS phonetic safe-word audit — BigVGAN vocoder tạo 'phù phù' artifact với: aspirated consonant 'h' sau open vowel (thở ra, hơi thở) / long open vowel + period (an toàn., cao vút.) / short fragment EOL aspirated (cabin., cánh., phút.)."
-  why: |
-    Voice render TTS bị aspirated artifact perceptual unpleasant. Mr.Long catch L380 cabin / L402 khoang / L468 cao vút session 30/6.
-  detection: tools/qa_phonetic_safe.py
-  test_evidence: tests/regression/regression_report.json
-  status: filled_from_docstring_pending_cmd_thuc_thi_full_review
-R113_codified_from_test:
-  # CODIFIED 2026-06-30 Round 19.32 by CMD LEAD bible_audit fill_stub
-  # Source: docstring extract từ tools/qa_repeat_action.py
-  rule: "Action verb repeat hardlock — 1 action phrase ≥3 từ KHÔNG được lặp >2 lần / EP cùng wording. Nếu cần lặp >2 phải VARIED wording (chủ ý + uyển chuyển)."
-  why: |
-    Pattern Mr.Long catch session 30/6 01:09: 'liếc gương chiếu hậu' x4 / 'cúi xuống' x5 / 'thở ra' x6 không varied → reader feel mechanical.
-  detection: tools/qa_repeat_action.py
-  test_evidence: tests/regression/regression_report.json
-  status: filled_from_docstring_pending_cmd_thuc_thi_full_review
-R117_codified_from_test:
-  # CODIFIED 2026-06-30 Round 19.32 by CMD LEAD bible_audit fill_stub
-  # Source: docstring extract từ tools/qa_fact_check.py
-  rule: "Fact Database check — Episode text PHẢI khớp bible/27_fact_db.yaml. KHÔNG cho phép drift fact (names, ages, dates, locations, dialogue lines)."
-  why: |
-    Cross-episode consistency critical cho series 90 EPs. Drift fact = continuity error.
-  detection: tools/qa_fact_check.py
-  test_evidence: tests/regression/regression_report.json
-  status: filled_from_docstring_pending_cmd_thuc_thi_full_review
-R128_codified_from_test:
-  # CODIFIED 2026-06-30 Round 19.32 by CMD LEAD bible_audit fill_stub
-  # Source: docstring extract từ tools/qa_anti_generic.py
-  rule: "Anti-Generic AI Detection — Cấm/giới hạn cụm sáo AI: 'Một cảm giác khó tả' / 'Không ai biết rằng' / 'Trong khoảnh khắc ấy' / 'Có lẽ...' / 'Từ đó về sau' / 'Bỗng nhiên' overuse / 'im lặng' / 'lạnh sống lưng' / 'rợn người' / 'rùng mình' / 'nuốt nước bọt'. Threshold: mỗi cụm max 1 lần / EP (trừ chủ ý)."
-  why: |
-    Sáo từ AI làm content sound generic / template-y. Ngọc Ngạn style yêu cầu specific imagery, KHÔNG abstract cliché.
-  detection: tools/qa_anti_generic.py
-  test_evidence: tests/regression/regression_report.json
-  status: filled_from_docstring_pending_cmd_thuc_thi_full_review
-R141_codified_from_test:
-  # CODIFIED 2026-06-30 Round 19.32 by CMD LEAD bible_audit fill_stub
-  # Source: docstring extract từ tools/qa_ssot_diff.py
-  rule: "SSOT Diff Check — Episode current vs bible/27_fact_db.yaml (Single Source of Truth). Names / numbers / locations / dialogue / color descriptions PHẢI exact match. Flag ANY fact drift."
-  why: |
-    Extend R117 — verify mọi field cụ thể (vd Hạ-Vy = áo gió xanh nhạt KHÔNG drift). PING claim 11:48 Round 19.6 codify.
-  detection: tools/qa_ssot_diff.py
-  test_evidence: tests/regression/regression_report.json
-  status: filled_from_docstring_pending_cmd_thuc_thi_full_review
+# === (5/7: 6 entry "*_codified_from_test" companion đã GỘP vào rule_R{N}_xxx chính
+# (R110/111/113/117/128/141) theo trường codified_from_test — per Mr.Long authorization,
+# audit dup-key 4/7-5/7. Không mất nội dung — xem field codified_from_test trong mỗi rule.
+# R141_diff_check (TBD, ý tưởng phác thảo trùng số với bản BUILT R141_ssot_diff_check) đã
+# đổi số sang R145_diff_check — xem rule_R145_diff_check + note giải thích. ===
 
 
 # ============================================================
