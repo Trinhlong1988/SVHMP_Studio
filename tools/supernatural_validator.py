@@ -5,6 +5,14 @@ reports/G5_HANDOFF_G8.md). Enum sensitivity doc TRUC TIEP tu
 governance/blueprint/bp9/content_policy.yaml (KHONG hardcode list — neu BP9 mo
 rong enum, validator nay tu dong theo, khong can sua code).
 
+R211 RECONCILE (2026-07-05, fix/g5-4-possession-dup): possession KHONG con la state
+machine rieng trong runtime/supernatural_state_machine.yaml (da bi audit xac nhan
+la nhan doi voi entity 'ghost' cua governance/blueprint/bp4/state_machines.yaml).
+check_possession_state_machine() gio doc THANG tu bp4/state_machines.yaml entity
+'ghost' (da duoc MO RONG them state 'entering'/'exorcising' de gia dung ngu nghia
+possession) — xem note tai bp4/state_machines.yaml#entity=ghost va
+reports/G5_FIX_POSSESSION_DEDUP.md.
+
 Mutation coverage (TASK_G5 "MUTATION AUDIT SE BAN"):
   M1 nang luc ngoai typology -> check_claimed_powers()
   M2 nghi le khong map cultural_spec (bp7 facet ma) -> check_typology()
@@ -22,7 +30,8 @@ import yaml
 
 SVHMP = Path(__file__).resolve().parent.parent
 TYPOLOGY = SVHMP / 'governance' / 'proposals' / 'supernatural_typology_proposal.yaml'
-STATE_MACHINE = SVHMP / 'runtime' / 'supernatural_state_machine.yaml'
+STATE_MACHINE = SVHMP / 'governance' / 'blueprint' / 'bp4' / 'state_machines.yaml'
+POSSESSION_ENTITY = 'ghost'
 CULTURAL_SPEC = SVHMP / 'governance' / 'blueprint' / 'bp7' / 'cultural_spec.yaml'
 CONTENT_POLICY = SVHMP / 'governance' / 'blueprint' / 'bp9' / 'content_policy.yaml'
 
@@ -82,21 +91,39 @@ def _reachable_to(edges, target):
     return reach
 
 
+def _find_state_machine_entity(data, entity_name):
+    for m in (data.get('state_machines') or []):
+        if m.get('entity') == entity_name:
+            return m
+    return None
+
+
 def check_possession_state_machine(sm=None):
-    """M3: moi state (tru 'released') phai co duong toi 'released' — chong treo mai."""
+    """M3: moi state (tru 'released') phai co duong toi 'released' — chong treo mai.
+
+    R211 RECONCILE: possession KHONG con la key 'possession_state_machine' rieng —
+    doc THANG tu bp4/state_machines.yaml entity 'ghost' (da MO RONG them state
+    'entering'/'exorcising' de chi tiet hoa qua trinh possession, xem note tai
+    bp4/state_machines.yaml#entity=ghost)."""
     data = sm if sm is not None else _load(STATE_MACHINE)
-    psm = data.get('possession_state_machine') or {}
-    states = psm.get('states') or []
-    transitions = psm.get('transitions') or []
+    entity = _find_state_machine_entity(data, POSSESSION_ENTITY)
     errs = []
+    if entity is None:
+        errs.append(f"bp4/state_machines.yaml: khong tim thay entity {POSSESSION_ENTITY!r} "
+                    "(possession reconcile)")
+        return errs
+    states = entity.get('states') or []
+    transitions = entity.get('transitions') or []
     if 'released' not in states:
-        errs.append("possession_state_machine: khong co state 'released' (khong the truc xuat)")
+        errs.append(f"{POSSESSION_ENTITY} state machine: khong co state 'released' "
+                    "(khong the truc xuat)")
         return errs
     edges = [(t['from'], t['to']) for t in transitions]
     reach = _reachable_to(edges, 'released')
     stuck = [s for s in states if s != 'released' and s not in reach]
     if stuck:
-        errs.append(f"possession state {stuck} KHONG co duong toi 'released' (M3 treo mai)")
+        errs.append(f"{POSSESSION_ENTITY} state {stuck} KHONG co duong toi 'released' "
+                    "(M3 treo mai)")
     return errs
 
 
