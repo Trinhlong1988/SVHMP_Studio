@@ -1,4 +1,4 @@
-﻿schema_version: 2
+schema_version: 2
 generated: '2026-06-27'
 generator: tools/gen_100_passenger.py
 constitution_compliance:
@@ -2659,6 +2659,12 @@ passengers:
     region_dialect: bac
     hometown: Hà Nội
     pronoun_system: em
+    speaking_speed: vua
+    catchphrase: thôi thì đằng nào cũng vậy rồi
+    forbidden_words:
+    - yêu đương
+    - tình cũ
+    dialogue_sample: Tôi chỉ muốn nói một câu cảm ơn thôi, mà giờ muộn quá rồi.
   death:
     type: khong_ro
     pain: Chia tay hôn phu (kỹ sư cầu Long Biên) 1 tháng trước cưới vì yêu người khác; 4 năm sau biết anh mất (sạt lở núi
@@ -2697,6 +2703,12 @@ passengers:
     region_dialect: bac
     hometown: Hà Nội
     pronoun_system: tôi
+    speaking_speed: cham
+    catchphrase: con xin lỗi bố
+    forbidden_words:
+    - đơn giản
+    - nhỏ nhặt
+    dialogue_sample: Bố dặn con mỗi ngày tưới cúc, mà con để cúc khô rồi mới nhớ ra.
   death:
     type: khong_ro
     pain: Hứa cha (mất vì ung thư phổi) sẽ chăm vườn cúc cha trồng 4 năm bằng tay — vườn chết trong 6 tháng vì công việc bận,
@@ -2726,6 +2738,12 @@ passengers:
     region_dialect: bac
     hometown: Hà Nội
     pronoun_system: em
+    speaking_speed: cham
+    catchphrase: hôm khác — giá mà không có hôm khác
+    forbidden_words:
+    - chuyện nhỏ
+    - vô tình
+    dialogue_sample: Tôi cứ nghĩ hôm khác cho cụ cũng được, ai ngờ hôm khác không bao giờ tới.
   death:
     type: khong_ro
     pain: 30 năm trước từ chối mua phở cho cụ ăn xin (cụ Mai) vì nghĩ 'hôm khác' — cụ chết đói ngay đêm đó; giữ khăn thêu
@@ -2762,6 +2780,12 @@ passengers:
     region_dialect: bac
     hometown: Hà Nội
     pronoun_system: em
+    speaking_speed: vua
+    catchphrase: giá như con đừng cãi mẹ
+    forbidden_words:
+    - cãi vã
+    - giận dỗi
+    dialogue_sample: Con chỉ giận mẹ một tháng thôi mà, ai ngờ một tháng đó mẹ đã đi rồi.
   death:
     type: khong_ro
     pain: Cãi mẹ vì phản đối bạn trai (anh Hùng) — giận không về nhà 1 tháng — mẹ đột tử (nhồi máu cơ tim) khi đang tưới cúc,
@@ -2789,6 +2813,12 @@ passengers:
     region_dialect: bac
     hometown: Hà Nội
     pronoun_system: tôi
+    speaking_speed: cham
+    catchphrase: giá tôi nghe máy sớm hơn
+    forbidden_words:
+    - bận rộn
+    - công việc
+    dialogue_sample: Toàn gọi tôi ba lần, tôi cứ để đó, giờ nghĩ lại tôi hối không kịp.
   death:
     type: khong_ro
     pain: Bạn thân từ tiểu học (Toàn) nhắn tin xin vay 200 triệu chữa ung thư gan — trì hoãn vì bận họp, chỉ xoay được 100
@@ -2824,6 +2854,12 @@ passengers:
     region_dialect: bac
     hometown: Hà Nội
     pronoun_system: tôi
+    speaking_speed: vua
+    catchphrase: giờ thì tôi ổn rồi
+    forbidden_words:
+    - thất bại
+    - vô dụng
+    dialogue_sample: Đêm đó tôi tưởng mình xong rồi, nhìn vào gương vỡ tôi lại thấy mình còn muốn sống.
   death:
     type: khong_ro
     pain: 10 nam truoc dinh tu tu vi bo that vong thi truot Bach Khoa — thay minh trong guong vo, chon goi cap cuu thay vi
@@ -2853,6 +2889,12 @@ passengers:
     region_dialect: bac
     hometown: Hà Nội
     pronoun_system: em
+    speaking_speed: cham
+    catchphrase: mẹ ép, nhưng em cũng yếu lòng
+    forbidden_words:
+    - dứt khoát
+    - quyết định đúng
+    dialogue_sample: Em nghe lời mẹ chia tay anh, em cứ tưởng vậy là xong, ai ngờ anh không qua được.
   death:
     type: khong_ro
     pain: Chia tay anh Khang vi me ep — anh tu tu sau do; chua doc sau chi tiet vat (context-level evidence)
@@ -2882,6 +2924,11 @@ passengers:
     region_dialect: bac
     hometown: Hà Nội
     pronoun_system: em
+    speaking_speed: vua
+    catchphrase: tôi ngại, tôi xin lỗi vì tôi ngại
+    forbidden_words:
+    - bận việc riêng
+    dialogue_sample: Ngày đưa tang bạn, tôi viện cớ bận, thật ra tôi chỉ ngại đối mặt thôi.
   death:
     type: khong_ro
     pain: Ngai di tang ban vi ly do ca nhan — ban chet co don, khong ai o ben
@@ -2911,6 +2958,12 @@ passengers:
     region_dialect: bac
     hometown: Hà Nội
     pronoun_system: tôi
+    speaking_speed: nhanh
+    catchphrase: tôi cứ tưởng thành công là đủ
+    forbidden_words:
+    - thành tựu
+    - sự nghiệp
+    dialogue_sample: Tôi mải chạy theo công việc, đến lúc ngoảnh lại thì người ấy không còn chờ tôi nữa.
   death:
     type: khong_ro
     pain: Danh mat cam giac ve chinh minh — quen nguoi yeu vi mai theo duoi su nghiep
@@ -2941,6 +2994,12 @@ passengers:
     region_dialect: bac
     hometown: Nam Định
     pronoun_system: tôi
+    speaking_speed: cham
+    catchphrase: tôi chưa từng biết mặt mẹ
+    forbidden_words:
+    - ảnh chụp
+    - kỷ niệm
+    dialogue_sample: Cả đời tôi không có lấy một tấm hình của mẹ, chỉ nghe bố kể lại thôi.
   death:
     type: khong_ro
     pain: Me mat khi sinh minh ra — khong co lay 1 tam anh cua me de lai
@@ -2971,6 +3030,12 @@ passengers:
     region_dialect: bac
     hometown: Bắc Ninh
     pronoun_system: em
+    speaking_speed: vua
+    catchphrase: con hứa rồi lại khất
+    forbidden_words:
+    - bận công tác
+    - để sau
+    dialogue_sample: Con cứ hẹn thầy năm sau, năm sau nữa, mười năm trôi qua lúc nào không hay.
   death:
     type: khong_ro
     pain: Hua voi thay dai hoc se ve tham — muoi nam chua ve
@@ -2999,6 +3064,12 @@ passengers:
     region_dialect: bac
     hometown: Hải Phòng
     pronoun_system: tôi
+    speaking_speed: cham
+    catchphrase: tôi cứ chờ đúng lúc
+    forbidden_words:
+    - dại dột
+    - yếu đuối
+    dialogue_sample: Tôi chờ đúng thời điểm để nói, chờ hai mươi năm thì thời điểm đó không còn nữa.
   death:
     type: khong_ro
     pain: Yeu tham thu ky hai muoi nam, chua tung to tinh
@@ -3029,6 +3100,12 @@ passengers:
     region_dialect: bac
     hometown: Hà Nội
     pronoun_system: em
+    speaking_speed: cham
+    catchphrase: giá tôi nhận lời dạy cháu
+    forbidden_words:
+    - phiền phức
+    - không rảnh
+    dialogue_sample: Cháu nhờ tôi kèm học có một lần, tôi từ chối, ai ngờ đó là lần duy nhất cháu còn hỏi tôi.
   death:
     type: khong_ro
     pain: Tu choi day hoc cho chau ho — chau mat tre
@@ -3060,6 +3137,11 @@ passengers:
     region_dialect: bac
     hometown: Hà Nội
     pronoun_system: tôi
+    speaking_speed: cham
+    catchphrase: biết vậy tôi đã khám sớm
+    forbidden_words:
+    - chắc không sao đâu
+    dialogue_sample: Tôi cứ nghĩ chắc không sao đâu, hút thêm điếu nữa cũng chẳng chết ai, ai ngờ.
   death:
     type: khong_ro
     pain: Ung thu phoi giai doan 3 nam 36 tuoi (hut thuoc+ruou 20 nam, khong kham dinh ky) — phau thuat cat nua phoi trai,
@@ -3091,6 +3173,12 @@ passengers:
     region_dialect: bac
     hometown: Hà Nội
     pronoun_system: tôi
+    speaking_speed: vua
+    catchphrase: con sợ mình không bằng bố
+    forbidden_words:
+    - nối nghiệp
+    - kế thừa
+    dialogue_sample: Con cứ sợ vẽ không đẹp bằng bố nên con bỏ nghề, giờ nghĩ lại con tiếc lắm.
   death:
     type: khong_ro
     pain: Bo la kien truc su mat — con ngai hoc theo nghe cha
@@ -3120,6 +3208,12 @@ passengers:
     region_dialect: bac
     hometown: Hà Nội
     pronoun_system: em
+    speaking_speed: vua
+    catchphrase: em cứ định về mà chưa kịp
+    forbidden_words:
+    - định làm
+    - sẽ về sau
+    dialogue_sample: Em cứ hẹn về khám cho chị, hẹn hoài mà chưa kịp về thì chị đã đi.
   death:
     type: khong_ro
     pain: Hua voi ban tieu hoc giup chua benh — di nuoc ngoai quen mat
@@ -3150,6 +3244,12 @@ passengers:
     region_dialect: bac
     hometown: Hà Nội
     pronoun_system: tôi
+    speaking_speed: cham
+    catchphrase: ba mươi năm rồi mà chưa nói được câu nào
+    forbidden_words:
+    - ly dị
+    - chia tay
+    dialogue_sample: Tôi định gặp bà ấy nói một câu cảm ơn, mà chưa kịp gặp thì bà ấy đã mất rồi.
   death:
     type: khong_ro
     pain: Ly hon vo 30 nam truoc — vo vua mat, chua kip noi loi gi
@@ -3178,6 +3278,12 @@ passengers:
     region_dialect: bac
     hometown: Hà Nội
     pronoun_system: em
+    speaking_speed: cham
+    catchphrase: giá em thử khám xem có hợp không
+    forbidden_words:
+    - ngại
+    - sợ kim tiêm
+    dialogue_sample: Em cứ ngại đi khám xem có hợp không, ngại có một lần mà giờ ân hận cả đời.
   death:
     type: khong_ro
     pain: Tu choi hien mau cho ban cung phong nam 2017 — ban chet
@@ -3210,6 +3316,12 @@ passengers:
     region_dialect: bac
     hometown: Hà Nội
     pronoun_system: em
+    speaking_speed: cham
+    catchphrase: mẹ chỉ kịp dạy con có vậy
+    forbidden_words:
+    - muộn
+    - quá trễ
+    dialogue_sample: Mỗi tháng con đều đem cúc lên mộ mẹ, coi như lời cảm ơn con chưa kịp nói.
   death:
     type: khong_ro
     pain: Me mat thang tu muoi ba nam truoc — con dem hoa cuc len mo moi thang
@@ -3240,6 +3352,12 @@ passengers:
     region_dialect: bac
     hometown: Hà Nội
     pronoun_system: tôi
+    speaking_speed: cham
+    catchphrase: chăn chưa đan xong, tôi chưa đắp được
+    forbidden_words:
+    - kỷ niệm cưới
+    - mười năm
+    dialogue_sample: Chăn em đan dở dang, tôi cũng chưa đắp được, hai phía đều dở, vậy mới đúng.
   death:
     type: khong_ro
     pain: Vo mat dot ngot thang tu (tai nan/benh chua ro) — chan vo dang may con do dang
@@ -3269,6 +3387,12 @@ passengers:
     region_dialect: bac
     hometown: Hà Nội
     pronoun_system: em
+    speaking_speed: vua
+    catchphrase: em cứ hẹn lần sau
+    forbidden_words:
+    - bận việc
+    - để dịp khác
+    dialogue_sample: Em hẹn chị lên Hà Nội đi tàu điện, hẹn hoài mà chưa kịp đưa chị đi.
   death:
     type: khong_ro
     pain: Hua dua ban que len Ha Noi di tau dien — ban mat truoc khi kip thuc hien
@@ -3298,6 +3422,12 @@ passengers:
     region_dialect: bac
     hometown: Hà Nội
     pronoun_system: tôi
+    speaking_speed: cham
+    catchphrase: mười năm tôi chưa thắp cho bác một nén
+    forbidden_words:
+    - không thân
+    - không quen
+    dialogue_sample: Tôi cứ nghĩ mình không thân với bác lắm, nên mười năm tôi chưa thắp cho bác một nén hương.
   death:
     type: khong_ro
     pain: Khong thap huong cho hang xom cu suot muoi nam — bac hang xom mat muoi nam truoc
@@ -3329,6 +3459,12 @@ passengers:
     region_dialect: trung
     hometown: Nghệ An
     pronoun_system: tôi
+    speaking_speed: vua
+    catchphrase: chừ tui đã đủ vững rồi
+    forbidden_words:
+    - thất nghiệp
+    - vô dụng
+    dialogue_sample: Tui đập gương đêm nớ, nhìn vô mảnh vỡ tui lại thấy mình còn muốn sống tiếp.
   death:
     type: khong_ro
     pain: 2 nam truoc suyt tu tu vi that nghiep sau tot nghiep Dai hoc Hang khong — thay minh trong guong vo, chon song —
@@ -3363,6 +3499,12 @@ passengers:
     region_dialect: bac
     hometown: Hà Nội
     pronoun_system: tôi
+    speaking_speed: cham
+    catchphrase: giá em nói với anh sớm hơn
+    forbidden_words:
+    - giấu giếm
+    - bí mật
+    dialogue_sample: Em giữ chuyện tình yêu hai năm không nói với anh, giờ anh chỉ tiếc mình không có cơ hội hiểu em hơn.
   death:
     type: khong_ro
     pain: Em gái Diễm mất tai nạn xe máy đèo Ô Quy Hồ năm 20 tuổi — sau tang mới biết em yêu Tuấn (SV Bách khoa) 2 năm, giấu
@@ -3393,6 +3535,12 @@ passengers:
     region_dialect: bac
     hometown: Hà Nội
     pronoun_system: em
+    speaking_speed: cham
+    catchphrase: giá như hôm đó đổi chỗ ngồi
+    forbidden_words:
+    - tai nạn
+    - va chạm
+    dialogue_sample: Em ngồi sau, anh ấy ngồi trước, hôm đó chỉ khác đi một chút thôi mà giờ đã khác cả đời.
   death:
     type: khong_ro
     pain: Vo chong di xe may pho Hue — chong mat tai nan, vo song sot
@@ -3421,6 +3569,12 @@ passengers:
     region_dialect: bac
     hometown: Hà Nội
     pronoun_system: tôi
+    speaking_speed: vua
+    catchphrase: tôi quên mất lời hứa của mình
+    forbidden_words:
+    - chuyện nhỏ
+    - không quan trọng
+    dialogue_sample: Tôi hứa tặng quà sinh nhật mười tám cho bạn, vậy mà quên mất hai mươi năm.
   death:
     type: khong_ro
     pain: Hua tang qua sinh nhat 18 cho ban cap ba — quen 20 nam, ban da mat truoc do
@@ -3451,6 +3605,12 @@ passengers:
     region_dialect: trung
     hometown: Quảng Bình
     pronoun_system: em
+    speaking_speed: cham
+    catchphrase: tui cứ hẹn bữa khác
+    forbidden_words:
+    - bận
+    - để mai
+    dialogue_sample: Tui cứ nghĩ bữa khác đem cơm cho bà cũng được, ai ngờ bữa khác không tới nữa.
   death:
     type: khong_ro
     pain: Khong dem com cho hang xom gia truoc nha — ba chet doi. CUNG MO-TIP voi PAS_0115 (tu choi giup nguoi gia doi/can
@@ -3489,6 +3649,12 @@ passengers:
     region_dialect: bac
     hometown: Hà Nội
     pronoun_system: em
+    speaking_speed: vua
+    catchphrase: em chỉ là người gọi cấp cứu thôi
+    forbidden_words:
+    - yêu thầm
+    - tình cảm
+    dialogue_sample: Em giữ cuộn giấy này bảy năm, không phải vì tình cảm gì, chỉ là em chưa nỡ bỏ đi.
   death:
     type: khong_ro
     pain: Hợp tác đồ án nhà phố hai tầng với Hạ Vy, ký tên chung trên bản vẽ — gặp lại chị lần cuối tại bệnh viện Bạch Mai
@@ -3524,6 +3690,12 @@ passengers:
     region_dialect: trung
     hometown: Huế
     pronoun_system: em
+    speaking_speed: cham
+    catchphrase: con chưa kịp nhắn cho mạ
+    forbidden_words:
+    - muộn màng
+    - quá trễ
+    dialogue_sample: Con định nhắn cho mạ một câu cuối, mà tay con không kịp bấm nút gửi nữa.
   death:
     type: khong_ro
     pain: Con gai mat vi benh — khong kip gui tin nhan cuoi cho me
@@ -3553,6 +3725,12 @@ passengers:
     region_dialect: nam
     hometown: Sài Gòn
     pronoun_system: tôi
+    speaking_speed: cham
+    catchphrase: chiếc nhẫn còn nguyên mà người đã mất
+    forbidden_words:
+    - tai nạn
+    - va quẹt
+    dialogue_sample: Nhẫn cưới bả còn nguyên trên tay lúc người ta đưa bả về, mà bả đã không còn nữa rồi.
   death:
     type: khong_ro
     pain: Vo mat tai nan xe — nhan cuoi con nguyen tren tay luc mat
@@ -3581,6 +3759,12 @@ passengers:
     region_dialect: nam
     hometown: Sài Gòn
     pronoun_system: tôi
+    speaking_speed: vua
+    catchphrase: tui chờ ngày em về
+    forbidden_words:
+    - xuất ngũ
+    - giải ngũ
+    dialogue_sample: Tui hứa cưới em khi em đi nghĩa vụ về, tui chờ hoài mà em không về nữa.
   death:
     type: khong_ro
     pain: Hua cuoi ban gai khi ban di nghia vu ve — ban khong bao gio ve
@@ -3611,6 +3795,12 @@ passengers:
     region_dialect: trung
     hometown: Huế
     pronoun_system: em
+    speaking_speed: cham
+    catchphrase: mệ cứ hẹn khi mô rảnh
+    forbidden_words:
+    - bận
+    - để khi khác
+    dialogue_sample: Mệ định đem khúc chè cho bà khi mô rảnh, rứa mà khi mô đó không bao giờ tới.
   death:
     type: khong_ro
     pain: Khong dem khuc che cho hang xom benh — ba hang xom mat
@@ -3643,6 +3833,12 @@ passengers:
     region_dialect: bac
     hometown: Bắc Ninh
     pronoun_system: tôi
+    speaking_speed: vua
+    catchphrase: thầy đã cứu em qua cuộc điện thoại đó
+    forbidden_words:
+    - trượt
+    - thi lại
+    dialogue_sample: Em nhớ thầy Hồng bảo em cuộc đời còn dài, câu đó em mang theo suốt mười năm.
   death:
     type: khong_ro
     pain: 10 nam truoc dinh tu tu vi truot thi cuoi khoa su pham — thay giao (thay Hong) cuu qua dien thoai — thay vua mat
@@ -3673,6 +3869,12 @@ passengers:
     region_dialect: bac
     hometown: Thái Bình
     pronoun_system: em
+    speaking_speed: cham
+    catchphrase: bà hứa với cháu rồi mà chưa kịp
+    forbidden_words:
+    - để sau
+    - hôm nào rảnh
+    dialogue_sample: Bà hứa hè này đưa cháu đi biển, cháu chờ bà mà bà chưa kịp đưa đi.
   death:
     type: khong_ro
     pain: Hua dua chau noi di bien — chau mat truoc khi kip thuc hien
@@ -3702,6 +3904,12 @@ passengers:
     region_dialect: bac
     hometown: Hà Nội
     pronoun_system: em
+    speaking_speed: vua
+    catchphrase: vé đã mua mà người không còn
+    forbidden_words:
+    - du học
+    - khởi hành
+    dialogue_sample: Vé máy bay em mua sẵn cho hai đứa, giờ chỉ còn một mình em cầm vé đó thôi.
   death:
     type: khong_ro
     pain: Da mua ve may bay di du hoc — chong mat truoc ngay khoi hanh
@@ -3731,6 +3939,12 @@ passengers:
     region_dialect: nam
     hometown: Sài Gòn
     pronoun_system: tôi
+    speaking_speed: vua
+    catchphrase: cây đàn tui hứa tặng hồi đó
+    forbidden_words:
+    - quên
+    - để lâu quá
+    dialogue_sample: Tui hứa tặng cây đàn cho bạn hồi cấp ba, vậy mà để quên hai chục năm.
   death:
     type: khong_ro
     pain: Hua tang guitar cho ban cap ba — quen 20 nam, ban mat vi benh
@@ -3759,6 +3973,12 @@ passengers:
     region_dialect: nam
     hometown: Sài Gòn
     pronoun_system: em
+    speaking_speed: cham
+    catchphrase: tui giúp có một lần thôi
+    forbidden_words:
+    - qua loa
+    - xong chuyện
+    dialogue_sample: Tui đỡ cô đó một lần lúc gặp mưa, rồi tui không hỏi thăm tiếp, tui đâu ngờ cô đó cần mình nhiều hơn vậy.
   death:
     type: khong_ro
     pain: Do mot co gai gap mua 1 lan nhung khong tiep tuc giup do — co gai do sau tu tu vi khong ai giup them
@@ -3786,34 +4006,39 @@ passengers:
   display_name: Nguyễn (26-35)
   narrative_hook: TBD by Generator
   source_ep: 30
-  evidence_ref: 'output/ep_30/episode.md (đọc trực tiếp, waiver — Boss xác nhận 5/7)'
+  evidence_ref: output/ep_30/episode.md (đọc trực tiếp, waiver — Boss xác nhận 5/7)
   hometown_detail: Hải Dương
   status: draft
   life_status: song
-  life_status_note: 'GIÁ TRỊ MỚI lần đầu xuất hiện trong roster (trước giờ chỉ có da_mat/linh_hon) — nhân vật CÒN SỐNG thật
+  life_status_note: GIÁ TRỊ MỚI lần đầu xuất hiện trong roster (trước giờ chỉ có da_mat/linh_hon) — nhân vật CÒN SỐNG thật
     (kế toán, vừa lên trưởng phòng, đang đi đặt lại bằng tốt nghiệp vào trường cũ). Không phải hồn ma — dùng entity_class=nguoi
-    (facet mới 5/7) làm căn cứ chính.'
+    (facet mới 5/7) làm căn cứ chính.
   voice:
     region_dialect: bac
     hometown: Hải Dương
     pronoun_system: em
+    speaking_speed: vua
+    catchphrase: thầy giúp con mà con chưa báo đáp được
+    forbidden_words:
+    - học phí
+    - nợ nần
+    dialogue_sample: Thầy đóng học phí giúp con hai năm cấp ba, con định báo đáp mà thầy đã không còn kịp nhận.
   death:
     type: khong_ro
-    pain: 'KHONG AP DUNG - nhan vat con song, dung gia tri enum co san "khong_ro" thay vi
-      bia gia tri moi "khong_ap_dung" (chua duoc khai trong DEATHS enum bible/37). Xem
-      life_status_note.'
+    pain: KHONG AP DUNG - nhan vat con song, dung gia tri enum co san "khong_ro" thay vi bia gia tri moi "khong_ap_dung" (chua
+      duoc khai trong DEATHS enum bible/37). Xem life_status_note.
   haunting_symbol: OBJ_BANG_TOT_NGHIEP
 - id: PAS_0151
   char_name: Hạ Nhi
   entity_class: nguoi
   pillar: RFC_PENDING
   regret_sub_archetype: RFC_PENDING_hoa_giai_truoc_khi_qua_muon
-  regret_label: 'Chị gái Hạ Vy mời Khải Phong dự đám cưới, mong hàn gắn trước khi bố (đang bệnh nặng) không còn kịp gặp lại'
+  regret_label: Chị gái Hạ Vy mời Khải Phong dự đám cưới, mong hàn gắn trước khi bố (đang bệnh nặng) không còn kịp gặp lại
   archetype_fit_note: 'KHÔNG khớp bất kỳ archetype nào trong 27 mục bible/11 (đã đọc toàn bộ catalog để xác nhận, không phải
     chưa tìm đủ kỹ) — toàn bộ catalog xây trên khuôn "người đã CHẾT, người sống hối tiếc". Hạ Nhi thì NGƯỢC LẠI: còn sống,
     chủ động hàn gắn TRƯỚC KHI có ai chết (lo bố bệnh nặng, muốn Khải Phong gặp bố kịp lúc). Đề xuất RFC bible/11 thêm archetype
-    mới (nhóm family_regret hoặc nhóm riêng "hòa giải trước khi muộn") — KHÔNG tự bịa mã, chờ Mr.Long quyết cùng đợt RFC
-    bible/11 khác (REG_SELF_005, REG_KIN_006) đã treo.'
+    mới (nhóm family_regret hoặc nhóm riêng "hòa giải trước khi muộn") — KHÔNG tự bịa mã, chờ Mr.Long quyết cùng đợt RFC bible/11
+    khác (REG_SELF_005, REG_KIN_006) đã treo.'
   signature_object: OBJ_THIEP_CUOI
   object_pairing_note: 'episode.md tự khai signature_object: OBJ_THIEP_CUOI (dòng 39) — dùng nguyên mã, không đổi.'
   signature_setting: setting_TBD
@@ -3822,39 +4047,40 @@ passengers:
   display_name: Hạ Nhi (18-25)
   narrative_hook: TBD by Generator
   source_ep: 50
-  evidence_ref: 'output/ep_50/episode.md (đọc trực tiếp, waiver — Boss xác nhận 5/7)'
+  evidence_ref: output/ep_50/episode.md (đọc trực tiếp, waiver — Boss xác nhận 5/7)
   hometown_detail: Vĩnh Bảo, Hải Phòng
   status: draft
   life_status: song
-  life_status_note: 'Nhân vật CÒN SỐNG thật, "người đời thực được phép lên xe qua giấc mơ" (episode.md tự khai dòng 198) —
-    entity_class=nguoi. Hạ Nhi là CHỊ GÁI RUỘT của Hạ Vy (bible/27 fact_db nhân vật chính, EP01 golden) — quan hệ này
-    episode.md tự khai trực tiếp ("Người chị gái Hạ Vy", dòng 74). Mr.Long ĐÃ XÁC NHẬN đúng canon 2026-07-05 (per quy
-    trình continuity giống PAS_0137/PAS_0141) — cảnh báo cũ đã GỠ.'
+  life_status_note: Nhân vật CÒN SỐNG thật, "người đời thực được phép lên xe qua giấc mơ" (episode.md tự khai dòng 198) —
+    entity_class=nguoi. Hạ Nhi là CHỊ GÁI RUỘT của Hạ Vy (bible/27 fact_db nhân vật chính, EP01 golden) — quan hệ này episode.md
+    tự khai trực tiếp ("Người chị gái Hạ Vy", dòng 74). Mr.Long ĐÃ XÁC NHẬN đúng canon 2026-07-05 (per quy trình continuity
+    giống PAS_0137/PAS_0141) — cảnh báo cũ đã GỠ.
   voice:
     region_dialect: bac
     hometown: Hải Phòng
     pronoun_system: em
+    speaking_speed: nhanh
+    catchphrase: em chỉ muốn mọi người làm hòa thôi
+    forbidden_words:
+    - giận nhau
+    - mâu thuẫn
+    dialogue_sample: Em mời anh Khải Phong tới đám cưới chị, em chỉ mong bố được thấy mọi người vui vẻ trước khi quá muộn.
   death:
     type: khong_ro
-    pain: 'KHONG AP DUNG - nhan vat con song, dung gia tri enum co san "khong_ro" thay vi
-      bia gia tri moi. Xem life_status_note.'
+    pain: KHONG AP DUNG - nhan vat con song, dung gia tri enum co san "khong_ro" thay vi bia gia tri moi. Xem life_status_note.
   haunting_symbol: OBJ_THIEP_CUOI
 merge_5_7:
   by: KIEM_DUYET (per Mr.Long authorization 2026-07-05)
-  reason: 'Boss dao nguoc quyet dinh truoc do (file rieng) -> merge 39 passenger tu
-    passenger_roster_backfill_ep11_50.yaml (batch B3 ep11-50, 37 + 2 waiver ep_30/ep_50)
-    vao 1 file duy nhat. Tong 100 + 39 = 139 passenger.'
+  reason: Boss dao nguoc quyet dinh truoc do (file rieng) -> merge 39 passenger tu passenger_roster_backfill_ep11_50.yaml
+    (batch B3 ep11-50, 37 + 2 waiver ep_30/ep_50) vao 1 file duy nhat. Tong 100 + 39 = 139 passenger.
   total_before: 100
   merged_count: 39
   total_after: 139
-  distribution_target_note: 'distribution_target/distribution_actual O TREN giu nguyen
-    (mo ta CHINH XAC 100 passenger goc do gen_100_passenger.py sinh co chu dich can bang
-    bible/11) - KHONG cong don voi 39 passenger merge (nguon khac: text-mining tu
-    episode.md that, khong phai generator can bang). PAS_0151 (Ha Nhi, waiver ep_50) co
-    pillar: RFC_PENDING (khong thuoc 5 pillar chuan) - cho Mr.Long quyet archetype moi.
-    PAS_0131 (Nguyen, waiver ep_30) va PAS_0151 la 2 ID da RESERVED san tu truoc (xem
-    tests/test_roster_backfill_ep11_50.py docstring cu) - dung dung ID nay, KHONG phai
-    ID moi tu chon.'
+  distribution_target_note: 'distribution_target/distribution_actual O TREN giu nguyen (mo ta CHINH XAC 100 passenger goc
+    do gen_100_passenger.py sinh co chu dich can bang bible/11) - KHONG cong don voi 39 passenger merge (nguon khac: text-mining
+    tu episode.md that, khong phai generator can bang). PAS_0151 (Ha Nhi, waiver ep_50) co pillar: RFC_PENDING (khong thuoc
+    5 pillar chuan) - cho Mr.Long quyet archetype moi. PAS_0131 (Nguyen, waiver ep_30) va PAS_0151 la 2 ID da RESERVED san
+    tu truoc (xem tests/test_roster_backfill_ep11_50.py docstring cu) - dung dung ID nay, KHONG phai ID moi tu chon.'
 migration_v2:
   by: tools/migrate_roster_v2.py
   date: '2026-07-02'

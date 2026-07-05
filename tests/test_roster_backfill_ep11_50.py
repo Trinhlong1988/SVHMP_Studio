@@ -42,16 +42,34 @@ def _passengers():
 def test_zero_violation_c1_to_c5_full_roster():
     """G2 B4 fix (5/7): roster_validator gio check DU 6 field bible/37
     tier_1_mandatory.voice (truoc chi 3, thieu speaking_speed/catchphrase/
-    forbidden_words/dialogue_sample - named!=enforced). 4 field moi la WARN-class
-    (0/139 passenger da fill du lieu that, do luong thuc te) - KHONG phai
-    regression, la con so THAT vua duoc phoi bay dung, cho Boss quyet dinh
-    nguong truoc khi bat --strict (xem PROMPT_HANDOFF_CMD_BUILD_g2b4.md)."""
+    forbidden_words/dialogue_sample - named!=enforced). 4 field moi la WARN-class,
+    dang duoc B4 voice-fill dien dan theo batch (khong hardcode con so co dinh -
+    dem DONG tren du lieu thuc te, van cham regression neu validate() dem sai).
+    KHONG phai bat --strict tu y (xem PROMPT_HANDOFF_CMD_BUILD_g2b4.md)."""
     all_p = _all_passengers()
     v, w = validate(all_p, FORBIDDEN, BIBLE23, BIBLE37)
     assert v == [], f"phai 0 violation C1-C5 tren toan bo 139, got: {v[:5]}"
-    assert len(w) == len(all_p) * 4, (
-        f"ky vong dung {len(all_p)}*4={len(all_p)*4} warn (4 field bible/37 voice "
-        f"chua fill x {len(all_p)} passenger), got {len(w)}: {w[:5]}")
+    voice_warn_fields = ('speaking_speed', 'catchphrase', 'forbidden_words', 'dialogue_sample')
+    expected_missing = sum(1 for p in all_p for f in voice_warn_fields
+                           if not (p.get('voice') or {}).get(f))
+    assert len(w) == expected_missing, (
+        f"ky vong {expected_missing} warn (dem thuc te tren du lieu), got {len(w)}: {w[:5]}")
+
+
+def test_b4_voice_batch1_39_backfill_all_4_fields_filled():
+    """G2 B4 voice-fill batch 1/N (5/7): 39 hanh khach backfill (evidence_ref)
+    da duoc dien DU 4 field Tier1 voice con thieu (speaking_speed/catchphrase/
+    forbidden_words/dialogue_sample), moi truong hop rieng theo dung pillar/
+    tuoi/vung/gioi tinh cua chinh nhan vat (KHONG cong thuc may moc rong khap -
+    R195). Regression-guard: neu batch tuong lai vo tinh xoa/ghi de du lieu nay,
+    test se do."""
+    voice_fields = ('speaking_speed', 'catchphrase', 'forbidden_words', 'dialogue_sample')
+    for p in _passengers():
+        voice = p.get('voice') or {}
+        for f in voice_fields:
+            assert voice.get(f), f"{p['id']}: thieu voice.{f} (batch 1 backfill phai da dien)"
+        assert isinstance(voice['forbidden_words'], list) and voice['forbidden_words'], (
+            f"{p['id']}: forbidden_words phai la list KHONG rong (rong = falsy = tinh la thieu)")
 
 
 def test_exactly_39_backfill_passengers():

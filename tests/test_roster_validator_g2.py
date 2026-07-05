@@ -64,26 +64,35 @@ def test_real_locked_roster_zero_violations():
     assert v == [], f"roster LOCK phải 0 violation, got: {v[:5]}"
     # G2 B4 fix (5/7): 4 field bible/37 tier_1_mandatory.voice moi duoc them vao
     # check (speaking_speed/catchphrase/forbidden_words/dialogue_sample) la
-    # WARN-class, va 0/139 passenger da fill du lieu that (do luong 5/7) - so
-    # nay la CON SO THAT bao cao cho Boss, khong phai regression. KHONG duoc
-    # quay ve gia dinh w == [] cu (do la named!=enforced che giau truoc fix).
-    n = len(_real_passengers())
-    assert len(w) == n * 4, (
-        f"ky vong dung {n}*4={n*4} warn (4 field bible/37 voice chua fill x {n} "
-        f"passenger), got {len(w)}")
-    for field in ('speaking_speed', 'catchphrase', 'forbidden_words', 'dialogue_sample'):
-        assert any(field in x for x in w), f"thieu warn cho field '{field}'"
+    # WARN-class. B4 voice-fill (batch nho, dang tien hanh 5/7) DAN GIAM so
+    # warn nay theo tung dot - KHONG hardcode con so co dinh (se doi moi
+    # batch), tinh DONG bang cach dem thuc te bao nhieu (passenger, field)
+    # con thieu, roi doi chieu dung voi validate() tra ve. Test van cham
+    # regression that: neu validate() dem sai (vd bo sot 1 field) se lech voi
+    # phep dem doc lap nay.
+    real = _real_passengers()
+    voice_warn_fields = ('speaking_speed', 'catchphrase', 'forbidden_words', 'dialogue_sample')
+    expected_missing = sum(1 for p in real for f in voice_warn_fields
+                           if not (p.get('voice') or {}).get(f))
+    assert len(w) == expected_missing, (
+        f"ky vong {expected_missing} warn (dem thuc te tren du lieu), got {len(w)}")
+    if expected_missing:
+        for field in voice_warn_fields:
+            if any(not (p.get('voice') or {}).get(field) for p in real):
+                assert any(field in x for x in w), f"thieu warn cho field '{field}'"
 
 
 def test_real_locked_roster_zero_violations_c1_to_c5():
     """Sau flip planned->exists (Mr.Long ký 2026-07-03): C4/C5 chạy thật, vẫn 0 violation.
-    Warn (B4 4-field bible/37 voice chưa fill) — xem test_real_locked_roster_zero_violations."""
-    v, w = validate(_real_passengers(), FORBIDDEN, BIBLE23, BIBLE37)
+    Warn (B4 4-field bible/37 voice chưa fill, dem dong) — xem test_real_locked_roster_zero_violations."""
+    real = _real_passengers()
+    v, w = validate(real, FORBIDDEN, BIBLE23, BIBLE37)
     assert v == [], f"roster LOCK phải 0 violation C1-C5, got: {v[:5]}"
-    n = len(_real_passengers())
-    assert len(w) == n * 4, (
-        f"ky vong dung {n}*4={n*4} warn (4 field bible/37 voice chua fill x {n} "
-        f"passenger), got {len(w)}")
+    voice_warn_fields = ('speaking_speed', 'catchphrase', 'forbidden_words', 'dialogue_sample')
+    expected_missing = sum(1 for p in real for f in voice_warn_fields
+                           if not (p.get('voice') or {}).get(f))
+    assert len(w) == expected_missing, (
+        f"ky vong {expected_missing} warn (dem thuc te tren du lieu), got {len(w)}")
 
 
 def test_synthetic_valid_passenger_clean():
