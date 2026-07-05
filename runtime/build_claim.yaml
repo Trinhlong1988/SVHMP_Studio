@@ -58,6 +58,10 @@ claims:
     released_at: '2026-07-05T18:49:27'
     session: CMD_BUILD
     status: released
+  g6b_story_planner:
+    claimed_at: '2026-07-05T20:29:35'
+    session: CMD_BUILD
+    status: active
   intro_template_retrofit:
     claimed_at: '2026-07-05T00:55:44'
     released_at: '2026-07-05T01:39:40'
