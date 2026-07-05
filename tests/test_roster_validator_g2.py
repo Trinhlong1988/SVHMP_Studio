@@ -50,7 +50,9 @@ def _base():
         'regret_sub_archetype': 'REG_FAM_001', 'haunting_symbol': 'OBJ_TEST',
         'age_range': '26-35', 'life_status': 'da_mat',
         'voice': {'region_dialect': 'bac', 'hometown': 'Hà Nội',
-                  'pronoun_system': 'tôi'},
+                  'pronoun_system': 'tôi', 'speaking_speed': 'binh_thuong',
+                  'catchphrase': 'thoi thi', 'forbidden_words': ['vai'],
+                  'dialogue_sample': 'toi khong con gi de noi'},
         'death': {'type': 'tai_nan'},
     }]
 
@@ -60,14 +62,28 @@ def _base():
 def test_real_locked_roster_zero_violations():
     v, w = validate(_real_passengers(), FORBIDDEN)
     assert v == [], f"roster LOCK phải 0 violation, got: {v[:5]}"
-    assert w == []
+    # G2 B4 fix (5/7): 4 field bible/37 tier_1_mandatory.voice moi duoc them vao
+    # check (speaking_speed/catchphrase/forbidden_words/dialogue_sample) la
+    # WARN-class, va 0/139 passenger da fill du lieu that (do luong 5/7) - so
+    # nay la CON SO THAT bao cao cho Boss, khong phai regression. KHONG duoc
+    # quay ve gia dinh w == [] cu (do la named!=enforced che giau truoc fix).
+    n = len(_real_passengers())
+    assert len(w) == n * 4, (
+        f"ky vong dung {n}*4={n*4} warn (4 field bible/37 voice chua fill x {n} "
+        f"passenger), got {len(w)}")
+    for field in ('speaking_speed', 'catchphrase', 'forbidden_words', 'dialogue_sample'):
+        assert any(field in x for x in w), f"thieu warn cho field '{field}'"
 
 
 def test_real_locked_roster_zero_violations_c1_to_c5():
-    """Sau flip planned->exists (Mr.Long ký 2026-07-03): C4/C5 chạy thật, vẫn 0 violation."""
+    """Sau flip planned->exists (Mr.Long ký 2026-07-03): C4/C5 chạy thật, vẫn 0 violation.
+    Warn (B4 4-field bible/37 voice chưa fill) — xem test_real_locked_roster_zero_violations."""
     v, w = validate(_real_passengers(), FORBIDDEN, BIBLE23, BIBLE37)
     assert v == [], f"roster LOCK phải 0 violation C1-C5, got: {v[:5]}"
-    assert w == []
+    n = len(_real_passengers())
+    assert len(w) == n * 4, (
+        f"ky vong dung {n}*4={n*4} warn (4 field bible/37 voice chua fill x {n} "
+        f"passenger), got {len(w)}")
 
 
 def test_synthetic_valid_passenger_clean():
@@ -255,9 +271,47 @@ def test_mutation_empty_name_bites():
 
 def test_mutation_missing_voice_fields_bites():
     p = _mutate(voice={})
-    v, _ = validate(p, FORBIDDEN)
+    v, w = validate(p, FORBIDDEN)
     missing = [x for x in v if 'voice.' in x]
-    assert len(missing) == 3, v   # region_dialect + hometown + pronoun_system
+    assert len(missing) == 3, v   # region_dialect + pronoun_system (VOICE_REQ) + hometown (BACKGROUND_REQ)
+    missing_warn = [x for x in w if 'voice.' in x]
+    assert len(missing_warn) == 4, w  # speaking_speed + catchphrase + forbidden_words + dialogue_sample
+
+
+def test_mutation_missing_bible37_voice_warn_fields_bites():
+    """G2 B4 fix (5/7): 4 field bible/37 tier_1_mandatory.voice truoc day KHONG
+    bao gio duoc check (named != enforced). Thieu 1 minh 'catchphrase' -> PHAI
+    bi WARN (truoc fix se KHONG bi flag gi ca vi VOICE_REQ cu chi co 3 field
+    khac)."""
+    p = _mutate(voice={'region_dialect': 'bac', 'hometown': 'Hà Nội',
+                       'pronoun_system': 'tôi', 'speaking_speed': 'cham',
+                       'forbidden_words': ['vai'], 'dialogue_sample': 'xin chao'})
+    v, w = validate(p, FORBIDDEN)
+    assert v == [], v
+    assert any('catchphrase' in x for x in w), w
+    assert not any(f in ' '.join(w) for f in
+                  ('speaking_speed', 'forbidden_words', 'dialogue_sample')), w
+
+
+def test_bible37_voice_pronoun_style_alias_matches_real_field_pronoun_system():
+    """bible/37 khai ten 'pronoun_style' nhung code+data that dung 'pronoun_system'
+    — VOICE_FIELD_ALIAS phai map dung, khong duoc lech am tham."""
+    from roster_validator import VOICE_FIELD_ALIAS
+    assert VOICE_FIELD_ALIAS.get('pronoun_style') == 'pronoun_system'
+    bible_voice_fields = BIBLE37['tier_1_mandatory']['voice']
+    assert 'pronoun_style' in bible_voice_fields
+    assert 'pronoun_system' not in bible_voice_fields  # xac nhan bible dung ten khac data that
+
+
+def test_bible37_voice_6_fields_all_checked_hard_or_warn():
+    """Doi chieu: ca 6 field bible/37 tier_1_mandatory.voice phai duoc check o
+    dau do (VOICE_REQ hard hoac VOICE_REQ_WARN), khong duoc bo sot field nao —
+    chinh la bug G2 B4 (4/6 field roi khoi enforcement) da duoc fix."""
+    from roster_validator import VOICE_REQ, VOICE_REQ_WARN, VOICE_FIELD_ALIAS
+    bible_voice_fields = set(BIBLE37['tier_1_mandatory']['voice'])
+    checked = set(VOICE_REQ) | set(VOICE_REQ_WARN)
+    aliased_bible_fields = {VOICE_FIELD_ALIAS.get(f, f) for f in bible_voice_fields}
+    assert aliased_bible_fields == checked, (aliased_bible_fields, checked)
 
 
 def test_mutation_missing_death_type_bites():

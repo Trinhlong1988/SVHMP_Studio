@@ -40,9 +40,18 @@ def _passengers():
 
 
 def test_zero_violation_c1_to_c5_full_roster():
-    v, w = validate(_all_passengers(), FORBIDDEN, BIBLE23, BIBLE37)
+    """G2 B4 fix (5/7): roster_validator gio check DU 6 field bible/37
+    tier_1_mandatory.voice (truoc chi 3, thieu speaking_speed/catchphrase/
+    forbidden_words/dialogue_sample - named!=enforced). 4 field moi la WARN-class
+    (0/139 passenger da fill du lieu that, do luong thuc te) - KHONG phai
+    regression, la con so THAT vua duoc phoi bay dung, cho Boss quyet dinh
+    nguong truoc khi bat --strict (xem PROMPT_HANDOFF_CMD_BUILD_g2b4.md)."""
+    all_p = _all_passengers()
+    v, w = validate(all_p, FORBIDDEN, BIBLE23, BIBLE37)
     assert v == [], f"phai 0 violation C1-C5 tren toan bo 139, got: {v[:5]}"
-    assert w == [], f"phai 0 warn, got: {w[:5]}"
+    assert len(w) == len(all_p) * 4, (
+        f"ky vong dung {len(all_p)}*4={len(all_p)*4} warn (4 field bible/37 voice "
+        f"chua fill x {len(all_p)} passenger), got {len(w)}: {w[:5]}")
 
 
 def test_exactly_39_backfill_passengers():

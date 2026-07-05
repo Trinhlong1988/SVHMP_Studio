@@ -12,7 +12,11 @@ CHECKS:
      rule_04 không chứa 'Nam' · forbidden 15 từ (data/vietnamese_names_extended.yaml)
   C2 quê↔giọng: voice.hometown PHẢI thuộc vùng voice.region_dialect
      (map HOME single-source từ tools/migrate_roster_v2.py — không nhân đôi)
-  C3 Tier1 R210 hiện diện: char_name/gender/voice đủ field/death.type/haunting_symbol/regret
+  C3 Tier1 R210 hiện diện: char_name/gender/death.type/haunting_symbol/regret + voice.hometown
+     (bible/37 background) + voice.region_dialect/pronoun_system (bible/37 voice, alias
+     pronoun_style — FAIL-class, đã fill 139/139) + voice.speaking_speed/catchphrase/
+     forbidden_words/dialogue_sample (bible/37 voice, G2 B4 fix 5/7 — WARN-class, 0/139
+     đã fill, chờ Boss quyết định ngưỡng trước khi --strict)
   C4 naming region/generation/culture (rule_06..09, bible/23 v1.1 — Mr.Long ký
      2026-07-03): KHUNG check — bible/23 v1.1 phải có đủ 4 rule + roster region
      dùng phải có style_by_region khai (structural). Pool cụ thể theo vùng CHƯA
@@ -49,9 +53,40 @@ BIBLE_23 = SVHMP / 'bible' / '23_passenger_naming.yaml'
 BIBLE_37 = SVHMP / 'bible' / '37_character_schema.yaml'
 
 TIER1_TOP = ['char_name', 'gender', 'regret_sub_archetype', 'haunting_symbol']
-VOICE_REQ = ['region_dialect', 'hometown', 'pronoun_system']
 NAMING_RULES_REQUIRED = ['rule_06_region_match', 'rule_07_generation_match',
                          'rule_08_culture_belief', 'rule_09_vietnamese_purity']
+
+# G2 B4 fix (5/7, phat hien Mr.Long): bible/37 tier_1_mandatory.voice khai DU 6
+# field [region_dialect, pronoun_style, speaking_speed, catchphrase,
+# forbidden_words, dialogue_sample] nhung VOICE_REQ cu chi check 3 field, va 1
+# trong so do ('hometown') khong he thuoc nhom 'voice' cua bible/37 (no thuoc
+# tier_1_mandatory.background) - named != enforced that.
+#
+# VOICE_FIELD_ALIAS: bible/37 dung ten 'pronoun_style', nhung TOAN BO code+data
+# that (dialog_voice_validator.py MANDATORY_VOICE, passenger_roster_100.yaml)
+# dung ten 'pronoun_system' lam field thuc te (139/139 passenger co du lieu o
+# ten nay, 0/139 o ten 'pronoun_style'). Day la lech ten bible<->thuc-te co san
+# tu truoc, KHONG phai loi moi - map alias o day thay vi tu doi ten 1 ben (doi
+# bible hoac doi ten field data deu ngoai pham vi "code thuan" cua fix nay).
+VOICE_FIELD_ALIAS = {'pronoun_style': 'pronoun_system'}
+
+# 2 field bible/37 voice DA co du lieu that trong roster (139/139) -> giu
+# FAIL-class nhu truoc (khong regression).
+VOICE_REQ = ['region_dialect', 'pronoun_system']
+
+# 4 field bible/37 voice con lai CHUA duoc fill trong roster that (0/139, do
+# luong 5/7) -> WARN-class truoc (dung co che --strict co san trong module nay,
+# dong 31-32 docstring: "WARN-class cung fail" khi B4 bat). KHONG tu y coi day
+# la FAIL cung, se lam roster THAT (139 passenger) tu "0 violation" thanh 139
+# violation ngay lap tuc - qua tam voi muc du lieu hien co, can Boss quyet dinh
+# nguong roi moi bat --strict that su trong ci_gate.py (KHONG tu bat o day).
+VOICE_REQ_WARN = ['speaking_speed', 'catchphrase', 'forbidden_words', 'dialogue_sample']
+
+# hometown: tier_1_mandatory.BACKGROUND cua bible/37 (khong phai 'voice'), nhung
+# du lieu that luu long trong voice: {} - giu FAIL-class nhu truoc (da enforce
+# tu truoc qua C2 quê↔giọng + C3), chi tach rieng ten bien cho dung danh muc
+# bible thay vi gop lan vao VOICE_REQ.
+BACKGROUND_REQ = ['hometown']
 
 # C4b rule_09 (vietnamese_purity, content-check thật — Mr.Long lenh 4/7): charset
 # dung UNICODE CODEPOINT RANGE (khong liet ke tay tung ky tu — lan dau liet ke tay
@@ -209,6 +244,13 @@ def validate(passengers, forbidden, bible23=None, bible37=None):
         for vf in VOICE_REQ:
             if not voice.get(vf):
                 violations.append(f"C3 {pid}: thiếu voice.{vf}")
+        for bf in BACKGROUND_REQ:
+            if not voice.get(bf):
+                violations.append(f"C3 {pid}: thiếu voice.{bf}")
+        for vf in VOICE_REQ_WARN:
+            if not voice.get(vf):
+                warns.append(f"C3 {pid}: thiếu voice.{vf} (bible/37 tier_1_mandatory.voice, "
+                             "chưa fill — WARN cho tới khi B4 bật --strict theo quyết định Boss)")
         death = p.get('death') or {}
         if not death.get('type'):
             violations.append(f"C3 {pid}: thiếu death.type")
