@@ -100,3 +100,41 @@ Studio Core = **EXTRACT từ dây chuyền đã chạy** (sau S1), cấm build-a
 **KPI tách:** _Platform_ = thời gian onboard IP mới · % tool tái dùng · $/phút content ‖ _Product_ = tập/tuần · lỗi QA/tập · retention/comment · $/tập.
 **Track song song:** G3-G8 (bảng §4) = Story Factory buildout; EP01-pipeline-mới vẫn là acceptance của track đó.
 **Backlog trả trong S0-S1:** dup-key loader cho `architecture_registry_check` (bug class H6) · `verify_ping_claim` 24 UNKNOWN · bảng rule↔enforcer máy-sinh · ADR retro (`docs/adr/`) · xác nhận revoke PAT.
+
+## 9. TRẠNG THÁI REAL-TIME (đồng bộ 5/7 tối — MỌI CMD đọc mục này trước khi claim pack mới,
+tránh hỏi lại thông tin đã có sẵn ở đây; nguồn: `python tools/build_claim.py status` + `git tag`)
+
+**Đã LOCK (có tag, xem `governance/architecture_registry.yaml`):**
+`bp1..bp9` + `blueprint_constitution` + `system_blueprint` + `governance-v1.0` (locked từ 2/7-4/7)
+· `g4_world` (tag `g4-world-v1.0`) · `g5_supernatural` (tag `g5-supernatural-v1.0`) ·
+`decision_engine`/G6a (tag `g6a-decision-engine-v1.0`) — cả 3 lock 5/7.
+
+**Đang hoạt động (claim `active`, xem `build_claim.yaml` để biết ai/lúc nào):**
+- `g6b_story_planner` — CMD_BUILD, code `tools/story_planner.py` (schema đã Mr.Long duyệt A).
+- `g2_audit_fix` — CMD_BUILD_2, sửa 3 lỗi audit G2 (voice cá tính hóa thật, đồng bộ tên vào
+  episode.md ep_12-49, gỡ CHARACTER_GATE khỏi file LOCKED) — 2/3 gần xong tại thời điểm ghi.
+- `debt005_006_fix` — CMD_BUILD_3, fix khẩn 2 lỗi hạ tầng CHẶN CI GATE MỌI PHIÊN (race-condition
+  corrupt `output/ep_01/` khi 2 phiên chạy pytest đồng thời + regression rule R86) — xem
+  `governance/TECH_DEBT.md` DEBT-005/DEBT-006. **KHÔNG push gì cho tới khi pack này release**,
+  CI gate sẽ FAIL hợp lệ (không phải lỗi của bạn) cho tới lúc đó.
+
+**Sẵn sàng lock, CHỜ Boss xác nhận:**
+- `g3_dialogue` — audit vòng 2 PASS toàn phần (4/4 điểm route-back), chưa có tag/registry entry.
+
+**Đã duyệt, CHƯA build xong (không phải build-ahead nếu build ĐÚNG bản đã duyệt):**
+- `story_plan_schema.yaml` — Mr.Long duyệt A, `governance/proposals/story_plan_schema_proposal.yaml`.
+- `episode_schema.yaml` — Mr.Long duyệt B (có ngoại lệ ep73/90 cho bell_count/driver_lines),
+  `governance/proposals/episode_schema_proposal.yaml`.
+
+**Khung chuẩn bị (chưa claim được, còn thiếu điều kiện — đọc file trước khi claim):**
+- `g7_generator` — xem `prompts/TASK_G7_GENERATOR.md`, còn thiếu G6b code xong (3/4 điều kiện
+  khác đã đủ: G6a lock, cả 2 schema đã duyệt).
+- `g8_qa_runtime` — chưa có khung chuẩn bị, chưa ai claim.
+
+**Quyết định chiến lược 5/7 (xem §6 mục 6 + §7 phía trên):** 50 tập hiện có = thử nghiệm turn 1,
+sẽ regen qua pipeline G6-G8 khi xong — đừng đầu tư sâu vá tay nội dung cũ ngoài mức cần thiết.
+
+**Nợ kỹ thuật mở:** DEBT-002 (audio hook/cliffhanger, pipeline làm sạch có sẵn) · DEBT-003 (sfx
+ACE-Step, chờ API) · DEBT-004 (scene_context G3↔G6, chờ G6b) · DEBT-005/006 (xem trên, đang fix)
+· GOV-1 (bible/00 changelog, đang điều tra lại) · GOV-2 (roster --strict, chờ G2 audit fix xong
+mới bật — KHÔNG tự bật khi dữ liệu voice còn đang sửa).
