@@ -296,6 +296,7 @@ domains:
     tests:
       - tests/test_g3_dialogue.py
       - tests/test_g3_dialogue_confusion.py
+    gate: tools/g3_dialogue_check.py
     age_slang_test_cross_reference: >
       tests/test_dialogue_appropriateness_1000_r208.py (dang ky duoi domain character o
       tren) do HANH VI VALIDATOR NOI BO (dialog_voice_validator.validate() + MODERN_SLANG,

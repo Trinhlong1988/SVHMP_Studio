@@ -214,3 +214,72 @@ def test_d4_no_new_file_duplicating_validator_scope():
     offenders = [p.name for p in tools_dir.glob('*.py')
                  if ('dialect_validator' in p.name or 'dialogue_validator' in p.name)]
     assert offenders == [], f'R211: file trung pham vi validator: {offenders}'
+
+
+# ============================================================
+# D7 — gate 1 cua + wire + unwire-guard 2 LOP
+# ============================================================
+
+ORIGINAL_11_STAGES = [
+    'registry', 'blueprint', 'R199_tail', 'R203_conf', 'R205_char', 'R206_voice',
+    'R207_canon', 'R208_age', 'project_config', 'G2_roster', 'g5_supernatural', 'G4_world',
+]
+
+
+def test_g3_dialogue_stage_wired_in_ci_gate():
+    """Lop (a) — grep TINH: dong 'G3_dialogue' phai co mat trong CHECKS THAT cua ci_gate.py
+    (bat truong hop ai xoa dong that sau nay), dat DUNG SAU R208_age, KHONG xoa/doi thu tu
+    11 entry cu."""
+    import ci_gate
+    assert ('G3_dialogue', 'tools/g3_dialogue_check.py') in ci_gate.CHECKS, \
+        'stage G3_dialogue bi go khoi ci_gate CHECKS (unwire!)'
+    keys = [k for k, _ in ci_gate.CHECKS]
+    idx_r208 = keys.index('R208_age')
+    idx_g3 = keys.index('G3_dialogue')
+    assert idx_g3 == idx_r208 + 1, 'G3_dialogue phai dat NGAY SAU R208_age'
+    remaining_11 = [k for k in keys if k != 'G3_dialogue']
+    assert remaining_11 == ORIGINAL_11_STAGES, '11 entry cu bi xoa/doi thu tu'
+    src = (REPO / 'tools' / 'ci_gate.py').read_text(encoding='utf-8')
+    assert "'G3_dialogue'" in src, 'grep tinh tren SOURCE THAT (khong chi object in-memory)'
+
+
+def test_g3_dialogue_unwire_guard_behavior_changes_when_removed(monkeypatch):
+    """Lop (b) — monkeypatch xoa stage TAM trong bo nho roi assert HANH VI gate THAY DOI
+    (bat truong hop lop (a) bi vo hieu bang cach sua dong ca 2 noi cung luc: neu CHECKS
+    khong con dieu khien thuc thi that, monkeypatch se khong lam gi thay doi ca)."""
+    import ci_gate
+    orig = list(ci_gate.CHECKS)
+    patched = [c for c in orig if c[0] != 'G3_dialogue']
+    assert len(patched) == len(orig) - 1, 'stage phai ton tai truoc khi test nay chay'
+    monkeypatch.setattr(ci_gate, 'CHECKS', patched)
+    assert ('G3_dialogue', 'tools/g3_dialogue_check.py') not in ci_gate.CHECKS
+    assert [k for k, _ in ci_gate.CHECKS] == ORIGINAL_11_STAGES
+
+
+def test_g3_dialogue_check_gate_runs_and_writes_report():
+    """CHU Y de-quy (lesson-ci-gate-pytest-recursion): g3_dialogue_check.py stage
+    D3_D4_pytest goi `pytest tests/test_g3_dialogue.py` — CHINH FILE nay — nen se gap lai
+    test nay. Guard 2 lop: (1) o day, tu skip neu dang chay long trong 1 lan goi gate khac
+    (bien moi truong SVHMP_G3_GATE_PYTEST_RUNNING); (2) trong g3_dialogue_check.py._run_pytest
+    tu skip neu guard da bat (khong spawn nested pytest them). Ca 2 cung ton tai (defense in
+    depth) - thieu 1 trong 2 van an toan, co ca 2 chan chac chan khong bao gio de quy qua 1
+    lop long nhau."""
+    import os
+    import subprocess
+    if os.environ.get('SVHMP_G3_GATE_PYTEST_RUNNING'):
+        pytest.skip('re-entrant: dang chay long trong 1 lan g3_dialogue_check.py khac')
+    r = subprocess.run([sys.executable, str(REPO / 'tools' / 'g3_dialogue_check.py')],
+                       capture_output=True, text=True, cwd=str(REPO), encoding='utf-8')
+    assert r.returncode == 0, r.stdout + r.stderr
+    report = REPO / 'runtime' / 'reports' / 'dialogue_system_report.md'
+    assert report.exists()
+
+
+def test_r191_qa_dialogue_identity_not_wired_in_ci_gate():
+    """R191 can WAV da render, ci_gate chay TRUOC render - PHAI KHONG nam trong CHECKS."""
+    import ci_gate
+    keys = [k for k, _ in ci_gate.CHECKS]
+    scripts = [s for _, s in ci_gate.CHECKS]
+    assert 'qa_dialogue_identity.py' not in ' '.join(scripts)
+    handoff = REPO / 'reports' / 'G3_HANDOFF_G8.md'
+    assert handoff.exists(), 'phai ban giao ro cho G8 (D7 yeu cau)'
