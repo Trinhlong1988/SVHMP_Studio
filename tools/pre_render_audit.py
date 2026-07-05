@@ -1,14 +1,14 @@
 """Pre-render audit — MANDATORY trước render section.
 
-Check R84 mandatory:
+Check R154 mandatory: (renamed from R81-R85 addon range, xem prompts/generator_vnsl_addon.md v1.3)
 1. Text validator (R3/R67/R72-R78) PASS 0
 2. High-freq word audit
 3. Cross-chunk 3-gram repeat (R74.2)
 4. Open-vowel tail check (R76)
 5. Em-dash check (R70 — bible/00 R70_em_dash_prosody_explicit_pause_hardlock; "R75" renamed away to proper_noun_anaphora, no longer em-dash)
 6. Pause > 1500ms check
-7. Tempo factor consistency (R71/R82)
-8. Emo_vector consistency (R82)
+7. Tempo factor consistency (R71/R152)
+8. Emo_vector consistency (R152)
 
 Exit 1 if any HIGH issue. Block render.
 """
@@ -83,7 +83,7 @@ def audit(spec_path):
     for i in range(1, len(tempos)):
         dt = abs(tempos[i] - tempos[i-1])
         if dt > 0.15:
-            issues['MED'].append(f'R82 ch{i-1}-{i} tempo jump {tempos[i-1]}→{tempos[i]}')
+            issues['MED'].append(f'R152 ch{i-1}-{i} tempo jump {tempos[i-1]}→{tempos[i]}')
 
     # 8. Emo_vector consistency
     emos = [c.get('emo_vector', None) for c in chunks if isinstance(c, dict)]
@@ -92,7 +92,7 @@ def audit(spec_path):
         for axis in range(min(len(emos[i]), len(emos[i-1]))):
             d_axis = abs(emos[i][axis] - emos[i-1][axis])
             if d_axis > 0.15:
-                issues['HIGH'].append(f'R82 ch{i-1}-{i} emo axis{axis} delta={d_axis:.2f} >0.15')
+                issues['HIGH'].append(f'R152 ch{i-1}-{i} emo axis{axis} delta={d_axis:.2f} >0.15')
                 break
 
     return issues

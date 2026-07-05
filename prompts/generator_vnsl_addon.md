@@ -1,24 +1,24 @@
-# Generator VNSL Addon v1.2 LOCKED (R66-R85)
+# Generator VNSL Addon v1.3 LOCKED (R66-R80, R151-R155)
 
 **Status:** ❄️ FROZEN 2026-06-27 round 18. EP02-EP90 generate spec PHẢI tuân thủ.
 
-## R81-R85 thêm round 18 (session 26-27/6 rút kinh nghiệm)
+## R151-R155 (renamed from R81-R85 2026-07-05, xung đột với bible/00 R81-R85 khác nghĩa; nội dung gốc thêm round 18 session 26-27/6 rút kinh nghiệm)
 
-- **R81** SINGLE-CHUNK render lẻ tạo lạc giọng → ưu tiên full section render
-- **R82** EMO_VECTOR consistency guard (deviation ≤0.15/axis trong consecutive chunks)
-- **R83** PHÙ-CUT mandatory tail residue cuts post-render
-- **R84** VERIFY pre-render mandatory (đọc hiến pháp + audit spec trước launch)
-- **R85** RENDER WORKFLOW LOCKED — 10 steps strict, KHÔNG skip
+- **R151** (was R81) SINGLE-CHUNK render lẻ tạo lạc giọng → ưu tiên full section render
+- **R152** (was R82) EMO_VECTOR consistency guard (deviation ≤0.15/axis trong consecutive chunks)
+- **R153** (was R83) PHÙ-CUT mandatory tail residue cuts post-render
+- **R154** (was R84) VERIFY pre-render mandatory (đọc hiến pháp + audit spec trước launch)
+- **R155** (was R85) RENDER WORKFLOW LOCKED — 10 steps strict, KHÔNG skip
 
 ## RENDER WORKFLOW LOCKED
 
 ```
-1. Read CLAUDE.md + VERSION.md + BUGS_FIXED.md + memory feedback_svhmp_* (R1-R85)
+1. Read CLAUDE.md + VERSION.md + BUGS_FIXED.md + memory feedback_svhmp_* (R1-R80, R151-R155)
 2. Read full spec section trước fix
 3. Pre-render audit → PASS 0 HIGH issue (text validator + ngram + open-vowel + em-dash + pause + emo)
 4. Launch render (full section preferred)
 5. Wait completion
-6. Apply chunk-level STF + phù_cut (R83)
+6. Apply chunk-level STF + phù_cut (R153)
 7. Audio QA strict (R80.1-20) → PASS HIGH=0
 8. Splice / replace section
 9. Reconcat full EP01 với LOCKED boundary (R66 1600-1900ms adaptive)
