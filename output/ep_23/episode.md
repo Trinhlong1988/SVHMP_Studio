@@ -35,7 +35,7 @@ intensity_level: 0.55
 quang_memory_fragment: M5 (Khải Phong nhớ tỏ tình Hạ Vy + hai đứa yêu nhau từ năm 3)
 object_sub_arc: ngoài cluster (bức thư)
 callback_target: none
-passenger_main: nam 45 Đức Vinh Hải Phòng (yêu thư ký hai mươi năm không tỏ tình)
+passenger_main: nam 45 Lợi Lĩnh Hải Phòng (yêu thư ký hai mươi năm không tỏ tình)
 signature_object: OBJ_THU_TU_CHOI (bức thư cô viết khi anh tỏ tình muộn)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Hải Phòng
@@ -116,7 +116,7 @@ Người đàn ông quay đầu lại. Vuốt thư trên đùi. Hơi thở đề
 
 [pause:1000ms]
 
-"Tôi là Đức Vinh. Bốn mươi lăm tuổi. Tôi ở Hải Phòng — quê. Tôi làm giám đốc công ty cảng — Hải Cảng — công ty tôi vừa rời đêm nay sau cuộc họp."
+"Tôi là Lợi Lĩnh. Bốn mươi lăm tuổi. Tôi ở Hải Phòng — quê. Tôi làm giám đốc công ty cảng — Hải Cảng — công ty tôi vừa rời đêm nay sau cuộc họp."
 
 Giọng anh trầm — chậm — không vội. Giọng người đã chuẩn bị từ trước — kể chuyện này nhiều lần cho chính mình.
 
@@ -176,7 +176,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Đức Vinh gật.
+Lợi Lĩnh gật.
 
 "Tôi nhớ. Tôi yêu Yến hai mươi năm — không nói. Yến đợi tôi — đợi đủ — quyết cưới khác. Tôi đến muộn ba mươi ngày. Yến không trách — Yến chỉ nói thật trong thư. Bức thư là câu cuối Yến nói với tôi — em đã có gia đình mới — không trách tôi — chỉ chúc tôi sống vui."
 
@@ -192,7 +192,7 @@ Bác tài cất lời.
 
 Xe chậm lại. Ngã ba Hải Phòng — cây me cổ — bến không tên — đèn vàng trên cây me. Chuông xe ngân. Một tiếng. Tan trong gió biển.
 
-Đức Vinh cất thư vào phong bì kraft. Đứng dậy chậm lại.
+Lợi Lĩnh cất thư vào phong bì kraft. Đứng dậy chậm lại.
 
 "Chào anh."
 
@@ -204,17 +204,17 @@ Anh bước xuống — chân chạm đất ướt mưa.
 
 [pause:1200ms]
 
-Bên ngoài — Đức Vinh đi vào tòa Hải Cảng — bảo vệ đã mở cửa kính — bảo vệ biết giám đốc về đêm — không hỏi. Đèn hành lang còn sáng. Văn phòng tầng năm — phòng trợ lý — bàn Yến xưa — vẫn còn — vẫn không ai ngồi — bụi đã phủ nhẹ.
+Bên ngoài — Lợi Lĩnh đi vào tòa Hải Cảng — bảo vệ đã mở cửa kính — bảo vệ biết giám đốc về đêm — không hỏi. Đèn hành lang còn sáng. Văn phòng tầng năm — phòng trợ lý — bàn Yến xưa — vẫn còn — vẫn không ai ngồi — bụi đã phủ nhẹ.
 
 Người đàn ông đến nơi đó. Mở ngăn kéo trái bàn Yến. Đặt phong bì kraft vào. Đóng ngăn kéo chậm — không tạo tiếng động.
 
 Quỳ một lúc trước bàn. Cúi đầu.
 
-Người đàn ông chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên bàn Yến — Yến xuất hiện — phụ nữ chừng bốn mươi tuổi — áo dạ trắng — tóc cột thấp — như đêm cô viết thư — đứng cạnh bàn — vỗ vai Đức Vinh đang quỳ. Gật đầu nhẹ.
+Người đàn ông chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên bàn Yến — Yến xuất hiện — phụ nữ chừng bốn mươi tuổi — áo dạ trắng — tóc cột thấp — như đêm cô viết thư — đứng cạnh bàn — vỗ vai Lợi Lĩnh đang quỳ. Gật đầu nhẹ.
 
 Khải Phong ấy chớp lần nữa. Yến tan vào ánh đèn hành lang.
 
-Đức Vinh đứng dậy. Không khóc. Đi ra cửa văn phòng. Tắt đèn.
+Lợi Lĩnh đứng dậy. Không khóc. Đi ra cửa văn phòng. Tắt đèn.
 
 [pause:1500ms]
 
@@ -232,7 +232,7 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Người khách ngồi yên. Đức Vinh yêu Yến hai mươi năm không nói — Yến đợi — Yến đợi đủ — Yến cưới khác. Câu chuyện đêm này — không phải về cái chết — về sự muộn.
+Người khách ngồi yên. Lợi Lĩnh yêu Yến hai mươi năm không nói — Yến đợi — Yến đợi đủ — Yến cưới khác. Câu chuyện đêm này — không phải về cái chết — về sự muộn.
 
 Người đàn ông nhói. Hình ngồi Phong có yêu Hạ Vy đủ không? Hình bóng người đàn ông ấy Phong có nói chưa? Hình bóng ngồi Phong muộn không?
 
@@ -244,7 +244,7 @@ Anh có nói "anh yêu em" với người yêu cũ không?
 
 Người khách cố nhớ. Có. Có — người đàn ông nhớ rõ ràng — đêm cuối năm ba — ký túc xá — phòng cô gái ấy còn một bạn nữ đi về quê — cô ấy một mình — anh ấy sang phòng đối diện — gõ cửa. người yêu cũ mở. anh nói: "Anh yêu em." Đơn giản — bốn từ. cô gái ấy im — nhìn người khách — rồi gật. Hai đứa yêu từ đêm đó.
 
-Người đàn ông nhớ. anh ấy không muộn như Đức Vinh — anh đã nói. cô ấy đã biết. Hai đứa yêu nhau hai năm trước khi tốt nghiệp.
+Người đàn ông nhớ. anh ấy không muộn như Lợi Lĩnh — anh đã nói. cô ấy đã biết. Hai đứa yêu nhau hai năm trước khi tốt nghiệp.
 
 Sau tốt nghiệp 2017 — người khách và người yêu cũ ở chung phòng trọ Khâm Thiên — không phải phòng trọ sinh viên đối diện — phòng mới — chung cho hai đứa — chuẩn bị cưới sau hai năm làm.
 
@@ -256,8 +256,8 @@ Khải Phong nhói thêm. Đêm đó — người khách có gọi điện cô g
 
 Sau đó — anh nhận điện thoại bệnh viện.
 
-Bác tài liếc gương. "Vào đêm hai mươi ba. Con đã nhớ con yêu người yêu xưa — đã nói. Con không muộn như anh Đức Vinh. Đêm sau con sẽ nhớ rõ hơn — về việc làm — về cô gái ấy nhắn tin gì đêm cuối. Đừng vội."
+Bác tài liếc gương. "Vào đêm hai mươi ba. Con đã nhớ con yêu người yêu xưa — đã nói. Con không muộn như anh Lợi Lĩnh. Đêm sau con sẽ nhớ rõ hơn — về việc làm — về cô gái ấy nhắn tin gì đêm cuối. Đừng vội."
 
 Người khách gật.
 
-Đêm thứ hai mươi ba — người đàn ông đếm thêm. Xe đi tiếp. Phía sau — Hải Phòng khuất. Đức Vinh ở lại văn phòng — bàn Yến trong bóng tối — phong bì kraft đã về ngăn kéo. 
+Đêm thứ hai mươi ba — người đàn ông đếm thêm. Xe đi tiếp. Phía sau — Hải Phòng khuất. Lợi Lĩnh ở lại văn phòng — bàn Yến trong bóng tối — phong bì kraft đã về ngăn kéo. 

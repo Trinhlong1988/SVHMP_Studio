@@ -35,7 +35,7 @@ intensity_level: 0.55
 quang_memory_fragment: M6 (Khải Phong nhớ phòng trọ sau Hạ Vy mất — không dọn)
 object_sub_arc: TEMPORAL year 2017 vật 3 (thẻ hiến máu 2017 — sub-arc gần đủ)
 callback_target: none
-passenger_main: nu 28 Linh Đan Đà Nẵng (từ chối hiến máu cho bạn cùng phòng 2017 — bạn chết)
+passenger_main: nu 28 Ý Thơ Đà Nẵng (từ chối hiến máu cho bạn cùng phòng 2017 — bạn chết)
 signature_object: OBJ_THE_HIEN_MAU (thẻ đăng ký hiến máu cô vứt 2017)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Đà Nẵng
@@ -122,7 +122,7 @@ Cô gái khẽ quay đầu lại. Vuốt thẻ giấy. Hơi thở chậm lại.
 
 [pause:1000ms]
 
-"Em là Linh Đan. Hai mươi tám tuổi. Em ở Đà Nẵng — Liên Chiểu — quê. Em làm thiết kế đồ họa cho công ty quảng cáo Đà Nẵng."
+"Em là Ý Thơ. Hai mươi tám tuổi. Em ở Đà Nẵng — Liên Chiểu — quê. Em làm thiết kế đồ họa cho công ty quảng cáo Đà Nẵng."
 
 Giọng cô đều — chậm.
 
@@ -182,7 +182,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Linh Đan gật. Lệ rơi xuống thẻ giấy.
+Ý Thơ gật. Lệ rơi xuống thẻ giấy.
 
 "Em nhớ. Cô gái không thử khám tủy cho Nga — em ngại — em sợ kim — em lười. Em không phải lý do trực tiếp em mất — Nga có bệnh nặng — không chắc em hợp tủy. Nhưng em là một trong nhiều người có thể thử — em không thử. Em sống bảy năm với cảm giác lỗi."
 
@@ -198,7 +198,7 @@ Linh Đan gật. Lệ rơi xuống thẻ giấy.
 
 Xe chậm lại. Ngã ba Đà Nẵng — cây phi lao biển — bến không tên. Một tiếng chuông. Ngắn. Tan trong sương.
 
-Linh Đan cất thẻ vào ví. Đứng dậy.
+Ý Thơ cất thẻ vào ví. Đứng dậy.
 
 "Chào anh."
 
@@ -210,15 +210,15 @@ Cô gái bước xuống dưới đường.
 
 [pause:1200ms]
 
-Bên ngoài — Linh Đan đi vào sân bệnh viện đa khoa Liên Chiểu — bảo vệ đã mở cửa — đèn phòng tiếp tân sáng yếu.
+Bên ngoài — Ý Thơ đi vào sân bệnh viện đa khoa Liên Chiểu — bảo vệ đã mở cửa — đèn phòng tiếp tân sáng yếu.
 
-Cô gái đến bên quầy ấy. Lấy thẻ ra ngoài. Đặt thẻ lên quầy tiếp tân — cùng với một ghi chú nhỏ cô vừa viết tay: "Thẻ tôi đăng ký năm 2017 — không sử dụng. Tôi xin lỗi. Bây giờ tôi đã hiến tủy — không kịp cho bạn cùng phòng. Linh Đan." Cúi đầu trước quầy.
+Cô gái đến bên quầy ấy. Lấy thẻ ra ngoài. Đặt thẻ lên quầy tiếp tân — cùng với một ghi chú nhỏ cô vừa viết tay: "Thẻ tôi đăng ký năm 2017 — không sử dụng. Tôi xin lỗi. Bây giờ tôi đã hiến tủy — không kịp cho bạn cùng phòng. Ý Thơ." Cúi đầu trước quầy.
 
-Anh chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên quầy — Nga xuất hiện — cô gái hai mươi mốt — áo trắng — má hồng (không xanh xao như trong INCIDENT) — vỗ vai Linh Đan. Gật đầu nhẹ nhẹ nhàng.
+Anh chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên quầy — Nga xuất hiện — cô gái hai mươi mốt — áo trắng — má hồng (không xanh xao như trong INCIDENT) — vỗ vai Ý Thơ. Gật đầu nhẹ nhẹ nhàng.
 
 Người khách chớp lần nữa. Người tên Nga tan ra.
 
-Linh Đan ngẩng đầu. Lau lệ. Đi ra cửa bệnh viện.
+Ý Thơ ngẩng đầu. Lau lệ. Đi ra cửa bệnh viện.
 
 [pause:1500ms]
 
@@ -239,7 +239,7 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 Khải Phong ấy ngồi yên. Mở túi — đếm — hai mươi chín vật. Ba vật mang dấu năm 2017:
 - Mẩu giấy bản từ sách thầy Quỳnh Mai (đêm 22)
 - Nhãn ngày mua hộp thước T bố Đức Hùng (đêm 26)
-- Nhãn năm thẻ hiến máu Linh Đan (đêm này)
+- Nhãn năm thẻ hiến máu Ý Thơ (đêm này)
 
 Ba vật rời rạc — ba chủ — không quen nhau — không cùng tỉnh. Nhưng cùng năm 2017.
 
@@ -263,4 +263,4 @@ Bác tài liếc gương. "Vào đêm hai mươi chín. Ba vật cùng năm 2017
 
 Người khách gật. Không hỏi.
 
-Đêm thứ hai mươi chín — người đàn ông đếm thêm. Xe đi tiếp. Phía sau — Đà Nẵng khuất. Linh Đan ở lại sân bệnh viện — đứng cửa nhìn vào quầy tiếp tân — thẻ giấy còn trên quầy. 
+Đêm thứ hai mươi chín — người đàn ông đếm thêm. Xe đi tiếp. Phía sau — Đà Nẵng khuất. Ý Thơ ở lại sân bệnh viện — đứng cửa nhìn vào quầy tiếp tân — thẻ giấy còn trên quầy. 

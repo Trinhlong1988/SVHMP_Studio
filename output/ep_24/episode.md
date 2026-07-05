@@ -35,7 +35,7 @@ intensity_level: 0.55
 quang_memory_fragment: M5 (Khải Phong nhớ chi tiết phòng trọ chung sau tốt nghiệp + việc làm Hạ Vy)
 object_sub_arc: ngoài cluster temporal
 callback_target: none
-passenger_main: nu 60 Hồng Liên Hà Nam (từ chối đỡ học cháu chị họ — cháu chết trẻ)
+passenger_main: nu 60 Xuyến Nhài Hà Nam (từ chối đỡ học cháu chị họ — cháu chết trẻ)
 signature_object: OBJ_VO_VIET (cuốn vở cháu viết hồi tiểu học)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Hà Nam
@@ -120,7 +120,7 @@ Người bà quay đầu lại. Vuốt vở trên đùi. Hơi thở đều.
 
 [pause:1000ms]
 
-"Em là Hồng Liên. Sáu mươi tuổi. Em ở Đại Lộc — Hà Nam — quê. Em làm cán bộ xã đó — về hưu hai năm trước."
+"Em là Xuyến Nhài. Sáu mươi tuổi. Em ở Đại Lộc — Hà Nam — quê. Em làm cán bộ xã đó — về hưu hai năm trước."
 
 Giọng bà trầm — chậm — đều — giọng đã quen kể.
 
@@ -188,7 +188,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Hồng Liên gật. Mắt đỏ — không khóc — đỏ lâu ngày.
+Xuyến Nhài gật. Mắt đỏ — không khóc — đỏ lâu ngày.
 
 "Em nhớ. Cô gái từ chối đỡ học phí Mai Anh — em ngại — em không phải lý do trực tiếp em mất — nhưng em là một trong những người có thể giúp lúc em cần. Đứa em không giúp. Bóng người con gái ấy không thể chuộc — em chỉ có thể đỡ hai em khác — như cách nói em đã sửa."
 
@@ -204,7 +204,7 @@ Hồng Liên gật. Mắt đỏ — không khóc — đỏ lâu ngày.
 
 Xe chậm lại. Ngã ba Hà Nam — cây gạo già — bến không tên — đèn vàng trên cây gạo. Một tiếng chuông. Ngắn. Tan trong sương.
 
-Hồng Liên ôm vở. Đứng dậy chậm lại.
+Xuyến Nhài ôm vở. Đứng dậy chậm lại.
 
 "Chào con."
 
@@ -216,15 +216,15 @@ Bà bước xuống — chân chạm đất ướt.
 
 [pause:1200ms]
 
-Bên ngoài — Hồng Liên đi vào trường tiểu học Đại Lộc — bảo vệ đã mở cổng — đèn hành lang còn sáng. Văn phòng giáo viên tầng một — cửa đã mở.
+Bên ngoài — Xuyến Nhài đi vào trường tiểu học Đại Lộc — bảo vệ đã mở cổng — đèn hành lang còn sáng. Văn phòng giáo viên tầng một — cửa đã mở.
 
 Bà cụ đã đến nơi đó. Đặt vở lên bàn giáo viên — chính giữa bàn — bìa vở hướng lên — nhãn "Mai Anh — Lớp 4A — 2010" lộ rõ ràng. Cúi đầu một lúc.
 
-Người đàn ông chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên bàn giáo viên — Mai Anh xuất hiện — áo trắng học sinh — cài nơ đỏ tóc — đứng cạnh vở — vuốt tóc Hồng Liên một lần. Mỉm cười — như tha thứ.
+Người đàn ông chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên bàn giáo viên — Mai Anh xuất hiện — áo trắng học sinh — cài nơ đỏ tóc — đứng cạnh vở — vuốt tóc Xuyến Nhài một lần. Mỉm cười — như tha thứ.
 
 Khải Phong ấy chớp lần nữa. Mai Anh tan ra.
 
-Hồng Liên ngẩng đầu. Lau khóe mắt. Đứng dậy. Đi ra cửa văn phòng — quay lại nhìn vở trên bàn — vở còn ở đó.
+Xuyến Nhài ngẩng đầu. Lau khóe mắt. Đứng dậy. Đi ra cửa văn phòng — quay lại nhìn vở trên bàn — vở còn ở đó.
 
 [pause:1500ms]
 
@@ -272,4 +272,4 @@ Bác tài liếc gương. "Vào đêm hai mươi tư. Con nhớ chi tiết hơn 
 
 Khải Phong gật.
 
-Đêm thứ hai mươi tư — người khách đếm thêm. Xe đi tiếp. Phía sau — Hà Nam khuất. Hồng Liên ở lại văn phòng giáo viên — vở Mai Anh trên bàn. 
+Đêm thứ hai mươi tư — người khách đếm thêm. Xe đi tiếp. Phía sau — Hà Nam khuất. Xuyến Nhài ở lại văn phòng giáo viên — vở Mai Anh trên bàn. 

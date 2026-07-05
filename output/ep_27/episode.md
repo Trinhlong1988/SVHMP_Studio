@@ -35,7 +35,7 @@ intensity_level: 0.55
 quang_memory_fragment: M6 (Khải Phong nhớ bạn cùng nhóm đồ án kiến trúc)
 object_sub_arc: ngoài cluster temporal
 callback_target: none
-passenger_main: nu 45 Mỹ Linh Sài Gòn (hứa với bạn tiểu học giúp chữa bệnh — đi nước ngoài quên)
+passenger_main: nu 45 Kiều Thương Sài Gòn (hứa với bạn tiểu học giúp chữa bệnh — đi nước ngoài quên)
 signature_object: OBJ_ANH_CHUNG (ảnh chung lớp tiểu học bạn tặng)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Phú Thọ
@@ -120,7 +120,7 @@ Cô gái khẽ quay đầu lại. Vuốt khung ảnh.
 
 [pause:1000ms]
 
-"Em là Mỹ Linh. Bốn mươi lăm tuổi. Em sinh ở Phú Thọ — Vĩnh Lộc. Người con gái gái ấy gái sống Hoa Kỳ từ năm em hai mươi mốt. Hình ảnh người con gái ấy vừa về Việt Nam tuần trước."
+"Em là Kiều Thương. Bốn mươi lăm tuổi. Em sinh ở Phú Thọ — Vĩnh Lộc. Người con gái gái ấy gái sống Hoa Kỳ từ năm em hai mươi mốt. Hình ảnh người con gái ấy vừa về Việt Nam tuần trước."
 
 Giọng cô có nét Việt kiều — nhẹ — đôi khi chèn cách phát âm tiếng Anh.
 
@@ -196,7 +196,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Mỹ Linh gật. Lệ rơi xuống khung.
+Kiều Thương gật. Lệ rơi xuống khung.
 
 "Em nhớ. Cô gái hứa Hằng giúp khi cần — em giữ lại. Đứa em không về thử hiến thận — em không gọi điện. Bóng người con gái ấy không thể chuộc Hằng — em chỉ có thể đem khung trả về trường tiểu học hai đứa em học chung."
 
@@ -212,7 +212,7 @@ Mỹ Linh gật. Lệ rơi xuống khung.
 
 Xe chậm lại. Ngã ba Phú Thọ — cây gạo cổ — bến không tên. Tiếng chuông ngân nhẹ. Một hồi. Lặng.
 
-Mỹ Linh gói khung vào vải lụa. Đứng dậy.
+Kiều Thương gói khung vào vải lụa. Đứng dậy.
 
 "Chào anh."
 
@@ -224,15 +224,15 @@ Cô gái bước xuống dưới đường.
 
 [pause:1200ms]
 
-Bên ngoài — Mỹ Linh đi vào sân trường tiểu học Vĩnh Lộc — bảo vệ đã mở cổng — đèn hành lang còn sáng. Văn phòng giáo viên tầng một — cửa đã mở.
+Bên ngoài — Kiều Thương đi vào sân trường tiểu học Vĩnh Lộc — bảo vệ đã mở cổng — đèn hành lang còn sáng. Văn phòng giáo viên tầng một — cửa đã mở.
 
 Cô gái đã đến nơi đó. Đặt khung ảnh lên bàn giáo viên — chính giữa. Cúi đầu một lúc.
 
-Anh ấy chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên bàn giáo viên — Hằng xuất hiện — áo bà ba xanh — đứng cạnh khung — vuốt tóc Mỹ Linh. Mỉm cười nhẹ — như tha thứ.
+Anh ấy chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên bàn giáo viên — Hằng xuất hiện — áo bà ba xanh — đứng cạnh khung — vuốt tóc Kiều Thương. Mỉm cười nhẹ — như tha thứ.
 
 Người đàn ông chớp lần nữa. Người tên Hằng tan ra.
 
-Mỹ Linh ngẩng đầu. Lau lệ. Đi ra cửa văn phòng.
+Kiều Thương ngẩng đầu. Lau lệ. Đi ra cửa văn phòng.
 
 [pause:1500ms]
 
@@ -250,7 +250,7 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Người đàn ông ngồi yên. Mỹ Linh hứa giúp Hằng — không giúp — Hằng đi rất xa.
+Người đàn ông ngồi yên. Kiều Thương hứa giúp Hằng — không giúp — Hằng đi rất xa.
 
 Anh ấy nhói — anh có hứa với ai mà không giữ không? Hạ Vy có nhờ người khách điều gì người đàn ông không kịp giúp?
 
@@ -274,4 +274,4 @@ Bác tài liếc gương. "Vào đêm hai mươi bảy. Con bắt đầu nhớ t
 
 Khải Phong gật. Lệ rơi xuống ghế — không ai thấy.
 
-Đêm thứ hai mươi bảy — người khách đếm thêm. Xe đi tiếp. Phía sau — Phú Thọ khuất. Mỹ Linh ở lại trường tiểu học — đứng ngoài cửa văn phòng — nhìn khung ảnh trên bàn. 
+Đêm thứ hai mươi bảy — người khách đếm thêm. Xe đi tiếp. Phía sau — Phú Thọ khuất. Kiều Thương ở lại trường tiểu học — đứng ngoài cửa văn phòng — nhìn khung ảnh trên bàn. 

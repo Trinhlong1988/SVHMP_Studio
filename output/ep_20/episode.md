@@ -35,7 +35,7 @@ intensity_level: 0.60 (+0.05 milestone bump)
 quang_memory_fragment: M4 PEAK (Khải Phong nhớ Hạ Vy mất — đêm mưa — con đường vành đai)
 object_sub_arc: REVEAL CLUSTER (Khải Phong xếp 4 vật cúc, ngẫm)
 callback_target: ep_08 (radio play cô y tá EP08 bài hát) + ep_14 (Tâm Đan symbol)
-passenger_main: nam 27 Nhật Minh Cầu Giấy (cảm giác mất chính mình — quên người yêu vì sự nghiệp)
+passenger_main: nam 27 Vĩ Huân Cầu Giấy (cảm giác mất chính mình — quên người yêu vì sự nghiệp)
 signature_object: OBJ_SO_TAY (sổ tay người yêu cũ tặng — Khải Phong sẽ nhớ chữ tay tròn)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Cầu Giấy
@@ -131,7 +131,7 @@ Khải Phong quay đầu lại. Vuốt sổ tay. Hơi thở chậm lại.
 
 [pause:1000ms]
 
-"Tôi là Nhật Minh. Hai mươi bảy tuổi. Tôi ở Cầu Giấy — phòng trọ phố Trần Quốc Hoàn. Tôi làm marketing — công ty công nghệ Hà Nội."
+"Tôi là Vĩ Huân. Hai mươi bảy tuổi. Tôi ở Cầu Giấy — phòng trọ phố Trần Quốc Hoàn. Tôi làm marketing — công ty công nghệ Hà Nội."
 
 Giọng anh đều — mệt.
 
@@ -189,7 +189,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Nhật Minh gật.
+Vĩ Huân gật.
 
 "Tôi nhớ. Người đàn ông quên người yêu vì lương. Tôi đây đây đây không trách Hoài chia tay — em đã đợi đủ. Hình bóng người kể trách tôi không cân bằng. Sổ tay này — em viết cho tôi — tôi không viết — sổ trống vì tôi trống."
 
@@ -205,7 +205,7 @@ Nhật Minh gật.
 
 Xe chậm lại. Ngã ba Cầu Giấy — cây phượng già — bến không tên. Chuông xe vọng. Nhịp đơn. Im.
 
-Nhật Minh đứng dậy.
+Vĩ Huân đứng dậy.
 
 "Chào anh."
 
@@ -213,19 +213,19 @@ Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim
 
 Bác tài: "Chưa tới lúc."
 
-Nhật Minh bước xuống.
+Vĩ Huân bước xuống.
 
 [pause:1200ms]
 
-Bên ngoài — Nhật Minh đi vào ngõ nhỏ Trần Quốc Hoàn. Phòng trọ xưa — tầng hai — đèn phòng tắt — chủ đã ngủ.
+Bên ngoài — Vĩ Huân đi vào ngõ nhỏ Trần Quốc Hoàn. Phòng trọ xưa — tầng hai — đèn phòng tắt — chủ đã ngủ.
 
 Anh đặt sổ tay trước cửa phòng. Quỳ một lúc. Đứng dậy.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ. Bên hẻm — Hoài xuất hiện — mặc áo dài trắng — không vào phòng — đứng nhìn Nhật Minh từ xa. Mỉm cười nhẹ nhàng.
+Khải Phong chớp mắt — nhìn qua cửa sổ. Bên hẻm — Hoài xuất hiện — mặc áo dài trắng — không vào phòng — đứng nhìn Vĩ Huân từ xa. Mỉm cười nhẹ nhàng.
 
 Khải Phong chớp lần nữa. Người tên Hoài tan ra.
 
-Nhật Minh quay lại — đi xuống hẻm. Không nhìn lại.
+Vĩ Huân quay lại — đi xuống hẻm. Không nhìn lại.
 
 [pause:1500ms]
 
@@ -235,7 +235,7 @@ Nhật Minh quay lại — đi xuống hẻm. Không nhìn lại.
 
 Xe lăn bánh — rời ngã ba Cầu Giấy.
 
-Ghế ba bên Khải Phong trống. Trên sàn — một mảnh giấy nhỏ rơi (mảnh trang sổ bong khi Nhật Minh đặt). Khải Phong nhặt. Trên mảnh giấy — chữ tay tròn nhỏ — mực xanh — viết: "Yêu anh. Hoài."
+Ghế ba bên Khải Phong trống. Trên sàn — một mảnh giấy nhỏ rơi (mảnh trang sổ bong khi Vĩ Huân đặt). Khải Phong nhặt. Trên mảnh giấy — chữ tay tròn nhỏ — mực xanh — viết: "Yêu anh. Hoài."
 
 Khải Phong đọc. Khải Phong nhói. Nét chữ này — Khải Phong đã thấy ở đâu đó.
 

@@ -35,7 +35,7 @@ intensity_level: 0.55
 quang_memory_fragment: M6 (Khải Phong nhớ bố cũng KTS — cầm thước T)
 object_sub_arc: TEMPORAL year 2017 vật 2 (thước T bố mua 2017)
 callback_target: none
-passenger_main: nam 38 Đức Hùng Hà Nội (bố KTS mất — con ngại học theo)
+passenger_main: nam 38 Thế Quyết Hà Nội (bố KTS mất — con ngại học theo)
 signature_object: OBJ_THUOC_T (bộ thước bố mua 2017 — bố mất sau)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Hoài Đức
@@ -122,7 +122,7 @@ Người đàn ông quay đầu lại. Vuốt cán thước.
 
 [pause:1000ms]
 
-"Tôi là Đức Hùng. Ba mươi tám tuổi. Tôi ở Hoài Đức — quê. Tôi làm kế toán — văn phòng nhỏ phố Cầu Giấy Hà Nội."
+"Tôi là Thế Quyết. Ba mươi tám tuổi. Tôi ở Hoài Đức — quê. Tôi làm kế toán — văn phòng nhỏ phố Cầu Giấy Hà Nội."
 
 Giọng anh đều — chậm — không vội.
 
@@ -186,7 +186,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Đức Hùng gật. Mắt đỏ — không khóc.
+Thế Quyết gật. Mắt đỏ — không khóc.
 
 "Tôi nhớ. Tôi không học kiến trúc theo bố — bố không trách lúc sống. Văn phòng Hoài An tan vì tôi không tiếp nối. Bộ thước inox bố mua năm hai nghìn không trăm mười bảy — bố dùng một năm — chưa hết khả năng — đã tan cùng bố."
 
@@ -202,7 +202,7 @@ Bác tài cất lời.
 
 Xe chậm lại. Ngã ba Hoài Đức — cây gạo cổ — bến không tên — đèn vàng trên cây gạo. Chuông xe ngân. Một tiếng. Tan.
 
-Đức Hùng đóng hộp gỗ mun. Đứng dậy chậm lại.
+Thế Quyết đóng hộp gỗ mun. Đứng dậy chậm lại.
 
 "Chào anh."
 
@@ -214,15 +214,15 @@ Người đàn ông bước xuống dưới.
 
 [pause:1200ms]
 
-Bên ngoài — Đức Hùng đi vào sân trước tòa văn phòng Hoài An. Cửa kính đã đóng — không ai trong. Anh đặt hộp thước T trước cửa kính — đặt chính giữa — biển hiệu Hoài An vẫn còn trên cửa — chưa tháo.
+Bên ngoài — Thế Quyết đi vào sân trước tòa văn phòng Hoài An. Cửa kính đã đóng — không ai trong. Anh đặt hộp thước T trước cửa kính — đặt chính giữa — biển hiệu Hoài An vẫn còn trên cửa — chưa tháo.
 
 Cúi đầu trước cửa. Một lúc.
 
-Người khách chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên cửa kính — bố Đức Hùng xuất hiện — ông sáu mươi tuổi — áo blouse xanh — tay cầm bút vẽ ra — chạm vào vai con trai. Khẽ cười.
+Người khách chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên cửa kính — bố Thế Quyết xuất hiện — ông sáu mươi tuổi — áo blouse xanh — tay cầm bút vẽ ra — chạm vào vai con trai. Khẽ cười.
 
 Người đàn ông chớp lần nữa. Người bố tan ra.
 
-Đức Hùng ngẩng đầu. Đi ra khỏi sân — không nhìn lại.
+Thế Quyết ngẩng đầu. Đi ra khỏi sân — không nhìn lại.
 
 [pause:1500ms]
 
@@ -240,7 +240,7 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Khải Phong ngồi yên. Mở túi — đếm — hai mươi sáu vật. Hai vật mang dấu năm 2017: mẩu giấy bản từ sách thầy Quỳnh Mai (đêm 22) — nhãn hộp thước T bố Đức Hùng (đêm này).
+Khải Phong ngồi yên. Mở túi — đếm — hai mươi sáu vật. Hai vật mang dấu năm 2017: mẩu giấy bản từ sách thầy Quỳnh Mai (đêm 22) — nhãn hộp thước T bố Thế Quyết (đêm này).
 
 Trùng hợp? Hay sub-arc?
 
@@ -262,4 +262,4 @@ Bác tài liếc gương. "Vào đêm hai mươi sáu. Vật thứ hai mang dấ
 
 Người đàn ông ấy gật. Không hỏi.
 
-Đêm thứ hai mươi sáu — anh đếm thêm. Xe đi tiếp về phía đường vành đai. Phía sau — Hoài Đức khuất. Đức Hùng ở lại sân văn phòng Hoài An — đứng nhìn hộp thước T trước cửa kính. 
+Đêm thứ hai mươi sáu — anh đếm thêm. Xe đi tiếp về phía đường vành đai. Phía sau — Hoài Đức khuất. Thế Quyết ở lại sân văn phòng Hoài An — đứng nhìn hộp thước T trước cửa kính. 
