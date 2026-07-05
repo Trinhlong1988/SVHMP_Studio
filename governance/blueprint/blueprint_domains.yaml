@@ -556,19 +556,11 @@ domains:
     responsibility: "AI DECISION LAYER (finding #6 ARCH_AUDIT): quyet dinh nhip truyen TRUOC khi generator viet — dialogue/narration ratio, emotion/fear/reveal curve, pacing, scene/information/silence budget, character focus, POV."
     non_responsibility: "KHONG viet text (generator), KHONG chon noi dung su kien (story_planner), KHONG bia so — moi threshold/curve phai calibrate tu EP01 golden theo R195."
     source_of_truth:
-      - status: planned
-        planned_path: bible/42_decision_policy.yaml
-        owner: decision_engine
-        reason_not_exists_yet: "Policy curve/ratio chua ton tai — phai calibrate tu EP01 golden (R195), khong duoc bia 45%/0.72."
-        target_milestone: M2_planner_generator
-        blocking_dependency: "EP01 golden production output (R196) lam du lieu calibrate"
+      - {path: bible/42_decision_policy.yaml, status: exists}   # G6a (5/7): calibrate_from output/ep_01/episode_golden_text.md, 11/12 knob (suspense_curve BLOCKED, khong bia — xem file)
     manager:
-      status: planned
-      planned_path: tools/decision_engine.py
+      status: exists
+      path: tools/decision_engine.py   # G6a D3 (5/7): manager toi thieu, CHI phan doc bible/42 (khong sinh text, khong phu thuoc story_planner)
       owner: decision_engine
-      reason_not_exists_yet: "Domain moi them theo audit 3/7; chua khoi cong."
-      target_milestone: M2_planner_generator
-      blocking_dependency: "decision policy (M2) + story_planner manager"
     schema:
       status: planned
       planned_path: governance/blueprint/schemas/decision_schema.yaml
@@ -577,11 +569,9 @@ domains:
       target_milestone: M2_planner_generator
       blocking_dependency: "Mr.Long duyet format budget sheet"
     validator:
-      status: planned
-      planned_path: tools/decision_validator.py
+      status: exists
+      path: tools/decision_policy_check.py   # G6a D2 (5/7, dat ten dung theo TASK_G6_STORY_PLANNER.md#D2): validate bible/42 khop bp6 contract (range/calibrated_from/knob-dong)
       owner: decision_engine
-      reason_not_exists_yet: "Phu thuoc decision schema chua co."
-      target_milestone: M2_planner_generator
       blocking_dependency: "decision schema (M2)"
     reader: [generator, qa_runtime]
     writer: [mr_long, decision_engine]

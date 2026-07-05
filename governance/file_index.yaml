@@ -1404,5 +1404,33 @@ files:
     domain: g4_world
     status: active
     tier: 1
+  tools/calibrate_decision_policy.py:
+    domain: g6_story_planner
+    status: active
+    tier: 1
+  bible/42_decision_policy.yaml:
+    domain: g6_story_planner
+    status: candidate
+    tier: 1
+  tools/decision_policy_check.py:
+    domain: g6_story_planner
+    status: active
+    tier: 1
+  tools/decision_engine.py:
+    domain: g6_story_planner
+    status: active
+    tier: 1
+  tools/g6_story_planner_check.py:
+    domain: g6_story_planner
+    status: active
+    tier: 1
+  tests/test_g6a_decision_engine.py:
+    domain: g6_story_planner
+    status: active
+    tier: 1
+  reports/G6A_REPORT.md:
+    domain: g6_story_planner
+    status: active
+    tier: 1
 generated_by: tools/registry_triage.py
-total: 351
+total: 358

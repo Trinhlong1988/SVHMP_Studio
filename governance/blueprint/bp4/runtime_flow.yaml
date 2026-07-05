@@ -9,9 +9,8 @@ flow:
        reason_not_exists_yet: "Ke hoach hien Mr.Long dieu phoi tay", target_milestone: M2_planner_generator,
        blocking_dependency: "event ledger + timeline manager (M1)"}}
   - {hop: 2, domain: decision_engine, input: episode_plan, output: budget_sheet,
-     status: planned, via: {status: planned, planned_path: tools/decision_engine.py, owner: decision_engine,
-       reason_not_exists_yet: "Domain moi audit 3/7, chua khoi cong", target_milestone: M2_planner_generator,
-       blocking_dependency: "decision policy calibrate tu EP01 golden (R195)"}}
+     status: planned, via: {status: exists, path: tools/decision_engine.py},
+     note: "Manager doc-only ton tai that (G6a D3, 5/7) - hop status van 'planned' vi input episode_plan (hop 1 story_planner) chua ton tai, budget_sheet day du can G6b"}
   - {hop: 3, domain: generator, input: "budget_sheet + canon (world/character/object/dialogue/event)", output: episode_md,
      status: exists, via: {status: exists, path: prompts/ep_scaffold_template.md},
      note: "Dang chay THAT dang prompt-based (nguoi + LLM) — EP01 episode.md ton tai; tool dong goi = M2"}

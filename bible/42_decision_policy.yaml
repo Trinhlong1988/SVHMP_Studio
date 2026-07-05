@@ -1,0 +1,163 @@
+# BIBLE 42 — DECISION POLICY (G6a field-hoa slot bp6/decision_contract.yaml, TASK_G6_STORY_PLANNER)
+# R195: MOI so deu calibrate_from bible/31 golden EP01 that (khong bia). Xem
+# tools/calibrate_decision_policy.py de tai lap moi con so bang may (khong tin tay).
+# status: candidate — Builder KHONG tu lock, Mr.Long ky sau audit.
+
+meta:
+  version: 1.0.0
+  status: candidate
+  owner_domain: decision_engine
+  calibrated_from: output/ep_01/episode_golden_text.md (bible/31 golden_text_ep01, LOCKED Mr.Long 30/6)
+  calibration_tool: tools/calibrate_decision_policy.py
+  scenes_order: [HOOK, SETUP, INCIDENT, REVEAL, PAYOFF, CLIFFHANGER]   # dem THAT 6 section golden
+
+# ============================================================
+# 12 KNOB — GIA TRI THAT (dung DUNG method cua tung knob trong bp6/decision_contract.yaml)
+# ============================================================
+knobs:
+
+  dialogue_ratio:
+    value: 0.3564
+    calibrated_from:
+      source: output/ep_01/episode_golden_text.md
+      method: "dem word-count thoai/tong tren toan bo golden (method dung dung nhu bp6 da ghi)"
+      evidence: "dialogue_words=1164 / total_words=3266 (script calibrate_decision_policy.py, ham compute_word_split — doan van bat dau '— ' hoac co ngoac kep = thoai, phan con lai = narration)"
+
+  narration_ratio:
+    value: 0.6436
+    calibrated_from:
+      source: output/ep_01/episode_golden_text.md
+      method: "1 - dialogue_ratio (rang buoc toan hoc bp6 da khai, khong phai so calibrate rieng)"
+      evidence: "1 - 0.3564 = 0.6436"
+
+  emotion_curve:
+    type: curve
+    per_scene:
+      HOOK: 0.70
+      SETUP: 0.60
+      INCIDENT: 0.65
+      REVEAL: 0.95
+      PAYOFF: 0.70
+      CLIFFHANGER: 0.65
+    calibrated_from:
+      source: output/ep_01/episode_golden_text.md
+      method: "trich curve tu emotion_tags golden (bang '## EMOTION CURVE v7' dong ~579-589 golden text) + bible/09_emotion_intensity (xac nhan level tong the ep_1_to_10=0.45, curve nay la breakdown per-scene chi tiet hon)"
+      evidence: "moi diem = TONG cac gia tri cam xuc liet ke trong bang EMOTION CURVE v7 cho section do (vd REVEAL: melancholic 0.40+calm 0.20+sad 0.25+afraid 0.10=0.95) — cong thuc composite tu-dinh (SUM cac emo focus), khong bia gia tri tung cam xuc (tung so deu doc truc tiep tu bang golden)"
+
+  fear_curve:
+    type: curve
+    per_scene:
+      HOOK: 0.0
+      SETUP: 0.3
+      INCIDENT: 0.0
+      REVEAL: 0.1
+      PAYOFF: 0.0
+      CLIFFHANGER: 0.0
+    calibrated_from:
+      source: output/ep_01/episode_golden_text.md
+      method: "trich tu 'afraid' value trong bang EMOTION CURVE v7 golden (method bp6 ghi 'muc_so_hai suspense_profile golden' — khong co khai niem 'suspense_profile' rieng trong golden, dung truc tiep gia tri 'afraid' da co san)"
+      evidence: "SETUP dong 584 'afraid 0.30'; REVEAL dong 586 'afraid 0.10'; cac scene khac KHONG liet ke 'afraid' trong bang -> doc la 0.0 (quy uoc: bang EMOTION CURVE chi liet ke cam xuc TROI hon cua scene, vang mat = khong noi troi, khong phai bia so)"
+
+  suspense_curve:
+    type: curve
+    status: BLOCKED_NOT_CALIBRATED
+    per_scene: null
+    reason_not_calibrated: |
+      Method bp6 ghi "map template bible/25 vao scene golden" — nhung bible/25_suspense_arc_templates.yaml
+      chi dinh nghia 6 arc CATEGORICAL (case_investigation/truth_approach/...) danh cho passenger
+      backstory EP51-90, KHONG co curve SO 0-1 theo scene, VA EP01 la pilot/establish-phase
+      (khong phai passenger-arc episode) nen khong khop template nao trong 6 cai do. Golden text
+      cung KHONG co bang "suspense_profile" so nhu emotion_curve co. Tu dinh 1 cong thuc quy doi
+      beat-label (TÒ MÒ/BẤT AN/...) sang so se la BIA SO (vi pham R195) — KHONG lam. Can Mr.Long
+      quyet: (a) dinh nghia lai method do suspense_curve cho phu hop EP establish-phase, hoac
+      (b) doi calibrate tu 1 golden sample khac (EP51+) THAT dung template bible/25, hoac
+      (c) chap nhan tam thoi dung fear_curve lam proxy (co RFC rieng).
+    calibrated_from: null
+
+  reveal_curve:
+    type: curve
+    per_scene:
+      HOOK: 0
+      SETUP: 1
+      INCIDENT: 4
+      REVEAL: 3
+      PAYOFF: 0
+      CLIFFHANGER: 2
+    calibrated_from:
+      source: output/ep_01/episode_golden_text.md
+      method: "dem fact nha/scene tren golden (method bp6 dung nhu da ghi)"
+      evidence: "dem TAY co trich dan cau THAT — xem REVEAL_FACT_EVIDENCE trong tools/calibrate_decision_policy.py. Dinh nghia 'fact' = thong tin CU THE MOI lan dau xuat hien lien quan cot truyen (KHONG tinh mo ta khong khi thuan tuy). VD INCIDENT=4: ten Ha-Vy (dong 254) + quan he tu lop 11 (dong 256) + ly do tang dong ho (dong 258-260) + Ha-Vy da mat 8 nam truoc (dong 244)."
+
+  pacing:
+    type: enum
+    per_scene:
+      HOOK: rat_cham
+      SETUP: cham
+      INCIDENT: cham
+      REVEAL: cham
+      PAYOFF: cham
+      CLIFFHANGER: rat_cham
+    calibrated_from:
+      source: output/ep_01/episode_golden_text.md
+      method: "gan nhan pacing scene golden lam chuan doi chieu (method bp6 ghi), NHUNG doi tin hieu do: KHONG dung wpm tu section-header timestamp (phat hien khong dang tin — xem finding duoi), dung avg_sentence_words/scene thay the (metric doc lap, van tu golden that)"
+      evidence: "avg_sentence_words: HOOK=20.23 SETUP=10.48 INCIDENT=10.31 REVEAL=10.75 PAYOFF=11.53 CLIFFHANGER=15.01 (script calibrate_decision_policy.py). Bucket nguong TU-DINH nhung bam theo metadata THAT co san dong ~573 golden ('avg_sentence_words target 7-9') + bible/01 bimodal rule (cau cut 3-7 tu vs cau dai 60+ tu): <6=nhanh, 6-9=vua, 9-12=cham, >=12=rat_cham."
+      finding: "wpm tinh tu section-header timestamp (vd '0:00—0:20') cho ra so PHI LY (HOOK=789wpm, CLIFFHANGER=469wpm) — mau thuan voi target 142wpm ghi ro dong 68-71 CHINH golden text nay. Ket luan: header timestamp la uoc luong SOAN THAO cu (tu cac ban draft v6/v7 khac nhau), khong phai do dac tren audio that render (golden_audio_ep01_locked la EP01_FULL_v103.mp3, khac version voi header timestamp nay). KHONG dung wpm lam calibration evidence duoc."
+
+  scene_budget:
+    value: 6
+    calibrated_from:
+      source: output/ep_01/episode_golden_text.md
+      method: "dem section golden (HOOK/SETUP/...) — method dung dung bp6 da ghi"
+      evidence: "dem truc tiep 6 header '## N. TEN' (HOOK/SETUP/INCIDENT/REVEAL/PAYOFF/CLIFFHANGER), khong tinh block INTRO thuong hieu Hac Da Ky dau file (dong 1-53, khong danh so section, la cold-open truoc dong ho story-clock 0:00)"
+
+  information_budget:
+    value: 4
+    calibrated_from:
+      source: output/ep_01/episode_golden_text.md
+      method: "dem fact moi/scene golden (method dung bp6 da ghi)"
+      evidence: "max cua reveal_curve (xem knob reveal_curve o tren) = 4 (scene INCIDENT). Dung cung 1 phep dem fact, information_budget la CEILING (max), reveal_curve la CURVE (list) — 2 knob chia se cung nguon do."
+
+  silence_budget:
+    value: 8
+    calibrated_from:
+      source: output/ep_01/episode_golden_text.md
+      method: "dem [pause:*ms] golden theo scene, lay max lam tran budget (method dung bp6 da ghi)"
+      evidence: "dem so marker [pause:Nms]/scene: HOOK=0 SETUP=1 INCIDENT=2 REVEAL=8 PAYOFF=2 CLIFFHANGER=7 (script calibrate_decision_policy.py). Max=8 (REVEAL, scene co nhieu khoang lang nhat — hop ly vi day la beat NGHẸN cao trao cam xuc)."
+
+  character_focus:
+    type: enum
+    per_scene:
+      HOOK: Khai-Phong
+      SETUP: Khai-Phong
+      INCIDENT: Khai-Phong
+      REVEAL: Khai-Phong
+      PAYOFF: Khai-Phong
+      CLIFFHANGER: Co_gai_ghe_bay_moi
+    calibrated_from:
+      source: output/ep_01/episode_golden_text.md
+      method: "focal per scene golden (method dung bp6 da ghi)"
+      evidence: "Khai-Phong la nhan vat quan sat/hanh dong chinh xuyen HOOK-PAYOFF (dong 100-496). CLIFFHANGER doi focal sang 'Co_gai_ghe_bay_moi' (dung dung ten trong bible/31 characters_locked: 'Cô_gái_ghế_bảy_mới', dong 33) — Khai-Phong da roi xe (dong 486-488), CLIFFHANGER hoan toan theo goc nhin co gai moi (dong 502-524)."
+
+  pov:
+    type: enum
+    values_defined_this_pack: [third_person_limited_khai_phong, third_person_limited_new_passenger]
+    per_scene:
+      HOOK: third_person_limited_khai_phong
+      SETUP: third_person_limited_khai_phong
+      INCIDENT: third_person_limited_khai_phong
+      REVEAL: third_person_limited_khai_phong
+      PAYOFF: third_person_limited_khai_phong
+      CLIFFHANGER: third_person_limited_new_passenger
+    calibrated_from:
+      source: output/ep_01/episode_golden_text.md
+      method: "gan nhan POV scene golden (method dung bp6 da ghi)"
+      evidence: "enum POV CHUA duoc dinh nghia san trong bible/01 (chi ghi 'cu the chot khi ky bible/42' — dung task nay). Em TU DE XUAT 2 gia tri dua tren quan sat THAT golden: HOOK-PAYOFF nguoi ke thu 3 gioi han theo Khai-Phong (nhin qua mat/suy nghi anh); CLIFFHANGER chuyen sang nguoi ke thu 3 gioi han theo co gai moi. Can Mr.Long xac nhan ten enum nay co du dung cho 90 tap khong, hay can them variant (vd nguoi ke thu nhat neu co tap khac dung)."
+
+# ============================================================
+# TONG KET — 11/12 knob calibrate xong, 1 BLOCKED (khong bia so, R195)
+# ============================================================
+calibration_summary:
+  calibrated: 11
+  blocked: 1
+  blocked_knob: suspense_curve
+  blocked_reason_short: "method bp6 (bible/25 template) khong khop EP01 pilot; khong co so thay the that -> de trong that, khong bia"
