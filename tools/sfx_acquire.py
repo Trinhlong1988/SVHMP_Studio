@@ -18,7 +18,7 @@ Usage:
   python tools/sfx_acquire.py --full
   python tools/sfx_acquire.py --gen-with-ace-step --asset piano_low_C
 """
-import os, sys, io, json, argparse, hashlib, subprocess, time, shutil
+import os, sys, io, json, argparse, hashlib, subprocess, time, shutil, logging
 from pathlib import Path
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', line_buffering=True)
@@ -410,8 +410,13 @@ def generate_via_ace_step(asset_id, spec):
     """Route to ACE-Step local port 7865 for AI generation."""
     print(f"[AI-gen] {asset_id} via ACE-Step port {ACE_STEP_PORT}")
     print(f"  prompt: {spec.get('ace_step_prompt', '')}")
-    print(f"  TODO: implement gradio_client call to ACE-Step API")
-    # placeholder — Mr.Long sẽ manual gen via ACE-Step webui hoặc em implement sau
+    # NOT IMPLEMENTED — tracked at governance/TECH_DEBT.md#DEBT-002 (không tự
+    # implement call API thật ở đây: cần ACE-Step service/API key thật, ngoài
+    # phạm vi 1 fix code). placeholder — Mr.Long sẽ manual gen via ACE-Step webui.
+    logging.warning(
+        f"[NOT-IMPLEMENTED][DEBT-002] {asset_id}: gradio_client call to ACE-Step "
+        f"API chưa implement — xem governance/TECH_DEBT.md#DEBT-002"
+    )
     return None
 
 
@@ -445,8 +450,13 @@ def acquire_asset(asset_id, dry_run=False, force=False):
             return False
     elif spec.get("build_from"):
         print(f"  → Build from existing: {spec['build_from']}")
-        # build_from assets — handled separately
-        print(f"  [TODO] build_from compositing — em sẽ implement sau khi raw assets ready")
+        # NOT IMPLEMENTED — tracked at governance/TECH_DEBT.md#DEBT-002 (compositing
+        # từ raw assets có sẵn — cần raw assets thật ready trước, ngoài phạm vi 1 fix
+        # code). em sẽ implement sau khi raw assets ready.
+        logging.warning(
+            f"[NOT-IMPLEMENTED][DEBT-002] {asset_id}: build_from compositing chưa "
+            f"implement — xem governance/TECH_DEBT.md#DEBT-002"
+        )
         return False
     else:
         candidates = emit_search_candidates(asset_id, spec)
