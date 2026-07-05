@@ -136,6 +136,17 @@ def validate(voice: dict, line: str = None) -> list:
     return out
 
 
+def validate_generated_batch(voice: dict, lines: list) -> dict:
+    """D4 (TASK_G3_DIALOGUE.md): kiem 1 loat cau DA SINH (vd batch output cua
+    tools/dialogue_generator.py) qua validate_line() HIEN CO — chi loop + tong hop, KHONG
+    viet lai logic phat hien (R211). Dung khi can check theo batch thay vi tung dong 1."""
+    results = [{'line': ln, 'issues': validate_line(voice, ln)} for ln in lines]
+    for r in results:
+        r['ok'] = not r['issues']
+    n_ok = sum(1 for r in results if r['ok'])
+    return {'total': len(lines), 'ok': n_ok, 'failed': len(lines) - n_ok, 'results': results}
+
+
 if __name__ == '__main__':
     import json
     demo = {'region_dialect': 'nam', 'hometown': 'Bến Tre', 'pronoun_system': 'tui/má',

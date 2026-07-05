@@ -171,3 +171,46 @@ def test_no_production_publisher_import():
     for f in ('dialogue_generator.py', 'dialogue_manager.py'):
         src = (REPO / 'tools' / f).read_text(encoding='utf-8')
         assert not pat.search(src), f'{f} vi pham PHAN BIEN #9/forbidden_dependencies'
+
+
+# ============================================================
+# D4 — wiring evidence + validate_generated_batch (them VAO dialog_voice_validator.py,
+# KHONG phai file moi trung pham vi)
+# ============================================================
+
+def test_d4_generator_imports_and_calls_real_validators_grep_evidence():
+    """D4 bang chung bat buoc: grep -n 'dialog_voice_validator\\|audit_dialogue_hierarchy'
+    tools/dialogue_generator.py phai thay IMPORT + CALL that (khong phai comment)."""
+    import re
+    src = (REPO / 'tools' / 'dialogue_generator.py').read_text(encoding='utf-8')
+    assert re.search(r'^\s*import dialog_voice_validator', src, re.MULTILINE)
+    assert re.search(r'\bdvv\.(validate_profile|validate_line)\(', src)
+    assert re.search(r'^\s*from audit_dialogue_hierarchy import detect_pronoun_issues_in_quote',
+                      src, re.MULTILINE)
+    assert re.search(r'\bdetect_pronoun_issues_in_quote\(', src)
+
+
+def test_d4_validate_generated_batch_added_to_existing_validator_not_new_file():
+    """D4: validate_generated_batch() phai nam TRONG dialog_voice_validator.py (khong phai
+    file dialect_validator/dialogue_validator moi nao khac)."""
+    assert hasattr(dvv, 'validate_generated_batch')
+    assert dvv.validate_generated_batch.__module__ == 'dialog_voice_validator'
+
+
+def test_d4_validate_generated_batch_catches_leak_and_passes_clean():
+    profile = {'region_dialect': 'nam', 'hometown': 'Sài Gòn', 'pronoun_system': 'tui'}
+    lines = ['Con dìa nghen.', 'Con về nhé mẹ.']  # dong 2 leak marker 'bac'
+    result = dvv.validate_generated_batch(profile, lines)
+    assert result['total'] == 2
+    assert result['ok'] == 1
+    assert result['failed'] == 1
+    assert any(i['code'] == 'DIALECT_LEAK' for i in result['results'][1]['issues'])
+
+
+def test_d4_no_new_file_duplicating_validator_scope():
+    """Review-bang-may: khong co file ten chua 'dialect_validator'/'dialogue_validator'
+    (khac dialog_voice_validator.py that) trong tools/."""
+    tools_dir = REPO / 'tools'
+    offenders = [p.name for p in tools_dir.glob('*.py')
+                 if ('dialect_validator' in p.name or 'dialogue_validator' in p.name)]
+    assert offenders == [], f'R211: file trung pham vi validator: {offenders}'
