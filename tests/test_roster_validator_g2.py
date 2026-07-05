@@ -278,6 +278,46 @@ def test_mutation_empty_name_bites():
     assert any('rule_01' in x for x in v) and any("'char_name'" in x for x in v), v
 
 
+# ---------- PROCESS-FIX (audit G2-1, 2026-07): chong cong-thuc-1-bien-0-ngoai-le ----------
+
+def test_speaking_speed_not_perfectly_determined_by_age_alone():
+    """G2-1 audit (CMD_AUDIT_G2.md): truoc fix, speaking_speed = ham THUAN TUY
+    cua age_range (3 vung/6 moc = 18 khuon giong, 0 ngoai le tren 139 nguoi) -
+    dung thu R195 cam ('bia hang loat bang cong thuc may moc'). Test nay khoa
+    cung: voi MOI age_range co >=2 passenger, PHAI co it nhat 2 gia tri
+    speaking_speed khac nhau xuat hien - neu ai fill lai bang cong thuc tra-
+    thang-age, test nay do ngay."""
+    from collections import defaultdict
+    real = _real_passengers()
+    by_age = defaultdict(set)
+    count_by_age = defaultdict(int)
+    for p in real:
+        age = p.get('age_range', '')
+        by_age[age].add((p.get('voice') or {}).get('speaking_speed'))
+        count_by_age[age] += 1
+    mono = [age for age, speeds in by_age.items() if count_by_age[age] >= 2 and len(speeds) == 1]
+    assert not mono, (
+        f"age_range sau day co >=2 passenger nhung CHI 1 gia tri speaking_speed "
+        f"(nghi cong thuc thuan-age, khong ca tinh hoa that): {mono}")
+
+
+def test_catchphrase_distinct_within_same_regret_label_group():
+    """G2-1 audit: cac hanh khach CUNG 1 regret_label (ban sao procedural cung
+    cau chuyen) truoc day co catchphrase CUNG 1 khuon cu phap, chi doi tu vung
+    mien. Sau fix: moi nguoi phai co catchphrase RIENG (khong trung y het nhau
+    trong cung nhom) - dung death.type/hoan canh rieng lam khung tu su."""
+    from collections import defaultdict
+    real = _real_passengers()
+    by_label = defaultdict(list)
+    for p in real:
+        by_label[p.get('regret_label')].append(p.get('voice', {}).get('catchphrase'))
+    dup_groups = {label: catches for label, catches in by_label.items()
+                  if len(catches) >= 2 and len(set(catches)) < len(catches)}
+    assert not dup_groups, (
+        f"Cac nhom regret_label sau day co >=2 passenger TRUNG catchphrase y het "
+        f"nhau (nghi copy-paste khong ca tinh hoa): {list(dup_groups.keys())}")
+
+
 def test_mutation_missing_voice_fields_bites():
     p = _mutate(voice={})
     v, w = validate(p, FORBIDDEN)
