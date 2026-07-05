@@ -656,6 +656,10 @@ files:
     domain: orchestration
     status: active
     tier: 2
+  tools/milestones.py:
+    domain: text_qa
+    status: active
+    tier: 3
   tools/migrate_roster_v2.py:
     domain: unclassified
     status: active
@@ -1393,4 +1397,4 @@ files:
     status: active
     tier: 1
 generated_by: tools/registry_triage.py
-total: 348
+total: 349

@@ -30,6 +30,9 @@ from collections import Counter, defaultdict
 
 sys.stdout.reconfigure(encoding='utf-8') if hasattr(sys.stdout, 'reconfigure') else None
 
+sys.path.insert(0, str(Path(__file__).parent))
+from milestones import LEGACY_AUDIT_EXEMPT_EPS  # single source (see tools/milestones.py)
+
 SVHMP = Path(__file__).resolve().parents[1]
 
 def strip_meta(text):
@@ -100,12 +103,11 @@ def main():
 
     # 3. Bác tài quotes — STRICT pattern (chỉ match khi bác tài là speaker)
     print("\n[3] Bác tài quote ngoài 2 standard (strict regex):")
-    milestones = {1, 10, 20, 30, 40, 50, 60, 70, 73, 80, 90}
     non_ms_extra = []
     # Strict: Bác tài + (cất lời|nói|đáp|bảo|hỏi|tiếp) + quote (loose newlines allowed)
     strict_pattern = re.compile(r'Bác tài[^\n.]*?(?:cất lời|nói|đáp|bảo|hỏi|tiếp|liếc gương)[^"]*?"([^"]+)"')
     for n, t in eps.items():
-        if n in milestones: continue
+        if n in LEGACY_AUDIT_EXEMPT_EPS: continue
         body = strip_meta(t)
         driver_quotes = strict_pattern.findall(body)
         standard = {'Con đã nhớ ra chưa?', 'Chưa tới lúc.'}

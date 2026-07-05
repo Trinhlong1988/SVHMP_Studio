@@ -56,6 +56,23 @@ def test_master_rule11_wired():
 
 
 def test_claim_file_exists_and_parses():
+    """Fix LOW finding: truoc day chi check 'claims' in data nen claims: {} hoac
+    claims: null van pass. Gio check KIEU + gia tri hop le toi thieu cho tung claim
+    that (dict non-empty, moi record co status hop le + session non-empty)."""
     import yaml
     data = yaml.safe_load((REPO / 'runtime' / 'build_claim.yaml').read_text(encoding='utf-8'))
-    assert isinstance(data, dict) and 'claims' in data
+    assert isinstance(data, dict), f"build_claim.yaml top-level phai la dict, got {type(data).__name__}"
+    claims = data.get('claims')
+    assert isinstance(claims, dict) and len(claims) > 0, (
+        f"'claims' phai la dict non-empty (it nhat 1 pack claim that da tung xay ra), got {claims!r}"
+    )
+    for pack, rec in claims.items():
+        assert isinstance(rec, dict), f"claim '{pack}' phai la dict, got {type(rec).__name__}"
+        status = rec.get('status')
+        assert isinstance(status, str) and status in ('active', 'released'), (
+            f"claim '{pack}' status phai la 'active' hoac 'released', got {status!r}"
+        )
+        session = rec.get('session')
+        assert isinstance(session, str) and session, (
+            f"claim '{pack}' thieu 'session' (string non-empty), got {session!r}"
+        )

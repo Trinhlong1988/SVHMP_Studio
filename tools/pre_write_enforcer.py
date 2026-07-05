@@ -16,6 +16,9 @@ from pathlib import Path
 
 sys.stdout.reconfigure(encoding='utf-8') if hasattr(sys.stdout, 'reconfigure') else None
 
+sys.path.insert(0, str(Path(__file__).parent))
+from milestones import MILESTONE_EPS  # single source (see tools/milestones.py)
+
 SVHMP = Path(__file__).resolve().parents[1]
 
 PRE_WRITE_BRIEF_TEMPLATE = """# SVHMP PRE-WRITE BRIEF — EP{ep_num}
@@ -101,7 +104,7 @@ def get_arc_info(ep_num):
                 cliff_hint = v.get('cliffhanger_hint', '?')
                 break
 
-        milestone = ep_num in [10, 20, 30, 40, 50, 60, 70, 80, 90]
+        milestone = ep_num in MILESTONE_EPS
         callback = arc.get('callback_schedule_s1', {}).get(f'ep_{ep_num}', None)
 
         return f"""- Pillar (R33): **{pillar}**

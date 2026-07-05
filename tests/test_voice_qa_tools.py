@@ -42,6 +42,36 @@ def _write_wav(arr: np.ndarray, sr: int, name: str) -> Path:
     return p
 
 
+def _assert_valid_qa_report(rpt: dict, rule_prefix: str, require_n_medium: bool = True) -> None:
+    """Kiem tra KIEU + gia tri hop le toi thieu cho report QA (khong chi CO key,
+    ma con dung KIEU va nam trong mien gia tri hop ly). Fix LOW finding: truoc day
+    chi `assert k in rpt` nen report gia {"n_high": "oops", "verdict": "", ...} van pass.
+    """
+    assert isinstance(rpt.get("rule"), str) and rpt["rule"].startswith(rule_prefix), (
+        f"'rule' phai la string bat dau bang {rule_prefix!r}, got {rpt.get('rule')!r}"
+    )
+    assert isinstance(rpt.get("wav"), str) and rpt["wav"], (
+        f"'wav' phai la string non-empty, got {rpt.get('wav')!r}"
+    )
+    n_high = rpt.get("n_high")
+    assert isinstance(n_high, int) and not isinstance(n_high, bool) and n_high >= 0, (
+        f"'n_high' phai la int >= 0, got {n_high!r}"
+    )
+    if require_n_medium:
+        n_medium = rpt.get("n_medium")
+        assert isinstance(n_medium, int) and not isinstance(n_medium, bool) and n_medium >= 0, (
+            f"'n_medium' phai la int >= 0, got {n_medium!r}"
+        )
+    verdict = rpt.get("verdict")
+    assert isinstance(verdict, str) and verdict in ("PASS", "FAIL"), (
+        f"'verdict' phai la string trong {{PASS, FAIL}}, got {verdict!r}"
+    )
+    findings = rpt.get("findings")
+    assert isinstance(findings, list), (
+        f"'findings' phai la list, got {type(findings).__name__}"
+    )
+
+
 @pytest.fixture(scope="module")
 def synth_clean():
     sr = 22050
@@ -106,9 +136,7 @@ class TestR188Boundary:
         rc, out, err = _run([sys.executable, str(self.SCRIPT), "--wav", str(real_cliffhanger), "--json"])
         assert rc in (0, 1)
         rpt = json.loads(out)
-        for k in ("rule", "wav", "n_high", "n_medium", "verdict", "findings"):
-            assert k in rpt
-        assert rpt["rule"].startswith("R188")
+        _assert_valid_qa_report(rpt, "R188")
 
     def test_04_synthetic_clean_passes(self, synth_clean):
         wav, _ = synth_clean
@@ -135,9 +163,7 @@ class TestR189Breath:
         rc, out, err = _run([sys.executable, str(self.SCRIPT), "--wav", str(real_cliffhanger), "--json"])
         assert rc in (0, 1)
         rpt = json.loads(out)
-        for k in ("rule", "wav", "n_high", "n_medium", "verdict", "findings"):
-            assert k in rpt
-        assert rpt["rule"].startswith("R189")
+        _assert_valid_qa_report(rpt, "R189")
 
     def test_04_synthetic_clean_passes(self, synth_clean):
         wav, _ = synth_clean
@@ -213,8 +239,26 @@ class TestR191DialogueIdentity:
         assert rc in (0, 1)
         rpt = json.loads(out)
         assert rpt["rule"].startswith("R191")
-        for k in ("segments", "threshold", "n_high", "verdict", "findings"):
-            assert k in rpt
+        segments = rpt.get("segments")
+        assert isinstance(segments, int) and not isinstance(segments, bool) and segments >= 0, (
+            f"'segments' phai la int >= 0, got {segments!r}"
+        )
+        threshold = rpt.get("threshold")
+        assert isinstance(threshold, (int, float)) and not isinstance(threshold, bool) and threshold > 0, (
+            f"'threshold' phai la number > 0, got {threshold!r}"
+        )
+        n_high = rpt.get("n_high")
+        assert isinstance(n_high, int) and not isinstance(n_high, bool) and n_high >= 0, (
+            f"'n_high' phai la int >= 0, got {n_high!r}"
+        )
+        verdict = rpt.get("verdict")
+        assert isinstance(verdict, str) and verdict in ("PASS", "FAIL"), (
+            f"'verdict' phai la string trong {{PASS, FAIL}}, got {verdict!r}"
+        )
+        findings = rpt.get("findings")
+        assert isinstance(findings, list), (
+            f"'findings' phai la list, got {type(findings).__name__}"
+        )
 
 
 # ===========================================

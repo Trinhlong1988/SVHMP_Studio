@@ -16,6 +16,9 @@ import sys
 
 sys.stdout.reconfigure(encoding='utf-8') if hasattr(sys.stdout, 'reconfigure') else None
 
+sys.path.insert(0, str(Path(__file__).parent))
+from milestones import MILESTONE_EPS, LEGACY_AUDIT_EXEMPT_EPS  # single source (see tools/milestones.py)
+
 SVHMP = Path(__file__).resolve().parents[1]
 
 # Banned words from bible/22 + NEVER_7 + R4 catalog
@@ -48,7 +51,6 @@ DRIVER_ALLOWED = [
     'Con đã nhớ ra chưa?',
     'Chưa tới lúc.',
 ]
-MILESTONE_EPS = {1, 10, 20, 30, 40, 50, 60, 70, 73, 80, 90}
 
 def strip_metadata(text):
     """Strip YAML metadata block + intro block."""
@@ -278,7 +280,7 @@ def check_layer_3_forbidden_words(eps):
         # Find all "Bác tài: \"..."  or "Bác tài cất lời. \"...\""
         driver_dialogues = re.findall(r'Bác tài[^"]*"([^"]+)"', t)
         unauthorized = [d for d in driver_dialogues if d.strip() not in ['Con đã nhớ ra chưa?', 'Chưa tới lúc.']]
-        if n not in MILESTONE_EPS and unauthorized:
+        if n not in LEGACY_AUDIT_EXEMPT_EPS and unauthorized:
             driver_violations.append((n, len(unauthorized)))
     issues.append({'check': '3.7 Driver unauthorized speech (non-milestone)', 'count': len(driver_violations), 'severity': 'LOW' if len(driver_violations) < 5 else 'MEDIUM', 'detail': driver_violations[:5]})
 

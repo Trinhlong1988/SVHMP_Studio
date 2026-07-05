@@ -17,6 +17,9 @@ from pathlib import Path
 
 sys.stdout.reconfigure(encoding='utf-8') if hasattr(sys.stdout, 'reconfigure') else None
 
+sys.path.insert(0, str(Path(__file__).parent))
+from milestones import MILESTONE_EPS, DRIVER_BUDGET_PEAK_EPS  # single source (see tools/milestones.py)
+
 SVHMP = Path(__file__).resolve().parents[1]
 
 def load_yaml(path):
@@ -77,7 +80,7 @@ def main(ep_number):
         intensity = intensity_map.get('ep_61_to_80', 0.85)
     else:
         intensity = intensity_map.get('ep_81_to_90', 0.95)
-    if ep_number in [10, 20, 30, 40, 50, 60, 70, 80, 90]:
+    if ep_number in MILESTONE_EPS:
         ms_key = f'ep_{ep_number}_milestone'
         intensity = intensity_map.get(ms_key, intensity)
     checklist['arc_lookups']['intensity_level'] = intensity
@@ -110,7 +113,7 @@ def main(ep_number):
     print(f"  Callback (R36): {callback}")
 
     # 2.5 Milestone R37
-    milestone = ep_number in [10, 20, 30, 40, 50, 60, 70, 80, 90]
+    milestone = ep_number in MILESTONE_EPS
     checklist['arc_lookups']['milestone'] = milestone
     if milestone:
         print(f"  ★ MILESTONE EP — special: {milestone_special}")
@@ -143,7 +146,7 @@ def main(ep_number):
         'duration_min_minutes': 13,  # R39
         'bell_count_max': 1,  # SERIES_RULES.bell
         'ghost_manifest_max': 1,  # SERIES_RULES.ghost_visual
-        'driver_lines_max': 2 if not milestone and ep_number not in [73, 90] else 3,
+        'driver_lines_max': 3 if ep_number in DRIVER_BUDGET_PEAK_EPS else 2,
         'intro_required': True,  # R40
         'name_rename_required': {'Hà': 'Hạ Vy (selective)', 'Quang': 'Khải Phong (full)'},
         'aftertaste': 'unresolved',  # ENDING_RULES

@@ -12,7 +12,8 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding='utf-8') if hasattr(sys.stdout, 'reconfigure') else None
 SVHMP = Path(__file__).resolve().parents[1]
 
-MILESTONE_EPS = {10, 20, 30, 40, 50, 60, 70, 73, 80, 90}
+sys.path.insert(0, str(Path(__file__).parent))
+from milestones import DRIVER_BUDGET_PEAK_EPS  # single source (see tools/milestones.py)
 
 def audit_ep(text, ep_num):
     """Return list of (check, status, value)."""
@@ -22,7 +23,7 @@ def audit_ep(text, ep_num):
 
     # 1. Hạ Vy mentions
     ha_vy_count = len(re.findall(r'\bHạ Vy\b', body))
-    is_milestone = ep_num in MILESTONE_EPS
+    is_milestone = ep_num in DRIVER_BUDGET_PEAK_EPS
     max_hv = 8 if is_milestone else 5
     ha_vy_ok = ha_vy_count <= max_hv
     results.append(('Hạ_Vy_mentions', 'OK' if ha_vy_ok else 'WARN', f'{ha_vy_count}/{max_hv}'))

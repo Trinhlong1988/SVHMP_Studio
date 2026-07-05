@@ -18,6 +18,9 @@ from pathlib import Path
 
 sys.stdout.reconfigure(encoding='utf-8') if hasattr(sys.stdout, 'reconfigure') else None
 
+sys.path.insert(0, str(Path(__file__).parent))
+from milestones import DRIVER_BUDGET_PEAK_EPS  # single source (see tools/milestones.py)
+
 SVHMP = Path(__file__).resolve().parents[1]
 
 INTRO_ELEMENTS = [
@@ -54,10 +57,9 @@ def check_ep(ep_number):
     results.append((word_count >= 2000, f'word_count {word_count} >= 2000 (hard_floor)'))
 
     # 2. word_count ceiling — EP01 golden + milestone EPs higher ceiling
-    MILESTONE_EPS = {1, 10, 20, 30, 40, 50, 60, 70, 73, 80, 90}
     if ep_number == 1:
         results.append((True, f'word_count {word_count} (EP01 golden ref — ceiling exception)'))
-    elif ep_number in MILESTONE_EPS:
+    elif ep_number in DRIVER_BUDGET_PEAK_EPS:
         results.append((word_count <= 3200, f'word_count {word_count} <= 3200 (milestone ceiling)'))
     else:
         results.append((word_count <= 2900, f'word_count {word_count} <= 2900 (hard_ceiling)'))
@@ -81,7 +83,7 @@ def check_ep(ep_number):
     results.append((quang_count == 0, f'no "Quang" in body (found {quang_count})'))
 
     # 6. Driver lines max 2 (or 3 if milestone/73/90)
-    milestone = ep_number in [10, 20, 30, 40, 50, 60, 70, 80, 90, 73]
+    milestone = ep_number in DRIVER_BUDGET_PEAK_EPS
     driver_pattern = r'Bác tài[:\s]+"[^"]+"'
     driver_lines = re.findall(driver_pattern, text)
     expected_max = 3 if milestone else 2
