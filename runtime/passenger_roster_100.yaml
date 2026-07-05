@@ -2953,6 +2953,12 @@ passengers:
     particles:
     - nhỉ
     register: dan_da
+    speaking_speed: nhanh
+    catchphrase: tôi bỏ giấc mơ vẽ vì tôi sợ rủi ro
+    forbidden_words:
+    - an toàn
+    - thực tế hơn
+    dialogue_sample: Tôi mê vẽ từ nhỏ, gia đình bảo chọn nghề an toàn hơn, tôi nghe theo rồi tiếc nuối giấc mơ đó cả đời.
   death:
     type: tai_nan
     pain: Bỏ giấc mơ vẽ — theo nghề an toàn
@@ -2979,6 +2985,13 @@ passengers:
     particles:
     - rứa
     register: dan_da
+    speaking_speed: cham
+    catchphrase: tui bỏ nghề vẽ theo con đường an toàn
+    forbidden_words:
+    - chắc ăn
+    - ổn định
+    dialogue_sample: Tui mê hội họa từ hồi trẻ, tui chọn nghề ổn định hơn theo lời khuyên gia đình, giờ tui vẫn tiếc giấc
+      mơ đó.
   death:
     type: benh_tat
     pain: Bỏ giấc mơ vẽ — theo nghề an toàn
@@ -3005,6 +3018,12 @@ passengers:
     particles:
     - nghen
     register: dan_da
+    speaking_speed: nhanh
+    catchphrase: con từ bỏ ước mơ vẽ vì con sợ thất bại
+    forbidden_words:
+    - chắc chắn
+    - không mạo hiểm
+    dialogue_sample: Con thích vẽ từ nhỏ, con sợ theo nghề đó bấp bênh nên chọn con đường chắc chắn hơn, giờ con vẫn tiếc.
   death:
     type: mat_tich
     pain: Bỏ giấc mơ vẽ — theo nghề an toàn
@@ -3031,6 +3050,12 @@ passengers:
     particles:
     - nhỉ
     register: dan_da
+    speaking_speed: cham
+    catchphrase: tôi không dám tỏ tình nên cô đơn cả đời
+    forbidden_words:
+    - nhút nhát
+    - sợ bị từ chối
+    dialogue_sample: Tôi thương một người suốt thời trẻ, tôi nhút nhát không dám nói, rồi cứ thế cô đơn tới cuối đời.
   death:
     type: oan_khuat
     pain: Không dám tỏ tình — cả đời độc thân
@@ -3057,6 +3082,12 @@ passengers:
     particles:
     - rứa
     register: dan_da
+    speaking_speed: cham
+    catchphrase: tui không dám nói lời yêu nên tui ở một mình
+    forbidden_words:
+    - rụt rè
+    - sợ mất mặt
+    dialogue_sample: Tui thầm thương người ta từ trẻ, tui rụt rè không dám ngỏ lời, rồi cứ lần lữa tới già vẫn một mình.
   death:
     type: tu_nhien
     pain: Không dám tỏ tình — cả đời độc thân
@@ -3083,6 +3114,12 @@ passengers:
     particles:
     - nghen
     register: dan_da
+    speaking_speed: vua
+    catchphrase: con không dám tỏ tình nên con độc thân tới giờ
+    forbidden_words:
+    - nhát gan
+    - ngại ngùng
+    dialogue_sample: Con thương người đó âm thầm suốt thời trẻ, con nhát gan không dám nói ra, giờ con vẫn một mình.
   death:
     type: hieu_lam
     pain: Không dám tỏ tình — cả đời độc thân
@@ -3109,6 +3146,12 @@ passengers:
     particles:
     - nhỉ
     register: dan_da
+    speaking_speed: vua
+    catchphrase: tôi bỏ con vì mải theo sự nghiệp
+    forbidden_words:
+    - thành đạt
+    - công danh
+    dialogue_sample: Tôi mải theo đuổi sự nghiệp, bỏ bê con cái từ nhỏ, giờ cuối đời tôi không có ai bên cạnh.
   death:
     type: hy_sinh
     pain: Bỏ con vì sự nghiệp — cuối đời không có ai
@@ -3135,6 +3178,12 @@ passengers:
     particles:
     - rứa
     register: dan_da
+    speaking_speed: cham
+    catchphrase: tui bỏ bê gia đình vì công danh sự nghiệp
+    forbidden_words:
+    - thành công
+    - địa vị
+    dialogue_sample: Tui mải chạy theo công danh sự nghiệp, bỏ bê con cái cả đời, giờ già rồi tui không có ai kề bên.
   death:
     type: bi_phan_boi
     pain: Bỏ con vì sự nghiệp — cuối đời không có ai
@@ -3161,6 +3210,13 @@ passengers:
     particles:
     - nghen
     register: dan_da
+    speaking_speed: nhanh
+    catchphrase: con sợ bệnh viện nên con bỏ qua dấu hiệu bệnh
+    forbidden_words:
+    - chắc không sao
+    - ngại đi khám
+    dialogue_sample: Con thấy dấu hiệu lạ trong người hai năm trời, con sợ bệnh viện nên cứ nghĩ chắc không sao, giờ con hối
+      không kịp.
   death:
     type: khong_ro
     pain: Sợ bệnh viện — bỏ qua dấu hiệu cảnh báo 2 năm
@@ -3187,6 +3243,12 @@ passengers:
     particles:
     - nhỉ
     register: dan_da
+    speaking_speed: cham
+    catchphrase: tôi sợ đi khám nên bỏ lỡ hai năm cảnh báo
+    forbidden_words:
+    - chủ quan
+    - ngại bệnh viện
+    dialogue_sample: Tôi thấy cơ thể có dấu hiệu bất thường hai năm liền, tôi chủ quan ngại đi khám, giờ tôi ân hận vô cùng.
   death:
     type: tai_nan
     pain: Sợ bệnh viện — bỏ qua dấu hiệu cảnh báo 2 năm
