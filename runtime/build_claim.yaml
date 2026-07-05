@@ -1,8 +1,9 @@
 claims:
   bible_dupkey_r110_141:
     claimed_at: '2026-07-05T16:06:30'
+    released_at: '2026-07-05T16:16:46'
     session: CMD_BUILD
-    status: active
+    status: released
   bp6_decision:
     claimed_at: '2026-07-04T13:04:26'
     released_at: '2026-07-04T18:08:39'
