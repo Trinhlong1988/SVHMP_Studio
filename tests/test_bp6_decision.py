@@ -144,8 +144,16 @@ def test_mut_reader_outside_bp0_grant_bites():
 
 
 def test_mut_planned_input_missing_metadata_bites():
+    # G6b (5/7): input.source_schema THAT da flip planned->exists (story_plan_schema.yaml
+    # field-hoa xong) - tu dung 1 dict 'planned' gia lap de test rieng kha nang checker bat
+    # thieu metadata (khong con dua vao fixture IO that nua, vi no da la 'exists').
     io = copy.deepcopy(IO)
-    del io['input']['source_schema']['blocking_dependency']
+    io['input']['source_schema'] = {
+        'status': 'planned', 'planned_path': 'governance/blueprint/schemas/story_plan_schema.yaml',
+        'owner': 'story_planner', 'reason_not_exists_yet': 'gia lap test',
+        'target_milestone': 'M2_planner_generator',
+        # thieu 'blocking_dependency' co chu dich
+    }
     errs = check_io(io, CONTRACT, BP0)
     assert any('thieu metadata: blocking_dependency' in e for e in errs), errs
 
