@@ -129,6 +129,29 @@ không kiểm lại tình trạng sửa lỗi G2-1 (công thức hóa) → ghi n
    sửa luôn cho gọn" — dù nội dung sửa có đúng 100% thì thiếu bước xin phép vẫn là vi phạm ranh
    giới 1-domain-1-writer, và đã tốn công xử lý ủy quyền hồi tố 2 lần vì lỗi y hệt nhau. G7 đọc
    14 domain nên xác suất gặp tình huống này rất cao — phải nhớ bài học này trước khi bắt đầu.
+10. **Sinh nội dung công thức hóa thay vì cá tính hóa thật (vụ G2-1, audit bắt 18 khuôn giọng
+    khoác 139 tên):** G7 LÀ generator — rủi ro này ÁP DỤNG TRỰC TIẾP, không phải chuyện của domain
+    khác nữa. Khi sinh `episode.md`, PHẢI dùng đúng dữ liệu CỤ THỂ của từng tập (budget sheet thật
+    từ G6a, kế hoạch thật từ G6b, hồ sơ nhân vật thật từ G2) — KHÔNG dựng 1 khung mẫu chung rồi lắp
+    biến số vào (dù chỉ 90 tập, cám dỗ này rất lớn vì "làm nhanh"). Audit sau này sẽ lấy mẫu nhiều
+    tập, đối chiếu xem có lặp cấu trúc câu/nhịp giống hệt nhau không.
+11. **Sửa trực tiếp file LOCKED thay vì dùng wrapper (vụ G2-6, chèn CHARACTER_GATE thẳng vào
+    `svhmp_v13_render.py`):** G7 tuyệt đối KHÔNG được sửa `tools/svhmp_v13_render.py` hay bất kỳ
+    file LOCKED nào khác để "tiện tích hợp" — nếu cần hook vào pipeline render, tạo wrapper riêng
+    (`tools/render_with_character_gate.py` là ví dụ mẫu đã có, theo đúng cách CMD_BUILD_2 sửa).
+12. **Nhân đôi logic thay vì mở rộng cái có sẵn (vụ G5, possession state machine trùng lặp giữa
+    `runtime/supernatural_state_machine.yaml` và `bp4/state_machines.yaml`, phải dedup theo R211):**
+    trước khi viết bất kỳ hàm/logic nào trong `episode_generator.py`, grep xem đã có tool nào làm
+    việc tương tự chưa (đặc biệt validator/QA — D3 đã nhắc `post_render_gate.py`/`svhmp_preflight_qa.py`,
+    nhưng áp dụng luôn cho MỌI phần khác của generator, không chỉ 2 tool đó).
+13. **Ghi vào file/thư mục dùng chung trong lúc test (DEBT-005, corrupt `output/ep_01/` khi 2 phiên
+    chạy pytest đồng thời) + hardcode snapshot số liệu của file khác rồi để nó lỗi thời (DEBT-006 hệ
+    quả gián tiếp, và vụ `ORIGINAL_11_STAGES` trong `test_g3_dialogue.py` phải sửa lại khi G6 thêm
+    stage mới vào `ci_gate.py`):** D5 (dry-run EP01) và mọi test của G7 PHẢI ghi output vào đường
+    dẫn CÁCH LY (`tempfile`/sandbox riêng như `output/ep_g3_sample/` mà G3 đã làm), TUYỆT ĐỐI không
+    ghi trực tiếp vào `output/ep_01/` thật dù chỉ tạm thời. Nếu test nào cần so sánh với danh sách/
+    số liệu của file khác (vd đếm số domain, số stage trong `ci_gate.py`), đọc ĐỘNG từ file đó lúc
+    chạy test thay vì hardcode 1 snapshot cố định — file đó sẽ còn thay đổi khi G8 build sau này.
 
 ## DoD
 D1 (episode_schema) field-hóa khớp đúng bản đã duyệt B, không tự thêm/bớt ✅ · D2
