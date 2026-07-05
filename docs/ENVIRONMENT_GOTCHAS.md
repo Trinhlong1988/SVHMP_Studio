@@ -155,6 +155,30 @@ có, KHÔNG viết gate mới mà bỏ qua bước này. Khi nghi ngờ đang ch
 `Get-Process python | Measure-Object` ở cửa sổ khác để bắt sớm nếu số tiến trình tăng bất thường,
 đừng đợi máy đơ mới biết.
 
+## G15 — Kỹ thuật làm sạch tạp âm/cụt hơi cụt chữ TTS đã có sẵn, ĐÃ TUNE — đừng coi là nợ kỹ thuật cần giải lại
+Case thật (1/7, phiên fix "chữ cuối mỗi đoạn bị cụt" của ep_01 intro — xem lesson-tail-cut-debug
+trong memory riêng, giờ đưa vào đây để MỌI phiên đọc được, không chỉ 1 memory riêng). Kiểm duyệt
+5/7 khi audit DEBT-002 (thiếu audio thật `hook.wav`/`cliffhanger.wav`) ban đầu viết nhầm hướng đề
+xuất "chờ Boss tìm lại file cũ" — Boss chỉnh lại: kỹ thuật làm sạch đã có sẵn và ĐÃ PROVEN, không
+phải giải lại từ đầu.
+
+**Vị trí kỹ thuật (còn sống, xem trực tiếp trước khi dùng — đây là snapshot 1/7):**
+`tools/svhmp_v13_render.py`: `qa_clean_tail()` — bộ cắt đuôi voicing-based deterministic (thay
+`aggressive_trim_tail` cũ dùng ngưỡng cứng, hay cắt lẹm đuôi mềm của từ), giữ tới last-voiced +
+`release_pad_ms` rồi cosine-fade về 0 → hết hiện tượng "lụp bụp xì xì" ở cuối câu. Tham số đã Boss
+tune và duyệt: `TAIL_TRIM_DB=-62` (giữ đủ dư âm hơi thở ~-38dB, không giữ tới mức lộ tạp âm nền),
+`FADE_TAIL_MS=80`, `fade_head` 80ms cosine (chống pop/"xẹt" đầu đoạn khi ghép chunk).
+
+**Bằng chứng sản phẩm thật:** `assets/voice_samples/EP01_intro_qaclean_v2q_01072026.wav` (chốt
+bởi Boss 5/7 — bản render cuối cùng trong chuỗi fix `intro_FULL_v2o→v2p→v2q`, gốc tại
+`D:\SVHMP_render\ep_01\`, copy vào repo để không phụ thuộc ổ D — quy ước dọn file cũ mỗi lần
+render mới có thể xoá bản gốc).
+
+**Áp dụng khi cần audio thật mới (vd giải DEBT-002):** KHÔNG cần "tìm lại file mất" — chạy lại
+đúng pipeline này (`scratchpad/render_one.py` cwd `render_cwd`, xem lesson
+svhmp-render-on-this-machine) trên spec còn nguyên (`spec_hook.json`/`spec_cliffhanger.json`) là
+đủ, vì phần khó (làm sạch tạp âm/cắt cụt chữ) đã giải xong, không phải giải lại.
+
 ## Nguồn cảm hứng
 So sánh với Hermes Agent (Nous Research, 4/7): pattern "skill file agent tự viết, mọi lần gọi lại
 đọc được" đúng hướng nhưng KHÔNG áp dụng "tự viết không kiểm duyệt" — file này làm thủ công, review
