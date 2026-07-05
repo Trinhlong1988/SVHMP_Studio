@@ -18,6 +18,20 @@ SCRIPTS = [
     'tests/test_character_system_1000_r206.py',
     'tests/test_story_consistency_1000_r207.py',
     'tests/test_dialogue_appropriateness_1000_r208.py',
+    # them 5/7 (tech-debt audit HIGH finding): 10 file nay script-style (case_N() +
+    # if __main__), pytest thu 0 test item, chua tung chay trong ci_gate/CI truoc day
+    # du phu R86/R92b/R110/R111/R113/R117/R128/R141/R140/R149/R146. Da tu chay rieng
+    # tung file xac nhan exit 0 truoc khi them vao day.
+    'tests/cases/test_action_repeat.py',
+    'tests/cases/test_anti_generic.py',
+    'tests/cases/test_audio_gate_regression.py',
+    'tests/cases/test_episode_state.py',
+    'tests/cases/test_fact_contradiction.py',
+    'tests/cases/test_forbidden_phrases.py',
+    'tests/cases/test_object_state.py',
+    'tests/cases/test_publish_score.py',
+    'tests/cases/test_render_chunk.py',
+    'tests/cases/test_tts_pause.py',
 ]
 
 
