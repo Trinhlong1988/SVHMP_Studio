@@ -35,6 +35,11 @@ dependencies:
   to: culture
   reason: xung ho trong thoai theo tap quan vung
   data_flow: read
+- dep_id: dep__dialogue__world
+  from: dialogue
+  to: world
+  reason: audit_driver_dialogue_context.py doc 2 cau LOCK bac tai tu bible/02_lore_db.yaml (world SoT)
+  data_flow: read
 - dep_id: dep__event__character
   from: event
   to: character

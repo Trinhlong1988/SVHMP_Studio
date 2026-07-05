@@ -154,11 +154,13 @@ domains:
   depends_on:
   - character
   - culture
+  - world
   reads_from:
   - culture
   - belief
   - ritual
   - character
+  - world
   writes_to: []
   lifecycle: approved
   owner_artifact: governance/blueprint/blueprint_domains.yaml#domains.dialogue
