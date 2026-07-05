@@ -491,20 +491,17 @@ domains:
       - {path: bible/01_series_bible.yaml, status: exists}
       - {path: bible/16_series_kpi.yaml, status: exists}
     manager:
-      status: planned
-      planned_path: tools/story_planner.py
-      owner: story_planner
-      reason_not_exists_yet: "Ke hoach 100 tap hien do Mr.Long dieu phoi tay qua bible/18; chua tu dong hoa."
-      target_milestone: M2_planner_generator
-      blocking_dependency: "event ledger + timeline manager (M1) — planner can du lieu that de xep"
+      status: exists
+      path: tools/story_planner.py   # G6b D5 (5/7): manager toi thieu, doc bible/18+01+16
+      owner: story_planner            # + event_ledger (G4 D2) + golden EP01 (tai dung G6a parser)
     schema:
-      status: planned
-      planned_path: governance/blueprint/schemas/story_plan_schema.yaml
-      owner: story_planner
-      reason_not_exists_yet: "Format ke hoach tap chua duoc Mr.Long duyet."
-      target_milestone: M2_planner_generator
-      blocking_dependency: "Mr.Long duyet format ke hoach"
+      status: exists
+      path: governance/blueprint/schemas/story_plan_schema.yaml   # G6b D5a (5/7): field-hoa
+      owner: story_planner            # dung nguyen van proposal APPROVED_A, commit 9f5ccbd
     validator: {path: tools/character_balance_report.py, status: exists}
+    # note: tools/story_plan_schema_check.py (G6b D6a, 5/7) la validator THU 2 cho instance
+    # schema (component_ref/cap/cast/PAS_id/clue_weight) - dang ky qua file_index.yaml domain
+    # g6_story_planner, khong them field rieng o day de giu dung format 1-validator/domain.
     reader: [decision_engine, generator, qa_runtime]
     writer: [mr_long]
     lifecycle: approved

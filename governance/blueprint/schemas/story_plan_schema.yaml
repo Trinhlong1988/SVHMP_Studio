@@ -1,0 +1,97 @@
+# STORY PLAN SCHEMA v1.0.0 — field-hóa facet BP2 story_planner.scene_act_structure
+# (TASK_G6_STORY_PLANNER.md D5, PROMPT_HANDOFF_CMD_BUILD_G6B.md)
+#
+# Nguồn: governance/proposals/story_plan_schema_proposal.yaml (proposal_status: APPROVED,
+# mr_long_decision: APPROVED_A "duyệt nguyên văn draft, không sửa", commit 9f5ccbd 5/7 20:13).
+# Nội dung dưới đây COPY NGUYÊN VĂN schema_draft của proposal đó — KHÔNG tự thêm/bớt field.
+#
+# PHẠM VI ĐÃ KHÓA: CHỈ field-hóa đúng 1 facet BP2 đang planned: scene_act_structure.
+# ĐÚNG 3 entity: scene, episode_plan, season_plan — TUYỆT ĐỐI KHÔNG có entity "act" (BP2
+# domain_specs.yaml chỉ khai entities: [season_plan, episode_plan, scene]; BP7
+# story_structure.yaml tự ghi "Act chưa có entity/facet riêng trong BP2, cho RFC nếu cần
+# field-hóa sau" — nếu Mr.Long muốn field-hóa Act riêng, cần 1 RFC/proposal khác, R211).
+# KHÔNG định nghĩa lại episode/season/series/ending (đã có sot exists ở bible/01, bible/21b,
+# bible/16, bible/00) — file này CHỈ field-hóa scene/episode_plan/season_plan.
+
+meta:
+  version: 1.0.0
+  status: candidate            # Builder không lock/tag — Mr.Long ký sau audit
+  owner_domain: story_planner
+  approved_from: governance/proposals/story_plan_schema_proposal.yaml
+  approved_commit: 9f5ccbd
+  approval: APPROVED_A (nguyên văn, không sửa)
+
+schema:
+
+  scene:
+    desc: "Đơn vị nhỏ nhất trong episode_plan — 1 bối cảnh/1 khoảnh khắc liên tục"
+    fields:
+      scene_id: {type: string, required: true, format: "EP{N}_SC{M}"}
+      episode_ref: {type: int, required: true, desc: "Số tập chứa scene này"}
+      order_in_episode: {type: int, required: true, desc: "Thứ tự scene trong episode (1..N)"}
+      component_ref:
+        type: enum
+        required: true
+        values: [HOOK, SETUP, INCIDENT, REVEAL, PAYOFF, CLIFFHANGER]
+        desc: "Scene thuộc section nào — PHẢI khớp đúng 6 tên + thứ tự bible/01 (BP7 invariant), không tự thêm/đổi tên"
+      scene_function:
+        type: enum
+        required: true
+        values: [dan_chuyen, gay_nghi, danh_lac_huong, hy_sinh]
+        desc: "Vai trò kể chuyện của scene (theo đúng desc facet BP2) - SCENE sở hữu, character CHỈ tham chiếu, không được gán scene_function vào hồ sơ nhân vật"
+      characters_present:
+        type: list
+        item_type: string
+        desc: "Danh sách PAS_id xuất hiện trong scene - PHẢI tồn tại thật trong runtime/passenger_roster_100.yaml (character domain, chỉ đọc)"
+      location_ref: {type: string, required: false, desc: "Trỏ bible/13_setting_library.yaml (world domain, chỉ đọc)"}
+      driver_clue:
+        type: object
+        required: false
+        desc: "Nếu scene có clue driver/73 - PHẢI khớp đúng clue_weight_taxonomy + budget_curve của bible/18 (event domain xác nhận, không tự bịa weight)"
+        fields:
+          weight: {type: enum, values: [1, 2, 5, 10, 30]}
+          content: {type: string}
+      summary: {type: string, required: true, desc: "Tóm tắt 1-2 câu, KHÔNG phải văn bản đầy đủ (đây là kế hoạch, không phải thể sinh)"}
+
+  episode_plan:
+    desc: "Kế hoạch 1 tập - KHÔNG chứa văn bản đầy đủ, chỉ khung quyết định trước khi generator viết"
+    fields:
+      episode_number: {type: int, required: true, range: [1, 90]}
+      season_ref: {type: string, required: true, desc: "Trỏ season_plan.season_id"}
+      scenes: {type: list, item_type: string, desc: "Danh sách scene_id THEO ĐÚNG THỨ TỰ, mỗi component_ref bắt buộc đủ 6 tên HOOK..CLIFFHANGER (BP7 invariant, thiếu/thừa/sai thứ tự = FAIL)"}
+      driver_reveal_cumulative:
+        type: int
+        required: true
+        desc: "% cộng dồn sau tập này - PHẢI <= budget_curve[ep_range].cumulative_cap của bible/18 (event/story_planner tính, KHÔNG tự bịa)"
+      cast_count: {type: int, required: true, range: [5, 8], desc: "Theo invariant BP2 (character_balance_report.py đã exists, chỉ đối chiếu)"}
+      regret_pillars_covered:
+        type: list
+        item_type: string
+        desc: "Các pillar hối tiếc (family_regret/love_regret/promise_regret/kindness_regret/self_regret...) xuất hiện trong tập - trỏ dữ liệu thật roster, không tự đặt tên pillar mới"
+      kpi_ep_range_ref:
+        type: enum
+        values: [ep_1_10, ep_11_30, ep_31_90]
+        desc: "Trỏ đúng bucket bible/16_series_kpi.yaml.series_targets - CHỈ tham chiếu, KHÔNG chép lại giá trị số"
+
+  season_plan:
+    desc: "Nhóm episode - vd EP01-50/EP51-90 theo bible/21b"
+    fields:
+      season_id: {type: string, required: true}
+      episode_range: {type: list, item_type: int, length: 2, desc: "[start, end] - PHẢI khớp boundary bible/21b_ep51_90_spec.yaml nếu overlap season 2"}
+      driver_phase_refs:
+        type: list
+        item_type: enum
+        values: [ESTABLISH, MYSTERY, ESCALATION, REVELATION, PIVOT, AFTERMATH, FINALE]
+        desc: "Các phase bible/18.budget_curve rơi vào season này - CHỈ tham chiếu tên phase, không chép lại cumulative_cap"
+      regret_distribution_target:
+        type: object
+        desc: "Trỏ đúng project_config.yaml.distribution - KHÔNG định nghĩa lại tỷ lệ, chỉ xác nhận season này có đảm bảo target toàn cục hay không"
+
+# ------------------------------------------------------------
+# GHI CHÚ RIÊNG — "act" KHÔNG có trong schema này (giữ nguyên văn proposal)
+# ------------------------------------------------------------
+note_no_act_entity: |
+  BP7 (story_structure.yaml) tự ghi: "Act chưa có entity/facet riêng trong BP2 (chỉ
+  scene/episode_plan/season_plan) - chờ RFC nếu cần field-hóa sau". Schema này THEO ĐÚNG
+  phạm vi đã khóa - KHÔNG tự thêm entity "act" để "cho đủ 6 cấp". Nếu Mr.Long muốn field-hóa
+  Act riêng, cần 1 RFC/proposal khác (Change Request Gate R211), không làm chung trong file này.

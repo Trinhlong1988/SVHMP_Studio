@@ -1436,5 +1436,25 @@ files:
     domain: g6_story_planner
     status: active
     tier: 1
+  governance/blueprint/schemas/story_plan_schema.yaml:
+    domain: g6_story_planner
+    status: candidate
+    tier: 1
+  tools/story_planner.py:
+    domain: g6_story_planner
+    status: active
+    tier: 1
+  tools/story_plan_schema_check.py:
+    domain: g6_story_planner
+    status: active
+    tier: 1
+  tests/test_g6b_story_planner.py:
+    domain: g6_story_planner
+    status: active
+    tier: 1
+  reports/G6B_REPORT.md:
+    domain: g6_story_planner
+    status: active
+    tier: 1
 generated_by: tools/registry_triage.py
-total: 359
+total: 364

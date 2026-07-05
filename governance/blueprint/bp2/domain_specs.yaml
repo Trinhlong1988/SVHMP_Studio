@@ -278,14 +278,10 @@ domains:
       - {facet_id: series_kpi, desc: "KPI series (retention/comment target)", data_type: mapping,
          sot: {status: exists, path: bible/16_series_kpi.yaml}}
       - {facet_id: scene_act_structure, desc: "Cau truc Scene/Act/Episode/Season/Series/Ending + scene_function (dan chuyen/gay nghi/danh lac huong/hy sinh — SCENE own, character CHI tham chieu)", data_type: schema,
-         sot: {status: planned, planned_path: governance/blueprint/schemas/story_plan_schema.yaml, owner: story_planner,
-               reason_not_exists_yet: "Cau truc chua field-hoa (BP0 M2)", target_milestone: M2_planner_generator,
-               blocking_dependency: "Mr.Long duyet format ke hoach"}}
+         sot: {status: exists, path: governance/blueprint/schemas/story_plan_schema.yaml}}
     entities: [season_plan, episode_plan, scene]
     invariants:
       - {rule: "Reveal driver ngoai budget bible/18 = VIOLATION",
-         enforcer: {status: planned, planned_path: tools/story_planner.py, owner: story_planner,
-                    reason_not_exists_yet: "Planner tool chua co (BP0 M2)", target_milestone: M2_planner_generator,
-                    blocking_dependency: "event ledger + timeline manager (M1)"}}
+         enforcer: {status: exists, path: tools/story_planner.py}}
       - {rule: "Cast 5-8 nhan vat/tap + can bang xuyen tap theo balance_targets",
          enforcer: {status: exists, path: tools/character_balance_report.py}}

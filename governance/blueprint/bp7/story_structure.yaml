@@ -23,9 +23,7 @@ levels:
     parent: act
     desc: "Don vi nho nhat — 1 boi canh/1 khoanh khac lien tuc, khong ngat thoi gian"
     components_required: []   # scene tu do noi dung, khong component co dinh
-    sot: {status: planned, planned_path: governance/blueprint/schemas/story_plan_schema.yaml,
-          owner: story_planner, reason_not_exists_yet: "Cau truc scene chua field-hoa (BP2 M2)",
-          target_milestone: M2_planner_generator, blocking_dependency: "Mr.Long duyet format ke hoach"}
+    sot: {status: exists, path: governance/blueprint/schemas/story_plan_schema.yaml, key: schema.scene}
     entity_ref: scene   # khop bp2 story_planner.entities
 
   - level_id: act
@@ -33,9 +31,11 @@ levels:
     desc: "Nhom scene trong 1 episode theo nhip kich tinh (KHONG phai component ten rieng nhu HOOK/SETUP)"
     components_required: []   # Act = grouping level, chua co component rieng field-hoa
     sot: {status: planned, planned_path: governance/blueprint/schemas/story_plan_schema.yaml,
-          owner: story_planner, reason_not_exists_yet: "Act chua co entity/facet rieng trong BP2 (chi scene/episode_plan/season_plan) — cho RFC neu can field-hoa sau",
-          target_milestone: M2_planner_generator, blocking_dependency: "Mr.Long duyet format ke hoach"}
-    note: "Task BP7 chi dinh Act trong chuoi cap — KHONG bia component/rule rieng cho Act (chua co can cu trong bible)."
+          owner: story_planner,
+          reason_not_exists_yet: "G6b (5/7) da field-hoa DUNG 3 entity scene/episode_plan/season_plan theo proposal APPROVED_A (commit 9f5ccbd) — Act CHU DICH KHONG co entity rieng trong lan field-hoa nay. File path da ton tai (dung chung voi scene/episode_plan/season_plan) nhung Act KHONG co key rieng trong do.",
+          target_milestone: M2_planner_generator,
+          blocking_dependency: "RFC rieng (Change Request Gate R211) neu Mr.Long muon field-hoa Act thanh entity/facet doc lap trong tuong lai"}
+    note: "Task BP7 chi dinh Act trong chuoi cap — KHONG bia component/rule rieng cho Act (chua co can cu trong bible). G6b (5/7) CHU Y KHONG tao entity act khi field-hoa 3 entity kia (dung theo proposal da duyet)."
 
   - level_id: episode
     parent: season
