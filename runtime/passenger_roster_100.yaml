@@ -59,6 +59,12 @@ passengers:
     particles:
     - nhỉ
     register: dan_da
+    speaking_speed: nhanh
+    catchphrase: con xin lỗi mẹ vì con về muộn
+    forbidden_words:
+    - bận việc
+    - kẹt xe
+    dialogue_sample: Con hứa Tết này về sớm, mà con lại về muộn, mẹ chờ con cả đêm giao thừa.
   death:
     type: tai_nan
     pain: Mẹ đợi con về Tết — con không về kịp
@@ -85,6 +91,12 @@ passengers:
     particles:
     - rứa
     register: dan_da
+    speaking_speed: vua
+    catchphrase: tui về trễ, mạ chờ tui hoài
+    forbidden_words:
+    - công việc
+    - đường xa
+    dialogue_sample: Mạ chờ tui ngoài cổng, mà tui về trễ chuyến xe, mạ đứng lạnh cả buổi tối.
   death:
     type: benh_tat
     pain: Mẹ đợi con về Tết — con không về kịp
@@ -111,6 +123,12 @@ passengers:
     particles:
     - nghen
     register: dan_da
+    speaking_speed: cham
+    catchphrase: con nợ mẹ một cái Tết trọn vẹn
+    forbidden_words:
+    - dịp khác
+    - năm sau
+    dialogue_sample: Con cứ hẹn năm sau về đông đủ, mẹ đợi hoài mà năm đó không còn kịp nữa.
   death:
     type: mat_tich
     pain: Mẹ đợi con về Tết — con không về kịp
@@ -137,6 +155,12 @@ passengers:
     particles:
     - nhỉ
     register: dan_da
+    speaking_speed: nhanh
+    catchphrase: con về muộn, mẹ đã đi rồi
+    forbidden_words:
+    - số phận
+    - không ai ngờ
+    dialogue_sample: Con đứng ngoài cửa gọi mẹ ơi, mà nhà đã tắt đèn từ lúc nào.
   death:
     type: oan_khuat
     pain: Mẹ đợi con về Tết — con không về kịp
@@ -163,6 +187,12 @@ passengers:
     particles:
     - rứa
     register: dan_da
+    speaking_speed: vua
+    catchphrase: tui tiếc cái Tết cuối cùng đó
+    forbidden_words:
+    - bất ngờ quá
+    - ai biết được
+    dialogue_sample: Mạ đợi tui ngồi bên mâm cơm giao thừa, tui về tới thì mâm cơm đã nguội lạnh.
   death:
     type: tu_nhien
     pain: Mẹ đợi con về Tết — con không về kịp
@@ -189,6 +219,12 @@ passengers:
     particles:
     - nghen
     register: dan_da
+    speaking_speed: cham
+    catchphrase: con biết lỗi rồi, má ơi
+    forbidden_words:
+    - hiểu lầm
+    - giận nhau
+    dialogue_sample: Má chờ con giao thừa năm đó, con lại mải chơi với bạn, giờ con hối không kịp.
   death:
     type: hieu_lam
     pain: Mẹ đợi con về Tết — con không về kịp
@@ -215,6 +251,12 @@ passengers:
     particles:
     - nhỉ
     register: dan_da
+    speaking_speed: nhanh
+    catchphrase: cháu xin lỗi vì cháu không bắt máy
+    forbidden_words:
+    - bận
+    - đang họp
+    dialogue_sample: Bà gọi cháu đúng giao thừa, cháu đang bận nên tắt máy, ai ngờ đó là cuộc gọi cuối.
   death:
     type: hy_sinh
     pain: Bà nội mất giao thừa — cháu không bắt máy
@@ -241,6 +283,12 @@ passengers:
     particles:
     - rứa
     register: dan_da
+    speaking_speed: cham
+    catchphrase: tui hối vì tui không bắt máy
+    forbidden_words:
+    - xíu nữa gọi lại
+    - để mai
+    dialogue_sample: Mệ gọi tui ba lần đêm đó, tui định gọi lại xíu nữa, mà xíu nữa không bao giờ tới.
   death:
     type: bi_phan_boi
     pain: Bà nội mất giao thừa — cháu không bắt máy
@@ -267,6 +315,12 @@ passengers:
     particles:
     - nghen
     register: dan_da
+    speaking_speed: vua
+    catchphrase: con không kịp nghe máy của bà
+    forbidden_words:
+    - ồn quá
+    - không nghe rõ
+    dialogue_sample: Bà gọi con lúc pháo hoa đang bắn, con không nghe thấy chuông, con tiếc cả đời.
   death:
     type: khong_ro
     pain: Bà nội mất giao thừa — cháu không bắt máy
@@ -293,6 +347,12 @@ passengers:
     particles:
     - nhỉ
     register: dan_da
+    speaking_speed: vua
+    catchphrase: con lỡ một cuộc gọi mà không lỡ được cả đời
+    forbidden_words:
+    - xíu xíu
+    - lát nữa
+    dialogue_sample: Bà nội gọi con lúc con đang xem pháo hoa, con định nghe máy lát nữa, mà lát nữa không còn bà nữa.
   death:
     type: tai_nan
     pain: Bà nội mất giao thừa — cháu không bắt máy
@@ -319,6 +379,12 @@ passengers:
     particles:
     - rứa
     register: dan_da
+    speaking_speed: vua
+    catchphrase: tui tiếc cuộc gọi tui bỏ lỡ đêm đó
+    forbidden_words:
+    - máy hết pin
+    - không để ý
+    dialogue_sample: Bà gọi tui giao thừa, máy tui hết pin lúc đó, tui sạc xong gọi lại thì không ai bắt máy nữa.
   death:
     type: benh_tat
     pain: Bà nội mất giao thừa — cháu không bắt máy
@@ -345,6 +411,12 @@ passengers:
     particles:
     - nghen
     register: dan_da
+    speaking_speed: nhanh
+    catchphrase: con ước gì con bắt máy đêm đó
+    forbidden_words:
+    - mải chơi
+    - không để ý điện thoại
+    dialogue_sample: Con mải chơi với đám bạn nên không nghe điện thoại, bà nội gọi con đúng lúc đó, cuộc gọi cuối cùng.
   death:
     type: mat_tich
     pain: Bà nội mất giao thừa — cháu không bắt máy
@@ -371,6 +443,12 @@ passengers:
     particles:
     - nhỉ
     register: dan_da
+    speaking_speed: vua
+    catchphrase: con chưa từng hiểu hết lòng cha
+    forbidden_words:
+    - lạnh lùng
+    - khó gần
+    dialogue_sample: Cha ít nói với con lắm, con cứ nghĩ cha không thương con, giờ con mới hiểu cha thương theo cách của cha.
   death:
     type: oan_khuat
     pain: Cha câm lặng — con không hiểu cha
@@ -397,6 +475,13 @@ passengers:
     particles:
     - rứa
     register: dan_da
+    speaking_speed: cham
+    catchphrase: tui hiểu ba muộn quá rồi
+    forbidden_words:
+    - nghiêm khắc
+    - khó tính
+    dialogue_sample: Ba tui ít khi nói lời yêu thương, tui cứ trách ba lạnh lùng, giờ tui mới hiểu ba thương tui theo cách
+      riêng.
   death:
     type: tu_nhien
     pain: Cha câm lặng — con không hiểu cha
@@ -423,6 +508,12 @@ passengers:
     particles:
     - nghen
     register: dan_da
+    speaking_speed: nhanh
+    catchphrase: con giận ba mà không hiểu ba
+    forbidden_words:
+    - im lặng
+    - không nói gì
+    dialogue_sample: Ba con hay im lặng mỗi khi con làm sai, con cứ nghĩ ba ghét con, giờ con mới biết ba chỉ không biết nói.
   death:
     type: hieu_lam
     pain: Cha câm lặng — con không hiểu cha
@@ -449,6 +540,13 @@ passengers:
     particles:
     - nhỉ
     register: dan_da
+    speaking_speed: cham
+    catchphrase: tôi trách cha suốt bao năm oan uổng
+    forbidden_words:
+    - cứng nhắc
+    - gia trưởng
+    dialogue_sample: Cha tôi nghiêm khắc với tôi từ nhỏ, tôi cứ nghĩ cha không thương, giờ tôi mới hiểu đó là cách cha lo
+      cho tôi.
   death:
     type: hy_sinh
     pain: Cha câm lặng — con không hiểu cha
@@ -475,6 +573,12 @@ passengers:
     particles:
     - rứa
     register: dan_da
+    speaking_speed: vua
+    catchphrase: tui chưa kịp nói con hiểu ba rồi
+    forbidden_words:
+    - gia trưởng
+    - áp đặt
+    dialogue_sample: Ba tui hay áp đặt tui phải thế này thế kia, tui giận ba cả tuổi trẻ, giờ tui mới hiểu ba chỉ sợ tui khổ.
   death:
     type: bi_phan_boi
     pain: Cha câm lặng — con không hiểu cha
@@ -501,6 +605,12 @@ passengers:
     particles:
     - nghen
     register: dan_da
+    speaking_speed: vua
+    catchphrase: con hối vì con đi xa quá lâu
+    forbidden_words:
+    - công tác
+    - đi làm ăn xa
+    dialogue_sample: Em con gọi con về, con nói bận công tác chưa về được, con không ngờ đó là lần cuối em gọi.
   death:
     type: khong_ro
     pain: Em mất khi anh đi xa — anh không kịp về
@@ -527,6 +637,12 @@ passengers:
     particles:
     - nhỉ
     register: dan_da
+    speaking_speed: vua
+    catchphrase: tôi tiếc vì tôi ở xa quá lâu
+    forbidden_words:
+    - bận rộn
+    - chưa sắp xếp được
+    dialogue_sample: Em tôi ốm nặng lúc tôi đang đi làm ăn xa, tôi định về ngay mà vé xe không kịp.
   death:
     type: tai_nan
     pain: Em mất khi anh đi xa — anh không kịp về
@@ -553,6 +669,12 @@ passengers:
     particles:
     - rứa
     register: dan_da
+    speaking_speed: nhanh
+    catchphrase: tui hối hận vì tui đi xa nhà
+    forbidden_words:
+    - đi làm ăn
+    - ở xa lâu quá
+    dialogue_sample: Em tui gọi tui về gấp, tui đang ở xa chưa thu xếp kịp, em đi trước khi tui về tới.
   death:
     type: benh_tat
     pain: Em mất khi anh đi xa — anh không kịp về
@@ -579,6 +701,12 @@ passengers:
     particles:
     - nghen
     register: dan_da
+    speaking_speed: vua
+    catchphrase: con không kịp về bên em
+    forbidden_words:
+    - xa quá
+    - đường sá khó khăn
+    dialogue_sample: Em con ở nhà một mình lúc con đi làm xa, con định về thăm mà chưa kịp thì em đã đi.
   death:
     type: mat_tich
     pain: Em mất khi anh đi xa — anh không kịp về
@@ -605,6 +733,12 @@ passengers:
     particles:
     - nhỉ
     register: dan_da
+    speaking_speed: cham
+    catchphrase: tôi ân hận vì đi xa để em ở lại
+    forbidden_words:
+    - bôn ba
+    - mưu sinh xa nhà
+    dialogue_sample: Tôi đi xa mưu sinh, em tôi ở nhà một mình, tôi tưởng còn nhiều thời gian để về, ai ngờ không kịp nữa.
   death:
     type: oan_khuat
     pain: Em mất khi anh đi xa — anh không kịp về
@@ -631,6 +765,12 @@ passengers:
     particles:
     - rứa
     register: dan_da
+    speaking_speed: nhanh
+    catchphrase: tui chưa kịp xin lỗi ông
+    forbidden_words:
+    - cãi lời
+    - bướng bỉnh
+    dialogue_sample: Tui cãi ông chuyện nhỏ xíu, ông giận tui cả tuần, tui định xin lỗi thì ông đã đi rồi.
   death:
     type: tu_nhien
     pain: Ông mất — cháu chưa kịp xin lỗi vì cãi ông
@@ -657,6 +797,12 @@ passengers:
     particles:
     - nghen
     register: dan_da
+    speaking_speed: cham
+    catchphrase: con nợ ông nội một lời xin lỗi
+    forbidden_words:
+    - cãi vã
+    - nói hỗn
+    dialogue_sample: Con nói hỗn với ông một lần, ông buồn suốt mấy hôm, con chưa kịp xin lỗi thì ông đã mất.
   death:
     type: hieu_lam
     pain: Ông mất — cháu chưa kịp xin lỗi vì cãi ông
@@ -683,6 +829,12 @@ passengers:
     particles:
     - nhỉ
     register: dan_da
+    speaking_speed: cham
+    catchphrase: tôi ân hận vì đã cãi ông
+    forbidden_words:
+    - ương bướng
+    - không nghe lời
+    dialogue_sample: Ông dặn tôi một điều, tôi cãi lại vì tôi nghĩ mình đúng, ông buồn, rồi ông đi mà tôi chưa kịp xin lỗi.
   death:
     type: hy_sinh
     pain: Ông mất — cháu chưa kịp xin lỗi vì cãi ông
@@ -709,6 +861,12 @@ passengers:
     particles:
     - rứa
     register: dan_da
+    speaking_speed: vua
+    catchphrase: tui tiếc lời cãi ông hôm đó
+    forbidden_words:
+    - nói lại
+    - cãi lời ông
+    dialogue_sample: Ông la tui một câu, tui cãi lại ông gay gắt, ông giận không nói với tui nữa, rồi ông đi luôn.
   death:
     type: bi_phan_boi
     pain: Ông mất — cháu chưa kịp xin lỗi vì cãi ông
@@ -735,6 +893,12 @@ passengers:
     particles:
     - nghen
     register: dan_da
+    speaking_speed: vua
+    catchphrase: con ước gì con đừng cãi ông
+    forbidden_words:
+    - giận dỗi
+    - bỏ đi
+    dialogue_sample: Con giận ông bỏ đi không thèm nói chuyện, con định làm hòa sau, mà ông không còn đợi con được nữa.
   death:
     type: khong_ro
     pain: Ông mất — cháu chưa kịp xin lỗi vì cãi ông
@@ -761,6 +925,12 @@ passengers:
     particles:
     - nhỉ
     register: dan_da
+    speaking_speed: vua
+    catchphrase: con chưa từng hỏi mẹ thích gì
+    forbidden_words:
+    - đơn giản
+    - chuyện nhỏ
+    dialogue_sample: Mẹ chăm con cả đời, con chưa từng hỏi mẹ thích ăn gì, thích đi đâu, giờ hỏi cũng không kịp nữa.
   death:
     type: tai_nan
     pain: Mẹ chăm con suốt đời — con quên hỏi mẹ thích gì
@@ -787,6 +957,12 @@ passengers:
     particles:
     - rứa
     register: dan_da
+    speaking_speed: nhanh
+    catchphrase: tui quên hỏi mạ thích chi
+    forbidden_words:
+    - chuyện lặt vặt
+    - không quan trọng
+    dialogue_sample: Mạ lo cho tui từng bữa ăn, tui chưa lần nào hỏi mạ thích ăn món chi, giờ tui mới nhớ ra.
   death:
     type: benh_tat
     pain: Mẹ chăm con suốt đời — con quên hỏi mẹ thích gì
@@ -813,6 +989,12 @@ passengers:
     particles:
     - nghen
     register: dan_da
+    speaking_speed: cham
+    catchphrase: con có lỗi vì chưa hỏi mẹ một câu
+    forbidden_words:
+    - việc nhỏ
+    - để sau
+    dialogue_sample: Mẹ lo cho con cả đời không đòi hỏi gì, con cứ nghĩ để sau hỏi mẹ thích gì, giờ không còn sau nữa.
   death:
     type: mat_tich
     pain: Mẹ chăm con suốt đời — con quên hỏi mẹ thích gì
@@ -839,6 +1021,12 @@ passengers:
     particles:
     - nhỉ
     register: dan_da
+    speaking_speed: nhanh
+    catchphrase: con tiếc vì con chưa hỏi mẹ
+    forbidden_words:
+    - bận học
+    - trẻ con vô tâm
+    dialogue_sample: Mẹ chăm con từng chút, con còn nhỏ nên vô tâm, chưa từng hỏi mẹ một câu mẹ thích gì.
   death:
     type: oan_khuat
     pain: Mẹ chăm con suốt đời — con quên hỏi mẹ thích gì
@@ -865,6 +1053,12 @@ passengers:
     particles:
     - rứa
     register: dan_da
+    speaking_speed: cham
+    catchphrase: tui ân hận vì vô tâm với mạ
+    forbidden_words:
+    - mải làm ăn
+    - không để ý
+    dialogue_sample: Mạ chăm tui cả đời không than vãn, tui mải làm ăn không để ý hỏi mạ một câu mạ cần chi.
   death:
     type: tu_nhien
     pain: Mẹ chăm con suốt đời — con quên hỏi mẹ thích gì
