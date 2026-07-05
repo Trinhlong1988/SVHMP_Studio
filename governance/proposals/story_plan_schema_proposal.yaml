@@ -17,10 +17,10 @@
 # ============================================================
 
 version: 1.0
-proposal_status: PENDING
+proposal_status: APPROVED
 writer_of_record: mr_long
-mr_long_decision: PENDING
-decision_date: null
+mr_long_decision: APPROVED_A
+decision_date: "2026-07-05 (Mr.Long xac nhan phuong an A - duyet nguyen van draft, khong sua)"
 
 # ------------------------------------------------------------
 # PHAM VI — CHI field-hoa dung 1 facet BP2 dang planned: scene_act_structure
