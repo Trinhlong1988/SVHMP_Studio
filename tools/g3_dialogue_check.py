@@ -13,6 +13,10 @@ runtime/reports/character_system_report.md).
                        corpus cu KHONG phai viec cua gate nay, xem reports/G3_REALITY_AUDIT.md)
   D3_generator_real   dialogue_generator.generate_line() chay that tren >=10 passenger THAT
                        da vung tu roster (REALITY ANCHOR TASK D3)
+  G3_7_output_audit_real  DONG KHOANG TRONG G3-7 (kiem duyet doc lap 5/7): ghi output THAT
+                       (output/ep_g3_sample/episode.md, KHONG bao gio dung 50 tap that) roi
+                       chay 2 tool audit cu TREN CHINH file do — xac nhan chung QUET DUOC
+                       (khong phai 0-file PASS RONG khi G3 sinh o path khac output/ep_NN/)
 
 R191 (qa_dialogue_identity.py) KHONG wire vao gate nay (can WAV da render, ci_gate chay
 TRUOC render) - xem reports/G3_HANDOFF_G8.md.
@@ -94,6 +98,52 @@ def _stage_generator_real_data() -> dict:
         return {'rc': 1, 'tail': f'generator_real_data EXCEPTION: {e!r}'}
 
 
+SANDBOX_DIR = REPO / 'output' / 'ep_g3_sample'
+
+
+def _stage_output_audit_real() -> dict:
+    """G3-7 (kiem duyet doc lap 5/7): sinh 1 dong thoai THAT + ghi ra sandbox path THAT
+    (output/ep_g3_sample/episode.md — ten CHU, khong bao gio trung so tap that/tuong lai),
+    roi chay 2 tool audit cu (audit_driver_dialogue_context.py qua --file, audit_dialogue_
+    hierarchy.audit_ep() import truc tiep — ham nay khong phu thuoc duong dan, chi can text)
+    NGAY TREN file do. Assert ca 2 THAT SU quet duoc noi dung (>=1 quote extract duoc), khong
+    phai 0-file/0-quote PASS RONG."""
+    try:
+        from dialogue_manager import DialogueManager
+        from dialogue_generator import generate_line, write_episode_line
+        from audit_dialogue_hierarchy import audit_ep, extract_quotes
+
+        dm = DialogueManager()
+        pas = [c for c in dm.registry.all('passenger') if c.assigned_ep]
+        sample = next((c for c in pas if generate_line(
+            c.id, {'emotion_beat': 'nhớ nhà', 'listener_call': 'Mẹ ơi'}, dm)['status'] == 'OK'), None)
+        if sample is None:
+            return {'rc': 1, 'tail': 'khong tim duoc passenger nao sinh OK de ghi sandbox'}
+        r = generate_line(sample.id, {'emotion_beat': 'nhớ nhà', 'listener_call': 'Mẹ ơi'}, dm)
+
+        out_path = write_episode_line(REPO / 'output', 'g3_sample', r['line'],
+                                      header_kv={'g3_sandbox': 'true', 'character_id': sample.id})
+        if out_path.resolve() != (SANDBOX_DIR / 'episode.md').resolve():
+            return {'rc': 1, 'tail': f'sandbox path sai vi tri: {out_path}'}
+
+        text = out_path.read_text(encoding='utf-8')
+        quotes = extract_quotes(text)
+        if not quotes:
+            return {'rc': 1, 'tail': f'extract_quotes() 0 quote tren {out_path} — 0-quote PASS RONG (G3-7)'}
+
+        rel = out_path.relative_to(REPO).as_posix()
+        p = subprocess.run([PY, 'tools/audit_driver_dialogue_context.py', '--file', rel],
+                           capture_output=True, text=True, cwd=str(REPO), encoding='utf-8')
+        if 'MISSING' in (p.stdout or ''):
+            return {'rc': 1, 'tail': f'audit_driver_dialogue_context.py bao MISSING tren {rel} (khong quet duoc)'}
+
+        issues = audit_ep(0, text, detail=False)
+        return {'rc': 0, 'tail': f'{out_path.relative_to(REPO)}: {len(quotes)} quote extract duoc, '
+                                  f'audit_driver rc={p.returncode}, audit_ep() chay xong ({len(issues)} issue)'}
+    except Exception as e:  # noqa: BLE001
+        return {'rc': 1, 'tail': f'output_audit_real EXCEPTION: {e!r}'}
+
+
 def run_suite():
     rows = []
     rows.append({'key': 'D3_D4_pytest', 'detail': 'tests/test_g3_dialogue.py',
@@ -104,6 +154,9 @@ def run_suite():
                  **_stage_validators_smoke()})
     rows.append({'key': 'D3_generator_real', 'detail': '>=10 passenger that, >=3 vung',
                  **_stage_generator_real_data()})
+    rows.append({'key': 'G3_7_output_audit_real',
+                 'detail': 'output/ep_g3_sample/episode.md that + 2 tool audit cu quet tren do',
+                 **_stage_output_audit_real()})
     return rows
 
 

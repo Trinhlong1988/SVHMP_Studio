@@ -119,6 +119,41 @@ def test_dialect_leak_blocks_via_real_validator_direct_call():
     assert any(i['code'] == 'DIALECT_LEAK' for i in issues)
 
 
+def test_dialect_leak_end_to_end_via_generate_line_full_pipeline(dm, real_passengers, tmp_path):
+    """G3-5 RE-AUDIT THAT (kiem duyet doc lap 5/7 phat hien 2 test o tren CHI goi
+    dvv.validate_line() TRUC TIEP tren 1 chuoi tay go - CHUA chung minh generate_line() (buoc 3
+    THAT cua generator) tu loc duoc candidate leak qua TOAN BO pipeline). Test nay bom marker
+    leak ('nhe'/'nhi' - EXCLUSIVE cua vung 'bac') qua scene_context (input TU BEN NGOAI, dung
+    dung cach G6 se cap trong tuong lai - khong bia du lieu nhan vat) khien candidate 'core'
+    (buoc dau _candidate_variants sinh ra) leak that; nhan vat THAT trong roster, region 'nam'.
+    particles/catchphrase duoc lam sach de loai tru nguon leak khac (chi con dung 2 candidate:
+    core leak + fallback sach), cach ly bien so can kiem tra."""
+    c = real_passengers[3]
+    bad = copy.deepcopy(c)
+    bad.voice.region_dialect = 'nam'
+    bad.voice.hometown = 'Sài Gòn'
+    bad.voice.pronoun_system = 'tui'
+    bad.voice.particles = []
+    bad.voice.catchphrase = ''
+    bad.id = 'TEST_G3_DIALECT_LEAK_E2E'
+    dm.registry.chars[bad.id] = bad
+    try:
+        leaky_scene = {'emotion_beat': 'nhé', 'listener_call': 'nhỉ'}
+        r = generate_line(bad.id, leaky_scene, dm, missing_report_path=tmp_path / 'missing.md')
+        assert r['status'] == 'OK', f"generator phai tim duoc candidate sach khac, khong REFUSED oan: {r}"
+        assert r['attempts'] > 1, (
+            f"attempts={r['attempts']} - candidate dau (core, chua 'nhé'/'nhỉ' tu scene_context) "
+            f"PHAI bi buoc 3 (dvv.validate_line THAT) tu choi TRUOC, khong duoc chon ngay: {r}")
+        assert 'nhé' not in r['line'] and 'nhỉ' not in r['line'], \
+            f"generator EMIT cau leak dialect qua FULL pipeline: {r}"
+        final_issues = dvv.validate_line(
+            {'region_dialect': 'nam', 'hometown': 'Sài Gòn', 'pronoun_system': 'tui',
+             'particles': [], 'forbidden_words': []}, r['line'])
+        assert final_issues == [], f"line cuoi cung van con issue THAT (validator doc lap): {final_issues}"
+    finally:
+        del dm.registry.chars[bad.id]
+
+
 # ---------- D3 buoc 4: adapter pronoun-ambiguity (PHAN BIEN #2) ----------
 
 def test_pronoun_adapter_calls_real_detector_directly():
@@ -283,3 +318,52 @@ def test_r191_qa_dialogue_identity_not_wired_in_ci_gate():
     assert 'qa_dialogue_identity.py' not in ' '.join(scripts)
     handoff = REPO / 'reports' / 'G3_HANDOFF_G8.md'
     assert handoff.exists(), 'phai ban giao ro cho G8 (D7 yeu cau)'
+
+
+# ============================================================
+# G3-7 RE-AUDIT (kiem duyet doc lap 5/7): sandbox output THAT + 2 tool audit cu quet duoc
+# ============================================================
+
+def test_write_episode_line_accepts_non_numeric_ep_label():
+    """write_episode_line() phai chap nhan ep_n dang chuoi (khong phai so) de tao thu muc
+    sandbox TEN CHU - khong bao gio trung so tap that/tuong lai (hien 50, roadmap toi 90)."""
+    from dialogue_generator import write_episode_line
+    import tempfile
+    with tempfile.TemporaryDirectory() as d:
+        out = write_episode_line(Path(d), 'g3_sample', 'Câu thử.', header_kv={'x': '1'})
+        assert out == Path(d) / 'ep_g3_sample' / 'episode.md'
+        assert out.exists()
+
+
+def test_g3_7_sandbox_output_scanned_by_both_legacy_audit_tools():
+    """G3-7 (kiem duyet doc lap 5/7): chinh gate g3_dialogue_check.py da chay stage
+    G3_7_output_audit_real - test nay xac nhan LAI ket qua doc lap voi assertion cu the
+    (khong chi tin exit code cua gate): sandbox path dung, extract_quotes() >=1, va
+    audit_driver_dialogue_context.py --file KHONG bao 'MISSING' (that su quet duoc, khong
+    phai 0-file pass rong)."""
+    import subprocess
+    from g3_dialogue_check import SANDBOX_DIR, _stage_output_audit_real
+    from audit_dialogue_hierarchy import extract_quotes
+
+    result = _stage_output_audit_real()
+    assert result['rc'] == 0, result['tail']
+
+    out_path = SANDBOX_DIR / 'episode.md'
+    assert out_path.exists()
+    assert '50' not in str(SANDBOX_DIR.relative_to(REPO / 'output'))  # ten chu, khong phai so tap
+    text = out_path.read_text(encoding='utf-8')
+    assert len(extract_quotes(text)) >= 1, 'G3-7: 0-quote se la PASS RONG'
+
+    rel = out_path.relative_to(REPO).as_posix()
+    p = subprocess.run([sys.executable, 'tools/audit_driver_dialogue_context.py', '--file', rel],
+                       capture_output=True, text=True, cwd=str(REPO), encoding='utf-8')
+    assert 'MISSING' not in (p.stdout or ''), 'audit_driver_dialogue_context.py khong quet duoc sandbox'
+
+
+def test_g3_7_sandbox_never_collides_with_real_episode_numbers():
+    """Sandbox dir PHAI la ten chu (khong phai so), khong duoc trung voi bat ky pattern
+    ep_NN (so) nao du hien tai hay tuong lai (roadmap toi ep_90)."""
+    import re
+    from g3_dialogue_check import SANDBOX_DIR
+    assert not re.match(r'^ep_\d+$', SANDBOX_DIR.name), \
+        f'{SANDBOX_DIR.name} la so - co the trung tap that tuong lai'

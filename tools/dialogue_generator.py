@@ -211,12 +211,21 @@ def _generate_recurring(c, scene_context: dict) -> dict:
                                   reason='RECURRING_CHARACTER_DEFAULT_REFUSE')
 
 
-def write_episode_line(root: Path, ep_n: int, line: str, header_kv: dict = None) -> Path:
+def write_episode_line(root: Path, ep_n, line: str, header_kv: dict = None) -> Path:
     """Buoc 6: ghi 1 dong markdown dung convention output/ep_*/episode.md (co dau ngoac
     kep de extract_quotes() quet duoc) - GOI Y dung cho smoke-test/sandbox (tmp_path hoac
-    output/ep_g3_sample/), KHONG BAO GIO trỏ vao 50 tap that da locked."""
+    output/ep_g3_sample/), KHONG BAO GIO trỏ vao 50 tap that da locked.
+
+    ep_n chap nhan ca so nguyen (zero-pad nhu 50 tap that, vd 1 -> 'ep_01') LAN chuoi tuy y
+    khong phai so (dung nguyen van, vd 'g3_sample' -> 'ep_g3_sample') - phuc vu G3-7 (dong
+    kiem duyet 5/7): can 1 thu muc sandbox TEN CHU (khong phai so) de KHONG BAO GIO trung
+    voi bat ky so tap that/tuong lai nao (hien 50 tap, roadmap toi 90) du co ep_n nao duoc dung."""
     header_kv = header_kv or {'g3_sandbox': 'true'}
-    ep_dir = Path(root) / f'ep_{int(ep_n):02d}'
+    try:
+        ep_label = f'{int(ep_n):02d}'
+    except (TypeError, ValueError):
+        ep_label = str(ep_n)
+    ep_dir = Path(root) / f'ep_{ep_label}'
     ep_dir.mkdir(parents=True, exist_ok=True)
     header = '\n'.join(f'{k}: {v}' for k, v in header_kv.items())
     text = f"```\n{header}\n```\n\"{line}\"\n"

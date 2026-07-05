@@ -7,7 +7,8 @@
 ## D0 — Baseline (before)
 
 Xem đầy đủ `reports/G3_REALITY_AUDIT.md`. Tóm tắt số liệu before:
-- `ci_gate.py`: đúng 11 stage, PASS, `502 passed, 8 skipped, 1 warning in 187.50s`.
+- `ci_gate.py`: đúng 12 stage (sửa 5/7, lỗi đếm tay cũ ghi "11" — máy đếm `len(CHECKS)` xác nhận
+  12 trước khi G3 wire thêm), PASS, `502 passed, 8 skipped, 1 warning in 187.50s`.
 - `audit_dialogue_hierarchy.py --summary`: 34 HIGH / 63 MEDIUM / 28 EP ảnh hưởng (corpus 50 tập cũ).
 - MATCH/MISMATCH thật (dialect leak, 87 passenger × 1571 quote): **MATCH 1450 / MISMATCH 121
   (7.7%)** — không phải 0 (đúng REALITY ANCHOR, không nghi đo sai).
@@ -100,11 +101,12 @@ cross-reference rõ với `test_dialogue_appropriateness_1000_r208.py` dưới d
 
 ## D7 — Gate 1 cửa
 
-`tools/g3_dialogue_check.py` (mirror `g4_world_check.py`/`g5_supernatural_check.py`): 4 stage, guard
+`tools/g3_dialogue_check.py` (mirror `g4_world_check.py`/`g5_supernatural_check.py`): ban đầu 4
+stage, **nay 5 stage** (thêm `G3_7_output_audit_real` ở vòng audit 2 — xem mục "G3-7" dưới), guard
 fork-bomb 2 lớp (đã verify THẬT bằng đếm process python trước/sau: 2 → 6, không bùng nổ — sự cố
 2200+ process từng xảy ra 1 lần trong quá trình build, xem `docs/ENVIRONMENT_GOTCHAS.md` G14, ĐÃ
 được builder trước fix và CMD_BUILD_3 xác nhận lại). Wire `ci_gate.py` đúng vị trí (sau `R208_age`,
-không đổi 11 entry cũ), mã lỗi `QA1016`. Unwire-guard 2 lớp (grep tĩnh + monkeypatch hành vi):
+không đổi 12 entry cũ), mã lỗi `QA1016`. Unwire-guard 2 lớp (grep tĩnh + monkeypatch hành vi):
 **4/4 test PASS**. `reports/G3_HANDOFF_G8.md`: bàn giao R191 rõ ràng cho G8.
 
 ## D8 — Sample + Report (file này)
@@ -114,7 +116,7 @@ không đổi 11 entry cũ), mã lỗi `QA1016`. Unwire-guard 2 lớp (grep tĩn
 
 ## Ci Gate — Before/After
 
-- **Before (D0):** 11 stage, `502 passed, 8 skipped, 1 warning in 187.50s`.
+- **Before (D0):** 12 stage, `502 passed, 8 skipped, 1 warning in 187.50s`.
 - **After (D7 wired, chạy sau rebase lên `origin/main` mới nhất, CMD_BUILD_3 5/7):**
 ```
 === CI GATE ===
@@ -134,9 +136,10 @@ không đổi 11 entry cũ), mã lỗi `QA1016`. Unwire-guard 2 lớp (grep tĩn
   [PASS] pytest_suite (exit 0) — 534 passed, 8 skipped, 1 warning in 208.45s [QA1099]
 === CI GATE: PASS ✅ ===
 ```
-13/13 stage PASS (11 cũ + `G4_world`/`g5_supernatural` đã wire trong lúc D0-D7 chạy song song với
-2 pack khác + `G3_dialogue` mới). 534 - 502 = 32 test mới ròng (D1 5 + D3/D4 16 + D5-confusion 10 +
-D7 4 - 3 trùng đếm do D0 baseline đã có sẵn trước khi D1 landed).
+13/13 stage PASS = 12 stage baseline D0 (đã bao gồm `g5_supernatural`/`G4_world`, wire xong TRƯỚC
+khi D0 chạy — 2 pack đó build song song với G3 nhưng landed vào `main` sớm hơn) + 1 (`G3_dialogue`
+mới). 534 - 502 = 32 test mới ròng (D1 5 + D3/D4 16 + D5-confusion 10 + D7 4 - 3 trùng đếm do D0
+baseline đã có sẵn trước khi D1 landed).
 
 ## Phát hiện phụ (ngoài phạm vi D0-D8, CMD_BUILD_3 xử lý khi tiếp quản)
 
@@ -154,13 +157,56 @@ D7 4 - 3 trùng đếm do D0 baseline đã có sẵn trước khi D1 landed).
    đóng hồ sơ, và cân nhắc chuẩn hoá lại cách ghi nhận approval trong các task tương lai (đúng tinh
    thần R_SUPREME "phát hiện process failure → đề xuất thay đổi quy trình").
 
+## AUDIT VÒNG 2 (route-back kiểm duyệt độc lập 5/7, `PROMPT_HANDOFF_CMD_BUILD_3_G3_FIXES.md`)
+
+Audit độc lập 15 checkpoint (2 lớp verify) trên `build/g3-dialogue-d0-d8`: 9/15 PASS sạch,
+`G3-1` (build-ahead) FAIL ban đầu → route lại 5 việc. Kiểm duyệt đã tự xử lý 2/5 việc trực tiếp
+trên `main` (D2 decision_note trung thực + sửa đếm 11→12 trong `TASK_G3_DIALOGUE.md`/
+`CMD_AUDIT_G3.md`) — CMD_BUILD_3 chỉ cần đồng bộ (rebase), không làm lại. 3 việc còn lại:
+
+**1. Đồng bộ D2:** `git rebase origin/main`, resolve conflict `g3_manager_decision_proposal.yaml`
+giữ đúng bản `main` (kiểm duyệt) — `mr_long_decision: APPROVED_A` với `decision_note` ghi trung
+thực timeline tự-duyệt (không hồi tố, không giả mạo lịch sử). Xác nhận qua `git log` sau rebase:
+field khớp đúng bản chuẩn.
+
+**2. Sửa số D0 (11→12):** `reports/G3_REALITY_AUDIT.md` mục 1 — máy đếm lại `len(CHECKS)` trong
+`tools/ci_gate.py` xác nhận **12** (không phải 11) trước khi G3 wire — danh sách 12 tên liệt kê
+ngay dưới câu văn xuôi vốn đã đúng, chỉ con số trong câu bị sai (lỗi kế thừa từ `TASK_G3_DIALOGUE.md`
+gốc). Đã sửa cả 2 câu liên quan trong `G3_REALITY_AUDIT.md` + đồng bộ lại chính report này.
+
+**3. Re-audit thật G3-5:** 2 test cũ (`test_dialect_leak_blocks_via_real_validator_direct_call`,
+`test_forbidden_word_direct_call_confirms_step3_uses_live_function`) chỉ gọi `dvv.validate_line()`
+**trực tiếp** trên chuỗi tay gõ — chưa chứng minh `generate_line()` (buộc 3 thật) tự lọc được
+candidate leak qua toàn bộ pipeline. Test mới
+`test_dialect_leak_end_to_end_via_generate_line_full_pipeline`: mutate 1 nhân vật thật (region
+`nam`), bơm marker leak (`nhé`/`nhỉ`, EXCLUSIVE của `bac`) qua `scene_context` (input từ ngoài,
+đúng cách G6 sẽ cấp trong tương lai) khiến candidate đầu (`core`) leak thật — xác nhận bằng chứng
+khách quan `r['attempts'] > 1` (candidate đầu bị buộc-3 từ chối trước khi candidate sạch được
+chọn, verify thủ công cho ra `attempts=2`, không phải giả định) + dòng cuối không còn marker leak.
+**PASS**, không phải pass rỗng (đã probe giá trị `attempts` thật trước khi tin).
+
+**4. Đóng gap G3-7:** `write_episode_line()` mở rộng nhận `ep_n` dạng chuỗi (không ép `int()` cứng)
+để tạo thư mục sandbox **tên chữ** `output/ep_g3_sample/` — không bao giờ trùng số tập thật/tương
+lai (hiện 50, roadmap tới 90), khác hẳn cách dùng số giả (0/99) rủi ro đụng tập tương lai. Gate
+`tools/g3_dialogue_check.py` thêm stage `G3_7_output_audit_real`: sinh 1 dòng thoại thật, ghi ra
+sandbox, rồi chạy `audit_driver_dialogue_context.py --file` (hỗ trợ sẵn) + import trực tiếp
+`audit_dialogue_hierarchy.audit_ep()` (hàm lõi không phụ thuộc đường dẫn) — xác nhận **cả 2 tool
+quét được thật** (`extract_quotes() >= 1`, không phải 0-file/0-quote PASS RỖNG), và `--all` glob
+`ep_*/episode.md` cũng tự động bắt được path này (verify thủ công). Xác nhận an toàn: regex R41
+pre-commit gate (`^output/ep_[0-9]+/episode\.md$`) không khớp tên chữ → sandbox tự động được bỏ
+qua bởi gate 50-tập, không gây crash `int('g3_sample')`.
+
+**5. TECH_DEBT DEBT-004:** ghi nợ Cross-G3/G6 (`scene_context` chưa khớp packet 12-knob thật vì
+`decision_engine.py` chưa build) vào `governance/TECH_DEBT.md` — OPEN, chờ G6.
+
 ## DoD checklist (theo TASK_G3_DIALOGUE.md)
 
 - [x] D0 baseline + MATCH/MISMATCH thật
 - [x] D1 SSOT reconcile + test Hải Dương đỏ/xanh
 - [~] D1B Phần A: hạ tầng đã đồng bộ (máy PASS), field giấy tờ vẫn PENDING — chờ Mr.Long
 - [ ] D1B Phần B: vẫn bị chặn đúng thiết kế, thiết kế lại chưa làm (ngoài phạm vi D7/D8)
-- [x] D2 quyết định A ghi rõ (kèm lưu ý định dạng ghi nhận)
+- [x] D2 quyết định A ghi rõ — kiểm duyệt 5/7 đã sửa `decision_note` ghi trung thực timeline
+      (tự-duyệt trước, Boss xác nhận sau, không hồi tố) — xem "AUDIT VÒNG 2" mục 1
 - [x] D3 generator chạy thật ≥10 passenger đa vùng
 - [x] D4 grep xác nhận gọi thật 3 validator, 0 file mới trùng phạm vi
 - [x] D5 golden set 2 nguồn tách bạch + confusion 0FN/0FP + ≥1 case pronoun thật

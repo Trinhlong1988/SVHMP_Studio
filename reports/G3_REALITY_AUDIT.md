@@ -4,7 +4,7 @@
 > `SVHMP_wt_g3build` (branch `build/g3-dialogue-d0-d8`), ngày 2026-07-05, TRƯỚC khi viết
 > bất kỳ dòng code D3-D8 nào. Không suy đoán.
 
-## 1) `python tools/ci_gate.py` — xác nhận đủ 11 stage hiện có
+## 1) `python tools/ci_gate.py` — xác nhận đủ 12 stage hiện có
 
 ```
 === CI GATE ===
@@ -24,10 +24,13 @@
 === CI GATE: PASS ✅ ===
 ```
 
-**Đếm trực tiếp `CHECKS` trong `tools/ci_gate.py`: đúng 11 entry** —
+**Đếm trực tiếp `CHECKS` trong `tools/ci_gate.py`: đúng 12 entry** (sửa 5/7, lỗi đếm tay cũ ghi
+"11" trong khi chính danh sách liệt kê ngay dưới đây đã luôn đúng 12 tên — lỗi kế thừa từ
+`TASK_G3_DIALOGUE.md` gốc, máy đếm lại xác nhận `len(CHECKS)==12` trước khi G3 wire thêm) —
 `registry, blueprint, R199_tail, R203_conf, R205_char, R206_voice, R207_canon, R208_age,
 project_config, G2_roster, g5_supernatural, G4_world`. KHÔNG có entry `dialogue`/`G3_dialogue`
 (khớp TASK_G3_DIALOGUE.md dòng 199-204, không phải "4 stage" như 1 bản nháp cũ từng liệt sai).
+Sau khi D7 wire `G3_dialogue`: **13 entry** (xem `reports/G3_DIALOGUE_REPORT.md` số liệu after).
 
 `grep -i dialogue governance/architecture_registry.yaml` — **4 vùng khớp thật** (không phải
 "0 hit"): `dependency_map` có 2 cạnh "Character -> Dialogue" / "Dialogue -> TTS", và
