@@ -35,7 +35,7 @@ intensity_level: 0.70
 quang_memory_fragment: M7 (Khải Phong nhớ tang Hạ Vy ở quê - không Hà Nội)
 object_sub_arc: GEOGRAPHIC Hà Nội nội thành vật 1 (vé tàu điện)
 callback_target: none
-passenger_main: nu 38 Hoài An Hà Nội (hứa đưa bạn quê đi tàu điện - bạn chết trước kịp)
+passenger_main: nu 38 Xuân Uyên Hà Nội (hứa đưa bạn quê đi tàu điện - bạn chết trước kịp)
 signature_object: OBJ_VE_TAU_DIEN (vé tàu điện Cát Linh đợt mở)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Cát Linh
@@ -120,7 +120,7 @@ Cô gái ghế chín quay đầu. Vuốt vé tàu.
 
 [pause:1000ms]
 
-"Em là Hoài An. Ba mươi tám tuổi. Em ở Cát Linh — Hà Nội — sinh ở ở đây. Em làm biên tập viên nhà xuất bản phố Tràng Tiền."
+"Em là Xuân Uyên. Ba mươi tám tuổi. Em ở Cát Linh — Hà Nội — sinh ở ở đây. Em làm biên tập viên nhà xuất bản phố Tràng Tiền."
 
 Giọng cô đều — chậm.
 
@@ -140,7 +140,7 @@ Giọng cô đều — chậm.
 
 "Em gọi Quỳnh: 'Quỳnh ơi tàu điện mở rồi — em ra Hà Nội đi tàu thử nhé! Em đặt vé khứ hồi đợi em — em chỉ cần lên Hà Nội — em đem bạn đi.'"
 
-"Quỳnh đáp: 'Hoài An ơi em hứa đi. Sang năm khi em rảnh sẽ ra. Em đang dạy năm cuối lớp mười hai — bận ôn thi đại học cho em — em không nghỉ được.'"
+"Quỳnh đáp: 'Xuân Uyên ơi em hứa đi. Sang năm khi em rảnh sẽ ra. Em đang dạy năm cuối lớp mười hai — bận ôn thi đại học cho em — em không nghỉ được.'"
 
 "Em đặt mua hai vé tàu điện — vé khứ hồi — em một vé Quỳnh một vé. Em đặt sẵn — chờ em ra Hà Nội."
 
@@ -148,7 +148,7 @@ Giọng cô đều — chậm.
 
 "Hai năm trôi. Cô gái gái gái gái bận. Người con gái không ra ngoài chơi. Hình bóng con gái ấy vẫn dạy. Cô ấy vẫn nhắc tin nhắn 'tháng sau em sẽ ra.'"
 
-"Năm hai nghìn không trăm hai mươi ba — em nhắn cô ấy: 'Hoài An ơi em được chẩn đoán ung thư cổ tử cung. Giai đoạn ba. Bác sĩ Thái Bình chuyển em lên Bệnh viện K Hà Nội điều trị.'"
+"Năm hai nghìn không trăm hai mươi ba — em nhắn cô ấy: 'Xuân Uyên ơi em được chẩn đoán ung thư cổ tử cung. Giai đoạn ba. Bác sĩ Thái Bình chuyển em lên Bệnh viện K Hà Nội điều trị.'"
 
 "Em sốc. Cô gái đáp ngay: 'Quỳnh ơi em đến Hà Nội — em đến đón em ở ga. Em ở nhà em — em chăm bạn điều trị.'"
 
@@ -158,7 +158,7 @@ Giọng cô đều — chậm.
 
 [pause:1500ms]
 
-"Đêm trước hôm em quay về Thái Bình — em nói với em: 'Hoài An ơi em muốn đi tàu điện trên cao trước em về quê. Em sống Hà Nội tám tháng — chưa đi thử. Em mơ đi từ ngày tàu mở.'"
+"Đêm trước hôm em quay về Thái Bình — em nói với em: 'Xuân Uyên ơi em muốn đi tàu điện trên cao trước em về quê. Em sống Hà Nội tám tháng — chưa đi thử. Em mơ đi từ ngày tàu mở.'"
 
 "Em đáp: 'Quỳnh ơi chiều mai em đi — em đem bạn đi. Em đã đặt vé sẵn ba năm — chờ em.'"
 
@@ -176,7 +176,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Hoài An gật. Lệ rơi xuống vé.
+Xuân Uyên gật. Lệ rơi xuống vé.
 
 "Em nhớ. Cô gái hứa em đi tàu điện ba năm — em không kịp đem em đi. Em đi trước em định ngày sau. Vé hai chiều em đặt — em chưa dùng. Em không thể chuộc — em chỉ có thể đem vé về ga tàu — gửi vé cho ga."
 
@@ -198,7 +198,7 @@ Hoài An gật. Lệ rơi xuống vé.
 
 Xe chậm lại. Ngã ba Cát Linh — cây phượng vĩ đỏ — bến gần ga. Chuông xe rung nhẹ. Vang một nhịp. Tan.
 
-Hoài An gói vé vào phong bì. Đứng dậy.
+Xuân Uyên gói vé vào phong bì. Đứng dậy.
 
 "Chào anh."
 
@@ -210,15 +210,15 @@ Cô gái bước xuống dưới đường.
 
 [pause:1200ms]
 
-Bên ngoài — Hoài An đi vào sân ga Cát Linh — bảo vệ đã mở cửa phụ. Phòng tiếp tân ga — hộp "lost items" gỗ đặt cạnh quầy.
+Bên ngoài — Xuân Uyên đi vào sân ga Cát Linh — bảo vệ đã mở cửa phụ. Phòng tiếp tân ga — hộp "lost items" gỗ đặt cạnh quầy.
 
 Cô gái đã đến nơi đó. Đặt phong bì vào hộp lost items. Cúi đầu trước hộp.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ. Bên hộp — Quỳnh xuất hiện — cô gái ba sáu — áo dạ xanh đậm — chạm vào vai Hoài An. Khẽ cười nhẹ nhàng.
+Khải Phong chớp mắt — nhìn qua cửa sổ. Bên hộp — Quỳnh xuất hiện — cô gái ba sáu — áo dạ xanh đậm — chạm vào vai Xuân Uyên. Khẽ cười nhẹ nhàng.
 
 Khải Phong chớp lần nữa. Người tên Quỳnh tan ra.
 
-Hoài An ngẩng đầu. Lau lệ. Đi ra ngoài.
+Xuân Uyên ngẩng đầu. Lau lệ. Đi ra ngoài.
 
 [pause:1500ms]
 
@@ -254,4 +254,4 @@ Bác tài liếc gương. "Vào đêm ba mươi ba. Con đã nhớ Hạ Vy về 
 
 Khải Phong gật.
 
-Đêm thứ ba mươi ba — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Cát Linh khuất. Hoài An ở lại ga — đứng cạnh hộp lost items — vé tàu trong hộp. 
+Đêm thứ ba mươi ba — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Cát Linh khuất. Xuân Uyên ở lại ga — đứng cạnh hộp lost items — vé tàu trong hộp. 

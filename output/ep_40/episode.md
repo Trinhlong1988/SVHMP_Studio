@@ -35,7 +35,7 @@ intensity_level: 0.75 (+0.05 milestone bump)
 quang_memory_fragment: M8 PEAK (Khải Phong nhận anh Hải có thể yêu thầm Hạ Vy + reveal sub-arc geographic)
 object_sub_arc: GEOGRAPHIC HN nội thành REVEAL (Khải Phong xếp 40 items theo bản đồ — bắt đầu khu Long Biên)
 callback_target: ep_30 (passenger_recognition — passenger nói 'tôi biết anh — anh đêm 30 từng nhìn tôi')
-passenger_main: nam 28 Trung Hậu Hà Nội (anh Hải - chính anh Hải gọi cấp cứu Hạ Vy tám năm trước - đêm này lên xe gặp Khải Phong)
+passenger_main: nam 28 Lãm Chấn Hà Nội (anh Hải - chính anh Hải gọi cấp cứu Hạ Vy tám năm trước - đêm này lên xe gặp Khải Phong)
 signature_object: OBJ_GIAY_KTS (giấy thiết kế đồ án cũ - anh giữ từ 2018)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Long Biên (chính bến EP01 + EP12)
@@ -139,7 +139,7 @@ Hai người trên ghế ba quay đầu lại cùng lúc. Hơi thở cả hai ch
 
 Hải cất lời tiếp — giọng đều — chuẩn bị từ trước.
 
-"Em là Trung Hậu Hải. Hai mươi tám tuổi — bây giờ. Khi Hạ Vy đi — em hai mươi mốt — vừa ra trường Đại học Kiến trúc Hà Nội — vào văn phòng Mộc Hà làm kiến trúc sư mới — em làm chung phòng Hạ Vy."
+"Em là Lãm Chấn Hải. Hai mươi tám tuổi — bây giờ. Khi Hạ Vy đi — em hai mươi mốt — vừa ra trường Đại học Kiến trúc Hà Nội — vào văn phòng Mộc Hà làm kiến trúc sư mới — em làm chung phòng Hạ Vy."
 
 "Hạ Vy là người dạy em viết bản vẽ kỹ thuật khi em mới vào. Em hai mốt — Hạ Vy hai bảy — em hơn em sáu tuổi — em là chị em ở văn phòng."
 

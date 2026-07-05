@@ -35,7 +35,7 @@ intensity_level: 0.70
 quang_memory_fragment: M8 (Khải Phong nhớ anh thanh niên gọi cấp cứu - tên gì)
 object_sub_arc: GEOGRAPHIC HN nội thành vật 2 (biển số xe phố Huế)
 callback_target: none
-passenger_main: nu 32 Mỹ Hạnh Hà Nội (vợ chồng đi xe máy phố Huế - chồng mất tai nạn)
+passenger_main: nu 32 Sen Lụa Hà Nội (vợ chồng đi xe máy phố Huế - chồng mất tai nạn)
 signature_object: OBJ_BIEN_SO (mảnh biển số xe máy chồng - tai nạn phố Huế)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba phố Huế (đoạn ngã tư Hai Bà Trưng)
@@ -118,7 +118,7 @@ Cô gái khẽ quay đầu lại. Vuốt mảnh biển số.
 
 [pause:1000ms]
 
-"Em là Mỹ Hạnh. Ba mươi hai tuổi. Em ở Hà Nội — phố Bạch Mai. Em làm giáo viên cấp hai — trường gần nhà."
+"Em là Sen Lụa. Ba mươi hai tuổi. Em ở Hà Nội — phố Bạch Mai. Em làm giáo viên cấp hai — trường gần nhà."
 
 Giọng cô đều — chậm.
 
@@ -164,7 +164,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Mỹ Hạnh gật. Mắt đỏ.
+Sen Lụa gật. Mắt đỏ.
 
 "Em nhớ. Cô gái đi xe máy phố Huế một mình tối thứ ba — em va chạm xe tải — em mất. Em không có ai bên cạnh — chỉ có người đi đường gọi cấp cứu."
 
@@ -180,7 +180,7 @@ Mỹ Hạnh gật. Mắt đỏ.
 
 Xe chậm lại. Ngã ba phố Huế — cây me cổ — bến gần ngã tư Hai Bà Trưng. Chuông xe ngân. Một tiếng. Tan trong tiếng xe đêm phố cổ.
 
-Mỹ Hạnh gói mảnh biển vào vải đen. Đứng dậy.
+Sen Lụa gói mảnh biển vào vải đen. Đứng dậy.
 
 "Chào anh."
 
@@ -192,15 +192,15 @@ Cô gái bước xuống dưới đường.
 
 [pause:1200ms]
 
-Bên ngoài — Mỹ Hạnh đi vào tiệm Sửa xe Toàn — bảo vệ tiệm đã mở cửa phụ — đèn trong tiệm còn sáng. Anh Toàn ngồi trực đêm — đợi cô đến.
+Bên ngoài — Sen Lụa đi vào tiệm Sửa xe Toàn — bảo vệ tiệm đã mở cửa phụ — đèn trong tiệm còn sáng. Anh Toàn ngồi trực đêm — đợi cô đến.
 
 Cô gái đã đến nơi đó. Đưa gói vải đen. Anh Toàn nhận — mở — thấy mảnh biển. Cô gái ấy nói nhỏ — giải thích. Hình bóng đàn ông Toàn gật — cảm động — đặt mảnh vào hộp gỗ riêng — không trộn với phụ tùng khác.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ. Bên tiệm — Hùng xuất hiện — thanh niên ba mươi áo gió đen — vỗ vai Mỹ Hạnh. Gật đầu nhẹ nhẹ nhàng.
+Khải Phong chớp mắt — nhìn qua cửa sổ. Bên tiệm — Hùng xuất hiện — thanh niên ba mươi áo gió đen — vỗ vai Sen Lụa. Gật đầu nhẹ nhẹ nhàng.
 
 Khải Phong chớp lần nữa. Hùng tan vào đèn tiệm.
 
-Mỹ Hạnh ngẩng đầu. Lau khóe mắt. Đi ra cửa.
+Sen Lụa ngẩng đầu. Lau khóe mắt. Đi ra cửa.
 
 [pause:1500ms]
 
@@ -220,7 +220,7 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 Khải Phong ngồi yên. Hai vật trong cụm sub-arc geographic Hà Nội nội thành: vé tàu Cát Linh EP33 + sợi chỉ vải đen mảnh biển số phố Huế EP37.
 
-Khải Phong ngẫm. Mỹ Hạnh kể anh anh va chạm xe tải đoạn ngã tư phố Huế — Hai Bà Trưng. Đúng đoạn Khải Phong nhớ.
+Khải Phong ngẫm. Sen Lụa kể anh anh va chạm xe tải đoạn ngã tư phố Huế — Hai Bà Trưng. Đúng đoạn Khải Phong nhớ.
 
 Khải Phong tim đập nhanh — đoạn này — chính đoạn Hạ Vy va chạm tám năm trước. Ngã tư phố Huế — Hai Bà Trưng — Trần Hưng Đạo. Cùng ngã tư.
 
@@ -244,7 +244,7 @@ Bác tài liếc gương. "Vào đêm ba mươi bảy. Con bắt đầu nhớ an
 
 Khải Phong gật. Lệ rơi nhẹ nhàng.
 
-Đêm thứ ba mươi bảy — Khải Phong đếm thêm. Xe đi tiếp ra khỏi phố Huế. Phía sau — tiệm Sửa xe Toàn khuất. Mỹ Hạnh ở lại đứng cửa tiệm — anh Toàn cất mảnh biển vào hộp gỗ mun.
+Đêm thứ ba mươi bảy — Khải Phong đếm thêm. Xe đi tiếp ra khỏi phố Huế. Phía sau — tiệm Sửa xe Toàn khuất. Sen Lụa ở lại đứng cửa tiệm — anh Toàn cất mảnh biển vào hộp gỗ mun.
 
 Khải Phong nhìn ra cửa sổ — phố Huế phía sau. Mưa đã hết — đèn neon còn sáng — phố không có ai đi đêm này.
 

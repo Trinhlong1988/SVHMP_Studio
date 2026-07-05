@@ -35,7 +35,7 @@ intensity_level: 0.70
 quang_memory_fragment: M8 (Khải Phong nhớ có ai bên Hạ Vy đêm em đi)
 object_sub_arc: ngoài cluster geographic
 callback_target: none
-passenger_main: nam 48 Văn Khải Lào Cai (em gái mất tai nạn xe — em đã có người yêu Khải Phong không biết)
+passenger_main: nam 48 Thuần Vạn Lào Cai (em gái mất tai nạn xe — em đã có người yêu Khải Phong không biết)
 signature_object: OBJ_TAM_ANH (tấm ảnh em gái chụp với người yêu Khải Phong không biết)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Lào Cai
@@ -120,7 +120,7 @@ Người đàn ông quay đầu lại. Vuốt khung ảnh.
 
 [pause:1000ms]
 
-"Tôi là Văn Khải. Bốn mươi tám tuổi. Tôi ở Sa Pa — Lào Cai — quê. Tôi làm cán bộ huyện — phòng văn hóa."
+"Tôi là Thuần Vạn. Bốn mươi tám tuổi. Tôi ở Sa Pa — Lào Cai — quê. Tôi làm cán bộ huyện — phòng văn hóa."
 
 Giọng anh trầm — chậm.
 
@@ -178,7 +178,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Văn Khải gật. Mắt đỏ.
+Thuần Vạn gật. Mắt đỏ.
 
 "Tôi nhớ. Em yêu Tuấn hai năm — tôi không biết. Cô ấy em có người bên em những đêm cuối — không phải gia đình tôi. Hình ảnh người kể chuyện không trách em — em chọn người em yêu. Người kể đây chỉ tiếc — tôi không có cơ hội biết em hạnh phúc trước khi em đi."
 
@@ -194,7 +194,7 @@ Văn Khải gật. Mắt đỏ.
 
 Xe chậm lại. Ngã ba Lào Cai — cây samu cổ — bến không tên. Chuông xe ngân. Một tiếng. Tan trong gió núi.
 
-Văn Khải gói ảnh vào khăn lụa. Đứng dậy.
+Thuần Vạn gói ảnh vào khăn lụa. Đứng dậy.
 
 "Chào anh."
 
@@ -206,7 +206,7 @@ Anh bước xuống — chân chạm đường đèo ướt.
 
 [pause:1200ms]
 
-Bên ngoài — Văn Khải đi vào sân nhà thờ Sa Pa Cô — cổng đã mở. Chánh điện — tượng Chúa — bục gỗ mun.
+Bên ngoài — Thuần Vạn đi vào sân nhà thờ Sa Pa Cô — cổng đã mở. Chánh điện — tượng Chúa — bục gỗ mun.
 
 Người đàn ông đến nơi đó. Đặt ảnh giữa bục — chính giữa. Quỳ. Cúi đầu.
 
@@ -214,7 +214,7 @@ Khải Phong chớp mắt — nhìn qua cửa sổ. Bên bục — Diễm xuất
 
 Khải Phong chớp lần nữa. Diễm tan vào đèn nến.
 
-Văn Khải ngẩng đầu. Không khóc. Lau khóe mắt. Đứng dậy.
+Thuần Vạn ngẩng đầu. Không khóc. Lau khóe mắt. Đứng dậy.
 
 [pause:1500ms]
 
@@ -258,4 +258,4 @@ Bác tài liếc gương. "Vào đêm ba mươi sáu. Con bắt đầu nhớ có
 
 Khải Phong gật. Lệ rơi nhẹ — không rất rất to.
 
-Đêm thứ ba mươi sáu — Khải Phong đếm thêm. Xe đi tiếp xuống đèo. Phía sau — Sa Pa khuất trong sương núi. Văn Khải ở lại nhà thờ — quỳ trước bục — ảnh em gái cạnh tượng Chúa. 
+Đêm thứ ba mươi sáu — Khải Phong đếm thêm. Xe đi tiếp xuống đèo. Phía sau — Sa Pa khuất trong sương núi. Thuần Vạn ở lại nhà thờ — quỳ trước bục — ảnh em gái cạnh tượng Chúa. 

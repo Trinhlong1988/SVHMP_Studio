@@ -35,7 +35,7 @@ intensity_level: 0.70
 quang_memory_fragment: M7 (Khải Phong nhớ bệnh viện Bạch Mai - phòng cấp cứu)
 object_sub_arc: ngoài cluster geographic
 callback_target: none
-passenger_main: nam 40 Phan Tâm Bắc Giang (vợ chết đột ngột tháng tư - chăn may dở)
+passenger_main: nam 40 Cần Kiên Bắc Giang (vợ chết đột ngột tháng tư - chăn may dở)
 signature_object: OBJ_CHAN_DAN_DO (chiếc chăn vợ đan dở đêm trước em đi)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Bắc Giang
@@ -120,7 +120,7 @@ Người đàn ông quay đầu lại. Vuốt chăn.
 
 [pause:1000ms]
 
-"Tôi là Phan Tâm. Bốn mươi tuổi. Tôi ở Bắc Giang — khu tập thể nhà máy may. Tôi làm công nhân nhà máy may bảy năm — sau làm quản đốc."
+"Tôi là Cần Kiên. Bốn mươi tuổi. Tôi ở Bắc Giang — khu tập thể nhà máy may. Tôi làm công nhân nhà máy may bảy năm — sau làm quản đốc."
 
 Giọng anh trầm — chậm.
 
@@ -178,7 +178,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Phan Tâm gật.
+Cần Kiên gật.
 
 "Tôi nhớ. Em mất đột ngột tháng tư — không ai biết em bệnh tim. Cô ấy em đan chăn cho tôi đến phút cuối — không kịp xong. Hình ảnh người kể chuyện giữ chăn bảy năm — không đắp — vì chăn không phải của tôi — chưa được tặng đúng cách. Đứa em đem chăn về với em — nơi chăn sinh ra."
 
@@ -194,7 +194,7 @@ Phan Tâm gật.
 
 Xe chậm lại. Ngã ba Bắc Giang — cây vải cổ — bến không tên. Tiếng chuông ngân nhẹ. Một hồi. Lặng.
 
-Phan Tâm gấp chăn vào túi vải. Đứng dậy.
+Cần Kiên gấp chăn vào túi vải. Đứng dậy.
 
 "Chào anh."
 
@@ -206,17 +206,17 @@ Người đàn ông bước xuống dưới.
 
 [pause:1200ms]
 
-Bên ngoài — Phan Tâm đi vào nghĩa trang phố Bắc Giang. Cổng đã mở. Đèn nến.
+Bên ngoài — Cần Kiên đi vào nghĩa trang phố Bắc Giang. Cổng đã mở. Đèn nến.
 
 Người đàn ông đến mộ Nhung. Quỳ. Mở túi. Lấy chăn — gấp gọn — đặt giữa mộ. Kim đan vẫn cắm — như em vừa đan xong.
 
 Cúi đầu.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ. Bên mộ — Nhung xuất hiện — phụ nữ trẻ ba mươi ba — tay cầm kim đan — đặt tay lên vai Phan Tâm. Im lặng một thoáng.
+Khải Phong chớp mắt — nhìn qua cửa sổ. Bên mộ — Nhung xuất hiện — phụ nữ trẻ ba mươi ba — tay cầm kim đan — đặt tay lên vai Cần Kiên. Im lặng một thoáng.
 
 Khải Phong chớp lần nữa. Người tên Nhung tan ra.
 
-Phan Tâm ngẩng đầu. Không khóc.
+Cần Kiên ngẩng đầu. Không khóc.
 
 [pause:1500ms]
 
@@ -258,4 +258,4 @@ Bác tài liếc gương. "Vào đêm ba mươi hai. Con đã nhớ ai đứng c
 
 Khải Phong gật. Lệ rơi nhẹ nhàng.
 
-Đêm thứ ba mươi hai — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Bắc Giang khuất. Phan Tâm ở lại bên mộ — chăn đan dở trên bia. 
+Đêm thứ ba mươi hai — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Bắc Giang khuất. Cần Kiên ở lại bên mộ — chăn đan dở trên bia. 

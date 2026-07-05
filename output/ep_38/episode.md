@@ -35,7 +35,7 @@ intensity_level: 0.70
 quang_memory_fragment: M8 (Khải Phong nhớ tên anh thanh niên — Hải)
 object_sub_arc: ngoài cluster geographic
 callback_target: none
-passenger_main: nam 35 Đức Anh Quảng Ninh (hứa tặng quà sinh nhật 18 cho bạn cấp 3 — bạn chết trước sinh nhật)
+passenger_main: nam 35 Tráng Doãn Quảng Ninh (hứa tặng quà sinh nhật 18 cho bạn cấp 3 — bạn chết trước sinh nhật)
 signature_object: OBJ_HOP_QUA (hộp quà chuẩn bị sẵn không kịp tặng)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Quảng Ninh
@@ -120,7 +120,7 @@ Người đàn ông quay đầu lại. Vuốt hộp quà.
 
 [pause:1000ms]
 
-"Tôi là Đức Anh. Ba mươi lăm tuổi. Tôi ở Hạ Long — Quảng Ninh — quê. Tôi làm hướng dẫn viên du lịch — chuyên tuyến vịnh Hạ Long."
+"Tôi là Tráng Doãn. Ba mươi lăm tuổi. Tôi ở Hạ Long — Quảng Ninh — quê. Tôi làm hướng dẫn viên du lịch — chuyên tuyến vịnh Hạ Long."
 
 Giọng anh trầm — chậm.
 
@@ -142,7 +142,7 @@ Giọng anh trầm — chậm.
 
 "Năm lớp mười một — em mười sáu tuổi. Tôi đến nhà em chơi cuối tuần — đem trái cây — đem sách mới. Em vui khi tôi đến."
 
-"Em hỏi tôi: 'Đức Anh ơi sinh nhật em mười tám tuổi sang năm — em định tặng em gì?' Tôi đáp: 'Em ơi anh sẽ tặng em một hộp quà đặc biệt — em đoán đi xa.'"
+"Em hỏi tôi: 'Tráng Doãn ơi sinh nhật em mười tám tuổi sang năm — em định tặng em gì?' Tôi đáp: 'Em ơi anh sẽ tặng em một hộp quà đặc biệt — em đoán đi xa.'"
 
 "Em cười: 'Em không đoán — em chờ.'"
 
@@ -192,7 +192,7 @@ Bác tài cất lời.
 
 Xe chậm lại. Ngã ba Quảng Ninh — cây dừa biển — bến không tên. Chuông xe ngân. Một tiếng. Tan trong gió biển.
 
-Đức Anh ôm hộp quà. Đứng dậy.
+Tráng Doãn ôm hộp quà. Đứng dậy.
 
 "Chào anh."
 
@@ -204,15 +204,15 @@ Người đàn ông bước xuống dưới.
 
 [pause:1200ms]
 
-Bên ngoài — Đức Anh đi vào sân bưu điện huyện Hạ Long — bảo vệ đã mở cửa — đèn bưu điện trực đêm còn sáng. Quầy gửi bưu kiện — nhân viên trực đêm đang ngồi.
+Bên ngoài — Tráng Doãn đi vào sân bưu điện huyện Hạ Long — bảo vệ đã mở cửa — đèn bưu điện trực đêm còn sáng. Quầy gửi bưu kiện — nhân viên trực đêm đang ngồi.
 
 Người đàn ông đến quầy. Đưa hộp quà — nhân viên cân — anh viết địa chỉ — gửi. Người đàn ông đặt tiền cước. Nhân viên đưa biên lai.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ. Bên quầy — Lan xuất hiện — cô gái mười bảy áo dạ trắng — vuốt vai Đức Anh. Mỉm cười nhẹ nhàng.
+Khải Phong chớp mắt — nhìn qua cửa sổ. Bên quầy — Lan xuất hiện — cô gái mười bảy áo dạ trắng — vuốt vai Tráng Doãn. Mỉm cười nhẹ nhàng.
 
 Khải Phong chớp lần nữa. Lan tan vào đèn quầy.
 
-Đức Anh ngẩng đầu. Lau khóe mắt. Đi ra cửa.
+Tráng Doãn ngẩng đầu. Lau khóe mắt. Đi ra cửa.
 
 [pause:1500ms]
 
@@ -230,7 +230,7 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Khải Phong ngồi. Đức Anh hứa tặng Lan hộp quà sinh nhật mười tám — anh không kịp — anh gửi mười bảy năm sau qua bưu điện. Lời hứa muộn — nhưng vẫn được gửi.
+Khải Phong ngồi. Tráng Doãn hứa tặng Lan hộp quà sinh nhật mười tám — anh không kịp — anh gửi mười bảy năm sau qua bưu điện. Lời hứa muộn — nhưng vẫn được gửi.
 
 Khải Phong nhói. Khải Phong có hứa gì với Hạ Vy mà chưa kịp giữ lại?
 
@@ -256,4 +256,4 @@ Bác tài liếc gương. "Vào đêm ba mươi tám. Con nhớ tên anh Hải. 
 
 Khải Phong gật. Lệ rơi nhẹ nhàng.
 
-Đêm thứ ba mươi tám — Khải Phong đếm thêm. Xe đi tiếp ra khỏi vịnh Hạ Long. Phía sau — bưu điện khuất. Đức Anh ở lại bên quầy — biên lai trong tay. 
+Đêm thứ ba mươi tám — Khải Phong đếm thêm. Xe đi tiếp ra khỏi vịnh Hạ Long. Phía sau — bưu điện khuất. Tráng Doãn ở lại bên quầy — biên lai trong tay. 

@@ -35,7 +35,7 @@ intensity_level: 0.70
 quang_memory_fragment: M7 (Khải Phong nhớ quê Hạ Vy - Hải Phòng Vĩnh Bảo)
 object_sub_arc: ngoài cluster geographic
 callback_target: none
-passenger_main: nam 50 Văn Tuấn Vĩnh Phúc (không thắp hương cho hàng xóm cũ - bác mất mười năm)
+passenger_main: nam 50 Nghị Đôn Vĩnh Phúc (không thắp hương cho hàng xóm cũ - bác mất mười năm)
 signature_object: OBJ_HUONG_TRAM (bó hương trầm anh chuẩn bị từ năm trước)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Vĩnh Phúc
@@ -118,7 +118,7 @@ Người đàn ông quay đầu lại. Vuốt bó hương.
 
 [pause:1000ms]
 
-"Tôi là Văn Tuấn. Cô gái năm mươi tuổi rồi. Người kể đây ở Đông Văn — Vĩnh Phúc — quê. Hình ảnh người kể chuyện làm cán bộ xã đó."
+"Tôi là Nghị Đôn. Cô gái năm mươi tuổi rồi. Người kể đây ở Đông Văn — Vĩnh Phúc — quê. Hình ảnh người kể chuyện làm cán bộ xã đó."
 
 Giọng anh trầm — chậm.
 
@@ -174,7 +174,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Văn Tuấn gật.
+Nghị Đôn gật.
 
 "Tôi nhớ. Bác Bính thương tôi như cháu ruột — tôi quên thắp hương mười năm. Bóng người bác không có ai khác để thắp. Hình ảnh người kể chuyện không phải lý do gì — chỉ quên — chỉ bận. Bây giờ tôi bù — đốt cả bó trầm — một lần thay mười năm."
 
@@ -190,7 +190,7 @@ Văn Tuấn gật.
 
 Xe chậm lại. Ngã ba Vĩnh Phúc — cây gạo cổ — bến không tên. Một tiếng chuông. Ngắn. Tan trong sương.
 
-Văn Tuấn gói bó hương vào giấy bản. Đứng dậy.
+Nghị Đôn gói bó hương vào giấy bản. Đứng dậy.
 
 "Chào anh."
 
@@ -202,15 +202,15 @@ Người đàn ông bước xuống dưới.
 
 [pause:1200ms]
 
-Bên ngoài — Văn Tuấn đi vào nghĩa trang xã Đông Văn. Cổng đã mở. Mộ bác Bính — bia gỗ mun — đã có dấu xưa.
+Bên ngoài — Nghị Đôn đi vào nghĩa trang xã Đông Văn. Cổng đã mở. Mộ bác Bính — bia gỗ mun — đã có dấu xưa.
 
 Người đàn ông đến nơi đó. Quỳ. Đốt bó hương — cháy đậm — mùi trầm tỏa khắp nghĩa trang. Cắm vào bia. Cúi đầu.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ. Bên mộ — bác Bính xuất hiện — ông cụ bảy mươi áo sơ mi nâu — vuốt vai Văn Tuấn. Mỉm cười.
+Khải Phong chớp mắt — nhìn qua cửa sổ. Bên mộ — bác Bính xuất hiện — ông cụ bảy mươi áo sơ mi nâu — vuốt vai Nghị Đôn. Mỉm cười.
 
 Khải Phong chớp lần nữa. Người bác tan ra.
 
-Văn Tuấn ngẩng đầu. Không khóc.
+Nghị Đôn ngẩng đầu. Không khóc.
 
 [pause:1500ms]
 
@@ -228,7 +228,7 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Khải Phong ngồi. Văn Tuấn quên thắp hương cho bác hàng xóm mười năm — bây giờ bù.
+Khải Phong ngồi. Nghị Đôn quên thắp hương cho bác hàng xóm mười năm — bây giờ bù.
 
 Khải Phong nhói. Khải Phong có quên thắp hương cho Hạ Vy không?
 
@@ -262,4 +262,4 @@ Bác tài liếc gương. "Vào đêm ba mươi tư. Con đã đếm tám năm. 
 
 Khải Phong gật. Lệ rơi nhẹ nhàng.
 
-Đêm thứ ba mươi tư — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Vĩnh Phúc khuất. Văn Tuấn ở lại quỳ — bó hương cháy bên mộ. 
+Đêm thứ ba mươi tư — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Vĩnh Phúc khuất. Nghị Đôn ở lại quỳ — bó hương cháy bên mộ. 

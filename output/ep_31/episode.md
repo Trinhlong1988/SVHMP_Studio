@@ -35,7 +35,7 @@ intensity_level: 0.70
 quang_memory_fragment: M7 (Khải Phong nhớ tháng tư - Hạ Vy mất mười hai tháng 4)
 object_sub_arc: ngoài cluster geographic
 callback_target: none
-passenger_main: nu 55 Thanh Vân Hưng Yên (mẹ mất tháng tư mười ba năm trước - đem cúc mỗi tháng)
+passenger_main: nu 55 Khuê Diệp Hưng Yên (mẹ mất tháng tư mười ba năm trước - đem cúc mỗi tháng)
 signature_object: OBJ_CHAU_CUC_THANG_TU (chậu cúc đem mộ mỗi tháng)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Hưng Yên
@@ -118,7 +118,7 @@ Bà cụ khẽ quay đầu lại. Đỡ chậu cúc chặt hơn.
 
 [pause:1000ms]
 
-"Em là Thanh Vân. Bà năm mươi lăm tuổi rồi. Người nữ em ở An Vinh — Hưng Yên — quê. Hình ảnh người con gái ấy làm nông — ba sào ruộng — hai con đã ra Hà Nội đi làm."
+"Em là Khuê Diệp. Bà năm mươi lăm tuổi rồi. Người nữ em ở An Vinh — Hưng Yên — quê. Hình ảnh người con gái ấy làm nông — ba sào ruộng — hai con đã ra Hà Nội đi làm."
 
 Giọng bà trầm — chậm.
 
@@ -170,7 +170,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Thanh Vân gật. Mắt đỏ — không khóc.
+Khuê Diệp gật. Mắt đỏ — không khóc.
 
 "Em nhớ. Cô gái không kịp nói lời yêu mẹ rõ trước khi mẹ đi. Em chỉ kịp về chăm tháng đó. Mẹ đi đột ngột — em không có thời gian xin lỗi điều em đã không làm — không nói. Em đem cúc tháng mười ba năm — như thay lời nói em chưa kịp."
 
@@ -186,7 +186,7 @@ Thanh Vân gật. Mắt đỏ — không khóc.
 
 Xe chậm lại. Ngã ba Hưng Yên — cây nhãn cổ — bến không tên. Chuông xe ngân. Một tiếng. Tan.
 
-Thanh Vân ôm chậu cúc. Đứng dậy chậm lại.
+Khuê Diệp ôm chậu cúc. Đứng dậy chậm lại.
 
 "Chào anh."
 
@@ -198,15 +198,15 @@ Bà cụ bước xuống dưới đường.
 
 [pause:1200ms]
 
-Bên ngoài — Thanh Vân đi vào nghĩa trang An Vinh — cổng đã mở. Đèn nến cháy. Phía cuối — mộ mẹ — bia đá xám.
+Bên ngoài — Khuê Diệp đi vào nghĩa trang An Vinh — cổng đã mở. Đèn nến cháy. Phía cuối — mộ mẹ — bia đá xám.
 
 Bà cụ đã đến nơi đó. Quỳ. Đặt chậu cúc lên mộ — chính giữa bia. Cúi đầu.
 
-Anh chớp mắt — nhìn qua cửa sổ. Bên mộ — mẹ bà xuất hiện — bà cụ áo bà ba xám — tay cầm bình nước — vuốt tóc Thanh Vân. Mỉm cười.
+Anh chớp mắt — nhìn qua cửa sổ. Bên mộ — mẹ bà xuất hiện — bà cụ áo bà ba xám — tay cầm bình nước — vuốt tóc Khuê Diệp. Mỉm cười.
 
 Người khách chớp lần nữa. Người mẹ tan ra.
 
-Thanh Vân ngẩng đầu. Quỳ thêm.
+Khuê Diệp ngẩng đầu. Quỳ thêm.
 
 [pause:1500ms]
 
@@ -226,7 +226,7 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 Khải Phong ấy ngồi yên. Có năm vật cúc trong túi. Cụm cúc mở rộng — không đóng ở bốn vật.
 
-Người đàn ông ngẫm — tháng. Thanh Vân nói rõ ràng — mẹ mất ngày mười hai tháng. Hạ Vy cũng tháng.
+Người đàn ông ngẫm — tháng. Khuê Diệp nói rõ ràng — mẹ mất ngày mười hai tháng. Hạ Vy cũng tháng.
 
 Người khách cố nhớ ngày cụ thể. Tháng tư năm 2018. Trời mưa rất to lớn. Trời đã về đêm. Bệnh viện Bạch Mai gọi.
 
@@ -234,9 +234,9 @@ Hôm nay ngày bao nhiêu rồi nhỉ? người đàn ông tim đập nhanh — 
 
 [pause:1500ms]
 
-Mười hai tháng. Hôm nay ngày mười hai tháng. Cùng ngày với mẹ Thanh Vân.
+Mười hai tháng. Hôm nay ngày mười hai tháng. Cùng ngày với mẹ Khuê Diệp.
 
-Khải Phong nhói. Bác tài cố ý đem Thanh Vân lên xe đêm nay — để người khách nhớ ngày cụ thể.
+Khải Phong nhói. Bác tài cố ý đem Khuê Diệp lên xe đêm nay — để người khách nhớ ngày cụ thể.
 
 Hạ Vy mất ngày mười hai tháng năm 2018. Tám năm trước hôm nay. Đêm tháng mưa to — bệnh viện Bạch Mai.
 
@@ -252,8 +252,8 @@ Người khách nhìn ra cửa sổ. Bên ngoài — trời chưa sáng lên. Sa
 
 [pause:1000ms]
 
-Người đàn ông nhớ — Thanh Vân nói ngày mười hai tháng tư mẹ anh mất. Có thể đêm nay — đêm thứ ba mươi mốt — chính ngày mười hai. Hoặc gần lại.
+Người đàn ông nhớ — Khuê Diệp nói ngày mười hai tháng tư mẹ anh mất. Có thể đêm nay — đêm thứ ba mươi mốt — chính ngày mười hai. Hoặc gần lại.
 
 Người đàn ông ấy tim đập nhanh. Hạ Vy mất ngày mười hai tháng tư 2018. Đêm hôm nay có thể là kỉ niệm tám năm.
 
-Đêm thứ ba mươi mốt — anh đếm thêm. Xe đi tiếp. Phía sau — Hưng Yên khuất. Thanh Vân ở lại quỳ — bên mộ mẹ — đến sáng lên cao. Cùng đêm tháng tư. 
+Đêm thứ ba mươi mốt — anh đếm thêm. Xe đi tiếp. Phía sau — Hưng Yên khuất. Khuê Diệp ở lại quỳ — bên mộ mẹ — đến sáng lên cao. Cùng đêm tháng tư. 
