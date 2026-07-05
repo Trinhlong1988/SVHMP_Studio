@@ -102,11 +102,37 @@ def synth_pitch_drop():
     return _write_wav(np.concatenate([seg1, seg2]), sr, "synth_pitch_drop.wav"), sr
 
 
+# DEBT-002 (governance/TECH_DEBT.md): cliffhanger.wav / hook.wav bi xoa khoi
+# output/ep_01/sections/ (chi con lai .whisper_compare.json ben canh) sau su co 2/7.
+# Day KHONG phai "file not found" ngau nhien - day la no ky thuat da duoc ghi
+# nhan chinh thuc. Skip reason phai neu ro: file gi thieu, vi sao thieu (nghi
+# van), can gi de het skip, va tro ve dung entry TECH_DEBT de nguoi doc theo
+# duoc bang chung day du (khong chi dua vao 1 dong message ngan).
+_DEBT_002_REASON_CLIFFHANGER = (
+    "SKIP (khong phai loi ngau nhien): fixture that "
+    "output/ep_01/sections/cliffhanger.wav bi thieu (nghi van: xoa trong su co "
+    "2/7, chi con lai cliffhanger.whisper_compare.json ben canh no). "
+    "Xem governance/TECH_DEBT.md muc DEBT-002 de biet day du phat hien/bang "
+    "chung/de xuat. Can Boss cung cap lai audio that (khong the tu tao gia lap) "
+    "de chay lai 5 test case R188/R189/R190/R190b/R191 dang phu thuoc fixture "
+    "nay. Trang thai: OPEN."
+)
+_DEBT_002_REASON_HOOK = (
+    "SKIP (khong phai loi ngau nhien): fixture that "
+    "output/ep_01/sections/hook.wav bi thieu (nghi van: xoa trong su co 2/7, "
+    "chi con lai hook.whisper_compare.json ben canh no). "
+    "Xem governance/TECH_DEBT.md muc DEBT-002 de biet day du phat hien/bang "
+    "chung/de xuat. Can Boss cung cap lai audio that (khong the tu tao gia lap) "
+    "de chay lai test case R181c (embedding cross-section similarity) dang phu "
+    "thuoc fixture nay. Trang thai: OPEN."
+)
+
+
 @pytest.fixture(scope="module")
 def real_cliffhanger():
     p = SECTIONS / "cliffhanger.wav"
     if not p.exists():
-        pytest.skip(f"missing real audio {p}")
+        pytest.skip(_DEBT_002_REASON_CLIFFHANGER)
     return p
 
 
@@ -114,7 +140,7 @@ def real_cliffhanger():
 def real_hook():
     p = SECTIONS / "hook.wav"
     if not p.exists():
-        pytest.skip(f"missing real audio {p}")
+        pytest.skip(_DEBT_002_REASON_HOOK)
     return p
 
 
