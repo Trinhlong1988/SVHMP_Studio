@@ -188,6 +188,6 @@ kpi:
 # Severity statistics (after session 30/6)
 severity_counts:
   Critical: 9   # R86, R108, R110, R111, R117, R140, R141, R142, R161
-  Major: 9      # R92b, R95, R107, R109, R113, R114, R128, R143, R146, R149
+  Major: 10     # R92b, R95, R107, R109, R113, R114, R128, R143, R146, R149
   Minor: 2      # R147, R150
   Cosmetic: 0

@@ -2598,7 +2598,7 @@ rule_R178_character_voice_lock:
     Profile gồm: giới tính / độ tuổi / chất giọng / cảm xúc base.
   severity: Critical
   enforce:
-    file: bible/37_character_voice_profiles.yaml (TBD)
+    file: bible/37_character_schema.yaml
     tool: tools/spec_chunk_emo_override.py auto-apply profile per character dialogue (TBD)
     pre_render_gate: scan dialogue lines, verify voice profile assigned
   required_fields_per_character:
