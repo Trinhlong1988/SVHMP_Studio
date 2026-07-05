@@ -33,8 +33,7 @@ characters:
   Cô_gái_ghế_bảy_mới_CLIFFHANGER:
     role: new spirit boarding
     appearance: tóc xõa ngang vai + áo gió xanh dương trong sáng
-    NOT_SAME_AS: Hạ-Vy (distinct appearance — bright blue vs Hạ-Vy nhạt)
-    NOT_SAME_AS: Cô_gái_ghế_tám
+    NOT_SAME_AS: "Hạ-Vy (distinct appearance — bright blue vs Hạ-Vy nhạt) | Cô_gái_ghế_tám"
     arrival: supernatural (không nhận ra mình lên xe lúc nào)
 
   Ông_cụ:

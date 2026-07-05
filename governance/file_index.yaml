@@ -628,6 +628,10 @@ files:
     domain: audio_render
     status: active
     tier: 4
+  tools/ha_patterns.py:
+    domain: text_qa
+    status: active
+    tier: 3
   tools/hardcode_classifier.py:
     domain: governance_audit
     status: active

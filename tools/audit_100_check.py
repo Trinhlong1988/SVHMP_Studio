@@ -21,6 +21,10 @@ from milestones import MILESTONE_EPS, LEGACY_AUDIT_EXEMPT_EPS  # single source (
 
 SVHMP = Path(__file__).resolve().parents[1]
 
+# Single source of truth (deep-audit HIGH fix: 4 tool tung tu dinh nghia pattern
+# "Hà" lech nhau -> cung 1 doan van PASS gate nay, FAIL gate kia). Xem tools/ha_patterns.py.
+from ha_patterns import FORBIDDEN_HA_PATTERNS
+
 # Banned words from bible/22 + NEVER_7 + R4 catalog
 ANTI_SLOP_TIER_1 = ['đột nhiên', 'bỗng nhiên', 'trong khoảnh khắc đó', 'không thể nào quên',
                     'như thể', 'có lẽ', 'dường như', 'vô cùng', 'thầm lặng', 'rùng mình']
@@ -300,8 +304,8 @@ def check_layer_3_forbidden_words(eps):
     naked_ha = []
     for n, t in eps.items():
         body = strip_metadata(t)
-        # Check forbidden patterns
-        for pat in [r'\byêu Hà\b', r'\btên Hà\b', r'\bcô Hà\b', r'\bHà tai nạn\b']:
+        # Check forbidden patterns (single source: tools/ha_patterns.py)
+        for pat in FORBIDDEN_HA_PATTERNS:
             if re.search(pat, body):
                 naked_ha.append((n, pat))
     issues.append({'check': '3.10 Naked "Hà" leak', 'count': len(naked_ha), 'severity': 'HIGH' if naked_ha else 'OK', 'detail': naked_ha[:5]})

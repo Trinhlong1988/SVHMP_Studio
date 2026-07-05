@@ -14,6 +14,9 @@ SVHMP = Path(__file__).resolve().parents[1]
 
 sys.path.insert(0, str(Path(__file__).parent))
 from milestones import DRIVER_BUDGET_PEAK_EPS  # single source (see tools/milestones.py)
+# Single source of truth (deep-audit HIGH fix: 4 tool tung tu dinh nghia pattern
+# "Hà" lech nhau -> cung 1 doan van PASS gate nay, FAIL gate kia). Xem tools/ha_patterns.py.
+from ha_patterns import FORBIDDEN_HA_PATTERNS
 
 def audit_ep(text, ep_num):
     """Return list of (check, status, value)."""
@@ -40,7 +43,9 @@ def audit_ep(text, ep_num):
     results.append(('Khải_Phong_object_mention', 'INFO', 'present' if obj_match else 'absent'))
 
     # 4. Khải Phong rename verified (no naked Hà)
-    naked_ha = len(re.findall(r'\bHà\b(?!\s+(?:Nội|Đông|Đam|Tĩnh|Bắc|Nam|Tây))', body))
+    # PATTERN list dung chung (single source: tools/ha_patterns.py) — CHI dong bo
+    # list pattern, KHONG dong bo cong thuc threshold (van giu tolerance scale rieng).
+    naked_ha = sum(len(re.findall(pat, body)) for pat in FORBIDDEN_HA_PATTERNS)
     ha_ok = naked_ha == 0 or naked_ha <= ep_num // 10  # tolerance scale
     results.append(('Naked_Hà_check', 'OK' if naked_ha == 0 else 'WARN', f'{naked_ha} naked'))
 
