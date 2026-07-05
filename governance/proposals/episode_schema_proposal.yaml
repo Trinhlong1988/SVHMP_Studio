@@ -135,11 +135,13 @@ enforcer_planned:
 # ------------------------------------------------------------
 # PHAN BIEN #3 — rui ro con lai neu duyet nguyen van
 # ------------------------------------------------------------
-# 1. 50 tap cu (ep_01-50) KHONG khop schema nay 100% (da field-hoa ngoai le bell_count/driver_lines
-#    o ep73/90 dung ban sua B, nhung con nhieu diem khac chua ra soat het) - neu ai do sau nay
-#    dung schema nay de "audit nguoc" 50 tap cu se ra FAIL sai (khong phai loi tap cu, la gioi
-#    han pham vi schema). Phai ghi ro schema nay CHI ap cho output MOI cua generator (G7), khong
-#    ap nguoc.
+# 1. SUA 5/7 (Mr.Long chot huong moi, xem governance/master_roadmap.md §6 muc 6 + §7): 50 tap
+#    cu (ep_01-50) KHONG con duoc coi la "noi dung co dinh ngoai pham vi schema" nua - bang chung
+#    `runtime/lifecycle.yaml` xac nhan CHUA tap nao tung PUBLISHED (ke ca EP01 chi moi QA_PASS
+#    tentative, ep_2 con ghi not_yet_generated) nen 0 rui ro "pha noi dung da len song". Huong
+#    moi: 50 tap nay la THU NGHIEM TURN 1 - se REGEN lai qua chinh schema nay (+ pipeline G6-G8)
+#    khi san sang, khong giu nguyen bang moi gia. Schema nay VAN se ap dung khi regen 50 tap cu,
+#    khong chi rieng tap moi 51-100 - chi la CHUA ap ngay bay gio (G7 chua build).
 # 2. object_sub_arc/callback_target fields hien mo ta "kieu enum + string tu do" - chua co
 #    danh sach dong closed-set cho "type" ngoai 3 gia tri da liet - neu sau nay can them kieu
 #    sub-arc moi, day la diem se can RFC (khong tu y them trong enforcer).

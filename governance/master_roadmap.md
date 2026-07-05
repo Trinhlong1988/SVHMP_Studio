@@ -55,6 +55,15 @@ _Hoàn thiện tổng thể + tái dùng cho tiểu thuyết / podcast / tình c
 3. **Mọi claim = confusion-test + evidence** (R203/206/207/208 mỗi cái 1000/1000; balance 7→0 flag).
 4. **Reconcile hiến pháp sẵn có, không nhân đôi** (Change-Gate=R7, Audit=R200/log_ping, Promotion=bible lock).
 5. **Calibrate/kiểm chứng từ dữ liệu thật (Golden/roster), không suy luận, không bịa field.**
+6. **50 tập hiện có = THỬ NGHIỆM TURN 1, không phải nội dung cố định phải giữ nguyên** (Boss chốt
+   5/7, xem §7 mục mới). Bằng chứng: `runtime/lifecycle.yaml` (state machine chính thức) cho thấy
+   **chưa tập nào từng PUBLISHED** — kể cả EP01 chỉ mới `QA_PASS (tentative)`, ep_2 còn ghi
+   `not_yet_generated` dù `output/ep_02..50/` đã có file (nghĩa là 49 tập đó viết ngoài pipeline
+   chính thức, không qua Director/QA Lock tracking). Bài học: không cần sợ "phá nội dung đã lên
+   sóng" khi sửa/patch/regen — 0 khán giả thật đã xem. Tránh lặp lỗi: đổ công vá tay từng lỗi nhỏ
+   (DEBT-001 intro drift, G2-4 tên chưa đồng bộ vào episode.md) như thể đó là sản phẩm cuối cùng —
+   những patch đó chỉ TẠM THỜI, giá trị thật nằm ở việc rút kinh nghiệm để G6-G8 (pipeline chuẩn)
+   đủ tốt rồi regen lại toàn bộ, không phải giữ nguyên 50 tập nháp bằng mọi giá.
 
 ## 7. QUYẾT ĐỊNH CẦN BOSS (cập nhật 3/7 tối — câu G1/G3 cũ hết hiệu lực, G1 đã DONE)
 - ✅ **GPU máy render = RTX 5060 Ti 16GB** (Mr.Long cấp specs 3/7 tối) → máy render = máy TRAIN chính (LoRA FLUX); máy Admin 3060 12GB = inference phụ/QA. S3-0 chỉ còn benchmark tốc độ, không còn câu hỏi khả thi.
@@ -62,6 +71,12 @@ _Hoàn thiện tổng thể + tái dùng cho tiểu thuyết / podcast / tình c
 - Cloud-GPU fallback: **tạm đóng** — 5060 Ti 16GB đủ train local; chỉ mở lại nếu benchmark S3-0 fail.
 - ✅ **IP2 = HUYỀN SỬ VIỆT** (Mr.Long chốt 3/7 tối): visual **anime/chibi** (ảnh + video), cách kể **trẻ trung hoạt náo** — đối cực HDK (horror trầm) → test overlay platform chuẩn nhất: cùng engine, khác bible/LoRA/tone. LoRA chibi train dễ trên 5060 Ti, dung sai consistency cao.
 → **§7 ĐÓNG — cả 4 quyết định đã chốt 3/7 tối.**
+
+- ✅ **50 tập hiện có (ep_01-50) = thử nghiệm turn 1, sẽ REGEN lại qua pipeline chuẩn G6-G8 khi
+  xong** (Mr.Long chốt 5/7, xem §6 mục 6 bằng chứng lifecycle.yaml). Không giữ nội dung cũ bằng
+  mọi giá — mục tiêu turn 1 là rút kinh nghiệm/phản biện/bắt lỗi để chuẩn hoá, không phải bản
+  chốt cuối cùng. Tiền lệ tái dùng: `output/archive_draft_v1_ep11_41/` (đã archive 1 bản nháp cũ
+  khi có bản mới hơn) — làm lại đúng cách đó ở quy mô lớn hơn khi G7/G8 sẵn sàng.
 
 ## 8. AI STUDIO EXPANSION — Mr.Long CHỐT 3/7/2026
 > Bản đầy đủ (kiến trúc 4 tầng · phân xử AUDIT.md · hạ tầng đo thật · rủi ro): `AI_STUDIO_PLAN.md`
