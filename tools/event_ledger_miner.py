@@ -89,8 +89,14 @@ def episode_files(root=None):
 
 
 def parse_header(lines):
-    meta, inside = {}, False
-    for ln in lines:
+    """Tra ve (meta, meta_lines): meta la dict key->value nhu cu (khong doi API
+    cu de khong pha _add_freeform_nickname_candidates), meta_lines la dict
+    key->so dong THAT (1-indexed, trong CHINH danh sach `lines` truyen vao) noi
+    key do duoc doc — evidence cho primary_event (bug fix: truoc day parse_header
+    doc dong nhung khong giu lai so dong, primary_event khong the trace ve
+    episode.md)."""
+    meta, meta_lines, inside = {}, {}, False
+    for i, ln in enumerate(lines, 1):
         s = ln.strip()
         if s.startswith('```'):
             if inside:
@@ -101,7 +107,8 @@ def parse_header(lines):
             m = RE_HEADER_KV.match(s)
             if m:
                 meta[m.group(1)] = m.group(2).strip()
-    return meta
+                meta_lines[m.group(1)] = i
+    return meta, meta_lines
 
 
 def _extract_obj_id(raw):
@@ -113,24 +120,42 @@ def _extract_obj_id(raw):
     return m.group(0) if m else raw
 
 
+def _pe_field(header, header_lines, ep_no, key, transform=None):
+    """Boc 1 truong header thanh {'value', 'ep', 'line'} — line = so dong THAT
+    trong episode.md noi key do duoc doc (tu parse_header, KHONG bia). None neu
+    header khong co key nay (khong co bang chung -> khong bia entry rong)."""
+    raw = header.get(key)
+    if raw is None:
+        return None
+    val = transform(raw) if transform else raw
+    if val is None:
+        return None
+    return {'value': val, 'ep': ep_no, 'line': header_lines.get(key)}
+
+
 def mine_episode(ep_no, path, nickname_candidates):
     """Tra ve dict 1 episode: primary_event, temporal_mentions, object_mentions, nickname_hits."""
     text = path.read_text(encoding='utf-8')
     lines = text.splitlines()
-    header = parse_header(lines)
+    header, header_lines = parse_header(lines)
 
     primary_event = {
-        'regret_sub': header.get('regret_sub'),
+        'regret_sub': _pe_field(header, header_lines, ep_no, 'regret_sub'),
         # header ghi 'OBJ_XXX (mo ta tieng Viet)' — chi lay TOKEN id, bo mo ta
         # (bug that: mine truoc day giu ca chuoi, khong resolve duoc bible/12)
-        'signature_object': _extract_obj_id(header.get('signature_object')),
-        'signature_setting': header.get('signature_setting'),
-        'passenger_main': header.get('passenger_main'),
-        'stop_location': header.get('stop_location'),
+        'signature_object': _pe_field(header, header_lines, ep_no, 'signature_object', _extract_obj_id),
+        'signature_setting': _pe_field(header, header_lines, ep_no, 'signature_setting'),
+        'passenger_main': _pe_field(header, header_lines, ep_no, 'passenger_main'),
+        'stop_location': _pe_field(header, header_lines, ep_no, 'stop_location'),
     }
 
     temporal_mentions = []
-    object_mentions = set()
+    # GIU NGUYEN tap hop noi dung nhu ban cu (truoc day la set() cac chuoi —
+    # dung dict string->line de vua dedupe y het logic cu (cung 1 chuoi lap lai
+    # nhieu dong chi giu 1 muc) VUA gan them line THAT (lan dau tien chuoi do
+    # xuat hien), khong doi so luong/noi dung muc so voi truoc (khong bia
+    # logic trich xuat moi, chi bo sung evidence cho du lieu da co).
+    object_mentions_lines = {}   # value(str) -> line dau tien gap (1-indexed)
     nickname_hits = {}   # nickname -> [line_no] (chi tu roster, KHONG doan tu)
     for i, ln in enumerate(lines, 1):
         for v, matched, span in extract_years_ago(ln):
@@ -142,22 +167,32 @@ def mine_episode(ep_no, path, nickname_candidates):
         for v, matched, span in extract_lived_years(ln):
             temporal_mentions.append({'ep': ep_no, 'line': i, 'kind': 'lived_years',
                                       'value': v, 'text': matched})
+        # Quet CA header lan than bai (lines la toan bo file, header nam trong
+        # do) — dong header 'signature_object: OBJ_XXX (...)' DA duoc quet o
+        # day nhu moi dong khac.
         for m in re.finditer(r'OBJ_[A-Z_]+', ln):
-            object_mentions.add(m.group(0))
+            object_mentions_lines.setdefault(m.group(0), i)
         for nick in nickname_candidates:
             if nick in RECURRING_NAMES:
                 continue
             if re.search(r'(?<![\wÀ-ỹ])' + re.escape(nick) + r'(?![\wÀ-ỹ])', ln):
                 nickname_hits.setdefault(nick, []).append(i)
 
+    # sig_obj header RAW (co the kem mo ta tieng Viet, vd 'OBJ_XXX (ao len...)')
+    # — ban cu cong thang chuoi nay vao set (tach biet voi ban OBJ_ID sach da
+    # quet o tren) ma KHONG giu dong nguon; gio gan dung dong header that (tu
+    # parse_header) — chinh la dong sinh ra chuoi nay, khong bia.
     sig_obj = header.get('signature_object')
     if sig_obj:
-        object_mentions.add(sig_obj)
+        object_mentions_lines.setdefault(sig_obj, header_lines.get('signature_object'))
+
+    object_mentions = [{'ep': ep_no, 'line': line, 'value': val}
+                       for val, line in sorted(object_mentions_lines.items())]
 
     return {
         'primary_event': primary_event,
         'temporal_mentions': temporal_mentions,
-        'object_mentions': sorted(object_mentions),
+        'object_mentions': object_mentions,
         'nickname_hits': nickname_hits,
     }
 
@@ -240,7 +275,7 @@ def _add_freeform_nickname_candidates(nickname_candidates, eps):
     Khai Phong — qua nhieu, con 'Hoài' van la tin hieu sach)."""
     for ep, path in eps:
         lines = path.read_text(encoding='utf-8').splitlines()
-        header = parse_header(lines)
+        header, _header_lines = parse_header(lines)
         pas_id, info = parse_passenger_main(header.get('passenger_main', ''))
         if pas_id is None:
             guess = info.get('name_guess')
@@ -260,7 +295,11 @@ def find_object_catalog_gaps(scans, catalog_ids):
     nhom guong/kinh, hoa cuc, van ban nghe nghiep — memory blueprint-phase-state)."""
     gaps = {}
     for ep, scan in scans.items():
-        obj = scan['primary_event'].get('signature_object')
+        entry = scan['primary_event'].get('signature_object')
+        # entry co the la dict {'value','ep','line'} (mine() that) HOAC string
+        # thuan (test synthetic cu / caller cu) — chap nhan ca 2 de khong pha
+        # test hien co, khong doi hop dong ham nay.
+        obj = entry.get('value') if isinstance(entry, dict) else entry
         if obj and obj.startswith('OBJ_') and obj not in catalog_ids:
             gaps[ep] = obj
     return gaps

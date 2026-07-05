@@ -16,7 +16,7 @@ GIỚI HẠN ĐÃ BIẾT: case ví dụ trong TASK ("Phong" ep_15 tái xuất ep
 - 'Cảnh' (PAS_0072, gán ep_61) — xuất hiện thêm: ep_36, ep_39
 - 'Diễm' (PAS_0015, gán ep_04) — xuất hiện thêm: ep_36
 - 'Diệu' (PAS_0013, gán ep_02) — xuất hiện thêm: ep_04
-- 'Duy' (freeform_ep48, gán ep_48) — xuất hiện thêm: ep_29, ep_46
+- 'Duy' (PAS_0116/freeform_ep48, gán ep_48) — xuất hiện thêm: ep_29, ep_46
 - 'Hiếu' (PAS_0038/freeform_ep45, gán ep_27, ep_45) — xuất hiện thêm: ep_46
 - 'Hiền' (PAS_0031, gán ep_20) — xuất hiện thêm: ep_21
 - 'Hoàn' (PAS_0075, gán ep_64) — xuất hiện thêm: ep_18, ep_20
