@@ -1,7 +1,8 @@
 """
 hidden_audit.py — R_SUPREME gate 3 (Mr.Long lock 30/6 22:00 docx)
 
-Answer Mr.Long's questions about every shipped tool:
+Answer Mr.Long's questions for a CURATED list of 14 already-known CORE tools
+(hardcoded in TIER_2_1_SCOPE / ALL_SCOPE below) — NOT every .py file in tools/:
   - Lines of code?
   - Number of TODO / FIXME / XXX / HACK markers?
   - Number of 'placeholder' mentions?
@@ -9,11 +10,22 @@ Answer Mr.Long's questions about every shipped tool:
   - Number of NotImplemented?
   - Number of hardcoded magic numbers (suspect intuition tuning)?
 
+SCOPE NOTE (fix debt3-hidden-audit-scope, 2026-07-05): this gate only scans the
+files explicitly hardcoded in TIER_2_1_SCOPE (7 files) or ALL_SCOPE (14 files:
+those 7 + 7 more named tools/tests). It does NOT audit every shipped tool —
+tools/ currently holds ~198 .py files (count drifts; recount with
+`Get-ChildItem tools -Filter *.py | Measure-Object` before quoting a number).
+Files not in the hardcoded list are silently excluded from this gate; a
+transparency line is printed at runtime stating how many tools/*.py files fall
+outside this gate's scope. If you need real full-directory coverage, that is a
+separate, unbuilt feature — do not represent this gate's output as such.
+
 Output: STRICT PROTOCOL JSON + per-file table.
 
 Usage:
     python tools/hidden_audit.py
     python tools/hidden_audit.py --scope tier_2_1   (Voice Profile + 5 voice QA + extract_embedding)
+    python tools/hidden_audit.py --scope all        (tier_2_1 + 7 more named tools/tests; still only 14 files, NOT all of tools/)
     python tools/hidden_audit.py --json
 """
 from __future__ import annotations
@@ -113,6 +125,22 @@ def audit_file(path: Path) -> dict:
     }
 
 
+def count_out_of_scope_tools(files_in_scope: list[str]) -> tuple[int, int]:
+    """Return (total .py files under tools/, count NOT covered by this gate's scope).
+
+    Transparency helper only — does NOT audit those files, just counts them so
+    the CLI/JSON output cannot be mistaken for full-directory coverage.
+    """
+    tools_dir = REPO_ROOT / "tools"
+    if not tools_dir.exists():
+        return 0, 0
+    all_tools_py = list(tools_dir.glob("*.py"))
+    in_scope_tools = {f for f in files_in_scope if f.startswith("tools/")}
+    total = len(all_tools_py)
+    covered = sum(1 for p in all_tools_py if f"tools/{p.name}" in in_scope_tools)
+    return total, total - covered
+
+
 def severity_for_file(rpt: dict) -> str:
     if rpt.get("missing") or rpt.get("parse_error"):
         return "FAIL"
@@ -146,10 +174,18 @@ def main() -> int:
         rpt["severity"] = severity_for_file(rpt)
         reports.append(rpt)
 
+    tools_dir_total, tools_dir_out_of_scope = count_out_of_scope_tools(files)
+
     summary = {
         "rule": "R_SUPREME gate 3 hidden_audit",
+        "scope_disclaimer": (
+            "This gate audits a curated hardcoded list of known CORE tools only, "
+            "NOT every shipped tool in tools/."
+        ),
         "scope": args.scope,
         "files_audited": len(reports),
+        "tools_dir_py_files_total": tools_dir_total,
+        "tools_dir_py_files_out_of_scope": tools_dir_out_of_scope,
         "total_loc": sum(r.get("loc_excluding_comments_blank", 0) for r in reports),
         "total_todo": sum(r.get("todo_fixme_xxx_hack", 0) for r in reports),
         "total_placeholder": sum(r.get("placeholder_mentions", 0) for r in reports),
@@ -165,7 +201,10 @@ def main() -> int:
     if args.json:
         print(json.dumps({"summary": summary, "per_file": reports}, ensure_ascii=False, indent=2))
     else:
-        print(f"[HIDDEN_AUDIT] scope={args.scope}  files={len(reports)}")
+        print(f"[HIDDEN_AUDIT] scope={args.scope}  files={len(reports)}  "
+              f"(curated known-tool list, NOT full tools/ directory)")
+        print(f"  NOTE: {tools_dir_out_of_scope} of {tools_dir_total} .py files in tools/ "
+              f"are OUTSIDE this gate's scope (not scanned).")
         print(f"  TOTAL: loc={summary['total_loc']}  todo={summary['total_todo']}  "
               f"placeholder={summary['total_placeholder']}  bare_pass={summary['total_bare_pass']}  "
               f"not_impl={summary['total_not_impl']}  hardcode={summary['total_hardcode']}")
