@@ -29,11 +29,17 @@ import sys
 from pathlib import Path
 
 sys.stdout.reconfigure(encoding='utf-8') if hasattr(sys.stdout, 'reconfigure') else None
+import yaml  # noqa: E402
 
 sys.path.insert(0, str(Path(__file__).parent))
-from event_ledger_miner import mine  # noqa: E402
+from event_ledger_miner import mine, episode_files, ROSTER  # noqa: E402
 
 SVHMP = Path(__file__).parent.parent
+
+# Dong bo voi F2 (event_ledger_miner.MAX_LINE_WINDOW_FOR_SAME_REFERENT) — cua so
+# hep quanh 1 lan nhac ten de gom tuoi/years_ago CUNG 1 nguoi, tranh gop nham
+# nhan vat khac gan do (bai hoc F2: window rong = 70% tap flag sai).
+MAX_LINE_WINDOW_FOR_EXACT_NAME = 3
 
 # Tu khoa lich am PHO THONG (dinh danh, khong can nguon rieng — khac cau tra
 # nhay cam BP9). Mua/thoi tiet KY VONG di kem — chi canh bao (WARN) neu mo ta
@@ -69,17 +75,117 @@ def check_arithmetic_consistency_across_episodes(ages_by_ep, years_ago_by_ep):
     return True
 
 
-def check_cross_episode_M1(mined):
-    """M1 tren DU LIEU THAT: F1 (nickname collision) la UNG VIEN CHUA XAC NHAN
-    cung 1 nguoi (tu dong xac nhan 'chủ ý hay trùng âm tiết ngẫu nhiên' — xem
-    event_ledger_miner docstring) — KHONG duoc dung lam nguon FAIL cung. Chi
-    khi co xac nhan THAT (D3 fact_ledger duoc Mr.Long ky, lien ket 2 tap RO
-    RANG cung 1 su kien) moi chay check_arithmetic_consistency_across_episodes
-    that su. Tren du lieu hien tai (D3 chua ky) -> 0 violation LA DUNG (khong
-    phai tool yeu — day la gioi han THAT: chua co du lieu lien ket xac nhan).
-    Logic that cua ham nay da duoc mutation-test (tests/test_g4_world.py) voi
-    du lieu synthetic DA XAC NHAN cung 1 nguoi."""
-    return []   # 0 CONFIRMED cross-episode link -> 0 applicable case (khong phai 0-vi-yeu)
+def _load_full_char_names(roster_path=None):
+    """Ten NHAN VAT DAY DU (ca cum char_name NGUYEN VAN, vd 'Phong Hoài Đức')
+    tu roster -> danh sach ten -> [(pas_id, assigned_ep), ...]. Day la lop MOI,
+    HEP HON _load_nickname_candidates cua F1 (F1 tach TUNG TU rieng le trong
+    char_name ra lam ung vien nickname/fuzzy — chinh dieu nay gay 16 false-
+    positive lich su, xem G4_REPORT.md muc 3). O day KHONG tach tu: chi lay
+    CA CUM ten nguyen van lam khoa so sanh literal, exact, case-sensitive."""
+    roster = yaml.safe_load(Path(roster_path or ROSTER).read_text(encoding='utf-8'))
+    out = {}
+    for p in roster['passengers']:
+        name = (p.get('char_name') or '').strip()
+        if len(name.split()) < 2:
+            continue   # KHONG phai "full name" that (vd ho don le 'Nguyễn' trong spare_pool draft) — bo qua
+        out.setdefault(name, []).append((p['id'], p.get('assigned_ep')))
+    return out
+
+
+def _find_full_name_line_hits(output_root, full_names):
+    """Quet THAN BAI moi tap (episode.md) tim CA CUM ten nhan vat day du xuat
+    hien LITERAL (case-sensitive, khop nguyen cum — dung word-boundary Unicode
+    nhu event_ledger_miner._load_nickname_candidates/nickname_hits, KHONG tach
+    tu, KHONG suy luan biet danh). Tra ve: ten -> {ep: [line_no, ...]}."""
+    hits = {}
+    for ep, path in episode_files(output_root):
+        lines = path.read_text(encoding='utf-8').splitlines()
+        for name in full_names:
+            pattern = re.compile(r'(?<![\wÀ-ỹ])' + re.escape(name) + r'(?![\wÀ-ỹ])')
+            found = [i for i, ln in enumerate(lines, 1) if pattern.search(ln)]
+            if found:
+                hits.setdefault(name, {})[ep] = found
+    return hits
+
+
+def find_exact_name_cross_episode_conflicts(mined, output_root=None, roster_path=None):
+    """M1 LOP MOI, HEP HON F1 (theo TASK sua loi): chi coi la DU TIN CAY de
+    hard-fail khi CA HAI dieu kien dung dong thoi:
+      (a) CUNG 1 CUM TEN NHAN VAT DAY DU xuat hien LITERAL (case-sensitive,
+          full-name match, KHONG suy luan/fuzzy/biet danh nhu F1) o >=2 tap
+          KHAC NHAU; VA
+      (b) check_arithmetic_consistency_across_episodes() (ham thuan, da
+          mutation-test) phat hien mau thuan so hoc THAT giua cac moc
+          tuoi/years_ago nam GAN (+-3 dong, dong bo F2) moi lan nhac ten do
+          trong tung tap.
+    KHONG ap dung logic nay len F1 (fuzzy tu-don/nickname) — F1 van CHI la
+    ung vien can nguoi xem lai (nguyen nhan 16 false-positive cu neu dung lam
+    hard-fail, xem G4_REPORT.md), KHONG duoc lap lai loi do o day."""
+    full_names = _load_full_char_names(roster_path)
+    if not full_names:
+        return []
+    hits = _find_full_name_line_hits(output_root, full_names)
+    scans = mined['scans']
+    violations = []
+    for name, per_ep_lines in sorted(hits.items()):
+        eps_with_hit = sorted(per_ep_lines)
+        if len(eps_with_hit) < 2:
+            continue   # (a) chua thoa: chi 1 tap nhac ten nay
+        ages_by_ep, years_ago_by_ep = {}, {}
+        for ep in eps_with_hit:
+            if ep not in scans:
+                continue
+            hit_lines = per_ep_lines[ep]
+            temporal = scans[ep]['temporal_mentions']
+            ages = {t['value'] for t in temporal if t['kind'] == 'age' and any(
+                abs(t['line'] - hl) <= MAX_LINE_WINDOW_FOR_EXACT_NAME for hl in hit_lines)}
+            years_ago = {t['value'] for t in temporal if t['kind'] == 'years_ago' and any(
+                abs(t['line'] - hl) <= MAX_LINE_WINDOW_FOR_EXACT_NAME for hl in hit_lines)}
+            # CHI coi la "moc thoi gian" hop le neu co CA age VA years_ago GAN
+            # nhau (cap doi that — dung mau vi du TASK '21 tuoi... muoi nam
+            # truoc'). Neu tap chi co 1 trong 2 (vd chi co age le, khong co
+            # years_ago di kem) -> KHONG du de lam "temporal anchor", bo qua
+            # tap do (tranh false-positive kieu F2 cu: 2 tuoi khac nhau xuat
+            # hien gan 1 ten nhung KHONG co phep tinh nao lien ket — do la
+            # trung hop 2 nguoi/boi canh khac nhau, khong phai mau thuan that;
+            # da xac nhan case that 'Hạ Nhi' tren du lieu that gay bao dong
+            # gia truoc khi them dieu kien nay).
+            if ages and years_ago:
+                ages_by_ep[ep] = ages
+                years_ago_by_ep[ep] = years_ago
+        if len(ages_by_ep) < 2:
+            continue   # khong du >=2 tap co CAP tuoi+years_ago hop le gan ten nay de doi chieu that
+        if not check_arithmetic_consistency_across_episodes(ages_by_ep, years_ago_by_ep):
+            violations.append({
+                'exact_name': name,
+                'episodes': eps_with_hit,
+                'ages_by_ep': {e: sorted(v) for e, v in ages_by_ep.items()},
+                'years_ago_by_ep': {e: sorted(v) for e, v in years_ago_by_ep.items()},
+                'evidence': (f"'{name}' xuat hien literal (exact, case-sensitive) o "
+                            f"{['ep_%02d' % e for e in eps_with_hit]} — tuoi/moc gan ten do "
+                            f"({ {e: sorted(v) for e, v in ages_by_ep.items()} }) khong khop qua "
+                            f"years_ago ({ {e: sorted(v) for e, v in years_ago_by_ep.items()} })"),
+            })
+    return violations
+
+
+def check_cross_episode_M1(mined, output_root=None, roster_path=None):
+    """M1 tren DU LIEU THAT: F1 (nickname collision, tach tu-don) la UNG VIEN
+    CHUA XAC NHAN cung 1 nguoi (tu dong xac nhan 'chủ ý hay trùng âm tiết ngẫu
+    nhiên' — xem event_ledger_miner docstring) — KHONG duoc dung lam nguon
+    FAIL cung, giu nguyen quyet dinh nay (tranh lap lai 16 false-positive cu).
+
+    BUG DA SUA (xem reports/G4_FIX_TIMELINE_CROSSEP.md): ham nay TRUOC DAY bo
+    qua tham so `mined`, return [] VO DIEU KIEN — nen KHONG BAO GIO bat duoc
+    mau thuan xuyen tap du ro rang den dau. Fix: them 1 lop MOI, HEP HON F1 —
+    exact literal full-name match (khong fuzzy) + xac nhan mau thuan so hoc
+    THAT qua check_arithmetic_consistency_across_episodes(). Tren du lieu that
+    hien tai (50 tap, one-shot-only bible/03) -> case tin cay nay hiem/0 la
+    DUNG (chua thay ten day du nao xuat hien lai VOI mau thuan so hoc that
+    trong text that) — khong phai tool yeu, la gioi han THAT (xem honest_caveat
+    trong report: bien the ten/biet danh/dai tu van can D3 ky moi xu ly duoc).
+    """
+    return find_exact_name_cross_episode_conflicts(mined, output_root, roster_path)
 
 
 def check_lunar_season_from_files(output_root=None):
@@ -118,7 +224,7 @@ def check_qa_fact_check_reconcile_note():
 
 def run(output_root=None):
     mined = mine(output_root)
-    m1 = check_cross_episode_M1(mined)
+    m1 = check_cross_episode_M1(mined, output_root)
     m4_warns = check_lunar_season_from_files(output_root)
     f2_candidates = mined['findings']['F2_internal_age_arithmetic_conflict']
     reconcile_notes = check_qa_fact_check_reconcile_note()

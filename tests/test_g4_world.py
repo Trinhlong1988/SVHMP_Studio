@@ -22,7 +22,8 @@ from vn_number_words import extract_years_ago, extract_ages  # noqa: E402
 from event_ledger_miner import (  # noqa: E402
     mine, validate_fact_entry_has_source, find_internal_age_arithmetic_conflicts)
 from timeline_check import (  # noqa: E402
-    check_arithmetic_consistency_across_episodes, check_lunar_season_from_files, run as timeline_run)
+    check_arithmetic_consistency_across_episodes, check_cross_episode_M1,
+    check_lunar_season_from_files, run as timeline_run)
 from story_consistency_validator import (  # noqa: E402
     validate_event_consistency, validate_object_state_transition)
 
@@ -73,6 +74,106 @@ def test_m1_conflicting_cross_episode_ages_bites():
     """Đòn TASK M1: 2 tập nhắc cùng sự kiện lệch mốc thời gian -> phải phát hiện False."""
     ok = check_arithmetic_consistency_across_episodes({15: {31}, 25: {50}}, {15: {10}, 25: {10}})
     assert ok is False
+
+
+# ---------- M1 WIRING FIX (bug 2 lớp đã audit: check_cross_episode_M1(mined)
+# bỏ qua tham số `mined`, return [] vô điều kiện — R84 KHÔNG BAO GIỜ bắt được
+# mâu thuẫn xuyên tập dù rõ đến đâu. Fix: lớp MỚI, HẸP HƠN F1 — exact literal
+# full-name match (case-sensitive, KHÔNG fuzzy/nickname) + xác nhận qua
+# check_arithmetic_consistency_across_episodes() trên dữ liệu THẬT-mined.
+# Xem reports/G4_FIX_TIMELINE_CROSSEP.md cho before/after evidence đầy đủ.) ----------
+
+def _write_episode(root, ep_no, body_lines, header_kv=None):
+    header_kv = header_kv or {'regret_sub': 'TEST'}
+    ep_dir = root / f'ep_{ep_no:02d}'
+    ep_dir.mkdir(parents=True, exist_ok=True)
+    header = '\n'.join(f'{k}: {v}' for k, v in header_kv.items())
+    text = f"```\n{header}\n```\n" + '\n'.join(body_lines) + '\n'
+    (ep_dir / 'episode.md').write_text(text, encoding='utf-8')
+
+
+def _write_roster(path, entries):
+    path.write_text(yaml.safe_dump({'passengers': entries}, allow_unicode=True, sort_keys=False),
+                    encoding='utf-8')
+
+
+def test_m1_exact_name_match_arithmetic_conflict_bites(tmp_path):
+    """Đòn TASK (case audit xác nhận là BUG THẬT): CÙNG 1 tên nhân vật ĐẦY ĐỦ
+    ('Phong Hoài Đức', case-sensitive, full-name — KHÔNG phải fuzzy/nickname
+    kiểu F1) xuất hiện literal ở ep_15 VÀ ep_25; ep_15 nói '...ba mươi mốt
+    tuổi. Mười năm trước...', ep_25 nói '...năm mươi tuổi. Mười năm trước...'
+    cho CÙNG mốc 'mười năm trước' — mâu thuẫn số học rõ ràng (31 vs 50, cùng
+    -10 năm). TRƯỚC FIX: check_cross_episode_M1 bỏ qua `mined`, return []
+    VÔ ĐIỀU KIỆN -> case này (dù rõ ràng đến đâu) vẫn PASS sai (xanh giả).
+    SAU FIX: phải FAIL đúng (đỏ thật)."""
+    roster = tmp_path / 'roster.yaml'
+    _write_roster(roster, [{'id': 'PAS_TEST01', 'char_name': 'Phong Hoài Đức', 'assigned_ep': 15}])
+    out_root = tmp_path / 'output'
+    _write_episode(out_root, 15, [
+        'Phong Hoài Đức năm nay ba mươi mốt tuổi. Mười năm trước, anh gặp tai nạn định mệnh.'])
+    _write_episode(out_root, 25, [
+        'Phong Hoài Đức năm nay năm mươi tuổi. Mười năm trước, anh gặp tai nạn định mệnh.'])
+
+    mined = mine(output_root=out_root, roster_path=roster)
+    violations = check_cross_episode_M1(mined, output_root=out_root, roster_path=roster)
+
+    assert violations != [], (
+        'FIX PHẢI bắt được mâu thuẫn xuyên tập rõ ràng (before fix: [] vô điều kiện, sai)')
+    assert violations[0]['exact_name'] == 'Phong Hoài Đức'
+    assert set(violations[0]['episodes']) == {15, 25}
+
+
+def test_m1_exact_name_match_consistent_case_clean(tmp_path):
+    """Case Phong-like NHẤT QUÁN (mirror ví dụ TASK gốc: 21 tuổi + 10 năm = 31
+    khớp cả 2 tập) -> KHÔNG được FAIL (âm tính thật, không phải 0-vì-yếu)."""
+    roster = tmp_path / 'roster.yaml'
+    _write_roster(roster, [{'id': 'PAS_TEST02', 'char_name': 'Lộc Thiên Ân', 'assigned_ep': 15}])
+    out_root = tmp_path / 'output'
+    _write_episode(out_root, 15, [
+        'Lộc Thiên Ân năm nay ba mươi mốt tuổi. Mười năm trước, cô rời quê.'])
+    _write_episode(out_root, 25, [
+        'Lộc Thiên Ân năm nay ba mươi mốt tuổi. Mười năm trước, cô rời quê.'])
+
+    mined = mine(output_root=out_root, roster_path=roster)
+    violations = check_cross_episode_M1(mined, output_root=out_root, roster_path=roster)
+    assert violations == []
+
+
+def test_m1_exact_name_match_requires_paired_temporal_anchor_not_bare_age_diff(tmp_path):
+    """GIỚI HẠN CHỦ Ý (chống false-positive kiểu F2 cũ, case thật 'Hạ Nhi' bắt
+    được khi build fix này — xem G4_FIX_TIMELINE_CROSSEP.md): 2 tập nhắc CÙNG
+    tên đầy đủ với 2 TUỔI khác nhau NHƯNG KHÔNG có 'X năm trước' đi kèm ở tập
+    nào để lập được phép tính đối chiếu -> KHÔNG đủ để hard-fail (không phải
+    'temporal anchor' hợp lệ theo R84, có thể là 2 người/bối cảnh khác nhau
+    trùng tên diễn giải, không phải mâu thuẫn số học xác nhận được)."""
+    roster = tmp_path / 'roster.yaml'
+    _write_roster(roster, [{'id': 'PAS_TEST03', 'char_name': 'Hạ Nhi Tường', 'assigned_ep': 15}])
+    out_root = tmp_path / 'output'
+    _write_episode(out_root, 15, ['Hạ Nhi Tường năm nay mười sáu tuổi, còn rất trẻ.'])
+    _write_episode(out_root, 25, ['Hạ Nhi Tường năm nay hai mươi tư tuổi, đã trưởng thành.'])
+
+    mined = mine(output_root=out_root, roster_path=roster)
+    violations = check_cross_episode_M1(mined, output_root=out_root, roster_path=roster)
+    assert violations == [], (
+        'KHÔNG có mốc "X năm trước" đi kèm -> chưa đủ tin cậy để hard-fail (giới hạn THẬT, không phải né việc)')
+
+
+def test_m1_single_word_nickname_not_promoted_to_exact_name_layer(tmp_path):
+    """Đảm bảo lớp MỚI KHÔNG lặp lại lỗi F1 cũ: char_name 1 từ (họ/tên tắt,
+    không phải 'full name' thật — mirror case thật PAS_0131 'Nguyễn' trong
+    spare_pool) bị loại khỏi candidate ngay từ vòng load, dù trùng lặp nhiều
+    tập và có vẻ mâu thuẫn tuổi."""
+    roster = tmp_path / 'roster.yaml'
+    _write_roster(roster, [{'id': 'PAS_TEST04', 'char_name': 'Nguyễn', 'assigned_ep': None}])
+    out_root = tmp_path / 'output'
+    _write_episode(out_root, 15, [
+        'Nguyễn năm nay ba mươi mốt tuổi. Mười năm trước, anh rời làng.'])
+    _write_episode(out_root, 25, [
+        'Nguyễn năm nay năm mươi tuổi. Mười năm trước, anh rời làng.'])
+
+    mined = mine(output_root=out_root, roster_path=roster)
+    violations = check_cross_episode_M1(mined, output_root=out_root, roster_path=roster)
+    assert violations == [], 'char_name 1 từ không phải full-name — không được vào lớp exact-match mới'
 
 
 # ---------- M2: đồ vật đổi trạng thái vô lý ----------
