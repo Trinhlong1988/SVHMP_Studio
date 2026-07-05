@@ -18,10 +18,12 @@ from pathlib import Path
 
 sys.stdout.reconfigure(encoding='utf-8') if hasattr(sys.stdout, 'reconfigure') else None
 
+sys.path.insert(0, str(Path(__file__).parent))
+from milestones import DRIVER_BUDGET_PEAK_EPS  # single source (see tools/milestones.py)
+
 SVHMP = Path(__file__).resolve().parents[1]
 
 STANDARD = {'Con đã nhớ ra chưa?', 'Chưa tới lúc.'}
-MILESTONES = {1, 10, 20, 30, 40, 50, 60, 70, 73, 80, 90}
 
 def trim_ep(ep_num, dry_run=False):
     p = SVHMP / 'output' / f'ep_{ep_num:02d}' / 'episode.md'
@@ -54,7 +56,7 @@ def trim_ep(ep_num, dry_run=False):
 
     changes = 0
     # Only remove extras in EP11-50, non-milestone
-    if ep_num not in MILESTONES:
+    if ep_num not in DRIVER_BUDGET_PEAK_EPS:
         # Pattern: lone "Bác tài liếc gương\..*\"Đêm thứ.*?\"" outside CLIFFHANGER
         # Remove these foreshadow lines that em accidentally placed outside CLIFFHANGER
         pattern = re.compile(

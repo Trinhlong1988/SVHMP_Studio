@@ -19,6 +19,9 @@ from itertools import combinations
 
 sys.stdout.reconfigure(encoding='utf-8') if hasattr(sys.stdout, 'reconfigure') else None
 
+sys.path.insert(0, str(Path(__file__).parent))
+from milestones import MILESTONE_EPS  # single source (see tools/milestones.py)
+
 SVHMP = Path(__file__).resolve().parents[1]
 
 # ============================================================
@@ -40,8 +43,6 @@ NEVER_SCARE = ['BÙM!', 'tiếng hét chói tai', 'tiếng đập cửa đột n
 NEVER_EXORCISM = ['thầy cúng', 'pháp sư', 'lễ trừ tà', 'bài kinh xua đuổi']
 
 DEATH_CONTEXT_WORDS = ['mất', 'chết', 'đã đi', 'qua đời', 'tang', 'quan tài']
-
-MILESTONE_EPS = {1, 10, 20, 30, 40, 50, 60, 70, 73, 80, 90}
 
 # Literary/horror dimensions
 SENSORY_WORDS = ['mưa', 'gió', 'đèn', 'tiếng', 'ánh', 'mùi', 'lạnh', 'ấm', 'tối', 'sáng']
