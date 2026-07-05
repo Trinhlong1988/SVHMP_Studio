@@ -3827,10 +3827,9 @@ passengers:
   status: draft
   life_status: song
   life_status_note: 'Nhân vật CÒN SỐNG thật, "người đời thực được phép lên xe qua giấc mơ" (episode.md tự khai dòng 198) —
-    entity_class=nguoi. CANH BAO CONTINUITY (dung cham nhan vat chinh da khoa): Hạ Nhi la CHỊ GÁI RUỘT của Hạ Vy (bible/27
-    fact_db nhan vat chinh, EP01 golden) — quan he nay episode.md tu khai truc tiep ("Người chị gái Hạ Vy", dòng 74), KHÔNG
-    phải tôi suy diễn. Mr.Long xem lại xác nhận quan hệ này trước khi lock chính thức (per quy trình canh bao continuity
-    giong PAS_0137/PAS_0141).'
+    entity_class=nguoi. Hạ Nhi là CHỊ GÁI RUỘT của Hạ Vy (bible/27 fact_db nhân vật chính, EP01 golden) — quan hệ này
+    episode.md tự khai trực tiếp ("Người chị gái Hạ Vy", dòng 74). Mr.Long ĐÃ XÁC NHẬN đúng canon 2026-07-05 (per quy
+    trình continuity giống PAS_0137/PAS_0141) — cảnh báo cũ đã GỠ.'
   voice:
     region_dialect: bac
     hometown: Hải Phòng
