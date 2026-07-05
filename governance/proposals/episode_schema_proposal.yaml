@@ -25,10 +25,10 @@
 # ============================================================
 
 version: 1.0
-proposal_status: PENDING
+proposal_status: APPROVED
 writer_of_record: mr_long
-mr_long_decision: PENDING
-decision_date: null
+mr_long_decision: APPROVED_B
+decision_date: "2026-07-05 (Mr.Long chon phuong an B: duyet huong chinh + yeu cau bo sung ngoai le bell_count/driver_lines cho ep73/90 - kiem duyet da field-hoa dung ngoai le that theo bible/00+bible/09, xem PHAN BIEN #2 phat hien phu ve mau thuan 2 nguon bible)"
 
 # ------------------------------------------------------------
 # VI SAO CAN FILE NAY (tra loi truoc khi hoi "co can khong") — PHAN BIEN #1
@@ -67,9 +67,9 @@ schema_draft:
       signature_setting: {type: string, required: true, desc: "Tro bible/13_setting_library.yaml"}
       stop_location: {type: string, required: true}
       word_count_target: {type: int, required: true, default: 2300, range: [2000, 2700], desc: "R39 hard_floor/hard_ceiling"}
-      bell_count: {type: int, required: true, const: 1, desc: "SERIES_RULES.bell HARD MAX - trong ep thuong; ep 73/90 co ngoai le rieng theo bible/18, schema nay KHONG the hien ngoai le do (thuoc pham vi driver_reveal_budget)"}
-      ghost_manifest: {type: int, required: true, const: 1, desc: "SERIES_RULES.ghost_visual HARD MAX"}
-      driver_lines: {type: int, required: true, default: 2, desc: "'Con da nho ra chua?' + 'Chua toi luc.' - TRU ep milestone hoac [73,90] (bible/18 special_rules)"}
+      bell_count: {type: int, required: true, default: 1, allowed_values: [1, 2], desc: "bible/00 constitution 'bell_count==1' la target chinh; bible/09_emotion_intensity.yaml dong 59 cho phep 'bell co the double (ep 73 PIVOT)' - 2 CHI hop le tai ep_number==73, moi ep khac PHAI ==1"}
+      ghost_manifest: {type: int, required: true, const: 1, desc: "SERIES_RULES.ghost_visual HARD MAX - da ra soat bible/00/09/18, KHONG tim thay ngoai le nao cho field nay (khac bell_count/driver_lines) - giu const 1 tuyet doi"}
+      driver_lines: {type: int, required: true, default: 2, allowed_values: [2, 3], desc: "'Con da nho ra chua?' + 'Chua toi luc.' (2 dong mac dinh). Ngoai le PHAI ==3 khi ep_number in [73,90] HOAC milestone==true (bible/00 post_render_gate + scaffold.md dong 34, ep73 co them cau thu 3 'Toi roi day, Nam.' theo bible/18)"}
       hand_crafted: {type: bool, required: true, desc: "false cho output G7 tu dong sinh (phan biet voi 50 tap cu hand_crafted:true)"}
 
   episode_sections:
@@ -114,6 +114,16 @@ schema_draft:
 # giong het logic cu ma khong doc lai post_render_gate.py truoc, se de bi viet lai kem hon ban
 # goc. RANG BUOC bat buoc cho nguoi build enforcer sau nay: DOC HET tools/post_render_gate.py
 # truoc, TAI SU DUNG ham kiem tra da co (import, khong copy-paste logic) neu kien truc cho phep.
+#
+# PHAT HIEN PHU (5/7, sua sau khi Boss chon huong B) — luu y rieng ve bell_count/driver_lines:
+# bible/00_constitution.yaml dong metadata "bell_count == 1" (hard, khong ghi ngoai le) nhung
+# bible/09_emotion_intensity.yaml dong 59 lai cho phep "bell co the double (ep 73 PIVOT)" - 2
+# nguon bible MAU THUAN NHAU ve dieu kien nay. Code THAT (tools/post_render_gate.py dong 87-92)
+# hien dang long hon ca 2 nguon tren: chi kiem bell_count>=1 (khong phai ==1 tuyet doi), nen
+# ngoai le ep73 khong thuc su gay FAIL trong thuc te. Kiem duyet CHUA tu y sua bible/00 hay
+# bible/09 (immutable, can Mr.Long) - schema nay chi field-hoa dung gia tri {1,2} de generator
+# tuong lai KHONG bi chan sai o ep73, va ghi lai mau thuan nay de Mr.Long biet (khong phai loi
+# moi phat sinh tu de xuat nay, da ton tai san trong bible truoc do).
 # ------------------------------------------------------------
 
 enforcer_planned:
@@ -125,10 +135,11 @@ enforcer_planned:
 # ------------------------------------------------------------
 # PHAN BIEN #3 — rui ro con lai neu duyet nguyen van
 # ------------------------------------------------------------
-# 1. 50 tap cu (ep_01-50) KHONG khop schema nay 100% (vd milestone/bell_count ngoai le o ep73/90
-#    chua the hien du trong schema) - neu ai do sau nay dung schema nay de "audit nguoc" 50 tap
-#    cu se ra FAIL sai (khong phai loi tap cu, la gioi han pham vi schema). Phai ghi ro schema
-#    nay CHI ap cho output MOI cua generator (G7), khong ap nguoc.
+# 1. 50 tap cu (ep_01-50) KHONG khop schema nay 100% (da field-hoa ngoai le bell_count/driver_lines
+#    o ep73/90 dung ban sua B, nhung con nhieu diem khac chua ra soat het) - neu ai do sau nay
+#    dung schema nay de "audit nguoc" 50 tap cu se ra FAIL sai (khong phai loi tap cu, la gioi
+#    han pham vi schema). Phai ghi ro schema nay CHI ap cho output MOI cua generator (G7), khong
+#    ap nguoc.
 # 2. object_sub_arc/callback_target fields hien mo ta "kieu enum + string tu do" - chua co
 #    danh sach dong closed-set cho "type" ngoai 3 gia tri da liet - neu sau nay can them kieu
 #    sub-arc moi, day la diem se can RFC (khong tu y them trong enforcer).
