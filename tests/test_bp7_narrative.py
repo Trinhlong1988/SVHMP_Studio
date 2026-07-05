@@ -101,11 +101,13 @@ def test_mut_missing_episode_level_bites():
 
 
 def test_mut_planned_missing_metadata_bites():
+    # G6b (5/7): level 'scene' da flip planned->exists (schema field-hoa that) - dung level
+    # 'act' thay the (level DUY NHAT con planned that su, xem bp7/story_structure.yaml note).
     s = _mut_structure()
-    scene = next(lv for lv in s['levels'] if lv['level_id'] == 'scene')
-    del scene['sot']['blocking_dependency']
+    act = next(lv for lv in s['levels'] if lv['level_id'] == 'act')
+    del act['sot']['blocking_dependency']
     errs = check_story_structure(s, BIBLE01)
-    assert any('scene' in e and 'blocking_dependency' in e for e in errs), errs
+    assert any('act' in e and 'blocking_dependency' in e for e in errs), errs
 
 
 def test_mut_sot_phantom_path_bites():

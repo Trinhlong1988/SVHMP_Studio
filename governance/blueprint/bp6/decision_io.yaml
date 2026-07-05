@@ -12,17 +12,14 @@ meta:
 
 # ------------------------------------------------------------
 # INPUT — YEU CAU doi voi story plan (KHONG dinh nghia ho schema story_planner:
-# schema do la planned cua story_planner tai BP2; day chi la REQUIREMENT
+# schema do la cua story_planner tai BP2; day chi la REQUIREMENT
 # decision_engine doc nhung field nao tu plan)
 # ------------------------------------------------------------
 input:
   source_schema:
-    status: planned
-    planned_path: governance/blueprint/schemas/story_plan_schema.yaml
+    status: exists
+    path: governance/blueprint/schemas/story_plan_schema.yaml   # G6b (5/7): field-hoa xong (APPROVED_A, commit 9f5ccbd)
     owner: story_planner            # SoT cua story_planner (BP2 scene_act_structure) — bp6 CHI tham chieu
-    reason_not_exists_yet: "Cau truc plan chua field-hoa (BP2 khai planned, M2)"
-    target_milestone: M2_planner_generator
-    blocking_dependency: "Mr.Long duyet format ke hoach"
   required_fields_from_plan:        # decision_engine DOC (read-only theo BP3 dep dec->planner)
     - {field: ep_number, why: "dinh danh tap"}
     - {field: scenes, why: "danh sach scene_id + scene_function (SCENE own — BP2b) de gan knob per-scene"}

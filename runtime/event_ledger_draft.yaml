@@ -518,7 +518,7 @@ events:
         ep: 12
         line: 40
       passenger_main:
-        value: nu 36 Vy An Long Biên (chia tay anh Khôi cầu Long Biên)
+        value: nu 36 Huyền Trâm Long Biên (chia tay anh Khôi cầu Long Biên)
         ep: 12
         line: 38
       stop_location:
@@ -581,7 +581,7 @@ events:
         ep: 13
         line: 40
       passenger_main:
-        value: nam 45 Bình Mỹ Đức (bố ung thư phổi hai năm trước)
+        value: nam 45 Chương Dương Đức (bố ung thư phổi hai năm trước)
         ep: 13
         line: 38
       stop_location:
@@ -639,7 +639,7 @@ events:
         ep: 14
         line: 40
       passenger_main:
-        value: nu 56 Tâm Đan Chương Mỹ (từ chối cụ Mai bát phở 30 năm trước)
+        value: nu 56 Thắm Hường Chương Mỹ (từ chối cụ Mai bát phở 30 năm trước)
         ep: 14
         line: 38
       stop_location:
@@ -697,7 +697,7 @@ events:
         ep: 15
         line: 40
       passenger_main:
-        value: nam 31 Phong Hoài Đức (định tự tử mười năm trước — gương vỡ cứu)
+        value: nam 31 Duy Khiêm Đức (định tự tử mười năm trước — gương vỡ cứu)
         ep: 15
         line: 38
       stop_location:
@@ -775,7 +775,7 @@ events:
         ep: 16
         line: 40
       passenger_main:
-        value: nu 38 Hoàng Yến Hà Đông (cãi mẹ chuyện chồng — mẹ mất sau một tháng)
+        value: nu 38 Oanh Duyên Hà Đông (cãi mẹ chuyện chồng — mẹ mất sau một tháng)
         ep: 16
         line: 38
       stop_location:
@@ -843,7 +843,7 @@ events:
         ep: 17
         line: 40
       passenger_main:
-        value: nam 42 Hữu Tài Sóc Sơn (bạn thân nhờ vay tiền chữa ung thư — không kịp về)
+        value: nam 42 Thạch Vượng Sóc Sơn (bạn thân nhờ vay tiền chữa ung thư — không kịp về)
         ep: 17
         line: 38
       stop_location:
@@ -896,7 +896,7 @@ events:
         ep: 18
         line: 40
       passenger_main:
-        value: nu 28 Linh Trang Hà Nội (chia tay anh Khang vì mẹ ép — anh tự tử sau)
+        value: nu 28 Nhã Miên Hà Nội (chia tay anh Khang vì mẹ ép — anh tự tử sau)
         ep: 18
         line: 38
       stop_location:
@@ -944,7 +944,7 @@ events:
         ep: 19
         line: 40
       passenger_main:
-        value: nu 50 Bích Hoa Đông Anh (ngại đi tang bạn — bạn chết cô đơn)
+        value: nu 50 Nhàn Thục Đông Anh (ngại đi tang bạn — bạn chết cô đơn)
         ep: 19
         line: 38
       stop_location:
@@ -997,7 +997,7 @@ events:
         ep: 20
         line: 40
       passenger_main:
-        value: nam 27 Nhật Minh Cầu Giấy (cảm giác mất chính mình — quên người yêu vì sự nghiệp)
+        value: nam 27 Vĩ Huân Cầu Giấy (cảm giác mất chính mình — quên người yêu vì sự nghiệp)
         ep: 20
         line: 38
       stop_location:
@@ -1045,7 +1045,7 @@ events:
         ep: 21
         line: 40
       passenger_main:
-        value: nam 50 Trọng Nhân Nam Định (mẹ chết khi sinh — không có ảnh)
+        value: nam 50 Tân Chiến Nam Định (mẹ chết khi sinh — không có ảnh)
         ep: 21
         line: 38
       stop_location:
@@ -1123,7 +1123,7 @@ events:
         ep: 22
         line: 40
       passenger_main:
-        value: nu 35 Quỳnh Mai Bắc Ninh (hứa với thầy đại học sẽ về thăm — mười năm)
+        value: nu 35 Tuyền Ngần Bắc Ninh (hứa với thầy đại học sẽ về thăm — mười năm)
         ep: 22
         line: 38
       stop_location:
@@ -1186,7 +1186,7 @@ events:
         ep: 23
         line: 40
       passenger_main:
-        value: nam 45 Đức Vinh Hải Phòng (yêu thư ký hai mươi năm không tỏ tình)
+        value: nam 45 Lợi Lĩnh Hải Phòng (yêu thư ký hai mươi năm không tỏ tình)
         ep: 23
         line: 38
       stop_location:
@@ -1259,7 +1259,7 @@ events:
         ep: 24
         line: 40
       passenger_main:
-        value: nu 60 Hồng Liên Hà Nam (từ chối đỡ học cháu chị họ — cháu chết trẻ)
+        value: nu 60 Xuyến Nhài Hà Nam (từ chối đỡ học cháu chị họ — cháu chết trẻ)
         ep: 24
         line: 38
       stop_location:
@@ -1342,7 +1342,7 @@ events:
         ep: 25
         line: 40
       passenger_main:
-        value: nam 38 Văn Quân Thái Nguyên (ung thư phổi 36 tuổi — phẫu thuật cắt phổi)
+        value: nam 38 Danh Hiển Thái Nguyên (ung thư phổi 36 tuổi — phẫu thuật cắt phổi)
         ep: 25
         line: 38
       stop_location:
@@ -1443,7 +1443,7 @@ events:
         ep: 26
         line: 40
       passenger_main:
-        value: nam 38 Đức Hùng Hà Nội (bố KTS mất — con ngại học theo)
+        value: nam 38 Thế Quyết Hà Nội (bố KTS mất — con ngại học theo)
         ep: 26
         line: 38
       stop_location:
@@ -1516,7 +1516,7 @@ events:
         ep: 27
         line: 40
       passenger_main:
-        value: nu 45 Mỹ Linh Sài Gòn (hứa với bạn tiểu học giúp chữa bệnh — đi nước ngoài quên)
+        value: nu 45 Kiều Thương Sài Gòn (hứa với bạn tiểu học giúp chữa bệnh — đi nước ngoài quên)
         ep: 27
         line: 38
       stop_location:
@@ -1574,7 +1574,7 @@ events:
         ep: 28
         line: 40
       passenger_main:
-        value: nam 55 Hữu Lộc Hà Tĩnh (ly hôn vợ 30 năm trước — vợ vừa mất)
+        value: nam 55 Đàn Luân Hà Tĩnh (ly hôn vợ 30 năm trước — vợ vừa mất)
         ep: 28
         line: 38
       stop_location:
@@ -1652,7 +1652,7 @@ events:
         ep: 29
         line: 40
       passenger_main:
-        value: nu 28 Linh Đan Đà Nẵng (từ chối hiến máu cho bạn cùng phòng 2017 — bạn chết)
+        value: nu 28 Ý Thơ Đà Nẵng (từ chối hiến máu cho bạn cùng phòng 2017 — bạn chết)
         ep: 29
         line: 38
       stop_location:
@@ -1783,7 +1783,7 @@ events:
         ep: 31
         line: 40
       passenger_main:
-        value: nu 55 Thanh Vân Hưng Yên (mẹ mất tháng tư mười ba năm trước - đem cúc mỗi tháng)
+        value: nu 55 Khuê Diệp Hưng Yên (mẹ mất tháng tư mười ba năm trước - đem cúc mỗi tháng)
         ep: 31
         line: 38
       stop_location:
@@ -1836,7 +1836,7 @@ events:
         ep: 32
         line: 40
       passenger_main:
-        value: nam 40 Phan Tâm Bắc Giang (vợ chết đột ngột tháng tư - chăn may dở)
+        value: nam 40 Cần Kiên Bắc Giang (vợ chết đột ngột tháng tư - chăn may dở)
         ep: 32
         line: 38
       stop_location:
@@ -1884,7 +1884,7 @@ events:
         ep: 33
         line: 40
       passenger_main:
-        value: nu 38 Hoài An Hà Nội (hứa đưa bạn quê đi tàu điện - bạn chết trước kịp)
+        value: nu 38 Xuân Uyên Hà Nội (hứa đưa bạn quê đi tàu điện - bạn chết trước kịp)
         ep: 33
         line: 38
       stop_location:
@@ -1937,7 +1937,7 @@ events:
         ep: 34
         line: 40
       passenger_main:
-        value: nam 50 Văn Tuấn Vĩnh Phúc (không thắp hương cho hàng xóm cũ - bác mất mười năm)
+        value: nam 50 Nghị Đôn Vĩnh Phúc (không thắp hương cho hàng xóm cũ - bác mất mười năm)
         ep: 34
         line: 38
       stop_location:
@@ -2000,7 +2000,7 @@ events:
         ep: 35
         line: 40
       passenger_main:
-        value: nam 28 Trí Hưng Nghệ An (định tự tử hai năm trước - mảnh gương cứu - tương tự EP15 Phong + EP25 Van Quan)
+        value: nam 28 Kỳ Bách Nghệ An (định tự tử hai năm trước - mảnh gương cứu - tương tự EP15 Phong + EP25 Van Quan)
         ep: 35
         line: 38
       stop_location:
@@ -2058,7 +2058,7 @@ events:
         ep: 36
         line: 40
       passenger_main:
-        value: nam 48 Văn Khải Lào Cai (em gái mất tai nạn xe — em đã có người yêu Khải Phong không biết)
+        value: nam 48 Thuần Vạn Lào Cai (em gái mất tai nạn xe — em đã có người yêu Khải Phong không biết)
         ep: 36
         line: 38
       stop_location:
@@ -2121,7 +2121,7 @@ events:
         ep: 37
         line: 40
       passenger_main:
-        value: nu 32 Mỹ Hạnh Hà Nội (vợ chồng đi xe máy phố Huế - chồng mất tai nạn)
+        value: nu 32 Sen Lụa Hà Nội (vợ chồng đi xe máy phố Huế - chồng mất tai nạn)
         ep: 37
         line: 38
       stop_location:
@@ -2174,7 +2174,7 @@ events:
         ep: 38
         line: 40
       passenger_main:
-        value: nam 35 Đức Anh Quảng Ninh (hứa tặng quà sinh nhật 18 cho bạn cấp 3 — bạn chết trước sinh nhật)
+        value: nam 35 Tráng Doãn Quảng Ninh (hứa tặng quà sinh nhật 18 cho bạn cấp 3 — bạn chết trước sinh nhật)
         ep: 38
         line: 38
       stop_location:
@@ -2257,7 +2257,7 @@ events:
         ep: 39
         line: 40
       passenger_main:
-        value: nu 55 Hồng Mai Quảng Bình (không đem cơm cho hàng xóm già — bà chết đói trước nhà)
+        value: nu 55 Đoan Cầm Quảng Bình (không đem cơm cho hàng xóm già — bà chết đói trước nhà)
         ep: 39
         line: 38
       stop_location:
@@ -2330,8 +2330,7 @@ events:
         ep: 40
         line: 40
       passenger_main:
-        value: nam 28 Trung Hậu Hà Nội (anh Hải - chính anh Hải gọi cấp cứu Hạ Vy tám năm trước - đêm này lên xe gặp Khải
-          Phong)
+        value: nam 28 Lãm Chấn Hà Nội (anh Hải - chính anh Hải gọi cấp cứu Hạ Vy tám năm trước - đêm này lên xe gặp Khải Phong)
         ep: 40
         line: 38
       stop_location:
@@ -2389,7 +2388,7 @@ events:
         ep: 41
         line: 40
       passenger_main:
-        value: nu 32 Bích Trâm Bình Định (con gái mất bệnh - không kịp gửi tin cuối cho mẹ)
+        value: nu 32 Nhụy Lài Bình Định (con gái mất bệnh - không kịp gửi tin cuối cho mẹ)
         ep: 41
         line: 38
       stop_location:
@@ -2452,7 +2451,7 @@ events:
         ep: 42
         line: 40
       passenger_main:
-        value: nam 42 Hoàng Nam Bến Tre (vợ mất tai nạn xe - nhẫn cưới còn trên tay)
+        value: nam 42 Ba Bảy Bến Tre (vợ mất tai nạn xe - nhẫn cưới còn trên tay)
         ep: 42
         line: 38
       stop_location:
@@ -2515,7 +2514,7 @@ events:
         ep: 43
         line: 40
       passenger_main:
-        value: nam 50 Văn Trường Bình Phước (hứa cưới khi bạn đi nghĩa vụ về - bạn không về)
+        value: nam 50 Chín Được Bình Phước (hứa cưới khi bạn đi nghĩa vụ về - bạn không về)
         ep: 43
         line: 38
       stop_location:
@@ -2568,7 +2567,7 @@ events:
         ep: 44
         line: 42
       passenger_main:
-        value: nu 52 Phượng Liên Đắk Lắk (không đem khúc chè cho hàng xóm bệnh - bà mất)
+        value: nu 52 Gấm Mận Đắk Lắk (không đem khúc chè cho hàng xóm bệnh - bà mất)
         ep: 44
         line: 40
       stop_location:
@@ -2636,7 +2635,7 @@ events:
         ep: 45
         line: 40
       passenger_main:
-        value: nam 30 Mạnh Hiếu Bắc Ninh (định tự tử sau tốt nghiệp - gương cứu - echo EP15+EP25+EP35)
+        value: nam 30 Triều Quảng Bắc Ninh (định tự tử sau tốt nghiệp - gương cứu - echo EP15+EP25+EP35)
         ep: 45
         line: 38
       stop_location:
@@ -2699,7 +2698,7 @@ events:
         ep: 46
         line: 40
       passenger_main:
-        value: nu 68 Bà Hảo Thái Bình (hứa đem cháu nội đi biển - cháu chết trước)
+        value: nu 68 Xoan Nụ Thái Bình (hứa đem cháu nội đi biển - cháu chết trước)
         ep: 46
         line: 38
       stop_location:
@@ -2772,7 +2771,7 @@ events:
         ep: 47
         line: 40
       passenger_main:
-        value: nu 30 Thanh Nga Hà Nội (vé máy bay đi du học - chồng chết trước ngày đi)
+        value: nu 30 Đài Ngà Hà Nội (vé máy bay đi du học - chồng chết trước ngày đi)
         ep: 47
         line: 38
       stop_location:
@@ -2840,7 +2839,7 @@ events:
         ep: 48
         line: 40
       passenger_main:
-        value: nam 38 Hữu Duy Cần Thơ (hứa tặng guitar bạn cấp ba - quên hai mươi năm - bạn chết bệnh)
+        value: nam 38 Thiệt Lành Cần Thơ (hứa tặng guitar bạn cấp ba - quên hai mươi năm - bạn chết bệnh)
         ep: 48
         line: 38
       stop_location:
@@ -2903,7 +2902,7 @@ events:
         ep: 49
         line: 40
       passenger_main:
-        value: nu 42 Phương Linh Sóc Trăng (đỡ cô gái mưa - cô gái sau tự tử do em không tiếp tục giúp)
+        value: nu 42 Sáu Mến Sóc Trăng (đỡ cô gái mưa - cô gái sau tự tử do em không tiếp tục giúp)
         ep: 49
         line: 38
       stop_location:
