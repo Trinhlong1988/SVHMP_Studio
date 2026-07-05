@@ -276,6 +276,50 @@ domains:
     promotion_status: locked
     reconcile: "naming ← bible/23 (KHÔNG sinh lại tên); regret ← bible/11 (lock 32/24/20/14/10)"
 
+  dialogue:
+    tier: 2
+    responsibility: >
+      D6 (TASK_G3_DIALOGUE.md): sinh cau thoai ung vien (generator, lop CORE orchestration
+      mong) dung dung voice profile da khai (region/xung ho/tuoi/tu cam) — KHONG tu bia quy
+      tac ngon ngu moi (R211).
+    manager: tools/dialogue_manager.py
+    generator: tools/dialogue_generator.py
+    validators_cross_reference: >
+      4 tool audit/validate dialect + pronoun-hierarchy(R48) + driver-context(R174) +
+      speaker-identity(R191) — dialog_voice_validator.py, audit_dialogue_hierarchy.py,
+      audit_driver_dialogue_context.py, qa_dialogue_identity.py — VAN thuoc so huu domain
+      character/text_qa (KHONG chuyen ownership, can Mr.Long duyet truoc). Domain dialogue
+      CHI import + goi lai qua tools/dialogue_generator.py/dialogue_manager.py (R211), khong
+      so huu/khong sua truc tiep 4 file nay.
+    source_of_truth_note: >
+      DOC (khong so huu) bible/37_character_schema.yaml#tier_1_mandatory.voice — domain
+      character la SoT that; dialogue doc qua tools/character_manager.CharacterRegistry
+      (khong doc YAML lan 2 — D2 phuong an A, g3_manager_decision_proposal.yaml APPROVED_A).
+    tests:
+      - tests/test_g3_dialogue.py
+      - tests/test_g3_dialogue_confusion.py
+    gate: tools/g3_dialogue_check.py
+    age_slang_test_cross_reference: >
+      tests/test_dialogue_appropriateness_1000_r208.py (dang ky duoi domain character o
+      tren) do HANH VI VALIDATOR NOI BO (dialog_voice_validator.validate() + MODERN_SLANG,
+      age-slang ONLY, 1000 case, da wired ci_gate R208_age). tests/test_g3_dialogue_
+      confusion.py (D5, domain nay) do HANH VI GENERATOR (tools/dialogue_generator.py) tren
+      nhieu lat cat khac (Tier1-completeness/hometown-region-mismatch/forbidden-word/
+      dialect-leak/pronoun-ambiguity) — 2 confusion-test nay DOC LAP PHAM VI, khong do trung
+      1 lat cat ma khong biet nhau (skeptic-1, PHAN BIEN #5 / GAP THAT #4 TASK_G3_DIALOGUE.md).
+    data_contract:
+      input: "character_id + scene_context dict (nhan tu ngoai — KHONG tu tinh ratio thoai/narration, PHAN BIEN #9)"
+      output: "1 cau thoai ung vien (status OK) hoac REFUSED/Tier1IncompleteError"
+      exit: "0/1"
+    promotion_status: draft
+    dependencies_note: >
+      dep__dialogue__character, dep__dialogue__culture (BP3 goc) + dep__dialogue__world
+      (D1B Phan A APPROVED 5/7, dialogue/layer3/narrative depend world/layer1/narrative —
+      hop le ca layer-so lan nhom). KHONG dep__dialogue__audio (D1B Phan B: VI PHAM KIEN
+      TRUC THAT — dialogue/narrative khong duoc phep depend audio/layer9/presentation theo
+      bp1/layer_contracts.yaml — xem governance/proposals/g3_bp3_dependency_gap_proposal.yaml
+      Phan B, mr_long_decision con PENDING cho phan nay).
+
   naming:
     tier: 1
     source_of_truth:

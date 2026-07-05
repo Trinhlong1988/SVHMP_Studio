@@ -1,0 +1,167 @@
+version: 1.0
+status: draft
+meta:
+  task: TASK_G3_DIALOGUE.md D8
+  note: 10-15 cau do tools/dialogue_generator.py sinh THAT cho passenger co san trong runtime/passenger_roster_100.yaml,
+    da vung theo bible/37#balance_targets.region_dialect_spread (bac/trung/nam - roster that chi co 3
+    vung, tay/do_thi chua co du lieu that trong roster). De Mr.Long duyet chat luong truoc khi chay generator
+    dien rong.
+  region_count: 3
+  total: 15
+samples:
+- character_id: PAS_0013
+  char_name: Hạ Diệu
+  region_dialect: bac
+  hometown: Hà Nội
+  scene_context: &id001
+    emotion_beat: nhớ nhà đã lâu
+    listener_call: Mẹ ơi
+  status: OK
+  line: Tôi Mẹ ơi nhớ nhà đã lâu nhỉ.
+  verdicts:
+    dialog_voice_validator: PASS
+    audit_dialogue_hierarchy_pronoun: PASS
+- character_id: PAS_0016
+  char_name: Tuấn Quốc
+  region_dialect: bac
+  hometown: Bắc Ninh
+  scene_context: &id002
+    emotion_beat: ân hận vì chưa kịp nói lời xin lỗi
+    listener_call: Con
+  status: OK
+  line: Tôi Con ân hận vì chưa kịp nói lời xin lỗi nhỉ.
+  verdicts:
+    dialog_voice_validator: PASS
+    audit_dialogue_hierarchy_pronoun: PASS
+- character_id: PAS_0019
+  char_name: Hùng Kiệt
+  region_dialect: bac
+  hometown: Hải Phòng
+  scene_context: &id003
+    emotion_beat: mong được về nhà một lần cuối
+    listener_call: Nhà ơi
+  status: OK
+  line: Tôi Nhà ơi mong được về nhà một lần cuối nhỉ.
+  verdicts:
+    dialog_voice_validator: PASS
+    audit_dialogue_hierarchy_pronoun: PASS
+- character_id: PAS_0022
+  char_name: Châu Quỳnh
+  region_dialect: bac
+  hometown: Thái Bình
+  scene_context: *id001
+  status: OK
+  line: Tôi Mẹ ơi nhớ nhà đã lâu nhỉ.
+  verdicts:
+    dialog_voice_validator: PASS
+    audit_dialogue_hierarchy_pronoun: PASS
+- character_id: PAS_0025
+  char_name: Cúc Trúc
+  region_dialect: bac
+  hometown: Nam Định
+  scene_context: *id002
+  status: OK
+  line: Tôi Con ân hận vì chưa kịp nói lời xin lỗi nhỉ.
+  verdicts:
+    dialog_voice_validator: PASS
+    audit_dialogue_hierarchy_pronoun: PASS
+- character_id: PAS_0014
+  char_name: Hoàng Lâm
+  region_dialect: trung
+  hometown: Nghệ An
+  scene_context: *id003
+  status: OK
+  line: Tui Nhà ơi mong được về nhà một lần cuối rứa.
+  verdicts:
+    dialog_voice_validator: PASS
+    audit_dialogue_hierarchy_pronoun: PASS
+- character_id: PAS_0017
+  char_name: Nguyệt Hằng
+  region_dialect: trung
+  hometown: Quảng Bình
+  scene_context: *id001
+  status: OK
+  line: Tui Mẹ ơi nhớ nhà đã lâu rứa.
+  verdicts:
+    dialog_voice_validator: PASS
+    audit_dialogue_hierarchy_pronoun: PASS
+- character_id: PAS_0020
+  char_name: Phượng Ngọc
+  region_dialect: trung
+  hometown: Hà Tĩnh
+  scene_context: *id002
+  status: OK
+  line: Tui Con ân hận vì chưa kịp nói lời xin lỗi rứa.
+  verdicts:
+    dialog_voice_validator: PASS
+    audit_dialogue_hierarchy_pronoun: PASS
+- character_id: PAS_0023
+  char_name: Hữu Trí
+  region_dialect: trung
+  hometown: Huế
+  scene_context: *id003
+  status: OK
+  line: Tui Nhà ơi mong được về nhà một lần cuối rứa.
+  verdicts:
+    dialog_voice_validator: PASS
+    audit_dialogue_hierarchy_pronoun: PASS
+- character_id: PAS_0026
+  char_name: Triết Vinh
+  region_dialect: trung
+  hometown: Đà Nẵng
+  scene_context: *id001
+  status: OK
+  line: Tui Mẹ ơi nhớ nhà đã lâu rứa.
+  verdicts:
+    dialog_voice_validator: PASS
+    audit_dialogue_hierarchy_pronoun: PASS
+- character_id: PAS_0015
+  char_name: Diễm Tường
+  region_dialect: nam
+  hometown: Vũng Tàu
+  scene_context: *id002
+  status: OK
+  line: Con Con ân hận vì chưa kịp nói lời xin lỗi nghen.
+  verdicts:
+    dialog_voice_validator: PASS
+    audit_dialogue_hierarchy_pronoun: PASS
+- character_id: PAS_0018
+  char_name: Bảo Minh
+  region_dialect: nam
+  hometown: Biên Hòa
+  scene_context: *id003
+  status: OK
+  line: Con Nhà ơi mong được về nhà một lần cuối nghen.
+  verdicts:
+    dialog_voice_validator: PASS
+    audit_dialogue_hierarchy_pronoun: PASS
+- character_id: PAS_0021
+  char_name: Nguyên Việt
+  region_dialect: nam
+  hometown: Sài Gòn
+  scene_context: *id001
+  status: OK
+  line: Con Mẹ ơi nhớ nhà đã lâu nghen.
+  verdicts:
+    dialog_voice_validator: PASS
+    audit_dialogue_hierarchy_pronoun: PASS
+- character_id: PAS_0024
+  char_name: Tuyết Lan
+  region_dialect: nam
+  hometown: Hồ Chí Minh
+  scene_context: *id002
+  status: OK
+  line: Con Con ân hận vì chưa kịp nói lời xin lỗi nghen.
+  verdicts:
+    dialog_voice_validator: PASS
+    audit_dialogue_hierarchy_pronoun: PASS
+- character_id: PAS_0027
+  char_name: Liễu Đào
+  region_dialect: nam
+  hometown: Vũng Tàu
+  scene_context: *id003
+  status: OK
+  line: Con Nhà ơi mong được về nhà một lần cuối nghen.
+  verdicts:
+    dialog_voice_validator: PASS
+    audit_dialogue_hierarchy_pronoun: PASS
