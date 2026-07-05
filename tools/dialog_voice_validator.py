@@ -11,7 +11,10 @@ Du lieu phuong ngu = sociolinguistics that (khong suy luan).
 from __future__ import annotations
 import re
 import sys
+from pathlib import Path
 sys.stdout.reconfigure(encoding='utf-8') if hasattr(sys.stdout, 'reconfigure') else None
+sys.path.insert(0, str(Path(__file__).parent))
+from migrate_roster_v2 import HOME  # single-source map vung->que hop le (D1, per Mr.Long ky 5/7)
 
 # ── Bang phuong ngu (marker DAC TRUNG, dung de bat ro ri) ──
 REGIONS = {
@@ -41,13 +44,20 @@ EXCLUSIVE = {
     'tay':   {'qua', 'bậu', 'trời đất'},
 }
 
-# quehuong -> vung (map goc giong)
-HOMETOWN_REGION = {
-    'hà nội': 'bac', 'hải phòng': 'bac', 'nam định': 'bac', 'thái bình': 'bac', 'bắc ninh': 'bac',
-    'huế': 'trung', 'nghệ an': 'trung', 'hà tĩnh': 'trung', 'quảng bình': 'trung', 'quảng nam': 'trung', 'đà nẵng': 'trung',
-    'sài gòn': 'nam', 'tp.hcm': 'nam', 'hồ chí minh': 'nam', 'biên hòa': 'nam', 'vũng tàu': 'nam',
-    'bến tre': 'tay', 'cần thơ': 'tay', 'an giang': 'tay', 'cà mau': 'tay', 'đồng tháp': 'tay', 'vĩnh long': 'tay',
+# quehuong -> vung (D1 SSOT reconcile, per Mr.Long ky 5/7): suy nguoc tu HOME (migrate_roster_v2,
+# nguon that roster_validator.py dang dung cho C2 R210) — KHONG con hand-code rieng o day (truoc day
+# 'hải dương' co trong HOME['bac'] nhung THIEU o day -> false negative cam lang, da phat hien qua audit).
+HOMETOWN_REGION = {town.lower(): region for region, towns in HOME.items() for town in towns}
+
+# 2 vung dialogue can nhung HOME (character roster, chi 3 vung bac/trung/nam) chua co — giu lam hang so
+# PHU rieng cho dialogue, KHONG suy luan them que moi ngoai danh sach nay (TASK_G3_DIALOGUE.md D1).
+EXTRA_REGIONS_DIALOGUE_ONLY = {
+    'tay':   {'bến tre': 'tay', 'cần thơ': 'tay', 'an giang': 'tay', 'cà mau': 'tay',
+              'đồng tháp': 'tay', 'vĩnh long': 'tay'},
+    'do_thi': {},  # do_thi = giong khong gan 1 que cu the (dan nhap cu/gioi tre thanh thi), khong co bang que rieng
 }
+for _region, _towns in EXTRA_REGIONS_DIALOGUE_ONLY.items():
+    HOMETOWN_REGION.update(_towns)
 
 MANDATORY_VOICE = ('region_dialect', 'hometown', 'pronoun_system')  # dialogue-critical, PHAI co
 
