@@ -16,8 +16,8 @@
 #   - Chua ro PASS_WITH_WARNING (co trong next_action map orchestrator :224 nhung decision tree
 #     :174-201 KHONG thay gan gia tri nay — co the assign o nhanh khac chua doc / reserved). Ghi lai
 #     de Mr.Long biet, KHONG tu suy dien.
-#   - Chua doc het semantics preflight exit 2 (:32) — la usage-error hay content-block? Can xac nhan
-#     truoc khi map vao REVIEW_REQUIRED.
+#   - [RESOLVED 9/7, R9] preflight exit 2 (:31-32) = USAGE-ERROR (thieu arg spec.json), KHONG phai
+#     content-block. => KHONG map vao verdict enum (sua mapping duoi: exit_2 -> TOOLING_ERROR rieng).
 # ============================================================
 
 version: 1.0
@@ -86,7 +86,10 @@ schema_draft:
                VNQA 3-enum va preflight exit-code MAP VAO chuan nay."
     mapping_proposed:
       from_vnqa:   {PASS: PASS, WARN: PASS_WITH_WARNING, FAIL: REGEN}
-      from_preflight: {exit_0: PASS, exit_1: REGEN, exit_2: REVIEW_REQUIRED}   # exit_2 semantics CAN xac nhan (xem CHUA DOC HET)
+      # exit_2 XAC MINH 9/7 (R9, doc svhmp_preflight_qa.py:31-32): USAGE-ERROR (thieu arg spec.json),
+      # KHONG phai content verdict. => KHONG map vao verdict enum; surface la tooling_error rieng.
+      from_preflight: {exit_0: PASS, exit_1: REGEN}
+      from_preflight_non_verdict: {exit_2: TOOLING_ERROR}   # usage error, khong phai QA verdict tap
     common_envelope_fields:
       - verdict: {type: enum, values: [PASS, PASS_WITH_WARNING, REGEN, REVIEW_REQUIRED], required: true}
       - source: {type: enum, values: [orchestrator, vnqa, preflight], required: true, desc: "verdict den tu tang nao"}
