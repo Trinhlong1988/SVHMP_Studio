@@ -1,0 +1,166 @@
+# ============================================================
+# DE XUAT — bible/38_culture_bible.yaml (domain culture, planned theo blueprint_domains.yaml
+# dong 223-260 + facet bp7/cultural_spec.yaml: culture.xung_ho_convention + culture.le_gio_custom
+# + culture.kieng_ky_daily). File NAY KHONG dat trong bible/ (writer: [mr_long]). PROPOSAL.
+#
+# NGUON CAN CU (da doc truc tiep):
+#   DA DOC KY:
+#   - blueprint_domains.yaml dong 223-260 (culture: "phong tuc song nguoi Viet: gio/dinh/le/tap quan
+#     xung ho/kieng ky doi thuong"; non_responsibility "KHONG phai belief/ritual/supernatural — 4
+#     domain rieng, cam nuot nhau"; audit_rule "chi tiet phong tuc sai / xung ho trai tap quan vung
+#     = VIOLATION")
+#   - bp7/cultural_spec.yaml items xung_ho_convention + le_gio_custom + kieng_ky_daily (3 facet khai
+#     san — de xuat BAM, nhung xem PHAT HIEN #1: vi du facet lech canon that)
+#   - bp9/content_policy.yaml sensitivity_tiers (phan lon culture = low/medium; le Tet dan gian that
+#     nhac o muc khai quat co the = medium -> disclaimer)
+#   - MINE 50 file output/ep_*/episode.md (ep_01-50; ep_51-58 chi co template, KHONG co episode.md
+#     -> thuc te 50 tap truyen) bang grep + doi chieu NFC — citation nguyen van.
+#   CHUA DOC HET (trung thuc):
+#   - tools/culture_manager.py / culture_validator.py CHUA ton tai (planned).
+#   - archive_draft_v1_ep11_41/ (nhap cu) loai khoi canon.
+# ============================================================
+
+version: 1.0
+proposal_status: DRAFT
+writer_of_record: mr_long
+mr_long_decision: PENDING
+
+# ------------------------------------------------------------
+# VI SAO CAN FILE NAY
+# ------------------------------------------------------------
+# blueprint khai culture planned, blocking_dependency "Mr.Long duyet taxonomy phong tuc". Phong tuc
+# (nhat la Tet) da duoc viet DAY trong 50 tap nhung chua GOM thanh canon co cau truc + chua tach
+# ranh gioi voi supernatural (banh chung/ao dai luon gan bong ma). Taxonomy nay chuan hoa cai da co
+# de generator sinh nhat quan (audit_rule "phong tuc sai = VIOLATION"). KHONG mandate retrofit 50 tap cu.
+
+# ------------------------------------------------------------
+# PHAT HIEN #1 (quan trong nhat) — VI DU FACET bp7 LECH CANON THAT
+# ------------------------------------------------------------
+# bp7 khai le_gio_custom bang vi du "gio/le/dinh lang" va kieng_ky_daily "kieng ky doi thuong".
+# NHUNG mine 50 tap:
+#   - "gio/dam gio/ngay gio/mam co" = 0 canon; "dinh lang/hoi lang/thanh hoang/mieu" = 0
+#     ("dinh" chi la dia danh My Dinh); "le hoi" phan lon la ghep nham "nghi le"+"hoi".
+#   - kieng_ky_daily: "kieng/ky/via/dot via/diem go/dai ky" = 0 canon HOAN TOAN.
+#   - Nguoc lai: PHONG TUC TET (banh chung, li xi, giao thua/mung mot) = RAT NHIEU (dam nhat).
+# => Cai facet NEU (gio/dinh/kieng ky) gan nhu TRONG; cai canon THAT co (Tet, trang phuc le, cho)
+#    lai chua co ten facet rieng ro (Tet co the xem la 1 'le' duoi le_gio_custom). Can Mr.Long chot:
+#    ghi theo canon THAT (Tet la trung tam) hay giu khung facet rong (mo slot gio/dinh/kieng-ky).
+#    -> day la truc A/B, mirror dung tinh than belief_bible_proposal PHAT HIEN #1.
+
+# ------------------------------------------------------------
+# PHAT HIEN #2 — RANH GIOI culture vs supernatural manifestation (cam nuot)
+# ------------------------------------------------------------
+# Moi phong tuc Tet trong truyen deu gan hinh anh HON hien ve (me/ba ngoi goi banh, viet li xi,
+# khong quay dau). Phan "hon hien" = supernatural manifestation, KHONG gom vao culture. Culture chi
+# ghi TAP TUC (goi banh/viet li xi/chia hang xom/phat mung mot). Tuong tu ao dai: "ao me van mac dip
+# le Tet" = culture (dress-code le); "ao dai xanh cua hon khi hien" = supernatural attire. Taxonomy
+# PHAI tach 2 lop nay ro (non_responsibility blueprint: "cam nuot nhau").
+
+# ------------------------------------------------------------
+# CANON DA CO (mine — mat do that)
+# ------------------------------------------------------------
+canon_evidence:
+  phong_tuc_tet:
+    density: "RAT NHIEU (dam nhat, xuong song culture) — cum ep_02-10, rai them ep_19,24,26,27,34,46,50"
+    facet_map: "co the map duoi le_gio_custom nhu 1 'le' lon (Tet), du facet vi du neu 'gio/dinh'"
+    sub:
+      - goi_banh_chung: ["ep_06: 'cu tu xuong cho huyen mua la dong, gao nep, dau xanh, thit... Sau muoi nam roi cu goi banh chung dem hai tam.'", "ep_04: 'Me giu thoi quen goi banh chung — moi nam nam cap, chia cho hang xom.'"]
+      - li_xi_phong_bao: ["ep_04: 'Me tu viet phong bao li xi cho cac chau... Dinh ngay mung mot, con phat cho cac chau.'", "ep_07: 'ba muoi Tet con ve, dua me phong li xi co tien luong dau.'"]
+      - giao_thua_mung_mot: ["ep_03: 'Vao dem ba muoi thang Chap.'", "ep_02: 'Den nha luc bon gio sang mung mot.'"]
+    sensitivity: medium   # phong tuc Tet dan gian that, nhac khai quat -> disclaimer (bp9 medium)
+  trang_phuc_le_cuoi:
+    density: "VUA (tan suat cao nhung phai TACH khoi manifestation — xem PHAT HIEN #2)"
+    sub:
+      - dress_code_le_tet: ["ep_02: 'Me mac ao dai mau nau — cai ao me van mac dip le Tet.'", "ep_03: (lap) 'ao dai nau — cai ao me van mac dip le Tet.'"]
+      - ao_dai_co_dau: ["ep_50: 'Ao dai hong — phong cach ao dai co dau.'"]
+      - ao_ba_ba_mien: ["ep_46: 'Ao ba ba xam...', ep_19: 'Ao ba ba den...' (trang phuc truyen thong thuong nhat/mien)"]
+    sensitivity: low
+    boundary_note: "Da so 'ao dai mau X' la attire cua HON khi hien -> supernatural, khong gom. Chi cau 'ao me van mac dip le' moi la culture."
+  cho_muu_sinh_doi_thuong:
+    density: "VUA — cho nhu thiet che sinh hoat/muu sinh"
+    sub:
+      - ["ep_07: 'Me nuoi con va em bang nghe ban bun o cho huyen.'", "ep_14: 'Moi sang em di cho Long Bien mua do ve nau trua.'", "ep_28: 'anh di cho Kham Thien... mua ca loc tuoi — ve kho.'"]
+    sensitivity: low
+  xung_ho_ngam:
+    density: "PERVASIVE nhung NGAM (khong duoc dien giai nhu tap tuc)"
+    facet_map: "xung_ho_convention — CO canon (he bac/con/em/chu/cu) nhung latent trong thoai"
+    citations:
+      - "hanh khach goi tai xe 'bac', tu xung 'con'/'em': ep_04 'Con nho roi, bac.'; ep_09 'Em nho, bac.'"
+    audit_hook: "audit_rule blueprint: xung ho SAI vung/tuoi/vai ve = VIOLATION — facet nay CO the enforce du canon latent (khac gio/dinh/kieng-ky trong)"
+    sensitivity: low
+  cuoi_hoi_tap_tuc:
+    density: "MO NHAT (chi 1 cau mang mau tap tuc)"
+    citations:
+      - "ep_28: 'Dam cuoi lang — don gian — nhan vang nho — em mua o cho huyen.' (nep cuoi lang gian di)"
+    boundary_note: "ep_43 'cuoi ma / ban cuoi voi Mai' = am hon/supernatural, KHONG gom. ruoc dau/an hoi/dam ngo/thach cuoi/nap tai = 0 canon."
+    sensitivity: low
+  tang_ma_su_kien:
+    density: "NHIEU lan nhac nhung MO NHAT ve tap tuc (gan nhu chi la moc su kien)"
+    citations:
+      - "ep_34: 'Dam tang xa lang to chuc — vai nguoi hang xom — khong gia dinh.' (to chuc tang cong dong)"
+    boundary_note: "khan tang/de tang/chiu tang/dua tang/phat tang/cai tang/boc mo = 0 canon. 'chon theo nghi le' (ep_28/36/48) la nghi le Cong giao -> ritual/ton giao, khong phai phong tuc dan gian Viet."
+    sensitivity: low
+
+  # --- CAC TRUC bp7/blueprint NEU nhung 0 CANON (ghi trung thuc la trong) ---
+  facet_declared_but_empty:
+    gio_chap_co_ban: 0        # "gio/dam gio/ngay gio/mam co/an co" = 0
+    dinh_hoi_lang_mieu_thanh_hoang: 0
+    kieng_ky_daily_toan_bo: 0   # kieng chup anh 3 nguoi / quet nha mung 1 / via / diem go = 0
+    le_lang_huong_uoc: 0
+    trau_cau_thuoc_lao: 0
+    honest_note: "blueprint/bp7 neu 'gio/dinh/kieng-ky' nhu vi du culture nhung canon CHUA co gi. KHONG bia de lap."
+
+# ------------------------------------------------------------
+# TAXONOMY DRAFT — 2 PHUONG AN
+# ------------------------------------------------------------
+taxonomy_draft:
+
+  shared:
+    facet_binding:
+      xung_ho_convention: "he xung ho bac/con/em/chu/cu (CO canon latent — enforce duoc)"
+      le_gio_custom: "phong tuc le (Tet la trung tam CO canon; gio/dinh = declared-empty)"
+      kieng_ky_daily: "kieng ky doi thuong (0 canon — declared-empty)"
+    hard_constraints:
+      - "TACH culture vs supernatural manifestation (PHAT HIEN #2): culture chi ghi TAP TUC, khong ghi phan hon hien / attire cua hon (non_responsibility blueprint 'cam nuot nhau')."
+      - "TACH culture vs ritual: thap huong/cung/ban tho = ritual (bible/40), khong gom vao culture du xuat hien chung canh."
+      - "sensitivity: phong tuc Tet dan gian = medium (disclaimer bp9); con lai low. Neu tuong lai cham le ton giao co ten -> theo belief/ritual high."
+
+  phuong_an_A_canon_fit:
+    ten: "Ghi theo canon THAT: Tet la trung tam + 4 truc phu co canon, danh dau facet trong"
+    mo_ta: "Taxonomy gom: (1) phong tuc Tet [dam], (2) trang phuc le/cuoi [vua, tach manifestation],
+           (3) cho & nep muu sinh [vua], (4) xung ho ngam [latent, enforce duoc], (5) tang/cuoi [mo].
+           Cac truc gio/dinh-hoi-lang/kieng-ky danh dau EXPLICIT 'declared-but-empty, cho Mr.Long bo
+           sung neu muon'. KHONG dung khung phong tuc ma canon chua viet."
+    uu: "Trung thuc voi canon; khop chu dinh truyen (Tet-centric, khong dan trai le hoi); de enforce (nhat la xung ho)."
+    nhuoc: "Neu 90 tap sau muon them gio chap / hoi lang / kieng ky vung mien -> A phai mo RFC bo sung."
+  phuong_an_B_khung_rong:
+    ten: "Giu khung 3 facet bp7 day du (xung_ho + le_gio + kieng_ky) — danh dau co canon vs trong"
+    mo_ta: "Ngoai cac truc co canon, GIU slot gio_chap / dinh_hoi_lang / kieng_ky_daily o trang thai
+           PLANNED-EMPTY co cau truc san, de story_planner/generator 90 tap mo rong theo vung mien ma
+           khong lam lai schema. Slot empty CHI Mr.Long duoc dien (generator KHONG tu sinh phong tuc)."
+    uu: "Linh hoat cho series dai da vung mien; khung khop bp7 facet 1-1."
+    nhuoc: "Slot mo de bi generator lam day bang phong tuc bia (nhat la kieng-ky de sa vao me tin) —
+           can rule chat + audit; nhac bp9 neu cham me tin di doan."
+    van_CHUNG: "Ca A va B deu: (1) tach culture vs manifestation vs ritual; (2) Tet = medium sensitivity;
+                (3) enforce xung ho tu canon latent."
+
+# ------------------------------------------------------------
+# PHAM VI AP DUNG
+# ------------------------------------------------------------
+scope:
+  applies_to: "OUTPUT MOI cua generator G7"
+  does_not_mandate: "KHONG retrofit 50 tap cu (nguon mine). Regen sau moi ap."
+
+# ------------------------------------------------------------
+# DECISION REQUEST
+# ------------------------------------------------------------
+decision_request:
+  question: "culture bible ghi theo canon THAT (Tet-centric, hep) hay giu khung facet rong (mo slot gio/dinh/kieng-ky)?"
+  options:
+    A_canon_fit: "Duyet A (5 truc co canon + danh dau facet trong) — trung thuc nhat"
+    B_khung_rong: "Duyet B (giu khung 3 facet bp7, slot empty co cau truc)"
+    C_reject_redesign: "Khong dung huong — thiet ke lai"
+  con_can_mr_long_chot:
+    - "Tet map duoi le_gio_custom (nhu 1 'le') hay tach facet le_tet rieng?"
+    - "Co mo slot kieng_ky_daily (0 canon) khong — luu y de sa me tin di doan, can bp9 guard?"
+    - "xung_ho_convention: chot he chuan (hanh khach->tai xe = 'bac', tu xung 'con/em') lam canon enforce?"

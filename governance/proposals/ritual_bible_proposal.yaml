@@ -1,0 +1,161 @@
+# ============================================================
+# DE XUAT — bible/40_ritual_bible.yaml (domain ritual, planned theo blueprint_domains.yaml
+# dong 301-338 + facet bp7/cultural_spec.yaml: ritual.nghi_thuc_catalog + ritual.ritual_steps).
+# File NAY KHONG dat trong bible/ (writer: [mr_long]). PROPOSAL cho Mr.Long duyet.
+#
+# NGUON CAN CU (da doc truc tiep):
+#   DA DOC KY:
+#   - blueprint_domains.yaml dong 301-338 (ritual: "nghi thuc HANH VI cu the: cung/khan/dot vang/
+#     goi hon/tay ue"; non_responsibility KHONG phai belief/culture/supernatural; audit_rule
+#     "nghi thuc trong tap PHAI theo catalog; nghi thuc bia = VIOLATION")
+#   - bp7/cultural_spec.yaml items nghi_thuc_catalog + ritual_steps (2 facet da khai — de xuat nay
+#     BAM 2 facet do, KHONG bia facet moi — R211)
+#   - bible/00_constitution.yaml NEVER.exorcism: "KHONG co thay cung / phap su / le tru ta / bai
+#     kinh xua duoi" + rationale "Bac tai KHONG phai thuc the de tru" — RANG BUOC CUNG cho domain nay.
+#   - bp9/content_policy.yaml HB01 (no-actionable-ritual-detail) + sensitivity_tiers low/medium/high
+#     (LOCKED v1.0) — moi muc catalog PHAI gan sensitivity + tuan HB01.
+#   - MINE 51 file output/ep_*/episode.md (ep_01-50 + 1 sample) bang grep — citation duoi la nguyen van.
+#   CHUA DOC HET (trung thuc):
+#   - tools/ritual_manager.py / ritual_validator.py CHUA ton tai (planned) — de xuat chi lo NOI DUNG.
+#   - archive_draft_v1_ep11_41/ (ban nhap cu) KHONG tinh la canon phat hanh — chi doi chieu goc cong thuc.
+# ============================================================
+
+version: 1.0
+proposal_status: DRAFT
+writer_of_record: mr_long
+mr_long_decision: PENDING
+
+# ------------------------------------------------------------
+# VI SAO CAN FILE NAY
+# ------------------------------------------------------------
+# blueprint_domains khai ritual planned, blocking_dependency "Mr.Long duyet catalog nghi thuc +
+# muc chi tiet cho phep". Nghi thuc da duoc viet DAY trong 51 tap (thap huong/dat vat/quy/noi/
+# cui dau) nhung chua GOM thanh catalog + chua khai gioi han chi tiet (HB01). Taxonomy nay
+# chuan hoa cai da co de generator sinh nhat quan (audit_rule "nghi thuc bia = VIOLATION") VA
+# khoa cung ranh gioi voi NEVER.exorcism (canon 0/51 tap co phap thuat — xem PHAT HIEN #1).
+# KHONG mandate retrofit 51 tap cu — danh cho OUTPUT MOI cua G7.
+
+# ------------------------------------------------------------
+# PHAT HIEN #1 (tu MINE, quan trong nhat) — CANON CHI CO NGHI THUC TUONG NIEM, 0 PHAP THUAT
+# ------------------------------------------------------------
+# Grep chinh xac 51 tap: cac nghi thuc phap thuat/tam linh chu dong = VANG MAT HOAN TOAN (0 tap):
+#   thay cung, thay phap, phap su, co dong, len dong, tru ta, goi hon, cau co, ap vong,
+#   xin am duong/gieo que, boc mo, cai tang, lap dan, cau sieu, bua, vang ma, hoa vang,
+#   rai muoi gao, dot bo ket. (Cac hit grep tho deu false-positive: "dem"~"em", "len dong ho"~"len dong".)
+# => Day KHONG phai thieu sot — no KHOP TUYET DOI voi bible/00 NEVER.exorcism. Truyen co chu dinh
+#    khong dung phap thuat. Vi vay catalog ritual PHAI khai ro nhanh phap-thuat/tru-ta la FORBIDDEN
+#    (khong phai "chua co" ma la "cam theo hien phap"), tranh generator tuong lai tu them.
+# Cai THAT co: nghi thuc TUONG NIEM / TIEN BIET dan gian (thap huong, dat vat, quy, noi loi, cui dau).
+
+# ------------------------------------------------------------
+# CANON DA CO (mine — mat do that)
+# ------------------------------------------------------------
+canon_evidence:
+  thap_huong_vieng_mo:
+    density: "RAT NHIEU (pho bien nhat, gan nhu moi tap co canh ket) — gan moc lich ram thang 7/8, Tet"
+    citations:
+      - "ep_21: 'Moi ram thang tam — bo dem toi ra mo me — bo thap huong — khong noi. Toi quy ben bo.'"
+      - "ep_24: 'Moi ram thang bay em dem vo len mo Mai Anh — dat canh bia — thap huong — doc lai trang dau — ve.'"
+      - "ep_43: 'Em den dai tuong niem liet si... moi ram thang bay — em thap huong em Hung — em xin loi dem do.'"
+    sensitivity: low   # thap huong vieng mo = phong tuc pho quat, khong phai nghi thuc ton giao co ten rieng
+  dat_vat_quy_noi_cui_dau:
+    density: "NHIEU — NGHI THUC XUONG SONG cua series (moi tap 1 nhan vat thuc hien)"
+    trinh_tu_chuan: ["1. dem vat ky niem ve mo/ban tho", "2. dat vat len mo (giua bia) hoac ban tho", "3. quy", "4. noi loi (xin loi/hua/tien)", "5. cui dau"]
+    citations:
+      - "ep_11: 'Dat vong giua mo chi. Quy. Noi: Chi oi em dem vong ve... Cui dau.'"
+      - "ep_13: 'dem cuc kho ve... mo bo — dat len... Toi se quy. Noi: Bo oi con xin loi.'"
+      - "ep_48: 'em dat dan tren ban tho em. Bo me em om dan — khoc. Em xin loi muoi lam nam.'"
+    sensitivity: low
+  dot_huong_dot_tien:
+    density: "NHIEU, chi tiet nhat o ep_34 (mau chuan) — canon xac dinh '3 nen' la chuan"
+    citations:
+      - "ep_34: 'Chi thap huong... dat anh Ha Vy tren ban — thap ba nen.' (canon '3 nen')"
+      - "ep_34: 'Dot ca bo. Quy. Noi... Cam vao bia. Cui dau.' (trinh tu: dot -> cam huong vao bia -> cui dau)"
+      - "ep_18: 'Em se dot thu tren ban quan — nhu tro tien anh.'"
+      - "ep_05: 'nen dot ao cung chu khi chu di.' (moi o muc du tinh)"
+    sensitivity: low
+    hb01_note: "'3 nen huong' / 'dot thu tien' la kien thuc pho quat, KHONG phai huong dan phap thuat
+               tai tao duoc -> KHONG vi pham HB01. HB01 nham vao tru ta/goi hon (vang mat o day)."
+  cung_duong_tung_o_chua:
+    density: "MO NHAT (chi ep_16)"
+    citations:
+      - "ep_16: 'dat chau cuc truoc chanh dien. Cung duong. ... Con cung chau cho me — de me o chua tung.'"
+    sensitivity: high   # dung den Phat giao dang thuc hanh that -> ton kinh, disclaimer (bp9 high.extra_rule)
+    cross_ref: "trung boi canh voi belief.tin_nguong_he Loai 3 (Phat/chua) — ritual chi ghi HANH VI cung duong, KHONG ghi NIEM TIN (thuoc belief)"
+  quy_ben_quan_tai_tang_le:
+    density: "TRUNG BINH"
+    citations:
+      - "ep_03: 'Con quy xuong ben quan tai. Con khong noi duoc.'"
+      - "ep_45: 'Em quy ben quan tai — em xin cam on thay da cuu em muoi nam truoc.'"
+    sensitivity: low
+  ban_tho_bai_vi_lap_ban_tho:
+    density: "RAI RAC (hanh vi thiet lap)"
+    citations:
+      - "ep_21: 'dat anh mo tren ban tho — ben canh bai vi me.'"
+      - "ep_47: 'anh chua lap ban tho. Hinh ong se lap sau.' (hanh vi 'lap ban tho' moi duoc nhac)"
+    sensitivity: low
+
+  # --- NHANH BI CAM (khong phai "trong" ma la FORBIDDEN theo bible/00) ---
+  forbidden_phap_thuat:
+    canon_count: 0
+    reason: "bible/00 NEVER.exorcism: KHONG thay cung/phap su/le tru ta/goi hon/cau co. Canon 0/51 tap."
+    entries_forbidden: [thay_cung, thay_phap, len_dong, tru_ta, goi_hon, cau_co, ap_vong, xin_am_duong, boc_mo, cai_tang, lap_dan, cau_sieu, bua, hoa_vang_ma, rai_muoi_gao, dot_bo_ket]
+
+# ------------------------------------------------------------
+# TAXONOMY DRAFT — 2 PHUONG AN
+# ------------------------------------------------------------
+taxonomy_draft:
+
+  shared:
+    facet_binding:
+      nghi_thuc_catalog: "danh muc 6 nghi thuc tuong niem tren (thap_huong_vieng_mo, dat_vat_quy_noi_cui_dau, dot_huong_dot_tien, cung_duong_tung_o_chua, quy_ben_quan_tai, ban_tho_bai_vi)"
+      ritual_steps: "chuoi buoc chuan cho nghi thuc xuong song (5 buoc: dem->dat->quy->noi->cui dau)"
+    ritual_steps_axis:
+      desc: "Mine phat hien 2 CUC chinh thuc cua CUNG 1 nghi thuc tien biet (ro nhat trong ban goc):"
+      cuc_A: "thap nhang + noi loi (xin loi/hua)"
+      cuc_B: "khong thap + im lang (chi ngoi, doi den sang)"
+      note: "2 cuc nay cho generator bien the sac thai cam xuc, chong lap cong thuc."
+    hard_constraints:
+      - "NEVER.exorcism (bible/00): CAM tuyet doi nhanh phap thuat/tru ta/goi hon — khong the them du sau nay co ap luc noi dung."
+      - "HB01 (bp9): moi muc catalog o muc KHONG-THE-LAM-THEO (an y/luot qua) — canon hien da tu nhien dat muc nay (thap huong/vieng mo la pho quat, khong phai how-to phap thuat)."
+      - "sensitivity: cung_duong_tung_o_chua = high (Phat giao that -> ton kinh + disclaimer bp9); con lai = low."
+
+  phuong_an_A_tuong_niem_only:
+    ten: "Catalog CHI 6 nghi thuc tuong niem (khop canon 100%) + khoa FORBIDDEN phap thuat"
+    mo_ta: "Catalog dong lai o 6 nghi thuc da co canon. Nhanh phap-thuat khai EXPLICIT forbidden
+           (tro NEVER.exorcism), khong de 'planned/trong' (tranh generator hieu la 'se bo sung sau')."
+    uu: "Trung thanh canon + khop hien phap tuyet doi; ranh gioi cung ro; de enforce."
+    nhuoc: "Neu 90 tap sau Mr.Long muon 1 nhan vat QUA KHU tung du le chua (khong phai tru ta) thi
+           phai mo RFC bo sung — A khong co san slot do."
+
+  phuong_an_B_tuong_niem_plus_backstory_slot:
+    ten: "6 nghi thuc tuong niem + slot 'nghi thuc trong QUA KHU nhan vat' (bounded HB01, van cam tru ta trong plot hien tai)"
+    mo_ta: "Giu 6 nghi thuc + mo 1 slot cho nghi thuc dan gian KHAC ma nhan vat co the da tung
+           thuc hien TRONG QUA KHU (backstory, truoc khi len xe) — vd tung di le den/chua vung minh.
+           VAN tuan: (a) NEVER.exorcism cam tru ta/goi hon la HANH DONG chu dong trong plot hien tai;
+           (b) HB01 khong how-to; (c) high-sensitivity neu cham ton giao that."
+    uu: "Linh hoat cho 90 tap da vung mien; danh dau ro slot backstory khac plot hien tai."
+    nhuoc: "Slot mo de bi lam dung -> can rule chat 'backstory only, khong active trong plot' + audit."
+    van_CHUNG: "Ca A va B deu GIU FORBIDDEN phap thuat/tru ta/goi hon trong plot hien tai (NEVER.exorcism)
+                — day la diem CHUNG, khong phai bien so."
+
+# ------------------------------------------------------------
+# PHAM VI AP DUNG
+# ------------------------------------------------------------
+scope:
+  applies_to: "OUTPUT MOI cua generator G7"
+  does_not_mandate: "KHONG bat retrofit 51 tap cu (nguon mine). Regen sau nay moi ap."
+
+# ------------------------------------------------------------
+# DECISION REQUEST
+# ------------------------------------------------------------
+decision_request:
+  question: "Catalog nghi thuc tren dung huong khong, chon phuong an nao?"
+  options:
+    A_tuong_niem_only: "Duyet A (6 nghi thuc tuong niem + khoa forbidden phap thuat) — field-hoa bible/40"
+    B_plus_backstory_slot: "Duyet B (6 nghi thuc + slot backstory bounded)"
+    C_reject_redesign: "Khong dung huong — thiet ke lai"
+  con_can_mr_long_chot:
+    - "Xac nhan '3 nen huong' (ep_34) co lam gia tri chuan trong catalog hay de tu do"
+    - "muc chi tiet cho phep cho ritual_steps (bao xa la 'du' — hien de xuat dung o 5 buoc khai quat, HB01-safe)"
+    - "Co mo slot backstory (phuong an B) hay khong"

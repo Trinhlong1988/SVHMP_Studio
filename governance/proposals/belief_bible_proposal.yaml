@@ -1,0 +1,184 @@
+# ============================================================
+# DE XUAT — bible/39_belief_bible.yaml (domain belief, planned theo blueprint_domains.yaml
+# dong 262-299 + facet bp7/cultural_spec.yaml: belief.tin_nguong_he + belief.am_duong_quan_niem).
+# File NAY KHONG dat trong bible/ (writer: [mr_long], VA blocking_dependency ghi ro "NHAY CAM
+# ton giao — can LEAD"). PROPOSAL cho Mr.Long duyet — DAC BIET can nhieu lua chon vi nhay cam
+# ton giao (theo dung yeu cau task).
+#
+# NGUON CAN CU (da doc truc tiep):
+#   DA DOC KY:
+#   - blueprint_domains.yaml dong 262-299 (belief: "he tin nguong: Phat/Dao Mau/Thanh Hoang/
+#     am duong — dieu nhan vat TIN"; non_responsibility "belief CO THE SAI so voi supernatural that";
+#     audit_rule "nhan vat hanh xu trai belief da khai = VIOLATION")
+#   - bp7/cultural_spec.yaml items tin_nguong_he + am_duong_quan_niem (2 facet khai san — de xuat BAM,
+#     nhung xem PHAT HIEN #1: vi du facet KHONG khop canon that)
+#   - bible/00_constitution.yaml GHOST_RULES (never_attack/never_chase/never_speak_directly) +
+#     NEVER.villain_ghost ("KHONG ma ac/bao oan; soul = unresolved_goodbye") — quyet dinh belief
+#     "chet oan -> bao oan" (neu co) se la belief SAI so voi supernatural that.
+#   - bp9/content_policy.yaml sensitivity_tiers low/medium/high + disclaimer_rule + high.extra_rule
+#     ton k, KHONG NHAI (LOCKED v1.0) — moi muc belief cham ton giao that PHAI gan sensitivity.
+#   - governance/proposals/supernatural_typology_proposal.yaml (domain anh em — belief KHONG duoc
+#     nuot supernatural: dieu nhan vat TIN != luat hon ma THAT).
+#   - MINE 51 file output/ep_*/episode.md (ep_01-50 + 1 sample) bang grep — citation nguyen van.
+#   CHUA DOC HET (trung thuc):
+#   - tools/belief_manager.py / belief_validator.py CHUA ton tai (planned).
+#   - archive_draft_v1_ep11_41/ (nhap cu) loai khoi canon.
+# ============================================================
+
+version: 1.0
+proposal_status: DRAFT
+writer_of_record: mr_long
+mr_long_decision: PENDING
+
+# ------------------------------------------------------------
+# VI SAO CAN FILE NAY
+# ------------------------------------------------------------
+# blueprint khai belief planned, blocking_dependency "Mr.Long duyet danh muc tin nguong (nhay cam
+# ton giao — can LEAD)". Day KHONG phai chuyen ky thuat — la quyet dinh noi dung/canon nhay cam,
+# BAT BUOC di duong proposal (khong ghi thang bible/39). Muc tieu: dinh danh dung nhung gi truyen
+# THAT su tin (de generator khong bia belief moi), gan sensitivity + disclaimer (bp9), va giu ranh
+# gioi voi supernatural-that. KHONG mandate retrofit 51 tap cu.
+
+# ------------------------------------------------------------
+# PHAT HIEN #1 (quan trong nhat) — VI DU FACET bp7 KHONG KHOP CANON THAT
+# ------------------------------------------------------------
+# bp7/cultural_spec.yaml + blueprint mo ta belief bang vi du "Phat/Dao Mau/Thanh Hoang/am duong".
+# NHUNG mine 51 tap: cac tu khoa nay = ZERO trong canon:
+#   Dao Mau/Thanh Hoang/Tho Cong/than linh/den/mieu = 0; am phu/am duong/Diem Vuong/suoi vang = 0;
+#   nghiep bao/nhan qua/luan hoi/dau thai/kiep = 0; oan hon/chet oan/vong/sieu thoat = 0;
+#   ong troi/so phan/dinh menh/troi phat = 0; attribution dan gian ("cac cu bao"/"tuong truyen") = 0.
+# => Truyen CO CHU DINH tranh he thuat ngu tin nguong dan gian kinh dien. Cai THAT co la:
+#   (1) belief dao-duc-tam-ly "chuoc loi tuong trung voi nguoi da khuat" (NHIEU nhat, gan pho quat);
+#   (2) duc tin Cong giao "lien lac qua Chua" (ep_28/36/46 — high sensitivity);
+#   (3) Phat/chua "cung de nguoi mat o chua" (ep_16 — high sensitivity, mo nhat).
+# QUYET DINH CAN Mr.Long: belief bible ghi THEO CANON THAT (hep, trung thuc) hay GIU KHUNG facet
+# rong (Dao Mau/Thanh Hoang/am duong nhu slot planned de mo rong 90 tap)? -> day la truc A/B.
+
+# ------------------------------------------------------------
+# PHAT HIEN #2 — VUNG XAM: belief "coi nhu da nhan" CO THE la SU THAT trong truyen
+# ------------------------------------------------------------
+# blueprint khai belief "CO THE SAI so voi supernatural". Nhung Loai 1 (chuoc loi tuong trung)
+# la vung XAM nguoc lai: nhan vat noi giong belief ("coi nhu em da nhan", "coi em da ra bien")
+# NHUNG co che cot truyen co ve XAC NHAN no la THAT (lam xong nghi thuc thi hanh khach duoc giai
+# toa + roi chuyen xe). => can tach 2 mat: belief-mat-phat-ngon (thuoc domain belief) vs
+# rule-mat-co-che (thuoc domain supernatural). CAM belief nuot supernatural: belief bible chi ghi
+# "dieu nhan vat noi/tin", KHONG khang dinh co che that (viec cua supernatural_typology). Can
+# Mr.Long chot: co ghi nhan day la "belief tinh co dung" hay de mo (khong phan xu) trong bible/39.
+
+# ------------------------------------------------------------
+# PHAT HIEN #3 — belief SVHMP "hien lanh", khop NEVER.villain_ghost
+# ------------------------------------------------------------
+# Canon 0 tu ve "bao oan/chet oan/oan hon". Dung voi bible/00 NEVER.villain_ghost (soul =
+# unresolved_goodbye, khong bao thu). => Neu tuong lai co nhan vat TIN "chet oan thanh ma bao oan",
+# do se la 1 belief SAI (supernatural that: ma khong bao oan) — vi du kinh dien cho co che
+# "belief co the sai". Hien canon CHUA dung, taxonomy chi GHI KHA NANG nay o phuong an rong (B),
+# khong bia vao canon hep (A).
+
+# ------------------------------------------------------------
+# CANON DA CO (mine — dieu nhan vat TIN, KHONG phai luat that)
+# ------------------------------------------------------------
+canon_evidence:
+  chuoc_loi_tuong_trung:
+    density: "NHIEU NHAT (gan pho quat) — cong thuc 'khong the chuoc... chi co the...'"
+    la_gi: "belief dao-duc-tam-ly: khong cuu lai duoc nguoi chet, nhung lam viec thien thay the /
+           dem vat tra ve dung cho -> 'coi nhu' loi hua dang do da hoan thanh / nguoi khuat da nhan"
+    citations:
+      - "ep_14: 'Em khong the chuoc lai ba cu — em chi co the nho — song can than hon ba muoi nam.'"
+      - "ep_43: 'khong the chuoc em — em chi co the dem giay em chua nhan ve dai tuong niem — coi em da nhan.'"
+      - "ep_39: 'khong the chuoc ba — em chi co the dem com cho ba cu khac tam nam — va dem to cuoi ve cho ba mat.'"
+    sensitivity: low   # dao duc/tam ly, khong gan ton giao co ten -> low (bp9)
+    ambiguous_flag: "PHAT HIEN #2 — co the la belief tinh co dung (co che truyen xac nhan). Tach mat phat-ngon vs co-che."
+  duc_tin_cong_giao_qua_chua:
+    density: "VUA (tap trung ep_28/36/46, dam trong cac tap do)"
+    la_gi: "nhan vat Cong giao TIN khong trao truc tiep cho nguoi khuat, phai gui/xin QUA CHUA (trung gian)"
+    citations:
+      - "ep_36: 'Em theo dao Cong giao... gui anh cho Chua thay vi giu rieng.'"
+      - "ep_28: 'noi voi Chua thay vi voi em: Chua oi xin Chua truyen loi em...'"
+      - "ep_46: 'em theo dao Cong giao... em se xin Chua cho em — qua nha tho — qua Chua.'"
+    sensitivity: high   # Cong giao dang thuc hanh that -> TON KINH, KHONG NHAI + disclaimer (bp9 high.extra_rule)
+  phat_giao_o_chua:
+    density: "MO NHAT (chi ep_16)"
+    la_gi: "belief cung duong vat cho chua -> nguoi mat 'o chua' cung minh"
+    citations:
+      - "ep_16: 'Con cung chau cho me — de me o chua tung — cung me.'"
+    sensitivity: high   # Phat giao that -> ton kinh + disclaimer
+  nguoi_chet_van_hien_dien:
+    density: "RAT MO (1 cau ban chinh)"
+    citations:
+      - "ep_11: 'Chi ve ben em ngay con em chao doi nhe.' (em gai noi voi chi da mat)"
+    sensitivity: low
+  linh_tinh_bao_truoc:
+    density: "RAT MO (1 lan)"
+    citations:
+      - "ep_11: 'Nguoi chi Ha co linh tinh. Chi muon de lai em 1 vat — phong khi chi khong kip ve.'"
+    sensitivity: low
+
+  # --- CAC TRUC bp7 NEU nhung 0 CANON (ghi trung thuc la trong) ---
+  facet_declared_but_empty:
+    tin_nguong_he_examples_empty: [dao_mau, thanh_hoang, tho_cong, than_linh_den_mieu]   # 0/51 tap
+    am_duong_quan_niem_empty: [am_phu, am_duong, diem_bao_dan_gian, nghiep_bao, luan_hoi, oan_hon]  # 0/51 tap
+    honest_note: "bp7 khai 2 facet nay bang vi du tren nhung canon CHUA co gi. KHONG bia noi dung de lap."
+
+# ------------------------------------------------------------
+# TAXONOMY DRAFT — 2 PHUONG AN (bat buoc >=2 vi nhay cam ton giao)
+# ------------------------------------------------------------
+taxonomy_draft:
+
+  shared:
+    facet_binding:
+      tin_nguong_he: "he tin nguong nhan vat theo (Cong giao qua-Chua [co canon] / Phat-chua [co canon mo])"
+      am_duong_quan_niem: "quan niem ve nguoi khuat (chuoc-loi-tuong-trung / hien-dien / linh-tinh) — CO THE SAI so supernatural"
+    hard_constraints:
+      - "belief = dieu nhan vat NOI/TIN; CAM khang dinh co che sieu nhien that (viec cua supernatural_typology). Belief KHONG nuot supernatural (PHAT HIEN #2)."
+      - "sensitivity: Cong giao + Phat = high -> TON KINH, KHONG NHAI, disclaimer bat buoc (bp9 high.extra_rule + disclaimer_rule). chuoc-loi-tuong-trung/hien-dien/linh-tinh = low."
+      - "audit_rule (blueprint): nhan vat hanh xu TRAI belief da khai trong ho so = VIOLATION (chi ap khi ho so nhan vat co field belief — hien chua co)."
+      - "Giu NEVER.villain_ghost: KHONG canon-hoa 'ma bao oan' la su that; neu dung chi la belief SAI (PHAT HIEN #3)."
+
+  phuong_an_A_canon_fit_hep:
+    ten: "belief bible chi ghi 3 truc CO CANON THAT (trung thuc, hep)"
+    mo_ta: "Ghi dung 3 truc mine ra: (1) chuoc-loi-tuong-trung [low], (2) duc tin Cong giao qua-Chua
+           [high], (3) Phat/cung duong o chua [high, mo]. 2 facet bp7 (Dao Mau/Thanh Hoang/am duong)
+           danh dau EXPLICIT 'declared-but-empty, cho Mr.Long bo sung neu 90 tap sau can'. KHONG dung
+           khung tin nguong dan gian ma canon chua viet."
+    uu: "Trung thuc tuyet doi voi canon; giam rui ro nhay cam ton giao (chi ghi cai da co, khong bia);
+        khop chu dinh 'truyen tranh he thuat ngu tin nguong kinh dien'."
+    nhuoc: "Neu Mr.Long muon 90 tap mo sang vung mien (mien Trung Dao Mau, lang Thanh Hoang) thi
+           A phai mo RFC bo sung tung truc."
+  phuong_an_B_khung_rong_planned:
+    ten: "Giu khung facet bp7 day du (tin_nguong_he + am_duong_quan_niem rong) — danh dau co canon vs trong"
+    mo_ta: "Ngoai 3 truc co canon, GIU cac slot Dao Mau/Thanh Hoang/Tho Cong (tin_nguong_he) +
+           am duong/diem bao/nghiep bao/oan hon (am_duong_quan_niem) o trang thai PLANNED-EMPTY co
+           cau truc san, de generator/story_planner 90 tap co the mo rong theo vung mien ma khong
+           can lam lai schema. Moi slot ton giao that van gan high-sensitivity + disclaimer."
+    uu: "Linh hoat cho series dai + da vung mien; khung san khop bp7 facet."
+    nhuoc: "Rui ro nhay cam cao hon (mo san slot ton giao chua co canon de bi generator lam day bang
+           noi dung bia); can rule chat 'slot empty CHI Mr.Long moi duoc dien, generator KHONG tu sinh'."
+    van_CHUNG: "Ca A va B deu: (1) tach belief-phat-ngon vs supernatural-co-che; (2) high-sensitivity
+                + ton kinh cho Cong giao/Phat; (3) khong canon-hoa ma-bao-oan."
+  ghi_chu_lua_chon_thu_3:
+    A2_ton_giao_ho_hoa: "Neu Mr.Long lo nhay cam Cong giao/Phat cu the: co the chon bien the ghi
+                        'duc tin ton giao cua nhan vat' o muc KHAI QUAT (khong neu ten dao cu the trong
+                        canon-facet, chi luu y sensitivity high khi tap nao do cham toi) — de xuat lua
+                        chon nay RIENG vi belief nhay cam, Mr.Long can nhieu duong chon (theo task)."
+
+# ------------------------------------------------------------
+# PHAM VI AP DUNG
+# ------------------------------------------------------------
+scope:
+  applies_to: "OUTPUT MOI cua generator G7"
+  does_not_mandate: "KHONG retrofit 51 tap cu. Regen sau moi ap."
+
+# ------------------------------------------------------------
+# DECISION REQUEST
+# ------------------------------------------------------------
+decision_request:
+  question: "belief bible nen ghi theo canon THAT (hep) hay giu khung facet rong? Va xu ly nhay cam ton giao the nao?"
+  options:
+    A_canon_fit_hep: "Duyet A (chi 3 truc co canon + danh dau facet trong) — trung thuc nhat"
+    B_khung_rong_planned: "Duyet B (giu khung bp7 day du, slot empty co cau truc)"
+    A2_ton_giao_khai_quat: "Bien the: ghi duc tin ton giao o muc khai quat, khong ten dao trong canon-facet (giam nhay cam)"
+    C_reject_redesign: "Khong dung huong — thiet ke lai"
+  con_can_mr_long_chot:
+    - "PHAT HIEN #2: co ghi nhan 'belief coi-nhu-da-nhan tinh co dung' hay de mo (khong phan xu co che)?"
+    - "Cong giao/Phat (ep_28/36/46/16): giu ten dao cu the [high-sensitivity+disclaimer] hay khai quat hoa?"
+    - "Co mo slot Dao Mau/Thanh Hoang/am duong (phuong an B) cho 90 tap khong, va ai duoc dien (chi Mr.Long)?"

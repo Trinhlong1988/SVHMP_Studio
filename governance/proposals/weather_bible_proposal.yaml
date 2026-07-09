@@ -1,0 +1,173 @@
+# ============================================================
+# DE XUAT — bible/41_weather_bible.yaml (domain weather, planned theo blueprint_domains.yaml
+# dong 184-221). File NAY KHONG dat trong bible/ (writer: [mr_long] — CHI Mr.Long ky duoc
+# bible/41). Day la PROPOSAL cho Mr.Long duyet; duyet xong kiem duyet moi field-hoa vao
+# bible/41 that (mirror cach da lam voi episode_schema.yaml -> APPROVED_B).
+#
+# NGUON CAN CU (da doc truc tiep, khong bia — ghi ro DA DOC KY vs CHUA DOC HET):
+#   DA DOC KY:
+#   - governance/blueprint/blueprint_domains.yaml dong 184-221 (domain weather: responsibility
+#     "mua/suong/gio/trang phuc vu khong khi kinh di + am thanh nen"; non_responsibility KHONG
+#     phai timeline/location/audio; audit_rule "thoi tiet nhat quan trong 1 canh — mua roi tanh
+#     giua cau = VIOLATION continuity"; writer: [mr_long]; reader: event/story_planner/generator/
+#     qa_runtime/audio)
+#   - MINE 51 tap output/ep_*/episode.md (ep_01-51) truc tiep bang grep — toan bo citation duoi
+#     day la NGUYEN VAN tu file, KHONG bia. Mat do dem tho: mua 80 lan/39 tap; suong 47 lan/30
+#     tap; gio 109 hit nhung ~80% la nhieu "ao gio/tui ao gio" (vat pham) — gio-thoi-tiet thuc
+#     ~25-30 lan; trang 6 hit gan het la "Soc Trang"/"trang mat" — mat-trang thuc CHI 1 cau
+#     (ep_03); sam/chop/bao gan nhu KHONG co (chop = "chop mat", bao = 1 cau hoi tuong ep_28).
+#   - bible/22_anti_slop_vi.yaml (AP7 section-break crutch, AP8 paragraph uniformity) — taxonomy
+#     weather PHAI chong lai viec cong-thuc-hoa cau mo/dong canh (xem PHAT HIEN #1 duoi).
+#   CHUA DOC HET (ghi trung thuc):
+#   - tools/ (weather_manager.py / weather_validator.py) CHUA ton tai (planned) — de xuat nay
+#     KHONG dinh nghia enforcer, chi de xuat NOI DUNG taxonomy de Mr.Long duyet truoc.
+#   - bp2/domain_specs.yaml: weather domain KHONG khai facet_id san (khac culture/belief/ritual
+#     co 7 facet trong bp7/cultural_spec.yaml) — nen taxonomy weather duoi day la de xuat MOI
+#     cau truc, chua co facet_id cu de mirror. CAN Mr.Long xac nhan cau truc truc/nhanh.
+# ============================================================
+
+version: 1.0
+proposal_status: DRAFT          # KHONG tu set APPROVED — do la viec Mr.Long
+writer_of_record: mr_long
+mr_long_decision: PENDING
+
+# ------------------------------------------------------------
+# VI SAO CAN FILE NAY (tra loi truoc khi hoi "co can khong")
+# ------------------------------------------------------------
+# blueprint_domains.yaml khai weather source_of_truth = planned, blocking_dependency:
+# "Mr.Long duyet taxonomy thoi tiet kinh di (mua dem/suong nghia trang...)". Hien G7 generator
+# neu build ma doc domain weather se KHONG co gi de doc (0 canon). Nhung QUAN TRONG: thoi tiet
+# da duoc viet RAT DAY trong 51 tap — chi la chua GOM thanh canon co cau truc. Vi vay taxonomy
+# nay KHONG sang tac tu dau: no CHUAN HOA cai da co, de generator sinh tap moi NHAT QUAN
+# (audit_rule: "mua roi tanh giua cau = VIOLATION") + PHA duoc vong lap 5-khuon da lo ra o
+# 50 tap dau (PHAT HIEN #1).
+# KHONG mandate retrofit 51 tap cu — taxonomy nay danh cho OUTPUT MOI cua generator G7 (mirror
+# nguyen tac episode_schema_proposal.yaml dong 47-48). 51 tap cu chi la nguon MINE, khong bat sua.
+
+# ------------------------------------------------------------
+# PHAT HIEN #1 (tu MINE) — THOI TIET DA BI CONG-THUC-HOA, taxonomy PHAI chong
+# ------------------------------------------------------------
+# Tu ep_12 tro di, cau mo canh thoi tiet luan phien theo 5 KHUON CO DINH lap gan nguyen van moi
+# 10 tap (theo ep_number mod 10). Vi du nguyen van:
+#   - Khuon "suong + den xe roi" (ep_19,29,39,49): "Den xe roi vao suong. Dem thang tu mien Bac..."
+#   - Khuon "troi am canh dong" (ep_14,24,34,44): "Cuoi thang tu. Troi am. Xe dem chay cham..."
+#   - Khuon "den pha cat qua man suong" (ep_12,22,32,42): "Den pha cat qua man suong — chieu len..."
+# Cau DONG canh cung cong thuc: "Mot tieng chuong. Ngan. Tan trong suong." (ep_14,19,23,24,29...).
+# => Day la vi pham tinh than bible/22 AP8 (paragraph uniformity) + AP7 (section-break crutch)
+#    o cap CAU-MO/DONG-CANH. Taxonomy weather PHAI kem 1 rule "khong tai su dung nguyen van 1
+#    khuon mo-canh trong pham vi N tap" (so N do Mr.Long chot) de generator khong lap lai loi nay.
+
+# ------------------------------------------------------------
+# CANON DA CO (mine — mat do that, quyet do chi tiet taxonomy)
+# ------------------------------------------------------------
+canon_evidence:
+  mua:
+    density: "RAT NHIEU (39 tap) — truc xuong song, gan cai chet Ha Vy 'dem mua thang tu 2018'"
+    sub_shades_found:
+      - mua_phun_lat_phat: ["ep_04: 'Troi mua phun lat phat...'", "ep_07: 'Troi mua phun van lat phat.'", "ep_02: 'Moi dem mua phun ve que...'"]
+      - mua_to_dinh_menh:  ["ep_01: 'mua do xuong thu do Ha Noi tu luc bay gio toi, keo dai den tan khuya van con ra rich'", "ep_31: 'Thang tu nam 2018. Troi mua rat to lon.'", "ep_28: 'Mua thang tu ri ra ngoai kinh xe.'"]
+      - mua_ra_rich_am_nen: ["ep_01: 'tieng mua roi nhip nhang, hoa cung tieng may xe ri ri'", "ep_01: 'chi con lai tieng mua roi ra rich'"]
+      - mua_vua_tanh_duong_uot: ["ep_11: 'Troi mua da ngot. Mat song Nhue phang'", "ep_37: 'Mat duong uot sung.'", "ep_21: 'Tan trong khong khi uot sau mua.'"]
+    confidence: high
+  suong:
+    density: "RAT NHIEU (30 tap) — motif thi giac kinh di so 1, 'nuot' bong ma khi tan"
+    sub_shades_found:
+      - suong_day_che_khuat: ["ep_10: 'Lop suong dac den noi kho nhin...'", "ep_09: 'suong trang dac, hat qua den pha thanh nhung vet sang cong'", "ep_11: 'Lop suong day dac.'"]
+      - suong_theo_dia_hinh:  ["ep_09: 'Lop suong nui van con day.'", "ep_05: 'Lop suong bien khep vao lanh.'"]
+      - suong_cua_kinh_noi_xe: ["ep_01: 'Man suong sau cua kinh ven dan...'", "ep_01: 'suong dem phu kin them.'"]
+      - suong_tac_nhan_sieu_nhien: ["ep_08/09: 'Hai cai bong nhin nhau qua suong.'", "ep_12: 'Anh Khoi tan vao suong dem tren cau.'", "ep_09: 'Roi tieng tan vao suong.'"]
+    confidence: high
+  gio:
+    density: "TRUNG BINH (loc nhieu 'ao gio') — motif am nen + 'tieng gio goi ten'"
+    sub_shades_found:
+      - gio_bien_man: ["ep_38: 'Doan duong bien — man gio... gio bien thoi len cua kinh xe.'", "ep_23: 'gio man tu song Cap thoi vao kinh xe.'"]
+      - gio_xao_xac_cay: ["ep_02: 'gio va tieng mia co vao nhau khe nhe.'", "ep_21: 'gio thoi qua bia — qua hang cau ben mo.'"]
+      - lang_gio_tinh_lang: ["ep_21: 'Mat song Day phang — gio ngung.'", "ep_17: 'chi co den xe — khong gio.'", "ep_24: 'canh dong — yen — khong gio.'"]
+      - gio_lanh_khep_cua: ["ep_04: 'Con ra dong cua so — gio dem lanh buot. Vua khep cua, con quay lai — me da di xa.'"]
+      - gio_goi_ten_tagline: ["ep_01: 'Neu mot dem nao do... ban lai nghe thay tieng gio goi ten minh...'"]
+    confidence: medium
+  nhiet_am:
+    density: "TRUNG BINH nhung NHAT QUAN theo mua (dong ret <-> thang tu am <-> Nam Bo nong am)"
+    sub_shades_found:
+      - dong_ret_arc_dau: ["ep_03: 'Ben trong xe lanh buot.'", "ep_09: 'Dem thang Mot am lich. Dong lanh day dac.'", "ep_36: 'Khong khi nui lanh.' (Sa Pa)"]
+      - am_mat_thang_tu: ["ep_14/24/34/44: 'Cuoi thang tu. Troi am.' (lap 4 tap)", "ep_17: 'khong khi am — khong lanh buot.'"]
+      - nong_am_nam_bo: ["ep_42: 'khong khi am nong mien Tay.'", "ep_49: 'Khong khi mien Tay am.'"]
+      - vat_lanh_buot_cham: ["ep_01: 'Vo xa cu thay lanh buot ca long tay anh.'", "ep_48: 'kim loai lanh buot.' (day dan)"]
+    confidence: medium
+  mat_nuoc_phang:
+    density: "VAI TAP — moi truong lien quan do am/tinh lang (bo tro, khong han weather thuan)"
+    sub_shades_found:
+      - ["ep_11: 'Mat song Nhue phang — phan chieu den duong.'", "ep_27: 'Mat song Hong... phang — den cau xa chieu xuong nuoc.'", "ep_42: 'Mat song Tien tinh.'"]
+    confidence: low
+  trang_sao_may:
+    density: "MO NHAT / HIEM — khoang trong lon nhat cua canon"
+    sub_shades_found:
+      - ["ep_03: 'Trang cuoi thang yeu ot hat xuong mat nuoc, vo ra tung mang bac.' (CAU DUY NHAT ve mat trang that)", "ep_24: 'nuoc trong ruong in sao dem — may da tan sau mua.' (cau duy nhat ve sao/may)"]
+    confidence: none   # gan nhu trong — neu taxonomy muon nhanh nay = SANG TAC MOI, phai danh dau ro
+  sam_chop_bao:
+    density: "TRONG (co y) — moi 'chop'='chop mat'; 'bao' 1 cau hoi tuong nghe bien (ep_28)"
+    note: "Truyen co tinh chon tong 'mua ra rich/suong/lang gio' (u am am i) thay vi 'bao sam chop'
+           (kich tinh on ao). Day la lua chon tham my NHAT QUAN — taxonomy NEN ton trong."
+    confidence: none
+
+# ------------------------------------------------------------
+# TAXONOMY DRAFT — 2 PHUONG AN de Mr.Long chon (mirror pattern A/B da co)
+# ------------------------------------------------------------
+taxonomy_draft:
+
+  # Ca 2 phuong an dung chung 4 TRUC XUONG SONG nay (deu co canon day) + 1 anti-formula rule:
+  shared_backbone:
+    truc:
+      - mua: {sub: [mua_phun_lat_phat, mua_to_dinh_menh, mua_ra_rich_am_nen, mua_vua_tanh_duong_uot], canon: high}
+      - suong: {sub: [suong_day_che_khuat, suong_theo_dia_hinh, suong_cua_kinh_noi_xe, suong_tac_nhan_sieu_nhien], canon: high}
+      - gio: {sub: [gio_bien_man, gio_xao_xac_cay, lang_gio_tinh_lang, gio_lanh_khep_cua, gio_goi_ten], canon: medium}
+      - nhiet_am: {sub: [dong_ret, am_mat_thang_tu, nong_am_nam_bo, vat_lanh_buot_cham], canon: medium, cross_ref: "gan season/region — story_planner/event quyet mua+vung, weather chi ta trang thai"}
+    anti_formula_rule:
+      desc: "CAM tai su dung NGUYEN VAN 1 khuon cau mo-canh / dong-canh thoi tiet trong pham vi N tap lien tiep (chong lap 5-khuon da lo o ep_12-50)."
+      N_value: PENDING_MR_LONG   # de xuat N=10 (dung chu ky da lo) hoac chat hon N=15; Mr.Long chot
+      cross_ref: "bible/22_anti_slop_vi.yaml AP7 (section-break crutch) + AP8 (paragraph uniformity)"
+    continuity_invariant:
+      desc: "Thoi tiet NHAT QUAN trong 1 canh — mua dang roi KHONG tu tanh giua cau khong ly do (audit_rule blueprint_domains weather). Chuyen thoi tiet PHAI co beat (vd 'mua ngot dan' moi duoc chuyen)."
+
+  phuong_an_A_minimalist:
+    ten: "Chi 4 truc co canon day — KHONG them nhanh trong"
+    mo_ta: "Taxonomy dong lai o 4 truc xuong song (mua/suong/gio/nhiet_am) + mat_nuoc_phang la bo
+           tro. KHONG dua trang/sao/may va KHONG dua sam/chop/bao vao canon. Ly do: 2 nhanh do
+           text hien gan nhu trong (trang: 1 cau; sam/chop/bao: co y vang) — dua vao = generator
+           se PHAI sang tac tu dau, de lech DNA 'u am am i' hien co."
+    uu: "Trung thanh tuyet doi voi canon da co; 0 rui ro lech tong; de enforce."
+    nhuoc: "Cau mo canh de kem da dang neu chi xoay 4 truc; can anti_formula_rule ganh chong lap."
+
+  phuong_an_B_backbone_plus_optional_sky:
+    ten: "4 truc chinh + mo nhanh 'bau troi dem' (trang/sao/may) danh dau EXPANSION"
+    mo_ta: "Giu 4 truc xuong song, THEM 1 nhanh 'bau_troi_dem' (trang khuyet/sao/may sau mua) o
+           trang thai OPTIONAL-EXPANSION — ghi ro 'canon hien mong (chi ep_03+ep_24), CAN Mr.Long
+           bo sung huong truoc khi generator dung nhieu'. Muc dich: cho generator them 1 truc de
+           PHA vong lap 5-khuon (PHAT HIEN #1), nhung khong gia vo day la canon da co."
+    uu: "Them dinh dang da dang cho cau mo canh (chong lap tot hon A); trung thuc danh dau expansion."
+    nhuoc: "Nhanh sky con mong -> generator neu dung nhieu se sang tac, can Mr.Long cho huong."
+    van_LOAI_TRU: "Ca A va B deu KHONG dua sam/chop/bao vao (di nguoc tong truyen) — day la diem
+                   CHUNG, khong phai bien so giua 2 phuong an."
+
+# ------------------------------------------------------------
+# PHAM VI AP DUNG
+# ------------------------------------------------------------
+scope:
+  applies_to: "OUTPUT MOI cua generator G7 (tap moi sinh qua pipeline)"
+  does_not_mandate: "KHONG bat retrofit/sua 51 tap cu (ep_01-51) — chung la nguon MINE, khong phai
+                    doi tuong sua (mirror episode_schema_proposal.yaml dong 47-48). Neu sau nay
+                    regen 51 tap cu qua pipeline moi thi taxonomy nay se ap khi do, khong phai bay gio."
+
+# ------------------------------------------------------------
+# DECISION REQUEST
+# ------------------------------------------------------------
+decision_request:
+  question: "Taxonomy thoi tiet tren co dung huong khong, va chon phuong an nao?"
+  options:
+    A_minimalist: "Duyet phuong an A (4 truc, khong nhanh trong) — kiem duyet field-hoa vao bible/41"
+    B_backbone_plus_sky: "Duyet phuong an B (4 truc + nhanh bau_troi_dem optional-expansion)"
+    C_reject_redesign: "Khong dung huong — thiet ke lai"
+  con_can_mr_long_chot:
+    - "N_value cho anti_formula_rule (de xuat 10 hoac 15)"
+    - "Co dua nhanh trang/sao/may (phuong an B) hay khong"
+    - "Xac nhan LOAI TRU sam/chop/bao khoi canon (ca 2 phuong an dang gia dinh loai)"
