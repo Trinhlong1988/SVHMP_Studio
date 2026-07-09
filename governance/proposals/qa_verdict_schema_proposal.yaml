@@ -137,3 +137,14 @@ decision_request:
     - "PASS_WITH_WARNING: giu trong enum chuan khong (dju decision tree orchestrator chua gan)? hay bo?"
     - "preflight exit_2 map ve REVIEW_REQUIRED co dung semantics khong (can xac nhan exit_2 la content-block hay usage-error)"
     - "canonical enum = 4-enum orchestrator, hay Mr.Long muon enum khac"
+
+  # ------------------------------------------------------------
+  # QUYET DINH CUOI Mr.Long (9/7, qua CMD_AUDIT) — TRIET DE, khong nua voi
+  # ------------------------------------------------------------
+  final_decision_9_7:
+    prerequisite_preflight_json: "DUYET — CMD_BUILD_2 trien khai ngay (giu nguyen exit code cu, chi THEM JSON output moi, khong pha caller cu, doc R197 FULL_TEXT_GATE truoc khi sua theo dung constraint da ghi)"
+    pass_with_warning: "GIU trong canonical enum. Ly do: VNQA WARN da chay that trong production (warning>=5 hoac warning>=1||minor>=3), co duong anh xa tu nhien san (WARN -> PASS_WITH_WARNING) — bo se mat tin hieu that ma khong giam duoc gi dang ke."
+    preflight_exit_2: "XAC NHAN dung huong CMD_BUILD_2 da tu kiem chung (R9): usage-error, KHONG map vao verdict enum — giu nguyen mapping da sua (exit_2 -> TOOLING_ERROR rieng, tach khoi REVIEW_REQUIRED)."
+    canonical_enum_shape: "DUYET dung 4-enum orchestrator [PASS, PASS_WITH_WARNING, REGEN, REVIEW_REQUIRED] lam chuan — VNQA (3-enum) va preflight (exit-code, da tach TOOLING_ERROR rieng) deu anh xa gon vao day, khong mat thong tin."
+    phuong_an: "B_thin_wrapper (da duyet truoc 9/7, giu nguyen) — field-hoa qa_verdict_schema.yaml + adapter rieng, KHONG sua output goc cua 3 tool native."
+    yeu_cau_thuc_thi: "TRIET DE — khong dung o muc de xuat/phan tich them. CMD_BUILD_2 field-hoa qa_verdict_schema.yaml that + viet adapter + wire vao D7 gate, co test hanh vi that (khong chi text-grep), pytest xanh, registry 0/0/0 truoc khi bao release."

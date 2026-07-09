@@ -84,6 +84,19 @@ hợp nhất (khớp đúng bible hiện hành). `qa_pause_silence.py` (đang `n
 cập nhật theo R96 v3.3, KHÔNG phải `qa_post_render.py::audit_pause()` cần siết lại. Vẫn PHẢI chạy A/B
 golden set như đã khai ở trên trước khi merge — quyết định này chỉ chốt NGƯỠNG, không miễn bước đo tác động.
 
+**CẬP NHẬT PHẠM VI (9/7, sau khi CMD_BUILD_2 tự điều tra sâu hơn — commit `05baea6`, kiểm duyệt đã
+tự đọc code xác nhận đúng):** tiền đề ban đầu của D3 (cả 3 cặp `audit_pause`/`audit_boundary`/
+`audit_head_onset` đều trùng lặp) là **SAI một phần** — chỉ `audit_pause()` ↔ `qa_pause_silence.py`
+là trùng thật (cùng thuật toán 20ms-window). `audit_boundary()` (delta biên độ time-domain, R87) và
+`qa_boundary_artifact.py` (phân tích phổ tần số sibilance/drone, R188) đo 2 đại lượng khác nhau —
+KHÔNG PHẢI trùng lặp, KHÔNG dedupe. Tương tự `audit_head_onset()` (energy ramp) khác
+`qa_onset_artifact.py` (F0-jump/peak). **QUYẾT ĐỊNH CUỐI:** D3 chỉ dedupe **PAUSE** — TRIỆT ĐỂ nghĩa
+là gọi thật `qa_pause_silence.py` (không viết lại logic), có báo cáo A/B golden set đầy đủ, và **BẮT
+BUỘC phối hợp với CMD_AUDIO trước khi sửa** (4 file `qa_post_render.py`/`qa_pause_silence.py`/
+`qa_boundary_artifact.py`/`qa_onset_artifact.py` thuộc domain `audio_qa`, owner CMD_AUDIO theo
+`audio_qa_manifest.yaml` — KHÔNG phải `qa_runtime` của G8, đúng R211 quyền sửa cross-domain, KHÔNG
+tự ý code khi chưa xin phép domain owner dù chỉ 1 dòng).
+
 ### D4 — Codify chuỗi VNQA/skeptic vào `governance/pack5/19_qa_pipeline.md` (lỗ hổng nghiêm trọng nhất)
 Thêm đúng luồng #3 (`qa_skeptic_orchestrator.py` → `vnqa/auto_fix.py` → `vnqa/pipeline.py` →
 `adversarial_skeptic.py`) vào doc19 — đây là chuỗi ĐANG CHẠY THẬT, không phải chuyện mới, chỉ là
