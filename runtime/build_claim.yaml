@@ -21,8 +21,9 @@ claims:
     status: released
   cleanup_deep200_stale:
     claimed_at: '2026-07-09T10:21:36'
+    released_at: '2026-07-09T10:34:38'
     session: CMD_TONG_TRO_LY
-    status: active
+    status: released
   debt005_006_fix:
     claimed_at: '2026-07-05T21:11:57'
     released_at: '2026-07-05T22:18:22'
