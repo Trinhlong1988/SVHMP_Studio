@@ -53,7 +53,7 @@ def build_packet(ep_number, policy=None, plan=None):
     packet = {
         "packet_id": f"decision_packet_ep{ep_number}_v1_{'full' if has_real_plan else 'partial'}",
         "ep_number": ep_number,
-        "plan_ref": plan.get("plan_ref") if has_real_plan else None,
+        "plan_ref": f"ep{plan['episode_number']}_{plan['season_ref']}" if has_real_plan else None,
         "calibration_evidence": f"{POLICY_PATH.relative_to(REPO)} (calibrated_from {policy['meta']['calibrated_from']})",
         "per_scene": per_scene,
         "status": "full" if has_real_plan else "planned",
