@@ -24,6 +24,11 @@ claims:
     released_at: '2026-07-09T10:34:38'
     session: CMD_TONG_TRO_LY
     status: released
+  d3_pause_dedup:
+    claimed_at: '2026-07-09T21:58:48'
+    released_at: '2026-07-09T22:38:55'
+    session: CMD_BUILD
+    status: released
   debt005_006_fix:
     claimed_at: '2026-07-05T21:11:57'
     released_at: '2026-07-05T22:18:22'
