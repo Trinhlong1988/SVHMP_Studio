@@ -260,6 +260,7 @@ ORIGINAL_11_STAGES = [
     'R207_canon', 'R208_age', 'project_config', 'G2_roster', 'g5_supernatural', 'G4_world',
     'G6_story_planner',   # them 5/7 sau khi G6a lock (merge main vao build/g3-dialogue-d0-d8) - ten bien giu nguyen "11" cho khop lich su, so THAT gio la 13
     'G7_generator',   # them 9/7 sau khi G7 D4 build gate (tools/g7_generator_check.py) - so THAT gio la 14
+    'G8_qa_runtime',   # them 9/7 (G8 D7 reconcile gate tools/g8_qa_runtime_check.py) - stage CUOI, so THAT gio la 15
 ]
 
 

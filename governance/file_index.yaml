@@ -1472,5 +1472,13 @@ files:
     domain: g7_generator
     status: active
     tier: 1
+  tools/g8_qa_runtime_check.py:
+    domain: qa_runtime
+    status: active
+    tier: 1
+  tests/test_g8_qa_runtime.py:
+    domain: qa_runtime
+    status: active
+    tier: 1
 generated_by: tools/registry_triage.py
-total: 368
+total: 370

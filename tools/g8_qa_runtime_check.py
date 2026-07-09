@@ -1,0 +1,114 @@
+"""g8_qa_runtime_check.py — G8 GATE 1 CUA (mirror pattern g6_story_planner_check.py).
+
+G8 = RECONCILE domain qa_runtime (KHONG build manager moi). Gate nay canh gac cac INVARIANT
+da chot o D1/D2/D4 + DEBT-005 fix khong bi regress. Dung STATIC-check (doc file + regex) —
+KHONG import deps nang (underthesea...), KHONG goi subprocess pytest (bai hoc G14 fork-bomb).
+
+Invariant kiem:
+  1. D2  — file_index.yaml map tools/qa_skeptic_orchestrator.py -> qa_runtime (manager chinh thuc,
+     blueprint:613). Neu ai doi lai generation = regress D2.
+  2. D4  — pack5/19_qa_pipeline.md da codify luong #3 (orchestrator VNQA/skeptic). Marker bat buoc.
+  3. VNQA — vnqa/pipeline.py chay H1-H10 that (run_all goi h1..h10). Chong nham nhan stale H1-H7.
+  4. DEBT-005 — tests/_golden_lock.py ton tai + expose golden_lock (fix race concurrent-pytest).
+
+Exit 0 = PASS, exit 1 = FAIL.
+"""
+import re
+import sys
+from pathlib import Path
+
+sys.stdout.reconfigure(encoding="utf-8") if hasattr(sys.stdout, "reconfigure") else None
+
+REPO = Path(__file__).resolve().parent.parent
+__version__ = "1.0.0"
+
+
+def _read(rel):
+    p = REPO / rel
+    if not p.exists():
+        return None
+    return p.read_text(encoding="utf-8", errors="replace")
+
+
+def check_d2_orchestrator_domain():
+    """D2: file_index map qa_skeptic_orchestrator.py -> qa_runtime (KHONG phai generation)."""
+    txt = _read("governance/file_index.yaml")
+    if txt is None:
+        return False, "governance/file_index.yaml khong ton tai"
+    # tim block entry cua file va doc dong 'domain:' ke tiep
+    m = re.search(r"tools/qa_skeptic_orchestrator\.py:\s*\n\s*domain:\s*(\S+)", txt)
+    if not m:
+        return False, "khong tim thay entry qa_skeptic_orchestrator.py trong file_index"
+    dom = m.group(1)
+    if dom != "qa_runtime":
+        return False, f"domain = '{dom}' (ky vong 'qa_runtime' — D2 regress)"
+    return True, "qa_skeptic_orchestrator -> qa_runtime"
+
+
+def check_d4_pack5_codified():
+    """D4: pack5/19 codify luong #3 (orchestrator VNQA/skeptic + H1-H10)."""
+    txt = _read("governance/pack5/19_qa_pipeline.md")
+    if txt is None:
+        return False, "governance/pack5/19_qa_pipeline.md khong ton tai"
+    need = ["qa_skeptic_orchestrator", "adversarial_skeptic", "H1-H10"]
+    missing = [k for k in need if k not in txt]
+    if missing:
+        return False, f"pack5/19 thieu marker luong #3: {missing} (D4 regress)"
+    return True, "pack5/19 co luong #3 (orchestrator/skeptic/H1-H10)"
+
+
+def check_vnqa_h1_h10():
+    """VNQA: pipeline.py dinh nghia h1..h10 + run_all goi du (chong nham nhan stale)."""
+    txt = _read("tools/vnqa/pipeline.py")
+    if txt is None:
+        return False, "tools/vnqa/pipeline.py khong ton tai"
+    missing_def = [f"h{i}" for i in range(1, 11)
+                   if not re.search(rf"def {re.escape(f'h{i}')}_\w+\(self", txt)]
+    if missing_def:
+        return False, f"thieu dinh nghia method: {missing_def}"
+    missing_call = [f"h{i}" for i in range(1, 11)
+                    if not re.search(rf"self\.{re.escape(f'h{i}')}_\w+\(", txt)]
+    if missing_call:
+        return False, f"run_all khong goi: {missing_call}"
+    return True, "H1-H10 dinh nghia + goi day du (10/10)"
+
+
+def check_debt005_golden_lock():
+    """DEBT-005: tests/_golden_lock.py ton tai + expose golden_lock."""
+    txt = _read("tests/_golden_lock.py")
+    if txt is None:
+        return False, "tests/_golden_lock.py khong ton tai (DEBT-005 fix mat)"
+    if "def golden_lock(" not in txt:
+        return False, "tests/_golden_lock.py thieu def golden_lock()"
+    return True, "golden_lock cross-process ton tai"
+
+
+SUITE = [
+    ("D2_orchestrator_domain", check_d2_orchestrator_domain),
+    ("D4_pack5_codified", check_d4_pack5_codified),
+    ("VNQA_h1_h10", check_vnqa_h1_h10),
+    ("DEBT005_golden_lock", check_debt005_golden_lock),
+]
+
+
+def main():
+    print(f"=== G8 QA RUNTIME CHECK v{__version__} (D7 — reconcile invariants) ===")
+    fails = []
+    for key, fn in SUITE:
+        try:
+            ok, detail = fn()
+        except Exception as e:  # noqa: BLE001 — gate phai bao FAIL ro, khong crash im
+            ok, detail = False, f"EXCEPTION: {e}"
+        mark = "PASS" if ok else "FAIL"
+        print(f"  [{mark}] {key:<24} {detail}")
+        if not ok:
+            fails.append(key)
+    if fails:
+        print(f"=== FAIL — {len(fails)}/{len(SUITE)} invariant: {', '.join(fails)} ===")
+        return 1
+    print(f"=== PASS — {len(SUITE)}/{len(SUITE)} invariant G8 xanh ===")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
