@@ -15,7 +15,6 @@ files:
 - tools/episode_state.py
 - tools/qa_skeptic_orchestrator.py
 - tools/related_eps.py
-- tools/sequential_full_auto.py
 - tools/sequential_rule_per_ep.py
 - tools/sync_specs_from_episode.py
-file_count: 13
+file_count: 12

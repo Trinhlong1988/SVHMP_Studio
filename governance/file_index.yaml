@@ -564,14 +564,6 @@ files:
     domain: analytics
     status: active
     tier: 5
-  tools/deep_200_rounds.py:
-    domain: governance_audit
-    status: active
-    tier: 0
-  tools/deep_200_rounds_all_rules.py:
-    domain: governance_audit
-    status: active
-    tier: 0
   tools/deprecation_report.py:
     domain: governance_audit
     status: active
@@ -888,10 +880,6 @@ files:
     domain: text_migration
     status: deprecated
     tier: 1
-  tools/sequential_full_auto.py:
-    domain: generation
-    status: active
-    tier: 2
   tools/sequential_rule_per_ep.py:
     domain: generation
     status: active
@@ -980,10 +968,6 @@ files:
     domain: audio_render
     status: active
     tier: 4
-  tools/verify_50_rounds.py:
-    domain: governance_audit
-    status: active
-    tier: 0
   tools/verify_ping_claim.py:
     domain: governance_audit
     status: active
@@ -1481,4 +1465,4 @@ files:
     status: active
     tier: 1
 generated_by: tools/registry_triage.py
-total: 370
+total: 366

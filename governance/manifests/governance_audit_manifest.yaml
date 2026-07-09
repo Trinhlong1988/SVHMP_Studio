@@ -14,8 +14,6 @@ files:
 - tools/check_rule_id_free.py
 - tools/check_rule_mention_codified.py
 - tools/ci_gate.py
-- tools/deep_200_rounds.py
-- tools/deep_200_rounds_all_rules.py
 - tools/deprecation_report.py
 - tools/flush_rules_from_test.py
 - tools/gen_domain_manifests.py
@@ -30,6 +28,5 @@ files:
 - tools/svhmp_audit_chi_tiet.py
 - tools/svhmp_dupe_audit.py
 - tools/svhmp_final_verify.py
-- tools/verify_50_rounds.py
 - tools/verify_ping_claim.py
-file_count: 27
+file_count: 24
