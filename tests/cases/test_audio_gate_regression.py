@@ -156,8 +156,12 @@ def case_5_substitute_violates_r111():
     tbf = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(tbf)
 
-    ep = BASE / "output/ep_01/episode.md"
-    t = ep.read_text(encoding='utf-8')
+    # Doc ban COMMITTED (git show HEAD) thay vi file live -> mien nhiem voi ghi transient tu
+    # tien trinh khac (FIX TRIET DE DEBT-005). case_5 KHONG lay golden_lock: test_golden_ep01
+    # test (b) giu lock roi spawn chinh script nay -> case_5 xin cung lock se deadlock cross-process.
+    _r = subprocess.run(["git", "show", "HEAD:output/ep_01/episode.md"], capture_output=True,
+                        text=True, cwd=str(BASE), encoding="utf-8", errors="ignore")
+    t = _r.stdout if (_r.returncode == 0 and _r.stdout) else (BASE / "output/ep_01/episode.md").read_text(encoding='utf-8')
     bad_text = t.replace("Khải-Phong đang ngồi trên ghế số bảy của chuyến xe đêm.",
                          "Khải-Phong đang ngồi trên ghế số bảy đó cũ.")
     assert bad_text != t, "substitution did not apply — case setup broken"

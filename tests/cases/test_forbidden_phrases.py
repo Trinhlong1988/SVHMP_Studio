@@ -16,6 +16,9 @@ READY = BASE / "output/ep_01/episode_tts_ready.md"
 R86_TOOL = BASE / "tools/qa_eol_diacritic.py"
 R128_TOOL = BASE / "tools/qa_anti_generic.py"
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))  # tests/
+from _golden_lock import golden_lock  # FIX DEBT-005: serialize ghi episode.md THAT cross-process
+
 
 def _atomic_write(path, content):
     """Write atomically (tmp + os.replace) so a write interrupted mid-flight
@@ -38,31 +41,31 @@ def run_tool(tool):
 
 
 def case(name, text, tool, expect_fail):
-    orig = EPISODE.read_text(encoding="utf-8")
-    ready_orig = READY.read_text(encoding="utf-8") if READY.exists() else None
-    try:
-        _atomic_write(EPISODE, text)
-        # Rebuild tts_ready so the pipeline stays internally consistent for
-        # the duration of the probe. NOTE: this writes into the REAL
-        # output/ep_01/episode_tts_ready.md — the finally block below
-        # restores it byte-for-byte from ready_orig afterwards (process_ep()'s
-        # re-derivation does not byte-match the committed golden file, so
-        # regenerating it "forward" instead of restoring from backup would
-        # leave permanent uncommitted drift after every test run).
-        subprocess.run([sys.executable, str(BASE / "tools/tts_adapter_pre_render.py"), "--ep", "1", "--apply"],
-                       capture_output=True, cwd=str(BASE), timeout=30)
-        code, out = run_tool(tool)
-        if expect_fail:
-            assert code != 0, f"{name} should FAIL: {out[-200:]}"
-            print(f"  ✅ {name}: caught")
-        else:
-            assert code == 0, f"{name} should PASS: {out[-200:]}"
-            print(f"  ✅ {name}: passed")
-    finally:
-        # ALWAYS restore, even if the try block raised (timeout/crash/etc).
-        _atomic_write(EPISODE, orig)
-        if ready_orig is not None:
-            _atomic_write(READY, ready_orig)
+    # golden_lock: doc orig + toan bo mutate/restore trong khoa cross-process -> khong tien
+    # trinh nao khac ghi/doc episode.md THAT giua chung (FIX TRIET DE DEBT-005).
+    with golden_lock():
+        orig = EPISODE.read_text(encoding="utf-8")
+        ready_orig = READY.read_text(encoding="utf-8") if READY.exists() else None
+        try:
+            _atomic_write(EPISODE, text)
+            # Rebuild tts_ready so the pipeline stays internally consistent for the
+            # duration of the probe. NOTE: writes into the REAL
+            # output/ep_01/episode_tts_ready.md — finally restores byte-for-byte from
+            # ready_orig (process_ep() re-derivation khong byte-match golden committed).
+            subprocess.run([sys.executable, str(BASE / "tools/tts_adapter_pre_render.py"), "--ep", "1", "--apply"],
+                           capture_output=True, cwd=str(BASE), timeout=30)
+            code, out = run_tool(tool)
+            if expect_fail:
+                assert code != 0, f"{name} should FAIL: {out[-200:]}"
+                print(f"  ✅ {name}: caught")
+            else:
+                assert code == 0, f"{name} should PASS: {out[-200:]}"
+                print(f"  ✅ {name}: passed")
+        finally:
+            # ALWAYS restore, even if the try block raised (timeout/crash/etc).
+            _atomic_write(EPISODE, orig)
+            if ready_orig is not None:
+                _atomic_write(READY, ready_orig)
 
 
 def main():
