@@ -1,0 +1,217 @@
+episode_frontmatter:
+  prompt_version: SVHMP-10.0-RC3.6
+  ep_number: 1
+  phase: introductory
+  pillar: family
+  intensity_level: 0.45
+  quang_memory_fragment: M1
+  callback_target: none
+  object_sub_arc: null
+  milestone: false
+  passenger_main: null
+  signature_object: OBJ_DONG_HO_XA_CU
+  signature_setting: setting_cau_dem_mua
+  stop_location: Cầu Long Biên
+  word_count_target: 2300
+  bell_count: 1
+  ghost_manifest: 1
+  driver_lines: 2
+  hand_crafted: true
+  _provenance_note: 'passenger_main=None: EP01 la pilot dung Khai-Phong/Ha-Vy truc
+    tiep, KHONG dung runtime/passenger_roster_100.yaml (schema field yeu cau PAS_id
+    that - verify CharacterRegistry().by_ep(1) = [] rong that, EP01 khong co trong
+    roster; story_planner.py da tu ghi chu tuong tu cho regret_pillars_covered cua
+    EP01). pillar/quang_memory_fragment/callback_target doc tu bible/21 (status file:
+    PROPOSAL, chua Mr.Long duyet chinh thuc rieng - nhung DA dung san trong post_render_gate.py
+    check 10-12 cho 50 tap that, ghi ro de khong gia vo day la da locked chinh thuc).'
+episode_plan_ref:
+  episode_number: 1
+  season_ref: season_1
+  scenes:
+  - EP1_SC1
+  - EP1_SC2
+  - EP1_SC3
+  - EP1_SC4
+  - EP1_SC5
+  - EP1_SC6
+  scenes_detail:
+  - scene_id: EP1_SC1
+    episode_ref: 1
+    order_in_episode: 1
+    component_ref: HOOK
+    summary: HOOK section cua EP01 golden (dong 96)
+    location_ref: Cầu Long Biên
+  - scene_id: EP1_SC2
+    episode_ref: 1
+    order_in_episode: 2
+    component_ref: SETUP
+    summary: SETUP section cua EP01 golden (dong 126)
+    location_ref: Cầu Long Biên
+  - scene_id: EP1_SC3
+    episode_ref: 1
+    order_in_episode: 3
+    component_ref: INCIDENT
+    summary: INCIDENT section cua EP01 golden (dong 216)
+    location_ref: Cầu Long Biên
+  - scene_id: EP1_SC4
+    episode_ref: 1
+    order_in_episode: 4
+    component_ref: REVEAL
+    summary: REVEAL section cua EP01 golden (dong 314)
+    location_ref: Cầu Long Biên
+  - scene_id: EP1_SC5
+    episode_ref: 1
+    order_in_episode: 5
+    component_ref: PAYOFF
+    summary: PAYOFF section cua EP01 golden (dong 438)
+    location_ref: Cầu Long Biên
+  - scene_id: EP1_SC6
+    episode_ref: 1
+    order_in_episode: 6
+    component_ref: CLIFFHANGER
+    summary: CLIFFHANGER section cua EP01 golden (dong 500)
+    location_ref: Cầu Long Biên
+  driver_reveal_cumulative: 3
+  cast_count: 8
+  regret_pillars_covered: []
+  kpi_ep_range_ref: ep_1_10
+  calibrated_from:
+    scenes: output\ep_01\episode_golden_text.md (tai dung calibrate_decision_policy.parse_sections)
+    driver_reveal_cumulative: bible/18_driver_reveal_budget.yaml#ep_01_reference.cumulative_after_ep01
+      = 3
+    cast_count: bible/31_golden_samples.yaml#golden_text_ep01.characters_locked (dem
+      8 nhan vat khoa)
+decision_packet:
+  packet_id: decision_packet_ep1_v1_full
+  ep_number: 1
+  plan_ref: null
+  calibration_evidence: bible\42_decision_policy.yaml (calibrated_from output/ep_01/episode_golden_text.md
+    (bible/31 golden_text_ep01, LOCKED Mr.Long 30/6))
+  per_scene:
+  - scene_id: HOOK
+    knobs:
+      dialogue_ratio: 0.3564
+      narration_ratio: 0.6436
+      emotion_curve: 0.7
+      fear_curve: 0.0
+      suspense_curve: null
+      reveal_curve: 0
+      pacing: rat_cham
+      scene_budget: 6
+      information_budget: 4
+      silence_budget: 8
+      character_focus: Khai-Phong
+      pov: third_person_limited_khai_phong
+  - scene_id: SETUP
+    knobs:
+      dialogue_ratio: 0.3564
+      narration_ratio: 0.6436
+      emotion_curve: 0.6
+      fear_curve: 0.3
+      suspense_curve: null
+      reveal_curve: 1
+      pacing: cham
+      scene_budget: 6
+      information_budget: 4
+      silence_budget: 8
+      character_focus: Khai-Phong
+      pov: third_person_limited_khai_phong
+  - scene_id: INCIDENT
+    knobs:
+      dialogue_ratio: 0.3564
+      narration_ratio: 0.6436
+      emotion_curve: 0.65
+      fear_curve: 0.0
+      suspense_curve: null
+      reveal_curve: 4
+      pacing: cham
+      scene_budget: 6
+      information_budget: 4
+      silence_budget: 8
+      character_focus: Khai-Phong
+      pov: third_person_limited_khai_phong
+  - scene_id: REVEAL
+    knobs:
+      dialogue_ratio: 0.3564
+      narration_ratio: 0.6436
+      emotion_curve: 0.95
+      fear_curve: 0.1
+      suspense_curve: null
+      reveal_curve: 3
+      pacing: cham
+      scene_budget: 6
+      information_budget: 4
+      silence_budget: 8
+      character_focus: Khai-Phong
+      pov: third_person_limited_khai_phong
+  - scene_id: PAYOFF
+    knobs:
+      dialogue_ratio: 0.3564
+      narration_ratio: 0.6436
+      emotion_curve: 0.7
+      fear_curve: 0.0
+      suspense_curve: null
+      reveal_curve: 0
+      pacing: cham
+      scene_budget: 6
+      information_budget: 4
+      silence_budget: 8
+      character_focus: Khai-Phong
+      pov: third_person_limited_khai_phong
+  - scene_id: CLIFFHANGER
+    knobs:
+      dialogue_ratio: 0.3564
+      narration_ratio: 0.6436
+      emotion_curve: 0.65
+      fear_curve: 0.0
+      suspense_curve: null
+      reveal_curve: 2
+      pacing: rat_cham
+      scene_budget: 6
+      information_budget: 4
+      silence_budget: 8
+      character_focus: Co_gai_ghe_bay_moi
+      pov: third_person_limited_new_passenger
+  status: full
+  status_note: null
+decision_packet_lifecycle_warning: decision_engine domain lifecycle=draft trong blueprint_domains.yaml,
+  KHONG phai approved - per audit_rule cua chinh domain generator ('Output chi dung
+  domain lifecycle=approved, Promotion Gate R211'), packet nay la PROVISIONAL, CHUA
+  du dieu kien de coi la nguon chinh thuc.
+character_domain_note: EP01 khong co passenger trong runtime/passenger_roster_100.yaml
+  (verify CharacterRegistry().by_ep(1) = [] rong that) - character/dialogue manager
+  doc-duoc (co code that) nhung khong co context de goi cho EP01 cu the.
+domain_reads:
+  world:
+    source: bible\02_lore_db.yaml
+    status: read_direct_no_manager
+  timeline:
+    source: bible\01_narrative_structure.yaml
+    status: read_direct_no_manager
+  location:
+    source: bible\13_setting_library.yaml
+    status: read_direct_no_manager
+  supernatural:
+    source: bible\11_regret_catalog.yaml
+    status: read_direct_no_manager
+  object:
+    source: bible\12_object_library.yaml
+    status: read_direct_no_manager
+  weather:
+    source: null
+    status: no_data_source
+    reason: 'bible/41_weather_bible.yaml chua ton tai tren dia (blueprint_domains.yaml:
+      status planned)'
+  culture:
+    source: null
+    status: no_data_source
+    reason: bible/38_culture_bible.yaml chua ton tai tren dia (status planned)
+  belief:
+    source: null
+    status: no_data_source
+    reason: bible/39_belief_bible.yaml chua ton tai tren dia (status planned)
+  ritual:
+    source: null
+    status: no_data_source
+    reason: bible/40_ritual_bible.yaml chua ton tai tren dia (status planned)
+generated_by: tools/episode_generator.py v1.0.0

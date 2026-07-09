@@ -14,6 +14,7 @@ REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO / "tools"))
 
 import episode_generator as eg  # noqa: E402
+import g7_ep01_dry_run as dryrun  # noqa: E402
 
 SCHEMA_PATH = REPO / "governance" / "blueprint" / "schemas" / "episode_schema.yaml"
 
@@ -108,6 +109,31 @@ def test_g7_gate_pass_on_real_data():
     r = subprocess.run([sys.executable, str(REPO / "tools" / "g7_generator_check.py")],
                         capture_output=True, text=True, encoding="utf-8")
     assert r.returncode == 0, r.stdout + r.stderr
+
+
+def test_reality_d5_dry_run_reconciles_ep01_against_golden_reference():
+    """D5: dry-run PHAI co so sanh so lieu THAT voi output/ep_01/episode.md (golden
+    reference qua post_render_gate.check_ep(1), khong ghi de) - khong duoc chi 'chay
+    duoc la xong'. Ky vong 6/6 field khop (da tu verify thu cong truoc khi ship)."""
+    packet = eg.build_episode_packet(1)
+    findings = dryrun.reconcile_ep01(packet)
+    assert len(findings) == 6, f"thieu/thua field doi chieu: {len(findings)}"
+    mismatches = [f for f in findings if f.get("match") is False]
+    assert not mismatches, f"field LECH voi golden reference that: {mismatches}"
+
+
+def test_reality_d5_dry_run_writes_to_sandbox_not_real_ep01():
+    """DEBT-005 lesson: D5 dry-run TUYET DOI khong duoc ghi vao output/ep_01/ that,
+    du chi tam thoi - PHAI ghi vao sandbox cach ly output/ep_g7_sample/."""
+    import subprocess
+    before = (REPO / "output" / "ep_01" / "episode.md").read_text(encoding="utf-8")
+    r = subprocess.run([sys.executable, str(REPO / "tools" / "g7_ep01_dry_run.py")],
+                       capture_output=True, text=True, cwd=str(REPO), encoding="utf-8")
+    assert r.returncode == 0, r.stdout + r.stderr
+    after = (REPO / "output" / "ep_01" / "episode.md").read_text(encoding="utf-8")
+    assert before == after, "output/ep_01/episode.md THAT bi dung cham boi D5 dry-run - VI PHAM DEBT-005 lesson"
+    assert (REPO / "output" / "ep_g7_sample" / "episode_packet_ep01.yaml").exists()
+    assert (REPO / "output" / "ep_g7_sample" / "D5_dry_run_report.md").exists()
 
 
 def test_module_source_has_no_write_calls_to_domain_files():

@@ -1468,5 +1468,9 @@ files:
     domain: g7_generator
     status: active
     tier: 1
+  tools/g7_ep01_dry_run.py:
+    domain: g7_generator
+    status: active
+    tier: 1
 generated_by: tools/registry_triage.py
-total: 367
+total: 368
