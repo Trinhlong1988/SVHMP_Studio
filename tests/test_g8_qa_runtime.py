@@ -1,8 +1,9 @@
 """test_g8_qa_runtime.py — G8 D7 gate: wire + unwire-guard 2 LOP + invariant that.
 
 Mirror pattern test_g3_dialogue.py (D7). G8 = RECONCILE domain qa_runtime — gate
-tools/g8_qa_runtime_check.py canh gac 4 invariant (D2 domain / D4 pack5-19 / VNQA H1-H10 /
-DEBT-005 golden_lock). G8 la stage CUOI cua ci_gate.CHECKS (sau G7_generator).
+tools/g8_qa_runtime_check.py canh gac 6 invariant (D2 domain / D4 pack5-19 / VNQA H1-H10 /
+DEBT-005 golden_lock / D5 verdict schema / D3 pause delegation, them 9/7 sau khi CMD_AUDIT
+phat hien D3 thieu bao ve). G8 la stage CUOI cua ci_gate.CHECKS (sau G7_generator).
 
 Guard chong de-quy: gate g8_qa_runtime_check.py la STATIC-check (khong goi pytest), nen file
 test nay KHONG bi chay long trong gate — khong can bien SVHMP_G3_GATE_PYTEST_RUNNING.
@@ -20,7 +21,7 @@ sys.path.insert(0, str(REPO / "tools"))
 # ============================================================
 
 def test_g8_gate_passes_standalone():
-    """Gate chay standalone phai exit 0 (4/4 invariant xanh o trang thai repo hien tai)."""
+    """Gate chay standalone phai exit 0 (6/6 invariant xanh o trang thai repo hien tai)."""
     r = subprocess.run(
         [sys.executable, str(REPO / "tools" / "g8_qa_runtime_check.py")],
         capture_output=True, text=True, cwd=str(REPO), encoding="utf-8",

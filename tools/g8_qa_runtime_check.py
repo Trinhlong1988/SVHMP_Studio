@@ -10,6 +10,9 @@ Invariant kiem:
   2. D4  — pack5/19_qa_pipeline.md da codify luong #3 (orchestrator VNQA/skeptic). Marker bat buoc.
   3. VNQA — vnqa/pipeline.py chay H1-H10 that (run_all goi h1..h10). Chong nham nhan stale H1-H7.
   4. DEBT-005 — tests/_golden_lock.py ton tai + expose golden_lock (fix race concurrent-pytest).
+  5. D5  — qa_verdict_schema.yaml + qa_verdict_adapter.py + preflight JSON (option B thin_wrapper).
+  6. D3  — qa_post_render.py::audit_pause() delegate qa_pause_silence.audit_array() (khong
+     reimplement) - them 9/7 sau khi CMD_AUDIT phat hien D3 dedup thieu bao ve regression.
 
 Exit 0 = PASS, exit 1 = FAIL.
 """
@@ -20,7 +23,7 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8") if hasattr(sys.stdout, "reconfigure") else None
 
 REPO = Path(__file__).resolve().parent.parent
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 
 
 def _read(rel):
@@ -107,12 +110,41 @@ def check_d5_verdict_schema():
     return True, "schema+adapter+preflight-JSON (option B) day du"
 
 
+def _pause_delegation_body_ok(src):
+    """Pure check TREN SOURCE TEXT (khong doc file - de mutation-proof test goi truc tiep
+    tren ban da mutate trong bo nho): body ham audit_pause() PHAI goi
+    qa_pause_silence.audit_array() (delegation D3, 9/7) va KHONG con vong lap reimplement
+    detect (win_n/energy_db) - dung chung boi check_d3_pause_delegation() (gate) va
+    tests/test_qa_post_render_pause_delegation.py (mutation-proof), R211 khong nhan doi logic."""
+    m = re.search(r"def audit_pause\(.*?\n(?=def |\Z)", src, re.DOTALL)
+    if not m:
+        return False, "khong tim thay ham audit_pause() trong qa_post_render.py"
+    body = m.group(0)
+    # \(\s*audio\b bat buoc CO tham so (goi that voi audio/sr) - tranh khop nham voi docstring
+    # chi NHAC ten ham "qa_pause_silence.audit_array()" (rong, khong phai loi goi that).
+    if not re.search(r"qa_pause_silence\.audit_array\(\s*audio\b", body):
+        return False, "audit_pause() khong con goi THAT qa_pause_silence.audit_array(audio,...) - D3 delegation bi go (regression)"
+    if "win_n = int(0.020" in body:
+        return False, "audit_pause() co dau hieu reimplement lai vong lap detect (win_n/energy_db) - vi pham dedup D3"
+    return True, "audit_pause() delegate dung qa_pause_silence.audit_array(), khong reimplement"
+
+
+def check_d3_pause_delegation():
+    """D3 (9/7, CMD_AUDIT phat hien thieu bao ve): qa_post_render.py::audit_pause() PHAI
+    delegate qa_pause_silence.audit_array() - khong duoc quay lai reimplement logic."""
+    txt = _read("tools/qa_post_render.py")
+    if txt is None:
+        return False, "tools/qa_post_render.py khong ton tai"
+    return _pause_delegation_body_ok(txt)
+
+
 SUITE = [
     ("D2_orchestrator_domain", check_d2_orchestrator_domain),
     ("D4_pack5_codified", check_d4_pack5_codified),
     ("VNQA_h1_h10", check_vnqa_h1_h10),
     ("DEBT005_golden_lock", check_debt005_golden_lock),
     ("D5_verdict_schema", check_d5_verdict_schema),
+    ("D3_pause_delegation", check_d3_pause_delegation),
 ]
 
 

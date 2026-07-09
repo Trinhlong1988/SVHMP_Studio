@@ -1484,5 +1484,9 @@ files:
     domain: qa_runtime
     status: active
     tier: 1
+  tests/test_qa_post_render_pause_delegation.py:
+    domain: qa_runtime
+    status: active
+    tier: 1
 generated_by: tools/registry_triage.py
-total: 371
+total: 372
