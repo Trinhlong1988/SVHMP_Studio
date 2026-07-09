@@ -11,6 +11,7 @@ KPI threshold (Mr.Long lock):
 - False Negative ≤ 15%
 - Detection Rate (Logic) ≥ 90%
 """
+import os
 import subprocess
 import sys
 import shutil
@@ -22,6 +23,9 @@ EPISODE = BASE / "output/ep_01/episode.md"
 GOLDEN = BASE / "output/ep_01/episode_golden_text.md"
 POS_DIR = BASE / "tests/regression/positive"
 NEG_DIR = BASE / "tests/regression/negative"
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))  # tests/
+from _golden_lock import golden_lock  # DEBT-005 vong3: serialize mutate output/ep_01 THAT cross-process
 
 QA_TOOLS = [
     ("R86", "qa_eol_diacritic.py"),
@@ -60,8 +64,13 @@ def run_tts_adapter():
 
 
 def main():
-    # Backup current episode
-    backup = EPISODE.with_suffix(".md.regression_backup")
+    # DEBT-005 vong3: khoa cross-process bao quanh TOAN BO doan mutate output/ep_01 THAT (backup ->
+    # copy fixture -> chay QA -> restore). Backup ten theo PID (khong con co dinh) lam lop phong thu 2.
+    with golden_lock():
+        _run(EPISODE.with_suffix(f".md.regression_backup.{os.getpid()}"))
+
+
+def _run(backup):
     shutil.copy(EPISODE, backup)
 
     results = {tool[0]: {"TP": 0, "TN": 0, "FP": 0, "FN": 0} for tool in QA_TOOLS}

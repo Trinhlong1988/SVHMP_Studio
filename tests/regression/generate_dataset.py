@@ -3,12 +3,16 @@
 CRITICAL: Inject violations BEFORE metadata block (codeblock ```) so cut_metadata() KHÔNG strip them.
 """
 import shutil
+import sys
 from pathlib import Path
 
 BASE = Path(__file__).resolve().parent.parent.parent
 GOLDEN = BASE / "output/ep_01/episode_golden_text.md"
 POS_DIR = BASE / "tests/regression/positive"
 NEG_DIR = BASE / "tests/regression/negative"
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))  # tests/
+from _golden_lock import golden_lock  # DEBT-005 vong3: serialize ghi output/ep_01 THAT cross-process
 
 POS_DIR.mkdir(parents=True, exist_ok=True)
 NEG_DIR.mkdir(parents=True, exist_ok=True)
@@ -143,24 +147,31 @@ def make_negative(idx, golden_text):
 
 def verify_positive_no_violation(text):
     """Run R86 + R113 + R128 against text. Return True if clean."""
-    import tempfile, subprocess, sys, shutil
+    import os, subprocess, sys, shutil
     BASE_PATH = BASE
     EPISODE_PATH = BASE_PATH / "output/ep_01/episode.md"
-    BACKUP_PATH = EPISODE_PATH.with_suffix(".md.posverify_bak")
-    shutil.copy(EPISODE_PATH, BACKUP_PATH)
-    EPISODE_PATH.write_text(text, encoding="utf-8")
-    subprocess.run([sys.executable, str(BASE_PATH / "tools/tts_adapter_pre_render.py"), "--ep", "1", "--apply"],
-                   capture_output=True, timeout=30)
-    clean = True
-    for tool in ["qa_eol_diacritic.py", "qa_repeat_action.py", "qa_anti_generic.py", "qa_continuity.py", "qa_phonetic_safe.py"]:
-        r = subprocess.run([sys.executable, str(BASE_PATH / "tools" / tool)],
-                           capture_output=True, text=True, timeout=30, cwd=str(BASE_PATH),
-                           encoding="utf-8", errors="ignore")
-        if r.returncode != 0:
-            clean = False
-            break
-    shutil.copy(BACKUP_PATH, EPISODE_PATH)
-    BACKUP_PATH.unlink()
+    # DEBT-005 vong3: ten backup theo PID (khong con co dinh .md.posverify_bak) — 2 tien trinh
+    # chay cung luc khong giam backup cua nhau (lop phong thu 2, golden_lock da du nhung ten
+    # co dinh van la code smell).
+    BACKUP_PATH = EPISODE_PATH.with_suffix(f".md.posverify_bak.{os.getpid()}")
+    # DEBT-005 vong3: khoa cross-process bao quanh TOAN BO doan ghi output/ep_01 THAT.
+    with golden_lock():
+        shutil.copy(EPISODE_PATH, BACKUP_PATH)
+        EPISODE_PATH.write_text(text, encoding="utf-8")
+        try:
+            subprocess.run([sys.executable, str(BASE_PATH / "tools/tts_adapter_pre_render.py"), "--ep", "1", "--apply"],
+                           capture_output=True, timeout=30)
+            clean = True
+            for tool in ["qa_eol_diacritic.py", "qa_repeat_action.py", "qa_anti_generic.py", "qa_continuity.py", "qa_phonetic_safe.py"]:
+                r = subprocess.run([sys.executable, str(BASE_PATH / "tools" / tool)],
+                                   capture_output=True, text=True, timeout=30, cwd=str(BASE_PATH),
+                                   encoding="utf-8", errors="ignore")
+                if r.returncode != 0:
+                    clean = False
+                    break
+        finally:
+            shutil.copy(BACKUP_PATH, EPISODE_PATH)
+            BACKUP_PATH.unlink()
     return clean
 
 

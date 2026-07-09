@@ -1,4 +1,10 @@
-"""SVHMP — Final cleanup EP01 R58 + R61 remaining 14 issues."""
+"""SVHMP — Final cleanup EP01 R58 + R61 remaining 14 issues.
+
+CẢNH BÁO CONCURRENCY (DEBT-005): công cụ THỦ CÔNG, ghi trực tiếp output/ep_01/episode.md THẬT
+(dùng chung mọi phiên) KHÔNG có golden_lock. CHỈ chạy 1 lần bằng tay khi KHÔNG có phiên pytest/
+render nào khác đang chạy — nếu chạy song song có thể corrupt EP01. Được whitelist trong
+tests/test_no_unlocked_ep01_writer.py (_MANUAL_TOOL_EXCEPTION) vì không phải test tự chạy lặp.
+"""
 import shutil
 from pathlib import Path
 

@@ -224,6 +224,10 @@ files:
     domain: tests
     status: active
     tier: 3
+  tests/test_no_unlocked_ep01_writer.py:
+    domain: tests
+    status: active
+    tier: 3
   tests/test_harness.py:
     domain: tests
     status: active
@@ -1465,4 +1469,4 @@ files:
     status: active
     tier: 1
 generated_by: tools/registry_triage.py
-total: 366
+total: 367

@@ -12,6 +12,9 @@ BASE = Path(__file__).resolve().parent.parent.parent
 EPISODE = BASE / "output/ep_01/episode.md"
 TOOL = BASE / "tools/qa_continuity.py"
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))  # tests/
+from _golden_lock import golden_lock  # DEBT-005 vong3: serialize ghi output/ep_01 THAT cross-process
+
 
 def make_test(case):
     if case == "pass":
@@ -45,18 +48,19 @@ def run_qa():
 
 
 def run_case(case, expect_fail):
-    orig = EPISODE.read_text(encoding="utf-8")
-    EPISODE.write_text(make_test(case), encoding="utf-8")
-    try:
-        code, out = run_qa()
-        if expect_fail:
-            assert "FAIL" in out or "CONTRADICT" in out, f"Should catch {case}: {out[-300:]}"
-            print(f"  ✅ {case.upper()}: catch contradict")
-        else:
-            # case allowed
-            print(f"  ✅ {case.upper()}: code={code} (PASS expected behavior)")
-    finally:
-        EPISODE.write_text(orig, encoding="utf-8")
+    with golden_lock():
+        orig = EPISODE.read_text(encoding="utf-8")
+        EPISODE.write_text(make_test(case), encoding="utf-8")
+        try:
+            code, out = run_qa()
+            if expect_fail:
+                assert "FAIL" in out or "CONTRADICT" in out, f"Should catch {case}: {out[-300:]}"
+                print(f"  ✅ {case.upper()}: catch contradict")
+            else:
+                # case allowed
+                print(f"  ✅ {case.upper()}: code={code} (PASS expected behavior)")
+        finally:
+            EPISODE.write_text(orig, encoding="utf-8")
 
 
 if __name__ == "__main__":

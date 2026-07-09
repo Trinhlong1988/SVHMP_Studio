@@ -6,6 +6,9 @@ BASE = Path(__file__).resolve().parent.parent.parent
 EPISODE = BASE / "output/ep_01/episode.md"
 TOOL = BASE / "tools/qa_anti_generic.py"
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))  # tests/
+from _golden_lock import golden_lock  # DEBT-005 vong3: serialize ghi output/ep_01 THAT cross-process
+
 
 def run():
     r = subprocess.run([sys.executable, str(TOOL)], capture_output=True, text=True,
@@ -14,18 +17,19 @@ def run():
 
 
 def case(name, text, expect_fail):
-    orig = EPISODE.read_text(encoding="utf-8")
-    EPISODE.write_text(text, encoding="utf-8")
-    try:
-        code, out = run()
-        if expect_fail:
-            assert code != 0, f"{name} expected FAIL: {out[-200:]}"
-            print(f"  ✅ {name}: caught")
-        else:
-            assert code == 0, f"{name} expected PASS: {out[-200:]}"
-            print(f"  ✅ {name}: clean")
-    finally:
-        EPISODE.write_text(orig, encoding="utf-8")
+    with golden_lock():
+        orig = EPISODE.read_text(encoding="utf-8")
+        EPISODE.write_text(text, encoding="utf-8")
+        try:
+            code, out = run()
+            if expect_fail:
+                assert code != 0, f"{name} expected FAIL: {out[-200:]}"
+                print(f"  ✅ {name}: caught")
+            else:
+                assert code == 0, f"{name} expected PASS: {out[-200:]}"
+                print(f"  ✅ {name}: clean")
+        finally:
+            EPISODE.write_text(orig, encoding="utf-8")
 
 
 def main():

@@ -5,6 +5,12 @@ NO BASH PATCH. All fixes go through this tool + verified per fix.
 Usage:
   python tools/text_batch_fix.py --dry-run
   python tools/text_batch_fix.py --apply
+
+CẢNH BÁO CONCURRENCY (DEBT-005): với --apply, main() ghi output/ep_01/episode.md + episode_golden_text.md
+THẬT (dùng chung mọi phiên) KHÔNG có golden_lock. CHỈ chạy 1 lần bằng tay khi KHÔNG có phiên pytest/
+render nào khác đang chạy. (verify_post_fix() đã cô lập tempfile từ DEBT-005 vòng 1 — an toàn; chỉ
+đường --apply là ghi thật.) Được whitelist trong tests/test_no_unlocked_ep01_writer.py
+(_MANUAL_TOOL_EXCEPTION) vì là công cụ thủ công, 0 caller tự động, không chạy lặp trong pytest suite.
 """
 import argparse
 import os

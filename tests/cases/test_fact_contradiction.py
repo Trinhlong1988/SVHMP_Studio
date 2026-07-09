@@ -13,6 +13,9 @@ EPISODE = BASE / "output/ep_01/episode.md"
 TOOL = BASE / "tools/qa_fact_check.py"
 SSOT_TOOL = BASE / "tools/qa_ssot_diff.py"
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))  # tests/
+from _golden_lock import golden_lock  # DEBT-005 vong3: serialize ghi output/ep_01 THAT cross-process
+
 
 def make_pass():
     return """# TEST PASS
@@ -51,18 +54,19 @@ def run_tool(tool):
 
 
 def run_case(name, text, tool, expect_fail):
-    orig = EPISODE.read_text(encoding="utf-8")
-    EPISODE.write_text(text, encoding="utf-8")
-    try:
-        code, out = run_tool(tool)
-        if expect_fail:
-            assert code != 0 or "FAIL" in out, f"{name} should FAIL: {out[-300:]}"
-            print(f"  ✅ {name}: caught")
-        else:
-            assert code == 0 or "PASS" in out, f"{name} should PASS: {out[-300:]}"
-            print(f"  ✅ {name}: passed")
-    finally:
-        EPISODE.write_text(orig, encoding="utf-8")
+    with golden_lock():
+        orig = EPISODE.read_text(encoding="utf-8")
+        EPISODE.write_text(text, encoding="utf-8")
+        try:
+            code, out = run_tool(tool)
+            if expect_fail:
+                assert code != 0 or "FAIL" in out, f"{name} should FAIL: {out[-300:]}"
+                print(f"  ✅ {name}: caught")
+            else:
+                assert code == 0 or "PASS" in out, f"{name} should PASS: {out[-300:]}"
+                print(f"  ✅ {name}: passed")
+        finally:
+            EPISODE.write_text(orig, encoding="utf-8")
 
 
 if __name__ == "__main__":

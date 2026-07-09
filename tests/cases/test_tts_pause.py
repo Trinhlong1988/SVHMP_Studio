@@ -12,6 +12,9 @@ BASE = Path(__file__).resolve().parent.parent.parent
 EPISODE = BASE / "output/ep_01/episode.md"
 TOOL = BASE / "tools/qa_phonetic_safe.py"
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))  # tests/
+from _golden_lock import golden_lock  # DEBT-005 vong3: serialize ghi output/ep_01 THAT cross-process
+
 
 def run_tool():
     result = subprocess.run(
@@ -23,18 +26,19 @@ def run_tool():
 
 
 def case(name, text, expect_fail):
-    orig = EPISODE.read_text(encoding="utf-8")
-    EPISODE.write_text(text, encoding="utf-8")
-    try:
-        code, out = run_tool()
-        if expect_fail:
-            assert code != 0, f"{name} should FAIL: {out[-200:]}"
-            print(f"  ✅ {name}: caught phonetic unsafe")
-        else:
-            assert code == 0, f"{name} should PASS: {out[-200:]}"
-            print(f"  ✅ {name}: passed (safe)")
-    finally:
-        EPISODE.write_text(orig, encoding="utf-8")
+    with golden_lock():
+        orig = EPISODE.read_text(encoding="utf-8")
+        EPISODE.write_text(text, encoding="utf-8")
+        try:
+            code, out = run_tool()
+            if expect_fail:
+                assert code != 0, f"{name} should FAIL: {out[-200:]}"
+                print(f"  ✅ {name}: caught phonetic unsafe")
+            else:
+                assert code == 0, f"{name} should PASS: {out[-200:]}"
+                print(f"  ✅ {name}: passed (safe)")
+        finally:
+            EPISODE.write_text(orig, encoding="utf-8")
 
 
 def main():
