@@ -21,9 +21,10 @@
 # ============================================================
 
 version: 1.0
-proposal_status: DRAFT
+proposal_status: APPROVED
 writer_of_record: mr_long
-mr_long_decision: PENDING
+mr_long_decision: APPROVED_B_thin_wrapper
+decision_date: "2026-07-09 (Mr.Long chon phuong an B: giu 3 format native, them 1 adapter mong doc ca 3 tra ve envelope chuan - it xam pham, rui ro thap. Prerequisite (nang svhmp_preflight_qa.py phat JSON verdict, GIU nguyen exit code cu) van bat buoc lam truoc. 3 cau hoi phu (PASS_WITH_WARNING giu/bo, preflight exit_2 semantics, canonical enum 4-trang-thai) CHUA duoc chot rieng - CMD_BUILD hoi lai truoc khi field-hoa neu can quyet dinh cu the tung diem, khong tu suy dien tu quyet dinh A/B nay.)"
 
 # ------------------------------------------------------------
 # VI SAO CAN FILE NAY
