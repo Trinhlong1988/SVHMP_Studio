@@ -17,5 +17,24 @@
 *(ROADMAP — CHƯA gate: render tự gọi preflight như stage bắt buộc trong entrypoint — hiện render chỉ có R86 STAGE1 + G2; preflight vẫn do verify-chain gọi. Cùng lớp nợ: `svhmp_100check_master.py` L30 `PIPELINE` còn trỏ `C:\tmp` — ngoài scope fix 2/7, cần task riêng.)*
 **Promotion Rules:** theo mục Promotion Rules ở `governance/constitution/00_constitution.md` — reconcile, KHÔNG nhân đôi.
 
+## Luồng #3 — Orchestrator VNQA/Skeptic (CODIFY G8 D4, 2026-07-09 — chuỗi ĐANG CHẠY THẬT, trước đây governance IM LẶNG)
+> **Lỗ hổng đã đóng (G8 D4):** `qa_skeptic_orchestrator.py` = **manager chính thức** của domain `qa_runtime` (blueprint_domains.yaml:613) và chạy thật trong production, NHƯNG trước 9/7 KHÔNG doc pack5 nào ghi nhận (governance blind spot — task doc G8 lesson #14). Đây là verify-chain POST-generation trên episode text, TÁCH khỏi render-gate của 2 luồng trên (không nhân đôi).
+
+**Entry:** `tools/qa_skeptic_orchestrator.py::orchestrate(ep, episode_path)` — chuỗi: **AUTO_FIX → VNQA → (đọc Claude QA) → Skeptic → final verdict**.
+
+**Chuỗi thật (file:line):**
+1. **AUTO_FIX** (Phase H4): `vnqa/auto_fix.py --apply` (registry literal map Mr.Long duyệt, atomic ghi + backup) — `qa_skeptic_orchestrator.py:74-90`, timeout 60s.
+2. **Tiền đề:** cần `runtime/qa_output_ep_{N}.json` (Claude QA ghi qua `qa_output_writer.py`) — thiếu → abort có recommendation (`:96-102`).
+3. **VNQA** library check: `vnqa/pipeline.py` → `runtime/vnqa_ep_{N}.json` (`:108-119`, timeout 120s). **`VietnameseQAChecker.run_all()` chạy H1-H10** (`vnqa/pipeline.py:372-381`):
+   - H1 POS-rhythm (adverb>15%, token-repeat, tier-1 AI word) · H2 neologism/compound (skeleton) · H3 collocation (skeleton) · H4 idiom overuse · H5 journalistic-tone · H6 sentence run-on (skeleton PhoNLP) · H7 n-gram repetition · H8 vnsl_lexicon forbidden (verb_misuse/logic_violations→critical/temporal/phonetic) · H9 BigVGAN stop-consonant-tail · H10 duration 15-18p (EP01 grandfathered).
+   - VNQA verdict: `critical→FAIL`, `warning≥5 hoặc (warning≥1 || minor≥3)→WARN`, else `PASS` (`:387-398`).
+   - ⚠️ **NHÃN NỘI BỘ LỖI THỜI (D1 phát hiện, chưa sửa code — ngoài scope D4):** `phase_h_version` trả `"H1-H7 v1.0"` (`:402`), orchestrator log "H1-H7" (`:114`), docstring pipeline "H1-H8", blueprint "VNQA H1-H9" — TẤT CẢ đếm thiếu; **code thật chạy H1-H10**. Doc này dùng H1-H10.
+4. **Skeptic** đối kháng (Ollama local): nếu `qa_verdict==REGEN` → bỏ skeptic, final=REGEN (`:130-141`); ngược lại gọi `adversarial_skeptic.py --provider ollama_local` (`:145-153`, timeout 300s).
+5. **Decision tree final_verdict** (`:174-201`): Skeptic `ACCEPT` & 0 critical-missed → **PASS**; `ACCEPT` & có critical-missed → **REVIEW_REQUIRED**; `REJECT` → **REGEN**; `NEEDS_HUMAN`/lỗi skeptic → **REVIEW_REQUIRED**. Tích hợp VNQA: `VNQA FAIL` → escalate **REGEN**; `VNQA WARN` + PASS → chỉ ghi chú (không hạ cấp).
+
+**Output:** `runtime/final_verdict_ep_{N}.json` với `final_verdict ∈ {PASS, REGEN, REVIEW_REQUIRED}` (+ REGEN từ nhánh sớm). 3 format verdict (orchestrator/VNQA/preflight) hiện CHƯA hợp nhất — field-hóa `qa_verdict_schema.yaml` là việc **D5 (chờ Mr.Long duyệt)**, không phải D4.
+
+**Reconcile (chống nhân đôi R211):** luồng #3 = content-QA POST-generation trên text; luồng #1/#2 = gate TRONG/QUANH render; `21_detector_suite.md` = audio-detector SAU render. Ba tầng tách bạch, KHÔNG chồng logic. `qa_post_render.py` (audio, luồng #4/#5) có trùng lặp với `qa_pause_silence`/`qa_boundary_artifact` — thuộc **D3 dedupe** (chờ Mr.Long xác nhận tolerance R96), không phải luồng #3.
+
 ## Reconcile
-`pack3/11` = code-QA (pytest/ci_gate); doc này = content-QA render-time — hai tầng bổ sung. G2 dùng chung `character_manager` với preflight (single-source R210), không có bản sao logic thứ hai.
+`pack3/11` = code-QA (pytest/ci_gate); doc này = content-QA render-time + POST-generation verify-chain (luồng #3) — các tầng bổ sung. G2 dùng chung `character_manager` với preflight (single-source R210), không có bản sao logic thứ hai.
