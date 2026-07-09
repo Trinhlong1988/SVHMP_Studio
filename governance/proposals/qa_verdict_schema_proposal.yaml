@@ -1,0 +1,135 @@
+# ============================================================
+# DE XUAT — qa_verdict_schema.yaml (G8 D5, TASK_G8_QA_RUNTIME.md). HOP NHAT 3 format verdict
+# QA dang ton tai THAT thanh 1 schema. File NAY KHONG dat trong bible/ va KHONG tu field-hoa —
+# la PROPOSAL cho Mr.Long duyet (mirror dung quy trinh episode_schema_proposal.yaml -> APPROVED_B,
+# story_plan_schema_proposal.yaml -> APPROVED_A). Duyet xong moi field-hoa thanh schema that.
+#
+# NGUON CAN CU (da doc code that, file:line — khong bia):
+#   DA DOC KY:
+#   - tools/qa_skeptic_orchestrator.py:203-230 (result dict) + :174-201 (decision tree) +
+#     :222-227 (next_action map 4 trang thai) — format #1 (orchestrator final_verdict).
+#   - tools/vnqa/pipeline.py:369-408 (run_all + verdict aggregate) — format #2 (VNQA).
+#   - tools/svhmp_preflight_qa.py:32/220/224 (sys.exit 2/1/0, KHONG co JSON verdict) — format #3.
+#   - reports/G8_QA_REALITY_MAP.md (D1, da commit 4509527) — ban do 6 luong + xac nhan luong #3.
+#   - governance/proposals/episode_schema_proposal.yaml (mau format proposal goc).
+#   CHUA DOC HET (trung thuc):
+#   - Chua ro PASS_WITH_WARNING (co trong next_action map orchestrator :224 nhung decision tree
+#     :174-201 KHONG thay gan gia tri nay — co the assign o nhanh khac chua doc / reserved). Ghi lai
+#     de Mr.Long biet, KHONG tu suy dien.
+#   - Chua doc het semantics preflight exit 2 (:32) — la usage-error hay content-block? Can xac nhan
+#     truoc khi map vao REVIEW_REQUIRED.
+# ============================================================
+
+version: 1.0
+proposal_status: DRAFT
+writer_of_record: mr_long
+mr_long_decision: PENDING
+
+# ------------------------------------------------------------
+# VI SAO CAN FILE NAY
+# ------------------------------------------------------------
+# blueprint qa_runtime khai schema planned. Hien co 3 format verdict THAT chay song song, KHONG
+# hop nhat -> khi G7 generator + pipeline doc verdict, moi noi doc 1 kieu khac nhau (orchestrator
+# JSON 4-enum / VNQA JSON 3-enum / preflight chi exit-code). Schema nay hop nhat de moi consumer
+# (generator, story_planner, qa_runtime gate D7) doc 1 cau truc chuan. KHONG PHAI "chua co gi" —
+# la "co 3, chua hop nhat" (bai hoc DEBT-002: dung ket luan thieu khi that ra co san noi khac).
+# KHONG mandate retrofit 50 tap cu — danh cho OUTPUT MOI cua pipeline.
+
+# ------------------------------------------------------------
+# 3 FORMAT VERDICT THAT (da co — hop nhat, khong sang tac)
+# ------------------------------------------------------------
+existing_formats:
+  format_1_orchestrator:
+    file: tools/qa_skeptic_orchestrator.py
+    output_path: "runtime/final_verdict_ep_{N}.json"
+    verdict_field: final_verdict
+    enum: [PASS, PASS_WITH_WARNING, REGEN, REVIEW_REQUIRED]   # next_action map :222-227
+    enum_produced_by_decision_tree: [PASS, REGEN, REVIEW_REQUIRED]   # :174-201 — PASS_WITH_WARNING CHUA thay gan (xem CHUA DOC HET)
+    rich_fields: [qa_verdict, vnqa_verdict, skeptic_verdict, final_reasoning, skeptic_missed_count, next_action, ts]
+    note: "Verdict TONG HOP cuoi cung (dung Claude QA + VNQA + Skeptic). Day la verdict co tham quyen cao nhat trong 3."
+  format_2_vnqa:
+    file: tools/vnqa/pipeline.py
+    output_path: "runtime/vnqa_ep_{N}.json"
+    verdict_field: verdict
+    enum: [PASS, WARN, FAIL]   # :391-398 (critical->FAIL, warning>=5 hoac warning>=1||minor>=3 ->WARN, else PASS)
+    rich_fields: ["issues[]", "issues_count_by_severity{critical,warning,minor}", stats, phase_h_version]
+    note: "1 tang con (library check H1-H10). phase_h_version tra 'H1-H7 v1.0' = NHAN STALE (code chay H1-H10, xem D1 report). Verdict nay duoc orchestrator TICH HOP (VNQA FAIL -> escalate REGEN)."
+  format_3_preflight:
+    file: tools/svhmp_preflight_qa.py
+    output_path: "(khong co JSON)"
+    verdict_field: "(chi exit code)"
+    enum: {exit_0: pass, exit_1: block_render, exit_2: early_error_or_usage}
+    rich_fields: []
+    gap: "KHONG phat JSON verdict — chi exit code. Day la TIEN DE PHAI SUA truoc khi hop nhat duoc (xem prerequisite)."
+
+# ------------------------------------------------------------
+# TIEN DE BAT BUOC (code change — CAN Mr.Long duyet, R7 write workflow)
+# ------------------------------------------------------------
+prerequisite:
+  preflight_json_upgrade:
+    desc: "Nang svhmp_preflight_qa.py phat 1 JSON verdict (ngoai exit code hien co, GIU nguyen exit
+          code de khong pha caller cu) — vd runtime/preflight_ep_{N}.json voi {verdict, issues[], exit_code}."
+    why: "Khong co JSON thi preflight khong the tham gia schema hop nhat (chi exit-code khong mang du lieu issue)."
+    constraint: "R7: doc svhmp_preflight_qa.py toan bo + xac nhan khong pha 11 rule text + FULL_TEXT_GATE
+                (R197) truoc khi sua. KHONG tu sua khi chua co ban duyet. GIU exit code cu (backward-compat)."
+    status: PENDING_MR_LONG
+
+# ------------------------------------------------------------
+# SCHEMA DRAFT — 2 PHUONG AN
+# ------------------------------------------------------------
+schema_draft:
+
+  shared:
+    canonical_verdict_enum_proposed: [PASS, PASS_WITH_WARNING, REGEN, REVIEW_REQUIRED]
+    rationale: "Lay enum orchestrator (4 trang thai, day du nhat + co tham quyen cao nhat) lam CHUAN.
+               VNQA 3-enum va preflight exit-code MAP VAO chuan nay."
+    mapping_proposed:
+      from_vnqa:   {PASS: PASS, WARN: PASS_WITH_WARNING, FAIL: REGEN}
+      from_preflight: {exit_0: PASS, exit_1: REGEN, exit_2: REVIEW_REQUIRED}   # exit_2 semantics CAN xac nhan (xem CHUA DOC HET)
+    common_envelope_fields:
+      - verdict: {type: enum, values: [PASS, PASS_WITH_WARNING, REGEN, REVIEW_REQUIRED], required: true}
+      - source: {type: enum, values: [orchestrator, vnqa, preflight], required: true, desc: "verdict den tu tang nao"}
+      - issues: {type: list, required: false, item: "{check, severity:critical|warning|minor, evidence, suggestion}"}
+      - severity_counts: {type: object, fields: {critical: int, warning: int, minor: int}}
+      - reasoning: {type: string, required: false}
+      - ep_number: {type: int, required: true}
+      - ts: {type: string, required: true, desc: "ISO8601 UTC"}
+
+  phuong_an_A_canonical_unify:
+    ten: "1 schema CHUAN duy nhat — 3 tang deu EMIT dung common_envelope (verdict da map ve 4-enum)"
+    mo_ta: "Field-hoa qa_verdict_schema.yaml theo canonical enum + common_envelope. Sua 3 tool de moi
+           tool output dung envelope nay (VNQA/preflight map verdict ve 4-enum; orchestrator gan nhu da dung).
+           Consumer (generator/gate D7) chi doc 1 schema."
+    uu: "Dong nhat tuyet doi; consumer don gian; de enforce (D7 gate kiem 1 schema)."
+    nhuoc: "Sua ca 3 tool (nhieu diem cham, nhat la VNQA/preflight) — rui ro pha caller cu; can regression day du.
+           preflight can nang JSON (prerequisite) truoc."
+  phuong_an_B_thin_wrapper:
+    ten: "Giu 3 format native — them 1 schema 'verdict_envelope' MONG lam lop chung, 1 adapter map moi format vao"
+    mo_ta: "Khong sua sau 3 tool. Dinh nghia qa_verdict_schema.yaml = envelope + 1 ham adapter
+           (vd qa_verdict_adapter.py) doc 3 file native -> tra envelope chuan cho consumer. 3 tool giu nguyen output."
+    uu: "It xam pham (khong dong vao logic 3 tool); rui ro regression thap; lam nhanh."
+    nhuoc: "Ton tai 2 tang (native + envelope) — phai giu adapter dong bo khi 3 tool doi output; consumer
+           phai qua adapter. Van can preflight JSON (prerequisite) de adapter doc duoc."
+    van_CHUNG: "Ca A va B deu can prerequisite (preflight phat JSON) + dung canonical 4-enum + mapping tren."
+
+# ------------------------------------------------------------
+# PHAM VI AP DUNG
+# ------------------------------------------------------------
+scope:
+  applies_to: "OUTPUT MOI cua pipeline QA (verdict tap moi sinh qua G7 + qa_runtime gate D7)"
+  does_not_mandate: "KHONG retrofit verdict 50 tap cu. 3 tool hien co reconcile dan, khong pha caller cu (GIU exit code preflight)."
+
+# ------------------------------------------------------------
+# DECISION REQUEST
+# ------------------------------------------------------------
+decision_request:
+  question: "Hop nhat verdict theo huong nao, va canonical enum + mapping tren co dung khong?"
+  options:
+    A_canonical_unify: "Duyet A (1 schema chuan, sua 3 tool emit envelope) — dong nhat nhat, sua nhieu"
+    B_thin_wrapper: "Duyet B (giu native + adapter envelope) — it xam pham, ton 2 tang"
+    C_reject_redesign: "Khong dung huong — thiet ke lai"
+  con_can_mr_long_chot:
+    - "Duyet prerequisite: nang svhmp_preflight_qa.py phat JSON verdict (GIU exit code cu) — R7, chua sua khi chua duyet"
+    - "PASS_WITH_WARNING: giu trong enum chuan khong (dju decision tree orchestrator chua gan)? hay bo?"
+    - "preflight exit_2 map ve REVIEW_REQUIRED co dung semantics khong (can xac nhan exit_2 la content-block hay usage-error)"
+    - "canonical enum = 4-enum orchestrator, hay Mr.Long muon enum khac"
