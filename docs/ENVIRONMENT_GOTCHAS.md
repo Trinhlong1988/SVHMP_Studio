@@ -213,6 +213,30 @@ phạm vi gốc, CHẶN NGAY (gửi tin bảo dừng) thay vì để tiếp tụ
 nặng, nhắc thẳng trong prompt: kiểm `Get-Process python` trước khi chạy full-suite, tránh race-
 condition đã biết.
 
+## G18 — `.bat`/`.ps1` launcher tiếng Việt: BAT cần LF-free (CRLF), PS1 cần BOM — NGƯỢC NHAU, dễ nhầm với G1
+
+Case thật (9/7, tạo `SVHMP_CMD_BUILD/BUILD_2/AUDIT.bat` trên Desktop gọi
+`tools/launch_cmd_session.ps1` với path tiếng Việt có dấu):
+
+1. **`.bat` viết bằng tool ghi LF-only (Unix line ending)** → `cmd.exe` tokenize sai, lỗi
+   `'ul' is not recognized`, `'oProfile' is not recognized` (mất vài ký tự đầu token, do thiếu
+   CR trước LF làm cmd đọc lệch dòng dưới codepage 65001). **Fix:** `.bat` PHẢI CRLF —
+   `[System.IO.File]::WriteAllText(path, ($lines -join "`r`n") + "`r`n", (New-Object
+   Text.UTF8Encoding $false))` (no BOM cho .bat).
+2. **`.ps1` chứa literal tiếng Việt (path, chuỗi) không BOM** → `powershell.exe` (Windows
+   PowerShell 5.1, KHÁC `pwsh` 7) đọc source file bằng codepage hệ thống thay vì UTF-8 khi
+   thiếu BOM → mojibake ngay trong biến hardcode (`"DỰ ÁN AI"` in ra `"Dá»° ÃN AI"`), dù
+   `Get-Content -Encoding UTF8` đọc *nội dung file khác* (không phải chính .ps1 đang chạy) vẫn
+   đúng — 2 việc khác nhau, dễ tưởng đã fix. **Fix:** `.ps1` có literal non-ASCII PHẢI ghi BOM —
+   `(New-Object Text.UTF8Encoding $true)`.
+
+**NGƯỢC nhau, dễ nhầm với G1** (G1 nói Python cần `utf-8-sig` vì PowerShell ghi thừa BOM — ở
+đây lại là trường hợp **thiếu BOM gây lỗi**, đúng ngược). Quy tắc gộp: `.bat` = CRLF + no-BOM;
+`.ps1` có ký tự ngoài ASCII = BOM (LF hay CRLF nội dung không quan trọng với `.ps1`, PowerShell
+tolerant cả 2). **Luôn test dry-run thật** (biến env cờ như `SVHMP_LAUNCH_DRYRUN=1` skip lệnh
+cuối) qua `cmd /c "echo. | script.bat > out.txt 2>&1"` (pipe `echo.` để không treo ở `pause`)
+trước khi giao Mr.Long double-click — 2 lỗi trên hoàn toàn im lặng nếu chỉ đọc code bằng mắt.
+
 ## Nguồn cảm hứng
 So sánh với Hermes Agent (Nous Research, 4/7): pattern "skill file agent tự viết, mọi lần gọi lại
 đọc được" đúng hướng nhưng KHÔNG áp dụng "tự viết không kiểm duyệt" — file này làm thủ công, review
