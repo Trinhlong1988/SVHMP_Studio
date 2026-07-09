@@ -78,6 +78,10 @@ claims:
     released_at: '2026-07-05T01:39:40'
     session: CMD_BUILD_3
     status: released
+  publish_freshness_advisory:
+    claimed_at: '2026-07-09T09:28:04'
+    session: CMD_TONG_TRO_LY
+    status: active
   svaf_patterns_backlog:
     claimed_at: '2026-07-04T21:37:49'
     released_at: '2026-07-04T23:14:23'

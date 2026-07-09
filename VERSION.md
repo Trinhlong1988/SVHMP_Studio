@@ -3,11 +3,21 @@ project: SVHMP_Studio
 current_round: 21
 current_version: v1.1.0-tier2x-phase1
 status: Tier 2.x Phase 1 Voice Profile Manager FROZEN — 10-round regression 150/150 PASS
-last_update_ts: 2026-06-30T19:30:00
-last_update_by: CMD THỰC THI session 30/6 19:00+ (Phase 0 text fixes T1-T14 + R178b/R180b/R181b/R181c codified + Phase 1 Voice Profile Manager + bible/15 v2.0 + tests 15-case + 10-round regression 150/150 PASS in 18s + STRICT PROTOCOL report)
+last_update_ts: 2026-07-09T09:42:25
+last_update_by: CMD TỔNG TRỢ LÝ session 9/7 09:42 (Publish freshness ADVISORY thêm vào auditor.py — non-gating, last_update_ts >= max released_at, R195 promote hard-gate sau; test 5-case tempfile; registry 0/0/0; per Mr.Long authorization 2026-07-09)
 rule_break_count: 7
 schema_version: 1
 ---
+
+## Publish Freshness Advisory (2026-07-09 09:42) — CMD TỔNG TRỢ LÝ
+
+**per Mr.Long authorization 2026-07-09.** Vá gap thật (duy nhất) tìm được sau vòng phản biện: `publish_auditor()` chỉ kiểm VERSION.md **tồn tại**, KHÔNG kiểm nội dung mới → drift ~9 ngày lọt gate (header round 21 / ts 30-6 vs pack release 5-7).
+
+- **Thêm** `tools/auditor.py::version_freshness_advisory()` — **ADVISORY, KHÔNG gate** (không đụng `decide()`; R209/R213 nguyên vẹn). Metric bất biến từ workflow (MASTER luật 11 "release sau khi push"): `VERSION.md.last_update_ts >= max(build_claim.released_at)` — KHÔNG ngưỡng tùy tiện.
+- **R195**: cấm hard-gate từ baseline chưa chuẩn → advisory trước; LEAD promote thành hard-fail SAU khi VERSION.md content được owner reconcile.
+- **Test**: `tests/test_version_freshness_advisory.py` 5-case trên tempfile (bài học DEBT-005), đã đăng ký registry (0/0/0 PASS). Không gắn số R mới (tránh cổng codify-rule).
+- **Backup**: `tools/auditor.py.bak.freshness_advisory_09_07` (R8).
+- **⚠ TODO owner (KHÔNG bịa):** `current_round: 21` + `status` header còn lệch với thực tế pack-era (g4..g7 / body đã có Round 23). CMD TỔNG TRỢ LÝ chỉ cập nhật `last_update_ts` (đã touch VERSION.md thật) — **round/status reconcile thuộc live session/LEAD**, không đoán số.
 
 ## Round 21 (2026-06-30 19:30) — Tier 2.x Phase 1 SHIP
 

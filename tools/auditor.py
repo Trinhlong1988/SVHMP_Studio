@@ -9,6 +9,7 @@ kem Evidence Standard (commit/branch/commands/PASS-FAIL matrix/exit code).
   Publish Auditor      -> artifact/version ton tai
 Exit 0 = SHIP, 1 = BLOCK_SHIP.
 """
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -51,6 +52,45 @@ def publish_auditor():
     return ('Publish', not missing, 'artifacts OK' if not missing else f'MISSING {missing}', 0 if not missing else 1)
 
 
+def _parse_version_ts(version_path=None):
+    """last_update_ts trong VERSION.md (ISO-8601) hoac None."""
+    p = Path(version_path) if version_path else (SVHMP / 'VERSION.md')
+    try:
+        text = p.read_text(encoding='utf-8')
+    except Exception:
+        return None
+    m = re.search(r'last_update_ts:\s*([0-9T:\-]+)', text)
+    return m.group(1).strip() if m else None
+
+
+def _max_released_at(claim_path=None):
+    """released_at moi nhat trong build_claim.yaml (ISO-8601) hoac None."""
+    p = Path(claim_path) if claim_path else (SVHMP / 'runtime' / 'build_claim.yaml')
+    try:
+        text = p.read_text(encoding='utf-8')
+    except Exception:
+        return None
+    ts = re.findall(r"released_at:\s*'?([0-9T:\-]+)'?", text)
+    return max(ts) if ts else None
+
+
+def version_freshness_advisory(version_path=None, claim_path=None):
+    """ADVISORY (KHONG gate — khong dua vao decide()): VERSION.md phai duoc cap nhat
+    it nhat ngang moc pack duoc release moi nhat. Bat bien tu chinh workflow
+    (MASTER luat 11: release SAU khi push) — KHONG dung nguong tuy tien.
+    R195: KHONG hard-gate tu baseline chua chuan -> advisory truoc, LEAD promote hard-gate sau.
+    So sanh ISO-8601 cung dinh dang = so sanh thoi gian.
+    Tra ('VersionFreshness', is_fresh, detail) — is_fresh=True khi khong du du lieu (skip)."""
+    ver_ts = _parse_version_ts(version_path)
+    rel_ts = _max_released_at(claim_path)
+    if not ver_ts or not rel_ts:
+        return ('VersionFreshness', True, 'khong du du lieu de danh gia (skip)')
+    if ver_ts >= rel_ts:
+        return ('VersionFreshness', True, f'VERSION.md ({ver_ts}) >= pack release moi nhat ({rel_ts})')
+    return ('VersionFreshness', False,
+            f'STALE: last_update_ts {ver_ts} < pack release moi nhat {rel_ts} -> can cap nhat VERSION.md')
+
+
 def decide(results):
     """results: list[(name, ok, detail, code)] -> (verdict, exit_code).
     Enforce: BAT KY auditor FAIL -> BLOCK_SHIP.
@@ -75,6 +115,8 @@ def main():
     print("PASS/FAIL matrix:")
     for name, ok, detail, code in results:
         print(f"  [{'PASS' if ok else 'FAIL'}] {name} Auditor — {detail} (exit {code})")
+    adv_name, adv_ok, adv_detail = version_freshness_advisory()
+    print(f"Advisory (KHONG gate — R195 promote sau): [{'OK' if adv_ok else 'STALE'}] {adv_name} — {adv_detail}")
     verdict, ec = decide(results)
     print(f"Final verdict: {verdict}")
     print(f"Exit code: {ec}")

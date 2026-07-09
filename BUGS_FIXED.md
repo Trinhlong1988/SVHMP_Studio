@@ -511,3 +511,16 @@ Ghi chú: R80.peak -1.0dB do master v65 alimiter 0.85 (Mr.Long lock) — R198 ca
 | 5 voice artifact types tách riêng | R188-R191 + R190b | tools/qa_*.py 5 modules |
 | Hidden code audit gate | (gate 3) | tools/hidden_audit.py + tools/hardcode_classifier.py |
 | Historical bug replay gate | (gate 4) | tools/historical_bug_replay.py |
+
+---
+
+## B_publish_freshness (2026-07-09 09:42) — CMD TỔNG TRỢ LÝ, per Mr.Long authorization
+
+- **Bug (process gap):** `tools/auditor.py::publish_auditor()` chỉ `.exists()` VERSION.md, KHÔNG kiểm nội dung freshness → version drift ~9 ngày LỌT Publish gate (VERSION.md header round 21 / last_update_ts 2026-06-30 trong khi pack release mới nhất 2026-07-05, git tới 09-07). Phát hiện qua vòng phản biện (firsthand + agent refute) khi đánh giá quy trình.
+- **Root cause:** gate thiết kế existence-only; freshness/changelog nằm trong "ROADMAP — CHƯA gate" của `04_publish_auditor.md` (kỷ luật review, chưa cưỡng chế).
+- **Fix:** thêm `version_freshness_advisory(version_path, claim_path)` — **ADVISORY non-gating** (không đụng `decide()` → R209/R213 nguyên vẹn). Metric bất biến `last_update_ts >= max(released_at)` (không ngưỡng tùy tiện). In dòng `Advisory: [OK/STALE]` trong report auditor.
+- **Vì sao advisory chứ không hard-gate (R195):** VERSION.md đang stale (baseline chưa chuẩn) + `auditor.py` bị pytest R213 gọi transitively trong đường push → hard-fail sẽ chặn push CẢ live session. Advisory trước, LEAD promote hard-gate SAU khi owner reconcile VERSION.md content.
+- **Regression:** `tests/test_version_freshness_advisory.py` 5-case tempfile (DEBT-005 lesson) — stale/fresh/equal/missing-skip/advisory-không-đổi-verdict. PASS. R209 5/5 PASS, R213 PASS, registry 0/0/0 PASS. Advisory chạy repo thật bắt đúng STALE.
+- **Backup:** `tools/auditor.py.bak.freshness_advisory_09_07` (R8).
+- **Process change (R_SUPREME test_process_failure):** gap này lọt vì gate chỉ kiểm tồn tại — đề xuất LEAD promote advisory→hard-gate publish_auditor sau khi VERSION.md content reconcile, để drift KHÔNG lọt lần nữa.
+- **Còn lại (owner):** header `current_round`/`status` reconcile pack-era — KHÔNG bịa số, thuộc live session/LEAD.

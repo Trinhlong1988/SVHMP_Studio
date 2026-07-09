@@ -222,6 +222,7 @@ domains:
       - tests/test_bp7_narrative.py   # BP7: mutation (reveal-thieu/thu-tu-sai-bible01/cultural-facet-ma/pacing-hardcode/curve-ma/dup-key)
       - tests/test_bp8_production.py   # BP8: mutation (tool-ma/drift-runtime_flow/gate-auto-caption-ma/hardcode/named-khong-enforced)
       - tests/test_bp9_compliance.py   # BP9: mutation (domain-ma/hard-boundary-thieu/hardcode/drift-bp0/dup-key/doc-unwire-guard)
+      - tests/test_version_freshness_advisory.py   # Publish: VERSION.md freshness ADVISORY (non-gating; last_update_ts >= max released_at; R195 promote hard-gate sau) — per Mr.Long authorization 2026-07-09
     promotion_status: locked   # GOVERNANCE v1.0 (Mr.Long signed 2/7): DU 5 pack locked+tagged, freeze_gate 5/5 moi pack, cross-pack audit nhat quan; tag governance-v1.0
     enterprise_pack_progress:
       pack1_constitution: locked   # FROZEN v1.0 (Mr.Long authorized 2/7): 6 doc 11-element, promotion_guard HANH VI (pre-push+server-CI, battle-tested), test_pack1_docs; tag pack1-constitution-v1.0
