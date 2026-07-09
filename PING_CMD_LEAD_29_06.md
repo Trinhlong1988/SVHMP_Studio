@@ -2,6 +2,10 @@
 
 ---
 ## AUTO LOG (tự động cập nhật)
+- `18:02` **[INFO]** Info: Mr.Long giao CMD_BUILD_2: TASK_DEBT005_ENFORCEMENT_ROUND3.md (vong 3, 7 writer bo sot khong golden_lock) - doc file nay truoc, D1 va 7 file + D2 enforcement test, KHONG chi va instance. Claim bang build_claim.py neu can, hoac lam truc tiep vi pham vi nho + ro rang.
+- `14:34` **[INFO]** Info: G8-D3/D5 phan tich: D3 chi pause la dup that (boundary/onset la rule khac R188/R190b) + 4 file thuoc domain audio_qa owner CMD_AUDIO -> DUNG cho Mr.Long xac nhan pham vi + phoi hop CMD_AUDIO. D5 exit_2=usage-error (R9), con 2 cau hoi thiet ke cho Boss. reports/G8_D3_DEDUPE_ANALYSIS.md.
+- `14:21` **[FIX]** Em fix: G8-D6 xong: khai tu 4 file batch legacy (deep_200_rounds/+_all_rules/verify_50_rounds/sequential_full_auto) - 0 live caller, registry 0/0/0 (commit ddca24b). Dang push.
+- `14:16` **[INFO]** Info: CMD_BUILD_2 thuc thi D6/D3/D5 theo quyet dinh Mr.Long (717342a). Bat dau D6 khai tu 4 file batch legacy.
 - `14:11` **[APPROVE]** Mr.Long approve: g7_generator locked v1.0 (tag g7-generator-v1.0, per Mr.Long authorization 9/7) - D1-D5 audit doc lap PASS Engineering Validation R196, freeze_gate 4/4 FREEZE-READY, pushed 3e42ebd
 - `13:41` **[FIX]** Em fix: G8-D7: g8_qa_runtime_check.py gate wired vao ci_gate (stage cuoi, ONT8001) + unwire-guard - 4/4 invariant xanh (commit 501a36b)
 - `12:22` **[FIX]** Em fix: DEBT-005 RESIDUAL fixed triet de (golden_lock cross-process) - 2 writer con sot (test_publish_score/forbidden_phrases) da khoa. MOI PHIEN PULL de het red gate race. Proof concurrency that pass.
