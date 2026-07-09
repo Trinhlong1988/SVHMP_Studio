@@ -31,6 +31,7 @@ CHECKS = [
     ('g5_supernatural', 'tools/g5_supernatural_check.py'),   # G5: typology + possession SM cau truc (KHONG quet noi dung episode - do la G8)
     ('G4_world',  'tools/g4_world_check.py'),   # G4: timeline+event_ledger+story_consistency 1-cua (D1/D2/D3/D4)
     ('G6_story_planner', 'tools/g6_story_planner_check.py'),   # G6a: decision_policy_check + decision_engine packet self-check (G6b chua build)
+    ('G7_generator', 'tools/g7_generator_check.py'),   # G7 D4: episode_generator pytest + self-check + budget_sheet M4 + no-write-domain + static no-write
 ]
 
 # Error Code Standard (SVAF backlog 2/5, governance/error_code_standard.yaml) — chi
@@ -41,7 +42,7 @@ STAGE_CODES = {
     'R203_conf': 'QA1011', 'R205_char': 'QA1012', 'R206_voice': 'QA1013',
     'R207_canon': 'QA1014', 'R208_age': 'QA1015', 'G3_dialogue': 'QA1016', 'project_config': 'ART4002',
     'G2_roster': 'QA1001', 'pytest_suite': 'QA1099', 'g5_supernatural': 'ONT5001',
-    'G4_world': 'ONT4001', 'G6_story_planner': 'ONT6001',
+    'G4_world': 'ONT4001', 'G6_story_planner': 'ONT6001', 'G7_generator': 'ONT7001',
 }
 
 

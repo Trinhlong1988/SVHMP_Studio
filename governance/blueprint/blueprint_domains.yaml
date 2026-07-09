@@ -584,12 +584,12 @@ domains:
       - {path: prompts/ep_scaffold_template.md, status: exists}
       - {path: bible/08_novelty_constraints.yaml, status: exists}
     manager:
-      status: planned
-      planned_path: tools/episode_generator.py
-      owner: generator
-      reason_not_exists_yet: "Episode hien sinh boi CMD prompt-based (nguoi + LLM), chua dong goi thanh tool tai lap duoc."
-      target_milestone: M2_planner_generator
-      blocking_dependency: "story_planner + decision_engine (M2) + episode schema duyet"
+      status: exists
+      path: tools/episode_generator.py   # G7 D2 (9/7): build_episode_packet() rap 14 domain -
+      owner: generator                    # KHONG viet prose (van la CMD prompt-based, xem module docstring)
+      scope_note: "v1 CHI ep_number=1 xay du du lieu that (EP01 golden reference, 14/14 domain
+        co du lieu de doi chieu) - ep khac tra ve pending+ly do (khong bia, R195). Xem
+        DEBT-007 (decision_engine.plan_ref key-mismatch, chua fix - khong phai loi generator)."
     schema:
       status: exists
       path: governance/blueprint/schemas/episode_schema.yaml   # G7 D1 (9/7): field-hoa

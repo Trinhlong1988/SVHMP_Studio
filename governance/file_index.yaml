@@ -1456,5 +1456,17 @@ files:
     domain: g6_story_planner
     status: active
     tier: 1
+  tools/episode_generator.py:
+    domain: g7_generator
+    status: active
+    tier: 1
+  tests/test_g7_generator.py:
+    domain: g7_generator
+    status: active
+    tier: 1
+  tools/g7_generator_check.py:
+    domain: g7_generator
+    status: active
+    tier: 1
 generated_by: tools/registry_triage.py
-total: 364
+total: 367
