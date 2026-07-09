@@ -83,11 +83,36 @@ def check_debt005_golden_lock():
     return True, "golden_lock cross-process ton tai"
 
 
+def check_d5_verdict_schema():
+    """D5 (option B thin_wrapper): schema field-hoa + adapter + preflight JSON prerequisite.
+    - qa_verdict_schema.yaml ton tai, canonical 4-enum, owner qa_runtime.
+    - qa_verdict_adapter.py ton tai, du 3 bang map + xu ly exit_2 (ToolingError).
+    - svhmp_preflight_qa.py da phat JSON verdict (prerequisite), GIU exit code cu."""
+    sch = _read("governance/blueprint/schemas/qa_verdict_schema.yaml")
+    if sch is None:
+        return False, "qa_verdict_schema.yaml chua field-hoa"
+    need_enum = ["PASS", "PASS_WITH_WARNING", "REGEN", "REVIEW_REQUIRED"]
+    miss = [e for e in need_enum if e not in sch]
+    if miss or "canonical_verdict" not in sch or "owner_domain: qa_runtime" not in sch:
+        return False, f"schema thieu canonical/enum/owner: {miss}"
+    ad = _read("tools/qa_verdict_adapter.py")
+    if ad is None:
+        return False, "tools/qa_verdict_adapter.py khong ton tai (option B adapter)"
+    for marker in ["MAP_ORCHESTRATOR", "MAP_VNQA", "MAP_PREFLIGHT", "ToolingError"]:
+        if marker not in ad:
+            return False, f"adapter thieu {marker}"
+    pf = _read("tools/svhmp_preflight_qa.py")
+    if pf is None or "preflight_ep_" not in pf or "sys.exit(0)" not in pf or "sys.exit(1)" not in pf:
+        return False, "preflight chua phat JSON verdict HOAC mat exit code cu (backward-compat)"
+    return True, "schema+adapter+preflight-JSON (option B) day du"
+
+
 SUITE = [
     ("D2_orchestrator_domain", check_d2_orchestrator_domain),
     ("D4_pack5_codified", check_d4_pack5_codified),
     ("VNQA_h1_h10", check_vnqa_h1_h10),
     ("DEBT005_golden_lock", check_debt005_golden_lock),
+    ("D5_verdict_schema", check_d5_verdict_schema),
 ]
 
 

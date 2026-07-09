@@ -1,0 +1,75 @@
+# QA VERDICT SCHEMA v1.0.0 — field-hóa hợp nhất verdict QA (TASK_G8_QA_RUNTIME.md D5)
+#
+# Nguồn: governance/proposals/qa_verdict_schema_proposal.yaml (proposal_status: APPROVED,
+# mr_long_decision: APPROVED_B_thin_wrapper; final_decision_9_7: giữ PASS_WITH_WARNING,
+# canonical 4-enum orchestrator, exit_2→TOOLING_ERROR, phương án B). Nội dung dưới COPY đúng
+# schema_draft.shared + common_envelope_fields của proposal — KHÔNG tự thêm/bớt field.
+#
+# PHẠM VI: chuẩn hoá verdict cho OUTPUT MỚI của pipeline (generator/story_planner/qa_runtime gate).
+# KHÔNG mandate retrofit verdict 50 tập cũ. Phương án B (thin_wrapper): 3 tool native GIỮ NGUYÊN
+# output format; 1 adapter (tools/qa_verdict_adapter.py) đọc cả 3 → trả common_envelope canonical.
+# KHÔNG sửa output gốc của orchestrator/VNQA/preflight (đúng option B đã duyệt).
+
+meta:
+  version: 1.0.0
+  status: candidate            # Builder không lock/tag — Mr.Long ký sau audit
+  owner_domain: qa_runtime
+  approved_from: governance/proposals/qa_verdict_schema_proposal.yaml
+  approval: "APPROVED_B_thin_wrapper (final_decision_9_7: giữ PASS_WITH_WARNING + canonical 4-enum orchestrator + exit_2→TOOLING_ERROR + adapter riêng, không sửa 3 tool native)"
+  adapter: tools/qa_verdict_adapter.py
+
+schema:
+
+  canonical_verdict:
+    desc: "Enum verdict CHUẨN duy nhất — lấy từ orchestrator (4 trạng thái, thẩm quyền cao nhất). VNQA (3-enum) + preflight (exit-code) ánh xạ gọn vào đây, không mất thông tin."
+    type: enum
+    values:
+      PASS: "Qua sạch, được ship."
+      PASS_WITH_WARNING: "Qua nhưng có cảnh báo nhẹ (VNQA WARN: warning>=5 hoặc warning>=1||minor>=3). GIỮ trong enum (final_decision_9_7) — bỏ sẽ mất tín hiệu thật."
+      REGEN: "Vi phạm chặn ship → phải sinh lại (regenerate)."
+      REVIEW_REQUIRED: "Cần người xem lại (skeptic bất đồng / biên giới không tự quyết được)."
+
+  common_envelope:
+    desc: "Cấu trúc chung mọi consumer (generator, story_planner, qa_runtime gate D7) đọc được. Adapter tạo ra envelope này từ 3 format native."
+    fields:
+      verdict: {type: enum, values: [PASS, PASS_WITH_WARNING, REGEN, REVIEW_REQUIRED], required: true, desc: "verdict đã canonical-hoá"}
+      source: {type: enum, values: [orchestrator, vnqa, preflight], required: true, desc: "verdict đến từ tầng nào"}
+      ep_number: {type: int, required: true, range: [1, 90]}
+      issues: {type: list, required: false, item: "{check: string, severity: enum[critical,warning,minor], evidence: string, suggestion: string(optional)}", desc: "danh sách vấn đề — rỗng nếu PASS sạch"}
+      severity_counts: {type: object, required: false, fields: {critical: {type: int}, warning: {type: int}, minor: {type: int}}}
+      reasoning: {type: string, required: false, desc: "lý do tổng hợp (orchestrator có final_reasoning; VNQA/preflight có thể trống)"}
+      ts: {type: string, required: true, desc: "ISO8601 UTC"}
+      raw: {type: object, required: false, desc: "giữ nguyên payload native gốc để trace (không mất dữ liệu khi canonical-hoá)"}
+
+  non_verdict_signals:
+    desc: "Tín hiệu KHÔNG phải verdict nội dung tập — KHÔNG map vào canonical_verdict (đúng R9)."
+    TOOLING_ERROR: "preflight exit_2 = usage-error (thiếu arg spec.json), không đánh giá được nội dung. Surface riêng, không lẫn vào REVIEW_REQUIRED."
+
+  native_formats:
+    desc: "3 format verdict THẬT đang chạy (field-hóa để adapter map — KHÔNG sửa 3 tool)."
+    format_1_orchestrator:
+      file: tools/qa_skeptic_orchestrator.py
+      output_path: "runtime/final_verdict_ep_{N}.json"
+      verdict_field: final_verdict
+      native_enum: [PASS, PASS_WITH_WARNING, REGEN, REVIEW_REQUIRED]
+      note: "Verdict tổng hợp (Claude QA + VNQA + Skeptic), thẩm quyền cao nhất — gần như đã đúng canonical."
+    format_2_vnqa:
+      file: tools/vnqa/pipeline.py
+      output_path: "runtime/vnqa_ep_{N}.json"
+      verdict_field: verdict
+      native_enum: [PASS, WARN, FAIL]
+      note: "1 tầng con (library check H1-H10)."
+    format_3_preflight:
+      file: tools/svhmp_preflight_qa.py
+      output_path: "runtime/preflight_ep_{N}.json"   # D5 prerequisite 9/7: nay ĐÃ phát JSON native (giữ exit code cũ)
+      verdict_field: verdict
+      native_enum: [PASS, FAIL]
+      exit_code_map: {exit_0: PASS, exit_1: FAIL, exit_2: TOOLING_ERROR}
+      note: "JSON THÊM (không thay exit code). exit_2 xảy ra trước khi biết ep → không emit JSON verdict."
+
+  mapping:
+    desc: "Bảng ánh xạ native → canonical (adapter thực thi). Không mất thông tin (issues[] giữ nguyên trong envelope)."
+    from_orchestrator: {PASS: PASS, PASS_WITH_WARNING: PASS_WITH_WARNING, REGEN: REGEN, REVIEW_REQUIRED: REVIEW_REQUIRED}
+    from_vnqa: {PASS: PASS, WARN: PASS_WITH_WARNING, FAIL: REGEN}
+    from_preflight: {PASS: PASS, FAIL: REGEN}
+    from_preflight_non_verdict: {exit_2: TOOLING_ERROR}

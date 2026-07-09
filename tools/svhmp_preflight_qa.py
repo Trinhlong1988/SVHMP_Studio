@@ -212,6 +212,34 @@ try:
 except Exception as _e:
     print(f'[CHARACTER_GATE] WARN: skipped ({type(_e).__name__}: {_e})')
 
+# ========================================================================
+# D5 PREREQUISITE (Mr.Long duyet 9/7, qa_verdict_schema_proposal final_decision_9_7):
+# Phat THEM 1 JSON verdict native (format_3) — GIU NGUYEN exit code cu (backward-compat),
+# JSON chi la output BO SUNG. Adapter tools/qa_verdict_adapter.py canonical-hoa ve 4-enum
+# [PASS/PASS_WITH_WARNING/REGEN/REVIEW_REQUIRED]. exit_2 (usage-error o dau file) KHONG toi
+# day nen khong emit verdict (dung R9: exit_2 la TOOLING_ERROR, khong phai verdict tap).
+# KHONG doi 11 rule text / R86 FULL_TEXT_GATE / exit code — chi ghi them file JSON.
+# ========================================================================
+try:
+    if _ep:
+        from datetime import datetime, timezone
+        _out = {
+            'tool': 'preflight',
+            'ep_number': _ep,
+            'verdict': 'FAIL' if issues else 'PASS',   # native PASS/FAIL (adapter map FAIL->REGEN)
+            'exit_code': 1 if issues else 0,
+            'chunks': len(sents),
+            'issues': list(issues),
+            'ts': datetime.now(timezone.utc).isoformat(),
+        }
+        _rt = Path(__file__).resolve().parents[1] / 'runtime'
+        _rt.mkdir(exist_ok=True)
+        _json_path = _rt / f'preflight_ep_{_ep}.json'
+        _json_path.write_text(json.dumps(_out, ensure_ascii=False, indent=2), encoding='utf-8')
+        print(f'[VERDICT_JSON] {_json_path}')
+except Exception as _je:  # noqa: BLE001 — JSON la phu, tuyet doi khong lam doi exit code render
+    print(f'[VERDICT_JSON] WARN: khong ghi duoc JSON verdict ({type(_je).__name__}: {_je})')
+
 if issues:
     print(f'PREFLIGHT FAIL — {len(issues)} issues')
     for iss in issues:

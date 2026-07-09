@@ -612,12 +612,9 @@ domains:
       - {path: runtime/qa_waivers.json, status: exists}
     manager: {path: tools/qa_skeptic_orchestrator.py, status: exists}
     schema:
-      status: planned
-      planned_path: governance/blueprint/schemas/qa_verdict_schema.yaml
-      owner: qa_runtime
-      reason_not_exists_yet: "Verdict hien la final_verdict_ep_{N}.json format tu do; chua khoa schema."
-      target_milestone: M3_qa_render_schemas
-      blocking_dependency: "thong nhat field verdict giua VNQA + skeptic + preflight"
+      status: exists
+      path: governance/blueprint/schemas/qa_verdict_schema.yaml   # G8 D5 (9/7): field-hoa
+      owner: qa_runtime            # per Mr.Long final_decision_9_7 APPROVED_B_thin_wrapper (adapter tools/qa_verdict_adapter.py)
     validator: {path: tools/svhmp_preflight_qa.py, status: exists}
     reader: [production]
     writer: [qa_runtime]
