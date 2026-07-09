@@ -97,6 +97,16 @@ BUỘC phối hợp với CMD_AUDIO trước khi sửa** (4 file `qa_post_render
 `audio_qa_manifest.yaml` — KHÔNG phải `qa_runtime` của G8, đúng R211 quyền sửa cross-domain, KHÔNG
 tự ý code khi chưa xin phép domain owner dù chỉ 1 dòng).
 
+**HOÀN TẤT (9/7, CMD_BUILD, commit `1b4315b`, per Mr.Long authorization 9/7):** dedupe PAUSE thực
+thi đúng quyết định cuối ở trên — `qa_pause_silence.py` tách `audit_array()` (core) + đổi ngưỡng
+`noisy==0` → `noisy<=1`; `qa_post_render.py::audit_pause()` xóa reimplement, gọi lại
+`qa_pause_silence.audit_array()`. KHÔNG đụng `audit_boundary()`/`audit_head_onset()` (đúng phạm vi
+đã chốt). Bằng chứng A/B (M2): `qa_pause_ab_probe.py` xác nhận 23/87 wav flip FAIL→PASS (đều
+`noisy==1`, không có chiều ngược PASS→FAIL) — khớp đúng số liệu turnkey CMD_BUILD_2 đã chuẩn bị.
+Verify bổ sung (kiểm trực tiếp, không chỉ dựa probe): `qa_pause_silence.audit()` và
+`qa_post_render.audit_pause()` cho **cùng verdict/noisy-count trên 100% 87/87 wav** sau patch (0
+mismatch). registry 0/0/0, full suite 624 passed. D3 xong, D5 vẫn treo (cần Mr.Long duyệt schema).
+
 ### D4 — Codify chuỗi VNQA/skeptic vào `governance/pack5/19_qa_pipeline.md` (lỗ hổng nghiêm trọng nhất)
 Thêm đúng luồng #3 (`qa_skeptic_orchestrator.py` → `vnqa/auto_fix.py` → `vnqa/pipeline.py` →
 `adversarial_skeptic.py`) vào doc19 — đây là chuỗi ĐANG CHẠY THẬT, không phải chuyện mới, chỉ là
