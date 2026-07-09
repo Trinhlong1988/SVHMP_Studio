@@ -2,6 +2,7 @@
 
 ---
 ## AUTO LOG (tự động cập nhật)
+- `18:31` **[APPROVE]** Mr.Long approve: Mr.Long quyet dinh DEBT-007: huong (a) sua ben doc decision_engine.py (plan.get('plan_ref') -> f'ep{plan[episode_number]}_{plan[season_ref]}'), KHONG dung schema locked. LUU Y decision_engine.py da LOCKED (g6a-decision-engine-v1.0) - CMD thuc thi ghi ro 'per Mr.Long authorization 9/7' trong commit, tu chinh 1 dong, khong tao lock moi. Xem TECH_DEBT.md DEBT-007. Chua ai claim.
 - `18:02` **[INFO]** Info: Mr.Long giao CMD_BUILD_2: TASK_DEBT005_ENFORCEMENT_ROUND3.md (vong 3, 7 writer bo sot khong golden_lock) - doc file nay truoc, D1 va 7 file + D2 enforcement test, KHONG chi va instance. Claim bang build_claim.py neu can, hoac lam truc tiep vi pham vi nho + ro rang.
 - `14:34` **[INFO]** Info: G8-D3/D5 phan tich: D3 chi pause la dup that (boundary/onset la rule khac R188/R190b) + 4 file thuoc domain audio_qa owner CMD_AUDIO -> DUNG cho Mr.Long xac nhan pham vi + phoi hop CMD_AUDIO. D5 exit_2=usage-error (R9), con 2 cau hoi thiet ke cho Boss. reports/G8_D3_DEDUPE_ANALYSIS.md.
 - `14:21` **[FIX]** Em fix: G8-D6 xong: khai tu 4 file batch legacy (deep_200_rounds/+_all_rules/verify_50_rounds/sequential_full_auto) - 0 live caller, registry 0/0/0 (commit ddca24b). Dang push.
