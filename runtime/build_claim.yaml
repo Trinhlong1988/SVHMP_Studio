@@ -76,8 +76,9 @@ claims:
     status: released
   g7_generator:
     claimed_at: '2026-07-05T23:32:20'
+    released_at: '2026-07-09T13:04:21'
     session: CMD_BUILD
-    status: active
+    status: released
   g8_qa_runtime:
     claimed_at: '2026-07-09T10:14:14'
     session: CMD_BUILD_2
