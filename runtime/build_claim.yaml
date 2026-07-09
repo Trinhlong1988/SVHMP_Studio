@@ -19,6 +19,10 @@ claims:
     released_at: '2026-07-04T21:10:05'
     session: CMD_BUILD
     status: released
+  cleanup_deep200_stale:
+    claimed_at: '2026-07-09T10:21:36'
+    session: CMD_TONG_TRO_LY
+    status: active
   debt005_006_fix:
     claimed_at: '2026-07-05T21:11:57'
     released_at: '2026-07-05T22:18:22'
@@ -72,6 +76,10 @@ claims:
   g7_generator:
     claimed_at: '2026-07-05T23:32:20'
     session: CMD_BUILD
+    status: active
+  g8_qa_runtime:
+    claimed_at: '2026-07-09T10:14:14'
+    session: CMD_BUILD_2
     status: active
   intro_template_retrofit:
     claimed_at: '2026-07-05T00:55:44'

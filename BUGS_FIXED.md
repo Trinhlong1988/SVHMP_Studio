@@ -524,3 +524,14 @@ Ghi chú: R80.peak -1.0dB do master v65 alimiter 0.85 (Mr.Long lock) — R198 ca
 - **Backup:** `tools/auditor.py.bak.freshness_advisory_09_07` (R8).
 - **Process change (R_SUPREME test_process_failure):** gap này lọt vì gate chỉ kiểm tồn tại — đề xuất LEAD promote advisory→hard-gate publish_auditor sau khi VERSION.md content reconcile, để drift KHÔNG lọt lần nữa.
 - **Còn lại (owner):** header `current_round`/`status` reconcile pack-era — KHÔNG bịa số, thuộc live session/LEAD.
+
+---
+
+## B_deep200_stale (2026-07-09 10:23) — CMD TỔNG TRỢ LÝ, per Mr.Long authorization
+
+- **Vấn đề (misleading artifact, KHÔNG phải bug logic):** `runtime/deep_200_rounds_report.json` (28/6) hiển thị R61=93, R60=5, R58=2 "không đổi qua 5 vòng" → dễ đọc nhầm là "lỗi không hội tụ / khủng hoảng chất lượng" (chính CMD TỔNG TRỢ LÝ đã suýt kết luận sai như vậy).
+- **Sự thật (firsthand):** (1) report là snapshot 28/6 trên 50 EP text CŨ đang REGEN qua G-pipeline → số liệu không phải hiện tại; audit R61 chạy fresh chỉ còn **6 HIGH**. (2) R61 khai `None` trong runner (chỉ đếm, không sửa) → delta=0 là **đúng thiết kế**, không phải vòng sửa hỏng. (3) 6 hit R61 hiện tại là câu mở bằng đại từ tự nhiên ("Anh thở phào...", "Cô ấy đợi anh") — cần tai người phán, không phải bug rõ ràng. (4) `auto_fix_short_start.py` nay tồn tại nhưng chỉ fix từ THỜI GIAN, không áp được đại từ.
+- **Dọn:** mark `_STALE` vào report JSON + banner STALE/SUPERSEDED trong `tools/deep_200_rounds.py` + xóa `runtime/deep_200_rounds.log` (gitignored). JSON verify hợp lệ.
+- **Backup:** `.bak.stale_mark_09_07` cho cả 2 file (R8).
+- **Process change (R_SUPREME test_process_failure):** artifact QA cũ không mang nhãn stale → gây hiểu lầm phân tích. Đề xuất LEAD: (1) runtime QA report nên có field `generated_ts` + `corpus_ref` để tự lộ staleness; (2) tách audit R61 thành time-word (auto-fixable) vs pronoun-start (audio judgment) để số đếm không phồng giả. CHỜ duyệt.
+- **Bài học CMD TỔNG TRỢ LÝ:** suýt kết luận "khủng hoảng chất lượng" từ số cũ mà chưa mở file — firsthand đọc mới thấy không có khủng hoảng. Lặp pattern jump-to-conclusion, phản biện/firsthand cứu.

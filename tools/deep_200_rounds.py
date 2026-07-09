@@ -1,5 +1,15 @@
 """SVHMP — 200 vòng sâu (Mr.Long 28/6).
 
+⚠️⚠️ STALE / SUPERSEDED (đánh dấu 2026-07-09, CMD TỔNG TRỢ LÝ, per Mr.Long authorization) ⚠️⚠️
+    - `runtime/deep_200_rounds_report.json` là snapshot 28/6 trên 50 EP text CŨ — corpus đó đang
+      được REGEN qua G-pipeline (G6-G8), nên số liệu KHÔNG phản ánh text hiện tại (R61 report=93
+      nhưng audit hiện tại chỉ 6). ĐỪNG đọc report cũ như trạng thái hiện tại.
+    - R61 khai `None` (chỉ đếm, không sửa) → delta=0 là ĐÚNG THIẾT KẾ, KHÔNG phải vòng sửa thất bại.
+    - `auto_fix_short_start.py` nay ĐÃ tồn tại nhưng CHỈ prepend filler cho từ THỜI GIAN (Đêm→"Vào đêm");
+      KHÔNG áp được cho đại từ mở câu (Anh/Cô) — nên wiring vào đây cũng không giảm mấy ca đó.
+    - Muốn dùng lại: chạy fresh trên output/ hiện tại + tách R61 audit (time-word vs pronoun-start)
+      để số đếm không gây hiểu lầm. CHỜ Mr.Long duyệt trước khi tái kích hoạt loop.
+
 Mỗi vòng = 1 sweep:
 - Run 5 audits all 50 EPs
 - Apply 5 auto-fixes

@@ -1,4 +1,5 @@
 {
+  "_STALE": "SNAPSHOT 2026-06-28 tren 50 EP text CU (dang regen qua G-pipeline). KHONG phai trang thai hien tai. R61=93 la corpus cu; audit hien tai chi ~6. R61 khai None (chi dem, khong sua) nen delta=0 la dung thiet ke. Danh dau boi CMD TONG TRO LY 2026-07-09 per Mr.Long authorization. Xem header tools/deep_200_rounds.py.",
   "total_rounds": 5,
   "initial": {
     "R58": 2,

@@ -3,8 +3,8 @@ project: SVHMP_Studio
 current_round: 21
 current_version: v1.1.0-tier2x-phase1
 status: Tier 2.x Phase 1 Voice Profile Manager FROZEN — 10-round regression 150/150 PASS
-last_update_ts: 2026-07-09T09:42:25
-last_update_by: CMD TỔNG TRỢ LÝ session 9/7 09:42 (Publish freshness ADVISORY thêm vào auditor.py — non-gating, last_update_ts >= max released_at, R195 promote hard-gate sau; test 5-case tempfile; registry 0/0/0; per Mr.Long authorization 2026-07-09)
+last_update_ts: 2026-07-09T10:23:28
+last_update_by: CMD TỔNG TRỢ LÝ session 9/7 10:23 (Dọn artifact stale deep_200: mark _STALE report 28/6 + banner runner + xóa log gitignored; R61 report=93 là corpus cũ đang regen, audit hiện tại chỉ 6. Trước đó: Publish freshness ADVISORY. per Mr.Long authorization 2026-07-09)
 rule_break_count: 7
 schema_version: 1
 ---
