@@ -91,8 +91,9 @@ claims:
     status: released
   g8_qa_runtime:
     claimed_at: '2026-07-09T10:14:14'
+    released_at: '2026-07-09T23:10:15'
     session: CMD_BUILD_2
-    status: active
+    status: released
   intro_template_retrofit:
     claimed_at: '2026-07-05T00:55:44'
     released_at: '2026-07-05T01:39:40'
