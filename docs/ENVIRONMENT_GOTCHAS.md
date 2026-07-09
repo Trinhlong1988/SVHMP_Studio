@@ -241,3 +241,22 @@ trước khi giao Mr.Long double-click — 2 lỗi trên hoàn toàn im lặng n
 So sánh với Hermes Agent (Nous Research, 4/7): pattern "skill file agent tự viết, mọi lần gọi lại
 đọc được" đúng hướng nhưng KHÔNG áp dụng "tự viết không kiểm duyệt" — file này làm thủ công, review
 tại audit, đúng tinh thần R209 (cấm Builder tự tuyên PASS) áp dụng luôn cho tri thức meta.
+
+## Bẫy cp1252 khi `subprocess` đọc output tiếng Việt (CMD_BUILD_2, 9/7)
+**Triệu chứng:** `git push` treo/timeout kèm `UnicodeDecodeError: 'charmap' codec can't decode byte
+0x81 ... in _readerthread` — crash trong **reader thread nền** của `subprocess`, KHÔNG phải trong
+code chính (nên khó truy). Xảy ra ở `tools/ci_gate.py` (pre-push CI gate) khi gọi
+`subprocess.run([...], capture_output=True, text=True)` **thiếu `encoding=`**.
+
+**Cơ chế:** `text=True` trên Windows decode stdout con bằng **locale mặc định (cp1252)**, KHÔNG phải
+UTF-8. Script con in tiếng Việt → phát byte UTF-8 (vd `0x81` là continuation byte) → cp1252 không
+decode được → crash. Byte 0x81 hợp lệ trong UTF-8 nhưng **undefined trong cp1252** ⇒ dấu hiệu nhận
+biết chắc chắn "parent decode sai codec, KHÔNG phải child ghi sai".
+
+**Fix (đã áp 9/7, CI gate PASS 591 test, 0 crash):** MỌI `subprocess.run(..., text=True)` đọc output
+có thể chứa non-ASCII PHẢI thêm `encoding='utf-8', errors='replace'`. Với subprocess con là Python,
+set thêm env `PYTHONUTF8=1` để child emit UTF-8 ổn định. KHÔNG dựa vào `sys.stdout.reconfigure()` —
+nó chỉ sửa stdout của CHÍNH process, không đổi cách decode output của process CON.
+
+**Đề xuất quy trình (chống tái diễn):** grep repo tìm `text=True` không kèm `encoding=` trong mọi
+tool có thể chạy trên hook/CI = nợ tiềm ẩn cùng lớp — nên quét định kỳ.

@@ -57,7 +57,10 @@ def main():
     fail = 0
     print("=== CI GATE ===")
     for name, rel in CHECKS:
-        r = subprocess.run([PY, str(SVHMP / rel)], capture_output=True, text=True)
+        # encoding utf-8 + errors replace: script con in tieng Viet (UTF-8); mac dinh text=True
+        # decode bang locale Windows (cp1252) -> UnicodeDecodeError trong reader thread (bay ENVIRONMENT_GOTCHAS 9/7).
+        r = subprocess.run([PY, str(SVHMP / rel)], capture_output=True, text=True,
+                           encoding='utf-8', errors='replace')
         ok = r.returncode == 0
         print(f"  [{'PASS' if ok else 'FAIL'}] {name} (exit {r.returncode}) [{STAGE_CODES.get(name, '?')}]")
         if not ok:
@@ -78,8 +81,10 @@ def main():
         # van danh vao repo that (origin bi wipe 1037 file). Scrub GIT_* cho pytest.
         env = {k: v for k, v in os.environ.items() if not k.startswith('GIT_')}
         env[_PYTEST_GUARD] = '1'
+        env.setdefault('PYTHONUTF8', '1')   # ep con (pytest) emit UTF-8 on dinh tren Windows
         pt = subprocess.run([PY, '-m', 'pytest', 'tests/', '-q'],
-                            capture_output=True, text=True, cwd=str(SVHMP), env=env)
+                            capture_output=True, text=True, encoding='utf-8', errors='replace',
+                            cwd=str(SVHMP), env=env)
         pt_ok = pt.returncode == 0
         summary = _pytest_summary(pt.stdout)
         print(f"  [{'PASS' if pt_ok else 'FAIL'}] pytest_suite (exit {pt.returncode}) — {summary} "
