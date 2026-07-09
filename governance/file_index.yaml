@@ -789,7 +789,7 @@ files:
     status: active
     tier: 3
   tools/qa_skeptic_orchestrator.py:
-    domain: generation
+    domain: qa_runtime
     status: active
     tier: 2
   tools/qa_ssot_diff.py:
@@ -913,7 +913,7 @@ files:
     status: active
     tier: 4
   tools/story_consistency_validator.py:
-    domain: unclassified
+    domain: character
     status: active
     tier: null
   tools/svhmp_100check_master.py:
