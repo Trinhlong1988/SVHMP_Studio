@@ -591,12 +591,9 @@ domains:
       target_milestone: M2_planner_generator
       blocking_dependency: "story_planner + decision_engine (M2) + episode schema duyet"
     schema:
-      status: planned
-      planned_path: governance/blueprint/schemas/episode_schema.yaml
-      owner: generator
-      reason_not_exists_yet: "Cau truc section moi chuan hoa o scaffold prose, chua field-hoa."
-      target_milestone: M2_planner_generator
-      blocking_dependency: "Mr.Long duyet field episode spec"
+      status: exists
+      path: governance/blueprint/schemas/episode_schema.yaml   # G7 D1 (9/7): field-hoa
+      owner: generator            # dung nguyen van proposal APPROVED_B, commit eef436b
     validator: {path: tools/svhmp_preflight_qa.py, status: exists}
     reader: [qa_runtime, production]
     writer: [generator]

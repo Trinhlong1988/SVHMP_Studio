@@ -1,0 +1,97 @@
+# EPISODE SCHEMA v1.0.0 — field-hóa cấu trúc dữ liệu trung gian 1 tập (TASK_G7_GENERATOR.md D1)
+#
+# Nguồn: governance/proposals/episode_schema_proposal.yaml (proposal_status: APPROVED,
+# mr_long_decision: APPROVED_B "duyệt hướng chính + bổ sung ngoại lệ bell_count/driver_lines
+# cho ep73/90", commit eef436b 5/7). Nội dung dưới đây COPY NGUYÊN VĂN schema_draft của
+# proposal đó (kiểm duyệt đã field-hóa đúng ngoại lệ thật ngay trong bản duyệt B, xem
+# episode_frontmatter.bell_count/driver_lines) — KHÔNG tự thêm/bớt field.
+#
+# PHẠM VI: cấu trúc dữ liệu trung gian generator (G7) dùng để RÁP giá trị từ decision_engine
+# (G6a, budget 12-knob) + story_planner (G6b, episode_plan) + 14 domain read-only còn lại,
+# TRƯỚC KHI render ra prose khớp đúng prompts/ep_scaffold_template.md. KHÔNG áp dụng bắt buộc
+# cho 50 tập cũ (ep_01-50, hand_crafted:true) — dành cho OUTPUT MỚI của generator. Schema này
+# SẼ áp dụng khi regen 50 tập cũ qua pipeline G6-G8 (governance/master_roadmap.md §6 mục 6),
+# chỉ là chưa áp ngay bây giờ (G7 chưa build xong).
+
+meta:
+  version: 1.0.0
+  status: candidate            # Builder không lock/tag — Mr.Long ký sau audit
+  owner_domain: generator
+  approved_from: governance/proposals/episode_schema_proposal.yaml
+  approved_commit: eef436b
+  approval: "APPROVED_B (duyệt hướng chính + bổ sung ngoại lệ bell_count/driver_lines cho ep73/90)"
+
+schema:
+
+  episode_frontmatter:
+    desc: "Field-hóa đúng khối YAML front-matter đã có thật trong scaffold.md dòng 88-106"
+    fields:
+      prompt_version: {type: string, required: true, desc: "vd SVHMP-10.0-RC3.6 - version của chính scaffold/pipeline, không phải version nội dung tập"}
+      ep_number: {type: int, required: true, range: [1, 90]}
+      phase: {type: enum, values: [introductory, warming, heightening, peak, climax], required: true, desc: "Trỏ bible/09 - KHÔNG định nghĩa lại ngưỡng, chỉ tham chiếu enum"}
+      pillar: {type: enum, values: [family, love, promise, kindness, self], required: true, desc: "Trỏ bible/21 R33 interleave - PHẢI khớp pillar_interleave_ep01_50[ep_N] (post_render_gate.py check 11 đã có)"}
+      intensity_level: {type: enum, values: [0.45, 0.55, 0.70, 0.85, 0.95], required: true, desc: "Trỏ bible/09 + milestone bump - không tự thêm mức mới"}
+      quang_memory_fragment: {type: string, required: true, format: "M_{1-18}", desc: "Trỏ bible/21 R35 progression_table - text PHẢI khớp đúng (post_render_gate.py check 10)"}
+      callback_target: {type: string, required: false, desc: "ep_N hoặc 'none' - PHẢI khớp bible/21 callback_schedule_s1[ep_N] (check 12)"}
+      object_sub_arc: {type: object, required: false, fields: {type: {type: enum, values: [symbol_clustering, temporal_arc, geographic_arc, none]}, target_symbol: {type: string}}}
+      milestone: {type: bool, required: true, desc: "true nếu ep_number in [10,20,30,40,50,60,70,80,90] (bible/21 R37)"}
+      passenger_main: {type: string, required: true, desc: "PHẢI là 1 PAS_id thật trong runtime/passenger_roster_100.yaml (character domain, chỉ đọc) - KHÔNG được là tên tự do (đúng bài học DEBT-002/G2-4 lặp lại)"}
+      signature_object: {type: string, required: true, format: "OBJ_{id}", desc: "Trỏ bible/12_object_library.yaml"}
+      signature_setting: {type: string, required: true, desc: "Trỏ bible/13_setting_library.yaml"}
+      stop_location: {type: string, required: true}
+      word_count_target: {type: int, required: true, default: 2300, range: [2000, 2700], desc: "R39 hard_floor/hard_ceiling"}
+      bell_count: {type: int, required: true, default: 1, allowed_values: [1, 2], desc: "bible/00 constitution 'bell_count==1' là target chính; bible/09_emotion_intensity.yaml dòng 59 cho phép 'bell có thể double (ep 73 PIVOT)' - 2 CHỈ hợp lệ tại ep_number==73, mọi ep khác PHẢI ==1"}
+      ghost_manifest: {type: int, required: true, const: 1, desc: "SERIES_RULES.ghost_visual HARD MAX - đã rà soát bible/00/09/18, KHÔNG tìm thấy ngoại lệ nào cho field này (khác bell_count/driver_lines) - giữ const 1 tuyệt đối"}
+      driver_lines: {type: int, required: true, default: 2, allowed_values: [2, 3], desc: "'Con đã nhớ ra chưa?' + 'Chưa tới lúc.' (2 dòng mặc định). Ngoại lệ PHẢI ==3 khi ep_number in [73,90] HOẶC milestone==true (bible/00 post_render_gate + scaffold.md dòng 34, ep73 có thêm câu thứ 3 'Tôi rồi đây, Nam.' theo bible/18)"}
+      hand_crafted: {type: bool, required: true, desc: "false cho output G7 tự động sinh (phân biệt với 50 tập cũ hand_crafted:true)"}
+
+  episode_sections:
+    desc: "6 section BẮT BUỘC + INTRO riêng - KHÔNG định nghĩa lại thứ tự/tên, chỉ RECONCILE trỏ bp7 + bible/01"
+    intro_block:
+      status: "KHÔNG field-hóa ở đây - thuộc phạm vi DEBT-001 (intro brand text, đã có vấn đề riêng đang xử lý), schema này CHỈ tham chiếu sự tồn tại, không chép lại nội dung 5-element"
+    sections:
+      component_ref:
+        type: enum
+        required: true
+        values: [HOOK, SETUP, INCIDENT, REVEAL, PAYOFF, CLIFFHANGER]
+        desc: "PHẢI dùng 6 giá trị + đúng thứ tự bp7/story_structure.yaml level 'episode' (trỏ bible/01 pattern_per_section) - đây là RECONCILE, KHÔNG phải định nghĩa mới"
+      word_budget:
+        type: object
+        desc: "Từ ep_scaffold_template.md SECTION BUDGET (dòng 39-53) - CHỈ tham chiếu, số THẬT nằm ở file scaffold, không chép giá trị rồi để lệch theo thời gian"
+        fields:
+          HOOK: {target: 280}
+          SETUP: {target: 240}
+          INCIDENT: {target: 240}
+          REVEAL: {target: 1050}
+          PAYOFF: {target: 270}
+          CLIFFHANGER: {target: 320}
+      content_summary: {type: string, required: true, desc: "Tóm tắt cấu trúc scene trong section (KHÔNG phải văn bản đầy đủ - đây là kế hoạch trước khi generator viết prose thật)"}
+
+  novelty_check_ref:
+    desc: "KHÔNG định nghĩa lại distance_constraints - CHỈ khai field để generator tự đối chiếu"
+    fields:
+      regret_archetype_used: {type: string, desc: "Tra bible/08 distance_constraints.same_regret_archetype_distance (>=15 tập) trước khi chọn"}
+      object_used: {type: string, desc: "Tra same_object_distance (>=10 tập)"}
+      relationship_used: {type: string, desc: "Tra same_relationship_distance (>=8 tập)"}
+
+# ------------------------------------------------------------
+# GHI CHÚ RIÊNG — enforcer CHƯA build (giữ nguyên văn proposal PHẢN BIỆN #2)
+# ------------------------------------------------------------
+enforcer_planned:
+  path: tools/g7_generator_check.py
+  status: planned
+  reason_not_exists_yet: "Chỉ build sau khi D1 (schema này) đã field-hóa xong - đây chính là bước D1, D4 (gate) build sau"
+  mandatory_before_coding: "Đọc tools/post_render_gate.py + tools/svhmp_preflight_qa.py TOÀN BỘ trước, xác định rõ phạm vi 2 file này kiểm gì, tránh nhân đôi logic (R211) - xem PHẢN BIỆN #2 trong proposal gốc"
+
+# ------------------------------------------------------------
+# GHI CHÚ RIÊNG — mâu thuẫn 2 nguồn bible về bell_count/driver_lines (giữ nguyên văn proposal)
+# ------------------------------------------------------------
+note_bible_conflict: |
+  bible/00_constitution.yaml ghi metadata "bell_count == 1" (hard, không ghi ngoại lệ) nhưng
+  bible/09_emotion_intensity.yaml dòng 59 lại cho phép "bell có thể double (ep 73 PIVOT)" - 2
+  nguồn bible MÂU THUẪN NHAU về điều kiện này. Code THẬT (tools/post_render_gate.py dòng 87-92)
+  hiện đang lỏng hơn cả 2 nguồn trên: chỉ kiểm bell_count>=1 (không phải ==1 tuyệt đối), nên
+  ngoại lệ ep73 không thực sự gây FAIL trong thực tế. Schema này field-hóa đúng giá trị {1,2}
+  để generator tương lai KHÔNG bị chặn sai ở ep73 - KHÔNG tự sửa bible/00 hay bible/09
+  (immutable, cần Mr.Long), chỉ ghi lại mâu thuẫn này để biết (không phải lỗi mới phát sinh
+  từ schema này, đã tồn tại sẵn trong bible trước đó).
