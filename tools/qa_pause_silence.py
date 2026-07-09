@@ -13,10 +13,12 @@ import soundfile as sf
 from pathlib import Path
 
 
-def audit(wav_path, min_pause_ms=1200, silence_thr_db=-55, pass_thr_db=-70):
-    audio, sr = sf.read(wav_path)
-    if audio.ndim == 2:
-        audio = audio.mean(axis=1)
+def audit_array(audio, sr, min_pause_ms=1200, silence_thr_db=-55, pass_thr_db=-70, margin_ms=100):
+    """Core detection tren mang audio in-memory (tach tu audit(), G8-D3 dedup 9/7 per
+    Mr.Long authorization - TU CHINH cross-domain audio_qa, mirror qa_post_render.audit_pause).
+    Nguong pass: noisy<=1 (R96 v3.3, bible/00:1671) - qa_post_render.audit_pause la nguon
+    nguong chuan, ham nay dong bo lai (truoc day noisy==0, qua nghiem, xem
+    reports/G8_D3_PAUSE_DEDUP_PLAN.md bang chung A/B 87 wav)."""
     total_dur = len(audio) / sr
 
     # Detect silent frames (20ms windows)
@@ -45,7 +47,6 @@ def audit(wav_path, min_pause_ms=1200, silence_thr_db=-55, pass_thr_db=-70):
     clean = ok = noisy = 0
     results = []
     # Margin 100ms each side — exclude fade-in/fade-out transitions of adjacent chunks
-    margin_ms = 100
     margin_n = int(margin_ms * sr / 1000)
     for i, (s, e, d) in enumerate(pauses):
         s_samp = int(s * sr / 1000) + margin_n
@@ -66,15 +67,25 @@ def audit(wav_path, min_pause_ms=1200, silence_thr_db=-55, pass_thr_db=-70):
         results.append((i + 1, s / 1000, d, pmax_db, verdict))
 
     return {
-        "file": str(wav_path),
         "duration_sec": total_dur,
         "pauses_detected": len(pauses),
         "clean": clean,
         "ok": ok,
         "noisy": noisy,
         "results": results,
-        "pass": noisy == 0,
+        "pass": noisy <= 1,  # R96 v3.3 (bible/00:1671) - rare BigVGAN 1-noisy-pause tolerated
     }
+
+
+def audit(wav_path, min_pause_ms=1200, silence_thr_db=-55, pass_thr_db=-70):
+    """Wrapper mong: doc file -> goi audit_array() (core, dedup 9/7)."""
+    audio, sr = sf.read(wav_path)
+    if audio.ndim == 2:
+        audio = audio.mean(axis=1)
+    r = audit_array(audio, sr, min_pause_ms=min_pause_ms,
+                     silence_thr_db=silence_thr_db, pass_thr_db=pass_thr_db)
+    r["file"] = str(wav_path)
+    return r
 
 
 def report(audit_result):

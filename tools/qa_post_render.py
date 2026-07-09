@@ -9,40 +9,18 @@ import numpy as np
 import soundfile as sf
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import qa_pause_silence  # noqa: E402 - G8-D3 dedup 9/7 per Mr.Long authorization
+
 
 def audit_pause(audio, sr, min_pause_ms=1200, pass_thr_db=-70, margin_ms=100):
-    """R87 — All pauses CLEAN. Margin 100ms each side excludes fade transitions."""
-    win_n = int(0.020 * sr)
-    n_frames = len(audio) // win_n
-    energy_db = np.zeros(n_frames)
-    for i in range(n_frames):
-        seg = audio[i * win_n:(i + 1) * win_n]
-        rms = np.sqrt(np.mean(seg ** 2)) + 1e-12
-        energy_db[i] = 20 * np.log10(rms)
-    silence = energy_db < -55
-    pauses, in_p, s = [], False, 0
-    for i, sil in enumerate(silence):
-        if sil and not in_p:
-            s, in_p = i, True
-        elif not sil and in_p:
-            d = (i - s) * 20
-            if d >= min_pause_ms:
-                pauses.append((s * 20, i * 20, d))
-            in_p = False
-    clean = noisy = 0
-    margin_n = int(margin_ms * sr / 1000)
-    for ps, pe, _ in pauses:
-        ss = int(ps * sr / 1000) + margin_n
-        ee = int(pe * sr / 1000) - margin_n
-        if ee <= ss:
-            continue
-        pk_db = 20 * np.log10(np.max(np.abs(audio[ss:ee])) + 1e-12)
-        if pk_db < pass_thr_db:
-            clean += 1
-        elif pk_db >= -55:
-            noisy += 1
-    # R96 TOLERANCE 29/6 18:30 — noisy_pause_max=1 tolerated (rare BigVGAN artifact)
-    return {"total": len(pauses), "clean": clean, "noisy": noisy, "pass": noisy <= 1}
+    """R87 — All pauses CLEAN (noisy<=1 tolerated, R96 v3.3). Delegate sang
+    qa_pause_silence.audit_array() (nguon implement DUY NHAT sau dedup 9/7 -
+    per Mr.Long authorization, TU CHINH cross-domain audio_qa, xem
+    reports/G8_D3_PAUSE_DEDUP_PLAN.md) - map key ve dung cau truc downstream dang dung."""
+    r = qa_pause_silence.audit_array(audio, sr, min_pause_ms=min_pause_ms,
+                                      pass_thr_db=pass_thr_db, margin_ms=margin_ms)
+    return {"total": r["pauses_detected"], "clean": r["clean"], "noisy": r["noisy"], "pass": r["pass"]}
 
 
 def audit_spectrum(audio, sr):
