@@ -46,6 +46,33 @@ def test_real_50_episodes_mined():
     assert len(result['episodes_scanned']) == 50
 
 
+def test_g4_1_object_mentions_and_primary_event_have_real_line_not_fallback():
+    """G4-1 (audit HIGH, TASK_AUDIT_HIGH_G2_G8.md): commit 2869553 sua evidence-
+    tracking them field 'line' THAT cho object_mentions/primary_event trong
+    event_ledger_miner.py — truoc do khong co test nao xac nhan dieu nay, neu
+    revert ve dinh dang cu (line luon None/fallback rong) thi pipeline van chay,
+    gate van PASS, pytest suite van xanh. Kiem tren du lieu mine THAT (50 tap
+    output/): moi primary_event sub-field co value PHAI co 'line' so nguyen that
+    (khong None), moi object_mentions entry PHAI co 'line' so nguyen that."""
+    result = mine()
+    checked_primary = 0
+    checked_objects = 0
+    for ep, scan in result['scans'].items():
+        for field_name, field in scan['primary_event'].items():
+            if field is not None and field.get('value'):
+                assert isinstance(field.get('line'), int), (
+                    f"ep_{ep:02d} primary_event.{field_name} co value nhung 'line' "
+                    f"khong phai so nguyen that (fallback rong?): {field.get('line')!r}")
+                checked_primary += 1
+        for om in scan['object_mentions']:
+            assert isinstance(om.get('line'), int), (
+                f"ep_{ep:02d} object_mentions {om.get('value')!r} khong co 'line' "
+                f"so nguyen that (fallback rong?): {om.get('line')!r}")
+            checked_objects += 1
+    assert checked_primary > 0 and checked_objects > 0, \
+        "test khong chay qua du lieu that nao - reality anchor vo nghia"
+
+
 def test_timeline_check_pass_on_real_data():
     result = timeline_run()
     assert result['M1_cross_episode_violations'] == [], \
