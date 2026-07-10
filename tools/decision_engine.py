@@ -37,10 +37,53 @@ def _knob_value_for_scene(knob_id, knob_data, scene_id):
     return None
 
 
+REQUIRED_PLAN_FIELDS = ("cast_per_scene", "reveals_allowed")   # bp6/decision_io.yaml
+# required_fields_from_plan (chi 2 field decision_engine THAT doc/dung o day; ep_number/
+# scenes da kiem rieng qua plan_ref+scene_id, regret_pillar_context chua co consumer code).
+
+
+def _packet_completeness(plan, per_scene):
+    """G6a-2/G7-2 (audit HIGH, TASK_AUDIT_HIGH_G2_G8.md): truoc day status='full' CHI
+    dua vao 'plan is not None', KHONG kiem plan THAT co du field bat buoc theo bp6/
+    decision_io.yaml required_fields_from_plan (cast_per_scene/reveals_allowed) hay
+    tung scene_id trong per_scene (namespace bible/42 component: HOOK/SETUP/...) co
+    khop VOI cac scene THAT cua plan hay khong - story_planner.py THAT (build_episode_
+    plan_ep01) hien CHUA sinh cast_per_scene/reveals_allowed, nen packet tu nhan 'full'
+    la SAI (tu xung du trong khi thieu 2/5 required field).
+
+    LUU Y namespace: plan['scenes'] la list scene_id INSTANCE (vd 'EP1_SC1') - KHAC
+    namespace voi packet's scene_id (component bible/42: 'HOOK'/'SETUP'/...). Doi
+    chieu dung phai qua plan['scenes_detail'][i]['component_ref'] (cau lam cau,
+    da tu kiem tren du lieu that: component_ref set == bible/42 scenes_order set).
+
+    Tra ve (status, status_note): 'planned' (khong co plan), 'partial' (co plan that
+    nhung thieu field bat buoc/scene component lech - CHAP NHAN rui ro nhieu packet
+    roi ve day, an toan hon tu nhan du khi chua du, dung tinh than R195 khong bia),
+    'full' (du dieu kien)."""
+    if plan is None:
+        return "planned", ("khong co story plan input (goi build_packet khong truyen "
+                           "plan=) - de planned trung thuc, KHONG bia. tools/story_planner.py "
+                           "DA ton tai+locked 5/7, truyen plan= de co status full/partial")
+    missing = [f for f in REQUIRED_PLAN_FIELDS if plan.get(f) is None]
+    if missing:
+        return "partial", (f"plan THAT nhung thieu field bat buoc theo bp6/decision_io.yaml "
+                           f"required_fields_from_plan: {missing} - story_planner.py hien CHUA "
+                           "sinh field nay, KHONG bia gia tri gia (G6a-2/G7-2 10/7)")
+    plan_components = {d.get("component_ref") for d in (plan.get("scenes_detail") or [])}
+    packet_scene_ids = {s["scene_id"] for s in per_scene}
+    mismatched = packet_scene_ids - plan_components
+    if mismatched:
+        return "partial", (f"scene component trong packet KHONG khop plan['scenes_detail']"
+                           f"[].component_ref: {sorted(mismatched)} (G6a-2/G7-2 10/7)")
+    return "full", None
+
+
 def build_packet(ep_number, policy=None, plan=None):
     """Build decision packet THEO bp6/decision_io.yaml. plan=None -> chua co story plan
     that (G6b) -> dung scene_order cua chinh bible/42 lam fallback demo, danh dau
-    status: planned cho cac field can plan that."""
+    status: planned cho cac field can plan that. plan!=None nhung thieu field bat
+    buoc (cast_per_scene/reveals_allowed) -> status: partial (G6a-2/G7-2 10/7, xem
+    _packet_completeness)."""
     policy = policy or load_policy()
     scenes_order = policy["meta"]["scenes_order"]
     knob_ids = list(policy["knobs"].keys())
@@ -52,17 +95,15 @@ def build_packet(ep_number, policy=None, plan=None):
         per_scene.append({"scene_id": scene_id, "knobs": knobs})
 
     has_real_plan = plan is not None
+    status, status_note = _packet_completeness(plan, per_scene)
     packet = {
-        "packet_id": f"decision_packet_ep{ep_number}_v1_{'full' if has_real_plan else 'partial'}",
+        "packet_id": f"decision_packet_ep{ep_number}_v1_{status}",
         "ep_number": ep_number,
         "plan_ref": f"ep{plan['episode_number']}_{plan['season_ref']}" if has_real_plan else None,
         "calibration_evidence": f"{POLICY_PATH.relative_to(REPO)} (calibrated_from {policy['meta']['calibrated_from']})",
         "per_scene": per_scene,
-        "status": "full" if has_real_plan else "planned",
-        "status_note": (None if has_real_plan else
-                        "khong co story plan input (goi build_packet khong truyen plan=) - "
-                        "de planned trung thuc, KHONG bia. tools/story_planner.py DA ton tai+"
-                        "locked 5/7, truyen plan= de co status:full (sua 10/7 audit ML #14)"),
+        "status": status,
+        "status_note": status_note,
     }
     return packet
 

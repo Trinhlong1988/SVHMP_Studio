@@ -160,6 +160,66 @@ def test_reality_decision_engine_builds_packet_no_crash():
     assert len(packet["per_scene"]) == 6
 
 
+def test_g6a_2_g7_2_real_ep01_plan_falls_to_partial_not_falsely_full():
+    """G6a-2/G7-2 (audit HIGH, TASK_AUDIT_HIGH_G2_G8.md): truoc day build_packet(plan=...)
+    tu nhan status='full' CHI vi plan khong None, KHONG kiem plan THAT co du field bat
+    buoc theo bp6/decision_io.yaml (cast_per_scene/reveals_allowed). story_planner.py
+    THAT (build_episode_plan_ep01) hien CHUA sinh 2 field nay -> packet PHAI trung thuc
+    bao 'partial', KHONG duoc tu xung 'full' khi chua du (R195)."""
+    import story_planner
+    plan = story_planner.build_episode_plan_ep01()
+    assert "cast_per_scene" not in plan and "reveals_allowed" not in plan, (
+        "gia dinh story_planner CHUA sinh 2 field nay da sai - kiem tra lai truoc khi tin test nay")
+    packet = de.build_packet(1, plan=plan)
+    assert packet["status"] == "partial", (
+        f"packet tu nhan '{packet['status']}' nhung plan THAT thieu cast_per_scene/"
+        "reveals_allowed - phai la 'partial', khong duoc bia 'full'")
+    assert "cast_per_scene" in packet["status_note"] and "reveals_allowed" in packet["status_note"]
+
+
+def test_g6a_2_g7_2_synthetic_plan_with_all_required_fields_is_full():
+    """MUTATION-PROOF nguoc: plan THAT co du field bat buoc + scene_id khop -> status
+    PHAI la 'full' (khong bi qua tay chan nham packet hop le)."""
+    real_plan = __import__("story_planner").build_episode_plan_ep01()
+    scene_ids = list(real_plan["scenes"])
+    full_plan = dict(real_plan)
+    full_plan["cast_per_scene"] = {sid: ["PAS_001"] for sid in scene_ids}
+    full_plan["reveals_allowed"] = {sid: [] for sid in scene_ids}
+    packet = de.build_packet(1, plan=full_plan)
+    assert packet["status"] == "full", (
+        f"plan THAT du field bat buoc + scene_id khop nhung packet lai bao "
+        f"'{packet['status']}' (qua tay chan packet hop le): {packet['status_note']}")
+    assert packet["status_note"] is None
+
+
+def test_g6a_2_g7_2_mutation_missing_cast_per_scene_falls_to_partial():
+    """MUTATION-PROOF: bo cast_per_scene khoi 1 plan day du khac -> status PHAI roi ve
+    'partial' (bat duoc thieu sot field bat buoc)."""
+    real_plan = __import__("story_planner").build_episode_plan_ep01()
+    scene_ids = list(real_plan["scenes"])
+    plan = dict(real_plan)
+    plan["reveals_allowed"] = {sid: [] for sid in scene_ids}
+    packet = de.build_packet(1, plan=plan)
+    assert packet["status"] == "partial"
+    assert "cast_per_scene" in packet["status_note"]
+
+
+def test_g6a_2_g7_2_mutation_scene_component_mismatch_falls_to_partial():
+    """MUTATION-PROOF: plan co du field bat buoc nhung scenes_detail[].component_ref
+    KHONG khop bible/42 scenes_order (vd plan bi cat/doi ten component) -> status
+    PHAI roi ve 'partial'."""
+    real_plan = __import__("story_planner").build_episode_plan_ep01()
+    scene_ids = list(real_plan["scenes"])
+    plan = dict(real_plan)
+    plan["cast_per_scene"] = {sid: ["PAS_001"] for sid in scene_ids}
+    plan["reveals_allowed"] = {sid: [] for sid in scene_ids}
+    plan["scenes_detail"] = [{"scene_id": sid, "component_ref": "COMPONENT_LA_KHONG_TON_TAI"}
+                              for sid in scene_ids]
+    packet = de.build_packet(1, plan=plan)
+    assert packet["status"] == "partial"
+    assert "component_ref" in packet["status_note"]
+
+
 def test_reality_packet_per_scene_has_exactly_12_knob_keys_matching_bp6():
     """M4-tuong-duong: packet field per scene PHAI dung 12 knob_id BP6, khong thieu/thua."""
     contract = dpc.load_contract()
