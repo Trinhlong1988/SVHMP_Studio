@@ -606,7 +606,7 @@ domains:
 
   qa_runtime:
     responsibility: "Content-QA runtime: FULL_TEXT_GATE (preflight R86/R197), VNQA H1-H9, skeptic adversarial, watch daemon, waiver R204."
-    non_responsibility: "KHONG sua content (chi verdict) - NGOAI LE DA DUYET: AUTO_FIX vnqa/auto_fix.py --apply (registry literal-map Mr.Long duyet, pack5/19 dong 26; pham vi hep + atomic ghi + backup, KHONG sua content tu do); KHONG phai code-QA ci_gate (pack3), DOC LAP voi generator (khong dung logic sinh de cham bai sinh)."
+    non_responsibility: "KHONG sua content (chi verdict) - NGOAI LE DA DUYET: AUTO_FIX vnqa/auto_fix.py --apply (registry literal-map Mr.Long duyet, pack5/19 dong 26; pham vi hep + atomic ghi + backup, KHONG sua content tu do). LUU Y (G8-1, Mr.Long xac nhan 10/7): qa_skeptic_orchestrator.py --autofix-mode default='apply' la DUNG chu dinh (pack5/19 dong 26 - registry literal-map pham vi hep + atomic + backup), KHONG mau thuan bible/26 dry-run: tool goc vnqa/auto_fix.py chay standalone van default PROPOSE dung bible/26. KHONG phai code-QA ci_gate (pack3), DOC LAP voi generator (khong dung logic sinh de cham bai sinh)."
     source_of_truth:
       - {path: governance/pack5/19_qa_pipeline.md, status: exists}
       - {path: runtime/qa_waivers.json, status: exists}

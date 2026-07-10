@@ -98,7 +98,14 @@ def test_vnqa_fail_escalates_pass_to_regen(tmp_path, monkeypatch):
     assert res["final_verdict"] == "REGEN", "VNQA FAIL phải escalate PASS->REGEN"
 
 
-def test_vnqa_warn_does_not_downgrade_pass(tmp_path, monkeypatch):
+def test_vnqa_warn_marks_pass_with_warning(tmp_path, monkeypatch):
+    """G8-7 (Mr.Long auth 10/7, cite qa_verdict_schema_proposal.yaml:146): VNQA WARN + skeptic
+    ACCEPT => final PHẢI là PASS_WITH_WARNING — KHÔNG hạ xuống REGEN (không mất tín hiệu WARN)
+    nhưng cũng KHÔNG để trơn PASS (enum PASS_WITH_WARNING trước đây dead: map có, final chưa gán).
+    Mutation-proof: gỡ dòng `final = 'PASS_WITH_WARNING'` -> case này về PASS -> vỡ."""
     res = _final(tmp_path, monkeypatch, run_vnqa=True, qa_verdict="PASS",
                  skeptic_verdict="ACCEPT", missed=[], vnqa_verdict="WARN")
-    assert res["final_verdict"] == "PASS", "VNQA WARN KHÔNG được hạ PASS xuống REGEN"
+    assert res["final_verdict"] == "PASS_WITH_WARNING", \
+        "VNQA WARN phải đánh dấu PASS_WITH_WARNING (canonical mapping), không phải PASS trơn"
+    # KHÔNG downgrade thành REGEN (giữ nguyên bất biến cũ)
+    assert res["final_verdict"] != "REGEN", "VNQA WARN KHÔNG được hạ xuống REGEN"

@@ -197,7 +197,11 @@ def orchestrate(ep_number: int, episode_path: str, skeptic_provider: str = 'olla
         final = 'REGEN'
         reasoning += f' [VNQA FAIL: {vnqa_issues}]'
     elif vnqa_verdict == 'WARN' and final == 'PASS':
-        # Don't downgrade ACCEPT to REGEN for VNQA warn — just note
+        # VNQA WARN: KHONG downgrade ACCEPT->REGEN, nhung danh dau PASS_WITH_WARNING.
+        # Canonical mapping WARN -> PASS_WITH_WARNING (qa_verdict_schema_proposal.yaml:88,146)
+        # per Mr.Long authorization 10/7 (G8-7). Truoc day quen gan `final` -> enum dead:
+        # next_action:224 + exit_code:255 co san nhung final khong bao gio nhan gia tri nay.
+        final = 'PASS_WITH_WARNING'
         reasoning += f' [VNQA WARN: {vnqa_issues}]'
 
     result = {
