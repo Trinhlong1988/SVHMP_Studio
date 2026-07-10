@@ -65,7 +65,7 @@ Generator → episode.md
     ↓ (auto_watch daemon poll 5s)
 qa_skeptic_orchestrator.py
     ↓ AUTO_FIX (R001 bùn cầu, R002 Bất chợt + future rules)
-    ↓ VNQA H1-H9 (underthesea + Hoàng Phê lexicon)
+    ↓ VNQA H1-H10 (underthesea + Hoàng Phê lexicon)
     ↓ Claude QA
     ↓ Skeptic Gemma adversarial (Ollama)
     ↓
@@ -82,7 +82,7 @@ final_verdict_ep_{N}.json
 ## Tools key
 
 - `tools/auto_watch.py` — daemon (Windows scheduled task `SVHMP_AutoWatch`)
-- `tools/vnqa/pipeline.py` — H1-H9 checks
+- `tools/vnqa/pipeline.py` — H1-H10 checks
 - `tools/vnqa/auto_fix.py` — Phase H4 semi-auto literal map
 - `tools/gen_100_passenger.py` — procedural roster gen
 - `tools/build_name_pool.py` — load Vietnamese names database → pair pool
