@@ -1,4 +1,9 @@
 claims:
+  audit_critical_g3_g5:
+    claimed_at: '2026-07-10T08:30:54'
+    released_at: '2026-07-10T09:13:35'
+    session: CMD_BUILD
+    status: released
   bible_dupkey_r110_141:
     claimed_at: '2026-07-05T16:06:30'
     released_at: '2026-07-05T16:16:46'
