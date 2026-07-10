@@ -1448,6 +1448,14 @@ files:
     domain: g6_story_planner
     status: active
     tier: 1
+  tests/test_story_planner_location_ref_ml16.py:   # audit ML #16 10/7
+    domain: g6_story_planner
+    status: active
+    tier: 3
+  tests/test_decision_packet_keys_ml15.py:   # audit ML #15 10/7
+    domain: g6_story_planner
+    status: active
+    tier: 3
   reports/G6B_REPORT.md:
     domain: g6_story_planner
     status: active

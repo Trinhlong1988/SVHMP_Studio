@@ -109,7 +109,7 @@ def build_episode_plan_ep01():
             "order_in_episode": i,
             "component_ref": s["name"],
             "summary": f"{s['name']} section cua EP01 golden (dong {s['line']+1})",
-            "location_ref": "Cầu Long Biên",  # tu event_ledger_draft ep_01.primary_event.stop_location
+            "location_ref": ep01_events["primary_event"]["stop_location"]["value"],  # audit ML #16 (10/7): doc DONG tu event_ledger (bien ep01_events dong 101), KHONG hardcode literal (truoc 'Cau Long Bien' - R195 khop ngau nhien, drift neu ledger doi)
         })
 
     ep01_ref = bible18["ep_01_reference"]
