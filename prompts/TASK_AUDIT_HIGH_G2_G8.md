@@ -76,65 +76,77 @@ canonical enum của `qa_verdict_adapter.py` map từ VNQA `WARN` — 2 việc k
 thật thì đổi default params của `audit_head_onset()` — cần đọc `bible/00_constitution.yaml` dòng
 3331-3336 xác nhận rule nào là ý định gốc trước khi chọn hướng sửa (không tự đoán).
 
-## NHÓM B — Cần Mr.Long quyết định trước khi sửa (drift do 2 nguồn tài liệu mâu thuẫn thật)
+## NHÓM B — ĐÃ CÓ QUYẾT ĐỊNH (Mr.Long duyệt theo khuyến nghị CMD_AUDIT, 10/7 — thực thi thẳng, không hỏi lại)
 
 ### G2-4. CLAUDE.md ghi "100 passenger LOCK, 50 NAM+50 NU" nhưng thực tế 139 (70 nam/69 nữ)
-Đã có backfill 39 người per Mr.Long 5/7 (ghi trong code) — chỉ là **CLAUDE.md quên cập nhật con số**
-sau quyết định đó. Sửa an toàn: cập nhật CLAUDE.md khớp số liệu thật, không cần hỏi lại.
+**QUYẾT ĐỊNH:** cập nhật CLAUDE.md khớp số liệu thật (139, 70 nam/69 nữ, ghi rõ backfill per
+Mr.Long 5/7). An toàn, không đổi hành vi code.
 
 ### G2-5. `roster_validator.py` docstring "0/139 đã fill" nhưng data thật 139/139 đã điền đủ
-Tương tự — chỉ là comment lỗi thời sau khi dữ liệu đã điền xong. Sửa an toàn: cập nhật docstring.
+**QUYẾT ĐỊNH:** cập nhật docstring khớp thực tế 139/139.
 
-### G2-6. `bible/37` claim "BỊ CHẶN" (blocked) nhưng code mặc định chỉ WARN, `--strict-characters` không được gọi ở đâu trong pipeline tự động
-**Cần Mr.Long quyết:** có muốn BẬT strict thật trong pipeline tự động (rủi ro: completeness roster
-hiện ~23%, sẽ chặn MỌI episode) hay chỉ sửa lại bible/37 cho khớp thực tế WARN-default (an toàn
-hơn, đúng lý do code đã ghi rõ)? Đây đúng tinh thần GOV-2 đã ghi trong `master_roadmap.md` — không
-tự bật khi dữ liệu voice còn đang sửa.
+### G2-6. `bible/37` claim "BỊ CHẶN" (blocked) nhưng code mặc định chỉ WARN
+**QUYẾT ĐỊNH: sửa bible/37 khớp thực tế WARN-default** — KHÔNG bật `--strict-characters` (roster
+completeness ~23%, bật strict sẽ chặn mọi episode, đúng tinh thần GOV-2 `master_roadmap.md` — không
+bật khi dữ liệu voice còn đang sửa).
 
-### G2-7. `tools/migrate_roster_v2.py` — `pronoun_system`/`particles` vẫn công thức hóa theo vùng miền (3 giá trị cho 100 người)
-Cùng lớp lỗi G2-1 đã bắt và sửa cho 4 field khác (`speaking_speed`/`catchphrase`/`dialogue_sample`/
-`forbidden_words`, commit `e079d10`) nhưng 2 field này CHƯA sửa. **Cần Mr.Long xác nhận phạm vi:**
-mở rộng đúng batch fix G2-1 sang 2 field này (cùng CMD_CHARACTER, cùng kỹ thuật) hay để riêng?
+### G2-7. `tools/migrate_roster_v2.py` — `pronoun_system`/`particles` vẫn công thức hóa
+**QUYẾT ĐỊNH: mở rộng đúng batch fix G2-1** (mirror kỹ thuật đã dùng cho 4 field kia, commit
+`e079d10`) sang 2 field `pronoun_system`/`particles` — cùng CMD_CHARACTER, cùng domain.
 
-### G4-2. `blueprint_domains.yaml` domain timeline/event vẫn ghi "planned" với lý do lỗi thời ("100 tập chưa render đủ", "chưa có tập nào ghi ledger") dù `g4_world` đã LOCKED
-Cập nhật đơn giản (status → exists, xóa lý do lỗi thời) — an toàn, không cần hỏi, nhưng đụng file
-governance dùng chung nên **note rõ trong commit** đây chỉ là đồng bộ trạng thái, không đổi field
-nào khác.
+### G4-2. `blueprint_domains.yaml` domain timeline/event vẫn ghi "planned" lỗi thời
+**QUYẾT ĐỊNH:** cập nhật status → exists, xóa lý do lỗi thời, note rõ trong commit chỉ đồng bộ
+trạng thái không đổi field khác.
 
-### G5-2. `blueprint_domains.yaml` domain supernatural validator vẫn "planned" (`tools/supernatural_rule_validator.py`, không tồn tại) dù validator thật (`supernatural_validator.py`) đã LOCK
-Tương tự G4-2 — cập nhật đồng bộ trạng thái, an toàn.
+### G5-2. `blueprint_domains.yaml` domain supernatural validator vẫn "planned" dù đã LOCK
+**QUYẾT ĐỊNH:** cập nhật đồng bộ trạng thái, tương tự G4-2.
 
-### G5-3. `character_ext_schema.yaml` (đã "SIGNED" bởi Mr.Long) claim `story_consistency_validator.py` đối chiếu 2 chiều `entity_class<->alive_status` nhưng code KHÔNG có check này
-Đây là **claim enforcement giả trong 1 file đã ký** — nghiêm trọng hơn drift thường vì đã có chữ ký.
-**Cần Mr.Long quyết:** thêm check thật vào `story_consistency_validator.py` (đúng như đã ký) hay
-sửa lại schema cho khớp thực tế chưa làm (hạ cấp thành roadmap)?
+### G5-3. `character_ext_schema.yaml` (đã SIGNED) claim enforcement giả (`entity_class<->alive_status`)
+**QUYẾT ĐỊNH: thêm check thật vào `story_consistency_validator.py`** — giữ đúng cam kết đã ký
+(không hạ cấp schema xuống roadmap). Đây là claim TRONG FILE ĐÃ KÝ, ưu tiên làm đúng lời hứa hơn là
+rút lại.
 
-### G6a-2. `decision_engine.build_packet()` tự nhận `status="full"` chỉ vì `plan is not None`, không kiểm 2 field bắt buộc (`cast_per_scene`, `reveals_allowed`) theo `decision_io.yaml`
-**Cần Mr.Long quyết:** siết `status="full"` chỉ khi đủ field bắt buộc thật (an toàn hơn, có thể làm
-nhiều packet rơi về `"partial"`) hay giữ nguyên logic hiện tại (chỉ cần `plan` khác `None`)? Đụng
-domain đã LOCKED, cùng lớp với DEBT-007 — nên gộp xử lý cùng đợt TU CHỈNH nếu Mr.Long đồng ý.
+### G6a-2 / G7-2. `decision_engine.build_packet()` tự nhận `status="full"` không kiểm field bắt buộc
+**QUYẾT ĐỊNH: siết `status="full"` chỉ khi đủ field bắt buộc thật** (`cast_per_scene`,
+`reveals_allowed` theo `decision_io.yaml`, `scene_id` khớp plan) — chấp nhận rủi ro nhiều packet
+rơi về `"partial"` (an toàn hơn tự nhận đủ khi chưa đủ, đúng tinh thần R195 không bịa). Xử lý G6a-2
+và G7-2 CHUNG 1 lần (cùng gốc, cùng file).
 
-### G6b-1. `blueprint_domains.yaml` khai `dependencies: [character, event, timeline, world, supernatural]` nhưng code thật dùng `decision_engine` + đọc bible domain audio — không khớp
-Cập nhật đồng bộ đơn giản — an toàn, không cần hỏi.
+### G6b-1. `blueprint_domains.yaml` dependencies không khớp code thật
+**QUYẾT ĐỊNH:** cập nhật đồng bộ đơn giản.
 
-### G6b-2. `story_planner.py::build_episode_plan_ep01()` — `location_ref` của cả 6 scene bị gán cứng cùng 1 chuỗi `"Cầu Long Biên"` (đúng lớp lỗi công thức hóa đã bắt trước đó)
-Comment nói "đọc từ event_ledger" nhưng code không hề đọc file đó cho field này. **Cần Mr.Long xác
-nhận:** có dữ liệu location thật riêng cho từng scene để đọc không (nếu có nguồn thật, sửa đọc đúng
-nguồn — không bịa thêm), hay EP01 chỉ có 1 location duy nhất thật (thì sửa lại comment cho khớp,
-không phải bug)?
+### G6b-2. `location_ref` gán cứng "Cầu Long Biên" cho cả 6 scene
+**ĐÃ ĐIỀU TRA — KHÔNG PHẢI bug bịa dữ liệu, chỉ là code không đọc biến đã load:** tự kiểm
+`runtime/event_ledger_draft.yaml` xác nhận `events.ep_01.primary_event.stop_location.value` =
+**"Cầu Long Biên"** — khớp CHÍNH XÁC chuỗi hardcode. Nguồn dữ liệu thật CHỈ có 1 giá trị
+location/episode (không có location riêng từng scene — đúng thiết kế dữ liệu, EP01 toàn bộ diễn ra
+1 địa điểm). **QUYẾT ĐỊNH: sửa code đọc ĐỘNG từ `event_ledger['primary_event']['stop_location']['value']`**
+thay vì hardcode literal (biến `event_ledger` đã load sẵn ở dòng 100-101, chỉ cần dùng đúng) — để
+episode tương lai có location khác nhau tự động đúng, không phải sửa tay mỗi lần.
 
-### G6b-3. `scene_function` (schema `required:true`) không có generator/validator nào enforce quyền sở hữu đã khai ("SCENE sở hữu, character CHỈ tham chiếu")
-Cần thiết kế enforcement — không đơn giản, nên gộp cùng đợt khi có generator EP02+ (hiện D2
-`episode_generator.py` mới build EP01).
+### G6b-3. `scene_function` chưa được enforce quyền sở hữu
+**QUYẾT ĐỊNH: hoãn** — đúng khuyến nghị ban đầu, gộp vào đợt build generator EP02+ (hiện D2 mới có
+EP01, chưa cấp thiết). Ghi vào `governance/TECH_DEBT.md` để không trôi mất.
 
-### G7-1. `g7_generator_check.py::_stage_no_write_domain()` tự-skip vì `git diff --name-only HEAD` luôn rỗng tại thời điểm pre-push chạy (đã commit xong)
-**Lỗ hổng thiết kế thời điểm-chạy** — gate hiệu quả bằng 0 trong thực tế dù logic đúng. **Cần
-Mr.Long/CMD_BUILD thiết kế lại cách kiểm** (vd so sánh diff giữa 2 commit gần nhất thay vì
-working-tree vs HEAD, hoặc chạy gate ở pre-commit thay vì pre-push) — không phải sửa 1 dòng đơn
-giản, cần suy nghĩ kỹ tránh phá cơ chế push hiện có.
+### G7-1. Gate `no_write_domain` tự-skip do thời điểm chạy (pre-push, sau khi đã commit)
+**QUYẾT ĐỊNH: thiết kế lại cách kiểm** — đổi từ `git diff --name-only HEAD` (working-tree vs HEAD,
+luôn rỗng lúc pre-push) sang so sánh diff giữa commit đang push và `origin/main` hiện tại (hoặc
+merge-base), tức kiểm ĐÚNG nội dung sắp lên remote thay vì trạng thái working-tree đã lỗi thời. CMD
+thực thi tự thiết kế chi tiết kỹ thuật, chỉ cần đảm bảo không phá cơ chế push hiện có — bắt buộc có
+mutation test xác nhận gate bắt được commit thật sự ghi domain khác.
 
-### G7-2. `decision_engine.build_packet()` tự nhận `status='full'` cho EP01 nhưng không đọc field bắt buộc theo `bp6/decision_io.yaml`, `scene_id` không khớp plan thật
-Cùng gốc với G6a-2 ở trên — xử lý chung 1 lần.
+### G8-1. AUTO_FIX (`vnqa/auto_fix.py --apply`) ghi trực tiếp `episode.md`
+**ĐÃ ĐIỀU TRA — ĐÂY LÀ NGOẠI LỆ ĐÃ DUYỆT, KHÔNG PHẢI DRIFT:** `governance/pack5/19_qa_pipeline.md`
+dòng 26 ghi rõ nguyên văn: *"AUTO_FIX (Phase H4): vnqa/auto_fix.py --apply (**registry literal map
+Mr.Long duyệt**, atomic ghi + backup)"* — cơ chế này đã được Mr.Long duyệt từ trước, có phạm vi hẹp
+(chỉ literal-map đã duyệt, không phải sửa content tự do) + an toàn (atomic write + backup). **QUYẾT
+ĐỊNH: KHÔNG đổi hành vi code** — chỉ cập nhật `non_responsibility` của domain `qa_runtime` trong
+`blueprint_domains.yaml` ghi rõ AUTO_FIX là ngoại lệ đã duyệt (tránh đọc nhầm là vi phạm hợp đồng
+domain lần sau). **Lưu ý phụ (không chặn quyết định trên):** `bible/26_pipeline_discipline_kentjuno.yaml`
+dòng 97 ghi quy ước chung *"auto_fix_*.py: REQUIRE --apply flag, default dry-run"* — nhưng
+`qa_skeptic_orchestrator.py` gọi với `autofix_mode` mặc định = `'apply'` (không phải dry-run mặc
+định). CMD thực thi kiểm lại xem đây có phải sai lệch quy ước chung cần báo riêng không (không tự
+đổi default khi chưa rõ).
 
 ## RÀNG BUỘC CHUNG
 - KHÔNG tự sửa các mục NHÓM B mà chưa có xác nhận hướng từ Mr.Long — chỉ NHÓM A được làm ngay.
