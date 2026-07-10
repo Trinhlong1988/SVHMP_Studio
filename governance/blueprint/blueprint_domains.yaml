@@ -354,12 +354,10 @@ domains:
       target_milestone: M1_canon_managers
       blocking_dependency: "Mr.Long duyet field-hoa GHOST_RULES (bible immutable)"
     validator:
-      status: planned
-      planned_path: tools/supernatural_rule_validator.py
+      path: tools/supernatural_validator.py
+      status: exists
       owner: supernatural
-      reason_not_exists_yet: "Phu thuoc schema sieu nhien chua co."
-      target_milestone: M1_canon_managers
-      blocking_dependency: "supernatural schema (M1)"
+      note: "G5-2 sync 10/7 (per Mr.Long authorization, TASK_AUDIT_HIGH_G2_G8.md): status planned->exists, tro ve substitute THAT da tren disk + LOCKED (g5_supernatural v1.0) - validate typology/possession state machine/no-dup-compliance/no-regression. Canonical tools/supernatural_rule_validator.py rieng (validate GHOST_RULES field-hoa tu bible/00) van chua build - reconcile ten domain rieng thuoc Mr.Long ve sau."
     reader: [character, object, event, story_planner, generator, qa_runtime]
     writer: [mr_long]
     lifecycle: approved
@@ -480,10 +478,9 @@ domains:
     source_of_truth:
       - {path: bible/18_driver_reveal_budget.yaml, status: exists}
       - {path: bible/01_series_bible.yaml, status: exists}
-      - {path: bible/16_series_kpi.yaml, status: exists}
     manager:
       status: exists
-      path: tools/story_planner.py   # G6b D5 (5/7): manager toi thieu, doc bible/18+01+16
+      path: tools/story_planner.py   # G6b D5 (5/7): manager toi thieu, doc bible/18+01 (DEBT-012 10/7: KHONG doc bible/16 - da xoa claim source_of_truth + hang chet BIBLE_16_KPI; KPI_BUCKETS hardcode chu y, bible/16 do Publisher doc)
       owner: story_planner            # + event_ledger (G4 D2) + golden EP01 (tai dung G6a parser)
     schema:
       status: exists
