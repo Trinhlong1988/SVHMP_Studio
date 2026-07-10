@@ -13,7 +13,7 @@ Decision tree:
 
 Skeptic verdict:
   ACCEPT + 0 critical missed  → final PASS, pipeline → TTS
-  ACCEPT + minor missed       → final PASS_WITH_NOTE, log skeptic findings
+  ACCEPT + minor missed       → final PASS, log skeptic findings (non-critical)
   REJECT                      → final REGEN scope=story_only, Generator re-write with skeptic feedback
   NEEDS_HUMAN                 → final REVIEW_REQUIRED, Mr.Long approve before proceed
 

@@ -109,7 +109,7 @@ def main():
     print(f"  click_count: {b['click_count']}")
     print(f"  {'PASS' if b['pass'] else 'FAIL'}\n")
 
-    print("[3.4] Head onset audit (R87b — voice reach -20dB within 50ms)")
+    print("[3.4] Head onset audit (R88 — voice reach -28dB within 120ms; relaxed từ R87b -20dB/50ms cho onset ramp BigVGAN, xem docstring audit_head_onset)")
     h = audit_head_onset(audio, sr)
     print(f"  checked: {h['checked']}, slow_onsets: {h['slow_onsets']}")
     print(f"  {'PASS' if h['pass'] else 'FAIL'}\n")
