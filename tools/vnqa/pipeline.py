@@ -1,5 +1,5 @@
 """
-SVHMP Vietnamese QA Pipeline — Phase H (H1-H8) round 14
+SVHMP Vietnamese QA Pipeline — Phase H (H1-H10) round 14 (sua nhan 10/7 audit ML #26: run_all chay du H1-H10)
 Lock date: 2026-06-26 (Mr.Long approve full Phase H ship)
 
 Replace manual bible/22_anti_slop_vi.yaml với library-based QA chính xác.
@@ -399,7 +399,7 @@ class VietnameseQAChecker:
 
         return {
             'ep_number': self.ep,
-            'phase_h_version': 'H1-H7 v1.0',
+            'phase_h_version': 'H1-H10 v1.1',
             'stats': self.stats,
             'issues': self.issues,
             'issues_count_by_severity': {

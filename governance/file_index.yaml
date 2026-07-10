@@ -505,9 +505,9 @@ files:
     status: active
     tier: null
   tools/character_balance_report.py:
-    domain: unclassified
+    domain: character   # audit ML #18 10/7: can bang roster R210 (registry character.reports), truoc bi unclassified
     status: active
-    tier: null
+    tier: 1
   tools/character_manager.py:
     domain: unclassified
     status: active

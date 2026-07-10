@@ -122,7 +122,7 @@ domains:
       status: planned
       planned_path: tools/timeline_manager.py
       owner: timeline
-      reason_not_exists_yet: "100 tap chua render du de phat sinh xung dot thu tu can may quan."
+      reason_not_exists_yet: "Canonical timeline_manager.py chua build. Doi chieu thu tu xuyen-tap hien do tools/timeline_check.py (g4_world locked v1.0, M1 exact-name-match) phuc vu tam; event_ledger_draft.yaml da co draft 50/50 tap. Reconcile timeline<->g4_world domain thuoc Mr.Long (audit ML #10 10/7 - ban cu '100 tap chua render' da loi thoi)."
       target_milestone: M1_canon_managers
       blocking_dependency: "event ledger (M1) — timeline can du lieu su kien de doi chieu"
     schema:
@@ -136,7 +136,7 @@ domains:
       status: planned
       planned_path: tools/timeline_validator.py
       owner: timeline
-      reason_not_exists_yet: "Phu thuoc schema timeline chua co."
+      reason_not_exists_yet: "Canonical timeline_validator.py chua build; tools/timeline_check.py (g4_world locked) da lam checker xuyen-tap M1 phuc vu tam. Reconcile domain thuoc Mr.Long (audit ML #10 10/7)."
       target_milestone: M1_canon_managers
       blocking_dependency: "timeline schema (M1)"
     reader: [event, story_planner, generator, qa_runtime]
@@ -455,7 +455,7 @@ domains:
       - status: planned
         planned_path: runtime/memory/event_ledger.yaml
         owner: event
-        reason_not_exists_yet: "Chua co tap nao ghi ledger; su kien EP01 dang nam trong episode.md + BUGS log."
+        reason_not_exists_yet: "Canonical append-only runtime/memory/event_ledger.yaml chua chot format. runtime/event_ledger_draft.yaml DA co draft 50/50 tap (tools/event_ledger_miner.py, g4_world locked) - moi la DRAFT, chua phai ledger append-only Mr.Long duyet (audit ML #10 10/7 - ban cu 'chua co tap nao ghi ledger' da loi thoi)."
         target_milestone: M1_canon_managers
         blocking_dependency: "event schema (M1) + Mr.Long duyet format append-only"
       - {path: bible/14_comment_trigger_library.yaml, status: exists}
@@ -463,7 +463,7 @@ domains:
       status: planned
       planned_path: tools/event_manager.py
       owner: event
-      reason_not_exists_yet: "Chua co ledger de quan; viet manager truoc data = built!=wired."
+      reason_not_exists_yet: "Canonical event_manager.py chua build. tools/event_ledger_miner.py (g4_world locked) da mine su kien vao event_ledger_draft.yaml (50/50 tap). Reconcile event<->g4_world domain thuoc Mr.Long (audit ML #10 10/7 - ban cu 'chua co ledger' da loi thoi)."
       target_milestone: M1_canon_managers
       blocking_dependency: "event_ledger.yaml (M1)"
     schema:
@@ -497,10 +497,9 @@ domains:
       status: exists
       path: governance/blueprint/schemas/story_plan_schema.yaml   # G6b D5a (5/7): field-hoa
       owner: story_planner            # dung nguyen van proposal APPROVED_A, commit 9f5ccbd
-    validator: {path: tools/character_balance_report.py, status: exists}
-    # note: tools/story_plan_schema_check.py (G6b D6a, 5/7) la validator THU 2 cho instance
-    # schema (component_ref/cap/cast/PAS_id/clue_weight) - dang ky qua file_index.yaml domain
-    # g6_story_planner, khong them field rieng o day de giu dung format 1-validator/domain.
+    validator: {path: tools/story_plan_schema_check.py, status: exists}   # audit ML #18 10/7: validator THAT cho story_plan instance (component_ref/cap/cast/PAS_id/clue_weight, G6b D6a 5/7, file_index domain g6_story_planner). Ban cu tro character_balance_report.py - SAI (chi kiem can bang roster, 0 import story_planner).
+    # note: tools/character_balance_report.py (can bang roster R210) thuoc domain character
+    # (registry character.reports + file_index domain character), KHONG phai validator story_plan.
     reader: [decision_engine, generator, qa_runtime]
     writer: [mr_long]
     lifecycle: approved
@@ -589,7 +588,7 @@ domains:
       owner: generator                    # KHONG viet prose (van la CMD prompt-based, xem module docstring)
       scope_note: "v1 CHI ep_number=1 xay du du lieu that (EP01 golden reference, 14/14 domain
         co du lieu de doi chieu) - ep khac tra ve pending+ly do (khong bia, R195). Xem
-        DEBT-007 (decision_engine.plan_ref key-mismatch, chua fix - khong phai loi generator)."
+        DEBT-007 (decision_engine.plan_ref key-mismatch, DA CLOSED 9/7 huong (a) sua ben doc - audit ML #22 10/7, ban cu ghi 'chua fix' loi thoi)."
     schema:
       status: exists
       path: governance/blueprint/schemas/episode_schema.yaml   # G7 D1 (9/7): field-hoa
@@ -605,7 +604,7 @@ domains:
     audit_rule: "Output chi dung domain lifecycle=approved (Promotion Gate R211); episode.md qua FULL_TEXT_GATE truoc render (R197); viet canh khong co budget sheet = VIOLATION."
 
   qa_runtime:
-    responsibility: "Content-QA runtime: FULL_TEXT_GATE (preflight R86/R197), VNQA H1-H9, skeptic adversarial, watch daemon, waiver R204."
+    responsibility: "Content-QA runtime: FULL_TEXT_GATE (preflight R86/R197), VNQA H1-H10, skeptic adversarial, watch daemon, waiver R204."
     non_responsibility: "KHONG sua content (chi verdict) - NGOAI LE DA DUYET: AUTO_FIX vnqa/auto_fix.py --apply (registry literal-map Mr.Long duyet, pack5/19 dong 26; pham vi hep + atomic ghi + backup, KHONG sua content tu do). LUU Y (G8-1, Mr.Long xac nhan 10/7): qa_skeptic_orchestrator.py --autofix-mode default='apply' la DUNG chu dinh (pack5/19 dong 26 - registry literal-map pham vi hep + atomic + backup), KHONG mau thuan bible/26 dry-run: tool goc vnqa/auto_fix.py chay standalone van default PROPOSE dung bible/26. KHONG phai code-QA ci_gate (pack3), DOC LAP voi generator (khong dung logic sinh de cham bai sinh)."
     source_of_truth:
       - {path: governance/pack5/19_qa_pipeline.md, status: exists}

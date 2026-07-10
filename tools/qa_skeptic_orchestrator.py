@@ -111,7 +111,7 @@ def orchestrate(ep_number: int, episode_path: str, skeptic_provider: str = 'olla
                 '--output', str(vnqa_path),
                 '--ep', str(ep_number),
             ]
-            print(f"[orchestrator] Running VNQA library check (H1-H7)...")
+            print(f"[orchestrator] Running VNQA library check (H1-H10)...")
             vnqa_run = subprocess.run(vnqa_cmd, capture_output=True, text=True,
                                       encoding='utf-8', errors='replace', timeout=120, creationflags=CREATE_NO_WINDOW)
             if vnqa_run.returncode == 0 and vnqa_path.exists():
