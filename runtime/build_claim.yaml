@@ -46,8 +46,9 @@ claims:
     status: released
   debt002_003_004_fix:
     claimed_at: '2026-07-10T10:25:22'
+    released_at: '2026-07-10T10:49:29'
     session: CMD_BUILD
-    status: active
+    status: released
   debt005_006_fix:
     claimed_at: '2026-07-05T21:11:57'
     released_at: '2026-07-05T22:18:22'
@@ -113,6 +114,10 @@ claims:
     released_at: '2026-07-09T13:04:21'
     session: CMD_BUILD
     status: released
+  g8_7_pass_with_warning:
+    claimed_at: '2026-07-10T10:46:23'
+    session: CMD_BUILD_2
+    status: active
   g8_qa_runtime:
     claimed_at: '2026-07-09T10:14:14'
     released_at: '2026-07-09T23:10:15'
