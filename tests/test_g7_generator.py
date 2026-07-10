@@ -142,9 +142,11 @@ def test_module_source_has_no_write_calls_to_domain_files():
     cua episode_generator.py KHONG duoc chua loi goi ghi file (open(..., 'w'/'a'),
     .write_text, yaml.safe_dump ra file) nham vao bat ky domain source nao."""
     src = (REPO / "tools" / "episode_generator.py").read_text(encoding="utf-8")
-    forbidden_patterns = ['open(', "mode='w'", 'mode="w"', ".write_text(", ".write_bytes("]
-    # yaml.safe_dump chi dung de PRINT ra stdout trong main(), khong ghi file - xac nhan
-    # khong co Path(...).write_text/open(...'w') nao trong module.
-    assert "open(" not in src, "episode_generator.py KHONG duoc tu mo file (chi doc qua yaml.safe_load(Path(...).read_text()))"
-    assert ".write_text(" not in src and ".write_bytes(" not in src, (
-        "episode_generator.py vi pham forbidden_operations:write (interface_contracts.yaml)")
+    # audit ML #21 (10/7): mo rong pattern cam - ngoai open/write_text/write_bytes, cam ca ghi/exec
+    # GIAN TIEP (shutil.copy/move, os.system, subprocess, os.replace) co the ne text-grep truoc do.
+    # Mirror dung tools/g7_generator_check.py::_stage_static_no_write_src (gate doc lap cung do phu).
+    forbidden_patterns = ['open(', ".write_text(", ".write_bytes(", 'shutil.copy', 'shutil.move',
+                          'os.system', 'subprocess', 'os.replace']
+    hit = [p for p in forbidden_patterns if p in src]
+    assert not hit, (
+        f"episode_generator.py vi pham forbidden_operations:write/exec (interface_contracts.yaml): {hit}")

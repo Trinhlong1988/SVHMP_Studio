@@ -132,11 +132,15 @@ def _stage_static_no_write_src() -> dict:
     """Mirror tests/test_g7_generator.py::test_module_source_has_no_write_calls_to_domain_files
     - kiem tra LAI o day (khong phu thuoc pytest) de gate tu dung duoc doc lap."""
     src = GENERATOR_MODULE.read_text(encoding='utf-8')
-    if 'open(' in src:
-        return {'rc': 1, 'tail': 'source chua open( - vi pham read-only (forbidden_operations:write)'}
-    if '.write_text(' in src or '.write_bytes(' in src:
-        return {'rc': 1, 'tail': 'source chua write_text/write_bytes - vi pham read-only'}
-    return {'rc': 0, 'tail': '0 loi goi ghi file trong source'}
+    # audit ML #21 (10/7): mo rong pattern - ngoai open/write_text/write_bytes, cam ca ghi/exec
+    # GIAN TIEP (shutil.copy/move, os.system, subprocess, os.replace) co the ne truoc do.
+    # Van text-grep (nhat quan cach tiep can codebase, khong AST) - chi mo rong do phu.
+    forbidden = ['open(', '.write_text(', '.write_bytes(', 'shutil.copy', 'shutil.move',
+                 'os.system', 'subprocess', 'os.replace']
+    hit = [p for p in forbidden if p in src]
+    if hit:
+        return {'rc': 1, 'tail': f'source chua pattern ghi/exec bi cam (read-only): {hit}'}
+    return {'rc': 0, 'tail': '0 loi goi ghi/exec file trong source'}
 
 
 def run_suite():

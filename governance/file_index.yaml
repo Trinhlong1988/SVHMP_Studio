@@ -1468,6 +1468,10 @@ files:
     domain: g7_generator
     status: active
     tier: 1
+  tests/test_episode_schema_values_ml20.py:   # audit ML #20 10/7
+    domain: g7_generator
+    status: active
+    tier: 3
   tools/g7_generator_check.py:
     domain: g7_generator
     status: active
@@ -1484,6 +1488,10 @@ files:
     domain: qa_runtime
     status: active
     tier: 1
+  tests/test_vnqa_run_all_verdict_ml25.py:   # audit ML #25 10/7
+    domain: qa_runtime
+    status: active
+    tier: 3
   governance/blueprint/schemas/qa_verdict_schema.yaml:
     domain: qa_runtime
     status: active
