@@ -69,6 +69,11 @@ claims:
     released_at: '2026-07-10T18:41:30'
     session: CMD_BUILD_2
     status: released
+  debt014_scene_function:
+    claimed_at: '2026-07-11T01:06:35'
+    released_at: '2026-07-11T01:33:58'
+    session: CMD_BUILD
+    status: released
   g2_audit_fix:
     claimed_at: '2026-07-05T19:52:31'
     released_at: '2026-07-05T21:42:16'
