@@ -32,7 +32,7 @@ def _save(path, data):
     # atomic write (tmp cung thu muc + os.replace) — chong corrupt build_claim.yaml khi ghi bi
     # kill giua chung hoac nhieu CMD session ghi dong thoi (completeness gap #16, per Mr.Long
     # authorization 10/7). os.replace atomic tren cung filesystem. LUU Y: chi chong TRUNCATE/
-    # half-write, KHONG chong TOCTOU 2-session-cung-claim (can lock rieng -> TECH_DEBT DEBT-016).
+    # half-write, KHONG chong TOCTOU 2-session-cung-claim (can lock rieng -> TECH_DEBT DEBT-017).
     path = Path(path)
     text = yaml.safe_dump(data, allow_unicode=True, sort_keys=True)
     fd, tmp = tempfile.mkstemp(dir=str(path.parent), prefix=path.name + '.', suffix='.tmp')

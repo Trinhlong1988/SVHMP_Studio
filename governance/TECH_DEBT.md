@@ -344,3 +344,36 @@ Mr.Long chốt hướng 4/4 (PING 16:26, qua CMD_AUDIT tự kiểm chứng từn
 - **DEBT-013 — CLOSED (b):** `episode_schema.yaml` passenger_main giữ `required:true` + thêm `pilot_null_exception:true` + desc "required trừ pilot" — EP01/pilot được null (R195, test_reality_passenger_main_none khóa), required PAS_id thật cho ep>1. Verify: g7 13 + #20 test pass.
 
 Registry 0/0/0 sau mỗi sửa. Domain LOCKED chạm: g6b_story_planner (DEBT-012) + g7_generator (DEBT-013) → TU CHINH registry. bible/37 (DEBT-011) là bible SIGNED domain character (không có pack-lock registry) → ghi commit.
+
+---
+
+## DEBT-017..023: từ audit 18 completeness gap (CMD_BUILD_2, 2026-07-11, `TASK_AUDIT_COMPLETENESS_GAPS.md`)
+
+> Chi tiết bằng chứng đầy đủ ở phần "KẾT QUẢ AUDIT" cuối `TASK_AUDIT_COMPLETENESS_GAPS.md`. DEBT-017
+> đã fix phần chống-corrupt; các mục 018-023 là finding thật nhưng chạm TỐI THƯỢNG/bible/cơ-chế-mới
+> → escalate Mr.Long (R_SUPREME R1, KHÔNG tự quyết). Số bắt đầu 017 vì 016 đã dùng (entity_class backfill).
+
+## DEBT-017: `build_claim._save()` + `auto_watch.save_state()` — TOCTOU giữa 2 session cùng claim (residual) — **PARTIAL (atomic đã fix)**
+- **Đã fix (gap #16):** `build_claim._save()` chuyển sang atomic (tmp+os.replace, commit `3a8868f`) — chống TRUNCATE/half-write khi ghi bị kill / nhiều CMD ghi. +1 test regression.
+- **CÒN NỢ:** atomic KHÔNG chống TOCTOU — 2 session cùng `_load` pack là free rồi cùng `_save` claim → cả 2 tin mình sở hữu (last-writer-wins âm thầm). Chính công cụ chống-đụng-độ vẫn bị đánh bại bởi đúng concurrency nó phải chặn. Cần lock/compare-and-set (file-lock hoặc atomic CAS) = **cơ chế mới** → chờ Mr.Long quyết có xây không (hiện mitigate bằng phối hợp người + serialize git-push).
+- **Phụ:** `auto_watch.py` thiếu single-instance guard (supervisor CÓ, auto_watch KHÔNG) + `save_state()` non-atomic → 2 daemon ghi đè `runtime/auto_watch_state.yaml`. Áp cùng pattern khi xử lý.
+
+## DEBT-018: R197 FULL_TEXT_GATE — claim "trước MỌI render, không ngoại lệ" KHÔNG machine-true (gap #2 + #1) — **ESCALATE Mr.Long (HIGH, constitutional)**
+- Verify tận tay: 0 render entrypoint gọi `svhmp_preflight_qa.py`; render thật (`svhmp_v13_render.py`) chỉ gọi 1 tool `qa_eol_diacritic.py` (đúng thứ R197 CẤM "Text Gate với 1 tool") + 2 bypass (missing-md skip, cờ `--skip-r86`). `pack5/19_qa_pipeline.md:10` + `TASK_PACK5_BUILD.md:14` đã ghi "render KHÔNG gọi nó" → R197 (CLAUDE.md TỐI THƯỢNG) là văn bản chưa reconcile. Đúng lớp R215 (rule khẳng định, enforcer không tồn tại trên đường thật).
+- **Liên quan #1 audio_render:** (1a) `svhmp_audio_qa.py` docstring "POST-RENDER mandatory/Block ship" vs `bp8/render_chain.yaml:73` đã ghi `enforcement_mode: manual`; (1b) R199 guard `aggressive_trim_tail` chết (render dùng `qa_clean_tail`), docstring còn "hardlock active"; (1c) "LOCKED v1.3" không checksum enforcer.
+- **KHÔNG tự sửa** (R_SUPREME R1 — R197 là TỐI THƯỢNG; sửa docstring audio theo 1 hướng có thể bị đảo nếu Mr.Long chọn wire-mandatory). Mr.Long quyết: **(a)** wire `svhmp_preflight_qa` vào các render entrypoint để R197 thành thật (+ bỏ `--skip-r86`), hay **(b)** sửa lời R197 + docstring audio khớp thực tế "standalone verify-chain" của pack5/19.
+
+## DEBT-019: security latent — `dialogue_generator.write_episode_line()` non-numeric `ep_n` chưa sanitize (gap #18) — **GHI NHẬN (low, không reachable)**
+- 3 entrypoint chính (svhmp_v13_render/episode_generator/dialogue_generator) đều SẠCH với input trusted-operator + int-validate. Latent: `write_episode_line()` với `ep_n` non-numeric làm `Path(root)/f'ep_{str(ep_n)}'` — nếu `ep_n` chứa `../` sẽ traverse. KHÔNG reachable từ input untrusted (chỉ test/sandbox truyền literal), đã có guard production-overwrite. Đề xuất: thêm guard `str(ep_n).isidentifier()` NẾU helper này bao giờ được wire tới input ngoài. Không cấp bách.
+
+## DEBT-020: bible/23 naming — text khẳng định uniqueness tuyệt đối nhưng 139 có 3 waiver canon chỉ ở code (gap #4) — **ESCALATE Mr.Long (bible immutable)**
+- forbidden-15 sạch (0 hit), word-uniqueness enforce THẬT (validator `word_owner` map, sẽ bắt collision mới ngoài 3 waiver). Drift: `bible/23:27-31` "TUYỆT ĐỐI KHÔNG dùng cùng WORD" + hook `100/100 unique / 200/200 syllable` — ở 139 có PAS_0151 "Hạ Nhi" (chia syllable Hạ với PAS_0013, Nhi với PAS_0033) + PAS_0131 "Nguyễn" (1-syllable), đều là canon episode names waived TRONG code validator (`C1_RULE02_CANON_EXEMPT_WORDS`) nhưng bible chưa ghi. Sửa bible = Mr.Long. Đề xuất: bổ sung mục "canon waiver" vào bible/23 khớp code.
+
+## DEBT-021: regret distribution — metadata `distribution_actual` stale (per-100) + không enforcer recompute (gap #5) — **ESCALATE Mr.Long (bible/11 forbidden_edit)**
+- `passenger_roster_100.yaml:16-21` header `distribution_actual: {32/24/20/14/10}` (=100) là số CŨ; thật ở 139 = family 40 / love 31 / promise 29 / kindness 23 / self 15 + 1 RFC_PENDING (PAS_0151 pillar chưa gán, assigned_ep null). Tỷ lệ ~ tương đương target per-100 (drift nhẹ, kỳ vọng vì target là /100). 27 sub-archetype phủ đủ, 0 ID bịa. `constitution_compliance.distribution_lock_bible_11: true` KHÔNG có enforcer nào recompute (R215 pattern). bible/11 distribution 32/24/20/14/10 là forbidden_edit (Mr.Long lock). Mr.Long quyết: (a) rebalance 139 về target, hay (b) cập nhật `distribution_actual` = số thật + gắn enforcer distribution-check + resolve PAS_0151 RFC_PENDING.
+
+## DEBT-022: R200 audit_ping honor-system — không có anti-omission gate (gap #6) — **ESCALATE Mr.Long (CHƯA CÓ ENFORCER — rủi ro drift)**
+- `log_ping.py` thuần append, 0 verify. `verify_ping_claim.py` chỉ check claim→fact (chống BỊA trong log), KHÔNG check fact→claim (CMD fix+push mà QUÊN log = 0 gate bắt). git hooks chỉ `.sample` (không active). R200 "PHẢI log mỗi fix" là honor-system thuần — đúng lớp R215 "CHƯA CÓ ENFORCER". Xây gate đối chiếu commit↔ping = cơ chế mới → Mr.Long quyết ROI (hiện dựa self-discipline + review chéo giữa CMD).
+
+## DEBT-023: legal content-instance — chưa có tool quét NỘI DUNG THẬT 50 tập cho HB01/HB02 (gap #17) — **ESCALATE Mr.Long (rủi ro pháp lý, việc lớn)**
+- `bp9_compliance_check.py` chỉ kiểm CẤU TRÚC schema HB01/HB02 (Nghị định 38/2021 + Điều 320 BLHS), KHÔNG quét nội dung episode đã render. `publish_gate.py` (runtime scanner) vẫn `planned` (khai trung thực). Rủi ro pháp lý thật nhưng xây content scanner là việc lớn ngoài phạm vi 1 CMD tự quyết. Đề xuất Mr.Long quyết có xây `publish_gate.py` quét HB01/HB02 trên 50 tập không.
