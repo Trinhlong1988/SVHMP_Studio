@@ -107,3 +107,32 @@ def test_injection_bad_typology_data_propagates_through_run_all(monkeypatch):
     errs = sv.run_all()
     assert any("INJECTED" in e for e in errs), (
         "run_all() khong propagate loi tu check_typology() - composition vo hieu")
+
+
+# ============================================================
+# Follow-up 10/7 (per Mr.Long authorization, ping 09:30): wire _run_all_body_ok() vao
+# tools/g5_supernatural_check.py lam invariant thu 2 - truoc do gate chay DOC LAP (ngoai
+# pytest) khong bat duoc mutation xoa het composition (chi pytest test nay moi bat). Test
+# duoi day BAO VE chinh viec WIRING do - chong ai go invariant nay khoi gate ma khong ai biet.
+# ============================================================
+
+def test_g5_gate_has_run_all_composition_invariant_wired():
+    """Unwire-guard: g5_supernatural_check.SUITE PHAI co invariant 'run_all_composition' goi
+    _run_all_body_ok() - neu bi go, gate quay lai khoang ho CMD_AUDIT da phat hien (chay doc
+    lap ngoai pytest khong bat duoc mutation composition)."""
+    sys.path.insert(0, str(REPO / "tools"))
+    import g5_supernatural_check as g5c
+    keys = [k for k, _ in g5c.SUITE]
+    assert "run_all_composition" in keys, (
+        "invariant 'run_all_composition' bi go khoi g5_supernatural_check.SUITE (unwire!)")
+    src = (REPO / "tools" / "g5_supernatural_check.py").read_text(encoding="utf-8")
+    assert "_run_all_body_ok" in src, "grep tinh tren SOURCE THAT (khong chi object in-memory)"
+
+
+def test_g5_gate_pass_on_real_data():
+    """Reality anchor: gate chay standalone (subprocess, dung dung cach CI goi) tren du lieu
+    that PHAI PASS (2/2 invariant)."""
+    import subprocess
+    r = subprocess.run([sys.executable, str(REPO / "tools" / "g5_supernatural_check.py")],
+                        capture_output=True, text=True, cwd=str(REPO), encoding="utf-8")
+    assert r.returncode == 0, r.stdout + r.stderr
