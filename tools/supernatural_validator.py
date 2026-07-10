@@ -23,6 +23,7 @@ M6 (entity_class thieu o nhan vat linh_hon) CHUA enforce duoc: D2 (entity_class 
 bible/37) khong lam trong pham vi CMD_BUILD_3 lan nay (bible/*.yaml bi cam, bp2 dang
 LOCKED, can RFC + Mr.Long authorization rieng) — ghi ro ROADMAP, khong bia check gia.
 """
+import re
 import sys
 from pathlib import Path
 
@@ -160,6 +161,27 @@ def run_all():
     errs += check_possession_state_machine()
     errs += check_no_duplicate_compliance_files()
     return errs
+
+
+def _run_all_body_ok(src):
+    """Pure check TREN SOURCE TEXT (10/7, per Mr.Long authorization - TASK_AUDIT_CRITICAL_
+    G3_G5.md Bug #2, CMD_AUDIT phat hien run_all() KHONG co test composition that): body ham
+    run_all() PHAI goi DU CA 3 sub-check (check_typology/check_possession_state_machine/
+    check_no_duplicate_compliance_files) - neu ai vo tinh xoa 1 dong 'errs += check_*()',
+    gate g5_supernatural_check.py van bao PASS tren du lieu sach vi 2 sub-check con lai khong
+    phat hien loi. Ham nay generalize tu tools/g8_qa_runtime_check.py::_pause_delegation_
+    body_ok (mirror pattern: pure check tren source text, dung chung boi gate va mutation-
+    proof test, R211 khong viet lai logic tu dau)."""
+    m = re.search(r"def run_all\(.*?\n(?=def |\Z)", src, re.DOTALL)
+    if not m:
+        return False, "khong tim thay ham run_all() trong supernatural_validator.py"
+    body = m.group(0)
+    required = ["check_typology()", "check_possession_state_machine()",
+                "check_no_duplicate_compliance_files()"]
+    missing = [c for c in required if f"errs += {c}" not in body]
+    if missing:
+        return False, f"run_all() thieu loi goi 'errs += {{sub-check}}()': {missing}"
+    return True, "run_all() goi du 3/3 sub-check (typology/possession/compliance)"
 
 
 if __name__ == '__main__':

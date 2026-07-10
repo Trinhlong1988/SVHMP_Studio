@@ -219,12 +219,27 @@ def write_episode_line(root: Path, ep_n, line: str, header_kv: dict = None) -> P
     ep_n chap nhan ca so nguyen (zero-pad nhu 50 tap that, vd 1 -> 'ep_01') LAN chuoi tuy y
     khong phai so (dung nguyen van, vd 'g3_sample' -> 'ep_g3_sample') - phuc vu G3-7 (dong
     kiem duyet 5/7): can 1 thu muc sandbox TEN CHU (khong phai so) de KHONG BAO GIO trung
-    voi bat ky so tap that/tuong lai nao (hien 50 tap, roadmap toi 90) du co ep_n nao duoc dung."""
+    voi bat ky so tap that/tuong lai nao (hien 50 tap, roadmap toi 90) du co ep_n nao duoc dung.
+
+    GUARD (10/7, per Mr.Long authorization - TASK_AUDIT_CRITICAL_G3_G5.md Bug #1, CMD_AUDIT
+    phat hien docstring cam ket "KHONG BAO GIO tro vao 50 tap that" nhung code khong enforce):
+    raise ValueError neu root la thu muc production that (SVHMP/'output') VA ep_n la so
+    (int/chuoi toan chu so) - to hop nay se ghi de tap da locked. 2 to hop hop le cu (tmp_path
+    bat ky ep_n; root production + ep_n chuoi non-numeric) KHONG doi hanh vi."""
     header_kv = header_kv or {'g3_sandbox': 'true'}
     try:
         ep_label = f'{int(ep_n):02d}'
+        ep_n_is_numeric = True
     except (TypeError, ValueError):
         ep_label = str(ep_n)
+        ep_n_is_numeric = False
+    if ep_n_is_numeric and Path(root).resolve() == (SVHMP / 'output').resolve():
+        raise ValueError(
+            "write_episode_line() KHONG duoc goi voi ep_n so + root production "
+            f"(root={root}, ep_n={ep_n!r}) - se ghi de tap that da locked. Dung ep_n dang "
+            "chuoi non-numeric cho sandbox (vd 'g3_sample'), hoac golden_lock neu that su "
+            "can ghi tap that (xem tests/_golden_lock.py)."
+        )
     ep_dir = Path(root) / f'ep_{ep_label}'
     ep_dir.mkdir(parents=True, exist_ok=True)
     header = '\n'.join(f'{k}: {v}' for k, v in header_kv.items())

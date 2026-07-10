@@ -1360,6 +1360,10 @@ files:
     domain: supernatural
     status: active
     tier: 3
+  tests/test_supernatural_run_all_composition.py:
+    domain: supernatural
+    status: active
+    tier: 3
   tools/vn_number_words.py:
     domain: g4_world
     status: active
@@ -1488,5 +1492,9 @@ files:
     domain: qa_runtime
     status: active
     tier: 1
+  tests/test_write_episode_line_production_guard.py:
+    domain: dialogue
+    status: active
+    tier: 3
 generated_by: tools/registry_triage.py
-total: 372
+total: 374
