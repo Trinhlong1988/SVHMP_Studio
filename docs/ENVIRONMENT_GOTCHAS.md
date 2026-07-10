@@ -237,6 +237,41 @@ tolerant cả 2). **Luôn test dry-run thật** (biến env cờ như `SVHMP_LAU
 cuối) qua `cmd /c "echo. | script.bat > out.txt 2>&1"` (pipe `echo.` để không treo ở `pause`)
 trước khi giao Mr.Long double-click — 2 lỗi trên hoàn toàn im lặng nếu chỉ đọc code bằng mắt.
 
+## G19 — `git reset <ref>` (kể cả KHÔNG `--hard`) trên shared main working tree có thể "xoá" commit của SESSION KHÁC khỏi `git log`/branch — chỉ còn reflog, dễ tưởng mất thật
+
+Case thật (10/7): 2 phiên CMD làm việc trực tiếp trên CÙNG 1 thư mục làm việc chính (không phải
+worktree riêng — R200 chỉ đảm bảo push/pull đồng bộ, KHÔNG đảm bảo cách ly session cùng máy). Phiên
+A tạo 1 commit local chưa push (Batch D). Phiên B tạo 2 commit local chưa push khác (G2 NHÓM A/B).
+Sau đó 1 trong 2 phiên chạy `git reset origin/main` (đồng bộ theo đúng pattern đã dùng nhiều lần
+trong project — worktree cô lập cherry-pick → push → `git reset origin/main` ở thư mục chính) —
+nhưng **tại thời điểm đó có 3 commit local (của CẢ 2 phiên) đứng SAU `origin/main`**, nên lệnh reset
+đưa branch `main` lùi lại, làm 3 commit này rơi khỏi `git log`/`git status` — chỉ còn thấy qua
+`git reflog`.
+
+**Điểm dễ hiểu lầm gây hoảng:** vì đây là reset MẶC ĐỊNH (mixed, không `--hard`), working tree KHÔNG
+bị ghi đè — nội dung file của cả 3 commit vẫn còn nguyên 100% trên đĩa (`git status` hiện chúng là
+"M"/"??"), chỉ mất liên kết với lịch sử commit. Phiên phát hiện sự cố ban đầu kết luận nhầm "2 commit
+BỊ MẤT" — thực ra **không mất 1 byte nào**, chỉ mất commit record. Xác nhận bằng
+`git diff <hash_dangling> -- <file>` = rỗng cho mọi file liên quan (kiểm duyệt tự verify 10/7,
+`git cat-file -e <hash>` xác nhận dangling commit chưa bị GC).
+
+**Quy trình bắt buộc từ nay (chống tái diễn — R215 áp dụng, đây là process failure):**
+1. **TRƯỚC khi chạy `git reset <bất kỳ ref nào>` trên thư mục làm việc chính (KHÔNG áp dụng cho
+   worktree cô lập tự tạo/tự xoá)** — PHẢI chạy `git log --oneline <ref>..HEAD` trước. Nếu có commit
+   nào hiện ra (bất kể của session nào, kể cả không nhận ra tác giả) → **DỪNG**, không reset ngay.
+2. Nếu có commit lạ: (a) nếu nội dung hợp lệ (đọc `git show --stat <hash>` xác nhận không phải rác)
+   → cherry-pick vào worktree cô lập + push riêng TRƯỚC, hoặc (b) nếu không chắc, để nguyên KHÔNG
+   reset, báo qua `log_ping.py` hỏi trước.
+3. Sau khi phát hiện đã lỡ reset: **KHÔNG hoảng, không `git reset --hard` để "dọn sạch"** — dangling
+   commit còn nguyên trong reflog tối thiểu vài tuần (chưa GC) — dùng `git cat-file -e <hash>` xác
+   nhận còn, `git diff <hash> -- <file>` đối chiếu working tree, commit lại trực tiếp (không cần
+   cherry-pick nếu working tree đã khớp sẵn).
+4. **Về lâu dài (đề xuất, chưa bắt buộc — cần Mr.Long quyết):** mỗi CMD session dùng 1 `git worktree`
+   riêng (không phải thư mục chính dùng chung) cho MỌI thao tác build, không chỉ lúc push — thư mục
+   chính chỉ dùng để đọc/kiểm tra, không commit trực tiếp. Giảm hẳn khả năng 2 session giẫm branch ref
+   lên nhau. Khác G7 (nói về nhiều worktree CỦA CÙNG 1 clone chia sẻ refs) — G19 là 2 session dùng
+   CHUNG 1 working tree (không qua worktree nào cả).
+
 ## Nguồn cảm hứng
 So sánh với Hermes Agent (Nous Research, 4/7): pattern "skill file agent tự viết, mọi lần gọi lại
 đọc được" đúng hướng nhưng KHÔNG áp dụng "tự viết không kiểm duyệt" — file này làm thủ công, review
