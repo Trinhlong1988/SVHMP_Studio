@@ -21,9 +21,16 @@
 
 > **TỐI THƯỢNG R211 TIER-0 GOVERNANCE (Mr.Long 2/7, từ phản biện.txt):** `governance/architecture_registry.yaml` = **source of truth** cho file↔domain↔quyền sửa↔promotion. **TRƯỚC khi tạo module/tool mới**: (1) chạy `tools/architecture_registry_check.py` (0 MISSING); (2) trả đủ **Change Request Gate 6 câu** (domain? trùng cũ? source-of-truth? schema/runtime? QA ảnh hưởng? test nào chứng minh?) — không đủ → **STOP**. Promotion Gate: chỉ `promotion_status=locked` được Generator dùng. **Reconcile (KHÔNG nhân đôi):** Change Gate=R7, Audit Log=R200+log_ping+commit, Promotion=bible lock. Bằng chứng hiện tại (deep-audit 2/7): **0 UNMAPPED / 0 MISSING / 0 DUP** (G1 đã triage xong 186→0; `architecture_registry_check.py` giờ exit 1 nếu có bất kỳ — strict). KHÔNG sửa logic ồ ạt trước khi map — chống loạn.
 
+> **TỐI THƯỢNG R215 RULE-ENFORCER PARITY (Mr.Long 10/7, rút kinh nghiệm audit đa-agent 222-agent 9-10/7, 56 finding — xem `prompts/TASK_AUDIT_CRITICAL_G3_G5.md`/`TASK_AUDIT_HIGH_G2_G8.md`/`TASK_AUDIT_MEDIUM_LOW_G2_G8.md`/`TASK_AUDIT_COMPLETENESS_GAPS.md`):** Nguyên nhân gốc lặp lại của gần như MỌI bug tìm được: rule/bible/docstring dùng ngôn từ khẳng định ("PHẢI", "KHÔNG BAO GIỜ", "BẮT BUỘC", "0 vi phạm", "đã enforce") nhưng KHÔNG có gate/test máy nào thực sự kiểm tra claim đó, hoặc kiểm quá nông (text-grep tên hàm/token tồn tại thay vì chạy hành vi thật qua đúng đường composition — vd `run_all()` G5 cộng dồn 3 sub-check nhưng nhiều tháng chỉ có 1 test gọi thẳng từng sub-check, xoá cả 3 dòng vẫn PASS). **CẤM TÁI PHẠM:**
+> 1. Bất kỳ rule/claim mới ghi vào CLAUDE.md/bible/governance dùng ngôn từ khẳng định PHẢI đi kèm NGAY 1 trong 2: (a) gate/checker máy + mutation-proof test xác nhận bắt được vi phạm giả lập (gỡ/đảo hành vi trong bộ nhớ, xác nhận check flip sang FAIL), hoặc (b) nếu chưa làm ngay được, gắn nhãn tường minh **"CHƯA CÓ ENFORCER — rủi ro drift"** ngay tại chỗ khai — KHÔNG được viết như đã enforce khi chưa có.
+> 2. Mọi **TU CHỈNH cross-domain** phải kèm 1 câu hỏi bắt buộc: domain gốc có rule/docstring/comment nào cần cập nhật theo enforcer mới không — không chỉ vá code rồi bỏ mặc văn bản cũ trôi (nguồn gốc phần lớn 27 finding MEDIUM/LOW: doc-code drift sau khi domain đã LOCKED).
+> 3. Mỗi đợt audit lớn (đa-agent hoặc kiểm duyệt) PHẢI áp lens **"reproducibility"**: tự chạy lại bằng chứng số liệu cũ (pytest/registry/gate) TẠI THỜI ĐIỂM audit, không chỉ trích dẫn con số quá khứ đã cite trong task doc/TECH_DEBT.md.
+> 4. Cơ chế TỰ báo cáo tuân thủ (log_ping, self-test, docstring tự nhận "đã enforce"/"đã fix") KHÔNG được coi là bằng chứng độc lập đủ để đóng việc — phải có 1 kênh kiểm chứng KHÁC (audit riêng/test độc lập/chạy lại thật) xác nhận trước khi tin và trước khi release claim.
+> Vi phạm nguyên tắc này = process failure (áp dụng cùng `R_SUPREME.test_process_failure_principle`, bible/00) — bắt buộc bổ sung enforcer/test trước khi tiếp tục việc khác, không được vá xong rồi bỏ qua bước này.
+
 **Project:** SVHMP (Sài Gòn Hắc Mạ Phố / Hắc Dạ Ký narrative horror)
 **Path:** `D:\DỰ ÁN AI\GIỌNG ĐỌC\DỰ ÁN TRUYỆN MA\SVHMP_Studio\`
-**Last update:** 2026-06-30 (R_SUPREME workflow lock + test_process_failure_principle)
+**Last update:** 2026-07-10 (R215 rule-enforcer parity — rút kinh nghiệm audit đa-agent 222-agent)
 
 ## Session Start Protocol (BẮT BUỘC)
 
@@ -46,8 +53,9 @@
 
 ## 100 Passenger Framework
 
-- `runtime/passenger_roster_100.yaml` — 100 passenger LOCK
-- 50 NU + 50 NAM unique names (15 forbidden Mr.Long: Nam, Tài, Quang, Hưng, Long, Trang, Linh, Nhung, Lương, Khánh, An, Tùng, Tiến, Tú, Mai)
+- `runtime/passenger_roster_100.yaml` — 139 passenger LOCK (backfill per Mr.Long 5/7, xem G2-4
+  TASK_AUDIT_HIGH_G2_G8.md — số ban đầu 100 đã tăng qua đợt backfill, không phải sai số)
+- 69 NU + 70 NAM unique names (15 forbidden Mr.Long: Nam, Tài, Quang, Hưng, Long, Trang, Linh, Nhung, Lương, Khánh, An, Tùng, Tiến, Tú, Mai)
 - `data/vietnamese_names_extended.yaml` — REUSABLE database 200+ syllables
 
 ## Pipeline
