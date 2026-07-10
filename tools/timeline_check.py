@@ -20,9 +20,11 @@ RECONCILE (RÀNG BUỘC TASK — KHÔNG nhân đôi tool):
   Check ở đây CHỈ khớp TỪ KHÓA văn bản ("rằm tháng 7"/"Tết"/"Vu Lan") với mô tả
   mùa/thời tiết literal trong CÙNG đoạn — không suy luận ngày dương lịch cụ thể.
 
-Exit 0 = PASS (0 M1 xuyên-tập + 0 M4 lệch mùa CHẮC CHẮN — F2 nội bộ vẫn in như
-ứng viên, KHÔNG chặn exit vì chưa đủ tin cậy để hard-fail, xem module docstring
-event_ledger_miner). Exit 1 = có mâu thuẫn xuyên tập rõ ràng.
+Exit 0 = PASS khi 0 M1 xuyên-tập — CHỈ M1 chặn exit code. M4 lệch mùa + F2 nội bộ
+CHỈ in WARN/ứng viên, KHÔNG ảnh hưởng exit vì chưa đủ tin cậy để hard-fail (khớp
+main() dòng ~252 fail=bool(M1) + docstring hàm audit_lunar_season_mismatch "WARN khong
+FAIL"; xem module docstring event_ledger_miner). Exit 1 = có mâu thuẫn xuyên tập M1 rõ ràng.
+(Sửa docstring 10/7 audit MEDIUM/LOW #9 — bản cũ ghi "0 M4 CHẮC CHẮN" gây hiểu nhầm M4 chặn exit.)
 """
 import re
 import sys

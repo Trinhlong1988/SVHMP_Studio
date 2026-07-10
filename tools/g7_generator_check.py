@@ -6,7 +6,7 @@ Stage rieng cho generator (TASK_G7 D4), KHAC voi cac gate truoc vi generator co 
 rui ro dac thu khong gate nao khac gap: (a) doc 14 domain read-only — phai chung
 minh KHONG ghi nguoc; (b) budget sheet PHAI di kem moi canh (M4), khong duoc thieu.
 
-  pytest              tests/test_g7_generator.py (9 test, reality anchor)
+  pytest              tests/test_g7_generator.py (13 test, reality anchor; sua so 10/7 audit ML #23)
   self_check          python tools/episode_generator.py 1 (subprocess, exit 0)
   budget_sheet_M4     moi scene trong episode_plan_ref PHAI co budget/knobs tuong
                       ung trong decision_packet.per_scene (M4: "canh thieu budget

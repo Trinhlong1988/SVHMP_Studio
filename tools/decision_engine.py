@@ -2,7 +2,9 @@
 
 Doc bible/42_decision_policy.yaml -> build phan packet KHONG phu thuoc story_planner
 (bp6/decision_io.yaml schema). plan_ref/cast_per_scene/reveals_allowed can INPUT tu story
-plan that (G6b, CHUA xay) -> de status: planned trung thuc, KHONG bia gia tri gia.
+plan that (G6b tools/story_planner.py DA xay+locked v1.0 5/7; neu goi build_packet KHONG
+truyen plan= thi de status: planned trung thuc, KHONG bia gia tri gia).
+(Sua docstring 10/7 audit MEDIUM/LOW #14 - ban cu ghi "G6b CHUA xay" da loi thoi.)
 
 Day la manager doc-only: KHONG viet logic sinh episode text.
 """
@@ -58,8 +60,9 @@ def build_packet(ep_number, policy=None, plan=None):
         "per_scene": per_scene,
         "status": "full" if has_real_plan else "planned",
         "status_note": (None if has_real_plan else
-                        "plan_ref/cast_per_scene/reveals_allowed can story plan that (G6b, "
-                        "runtime/story_planner.py chua xay) - KHONG bia, de planned trung thuc"),
+                        "khong co story plan input (goi build_packet khong truyen plan=) - "
+                        "de planned trung thuc, KHONG bia. tools/story_planner.py DA ton tai+"
+                        "locked 5/7, truyen plan= de co status:full (sua 10/7 audit ML #14)"),
     }
     return packet
 

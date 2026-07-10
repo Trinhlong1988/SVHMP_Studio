@@ -44,10 +44,11 @@ from dialogue_manager import DialogueManager  # noqa: E402
 SVHMP = Path(__file__).parent.parent
 MISSING_VOICE_REPORT = SVHMP / 'reports' / 'G3_MISSING_VOICE_FIELDS.md'
 
-# PHAN BIEN #7: 4 field tier_1_mandatory.voice (bible/37) schema co nhung du lieu THAT
-# thieu tren CharacterProfile.voice (dataclass tools/character_manager.py khong co field
-# forbidden_words/dialogue_sample/speaking_speed; catchphrase co field nhung du lieu roster
-# hau nhu rong). Day la NO cua G2 - generator CHI duoc SKIP + log, KHONG tu dien.
+# PHAN BIEN #7: 4 field tier_1_mandatory.voice (bible/37) - 3 field
+# (forbidden_words/dialogue_sample/speaking_speed) KHONG co tren CharacterProfile.voice
+# (dataclass tools/character_manager.py). catchphrase nay DA DAY DU tren roster (139/139
+# co, cap nhat 10/7 audit MEDIUM/LOW #6 sau khi G2 enrich - comment cu "hau nhu rong" da
+# loi thoi). Day la NO cua G2 - generator CHI duoc SKIP + log khi thieu, KHONG tu dien.
 OPTIONAL_VOICE_FIELDS = ('catchphrase', 'forbidden_words', 'dialogue_sample', 'speaking_speed')
 
 RECURRING_KIND = 'recurring'

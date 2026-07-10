@@ -19,9 +19,11 @@ Mutation coverage (TASK_G5 "MUTATION AUDIT SE BAN"):
   M3 possession khong truc xuat (treo mai) -> check_possession_state_machine()
   M4 sensitivity ngoai enum BP9 -> check_typology()
   M7 tool tu tao trung bp9_compliance_check.py/content_policy.yaml -> check_no_duplicate_compliance_files()
-M6 (entity_class thieu o nhan vat linh_hon) CHUA enforce duoc: D2 (entity_class vao
-bible/37) khong lam trong pham vi CMD_BUILD_3 lan nay (bible/*.yaml bi cam, bp2 dang
-LOCKED, can RFC + Mr.Long authorization rieng) — ghi ro ROADMAP, khong bia check gia.
+M6 (entity_class thieu o nhan vat linh_hon) CHUA enforce trong validator nay: D2 (them
+field entity_class vao bible/37) DA LAM (v2.2 g5_extension, Mr.Long ky 5/7 TASK_G5 D2 -
+comment cu "khong lam trong pham vi CMD_BUILD_3, can RFC rieng" DA LOI THOI, sua 10/7 audit
+MEDIUM/LOW #12). Enforce M6 con vuong DEBT-011: invariant bible/37 dua tren field alive_status
+nhung roster dung life_status khac ten (cho Mr.Long chot huong) — ghi ro ROADMAP, khong bia.
 """
 import re
 import sys
