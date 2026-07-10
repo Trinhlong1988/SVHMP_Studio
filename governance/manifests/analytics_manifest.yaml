@@ -5,7 +5,9 @@ promotion_status: candidate
 source_of_truth: []
 data_contract: null
 files:
+- tests/test_event_logger.py
 - tools/analytics_populate.py
 - tools/cost_tracker.py
+- tools/event_logger.py
 - tools/publish_score.py
-file_count: 3
+file_count: 5

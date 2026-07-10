@@ -1,0 +1,14 @@
+domain: bp9_compliance
+tier: 0
+owner: UNASSIGNED
+promotion_status: candidate
+source_of_truth: []
+data_contract: null
+files:
+- governance/blueprint/bp9/00_compliance.md
+- governance/blueprint/bp9/content_policy.yaml
+- governance/blueprint/bp9/policy_gates.yaml
+- reports/BP9_REPORT.md
+- tests/test_bp9_compliance.py
+- tools/bp9_compliance_check.py
+file_count: 6

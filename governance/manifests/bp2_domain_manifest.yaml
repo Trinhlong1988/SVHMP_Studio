@@ -1,0 +1,13 @@
+domain: bp2_domain
+tier: 0
+owner: UNASSIGNED
+promotion_status: candidate
+source_of_truth: []
+data_contract: null
+files:
+- governance/blueprint/bp2/00_domain_architecture.md
+- governance/blueprint/bp2/domain_specs.yaml
+- reports/BP2_REPORT.md
+- tests/test_bp2_domain.py
+- tools/bp2_domain_check.py
+file_count: 5

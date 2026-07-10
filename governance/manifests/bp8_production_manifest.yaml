@@ -1,0 +1,15 @@
+domain: bp8_production
+tier: 0
+owner: UNASSIGNED
+promotion_status: candidate
+source_of_truth: []
+data_contract: null
+files:
+- governance/blueprint/bp8/00_production.md
+- governance/blueprint/bp8/distribution_spec.yaml
+- governance/blueprint/bp8/golden_output.yaml
+- governance/blueprint/bp8/render_chain.yaml
+- reports/BP8_REPORT.md
+- tests/test_bp8_production.py
+- tools/bp8_production_check.py
+file_count: 7

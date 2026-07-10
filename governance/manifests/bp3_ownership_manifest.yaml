@@ -1,0 +1,14 @@
+domain: bp3_ownership
+tier: 0
+owner: UNASSIGNED
+promotion_status: candidate
+source_of_truth: []
+data_contract: null
+files:
+- governance/blueprint/bp3/00_ownership.md
+- governance/blueprint/bp3/dependency_detail.yaml
+- governance/blueprint/bp3/facet_ownership_matrix.yaml
+- reports/BP3_REPORT.md
+- tests/test_bp3_ownership.py
+- tools/bp3_ownership_check.py
+file_count: 6

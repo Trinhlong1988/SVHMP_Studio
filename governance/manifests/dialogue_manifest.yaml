@@ -1,0 +1,15 @@
+domain: dialogue
+tier: 3
+owner: UNASSIGNED
+promotion_status: draft
+source_of_truth: []
+data_contract:
+  input: 'character_id + scene_context dict (nhan tu ngoai — KHONG tu tinh ratio thoai/narration,
+    PHAN BIEN #9)'
+  output: 1 cau thoai ung vien (status OK) hoac REFUSED/Tier1IncompleteError
+  exit: 0/1
+files:
+- tests/test_dialogue_generator_ml7_ml8.py
+- tests/test_dialogue_manager_ml4_ml5.py
+- tests/test_write_episode_line_production_guard.py
+file_count: 3

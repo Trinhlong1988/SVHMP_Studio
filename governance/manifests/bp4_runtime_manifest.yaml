@@ -1,0 +1,16 @@
+domain: bp4_runtime
+tier: 0
+owner: UNASSIGNED
+promotion_status: candidate
+source_of_truth: []
+data_contract: null
+files:
+- governance/blueprint/bp4/00_runtime_event.md
+- governance/blueprint/bp4/event_bus.yaml
+- governance/blueprint/bp4/memory_architecture.yaml
+- governance/blueprint/bp4/runtime_flow.yaml
+- governance/blueprint/bp4/state_machines.yaml
+- reports/BP4_REPORT.md
+- tests/test_bp4_runtime.py
+- tools/bp4_runtime_check.py
+file_count: 8

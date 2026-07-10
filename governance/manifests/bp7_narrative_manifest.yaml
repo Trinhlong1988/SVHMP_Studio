@@ -1,0 +1,15 @@
+domain: bp7_narrative
+tier: 0
+owner: UNASSIGNED
+promotion_status: candidate
+source_of_truth: []
+data_contract: null
+files:
+- governance/blueprint/bp7/00_narrative.md
+- governance/blueprint/bp7/cultural_spec.yaml
+- governance/blueprint/bp7/pacing_format.yaml
+- governance/blueprint/bp7/story_structure.yaml
+- reports/BP7_REPORT.md
+- tests/test_bp7_narrative.py
+- tools/bp7_narrative_check.py
+file_count: 7

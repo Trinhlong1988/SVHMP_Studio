@@ -1,0 +1,14 @@
+domain: bp6_decision
+tier: 0
+owner: UNASSIGNED
+promotion_status: candidate
+source_of_truth: []
+data_contract: null
+files:
+- governance/blueprint/bp6/00_decision.md
+- governance/blueprint/bp6/decision_contract.yaml
+- governance/blueprint/bp6/decision_io.yaml
+- reports/BP6_REPORT.md
+- tests/test_bp6_decision.py
+- tools/bp6_decision_check.py
+file_count: 6

@@ -1,0 +1,13 @@
+domain: g7_generator
+tier: 1
+owner: UNASSIGNED
+promotion_status: candidate
+source_of_truth: []
+data_contract: null
+files:
+- tests/test_episode_schema_values_ml20.py
+- tests/test_g7_generator.py
+- tools/episode_generator.py
+- tools/g7_ep01_dry_run.py
+- tools/g7_generator_check.py
+file_count: 5

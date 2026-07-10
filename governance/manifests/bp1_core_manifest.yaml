@@ -1,0 +1,15 @@
+domain: bp1_core
+tier: 0
+owner: UNASSIGNED
+promotion_status: candidate
+source_of_truth: []
+data_contract: null
+files:
+- governance/blueprint/bp1/00_system_blueprint.md
+- governance/blueprint/bp1/dependency_graph.yaml
+- governance/blueprint/bp1/interface_contracts.yaml
+- governance/blueprint/bp1/layer_contracts.yaml
+- reports/BP1_CORE_ARCHITECTURE_REPORT.md
+- tests/test_bp1_architecture.py
+- tools/bp1_architecture_check.py
+file_count: 7

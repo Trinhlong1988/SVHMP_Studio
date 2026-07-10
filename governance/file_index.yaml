@@ -513,7 +513,7 @@ files:
     status: active
     tier: 1
   tools/character_manager.py:
-    domain: unclassified
+    domain: character
     status: active
     tier: null
   tools/check_counter_canonical.py:
@@ -581,7 +581,7 @@ files:
     status: active
     tier: 3
   tools/dialog_voice_validator.py:
-    domain: unclassified
+    domain: character
     status: active
     tier: null
   tools/e2e_pipeline_test.py:
@@ -917,7 +917,7 @@ files:
     status: active
     tier: 0
   tools/svhmp_audio_qa.py:
-    domain: unclassified
+    domain: audio_render
     status: active
     tier: null
   tools/svhmp_audit_chi_tiet.py:
@@ -933,11 +933,11 @@ files:
     status: active
     tier: 0
   tools/svhmp_preflight_qa.py:
-    domain: unclassified
+    domain: text_gate
     status: active
     tier: null
   tools/svhmp_v13_render.py:
-    domain: unclassified
+    domain: audio_render
     status: active
     tier: null
   tools/sync_specs_from_episode.py:

@@ -1,0 +1,17 @@
+domain: g4_world
+tier: 1
+owner: UNASSIGNED
+promotion_status: candidate
+source_of_truth: []
+data_contract: null
+files:
+- governance/proposals/fact_ledger_schema.yaml
+- reports/G4_EVENT_FINDINGS.md
+- reports/G4_REPORT.md
+- runtime/event_ledger_draft.yaml
+- tests/test_g4_world.py
+- tools/event_ledger_miner.py
+- tools/g4_world_check.py
+- tools/timeline_check.py
+- tools/vn_number_words.py
+file_count: 9

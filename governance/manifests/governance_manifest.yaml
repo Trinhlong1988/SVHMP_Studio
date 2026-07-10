@@ -1,0 +1,22 @@
+domain: governance
+tier: 0
+owner: LEAD
+promotion_status: locked
+source_of_truth:
+- governance/architecture_registry.yaml
+- governance/file_index.yaml
+- governance/master_roadmap.md
+- governance/deprecation_report.md
+- CLAUDE.md
+data_contract:
+  input: registry yaml + disk scan
+  output: gap report
+  exit: 0 ok / 1 missing
+files:
+- docs/adr/0001-pack-claim-mechanism.md
+- docs/adr/0002-bp6-r195-full-file-scan.md
+- docs/adr/0003-bp-chain-sequential-order.md
+- governance/error_code_standard.yaml
+- governance/operational_policy_gates.yaml
+- tests/test_operational_policy_gates.py
+file_count: 6

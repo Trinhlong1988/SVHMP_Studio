@@ -1,0 +1,10 @@
+domain: text_gate
+tier: null
+owner: UNASSIGNED
+promotion_status: locked
+source_of_truth:
+- tools/svhmp_preflight_qa.py
+data_contract: null
+files:
+- tools/svhmp_preflight_qa.py
+file_count: 1

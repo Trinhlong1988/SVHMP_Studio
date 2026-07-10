@@ -1,0 +1,15 @@
+domain: supernatural
+tier: 3
+owner: UNASSIGNED
+promotion_status: candidate
+source_of_truth: []
+data_contract: null
+files:
+- governance/proposals/supernatural_typology_proposal.yaml
+- reports/G5_HANDOFF_G8.md
+- runtime/supernatural_state_machine.yaml
+- tests/test_supernatural_run_all_composition.py
+- tests/test_supernatural_validator.py
+- tools/g5_supernatural_check.py
+- tools/supernatural_validator.py
+file_count: 7

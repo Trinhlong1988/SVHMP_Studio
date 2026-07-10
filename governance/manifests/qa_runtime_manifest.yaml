@@ -1,0 +1,19 @@
+domain: qa_runtime
+tier: 1
+owner: UNASSIGNED
+promotion_status: candidate
+source_of_truth: []
+data_contract: null
+files:
+- governance/blueprint/schemas/qa_verdict_schema.yaml
+- tests/test_g8_qa_runtime.py
+- tests/test_qa_post_render_pause_delegation.py
+- tests/test_qa_post_render_stage3.py
+- tests/test_qa_skeptic_orchestrator_decision.py
+- tests/test_qa_verdict_adapter.py
+- tests/test_vnqa_run_all_verdict_ml25.py
+- tools/g8_qa_runtime_check.py
+- tools/qa_pause_ab_probe.py
+- tools/qa_skeptic_orchestrator.py
+- tools/qa_verdict_adapter.py
+file_count: 11

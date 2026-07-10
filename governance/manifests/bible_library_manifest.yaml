@@ -44,4 +44,7 @@ files:
 - bible/35_text_fix_registry.yaml
 - bible/36_vn_style_db.yaml
 - bible/37_character_schema.yaml
-file_count: 39
+- governance/evidence_schema_cultural_kb.yaml
+- governance/proposals/cultural_kb_evidence_sample.yaml
+- tests/test_cultural_kb_evidence_schema.py
+file_count: 42

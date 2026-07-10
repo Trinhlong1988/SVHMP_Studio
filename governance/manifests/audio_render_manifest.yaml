@@ -25,9 +25,12 @@ files:
 - tools/render_chunk.py
 - tools/render_progress_hook.py
 - tools/render_section.py
+- tools/render_with_character_gate.py
 - tools/sfx_acquire.py
 - tools/spec_chunk_emo_override.py
+- tools/svhmp_audio_qa.py
+- tools/svhmp_v13_render.py
 - tools/tts_adapter_pre_render.py
 - tools/vary_bell_entry.py
 - tools/vary_templates.py
-file_count: 21
+file_count: 24

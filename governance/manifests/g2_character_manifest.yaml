@@ -1,0 +1,17 @@
+domain: g2_character
+tier: 1
+owner: UNASSIGNED
+promotion_status: candidate
+source_of_truth: []
+data_contract: null
+files:
+- governance/blueprint/schemas/character_ext_schema.yaml
+- governance/blueprint/schemas/naming_extension_rules.yaml
+- reports/G2_CONTINUITY_FINDINGS.md
+- runtime/roster_backfill_draft.yaml
+- tests/test_roster_backfill_ep11_50.py
+- tests/test_roster_backfill_miner_g2.py
+- tests/test_roster_validator_g2.py
+- tools/roster_backfill_miner.py
+- tools/roster_validator.py
+file_count: 9

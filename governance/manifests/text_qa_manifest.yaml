@@ -28,6 +28,8 @@ files:
 - tools/audit_tilde_eol.py
 - tools/audit_vn_style.py
 - tools/audit_voice_cosine_similarity.py
+- tools/ha_patterns.py
+- tools/milestones.py
 - tools/qa_anti_generic.py
 - tools/qa_continuity.py
 - tools/qa_dialogue_identity.py
@@ -39,4 +41,4 @@ files:
 - tools/vietnamese_qa_pipeline.py
 - tools/vnsl_validator.py
 - tools/whitelist_gen_vn.py
-file_count: 34
+file_count: 36

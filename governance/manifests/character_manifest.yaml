@@ -1,0 +1,18 @@
+domain: character
+tier: null
+owner: CMD_CHARACTER
+promotion_status: locked
+source_of_truth:
+- bible/37_character_schema.yaml
+- runtime/passenger_roster_100.yaml
+data_contract:
+  input: roster yaml / profile dict
+  output: issues list[{code,...}] / report dict
+  exit: 0/1
+files:
+- tests/test_character_completeness_empty_dict_ml3.py
+- tools/character_balance_report.py
+- tools/character_manager.py
+- tools/dialog_voice_validator.py
+- tools/story_consistency_validator.py
+file_count: 5

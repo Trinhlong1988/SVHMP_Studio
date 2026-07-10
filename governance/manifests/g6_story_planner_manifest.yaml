@@ -1,0 +1,22 @@
+domain: g6_story_planner
+tier: 1
+owner: UNASSIGNED
+promotion_status: candidate
+source_of_truth: []
+data_contract: null
+files:
+- bible/42_decision_policy.yaml
+- governance/blueprint/schemas/story_plan_schema.yaml
+- reports/G6A_REPORT.md
+- reports/G6B_REPORT.md
+- tests/test_decision_packet_keys_ml15.py
+- tests/test_g6a_decision_engine.py
+- tests/test_g6b_story_planner.py
+- tests/test_story_planner_location_ref_ml16.py
+- tools/calibrate_decision_policy.py
+- tools/decision_engine.py
+- tools/decision_policy_check.py
+- tools/g6_story_planner_check.py
+- tools/story_plan_schema_check.py
+- tools/story_planner.py
+file_count: 14

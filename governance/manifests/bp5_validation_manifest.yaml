@@ -1,0 +1,12 @@
+domain: bp5_validation
+tier: 0
+owner: UNASSIGNED
+promotion_status: candidate
+source_of_truth: []
+data_contract: null
+files:
+- governance/blueprint/bp5/00_validation.md
+- reports/BP5_REPORT.md
+- tests/test_bp5_validation.py
+- tools/blueprint_suite_check.py
+file_count: 4
