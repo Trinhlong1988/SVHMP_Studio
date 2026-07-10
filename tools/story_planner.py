@@ -28,6 +28,20 @@ ROSTER = REPO / "runtime" / "passenger_roster_100.yaml"
 EVENT_LEDGER = REPO / "runtime" / "event_ledger_draft.yaml"
 GOLDEN_EP01 = REPO / "output" / "ep_01" / "episode_golden_text.md"
 
+# DEBT-014 (10/7, per Mr.Long authorization, mapping CHOT 16:00 10/7 dua tren doc
+# TRUC TIEP output/ep_01/episode_golden_text.md dong 96-515 - KHONG suy doan): moi
+# component_ref (bible/01, 6 section co dinh) map DUNG 1 scene_function (story_plan_
+# schema.yaml, 4 gia tri enum). Bang nay CHI dung cho EP01 (golden that da doc) - CAM
+# tai su dung cho tap khac khi chua co nguon doc tuong tu (R195 khong bia).
+EP01_COMPONENT_SCENE_FUNCTION = {
+    "HOOK": "gay_nghi",
+    "SETUP": "gay_nghi",
+    "INCIDENT": "dan_chuyen",
+    "REVEAL": "hy_sinh",
+    "PAYOFF": "dan_chuyen",
+    "CLIFFHANGER": "danh_lac_huong",
+}
+
 __version__ = "1.0.0"
 
 # bible/18 budget_curve phase (ten + range that, doc truc tiep tu file - khong bia)
@@ -111,6 +125,7 @@ def build_episode_plan_ep01():
             "component_ref": s["name"],
             "summary": f"{s['name']} section cua EP01 golden (dong {s['line']+1})",
             "location_ref": ep01_events["primary_event"]["stop_location"]["value"],  # audit ML #16 (10/7): doc DONG tu event_ledger (bien ep01_events dong 101), KHONG hardcode literal (truoc 'Cau Long Bien' - R195 khop ngau nhien, drift neu ledger doi)
+            "scene_function": EP01_COMPONENT_SCENE_FUNCTION[s["name"]],  # DEBT-014 (10/7, per Mr.Long authorization): mapping CHOT tu doc truc tiep golden text, KHONG bia
         })
 
     ep01_ref = bible18["ep_01_reference"]

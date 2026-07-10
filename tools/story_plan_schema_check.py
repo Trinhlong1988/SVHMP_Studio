@@ -7,6 +7,9 @@ mục enforcer_planned.checks_to_implement_later (khong tu nghi them/bot):
   3. cast_count moi episode_plan PHAI trong [5,8]
   4. characters_present moi scene PHAI resolve that trong roster (khong PAS_id bia)
   5. driver_clue.weight PHAI thuoc {1,2,5,10,30} dung clue_weight_taxonomy
+  6. scene_function moi scene PHAI hien dien + thuoc 4 gia tri enum (DEBT-014 10/7,
+     per Mr.Long authorization - finding #19 goc yeu cau: schema khai required:true
+     nhung truoc do KHONG co check hien dien nao, thieu sot lot qua PASS)
 
 Exit 0 = 0 vi pham, exit 1 = >=1 vi pham.
 """
@@ -24,6 +27,7 @@ __version__ = "1.0.0"
 COMPONENT_ORDER = ["HOOK", "SETUP", "INCIDENT", "REVEAL", "PAYOFF", "CLIFFHANGER"]
 CAST_COUNT_RANGE = (5, 8)
 CLUE_WEIGHTS = {1, 2, 5, 10, 30}
+SCENE_FUNCTION_VALUES = {"dan_chuyen", "gay_nghi", "danh_lac_huong", "hy_sinh"}
 
 
 def _bible18_cap_for_ep(ep, bible18):
@@ -96,6 +100,21 @@ def check_driver_clue_weight(episode_plan):
     return errs
 
 
+def check_scene_function_present(episode_plan):
+    """6. scene_function moi scene PHAI hien dien (khong None/thieu key) + thuoc dung
+    4 gia tri enum story_plan_schema.yaml (DEBT-014, finding #19 goc)."""
+    errs = []
+    for sc in episode_plan.get("scenes_detail", []):
+        sf = sc.get("scene_function")
+        if not sf:
+            errs.append(f"ep{episode_plan['episode_number']}.{sc['scene_id']}: "
+                        "THIEU scene_function (required:true theo story_plan_schema.yaml)")
+        elif sf not in SCENE_FUNCTION_VALUES:
+            errs.append(f"ep{episode_plan['episode_number']}.{sc['scene_id']}: "
+                        f"scene_function '{sf}' khong thuoc {sorted(SCENE_FUNCTION_VALUES)}")
+    return errs
+
+
 def run_checks():
     bible18 = sp._load(sp.BIBLE_18)
     roster_ids = sp._load_roster_ids()
@@ -107,6 +126,7 @@ def run_checks():
         errs += check_cast_count(ep_plan)
         errs += check_characters_present(ep_plan, roster_ids)
         errs += check_driver_clue_weight(ep_plan)
+        errs += check_scene_function_present(ep_plan)
     return errs, plans, pending
 
 

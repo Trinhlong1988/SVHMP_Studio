@@ -6,6 +6,7 @@ M3 cast_count ngoai [5,8] -> FAIL
 M4 characters_present chua PAS_id bia -> FAIL
 M5 driver_clue.weight ngoai tap hop -> FAIL
 M6 entity "act" KHONG duoc xuat hien trong schema/output (bao ve rang buoc 3-entity da khoa)
+M7 scene_function thieu/sai enum -> FAIL (DEBT-014 10/7, finding #19 goc)
 """
 import copy
 import sys
@@ -32,7 +33,7 @@ def test_m0_real_ep01_plan_clean():
     roster_ids = sp._load_roster_ids()
     errs = (check.check_component_order(plan) + check.check_driver_reveal_cap(plan, bible18)
             + check.check_cast_count(plan) + check.check_characters_present(plan, roster_ids)
-            + check.check_driver_clue_weight(plan))
+            + check.check_driver_clue_weight(plan) + check.check_scene_function_present(plan))
     assert errs == [], f"EP01 that KHONG duoc co vi pham: {errs}"
 
 
@@ -101,6 +102,55 @@ def test_m5_driver_clue_weight_valid_clean():
     plan["scenes_detail"][0]["driver_clue"] = {"weight": 1, "content": "gang tay trang"}
     errs = check.check_driver_clue_weight(plan)
     assert errs == [], f"weight hop le KHONG duoc bi bat: {errs}"
+
+
+# ============================================================
+# M7 (DEBT-014, 10/7 per Mr.Long authorization) — scene_function CHOT mapping
+# (dua tren doc truc tiep output/ep_01/episode_golden_text.md dong 96-515, khong
+# doan): HOOK/SETUP=gay_nghi, INCIDENT/PAYOFF=dan_chuyen, REVEAL=hy_sinh,
+# CLIFFHANGER=danh_lac_huong.
+# ============================================================
+
+EP01_EXPECTED_SCENE_FUNCTION = {
+    "EP1_SC1": "gay_nghi", "EP1_SC2": "gay_nghi", "EP1_SC3": "dan_chuyen",
+    "EP1_SC4": "hy_sinh", "EP1_SC5": "dan_chuyen", "EP1_SC6": "danh_lac_huong",
+}
+
+
+def test_reality_ep01_scene_function_matches_chot_mapping():
+    """Reality anchor: build_episode_plan_ep01() PHAI tra ve DUNG mapping da CHOT
+    (khong bia, khong lech thu tu) cho ca 6 scene."""
+    plan = _real_ep01_plan()
+    actual = {sc["scene_id"]: sc["scene_function"] for sc in plan["scenes_detail"]}
+    assert actual == EP01_EXPECTED_SCENE_FUNCTION, (
+        f"scene_function lech mapping da CHOT 16:00 10/7: {actual}")
+
+
+def test_m7_scene_function_missing_bites():
+    plan = _real_ep01_plan()
+    del plan["scenes_detail"][0]["scene_function"]
+    errs = check.check_scene_function_present(plan)
+    assert errs, "scene_function thieu PHAI bi bat"
+
+
+def test_m7_scene_function_empty_string_bites():
+    plan = _real_ep01_plan()
+    plan["scenes_detail"][0]["scene_function"] = ""
+    errs = check.check_scene_function_present(plan)
+    assert errs, "scene_function rong PHAI bi bat"
+
+
+def test_m7_scene_function_invalid_enum_bites():
+    plan = _real_ep01_plan()
+    plan["scenes_detail"][0]["scene_function"] = "gia_tri_bia_khong_ton_tai"
+    errs = check.check_scene_function_present(plan)
+    assert errs, "scene_function ngoai 4 enum PHAI bi bat"
+
+
+def test_m7_scene_function_valid_clean():
+    plan = _real_ep01_plan()
+    errs = check.check_scene_function_present(plan)
+    assert errs == [], f"EP01 that (mapping da CHOT) KHONG duoc co vi pham: {errs}"
 
 
 # ============================================================
