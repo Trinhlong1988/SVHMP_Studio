@@ -6,8 +6,9 @@ claims:
     status: released
   audit_high_g2g7_remaining:
     claimed_at: '2026-07-10T14:18:47'
+    released_at: '2026-07-10T23:47:48'
     session: CMD_BUILD
-    status: active
+    status: released
   audit_high_g8:
     claimed_at: '2026-07-10T09:44:31'
     released_at: '2026-07-10T10:25:32'
