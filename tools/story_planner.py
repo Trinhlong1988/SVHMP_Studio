@@ -21,7 +21,6 @@ import calibrate_decision_policy as cdp  # noqa: E402 - tai dung parse_sections 
 
 BIBLE_18 = REPO / "bible" / "18_driver_reveal_budget.yaml"
 BIBLE_01_SERIES = REPO / "bible" / "01_series_bible.yaml"
-BIBLE_16_KPI = REPO / "bible" / "16_series_kpi.yaml"
 PROJECT_CONFIG = REPO / "project_config.yaml"
 ROSTER = REPO / "runtime" / "passenger_roster_100.yaml"
 EVENT_LEDGER = REPO / "runtime" / "event_ledger_draft.yaml"
@@ -34,7 +33,7 @@ BIBLE18_PHASE_RANGES = [
     ("ESTABLISH", 1, 20), ("MYSTERY", 21, 40), ("ESCALATION", 41, 60),
     ("REVELATION", 61, 72), ("PIVOT", 73, 73), ("AFTERMATH", 74, 89), ("FINALE", 90, 90),
 ]
-KPI_BUCKETS = [("ep_1_10", 1, 10), ("ep_11_30", 11, 30), ("ep_31_90", 31, 90)]
+KPI_BUCKETS = [("ep_1_10", 1, 10), ("ep_11_30", 11, 30), ("ep_31_90", 31, 90)]  # DEBT-012 10/7: hardcode CHU Y (chi map ep->ten bucket, KHONG doc gia tri target). bible/16 IMMUTABLE do Publisher P7/P8/P9 doc (bible/16:3), story_planner KHONG doc - da xoa hang chet BIBLE_16_KPI + claim source_of_truth bible/16
 
 
 def _load(path):

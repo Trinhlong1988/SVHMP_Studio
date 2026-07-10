@@ -35,7 +35,7 @@ schema:
       callback_target: {type: string, required: false, desc: "ep_N hoặc 'none' - PHẢI khớp bible/21 callback_schedule_s1[ep_N] (check 12)"}
       object_sub_arc: {type: object, required: false, fields: {type: {type: enum, values: [symbol_clustering, temporal_arc, geographic_arc, none]}, target_symbol: {type: string}}}
       milestone: {type: bool, required: true, desc: "true nếu ep_number in [10,20,30,40,50,60,70,80,90] (bible/21 R37)"}
-      passenger_main: {type: string, required: true, desc: "PHẢI là 1 PAS_id thật trong runtime/passenger_roster_100.yaml (character domain, chỉ đọc) - KHÔNG được là tên tự do (đúng bài học DEBT-002/G2-4 lặp lại)"}
+      passenger_main: {type: string, required: true, pilot_null_exception: true, desc: "PHẢI là 1 PAS_id thật trong runtime/passenger_roster_100.yaml (character domain, chỉ đọc) - KHÔNG được là tên tự do (đúng bài học DEBT-002/G2-4 lặp lại). DEBT-013 10/7 (required trừ pilot): EP01/pilot ĐƯỢC null - chưa gán PAS_id thật, R195 không bịa (test_reality_passenger_main_none_not_fabricated_for_ep01 khóa hành vi None); required PAS_id thật cho ep>1 (enforce ở generator/post_render)"}
       signature_object: {type: string, required: true, format: "OBJ_{id}", desc: "Trỏ bible/12_object_library.yaml"}
       signature_setting: {type: string, required: true, desc: "Trỏ bible/13_setting_library.yaml"}
       stop_location: {type: string, required: true}

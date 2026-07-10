@@ -26,7 +26,7 @@ meta:
 # ============================================================
 tier_1_mandatory:
   core_id: [character_id, full_name, nickname, gender, date_of_birth, age, age_group,
-            alive_status]          # alive|dead|ghost
+            life_status]           # song|da_mat|linh_hon (DEBT-011 10/7: doi tu alive_status/alive|dead|ghost - khop 139 gia tri THAT trong roster, field cu 0 nguoi dien)
   background: [hometown, current_residence, occupation, education_level, marital_status]
   psyche: [dominant_traits, strength, weakness, goal, fear, pain_core, secret]
   voice: [region_dialect, pronoun_style, speaking_speed, catchphrase, forbidden_words, dialogue_sample]
@@ -123,7 +123,7 @@ g5_extension:
   entity_class:   # phân loại bản chất nhân vật — đọc luật thật từ G5 supernatural typology
     values: [nguoi, linh_hon, thuc_the_sieu_nhien, nhan_vat_lich_su]
     default: nguoi
-    invariant: "entity_class=linh_hon PHẢI khớp alive_status=ghost (tier_1_mandatory.core_id)"
+    invariant: "entity_class=linh_hon PHẢI khớp life_status=linh_hon (tier_1_mandatory.core_id)"
     reconcile: "KHÔNG tự định nghĩa quyền năng — chi tiết typology đọc từ
                governance/proposals/supernatural_typology_proposal.yaml (G5)"
 
