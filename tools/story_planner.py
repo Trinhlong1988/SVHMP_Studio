@@ -1,5 +1,7 @@
-"""story_planner.py — G6b D5: manager toi thieu, doc 3 nguon bible + event ledger + timeline
+"""story_planner.py — G6b D5: manager toi thieu, doc 3 nguon bible + event ledger
 (KHONG sinh van ban tap, KHONG tu quyet ratio/pacing - do la decision_engine/G6a).
+G6b-1 sync 10/7: KHONG doc timeline/world/supernatural domain (blueprint_domains.yaml
+dependencies dong bo lai chi con [character, event] cho khop code that).
 
 Build:
   - season_plan: DAY DU 3 entry that (bible/01_series_bible season boundary + bible/18

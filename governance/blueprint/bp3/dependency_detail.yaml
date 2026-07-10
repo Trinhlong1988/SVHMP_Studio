@@ -85,21 +85,6 @@ dependencies:
   to: event
   reason: ke hoach dua tren su kien da xay ra (ledger)
   data_flow: read
-- dep_id: dep__story_planner__timeline
-  from: story_planner
-  to: timeline
-  reason: xep tap theo truc thoi gian
-  data_flow: read
-- dep_id: dep__story_planner__world
-  from: story_planner
-  to: world
-  reason: ke hoach ton trong lore
-  data_flow: read
-- dep_id: dep__story_planner__supernatural
-  from: story_planner
-  to: supernatural
-  reason: reveal budget theo luat sieu nhien (bible/18)
-  data_flow: read
 - dep_id: dep__decision_engine__story_planner
   from: decision_engine
   to: story_planner

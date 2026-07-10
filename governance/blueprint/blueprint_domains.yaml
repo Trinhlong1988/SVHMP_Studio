@@ -493,7 +493,7 @@ domains:
     writer: [mr_long]
     lifecycle: approved
     lock_type: bible
-    dependencies: [character, event, timeline, world, supernatural]
+    dependencies: [character, event]   # G6b-1 sync 10/7 (per Mr.Long authorization, TASK_AUDIT_HIGH_G2_G8.md): go timeline/world/supernatural - tools/story_planner.py THAT chi doc ROSTER (character, runtime/passenger_roster_100.yaml) + EVENT_LEDGER (event, runtime/event_ledger_draft.yaml), 0 import/doc file nao thuoc 3 domain do (da tu grep xac nhan, chi la ten con sot trong docstring cu)
     forbidden_dependencies: [production, publisher]
     audit_rule: "Reveal driver ngoai budget bible/18 = VIOLATION; can bang xuyen tap theo target R210 (balance_report 0 flag)."
 

@@ -194,9 +194,6 @@ domains:
   depends_on:
   - character
   - event
-  - timeline
-  - world
-  - supernatural
   reads_from:
   - world
   - timeline
