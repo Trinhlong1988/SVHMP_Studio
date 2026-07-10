@@ -11,10 +11,12 @@ minh KHONG ghi nguoc; (b) budget sheet PHAI di kem moi canh (M4), khong duoc thi
   budget_sheet_M4     moi scene trong episode_plan_ref PHAI co budget/knobs tuong
                       ung trong decision_packet.per_scene (M4: "canh thieu budget
                       sheet dinh kem = VIOLATION")
-  no_write_domain     git diff --name-only (working tree) KHONG duoc chua bat ky
-                      file domain nguon nao (doc DONG tu blueprint_domains.yaml
-                      dependencies cua generator, khong hardcode list rieng - R211
-                      reconcile) trong CUNG lan thay doi voi tools/episode_generator.py
+  no_write_domain     commit(s) HEAD chua len origin/main (G7-1 10/7: doi tu working-
+                      tree diff luon rong luc pre-push sang merge-base..HEAD, kiem
+                      DUNG noi dung sap push) KHONG duoc chua bat ky file domain nguon
+                      nao (doc DONG tu blueprint_domains.yaml dependencies cua
+                      generator, khong hardcode list rieng - R211 reconcile) trong
+                      CUNG commit(s) voi tools/episode_generator.py
   static_no_write_src source code episode_generator.py KHONG duoc chua loi goi ghi
                       file (mirror test_module_source_has_no_write_calls_to_domain_files)
 
@@ -103,27 +105,53 @@ def _generator_dependency_source_paths() -> set:
     return paths
 
 
-def _stage_no_write_domain() -> dict:
-    """git diff --name-only (working tree, KHONG commit) - neu tools/episode_generator.py
-    dang thay doi (dang lam viec tren no) thi KHONG duoc co bat ky domain source path
-    nao (dong tu blueprint_domains.yaml) xuat hien CUNG trong diff do.
+def _changed_files_vs_origin_main(repo=None):
+    """G7-1 (audit HIGH, TASK_AUDIT_HIGH_G2_G8.md): tra ve set file thay doi trong cac
+    commit HEAD CHUA co tren origin/main (git diff merge-base(origin/main,HEAD)..HEAD)
+    - day la noi dung THAT SU sap len remote luc push, KHAC voi working-tree diff (luon
+    rong sau khi da commit). Tra ve None neu KHONG resolve duoc origin/main (vd repo
+    chua fetch/chua co remote) - caller PHAI tu quyet dinh fallback, KHONG duoc am
+    tham coi None nhu '0 file thay doi' (se che mat that bai that, dung loi cu R7-1
+    dang sua)."""
+    repo = repo or REPO
+    base_r = subprocess.run(['git', 'merge-base', 'HEAD', 'origin/main'], capture_output=True,
+                            text=True, cwd=str(repo), encoding='utf-8')
+    if base_r.returncode != 0 or not base_r.stdout.strip():
+        return None
+    merge_base = base_r.stdout.strip()
+    diff_r = subprocess.run(['git', 'diff', '--name-only', f'{merge_base}..HEAD'],
+                            capture_output=True, text=True, cwd=str(repo), encoding='utf-8')
+    return set(diff_r.stdout.strip().splitlines()) if diff_r.stdout.strip() else set()
 
-    PHAM VI (ghi ro, khong noi qua): CHI kiem working-tree diff hien tai luc gate chay
-    (khop voi cach ci_gate.py chay pre-push tren state dang co) - KHONG doc lai toan bo
-    lich su commit da push truoc do (qua ton kem, va cac lan push truoc da tung qua
-    chinh gate nay roi)."""
+
+def _stage_no_write_domain() -> dict:
+    """G7-1 redesign (10/7, per Mr.Long authorization, TASK_AUDIT_HIGH_G2_G8.md): ban
+    cu dung 'git diff --name-only HEAD' (working-tree vs HEAD) - LUON RONG dung luc
+    pre-push chay that (da commit xong, working-tree sach voi HEAD), nen check nay
+    tu-skip 100% thoi gian o dung tinh huong can kiem nhat (dang push code moi). Doi
+    sang so sanh commit(s) HEAD CHUA len origin/main (qua _changed_files_vs_origin_
+    main()) - kiem DUNG noi dung sap len remote, khop dung y nghia 'dang push cai gi'.
+
+    origin/main khong resolve duoc -> FAIL AN TOAN (rc=1), KHONG im lang bo qua check
+    (dung tinh than R195/R_SUPREME 'uncertainty -> STOP khong ACT', tranh lap lai
+    chinh loi 'check tu-skip am tham' dang sua)."""
     try:
-        r = subprocess.run(['git', 'diff', '--name-only', 'HEAD'], capture_output=True,
-                            text=True, cwd=str(REPO), encoding='utf-8')
-        changed = set(r.stdout.strip().splitlines()) if r.stdout.strip() else set()
+        changed = _changed_files_vs_origin_main()
+        if changed is None:
+            return {'rc': 1, 'tail': "khong resolve duoc origin/main (git merge-base that bai) "
+                                     "- khong xac dinh duoc commit(s) sap push, FAIL an toan "
+                                     "thay vi im lang bo qua check (chay 'git fetch origin main' truoc)"}
         generator_rel = str(GENERATOR_MODULE.relative_to(REPO)).replace('\\', '/')
         if generator_rel not in changed:
-            return {'rc': 0, 'tail': 'tools/episode_generator.py khong doi trong working tree - skip (khong co gi de kiem)'}
+            return {'rc': 0, 'tail': f'tools/episode_generator.py khong doi trong {len(changed)} '
+                                     'file cua commit(s) chua len origin/main - skip'}
         domain_paths = _generator_dependency_source_paths()
         overlap = changed & domain_paths
         if overlap:
-            return {'rc': 1, 'tail': f'generator dang sua CUNG luc voi domain nguon: {overlap}'}
-        return {'rc': 0, 'tail': f'0/{len(domain_paths)} domain source bi dung cham trong working tree diff'}
+            return {'rc': 1, 'tail': f'generator dang sua CUNG commit(s) voi domain nguon '
+                                     f'(chua len origin/main): {overlap}'}
+        return {'rc': 0, 'tail': f'0/{len(domain_paths)} domain source bi dung cham trong '
+                                 f'{len(changed)} file cua commit(s) chua len origin/main'}
     except Exception as e:  # noqa: BLE001
         return {'rc': 1, 'tail': f'no_write_domain EXCEPTION: {e!r}'}
 
@@ -151,7 +179,7 @@ def run_suite():
                  **_stage_self_check()})
     rows.append({'key': 'budget_sheet_M4', 'detail': 'moi scene EP01 co budget sheet du knob',
                  **_stage_budget_sheet_m4()})
-    rows.append({'key': 'no_write_domain', 'detail': 'working-tree diff: generator vs 14 domain source',
+    rows.append({'key': 'no_write_domain', 'detail': 'commit(s) chua len origin/main: generator vs 14 domain source',
                  **_stage_no_write_domain()})
     rows.append({'key': 'static_no_write_src', 'detail': 'source code khong co loi goi ghi file',
                  **_stage_static_no_write_src()})

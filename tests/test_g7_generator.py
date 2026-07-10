@@ -15,6 +15,7 @@ sys.path.insert(0, str(REPO / "tools"))
 
 import episode_generator as eg  # noqa: E402
 import g7_ep01_dry_run as dryrun  # noqa: E402
+import g7_generator_check as g7c  # noqa: E402
 
 SCHEMA_PATH = REPO / "governance" / "blueprint" / "schemas" / "episode_schema.yaml"
 
@@ -168,3 +169,104 @@ def test_module_source_has_no_write_calls_to_domain_files():
     hit = [p for p in forbidden_patterns if p in src]
     assert not hit, (
         f"episode_generator.py vi pham forbidden_operations:write/exec (interface_contracts.yaml): {hit}")
+
+
+# ============================================================
+# G7-1 (10/7, per Mr.Long authorization, TASK_AUDIT_HIGH_G2_G8.md): no_write_domain
+# ban cu dung 'git diff --name-only HEAD' (working-tree vs HEAD) - LUON RONG luc
+# pre-push chay that (da commit xong) nen tu-skip 100% dung luc can kiem nhat. Doi
+# sang so sanh commit(s) HEAD chua len origin/main (merge-base..HEAD).
+# ============================================================
+
+def _init_temp_git_repo(tmp_path):
+    """Tao 1 git repo THAT trong tmp_path (khong gia lap git plumbing) - commit1 la
+    baseline, gan lam refs/remotes/origin/main (khong can remote that ket noi)."""
+    import subprocess as sp
+    sp.run(['git', 'init', '-q'], cwd=str(tmp_path), check=True)
+    sp.run(['git', 'config', 'user.email', 'test@test.local'], cwd=str(tmp_path), check=True)
+    sp.run(['git', 'config', 'user.name', 'test'], cwd=str(tmp_path), check=True)
+    (tmp_path / 'a.txt').write_text('base', encoding='utf-8')
+    sp.run(['git', 'add', 'a.txt'], cwd=str(tmp_path), check=True)
+    sp.run(['git', 'commit', '-q', '-m', 'base'], cwd=str(tmp_path), check=True)
+    base_sha = sp.run(['git', 'rev-parse', 'HEAD'], cwd=str(tmp_path),
+                      capture_output=True, text=True, check=True).stdout.strip()
+    sp.run(['git', 'update-ref', 'refs/remotes/origin/main', base_sha], cwd=str(tmp_path), check=True)
+    return tmp_path
+
+
+def test_g7_1_changed_files_vs_origin_main_real_repo_no_crash():
+    """Reality anchor: tren REPO that (session dang lam viec), origin/main PHAI resolve
+    duoc (R200 realtime sync workflow luon fetch/push origin/main) - tra ve set, KHONG
+    None."""
+    changed = g7c._changed_files_vs_origin_main()
+    assert changed is not None, (
+        "origin/main khong resolve duoc tren repo that - kiem tra da 'git fetch origin main' chua")
+    assert isinstance(changed, set)
+
+
+def test_g7_1_changed_files_vs_origin_main_returns_none_when_unresolvable(tmp_path):
+    """MUTATION-PROOF (git that, khong gia lap): repo KHONG co origin/main ref -> tra
+    ve None (khong duoc am tham tra ve set rong - se che mat that bai that)."""
+    import subprocess as sp
+    _init_temp_git_repo(tmp_path)
+    sp.run(['git', 'update-ref', '-d', 'refs/remotes/origin/main'], cwd=str(tmp_path), check=True)
+    assert g7c._changed_files_vs_origin_main(repo=tmp_path) is None
+
+
+def test_g7_1_changed_files_vs_origin_main_detects_real_diff(tmp_path):
+    """MUTATION-PROOF (git that): tao 1 commit THAT sau origin/main sua 2 file, xac
+    nhan _changed_files_vs_origin_main() tra ve DUNG 2 file do (chung minh git plumbing
+    that hoat dong, khong phai gia lap chuoi)."""
+    import subprocess as sp
+    repo = _init_temp_git_repo(tmp_path)
+    (repo / 'tools_episode_generator.py').write_text('x', encoding='utf-8')
+    (repo / 'domain_source.yaml').write_text('y', encoding='utf-8')
+    sp.run(['git', 'add', '.'], cwd=str(repo), check=True)
+    sp.run(['git', 'commit', '-q', '-m', 'push-candidate'], cwd=str(repo), check=True)
+    changed = g7c._changed_files_vs_origin_main(repo=repo)
+    assert changed == {'tools_episode_generator.py', 'domain_source.yaml'}
+
+
+def test_g7_1_stage_no_write_domain_catches_real_cross_domain_commit(monkeypatch):
+    """MUTATION-PROOF bat buoc (per task doc): gia lap 1 commit sua CUNG luc tools/
+    episode_generator.py + 1 domain source path THAT (tu blueprint_domains.yaml
+    dependencies cua generator) -> _stage_no_write_domain() PHAI FAIL (rc=1)."""
+    generator_rel = str((REPO / "tools" / "episode_generator.py").relative_to(REPO)).replace('\\', '/')
+    domain_paths = g7c._generator_dependency_source_paths()
+    assert domain_paths, "generator dependencies rong - kiem tra lai blueprint_domains.yaml"
+    one_domain_path = sorted(domain_paths)[0]
+    monkeypatch.setattr(g7c, "_changed_files_vs_origin_main",
+                        lambda: {generator_rel, one_domain_path})
+    result = g7c._stage_no_write_domain()
+    assert result['rc'] == 1, f"commit sua CUNG generator+domain nguon KHONG bi bat: {result}"
+    assert one_domain_path in result['tail']
+
+
+def test_g7_1_stage_no_write_domain_clean_when_only_generator_changed(monkeypatch):
+    generator_rel = str((REPO / "tools" / "episode_generator.py").relative_to(REPO)).replace('\\', '/')
+    monkeypatch.setattr(g7c, "_changed_files_vs_origin_main", lambda: {generator_rel})
+    result = g7c._stage_no_write_domain()
+    assert result['rc'] == 0
+
+
+def test_g7_1_stage_no_write_domain_skips_when_generator_untouched(monkeypatch):
+    monkeypatch.setattr(g7c, "_changed_files_vs_origin_main", lambda: {"bible/00_constitution.yaml"})
+    result = g7c._stage_no_write_domain()
+    assert result['rc'] == 0
+    assert "skip" in result['tail']
+
+
+def test_g7_1_stage_no_write_domain_fails_safe_when_origin_main_unresolvable(monkeypatch):
+    """Ban cu (working-tree diff) se AM THAM bo qua check khi khong co origin/main;
+    ban moi PHAI FAIL an toan (R195 'uncertainty -> STOP khong ACT'), khong duoc coi
+    None la '0 file thay doi'."""
+    monkeypatch.setattr(g7c, "_changed_files_vs_origin_main", lambda: None)
+    result = g7c._stage_no_write_domain()
+    assert result['rc'] == 1
+
+
+def test_g7_1_gate_pass_on_real_repo_state():
+    """Reality anchor: gate chay standalone tren repo that (khong mutation) PHAI PASS -
+    hien tai KHONG co commit nao chua len origin/main dung cham tools/episode_generator.py."""
+    result = g7c._stage_no_write_domain()
+    assert result['rc'] == 0, result['tail']
