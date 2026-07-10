@@ -15,8 +15,11 @@ CHECKS:
   C3 Tier1 R210 hiện diện: char_name/gender/death.type/haunting_symbol/regret + voice.hometown
      (bible/37 background) + voice.region_dialect/pronoun_system (bible/37 voice, alias
      pronoun_style — FAIL-class, đã fill 139/139) + voice.speaking_speed/catchphrase/
-     forbidden_words/dialogue_sample (bible/37 voice, G2 B4 fix 5/7 — WARN-class, 0/139
-     đã fill, chờ Boss quyết định ngưỡng trước khi --strict)
+     forbidden_words/dialogue_sample (bible/37 voice, G2 B4 fix 5/7 — WARN-class).
+     (Cập nhật 10/7, per Mr.Long authorization, G2-5 TASK_AUDIT_HIGH_G2_G8.md — xác nhận
+     lại thật: catchphrase ĐÃ fill 139/139 từ đợt G2-7 backfill, 3 field còn lại
+     (speaking_speed/forbidden_words/dialogue_sample) vẫn 0/139, chờ Boss quyết định
+     ngưỡng trước khi --strict)
   C4 naming region/generation/culture (rule_06..09, bible/23 v1.1 — Mr.Long ký
      2026-07-03): KHUNG check — bible/23 v1.1 phải có đủ 4 rule + roster region
      dùng phải có style_by_region khai (structural). Pool cụ thể theo vùng CHƯA

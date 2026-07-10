@@ -17,9 +17,11 @@ svhmp_v13_render.py nhu subprocess, KHONG import/sua noi bo file LOCKED). Test
 nay gio kiem 2 chieu: (1) wrapper PHAI co gate that; (2) file LOCKED PHAI SACH
 (khong con code CHARACTER_GATE) — dam bao khong tai dien vi pham cu.
 """
+import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(REPO / "tools"))
 RENDER = REPO / "tools" / "svhmp_v13_render.py"
 WRAPPER = REPO / "tools" / "render_with_character_gate.py"
 
@@ -45,6 +47,45 @@ def test_character_gate_reachable_via_wrapper():
     assert "svhmp_v13_render.py" in txt, (
         "wrapper phai goi svhmp_v13_render.py (subprocess) sau khi qua gate"
     )
+
+
+def test_run_character_gate_blocks_on_real_low_completeness_strict():
+    """G2-1 (10/7, per Mr.Long authorization, TASK_AUDIT_HIGH_G2_G8.md): test hanh vi
+    THAT (khong chi text-grep) - goi truc tiep run_character_gate() voi du lieu THAT
+    (ep_02, roster completeness ~23%, duoi threshold 0.5 mac dinh) - PHAI tra False
+    (BLOCK) khi strict=True. Neu ai doi 'return False' -> 'return True' trong ham,
+    test nay se bat duoc (khac 2 test cu chi grep text, khong goi ham)."""
+    from render_with_character_gate import run_character_gate
+    result = run_character_gate("dummy_spec.json", ep_num=2, strict=True, threshold=0.5)
+    assert result is False, (
+        "run_character_gate(strict=True) tren du lieu THAT completeness thap phai BLOCK "
+        "(False) - neu tra True, guard bi vo hieu hoa (finding G2-1)")
+
+
+def test_run_character_gate_warns_not_blocks_when_not_strict():
+    """Doi xung: cung du lieu THAT nhung strict=False (WARN-default hien tai) PHAI
+    van cho phep tiep tuc (True) - khong doi hanh vi WARN-default da duyet (GOV-2)."""
+    from render_with_character_gate import run_character_gate
+    result = run_character_gate("dummy_spec.json", ep_num=2, strict=False, threshold=0.5)
+    assert result is True, "WARN-default (strict=False) khong duoc BLOCK render"
+
+
+def test_main_exits_2_on_strict_block_real_data(monkeypatch, capsys):
+    """G2-1: main() voi --strict-characters + spec tro ep co completeness thap PHAI
+    sys.exit(2) TRUOC KHI goi subprocess render (khong render duoc du lieu chua sach)."""
+    import sys as _sys
+    from render_with_character_gate import main
+    monkeypatch.setattr(_sys, "argv", [
+        "render_with_character_gate.py",
+        "--spec", "dummy_spec.json",
+        "--output", "output/ep_02/hook.wav",
+        "--strict-characters",
+    ])
+    with __import__("pytest").raises(SystemExit) as exc_info:
+        main()
+    assert exc_info.value.code == 2, (
+        "main() voi --strict-characters tren ep completeness thap phai exit(2) - "
+        f"thuc te exit({exc_info.value.code})")
 
 
 def test_locked_render_file_has_no_character_gate_code():

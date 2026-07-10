@@ -135,7 +135,12 @@ tooling:
   voice_qa: tools/dialog_voice_validator.py     # giọng/vùng/xưng hô (R206 1000-case)
   balance_qa: tools/character_balance_report.py # cân bằng vs target (7 flag hiện tại)
   consistency_qa: tools/story_consistency_validator.py  # cross-episode lock (R207)
-  gate: "Render 1 tập BỊ CHẶN nếu focal char thiếu tier_1 / thiếu voice / thiếu haunting_symbol / lệch giọng-quê"
+  gate: "Render 1 tập CẢNH BÁO (WARN-default, chưa BLOCK) nếu focal char thiếu tier_1 / thiếu
+    voice / thiếu haunting_symbol / lệch giọng-quê — code THẬT (svhmp_preflight_qa.py
+    CHARACTER_GATE) mặc định chỉ WARN, cần cờ --strict-characters mới thật sự BLOCK
+    (exit 2). CHƯA bật strict mặc định vì roster completeness còn ~23% (GOV-2,
+    master_roadmap.md §9) — cập nhật 10/7 per Mr.Long authorization, G2-6
+    TASK_AUDIT_HIGH_G2_G8.md, khớp đúng hành vi code thật thay vì claim BỊ CHẶN"
 
 # ============================================================
 # RECONCILE với hệ đã có (KHÔNG phá lock)

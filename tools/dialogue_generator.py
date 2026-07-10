@@ -49,7 +49,8 @@ MISSING_VOICE_REPORT = SVHMP / 'reports' / 'G3_MISSING_VOICE_FIELDS.md'
 # (dataclass tools/character_manager.py). catchphrase nay DA DAY DU tren roster (139/139
 # co, cap nhat 10/7 audit MEDIUM/LOW #6 sau khi G2 enrich - comment cu "hau nhu rong" da
 # loi thoi). Day la NO cua G2 - generator CHI duoc SKIP + log khi thieu, KHONG tu dien.
-OPTIONAL_VOICE_FIELDS = ('catchphrase', 'forbidden_words', 'dialogue_sample', 'speaking_speed')
+OPTIONAL_VOICE_FIELDS = ('catchphrase', 'forbidden_words', 'dialogue_sample', 'speaking_speed',
+                         'particles')  # audit ML #8 (10/7): 39/139 thieu particles bi am tham default [] - nay vao missing_optional_fields + report G3_MISSING_VOICE_FIELDS.md
 
 RECURRING_KIND = 'recurring'
 RETRY_LIMIT = 3
@@ -130,7 +131,9 @@ def _candidate_variants(profile: dict, voice_profile: dict, scene_context: dict)
         if v and v not in seen:
             seen.add(v)
             out.append(v)
-    return out[:RETRY_LIMIT] or ['...']
+    # audit ML #7 (10/7): KHONG tra placeholder '...' - de [] neu khong dung duoc bien the tu
+    # du lieu THAT (R195). generate_line() bat [] -> REFUSED ro rang, khong emit OK+'...' gia mao.
+    return out[:RETRY_LIMIT]
 
 
 def generate_line(character_id: str, scene_context: dict = None, manager: DialogueManager = None,
@@ -172,6 +175,12 @@ def generate_line(character_id: str, scene_context: dict = None, manager: Dialog
                                       missing_optional_fields=missing_optional)
 
     candidates = _candidate_variants(profile, voice_profile, scene_context)
+    if not candidates:
+        # audit ML #7: pronoun malformed (khong tach duoc token) + catchphrase/scene_context rong
+        # -> KHONG co bien the tu du lieu THAT. REFUSED ro rang thay vi tra OK+'...' gia mao (R195).
+        return DialogueRefusedResult(status='REFUSED', reason='NO_VARIANT_FROM_REAL_DATA',
+                                      character_id=character_id, issues=[],
+                                      missing_optional_fields=missing_optional, attempts=0)
     last_issues = []
     for cand in candidates:
         line_issues = dvv.validate_line(profile, cand)

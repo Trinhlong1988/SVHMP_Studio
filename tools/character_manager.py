@@ -82,25 +82,23 @@ class CharacterProfile:
                   'relationships', 'dob', 'life_status', 'lifecycle', 'state_by_episode',
                   'story_memory', 'suspense_profile')
 
+    def _group_nonempty(self, g):
+        """Gia tri group SAU khi loc value rong. audit ML #3 (10/7): truoc chi 'voice' loc
+        value rong, cac dict group khac dung 'if v:' tho -> {'build': ''} van truthy (tinh
+        filled sai). Nay MOI dict group loc value rong nhat quan; list/scalar giu nguyen."""
+        v = getattr(self, g)
+        if g == 'voice':
+            return {k: x for k, x in asdict(self.voice).items() if x}
+        if isinstance(v, dict):
+            return {k: x for k, x in v.items() if x}
+        return v
+
     def completeness(self) -> float:
-        filled = 0
-        for g in self.EXT_GROUPS:
-            v = getattr(self, g)
-            if g == 'voice':
-                v = {k: x for k, x in asdict(self.voice).items() if x}
-            if v:
-                filled += 1
+        filled = sum(1 for g in self.EXT_GROUPS if self._group_nonempty(g))
         return round(filled / len(self.EXT_GROUPS), 2)
 
     def missing_ext(self) -> list:
-        out = []
-        for g in self.EXT_GROUPS:
-            v = getattr(self, g)
-            if g == 'voice':
-                v = {k: x for k, x in asdict(self.voice).items() if x}
-            if not v:
-                out.append(g)
-        return out
+        return [g for g in self.EXT_GROUPS if not self._group_nonempty(g)]
 
 
 class CharacterRegistry:

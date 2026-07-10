@@ -55,9 +55,9 @@ passengers:
   voice:
     region_dialect: bac
     hometown: Hà Nội
-    pronoun_system: tôi
+    pronoun_system: cháu
     particles:
-    - nhỉ
+    - nhé
     register: dan_da
     speaking_speed: nhanh
     catchphrase: con sống với ân hận đó đúng một năm thôi
@@ -121,9 +121,9 @@ passengers:
   voice:
     region_dialect: nam
     hometown: Vũng Tàu
-    pronoun_system: con
+    pronoun_system: tui
     particles:
-    - nghen
+    - ha
     register: dan_da
     speaking_speed: cham
     catchphrase: con sống với chuyện đó tới già mới yên
@@ -154,9 +154,9 @@ passengers:
   voice:
     region_dialect: bac
     hometown: Bắc Ninh
-    pronoun_system: tôi
+    pronoun_system: cháu
     particles:
-    - nhỉ
+    - nhé
     register: dan_da
     speaking_speed: nhanh
     catchphrase: con bị oan sau đúng chuyện đó
@@ -220,9 +220,9 @@ passengers:
   voice:
     region_dialect: nam
     hometown: Biên Hòa
-    pronoun_system: con
+    pronoun_system: tui
     particles:
-    - nghen
+    - ha
     register: dan_da
     speaking_speed: vua
     catchphrase: má con hiểu lầm hoài mà con không cãi lại
@@ -253,9 +253,9 @@ passengers:
   voice:
     region_dialect: bac
     hometown: Hải Phòng
-    pronoun_system: tôi
+    pronoun_system: cháu
     particles:
-    - nhỉ
+    - nhé
     register: dan_da
     speaking_speed: vua
     catchphrase: cháu chuộc lỗi bằng cách cứu người khác
@@ -288,7 +288,7 @@ passengers:
     hometown: Hà Tĩnh
     pronoun_system: tui
     particles:
-    - rứa
+    - mô
     register: dan_da
     speaking_speed: nhanh
     catchphrase: tui bị lừa sạch tiền sau đúng chuyện đó
@@ -319,7 +319,7 @@ passengers:
   voice:
     region_dialect: nam
     hometown: Sài Gòn
-    pronoun_system: con
+    pronoun_system: tui
     particles:
     - nghen
     register: dan_da
@@ -420,7 +420,7 @@ passengers:
     hometown: Hồ Chí Minh
     pronoun_system: con
     particles:
-    - nghen
+    - nè
     register: dan_da
     speaking_speed: nhanh
     catchphrase: con mất đột ngột, chưa kịp lớn để hiểu hết
@@ -486,7 +486,7 @@ passengers:
     hometown: Đà Nẵng
     pronoun_system: tui
     particles:
-    - rứa
+    - mô
     register: dan_da
     speaking_speed: cham
     catchphrase: tui đi già yếu, giống như ba đã đi
@@ -519,7 +519,7 @@ passengers:
     hometown: Vũng Tàu
     pronoun_system: con
     particles:
-    - nghen
+    - nè
     register: dan_da
     speaking_speed: nhanh
     catchphrase: con hiểu lầm chuyện khác ngay sau đó
@@ -552,7 +552,7 @@ passengers:
     hometown: Hà Nội
     pronoun_system: tôi
     particles:
-    - nhỉ
+    - ạ
     register: dan_da
     speaking_speed: nhanh
     catchphrase: con cũng liều mình cứu người như cha từng làm
@@ -616,7 +616,7 @@ passengers:
   voice:
     region_dialect: nam
     hometown: Biên Hòa
-    pronoun_system: con
+    pronoun_system: tui
     particles:
     - nghen
     register: dan_da
@@ -682,9 +682,9 @@ passengers:
   voice:
     region_dialect: trung
     hometown: Quảng Bình
-    pronoun_system: tui
+    pronoun_system: con
     particles:
-    - rứa
+    - hè
     register: dan_da
     speaking_speed: cham
     catchphrase: em bệnh nặng dần mà giấu tui như tui từng giấu
@@ -715,7 +715,7 @@ passengers:
   voice:
     region_dialect: nam
     hometown: Sài Gòn
-    pronoun_system: con
+    pronoun_system: tui
     particles:
     - nghen
     register: dan_da
@@ -750,7 +750,7 @@ passengers:
     hometown: Hải Phòng
     pronoun_system: tôi
     particles:
-    - nhỉ
+    - ạ
     register: dan_da
     speaking_speed: nhanh
     catchphrase: tôi cũng bị đổ oan chuyện tương tự sau này
@@ -781,9 +781,9 @@ passengers:
   voice:
     region_dialect: trung
     hometown: Hà Tĩnh
-    pronoun_system: tui
+    pronoun_system: con
     particles:
-    - rứa
+    - hè
     register: dan_da
     speaking_speed: cham
     catchphrase: tui đi nhẹ nhàng, vẫn ôm cục giận đó
@@ -814,9 +814,9 @@ passengers:
   voice:
     region_dialect: nam
     hometown: Hồ Chí Minh
-    pronoun_system: con
+    pronoun_system: tui
     particles:
-    - nghen
+    - ha
     register: dan_da
     speaking_speed: nhanh
     catchphrase: con hiểu lầm chuyện khác giống hệt vậy
@@ -849,7 +849,7 @@ passengers:
     hometown: Thái Bình
     pronoun_system: tôi
     particles:
-    - nhỉ
+    - ạ
     register: dan_da
     speaking_speed: nhanh
     catchphrase: tôi cũng che chở cháu mình như ông từng làm
@@ -913,7 +913,7 @@ passengers:
   voice:
     region_dialect: nam
     hometown: Vũng Tàu
-    pronoun_system: con
+    pronoun_system: tui
     particles:
     - nghen
     register: dan_da
@@ -979,9 +979,9 @@ passengers:
   voice:
     region_dialect: trung
     hometown: Đà Nẵng
-    pronoun_system: tui
+    pronoun_system: con
     particles:
-    - rứa
+    - hè
     register: dan_da
     speaking_speed: cham
     catchphrase: tui bệnh âm thầm giống hệt mạ ngày trước
@@ -1012,9 +1012,9 @@ passengers:
   voice:
     region_dialect: nam
     hometown: Biên Hòa
-    pronoun_system: con
+    pronoun_system: tui
     particles:
-    - nghen
+    - ha
     register: dan_da
     speaking_speed: vua
     catchphrase: con cũng đi đâu đó rồi không về, như mẹ
@@ -1045,9 +1045,9 @@ passengers:
   voice:
     region_dialect: bac
     hometown: Hà Nội
-    pronoun_system: tôi
+    pronoun_system: cháu
     particles:
-    - nhỉ
+    - nhé
     register: dan_da
     speaking_speed: nhanh
     catchphrase: con lớn lên rồi cũng bị nghi oan như mẹ
@@ -1080,7 +1080,7 @@ passengers:
     hometown: Nghệ An
     pronoun_system: tui
     particles:
-    - rứa
+    - mô
     register: dan_da
     speaking_speed: cham
     catchphrase: tui mất già yếu, giống mạ ngày trước
@@ -1111,9 +1111,9 @@ passengers:
   voice:
     region_dialect: nam
     hometown: Sài Gòn
-    pronoun_system: con
+    pronoun_system: tui
     particles:
-    - nghen
+    - ha
     register: dan_da
     speaking_speed: cham
     catchphrase: con bị hiểu lầm tới tận lúc mất
@@ -1210,7 +1210,7 @@ passengers:
   voice:
     region_dialect: nam
     hometown: Hồ Chí Minh
-    pronoun_system: con
+    pronoun_system: tui
     particles:
     - nghen
     register: dan_da
@@ -1243,9 +1243,9 @@ passengers:
   voice:
     region_dialect: bac
     hometown: Hải Phòng
-    pronoun_system: tôi
+    pronoun_system: cháu
     particles:
-    - nhỉ
+    - nhé
     register: dan_da
     speaking_speed: nhanh
     catchphrase: con cũng gặp tai nạn ngay sau đó không lâu
@@ -1278,7 +1278,7 @@ passengers:
     hometown: Hà Tĩnh
     pronoun_system: tui
     particles:
-    - rứa
+    - mô
     register: dan_da
     speaking_speed: cham
     catchphrase: tui bệnh nặng dần suốt nhiều năm sau đó
@@ -1311,7 +1311,7 @@ passengers:
     hometown: Vũng Tàu
     pronoun_system: con
     particles:
-    - nghen
+    - nè
     register: dan_da
     speaking_speed: nhanh
     catchphrase: con mất tích lúc còn rất trẻ
@@ -1344,7 +1344,7 @@ passengers:
     hometown: Thái Bình
     pronoun_system: tôi
     particles:
-    - nhỉ
+    - ạ
     register: dan_da
     speaking_speed: nhanh
     catchphrase: tôi bị đổ oan chuyện khác ngay sau đó
@@ -1377,7 +1377,7 @@ passengers:
     hometown: Huế
     pronoun_system: tui
     particles:
-    - rứa
+    - mô
     register: dan_da
     speaking_speed: cham
     catchphrase: tui sống thọ, đi cũng nhẹ nhàng tự nhiên
@@ -1408,7 +1408,7 @@ passengers:
   voice:
     region_dialect: nam
     hometown: Biên Hòa
-    pronoun_system: con
+    pronoun_system: tui
     particles:
     - nghen
     register: dan_da
@@ -1509,7 +1509,7 @@ passengers:
     hometown: Sài Gòn
     pronoun_system: con
     particles:
-    - nghen
+    - nè
     register: dan_da
     speaking_speed: vua
     catchphrase: không ai rõ con đi lúc nào sau chuyện đó
@@ -1542,7 +1542,7 @@ passengers:
     hometown: Hà Nội
     pronoun_system: tôi
     particles:
-    - nhỉ
+    - ạ
     register: dan_da
     speaking_speed: nhanh
     catchphrase: tôi gặp tai nạn ngay sau khi buông bỏ được
@@ -1573,9 +1573,9 @@ passengers:
   voice:
     region_dialect: trung
     hometown: Nghệ An
-    pronoun_system: tui
+    pronoun_system: con
     particles:
-    - rứa
+    - hè
     register: dan_da
     speaking_speed: cham
     catchphrase: tui bệnh nặng từ hồi còn trẻ vì chuyện đó
@@ -1606,7 +1606,7 @@ passengers:
   voice:
     region_dialect: nam
     hometown: Hồ Chí Minh
-    pronoun_system: con
+    pronoun_system: tui
     particles:
     - nghen
     register: dan_da
@@ -1641,7 +1641,7 @@ passengers:
     hometown: Bắc Ninh
     pronoun_system: tôi
     particles:
-    - nhỉ
+    - ạ
     register: dan_da
     speaking_speed: nhanh
     catchphrase: tôi bị đổ oan chuyện khác không lâu sau
@@ -1705,7 +1705,7 @@ passengers:
   voice:
     region_dialect: nam
     hometown: Vũng Tàu
-    pronoun_system: con
+    pronoun_system: tui
     particles:
     - nghen
     register: dan_da
@@ -1740,7 +1740,7 @@ passengers:
     hometown: Hải Phòng
     pronoun_system: tôi
     particles:
-    - nhỉ
+    - ạ
     register: dan_da
     speaking_speed: vua
     catchphrase: tôi hy sinh vì con cháu tới cuối đời
@@ -1771,9 +1771,9 @@ passengers:
   voice:
     region_dialect: trung
     hometown: Hà Tĩnh
-    pronoun_system: tui
+    pronoun_system: con
     particles:
-    - rứa
+    - hè
     register: dan_da
     speaking_speed: nhanh
     catchphrase: tui bị phản bội bởi chính người tui tin nhất
@@ -1804,9 +1804,9 @@ passengers:
   voice:
     region_dialect: nam
     hometown: Biên Hòa
-    pronoun_system: con
+    pronoun_system: tui
     particles:
-    - nghen
+    - ha
     register: dan_da
     speaking_speed: vua
     catchphrase: không ai biết con đi lúc nào sau chuyện đó
@@ -1903,7 +1903,7 @@ passengers:
   voice:
     region_dialect: nam
     hometown: Sài Gòn
-    pronoun_system: con
+    pronoun_system: tui
     particles:
     - nghen
     register: dan_da
@@ -1936,9 +1936,9 @@ passengers:
   voice:
     region_dialect: bac
     hometown: Nam Định
-    pronoun_system: tôi
+    pronoun_system: cháu
     particles:
-    - nhỉ
+    - nhé
     register: dan_da
     speaking_speed: nhanh
     catchphrase: con bị oan sau lời hứa đó không lâu
@@ -2002,9 +2002,9 @@ passengers:
   voice:
     region_dialect: nam
     hometown: Hồ Chí Minh
-    pronoun_system: con
+    pronoun_system: tui
     particles:
-    - nghen
+    - ha
     register: dan_da
     speaking_speed: vua
     catchphrase: con bị hiểu lầm chuyện khác trước khi mất
@@ -2035,9 +2035,9 @@ passengers:
   voice:
     region_dialect: bac
     hometown: Hà Nội
-    pronoun_system: tôi
+    pronoun_system: cháu
     particles:
-    - nhỉ
+    - nhé
     register: dan_da
     speaking_speed: vua
     catchphrase: con hy sinh vì công việc tới mức quên bản thân
@@ -2070,7 +2070,7 @@ passengers:
     hometown: Nghệ An
     pronoun_system: tui
     particles:
-    - rứa
+    - mô
     register: dan_da
     speaking_speed: nhanh
     catchphrase: tui bị người ta phản bội ngay sau lời hứa đó
@@ -2101,7 +2101,7 @@ passengers:
   voice:
     region_dialect: nam
     hometown: Vũng Tàu
-    pronoun_system: con
+    pronoun_system: tui
     particles:
     - nghen
     register: dan_da
@@ -2202,7 +2202,7 @@ passengers:
     hometown: Biên Hòa
     pronoun_system: con
     particles:
-    - nghen
+    - nè
     register: dan_da
     speaking_speed: nhanh
     catchphrase: con mất tích lúc còn rất trẻ
@@ -2268,7 +2268,7 @@ passengers:
     hometown: Hà Tĩnh
     pronoun_system: tui
     particles:
-    - rứa
+    - mô
     register: dan_da
     speaking_speed: cham
     catchphrase: tui đi tự nhiên nhẹ nhàng tuổi già
@@ -2301,7 +2301,7 @@ passengers:
     hometown: Sài Gòn
     pronoun_system: con
     particles:
-    - nghen
+    - nè
     register: dan_da
     speaking_speed: nhanh
     catchphrase: con hiểu lầm chuyện khác ngay sau đó
@@ -2334,7 +2334,7 @@ passengers:
     hometown: Thái Bình
     pronoun_system: tôi
     particles:
-    - nhỉ
+    - ạ
     register: dan_da
     speaking_speed: vua
     catchphrase: tôi hy sinh vì con cháu tới cuối đời
@@ -2398,7 +2398,7 @@ passengers:
   voice:
     region_dialect: nam
     hometown: Hồ Chí Minh
-    pronoun_system: con
+    pronoun_system: tui
     particles:
     - nghen
     register: dan_da
@@ -2463,9 +2463,9 @@ passengers:
   voice:
     region_dialect: trung
     hometown: Đà Nẵng
-    pronoun_system: tui
+    pronoun_system: con
     particles:
-    - rứa
+    - hè
     register: dan_da
     speaking_speed: cham
     catchphrase: tui bệnh nặng từ hồi còn trẻ
@@ -2498,7 +2498,7 @@ passengers:
     hometown: Vũng Tàu
     pronoun_system: con
     particles:
-    - nghen
+    - nè
     register: dan_da
     speaking_speed: vua
     catchphrase: con mất tích sau khi nhận ra mình đã quên bạn
@@ -2531,7 +2531,7 @@ passengers:
     hometown: Hà Nội
     pronoun_system: tôi
     particles:
-    - nhỉ
+    - ạ
     register: dan_da
     speaking_speed: nhanh
     catchphrase: tôi bị đổ oan chuyện khác ở tuổi già
@@ -2562,9 +2562,9 @@ passengers:
   voice:
     region_dialect: trung
     hometown: Nghệ An
-    pronoun_system: tui
+    pronoun_system: con
     particles:
-    - rứa
+    - hè
     register: dan_da
     speaking_speed: cham
     catchphrase: tui đi tự nhiên nhẹ nhàng như cô giáo cũ
@@ -2595,9 +2595,9 @@ passengers:
   voice:
     region_dialect: nam
     hometown: Biên Hòa
-    pronoun_system: con
+    pronoun_system: tui
     particles:
-    - nghen
+    - ha
     register: dan_da
     speaking_speed: nhanh
     catchphrase: con hiểu lầm chuyện khác trước khi mất
@@ -2630,7 +2630,7 @@ passengers:
     hometown: Bắc Ninh
     pronoun_system: tôi
     particles:
-    - nhỉ
+    - ạ
     register: dan_da
     speaking_speed: vua
     catchphrase: tôi hy sinh cho học trò tới cuối đời
@@ -2694,7 +2694,7 @@ passengers:
   voice:
     region_dialect: nam
     hometown: Sài Gòn
-    pronoun_system: con
+    pronoun_system: tui
     particles:
     - nghen
     register: dan_da
@@ -2760,9 +2760,9 @@ passengers:
   voice:
     region_dialect: trung
     hometown: Hà Tĩnh
-    pronoun_system: tui
+    pronoun_system: con
     particles:
-    - rứa
+    - hè
     register: dan_da
     speaking_speed: cham
     catchphrase: tui bệnh nặng dần vì áy náy chuyện đó
@@ -2793,9 +2793,9 @@ passengers:
   voice:
     region_dialect: nam
     hometown: Hồ Chí Minh
-    pronoun_system: con
+    pronoun_system: tui
     particles:
-    - nghen
+    - ha
     register: dan_da
     speaking_speed: vua
     catchphrase: con mất tích sau khi nghỉ việc chỗ đó
@@ -2826,9 +2826,9 @@ passengers:
   voice:
     region_dialect: bac
     hometown: Thái Bình
-    pronoun_system: tôi
+    pronoun_system: cháu
     particles:
-    - nhỉ
+    - nhé
     register: dan_da
     speaking_speed: nhanh
     catchphrase: tôi bị oan sau chuyện chưa trả ơn đó
@@ -2861,7 +2861,7 @@ passengers:
     hometown: Huế
     pronoun_system: tui
     particles:
-    - rứa
+    - mô
     register: dan_da
     speaking_speed: cham
     catchphrase: tui đi tự nhiên nhẹ nhàng như bác xe ôm
@@ -2892,9 +2892,9 @@ passengers:
   voice:
     region_dialect: nam
     hometown: Vũng Tàu
-    pronoun_system: con
+    pronoun_system: tui
     particles:
-    - nghen
+    - ha
     register: dan_da
     speaking_speed: nhanh
     catchphrase: con hiểu lầm chuyện khác trước khi mất
@@ -2991,7 +2991,7 @@ passengers:
   voice:
     region_dialect: nam
     hometown: Biên Hòa
-    pronoun_system: con
+    pronoun_system: tui
     particles:
     - nghen
     register: dan_da
@@ -3024,9 +3024,9 @@ passengers:
   voice:
     region_dialect: bac
     hometown: Hà Nội
-    pronoun_system: tôi
+    pronoun_system: cháu
     particles:
-    - nhỉ
+    - nhé
     register: dan_da
     speaking_speed: nhanh
     catchphrase: con gặp tai nạn ngay sau khi định vẽ lại
@@ -3059,7 +3059,7 @@ passengers:
     hometown: Nghệ An
     pronoun_system: tui
     particles:
-    - rứa
+    - mô
     register: dan_da
     speaking_speed: cham
     catchphrase: tui bệnh nặng dần, tay không còn cầm cọ được
@@ -3092,7 +3092,7 @@ passengers:
     hometown: Sài Gòn
     pronoun_system: con
     particles:
-    - nghen
+    - nè
     register: dan_da
     speaking_speed: nhanh
     catchphrase: con mất tích lúc còn rất trẻ, giấc mơ dở dang
@@ -3125,7 +3125,7 @@ passengers:
     hometown: Bắc Ninh
     pronoun_system: tôi
     particles:
-    - nhỉ
+    - ạ
     register: dan_da
     speaking_speed: nhanh
     catchphrase: tôi bị đổ oan chuyện khác lúc về già
@@ -3158,7 +3158,7 @@ passengers:
     hometown: Quảng Bình
     pronoun_system: tui
     particles:
-    - rứa
+    - mô
     register: dan_da
     speaking_speed: cham
     catchphrase: tui đi tự nhiên nhẹ nhàng, vẫn một mình
@@ -3189,7 +3189,7 @@ passengers:
   voice:
     region_dialect: nam
     hometown: Hồ Chí Minh
-    pronoun_system: con
+    pronoun_system: tui
     particles:
     - nghen
     register: dan_da
@@ -3257,7 +3257,7 @@ passengers:
     hometown: Hà Tĩnh
     pronoun_system: tui
     particles:
-    - rứa
+    - mô
     register: dan_da
     speaking_speed: nhanh
     catchphrase: tui bị chính đồng nghiệp phản bội lúc cuối đời
@@ -3290,7 +3290,7 @@ passengers:
     hometown: Vũng Tàu
     pronoun_system: con
     particles:
-    - nghen
+    - nè
     register: dan_da
     speaking_speed: vua
     catchphrase: không ai biết chính xác con đi lúc nào vì sao
@@ -3323,7 +3323,7 @@ passengers:
     hometown: Thái Bình
     pronoun_system: tôi
     particles:
-    - nhỉ
+    - ạ
     register: dan_da
     speaking_speed: nhanh
     catchphrase: tôi gặp tai nạn ngay khi định đi khám
@@ -3357,7 +3357,7 @@ passengers:
   voice:
     region_dialect: bac
     hometown: Hà Nội
-    pronoun_system: em
+    pronoun_system: tôi
     speaking_speed: vua
     catchphrase: thôi thì đằng nào cũng vậy rồi
     forbidden_words:
@@ -3436,7 +3436,7 @@ passengers:
   voice:
     region_dialect: bac
     hometown: Hà Nội
-    pronoun_system: em
+    pronoun_system: tôi
     speaking_speed: cham
     catchphrase: hôm khác — giá mà không có hôm khác
     forbidden_words:
@@ -3478,7 +3478,7 @@ passengers:
   voice:
     region_dialect: bac
     hometown: Hà Nội
-    pronoun_system: em
+    pronoun_system: tôi
     speaking_speed: vua
     catchphrase: giá như con đừng cãi mẹ
     forbidden_words:
@@ -3587,7 +3587,7 @@ passengers:
   voice:
     region_dialect: bac
     hometown: Hà Nội
-    pronoun_system: em
+    pronoun_system: tôi
     speaking_speed: cham
     catchphrase: mẹ ép, nhưng em cũng yếu lòng
     forbidden_words:
@@ -3622,7 +3622,7 @@ passengers:
   voice:
     region_dialect: bac
     hometown: Hà Nội
-    pronoun_system: em
+    pronoun_system: tôi
     speaking_speed: vua
     catchphrase: tôi ngại, tôi xin lỗi vì tôi ngại
     forbidden_words:
@@ -3728,7 +3728,7 @@ passengers:
   voice:
     region_dialect: bac
     hometown: Bắc Ninh
-    pronoun_system: em
+    pronoun_system: tôi
     speaking_speed: vua
     catchphrase: con hứa rồi lại khất
     forbidden_words:
@@ -3798,7 +3798,7 @@ passengers:
   voice:
     region_dialect: bac
     hometown: Hà Nội
-    pronoun_system: em
+    pronoun_system: tôi
     speaking_speed: cham
     catchphrase: giá tôi nhận lời dạy cháu
     forbidden_words:
@@ -3906,7 +3906,7 @@ passengers:
   voice:
     region_dialect: bac
     hometown: Hà Nội
-    pronoun_system: em
+    pronoun_system: tôi
     speaking_speed: vua
     catchphrase: em cứ định về mà chưa kịp
     forbidden_words:
@@ -3976,7 +3976,7 @@ passengers:
   voice:
     region_dialect: bac
     hometown: Hà Nội
-    pronoun_system: em
+    pronoun_system: tôi
     speaking_speed: cham
     catchphrase: giá em thử khám xem có hợp không
     forbidden_words:
@@ -4014,7 +4014,7 @@ passengers:
   voice:
     region_dialect: bac
     hometown: Hà Nội
-    pronoun_system: em
+    pronoun_system: tôi
     speaking_speed: vua
     catchphrase: mẹ chỉ kịp dạy con có vậy
     forbidden_words:
@@ -4085,7 +4085,7 @@ passengers:
   voice:
     region_dialect: bac
     hometown: Hà Nội
-    pronoun_system: em
+    pronoun_system: tôi
     speaking_speed: vua
     catchphrase: em cứ hẹn lần sau
     forbidden_words:
@@ -4157,7 +4157,7 @@ passengers:
   voice:
     region_dialect: trung
     hometown: Nghệ An
-    pronoun_system: tôi
+    pronoun_system: tui
     speaking_speed: vua
     catchphrase: chừ tui đã đủ vững rồi
     forbidden_words:
@@ -4233,7 +4233,7 @@ passengers:
   voice:
     region_dialect: bac
     hometown: Hà Nội
-    pronoun_system: em
+    pronoun_system: tôi
     speaking_speed: cham
     catchphrase: giá như hôm đó đổi chỗ ngồi
     forbidden_words:
@@ -4303,7 +4303,7 @@ passengers:
   voice:
     region_dialect: trung
     hometown: Quảng Bình
-    pronoun_system: em
+    pronoun_system: tui
     speaking_speed: cham
     catchphrase: tui cứ hẹn bữa khác
     forbidden_words:
@@ -4347,7 +4347,7 @@ passengers:
   voice:
     region_dialect: bac
     hometown: Hà Nội
-    pronoun_system: em
+    pronoun_system: tôi
     speaking_speed: vua
     catchphrase: em chỉ là người gọi cấp cứu thôi
     forbidden_words:
@@ -4388,7 +4388,7 @@ passengers:
   voice:
     region_dialect: trung
     hometown: Huế
-    pronoun_system: em
+    pronoun_system: tui
     speaking_speed: cham
     catchphrase: con chưa kịp nhắn cho mạ
     forbidden_words:
@@ -4423,7 +4423,7 @@ passengers:
   voice:
     region_dialect: nam
     hometown: Sài Gòn
-    pronoun_system: tôi
+    pronoun_system: tui
     speaking_speed: cham
     catchphrase: chiếc nhẫn còn nguyên mà người đã mất
     forbidden_words:
@@ -4457,7 +4457,7 @@ passengers:
   voice:
     region_dialect: nam
     hometown: Sài Gòn
-    pronoun_system: tôi
+    pronoun_system: tui
     speaking_speed: vua
     catchphrase: tui chờ ngày em về
     forbidden_words:
@@ -4493,7 +4493,7 @@ passengers:
   voice:
     region_dialect: trung
     hometown: Huế
-    pronoun_system: em
+    pronoun_system: tui
     speaking_speed: cham
     catchphrase: mệ cứ hẹn khi mô rảnh
     forbidden_words:
@@ -4567,7 +4567,7 @@ passengers:
   voice:
     region_dialect: bac
     hometown: Thái Bình
-    pronoun_system: em
+    pronoun_system: tôi
     speaking_speed: cham
     catchphrase: bà hứa với cháu rồi mà chưa kịp
     forbidden_words:
@@ -4602,7 +4602,7 @@ passengers:
   voice:
     region_dialect: bac
     hometown: Hà Nội
-    pronoun_system: em
+    pronoun_system: tôi
     speaking_speed: vua
     catchphrase: vé đã mua mà người không còn
     forbidden_words:
@@ -4637,7 +4637,7 @@ passengers:
   voice:
     region_dialect: nam
     hometown: Sài Gòn
-    pronoun_system: tôi
+    pronoun_system: tui
     speaking_speed: vua
     catchphrase: cây đàn tui hứa tặng hồi đó
     forbidden_words:
@@ -4671,7 +4671,7 @@ passengers:
   voice:
     region_dialect: nam
     hometown: Sài Gòn
-    pronoun_system: em
+    pronoun_system: tui
     speaking_speed: cham
     catchphrase: tui giúp có một lần thôi
     forbidden_words:
@@ -4715,7 +4715,7 @@ passengers:
   voice:
     region_dialect: bac
     hometown: Hải Dương
-    pronoun_system: em
+    pronoun_system: tôi
     speaking_speed: vua
     catchphrase: thầy giúp con mà con chưa báo đáp được
     forbidden_words:
@@ -4757,7 +4757,7 @@ passengers:
   voice:
     region_dialect: bac
     hometown: Hải Phòng
-    pronoun_system: em
+    pronoun_system: cháu
     speaking_speed: nhanh
     catchphrase: em chỉ muốn mọi người làm hòa thôi
     forbidden_words:

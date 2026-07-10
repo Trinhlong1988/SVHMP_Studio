@@ -6,6 +6,9 @@ So voi baseline (lan dinh danh dau) -> flag moi thay doi.
 """
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
 # Field KHOA — bible/37 story_consistency + Canon Lock (phan bien.txt module 6)
 # Vinh vien KHONG doi: id/ten/gioi/nam sinh/tuoi/que/nghe/giong/cha me/ngay chet/loai chet/noi dau/cau cua mieng
 LOCKED_FIELDS = ('character_id', 'full_name', 'gender', 'date_of_birth',
@@ -107,6 +110,47 @@ def validate_object_state_transition(obj_id: str, state_before: str, state_after
     return issues
 
 
+def _self_check_validate_against_registry():
+    """G2-2 (10/7, per Mr.Long authorization, TASK_AUDIT_HIGH_G2_G8.md): validate_against_
+    registry() truoc day 0 caller - __main__ chi print(), khong sys.exit() theo ket qua, nen
+    g4_world_check.py D4 (goi script nay qua subprocess, chi kiem exit code) LUON PASS du logic
+    co chay hay khong. Ham nay goi THAT validate_against_registry() tren du lieu roster THAT
+    (khong mock) + tu mutate 1 field khoa (gender) -> BAT BUOC phat hien duoc, neu khong tu
+    sys.exit(1) - bien D4 thanh gate THAT (khong chi smoke-test)."""
+    sys.path.insert(0, str(Path(__file__).parent))
+    from character_manager import CharacterRegistry
+    import dataclasses
+
+    reg = CharacterRegistry()
+    real_id = next((c.id for c in reg.all('passenger')), None)
+    if real_id is None:
+        print("[D4 self-check] KHONG tim thay passenger nao trong roster - SKIP (khong co du lieu de kiem)")
+        return
+
+    base = reg.get(real_id)
+    bd = dataclasses.asdict(base)
+    bd.setdefault('character_id', base.id)
+    bd.setdefault('full_name', base.char_name)
+    bd.setdefault('age_group', base.age_range)
+
+    clean_issues = validate_against_registry(reg, real_id, dict(bd))
+    if clean_issues:
+        print(f"[D4 self-check] FAIL: du lieu SACH (khong doi gi) van bi bao issue: {clean_issues}")
+        sys.exit(1)
+
+    mutated = dict(bd)
+    mutated['gender'] = 'nam' if bd.get('gender') != 'nam' else 'nu'
+    mutated_issues = validate_against_registry(reg, real_id, mutated)
+    if not any(i.get('code') == 'LOCKED_FIELD_CHANGED' and i.get('field') == 'gender'
+               for i in mutated_issues):
+        print(f"[D4 self-check] FAIL: doi 'gender' (field khoa) nhung validate_against_registry() "
+              f"KHONG bat duoc - enforcement rong: {mutated_issues}")
+        sys.exit(1)
+
+    print(f"[D4 self-check] PASS: validate_against_registry() tren {real_id} - "
+          f"du lieu sach = 0 issue, gender-mutation = bat duoc dung LOCKED_FIELD_CHANGED")
+
+
 if __name__ == '__main__':
     b = {'character_id': 'PAS_0013', 'full_name': 'Hạ Diệu', 'gender': 'nu',
          'hometown': 'Huế', 'occupation': 'giáo viên', 'age_group': '18-25'}
@@ -114,10 +158,22 @@ if __name__ == '__main__':
     print("changed nghe:", validate_consistency(b, {**b, 'occupation': 'bác sĩ'}))
     print("changed que:", validate_consistency(b, {**b, 'hometown': 'Hà Nội'}))
 
-    eb = {'event_id': 'EVT_001', 'thoi_diem': 'tám năm trước', 'nguyên_nhân': 'tai nạn'}
+    # G2-3 (10/7, per Mr.Long authorization): key dung 'nguyen_nhan' (khong dau) khop
+    # EVENT_LOCKED_FIELDS - truoc day dung 'nguyên_nhân' (co dau) nen nhanh kiem khoa nay
+    # (1/3 EVENT_LOCKED_FIELDS) chua tung thuc su chay trong self-test (lech chinh ta).
+    eb = {'event_id': 'EVT_001', 'thoi_diem': 'tám năm trước', 'nguyen_nhan': 'tai nạn'}
     print("event same:", validate_event_consistency(eb, dict(eb)))
-    print("event changed:", validate_event_consistency(
+    print("event changed thoi_diem:", validate_event_consistency(
         eb, {**eb, 'thoi_diem': 'mười năm trước'}))
+    _changed_nn = validate_event_consistency(eb, {**eb, 'nguyen_nhan': 'oan khuất'})
+    print("event changed nguyen_nhan:", _changed_nn)
+    if not any(i.get('field') == 'nguyen_nhan' for i in _changed_nn):
+        print("[D4 self-check] FAIL: doi 'nguyen_nhan' (event lock field) nhung "
+              "validate_event_consistency() KHONG bat duoc")
+        sys.exit(1)
+
+    _self_check_validate_against_registry()
+    print("=== story_consistency_validator D4 self-check: ALL PASS ===")
 
     print("object jump unexplained:", validate_object_state_transition(
         'OBJ_AO_LEN_NAU', 'rách', 'lành', nearby_text='Cô mặc áo, lành lặn.'))

@@ -318,6 +318,66 @@ def test_catchphrase_distinct_within_same_regret_label_group():
         f"nhau (nghi copy-paste khong ca tinh hoa): {list(dup_groups.keys())}")
 
 
+def test_pronoun_system_not_perfectly_determined_by_region_alone():
+    """G2-7 (10/7, per Mr.Long authorization, TASK_AUDIT_HIGH_G2_G8.md — mirror ky
+    thuat e079d10/G2-1): truoc fix, pronoun_system = PRON[region] (ham THUAN TUY
+    cua region_dialect, dung 3 gia tri co dinh cho ca 139 nguoi, 0 ngoai le). Sau
+    fix: ket hop THEM age_range (bien THAT co san) - moi region co >=2 passenger
+    o >=2 age bucket khac nhau PHAI co >=2 gia tri pronoun_system khac nhau xuat
+    hien - neu ai quay lai cong thuc thuan-region, test nay do ngay."""
+    from collections import defaultdict
+    real = _real_passengers()
+    by_region = defaultdict(set)
+    count_by_region = defaultdict(int)
+    for p in real:
+        region = (p.get('voice') or {}).get('region_dialect')
+        by_region[region].add((p.get('voice') or {}).get('pronoun_system'))
+        count_by_region[region] += 1
+    mono = [r for r, vals in by_region.items() if count_by_region[r] >= 2 and len(vals) == 1]
+    assert not mono, (
+        f"vung sau day co >=2 passenger nhung CHI 1 gia tri pronoun_system "
+        f"(nghi cong thuc thuan-region, khong ca tinh hoa that): {mono}")
+
+
+def test_particles_not_perfectly_determined_by_region_alone():
+    """Doi xung voi test tren, cho particles."""
+    from collections import defaultdict
+    real = _real_passengers()
+    by_region = defaultdict(set)
+    count_by_region = defaultdict(int)
+    for p in real:
+        region = (p.get('voice') or {}).get('region_dialect')
+        parts = tuple((p.get('voice') or {}).get('particles') or [])
+        by_region[region].add(parts)
+        count_by_region[region] += 1
+    mono = [r for r, vals in by_region.items() if count_by_region[r] >= 2 and len(vals) == 1]
+    assert not mono, (
+        f"vung sau day co >=2 passenger nhung CHI 1 gia tri particles "
+        f"(nghi cong thuc thuan-region): {mono}")
+
+
+def test_pronoun_particles_still_valid_per_region_dialect_no_leak():
+    """Xac nhan da dang hoa (2 test tren) KHONG gay dialect-leak - moi gia tri
+    pronoun_system/particles moi PHAI van nam trong tap HOP LE cua chinh region
+    (dialog_voice_validator.py::REGIONS), khong bia tu moi ngoai tap da xac nhan."""
+    sys.path.insert(0, str(SVHMP / 'tools'))
+    import dialog_voice_validator as dvv
+    real = _real_passengers()
+    leaks = []
+    for p in real:
+        voice = p.get('voice') or {}
+        region = voice.get('region_dialect')
+        if region not in dvv.REGIONS:
+            continue
+        pronoun = voice.get('pronoun_system')
+        if pronoun and pronoun not in dvv.REGIONS[region]['pronouns']:
+            leaks.append((p['id'], 'pronoun_system', pronoun, region))
+        for part in (voice.get('particles') or []):
+            if part not in dvv.REGIONS[region]['particles']:
+                leaks.append((p['id'], 'particle', part, region))
+    assert not leaks, f"gia tri KHONG nam trong tap hop le cua region (dialect-leak): {leaks}"
+
+
 def test_mutation_missing_voice_fields_bites():
     p = _mutate(voice={})
     v, w = validate(p, FORBIDDEN)

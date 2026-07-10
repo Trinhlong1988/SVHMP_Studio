@@ -25,7 +25,7 @@ from timeline_check import (  # noqa: E402
     check_arithmetic_consistency_across_episodes, check_cross_episode_M1,
     check_lunar_season_from_files, run as timeline_run)
 from story_consistency_validator import (  # noqa: E402
-    validate_event_consistency, validate_object_state_transition)
+    validate_event_consistency, validate_object_state_transition, validate_against_registry)
 
 BIBLE12 = yaml.safe_load((REPO / 'bible' / '12_object_library.yaml').read_text(encoding='utf-8'))
 OBJECT_CATALOG_IDS = set((BIBLE12.get('object_library') or {}).keys())
@@ -288,3 +288,106 @@ def test_dup_key_loader_used_for_proposal():
     doc = yaml.safe_load((REPO / 'governance' / 'proposals' / 'fact_ledger_schema.yaml')
                          .read_text(encoding='utf-8'))
     assert doc['meta']['status'] == 'PROPOSAL_AWAITING_MR_LONG_SIGNATURE'
+
+
+# ---------- G2-2 (10/7, per Mr.Long authorization) — validate_against_registry() 0-caller fix ----------
+# TASK_AUDIT_HIGH_G2_G8.md: ham DUY NHAT noi CharacterRegistry (roster THAT) voi so sanh
+# baseline - truoc day 0 caller, __main__ chi print() khong sys.exit() theo ket qua nen
+# D4 (subprocess exit-code check trong g4_world_check.py) LUON PASS du logic co chay hay khong.
+
+def test_validate_against_registry_clean_on_real_data():
+    """Goi THAT tren du lieu roster that (khong mock) - profile khong doi -> 0 issue."""
+    sys.path.insert(0, str(REPO / 'tools'))
+    from character_manager import CharacterRegistry
+    import dataclasses
+    reg = CharacterRegistry()
+    real_id = next(c.id for c in reg.all('passenger'))
+    base = reg.get(real_id)
+    bd = dataclasses.asdict(base)
+    bd.setdefault('character_id', base.id)
+    bd.setdefault('full_name', base.char_name)
+    bd.setdefault('age_group', base.age_range)
+    assert validate_against_registry(reg, real_id, dict(bd)) == []
+
+
+def test_validate_against_registry_catches_real_deliberate_violation():
+    """Test hanh vi THAT (khong chi text-grep, khong chi smoke-test) - co y vi pham 1
+    field khoa (gender) tren du lieu roster THAT -> PHAI bi validate_against_registry()
+    bat duoc dung LOCKED_FIELD_CHANGED. Neu ai vo hieu hoa ham (vd return [] luon), test
+    nay se FAIL (khac hien trang truoc fix: 0 caller nen khong ai bat duoc)."""
+    sys.path.insert(0, str(REPO / 'tools'))
+    from character_manager import CharacterRegistry
+    import dataclasses
+    reg = CharacterRegistry()
+    real_id = next(c.id for c in reg.all('passenger'))
+    base = reg.get(real_id)
+    bd = dataclasses.asdict(base)
+    bd.setdefault('character_id', base.id)
+    bd.setdefault('full_name', base.char_name)
+    bd.setdefault('age_group', base.age_range)
+
+    violated = dict(bd)
+    violated['gender'] = 'nam' if bd.get('gender') != 'nam' else 'nu'
+    issues = validate_against_registry(reg, real_id, violated)
+    assert any(i.get('code') == 'LOCKED_FIELD_CHANGED' and i.get('field') == 'gender'
+               for i in issues), f"vi pham field khoa 'gender' KHONG bi bat: {issues}"
+
+
+def test_validate_against_registry_wired_as_real_gate_in_script_exit_code():
+    """G2-2: D4 (g4_world_check.py goi tools/story_consistency_validator.py qua subprocess,
+    chi kiem exit code) PHAI la gate THAT - script tu chay self-check validate_against_
+    registry() tren du lieu that va sys.exit(1) neu khong bat duoc vi pham. Xac nhan script
+    chay THAT (subprocess, dung cach D4 goi) exit 0 tren trang thai code hien tai (dung)."""
+    import subprocess
+    r = subprocess.run([sys.executable, str(REPO / 'tools' / 'story_consistency_validator.py')],
+                        capture_output=True, text=True, cwd=str(REPO), encoding='utf-8')
+    assert r.returncode == 0, r.stdout + r.stderr
+    assert 'D4 self-check' in r.stdout and 'PASS' in r.stdout, (
+        "script khong con chay self-check validate_against_registry() - D4 tro lai smoke-test rong")
+
+
+def test_validate_against_registry_self_check_mutation_proof(monkeypatch):
+    """MUTATION-PROOF: neu ai vo hieu hoa validate_against_registry() (vd sua thanh luon
+    return []), _self_check_validate_against_registry() cua script PHAI tu phat hien va
+    sys.exit(1) - chung minh self-check that su bao ve, khong phai luon PASS vo dieu kien."""
+    import story_consistency_validator as scv
+    monkeypatch.setattr(scv, 'validate_against_registry', lambda reg, cid, current: [])
+    with pytest.raises(SystemExit) as exc_info:
+        scv._self_check_validate_against_registry()
+    assert exc_info.value.code == 1, (
+        "self-check khong bat duoc validate_against_registry() bi vo hieu hoa - enforcement rong")
+
+
+# ---------- G2-3 (10/7, per Mr.Long authorization) — self-test sai key co dau/khong dau ----------
+
+def test_validate_event_consistency_catches_nguyen_nhan_change():
+    """G2-3: EVENT_LOCKED_FIELDS dung 'nguyen_nhan' (khong dau) - self-test cu dung
+    'nguyên_nhân' (co dau) nen nhanh kiem khoa nay (1/3 field) chua tung thuc su chay.
+    Test nay goi THAT voi key dung chinh ta, xac nhan bat duoc thay doi."""
+    eb = {'event_id': 'EVT_001', 'thoi_diem': 'tám năm trước', 'nguyen_nhan': 'tai nạn'}
+    issues = validate_event_consistency(eb, {**eb, 'nguyen_nhan': 'oan khuất'})
+    assert any(i.get('field') == 'nguyen_nhan' for i in issues), (
+        f"doi 'nguyen_nhan' (event lock field) KHONG bi bat: {issues}")
+
+
+def test_enforcement_detects_mutation_wrong_diacritic_key_g2_3():
+    """MUTATION-PROOF: mo phong LAI dung loi cu (dung key co dau 'nguyên_nhân' thay vi
+    'nguyen_nhan') - xac nhan issue KHONG con bi bat (chung minh spelling that su la
+    nguyen nhan, khong phai co van de khac)."""
+    eb_wrong_key = {'event_id': 'EVT_001', 'thoi_diem': 'tám năm trước', 'nguyên_nhân': 'tai nạn'}
+    issues = validate_event_consistency(eb_wrong_key, {**eb_wrong_key, 'nguyên_nhân': 'oan khuất'})
+    assert not any(i.get('field') == 'nguyen_nhan' for i in issues), (
+        "key sai chinh ta (co dau) khong duoc khop EVENT_LOCKED_FIELDS - neu khop nghia la "
+        "EVENT_LOCKED_FIELDS da doi, test nay can xem lai")
+
+
+def test_story_consistency_script_self_check_nguyen_nhan_wired():
+    """Xac nhan script __main__ (chay qua D4 subprocess) THAT SU demo dung key
+    'nguyen_nhan' (khong dau) va tu kiem exit(1) neu khong bat duoc - khong con
+    tro lai loi chinh ta cu."""
+    import subprocess
+    r = subprocess.run([sys.executable, str(REPO / 'tools' / 'story_consistency_validator.py')],
+                        capture_output=True, text=True, cwd=str(REPO), encoding='utf-8')
+    assert r.returncode == 0, r.stdout + r.stderr
+    assert "event changed nguyen_nhan: [{'code': 'EVENT_LOCKED_FIELD_CHANGED'" in r.stdout, (
+        "script khong con demo dung 'nguyen_nhan' (khong dau) - xem lai __main__")
