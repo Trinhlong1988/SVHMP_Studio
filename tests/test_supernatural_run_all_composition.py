@@ -21,7 +21,7 @@ from supernatural_validator import _run_all_body_ok, run_all  # noqa: E402
 
 
 def test_run_all_body_ok_on_real_source():
-    """Static proof tren source THAT: run_all() dang goi du 3/3 sub-check."""
+    """Static proof tren source THAT: run_all() dang goi du 4/4 sub-check."""
     src = (REPO / "tools" / "supernatural_validator.py").read_text(encoding="utf-8")
     ok, detail = _run_all_body_ok(src)
     assert ok, f"run_all() source that dang FAIL check: {detail}"
@@ -44,10 +44,11 @@ def _mutate_remove_call(src, sub_check_call):
     return src.replace(body, mutated_body)
 
 
-_ALL_THREE_SUB_CHECKS = [
+_ALL_SUB_CHECKS = [
     "check_typology()",
     "check_possession_state_machine()",
     "check_no_duplicate_compliance_files()",
+    "check_no_possession_state_machine_regression()",
 ]
 
 
@@ -70,9 +71,7 @@ def test_enforcement_detects_mutation_remove_check_possession_state_machine():
 
 
 def test_enforcement_detects_mutation_remove_check_no_duplicate_compliance_files():
-    """MUTATION-PROOF sub-check #3/3: go 'errs += check_no_duplicate_compliance_files()' -> FAIL.
-    Day la sub-check DE BI QUEN NHAT (cuoi danh sach) - dam bao khong sub-check nao duoc
-    "mien tru" khoi bao ve, dung 3/3 nhu task yeu cau."""
+    """MUTATION-PROOF sub-check #3/4: go 'errs += check_no_duplicate_compliance_files()' -> FAIL."""
     src = (REPO / "tools" / "supernatural_validator.py").read_text(encoding="utf-8")
     mutated = _mutate_remove_call(src, "check_no_duplicate_compliance_files()")
     ok, detail = _run_all_body_ok(mutated)
@@ -80,18 +79,62 @@ def test_enforcement_detects_mutation_remove_check_no_duplicate_compliance_files
     assert "check_no_duplicate_compliance_files" in detail
 
 
-def test_enforcement_detects_mutation_remove_all_three():
-    """MUTATION-PROOF toan phan: go CA 3 dong (mo phong dung kich ban CMD_AUDIT tu mutation
-    song da xac nhan - xoa het 3 sub-check van co the PASS neu khong co test nay) -> FAIL,
-    liet ke du 3/3 sub-check con thieu."""
+def test_enforcement_detects_mutation_remove_check_no_possession_state_machine_regression():
+    """MUTATION-PROOF sub-check #4/4 (G5-1, them 10/7 audit HIGH): go 'errs += check_no_
+    possession_state_machine_regression()' -> check PHAI FAIL. Day la sub-check MOI NHAT/
+    de bi quen nhat (cuoi danh sach) - dam bao khong sub-check nao duoc "mien tru" khoi
+    bao ve, dung 4/4 nhu task yeu cau."""
+    src = (REPO / "tools" / "supernatural_validator.py").read_text(encoding="utf-8")
+    mutated = _mutate_remove_call(src, "check_no_possession_state_machine_regression()")
+    ok, detail = _run_all_body_ok(mutated)
+    assert not ok, f"MUTATION (go check_no_possession_state_machine_regression) khong bi bat: {detail}"
+    assert "check_no_possession_state_machine_regression" in detail
+
+
+def test_enforcement_detects_mutation_remove_all_sub_checks():
+    """MUTATION-PROOF toan phan: go CA 4 dong (mo phong dung kich ban CMD_AUDIT tu mutation
+    song da xac nhan - xoa het sub-check van co the PASS neu khong co test nay) -> FAIL,
+    liet ke du 4/4 sub-check con thieu."""
     src = (REPO / "tools" / "supernatural_validator.py").read_text(encoding="utf-8")
     mutated = src
-    for call in _ALL_THREE_SUB_CHECKS:
+    for call in _ALL_SUB_CHECKS:
         mutated = _mutate_remove_call(mutated, call)
     ok, detail = _run_all_body_ok(mutated)
     assert not ok
-    for call in _ALL_THREE_SUB_CHECKS:
+    for call in _ALL_SUB_CHECKS:
         assert call in detail, f"mutation toan phan nhung detail thieu bao cao {call}: {detail}"
+
+
+def test_check_no_possession_state_machine_regression_real_data_clean():
+    """Reality anchor: tren runtime/supernatural_state_machine.yaml THAT (da dedup 5/7),
+    check moi PHAI tra ve [] (khong con key 'possession_state_machine')."""
+    import supernatural_validator as sv
+    assert sv.check_no_possession_state_machine_regression() == []
+
+
+def test_check_no_possession_state_machine_regression_catches_real_regression_injection():
+    """MUTATION-PROOF hanh vi that (khong chi static body-string): inject lai key
+    'possession_state_machine' vao 1 ban sao du lieu THAT (mo phong dung kich ban tai dien
+    R211 dedup) -> check PHAI bat duoc, du nam o do sau nao trong cay dict."""
+    import supernatural_validator as sv
+    real = sv._load(sv.RUNTIME_STATE_MACHINE_HANDOFF)
+    mutated = dict(real)
+    mutated['possession_state_machine'] = {'entity': 'possession', 'states': ['a'], 'transitions': []}
+    errs = sv.check_no_possession_state_machine_regression(mutated)
+    assert errs, "MUTATION (them lai key possession_state_machine) khong bi bat"
+    assert 'possession_state_machine' in errs[0]
+
+
+def test_check_no_possession_state_machine_regression_catches_nested_injection():
+    """Bien the: key trung xuat hien LONG SAU trong cay (khong chi top-level) - quet de quy
+    phai bat duoc, khong chi kiem tra top-level keys."""
+    import supernatural_validator as sv
+    real = sv._load(sv.RUNTIME_STATE_MACHINE_HANDOFF)
+    mutated = dict(real)
+    mutated['power_level_by_lunar_date'] = dict(mutated.get('power_level_by_lunar_date') or {})
+    mutated['power_level_by_lunar_date']['possession_state_machine'] = {'sneaky': True}
+    errs = sv.check_no_possession_state_machine_regression(mutated)
+    assert errs, "MUTATION (them key long sau trong cay) khong bi bat - quet de quy chua du sau"
 
 
 def test_injection_bad_typology_data_propagates_through_run_all(monkeypatch):

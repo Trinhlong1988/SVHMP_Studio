@@ -19,6 +19,8 @@ Mutation coverage (TASK_G5 "MUTATION AUDIT SE BAN"):
   M3 possession khong truc xuat (treo mai) -> check_possession_state_machine()
   M4 sensitivity ngoai enum BP9 -> check_typology()
   M7 tool tu tao trung bp9_compliance_check.py/content_policy.yaml -> check_no_duplicate_compliance_files()
+  G5-1 (audit HIGH 10/7) key 'possession_state_machine' tai xuat hien trong runtime/
+       supernatural_state_machine.yaml sau khi da dedup 5/7 -> check_no_possession_state_machine_regression()
 M6 (entity_class thieu o nhan vat linh_hon) CHUA enforce trong validator nay: D2 (them
 field entity_class vao bible/37) DA LAM (v2.2 g5_extension, Mr.Long ky 5/7 TASK_G5 D2 -
 comment cu "khong lam trong pham vi CMD_BUILD_3, can RFC rieng" DA LOI THOI, sua 10/7 audit
@@ -37,6 +39,8 @@ STATE_MACHINE = SVHMP / 'governance' / 'blueprint' / 'bp4' / 'state_machines.yam
 POSSESSION_ENTITY = 'ghost'
 CULTURAL_SPEC = SVHMP / 'governance' / 'blueprint' / 'bp7' / 'cultural_spec.yaml'
 CONTENT_POLICY = SVHMP / 'governance' / 'blueprint' / 'bp9' / 'content_policy.yaml'
+RUNTIME_STATE_MACHINE_HANDOFF = SVHMP / 'runtime' / 'supernatural_state_machine.yaml'
+DEDUP_REGRESSION_KEY = 'possession_state_machine'
 
 
 def _load(p):
@@ -157,20 +161,55 @@ def check_no_duplicate_compliance_files():
     return errs
 
 
+def _scan_for_key(node, key, path=""):
+    """De quy tim moi vi tri key xuat hien trong 1 dict/list YAML da parse."""
+    hits = []
+    if isinstance(node, dict):
+        for k, v in node.items():
+            here = f"{path}.{k}" if path else str(k)
+            if k == key:
+                hits.append(here)
+            hits += _scan_for_key(v, key, here)
+    elif isinstance(node, list):
+        for i, item in enumerate(node):
+            hits += _scan_for_key(item, key, f"{path}[{i}]")
+    return hits
+
+
+def check_no_possession_state_machine_regression(handoff=None):
+    """G5-1 (audit HIGH, TASK_AUDIT_HIGH_G2_G8.md): R211 dedup fix (5/7) da XOA key
+    'possession_state_machine' khoi runtime/supernatural_state_machine.yaml, chuyen
+    THANG vao bp4/state_machines.yaml#entity=ghost (xem R211 RECONCILE o dau file)
+    — nhung check_no_duplicate_compliance_files() (M7) CHI chan 2 file khong lien
+    quan (bible/content_policy.yaml, tools/compliance_check.py), KHONG kiem tra
+    file nay con/lai co key trung hay khong. Quet DE QUY toan bo dict tu file
+    handoff, FAIL neu key 'possession_state_machine' TAI XUAT HIEN o bat ky do sau
+    nao (chong tai dien R211 dedup)."""
+    data = handoff if handoff is not None else _load(RUNTIME_STATE_MACHINE_HANDOFF)
+    hits = _scan_for_key(data, DEDUP_REGRESSION_KEY)
+    if hits:
+        return [f"runtime/supernatural_state_machine.yaml: key '{DEDUP_REGRESSION_KEY}' "
+                f"TAI XUAT HIEN tai {hits} (R211 dedup regression - da xoa 5/7 chuyen vao "
+                "bp4/state_machines.yaml#entity=ghost, khong duoc them lai)"]
+    return []
+
+
 def run_all():
     errs = []
     errs += check_typology()
     errs += check_possession_state_machine()
     errs += check_no_duplicate_compliance_files()
+    errs += check_no_possession_state_machine_regression()
     return errs
 
 
 def _run_all_body_ok(src):
     """Pure check TREN SOURCE TEXT (10/7, per Mr.Long authorization - TASK_AUDIT_CRITICAL_
     G3_G5.md Bug #2, CMD_AUDIT phat hien run_all() KHONG co test composition that): body ham
-    run_all() PHAI goi DU CA 3 sub-check (check_typology/check_possession_state_machine/
-    check_no_duplicate_compliance_files) - neu ai vo tinh xoa 1 dong 'errs += check_*()',
-    gate g5_supernatural_check.py van bao PASS tren du lieu sach vi 2 sub-check con lai khong
+    run_all() PHAI goi DU CA 4 sub-check (check_typology/check_possession_state_machine/
+    check_no_duplicate_compliance_files/check_no_possession_state_machine_regression - sub-
+    check thu 4 them 10/7 audit HIGH G5-1) - neu ai vo tinh xoa 1 dong 'errs += check_*()',
+    gate g5_supernatural_check.py van bao PASS tren du lieu sach vi cac sub-check con lai khong
     phat hien loi. Ham nay generalize tu tools/g8_qa_runtime_check.py::_pause_delegation_
     body_ok (mirror pattern: pure check tren source text, dung chung boi gate va mutation-
     proof test, R211 khong viet lai logic tu dau)."""
@@ -179,11 +218,12 @@ def _run_all_body_ok(src):
         return False, "khong tim thay ham run_all() trong supernatural_validator.py"
     body = m.group(0)
     required = ["check_typology()", "check_possession_state_machine()",
-                "check_no_duplicate_compliance_files()"]
+                "check_no_duplicate_compliance_files()",
+                "check_no_possession_state_machine_regression()"]
     missing = [c for c in required if f"errs += {c}" not in body]
     if missing:
         return False, f"run_all() thieu loi goi 'errs += {{sub-check}}()': {missing}"
-    return True, "run_all() goi du 3/3 sub-check (typology/possession/compliance)"
+    return True, "run_all() goi du 4/4 sub-check (typology/possession/compliance/dedup-regression)"
 
 
 if __name__ == '__main__':
