@@ -119,12 +119,10 @@ domains:
     source_of_truth:
       - {path: bible/01_narrative_structure.yaml, status: exists}
     manager:
-      status: planned
-      planned_path: tools/timeline_manager.py
+      path: tools/timeline_check.py
+      status: exists
       owner: timeline
-      reason_not_exists_yet: "Canonical timeline_manager.py chua build. Doi chieu thu tu xuyen-tap hien do tools/timeline_check.py (g4_world locked v1.0, M1 exact-name-match) phuc vu tam; event_ledger_draft.yaml da co draft 50/50 tap. Reconcile timeline<->g4_world domain thuoc Mr.Long (audit ML #10 10/7 - ban cu '100 tap chua render' da loi thoi)."
-      target_milestone: M1_canon_managers
-      blocking_dependency: "event ledger (M1) — timeline can du lieu su kien de doi chieu"
+      note: "G4-2 sync 10/7 (per Mr.Long authorization, TASK_AUDIT_HIGH_G2_G8.md): status planned->exists, tro ve substitute THAT da tren disk + LOCKED (g4_world v1.0, M1 exact-name-match) thay vi khai lao 'planned' voi 1 file thay the da hoat dong. Canonical tools/timeline_manager.py rieng van chua build - reconcile ten domain rieng thuoc Mr.Long ve sau."
     schema:
       status: planned
       planned_path: governance/blueprint/schemas/timeline_schema.yaml
@@ -133,12 +131,10 @@ domains:
       target_milestone: M1_canon_managers
       blocking_dependency: "Mr.Long duyet don vi thoi gian canon (dem/chuyen xe/tap)"
     validator:
-      status: planned
-      planned_path: tools/timeline_validator.py
+      path: tools/timeline_check.py
+      status: exists
       owner: timeline
-      reason_not_exists_yet: "Canonical timeline_validator.py chua build; tools/timeline_check.py (g4_world locked) da lam checker xuyen-tap M1 phuc vu tam. Reconcile domain thuoc Mr.Long (audit ML #10 10/7)."
-      target_milestone: M1_canon_managers
-      blocking_dependency: "timeline schema (M1)"
+      note: "G4-2 sync 10/7 (per Mr.Long authorization): cung 1 file substitute tools/timeline_check.py phuc vu ca vai tro manager lan validator (xem note o manager) - canonical tools/timeline_validator.py rieng van chua build."
     reader: [event, story_planner, generator, qa_runtime]
     writer: [mr_long]
     lifecycle: approved
@@ -452,20 +448,16 @@ domains:
     responsibility: "Su kien tap: incident, cai chet (9 kieu, can bang R210), reveal, hau qua cross-episode — xay ra O DAU (location), TRONG thoi tiet nao (weather), quanh VAT gi (object)."
     non_responsibility: "KHONG dinh nghia luat sieu nhien (supernatural), KHONG xep lich series (timeline/story_planner)."
     source_of_truth:
-      - status: planned
-        planned_path: runtime/memory/event_ledger.yaml
+      - path: runtime/event_ledger_draft.yaml
+        status: exists
         owner: event
-        reason_not_exists_yet: "Canonical append-only runtime/memory/event_ledger.yaml chua chot format. runtime/event_ledger_draft.yaml DA co draft 50/50 tap (tools/event_ledger_miner.py, g4_world locked) - moi la DRAFT, chua phai ledger append-only Mr.Long duyet (audit ML #10 10/7 - ban cu 'chua co tap nao ghi ledger' da loi thoi)."
-        target_milestone: M1_canon_managers
-        blocking_dependency: "event schema (M1) + Mr.Long duyet format append-only"
+        note: "G4-2 sync 10/7 (per Mr.Long authorization, TASK_AUDIT_HIGH_G2_G8.md): status planned->exists, tro ve DRAFT THAT da tren disk (tools/event_ledger_miner.py mine 50/50 tap, g4_world locked). CANH BAO: day CHI la DRAFT dang dung tam, CHUA phai canonical append-only runtime/memory/event_ledger.yaml (format chinh thuc can Mr.Long duyet rieng) - khong duoc coi la ledger cuoi cung da chot."
       - {path: bible/14_comment_trigger_library.yaml, status: exists}
     manager:
-      status: planned
-      planned_path: tools/event_manager.py
+      path: tools/event_ledger_miner.py
+      status: exists
       owner: event
-      reason_not_exists_yet: "Canonical event_manager.py chua build. tools/event_ledger_miner.py (g4_world locked) da mine su kien vao event_ledger_draft.yaml (50/50 tap). Reconcile event<->g4_world domain thuoc Mr.Long (audit ML #10 10/7 - ban cu 'chua co ledger' da loi thoi)."
-      target_milestone: M1_canon_managers
-      blocking_dependency: "event_ledger.yaml (M1)"
+      note: "G4-2 sync 10/7 (per Mr.Long authorization): status planned->exists, tro ve substitute THAT da tren disk + LOCKED (g4_world v1.0) - mine su kien vao event_ledger_draft.yaml (50/50 tap). Canonical tools/event_manager.py rieng van chua build."
     schema:
       status: planned
       planned_path: governance/blueprint/schemas/event_schema.yaml
