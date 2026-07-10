@@ -10,7 +10,9 @@ Session = ten phien (vd CMD_BUILD, G2_EXECUTOR, KIEM_DUYET). Re-claim cung sessi
 --file <path> chi danh cho test (khong dung o che do that).
 """
 import datetime
+import os
 import sys
+import tempfile
 from pathlib import Path
 
 import yaml
@@ -27,8 +29,21 @@ def _load(path):
 
 
 def _save(path, data):
-    Path(path).write_text(yaml.safe_dump(data, allow_unicode=True, sort_keys=True),
-                          encoding='utf-8')
+    # atomic write (tmp cung thu muc + os.replace) — chong corrupt build_claim.yaml khi ghi bi
+    # kill giua chung hoac nhieu CMD session ghi dong thoi (completeness gap #16, per Mr.Long
+    # authorization 10/7). os.replace atomic tren cung filesystem. LUU Y: chi chong TRUNCATE/
+    # half-write, KHONG chong TOCTOU 2-session-cung-claim (can lock rieng -> TECH_DEBT DEBT-016).
+    path = Path(path)
+    text = yaml.safe_dump(data, allow_unicode=True, sort_keys=True)
+    fd, tmp = tempfile.mkstemp(dir=str(path.parent), prefix=path.name + '.', suffix='.tmp')
+    try:
+        with os.fdopen(fd, 'w', encoding='utf-8') as f:
+            f.write(text)
+        os.replace(tmp, path)
+    except BaseException:
+        if os.path.exists(tmp):
+            os.remove(tmp)
+        raise
 
 
 def main(argv):

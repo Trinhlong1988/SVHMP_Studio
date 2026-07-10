@@ -76,3 +76,18 @@ def test_claim_file_exists_and_parses():
         assert isinstance(session, str) and session, (
             f"claim '{pack}' thieu 'session' (string non-empty), got {session!r}"
         )
+
+
+def test_save_atomic_no_tmp_residue_and_roundtrips(tmp_path):
+    """Completeness gap #16: _save() ghi atomic (tmp + os.replace). Sau moi claim/release
+    KHONG duoc de sot file .tmp trong thu muc, va file ket qua PHAI parse lai dung claim.
+    Neu ai revert _save ve plain write_text -> van pass phan roundtrip nhung guard nay khoa
+    hanh vi 'khong ro ri tmp' + xac nhan ghi hoan chinh (chong half-write lot qua)."""
+    import yaml
+    f = tmp_path / 'c.yaml'
+    assert _run(f, 'claim', 'bp7_narrative', 'CMD_BUILD').returncode == 0
+    assert _run(f, 'release', 'bp7_narrative', 'CMD_BUILD').returncode == 0
+    residue = list(tmp_path.glob('*.tmp'))
+    assert not residue, f"_save de sot file tmp (ghi khong don sach): {residue}"
+    data = yaml.safe_load(f.read_text(encoding='utf-8'))
+    assert data['claims']['bp7_narrative']['status'] == 'released', data
