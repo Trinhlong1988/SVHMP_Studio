@@ -30,6 +30,24 @@ def test_reality_build_packet_ep01_no_crash():
     assert packet.get("pending") is not True
 
 
+def test_g6a_1_decision_packet_plan_ref_has_correct_value_not_just_not_none():
+    """G6a-1 (audit HIGH, TASK_AUDIT_HIGH_G2_G8.md): DEBT-007 fix (decision_engine.py
+    doc dung key 'episode_number'/'season_ref' tu story plan that thay vi 'plan.get
+    ("plan_ref")' sai key) duoc claim CLOSED nhung 30/30 test cu chi assert plan_ref
+    IS NOT None (tests/test_g6a_decision_engine.py:159 chi kiem truong hop KHONG co
+    plan). Neu ai revert decision_engine.py ve doc sai key (plan.get("plan_ref") thay
+    vi f-string ep{episode_number}_{season_ref}), packet van co plan_ref (gia tri None
+    tu .get() that bai am tham hoac gia tri rac) ma KHONG test nao bat duoc gia tri SAI.
+    Test nay goi dung duong that (episode_generator.py -> decision_engine.build_packet
+    voi plan=story_plan that cua EP01) va doi chieu GIA TRI CHINH XAC."""
+    import story_planner
+    story_plan = story_planner.build_episode_plan_ep01()
+    packet = eg.build_episode_packet(1)
+    expected = f"ep{story_plan['episode_number']}_{story_plan['season_ref']}"
+    assert packet["decision_packet"]["plan_ref"] == expected, (
+        f"plan_ref sai gia tri: {packet['decision_packet']['plan_ref']!r} != {expected!r}")
+
+
 def test_reality_frontmatter_has_every_schema_field_key():
     """D1 schema khai N field cho episode_frontmatter - packet PHAI co dung tung
     key do (gia tri co the None neu khong the tai chinh thuc, nhung key khong duoc
