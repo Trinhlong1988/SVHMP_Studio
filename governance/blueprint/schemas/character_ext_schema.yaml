@@ -12,6 +12,12 @@
 # AMENDMENT 1 (2026-07-05, per Mr.Long authorization): + facet entity_class, theo
 # TASK_G5_SUPERNATURAL.md D2 — cung co che RFC lane amendment nhu G2 extension, KHONG
 # mo lai facet list dong cho domain khac, CHI them 1 facet moi vao character.
+# TU CHINH 2026-07-10 (per Mr.Long authorization, DEBT-011 + G5-3 TASK_AUDIT_HIGH_
+# G2_G8.md, dong bo voi bible/37 v2.2 da doi field): facet entity_class doi tham
+# chieu alive_status/ghost -> life_status/linh_hon (khop DUNG field/enum THAT trong
+# runtime/passenger_roster_100.yaml, khong doi cau truc/facet_id/values khac).
+# validate_entity_class_life_status() nay DA thuc thi that trong story_consistency_
+# validator.py (truoc do dong "doi chieu 2 chieu, lech = FAIL" la claim chua co ham).
 # =====================================================================
 
 meta:
@@ -92,12 +98,13 @@ entity_class:
   field:
     entity_class: {type: enum, values: [nguoi, linh_hon, thuc_the_sieu_nhien, nhan_vat_lich_su],
                    required: false, default: nguoi,
-                   desc: "nguoi = con song binh thuong; linh_hon = vong/ma (map alive_status=ghost);
+                   desc: "nguoi = con song binh thuong; linh_hon = vong/ma (map life_status=linh_hon);
                          thuc_the_sieu_nhien = thuc the co quyen nang rieng (KHONG phai vong nguoi
                          chet); nhan_vat_lich_su = nhan vat co that lich su (du phong da an HSV,
                          KHONG dung cho HDK hien tai)"}
-  invariant: "entity_class=linh_hon PHAI khop alive_status=ghost (tier_1_mandatory.core_id) —
-             validator: story_consistency_validator.py doi chieu 2 chieu, lech = FAIL"
+  invariant: "entity_class=linh_hon PHAI khop life_status=linh_hon (tier_1_mandatory.core_id) —
+             validator: story_consistency_validator.py doi chieu 2 chieu, lech = FAIL (G5-3 10/7:
+             thuc thi that qua validate_entity_class_life_status(), truoc do la claim chua co ham)"
   reconcile: "KHONG tu dinh nghia quyen nang/gioi han o day — entity_class CHI la nhan phan loai,
              chi tiet typology doc tu governance/proposals/supernatural_typology_proposal.yaml (G5)"
 

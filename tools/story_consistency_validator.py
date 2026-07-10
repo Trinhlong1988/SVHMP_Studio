@@ -110,6 +110,79 @@ def validate_object_state_transition(obj_id: str, state_before: str, state_after
     return issues
 
 
+# ============================================================
+# G5-3 (10/7, per Mr.Long authorization, TASK_AUDIT_HIGH_G2_G8.md) — thuc thi that
+# cam ket DA KY trong governance/blueprint/schemas/character_ext_schema.yaml:99
+# ("validator: story_consistency_validator.py doi chieu 2 chieu, lech = FAIL") va
+# bible/37_character_schema.yaml:126 ("entity_class=linh_hon PHAI khop life_status=
+# linh_hon", da doi ten tu alive_status theo DEBT-011). Truoc do KHONG co ham nao
+# lam viec nay - claim gia, chi la text mo ta trong schema.
+# ============================================================
+ENTITY_CLASS_DEFAULT = 'nguoi'      # bible/37 g5_extension.entity_class.default
+ENTITY_CLASS_LINH_HON = 'linh_hon'
+LIFE_STATUS_LINH_HON = 'linh_hon'   # bible/37 tier_1_mandatory.core_id life_status (DEBT-011)
+
+
+def validate_entity_class_life_status(passengers: list) -> list:
+    """Doi chieu 2 CHIEU dung loi hua da ky: entity_class=linh_hon <-> life_status=
+    linh_hon. Field entity_class vang mat dung DUNG default cua schema ('nguoi').
+
+    passengers: list dict THO tu runtime/passenger_roster_100.yaml['passengers']
+    (doc THANG, KHONG qua CharacterRegistry/CharacterProfile - entity_class CHUA
+    duoc khai lam dataclass field trong tools/character_manager.py nen se bi loc
+    mat neu di qua do; tranh dung cham character_manager.py ngoai pham vi duoc
+    giao boi G5-3, chi sua story_consistency_validator.py nhu task yeu cau)."""
+    issues = []
+    for p in passengers:
+        entity_class = p.get('entity_class') or ENTITY_CLASS_DEFAULT
+        life_status = p.get('life_status', '')
+        ec_linh_hon = entity_class == ENTITY_CLASS_LINH_HON
+        ls_linh_hon = life_status == LIFE_STATUS_LINH_HON
+        if ec_linh_hon != ls_linh_hon:
+            issues.append({'code': 'ENTITY_CLASS_LIFE_STATUS_MISMATCH', 'id': p.get('id', '?'),
+                           'entity_class': entity_class, 'life_status': life_status})
+    return issues
+
+
+def _self_check_entity_class_life_status():
+    """Mutation-proof tren du lieu TONG HOP (khong dung real roster de quyet PASS/
+    FAIL dieu kien code - 47/139 passenger THAT co life_status=linh_hon nhung 0/139
+    khai entity_class=linh_hon (field moi tu G5 extension 5/7 chua duoc backfill,
+    xem governance/TECH_DEBT.md DEBT-016) - day la khoang trong DATA co san, KHONG
+    phai loi CODE moi, nen KHONG duoc lam self-check nay tu sys.exit(1))."""
+    clean = [{'id': 'PAS_TEST1', 'entity_class': 'nguoi', 'life_status': 'song'},
+             {'id': 'PAS_TEST2', 'entity_class': 'linh_hon', 'life_status': 'linh_hon'}]
+    clean_issues = validate_entity_class_life_status(clean)
+    if clean_issues:
+        print(f"[G5-3 self-check] FAIL: du lieu tong hop SACH van bi bao issue: {clean_issues}")
+        sys.exit(1)
+
+    mismatched = [{'id': 'PAS_TEST3', 'entity_class': 'linh_hon', 'life_status': 'song'}]
+    mismatched_issues = validate_entity_class_life_status(mismatched)
+    if not any(i.get('code') == 'ENTITY_CLASS_LIFE_STATUS_MISMATCH' for i in mismatched_issues):
+        print(f"[G5-3 self-check] FAIL: entity_class=linh_hon + life_status=song (lech ro rang) "
+              f"KHONG bi bat: {mismatched_issues}")
+        sys.exit(1)
+
+    reverse_mismatched = [{'id': 'PAS_TEST4', 'entity_class': 'nguoi', 'life_status': 'linh_hon'}]
+    reverse_issues = validate_entity_class_life_status(reverse_mismatched)
+    if not any(i.get('code') == 'ENTITY_CLASS_LIFE_STATUS_MISMATCH' for i in reverse_issues):
+        print(f"[G5-3 self-check] FAIL: life_status=linh_hon + entity_class=nguoi (lech CHIEU "
+              f"NGUOC, dung tinh than '2 chieu' da ky) KHONG bi bat: {reverse_issues}")
+        sys.exit(1)
+
+    print("[G5-3 self-check] PASS: validate_entity_class_life_status() bat dung ca 2 "
+          "chieu lech tren du lieu tong hop")
+
+    import yaml
+    roster_path = Path(__file__).resolve().parent.parent / 'runtime' / 'passenger_roster_100.yaml'
+    real = yaml.safe_load(roster_path.read_text(encoding='utf-8')) or {}
+    real_issues = validate_entity_class_life_status(real.get('passengers', []))
+    print(f"[G5-3 real-data report] {len(real_issues)} passenger co entity_class/life_status "
+          "lech tren roster THAT (KHONG chan build - khoang trong BACKFILL DATA da biet tu "
+          "G5 extension 5/7, xem governance/TECH_DEBT.md DEBT-016, KHONG phai loi code moi)")
+
+
 def _self_check_validate_against_registry():
     """G2-2 (10/7, per Mr.Long authorization, TASK_AUDIT_HIGH_G2_G8.md): validate_against_
     registry() truoc day 0 caller - __main__ chi print(), khong sys.exit() theo ket qua, nen
@@ -173,6 +246,7 @@ if __name__ == '__main__':
         sys.exit(1)
 
     _self_check_validate_against_registry()
+    _self_check_entity_class_life_status()
     print("=== story_consistency_validator D4 self-check: ALL PASS ===")
 
     print("object jump unexplained:", validate_object_state_transition(

@@ -25,7 +25,8 @@ from timeline_check import (  # noqa: E402
     check_arithmetic_consistency_across_episodes, check_cross_episode_M1,
     check_lunar_season_from_files, run as timeline_run)
 from story_consistency_validator import (  # noqa: E402
-    validate_event_consistency, validate_object_state_transition, validate_against_registry)
+    validate_event_consistency, validate_object_state_transition, validate_against_registry,
+    validate_entity_class_life_status)
 
 BIBLE12 = yaml.safe_load((REPO / 'bible' / '12_object_library.yaml').read_text(encoding='utf-8'))
 OBJECT_CATALOG_IDS = set((BIBLE12.get('object_library') or {}).keys())
@@ -383,6 +384,81 @@ def test_validate_against_registry_self_check_mutation_proof(monkeypatch):
         scv._self_check_validate_against_registry()
     assert exc_info.value.code == 1, (
         "self-check khong bat duoc validate_against_registry() bi vo hieu hoa - enforcement rong")
+
+
+# ---------- G5-3 (10/7, per Mr.Long authorization, TASK_AUDIT_HIGH_G2_G8.md) ----------
+# character_ext_schema.yaml:99 (SIGNED) claim "validator: story_consistency_validator.py
+# doi chieu 2 chieu, lech = FAIL" - truoc do KHONG co ham nao thuc thi dieu nay.
+
+def test_g5_3_entity_class_life_status_clean_data_no_issue():
+    passengers = [{'id': 'PAS_A', 'entity_class': 'nguoi', 'life_status': 'song'},
+                  {'id': 'PAS_B', 'entity_class': 'linh_hon', 'life_status': 'linh_hon'},
+                  {'id': 'PAS_C', 'life_status': 'song'}]   # entity_class vang -> default 'nguoi', khop
+    assert validate_entity_class_life_status(passengers) == []
+
+
+def test_g5_3_entity_class_life_status_catches_forward_mismatch():
+    """entity_class=linh_hon nhung life_status KHONG phai linh_hon (bible/37 invariant
+    literal, chieu duoc viet ro rang trong bible)."""
+    passengers = [{'id': 'PAS_X', 'entity_class': 'linh_hon', 'life_status': 'song'}]
+    issues = validate_entity_class_life_status(passengers)
+    assert len(issues) == 1
+    assert issues[0]['code'] == 'ENTITY_CLASS_LIFE_STATUS_MISMATCH'
+    assert issues[0]['id'] == 'PAS_X'
+
+
+def test_g5_3_entity_class_life_status_catches_reverse_mismatch():
+    """life_status=linh_hon nhung entity_class KHONG phai linh_hon (dung tinh than
+    '2 chieu' da ky trong character_ext_schema.yaml:99)."""
+    passengers = [{'id': 'PAS_Y', 'entity_class': 'nguoi', 'life_status': 'linh_hon'}]
+    issues = validate_entity_class_life_status(passengers)
+    assert len(issues) == 1
+    assert issues[0]['code'] == 'ENTITY_CLASS_LIFE_STATUS_MISMATCH'
+    assert issues[0]['id'] == 'PAS_Y'
+
+
+def test_g5_3_entity_class_life_status_missing_field_defaults_nguoi_not_fabricated():
+    """entity_class vang mat PHAI dung DUNG default cua schema ('nguoi', bible/37
+    g5_extension.entity_class.default) - khong duoc tu bia gia tri khac."""
+    import story_consistency_validator as scv
+    assert scv.ENTITY_CLASS_DEFAULT == 'nguoi'
+    passengers = [{'id': 'PAS_Z', 'life_status': 'linh_hon'}]   # entity_class vang -> 'nguoi' -> lech
+    issues = validate_entity_class_life_status(passengers)
+    assert len(issues) == 1, "entity_class vang phai default='nguoi', khop life_status='linh_hon' -> LECH, phai bat"
+
+
+def test_g5_3_self_check_pass_on_synthetic_and_reports_real_data_honestly(capsys):
+    """Reality anchor: self-check chay tren du lieu tong hop PHAI PASS (khong sys.exit),
+    VA phai bao cao trung thuc so passenger THAT tren roster co entity_class/life_status
+    lech (KHONG duoc dau lech that di de 'PASS gia') - hien tai 47/139 (backfill gap tu
+    G5 extension 5/7, xem governance/TECH_DEBT.md DEBT-016, KHONG phai loi code)."""
+    import story_consistency_validator as scv
+    scv._self_check_entity_class_life_status()   # khong duoc raise SystemExit
+    out = capsys.readouterr().out
+    assert "47 passenger" in out, (
+        "self-check khong bao cao dung so luong mismatch THAT tren roster - "
+        "kiem tra lai roster co thay doi hay ham bi hong")
+
+
+def test_g5_3_self_check_mutation_proof_forward(monkeypatch):
+    """MUTATION-PROOF: neu validate_entity_class_life_status() bi vo hieu hoa (luon
+    tra ve []), self-check PHAI tu phat hien va sys.exit(1)."""
+    import story_consistency_validator as scv
+    monkeypatch.setattr(scv, 'validate_entity_class_life_status', lambda passengers: [])
+    with pytest.raises(SystemExit) as exc_info:
+        scv._self_check_entity_class_life_status()
+    assert exc_info.value.code == 1, (
+        "self-check khong bat duoc validate_entity_class_life_status() bi vo hieu hoa")
+
+
+def test_g5_3_gate_wired_d4_pass_on_real_data():
+    """g4_world_check.py D4_story_consistency stage van PHAI PASS (exit 0) tren du lieu
+    that, du co 47 real-data mismatch (report-only, khong chan build)."""
+    import subprocess
+    r = subprocess.run([sys.executable, str(REPO / "tools" / "story_consistency_validator.py")],
+                       capture_output=True, text=True, encoding="utf-8")
+    assert r.returncode == 0, r.stdout + r.stderr
+    assert "G5-3" in r.stdout
 
 
 # ---------- G2-3 (10/7, per Mr.Long authorization) — self-test sai key co dau/khong dau ----------

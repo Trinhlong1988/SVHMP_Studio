@@ -21,11 +21,13 @@ Mutation coverage (TASK_G5 "MUTATION AUDIT SE BAN"):
   M7 tool tu tao trung bp9_compliance_check.py/content_policy.yaml -> check_no_duplicate_compliance_files()
   G5-1 (audit HIGH 10/7) key 'possession_state_machine' tai xuat hien trong runtime/
        supernatural_state_machine.yaml sau khi da dedup 5/7 -> check_no_possession_state_machine_regression()
-M6 (entity_class thieu o nhan vat linh_hon) CHUA enforce trong validator nay: D2 (them
-field entity_class vao bible/37) DA LAM (v2.2 g5_extension, Mr.Long ky 5/7 TASK_G5 D2 -
-comment cu "khong lam trong pham vi CMD_BUILD_3, can RFC rieng" DA LOI THOI, sua 10/7 audit
-MEDIUM/LOW #12). Enforce M6 con vuong DEBT-011: invariant bible/37 dua tren field alive_status
-nhung roster dung life_status khac ten (cho Mr.Long chot huong) — ghi ro ROADMAP, khong bia.
+M6 (entity_class thieu o nhan vat linh_hon) KHONG enforce trong validator nay (do la
+tools/story_consistency_validator.py::validate_entity_class_life_status(), G5-3 10/7
+TASK_AUDIT_HIGH_G2_G8.md — DEBT-011 da CLOSED 10/7, bible/37 doi field alive_status
+-> life_status khop dung roster THAT): D2 (them field entity_class vao bible/37) DA LAM
+(v2.2 g5_extension, Mr.Long ky 5/7 TASK_G5 D2). Reconcile: KHONG viet lai enforcement
+trung o day, xem story_consistency_validator.py._self_check_entity_class_life_status()
+cho real-data report (47/139 backfill gap, xem governance/TECH_DEBT.md DEBT-016).
 """
 import re
 import sys
