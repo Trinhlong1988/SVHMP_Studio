@@ -4,6 +4,10 @@ claims:
     released_at: '2026-07-10T09:13:35'
     session: CMD_BUILD
     status: released
+  audit_high_g8:
+    claimed_at: '2026-07-10T09:44:31'
+    session: CMD_BUILD_2
+    status: active
   bible_dupkey_r110_141:
     claimed_at: '2026-07-05T16:06:30'
     released_at: '2026-07-05T16:16:46'
@@ -83,6 +87,11 @@ claims:
     claimed_at: '2026-07-04T23:57:55'
     released_at: '2026-07-05T00:19:45'
     session: CMD_BUILD_3
+    status: released
+  g5_wire_run_all_check:
+    claimed_at: '2026-07-10T09:38:40'
+    released_at: '2026-07-10T10:16:33'
+    session: CMD_BUILD
     status: released
   g6_story_planner:
     claimed_at: '2026-07-05T17:42:03'
