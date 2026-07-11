@@ -52,19 +52,19 @@ arc_design_compliant: bible/21 R33-R42 + R41 hook
 
 [pause:800ms]
 
-Trời đã về đêm. Tháng tư miền Trung. Gió biển nhẹ qua hàng dừa ven sông Côn. Chuyến xe đêm chạy qua đoạn đường ven sông sông Côn, Bình Định. Đèn pha quét lên hàng cây.
+Trời đã về đêm. Tháng tư miền Trung. Gió biển nhẹ qua hàng dừa ven sông Côn. Chuyến xe đêm chạy qua đoạn đường ven sông sông Côn, Bình Định đó. Đèn pha quét lên hàng cây.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi mốt — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — bốn mươi vật. Đêm qua thêm mảnh giấy can chữ ký Hạ Vy và Hải năm 2018.
+Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi mốt — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — bốn mươi vật rồi. Đêm qua thêm mảnh giấy can chữ ký Hạ Vy và Hải năm 2018.
 
 Bác tài lái. Phase mới — sau half-series mark EP40 — không có gì khác hẳn — nhưng Khải Phong cảm thấy chuyến xe đặc hơn.
 
 Mặt sông Côn phía bên phải — phẳng — đèn xa thưa.
 
-Xe chậm lại trước một bệnh viện huyện xưa — biển "Bệnh viện đa khoa An Nhơn" — cổng đã đóng — đèn vàng treo cột tre. Một phụ nữ đứng đợi bên cổng. Khoảng ba mươi hai tuổi. Áo dạ xám — quần tây đen. Tay phải cầm điện thoại Iphone xưa — màn hình tối đen.
+Xe chậm lại trước một bệnh viện huyện xưa — biển "Bệnh viện đa khoa An Nhơn" — cổng đã đóng — đèn vàng treo cột tre. Một phụ nữ đứng đợi bên cổng đó. Tuổi khoảng ba mươi hai. Áo dạ xám — quần tây đen. Tay phải cầm điện thoại Iphone xưa — màn hình tối đen.
 
-Cô gái khẽ lên bậc xe. Đi đến hàng ghế giữa — chân chậm lại. Ngồi xuống ghế thứ sáu.
+Cô gái khẽ lên bậc xe. Đi đến hàng ghế giữa — chân chậm lại dần. Ngồi xuống ghế thứ sáu.
 
-Mở điện. Bật nguồn. Màn hình sáng — hiển thị app tin — một tin dở chưa gửi.
+Mở điện lên. Bật nguồn. Màn hình sáng — hiển thị app tin — một tin dở chưa gửi đi.
 
 Xe lăn bánh.
 
@@ -74,19 +74,19 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Cô gái khẽ ngồi yên lặng. Vuốt màn hình điện. Đầu ngón tay cô dừng ở khung soạn tin — như đang đọc lại tin chưa gửi.
+Cô gái khẽ ngồi yên, không nói gì. Vuốt màn hình điện đó. Đầu ngón tay cô dừng ở khung soạn tin — như đang đọc lại tin chưa gửi đi.
 
 Khải Phong quan sát từ ghế ba. Cô ba lăm hai — mặt buồn — mắt sâu — vẻ người vừa qua biến cố lớn.
 
-Điện thoại cô — Khải Phong nhìn ra — Iphone đời xưa — đời 7 hoặc 8. Màn hình hiển thị tin dở — chữ Việt — không gửi.
+Điện thoại cô — Khải Phong nhìn ra — Iphone đời xưa — đời 7 hoặc 8. Màn hình hiển thị tin dở — chữ Việt — không gửi đi.
 
-Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng — tắt.
+Ông cụ ghế đầu vặn radio. Lạo xạo hoài. "...quê nhà..." vọng — tắt.
 
 [pause:500ms]
 
 Bác tài liếc gương. Không nói.
 
-Cô vuốt nhẹ màn hình — không bấm gửi — chỉ đọc.
+Cô vuốt nhẹ màn hình — không bấm gửi — chỉ đọc thôi.
 
 ---
 
@@ -96,13 +96,13 @@ Cô vuốt nhẹ màn hình — không bấm gửi — chỉ đọc.
 
 Xe đi qua xóm xưa. Phía bên phải — căn nhà gạch nhỏ — sân nhỏ — cửa khép. Đèn dầu trong nhà còn sáng yếu.
 
-Cạnh cửa sổ — bóng cô gái trẻ chừng mười tám tuổi đứng — mặt xanh xao — tay cầm điện — đang gõ tin. Cô không quay đầu lại.
+Cạnh cửa sổ — bóng cô gái trẻ chừng mười tám tuổi đứng — mặt xanh xao — tay cầm điện — đang gõ tin. Cô không quay đầu nhìn.
 
 Cô ghế sáu nhìn về phía đó. Lệ ngấn.
 
 "Linh..."
 
-Cô gái nói rất nhỏ nhẹ.
+Cô gái nói rất nhỏ nhẹ, gần như thì thầm.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
@@ -110,7 +110,7 @@ Cô gái nói rất nhỏ nhẹ.
 
 Xe đi qua đó. Nhà gạch khuất.
 
-Cô gái khẽ quay đầu lại. Vuốt màn hình.
+Cô gái khẽ quay đầu lại nhìn. Vuốt màn hình.
 
 ---
 
@@ -120,7 +120,7 @@ Cô gái khẽ quay đầu lại. Vuốt màn hình.
 
 "Em là Nhụy Lài. Ba mươi hai tuổi. Em ở An Nhơn — Bình Định — quê. Em làm giáo viên cấp hai."
 
-Giọng cô đều — chậm.
+Giọng cô đều — chậm hơn.
 
 "Con gái em — Linh — mất tám tháng trước. Mười tám tuổi. Bệnh tim bẩm sinh phát hiện muộn — phải phẫu thuật cấp cứu — biến chứng — không qua ở đó."
 
@@ -172,7 +172,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Nhụy Lài gật. Lệ rơi xuống màn hình.
+Nhụy Lài gật đầu. Lệ rơi xuống màn hình.
 
 "Em nhớ. Cô con gái không kịp gửi tin nhắn 'mẹ ơi em yêu mẹ' — em đi với tin chưa gửi. Em đã đọc tin tám tháng — em đã nhận. Bây giờ em trao điện thoại — em giữ ảnh — em sống tiếp."
 
@@ -186,13 +186,13 @@ Nhụy Lài gật. Lệ rơi xuống màn hình.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Bình Định — cây dừa cổ — bến không tên. Chuông xe ngân. Một tiếng. Tan.
+Xe chậm lại rồi. Ngã ba Bình Định — cây dừa cổ — bến không tên. Chuông xe ngân. Một tiếng. Tan.
 
-Nhụy Lài cất điện thoại vào túi. Đứng dậy.
+Nhụy Lài cất điện thoại vào túi. Đứng dậy ngay.
 
 "Chào anh."
 
-Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển.
+Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển gì.
 
 Bác tài: "Chưa tới lúc."
 
@@ -202,11 +202,11 @@ Cô gái bước xuống dưới đường.
 
 Bên ngoài — Nhụy Lài đi vào bệnh viện đa khoa An Nhơn. Khoa nhi — đèn còn sáng lên. Y tá trực đêm đón cô.
 
-Cô gái đã đến nơi đó. Đưa điện thoại — giải thích — y tá nhận. Cô quỳ trước bàn khoa nhi. Cúi đầu.
+Cô gái đã đến nơi đó. Đưa điện thoại — giải thích — y tá nhận lấy. Cô quỳ trước bàn khoa nhi. Cúi đầu.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ. Bên cô — Linh xuất hiện — cô gái mười tám áo trắng học sinh — vuốt vai mẹ. Mỉm cười.
+Khải Phong chớp mắt — nhìn qua cửa sổ xe. Bên cô — Linh xuất hiện — cô gái mười tám áo trắng học sinh — vuốt vai mẹ mình. Mỉm cười.
 
-Khải Phong chớp lần nữa. Người tên Linh tan ra.
+Khải Phong lại chớp mắt. Người tên Linh tan ra.
 
 Nhụy Lài ngẩng đầu. Đi ra ngoài.
 
@@ -216,9 +216,9 @@ Nhụy Lài ngẩng đầu. Đi ra ngoài.
 
 # CLIFFHANGER [section 6]
 
-Xe lăn bánh — rời ngã ba Bình Định.
+Xe lăn bánh — rời ngã ba Bình Định rồi.
 
-Ghế sáu trống. Trên sàn — một mảnh nhỏ dây sạc điện thoại rơi. Khải Phong nhặt. Mảnh dây trắng nhỏ.
+Ghế sáu trống. Trên sàn — một mảnh nhỏ dây sạc điện thoại rơi. Khải Phong nhặt lên. Mảnh dây trắng nhỏ xíu.
 
 Bỏ vào túi. Vật thứ bốn mươi mốt.
 
@@ -236,17 +236,17 @@ Hình ảnh — điện thoại Khải Phong tám năm trước — đêm Hạ V
 
 [pause:1500ms]
 
-Nhưng — Khải Phong cố nhớ — Hạ Vy có nhắn gì sau đó? Trước khi tai nạn — chừng tám giờ rưỡi tối — có tin nhắn nào nữa?
+Nhưng — Khải Phong cố nhớ — Hạ Vy có nhắn gì sau đó? Trước khi tai nạn — chừng tám giờ rưỡi tối — có tin nhắn nào nữa không?
 
-Khải Phong cố nhớ. Hình ảnh — điện thoại Hạ Vy — sau khi anh đi — bệnh viện trả lại Khải Phong. Khải Phong mở. Có một tin nhắn dở chưa gửi.
+Khải Phong cố nhớ. Hình ảnh — điện thoại Hạ Vy — sau khi anh đi — bệnh viện trả lại Khải Phong. Khải Phong mở ra. Có một tin nhắn dở chưa gửi đi.
 
 Tin dở viết: "Anh ơi em yêu" — ba từ. Em ấy ấy chưa viết tiếp. Em đang gõ trên xe máy — em va chạm — em không kịp viết "anh" cuối.
 
 Khải Phong nhói. Hạ Vy nhắn ba từ chưa kịp gửi — như con gái Nhụy Lài.
 
-Bác tài liếc gương. "Vào đêm bốn mươi mốt. Con đã nhớ tin nhắn dở Hạ Vy — ba từ. Đêm sau con sẽ nhớ — em đã giữ điện thoại Hạ Vy tám năm hay đã trả em. Đừng vội."
+Bác tài liếc gương. "Vào đêm bốn mươi mốt. Con đã nhớ tin nhắn dở Hạ Vy — ba từ. Đêm sau con sẽ nhớ — em đã giữ điện thoại Hạ Vy tám năm hay đã trả em. Đừng vội nhé."
 
-Khải Phong gật. Lệ rơi xuống dưới.
+Khải Phong gật đầu. Lệ rơi xuống dưới.
 
 Đêm thứ bốn mươi mốt — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Bình Định khuất. Nhụy Lài ở lại khoa nhi — điện thoại trên bàn.
 
@@ -254,15 +254,15 @@ Khải Phong nhìn ra cửa sổ — đường khuya vắng tanh. Hạ Vy chỉ 
 
 Khải Phong cố nhớ — anh đọc tin dở đêm Bạch Mai. Bóng người ấy đứng ngoài phòng cấp cứu — anh mở điện thoại Hạ Vy — anh thấy tin. Hình ảnh người đàn ông không khóc lúc đọc — anh sốc — anh chỉ nhìn ba từ — không phản ứng.
 
-Sau tang anh — anh trả điện thoại bố mẹ anh — anh đem cùng quần áo anh. Khải Phong không chụp ảnh tin — anh không nghĩ đến. Anh đã có ký ức — anh không cần ảnh.
+Sau tang anh — anh trả điện thoại bố mẹ anh — anh đem cùng quần áo anh. Khải Phong không chụp ảnh tin — anh không nghĩ đến. Anh đã có ký ức — anh không cần ảnh gì.
 
-Tám năm — Khải Phong nhớ ba từ. Không cần ảnh. Ký ức đủ.
+Tám năm — Khải Phong nhớ ba từ. Không cần ảnh gì. Ký ức đủ rồi.
 
-Khải Phong cố giữ ba từ trong đầu. Đêm thứ bốn mươi mốt — Khải Phong đếm thêm. Còn bốn mươi chín đêm nữa. Bốn mươi chín đêm để Khải Phong nhớ thêm điều gì.
+Khải Phong cố giữ ba từ trong đầu. Đêm thứ bốn mươi mốt — Khải Phong đếm thêm. Còn bốn mươi chín đêm nữa thôi. Bốn mươi chín đêm để Khải Phong nhớ thêm điều gì.
 
-Khải Phong nhìn ra cửa sổ — Bình Định khuất. Nhụy Lài có con gái không kịp gửi tin. Khải Phong có Hạ Vy không kịp gửi tin. Hai câu chuyện song song — hai mất mát qua tin nhắn ba từ. Một mẹ-con — một anh-anh. Mất khác nhau — nhưng cùng cảm giác chưa kịp.
+Khải Phong nhìn ra cửa sổ — Bình Định khuất. Nhụy Lài có con gái không kịp gửi tin. Khải Phong có Hạ Vy không kịp gửi tin. Hai câu chuyện song song — hai mất mát qua tin nhắn ba từ. Một mẹ-con — một anh-anh. Mất khác nhau — nhưng cùng cảm giác chưa kịp thôi.
 
-Khải Phong cố nhớ — sau Hạ Vy mất anh có viết tin nào không kịp gửi cho anh không. Cảm giác — có. Anh có một tin dở trong điện thoại anh năm thứ ba sau Hạ Vy đi — anh viết: "Anh ơi anh nhớ em." Em viết — không có ai để gửi. Người con gái xóa.
+Khải Phong cố nhớ — sau Hạ Vy mất anh có viết tin nào không kịp gửi cho anh không. Cảm giác — có. Anh có một tin dở trong điện thoại anh năm thứ ba sau Hạ Vy đi — anh viết: "Anh ơi anh nhớ em." Em viết — không có ai để gửi đi. Người con gái xóa.
 
 Em ấy đã mất Hạ Vy. Nhụy Lài mất Linh. Hai người trên xe đêm nay — chia sẻ cảm giác qua hai câu chuyện riêng.
 
