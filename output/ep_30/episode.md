@@ -12,17 +12,21 @@ Tác giả: Hắc Dạ Ký.
 
 [pause:600ms]
 
-Series: Chuyến xe cuối cùng về đâu.
+Loạt truyện: Chuyến xe cuối cùng về đâu.
 
 [pause:600ms]
 
-Ai cũng có một chuyến xe chưa nói lời tạm biệt.
+Ai cũng có một chuyến xe chưa kịp nói lời tạm biệt với người mình thương.
 
 [pause:1000ms]
 
 Tập 30 — câu chuyện đêm nay.
 
 [pause:1500ms]
+
+Câu chuyện hoàn toàn hư cấu; mọi nhân vật và phong tục trong truyện không có thật ngoài đời, không nhằm hướng dẫn làm theo.
+
+[pause:1200ms]
 
 ---
 
