@@ -12,17 +12,21 @@ Tác giả: Hắc Dạ Ký.
 
 [pause:600ms]
 
-Series: Chuyến xe cuối cùng về đâu.
+Loạt truyện: Chuyến xe cuối cùng về đâu.
 
 [pause:600ms]
 
-Ai cũng có một chuyến xe chưa nói lời tạm biệt.
+Ai cũng có một chuyến xe chưa kịp nói lời tạm biệt với người mình thương.
 
 [pause:1000ms]
 
 Tập 28, [pause:250ms] câu chuyện đêm nay.
 
 [pause:1500ms]
+
+Truyện hư cấu; tôn giáo trong truyện được thể hiện với sự tôn trọng, các tình tiết không có thật và không khuyến khích thực hành theo.
+
+[pause:1200ms]
 
 ---
 
@@ -35,7 +39,7 @@ intensity_level: 0.55
 quang_memory_fragment: M6 (Khải Phong nhớ Hạ Vy nói chuyện cưới chiều hôm cuối)
 object_sub_arc: ngoài cluster temporal
 callback_target: none
-passenger_main: nam 55 Hữu Lộc Hà Tĩnh (ly hôn vợ 30 năm trước, [pause:250ms] vợ vừa mất)
+passenger_main: nam 55 Đàn Luân Hà Tĩnh (ly hôn vợ 30 năm trước, [pause:250ms] vợ vừa mất)
 signature_object: OBJ_NHAN_CUOI (nhẫn cưới cũ tháo 30 năm)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Hà Tĩnh
@@ -54,19 +58,19 @@ arc_design_compliant: bible/21 R33-R40
 
 Đêm thứ 28 trên chuyến xe, [pause:250ms] Khải Phong ngồi ghế thứ ba. Mưa tháng tư rỉ rả ngoài kính xe. Xe đi qua đoạn sông La, Hà Tĩnh, [pause:250ms] hàng cau ven đường, [pause:250ms] cau cao, [pause:250ms] tán xanh đậm sau mưa im bóng.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi tám, [pause:250ms] Khải Phong đếm thêm. Trong túi áo gió Khải Phong, [pause:250ms] hai mươi bảy vật. Đêm qua thêm sợi chỉ lụa hồng từ vải bọc khung ảnh Mỹ Linh.
+Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi tám, [pause:250ms] anh đếm thêm. Trong túi áo gió người khách, [pause:250ms] hai mươi bảy vật rồi. Đêm qua thêm sợi chỉ lụa hồng từ vải bọc khung ảnh Mỹ Linh.
 
 Bác tài lái.
 
-Mặt đường ướt sũng. Hai bên đường, [pause:250ms] cánh đồng cát Hà Tĩnh, [pause:250ms] vài ngọn đèn xóm xa.
+Mặt đường ướt sũng nước mưa. Hai bên đường, [pause:250ms] cánh đồng cát Hà Tĩnh, [pause:250ms] vài ngọn đèn xóm xa.
 
-Xe chậm lại trước một nhà thờ làng nhỏ, [pause:250ms] chuông nhà thờ đã đóng, [pause:250ms] đèn vàng cổng nhà thờ còn sáng. Bảng [DIALOGUE_SEG_START]"Giáo xứ Vĩnh Hòa"[DIALOGUE_SEG_END] gỗ xưa.
+Xe chậm lại trước một nhà thờ làng nhỏ, [pause:250ms] chuông nhà thờ đã đóng, [pause:250ms] đèn vàng cổng nhà còn sáng. Bảng [DIALOGUE_SEG_START]"Giáo xứ Vĩnh Hòa"[DIALOGUE_SEG_END] gỗ xưa.
 
-Một người đàn ông đứng đợi bên cổng nhà thờ. Khoảng năm mươi lăm tuổi. Áo sơ mi đen, [pause:250ms] quần tây đen, [pause:250ms] vẻ vừa đi tang. Tay phải cầm hộp gỗ nhỏ, [pause:250ms] hộp gỗ trắc đen, [pause:250ms] đã hơi mòn.
+Một người đàn ông đứng đợi bên cổng nhà. Tuổi khoảng năm mươi lăm. Áo sơ mi đen, [pause:250ms] quần tây đen, [pause:250ms] vẻ vừa đi tang. Tay phải cầm hộp gỗ nhỏ, [pause:250ms] hộp gỗ trắc đen, [pause:250ms] đã hơi mòn.
 
-Người đàn ông lên xe. Đi xuống lối giữa, [pause:250ms] chân chậm lại. Ngồi xuống ghế thứ tám.
+Người đàn ông lên xe. Đi xuống lối giữa, [pause:250ms] chân chậm lại dần. Ngồi xuống ghế thứ tám.
 
-Mở hộp. Trong hộp, [pause:250ms] một chiếc nhẫn vàng nhỏ, [pause:250ms] nhẫn cưới, [pause:250ms] đã ngả màu vàng đậm theo năm.
+Mở hộp ra. Trong hộp, [pause:250ms] một chiếc nhẫn vàng nhỏ, [pause:250ms] nhẫn cưới, [pause:250ms] đã ngả màu vàng đậm theo năm.
 
 Xe lăn bánh.
 
@@ -78,13 +82,13 @@ Xe lăn bánh.
 
 Người đàn ông ngồi yên. Vuốt nhẫn vàng. Đầu ngón tay anh đặt nhẹ lên nhẫn, [pause:250ms] không đeo, [pause:250ms] chỉ vuốt.
 
-Khải Phong quan sát từ ghế ba. Anh năm lăm, [pause:250ms] tóc bạc nửa, [pause:250ms] mặt rám nắng, [pause:250ms] vẻ người sống biển. Tay trái anh, [pause:250ms] Khải Phong thấy, [pause:250ms] có vết hằn nhẹ trên ngón áp út, [pause:250ms] vết đeo nhẫn xưa, [pause:250ms] đã tháo lâu năm, [pause:250ms] vết còn mờ.
+Người đàn ông quan sát từ ghế ba. Anh năm lăm, [pause:250ms] tóc bạc nửa, [pause:250ms] mặt rám nắng, [pause:250ms] vẻ người sống biển lâu năm. Tay trái anh, [pause:250ms] anh ấy thấy, [pause:250ms] có vết hằn nhẹ trên ngón áp út, [pause:250ms] vết đeo nhẫn xưa, [pause:250ms] đã tháo lâu năm, [pause:250ms] vết còn mờ.
 
-Ông cụ ghế đầu vặn radio. Lạo xạo. [DIALOGUE_SEG_START]"...quê nhà..."[DIALOGUE_SEG_END] vọng, [pause:250ms] tắt.
+Ông cụ ghế đầu vặn radio. Lạo xạo hoài. [DIALOGUE_SEG_START]"...quê nhà..."[DIALOGUE_SEG_END] vọng, [pause:250ms] tắt.
 
 [pause:500ms]
 
-Bác tài liếc gương. Không nói. Quay lại.
+Bác tài liếc gương. Không nói. Quay lại nhìn đường.
 
 Anh đặt nhẫn vào lòng bàn tay trái, [pause:250ms] đặt giữa lằn hằn xưa, [pause:250ms] như đo lại vị trí xưa.
 
@@ -96,13 +100,13 @@ Anh đặt nhẫn vào lòng bàn tay trái, [pause:250ms] đặt giữa lằn h
 
 Xe đi qua xóm xưa. Phía bên trái, [pause:250ms] căn nhà gạch nhỏ, [pause:250ms] sân nhỏ, [pause:250ms] cửa khép. Đèn dầu trong nhà còn sáng yếu.
 
-Cạnh cửa, [pause:250ms] bóng phụ nữ trung niên đứng, [pause:250ms] chừng năm mươi tuổi, [pause:250ms] áo dài đen, [pause:250ms] tay không. Không quay đầu, [pause:250ms] chỉ đứng, [pause:250ms] nhìn xuống đất, [pause:250ms] như đang đợi.
+Cạnh cửa, [pause:250ms] bóng phụ nữ trung niên đứng, [pause:250ms] chừng năm mươi tuổi, [pause:250ms] áo dài đen, [pause:250ms] tay không. Không quay đầu, [pause:250ms] chỉ đứng, [pause:250ms] nhìn xuống đất, [pause:250ms] như đang đợi ai đó.
 
-Anh ghế tám nhìn về phía đó. Hơi thở chậm lại.
+Anh ghế tám nhìn về phía đó. Hơi thở chậm lại dần.
 
 [DIALOGUE_SEG_START]"Hồng..."[DIALOGUE_SEG_END]
 
-Người đàn ông nói rất nhỏ.
+Người đàn ông nói rất nhỏ xíu.
 
 Đồng hồ trên xe, [pause:250ms] kim phút nhích một, [pause:250ms] hai, [pause:250ms] đến mười.
 
@@ -110,7 +114,7 @@ Người đàn ông nói rất nhỏ.
 
 Xe đi qua đó. Nhà gạch khuất.
 
-Người đàn ông quay đầu lại. Vuốt nhẫn vàng, [pause:250ms] không đeo, [pause:250ms] chỉ vuốt.
+Người đàn ông quay đầu lại nhìn. Vuốt nhẫn vàng, [pause:250ms] không đeo, [pause:250ms] chỉ vuốt.
 
 ---
 
@@ -118,9 +122,9 @@ Người đàn ông quay đầu lại. Vuốt nhẫn vàng, [pause:250ms] không
 
 [pause:1000ms]
 
-[DIALOGUE_SEG_START]"Tôi là Hữu Lộc. Anh năm mươi lăm tuổi rồi. Tôi ở Vĩnh Hòa, [pause:250ms] Hà Tĩnh, [pause:250ms] quê. Tôi làm ngư dân, [pause:250ms] chủ thuyền đánh cá ven biển, [pause:250ms] đã ba mươi năm."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Tôi là Đàn Luân. Anh năm mươi lăm tuổi rồi. Người kể đây ở Vĩnh Hòa, [pause:250ms] Hà Tĩnh, [pause:250ms] quê. Hình ảnh người kể chuyện làm ngư dân, [pause:250ms] chủ thuyền đánh cá ven biển, [pause:250ms] đã ba mươi năm."[DIALOGUE_SEG_END]
 
-Giọng anh trầm, [pause:250ms] chậm, [pause:250ms] giọng người sống biển.
+Giọng anh trầm, [pause:250ms] chậm, [pause:250ms] giọng người sống biển lâu năm.
 
 [DIALOGUE_SEG_START]"Vợ cũ tôi, [pause:250ms] Hồng, [pause:250ms] mất tuần trước. Anh năm mươi ba tuổi rồi. Ung thư gan giai đoạn cuối, [pause:250ms] phát hiện sáu tháng, [pause:250ms] không qua ở đó. Tôi và Hồng đã ly hôn ba mươi năm, [pause:250ms] tôi vừa đi tang vợ cũ đêm nay từ giáo xứ Vĩnh Hòa."[DIALOGUE_SEG_END]
 
@@ -150,7 +154,7 @@ Giọng anh trầm, [pause:250ms] chậm, [pause:250ms] giọng người sống 
 
 [DIALOGUE_SEG_START]"Hồng không cãi. Em đi khỏi nhà ngày hôm sau, [pause:250ms] em đi về nhà mẹ em ở làng bên. Ly hôn xã làm thủ tục một tháng sau."[DIALOGUE_SEG_END]
 
-[DIALOGUE_SEG_START]"Hoa ba tuổi, [pause:250ms] không hiểu, [pause:250ms] chỉ khóc đòi mẹ. Em chăm Hoa một mình. Em đi biển, [pause:250ms] em gửi Hoa nhà mẹ em, [pause:250ms] mẹ em chăm cháu."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Hoa ba tuổi, [pause:250ms] không hiểu, [pause:250ms] chỉ khóc đòi mẹ. Cô gái chăm Hoa một mình. Em đi biển, [pause:250ms] em gửi Hoa nhà mẹ em, [pause:250ms] mẹ em chăm cháu."[DIALOGUE_SEG_END]
 
 [DIALOGUE_SEG_START]"Em không tái hôn. Em sống với Hoa ba mươi năm. Hoa lớn, [pause:250ms] em nuôi mẹ ăn học, [pause:250ms] em tốt nghiệp đại học, [pause:250ms] em lấy chồng, [pause:250ms] em sinh con, [pause:250ms] bây giờ em ba mươi ba, [pause:250ms] em sống Sài Gòn với chồng con."[DIALOGUE_SEG_END]
 
@@ -174,9 +178,9 @@ Giọng anh trầm, [pause:250ms] chậm, [pause:250ms] giọng người sống 
 
 [pause:1500ms]
 
-[DIALOGUE_SEG_START]"Hoa về nhà em. Kể em lời Hồng. Em im lặng yên. Em không nói gì cả tối."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Hoa về nhà em. Kể em lời Hồng. Cô gái ấy im lặng yên. Em không nói gì cả tối."[DIALOGUE_SEG_END]
 
-[DIALOGUE_SEG_START]"Hai ngày sau, [pause:250ms] Hồng đi rất xa. Hoa báo em. Em quyết, [pause:250ms] em đi tang Hồng. Người đàn ông đến nhà thờ Vĩnh Hòa, [pause:250ms] chính giáo xứ tôi vừa bước lên xe đêm nay. Em quỳ bên quan tài Hồng. Em im, [pause:250ms] không nói gì."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Hai ngày sau, [pause:250ms] Hồng đi rất xa. Hoa báo em. Em quyết, [pause:250ms] em đi tang Hồng. Hình bóng đàn ông đến nhà thờ Vĩnh Hòa, [pause:250ms] chính giáo xứ tôi vừa bước lên xe đêm nay. Cô ấy quỳ bên quan tài Hồng. Cô em im, [pause:250ms] không nói gì."[DIALOGUE_SEG_END]
 
 [DIALOGUE_SEG_START]"Em đem nhẫn cưới này, [pause:250ms] chính nhẫn em mua ở chợ huyện ba mươi mốt năm trước. Em đã tháo ngày ly hôn, [pause:250ms] em cất trong hộp gỗ mun, [pause:250ms] ba mươi năm, [pause:250ms] không động."[DIALOGUE_SEG_END]
 
@@ -188,9 +192,9 @@ Bác tài cất lời.
 
 [DIALOGUE_SEG_START]"Con đã nhớ ra chưa?"[DIALOGUE_SEG_END]
 
-Hữu Lộc gật.
+Đàn Luân gật đầu.
 
-"Tôi nhớ. Tôi đã ly hôn Hồng ba mươi năm trước, [pause:250ms] tôi không tha em. Em đi yên với lời xin lỗi qua Hoa, [pause:250ms] em không nghe trực tiếp từ em. Tôi muộn, [pause:250ms] em đã đi xa. Em có thể nghe Hoa truyền, [pause:250ms] em đã đủ, [pause:250ms] em đã yên. Nhưng tôi không yên, [pause:250ms] tôi cầm nhẫn cũ về.[DIALOGUE_SEG_START]"
+"Tôi nhớ. Tôi đã ly hôn Hồng ba mươi năm trước, [pause:250ms] tôi không tha em. Em ấy đi yên với lời xin lỗi qua Hoa, [pause:250ms] em không nghe trực tiếp từ em. Hình bóng kể chuyện muộn, [pause:250ms] em đã đi xa. Cô ấy có thể nghe Hoa truyền, [pause:250ms] em đã đủ, [pause:250ms] em yên. Nhưng tôi không yên, [pause:250ms] tôi cầm nhẫn cũ về.[DIALOGUE_SEG_START]"
 
 [pause:1200ms]
 
@@ -202,13 +206,13 @@ Hữu Lộc gật.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Hà Tĩnh, [pause:250ms] cây phượng vĩ già, [pause:250ms] bến không tên. Chuông xe rung nhẹ. Vang một nhịp. Tan.
+Xe chậm lại rồi. Ngã ba Hà Tĩnh, [pause:250ms] cây phượng vĩ già, [pause:250ms] bến không tên. Chuông xe rung nhẹ nhàng. Vang một nhịp xa. Tan.
 
-Hữu Lộc đóng hộp gỗ mun. Đứng dậy chậm lại.
+Đàn Luân đóng hộp gỗ mun. Đứng dậy chậm lại một chút.
 
 "[DIALOGUE_SEG_END]Chào anh.[DIALOGUE_SEG_START]"
 
-Trước khi xuống, [pause:250ms] đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển.
+Trước khi xuống, [pause:250ms] đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển gì.
 
 Bác tài: "[DIALOGUE_SEG_END]Chưa tới lúc."
 
@@ -216,15 +220,15 @@ Người đàn ông bước xuống dưới.
 
 [pause:1200ms]
 
-Bên ngoài, [pause:250ms] Hữu Lộc đi vào sân giáo xứ Vĩnh Hòa, [pause:250ms] cổng đã mở, [pause:250ms] đèn bên trong còn sáng. Chánh điện, [pause:250ms] tượng Chúa, [pause:250ms] bục thờ gỗ mun.
+Bên ngoài, [pause:250ms] Đàn Luân đi vào sân giáo xứ Vĩnh Hòa, [pause:250ms] cổng đã mở, [pause:250ms] đèn bên trong còn sáng. Chánh điện, [pause:250ms] tượng Chúa, [pause:250ms] bục thờ gỗ mun.
 
-Người đàn ông đến nơi đó. Mở hộp. Đặt nhẫn vàng nhỏ giữa bục, [pause:250ms] chính giữa. Quỳ. Cúi đầu.
+Người đàn ông đến nơi đó. Mở hộp ra. Đặt nhẫn vàng nhỏ vào giữa bục thờ. Quỳ. Cúi đầu.
 
-Khải Phong chớp mắt, [pause:250ms] nhìn qua cửa sổ xe đang chậm rời. Bên bục, [pause:250ms] Hồng xuất hiện, [pause:250ms] phụ nữ chừng năm mươi, [pause:250ms] áo dài đen, [pause:250ms] tay chắp trước ngực, [pause:250ms] vuốt vai Hữu Lộc đang quỳ. Mỉm cười, [pause:250ms] như nói cảm ơn.
+Anh chớp mắt, [pause:250ms] nhìn qua cửa sổ xe đang chậm rời. Bên bục, [pause:250ms] Hồng xuất hiện, [pause:250ms] phụ nữ chừng năm mươi, [pause:250ms] áo dài đen, [pause:250ms] tay chắp trước ngực, [pause:250ms] ôm vai Đàn Luân đang quỳ. Cười dịu một lần, [pause:250ms] như nói cảm ơn.
 
-Khải Phong chớp lần nữa. Hồng tan vào ánh đèn bục thờ.
+Người khách lại chớp mắt. Hồng tan vào ánh đèn bục thờ.
 
-Hữu Lộc ngẩng đầu. Không khóc. Đứng dậy, [pause:250ms] chậm, [pause:250ms] đi ra cửa giáo xứ.
+Đàn Luân ngẩng đầu. Không khóc. Đứng dậy, [pause:250ms] chậm, [pause:250ms] đi ra cửa giáo xứ.
 
 [pause:1500ms]
 
@@ -232,9 +236,9 @@ Hữu Lộc ngẩng đầu. Không khóc. Đứng dậy, [pause:250ms] chậm, [
 
 # CLIFFHANGER [section 6]
 
-Xe lăn bánh, [pause:250ms] rời ngã ba Hà Tĩnh.
+Xe lăn bánh, [pause:250ms] rời ngã ba Hà Tĩnh rồi.
 
-Ghế tám trống. Trên sàn, [pause:250ms] một mảnh vải nhung đen nhỏ rơi (bọc nhẫn trong hộp gỗ). Khải Phong nhặt. Vải, [pause:250ms] mềm, [pause:250ms] đen, [pause:250ms] đã hơi sờn.
+Ghế tám trống. Trên sàn, [pause:250ms] một mảnh vải nhung đen nhỏ rơi (bọc nhẫn trong hộp gỗ ấy). người đàn ông nhặt lên. Vải, [pause:250ms] mềm, [pause:250ms] đen, [pause:250ms] đã hơi sờn.
 
 Bỏ vào túi áo gió. Vật thứ hai mươi tám.
 
@@ -242,30 +246,30 @@ Bác tài lái. Kim phút cabin nhích, [pause:250ms] một, [pause:250ms] hai, 
 
 [pause:1500ms]
 
-Khải Phong ngồi yên. Hữu Lộc và Hồng ly hôn ba mươi năm, [pause:250ms] anh đi mà anh không kịp tha trực tiếp. Người đàn ông chỉ tha qua Chúa.
+Khải Phong ấy ngồi yên. Đàn Luân và Hồng ly hôn ba mươi năm, [pause:250ms] anh đi mà anh không kịp tha trực tiếp. Người đàn ông chỉ tha qua Chúa.
 
-Khải Phong nhói. Khải Phong và Hạ Vy có chuyện cưới chưa? Đêm cuối Hạ Vy nhắn buổi chiều: [DIALOGUE_SEG_START]"Anh ơi tối nay anh có rảnh không? Em muốn bàn chuyện cưới."[DIALOGUE_SEG_END]
+Người đàn ông nhói. người khách và Hạ Vy có chuyện cưới chưa? Đêm cuối Hạ Vy nhắn buổi chiều: [DIALOGUE_SEG_START]"Anh ơi tối nay anh có rảnh không? Em muốn bàn chuyện cưới."[DIALOGUE_SEG_END]
 
-Khải Phong cố nhớ. Khải Phong đáp gì buổi chiều đó? Hình ảnh, [pause:250ms] Khải Phong đang ở công trường giám sát, [pause:250ms] đọc tin nhắn lúc nghỉ trưa, [pause:250ms] Khải Phong đáp: [DIALOGUE_SEG_START]"Vâng em, [pause:250ms] anh rảnh tối, [pause:250ms] về sớm, [pause:250ms] anh nấu cơm, [pause:250ms] bàn cùng em."[DIALOGUE_SEG_END]
+Người đàn ông cố nhớ. anh ấy đáp gì buổi chiều đó? Hình ảnh, [pause:250ms] anh đang ở công trường giám sát, [pause:250ms] đọc tin nhắn lúc nghỉ trưa, [pause:250ms] người khách đáp: [DIALOGUE_SEG_START]"Vâng em, [pause:250ms] anh rảnh tối, [pause:250ms] về sớm, [pause:250ms] anh nấu cơm, [pause:250ms] bàn cùng em."[DIALOGUE_SEG_END]
 
 Hạ Vy đáp lại: [DIALOGUE_SEG_START]"OK anh."[DIALOGUE_SEG_END]
 
 [pause:1500ms]
 
-Bữa cơm chiều, [pause:250ms] Khải Phong nhớ rõ ràng, [pause:250ms] Khải Phong nấu cá kho tộ, [pause:250ms] món Hạ Vy thích nhất. Khải Phong đi chợ Khâm Thiên lúc bốn giờ chiều, [pause:250ms] mua cá lóc tươi, [pause:250ms] về kho.
+Bữa cơm chiều, [pause:250ms] người đàn ông nhớ rõ ràng, [pause:250ms] anh ấy nấu cá kho tộ, [pause:250ms] món Hạ Vy thích nhất. anh đi chợ Khâm Thiên lúc bốn giờ chiều, [pause:250ms] mua cá lóc tươi, [pause:250ms] về kho.
 
-Hạ Vy bảy giờ tối chưa về. Khải Phong đợi. Hạ Vy nhắn tám giờ [DIALOGUE_SEG_START]"Anh ơi em sắp về."[DIALOGUE_SEG_END] Khải Phong giữ nồi cá kho ấm trên bếp.
+Hạ Vy bảy giờ tối chưa về. người khách đợi hoài. Hạ Vy nhắn tám giờ [DIALOGUE_SEG_START]"Anh ơi em sắp về."[DIALOGUE_SEG_END] người đàn ông giữ nồi cá kho ấm trên bếp.
 
-Chín giờ Hạ Vy không về. Khải Phong gọi ba lần không bắt. Bệnh viện Bạch Mai gọi sau đó.
+Chín giờ Hạ Vy không về. anh ấy gọi ba lần không bắt. Bệnh viện Bạch Mai gọi sau đó.
 
 Hạ Vy đi, [pause:250ms] chuyện cưới không bàn.
 
-Khải Phong nhớ cụ thể: Hạ Vy muốn bàn cưới đêm đó vì anh vừa nhận lương tháng đầu lương ổn định, [pause:250ms] anh tính tiết kiệm sáu tháng đủ tiền cưới đơn giản, [pause:250ms] sau cưới đem ba mẹ Khải Phong và ba mẹ Hạ Vy lên ăn cơm chung.
+Anh nhớ cụ thể: Hạ Vy muốn bàn cưới đêm đó vì anh vừa nhận lương tháng đầu lương ổn định, [pause:250ms] anh tính tiết kiệm sáu tháng đủ tiền cưới đơn giản, [pause:250ms] sau cưới đem ba mẹ người khách và ba mẹ Hạ Vy lên ăn cơm chung.
 
 Hạ Vy không kịp bàn. Cưới không kịp tổ chức. Không bao giờ.
 
-Bác tài liếc gương. [DIALOGUE_SEG_START]"Vào đêm hai mươi tám. Con đã nhớ chiều hôm cuối, [pause:250ms] cá kho tộ, [pause:250ms] Hạ Vy muốn bàn cưới. Đêm sau con sẽ nhớ, [pause:250ms] sau Hạ Vy mất con đã làm gì với phòng trọ, [pause:250ms] với cá kho, [pause:250ms] với chuyện cưới chưa kịp."[DIALOGUE_SEG_END]
+Bác tài liếc gương. [DIALOGUE_SEG_START]"Vào đêm hai mươi tám. Con đã nhớ chiều hôm cuối, [pause:250ms] cá kho tộ, [pause:250ms] Hạ Vy muốn bàn cưới. Đêm sau con sẽ nhớ, [pause:250ms] sau Hạ Vy mất con đã làm gì với phòng trọ, [pause:250ms] với cá kho, [pause:250ms] với chuyện cưới chưa kịp làm."[DIALOGUE_SEG_END]
 
-Khải Phong gật.
+Người đàn ông gật đầu.
 
-Đêm thứ hai mươi tám, [pause:250ms] Khải Phong đếm thêm. Xe đi tiếp. Phía sau, [pause:250ms] Hà Tĩnh khuất. Hữu Lộc ở lại giáo xứ, [pause:250ms] quỳ trước bục, [pause:250ms] đem nhẫn cũ về nơi em đã đi.
+Đêm thứ hai mươi tám, [pause:250ms] anh ấy đếm thêm. Xe đi tiếp. Phía sau, [pause:250ms] Hà Tĩnh khuất. Đàn Luân ở lại giáo xứ, [pause:250ms] quỳ trước bục, [pause:250ms] đem nhẫn cũ về nơi em đi. 

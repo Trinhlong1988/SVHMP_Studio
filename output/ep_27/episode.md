@@ -52,21 +52,21 @@ arc_design_compliant: bible/21 R33-R40
 
 [pause:800ms]
 
-Sau cơn mưa chiều. Đêm xuống nhanh. Xe đêm rẽ vào đoạn đường ven sông Hồng đoạn Phú T, Hà Nội. Hàng cây ven đường còn đẫm — đèn pha quét lên thân cây ướt. Đèn pha quét lên cánh đồng ngô xanh — ngô đã cao nửa người — gió thổi nghiêng ngọn.
+Sau cơn mưa chiều. Đêm xuống nhanh. Xe đêm rẽ vào đoạn đường ven sông Hồng đoạn Phú T, Hà Nội này. Hàng cây ven đường còn đẫm — đèn pha quét lên thân cây ướt. Đèn pha quét lên cánh đồng ngô xanh — ngô đã cao nửa người — gió thổi nghiêng ngọn lá.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi bảy — Khải Phong đếm thêm. Trong túi áo gió anh — hai mươi sáu vật. Đêm qua thêm nhãn ngày mua hộp thước T "06/2017".
+Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi bảy — Khải Phong đếm thêm. Trong túi áo gió anh — hai mươi sáu vật rồi. Đêm qua thêm nhãn ngày mua hộp thước T "06/2017".
 
 Bác tài lái.
 
-Trời mưa rơi nhẹ nhàng. Mặt sông Hồng phía bên trái đường — phẳng — đèn cầu xa chiếu xuống nước vàng nhạt.
+Trời mưa rơi nhẹ nhàng. Mặt sông Hồng phía bên trái đường — phẳng — đèn cầu xa chiếu xuống nước vàng nhạt ấy.
 
 Xe chậm lại trước một ngôi trường tiểu học xưa — biển gỗ mun "Trường tiểu học Vĩnh Lộc" — cổng sắt đã đóng — đèn vàng treo cột cổng còn sáng. Tường trường có dấu vẽ phấn của học sinh — chưa kịp lau.
 
-Một phụ nữ đứng đợi bên cổng. Khoảng bốn mươi lăm tuổi. Áo dạ trắng — quần tây xanh đậm. Cách ăn mặc Việt kiều — sang trọng nhẹ — không quê. Tay phải cầm khung ảnh nhỏ — gói trong vải lụa hồng nhạt.
+Một phụ nữ đứng đợi bên cổng trường. Tuổi khoảng bốn mươi lăm. Áo dạ trắng — quần tây xanh đậm ấy. Cách ăn mặc Việt kiều — sang trọng nhẹ — không quê. Tay phải cầm khung ảnh nhỏ — gói trong vải lụa hồng nhạt ấy.
 
 Cô gái khẽ bước lên xe. Đi qua hàng ghế đầu — chân chậm — vai cô gầy. Ngồi xuống ghế thứ sáu.
 
-Đặt khung ảnh lên đùi. Mở vải lụa. Khung ảnh gỗ nhỏ — bên trong tấm ảnh đen trắng — chụp một lớp tiểu học — khoảng ba mươi em — cô giáo đứng giữa.
+Đặt khung ảnh lên đùi. Mở vải lụa ra. Khung ảnh gỗ nhỏ — bên trong tấm ảnh đen trắng — chụp một lớp tiểu học — khoảng ba mươi em — cô giáo đứng giữa lớp.
 
 Xe lăn bánh.
 
@@ -76,19 +76,19 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Cô gái khẽ ngồi yên lặng. Vuốt khung ảnh. Đầu ngón tay cô mảnh — móng tay sơn nhạt — bàn tay người đã sống nước ngoài lâu.
+Cô gái khẽ ngồi yên, không nói gì. Vuốt khung ảnh đó. Đầu ngón tay cô mảnh — móng tay sơn nhạt — bàn tay người đã sống nước ngoài lâu.
 
-Người khách quan sát từ ghế ba. Cô bốn lăm — mặt sáng — trang điểm nhẹ — tóc nhuộm hạt dẻ — không phải tóc đen thuần Việt. Có nét Việt kiều — có lẽ ở Hoa Kỳ hoặc Úc lâu năm.
+Người khách quan sát từ ghế ba. Cô bốn lăm — mặt sáng — trang điểm nhẹ — tóc nhuộm hạt dẻ — không phải tóc đen thuần Việt như xưa. Có nét Việt kiều — có lẽ ở Hoa Kỳ hoặc Úc lâu năm.
 
 Ảnh trong khung — người đàn ông nhìn ra — ảnh lớp học xưa — chụp năm xa — có lẽ đầu chín mươi.
 
-Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng. Tắt.
+Ông cụ ghế đầu vặn radio. Lạo xạo hoài. "...quê nhà..." vọng xa. Tắt.
 
 [pause:500ms]
 
-Bác tài liếc gương. Không nói. Quay lại.
+Bác tài liếc gương. Không nói. Quay lại nhìn đường.
 
-Cô vuốt mép khung — ngón tay dừng ở một vị trí trong ảnh — như đang chỉ vào một em cụ thể.
+Cô vuốt mép khung — ngón tay dừng ở một vị trí trong ảnh — như đang chỉ vào một em cụ thể nào đó.
 
 ---
 
@@ -98,13 +98,13 @@ Cô vuốt mép khung — ngón tay dừng ở một vị trí trong ảnh — n
 
 Xe đi qua xóm xưa. Phía bên trái — căn nhà gạch nhỏ — sân nhỏ — cửa khép. Đèn dầu trong nhà còn sáng yếu.
 
-Cạnh sân — bóng phụ nữ trung niên đứng — chừng bốn mươi tuổi — gầy — mặt xanh xao — tay vịn vào cột hiên như không đứng vững. Không quay đầu.
+Cạnh sân — bóng phụ nữ trung niên đứng — chừng bốn mươi tuổi — gầy — mặt xanh xao — tay vịn vào cột hiên như không đứng vững lắm. Không quay đầu.
 
-Cô ghế sáu nhìn về phía đó. Mắt cô ngấn lệ.
+Cô ghế sáu nhìn về phía đó. Mắt cô ngấn lệ buồn.
 
 "Hằng..."
 
-Cô gái nói rất nhỏ nhẹ.
+Cô gái nói rất nhỏ nhẹ, gần như thì thầm.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
@@ -112,7 +112,7 @@ Cô gái nói rất nhỏ nhẹ.
 
 Xe đi qua đó. Nhà gạch khuất.
 
-Cô gái khẽ quay đầu lại. Vuốt khung ảnh.
+Cô gái khẽ quay đầu lại nhìn. Vuốt khung ảnh đó.
 
 ---
 
@@ -196,7 +196,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Kiều Thương gật. Lệ rơi xuống khung.
+Kiều Thương gật đầu. Lệ rơi xuống khung.
 
 "Em nhớ. Cô gái hứa Hằng giúp khi cần — em giữ lại. Đứa em không về thử hiến thận — em không gọi điện. Bóng người con gái ấy không thể chuộc Hằng — em chỉ có thể đem khung trả về trường tiểu học hai đứa em học chung."
 
@@ -210,13 +210,13 @@ Kiều Thương gật. Lệ rơi xuống khung.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Phú Thọ — cây gạo cổ — bến không tên. Tiếng chuông ngân nhẹ. Một hồi. Lặng.
+Xe chậm lại rồi. Ngã ba Phú Thọ — cây gạo cổ — bến không tên. Tiếng chuông ngân nhẹ nhàng. Một hồi. Lặng yên.
 
-Kiều Thương gói khung vào vải lụa. Đứng dậy.
+Kiều Thương gói khung vào vải lụa đó. Đứng dậy ngay.
 
 "Chào anh."
 
-Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển.
+Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển gì.
 
 Bác tài: "Chưa tới lúc."
 
@@ -224,15 +224,15 @@ Cô gái bước xuống dưới đường.
 
 [pause:1200ms]
 
-Bên ngoài — Kiều Thương đi vào sân trường tiểu học Vĩnh Lộc — bảo vệ đã mở cổng — đèn hành lang còn sáng. Văn phòng giáo viên tầng một — cửa đã mở.
+Bên ngoài — Kiều Thương đi vào sân trường tiểu học Vĩnh Lộc — bảo vệ đã mở cổng — đèn hành lang còn sáng. Văn phòng giáo viên tầng một — cửa đã mở ra.
 
-Cô gái đã đến nơi đó. Đặt khung ảnh lên bàn giáo viên — chính giữa. Cúi đầu một lúc.
+Cô gái đã đến nơi đó. Đặt khung ảnh lên bàn giáo viên — chính giữa bàn. Cúi đầu một lúc.
 
 Anh ấy chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên bàn giáo viên — Hằng xuất hiện — áo bà ba xanh — đứng cạnh khung — vuốt tóc Kiều Thương. Mỉm cười nhẹ — như tha thứ.
 
-Người đàn ông chớp lần nữa. Người tên Hằng tan ra.
+Người đàn ông lại chớp mắt. Người tên Hằng tan ra.
 
-Kiều Thương ngẩng đầu. Lau lệ. Đi ra cửa văn phòng.
+Kiều Thương ngẩng đầu. Lau lệ đi. Đi ra cửa văn phòng.
 
 [pause:1500ms]
 
@@ -240,11 +240,11 @@ Kiều Thương ngẩng đầu. Lau lệ. Đi ra cửa văn phòng.
 
 # CLIFFHANGER [section 6]
 
-Xe lăn bánh — rời ngã ba Phú Thọ.
+Xe lăn bánh — rời ngã ba Phú Thọ rồi.
 
-Ghế sáu trống. Trên sàn — một sợi chỉ lụa hồng nhỏ rơi (từ vải lụa bọc khung). người khách nhặt. Sợi chỉ — mảnh — màu hồng nhạt.
+Ghế sáu trống. Trên sàn — một sợi chỉ lụa hồng nhỏ rơi (từ vải lụa bọc khung). người khách nhặt lên. Sợi chỉ — mảnh — màu hồng nhạt ấy.
 
-Bỏ vào túi áo gió. Vật thứ hai mươi bảy.
+Bỏ vào túi áo gió. Vật thứ hai mươi bảy này.
 
 Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
@@ -256,11 +256,11 @@ Anh ấy nhói — anh có hứa với ai mà không giữ không? Hạ Vy có n
 
 Hình ảnh — phòng trọ Khâm Thiên sau tốt nghiệp 2017 — Hạ Vy ngồi bàn vẽ ra — vẽ đồ án cho khách hàng. anh ấy ngồi cạnh — cầm thước T đo giúp Hạ Vy — đo các chi tiết khó. cô ấy cảm ơn: "Cảm ơn anh — em không có anh em không vẽ xong đêm nay."
 
-Anh nhớ rõ ràng — người khách giúp người yêu cũ đồ án nhiều lần — cùng ngành kiến trúc — biết kỹ thuật.
+Anh nhớ rõ ràng — người khách giúp người yêu cũ đồ án nhiều lần — cùng ngành kiến trúc — biết kỹ thuật đó.
 
 [pause:1500ms]
 
-Cô gái ấy có nhờ người đàn ông gì không kịp giúp? anh ấy cố nhớ. Cảm giác — không có gì quan trọng. cô ấy không khó tính — người yêu cũ độc lập — cô gái ấy ít nhờ.
+Cô gái ấy có nhờ người đàn ông gì không kịp giúp? anh ấy cố nhớ. Cảm giác — không có gì quan trọng lắm. cô ấy không khó tính — người yêu cũ độc lập — cô gái ấy ít nhờ.
 
 Nhưng đêm cuối — đêm tháng tư 2018 — cô ấy có nhắn gì khác ngoài "Anh ơi em sắp về" không?
 
@@ -270,8 +270,8 @@ Trước tin nhắn đó — buổi chiều — cô gái ấy có nhắn không?
 
 Người đàn ông ấy cố nhớ. Có. Buổi chiều khoảng năm giờ — cô ấy nhắn: "Anh ơi tối nay anh có rảnh không? Em muốn bàn chuyện cưới."
 
-Bác tài liếc gương. "Vào đêm hai mươi bảy. Con bắt đầu nhớ tin nhắn buổi chiều của người yêu xưa. Đêm sau con sẽ nhớ — bữa cơm chiều có gì đặc biệt — vì sao cô gái ấy muốn bàn cưới đêm đó. Đừng vội."
+Bác tài liếc gương. "Vào đêm hai mươi bảy này. Con bắt đầu nhớ tin nhắn buổi chiều của người yêu xưa. Đêm sau con sẽ nhớ — bữa cơm chiều có gì đặc biệt — vì sao cô gái ấy muốn bàn cưới đêm đó. Đừng vội nhé."
 
-Khải Phong gật. Lệ rơi xuống ghế — không ai thấy.
+Khải Phong gật đầu. Lệ rơi xuống ghế — không ai thấy.
 
 Đêm thứ hai mươi bảy — người khách đếm thêm. Xe đi tiếp. Phía sau — Phú Thọ khuất. Kiều Thương ở lại trường tiểu học — đứng ngoài cửa văn phòng — nhìn khung ảnh trên bàn. 

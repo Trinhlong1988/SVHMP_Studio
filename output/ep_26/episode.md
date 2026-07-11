@@ -54,19 +54,19 @@ arc_design_compliant: bible/21 R33-R40
 
 Hà Nội cuối tháng tư. Trời đã về đêm. Chuyến xe đi qua đoạn ven đường vành đai phía tây Hà Nội, ven cánh đồng An Khánh. Đèn pha rọi lên hàng cây — ánh đèn vàng cô đơn.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi sáu — Khải Phong đếm thêm. Trong túi áo gió anh — hai mươi lăm vật. Đêm qua thêm mảnh vải bông cuốn mép kính của Văn Quân.
+Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi sáu — Khải Phong đếm thêm. Trong túi áo gió anh — hai mươi lăm vật rồi. Đêm qua thêm mảnh vải bông cuốn mép kính của Văn Quân.
 
-Bác tài lái. Bàn tay già — chậm — đều. người khách đã quen pattern bác tài — không đổi nhịp.
+Bác tài lái. Bàn tay già — chậm — đều. người khách đã quen pattern bác tài — không đổi nhịp gì.
 
-Mặt đường ướt sau mưa. Hai bên đường — cánh đồng — đèn vài nhà nông xa — chưa ngủ.
+Mặt đường ướt sau mưa. Hai bên đường — cánh đồng — đèn vài nhà nông xa — chưa ngủ yên.
 
 Xe chậm lại trước một tòa văn phòng cũ hai tầng — biển gỗ mun "Văn phòng kiến trúc Hoài An" — cửa kính đã đóng — đèn trong phòng tầng một còn sáng. Bảng hiệu đã mòn — chữ vàng nhạt đi.
 
-Một người đàn ông đứng đợi bên cửa. Khoảng ba mươi tám tuổi. Áo sơ mi trắng — quần tây xám — đeo kính cận vành đen. Tay phải cầm hộp gỗ dài — hộp dài chừng nửa mét — hộp đựng dụng cụ kiến trúc.
+Một người đàn ông đứng đợi bên cửa đó. Tuổi khoảng ba mươi tám. Áo sơ mi trắng — quần tây xám — đeo kính cận vành đen. Tay phải cầm hộp gỗ dài — hộp dài chừng nửa mét — hộp đựng dụng cụ kiến trúc.
 
-Người đàn ông vào xe. Đi qua mấy hàng ghế trước — chân chậm lại. Ngồi xuống ghế thứ năm.
+Người đàn ông vào xe. Đi qua mấy hàng ghế trước — chân chậm lại dần. Ngồi xuống ghế thứ năm.
 
-Đặt hộp gỗ lên đùi — hộp dài — phải đặt nghiêng. Mở. Bên trong — bộ thước kiến trúc — thước inox bóng — cán gỗ mun — đã hơi mòn — chứng tỏ đã dùng nhiều.
+Đặt hộp gỗ lên đùi — hộp dài — phải đặt nghiêng. Mở ra. Bên trong — bộ thước kiến trúc — thước inox bóng — cán gỗ mun — đã hơi mòn — chứng tỏ đã dùng nhiều.
 
 Xe lăn bánh.
 
@@ -76,19 +76,19 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Người đàn ông ngồi yên. Vuốt cán gỗ thước — đầu ngón tay quen — bàn tay người làm kiến trúc — mảnh — móng tay sạch.
+Người đàn ông ngồi yên. Vuốt cán gỗ thước — đầu ngón tay quen — bàn tay người làm kiến trúc — mảnh — móng tay sạch như mới.
 
 Người đàn ông quan sát từ ghế ba. Anh ba lăm tám — kính cận dày — mắt mệt — vẻ người đã ngồi bàn vẽ nhiều năm.
 
-Thước T trong hộp — anh ấy nhìn ra — bộ thước chuyên nghiệp — không phải thước học sinh — thước kiến trúc sư dùng vẽ chi tiết kỹ thuật.
+Thước T trong hộp — anh ấy nhìn ra — bộ thước chuyên nghiệp — không phải thước học sinh — thước kiến trúc sư dùng vẽ chi tiết kỹ thuật đó.
 
 Anh cũng từng có thước như vậy — hồi sinh viên kiến trúc — phòng trọ Khâm Thiên — đêm vẽ bài đồ án.
 
-Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng — tắt.
+Ông cụ ghế đầu vặn radio. Lạo xạo hoài. "...quê nhà..." vọng — tắt.
 
 [pause:500ms]
 
-Bác tài liếc gương. Không nói. Quay lại.
+Bác tài liếc gương. Không nói. Quay lại nhìn đường.
 
 Anh vuốt thước — không soi mặt — không nhìn vào inox bóng — chỉ vuốt cán.
 
@@ -102,7 +102,7 @@ Xe đi qua xóm xưa. Phía bên phải — căn nhà gạch hai tầng — cử
 
 Cạnh cửa — bóng người đàn ông trung niên đứng — chừng sáu mươi tuổi — áo blouse xanh nhạt — tay cầm bút vẽ ra — đứng nghiêng — như đang vẽ đồ án trên bàn vẽ kê dưới đèn. Không quay đầu.
 
-Anh ghế năm nhìn về phía đó. Hơi thở chậm lại.
+Anh ghế năm nhìn về phía đó. Hơi thở chậm lại dần.
 
 "Bố..."
 
@@ -114,7 +114,7 @@ Anh nói nhỏ — một từ — đầy tiếng thở dài.
 
 Xe đi qua đó. Nhà gạch hai tầng khuất. Bóng ông cụ kiến trúc sư khuất.
 
-Người đàn ông quay đầu lại. Vuốt cán thước.
+Người đàn ông quay đầu lại nhìn. Vuốt cán thước.
 
 ---
 
@@ -124,7 +124,7 @@ Người đàn ông quay đầu lại. Vuốt cán thước.
 
 "Tôi là Thế Quyết. Ba mươi tám tuổi. Tôi ở Hoài Đức — quê. Tôi làm kế toán — văn phòng nhỏ phố Cầu Giấy Hà Nội."
 
-Giọng anh đều — chậm — không vội.
+Giọng anh đều — chậm — không vội vàng.
 
 "Bố tôi mất bảy năm trước. Sáu mươi mốt tuổi. Tai biến mạch máu não — đột tử buổi sáng đang ngồi bàn vẽ ra — đang vẽ đồ án nhà phố cho khách hàng cuối."
 
@@ -186,7 +186,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Thế Quyết gật. Mắt đỏ — không khóc.
+Thế Quyết gật đầu. Mắt đỏ — không khóc.
 
 "Tôi nhớ. Tôi không học kiến trúc theo bố — bố không trách lúc sống. Văn phòng Hoài An tan vì tôi không tiếp nối. Bộ thước inox bố mua năm hai nghìn không trăm mười bảy — bố dùng một năm — chưa hết khả năng — đã tan cùng bố."
 
@@ -200,13 +200,13 @@ Thế Quyết gật. Mắt đỏ — không khóc.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Hoài Đức — cây gạo cổ — bến không tên — đèn vàng trên cây gạo. Chuông xe ngân. Một tiếng. Tan.
+Xe chậm lại rồi. Ngã ba Hoài Đức — cây gạo cổ — bến không tên — đèn vàng trên cây gạo ấy. Chuông xe ngân. Một tiếng. Tan.
 
-Thế Quyết đóng hộp gỗ mun. Đứng dậy chậm lại.
+Thế Quyết đóng hộp gỗ mun. Đứng dậy chậm lại một chút.
 
 "Chào anh."
 
-Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển.
+Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển gì.
 
 Bác tài: "Chưa tới lúc."
 
@@ -216,13 +216,13 @@ Người đàn ông bước xuống dưới.
 
 Bên ngoài — Thế Quyết đi vào sân trước tòa văn phòng Hoài An. Cửa kính đã đóng — không ai trong. Anh đặt hộp thước T trước cửa kính — đặt chính giữa — biển hiệu Hoài An vẫn còn trên cửa — chưa tháo.
 
-Cúi đầu trước cửa. Một lúc.
+Cúi đầu trước cửa đó. Một lúc.
 
 Người khách chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên cửa kính — bố Thế Quyết xuất hiện — ông sáu mươi tuổi — áo blouse xanh — tay cầm bút vẽ ra — chạm vào vai con trai. Khẽ cười.
 
-Người đàn ông chớp lần nữa. Người bố tan ra.
+Người đàn ông lại chớp mắt. Người bố tan ra.
 
-Thế Quyết ngẩng đầu. Đi ra khỏi sân — không nhìn lại.
+Thế Quyết ngẩng đầu. Đi ra khỏi sân — không nhìn lại phía sau.
 
 [pause:1500ms]
 
@@ -232,7 +232,7 @@ Thế Quyết ngẩng đầu. Đi ra khỏi sân — không nhìn lại.
 
 Xe lăn bánh — rời ngã ba Hoài Đức.
 
-Ghế năm trống. Trên sàn — một mẩu nhãn giấy nhỏ rơi — nhãn dán góc hộp thước T — ghi ngày mua "06/2017". anh ấy nhặt. Nhãn — màu trắng — chữ in đen — số "2017" rõ ràng.
+Ghế năm trống. Trên sàn — một mẩu nhãn giấy nhỏ rơi — nhãn dán góc hộp thước T — ghi ngày mua "06/2017". anh ấy nhặt lên. Nhãn — màu trắng — chữ in đen — số "2017" rõ ràng.
 
 Bỏ vào túi áo gió. Vật thứ hai mươi sáu — vật thứ hai mang dấu năm 2017 (sau mẩu giấy bản EP22).
 
@@ -240,13 +240,13 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Khải Phong ngồi yên. Mở túi — đếm — hai mươi sáu vật. Hai vật mang dấu năm 2017: mẩu giấy bản từ sách thầy Quỳnh Mai (đêm 22) — nhãn hộp thước T bố Thế Quyết (đêm này).
+Khải Phong ngồi yên. Mở túi — đếm — hai mươi sáu vật rồi. Hai vật mang dấu năm 2017: mẩu giấy bản từ sách thầy Quỳnh Mai (đêm 22) — nhãn hộp thước T bố Thế Quyết (đêm này).
 
-Trùng hợp? Hay sub-arc?
+Trùng hợp sao? Hay sub-arc?
 
-Người khách ngẫm. Năm 2017 — người đàn ông nhớ — chính năm anh ấy tốt nghiệp Đại học Kiến trúc. Năm em tốt nghiệp xong — em rời quê đi.
+Người khách ngẫm xem. Năm 2017 — người đàn ông nhớ — chính năm anh ấy tốt nghiệp Đại học Kiến trúc. Năm em tốt nghiệp xong — em rời quê đi.
 
-Anh cũng từng có bộ thước T — hồi sinh viên — bộ học sinh — cán nhựa. Sau tốt nghiệp — người khách làm việc cho công ty Việt Trường — giám sát công trình — không vẽ kiến trúc nữa. Bộ thước T xưa — người đàn ông cất trong tủ phòng trọ — sau Hạ Vy mất — anh ấy dọn phòng — không nhớ vứt đi đâu.
+Anh cũng từng có bộ thước T — hồi sinh viên — bộ học sinh — cán nhựa đó. Sau tốt nghiệp — người khách làm việc cho công ty Việt Trường — giám sát công trình — không còn vẽ kiến trúc. Bộ thước T xưa — người đàn ông cất trong tủ phòng trọ — sau Hạ Vy mất — anh ấy dọn phòng — không nhớ vứt đi đâu.
 
 [pause:1500ms]
 
@@ -258,8 +258,8 @@ Người khách là người đầu tiên trong gia đình học kiến trúc. n
 
 Sau Hạ Vy mất 2018 — anh ấy có còn liên lạc bố mẹ không? anh cố nhớ. Cảm giác — có. người khách vẫn về quê dịp Tết. Bố mẹ vẫn còn sống. người đàn ông là con trai duy nhất.
 
-Bác tài liếc gương. "Vào đêm hai mươi sáu. Vật thứ hai mang dấu năm 2017. Đêm hai mươi chín sẽ có vật thứ ba. Đến đêm ba mươi — milestone — con sẽ ngẫm rõ vì sao ba vật rời rạc cùng có năm 2017. Đừng vội."
+Bác tài liếc gương. "Vào đêm hai mươi sáu. Vật thứ hai mang dấu năm 2017. Đêm hai mươi chín sẽ có vật thứ ba. Đến đêm ba mươi — milestone — con sẽ ngẫm rõ vì sao ba vật rời rạc cùng có năm 2017. Đừng vội nhé."
 
-Người đàn ông ấy gật. Không hỏi.
+Người đàn ông ấy gật đầu. Không hỏi gì.
 
 Đêm thứ hai mươi sáu — anh đếm thêm. Xe đi tiếp về phía đường vành đai. Phía sau — Hoài Đức khuất. Thế Quyết ở lại sân văn phòng Hoài An — đứng nhìn hộp thước T trước cửa kính. 

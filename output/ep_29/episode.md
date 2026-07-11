@@ -54,15 +54,15 @@ arc_design_compliant: bible/21 R33-R40
 
 Đèn xe rọi vào sương. Đêm tháng tư miền Bắc. Chuyến xe đi qua đoạn đường ven biển Đà Nẵng — qua đ, Hà Nội — hàng cây ven đường thấp thoáng trong sương. Đèn pha quét lên hàng dừa nước ven đường biển — sóng vọng từ phía dưới đèo.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi chín — Khải Phong đếm thêm. Trong túi áo gió anh — hai mươi tám vật. Đêm qua thêm mảnh nhung đen từ hộp nhẫn Hữu Lộc.
+Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi chín — Khải Phong đếm thêm. Trong túi áo gió anh — hai mươi tám vật rồi. Đêm qua thêm mảnh nhung đen từ hộp nhẫn Hữu Lộc đó.
 
 Bác tài lái.
 
-Cơn gió biển mặn. Mặt đường ướt sũng. Hai bên đường — dốc đèo — vài đèn xe khác xa.
+Cơn gió biển mặn quá. Mặt đường ướt sũng nước mưa. Hai bên đường — dốc đèo — vài đèn xe khác xa.
 
 Xe chậm lại trước một bệnh viện huyện xưa — biển "Bệnh viện đa khoa Liên Chiểu" — cổng đã đóng — đèn vàng treo cột cổng còn sáng. Tường bệnh viện có dấu sơn tróc.
 
-Một phụ nữ trẻ đứng đợi bên cổng. Khoảng hai mươi tám tuổi. Áo gió xám — quần jeans. Tay phải cầm ví nhỏ — bên trong có vật gì cứng — ví hơi phồng.
+Một phụ nữ trẻ đứng đợi bên cổng đó. Tuổi khoảng hai mươi tám. Áo gió xám — quần jeans. Tay phải cầm ví nhỏ — bên trong có vật gì cứng — ví hơi phồng.
 
 Cô gái khẽ lên bậc xe. Đi đến hàng ghế giữa — chân chậm — vai cô gầy. Ngồi xuống ghế thứ mười.
 
@@ -78,17 +78,17 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Cô gái khẽ ngồi yên lặng. Vuốt thẻ giấy. Đầu ngón tay cô mảnh — bàn tay người làm bàn giấy — móng tay sơn nhạt.
+Cô gái khẽ ngồi yên, không nói gì. Vuốt thẻ giấy. Đầu ngón tay cô mảnh — bàn tay người làm bàn giấy — móng tay sơn nhạt ấy.
 
 Người đàn ông quan sát từ ghế ba. Cô hai tám — mặt sáng — tóc cột thấp — nét buồn lâu ngày.
 
-Thẻ trên đùi cô — anh ấy thấy rõ năm "2017" trên góc dưới phải. Vật thứ ba có dấu năm 2017 — sau mẩu giấy bản sách thầy Quỳnh Mai (EP22) — và nhãn hộp thước T bố Đức Hùng (EP26).
+Thẻ trên đùi cô — anh ấy thấy rõ năm "2017" trên góc dưới phải đó. Vật thứ ba có dấu năm 2017 — sau mẩu giấy bản sách thầy Quỳnh Mai (EP22) — và nhãn hộp thước T bố Đức Hùng (EP26).
 
-Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng. Tắt.
+Ông cụ ghế đầu vặn radio. Lạo xạo hoài. "...quê nhà..." vọng xa. Tắt.
 
 [pause:500ms]
 
-Bác tài liếc gương. Không nói. Quay lại.
+Bác tài liếc gương. Không nói. Quay lại nhìn đường.
 
 Cô lật thẻ — phía sau thẻ — có dấu mộc đỏ — chữ ký bác người.
 
@@ -98,7 +98,7 @@ Cô lật thẻ — phía sau thẻ — có dấu mộc đỏ — chữ ký bác
 
 [pause:500ms]
 
-Xe đi qua xóm xưa. Phía bên phải — căn nhà cấp bốn — sân nhỏ — cửa khép. Đèn nến trong nhà còn cháy — không phải đèn điện.
+Xe đi qua xóm xưa. Phía bên phải — căn nhà cấp bốn — sân nhỏ — cửa khép. Đèn nến trong nhà còn cháy — không phải đèn điện đâu.
 
 Cạnh cửa — bóng cô gái trẻ đứng — chừng hai mươi tuổi — mặt xanh xao — môi tím — tay vịn vào cột hiên. Không quay đầu.
 
@@ -106,7 +106,7 @@ Cô ghế mười nhìn về phía đó. Lệ ngấn.
 
 "Nga..."
 
-Cô gái nói rất nhỏ nhẹ.
+Cô gái nói rất nhỏ nhẹ, gần như thì thầm.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
@@ -114,7 +114,7 @@ Cô gái nói rất nhỏ nhẹ.
 
 Xe đi qua đó. Nhà cấp bốn khuất.
 
-Cô gái khẽ quay đầu lại. Vuốt thẻ giấy. Hơi thở chậm lại.
+Cô gái khẽ quay đầu lại nhìn. Vuốt thẻ giấy. Hơi thở chậm lại dần.
 
 ---
 
@@ -124,7 +124,7 @@ Cô gái khẽ quay đầu lại. Vuốt thẻ giấy. Hơi thở chậm lại.
 
 "Em là Ý Thơ. Hai mươi tám tuổi. Em ở Đà Nẵng — Liên Chiểu — quê. Em làm thiết kế đồ họa cho công ty quảng cáo Đà Nẵng."
 
-Giọng cô đều — chậm.
+Giọng cô đều — chậm hơn.
 
 "Bạn cùng phòng trọ em hồi đại học — Nga — mất bảy năm trước. Hai mươi mốt tuổi. Bệnh thalassemia thể nặng — di truyền — phụ thuộc truyền máu hàng tháng — biến chứng tim — không qua ở đó."
 
@@ -182,7 +182,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Ý Thơ gật. Lệ rơi xuống thẻ giấy.
+Ý Thơ gật đầu. Lệ rơi xuống thẻ giấy.
 
 "Em nhớ. Cô gái không thử khám tủy cho Nga — em ngại — em sợ kim — em lười. Em không phải lý do trực tiếp em mất — Nga có bệnh nặng — không chắc em hợp tủy. Nhưng em là một trong nhiều người có thể thử — em không thử. Em sống bảy năm với cảm giác lỗi."
 
@@ -196,13 +196,13 @@ Bác tài cất lời.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Đà Nẵng — cây phi lao biển — bến không tên. Một tiếng chuông. Ngắn. Tan trong sương.
+Xe chậm lại rồi. Ngã ba Đà Nẵng — cây phi lao biển — bến không tên. Một tiếng chuông. Ngắn. Tan trong sương.
 
-Ý Thơ cất thẻ vào ví. Đứng dậy.
+Ý Thơ cất thẻ vào ví. Đứng dậy ngay.
 
 "Chào anh."
 
-Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển.
+Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển gì.
 
 Bác tài: "Chưa tới lúc."
 
@@ -212,13 +212,13 @@ Cô gái bước xuống dưới đường.
 
 Bên ngoài — Ý Thơ đi vào sân bệnh viện đa khoa Liên Chiểu — bảo vệ đã mở cửa — đèn phòng tiếp tân sáng yếu.
 
-Cô gái đến bên quầy ấy. Lấy thẻ ra ngoài. Đặt thẻ lên quầy tiếp tân — cùng với một ghi chú nhỏ cô vừa viết tay: "Thẻ tôi đăng ký năm 2017 — không sử dụng. Tôi xin lỗi. Bây giờ tôi đã hiến tủy — không kịp cho bạn cùng phòng. Ý Thơ." Cúi đầu trước quầy.
+Cô gái đến bên quầy ấy. Lấy thẻ ra ngoài. Đặt thẻ lên quầy tiếp tân — cùng với một ghi chú nhỏ cô vừa viết tay: "Thẻ tôi đăng ký năm 2017 — không sử dụng đến. Tôi xin lỗi nhiều. Bây giờ tôi đã hiến tủy — không kịp cho bạn cùng phòng. Ý Thơ." Cúi đầu trước quầy.
 
 Anh chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên quầy — Nga xuất hiện — cô gái hai mươi mốt — áo trắng — má hồng (không xanh xao như trong INCIDENT) — vỗ vai Ý Thơ. Gật đầu nhẹ nhẹ nhàng.
 
-Người khách chớp lần nữa. Người tên Nga tan ra.
+Người khách lại chớp mắt. Người tên Nga tan ra.
 
-Ý Thơ ngẩng đầu. Lau lệ. Đi ra cửa bệnh viện.
+Ý Thơ ngẩng đầu. Lau lệ đi. Đi ra cửa bệnh viện đó.
 
 [pause:1500ms]
 
@@ -226,9 +226,9 @@ Người khách chớp lần nữa. Người tên Nga tan ra.
 
 # CLIFFHANGER [section 6]
 
-Xe lăn bánh — rời ngã ba Đà Nẵng.
+Xe lăn bánh — rời ngã ba Đà Nẵng rồi.
 
-Ghế mười trống. Trên sàn — một mẩu nhãn nhỏ rơi (bong từ góc thẻ). người đàn ông nhặt. Nhãn — màu trắng — có chữ số "2017" mờ.
+Ghế mười trống. Trên sàn — một mẩu nhãn nhỏ rơi (bong từ góc thẻ đó). người đàn ông nhặt lên. Nhãn — màu trắng — có chữ số "2017" mờ.
 
 Bỏ vào túi áo gió. Vật thứ hai mươi chín — vật thứ ba mang dấu năm 2017.
 
@@ -236,14 +236,14 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Khải Phong ấy ngồi yên. Mở túi — đếm — hai mươi chín vật. Ba vật mang dấu năm 2017:
+Khải Phong ấy ngồi yên. Mở túi — đếm — hai mươi chín vật rồi. Ba vật mang dấu năm 2017:
 - Mẩu giấy bản từ sách thầy Quỳnh Mai (đêm 22)
 - Nhãn ngày mua hộp thước T bố Đức Hùng (đêm 26)
 - Nhãn năm thẻ hiến máu Ý Thơ (đêm này)
 
-Ba vật rời rạc — ba chủ — không quen nhau — không cùng tỉnh. Nhưng cùng năm 2017.
+Ba vật rời rạc — ba chủ — không quen nhau — không cùng tỉnh nào. Nhưng cùng năm 2017.
 
-Người đàn ông ngẫm. Năm 2017 — người khách tốt nghiệp Đại học Kiến trúc. Năm em tốt nghiệp xong — em rời quê đi. Năm anh và Hạ Vy ra trường cùng nhau.
+Người đàn ông ngẫm xem. Năm 2017 — người khách tốt nghiệp Đại học Kiến trúc. Năm em tốt nghiệp xong — em rời quê đi. Năm anh và Hạ Vy ra trường cùng nhau.
 
 Năm sau — 2018 — Hạ Vy mất. Sub-arc temporal — ba vật cùng năm 2017 — như đang nhắc người đàn ông: năm tốt nghiệp là một năm trước Hạ Vy đi. Một năm — ngắn.
 
@@ -253,14 +253,14 @@ Sau Hạ Vy mất — anh ấy làm gì? anh cố nhớ. Cảm giác — ngườ
 
 Sau một tuần — chủ trọ đến nhắc — người đàn ông phải dọn vì phòng được cho hai người thuê — sau một người đi — anh ấy không thể giữ phòng giá hai người.
 
-Khải Phong dọn. Bóng người ngồi Phong gom quần áo Hạ Vy vào hộp — không vứt — đem về quê Hạ Vy — gửi bố mẹ Hạ Vy. Hình ảnh người đàn ông ấy Phong chuyển sang phòng trọ rẻ hơn — một mình — phố Nguyễn Trãi.
+Khải Phong dọn đồ. Bóng người ngồi Phong gom quần áo Hạ Vy vào hộp — không vứt — đem về quê Hạ Vy — gửi bố mẹ Hạ Vy. Hình ảnh người đàn ông ấy Phong chuyển sang phòng trọ rẻ hơn — một mình — phố Nguyễn Trãi đó.
 
-Người khách tiếp tục đi làm — công ty xây dựng Việt Trường. Nhưng năm sau — 2019 — người đàn ông nghỉ. anh ấy không thể đi giám sát công trình — anh mệt — người khách tim đập nhanh khi nghe tin tai nạn lao động — người đàn ông sợ.
+Người khách tiếp tục đi làm — công ty xây dựng Việt Trường. Nhưng năm sau — 2019 — người đàn ông nghỉ rồi. anh ấy không thể đi giám sát công trình — anh mệt — người khách tim đập nhanh khi nghe tin tai nạn lao động — người đàn ông sợ lắm.
 
 Anh ấy xin việc khác — văn phòng kiến trúc — nhẹ hơn — ngồi bàn vẽ ra. anh làm cho văn phòng nhỏ phố Khâm Thiên — gần phòng trọ xưa.
 
-Bác tài liếc gương. "Vào đêm hai mươi chín. Ba vật cùng năm 2017 đã đủ. Đêm mai — milestone — đêm ba mươi — con sẽ ngẫm rõ vì sao ba vật rời rạc cùng năm 2017 — và một vật bất ngờ. Đừng vội."
+Bác tài liếc gương. "Vào đêm hai mươi chín. Ba vật cùng năm 2017 đã đủ rồi. Đêm mai — milestone — đêm ba mươi — con sẽ ngẫm rõ vì sao ba vật rời rạc cùng năm 2017 — và một vật bất ngờ. Đừng vội nhé."
 
-Người khách gật. Không hỏi.
+Người khách gật đầu. Không hỏi gì.
 
 Đêm thứ hai mươi chín — người đàn ông đếm thêm. Xe đi tiếp. Phía sau — Đà Nẵng khuất. Ý Thơ ở lại sân bệnh viện — đứng cửa nhìn vào quầy tiếp tân — thẻ giấy còn trên quầy. 
