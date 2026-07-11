@@ -1,10 +1,11 @@
 domain: text_gate
-tier: null
+tier: 3
 owner: UNASSIGNED
 promotion_status: locked
 source_of_truth:
 - tools/svhmp_preflight_qa.py
 data_contract: null
 files:
+- tests/test_debt018_r197_log_only.py
 - tools/svhmp_preflight_qa.py
-file_count: 1
+file_count: 2

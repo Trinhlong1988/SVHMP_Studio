@@ -13,12 +13,12 @@ distribution_target:
   promise_regret: 20
   kindness_regret: 14
   self_regret: 10
-distribution_actual:
-  family_regret: 32
-  love_regret: 24
-  promise_regret: 20
-  kindness_regret: 14
-  self_regret: 10
+distribution_actual:   # DEBT-021 (per Mr.Long auth 11/7): so THAT tren 139 passenger (superseding scope "chi 100 goc" cu o merge_5_7.distribution_target_note). Enforcer tests/test_roster_distribution_sync.py khoa dong bo - recompute moi khi roster doi. PAS_0151 da gan family_regret (40->41).
+  family_regret: 41
+  love_regret: 31
+  promise_regret: 29
+  kindness_regret: 23
+  self_regret: 15
 reserved_eps:
 - 73
 - 90
@@ -4730,7 +4730,7 @@ passengers:
 - id: PAS_0151
   char_name: Hạ Nhi
   entity_class: nguoi
-  pillar: RFC_PENDING
+  pillar: family_regret   # DEBT-021 (per Mr.Long auth 11/7): gan pillar family_regret theo BANG CHUNG regret_label (han gan gia dinh truoc khi bo mat) + catchphrase "em chi muon moi nguoi lam hoa". regret_sub_archetype GIU RFC_PENDING (27 archetype deu khung "nguoi da chet", bia sub moi = vi pham R195 - cho RFC bible/11). LUU Y: gan nay dua family_regret 40->41 (khac so 40 Mr.Long trich tu bao cao TRUOC luc gan) - Boss muon giu PAS_0151 NGOAI dem thi bao revert.
   regret_sub_archetype: RFC_PENDING_hoa_giai_truoc_khi_qua_muon
   regret_label: Chị gái Hạ Vy mời Khải Phong dự đám cưới, mong hàn gắn trước khi bố (đang bệnh nặng) không còn kịp gặp lại
   archetype_fit_note: 'KHÔNG khớp bất kỳ archetype nào trong 27 mục bible/11 (đã đọc toàn bộ catalog để xác nhận, không phải
@@ -4775,11 +4775,7 @@ merge_5_7:
   total_before: 100
   merged_count: 39
   total_after: 139
-  distribution_target_note: 'distribution_target/distribution_actual O TREN giu nguyen (mo ta CHINH XAC 100 passenger goc
-    do gen_100_passenger.py sinh co chu dich can bang bible/11) - KHONG cong don voi 39 passenger merge (nguon khac: text-mining
-    tu episode.md that, khong phai generator can bang). PAS_0151 (Ha Nhi, waiver ep_50) co pillar: RFC_PENDING (khong thuoc
-    5 pillar chuan) - cho Mr.Long quyet archetype moi. PAS_0131 (Nguyen, waiver ep_30) va PAS_0151 la 2 ID da RESERVED san
-    tu truoc (xem tests/test_roster_backfill_ep11_50.py docstring cu) - dung dung ID nay, KHONG phai ID moi tu chon.'
+  distribution_target_note: 'distribution_target O TREN GIU NGUYEN 100-scale (bible/11 lock forbidden_edit - muc tieu can bang generator sinh 100 goc, KHONG doi). distribution_actual: TRUOC 5/7 co chu dich chi mo ta 100 goc; NAY per Mr.Long DEBT-021 (11/7) cap nhat = so THAT tren ca 139 passenger (gom 39 backfill text-mining) - enforcer test_roster_distribution_sync.py khoa dong bo. PAS_0151 (Ha Nhi, waiver ep_50): pillar gan family_regret theo bang chung (regret han gan gia dinh) per DEBT-021, dua family 40->41; regret_sub_archetype VAN RFC_PENDING (khong khop 27 archetype "nguoi da chet" - cho RFC bible/11, khong bia). PAS_0131 (Nguyen, waiver ep_30) va PAS_0151 la 2 ID da RESERVED san tu truoc (xem tests/test_roster_backfill_ep11_50.py docstring cu) - dung dung ID nay, KHONG phai ID moi tu chon.'
 migration_v2:
   by: tools/migrate_roster_v2.py
   date: '2026-07-02'

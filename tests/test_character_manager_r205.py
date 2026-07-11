@@ -19,14 +19,15 @@ ck("id duy nhat", len({c.id for c in reg.all()}) == len(reg.all()))
 ck("naming bible/23 = 0 loi (tai dung, khong sinh)", len(reg.validate_names()) == 0)
 
 d = reg.distribution()
-# CAP NHAT 5/7: 32/24/20/14/10 la balance-target CHI cho 100 passenger GOC (gen_100_passenger.py,
-# distribution_lock_bible_11 trong roster yaml) - 39 backfill (text-mining tu episode.md, khong
-# phai generator can bang) lam thay doi tong so THAT: family=40/love=31/promise=29/kindness=23/self=15
-# + 1 RFC_PENDING (Ha Nhi, waiver ep_50, cho Mr.Long duyet archetype moi). Kiem tong THAT, khong
-# phai balance-target cu (van giu nguyen trong roster yaml, chi ap dung cho 100 goc).
-ck("pillar tong THAT sau merge (family=40/love=31/promise=29/kindness=23/self=15/RFC_PENDING=1)",
-   d['by_pillar'].get('family_regret') == 40 and d['by_pillar'].get('self_regret') == 15
-   and d['by_pillar'].get('RFC_PENDING') == 1, d['by_pillar'])
+# CAP NHAT 5/7 + DEBT-021 (11/7): 32/24/20/14/10 la balance-target CHI cho 100 passenger GOC
+# (gen_100_passenger.py, distribution_target trong roster yaml - GIU NGUYEN, bible/11 lock). So THAT
+# tren 139 (39 backfill text-mining): family=41/love=31/promise=29/kindness=23/self=15. PAS_0151
+# (Ha Nhi) DA gan pillar family_regret theo bang chung (DEBT-021, Mr.Long 11/7) -> family 40->41,
+# 0 RFC_PENDING o pillar (regret_sub_archetype VAN RFC_PENDING, cho RFC bible/11). Enforcer dong bo
+# distribution_actual <-> roster: tests/test_roster_distribution_sync.py.
+ck("pillar tong THAT sau DEBT-021 (family=41/love=31/promise=29/kindness=23/self=15, 0 RFC_PENDING pillar)",
+   d['by_pillar'].get('family_regret') == 41 and d['by_pillar'].get('self_regret') == 15
+   and d['by_pillar'].get('RFC_PENDING', 0) == 0, d['by_pillar'])
 ck("gender tong THAT sau merge (khong con 50/50 dung vi 39 backfill khong can bang theo generator)",
    d['by_gender'] == {'nu': 69, 'nam': 70}, d['by_gender'])
 ck("region_dialect DA set >=3 vung (sau migrate v2)", d['by_region_dialect'].get('?', 0) == 0 and len([k for k in d['by_region_dialect'] if k != '?']) >= 3)

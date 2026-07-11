@@ -9,9 +9,11 @@ files:
 - governance/blueprint/schemas/naming_extension_rules.yaml
 - reports/G2_CONTINUITY_FINDINGS.md
 - runtime/roster_backfill_draft.yaml
+- tests/test_bible23_canon_waivers_sync.py
 - tests/test_roster_backfill_ep11_50.py
 - tests/test_roster_backfill_miner_g2.py
+- tests/test_roster_distribution_sync.py
 - tests/test_roster_validator_g2.py
 - tools/roster_backfill_miner.py
 - tools/roster_validator.py
-file_count: 9
+file_count: 11

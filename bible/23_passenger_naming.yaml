@@ -91,6 +91,36 @@ validation_hooks:
     - "Audit no collision với CHAR_NAM ('Nam' word)"
 
 # ============================================================
+# CANON WAIVERS (DEBT-020 — Mr.Long duyệt 2026-07-11, per ping 08:51)
+# ============================================================
+# 3 ngoại lệ canon 1-LẦN cho rule_01/rule_02 — tên ĐÃ phát hành trong episode.md, KHÔNG sinh
+# mới từ pool. Source-of-truth THẬT = hằng số trong tools/roster_validator.py (nằm ở 2 constant,
+# KHÔNG phải 1): C1_RULE02_CANON_EXEMPT_WORDS + C1_CANON_SINGLE_SYLLABLE_EXEMPT. Mục này CHỈ
+# ghi lại (document) waiver đã enforce trong code — KHÔNG đổi rule_01/rule_02 gốc (giữ nguyên văn).
+# CẤM dùng mục này để nhét tên bịa sau này (mỗi waiver phải có nguồn episode thật, Mr.Long ký).
+
+canon_waivers:
+  rule_02_word_uniqueness:   # trùng âm-tiết, miễn trừ trong roster_validator.C1_RULE02_CANON_EXEMPT_WORDS
+    - word: "Hạ"
+      passenger: PAS_0151
+      char_name: "Hạ Nhi"
+      source: "waiver ep_50 — chị gái ruột Hạ Vy, cùng gốc tên gia đình THẬT (episode.md dòng 74), không phải trùng ngẫu nhiên"
+    - word: "Nhi"
+      passenger: PAS_0151
+      char_name: "Hạ Nhi"
+      source: "waiver ep_50 — tên canon episode.md đã phát hành"
+  rule_01_two_syllable_min:   # tên 1-âm-tiết, miễn trừ trong roster_validator.C1_CANON_SINGLE_SYLLABLE_EXEMPT
+    - word: "Nguyễn"
+      passenger: PAS_0131
+      char_name: "Nguyễn"
+      source: "waiver ep_30 — tên canon episode.md đã phát hành, không sinh mới"
+  note: >
+    Vì 3 waiver này, audit post_gen '100/100 unique full-name / 200/200 distinct syllable' (viết
+    cho roster 100 gốc) KHÔNG còn đúng TUYỆT ĐỐI ở roster 139: có 2 âm-tiết chia sẻ (Hạ, Nhi qua
+    PAS_0151) + 1 tên 1-âm-tiết (Nguyễn PAS_0131). Đây là NGOẠI LỆ canon có chủ đích + đã enforce
+    đúng trong code (validator PASS đúng 3 waiver, vẫn bắt mọi collision khác), KHÔNG phải vi phạm.
+
+# ============================================================
 # CROSS-REF
 # ============================================================
 
