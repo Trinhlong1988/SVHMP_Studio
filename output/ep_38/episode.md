@@ -24,6 +24,10 @@ Tập 38 — câu chuyện đêm nay.
 
 [pause:1500ms]
 
+Câu chuyện hư cấu; các phong tục thờ cúng trong truyện không có thật, không phải hướng dẫn thực hành.
+
+[pause:1200ms]
+
 ---
 
 ```

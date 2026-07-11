@@ -24,6 +24,10 @@ Tập 31 — câu chuyện đêm nay.
 
 [pause:1500ms]
 
+Truyện hư cấu — mọi tình tiết và tập tục đều dựng nên, không có thật ngoài đời, xin đừng làm theo.
+
+[pause:1200ms]
+
 ---
 
 ```

@@ -24,6 +24,10 @@ Tập 34 — câu chuyện đêm nay.
 
 [pause:1500ms]
 
+Nội dung hư cấu; những nghi lễ dân gian được nhắc chỉ làm nền, không có thật, không khuyến khích làm theo.
+
+[pause:1200ms]
+
 ---
 
 ```

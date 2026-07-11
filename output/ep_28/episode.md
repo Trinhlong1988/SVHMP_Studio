@@ -24,6 +24,10 @@ Tập 28 — câu chuyện đêm nay.
 
 [pause:1500ms]
 
+Truyện hư cấu; tôn giáo trong truyện được thể hiện với sự tôn trọng, các tình tiết không có thật và không khuyến khích thực hành theo.
+
+[pause:1200ms]
+
 ---
 
 ```

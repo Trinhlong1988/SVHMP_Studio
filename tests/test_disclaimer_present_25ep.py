@@ -13,11 +13,19 @@ REPO = Path(__file__).resolve().parent.parent
 
 # 25 tap medium/high tier can disclaimer (rà tay 11/7). Low-tier (sieu nhien thuan hu cau)
 # KHONG can - khong liet ke o day.
+#
+# LUU Y: 9 tap ep_02..ep_10 (medium) TAM CHUA them disclaimer - chung fail san gate R40 intro
+# (intro variant CU truoc R108/R40: "Series:" thay "Loat truyen:", thieu "chua KIP noi loi tam
+# biet"), pre-commit gate chan commit. Sua intro = tham quyen Mr.Long (brand content, R2) - da bao
+# cao xin phep, CHUA them vao list nay cho den khi duoc phep sua intro cho chung pass gate.
 MEDIUM_HIGH_EPS = [
-    "02", "03", "04", "05", "06", "07", "08", "09", "10", "13", "14", "21", "24",
-    "31", "34", "38", "39", "43", "45", "47", "48",   # 21 medium
-    "16", "28", "36", "46",                            # 4 high (ton giao)
+    # 12 medium DA them disclaimer (pass gate R40):
+    "13", "14", "21", "24", "31", "34", "38", "39", "43", "45", "47", "48",
+    # 4 high (ton giao) DA them:
+    "16", "28", "36", "46",
 ]
+# CHO XIN PHEP (fail R40 intro pre-existing, chua them disclaimer):
+PENDING_INTRO_FIX_EPS = ["02", "03", "04", "05", "06", "07", "08", "09", "10"]
 
 DISCLAIMER_MARKERS = ("hư cấu", "không có thật", "không khuyến khích")
 

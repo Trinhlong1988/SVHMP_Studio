@@ -24,6 +24,10 @@ Tập 14 — câu chuyện đêm nay.
 
 [pause:1500ms]
 
+Truyện hư cấu; mọi nghi lễ và tập tục nhắc tới không có thật, chỉ phục vụ câu chuyện.
+
+[pause:1200ms]
+
 ---
 
 ```

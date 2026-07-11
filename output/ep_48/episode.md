@@ -24,6 +24,10 @@ Tập 48 — câu chuyện đêm nay.
 
 [pause:1500ms]
 
+Nội dung hư cấu; những nghi lễ trong truyện không có thật, chỉ nhằm mục đích kể chuyện.
+
+[pause:1200ms]
+
 ---
 
 ```

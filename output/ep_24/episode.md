@@ -24,6 +24,10 @@ Tập 24 — câu chuyện đêm nay.
 
 [pause:1500ms]
 
+Đây là chuyện hư cấu; các chi tiết cúng lễ không có thật và không khuyến khích thực hành ngoài đời.
+
+[pause:1200ms]
+
 ---
 
 ```

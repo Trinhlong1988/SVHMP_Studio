@@ -24,6 +24,10 @@ Tập 43 — câu chuyện đêm nay.
 
 [pause:1500ms]
 
+Truyện hư cấu; các tập tục được nhắc mang tính bối cảnh, không có thật và không khuyến khích làm theo.
+
+[pause:1200ms]
+
 ---
 
 ```

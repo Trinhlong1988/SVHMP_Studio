@@ -24,6 +24,10 @@ Tập 39 — câu chuyện đêm nay.
 
 [pause:1500ms]
 
+Chuyện kể hư cấu; những gì trong truyện không có thật, không nhằm khuyến khích thực hành ngoài đời.
+
+[pause:1200ms]
+
 ---
 
 ```

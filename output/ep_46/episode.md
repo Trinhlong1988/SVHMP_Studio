@@ -24,6 +24,10 @@ Tập 46 — câu chuyện đêm nay.
 
 [pause:1500ms]
 
+Câu chuyện hư cấu; niềm tin tôn giáo trong truyện được kể với lòng tôn trọng, không có thật và không khuyến khích thực hành ngoài đời.
+
+[pause:1200ms]
+
 ---
 
 ```

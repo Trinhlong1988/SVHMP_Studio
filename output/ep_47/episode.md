@@ -24,6 +24,10 @@ Tập 47 — câu chuyện đêm nay.
 
 [pause:1500ms]
 
+Câu chuyện hư cấu; nhân vật và tập tục đều không có thật, không khuyến khích ai làm theo ngoài đời.
+
+[pause:1200ms]
+
 ---
 
 ```

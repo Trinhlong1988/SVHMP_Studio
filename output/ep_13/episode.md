@@ -24,6 +24,10 @@ Tập 13 — câu chuyện đêm nay.
 
 [pause:1500ms]
 
+Nội dung hư cấu — nhân vật và phong tục không có thật, không khuyến khích thực hành ngoài đời.
+
+[pause:1200ms]
+
 ---
 
 ```

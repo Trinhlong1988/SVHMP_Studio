@@ -24,6 +24,10 @@ Tập 36 — câu chuyện đêm nay.
 
 [pause:1500ms]
 
+Đây là chuyện hư cấu; những chi tiết tôn giáo mang tính tôn kính, không có thật và không phải hướng dẫn nghi lễ ngoài đời.
+
+[pause:1200ms]
+
 ---
 
 ```

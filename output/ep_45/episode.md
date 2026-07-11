@@ -24,6 +24,10 @@ Tập 45 — câu chuyện đêm nay.
 
 [pause:1500ms]
 
+Đây là truyện hư cấu; mọi phong tục trong truyện không có thật, chỉ để kể, không phải chỉ dẫn thực hành.
+
+[pause:1200ms]
+
 ---
 
 ```

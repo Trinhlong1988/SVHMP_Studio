@@ -24,6 +24,10 @@ Tập 21 — câu chuyện đêm nay.
 
 [pause:1500ms]
 
+Câu chuyện hư cấu; những phong tục dân gian trong truyện không có thật, không nhằm hướng dẫn ai làm theo.
+
+[pause:1200ms]
+
 ---
 
 ```

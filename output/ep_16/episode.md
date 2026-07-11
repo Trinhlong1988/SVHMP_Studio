@@ -24,6 +24,10 @@ Tập 16 — câu chuyện đêm nay.
 
 [pause:1500ms]
 
+Câu chuyện hư cấu; những yếu tố tín ngưỡng được nhắc tới với lòng tôn kính, không có thật trong truyện và không nhằm hướng dẫn nghi thức ngoài đời.
+
+[pause:1200ms]
+
 ---
 
 ```
