@@ -79,6 +79,10 @@ claims:
     released_at: '2026-07-11T10:31:26'
     session: CMD_BUILD
     status: released
+  debt023_disclaimer_25ep:
+    claimed_at: '2026-07-11T10:39:10'
+    session: CMD_BUILD_2
+    status: active
   debt_020_021_023:
     claimed_at: '2026-07-11T09:46:27'
     released_at: '2026-07-11T10:21:36'
@@ -164,6 +168,10 @@ claims:
     released_at: '2026-07-09T09:58:01'
     session: CMD_TONG_TRO_LY
     status: released
+  rule_enforcer_sweep:
+    claimed_at: '2026-07-11T10:40:04'
+    session: CMD_BUILD
+    status: active
   svaf_patterns_backlog:
     claimed_at: '2026-07-04T21:37:49'
     released_at: '2026-07-04T23:14:23'
