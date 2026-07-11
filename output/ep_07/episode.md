@@ -51,19 +51,19 @@ cross_ep_continuity: Khải Phong giữ sợi len + sợi lạt + chuẩn bị n
 
 [pause:800ms]
 
-Vào đêm ba mươi tháng Chạp. Mưa phùn lất phất từ chiều. Chuyến xe đêm chạy qua một thị trấn nhỏ. Đèn vàng yếu hắt qua mấy quán cà phê đóng cửa.
+Vào đêm ba mươi Tết năm đó. Mưa phùn lất phất từ chiều. Chuyến xe đêm chạy qua một thị trấn nhỏ xíu. Đèn vàng yếu hắt qua mấy quán cà phê đóng cửa rồi.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ bảy Khải Phong đếm. Trong túi áo anh đã có một sợi len nâu và một sợi lạt buộc. Hai vật rời rạc. người khách vẫn giữ lại.
+Khải Phong ngồi ghế thứ ba. Đêm thứ bảy Khải Phong đếm. Trong túi áo anh đã có một sợi len nâu và một sợi lạt buộc kèm theo. Hai vật rời rạc thôi. người khách vẫn giữ lại đó.
 
 Bác tài lái như mọi khi. Hai bàn tay đeo găng trắng. Ánh mắt liếc gương chiếu hậu — đêm nay dừng trên người đàn ông lâu hơn cả đêm trước. anh ấy cảm thấy ánh mắt ấy.
 
-Xe chậm lại trước một quán phở đóng cửa. Đèn vàng yếu trên cột điện hắt xuống. Một bóng người trẻ đứng đợi.
+Xe chậm lại trước một quán phở đóng cửa rồi. Đèn vàng yếu trên cột điện hắt xuống. Một bóng người trẻ đứng đợi ai đó.
 
-Một chàng trai. Khoảng hai mươi mấy tuổi. Mặc áo khoác bộ đội cũ, ba lô đeo trên vai. Tay phải cầm một phong bao lì xì đỏ — phong bao mới, chưa gấp, mặt trước in chữ vàng. Tay trái cầm vé xe đã nhàu.
+Một chàng trai. Tuổi khoảng hai mươi mấy. Mặc áo khoác bộ đội cũ, ba lô đeo trên vai. Tay phải cầm một phong bao lì xì đỏ — phong bao mới, chưa gấp, mặt trước in chữ vàng. Tay trái cầm vé xe đã nhàu.
 
-Chàng trai bước lên xe nhanh, vội. Đi xuống lối giữa. Ngồi vào ghế thứ sáu. Đặt ba lô xuống chỗ trống. Phong bao lì xì cầm trên tay, không bỏ.
+Chàng trai vội vàng bước lên xe. Đi xuống lối giữa xe. Ngồi vào ghế thứ sáu. Đặt ba lô xuống chỗ trống. Phong bao lì xì cầm trên tay, không bỏ xuống.
 
-Xe lăn bánh trở lại.
+Xe lại lăn bánh.
 
 ---
 
@@ -71,17 +71,17 @@ Xe lăn bánh trở lại.
 
 [pause:600ms]
 
-Anh nhìn chàng trai qua khe ghế. Anh khoảng hai mốt, hai hai tuổi. Mặt non. Mắt đỏ — như mới khóc, hoặc đang cố nín.
+Anh nhìn chàng trai qua khe ghế. Tuổi anh khoảng hai mốt, hai hai. Mặt non. Mắt đỏ — như mới khóc, hoặc đang cố nín.
 
-Em đặt phong lì xì lên đùi. Tay vuốt nhẹ lên mặt phong. Trên phong có viết hai nét bút "Tặng mẹ" — chữ viết tay vội, hơi nguệch ngoạc. Bên trong phong có gì đó nhỏ, gấp gọn — tiền lương lần đầu của em.
+Em đặt phong lì xì lên đùi. Tay vuốt nhẹ lên mặt phong. Trên phong có viết hai nét bút "Tặng mẹ" — chữ viết tay vội, hơi nguệch ngoạc lắm. Bên trong phong có gì đó nhỏ, gấp gọn — tiền lương lần đầu của em.
 
 Em không nhìn ai. Cô gái gái nhìn xuống phong.
 
-Ông cụ ngồi ghế đầu vặn nhẹ núm radio xưa. Tiếng radio rè rè — câu hát quen thuộc. "...quê nhà..." rồi tan ra.
+Ông cụ ngồi ghế đầu vặn nhẹ núm radio xưa. Tiếng radio rè rè — câu hát quen thuộc lắm. "...quê nhà..." rồi tan ra.
 
-Em ngẩng đầu nhìn ông cụ một thoáng. Rồi cúi xuống lại.
+Em ngẩng đầu nhìn ông cụ một thoáng. Rồi lại cúi xuống.
 
-Bác tài liếc gương chiếu hậu. Một thoáng. Rồi nhịp ngón trỏ ba cái lên vô-lăng.
+Bác tài liếc gương chiếu hậu một thoáng. Rồi nhịp ngón trỏ ba cái lên vô-lăng.
 
 ---
 
@@ -91,7 +91,7 @@ Bác tài liếc gương chiếu hậu. Một thoáng. Rồi nhịp ngón trỏ 
 
 Xe đi qua một đoạn đường có nhà nghỉ đêm. Trước cổng nhà nghỉ, có một người đàn ông đứng hút thuốc. Bên kia đường là bến xe khách thị trấn — đã đóng cửa từ chiều, không còn xe nào.
 
-Em ghế sáu đột ngột nhìn về phía bến xe. Cổ họng nuốt một cái nhẹ.
+Em ghế sáu đột ngột nhìn về phía bến xe. Cổ họng nuốt một cái nhẹ nhàng.
 
 "Hôm qua con bắt xe khách ở bến này về..." Em nói nhẹ.
 
@@ -115,11 +115,11 @@ Cô gái ấy ấy quay đầu. Tay siết phong trên đùi.
 
 [pause:800ms]
 
-Em vuốt nhẹ mặt phong có nét bút "Tặng mẹ".
+Em vuốt nhẹ mặt phong có nét bút "Tặng mẹ" ấy.
 
 "Con tên Minh. Em năm nay hai mốt tuổi. Sinh viên năm cuối Đại học Bách khoa. Quê con Hải Dương. Bố con mất từ lúc con học cấp ba. Mẹ con nuôi con và em gái con bằng nghề bán bún ở chợ huyện."
 
-Giọng em run nhẹ. Nhỏ.
+Giọng em run nhẹ nhàng. Nhỏ lắm.
 
 "Tháng vừa rồi con nhận tiền lương thực tập đầu tiên. Một triệu năm trăm. Con để dành. Định mua cho mẹ một cái áo len mới — cái áo mẹ đang mặc đã ba bốn năm rồi, sờn lắm rồi. Con tính: ba mươi Tết con về, đưa mẹ phong lì xì có tiền lương đầu — để mẹ tự mua áo. Mẹ thích tự chọn."
 
@@ -139,7 +139,7 @@ Em ngừng. Vuốt phong.
 
 [pause:1500ms]
 
-Bác tài nhìn gương chiếu hậu. Im lặng yên.
+Bác tài nhìn gương chiếu hậu một chút. Im lặng yên.
 
 Trong gương chiếu hậu, anh ấy thấy hai cái bóng. Một là anh. Một là một người phụ nữ trung niên — khoảng năm mươi tuổi, tóc cột thấp, mặc áo bông xám — ngồi sát ngay sau anh. Người phụ nữ ấy nhìn xuống tay mình. Tay cầm chén bún, hơi bốc lên.
 
@@ -149,11 +149,11 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Em ghế sáu không quay đầu. Người con gái gái ấy khẽ gật. Hai bàn tay siết chặt phong.
+Em ghế sáu không quay đầu. Người con gái gái ấy khẽ gật đầu. Hai bàn tay siết chặt phong.
 
 "Con nhớ, bác."
 
-Em ngừng. Rồi nói tiếp, vẫn nhỏ:
+Em ngừng. Rồi nói tiếp, giọng vẫn nhỏ xíu:
 
 "Tới bến xe huyện lúc một giờ sáng. Người con gái gái gái đứng đón. Người nữ em ấy không khóc nữa. Hình bóng con gái ấy chỉ dẫn con vào bệnh viện. Mẹ vẫn nằm phòng cấp cứu — máy thở, máy đo. Bác sĩ bảo: 'Còn hai giờ thôi.'"
 
@@ -187,11 +187,11 @@ Em ngừng. Rồi nói tiếp, vẫn nhỏ:
 
 [pause:1500ms]
 
-Xe chậm lại. Phía trước ngã ba. Đèn đường vàng yếu hắt xuống mặt đất ẩm.
+Xe lại chậm dần. Phía trước ngã ba. Đèn đường vàng yếu hắt xuống mặt đất ẩm ướt.
 
 Tiếng chuông giao thừa ngân từ ngôi chùa nhỏ xa. Một hồi. Rồi tan ra ngoài gió.
 
-Em ghế sáu đặt phong vào túi ba lô. Đứng dậy.
+Em ghế sáu đặt phong vào túi ba lô. Đứng dậy ngay.
 
 Khi đi qua chỗ người đàn ông, anh khẽ nói:
 
@@ -207,23 +207,23 @@ Bác tài khẽ nói câu thứ hai:
 
 "Chưa tới lúc."
 
-Em không hiểu. Cô gái ấy ấy gật đầu. Rồi bước xuống dưới. Ba lô đeo vai.
+Em không hiểu đâu. Cô gái ấy ấy gật đầu. Rồi bước xuống dưới. Ba lô đeo vai.
 
-Cửa xe khép lại. Xe lăn bánh.
+Cửa xe lại khép. Xe lăn bánh.
 
 [pause:1000ms]
 
-Bên ngoài, người khách thấy anh đi vào con đường đất nhỏ. Phía cuối đường, có ngôi nhà nhỏ, đèn dầu hắt qua cửa sổ. Trên hiên nhà, có bóng một phụ nữ trung niên ngồi đợi — tay cầm chén bún, hơi bốc lên. Bên cạnh có ghế trống.
+Bên ngoài, người khách thấy anh đi vào con đường đất nhỏ xíu. Phía cuối đường, có ngôi nhà nhỏ, đèn dầu hắt qua cửa sổ đó. Trên hiên nhà, có bóng một phụ nữ trung niên ngồi đợi — tay cầm chén bún, hơi bốc lên. Bên cạnh có ghế trống.
 
 Người đàn ông chớp mắt. Bóng người không còn. Chỉ có đèn dầu nhấp nháy.
 
 [pause:1000ms]
 
-Em Minh ngừng lại trước cửa nhà. Đứng yên. Không bước vào trong. Tay vẫn cầm phong lì xì đỏ. Tay khác đặt lên thành cửa.
+Em Minh ngừng lại trước cửa nhà. Đứng yên. Không bước vào trong. Tay vẫn cầm phong lì xì đỏ tươi. Tay khác đặt lên thành cửa kia.
 
-Có vẻ em đang chờ ai đó mở cửa từ bên trong. Nhưng bên trong không có người mở. Chỉ có đèn dầu cháy.
+Có vẻ em đang chờ ai đó mở cửa từ bên trong. Nhưng bên trong không có người mở ra. Chỉ có đèn dầu cháy.
 
-Cô gái gái đứng ở đó. Lâu. Đến khi sương khép vào lưng em một mảng mờ. Rồi em mới đẩy cửa nhẹ. Bước vào trong. Cửa khép lại sau lưng.
+Cô gái gái đứng ở đó. Lâu. Đến khi sương khép vào lưng em một mảng mờ. Rồi em mới đẩy cửa nhẹ nhàng. Bước vào trong. Cửa khép lại sau lưng.
 
 Người đàn ông ấy nhìn theo. anh cảm thấy ngực mình hơi đau. Nhưng không khóc.
 
@@ -235,17 +235,17 @@ Người đàn ông ấy nhìn theo. anh cảm thấy ngực mình hơi đau. Nh
 
 Xe lăn bánh tiếp.
 
-Ghế sáu trống. Đệm còn lõm. Trên sàn, một phong lì xì đỏ trống rơi — không có tên.
+Ghế sáu trống. Đệm còn lõm xuống. Trên sàn, một phong lì xì đỏ trống rơi — không có tên.
 
 Bác tài lái như mọi khi.
 
 Đồng hồ kim phút nhích bốn lần liền. Tách. Tách. Tách. Tách.
 
-Người khách lấy hai vật trên đùi — sợi len, sợi lạt — đặt cạnh phong trống. Ba vật. Ba đêm. Ba người đã xuống.
+Người khách lấy hai vật trên đùi — sợi len, sợi lạt — đặt cạnh phong trống. Ba vật thôi. Ba đêm. Ba người đã xuống.
 
-Người đàn ông nhìn xuống ba vật. Tay khẽ run.
+Người đàn ông nhìn xuống ba vật ấy. Tay khẽ run.
 
-Trên ghế lái, bác tài liếc gương. Lâu hơn. Bác khẽ nói — lần đầu tiên một câu không phải hai câu chuẩn:
+Trên ghế lái, bác tài liếc gương. Lâu hơn. Bác khẽ nói — lần đầu tiên một câu không phải hai câu như mọi khi:
 
 "Con cũng sẽ nhớ ra thôi."
 
@@ -267,33 +267,33 @@ Anh cầm phong lì xì đỏ — phong bao trống người khách vừa nhặt
 
 Anh ấy đưa phong bao lại gần đèn nhỏ trên thành xe. Cố nhìn.
 
-Có hai dòng chữ in chìm. Hai chữ rất nhỏ. "Tặng mẹ".
+Có hai dòng chữ in chìm, hai chữ rất nhỏ: "Tặng mẹ" đó.
 
-Khải Phong giật mình. người khách xem lại phong bao. Mặt trước in chữ vàng "An Khang Thịnh Vượng". Mặt sau — hai nét bút "Tặng mẹ" viết tay. Chữ người đàn ông đã từng viết. anh ấy nhận ra nét bút mình.
+Khải Phong giật mình. người khách xem lại phong bao. Mặt trước in chữ vàng "An Khang Thịnh Vượng" ấy. Mặt sau — hai nét bút "Tặng mẹ" viết tay. Chữ người đàn ông đã từng viết. anh ấy nhận ra nét bút mình.
 
 Anh bao giờ đã viết hai chữ này? người khách không nhớ.
 
 [pause:1200ms]
 
-Trên ghế lái, bác tài liếc gương chiếu hậu. Ánh mắt dừng trên người đàn ông. Lâu. Bác tài không nói gì. Chỉ nhìn.
+Trên ghế lái, bác tài liếc gương chiếu hậu một thoáng. Ánh mắt dừng trên người đàn ông. Lâu. Bác tài không nói gì. Chỉ nhìn.
 
-Anh ấy đặt phong bao xuống đùi. Bên cạnh ba vật khác. Tay run. anh không hiểu vì sao tay mình run. Anh ấy Phong chỉ đang ngồi trên một chuyến xe đêm. Hình bóng đàn ông ấy Phong đang về Hà Nội. Có vẻ thế. Hay không?
+Anh ấy đặt phong bao xuống đùi. Bên cạnh ba vật khác. Tay run. anh không hiểu vì sao tay mình run. Anh ấy Phong chỉ đang ngồi trên một chuyến xe đêm. Hình bóng đàn ông ấy Phong đang về Hà Nội rồi. Có vẻ thế. Hay không?
 
 Người khách nhìn ra cửa kính. Đêm vẫn dài — chuyến xe chưa dừng. Trời mưa phùn vẫn lất phất.
 
-Có một câu hát rất khẽ vọng từ ông cụ ghế đầu — radio vẫn rè rè. Lần này không phải "quê nhà". Lần này nghe như: "...mẹ ơi con xin lỗi..."
+Có một câu hát rất khẽ vọng từ ông cụ ghế đầu — radio vẫn rè rè. Lần này không phải "quê nhà". Lần này nghe như: "...mẹ ơi con xin lỗi..." mơ hồ.
 
-Người đàn ông lắc đầu. Không thể. Đó chỉ là tiếng rè của radio xưa. Không phải lời.
+Người đàn ông lắc đầu. Không thể đâu. Đó chỉ là tiếng rè của radio xưa. Không phải lời.
 
 [pause:800ms]
 
-Bên ngoài cửa kính, có một biển tên đường thoáng qua đèn pha xe. anh ấy nhìn — biển ghi "Đường Mẹ Suốt — 2km". Tên đường lạ. anh chưa nghe bao giờ.
+Bên ngoài cửa kính, có một biển tên đường thoáng qua đèn pha xe. anh ấy nhìn — biển ghi "Đường Mẹ Suốt — 2km". Tên đường lạ quá. anh chưa nghe bao giờ.
 
 [pause:1000ms]
 
-Người khách nhớ — có một người đàn bà tên Mẹ Suốt thời chiến chèo đò chở bộ đội qua sông. Bị bom. Mẹ vẫn chèo. Đến khi không còn ai chèo. người đàn ông đọc truyện về Mẹ Suốt hồi cấp một. Hồi đó anh ấy đã viết một bài văn — bài đầu tiên anh khóc khi viết.
+Người khách nhớ — có một người đàn bà tên Mẹ Suốt thời chiến chèo đò chở bộ đội qua sông. Bị bom. Mẹ vẫn chèo. Đến khi không còn ai chèo. Hồi cấp một, người đàn ông đọc truyện về Mẹ Suốt. Hồi đó anh ấy đã viết một bài văn — bài đầu tiên anh khóc khi viết.
 
-Mẹ con cũng có tên giống mẹ người khách? người đàn ông không nhớ tên mẹ. anh ấy chỉ nhớ mặt mẹ — một thoáng. Mẹ ngồi cạnh bếp lò, áo nâu, tay đỡ thau gạo. Mẹ cười nhẹ nhàng. Không nói.
+Mẹ con cũng có tên giống mẹ người khách? người đàn ông không nhớ tên mẹ mình. anh ấy chỉ nhớ mặt mẹ — một thoáng. Mẹ ngồi cạnh bếp lò, áo nâu, tay đỡ thau gạo trắng. Mẹ cười nhẹ nhàng. Không nói.
 
 [pause:800ms]
 
@@ -309,4 +309,4 @@ Xe lăn bánh tiếp. Chuyến xe đêm vẫn lăn bánh.
 
 Trên ghế lái, bác tài liếc gương. Bác đã thấy bóng kia. Bác không phản ứng. Như đã quen.
 
-Khải Phong ấy nhắm mắt. Hơi thở chậm xuống một nhịp. 
+Khải Phong ấy nhắm mắt. Hơi thở chậm xuống một chút. 

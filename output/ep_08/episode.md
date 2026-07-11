@@ -52,7 +52,7 @@ cross_ep_continuity: Khải Phong có 3 vật + phong bao trống. Đồng hồ 
 
 [pause:800ms]
 
-Vào đêm ba mươi tháng Chạp. Trời mưa lất phất. Chuyến xe đêm chạy qua một ngôi làng nhỏ vùng Bắc Ninh. Đèn dầu hắt qua mấy cửa sổ.
+Vào đêm ba mươi Tết năm đó. Trời mưa lất phất. Chuyến xe đêm chạy qua một ngôi làng nhỏ vùng Bắc Ninh. Đèn dầu hắt qua mấy cửa sổ đó.
 
 Khải Phong ngồi ghế thứ ba. Đêm thứ tám — Khải Phong đếm thêm. Trong túi áo, ngoài ba vật cũ, còn có phong bao lì xì trống anh nhặt từ sàn xe đêm trước.
 
@@ -60,13 +60,13 @@ Bác tài lái như mọi khi. Hai bàn tay đeo găng trắng. Ánh mắt liế
 
 Câu cuối đêm trước anh nghe — "Con cũng sẽ nhớ ra thôi" — vẫn vang trong đầu. người khách không chắc bác đã nói. Nhưng câu đó không rời.
 
-Xe chậm lại trước một cây cầu nhỏ. Bên kia cầu, đèn vàng yếu hắt xuống. Một bóng người đứng đợi.
+Xe chậm lại trước một cây cầu nhỏ xíu. Bên kia cầu, đèn vàng yếu hắt xuống. Một bóng người đứng đợi ai đó.
 
-Một chàng trai trẻ. Khoảng hai mươi mấy tuổi. Mặc áo phao xanh, tay phải xách ba lô con cóc, tay trái cầm chiếc điện thoại bật sáng — màn hình hiện ra đang nhắn tin gì đó. Tay run.
+Một chàng trai trẻ măng. Tuổi khoảng hai mươi mấy. Mặc áo phao xanh, tay phải xách ba lô con cóc, tay trái cầm chiếc điện thoại bật sáng — màn hình hiện ra đang nhắn tin gì đó. Tay run.
 
-Cô gái gái bước lên xe. Đi nhẹ xuống lối giữa. Ngồi vào ghế thứ chín. Đặt ba lô xuống đùi. Điện thoại vẫn cầm trên tay.
+Cô gái gái bước lên xe. Đi nhẹ xuống lối giữa xe. Ngồi vào ghế thứ chín. Đặt ba lô xuống đùi. Điện thoại vẫn cầm trên tay.
 
-Xe lăn bánh trở lại.
+Xe lại lăn bánh.
 
 ---
 
@@ -74,19 +74,19 @@ Xe lăn bánh trở lại.
 
 [pause:600ms]
 
-Người đàn ông nhìn anh qua khe ghế. Anh khoảng hai mốt, hai hai tuổi. Mặt non. Tóc rối. Mí mắt đỏ.
+Người đàn ông nhìn anh qua khe ghế. Tuổi anh khoảng hai mốt, hai hai. Mặt non. Tóc rối. Mí mắt đỏ hoe.
 
-Em ấy ấy mở ba lô. Bên trong, ngoài quần áo, có một cái khăn tay xưa — màu xanh nhạt, đã bạc, hai đầu khăn có thêu hoa nhỏ bằng chỉ trắng. Khăn được gấp tư cẩn thận.
+Em ấy ấy mở ba lô. Bên trong, ngoài quần áo, có một cái khăn tay xưa — màu xanh nhạt, đã bạc, hai đầu khăn có thêu hoa nhỏ bằng chỉ trắng. Khăn được gấp tư cẩn thận lắm.
 
-Cô gái gái lấy khăn ra. Vuốt nhẹ nhàng. Khăn mềm mại. Có mùi long não xưa — mùi tủ bà già.
+Cô gái gái lấy khăn ra. Vuốt nhẹ nhàng. Khăn mềm mại lắm. Có mùi long não xưa — mùi tủ bà già.
 
 Em ấy ấp khăn lên má. Khẽ thở một hơi.
 
-Ông cụ ngồi ghế đầu vặn núm radio. Tiếng radio rè rè — câu hát "...quê nhà..." quen thuộc.
+Ông cụ ngồi ghế đầu vặn núm radio. Tiếng radio rè rè — câu hát "...quê nhà..." quen thuộc lắm.
 
 Em ghế chín bật khóc — rất nhỏ, chỉ một tiếng nức.
 
-Bác tài liếc gương chiếu hậu. Một thoáng. Rồi nhịp ngón trỏ ba cái.
+Bác tài liếc gương chiếu hậu một thoáng. Rồi nhịp ngón trỏ ba cái.
 
 ---
 
@@ -94,7 +94,7 @@ Bác tài liếc gương chiếu hậu. Một thoáng. Rồi nhịp ngón trỏ 
 
 [pause:500ms]
 
-Xe đi qua một xóm nhỏ. Phía bên kia ruộng, có một ngôi nhà gạch ngói xưa. Trước cổng có một cái chuông đồng nhỏ treo trên cây mít — chuông cũ, mép đã mòn. Phía hiên nhà sáng đèn dầu — có bóng một cụ bà ngồi ghế mây, lưng còng, tay vuốt một cái khăn tay.
+Xe đi qua một xóm nhỏ xíu. Phía bên kia ruộng, có một ngôi nhà gạch ngói xưa. Trước cổng có một cái chuông đồng nhỏ treo trên cây mít — chuông cũ, mép đã mòn. Phía hiên nhà sáng đèn dầu — có bóng một cụ bà ngồi ghế mây, lưng còng, tay vuốt một cái khăn tay.
 
 Em ghế chín nhìn về phía đó. Em đưa khăn tay áp lên trán. Khóc khẽ hơn.
 
@@ -118,7 +118,7 @@ Người con gái gái quay đầu. Áp khăn tay lên má. Nhắm mắt.
 
 "Em tên Kiệt. Hai hai tuổi. Sinh viên năm cuối. Bà nội em mất đêm ba mươi năm ngoái. Đúng đêm giao thừa."
 
-Giọng em khàn. Nhỏ.
+Giọng em khàn. Nhỏ lắm.
 
 "Bà nội nuôi em từ bé. Bố mẹ em đi làm ăn ở Bình Dương, em ở với bà ở quê. Bà thương em nhất nhà. Mỗi lần em về nghỉ hè, bà luôn bỏ một cái khăn tay cũ vào túi quần áo em — bảo: 'Mang theo, lau mồ hôi. Khăn này bà giặt sạch, có mùi nhà mình.'"
 
@@ -142,7 +142,7 @@ Em ngừng. Áp khăn lên trán.
 
 "Em ngồi sàn phòng trọ. Tay run. Tiếng pháo hoa giao thừa nổ ngoài đường. Em không khóc được. Em chỉ ngồi đó tới sáng."
 
-Bác tài nhìn gương chiếu hậu. Im lặng yên.
+Bác tài nhìn gương chiếu hậu một chút. Im lặng yên.
 
 Trong gương chiếu hậu, anh thấy hai cái bóng. Một là anh. Một là một cụ bà — tóc bạc, lưng còng — ngồi sát ngay bên cạnh anh. Cụ bà đưa tay vuốt nhẹ lên tóc anh. Mắt cụ hiền. Không buồn.
 
@@ -214,11 +214,11 @@ Cô gái ghế chín gật đầu. Khóc rõ hơn.
 
 [pause:1500ms]
 
-Xe chậm lại. Ngã ba. Đèn vàng yếu.
+Xe chậm lại nơi ngã ba. Đèn vàng yếu.
 
 Tiếng chuông giao thừa ngân. Một hồi. Tan.
 
-Em gấp khăn tay cẩn thận. Đặt vào ba lô. Đứng dậy.
+Em gấp khăn tay cẩn thận lắm. Đặt vào ba lô. Đứng dậy ngay.
 
 Khi đi qua chỗ người đàn ông, anh khẽ nói:
 
@@ -230,7 +230,7 @@ Trước khi xuống, em quay đầu nhìn bác tài. Rồi nhìn lên đồng h
 
 Đồng hồ chỉ bảy giờ mười phút.
 
-Em hỏi:
+Em lên tiếng:
 
 "Bác có còn nhớ bà bác không?"
 
@@ -238,13 +238,13 @@ Bác tài không trả lời câu đó. Bác khẽ nói câu thứ hai:
 
 "Chưa tới lúc."
 
-Người con gái gái khẽ gật. Như đã quen. Rồi bước xuống dưới.
+Người con gái gái khẽ gật đầu. Như đã quen. Rồi bước xuống dưới.
 
-Cửa xe khép lại. Xe lăn bánh.
+Cửa xe lại khép. Xe lăn bánh.
 
 [pause:1000ms]
 
-Bên ngoài, em đi vào con đường đất nhỏ. Phía cuối đường, ngôi nhà gạch ngói. Trước hiên, cụ bà vẫn ngồi ghế mây, tay vuốt khăn tay khác. Em ngừng ở giữa đường. Cụ bà ngẩng đầu. Hai cái bóng nhìn nhau qua sương.
+Bên ngoài, em đi vào con đường đất nhỏ xíu. Phía cuối đường, ngôi nhà gạch ngói. Trước hiên, cụ bà vẫn ngồi ghế mây, tay vuốt khăn tay khác. Em ngừng ở giữa đường. Cụ bà ngẩng đầu. Hai cái bóng nhìn nhau qua sương.
 
 Người khách chớp mắt. Cụ bà không còn. người đàn ông bước đi tiếp.
 
@@ -252,9 +252,9 @@ Người khách chớp mắt. Cụ bà không còn. người đàn ông bước 
 
 Em ấy dừng trước cổng nhà. Mở khăn tay ra. Đưa lên trán. Như chào.
 
-Rồi em mở cổng. Bước vào sân. Đi tới cái võng ở hiên — chỗ bà vẫn nằm kể chuyện cho em hồi nhỏ. Cô gái gái ngồi xuống võng. Khăn tay vẫn cầm trên tay.
+Rồi em mở cổng ra. Bước vào sân. Đi tới cái võng ở hiên — chỗ bà vẫn nằm kể chuyện cho em hồi còn nhỏ xíu. Cô gái gái ngồi xuống võng đó. Khăn tay vẫn cầm trên tay.
 
-Em ấy ấy rút điện thoại. Bấm số. Áp lên tai. Lâu.
+Em ấy ấy rút điện thoại ra. Bấm số. Áp lên tai. Lâu.
 
 Anh ấy đoán anh đang gọi vào sim bà. Anh vừa gọi vừa thì thầm gì đó. Tay vuốt nhẹ khăn tay.
 
@@ -268,29 +268,29 @@ Xe lăn bánh tiếp.
 
 Ghế chín trống. Trên sàn, một sợi chỉ trắng nhỏ — như sợi chỉ thêu hoa — rơi xuống dưới.
 
-Khải Phong nhặt sợi chỉ. Cất vào túi áo. Vật thứ tư.
+Khải Phong nhặt sợi chỉ lên. Cất vào túi áo. Vật thứ tư.
 
 Đồng hồ kim phút nhích năm lần liền. Tách. Tách. Tách. Tách. Tách.
 
-Trên ghế lái, bác tài liếc gương chiếu hậu. Lâu. Rất lâu. Rồi bác khẽ nói — không nhìn người khách, không nhìn gương, chỉ nhìn đoạn đường tối:
+Trên ghế lái, bác tài liếc gương chiếu hậu rất lâu. Rồi bác khẽ nói — không nhìn người khách, không nhìn gương, chỉ nhìn đoạn đường tối:
 
 "Hôm nào con sẽ tự ngồi vào ghế thứ chín."
 
-Người đàn ông giật mình. Lần này anh ấy chắc — bác đã nói. Câu thứ ba. Câu ngoài hai câu chuẩn.
+Người đàn ông giật mình. Lần này anh ấy chắc — bác đã nói. Câu thứ ba. Câu ngoài hai câu như mọi khi.
 
 Câu đó không có trong list driver speech_lines.
 
 Anh ngẩng đầu. Bác tài vẫn nhìn đoạn đường. Hai bàn tay găng trắng yên trên vô-lăng.
 
-Người khách muốn hỏi. Nhưng môi người đàn ông không động.
+Người khách muốn hỏi gì đó. Nhưng môi người đàn ông vẫn im.
 
 [pause:1500ms]
 
-Anh ấy lấy bốn vật trong túi ra. Sợi len. Sợi lạt. Phong bao trống. Sợi chỉ. Đặt cạnh nhau trên đùi.
+Anh ấy lấy bốn vật trong túi ra. Sợi len. Sợi lạt kia. Phong bao trống. Sợi chỉ trắng. Đặt cạnh nhau trên đùi.
 
-Anh nhớ — đêm thứ tám rồi. Mỗi đêm một vật. Mỗi một câu chuyện. Mỗi người khách ngồi yên chỗ ghế thứ ba — chưa kể câu chuyện nào.
+Anh nhớ — đêm thứ tám rồi. Mỗi đêm một vật mới. Mỗi một câu chuyện riêng. Mỗi người khách ngồi yên chỗ ghế thứ ba — chưa kể câu chuyện nào.
 
-Vì sao người đàn ông chưa kể?
+Vì sao người đàn ông chưa kể gì?
 
 Anh ấy nhìn ra cửa kính. Đêm vẫn dài — chuyến xe chưa dừng.
 
@@ -298,7 +298,7 @@ Anh ấy nhìn ra cửa kính. Đêm vẫn dài — chuyến xe chưa dừng.
 
 Anh nhớ — bà nội người khách. Người bà cụ có cái khăn tay xanh nhạt, hoa thêu trắng. Hình bóng bà cụ ấy ấy cụ giữ trong túi áo. Bóng người phụ nữ già bảo người đàn ông: "Khăn này bà dệt từ hồi mười tám. Sau này cháu cầm." anh ấy đã quên câu đó.
 
-Bà nội anh mất khi người khách bao tuổi? Mười sáu? Hai mươi? người đàn ông không nhớ. Hình bóng ngồi Phong đã ở đâu hôm đó? Hình bóng người đàn ông ấy Phong không nhớ.
+Bà nội anh mất khi người khách bao tuổi rồi? Mười sáu? Hai mươi? người đàn ông không nhớ. Hình bóng ngồi Phong đã ở đâu hôm đó? Hình bóng người đàn ông ấy Phong không nhớ.
 
 Anh ấy nhớ — đêm bà mất, có ai đó gọi điện cho anh. người khách không bắt máy. Đêm đó người đàn ông ở đâu? anh ấy đang làm gì? anh không nhớ.
 
@@ -306,10 +306,10 @@ Một sợi chỉ trắng trong túi áo người khách — chính sợi anh si
 
 [pause:1500ms]
 
-Anh ấy nhìn lên gương chiếu hậu. Bác tài đang nhìn anh. Bình tĩnh. Không thương xót.
+Anh ấy nhìn lên gương chiếu hậu một lúc. Bác tài đang nhìn anh. Bình tĩnh hơn. Không thương xót.
 
 Bác khẽ nói câu thứ tư — câu người khách nghe rõ lần này:
 
 "Có những việc, cần một chuyến xe đêm dài, mới nhớ ra."
 
-Người đàn ông nhắm mắt. Hơi thở chậm xuống một nhịp. 
+Người đàn ông nhắm mắt. Hơi thở chậm xuống một chút. 
