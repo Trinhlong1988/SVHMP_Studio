@@ -12,11 +12,11 @@ Tác giả: Hắc Dạ Ký.
 
 [pause:600ms]
 
-Series: Chuyến xe cuối cùng về đâu.
+Loạt truyện: Chuyến xe cuối cùng về đâu.
 
 [pause:600ms]
 
-Ai cũng có một chuyến xe chưa nói lời tạm biệt.
+Ai cũng có một chuyến xe chưa kịp nói lời tạm biệt với người mình thương.
 
 [pause:1000ms]
 
@@ -35,7 +35,7 @@ intensity_level: 0.55
 quang_memory_fragment: M4 (Khải Phong ngẫm Hạ Vy tai nạn, [pause:250ms] đêm mưa, [pause:250ms] con đường)
 object_sub_arc: USB (ngoài cluster cúc, [pause:250ms] diversify)
 callback_target: none
-passenger_main: nam 42 Hữu Tài Sóc Sơn (bạn thân nhờ vay tiền chữa ung thư, [pause:250ms] không kịp về)
+passenger_main: nam 42 Thạch Vượng Sóc Sơn (bạn thân nhờ vay tiền chữa ung thư, [pause:250ms] không kịp về)
 signature_object: OBJ_USB (USB chứa thư bạn gửi, [pause:250ms] Tài không kịp đọc)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Sóc Sơn
@@ -52,15 +52,15 @@ arc_design_compliant: bible/21 R33-R38
 
 [pause:800ms]
 
-Sau cơn mưa chiều. Đêm xuống nhanh. Xe đêm rẽ vào đoạn đường ven đồi Sóc Sơn, Hà Nội. Hàng cây ven đường còn đẫm, [pause:250ms] đèn pha quét lên thân cây ướt. Đèn pha quét lên rừng thông non, [pause:250ms] cành thông đẫm sương đêm.
+Sau cơn mưa chiều. Đêm xuống nhanh. Xe đêm rẽ vào đoạn đường ven đồi Sóc Sơn, Hà Nội này. Hàng cây ven đường còn đẫm, [pause:250ms] đèn pha quét lên thân cây ướt. Đèn pha quét lên rừng thông non, [pause:250ms] cành thông đẫm sương đêm.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ mười bảy, [pause:250ms] Khải Phong đếm thêm. Trong túi áo gió Khải Phong, [pause:250ms] mười sáu vật. Đêm qua thêm cánh cúc tươi vàng nhạt.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười bảy, [pause:250ms] Khải Phong đếm thêm. Trong túi áo gió anh, [pause:250ms] mười sáu vật rồi. Đêm qua thêm cánh cúc tươi vàng nhạt ấy.
 
 Bác tài lái.
 
-Xe chậm lại trước một bệnh viện huyện xưa, [pause:250ms] biển [DIALOGUE_SEG_START]"Bệnh viện đa khoa Sóc Sơn"[DIALOGUE_SEG_END], [pause:250ms] cổng vẫn mở, [pause:250ms] đèn vàng hắt ra. Một người đàn ông đứng đợi. Khoảng bốn mươi hai tuổi. Áo gió xám, [pause:250ms] quần tây đen. Tay phải cầm hộp giấy nhỏ, [pause:250ms] bên trong có gì cứng.
+Xe chậm lại trước một bệnh viện huyện xưa, [pause:250ms] biển [DIALOGUE_SEG_START]"Bệnh viện đa khoa Sóc Sơn"[DIALOGUE_SEG_END], [pause:250ms] cổng vẫn mở, [pause:250ms] đèn vàng hắt ra. Một người đàn ông đứng đợi ai đó. Tuổi khoảng bốn mươi hai. Áo gió xám, [pause:250ms] quần tây đen. Tay phải cầm hộp giấy nhỏ, [pause:250ms] bên trong có gì cứng.
 
-Người đàn ông lên bậc xe. Đi đến hàng ghế giữa, [pause:250ms] ngồi xuống ghế thứ tư. Mở hộp. Lấy ra một chiếc USB, [pause:250ms] vỏ kim loại đen, [pause:250ms] xưa, [pause:250ms] đã trầy.
+Người đàn ông lên bậc xe. Đi đến hàng ghế giữa, [pause:250ms] ngồi xuống ghế thứ tư. Mở hộp ra. Lấy ra một chiếc USB, [pause:250ms] vỏ kim loại đen, [pause:250ms] xưa, [pause:250ms] đã trầy.
 
 Xe lăn bánh.
 
@@ -72,9 +72,9 @@ Xe lăn bánh.
 
 Người đàn ông ngồi yên. Vuốt USB. Đầu ngón tay anh cử động chậm, [pause:250ms] như đang cảm USB lần đầu.
 
-Khải Phong quan sát. Anh trạc tuổi bốn hai, [pause:250ms] tóc đã có sợi bạc, [pause:250ms] mắt sâu, [pause:250ms] vẻ người bận rộn.
+Người khách quan sát. Anh trạc tuổi bốn hai, [pause:250ms] tóc đã có sợi bạc, [pause:250ms] mắt sâu, [pause:250ms] vẻ người bận rộn lắm.
 
-Ông cụ ghế đầu vặn radio. Lạo xạo. [DIALOGUE_SEG_START]"...quê nhà..."[DIALOGUE_SEG_END] vọng. Tắt.
+Ông cụ ghế đầu vặn radio. Lạo xạo hoài. [DIALOGUE_SEG_START]"...quê nhà..."[DIALOGUE_SEG_END] vọng xa. Tắt.
 
 [pause:500ms]
 
@@ -94,7 +94,7 @@ Anh ghế tư nhìn về phía đó.
 
 [DIALOGUE_SEG_START]"Toàn..."[DIALOGUE_SEG_END]
 
-Người đàn ông nói rất nhỏ.
+Người đàn ông nói rất nhỏ xíu.
 
 Đồng hồ trên xe, [pause:250ms] kim phút nhích một, [pause:250ms] hai, [pause:250ms] đến mười.
 
@@ -102,7 +102,7 @@ Người đàn ông nói rất nhỏ.
 
 Xe đi qua đó. Nhà tập thể khuất.
 
-Khải Phong quay đầu lại. Đặt tay lên USB. Nín thở vài giây.
+Người đàn ông quay đầu lại nhìn. Đặt tay lên USB. Nín thở vài giây.
 
 ---
 
@@ -110,7 +110,7 @@ Khải Phong quay đầu lại. Đặt tay lên USB. Nín thở vài giây.
 
 [pause:1000ms]
 
-[DIALOGUE_SEG_START]"Tôi là Hữu Tài. Bốn mươi hai tuổi. Tôi ở Sóc Sơn, [pause:250ms] quê. Tôi làm giám đốc nhỏ, [pause:250ms] công ty xuất nhập khẩu Hà Nội."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Tôi là Thạch Vượng. Bốn mươi hai tuổi. Tôi ở Sóc Sơn, [pause:250ms] quê. Tôi làm giám đốc nhỏ, [pause:250ms] công ty xuất nhập khẩu Hà Nội."[DIALOGUE_SEG_END]
 
 Giọng anh trầm.
 
@@ -156,9 +156,9 @@ Giọng anh trầm.
 
 [DIALOGUE_SEG_START]"Tôi tắt máy. Tôi tiếp tục họp. Tuần đó tôi xoay tiền, [pause:250ms] nhưng tôi chỉ xoay được một trăm triệu, [pause:250ms] không phải hai trăm. Tôi định: 'Một trăm trước, [pause:250ms] tuần sau xoay thêm.'"[DIALOGUE_SEG_END]
 
-[DIALOGUE_SEG_START]"Thứ năm tuần đó, [pause:250ms] vợ Toàn nhắn tin: 'Anh Tài ơi anh Toàn đã đi. Vào tối qua ở đó. Đột ngột nặng hơn, [pause:250ms] không kịp.'"[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Thứ năm tuần đó, [pause:250ms] vợ Toàn nhắn tin: 'Anh Tài ơi anh Toàn đã đi. Vào tối qua ở đó. Đột ngột nặng hơn, [pause:250ms] không.'"[DIALOGUE_SEG_END]
 
-[DIALOGUE_SEG_START]"Tôi sốc. Người đàn ông không khóc. Tôi ngồi văn phòng, [pause:250ms] nhìn ngoài cửa sổ. Người đàn ông đã định mai gửi một trăm triệu cho Toàn. Tôi không kịp."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Tôi sốc. Người đàn ông không khóc. Tôi đây đây ngồi văn phòng, [pause:250ms] nhìn ngoài cửa sổ. Hình bóng người đàn ông đã định mai gửi một trăm triệu cho Toàn. Tôi đây đây không."[DIALOGUE_SEG_END]
 
 [pause:1500ms]
 
@@ -166,7 +166,7 @@ Giọng anh trầm.
 
 [DIALOGUE_SEG_START]"Tôi cầm USB. Về nhà. Mở. Đọc thư."[DIALOGUE_SEG_END]
 
-"Toàn viết: 'Tài thân, [pause:250ms] nếu anh đọc thư này, [pause:250ms] tức là tôi đã đi. Tôi không trách anh không xoay kịp tiền. Người đàn ông biết anh bận. Tôi biết anh thương tôi. Tôi xin anh một điều, [pause:250ms] chăm con tôi thay tôi, [pause:250ms] hai đứa nhỏ, [pause:250ms] chúng coi anh như chú ruột. Anh là người tôi tin nhất sau vợ tôi. Cảm ơn anh đã làm bạn tôi ba mươi năm. Toàn.'"
+"Toàn viết: 'Tài thân, [pause:250ms] nếu anh đọc thư này, [pause:250ms] tức là tôi đã đi. Tôi không trách anh không xoay kịp tiền. Hình bóng người đàn ông biết anh bận. Tôi đây đây biết anh thương tôi. Bóng người kể xin anh một điều, [pause:250ms] chăm con tôi thay tôi, [pause:250ms] hai đứa nhỏ, [pause:250ms] chúng coi anh như chú ruột. Hình bóng đàn ông là người tôi tin nhất sau vợ tôi. Cảm ơn anh đã làm bạn tôi ba mươi năm. Toàn.'"
 
 [DIALOGUE_SEG_START]"Tôi đọc xong, [pause:250ms] khóc. Lần đầu khóc sau ba mươi năm, [pause:250ms] không khóc từ lúc bố tôi mất."[DIALOGUE_SEG_END]
 
@@ -176,9 +176,9 @@ Bác tài cất lời.
 
 [DIALOGUE_SEG_START]"Con đã nhớ ra chưa?"[DIALOGUE_SEG_END]
 
-Tài gật. Mắt đỏ.
+Tài gật đầu. Mắt đỏ hoe.
 
-"Tôi nhớ. Tôi không kịp xoay tiền, [pause:250ms] không kịp gọi lại, [pause:250ms] không kịp cứu. Toàn không trách tôi, [pause:250ms] Toàn dặn tôi chăm con Toàn. Tôi đã chăm, [pause:250ms] ba năm, [pause:250ms] đem hai cháu đi học, [pause:250ms] đem đi chơi cuối tuần, [pause:250ms] như cha. Nhưng USB này, [pause:250ms] tôi không buông được.[DIALOGUE_SEG_START]"
+"Tôi nhớ. Tôi không xoay tiền, [pause:250ms] không kịp gọi lại, [pause:250ms] không kịp cứu. Toàn không trách tôi, [pause:250ms] Toàn dặn tôi chăm con Toàn. Tôi đã chăm, [pause:250ms] ba năm, [pause:250ms] đem hai cháu đi học, [pause:250ms] đem đi chơi cuối tuần, [pause:250ms] như cha. Nhưng USB này, [pause:250ms] tôi không buông được.[DIALOGUE_SEG_START]"
 
 [pause:1200ms]
 
@@ -190,13 +190,13 @@ Tài gật. Mắt đỏ.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Sóc Sơn, [pause:250ms] cây thông lớn, [pause:250ms] bến không tên. Tiếng chuông ngân nhẹ. Một hồi. Lặng.
+Xe chậm lại rồi. Ngã ba Sóc Sơn, [pause:250ms] cây thông lớn, [pause:250ms] bến không tên. Tiếng chuông ngân nhẹ nhàng. Một hồi. Lặng yên.
 
-Tài cất USB vào hộp giấy. Đứng dậy.
+Tài cất USB vào hộp giấy. Đứng dậy ngay.
 
 "[DIALOGUE_SEG_END]Chào anh.[DIALOGUE_SEG_START]"
 
-Trước khi xuống, [pause:250ms] đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển.
+Trước khi xuống, [pause:250ms] đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển gì.
 
 Bác tài: "[DIALOGUE_SEG_END]Chưa tới lúc."
 
@@ -204,17 +204,17 @@ Tài bước xuống dưới.
 
 [pause:1200ms]
 
-Bên ngoài, [pause:250ms] Tài đi vào sân sau bệnh viện. Vườn cây thông nhỏ, [pause:250ms] đất mềm vì mưa.
+Bên ngoài, [pause:250ms] Tài đi vào sân sau bệnh viện đó. Vườn cây thông nhỏ, [pause:250ms] đất mềm vì mưa.
 
 Người đàn ông khẽ quỳ. Đào hố nhỏ bằng tay. Đặt USB vào trong. Lấp đất lên cao.
 
 Cúi đầu.
 
-Khải Phong chớp mắt, [pause:250ms] nhìn qua cửa sổ. Bên hố, [pause:250ms] Toàn xuất hiện, [pause:250ms] mặc áo sơ mi xanh, [pause:250ms] vuốt vai Tài một lần. Cười nhẹ nhàng.
+Anh ấy chớp mắt, [pause:250ms] nhìn qua cửa sổ xe. Bên hố, [pause:250ms] Toàn xuất hiện, [pause:250ms] mặc áo sơ mi xanh, [pause:250ms] vuốt vai Tài một lần. Cười nhẹ nhàng.
 
-Khải Phong chớp lần nữa. Người tên Toàn tan ra.
+Khải Phong lại chớp mắt. Người tên Toàn tan ra.
 
-Tài ngẩng đầu. Lau khóe mắt. Đứng dậy. Vỗ tay phủi đất.
+Tài ngẩng đầu. Lau khóe mắt. Đứng dậy rồi. Vỗ tay phủi đất.
 
 [pause:1500ms]
 
@@ -224,53 +224,53 @@ Tài ngẩng đầu. Lau khóe mắt. Đứng dậy. Vỗ tay phủi đất.
 
 Xe lăn bánh, [pause:250ms] rời ngã ba Sóc Sơn.
 
-Ghế tư trống. Trên sàn, [pause:250ms] một mẩu nhãn nhỏ rơi (nhãn dán trên USB bong khi anh cầm). Khải Phong nhặt. Nhãn, [pause:250ms] màu trắng, [pause:250ms] có chữ mờ.
+Ghế tư trống. Trên sàn, [pause:250ms] một mẩu nhãn nhỏ rơi (nhãn dán trên USB bong khi anh cầm). người khách nhặt lên. Nhãn, [pause:250ms] màu trắng, [pause:250ms] có chữ mờ.
 
-Bỏ vào túi. Vật thứ mười bảy.
+Bỏ vào túi. Vật thứ mười bảy này.
 
 Bác tài lái. Kim phút cabin nhích, [pause:250ms] một, [pause:250ms] hai, [pause:250ms] đến mười.
 
 [pause:1500ms]
 
-Khải Phong ngồi. USB không cùng cụm cúc. Diversify cụm tiếp.
+Người đàn ông ngồi. USB không cùng cụm cúc. Diversify cụm tiếp.
 
-Khải Phong ngẫm, [pause:250ms] Hạ Vy có ai từng nhờ Khải Phong giúp không? Khải Phong có lỡ không giúp ai như Tài lỡ không cứu Toàn không?
+Anh ấy ngẫm, [pause:250ms] Hạ Vy có ai từng nhờ anh giúp không? người khách có lỡ không giúp ai như Tài lỡ không cứu Toàn không?
 
-Hình ảnh mờ, [pause:250ms] một tin nhắn, [pause:250ms] một cuộc gọi không nhận được, [pause:250ms] một tiếng chuông điện thoại Khải Phong không bắt.
+Hình ảnh mờ, [pause:250ms] một tin nhắn, [pause:250ms] một cuộc gọi không nhận được, [pause:250ms] một tiếng chuông điện thoại người đàn ông không bắt.
 
-Khải Phong nhói. Có. Khải Phong đã nhỡ một cuộc gọi nào đó, [pause:250ms] Khải Phong cảm thấy.
+Người đàn ông ấy nhói. Có. anh đã nhỡ một cuộc gọi nào đó, [pause:250ms] người khách cảm thấy.
 
 Cuộc gọi của Hạ Vy?
 
-Khải Phong không nhớ rõ ràng. Cảm giác, [pause:250ms] không phải đêm Hạ Vy tai nạn, [pause:250ms] cuộc gọi khác, [pause:250ms] trước đêm tai nạn.
+Người đàn ông không nhớ rõ ràng. Cảm giác, [pause:250ms] không phải đêm Hạ Vy tai nạn, [pause:250ms] cuộc gọi khác, [pause:250ms] trước đêm tai nạn đó.
 
-Bác tài liếc gương. [DIALOGUE_SEG_START]"Vào đêm mười bảy. Con bắt đầu cảm thấy lỡ một cuộc gọi. Đêm sau sẽ rõ hơn về cuộc gọi đó. Đừng vội."[DIALOGUE_SEG_END]
+Bác tài liếc gương. [DIALOGUE_SEG_START]"Vào đêm mười bảy này. Con bắt đầu cảm thấy lỡ một cuộc gọi nào đó. Đêm sau sẽ rõ hơn về cuộc gọi đó. Đừng vội nhé."[DIALOGUE_SEG_END]
 
-Khải Phong gật. Không hỏi.
+Khải Phong ấy gật đầu. Không hỏi gì.
 
-Đêm thứ mười bảy, [pause:250ms] Khải Phong đếm thêm. Xe đi tiếp. Phía sau, [pause:250ms] Sóc Sơn khuất. Tài ở lại đứng, [pause:250ms] nhìn hố đất đã lấp, [pause:250ms] USB Toàn đã chôn.
+Đêm thứ mười bảy, [pause:250ms] anh đếm thêm. Xe đi tiếp. Phía sau, [pause:250ms] Sóc Sơn khuất. Tài ở lại đứng, [pause:250ms] nhìn hố đất đã lấp, [pause:250ms] USB Toàn đã chôn.
 
 
 [pause:800ms]
 
-Khải Phong ngồi. USB không cùng cụm cúc, [pause:250ms] vật riêng. Diversify cụm tiếp tục.
+Người khách ngồi. USB không cùng cụm cúc, [pause:250ms] vật riêng. Diversify cụm tiếp tục thêm.
 
-Khải Phong ngẫm về Hạ Vy. Đêm trước, [pause:250ms] Khải Phong nhớ tên bà ngoại Liên + vườn cúc. Đêm này, [pause:250ms] Khải Phong cố nhớ tiếp.
+Người đàn ông ngẫm về Hạ Vy. Đêm trước, [pause:250ms] anh ấy nhớ tên bà ngoại Liên + vườn cúc. Đêm này, [pause:250ms] anh cố nhớ tiếp.
 
 Hình ảnh, [pause:250ms] phòng trọ Khâm Thiên năm cuối đại học, [pause:250ms] Hạ Vy ngồi bàn vẽ ra. Trên bàn vẽ có ảnh, [pause:250ms] ảnh hai đứa cài cúc tai trong vườn bà ngoại Liên. Ảnh khung gỗ đơn, [pause:250ms] Hạ Vy mua khung ở chợ Đồng Xuân.
 
-Khải Phong cố nhớ, [pause:250ms] sau Hạ Vy mất Khải Phong đem ảnh đi đâu. Cảm giác, [pause:250ms] Khải Phong cất ảnh vào hộp cùng quần áo Hạ Vy, [pause:250ms] đem về quê Hải Phòng gửi bố mẹ Hạ Vy.
+Người khách cố nhớ, [pause:250ms] sau Hạ Vy mất người đàn ông đem ảnh đi đâu. Cảm giác, [pause:250ms] anh ấy cất ảnh vào hộp cùng quần áo Hạ Vy, [pause:250ms] đem về quê Hải Phòng gửi bố mẹ Hạ Vy.
 
-Khải Phong không giữ ảnh. Khải Phong chỉ giữ kỉ niệm, [pause:250ms] không vật ngoài. Khải Phong đã không nhìn ảnh từ ngày Hạ Vy mất.
+Anh không giữ ảnh đó. Anh ấy Phong chỉ giữ kỉ niệm, [pause:250ms] không vật ngoài. Hình bóng đàn ông ấy Phong đã không nhìn ảnh từ ngày Hạ Vy mất.
 
-Khải Phong nhói, [pause:250ms] đáng lẽ Khải Phong nên giữ ảnh. Khải Phong đã sai khi gửi bố mẹ Hạ Vy. Bố mẹ Hạ Vy có ảnh, [pause:250ms] Khải Phong không có. Khải Phong chỉ có kỉ niệm trong đầu, [pause:250ms] kỉ niệm mờ dần.
+Người khách nhói, [pause:250ms] đáng lẽ người đàn ông nên giữ ảnh mới đúng. anh ấy đã sai khi gửi bố mẹ Hạ Vy. Bố mẹ Hạ Vy có ảnh, [pause:250ms] anh không có. người khách chỉ có kỉ niệm trong đầu, [pause:250ms] kỉ niệm mờ dần.
 
-Bác tài liếc gương. [DIALOGUE_SEG_START]"Đêm sau con sẽ nhớ, [pause:250ms] bố mẹ Hạ Vy giữ ảnh thế nào, [pause:250ms] có khi nào con liên lạc lại để xin lại ảnh không. Đừng vội."[DIALOGUE_SEG_END]
+Bác tài liếc gương. [DIALOGUE_SEG_START]"Đêm sau con sẽ nhớ, [pause:250ms] bố mẹ Hạ Vy giữ ảnh thế nào, [pause:250ms] có khi nào con liên lạc lại để xin lại ảnh không. Đừng vội nhé."[DIALOGUE_SEG_END]
 
-Khải Phong gật. Lệ rơi nhẹ nhàng.
+Người đàn ông gật đầu. Lệ rơi nhẹ nhàng.
 
-Đêm thứ mười bảy kết thúc. Khải Phong cố giữ hình ảnh ảnh hai đứa cài cúc tai trong vườn bà ngoại Liên, [pause:250ms] kỉ niệm Khải Phong đã không giữ vật chứng, [pause:250ms] chỉ giữ trong đầu. Hình ảnh trong đầu sẽ mờ dần, [pause:250ms] vật chứng không có để xem lại.
+Đêm thứ mười bảy kết thúc. anh ấy cố giữ hình ảnh ảnh hai đứa cài cúc tai trong vườn bà ngoại Liên, [pause:250ms] kỉ niệm anh đã không giữ vật chứng, [pause:250ms] chỉ giữ trong đầu. Hình ảnh trong đầu sẽ mờ dần, [pause:250ms] vật chứng không có để xem lại đâu.
 
-Khải Phong nhìn ra cửa sổ xe, [pause:250ms] đường khuya vắng, [pause:250ms] chỉ có đèn xe, [pause:250ms] không gió. Phía xa, [pause:250ms] vài ngọn đèn xóm, [pause:250ms] chưa ngủ. Đêm tháng tư, [pause:250ms] mưa đã ngớt, [pause:250ms] không khí ẩm, [pause:250ms] không lạnh buốt.
+Người khách nhìn ra cửa sổ xe, [pause:250ms] đường khuya vắng, [pause:250ms] chỉ có đèn xe, [pause:250ms] không gió. Phía xa, [pause:250ms] vài ngọn đèn xóm, [pause:250ms] chưa ngủ yên. Đêm tháng tư, [pause:250ms] mưa đã ngớt, [pause:250ms] không khí ẩm, [pause:250ms] không lạnh buốt.
 
-Khải Phong cảm giác, [pause:250ms] mỗi đêm Khải Phong đang dần đầy túi vật, [pause:250ms] và cũng dần đầy ký ức. Hai song song. Túi vật vật lý, [pause:250ms] ký ức tinh thần. Đến đêm cuối, [pause:250ms] túi sẽ đầy chín mươi vật, [pause:250ms] ký ức Khải Phong sẽ trở lại trọn vẹn.
+Người đàn ông cảm giác, [pause:250ms] mỗi đêm anh ấy đang dần đầy túi vật, [pause:250ms] và cũng dần đầy ký ức. Hai song song. Túi vật vật lý, [pause:250ms] ký ức tinh thần. Đến đêm cuối, [pause:250ms] túi sẽ đầy chín mươi vật, [pause:250ms] ký anh sẽ trở lại trọn vẹn hơn. 

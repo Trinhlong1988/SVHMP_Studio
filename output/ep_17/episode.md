@@ -52,15 +52,15 @@ arc_design_compliant: bible/21 R33-R38
 
 [pause:800ms]
 
-Sau cơn mưa chiều. Đêm xuống nhanh. Xe đêm rẽ vào đoạn đường ven đồi Sóc Sơn, Hà Nội. Hàng cây ven đường còn đẫm — đèn pha quét lên thân cây ướt. Đèn pha quét lên rừng thông non — cành thông đẫm sương đêm.
+Sau cơn mưa chiều. Đêm xuống nhanh. Xe đêm rẽ vào đoạn đường ven đồi Sóc Sơn, Hà Nội này. Hàng cây ven đường còn đẫm — đèn pha quét lên thân cây ướt. Đèn pha quét lên rừng thông non — cành thông đẫm sương đêm.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ mười bảy — Khải Phong đếm thêm. Trong túi áo gió anh — mười sáu vật. Đêm qua thêm cánh cúc tươi vàng nhạt.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười bảy — Khải Phong đếm thêm. Trong túi áo gió anh — mười sáu vật rồi. Đêm qua thêm cánh cúc tươi vàng nhạt ấy.
 
 Bác tài lái.
 
-Xe chậm lại trước một bệnh viện huyện xưa — biển "Bệnh viện đa khoa Sóc Sơn" — cổng vẫn mở — đèn vàng hắt ra. Một người đàn ông đứng đợi. Khoảng bốn mươi hai tuổi. Áo gió xám — quần tây đen. Tay phải cầm hộp giấy nhỏ — bên trong có gì cứng.
+Xe chậm lại trước một bệnh viện huyện xưa — biển "Bệnh viện đa khoa Sóc Sơn" — cổng vẫn mở — đèn vàng hắt ra. Một người đàn ông đứng đợi ai đó. Tuổi khoảng bốn mươi hai. Áo gió xám — quần tây đen. Tay phải cầm hộp giấy nhỏ — bên trong có gì cứng.
 
-Người đàn ông lên bậc xe. Đi đến hàng ghế giữa — ngồi xuống ghế thứ tư. Mở hộp. Lấy ra một chiếc USB — vỏ kim loại đen — xưa — đã trầy.
+Người đàn ông lên bậc xe. Đi đến hàng ghế giữa — ngồi xuống ghế thứ tư. Mở hộp ra. Lấy ra một chiếc USB — vỏ kim loại đen — xưa — đã trầy.
 
 Xe lăn bánh.
 
@@ -72,9 +72,9 @@ Xe lăn bánh.
 
 Người đàn ông ngồi yên. Vuốt USB. Đầu ngón tay anh cử động chậm — như đang cảm USB lần đầu.
 
-Người khách quan sát. Anh trạc tuổi bốn hai — tóc đã có sợi bạc — mắt sâu — vẻ người bận rộn.
+Người khách quan sát. Anh trạc tuổi bốn hai — tóc đã có sợi bạc — mắt sâu — vẻ người bận rộn lắm.
 
-Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng. Tắt.
+Ông cụ ghế đầu vặn radio. Lạo xạo hoài. "...quê nhà..." vọng xa. Tắt.
 
 [pause:500ms]
 
@@ -94,7 +94,7 @@ Anh ghế tư nhìn về phía đó.
 
 "Toàn..."
 
-Người đàn ông nói rất nhỏ.
+Người đàn ông nói rất nhỏ xíu.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
@@ -102,7 +102,7 @@ Người đàn ông nói rất nhỏ.
 
 Xe đi qua đó. Nhà tập thể khuất.
 
-Người đàn ông quay đầu lại. Đặt tay lên USB. Nín thở vài giây.
+Người đàn ông quay đầu lại nhìn. Đặt tay lên USB. Nín thở vài giây.
 
 ---
 
@@ -176,7 +176,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Tài gật. Mắt đỏ.
+Tài gật đầu. Mắt đỏ hoe.
 
 "Tôi nhớ. Tôi không xoay tiền — không kịp gọi lại — không kịp cứu. Toàn không trách tôi — Toàn dặn tôi chăm con Toàn. Tôi đã chăm — ba năm — đem hai cháu đi học — đem đi chơi cuối tuần — như cha. Nhưng USB này — tôi không buông được."
 
@@ -190,13 +190,13 @@ Tài gật. Mắt đỏ.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Sóc Sơn — cây thông lớn — bến không tên. Tiếng chuông ngân nhẹ. Một hồi. Lặng.
+Xe chậm lại rồi. Ngã ba Sóc Sơn — cây thông lớn — bến không tên. Tiếng chuông ngân nhẹ nhàng. Một hồi. Lặng yên.
 
-Tài cất USB vào hộp giấy. Đứng dậy.
+Tài cất USB vào hộp giấy. Đứng dậy ngay.
 
 "Chào anh."
 
-Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển.
+Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển gì.
 
 Bác tài: "Chưa tới lúc."
 
@@ -204,17 +204,17 @@ Tài bước xuống dưới.
 
 [pause:1200ms]
 
-Bên ngoài — Tài đi vào sân sau bệnh viện. Vườn cây thông nhỏ — đất mềm vì mưa.
+Bên ngoài — Tài đi vào sân sau bệnh viện đó. Vườn cây thông nhỏ — đất mềm vì mưa.
 
 Người đàn ông khẽ quỳ. Đào hố nhỏ bằng tay. Đặt USB vào trong. Lấp đất lên cao.
 
 Cúi đầu.
 
-Anh ấy chớp mắt — nhìn qua cửa sổ. Bên hố — Toàn xuất hiện — mặc áo sơ mi xanh — vuốt vai Tài một lần. Cười nhẹ nhàng.
+Anh ấy chớp mắt — nhìn qua cửa sổ xe. Bên hố — Toàn xuất hiện — mặc áo sơ mi xanh — vuốt vai Tài một lần. Cười nhẹ nhàng.
 
-Khải Phong chớp lần nữa. Người tên Toàn tan ra.
+Khải Phong lại chớp mắt. Người tên Toàn tan ra.
 
-Tài ngẩng đầu. Lau khóe mắt. Đứng dậy. Vỗ tay phủi đất.
+Tài ngẩng đầu. Lau khóe mắt. Đứng dậy rồi. Vỗ tay phủi đất.
 
 [pause:1500ms]
 
@@ -224,9 +224,9 @@ Tài ngẩng đầu. Lau khóe mắt. Đứng dậy. Vỗ tay phủi đất.
 
 Xe lăn bánh — rời ngã ba Sóc Sơn.
 
-Ghế tư trống. Trên sàn — một mẩu nhãn nhỏ rơi (nhãn dán trên USB bong khi anh cầm). người khách nhặt. Nhãn — màu trắng — có chữ mờ.
+Ghế tư trống. Trên sàn — một mẩu nhãn nhỏ rơi (nhãn dán trên USB bong khi anh cầm). người khách nhặt lên. Nhãn — màu trắng — có chữ mờ.
 
-Bỏ vào túi. Vật thứ mười bảy.
+Bỏ vào túi. Vật thứ mười bảy này.
 
 Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
@@ -242,18 +242,18 @@ Người đàn ông ấy nhói. Có. anh đã nhỡ một cuộc gọi nào đó
 
 Cuộc gọi của Hạ Vy?
 
-Người đàn ông không nhớ rõ ràng. Cảm giác — không phải đêm Hạ Vy tai nạn — cuộc gọi khác — trước đêm tai nạn.
+Người đàn ông không nhớ rõ ràng. Cảm giác — không phải đêm Hạ Vy tai nạn — cuộc gọi khác — trước đêm tai nạn đó.
 
-Bác tài liếc gương. "Vào đêm mười bảy. Con bắt đầu cảm thấy lỡ một cuộc gọi. Đêm sau sẽ rõ hơn về cuộc gọi đó. Đừng vội."
+Bác tài liếc gương. "Vào đêm mười bảy này. Con bắt đầu cảm thấy lỡ một cuộc gọi nào đó. Đêm sau sẽ rõ hơn về cuộc gọi đó. Đừng vội nhé."
 
-Khải Phong ấy gật. Không hỏi.
+Khải Phong ấy gật đầu. Không hỏi gì.
 
 Đêm thứ mười bảy — anh đếm thêm. Xe đi tiếp. Phía sau — Sóc Sơn khuất. Tài ở lại đứng — nhìn hố đất đã lấp — USB Toàn đã chôn.
 
 
 [pause:800ms]
 
-Người khách ngồi. USB không cùng cụm cúc — vật riêng. Diversify cụm tiếp tục.
+Người khách ngồi. USB không cùng cụm cúc — vật riêng. Diversify cụm tiếp tục thêm.
 
 Người đàn ông ngẫm về Hạ Vy. Đêm trước — anh ấy nhớ tên bà ngoại Liên + vườn cúc. Đêm này — anh cố nhớ tiếp.
 
@@ -261,16 +261,16 @@ Hình ảnh — phòng trọ Khâm Thiên năm cuối đại học — Hạ Vy n
 
 Người khách cố nhớ — sau Hạ Vy mất người đàn ông đem ảnh đi đâu. Cảm giác — anh ấy cất ảnh vào hộp cùng quần áo Hạ Vy — đem về quê Hải Phòng gửi bố mẹ Hạ Vy.
 
-Anh không giữ ảnh. Anh ấy Phong chỉ giữ kỉ niệm — không vật ngoài. Hình bóng đàn ông ấy Phong đã không nhìn ảnh từ ngày Hạ Vy mất.
+Anh không giữ ảnh đó. Anh ấy Phong chỉ giữ kỉ niệm — không vật ngoài. Hình bóng đàn ông ấy Phong đã không nhìn ảnh từ ngày Hạ Vy mất.
 
-Người khách nhói — đáng lẽ người đàn ông nên giữ ảnh. anh ấy đã sai khi gửi bố mẹ Hạ Vy. Bố mẹ Hạ Vy có ảnh — anh không có. người khách chỉ có kỉ niệm trong đầu — kỉ niệm mờ dần.
+Người khách nhói — đáng lẽ người đàn ông nên giữ ảnh mới đúng. anh ấy đã sai khi gửi bố mẹ Hạ Vy. Bố mẹ Hạ Vy có ảnh — anh không có. người khách chỉ có kỉ niệm trong đầu — kỉ niệm mờ dần.
 
-Bác tài liếc gương. "Đêm sau con sẽ nhớ — bố mẹ Hạ Vy giữ ảnh thế nào — có khi nào con liên lạc lại để xin lại ảnh không. Đừng vội."
+Bác tài liếc gương. "Đêm sau con sẽ nhớ — bố mẹ Hạ Vy giữ ảnh thế nào — có khi nào con liên lạc lại để xin lại ảnh không. Đừng vội nhé."
 
-Người đàn ông gật. Lệ rơi nhẹ nhàng.
+Người đàn ông gật đầu. Lệ rơi nhẹ nhàng.
 
-Đêm thứ mười bảy kết thúc. anh ấy cố giữ hình ảnh ảnh hai đứa cài cúc tai trong vườn bà ngoại Liên — kỉ niệm anh đã không giữ vật chứng — chỉ giữ trong đầu. Hình ảnh trong đầu sẽ mờ dần — vật chứng không có để xem lại.
+Đêm thứ mười bảy kết thúc. anh ấy cố giữ hình ảnh ảnh hai đứa cài cúc tai trong vườn bà ngoại Liên — kỉ niệm anh đã không giữ vật chứng — chỉ giữ trong đầu. Hình ảnh trong đầu sẽ mờ dần — vật chứng không có để xem lại đâu.
 
-Người khách nhìn ra cửa sổ xe — đường khuya vắng — chỉ có đèn xe — không gió. Phía xa — vài ngọn đèn xóm — chưa ngủ. Đêm tháng tư — mưa đã ngớt — không khí ẩm — không lạnh buốt.
+Người khách nhìn ra cửa sổ xe — đường khuya vắng — chỉ có đèn xe — không gió. Phía xa — vài ngọn đèn xóm — chưa ngủ yên. Đêm tháng tư — mưa đã ngớt — không khí ẩm — không lạnh buốt.
 
-Người đàn ông cảm giác — mỗi đêm anh ấy đang dần đầy túi vật — và cũng dần đầy ký ức. Hai song song. Túi vật vật lý — ký ức tinh thần. Đến đêm cuối — túi sẽ đầy chín mươi vật — ký anh sẽ trở lại trọn vẹn. 
+Người đàn ông cảm giác — mỗi đêm anh ấy đang dần đầy túi vật — và cũng dần đầy ký ức. Hai song song. Túi vật vật lý — ký ức tinh thần. Đến đêm cuối — túi sẽ đầy chín mươi vật — ký anh sẽ trở lại trọn vẹn hơn. 

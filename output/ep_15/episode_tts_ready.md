@@ -12,11 +12,11 @@ Tác giả: Hắc Dạ Ký.
 
 [pause:600ms]
 
-Series: Chuyến xe cuối cùng về đâu.
+Loạt truyện: Chuyến xe cuối cùng về đâu.
 
 [pause:600ms]
 
-Ai cũng có một chuyến xe chưa nói lời tạm biệt.
+Ai cũng có một chuyến xe chưa kịp nói lời tạm biệt với người mình thương.
 
 [pause:1000ms]
 
@@ -35,7 +35,7 @@ intensity_level: 0.55
 quang_memory_fragment: M3 (Khải Phong ngẫm Hạ Vy có tự ý không, [pause:250ms] kết luận không)
 object_sub_arc: gương vỡ (vật ngoài cluster cúc, [pause:250ms] diversify symbol)
 callback_target: ep_11 (driver mention [DIALOGUE_SEG_START]"đêm mười một con đã thấy cậu trai đem vòng cổ chị"[DIALOGUE_SEG_END])
-passenger_main: nam 31 Phong Hoài Đức (định tự tử mười năm trước, [pause:250ms] gương vỡ cứu)
+passenger_main: nam 31 Duy Khiêm Đức (định tự tử mười năm trước, [pause:250ms] gương vỡ cứu)
 signature_object: OBJ_GUONG_VO (mảnh gương vỡ đêm Phong định không sống)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Hoài Đức
@@ -54,23 +54,23 @@ arc_design_compliant: bible/21 R33-R38 + R36 callback EP11
 
 Trời đã về đêm. Đường vắng tanh. Xe đêm trôi qua đoạn đường ven hồ Đồng Mô, Hoài Đức. Đèn pha quét đi quét lại trên hàng cây, [pause:250ms] không có ai khác trên đường.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ mười lăm, [pause:250ms] Khải Phong đếm thêm. Trong túi áo gió Khải Phong, [pause:250ms] mười bốn vật. Đêm qua thêm sợi chỉ vàng thêu cúc từ khăn bà Tâm Đan.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười lăm, [pause:250ms] Khải Phong đếm thêm. Trong túi áo gió Khải Phong, [pause:250ms] mười bốn vật rồi. Đêm qua thêm sợi chỉ vàng thêu cúc từ khăn bà Tâm Đan.
 
-Bác tài lái. Hôm nay bác tài liếc gương, [pause:250ms] dừng trên Khải Phong lâu hơn thường. Trước khi xe dừng đón hành khách, [pause:250ms] bác tài cất lời. Một câu, [pause:250ms] câu thứ ba không nằm trong hai câu chuẩn.
+Bác tài lái. Hôm nay bác tài liếc gương, [pause:250ms] dừng trên Khải Phong lâu hơn thường. Trước khi xe dừng đón hành khách, [pause:250ms] bác tài cất lời. Một câu, [pause:250ms] câu thứ ba không nằm trong hai câu như mọi khi.
 
 [DIALOGUE_SEG_START]"Đêm mười một, [pause:250ms] con đã thấy cậu trai đem vòng cổ chị Hạ Vy, [pause:250ms] con nhớ không?"[DIALOGUE_SEG_END]
 
-Khải Phong gật. Khải Phong nhớ Đức, [pause:250ms] chị bác sĩ tên Hạ Vy, [pause:250ms] tai nạn vành đai 3.
+Khải Phong gật đầu. Khải Phong nhớ Đức, [pause:250ms] chị bác sĩ tên Hạ Vy, [pause:250ms] tai nạn vành đai 3.
 
 Bác tài tiếp:
 
 [DIALOGUE_SEG_START]"Đêm nay sẽ có cậu trai khác, [pause:250ms] không phải đem cho chị, [pause:250ms] đem cho chính mình. Cụm vật của con, [pause:250ms] sẽ thêm một vật khác cúc. Cứ giữ lại."[DIALOGUE_SEG_END]
 
-Khải Phong gật. Không hỏi thêm.
+Khải Phong gật đầu. Không hỏi thêm.
 
-Xe chậm lại trước một bệnh viện tâm thần ngoại ô, [pause:250ms] biển [DIALOGUE_SEG_START]"Bệnh viện Tâm thần Hoài Đức"[DIALOGUE_SEG_END], [pause:250ms] cổng còn mở, [pause:250ms] đèn vàng hắt ra. Một thanh niên đứng đợi bên cổng. Khoảng ba mươi mốt tuổi. Áo gió đen, [pause:250ms] quần jeans xưa, [pause:250ms] túi vải nhỏ trên vai phải.
+Xe chậm lại trước một bệnh viện tâm thần ngoại ô, [pause:250ms] biển [DIALOGUE_SEG_START]"Bệnh viện Tâm thần Hoài Đức"[DIALOGUE_SEG_END], [pause:250ms] cổng còn mở, [pause:250ms] đèn vàng hắt ra. Một thanh niên đứng đợi bên cổng đó. Tuổi khoảng ba mươi mốt. Áo gió đen, [pause:250ms] quần jeans xưa, [pause:250ms] túi vải nhỏ trên vai phải anh.
 
-Người đàn ông bước lên xe. Đi qua hàng ghế đầu, [pause:250ms] ngồi xuống ghế thứ sáu. Đặt túi vải lên đùi. Mở. Lấy ra một mảnh gương tan, [pause:250ms] cỡ bàn tay, [pause:250ms] đã được cuốn vải bông quanh mép sắc.
+Người đàn ông bước lên xe. Đi qua hàng ghế đầu, [pause:250ms] ngồi xuống ghế thứ sáu. Đặt túi vải lên đùi. Mở ra. Lấy ra một mảnh gương tan, [pause:250ms] cỡ bàn tay, [pause:250ms] đã được cuốn vải bông quanh mép sắc.
 
 Xe lăn bánh.
 
@@ -86,7 +86,7 @@ Khải Phong quan sát từ ghế ba. Mặt anh gầy. Hai mắt thâm, [pause:2
 
 Cánh tay trái anh, [pause:250ms] phần cổ tay, [pause:250ms] Khải Phong thấy được vết sẹo dài, [pause:250ms] mờ, [pause:250ms] nhưng còn rõ ràng.
 
-Ông cụ ghế đầu vặn radio. Lạo xạo. [DIALOGUE_SEG_START]"...quê nhà..."[DIALOGUE_SEG_END] vọng. Tắt.
+Ông cụ ghế đầu vặn radio. Lạo xạo hoài. [DIALOGUE_SEG_START]"...quê nhà..."[DIALOGUE_SEG_END] vọng xa. Tắt.
 
 [pause:500ms]
 
@@ -106,7 +106,7 @@ Anh ghế sáu nhìn về phía đó. Mắt anh trống, [pause:250ms] vài giâ
 
 [DIALOGUE_SEG_START]"Tôi..."[DIALOGUE_SEG_END]
 
-Người đàn ông nói rất nhỏ.
+Người đàn ông nói rất nhỏ xíu.
 
 Đồng hồ trên xe, [pause:250ms] kim phút nhích một, [pause:250ms] hai, [pause:250ms] đến mười.
 
@@ -114,7 +114,7 @@ Người đàn ông nói rất nhỏ.
 
 Xe đi qua đó. Phòng trọ khuất. Bóng thanh niên khuất, [pause:250ms] chỉ là bóng thanh niên anh mười năm trước.
 
-Người đàn ông quay đầu lại. Đặt mảnh gương lên đùi. Hơi thở đều.
+Người đàn ông quay đầu lại nhìn. Đặt mảnh gương lên đùi. Hơi thở đều.
 
 ---
 
@@ -124,7 +124,7 @@ Người đàn ông quay đầu lại. Đặt mảnh gương lên đùi. Hơi th
 
 [DIALOGUE_SEG_START]"Tôi là Phong. Ba mươi mốt tuổi. Tôi ở Hoài Đức, [pause:250ms] quê. Tôi làm thợ điện tự do, [pause:250ms] Hà Nội."[DIALOGUE_SEG_END]
 
-Giọng anh đều, [pause:250ms] bình tĩnh, [pause:250ms] không gấp, [pause:250ms] không thấp xuống.
+Giọng anh đều, [pause:250ms] bình tĩnh, [pause:250ms] không gấp, [pause:250ms] không thấp xuống dưới.
 
 [DIALOGUE_SEG_START]"Mười năm trước, [pause:250ms] tôi hai mươi mốt tuổi, [pause:250ms] sinh viên năm cuối Đại học Công nghiệp. Tôi không thi đỗ Bách khoa năm đầu, [pause:250ms] phải xuống cao đẳng, [pause:250ms] sau đó liên thông lên đại học, [pause:250ms] học chậm hai năm so với bạn cùng tuổi."[DIALOGUE_SEG_END]
 
@@ -142,7 +142,7 @@ Giọng anh đều, [pause:250ms] bình tĩnh, [pause:250ms] không gấp, [paus
 
 [pause:1200ms]
 
-[DIALOGUE_SEG_START]"Tôi ngồi trước gương treo tường. Nhìn mình. Tôi thấy mặt mình, [pause:250ms] gầy, [pause:250ms] mệt, [pause:250ms] già hơn tuổi. Tôi nghĩ: 'Tôi không sống tiếp được. Bố không thương. Em chia tay. Tôi không có gì.'"[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Tôi ngồi trước gương treo tường. Nhìn mình. Tôi thấy mặt mình, [pause:250ms] gầy, [pause:250ms] mệt, [pause:250ms] già hơn tuổi. Tôi nghĩ: 'Tôi không sống tiếp được. Bố không thương. Cô gái gái gái chia tay. Tôi không có gì.'"[DIALOGUE_SEG_END]
 
 [DIALOGUE_SEG_START]"Tôi đập gương. Gương tan, [pause:250ms] mảnh vỡ rơi xuống sàn. Tôi nhặt một mảnh, [pause:250ms] cứa cổ tay trái, [pause:250ms] mạnh, [pause:250ms] máu chảy ngay lúc đó."[DIALOGUE_SEG_END]
 
@@ -154,7 +154,7 @@ Giọng anh đều, [pause:250ms] bình tĩnh, [pause:250ms] không gấp, [paus
 
 [pause:1500ms]
 
-[DIALOGUE_SEG_START]"Tôi sợ. Người con không sợ chết, [pause:250ms] tôi sợ không nhận ra chính mình. Tôi nghĩ: 'Nếu tôi chết bây giờ, [pause:250ms] người chết là ai? Người không phải tôi.'"[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Tôi sợ. Người con không sợ chết, [pause:250ms] tôi sợ không nhận ra chính mình. Tôi đây đây nghĩ: 'Nếu tôi chết bây giờ, [pause:250ms] người chết là ai? Hình bóng người không phải tôi.'"[DIALOGUE_SEG_END]
 
 [DIALOGUE_SEG_START]"Tôi lấy điện thoại, [pause:250ms] gọi cấp cứu. Bệnh viện đến mười phút sau. Cứu kịp. Mất máu nhưng không nguy hiểm."[DIALOGUE_SEG_END]
 
@@ -176,13 +176,13 @@ Giọng anh đều, [pause:250ms] bình tĩnh, [pause:250ms] không gấp, [paus
 
 [DIALOGUE_SEG_START]"Đôi khi đêm tôi vuốt mảnh gương, [pause:250ms] nhớ đêm đó, [pause:250ms] nhớ mình đã chọn gọi cấp cứu thay vì để máu chảy hết. Mảnh gương cứu tôi, [pause:250ms] không phải bác người, [pause:250ms] là chính tôi đã thấy mình không quen trong gương tan."[DIALOGUE_SEG_END]
 
-[DIALOGUE_SEG_START]"Đêm nay, [pause:250ms] đúng mười năm, [pause:250ms] tôi ba mươi mốt. Tôi vừa hoàn thành điều trị tâm lý, [pause:250ms] bác sĩ bảo: 'Em đã ổn. Em không cần thuốc nữa. Em đã đi qua.'"[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Đêm nay, [pause:250ms] đúng mười năm, [pause:250ms] tôi ba mươi mốt. Tôi vừa hoàn thành điều trị tâm lý, [pause:250ms] bác sĩ bảo: 'Em đã ổn. Đứa em không cần thuốc nữa. Bóng người con gái ấy đã đi qua.'"[DIALOGUE_SEG_END]
 
 Bác tài cất lời.
 
 [DIALOGUE_SEG_START]"Con đã nhớ ra chưa?"[DIALOGUE_SEG_END]
 
-Phong gật.
+Phong gật đầu.
 
 [DIALOGUE_SEG_START]"Tôi nhớ. Tôi đã định không sống, [pause:250ms] nhưng không nhận ra mình trong gương tan, [pause:250ms] vì vậy tôi gọi cứu. Mảnh gương là chứng tích tôi đã chọn sống, [pause:250ms] mười năm tôi mang theo, [pause:250ms] bây giờ tôi đủ vững, [pause:250ms] không cần vật chứng nữa."[DIALOGUE_SEG_END]
 
@@ -196,13 +196,13 @@ Phong gật.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Hoài Đức, [pause:250ms] cây nhãn cổ, [pause:250ms] bến không tên. Chuông xe vọng. Nhịp đơn. Im.
+Xe chậm lại rồi. Ngã ba Hoài Đức, [pause:250ms] cây nhãn cổ, [pause:250ms] bến không tên. Chuông xe vọng xa. Nhịp đơn. Im.
 
-Anh cất mảnh gương vào túi vải. Đứng dậy.
+Anh cất mảnh gương vào túi vải kia. Đứng dậy ngay.
 
 [DIALOGUE_SEG_START]"Chào anh."[DIALOGUE_SEG_END]
 
-Trước khi xuống, [pause:250ms] đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển.
+Trước khi xuống, [pause:250ms] đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển gì.
 
 Bác tài: [DIALOGUE_SEG_START]"Chưa tới lúc."[DIALOGUE_SEG_END]
 
@@ -212,13 +212,13 @@ Người đàn ông bước xuống dưới.
 
 Bên ngoài, [pause:250ms] anh đi xuống bờ hồ Đồng Mô, [pause:250ms] bậc đá cũ vang dưới chân. Phía giữa hồ, [pause:250ms] mặt nước phẳng, [pause:250ms] đèn vàng từ đường phản chiếu xuống.
 
-Anh đứng. Lấy mảnh gương ra khỏi túi. Cầm trong lòng bàn tay. Vuốt lần cuối. Nhìn mặt mình trong gương lần cuối, [pause:250ms] lần này, [pause:250ms] Phong nhận ra Phong, [pause:250ms] ba mươi mốt, [pause:250ms] bình tĩnh, [pause:250ms] không gầy như mười năm trước.
+Người đàn ông đứng. Lấy mảnh gương ra khỏi túi. Cầm trong lòng bàn tay. Vuốt lần cuối. Nhìn mặt mình trong gương lần cuối, [pause:250ms] lần này, [pause:250ms] Phong nhận ra Phong, [pause:250ms] ba mươi mốt, [pause:250ms] bình tĩnh, [pause:250ms] không gầy như mười năm trước.
 
 Ném gương xuống hồ. Mảnh gương rơi, [pause:250ms] chạm mặt nước, [pause:250ms] chìm.
 
-Khải Phong chớp mắt, [pause:250ms] nhìn qua cửa sổ. Bên Phong, [pause:250ms] bóng Phong hai mốt tuổi xuất hiện, [pause:250ms] gầy, [pause:250ms] mặt buồn, [pause:250ms] đứng cạnh Phong ba mốt. Phong ba mốt vuốt vai Phong hai mốt một lần. Cười nhẹ nhàng.
+Khải Phong chớp mắt, [pause:250ms] nhìn qua cửa sổ xe. Bên Phong, [pause:250ms] bóng Phong hai mốt tuổi xuất hiện, [pause:250ms] gầy, [pause:250ms] mặt buồn, [pause:250ms] đứng cạnh Phong ba mốt. Phong ba mốt vuốt vai Phong hai mốt một lần. Cười nhẹ nhàng.
 
-Khải Phong chớp lần nữa. Phong hai mốt tan.
+Khải Phong lại chớp mắt. Phong hai mốt tan.
 
 Phong ba mốt đứng. Nhìn hồ. Không khóc.
 
@@ -230,7 +230,7 @@ Phong ba mốt đứng. Nhìn hồ. Không khóc.
 
 Xe lăn bánh, [pause:250ms] rời ngã ba Hoài Đức.
 
-Ghế sáu trống. Trên sàn, [pause:250ms] một mảnh vải bông cuốn nhỏ rơi, [pause:250ms] vải bọc mép gương bong ra khi Phong cầm. Khải Phong nhặt. Vải bông, [pause:250ms] mềm, [pause:250ms] màu trắng đã ngả vàng.
+Ghế sáu trống. Trên sàn, [pause:250ms] một mảnh vải bông cuốn nhỏ rơi, [pause:250ms] vải bọc mép gương bong ra khi Phong cầm. Khải Phong nhặt lên. Vải bông, [pause:250ms] mềm, [pause:250ms] màu trắng đã ngả vàng.
 
 Bỏ vào túi. Vật thứ mười lăm.
 
@@ -238,25 +238,25 @@ Bác tài lái. Kim phút cabin nhích, [pause:250ms] một, [pause:250ms] hai, 
 
 [pause:1500ms]
 
-Khải Phong ngồi. Mở túi, [pause:250ms] đếm, [pause:250ms] mười lăm vật. Hai vật cúc, [pause:250ms] và một vải bông gương tan. Vải bông không cùng cụm cúc. Diversify.
+Khải Phong ngồi. Mở túi, [pause:250ms] đếm, [pause:250ms] mười lăm vật rồi. Hai vật cúc, [pause:250ms] và một vải bông gương tan. Vải bông không cùng cụm cúc khác. Diversify.
 
-Khải Phong ngẫm, [pause:250ms] Hạ Vy, [pause:250ms] cô có bao giờ định không sống không?
+Khải Phong ngẫm, [pause:250ms] cô ấy, [pause:250ms] cô có bao giờ định không sống không?
 
-Khải Phong cố nhớ. Hình ảnh Hạ Vy, [pause:250ms] vai gầy, [pause:250ms] áo trắng, [pause:250ms] bông cúc cài tai. Mặt vẫn mờ. Nhưng cảm giác, [pause:250ms] Hạ Vy không tự ý. Hạ Vy không định không sống. Hạ Vy, [pause:250ms] bị tai nạn? Hay khác?
+Khải Phong cố nhớ. Hình ảnh người yêu xưa, [pause:250ms] vai gầy, [pause:250ms] áo trắng, [pause:250ms] bông cúc cài tai. Mặt vẫn mờ. Nhưng cảm giác, [pause:250ms] cô gái ấy không tự ý. cô ấy không định không sống. người yêu xưa, [pause:250ms] bị tai nạn gì đó? Hay khác?
 
 Khải Phong nhói. Có một va đập, [pause:250ms] một âm thanh thật to, [pause:250ms] một mặt đường đêm, [pause:250ms] mưa.
 
 Khải Phong không thấy rõ ràng. Chỉ cảm giác.
 
-Hạ Vy đi đột ngột, [pause:250ms] không tự ý.
+Cô gái ấy đi đột ngột, [pause:250ms] không tự ý.
 
-Bác tài liếc gương. [DIALOGUE_SEG_START]"Vào đêm mười lăm. Một phần ba phase warming đã qua. Đêm mười sáu sẽ có hành khách family thứ ba, [pause:250ms] không phải mẹ, [pause:250ms] không phải bố, [pause:250ms] là khác. Cứ giữ vật. Cụm sẽ rõ dần."[DIALOGUE_SEG_END]
+Bác tài liếc gương. [DIALOGUE_SEG_START]"Vào đêm mười lăm. Một phần ba phase warming đã qua. Đêm mười sáu sẽ có hành khách family thứ ba, [pause:250ms] không phải mẹ, [pause:250ms] không phải bố, [pause:250ms] là khác. Cứ giữ vật này. Cụm sẽ rõ dần."[DIALOGUE_SEG_END]
 
-Khải Phong gật.
+Khải Phong gật đầu.
 
 Đêm thứ mười lăm, [pause:250ms] Khải Phong đếm thêm. Xe đi tiếp về phía đường vành đai. Phía sau, [pause:250ms] Hoài Đức khuất. Phong ở lại bên hồ, [pause:250ms] đứng, [pause:250ms] không vội đi, [pause:250ms] đợi mặt nước phẳng lại sau gợn sóng từ mảnh gương chìm.
 
 
 [pause:800ms]
 
-Khải Phong ngồi. Vật vải bông cuốn gương, [pause:250ms] không cùng cụm cúc. Diversify cụm vật. Khải Phong cảm thấy, [pause:250ms] túi áo gió đang dần đầy, [pause:250ms] mỗi đêm thêm một vật, [pause:250ms] mỗi vật một câu chuyện không lặp lại.
+Khải Phong ngồi. Vật vải bông cuốn gương, [pause:250ms] không cùng cụm cúc. Diversify cụm vật khác. Khải Phong cảm thấy, [pause:250ms] túi áo gió đang dần đầy, [pause:250ms] mỗi đêm thêm một vật, [pause:250ms] mỗi vật một câu chuyện không lặp lại đâu. 
