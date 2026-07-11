@@ -170,8 +170,9 @@ claims:
     status: released
   rule_enforcer_sweep:
     claimed_at: '2026-07-11T10:40:04'
+    released_at: '2026-07-11T14:07:36'
     session: CMD_BUILD
-    status: active
+    status: released
   svaf_patterns_backlog:
     claimed_at: '2026-07-04T21:37:49'
     released_at: '2026-07-04T23:14:23'
