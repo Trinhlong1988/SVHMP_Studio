@@ -295,3 +295,21 @@ nó chỉ sửa stdout của CHÍNH process, không đổi cách decode output c
 
 **Đề xuất quy trình (chống tái diễn):** grep repo tìm `text=True` không kèm `encoding=` trong mọi
 tool có thể chạy trên hook/CI = nợ tiềm ẩn cùng lớp — nên quét định kỳ.
+
+## Bẫy R86 fix đẩy word_count vượt trần hard_ceiling (CMD_BUILD, 11/7, DEBT-018)
+**Triệu chứng:** Sửa vi phạm R86 (EOL NGA/NANG/HOI) bằng cách thêm 1 từ cuối câu (vd "đó", "rồi",
+"ấy") ở nhiều câu trong 1 tập — với tập vốn đã gần trần `hard_ceiling` (2900 từ, ep_25 gốc ~2870+),
+tổng số từ thêm vào (20-40 từ cho 1 tập ~30 vi phạm) đủ đẩy `word_count` VƯỢT trần → `post_render_gate.py`
+FAIL dù R86 đã sạch 100%. Case thật: ep_25 sau fix 37 vi phạm → 2908 từ > 2900 trần.
+
+**Fix:** Sau khi sửa xong R86 (0 vi phạm) và TRƯỚC khi commit, LUÔN chạy `post_render_gate.py --ep N`
+đầy đủ (không chỉ `qa_eol_diacritic.py`) — nếu word_count FAIL, cắt bớt ở 2 chỗ: (1) đổi các fix
+2-từ (vd "hiện lên", "lần hai") thành fix 1-từ tương đương an toàn tone (vd "đó"); (2) cắt các cụm
+mô tả dư thừa KHÔNG liên quan R86 (vd câu tường thuật có 2 mệnh đề lặp ý — "đã có lâu năm" trùng
+"bệnh xưa") — chỉ cắt ở câu tường thuật/mô tả, KHÔNG cắt thoại nhân vật (giữ nguyên giọng nhân vật
+theo R195/R197). Verify lại `qa_eol_diacritic.py` (vẫn 0) rồi mới `post_render_gate.py` lại.
+
+**Đề xuất quy trình (chống tái diễn cho 24 tập R86 còn lại DEBT-018):** với các tập đã gần trần
+(>2800 từ trước khi sửa, xem qua `wc` nhanh), ưu tiên fix bằng REORDER (không thêm từ) hơn fix bằng
+THÊM TỪ ở những câu có thể đảo được — chỉ thêm từ khi reorder không khả thi (câu 1 từ đơn, tên riêng
+cuối câu, v.v).

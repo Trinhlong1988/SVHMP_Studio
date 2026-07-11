@@ -56,21 +56,21 @@ arc_design_compliant: bible/21 R33-R38 + R39 word count
 
 [pause:800ms]
 
-Cuối tháng tư. Trời ẩm. Xe đêm chạy chậm qua đường ven cánh đồng Hà Nam, Hà Nội. Hàng cây ven đường — lá còn rơi vài giọt mưa cuối ngày. Đèn pha quét lên ruộng lúa mới cấy — nước trong ruộng in sao đêm — mây đã tan sau mưa.
+Cuối tháng tư. Trời ẩm ướt. Xe đêm chạy chậm qua đường ven cánh đồng Hà Nam, Hà Nội này. Hàng cây ven đường — lá còn rơi vài giọt mưa cuối ngày. Đèn pha quét lên ruộng lúa mới cấy — nước trong ruộng in sao đêm — mây đã tan sau mưa.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi tư — Khải Phong đếm thêm. Trong túi áo gió anh — hai mươi ba vật. Đêm qua thêm mẩu phong bì kraft của Đức Vinh.
+Khải Phong ngồi ghế thứ ba. Đêm thứ hai mươi tư — Khải Phong đếm thêm. Trong túi áo gió anh — hai mươi ba vật rồi. Đêm qua thêm mẩu phong bì kraft của Đức Vinh.
 
 Bác tài lái.
 
-Mặt đường ướt sũng. Hai bên đường — cánh đồng — yên — không gió. Đèn pha xe quét lên hàng bồ đề non trồng ven đường mới — bồ đề non — gốc còn buộc dây tre.
+Mặt đường ướt sũng nước mưa. Hai bên đường — cánh đồng — yên — không gió. Đèn pha xe quét lên hàng bồ đề non trồng ven đường mới — bồ đề non — gốc còn buộc dây tre.
 
-Xe chậm lại trước một trường tiểu học xưa — biển "Trường tiểu học Đại Lộc" — cổng sắt cũ đã đóng — đèn vàng treo trên cột cổng còn sáng yếu. Tường trường có vết nứt — đã sơn lại nhưng vẫn lộ.
+Xe chậm lại trước một trường tiểu học xưa — biển "Trường tiểu học Đại Lộc" — cổng sắt cũ đã đóng — đèn vàng treo trên cột cổng còn sáng yếu. Tường trường có vết nứt — đã sơn lại nhưng vẫn lộ ra.
 
-Một bà đứng đợi bên cổng. Khoảng sáu mươi tuổi. Áo bà ba nâu — vạt áo dài quá đầu gối. Tóc búi gọn sau ót — tóc bạc nửa. Tay phải ôm cuốn vở học sinh — bìa đã ố vàng — vở mỏng tang.
+Một bà đứng đợi bên cổng trường. Tuổi khoảng sáu mươi. Áo bà ba nâu — vạt áo dài quá đầu gối. Tóc búi gọn sau ót — tóc bạc nửa rồi. Tay phải ôm cuốn vở học sinh — bìa đã ố vàng — vở mỏng tang.
 
-Bà cụ khẽ bước lên xe. Đi xuống lối giữa — chân chậm — bà già — đi từng bước. Ngồi xuống ghế thứ bảy.
+Bà cụ khẽ bước lên xe. Đi xuống lối giữa — chân chậm — bà già — đi từng bước. Ngồi xuống ghế thứ bảy đó.
 
-Đặt vở lên đùi. Mở. Trong vở — chữ tay học sinh — nét chữ to vụng — bìa vở có dán nhãn xưa — viết bằng bút bi xanh: "Mai Anh — Lớp 4A — 2010."
+Đặt vở lên đùi. Mở ra. Trong vở — chữ tay học sinh — nét chữ to vụng — bìa vở có dán nhãn xưa — viết bằng bút bi xanh: "Mai Anh — Lớp 4A — 2010."
 
 Xe lăn bánh.
 
@@ -84,13 +84,13 @@ Người bà ngồi yên. Vuốt bìa vở — phía nhãn dán. Bàn tay bà gi
 
 Người khách quan sát từ ghế ba. Bà sáu mươi — tóc bạc nửa đầu — mắt buồn — buồn lâu ngày — không phải buồn mới.
 
-Vở trên đùi bà — bìa ô vuông học sinh — đã ố vàng — nhãn dán bong góc. Năm 2010 — vở mười bốn năm tuổi.
+Vở trên đùi bà — bìa ô vuông học sinh — đã ố vàng — nhãn dán bong góc. Năm 2010 — vở mười bốn năm tuổi rồi.
 
-Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng. Tắt.
+Ông cụ ghế đầu vặn radio. Lạo xạo hoài. "...quê nhà..." vọng xa. Tắt.
 
 [pause:500ms]
 
-Bác tài liếc gương. Không nói. Quay lại.
+Bác tài liếc gương. Không nói. Quay lại nhìn đường.
 
 Bà cụ khẽ lật cuốn vở ra. Trang đầu — chữ học sinh — bài tập làm văn lớp bốn. Đề bài viết bằng chữ in: "Tả cô giáo em yêu nhất."
 
@@ -104,11 +104,11 @@ Xe đi qua xóm xưa. Phía bên trái — căn nhà gạch nhỏ — sân nhỏ
 
 Cạnh sân — bóng bé gái chừng mười tuổi ngồi trên ghế gỗ mun — tay cầm bút — đang viết vở dưới đèn dầu. Áo trắng học sinh. Cài nơ đỏ tóc. Không quay đầu.
 
-Bà ghế bảy nhìn về phía đó. Hơi thở chậm lại.
+Bà ghế bảy nhìn về phía đó. Hơi thở chậm lại dần.
 
 "Mai..."
 
-Bà nói nhỏ — một âm — đầy tiếng thở.
+Bà nói nhỏ — một âm — đầy tiếng thở dài.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
@@ -116,7 +116,7 @@ Bà nói nhỏ — một âm — đầy tiếng thở.
 
 Xe đi qua đó. Nhà gạch khuất. Bé gái cài nơ đỏ khuất.
 
-Người bà quay đầu lại. Vuốt vở trên đùi. Hơi thở đều.
+Người bà quay đầu lại nhìn. Vuốt vở trên đùi. Hơi thở đều.
 
 ---
 
@@ -126,7 +126,7 @@ Người bà quay đầu lại. Vuốt vở trên đùi. Hơi thở đều.
 
 "Em là Xuyến Nhài. Sáu mươi tuổi. Em ở Đại Lộc — Hà Nam — quê. Em làm cán bộ xã đó — về hưu hai năm trước."
 
-Giọng bà trầm — chậm — đều — giọng đã quen kể.
+Giọng bà trầm — chậm — đều — giọng đã quen kể rồi.
 
 "Cháu họ em — Mai Anh — mất mười năm trước. Mười bốn tuổi. Tai nạn xe — chạy đi học về tối — đoạn đường ven đê — xe tải va. Mai mất tại nơi."
 
@@ -192,7 +192,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Xuyến Nhài gật. Mắt đỏ — không khóc — đỏ lâu ngày.
+Xuyến Nhài gật đầu. Mắt đỏ — không khóc — đỏ lâu ngày.
 
 "Em nhớ. Cô gái từ chối đỡ học phí Mai Anh — em ngại — em không phải lý do trực tiếp em mất — nhưng em là một trong những người có thể giúp lúc em cần. Đứa em không giúp. Bóng người con gái ấy không thể chuộc — em chỉ có thể đỡ hai em khác — như cách nói em đã sửa."
 
@@ -206,13 +206,13 @@ Xuyến Nhài gật. Mắt đỏ — không khóc — đỏ lâu ngày.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Hà Nam — cây gạo già — bến không tên — đèn vàng trên cây gạo. Một tiếng chuông. Ngắn. Tan trong sương.
+Xe chậm lại rồi. Ngã ba Hà Nam — cây gạo già — bến không tên — đèn vàng trên cây gạo ấy. Một tiếng chuông. Ngắn. Tan trong sương.
 
-Xuyến Nhài ôm vở. Đứng dậy chậm lại.
+Xuyến Nhài ôm vở đó. Đứng dậy chậm lại một chút.
 
 "Chào con."
 
-Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển.
+Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển gì.
 
 Bác tài: "Chưa tới lúc."
 
@@ -220,15 +220,15 @@ Bà bước xuống — chân chạm đất ướt.
 
 [pause:1200ms]
 
-Bên ngoài — Xuyến Nhài đi vào trường tiểu học Đại Lộc — bảo vệ đã mở cổng — đèn hành lang còn sáng. Văn phòng giáo viên tầng một — cửa đã mở.
+Bên ngoài — Xuyến Nhài đi vào trường tiểu học Đại Lộc — bảo vệ đã mở cổng — đèn hành lang còn sáng. Văn phòng giáo viên tầng một — cửa đã mở ra.
 
 Bà cụ đã đến nơi đó. Đặt vở lên bàn giáo viên — chính giữa bàn — bìa vở hướng lên — nhãn "Mai Anh — Lớp 4A — 2010" lộ rõ ràng. Cúi đầu một lúc.
 
 Người đàn ông chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên bàn giáo viên — Mai Anh xuất hiện — áo trắng học sinh — cài nơ đỏ tóc — đứng cạnh vở — vuốt tóc Xuyến Nhài một lần. Mỉm cười — như tha thứ.
 
-Khải Phong ấy chớp lần nữa. Mai Anh tan ra.
+Khải Phong ấy lại chớp mắt. Mai Anh tan ra.
 
-Xuyến Nhài ngẩng đầu. Lau khóe mắt. Đứng dậy. Đi ra cửa văn phòng — quay lại nhìn vở trên bàn — vở còn ở đó.
+Xuyến Nhài ngẩng đầu. Lau khóe mắt. Đứng dậy rồi. Đi ra cửa văn phòng — quay lại nhìn vở trên bàn — vở còn ở đó.
 
 [pause:1500ms]
 
@@ -238,7 +238,7 @@ Xuyến Nhài ngẩng đầu. Lau khóe mắt. Đứng dậy. Đi ra cửa văn 
 
 Xe lăn bánh — rời ngã ba Hà Nam.
 
-Ghế bảy trống. Trên sàn — một mẩu giấy vở rơi — bong từ trang đầu khi bà lật. anh nhặt. Giấy — ô vuông học sinh — có chữ học sinh mờ — vài từ "Cô giáo em..."
+Ghế bảy trống. Trên sàn — một mẩu giấy vở rơi — bong từ trang đầu khi bà lật trang. anh nhặt lên. Giấy — ô vuông học sinh — có chữ học sinh mờ — vài từ "Cô giáo em..."
 
 Bỏ vào túi áo gió. Vật thứ hai mươi tư.
 
@@ -248,11 +248,11 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 Người khách ngồi. Vở học sinh trong tay người sáu mươi — chữ học sinh mười tuổi đã mất.
 
-Người đàn ông cũng có vở học sinh hồi nhỏ — anh ấy nhớ — vở ô vuông — màu xanh nhạt — anh viết chữ to vụng. Mẹ giữ trong tủ. Mẹ người khách — người đàn ông đã nhớ — còn sống ở quê — vẫy tay khi anh ấy đi học xa.
+Người đàn ông cũng có vở học sinh hồi nhỏ — anh ấy nhớ — vở ô vuông — màu xanh nhạt — anh viết chữ to vụng về. Mẹ giữ trong tủ riêng. Mẹ người khách — người đàn ông đã nhớ — còn sống ở quê — vẫy tay khi anh ấy đi học xa.
 
 Hạ Vy có giúp ai không? Hạ Vy có từ chối ai không?
 
-Người đàn ông cố nhớ. Hình ảnh — phòng trọ Khâm Thiên sau tốt nghiệp — Hạ Vy ngồi bàn vẽ ra — vẽ bài đồ án nhỏ cho khách hàng đầu — Hạ Vy vừa nhận việc văn phòng kiến trúc nhỏ.
+Người đàn ông cố nhớ. Hình ảnh — phòng trọ Khâm Thiên sau tốt nghiệp — Hạ Vy ngồi bàn vẽ ra — vẽ bài đồ án nhỏ cho khách hàng đầu — Hạ Vy vừa nhận việc văn phòng kiến trúc nhỏ ấy.
 
 [pause:1500ms]
 
@@ -270,10 +270,10 @@ Người khách đáp: "OK em — anh nấu xong rồi — anh chờ em — đi 
 
 Hạ Vy đi xe máy — phố Hai Bà Trưng về phố Khâm Thiên — đoạn ngắn — bình thường mười lăm phút. Đêm đó mưa to — Hạ Vy đi chậm hơn — bình thường hai mươi phút sẽ về.
 
-Người đàn ông đợi đến chín giờ. Không thấy về. anh ấy gọi điện. Hạ Vy không bắt.
+Người đàn ông đợi đến chín giờ. Không thấy về. anh ấy gọi điện ngay. Hạ Vy không bắt.
 
-Bác tài liếc gương. "Vào đêm hai mươi tư. Con nhớ chi tiết hơn về đêm cuối — văn phòng Hạ Vy — đường về. Đêm sau con sẽ nhớ rõ hơn — về cuộc gọi đêm đó — vì sao Hạ Vy không bắt. Đừng vội."
+Bác tài liếc gương. "Vào đêm hai mươi tư. Con nhớ chi tiết hơn về đêm cuối — văn phòng Hạ Vy — đường về. Đêm sau con sẽ nhớ rõ hơn — về cuộc gọi đêm đó — vì sao Hạ Vy không bắt. Đừng vội nhé."
 
-Khải Phong gật.
+Khải Phong gật đầu.
 
 Đêm thứ hai mươi tư — người khách đếm thêm. Xe đi tiếp. Phía sau — Hà Nam khuất. Xuyến Nhài ở lại văn phòng giáo viên — vở Mai Anh trên bàn. 

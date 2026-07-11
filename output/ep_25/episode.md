@@ -52,27 +52,27 @@ arc_design_compliant: bible/21 R33-R38 + R39 word count + R36 callback EP15
 
 [pause:800ms]
 
-Trời đã về đêm. Đường vắng tanh. Xe đêm trôi qua đoạn đường ven đồi chè Thái Nguyên, Hà Nội. Đèn pha quét đi quét lại trên hàng cây — không có ai khác trên đường.
+Trời đã về đêm. Đường vắng tanh. Xe đêm trôi qua đoạn đường ven đồi chè Thái Nguyên, Hà Nội này. Đèn pha quét đi quét lại trên hàng cây — không có ai khác trên đường.
 
-Khải Phong ngồi ghế thứ ba. Vào đêm hai mươi lăm. Trong túi áo gió Khải Phong — hai mươi tư vật. Đêm qua thêm mẩu giấy vở học sinh với nét bút "Cô giáo em..."
+Khải Phong ngồi ghế thứ ba. Vào đêm hai mươi lăm. Trong túi áo gió Khải Phong — hai mươi tư vật rồi. Đêm qua thêm mẩu giấy vở học sinh với nét bút "Cô giáo em..."
 
 Bác tài lái. Liếc gương — dừng trên anh lâu hơn thường. Cất lời.
 
 "Đêm mười lăm — con đã thấy cậu trai đem mảnh gương vỡ ném hồ Đồng Mô — con nhớ không?"
 
-Người khách gật. người đàn ông nhớ Phong — đập gương đêm anh hai mốt — sống mười năm — bây giờ ba mươi mốt — ném gương xuống hồ Đồng Mô như kết thúc thời nhớ.
+Người khách gật đầu. người đàn ông nhớ Phong — đập gương đêm anh hai mốt — sống mười năm — bây giờ ba mươi mốt — ném gương xuống hồ Đồng Mô như kết thúc thời nhớ.
 
 Bác tài tiếp:
 
 "Đêm nay sẽ có cậu trai khác — cũng đem một mảnh kính — nhưng không phải mảnh đập tan — là kính phản chiếu chính anh ấy hồi khỏe. Hai mảnh kính — hai câu chuyện khác — cùng cụm vật. Cứ giữ vật con nhặt mỗi đêm."
 
-Khải Phong ấy gật. Câu thứ ba bác tài — không thường — chỉ ở đêm có callback.
+Khải Phong ấy gật đầu. Câu thứ ba bác tài — không thường — chỉ ở đêm có callback.
 
-Xe chậm lại trước một bệnh viện chuyên khoa lao — biển "Bệnh viện Phổi Thái Nguyên" — cổng đã đóng — đèn vàng treo cột cổng còn sáng yếu. Tường bệnh có dấu rêu xanh ở chân — bệnh xưa — đã có lâu năm.
+Xe chậm lại trước một bệnh viện chuyên khoa lao — biển "Bệnh viện Phổi Thái Nguyên" — cổng đã đóng — đèn vàng treo cột cổng còn sáng yếu. Tường bệnh có dấu rêu xanh ở chân — bệnh xưa.
 
-Một người đàn ông đứng đợi bên cổng. Khoảng ba mươi tám tuổi. Áo gió đen — quần kaki nâu. Mặt gầy — quá gầy cho ba lăm tuổi — môi tím nhạt. Tay phải cầm hộp giấy nhỏ.
+Một người đàn ông đứng đợi bên cổng đó. Tuổi khoảng ba mươi tám. Áo gió đen — quần kaki nâu. Mặt gầy — quá gầy cho ba lăm tuổi — môi tím nhạt ấy. Tay phải cầm hộp giấy nhỏ ấy.
 
-Người đàn lên bậc xe. Đi đến hàng ghế giữa — chân chậm — thi thoảng đứng lại để thở. Ngồi xuống ghế thứ chín.
+Người đàn lên bậc xe. Đi đến hàng ghế giữa — chân chậm — thi thoảng đứng lại để thở dốc. Ngồi xuống ghế thứ chín.
 
 Mở hộp giấy. Lấy ra một mảnh kính nhỏ — cỡ bằng hai ngón tay — đã cuốn vải bông quanh mép — vải trắng đã ngả vàng.
 
@@ -86,13 +86,13 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Người đàn ngồi yên. Hơi thở anh chậm — không đều — hơi khò — đứt quãng. Tay trái anh cầm khăn vải — thi thoảng đưa lên miệng — ho nhẹ — không to — như đã quen kìm tiếng ho.
+Người đàn ngồi yên. Hơi thở anh chậm — không đều — hơi khò — đứt quãng hoài. Tay trái anh cầm khăn vải — thi thoảng đưa lên miệng — ho nhẹ — không to — như đã quen kìm tiếng ho.
 
-Người khách quan sát từ ghế ba. Anh gầy — má hóp — môi tím nhạt — mắt sâu. Bệnh phổi nặng — người đàn đoán — có lẽ đã phẫu thuật cắt một phần phổi.
+Người khách quan sát từ ghế ba. Anh gầy — má hóp — môi tím nhạt — mắt sâu. Bệnh phổi nặng — người đàn đoán — có lẽ đã phẫu thuật cắt một phần phổi rồi.
 
-Cổ áo gió anh — anh ấy thấy được — có dấu sẹo dài chạy từ vai xuống ngực — sẹo phẫu thuật đã liền — nhưng còn rõ ràng.
+Cổ áo gió anh — anh ấy thấy được — có dấu sẹo dài chạy từ vai xuống ngực — sẹo phẫu thuật đã liền.
 
-Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng. Tắt.
+Ông cụ ghế đầu vặn radio. Lạo xạo hoài. "...quê nhà..." vọng xa. Tắt.
 
 [pause:500ms]
 
@@ -114,7 +114,7 @@ Anh ghế chín nhìn về phía đó. Mắt anh trống vài giây.
 
 "Tôi..."
 
-Anh nói nhỏ — một từ — kèm tiếng ho nhẹ giữa.
+Anh nói nhỏ — một từ — kèm tiếng ho nhẹ giữa chừng.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
@@ -122,7 +122,7 @@ Anh nói nhỏ — một từ — kèm tiếng ho nhẹ giữa.
 
 Xe đi qua đó. Nhà gạch khuất. Bóng thanh niên ba mươi tuổi khỏe khuất — chính là anh hai năm trước — chưa biết phổi đang phát khối u.
 
-Người đàn quay đầu lại. Vuốt mảnh kính qua vải bông.
+Người đàn quay đầu lại nhìn. Vuốt mảnh kính qua vải bông.
 
 ---
 
@@ -194,7 +194,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Văn gật. Mắt đỏ — không khóc — đỏ vì đã giữ lâu.
+Văn gật đầu. Mắt đỏ — không khóc — đỏ vì đã giữ lâu.
 
 "Tôi nhớ. Người đàn đã không khám định kỳ — đã không bỏ thuốc — đã không nghe bạn. Tôi bây giờ — sống — nhưng nửa phổi. Mảnh kính là chứng tích tôi hồi khỏe — tôi không muốn quên — không muốn ai lặp lại như tôi."
 
@@ -210,29 +210,29 @@ Văn gật. Mắt đỏ — không khóc — đỏ vì đã giữ lâu.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Thái Nguyên — cây trẩu cổ — bến không tên — đèn vàng trên cây trẩu. Chuông xe vọng. Nhịp đơn. Im.
+Xe chậm lại rồi. Ngã ba Thái Nguyên — cây trẩu cổ — bến không tên — đèn vàng trên cây trẩu ấy. Chuông xe vọng xa. Nhịp đơn. Im.
 
 Văn cất mảnh kính vào hộp giấy. Đứng dậy chậm — thở hai lần.
 
 "Chào anh."
 
-Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển.
+Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển gì.
 
 Bác tài: "Chưa tới lúc."
 
-Anh bước xuống — chân chậm — thở.
+Anh bước xuống — chân chậm — thở dốc.
 
 [pause:1200ms]
 
 Bên ngoài — Văn đi vào bệnh viện Phổi Thái Nguyên — phòng tiếp tân còn sáng. Bệnh nhân trẻ — chừng hai mươi — đang chờ kết quả khám đêm ngoài hành lang — mặt vẫn tươi — chưa biết kết quả tốt hay xấu.
 
-Văn đến cậu. Đưa hộp giấy. Cậu trai ngạc nhiên — cầm — mở — thấy mảnh kính nhỏ. Văn nói nhỏ với cậu — giải thích — anh không nghe được nội dung — chỉ thấy cậu trai gật chậm — nhận mảnh kính — cất vào ba lô.
+Văn đến cậu ấy. Đưa hộp giấy. Cậu trai ngạc nhiên — cầm — mở — thấy mảnh kính nhỏ ấy. Văn nói nhỏ với cậu — giải thích — anh không nghe được nội dung — chỉ thấy cậu trai gật chậm — nhận mảnh kính — cất vào ba lô.
 
 Người khách chớp mắt — nhìn qua cửa sổ xe đang chậm rời. Bên Văn — Danh Hiển ba mươi tuổi khỏe mạnh xuất hiện — má hồng — môi đỏ — đặt tay lên vai Danh Hiển ba lăm tuổi gầy. Im lặng một thoáng — không nói.
 
-Người đàn chớp lần nữa. Danh Hiển ba mươi tan vào đèn hành lang.
+Người đàn lại chớp mắt. Danh Hiển ba mươi tan vào đèn hành lang.
 
-Danh Hiển ba lăm ngẩng đầu. Không khóc. Đi ra cửa bệnh viện.
+Danh Hiển ba lăm ngẩng đầu. Không khóc. Đi ra cửa bệnh viện đó.
 
 [pause:1500ms]
 
@@ -242,7 +242,7 @@ Danh Hiển ba lăm ngẩng đầu. Không khóc. Đi ra cửa bệnh viện.
 
 Xe lăn bánh — rời ngã ba Thái Nguyên.
 
-Ghế chín trống. Trên sàn — một mảnh vải nhỏ rơi — bong từ vải cuốn mép kính khi anh cầm. anh ấy nhặt. Vải — mềm — màu trắng đã ngả vàng.
+Ghế chín trống. Trên sàn — một mảnh vải nhỏ rơi — bong từ vải cuốn mép kính khi anh cầm. anh ấy nhặt lên. Vải — mềm — màu trắng đã ngả vàng.
 
 Bỏ vào túi áo gió. Vật thứ hai mươi lăm.
 
@@ -250,11 +250,11 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Người đàn ông ngồi. Hai vật vải trong túi — vải bông cuốn gương vỡ EP15 — và vải bông cuốn mảnh kính EP25. người khách ngẫm — người đàn có gương kỉ niệm không? Hình ảnh — phòng trọ Khâm Thiên — có gương trên cửa tủ — sáng nào hai đứa cũng soi gương — Hạ Vy chải tóc — anh ấy đeo cà vạt đi làm. Gương bình thường — không đập — không kỉ niệm đặc biệt.
+Người đàn ông ngồi. Hai vật vải trong túi — vải bông cuốn gương vỡ EP15 — và vải bông cuốn mảnh kính EP25. người khách ngẫm — người đàn có gương kỉ niệm không? Hình ảnh — phòng trọ Khâm Thiên — có gương trên cửa tủ — sáng nào hai đứa cũng soi gương — Hạ Vy chải tóc — anh ấy đeo cà vạt đi làm. Gương bình thường — không đập — không kỉ niệm đặc biệt gì.
 
 [pause:1500ms]
 
-Hai đứa làm việc sau tốt nghiệp 2017. Hạ Vy ở văn phòng kiến trúc Mộc Hà phố Hai Bà Trưng. anh ở công ty xây dựng Việt Trường phố Đại Cồ Việt. Hai phố cách nhau ngắn — chỉ mười lăm phút xe máy.
+Hai đứa làm việc sau tốt nghiệp 2017. Hạ Vy ở văn phòng kiến trúc Mộc Hà phố Hai Bà Trưng. anh ở công ty xây dựng Việt Trường phố Đại Cồ Việt đó. Hai phố cách nhau ngắn — chỉ mười lăm phút xe máy.
 
 Tháng tư 2018. Trời đêm mưa. Hạ Vy nhắn tin tám giờ tối — "Anh ơi em sắp về — chờ em — em ăn cơm nhà."
 
@@ -264,20 +264,20 @@ Người đàn đợi đến chín giờ. Không thấy Hạ Vy về.
 
 Anh ấy gọi điện Hạ Vy. Chuông kêu năm hồi — không bắt. Cuộc gọi đầu.
 
-Khải Phong đợi mười phút. Gọi lại. Chuông kêu năm hồi — không bắt. Cuộc gọi thứ hai.
+Khải Phong đợi mười phút. Gọi lại đó. Chuông kêu năm hồi — không bắt. Cuộc gọi thứ hai.
 
 Người khách đợi thêm năm phút. Gọi lần thứ ba. Chuông kêu — không bắt. Cuộc gọi thứ ba.
 
-Người đàn bắt đầu lo. anh ấy định mặc áo mưa đi tìm Hạ Vy trên đường về. Trước khi đi — điện thoại anh rung. Số lạ. người khách bắt.
+Người đàn bắt đầu lo. anh ấy định mặc áo mưa đi tìm Hạ Vy trên đường về. Trước khi đi — điện thoại anh rung. Số lạ đó. người khách bắt.
 
 "Người đàn là người đàn ông à? Em ở bệnh viện Bạch Mai. Vợ anh — chị Hạ Vy — vừa được đưa vào cấp cứu — tai nạn xe máy — đoạn ngã tư Hai Bà Trưng — Trần Hưng Đạo. Người đàn ông đến gấp."
 
-Anh ấy rời máy — chạy xuống cầu thang — quên áo mưa — chạy ra đường — bắt taxi — đến bệnh viện. Tới nơi — Hạ Vy đang trong phòng mổ — máu mất nhiều — chấn thương sọ.
+Anh ấy rời máy — chạy xuống cầu thang — quên áo mưa — chạy ra đường — bắt taxi — đến bệnh viện đó. Tới nơi — Hạ Vy đang trong phòng mổ — máu mất nhiều — chấn thương sọ đó.
 
 Hạ Vy mất ba tiếng sau khi vào phòng mổ — bốn giờ sáng — tháng tư đêm mưa.
 
-Bác tài liếc gương. "Vào đêm hai mươi lăm. Con đã nhớ rõ ba cuộc gọi và đêm Bạch Mai. Đêm sau con sẽ nhớ — Hạ Vy có nhắn tin gì cuối — trước khi không bắt máy con. Đừng vội."
+Bác tài liếc gương. "Vào đêm hai mươi lăm. Con đã nhớ rõ ba cuộc gọi và đêm Bạch Mai. Đêm sau con sẽ nhớ — Hạ Vy có nhắn tin gì cuối — trước khi không bắt máy con. Đừng vội nhé."
 
-Người đàn ông gật. Không hỏi.
+Người đàn ông gật đầu. Không hỏi gì.
 
-Vào đêm hai mươi lăm. Xe đi tiếp về phía đường vành đai. Trời mưa đã hết hẳn. Phía sau — Thái Nguyên khuất — Danh Hiển ở lại bệnh viện — đã trao mảnh kính cho cậu hai mươi tuổi. 
+Vào đêm hai mươi lăm. Xe đi tiếp về phía đường vành đai. Trời mưa đã hết hẳn rồi. Phía sau — Thái Nguyên khuất — Danh Hiển ở lại bệnh viện — đã trao mảnh kính cho cậu hai mươi tuổi ấy. 
