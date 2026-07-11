@@ -12,11 +12,11 @@ Tác giả: Hắc Dạ Ký.
 
 [pause:600ms]
 
-Series: Chuyến xe cuối cùng về đâu.
+Loạt truyện: Chuyến xe cuối cùng về đâu.
 
 [pause:600ms]
 
-Ai cũng có một chuyến xe chưa nói lời tạm biệt.
+Ai cũng có một chuyến xe chưa kịp nói lời tạm biệt với người mình thương.
 
 [pause:1000ms]
 
@@ -35,7 +35,7 @@ intensity_level: 0.70
 quang_memory_fragment: M8 (Khải Phong nhớ anh thanh niên gọi cấp cứu - tên gì)
 object_sub_arc: GEOGRAPHIC HN nội thành vật 2 (biển số xe phố Huế)
 callback_target: none
-passenger_main: nu 32 Mỹ Hạnh Hà Nội (vợ chồng đi xe máy phố Huế - chồng mất tai nạn)
+passenger_main: nu 32 Sen Lụa Hà Nội (vợ chồng đi xe máy phố Huế - chồng mất tai nạn)
 signature_object: OBJ_BIEN_SO (mảnh biển số xe máy chồng - tai nạn phố Huế)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba phố Huế (đoạn ngã tư Hai Bà Trưng)
@@ -52,21 +52,21 @@ arc_design_compliant: bible/21 R33-R40 + R41
 
 [pause:800ms]
 
-Sau cơn mưa chiều. Đêm xuống nhanh. Xe đêm rẽ vào đoạn phố Huế, [pause:250ms] Hà Nội nội thành, Hà Nội. Hàng cây ven đường còn đẫm, [pause:250ms] đèn pha quét lên thân cây ướt. Đèn pha quét lên hàng me cổ ven phố, [pause:250ms] me già, [pause:250ms] tán cao, [pause:250ms] đèn neon đường tô lên lá.
+Sau cơn mưa chiều. Đêm xuống nhanh. Xe đêm rẽ vào đoạn phố Huế, [pause:250ms] Hà Nội nội thành, Hà Nội này. Hàng cây ven đường còn đẫm, [pause:250ms] đèn pha quét lên thân cây ướt. Đèn pha quét lên hàng me cổ ven phố, [pause:250ms] me già, [pause:250ms] tán cao, [pause:250ms] đèn neon đường tô lên lá.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi bảy, [pause:250ms] Khải Phong đếm thêm. Trong túi áo gió Khải Phong, [pause:250ms] ba mươi sáu vật. Đêm qua thêm sợi chỉ lụa trắng từ khăn bọc ảnh anh Khải.
+Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi bảy, [pause:250ms] Khải Phong đếm thêm. Trong túi áo gió Khải Phong, [pause:250ms] ba mươi sáu vật rồi. Đêm qua thêm sợi chỉ lụa trắng từ khăn bọc ảnh anh Khải ấy.
 
-Bác tài lái. Đoạn phố Huế, [pause:250ms] Khải Phong nhận ra, [pause:250ms] gần khu phố cổ, [pause:250ms] gần phố Hàng Bài, [pause:250ms] gần ngã tư Hai Bà Trưng, [pause:250ms] Trần Hưng Đạo. Khải Phong cảm thấy nhịp tim nhanh.
+Bác tài lái. Đoạn phố Huế, [pause:250ms] Khải Phong nhận ra, [pause:250ms] gần khu phố cổ, [pause:250ms] gần phố Hàng Bài, [pause:250ms] gần ngã tư Hai Bà Trưng, [pause:250ms] Trần Hưng Đạo đó. Khải Phong cảm thấy nhịp tim nhanh.
 
-Trời mưa đã ngớt. Mặt đường ướt sũng. Đèn neon phố hắt xuống, [pause:250ms] vàng đỏ xen kẽ nhau.
+Trời mưa đã ngớt. Mặt đường ướt sũng nước mưa. Đèn neon phố hắt xuống, [pause:250ms] vàng đỏ xen kẽ nhau.
 
 Xe chậm lại trước một tiệm sửa xe máy xưa, [pause:250ms] biển gỗ mun [DIALOGUE_SEG_START]"Sửa xe Toàn"[DIALOGUE_SEG_END], [pause:250ms] cửa đã đóng, [pause:250ms] đèn vàng treo cột còn sáng. Tường tiệm có dấu sơn xưa.
 
-Một phụ nữ trẻ đứng đợi bên cửa tiệm. Khoảng ba mươi hai tuổi. Áo dạ đen, [pause:250ms] quần tây đen, [pause:250ms] phong cách đi tang. Tay phải cầm gói vải đen nhỏ, [pause:250ms] bên trong vật cứng kim loại.
+Một phụ nữ trẻ đứng đợi bên cửa tiệm đó. Tuổi khoảng ba mươi hai. Áo dạ đen, [pause:250ms] quần tây đen, [pause:250ms] phong cách đi tang. Tay phải cầm gói vải đen nhỏ, [pause:250ms] bên trong vật cứng kim loại đó.
 
-Cô gái khẽ lên bậc xe. Đi đến hàng ghế giữa, [pause:250ms] chân chậm lại. Ngồi xuống ghế thứ bảy.
+Cô gái khẽ lên bậc xe. Đi đến hàng ghế giữa, [pause:250ms] chân chậm lại dần. Ngồi xuống ghế thứ bảy đó.
 
-Mở gói vải. Lấy ra một mảnh biển số xe máy, [pause:250ms] biển nhôm, [pause:250ms] số [DIALOGUE_SEG_START]"29-B1 12345"[DIALOGUE_SEG_END], [pause:250ms] vỡ một góc.
+Mở gói vải ra. Lấy ra một mảnh biển số xe máy, [pause:250ms] biển nhôm, [pause:250ms] số [DIALOGUE_SEG_START]"29-B1 12345"[DIALOGUE_SEG_END], [pause:250ms] vỡ một góc.
 
 Xe lăn bánh.
 
@@ -76,13 +76,13 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Cô gái khẽ ngồi yên lặng. Vuốt mảnh biển số. Đầu ngón tay cô dừng ở góc tan, [pause:250ms] như cố cảm chỗ va đập.
+Cô gái khẽ ngồi yên, không nói gì. Vuốt mảnh biển số. Đầu ngón tay cô dừng ở góc tan, [pause:250ms] như cố cảm chỗ va đập đó.
 
 Khải Phong quan sát từ ghế ba. Cô ba lăm hai, [pause:250ms] mặt mệt, [pause:250ms] mắt sâu, [pause:250ms] vẻ người đã không ngủ nhiều đêm.
 
-Mảnh biển số, [pause:250ms] Khải Phong nhìn ra, [pause:250ms] biển 29 = Hà Nội. Vỡ một góc, [pause:250ms] chứng tỏ tai nạn nặng.
+Mảnh biển số, [pause:250ms] Khải Phong nhìn ra, [pause:250ms] biển 29 = Hà Nội đó. Vỡ một góc, [pause:250ms] chứng tỏ tai nạn nặng lắm.
 
-Ông cụ ghế đầu vặn radio. Lạo xạo. [DIALOGUE_SEG_START]"...quê nhà..."[DIALOGUE_SEG_END] vọng, [pause:250ms] tắt.
+Ông cụ ghế đầu vặn radio. Lạo xạo hoài. [DIALOGUE_SEG_START]"...quê nhà..."[DIALOGUE_SEG_END] vọng, [pause:250ms] tắt.
 
 [pause:500ms]
 
@@ -96,13 +96,13 @@ Cô vuốt mảnh biển, [pause:250ms] không khóc, [pause:250ms] chỉ vuốt
 
 [pause:500ms]
 
-Xe đi qua phố Huế. Phía bên phải, [pause:250ms] một ngã tư xưa, [pause:250ms] đèn giao thông còn sáng. Cạnh cột đèn, [pause:250ms] bóng thanh niên trẻ đứng, [pause:250ms] chừng ba mươi, [pause:250ms] áo gió đen, [pause:250ms] tay cầm mũ bảo hiểm. Không quay đầu.
+Xe đi qua phố Huế. Phía bên phải, [pause:250ms] một ngã xưa, [pause:250ms] đèn giao thông còn sáng. Cạnh cột đèn, [pause:250ms] bóng thanh niên trẻ đứng, [pause:250ms] chừng ba mươi, [pause:250ms] áo gió đen, [pause:250ms] tay cầm mũ bảo hiểm đó. Không quay đầu.
 
-Cô ghế bảy nhìn về phía đó. Hơi thở chậm lại.
+Cô ghế bảy nhìn về phía đó. Hơi thở chậm lại dần.
 
 [DIALOGUE_SEG_START]"Hùng..."[DIALOGUE_SEG_END]
 
-Cô gái nói rất nhỏ nhẹ.
+Cô gái nói rất nhỏ nhẹ, gần như thì thầm.
 
 Đồng hồ trên xe, [pause:250ms] kim phút nhích một, [pause:250ms] hai, [pause:250ms] đến mười.
 
@@ -110,7 +110,7 @@ Cô gái nói rất nhỏ nhẹ.
 
 Xe đi qua đó. Ngã tư khuất. Bóng thanh niên khuất.
 
-Cô gái khẽ quay đầu lại. Vuốt mảnh biển số.
+Cô gái khẽ quay đầu lại nhìn. Vuốt mảnh biển số.
 
 ---
 
@@ -118,11 +118,11 @@ Cô gái khẽ quay đầu lại. Vuốt mảnh biển số.
 
 [pause:1000ms]
 
-[DIALOGUE_SEG_START]"Em là Mỹ Hạnh. Ba mươi hai tuổi. Em ở Hà Nội, [pause:250ms] phố Bạch Mai. Em làm giáo viên cấp hai, [pause:250ms] trường gần nhà."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Em là Sen Lụa. Ba mươi hai tuổi. Em ở Hà Nội, [pause:250ms] phố Bạch Mai. Em làm giáo viên cấp hai, [pause:250ms] trường gần nhà."[DIALOGUE_SEG_END]
 
-Giọng cô đều, [pause:250ms] chậm.
+Giọng cô đều, [pause:250ms] chậm hơn.
 
-[DIALOGUE_SEG_START]"Chồng em, [pause:250ms] Hùng, [pause:250ms] mất một năm trước. Ba mươi mốt tuổi. Tai nạn xe máy, [pause:250ms] đoạn ngã tư phố Huế, [pause:250ms] Hai Bà Trưng, [pause:250ms] chính ngã tư em vừa đi qua. Xe tải lớn vào ngã tư không đúng đèn, [pause:250ms] tông xe máy em, [pause:250ms] em mất tại nơi."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Chồng em, [pause:250ms] Hùng, [pause:250ms] mất một năm trước. Ba mươi mốt tuổi. Tai nạn xe máy, [pause:250ms] đoạn ngã phố Huế, [pause:250ms] Hai Bà Trưng, [pause:250ms] chính ngã tư em vừa đi qua. Xe tải lớn vào ngã tư không đúng đèn, [pause:250ms] tông xe máy em, [pause:250ms] em mất tại nơi."[DIALOGUE_SEG_END]
 
 [pause:800ms]
 
@@ -142,13 +142,13 @@ Giọng cô đều, [pause:250ms] chậm.
 
 [pause:1500ms]
 
-[DIALOGUE_SEG_START]"Sau tang em, [pause:250ms] em quay lại phòng trọ. Em ở một mình. Em không thể dọn ngay, [pause:250ms] vật của em vẫn ở nơi, [pause:250ms] quần áo trong tủ, [pause:250ms] laptop trên bàn, [pause:250ms] sách trên kệ."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Sau tang em, [pause:250ms] em quay lại phòng trọ. Cô gái gái ở một mình. Em không thể dọn ngay, [pause:250ms] vật của em vẫn ở nơi, [pause:250ms] quần áo trong tủ, [pause:250ms] laptop trên bàn, [pause:250ms] sách trên kệ."[DIALOGUE_SEG_END]
 
 [DIALOGUE_SEG_START]"Em dọn dần, [pause:250ms] sáu tháng. Cô gái đem quần áo em về Bình Định gửi mẹ em. Em bán laptop, [pause:250ms] bán xe máy còn lại của em."[DIALOGUE_SEG_END]
 
 [DIALOGUE_SEG_START]"Em đến tiệm sửa xe, [pause:250ms] chính tiệm Sửa xe Toàn em vừa bước lên xe, [pause:250ms] em gửi xe máy hỏng em sau tai nạn cho thợ Toàn xử lý."[DIALOGUE_SEG_END]
 
-[DIALOGUE_SEG_START]"Anh Toàn thợ sửa xe đưa em mảnh biển số xe, [pause:250ms] biển vỡ một góc, [pause:250ms] anh giữ làm chứng tích sau tai nạn. Anh hỏi em có muốn giữ không. Em gật. Em đem mảnh về."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Anh Toàn thợ sửa xe đưa em mảnh biển số xe, [pause:250ms] biển vỡ một góc, [pause:250ms] anh giữ làm chứng tích sau tai nạn. Anh hỏi em có muốn giữ không. Cô gái ấy ấy ấy gật. Hình bóng con gái ấy đem mảnh về."[DIALOGUE_SEG_END]
 
 [pause:1500ms]
 
@@ -164,7 +164,7 @@ Bác tài cất lời.
 
 [DIALOGUE_SEG_START]"Con đã nhớ ra chưa?"[DIALOGUE_SEG_END]
 
-Mỹ Hạnh gật. Mắt đỏ.
+Sen Lụa gật đầu. Mắt đỏ hoe.
 
 [DIALOGUE_SEG_START]"Em nhớ. Cô gái đi xe máy phố Huế một mình tối thứ ba, [pause:250ms] em va chạm xe tải, [pause:250ms] em mất. Em không có ai bên cạnh, [pause:250ms] chỉ có người đi đường gọi cấp cứu."[DIALOGUE_SEG_END]
 
@@ -178,13 +178,13 @@ Mỹ Hạnh gật. Mắt đỏ.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba phố Huế, [pause:250ms] cây me cổ, [pause:250ms] bến gần ngã tư Hai Bà Trưng. Chuông xe ngân. Một tiếng. Tan trong tiếng xe đêm phố cổ.
+Xe chậm lại rồi. Ngã ba phố Huế, [pause:250ms] cây me cổ, [pause:250ms] bến gần ngã tư Hai Bà Trưng. Chuông xe ngân. Một tiếng. Tan trong tiếng xe đêm phố cổ ấy.
 
-Mỹ Hạnh gói mảnh biển vào vải đen. Đứng dậy.
+Sen Lụa gói mảnh biển vào vải đen. Đứng dậy ngay.
 
 [DIALOGUE_SEG_START]"Chào anh."[DIALOGUE_SEG_END]
 
-Trước khi xuống, [pause:250ms] đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển.
+Trước khi xuống, [pause:250ms] đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển gì.
 
 Bác tài: [DIALOGUE_SEG_START]"Chưa tới lúc."[DIALOGUE_SEG_END]
 
@@ -192,15 +192,15 @@ Cô gái bước xuống dưới đường.
 
 [pause:1200ms]
 
-Bên ngoài, [pause:250ms] Mỹ Hạnh đi vào tiệm Sửa xe Toàn, [pause:250ms] bảo vệ tiệm đã mở cửa phụ, [pause:250ms] đèn trong tiệm còn sáng. Anh Toàn ngồi trực đêm, [pause:250ms] đợi cô đến.
+Bên ngoài, [pause:250ms] Sen Lụa đi vào tiệm Sửa xe Toàn, [pause:250ms] bảo vệ tiệm đã mở cửa phụ, [pause:250ms] đèn trong tiệm còn sáng. Anh Toàn ngồi trực đêm, [pause:250ms] đợi cô đến.
 
-Cô gái đã đến nơi đó. Đưa gói vải đen. Anh Toàn nhận, [pause:250ms] mở, [pause:250ms] thấy mảnh biển. Cô nói nhỏ, [pause:250ms] giải thích. Anh Toàn gật, [pause:250ms] cảm động, [pause:250ms] đặt mảnh vào hộp gỗ riêng, [pause:250ms] không trộn với phụ tùng khác.
+Cô gái đã đến nơi đó. Đưa gói vải đen. Anh Toàn nhận, [pause:250ms] mở, [pause:250ms] thấy mảnh biển đó. Cô gái ấy nói nhỏ, [pause:250ms] giải thích. Hình bóng đàn ông Toàn gật, [pause:250ms] cảm động, [pause:250ms] đặt mảnh vào hộp gỗ riêng, [pause:250ms] không trộn với phụ tùng khác.
 
-Khải Phong chớp mắt, [pause:250ms] nhìn qua cửa sổ. Bên tiệm, [pause:250ms] Hùng xuất hiện, [pause:250ms] thanh niên ba mươi áo gió đen, [pause:250ms] vuốt vai Mỹ Hạnh. Mỉm cười nhẹ nhàng.
+Khải Phong chớp mắt, [pause:250ms] nhìn qua cửa sổ xe. Bên tiệm, [pause:250ms] Hùng xuất hiện, [pause:250ms] thanh niên ba mươi áo gió đen, [pause:250ms] vỗ vai Sen Lụa ấy. Gật đầu nhẹ nhẹ nhàng.
 
-Khải Phong chớp lần nữa. Hùng tan vào đèn tiệm.
+Khải Phong lại chớp mắt. Hùng tan vào đèn tiệm đó.
 
-Mỹ Hạnh ngẩng đầu. Lau khóe mắt. Đi ra cửa.
+Sen Lụa ngẩng đầu. Lau khóe mắt. Đi ra cửa chính.
 
 [pause:1500ms]
 
@@ -210,7 +210,7 @@ Mỹ Hạnh ngẩng đầu. Lau khóe mắt. Đi ra cửa.
 
 Xe lăn bánh, [pause:250ms] rời ngã ba phố Huế.
 
-Ghế bảy trống. Trên sàn, [pause:250ms] một sợi chỉ vải đen nhỏ rơi (bong từ vải bọc mảnh biển). Khải Phong nhặt. Sợi chỉ, [pause:250ms] mảnh, [pause:250ms] màu đen.
+Ghế bảy trống. Trên sàn, [pause:250ms] một sợi chỉ vải đen nhỏ rơi (bong từ vải bọc mảnh biển đó). Khải Phong nhặt lên. Sợi chỉ, [pause:250ms] mảnh, [pause:250ms] màu đen.
 
 Bỏ vào túi. Vật thứ ba mươi bảy, [pause:250ms] vật thứ hai mang dấu Hà Nội nội thành (sub-arc geographic).
 
@@ -220,32 +220,32 @@ Bác tài lái. Kim phút cabin nhích, [pause:250ms] một, [pause:250ms] hai, 
 
 Khải Phong ngồi yên. Hai vật trong cụm sub-arc geographic Hà Nội nội thành: vé tàu Cát Linh EP33 + sợi chỉ vải đen mảnh biển số phố Huế EP37.
 
-Khải Phong ngẫm. Mỹ Hạnh kể anh anh va chạm xe tải đoạn ngã tư phố Huế, [pause:250ms] Hai Bà Trưng. Đúng đoạn Khải Phong nhớ.
+Khải Phong ngẫm xem. Sen Lụa kể anh anh va chạm xe tải đoạn ngã tư phố Huế, [pause:250ms] Hai Bà Trưng. Đúng đoạn Khải Phong nhớ.
 
-Khải Phong tim đập nhanh, [pause:250ms] đoạn này, [pause:250ms] chính đoạn Hạ Vy va chạm tám năm trước. Ngã tư phố Huế, [pause:250ms] Hai Bà Trưng, [pause:250ms] Trần Hưng Đạo. Cùng ngã tư.
+Khải Phong tim đập nhanh, [pause:250ms] đoạn này, [pause:250ms] chính đoạn Hạ Vy va chạm tám năm trước. Ngã tư phố Huế, [pause:250ms] Hai Bà Trưng, [pause:250ms] Trần Hưng Đạo đó. Cùng ngã tư.
 
 [pause:1500ms]
 
-Khải Phong cố nhớ thêm. Đêm Hạ Vy mất, [pause:250ms] anh đi từ văn phòng Mộc Hà phố Hai Bà Trưng về phố Khâm Thiên. Đoạn ngắn, [pause:250ms] qua ngã tư Hai Bà Trưng, [pause:250ms] Trần Hưng Đạo, [pause:250ms] sau đó rẽ phải xuống phố Huế, [pause:250ms] sau đó rẽ trái sang phố Bà Triệu, [pause:250ms] sau đó đến Khâm Thiên.
+Khải Phong cố nhớ thêm. Đêm Hạ Vy mất, [pause:250ms] anh đi từ văn phòng Mộc Hà phố Hai Bà Trưng về phố Khâm Thiên. Đoạn ngắn, [pause:250ms] qua ngã tư Hai Bà Trưng, [pause:250ms] Trần Hưng Đạo, [pause:250ms] sau đó rẽ phải xuống phố Huế, [pause:250ms] sau đó rẽ trái sang phố Bà Triệu, [pause:250ms] sau đến Khâm Thiên.
 
-Tại ngã tư đó, [pause:250ms] Hạ Vy va xe tải. Xe tải lớn, [pause:250ms] chở vật liệu xây dựng, [pause:250ms] tài xế vào ngã tư không đúng đèn.
+Tại ngã tư đó, [pause:250ms] Hạ Vy va xe tải lớn. Xe tải lớn, [pause:250ms] chở vật liệu xây dựng, [pause:250ms] tài xế vào ngã tư không đúng đèn.
 
 Khải Phong nhớ rõ ngã tư. Khải Phong đã đi qua ngã tư đó hàng trăm lần khi anh còn ở phố Khâm Thiên.
 
-Khải Phong cố nhớ, [pause:250ms] anh thanh niên gọi cấp cứu cho Hạ Vy là ai? Bệnh viện nói anh đó đứng cùng đường, [pause:250ms] anh chứng kiến tai nạn, [pause:250ms] anh gọi xe cấp cứu, [pause:250ms] anh đưa Hạ Vy vào bệnh viện.
+Khải Phong cố nhớ, [pause:250ms] anh thanh niên gọi cấp cứu cho Hạ Vy là ai? Bệnh viện nói anh đó đứng cùng đường, [pause:250ms] anh chứng kiến tai nạn, [pause:250ms] anh gọi xe cấp cứu, [pause:250ms] anh đưa Hạ Vy vào bệnh viện đó.
 
 Anh thanh niên đó, [pause:250ms] Khải Phong cố nhớ tên. Sau tang Hạ Vy, [pause:250ms] Khải Phong có gặp anh? Hay không?
 
-Cảm giác, [pause:250ms] có. Khải Phong gặp anh một lần, [pause:250ms] ở bệnh viện, [pause:250ms] anh đến hỏi thăm. Khải Phong cảm ơn anh. Anh nói tên, [pause:250ms] nhưng Khải Phong không ghi nhớ, [pause:250ms] Khải Phong đang sốc.
+Cảm giác, [pause:250ms] có. Khải Phong gặp anh một lần, [pause:250ms] ở bệnh viện, [pause:250ms] anh đến hỏi thăm. Anh ấy Phong cảm ơn anh. Hình bóng đàn ông nói tên, [pause:250ms] nhưng Khải Phong không ghi nhớ, [pause:250ms] Khải Phong đang sốc.
 
 [pause:1500ms]
 
-Bác tài liếc gương. [DIALOGUE_SEG_START]"Vào đêm ba mươi bảy. Con bắt đầu nhớ anh thanh niên có gặp Khải Phong ở bệnh viện. Đêm sau con sẽ nhớ, [pause:250ms] tên anh đó, [pause:250ms] vì sao em không ghi nhớ lúc đó. Đừng vội."[DIALOGUE_SEG_END]
+Bác tài liếc gương. [DIALOGUE_SEG_START]"Vào đêm ba mươi bảy này. Con bắt đầu nhớ anh thanh niên có gặp Khải Phong ở bệnh viện đó. Đêm sau con sẽ nhớ, [pause:250ms] tên anh đó, [pause:250ms] vì sao em không ghi nhớ lúc đó. Đừng vội nhé."[DIALOGUE_SEG_END]
 
-Khải Phong gật. Lệ rơi nhẹ nhàng.
+Khải Phong gật đầu. Lệ rơi nhẹ nhàng.
 
-Đêm thứ ba mươi bảy, [pause:250ms] Khải Phong đếm thêm. Xe đi tiếp ra khỏi phố Huế. Phía sau, [pause:250ms] tiệm Sửa xe Toàn khuất. Mỹ Hạnh ở lại đứng cửa tiệm, [pause:250ms] anh Toàn cất mảnh biển vào hộp gỗ mun.
+Đêm thứ ba mươi bảy, [pause:250ms] Khải Phong đếm thêm. Xe đi tiếp ra khỏi phố Huế. Phía sau, [pause:250ms] tiệm Sửa xe Toàn khuất. Sen Lụa ở lại đứng cửa tiệm, [pause:250ms] anh Toàn cất mảnh biển vào hộp gỗ mun.
 
 Khải Phong nhìn ra cửa sổ, [pause:250ms] phố Huế phía sau. Mưa đã hết, [pause:250ms] đèn neon còn sáng, [pause:250ms] phố không có ai đi đêm này.
 
-Khải Phong tự nhủ, [pause:250ms] đêm sau sẽ rõ tên anh thanh niên. Tên Hải, [pause:250ms] Khải Phong đã nhớ ra. Nhưng anh Hải làm gì, [pause:250ms] vì sao đi cùng đường, [pause:250ms] Khải Phong cần thêm một đêm.
+Khải Phong tự nhủ, [pause:250ms] đêm sau sẽ rõ tên anh thanh niên. Tên Hải, [pause:250ms] Khải Phong đã nhớ ra. Nhưng anh Hải làm gì, [pause:250ms] vì sao đi cùng đường, [pause:250ms] Khải Phong cần thêm một đêm. 
