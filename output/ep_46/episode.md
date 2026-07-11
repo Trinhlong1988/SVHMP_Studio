@@ -56,19 +56,19 @@ arc_design_compliant: bible/21 R33-R42
 
 [pause:800ms]
 
-Hà Nội cuối tháng tư. Trời đã về đêm. Chuyến xe đi qua đoạn ven đường ven biển Thái Bình, Hà Nội. Đèn pha rọi lên hàng cây — ánh đèn vàng cô đơn.
+Hà Nội cuối tháng tư. Trời đã về đêm. Chuyến xe đi qua đoạn ven đường ven biển Thái Bình, Hà Nội này. Đèn pha rọi lên hàng cây — ánh đèn vàng cô đơn.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi sáu — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — bốn mươi lăm vật. Đêm qua thêm vải bông cuốn mép mảnh gương Mạnh Hiếu.
+Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi sáu — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — bốn mươi lăm vật rồi. Đêm qua thêm vải bông cuốn mép mảnh gương Mạnh Hiếu.
 
 Bác tài lái.
 
 Trời mưa rải nhẹ nhàng. Mặt biển phía bên phải đường tối — gió biển thổi lên kính xe.
 
-Xe chậm lại trước một nhà thờ nhỏ ven biển — biển "Nhà thờ Diêm Điền" — cổng đã đóng — đèn vàng treo cột tre. Một bà đứng đợi bên cổng. Khoảng sáu mươi tám tuổi. Áo bà ba xám — vạt áo dài. Tay phải cầm túi vải nâu nhỏ — bên trong vật mềm như cát.
+Xe chậm lại trước một nhà thờ nhỏ ven biển — biển "Nhà thờ Diêm Điền" — cổng đã đóng — đèn vàng treo cột tre. Một bà đứng đợi bên cổng đó. Tuổi khoảng sáu mươi tám. Áo bà ba xám — vạt áo dài. Tay phải cầm túi vải nâu nhỏ — bên trong vật mềm như cát.
 
-Bà cụ khẽ vào trong xe. Đi qua mấy hàng ghế trước — chân chậm lại. Ngồi xuống ghế thứ bốn.
+Bà cụ khẽ vào trong xe. Đi qua mấy hàng ghế trước — chân chậm lại dần. Ngồi xuống ghế thứ bốn.
 
-Đặt túi vải lên đùi. Mở. Bên trong — cát biển trắng — nắm chừng bàn tay.
+Đặt túi vải lên đùi. Mở ra. Bên trong — cát biển trắng — nắm chừng bàn tay.
 
 Xe lăn bánh.
 
@@ -78,19 +78,19 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Bà cụ ngồi yên một lát. Vuốt mép túi vải. Đầu ngón tay bà già — móng tay cắt ngắn.
+Bà cụ ngồi yên một lát. Vuốt mép túi vải đó. Đầu ngón tay bà già — móng tay cắt ngắn.
 
 Khải Phong quan sát từ ghế ba. Bà sáu tám — tóc bạc gần hết — mặt hiền — vẻ người sống biển cả đời.
 
 Cát trong túi — Khải Phong nhìn ra — cát trắng mịn — cát biển Diêm Điền chừng.
 
-Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng — tắt.
+Ông cụ ghế đầu vặn radio. Lạo xạo hoài. "...quê nhà..." vọng — tắt.
 
 [pause:500ms]
 
 Bác tài liếc gương. Không nói.
 
-Bà vuốt cát qua mặt vải — như cảm độ mịn.
+Bà vuốt cát qua mặt vải — như cảm độ mịn màng.
 
 ---
 
@@ -98,15 +98,15 @@ Bà vuốt cát qua mặt vải — như cảm độ mịn.
 
 [pause:500ms]
 
-Xe đi qua xóm ven biển. Phía bên trái — căn nhà cấp bốn — sân nhỏ — cửa khép. Đèn dầu trong nhà còn sáng yếu.
+Xe đi qua xóm ven biển đó. Phía bên trái — căn nhà cấp bốn — sân nhỏ — cửa khép. Đèn dầu trong nhà còn sáng yếu.
 
 Cạnh cửa — bóng bé trai chừng tám tuổi đứng — áo trắng — tay không. Không quay đầu.
 
-Bà ghế bốn nhìn về phía đó. Mắt đỏ.
+Bà ghế bốn nhìn về phía đó. Mắt đỏ hoe.
 
 "Bin..."
 
-Bà cụ nói rất nhỏ nhẹ.
+Bà cụ nói rất nhỏ nhẹ, gần như thì thầm.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
@@ -114,7 +114,7 @@ Bà cụ nói rất nhỏ nhẹ.
 
 Xe đi qua đó. Nhà cấp bốn khuất.
 
-Bà cụ khẽ quay đầu lại. Vuốt túi cát.
+Bà cụ khẽ quay đầu lại nhìn. Vuốt túi cát.
 
 ---
 
@@ -124,7 +124,7 @@ Bà cụ khẽ quay đầu lại. Vuốt túi cát.
 
 "Em là bà Hảo. Sáu mươi tám tuổi. Em ở Diêm Điền — Thái Bình — quê. Em làm nông — vài sào lúa + nuôi tôm sú."
 
-Giọng bà trầm — chậm.
+Giọng bà trầm — chậm hơn.
 
 "Cháu nội em — Bin — mất bốn năm trước. Tám tuổi. Đuối nước ở biển Diêm Điền — bãi cát em vừa bước lên xe gần."
 
@@ -170,7 +170,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Bà cụ Hảo khẽ gật đầu. Mắt đỏ.
+Bà cụ Hảo khẽ gật đầu. Mắt đỏ hoe.
 
 "Em nhớ. Bà cụ hứa Bin đem em ra tháng sáu — em không kịp. Người nữ em đi tháng năm — em chưa kịp ra biển. Hình ảnh người con gái ấy đem cát biển về nhà thờ — như cách đem em ra biển qua Chúa."
 
@@ -184,13 +184,13 @@ Bà cụ Hảo khẽ gật đầu. Mắt đỏ.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Thái Bình — cây phi lao cổ — bến không tên. Chuông xe ngân. Một tiếng. Tan.
+Xe chậm lại rồi. Ngã ba Thái Bình — cây phi lao cổ — bến không tên. Chuông xe ngân. Một tiếng. Tan.
 
-Bà cụ Hảo ôm túi cát. Đứng dậy.
+Bà cụ Hảo ôm túi cát. Đứng dậy ngay.
 
 "Chào con."
 
-Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển.
+Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển gì.
 
 Bác tài: "Chưa tới lúc."
 
@@ -200,9 +200,9 @@ Bà cụ bước xuống dưới đường.
 
 Bên ngoài — bà Hảo đi vào nhà thờ Diêm Điền. Chánh điện — tượng Chúa. Bà cụ đến bên bục thờ. Đặt túi cát. Quỳ. Cúi đầu.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ. Bên bục — Bin xuất hiện — bé trai tám tuổi áo trắng — vuốt vai bà Hảo. Mỉm cười.
+Khải Phong chớp mắt — nhìn qua cửa sổ xe. Bên bục — Bin xuất hiện — bé trai tám tuổi áo trắng — vuốt vai bà Hảo ấy. Mỉm cười.
 
-Khải Phong chớp lần nữa. Người tên Bin tan đi.
+Khải Phong lại chớp mắt. Người tên Bin tan đi.
 
 Bà cụ Hảo ngẩng đầu lên. Đi ra ngoài.
 
@@ -224,40 +224,40 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 Khải Phong ngồi. Xoan Nụ hứa Bin đem ra biển — không.
 
-Khải Phong nhói. Khải Phong đã hứa với Hạ Vy điều gì chưa kịp giữ lại?
+Khải Phong nhói. Khải Phong đã hứa với Hạ Vy điều gì chưa kịp giữ lại không?
 
 Hình ảnh — đêm tháng tư 2018 — chiều — Hạ Vy nhắn: "Anh ơi tối nay anh có rảnh không? Em muốn bàn chuyện cưới." Khải Phong đáp: "Vâng em — anh rảnh tối — về sớm — anh nấu cơm — bàn cùng em."
 
-Khải Phong đã hứa nấu cơm. Bóng người ngồi đó đã nấu cá kho tộ. Hình ảnh người đàn ông đã hứa bàn chuyện cưới — không bàn.
+Khải Phong đã hứa nấu cơm. Bóng người ngồi đó đã nấu cá kho tộ đó. Hình ảnh người đàn ông đã hứa bàn chuyện cưới — không bàn.
 
 Sâu hơn — Khải Phong cố nhớ — anh có hứa Hạ Vy điều khác lớn hơn không?
 
 [pause:1500ms]
 
-Hình ảnh — đêm cuối năm 2017 — phòng trọ Khâm Thiên — Khải Phong và Hạ Vy ngồi ăn cơm. Anh nói: "Anh ơi sang năm hai đứa đi nước ngoài chơi nhé. Bóng cô em chưa đi nước ngoài lần nào. Hình ảnh người con gái ấy muốn đi Hàn Quốc — mùa thu — lá đỏ."
+Hình ảnh — đêm cuối năm 2017 — phòng trọ Khâm Thiên — Khải Phong và Hạ Vy ngồi ăn cơm. Anh nói: "Anh ơi sang năm hai đứa đi nước ngoài chơi nhé. Bóng cô em chưa đi nước ngoài lần nào. Hình ảnh người con gái ấy muốn đi Hàn Quốc — mùa thu — lá đỏ ấy."
 
-Khải Phong đáp: "OK em. Anh hứa — sau cưới — hai đứa đi Hàn Quốc trăng mật."
+Khải Phong đáp: "OK em. Anh hứa — sau cưới — hai đứa đi Hàn Quốc trăng mật nhé."
 
 Em cười: "Hứa thật nhé."
 
-Khải Phong gật: "Hứa thật."
+Khải Phong gật: "Hứa thật mà."
 
-Hạ Vy không bao giờ đi Hàn Quốc. Cưới không tổ chức. Trăng mật không kịp đi. Khải Phong hứa — không kịp giữ lại.
+Hạ Vy không bao giờ đi Hàn Quốc. Cưới không tổ chức. Trăng mật không kịp đi. Khải Phong hứa — không kịp giữ lại đâu.
 
-Bác tài liếc gương. "Vào đêm bốn sáu. Con đã nhớ lời hứa Hàn Quốc. Đêm sau con sẽ nhớ — con có thể giữ lời muộn không. Đừng vội."
+Bác tài liếc gương. "Vào đêm bốn sáu. Con đã nhớ lời hứa Hàn Quốc. Đêm sau con sẽ nhớ — con có thể giữ lời muộn không. Đừng vội nhé."
 
-Khải Phong gật. Lệ rơi xuống dưới.
+Khải Phong gật đầu. Lệ rơi xuống dưới.
 
 Đêm thứ bốn mươi — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Diêm Điền khuất. Xoan Nụ ở lại nhà thờ — quỳ trước Chúa.
 
-Khải Phong cố nhớ thêm về lời Hàn Quốc. Đứa em hứa vào đêm cuối năm 2017 — sau khi hai đứa tốt nghiệp Đại học Kiến trúc cùng nhau. Bóng người đàn ông bảo: "Hứa thật nhé." Hạ Vy gật. Người con gái em đặt vé Hàn Quốc bao giờ? Hình ảnh người đàn ông không kịp đặt — anh hứa miệng — chưa mua. Chỉ tháng tư 2018 — anh đi sớm. Lời hứa miệng — không thực hiện được — không có vé. Khải Phong chỉ có trí nhớ về lời hứa — không có vật chứng. Đêm thứ bốn kết thúc — Khải Phong nhói về hứa.
+Khải Phong cố nhớ thêm về lời Hàn Quốc. Đứa em hứa vào đêm cuối năm 2017 — sau khi hai đứa tốt nghiệp Đại học Kiến trúc cùng nhau. Bóng người đàn ông bảo: "Hứa thật nhé." Hạ Vy gật đầu. Người con gái em đặt vé Hàn Quốc bao giờ? Hình ảnh người đàn ông không kịp đặt — anh hứa miệng — chưa mua. Chỉ tháng tư 2018 — anh đi sớm. Lời hứa miệng — không thực hiện được — không có vé. Khải Phong chỉ có trí nhớ về lời hứa — không có vật chứng. Đêm thứ bốn kết thúc — Khải Phong nhói về hứa.
 
-Khải Phong ngồi yên. Bóng người đàn ông nhớ rõ Hạ Vy cười khi anh hứa Hàn Quốc — anh không ngờ anh không bao giờ dùng được. Hình ảnh người đàn ông phải tìm cách giữ lời hứa muộn — như Hữu Duy sẽ làm đêm sau. Đêm bốn mươi sáu kết thúc — Khải Phong chuẩn bị cho đêm M10 tiếp theo. Anh đã hiểu sự muộn không phải kết thúc — muộn vẫn có thể giữ qua cách khác.
+Khải Phong ngồi yên. Bóng người đàn ông nhớ rõ Hạ Vy cười khi anh hứa Hàn Quốc — anh không ngờ anh không bao giờ dùng được đâu. Hình ảnh người đàn ông phải tìm cách giữ lời hứa muộn — như Hữu Duy sẽ làm đêm sau. Đêm bốn mươi sáu kết thúc — Khải Phong chuẩn bị cho đêm M10 tiếp theo. Anh đã hiểu sự muộn không phải kết thúc — muộn vẫn có thể giữ qua cách khác.
 
-Khải Phong vuốt cánh cát biển trong túi áo gió — vật thứ bốn mươi — anh sẽ giữ cùng nhẫn bạc. Cụm vật tổng — anh đang xếp dần thành bản đồ. Bốn mươi sáu vật — bốn đêm — bốn mươi sáu câu chuyện song song với Khải Phong.
+Khải Phong vuốt cánh cát biển trong túi áo gió — vật thứ bốn mươi — anh sẽ giữ cùng nhẫn bạc đó. Cụm vật tổng — anh đang xếp dần thành bản đồ. Bốn mươi sáu vật — bốn đêm — bốn mươi sáu câu chuyện song song với Khải Phong.
 
-Khải Phong vuốt áo gió — túi đầy bốn mươi sáu vật. Mưa biển miền Bắc đã hết. Trời chưa sáng lên. Đêm tháng tư vẫn dài. Khải Phong đợi đêm mai — passenger nào — câu chuyện nào — sẽ đến.
+Khải Phong vuốt áo gió — túi đầy bốn mươi sáu vật rồi. Mưa biển miền Bắc đã hết. Trời chưa sáng lên. Đêm tháng tư vẫn dài. Khải Phong đợi đêm mai — passenger nào — câu chuyện nào — sẽ đến.
 
-Khải Phong nhói nhẹ. Bóng người ngồi đó hứa Hạ Vy đêm 2017 — anh hứa thật. Hình ảnh người đàn ông sẽ giữ thật — không phải qua chuyến anh — qua cách anh có thể bây giờ. Hữu Duy đêm mai sẽ chứng minh.
+Khải Phong nhói nhẹ thôi. Bóng người ngồi đó hứa Hạ Vy đêm 2017 — anh hứa thật lòng. Hình ảnh người đàn ông sẽ giữ thật — không phải qua chuyến anh — qua cách anh có thể bây giờ. Hữu Duy đêm mai sẽ chứng minh.
 
-Khải Phong nhói thêm — anh đã sai khi không tự đặt vé Hàn Quốc trong tám năm. Đứa em chỉ rất ngại. Bóng người đàn ông sẽ đặt vé sang năm. 
+Khải Phong nhói thêm — anh đã sai khi không tự đặt vé Hàn Quốc trong tám năm. Đứa em chỉ rất ngại thôi. Bóng người đàn ông sẽ đặt vé sang năm. 
