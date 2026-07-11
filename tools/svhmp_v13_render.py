@@ -322,6 +322,31 @@ def main():
     else:
         print(f"[v13] WARN: episode.md not found at {md_path}, skip R86 check", flush=True)
 
+    # ========================================================================
+    # DEBT-018 R197 GIAI DOAN 1 — LOG-ONLY (Mr.Long 11/7, TUYET DOI KHONG chan render
+    # o giai doan nay, cho xem bao cao roi moi quyet giai doan 2). Wire svhmp_preflight_
+    # qa.py (FULL_TEXT_GATE THAT: 10-rule preflight + R86 broad chain + character gate)
+    # vao render entrypoint - truoc day CHUA TUNG duoc goi tu day (DEBT-018: R197 tu
+    # xung "FULL stack, khong ngoai le" nhung render THAT chi goi 1 tool qa_eol_diacritic
+    # o R90 STAGE 1 tren, KHONG phai FULL_TEXT_GATE). Ket qua CHI IN RA, KHONG anh huong
+    # exit code/luong render - kem theo nhan [R197-LOG-ONLY] de phan biet ro voi cac gate
+    # THAT (R90 STAGE 1 o tren, wrapper render_with_character_gate.py ben ngoai) van
+    # dang chan nhu cu, KHONG bi thay doi boi doan nay.
+    # ========================================================================
+    print(f"[v13] [R197-LOG-ONLY] DEBT-018 giai doan 1: chay svhmp_preflight_qa.py (khong chan)...", flush=True)
+    try:
+        _preflight_result = subprocess.run(
+            [sys.executable, os.path.join(_tools_dir, "svhmp_preflight_qa.py"), args.spec],
+            capture_output=True, text=True, encoding='utf-8',
+            env={**os.environ, 'PYTHONIOENCODING': 'utf-8'},
+        )
+        print(f"[v13] [R197-LOG-ONLY] preflight_qa exit={_preflight_result.returncode} "
+              f"({'SE BI CHAN o giai doan 2' if _preflight_result.returncode != 0 else 'se PASS'})", flush=True)
+        for _line in (_preflight_result.stdout or '').splitlines():
+            print(f"[v13] [R197-LOG-ONLY]   {_line}", flush=True)
+    except Exception as _e:  # noqa: BLE001 — LOG-ONLY tuyet doi khong duoc lam vo render
+        print(f"[v13] [R197-LOG-ONLY] WARN: khong chay duoc preflight_qa ({type(_e).__name__}: {_e})", flush=True)
+
     # Round 14 hook: detect ep from output path "output/ep_NN/narration.wav"
     ep_match = re.search(r'ep_(\d+)', args.output)
     ep_num = int(ep_match.group(1)) if ep_match else 0

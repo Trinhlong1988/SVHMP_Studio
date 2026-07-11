@@ -164,7 +164,19 @@ if '--skip-r86' not in sys.argv:
     ep_match = re.search(r'ep_(\d+)', str(spec_path))
     if ep_match:
         ep_num = int(ep_match.group(1))
-        md_path = spec_path.parents[1] / 'episode.md'
+        # DEBT-018 (11/7, per Mr.Long authorization): ban cu CHI thu spec_path.parents[1]
+        # (dung cho spec long 2 cap nhu output/ep_01/sections/spec_hook.json) - spec.json
+        # san xuat THAT cua svhmp_v13_render.py (output/ep_01/spec.json, chi long 1 cap)
+        # khien parents[1]='output' -> episode.md KHONG resolve duoc -> R86 broad AM THAM
+        # bi SKIP (chinh 1 trong '2 bypass' DEBT-018 da ghi nhan). Thu du 3 vi tri, uu
+        # tien vi tri THAT gan spec_path nhat, fallback REPO/output/ep_NN/episode.md
+        # (luon dung du spec.json dat o dau - kha nang phuc hoi cao nhat).
+        _repo_root = Path(__file__).resolve().parents[1]
+        _candidates = [spec_path.parent / 'episode.md']
+        if len(spec_path.parents) > 1:
+            _candidates.append(spec_path.parents[1] / 'episode.md')
+        _candidates.append(_repo_root / 'output' / f'ep_{ep_num:02d}' / 'episode.md')
+        md_path = next((c for c in _candidates if c.exists()), _candidates[-1])
         if md_path.exists():
             print('[FULL_TEXT_GATE] R86 broad EOL check via qa_eol_diacritic.py')
             r86 = subprocess.run(

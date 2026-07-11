@@ -365,6 +365,16 @@ Registry 0/0/0 sau mỗi sửa. Domain LOCKED chạm: g6b_story_planner (DEBT-01
   - **Giai đoạn 1 (LOG-ONLY):** wire `svhmp_preflight_qa.py` vào `svhmp_v13_render.py` + các entrypoint render khác ở chế độ chỉ ghi log (không chặn), chạy thử trên toàn bộ 50 tập hiện có, báo cáo đầy đủ những gì SẼ bị chặn nếu bật thật (bao nhiêu tập, lỗi gì). KHÔNG tự ý bật chặn ở giai đoạn này.
   - **Giai đoạn 2 (CHẶN THẬT + bỏ `--skip-r86`):** CHỈ làm sau khi Mr.Long xem báo cáo giai đoạn 1 và xác nhận tiếp — nếu giai đoạn 1 cho thấy nhiều tập cũ sẽ FAIL, cần bàn hướng xử lý riêng (waiver 50 tập cũ hay bắt buộc regen) trước khi bật chặn.
   - (1a)/(1b)/(1c) audio docstring: sửa khớp `enforcement_mode` thật SAU khi giai đoạn 2 xong (tránh sửa 2 lần nếu giai đoạn 1 đổi hướng).
+- **GIAI ĐOẠN 1 XONG (11/7, CMD_BUILD):** wire LOG-ONLY vào `svhmp_v13_render.py` +
+  chạy thử 50/50 tập, báo cáo đầy đủ tại `reports/DEBT018_R197_PHASE1_LOG_ONLY_REPORT.md`.
+  Tóm tắt: **50/50 tập SẼ bị chặn nếu bật Giai đoạn 2 ngay** — 49/50 có vi phạm R86 EOL
+  thật (chỉ EP01 golden sạch); **ngay cả EP01 (spec.json thật) cũng có 22 issue khác R86**
+  (R1/R5/R10/R17). Phát hiện thêm 1 bug trong lúc wire: `svhmp_preflight_qa.py` resolve
+  sai `episode.md` path cho spec.json sản xuất thật (đã fix + test, xem báo cáo mục 4) —
+  đây chính là cơ chế "missing-md skip" đã ghi ở dòng trên. **Chờ Mr.Long xem báo cáo
+  quyết Giai đoạn 2** (waiver 50 tập cũ hay bắt buộc regen, có nên phủ luôn `render_
+  chunk.py`/`render_section.py` không — 2 script này KHÔNG phải entrypoint chính theo
+  `bp8/render_chain.yaml`, chưa được wire ở Giai đoạn 1).
 
 ## DEBT-019: security latent — `dialogue_generator.write_episode_line()` non-numeric `ep_n` chưa sanitize (gap #18) — **CLOSED (ghi nhận, không hành động)**
 - 3 entrypoint chính (svhmp_v13_render/episode_generator/dialogue_generator) đều SẠCH với input trusted-operator + int-validate. Latent: `write_episode_line()` với `ep_n` non-numeric làm `Path(root)/f'ep_{str(ep_n)}'` — nếu `ep_n` chứa `../` sẽ traverse. KHÔNG reachable từ input untrusted (chỉ test/sandbox truyền literal), đã có guard production-overwrite.

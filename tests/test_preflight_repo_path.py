@@ -54,3 +54,41 @@ def test_preflight_paths_resolve_inside_repo():
     assert m, '100check_master mat dinh nghia PREFLIGHT'
     assert '_TOOLS' in m.group(1) or '__file__' in m.group(1), (
         f'PREFLIGHT khong resolve theo __file__: {m.group(1).strip()}')
+
+
+# ============================================================
+# DEBT-018 (11/7, per Mr.Long authorization) — md_path resolution bug ben trong
+# svhmp_preflight_qa.py: spec_path.parents[1] gia dinh spec.json long 2 cap (vd
+# output/ep_01/sections/spec_hook.json) nhung spec.json san xuat THAT cua svhmp_
+# v13_render.py (output/ep_01/spec.json) chi long 1 cap -> episode.md KHONG
+# resolve duoc -> R86 broad EOL AM THAM bi SKIP (chinh 1/2 "bypass" DEBT-018 da
+# ghi nhan tu truoc). Fix: thu nhieu vi tri ung vien, fallback REPO/output/ep_NN.
+# ============================================================
+
+def test_r86_broad_resolves_for_real_production_spec_single_level():
+    """MUTATION-PROOF hanh vi that: goi preflight tren spec.json SAN XUAT THAT
+    (output/ep_01/spec.json, chi long 1 cap duoi output/) - R86 broad PHAI CHAY
+    (khong duoc roi vao nhanh WARN 'episode.md not found, skip')."""
+    import subprocess
+    import sys as _sys
+    r = subprocess.run([_sys.executable, str(PREFLIGHT), str(REPO / 'output' / 'ep_01' / 'spec.json')],
+                       capture_output=True, text=True, encoding='utf-8', cwd=str(REPO))
+    out = r.stdout
+    assert '[FULL_TEXT_GATE] R86 broad EOL check via qa_eol_diacritic.py' in out, (
+        f"R86 broad KHONG chay tren spec.json san xuat THAT (bug md_path resolution "
+        f"tai xuat) - stdout: {out[-800:]}")
+    assert 'episode.md not found' not in out, f"van con nhanh SKIP am tham: {out[-800:]}"
+
+
+def test_r86_broad_still_resolves_for_legacy_nested_section_spec():
+    """Khong pha hanh vi CU (spec.json long 2 cap kieu output/ep_01/sections/
+    spec_hook.json) - phai VAN chay R86 broad dung nhu truoc khi fix."""
+    import subprocess
+    import sys as _sys
+    section_spec = REPO / 'output' / 'ep_01' / 'sections' / 'spec_hook.json'
+    if not section_spec.exists():
+        return  # khong co du lieu legacy nay tren may - khong gia dinh, khong FAIL sai
+    r = subprocess.run([_sys.executable, str(PREFLIGHT), str(section_spec)],
+                       capture_output=True, text=True, encoding='utf-8', cwd=str(REPO))
+    assert '[FULL_TEXT_GATE] R86 broad EOL check via qa_eol_diacritic.py' in r.stdout, (
+        f"regression: spec long 2 cap (hanh vi cu) khong con chay R86 broad: {r.stdout[-800:]}")
