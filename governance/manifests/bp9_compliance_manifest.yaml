@@ -10,5 +10,6 @@ files:
 - governance/blueprint/bp9/policy_gates.yaml
 - reports/BP9_REPORT.md
 - tests/test_bp9_compliance.py
+- tests/test_disclaimer_present_25ep.py
 - tools/bp9_compliance_check.py
-file_count: 6
+file_count: 7

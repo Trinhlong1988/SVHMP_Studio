@@ -1156,6 +1156,10 @@ files:
     domain: g2_character
     status: active
     tier: 0
+  tests/test_disclaimer_present_25ep.py:
+    domain: bp9_compliance
+    status: active
+    tier: 3
   tests/test_build_claim.py:
     domain: governance_audit
     status: active
@@ -1545,4 +1549,4 @@ files:
     status: active
     tier: 1
 generated_by: tools/registry_triage.py
-total: 386
+total: 387

@@ -436,3 +436,21 @@ Registry 0/0/0 sau mỗi sửa. Domain LOCKED chạm: g6b_story_planner (DEBT-01
 - **Giới hạn khi đề xuất fix:** đây là claim khó tự động hoá đầy đủ (cần bộ dữ liệu tham chiếu "tên nào thuộc thời nào" — hiện KHÔNG tồn tại trong repo; không tự suy đoán/tạo bộ dữ liệu này vì dễ thành bịa theo R195). KHÔNG tự chạy đối chiếu 139 passenger thật để kết luận có vi phạm hay không (cần bộ tham chiếu era trước).
 - **Phân loại:** THIẾU ENFORCER cho 1/5 rule bible/23 (rule_01/02/04/06 đều có check thật trong `roster_validator.py`; rule_02 word-uniqueness + waiver đã có DEBT-020).
 - **KHÔNG tự sửa** — đề xuất cho Mr.Long: (a) xây bộ tham chiếu tên-theo-thời-kỳ tối thiểu (vd map thập niên sinh → nhóm tên phổ biến, dựa nguồn có căn cứ) rồi thêm check vào `roster_validator.py`, hoặc (b) hạ claim bible/23 thành "kiểm tay khi duyệt hồ sơ mới" (rule_03 vốn mang tính thẩm mỹ/văn học, khó số hoá tuyệt đối) — ghi rõ "CHƯA CÓ ENFORCER" theo R215 thay vì để ngỏ.
+
+---
+
+## DEBT-028: `bible/17_sfx_acquisition_pipeline.yaml` checksum lock — code tồn tại nhưng KHÔNG BAO GIỜ được gọi (dead code)
+
+- **Phát hiện:** 11/7, `TASK_AUDIT_RULE_ENFORCER_SWEEP.md`.
+- **Bằng chứng (đã tự đọc code):** `bible/17_sfx_acquisition_pipeline.yaml:2,9` khẳng định "Status: IMMUTABLE workflow — KHÔNG ad-hoc download. Mọi SFX trong bible/05 **PHẢI** có entry trong này + qua pipeline + **checksum lock**." `tools/sfx_acquire.py::checksum_and_register()` (dòng 377) — hàm THẬT, có logic sha256 đầy đủ — nhưng lời gọi duy nhất tới hàm này (dòng 478, trong `acquire_asset()`) **bị COMMENT OUT**: `# checksum_and_register(asset_id, final_path, spec, source_info)`. Dòng ngay trên (`process_asset()`, dòng 476) cũng bị comment tương tự. `find . -iname "CHECKSUMS.sha256"` = **0 file tìm thấy** trên toàn repo — xác nhận bước checksum chưa từng chạy thật lần nào.
+- **Phân loại:** THIẾU ENFORCER dạng đặc biệt — không phải "chưa viết" mà là **viết rồi nhưng vô hiệu hoá** (dead code, có thể do dở dang mid-implementation chứ không phải chủ ý tắt).
+- **KHÔNG tự bật lại 2 dòng comment** (không rõ TẠI SAO bị tắt — có thể do `process_asset()` phụ thuộc bước xử lý audio chưa xong, tự ý bật có thể vỡ luồng `acquire_asset()` hiện tại; đây là quyết định code thuộc domain SFX pipeline, cần Mr.Long/CMD phụ trách xác nhận trước). Đề xuất: (a) nếu pipeline đã đủ điều kiện chạy, bỏ comment + test thật; (b) nếu chưa, ghi rõ trong bible/17 "checksum lock: PLANNED, chưa wire — CHƯA CÓ ENFORCER" thay vì khẳng định PHẢI như hiện tại.
+
+---
+
+## DEBT-029: `bible/32_repair_contract.yaml` (R161) — schema "Vi phạm = REJECT" nhưng 0 code nào tham chiếu
+
+- **Phát hiện:** 11/7, `TASK_AUDIT_RULE_ENFORCER_SWEEP.md`.
+- **Bằng chứng (đã tự grep toàn repo):** `bible/32_repair_contract.yaml:2,5` — "R161 — REPAIR CONTRACT (ChatGPT-verified, Mr.Long lock 30/6). Ràng buộc khi sửa episode: KHÔNG được rewrite tự do... Mọi propose fix **PHẢI** tuân schema này. **Vi phạm = REJECT**." Định nghĩa schema có cấu trúc rõ (`target`/`locked`/`allowed_actions`). `grep -rln "repair_contract\|32_repair\|R161" tools/*.py` = **0 kết quả tuyệt đối** — không có bất kỳ tool/validator nào tham chiếu file này hay số hiệu rule này.
+- **Phân loại:** THIẾU ENFORCER hoàn toàn (0%, không phải "hẹp hơn claim") cho 1 rule TỐI THƯỢNG khác (R161, ngang hàng dạng với R41/R86 về mức độ nghiêm trọng theo văn phong "Vi phạm = REJECT").
+- **Lưu ý khi đề xuất fix:** không rõ R161 vốn được thiết kế để MÁY validate (structured schema tự động check) hay là **quy ước hành vi cho AI khi đề xuất sửa tay** (tương tự nhóm R_SUPREME R1-R10 — không phải mọi rule TỐI THƯỢNG đều có 1 code-gate 1-1 tương ứng, một số là kỷ luật quy trình cho executor). KHÔNG tự đoán ý định gốc — chỉ ghi nhận trạng thái thật (0 tham chiếu code) cho Mr.Long xác nhận: nếu ý định là máy-validate, cần xây tool; nếu là quy ước hành vi, nên đổi văn phong "PHẢI tuân schema... REJECT" (nghe như code-gate) sang mô tả rõ đây là checklist tự-kỷ-luật khi review tay.
