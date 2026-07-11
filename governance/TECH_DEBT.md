@@ -410,12 +410,13 @@ Registry 0/0/0 sau mỗi sửa. Domain LOCKED chạm: g6b_story_planner (DEBT-01
 
 ---
 
-## DEBT-025: R196 (CLAUDE.md TỐI THƯỢNG) — cấm từ "complete/done/100% hoàn thành" cho module chưa Production validated: 0 enforcer
+## DEBT-025: R196 (CLAUDE.md TỐI THƯỢNG) — cấm từ "complete/done/100% hoàn thành" cho module chưa Production validated: 0 enforcer — **CLOSED (defer, mirror DEBT-010/DEBT-022)**
 
 - **Phát hiện:** 11/7, `TASK_AUDIT_RULE_ENFORCER_SWEEP.md` (đợt quét CLAUDE.md TỐI THƯỢNG).
 - **Bằng chứng (đã tự grep toàn repo):** `CLAUDE.md:9` khẳng định "**CẤM dùng từ 'complete / done / 100% hoàn thành'** cho module chưa Production validated. Dùng 'Engineering Validation PASS / Ready for Production Validation' thay thế." — văn phong CẤM tuyệt đối, TỐI THƯỢNG (ngang hàng R197). `grep -rln "R196\|Production Validated\|100% hoan thanh" tools/*.py` = **0 kết quả** — không có bất kỳ script/gate/commit-hook nào grep các từ cấm này trong report/commit message/docstring để chặn. So sánh: `check_rule_mention_codified.py` (pre-commit hook THẬT đang chạy, section A của `git_hook_pre_commit.py`) chỉ chặn pattern `"R{N} codified"` thiếu entry bible/00 — **hoàn toàn khác phạm vi**, không liên quan đến R196.
 - **Phân loại:** THIẾU ENFORCER (không phải "hẹp hơn claim" — là **0 enforcer tuyệt đối**) cho 1 rule TỐI THƯỢNG. Rủi ro thực: bất kỳ report/commit message nào (kể cả của tôi) dùng "hoàn thành"/"done"/"complete" cho module chưa qua Production run đều KHÔNG bị chặn — chỉ dựa vào tự-kỷ-luật của executor (đúng loại rủi ro R215 đã cảnh báo).
 - **KHÔNG tự xây enforcer ngay** (rule TỐI THƯỢNG + văn bản CLAUDE.md — theo R211 domain `LEAD`, chỉ Mr.Long sửa; xây gate cũng là quyết định kỹ thuật loại "code mới" cần Change Request Gate 6 câu trả lời trước, không tự leo thang trong 1 lượt quét). Đề xuất 2 hướng cho Mr.Long chọn: (a) xây `check_r196_banned_words.py` grep report/commit-msg mới nhất theo pattern tương tự `check_rule_mention_codified.py`, chặn nếu thấy từ cấm mà không kèm "Engineering Validation PASS"; (b) chấp nhận đây là kỷ luật tự-giác thuần (honor-system), ghi rõ trong CLAUDE.md "CHƯA CÓ ENFORCER — rủi ro drift" đúng tinh thần R215 mục 1(b) thay vì để ngỏ như hiện tại.
+- **QUYẾT ĐỊNH Mr.Long (11/7):** defer, giống hệt lý do DEBT-010/DEBT-022 — đây là rule về ngôn từ báo cáo, khó xây enforcer tin cậy (phải quét toàn bộ text tự do đối chiếu trạng thái "đã Production validated" chưa — rủi ro false positive/negative cao). Dựa vào kỷ luật + review chéo giữa CMD, như đã áp dụng cho R200. Không xây thêm lúc này.
 
 ---
 
@@ -429,7 +430,7 @@ Registry 0/0/0 sau mỗi sửa. Domain LOCKED chạm: g6b_story_planner (DEBT-01
 
 ---
 
-## DEBT-027: `bible/23_passenger_naming.yaml` rule_03 (tuổi ↔ thời tên) — 0 enforcer
+## DEBT-027: `bible/23_passenger_naming.yaml` rule_03 (tuổi ↔ thời tên) — 0 enforcer — **Mr.Long 11/7: chưa đủ dữ liệu quyết, giao CMD điều tra phạm vi cụ thể trước**
 
 - **Phát hiện:** 11/7, `TASK_AUDIT_RULE_ENFORCER_SWEEP.md`.
 - **Bằng chứng (đã tự đọc code):** `bible/23_passenger_naming.yaml:59` (rule_03) khẳng định "TUỔI ↔ THỜI TÊN: nhân vật 58 tuổi (sinh ~196x) mang tên thời đó; **CẤM** tên trend trẻ cho người già." `tools/roster_validator.py::check_c4_naming_framework()` (hàm duy nhất kiểm bible/23 v1.1) **chỉ** kiểm: (1) version = v1.1, (2) `NAMING_RULES_REQUIRED` tồn tại làm KEY trong bible/23 (chỉ kiểm SỰ HIỆN DIỆN của key, không kiểm nội dung), (3) `region_dialect` dùng trong roster khớp `rule_06_region_match.style_by_region` — **không có bất kỳ dòng nào đối chiếu tên nhân vật với năm sinh/độ tuổi** (rule_03). `grep -rln "thoi_ten|era_appropriate|name_era|birth_era" tools/*.py` = 0 kết quả.
@@ -448,9 +449,10 @@ Registry 0/0/0 sau mỗi sửa. Domain LOCKED chạm: g6b_story_planner (DEBT-01
 
 ---
 
-## DEBT-029: `bible/32_repair_contract.yaml` (R161) — schema "Vi phạm = REJECT" nhưng 0 code nào tham chiếu
+## DEBT-029: `bible/32_repair_contract.yaml` (R161) — schema "Vi phạm = REJECT" nhưng 0 code nào tham chiếu — **QUYẾT ĐỊNH Mr.Long 11/7: gộp vào task R86 đang chạy**
 
 - **Phát hiện:** 11/7, `TASK_AUDIT_RULE_ENFORCER_SWEEP.md`.
 - **Bằng chứng (đã tự grep toàn repo):** `bible/32_repair_contract.yaml:2,5` — "R161 — REPAIR CONTRACT (ChatGPT-verified, Mr.Long lock 30/6). Ràng buộc khi sửa episode: KHÔNG được rewrite tự do... Mọi propose fix **PHẢI** tuân schema này. **Vi phạm = REJECT**." Định nghĩa schema có cấu trúc rõ (`target`/`locked`/`allowed_actions`). `grep -rln "repair_contract\|32_repair\|R161" tools/*.py` = **0 kết quả tuyệt đối** — không có bất kỳ tool/validator nào tham chiếu file này hay số hiệu rule này.
 - **Phân loại:** THIẾU ENFORCER hoàn toàn (0%, không phải "hẹp hơn claim") cho 1 rule TỐI THƯỢNG khác (R161, ngang hàng dạng với R41/R86 về mức độ nghiêm trọng theo văn phong "Vi phạm = REJECT").
 - **Lưu ý khi đề xuất fix:** không rõ R161 vốn được thiết kế để MÁY validate (structured schema tự động check) hay là **quy ước hành vi cho AI khi đề xuất sửa tay** (tương tự nhóm R_SUPREME R1-R10 — không phải mọi rule TỐI THƯỢNG đều có 1 code-gate 1-1 tương ứng, một số là kỷ luật quy trình cho executor). KHÔNG tự đoán ý định gốc — chỉ ghi nhận trạng thái thật (0 tham chiếu code) cho Mr.Long xác nhận: nếu ý định là máy-validate, cần xây tool; nếu là quy ước hành vi, nên đổi văn phong "PHẢI tuân schema... REJECT" (nghe như code-gate) sang mô tả rõ đây là checklist tự-kỷ-luật khi review tay.
+- **QUYẾT ĐỊNH Mr.Long (11/7):** task R86 fix 49 tập đang chạy (`prompts/TASK_DEBT018_R86_FIX_49EP.md`, claim `debt018_r86_fix_49ep`) sửa văn bản episode.md — CẦN tuân bible/32 nhưng hiện chưa có gì kiểm. **KHÔNG tách việc riêng** — thêm 1 bước xác nhận NHẸ (không cần gate chặn cứng) trực tiếp vào chính task R86: sau khi sửa mỗi câu, diff PHẢI nằm trong `allowed_actions` (đổi ≤5 từ/câu, KHÔNG đổi fact/timeline) — làm NGAY trong lúc thực thi R86 (self-check khi propose fix), không phải 1 tool/gate riêng biệt.
