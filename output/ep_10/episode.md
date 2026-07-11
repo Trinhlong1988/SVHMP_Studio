@@ -56,25 +56,25 @@ cross_ep_continuity:
 
 [pause:800ms]
 
-Vào đêm ba mươi tháng Chạp. Lớp sương đặc đến nỗi khó nhìn. Chuyến xe đêm chạy về phía Hà Nội. Đèn pha quét lên bụi dứa dại ven đường. Phía xa, ánh đèn thành phố loé sáng qua sương.
+Vào đêm ba mươi Tết năm đó. Lớp sương đặc đến nỗi khó nhìn. Chuyến xe đêm chạy về phía Hà Nội rồi. Đèn pha quét lên bụi dứa dại ven đường. Phía xa, ánh đèn thành phố loé sáng qua sương.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ mười — người khách đếm thêm. Trong túi áo, năm vật: sợi len nâu, sợi lạt buộc, phong bao lì xì trống, sợi chỉ trắng, viên pin cassette rỉ.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười — người khách đếm thêm. Trong túi áo, năm vật: sợi len nâu, sợi lạt buộc, phong bao lì xì trống, sợi chỉ trắng, viên pin cassette rỉ sét.
 
 Bác tài lái như mọi khi. Hai bàn tay đeo găng trắng. Ánh mắt liếc gương chiếu hậu — đêm nay không liếc. Bác nhìn người đàn ông trực tiếp qua gương, lâu hơn cả đêm trước.
 
-Anh ấy nhớ câu bác nói đêm trước — "Con cũng có một cái gì đó chưa kịp nói. Con biết đấy." — câu đó anh vẫn chưa hỏi. Vẫn không dám.
+Anh ấy nhớ câu bác nói đêm trước — "Con cũng có một cái gì đó chưa kịp nói. Con biết đấy." — câu đó anh vẫn chưa hỏi gì. Vẫn không dám.
 
-Xe chậm lại trước một quán cà phê đêm ven đường vào thành phố. Đèn vàng yếu hắt xuống. Một người đàn ông đứng đợi.
+Xe chậm lại trước một quán cà phê đêm ven đường vào thành phố. Đèn vàng yếu hắt xuống. Một người đàn ông đứng đợi ai đó.
 
-Một chú trung niên. Khoảng bốn mươi mấy tuổi. Mặc áo khoác da đen, tóc bạc một vài sợi ở thái dương. Mặt khắc khổ. Tay phải xách cặp da. Tay trái cầm một chiếc khăn tay xưa — màu xanh nhạt, hai đầu thêu hoa nhỏ.
+Một chú trung niên. Tuổi khoảng bốn mươi mấy. Mặc áo khoác da đen, tóc bạc một vài sợi ở thái dương. Mặt khắc khổ lắm. Tay phải xách cặp da. Tay trái cầm một chiếc khăn tay xưa — màu xanh nhạt, hai đầu thêu hoa nhỏ xíu.
 
 Người khách nhìn cái khăn. Có cảm giác đã thấy từ trước — EP08, anh sinh viên đêm Bắc Ninh.
 
-Chú bước lên xe. Đi xuống lối giữa. Ngồi vào ghế thứ ba — cùng ghế người đàn ông.
+Chú bước lên xe. Đi xuống lối giữa xe. Ngồi vào ghế thứ ba — cùng ghế người đàn ông.
 
 Không. Ngồi vào ghế thứ ba KHÁC. Ghế bên cạnh anh ấy. Cách anh một ghế.
 
-Xe lăn bánh trở lại.
+Xe lại lăn bánh.
 
 ---
 
@@ -82,21 +82,21 @@ Xe lăn bánh trở lại.
 
 [pause:600ms]
 
-Chú đặt cặp da xuống chỗ trống bên cạnh. Khăn tay vẫn cầm trên đùi.
+Chú đặt cặp da xuống bên cạnh chỗ trống. Khăn tay vẫn cầm trên đùi.
 
-Người khách quay đầu nhẹ. Nhìn chú. Lần đầu trong mười đêm người đàn ông quay nhìn passenger.
+Người khách quay đầu nhẹ nhàng. Nhìn chú. Lần đầu trong mười đêm người đàn ông quay nhìn passenger.
 
 Chú đang vuốt khăn tay. Cùng cái khăn EP08 — xanh nhạt, thêu hoa trắng. Nhưng khăn này đã bạc hơn nhiều, sờn mép. Như đã giữ ba mươi năm.
 
 Chú nhìn lên cao. Bắt gặp ánh mắt anh ấy.
 
-Chú khẽ mỉm cười. Một cái cười rất nhẹ. Không quen, không lạ.
+Chú khẽ mỉm cười. Một cái cười rất nhẹ nhàng. Không quen, không lạ lùng.
 
 "Anh cũng về Hà Nội đêm ba mươi à?"
 
-Người đàn ông gật đầu. người khách không biết vì sao mình ngồi xe này. Vì sao về Hà Nội. Nhưng người đàn ông gật.
+Người đàn ông gật đầu. người khách không biết vì sao mình ngồi xe này. Vì sao về Hà Nội chuyến này. Nhưng người đàn ông gật đầu.
 
-Ông cụ ghế đầu vặn radio. Tiếng "...quê nhà..." quen thuộc.
+Ông cụ ghế đầu vặn radio. Tiếng "...quê nhà..." quen thuộc lắm.
 
 Bác tài liếc gương. Lâu.
 
@@ -108,7 +108,7 @@ Bác tài liếc gương. Lâu.
 
 Xe đi qua một đoạn đường có bệnh viện huyện xưa. Tường vàng sờn. Cổng vào có một cây bồ đề già. Dưới gốc cây, có ai đó ngồi — bóng người mặc áo bông xám, tóc bạc, lưng còng.
 
-Chú ngồi cạnh anh ấy nhìn về phía đó. Cổ họng nuốt một cái nhẹ.
+Chú ngồi cạnh anh ấy nhìn về phía đó. Cổ họng nuốt một cái nhẹ nhàng.
 
 "Bệnh viện này..." Chú nói nhẹ.
 
@@ -130,7 +130,7 @@ Chú quay đầu. Áp khăn tay lên má.
 
 "Em tên Việt. Bốn mươi sáu tuổi. Quê Bắc Ninh. Bà nội anh mất đêm ba mươi Tết — ba mươi năm trước. Vào lúc em mười sáu tuổi."
 
-Giọng chú trầm. Lặng. Không buồn — như đã thấm.
+Giọng chú trầm. Lặng lắm. Không buồn — như đã thấm.
 
 "Bà nội nuôi anh từ ba tuổi. Bố anh mất sớm, mẹ anh đi bước nữa và chuyển vào Nam. Cô gái ở với bà nội. Mười ba năm. Bà nuôi anh bằng đồng lương hưu giáo viên ít ỏi."
 
@@ -156,9 +156,9 @@ Chú ngừng. Vuốt khăn.
 
 "Anh không hiểu vì sao bà đưa khăn cho anh hồi đó, rồi giữ lại khăn của mình. Sau này anh nghĩ thầm — chắc bà muốn giữ một cái gì có hơi tay anh. Để khi nhớ anh, bà có cái mà sờ."
 
-Bác tài nhìn gương chiếu hậu. Im lặng yên.
+Bác tài nhìn gương chiếu hậu một chút. Im lặng yên.
 
-Trong gương chiếu hậu, người khách thấy ba cái bóng. Một là chú Việt. Một là bà nội cụ — tóc bạc, áo bông xám — ngồi sau chú. Một bóng khác — mờ hơn — ngồi sau người đàn ông. Bóng đó anh ấy không nhìn rõ ràng. Có thể là phụ cô gái. Có thể là tự anh.
+Trong gương chiếu hậu, người khách thấy ba cái bóng. Một là chú Việt đó. Một là bà nội cụ — tóc bạc, áo bông xám — ngồi sau chú. Một bóng khác — mờ hơn — ngồi sau người đàn ông. Bóng đó anh ấy không nhìn rõ ràng. Có thể là phụ cô gái. Có thể là tự anh.
 
 Người khách chớp mắt. Trong gương chỉ còn chú Việt và một bóng mờ.
 
@@ -166,7 +166,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Chú Việt khẽ gật.
+Chú Việt khẽ gật đầu.
 
 "Em nhớ, bác."
 
@@ -204,7 +204,7 @@ Chú Việt khẽ gật.
 
 [pause:1500ms]
 
-Xe chậm lại. Phía trước có một cây cầu. Đèn vàng yếu chiếu lên thành cầu sắt. Cầu Long Biên.
+Xe chậm lại trước một cây cầu. Đèn vàng yếu chiếu lên thành cầu sắt. Cầu Long Biên.
 
 Người đàn ông nhìn ra cửa kính. Cảm giác đã từng đến đây. Đã từng dừng ở chỗ này. Đã từng có ai đó xuống xe ở đây.
 
@@ -216,7 +216,7 @@ Chú Việt nhìn theo anh ấy. Khẽ nói:
 
 Tiếng chuông giao thừa ngân từ một ngôi chùa nhỏ ven sông Hồng. Một hồi. Tan.
 
-Chú đứng dậy. Cầm cặp. Khăn tay vẫn cầm tay.
+Chú đứng dậy ngay. Cầm cặp da. Khăn tay vẫn cầm tay.
 
 Khi đi qua anh, chú khẽ nói:
 
@@ -228,21 +228,21 @@ Trước khi xuống, chú quay đầu nhìn bác tài. Rồi nhìn lên đồng
 
 Đồng hồ chỉ bảy giờ mười phút.
 
-Chú hỏi câu ai cũng hỏi:
+Chú hỏi điều ai cũng thắc mắc:
 
 "Bác lái xe này bao nhiêu năm rồi?"
 
-Bác tài nhìn gương chiếu hậu. Khẽ nói:
+Bác tài nhìn gương chiếu hậu rồi. Khẽ nói:
 
 "Chưa tới lúc."
 
-Chú khẽ gật. Bước xuống dưới.
+Chú khẽ gật đầu. Bước xuống dưới.
 
-Cửa xe khép lại. Xe lăn bánh.
+Cửa xe lại khép. Xe lăn bánh.
 
 [pause:1200ms]
 
-Bên ngoài, người đàn ông thấy chú Việt đứng giữa cầu Long Biên. Khăn tay cầm trên tay. Chú quay đầu nhìn về phía sông Hồng. Sông tối đen. Lớp sương dày đặc.
+Bên ngoài, người đàn ông thấy chú Việt đứng giữa cầu Long Biên. Khăn tay cầm trên tay. Chú quay đầu nhìn về phía sông Hồng. Sông tối đen. Lớp sương dày đặc lắm.
 
 Có một bóng người khác — phụ nữ, tóc cột thấp — đang đi trên cầu, hướng về phía chú. Người ấy mặc áo dài nâu. Trong tay cầm một cuộn áo len nâu — chưa đan xong.
 
@@ -258,11 +258,11 @@ Chỉ có chú Việt đứng giữa cầu. Một mình.
 
 Xe tiếp tục lăn bánh qua cầu Long Biên.
 
-Ghế thứ ba cạnh anh trống. Trên đệm ghế, có một chiếc khăn tay xanh nhạt thêu hoa trắng — chú Việt để lại. Có chữ viết tay nguệch ngoạc trên khăn — chữ vừa được viết bằng bút bi vài giây trước. Một dòng:
+Ghế thứ ba cạnh anh trống. Trên đệm ghế, có một chiếc khăn tay xanh nhạt thêu hoa trắng — chú Việt để lại đó. Có chữ viết tay nguệch ngoạc trên khăn — chữ vừa được viết bằng bút bi vài giây trước. Một dòng:
 
 "Cháu người khách — bà nhớ cháu."
 
-Người đàn ông cầm khăn. Tay run. anh ấy ngẩng đầu nhìn bác tài qua gương chiếu hậu.
+Người đàn ông cầm khăn. Tay run. anh ấy ngẩng đầu nhìn bác tài qua gương chiếu hậu ấy.
 
 Bác tài đang nhìn anh. Lần đầu trong mười đêm, bác nhìn thẳng — không qua gương. Bác đã quay đầu nhẹ về phía người khách.
 
@@ -282,11 +282,11 @@ Người đàn ông không nhớ bao nhiêu năm rồi mình chưa về.
 
 [pause:2000ms]
 
-Anh ấy lấy năm vật trong túi ra. Đặt cạnh chiếc khăn tay vừa nhận. Sáu vật. Mười đêm. Mười người đã xuống — chín hành khách và anh chính mình ngày mai.
+Anh ấy lấy năm vật trong túi ra. Đặt cạnh chiếc khăn tay vừa mới nhận về. Sáu vật rồi. Mười đêm. Mười người đã xuống — chín hành khách và anh chính mình ngày mai.
 
 Người khách nhìn ra cửa kính. Cầu Long Biên dưới chân xe. Sông Hồng dưới cầu. Đêm vẫn dài — chuyến xe chưa dừng.
 
-Người đàn ông khẽ nhắm mắt. Hơi thở chậm xuống một nhịp.
+Người đàn ông khẽ nhắm mắt. Hơi thở chậm xuống một chút.
 
 Đồng hồ trên xe kim phút nhích — tách, tách, tách, tách, tách, tách, tách, tách. Tám lần liền sau.
 
@@ -294,7 +294,7 @@ Tới rồi đấy. Có một câu hát từ ông cụ radio ghế đầu vọng
 
 "...bà ơi cháu về..."
 
-Khải Phong ấy mở mắt. Ánh mắt bác tài qua gương dừng trên anh — bình tĩnh, lặng. Không thương xót. Không khẩn cấp.
+Khải Phong ấy mở mắt. Ánh mắt bác tài qua gương dừng trên anh — bình tĩnh, lặng yên. Không thương xót. Không khẩn cấp.
 
 Chỉ chờ.
 
