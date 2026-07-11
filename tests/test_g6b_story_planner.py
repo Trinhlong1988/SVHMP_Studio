@@ -183,10 +183,12 @@ def test_m6_story_planner_output_has_no_act_key():
 # ============================================================
 
 def test_reality_story_plan_schema_check_pass_on_real_data():
+    """TU CHINH 12/7 (per Mr.Long authorization, TASK_STORY_PLANNER_EP02_11_PILOT.md): EP01 +
+    EP02-11 (pilot 10 tap) gio xay duoc day du that -> plans=11, pending=39 (ep_12..ep_50)."""
     errs, plans, pending = check.run_checks()
     assert errs == [], f"story_plan_schema_check tren du lieu that phai 0 vi pham: {errs}"
-    assert len(plans) == 1, "hien tai CHI EP01 xay duoc day du that"
-    assert len(pending) == 49, "ep_02..ep_50 phai o trang thai pending minh bach (khong bia)"
+    assert len(plans) == 11, "EP01 + EP02-11 (pilot 12/7) phai xay duoc day du that"
+    assert len(pending) == 39, "ep_12..ep_50 phai o trang thai pending minh bach (khong bia)"
 
 
 def test_reality_season_plan_3_entries_real_boundaries():

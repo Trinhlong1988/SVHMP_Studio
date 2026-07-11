@@ -1472,6 +1472,10 @@ files:
     domain: g6_story_planner
     status: active
     tier: 3
+  tests/test_story_planner_ep02_11_pilot.py:   # TASK_STORY_PLANNER_EP02_11_PILOT.md 12/7
+    domain: g6_story_planner
+    status: active
+    tier: 3
   tests/test_decision_packet_keys_ml15.py:   # audit ML #15 10/7
     domain: g6_story_planner
     status: active
@@ -1553,4 +1557,4 @@ files:
     status: active
     tier: 1
 generated_by: tools/registry_triage.py
-total: 388
+total: 389
