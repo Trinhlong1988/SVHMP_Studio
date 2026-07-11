@@ -54,14 +54,20 @@ tang/mộ/hoa-viếng thế tục hoặc ma/điềm thuần thì để low (đú
 phải vi phạm"). ep_45/47 dựa mention 1 dòng nhẹ (một ngày rằm / 1 chữ "bàn thờ") — nếu áp chuẩn chặt
 hơn "phải mô tả tập tục chứ không chỉ nêu tên ngày/vật" thì 2 tập này rớt về low.
 
-## CÂU HỎI MỞ CHO Mr.Long (không tự quyết)
-1. **Disclaimer 25 tập medium/high:** `content_policy.yaml:74` giao vị trí/câu chữ disclaimer cho
-   **G8 (QA Runtime)**. Hiện chưa có bằng chứng stage nào (render/publish) thực sự chèn disclaimer.
-   Mr.Long quyết: (a) disclaimer sẽ được G8/publish chèn lúc phát hành (episode.md text đúng khi
-   không mang) → chỉ cần xác nhận wiring G8; hay (b) cần thêm disclaimer vào chính episode.md 25 tập.
-   → Đây là gap "policy yêu cầu, chưa rõ stage nào enforce" (đúng lớp R215) — em KHÔNG tự sửa.
-2. Nếu chọn (a): đề xuất 1 test/gate xác nhận mọi tập tier>=medium có disclaimer TRƯỚC khi publish
-   (mirror pattern enforcer khác) — nhưng đó là việc xây gate, cần Mr.Long duyệt riêng.
+## CÂU HỎI MỞ → ĐÃ QUYẾT (Mr.Long 11/7)
+1. **Disclaimer 25 tập medium/high:** Mr.Long chọn **hướng (b)** sau khi TỰ kiểm chứng: grep toàn bộ
+   `tools/vnqa/*` + `tools/qa_*.py` = 0 kết quả xử lý "disclaimer"; `tools/publish_gate.py` (nơi được
+   cho là "G8 chèn") KHÔNG tồn tại → "G8 sẽ chèn lúc publish" là lời hứa chưa ai xây (claim vs enforcer,
+   đúng lớp R197/R210). Không chọn (a) vì không có wiring nào để verify — sẽ để 25 tập rủi ro pháp lý
+   chờ 1 cơ chế chưa tồn tại.
+   → **ĐÃ LÀM (25/25):** thêm dòng disclaimer hư cấu (câu chữ khác nhau từng tập; 4 tập high-tier thêm
+   ý tôn kính) vào chính `episode.md` của 25 tập medium/high. 16 tập pass gate R40 sẵn commit `3d8aa28`;
+   9 tập ep_02-10 ban đầu fail R40 intro (variant cũ "Series:" / thiếu "kịp") → **Mr.Long cho phép sửa
+   intro đạt chuẩn R40** (khớp bản ep_11+, không sáng tạo mới) → fixed + disclaimer.
+2. **Enforcer chống drift:** `tests/test_disclaimer_present_25ep.py` (mutation-proof) khóa 25 tập luôn
+   có ≥1 marker disclaimer, 4 tập high-tier phải có ý tôn kính. 2/2 PASS.
+3. **CÒN NỢ (Mr.Long quyết sau, ngoài phạm vi DEBT-023):** cơ chế tự động chèn disclaimer + tự phân
+   loại tier cho tập MỚI (ep 51-90) — CHƯA xây. Đã ghi vào `TASK_AUDIT_RULE_ENFORCER_SWEEP.md`.
 
 ## Ghi chú tin cậy (R215)
 - 0 HB01/HB02 do 5 subagent đọc toàn văn + CMD_BUILD_2 tự verify 4 tập high-tier + grep độc lập.
