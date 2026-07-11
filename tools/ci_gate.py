@@ -35,6 +35,15 @@ CHECKS = [
     ('G8_qa_runtime', 'tools/g8_qa_runtime_check.py'),   # G8 D7: reconcile invariant qa_runtime (D2 domain + D4 pack5/19 + VNQA H1-H10 + DEBT-005 golden_lock) — static-check, khong pytest
 ]
 
+# WARN-ONLY (R210/DEBT-026, Mr.Long 11/7): surface roster imbalance canh bao KHONG chan push.
+# character_balance_report.py CO CHU DICH khong co sys.exit (la report tool, khong phai gate) —
+# ta chay + hien "FLAG LECH CAN BANG" nhung KHONG BAO GIO cong vao `fail`. Quyet WARN-only vi
+# KHONG rebalance 139 nguoi da khoa (mirror DEBT-021 — khong dung du lieu nhan vat LOCKED).
+# CAM chuyen vao CHECKS (se thanh blocking) khi roster chua can bang lai — se chan moi push.
+WARN_CHECKS = [
+    ('char_balance', 'tools/character_balance_report.py'),
+]
+
 # Error Code Standard (SVAF backlog 2/5, governance/error_code_standard.yaml) — chi
 # THEM 1 bracket rieng cuoi dong hien thi, KHONG dung vao [PASS]/[FAIL] goc (bi
 # tools/auditor.py dem chuoi cung out.count('[PASS]')).
@@ -46,6 +55,24 @@ STAGE_CODES = {
     'G4_world': 'ONT4001', 'G6_story_planner': 'ONT6001', 'G7_generator': 'ONT7001',
     'G8_qa_runtime': 'ONT8001',
 }
+
+
+def extract_warn_flags(output):
+    """Trich cac dong canh bao (⚠ / FLAG LECH) tu stdout 1 WARN-only tool.
+    Tach rieng (pure fn) de test mutation-proof khong phu thuoc roster live."""
+    return [ln.strip() for ln in (output or '').splitlines()
+            if '⚠' in ln or 'FLAG LECH' in ln]
+
+
+def run_warn_checks():
+    """Chay cac WARN_CHECKS. Tra ve list[(name, flag_lines)]. TUYET DOI khong sys.exit /
+    khong tra ve fail-count — WARN-only theo DEBT-026 (canh bao lech can bang, khong chan push)."""
+    results = []
+    for name, rel in WARN_CHECKS:
+        r = subprocess.run([PY, str(SVHMP / rel)], capture_output=True, text=True,
+                           encoding='utf-8', errors='replace')
+        results.append((name, extract_warn_flags(r.stdout)))
+    return results
 
 
 def _pytest_summary(out):
@@ -70,6 +97,12 @@ def main():
             fail += 1
             print((r.stdout or '')[-400:])
             print((r.stderr or '')[-200:])
+    # WARN-only (DEBT-026): hien canh bao lech can bang roster, KHONG cong vao `fail`.
+    for name, flags in run_warn_checks():
+        print(f"  [WARN] {name} (WARN-only, khong chan push): {len(flags)} canh bao [ONT2100]")
+        for f in flags:
+            print(f"        {f}")
+
     # Constitution 03_qa_auditor.md: PASS = "ci_gate exit 0, pytest all pass";
     # scope bao gom governance enforce R209/R212/R213/R214 (pytest-func tests).
     # Chay ca pytest suite (tests/) de dong khe ho: script-style tests o tren KHONG

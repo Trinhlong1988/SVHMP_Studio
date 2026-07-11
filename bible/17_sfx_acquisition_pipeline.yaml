@@ -6,7 +6,8 @@ version: 1.0
 lock_date: 2026-06-19
 purpose: |
   Acquisition + processing + lock SFX assets theo quy trình 8-step nghiêm ngặt.
-  Mọi SFX trong bible/05 PHẢI có entry trong này + qua pipeline + checksum lock.
+  Mọi SFX trong bible/05 PHẢI có entry trong này + qua pipeline. (checksum lock =
+  PLANNED, CHƯA CÓ ENFORCER — xem STEP 6 ENFORCEMENT_STATUS + DEBT-028; blocked DEBT-003.)
   Tránh: ad-hoc download / different sample rates / LUFS drift / copyright drift.
 
 # ============================================================
@@ -161,10 +162,19 @@ processing_pipeline:
 # ============================================================
 
 checksum_lock:
+  # ENFORCEMENT_STATUS: PLANNED — CHƯA CÓ ENFORCER (DEBT-028, R215). Lời gọi
+  # checksum_and_register() trong tools/sfx_acquire.py:478 bị COMMENT chủ đích:
+  # acquire_asset() return False ở MỌI nhánh thật (ai-gen ACE-Step pending / build_from
+  # NOT-IMPLEMENTED DEBT-003 / search-candidate await Mr.Long) TRƯỚC khi tới bước checksum
+  # -> không có raw file thật nào chảy qua; ngoài ra `source_info` chưa được định nghĩa
+  # trong acquire_asset (uncomment = NameError). BLOCKED trên DEBT-003 (upstream acquisition
+  # chưa implement). git blame fcd01b03 = commit RESTORE vandalism, không phải chỗ tắt gốc.
+  # Bật lại chỉ khi DEBT-003 xong + có asset thật + source_info wired + test. Không phải
+  # "checksum lock đã enforce" như dòng purpose 'PHẢI ... checksum lock' hàm ý.
   compute: sha256 của file sau processing
   store_in: bible/05_audio_bible.yaml.asset_registry.{asset_id}.checksum
   manifest: assets/sfx/CHECKSUMS.sha256 (lock manifest)
-  drift_policy: any checksum change post-lock → HARD-FAIL (alert)
+  drift_policy: any checksum change post-lock → HARD-FAIL (alert)  # PLANNED, xem ENFORCEMENT_STATUS
 
 # ============================================================
 # STEP 7 — REGISTER vào bible/05

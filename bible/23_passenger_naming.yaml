@@ -56,12 +56,12 @@ RULES:
     note: "Chi tiết đầy đủ: governance/blueprint/schemas/naming_extension_rules.yaml (2 file 1 nội dung)."
 
   rule_07_generation_match:   # facet naming_generation (v1.1)
-    description: "TUỔI ↔ THỜI TÊN: nhân vật 58 tuổi (sinh ~196x) mang tên thời đó; CẤM tên trend trẻ cho người già."
+    description: "TUỔI ↔ THỜI TÊN (hướng dẫn thẩm mỹ, KIỂM TAY): nhân vật 58 tuổi (sinh ~196x) nên mang tên thời đó; tránh tên trend trẻ cho người già."
     era_style:
       "sinh <=1970":  "tên mộc/Hán-Việt cũ: Hảo/Liên/Hồng/Văn/Hữu/Trọng"
       "sinh 1970-1995": "tên phổ thông: Tuấn/Hằng/Minh/Ngọc"
       "sinh >=1995":  "tên trẻ hiện đại: Nhi/Khả/Bảo (vẫn thuần Việt rule_09)"
-    enforcement: "roster_validator C4 — PENDING_CONTENT (roster chưa có birth_year field)"
+    enforcement: "CHƯA CÓ ENFORCER (DEBT-027, R215) — KIỂM TAY khi duyệt hồ sơ mới. KHÔNG tự động hoá được: thiếu CẢ input data (dob/age_exact = 0/139 populated) LẪN reference data (bộ tham chiếu tên-theo-thời-kỳ không tồn tại trong repo); tự tạo bảng tên-thời-kỳ = bịa (vi phạm R195). Điều tra 40/139 passenger bracket 51-65/66+ (11/7): quan sát định tính KHÔNG thấy dấu hiệu trend trẻ, nhưng không có bộ tham chiếu để khẳng định. Không phải 'CẤM tuyệt đối đã enforce' như bản v1.1 cũ khai."
 
   rule_08_culture_belief:   # facet naming_culture (v1.1)
     description: "TÔN GIÁO/TÍN NGƯỠNG ảnh hưởng tên: Phật tử pháp danh Diệu/Minh; Công giáo thêm tên thánh (chỉ trong thoại xưng gọi, char_name vẫn thuần Việt)."

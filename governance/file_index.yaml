@@ -1160,6 +1160,10 @@ files:
     domain: bp9_compliance
     status: active
     tier: 3
+  tests/test_char_balance_warn_wired_debt026.py:
+    domain: governance_audit   # DEBT-026: char_balance wired ci_gate WARN-only (mutation-proof)
+    status: active
+    tier: 0
   tests/test_build_claim.py:
     domain: governance_audit
     status: active
@@ -1549,4 +1553,4 @@ files:
     status: active
     tier: 1
 generated_by: tools/registry_triage.py
-total: 387
+total: 388
