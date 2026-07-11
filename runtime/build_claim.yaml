@@ -76,8 +76,9 @@ claims:
     status: released
   debt018_r197_wire:
     claimed_at: '2026-07-11T09:46:44'
+    released_at: '2026-07-11T10:31:26'
     session: CMD_BUILD
-    status: active
+    status: released
   debt_020_021_023:
     claimed_at: '2026-07-11T09:46:27'
     released_at: '2026-07-11T10:21:36'
