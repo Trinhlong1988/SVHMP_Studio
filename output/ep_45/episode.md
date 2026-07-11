@@ -58,21 +58,21 @@ arc_design_compliant: bible/21 R33-R42 + R36 callback ep_35
 
 Trời đã về đêm. Đường vắng tanh. Xe đêm trôi qua đoạn sông Đuống, Bắc Ninh. Đèn pha quét đi quét lại trên hàng dâu cổ — quen Khải Phong — đêm hai mươi hai đã đi — không có ai khác trên đường.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi lăm — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — bốn mươi tư vật.
+Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi lăm — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — bốn mươi tư vật rồi.
 
 Bác tài lái. Liếc gương — dừng trên Khải Phong lâu hơn thường. Cất lời câu thứ ba foreshadow.
 
 "Đêm hai mươi lăm — con đã thấy Văn Quân đem mảnh kính tặng bệnh nhân trẻ. Đêm ba mươi lăm — Trí Hưng đem mảnh gương tặng bác sĩ tâm lý. Đêm nay — sẽ có cậu trai thứ tư cũng đem gương. Vật thứ tư trong cụm."
 
-Khải Phong gật. Bác tài tiếp:
+Khải Phong gật đầu. Bác tài tiếp:
 
 "Xe dừng cùng bến đêm hai mươi hai — Quỳnh Mai. Bến xưa — callback. Cứ giữ vật."
 
 Khải Phong nhớ — đêm hai mươi hai — Quỳnh Mai đem sách thầy về trường THCS Mai Trung. Cùng bến.
 
-Xe chậm lại trước trường THCS Mai Trung — cùng cổng xưa. Một thanh niên đứng đợi bên cổng. Khoảng ba mươi tuổi. Áo gió xám — quần jeans. Tay phải cầm hộp giấy nhỏ.
+Xe chậm lại trước trường THCS Mai Trung — cùng cổng xưa. Một thanh niên đứng đợi bên cổng trường. Tuổi khoảng ba mươi. Áo gió xám — quần jeans. Tay phải cầm hộp giấy nhỏ ấy.
 
-Người đàn ông lên bậc xe. Đi đến hàng ghế giữa — chân chậm lại. Ngồi xuống ghế thứ bảy.
+Người đàn ông lên bậc xe. Đi đến hàng ghế giữa — chân chậm lại dần. Ngồi xuống ghế thứ bảy đó.
 
 Mở hộp giấy. Lấy ra một mảnh gương tan — cỡ bằng hai ngón tay — cuốn vải bông trắng.
 
@@ -84,13 +84,13 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Người đàn ông ngồi yên. Vuốt vải bông quanh mép gương. Đầu ngón tay anh nhẹ.
+Người đàn ông ngồi yên. Vuốt vải bông quanh mép gương. Đầu ngón tay anh nhẹ nhàng.
 
 Khải Phong quan sát từ ghế ba. Anh ba mươi — mặt thanh — vẻ người ổn — không bệnh — không gầy.
 
 Mảnh gương — Khải Phong nhìn ra — vật thứ tư trong cụm gương/kính. Sau Phong EP15, Văn Quân EP25, Trí Hưng EP35.
 
-Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng — tắt.
+Ông cụ ghế đầu vặn radio. Lạo xạo hoài. "...quê nhà..." vọng — tắt.
 
 [pause:500ms]
 
@@ -112,7 +112,7 @@ Anh ghế bảy nhìn về phía đó.
 
 "Tôi..."
 
-Người đàn ông nói rất nhỏ.
+Người đàn ông nói rất nhỏ xíu.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
@@ -120,7 +120,7 @@ Người đàn ông nói rất nhỏ.
 
 Xe đi qua đó. Nhà gạch khuất.
 
-Người đàn ông quay đầu lại. Vuốt vải bông.
+Người đàn ông quay đầu lại nhìn. Vuốt vải bông.
 
 ---
 
@@ -174,7 +174,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Triều Quảng gật.
+Triều Quảng gật đầu.
 
 "Em nhớ. Thầy Hồng cứu em qua điện thoại đêm em hai mươi. Mảnh gương là chứng tích em đã chọn sống — thầy là người chọn em sống. Bây giờ thầy đi — em đem mảnh tặng phòng tâm lý trường — em làm tiếp thay thầy."
 
@@ -188,13 +188,13 @@ Triều Quảng gật.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Bắc Ninh — cây dâu cổ — bến cũ (đêm 22 Quỳnh Mai). Chuông xe vọng. Nhịp đơn. Im.
+Xe chậm lại rồi. Ngã ba Bắc Ninh — cây dâu cổ — bến cũ (đêm 22 Quỳnh Mai). Chuông xe vọng xa. Nhịp đơn. Im.
 
-Triều Quảng cất mảnh gương vào hộp. Đứng dậy.
+Triều Quảng cất mảnh gương vào hộp đó. Đứng dậy ngay.
 
 "Chào anh."
 
-Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển.
+Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển gì.
 
 Bác tài: "Chưa tới lúc."
 
@@ -202,13 +202,13 @@ Người đàn ông bước xuống dưới.
 
 [pause:1200ms]
 
-Bên ngoài — Triều Quảng đi vào sân trường THCS Mai Trung — cùng cổng Quỳnh Mai đêm 22. Đèn hành lang sáng. Phòng tâm lý mới — cuối hành lang tầng một.
+Bên ngoài — Triều Quảng đi vào sân trường THCS Mai Trung — cùng cổng Quỳnh Mai đêm 22. Đèn hành lang sáng. Phòng tâm lý mới — cuối hành lang tầng một đó.
 
 Người đàn ông đến nơi đó. Đưa mảnh gương cho cô tư vấn tâm lý trực đêm. Cô nhận — cảm động — đặt vào tủ kính.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ. Bên Triều Quảng — thầy Hồng xuất hiện — ông sáu mươi áo sơ mi xanh (như EP22) — vuốt vai Triều Quảng. Mỉm cười.
+Khải Phong chớp mắt — nhìn qua cửa sổ xe. Bên Triều Quảng — thầy Hồng xuất hiện — ông sáu mươi áo sơ mi xanh (như EP22) — vuốt vai Triều Quảng ấy. Mỉm cười.
 
-Khải Phong chớp lần nữa. Người thầy tan đi.
+Khải Phong lại chớp mắt. Người thầy tan đi.
 
 Triều Quảng ngẩng đầu. Đi ra ngoài.
 
@@ -220,7 +220,7 @@ Triều Quảng ngẩng đầu. Đi ra ngoài.
 
 Xe lăn bánh — rời ngã ba Bắc Ninh.
 
-Ghế bảy trống. Trên sàn — một mẩu vải bông nhỏ rơi (cuốn mép gương). Khải Phong nhặt. Vải trắng ngả vàng — vật thứ tư trong cụm vải bông gương/kính.
+Ghế bảy trống. Trên sàn — một mẩu vải bông nhỏ rơi (cuốn mép gương). Khải Phong nhặt lên. Vải trắng ngả vàng — vật thứ tư trong cụm vải bông gương/kính.
 
 Bỏ vào túi. Vật thứ bốn mươi lăm.
 
@@ -230,17 +230,17 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 Khải Phong ngồi yên. Bốn vật vải bông trong túi — EP15 Phong gương vỡ + EP25 Văn Quân kính + EP35 Trí Hưng gương + EP45 Triều Quảng gương. Cluster gương/kính đã đủ bốn.
 
-Khải Phong ngẫm. Bốn cậu trai — bốn câu chuyện khác — cùng vật gương. Bốn cách gương cứu.
+Khải Phong ngẫm xem. Bốn cậu trai — bốn câu chuyện khác — cùng vật gương. Bốn cách gương cứu.
 
 Khải Phong nhói. Hạ Nhi — anh gái Hạ Vy — anh có liên lạc Khải Phong gần đây không?
 
-Hình ảnh — Hạ Nhi — em mười sáu lúc Hạ Vy mất — bây giờ hai bốn tuổi. Em đang ở Sài Gòn — em làm thiết kế.
+Hình ảnh — Hạ Nhi — em mười sáu lúc Hạ Vy mất — bây giờ hai bốn tuổi rồi. Em đang ở Sài Gòn — em làm thiết kế.
 
 [pause:1500ms]
 
 Khải Phong cố nhớ — anh có nhắn Khải Phong qua Facebook không? Cảm giác — có. Vài năm gần đây anh có nhắn Khải Phong qua Messenger.
 
-Tin nhắn cuối — Khải Phong cố nhớ. Anh nhắn năm vừa rồi — sinh nhật Khải Phong: "Anh ơi sinh nhật anh vui — em chúc anh sức khỏe."
+Tin nhắn cuối — Khải Phong cố nhớ. Anh nhắn năm vừa rồi — sinh nhật Khải Phong: "Anh ơi sinh nhật anh vui — em chúc anh sức khỏe nhiều."
 
 Khải Phong đáp ngắn: "Cảm ơn em."
 
@@ -248,29 +248,29 @@ Em nhắn tiếp: "Anh có khỏe không? Em ở Sài Gòn — em làm thiết k
 
 Khải Phong đáp: "OK em chúc mừng em."
 
-Em nhắn: "Anh ơi — em mời anh dự cưới em — em định cưới tháng năm sang năm — em muốn anh có mặt. Anh là người em quý — anh từng yêu chị em."
+Em nhắn: "Anh ơi — em mời anh dự cưới em — em định cưới tháng năm sang năm — em muốn anh có mặt thôi. Anh là người em quý — anh từng yêu chị em."
 
 Khải Phong không trả lời. Anh không từ chối — anh không đáp.
 
 Em mới nhắn lại tuần trước: "Anh ơi sắp cưới rồi — anh đến nhé."
 
-Khải Phong vẫn không trả lời. Anh không có lý do — anh chỉ ngại.
+Khải Phong vẫn không trả lời. Anh không có lý do — anh chỉ ngại thôi.
 
 [pause:1500ms]
 
-Bác tài liếc gương. "Vào đêm bốn mươi lăm. Con nhớ Hạ Nhi mời con dự cưới em sang năm. Đêm sau con sẽ ngẫm — con có đi không. Đừng vội."
+Bác tài liếc gương. "Vào đêm bốn mươi lăm. Con nhớ Hạ Nhi mời con dự cưới em sang năm. Đêm sau con sẽ ngẫm — con có đi không. Đừng vội nhé."
 
-Khải Phong gật. Lệ rơi xuống dưới.
+Khải Phong gật đầu. Lệ rơi xuống dưới.
 
 Đêm thứ bốn mươi lăm — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Bắc Ninh khuất. Triều Quảng ở lại phòng tâm lý — mảnh gương trong tủ kính.
 
 Khải Phong cố nhớ chi tiết tin nhắn Hạ Nhi tuần trước. Bóng người ngồi đó nhắn: "Anh ơi sắp cưới rồi — anh đến nhé. Hình ảnh người con gái ấy đã đặt vé máy bay anh từ Hà Nội vào Sài Gòn — em gửi anh qua email. Hình bóng sinh viên chỉ cần check-in thôi. Cô ấy đợi anh."
 
-Anh đặt vé cho Khải Phong. Anh không hỏi — anh không chờ anh đồng ý — anh đã đặt sẵn.
+Anh đặt vé cho Khải Phong. Anh không hỏi — anh không chờ anh đồng ý — anh đã đặt sẵn vé.
 
 Khải Phong mở email — anh check. Có vé. Chuyến Vietnam Airlines tháng năm — đúng ngày cưới anh. Em đã trả tiền vé rồi.
 
-Anh — anh gái Hạ Vy — anh vẫn coi Khải Phong như anh rể. Bóng người khách không từ bỏ liên lạc — anh cố giữ lại. Hình ảnh người đàn ông ấy Phong là người đã từ bỏ — không phải anh.
+Anh — anh gái Hạ Vy — anh vẫn coi Khải Phong như anh rể mình. Bóng người khách không từ bỏ liên lạc — anh cố giữ lại hoài. Hình ảnh người đàn ông ấy Phong là người đã từ bỏ — không phải anh.
 
 Khải Phong nhói. Đứa em đã sai rồi. Bóng người đàn ông cần đáp anh — anh cần đi dự cưới anh.
 
