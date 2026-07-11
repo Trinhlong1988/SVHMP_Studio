@@ -27,7 +27,15 @@ def check_word_eol(word):
 def scan(md_path):
     text = Path(md_path).read_text(encoding="utf-8")
     # Cut at post-narration metadata sections
-    for marker in ("# SELF-CHECK", "# NOTES", "## NOTES", "## SELF-CHECK"):
+    # DEBT-018 R86 fix (11/7, per Mr.Long authorization TASK_DEBT018_R86_FIX_49EP.md):
+    # "# CONSTITUTION CHECK" them vao - phat hien khi sua R86 cho 49 tap: EP02/03/05/10
+    # dung marker nay (KHONG phai "# SELF-CHECK" nhu EP01) cho section checklist sau
+    # CLIFFHANGER, truoc do KHONG duoc cat -> R86 quet nham noi dung checklist ("- ✅
+    # ALWAYS...") thanh vi pham gia (da tu grep xac nhan ep_02: 3/44 vi pham la false
+    # positive tu day). "# FINAL STATUS" luon dung SAU "# CONSTITUTION CHECK" trong 2
+    # tap co ca 2 (ep_02/03) nen khong can them rieng.
+    for marker in ("# SELF-CHECK", "# NOTES", "## NOTES", "## SELF-CHECK",
+                   "# CONSTITUTION CHECK"):
         idx = text.find(marker)
         if idx >= 0:
             text = text[:idx]

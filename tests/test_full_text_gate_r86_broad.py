@@ -103,6 +103,60 @@ def test_preflight_clean_text_passes_r86_broad(fake_ep_dir):
     assert "R86 EOL violations: 0" in out, f"R86 broad must report 0 violations:\n{out}"
 
 
+def test_qa_eol_diacritic_cuts_at_constitution_check_marker(tmp_path):
+    """DEBT-018 R86 fix (11/7, per Mr.Long authorization): '# CONSTITUTION CHECK'
+    (marker THAT dung o EP02/03/05/10, khac '# SELF-CHECK' cua EP01) phai duoc cat
+    truoc khi quet - checklist bullet sau marker nay KHONG phai narration, quet
+    nham thanh vi pham gia. MUTATION-PROOF: file co 1 cau narration SACH (khong vi
+    pham) + 1 dong checklist mang dau nang/hoi sau marker - PHAI bao 0 vi pham
+    (chi cau checklist bi bat SAI neu marker khong duoc nhan dien)."""
+    sys.path.insert(0, str(REPO_ROOT / "tools"))
+    import qa_eol_diacritic as qed
+
+    md = tmp_path / "episode.md"
+    md.write_text(
+        "# TẬP 99 — TEST\n\n"
+        "# HOOK [section 1]\n\n"
+        "Đêm đã buông xuống lặng lẽ trên thành phố.\n\n"
+        "# CONSTITUTION CHECK (em verify trước ship)\n\n"
+        "- ✅ ALWAYS.melancholy: aftertaste = \"nghẹn nhẹ\"\n"
+        "- ✅ ALWAYS.unresolved_goodbye: mẹ không kịp nói gì + áo đan dở\n",
+        encoding="utf-8",
+    )
+    violations = qed.scan(str(md))
+    assert violations == [], (
+        f"checklist sau '# CONSTITUTION CHECK' bi quet nham thanh vi pham: {violations}")
+
+
+def test_qa_eol_diacritic_mutation_remove_marker_exposes_false_positive(tmp_path):
+    """Doi xung: neu XOA marker '# CONSTITUTION CHECK' khoi danh sach cutoff (mo
+    phong quay lai bug cu), CUNG file tren PHAI bi bao vi pham gia - chung minh
+    test truoc that su phu thuoc vao fix, khong phai PASS ngau nhien."""
+    sys.path.insert(0, str(REPO_ROOT / "tools"))
+    import qa_eol_diacritic as qed
+
+    md = tmp_path / "episode.md"
+    md.write_text(
+        "# HOOK [section 1]\n\n"
+        "Đêm đã buông xuống lặng lẽ trên thành phố.\n\n"
+        "# CONSTITUTION CHECK (em verify trước ship)\n\n"
+        "- ✅ ALWAYS.unresolved_goodbye: mẹ không kịp nói gì + áo đan dở\n",
+        encoding="utf-8",
+    )
+    src = QA_EOL.read_text(encoding="utf-8")
+    assert '"# CONSTITUTION CHECK"' in src, "marker fix khong con trong source - kiem tra lai"
+    mutated_src = src.replace(
+        '"## SELF-CHECK",\n                   "# CONSTITUTION CHECK"):',
+        '"## SELF-CHECK"):', 1)
+    assert mutated_src != src, "mutation khong khop source that - kiem tra lai chuoi can go"
+    ns = {"__name__": "qa_eol_diacritic_mutated", "__file__": str(QA_EOL)}
+    exec(compile(mutated_src, str(QA_EOL), "exec"), ns)
+    violations = ns["scan"](str(md))
+    assert violations, (
+        "MUTATION (go marker CONSTITUTION CHECK) khong bi bat - checklist 'dở' "
+        "(HOI) phai bi quet nham thanh vi pham khi marker bi go")
+
+
 def test_preflight_skip_r86_flag_works(fake_ep_dir):
     """--skip-r86 must bypass R86 broad check (escape hatch for emergencies)."""
     ep_dir, sections = fake_ep_dir
