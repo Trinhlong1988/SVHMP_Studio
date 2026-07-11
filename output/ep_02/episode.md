@@ -16,7 +16,7 @@ Loạt truyện: Chuyến xe cuối cùng về đâu.
 
 [pause:600ms]
 
-Ai cũng có một chuyến xe chưa kịp nói lời tạm biệt.
+Ai cũng có một chuyến xe chưa kịp nói lời tạm biệt với người mình thương.
 
 [pause:1000ms]
 
@@ -71,21 +71,21 @@ constitution_compliance:
 
 [pause:800ms]
 
-Chuyến xe đêm rẽ qua một con đường vắng. Đèn pha quét nhẹ lên bụi mía sương mờ. Phía bên kia đường là một bãi đất trống, không nhà. Chỉ có gió và tiếng mía cọ vào nhau khe nhẹ.
+Chuyến xe đêm rẽ qua một con đường vắng. Đèn pha quét nhẹ lên bụi mía sương mờ. Phía bên kia đường là một bãi đất trống, không nhà. Chỉ có gió và tiếng mía khẽ nhẹ cọ vào nhau.
 
-Khải Phong ngồi ghế thứ ba, tay khoanh trước ngực, nhìn ra cửa kính. Vào đêm hai tám tháng Chạp. Người trên xe ít hơn mọi khi.
+Khải Phong ngồi ghế thứ ba, tay khoanh trước ngực, nhìn ra cửa kính. Vào đêm hai tám tháng Chạp năm đó. Người trên xe ít hơn mọi khi.
 
 Phía trước ghế lái, bác tài vẫn ngồi yên như mọi lần. Hai bàn tay đeo găng trắng đặt lên vô-lăng. Bác nhìn gương chiếu hậu một thoáng, rồi lại tập trung vào đoạn đường tối phía trước.
 
-Xe chậm lại. Đèn vàng hắt vào sàn xe. Có người vừa lên.
+Xe chậm lại rồi. Đèn vàng hắt vào sàn xe. Có người vừa lên.
 
 Một cô gái. Tóc dài cột thấp. Mặc áo phông xám, quần jean bạc màu. Tay trái cô ôm một cuộn vải gì đó — màu nâu, gấp gọn, có sợi len thừa thòi ra. Tay phải cô cầm một vé xe đã nhàu.
 
-Cô đi nhẹ xuống lối giữa, ngồi vào ghế số bảy. Ngay sát cửa sổ.
+Cô đi nhẹ xuống lối giữa, ngồi vào ghế số bảy đó. Ngay sát cửa sổ luôn.
 
 [pause:600ms]
 
-Xe lăn bánh trở lại.
+Xe lại lăn bánh.
 
 ---
 
@@ -97,29 +97,29 @@ Cô không nhìn ai. Cô gái nhìn ra cửa kính xe.
 
 Bên ngoài chỉ có đêm và đồng. Thỉnh thoảng một ánh đèn xa hắt qua, rồi tắt.
 
-Cô gái khẽ thở ra một hơi. Hơi thở đọng lên kính một mảng mờ nhỏ. Cô đưa tay áo lau, rồi lại tựa trán vào kính.
+Cô gái khẽ thở ra một hơi. Hơi thở đọng lên kính một mảng nhỏ mờ. Cô đưa tay áo lau, rồi lại tựa trán vào kính.
 
-Bác tài liếc gương chiếu hậu. Nhịp ngón trỏ trái ba cái lên vô-lăng. Rồi yên.
+Bác tài liếc gương chiếu hậu một thoáng. Nhịp ngón trỏ trái ba cái lên vô-lăng. Rồi yên.
 
 Một ông cụ ngồi ghế thứ nhất bật chiếc radio xưa. Tiếng radio rè rè, một câu hát nào đó cũ lắm, nghe không rõ lời. Có vài lời hát "...quê nhà..." rồi tiếng tan ra.
 
 [pause:500ms]
 
-Cô gái ghế bảy quay đầu, nhìn ông cụ một thoáng. Rồi quay lại cửa sổ.
+Cô gái ghế bảy quay đầu, nhìn ông cụ một thoáng. Rồi quay lại cửa sổ ấy.
 
-Khải Phong đoán cô khoảng hai mươi hai, hai ba tuổi. Mắt cô gái rất to tròn. Mí dưới hơi sưng — như khóc lâu, đã tạnh nhưng vết chưa kịp xẹp.
+Khải Phong đoán tuổi cô khoảng hai mươi hai, hai ba. Mắt cô gái rất to tròn. Mí dưới hơi sưng — như khóc lâu, đã tạnh nhưng vết chưa kịp xẹp luôn.
 
 ---
 
 # INCIDENT [section 3 — Diễn biến]
 
-Xe đi qua một cánh đồng. Phía xa, có ánh đèn dầu nhấp nháy từ một căn nhà nhỏ. Hai cây cau ngoài sân.
+Xe đi qua một cánh đồng. Phía xa, có ánh đèn dầu từ một căn nhà nhỏ nhấp nháy. Hai cây cau ngoài sân.
 
-Cô gái ghế bảy đột ngột nghiêng đầu nhìn về phía đó. Rồi cô nhẹ "À" một tiếng. Rất rất nhỏ nhẹ. Như nhận ra điều gì.
+Cô gái ghế bảy đột ngột nghiêng đầu nhìn về phía đó. Rồi cô nhẹ "À" một tiếng. Rất rất nhỏ nhẹ thôi. Như nhận ra điều gì.
 
 Cuộn vải nâu trên đùi cô bung ra một chút — lộ phần áo len đã đan gần xong. Cổ áo. Hai vai. Phần thân trước còn một mảng chưa hoàn tất, đường len dở dang treo lưng chừng.
 
-Cô nâng cuộn áo lên, đưa lên ngang ngực. Như đang ướm thử. Hai tay cô run nhẹ.
+Cô nâng cuộn áo lên ngang ngực, đưa lên. Như đang thử ướm. Hai tay cô khẽ run.
 
 "Mẹ bảo con mặc áo này về Tết..." Cô nói, rất nhẹ. Không nói với ai. Không nhìn ai.
 
@@ -127,9 +127,9 @@ Khải Phong nghe thấy. Khải Phong biết câu đó không dành cho mình.
 
 [pause:1000ms]
 
-Đồng hồ trên xe — chiếc đồng hồ nhỏ gắn cạnh ghế lái — bỗng kim phút nhích một lần. Tách. Một tiếng rất gọn. Như thể có ai vừa chạm vào.
+Đồng hồ trên xe — chiếc đồng hồ nhỏ gắn cạnh ghế lái — bỗng kim phút nhích một lần. Tách. Một tiếng rất gọn thôi. Như thể có ai vừa chạm vào.
 
-Bác tài không quay đầu. Tay vẫn đặt vô-lăng. Nhưng ánh mắt liếc gương chiếu hậu lâu hơn một nhịp.
+Bác tài không quay đầu. Tay vẫn đặt vô-lăng. Nhưng ánh mắt liếc gương chiếu hậu lâu hơn một chút.
 
 Cô gái ghế bảy không nghe tiếng đồng hồ. Cô đang vuốt lại đường len lệch ở vai áo.
 
@@ -143,13 +143,13 @@ Cô gái vẫn đang đan tiếp. Không có kim trong tay. Không có cuộn le
 
 [pause:800ms]
 
-Bên ngoài cửa kính, gió thổi nhẹ. Lá mía xào xạc.
+Bên ngoài cửa kính, gió thổi nhẹ qua. Lá mía cứ xào xạc hoài.
 
-Cô khẽ kể, vẫn rất nhỏ. Như đang kể cho chính cuộn áo nghe:
+Cô khẽ kể, vẫn rất nhỏ thôi. Như đang kể cho chính cuộn áo nghe:
 
 "Mẹ bắt đầu đan từ rằm tháng Một. Con đang ở Hà Nội. Mẹ gọi điện, bảo: 'Con về sớm. Mẹ đan dở cái áo, con thử cho mẹ đo lại vai. Năm nay mẹ đan màu nâu, con thích nâu mà.' Con bảo: 'Hai tám con về. Mẹ đợi con.'"
 
-Cô ngừng. Tay vuốt lại sợi len thừa ở cổ áo. Sợi len mịn, mềm. Mẹ đan từng mũi rất chặt.
+Cô ngừng. Tay vuốt lại sợi len thừa ở cổ áo. Sợi len mịn, mềm. Mẹ đan từng mũi chặt tay.
 
 "Hai tám con không về được. Khách hàng deadline gấp. Trưởng phòng giữ con lại làm dự án cuối năm. Con nhắn: 'Mẹ ơi ba mươi con về.' Mẹ trả lời rất nhanh: 'Mẹ đợi.' Chỉ hai chữ đó."
 
@@ -173,7 +173,7 @@ Bác tài nhìn gương chiếu hậu một thoáng. Im lặng yên. Không nói
 
 Trong gương chiếu hậu phía sau ghế lái — chỗ phản chiếu chỗ cô gái ngồi — người đàn ông thấy hai cái bóng. Một là cô. Một là một người phụ nữ lớn tuổi hơn, tóc búi gọn, ngồi sát ngay phía sau cô. Người phụ nữ ấy đang cầm hai cây kim đan, tay vẫn đan, mắt nhìn cô gái phía trước.
 
-Khải Phong chớp mắt. Trong gương vẫn chỉ có cô gái và cái bóng đã đan dở.
+Khải Phong chớp mắt. Trong gương vẫn chỉ có cô gái và cái bóng đan dở đó.
 
 [pause:1200ms]
 
@@ -181,7 +181,7 @@ Bác tài cất lời. Một câu duy nhất. Câu hỏi xưa.
 
 "Con đã nhớ ra chưa?"
 
-Cô gái ghế bảy không quay đầu. Nhưng cô khẽ gật. Một cái gật rất nhỏ.
+Cô gái ghế bảy không quay đầu. Nhưng cô khẽ gật đầu. Một cái gật rất nhỏ thôi.
 
 Hai bàn tay cô dừng lại trên mặt áo.
 
@@ -189,7 +189,7 @@ Hai bàn tay cô dừng lại trên mặt áo.
 
 [pause:1000ms]
 
-Cô gái khẽ vuốt cuộn áo. Len nâu — sợi len mẹ cô đan dở năm xưa. Cô nhớ — đêm cuối ở bệnh viện — mẹ cô vẫn ngồi đan. Ngón tay yếu. Que len rơi mấy lần. Mẹ bảo: "Cố đan xong cho con cái áo này." Cô không nói gì. Chỉ cầm tay mẹ. Tay mẹ lạnh hơn mọi đêm. Sáng hôm sau — mẹ đi rất xa. Áo len còn dở.
+Cô gái khẽ vuốt cuộn áo. Len nâu — sợi len mẹ cô đan dở năm xưa. Cô nhớ — đêm cuối ở bệnh viện — mẹ cô vẫn ngồi đan. Ngón tay yếu. Que len rơi mấy lần. Mẹ bảo: "Cố đan xong cho con cái áo này." Cô không nói gì. Chỉ cầm tay mẹ thôi. Tay mẹ lạnh hơn mọi đêm. Sáng hôm sau — mẹ đi rất xa. Áo len còn dở dang.
 
 "Em giữ cuộn áo này tám năm. Mỗi mùa đông em lấy ra. Định đan tiếp. Cầm que len lên. Rồi đặt xuống dưới. Em không đan được. Em sợ — đan xong — mẹ thực sự không còn về nữa."
 
@@ -199,7 +199,7 @@ Cô gái khẽ vuốt cuộn áo. Len nâu — sợi len mẹ cô đan dở năm
 
 "Em dẫn con vào nhà. Quan tài mẹ đặt giữa nhà. Mẹ mặc áo dài màu nâu — cái áo mẹ vẫn mặc dịp lễ Tết. Tay mẹ đặt trên ngực. Các ngón hơi co lại. Như còn đang cầm cây kim."
 
-Cô gái khẽ dừng tay đan lại. Hơi thở chậm xuống.
+Cô gái lại khẽ dừng tay đan. Hơi thở chậm xuống.
 
 "Con đã quỳ xuống. Con nhìn tay mẹ. Đầu một ngón tay vẫn còn vết kim đâm — một chấm đỏ nhỏ. Chưa kịp lau."
 
@@ -227,31 +227,31 @@ Cô gái khẽ dừng tay đan lại. Hơi thở chậm xuống.
 
 "Con đi xe đêm về. Vẫn chuyến xe này. Bác tài này. Con không biết mình đang đi đâu. Chỉ biết phải đi. Cuộn áo vẫn ôm trong lòng."
 
-Cô gái khẽ dừng tay đan lại. Hai tay siết chặt cuộn áo nâu. Mắt vẫn không khóc.
+Cô gái dừng tay đan lại lần này. Hai tay siết chặt cuộn áo nâu. Mắt vẫn không khóc.
 
 [pause:1200ms]
 
-Xe chậm lại. Phía trước có một ngã ba. Đèn đường vàng yếu hắt xuống mặt đất ẩm.
+Xe lại chậm dần. Phía trước có một ngã ba. Đèn đường vàng yếu hắt xuống mặt đất ẩm ướt.
 
 "Mẹ đan dở. Con cũng đan dở. Con chưa kịp về."
 
 Bác tài rẽ vào ngã ba Phú Yên. Một con đường đất nhỏ dẫn vào xóm. Phía cuối đường có một mái nhà tranh, hai cây cau, ánh đèn dầu vẫn nhấp nháy.
 
-Xe dừng. Cửa từ từ mở. Sương ngoài cửa khép vào nhẹ.
+Xe dừng. Cửa từ từ mở ra. Sương ngoài cửa nhẹ khép vào.
 
-Cô gái từ từ đứng dậy. Cuộn áo len nâu vẫn ôm trước ngực. Cô đi nhẹ ra cửa xe.
+Cô gái đứng dậy từ từ. Cuộn áo len nâu vẫn ôm trước ngực mình. Cô đi nhẹ ra cửa xe.
 
 Trước khi xuống, cô quay đầu nhìn bác tài. Một thoáng. Rồi nhìn lên đồng hồ trên xe.
 
 Đồng hồ chỉ bảy giờ mười phút.
 
-Bác tài nhìn gương chiếu hậu. Khẽ nói câu thứ hai:
+Bác tài nhìn gương chiếu hậu một thoáng. Khẽ nói câu thứ hai:
 
 "Chưa tới lúc."
 
-Cô gái không hiểu câu đó. Cô gái khẽ gật đầu nhẹ. Rồi bước xuống dưới.
+Cô gái không hiểu câu đó. Cô gái khẽ gật đầu nhẹ thôi. Rồi bước xuống dưới.
 
-Cửa xe khép lại. Xe lăn bánh.
+Cửa xe lại khép. Xe lăn bánh.
 
 [pause:1000ms]
 
@@ -283,11 +283,11 @@ Người đàn ông đặt tay lên đùi. Hai bàn tay Khải Phong trống. Kh
 
 Nhưng đêm nay, anh ấy thấy nhớ mẹ Khải Phong. Mẹ anh đã đi từ rất lâu. Bao nhiêu năm rồi Khải Phong không tính. Mỗi đêm mưa phùn về quê, người khách lại nhớ mùi áo len mẹ đan, mùi tay mẹ áp lên trán Khải Phong lúc người đàn ông bé.
 
-Mẹ Khải Phong chưa kịp đan xong cái áo nào cho anh ấy. Mẹ đi vào một đêm mùa đông. Khải Phong không có mặt. Anh ấy Phong ở Sài Gòn. Hình bóng đàn ông ấy Phong về trễ ba ngày.
+Mẹ Khải Phong chưa kịp đan xong cái áo nào cho anh ấy. Mẹ đi vào một đêm mùa đông. Khải Phong không có mặt ở đó. Anh ấy Phong ở Sài Gòn. Hình bóng đàn ông ấy Phong về trễ ba ngày.
 
 Tay anh khẽ run.
 
-Trên ghế lái, bác tài liếc gương chiếu hậu một thoáng. Ánh mắt bác dừng lại trên Khải Phong. Lâu hơn một nhịp.
+Trên ghế lái, bác tài liếc gương chiếu hậu một thoáng. Ánh mắt bác dừng lại trên Khải Phong. Lâu hơn một chút.
 
 Rồi bác nhìn lại con đường phía trước. Hai bàn tay găng trắng đặt yên trên vô-lăng. Không nói gì.
 

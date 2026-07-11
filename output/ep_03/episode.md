@@ -16,7 +16,7 @@ Loạt truyện: Chuyến xe cuối cùng về đâu.
 
 [pause:600ms]
 
-Ai cũng có một chuyến xe chưa kịp nói lời tạm biệt.
+Ai cũng có một chuyến xe chưa kịp nói lời tạm biệt với người mình thương.
 
 [pause:1000ms]
 
@@ -56,21 +56,21 @@ arc_open_new   : ARC-ep3 (bánh chưng → biểu tượng đêm giao thừa)
 
 [pause:800ms]
 
-Vào đêm ba mươi tháng Chạp. Chuyến xe đêm chạy qua một con đường nhỏ trong vùng đồng bằng. Hai bên là ruộng. Mạ non đã cấy, ngập một lớp nước mỏng. Trăng cuối tháng yếu ớt hắt xuống mặt nước, vỡ ra từng mảng bạc.
+Vào đêm ba mươi tháng Chạp năm đó. Chuyến xe đêm chạy qua một con đường nhỏ trong vùng đồng bằng. Ruộng ở hai bên. Mạ non đã cấy, ngập trong một lớp nước mỏng manh. Trăng cuối tháng yếu ớt hắt xuống mặt nước, vỡ thành từng mảng bạc lấp lánh.
 
 Bên trong xe lạnh buốt. Người trên xe đêm nay chỉ có vài người.
 
-Khải Phong vẫn ngồi ghế thứ ba. Tay khoanh trước ngực. Ngày này năm ngoái, năm kia, năm kia nữa — Khải Phong đều ở trên chuyến xe này. Đêm ba mươi nào cũng vậy.
+Khải Phong vẫn ngồi ghế thứ ba. Tay khoanh trước ngực mình. Ngày này năm ngoái, năm kia, năm kia nữa — Khải Phong đều ở trên chuyến xe này. Đêm ba mươi nào cũng vậy đó.
 
 Bác tài lái như mọi khi. Hai bàn tay đeo găng trắng đặt trên vô-lăng. Ánh mắt liếc gương chiếu hậu một thoáng, rồi lại tập trung vào đoạn đường tối phía trước.
 
-Xe chậm lại trước một quán nước ven đường. Quán đã đóng cửa từ chiều, chỉ còn cái biển hiệu sơn đỏ bạc màu treo lệch. Đèn vàng yếu trên cột điện hắt xuống một bóng người đứng đợi.
+Xe chậm lại trước một quán nước ven đường. Quán đã đóng cửa từ chiều, chỉ còn cái biển hiệu sơn đỏ bạc màu treo lệch một bên. Đèn vàng yếu trên cột điện hắt xuống một bóng người đứng đợi ai đó.
 
-Một người đàn ông. Mặc áo khoác da nâu cũ, đã sờn ở cổ và khuỷu tay. Tay phải xách một cái túi vải gì đó — đen, vuông vắn, hơi nặng. Tay trái cầm một vé xe đã nhàu.
+Một người đàn ông. Mặc áo khoác da nâu cũ, đã sờn ở cổ và khuỷu tay. Tay phải xách một cái túi vải gì đó — đen, vuông vắn, hơi nặng tay. Tay trái cầm một vé xe đã nhàu.
 
-Người đàn ông bước lên xe. Đi nhẹ xuống lối giữa. Ngồi vào ghế thứ năm. Đặt cái túi vải xuống sàn xe, kẹp giữa hai bàn chân.
+Người đàn ông bước lên xe. Đi nhẹ xuống lối giữa xe. Ngồi vào ghế thứ năm. Đặt cái túi vải xuống sàn xe, kẹp giữa hai bàn chân.
 
-Xe lăn bánh trở lại.
+Xe lại lăn bánh.
 
 ---
 
@@ -78,11 +78,11 @@ Xe lăn bánh trở lại.
 
 [pause:600ms]
 
-Khải Phong nhìn người đàn ông qua khe ghế. Anh ta khoảng cuối hai mươi, đầu ba mươi. Mặt gầy. Râu chưa cạo. Mắt đỏ — như đã không ngủ nhiều đêm.
+Khải Phong nhìn người đàn ông qua khe ghế. Anh ta khoảng cuối hai mươi, đầu ba mươi. Mặt gầy. Râu còn chưa cạo hết. Mắt đỏ — như đã không ngủ nhiều đêm.
 
-Anh ta cúi xuống, mở cái túi vải. Bên trong có lá dong đã rửa sạch, gấp gọn từng tệp. Có một cuộn dây lạt buộc cứng. Có một cái khuôn gỗ vuông. Và ở dưới cùng, một cặp bánh chưng đã gói được nửa — lá còn cuộn lên, gạo nếp lộ ra, miếng thịt đặt giữa chưa được gập kín.
+Anh ta cúi xuống, mở túi vải ra. Bên trong có lá dong đã rửa sạch, gấp gọn từng tệp riêng. Có một cuộn dây lạt buộc cứng. Có một cái khuôn gỗ vuông. Và ở dưới cùng, một cặp bánh chưng đã gói được nửa — lá còn cuộn lên, gạo nếp lộ ra, miếng thịt đặt giữa chưa được gập kín.
 
-Anh ta nhìn xuống cặp bánh dở. Một thoáng. Rồi đậy lại nắp túi.
+Anh ta nhìn xuống cặp bánh còn dở dang. Một thoáng. Rồi đậy lại nắp túi.
 
 Bên ngoài cửa kính, một con chó nào đó sủa rất xa. Tiếng chó vang lên rồi tan vào đêm.
 
@@ -92,9 +92,9 @@ Một ông cụ ngồi ghế thứ nhất vặn nhẹ núm radio xưa. Tiếng r
 
 [pause:500ms]
 
-Người đàn ông ghế năm đặt tay lên cái túi. Bàn tay anh ta to, chai sạn. Có mảng da khô ở các đốt ngón. Anh ta vuốt nhẹ lên mặt vải túi — như vuốt lên thứ gì khác. Như vuốt lên cánh tay ai đó đã ngủ.
+Người đàn ông ghế năm đặt tay lên cái túi. Bàn tay anh ta to, chai sạn nhiều. Có mảng da khô ở các đốt ngón. Anh ta vuốt nhẹ lên mặt vải túi — như vuốt lên thứ gì khác. Như vuốt lên cánh tay ai đó, đã ngủ say.
 
-Anh đoán anh khoảng hai mươi tám, hai chín tuổi. Trên áo khoác có một mảnh huy hiệu nhỏ đã rách góc. Khải Phong không đọc rõ ràng. Có vài lời hát "đường dài".
+Anh đoán tuổi anh khoảng hai mươi tám, hai chín. Trên áo khoác có một mảnh huy hiệu nhỏ đã rách góc. Khải Phong không đọc rõ ràng. Có vài lời hát "đường dài".
 
 Tài xế xe đường dài. Có lẽ anh ta lái xe khách ra Bắc — chạy mấy đêm liền, chạy qua mấy tỉnh, để về kịp đêm ba mươi.
 
@@ -106,25 +106,25 @@ Tài xế xe đường dài. Có lẽ anh ta lái xe khách ra Bắc — chạy 
 
 Xe đi qua một khúc cua. Phía bên kia ruộng có một ngôi nhà sáng đèn. Đèn nhỏ thôi — ngọn đèn dầu hoặc bóng tròn vàng — hắt qua cửa sổ ra sân. Trước sân nhà có một cái bếp lò đã được dựng lên. Cái nồi gang to đặt trên ba viên gạch đỏ, củi cháy nhỏ bên dưới, hơi nước bốc lên trắng xoá.
 
-Người đàn ông ghế năm nghiêng đầu nhìn về phía đó. Mắt anh ta dừng lại rất lâu. Cổ họng nuốt một cái nhẹ.
+Người đàn ông ghế năm nghiêng đầu nhìn về phía đó. Mắt anh ta dừng lại rất lâu. Cổ họng nuốt xuống một cái nhẹ nhàng.
 
 "Mẹ đã luộc rồi..." Anh ta lẩm bẩm. Không nói với ai. Không nhìn ai.
 
-Bên trong nồi gang phía xa, hơi nước cuộn lên. Có một bóng người ngồi bên cạnh — tóc búi gọn, lưng hơi còng — thỉnh thoảng đưa tay khuấy cây củi.
+Bên trong nồi gang phía xa, hơi nước cuộn lên. Có một bóng người ngồi bên cạnh — tóc búi gọn, lưng hơi còng — thỉnh thoảng khuấy cây củi bằng tay.
 
-Người đàn ông ghế năm chớp mắt. Tay siết lại trên túi vải.
+Người đàn ông ghế năm chớp mắt. Tay siết lại trên túi vải đó.
 
 "Mẹ vẫn ngồi đó."
 
-Bác tài không quay đầu. Tay vẫn đặt vô-lăng. Nhưng ánh mắt liếc gương chiếu hậu lâu hơn một nhịp.
+Bác tài không quay đầu. Tay vẫn đặt vô-lăng. Nhưng ánh mắt liếc gương chiếu hậu lâu hơn một chút.
 
-Đồng hồ trên xe — chiếc đồng hồ nhỏ gắn cạnh ghế lái — kim phút nhích một lần. Tách. Một tiếng rất gọn. Như có ai vừa chạm vào.
+Đồng hồ trên xe — chiếc đồng hồ nhỏ gắn cạnh ghế lái — kim phút nhích một lần. Tách. Một tiếng rất gọn thôi. Như có ai vừa chạm vào.
 
 Anh ta không nghe tiếng đồng hồ. Đang chăm chú nhìn nồi luộc phía xa.
 
 [pause:1000ms]
 
-Xe đi qua đó. Ngôi nhà với cái bếp lò đi qua hàng cây bưởi. Mất hút.
+Xe đi qua đó. Ngôi nhà với cái bếp lò, đi qua hàng cây bưởi đó. Mất hút.
 
 Anh ta quay đầu nhìn theo. Một thoáng. Rồi quay lại nhìn xuống túi vải dưới chân.
 
@@ -144,7 +144,7 @@ Giọng anh khàn. Khô. Nhưng nhẹ nhàng. Như đang đọc cho chính cặp
 
 "Con bảo: 'Mẹ ơi con xe hỏng, cố ba mươi cố về.' Mẹ trả lời: 'Mẹ đợi. Mẹ gói nửa, đợi con về gói nốt nửa kia. Năm nay con đan tay khéo hơn năm ngoái nhỉ.'"
 
-Anh ngừng. Tay vuốt sợi lạt buộc dở. Mép môi khẽ co một cái, rồi giãn ra.
+Anh ngừng. Tay vuốt sợi lạt buộc dở dang. Mép môi khẽ co một cái, rồi giãn ra.
 
 "Hai chín tối, em gái gọi điện. Không phải tin nhắn. Cô gái gái gái gái gọi. Em gọi đến lần thứ ba con mới bắt máy. Đang lái qua đèo Ngang. Một tay cầm vô-lăng. Một tay áp điện thoại lên tai."
 
@@ -152,7 +152,7 @@ Anh ngừng. Tay vuốt sợi lạt buộc dở. Mép môi khẽ co một cái, 
 
 "Em gái khóc trong điện thoại. Tiếng khóc bị nén lại, sợ mẹ nghe thấy. Em bảo: 'Anh ơi, mẹ ngất ngoài bếp. Bố hàng xóm sang giúp khiêng vào trong rồi. Mẹ thở yếu lắm.' Con bảo: 'Đưa mẹ vào nhà, đắp chăn, gọi bác người. Anh ấy đang vượt qua đèo. Anh ấy sẽ về kịp thời gian.'"
 
-Người đàn ông ngừng lại. Lâu hơn. Hơi thở chậm lại một nhịp.
+Người đàn ông lại ngừng. Lâu hơn. Hơi thở chậm lại một chút.
 
 "Em gái nói: 'Anh ơi mẹ vẫn gọi tên anh.'"
 
@@ -174,25 +174,25 @@ Bác tài nhìn gương chiếu hậu một thoáng. Im lặng yên. Không nói
 
 Trong gương chiếu hậu phía sau ghế lái, người khách thấy hai cái bóng. Một là anh. Một là một người phụ nữ lớn tuổi, tóc búi gọn, ngồi sát ngay sau anh ta. Người phụ nữ ấy đang cầm một tệp lá dong, tay vẫn đang gấp lá, không nhìn ai. Có sợi tóc bạc xoà nhẹ qua má. Có một nét cười rất mờ — như cười với chính tệp lá trong lòng.
 
-Khải Phong chớp mắt. Trong gương vẫn chỉ có anh ta và cái bóng đã gói dở.
+Khải Phong chớp mắt. Trong gương vẫn chỉ có anh ta và cái bóng đã gói dở dang.
 
 Bác tài cất lời. Một câu duy nhất. Câu hỏi xưa.
 
 "Con đã nhớ ra chưa?"
 
-Người đàn ông ghế năm không quay đầu. Nhưng môi anh ta khẽ động. Một câu rất nhỏ.
+Người đàn ông ghế năm không quay đầu. Nhưng môi anh ta khẽ mấp máy. Một câu rất nhỏ thôi.
 
 "Con nhớ rồi, bác."
 
 [pause:1000ms]
 
-Một giọt gì đó rơi xuống cặp bánh chưng dở trên đùi anh. người đàn ông không biết là nước mắt hay là sương trên cửa kính. Anh ta đưa tay áo lau nhẹ lên lá dong. Vết ướt mờ thành một mảng nhỏ.
+Một giọt gì đó rơi xuống cặp bánh chưng dở trên đùi anh. người đàn ông không biết là nước mắt hay là sương trên cửa kính. Anh ta đưa tay áo lau nhẹ lên lá dong. Vết ướt mờ thành một mảng nhỏ xíu.
 
 
 
 [pause:1000ms]
 
-Bà cụ vuốt nồi bánh chưng. "Con biết — mỗi năm bà nấu bánh. Nồi này — bà mang theo bốn mươi năm. Đêm nay — bà đem nồi này — gửi con dâu bà — giữ kỉ vật."
+Bà cụ vuốt nồi bánh chưng. "Con biết — mỗi năm bà nấu bánh. Nồi này — bà mang theo bốn mươi năm. Đêm nay — bà đem nồi này — gửi con dâu bà — giữ kỉ vật thôi."
 
 ---
 
@@ -216,7 +216,7 @@ Người đàn ông nói tiếp. Giọng vẫn nhẹ nhàng. Vẫn không khóc.
 
 "Em gái dìu con dậy. Em dẫn con ra hiên sau. Cái nồi gang to vẫn còn ở đó — đặt trên ba viên gạch đỏ. Củi đã tắt từ đêm. Tro xám. Nhưng tro vẫn ấm. Em đưa tay con đặt lên thành nồi. 'Anh sờ đi, vẫn còn hơi ấm.'"
 
-Người đàn ông dừng lại. Hai bàn tay anh ta đặt lên cặp bánh chưng dở. Run nhẹ nhàng.
+Người đàn ông lại dừng. Hai bàn tay anh ta đặt lên cặp bánh chưng dở dang. Run nhẹ nhàng.
 
 "Em mở nắp nồi cho con xem. Bên trong, nước đã cạn quá nửa. Nửa bánh chưng mẹ luộc dở nằm dưới đáy. Lá ngoài cùng cháy đen mép. Bên trong gạo nếp đã chín nẫu. Em bảo: 'Mẹ luộc tới hai giờ sáng. Bố hàng xóm bảo, mẹ ngồi cạnh nồi, một lúc lại với cây củi, không chịu vào nhà. Mẹ cứ nói: anh con sắp về.'"
 
@@ -226,11 +226,11 @@ Người đàn ông dừng lại. Hai bàn tay anh ta đặt lên cặp bánh ch
 
 [pause:1000ms]
 
-Xe chậm lại. Phía trước có một ngã ba. Đèn đường vàng yếu hắt xuống mặt đất ẩm.
+Xe lại chậm dần. Phía trước có một ngã ba. Đèn đường vàng yếu hắt xuống mặt đất ẩm ướt.
 
-Bên kia ngã ba, có tiếng chuông. Tiếng chuông giao thừa. Một ngôi chùa nhỏ ở xa. Ngân lên một hồi. Một hồi thôi vậy. Rồi tan vào đêm.
+Bên kia ngã ba, có tiếng chuông. Tiếng chuông giao thừa. Một ngôi chùa nhỏ ở xa. Ngân lên một hồi. Vậy một hồi thôi. Rồi tan vào đêm.
 
-Người đàn ông ghế năm cầm cặp bánh chưng gói dở. Đặt lại vào túi vải. Đậy nắp túi. Đứng dậy.
+Người đàn ông ghế năm cầm cặp bánh chưng gói dở dang. Đặt lại vào túi vải kia. Đậy nắp túi. Đứng dậy luôn.
 
 Khi đi qua chỗ Khải Phong ngồi, anh ta khẽ nói:
 
@@ -238,19 +238,19 @@ Khi đi qua chỗ Khải Phong ngồi, anh ta khẽ nói:
 
 Giọng nhẹ nhàng. Không buồn. Không vui. Chỉ là một câu chào, như chào người quen lâu năm.
 
-Người đàn ông đi ra cửa xe. Cửa từ từ mở. Gió đêm khép vào, mang theo mùi củi khô và mùi gạo nếp đã luộc lâu.
+Người đàn ông đi ra cửa xe. Cửa từ từ mở ra. Gió đêm khép vào, mang theo mùi củi khô và mùi gạo nếp đã luộc lâu.
 
 Trước khi xuống, anh ta quay đầu nhìn bác tài. Một thoáng. Rồi nhìn lên đồng hồ trên xe.
 
 Đồng hồ chỉ bảy giờ mười phút.
 
-Bác tài nhìn gương chiếu hậu. Khẽ nói câu thứ hai:
+Bác tài nhìn gương chiếu hậu một thoáng. Khẽ nói câu thứ hai:
 
 "Chưa tới lúc."
 
 Người đàn ông không hiểu câu đó. Người đàn ông khẽ gật đầu. Rồi bước xuống dưới.
 
-Cửa xe khép lại. Xe lăn bánh.
+Cửa xe lại khép. Xe lăn bánh.
 
 [pause:1000ms]
 
@@ -282,7 +282,7 @@ Bác tài lái như mọi khi. Hai tay vô-lăng. Găng trắng. Nhịp ngón tr
 
 [pause:800ms]
 
-Người đàn ông ngồi yên. Khải Phong nhớ ra một điều — đêm ba mươi tháng Chạp năm nào, mẹ người khách cũng gói bánh chưng. Năm Khải Phong đi học xa, mẹ gói. Năm người đàn ông đi làm xa, mẹ vẫn gói. Năm Khải Phong lấy vợ, mẹ vẫn.
+Người đàn ông ngồi yên. Khải Phong nhớ ra một điều — đêm ba mươi tháng Chạp năm nào, mẹ người khách cũng gói bánh chưng. Năm Khải Phong đi học xa, mẹ gói. Năm người đàn ông đi làm xa, mẹ vẫn gói. Năm Khải Phong lấy vợ, mẹ vẫn thế.
 
 Anh ấy đã bao nhiêu năm chưa về kịp đêm ba mươi?
 
@@ -292,11 +292,11 @@ Có ai ở đó. Vừa lên xe ở trạm phía trước. Khải Phong chưa qua
 
 [pause:1500ms]
 
-Trên ghế lái, bác tài liếc gương chiếu hậu một thoáng. Ánh mắt bác dừng lại trên người khách lâu hơn một nhịp.
+Trên ghế lái, bác tài liếc gương chiếu hậu một thoáng. Ánh mắt bác dừng lại trên người khách lâu hơn một chút.
 
 Rồi bác nhìn lại con đường tối phía trước. Hai bàn tay găng trắng đặt yên trên vô-lăng.
 
-Xe vẫn chạy. Đêm hôm ấy vẫn còn dài. Còn nhiều ngã ba phía trước. Còn nhiều người đang đợi con về luộc nốt nửa bánh chưng kia.
+Xe vẫn chạy đều. Đêm hôm ấy vẫn còn dài. Còn nhiều ngã ba phía trước. Còn nhiều người đang đợi con về luộc nốt nửa bánh chưng kia.
 
 ---
 
