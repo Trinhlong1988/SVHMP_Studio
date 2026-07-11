@@ -81,8 +81,9 @@ claims:
     status: released
   debt023_disclaimer_25ep:
     claimed_at: '2026-07-11T10:39:10'
+    released_at: '2026-07-11T14:08:46'
     session: CMD_BUILD_2
-    status: active
+    status: released
   debt_020_021_023:
     claimed_at: '2026-07-11T09:46:27'
     released_at: '2026-07-11T10:21:36'
