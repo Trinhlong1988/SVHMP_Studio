@@ -74,6 +74,15 @@ claims:
     released_at: '2026-07-11T01:33:58'
     session: CMD_BUILD
     status: released
+  debt018_r197_wire:
+    claimed_at: '2026-07-11T09:46:44'
+    session: CMD_BUILD
+    status: active
+  debt_020_021_023:
+    claimed_at: '2026-07-11T09:46:27'
+    released_at: '2026-07-11T10:21:36'
+    session: CMD_BUILD_2
+    status: released
   debt_completeness_gaps:
     claimed_at: '2026-07-11T01:54:54'
     released_at: '2026-07-11T02:55:38'
