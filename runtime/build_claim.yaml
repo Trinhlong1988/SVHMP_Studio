@@ -84,6 +84,11 @@ claims:
     released_at: '2026-07-11T14:08:46'
     session: CMD_BUILD_2
     status: released
+  debt026_027_028:
+    claimed_at: '2026-07-11T15:20:45'
+    released_at: '2026-07-11T15:43:38'
+    session: CMD_BUILD_2
+    status: released
   debt_020_021_023:
     claimed_at: '2026-07-11T09:46:27'
     released_at: '2026-07-11T10:21:36'
