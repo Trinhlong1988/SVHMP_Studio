@@ -12,11 +12,11 @@ Tác giả: Hắc Dạ Ký.
 
 [pause:600ms]
 
-Series: Chuyến xe cuối cùng về đâu.
+Loạt truyện: Chuyến xe cuối cùng về đâu.
 
 [pause:600ms]
 
-Ai cũng có một chuyến xe chưa nói lời tạm biệt.
+Ai cũng có một chuyến xe chưa kịp nói lời tạm biệt với người mình thương.
 
 [pause:1000ms]
 
@@ -35,7 +35,7 @@ intensity_level: 0.70
 quang_memory_fragment: M7 (Khải Phong nhớ tang Hạ Vy ở quê - không Hà Nội)
 object_sub_arc: GEOGRAPHIC Hà Nội nội thành vật 1 (vé tàu điện)
 callback_target: none
-passenger_main: nu 38 Hoài An Hà Nội (hứa đưa bạn quê đi tàu điện - bạn chết trước kịp)
+passenger_main: nu 38 Xuân Uyên Hà Nội (hứa đưa bạn quê đi tàu điện - bạn chết trước kịp)
 signature_object: OBJ_VE_TAU_DIEN (vé tàu điện Cát Linh đợt mở)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Cát Linh
@@ -54,17 +54,17 @@ arc_design_compliant: bible/21 R33-R40
 
 Trời mưa đã rơi từ chiều. Đêm tháng tư, [pause:250ms] không tan hết rồi. Chuyến xe đêm đi qua đoạn đường nội thành Hà Nội, [pause:250ms] phố C, Hà Nội, [pause:250ms] đèn pha hắt lên hàng cây ướt sương. Đèn pha quét lên hàng cột tàu điện trên cao, [pause:250ms] Cát Linh-Hà Đông tuyến đầu.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi ba, [pause:250ms] Khải Phong đếm thêm. Trong túi áo gió Khải Phong, [pause:250ms] ba mươi hai vật.
+Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi ba, [pause:250ms] Khải Phong đếm thêm. Trong túi áo gió Khải Phong, [pause:250ms] ba mươi hai vật rồi.
 
 Bác tài lái.
 
 Mặt đường nội thành Hà Nội, [pause:250ms] đèn vàng phố cổ, [pause:250ms] gần khu vực Khải Phong từng sinh viên, [pause:250ms] phố Khâm Thiên không xa.
 
-Xe chậm lại trước ga tàu điện Cát Linh, [pause:250ms] cổng ga đã đóng, [pause:250ms] đèn vàng treo cột. Bảng [DIALOGUE_SEG_START]"Ga Cát Linh"[DIALOGUE_SEG_END] sạch, [pause:250ms] tàu điện mở năm 2021, [pause:250ms] vẫn còn mới.
+Xe chậm lại trước ga tàu điện Cát Linh, [pause:250ms] cổng ga đã đóng, [pause:250ms] đèn vàng treo cột đèn. Bảng [DIALOGUE_SEG_START]"Ga Cát Linh"[DIALOGUE_SEG_END] sạch, [pause:250ms] tàu điện mở năm 2021, [pause:250ms] vẫn còn mới.
 
-Một phụ nữ đứng đợi bên cổng ga. Khoảng ba mươi tám tuổi. Áo dạ xám, [pause:250ms] quần tây đen. Tay phải cầm phong bì kraft nhỏ, [pause:250ms] bên trong vật mỏng.
+Một phụ nữ đứng đợi bên cổng ga. Tuổi khoảng ba mươi tám. Áo dạ xám, [pause:250ms] quần tây đen. Tay phải cầm phong bì kraft nhỏ, [pause:250ms] bên trong vật mỏng ấy.
 
-Cô gái khẽ lên bậc xe. Đi đến hàng ghế giữa, [pause:250ms] chân chậm lại. Ngồi xuống ghế thứ chín.
+Cô gái khẽ lên bậc xe. Đi đến hàng ghế giữa, [pause:250ms] chân chậm lại dần. Ngồi xuống ghế thứ chín.
 
 Mở phong bì. Lấy ra một tấm vé tàu điện, [pause:250ms] vé giấy in, [pause:250ms] ghi rõ ngày [DIALOGUE_SEG_START]"11/2021"[DIALOGUE_SEG_END], [pause:250ms] tuyến Cát Linh-Hà Đông, [pause:250ms] vé hai chiều.
 
@@ -76,19 +76,19 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Cô gái khẽ ngồi yên lặng. Vuốt vé tàu. Đầu ngón tay cô mảnh, [pause:250ms] bàn tay người làm bàn giấy.
+Cô gái khẽ ngồi yên, không nói gì. Vuốt vé tàu. Đầu ngón tay cô mảnh, [pause:250ms] bàn tay người làm bàn giấy.
 
 Khải Phong quan sát từ ghế ba. Cô ba lăm tám, [pause:250ms] mặt mệt, [pause:250ms] vẻ người vừa rời cuộc họp đêm. Áo dạ xám tươm tất, [pause:250ms] nhưng có nét buồn.
 
 Vé tàu trong tay cô, [pause:250ms] Khải Phong nhìn rõ ràng, [pause:250ms] vé hai chiều, [pause:250ms] chữ in còn rõ ràng, [pause:250ms] vé chưa qua máy soát, [pause:250ms] chưa dùng.
 
-Ông cụ ghế đầu vặn radio. Lạo xạo. [DIALOGUE_SEG_START]"...quê nhà..."[DIALOGUE_SEG_END] vọng, [pause:250ms] tắt.
+Ông cụ ghế đầu vặn radio. Lạo xạo hoài. [DIALOGUE_SEG_START]"...quê nhà..."[DIALOGUE_SEG_END] vọng, [pause:250ms] tắt.
 
 [pause:500ms]
 
 Bác tài liếc gương. Không nói.
 
-Cô gái đặt vé lên đùi. Vuốt mép. Hơi thở chậm lại.
+Cô gái đặt vé lên đùi. Vuốt mép. Hơi thở chậm lại dần.
 
 ---
 
@@ -96,7 +96,7 @@ Cô gái đặt vé lên đùi. Vuốt mép. Hơi thở chậm lại.
 
 [pause:500ms]
 
-Xe đi qua phố nội thành. Phía bên phải, [pause:250ms] một ga tàu điện nhỏ hơn, [pause:250ms] đèn vàng còn sáng. Cạnh ga, [pause:250ms] bóng cô gái trẻ chừng ba mươi đứng, [pause:250ms] tay cầm vé tàu, [pause:250ms] đứng đợi.
+Xe đi qua phố nội thành. Phía bên phải, [pause:250ms] một ga tàu điện nhỏ hơn, [pause:250ms] đèn vàng còn sáng. Cạnh ga, [pause:250ms] bóng cô gái trẻ chừng ba mươi đứng, [pause:250ms] tay cầm vé tàu, [pause:250ms] đứng đợi tàu.
 
 Cô ngước nhìn lên cột tàu điện, [pause:250ms] đèn báo tàu sắp đến, [pause:250ms] nhưng cô không lên.
 
@@ -104,7 +104,7 @@ Cô ghế chín nhìn về phía đó.
 
 [DIALOGUE_SEG_START]"Quỳnh..."[DIALOGUE_SEG_END]
 
-Cô gái nói rất nhỏ nhẹ.
+Cô gái nói rất nhỏ nhẹ, gần như thì thầm.
 
 Đồng hồ trên xe, [pause:250ms] kim phút nhích một, [pause:250ms] hai, [pause:250ms] đến mười.
 
@@ -120,9 +120,9 @@ Cô gái ghế chín quay đầu. Vuốt vé tàu.
 
 [pause:1000ms]
 
-[DIALOGUE_SEG_START]"Em là Hoài An. Ba mươi tám tuổi. Em ở Cát Linh, [pause:250ms] Hà Nội, [pause:250ms] sinh ở ở đây. Em làm biên tập viên nhà xuất bản phố Tràng Tiền."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Em là Xuân Uyên. Ba mươi tám tuổi. Em ở Cát Linh, [pause:250ms] Hà Nội, [pause:250ms] sinh ở ở đây. Em làm biên tập viên nhà xuất bản phố Tràng Tiền."[DIALOGUE_SEG_END]
 
-Giọng cô đều, [pause:250ms] chậm.
+Giọng cô đều, [pause:250ms] chậm hơn.
 
 [DIALOGUE_SEG_START]"Bạn em, [pause:250ms] Quỳnh, [pause:250ms] mất ba năm trước. Ba mươi sáu tuổi. Ung thư cổ tử cung giai đoạn cuối, [pause:250ms] phát hiện muộn, [pause:250ms] sống thêm tám tháng."[DIALOGUE_SEG_END]
 
@@ -132,7 +132,7 @@ Giọng cô đều, [pause:250ms] chậm.
 
 "[DIALOGUE_SEG_END]Sau ra trường, [pause:250ms] em ở lại Hà Nội, [pause:250ms] đi làm. Quỳnh về Thái Bình dạy cấp ba ở quê, [pause:250ms] em không muốn xa nhà, [pause:250ms] bố mẹ yếu, [pause:250ms] cần em chăm."
 
-[DIALOGUE_SEG_START]"Hai đứa em vẫn liên lạc qua điện thoại, [pause:250ms] qua tin nhắn. Mỗi năm em về quê em một lần, [pause:250ms] em ở chơi nhà em vài ngày. Quỳnh ra Hà Nội đôi lần, [pause:250ms] em đón em ở ga, [pause:250ms] đem em đi chơi phố cổ."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Hai đứa em vẫn liên lạc qua điện thoại, [pause:250ms] qua tin nhắn. Mỗi năm em về quê em một lần, [pause:250ms] em ở chơi nhà em vài ngày. Quỳnh ra Hà Nội đôi lần, [pause:250ms] em đón cô ấy ở ga, [pause:250ms] đem cô đi chơi phố cổ."[DIALOGUE_SEG_END]
 
 [DIALOGUE_SEG_START]"Năm hai nghìn không trăm hai mươi mốt, [pause:250ms] tàu điện Cát Linh-Hà Đông khai trương. Em rất hào hứng, [pause:250ms] em sinh ở Hà Nội, [pause:250ms] em chờ tàu điện trên cao bao lâu."[DIALOGUE_SEG_END]
 
@@ -140,25 +140,25 @@ Giọng cô đều, [pause:250ms] chậm.
 
 [DIALOGUE_SEG_START]"Em gọi Quỳnh: 'Quỳnh ơi tàu điện mở rồi, [pause:250ms] em ra Hà Nội đi tàu thử nhé! Em đặt vé khứ hồi đợi em, [pause:250ms] em chỉ cần lên Hà Nội, [pause:250ms] em đem bạn đi.'"[DIALOGUE_SEG_END]
 
-[DIALOGUE_SEG_START]"Quỳnh đáp: 'Hoài An ơi em hứa đi. Sang năm khi em rảnh em sẽ ra. Em đang dạy năm cuối lớp mười hai, [pause:250ms] bận ôn thi đại học cho em, [pause:250ms] em không nghỉ được.'"[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Quỳnh đáp: 'Xuân Uyên ơi em hứa đi. Sang năm khi em rảnh sẽ ra. Em đang dạy năm cuối lớp mười hai, [pause:250ms] bận ôn thi đại học cho em, [pause:250ms] em không nghỉ được.'"[DIALOGUE_SEG_END]
 
 [DIALOGUE_SEG_START]"Em đặt mua hai vé tàu điện, [pause:250ms] vé khứ hồi, [pause:250ms] em một vé Quỳnh một vé. Em đặt sẵn, [pause:250ms] chờ em ra Hà Nội."[DIALOGUE_SEG_END]
 
 [pause:1500ms]
 
-[DIALOGUE_SEG_START]"Hai năm trôi. Em bận. Cô gái không ra ngoài chơi. Em vẫn dạy. Em vẫn nhắc tin nhắn 'tháng sau em sẽ ra.'"[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Hai năm trôi. Cô gái gái gái gái bận. Người con gái không ra ngoài chơi. Hình bóng con gái ấy vẫn dạy. Cô ấy vẫn nhắc tin nhắn 'tháng sau em sẽ ra.'"[DIALOGUE_SEG_END]
 
-[DIALOGUE_SEG_START]"Năm hai nghìn không trăm hai mươi ba, [pause:250ms] em nhắn em: 'Hoài An ơi em được chẩn đoán ung thư cổ tử cung. Giai đoạn ba. Bác sĩ Thái Bình chuyển em lên Bệnh viện K Hà Nội điều trị.'"[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Năm hai nghìn không trăm hai mươi ba, [pause:250ms] em nhắn cô ấy: 'Xuân Uyên ơi em được chẩn đoán ung thư cổ tử cung. Giai đoạn ba. Bác sĩ Thái Bình chuyển em lên Bệnh viện K Hà Nội điều trị.'"[DIALOGUE_SEG_END]
 
 [DIALOGUE_SEG_START]"Em sốc. Cô gái đáp ngay: 'Quỳnh ơi em đến Hà Nội, [pause:250ms] em đến đón em ở ga. Em ở nhà em, [pause:250ms] em chăm bạn điều trị.'"[DIALOGUE_SEG_END]
 
-[DIALOGUE_SEG_START]"Quỳnh đến Hà Nội tuần sau. Em đón em ở ga. Em ở nhà em, [pause:250ms] em đi Bệnh viện K mỗi tuần hóa trị."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Quỳnh đến Hà Nội tuần sau. Em ấy đón em ở ga. Em ở nhà em, [pause:250ms] em đi Bệnh viện K mỗi tuần hóa trị."[DIALOGUE_SEG_END]
 
 [DIALOGUE_SEG_START]"Em em yếu nhanh. Hóa trị sáu tháng, [pause:250ms] bệnh không thuyên giảm. Bác sĩ chuyển sang chăm sóc giảm nhẹ."[DIALOGUE_SEG_END]
 
 [pause:1500ms]
 
-[DIALOGUE_SEG_START]"Đêm trước hôm em quay về Thái Bình, [pause:250ms] em nói với em: 'Hoài An ơi em muốn đi tàu điện trên cao trước em về quê. Em sống Hà Nội tám tháng, [pause:250ms] chưa đi thử. Em mơ đi từ ngày tàu mở.'"[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Đêm trước hôm em quay về Thái Bình, [pause:250ms] em nói với em: 'Xuân Uyên ơi em muốn đi tàu điện trên cao trước em về quê. Em sống Hà Nội tám tháng, [pause:250ms] chưa đi thử. Em mơ đi từ ngày tàu mở.'"[DIALOGUE_SEG_END]
 
 [DIALOGUE_SEG_START]"Em đáp: 'Quỳnh ơi chiều mai em đi, [pause:250ms] em đem bạn đi. Em đã đặt vé sẵn ba năm, [pause:250ms] chờ em.'"[DIALOGUE_SEG_END]
 
@@ -176,9 +176,9 @@ Bác tài cất lời.
 
 [DIALOGUE_SEG_START]"Con đã nhớ ra chưa?"[DIALOGUE_SEG_END]
 
-Hoài An gật. Lệ rơi xuống vé.
+Xuân Uyên gật đầu. Lệ rơi xuống vé.
 
-[DIALOGUE_SEG_START]"Em nhớ. Cô gái hứa em đi tàu điện ba năm, [pause:250ms] em không kịp đem em đi. Em đi trước em định em ngày sau. Vé hai chiều em đặt, [pause:250ms] em chưa dùng. Em không thể chuộc, [pause:250ms] em chỉ có thể đem vé về ga tàu, [pause:250ms] gửi vé cho ga."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Em nhớ. Cô gái hứa em đi tàu điện ba năm, [pause:250ms] em không kịp đem em đi. Em đi trước em định ngày sau. Vé hai chiều em đặt, [pause:250ms] em chưa dùng. Em không thể chuộc, [pause:250ms] em chỉ có thể đem vé về ga tàu, [pause:250ms] gửi vé cho ga."[DIALOGUE_SEG_END]
 
 [pause:1200ms]
 
@@ -196,13 +196,13 @@ Hoài An gật. Lệ rơi xuống vé.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Cát Linh, [pause:250ms] cây phượng vĩ đỏ, [pause:250ms] bến gần ga. Chuông xe rung nhẹ. Vang một nhịp. Tan.
+Xe chậm lại rồi. Ngã ba Cát Linh, [pause:250ms] cây phượng vĩ đỏ, [pause:250ms] bến gần ga. Chuông xe rung nhẹ nhàng. Vang một nhịp xa. Tan.
 
-Hoài An gói vé vào phong bì. Đứng dậy.
+Xuân Uyên gói vé vào phong bì. Đứng dậy ngay.
 
 "[DIALOGUE_SEG_END]Chào anh.[DIALOGUE_SEG_START]"
 
-Trước khi xuống, [pause:250ms] đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển.
+Trước khi xuống, [pause:250ms] đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển gì.
 
 Bác tài: "[DIALOGUE_SEG_END]Chưa tới lúc.[DIALOGUE_SEG_START]"
 
@@ -210,15 +210,15 @@ Cô gái bước xuống dưới đường.
 
 [pause:1200ms]
 
-Bên ngoài, [pause:250ms] Hoài An đi vào sân ga Cát Linh, [pause:250ms] bảo vệ đã mở cửa phụ. Phòng tiếp tân ga, [pause:250ms] hộp "[DIALOGUE_SEG_END]lost items" gỗ đặt cạnh quầy.
+Bên ngoài, [pause:250ms] Xuân Uyên đi vào sân ga Cát Linh, [pause:250ms] bảo vệ đã mở cửa phụ đó. Phòng tiếp tân ga, [pause:250ms] hộp "[DIALOGUE_SEG_END]lost items" gỗ đặt cạnh quầy.
 
-Cô gái đã đến nơi đó. Đặt phong bì vào hộp lost items. Cúi đầu trước hộp.
+Cô gái đã đến nơi đó. Đặt phong bì vào hộp lost items. Cúi đầu trước hộp đó.
 
-Khải Phong chớp mắt, [pause:250ms] nhìn qua cửa sổ. Bên hộp, [pause:250ms] Quỳnh xuất hiện, [pause:250ms] cô gái ba sáu, [pause:250ms] áo dạ xanh đậm, [pause:250ms] vuốt vai Hoài An. Mỉm cười nhẹ nhàng.
+Khải Phong chớp mắt, [pause:250ms] nhìn qua cửa sổ xe. Bên hộp, [pause:250ms] Quỳnh xuất hiện, [pause:250ms] cô gái ba sáu, [pause:250ms] áo dạ xanh đậm, [pause:250ms] chạm vào vai Xuân Uyên. Khẽ cười nhẹ nhàng.
 
-Khải Phong chớp lần nữa. Người tên Quỳnh tan ra.
+Khải Phong lại chớp mắt. Người tên Quỳnh tan ra.
 
-Hoài An ngẩng đầu. Lau lệ. Đi ra ngoài.
+Xuân Uyên ngẩng đầu. Lau lệ đi. Đi ra ngoài.
 
 [pause:1500ms]
 
@@ -228,7 +228,7 @@ Hoài An ngẩng đầu. Lau lệ. Đi ra ngoài.
 
 Xe lăn bánh, [pause:250ms] rời ngã ba Cát Linh.
 
-Ghế chín trống. Trên sàn, [pause:250ms] một mẩu vé tàu nhỏ rơi (góc vé bong khi cô đặt vào hộp). Khải Phong nhặt. Mẩu, [pause:250ms] màu vàng nhạt, [pause:250ms] có nét bút [DIALOGUE_SEG_START]"Cát Linh-Hà Đông"[DIALOGUE_SEG_END] rõ ràng.
+Ghế chín trống. Trên sàn, [pause:250ms] một mẩu vé tàu nhỏ rơi (góc vé bong khi cô đặt vào hộp đó). Khải Phong nhặt lên. Mẩu, [pause:250ms] màu vàng nhạt, [pause:250ms] có nét bút [DIALOGUE_SEG_START]"Cát Linh-Hà Đông"[DIALOGUE_SEG_END] rõ ràng.
 
 Bỏ vào túi. Vật thứ ba mươi ba, [pause:250ms] vật đầu tiên mang dấu Hà Nội nội thành (sub-arc geographic).
 
@@ -238,20 +238,20 @@ Bác tài lái. Kim phút cabin nhích, [pause:250ms] một, [pause:250ms] hai, 
 
 Khải Phong ngồi. Vé tàu Cát Linh, [pause:250ms] Hà Nội nội thành, [pause:250ms] vật đầu tiên trong cụm geographic.
 
-Khải Phong ngẫm, [pause:250ms] sau Hạ Vy mất, [pause:250ms] Khải Phong đem Hạ Vy về Hải Phòng, [pause:250ms] quê anh, [pause:250ms] tang ở quê. Anh chôn ở nghĩa trang xã Vĩnh Bảo.
+Khải Phong ngẫm, [pause:250ms] sau Hạ Vy mất, [pause:250ms] Khải Phong đem Hạ Vy về Hải Phòng, [pause:250ms] quê anh, [pause:250ms] tang ở quê. Anh chôn ở nghĩa trang xã Vĩnh Bảo đó.
 
-Khải Phong ở lại Hà Nội. Hai ngày sau tang, [pause:250ms] Khải Phong về Hà Nội, [pause:250ms] căn phòng trọ Khâm Thiên, [pause:250ms] một mình.
+Khải Phong ở lại Hà Nội này. Hai ngày sau tang, [pause:250ms] Khải Phong về Hà Nội, [pause:250ms] căn phòng trọ Khâm Thiên, [pause:250ms] một mình.
 
 [pause:1500ms]
 
-Bố mẹ Hạ Vy ở Hải Phòng, [pause:250ms] anh là con đầu, [pause:250ms] anh còn anh gái nhỏ. Sau tang, [pause:250ms] bố mẹ anh không ghé Hà Nội, [pause:250ms] bố mẹ buồn ở quê. Khải Phong gọi điện hỏi thăm vài lần, [pause:250ms] sau đó liên lạc thưa.
+Bố mẹ Hạ Vy ở Hải Phòng, [pause:250ms] anh là con đầu, [pause:250ms] anh còn anh gái nhỏ xíu. Sau tang, [pause:250ms] bố mẹ anh không ghé Hà Nội, [pause:250ms] bố mẹ buồn ở quê. Khải Phong gọi điện hỏi thăm vài lần, [pause:250ms] sau đó liên lạc thưa.
 
-Anh gái Hạ Vy, [pause:250ms] tên Hạ Nhi, [pause:250ms] lúc đó học cấp ba, [pause:250ms] anh mười sáu tuổi. Anh quý Khải Phong, [pause:250ms] coi anh rể.
+Anh gái Hạ Vy, [pause:250ms] tên Hạ Nhi, [pause:250ms] lúc đó học cấp ba, [pause:250ms] anh mười sáu tuổi thôi. Anh quý Khải Phong, [pause:250ms] coi anh rể mình.
 
 Khải Phong cố nhớ, [pause:250ms] sau Hạ Vy mất Khải Phong có liên lạc Hạ Nhi không? Cảm giác, [pause:250ms] có. Khải Phong nhắn anh vài lần, [pause:250ms] hỏi học bài. Sau anh vào đại học, [pause:250ms] anh đi Sài Gòn, [pause:250ms] liên lạc thưa hơn.
 
-Bác tài liếc gương. [DIALOGUE_SEG_START]"Vào đêm ba mươi ba. Con đã nhớ Hạ Vy về quê tang, [pause:250ms] bố mẹ em ở quê. Đêm sau con sẽ nhớ, [pause:250ms] quê Hạ Vy thế nào, [pause:250ms] em đã sống ở đâu, [pause:250ms] bố mẹ em làm gì. Đừng vội."[DIALOGUE_SEG_END]
+Bác tài liếc gương. [DIALOGUE_SEG_START]"Vào đêm ba mươi ba. Con đã nhớ Hạ Vy về quê tang, [pause:250ms] bố mẹ em ở quê. Đêm sau con sẽ nhớ, [pause:250ms] quê Hạ Vy thế nào, [pause:250ms] em đã sống ở đâu, [pause:250ms] bố mẹ em làm gì. Đừng vội nhé."[DIALOGUE_SEG_END]
 
-Khải Phong gật.
+Khải Phong gật đầu.
 
-Đêm thứ ba mươi ba, [pause:250ms] Khải Phong đếm thêm. Xe đi tiếp. Phía sau, [pause:250ms] Cát Linh khuất. Hoài An ở lại ga, [pause:250ms] đứng cạnh hộp lost items, [pause:250ms] vé tàu trong hộp.
+Đêm thứ ba mươi ba, [pause:250ms] Khải Phong đếm thêm. Xe đi tiếp. Phía sau, [pause:250ms] Cát Linh khuất. Xuân Uyên ở lại ga, [pause:250ms] đứng cạnh hộp lost items, [pause:250ms] vé tàu trong hộp đó. 

@@ -12,17 +12,21 @@ Tác giả: Hắc Dạ Ký.
 
 [pause:600ms]
 
-Series: Chuyến xe cuối cùng về đâu.
+Loạt truyện: Chuyến xe cuối cùng về đâu.
 
 [pause:600ms]
 
-Ai cũng có một chuyến xe chưa nói lời tạm biệt.
+Ai cũng có một chuyến xe chưa kịp nói lời tạm biệt với người mình thương.
 
 [pause:1000ms]
 
 Tập 34, [pause:250ms] câu chuyện đêm nay.
 
 [pause:1500ms]
+
+Nội dung hư cấu; những nghi lễ dân gian được nhắc chỉ làm nền, không có thật, không khuyến khích làm theo.
+
+[pause:1200ms]
 
 ---
 
@@ -35,7 +39,7 @@ intensity_level: 0.70
 quang_memory_fragment: M7 (Khải Phong nhớ quê Hạ Vy - Hải Phòng Vĩnh Bảo)
 object_sub_arc: ngoài cluster geographic
 callback_target: none
-passenger_main: nam 50 Văn Tuấn Vĩnh Phúc (không thắp hương cho hàng xóm cũ - bác mất mười năm)
+passenger_main: nam 50 Nghị Đôn Vĩnh Phúc (không thắp hương cho hàng xóm cũ - bác mất mười năm)
 signature_object: OBJ_HUONG_TRAM (bó hương trầm anh chuẩn bị từ năm trước)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Vĩnh Phúc
@@ -52,19 +56,19 @@ arc_design_compliant: bible/21 R33-R40
 
 [pause:800ms]
 
-Cuối tháng tư. Trời ẩm. Xe đêm chạy chậm qua đường ven cánh đồng Vĩnh Phúc, Hà Nội. Hàng cây ven đường, [pause:250ms] lá còn rơi vài giọt mưa cuối ngày. Đèn pha quét lên ruộng lúa mới cấy.
+Cuối tháng tư. Trời ẩm ướt. Xe đêm chạy chậm qua đường ven cánh đồng Vĩnh Phúc, Hà Nội này. Hàng cây ven đường, [pause:250ms] lá còn rơi vài giọt mưa cuối ngày. Đèn pha quét lên ruộng lúa mới cấy.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi tư, [pause:250ms] Khải Phong đếm thêm. Trong túi áo gió Khải Phong, [pause:250ms] ba mươi ba vật.
+Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi tư, [pause:250ms] Khải Phong đếm thêm. Trong túi áo gió Khải Phong, [pause:250ms] ba mươi ba vật rồi.
 
 Bác tài lái.
 
 Xe chậm lại trước một xóm xưa, [pause:250ms] bảng [DIALOGUE_SEG_START]"Xóm Đông Văn, [pause:250ms] xã Tam Đảo"[DIALOGUE_SEG_END], [pause:250ms] đường vào xóm là đường đất. Đèn vàng cột điện đầu xóm.
 
-Một người đàn ông đứng đợi bên cột điện. Khoảng năm mươi tuổi. Áo sơ mi đen, [pause:250ms] quần tây xám. Tay phải cầm bó hương trầm, [pause:250ms] bó dài chừng nửa mét, [pause:250ms] gói trong giấy bản nâu.
+Một người đàn ông đứng đợi bên cột điện đó. Tuổi khoảng năm mươi. Áo sơ mi đen, [pause:250ms] quần tây xám. Tay phải cầm bó hương trầm, [pause:250ms] bó dài chừng nửa mét, [pause:250ms] gói trong giấy bản nâu.
 
-Người đàn ông vào xe. Đi qua mấy hàng ghế trước, [pause:250ms] chân chậm lại. Ngồi xuống ghế thứ bảy.
+Người đàn ông vào xe. Đi qua mấy hàng ghế trước, [pause:250ms] chân chậm lại dần. Ngồi xuống ghế thứ bảy đó.
 
-Đặt bó hương lên đùi. Mở giấy bản. Hương trầm, [pause:250ms] sắc đỏ đậm, [pause:250ms] mùi gỗ trầm thơm nhẹ, [pause:250ms] đã tỏa ngay trong xe.
+Đặt bó hương lên đùi. Mở giấy bản đó. Hương trầm, [pause:250ms] sắc đỏ đậm, [pause:250ms] mùi gỗ trầm thơm nhẹ, [pause:250ms] đã tỏa ngay trong xe.
 
 Xe lăn bánh.
 
@@ -78,15 +82,15 @@ Người đàn ông ngồi yên. Vuốt bó hương trầm, [pause:250ms] cẩn 
 
 Khải Phong quan sát từ ghế ba. Anh năm mươi, [pause:250ms] tóc bạc nửa, [pause:250ms] mặt buồn lâu ngày.
 
-Mùi trầm tỏa trong xe, [pause:250ms] không to, [pause:250ms] không che lấp, [pause:250ms] chỉ thoảng. Khải Phong cảm thấy mùi quen, [pause:250ms] mùi nhà tang, [pause:250ms] mùi nghĩa trang.
+Mùi trầm tỏa trong xe, [pause:250ms] không to, [pause:250ms] không che lấp, [pause:250ms] chỉ thoảng qua. Khải Phong cảm thấy mùi quen, [pause:250ms] mùi nhà tang, [pause:250ms] mùi nghĩa trang.
 
-Ông cụ ghế đầu vặn radio. Lạo xạo. [DIALOGUE_SEG_START]"...quê nhà..."[DIALOGUE_SEG_END] vọng, [pause:250ms] tắt.
+Ông cụ ghế đầu vặn radio. Lạo xạo hoài. [DIALOGUE_SEG_START]"...quê nhà..."[DIALOGUE_SEG_END] vọng, [pause:250ms] tắt.
 
 [pause:500ms]
 
 Bác tài liếc gương. Không nói.
 
-Anh đặt bó hương lên đùi nguyên, [pause:250ms] không lấy ra đốt, [pause:250ms] chỉ giữ lại.
+Anh đặt bó hương lên đùi nguyên, [pause:250ms] không lấy ra đốt, [pause:250ms] chỉ giữ lại thôi.
 
 ---
 
@@ -102,7 +106,7 @@ Anh ghế bảy nhìn về phía đó.
 
 [DIALOGUE_SEG_START]"Bác Bính..."[DIALOGUE_SEG_END]
 
-Người đàn ông nói rất nhỏ.
+Người đàn ông nói rất nhỏ xíu.
 
 Đồng hồ trên xe, [pause:250ms] kim phút nhích một, [pause:250ms] hai, [pause:250ms] đến mười.
 
@@ -110,7 +114,7 @@ Người đàn ông nói rất nhỏ.
 
 Xe đi qua đó. Nhà mái ngói khuất.
 
-Người đàn ông quay đầu lại. Vuốt bó hương.
+Người đàn ông quay đầu lại nhìn. Vuốt bó hương.
 
 ---
 
@@ -118,9 +122,9 @@ Người đàn ông quay đầu lại. Vuốt bó hương.
 
 [pause:1000ms]
 
-[DIALOGUE_SEG_START]"Tôi là Văn Tuấn. Em năm mươi tuổi rồi. Tôi ở Đông Văn, [pause:250ms] Vĩnh Phúc, [pause:250ms] quê. Tôi làm cán bộ xã đó."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Tôi là Nghị Đôn. Cô gái năm mươi tuổi rồi. Người kể đây ở Đông Văn, [pause:250ms] Vĩnh Phúc, [pause:250ms] quê. Hình ảnh người kể chuyện làm cán bộ xã đó."[DIALOGUE_SEG_END]
 
-Giọng anh trầm, [pause:250ms] chậm.
+Giọng anh trầm, [pause:250ms] chậm hơn.
 
 [DIALOGUE_SEG_START]"Bác hàng xóm cũ tôi, [pause:250ms] bác Bính, [pause:250ms] mất mười năm trước. Bảy mươi mốt tuổi. Đột tử trong ngủ, [pause:250ms] tim, [pause:250ms] bác sống một mình, [pause:250ms] không ai biết bác mất."[DIALOGUE_SEG_END]
 
@@ -164,7 +168,7 @@ Giọng anh trầm, [pause:250ms] chậm.
 
 [DIALOGUE_SEG_START]"Tôi cũng đem cuốn sổ nhỏ, [pause:250ms] tôi viết lại tên bác, [pause:250ms] ngày bác mất, [pause:250ms] vài dòng kỉ niệm bác kể tôi thuở nhỏ. Tôi để cuốn sổ trên mộ bác, [pause:250ms] để bác biết tôi không quên cả đời, [pause:250ms] chỉ quên mười năm, [pause:250ms] bây giờ tôi nhớ lại."[DIALOGUE_SEG_END]
 
-"Cuốn sổ tôi viết ba đêm trước khi đem ra mộ. Tôi viết về bác Bính dạy tôi đọc thơ, [pause:250ms] tôi viết về bác cho tôi mượn sách tủ, [pause:250ms] tôi viết về buổi tối bác kể chuyện ngày xưa khi tôi mười tuổi vừa mất bố. Mỗi đoạn viết, [pause:250ms] tôi nhớ chi tiết, [pause:250ms] không tưởng tượng, [pause:250ms] tôi thực sự nhớ bác cả đời, [pause:250ms] chỉ quên đi thắp hương."
+"Cuốn sổ tôi viết ba đêm trước khi đem ra mộ. Tôi viết về bác Bính dạy tôi đọc thơ, [pause:250ms] tôi về bác cho tôi mượn sách tủ, [pause:250ms] tôi về buổi tối bác kể chuyện ngày xưa khi tôi mười tuổi vừa mất bố. Mỗi đoạn viết, [pause:250ms] tôi nhớ chi tiết, [pause:250ms] không tưởng tượng, [pause:250ms] tôi thực sự nhớ bác cả đời, [pause:250ms] chỉ quên đi thắp hương."
 
 [DIALOGUE_SEG_START]"Vợ tôi đọc cuốn sổ, [pause:250ms] bảo: 'Anh viết hay, [pause:250ms] bác Bính chắc đọc được, [pause:250ms] chữ anh nghiêm túc.' Tôi cười nhẹ, [pause:250ms] bảo: 'Anh viết cho bác, [pause:250ms] không cho ai khác đọc.'"[DIALOGUE_SEG_END]
 
@@ -174,13 +178,13 @@ Bác tài cất lời.
 
 [DIALOGUE_SEG_START]"Con đã nhớ ra chưa?"[DIALOGUE_SEG_END]
 
-Văn Tuấn gật.
+Nghị Đôn gật đầu.
 
-[DIALOGUE_SEG_START]"Tôi nhớ. Bác Bính thương tôi như cháu ruột, [pause:250ms] tôi quên thắp hương mười năm. Bác không có ai khác để thắp. Tôi không phải lý do gì, [pause:250ms] chỉ quên, [pause:250ms] chỉ bận. Bây giờ tôi bù, [pause:250ms] đốt cả bó trầm, [pause:250ms] một lần thay mười năm."[DIALOGUE_SEG_END]
+"Tôi nhớ. Bác Bính thương tôi như cháu ruột, [pause:250ms] tôi quên thắp hương mười năm. Bóng người bác không có ai khác để thắp. Hình ảnh người kể chuyện không phải lý do gì, [pause:250ms] chỉ quên, [pause:250ms] chỉ bận. Bây giờ tôi bù, [pause:250ms] đốt cả bó trầm, [pause:250ms] một lần thay mười năm.[DIALOGUE_SEG_START]"
 
 [pause:1200ms]
 
-"Đêm nay, [pause:250ms] tôi đem bó hương về Đông Văn, [pause:250ms] về nghĩa trang xã đó, [pause:250ms] về mộ bác. Đốt cả bó. Quỳ. Nói: 'Bác Bính ơi cháu xin lỗi mười năm. Cháu quên thắp hương, [pause:250ms] không phải cháu không thương, [pause:250ms] cháu chỉ quên. Bây giờ cháu thắp một lần, [pause:250ms] đốt cả bó, [pause:250ms] đủ mười năm. Cháu sẽ không quên nữa.'[DIALOGUE_SEG_START]"
+"[DIALOGUE_SEG_END]Đêm nay, [pause:250ms] tôi đem bó hương về Đông Văn, [pause:250ms] về nghĩa trang xã đó, [pause:250ms] về mộ bác. Đốt cả bó. Quỳ. Nói: 'Bác Bính ơi cháu xin lỗi mười năm. Cháu quên thắp hương, [pause:250ms] không phải cháu không thương, [pause:250ms] cháu chỉ quên. Bây giờ cháu thắp một lần, [pause:250ms] đốt cả bó, [pause:250ms] đủ mười năm. Cháu sẽ không quên nữa.'[DIALOGUE_SEG_START]"
 
 ---
 
@@ -188,13 +192,13 @@ Văn Tuấn gật.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Vĩnh Phúc, [pause:250ms] cây gạo cổ, [pause:250ms] bến không tên. Một tiếng chuông. Ngắn. Tan trong sương.
+Xe chậm lại rồi. Ngã ba Vĩnh Phúc, [pause:250ms] cây gạo cổ, [pause:250ms] bến không tên. Một tiếng chuông. Ngắn. Tan trong sương.
 
-Văn Tuấn gói bó hương vào giấy bản. Đứng dậy.
+Nghị Đôn gói bó hương vào giấy bản đó. Đứng dậy ngay.
 
 "[DIALOGUE_SEG_END]Chào anh.[DIALOGUE_SEG_START]"
 
-Trước khi xuống, [pause:250ms] đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển.
+Trước khi xuống, [pause:250ms] đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển gì.
 
 Bác tài: "[DIALOGUE_SEG_END]Chưa tới lúc."
 
@@ -202,15 +206,15 @@ Người đàn ông bước xuống dưới.
 
 [pause:1200ms]
 
-Bên ngoài, [pause:250ms] Văn Tuấn đi vào nghĩa trang xã Đông Văn. Cổng đã mở. Mộ bác Bính, [pause:250ms] bia gỗ mun, [pause:250ms] đã có dấu xưa.
+Bên ngoài, [pause:250ms] Nghị Đôn đi vào nghĩa trang xã Đông Văn. Cổng đã mở ra. Mộ bác Bính, [pause:250ms] bia gỗ mun, [pause:250ms] đã có dấu xưa.
 
 Người đàn ông đến nơi đó. Quỳ. Đốt bó hương, [pause:250ms] cháy đậm, [pause:250ms] mùi trầm tỏa khắp nghĩa trang. Cắm vào bia. Cúi đầu.
 
-Khải Phong chớp mắt, [pause:250ms] nhìn qua cửa sổ. Bên mộ, [pause:250ms] bác Bính xuất hiện, [pause:250ms] ông cụ bảy mươi áo sơ mi nâu, [pause:250ms] vuốt vai Văn Tuấn. Mỉm cười.
+Khải Phong chớp mắt, [pause:250ms] nhìn qua cửa sổ xe. Bên mộ, [pause:250ms] bác Bính xuất hiện, [pause:250ms] ông cụ bảy mươi áo sơ mi nâu, [pause:250ms] vuốt vai Nghị Đôn. Mỉm cười.
 
-Khải Phong chớp lần nữa. Người bác tan ra.
+Khải Phong lại chớp mắt. Người bác tan ra.
 
-Văn Tuấn ngẩng đầu. Không khóc.
+Nghị Đôn ngẩng đầu. Không khóc.
 
 [pause:1500ms]
 
@@ -220,7 +224,7 @@ Văn Tuấn ngẩng đầu. Không khóc.
 
 Xe lăn bánh, [pause:250ms] rời ngã ba Vĩnh Phúc.
 
-Ghế bảy trống. Trên sàn, [pause:250ms] một chân hương nhỏ rơi (bong từ bó). Khải Phong nhặt. Chân hương, [pause:250ms] màu đỏ đậm, [pause:250ms] mùi trầm thoảng còn.
+Ghế bảy trống. Trên sàn, [pause:250ms] một chân hương nhỏ rơi (bong từ bó). Khải Phong nhặt lên. Chân hương, [pause:250ms] màu đỏ đậm, [pause:250ms] mùi trầm thoảng còn.
 
 Bỏ vào túi. Vật thứ ba mươi tư.
 
@@ -228,7 +232,7 @@ Bác tài lái. Kim phút cabin nhích, [pause:250ms] một, [pause:250ms] hai, 
 
 [pause:1500ms]
 
-Khải Phong ngồi. Văn Tuấn quên thắp hương cho bác hàng xóm mười năm, [pause:250ms] bây giờ bù.
+Khải Phong ngồi. Nghị Đôn quên thắp hương cho bác hàng xóm mười năm, [pause:250ms] bây giờ bù.
 
 Khải Phong nhói. Khải Phong có quên thắp hương cho Hạ Vy không?
 
@@ -252,14 +256,14 @@ Năm tám, [pause:250ms] 2025, [pause:250ms] đây là năm hiện tại, [pause
 
 Khải Phong nhói thêm. Tháng tư 2025, [pause:250ms] sắp tròn tám năm Hạ Vy đi, [pause:250ms] Khải Phong chưa về. Khải Phong đã định về, [pause:250ms] nhưng không đi, [pause:250ms] không hiểu vì sao.
 
-Khải Phong cố nhớ. Hình ảnh, [pause:250ms] Khải Phong ngồi bàn làm việc văn phòng kiến trúc phố Khâm Thiên, [pause:250ms] buổi chiều, [pause:250ms] không có gì đặc biệt. Khải Phong đi về phòng trọ phố Nguyễn Trãi, [pause:250ms] ăn cơm, [pause:250ms] đi ngủ.
+Khải Phong cố nhớ. Hình ảnh, [pause:250ms] Khải Phong ngồi bàn làm việc văn phòng kiến trúc phố Khâm Thiên, [pause:250ms] buổi chiều, [pause:250ms] không có gì đặc biệt lắm. Khải Phong đi về phòng trọ phố Nguyễn Trãi, [pause:250ms] ăn cơm, [pause:250ms] đi ngủ sớm.
 
 Sau giấc ngủ đó, [pause:250ms] Khải Phong tỉnh dậy trên xe đêm này. Vào ngày đầu tiên. Ghế thứ ba. Không nhớ vì sao.
 
-Khải Phong cảm giác, [pause:250ms] Khải Phong tỉnh dậy không phải từ giấc ngủ thường. Khải Phong tỉnh dậy từ điều gì khác. Khải Phong không nhớ.
+Khải Phong cảm giác, [pause:250ms] Khải Phong tỉnh dậy không phải từ giấc ngủ thường. Bóng người ngồi Phong tỉnh dậy từ điều gì khác. Hình ảnh người đàn ông ấy Phong không nhớ.
 
-Bác tài liếc gương. [DIALOGUE_SEG_START]"Vào đêm ba mươi tư. Con đã đếm tám năm. Đêm sau con sẽ nhớ, [pause:250ms] vì sao đêm con tỉnh dậy không phải giấc ngủ thường, [pause:250ms] vì sao con ngồi ghế thứ ba mà không nhớ. Đừng vội."[DIALOGUE_SEG_END]
+Bác tài liếc gương. [DIALOGUE_SEG_START]"Vào đêm ba mươi tư. Con đã đếm tám năm. Đêm sau con sẽ nhớ, [pause:250ms] vì sao đêm con tỉnh dậy không phải giấc ngủ thường, [pause:250ms] vì sao con ngồi ghế thứ ba mà không nhớ. Đừng vội nhé."[DIALOGUE_SEG_END]
 
-Khải Phong gật. Lệ rơi nhẹ nhàng.
+Khải Phong gật đầu. Lệ rơi nhẹ nhàng.
 
-Đêm thứ ba mươi tư, [pause:250ms] Khải Phong đếm thêm. Xe đi tiếp. Phía sau, [pause:250ms] Vĩnh Phúc khuất. Văn Tuấn ở lại quỳ, [pause:250ms] bó hương cháy bên mộ.
+Đêm thứ ba mươi tư, [pause:250ms] Khải Phong đếm thêm. Xe đi tiếp. Phía sau, [pause:250ms] Vĩnh Phúc khuất. Nghị Đôn ở lại quỳ, [pause:250ms] bó hương cháy bên mộ ấy. 

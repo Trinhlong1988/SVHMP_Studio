@@ -54,17 +54,17 @@ arc_design_compliant: bible/21 R33-R40
 
 Trời mưa đã rơi từ chiều. Đêm tháng tư — không tan hết rồi. Chuyến xe đêm đi qua đoạn đường nội thành Hà Nội — phố C, Hà Nội — đèn pha hắt lên hàng cây ướt sương. Đèn pha quét lên hàng cột tàu điện trên cao — Cát Linh-Hà Đông tuyến đầu.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi ba — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — ba mươi hai vật.
+Khải Phong ngồi ghế thứ ba. Đêm thứ ba mươi ba — Khải Phong đếm thêm. Trong túi áo gió Khải Phong — ba mươi hai vật rồi.
 
 Bác tài lái.
 
 Mặt đường nội thành Hà Nội — đèn vàng phố cổ — gần khu vực Khải Phong từng sinh viên — phố Khâm Thiên không xa.
 
-Xe chậm lại trước ga tàu điện Cát Linh — cổng ga đã đóng — đèn vàng treo cột. Bảng "Ga Cát Linh" sạch — tàu điện mở năm 2021 — vẫn còn mới.
+Xe chậm lại trước ga tàu điện Cát Linh — cổng ga đã đóng — đèn vàng treo cột đèn. Bảng "Ga Cát Linh" sạch — tàu điện mở năm 2021 — vẫn còn mới.
 
-Một phụ nữ đứng đợi bên cổng ga. Khoảng ba mươi tám tuổi. Áo dạ xám — quần tây đen. Tay phải cầm phong bì kraft nhỏ — bên trong vật mỏng.
+Một phụ nữ đứng đợi bên cổng ga. Tuổi khoảng ba mươi tám. Áo dạ xám — quần tây đen. Tay phải cầm phong bì kraft nhỏ — bên trong vật mỏng ấy.
 
-Cô gái khẽ lên bậc xe. Đi đến hàng ghế giữa — chân chậm lại. Ngồi xuống ghế thứ chín.
+Cô gái khẽ lên bậc xe. Đi đến hàng ghế giữa — chân chậm lại dần. Ngồi xuống ghế thứ chín.
 
 Mở phong bì. Lấy ra một tấm vé tàu điện — vé giấy in — ghi rõ ngày "11/2021" — tuyến Cát Linh-Hà Đông — vé hai chiều.
 
@@ -76,19 +76,19 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Cô gái khẽ ngồi yên lặng. Vuốt vé tàu. Đầu ngón tay cô mảnh — bàn tay người làm bàn giấy.
+Cô gái khẽ ngồi yên, không nói gì. Vuốt vé tàu. Đầu ngón tay cô mảnh — bàn tay người làm bàn giấy.
 
 Khải Phong quan sát từ ghế ba. Cô ba lăm tám — mặt mệt — vẻ người vừa rời cuộc họp đêm. Áo dạ xám tươm tất — nhưng có nét buồn.
 
 Vé tàu trong tay cô — Khải Phong nhìn rõ ràng — vé hai chiều — chữ in còn rõ ràng — vé chưa qua máy soát — chưa dùng.
 
-Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng — tắt.
+Ông cụ ghế đầu vặn radio. Lạo xạo hoài. "...quê nhà..." vọng — tắt.
 
 [pause:500ms]
 
 Bác tài liếc gương. Không nói.
 
-Cô gái đặt vé lên đùi. Vuốt mép. Hơi thở chậm lại.
+Cô gái đặt vé lên đùi. Vuốt mép. Hơi thở chậm lại dần.
 
 ---
 
@@ -96,7 +96,7 @@ Cô gái đặt vé lên đùi. Vuốt mép. Hơi thở chậm lại.
 
 [pause:500ms]
 
-Xe đi qua phố nội thành. Phía bên phải — một ga tàu điện nhỏ hơn — đèn vàng còn sáng. Cạnh ga — bóng cô gái trẻ chừng ba mươi đứng — tay cầm vé tàu — đứng đợi.
+Xe đi qua phố nội thành. Phía bên phải — một ga tàu điện nhỏ hơn — đèn vàng còn sáng. Cạnh ga — bóng cô gái trẻ chừng ba mươi đứng — tay cầm vé tàu — đứng đợi tàu.
 
 Cô ngước nhìn lên cột tàu điện — đèn báo tàu sắp đến — nhưng cô không lên.
 
@@ -104,7 +104,7 @@ Cô ghế chín nhìn về phía đó.
 
 "Quỳnh..."
 
-Cô gái nói rất nhỏ nhẹ.
+Cô gái nói rất nhỏ nhẹ, gần như thì thầm.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
@@ -122,7 +122,7 @@ Cô gái ghế chín quay đầu. Vuốt vé tàu.
 
 "Em là Xuân Uyên. Ba mươi tám tuổi. Em ở Cát Linh — Hà Nội — sinh ở ở đây. Em làm biên tập viên nhà xuất bản phố Tràng Tiền."
 
-Giọng cô đều — chậm.
+Giọng cô đều — chậm hơn.
 
 "Bạn em — Quỳnh — mất ba năm trước. Ba mươi sáu tuổi. Ung thư cổ tử cung giai đoạn cuối — phát hiện muộn — sống thêm tám tháng."
 
@@ -176,7 +176,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Xuân Uyên gật. Lệ rơi xuống vé.
+Xuân Uyên gật đầu. Lệ rơi xuống vé.
 
 "Em nhớ. Cô gái hứa em đi tàu điện ba năm — em không kịp đem em đi. Em đi trước em định ngày sau. Vé hai chiều em đặt — em chưa dùng. Em không thể chuộc — em chỉ có thể đem vé về ga tàu — gửi vé cho ga."
 
@@ -196,13 +196,13 @@ Xuân Uyên gật. Lệ rơi xuống vé.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Cát Linh — cây phượng vĩ đỏ — bến gần ga. Chuông xe rung nhẹ. Vang một nhịp. Tan.
+Xe chậm lại rồi. Ngã ba Cát Linh — cây phượng vĩ đỏ — bến gần ga. Chuông xe rung nhẹ nhàng. Vang một nhịp xa. Tan.
 
-Xuân Uyên gói vé vào phong bì. Đứng dậy.
+Xuân Uyên gói vé vào phong bì. Đứng dậy ngay.
 
 "Chào anh."
 
-Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển.
+Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển gì.
 
 Bác tài: "Chưa tới lúc."
 
@@ -210,15 +210,15 @@ Cô gái bước xuống dưới đường.
 
 [pause:1200ms]
 
-Bên ngoài — Xuân Uyên đi vào sân ga Cát Linh — bảo vệ đã mở cửa phụ. Phòng tiếp tân ga — hộp "lost items" gỗ đặt cạnh quầy.
+Bên ngoài — Xuân Uyên đi vào sân ga Cát Linh — bảo vệ đã mở cửa phụ đó. Phòng tiếp tân ga — hộp "lost items" gỗ đặt cạnh quầy.
 
-Cô gái đã đến nơi đó. Đặt phong bì vào hộp lost items. Cúi đầu trước hộp.
+Cô gái đã đến nơi đó. Đặt phong bì vào hộp lost items. Cúi đầu trước hộp đó.
 
-Khải Phong chớp mắt — nhìn qua cửa sổ. Bên hộp — Quỳnh xuất hiện — cô gái ba sáu — áo dạ xanh đậm — chạm vào vai Xuân Uyên. Khẽ cười nhẹ nhàng.
+Khải Phong chớp mắt — nhìn qua cửa sổ xe. Bên hộp — Quỳnh xuất hiện — cô gái ba sáu — áo dạ xanh đậm — chạm vào vai Xuân Uyên. Khẽ cười nhẹ nhàng.
 
-Khải Phong chớp lần nữa. Người tên Quỳnh tan ra.
+Khải Phong lại chớp mắt. Người tên Quỳnh tan ra.
 
-Xuân Uyên ngẩng đầu. Lau lệ. Đi ra ngoài.
+Xuân Uyên ngẩng đầu. Lau lệ đi. Đi ra ngoài.
 
 [pause:1500ms]
 
@@ -228,7 +228,7 @@ Xuân Uyên ngẩng đầu. Lau lệ. Đi ra ngoài.
 
 Xe lăn bánh — rời ngã ba Cát Linh.
 
-Ghế chín trống. Trên sàn — một mẩu vé tàu nhỏ rơi (góc vé bong khi cô đặt vào hộp). Khải Phong nhặt. Mẩu — màu vàng nhạt — có nét bút "Cát Linh-Hà Đông" rõ ràng.
+Ghế chín trống. Trên sàn — một mẩu vé tàu nhỏ rơi (góc vé bong khi cô đặt vào hộp đó). Khải Phong nhặt lên. Mẩu — màu vàng nhạt — có nét bút "Cát Linh-Hà Đông" rõ ràng.
 
 Bỏ vào túi. Vật thứ ba mươi ba — vật đầu tiên mang dấu Hà Nội nội thành (sub-arc geographic).
 
@@ -238,20 +238,20 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 Khải Phong ngồi. Vé tàu Cát Linh — Hà Nội nội thành — vật đầu tiên trong cụm geographic.
 
-Khải Phong ngẫm — sau Hạ Vy mất — Khải Phong đem Hạ Vy về Hải Phòng — quê anh — tang ở quê. Anh chôn ở nghĩa trang xã Vĩnh Bảo.
+Khải Phong ngẫm — sau Hạ Vy mất — Khải Phong đem Hạ Vy về Hải Phòng — quê anh — tang ở quê. Anh chôn ở nghĩa trang xã Vĩnh Bảo đó.
 
-Khải Phong ở lại Hà Nội. Hai ngày sau tang — Khải Phong về Hà Nội — căn phòng trọ Khâm Thiên — một mình.
+Khải Phong ở lại Hà Nội này. Hai ngày sau tang — Khải Phong về Hà Nội — căn phòng trọ Khâm Thiên — một mình.
 
 [pause:1500ms]
 
-Bố mẹ Hạ Vy ở Hải Phòng — anh là con đầu — anh còn anh gái nhỏ. Sau tang — bố mẹ anh không ghé Hà Nội — bố mẹ buồn ở quê. Khải Phong gọi điện hỏi thăm vài lần — sau đó liên lạc thưa.
+Bố mẹ Hạ Vy ở Hải Phòng — anh là con đầu — anh còn anh gái nhỏ xíu. Sau tang — bố mẹ anh không ghé Hà Nội — bố mẹ buồn ở quê. Khải Phong gọi điện hỏi thăm vài lần — sau đó liên lạc thưa.
 
-Anh gái Hạ Vy — tên Hạ Nhi — lúc đó học cấp ba — anh mười sáu tuổi. Anh quý Khải Phong — coi anh rể.
+Anh gái Hạ Vy — tên Hạ Nhi — lúc đó học cấp ba — anh mười sáu tuổi thôi. Anh quý Khải Phong — coi anh rể mình.
 
 Khải Phong cố nhớ — sau Hạ Vy mất Khải Phong có liên lạc Hạ Nhi không? Cảm giác — có. Khải Phong nhắn anh vài lần — hỏi học bài. Sau anh vào đại học — anh đi Sài Gòn — liên lạc thưa hơn.
 
-Bác tài liếc gương. "Vào đêm ba mươi ba. Con đã nhớ Hạ Vy về quê tang — bố mẹ em ở quê. Đêm sau con sẽ nhớ — quê Hạ Vy thế nào — em đã sống ở đâu — bố mẹ em làm gì. Đừng vội."
+Bác tài liếc gương. "Vào đêm ba mươi ba. Con đã nhớ Hạ Vy về quê tang — bố mẹ em ở quê. Đêm sau con sẽ nhớ — quê Hạ Vy thế nào — em đã sống ở đâu — bố mẹ em làm gì. Đừng vội nhé."
 
-Khải Phong gật.
+Khải Phong gật đầu.
 
-Đêm thứ ba mươi ba — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Cát Linh khuất. Xuân Uyên ở lại ga — đứng cạnh hộp lost items — vé tàu trong hộp. 
+Đêm thứ ba mươi ba — Khải Phong đếm thêm. Xe đi tiếp. Phía sau — Cát Linh khuất. Xuân Uyên ở lại ga — đứng cạnh hộp lost items — vé tàu trong hộp đó. 
