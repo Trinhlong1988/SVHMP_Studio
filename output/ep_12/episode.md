@@ -52,17 +52,17 @@ arc_design_compliant: bible/21 R33-R38 + R36 callback EP01
 
 [pause:800ms]
 
-Tháng tư. Trời đêm vừa khuya. Xe đêm rẽ vào đoạn ven sông Hồng, Hà Nội. Đèn pha cắt qua màn sương — chiếu lên hàng cây bên đường.
+Tháng tư. Trời đêm vừa khuya. Xe đêm rẽ vào đoạn ven sông Hồng, Hà Nội rồi. Đèn pha cắt qua màn sương — chiếu lên hàng cây bên đường.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ mười hai — Khải Phong đếm thêm. Trong túi áo gió anh — mười một vật. Đêm qua thêm mảnh vỏ bạc nhỏ — từ vòng cổ ngôi sao của chị Đức.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười hai — Khải Phong đếm thêm. Trong túi áo gió anh — mười một vật rồi. Đêm qua thêm mảnh vỏ bạc nhỏ — từ vòng cổ ngôi sao của chị Đức.
 
 Bác tài lái. Hôm nay xe đi gần cầu Long Biên — người khách nhận ra ngay đoạn đường này. Đêm số một — cũng đoạn đường này. Đêm số một có cô gái mặc áo trắng — cũng cầm đồng xà cừ.
 
-Xe chậm lại trước một quán cà phê cũ ven đê — đèn vàng còn sáng. Một phụ nữ đứng đợi. Khoảng ba mươi sáu tuổi. Áo dài xanh — vạt áo dài hơi ướt nước mưa. Tay phải cầm hộp nhỏ — hộp giấy bọc gấm đỏ.
+Xe chậm lại trước một quán cà phê cũ ven đê — đèn vàng còn sáng. Một phụ nữ đứng đợi ai đó. Tuổi khoảng ba mươi sáu. Áo dài xanh — vạt áo dài hơi ướt nước mưa. Tay phải cầm hộp nhỏ — hộp giấy bọc gấm đỏ tươi.
 
-Cô gái khẽ bước lên xe. Đi xuống lối giữa — ngồi xuống ghế thứ chín. Đặt hộp lên đùi. Mở. Lấy đồng ra — mặt xà trắng — viền bạc — kim đã dừng ở bảy giờ mười phút.
+Cô gái khẽ bước lên xe. Đi xuống lối giữa — ngồi xuống ghế thứ chín. Đặt hộp lên đùi. Mở ra. Lấy đồng ra — mặt xà trắng — viền bạc — kim đã dừng ở bảy giờ mười phút.
 
-Người đàn ông ghế ba — nhìn đồng — giật mình. Đồng hồ này — giống y hệt đồng đêm số một.
+Người đàn ông ghế ba — nhìn đồng — giật mình. Đồng hồ này — giống y hệt đồng đêm số một đó.
 
 Xe lăn bánh.
 
@@ -72,27 +72,27 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Cô gái khẽ ngồi yên lặng. Đeo đồng lên cổ tay trái. Kim không di chuyển — đứng yên ở bảy giờ mười phút.
+Cô gái khẽ ngồi yên, không nói gì. Đeo đồng lên cổ tay trái. Kim không di chuyển — đứng yên ở bảy giờ mười phút.
 
 Anh ấy quan sát từ ghế ba. Tay cô cô không nhẫn cưới — chỉ có đồng này. Khuôn mặt cô — chừng ba mươi sáu — đã có một nếp ở khóe mắt — nếp người hay nghĩ thầm.
 
-Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng. Tắt.
+Ông cụ ghế đầu vặn radio. Lạo xạo hoài. "...quê nhà..." vọng xa. Tắt.
 
 [pause:500ms]
 
-Bác tài liếc gương. Lần này dừng trên anh — lâu hơn thường. người khách đợi. Bác tài cất lời — một câu — câu thứ ba không nằm trong hai câu chuẩn.
+Bác tài liếc gương. Lần này dừng trên anh — lâu hơn thường. người khách đợi chờ. Bác tài cất lời — một câu — câu thứ ba không nằm trong hai câu như mọi khi.
 
 "Đêm số một con đã thấy đồng này rồi đúng không, con."
 
-Bác tài nói. Không hỏi — khẳng định.
+Bác tài nói. Không hỏi — chỉ là khẳng định thôi.
 
-Người đàn ông gật chậm. Hình bóng ngồi Phong nhớ — đêm số một — cô gái mặc áo trắng — qua cầu Long Biên — đồng kim dừng đúng bảy giờ mười phút. Hình bóng người con gái gái đó xuống xe — không trở lại.
+Người đàn ông chậm rãi gật đầu. Hình bóng ngồi Phong nhớ — đêm số một — cô gái mặc áo trắng — qua cầu Long Biên — đồng kim dừng đúng bảy giờ mười phút. Hình bóng người con gái gái đó xuống xe rồi đi mất, không quay về.
 
 Bác tài tiếp:
 
 "Đêm nay là cô thứ hai. Sẽ có nhiều cô nữa — đồng xà dừng cùng giờ — không tình cờ, con à. Con cứ đếm. Đến đêm năm mươi — con sẽ hiểu."
 
-Khải Phong ấy gật. Không hỏi thêm.
+Khải Phong ấy gật đầu. Không hỏi thêm.
 
 ---
 
@@ -106,7 +106,7 @@ Cô ghế chín nhìn về phía đó.
 
 "Người yêu của em ơi..."
 
-Cô gái cất tiếng nói rất nhỏ. Hơi thở cô hắt ra — không kịp giấu.
+Cô gái cất tiếng nói rất nhỏ xíu. Hơi thở cô hắt ra — không kịp giấu.
 
 Đồng hồ trên xe — đồng kim cabin tài xế — kim phút nhích một lần — hai — đến mười. Đếm cùng cô.
 
@@ -114,7 +114,7 @@ Cô gái cất tiếng nói rất nhỏ. Hơi thở cô hắt ra — không kị
 
 Xe đi qua đó. Tiệm vàng khuất. Bóng người đàn ông khuất.
 
-Cô gái khẽ quay đầu lại. Vuốt mặt đồng xà trên cổ tay. Hơi thở đều lại.
+Cô gái khẽ quay đầu lại nhìn. Vuốt mặt đồng xà trên cổ tay. Hơi thở đều lại dần.
 
 ---
 
@@ -192,13 +192,13 @@ Cô gái khẽ gật đầu một cái.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba dốc cầu Long Biên — bến không tên. Tiếng chuông ngân nhẹ. Một hồi. Lặng.
+Xe chậm lại rồi. Ngã ba dốc cầu Long Biên — bến không tên. Tiếng chuông ngân nhẹ nhàng. Một hồi. Lặng yên.
 
-Cô cất đồng vào hộp gấm đỏ. Đóng nắp. Đứng dậy.
+Cô cất đồng vào hộp gấm đỏ tươi. Đóng nắp. Đứng dậy ngay.
 
 "Chào anh."
 
-Trước khi xuống — đồng bên cabin chỉ bảy giờ mười phút. Kim không di chuyển.
+Trước khi xuống — đồng bên cabin chỉ bảy giờ mười phút. Kim không di chuyển gì.
 
 Bác tài: "Chưa tới lúc."
 
@@ -214,9 +214,9 @@ Ném xuống sông Hồng.
 
 Đồng hồ rơi — chạm mặt nước — chìm.
 
-Anh chớp mắt — nhìn qua cửa sổ. Bên cô — anh Khôi xuất hiện — mặc áo công trường vàng — đứng cạnh. Không nói. Vuốt vai cô một lần. Mỉm cười.
+Anh chớp mắt — nhìn qua cửa sổ xe. Bên cô — anh Khôi xuất hiện — mặc áo công trường vàng — đứng cạnh cô. Không nói. Vuốt vai cô một lần. Mỉm cười.
 
-Người khách chớp lần nữa. Anh Khôi tan vào sương đêm trên cầu.
+Người khách lại chớp mắt. Anh Khôi tan vào sương đêm trên cầu.
 
 Người con gái đứng. Nhìn xuống sông. Không khóc.
 
@@ -228,7 +228,7 @@ Người con gái đứng. Nhìn xuống sông. Không khóc.
 
 Xe lăn bánh — xuống dốc cầu Long Biên.
 
-Ghế chín trống. Trên sàn — một mảnh xà nhỏ rơi — bong từ mép vòng đồng khi cô vuốt. người đàn ông nhặt. Bỏ vào túi.
+Ghế chín trống. Trên sàn — một mảnh xà nhỏ rơi — bong từ mép vòng đồng khi cô vuốt. người đàn ông nhặt lên. Bỏ vào túi.
 
 Vật thứ mười hai.
 
@@ -238,20 +238,20 @@ Nhưng đồng — đều dừng đúng bảy giờ mười phút.
 
 [pause:1500ms]
 
-Người khách ngẫm. Có một đêm — người đàn ông biết — chính đêm anh ấy ngồi xe lần đầu — kim đồng trên xe cũng đứng đúng bảy giờ mười. Vào đêm đó có ai? anh không nhớ.
+Người khách ngẫm xem. Có một đêm — người đàn ông biết — chính đêm anh ấy ngồi xe lần đầu — kim đồng trên xe cũng đứng đúng bảy giờ mười. Vào đêm đó có ai? anh không nhớ.
 
-Tên "Hạ Vy" lại vọng trong đầu người khách — sau hai đêm liên tục.
+Tên "Hạ Vy" lại vọng trong đầu người khách — sau hai đêm liên tục rồi.
 
 Hạ Vy — có liên quan đồng xà cừ này không? Có. Có một cảm giác — cô ấy đã có một đồng giống. Hoặc — người yêu cũ đã muốn có một đồng giống. Hoặc — đêm cô gái ấy đi — kim đồng cô ấy cũng đứng bảy giờ mười.
 
 Người đàn ông không biết cái nào.
 
-Bác tài liếc gương. "Vào đêm mười hai. Đồng hồ xà cừ dừng cùng giờ — không tình cờ, con à. Cứ giữ lại. Con sẽ hiểu sau."
+Bác tài liếc gương. "Vào đêm mười hai. Đồng hồ xà cừ dừng cùng giờ — không tình cờ, con à. Cứ giữ lại nhé. Con sẽ hiểu sau."
 
-Người đàn ông ấy gật.
+Người đàn ông ấy gật đầu.
 
-Đêm thứ mười hai — anh đếm thêm. Xe đi xuống dốc cầu. Phía dưới — mặt sông Hồng phẳng. Đồng hồ xà cừ đã chìm. Người anh Khôi đã tan.
+Đêm thứ mười hai — anh đếm thêm. Xe đi xuống dốc cầu. Phía dưới — mặt sông Hồng phẳng lì. Đồng hồ xà cừ đã chìm. Người anh Khôi đã tan.
 
-Người khách vuốt mảnh xà cừ trong túi. Lạnh.
+Người khách vuốt mảnh xà cừ trong túi. Lạnh buốt.
 
 Hai mảnh xà cừ — hai đêm — hai cô gái khác nhau. Nhưng đồng kim phút đều dừng đúng bảy giờ mười phút. người đàn ông cố nhớ — có một lần nào anh ấy nhìn vào đồng hồ — kim dừng đúng giờ này không. Cảm giác — có. Đêm gì đó — có thể đêm người yêu cũ mất — anh nhìn đồng hồ điện thoại — kim cũng bảy giờ mười. người khách không chắc — kỉ niệm mờ. Đêm sau người đàn ông sẽ nhớ rõ hơn — bác tài đã hứa giúp anh ấy nhớ dần qua từng passenger. 

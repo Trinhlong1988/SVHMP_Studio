@@ -12,17 +12,21 @@ Tác giả: Hắc Dạ Ký.
 
 [pause:600ms]
 
-Series: Chuyến xe cuối cùng về đâu.
+Loạt truyện: Chuyến xe cuối cùng về đâu.
 
 [pause:600ms]
 
-Ai cũng có một chuyến xe chưa nói lời tạm biệt.
+Ai cũng có một chuyến xe chưa kịp nói lời tạm biệt với người mình thương.
 
 [pause:1000ms]
 
 Tập 14, [pause:250ms] câu chuyện đêm nay.
 
 [pause:1500ms]
+
+Truyện hư cấu; mọi nghi lễ và tập tục nhắc tới không có thật, chỉ phục vụ câu chuyện thôi.
+
+[pause:1200ms]
 
 ---
 
@@ -35,7 +39,7 @@ intensity_level: 0.55
 quang_memory_fragment: M3 (Khải Phong ngẫm tên Hạ Vy + cúc tai)
 object_sub_arc: HOA_CUC cluster vật 2 (khăn thêu cúc, [pause:250ms] echo EP13)
 callback_target: ep_13 (object_echo HOA_CUC symbol)
-passenger_main: nu 56 Tâm Đan Chương Mỹ (từ chối cụ Mai bát phở 30 năm trước)
+passenger_main: nu 56 Thắm Hường Chương Mỹ (từ chối cụ Mai bát phở 30 năm trước)
 signature_object: OBJ_KHAN_QUANG_THEU_CUC (khăn thêu cúc kỉ niệm bà cụ Mai)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Chương Hoa Kỳ
@@ -52,15 +56,15 @@ arc_design_compliant: bible/21 R33-R38
 
 [pause:800ms]
 
-Cuối tháng tư. Trời ẩm. Xe đêm chạy chậm qua đường ven sông Đáy, Chương Hoa Kỳ. Hàng tre già, [pause:250ms] gốc tre dày như cột ven đường, [pause:250ms] lá còn rơi vài giọt mưa cuối ngày.
+Cuối tháng tư. Trời ẩm ướt. Xe đêm chạy chậm qua đường ven sông Đáy, Chương Hoa Kỳ. Hàng tre già, [pause:250ms] gốc tre dày như cột ven đường, [pause:250ms] lá còn rơi vài giọt mưa cuối ngày.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ mười bốn, [pause:250ms] Khải Phong đếm thêm. Trong túi áo gió Khải Phong, [pause:250ms] mười ba vật. Đêm qua thêm cánh cúc khô vàng, [pause:250ms] từ vườn bố anh Bình.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười bốn, [pause:250ms] Khải Phong đếm thêm. Trong túi áo gió Khải Phong, [pause:250ms] mười ba vật rồi. Đêm qua thêm cánh cúc khô vàng, [pause:250ms] từ vườn bố anh Bình.
 
 Bác tài lái. Đoạn đường này Khải Phong đã đi qua một lần, [pause:250ms] đêm thứ chín, [pause:250ms] Khải Phong nhớ có cô bé học sinh xuống xe ở Chương Hoa Kỳ.
 
 Xe chậm lại trước một chùa cổ ven sông, [pause:250ms] cổng tam quan đã đóng, [pause:250ms] đèn dầu treo cột tre còn sáng. Bảng chùa [DIALOGUE_SEG_START]"Chùa Hương Đáy"[DIALOGUE_SEG_END] gỗ cũ đã mòn.
 
-Một bà trung niên đứng đợi bên cổng. Khoảng năm mươi sáu tuổi. Áo bà ba xám đậm, [pause:250ms] vạt áo dài quá đầu gối. Tóc búi gọn sau ót. Tay phải cầm khăn quàng xưa, [pause:250ms] gấp gọn, [pause:250ms] to bằng cuốn vở.
+Một bà trung niên đứng đợi bên cổng chùa. Tuổi khoảng năm mươi sáu. Áo bà ba xám đậm, [pause:250ms] vạt áo dài quá đầu gối. Tóc búi gọn sau ót. Tay phải cầm khăn quàng xưa, [pause:250ms] gấp gọn, [pause:250ms] to bằng cuốn vở học sinh.
 
 Người bà cụ khẽ vào xe. Đi qua mấy hàng ghế trước, [pause:250ms] ngồi xuống ghế thứ tám. Mở khăn. Khăn nâu đậm, [pause:250ms] vải len mỏng, [pause:250ms] góc khăn thêu một bông hoa cúc vàng, [pause:250ms] chỉ vàng đã hơi phai theo năm tháng.
 
@@ -74,11 +78,11 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Người bà cụ ngồi yên lặng. Vuốt khăn. Bàn tay bà thô, [pause:250ms] bàn tay đã làm việc nhiều năm. Móng tay cắt ngắn, [pause:250ms] sạch.
+Người bà cụ ngồi yên, không nói gì. Vuốt khăn. Bàn tay bà thô, [pause:250ms] bàn tay đã làm việc nhiều năm. Móng tay cắt ngắn, sạch như mới.
 
 Khải Phong quan sát từ ghế ba. Bà này, [pause:250ms] không phải đi viếng, [pause:250ms] không cầm hộp, [pause:250ms] chỉ cầm khăn xưa. Khăn của ai? Khăn cho ai?
 
-Ông cụ ghế đầu vặn radio. Lạo xạo. [DIALOGUE_SEG_START]"...quê nhà..."[DIALOGUE_SEG_END] vọng. Tắt.
+Ông cụ ghế đầu vặn radio. Lạo xạo hoài. [DIALOGUE_SEG_START]"...quê nhà..."[DIALOGUE_SEG_END] vọng xa. Tắt.
 
 [pause:500ms]
 
@@ -92,13 +96,13 @@ Bà vuốt bông cúc thêu, [pause:250ms] đầu ngón tay quen, [pause:250ms] 
 
 [pause:500ms]
 
-Xe đi qua xóm xưa. Phía bên trái, [pause:250ms] một quán phở vỉa hè xưa, [pause:250ms] đã đóng, [pause:250ms] biển hiệu [DIALOGUE_SEG_START]"Phở Bà Tư"[DIALOGUE_SEG_END] đã tróc sơn. Cạnh quán, [pause:250ms] góc vỉa hè, [pause:250ms] bóng bà cụ ngồi co, [pause:250ms] áo rách, [pause:250ms] tay run cầm bát mẻ. Không quay đầu.
+Xe đi qua xóm xưa. Phía bên trái, [pause:250ms] một quán phở vỉa hè xưa, [pause:250ms] đã đóng, [pause:250ms] biển hiệu [DIALOGUE_SEG_START]"Phở Bà Tư"[DIALOGUE_SEG_END] đã tróc sơn. Cạnh quán, [pause:250ms] góc vỉa hè, [pause:250ms] bóng bà cụ ngồi co, [pause:250ms] áo rách, [pause:250ms] tay run cầm bát mẻ ấy. Không quay đầu.
 
-Bà ghế tám nhìn về phía đó. Hơi thở bà chậm lại.
+Bà ghế tám nhìn về phía đó. Hơi thở bà chậm lại dần.
 
 [DIALOGUE_SEG_START]"Bác..."[DIALOGUE_SEG_END]
 
-Người bà cụ nói rất nhỏ.
+Người bà cụ nói rất nhỏ xíu.
 
 Đồng hồ trên xe, [pause:250ms] kim phút nhích một, [pause:250ms] hai, [pause:250ms] đến mười.
 
@@ -106,7 +110,7 @@ Người bà cụ nói rất nhỏ.
 
 Xe đi qua đó. Quán phở khuất. Bóng bà cụ khuất.
 
-Bà cụ ghế tám quay đầu. Đặt khăn lên đùi. Vuốt bông cúc thêu một lần nữa.
+Bà cụ ghế tám quay đầu. Đặt khăn lên đùi. Lại vuốt bông cúc thêu một lần.
 
 ---
 
@@ -114,7 +118,7 @@ Bà cụ ghế tám quay đầu. Đặt khăn lên đùi. Vuốt bông cúc thê
 
 [pause:1000ms]
 
-[DIALOGUE_SEG_START]"Em là Tâm Đan. Bà cụ năm mươi sáu tuổi. Em ở Chương Hoa Kỳ, [pause:250ms] quê. Em làm kế toán Hà Nội, [pause:250ms] sắp về hưu."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Em là Thắm Hường. Bà cụ năm mươi sáu tuổi. Cô gái ấy em ở Chương Hoa Kỳ, [pause:250ms] quê. Hình bóng người con gái ấy làm kế toán Hà Nội, [pause:250ms] sắp về hưu."[DIALOGUE_SEG_END]
 
 Giọng bà trầm, [pause:250ms] chậm, [pause:250ms] đều.
 
@@ -132,7 +136,7 @@ Giọng bà trầm, [pause:250ms] chậm, [pause:250ms] đều.
 
 [DIALOGUE_SEG_START]"Em đi ngang qua. Em có tiền, [pause:250ms] bốn nghìn đồng trong ví, [pause:250ms] đủ cho bà một bát phở, [pause:250ms] phở thời đó hai nghìn rưỡi một bát."[DIALOGUE_SEG_END]
 
-[DIALOGUE_SEG_START]"Em không cho. Người bà cũng vội, [pause:250ms] đi làm, [pause:250ms] ca tám giờ, [pause:250ms] em đi từ chợ tới văn phòng mất bốn mươi phút. Em nghĩ trong đầu: 'Hôm khác. Em sẽ cho hôm khác.'"[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Em không cho. Người bà cũng vội, [pause:250ms] đi làm, [pause:250ms] ca tám giờ, [pause:250ms] em đi từ chợ tới văn phòng mất bốn mươi phút. Đứa em nghĩ trong đầu: 'Hôm khác. Cô ấy sẽ cho hôm khác.'"[DIALOGUE_SEG_END]
 
 [DIALOGUE_SEG_START]"Em đi làm cả buổi sáng, [pause:250ms] quên bà cụ. Trưa, [pause:250ms] em ngồi ăn cơm văn phòng, [pause:250ms] tự nhiên nhớ bà cụ. Em nghĩ: 'Chiều về em ghé chợ, [pause:250ms] cho bà.'"[DIALOGUE_SEG_END]
 
@@ -160,7 +164,7 @@ Giọng bà trầm, [pause:250ms] chậm, [pause:250ms] đều.
 
 [DIALOGUE_SEG_START]"Em giữ khăn, [pause:250ms] ba mươi năm. Không bao giờ tặng ai. Không dùng. Chỉ giữ trong tủ, [pause:250ms] gấp gọn, [pause:250ms] mỗi rằm tháng giêng em lấy ra, [pause:250ms] phơi nắng, [pause:250ms] gấp lại."[DIALOGUE_SEG_END]
 
-[DIALOGUE_SEG_START]"Ba mươi năm em sống tử tế hơn, [pause:250ms] vì một lần không tử tế đã mất một người. Em làm từ thiện. Em mỗi cuối tháng đem cơm cho cụ già khu vực gần nhà em, [pause:250ms] cụ nghèo neo đơn."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Ba mươi năm em sống tử tế hơn, [pause:250ms] vì một lần không tử tế đã mất một người. Cô gái gái làm từ thiện. Em mỗi cuối tháng đem cơm cho cụ già khu vực gần nhà em, [pause:250ms] cụ nghèo neo đơn."[DIALOGUE_SEG_END]
 
 [DIALOGUE_SEG_START]"Em cưới, [pause:250ms] sinh hai con, [pause:250ms] chăm con tử tế. Em dạy con: 'Khi thấy người cần, [pause:250ms] đừng nói "[DIALOGUE_SEG_END]hôm khác[DIALOGUE_SEG_START]". Hôm khác có thể không có.'"[DIALOGUE_SEG_END]
 
@@ -184,13 +188,13 @@ Người bà cụ khẽ gật đầu.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Chương Hoa Kỳ, [pause:250ms] cây gạo già, [pause:250ms] bến không tên. Một tiếng chuông. Ngắn. Tan trong sương.
+Xe chậm lại rồi. Ngã ba Chương Hoa Kỳ, [pause:250ms] cây gạo già, [pause:250ms] bến không tên. Một tiếng chuông. Ngắn. Tan trong sương.
 
-Người bà cụ gấp khăn lại. Đứng dậy.
+Người bà cụ gấp khăn lại từ từ. Đứng dậy ngay.
 
 [DIALOGUE_SEG_START]"Chào con."[DIALOGUE_SEG_END]
 
-Trước khi xuống, [pause:250ms] đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển.
+Trước khi xuống, [pause:250ms] đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển gì.
 
 Bác tài: [DIALOGUE_SEG_START]"Chưa tới lúc."[DIALOGUE_SEG_END]
 
@@ -198,15 +202,15 @@ Người bà cụ bước xuống dưới.
 
 [pause:1200ms]
 
-Bên ngoài, [pause:250ms] bà đi vào nghĩa trang xã Hương Đáy, [pause:250ms] cổng gỗ đã mở. Đèn nến cháy bên trong. Phía cuối, [pause:250ms] một mộ vô danh, [pause:250ms] bia gỗ đơn, [pause:250ms] chỉ ghi [DIALOGUE_SEG_START]"Vô danh, [pause:250ms] 1995"[DIALOGUE_SEG_END], [pause:250ms] chôn cùng năm bà cụ Mai mất.
+Bên ngoài, [pause:250ms] bà đi vào nghĩa trang xã Hương Đáy, [pause:250ms] cổng gỗ đã mở ra. Đèn nến cháy bên trong. Phía cuối, [pause:250ms] một mộ vô danh, [pause:250ms] bia gỗ đơn, [pause:250ms] chỉ ghi [DIALOGUE_SEG_START]"Vô danh, [pause:250ms] 1995"[DIALOGUE_SEG_END], [pause:250ms] chôn cùng năm bà cụ Mai mất.
 
 Người bà cụ đến nơi đó. Quỳ. Đặt khăn lên mộ, [pause:250ms] phủ kín bia. Cúi đầu.
 
-Khải Phong chớp mắt, [pause:250ms] nhìn qua cửa sổ. Bên mộ, [pause:250ms] bà cụ Mai xuất hiện, [pause:250ms] mặc áo bà ba xanh xưa, [pause:250ms] tóc cài bông cúc vàng. Cười nhẹ nhàng. Cúi xuống, [pause:250ms] vuốt khăn, [pause:250ms] quấn lên cổ mình.
+Khải Phong chớp mắt, [pause:250ms] nhìn qua cửa sổ xe. Bên mộ, [pause:250ms] bà cụ Mai xuất hiện, [pause:250ms] mặc áo bà ba xanh xưa, [pause:250ms] tóc cài bông cúc vàng. Cười nhẹ nhàng. Cúi xuống, [pause:250ms] vuốt khăn, [pause:250ms] quấn lên cổ mình.
 
-Khải Phong chớp lần nữa. Người bà cụ ấy tan ra.
+Khải Phong lại chớp mắt. Người bà cụ ấy tan ra.
 
-Người tên Tâm Đan ngẩng đầu. Lau khóe mắt. Quỳ thêm một lúc. Rồi đứng dậy.
+Người tên Thắm Hường ngẩng đầu. Lau khóe mắt. Quỳ thêm một lúc. Rồi đứng dậy ngay.
 
 [pause:1500ms]
 
@@ -216,7 +220,7 @@ Người tên Tâm Đan ngẩng đầu. Lau khóe mắt. Quỳ thêm một lúc.
 
 Xe lăn bánh, [pause:250ms] rời ngã ba Chương Hoa Kỳ.
 
-Ghế tám trống. Trên sàn, [pause:250ms] một sợi chỉ vàng nhỏ rơi, [pause:250ms] sợi chỉ thêu bông cúc bong ra khi bà gấp khăn. Khải Phong nhặt. Sợi chỉ, [pause:250ms] mảnh, [pause:250ms] mềm, [pause:250ms] màu vàng nhạt giống cánh cúc khô đêm trước.
+Ghế tám trống. Trên sàn, [pause:250ms] một sợi chỉ vàng nhỏ rơi, [pause:250ms] sợi chỉ thêu bông cúc bong ra khi bà gấp khăn. Khải Phong nhặt lên. Sợi chỉ, [pause:250ms] mảnh, [pause:250ms] mềm, [pause:250ms] màu vàng nhạt giống cánh cúc khô đêm trước.
 
 Bỏ vào túi. Vật thứ mười bốn.
 
@@ -224,21 +228,21 @@ Bác tài lái. Kim phút cabin nhích, [pause:250ms] một, [pause:250ms] hai, 
 
 [pause:1500ms]
 
-Khải Phong ngồi. Mở túi áo gió, [pause:250ms] đếm. Mười bốn vật. Trong đó, [pause:250ms] hai vật cùng symbol hoa cúc: cánh cúc khô vàng (đêm mười ba), [pause:250ms] sợi chỉ thêu cúc vàng (đêm này).
+Khải Phong ngồi. Mở túi áo gió, [pause:250ms] đếm. Mười bốn vật rồi. Trong đó, [pause:250ms] hai vật cùng symbol hoa cúc: cánh cúc khô vàng (đêm mười ba), [pause:250ms] sợi chỉ thêu cúc vàng (đêm này).
 
 Hai vật rời rạc, [pause:250ms] hai chủ, [pause:250ms] không quen nhau, [pause:250ms] không cùng tuổi, [pause:250ms] không cùng phố. Nhưng cùng cúc.
 
-Khải Phong ngẫm. Trùng hợp?
+Khải Phong ngẫm xem. Trùng hợp sao?
 
-Hình ảnh Hạ Vy, [pause:250ms] mái tóc dài, [pause:250ms] bông cúc cài tai, [pause:250ms] lại hiện. Lần này rõ hơn đêm qua. Khải Phong thấy được vai cô, [pause:250ms] áo trắng, [pause:250ms] vai gầy. Mặt còn mờ.
+Hình ảnh Hạ Vy, [pause:250ms] mái tóc dài, [pause:250ms] bông cúc cài tai, [pause:250ms] lại hiện về. Lần này rõ hơn đêm qua. Khải Phong thấy được vai cô, [pause:250ms] áo trắng, [pause:250ms] vai gầy. Mặt còn mờ.
 
 Hạ Vy cài cúc lên tai. Khải Phong biết, [pause:250ms] không phải đoán, [pause:250ms] biết.
 
-Bác tài liếc gương. [DIALOGUE_SEG_START]"Vào đêm mười bốn. Hai vật cùng symbol, [pause:250ms] bắt đầu thành cụm. Cụm sẽ lớn, [pause:250ms] đến đêm hai mươi con sẽ có bốn vật cùng cúc. Đêm hai mươi, [pause:250ms] con sẽ ngẫm vì sao."[DIALOGUE_SEG_END]
+Bác tài liếc gương. [DIALOGUE_SEG_START]"Vào đêm mười bốn. Hai vật cùng symbol, [pause:250ms] bắt đầu thành cụm rồi. Cụm sẽ lớn, [pause:250ms] đến đêm hai mươi con sẽ có bốn vật cùng cúc. Đêm hai mươi, [pause:250ms] con sẽ ngẫm vì sao."[DIALOGUE_SEG_END]
 
-Khải Phong gật.
+Khải Phong gật đầu.
 
-Đêm thứ mười bốn, [pause:250ms] Khải Phong đếm thêm. Xe đi tiếp về phía đường vành đai. Phía sau, [pause:250ms] Chương Mỹ khuất. Bà Tâm Đan ở lại bên mộ vô danh, [pause:250ms] quỳ, [pause:250ms] gửi khăn, [pause:250ms] gửi ba mươi năm hối tiếc qua đất.
+Đêm thứ mười bốn, [pause:250ms] Khải Phong đếm thêm. Xe đi tiếp về phía đường vành đai. Phía sau, [pause:250ms] Chương Mỹ khuất. Bà Thắm Hường ở lại bên mộ vô danh, [pause:250ms] quỳ, [pause:250ms] gửi khăn, [pause:250ms] gửi ba mươi năm hối tiếc qua đất.
 
 
 [pause:800ms]
@@ -253,6 +257,6 @@ Hạ Vy cài bông cúc, [pause:250ms] Khải Phong hỏi: [DIALOGUE_SEG_START]"
 
 Khải Phong nhớ. Hạ Vy có một bà ngoại trồng cúc. Quê bà ngoại Hạ Vy, [pause:250ms] Khải Phong không nhớ chính xác, [pause:250ms] có thể Hải Phòng, [pause:250ms] cùng quê Hạ Vy. Hoặc nơi khác.
 
-Bác tài liếc gương. [DIALOGUE_SEG_START]"Đêm sau con sẽ nhớ, [pause:250ms] quê bà ngoại Hạ Vy ở đâu, [pause:250ms] Hạ Vy có hay đem cúc từ vườn bà không. Đừng vội."[DIALOGUE_SEG_END]
+Bác tài liếc gương. [DIALOGUE_SEG_START]"Đêm sau con sẽ nhớ, [pause:250ms] quê bà ngoại Hạ Vy ở đâu, [pause:250ms] Hạ Vy có hay đem cúc từ vườn bà không. Đừng vội nhé."[DIALOGUE_SEG_END]
 
-Khải Phong gật.
+Khải Phong gật đầu. 

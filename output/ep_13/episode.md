@@ -56,15 +56,15 @@ arc_design_compliant: bible/21 R33-R38
 
 [pause:800ms]
 
-Trời mưa đã rơi từ chiều. Đêm tháng tư — không tan hết rồi. Chuyến xe đêm đi qua đoạn đường ven cánh đồng lúa Mỹ Đức, Hà Nội — đèn pha hắt lên hàng cây ướt sương. Đèn pha quét lên rừng cúc dại bên đường — cúc đã ra hoa sớm năm nay — vàng nhạt giữa cỏ.
+Trời mưa đã rơi từ chiều. Đêm tháng tư — không tan hết rồi. Chuyến xe đêm đi qua đoạn đường ven cánh đồng lúa Mỹ Đức, Hà Nội — đèn pha hắt lên hàng cây ướt sương. Đèn pha quét lên rừng cúc dại bên đường — cúc đã ra hoa sớm năm nay — vàng nhạt giữa cỏ non.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ mười ba — Khải Phong đếm thêm. Trong túi áo gió anh — mười hai vật. Đêm qua thêm mảnh xà cừ thứ hai.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười ba — Khải Phong đếm thêm. Trong túi áo gió anh — mười hai vật rồi. Đêm qua thêm mảnh xà cừ thứ hai.
 
 Bác tài lái. Đoạn đường này lạ với người khách — người đàn ông chưa đi qua Mỹ Đức trên chuyến xe này.
 
 Xe chậm lại trước một vườn cúc nhỏ ven đường — chủ vườn đã đóng cổng tre — đèn dầu treo cột tre còn sáng yếu. Bảng hiệu gỗ mun "Vườn cúc Phú An" đã mòn nét bút.
 
-Một người đàn ông trung niên đứng đợi bên cổng. Khoảng bốn mươi sáu tuổi. Áo sơ mi xám — tay áo cuộn — quần kaki nâu. Tay phải cầm bó hoa cúc khô — gói trong giấy bản.
+Một người đàn ông trung niên đứng đợi bên cổng tre. Tuổi khoảng bốn mươi sáu. Áo sơ mi xám — tay áo cuộn — quần kaki nâu. Tay phải cầm bó hoa cúc khô — gói trong giấy bản màu nâu.
 
 Người đàn ông lên bậc xe. Đi đến hàng ghế giữa — ngồi xuống ghế thứ năm. Đặt bó cúc khô lên đùi. Mở giấy. Cánh cúc đã giòn — màu vàng nhạt như nắng cuối thu — một số cánh đã rụng vào giấy.
 
@@ -82,13 +82,13 @@ Anh ấy quan sát từ ghế ba. Anh trạc tuổi bố anh nếu bố người
 
 Cánh cúc anh đang vuốt — màu vàng nhạt — giống cánh cúc dại ngoài cửa sổ xe vừa chạy qua.
 
-Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng — rồi tắt.
+Ông cụ ghế đầu vặn radio. Lạo xạo hoài. "...quê nhà..." vọng — rồi tắt.
 
 [pause:500ms]
 
-Bác tài liếc gương. Không nói. Quay lại.
+Bác tài liếc gương. Không nói. Quay lại nhìn đường.
 
-Anh ghế năm đặt một cánh đã rơi xuống đùi lên lại bó. Cánh rớt — anh nhặt — đặt — như nghi lễ hội.
+Anh ghế năm đặt một cánh đã rơi xuống đùi lên lại bó. Cánh rớt — anh nhặt — đặt — như nghi lễ hội nào đó.
 
 ---
 
@@ -96,21 +96,21 @@ Anh ghế năm đặt một cánh đã rơi xuống đùi lên lại bó. Cánh 
 
 [pause:500ms]
 
-Xe đi qua xóm xưa. Phía bên phải — căn nhà mái ngói rêu xanh — sân có vườn nhỏ — đầy cúc vàng đang nở. Cạnh vườn — ông cụ tóc bạc — cầm cuốc đứng — cúi xuống vun gốc cúc. Không quay đầu.
+Xe đi qua xóm xưa. Phía bên phải — căn nhà mái ngói rêu xanh — sân có vườn nhỏ — đầy cúc vàng đang nở khắp nơi. Cạnh vườn — ông cụ tóc bạc — cầm cuốc đứng — cúi xuống vun gốc cúc. Không quay đầu.
 
 Anh ghế năm nhìn về phía đó. Cánh tay anh hơi run.
 
 "Bố..."
 
-Người đàn ông nói rất nhỏ. Một từ — như tiếng thở.
+Người đàn ông nói rất nhỏ xíu. Một từ — như tiếng thở dài.
 
 Đồng hồ trên xe — kim phút nhích một lần — hai — đến mười.
 
 [pause:1000ms]
 
-Xe đi qua đó. Vườn cúc khuất. Bóng ông cụ khuất sau cửa. Bóng tan vào màu đêm.
+Xe đi qua đó. Vườn cúc khuất. Bóng ông cụ khuất sau cửa nhà. Bóng tan vào màu đêm.
 
-Người đàn ông quay đầu lại. Đặt tay lên bó cúc khô. Nín thở vài giây — rồi thở ra ngoài.
+Người đàn ông quay đầu lại nhìn. Đặt tay lên bó cúc khô. Nín thở vài giây — rồi thở ra ngoài.
 
 ---
 
@@ -120,7 +120,7 @@ Người đàn ông quay đầu lại. Đặt tay lên bó cúc khô. Nín thở
 
 "Tôi là Bình. Bốn mươi lăm tuổi. Tôi ở Mỹ Đức — quê. Tôi làm kế toán Hà Nội."
 
-Giọng anh trầm — chậm — không vội.
+Giọng anh trầm — chậm — không vội vàng.
 
 "Bố tôi mất hai năm trước. Bảy mươi sáu tuổi. Ung thư phổi giai đoạn cuối — phát hiện muộn — sống thêm sáu tháng từ ngày chẩn đoán."
 
@@ -188,13 +188,13 @@ Khải Phong khẽ gật đầu. Mắt đỏ — không khóc.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Mỹ Đức — cây đa cổ — bến không tên. Chuông xe rung nhẹ. Vang một nhịp. Tan.
+Xe chậm lại rồi. Ngã ba Mỹ Đức — cây đa cổ — bến không tên. Chuông xe rung nhẹ nhàng. Vang một nhịp xa. Tan.
 
-Người đàn ông ôm bó cúc khô. Đứng dậy.
+Người đàn ông ôm bó cúc khô. Đứng dậy ngay.
 
 "Chào anh."
 
-Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển.
+Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển gì.
 
 Bác tài: "Chưa tới lúc."
 
@@ -208,11 +208,11 @@ Người đàn ông đến nơi. Quỳ. Đặt bó cúc khô lên mộ — chín
 
 Cúi đầu.
 
-Người khách chớp mắt — nhìn qua cửa sổ. Bên mộ — bố anh xuất hiện — mặc áo nâu nông dân — tay cầm cuốc — đứng cạnh anh Bình. Vuốt lưng con trai một lần. Cười nhẹ nhàng.
+Người khách chớp mắt — nhìn qua cửa sổ xe. Bên mộ — bố anh xuất hiện — mặc áo nâu nông dân — tay cầm cuốc — đứng cạnh anh Bình. Vuốt lưng con trai một lần. Cười nhẹ nhàng.
 
-Người đàn ông chớp lần nữa. Bố tan vào ánh đèn nến.
+Người đàn ông lại chớp mắt. Bố tan vào ánh đèn nến.
 
-Người tên Bình ngẩng đầu. Lau khóe mắt bằng tay áo cuộn. Không nói thêm.
+Người tên Bình ngẩng đầu. Lau khóe mắt bằng tay áo cuộn lên. Không nói thêm.
 
 [pause:1500ms]
 
@@ -222,7 +222,7 @@ Người tên Bình ngẩng đầu. Lau khóe mắt bằng tay áo cuộn. Khôn
 
 Xe lăn bánh — rời ngã ba Mỹ Đức.
 
-Ghế năm trống. Trên sàn — một cánh khô vàng rơi từ bó khi anh Bình đứng dậy. anh ấy nhặt. Cầm trong lòng bàn tay. Cánh cúc — mỏng — giòn — màu nắng cuối thu.
+Ghế năm trống. Trên sàn — một cánh khô vàng rơi từ bó khi anh Bình đứng dậy đó. anh ấy nhặt lên. Cầm trong lòng bàn tay. Cánh cúc — mỏng — giòn — màu nắng cuối thu.
 
 Bỏ vào túi áo gió. Vật thứ mười ba.
 
@@ -236,7 +236,7 @@ Người khách vuốt cánh. Cảm thấy quen — không phải vì cúc dại
 
 Có một cô gái — Hạ Vy — có thích cúc không?
 
-Người đàn ông cố nhớ. Hình ảnh mờ — một mái tóc dài — một bông cúc cài lên tai. Một tiếng cười trẻ. anh ấy không thấy được mặt cô — nhưng cảm giác bông cúc cài tai — rõ ràng.
+Người đàn ông cố nhớ. Hình ảnh mờ — một mái tóc dài — một bông cúc cài lên tai. Một tiếng cười trẻ thơ. anh ấy không thấy được mặt cô — nhưng cảm giác bông cúc cài tai — rõ ràng.
 
 Hạ Vy — đã cài cúc lên tai một lần. anh cảm thấy chắc chắn về điều đó.
 
@@ -244,17 +244,17 @@ Người khách không biết khi nào — không tại đâu — không Hạ Vy
 
 Bác tài liếc gương. "Vào đêm mười ba. Cúc khô sẽ trở lại đêm mai. Để ý xem — đêm mai có thể không phải cúc khô — nhưng có cúc trong nó. Cứ giữ cánh đêm nay. Cụm vật sẽ lớn dần."
 
-Người đàn ông gật.
+Người đàn ông gật đầu.
 
 Đêm thứ mười ba — anh ấy đếm thêm. Xe đi tiếp về phía đường vành đai. Phía sau — Mỹ Đức khuất. Anh Bình ở lại bên mộ bố — quỳ — không vội đứng.
 
 
 [pause:800ms]
 
-Anh nhìn ra cửa sổ — đường vẫn vắng tanh. Mưa đã ngớt — chỉ còn không khí ẩm. người khách cảm thấy đêm nay khác — đêm trước người đàn ông chỉ ngẫm về Hạ Vy mơ hồ. Đêm này — cụ thể hơn — mảnh cánh khô từ vườn bố anh Bình kết nối với hình ảnh Hạ Vy cài cúc lên tai dưới gốc cây phượng sân trường kiến trúc.
+Anh nhìn ra cửa sổ — đường vẫn vắng tanh. Mưa đã ngớt — chỉ còn không khí ẩm ướt. người khách cảm thấy đêm nay khác — đêm trước người đàn ông chỉ ngẫm về Hạ Vy mơ hồ. Đêm này — cụ thể hơn — mảnh cánh khô từ vườn bố anh Bình kết nối với hình ảnh Hạ Vy cài cúc lên tai dưới gốc cây phượng sân trường kiến trúc.
 
-Bác tài liếc gương — không thêm lời. Chỉ chậm nhịp ngón trỏ trên vô-lăng ba cái — như đồng cảm.
+Bác tài liếc gương — không thêm lời. Chỉ chậm nhịp ngón trỏ trên vô-lăng ba cái — như thể đang đồng cảm cùng.
 
 Anh ấy cất cánh vào túi áo gió cẩn thận — không để bị nát giữa các vật khác. anh biết — cánh cúc này sẽ là một trong nhiều cánh cúc người khách nhặt — sẽ thành cụm vật quan trọng — bác tài đã hứa.
 
-Đêm thứ mười ba — người đàn ông đã đếm — đêm thứ mười ba trên chuyến xe này. Mỗi đêm anh ấy nhớ thêm một mảnh ký ức nhỏ. Ký ức về Hạ Vy đang trở lại — từng chút — từng cánh cúc — từng vật. 
+Đêm thứ mười ba — người đàn ông đã đếm — đêm thứ mười ba trên chuyến xe này. Mỗi đêm anh ấy nhớ thêm một mảnh ký ức nhỏ xíu. Ký ức về Hạ Vy đang trở lại — từng chút — từng cánh cúc — từng vật thôi. 
