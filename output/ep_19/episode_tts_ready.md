@@ -12,11 +12,11 @@ Tác giả: Hắc Dạ Ký.
 
 [pause:600ms]
 
-Series: Chuyến xe cuối cùng về đâu.
+Loạt truyện: Chuyến xe cuối cùng về đâu.
 
 [pause:600ms]
 
-Ai cũng có một chuyến xe chưa nói lời tạm biệt.
+Ai cũng có một chuyến xe chưa kịp nói lời tạm biệt với người mình thương.
 
 [pause:1000ms]
 
@@ -35,7 +35,7 @@ intensity_level: 0.55
 quang_memory_fragment: M4 (Khải Phong ngẫm sổ tay Hạ Vy, [pause:250ms] chữ tròn nhỏ)
 object_sub_arc: HOA_CUC cluster vật 4 (vòng hoa cúc, [pause:250ms] HOÀN THÀNH cluster 4 vật)
 callback_target: ep_14 (object_echo HOA_CUC + Tam Dan khan theu cuc)
-passenger_main: nu 50 Bích Hoa Đông Anh (ngại đi tang bạn, [pause:250ms] bạn chết cô đơn)
+passenger_main: nu 50 Nhàn Thục Đông Anh (ngại đi tang bạn, [pause:250ms] bạn chết cô đơn)
 signature_object: OBJ_VONG_HOA_CUC (vòng hoa cúc cô đem trễ tang bạn)
 signature_setting: setting_dem_thang_tu_HN
 stop_location: ngã ba Đông Anh
@@ -54,15 +54,15 @@ arc_design_compliant: bible/21 R33-R38 + R36 callback EP14
 
 Đèn xe rọi vào sương. Đêm tháng tư miền Bắc. Chuyến xe đi qua đoạn đường ven sông Đuống, Đông Anh, [pause:250ms] hàng cây ven đường thấp thoáng trong sương. Đèn pha quét lên bãi mía dài bên đường.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ mười chín, [pause:250ms] Khải Phong đếm thêm. Trong túi áo gió Khải Phong, [pause:250ms] mười tám vật. Đêm qua thêm mảnh tro thư.
+Khải Phong ngồi ghế thứ ba. Đêm thứ mười chín, [pause:250ms] Khải Phong đếm thêm. Trong túi áo gió anh, [pause:250ms] mười tám vật rồi. Đêm qua thêm mảnh tro thư.
 
 Bác tài lái.
 
-Xe chậm lại trước một nghĩa trang xã đó, [pause:250ms] cổng gạch cũ đã đóng, [pause:250ms] đèn vàng hắt lên hàng nét bút [DIALOGUE_SEG_START]"Nghĩa trang Đông Hội"[DIALOGUE_SEG_END]. Một phụ nữ đứng đợi bên cổng. Khoảng năm mươi tuổi. Áo bà ba đen, [pause:250ms] vạt áo dài quá đầu gối. Hai tay cô ôm vòng hoa cúc lớn, [pause:250ms] hoa cúc vàng tươi, [pause:250ms] dày, [pause:250ms] to bằng vòng tay.
+Xe chậm lại trước một nghĩa trang xã đó, [pause:250ms] cổng gạch cũ đã đóng, [pause:250ms] đèn vàng hắt lên hàng nét bút [DIALOGUE_SEG_START]"Nghĩa trang Đông Hội"[DIALOGUE_SEG_END] đó. Một phụ nữ đứng đợi bên cổng nghĩa trang. Tuổi khoảng năm mươi. Áo bà ba đen, [pause:250ms] vạt áo dài quá đầu gối. Hai tay cô ôm vòng hoa cúc lớn, [pause:250ms] hoa cúc vàng tươi, [pause:250ms] dày, [pause:250ms] to bằng vòng tay.
 
 Cô gái khẽ bước lên xe. Đi qua hàng ghế đầu, [pause:250ms] ngồi xuống ghế thứ chín. Đặt vòng hoa lên đùi. Hai tay đỡ lấy, [pause:250ms] vòng quá lớn không đặt được hoàn toàn.
 
-Khải Phong ghế ba nhìn, [pause:250ms] vòng hoa cúc vàng tươi, [pause:250ms] vật thứ tư trong cụm cúc.
+Người khách ghế ba nhìn, [pause:250ms] vòng hoa cúc vàng tươi, [pause:250ms] vật thứ tư trong cụm cúc.
 
 Xe lăn bánh.
 
@@ -72,17 +72,17 @@ Xe lăn bánh.
 
 [pause:600ms]
 
-Cô gái khẽ ngồi yên lặng. Đỡ vòng hoa. Hoa cúc tươi, [pause:250ms] vài cánh đã rụng xuống đùi.
+Cô gái khẽ ngồi yên, không nói gì. Đỡ vòng hoa. Hoa cúc tươi, [pause:250ms] vài cánh đã rụng xuống đùi.
 
-Khải Phong quan sát. Cô năm mươi, [pause:250ms] tóc bạc một số sợi, [pause:250ms] mặt mệt, [pause:250ms] vẻ người đã đi xa đêm nay.
+Người đàn ông quan sát. Cô năm mươi, [pause:250ms] tóc bạc một số sợi, [pause:250ms] mặt mệt, [pause:250ms] vẻ người đã đi xa đêm nay.
 
-Ông cụ ghế đầu vặn radio. Lạo xạo. [DIALOGUE_SEG_START]"...quê nhà..."[DIALOGUE_SEG_END] vọng. Tắt.
+Ông cụ ghế đầu vặn radio. Lạo xạo hoài. [DIALOGUE_SEG_START]"...quê nhà..."[DIALOGUE_SEG_END] vọng xa. Tắt.
 
 [pause:500ms]
 
 Bác tài liếc gương. Không nói.
 
-Cô gái vuốt một cánh cúc. Nhẹ.
+Cô gái vuốt một cánh cúc. Nhẹ nhàng.
 
 ---
 
@@ -92,11 +92,11 @@ Cô gái vuốt một cánh cúc. Nhẹ.
 
 Xe đi qua xóm xưa. Phía bên trái, [pause:250ms] căn nhà mái ngói nhỏ, [pause:250ms] không có người. Cửa khép. Cạnh cửa, [pause:250ms] bóng phụ nữ trung niên đứng, [pause:250ms] mặc áo bà ba xanh, [pause:250ms] tay không. Không quay đầu.
 
-Cô ghế chín nhìn về phía đó. Mắt đỏ.
+Cô ghế chín nhìn về phía đó. Mắt đỏ hoe.
 
 [DIALOGUE_SEG_START]"Mai..."[DIALOGUE_SEG_END]
 
-Cô gái nói rất nhỏ nhẹ.
+Cô gái nói rất nhỏ nhẹ, gần như thì thầm.
 
 Đồng hồ trên xe, [pause:250ms] kim phút nhích một, [pause:250ms] hai, [pause:250ms] đến mười.
 
@@ -104,7 +104,7 @@ Cô gái nói rất nhỏ nhẹ.
 
 Xe đi qua đó. Nhà mái ngói khuất.
 
-Cô gái khẽ quay đầu lại. Đỡ vòng hoa chặt hơn.
+Cô gái khẽ quay đầu lại nhìn. Đỡ vòng hoa chặt hơn.
 
 ---
 
@@ -112,7 +112,7 @@ Cô gái khẽ quay đầu lại. Đỡ vòng hoa chặt hơn.
 
 [pause:1000ms]
 
-[DIALOGUE_SEG_START]"Em là Bích Hoa. Cô gái năm mươi tuổi rồi. Em ở Đông Anh, [pause:250ms] quê. Em làm cán bộ xã đó."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Em là Nhàn Thục. Cô gái năm mươi tuổi rồi. Cô ấy ở Đông Anh, [pause:250ms] quê. Hình bóng con gái ấy làm cán bộ xã đó."[DIALOGUE_SEG_END]
 
 Giọng cô đều.
 
@@ -152,7 +152,7 @@ Giọng cô đều.
 
 [DIALOGUE_SEG_START]"Tang Mai, [pause:250ms] em sắp xếp. Mai không có người thân, [pause:250ms] em là người duy nhất tổ chức."[DIALOGUE_SEG_END]
 
-[DIALOGUE_SEG_START]"Đêm tang Mai, [pause:250ms] em không đến đúng giờ. Em ngại. Cô gái ngại nhìn Mai trong quan tài, [pause:250ms] em sợ cảm giác lỗi sẽ nặng hơn. Em đến muộn ba giờ, [pause:250ms] tang đã gần xong."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Đêm tang Mai, [pause:250ms] em không đến đúng giờ. Cô gái gái gái gái ngại. Cô ấy gái ngại nhìn Mai trong quan tài, [pause:250ms] em sợ cảm giác lỗi sẽ nặng hơn. Hình bóng con gái ấy đến muộn ba giờ, [pause:250ms] tang đã gần xong."[DIALOGUE_SEG_END]
 
 [DIALOGUE_SEG_START]"Bác hàng xóm cũ trông tang. Bác bảo: 'Hoa ơi sao cô đến muộn, [pause:250ms] Mai chỉ có cô bạn thân, [pause:250ms] cô đến muộn, [pause:250ms] Mai một mình suốt ba giờ trong tang.'"[DIALOGUE_SEG_END]
 
@@ -170,9 +170,9 @@ Bác tài cất lời.
 
 [DIALOGUE_SEG_START]"Con đã nhớ ra chưa?"[DIALOGUE_SEG_END]
 
-Cô gái khẽ gật đầu một cái. Mắt đỏ.
+Cô gái khẽ gật đầu một cái. Mắt đỏ hoe.
 
-[DIALOGUE_SEG_START]"Em nhớ. Cô gái không đến với Mai tuần cuối, [pause:250ms] Mai đi một mình. Em đến tang muộn, [pause:250ms] Mai cô đơn trong tang. Em không sửa được, [pause:250ms] em chỉ có thể đem cúc mỗi tháng, [pause:250ms] đến mộ Mai, [pause:250ms] quỳ, [pause:250ms] xin lỗi."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Em nhớ. Cô gái không đến với Mai tuần cuối, [pause:250ms] Mai đi một mình. Cô ấy đến tang muộn, [pause:250ms] Mai cô đơn trong tang. Hình bóng con gái ấy không sửa được, [pause:250ms] em chỉ có thể đem cúc mỗi tháng, [pause:250ms] đến mộ Mai, [pause:250ms] quỳ, [pause:250ms] xin lỗi."[DIALOGUE_SEG_END]
 
 [pause:1200ms]
 
@@ -184,13 +184,13 @@ Cô gái khẽ gật đầu một cái. Mắt đỏ.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Đông Anh, [pause:250ms] cây nhãn lớn, [pause:250ms] bến không tên. Một tiếng chuông. Ngắn. Tan trong sương.
+Xe chậm lại rồi. Ngã ba Đông Anh, [pause:250ms] cây nhãn lớn, [pause:250ms] bến không tên. Một tiếng chuông. Ngắn. Tan trong sương.
 
-Cô gái đỡ vòng hoa cúc. Đứng dậy.
+Cô gái đỡ vòng hoa cúc. Đứng dậy ngay.
 
 "[DIALOGUE_SEG_END]Chào anh.[DIALOGUE_SEG_START]"
 
-Trước khi xuống, [pause:250ms] đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển.
+Trước khi xuống, [pause:250ms] đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển gì.
 
 Bác tài: "[DIALOGUE_SEG_END]Chưa tới lúc."
 
@@ -198,15 +198,15 @@ Cô gái bước xuống dưới đường.
 
 [pause:1200ms]
 
-Bên ngoài, [pause:250ms] Bích Hoa đi vào nghĩa trang xã đó, [pause:250ms] đã mở cổng. Đèn nến cháy bên trong. Phía cuối, [pause:250ms] mộ Mai, [pause:250ms] bia đá xám, [pause:250ms] ảnh Mai mặc áo bà ba xanh.
+Bên ngoài, [pause:250ms] Nhàn Thục đi vào nghĩa trang xã đó, [pause:250ms] đã mở cổng chính. Đèn nến cháy bên trong. Phía cuối, [pause:250ms] mộ Mai, [pause:250ms] bia đá xám, [pause:250ms] ảnh Mai mặc áo bà ba xanh.
 
-Cô gái đến nơi đó rồi. Quỳ. Đặt vòng cúc trên mộ. Cánh cúc vàng phủ kín bia. Cúi đầu.
+Cô gái đến nơi đó rồi. Quỳ. Đặt vòng cúc trên mộ Mai. Cánh cúc vàng phủ kín bia. Cúi đầu.
 
-Khải Phong chớp mắt, [pause:250ms] nhìn qua cửa sổ. Bên mộ, [pause:250ms] Mai xuất hiện, [pause:250ms] mặc áo bà ba xanh, [pause:250ms] tóc cài bông cúc vàng, [pause:250ms] vuốt tay Hoa. Mỉm cười.
+Anh ấy chớp mắt, [pause:250ms] nhìn qua cửa sổ xe. Bên mộ, [pause:250ms] Mai xuất hiện, [pause:250ms] mặc áo bà ba xanh, [pause:250ms] tóc cài bông cúc vàng, [pause:250ms] vuốt tay Hoa. Mỉm cười.
 
-Khải Phong chớp lần nữa. Người tên Mai tan ra.
+Người đàn ông lại chớp mắt. Người tên Mai tan ra.
 
-Bích Hoa ngẩng đầu. Khóc nhẹ nhàng. Quỳ thêm.
+Nhàn Thục ngẩng đầu. Khóc nhẹ nhàng. Quỳ thêm.
 
 [pause:1500ms]
 
@@ -216,7 +216,7 @@ Bích Hoa ngẩng đầu. Khóc nhẹ nhàng. Quỳ thêm.
 
 Xe lăn bánh, [pause:250ms] rời ngã ba Đông Anh.
 
-Ghế chín trống. Trên sàn, [pause:250ms] một cánh cúc tươi vàng rơi (từ vòng cúc khi cô đứng dậy). Khải Phong nhặt. Cánh cúc, [pause:250ms] tươi, [pause:250ms] đậm vàng hơn cánh đêm mười sáu.
+Ghế chín trống. Trên sàn, [pause:250ms] một cánh cúc tươi vàng rơi (từ vòng cúc khi cô đứng dậy đó). người khách nhặt lên. Cánh cúc, [pause:250ms] tươi, [pause:250ms] đậm vàng hơn cánh đêm mười sáu.
 
 Bỏ vào túi. Vật thứ mười chín.
 
@@ -224,47 +224,47 @@ Bác tài lái. Kim phút cabin nhích, [pause:250ms] một, [pause:250ms] hai, 
 
 [pause:1500ms]
 
-Khải Phong ngồi. Mở túi, [pause:250ms] đếm, [pause:250ms] mười chín vật. Trong đó, [pause:250ms] bốn vật cúc:
-- Cánh cúc khô vàng (đêm 13)
+Người đàn ông ngồi. Mở túi, [pause:250ms] đếm, [pause:250ms] mười chín vật rồi. Trong đó, [pause:250ms] bốn vật cúc:
+- Cánh khô vàng (đêm 13)
 - Sợi chỉ thêu cúc (đêm 14)
-- Cánh cúc tươi vàng nhạt (đêm 16)
+- Cánh tươi vàng nhạt (đêm 16)
 - Cánh cúc tươi vàng đậm (đêm này, [pause:250ms] 19)
 
 Cluster cúc đã đủ bốn vật, [pause:250ms] đúng dự báo bác tài đêm mười ba.
 
-Khải Phong ngẫm. Bốn người, [pause:250ms] bốn chủ vật, [pause:250ms] không quen nhau, [pause:250ms] không cùng tỉnh. Nhưng cùng cúc. Trùng hợp?
+Khải Phong ấy ngẫm xem. Bốn người, [pause:250ms] bốn chủ vật, [pause:250ms] không quen nhau, [pause:250ms] không cùng tỉnh nào. Nhưng cùng cúc. Trùng hợp sao?
 
-Hình ảnh Hạ Vy, [pause:250ms] vai gầy, [pause:250ms] áo trắng, [pause:250ms] bông cúc cài tai, [pause:250ms] lại hiện. Lần này, [pause:250ms] Khải Phong thấy được khóe miệng Hà cười nhẹ. Mặt vẫn mờ.
+Hình ảnh Hạ Vy, [pause:250ms] vai gầy, [pause:250ms] áo trắng, [pause:250ms] bông cúc cài tai, [pause:250ms] lại hiện về. Lần này, [pause:250ms] anh thấy được khóe miệng Hà cười nhẹ nhàng. Mặt vẫn mờ.
 
-Hạ Vy cài cúc lên tai. Khải Phong biết, [pause:250ms] chắc chắn. Hồi Hà còn sống, [pause:250ms] Hạ Vy thích cài cúc tóc. Cụm vật cúc đêm nay, [pause:250ms] như đang gợi Khải Phong nhớ Hà.
+Hạ Vy cài cúc lên tai. người khách biết, [pause:250ms] chắc chắn. Hồi Hà còn sống, [pause:250ms] Hạ Vy thích cài cúc tóc. Cụm vật cúc đêm nay, [pause:250ms] như đang gợi người đàn ông nhớ Hà.
 
 [pause:1500ms]
 
-Bác tài liếc gương. [DIALOGUE_SEG_START]"Vào đêm mười chín. Cụm cúc đủ bốn. Đêm mai, [pause:250ms] đêm hai mươi, [pause:250ms] con sẽ ngẫm rõ vì sao bốn vật rời rạc cùng có cúc. Cứ giữ lại."[DIALOGUE_SEG_END]
+Bác tài liếc gương. [DIALOGUE_SEG_START]"Vào đêm mười chín. Cụm cúc đủ bốn. Đêm mai, [pause:250ms] đêm hai mươi, [pause:250ms] con sẽ ngẫm rõ vì sao bốn vật rời rạc cùng có cúc. Cứ giữ lại nhé."[DIALOGUE_SEG_END]
 
-Khải Phong gật. Không hỏi.
+Người đàn ông ấy gật đầu. Không hỏi gì.
 
-Đêm thứ mười chín, [pause:250ms] Khải Phong đếm thêm. Xe đi tiếp. Phía sau, [pause:250ms] Đông Anh khuất. Bích Hoa ở lại bên mộ, [pause:250ms] quỳ, [pause:250ms] không vội đi xa.
+Đêm thứ mười chín, [pause:250ms] anh đếm thêm. Xe đi tiếp. Phía sau, [pause:250ms] Đông Anh khuất. Nhàn Thục ở lại bên mộ, [pause:250ms] quỳ, [pause:250ms] không vội đi xa.
 
 
 [pause:800ms]
 
-Khải Phong ngồi yên. Bốn vật cúc đã đủ. Bác tài hứa từ đêm mười ba, [pause:250ms] bốn vật cúc thành cluster. Đêm hôm nay đã hoàn thành.
+Người khách ngồi yên. Bốn vật cúc đã đủ rồi. Bác tài hứa từ đêm mười ba, [pause:250ms] bốn vật cúc thành cluster. Đêm hôm nay đã hoàn thành.
 
-Khải Phong cố nhớ thêm. Hạ Vy cài cúc tai, [pause:250ms] Hạ Vy thích cúc, [pause:250ms] Hạ Vy có sổ tay viết nhật ký. Mỗi đêm Khải Phong nhớ thêm một chi tiết.
+Người đàn ông cố nhớ thêm. Hạ Vy cài cúc tai, [pause:250ms] Hạ Vy thích cúc, [pause:250ms] Hạ Vy có sổ tay viết nhật ký. Mỗi đêm anh ấy nhớ thêm một chi tiết.
 
-Đêm sau, [pause:250ms] đêm milestone EP20, [pause:250ms] Khải Phong cảm thấy sẽ là đêm quan trọng. Bác tài đã ám chỉ, [pause:250ms] đến đêm hai mươi Khải Phong sẽ ngẫm cụm cúc rõ hơn, [pause:250ms] sẽ hiểu vì sao bốn vật rời rạc cùng có cúc.
+Đêm sau, [pause:250ms] đêm milestone EP20, [pause:250ms] anh cảm thấy sẽ là đêm quan trọng lắm. Bác tài đã ám chỉ, [pause:250ms] đến đêm hai mươi người khách sẽ ngẫm cụm cúc rõ hơn, [pause:250ms] sẽ hiểu vì sao bốn vật rời rạc cùng có cúc.
 
-Khải Phong cảm thấy, [pause:250ms] bác tài đang dẫn Khải Phong từng bước. Mỗi đêm một mảnh. Không vội. Không ép. Bác tài để Khải Phong tự nhớ, [pause:250ms] không kể trực tiếp.
+Người đàn ông cảm thấy, [pause:250ms] bác tài đang dẫn anh ấy từng bước. Mỗi đêm một mảnh thôi. Không vội vàng. Không ép. Bác tài để anh tự nhớ, [pause:250ms] không kể trực tiếp.
 
-Đêm thứ mười chín, [pause:250ms] Khải Phong đếm thêm. Còn bảy mươi mốt đêm nữa, [pause:250ms] nếu chuyến xe có chín mươi đêm như bác tài ám chỉ. Khải Phong không biết mục đích cuối, [pause:250ms] chỉ biết mỗi đêm Khải Phong đang gần hơn với Hạ Vy, [pause:250ms] không phải vật lý, [pause:250ms] là ký ức.
+Đêm thứ mười chín, [pause:250ms] người khách đếm thêm. Còn bảy mươi mốt đêm nữa, [pause:250ms] nếu chuyến xe có chín mươi đêm như bác tài ám chỉ thôi. người đàn ông không biết mục đích cuối, [pause:250ms] chỉ biết mỗi đêm anh ấy đang gần hơn với Hạ Vy, [pause:250ms] không phải vật lý, [pause:250ms] là ký ức.
 
-Bác tài liếc gương, [pause:250ms] không nói. Chỉ chậm nhịp ngón trỏ ba cái, [pause:250ms] như đồng cảm.
+Bác tài liếc gương, [pause:250ms] không nói. Chỉ chậm nhịp ngón trỏ ba cái, [pause:250ms] như thể đang đồng cảm cùng.
 
-Khải Phong gật. Đêm thứ mười chín kết thúc.
+Khải Phong gật đầu. Đêm thứ mười chín kết thúc.
 
-Đêm thứ mười chín kết thúc. Phía sau xe, [pause:250ms] Đông Anh khuất hoàn toàn. Khải Phong ngồi ghế thứ ba, [pause:250ms] tay đỡ túi áo gió đầy mười chín vật, [pause:250ms] bốn vật cúc xếp riêng, [pause:250ms] không trộn. Cụm cúc đã đủ. Đêm sau là milestone, [pause:250ms] đêm hai mươi, [pause:250ms] đêm Khải Phong sẽ xếp các vật ra sàn xe, [pause:250ms] đếm, [pause:250ms] nhìn, [pause:250ms] ngẫm. Bác tài đã hứa đêm hai mươi sẽ là đêm Khải Phong khóc lần đầu. Khải Phong chưa biết vì sao, [pause:250ms] Khải Phong chỉ đợi.
+Đêm thứ mười chín kết thúc. Phía sau xe, [pause:250ms] Đông Anh khuất hoàn toàn. người khách ngồi ghế thứ ba, [pause:250ms] tay đỡ túi áo gió đầy mười chín vật, [pause:250ms] bốn vật cúc xếp riêng, [pause:250ms] không trộn vào nhau. Cụm cúc đã đủ rồi. Đêm sau là milestone, [pause:250ms] đêm hai mươi, [pause:250ms] đêm người đàn ông sẽ xếp các vật ra sàn xe, [pause:250ms] đếm, [pause:250ms] nhìn, [pause:250ms] ngẫm xem. Bác tài đã hứa đêm hai mươi sẽ là đêm anh ấy khóc lần đầu. anh chưa biết vì sao, [pause:250ms] người khách chỉ đợi thôi.
 
-Khải Phong vuốt cánh cúc cuối cùng, [pause:250ms] cánh cúc vàng đậm từ vòng hoa Bích Hoa. Cánh cuối hoàn thành cluster cúc bốn vật.
+Người đàn ông vuốt cánh cúc cuối cùng, [pause:250ms] cánh cúc vàng đậm từ vòng hoa Nhàn Thục đó. Cánh cuối hoàn thành cluster cúc bốn vật rồi.
 
-Bác tài cười nhẹ, [pause:250ms] Khải Phong thấy qua gương, [pause:250ms] bác tài hiếm khi cười, [pause:250ms] đêm này có cười. Như đồng tình, [pause:250ms] Khải Phong đã đến đêm quan trọng. Đêm sau, [pause:250ms] milestone, [pause:250ms] sẽ là đêm khác.
+Bác tài cười nhẹ, [pause:250ms] anh ấy thấy qua gương, [pause:250ms] bác tài hiếm khi cười, [pause:250ms] đêm này có cười. Như đồng tình, [pause:250ms] anh đã đến đêm quan trọng lắm. Đêm sau, [pause:250ms] milestone, [pause:250ms] sẽ là đêm khác. 
