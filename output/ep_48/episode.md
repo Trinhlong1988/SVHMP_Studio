@@ -24,7 +24,7 @@ Tập 48 — câu chuyện đêm nay.
 
 [pause:1500ms]
 
-Nội dung hư cấu; những nghi lễ trong truyện không có thật, chỉ nhằm mục đích kể chuyện.
+Nội dung hư cấu; những nghi lễ trong truyện không có thật, chỉ nhằm mục đích kể chuyện thôi.
 
 [pause:1200ms]
 
@@ -58,13 +58,13 @@ arc_design_compliant: bible/21 R33-R42
 
 Đêm thứ 48 trên chuyến xe — Khải Phong ngồi ghế thứ ba. Mưa tháng tư rỉ rả ngoài kính xe. Xe đi qua đoạn đường ven sông Hậu, Cần Thơ — hàng cây im bóng. Đèn pha quét lên hàng dừa nước.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi tám — anh đếm thêm. Trong túi áo gió người khách — bốn mươi bảy vật.
+Khải Phong ngồi ghế thứ ba. Đêm thứ bốn mươi tám — anh đếm thêm. Trong túi áo gió người khách — bốn mươi bảy vật rồi.
 
 Bác tài lái.
 
 Sông Hậu phía bên phải — mặt nước rộng — đèn xa từ chợ nổi Cái Răng.
 
-Xe chậm lại trước một tiệm âm nhạc xưa — biển "Tiệm đàn Sông Hậu" — cửa đã đóng — đèn vàng treo cột còn sáng yếu. Một người đàn ông đứng đợi bên cửa. Khoảng ba mươi tám tuổi. Áo sơ mi xanh — quần tây đen. Tay phải đeo dây vai cây đàn guitar gỗ mun — đàn nhỏ — đã có vết mòn.
+Xe chậm lại trước một tiệm âm nhạc xưa — biển "Tiệm đàn Sông Hậu" — cửa đã đóng — đèn vàng treo cột còn sáng yếu. Một người đàn ông đứng đợi bên cửa đó. Tuổi khoảng ba mươi tám. Áo sơ mi xanh — quần tây đen. Tay phải đeo dây vai cây đàn guitar gỗ mun — đàn nhỏ — đã có vết mòn.
 
 Người đàn ông lên xe. Đi xuống lối giữa — chân chậm — vai đeo đàn. Ngồi xuống ghế thứ chín.
 
@@ -84,7 +84,7 @@ Người đàn quan sát từ ghế ba. Anh ba lăm tám — tóc đã có sợi
 
 Đàn guitar trên đùi anh — anh ấy nhìn ra — đàn gỗ classic — không phải đàn electric — đàn xưa — có vài vết xước trên thân.
 
-Ông cụ ghế đầu vặn radio. Lạo xạo. "...quê nhà..." vọng — tắt.
+Ông cụ ghế đầu vặn radio. Lạo xạo hoài. "...quê nhà..." vọng — tắt.
 
 [pause:500ms]
 
@@ -106,7 +106,7 @@ Anh ghế chín nhìn về phía đó.
 
 "Phong..."
 
-Người đàn nói rất nhỏ.
+Người đàn nói rất nhỏ xíu.
 
 Đồng hồ trên xe — kim phút nhích một — hai — đến mười.
 
@@ -114,7 +114,7 @@ Người đàn nói rất nhỏ.
 
 Xe đi qua đó. Nhà gạch khuất.
 
-Người đàn quay đầu lại. Vuốt đàn.
+Người đàn quay đầu lại nhìn. Vuốt đàn.
 
 ---
 
@@ -172,7 +172,7 @@ Bác tài cất lời.
 
 "Con đã nhớ ra chưa?"
 
-Thiệt Lành gật.
+Thiệt Lành gật đầu.
 
 "Tôi nhớ. Em hứa em đàn mười lăm năm — em quên — cô gái đến muộn ba năm sau em phát hiện ung thư — em không kịp tặng em sống. Bóng cô gái mua đàn sau tang em — em đặt bàn em năm. Hình bóng con gái ấy trả đàn về tiệm — em đã đủ — em đã giữ lời hứa qua cách khác."
 
@@ -186,13 +186,13 @@ Thiệt Lành gật.
 
 [pause:800ms]
 
-Xe chậm lại. Ngã ba Cần Thơ — cây dừa nước — bến không tên. Chuông xe rung nhẹ. Vang một nhịp. Tan.
+Xe chậm lại rồi. Ngã ba Cần Thơ — cây dừa nước — bến không tên. Chuông xe rung nhẹ nhàng. Vang một nhịp xa. Tan.
 
-Thiệt Lành đeo đàn lên vai. Đứng dậy.
+Thiệt Lành đeo đàn lên vai. Đứng dậy ngay.
 
 "Chào anh."
 
-Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển.
+Trước khi xuống — đồng hồ cabin chỉ bảy giờ mười phút. Kim không di chuyển gì.
 
 Bác tài: "Chưa tới lúc."
 
@@ -200,11 +200,11 @@ Người đàn bước xuống dưới.
 
 [pause:1200ms]
 
-Bên ngoài — Thiệt Lành đi vào sân tiệm Sông Hậu. Đặt đàn trước cửa kính tiệm. Quỳ một lúc.
+Bên ngoài — Thiệt Lành đi vào sân tiệm Sông Hậu đó. Đặt đàn trước cửa kính tiệm đó. Quỳ một lúc.
 
-Anh chớp mắt — nhìn qua cửa sổ. Bên đàn — Phong xuất hiện — thanh niên hai mươi áo trắng — vuốt vai bạn Thiệt Lành. Mỉm cười.
+Anh chớp mắt — nhìn qua cửa sổ xe. Bên đàn — Phong xuất hiện — thanh niên hai mươi áo trắng — vuốt vai bạn Thiệt Lành. Mỉm cười.
 
-Người khách chớp lần nữa. Người tên Phong tan đi.
+Người khách lại chớp mắt. Người tên Phong tan đi.
 
 Thiệt Lành ngẩng đầu. Đi về.
 
@@ -216,7 +216,7 @@ Thiệt Lành ngẩng đầu. Đi về.
 
 Xe lăn bánh — rời ngã ba Cần Thơ.
 
-Ghế chín trống. Trên sàn — một dây đàn nhỏ rơi (bong khi anh vuốt). người đàn nhặt. Dây đàn — kim loại mảnh.
+Ghế chín trống. Trên sàn — một dây đàn nhỏ rơi (bong khi anh vuốt). người đàn nhặt lên. Dây đàn — kim loại mảnh ấy.
 
 Vật thứ bốn mươi tám.
 
@@ -224,7 +224,7 @@ Bác tài lái. Kim phút cabin nhích — một — hai — đến mười.
 
 [pause:1500ms]
 
-Người đàn ông ấy ngồi. Thiệt Lành giữ lời hứa đàn mười lăm năm muộn — qua tiệm. Lời hứa giữ qua cách khác — không cần đúng cách ban đầu.
+Người đàn ông ấy ngồi. Thiệt Lành giữ lời hứa đàn mười lăm năm muộn — qua tiệm đàn. Lời hứa giữ qua cách khác — không cần đúng cách ban đầu.
 
 Khải Phong nhói. Anh không thể đi Hàn Quốc với Hạ Vy. Nhưng anh có thể giữ lời hứa qua cách khác.
 
@@ -234,19 +234,19 @@ Em có thể đi Hàn một mình — đem ảnh — chụp ảnh — đem về 
 
 Hoặc em có thể đem nhẫn bạc Hạ Vy sang Hàn — đeo trên ngón út — đi qua đường có lá đỏ — chụp ảnh nhẫn dưới lá đỏ — đem ảnh về đặt bàn Hạ Vy ở quê em.
 
-Người khách quyết — anh sẽ đi Hàn một mình mùa thu năm sau — sau khi anh dự cưới Hạ Nhi. Anh sẽ giữ lời hứa muộn qua cách anh có thể.
+Người khách quyết — anh sẽ đi Hàn một mình mùa thu năm sau — sau khi anh dự cưới Hạ Nhi. Anh sẽ giữ lời hứa muộn qua cách anh có thể làm.
 
-Em không phải Thiệt Lành — em không có tiệm sinh ra lời hứa. Em có nhẫn — em có ngày — em sẽ tự tạo nghi lễ hội.
+Em không phải Thiệt Lành — em không có tiệm sinh ra lời hứa. Em có nhẫn — em có ngày — em sẽ tự tạo nghi lễ hội riêng.
 
-Bác tài liếc gương. "Vào đêm bốn mươi tám. Con đã quyết. Đêm sau con sẽ chuẩn bị tinh thần — đêm năm mươi sẽ là milestone S1 finale. Cứ chuẩn bị."
+Bác tài liếc gương. "Vào đêm bốn mươi tám. Con đã quyết. Đêm sau con sẽ chuẩn bị tinh thần — đêm năm mươi sẽ là milestone S1 finale. Cứ chuẩn bị đi."
 
-Người đàn gật. Lệ rơi nhẹ nhàng.
+Người đàn gật đầu. Lệ rơi nhẹ nhàng.
 
-Đêm thứ bốn mươi tám — anh ấy đếm thêm. Xe đi tiếp. Phía sau — Cần Thơ khuất. Thiệt Lành ở lại tiệm — đàn trước cửa.
+Đêm thứ bốn mươi tám — anh ấy đếm thêm. Xe đi tiếp. Phía sau — Cần Thơ khuất. Thiệt Lành ở lại tiệm — đàn trước cửa đó.
 
-Anh ngẫm thêm — anh sẽ chuẩn đi Hàn trước cưới Hạ Nhi. Người đàn sẽ đặt vé bay sau dự cưới anh xong — người đàn ông sẽ bay từ Sài Gòn về Hà Nội — sau đó từ Hà Nội bay Hàn Quốc mùa thu. Hình bóng con gái ấy sẽ đem theo nhẫn bạc cô ấy — đeo ngón út — chụp ảnh dưới lá đỏ. Bóng người đàn ông đem ảnh về quê anh ở Vĩnh Phúc — đặt trên bàn anh không có (anh chưa lập bàn người yêu cũ ở quê anh — anh chỉ có bàn thờ anh ở cô gái ấy). Bóng anh lập bàn thờ cô ấy ở — anh đặt ảnh Hàn Quốc lên đó. Đêm thứ bốn mươi tám kết thúc — quyết tâm rõ hơn.
+Anh ngẫm thêm — anh sẽ chuẩn đi Hàn trước cưới Hạ Nhi. Người đàn sẽ đặt vé bay sau dự cưới anh xong — người đàn ông sẽ bay từ Sài Gòn về Hà Nội — sau đó từ Hà Nội bay Hàn Quốc mùa thu. Hình bóng con gái ấy sẽ đem theo nhẫn bạc cô ấy — đeo ngón út — chụp ảnh dưới lá đỏ kia. Bóng người đàn ông đem ảnh về quê anh ở Vĩnh Phúc — đặt trên bàn anh không có (anh chưa lập bàn người yêu cũ ở quê anh — anh chỉ có bàn thờ anh ở cô gái ấy). Bóng anh lập bàn thờ cô ấy ở — anh đặt ảnh Hàn Quốc lên đó. Đêm thứ bốn mươi tám kết thúc — quyết tâm rõ hơn.
 
-Người khách ngồi đêm tháng tư. Người ấy đã quyết — anh đi Hàn Quốc một mình sau dự cưới Hạ Nhi. Hình bóng đàn đặt vé sang năm — anh chuẩn nhẫn anh — anh sẽ chuẩn bị máy ảnh. Người khách sẽ làm như Thiệt Lành đêm này — giữ lời hứa muộn qua cách anh có. Người ngồi đó không phải người đàn ông yêu ai mới — anh là anh ấy giữ lời hứa người yêu cũ qua cách khác. Đêm bốn mươi tám kết thúc — anh quyết tâm chuẩn bị.
+Người khách ngồi đêm tháng tư. Người ấy đã quyết — anh đi Hàn Quốc một mình sau dự cưới Hạ Nhi. Hình bóng đàn đặt vé sang năm — anh chuẩn nhẫn anh — anh sẽ chuẩn bị máy ảnh đó. Người khách sẽ làm như Thiệt Lành đêm này — giữ lời hứa muộn qua cách anh có. Người ngồi đó không phải người đàn ông yêu ai mới — anh là anh ấy giữ lời hứa người yêu cũ qua cách khác. Đêm bốn mươi tám kết thúc — anh quyết tâm chuẩn bị trước.
 
 Người khách nhìn dây đàn nhỏ trong túi — vật thứ bốn mươi tám. Anh sẽ cất riêng — cùng nhẫn — cùng thiệp cưới Hạ Nhi sẽ đến đêm mai. Bốn mươi tám vật — đêm sau là bốn mươi chín — đêm sau nữa là milestone năm mươi.
 
