@@ -381,6 +381,29 @@ Registry 0/0/0 sau mỗi sửa. Domain LOCKED chạm: g6b_story_planner (DEBT-01
   quyết Giai đoạn 2** (waiver 50 tập cũ hay bắt buộc regen, có nên phủ luôn `render_
   chunk.py`/`render_section.py` không — 2 script này KHÔNG phải entrypoint chính theo
   `bp8/render_chain.yaml`, chưa được wire ở Giai đoạn 1).
+- **49 TẬP EP02-50 ĐÃ SỬA XONG R86 (12/7, CMD_BUILD):** thực thi đúng
+  `prompts/TASK_DEBT018_R86_FIX_49EP.md` — mỗi tập: sửa câu kết mang dấu NGA/NANG/HOI bằng
+  đổi từ/thêm từ/đảo câu (KHÔNG đổi fact/plot/tên riêng/địa danh — verify từng từ thay thế
+  qua `check_word_eol()` trước khi áp dụng), đồng bộ `episode_tts_ready.md` qua
+  `tts_adapter_pre_render.py --apply`, xác nhận `post_render_gate.py` 11/11 PASS mỗi tập.
+  **Quét lại toàn bộ 49 tập (`qa_eol_diacritic.py` từng tập, ep_02→ep_50) xác nhận 0/49 còn
+  vi phạm R86** (script batch check, không chỉ trích dẫn con số cũ — R215 reproducibility).
+  Tổng ~1500+ vi phạm đã sửa qua 49 commit (mỗi 2-4 tập một commit, push nền song song).
+  Phát hiện + sửa 1 bug phụ trong lúc làm: `qa_eol_diacritic.py::scan()` thiếu marker
+  `"# CONSTITUTION CHECK"` trong danh sách cutoff → quét nhầm checklist thành vi phạm giả ở
+  EP02/03/05/10 (đã fix commit `e52c01a` + 2 test mutation-proof trong
+  `tests/test_full_text_gate_r86_broad.py`).
+  **Đã chạy lại `scratchpad/debt018_batch_preflight.py` (12/7) — xác nhận `R86 EOL
+  violations: 0` cho CẢ 50/50 tập** (EP01 golden + EP02-50 vừa sửa), đọc trực tiếp từ
+  kết quả JSON (`scratchpad/debt018_batch_preflight_results.json`), không trích số cũ.
+  **LƯU Ý QUAN TRỌNG:** `would_block_phase2` vẫn `True` cho nhiều tập — nhưng nguyên nhân
+  KHÔNG còn là R86 (đã sạch) mà là các rule KHÁC (R1 short-fragment, R5, R10, R17 —
+  đúng loại issue đã ghi nhận sẵn cho EP01 ở Giai đoạn 1 gốc, 22 issue ngoài R86). Các
+  rule này NGOÀI phạm vi task R86 hiện tại (`TASK_DEBT018_R86_FIX_49EP.md` chỉ giao sửa
+  R86) — không tự ý sửa thêm. Cần Mr.Long quyết: (a) coi R86-only là đủ điều kiện bật
+  Giai đoạn 2 cho R86 riêng (tách khỏi R1/R5/R10/R17), hay (b) chờ xử lý cả nhóm rule
+  khác trước khi bật Giai đoạn 2 chung. KHÔNG tự ý bật Giai đoạn 2 (CHẶN THẬT) — đây là
+  quyết định của Mr.Long, không phải CMD_BUILD tự quyết theo R1/R_SUPREME.
 
 ## DEBT-019: security latent — `dialogue_generator.write_episode_line()` non-numeric `ep_n` chưa sanitize (gap #18) — **CLOSED (ghi nhận, không hành động)**
 - 3 entrypoint chính (svhmp_v13_render/episode_generator/dialogue_generator) đều SẠCH với input trusted-operator + int-validate. Latent: `write_episode_line()` với `ep_n` non-numeric làm `Path(root)/f'ep_{str(ep_n)}'` — nếu `ep_n` chứa `../` sẽ traverse. KHÔNG reachable từ input untrusted (chỉ test/sandbox truyền literal), đã có guard production-overwrite.
