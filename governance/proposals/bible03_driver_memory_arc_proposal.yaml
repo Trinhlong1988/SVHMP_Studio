@@ -1,0 +1,313 @@
+# ============================================================
+# DE XUAT — cap nhat bible/03_character_bible.yaml (CHAR_DRIVER speech_lines/
+# max_dialog_per_ep) de cong nhan chinh thuc "mach hoi uc Khai Phong" (EP11-50,
+# quang_memory_fragment M3->M10) - theo TASK_DEBT030_BIBLE03_MEMORY_ARC_DOC.md
+# (governance/TECH_DEBT.md DEBT-030 vong quyet dinh 3, Mr.Long xac nhan
+# huong 12/7, commit a5ddb88).
+#
+# Nguon can cu (doc truc tiep, KHONG bia - R195):
+#   - grep -rln "quang_memory_fragment" output/ep_*/episode.md = DUNG 40 file,
+#     output/ep_11/episode.md .. output/ep_50/episode.md (KHONG phai EP07-50
+#     nhu mo ta so bo ban dau trong task doc - da tu kiem lai, EP07-10 KHONG
+#     co tag nay, xem muc "lien quan EP07-10" ben duoi).
+#   - Toan bo frontmatter (quang_memory_fragment/callback_target/object_sub_arc/
+#     milestone_special) cua ca 40 file tren, doc truc tiep.
+#   - Toan bo doan CLIFFHANGER (+ HOOK cho cau "thu ba") cua ca 40 file tren,
+#     grep "bac tai|Bac tai|cat loi|cau thu ba" + doc thu cong doi chieu.
+#   - bible/21_series_arc_design.yaml (TOAN VAN, 273 dong) - da PROPOSAL tu
+#     27/6/2026, chua duoc APPROVE/LOCK - chua ban do M1-M18 cho DU 90 EP,
+#     khop gan nhu tuyet doi voi noi dung 40 EP thuc te da viet.
+#   - bible/00_constitution.yaml R35/R36/R37/R38/R39 (dong 281-296),
+#     R42_driver_foreshadow_line_allowed_cliffhanger (dong 1026-1041),
+#     R55_driver_R42_strict_enforce (dong 885-890), changelog round 7 (dong
+#     1509-1514) - CA HAI rule nay da duoc Mr.Long duyet tu 27/6/2026.
+#   - bible/18_driver_reveal_budget.yaml dong 106-134 (ep_73/ep_90 exception
+#     goc, weight_10_major).
+#   - tools/audit_hidden_bugs.py dong 104-122 (enforcer that da doi chieu R42/
+#     R55 - xem muc "lien quan DEBT-032" ben duoi).
+#   - governance/TECH_DEBT.md DEBT-030 (dong 499-514), DEBT-031 (518-544),
+#     DEBT-032 (548-554), DEBT-033 (558+).
+#   - governance/proposals/story_plan_schema_proposal.yaml (mau cau truc/van
+#     phong proposal - CHI hoc format, khong copy noi dung).
+#
+# CHUA phai file chinh thuc - proposal_status DRAFT, cho Mr.Long xac nhan
+# tuong minh NOI DUNG proposal nay (khac voi xac nhan HUONG lam da co truoc -
+# xem task doc dong 34-37). CMD_BUILD KHONG duoc tu merge vao bible/03 khi
+# decision con PENDING (R7 Read->Diff->Proposal->Approval->...).
+# ============================================================
+
+version: 1.0
+proposal_status: DRAFT_PENDING_MR_LONG
+writer_of_record: cmd_build
+mr_long_decision: PENDING
+decision_date: null
+
+# ------------------------------------------------------------
+# PHAT HIEN QUAN TRONG NHAT (doc truoc khi xem bang) — bible/03 KHONG can
+# viet lai tu dau. Co san 2 nguon tham chieu da duyet/da ton tai truoc DEBT-030:
+#   (1) bible/21_series_arc_design.yaml — ban ke hoach M1-M18 cho DU 90 EP,
+#       viet tu 27/6/2026, van con status: PROPOSAL (CHUA bao gio duoc Mr.Long
+#       bam APPROVE/LOCK chinh thuc, du 40/90 EP da duoc viet theo dung ban
+#       ke hoach nay).
+#   (2) bible/00_constitution.yaml da co san R42 (rule cho phep bac tai noi
+#       "cau thu 3" trong CLIFFHANGER neu la foreshadow memory progression
+#       theo R35) - Mr.Long DA duyet rule nay tu 27/6/2026 (round 7), CHINH VI
+#       phat hien "35 EPs co driver line 3" luc do — nghia la hien tuong
+#       DEBT-030 moi "phat hien" lai (12/7) thuc ra DA duoc xu ly 1 lan truoc,
+#       CHI la bible/03 (lock_date 19/6 — TRUOC ca R42/bible/21 ton tai)
+#       chua bao gio duoc cap nhat de tro sang 2 nguon nay.
+# => Goc van de thuc su: bible/03 la TAI LIEU CU (19/6) khong dong bo voi
+#    bible/00 + bible/21 (ca hai deu 27/6+) — KHONG phai loi noi dung episode.
+# ------------------------------------------------------------
+
+ten_mach_de_xuat:
+  proposed_name: "Mach hoi uc Khai Phong (quang_memory_arc)"
+  note: "Ten ky thuat da dung san trong bible/21: 'quang_memory_arc'. Ten hien
+    thi de xuat 'Mach hoi uc Khai Phong' — Mr.Long chot ten chinh thuc."
+  nhan_vat_chinh: "Khai Phong (hanh khach ngoi ghe thu ba, tu EP01 - CANH BAO
+    rieng, xem muc 'phat hien phu' ben duoi - day la 1 nhan vat recurring
+    CHUA duoc bible/03 cong nhan)"
+  nguoi_duoc_nho: "Ha Vy (nguoi yeu cu da mat cua Khai Phong)"
+
+# ------------------------------------------------------------
+# BUOC 1 — BANG DAY DU CAU TRUC ARC THAT (40/40 tap co tag quang_memory_fragment)
+# Cot "extra_line_HOOK": co/khong xuat hien "cau thu ba" O DAU tap (truoc khi
+# don khach, trong section HOOK) - PHAN BIET voi doan CLIFFHANGER cuoi tap
+# (doan do LUON co o CA 40 tap, xem "co_che_phat_hien" ben duoi).
+# ------------------------------------------------------------
+
+bang_arc_40_tap:
+  - {ep: 11, m_level: M3,  peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "Khai Phong nghe ten Ha Vy vong lan dau"}
+  - {ep: 12, m_level: M3,  peak: false, milestone: false, callback_target: "ep_01 (object_echo dong ho xa cu)", extra_line_HOOK: true,  fragment: "Khai Phong ngam ten Ha Vy sau hon qua callback EP01", ghi_chu: "BAT THUONG - la tap DUY NHAT co extra_line_HOOK ma KHONG phai PEAK cuoi khoi M-level. La lan dau tien co che 'cau thu ba' duoc dung trong toan mach (frontmatter tu ghi ro 'driver extra line')."}
+  - {ep: 13, m_level: M3,  peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "bat dau lien he ten Ha Vy voi hoa cuc"}
+  - {ep: 14, m_level: M3,  peak: false, milestone: false, callback_target: "ep_13 (object_echo hoa cuc)", extra_line_HOOK: false, fragment: "ngam ten Ha Vy + cuc tai", ghi_chu: "co callback_target NHUNG KHONG co extra_line_HOOK - chung minh callback_target rieng KHONG phai dieu kien du cho cau thu ba."}
+  - {ep: 15, m_level: M3,  peak: true,  milestone: false, callback_target: "ep_11 (driver mention)", extra_line_HOOK: true,  fragment: "PEAK M3 - ket luan Ha Vy khong tu y"}
+  - {ep: 16, m_level: M4,  peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "nho Ha Vy mat - cam giac mat ro hon"}
+  - {ep: 17, m_level: M4,  peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "ngam tai nan - dem mua - con duong"}
+  - {ep: 18, m_level: M4,  peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "ngam cuoc goi truoc dem tai nan"}
+  - {ep: 19, m_level: M4,  peak: false, milestone: false, callback_target: "ep_14 (object_echo hoa cuc)", extra_line_HOOK: false, fragment: "ngam so tay Ha Vy - chu tron nho", ghi_chu: "callback_target co nhung khong extra_line_HOOK (giong EP14)."}
+  - {ep: 20, m_level: M4,  peak: true,  milestone: true,  callback_target: "ep_08 + ep_14", extra_line_HOOK: true,  fragment: "PEAK M4 + MILESTONE - Khai Phong khoc lan dau"}
+  - {ep: 21, m_level: M5,  peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "nho pho Kham Thien"}
+  - {ep: 22, m_level: M5,  peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "nho phong tro + ban nu doi dien"}
+  - {ep: 23, m_level: M5,  peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "nho to tinh Ha Vy nam 3"}
+  - {ep: 24, m_level: M5,  peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "nho chi tiet phong tro chung + viec lam Ha Vy"}
+  - {ep: 25, m_level: M5,  peak: true,  milestone: false, callback_target: "ep_15 (object_echo)", extra_line_HOOK: true,  fragment: "PEAK M5 - nho 3 cuoc goi dem Ha Vy khong bat"}
+  - {ep: 26, m_level: M6,  peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "nho bo cung KTS - cam thuoc T"}
+  - {ep: 27, m_level: M6,  peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "nho ban cung nhom do an"}
+  - {ep: 28, m_level: M6,  peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "nho Ha Vy noi chuyen cuoi chieu hom cuoi"}
+  - {ep: 29, m_level: M6,  peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "nho phong tro sau Ha Vy mat - khong don"}
+  - {ep: 30, m_level: M6,  peak: true,  milestone: true,  callback_target: "ep_07 (setting_revisit)", extra_line_HOOK: true,  fragment: "PEAK M6 + MILESTONE - passenger goi dung ten Khai Phong lan dau"}
+  - {ep: 31, m_level: M7,  peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "nho thang tu - Ha Vy mat 12/4", ghi_chu: "van ban TU KHANG DINH 'khong cau thu ba' - xem co_che_phat_hien."}
+  - {ep: 32, m_level: M7,  peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "nho benh vien Bach Mai - phong cap cuu"}
+  - {ep: 33, m_level: M7,  peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "nho tang Ha Vy o que - khong Ha Noi"}
+  - {ep: 34, m_level: M7,  peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "nho que Ha Vy - Hai Phong Vinh Bao"}
+  - {ep: 35, m_level: M7,  peak: true,  milestone: false, callback_target: "ep_25 (object_echo)", extra_line_HOOK: true,  fragment: "PEAK M7 - tinh day khong phai giac ngu thuong"}
+  - {ep: 36, m_level: M8,  peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "nho co ai ben Ha Vy dem em di"}
+  - {ep: 37, m_level: M8,  peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "nho anh thanh nien goi cap cuu - ten gi"}
+  - {ep: 38, m_level: M8,  peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "nho ten anh thanh nien - Hai"}
+  - {ep: 39, m_level: M8,  peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "nho anh Hai la KTS - quen Ha Vy qua nghe"}
+  - {ep: 40, m_level: M8,  peak: true,  milestone: true,  callback_target: "ep_30 (passenger_recognition)", extra_line_HOOK: true,  fragment: "PEAK M8 + MILESTONE (half-series) - nghi anh Hai co the yeu tham Ha Vy"}
+  - {ep: 41, m_level: M9,  peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "nho tin nhan cuoi Ha Vy - 3 tu"}
+  - {ep: 42, m_level: M9,  peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "nho dien thoai Ha Vy benh vien tra ve"}
+  - {ep: 43, m_level: M9,  peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "nho dien thoai da tra bo me Ha Vy"}
+  - {ep: 44, m_level: M9,  peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "nho bo me Ha Vy da khong lien lac"}
+  - {ep: 45, m_level: M9,  peak: true,  milestone: false, callback_target: "ep_35 (xe dung 2 stop)", extra_line_HOOK: true,  fragment: "PEAK M9 - Ha Nhi (em gai Ha Vy) nhan tin"}
+  - {ep: 46, m_level: M10, peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "nho minh hua voi Ha Vy dieu gi"}
+  - {ep: 47, m_level: M10, peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "nho ve may bay Han Quoc da dat san"}
+  - {ep: 48, m_level: M10, peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "nho loi hua Han Quoc - quyet tam giu qua cach khac"}
+  - {ep: 49, m_level: M10, peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "nho em da do ai do tren duong mua"}
+  - {ep: 50, m_level: M10, peak: true,  milestone: true,  callback_target: "meta (nhin xuyen 50 ghe trong)", extra_line_HOOK: true,  fragment: "PEAK M10 + MILESTONE S1 FINALE - Ha Nhi xuat hien tren xe"}
+
+doi_chieu_2_moc_da_biet_ep73_ep90:
+  trang_thai_file: "output/ep_73/ va output/ep_90/ HIEN CHI co moment_map_template.yaml - CHUA co episode.md (episode CHUA duoc viet). Khong the doc CLIFFHANGER that cua 2 tap nay - moi doi chieu duoi day chi dua tren bible/18 + bible/21 (2 file ke hoach), KHONG phai noi dung da viet."
+  ep_73:
+    bang_chung: "bible/21_series_arc_design.yaml dong 94-98 (M15, eps 71-75): note ghi ro 'EP73 = driver reveal budget peak - driver co the noi cau thu 3 (bible/18)'. bible/18_driver_reveal_budget.yaml dong 106-116 xac nhan ep_73 la moc weight_10_major, cau 'Toi roi day, Nam.' nam trong 'ALL MAJOR REVEALS'."
+    ket_luan: "ep_73 KHONG phai ngoai le doc lap - da duoc bible/21 dat vao DUNG vi tri tu nhien cua mach lon hon (cuoi M15, giai doan driver duoc phep noi nhieu hon theo bible/18 budget_curve). Tuy nhien LUU Y: bible/18 dung ten 'Nam' (Toi roi day, Nam.) trong khi toan bo 40 tap da viet dung ten 'Khai Phong' - xem canh bao rieng o muc 'phat hien phu ve ten nhan vat' ben duoi, day la 1 diem CHUA khop can Mr.Long lam ro truoc khi field-hoa bat ky dieu gi lien quan ep_73."
+  ep_90:
+    bang_chung: "bible/21 dong 109-114 (M18, eps 86-90): milestone_ep 90, fragment 'Khai Phong nho ra Chua toi luc nghia la gi', milestone_special 'Khai Phong xuong xe - Ha Vy dung doi o stop'. bible/18 dong 129-134: cau 'Den luc toi cung nho ra roi.' la final reveal."
+    ket_luan: "Phu hop voi vi tri PEAK+MILESTONE cuoi cung (M18) trong cung 1 mach - GIONG cau truc cac PEAK+MILESTONE da xac nhan (EP20/30/40/50) trong bang tren. KHONG co du lieu da viet de xac nhan tuyet doi (episode chua ton tai) - day la SUY LUAN tu ke hoach bible/21+bible/18, KHONG phai bang chung episode that (can ghi ro trong bible/03 moi neu duoc duyet: 'suy ra tu ke hoach, cho xac nhan khi EP90 duoc viet')."
+
+# ------------------------------------------------------------
+# CO CHE THOAI BAC TAI - MO TA DUNG THEO DU LIEU DOC DUOC (KHONG suy doan
+# cong thuc chua co bang chung)
+# ------------------------------------------------------------
+
+co_che_phat_hien:
+  baseline_moi_tap_co_tag_40_40:
+    mo_ta: "Trong TAT CA 40/40 tap co quang_memory_fragment (EP11-50), co DUNG 3
+      lan thoai bac tai duoc trich dan (quote), theo dung thu tu:"
+    beat_1:
+      vi_tri: "dau tap (HOOK/SETUP, truoc khi hanh khach ke chuyen)"
+      noi_dung: "'Con da nho ra chua?' - CAU CO DINH, dung tu bible/03
+        speech_lines hien tai, xuat hien trong CA 49/49 tap EP01-49 kiem tra
+        duoc (khong rieng 40 tap co tag)."
+    beat_2:
+      vi_tri: "PAYOFF (hanh khach xuong xe)"
+      noi_dung: "'Chua toi luc.' - CAU CO DINH, dung tu bible/03 speech_lines
+        hien tai, xuat hien trong CA 40/40 tap co tag (va truoc do)."
+    beat_3:
+      vi_tri: "CLIFFHANGER (section 6, sau khi hanh khach da xuong)"
+      noi_dung: "Doan doc thoai LEO THANG - VI DU EP11: 'Vao dem muoi mot. Con
+        bat dau nho mot ten, con a. Mot ten - se tro lai nhieu dem sau. Cu
+        giu lay. Dung voi.' — NOI DUNG DUY NHAT MOI TAP, KHONG phai 1 trong 2
+        cau chuan co dinh. Day chinh la co che ma bible/00 R42 (dong 1026-1041)
+        da CHINH THUC cho phep tu 27/6/2026 ('Driver CHO PHEP noi cau thu 3
+        trong CLIFFHANGER neu la foreshadow memory progression R35') - format
+        chuan R42 khai ('Bac tai liec guong. Dem thu N. ... Dung voi.') KHOP
+        DUNG 100% voi mau cau thuc te doc duoc o ca 40 tap."
+    ket_luan_baseline: "Beat 3 (doc thoai leo thang CLIFFHANGER) DA duoc bible/00
+      R42/R55 cong nhan hop le tu truoc DEBT-030 - bible/03 (lock 19/6, truoc
+      R42) chi don gian CHUA duoc cap nhat de tro sang R42. Day KHONG phai
+      phat hien moi can 1 rule moi - la 1 CHO SUA DONG BO tai lieu."
+  extra_beat_HOOK_9_tap:
+    danh_sach_tap: [12, 15, 20, 25, 30, 35, 40, 45, 50]
+    vi_tri: "HOOK (section 1) - TRUOC khi xe don khach, KHONG phai trong
+      CLIFFHANGER (section 6) va KHONG phai trong REVEAL (section 4)."
+    bang_chung_tu_nhan_trong_van_ban:
+      - "EP15 dong 61: '... bac tai cat loi. Mot cau - cau thu ba khong nam
+        trong hai cau nhu moi khi.'"
+      - "EP25 dong 69: 'Cau thu ba bac tai - khong thuong - chi o dem co
+        callback.'"
+      - "EP31 dong 65 (episode KHONG thuoc danh sach 9 tap): 'Lieic guong -
+        binh thuong - khong cau thu ba.' (doi chung am - xac nhan cau thu ba
+        la ngoai le, khong phai mac dinh)"
+      - "EP40 dong 68: 'Cau thu ba - milestone - khong nam trong hai cau
+        chuan dau.'"
+    tuong_quan_da_kiem: "9/9 tap co extra_line_HOOK = 9/9 tap co callback_target
+      != none. NHUNG chieu nguoc lai SAI: EP14 va EP19 CUNG co callback_target
+      (ep_13 va ep_14) nhung KHONG co extra_line_HOOK - nen 'callback_target
+      duoc gan' KHONG PHAI dieu kien du. 8/9 tap (tru EP12) la dung PEAK cuoi
+      cung cua 1 khoi M-level (EP15/20/25/30/35/40/45/50) - EP12 la ngoai le
+      DUY NHAT (khong phai PEAK, la lan dau tien co che nay xuat hien trong
+      toan mach, tu nhan 'driver extra line' o frontmatter)."
+    KHONG_CO_CONG_THUC_DONG_KIN: "R195 - KHONG suy doan quy tac chinh xac tu
+      9 diem du lieu voi 1 ngoai le. De xuat mo ta o day la QUAN SAT (PEAK
+      thuong co extra_line_HOOK, +1 ngoai le EP12), KHONG phai cong thuc da
+      chung minh - can Mr.Long xac nhan cong thuc that (co the la 'PEAK
+      OR callback_target co ghi ro driver extra line trong plan goc', hoac
+      khac) truoc khi field-hoa thanh enforcer."
+    doi_chieu_R42: "R42 hien chi khai 2 allowed_format: (a) 'Bac tai liec
+      guong ... trong CLIFFHANGER' (khop beat_3 baseline) va (b) 'Bac tai cat
+      loi ... trong REVEAL section (passenger trigger)'. Extra_beat_HOOK O
+      DAY nam trong HOOK (section 1), KHONG phai CLIFFHANGER, KHONG phai
+      REVEAL - CHUA duoc R42 mo ta ro. Day la KHOANG TRONG THAT can Mr.Long
+      quyet: mo rong R42 them 1 allowed_format thu 3 (HOOK, dieu kien =
+      PEAK-of-M-block hoac EP dau mach), hay coi la loai clue khac."
+
+lien_quan_DEBT_032:
+  ghi_nhan: "DEBT-032 (TECH_DEBT.md dong 548-554) ket luan '0 enforcer nao doi
+    chieu noi dung episode that voi bible/03' dua tren
+    grep -rln 'pillar_distance|family_regret_max_per_10_ep|max_dialog_per_ep|
+    speech_lines' tools/*.py = 0 ket qua. Khi doc truc tiep
+    tools/audit_hidden_bugs.py dong 104-122, CO enforcer that doi chieu R42/
+    R55 (bien driver_quotes/extras/standard/non_ms_extra, in canh bao '🟡 N EPs
+    co >1 extra driver quote (R55)') - CHI la enforcer nay KHONG dung dung ten
+    bien 'max_dialog_per_ep'/'speech_lines' nen lot qua grep cua DEBT-032."
+  y_nghia: "Phan nua 'driver dialogue' cua DEBT-032 co the da duoc xu ly mot
+    phan (chi thieu extra_beat_HOOK 9-tap o tren, ma R42/audit_hidden_bugs.py
+    hien khong biet ve loai nay). Phan 'regret pillar distance' cua DEBT-032
+    KHONG kiem lai trong task nay (ngoai pham vi TASK_DEBT030_BIBLE03_MEMORY_
+    ARC_DOC.md) - can task rieng doi chieu neu Mr.Long muon xac nhan lai toan
+    bo DEBT-032."
+
+# ------------------------------------------------------------
+# PHAT HIEN PHU (ngoai pham vi true cua task nay nhung qua trong de bo qua -
+# BAO CAO, KHONG tu quyet)
+# ------------------------------------------------------------
+
+phat_hien_phu_ve_ten_nhan_vat:
+  van_de: "bible/03_character_bible.yaml dong 100 khai 'no_other_recurring_
+    characters: true' va chi liet ke CHAR_DRIVER + CHAR_NAM (nhan vat POV ten
+    'Nam', len xe lan dau EP30 ghe 7, reveal EP73 la hanh khach 73 - dong
+    59-98). NHUNG toan bo 40 tap da doc (+ kiem lai EP01-10) cho thay nhan vat
+    POV thuc te la 'Khai Phong', da ngoi GHE THU BA tu EP01 (khong phai EP30
+    ghe 7) - vd EP11 dong 57: 'Khai Phong ngoi ghe thu ba - cho xua - cho Khai
+    Phong da ngoi muoi dem truoc.' EP35 dong 257: 'Khai Phong tinh day tren xe
+    dem nay - ghe thu ba'."
+  bang_chung_them: "bible/21_series_arc_design.yaml (van ban lock 27/6) dung
+    ten 'Khai Phong' XUYEN SUOT ca 90 EP dinh nghia (M1-M18) - khop voi thuc
+    te da viet, KHONG khop voi CHAR_NAM cua bible/03."
+  ket_luan_de_xuat: "Day co ve la 2 ke hoach nhan vat KHAC NHAU tung ton tai
+    o 2 thoi diem (CHAR_NAM co the la ban nhap TRUOC bible/21, chua duoc don
+    dep khi bible/21 thay the huong di) - KHONG suy doan them, CHI bao cao
+    hien tuong. De nghi Mr.Long xac nhan: (1) 'Khai Phong' co phai la ten
+    chinh thuc thay the CHAR_NAM hay khong, (2) bible/03 co can them 1 muc
+    CHAR_KHAI_PHONG (hoac doi ten CHAR_NAM) de tuan thu R210 Character
+    Identity System, (3) quan he giua 'Nam' (dung trong cau ep_73 'Toi roi
+    day, Nam.' cua bible/18) va 'Khai Phong' la gi - co the trung 1 nguoi
+    (Nam la ten goi khac/ten that, Khai Phong la ten dùng trong tran thuat)
+    hay la 2 thiet ke xung dot chua hop nhat. KHONG thuoc pham vi Buoc 1-3
+    cua TASK_DEBT030_BIBLE03_MEMORY_ARC_DOC.md - chi bao cao de Mr.Long biet
+    truoc khi duyet noi dung proposal nay, vi no anh huong truc tiep den cach
+    dat ten trong bible/03 moi neu duoc duyet."
+
+# ------------------------------------------------------------
+# BUOC 2 — DE XUAT VI TRI LUU (3 phuong an, Mr.Long chon / sua)
+# ------------------------------------------------------------
+
+de_xuat_vi_tri_luu:
+  phuong_an_A_khuyen_nghi:
+    ten: "APPROVE/LOCK bible/21_series_arc_design.yaml (doi status PROPOSAL ->
+      LOCKED) + sua bible/03 CHAR_DRIVER de TRO SANG bible/21 + R42/R55 thay vi
+      lap lai 'chi 2 cau + 2 ngoai le co dinh'"
+    ly_do: "bible/21 DA la 'file bible rieng' ma task doc goi y mo - KHONG can
+      tao moi, chi can chinh thuc hoa (approve) + reconcile bible/03. Tuan
+      thu R211 (khong tao trung domain moi khi da co source-of-truth)."
+    viec_can_lam_neu_duyet: "(1) bible/21: doi 'status: PROPOSAL' -> 'status:
+      LOCKED' + bo sung entry 'extra_beat_HOOK' (9 tap + cong thuc that neu
+      Mr.Long xac nhan) vao khoi quang_memory_arc; (2) bible/00 R42: bo sung
+      allowed_format thu 3 cho HOOK-section neu Mr.Long xac nhan day la co
+      che hop le; (3) bible/03 CHAR_DRIVER (dong 32-40): thay doan 'never:
+      noi cau thu 3 ngoai 2 cau chuan' + 'Ngoai le duy nhat: ep 73...' bang
+      tham chieu ro rang toi bible/21 quang_memory_arc + R42/R55, GIU nguyen
+      2 speech_lines co dinh la dung (khong doi)."
+  phuong_an_B:
+    ten: "Mo file bible moi rieng (vd bible/38_driver_memory_arc.yaml) chuyen
+      dung cho co che thoai bac tai leo thang, KHONG dung lai bible/21 (vi
+      bible/21 con nhieu noi dung khac chua duoc duyet/reconcile - vd ten
+      nhan vat CHAR_NAM)"
+    ly_do: "Tach rieng gium bible/21 (con nhieu van de khac, vd phat_hien_phu
+      o tren) khong bi block boi qua trinh duyet rule thoai bac tai - co the
+      duyet nhanh hon."
+    nhuoc_diem: "Tao mot nguon du lieu MOI trong khi bible/21 da co san 90%
+      noi dung can thiet - co nguy co trung lap/lech du lieu giua 2 file ve
+      cung 1 mach (R211 khuyen tranh trung domain)."
+  phuong_an_C:
+    ten: "Sua truc tiep vao bible/03 CHAR_DRIVER (khong tao/sua file nao khac)"
+    ly_do: "Don gian nhat, giu tat ca thong tin CHAR_DRIVER trong 1 file."
+    nhuoc_diem: "bible/03 la file 'recurring characters' (nhan vat), khong
+      phai file 'arc design' (dong bo hoa voi bible/21 se kho hon, va se lam
+      bible/03 phinh to voi 40+ dong fragment/callback thuoc ve thiet ke arc
+      chu khong phai ho so nhan vat)."
+  decision: "Mr.Long chon A/B/C hoac phuong an khac - CMD_BUILD KHONG tu
+    chon, cho quyet dinh truoc khi lam Buoc 4."
+
+# ------------------------------------------------------------
+# BUOC 3 — GATE: DUNG O DAY, CHO MR.LONG XAC NHAN NOI DUNG PROPOSAL NAY
+# ------------------------------------------------------------
+
+decision_request:
+  question: "Bang arc + co che thoai bac tai mo ta tren co dung thuc te
+    truyen da viet khong? Chon huong luu (A/B/C) va xac nhan cach xu ly
+    2 diem con mo (extra_beat_HOOK cong thuc chua ro + ten nhan vat Khai
+    Phong vs CHAR_NAM/Nam)?"
+  options:
+    A_approve_as_is: "Duyet nguyen van phan tich + bang tren, chon phuong an
+      luu A (bible/21 LOCK + bible/03 tro sang) - CMD_BUILD lam Buoc 4."
+    B_approve_with_changes: "Duyet voi sua doi - Mr.Long ghi ro cho nao doi
+      truc tiep trong file nay truoc khi lam Buoc 4."
+    C_reject_redesign: "Khong dung huong - can dieu tra/thiet ke lai (Mr.Long
+      neu ly do)."
+  open_questions_can_tra_loi_truoc_khi_field_hoa:
+    - "extra_beat_HOOK (9 tap: 12/15/20/25/30/35/40/45/50): cong thuc that la
+      gi? ('PEAK-of-M-block' + 1 ngoai le EP12, hay quy tac khac ma Mr.Long
+      biet tu luc thiet ke goc)?"
+    - "Khai Phong (ten dung trong 40 tap da viet + bible/21) vs CHAR_NAM/'Nam'
+      (ten dung trong bible/03 + bible/18 cau ep_73) - cung 1 nguoi hay 2
+      thiet ke chua hop nhat?"
+    - "ep_90 cau 'Den luc toi cung nho ra roi.' - co con giu nguyen van khi
+      EP90 duoc viet, hay se doi theo dung mau cau CLIFFHANGER leo thang da
+      thay o 40 tap truoc (vd 'Bac tai liec guong. Dem thu chin muoi...')?"
+  note: "KHONG co muc 'tam chap nhan' - Buoc 4 (sua bible/03 that + xay
+    enforcer) CHI lam SAU KHI co xac nhan noi dung cu the cua proposal nay,
+    KHONG phai xac nhan huong lam da co truoc do (commit a5ddb88)."
