@@ -37,10 +37,10 @@
 # ============================================================
 
 version: 1.0
-proposal_status: DRAFT_PENDING_MR_LONG
+proposal_status: APPROVED_A
 writer_of_record: cmd_build
-mr_long_decision: PENDING
-decision_date: null
+mr_long_decision: APPROVED_A
+decision_date: "2026-07-12"
 
 # ------------------------------------------------------------
 # PHAT HIEN QUAN TRONG NHAT (doc truoc khi xem bang) — bible/03 KHONG can
@@ -311,3 +311,40 @@ decision_request:
   note: "KHONG co muc 'tam chap nhan' - Buoc 4 (sua bible/03 that + xay
     enforcer) CHI lam SAU KHI co xac nhan noi dung cu the cua proposal nay,
     KHONG phai xac nhan huong lam da co truoc do (commit a5ddb88)."
+
+# ------------------------------------------------------------
+# QUYET DINH CUOI (12/7, per Mr.Long qua CMD_AUDIT tu xac minh ca 3 diem mo
+# bang du lieu that - KHONG suy doan) - proposal_status chuyen DUYET, cho phep
+# Buoc 4.
+# ------------------------------------------------------------
+
+quyet_dinh_cuoi:
+  huong_luu: "A_approve_as_is - bible/21 LOCK + bible/03 tro sang, KHONG tao
+    file moi."
+  cau_tra_loi_3_diem_mo:
+    extra_beat_HOOK_cong_thuc: "XAC NHAN dung: 'PEAK-of-M-block HOAC lan dau
+      gioi thieu co che'. Tu doc truc tiep output/ep_12/episode.md dong 57:
+      'Dem thu muoi hai — Khai Phong dem them' - xac nhan EP12 la LAN DAU co
+      che dem-dem xuat hien (khop dung ghi chu san co trong bang arc). Cong
+      thuc khop 9/9 truong hop da biet, khong co ngoai le nao khac trong du
+      lieu da doc."
+    ten_nhan_vat_Khai_Phong_vs_Nam: "XAC NHAN: KHONG PHAI 2 nhan vat cung ton
+      tai - CHAR_NAM (bible/03, viet 19/6, TRUOC EP01 duoc viet 27/6) la 1 ke
+      hoach nhan vat CU chua bao gio duoc dung. Tu grep toan bo 50 tap da viet:
+      'Nam' (ten nhan vat CHAR_NAM) = 0/50 tap xuat hien; 'Khai Phong' = 50/50
+      tap, tu EP01. Noi dung wound cua Nam (ba noi) va Khai Phong (nguoi yeu
+      Ha Vy) cung hoan toan khac nhau, xac nhan day la 2 ban thiet ke o 2 thoi
+      diem, KHONG phai 1 nguoi 2 ten. QUYET: thay THANG ho so CHAR_NAM trong
+      bible/03 bang ho so Khai Phong that (ten/wound/arc_position khop dung
+      50 tap da viet), KHONG giu lai CHAR_NAM."
+    cau_ep_90: "CHUA QUYET (ngoai pham vi Buoc 4 - ep_90 chua duoc viet, dung
+      nguyen van bible/18 hien tai cho toi khi EP90 duoc viet that, luc do moi
+      xac nhan lai theo mau cau CLIFFHANGER leo thang neu can)."
+  luu_y_thuc_thi_Buoc_4: "CHAR_NAM la ho so dinh nghia TRUC TIEP trong bible/03
+    (khong phai character_id trong runtime/passenger_roster_100.yaml) - doi ho
+    so nay KHONG cham R210 story_consistency_validator (chi bao ve field khoa
+    cross-episode cua 139 passenger trong roster, khac he thong). Van nen chay
+    lai test/gate lien quan character domain sau khi sua de xac nhan khong vo
+    gi ngoai y muon."
+  mr_long_decision: APPROVED_A
+  decision_date: "2026-07-12"
