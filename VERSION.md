@@ -3,11 +3,21 @@ project: SVHMP_Studio
 current_round: 21
 current_version: v1.1.0-tier2x-phase1
 status: Tier 2.x Phase 1 Voice Profile Manager FROZEN — 10-round regression 150/150 PASS
-last_update_ts: 2026-07-09T10:23:28
-last_update_by: CMD TỔNG TRỢ LÝ session 9/7 10:23 (Dọn artifact stale deep_200: mark _STALE report 28/6 + banner runner + xóa log gitignored; R61 report=93 là corpus cũ đang regen, audit hiện tại chỉ 6. Trước đó: Publish freshness ADVISORY. per Mr.Long authorization 2026-07-09)
+last_update_ts: 2026-07-12T00:00:00
+last_update_by: CMD_BUILD session 12/7 (DEBT-031/032-check2/033 content fix + enforcer, TASK_DEBT030_031_CONTENT_FIX.md — xem log entry duoi day. DEBT-030/032-check1 (driver dialogue) VAN MO, cho Mr.Long xac nhan rieng.)
 rule_break_count: 7
 schema_version: 1
 ---
+
+## DEBT-031/032(check2)/033 content fix (2026-07-12) — CMD_BUILD
+
+**per Mr.Long "fix triệt để vì đây coi như làm thật" (12/7), giao qua `prompts/TASK_DEBT030_031_CONTENT_FIX.md`.**
+
+- **DEBT-031 (CLOSED):** viết lại nội dung thật EP03/04/06/07/09/10 (`output/ep_0{3,4,6,7,9,10}/episode.md`) đổi pillar `family_regret`→`promise/love/kindness/self_regret` (đạt `bible/11_regret_catalog.yaml#variety_rules`: pillar_distance≥3, family_regret_max_per_10_ep≤4, pillar_per_10_ep_min_distinct≥4). EP07/EP10 chỉ sửa REVEAL (CLIFFHANGER/PAYOFF bất biến — mạch bác tài escalation của DEBT-030). `runtime/event_ledger_draft.yaml` cập nhật hand-edit, đối chiếu khớp 100% với `event_ledger_miner.py` chạy in-memory. R197 FULL_TEXT_GATE (R86 broad EOL) PASS cả 6 tập sau khi sửa 18 vi phạm phát sinh từ nội dung mới.
+- **DEBT-032 check #2 (CLOSED — regret variety):** `tools/regret_variety_check.py` (mới) + wired vào `tools/svhmp_preflight_qa.py` (HARD-BLOCK). 16 test mutation-proof `tests/test_regret_variety_check.py`. Check #1 (driver dialogue limit) VẪN MỞ chờ Mr.Long.
+- **DEBT-033 (CLOSED):** `tools/decision_engine.py::build_packet()` giờ đọc dialogue_ratio/narration_ratio SỐNG từ `calibrate_decision_policy.py::main()` cho EP01 (trước là số tĩnh dán vào `bible/42`). Đo thêm EP02-11 (không wire vào packet chính thức, đúng phạm vi). `governance/blueprint/bp6/decision_contract.yaml` status 2 knob: planned→calibrated. 9 test `tests/test_debt033_dialogue_ratio_wire.py`.
+- **story_planner.py TU CHỈNH** (domain LOCKED, per Mr.Long authorization): mở rộng `REGRET_SUB_PREFIX_TO_PILLAR` (REG_FAM→+REG_LOV/REG_PRO/REG_KIN/REG_SELF).
+- Registry `architecture_registry_check.py` 0/0/0. pytest suite xanh (xem `governance/TECH_DEBT.md` DEBT-031/032/033 cho chi tiết đầy đủ + evidence dòng/file).
 
 ## Publish Freshness Advisory (2026-07-09 09:42) — CMD TỔNG TRỢ LÝ
 

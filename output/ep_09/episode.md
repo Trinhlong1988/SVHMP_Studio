@@ -1,4 +1,4 @@
-# TẬP 9 — BĂNG CASSETTE GIỌNG BÀ NGOẠI HÁT RU
+# TẬP 9 — LỜI HỨA CUỐI TUẦN NÀY CON VỀ VỚI BÀ
 
 [INTRO 4.5s — HẮC DẠ KÝ master]
 
@@ -35,15 +35,21 @@ prompt_version: SVHMP-10.0-RC3.4
 ep_number: 9
 phase: establish (1-10)
 passenger_main: PAS_0020 (Phượng Ngọc, nu 26-35)
-regret_pillar: family_regret
-regret_sub: REG_FAM_002 (Bà ngoại — cháu xa xôi, đông lạnh)
-signature_object: OBJ_BANG_CASSETTE (băng cassette bà ngoại hát ru thu cho cháu)
+regret_pillar: promise_regret
+regret_sub: REG_PRO_004 — Hứa thăm ông bà cuối tuần — quên (variation: bà ngoại miền núi, cháu hứa "hè con về" nhiều năm liền, lỡ hẹn)
+signature_object: OBJ_BANG_CASSETTE (KHÔNG đổi — bà ngoại tự thu giọng hát ru gửi lại, vì biết cháu hay lỡ hẹn) + OBJ_RADIO_CU (máy cassette cũ, vật phụ)
 signature_setting: setting_dong_lanh
 stop_location: ngã ba Lạng Sơn (miền núi phía Bắc)
 bell_count: 1
 ghost_manifest: 1
 word_count: ~2350
 cross_ep_continuity: Khải Phong có 4 vật + bác tài đã nói câu thứ 3 "Hôm nào con sẽ tự ngồi vào ghế thứ chín". Đồng hồ nhích sáu lần.
+repair_note: "12/7 TU CHINH noi dung (DEBT-031) — doi pillar family_regret (REG_FAM_002)
+  sang promise_regret (REG_PRO_004). Giu nguyen: ba ngoai + bang cassette + mien nui Lang
+  Son (object khong doi — da hop ly voi promise_regret vi bang chinh la bang chung loi hua
+  bi lo hen), chi doi KHUNG CAM XUC tu 'gia dinh xa cach chung chung' sang 'loi hua CU THE
+  lap di lap lai bi lo hen'. Dong ho gradient 6 lan, cau bac tai 2 cau lock, dong ho 7:10.
+  CLIFFHANGER (section 6) KHONG doi 1 chu."
 ```
 
 ---
@@ -128,9 +134,9 @@ Cô ngừng. Vuốt vỏ băng.
 
 [pause:600ms]
 
-"Mấy năm em không về kịp hè — bận con nhỏ, bận công việc. Cuối năm tính về Tết — lại bận. Tết năm bà mất, em hứa: 'Tết này con đưa con của con về cho bà. Bà cụ ấy chưa gặp chắt.'"
+"Mấy năm em không về kịp hè — bận con nhỏ, bận công việc. Cuối năm tính về Tết — lại bận. Đó không phải lần đầu em hứa rồi lỡ. Năm nào em cũng hứa y hệt câu đó — 'hè cháu về' — rồi hè nào cũng có lý do khác để hoãn. Tết năm bà mất, em hứa thêm một lần nữa, chắc chắn hơn: 'Tết này con đưa con của con về cho bà. Bà cụ ấy chưa gặp chắt.'"
 
-"Người bà bảo: 'Bà chờ cháu.'"
+"Người bà bảo: 'Bà chờ cháu.' Bà không trách. Bà chỉ chờ — như đã chờ bao nhiêu lần hứa trước đó."
 
 [pause:800ms]
 
@@ -187,6 +193,10 @@ Cô gái khẽ gật đầu một cái. Mắt cô khẽ ngấn nước.
 "Em không kể chuyện bà cho ai. Cô gái chỉ giữ trong lòng. Bà ngoại — chỉ riêng em hiểu bà."
 
 "Khi em đi, không còn ai biết câu bà đã nói với em. Không còn ai biết bà có vết sẹo ở bắp chân. Không còn biết bà nói tiếng Tày."
+
+[pause:1000ms]
+
+"Em tiếc nhất không phải vì bà mất — người già ai cũng phải đi. Em tiếc vì suốt bao nhiêu năm, em cứ hứa 'hè cháu về' như một câu nói cửa miệng, không thật sự định giữ lời ngay từ đầu. Nếu ngày đó em chỉ cần giữ đúng MỘT lần lời hứa ấy — không cần cả năm lần — em đã kịp."
 
 [pause:1500ms]
 

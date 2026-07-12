@@ -242,10 +242,19 @@ PAS_ID_RE = re.compile(r"PAS_\d{4}")
 
 # Buoc 2: mapping prefix regret_sub -> pillar, GROUNDED tu bible/11_regret_catalog.yaml (khoa
 # "pillars.family_regret" chua cac id "REG_FAM_00X" - xem bible/11 dong 21-61). Batch EP02-11
-# CHI dung REG_FAM (da tu grep xac nhan qua event_ledger_draft.yaml) nen chi can 1 entry - KHONG
-# tu bia them prefix chua gap (REG_LOVE/REG_PROMISE/... se can bo sung khi gap that, R195).
+# BAN DAU chi dung REG_FAM (da tu grep xac nhan qua event_ledger_draft.yaml) nen chi co 1 entry -
+# KHONG tu bia them prefix chua gap (R195). TU CHINH 12/7 (per Mr.Long authorization, DEBT-031,
+# TASK_DEBT030_031_CONTENT_FIX.md Buoc 2): sau khi sua noi dung that EP03/04/06/07/09/10 (doi
+# pillar family_regret->promise/love/kindness/self, tranh 9/10 tap lien tiep cung pillar vi pham
+# bible/11 variety_rules.pillar_distance/family_regret_max_per_10_ep), event_ledger_draft.yaml
+# gio co THAT 4 prefix moi (REG_PRO/REG_LOV/REG_KIN/REG_SELF) - bo sung ca 4, GROUNDED tu bible/11
+# dong 71/117/162/199 (5 pillar dinh nghia san, khong bia them pillar moi).
 REGRET_SUB_PREFIX_TO_PILLAR = {
     "REG_FAM": "family_regret",
+    "REG_LOV": "love_regret",
+    "REG_PRO": "promise_regret",
+    "REG_KIN": "kindness_regret",
+    "REG_SELF": "self_regret",
 }
 
 

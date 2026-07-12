@@ -6,7 +6,9 @@ M9  parse_sections_v2() mutation-proof: thieu section / sai thu tu -> raise Valu
 M10 build_episode_plan_ep02_11() reality anchor: scene_function/cast_count/driver_reveal_
     cumulative/season_ref/kpi_ep_range_ref dung cho ca 10 tap
 M11 regret_pillars_covered: EP02-10 co pillar that (tu regret_sub), EP11 pending (regret_sub
-    null trong event_ledger, KHONG tu suy doan - R195)
+    null trong event_ledger, KHONG tu suy doan - R195). CAP NHAT 12/7 (DEBT-031,
+    TASK_DEBT030_031_CONTENT_FIX.md): EP03/04/06/07/09/10 da doi pillar (khong con toan
+    family_regret) - xem EP02_10_EXPECTED_PILLAR duoi day.
 M12 characters_present: EP02-10 resolve PAS_id that trong roster, EP11 rong + pending_fields
     ghi ly do (passenger_main khong co PAS_id)
 M13 location_ref: CA 10 tap deu pending (stop_location la dia danh vat ly, 0/20 khop bible/13)
@@ -111,11 +113,36 @@ def test_reality_ep02_11_driver_reveal_cumulative_within_cap():
 # M11 — regret_pillars_covered
 # ============================================================
 
+# DEBT-031 (TASK_DEBT030_031_CONTENT_FIX.md Buoc 2, per Mr.Long authorization 12/7): noi dung
+# that EP03/04/06/07/09/10 da duoc viet lai (doi pillar) de dat bible/11 variety_rules
+# (pillar_distance>=3, family_regret_max_per_10_ep<=4, pillar_per_10_ep_min_distinct>=4).
+# EP02/05/08/11 GIU NGUYEN family_regret (khong sua, xem TASK doc). Bang duoi day la SU THAT
+# hien tai trong runtime/event_ledger_draft.yaml sau khi sua (khong phai gia dinh).
+EP02_10_EXPECTED_PILLAR = {
+    2: "family_regret",
+    3: "promise_regret",
+    4: "love_regret",
+    5: "family_regret",
+    6: "kindness_regret",
+    7: "self_regret",
+    8: "family_regret",
+    9: "promise_regret",
+    10: "love_regret",
+}
+
+
 def test_reality_regret_pillars_covered_ep02_10_populated_ep11_pending():
     for ep in range(2, 11):
         plan = sp.build_episode_plan_ep02_11(ep)
-        assert plan["regret_pillars_covered"] == ["family_regret"], (
-            f"ep_{ep:02d}: regret_pillars_covered phai co family_regret that")
+        expected = EP02_10_EXPECTED_PILLAR[ep]
+        assert plan["regret_pillars_covered"] == [expected], (
+            f"ep_{ep:02d}: regret_pillars_covered phai co {expected} that (DEBT-031 fix)")
+    # bible/11 variety_rules kiem chung tren toan batch EP02-10 sau fix
+    assert len(set(EP02_10_EXPECTED_PILLAR.values())) >= 4, (
+        "pillar_per_10_ep_min_distinct>=4 (bible/11) phai dat sau DEBT-031 fix")
+    family_count = sum(1 for v in EP02_10_EXPECTED_PILLAR.values() if v == "family_regret")
+    assert family_count <= 4, (
+        "family_regret_max_per_10_ep<=4 (bible/11) phai dat sau DEBT-031 fix")
     plan11 = sp.build_episode_plan_ep02_11(11)
     assert plan11["regret_pillars_covered"] == []
     reasons = [pf["field"] for pf in plan11["pending_fields"]]

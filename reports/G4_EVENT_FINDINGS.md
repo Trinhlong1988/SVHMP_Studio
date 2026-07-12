@@ -1,10 +1,10 @@
 # G4 EVENT FINDINGS — máy đào ngược episode ĐÃ CÓ (TASK_G4_WORLD D2)
 
-- Sinh bởi: `tools/event_ledger_miner.py` — 2026-07-05
+- Sinh bởi: `tools/event_ledger_miner.py` — 2026-07-12
 - Tập quét: 50 (ep_01..ep_50)
 - Route: **executor/Mr.Long xử lý**. Mọi finding kèm evidence ep:line — không suy luận.
 
-## F1 — Nickname roster xuất hiện ngoài tập được gán (65 nickname)
+## F1 — Nickname roster xuất hiện ngoài tập được gán (66 nickname)
 (KHÔNG mặc định là lỗi — có thể là continuity xuyên tập CHỦ Ý. Cần người xác nhận chủ ý hay trùng âm tiết ngẫu nhiên.
 GIỚI HẠN ĐÃ BIẾT: case ví dụ trong TASK ("Phong" ep_15 tái xuất ep_25) KHÔNG lọt vào danh sách này — "Phong" bị loại khỏi candidate vì trùng tên tắt của Khải Phong (nhân vật chính, ~mọi tập), còn "Hoài" (từ khác trong "Phong Hoài Đức") không xuất hiện lại trong ep_25 (chỉ có "Phong" được nhắc). Miner dựa trên tần suất âm tiết — không giải quyết được đồng tham chiếu (coreference) nhân vật qua đại từ/tên tắt trùng nhân vật chính.)
 
@@ -19,7 +19,6 @@ GIỚI HẠN ĐÃ BIẾT: case ví dụ trong TASK ("Phong" ep_15 tái xuất ep
 - 'Cảnh' (PAS_0072, gán ep_61) — xuất hiện thêm: ep_36, ep_39
 - 'Cần' (PAS_0133/freeform_ep32, gán ep_32) — xuất hiện thêm: ep_17, ep_48, ep_49
 - 'Diễm' (PAS_0015, gán ep_04) — xuất hiện thêm: ep_36
-- 'Diệu' (PAS_0013, gán ep_02) — xuất hiện thêm: ep_04
 - 'Duy' (PAS_0116/freeform_ep15, gán ep_15) — xuất hiện thêm: ep_29, ep_46
 - 'Hiếu' (PAS_0038, gán ep_27) — xuất hiện thêm: ep_45, ep_46
 - 'Hiền' (PAS_0031, gán ep_20) — xuất hiện thêm: ep_21
@@ -30,14 +29,14 @@ GIỚI HẠN ĐÃ BIẾT: case ví dụ trong TASK ("Phong" ep_15 tái xuất ep
 - 'Hạnh' (PAS_0029, gán ep_18) — xuất hiện thêm: ep_38
 - 'Hậu' (PAS_0047, gán ep_36) — xuất hiện thêm: ep_48, ep_49
 - 'Hằng' (PAS_0017, gán ep_06) — xuất hiện thêm: ep_27, ep_42
-- 'Khang' (PAS_0032, gán ep_21) — xuất hiện thêm: ep_04, ep_07, ep_18
+- 'Khang' (PAS_0032, gán ep_21) — xuất hiện thêm: ep_07, ep_10, ep_18
 - 'Khoa' (PAS_0040, gán ep_29) — xuất hiện thêm: ep_41, ep_47
-- 'Khôi' (PAS_0049, gán ep_38) — xuất hiện thêm: ep_04, ep_12, ep_21
+- 'Khôi' (PAS_0049, gán ep_38) — xuất hiện thêm: ep_12, ep_21
 - 'Lam' (PAS_0079, gán ep_68) — xuất hiện thêm: ep_35
 - 'Liêm' (PAS_0075, gán ep_64) — xuất hiện thêm: ep_48
 - 'Liễu' (PAS_0027, gán ep_16) — xuất hiện thêm: ep_21
 - 'Ly' (PAS_0055, gán ep_44) — xuất hiện thêm: ep_28
-- 'Lâm' (PAS_0014, gán ep_03) — xuất hiện thêm: ep_04, ep_18, ep_26
+- 'Lâm' (PAS_0014, gán ep_03) — xuất hiện thêm: ep_18, ep_26
 - 'Lý' (PAS_0095, gán ep_85) — xuất hiện thêm: ep_22, ep_23, ep_49
 - 'Lộc' (PAS_0057, gán ep_46) — xuất hiện thêm: ep_24, ep_27, ep_29
 - 'Mạnh' (PAS_0084, gán ep_74) — xuất hiện thêm: ep_46
@@ -53,9 +52,9 @@ GIỚI HẠN ĐÃ BIẾT: case ví dụ trong TASK ("Phong" ep_15 tái xuất ep
 - 'Thi' (PAS_0099, gán ep_89) — xuất hiện thêm: ep_08
 - 'Thu' (PAS_0076, gán ep_65) — xuất hiện thêm: ep_11
 - 'Thơ' (PAS_0130/freeform_ep29, gán ep_29) — xuất hiện thêm: ep_48, ep_49
-- 'Thư' (PAS_0058, gán ep_47) — xuất hiện thêm: ep_17, ep_18, ep_23
 - 'Thương' (PAS_0128/freeform_ep27, gán ep_27) — xuất hiện thêm: ep_32
-- 'Thịnh' (PAS_0090, gán ep_80) — xuất hiện thêm: ep_04, ep_07
+- 'Thịnh' (PAS_0090, gán ep_80) — xuất hiện thêm: ep_07
+- 'Thục' (PAS_0120/freeform_ep19, gán ep_19) — xuất hiện thêm: ep_06
 - 'Toàn' (PAS_0062, gán ep_51) — xuất hiện thêm: ep_17, ep_37
 - 'Trinh' (PAS_0045, gán ep_34) — xuất hiện thêm: ep_39
 - 'Triệu' (PAS_0067, gán ep_56) — xuất hiện thêm: ep_37
@@ -66,20 +65,22 @@ GIỚI HẠN ĐÃ BIẾT: case ví dụ trong TASK ("Phong" ep_15 tái xuất ep
 - 'Tâm' (PAS_0073, gán ep_62) — xuất hiện thêm: ep_15, ep_20, ep_28
 - 'Tín' (PAS_0065, gán ep_54) — xuất hiện thêm: ep_11
 - 'Tỉnh' (PAS_0080, gán ep_69) — xuất hiện thêm: ep_25
+- 'Vi' (PAS_0035, gán ep_24) — xuất hiện thêm: ep_07
 - 'Vân' (PAS_0069, gán ep_58) — xuất hiện thêm: ep_10, ep_49
-- 'Vượng' (PAS_0118/freeform_ep17, gán ep_17) — xuất hiện thêm: ep_04, ep_07
+- 'Vượng' (PAS_0118/freeform_ep17, gán ep_17) — xuất hiện thêm: ep_07
 - 'Xuân' (PAS_0134/freeform_ep33, gán ep_33) — xuất hiện thêm: ep_17, ep_25, ep_42
 - 'Yến' (PAS_0039, gán ep_28) — xuất hiện thêm: ep_16, ep_23, ep_31
 - 'Đài' (PAS_0148/freeform_ep47, gán ep_47) — xuất hiện thêm: ep_43
 - 'Đàn' (PAS_0129/freeform_ep28, gán ep_28) — xuất hiện thêm: ep_48
 - 'Đào' (PAS_0027, gán ep_16) — xuất hiện thêm: ep_17, ep_29
+- 'Đăng' (PAS_0040, gán ep_29) — xuất hiện thêm: ep_04
 
 ## F2 — Mâu thuẫn số học tuổi/mốc thời gian TRONG PHẠM VI GẦN NHAU (±3 dòng, 4 tập)
 (ỨNG VIÊN cần người xem lại — KHÔNG khẳng định là lỗi thật. Đã xác nhận có false-positive kiểu "mất X năm trước, Y tuổi... trước sinh nhật (Y+1) tuổi" — văn phong "gần tròn tuổi" không phải mâu thuẫn số học, máy chưa phân biệt được. Window hẹp quanh mốc "X năm trước" giảm nhiễu gộp-nhiều-nhân-vật so với bản đầu (35→4 tập), nhưng vẫn cần người xác nhận từng ca.)
 
-- ep_10:127 'ba mươi năm trước': tuổi gần đó = [16, 46] (không cùng khớp 1 mốc qua ±30)
-- ep_36:127 'hai mươi năm trước': tuổi gần đó = [8, 20] (không cùng khớp 1 mốc qua ±20)
-- ep_38:127 'mười bảy năm trước': tuổi gần đó = [17, 18] (không cùng khớp 1 mốc qua ±17)
+- ep_10:143 'ba mươi năm trước': tuổi gần đó = [16, 46] (không cùng khớp 1 mốc qua ±30)
+- ep_36:131 'hai mươi năm trước': tuổi gần đó = [8, 20] (không cùng khớp 1 mốc qua ±20)
+- ep_38:131 'mười bảy năm trước': tuổi gần đó = [17, 18] (không cùng khớp 1 mốc qua ±17)
 - ep_49:123 'mười lăm năm trước': tuổi gần đó = [20, 27] (không cùng khớp 1 mốc qua ±15)
 
 ## F3 — signature_object KHÔNG có trong bible/12 object_library (36 tập)

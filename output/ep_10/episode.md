@@ -35,9 +35,9 @@ prompt_version: SVHMP-10.0-RC3.4
 ep_number: 10
 phase: establish (1-10) — FINALE SEASON 1 ESTABLISH ARC
 passenger_main: PAS_0021 (Nguyên Việt, nam 36-50)
-regret_pillar: family_regret
-regret_sub: REG_FAM_002 (variation: chú trung niên — bà mất 30 năm rồi — khăn tay di vật)
-signature_object: OBJ_KHAN_TAY_CU (collision EP08, variation: 30 năm sau, đã thấm thành ký ức xa)
+regret_pillar: love_regret
+regret_sub: REG_LOV_006 — Yêu xa thư tay — cô gái mất trước khi anh đọc thư cuối (variation: KHÔNG phải chuyện của chính Việt, mà của bà nội anh — mối tình dang dở thời chiến bà giấu kín cả đời, Việt chỉ mới hiểu ra; khác REG_LOV_001 dùng EP01, khác REG_LOV_003 dùng EP04)
+signature_object: OBJ_KHAN_TAY_CU (KHÔNG đổi — xem repair_note)
 signature_setting: setting_dem_giao_thua
 stop_location: ngã ba Hà Nội (Cầu Long Biên — quê EP01 quay vòng)
 bell_count: 1
@@ -48,6 +48,18 @@ cross_ep_continuity:
   - Đồng hồ nhích bảy lần (peak gradient establish phase)
   - Driver câu thứ 5: "Con sắp ngồi cùng họ rồi"
   - Cliffhanger MEGA: cây cầu Long Biên — EP01 stop_location. Có Hà chăng?
+repair_note: "12/7 TU CHINH noi dung (DEBT-031, TASK_DEBT030_031_CONTENT_FIX.md Buoc 2) —
+  doi pillar family_regret (REG_FAM_002) sang love_regret (REG_LOV_006). RANG BUOC DAC BIET:
+  PAYOFF+CLIFFHANGER (section 5+6) la mach bac tai escalation MEGA (Cau Long Bien callback
+  EP01, cau thu 5 'Con sap ngoi cung ho roi', ghost note 'Chau nguoi khach — ba nho chau')
+  — GIU NGUYEN byte-for-byte, KHONG THE doi object khoi OBJ_KHAN_TAY_CU vi CLIFFHANGER phu
+  thuoc vat ly vao no. Giai phap: CHI sua REVEAL — giu nguyen HOOK/SETUP/INCIDENT/PAYOFF/
+  CLIFFHANGER (ba noi nuoi Viet + khan tay + vo con hien tai deu KHONG doi). Trong REVEAL,
+  PIVOT noi dung duoc revealed: khan tay khong chi la ky vat ba giu ho chau, ma la vat ba
+  noi tu them do cho MOI TINH DAU cua chinh ba — nguoi vi hon chua cuoi da hy sinh thoi
+  chien, ba giu bi mat suot doi. Viet la nguoi ke lai/phat hien, KHONG phai nguoi trong
+  cuoc — day la dieu chinh hop ly per Buoc 2 preamble 'co the dieu chinh cho hop mach
+  truyen da co'."
 ```
 
 ---
@@ -154,7 +166,19 @@ Chú ngừng. Vuốt khăn.
 
 "Người cô dìu em ra ngoài. Đưa anh về nhà. Trong tủ áo bà, anh tìm chiếc áo bông xám bà vẫn mặc. Trong túi áo — chiếc khăn tay này. Cùng cái khăn ba mươi năm trước bà đã đưa anh khi anh đi học nội trú. Bà giữ lại, không đem theo."
 
-"Anh không hiểu vì sao bà đưa khăn cho anh hồi đó, rồi giữ lại khăn của mình. Sau này anh nghĩ thầm — chắc bà muốn giữ một cái gì có hơi tay anh. Để khi nhớ anh, bà có cái mà sờ."
+"Suốt hai mươi lăm năm, anh chỉ hiểu đơn giản vậy — bà muốn giữ một cái gì có hơi tay anh. Để khi nhớ anh, bà có cái mà sờ."
+
+"Năm năm trước, cô anh — em gái bà — nằm viện những ngày cuối. Cô gọi anh lại gần giường, kể anh nghe một chuyện cô giữ kín suốt đời: chiếc khăn này, bà không thêu cho anh. Bà thêu từ hồi hai mươi tuổi, thêu cho một người tên Khang — anh bộ đội cùng làng, người bà đã hứa hôn trước khi lấy ông nội anh."
+
+Chú ngừng rất lâu. Tay siết chặt khăn tay.
+
+"Cô kể: bà và anh Khang định cưới sau khi anh ấy xuất ngũ. Bà thêu khăn này làm quà cưới, thêu dở hai bông hoa thì có tin anh Khang hy sinh ở mặt trận, chỉ ba tháng trước ngày cưới. Bà không thêu nốt bông hoa thứ ba. Bà giấu khăn đi, không cho ai biết, kể cả ông nội anh sau này — người bà lấy theo sự sắp đặt của hai gia đình, một năm sau đó."
+
+"Cô bảo: 'Bà chị tao thương ông Khang tới cuối đời, nhưng chưa từng nói với ai câu đó, kể cả với chồng bà, với con bà. Lúc bà hấp hối, bà không dặn giữ khăn vì nhớ hơi mày đâu — bà dặn vì đó là thứ duy nhất còn lại của một mối tình bà chưa từng được sống trọn, được nói ra.'"
+
+[pause:800ms]
+
+"Anh cầm khăn, đếm lại — chỉ có hai bông hoa thêu xong. Bông thứ ba, đúng như cô kể, chỉ có vài mũi chỉ dở dang rồi bỏ. Suốt ba mươi năm anh cứ tưởng đó là nét thêu tay run của bà lúc về già. Hoá ra đó là dấu vết một buổi chiều bà nhận tin dữ, kim chỉ đang cầm trên tay bỗng dưng không còn lý do để đưa tiếp."
 
 Bác tài nhìn gương chiếu hậu một chút. Im lặng yên.
 
@@ -192,11 +216,11 @@ Chú Việt khẽ gật đầu.
 
 [pause:1000ms]
 
-"Có một ngày anh sẽ đi. Khi anh đi, không còn ai biết cụ. Vợ anh sẽ kể với con anh — nhưng chỉ là kể lại lời anh kể. Câu chuyện sẽ phai đi qua hai thế hệ — đến khi không còn ai nhớ cụ là ai, đã có cuộc đời như thế nào."
+"Có một ngày anh sẽ đi. Khi anh đi, không còn ai biết chuyện anh Khang, chuyện bông hoa thứ ba dở dang. Vợ anh chưa biết. Con anh càng không biết. Câu chuyện của bà — câu chuyện bà giấu kín suốt một đời — sẽ mất hẳn, không phải vì bà không đáng được nhớ, mà vì anh cứ định 'để lúc khác kể', y hệt cách bà năm xưa cũng định 'để lúc khác nói' với ông nội anh, rồi không lúc nào là lúc đúng cả."
 
-"Em sợ điều đó. Anh sợ ngày bà thực sự mất — không phải lúc bà tắt thở, mà là lúc không còn ai trên đời nhớ bà."
+"Em sợ điều đó. Anh tiếc — không phải vì chưa kịp nói lời cảm ơn bà, anh đã thắp hương đủ rồi. Anh tiếc vì bà đã mang một mối tình dang dở đi suốt một đời không ai hay, và anh — người duy nhất được trao lại bí mật đó — cũng đang định giữ im lặng luôn, y như bà."
 
-"Vào đêm nay em về quê. Để gặp bà một lần nữa. Để nói: 'Bà ơi, cháu vẫn nhớ bà. Khi nào cháu đi, sẽ có ai khác biết bà không? Cháu không chắc. Nhưng cháu vẫn nhớ.'"
+"Vào đêm nay em về quê. Để gặp bà một lần nữa. Để nói: 'Bà ơi, cháu biết chuyện anh Khang rồi. Cháu sẽ không giấu nữa. Cháu sẽ kể lại — để bông hoa thứ ba dở dang đó, ít nhất cũng có người nhớ tới, dù không ai thêu nốt được nữa.'"
 
 ---
 

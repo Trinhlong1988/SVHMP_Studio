@@ -1,4 +1,4 @@
-# TẬP 4 — PHONG BAO LÌ XÌ MẸ GIÀ VIẾT DỞ
+# TẬP 4 — BỨC THƯ CHIA TAY CHƯA KỊP GỬI LẠI
 
 [INTRO 4.5s, [pause:250ms] HẮC DẠ KÝ master]
 
@@ -37,17 +37,22 @@ phase          : establish (1-10)
 dna_variant    : C (Soft, [pause:250ms] female middle age, mother POV reversed)
 emotion_flipped: false
 aftertaste     : nghẹn (đào sâu cảm xúc người nghe, [pause:250ms] mẹ già viết tay)
-emotion_tags   : [longing, regret, daughter_far, can_tet, grandmother_love]
+emotion_tags   : [longing, regret, first_love, can_tet, unsent_letter]
 passenger_main : PAS_0015 (Diễm Tường, nu 36-50)
-regret_pillar  : family_regret
-regret_sub     : REG_FAM_001, [pause:250ms] Mẹ đợi con về Tết (variation: con gái trung niên, [pause:250ms] cháu là người vắng)
-signature_object: OBJ_LI_XI_DO (phong bao lì xì đỏ mẹ già viết tên cháu dở)
+regret_pillar  : love_regret
+regret_sub     : REG_LOV_003, [pause:250ms] Chia tay vì hiểu lầm, [pause:250ms] chưa kịp xin lỗi (variation: mối tình đầu thời sinh viên, cách EP01 REG_LOV_001)
+signature_object: OBJ_THU_CHIA_TAY (bức thư chia tay viết dở, chưa kịp gửi lại)
 signature_setting: setting_can_tet
 stop_location  : ngã ba Phú Thọ (trung du Bắc)
 bell_count     : 1
-ghost_manifest : 1 (kính chiếu hậu, [pause:250ms] bóng mẹ ngồi viết, không quay đầu)
+ghost_manifest : 1 (kính chiếu hậu, [pause:250ms] bóng người con trai trẻ ngồi viết, không quay đầu)
 word_count     : ~2400 (~15.năm phút @ 155 wpm)
-arc_open_new   : ARC-ep4 (phong bao lì xì → ai sẽ nhận?)
+arc_open_new   : ARC-ep4 (bức thư chia tay → ai sẽ đọc?)
+repair_note    : "12/7 TU CHINH noi dung (DEBT-031, TASK_DEBT030_031_CONTENT_FIX.md Buoc 2)
+  — doi pillar family_regret (REG_FAM_001) sang love_regret (REG_LOV_003, khac REG_LOV_001
+  da dung EP01). Giu nguyen: 1 phong bao li xi trong, khong ten (Diem Tuong van mua san cho
+  chau nam nay, [pause:250ms] errand phu, grounding cho CLIFFHANGER 'phong bao li xi do roi' khong doi),
+  cau bac tai 2 cau lock, dong ho 7:10. CLIFFHANGER (section 6) KHONG doi 1 chu."
 ```
 
 ---
@@ -64,7 +69,7 @@ Bác tài lái như mọi khi. Hai bàn tay đeo găng trắng đặt trên vô-
 
 Xe chậm lại trước một quán cơm bên đường. Quán đã đóng, chỉ còn biển hiệu chữ đỏ phai nhạt dần. Một bóng người đứng đợi dưới mái hiên.
 
-Một người phụ nữ trung niên. Tuổi khoảng bốn mươi mấy. Tóc cột thấp, một vài sợi bạc đã loé sáng dưới đèn vàng. Mặc áo khoác đen đơn giản, tay phải cầm túi xách da nâu. Tay trái cô ôm một cái cặp da xưa, [pause:250ms] màu nâu đậm, có vết xước ở góc.
+Một người phụ nữ trung niên. Tuổi khoảng bốn mươi mấy. Tóc cột thấp, một vài sợi bạc đã loé sáng dưới đèn vàng. Mặc áo khoác đen đơn giản, tay phải cầm túi xách da nâu. Tay trái cô ôm một cái cặp da xưa, [pause:250ms] màu nâu đậm, có vết xước ở góc, khoá đồng đã xỉn màu.
 
 Cô gái khẽ bước lên xe. Đi nhẹ xuống lối giữa xe. Ngồi vào ghế thứ chín. Đặt cái cặp da xuống đùi.
 
@@ -80,13 +85,13 @@ Xe lại lăn bánh.
 
 Khải Phong nhìn người phụ nữ qua khe ghế. Cô khoảng cuối ba mươi, đầu bốn mươi. Mặt thanh tú nhưng có nét mệt nhoài. Mắt sưng nhẹ nhàng. Bàn tay đặt trên cặp da run hơi nhẹ nhàng.
 
-Cô gái mở khoá cặp da. Bên trong có một xấp phong bao lì xì màu đỏ, [pause:250ms] gói gọn bằng dây chun. Có một cây bút bi xưa. Có một cái sổ tay nhỏ bìa nâu, giấy đã ngả vàng.
+Cô gái mở khoá cặp da. Bên trong có một xấp phong bao lì xì màu đỏ, [pause:250ms] gói gọn bằng dây chun, mua sẵn cho mấy đứa cháu ở quê. Có một cây bút bi xưa. Có một xấp thư cũ buộc dây, giấy đã ngả vàng, nét chữ học trò.
 
-Cô lấy ra một phong bao lì xì. Phong bao mới, chưa gấp. Mặt trước in nét bút [DIALOGUE_SEG_START]"An Khang Thịnh Vượng"[DIALOGUE_SEG_END] màu vàng. Mặt sau trống.
+Cô lấy ra một phong thư. Phong thư cũ, đã mở một góc rồi dán lại bằng keo trong. Mặt trước đề [DIALOGUE_SEG_START]"Gửi Đăng"[DIALOGUE_SEG_END], [pause:250ms] nét chữ con gái, hơi run. Mặt sau còn một vệt mực nhoè, như có giọt nước rơi xuống khi viết.
 
-Cô gái lật xấp phong bao. Có vài cái đã được viết tên. Chữ viết tay run run, mực hơi nhoè. Có cái viết [DIALOGUE_SEG_START]"Cháu Bảo Lâm, [pause:250ms] năm tuổi"[DIALOGUE_SEG_END] rõ ràng. Có cái viết [DIALOGUE_SEG_START]"Cháu Hà Anh, [pause:250ms] ba tuổi"[DIALOGUE_SEG_END] nắn nót. Có viết [DIALOGUE_SEG_START]"Cháu Khôi, [pause:250ms] tám tuổi"[DIALOGUE_SEG_END] ngay ngắn.
+Cô gái lật xấp thư. Có vài lá đã ố vàng theo năm tháng. Có lá viết dở, gạch xoá nhiều đoạn văn. Có lá chỉ viết được nửa trang rồi thôi.
 
-Cái cuối cùng trong xấp, có viết tên dở dang. Chỉ có hai nét bút [DIALOGUE_SEG_START]"Cháu Diệu"[DIALOGUE_SEG_END], [pause:250ms] phần còn lại bỏ trống. Cây bút bi vẫn còn áp lên giấy ở chữ cuối, như ai đó vừa đặt xuống.
+Lá thư cầm trên tay, viết dở dang. Chỉ có mấy dòng đầu, [pause:250ms] [DIALOGUE_SEG_START]"Đăng, em xin lỗi vì..."[DIALOGUE_SEG_END], [pause:250ms] phần còn lại bỏ trống. Cây bút bi vẫn còn áp lên giấy ở chữ cuối, như ai đó vừa đặt xuống.
 
 [pause:600ms]
 
@@ -94,7 +99,7 @@ Bác tài nhìn gương chiếu hậu một thoáng. Nhịp ngón trỏ trái ba
 
 Một ông cụ ngồi ghế đầu vặn nhẹ núm radio xưa. Tiếng radio rè rè vang lên, [pause:250ms] câu hát nào đó về tháng Chạp, lời không rõ ràng.
 
-Cô gái ghế chín đặt phong bao có nét bút [DIALOGUE_SEG_START]"Cháu Diệu"[DIALOGUE_SEG_END] xuống đùi. Tay vuốt nhẹ lên cây bút. Hơi thở chậm xuống một chút.
+Cô gái ghế chín đặt lá thư viết dở [DIALOGUE_SEG_START]"Đăng, em xin lỗi vì..."[DIALOGUE_SEG_END] xuống đùi. Tay vuốt nhẹ lên cây bút. Hơi thở chậm xuống một chút.
 
 ---
 
@@ -102,17 +107,17 @@ Cô gái ghế chín đặt phong bao có nét bút [DIALOGUE_SEG_START]"Cháu D
 
 [pause:500ms]
 
-Xe đi qua một cây cầu nhỏ bắc qua suối. Phía bên kia cầu có một ngôi nhà gạch xưa. Trước hiên có một cái bàn gỗ kê sát cửa sổ đó. Trên bàn có một ngọn đèn dầu vàng yếu đang sáng. Bên cạnh đèn, một xấp phong bao lì xì đỏ xếp gọn gàng. Có một cây bút đặt ngang trên xấp giấy.
+Xe đi qua một cây cầu nhỏ bắc qua suối. Phía bên kia cầu có một sân trường cấp ba cũ, cổng khoá, đèn sân trường vẫn sáng một bóng vàng yếu. Trước cổng, có một gốc bàng già, tán xoè rộng ra đường.
 
 Người phụ nữ ghế chín đột ngột nhìn về phía đó. Cổ họng nuốt một cái nhẹ nhàng.
 
-[DIALOGUE_SEG_START]"Mẹ vẫn ngồi đó..."[DIALOGUE_SEG_END] Cô nói nhẹ. Không nói với ai.
+[DIALOGUE_SEG_START]"Gốc bàng vẫn còn..."[DIALOGUE_SEG_END] Cô nói nhẹ. Không nói với ai.
 
-Bên trong căn nhà phía xa, qua ô cửa sổ sáng đèn, có một bóng người ngồi cạnh bàn. Lưng còng. Tay phải cầm bút. Đang viết.
+Bên trong sân trường phía xa, dưới gốc bàng, có một bóng người trẻ tuổi tựa vào chiếc xe đạp, đứng yên. Dáng con trai. Không quay mặt ra đường.
 
-Cô gái khẽ chớp mắt một cái. Tay siết chặt phong bao trên đùi.
+Cô gái khẽ chớp mắt một cái. Tay siết chặt lá thư trên đùi.
 
-[DIALOGUE_SEG_START]"Mẹ vẫn viết."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Vẫn đứng đợi."[DIALOGUE_SEG_END]
 
 Đồng hồ trên xe, [pause:250ms] chiếc đồng hồ nhỏ gắn cạnh ghế lái, [pause:250ms] kim phút nhích một lần. Tách. Một tiếng rất gọn thôi. Như có ai vừa chạm vào.
 
@@ -122,9 +127,9 @@ Cô không nghe tiếng đồng hồ. Đang dán mắt vào căn nhà sáng đè
 
 [pause:1000ms]
 
-Xe đi qua cầu. Căn nhà mất hút sau hàng tre.
+Xe đi qua cầu. Sân trường mất hút sau hàng tre.
 
-Cô gái lại khẽ quay đầu. Một thoáng. Rồi nhìn xuống cái phong bao có hai nét bút [DIALOGUE_SEG_START]"Cháu Diệu"[DIALOGUE_SEG_END] thôi.
+Cô gái lại khẽ quay đầu. Một thoáng. Rồi nhìn xuống lá thư viết dở [DIALOGUE_SEG_START]"Đăng, em xin lỗi vì..."[DIALOGUE_SEG_END] thôi.
 
 ---
 
@@ -132,31 +137,31 @@ Cô gái lại khẽ quay đầu. Một thoáng. Rồi nhìn xuống cái phong 
 
 [pause:800ms]
 
-Cô vuốt nhẹ mặt phong bao. Giấy còn mới. Chưa nếp nhăn nào.
+Cô vuốt nhẹ mặt lá thư. Giấy đã ố vàng theo năm tháng, nhưng nét gạch bút bi vẫn còn rõ ràng.
 
-[DIALOGUE_SEG_START]"Mẹ năm nay tám mươi bảy. Mắt mẹ mờ nhiều. Tay mẹ run. Hai năm nay con phải mua phong bao lì xì giúp mẹ. Mẹ chỉ viết tên cháu thôi, [pause:250ms] mẹ bảo: 'Để mẹ tự viết. Cháu mở ra thấy chữ bà, mới có không khí Tết.'"[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Anh tên Đăng. Học cùng lớp con hồi cấp ba, ở chính ngôi trường vừa đi qua đó. Bọn con yêu nhau từ năm lớp mười một. Con hứa sẽ đợi anh, dù con lên Hà Nội học, còn anh ở lại quê ôn thi năm sau."[DIALOGUE_SEG_END]
 
-Giọng cô rất nhỏ thôi. Khô. Như đọc cho chính phong bao nghe.
+Giọng cô rất nhỏ thôi. Khô. Như đọc cho chính lá thư nghe.
 
-"Năm nay con mua xong xấp phong bao từ hôm hai mươi ba. Mẹ ngồi viết từ chiều hai bảy. Mỗi ngày viết vài cái. Mệt thì nghỉ, hôm sau viết tiếp. Mẹ viết đến cái thứ mười lăm thì dừng, [pause:250ms] cái cho cháu Diệu. Đứa cháu mới nhất, mới sinh tháng Mười. Mẹ chưa gặp cháu lần nào, [pause:250ms] vì cháu ở Sài Gòn, mẹ ở Phú Thọ.[DIALOGUE_SEG_START]"
+[DIALOGUE_SEG_START]"Năm nhất đại học, có đứa bạn cùng lớp con chụp được tấm ảnh, [pause:250ms] anh Đăng đang chở một cô gái khác trên xe đạp, cười rất tươi. Con không hỏi thẳng anh. Con giận, viết luôn lá thư này, [pause:250ms] nói chia tay, nói những lời rất nặng. Con định gửi qua đường bưu điện."[DIALOGUE_SEG_END]
 
-Cô ngừng. Tay vuốt nhẹ nét bút "[DIALOGUE_SEG_END]Cháu Diệu[DIALOGUE_SEG_START]" trên phong bao.
+Cô ngừng. Tay vuốt nhẹ nét chữ [DIALOGUE_SEG_START]"Đăng, em xin lỗi vì..."[DIALOGUE_SEG_END] trên đầu lá thư.
 
 [pause:600ms]
 
-"[DIALOGUE_SEG_END]Con từ Hà Nội về quê tối hai tám để giúp mẹ. Lúc con về tới, mẹ vẫn đang ngồi ở bàn gỗ ngoài hiên. Mẹ cầm bút. Phong bao cho cháu Diệu đặt trước mặt. Mẹ vừa viết được hai nét bút 'Cháu Diệu' thì gục đầu xuống bàn.[DIALOGUE_SEG_START]"
+[DIALOGUE_SEG_START]"Thư con viết được nửa trang thì dừng lại, [pause:250ms] vì con nghĩ, thư nặng lời quá, để mai bình tĩnh viết lại. Con gấp thư, để trong ngăn bàn, định bụng vài hôm nữa gửi bản khác, nhẹ nhàng hơn."[DIALOGUE_SEG_END]
 
 [pause:800ms]
 
-"[DIALOGUE_SEG_END]Con chạy ra ngoài. Đỡ mẹ lên cao. Mẹ vẫn còn thở. Mẹ khẽ nói: 'Mẹ chưa viết xong. Con viết hộ mẹ. Cháu Diệu... cháu nội bé nhất...'"
+"Ba hôm sau, bạn cùng lớp cấp ba gọi lên Hà Nội báo tin: 'Đăng bị tai nạn xe máy đêm hôm qua, ở gần trường mình đó. Đi luôn rồi.' Con hỏi lại: 'Cô gái hôm bữa chụp ảnh với anh ấy là ai?' Bạn con bảo: 'Là em gái họ Đăng, mới ở quê ra chơi thôi. Đăng cứ nhắc mày suốt, bảo mày dạo này sao im re không thấy nhắn tin.'"
 
-[DIALOGUE_SEG_START]"Con bảo: 'Mẹ vào nghỉ. Để con viết. Mai mẹ viết tiếp.' Mẹ gật đầu nhẹ. Con dìu mẹ vào giường. Mẹ nằm xuống, nhắm mắt. Con ra đóng cửa sổ, [pause:250ms] gió đêm lạnh buốt. Vừa khép cửa, con quay lại, [pause:250ms] mẹ đã đi xa. Nhẹ như một hơi thở thoát ra."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Con không trả lời được. Con vẫn giữ lá thư dở đó trong ngăn bàn. Con không kịp hỏi cho rõ. Con không kịp gửi thư nhẹ nhàng hơn. Con không kịp nói câu gì với anh, [pause:250ms] kể cả một câu xin lỗi cho đúng lý do."[DIALOGUE_SEG_END]
 
 [pause:1500ms]
 
 Bác tài nhìn gương chiếu hậu một thoáng. Im lặng yên. Không nói câu nào.
 
-Trong gương chiếu hậu, Khải Phong thấy hai cái bóng. Một là cô. Một là một người phụ nữ rất già, tóc bạc gần hết, ngồi sát ngay sau cô. Người phụ nữ ấy đang cầm bút, tay run run viết một cái tên. Mắt nhíu lại như đang cố nhìn cho rõ ràng.
+Trong gương chiếu hậu, Khải Phong thấy hai cái bóng. Một là cô. Một là một chàng trai trẻ, tóc hớt cao, ngồi sát ngay sau cô. Chàng trai ấy đang tựa vào thành ghế, tay cầm một cuốn vở học trò, mắt nhìn xuống, không nhìn ai.
 
 Khải Phong chớp mắt. Trong gương vẫn chỉ có cô và một mảng trống.
 
@@ -170,21 +175,19 @@ Người phụ nữ ghế chín không quay đầu. Nhưng môi cô khẽ mấp 
 
 [pause:800ms]
 
-[DIALOGUE_SEG_START]"Đám tang xong, con thu xếp đồ mẹ. Trong ngăn kéo bàn của mẹ, con tìm thấy xấp phong bao mẹ đã viết. Mười lăm cái. Tên đủ mười bốn đứa cháu. Đứa thứ mười lăm, [pause:250ms] cháu Diệu, [pause:250ms] chỉ có hai nét bút 'Cháu Diệu', không có 'thân mến', không có 'Bà tặng cháu mạnh khoẻ học giỏi'."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Đám tang xong, mẹ Đăng gửi con một gói đồ, [pause:250ms] qua tay bạn cùng lớp. Trong đó có mấy cuốn vở học trò của anh. Không có gì nói riêng cho con. Con nghĩ, [pause:250ms] chắc mẹ anh không biết chuyện của bọn con, hoặc có biết cũng không muốn nhắc tới nữa."[DIALOGUE_SEG_END]
 
-[DIALOGUE_SEG_START]"Con không nỡ vứt. Con xếp lại, bỏ vào cặp da. Mang theo lên Hà Nội."[DIALOGUE_SEG_END]
-
-[pause:1000ms]
-
-[DIALOGUE_SEG_START]"Con muốn viết nốt hộ mẹ. Cầm bút lên mấy lần. Nhưng không viết được. Chữ con khác chữ mẹ. Con sợ bé Diệu lớn lên, nhìn phong bao, hỏi: 'Sao chỉ riêng phong bao của con chữ khác mẹ?' Con sợ phải kể."[DIALOGUE_SEG_END]
-
-[DIALOGUE_SEG_START]"Mỗi đêm trước khi ngủ, con lấy phong bao ra. Đặt trước mặt. Cầm bút. Nhìn lâu lắm. Rồi đặt lại vào cặp da."[DIALOGUE_SEG_END]
-
-
+[DIALOGUE_SEG_START]"Con giữ lá thư dở đó. Mang theo lên Hà Nội. Rồi mang đi khắp mọi nơi con ở, suốt hơn hai mươi năm."[DIALOGUE_SEG_END]
 
 [pause:1000ms]
 
-Cô gái vuốt nét bút [DIALOGUE_SEG_START]"Cháu Diệu"[DIALOGUE_SEG_END] thêm một lần. Tay run nhẹ nhàng. [DIALOGUE_SEG_START]"Đêm nay em sẽ viết hộ mẹ rồi. Lần đầu. Em đã chuẩn bị suốt năm năm, [pause:250ms] mực, giấy, tâm thế. Hình bóng cô ấy sẽ viết: 'Bà tặng cháu mạnh khoẻ hoài. Hình ảnh người bà chờ cháu lớn.' Em sẽ ký tên mẹ thôi. Bóng cô em ấy sẽ đặt phong bao vào tay bé Diệu, [pause:250ms] mùng một Tết tới."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Con muốn viết nốt lá thư đó. Cầm bút lên mấy lần. Nhưng không viết được. Con không biết viết tiếp thế nào, [pause:250ms] xin lỗi vì cái gì, khi người cần nghe xin lỗi đã không còn nghe được nữa. Con sợ viết xong, tội của con vẫn còn nguyên đó, chỉ là con đã nói ra thôi."[DIALOGUE_SEG_END]
+
+[DIALOGUE_SEG_START]"Mỗi lần dọn nhà, mỗi lần chuyển chỗ ở, con lấy lá thư ra. Đặt trước mặt. Cầm bút. Nhìn lâu lắm. Rồi đặt lại vào cặp da."[DIALOGUE_SEG_END]
+
+[pause:1000ms]
+
+Cô gái vuốt nét chữ [DIALOGUE_SEG_START]"Đăng, em xin lỗi vì..."[DIALOGUE_SEG_END] thêm một lần. Tay run nhẹ nhàng. [DIALOGUE_SEG_START]"Đêm nay em sẽ viết nốt rồi. Lần đầu. Em đã chuẩn bị suốt hơn hai mươi năm, [pause:250ms] mực, giấy, tâm thế. Em sẽ viết: 'Em xin lỗi vì đã không hỏi cho rõ ràng. Em xin lỗi vì đã giận vội quá.' Em sẽ không gửi đi đâu hết. Em sẽ đốt ở gốc bàng đó, [pause:250ms] chỗ anh vẫn đứng đợi em."[DIALOGUE_SEG_END]
 
 ---
 
@@ -192,23 +195,21 @@ Cô gái vuốt nét bút [DIALOGUE_SEG_START]"Cháu Diệu"[DIALOGUE_SEG_END] t
 
 [pause:800ms]
 
-[DIALOGUE_SEG_START]"Mẹ con là người Nghệ An, lấy chồng về Phú Thọ năm hai mươi tuổi. Bố con mất sớm, [pause:250ms] khi mẹ ba mươi sáu, con mới mười tuổi, em trai mới năm tuổi. Mẹ ở vậy nuôi hai chị em. Mẹ làm giáo viên cấp một, [pause:250ms] lương ít, cuối tháng nào cũng tính từng đồng."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Con lấy chồng năm hai mươi bảy tuổi. Chồng con là người hiền, biết chuyện cũ của con nhưng không bao giờ ghen với một người đã mất. Con có hai đứa con, một trai một gái. Cuộc sống của con ổn, [pause:250ms] không thiếu gì. Chỉ là mỗi năm, cứ tới dịp gần Tết, con lại nhớ tới gốc bàng đó."[DIALOGUE_SEG_END]
 
-[DIALOGUE_SEG_START]"Tới khi con vào Hà Nội học đại học, mẹ vẫn ở quê. Em trai con cũng đi học xa, rồi lập gia đình ở Hà Nội. Mẹ ở một mình mười lăm năm. Mỗi cuối tuần con gọi điện. Mẹ luôn nói: 'Mẹ ổn, con đừng lo. Mẹ có hàng xóm tốt.'"[DIALOGUE_SEG_END]
-
-[DIALOGUE_SEG_START]"Mỗi Tết về quê, con thấy nhà mẹ rộng hơn, [pause:250ms] vì mẹ một mình. Mẹ giữ thói quen gói bánh chưng, [pause:250ms] mỗi năm năm cặp, chia cho hàng xóm. Mẹ giữ thói quen tự viết phong bao lì xì cho các cháu, [pause:250ms] dù mắt đã mờ."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Mẹ con ở Phú Thọ, năm nay tám mươi bảy tuổi, vẫn khoẻ. Mỗi Tết con về thăm mẹ, con vẫn tranh thủ đi ngang trường cũ một lần. Nhìn gốc bàng. Rồi về."[DIALOGUE_SEG_END]
 
 [pause:800ms]
 
-[DIALOGUE_SEG_START]"Có một lần con bảo mẹ: 'Mẹ về Hà Nội ở với con. Một mình mẹ vất vả.' Mẹ cười: 'Mẹ ở đây bao nhiêu năm rồi. Bố con cũng nằm ở đây. Mẹ đi sao được.' Con không nói thêm. Mẹ ở quê tới ngày đi."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Có một lần con kể chuyện Đăng cho mẹ nghe, [pause:250ms] lúc con hai mươi lăm tuổi, chưa lấy chồng. Mẹ chỉ nói: 'Con dại thì con chịu. Nhưng giận ai, cũng phải hỏi cho rõ đã, con ạ. Đời người ngắn lắm, không có lần thứ hai để hỏi lại đâu.' Con nhớ câu đó suốt hơn hai mươi năm."[DIALOGUE_SEG_END]
 
 [pause:1000ms]
 
-[DIALOGUE_SEG_START]"Năm nay con về Phú Thọ ăn Tết với gia đình. Em trai con và vợ con anh ấy ở quê. Bé Diệu ngoài Sài Gòn, mẹ bé nhắn: 'Năm sau bé biết đi, em đưa về cho bà nội thắp hương.'"[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Năm nay con về Phú Thọ ăn Tết với mẹ và gia đình. Chồng con và hai đứa nhỏ ở nhà, để con tranh thủ về trước một mình, ghé qua trường cũ đốt lá thư này."[DIALOGUE_SEG_END]
 
-[DIALOGUE_SEG_START]"Con mang theo xấp phong bao. Định ngày mùng một, con phát cho các cháu. Tất cả đều có chữ bà. Riêng phong bao cho bé Diệu, [pause:250ms] con sẽ đặt lên ban thờ mẹ. Để mẹ tự gọi tên cháu vào nhà mới."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Con mang theo xấp phong bao lì xì cho mấy đứa cháu ở quê, [pause:250ms] chuyện thường tình mỗi năm. Riêng lá thư viết dở cho Đăng, [pause:250ms] con sẽ đốt ở gốc bàng, nơi anh vẫn đứng đợi con tan học. Để lời xin lỗi này, dù muộn hơn hai mươi năm, cũng đến được nơi cần đến."[DIALOGUE_SEG_END]
 
-Cô ngừng. Cầm phong bao có nét bút [DIALOGUE_SEG_START]"Cháu Diệu"[DIALOGUE_SEG_END] lên. Đưa ngang trán. Như chào.
+Cô ngừng. Cầm lá thư viết dở [DIALOGUE_SEG_START]"Đăng, em xin lỗi vì..."[DIALOGUE_SEG_END] lên. Đưa ngang trán. Như chào.
 
 [pause:1500ms]
 
@@ -216,7 +217,7 @@ Xe lại chậm dần. Phía trước có một ngã ba. Đèn đường vàng y
 
 Bên kia ngã ba, có tiếng chuông. Tiếng chuông cận Tết. Một ngôi chùa nhỏ ở xa. Ngân lên một hồi. Vậy một hồi thôi. Rồi tan vào đêm.
 
-Người phụ nữ ghế chín đặt phong bao lại vào cặp da. Đóng nắp. Đứng dậy luôn.
+Người phụ nữ ghế chín đặt lá thư lại vào cặp da. Đóng nắp. Đứng dậy luôn.
 
 Khi đi qua chỗ Khải Phong ngồi, cô khẽ nói:
 
@@ -240,11 +241,11 @@ Cửa xe lại khép. Xe lăn bánh.
 
 [pause:1000ms]
 
-Bên ngoài cửa kính, Khải Phong thấy cô đi vào con đường đất nhỏ ven ngã ba. Cặp da cầm bên hông. Phía cuối đường, có ngôi nhà gạch cũ với cửa sổ sáng đèn dầu. Trên bàn gỗ trước hiên, vẫn có một bóng người ngồi viết. Lưng còng. Tay run run đưa bút.
+Bên ngoài cửa kính, Khải Phong thấy cô đi vào con đường đất nhỏ ven ngã ba. Cặp da cầm bên hông. Phía cuối đường, có một sân trường cũ với cổng khoá, đèn sân trường sáng một bóng vàng yếu. Dưới gốc bàng, vẫn có một bóng người trẻ tuổi tựa vào chiếc xe đạp, đứng yên. Không quay mặt ra đường.
 
 Khải Phong chớp mắt. Bóng người ấy không còn.
 
-Chỉ có ngọn đèn dầu nhấp nháy trong sương.
+Chỉ có đèn sân trường nhấp nháy trong sương.
 
 [pause:1200ms]
 
@@ -284,10 +285,11 @@ Xe vẫn chạy đều. Đêm hôm nay vẫn còn rất dài. Còn nhiều ngã 
 
 - ✅ ALWAYS_5: melancholy / unresolved_goodbye / object_symbolism / subtle_supernatural / emotional_aftertaste
 - ✅ NEVER_7: KHÔNG gore / jump_scare / exorcism / monster / combat / villain / explanation
-- ✅ GHOST_RULES_3: mẹ ngồi viết KHÔNG quay đầu, KHÔNG nói, KHÔNG đuổi
+- ✅ GHOST_RULES_3: Đăng đứng dưới gốc bàng KHÔNG quay đầu, KHÔNG nói, KHÔNG đuổi
 - ✅ SERIES_RULES_8: bus 1 / driver 2 câu / bell 1 / ghost 1 / object / unresolved / subtle / regret_supernatural
 - ✅ bible/23 char_name [DIALOGUE_SEG_START]"Diễm Tường"[DIALOGUE_SEG_END] 2 âm tiết, không forbidden
-- ✅ Variation EP02/EP03: nữ trung niên (vs cô gái trẻ / nam trẻ), POV con gái về vai trò cầu nối mẹ-cháu, lì xì (vs áo len / bánh chưng), Phú Thọ (vs Phú Yên / Thái Bình)
+- ✅ Variation EP02/EP03: nữ trung niên (vs cô gái trẻ / nam trẻ), POV mối tình đầu chưa kịp xin lỗi (vs áo len / vé công viên), Phú Thọ (vs Phú Yên / Thái Bình)
+- ✅ 12/7 TU CHINH (DEBT-031): pillar family_regret→love_regret (REG_LOV_003, khac REG_LOV_001 EP01), giu nguyen CLIFFHANGER + immutable dialogue + dong ho 7:10
 ```
 
 ```yaml

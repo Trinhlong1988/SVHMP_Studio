@@ -225,6 +225,27 @@ except Exception as _e:
     print(f'[CHARACTER_GATE] WARN: skipped ({type(_e).__name__}: {_e})')
 
 # ========================================================================
+# REGRET_VARIETY_GATE (DEBT-032 check #2, 12/7, per Mr.Long authorization,
+# TASK_DEBT030_031_CONTENT_FIX.md Buoc 3) — doi chieu regret_sub cua cac tap da mine
+# trong runtime/event_ledger_draft.yaml voi bible/11_regret_catalog.yaml#variety_rules
+# (pillar_distance / family_regret_max_per_10_ep / pillar_per_10_ep_min_distinct).
+# HARD-BLOCK (khac CHARACTER_GATE WARN-by-default): day la regression cu the (DEBT-031)
+# da tung lot qua QA 9/10 tap - khong co ly do de chi WARN roi lai lot tiep cho EP12+.
+# KHONG bao gio crash render neu module thieu (giu nguyen tinh than CHARACTER_GATE).
+# ========================================================================
+try:
+    from regret_variety_check import check_regret_variety
+    _rv_issues = check_regret_variety(max_ep=_ep) if _ep else []
+    if _rv_issues:
+        print(f'[REGRET_VARIETY_GATE] ep{_ep}: {len(_rv_issues)} issue(s)')
+        for _rvi in _rv_issues:
+            issues.append(f'R-REGRET-VARIETY {_rvi}')
+    else:
+        print(f'[REGRET_VARIETY_GATE] ep{_ep}: PASS (0 issue)')
+except Exception as _rve:
+    print(f'[REGRET_VARIETY_GATE] WARN: skipped ({type(_rve).__name__}: {_rve})')
+
+# ========================================================================
 # D5 PREREQUISITE (Mr.Long duyet 9/7, qa_verdict_schema_proposal final_decision_9_7):
 # Phat THEM 1 JSON verdict native (format_3) — GIU NGUYEN exit code cu (backward-compat),
 # JSON chi la output BO SUNG. Adapter tools/qa_verdict_adapter.py canonical-hoa ve 4-enum

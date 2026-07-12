@@ -1454,6 +1454,10 @@ files:
     domain: g6_story_planner
     status: active
     tier: 1
+  tests/test_debt033_dialogue_ratio_wire.py:
+    domain: g6_story_planner
+    status: active
+    tier: 1
   reports/G6A_REPORT.md:
     domain: g6_story_planner
     status: active
@@ -1563,4 +1567,4 @@ files:
     status: active
     tier: 1
 generated_by: tools/registry_triage.py
-total: 390
+total: 391

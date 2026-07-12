@@ -41,36 +41,42 @@ episode_plan_ref:
     component_ref: HOOK
     summary: HOOK section cua EP01 golden (dong 96)
     location_ref: Cầu Long Biên
+    scene_function: gay_nghi
   - scene_id: EP1_SC2
     episode_ref: 1
     order_in_episode: 2
     component_ref: SETUP
     summary: SETUP section cua EP01 golden (dong 126)
     location_ref: Cầu Long Biên
+    scene_function: gay_nghi
   - scene_id: EP1_SC3
     episode_ref: 1
     order_in_episode: 3
     component_ref: INCIDENT
     summary: INCIDENT section cua EP01 golden (dong 216)
     location_ref: Cầu Long Biên
+    scene_function: dan_chuyen
   - scene_id: EP1_SC4
     episode_ref: 1
     order_in_episode: 4
     component_ref: REVEAL
     summary: REVEAL section cua EP01 golden (dong 314)
     location_ref: Cầu Long Biên
+    scene_function: hy_sinh
   - scene_id: EP1_SC5
     episode_ref: 1
     order_in_episode: 5
     component_ref: PAYOFF
     summary: PAYOFF section cua EP01 golden (dong 438)
     location_ref: Cầu Long Biên
+    scene_function: dan_chuyen
   - scene_id: EP1_SC6
     episode_ref: 1
     order_in_episode: 6
     component_ref: CLIFFHANGER
     summary: CLIFFHANGER section cua EP01 golden (dong 500)
     location_ref: Cầu Long Biên
+    scene_function: danh_lac_huong
   driver_reveal_cumulative: 3
   cast_count: 8
   regret_pillars_covered: []
@@ -82,16 +88,16 @@ episode_plan_ref:
     cast_count: bible/31_golden_samples.yaml#golden_text_ep01.characters_locked (dem
       8 nhan vat khoa)
 decision_packet:
-  packet_id: decision_packet_ep1_v1_full
+  packet_id: decision_packet_ep1_v1_partial
   ep_number: 1
-  plan_ref: null
+  plan_ref: ep1_season_1
   calibration_evidence: bible\42_decision_policy.yaml (calibrated_from output/ep_01/episode_golden_text.md
     (bible/31 golden_text_ep01, LOCKED Mr.Long 30/6))
   per_scene:
   - scene_id: HOOK
     knobs:
-      dialogue_ratio: 0.3564
-      narration_ratio: 0.6436
+      dialogue_ratio: 0.35639926515615433
+      narration_ratio: 0.6436007348438457
       emotion_curve: 0.7
       fear_curve: 0.0
       suspense_curve: null
@@ -104,8 +110,8 @@ decision_packet:
       pov: third_person_limited_khai_phong
   - scene_id: SETUP
     knobs:
-      dialogue_ratio: 0.3564
-      narration_ratio: 0.6436
+      dialogue_ratio: 0.35639926515615433
+      narration_ratio: 0.6436007348438457
       emotion_curve: 0.6
       fear_curve: 0.3
       suspense_curve: null
@@ -118,8 +124,8 @@ decision_packet:
       pov: third_person_limited_khai_phong
   - scene_id: INCIDENT
     knobs:
-      dialogue_ratio: 0.3564
-      narration_ratio: 0.6436
+      dialogue_ratio: 0.35639926515615433
+      narration_ratio: 0.6436007348438457
       emotion_curve: 0.65
       fear_curve: 0.0
       suspense_curve: null
@@ -132,8 +138,8 @@ decision_packet:
       pov: third_person_limited_khai_phong
   - scene_id: REVEAL
     knobs:
-      dialogue_ratio: 0.3564
-      narration_ratio: 0.6436
+      dialogue_ratio: 0.35639926515615433
+      narration_ratio: 0.6436007348438457
       emotion_curve: 0.95
       fear_curve: 0.1
       suspense_curve: null
@@ -146,8 +152,8 @@ decision_packet:
       pov: third_person_limited_khai_phong
   - scene_id: PAYOFF
     knobs:
-      dialogue_ratio: 0.3564
-      narration_ratio: 0.6436
+      dialogue_ratio: 0.35639926515615433
+      narration_ratio: 0.6436007348438457
       emotion_curve: 0.7
       fear_curve: 0.0
       suspense_curve: null
@@ -160,8 +166,8 @@ decision_packet:
       pov: third_person_limited_khai_phong
   - scene_id: CLIFFHANGER
     knobs:
-      dialogue_ratio: 0.3564
-      narration_ratio: 0.6436
+      dialogue_ratio: 0.35639926515615433
+      narration_ratio: 0.6436007348438457
       emotion_curve: 0.65
       fear_curve: 0.0
       suspense_curve: null
@@ -172,8 +178,10 @@ decision_packet:
       silence_budget: 8
       character_focus: Co_gai_ghe_bay_moi
       pov: third_person_limited_new_passenger
-  status: full
-  status_note: null
+  status: partial
+  status_note: 'plan THAT nhung thieu field bat buoc theo bp6/decision_io.yaml required_fields_from_plan:
+    [''cast_per_scene'', ''reveals_allowed''] - story_planner.py hien CHUA sinh field
+    nay, KHONG bia gia tri gia (G6a-2/G7-2 10/7)'
 decision_packet_lifecycle_warning: decision_engine domain lifecycle=draft trong blueprint_domains.yaml,
   KHONG phai approved - per audit_rule cua chinh domain generator ('Output chi dung
   domain lifecycle=approved, Promotion Gate R211'), packet nay la PROVISIONAL, CHUA

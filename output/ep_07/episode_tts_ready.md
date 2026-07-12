@@ -35,14 +35,27 @@ prompt_version: SVHMP-10.0-RC3.4
 ep_number: 7
 phase: establish (1-10)
 passenger_main: PAS_0018 (Bảo Minh, nam 18-25)
-regret_sub: REG_FAM_001 (variation: con trai trẻ, [pause:250ms] lì xì đầu tiên CHO mẹ, mẹ chưa kịp mở)
-signature_object: OBJ_LI_XI_DO
+regret_pillar: self_regret
+regret_sub: REG_SELF_001, [pause:250ms] Bỏ giấc mơ vẽ, [pause:250ms] theo nghề an toàn (variation: nam 21 tuổi, mẹ mất đột ngột là cú hích nhận ra, KHÔNG phải regret về mẹ)
+signature_object: OBJ_LI_XI_DO (KHÔNG đổi, [pause:250ms] xem repair_note) + sổ phác thảo dang dở (vật phụ mới, mang self_regret)
 signature_setting: setting_dem_giao_thua
 stop_location: ngã ba Hải Dương
 bell_count: 1
 ghost_manifest: 1
 word_count: ~2350
 cross_ep_continuity: Khải Phong giữ sợi len + sợi lạt + chuẩn bị nhận vật thứ ba. Đồng hồ nhích bốn lần (gradient).
+repair_note: "12/7 TU CHINH noi dung (DEBT-031, TASK_DEBT030_031_CONTENT_FIX.md Buoc 2) —
+  doi pillar family_regret (REG_FAM_001) sang self_regret (REG_SELF_001). RANG BUOC DAC BIET
+  (TECH_DEBT.md DEBT-030/031 cot EP07): CLIFFHANGER (section 6, dong 234+) la mach bac tai
+  escalation, [pause:250ms] TUYET DOI KHONG duoc dung, giu nguyen byte-for-byte. Vi CLIFFHANGER phu thuoc
+  vat ly vao phong bao li xi 'Tang me' (Khai Phong nhan ra net chu chinh minh, [pause:250ms] payoff mach
+  bi an chinh cua series), KHONG THE doi signature_object khoi OBJ_LI_XI_DO ma khong pha vo
+  CLIFFHANGER. Giai phap: CHI sua REVEAL, [pause:250ms] giu nguyen toan bo HOOK/SETUP/PAYOFF/CLIFFHANGER
+  (phong bao li xi + tang mo cho me + dam tang khong doi 1 chu). Trong REVEAL, them 1 lop
+  noi dung MOI: Bao Minh tu ke lai viec tu bo giac mo ve tranh (theo nganh 'an toan' de phu
+  mẹ+em), [pause:250ms] day la CORE regret duoc phan loai self_regret (tiec quyet dinh cua CHINH MINH),
+  con cai chet cua me la CHAT XUC TAC (khong phai NOI DUNG regret) khien anh nhan ra. Object
+  phu 'so phac thao' duoc gioi thieu MOI trong REVEAL, khong thay the phong bao li xi."
 ```
 
 ---
@@ -117,25 +130,29 @@ Cô gái ấy ấy quay đầu. Tay siết phong trên đùi.
 
 Em vuốt nhẹ mặt phong có nét bút [DIALOGUE_SEG_START]"Tặng mẹ"[DIALOGUE_SEG_END] ấy.
 
-[DIALOGUE_SEG_START]"Con tên Minh. Em năm nay hai mốt tuổi. Sinh viên năm cuối Đại học Bách khoa. Quê con Hải Dương. Bố con mất từ lúc con học cấp ba. Mẹ con nuôi con và em gái con bằng nghề bán bún ở chợ huyện."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Con tên Minh. Em năm nay hai mốt tuổi. Sinh viên năm cuối Đại học Bách khoa. Quê con Hải Dương. Bố con mất từ lúc con học cấp ba. Mẹ nuôi hai anh em con bằng nghề bán bún ở chợ huyện."[DIALOGUE_SEG_END]
 
 Giọng em run nhẹ nhàng. Nhỏ lắm.
 
-"Tháng vừa rồi con nhận tiền lương thực tập đầu tiên. Một triệu năm trăm. Con để dành. Định mua cho mẹ một cái áo len mới, [pause:250ms] cái áo mẹ đang mặc đã ba bốn năm rồi, sờn lắm rồi. Con tính: ba mươi Tết con về, đưa mẹ phong lì xì có tiền lương đầu, [pause:250ms] để mẹ tự mua áo. Mẹ thích tự chọn.[DIALOGUE_SEG_START]"
+[DIALOGUE_SEG_START]"Hồi cấp ba, con vẽ khá lắm, [pause:250ms] thầy mỹ thuật từng bảo con thi trường mỹ thuật. Nhưng năm lớp mười hai, bố con mất. Nhìn mẹ một mình gánh chợ nuôi hai anh em, con tự quyết định thi khối A vào Bách khoa, dễ xin việc hơn. Con tự nhủ: 'Sau này ổn định rồi, mình vẽ lại cũng được.'"[DIALOGUE_SEG_END]
 
-Em ngừng. Vuốt phong.
+Em ngừng. Tay kia lấy ra một cuốn sổ phác thảo cũ, gáy đã sờn.
 
 [pause:600ms]
 
-"[DIALOGUE_SEG_END]Hôm qua hai chín, mẹ nhắn: 'Mai con về, mẹ nấu bún ốc cho con. Mẹ mua sẵn rồi.' Con nhắn: 'Mai con về sớm.'"
+[DIALOGUE_SEG_START]"Ba năm đại học, con chưa vẽ lại lần nào, [pause:250ms] chỉ vẽ dở một bức chân dung mẹ, lúc mẹ đang ngồi bán bún. Cứ định 'tuần sau vẽ tiếp', rồi không tuần nào vẽ tiếp cả."[DIALOGUE_SEG_END]
 
-[DIALOGUE_SEG_START]"Sáng nay ba mươi, em gái con gọi. Khóc trong điện thoại. Em bảo: 'Anh ơi mẹ ngã ở chợ. Mẹ đang chở rau về thì xe đạp đứt phanh, lao xuống dốc. Người ta đưa mẹ vào bệnh viện huyện. Bác sĩ bảo chấn thương sọ não nặng. Mẹ chưa tỉnh.'"[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Tháng vừa rồi con nhận tiền lương thực tập đầu tiên. Một triệu năm trăm. Con để dành, định mua cho mẹ cái áo len mới, [pause:250ms] áo mẹ đang mặc đã sờn lắm rồi. Con tính: ba mươi Tết về, đưa mẹ phong lì xì có tiền lương đầu, để mẹ tự chọn áo."[DIALOGUE_SEG_END]
 
-[DIALOGUE_SEG_START]"Con bắt xe khách ngay. Xe khách đường dài. Đường tắc. Con xuống xe ở thị trấn này lúc bảy giờ tối. Bắt được chuyến này về tiếp Hải Dương."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Hôm qua hai chín, mẹ nhắn: 'Mai con về, mẹ nấu bún ốc cho con. Mẹ mua sẵn rồi.' Con nhắn: 'Mai con về sớm.'"[DIALOGUE_SEG_END]
+
+[DIALOGUE_SEG_START]"Sáng nay ba mươi, em gái con gọi, khóc trong điện thoại: 'Anh ơi mẹ ngã ở chợ, xe đạp đứt phanh lao xuống dốc. Bác sĩ bảo chấn thương sọ não nặng. Mẹ chưa tỉnh.'"[DIALOGUE_SEG_END]
+
+[DIALOGUE_SEG_START]"Con bắt xe khách ngay. Đường tắc. Con xuống xe ở thị trấn này lúc bảy giờ tối, bắt được chuyến này về tiếp Hải Dương."[DIALOGUE_SEG_END]
 
 [pause:800ms]
 
-[DIALOGUE_SEG_START]"Con không gọi em gái lại. Sợ nghe tin mới. Con chỉ ngồi đây, cầm phong này. Tay con vẫn còn run."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Con không gọi em gái lại. Sợ nghe tin mới. Con chỉ ngồi đây cầm phong này. Tay con vẫn còn run."[DIALOGUE_SEG_END]
 
 [pause:1500ms]
 
@@ -149,31 +166,33 @@ Bác tài cất lời.
 
 [DIALOGUE_SEG_START]"Con đã nhớ ra chưa?"[DIALOGUE_SEG_END]
 
-Em ghế sáu không quay đầu. Người con gái gái ấy khẽ gật đầu. Hai bàn tay siết chặt phong.
+Em ghế sáu không quay đầu. Em khẽ gật đầu. Hai bàn tay siết chặt phong và cuốn sổ phác thảo trên đùi.
 
 [DIALOGUE_SEG_START]"Con nhớ, bác."[DIALOGUE_SEG_END]
 
 Em ngừng. Rồi nói tiếp, giọng vẫn nhỏ xíu:
 
-[DIALOGUE_SEG_START]"Tới bến xe huyện lúc một giờ sáng. Người con gái gái gái đứng đón. Người nữ em ấy không khóc nữa. Hình bóng con gái ấy chỉ dẫn con vào bệnh viện. Mẹ vẫn nằm phòng cấp cứu, [pause:250ms] máy thở, máy đo. Bác sĩ bảo: 'Còn hai giờ thôi.'"[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Tới bến xe huyện lúc một giờ sáng. Em gái con đứng đón, không khóc nữa, dẫn con vào bệnh viện. Mẹ vẫn nằm phòng cấp cứu, [pause:250ms] máy thở, máy đo. Bác sĩ bảo: 'Còn hai giờ thôi.'"[DIALOGUE_SEG_END]
 
 [pause:1200ms]
 
-[DIALOGUE_SEG_START]"Con ngồi cạnh giường mẹ. Mẹ chưa tỉnh. Con cầm phong lì xì. Đặt vào lòng tay mẹ. Bàn tay mẹ lạnh. Mẹ chưa biết đó là phong đầu tiên con tặng mẹ, [pause:250ms] bằng tiền lương đầu tiên con kiếm được."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Con ngồi cạnh giường mẹ. Mẹ chưa tỉnh. Con cầm phong lì xì, đặt vào lòng tay mẹ. Bàn tay mẹ lạnh. Mẹ chưa biết đó là phong đầu tiên con tặng, [pause:250ms] bằng tiền lương đầu tiên con kiếm được."[DIALOGUE_SEG_END]
 
-[DIALOGUE_SEG_START]"Đến năm giờ sáng, mẹ đi. Em gái dìu con ra ngoài. Con vẫn cầm phong. Cô gái ấy gái không mở. Con không mở. Đem về quê. Đặt lên ban thờ mẹ."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Đến năm giờ sáng, mẹ đi. Em gái dìu con ra ngoài. Con vẫn cầm phong, không mở, đem về quê, đặt lên ban thờ mẹ."[DIALOGUE_SEG_END]
 
 [pause:1500ms]
 
-"Trong hai giờ con ngồi cạnh mẹ, con nói chuyện với mẹ, [pause:250ms] dù mẹ không nghe. Con kể về tháng đầu thực tập. Sếp con khen con cẩn thận. Đồng nghiệp tốt. Con đã định cuối tháng Hai sẽ đưa mẹ lên Hà Nội chơi, [pause:250ms] cho mẹ đi chùa Hương lần đầu. Con đã đặt vé tàu cho mẹ. Vé vẫn còn trong ví con."
+[DIALOGUE_SEG_START]"Trong hai giờ con ngồi cạnh mẹ, con nói chuyện với mẹ, [pause:250ms] dù mẹ không nghe. Con kể về tháng đầu thực tập, sếp khen con cẩn thận, đồng nghiệp tốt. Con đã định cuối tháng Hai đưa mẹ lên Hà Nội chơi, [pause:250ms] cho mẹ đi chùa Hương lần đầu. Vé tàu con đặt sẵn vẫn còn trong ví."[DIALOGUE_SEG_END]
 
-[DIALOGUE_SEG_START]"Con kể về em gái, [pause:250ms] em đã thi đỗ học sinh giỏi tỉnh. Người con gái gái vẫn vui. Em chưa hiểu chuyện gì sắp xảy ra. Con nói: 'Mẹ ơi, em vui lắm.' Mẹ vẫn nằm. Máy thở đều."[DIALOGUE_SEG_END]
+"Con lấy cuốn sổ phác thảo ra, đặt cạnh tay mẹ. Con nói: 'Mẹ ơi, con vẽ mẹ dở đây. Con hứa con sẽ vẽ xong.' Nhưng con biết, [pause:250ms] con đã hứa y hệt câu đó suốt ba năm, chưa lần nào giữ được. Con tiếc, [pause:250ms] không phải vì chưa kịp cảm ơn mẹ. Con tiếc vì đã tự tay gấp cất giấc mơ mình, tin rằng 'sau này' luôn còn đó, [pause:250ms] mà cái 'sau này' ấy, không chờ con được."
 
-[DIALOGUE_SEG_START]"Con kể về bố con, [pause:250ms] đã mười năm bố con đi. Con kể: 'Mẹ ơi, đêm nay mẹ đi với bố. Bố đợi mẹ lâu rồi.' Lúc đó nước mắt con lăn xuống. Lần đầu con khóc trong hai giờ đó."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Con kể về em gái, [pause:250ms] em đã thi đỗ học sinh giỏi tỉnh. Em chưa hiểu chuyện gì sắp xảy ra. Con nói: 'Mẹ ơi, em vui lắm.' Mẹ vẫn nằm. Máy thở đều."[DIALOGUE_SEG_END]
+
+[DIALOGUE_SEG_START]"Con kể về bố, [pause:250ms] đã mười năm bố đi. Con kể: 'Mẹ ơi, đêm nay mẹ đi với bố. Bố đợi mẹ lâu rồi.' Lúc đó nước mắt con lăn xuống. Lần đầu con khóc trong hai giờ đó."[DIALOGUE_SEG_END]
 
 [pause:1200ms]
 
-[DIALOGUE_SEG_START]"Mẹ con thở chậm hơn. Rồi chậm hơn. Bốn năm mươi sáu sáng, máy báo nhịp tim ngừng. Bác sĩ vào trong. Tắt máy. Cô gái ấy gái khóc to. Con ngồi yên. Tay vẫn cầm phong."[DIALOGUE_SEG_END]
+[DIALOGUE_SEG_START]"Mẹ con thở chậm hơn. Rồi chậm hơn. Bốn năm mươi sáu sáng, máy báo nhịp tim ngừng. Bác sĩ vào trong. Tắt máy. Em gái con khóc to. Con ngồi yên. Tay vẫn cầm phong và cuốn sổ phác thảo."[DIALOGUE_SEG_END]
 
 ---
 

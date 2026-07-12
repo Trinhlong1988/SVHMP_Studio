@@ -36,9 +36,15 @@ knobs:
     valid_range: [0.0, 1.0]
     desc: "Ty le THOAI trong canh — chong generator viet thoai tran lan hoac cam khau."
     consumer: {domain: generator, access: read_only, per_bp3: true}
-    calibration_source: {calibrate_from: "bible/31_golden_samples.yaml + EP01 golden", method: "do word-count thoai/tong tren golden", status: planned_G6}
+    calibration_source: {calibrate_from: "bible/31_golden_samples.yaml + EP01 golden", method: "do word-count thoai/tong tren golden", status: calibrated_live}
     lifecycle: draft
-    status: planned
+    # DEBT-033 (12/7, per Mr.Long authorization, TASK_DEBT030_031_CONTENT_FIX.md Buoc 4):
+    # planned->calibrated. Gia tri = 0.3564 (EP01 golden, calibrate_decision_policy.py::main()).
+    # Nguon: build_packet(ep_number=1) goi THANG cdp.main() song (decision_engine.py::
+    # _live_dialogue_ratio_ep01, R211 khong viet lai cong thuc) - KHONG con la so tinh tay dan
+    # vao YAML nhu truoc (rui ro drift R215). EP02+ (chua co golden khac) fallback ve bible/42
+    # gia tri tinh (0.3564), R195 khong bia gia tri song gia.
+    status: calibrated
   - knob_id: narration_ratio
     type: scalar
     units: ty_le_word_ke_tren_tong_word_canh
@@ -46,9 +52,11 @@ knobs:
     constraint: "dialogue_ratio + narration_ratio = 1.0 theo dinh nghia ty le (toan hoc, khong phai so calibrate)"
     desc: "Ty le NARRATION — phan bu cua dialogue_ratio, khai rieng de generator khong tu suy."
     consumer: {domain: generator, access: read_only, per_bp3: true}
-    calibration_source: {calibrate_from: "bible/31_golden_samples.yaml + EP01 golden", method: "do word-count narration/tong tren golden", status: planned_G6}
+    calibration_source: {calibrate_from: "bible/31_golden_samples.yaml + EP01 golden", method: "do word-count narration/tong tren golden", status: calibrated_live}
     lifecycle: draft
-    status: planned
+    # DEBT-033 (12/7): dong bo voi dialogue_ratio - gia tri = 0.6436 song (1 - dialogue_ratio,
+    # cdp.main()), khong con so tinh tay.
+    status: calibrated
   - knob_id: emotion_curve
     type: curve
     units: cuong_do_cam_xuc_0_1_theo_scene
