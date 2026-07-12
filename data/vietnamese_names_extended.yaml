@@ -390,7 +390,9 @@ masculine_syllables:
 # ============================================================
 forbidden_words:
   - syl: "Nam"
-    reason: "CHAR_NAM recurring SVHMP — collision risk (bible/03)"
+    reason: "Mr.Long forbidden list 15 tên (độc lập, xem CLAUDE.md) + lịch sử collision risk
+      với hồ sơ CHAR_NAM cũ (bible/03, đã thay bằng CHAR_KHAI_PHONG 12/7 — 'Nam' vẫn cấm vì
+      nằm trong forbidden list gốc, KHÔNG phải vì recurring character nữa)"
   - syl: "Tài"
     reason: "Recurring CHAR_DRIVER title 'Bác tài' — avoid confusion"
   # Mr.Long block list 27/6 (tên hoặc syllable đã reserve / quen / cụ thể)

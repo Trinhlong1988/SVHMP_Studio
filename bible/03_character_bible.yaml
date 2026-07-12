@@ -1,8 +1,23 @@
 # 03_CHARACTER_BIBLE — recurring characters bậc series.
-# CẤM tạo recurring mới ngoài bác tài + Nam.
+# CẤM tạo recurring mới ngoài bác tài + Khải Phong.
 
-version: 1.0
+version: 1.1
 lock_date: 2026-06-19
+v1_1_date: 2026-07-12
+v1_1_note: |
+  TU CHỈNH có ủy quyền (per Mr.Long APPROVED_A, governance/proposals/
+  bible03_driver_memory_arc_proposal.yaml, quyet_dinh_cuoi 2026-07-12). 2 thay đổi:
+  (1) CHAR_DRIVER.behavior: thay danh sách "never nói câu thứ 3" tĩnh (2 ngoại lệ cứng
+      ep_73/ep_90) bằng tham chiếu tới bible/21_series_arc_design#quang_memory_arc +
+      #extra_beat_HOOK + bible/00#R42/#R55 — 2 speech_lines cố định GIỮ NGUYÊN VĂN, không đổi.
+  (2) CHAR_NAM -> CHAR_KHAI_PHONG: hồ sơ CHAR_NAM (viết 19/6, TRƯỚC EP01 tồn tại 27/6) là
+      1 kế hoạch nhân vật CŨ chưa từng được dùng — grep 50/50 tập đã viết: "Nam" (tên nhân
+      vật CHAR_NAM) = 0/50, "Khải Phong" = 50/50 từ EP01. Thay THẲNG bằng hồ sơ Khải Phong
+      thật, khớp bible/21 (đã LOCK cùng ngày) + nội dung 40 tập có tag quang_memory_fragment.
+      character_id đổi CHAR_NAM -> CHAR_KHAI_PHONG (R210 — ưu tiên khớp tên thật đang dùng).
+      LƯU Ý: bible/18_driver_reveal_budget.yaml dòng ep_73 ("Tới rồi đấy, Nam.") GIỮ NGUYÊN
+      VĂN — CHƯA khớp với hồ sơ mới (xem governance/TECH_DEBT.md DEBT-035), chờ Mr.Long xác
+      nhận khi EP73 được viết thật, KHÔNG tự sửa câu thoại đó trong đợt field-hoá này.
 
 characters:
 
@@ -29,15 +44,22 @@ characters:
         - giải thích lore
         - tháo găng tay (trừ ep 59-60)
         - rời ghế lái khi có khách
-        - nói câu thứ 3 ngoài 2 câu chuẩn
+        - "nói câu thứ 3 NGOÀI phạm vi đã field-hoá — xem
+          bible/21_series_arc_design.yaml#quang_memory_arc (R35 progressive unlock M1-M18) +
+          #extra_beat_HOOK (9 tập PEAK-of-M-block) + bible/00_constitution.yaml
+          #R42_driver_foreshadow_line_allowed_cliffhanger (3 allowed_format: CLIFFHANGER
+          foreshadow / REVEAL passenger-trigger / HOOK extra_beat) +
+          #R55_driver_R42_strict_enforce (giới hạn số extra/tập). 2 speech_lines chuẩn dưới
+          đây LUÔN cố định, KHÔNG đổi — chỉ câu 'thứ 3' (foreshadow/extra) mới theo R42/R55."
       speech_lines:
         - "Con đã nhớ ra chưa?"
         - "Chưa tới lúc."
       max_dialog_per_ep: 3   # round 12 fix B10.1 clarify: đây là max LẦN XUẤT HIỆN của lời thoại bác tài/ep.
-                            # Nội dung CHỈ 2 câu unique (từ speech_lines list trên) — KHÔNG sáng tạo câu thứ 3.
+                            # Nội dung CHỈ 2 câu unique (từ speech_lines list trên) — KHÔNG sáng tạo câu thứ 3
+                            # NGOÀI phạm vi R42/R55/bible/21 (xem never ở trên — v1.1 12/7, thay 2 ngoại lệ
+                            # tĩnh cũ bằng tham chiếu rule sống, TU CHỈNH có ủy quyền proposal APPROVED_A).
                             # Ví dụ ep_01: "Con đã nhớ ra chưa?" ×2 + "Chưa tới lúc." ×1 = 3 dialog instances OK.
                             # Khớp với bible/02 fact_011 "Bác tài CHỈ 2 câu chuẩn" (2 = số câu UNIQUE).
-                            # Exception duy nhất: ep 73 (1 câu thứ 3 "Tới rồi đấy, Nam.") + ep 90 (1 câu "Đến lúc tôi cũng nhớ ra rồi.")
     internal:
       state_default: "kiên nhẫn vô tận, mệt mỏi che giấu"
       secret: "cựu hành khách — không kịp ở bên cha lúc cha mất → trở thành tài xế"
@@ -56,46 +78,96 @@ characters:
       - "chuyến 73 = chuyến đầu bác tài lái"
       - "hành khách 73 = người thay bác tài"
 
-  CHAR_NAM:
-    id: CHAR_NAM
-    role: POV_PROTAGONIST
-    display_name: "Nam"
-    appears_in_eps: "21-90 (rải rác qua ký ức người khác → boarding ep 30 → pivot ep 73 → finale ep 90)"
+  CHAR_KHAI_PHONG:
+    # v1.1 12/7: thay THẲNG CHAR_NAM (ban nháp 19/6, chưa từng dùng — 0/50 tập có tên "Nam"
+    # làm nhân vật POV) bằng hồ sơ Khải Phong thật, field-hoá từ bằng chứng đọc trực tiếp
+    # output/ep_01, ep_02, ep_06..ep_50 (đặc biệt 40 tập có tag quang_memory_fragment EP11-50)
+    # + bible/21_series_arc_design.yaml#quang_memory_arc (LOCKED cùng đợt).
+    id: CHAR_KHAI_PHONG   # đổi từ CHAR_NAM (R210 — ưu tiên character_id khớp tên thật đang
+      # dùng trong 50/50 tập đã viết). "CHAR_NAM"/"Nam" KHÔNG xuất hiện làm tên nhân vật này
+      # ở bất kỳ episode nào (grep xác nhận trong proposal quyet_dinh_cuoi).
+    role: RECURRING_PASSENGER_POV   # hành khách cố định (KHÔNG one-shot) — ngồi lại mỗi đêm,
+      # khác CHAR_DRIVER (tài xế) — giữ tên role rõ hơn "POV_PROTAGONIST" gốc (vẫn đúng nghĩa).
+    display_name: "Khải Phong"
+    appears_in_eps: "1-90 (toàn series — hành khách cố định, ngồi ghế thứ ba mỗi đêm, TỰ đếm
+      số đêm/số vật nhặt được — xác nhận trực tiếp và NHẤT QUÁN ở EP02, EP06-50, đặc biệt
+      công thức lặp 'Khải Phong ngồi ghế thứ ba... đếm thêm' xuất hiện y hệt ở EP06-EP50).
+      KHÔNG phải '21-90 rải rác → boarding ep_30' như bản CHAR_NAM cũ (bản đó chưa từng khớp
+      nội dung thật đã viết)."
     visual:
-      age: "28-32"
-      build: "trung bình, hơi gầy"
-      clothing: "áo sơ mi xanh đậm cũ, quần jean tối"
-      recurring_object: "cặp da nâu cũ của ông nội"
+      age: "UNKNOWN — 50 tập đã viết KHÔNG có dòng nào tự khai tuổi chính xác Khải Phong
+        (chỉ suy luận cùng thế hệ Hạ Vy, mất ở tuổi 27 theo ep_40 dòng 144 — KHÔNG field-hoá
+        số cụ thể để tránh bịa, R195)."
+      build: "UNKNOWN — chưa có mô tả ngoại hình trực tiếp trong 50 tập đã viết (Khải Phong
+        chủ yếu là POV nội tâm, ít được hành khách khác mô tả lại)."
+      clothing: "áo gió (nhắc lặp lại nhiều tập nhất — 'túi áo gió' đựng vật nhặt mỗi đêm,
+        vd ep_12 dòng 57, ep_13 dòng 61, ep_14 dòng 61)"
+      recurring_object: "túi/áo gió đựng vật hành khách để lại — mỗi đêm nhặt thêm đúng 1 vật
+        (đếm dồn theo số đêm, xem object_sub_arc trong bible/21). Symbol lặp nhiều nhất: mảnh
+        xà cừ (ep_01 đồng hồ xà cừ, ep_12/13 mảnh xà cừ) + hoa cúc khô (ep_11/14/17/20)."
     personality:
-      surface: "trầm tính, hay quan sát, ít nói"
-      underneath: "tự dằn vặt, chu toàn quá mức"
-      trigger_anger: "ai đó coi nhẹ lời hứa"
-      trigger_softness: "thấy người già tay run"
-    speech_pattern:
-      - "câu ngắn, hay bỏ lửng (…)"
-      - "hỏi nhiều hơn khẳng định"
-      - "hiếm xưng 'tôi' — thường dùng 'mình'"
-      - "không bao giờ chửi thề"
+      surface: "trầm tính, quan sát nhiều hơn nói — phần lớn 50 tập là nội tâm/quan sát, ít
+        thoại trực tiếp (ngoại lệ: ep_01, khi được hành khách ghế 8 hỏi chuyện)"
+      underneath: "day dứt vì không nhớ ra quá khứ chính mình, thấy nỗi đau người khác dội lại
+        ký ức của chính anh (mọi tập đều có nhịp 'Khải Phong ngẫm/nhớ/nhói' theo chuyện khách)"
+      trigger_softness: "nghe kể chuyện chia ly/lời hứa dang dở của hành khách — luôn khơi lại
+        mảnh ký ức Hạ Vy (mọi tập EP11-50 đều có nhịp callback này)"
     fear:
-      primary: "nhớ ra mình đã quên một lời hứa quan trọng"
-      secondary: "bị bỏ lại sau khi người thân rời đi"
+      primary: "không kịp nhớ ra trước khi 'tới lúc' — đối chiếu trực tiếp câu hỏi cố định của
+        bác tài mỗi đêm 'Con đã nhớ ra chưa?' / 'Chưa tới lúc.' dành riêng cho Khải Phong
+        (ep_01 dòng 288-292: 'Mãi về sau anh mới biết — câu hỏi đó dành riêng cho mình anh.')"
     core_wound: |
-      Bà nội mất khi Nam đi công tác. Nam hứa Tết về thăm bà, nhưng kẹt việc.
-      Bà đợi đến giao thừa, gọi Nam lần cuối — Nam không bắt máy.
-      Bà mất rạng sáng mùng 1. Nam không kịp nói "con xin lỗi".
+      Khải Phong yêu Hạ Vy (bạn học, cùng học kiến trúc, từng ở trọ chung phố Khâm Thiên).
+      Theo 40 tập có tag quang_memory_fragment (EP11-50, nguồn chính/nhất quán — xem bible/21
+      #quang_memory_arc M3-M10): Hạ Vy mất trong tai nạn xe máy đêm 12 tháng 4 (năm xác nhận
+      qua "tám năm trước" lặp lại nhiều tập), tại ngã tư phố Huế - Hai Bà Trưng, Hà Nội (bị xe
+      tải chở vật liệu xây dựng tông trúng lúc đi làm về từ văn phòng KTS Mộc Hà một mình).
+      Đồng nghiệp Lãm Chấn Hải chứng kiến, gọi cấp cứu, đưa vào bệnh viện Bạch Mai — Khải Phong
+      không có mặt lúc tai nạn, tới bệnh viện sau mẹ Hạ Vy một giờ (ep_31 dòng 235-247, ep_32
+      dòng 155-257, ep_36-39). Tin nhắn Hạ Vy gửi thành công cuối cùng: "Anh ơi em sắp về — chờ
+      em — em ăn cơm nhà"; còn một tin nhắn dở dang chưa gửi trên điện thoại "Anh ơi em yêu" (3
+      từ, viết dở khi đang lái xe máy giữa mưa, ep_41 dòng 233-259). Khải Phong từng hứa miệng
+      (chưa cưới, chưa đặt vé) sẽ đưa Hạ Vy đi Hàn Quốc trăng mật — lời hứa không giữ được
+      (ep_47 dòng 229-257).
+
+      LƯU Ý MÂU THUẪN CHƯA GIẢI QUYẾT (ghi nhận, KHÔNG tự sửa episode — xem
+      governance/TECH_DEBT.md DEBT-035): output/ep_01/episode.md (dòng 100, 232-362) kể một
+      version KHÁC — Khải Phong ngồi GHẾ SỐ BẢY (không phải ghế ba), Hạ Vy mất trong tai nạn
+      TAXI tại New York (Mỹ) ngay sau khi hạ cánh du học, đồng hồ dừng đúng 7:10. EP01 là tập
+      DUY NHẤT trong 50 tập lệch cả 2 chi tiết này (49/50 tập còn lại — kể cả EP02/EP06-10
+      không có tag — đều dùng "ghế thứ ba" nhất quán). Nhiều khả năng EP01 là bản nháp gốc
+      viết trước khi bible/21 memory-arc + rename "Nam"->"Khải Phong" (commit 148a80c, 27/6)
+      được đối chiếu lại — CHƯA được rà soát/hợp nhất. core_wound này field-hoá theo phiên bản
+      EP11-50 (nguồn nhất quán, 40 tập, chính là mach hồi ức trung tâm series) — KHÔNG dùng
+      EP01 làm nguồn chính cho core_wound.
     relationship_map:
-      - "bà nội (mất): wound chính"
-      - "mẹ Nam: còn sống, ở quê — Nam tránh gọi vì sợ giống cảnh với bà"
-      - "người yêu cũ: chia tay vì Nam 'không có mặt khi cần'"
-      - "bác tài: dần nhận bác tài giống ông nội"
-    arc_position:
-      ep_21_29: "xuất hiện rải rác qua ký ức người khác (chưa lộ là POV)"
-      ep_30: "lên xe lần đầu, ngồi ghế 7"
-      ep_31_60: "thân với 1-2 hành khách, nhận bác tài quen"
-      ep_61_72: "nghi mình liên quan chuyến 73"
-      ep_73: "ngồi ghế 13 → reveal chính là hành khách 73"
-      ep_74_90: "chấp nhận, học lái"
-    secret_for_audience: "chính Nam = hành khách 73 (reveal ep 73)"
+      - "Hạ Vy (đã mất): wound chính — tình yêu chưa nói hết, lời hứa Hàn Quốc chưa giữ được"
+      - "Hạ Nhi (em/chị gái Hạ Vy — bible/23 canon_waivers ghi 'chị gái ruột'): xuất hiện lại
+        ep_45 (nhắn tin) + ep_50 (lên xe, đưa thiệp cưới)"
+      - "Lãm Chấn Hải (đồng nghiệp Hạ Vy, văn phòng Mộc Hà): người chứng kiến tai nạn, gọi cấp
+        cứu — lên xe gặp Khải Phong ep_40"
+      - "bác tài: hỏi Khải Phong đúng 2 câu cố định mỗi đêm ('Con đã nhớ ra chưa?' / 'Chưa tới
+        lúc.') — xem bible/00#R42, bible/21#quang_memory_arc"
+    arc_position: |
+      Field-hoá theo bible/21_series_arc_design.yaml#quang_memory_arc (LOCKED 12/7) — nguồn duy
+      nhất cho toàn bộ 90 EP, TRÁNH lặp bảng ở đây (R211, không nhân đôi domain arc-design vào
+      character-bible). Tóm tắt cấp cao, CHỈ phần đã có episode thật đối chiếu (M1-M10, EP1-50):
+      Khải Phong ngồi cố định ghế thứ ba mỗi đêm, không biết vì sao (M1, EP1-5) → nhớ dần từng
+      mảnh quá khứ với Hạ Vy qua 10 mốc M3-M10 (EP11-50, xem bảng đầy đủ trong
+      governance/proposals/bible03_driver_memory_arc_proposal.yaml#bang_arc_40_tap) → EP50 = S1
+      finale, xếp 50 vật thành bản đồ dẫn tới quê Hạ Vy, Hạ Nhi xuất hiện trên xe.
+      M11-M18 (EP51-90) VẪN LÀ KẾ HOẠCH CHƯA VIẾT (bible/21, chưa có episode đối chiếu) — GHI
+      CHÚ RIÊNG: nội dung dự kiến M13-M15 ("Khải Phong tự lái xe máy chở Hạ Vy đêm tai nạn") có
+      dấu hiệu CHƯA khớp với chi tiết đã xác nhận ở EP31-41 (Hạ Vy tự đi xe máy một mình, anh
+      Hải đi phía sau chứng kiến — KHÔNG có Khải Phong trên xe cùng đêm đó) — xem
+      governance/TECH_DEBT.md DEBT-035, cần Mr.Long xác nhận khi EP61-75 được viết thật, KHÔNG
+      tự suy diễn thêm ở đây (R195).
+    secret_for_audience: "Khải Phong không biết vì sao mình luôn ngồi cố định ghế thứ ba mỗi
+      đêm, thu thập kỷ vật hành khách khác để lại — bản chất thật của Khải Phong (còn sống,
+      linh hồn, hay gì khác) CHƯA được 50 tập đã viết (EP1-50) xác nhận trực tiếp. Kế hoạch
+      bible/21 M16-M18 (EP76-90, CHƯA VIẾT) dự kiến Khải Phong dần nhận ra 'mình là hành khách
+      — không phải nhân chứng' — nội dung cụ thể CHƯA có episode để đối chiếu, không field-hoá
+      như sự thật đã xác nhận."
 
 no_other_recurring_characters: true
-note: "Ngoài bác tài + Nam, mọi hành khách khác one-shot — KHÔNG tạo recurring mới."
+note: "Ngoài bác tài + Khải Phong, mọi hành khách khác one-shot — KHÔNG tạo recurring mới."

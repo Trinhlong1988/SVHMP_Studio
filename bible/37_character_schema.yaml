@@ -149,5 +149,5 @@ reconciliation:
   naming: "bible/23 quản lý sinh tên — schema này KHÔNG sinh tên, chỉ dùng char_name có sẵn."
   regret: "regret_type ← bible/11 pillar/sub (đã khóa 32/24/20/14/10)."
   object: "object_link ← bible/12. setting ← bible/13."
-  recurring: "CHAR_DRIVER + CHAR_NAM (bible/03) đã đủ tier_1 → import làm mẫu."
+  recurring: "CHAR_DRIVER + CHAR_KHAI_PHONG (bible/03, id đổi từ CHAR_NAM 12/7) đã đủ tier_1 → import làm mẫu."
   roster_migration: "roster hiện thiếu child/elderly/death/voice → cần Mr.Long duyệt enrich/regen (đụng framework_lock)."

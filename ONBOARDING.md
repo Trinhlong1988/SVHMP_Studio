@@ -289,7 +289,8 @@ Size: 1,081,644 bytes (~13.52s @ 22050 Hz mono)
 
 ```
 bible/00_constitution.yaml       — R_SUPREME + R60-R198 hiến pháp
-bible/03                          — Recurring characters (CHAR_DRIVER + CHAR_NAM only)
+bible/03                          — Recurring characters (CHAR_DRIVER + CHAR_KHAI_PHONG only;
+                                     id đổi từ CHAR_NAM 12/7, xem bible/03 v1.1 changelog)
 bible/11                          — Regret catalog (27 sub-archetypes)
 bible/12                          — Object library (71+ OBJ_)
 bible/13                          — Setting library (21+ setting_)
@@ -496,7 +497,7 @@ Rule: BẮT BUỘC backup + SHA256 fingerprint + diff BEFORE apply patch (R7 + R
 
 - 15 passenger names FORBIDDEN Mr.Long: Nam, Tài, Quang, Hưng, Long, Trang, Linh, Nhung, Lương, Khánh, An, Tùng, Tiến, Tú, Mai
 - CẤM "Hắc Vỹ Dạ" trong text/asset/memory
-- CẤM tự tạo character mới ngoài bible/03 (CHAR_DRIVER + CHAR_NAM)
+- CẤM tự tạo character mới ngoài bible/03 (CHAR_DRIVER + CHAR_KHAI_PHONG — id đổi từ CHAR_NAM 12/7)
 - CẤM skip QA gate STAGE 1 (R91 hardlock — svhmp_v13_render.py main() abort sys.exit 2 nếu R86 fail)
 - CẤM reactive iterate — workflow LOCKED proactive
 - CẤM Ollama keep_alive=0 assumption (memory feedback_ollama_keepalive_vram_truth)

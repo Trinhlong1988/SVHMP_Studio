@@ -1025,20 +1025,38 @@ R45_context_block:
 
 R42_driver_foreshadow_line_allowed_cliffhanger:
   # round 7 add 2026-06-27 (Mr.Long audit 100-check phát hiện 35 EPs có driver line 3 — refine SERIES_RULES.driver)
-  rule: "Driver CHO PHÉP nói câu thứ 3 trong CLIFFHANGER nếu là 'foreshadow memory progression' (R35)"
+  # v2 add 2026-07-12 (TU CHỈNH có ủy quyền — governance/proposals/bible03_driver_memory_arc_proposal.yaml
+  # APPROVED_A — bổ sung allowed_format thứ 3 cho vị trí HOOK, "khoảng trống thật" đã xác nhận:
+  # 2 format cũ chỉ khai CLIFFHANGER/REVEAL, THIẾU format cho extra_beat_HOOK (9 tập PEAK-of-M-block,
+  # bible/21_series_arc_design#extra_beat_HOOK).
+  rule: "Driver CHO PHÉP nói câu thứ 3 trong CLIFFHANGER nếu là 'foreshadow memory progression' (R35),
+    HOẶC ở vị trí HOOK (section 1, trước khi đón khách) nếu đúng điều kiện extra_beat_HOOK
+    (bible/21#extra_beat_HOOK — PEAK-of-M-block HOẶC lần đầu giới thiệu cơ chế)."
   rationale: |
     SERIES_RULES.driver gốc cấm câu thứ 3 trừ EP73 + EP90.
     NHƯNG R35 (Khải Phong memory M1-M18) cần bác tài foreshadow đêm sau Khải Phong sẽ nhớ gì.
     Foreshadow line trong CLIFFHANGER là design intent — KHÔNG phải vi phạm.
     Format chuẩn: "Bác tài liếc gương. 'Đêm N. Con đã nhớ X. Đêm sau con sẽ nhớ Y. Đừng vội.'"
+    v2 (12/7): 9/40 tập (EP12/15/20/25/30/35/40/45/50) CÒN có thêm 1 câu "đếm thêm" ở HOOK
+    (section 1) — khác vị trí với beat_3 CLIFFHANGER, đã tồn tại thật trong văn bản đã viết
+    trước khi rule này được field-hoá (bible/21#extra_beat_HOOK ghi bằng chứng episode:dòng).
+    Không field-hoá format thứ 3 nghĩa là enforcer chỉ đếm "extras" gộp chung → 9 tập này có
+    2 extras (1 HOOK + 1 CLIFFHANGER) sẽ bị flag sai (R55 vốn chỉ cho phép 1 extra/tập).
   allowed_format:
-    - "Bác tài liếc gương. \"Đêm thứ N. ...Đừng vội.\""
+    - "Bác tài liếc gương. \"Đêm thứ N. ...Đừng vội.\""  # CLIFFHANGER section 6, beat_3 baseline
     - "Bác tài cất lời. \"...\""  # within REVEAL section (passenger trigger)
+    - "Khải Phong đếm thêm / Đêm thứ N — Khải Phong đếm thêm."  # HOOK section 1, CHỈ 9 tập
+      # extra_beat_HOOK (bible/21#extra_beat_HOOK) — PEAK-of-M-block HOẶC lần đầu giới thiệu
+      # cơ chế (EP12). KHÁC beat_3 (không phải CLIFFHANGER) và KHÁC beat_2 payoff (không phải
+      # REVEAL). Cho phép TỐI ĐA 1 lần/tập, CHỈ trong danh sách 9 tập đã field-hoá.
   not_allowed:
     - Random extra chat từ bác tài không liên quan memory/foreshadow
     - Explanation dump lore từ bác tài (NEVER_7 explanation_dump giữ nguyên)
-  enforcement: Generator pre-write check format + QA accept foreshadow context
-  cross_ref: [bible/21_series_arc_design R35, bible/00 SERIES_RULES.driver]
+    - "extra_beat_HOOK ở EP KHÔNG nằm trong danh sách 9 tập đã field-hoá (bible/21#extra_beat_HOOK.eps)"
+  enforcement: Generator pre-write check format + QA accept foreshadow context + tools/audit_hidden_bugs.py
+    (driver_extra_overuse, mở rộng 2026-07-12 để phân biệt HOOK vs CLIFFHANGER extras)
+  cross_ref: [bible/21_series_arc_design R35, bible/21_series_arc_design#extra_beat_HOOK,
+    bible/00 SERIES_RULES.driver, R55_driver_R42_strict_enforce]
 
 R43_tier2_filler_cap_per_ep:
   # round 7 add 2026-06-27 (audit phát hiện filler tier 2 tổng 179 / 40 EPs)

@@ -1,12 +1,17 @@
 # SVHMP — 21 SERIES ARC DESIGN (EP-level arc map 90 EPs)
 # Lock date: 2026-06-27 (round 4 — chống "lộn xộn no arc")
-# Status: PROPOSAL — pending Mr.Long approve
+# Status: LOCKED (2026-07-12 — per governance/proposals/bible03_driver_memory_arc_proposal.yaml
+#   quyet_dinh_cuoi, Mr.Long APPROVED_A. 40/40 tập EP11-50 đã viết khớp gần như tuyệt đối với
+#   quang_memory_arc M1-M10 dưới đây — LOCK ở đây chính thức hoá bản kế hoạch đã dùng thật.
+#   M11-M18 (EP51-90) VẪN LÀ KẾ HOẠCH CHƯA VIẾT — LOCK xác nhận bản đồ, KHÔNG xác nhận nội
+#   dung M11-M18 đã khớp thực tế (chưa có episode để đối chiếu).)
 # Loaded by: Generator (pre-write arc target lookup) / QA Lock PHASE 12.16-12.18 / Director arc orchestrate
-# Cross-ref: bible/00_constitution.yaml#SERIES_ARC_RULES R33-R38
+# Cross-ref: bible/00_constitution.yaml#SERIES_ARC_RULES R33-R38, R42_driver_foreshadow_line_allowed_cliffhanger
 
-version: 1.0
+version: 1.1
 lock_date: 2026-06-27
-status: PROPOSAL
+locked_date: 2026-07-12
+status: LOCKED
 purpose: |
   EP-level arc map cho 90 EPs. Codify "bản nhạc" series — từng EP có vai trò trong arc tổng.
   Mỗi EP có 5 attribute arc-level:
@@ -112,6 +117,35 @@ quang_memory_arc:
     cliffhanger_hint: "Khải Phong đã đợi — Hà đang chờ"
     milestone_ep: 90
     milestone_special: "EP90 SERIES FINALE = Khải Phong xuống xe — Hạ Vy đứng đợi ở stop"
+
+# ------------------------------------------------------------
+# EXTRA_BEAT_HOOK (thêm 2026-07-12 — per governance/proposals/
+# bible03_driver_memory_arc_proposal.yaml quyet_dinh_cuoi.
+# cau_tra_loi_3_diem_mo.extra_beat_HOOK_cong_thuc, Mr.Long APPROVED_A)
+# ------------------------------------------------------------
+# Mô tả cơ chế bác tài nói "câu thứ ba" Ở VỊ TRÍ HOOK (section 1, TRƯỚC khi xe đón khách) —
+# PHÂN BIỆT với beat_3 baseline (đoạn độc thoại leo thang trong CLIFFHANGER, section 6,
+# LUÔN xuất hiện ở cả 40/40 tập, đã được R42/R55 công nhận từ 27/6/2026 — KHÔNG phải cơ chế
+# mới, chỉ là chỗ bible/03 chưa trỏ sang).
+extra_beat_HOOK:
+  eps: [12, 15, 20, 25, 30, 35, 40, 45, 50]
+  formula: "PEAK-of-M-block HOẶC lần đầu giới thiệu cơ chế (EP12 — ngoại lệ DUY NHẤT, KHÔNG
+    phải PEAK của M3 nhưng là lần đầu cơ chế 'đếm thêm' xuất hiện trong toàn mạch, tự nhận
+    trong frontmatter 'driver extra line'). Công thức khớp 9/9 trường hợp đã biết trong dữ
+    liệu đã đọc (EP11-50) — KHÔNG có ngoại lệ khác."
+  evidence: "output/ep_12/episode.md dòng 57 ('Đêm thứ mười hai — Khải Phong đếm thêm') xác
+    nhận EP12 là lần đầu cơ chế đêm-đếm-thêm xuất hiện, khớp ghi chú sẵn có trong
+    governance/proposals/bible03_driver_memory_arc_proposal.yaml#bang_arc_40_tap. 8/9 tập còn
+    lại (EP15/20/25/30/35/40/45/50) đều đúng PEAK cuối khối M-level tương ứng (xem
+    quang_memory_arc.M3..M10 phía trên, field `peak` trong bang_arc_40_tap)."
+  vi_tri: "HOOK (section 1) — TRƯỚC khi xe đón khách. KHÁC với beat_3 baseline (CLIFFHANGER,
+    section 6) và KHÁC với beat_2 payoff (REVEAL section, passenger trigger)."
+  cross_ref: "bible/00_constitution.yaml#R42_driver_foreshadow_line_allowed_cliffhanger
+    allowed_format thứ 3 (bổ sung 2026-07-12) + R55_driver_R42_strict_enforce +
+    tools/audit_hidden_bugs.py (enforcer driver_extra_overuse, mở rộng 2026-07-12 để nhận
+    diện extra_beat_HOOK riêng khỏi baseline CLIFFHANGER)."
+  note: "9 tập trong danh sách CÓ 2 câu thoại 'thừa' (1 HOOK + 1 CLIFFHANGER) thay vì 1 —
+    ĐÚNG THIẾT KẾ, không phải vi phạm R55 lặp."
 
 # ============================================================
 # PILLAR INTERLEAVE MAP (EP1-50 — phase S1)
@@ -270,3 +304,12 @@ changelog:
     note: |
       Initial design. Trigger: Mr.Long reject EP11-41 lộn xộn no arc.
       Pending approve. Cross-ref bible/00 SERIES_ARC_RULES R33-R38.
+  - version: 1.1
+    date: 2026-07-12
+    author: cmd_build
+    note: |
+      status PROPOSAL -> LOCKED (Mr.Long APPROVED_A, governance/proposals/
+      bible03_driver_memory_arc_proposal.yaml). Bổ sung khối extra_beat_HOOK
+      (9 tập PEAK-of-M-block + ngoại lệ EP12 lần đầu giới thiệu cơ chế).
+      TU CHỈNH bible đã SIGNED, có ủy quyền (per proposal APPROVED_A) — KHÔNG
+      phải sửa tự do. bible/03 CHAR_DRIVER cập nhật đồng bộ để trỏ sang đây.

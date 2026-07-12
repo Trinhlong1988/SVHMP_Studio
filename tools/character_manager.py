@@ -5,7 +5,8 @@ Nguyen tac tich hop (KHONG lam lai cai da co):
 - Sinh/quan ly TEN: da co `tools/build_name_pool.py` + `tools/gen_100_passenger.py` + bible/23.
   -> Manager nay CHI CONSUME roster da sinh, KHONG generate ten. Chi VALIDATE theo bible/23 + ENRICH truong.
 - Skeleton roster: `runtime/passenger_roster_100.yaml` (core fields).
-- Recurring: `bible/03_character_bible.yaml` (CHAR_DRIVER + CHAR_NAM — da dinh danh day du).
+- Recurring: `bible/03_character_bible.yaml` (CHAR_DRIVER + CHAR_KHAI_PHONG — da dinh danh
+  day du; id doi tu CHAR_NAM 12/7, xem bible/03 v1.1 changelog).
 - Truong MO RONG (Boss 1/7): physical/attire/personality/voice/background/death/relationships.
   Voice+quehuong+noio CUC KY QUAN TRONG -> chi phoi SINH DIALOG (giong dia phuong, xung ho, tu vung).
 

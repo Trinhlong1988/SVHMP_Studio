@@ -85,3 +85,17 @@ DRIVER_BUDGET_PEAK_EPS = frozenset(MILESTONE_EPS | {73})
 # See "EP1" section above — NOT asserted to be governance-backed, kept only
 # for zero-regression parity pending a Boss decision.
 LEGACY_AUDIT_EXEMPT_EPS = frozenset(DRIVER_BUDGET_PEAK_EPS | {1})
+
+# --------------------------------------------------------------------------
+# EXTRA_BEAT_HOOK_EPS — bible/21_series_arc_design.yaml#extra_beat_HOOK (added
+# 2026-07-12, per governance/proposals/bible03_driver_memory_arc_proposal.yaml
+# quyet_dinh_cuoi, Mr.Long APPROVED_A).
+# --------------------------------------------------------------------------
+# 9 EPs where CHAR_DRIVER legitimately says an ADDITIONAL "câu thứ ba" at the HOOK
+# position (section 1, before boarding) — distinct from the section-6 CLIFFHANGER
+# baseline beat_3 that bible/00#R42/#R55 already recognized for ALL 40/40 tagged
+# EPs. Formula (confirmed against episode text, not speculation — see proposal
+# quyet_dinh_cuoi.cau_tra_loi_3_diem_mo.extra_beat_HOOK_cong_thuc): PEAK-of-M-block
+# (quang_memory_arc) OR first-instance of the mechanism (EP12 — the one exception,
+# not a PEAK, but the night the "đếm thêm" device is introduced for the first time).
+EXTRA_BEAT_HOOK_EPS = frozenset({12, 15, 20, 25, 30, 35, 40, 45, 50})

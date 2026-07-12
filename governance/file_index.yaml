@@ -376,6 +376,12 @@ files:
     domain: text_qa
     status: active
     tier: 3
+  tests/test_audit_hidden_bugs_extra_beat_hook.py:   # DEBT-032 v2 (12/7): mutation-proof test
+                                                       # cho driver_extra_overuse_flag() +
+                                                       # split_driver_extra_quotes() (extra_beat_HOOK)
+    domain: text_qa
+    status: active
+    tier: 3
   tools/audit_ngan_opening_template.py:
     domain: text_qa
     status: active
@@ -1557,4 +1563,4 @@ files:
     status: active
     tier: 1
 generated_by: tools/registry_triage.py
-total: 389
+total: 390

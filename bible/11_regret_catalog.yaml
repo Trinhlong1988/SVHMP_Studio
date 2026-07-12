@@ -38,7 +38,10 @@ pillars:
         signature_objects: [OBJ_KHAN_TAY_CU, OBJ_BANG_CASSETTE]
         pairable_archetypes: [ARCH_08_ba_co_don, ARCH_09_con_roi_nha]
         pairable_settings: [setting_dem_giao_thua, setting_dong_lanh]
-        note: "Đây là core_wound của Nam (03_character_bible.CHAR_NAM)."
+        note: "LỊCH SỬ: từng là core_wound của hồ sơ CHAR_NAM (03_character_bible.yaml, ban
+          nháp 19/6, chưa từng dùng trong episode nào). bible/03 v1.1 (12/7) thay CHAR_NAM
+          bằng CHAR_KHAI_PHONG (wound thật: Hạ Vy) — REG_FAM_002 KHÔNG còn map tới character
+          nào trong bible/03, giữ nguyên làm archetype chung dùng cho hành khách one-shot."
 
       - id: REG_FAM_003
         label: "Cha câm lặng — con không hiểu cha"

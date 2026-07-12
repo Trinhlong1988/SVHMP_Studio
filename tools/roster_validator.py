@@ -191,8 +191,9 @@ def check_c5_knowledge_consistency(bible37, passengers):
 
 
 # C1 MIEN TRU ten canon trich TRUC TIEP tu episode.md DA PHAT HANH (khong phai sinh
-# moi tu pool) - cung nguyen tac voi bible/23 CHAR_NAM='Nam'/CHAR_DRIVER='Bac tai' (MIEN
-# TRU vi recurring), nhung day la waiver 1-lan, KHONG phai recurring. Pham vi HEP, tung
+# moi tu pool) - cung nguyen tac voi bible/23 CHAR_KHAI_PHONG='Khai Phong'/CHAR_DRIVER=
+# 'Bac tai' (MIEN TRU vi recurring, id doi tu CHAR_NAM 12/7 - xem bible/03 v1.1 changelog),
+# nhung day la waiver 1-lan, KHONG phai recurring. Pham vi HEP, tung
 # ten phai ghi ro nguon (waiver ep_30/ep_50, Mr.Long xac nhan 5/7) - KHONG duoc dung de
 # nhet ten bia sau nay.
 C1_CANON_SINGLE_SYLLABLE_EXEMPT = {

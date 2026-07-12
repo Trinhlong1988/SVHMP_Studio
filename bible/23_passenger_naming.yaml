@@ -10,6 +10,9 @@ v1_1_date: 2026-07-03
 authority: Mr.Long
 supersedes: none
 v1_1_note: "v1.1 THÊM rule_06..09 (region/generation/culture/vietnamese) — rule_01..05 GIỮ NGUYÊN VĂN, KHÔNG sửa. TASK_G2_CHARACTER B1, Mr.Long ký 2026-07-03. Pool tên cụ thể theo vùng CHƯA ký (chờ hybrid classification riêng)."
+sync_note_12_07: "Đồng bộ tham chiếu character_id CHAR_NAM -> CHAR_KHAI_PHONG (bible/03 v1.1,
+  per proposal bible03_driver_memory_arc_proposal.yaml APPROVED_A) — CHỈ đổi tên tham chiếu ở
+  rule_01/02/04/validation_hooks/cross_bible_refs, KHÔNG đổi nội dung/enforcement RULES gốc."
 
 # ============================================================
 # RULES (HARD-FAIL nếu vi phạm — QA enforce)
@@ -22,12 +25,15 @@ RULES:
     examples_valid: ["Hạ Vi", "Tường Vi", "Diệu Nhi", "Minh Khang", "Hoàng Long"]
     examples_invalid: ["Loan", "Khải Phong", "Nam", "Hạ Vy", "Tâm"]
     enforcement: QA HARD-FAIL nếu char_name có 1 word duy nhất
-    note: "Exception: CHAR_DRIVER='Bác tài' (recurring, KHÔNG là passenger). CHAR_NAM='Nam' (recurring, MIỄN TRỪ)."
+    note: "Exception: CHAR_DRIVER='Bác tài' (recurring, KHÔNG là passenger). CHAR_KHAI_PHONG=
+      'Khải Phong' (recurring — id đổi từ CHAR_NAM 12/7, bible/03 v1.1; 'Khải Phong' đã 2 âm
+      tiết, TỰ khớp rule_01, không còn cần miễn trừ 1-âm-tiết như 'Nam' trước đây)."
 
   rule_02_word_uniqueness_global:
     description: "TUYỆT ĐỐI KHÔNG dùng cùng WORD (âm tiết) trong 2 tên khác nhau. Vd: Hạ Vi → CẤM Tường Vi."
     enforcement: QA HARD-FAIL nếu intersection(words(name_A), words(name_B)) != ∅ với A ≠ B
-    scope: cross-passenger (toàn bộ 88-100 hành khách + recurring CHAR_NAM)
+    scope: cross-passenger (toàn bộ 88-100 hành khách + recurring CHAR_KHAI_PHONG, id đổi từ
+      CHAR_NAM 12/7)
     rationale: "Mr.Long 27/6 — tránh viewer confuse 2 nhân vật cùng âm cuối/đầu."
 
   rule_03_pool_size_match_count:
@@ -36,8 +42,12 @@ RULES:
     note: "Recommend pool 50 nu + 50 nam minimum (100 unique names total)."
 
   rule_04_avoid_recurring_collision:
-    description: "Passenger naming KHÔNG được trùng/giống tên recurring (CHAR_NAM='Nam', CHAR_DRIVER='Bác tài')."
-    enforcement: passenger pool MUST exclude 'Nam' as a word.
+    description: "Passenger naming KHÔNG được trùng/giống tên recurring (CHAR_KHAI_PHONG=
+      'Khải Phong' — id đổi từ CHAR_NAM 12/7, CHAR_DRIVER='Bác tài')."
+    enforcement: "passenger pool MUST exclude 'Nam' as a word (giữ nguyên — 'Nam' vẫn nằm
+      trong 15 tên cấm Mr.Long độc lập với đổi tên recurring character, xem CLAUDE.md forbidden
+      list). CHƯA mở rộng loại trừ 'Khải'/'Phong' — thay đổi enforcement scope là quyết định
+      cần Mr.Long duyệt riêng (ngoài phạm vi TU CHỈNH 12/7, tránh phá roster 139 đã LOCK)."
     scope: feminine + masculine pool
 
   rule_05_aesthetic_quality:
@@ -88,7 +98,8 @@ validation_hooks:
   post_gen:
     - "Audit 100 passenger: 100/100 unique full-name"
     - "Audit 200 syllables: 200/200 distinct (50 nu × 2 + 50 nam × 2)"
-    - "Audit no collision với CHAR_NAM ('Nam' word)"
+    - "Audit no collision với CHAR_KHAI_PHONG (id đổi từ CHAR_NAM 12/7) — enforcement giữ
+      nguyên loại trừ 'Nam' word (Mr.Long forbidden list), CHƯA mở rộng loại trừ 'Khải'/'Phong'"
 
 # ============================================================
 # CANON WAIVERS (DEBT-020 — Mr.Long duyệt 2026-07-11, per ping 08:51)
@@ -126,6 +137,6 @@ canon_waivers:
 
 cross_bible_refs:
   bible_00: SERIES_RULES (passenger one-shot) — bible/23 extends naming detail
-  bible_03: CHAR_DRIVER + CHAR_NAM recurring (excluded từ pool)
+  bible_03: CHAR_DRIVER + CHAR_KHAI_PHONG recurring (excluded từ pool; id đổi từ CHAR_NAM 12/7)
   bible_11: regret_catalog (pillar/sub_archetype, naming-agnostic)
   bible_12: object_library (signature_object, naming-agnostic)

@@ -124,7 +124,8 @@ knobs:
   - knob_id: character_focus
     type: enum
     units: character_id_focal_moi_scene
-    values_source: "runtime/passenger_roster_100.yaml (PAS_*) + bible/03 (CHAR_DRIVER/CHAR_NAM) — id that, KHONG liet ke cung o day"
+    values_source: "runtime/passenger_roster_100.yaml (PAS_*) + bible/03 (CHAR_DRIVER/CHAR_KHAI_PHONG,
+      id doi tu CHAR_NAM 12/7) — id that, KHONG liet ke cung o day"
     desc: "Nhan vat focal moi scene — phai co Tier1 du (completeness gate R210) truoc khi generator viet."
     consumer: {domain: generator, access: read_only, per_bp3: true}
     calibration_source: {calibrate_from: "bible/31_golden_samples.yaml + EP01 golden", method: "focal per scene golden", status: planned_G6}

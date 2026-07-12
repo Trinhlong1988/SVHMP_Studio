@@ -19,13 +19,20 @@ CANON_CHAR_DRIVER:
   full_def_ref: "bible/03_character_bible.yaml#CHAR_DRIVER"
   immutable_fields: [id, display_name, role, visual, behavior, speech_lines, secret, why_white_gloves]
 
-CANON_CHAR_NAM:
-  id: CHAR_NAM
-  role: POV_PROTAGONIST
-  display_name: "Nam"
-  first_seen_ep_indirect: 21    # qua ký ức người khác
-  first_seen_ep_direct: 30      # lên xe lần đầu
-  full_def_ref: "bible/03_character_bible.yaml#CHAR_NAM"
+CANON_CHAR_KHAI_PHONG:
+  # v2 12/7: id đổi từ CHAR_NAM (bible/03 v1.1, per proposal bible03_driver_memory_arc_
+  # proposal.yaml APPROVED_A). display_name/first_seen_ep CŨNG sửa lại cho khớp bằng chứng
+  # thật (bản CHAR_NAM cũ "Nam"/first_seen indirect-21/direct-30 CHƯA từng khớp episode nào
+  # đã viết — 0/50 tập dùng tên "Nam" cho nhân vật POV; "Khải Phong" ngồi ghế thứ ba, xuất
+  # hiện từ EP01/EP02, xác nhận nhất quán EP02+EP06-50). Registry này vốn ghi theo kế hoạch
+  # cũ chưa từng đối chiếu episode thật — sửa lại để full_def_ref không trỏ tới id không còn
+  # tồn tại trong bible/03.
+  id: CHAR_KHAI_PHONG
+  role: RECURRING_PASSENGER_POV
+  display_name: "Khải Phong"
+  first_seen_ep: 1               # xuất hiện từ EP01 (EP01 dùng chi tiết ghế 7, EP02-50 dùng
+                                  # ghế 3 nhất quán — xem governance/TECH_DEBT.md DEBT-035)
+  full_def_ref: "bible/03_character_bible.yaml#CHAR_KHAI_PHONG"
   immutable_fields: [id, display_name, age, visual, personality, fear, core_wound, secret]
 
 # ============================================================

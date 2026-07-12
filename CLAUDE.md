@@ -43,11 +43,13 @@
 ## Bibles (immutable)
 
 - `bible/00` Constitution (ALWAYS_5 + NEVER_7 + GHOST_RULES_3 + SERIES_RULES_8 + ENDING_RULES_2)
-- `bible/03` Recurring chars (CHAR_DRIVER + CHAR_NAM only — CẤM tạo mới)
+- `bible/03` Recurring chars (CHAR_DRIVER + CHAR_KHAI_PHONG only — CẤM tạo mới; id đổi từ
+  CHAR_NAM 12/7, per proposal bible03_driver_memory_arc_proposal.yaml APPROVED_A)
 - `bible/11` Regret catalog (27 sub-archetypes, distribution 32/24/20/14/10)
 - `bible/12` Object library (71+ OBJ_)
 - `bible/13` Setting library (21+ setting_)
 - `bible/18` Driver reveal budget (EP73 + EP90 reserved)
+- `bible/21` Series arc design (M1-M18 quang_memory_arc + extra_beat_HOOK — LOCKED 12/7)
 - `bible/22` Anti-slop VN (32 rules)
 - `bible/23` Passenger naming (5 rules, Mr.Long lock 27/6)
 

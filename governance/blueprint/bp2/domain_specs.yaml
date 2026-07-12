@@ -202,7 +202,7 @@ domains:
          enforcer: {status: exists, path: tools/character_balance_report.py}}
       - {rule: "Ten theo bible/23 (5 luat + 15 ten cam Mr.Long)",
          enforcer: {status: exists, path: tools/build_name_pool.py}}
-    entities_note: "100 passenger LOCK tai runtime/passenger_roster_100.yaml; recurring CHI CHAR_DRIVER + CHAR_NAM (bible/03 CAM tao moi)"
+    entities_note: "100 passenger LOCK tai runtime/passenger_roster_100.yaml; recurring CHI CHAR_DRIVER + CHAR_KHAI_PHONG (bible/03 CAM tao moi; id doi tu CHAR_NAM 12/7)"
   object:
     facets:
       - {facet_id: object_catalog, desc: "71+ OBJ_ vat pham neo hoi uc", data_type: mapping,

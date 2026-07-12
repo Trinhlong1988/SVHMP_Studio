@@ -33,8 +33,9 @@ NAMES_DB = SVHMP / 'data' / 'vietnamese_names_extended.yaml'
 OUT_DRAFT = SVHMP / 'runtime' / 'roster_backfill_draft.yaml'
 OUT_FINDINGS = SVHMP / 'reports' / 'G2_CONTINUITY_FINDINGS.md'
 
-# Recurring hợp lệ xuyên tập (bible/03: CHỈ CHAR_DRIVER + CHAR_NAM; rename toàn
-# dự án 148a80c: POV='Khải Phong', vai ký ức='Hạ Vy'; 'bác tài'=CHAR_DRIVER).
+# Recurring hợp lệ xuyên tập (bible/03: CHỈ CHAR_DRIVER + CHAR_KHAI_PHONG; rename toàn
+# dự án 148a80c: POV='Khải Phong', vai ký ức='Hạ Vy'; 'bác tài'=CHAR_DRIVER. bible/03 v1.1
+# 12/7 đổi id CHAR_NAM -> CHAR_KHAI_PHONG cho khớp tên thật đã dùng, xem changelog file đó).
 RECURRING_NAMES = {'Khải Phong', 'Hạ Vy'}
 KNOWLEDGE_MARKERS = ['bí mật', 'không ai biết', 'giấu', 'chưa từng kể', 'chưa kể ai', 'giấu kín']
 

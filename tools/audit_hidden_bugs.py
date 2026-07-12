@@ -3,7 +3,8 @@
 20 dimensions audit các pattern CHƯA detected by existing 13 tools:
 1. Timeline math (age vs life events consistency)
 2. Object collection counter accuracy
-3. Bác tài 2-line rule violation (câu thứ 3 ngoài milestone)
+3. Bác tài 2-line rule violation (câu thứ 3 ngoài milestone/extra_beat_HOOK — v2 12/7
+   DEBT-032: tính riêng vị trí HOOK theo bible/21#extra_beat_HOOK, xem driver_extra_overuse_flag())
 4. Ghost manifest > 1 / EP
 5. Section word count balance
 6. Pause marker per section
@@ -31,12 +32,63 @@ from collections import Counter, defaultdict
 sys.stdout.reconfigure(encoding='utf-8') if hasattr(sys.stdout, 'reconfigure') else None
 
 sys.path.insert(0, str(Path(__file__).parent))
-from milestones import LEGACY_AUDIT_EXEMPT_EPS  # single source (see tools/milestones.py)
+from milestones import LEGACY_AUDIT_EXEMPT_EPS, EXTRA_BEAT_HOOK_EPS  # single source (see tools/milestones.py)
 
 SVHMP = Path(__file__).resolve().parents[1]
 
 def strip_meta(text):
     return re.sub(r'```.*?```', '', text, flags=re.DOTALL)
+
+# --------------------------------------------------------------------------
+# DEBT-032 extension (2026-07-12) — extra_beat_HOOK awareness (bible/21#extra_
+# beat_HOOK + bible/00#R42 allowed_format thứ 3, per proposal APPROVED_A).
+# --------------------------------------------------------------------------
+DRIVER_QUOTE_PATTERN = re.compile(
+    r'Bác tài[^\n.]*?(?:cất lời|nói|đáp|bảo|hỏi|tiếp|liếc gương)[^"]*?"([^"]+)"'
+)
+# Ranh giới HOOK (section 1) — LUÔN đứng trước SETUP (section 2) hoặc INCIDENT
+# (section 3, nếu 1 tập thiếu SETUP). Dùng để tách quote "extra_beat_HOOK" (vị
+# trí HOOK) khỏi quote CLIFFHANGER/REVEAL baseline (bible/00#R42/#R55) — CHỈ ảnh
+# hưởng cách tính cho EP nằm trong EXTRA_BEAT_HOOK_EPS, KHÔNG đổi gì cho EP khác.
+HOOK_SECTION_END_PATTERN = re.compile(r'^#\s*(?:SETUP|INCIDENT)\s*\[section', re.MULTILINE)
+DRIVER_STANDARD_LINES = {'Con đã nhớ ra chưa?', 'Chưa tới lúc.'}
+
+
+def split_driver_extra_quotes(body):
+    """Tách quote 'thừa' của bác tài (ngoài 2 speech_lines chuẩn) thành 2 nhóm theo
+    VỊ TRÍ văn bản: (hook, rest). `hook` = quote xuất hiện TRƯỚC section SETUP/INCIDENT
+    (vùng extra_beat_HOOK). `rest` = quote ở CLIFFHANGER/REVEAL/nơi khác (baseline R42/
+    R55). `body` PHẢI đã qua strip_meta(). Thứ tự trong `hook`/`rest` giữ nguyên thứ tự
+    xuất hiện trong văn bản (khớp DRIVER_QUOTE_PATTERN.findall thứ tự gốc khi gộp lại).
+    """
+    m = HOOK_SECTION_END_PATTERN.search(body)
+    hook_end = m.start() if m else 0
+    hook, rest = [], []
+    for match in DRIVER_QUOTE_PATTERN.finditer(body):
+        q = match.group(1).strip()
+        if q in DRIVER_STANDARD_LINES:
+            continue
+        (hook if match.start() < hook_end else rest).append(q)
+    return hook, rest
+
+
+def driver_extra_overuse_flag(ep_num, body, extra_beat_hook_eps=EXTRA_BEAT_HOOK_EPS):
+    """True nếu tập `ep_num` có driver quote 'thừa' vượt R55 (bible/00#R55_driver_R42_
+    strict_enforce), CÓ tính extra_beat_HOOK (bible/21#extra_beat_HOOK, 9 tập field-hoá
+    2026-07-12): với EP trong `extra_beat_hook_eps`, quote ở vị trí HOOK KHÔNG tính vào
+    cap R55 (đã field-hoá là allowed_format thứ 3 của R42) — CHỈ phần NGOÀI HOOK
+    (CLIFFHANGER/REVEAL/khác) vẫn áp cap cũ (>1 = bug, KHÔNG nới thêm). Với EP KHÔNG nằm
+    trong `extra_beat_hook_eps`, hành vi Y HỆT code gốc trước 2026-07-12 (>1 tổng = bug)
+    — regression-safe, không đổi kết quả cho 41 EP còn lại.
+    Trả về (should_flag: bool, extras_count: int, sample_extras: list[str]).
+    """
+    hook, rest = split_driver_extra_quotes(body)
+    extras = hook + rest
+    if ep_num in extra_beat_hook_eps:
+        should_flag = len(rest) > 1
+    else:
+        should_flag = len(extras) > 1
+    return should_flag, len(extras), extras[:2]
 
 def load_eps():
     return {n: (SVHMP/'output'/f'ep_{n:02d}'/'episode.md').read_text(encoding='utf-8')
@@ -102,19 +154,17 @@ def main():
         print(f"  ✓ OK")
 
     # 3. Bác tài quotes — STRICT pattern (chỉ match khi bác tài là speaker)
-    print("\n[3] Bác tài quote ngoài 2 standard (strict regex):")
+    #    v2 (2026-07-12, DEBT-032): tính cả extra_beat_HOOK (bible/21#extra_beat_HOOK) —
+    #    xem driver_extra_overuse_flag() phía trên (logic đầy đủ, mutation-tested trong
+    #    tests/test_audit_hidden_bugs_extra_beat_hook.py).
+    print("\n[3] Bác tài quote ngoài 2 standard (strict regex, extra_beat_HOOK-aware):")
     non_ms_extra = []
-    # Strict: Bác tài + (cất lời|nói|đáp|bảo|hỏi|tiếp) + quote (loose newlines allowed)
-    strict_pattern = re.compile(r'Bác tài[^\n.]*?(?:cất lời|nói|đáp|bảo|hỏi|tiếp|liếc gương)[^"]*?"([^"]+)"')
     for n, t in eps.items():
         if n in LEGACY_AUDIT_EXEMPT_EPS: continue
         body = strip_meta(t)
-        driver_quotes = strict_pattern.findall(body)
-        standard = {'Con đã nhớ ra chưa?', 'Chưa tới lúc.'}
-        extras = [q for q in driver_quotes if q.strip() not in standard]
-        # R42 allows 1 foreshadow per CLIFFHANGER + 2 standard = 3 total max non-MS
-        if len(extras) > 1:  # > 1 extra = real bug
-            non_ms_extra.append((n, len(extras), extras[:2]))
+        should_flag, count, samples = driver_extra_overuse_flag(n, body)
+        if should_flag:
+            non_ms_extra.append((n, count, samples))
     if non_ms_extra:
         print(f"  🟡 {len(non_ms_extra)} EPs có >1 extra driver quote (R55)")
         for n, c, samples in non_ms_extra[:5]:
