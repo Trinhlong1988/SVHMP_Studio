@@ -2,6 +2,7 @@
 
 ---
 ## AUTO LOG (tự động cập nhật)
+- `22:53` **[FIX]** Em fix: DEBT-038 + R215 diem 6: promotion_guard._git utf-8 (cp1252 silent data-loss fix) + enforcer lop test_no_text_true_without_encoding (AST-scan tools/, ratchet 11 instance backlog) + hienphap R215 diem 6 (de xuat khong gate = rule-without-enforcer). 3 commit f20eb48(DEBT-036)/c830448(DEBT-038)/fbf65dc(R215.6) da push. CI 823 PASS.
 - `21:06` **[FIX]** Em fix: DEBT-035 phan#2 CLOSED + bless v8: EP01 cai chet Ha Vy NY/taxi -> Ha Noi/xe may khop canon bible/21, giu reveal budget EP73. Enforcer canon_consistency_check.py (mutation-proof, before FLAG 2 / after 0) khoa chat lop loi canon-contradiction. CMD_AUDIT tu tay verify + full suite 797/0. Golden v7->v8. Con MO: ghe 7-vs-3 + M13. commit 703b464.
 - `19:07` **[FIX]** Em fix: DEBT-037 CLOSED: nang test_preflight_has_regret_variety_gate_wired -> behavioral (unwire -> FAIL that) + tools test_no_greponly_wiring_guards.py meta-checker ratchet chong grep-only wiring-guard (fake -> FAIL). Sweep tim instance 2 (g2 character gate, allowlist). 2 agent build worktree, CMD_AUDIT tu tay audit+reconcile+verify truoc land. CLAUDE.md R215.5 CHUA CO -> DA CO enforcer. DEBT-032 check2 dong hoan toan. commit 941ecfe dang push.
 - `18:03` **[FIX]** Em fix: R215.5 vao hien phap: text-grep wiring-guard MU voi unwire (CMD_AUDIT tu tay tai hien tren DEBT-032 check2), + DEBT-037 (nang guard behavioral + meta-checker), + DEBT-036 do that 37->6 EP flag + proposal cho Mr.Long. Doc-only, khong doi hanh vi tool.
