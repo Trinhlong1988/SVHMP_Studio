@@ -296,6 +296,19 @@ nó chỉ sửa stdout của CHÍNH process, không đổi cách decode output c
 **Đề xuất quy trình (chống tái diễn):** grep repo tìm `text=True` không kèm `encoding=` trong mọi
 tool có thể chạy trên hook/CI = nợ tiềm ẩn cùng lớp — nên quét định kỳ.
 
+**CẬP NHẬT 16/7 (CMD_AUDIT, DEBT-hook):** "quét định kỳ" ở trên CHỈ là đề xuất, KHÔNG có enforcer →
+**lọt 1 instance:** `tools/promotion_guard.py::_git` (chạy trên pre-push hook) vẫn `text=True` thiếu
+`encoding=`. Trớ trêu: hàm này đọc `git log --format=%B` của range push qua `_range_messages`, nên
+1 commit message có dấu tiếng Việt là đủ kích hoạt cp1252 crash. Quan sát thật: trace pre-push 16/7
+`can't decode byte 0x90 in _readerthread`. **Non-fatal** lần này (crash nuốt trong reader-thread →
+`subprocess.run` trả stdout rỗng/cụt, guard vẫn in OK) — nhưng đó là silent data-loss: guard đọc
+NHẦM message rỗng, có thể BỎ SÓT vi phạm lock/tag. Đã fix `_git` (utf-8+errors=replace, parity
+`ci_gate.py`) + test mutation-proof `tests/test_promotion_guard_git_utf8.py` (3 case: roundtrip thật
+/ cp1252-không-faithful / introspect kwargs — flip fix → 2 FAIL). **ĐÃ CÓ ENFORCER lớp (biến "quét
+định kỳ" thành gate):** `tests/test_no_text_true_without_encoding.py` = AST-scan mọi
+`subprocess.run(text=True)` thiếu `encoding=` trong `tools/`, ratchet allowlist, FAIL nếu có instance
+MỚI ngoài danh sách đã biết — mutation-proof (thêm call vi phạm → FAIL).
+
 ## Bẫy R86 fix đẩy word_count vượt trần hard_ceiling (CMD_BUILD, 11/7, DEBT-018)
 **Triệu chứng:** Sửa vi phạm R86 (EOL NGA/NANG/HOI) bằng cách thêm 1 từ cuối câu (vd "đó", "rồi",
 "ấy") ở nhiều câu trong 1 tập — với tập vốn đã gần trần `hard_ceiling` (2900 từ, ep_25 gốc ~2870+),

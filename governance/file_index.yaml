@@ -392,6 +392,17 @@ files:
     domain: text_qa
     status: active
     tier: 3
+  tests/test_promotion_guard_git_utf8.py:   # DEBT-hook (16/7): mutation-proof test _git()
+                                            # capture git output utf-8+errors=replace (parity ci_gate)
+    domain: governance_audit
+    status: active
+    tier: 3
+  tests/test_no_text_true_without_encoding.py:   # DEBT-hook (16/7): enforcer LOP — AST-scan
+                                                 # tools/ subprocess text=True thieu encoding=,
+                                                 # ratchet allowlist (bien de xuat 9/7 thanh gate)
+    domain: governance_audit
+    status: active
+    tier: 3
   tools/audit_ngan_opening_template.py:
     domain: text_qa
     status: active
@@ -1585,4 +1596,4 @@ files:
     status: active
     tier: 3
 generated_by: tools/registry_triage.py
-total: 395
+total: 397

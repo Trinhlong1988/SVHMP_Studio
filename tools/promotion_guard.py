@@ -86,7 +86,13 @@ def decide(lock_change, tag_change, authorized, mass_delete=0):
 
 
 def _git(args, cwd=None):
-    r = subprocess.run(['git'] + args, capture_output=True, text=True, cwd=cwd)
+    # encoding='utf-8', errors='replace': git output (vd `log --format=%B` cua
+    # range push qua _range_messages) co the chua byte non-cp1252 — commit message
+    # tieng Viet co dau / blob nhi phan. Mac dinh text=True tren Windows dung cp1252
+    # -> reader-thread subprocess crash UnicodeDecodeError (byte 0x90...). Parity voi
+    # tools/ci_gate.py (da dung pattern nay). Ref: cp1252 pre-push trace 16/7 (DEBT-hook).
+    r = subprocess.run(['git'] + args, capture_output=True, text=True,
+                       encoding='utf-8', errors='replace', cwd=cwd)
     return r.stdout
 
 
