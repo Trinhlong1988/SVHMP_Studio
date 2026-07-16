@@ -255,13 +255,17 @@ def test_d4_no_new_file_duplicating_validator_scope():
 # D7 — gate 1 cua + wire + unwire-guard 2 LOP
 # ============================================================
 
-ORIGINAL_11_STAGES = [
+# SUBSET-check (17/7, R215): danh sach cac stage BAT BUOC phai con trong CHECKS. Truoc day
+# la ORIGINAL_11_STAGES = exact-list (remaining == list) — ANTI-PATTERN frozen exact-list:
+# vo NGAY khi them BAT KY gate moi (da xay: them 'cross_ep_canon' R216 17/7 lam 3 test nay
+# FAIL du chi la THEM, khong phai GO). Sua goc = issubset: THEM gate moi KHONG vo; chi GO 1
+# stage bat buoc moi FAIL. Muon 1 gate moi duoc guard thi them ten vao set nay (chu dich).
+REQUIRED_STAGES = {
     'registry', 'blueprint', 'R199_tail', 'R203_conf', 'R205_char', 'R206_voice',
     'R207_canon', 'R208_age', 'project_config', 'G2_roster', 'g5_supernatural', 'G4_world',
-    'G6_story_planner',   # them 5/7 sau khi G6a lock (merge main vao build/g3-dialogue-d0-d8) - ten bien giu nguyen "11" cho khop lich su, so THAT gio la 13
-    'G7_generator',   # them 9/7 sau khi G7 D4 build gate (tools/g7_generator_check.py) - so THAT gio la 14
-    'G8_qa_runtime',   # them 9/7 (G8 D7 reconcile gate tools/g8_qa_runtime_check.py) - stage CUOI, so THAT gio la 15
-]
+    'G6_story_planner', 'G7_generator', 'G8_qa_runtime',
+    'cross_ep_canon',   # R216 cross-episode canon gate (them 17/7)
+}
 
 
 def test_g3_dialogue_stage_wired_in_ci_gate():
@@ -275,8 +279,9 @@ def test_g3_dialogue_stage_wired_in_ci_gate():
     idx_r208 = keys.index('R208_age')
     idx_g3 = keys.index('G3_dialogue')
     assert idx_g3 == idx_r208 + 1, 'G3_dialogue phai dat NGAY SAU R208_age'
-    remaining_11 = [k for k in keys if k != 'G3_dialogue']
-    assert remaining_11 == ORIGINAL_11_STAGES, '11 entry cu bi xoa/doi thu tu'
+    # SUBSET (khong exact-list): moi stage BAT BUOC phai con; THEM gate moi KHONG vo test.
+    missing = REQUIRED_STAGES - set(keys)
+    assert not missing, f'stage BAT BUOC bi go khoi CHECKS (unwire): {sorted(missing)}'
     src = (REPO / 'tools' / 'ci_gate.py').read_text(encoding='utf-8')
     assert "'G3_dialogue'" in src, 'grep tinh tren SOURCE THAT (khong chi object in-memory)'
 
@@ -291,7 +296,9 @@ def test_g3_dialogue_unwire_guard_behavior_changes_when_removed(monkeypatch):
     assert len(patched) == len(orig) - 1, 'stage phai ton tai truoc khi test nay chay'
     monkeypatch.setattr(ci_gate, 'CHECKS', patched)
     assert ('G3_dialogue', 'tools/g3_dialogue_check.py') not in ci_gate.CHECKS
-    assert [k for k, _ in ci_gate.CHECKS] == ORIGINAL_11_STAGES
+    # HANH VI thay doi (G3 mat) NHUNG cac stage bat buoc khac con nguyen — subset, khong exact.
+    assert REQUIRED_STAGES.issubset({k for k, _ in ci_gate.CHECKS}), \
+        'monkeypatch xoa G3 khong duoc lam mat stage bat buoc khac'
 
 
 def test_g3_dialogue_check_gate_runs_and_writes_report():
