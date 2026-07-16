@@ -1570,5 +1570,13 @@ files:
     domain: qa_runtime
     status: active
     tier: 1
+  tools/canon_consistency_check.py:   # DEBT-035 16/7: enforcer canon Hạ Vy death vs bible/21
+    domain: text_qa
+    status: active
+    tier: 3
+  tests/test_canon_consistency_check.py:   # DEBT-035 16/7: mutation-proof cho canon_consistency_check
+    domain: text_qa
+    status: active
+    tier: 3
 generated_by: tools/registry_triage.py
-total: 392
+total: 394

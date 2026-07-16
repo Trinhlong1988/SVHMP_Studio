@@ -542,6 +542,12 @@ Total: 143/153 PASS at last verify (2026-06-26 round 13).
 - Tests: R199 7/7, R201 6/6, R202 50/50 PASS; FULL_TEXT_GATE PASS
 - Output `D:\SVHMP_render\ep_01\intro_FULL_v2q.wav` — Engineering Validation PASS (chờ Boss nghe = Production)
 
+### EP01 v8 — canon reconcile Hạ Vy death (16/7, DEBT-035 phần #2, per Mr.Long bless v8)
+- `output/ep_01/{episode,episode_golden_text,episode_tts_ready}.md`: khung cái chết Hạ Vy New York/taxi/du-học → Hà Nội/xe máy/12-4 (khớp canon bible/21); giữ reveal budget EP73. Marker `v7_final_round3_lock` → `v8_canon_reconcile_lock`; `bible/00` golden_reference → `ep_01_v8_canon_reconcile_lock` (comment lịch sử round-3 giữ nguyên).
+- Enforcer mới `tools/canon_consistency_check.py` + `tests/test_canon_consistency_check.py` (8 mutation-proof, chống false-positive hành khách khác đi nước ngoài). file_index total 392→394.
+- Verify (CMD_AUDIT tự tay): before FLAG 2 (NY+Kennedy) / after 0; 50 EP PASS 0; R86 broad 0; R41 2899/2899; dialogue_ratio Δ+0.0017 (<0.02, không re-calibrate); full suite 797 passed/8 skip/0 fail.
+- Còn MỞ: ghế 7-vs-3 + bible/21 M13 (xem TECH_DEBT DEBT-035).
+
 ### Pending
 - 49 EPs còn nhiều R61/R62 violations (cần per-EP manual rewrite — pattern-specific)
 - 43 R58 còn (words không có safe synonym: chữ/gỗ/vẽ — need manual)

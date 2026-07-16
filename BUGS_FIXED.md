@@ -535,3 +535,10 @@ Ghi chú: R80.peak -1.0dB do master v65 alimiter 0.85 (Mr.Long lock) — R198 ca
 - **Backup:** `.bak.stale_mark_09_07` cho cả 2 file (R8).
 - **Process change (R_SUPREME test_process_failure):** artifact QA cũ không mang nhãn stale → gây hiểu lầm phân tích. Đề xuất LEAD: (1) runtime QA report nên có field `generated_ts` + `corpus_ref` để tự lộ staleness; (2) tách audit R61 thành time-word (auto-fixable) vs pronoun-start (audio judgment) để số đếm không phồng giả. CHỜ duyệt.
 - **Bài học CMD TỔNG TRỢ LÝ:** suýt kết luận "khủng hoảng chất lượng" từ số cũ mà chưa mở file — firsthand đọc mới thấy không có khủng hoảng. Lặp pattern jump-to-conclusion, phản biện/firsthand cứu.
+
+## B_DEBT035_ep01_havy_death_canon (2026-07-16) — CMD_AUDIT (KIEM_DUYET), per Mr.Long "GO land + bless v8"
+
+- **Bug:** `output/ep_01` (golden pilot) tả cái chết Hạ Vy = tai nạn TAXI ở New York (du học Hoa Kỳ) — MÂU THUẪN canon đã khóa bible/21 (Hạ Vy mất 12/4/2018, Hà Nội, tai nạn XE MÁY). Xác nhận bug thật (không misdirection): `output/archive_draft_v1_ep11_41/ep_35` cũng có version "đi Mỹ" đã bị bỏ khi lock arc; EP01 tự mâu thuẫn nội bộ (khung Hà Nội L98/L136 vs chết NY L336).
+- **Fix:** reframe 3 file EP01 → "đêm mưa cuối tháng tư Hà Nội, cô ấy đi xe máy về, ngã tư xe tải đâm ngang, mất ngay tại chỗ"; giữ đồng hồ/7:10/"chưa kịp nói"/love_regret; GIỮ reveal budget EP73 (KP tách khỏi hiện trường, KHÔNG lộ KP lái). Golden bless v7→v8.
+- **Khóa chặt lỗi (R215 / R_SUPREME test_process_failure):** enforcer mới `tools/canon_consistency_check.py` (proximity Hạ-Vy + chết + token nước-ngoài, chống false-positive hành khách khác) + 8 test mutation-proof `tests/test_canon_consistency_check.py`. **CMD_AUDIT tự tay verify:** EP01 gốc → FLAG 2 (New York+Kennedy); đã sửa → 0; 50 EP PASS 0; full suite 797 passed/0 fail; R86 broad 0; R41 2899/2899; dialogue_ratio Δ+0.0017.
+- **Còn MỞ (không overclaim):** ghế 7-vs-3 EP01 + bible/21 M13 plan-vs-EP31-41 — xem `governance/TECH_DEBT.md` DEBT-035.
