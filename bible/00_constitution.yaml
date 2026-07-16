@@ -744,6 +744,35 @@ R65_total_consistency_no_invention_hardlock:
   enforcement: tools/audit_logic_total.py (build phase 2)
   cross_ref: [R41 hook, R56 hồi tưởng, R63 + R64 fold-in]
 
+rule_R216_earlier_episode_is_ground_truth_hardlock:
+  # add 2026-07-17 — Mr.Long: "tập sinh trước = gốc, tập sau bịa khác = LÁO". LÀM RÕ + siết R65
+  # (KHÔNG phải luật mới: R65 đã cấm bịa/mâu thuẫn; R207 story_consistency_validator đã khoá field
+  #  cross-episode). R216 vá đúng 2 lỗ hổng khiến lỗi lọt: (a) chưa ai neo canon vào TẬP SỚM NHẤT
+  #  (baseline R207 = bible/registry -> khi bible codify ngược thì gate xác nhận cái sai); (b) gate
+  #  chỉ đọc structured field, không đọc PROSE. Bằng chứng vụ lọt: EP01(26/6 ghế7/New York) bị
+  #  EP02-50(27/6 ghế3/Hà Nội) + bible/21 mã hoá ngược; xem governance/TECH_DEBT.md DEBT-035.
+  rule: "VẠN VẬT — NGƯỜI — SỰ KIỆN một khi đã SINH ở tập TRƯỚC là LOGIC bất biến. Tập sau CHỈ được (a) giữ y nguyên hoặc (b) HÉ LỘ THÊM không mâu thuẫn. CẤM sinh ở tập sau phiên bản SAI/LÁO/BỊA khác tập trước. Khi phân kỳ: ANCHOR = tập sinh SỚM NHẤT (KHÔNG tin số đông/tập sau) → sửa TẬP SAU về khớp, CẤM sửa tập trước, CẤM codify bible/tool theo số đông."
+  level: ABSOLUTE_HARDLOCK
+  scope: "id/tên/tuổi/quê/nghề/giọng/xưng hô/quan hệ + đồ vật + địa điểm + sự kiện + mốc thời gian + cách/nơi xảy ra + mọi con số/chi tiết"
+  anchor_rule: "min(episode_number) = ground truth. Ngoại lệ DUY NHẤT: tập trước chứa lỗi sự-thật-thế-giới kiểm chứng ĐỘC LẬP (nêu bằng chứng world-canon, KHÔNG phải 'vì số đông tập sau viết khác')."
+  distinguish:
+    factual_contradiction: "BẮT — cùng 1 fact bất biến mà các tập ghi khác nhau."
+    progressive_reveal: "KHÔNG bắt — fact hé lộ dần qua mốc, không mâu thuẫn."
+  enforcement: tools/cross_episode_canon_check.py   # RATCHET, wired vào tools/ci_gate.py (chạy pre-push)
+  enforcement_detail: |
+    Ratchet: chặn MỌI divergence MỚI (exit 1); divergence đang reconcile (DEBT-035: ghế Khải Phong)
+    nằm trong KNOWN_PENDING → [TRACKED-DEBT-035], không chặn NHƯNG in ra (không im lặng).
+    Xoá key khỏi KNOWN_PENDING khi reconcile xong → gate thành guard vĩnh viễn cho fact đó.
+  mutation_proof: tests/test_cross_episode_canon_check.py   # test allowlist LOAD-BEARING (gỡ allowlist → divergence thật FLIP FAIL) + anchor=earliest + evaluate TRACKED/FAIL
+  status_note: |
+    Gate prose hiện chỉ cover 1 fact TIN CẬY = ghế Khải Phong (công thức 1 câu, bind chặt tên).
+    Nơi-chết Hạ Vy KHÔNG gate bằng regex prose (đã thử + gỡ: episode đa-hành-khách → token địa
+    điểm thuộc khách khác = false-positive EP27/EP47; cái chết EP01 trải nhiều dòng không bind
+    được) → enforce ở tầng STRUCTURED qua R207 story_consistency_validator (khoá bible/03
+    core_wound) SAU reconcile. Canon-fact khác (tên/quan hệ/mốc) CHƯA có extractor —
+    'CHƯA CÓ ENFORCER đầy đủ, rủi ro drift' (R215.1), mở rộng dần.
+  cross_ref: [R65 total_consistency, R207 story_consistency_validator, R210 character_identity, "governance/TECH_DEBT.md DEBT-035"]
+
 R62_anaphora_word_liên_tiếp_hardlock:
   # round 15 add 2026-06-28 — Mr.Long: "người lặp đi lặp lại liên nhau quá 2 lần nghe nhàm chán"
   rule: "CẤM từ chỉ định danh (người/cô/anh/chị/ông/bà/em) lặp liền tiếp > 2 trong 3 câu liền"

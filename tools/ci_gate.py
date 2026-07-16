@@ -30,6 +30,7 @@ CHECKS = [
     ('G2_roster',  'tools/roster_validator.py'),   # G2 B4: naming bible/23 + que<->giong R210 (WARN mode; --strict sau khi fill dat nguong Tier1 100%)
     ('g5_supernatural', 'tools/g5_supernatural_check.py'),   # G5: typology + possession SM cau truc (KHONG quet noi dung episode - do la G8)
     ('G4_world',  'tools/g4_world_check.py'),   # G4: timeline+event_ledger+story_consistency 1-cua (D1/D2/D3/D4)
+    ('cross_ep_canon', 'tools/cross_episode_canon_check.py'),   # R216: tap som nhat=anchor; ratchet (chan divergence MOI, track DEBT-035 dang reconcile)
     ('G6_story_planner', 'tools/g6_story_planner_check.py'),   # G6a: decision_policy_check + decision_engine packet self-check (G6b chua build)
     ('G7_generator', 'tools/g7_generator_check.py'),   # G7 D4: episode_generator pytest + self-check + budget_sheet M4 + no-write-domain + static no-write
     ('G8_qa_runtime', 'tools/g8_qa_runtime_check.py'),   # G8 D7: reconcile invariant qa_runtime (D2 domain + D4 pack5/19 + VNQA H1-H10 + DEBT-005 golden_lock) — static-check, khong pytest
@@ -53,7 +54,7 @@ STAGE_CODES = {
     'R207_canon': 'QA1014', 'R208_age': 'QA1015', 'G3_dialogue': 'QA1016', 'project_config': 'ART4002',
     'G2_roster': 'QA1001', 'pytest_suite': 'QA1099', 'g5_supernatural': 'ONT5001',
     'G4_world': 'ONT4001', 'G6_story_planner': 'ONT6001', 'G7_generator': 'ONT7001',
-    'G8_qa_runtime': 'ONT8001',
+    'G8_qa_runtime': 'ONT8001', 'cross_ep_canon': 'ONT4002',
 }
 
 
