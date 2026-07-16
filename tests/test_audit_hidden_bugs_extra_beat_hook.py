@@ -25,8 +25,14 @@ FIXTURE TONG HOP (khong doc output/ep_*/episode.md that) de chung minh CO CHE
 extra_beat_HOOK hoat dong dung doc lap voi loi regex kia — dung "mutation-proof":
 lat co (ep_num co/khong trong EXTRA_BEAT_HOOK_EPS) tren CUNG 1 van ban va xac nhan
 should_flag lat theo.
+
+CAP NHAT R215.2 (DEBT-036, 16/7): loi regex "nhay quote xa" o tren DA DUOC SUA bang
+speaker-tracking driver_quotes() (Mr.Long duyet Variant B) — check[3] gio con 6 EP
+[12,14,16,17,18,35], KHONG con 37 (con so "37" o tren la LICH SU truoc fix). Test
+regression cuoi file da doi baseline tu regex CU (nay la bug) sang cong thuc tong
+quat truc tiep tu split_driver_extra_quotes(). Enforcer FP moi:
+tests/test_audit_hidden_bugs_driver_speaker_tracking.py.
 """
-import re
 import sys
 from pathlib import Path
 
@@ -156,25 +162,31 @@ def test_hook_list_ep_with_only_baseline_extra_not_flagged():
 
 
 # ---------------------------------------------------------------------------
-# Regression: EP NGOAI danh sach EXTRA_BEAT_HOOK_EPS phai cho ket qua Y HET
-# ham/regex GOC (findall + threshold >1), chung minh KHONG doi hanh vi cho 41 tap
-# con lai. Dung du lieu that (output/) cho vai tap dai dien de bat ky regression
-# thuc te nao (khong chi fixture tong hop).
+# Regression (intent DEBT-032): với EP NGOÀI danh sach EXTRA_BEAT_HOOK_EPS, nhánh
+# extra_beat_HOOK KHONG duoc noi long — driver_extra_overuse_flag() phai bang Y HET
+# cong thuc tong quat "len(tat ca extra) > 1" (nhanh `else`), chung minh viec
+# field-hoa 9 tap HOOK khong ro ri sang 41 tap con lai. Dung du lieu that (output/).
+#
+# LICH SU (R215.2 doc-code parity, DEBT-036 16/7): TRUOC 16/7 baseline o day la
+# `_LEGACY_PATTERN` = regex DRIVER_QUOTE_PATTERN CU ("nhay quote xa"). DEBT-036 da
+# sua co che detect (regex -> speaker-tracking driver_quotes()) => baseline regex cu
+# gio la HANH VI BUG (bat nham loi hanh khach), KHONG con la moc chuan dung. Do do
+# baseline duoc CHUYEN sang tinh truc tiep tu split_driver_extra_quotes() (nguon
+# quote MOI, da speaker-tracked) — van giu nguyen INTENT goc (nhanh HOOK = no-op
+# cho non-hook EP), chi bo cai coupling voi regex bug. (Xac nhan bug-fix: EP2 truoc
+# 16/7 legacy regex dem 1 extra = 1 FP loi hanh khach; speaker-tracking dem 0.)
 # ---------------------------------------------------------------------------
 
-_LEGACY_PATTERN = re.compile(
-    r'Bác tài[^\n.]*?(?:cất lời|nói|đáp|bảo|hỏi|tiếp|liếc gương)[^"]*?"([^"]+)"'
-)
-_STANDARD = {'Con đã nhớ ra chưa?', 'Chưa tới lúc.'}
 
-
-def _legacy_should_flag(body):
-    quotes = _LEGACY_PATTERN.findall(body)
-    extras = [q for q in quotes if q.strip() not in _STANDARD]
+def _plain_should_flag(body):
+    """Cong thuc tong quat (nhanh non-hook): tong TAT CA extra > 1. Nguon quote la
+    split_driver_extra_quotes() (speaker-tracking, DEBT-036) — KHONG dung regex cu."""
+    hook, rest = ahb.split_driver_extra_quotes(body)
+    extras = hook + rest
     return len(extras) > 1, len(extras)
 
 
-def test_real_episodes_outside_hook_list_match_legacy_behavior_exactly():
+def test_real_episodes_outside_hook_list_use_plain_formula_exactly():
     svhmp_root = Path(__file__).resolve().parent.parent
     eps_dir = svhmp_root / "output"
     checked = 0
@@ -186,9 +198,9 @@ def test_real_episodes_outside_hook_list_match_legacy_behavior_exactly():
         if not f.exists():
             continue
         body = ahb.strip_meta(f.read_text(encoding="utf-8"))
-        legacy_flag, legacy_count = _legacy_should_flag(body)
+        plain_flag, plain_count = _plain_should_flag(body)
         new_flag, new_count, _ = ahb.driver_extra_overuse_flag(ep_num, body)
-        assert new_flag == legacy_flag, f"EP{ep_num}: flag lệch legacy"
-        assert new_count == legacy_count, f"EP{ep_num}: count lệch legacy"
+        assert new_flag == plain_flag, f"EP{ep_num}: flag lệch công thức tổng quát (nhánh HOOK rò rỉ?)"
+        assert new_count == plain_count, f"EP{ep_num}: count lệch công thức tổng quát"
         checked += 1
     assert checked >= 3, "cần ít nhất 3 EP thật để test regression có ý nghĩa"

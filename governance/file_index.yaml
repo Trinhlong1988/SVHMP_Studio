@@ -386,6 +386,12 @@ files:
     domain: text_qa
     status: active
     tier: 3
+  tests/test_audit_hidden_bugs_driver_speaker_tracking.py:   # DEBT-036 (16/7): mutation-proof test
+                                                              # cho driver_quotes() speaker-tracking
+                                                              # (0 passenger-FP, cuu 5 loi bac tai that)
+    domain: text_qa
+    status: active
+    tier: 3
   tools/audit_ngan_opening_template.py:
     domain: text_qa
     status: active
@@ -1579,4 +1585,4 @@ files:
     status: active
     tier: 3
 generated_by: tools/registry_triage.py
-total: 394
+total: 395

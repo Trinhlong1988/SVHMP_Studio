@@ -4,7 +4,9 @@
 1. Timeline math (age vs life events consistency)
 2. Object collection counter accuracy
 3. Bác tài 2-line rule violation (câu thứ 3 ngoài milestone/extra_beat_HOOK — v2 12/7
-   DEBT-032: tính riêng vị trí HOOK theo bible/21#extra_beat_HOOK, xem driver_extra_overuse_flag())
+   DEBT-032: tính riêng vị trí HOOK theo bible/21#extra_beat_HOOK, xem driver_extra_overuse_flag();
+   v3 16/7 DEBT-036: detect quote bác tài bằng speaker-tracking driver_quotes() thay regex
+   "nhảy quote xa" — hết false-positive bắt nhầm lời hành khách)
 4. Ghost manifest > 1 / EP
 5. Section word count balance
 6. Pause marker per section
@@ -42,7 +44,24 @@ def strip_meta(text):
 # --------------------------------------------------------------------------
 # DEBT-032 extension (2026-07-12) — extra_beat_HOOK awareness (bible/21#extra_
 # beat_HOOK + bible/00#R42 allowed_format thứ 3, per proposal APPROVED_A).
+# DEBT-036 fix (2026-07-16, Variant B SPEAKER-TRACKING, Mr.Long APPROVED merge) —
+#   Thay CƠ CHẾ detect quote bác tài: từ regex "nhảy tới dấu `"` gần nhất phía sau
+#   cụm kích hoạt" (DRIVER_QUOTE_PATTERN cũ — băng qua newline/section tới cả lời
+#   HÀNH KHÁCH) sang SPEAKER-TRACKING (adjacency): mỗi quote `"..."` được gán cho
+#   speaker qua attribution GẦN NHẤT phía trước (cùng đoạn = inline, hoặc đoạn liền
+#   trước). Đo lại toàn 50 EP (measure_debt036_variantB.py): 0 passenger-FP (regex
+#   cũ 50), 0 false-negative (Variant A regex sót 5 — EP11/12/21/30/50 — B cứu HẾT),
+#   flag check[3] = [12,14,16,17,18,35] (y hệt Variant A, 0 EP lệch). Chữ ký công
+#   khai split_driver_extra_quotes()/driver_extra_overuse_flag() GIỮ NGUYÊN (R211).
+#   Giới hạn (proposal debt036_proposal_withB.yaml): B giả định lời bác tài luôn
+#   INLINE (cùng đoạn) hoặc đầu-đoạn ngay sau đoạn-dẫn bác tài — nếu 1 EP tương lai
+#   đặt lời bác tài cách attribution qua 1 đoạn narration chèn giữa, B sẽ sót.
 # --------------------------------------------------------------------------
+# LEGACY (DEBT-036) — regex CŨ "nhảy tới quote gần nhất". KHÔNG còn dùng để detect;
+# giữ lại để (a) tài liệu hoá bug đã sửa, (b) mutation-proof test (tests/test_audit_
+# hidden_bugs_driver_speaker_tracking.py) chứng minh regex này bắt nhầm lời hành
+# khách trong khi driver_quotes() speaker-tracking thì KHÔNG. KHÔNG được rewire
+# split_driver_extra_quotes() về pattern này (test sẽ FAIL).
 DRIVER_QUOTE_PATTERN = re.compile(
     r'Bác tài[^\n.]*?(?:cất lời|nói|đáp|bảo|hỏi|tiếp|liếc gương)[^"]*?"([^"]+)"'
 )
@@ -53,22 +72,104 @@ DRIVER_QUOTE_PATTERN = re.compile(
 HOOK_SECTION_END_PATTERN = re.compile(r'^#\s*(?:SETUP|INCIDENT)\s*\[section', re.MULTILINE)
 DRIVER_STANDARD_LINES = {'Con đã nhớ ra chưa?', 'Chưa tới lúc.'}
 
+# --------------------------------------------------------------------------
+# SPEAKER-TRACKING (DEBT-036 Variant B) — attribution gần nhất (adjacency)
+# --------------------------------------------------------------------------
+_SPEECH_VERBS = r'(?:cất lời|cất tiếng|nói|đáp|bảo|hỏi|tiếp|liếc gương)'
+# Cụm DẪN của bác tài: "Bác tài ... <speech_verb>" HOẶC "Bác tài:" (dấu hai chấm dẫn).
+_DRIVER_CUE = re.compile(r'Bác tài[^"\n]*?(?:' + _SPEECH_VERBS + r'|:)', re.IGNORECASE)
+_NEG = re.compile(r'[Kk]hông nói')          # phủ định: bác tài KHÔNG nói -> không phải cụm dẫn
+_HAS_BAC_TAI = re.compile(r'Bác tài')
+_HAS_SPEECH = re.compile(_SPEECH_VERBS, re.IGNORECASE)
+# Attribution của NGƯỜI KHÁC (hành khách) — chặn khi 1 đoạn có cả bác tài + khách.
+_OTHER_ATTR = re.compile(
+    r'(?:người khách|người đàn ông|người phụ nữ|cô gái|cô ấy|anh ấy|chị ấy|'
+    r'cậu ấy|cậu trai|bà |ông )[^"\n]{0,20}?(?:nói|đáp|bảo|hỏi|cất tiếng|cất lời)',
+    re.IGNORECASE)
+
+
+def _inline_driver(prefix):
+    """`prefix` = text trong CÙNG đoạn, trước dấu `"` mở quote. True nếu speaker gần
+    nhất là bác tài. Cho phép MÔ TẢ xen giữa verb và quote (vd `Bác tài liếc gương —
+    lần này dừng trên người khách lâu. "..."` → cứu EP21), NHƯNG chặn nếu (a) bác tài
+    phủ định `không nói`, hoặc (b) có attribution hành khách XEN SAU cụm dẫn bác tài
+    (vd `Bác tài nói. Người khách đáp: "..."`)."""
+    if _NEG.search(prefix):
+        return False
+    cues = list(_DRIVER_CUE.finditer(prefix))
+    if not cues:
+        return False
+    if _OTHER_ATTR.search(prefix[cues[-1].end():]):
+        return False
+    return True
+
+
+def _para_spans(body):
+    """Trả về list (start, end, text) cho mỗi đoạn văn (tách bởi dòng trống)."""
+    parts = re.split(r'(\n[ \t]*\n)', body)
+    spans = []
+    off = 0
+    for i, part in enumerate(parts):
+        if i % 2 == 0 and part.strip():
+            spans.append((off, off + len(part), part))
+        off += len(part)
+    return spans
+
+
+def _is_driver_para(p):
+    """True nếu đoạn `p` là 1 cụm NÓI của bác tài (không bị phủ định) — dùng cho
+    nhánh quote-đầu-đoạn (xét ĐOẠN LIỀN TRƯỚC, strict adjacency)."""
+    if _NEG.search(p):
+        return False
+    if not _HAS_BAC_TAI.search(p):
+        return False
+    return bool(_HAS_SPEECH.search(p))
+
+
+def driver_quotes(body):
+    """SPEAKER-TRACKING (DEBT-036 Variant B). Trả về list (pos, quote_text) các quote
+    `"..."` GÁN cho BÁC TÀI theo attribution gần nhất (adjacency), thay cơ chế regex
+    "nhảy tới quote xa" cũ (DRIVER_QUOTE_PATTERN). 2 nhánh:
+      (1) INLINE — có chữ trước quote trong CÙNG đoạn → là bác tài nếu cụm dẫn gần
+          nhất trong đoạn là của bác tài (_inline_driver);
+      (2) ĐẦU-ĐOẠN — quote đứng đầu đoạn (prefix rỗng) → là bác tài nếu ĐOẠN LIỀN
+          TRƯỚC là cụm dẫn của bác tài (_is_driver_para).
+    KHÔNG nhảy qua đoạn tường thuật/section tới quote hành khách. `body` PHẢI đã qua
+    strip_meta(). Sort theo vị trí tăng dần.
+    """
+    spans = _para_spans(body)
+    out = []
+    for j, (ps, _pe, ptext) in enumerate(spans):
+        for qm in re.finditer(r'"([^"]+)"', ptext):
+            prefix = ptext[:qm.start()]
+            if prefix.strip():
+                is_driver = _inline_driver(prefix)
+            else:
+                is_driver = j > 0 and _is_driver_para(spans[j - 1][2])
+            if is_driver:
+                out.append((ps + qm.start(), qm.group(1)))
+    out.sort()
+    return out
+
 
 def split_driver_extra_quotes(body):
     """Tách quote 'thừa' của bác tài (ngoài 2 speech_lines chuẩn) thành 2 nhóm theo
     VỊ TRÍ văn bản: (hook, rest). `hook` = quote xuất hiện TRƯỚC section SETUP/INCIDENT
     (vùng extra_beat_HOOK). `rest` = quote ở CLIFFHANGER/REVEAL/nơi khác (baseline R42/
     R55). `body` PHẢI đã qua strip_meta(). Thứ tự trong `hook`/`rest` giữ nguyên thứ tự
-    xuất hiện trong văn bản (khớp DRIVER_QUOTE_PATTERN.findall thứ tự gốc khi gộp lại).
+    xuất hiện trong văn bản.
+
+    DEBT-036 (2026-07-16): nguồn quote bác tài giờ là driver_quotes() (SPEAKER-TRACKING),
+    KHÔNG còn là DRIVER_QUOTE_PATTERN.finditer() — loại false-positive lời hành khách.
     """
     m = HOOK_SECTION_END_PATTERN.search(body)
     hook_end = m.start() if m else 0
     hook, rest = [], []
-    for match in DRIVER_QUOTE_PATTERN.finditer(body):
-        q = match.group(1).strip()
+    for pos, q in driver_quotes(body):
+        q = q.strip()
         if q in DRIVER_STANDARD_LINES:
             continue
-        (hook if match.start() < hook_end else rest).append(q)
+        (hook if pos < hook_end else rest).append(q)
     return hook, rest
 
 
@@ -153,11 +254,14 @@ def main():
     else:
         print(f"  ✓ OK")
 
-    # 3. Bác tài quotes — STRICT pattern (chỉ match khi bác tài là speaker)
-    #    v2 (2026-07-12, DEBT-032): tính cả extra_beat_HOOK (bible/21#extra_beat_HOOK) —
-    #    xem driver_extra_overuse_flag() phía trên (logic đầy đủ, mutation-tested trong
-    #    tests/test_audit_hidden_bugs_extra_beat_hook.py).
-    print("\n[3] Bác tài quote ngoài 2 standard (strict regex, extra_beat_HOOK-aware):")
+    # 3. Bác tài quotes — SPEAKER-TRACKING (chỉ match khi bác tài là speaker gần nhất)
+    #    v2 (2026-07-12, DEBT-032): tính cả extra_beat_HOOK (bible/21#extra_beat_HOOK).
+    #    v3 (2026-07-16, DEBT-036): detect quote bác tài bằng driver_quotes() speaker-
+    #    tracking (adjacency) thay regex "nhảy quote xa" — hết false-positive lời hành
+    #    khách (đo 50 EP: 0 passenger-FP, cứu 5 lời foreshadow thật). Logic đầy đủ +
+    #    mutation-tested: tests/test_audit_hidden_bugs_extra_beat_hook.py (DEBT-032) +
+    #    tests/test_audit_hidden_bugs_driver_speaker_tracking.py (DEBT-036).
+    print("\n[3] Bác tài quote ngoài 2 standard (speaker-tracking, extra_beat_HOOK-aware):")
     non_ms_extra = []
     for n, t in eps.items():
         if n in LEGACY_AUDIT_EXEMPT_EPS: continue
