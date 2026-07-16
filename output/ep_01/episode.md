@@ -75,8 +75,6 @@ v7_changes_round1:
   - phát huy 3 hành khách: ông cụ radio + cô y tá + anh trung niên giấy gấp tư
   - thêm 3 chi tiết kinh dị: (a) đồng hồ tự rung dù hết pin, (b) kính xe phản chiếu Hạ-Vy phía sau Khải-Phong, (c) kim nhích một lần khi Khải-Phong nhớ
   - mở rộng SETUP/REVEAL/PAYOFF cho đạt 13-mười sáu phút
-v8_changes_canon_reconcile_lock:
-  - DEBT-035 (16/7, per Mr.Long bless v8): cai chet Ha Vy New York/taxi -> Ha Noi/xe may/nga tu/12-4 khop canon bible/21; giu reveal budget EP73 (KP khong lai). Enforcer tools/canon_consistency_check.py chong tai lot.
 v7_changes_round3_lock:
   - gộp "Đồng phục xưa" lặp hai lần → "đồng phục y tá xưa" (một lần)
   - thay "Như ôm một đứa trẻ đã ngủ" (cụ thể) → "Như sợ buông tay ra, thứ trong lòng mình sẽ biến mất" (ám hơn)
@@ -159,7 +157,7 @@ Anh cứng cả bàn tay trong một thoáng giật mình.
 
 Anh cúi xuống nhìn — kim vẫn dừng bảy giờ mười, không nhúc nhích.
 
-Khải-Phong chợt nhớ ra — anh đã giữ chiếc đồng hồ này suốt tám năm trời, từ cái đêm mưa hôm ấy.
+Khải-Phong chợt nhớ ra — anh đã giữ chiếc đồng hồ này suốt tám năm trời, từ cái đêm ở sân bay hôm ấy.
 
 Tám năm cất trong ngăn tủ đáy.
 
@@ -241,9 +239,9 @@ Anh buông một hơi dài. Định im lặng, [pause:500ms] nhưng cuối cùng
 
 — Tôi, [pause:800ms] Tôi thương cô ấy từ năm lớp mười một mà không dám nói ra.
 
-— Năm cuối, vào một đêm mưa cuối tháng tư, tôi hẹn gặp cô ấy lần cuối giữa lòng Hà Nội.
+— Năm cuối cô ấy được học bổng đi du học Hoa Kỳ. Tôi đưa cô ấy ra sân bay.
 
-— Tôi mang theo chiếc đồng hồ này, định tặng cô ấy, và định nói ra câu mà tôi đã ấp ủ suốt tám năm trời.
+— Tôi mua chiếc đồng hồ này tặng cô ấy. Và nói câu mà tôi đã ấp ủ suốt tám năm trời.
 
 Anh ngừng kể, chỉ còn tiếng máy xe rì rầm vọng đến tai anh.
 
@@ -263,15 +261,15 @@ Anh khựng người — Hạ-Vy từng hát một câu rất giống như vậy
 
 Cô gái ngồi ghế tám đợi anh kể tiếp, cổ họng anh nghẹn đắng trong giây lát.
 
-— Đêm đó trời đổ mưa, [pause:400ms] cô ấy tới muộn vì đường ngập nước. Tôi đứng đợi ở góc phố, cô ấy hớt hải chạy tới.
+— Sân bay hôm đó trời đổ mưa, [pause:400ms] cô ấy tới muộn vì kẹt xe do đường ngập nước. Tôi đứng ở cổng B, cô ấy hớt hải chạy lên.
 
 — Tôi tặng cô ấy chiếc hộp đồng hồ.
 
-— Cô ấy cười rồi nói: "Khi nào về tới nhà, mình nhắn cậu, rồi mình nói chuyện nha."
+— Cô ấy cười rồi nói: "Khi nào mình về, mình sẽ nói chuyện với cậu nha."
 
-— Tôi gật và tự nhủ sẽ đợi cô ấy về tới nhà, rồi sẽ nói những điều ấp ủ trong lòng đã lâu.
+— Tôi gật và tự nhủ mình sẽ đợi, sẽ đợi cô anh tới ngày về với những điều ấp ủ trong lòng đã lâu
 
-— Cô ấy ôm tôi thật chặt một cái, rồi lên xe máy chạy vội vào màn mưa.
+— Cô ấy ôm tôi thật chặt một cái, rồi chạy vội vào cổng sân bay.
 
 Anh chầm chậm mở mắt ra trong đêm mưa.
 
@@ -297,23 +295,23 @@ Mãi về sau anh mới biết — câu hỏi đó dành riêng cho mình anh.
 
 ## 4. REVEAL (~620 từ — 6:30—10:15) [beat_3→beat_4: NGHẸN]
 
-Anh nhắm mắt lại trong giây lát. Trong đầu anh, Hạ-Vy đang đứng dưới mái hiên phố — mặc áo gió xanh nhạt, tóc cột cao.
+Anh nhắm mắt lại trong giây lát. Trong đầu anh, Hạ-Vy đang đứng tại cổng B — mặc áo gió xanh nhạt, tóc cột cao.
 
 Cô ấy mỉm cười, vẫy tay một cái rất ấm áp.
 
-Bóng Hạ-Vy khuất dần sau màn mưa đêm.
+Bóng Hạ-Vy khuất dần sau cánh cửa kính.
 
 Anh nhìn đồng hồ tay — kim chỉ đúng bảy giờ mười tối hôm ấy.
 
-Anh ngồi lại quán cà phê góc phố đến tận mười giờ khuya.
+Anh ngồi tại quán cà phê sân bay đến tận mười giờ khuya.
 
-Anh tự nhủ chắc cô ấy đã về gần tới nhà.
+Anh tự nhủ chắc cô ấy đang trên máy bay.
 
-Anh nhắn cho cô ấy: "Về tới nhà nhắn tôi một tiếng, mưa to, đi đường cẩn thận nhé."
+Anh nhắn cho cô ấy: "Sang bên đó nhớ ăn uống đầy đủ, giữ ấm, cẩn thận đường xa."
 
 Cô ấy không hề trả lời thêm điều gì.
 
-Anh thầm mong cô ấy về tới nhà bình an.
+Anh thầm hy vọng chuyến bay sẽ êm xuôi đến nơi.
 
 Mười giờ tối thứ Sáu.
 
@@ -335,9 +333,9 @@ Anh chưa nghe hết câu, đã biết.
 
 Mẹ cô ấy nói:
 
-— Đêm qua trên đường về nhà, tới một ngã tư, cô ấy đi xe máy giữa cơn mưa.
+— Máy bay hạ cánh êm xuôi, cô ấy xuống sân bay Kennedy ở New York rồi bắt taxi về nhà người dì.
 
-— Một chiếc xe tải vượt đến, đâm ngang qua.
+— Taxi gặp xe tải. Trên đường cao tốc.
 
 — cô ấy đã mất ngay tại nơi đó rồi.
 
@@ -602,7 +600,7 @@ SERIES_RULES:
 
 ```yaml
 SVHMP_EP01:
-  version: v8_canon_reconcile_lock
+  version: v7_final_round3_lock
   score: 9.5/10
   story_status: LOCK
   podcast_status: PRODUCTION_READY
@@ -622,7 +620,7 @@ SVHMP:
   format: episodic_radio_horror
   identity: locked
   production_status: READY_FOR_SERIES
-  golden_reference: ep_01_v8_canon_reconcile_lock
+  golden_reference: ep_01_v7_final_round3_lock
 ```
 
 > *Từ tập này trở đi, điều quan trọng nhất không còn là "làm truyện ma đáng sợ hơn", mà là giữ tuyệt đối cảm giác: một chuyến xe đêm dành cho những người còn một điều chưa kịp nói.*

@@ -3,8 +3,8 @@ project: SVHMP_Studio
 current_round: 21
 current_version: v1.1.0-tier2x-phase1
 status: Tier 2.x Phase 1 Voice Profile Manager FROZEN — 10-round regression 150/150 PASS
-last_update_ts: 2026-07-12T00:00:00
-last_update_by: CMD_BUILD session 12/7 (DEBT-031/032-check2/033 content fix + enforcer, TASK_DEBT030_031_CONTENT_FIX.md — xem log entry duoi day. DEBT-030/032-check1 (driver dialogue) VAN MO, cho Mr.Long xac nhan rieng.)
+last_update_ts: 2026-07-17T00:00:00
+last_update_by: CMD_AUDIT session 17/7 (R216 reversal — EP01 v8→v7 restore, gỡ enforcer build-ngược, dựng cross_episode_canon_check, reconcile bible/21+49 tập PENDING Boss duyệt. Xem VERSION log "EP01 v7 restore" + TECH_DEBT DEBT-035 Hướng A.)
 rule_break_count: 7
 schema_version: 1
 ---
@@ -542,11 +542,20 @@ Total: 143/153 PASS at last verify (2026-06-26 round 13).
 - Tests: R199 7/7, R201 6/6, R202 50/50 PASS; FULL_TEXT_GATE PASS
 - Output `D:\SVHMP_render\ep_01\intro_FULL_v2q.wav` — Engineering Validation PASS (chờ Boss nghe = Production)
 
-### EP01 v8 — canon reconcile Hạ Vy death (16/7, DEBT-035 phần #2, per Mr.Long bless v8)
+### ⚠ EP01 v8 REVERTED → v7 (17/7, R216 — xem entry "EP01 v7 restore" dưới đây). Entry v8 (16/7) LƯU LỊCH SỬ nhưng đã BỊ ĐẢO: sửa tập gốc theo tập sau = vi phạm R216.
+
+### EP01 v8 — canon reconcile Hạ Vy death (16/7, DEBT-035 phần #2, per Mr.Long bless v8) [SUPERSEDED]
 - `output/ep_01/{episode,episode_golden_text,episode_tts_ready}.md`: khung cái chết Hạ Vy New York/taxi/du-học → Hà Nội/xe máy/12-4 (khớp canon bible/21); giữ reveal budget EP73. Marker `v7_final_round3_lock` → `v8_canon_reconcile_lock`; `bible/00` golden_reference → `ep_01_v8_canon_reconcile_lock` (comment lịch sử round-3 giữ nguyên).
 - Enforcer mới `tools/canon_consistency_check.py` + `tests/test_canon_consistency_check.py` (8 mutation-proof, chống false-positive hành khách khác đi nước ngoài). file_index total 392→394.
 - Verify (CMD_AUDIT tự tay): before FLAG 2 (NY+Kennedy) / after 0; 50 EP PASS 0; R86 broad 0; R41 2899/2899; dialogue_ratio Δ+0.0017 (<0.02, không re-calibrate); full suite 797 passed/8 skip/0 fail.
 - Còn MỞ: ghế 7-vs-3 + bible/21 M13 (xem TECH_DEBT DEBT-035).
+
+### EP01 v7 restore — ĐẢO NGƯỢC v8 theo R216 (17/7, Boss chốt Hướng A)
+- **Lý do:** v8 (16/7) sửa EP01 (tập sinh SỚM NHẤT = gốc) cho khớp EP11-50 (sinh SAU) = vi phạm R216 "tập trước = ground truth". Bằng chứng git: EP01 `3306d91` 26/6 < EP11-50 `c6a5d59` 27/6 < bible/21 arc `4cf9a78` 27/6 tối. Boss: "chết ở nước ngoài là bình thường" → New York không phải world-error.
+- `output/ep_01/{episode,episode_golden_text,episode_tts_ready}.md`: REVERT `git checkout cd6efcb` → khôi phục "ghế số bảy" + "Hạ Vy mất taxi New York / du học Hoa Kỳ / đồng hồ 7:10". Marker về `v7_final_round3_lock`; `bible/00` golden_reference `v8→v7` (`ep_01_v7_final_round3_lock`).
+- Enforcer build-ngược `tools/canon_consistency_check.py` + test **GỠ** (`git rm`). Dựng enforcer đúng hướng `tools/cross_episode_canon_check.py` + `tests/test_cross_episode_canon_check.py` (5 test, anchor = tập sớm nhất). file_index total 394→397 (gỡ 2 canon_consistency + thêm 2 cross_episode... = net theo file_index thực).
+- CLAUDE.md: R216 hạ khung "làm rõ R65/R207 + vá 2 lỗ hổng enforcer" (KHÔNG phải luật mới). bible/03 note dòng 133-142 reframe theo R216.
+- **CHƯA đóng (RECONCILE PENDING):** bible/03 core_wound + bible/21 M-arc + roster + 49 tập EP02-50 còn version SAI (ghế-3/Hà Nội) → regen vẫn gen sai. Scope bằng agent → proposal `.md` + Boss duyệt trước khi phá bible/21 LOCK. Xem TECH_DEBT DEBT-035 Hướng A.
 
 ### Pending
 - 49 EPs còn nhiều R61/R62 violations (cần per-EP manual rewrite — pattern-specific)

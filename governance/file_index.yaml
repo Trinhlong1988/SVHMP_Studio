@@ -312,6 +312,15 @@ files:
     domain: governance_audit
     status: active
     tier: 0
+  tools/cross_episode_canon_check.py:   # R216 (17/7): tap sinh truoc = ground truth;
+                                         # phat hien tap sau mau thuan tap truoc, neo tap som nhat
+    domain: governance_audit
+    status: active
+    tier: 0
+  tests/test_cross_episode_canon_check.py:   # R216 (17/7): mutation-proof cho cross_episode_canon_check
+    domain: governance_audit
+    status: active
+    tier: 3
   tools/artifact_contract_check.py:
     domain: unclassified
     status: active
@@ -1587,13 +1596,5 @@ files:
     domain: qa_runtime
     status: active
     tier: 1
-  tools/canon_consistency_check.py:   # DEBT-035 16/7: enforcer canon Hạ Vy death vs bible/21
-    domain: text_qa
-    status: active
-    tier: 3
-  tests/test_canon_consistency_check.py:   # DEBT-035 16/7: mutation-proof cho canon_consistency_check
-    domain: text_qa
-    status: active
-    tier: 3
 generated_by: tools/registry_triage.py
 total: 397

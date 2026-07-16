@@ -130,16 +130,19 @@ characters:
       (chưa cưới, chưa đặt vé) sẽ đưa Hạ Vy đi Hàn Quốc trăng mật — lời hứa không giữ được
       (ep_47 dòng 229-257).
 
-      LƯU Ý MÂU THUẪN CHƯA GIẢI QUYẾT (ghi nhận, KHÔNG tự sửa episode — xem
-      governance/TECH_DEBT.md DEBT-035): output/ep_01/episode.md (dòng 100, 232-362) kể một
-      version KHÁC — Khải Phong ngồi GHẾ SỐ BẢY (không phải ghế ba), Hạ Vy mất trong tai nạn
-      TAXI tại New York (Mỹ) ngay sau khi hạ cánh du học, đồng hồ dừng đúng 7:10. EP01 là tập
-      DUY NHẤT trong 50 tập lệch cả 2 chi tiết này (49/50 tập còn lại — kể cả EP02/EP06-10
-      không có tag — đều dùng "ghế thứ ba" nhất quán). Nhiều khả năng EP01 là bản nháp gốc
-      viết trước khi bible/21 memory-arc + rename "Nam"->"Khải Phong" (commit 148a80c, 27/6)
-      được đối chiếu lại — CHƯA được rà soát/hợp nhất. core_wound này field-hoá theo phiên bản
-      EP11-50 (nguồn nhất quán, 40 tập, chính là mach hồi ức trung tâm series) — KHÔNG dùng
-      EP01 làm nguồn chính cho core_wound.
+      SỬA THEO R216 (17/7 — Mr.Long: "tập sinh trước = GỐC, sinh sau bịa khác = LÁO"):
+      output/ep_01/episode.md (GỐC, sinh sớm nhất) thiết lập: Khải Phong ngồi GHẾ SỐ BẢY,
+      Hạ Vy mất trong tai nạn TAXI tại New York (Mỹ) sau khi hạ cánh du học, đồng hồ dừng
+      7:10. Theo R216 đây là GROUND TRUTH bất biến. EP02-50 (sinh sau) dùng "ghế thứ ba" +
+      Hạ Vy mất xe máy Hà Nội — đây là PHIÊN BẢN SAI (tập sau mâu thuẫn tập trước), là bên
+      CẦN reconcile về khớp EP01, KHÔNG phải EP01 sai.
+      LỖI GỐC ĐÃ XẢY RA (tự thú, để hậu thế tránh): bản field-hoá core_wound cũ lấy EP11-50
+      (số đông 40 tập) làm nguồn + gọi EP01 là "bản nháp" — ĐÓ CHÍNH LÀ codify NGƯỢC R216
+      (tin số đông/tập sau thay vì tập gốc). Enforcer canon_consistency_check.py (cũng khóa
+      nhầm hướng "Hà Nội") đã bị GỠ (17/7). core_wound death dưới đây (mô tả Hà Nội/xe máy)
+      HIỆN CÒN theo hướng SAI — GIỮ TẠM, đánh dấu reconcile toward EP01/New York (xem
+      governance/TECH_DEBT.md DEBT-035 R216 reconcile). CẤM lấy bản này field-hoá tiếp khi
+      chưa reconcile.
     relationship_map:
       - "Hạ Vy (đã mất): wound chính — tình yêu chưa nói hết, lời hứa Hàn Quốc chưa giữ được"
       - "Hạ Nhi (em/chị gái Hạ Vy — bible/23 canon_waivers ghi 'chị gái ruột'): xuất hiện lại
