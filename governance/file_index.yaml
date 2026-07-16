@@ -220,6 +220,10 @@ files:
     domain: tests
     status: active
     tier: 3
+  tests/test_no_greponly_wiring_guards.py:
+    domain: tests
+    status: active
+    tier: 3
   tests/test_governance_enforce_r209.py:
     domain: tests
     status: active
@@ -1567,4 +1571,4 @@ files:
     status: active
     tier: 1
 generated_by: tools/registry_triage.py
-total: 391
+total: 392
