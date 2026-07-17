@@ -2,6 +2,7 @@
 
 ---
 ## AUTO LOG (tự động cập nhật)
+- `11:59` **[FIX]** Em fix: 6f70427: HOAN TAT 6 de xuat siet hien phap (claim-registry #1/4, meta-gate mutation-test #2, canon anchor-provenance #3, mask-as-active+cp1252->0 #5, khuon pilot+design #6). Tat ca verify doi khang + mutation-proof. Con lai can Boss quyet: M11-15 sang tac + engine-choice (design KHUON_ENGINE_DESIGN.md) truoc Phase-2 regen.
 - `08:50` **[FIX]** Em fix: 5c274c0 meta-gate #2: moi ci_gate CHECK phai co mutation-proof test dang ky (gate_mutation_registry_check + DEBT-039 2 gap). CMD_AUDIT tu verify mutation A/B/C doc lap. Truoc do fc196b5 revert EP01 v8->v7 (R216 EP01=ground truth), a06dcd6 wire R216 canon gate + de-brittle g3 frozen-list. 833 tests pass.
 - `22:53` **[FIX]** Em fix: DEBT-038 + R215 diem 6: promotion_guard._git utf-8 (cp1252 silent data-loss fix) + enforcer lop test_no_text_true_without_encoding (AST-scan tools/, ratchet 11 instance backlog) + hienphap R215 diem 6 (de xuat khong gate = rule-without-enforcer). 3 commit f20eb48(DEBT-036)/c830448(DEBT-038)/fbf65dc(R215.6) da push. CI 823 PASS.
 - `21:06` **[FIX]** Em fix: DEBT-035 phan#2 CLOSED + bless v8: EP01 cai chet Ha Vy NY/taxi -> Ha Noi/xe may khop canon bible/21, giu reveal budget EP73. Enforcer canon_consistency_check.py (mutation-proof, before FLAG 2 / after 0) khoa chat lop loi canon-contradiction. CMD_AUDIT tu tay verify + full suite 797/0. Golden v7->v8. Con MO: ghe 7-vs-3 + M13. commit 703b464.

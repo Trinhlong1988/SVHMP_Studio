@@ -146,15 +146,16 @@ characters:
           taxi New York; câu-chưa-nói là của Khải Phong, không phải Hạ Vy) → SAI.
         - Cùng học kiến trúc / ở trọ phố Khâm Thiên / lời hứa Hàn Quốc trăng mật / quê Vĩnh Bảo
           Hải Phòng / em gái Hạ Nhi = CHƯA có trong EP01 (reveal EP11-50, chưa xác nhận) →
-          giữ NGOÀI canon tới khi regen đối chiếu. LƯU Ý: relationship_map dưới đây vẫn còn
-          ref "Lãm Chấn Hải chứng kiến/gọi cấp cứu" + "lời hứa Hàn Quốc" thuộc phiên bản SAI
-          Hà Nội — FLAG chờ Phase-2 Boss reconcile (không tự xoá/bịa lại theo New York).
+          giữ NGOÀI canon tới khi regen đối chiếu. [R216: đã gỡ ref Hà Nội version; canon = EP01
+          — relationship_map dưới đây đã bỏ "Lãm Chấn Hải chứng kiến/gọi cấp cứu" + "lời hứa Hàn
+          Quốc trăng mật" thuộc phiên bản SAI Hà Nội. "Hạ Nhi (chị/em gái)" GIỮ theo bible/23.]
     relationship_map:
-      - "Hạ Vy (đã mất): wound chính — tình yêu chưa nói hết, lời hứa Hàn Quốc chưa giữ được"
+      - "Hạ Vy (đã mất): wound chính — tình yêu chưa nói hết, một câu chưa kịp nói
+        [R216: đã gỡ ref Hà Nội version ('lời hứa Hàn Quốc trăng mật'); canon = EP01]"
       - "Hạ Nhi (em/chị gái Hạ Vy — bible/23 canon_waivers ghi 'chị gái ruột'): xuất hiện lại
         ep_45 (nhắn tin) + ep_50 (lên xe, đưa thiệp cưới)"
-      - "Lãm Chấn Hải (đồng nghiệp Hạ Vy, văn phòng Mộc Hà): người chứng kiến tai nạn, gọi cấp
-        cứu — lên xe gặp Khải Phong ep_40"
+      - "Lãm Chấn Hải (đồng nghiệp Hạ Vy, văn phòng Mộc Hà): lên xe gặp Khải Phong ep_40
+        [R216: đã gỡ ref Hà Nội version ('chứng kiến tai nạn/gọi cấp cứu'); canon = EP01]"
       - "bác tài: hỏi Khải Phong đúng 2 câu cố định mỗi đêm ('Con đã nhớ ra chưa?' / 'Chưa tới
         lúc.') — xem bible/00#R42, bible/21#quang_memory_arc"
     arc_position: |
@@ -167,11 +168,11 @@ characters:
       governance/proposals/bible03_driver_memory_arc_proposal.yaml#bang_arc_40_tap) → EP50 = S1
       finale, xếp 50 vật thành bản đồ dẫn tới quê Hạ Vy, Hạ Nhi xuất hiện trên xe.
       M11-M18 (EP51-90) VẪN LÀ KẾ HOẠCH CHƯA VIẾT (bible/21, chưa có episode đối chiếu) — GHI
-      CHÚ RIÊNG: nội dung dự kiến M13-M15 ("Khải Phong tự lái xe máy chở Hạ Vy đêm tai nạn") có
-      dấu hiệu CHƯA khớp với chi tiết đã xác nhận ở EP31-41 (Hạ Vy tự đi xe máy một mình, anh
-      Hải đi phía sau chứng kiến — KHÔNG có Khải Phong trên xe cùng đêm đó) — xem
-      governance/TECH_DEBT.md DEBT-035, cần Mr.Long xác nhận khi EP61-75 được viết thật, KHÔNG
-      tự suy diễn thêm ở đây (R195).
+      CHÚ RIÊNG: [R216 reconcile 17/7] M13-M15 (bible/21) đã sửa về khớp EP01: Hạ Vy chết TAXI
+      ở New York một mình (KP tiễn sân bay cổng B rồi ở lại VN, KHÔNG lái/chở/chết cùng đêm đó);
+      KP "đi theo" cô MUỘN hơn tám năm. Bản dự kiến cũ "KP tự lái xe máy chở Hạ Vy đêm tai nạn"
+      + phiên bản Hà Nội EP31-41 (Hạ Vy tự đi xe máy, anh Hải chứng kiến) = SAI, chờ Phase-2
+      regen (governance/TECH_DEBT.md DEBT-035 Hướng A). KHÔNG tự suy diễn thêm ở đây (R195).
     secret_for_audience: "Khải Phong không biết vì sao mình luôn ngồi cố định GHẾ SỐ BẢY (ep_01
       dòng 100 = GROUND TRUTH R216; EP02-50 hiện ghi 'ghế thứ ba' = SAI chờ Phase-2 regen) mỗi
       đêm, thu thập kỷ vật hành khách khác để lại — bản chất thật của Khải Phong (còn sống,

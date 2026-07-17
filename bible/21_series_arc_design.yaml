@@ -76,39 +76,30 @@ quang_memory_arc:
     cliffhanger_hint: "Khải Phong đã hứa — sẽ đón Hà"
     milestone_ep: 50
     milestone_special: "EP50 SEASON 1 FINALE = Khải Phong nhận 50 đêm không sáng + xếp 50 items thành bản đồ"
-  # R216 CONFLICT — reconcile pending Boss (New York taxi, KP khong lai). M11-M12 (Hạ Vy đợi ở
-  # cầu Long Biên / Khải Phong không tới) thuộc mạch cái-chết phiên bản Hà Nội, entangled với
-  # M13-M15 — BẤT KHẢ dưới EP01 (Hạ Vy chết trong taxi ở New York ngay sau khi hạ cánh, không
-  # chờ ai ở Long Biên). KHÔNG tự sửa — cần Boss quyết sáng tác (xem TECH_DEBT DEBT-035 Phần#3).
   M11:
     eps: [51, 52, 53, 54, 55]
-    fragment: "Khải Phong nhớ mình đã không giữ lời"
-    cliffhanger_hint: "Khải Phong đã không đón Hà đêm đó"
+    fragment: "Khải Phong nhớ mình đã hẹn đợi Hạ Vy về để nói câu chưa nói"
+    cliffhanger_hint: "Anh đã hứa sẽ đợi cô về — nhưng cô không bao giờ về"
   M12:
     eps: [56, 57, 58, 59, 60]
-    fragment: "Khải Phong nhớ Hạ Vy đợi Khải Phong ở đâu"
-    cliffhanger_hint: "Hạ Vy đợi Khải Phong ở cầu Long Biên — Khải Phong không tới"
+    fragment: "Khải Phong nhớ chính mình là người đợi — đợi cô về"
+    cliffhanger_hint: "Khải Phong đợi ở quán cà phê sân bay đến khuya — rồi đợi suốt tám năm"
     milestone_ep: 60
     milestone_special: "EP60 SEASON 2 FINALE = Khải Phong nhìn thấy bóng mình gương — không phải mình mặc gì hôm nay"
-  # R216 CONFLICT — reconcile pending Boss (New York taxi, KP khong lai). M13-M15 mã hoá cái
-  # chết phiên bản SAI: "Khải Phong CHỞ Hạ Vy / lái xe máy / chết cùng" = BẤT KHẢ dưới EP01
-  # (Hạ Vy chết TAXI ở New York, KP đứng tiễn ở sân bay cổng B rồi ở lại VN — KP KHÔNG lái,
-  # KHÔNG chở, KHÔNG chết cùng đêm đó). TUYỆT ĐỐI KHÔNG tự sửa M13-M15 — memory-arc reveal lõi
-  # phải rework theo EP01, cần Boss quyết sáng tác (xem TECH_DEBT DEBT-035 Phần#3).
   M13:
     eps: [61, 62, 63, 64, 65]
-    fragment: "Khải Phong nhớ chính Khải Phong chở Hà ngày Hạ Vy mất"
-    cliffhanger_hint: "Hạ Vy ngồi sau Khải Phong — xe máy Khải Phong"
+    fragment: "Khải Phong nhớ đêm anh nhận tin Hạ Vy mất"
+    cliffhanger_hint: "Điện thoại reo — giọng mẹ Hạ Vy — anh chưa nghe hết đã biết"
   M14:
     eps: [66, 67, 68, 69, 70]
-    fragment: "Khải Phong nhớ tai nạn xe đêm đó"
-    cliffhanger_hint: "Va chạm — Hà rơi xuống"
+    fragment: "Khải Phong nhớ Hạ Vy ra đi thế nào — taxi ở New York, một mình nơi đất khách"
+    cliffhanger_hint: "Kennedy — taxi — xe tải trên cao tốc — cô đi khi anh còn ở lại"
     milestone_ep: 70
     milestone_special: "EP70 = bác tài hé lộ 'Con tên Khải Phong' (lần đầu xác nhận tên)"
   M15:
     eps: [71, 72, 73, 74, 75]
-    fragment: "Khải Phong nhớ Khải Phong chết theo Hà"
-    cliffhanger_hint: "Khải Phong cũng đã đi đêm đó"
+    fragment: "Khải Phong nhớ chính mình cũng đã đi theo Hạ Vy — muộn hơn cô tám năm"
+    cliffhanger_hint: "Anh cũng đã đi — nhưng muộn hơn cô tám năm, mang theo câu chưa nói"
     note: "EP73 = driver reveal budget peak — driver có thể nói câu thứ 3 (bible/18)"
   M16:
     eps: [76, 77, 78, 79, 80]
