@@ -1,0 +1,78 @@
+# governance/canon_facts.yaml
+# ---------------------------------------------------------------------------
+# CANON-FACT PROVENANCE REGISTRY (de xuat #3, Boss chot — siet hien phap R216).
+# Goc re DEBT-035 = "backward codification": bible field-hoa canon theo SO DONG
+# tap sau thay vi tap GOC. Chong tai dien TAI GOC: moi canon-fact recurring PHAI
+# khai PROVENANCE = anchor_ep (tap sinh SOM NHAT thiet lap fact) + anchor_commit
+# (git SHA that thiet lap fact) + evidence (dong trong episode.md).
+#
+# NGUON SU THAT (R216): output/ep_01/episode.md = GROUND TRUTH (tap sinh som
+# nhat, anchor_ep=1). Tap sau BIA/mau thuan voi tap truoc = LAO -> bug o tap sau.
+# File nay CHI khai provenance canon — KHONG sua rule text bible/00 hay CLAUDE.md.
+#
+# schema moi fact:
+#   value         : gia tri canon (chuoi bat bien, neo tap goc).
+#   anchor_ep     : int — so tap sinh SOM NHAT thiet lap fact (anchor R216).
+#   anchor_commit : git SHA THAT thiet lap fact (phai resolve qua `git cat-file
+#                   -e <sha>^{commit}`). KHONG grep — checker chay git that.
+#   evidence      : "ep_01 dong N" — dong trong episode.md chung minh value.
+#
+# ENFORCER cua file nay: tools/canon_anchor_check.py +
+#   tests/test_canon_anchor_check.py (mutation-proof, KHONG grep-only):
+#   (a) checker PASS repo that; (b) go anchor_ep 1 fact -> FAIL;
+#   (c) doi anchor_commit thanh SHA bia "deadbeef..." -> FAIL (chung resolve THAT
+#   qua git, khong grep); (d) bo 1 REQUIRED fact -> FAIL.
+# KHONG wire vao ci_gate.CHECKS (chay trong pytest — reviewer quyet co wire khong).
+
+meta:
+  created: '2026-07-17'
+  author: CMD_BUILD (BUILDER)
+  ground_truth: output/ep_01/episode.md
+  source_of_truth_rule: >
+    CLAUDE.md (TOI THUONG R216) + bible/00_constitution.yaml
+    (rule_R216_earlier_episode_is_ground_truth_hardlock)
+  checker: tools/canon_anchor_check.py
+  self_test: tests/test_canon_anchor_check.py
+  anchor_ep_note: >
+    Tat ca 6 fact khoi tao co anchor_ep=1 (EP01 = tap sinh som nhat, golden
+    reference). anchor_commit = 3306d916... = commit dau tien them
+    output/ep_01/episode.md vao repo (git log --diff-filter=A ... | tail -1),
+    resolve duoc qua git.
+
+facts:
+
+  kp_seat:
+    value: "ghế số bảy"
+    anchor_ep: 1
+    anchor_commit: 3306d916b63bf0b185c8c7e1e7f476ad5e7d20e2
+    evidence: "ep_01 dòng 100"
+
+  havy_death_place:
+    value: "New York"
+    anchor_ep: 1
+    anchor_commit: 3306d916b63bf0b185c8c7e1e7f476ad5e7d20e2
+    evidence: "ep_01 dòng 336"
+
+  havy_death_mechanism:
+    value: "taxi gặp xe tải trên đường cao tốc"
+    anchor_ep: 1
+    anchor_commit: 3306d916b63bf0b185c8c7e1e7f476ad5e7d20e2
+    evidence: "ep_01 dòng 338"
+
+  havy_death_context:
+    value: "du học Hoa Kỳ"
+    anchor_ep: 1
+    anchor_commit: 3306d916b63bf0b185c8c7e1e7f476ad5e7d20e2
+    evidence: "ep_01 dòng 242"
+
+  havy_death_notifier:
+    value: "mẹ Hạ Vy báo tin"
+    anchor_ep: 1
+    anchor_commit: 3306d916b63bf0b185c8c7e1e7f476ad5e7d20e2
+    evidence: "ep_01 dòng 322"
+
+  havy_death_time:
+    value: "8 năm trước / đồng hồ dừng 7:10"
+    anchor_ep: 1
+    anchor_commit: 3306d916b63bf0b185c8c7e1e7f476ad5e7d20e2
+    evidence: "ep_01 dòng 232 + 358"
