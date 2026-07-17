@@ -89,11 +89,12 @@ characters:
     role: RECURRING_PASSENGER_POV   # hành khách cố định (KHÔNG one-shot) — ngồi lại mỗi đêm,
       # khác CHAR_DRIVER (tài xế) — giữ tên role rõ hơn "POV_PROTAGONIST" gốc (vẫn đúng nghĩa).
     display_name: "Khải Phong"
-    appears_in_eps: "1-90 (toàn series — hành khách cố định, ngồi ghế thứ ba mỗi đêm, TỰ đếm
-      số đêm/số vật nhặt được — xác nhận trực tiếp và NHẤT QUÁN ở EP02, EP06-50, đặc biệt
-      công thức lặp 'Khải Phong ngồi ghế thứ ba... đếm thêm' xuất hiện y hệt ở EP06-EP50).
-      KHÔNG phải '21-90 rải rác → boarding ep_30' như bản CHAR_NAM cũ (bản đó chưa từng khớp
-      nội dung thật đã viết)."
+    appears_in_eps: "1-90 (toàn series — hành khách cố định, ngồi GHẾ SỐ BẢY, TỰ đếm số
+      đêm/số vật nhặt được. Ghế số bảy = EP01 GROUND TRUTH (ep_01 dòng 100: 'Khải-Phong đang
+      ngồi trên ghế số bảy của chuyến xe đêm') — R216. EP02, EP06-50 HIỆN dùng công thức lặp
+      'Khải Phong ngồi ghế thứ ba... đếm thêm' = PHIÊN BẢN SAI (tập sinh sau mâu thuẫn tập
+      gốc), chờ Phase-2 regen về ghế số bảy (DEBT-035 Hướng A). KHÔNG phải '21-90 rải rác →
+      boarding ep_30' như bản CHAR_NAM cũ (bản đó chưa từng khớp nội dung thật đã viết)."
     visual:
       age: "UNKNOWN — 50 tập đã viết KHÔNG có dòng nào tự khai tuổi chính xác Khải Phong
         (chỉ suy luận cùng thế hệ Hạ Vy, mất ở tuổi 27 theo ep_40 dòng 144 — KHÔNG field-hoá
@@ -117,32 +118,37 @@ characters:
         bác tài mỗi đêm 'Con đã nhớ ra chưa?' / 'Chưa tới lúc.' dành riêng cho Khải Phong
         (ep_01 dòng 288-292: 'Mãi về sau anh mới biết — câu hỏi đó dành riêng cho mình anh.')"
     core_wound: |
-      Khải Phong yêu Hạ Vy (bạn học, cùng học kiến trúc, từng ở trọ chung phố Khâm Thiên).
-      Theo 40 tập có tag quang_memory_fragment (EP11-50, nguồn chính/nhất quán — xem bible/21
-      #quang_memory_arc M3-M10): Hạ Vy mất trong tai nạn xe máy đêm 12 tháng 4 (năm xác nhận
-      qua "tám năm trước" lặp lại nhiều tập), tại ngã tư phố Huế - Hai Bà Trưng, Hà Nội (bị xe
-      tải chở vật liệu xây dựng tông trúng lúc đi làm về từ văn phòng KTS Mộc Hà một mình).
-      Đồng nghiệp Lãm Chấn Hải chứng kiến, gọi cấp cứu, đưa vào bệnh viện Bạch Mai — Khải Phong
-      không có mặt lúc tai nạn, tới bệnh viện sau mẹ Hạ Vy một giờ (ep_31 dòng 235-247, ep_32
-      dòng 155-257, ep_36-39). Tin nhắn Hạ Vy gửi thành công cuối cùng: "Anh ơi em sắp về — chờ
-      em — em ăn cơm nhà"; còn một tin nhắn dở dang chưa gửi trên điện thoại "Anh ơi em yêu" (3
-      từ, viết dở khi đang lái xe máy giữa mưa, ep_41 dòng 233-259). Khải Phong từng hứa miệng
-      (chưa cưới, chưa đặt vé) sẽ đưa Hạ Vy đi Hàn Quốc trăng mật — lời hứa không giữ được
-      (ep_47 dòng 229-257).
+      Khải Phong yêu Hạ Vy — bạn cùng lớp từ hồi cấp ba (ep_01 dòng 238: "Cô ấy là bạn lớp
+      tôi từ hồi cấp ba, tên cô ấy là Hạ-Vy"). Anh thương cô từ năm lớp mười một mà không dám
+      nói ra (ep_01 dòng 240). Năm cuối, Hạ Vy được học bổng đi du học Hoa Kỳ; Khải Phong —
+      khi đó là cậu sinh viên năm thứ hai (ep_01 dòng 202) — đưa cô ra sân bay, đứng ở cổng B
+      tiễn (ep_01 dòng 242 + 264). Anh mua tặng cô chiếc đồng hồ nữ vỏ xà cừ, ấp ủ một câu
+      chưa kịp nói (ep_01 dòng 244 + 266). Hạ Vy mất TÁM NĂM TRƯỚC trong một tai nạn (ep_01
+      dòng 232): máy bay hạ cánh êm xuôi, cô xuống sân bay Kennedy ở New York rồi bắt taxi về
+      nhà người dì; taxi gặp xe tải trên đường cao tốc, cô mất ngay tại nơi đó (ep_01 dòng
+      336-340). Mẹ Hạ Vy là người gọi điện báo tin cho Khải Phong (ep_01 dòng 322-336). Đồng
+      hồ dừng đúng 7:10 — chính là giờ cô mất (ep_01 dòng 358: "Bảy giờ mười là lúc cô ấy
+      mất"). Khải Phong không nói được câu đó với cô (ep_01 dòng 370); tám năm anh không mở
+      ngăn tủ đáy nơi giấu đồng hồ (ep_01 dòng 110 + 372). Wound lõi = "một câu chưa kịp nói,
+      dừng lại lúc bảy giờ mười" (ep_01 dòng 496).
 
-      SỬA THEO R216 (17/7 — Mr.Long: "tập sinh trước = GỐC, sinh sau bịa khác = LÁO"):
-      output/ep_01/episode.md (GỐC, sinh sớm nhất) thiết lập: Khải Phong ngồi GHẾ SỐ BẢY,
-      Hạ Vy mất trong tai nạn TAXI tại New York (Mỹ) sau khi hạ cánh du học, đồng hồ dừng
-      7:10. Theo R216 đây là GROUND TRUTH bất biến. EP02-50 (sinh sau) dùng "ghế thứ ba" +
-      Hạ Vy mất xe máy Hà Nội — đây là PHIÊN BẢN SAI (tập sau mâu thuẫn tập trước), là bên
-      CẦN reconcile về khớp EP01, KHÔNG phải EP01 sai.
-      LỖI GỐC ĐÃ XẢY RA (tự thú, để hậu thế tránh): bản field-hoá core_wound cũ lấy EP11-50
-      (số đông 40 tập) làm nguồn + gọi EP01 là "bản nháp" — ĐÓ CHÍNH LÀ codify NGƯỢC R216
-      (tin số đông/tập sau thay vì tập gốc). Enforcer canon_consistency_check.py (cũng khóa
-      nhầm hướng "Hà Nội") đã bị GỠ (17/7). core_wound death dưới đây (mô tả Hà Nội/xe máy)
-      HIỆN CÒN theo hướng SAI — GIỮ TẠM, đánh dấu reconcile toward EP01/New York (xem
-      governance/TECH_DEBT.md DEBT-035 R216 reconcile). CẤM lấy bản này field-hoá tiếp khi
-      chưa reconcile.
+      [ANCHOR R216 — reconcile 17/7, Hướng A Boss chốt] Toàn bộ core_wound trên NEO trực tiếp
+      output/ep_01/episode.md (tập sinh sớm nhất 26/6 = GROUND TRUTH bất biến, R216). Đã ĐẢO
+      khỏi bản field-hoá cũ vốn lấy EP11-50 ("số đông 40 tập") làm nguồn CHÍNH + gọi EP01 là
+      "bản nháp" — đó chính là codify NGƯỢC R216 (tin tập sau thay vì tập gốc), nay bỏ. Nhãn
+      "HIỆN CÒN SAI/GIỮ TẠM" của bản trước KHÔNG còn: core_wound giờ ĐÃ khớp EP01.
+      CÁC CHI TIẾT CHỈ CÓ Ở EP11-50 — mâu thuẫn EP01 (SAI) hoặc chưa đối chiếu — KHÔNG dùng
+      làm canon, chờ Phase-2 regen 49 tập (DEBT-035 Hướng A):
+        - Death mechanism Hà Nội / xe máy / ngã tư phố Huế-Hai Bà Trưng / bệnh viện Bạch Mai /
+          đêm 12-4 / đồng nghiệp Lãm Chấn Hải chứng kiến gọi cấp cứu = MÂU THUẪN EP01
+          (New York / taxi / mẹ báo tin / chết một mình) → SAI, đã bỏ khỏi canon.
+        - Tin nhắn dở "Anh ơi em yêu" viết khi đang lái xe máy (ep_41) = MÂU THUẪN EP01 (cô ở
+          taxi New York; câu-chưa-nói là của Khải Phong, không phải Hạ Vy) → SAI.
+        - Cùng học kiến trúc / ở trọ phố Khâm Thiên / lời hứa Hàn Quốc trăng mật / quê Vĩnh Bảo
+          Hải Phòng / em gái Hạ Nhi = CHƯA có trong EP01 (reveal EP11-50, chưa xác nhận) →
+          giữ NGOÀI canon tới khi regen đối chiếu. LƯU Ý: relationship_map dưới đây vẫn còn
+          ref "Lãm Chấn Hải chứng kiến/gọi cấp cứu" + "lời hứa Hàn Quốc" thuộc phiên bản SAI
+          Hà Nội — FLAG chờ Phase-2 Boss reconcile (không tự xoá/bịa lại theo New York).
     relationship_map:
       - "Hạ Vy (đã mất): wound chính — tình yêu chưa nói hết, lời hứa Hàn Quốc chưa giữ được"
       - "Hạ Nhi (em/chị gái Hạ Vy — bible/23 canon_waivers ghi 'chị gái ruột'): xuất hiện lại
@@ -155,7 +161,8 @@ characters:
       Field-hoá theo bible/21_series_arc_design.yaml#quang_memory_arc (LOCKED 12/7) — nguồn duy
       nhất cho toàn bộ 90 EP, TRÁNH lặp bảng ở đây (R211, không nhân đôi domain arc-design vào
       character-bible). Tóm tắt cấp cao, CHỈ phần đã có episode thật đối chiếu (M1-M10, EP1-50):
-      Khải Phong ngồi cố định ghế thứ ba mỗi đêm, không biết vì sao (M1, EP1-5) → nhớ dần từng
+      Khải Phong ngồi cố định GHẾ SỐ BẢY (ep_01 dòng 100 = GROUND TRUTH R216; EP02-50 hiện
+      ghi "ghế thứ ba" = SAI chờ Phase-2 regen), không biết vì sao (M1, EP1-5) → nhớ dần từng
       mảnh quá khứ với Hạ Vy qua 10 mốc M3-M10 (EP11-50, xem bảng đầy đủ trong
       governance/proposals/bible03_driver_memory_arc_proposal.yaml#bang_arc_40_tap) → EP50 = S1
       finale, xếp 50 vật thành bản đồ dẫn tới quê Hạ Vy, Hạ Nhi xuất hiện trên xe.
@@ -165,7 +172,8 @@ characters:
       Hải đi phía sau chứng kiến — KHÔNG có Khải Phong trên xe cùng đêm đó) — xem
       governance/TECH_DEBT.md DEBT-035, cần Mr.Long xác nhận khi EP61-75 được viết thật, KHÔNG
       tự suy diễn thêm ở đây (R195).
-    secret_for_audience: "Khải Phong không biết vì sao mình luôn ngồi cố định ghế thứ ba mỗi
+    secret_for_audience: "Khải Phong không biết vì sao mình luôn ngồi cố định GHẾ SỐ BẢY (ep_01
+      dòng 100 = GROUND TRUTH R216; EP02-50 hiện ghi 'ghế thứ ba' = SAI chờ Phase-2 regen) mỗi
       đêm, thu thập kỷ vật hành khách khác để lại — bản chất thật của Khải Phong (còn sống,
       linh hồn, hay gì khác) CHƯA được 50 tập đã viết (EP1-50) xác nhận trực tiếp. Kế hoạch
       bible/21 M16-M18 (EP76-90, CHƯA VIẾT) dự kiến Khải Phong dần nhận ra 'mình là hành khách

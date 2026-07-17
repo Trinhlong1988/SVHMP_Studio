@@ -76,6 +76,10 @@ quang_memory_arc:
     cliffhanger_hint: "Khải Phong đã hứa — sẽ đón Hà"
     milestone_ep: 50
     milestone_special: "EP50 SEASON 1 FINALE = Khải Phong nhận 50 đêm không sáng + xếp 50 items thành bản đồ"
+  # R216 CONFLICT — reconcile pending Boss (New York taxi, KP khong lai). M11-M12 (Hạ Vy đợi ở
+  # cầu Long Biên / Khải Phong không tới) thuộc mạch cái-chết phiên bản Hà Nội, entangled với
+  # M13-M15 — BẤT KHẢ dưới EP01 (Hạ Vy chết trong taxi ở New York ngay sau khi hạ cánh, không
+  # chờ ai ở Long Biên). KHÔNG tự sửa — cần Boss quyết sáng tác (xem TECH_DEBT DEBT-035 Phần#3).
   M11:
     eps: [51, 52, 53, 54, 55]
     fragment: "Khải Phong nhớ mình đã không giữ lời"
@@ -86,6 +90,11 @@ quang_memory_arc:
     cliffhanger_hint: "Hạ Vy đợi Khải Phong ở cầu Long Biên — Khải Phong không tới"
     milestone_ep: 60
     milestone_special: "EP60 SEASON 2 FINALE = Khải Phong nhìn thấy bóng mình gương — không phải mình mặc gì hôm nay"
+  # R216 CONFLICT — reconcile pending Boss (New York taxi, KP khong lai). M13-M15 mã hoá cái
+  # chết phiên bản SAI: "Khải Phong CHỞ Hạ Vy / lái xe máy / chết cùng" = BẤT KHẢ dưới EP01
+  # (Hạ Vy chết TAXI ở New York, KP đứng tiễn ở sân bay cổng B rồi ở lại VN — KP KHÔNG lái,
+  # KHÔNG chở, KHÔNG chết cùng đêm đó). TUYỆT ĐỐI KHÔNG tự sửa M13-M15 — memory-arc reveal lõi
+  # phải rework theo EP01, cần Boss quyết sáng tác (xem TECH_DEBT DEBT-035 Phần#3).
   M13:
     eps: [61, 62, 63, 64, 65]
     fragment: "Khải Phong nhớ chính Khải Phong chở Hà ngày Hạ Vy mất"
@@ -104,9 +113,12 @@ quang_memory_arc:
   M16:
     eps: [76, 77, 78, 79, 80]
     fragment: "Khải Phong nhận ra mình là hành khách — không phải nhân chứng"
-    cliffhanger_hint: "Khải Phong nhìn lại ghế thứ ba — chỗ ngồi đã không thay đổi từ đầu"
+    # R216 reconcile 17/7: seat SAI "ghế thứ ba/ghế 3" -> "ghế số bảy" theo EP01 GROUND TRUTH
+    # (output/ep_01/episode.md dòng 100: "Khải-Phong đang ngồi trên ghế số bảy"). EP02-50 hiện
+    # ghi ghế thứ ba = SAI (tập sinh sau), chờ Phase-2 regen (DEBT-035 Hướng A).
+    cliffhanger_hint: "Khải Phong nhìn lại ghế số bảy — chỗ ngồi đã không thay đổi từ đầu"
     milestone_ep: 80
-    milestone_special: "EP80 = Khải Phong nhìn thấy Hà trên xe — passenger ghế ba (Khải Phong ngồi ghế 3 từ đầu)"
+    milestone_special: "EP80 = Khải Phong nhìn thấy Hà trên xe — passenger ghế số bảy (Khải Phong ngồi ghế số bảy từ đầu)"
   M17:
     eps: [81, 82, 83, 84, 85]
     fragment: "Khải Phong nhận ra bác tài là ai (deferred per bible/18)"

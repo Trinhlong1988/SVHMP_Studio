@@ -76,6 +76,19 @@ ten_mach_de_xuat:
 # (doan do LUON co o CA 40 tap, xem "co_che_phat_hien" ben duoi).
 # ------------------------------------------------------------
 
+# ============================================================
+# R216 FLAG (17/7 — reconcile pending, KHONG tu sua bang nay)
+# ============================================================
+# bang_arc_40_tap duoi day la MO TA noi dung 40 tap EP11-50 DA VIET (phien ban SAI
+# theo R216: Ha Vy chet xe may Ha Noi / pho Hue-Hai Ba Trung / benh vien Bach Mai /
+# anh Hai chung kien / que Vinh Bao Hai Phong / hua Han Quoc). Theo Boss chot Huong A
+# (DEBT-035): EP01 (New York taxi / du hoc Hoa Ky / dong ho 7:10 / ghe so bay) = GROUND
+# TRUTH; chinh 49 tap EP02-50 nay la ben CAN regen ve khop EP01 (Phase 2).
+# => KHONG rewrite cac fragment o day thanh "New York": chung dang MO TA chinh xac noi
+#    dung episode that hien co; sua se khien mo ta lech khoi episode. Bang nay se lac hau
+#    sau regen. Cac locus SAI cu the trong bang: ep17/18 (tai nan/dem mua/con duong),
+#    ep31 (12/4), ep32 (Bach Mai), ep33/34 (tang o que / Vinh Bao Hai Phong), ep36-40
+#    (anh Hai chung kien goi cap cuu), ep47/48 (hua Han Quoc). CHO Phase-2 Boss reconcile.
 bang_arc_40_tap:
   - {ep: 11, m_level: M3,  peak: false, milestone: false, callback_target: "none", extra_line_HOOK: false, fragment: "Khai Phong nghe ten Ha Vy vong lan dau"}
   - {ep: 12, m_level: M3,  peak: false, milestone: false, callback_target: "ep_01 (object_echo dong ho xa cu)", extra_line_HOOK: true,  fragment: "Khai Phong ngam ten Ha Vy sau hon qua callback EP01", ghi_chu: "BAT THUONG - la tap DUY NHAT co extra_line_HOOK ma KHONG phai PEAK cuoi khoi M-level. La lan dau tien co che 'cau thu ba' duoc dung trong toan mach (frontmatter tu ghi ro 'driver extra line')."}
