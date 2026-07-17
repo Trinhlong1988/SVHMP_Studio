@@ -4,7 +4,7 @@ current_round: 21
 current_version: v1.1.0-tier2x-phase1
 status: Tier 2.x Phase 1 Voice Profile Manager FROZEN — 10-round regression 150/150 PASS
 last_update_ts: 2026-07-17T00:00:00
-last_update_by: CMD_AUDIT session 17/7 (R216 reversal — EP01 v8→v7 restore, gỡ enforcer build-ngược, dựng cross_episode_canon_check, reconcile bible/21+49 tập PENDING Boss duyệt. Xem VERSION log "EP01 v7 restore" + TECH_DEBT DEBT-035 Hướng A.)
+last_update_by: CMD_AUDIT session 17/7 END (R216 saga XONG: EP01=ground truth; canon KHOÁ TRỌN VẸN về EP01 — death New York/seat 7/M11-15 redesign; 6 enforcer siết hiến pháp; Phase-2 regen BẮT ĐẦU pilot EP02. 14 commit fc196b5→f072f22 remote. Còn 47 tập regen. Xem BUGS_FIXED B_R216_SAGA + memory project_svhmp_regen_readiness checklist.)
 rule_break_count: 7
 schema_version: 1
 ---
