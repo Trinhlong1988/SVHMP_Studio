@@ -16,7 +16,7 @@ def get_duration_sec(path):
     """Get audio duration via ffprobe."""
     r = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
                         "-of", "csv=p=0", str(path)],
-                       capture_output=True, text=True, timeout=30)
+                       capture_output=True, text=True, encoding='utf-8', errors='replace', timeout=30)
     return float(r.stdout.strip())
 
 
@@ -62,7 +62,7 @@ def main():
             args.output
         ]
 
-    r = subprocess.run(cmd, capture_output=True, text=True, timeout=300, creationflags=CREATE_NO_WINDOW)
+    r = subprocess.run(cmd, capture_output=True, text=True, encoding='utf-8', errors='replace', timeout=300, creationflags=CREATE_NO_WINDOW)
     if r.returncode != 0:
         print(f"ERROR: ffmpeg failed:\n{r.stderr[-500:]}")
         sys.exit(1)

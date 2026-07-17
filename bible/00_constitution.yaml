@@ -671,7 +671,7 @@ R72_dialogue_quote_render_separate:
   # round 18 add 2026-06-28 — Agent 2 gap: IndexTTS2 ignores quote boundary, blends voices
   rule: "Dialogue trong dấu \" \" PHẢI render separate + concat với 180ms bridge + slight pitch shift"
   why: "IndexTTS2 + BigVGAN không respect quote boundary — narrator voice + dialogue voice blend → mất character distinction"
-  enforcement: "tools/tts_dialogue_segmenter.py + render pipeline"
+  enforcement: "CHƯA CÓ ENFORCER — tools/tts_dialogue_segmenter.py CHƯA BUILD (DEBT-041). Rule hiện ở mức manual/LLM-judge (render pipeline chưa segment quote riêng)."
   format_change: "Convert quote dialogue → separate WAV segment, concat with bridge + pitch shift ±5%"
 
 R71_place_name_canonical_form_hardlock:
@@ -684,7 +684,7 @@ R71_place_name_canonical_form_hardlock:
     - Quy Nhơn → "Quy-Nhơn"
     - Đắk Lắk → "Đắc-Lắc"
     - Phước Long → check pronunciation per render
-  enforcement: tools/audit_place_name.py + manual whitelist data/place_names.yaml
+  enforcement: "CHƯA CÓ ENFORCER — tools/audit_place_name.py CHƯA BUILD + data/place_names.yaml CHƯA TỒN TẠI (DEBT-041). Rule hiện ở mức manual/LLM-judge (whitelist trên chỉ là tham chiếu tay)."
 
 R70_em_dash_prosody_explicit_pause_hardlock:
   # round 18 add 2026-06-28 — Agent 2 gap: BigVGAN em-dash 0ms pause
@@ -707,7 +707,7 @@ R69_number_reading_vietnamese_chu_hardlock:
     bad: ["7 giờ tối", "20 tuổi", "5 năm trước"]
     good: ["bảy giờ tối", "hai mươi tuổi", "năm năm trước"]
   exception: "Năm cụ thể >1000 (1990, 2018) — giữ số nhưng test pronounce"
-  enforcement: tools/audit_number_form.py + .githooks/pre-render
+  enforcement: "CHƯA CÓ ENFORCER — tools/audit_number_form.py CHƯA BUILD + .githooks/pre-render KHÔNG TỒN TẠI (DEBT-041). Rule hiện ở mức manual/LLM-judge."
 
 R68_triphthong_diphthong_proper_noun_hardlock:
   # round 18 add 2026-06-28 — Agent 2 gap: BigVGAN 22kHz under-resolve triphthongs
@@ -719,7 +719,7 @@ R68_triphthong_diphthong_proper_noun_hardlock:
     - '"Thuận" → "Thu-ận"'
     - '"Khải" → check'
     - '"Tuyến" → "Tu-yến"'
-  enforcement: tools/audit_triphthong.py + whitelist data/triphthong_fallback.yaml
+  enforcement: "CHƯA CÓ ENFORCER — tools/audit_triphthong.py CHƯA BUILD + data/triphthong_fallback.yaml CHƯA TỒN TẠI (DEBT-041). Rule hiện ở mức manual/LLM-judge."
 
 R65_total_consistency_no_invention_hardlock:
   # round 15 add 2026-06-28 — Mr.Long: "kể serri như tiểu thuyết, logic tổng hợp tất cả kiến thức, CẤM SAI, không bịa luyên thuyên"
@@ -797,7 +797,7 @@ R61_short_syllable_start_sentence_hardlock:
     bad: "Đêm đó mưa từ bảy giờ."
     good: "Hôm đó, từ bảy giờ tối, mưa đã rơi không ngớt."
   alternatives: ["Vào đêm đó", "Trong đêm hôm ấy", "Hôm ấy đêm"]
-  detection: tools/audit_short_syllable_start.py
+  detection: "CHƯA CÓ ENFORCER — tools/audit_short_syllable_start.py CHƯA BUILD (DEBT-041). Rule hiện ở mức manual/LLM-judge."
 
 R60_short_syllable_eol_hardlock:
   # round 15 add 2026-06-28 — Mr.Long: "các từ 2 chữ ở kết thúc câu như 'im' bị cụt âm"

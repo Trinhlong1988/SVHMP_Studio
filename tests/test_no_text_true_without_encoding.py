@@ -12,8 +12,8 @@ Cach lam (ratchet allowlist theo FILE + COUNT — R215.5, mutation-proof):
   - File CHUA co trong allowlist ma co vi pham  -> FAIL (instance/file MOI).
   - File trong allowlist nhung so instance TANG hon con so ghi -> FAIL (them moi).
   - So instance GIAM (ai do da fix) -> nhac cap nhat allowlist (khong FAIL cung).
-Backlog 11 instance legacy nam trong KNOWN_* kem ref DEBT-hook — sua dan, moi lan
-sua thi ha con so trong allowlist. promotion_guard._git ĐA fix (khong con trong list).
+Backlog 11 instance legacy (7 file) ĐA fix het 17/7 (DEBT-038 dong lop) — allowlist RONG.
+promotion_guard._git ĐA fix truoc do (khong con trong list).
 
 Mutation-proof: test_detector_flags_a_synthetic_violation dung 1 file gia co
 subprocess.run(text=True) thieu encoding -> detector PHAI bat.
@@ -25,15 +25,11 @@ from pathlib import Path
 TOOLS = Path(__file__).resolve().parents[1] / "tools"
 
 # Backlog legacy (16/7): {relpath: so_instance_duoc_phep}. HA khi fix bot, KHONG tang.
-KNOWN_TEXT_TRUE_NO_ENCODING = {
-    "auditor.py": 2,
-    "dashboard/server.py": 2,
-    "event_logger.py": 1,
-    "music_loop.py": 2,
-    "pre_render_audit.py": 1,
-    "project_bootstrap.py": 1,
-    "sfx_acquire.py": 2,
-}
+# 17/7 (DEBT-038 dong lop): ĐA fix het 11 instance legacy trong 7 file
+# (auditor/dashboard.server/event_logger/music_loop/pre_render_audit/project_bootstrap/sfx_acquire)
+# -> them encoding='utf-8', errors='replace'. Allowlist ve RONG = gate gio la guard vinh vien:
+# BAT KY tools/**/*.py co subprocess text=True thieu encoding= (moi hoac cu) deu FAIL.
+KNOWN_TEXT_TRUE_NO_ENCODING = {}
 
 _CALL_ATTRS = {"run", "Popen", "check_output", "call"}
 

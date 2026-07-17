@@ -243,7 +243,7 @@ def ffmpeg_run(args, label="ffmpeg"):
     """Run ffmpeg with stderr capture."""
     cmd = [FFMPEG, "-y"] + args
     print(f"  [{label}] {' '.join(cmd[:6])}...")
-    res = subprocess.run(cmd, capture_output=True, text=True)
+    res = subprocess.run(cmd, capture_output=True, text=True, encoding='utf-8', errors='replace')
     if res.returncode != 0:
         print(f"  [{label}] FAIL: {res.stderr[:500]}")
     return res
@@ -252,7 +252,7 @@ def get_audio_info(path):
     """Use ffmpeg to probe duration + sample rate."""
     res = subprocess.run(
         [FFMPEG, "-i", str(path), "-hide_banner"],
-        capture_output=True, text=True
+        capture_output=True, text=True, encoding='utf-8', errors='replace'
     )
     info = {}
     for line in res.stderr.split('\n'):

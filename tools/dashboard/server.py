@@ -133,10 +133,10 @@ def load_status() -> dict:
     # Git status
     try:
         cwd = str(SVHMP)
-        result = subprocess.run(['git', 'log', '--oneline', '-1'], cwd=cwd, capture_output=True, text=True, timeout=5)
+        result = subprocess.run(['git', 'log', '--oneline', '-1'], cwd=cwd, capture_output=True, text=True, encoding='utf-8', errors='replace', timeout=5)
         if result.returncode == 0:
             data['last_commit'] = result.stdout.strip()[:50]
-        result2 = subprocess.run(['git', 'tag'], cwd=cwd, capture_output=True, text=True, timeout=5)
+        result2 = subprocess.run(['git', 'tag'], cwd=cwd, capture_output=True, text=True, encoding='utf-8', errors='replace', timeout=5)
         data['git_tags_count'] = len(result2.stdout.strip().split('\n')) if result2.stdout.strip() else 0
     except Exception:
         data['last_commit'] = 'no_git'

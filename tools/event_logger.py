@@ -32,7 +32,7 @@ def _gpu_name():
     try:
         out = subprocess.run(
             ['nvidia-smi', '--query-gpu=name', '--format=csv,noheader'],
-            capture_output=True, text=True, timeout=5,
+            capture_output=True, text=True, encoding='utf-8', errors='replace', timeout=5,
         )
         if out.returncode == 0 and out.stdout.strip():
             return out.stdout.strip().splitlines()[0]

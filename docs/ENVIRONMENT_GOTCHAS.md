@@ -256,6 +256,7 @@ BỊ MẤT" — thực ra **không mất 1 byte nào**, chỉ mất commit recor
 `git cat-file -e <hash>` xác nhận dangling commit chưa bị GC).
 
 **Quy trình bắt buộc từ nay (chống tái diễn — R215 áp dụng, đây là process failure):**
+`[CHƯA CÓ ENFORCER — DEBT-042. Đây là quy trình git thủ công cho người vận hành (chạy git log trước git reset, không reset khi thấy commit lạ) — honor-system, KHÔNG có gate máy nào chặn được thao tác git tương tác của session khác. Mục 4 (worktree-per-session) tự nhận "đề xuất, chưa bắt buộc — cần Mr.Long quyết".]`
 1. **TRƯỚC khi chạy `git reset <bất kỳ ref nào>` trên thư mục làm việc chính (KHÔNG áp dụng cho
    worktree cô lập tự tạo/tự xoá)** — PHẢI chạy `git log --oneline <ref>..HEAD` trước. Nếu có commit
    nào hiện ra (bất kể của session nào, kể cả không nhận ra tác giả) → **DỪNG**, không reset ngay.
@@ -295,6 +296,7 @@ nó chỉ sửa stdout của CHÍNH process, không đổi cách decode output c
 
 **Đề xuất quy trình (chống tái diễn):** grep repo tìm `text=True` không kèm `encoding=` trong mọi
 tool có thể chạy trên hook/CI = nợ tiềm ẩn cùng lớp — nên quét định kỳ.
+`[ĐÃ CÓ ENFORCER: tests/test_no_text_true_without_encoding.py (AST-scan tools/**, ratchet) — xem CẬP NHẬT 16/7 ngay dưới; 17/7 đóng backlog về 0 (allowlist RỖNG), DEBT-038 CLOSED lớp.]`
 
 **CẬP NHẬT 16/7 (CMD_AUDIT, DEBT-hook):** "quét định kỳ" ở trên CHỈ là đề xuất, KHÔNG có enforcer →
 **lọt 1 instance:** `tools/promotion_guard.py::_git` (chạy trên pre-push hook) vẫn `text=True` thiếu
@@ -326,3 +328,4 @@ theo R195/R197). Verify lại `qa_eol_diacritic.py` (vẫn 0) rồi mới `post_
 (>2800 từ trước khi sửa, xem qua `wc` nhanh), ưu tiên fix bằng REORDER (không thêm từ) hơn fix bằng
 THÊM TỪ ở những câu có thể đảo được — chỉ thêm từ khi reorder không khả thi (câu 1 từ đơn, tên riêng
 cuối câu, v.v).
+`[CHƯA CÓ ENFORCER — DEBT-018. Triệu chứng (word_count > hard_ceiling) ĐÃ gate qua post_render_gate.py; nhưng "ưu tiên REORDER hơn THÊM TỪ" chỉ là đề xuất workflow thủ công, KHÔNG có gate máy nào ép ưu tiên đó.]`

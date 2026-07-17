@@ -197,7 +197,7 @@ NGAY: load context + signal Mr.Long ready
 def step8_open_terminals():
     section("Open Windows Terminal — 2 tab Claude ready", 8)
     # Try wt.exe first
-    wt = subprocess.run(["where", "wt.exe"], capture_output=True, text=True)
+    wt = subprocess.run(["where", "wt.exe"], capture_output=True, text=True, encoding='utf-8', errors='replace')
     if wt.returncode == 0:
         try:
             # chcp 65001 trước khi launch shell — UTF-8 cho tiếng Việt

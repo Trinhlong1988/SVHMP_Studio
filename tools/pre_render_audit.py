@@ -117,7 +117,7 @@ def main():
 
     CREATE_NO_WINDOW = 0x08000000 if __import__("sys").platform == "win32" else 0
     prv_path = Path(__file__).parent / 'post_rotate_verify.py'
-    result = subprocess.run([sys.executable, str(prv_path), spec_path], capture_output=True, text=True, env={**os.environ, 'PYTHONIOENCODING':'utf-8'})
+    result = subprocess.run([sys.executable, str(prv_path), spec_path], capture_output=True, text=True, encoding='utf-8', errors='replace', env={**os.environ, 'PYTHONIOENCODING':'utf-8'})
     print(result.stdout)
     if result.returncode != 0:
         print("R88 BLOCK render")

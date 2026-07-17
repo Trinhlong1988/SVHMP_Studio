@@ -681,3 +681,28 @@ Registry 0/0/0 sau mỗi sửa. Domain LOCKED chạm: g6b_story_planner (DEBT-01
 - **Không chặn / vì sao chưa fix ngay:** DNA là ràng buộc thẩm mỹ/nội dung truyện — xây gate máy tin cậy khó (giống lý do defer R196/R200/R210 aesthetic). Được TRACK tường minh: cả 5 claim DNA trong `governance/claim_enforcer_map.yaml` mang `status: LLM_JUDGE_ONLY` + `llm_ref: prompts/qa.md` + `debt: DEBT-040`; checker `tools/claim_enforcer_registry_check.py` FAIL nếu ai đó gán enforcer máy giả cho các claim non-machine này (mislabel guard, đã mutation-flip verify).
 - **Đề xuất:** (a) sửa `post_render_gate.py` L85/L91/L101 để enforce THẬT (driver ≤2 câu trừ EP73/90; bell exact 1; ghost_visual max 1) + mutation-proof test — HOẶC (b) gỡ hẳn 3 dòng gate giả để không đọc như đã-phòng-thủ; (c) nếu build gate content cho ALWAYS/NEVER/GHOST/ENDING → chuyển status các claim tương ứng sang ENFORCED/PARTIAL + wire test node. Trước khi làm (a)/(c): cần Mr.Long duyệt (đụng render domain).
 - **Trạng thái:** MỞ (LLM_JUDGE_ONLY, tracked registry; mislabel guard ngăn giả-danh ENFORCED). Ref: `governance/claim_enforcer_map.yaml`, synthesis G3/G4/G5/G6/G7.
+
+## DEBT-041: 5 enforcer TTS/logic MASK-AS-ACTIVE trong `bible/00_constitution.yaml` — `enforcement:`/`detection:` trỏ tool CHƯA BUILD (đọc như đã-enforce)
+
+- **Phát hiện:** 17/7, đề xuất #5 `governance/AUDIT_ROOT_CAUSE_SYNTHESIS_17_07.md` mục 2 (G8) + mục 3. Reviewer báo 5 tool + verify tay lại (đã tự chạy `ls tools/<x>.py` — CẢ 5 đều KHÔNG tồn tại). Các dòng dùng nhãn `enforcement:`/`detection:` trỏ thẳng tool như thể đã enforce, nhưng tool chưa build → đúng lớp R215.1 (rule-without-enforcer mask như active).
+- **Bằng chứng (tự verify tay 17/7, `ls` trả MISSING cho cả 5):**
+  - **R61** `R61_short_syllable_start_sentence_hardlock.detection` → `tools/audit_short_syllable_start.py` — CHƯA BUILD.
+  - **R68** `R68_triphthong_diphthong_proper_noun_hardlock.enforcement` → `tools/audit_triphthong.py` + `data/triphthong_fallback.yaml` — CẢ HAI CHƯA TỒN TẠI.
+  - **R69** `R69_number_reading_vietnamese_chu_hardlock.enforcement` → `tools/audit_number_form.py` + `.githooks/pre-render` — CẢ HAI CHƯA TỒN TẠI.
+  - **R71** `R71_place_name_canonical_form_hardlock.enforcement` → `tools/audit_place_name.py` + `data/place_names.yaml` — CẢ HAI CHƯA TỒN TẠI.
+  - **R72** `R72_dialogue_quote_render_separate.enforcement` → `tools/tts_dialogue_segmenter.py` + render pipeline — TOOL CHƯA BUILD, pipeline chưa segment quote riêng.
+- **Đã làm 17/7 (chỉ RELABEL, KHÔNG đổi logic/nội dung rule):** sửa cả 5 nhãn thành dạng `"CHƯA CÓ ENFORCER — tools/<x>.py CHƯA BUILD (DEBT-041). Rule hiện ở mức manual/LLM-judge."` để KHÔNG còn đọc như đã-enforce. Rule (rule/why/examples/whitelist) giữ nguyên. YAML re-parse OK.
+- **Không chặn / vì sao chưa fix ngay:** đây là ràng buộc phát âm TTS (mono-syllable start, triphthong, số Ả Rập, place-name, quote-segment) — build audit tool tin cậy cần dữ liệu phát âm + phối hợp render pipeline, ngoài scope task relabel. Hiện dựa manual review + LLM-judge trong QA.
+- **Đề xuất:** build lần lượt 5 audit tool + whitelist data + mutation-proof test, rồi đổi nhãn về tool thật khi đã enforce. Cần Mr.Long duyệt (đụng render/TTS domain).
+- **Trạng thái:** MỞ (relabel xong, không còn mask-as-active). Ref: synthesis G8, R215.1.
+
+## DEBT-042: (GỘP) Advisory "đề xuất quy trình / chống tái diễn" thủ công trong `docs/ENVIRONMENT_GOTCHAS.md` chưa có gate máy — honor-system
+
+- **Phát hiện:** 17/7, đề xuất #5 PHẦN C (R215.6 rà advisory→gate). Grep `docs/ENVIRONMENT_GOTCHAS.md` + `governance/proposals/*.md` tìm cụm advisory ("nên quét/cần rà/đề xuất quy trình/chống tái diễn/quét định kỳ"). Kết quả: 3 cụm; 1 đã có gate, 2 là quy trình thủ công cho người vận hành (không gate được bằng máy tại thời điểm này). `governance/proposals/*.md` KHÔNG có cụm advisory nào chưa gate.
+- **Kết quả rà (label tại chỗ):**
+  - **cp1252 "nên quét định kỳ"** (L296-297) → **ĐÃ CÓ GATE**, không thuộc DEBT này: `tests/test_no_text_true_without_encoding.py` (AST-scan, ratchet); 17/7 đóng backlog allowlist về 0 (DEBT-038 CLOSED lớp). Đã gắn nhãn `[ĐÃ CÓ ENFORCER]` tại chỗ.
+  - **R86 word_count "ưu tiên REORDER"** (L325-328) → thuộc **DEBT-018** (không gộp vào đây): triệu chứng word_count>trần đã gate qua `post_render_gate.py`, nhưng khuyến nghị "ưu tiên REORDER hơn THÊM TỪ" là workflow thủ công không gate. Đã gắn nhãn `[CHƯA CÓ ENFORCER — DEBT-018]` tại chỗ.
+  - **Quy trình git-reset an toàn (chống giẫm branch giữa 2 session)** (L258-273) → **DEBT-042 (mục này)**: quy trình thủ công cho người vận hành (chạy `git log <ref>..HEAD` trước `git reset`; không reset khi thấy commit lạ; worktree-per-session). Không có gate máy nào chặn được thao tác git tương tác của session khác. Đã gắn nhãn `[CHƯA CÓ ENFORCER — DEBT-042]` tại chỗ.
+- **Không chặn / vì sao chưa fix ngay:** đây là kỷ luật git của con người vận hành nhiều session trên cùng working tree — bản chất khó gate bằng test pytest (không có "diff" nào để scan; sự cố xảy ra ở tầng thao tác git tương tác ngoài repo state). Giải pháp thật là tách worktree-per-session (mục 4, cần Mr.Long duyệt), không phải thêm scanner.
+- **Đề xuất:** (a) Mr.Long duyệt mô hình worktree-per-session (loại bỏ gốc rễ shared-working-tree) → khi đó quy trình thủ công này thành không cần thiết; (b) nếu giữ shared tree: cân nhắc pre-commit hook cảnh báo khi `git reset` bỏ commit chưa push (ngoài scope task relabel hiện tại).
+- **Trạng thái:** MỞ (đã rà + label toàn bộ advisory; honor-system, không tự-nhận đã-phòng-thủ). Ref: R215.6, synthesis mục 3 #5 PHẦN C.

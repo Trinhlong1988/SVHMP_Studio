@@ -20,12 +20,12 @@ PY = sys.executable
 
 
 def _run(rel):
-    r = subprocess.run([PY, str(SVHMP / rel)], capture_output=True, text=True)
+    r = subprocess.run([PY, str(SVHMP / rel)], capture_output=True, text=True, encoding='utf-8', errors='replace')
     return r.returncode, (r.stdout or '')
 
 
 def _git(args):
-    return subprocess.run(['git', '-C', str(SVHMP)] + args, capture_output=True, text=True).stdout.strip()
+    return subprocess.run(['git', '-C', str(SVHMP)] + args, capture_output=True, text=True, encoding='utf-8', errors='replace').stdout.strip()
 
 
 def architecture_auditor():
