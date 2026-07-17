@@ -885,6 +885,7 @@ R53_template_pattern_variety_hardlock:
   banned_overuse:
     - '"Chuông xe ngân. Một tiếng. Tan." identical 32/50 → cần varied 4-5 forms'
     - '"bước lên xe. Đi qua hàng ghế đầu" 39/50 → cần varied entry'
+    # R216: cụm "ghế ba" ở đây là SAI trong episodes hiện tại, sẽ về "ghế số bảy" sau Phase-2 regen (DEBT-035)
     - '"Khải Phong quan sát từ ghế ba" 40/50 → cần varied observation phrases'
     - '"vuốt vai + Mỉm cười" ghost manifest 25/50 → vary ghost desc'
   approved_bell_variants:
@@ -996,7 +997,7 @@ R49_template_variation_hardlock:
     - "Đêm. Đường vắng."
     - "Hà Nội cuối tháng tư."
     - "Sau cơn mưa chiều. Đêm xuống nhanh."
-    - "Đêm thứ X — Khải Phong ngồi ghế thứ ba."
+    - "Đêm thứ X — Khải Phong ngồi ghế số bảy."          # R216: seat theo EP01 ghế số bảy (ep_01 dòng 100)
     - "Đèn xe rọi vào sương."
     - "Phố vắng. Đêm thưa."
   enforcement: tools/detect_template_repetition.py + R41 hook (formulaic_score > 60% = warning)
