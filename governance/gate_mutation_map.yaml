@@ -1,0 +1,158 @@
+# governance/gate_mutation_map.yaml — META-GATE map: moi stage trong ci_gate.CHECKS
+# PHAI co 1 test mutation-proof da DANG KY (dung input vi pham -> gate/lop-loi-loi bat).
+#
+# De xuat #2 (governance/AUDIT_ROOT_CAUSE_SYNTHESIS_17_07.md muc 3) — chan lop "gate-gia"
+# (vd post_render_gate.py hardcode results.append((True,...)) luon PASS; frozen-list guard
+# tu vo). Enforcer: tools/gate_mutation_registry_check.py + tests/test_every_gate_has_
+# mutation_test.py (mutation-proof self-test, KHONG grep-only — R215.5/R215.6).
+#
+# NGUON SU THAT stage = tools/ci_gate.py :: CHECKS (checker doc truc tiep, khong copy).
+# 3 bucket (checker coi CA 3 la "da phu"; UNCOVERED = stage khong o bucket nao -> FAIL):
+#   mapped              : stage -> test_node pytest-collectable, DA DOC + xac nhan
+#                          mutation-proof (dung vi pham that -> assert gate/core-logic FAIL).
+#   known_self_battery  : stage la SCRIPT-STYLE (nam trong conftest collect_ignore_glob,
+#                          chay qua ci_gate subprocess + test_ci_suite.py SCRIPTS). Ban than
+#                          script TU dung input vi pham tong hop (confusion-matrix FN/FP=0
+#                          hoac input benh ly) + exit!=0 neu detector sot -> mutation-proof
+#                          INLINE nhung KHONG tach duoc thanh 1 pytest node rieng.
+#   known_no_mutation_test : KHE HO THAT — chua co test nao dung vi pham roi assert gate bat
+#                          (chi positive/invariant). Kem debt: ref. Sua dan (ratchet).
+#
+# TRUNG THUC (R215.4): chi map stage nao BUILDER da DOC test + xac nhan that su mutation-proof.
+# Stage khong chac -> allowlist, KHONG map bua.
+
+meta:
+  created: '2026-07-17'
+  author: CMD_BUILD (BUILDER)
+  source_of_truth: tools/ci_gate.py::CHECKS
+  checker: tools/gate_mutation_registry_check.py
+  self_test: tests/test_every_gate_has_mutation_test.py
+  principle: >
+    Meta-gate nay TU no phai mutation-proof + BEHAVIORAL (monkeypatch CHECKS/map roi goi
+    ham danh gia that), KHONG grep-only — neu khong lai tao them 1 gate-gia dung cai dang chong.
+
+# ---------------------------------------------------------------------------
+# mapped: stage -> {test_node, verified}
+# ---------------------------------------------------------------------------
+mapped:
+  blueprint:
+    test_node: tests/test_bp5_validation.py::test_mut_one_layer_fail_suite_exit1
+    verified: >
+      Nap dup-key mutant tu BP2 spec that -> chay blueprint_suite_check.py CLI qua subprocess
+      -> assert exit 1 + '[FAIL] bp2' + 'DUP-KEY'. Neu suite short-circuit / luon PASS -> do.
+
+  G3_dialogue:
+    test_node: tests/test_g3_dialogue.py::test_d4_validate_generated_batch_catches_leak_and_passes_clean
+    verified: >
+      Dung profile giong nam + dong thoai leak marker 'bac' -> dvv.validate_generated_batch
+      (validator ma g3_dialogue_check.py chay) PHAI tra failed==1 + code DIALECT_LEAK cho dong 2,
+      dong sach ok==1. Neu detector vo hieu -> failed==0 -> assert do.
+
+  project_config:
+    test_node: tests/test_validate_project_config.py::test_empty_value_exit_1
+    verified: >
+      Ghi project_config.yaml co field RONG ('' / [] / {}) -> chay validate_project_config.py
+      --path qua subprocess -> assert exit 1. Khoa fix empty-value; gate luon-PASS -> do.
+
+  G2_roster:
+    test_node: tests/test_roster_validator_g2.py::test_c4_mutation_missing_rule_bites
+    verified: >
+      copy.deepcopy bible/23 roi del rule_06_region_match -> check_c4_naming_framework
+      (import tu roster_validator.py, la logic gate) PHAI tra errs chua 'rule_06_region_match'.
+
+  g5_supernatural:
+    test_node: tests/test_supernatural_run_all_composition.py::test_enforcement_detects_mutation_remove_all_sub_checks
+    verified: >
+      Mutate SOURCE run_all() cua supernatural_validator.py (go het 4 dong 'errs += check_*()')
+      roi thuc thi body qua _run_all_body_ok() -> assert not ok + liet ke du 4 sub-check thieu.
+      Day la ham g5_supernatural_check.py::check_run_all_composition dung -> BEHAVIORAL, khong grep.
+
+  G4_world:
+    test_node: tests/test_g4_world.py::test_validate_against_registry_self_check_mutation_proof
+    verified: >
+      monkeypatch validate_against_registry -> luon return [] -> _self_check_validate_against_
+      registry() cua story_consistency_validator.py (chay qua D4 subprocess trong g4_world_check.py)
+      PHAI pytest.raises(SystemExit) code==1. Chung minh self-check that su bao ve, khong luon PASS.
+
+  cross_ep_canon:
+    test_node: tests/test_cross_episode_canon_check.py::test_evaluate_same_divergence_NOT_in_allowlist_fails
+    verified: >
+      Dung divergence that (ghe EP01=7 vs EP02-3=3) roi goi cec.evaluate(..., allowlist=set())
+      -> assert fail==1 + line[0]=='FAIL'. Vo dieu kien (khong early-return). Chung minh allowlist
+      load-bearing: cung divergence trong allowlist -> TRACKED (test ke ben), ngoai -> FAIL.
+
+  G6_story_planner:
+    test_node: tests/test_g6a_decision_engine.py::test_m1_value_out_of_range_bites
+    verified: >
+      Mutate policy (dialogue_ratio.value=1.5 ngoai valid_range [0,1]) roi goi dpc.run()
+      (decision_policy_check — chinh script ma g6_story_planner_check.py chay qua subprocess
+      G6a_D2_policy_check) -> assert issue chua 'ngoai valid_range'. run() tra issue -> __main__ exit 1.
+
+  G7_generator:
+    test_node: tests/test_g7_generator.py::test_g7_1_stage_no_write_domain_catches_real_cross_domain_commit
+    verified: >
+      monkeypatch _changed_files_vs_origin_main -> {generator, 1 domain-source path THAT} ->
+      g7c._stage_no_write_domain() (stage cua g7_generator_check.py) PHAI tra rc==1 + path trong tail.
+      Neu no-write-domain check vo hieu -> rc==0 -> assert do.
+
+  G8_qa_runtime:
+    test_node: tests/test_g8_qa_runtime.py::test_g8_gate_fails_when_invariant_broken
+    verified: >
+      monkeypatch g8.SUITE -> thay 1 invariant bang lambda:(False,...) -> g8_qa_runtime_check.main()
+      PHAI return 1. Bat truong hop ai lam gate luon-xanh vo dieu kien (aggregation that su cong FAIL).
+
+# ---------------------------------------------------------------------------
+# known_self_battery: stage script-style TU la mutation battery tong hop (verified doc).
+# Khong tach duoc pytest node rieng (nam trong conftest collect_ignore_glob) -> tracked o day.
+# ---------------------------------------------------------------------------
+known_self_battery:
+  R199_tail:
+    stage_file: tests/test_tail_pathology_r199.py
+    reason: >
+      Dung audio benh ly tong hop (runaway voice 5s + silence 25s; tail burst sau gap) roi
+      assert aggressive_trim_tail() trim ve ~5s / drop burst. Neu ai neuter trim (return
+      unchanged) -> dur=30s -> assert 4.5<dur<6.0 FAIL. Mutation-proof INLINE, khong co pytest node.
+
+  R203_conf:
+    stage_file: tests/test_qa_confusion_200_r203.py
+    reason: >
+      Confusion-matrix 200 case (120 sai / 120 sach dung, 6 co che QA). Dung 120 input vi pham
+      tong hop + assert FN==0 (bat het) va FP==0. Detector sot -> exit 1. Battery mutation-proof.
+
+  R206_voice:
+    stage_file: tests/test_character_system_1000_r206.py
+    reason: >
+      Confusion-matrix 1000 case voice/character; dung case vi pham + assert FN/FP==0.
+      Script-style (collect_ignore_glob), chay qua ci_gate subprocess + test_ci_suite SCRIPTS.
+
+  R207_canon:
+    stage_file: tests/test_story_consistency_1000_r207.py
+    reason: >
+      Confusion-matrix 1000 case story-consistency (mutate field khoa nhu gender roi assert bat).
+      FN/FP==0 -> exit 0. Battery mutation-proof INLINE, khong tach node.
+
+  R208_age:
+    stage_file: tests/test_dialogue_appropriateness_1000_r208.py
+    reason: >
+      Confusion-matrix 1000 case dialogue age-appropriateness; dung dialog sai-lua-tuoi + assert bat.
+      FN/FP==0. Script-style battery.
+
+# ---------------------------------------------------------------------------
+# known_no_mutation_test: KHE HO THAT (chua co test dung vi pham -> assert gate bat).
+# Sua dan; go 1 entry ma stage van chua co test -> checker FAIL (allowlist load-bearing).
+# ---------------------------------------------------------------------------
+known_no_mutation_test:
+  registry:
+    debt: DEBT-039
+    reason: >
+      architecture_registry_check.py CHi co test POSITIVE (test_ci_suite.py chay no qua subprocess,
+      assert exit 0 tren repo sach). CHUA co test dung MISSING/UNMAPPED/DUP gia lap roi assert exit 1.
+      Khe ho that -> can task rieng dung fixture registry vi pham -> assert FAIL. Tracked DEBT-039.
+
+  R205_char:
+    debt: DEBT-039
+    reason: >
+      test_character_manager_r205.py chu yeu la invariant/property POSITIVE (dem 139 passenger,
+      naming=0 loi, enrich, schema fields) + DUY NHAT 1 negative (enrich field sai -> KeyError).
+      KHONG phai battery dung vi pham roi assert detector bat -> khong tinh mutation-proof gate.
+      Tracked DEBT-039 (nang thanh confusion-battery hoac negative cases sau).

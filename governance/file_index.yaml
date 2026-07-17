@@ -412,6 +412,21 @@ files:
     domain: governance_audit
     status: active
     tier: 3
+  tools/gate_mutation_registry_check.py:   # de xuat #2 (17/7): META-GATE — moi stage
+                                           # ci_gate.CHECKS phai co mutation-proof test dang ky
+    domain: governance_audit
+    status: active
+    tier: 3
+  governance/gate_mutation_map.yaml:   # de xuat #2 (17/7): map stage->test_node mutation-proof
+                                       # (mapped / known_self_battery / known_no_mutation_test)
+    domain: governance_audit
+    status: active
+    tier: 0
+  tests/test_every_gate_has_mutation_test.py:   # de xuat #2 (17/7): mutation-proof self-test
+                                                # cho META-GATE (behavioral, khong grep-only)
+    domain: governance_audit
+    status: active
+    tier: 3
   tools/audit_ngan_opening_template.py:
     domain: text_qa
     status: active
@@ -1597,4 +1612,4 @@ files:
     status: active
     tier: 1
 generated_by: tools/registry_triage.py
-total: 397
+total: 400
