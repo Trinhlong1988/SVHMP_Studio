@@ -32,6 +32,9 @@ CANON_CHAR_KHAI_PHONG:
   id: CHAR_KHAI_PHONG
   role: RECURRING_PASSENGER_POV
   display_name: "Khải Phong"
+  seat: "ghế số bảy"             # R216 machine-readable: EP01 GROUND TRUTH (ep_01 dòng 100).
+                                  # Engine auto_gen_ep.py ĐỌC field này thay vì hardcode literal.
+                                  # EP02-50 hiện ghi "ghế thứ ba" = SAI, chờ regen (DEBT-035 Hướng A).
   first_seen_ep: 1               # xuất hiện từ EP01. Ghế số bảy = EP01 GROUND TRUTH (ep_01
                                   # dòng 100), R216; EP02-50 dùng "ghế thứ ba" = SAI chờ regen
                                   # — xem governance/TECH_DEBT.md DEBT-035 Hướng A)

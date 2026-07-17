@@ -23,6 +23,20 @@ sys.stdout.reconfigure(encoding='utf-8') if hasattr(sys.stdout, 'reconfigure') e
 
 SVHMP = Path(__file__).parent.parent
 
+
+def load_khai_phong_seat():
+    """R216: đọc seat Khải Phong TỪ canon_registry (ground truth EP01 = 'ghế số bảy'),
+    KHÔNG hardcode literal trong prose template. EP02-50 cũ ghi 'ghế thứ ba' = SAI (chờ regen)."""
+    try:
+        canon = yaml.safe_load((SVHMP / 'runtime' / 'canon_registry.yaml').read_text(encoding='utf-8'))
+        seat = (canon or {}).get('CANON_CHAR_KHAI_PHONG', {}).get('seat')
+        if seat:
+            return str(seat)
+    except Exception:
+        pass
+    return 'ghế số bảy'  # fallback = EP01 ground truth (ep_01 dòng 100)
+
+
 SETTING_DESCRIPTORS = {
     'setting_can_tet': {'name': 'cận Tết', 'time': 'Đêm hai tám tháng Chạp', 'weather': 'Mưa phùn lất phất', 'ambient': 'Bụi mía sương mờ ven đường vắng'},
     'setting_dem_giao_thua': {'name': 'đêm giao thừa', 'time': 'Đêm ba mươi tháng Chạp', 'weather': 'Sương dày', 'ambient': 'Pháo hoa từ xa nổ rất nhẹ'},
@@ -120,6 +134,7 @@ def build_episode(ep_num, passenger, regret):
     sample = regret.get('sample_story', passenger['regret_label'])
     title = passenger['regret_label'].upper().split(' — ')[1] if ' — ' in passenger['regret_label'] else passenger['regret_label'].upper()
     seat = ((ep_num % 9) + 2)
+    kp_seat = load_khai_phong_seat()  # R216: seat Khải Phong đọc từ canon (không hardcode)
 
     return f"""# TẬP {ep_num} — {obj['name'].upper()}, {title[:50]}
 
@@ -146,7 +161,7 @@ auto_gen: tools/auto_gen_ep.py v2.0 (template + QA loop)
 
 {setting['time']}. {setting['weather']}. Chuyến xe đêm chạy qua một đoạn đường vắng ven {stop.split()[-1]}. {setting['ambient']}. Đèn pha quét nhẹ lên hai bên đường tối.
 
-Khải Phong ngồi ghế thứ ba. Đêm thứ {ep_num} Khải Phong đếm. Trong túi áo Khải Phong đã có {cont['artifacts']} vật — các vật rời rạc từ những đêm trước. Sợi len. Sợi lạt. Phong bao trống. Sợi chỉ trắng. Viên pin cassette. Mỗi vật một câu chuyện. Khải Phong chưa hiểu vì sao mình giữ.
+Khải Phong ngồi {kp_seat}. Đêm thứ {ep_num} Khải Phong đếm. Trong túi áo Khải Phong đã có {cont['artifacts']} vật — các vật rời rạc từ những đêm trước. Sợi len. Sợi lạt. Phong bao trống. Sợi chỉ trắng. Viên pin cassette. Mỗi vật một câu chuyện. Khải Phong chưa hiểu vì sao mình giữ.
 
 Trên ghế lái, bác tài lái như mọi khi. Hai bàn tay đeo găng trắng đặt trên vô-lăng. Ánh mắt liếc gương chiếu hậu một thoáng, dừng trên Khải Phong lâu hơn một nhịp, rồi mới chuyển sang đoạn đường tối phía trước.
 
@@ -348,7 +363,7 @@ Bác tài lái như mọi khi. Hai tay vô-lăng. Găng trắng. Nhịp ngón tr
 
 Khải Phong lấy {cont['artifacts'] + 1} vật trong túi ra. Đặt cạnh nhau trên đùi. Một bộ sưu tập rời rạc — của những người đã chưa kịp nói câu cuối với người họ thương.
 
-Khải Phong nhớ — đêm thứ {ep_num} Khải Phong đã ngồi ghế thứ ba. Mỗi đêm một câu chuyện. Mỗi đêm Khải Phong ngồi yên — chưa kể câu chuyện nào của mình.
+Khải Phong nhớ — đêm thứ {ep_num} Khải Phong đã ngồi {kp_seat}. Mỗi đêm một câu chuyện. Mỗi đêm Khải Phong ngồi yên — chưa kể câu chuyện nào của mình.
 
 Vì sao Khải Phong chưa kể? Có phải Khải Phong không có câu chuyện nào? Hay là Khải Phong đã quên?
 
