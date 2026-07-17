@@ -1,0 +1,224 @@
+# governance/claim_enforcer_map.yaml
+# ---------------------------------------------------------------------------
+# CLAIM -> ENFORCER MAP (de xuat #1 + #4 MERGE, governance/AUDIT_ROOT_CAUSE_
+# SYNTHESIS_17_07.md muc 3). Goc re du an = CLAIM-ENFORCER GAP: rule tuyen bo
+# "PHAI/CAM/HARD-FAIL/da-enforce" ma khong co gate hanh vi that. File nay lam
+# HIEN HINH + DEM DUOC trang thai enforcement cua tung claim cao rui ro nhat.
+#
+# NGUON SU THAT rule = CLAUDE.md (khoi TOI THUONG) + bible/00_constitution.yaml
+# (DNA). File nay CHI MO TA trang thai — KHONG sua noi dung rule (rang buoc task).
+#
+# status (chon status XAU HON khi nghi ngo — R215.4):
+#   ENFORCED       : co gate/test may + mutation-proof, chay that tren du lieu that.
+#   PARTIAL        : co enforcer THAT nhung HEP hon claim (mask-as-active nguy hiem:
+#                    co gate -> tuong du -> thuc te chi cover 1 phan). Kem debt.
+#   NO_ENFORCER    : rule tuyen bo nhung 0 checker may nao. Kem debt.
+#   HONOR_SYSTEM   : ky luat quy trinh + review cheo nguoi, khong the may-hoa tin cay.
+#   LLM_JUDGE_ONLY : enforcement chi nam trong prompt LLM (vd prompts/qa.md PHASE 12.x)
+#                    — KHONG phai gate may, KHONG mutation-provable. Ghi llm_ref.
+#
+# schema moi claim:
+#   status   : 1 trong 5 tren.
+#   enforcer : (ENFORCED/PARTIAL) list path 'tools/x.py' hoac 'tests/y.py::node'.
+#              (NO_ENFORCER/HONOR_SYSTEM/LLM_JUDGE_ONLY) PHAI null — cam tro gate may
+#              gia (chong "mask-as-active" nguoc: gan enforcer cho claim thuc te 0 gate).
+#   llm_ref  : (LLM_JUDGE_ONLY) prompt chua LLM-judge. Khong phai enforcer may.
+#   debt     : DEBT-xxx neu co gap (PARTIAL/NO_ENFORCER). null neu khong.
+#   source   : vi tri rule goc (CLAUDE.md / bible/00 key).
+#   evidence : cach BUILDER TU verify (R215.4) — da doc code/chay that, khong trich so cu.
+#
+# ENFORCER cua CHINH file nay: tools/claim_enforcer_registry_check.py +
+#   tests/test_claim_enforcer_registry.py (mutation-proof, KHONG grep-only):
+#   (a) moi REQUIRED_CLAIMS phai co mat; (b) claim ENFORCED/PARTIAL ma enforcer
+#   tro file KHONG ton tai / test node KHONG collect -> FAIL (bat mask-as-active);
+#   (c) claim NO_ENFORCER/HONOR_SYSTEM/LLM_JUDGE_ONLY ma van gan enforcer -> FAIL.
+# KHONG wire vao ci_gate.CHECKS (chay trong pytest — reviewer quyet co wire khong).
+
+meta:
+  created: '2026-07-17'
+  author: CMD_BUILD (BUILDER)
+  source_of_truth_rule: CLAUDE.md (khoi TOI THUONG) + bible/00_constitution.yaml (DNA)
+  checker: tools/claim_enforcer_registry_check.py
+  self_test: tests/test_claim_enforcer_registry.py
+  scope_note: >
+    CHI 13 claim cao rui ro nhat (bounded — KHONG boil-the-ocean 252 claim).
+    TOI THUONG: R_SUPREME, R196, R197, R200, R210, R211, R215, R216.
+    DNA bible/00: ALWAYS_5, NEVER_7, GHOST_RULES_3, ENDING_RULES, SERIES_RULES.
+
+claims:
+
+  # ===================== TOI THUONG (CLAUDE.md) =====================
+
+  R_SUPREME:
+    status: HONOR_SYSTEM
+    enforcer: null
+    llm_ref: null
+    debt: null
+    source: 'bible/00_constitution.yaml::rule_R_SUPREME_workflow_lock.governance_lock_mr_long_30_06_02_50 (R1-R10)'
+    evidence: >
+      R1-R10 la ky luat quyet dinh (permission-first 4 cau hoi, no-autonomous-action,
+      evidence-first, uncertainty->STOP). DA GREP tools/: khong co script nao doc/verify
+      "Claude da xin phep truoc khi hanh dong". cmd_pipeline_gate.py/promotion_guard.py/
+      verify_commit_claim.py chi enforce ky luat commit/ping-claim, KHONG phai 4-cau permission.
+      -> khong the may-hoa tin cay; dua vao Mr.Long review + review cheo CMD. HONOR_SYSTEM.
+
+  R196:
+    status: NO_ENFORCER
+    enforcer: null
+    llm_ref: null
+    debt: DEBT-025
+    source: 'CLAUDE.md TOI THUONG R196 (Engineering PASS != Production PASS; CAM tu complete/done/100%)'
+    evidence: >
+      DEBT-025 (governance/TECH_DEBT.md L436) da tu grep toan repo: 0 script/gate/hook nao
+      quet tu cam "complete/done/100% hoan thanh" trong report/commit/docstring doi chieu
+      trang thai Production-validated. Mr.Long 11/7 QUYET defer (rule ve ngon tu bao cao,
+      enforcer tin cay kho). Khong co gate -> NO_ENFORCER.
+
+  R197:
+    status: PARTIAL
+    enforcer:
+      - tools/svhmp_preflight_qa.py
+      - tests/test_full_text_gate_r86_broad.py::test_preflight_chains_qa_eol_diacritic_NGA
+    llm_ref: null
+    debt: DEBT-018
+    source: 'CLAUDE.md TOI THUONG R197 (FULL_TEXT_GATE truoc MOI render, khong ngoai le)'
+    evidence: >
+      TU verify: tools/svhmp_preflight_qa.py TON TAI + chain qa_eol_diacritic (R86 broad).
+      test_full_text_gate_r86_broad.py collect duoc (7 test def, da grep). NHUNG claim "truoc
+      MOI render, KHONG ngoai le" KHONG machine-true: DEBT-018 (TECH_DEBT L361) — preflight
+      CHUA chan tren MOI duong render (wire log-only vao v13_render). Enforcer HEP hon claim
+      -> PARTIAL.
+
+  R200:
+    status: HONOR_SYSTEM
+    enforcer: null
+    llm_ref: null
+    debt: DEBT-022
+    source: 'CLAUDE.md TOI THUONG R200 (realtime sync; PHAI log_ping moi fix)'
+    evidence: >
+      DEBT-022 (TECH_DEBT L420): log_ping.py thuan append 0 verify; verify_ping_claim.py chi
+      check claim->fact (chong BIA), KHONG check fact->claim (CMD fix+push QUEN log = 0 gate bat).
+      git hooks chi .sample. "PHAI log moi fix" = honor-system thuan. HONOR_SYSTEM (debt tracked).
+
+  R210:
+    status: PARTIAL
+    enforcer:
+      - tools/roster_validator.py
+      - tests/test_roster_validator_g2.py::test_c4_mutation_missing_rule_bites
+    llm_ref: null
+    debt: DEBT-024
+    source: 'CLAUDE.md TOI THUONG R210 (Character Identity v2; Voice Profile + Relationship Graph BAT BUOC; can bang xuyen 100 tap)'
+    evidence: >
+      TU verify co gate THAT cho MOT phan: roster_validator.py C1-C5 (que<->giong blocking) +
+      test_c4_mutation_missing_rule_bites collect duoc (grep L117). NHUNG 3 gap that:
+      (1) DEBT-024 — completeness gate chi chan 1/7 nhom tier_1_mandatory (voice), khong 7/7;
+      (2) DEBT-026 — "can bang xuyen 100 tap" character_balance_report.py 0 sys.exit/0 wire ci_gate,
+      roster THAT dang lech 4 target; (3) "Relationship Graph BAT BUOC" = 0/139 data, 0 checker.
+      Enforcer HEP hon claim (mask-as-active) -> PARTIAL.
+
+  R211:
+    status: ENFORCED
+    enforcer:
+      - tools/architecture_registry_check.py
+      - tests/test_file_index_total.py::test_file_index_total_matches_len_files
+    llm_ref: null
+    debt: null
+    source: 'CLAUDE.md TOI THUONG R211 (Tier-0 governance; architecture_registry = source of truth; 0 MISSING/UNMAPPED/DUP strict)'
+    evidence: >
+      TU chay `python tools/architecture_registry_check.py` -> exit 0, PASS 0/0/0 (strict:
+      exit 1 neu bat ky MISSING/DUP/UNMAPPED — da doc code L73). test_file_index_total.py
+      collect duoc (may dem total==len(files), chong append quen bump). Gate that + chay that.
+
+  R215:
+    status: PARTIAL
+    enforcer:
+      - tests/test_no_greponly_wiring_guards.py::test_detector_flags_the_known_seed_example
+      - tests/test_no_text_true_without_encoding.py
+    llm_ref: null
+    debt: null
+    source: 'CLAUDE.md TOI THUONG R215 (rule-enforcer parity; diem 5 grep-only-wiring, diem 6 advisory->gate)'
+    evidence: >
+      TU verify meta-enforcer THAT cho diem 5+6: test_no_greponly_wiring_guards.py (AST-detector
+      + ratchet allowlist, def test_detector_flags_the_known_seed_example grep L232 -> collect)
+      + test_no_text_true_without_encoding.py TON TAI. NHUNG diem 1-4 (ban than nguyen tac
+      "moi claim khang dinh phai kem gate/nhan") la KY LUAT quy trinh, khong co meta-gate quet
+      TOAN BO claim — chinh la LO HONG file nay dang va. -> PARTIAL (mot phan co meta-enforcer).
+
+  R216:
+    status: PARTIAL
+    enforcer:
+      - tools/cross_episode_canon_check.py
+      - tests/test_cross_episode_canon_check.py::test_evaluate_same_divergence_NOT_in_allowlist_fails
+    llm_ref: null
+    debt: DEBT-035
+    source: 'CLAUDE.md TOI THUONG R216 + bible/00 rule_R216_earlier_episode_is_ground_truth_hardlock'
+    evidence: >
+      TU verify: cross_episode_canon_check.py TON TAI (RATCHET, wired ci_gate) +
+      test_evaluate_same_divergence_NOT_in_allowlist_fails collect duoc (grep L66). NHUNG chinh
+      bible/00 (rule_R216 status_note) tu thu: gate prose CHI cover 1 fact tin cay (ghe Khai Phong);
+      noi-chet Ha Vy + canon-fact khac (ten/quan he/moc) CHUA co extractor = "CHUA CO ENFORCER
+      day du, rui ro drift" (R215.1). DEBT-035. Enforcer HEP hon claim -> PARTIAL.
+
+  # ===================== DNA (bible/00_constitution.yaml) =====================
+  # bible/00 enforcement.qa_lock HARD_FAIL_triggers dinh tuyen ALWAYS/NEVER/GHOST/
+  # ENDING/SERIES qua QA Lock = prompts/qa.md (LLM judge). KHONG co gate may hau-kiem
+  # content cho cac DNA nay (synthesis G5/G6/G7). -> LLM_JUDGE_ONLY.
+
+  ALWAYS_5:
+    status: LLM_JUDGE_ONLY
+    enforcer: null
+    llm_ref: prompts/qa.md
+    debt: DEBT-040
+    source: 'bible/00_constitution.yaml::ALWAYS (5 muc) + enforcement.generator.post_write self-check'
+    evidence: >
+      Synthesis G7: ALWAYS_5 enforced_by QA PHASE 12.x = chi trong prompts/qa.md (da xac nhan
+      prompts/qa.md TON TAI + chua ALWAYS/NEVER/GHOST/PHASE 12 — grep). 0 gate may/mutation-test
+      hau-kiem "5 muc ALWAYS present". Generator post_write "self-check" cung la LLM. LLM_JUDGE_ONLY.
+
+  NEVER_7:
+    status: LLM_JUDGE_ONLY
+    enforcer: null
+    llm_ref: prompts/qa.md
+    debt: DEBT-040
+    source: 'bible/00_constitution.yaml::NEVER (7 cam: gore/jump_scare/exorcism/monster_hunting/combat/villain_ghost/explanation_dump)'
+    evidence: >
+      bible/00 enforcement.qa_lock HARD_FAIL_triggers liet ke "any NEVER violation" nhung chi
+      thuc thi qua QA Lock LLM (prompts/qa.md). 0 checker may quet content tim gore/jump_scare/
+      exorcism... Synthesis G7. LLM_JUDGE_ONLY.
+
+  GHOST_RULES_3:
+    status: LLM_JUDGE_ONLY
+    enforcer: null
+    llm_ref: prompts/qa.md
+    debt: DEBT-040
+    source: 'bible/00_constitution.yaml::GHOST_RULES (never_attack/never_chase/never_speak_directly)'
+    evidence: >
+      Synthesis G5: GHOST_RULES chi trong prompt LLM (auto_gen_ep.py generation hint + qa_lock),
+      0 hau kiem content. LUU Y: supernatural_validator.py enforce CAU TRUC sieu nhien (typology/
+      possession SM, g5) — KHAC pham vi GHOST_RULES DNA (never_attack/chase/speak trong prose).
+      Khong gan enforcer do vi khong dung claim. LLM_JUDGE_ONLY.
+
+  ENDING_RULES:
+    status: LLM_JUDGE_ONLY
+    enforcer: null
+    llm_ref: prompts/qa.md
+    debt: DEBT-040
+    source: 'bible/00_constitution.yaml::ENDING_RULES (unresolved_memory mandatory / lingering_question preferred)'
+    evidence: >
+      bible/00 ghi "QA HARD-FAIL neu beat_5 close hoan toan" nhung Synthesis G6: 0 tool. Chi
+      qa_lock LLM trigger "aftertaste resolved". Khong co gate may kiem beat_5 unresolved.
+      LLM_JUDGE_ONLY (tracked DEBT-040 — DNA rules 0 machine gate; enforce/build gate can Mr.Long duyet).
+
+  SERIES_RULES:
+    status: LLM_JUDGE_ONLY
+    enforcer: null
+    llm_ref: prompts/qa.md
+    debt: DEBT-040
+    source: 'bible/00_constitution.yaml::SERIES_RULES (8 DNA: bus/driver-2-cau/bell<=1/ghost_visual<=1/horror_type/passengers/ending/aftertaste)'
+    evidence: >
+      NGUY HIEM mask-as-active: post_render_gate.py TRONG nhu gate SERIES_RULES nhung TU verify
+      (doc code) no KHONG enforce: (1) driver "2 cau" -> L85 hardcode results.append((True,...))
+      LUON PASS (synthesis G3); (2) bell -> L91 dem >=1 (can DUOI), KHONG kiem max_per_episode==1;
+      (3) ghost_visual -> L101 dem >=1 (can DUOI), KHONG kiem max==1 (synthesis G4). Cac rang buoc
+      MAX/exact cua SERIES_RULES chi con qua qa_lock LLM (prompts/qa.md). Vi enforcer may hien co la
+      GIA (khong bat vi pham), status = LLM_JUDGE_ONLY, KHONG gan post_render_gate lam enforcer.
